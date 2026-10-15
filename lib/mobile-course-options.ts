@@ -150,7 +150,7 @@ export const FAZHAN_HOME_LEVELS = [
   {
     chipId: "fazhanZhongji1",
     chipLabel: "中级综合 I",
-    courseId: "fazhan-zhongji-1",
+    courseId: "fazhan-zhongji1",
     hskEquivalent: "HSK4 түвшин",
   },
 ] as const;

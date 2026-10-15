@@ -12,12 +12,15 @@ import {
   getCourseContentById,
   getPublicLessonSummariesByCourseId,
 } from "@/lib/content";
+import { getStories } from "@/lib/library/data";
+import type { LibraryPreviewItem } from "@/components/mobile/library-preview-row";
 
 export type MobileHomeData = {
   catalog: MobileCourseCatalogEntry[];
   defaultChipId: string;
   fazhanCatalog: MobileCourseCatalogEntry[];
   fazhanDefaultChipId: string;
+  libraryPreview: LibraryPreviewItem[];
 };
 
 type KoreanLoadResult = {
@@ -98,13 +101,29 @@ async function loadFazhanCourseForHome(courseId: string) {
   };
 }
 
+async function loadLibraryPreviewForHome(): Promise<LibraryPreviewItem[]> {
+  try {
+    const stories = await getStories();
+    return stories.slice(0, 8).map((s) => ({
+      id: s.id,
+      title: s.title,
+      titlePinyin: s.title_pinyin,
+      cover: s.cover,
+      level: s.level,
+    }));
+  } catch {
+    return [];
+  }
+}
+
 export async function loadMobileHomeData(): Promise<MobileHomeData> {
-  const [hskLevels, korean, fazhanLevels] = await Promise.all([
+  const [hskLevels, korean, fazhanLevels, libraryPreview] = await Promise.all([
     Promise.all(HSK_LEVEL_IDS.map((id) => loadHskLevelForHome(id))),
     loadKoreanCourseForHome(),
     Promise.all(
       FAZHAN_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
     ),
+    loadLibraryPreviewForHome(),
   ]);
 
   const hsk: Partial<
@@ -140,5 +159,6 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
     defaultChipId: defaultHomeChipId(catalog),
     fazhanCatalog,
     fazhanDefaultChipId: defaultFazhanChipId(fazhanCatalog),
+    libraryPreview,
   };
 }

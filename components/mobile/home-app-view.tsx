@@ -14,6 +14,11 @@ import {
   useRegisterLessonHskLevels,
 } from "@/components/providers/active-hsk-level-provider";
 import { HomeLessonList } from "@/components/temee/home-lesson-list";
+import { BookPickerGrid, type BookPickerEntry } from "@/components/mobile/book-picker-grid";
+import {
+  LibraryPreviewRow,
+  type LibraryPreviewItem,
+} from "@/components/mobile/library-preview-row";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { formatHomeCourseListHeading } from "@/lib/temee/home-course-display";
@@ -45,6 +50,7 @@ type Props = {
   defaultChipId: string;
   fazhanCatalog: MobileCourseCatalogEntry[];
   fazhanDefaultChipId: string;
+  libraryPreview: LibraryPreviewItem[];
 };
 
 type BookSeries = "standard" | "fazhan";
@@ -61,7 +67,7 @@ export function HomeAppView({
   catalog,
   defaultChipId,
   fazhanCatalog,
-  fazhanDefaultChipId,
+  libraryPreview,
 }: Props) {
   const locale = useUiLocale();
   const { level: activeHskLevel, hydrated: hskHydrated } = useActiveHskLevel();
@@ -159,18 +165,47 @@ export function HomeAppView({
     }
   };
 
-  const pickSeries = (series: BookSeries) => {
-    setActiveSeries(series);
+  /** Unified "pick a book" from the Home grid — sets both series and chip in one go. */
+  const pickBook = (entry: BookPickerEntry) => {
+    setActiveSeries(entry.series);
+    setActiveChip(entry.chipId);
     setShowStartGuide(false);
-    const nextChip = series === "fazhan" ? fazhanDefaultChipId : defaultChipId;
-    setActiveChip(nextChip);
     try {
-      window.localStorage.setItem("bs:homeSeries", series);
-      window.localStorage.setItem("bs:homeChip", nextChip);
+      window.localStorage.setItem("bs:homeSeries", entry.series);
+      window.localStorage.setItem("bs:homeChip", entry.chipId);
     } catch {
       // ignore
     }
   };
+
+  const pickerEntries: BookPickerEntry[] = useMemo(() => {
+    const standardEntries: BookPickerEntry[] = visibleCatalog.map((entry) => ({
+      key: `standard:${entry.chipId}`,
+      chipId: entry.chipId,
+      series: "standard",
+      chipLabel: entry.chipLabel,
+      title: entry.title,
+      subtitle: entry.subtitle,
+      coverUrl: entry.coverUrl,
+      available: entry.available,
+      reviewLevel: resolveCatalogChipLevel(entry),
+    }));
+    if (selectedLang === "ko") return standardEntries;
+    const fazhanEntries: BookPickerEntry[] = fazhanCatalog.map((entry) => ({
+      key: `fazhan:${entry.chipId}`,
+      chipId: entry.chipId,
+      series: "fazhan",
+      chipLabel: entry.chipLabel,
+      title: entry.title,
+      subtitle: entry.subtitle,
+      coverUrl: entry.coverUrl,
+      available: entry.available,
+      reviewLevel: resolveCatalogChipLevel(entry),
+    }));
+    return [...standardEntries, ...fazhanEntries];
+  }, [visibleCatalog, fazhanCatalog, selectedLang]);
+
+  const activePickerKey = `${activeSeries}:${activeChip}`;
 
   useEffect(() => {
     if (visibleCatalog.some((entry) => entry.chipId === activeChip)) return;
@@ -481,47 +516,15 @@ export function HomeAppView({
         </div>
       ) : null}
 
-      {selectedLang !== "ko" ? (
-        <div className="mb-2">
-          <div className="bs-tm-chip-row">
-            <button
-              type="button"
-              onClick={() => activeSeries !== "standard" && pickSeries("standard")}
-              className={`bs-tm-chip ${activeSeries === "standard" ? "bs-tm-chip--on" : ""}`}
-            >
-              {tr(locale, "Стандарт")}
-            </button>
-            <button
-              type="button"
-              onClick={() => activeSeries !== "fazhan" && pickSeries("fazhan")}
-              className={`bs-tm-chip ${activeSeries === "fazhan" ? "bs-tm-chip--on" : ""}`}
-            >
-              发展汉语
-            </button>
-          </div>
-          <p className="mt-1 px-1 text-[11px] leading-4 text-[var(--app-muted)]">
-            {activeSeries === "standard"
-              ? tr(locale, "Олон улсын HSK шалгалтын стандарт хөтөлбөр")
-              : tr(locale, "Жинхэнэ ангид (Хятадад) хэрэглэдэг сурах бичиг")}
-          </p>
-        </div>
+      {pickerEntries.length > 1 ? (
+        <BookPickerGrid
+          entries={pickerEntries}
+          activeKey={activePickerKey}
+          onSelect={pickBook}
+        />
       ) : null}
 
-      {visibleCatalog.length > 1 ? (
-        <div className="bs-tm-chip-row">
-          {visibleCatalog.map((chip) => (
-            <button
-              key={chip.chipId}
-              type="button"
-              disabled={!chip.available}
-              onClick={() => chip.available && pickChip(chip.chipId)}
-              className={`bs-tm-chip ${activeChip === chip.chipId ? "bs-tm-chip--on" : ""}`}
-            >
-              {chip.chipLabel}
-            </button>
-          ))}
-        </div>
-      ) : null}
+      <LibraryPreviewRow items={libraryPreview} />
 
       {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
 
