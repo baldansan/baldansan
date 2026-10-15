@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
+import { revalidateCatalog } from "@/lib/cache/catalog-revalidate";
 import { revalidateBichlegPages } from "@/lib/bichleg/revalidate";
 import {
   removeVideoSeriesThumbnail,
@@ -74,6 +75,7 @@ export async function POST(request: Request, context: RouteContext) {
 
   revalidateBichlegPages();
   revalidatePath("/admin/bichleg");
+  revalidateCatalog(["videos"]);
 
   return NextResponse.json({ ok: true, thumbnail_url: result.thumbnail_url });
 }
@@ -119,6 +121,7 @@ export async function DELETE(_request: Request, context: RouteContext) {
 
   revalidateBichlegPages();
   revalidatePath("/admin/bichleg");
+  revalidateCatalog(["videos"]);
 
   return NextResponse.json({ ok: true });
 }

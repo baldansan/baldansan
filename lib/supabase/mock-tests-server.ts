@@ -21,9 +21,13 @@ import type {
   MockTestSection,
 } from "@/lib/mock-test/types";
 import {
+  createAnonServerSupabaseClient,
   createServerSupabaseClient,
   hasServerSupabaseConfig,
 } from "@/lib/supabase/server";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import { unstable_cache } from "next/cache";
+import { CATALOG_REVALIDATE_SECONDS, CATALOG_TAG } from "@/lib/cache/catalog-cache";
 
 function mapSections(raw: unknown): MockTestSection[] {
   if (!Array.isArray(raw)) return [];
@@ -109,13 +113,10 @@ function mapQuestion(raw: Record<string, unknown>): MockTestQuestionRow {
   };
 }
 
-export async function fetchMockTests(
+async function fetchMockTestsWith(
+  client: SupabaseClient,
   hskLevel?: number
 ): Promise<MockTestRow[]> {
-  if (!hasServerSupabaseConfig) return [];
-  const client = await createServerSupabaseClient();
-  if (!client) return [];
-
   let query = client
     .from("mock_tests")
     .select("*")
@@ -130,6 +131,29 @@ export async function fetchMockTests(
   if (error || !data) return [];
   return data.map((row) => mapTest(row as Record<string, unknown>));
 }
+
+export async function fetchMockTests(
+  hskLevel?: number
+): Promise<MockTestRow[]> {
+  if (!hasServerSupabaseConfig) return [];
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+  return fetchMockTestsWith(client, hskLevel);
+}
+
+/**
+ * Нийтийн mock test жагсаалт — anon клиент, Data Cache 120с (tag: catalog:mock-tests).
+ * /review зэрэг нийтийн хуудсанд; admin/хэрэглэгчийн үр дүнд fetchMockTests-ийг хэвээр хэрэглэ.
+ */
+export const fetchMockTestsCached = unstable_cache(
+  async (hskLevel?: number): Promise<MockTestRow[]> => {
+    const client = createAnonServerSupabaseClient();
+    if (!client) return [];
+    return fetchMockTestsWith(client, hskLevel);
+  },
+  ["public-mock-tests"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.mockTests] }
+);
 
 export async function fetchMockTestById(
   testId: string

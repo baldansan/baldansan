@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidateCatalog } from "@/lib/cache/catalog-revalidate";
 import { importBichlegVideosOnServer } from "@/lib/admin/import-bichleg-server";
 import type { BichlegImportApiBody } from "@/lib/import/bichleg-video-types";
 import { getAdminServiceRoleSupabaseClient } from "@/lib/supabase/admin-service-role-client";
@@ -42,6 +43,9 @@ export async function POST(request: Request) {
       series
     );
     const status = result.ok ? 200 : 422;
+    if (result.ok) {
+      revalidateCatalog(["videos"]);
+    }
     return NextResponse.json(result, { status });
   } catch (error) {
     console.error("[api/admin/import/bichleg] Import failed", error);

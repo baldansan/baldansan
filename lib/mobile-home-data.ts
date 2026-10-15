@@ -12,6 +12,8 @@ import {
   getCourseContentById,
   getPublicLessonSummariesByCourseId,
 } from "@/lib/content";
+import { unstable_cache } from "next/cache";
+import { CATALOG_REVALIDATE_SECONDS, CATALOG_TAG } from "@/lib/cache/catalog-cache";
 import { getStories } from "@/lib/library/data";
 import type { LibraryPreviewItem } from "@/components/mobile/library-preview-row";
 
@@ -126,7 +128,7 @@ async function loadLibraryPreviewForHome(): Promise<LibraryPreviewItem[]> {
   }
 }
 
-export async function loadMobileHomeData(): Promise<MobileHomeData> {
+async function loadMobileHomeDataUncached(): Promise<MobileHomeData> {
   const [hskLevels, korean, fazhanLevels, libraryPreview] = await Promise.all([
     Promise.all(HSK_LEVEL_IDS.map((id) => loadHskLevelForHome(id))),
     loadKoreanCourseForHome(),
@@ -172,3 +174,14 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
     libraryPreview,
   };
 }
+
+/**
+ * /home каталог — нийтийн дата (anon клиент, хэрэглэгчийн дата байхгүй) тул
+ * Data Cache-д 120с хадгална: cookies()-ийн улмаас хуудас dynamic ч DB-д
+ * 2 минутад нэг л удаа ханддаг.
+ */
+export const loadMobileHomeData = unstable_cache(
+  loadMobileHomeDataUncached,
+  ["mobile-home-data"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.lessons, CATALOG_TAG.courses] }
+);

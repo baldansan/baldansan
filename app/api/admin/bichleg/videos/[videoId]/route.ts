@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
+import { revalidateCatalog } from "@/lib/cache/catalog-revalidate";
 import { revalidateBichlegPages } from "@/lib/bichleg/revalidate";
 import { getAdminServiceRoleSupabaseClient } from "@/lib/supabase/admin-service-role-client";
 
@@ -64,6 +65,7 @@ export async function PATCH(request: Request, context: RouteContext) {
 
   revalidateBichlegPages();
   revalidatePath("/admin/bichleg");
+  revalidateCatalog(["videos"]);
 
   return NextResponse.json({ ok: true, subtitle_offset_sec: offset });
 }
@@ -92,6 +94,7 @@ export async function DELETE(_request: Request, context: RouteContext) {
 
   revalidateBichlegPages();
   revalidatePath("/admin/bichleg");
+  revalidateCatalog(["videos"]);
 
   return NextResponse.json({ ok: true });
 }

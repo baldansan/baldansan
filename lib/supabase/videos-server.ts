@@ -8,9 +8,13 @@ import type {
   VideoSubtitleRow,
 } from "@/lib/bichleg/types";
 import {
+  createAnonServerSupabaseClient,
   createServerSupabaseClient,
   hasServerSupabaseConfig,
 } from "@/lib/supabase/server";
+import type { SupabaseClient } from "@supabase/supabase-js";
+import { unstable_cache } from "next/cache";
+import { CATALOG_REVALIDATE_SECONDS, CATALOG_TAG } from "@/lib/cache/catalog-cache";
 
 function mapSeries(raw: Record<string, unknown> | null): VideoSeriesInfo | null {
   if (!raw) return null;
@@ -102,7 +106,23 @@ export async function fetchVideoSeriesCatalog(): Promise<VideoSeriesCard[]> {
   if (!hasServerSupabaseConfig) return [];
   const client = await createServerSupabaseClient();
   if (!client) return [];
+  return fetchVideoSeriesCatalogWith(client);
+}
 
+/** Нийтийн цувралын каталог — anon клиент, Data Cache 120с (tag: catalog:videos). */
+export const fetchVideoSeriesCatalogCached = unstable_cache(
+  async (): Promise<VideoSeriesCard[]> => {
+    const client = createAnonServerSupabaseClient();
+    if (!client) return [];
+    return fetchVideoSeriesCatalogWith(client);
+  },
+  ["public-video-series-catalog"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.videos] }
+);
+
+async function fetchVideoSeriesCatalogWith(
+  client: SupabaseClient
+): Promise<VideoSeriesCard[]> {
   const primary = await client
     .from("video_series")
     .select(`${VIDEO_SERIES_SELECT}, videos(count)`)
@@ -181,11 +201,7 @@ export async function fetchVideoSeriesById(
   return mapSeries(row);
 }
 
-export async function countOrphanVideos(): Promise<number> {
-  if (!hasServerSupabaseConfig) return 0;
-  const client = await createServerSupabaseClient();
-  if (!client) return 0;
-
+async function countOrphanVideosWith(client: SupabaseClient): Promise<number> {
   const { count, error } = await client
     .from("videos")
     .select("id", { count: "exact", head: true })
@@ -194,6 +210,24 @@ export async function countOrphanVideos(): Promise<number> {
   if (error) return 0;
   return count ?? 0;
 }
+
+export async function countOrphanVideos(): Promise<number> {
+  if (!hasServerSupabaseConfig) return 0;
+  const client = await createServerSupabaseClient();
+  if (!client) return 0;
+  return countOrphanVideosWith(client);
+}
+
+/** Цувралгүй бичлэгийн тоо (нийтийн) — Data Cache 120с (tag: catalog:videos). */
+export const countOrphanVideosCached = unstable_cache(
+  async (): Promise<number> => {
+    const client = createAnonServerSupabaseClient();
+    if (!client) return 0;
+    return countOrphanVideosWith(client);
+  },
+  ["public-orphan-video-count"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.videos] }
+);
 
 export async function fetchSeriesEpisodes(
   seriesId: string

@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidateCatalog } from "@/lib/cache/catalog-revalidate";
 import type { ImportDraftApiBody } from "@/lib/admin/build-import-draft-request";
 import { importDraftLessonOnServer } from "@/lib/admin/import-lesson-server";
 import { getAdminServiceRoleSupabaseClient } from "@/lib/supabase/admin-service-role-client";
@@ -46,6 +47,9 @@ export async function POST(request: Request) {
   try {
     const result = await importDraftLessonOnServer(clientResult.client, body);
     const status = result.ok ? 200 : 422;
+    if (result.ok) {
+      revalidateCatalog(["lessons", "courses"]);
+    }
     if (!result.ok) {
       console.error("[api/admin/import/lesson] Import rejected", {
         lessonId: body.lessonId,

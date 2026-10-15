@@ -12,8 +12,8 @@ import {
   isServerUserAuthenticated,
 } from "@/lib/supabase/video-progress-server";
 import {
-  countOrphanVideos,
-  fetchVideoSeriesCatalog,
+  countOrphanVideosCached,
+  fetchVideoSeriesCatalogCached,
 } from "@/lib/supabase/videos-server";
 
 export const dynamic = "force-dynamic";
@@ -45,8 +45,8 @@ export default async function BichlegPage({ searchParams }: Props) {
   }
 
   const [seriesList, orphanCount] = await Promise.all([
-    fetchVideoSeriesCatalog(),
-    countOrphanVideos(),
+    fetchVideoSeriesCatalogCached(),
+    countOrphanVideosCached(),
   ]);
 
   const isAuthenticated = await isServerUserAuthenticated();

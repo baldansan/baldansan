@@ -1,4 +1,6 @@
 import { canonicalLessonId, normalizeLessonRouteId } from "@/lib/lesson-id";
+import { unstable_cache } from "next/cache";
+import { CATALOG_REVALIDATE_SECONDS, CATALOG_TAG } from "@/lib/cache/catalog-cache";
 import { courses } from "@/data/courses";
 import {
   getSupabaseCourseById,
@@ -198,8 +200,7 @@ export async function getPublicLessonsByCourseId(
   );
 }
 
-/** Public course list without vocabulary/quiz payload — for study hub and navigation. */
-export async function getPublicLessonSummariesByCourseId(
+async function getPublicLessonSummariesByCourseIdUncached(
   courseId: string
 ): Promise<LessonContent[]> {
   const lessons = await fetchSupabaseListOnly(
@@ -209,6 +210,16 @@ export async function getPublicLessonSummariesByCourseId(
 
   return lessons.map(toLessonListSummary);
 }
+
+/**
+ * Public course list without vocabulary/quiz payload — for study hub and navigation.
+ * Нийтийн дата (status=available, anon клиент) → Data Cache 120с (tag: catalog:lessons).
+ */
+export const getPublicLessonSummariesByCourseId = unstable_cache(
+  getPublicLessonSummariesByCourseIdUncached,
+  ["public-lesson-summaries"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.lessons] }
+);
 
 /** Admin / internal: all lessons including draft and archived. */
 export async function getLessonsByCourseId(
@@ -238,13 +249,20 @@ export async function getLessonsByCourseId(
   );
 }
 
-export async function getCourseContentById(
+async function getCourseContentByIdUncached(
   courseId: string
 ): Promise<CourseContent | undefined> {
   return fetchSupabaseOnly(`getCourseContentById(${courseId})`, () =>
     getSupabaseCourseContentById(courseId)
   );
 }
+
+/** Курсын мэдээлэл (нийтийн) → Data Cache 120с (tag: catalog:courses). */
+export const getCourseContentById = unstable_cache(
+  getCourseContentByIdUncached,
+  ["course-content"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.courses] }
+);
 
 export async function getCourseById(
   courseId: string

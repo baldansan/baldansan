@@ -1,7 +1,7 @@
 import { ReviewMenuHubClient } from "@/components/review/review-menu-hub-client";
 import { getHelzuiCourse } from "@/lib/helzui/load-course";
 import { getHsk30Course } from "@/lib/hsk30-durem/load-course";
-import { fetchMockTests } from "@/lib/supabase/mock-tests-server";
+import { fetchMockTestsCached } from "@/lib/supabase/mock-tests-server";
 
 export const dynamic = "force-dynamic";
 
@@ -11,7 +11,7 @@ export const metadata = {
 
 export default async function ReviewPage() {
   const [tests, helzui, hsk30] = await Promise.all([
-    fetchMockTests(),
+    fetchMockTestsCached(),
     Promise.resolve(getHelzuiCourse()),
     Promise.resolve(getHsk30Course()),
   ]);

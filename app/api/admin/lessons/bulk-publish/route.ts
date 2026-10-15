@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getAdminLessonsByCourseId } from "@/lib/admin/lesson-fetch";
 import { createServerSupabaseClient, hasServerSupabaseConfig } from "@/lib/supabase/server";
 import { isCurrentUserAdminServer } from "@/lib/supabase/admin-server";
+import { revalidateCatalog } from "@/lib/cache/catalog-revalidate";
 
 /**
  * Admin POST: publish every `draft` lesson in the given course(s) in one call.
@@ -96,6 +97,10 @@ export async function POST(request: Request) {
 
   const published = results.filter((r) => r.ok).length;
   const failed = results.filter((r) => !r.ok).length;
+
+  if (published > 0) {
+    revalidateCatalog(["lessons", "courses"]);
+  }
 
   return NextResponse.json({
     ok: failed === 0,

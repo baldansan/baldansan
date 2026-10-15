@@ -1,5 +1,5 @@
 import { createServerClient } from "@supabase/ssr";
-import type { SupabaseClient } from "@supabase/supabase-js";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { cookies } from "next/headers";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -30,5 +30,16 @@ export async function createServerSupabaseClient(): Promise<SupabaseClient | nul
         }
       },
     },
+  });
+}
+
+/**
+ * Cookie-ГҮЙ anon клиент — нийтийн (RLS public read) дата, unstable_cache дотор ашиглана.
+ * unstable_cache дотор cookies() дуудаж болдоггүй тул createServerSupabaseClient энд тохирохгүй.
+ */
+export function createAnonServerSupabaseClient(): SupabaseClient | null {
+  if (!hasServerSupabaseConfig) return null;
+  return createClient(supabaseUrl!, supabaseAnonKey!, {
+    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
   });
 }
