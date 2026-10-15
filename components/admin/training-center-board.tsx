@@ -4,7 +4,7 @@ import { DEMO_BADGE_LABEL, DEMO_DATA_NOTE } from "@/lib/demo-data";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
-import { AdminMetricCard } from "@/components/admin/admin-metric-card";
+import { BarChart, StatTile } from "@/components/charts";
 import { GradeChip } from "@/components/admin/learner-grade-board";
 import {
   LEARNER_GRADE_LABELS,
@@ -271,61 +271,57 @@ export function TrainingCenterBoard({ overview }: Props) {
         </section>
       ) : null}
 
-      <section
-        aria-label="Төвийн хураангуй"
-        className="grid grid-cols-2 gap-3 lg:grid-cols-5"
-      >
-        <AdminMetricCard
-          label="Бүлэг"
-          value={formatNumber(overview.totals.classroomCount)}
-          hint={
-            overview.selectedOrganizationName
-              ? overview.selectedOrganizationName
-              : "Бүх байгууллагын нийлбэр"
-          }
-          icon="🏢"
-          accent="slate"
-        />
-        <AdminMetricCard
-          label="Багш"
-          value={formatNumber(overview.totals.teacherCount)}
-          hint="Бүлэг хариуцсан багш"
-          icon="🧑‍🏫"
-          accent="slate"
-        />
-        <AdminMetricCard
-          label="Сурагч"
-          value={formatNumber(overview.totals.studentCount)}
-          hint={`${formatNumber(overview.totals.linkedStudentCount)} нь апп руу нэвтэрсэн`}
-          icon="🎒"
-          accent="slate"
-        />
-        <AdminMetricCard
-          label="Дундаж оноо"
-          value={overview.totals.averageScore ?? "—"}
-          hint={
-            overview.totals.averageScore == null
-              ? "Үнэлэхэд хангалттай өгөгдөл алга"
-              : `${LEARNER_GRADE_LABELS[overview.totals.averageGrade]} · ${formatNumber(overview.totals.ratedStudentCount)} үнэлгээгээр`
-          }
-          icon="🎓"
-          accent={overview.totals.averageScore == null ? "slate" : "emerald"}
-        />
-        <AdminMetricCard
-          label={`Сүүлийн ${overview.activityWindowDays} хоногт идэвхтэй`}
-          value={
-            overview.totals.activeShare == null
-              ? "—"
-              : `${overview.totals.activeShare}%`
-          }
-          hint={
-            overview.totals.activeShare == null
-              ? "Нэвтэрсэн сурагч алга тул тооцох боломжгүй"
-              : `${formatNumber(overview.totals.activeStudentCount ?? 0)} / ${formatNumber(overview.totals.linkedStudentCount)} сурагч`
-          }
-          icon="⚡"
-          accent={overview.totals.activeShare == null ? "slate" : "amber"}
-        />
+      <section aria-label="Төвийн хураангуй" className="flex flex-col gap-4">
+        <div className="grid grid-cols-2 gap-3 lg:grid-cols-5">
+          <StatTile
+            label="Бүлэг"
+            value={formatNumber(overview.totals.classroomCount)}
+            hint={overview.selectedOrganizationName ?? "Бүх байгууллагын нийлбэр"}
+          />
+          <StatTile
+            label="Багш"
+            value={formatNumber(overview.totals.teacherCount)}
+            hint="Бүлэг хариуцсан багш"
+          />
+          <StatTile
+            label="Сурагч"
+            value={formatNumber(overview.totals.studentCount)}
+            hint={`${formatNumber(overview.totals.linkedStudentCount)} нь апп руу нэвтэрсэн`}
+          />
+          <StatTile
+            label="Дундаж оноо"
+            value={overview.totals.averageScore == null ? "—" : String(overview.totals.averageScore)}
+            hint={
+              overview.totals.averageScore == null
+                ? "Үнэлэхэд хангалттай өгөгдөл алга"
+                : `${LEARNER_GRADE_LABELS[overview.totals.averageGrade]} · ${formatNumber(overview.totals.ratedStudentCount)} үнэлгээгээр`
+            }
+          />
+          <StatTile
+            label={`Сүүлийн ${overview.activityWindowDays} хоногт идэвхтэй`}
+            value={overview.totals.activeShare == null ? "—" : `${overview.totals.activeShare}%`}
+            hint={
+              overview.totals.activeShare == null
+                ? "Нэвтэрсэн сурагч алга тул тооцох боломжгүй"
+                : `${formatNumber(overview.totals.activeStudentCount ?? 0)} / ${formatNumber(overview.totals.linkedStudentCount)} сурагч`
+            }
+          />
+        </div>
+        {overview.classes.some((row) => row.averageScore != null) ? (
+          <div className="admin-panel p-4">
+            <h2 className="text-sm font-semibold text-slate-900">Бүлэг бүрийн дундаж оноо</h2>
+            <div className="mt-2">
+              <BarChart
+                data={[...overview.classes]
+                  .sort((a, b) => (b.averageScore ?? -1) - (a.averageScore ?? -1))
+                  .map((row) => ({ label: row.name, value: row.averageScore, sub: row.teacherLabel }))}
+                max={100}
+                highlight
+                ariaLabel="Бүлэг бүрийн дундаж оноо"
+              />
+            </div>
+          </div>
+        ) : null}
       </section>
 
       {overview.classes.length === 0 ? (
