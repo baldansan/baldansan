@@ -1,0 +1,592 @@
+[
+ {
+  "type": "choice",
+  "question": "«暖气» утга:",
+  "options": [
+   "халаалт",
+   "бээлий",
+   "цонх",
+   "агааржуулагч"
+  ],
+  "correct_answer": "халаалт",
+  "explanation": "暖气 = халаалт.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l19-q01",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«只好» утга:",
+  "options": [
+   "хэзээ ч",
+   "тасралтгүй",
+   "заавал",
+   "аргагүй"
+  ],
+  "correct_answer": "аргагүй",
+  "explanation": "只好 = өөр сонголтгүй.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l19-q02",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«保证» утга:",
+  "options": [
+   "хүлээх",
+   "амлах",
+   "мартах",
+   "засах"
+  ],
+  "correct_answer": "амлах",
+  "explanation": "保证 = баталгаа өгөх.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l19-q03",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«房东» хэн бэ?",
+  "options": [
+   "сургуулийн багш",
+   "байрны эзэн",
+   "найз",
+   "хөрш"
+  ],
+  "correct_answer": "байрны эзэн",
+  "explanation": "房东 = түрээслүүлэгч.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l19-q04",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«手套» утга:",
+  "options": [
+   "цүнх",
+   "бээлий",
+   "гутал",
+   "малгай"
+  ],
+  "correct_answer": "бээлий",
+  "explanation": "手套 = бээлий.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l19-q05",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«帽子»-ийн пиньинь:",
+  "options": [
+   "màozi",
+   "mǎozi",
+   "máozi",
+   "màozǐ"
+  ],
+  "correct_answer": "màozi",
+  "explanation": "帽子 màozi.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l19-q06",
+  "skillTags": [
+   "vocab",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«后来»-ийн пиньинь:",
+  "options": [
+   "hǒulái",
+   "hòulài",
+   "hóulái",
+   "hòulái"
+  ],
+  "correct_answer": "hòulái",
+  "explanation": "后来 hòulái.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l19-q07",
+  "skillTags": [
+   "vocab",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«认为» утга:",
+  "options": [
+   "амлах",
+   "гэж үзэх",
+   "мартах",
+   "хүлээх"
+  ],
+  "correct_answer": "гэж үзэх",
+  "explanation": "认为 = гэж үзэх.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l19-q08",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«容易» эсрэг утга:",
+  "options": [
+   "新",
+   "好",
+   "多",
+   "难"
+  ],
+  "correct_answer": "难",
+  "explanation": "容易 ↔ 难.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l19-q09",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«还» (huán) — ямар утгатай вэ?",
+  "options": [
+   "мөн, бас",
+   "тоглох",
+   "дуусгах",
+   "буцааж өгөх"
+  ],
+  "correct_answer": "буцааж өгөх",
+  "explanation": "还给 — буцааж өгөх.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l19-q10",
+  "skillTags": [
+   "vocab",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«内容» утга:",
+  "options": [
+   "өнгө",
+   "үнэ",
+   "агуулга",
+   "нэр"
+  ],
+  "correct_answer": "агуулга",
+  "explanation": "内容 = агуулга.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l19-q11",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«圣诞节»:",
+  "options": [
+   "Шинэ жил",
+   "Христийн мэндэлсний баяр",
+   "Төрсөн өдөр",
+   "Цагаан сар"
+  ],
+  "correct_answer": "Христийн мэндэлсний баяр",
+  "explanation": "圣诞节.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l19-q12",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«护照» утга:",
+  "options": [
+   "виз",
+   "гадаад паспорт",
+   "карт",
+   "тасалбар"
+  ],
+  "correct_answer": "гадаад паспорт",
+  "explanation": "护照.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l19-q13",
+  "skillTags": [
+   "vocab"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би ханиад хүрсэн тул аргагүй гэртээ амарлаа» хятадаар:",
+  "options": [
+   "我感冒了，休息只好在家。",
+   "我感冒了，只好在家休息。",
+   "我只好感冒了，在家休息。",
+   "我感冒了，在家只好休息了没有。"
+  ],
+  "correct_answer": "我感冒了，只好在家休息。",
+  "explanation": "Шалтгаан, дараа нь 只好 + үйл.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l19-q14",
+  "skillTags": [
+   "grammar",
+   "zhihao"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би танд имэйл явуулна»:",
+  "options": [
+   "我发电子邮件在你。",
+   "我发给电子邮件你。",
+   "我你给发电子邮件。",
+   "我给你发电子邮件。"
+  ],
+  "correct_answer": "我给你发电子邮件。",
+  "explanation": "给 + хэнд + үйл үг.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l19-q15",
+  "skillTags": [
+   "grammar",
+   "gei"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Халаалтыг засаж дуусаагүй»:",
+  "options": [
+   "暖气修好没。",
+   "暖气没修好。",
+   "暖气没好修。",
+   "暖气不修好。"
+  ],
+  "correct_answer": "暖气没修好。",
+  "explanation": "没 + V + 好.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l19-q16",
+  "skillTags": [
+   "grammar",
+   "complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Гадаа хүйтэн, малгай өмс»:",
+  "options": [
+   "外边冷，要戴上帽子。",
+   "外边冷，要戴完帽子。",
+   "外边冷，要戴开帽子。",
+   "外边冷，要戴见帽子。"
+  ],
+  "correct_answer": "外边冷，要戴上帽子。",
+  "explanation": "戴上.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l19-q17",
+  "skillTags": [
+   "grammar",
+   "complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би түүнийг хараагүй»:",
+  "options": [
+   "我看没见他。",
+   "我没看他见。",
+   "我不看见他。",
+   "我没看见他。"
+  ],
+  "correct_answer": "我没看见他。",
+  "explanation": "没 + V + 见.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l19-q18",
+  "skillTags": [
+   "grammar",
+   "complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Номоо нээгээрэй»:",
+  "options": [
+   "请大家打上书。",
+   "请大家打完书。",
+   "请大家打给书。",
+   "请大家打开书。"
+  ],
+  "correct_answer": "请大家打开书。",
+  "explanation": "打开.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l19-q19",
+  "skillTags": [
+   "grammar",
+   "complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би чамд энэ номыг буцааж өгнө»:",
+  "options": [
+   "我还完你这本书。",
+   "我还给你这本书。",
+   "我还见你这本书。",
+   "我还开你这本书。"
+  ],
+  "correct_answer": "我还给你这本书。",
+  "explanation": "还给.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l19-q20",
+  "skillTags": [
+   "grammar",
+   "complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би энэ номыг уншиж дуусгаагүй»:",
+  "options": [
+   "我不看完这本书。",
+   "我看没完这本书。",
+   "我没看完这本书。",
+   "我没看完了这本书。"
+  ],
+  "correct_answer": "我没看完这本书。",
+  "explanation": "没看完 — 了-гүй.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l19-q21",
+  "skillTags": [
+   "grammar",
+   "complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«Тэр номыг би хоёр удаа эхнээс нь уншсан»:",
+  "options": [
+   "这本书我看两了遍。",
+   "这本书我看了两遍。",
+   "这本书我看了遍两。",
+   "这本书我两遍看了。"
+  ],
+  "correct_answer": "这本书我看了两遍。",
+  "explanation": "V了 + тоо + 遍.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l19-q22",
+  "skillTags": [
+   "grammar",
+   "bian"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个电影我已经看了两（ ）。",
+  "options": [
+   "遍",
+   "个",
+   "件",
+   "本"
+  ],
+  "correct_answer": "遍",
+  "explanation": "Бүтэн үйлийн тоолуур 遍.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l19-q23",
+  "skillTags": [
+   "grammar",
+   "bian"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«帽» ханзын зүүн хэсэг аль нь вэ?",
+  "options": [
+   "巾",
+   "王",
+   "广",
+   "钅"
+  ],
+  "correct_answer": "巾",
+  "explanation": "帽 = 巾 + 冒.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l19-q24",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "课文一: “我”的房间里为什么特别冷？",
+  "options": [
+   "窗户开着",
+   "暖气坏了",
+   "没有棉衣",
+   "没有手套"
+  ],
+  "correct_answer": "暖气坏了",
+  "explanation": "我房间里的暖气坏了.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l19-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "房东说暖气什么时候修好？",
+  "options": [
+   "后天",
+   "明天",
+   "圣诞节以前",
+   "下个月"
+  ],
+  "correct_answer": "圣诞节以前",
+  "explanation": "圣诞节以前一定修好.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l19-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "山田说现在还要多长时间才能修好？",
+  "options": [
+   "一个星期",
+   "一个月",
+   "两天",
+   "两个星期"
+  ],
+  "correct_answer": "一个星期",
+  "explanation": "还要一个星期呀.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l19-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "崔浩的那本书，山田看完了吗？",
+  "options": [
+   "已经看完了",
+   "还没看完",
+   "没有看",
+   "丢了"
+  ],
+  "correct_answer": "已经看完了",
+  "explanation": "已经看完了.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l19-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "山田觉得那本书怎么样？",
+  "options": [
+   "太长",
+   "很容易读，内容很有意思",
+   "很难读",
+   "没意思"
+  ],
+  "correct_answer": "很容易读，内容很有意思",
+  "explanation": "我认为那本书很容易读，内容也非常有意思.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l19-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «Би хуурагдчихлаа» гэж гомдоллоход чи юу гэх вэ?",
+  "options": [
+   "后来我还给你。",
+   "别着急。",
+   "我保证。",
+   "我被骗了。"
+  ],
+  "correct_answer": "别着急。",
+  "explanation": "别着急 — тайвшруулах хэллэг.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l19-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Номоо буцааж өгөхөөр амлахдаа:",
+  "options": [
+   "我保证打开。",
+   "我保证没看见。",
+   "我保证明天看完。",
+   "我保证明天还给你。"
+  ],
+  "correct_answer": "我保证明天还给你。",
+  "explanation": "保证 + 还给.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l19-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэнд «Үнэхээр уучлаарай» гэж хэлэхдээ:",
+  "options": [
+   "真的很容易。",
+   "真的很认为。",
+   "真的很抱歉。",
+   "真的很有意思。"
+  ],
+  "correct_answer": "真的很抱歉。",
+  "explanation": "抱歉 — уучлалт.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l19-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

@@ -1,0 +1,25 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-gaoji2",
+ "lessonId": "fazhan-gaoji2-l01",
+ "hskLevel": 6,
+ "lessonNumber": 1,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "尊重知识 尊重人才",
+ "mongolianTitle": "Мэдлэгийг хүндэл, авьяастныг хүндэл",
+ "series": "发展汉语（第二版）高级综合 II",
+ "seriesLabel_mn": "发展汉语 ахисан II (≈HSK6)",
+ "source": "发展汉语（第二版）高级综合 II · 第1课 (сурах бичиг, 参考答案 (АУДИО, 课件, 教案 байхгүй))",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (албан 教案 байхгүй тул)"
+ }
+}

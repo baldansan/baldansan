@@ -1,0 +1,467 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 小组讨论 — танай улсад бэлэг өгөх ёс заншлыг бүлгээрээ ярилц",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "在你们国家，结婚的时候一般送什么礼物？",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Жишээ: 我们国家结婚的时候一般送钱。"
+     },
+     {
+      "n": 2,
+      "question_zh": "在你们国家，你们什么时候给别人送礼物？一般送什么礼物？",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Жишээ: 生日的时候送礼物，一般送花儿。"
+     }
+    ],
+    "instruction_zh": "课堂活动、小组讨论"
+   },
+   {
+    "part": 2,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 一、听读辨调 — 4-р аялгуу + 2-р аялгуу, 4-р аялгуу + 3-р аялгуутай үгсийг чанга уншиж ялга",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "四声 + 二声：wèntí　lǜchá　qùnián",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "4-р + 2-р аялгуу (问题, 绿茶, 去年)."
+     },
+     {
+      "n": 2,
+      "question_zh": "四声 + 二声：tèbié　bào míng　liànxí",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "4-р + 2-р аялгуу (特别, 报名, 练习)."
+     },
+     {
+      "n": 3,
+      "question_zh": "四声 + 三声：diànyǐng　hàomǎ　xiàwǔ",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "4-р + 3-р аялгуу (电影, 号码, 下午)."
+     },
+     {
+      "n": 4,
+      "question_zh": "四声 + 三声：huòzhě　shàng wǎng　fànguǎn",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "4-р + 3-р аялгуу (或者, 上网, 饭馆)."
+     }
+    ],
+    "instruction_zh": "一、听读辨调"
+   },
+   {
+    "part": 3,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 二、熟读下面的词语，并写出拼音 — хэллэг бүрийг чанга уншаад пиньинь бич (参考答案-д алга; хариуг 生词-ийн пиньинь дээр үндэслэсэн)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "结婚",
+      "answer": "jié hūn",
+      "explanation_mn": "生词: 结婚 jié hūn."
+     },
+     {
+      "n": 2,
+      "question_zh": "婚礼",
+      "answer": "hūnlǐ",
+      "explanation_mn": "生词: 婚礼 hūnlǐ."
+     },
+     {
+      "n": 3,
+      "question_zh": "参加",
+      "answer": "cānjiā",
+      "explanation_mn": "生词: 参加 cānjiā."
+     },
+     {
+      "n": 4,
+      "question_zh": "准备",
+      "answer": "zhǔnbèi",
+      "explanation_mn": "14-р хичээлийн 听读辨调-д бий: zhǔnbèi."
+     },
+     {
+      "n": 5,
+      "question_zh": "不用",
+      "answer": "bú yòng",
+      "explanation_mn": "不 bú (4-р аялгуу өмнө) + 用 yòng."
+     },
+     {
+      "n": 6,
+      "question_zh": "重要",
+      "answer": "zhòngyào",
+      "explanation_mn": "生词: 重要 zhòngyào."
+     },
+     {
+      "n": 7,
+      "question_zh": "亲戚",
+      "answer": "qīnqi",
+      "explanation_mn": "生词: 亲戚 qīnqi (戚 — хөнгөн аялгуу)."
+     },
+     {
+      "n": 8,
+      "question_zh": "比较",
+      "answer": "bǐjiào",
+      "explanation_mn": "15-р хичээлийн үг: 比较 bǐjiào."
+     },
+     {
+      "n": 9,
+      "question_zh": "或者",
+      "answer": "huòzhě",
+      "explanation_mn": "15-р хичээлийн үг: 或者 huòzhě."
+     }
+    ],
+    "instruction_zh": "二、熟读下面的词语，并写出拼音"
+   },
+   {
+    "part": 4,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 三、辨别下面的每组汉字，并写出拼音 — төстэй ханзуудыг ялган пиньинь бич (参考答案-д зөвхөн ханз; пиньиниг агент бичсэн)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "少 / 小",
+      "answer": "shǎo / xiǎo",
+      "explanation_mn": "少 shǎo (цөөн), 小 xiǎo (жижиг)."
+     },
+     {
+      "n": 2,
+      "question_zh": "公 / 么",
+      "answer": "gōng / me",
+      "explanation_mn": "公 gōng (нийтийн), 么 me (什么)."
+     },
+     {
+      "n": 3,
+      "question_zh": "休 / 体",
+      "answer": "xiū / tǐ",
+      "explanation_mn": "休 xiū (амрах), 体 tǐ (бие)."
+     },
+     {
+      "n": 4,
+      "question_zh": "牛 / 午",
+      "answer": "niú / wǔ",
+      "explanation_mn": "牛 niú (үхэр), 午 wǔ (үд)."
+     },
+     {
+      "n": 5,
+      "question_zh": "大 / 太",
+      "answer": "dà / tài",
+      "explanation_mn": "大 dà (том), 太 tài (хэт)."
+     },
+     {
+      "n": 6,
+      "question_zh": "很 / 银",
+      "answer": "hěn / yín",
+      "explanation_mn": "很 hěn (маш), 银 yín (мөнгөн)."
+     },
+     {
+      "n": 7,
+      "question_zh": "车 / 东",
+      "answer": "chē / dōng",
+      "explanation_mn": "车 chē (машин), 东 dōng (зүүн)."
+     },
+     {
+      "n": 8,
+      "question_zh": "块 / 快",
+      "answer": "kuài / kuài",
+      "explanation_mn": "块 kuài (юань; ширхэг), 快 kuài (хурдан) — пиньинь адил, ялгаа нь хэсэг (土 / 忄)."
+     }
+    ],
+    "instruction_zh": "三、辨别下面的每组汉字，并写出拼音"
+   },
+   {
+    "part": 5,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 四、模仿例子，用合适的词语填空 — жишээ «喝茶»-г дагаж үйл үгэнд тохирох тусагдахуун нөх",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "过（　）",
+      "answer": "生日",
+      "explanation_mn": "过生日 — төрсөн өдөр тэмдэглэх."
+     },
+     {
+      "n": 2,
+      "question_zh": "带（　）",
+      "answer": "东西",
+      "explanation_mn": "带东西 — юм авч явах."
+     },
+     {
+      "n": 3,
+      "question_zh": "送（　）",
+      "answer": "礼物",
+      "explanation_mn": "送礼物 — бэлэг өгөх."
+     },
+     {
+      "n": 4,
+      "question_zh": "参加（　）",
+      "answer": "晚会",
+      "explanation_mn": "参加晚会 — үдэшлэгт оролцох."
+     },
+     {
+      "n": 5,
+      "question_zh": "打（　）",
+      "answer": "电话",
+      "explanation_mn": "打电话 — утсаар залгах."
+     },
+     {
+      "n": 6,
+      "question_zh": "开（　）",
+      "answer": "门",
+      "explanation_mn": "参考答案: 开门 (түлхүүр: 开 + 门; номын хариулт)."
+     },
+     {
+      "n": 7,
+      "question_zh": "穿（　）",
+      "answer": "衣服",
+      "explanation_mn": "穿衣服 — хувцас өмсөх."
+     },
+     {
+      "n": 8,
+      "question_zh": "辅导（　）",
+      "answer": "汉语",
+      "explanation_mn": "辅导汉语 — хятад хэлэнд тусалах."
+     },
+     {
+      "n": 9,
+      "question_zh": "租（　）",
+      "answer": "房子 / 车",
+      "explanation_mn": "租房子/车 — байр/машин түрээслэх."
+     },
+     {
+      "n": 10,
+      "question_zh": "踢（　）",
+      "answer": "足球",
+      "explanation_mn": "踢足球 — хөл бөмбөг тоглох."
+     },
+     {
+      "n": 11,
+      "question_zh": "骑（　）",
+      "answer": "自行车",
+      "explanation_mn": "骑自行车 — дугуй унах."
+     },
+     {
+      "n": 12,
+      "question_zh": "上（　）",
+      "answer": "网 / 课",
+      "explanation_mn": "上网/课 — интернетэд орох / хичээлд орох."
+     }
+    ],
+    "instruction_zh": "四、模仿例子，用合适的词语填空"
+   },
+   {
+    "part": 6,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 五、用指定的词语提问 — өгөгдсөн асуух үгээр өгүүлбэрийг асуулт болгон бич",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "这是我的词典。（谁）",
+      "answer": "这是谁的词典？",
+      "explanation_mn": "谁 — хэний."
+     },
+     {
+      "n": 2,
+      "question_zh": "我要那种苹果。（哪）",
+      "answer": "你要哪种苹果？",
+      "explanation_mn": "哪 — аль."
+     },
+     {
+      "n": 3,
+      "question_zh": "这些东西二十块钱。（多少）",
+      "answer": "这些东西多少钱？",
+      "explanation_mn": "多少 — хэд."
+     },
+     {
+      "n": 4,
+      "question_zh": "明天星期一。（几）",
+      "answer": "明天星期几？",
+      "explanation_mn": "几 — хэд."
+     },
+     {
+      "n": 5,
+      "question_zh": "我的手机号码是15266772819。（多少）",
+      "answer": "你的手机号码是多少？",
+      "explanation_mn": "多少 — хэд."
+     },
+     {
+      "n": 6,
+      "question_zh": "我喜欢打篮球。（什么）",
+      "answer": "你喜欢做什么？",
+      "explanation_mn": "什么 — юу."
+     },
+     {
+      "n": 7,
+      "question_zh": "我的身体很好。（怎么样）",
+      "answer": "你的身体怎么样？",
+      "explanation_mn": "怎么样 — ямар."
+     },
+     {
+      "n": 8,
+      "question_zh": "我喝茶或者咖啡。（还是）",
+      "answer": "你喝茶还是咖啡？",
+      "explanation_mn": "还是 — сонголтын асуулт."
+     },
+     {
+      "n": 9,
+      "question_zh": "我很喜欢骑自行车。（对吗）",
+      "answer": "你很喜欢骑自行车，对吗？",
+      "explanation_mn": "对吗 — баталгаажуулах."
+     },
+     {
+      "n": 10,
+      "question_zh": "我是日本人。（吧）",
+      "answer": "你是日本人吧？",
+      "explanation_mn": "吧 — таамаглал."
+     }
+    ],
+    "instruction_zh": "五、用指定的词语提问"
+   },
+   {
+    "part": 7,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 六、用指定的词语完成句子 — өгөгдсөн үгээр өгүүлбэрийг гүйцээ",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我（　）一本汉语词典。（应该）",
+      "answer": "应该买",
+      "explanation_mn": "应该 + V."
+     },
+     {
+      "n": 2,
+      "question_zh": "我觉得（　）。（麻烦）",
+      "answer": "做饭很麻烦",
+      "explanation_mn": "麻烦 = төвөгтэй."
+     },
+     {
+      "n": 3,
+      "question_zh": "他下星期来北京，（　）。（到时候）",
+      "answer": "到时候我去接他",
+      "explanation_mn": "到时候 = тэр үед."
+     },
+     {
+      "n": 4,
+      "question_zh": "我（　）。（希望）",
+      "answer": "希望爸爸妈妈也来中国",
+      "explanation_mn": "希望 + өгүүлбэр."
+     },
+     {
+      "n": 5,
+      "question_zh": "他下个星期回国，我想（　）。（送）",
+      "answer": "送他一份礼物",
+      "explanation_mn": "送 + хүн + юм."
+     },
+     {
+      "n": 6,
+      "question_zh": "去看亲戚一般（　）。（要）",
+      "answer": "要带一点儿东西",
+      "explanation_mn": "要(2) = ёстой."
+     },
+     {
+      "n": 7,
+      "question_zh": "不喜欢在家做饭，（　）。（可以）",
+      "answer": "可以去饭馆吃",
+      "explanation_mn": "可以(3) = санал болгох."
+     },
+     {
+      "n": 8,
+      "question_zh": "你（　）比较好。（还是）",
+      "answer": "还是每天来上课 / 带一点儿礼物",
+      "explanation_mn": "还是 + сонголт + 比较好."
+     },
+     {
+      "n": 9,
+      "question_zh": "他说（　）。（重要）",
+      "answer": "这件事很重要",
+      "explanation_mn": "重要 = чухал."
+     },
+     {
+      "n": 10,
+      "question_zh": "明天我（　）。（一定）",
+      "answer": "一定来",
+      "explanation_mn": "一定 = заавал."
+     }
+    ],
+    "instruction_zh": "六、用指定的词语完成句子"
+   },
+   {
+    "part": 8,
+    "type": "sentence",
+    "instruction_mn": "Унших ойлголтын дасгал · 七、阅读短文 — «林娜和朱云是好朋友……» бичвэрийг уншаад 4 асуултад хариул",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "林娜和朱云见面的时候都做什么？",
+      "answer": "她们有时候学习汉语，有时候一起聊天儿，有时候一起去商店买东西。",
+      "explanation_mn": "Текстээс: 有时候…，有时候…，有时候…"
+     },
+     {
+      "n": 2,
+      "question_zh": "她们什么时候去参加朋友的生日晚会了？",
+      "answer": "上周末。",
+      "explanation_mn": "Текстээс: 上周末，她们还一起去参加了…"
+     },
+     {
+      "n": 3,
+      "question_zh": "朱云有什么爱好？",
+      "answer": "朱云喜欢运动。",
+      "explanation_mn": "Текстээс: 朱云喜欢运动。"
+     },
+     {
+      "n": 4,
+      "question_zh": "林娜喜欢做什么？",
+      "answer": "林娜喜欢画画儿。",
+      "explanation_mn": "Текстээс: 林娜喜欢画画儿。"
+     }
+    ],
+    "instruction_zh": "七、阅读短文"
+   },
+   {
+    "part": 9,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 写汉字 — 阝, 宀 бүлгийн 10 ханзыг дэвтэр дээр зөв бичих дарааллаар бич",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "阿 院 陪 — 阝 + хэсэг",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "阝 зүүн талд; баруун хэсгээ дараа нь бич."
+     },
+     {
+      "n": 2,
+      "question_zh": "宿 家 安 室 客 字 定 — 宀 + хэсэг",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "宀 дээд талд; доод хэсгээ дараа нь бич."
+     }
+    ],
+    "instruction_zh": "写汉字：阿 院 陪 宿 家 安 室 客 字 定"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичгийн дасгал · 阅读短文 — Би найздаа юу бэлэглэх вэ? (загвар бичвэрээр бич)",
+    "question_zh": "请写一写：你想送朋友什么礼物？你觉得还是送什么比较好？你可以送什么，也可以送什么？",
+    "answer": "下个星期我朋友过生日，我想送他一份礼物，但是不知道送什么合适。我觉得还是送一束花比较好，也可以送水果或者巧克力。去朋友家要带一点儿东西，我一定去参加他的生日晚会。",
+    "explanation_mn": "Загвар эссе (zh/mn) texts.json → mainText.writingSample-д. Нээлттэй даалгавар — автомат шалгахгүй."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ярианы дасгал · 课堂活动 小组讨论 — танай улсад бэлэг өгөх ёс заншлыг ярилц",
+    "question_zh": "(1) 在你们国家，结婚的时候一般送什么礼物？",
+    "answer": "我们国家结婚的时候一般送钱。",
+    "explanation_mn": "Нээлттэй даалгавар (参考答案 байхгүй). Өөрийн орны ёс заншлыг «一般送……» бүтцээр хариулна: 我们国家结婚的时候一般送钱 / 花儿。"
+   }
+  ]
+ },
+ "answerSource": "发展汉语 初级综合 I 参考答案 (答案本 х.16 \"第十六课\" ба х.17 эхлэл) — 综合练习 四 (12), 五 (10), 六 (10), 七 (4 асуулт) 100% тулгасан. 三 (辨别汉字) — 参考答案-д зөвхөн ханз байгаа; пиньинийг агент нэмсэн. 听读辨调, 熟读词语并写拼音, 课堂活动, 写汉字 — нээлттэй даалгавар (参考答案-д хариулт ТЕКСТГҮЙ); 二-ын пиньинийг 生词-ийн пиньинээр тулгасан."
+}

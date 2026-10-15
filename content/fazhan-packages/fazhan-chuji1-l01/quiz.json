@@ -1,0 +1,614 @@
+[
+ {
+  "type": "choice",
+  "question": "«你» гэсэн ханзын пиньинь аль нь вэ?",
+  "options": [
+   "lǐ",
+   "nín",
+   "nǐ",
+   "nì"
+  ],
+  "correct_answer": "nǐ",
+  "explanation": "你 = nǐ (чи). nín нь 您.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l01-q01",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«好» ханзын утга аль нь вэ?",
+  "options": [
+   "тав",
+   "багш",
+   "сайн, сайхан",
+   "чи"
+  ],
+  "correct_answer": "сайн, сайхан",
+  "explanation": "好 = hǎo — сайн.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«您» ханзыг хэзээ хэрэглэх вэ?",
+  "options": [
+   "Өөрийгөө хэлэхэд",
+   "Олон хүнд хандахад",
+   "Үе тэнгийн найздаа",
+   "Багш, ахмад хүнд хүндэтгэлтэй хандахад"
+  ],
+  "correct_answer": "Багш, ахмад хүнд хүндэтгэлтэй хандахад",
+  "explanation": "您 = 你-гийн хүндэтгэлийн хэлбэр (ганц тоо).",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«零» ямар тоо вэ?",
+  "options": [
+   "тав",
+   "тэг",
+   "найм",
+   "нэг"
+  ],
+  "correct_answer": "тэг",
+  "explanation": "零 = líng — тэг.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l01-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«五» ханзын пиньинь аль нь вэ?",
+  "options": [
+   "wú",
+   "wǔ",
+   "bā",
+   "èr"
+  ],
+  "correct_answer": "wǔ",
+  "explanation": "五 = wǔ — тав.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l01-q05",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«八» ямар тоо вэ?",
+  "options": [
+   "тэг",
+   "тав",
+   "хоёр",
+   "найм"
+  ],
+  "correct_answer": "найм",
+  "explanation": "八 = bā — найм.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l01-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "零、一、（ ）、五、八 — хоосон зайд аль тоо орох вэ?",
+  "options": [
+   "人",
+   "二",
+   "十",
+   "好"
+  ],
+  "correct_answer": "二",
+  "explanation": "Дараалал: 零 一 二 五 八.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«老师» ямар утгатай вэ?",
+  "options": [
+   "найз",
+   "эцэг",
+   "оюутан",
+   "багш"
+  ],
+  "correct_answer": "багш",
+  "explanation": "老师 = lǎoshī — багш.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l01-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你们» ямар утгатай вэ?",
+  "options": [
+   "бид",
+   "та (хүндэтгэлтэй)",
+   "та нар (олон тоо)",
+   "чи (ганц тоо)"
+  ],
+  "correct_answer": "та нар (олон тоо)",
+  "explanation": "们 = олон тооны дагавар.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l01-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«一» ханзын пиньинь аль нь вэ?",
+  "options": [
+   "yī",
+   "wǔ",
+   "bā",
+   "èr"
+  ],
+  "correct_answer": "yī",
+  "explanation": "一 = yī — нэг.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l01-q10",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«上课！» ямар утгатай вэ?",
+  "options": [
+   "Баяртай!",
+   "Хичээл тарлаа!",
+   "Хичээл эхэллээ!",
+   "Сайн уу!"
+  ],
+  "correct_answer": "Хичээл эхэллээ!",
+  "explanation": "上课 = хичээл эхлэх.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l01-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«下课！» ямар утгатай вэ?",
+  "options": [
+   "Хичээл эхэллээ!",
+   "Сайн уу!",
+   "Хичээл тарлаа!",
+   "Та нар аа!"
+  ],
+  "correct_answer": "Хичээл тарлаа!",
+  "explanation": "下课 = хичээл тарах.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l01-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nǐ» аль ханзтай таарах вэ?",
+  "options": [
+   "你",
+   "好",
+   "八",
+   "您"
+  ],
+  "correct_answer": "你",
+  "explanation": "你 = nǐ.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l01-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «hǎo» аль ханзтай таарах вэ?",
+  "options": [
+   "好",
+   "八",
+   "你",
+   "五"
+  ],
+  "correct_answer": "好",
+  "explanation": "好 = hǎo.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l01-q14",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«lǐ» үеийн 声母 (гийгүүлэгч) аль нь вэ?",
+  "options": [
+   "ˇ",
+   "l",
+   "lǐ",
+   "i"
+  ],
+  "correct_answer": "l",
+  "explanation": "lǐ = l (声母) + i (韵母) + ˇ (声调).",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l01-q15",
+  "skillTags": [
+   "grammar",
+   "syllable"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«bā» үеийн 韵母 аль нь вэ?",
+  "options": [
+   "¯",
+   "a",
+   "ba",
+   "b"
+  ],
+  "correct_answer": "a",
+  "explanation": "bā = b + a + ¯.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l01-q16",
+  "skillTags": [
+   "grammar",
+   "syllable"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль үе 声母-гүй (зөвхөн эгшиг ба аялгуутай) вэ?",
+  "options": [
+   "hǎo",
+   "nǐ",
+   "bā",
+   "é"
+  ],
+  "correct_answer": "é",
+  "explanation": "é = e (韵母) + ´ (声调).",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l01-q17",
+  "skillTags": [
+   "grammar",
+   "syllable"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хятад хэлэнд хэдэн үндсэн аялгуу байдаг вэ?",
+  "options": [
+   "4",
+   "5",
+   "3",
+   "2"
+  ],
+  "correct_answer": "4",
+  "explanation": "第一声 — 第四声.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l01-q18",
+  "skillTags": [
+   "grammar",
+   "tone"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль тэмдэг 2-р аялгууг (第二声) заадаг вэ?",
+  "options": [
+   "¯",
+   "`",
+   "´",
+   "ˇ"
+  ],
+  "correct_answer": "´",
+  "explanation": "¯ 1-р, ´ 2-р, ˇ 3-р, ` 4-р.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l01-q19",
+  "skillTags": [
+   "grammar",
+   "tone"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«mǎ»-ийн аялгуу аль нь вэ?",
+  "options": [
+   "2-р аялгуу",
+   "3-р аялгуу",
+   "4-р аялгуу",
+   "1-р аялгуу"
+  ],
+  "correct_answer": "3-р аялгуу",
+  "explanation": "ˇ = 3-р аялгуу.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l01-q20",
+  "skillTags": [
+   "grammar",
+   "tone"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аялгууны тэмдгийг үеийн хаана тавих вэ?",
+  "options": [
+   "Гол эгшиг дээр",
+   "Сүүлийн үсэг дээр",
+   "Гийгүүлэгч дээр",
+   "Эхний үсэг дээр"
+  ],
+  "correct_answer": "Гол эгшиг дээр",
+  "explanation": "hǎo-д a дээр.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l01-q21",
+  "skillTags": [
+   "grammar",
+   "tone"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь 声母 биш вэ?",
+  "options": [
+   "a",
+   "p",
+   "m",
+   "b"
+  ],
+  "correct_answer": "a",
+  "explanation": "a бол 韵母.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l01-q22",
+  "skillTags": [
+   "grammar",
+   "initial-final"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь 韵母 биш вэ?",
+  "options": [
+   "ai",
+   "g",
+   "ong",
+   "ü"
+  ],
+  "correct_answer": "g",
+  "explanation": "g бол 声母.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l01-q23",
+  "skillTags": [
+   "grammar",
+   "initial-final"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Доош бага зэрэг уруудаж дараа нь өгсөх аялгуу аль нь вэ?",
+  "options": [
+   "2-р аялгуу",
+   "1-р аялгуу",
+   "4-р аялгуу",
+   "3-р аялгуу"
+  ],
+  "correct_answer": "3-р аялгуу",
+  "explanation": "ˇ хэлбэр: уруудаад өгсөнө.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l01-q24",
+  "skillTags": [
+   "grammar",
+   "tone"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«十»-ийн эхний зураас аль нь вэ (先横后竖)?",
+  "options": [
+   "横 (хэвтээ)",
+   "捺",
+   "竖 (босоо)",
+   "撇"
+  ],
+  "correct_answer": "横 (хэвтээ)",
+  "explanation": "Эхлээд 横, дараа 竖.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l01-q25",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«八»-ийн эхний зураас аль нь вэ (先撇后捺)?",
+  "options": [
+   "竖",
+   "横",
+   "捺",
+   "撇"
+  ],
+  "correct_answer": "撇",
+  "explanation": "Эхлээд 撇, дараа 捺.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l01-q26",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«丿» зураасыг юу гэж нэрлэх вэ?",
+  "options": [
+   "撇 piě",
+   "横 héng",
+   "竖 shù",
+   "捺 nà"
+  ],
+  "correct_answer": "撇 piě",
+  "explanation": "丿 = 撇 (зүүн налуу).",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l01-q27",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "马丁：你好！ 林娜：（ ）！",
+  "options": [
+   "零",
+   "你好",
+   "老师好",
+   "你们好"
+  ],
+  "correct_answer": "你好",
+  "explanation": "Үе тэнгийн хоёр оюутан — «你好».",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l01-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "阿明：（ ）好！ (Амин багш Ли Иминд хүндэтгэлтэй мэндэлж байна)",
+  "options": [
+   "零",
+   "您",
+   "五",
+   "你们"
+  ],
+  "correct_answer": "您",
+  "explanation": "Багшид хүндэтгэлтэй «您好».",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l01-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "Багш олон оюутанд мэндэлнэ: （ ）好！",
+  "options": [
+   "您",
+   "你",
+   "你们",
+   "老师"
+  ],
+  "correct_answer": "你们",
+  "explanation": "Олон хүнд «你们».",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l01-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Настай эмэгтэйд хүндэтгэлтэй мэндлэхэд аль нь тохиромжтой вэ?",
+  "options": [
+   "你们好！",
+   "二好！",
+   "八好！",
+   "您好！"
+  ],
+  "correct_answer": "您好！",
+  "explanation": "Настай хүнд «您好».",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l01-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Багш «你们好！» гэж мэндлэхэд оюутан юу гэж хариулах вэ?",
+  "options": [
+   "下课！",
+   "老师好！",
+   "五！",
+   "零！"
+  ],
+  "correct_answer": "老师好！",
+  "explanation": "Багшид «老师好».",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l01-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хичээл дуусахад багш юу гэж хэлэх вэ?",
+  "options": [
+   "下课！",
+   "你好！",
+   "上课！",
+   "您好！"
+  ],
+  "correct_answer": "下课！",
+  "explanation": "下课 = хичээл тарлаа.",
+  "order_index": 33,
+  "id": "fazhan-chuji1-l01-q33",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

@@ -1,0 +1,603 @@
+[
+ {
+  "type": "choice",
+  "question": "«想» ямар утгатай вэ?",
+  "options": [
+   "авах",
+   "дахин",
+   "хэрэгтэй",
+   "хүсэх, ...маар байх"
+  ],
+  "correct_answer": "хүсэх, ...маар байх",
+  "explanation": "想 = xiǎng.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«买» ямар утгатай вэ?",
+  "options": [
+   "худалдаж авах",
+   "зарах",
+   "төлөх",
+   "хүсэх"
+  ],
+  "correct_answer": "худалдаж авах",
+  "explanation": "买 = mǎi.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«钱» ямар утгатай вэ?",
+  "options": [
+   "талх",
+   "жин",
+   "мөнгө",
+   "юань"
+  ],
+  "correct_answer": "мөнгө",
+  "explanation": "钱 = qián.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«电脑» ямар утгатай вэ?",
+  "options": [
+   "зурагт",
+   "утас",
+   "толь бичиг",
+   "компьютер"
+  ],
+  "correct_answer": "компьютер",
+  "explanation": "电脑 = diànnǎo.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«面包» ямар утгатай вэ?",
+  "options": [
+   "талх",
+   "сүү",
+   "алим",
+   "кофе"
+  ],
+  "correct_answer": "талх",
+  "explanation": "面包 = miànbāo.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«苹果» ямар утгатай вэ?",
+  "options": [
+   "алим",
+   "мандарин",
+   "тарвас",
+   "банана"
+  ],
+  "correct_answer": "алим",
+  "explanation": "苹果 = píngguǒ.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«香蕉» ямар утгатай вэ?",
+  "options": [
+   "гүзээлзгэнэ",
+   "тарвас",
+   "банана",
+   "алим"
+  ],
+  "correct_answer": "банана",
+  "explanation": "香蕉 = xiāngjiāo.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«斤» ямар утгатай вэ?",
+  "options": [
+   "жин (500 г)",
+   "юань",
+   "төрөл",
+   "килограмм"
+  ],
+  "correct_answer": "жин (500 г)",
+  "explanation": "斤 = jīn.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«一共» ямар утгатай вэ?",
+  "options": [
+   "бүгд",
+   "дахин",
+   "хамт",
+   "нийтдээ"
+  ],
+  "correct_answer": "нийтдээ",
+  "explanation": "一共 = yígòng.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l06-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«谢谢»-д хариулах хэллэг аль нь вэ?",
+  "options": [
+   "请问",
+   "不客气",
+   "你好",
+   "再见"
+  ],
+  "correct_answer": "不客气",
+  "explanation": "不客气 = зүгээр ээ.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l06-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«块» ямар утгатай вэ?",
+  "options": [
+   "мөнгө",
+   "жин",
+   "юань (ярианд)",
+   "талх"
+  ],
+  "correct_answer": "юань (ярианд)",
+  "explanation": "块 = kuài.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l06-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«百»-ийн пиньинь аль нь вэ?",
+  "options": [
+   "bái",
+   "bāi",
+   "bǎi",
+   "bài"
+  ],
+  "correct_answer": "bǎi",
+  "explanation": "百 = bǎi — зуу.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l06-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«现在听写» ямар үед хэлэх вэ?",
+  "options": [
+   "Баярлалаа гэхэд",
+   "Нэр асуухад",
+   "Баяртай гэхэд",
+   "Дикт эхлэхэд"
+  ],
+  "correct_answer": "Дикт эхлэхэд",
+  "explanation": "课堂用语.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l06-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«x + üe» хэрхэн бичигдэх вэ?",
+  "options": [
+   "xue",
+   "xie",
+   "xüe",
+   "xu"
+  ],
+  "correct_answer": "xue",
+  "explanation": "j q x-ийн ард ü-ийн хоёр цэг хасагдана.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l06-q14",
+  "skillTags": [
+   "grammar",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«n + ü» хэрхэн бичигдэх вэ?",
+  "options": [
+   "nü",
+   "ne",
+   "nu",
+   "niu"
+  ],
+  "correct_answer": "nü",
+  "explanation": "n, l-ийн ард хоёр цэг хадгалагдана.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l06-q15",
+  "skillTags": [
+   "grammar",
+   "pinyin"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«一个» ярианд яаж дуудагдах вэ?",
+  "options": [
+   "yí ge",
+   "yǐ ge",
+   "yì ge",
+   "yī ge"
+  ],
+  "correct_answer": "yí ge",
+  "explanation": "4-р аялгууны өмнө yí.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l06-q16",
+  "skillTags": [
+   "grammar",
+   "tone"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«一斤» ярианд яаж дуудагдах вэ?",
+  "options": [
+   "yī jīn",
+   "yí jīn",
+   "yǐ jīn",
+   "yì jīn"
+  ],
+  "correct_answer": "yì jīn",
+  "explanation": "1-р аялгууны өмнө yì.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l06-q17",
+  "skillTags": [
+   "grammar",
+   "tone"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«Би утас авмаар байна» хятадаар?",
+  "options": [
+   "我买想手机",
+   "想我买手机",
+   "我手机想买",
+   "我想买手机"
+  ],
+  "correct_answer": "我想买手机",
+  "explanation": "想 + V.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l06-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«101» хятадаар?",
+  "options": [
+   "百零一",
+   "一百零一",
+   "一零一",
+   "一百一"
+  ],
+  "correct_answer": "一百零一",
+  "explanation": "Дунд нь тэг — «零».",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l06-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«110» хятадаар?",
+  "options": [
+   "一百一十",
+   "一十一百",
+   "百一十",
+   "一百十"
+  ],
+  "correct_answer": "一百一十",
+  "explanation": "100-аас дээш — «一十».",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l06-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«2.20元» ярианд?",
+  "options": [
+   "两块二毛",
+   "二块二毛",
+   "二块二",
+   "两块二"
+  ],
+  "correct_answer": "两块二",
+  "explanation": "Тоолуур үгийн өмнө «两».",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l06-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«5.02元» ярианд?",
+  "options": [
+   "五块零二毛",
+   "五块零二分",
+   "五块二毛",
+   "五块二分"
+  ],
+  "correct_answer": "五块零二分",
+  "explanation": "Дунд нь тэг — «零».",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l06-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Нэгж үнийг асуух зөв өгүүлбэр аль нь вэ?",
+  "options": [
+   "苹果多少一钱斤？",
+   "多少钱苹果一斤？",
+   "苹果多少钱一斤？",
+   "苹果一斤钱多少？"
+  ],
+  "correct_answer": "苹果多少钱一斤？",
+  "explanation": "……多少钱 + 一 + 量词.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l06-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«马» ханзын зураас аль нь вэ?",
+  "options": [
+   "竖折折钩",
+   "横折斜钩",
+   "横撇弯钩",
+   "横折折折钩"
+  ],
+  "correct_answer": "竖折折钩",
+  "explanation": "马 = 竖折折钩.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l06-q24",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«意» ямар бүтэцтэй вэ?",
+  "options": [
+   "上中下结构",
+   "上下结构",
+   "品字形结构",
+   "独体结构"
+  ],
+  "correct_answer": "上中下结构",
+  "explanation": "意 = 立 + 日 + 心.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l06-q25",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "马丁（ ）买电子词典和电脑。",
+  "options": [
+   "叫",
+   "是",
+   "有",
+   "想"
+  ],
+  "correct_answer": "想",
+  "explanation": "Мартин хүсч байна — «想».",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l06-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "营业员：你要（ ）种？ 马丁：我要这种。",
+  "options": [
+   "什么",
+   "几",
+   "谁",
+   "哪"
+  ],
+  "correct_answer": "哪",
+  "explanation": "Аль төрөл — «哪种».",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l06-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "营业员：这种四块五一个。 马丁：我要两个。 营业员：一共（ ）。",
+  "options": [
+   "五块",
+   "两块",
+   "九块",
+   "四块五"
+  ],
+  "correct_answer": "九块",
+  "explanation": "2 × 4.50 = 9 юань.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l06-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "马丁：我买四斤香蕉，（ ）买三斤苹果。",
+  "options": [
+   "一共",
+   "再",
+   "要",
+   "想"
+  ],
+  "correct_answer": "再",
+  "explanation": "Нэмж авах — «再».",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l06-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "香蕉一块八一斤，苹果三块五一斤。四斤香蕉、三斤苹果一共多少钱？",
+  "options": [
+   "七块二",
+   "十块五",
+   "十七块七",
+   "十八块七"
+  ],
+  "correct_answer": "十七块七",
+  "explanation": "4 × 1.80 + 3 × 3.50 = 17.70.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l06-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Зах дээр нэгж үнийг асуух:",
+  "options": [
+   "香蕉钱多少一？",
+   "香蕉什么钱？",
+   "香蕉几斤钱？",
+   "香蕉多少钱一斤？"
+  ],
+  "correct_answer": "香蕉多少钱一斤？",
+  "explanation": "多少钱一斤.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l06-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Дэлгүүрт «Би нэг талх авъя» гэж шууд хэлэх:",
+  "options": [
+   "我想一个面包。",
+   "一个面包我多少。",
+   "我要一个面包。",
+   "我需要买面包吗。"
+  ],
+  "correct_answer": "我要一个面包。",
+  "explanation": "要 + нэр үг.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l06-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Худалдагч «Баярлалаа» гэхэд хариулах:",
+  "options": [
+   "谢谢你。",
+   "你好。",
+   "请问。",
+   "不客气！"
+  ],
+  "correct_answer": "不客气！",
+  "explanation": "谢谢 → 不客气.",
+  "order_index": 33,
+  "id": "fazhan-chuji1-l06-q33",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

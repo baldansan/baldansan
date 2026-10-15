@@ -1,0 +1,578 @@
+[
+ {
+  "type": "choice",
+  "question": "«难忘» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "мартагдашгүй",
+   "мартсан",
+   "санах",
+   "дургүй"
+  ],
+  "correct_answer": "мартагдашгүй",
+  "explanation": "难忘 = 难 + 忘 — мартахад хэцүү.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一（ ）上眼睛，往事就进入梦里。",
+  "options": [
+   "关",
+   "领",
+   "闭",
+   "矮"
+  ],
+  "correct_answer": "闭",
+  "explanation": "闭上眼睛 — нүдээ анина.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "到了老年，最近几年的事差不多都（ ）了。",
+  "options": [
+   "出现",
+   "忘记",
+   "打听",
+   "照顾"
+  ],
+  "correct_answer": "忘记",
+  "explanation": "忘记 = мартах.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "最近经常（ ）在我梦里的是一个外国女孩子。",
+  "options": [
+   "出现",
+   "告别",
+   "打听",
+   "忘记"
+  ],
+  "correct_answer": "出现",
+  "explanation": "出现在梦里 — зүүдэнд гарч ирэх.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他是我的（ ），我们在一起工作三年了。",
+  "options": [
+   "同岁",
+   "同屋",
+   "同乡",
+   "同事"
+  ],
+  "correct_answer": "同事",
+  "explanation": "同事 = хамт ажиллагч.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这儿天气不好，（ ）刮风，有时下雨。",
+  "options": [
+   "刚刚",
+   "比",
+   "并",
+   "有时"
+  ],
+  "correct_answer": "有时",
+  "explanation": "有时……有时…… — заримдаа … заримдаа ….",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "谢谢你对我的（ ）！",
+  "options": [
+   "打听",
+   "照顾",
+   "告别",
+   "出现"
+  ],
+  "correct_answer": "照顾",
+  "explanation": "照顾 — халамж.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«年龄» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "хэмжүүр",
+   "анги",
+   "нас",
+   "нэр"
+  ],
+  "correct_answer": "нас",
+  "explanation": "年龄 = нас.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我向很多人（ ）他的消息，可是大家都说不知道。",
+  "options": [
+   "告别",
+   "打听",
+   "照顾",
+   "忘记"
+  ],
+  "correct_answer": "打听",
+  "explanation": "打听 — лавлах.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l08-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那时我（ ）八岁，还不懂“爱情”。",
+  "options": [
+   "刚刚",
+   "有时",
+   "比",
+   "并"
+  ],
+  "correct_answer": "刚刚",
+  "explanation": "刚刚 — дөнгөж.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l08-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«飞吻» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "хуучин мөрөөдөл",
+   "анхны хайр",
+   "ил захидал",
+   "агаарын үнсэлт"
+  ],
+  "correct_answer": "агаарын үнсэлт",
+  "explanation": "飞吻 = агаарын үнсэлт.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l08-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xiāoxi» аль үгэнд таарах вэ?",
+  "options": [
+   "爱情",
+   "消息",
+   "照顾",
+   "打听"
+  ],
+  "correct_answer": "消息",
+  "explanation": "消息 = xiāoxi (мэдээ).",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l08-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他的个子比我（ ）一头。",
+  "options": [
+   "小",
+   "少",
+   "矮",
+   "低"
+  ],
+  "correct_answer": "矮",
+  "explanation": "Хүний өндөр — 矮.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l08-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр надаас хичээнгүй» гэхэд аль нь зөв бэ?",
+  "options": [
+   "他比我努力。",
+   "他比我努力很。",
+   "他比我很努力。",
+   "他我比努力。"
+  ],
+  "correct_answer": "他比我努力。",
+  "explanation": "比-ийн өгүүлбэрт «很» тавихгүй.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l08-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Дүү надаас намхан» гэхэд аль нь зөв бэ?",
+  "options": [
+   "弟弟比我不高。",
+   "弟弟没有我高。",
+   "弟弟不有我高。",
+   "弟弟比我没高。"
+  ],
+  "correct_answer": "弟弟没有我高。",
+  "explanation": "A没有B+Adj.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l08-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：你弟弟比你高吧？ B：他其实________我高。（бараг адил）",
+  "options": [
+   "没有",
+   "不比",
+   "更",
+   "比"
+  ],
+  "correct_answer": "不比",
+  "explanation": "A不比B+Adj — бараг адил.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l08-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Эгч дүүгээсээ таван насаар том» гэхэд аль нь зөв бэ?",
+  "options": [
+   "姐姐大比弟弟五岁。",
+   "姐姐比五岁弟弟大。",
+   "姐姐比弟弟大五岁。",
+   "姐姐比弟弟五岁大。"
+  ],
+  "correct_answer": "姐姐比弟弟大五岁。",
+  "explanation": "Тоон зөрүү Adj-ийн ард.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l08-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这儿的东西比我们国家便宜（ ）。（хамаагүй）",
+  "options": [
+   "多了",
+   "很",
+   "太",
+   "非常"
+  ],
+  "correct_answer": "多了",
+  "explanation": "便宜多了 — хамаагүй хямд.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l08-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр кантон хэлээр надаас ч сайн ярьдаг» гэхэд аль нь зөв бэ?",
+  "options": [
+   "她说广东话比我还好。",
+   "她说广东话比还我好。",
+   "她说广东话比我很好。",
+   "她说广东话还比我好。"
+  ],
+  "correct_answer": "她说广东话比我还好。",
+  "explanation": "比……还 + Adj.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l08-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这个月比上个月（ ）忙。",
+  "options": [
+   "更",
+   "像",
+   "并",
+   "没有"
+  ],
+  "correct_answer": "更",
+  "explanation": "比……更 + Adj — бүр илүү.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l08-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр хятад охидоос хамаагүй өндөр» гэхэд аль нь зөв бэ?",
+  "options": [
+   "她比中国女孩子得多高。",
+   "她比中国女孩子高得多。",
+   "她比中国女孩子高很。",
+   "她比中国女孩子很高。"
+  ],
+  "correct_answer": "她比中国女孩子高得多。",
+  "explanation": "Adj + 得多 — хамаагүй.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l08-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "司苔拉真的（ ）姐姐一样照顾我。",
+  "options": [
+   "没有",
+   "并",
+   "像",
+   "比"
+  ],
+  "correct_answer": "像",
+  "explanation": "像……一样 — «шиг».",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l08-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我觉得汉语（ ）不难。",
+  "options": [
+   "像",
+   "更",
+   "比",
+   "并"
+  ],
+  "correct_answer": "并",
+  "explanation": "并不 — огт … биш.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l08-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Үнэндээ Хятадын бараа огт үнэтэй биш» гэхэд аль нь зөв бэ?",
+  "options": [
+   "其实中国的东西并有贵。",
+   "其实中国的东西并贵。",
+   "其实中国的东西并不贵。",
+   "其实中国的东西不并贵。"
+  ],
+  "correct_answer": "其实中国的东西并不贵。",
+  "explanation": "并 + 不 + Adj.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l08-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "人老了，会有什么变化？",
+  "options": [
+   "头发变黑",
+   "个子变高",
+   "记性变好",
+   "梦就多起来了"
+  ],
+  "correct_answer": "梦就多起来了",
+  "explanation": "P1: 人老了，梦就多起来了。",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l08-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "到了老年，什么人会常常出现在梦里？",
+  "options": [
+   "邻居的孩子",
+   "老同事",
+   "新认识的人",
+   "童年的朋友"
+  ],
+  "correct_answer": "童年的朋友",
+  "explanation": "P2: 童年的朋友却忘不了，他们会常常在梦里出现。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l08-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "司苔拉是谁？",
+  "options": [
+   "“我”的同事",
+   "“我”小时候的邻居，一个外国姐姐",
+   "“我”的妹妹",
+   "“我”的老师"
+  ],
+  "correct_answer": "“我”小时候的邻居，一个外国姐姐",
+  "explanation": "P3: 她家跟我家是邻居。",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l08-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "妈妈为什么请司苔拉领“我”上学？",
+  "options": [
+   "因为“我”生病了",
+   "因为“我”年龄很小，一个人过马路妈妈不放心",
+   "因为“我”不想上学",
+   "因为学校很远"
+  ],
+  "correct_answer": "因为“我”年龄很小，一个人过马路妈妈不放心",
+  "explanation": "P4: 妈妈不放心，就请这位外国姐姐领着我上学。",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l08-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”认为司苔拉是“初恋”吗？",
+  "options": [
+   "课文没有说",
+   "不是，他们太小，还不懂“爱情”",
+   "是，他们互相喜欢",
+   "是，他们结婚了"
+  ],
+  "correct_answer": "不是，他们太小，还不懂“爱情”",
+  "explanation": "P5: 我跟她的关系并不是什么“初恋”。",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l08-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：这件衣服150元，那件152元。那件比这件贵吗？ B：",
+  "options": [
+   "那件没有这件贵。",
+   "那件比这件贵得多。",
+   "那件比这件贵一点儿。",
+   "那件不比这件贵一点儿。"
+  ],
+  "correct_answer": "那件比这件贵一点儿。",
+  "explanation": "Зөрүү 2 юань — 一点儿.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l08-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 这种啤酒 / 没有 / 青岛啤酒 / 好喝",
+  "options": [
+   "这种啤酒没有青岛啤酒好喝",
+   "青岛啤酒没有这种啤酒好喝",
+   "这种啤酒好喝没有青岛啤酒"
+  ],
+  "correct_answer": "这种啤酒没有青岛啤酒好喝",
+  "explanation": "A没有B+Adj дараалал.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l08-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз «Хятадын бараа үнэтэй» гэв. Чи зөвшөөрөхгүй гэхэд аль нь зохимжтой вэ?",
+  "options": [
+   "其实中国的东西更不贵。",
+   "其实中国的东西并很贵。",
+   "其实中国的东西并不贵。",
+   "其实中国的东西没有贵并。"
+  ],
+  "correct_answer": "其实中国的东西并不贵。",
+  "explanation": "并不 — засах өнгө.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l08-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

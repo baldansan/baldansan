@@ -1,0 +1,579 @@
+[
+ {
+  "type": "choice",
+  "question": "«低碳生活» гэсэн хэлцийн утга аль нь вэ?",
+  "options": [
+   "хөнгөн хоол",
+   "ядуу амьдрал",
+   "өндөр байрны амьдрал",
+   "нүүрстөрөгч багатай амьдрал"
+  ],
+  "correct_answer": "нүүрстөрөгч багатай амьдрал",
+  "explanation": "低碳 = нүүрстөрөгч бага ялгаруулдаг.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l23-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "虽然写起来不太舒服，但是却能给家里（ ）一点儿钱。",
+  "options": [
+   "省",
+   "拔",
+   "管",
+   "接"
+  ],
+  "correct_answer": "省",
+  "explanation": "省钱 = мөнгө хэмнэх.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l23-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）的习惯却怎么也改不了。",
+  "options": [
+   "使用",
+   "笑话",
+   "小看",
+   "节约"
+  ],
+  "correct_answer": "节约",
+  "explanation": "节约 = хэмнэх.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l23-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«公交车» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "дугуй",
+   "такси",
+   "нийтийн тээврийн автобус",
+   "галт тэрэг"
+  ],
+  "correct_answer": "нийтийн тээврийн автобус",
+  "explanation": "公交车 = нийтийн автобус.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l23-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "使用寿命却是普通灯的5-6（ ）。",
+  "options": [
+   "点",
+   "个",
+   "次",
+   "倍"
+  ],
+  "correct_answer": "倍",
+  "explanation": "倍 = дахин (хэмжих үг).",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l23-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "不用的电器，不仅要关机，还要（ ）下电源。",
+  "options": [
+   "浇",
+   "接",
+   "管",
+   "拔"
+  ],
+  "correct_answer": "拔",
+  "explanation": "拔下电源 = залгууруас салгах.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l23-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我家院子里放着一口大水缸，（ ）雨水用来浇花。",
+  "options": [
+   "拔",
+   "接",
+   "管",
+   "省"
+  ],
+  "correct_answer": "接",
+  "explanation": "接雨水 = бороо ус хүлээж авах.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l23-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«小看» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "дутуу үнэлэх",
+   "нарийн ажиглах",
+   "жижиг тоглоом",
+   "өөдөөс нь харах"
+  ],
+  "correct_answer": "дутуу үнэлэх",
+  "explanation": "可别小看这口大缸 = Энэ савыг битгий дутуу үнэл.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l23-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "别人不关灯，我（ ）。",
+  "options": [
+   "拔",
+   "管",
+   "省",
+   "接"
+  ],
+  "correct_answer": "管",
+  "explanation": "管 = хэрэгт орох, хутгалдах.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l23-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）别人洗手时水开得太大，我也管。",
+  "options": [
+   "却",
+   "而",
+   "连",
+   "就"
+  ],
+  "correct_answer": "连",
+  "explanation": "连……也/都……",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l23-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "现在那些原来（ ）过我的人，也开始向我学习节约的方法了。",
+  "options": [
+   "使用",
+   "接",
+   "理解",
+   "笑话"
+  ],
+  "correct_answer": "笑话",
+  "explanation": "笑话 = шоолох.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l23-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yícìxìng» аль үгэнд таарах вэ?",
+  "options": [
+   "节能灯",
+   "一次性",
+   "瓶装水",
+   "自来水"
+  ],
+  "correct_answer": "一次性",
+  "explanation": "一次性 = yícìxìng.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l23-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "水是（ ）的，能省就省。",
+  "options": [
+   "低碳",
+   "小气",
+   "节约",
+   "宝贵"
+  ],
+  "correct_answer": "宝贵",
+  "explanation": "宝贵 = нандин.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l23-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Ханз сурахад маш сонирхолтой» гэхэд аль нь зөв бэ?",
+  "options": [
+   "汉字学很起来有意思。",
+   "汉字起来学很有意思。",
+   "汉字学了起来很有意思。",
+   "汉字学起来很有意思。"
+  ],
+  "correct_answer": "汉字学起来很有意思。",
+  "explanation": "V+起来+үнэлгээ.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l23-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр зүйлийг хэлэхэд амархан, хийхэд хэцүү» — аль нь зөв бэ?",
+  "options": [
+   "那件事起来说容易，起来做难。",
+   "那件事说容易起来，做难起来。",
+   "那件事说起来容易，做起来难。",
+   "那件事说起来难，做起来容易。"
+  ],
+  "correct_answer": "那件事说起来容易，做起来难。",
+  "explanation": "说起来容易，做起来难.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l23-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：我们去吃北京烤鸭怎么样？ B：________，这个主意不错。",
+  "options": [
+   "吃起来",
+   "听起来",
+   "学起来",
+   "做起来"
+  ],
+  "correct_answer": "听起来",
+  "explanation": "主意 → «сонсоход» — 听起来.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l23-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би тэр номыг хэрхэвч ойлгож чадахгүй» — аль нь зөв бэ?",
+  "options": [
+   "那本书我怎么也看了不懂。",
+   "那本书我怎么也不看懂。",
+   "那本书我怎么也看懂不。",
+   "那本书我怎么也看不懂。"
+  ],
+  "correct_answer": "那本书我怎么也看不懂。",
+  "explanation": "怎么也 + V + 不 + үр дүн.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l23-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他使劲儿跑，可怎么也________。",
+  "options": [
+   "没跑快",
+   "不跑快",
+   "跑不快",
+   "跑快不"
+  ],
+  "correct_answer": "跑不快",
+  "explanation": "V + 不 + үр дүн.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l23-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "1/3-ыг хятадаар яаж уншдаг вэ?",
+  "options": [
+   "三分之一",
+   "三一分",
+   "一分之三",
+   "三个一"
+  ],
+  "correct_answer": "三分之一",
+  "explanation": "Хуваагч эхэнд: 三分之一.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l23-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "6是3的________倍。",
+  "options": [
+   "两",
+   "一",
+   "四",
+   "三"
+  ],
+  "correct_answer": "两",
+  "explanation": "6÷3=2 → 两倍.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l23-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«A比B多一倍» гэдэг нь юу гэсэн үг вэ?",
+  "options": [
+   "A нь B-тэй тэнцүү",
+   "A нь B-ийн хагас",
+   "A нь B-ийн 2 дахин",
+   "A нь B-ийн 3 дахин"
+  ],
+  "correct_answer": "A нь B-ийн 2 дахин",
+  "explanation": "多一倍 = B+B = 2B.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l23-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Ийм энгийн асуудлыг бүр хүүхэд ч ойлгоно» — аль нь зөв бэ?",
+  "options": [
+   "这么简单的问题，连小孩子懂。",
+   "这么简单的问题，连小孩子都懂。",
+   "这么简单的问题，连懂小孩子都。",
+   "这么简单的问题，小孩子连都懂。"
+  ],
+  "correct_answer": "这么简单的问题，连小孩子都懂。",
+  "explanation": "连 + онцлох хэсэг + 都.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l23-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "早上，我连饭________没吃就来上课了。",
+  "options": [
+   "再",
+   "才",
+   "就",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "连……也/都……",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l23-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Хэмнэж болох бол хэмнэе» — аль нь зөв бэ?",
+  "options": [
+   "能节约就不节约吧。",
+   "能节约就节约吧。",
+   "节约能就节约吧。",
+   "能就节约节约吧。"
+  ],
+  "correct_answer": "能节约就节约吧。",
+  "explanation": "能V就V.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l23-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "小时候“我”为什么用作业本的背面写字？",
+  "options": [
+   "因为喜欢节约",
+   "因为作业本太小",
+   "因为家里穷",
+   "因为老师要求"
+  ],
+  "correct_answer": "因为家里穷",
+  "explanation": "P1: 因为家里穷...",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l23-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "节能灯的用电量是普通灯的多少？",
+  "options": [
+   "五分之一",
+   "三分之一",
+   "十分之一",
+   "二分之一"
+  ],
+  "correct_answer": "五分之一",
+  "explanation": "P3: 用电量是普通灯的五分之一.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l23-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "洗菜的水用来做什么？",
+  "options": [
+   "洗脸",
+   "做饭",
+   "喝",
+   "浇花"
+  ],
+  "correct_answer": "浇花",
+  "explanation": "P4: 洗菜的水用来浇花.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l23-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "在公司里“我”怎么节约？",
+  "options": [
+   "纸两面用，很少坐电梯，不用一次性筷子和纸杯",
+   "每天打车",
+   "多用电梯",
+   "多开空调"
+  ],
+  "correct_answer": "纸两面用，很少坐电梯，不用一次性筷子和纸杯",
+  "explanation": "P5.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l23-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "现在别人对“我”的态度有什么改变？",
+  "options": [
+   "开始向“我”学习节约的方法",
+   "仍然笑话我",
+   "不理我",
+   "批评我"
+  ],
+  "correct_answer": "开始向“我”学习节约的方法",
+  "explanation": "P7.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l23-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз нь «Бид таксинд суух уу?» гэв. Үнэтэй гэж хариулахдаа аль нь тохиромжтой вэ?",
+  "options": [
+   "出租车好，我们坐吧。",
+   "坐出租车太贵了，我们还是坐公交车吧。",
+   "我们不坐公交车吧。",
+   "坐出租车太便宜了。"
+  ],
+  "correct_answer": "坐出租车太贵了，我们还是坐公交车吧。",
+  "explanation": "出租车 vs 公交车.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l23-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Сануулах: «Энэ том савыг битгий дутуу үнэл!»",
+  "options": [
+   "可别接这口大缸！",
+   "可别小看这口大缸！",
+   "可别管这口大缸！",
+   "可别笑话这口大缸！"
+  ],
+  "correct_answer": "可别小看这口大缸！",
+  "explanation": "小看 = дутуу үнэлэх.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l23-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 能 / 就 / 省 / 省",
+  "options": [
+   "省能就省",
+   "能省就省",
+   "省省能就",
+   "能就省省"
+  ],
+  "correct_answer": "能省就省",
+  "explanation": "能V就V дараалал.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l23-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "easy"
+ }
+]

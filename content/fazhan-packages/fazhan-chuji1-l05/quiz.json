@@ -1,0 +1,602 @@
+[
+ {
+  "type": "choice",
+  "question": "«家» ямар утгатай вэ?",
+  "options": [
+   "ажил",
+   "гэр бүл, гэр",
+   "хөл",
+   "сургууль"
+  ],
+  "correct_answer": "гэр бүл, гэр",
+  "explanation": "家 = jiā.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«爸爸» ямар утгатай вэ?",
+  "options": [
+   "ах",
+   "ээж",
+   "аав",
+   "дүү"
+  ],
+  "correct_answer": "аав",
+  "explanation": "爸爸 = bàba.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«妈妈» ямар утгатай вэ?",
+  "options": [
+   "ээж",
+   "охин",
+   "эгч",
+   "багш"
+  ],
+  "correct_answer": "ээж",
+  "explanation": "妈妈 = māma.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«哥哥» ямар утгатай вэ?",
+  "options": [
+   "эгч",
+   "аав",
+   "ах",
+   "дүү хүү"
+  ],
+  "correct_answer": "ах",
+  "explanation": "哥哥 = gēge.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«职员» ямар утгатай вэ?",
+  "options": [
+   "эмч",
+   "хуульч",
+   "албан хаагч",
+   "цагдаа"
+  ],
+  "correct_answer": "албан хаагч",
+  "explanation": "职员 = zhíyuán.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«律师» ямар утгатай вэ?",
+  "options": [
+   "багш",
+   "эмч",
+   "хуульч",
+   "сувилагч"
+  ],
+  "correct_answer": "хуульч",
+  "explanation": "律师 = lǜshī.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«医生» ямар утгатай вэ?",
+  "options": [
+   "хуульч",
+   "тариачин",
+   "эмч",
+   "цагдаа"
+  ],
+  "correct_answer": "эмч",
+  "explanation": "医生 = yīshēng.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«工作» ямар утгатай вэ?",
+  "options": [
+   "найз",
+   "гэр",
+   "ажил",
+   "сургууль"
+  ],
+  "correct_answer": "ажил",
+  "explanation": "工作 = gōngzuò.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«都» ямар утгатай вэ?",
+  "options": [
+   "хамт",
+   "бүгд, хоёулаа",
+   "ба",
+   "мөн"
+  ],
+  "correct_answer": "бүгд, хоёулаа",
+  "explanation": "都 = dōu.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l05-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«两»-ийн пиньинь аль нь вэ?",
+  "options": [
+   "liàng",
+   "liǎng",
+   "lǐang",
+   "liáng"
+  ],
+  "correct_answer": "liǎng",
+  "explanation": "两 = liǎng.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l05-q10",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«警察» ямар утгатай вэ?",
+  "options": [
+   "сувилагч",
+   "ажилчин",
+   "тариачин",
+   "цагдаа"
+  ],
+  "correct_answer": "цагдаа",
+  "explanation": "警察 = jǐngchá.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l05-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«姐姐» ямар утгатай вэ?",
+  "options": [
+   "дүү охин",
+   "эмэгтэй найз",
+   "эгч",
+   "ээж"
+  ],
+  "correct_answer": "эгч",
+  "explanation": "姐姐 = jiějie.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l05-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我不懂» ямар үед хэлэх вэ?",
+  "options": [
+   "Баяртай гэхэд",
+   "Тайлбарыг ойлгоогүй үед",
+   "Тайлбарыг ойлгосон үед",
+   "Нэр асуухад"
+  ],
+  "correct_answer": "Тайлбарыг ойлгоогүй үед",
+  "explanation": "课堂用语: 我不懂 = ойлгохгүй байна.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l05-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«ie» ганцаараа үе болбол яаж бичигдэх вэ?",
+  "options": [
+   "ie",
+   "ye",
+   "yie",
+   "e"
+  ],
+  "correct_answer": "ye",
+  "explanation": "i-ээр эхэлсэн эгшиг → y.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l05-q14",
+  "skillTags": [
+   "grammar",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«uo» ганцаараа үе болбол яаж бичигдэх вэ?",
+  "options": [
+   "uo",
+   "yuo",
+   "wo",
+   "o"
+  ],
+  "correct_answer": "wo",
+  "explanation": "u → w: 我 wǒ.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l05-q15",
+  "skillTags": [
+   "grammar",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«üe» ганцаараа үе болбол яаж бичигдэх вэ?",
+  "options": [
+   "üe",
+   "yue",
+   "ue",
+   "ye"
+  ],
+  "correct_answer": "yue",
+  "explanation": "ü-ийн өмнө y нэмж, хоёр цэгийг хаяна.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l05-q16",
+  "skillTags": [
+   "grammar",
+   "pinyin"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«Манай гэр бүлд дөрвөн хүн бий» хятадаар?",
+  "options": [
+   "我家有四口人",
+   "我家四有口人",
+   "有我家四口人",
+   "我家有四个口人"
+  ],
+  "correct_answer": "我家有四口人",
+  "explanation": "口 — гэр бүлийн ам бүл.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l05-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Надад нэг ах бий» хятадаар?",
+  "options": [
+   "我有一个哥哥",
+   "我有一哥哥",
+   "我一个有哥哥",
+   "哥哥一个我有"
+  ],
+  "correct_answer": "我有一个哥哥",
+  "explanation": "数词 + 量词 + 名词.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l05-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ангид 20 орчим сурагч байгааг асуух:",
+  "options": [
+   "你们班多少有学生？",
+   "你们班有几口学生？",
+   "你们班有几学生？",
+   "你们班有多少个学生？"
+  ],
+  "correct_answer": "你们班有多少个学生？",
+  "explanation": "Том тоо — «多少».",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l05-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«两个老师» дахь «两»-г яагаад «二» болгож болохгүй вэ?",
+  "options": [
+   "Ялгаа байхгүй",
+   "«两» нь 3 гэсэн утгатай",
+   "Тоолуур үгийн өмнө «两» хэрэглэдэг",
+   "«二» нь буруу ханз"
+  ],
+  "correct_answer": "Тоолуур үгийн өмнө «两» хэрэглэдэг",
+  "explanation": "两 + 量词.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l05-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«二十二» хэрхэн унших вэ?",
+  "options": [
+   "èrshí liǎng",
+   "liǎngshíliǎng",
+   "liǎngshí'èr",
+   "èrshí'èr"
+  ],
+  "correct_answer": "èrshí'èr",
+  "explanation": "Тоон дотор «二».",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l05-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«35» хятадаар?",
+  "options": [
+   "十三五",
+   "三十五",
+   "三五十",
+   "五十三"
+  ],
+  "correct_answer": "三十五",
+  "explanation": "三 + 十 + 五.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l05-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бид бүгд сурагч» хятадаар?",
+  "options": [
+   "我们是学生都",
+   "我们是都学生",
+   "我们都是学生",
+   "都我们是学生"
+  ],
+  "correct_answer": "我们都是学生",
+  "explanation": "都 — үйл үгийн өмнө.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l05-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«心» ханзын зураас аль нь вэ?",
+  "options": [
+   "横折钩",
+   "卧钩",
+   "横折弯钩",
+   "斜钩"
+  ],
+  "correct_answer": "卧钩",
+  "explanation": "心 = 卧钩 + гурван цэг.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l05-q24",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«品» ямар бүтэцтэй вэ?",
+  "options": [
+   "дээр-доор бүтэц",
+   "品字形结构",
+   "зүүн-баруун бүтэц",
+   "独体结构"
+  ],
+  "correct_answer": "品字形结构",
+  "explanation": "品 = 口 × 3.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l05-q25",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "林娜：你家有（ ）口人？ 朱云：我家有三口人。",
+  "options": [
+   "什么",
+   "多少个",
+   "吗",
+   "几"
+  ],
+  "correct_answer": "几",
+  "explanation": "Жижиг тоо — «几».",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l05-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "朱云：我爸爸是律师，妈妈是（ ）。",
+  "options": [
+   "医生",
+   "同学",
+   "老师",
+   "学生"
+  ],
+  "correct_answer": "医生",
+  "explanation": "Текст: 妈妈是医生.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l05-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "林娜：我们班有（ ）个法国人。 (2)",
+  "options": [
+   "二",
+   "几",
+   "口",
+   "两"
+  ],
+  "correct_answer": "两",
+  "explanation": "Тоолуур үгийн өмнө «两».",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l05-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "朱云：你们班有韩国人吗？ 林娜：（ ）。",
+  "options": [
+   "有",
+   "是",
+   "没",
+   "都"
+  ],
+  "correct_answer": "有",
+  "explanation": "«有……吗» асуултад «有» гэж хариулна.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l05-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "林娜：哥哥和我（ ）是大学生。",
+  "options": [
+   "都",
+   "几",
+   "和",
+   "有"
+  ],
+  "correct_answer": "都",
+  "explanation": "哥哥和我 → 都是.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l05-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаас гэр бүлийн гишүүдийн тоог асуух:",
+  "options": [
+   "你有几家人？",
+   "你家几有口人？",
+   "你家有多少口人？",
+   "你家有几口人？"
+  ],
+  "correct_answer": "你家有几口人？",
+  "explanation": "几 + 口 + 人.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l05-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзын аавын ажлыг асуух:",
+  "options": [
+   "你爸爸是什么工作吗？",
+   "你爸爸有什么工作？",
+   "你爸爸做什么工作？",
+   "你爸爸做几工作？"
+  ],
+  "correct_answer": "你爸爸做什么工作？",
+  "explanation": "做什么工作.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l05-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Багш тайлбарласан зүйлийг ойлгосон гэж хэлэх:",
+  "options": [
+   "我不懂。",
+   "我明白了。",
+   "准备好了吗？",
+   "你叫什么名字？"
+  ],
+  "correct_answer": "我明白了。",
+  "explanation": "课堂用语.",
+  "order_index": 33,
+  "id": "fazhan-chuji1-l05-q33",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

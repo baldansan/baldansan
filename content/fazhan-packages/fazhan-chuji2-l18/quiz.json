@@ -1,0 +1,567 @@
+[
+ {
+  "type": "choice",
+  "question": "«志愿者» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "сайн дурын ажилтан",
+   "хараагүй хүн",
+   "үзэгч",
+   "тайлбарлагч"
+  ],
+  "correct_answer": "сайн дурын ажилтан",
+  "explanation": "志愿者 = сайн дурын ажилтан.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l18-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«盲人» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "эмч",
+   "сонсголгүй хүн",
+   "хараагүй хүн",
+   "багш"
+  ],
+  "correct_answer": "хараагүй хүн",
+  "explanation": "盲人 = хараагүй хүн.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l18-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）这些观众完全看不见，也要让他们“看”电影。",
+  "options": [
+   "即使",
+   "所以",
+   "尽管",
+   "因为"
+  ],
+  "correct_answer": "即使",
+  "explanation": "即使……也…….",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l18-q03",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一位20岁（ ）的姑娘手拿着话筒站在幕布前。",
+  "options": [
+   "之间",
+   "左右",
+   "以后",
+   "里面"
+  ],
+  "correct_answer": "左右",
+  "explanation": "20岁左右 = хорь орчим нас.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l18-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她手拿着（ ）站在幕布前，她就是这场电影的讲解员。",
+  "options": [
+   "话筒",
+   "花盆",
+   "眼镜",
+   "蔬菜"
+  ],
+  "correct_answer": "话筒",
+  "explanation": "话筒 = микрофон.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l18-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "志愿者的讲解让他们听到了美丽的电影（ ）。",
+  "options": [
+   "蔬菜",
+   "画面",
+   "生命",
+   "脚步声"
+  ],
+  "correct_answer": "画面",
+  "explanation": "电影画面 = киноны дүр зураг.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l18-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "绿色就是小草的颜色、（ ）的颜色，也是我们生命的颜色。",
+  "options": [
+   "花盆",
+   "月光",
+   "话筒",
+   "蔬菜"
+  ],
+  "correct_answer": "蔬菜",
+  "explanation": "蔬菜 = хүнсний ногоо.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l18-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«男孩儿好像听懂了似的，点了点头。» — «点头» гэж юу вэ?",
+  "options": [
+   "толгой сэгсрэх",
+   "инээх",
+   "алхах",
+   "толгой дохих"
+  ],
+  "correct_answer": "толгой дохих",
+  "explanation": "点头 = толгой дохих.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l18-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "因为只是听别人说，我没有（ ）看到，所以有点儿不相信。",
+  "options": [
+   "亲手",
+   "亲眼",
+   "亲口",
+   "亲耳"
+  ],
+  "correct_answer": "亲眼",
+  "explanation": "亲眼 = өөрийн нүдээр.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l18-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "人们（ ）地提出各种各样的问题。",
+  "options": [
+   "不时",
+   "不但",
+   "不再",
+   "不是"
+  ],
+  "correct_answer": "不时",
+  "explanation": "不时地 = ойр ойрхон.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l18-q10",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«月光» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "харц",
+   "сарны гэрэл",
+   "нарны гэрэл",
+   "чийдэнгийн гэрэл"
+  ],
+  "correct_answer": "сарны гэрэл",
+  "explanation": "月光 = сарны гэрэл.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l18-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我听到水（ ）在地上的声音了。",
+  "options": [
+   "戴",
+   "洒",
+   "编",
+   "放"
+  ],
+  "correct_answer": "洒",
+  "explanation": "洒 = цацах, асгах.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l18-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "爷爷用鲜花（ ）成了一个小花帽。",
+  "options": [
+   "放",
+   "点",
+   "编",
+   "洒"
+  ],
+  "correct_answer": "编",
+  "explanation": "编成 = нэж … болгох.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l18-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Эцэг эх нь зөвшөөрөөгүй ч гэсэн би явна» — аль нь зөв бэ?",
+  "options": [
+   "即使父母不同意，所以我去。",
+   "即使父母不同意，我也要去。",
+   "即使父母不同意，但是我要去。"
+  ],
+  "correct_answer": "即使父母不同意，我也要去。",
+  "explanation": "即使……也…….",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l18-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：那家公司工资不高，你别去了。 B：________，我也要去。",
+  "options": [
+   "因为那家公司工资不高",
+   "即使那家公司工资不高",
+   "所以那家公司工资不高"
+  ],
+  "correct_answer": "即使那家公司工资不高",
+  "explanation": "即使 + таамаг, 也 + үр дүн.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l18-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«尽管» ба «即使»-ийн гол ялгаа аль нь вэ?",
+  "options": [
+   "尽管 нь зөвхөн асуултад",
+   "尽管 = таамаглал; 即使 = бодит баримт",
+   "хоёулаа ижил",
+   "尽管 = бодит баримт; 即使 = таамаглал"
+  ],
+  "correct_answer": "尽管 = бодит баримт; 即使 = таамаглал",
+  "explanation": "尽管 + баримт, 即使 + таамаг.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l18-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Хорь орчим хүн» гэхэд аль нь зөв бэ?",
+  "options": [
+   "二十来个人",
+   "二十个来人",
+   "来二十个人"
+  ],
+  "correct_answer": "二十来个人",
+  "explanation": "来 — тоо + 来 + нэгж.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l18-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр буруу вэ?",
+  "options": [
+   "他去上海玩儿了十来天。",
+   "广场上有三万来人。",
+   "教室里有五来个人。"
+  ],
+  "correct_answer": "教室里有五来个人。",
+  "explanation": "来 нь 十/百/千/万/亿-ийн ард орно.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l18-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "A：从你家到地铁站要走多长时间？ B：不远，走________分钟就到了。",
+  "options": [
+   "二十来",
+   "二十个来",
+   "来二十"
+  ],
+  "correct_answer": "二十来",
+  "explanation": "二十来分钟 — хорь орчим минут.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l18-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр ойлгоогүй юм шиг байна» — аль нь зөв бэ?",
+  "options": [
+   "他好像似的没听懂。",
+   "他似的好像没听懂。",
+   "他好像没听懂似的。"
+  ],
+  "correct_answer": "他好像没听懂似的。",
+  "explanation": "好像……似的.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l18-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр салхи шиг гүйдэг» — аль нь зөв бэ?",
+  "options": [
+   "他跑起来似的像一阵风。",
+   "他像似的跑起来一阵风。",
+   "他跑起来像一阵风似的。"
+  ],
+  "correct_answer": "他跑起来像一阵风似的。",
+  "explanation": "像……似的.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l18-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Уулын өвс ногоороод цэцэг дүүрэн дэлгэрсэн» — аль нь зөв бэ?",
+  "options": [
+   "山上的草绿了，开了满鲜花。",
+   "山上的草绿了，开满了鲜花。",
+   "山上的草绿了，满开了鲜花。"
+  ],
+  "correct_answer": "山上的草绿了，开满了鲜花。",
+  "explanation": "开满 — 满 нь үйл үгийн ард.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l18-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Лонх дүүрэн ус» — аль нь зөв бэ?",
+  "options": [
+   "瓶子里装了满水。",
+   "瓶子里满装了水。",
+   "瓶子里装满了水。"
+  ],
+  "correct_answer": "瓶子里装满了水。",
+  "explanation": "装满 — 满 нь үр дүнгийн нөхцөл.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l18-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Багш ойр ойрхон биднээс хариулуулдаг» — аль нь зөв бэ?",
+  "options": [
+   "老师不时地我们要求回答问题。",
+   "老师不时要求我们回答问题。",
+   "老师要求不时我们回答问题。"
+  ],
+  "correct_answer": "老师不时要求我们回答问题。",
+  "explanation": "不时 + үйл үг.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l18-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "这场电影为什么特殊？",
+  "options": [
+   "在草地上放",
+   "观众都是盲人",
+   "没有声音",
+   "电影很长"
+  ],
+  "correct_answer": "观众都是盲人",
+  "explanation": "P1-P2: 观众是30多位盲人.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l18-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "男孩儿问的第一个问题是什么？",
+  "options": [
+   "电影叫什么",
+   "月光是什么样子的",
+   "绿色是什么样子的",
+   "姐姐几岁"
+  ],
+  "correct_answer": "绿色是什么样子的",
+  "explanation": "P4.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l18-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "讲解员怎么解释“绿色”？",
+  "options": [
+   "天空的颜色",
+   "小草、蔬菜、生命的颜色",
+   "衣服的颜色",
+   "红色的花"
+  ],
+  "correct_answer": "小草、蔬菜、生命的颜色",
+  "explanation": "P5.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l18-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "讲解员说“月光像什么似的”？",
+  "options": [
+   "像花似的",
+   "像雪似的",
+   "像灯似的",
+   "像水似的"
+  ],
+  "correct_answer": "像水似的",
+  "explanation": "P13.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l18-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "男孩儿听到了什么声音？",
+  "options": [
+   "风声",
+   "水洒在地上的声音",
+   "脚步声",
+   "鸟叫声"
+  ],
+  "correct_answer": "水洒在地上的声音",
+  "explanation": "P13.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l18-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн «Энэ машин хямдарсан, аваарай» гэв; чи хатуу татгалзах: аль нь зохимжтой вэ?",
+  "options": [
+   "汽车再便宜，所以我不想买。",
+   "即使汽车再便宜，我也不想买。",
+   "因为汽车再便宜，我也不想买。"
+  ],
+  "correct_answer": "即使汽车再便宜，我也不想买。",
+  "explanation": "即使……也…….",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l18-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Энэ үнэн үү? Би зүүдэлж байгаа юм шиг санагдаж байна» — аль нь зохимжтой вэ?",
+  "options": [
+   "是真的吗？我似的好像做梦。",
+   "是真的吗？我怎么好像做梦似的。",
+   "是真的吗？我怎么做梦。"
+  ],
+  "correct_answer": "是真的吗？我怎么好像做梦似的。",
+  "explanation": "好像……似的.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l18-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 即使 / 观众 / 看不见 / 也要 / 放电影",
+  "options": [
+   "即使观众看不见，也要放电影",
+   "观众即使，放电影也要看不见",
+   "也要即使观众，看不见放电影"
+  ],
+  "correct_answer": "即使观众看不见，也要放电影",
+  "explanation": "即使 А, 也 В дараалал.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l18-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

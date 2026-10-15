@@ -1,0 +1,563 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 1. 听读辨调 — 1-р аялгуу + хөнгөн аялгуу, 2-р + 1-р аялгууны хослолыг чанга унш",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "一声+轻声：xiūxi · māma · gēge · yīfu · tāmen · dōngxi · zhīdao · xīn de",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "1-р аялгуу + хөнгөн аялгуу."
+     },
+     {
+      "n": 2,
+      "question_zh": "二声+一声：míngtiān · qiántiān · shíjiān · jiéhūn · zuótiān · páshān · fángjiān · huíjiā",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "2-р аялгуу + 1-р аялгуу."
+     }
+    ],
+    "instruction_zh": "1. 听读辨调"
+   },
+   {
+    "part": 2,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 2. 读下面的词语，并在 bu 上边标上声调 — «不»-д аялгуу тавь (ном хариулт өгөөгүй, агент 不-ийн дүрмээр бичсэн)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "不喝 bu hē",
+      "answer": "bù hē",
+      "explanation_mn": "Агентын хариулт: 喝 1-р аялгуу → bù."
+     },
+     {
+      "n": 2,
+      "question_zh": "不吃 bu chī",
+      "answer": "bù chī",
+      "explanation_mn": "Агентын хариулт: 1-р аялгуу → bù."
+     },
+     {
+      "n": 3,
+      "question_zh": "不多 bu duō",
+      "answer": "bù duō",
+      "explanation_mn": "Агентын хариулт: 1-р аялгуу → bù."
+     },
+     {
+      "n": 4,
+      "question_zh": "不学 bu xué",
+      "answer": "bù xué",
+      "explanation_mn": "Агентын хариулт: 2-р аялгуу → bù."
+     },
+     {
+      "n": 5,
+      "question_zh": "不想 bu xiǎng",
+      "answer": "bù xiǎng",
+      "explanation_mn": "Агентын хариулт: 3-р аялгуу → bù."
+     },
+     {
+      "n": 6,
+      "question_zh": "不小 bu xiǎo",
+      "answer": "bù xiǎo",
+      "explanation_mn": "Агентын хариулт: 3-р аялгуу → bù."
+     },
+     {
+      "n": 7,
+      "question_zh": "不买 bu mǎi",
+      "answer": "bù mǎi",
+      "explanation_mn": "Агентын хариулт: 3-р аялгуу → bù."
+     },
+     {
+      "n": 8,
+      "question_zh": "不看 bu kàn",
+      "answer": "bú kàn",
+      "explanation_mn": "Агентын хариулт: 4-р аялгуу → bú."
+     },
+     {
+      "n": 9,
+      "question_zh": "不去 bu qù",
+      "answer": "bú qù",
+      "explanation_mn": "Агентын хариулт: 4-р аялгуу → bú."
+     },
+     {
+      "n": 10,
+      "question_zh": "不对 bu duì",
+      "answer": "bú duì",
+      "explanation_mn": "Агентын хариулт: 4-р аялгуу → bú."
+     },
+     {
+      "n": 11,
+      "question_zh": "不累 bu lèi",
+      "answer": "bú lèi",
+      "explanation_mn": "Агентын хариулт: 4-р аялгуу → bú."
+     },
+     {
+      "n": 12,
+      "question_zh": "不要 bu yào",
+      "answer": "bú yào",
+      "explanation_mn": "Агентын хариулт: 4-р аялгуу → bú."
+     },
+     {
+      "n": 13,
+      "question_zh": "不漂亮 bu piàoliang",
+      "answer": "bú piàoliang",
+      "explanation_mn": "Агентын хариулт: 漂 = piào (4-р) → bú."
+     },
+     {
+      "n": 14,
+      "question_zh": "不客气 bu kèqi",
+      "answer": "bú kèqi",
+      "explanation_mn": "Агентын хариулт: 客 = kè (4-р) → bú."
+     },
+     {
+      "n": 15,
+      "question_zh": "不上网 bu shàng wǎng",
+      "answer": "bú shàng wǎng",
+      "explanation_mn": "Агентын хариулт: 上 = shàng (4-р) → bú."
+     },
+     {
+      "n": 16,
+      "question_zh": "不新鲜 bu xīnxiān",
+      "answer": "bù xīnxiān",
+      "explanation_mn": "Агентын хариулт: 新 = xīn (1-р) → bù."
+     },
+     {
+      "n": 17,
+      "question_zh": "不知道 bu zhīdao",
+      "answer": "bù zhīdao",
+      "explanation_mn": "Агентын хариулт: 知 = zhī (1-р) → bù."
+     },
+     {
+      "n": 18,
+      "question_zh": "不开门 bu kāi mén",
+      "answer": "bù kāi mén",
+      "explanation_mn": "Агентын хариулт: 开 = kāi (1-р) → bù."
+     }
+    ],
+    "instruction_zh": "2. 读下面的词语，并在“bu”上边标上声调"
+   },
+   {
+    "part": 3,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 小组问答练习 — карточкоор «…不…？» гэж асууж хариул (例 西山漂亮不漂亮？ 西山非常漂亮。)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. 你学习（累）· 你爸爸（忙）· 你的英语（好）· 你的书（贵）· 她（漂亮）· 你的朋友（多）· 今天（热）· 你（渴）· 你（饿）",
+      "answer": "(нээлттэй — өөрийн хариулт)",
+      "explanation_mn": "Adj + 不 + Adj асуулт, «很 + Adj» эсвэл «不 + Adj» хариулт."
+     },
+     {
+      "n": 2,
+      "question_zh": "2. 他（去）· 你（看电视）· 你（吃早饭）· 你（喝茶）· 你（上网）· 你（买电脑）",
+      "answer": "(нээлттэй — өөрийн хариулт)",
+      "explanation_mn": "V + 不 + V (+ O) асуулт."
+     }
+    ],
+    "instruction_zh": "课堂活动：小组问答练习"
+   },
+   {
+    "part": 4,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 一、熟读下面的词语，并写出拼音 — үгийг унших, пиньинь бичих (ном хариулт өгөөгүй)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "漂亮",
+      "answer": "piàoliang",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 2,
+      "question_zh": "觉得",
+      "answer": "juéde",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 3,
+      "question_zh": "休息",
+      "answer": "xiūxi",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 4,
+      "question_zh": "风景",
+      "answer": "fēngjǐng",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 5,
+      "question_zh": "茶馆",
+      "answer": "cháguǎn",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 6,
+      "question_zh": "饭馆",
+      "answer": "fànguǎn",
+      "explanation_mn": "Өмнөх хичээлийн үг."
+     },
+     {
+      "n": 7,
+      "question_zh": "一下",
+      "answer": "yíxià",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 8,
+      "question_zh": "一点儿",
+      "answer": "yìdiǎnr",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 9,
+      "question_zh": "很多",
+      "answer": "hěn duō",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 10,
+      "question_zh": "很忙",
+      "answer": "hěn máng",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 11,
+      "question_zh": "很累",
+      "answer": "hěn lèi",
+      "explanation_mn": "生词-ийн пиньинь."
+     },
+     {
+      "n": 12,
+      "question_zh": "很新鲜",
+      "answer": "hěn xīnxian",
+      "explanation_mn": "生词-ийн пиньинь."
+     }
+    ],
+    "instruction_zh": "一、熟读下面的词语，并写出拼音"
+   },
+   {
+    "part": 5,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 二、看图说话，并写下来 — зураг бүрт өгөгдсөн үгээр өгүүлбэр бич",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. 漂亮（лотос цэцэг)",
+      "answer": "这里风景很漂亮。",
+      "explanation_mn": "Ном хариулт."
+     },
+     {
+      "n": 2,
+      "question_zh": "2. 忙（оффисын ажилчид)",
+      "answer": "他们很忙。",
+      "explanation_mn": "Ном хариулт."
+     },
+     {
+      "n": 3,
+      "question_zh": "3. 爬山（уулаар гарч буй хүмүүс)",
+      "answer": "他们爬山很累。",
+      "explanation_mn": "Ном хариулт."
+     },
+     {
+      "n": 4,
+      "question_zh": "4. 喝茶（цай юүж буй гар)",
+      "answer": "她们一起喝茶。",
+      "explanation_mn": "Ном хариулт."
+     }
+    ],
+    "instruction_zh": "二、看图说话，并写下来"
+   },
+   {
+    "part": 6,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 三、说一说 — 1 дуртай газраа, 2 одоогийн байдлаа хэл",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. 你喜欢的一个地方。有……，有……，有……  漂亮 好 多",
+      "answer": "(нээлттэй — өөрийн хариулт)",
+      "explanation_mn": "Өөрийн хариулт."
+     },
+     {
+      "n": 2,
+      "question_zh": "2. 你现在怎么样？学习 工作 / 忙 累 好",
+      "answer": "(нээлттэй — өөрийн хариулт)",
+      "explanation_mn": "Өөрийн хариулт."
+     }
+    ],
+    "instruction_zh": "三、说一说"
+   },
+   {
+    "part": 7,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 四、把下面的句子改写成正反疑问句并回答 — «吗» асуултыг давтан асуулт болгож хариул (例 你忙吗？→你忙不忙？→我很忙。/我不忙。)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. 苹果新鲜吗？",
+      "answer": "苹果新鲜不新鲜？ 苹果很新鲜。/ 苹果不新鲜。",
+      "explanation_mn": "Adj + 不 + Adj."
+     },
+     {
+      "n": 2,
+      "question_zh": "2. 这个大学韩国留学生多吗？",
+      "answer": "这个大学韩国留学生多不多？ 这个大学韩国留学生很多。/ 这个大学韩国留学生不多。",
+      "explanation_mn": "Adj + 不 + Adj."
+     },
+     {
+      "n": 3,
+      "question_zh": "3. 他是美国人吗？",
+      "answer": "他是不是美国人？ 他是美国人。/ 他不是美国人。",
+      "explanation_mn": "是 + 不 + 是."
+     },
+     {
+      "n": 4,
+      "question_zh": "4. 你买电脑吗？",
+      "answer": "你买不买电脑？ 我买电脑。/ 我不买电脑。",
+      "explanation_mn": "V + 不 + V + O."
+     },
+     {
+      "n": 5,
+      "question_zh": "5. 你去超市吗？",
+      "answer": "你去不去超市？ 我去超市。/ 我不去超市。",
+      "explanation_mn": "V + 不 + V + O."
+     },
+     {
+      "n": 6,
+      "question_zh": "6. 你想学习西班牙语吗？",
+      "answer": "你想不想学习西班牙语？ 我想学习西班牙语。/ 我不想学习西班牙语。",
+      "explanation_mn": "想 + 不 + 想 + V + O."
+     }
+    ],
+    "instruction_zh": "四、把下面的句子改写成正反疑问句并回答"
+   },
+   {
+    "part": 8,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 五、用“V＋一下”完成句子 — үйл үгийг нөхөж «V + 一下» өгүүлбэр болго",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. 我____一下你的书，行吗？",
+      "answer": "用 / 看",
+      "explanation_mn": "Ном хариулт: «用/看»."
+     },
+     {
+      "n": 2,
+      "question_zh": "2. 我____一下卫生间。",
+      "answer": "去 / 用",
+      "explanation_mn": "Ном хариулт: «去/用»."
+     },
+     {
+      "n": 3,
+      "question_zh": "3. 我很累，我想____一下。",
+      "answer": "休息",
+      "explanation_mn": "休息一下."
+     },
+     {
+      "n": 4,
+      "question_zh": "4. 我想____一下你的词典。",
+      "answer": "用 / 看",
+      "explanation_mn": "Ном хариулт: «用/看»."
+     },
+     {
+      "n": 5,
+      "question_zh": "5. 下课以后，我想____一下银行。",
+      "answer": "去",
+      "explanation_mn": "去一下银行."
+     }
+    ],
+    "instruction_zh": "五、用“V＋一下”完成句子"
+   },
+   {
+    "part": 9,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 六、用所给词语和“一点儿”造句 — өгөгдсөн үгээр «一点儿» бүхий өгүүлбэр зохио",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. 买 茶",
+      "answer": "我想买一点儿茶。",
+      "explanation_mn": "V + 一点儿 + N."
+     },
+     {
+      "n": 2,
+      "question_zh": "2. 喝 水",
+      "answer": "我想喝一点儿水。",
+      "explanation_mn": "V + 一点儿 + N."
+     },
+     {
+      "n": 3,
+      "question_zh": "3. 还有 时间",
+      "answer": "我们还有一点儿时间。",
+      "explanation_mn": "还有 + 一点儿 + N."
+     },
+     {
+      "n": 4,
+      "question_zh": "4. 有 事",
+      "answer": "我有一点儿事。",
+      "explanation_mn": "有 + 一点儿 + N."
+     }
+    ],
+    "instruction_zh": "六、用所给词语和“一点儿”造句"
+   },
+   {
+    "part": 10,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 七、把下面的词语整理成句子 — үгсийг зөв дарааллаар өгүүлбэр болго",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. 我们 爬山 这个 星期六 去",
+      "answer": "这个星期六我们去爬山。 / 我们这个星期六去爬山。",
+      "explanation_mn": "Хоёр дараалал зөв."
+     },
+     {
+      "n": 2,
+      "question_zh": "2. 这个 漂亮 地方 很",
+      "answer": "这个地方很漂亮。",
+      "explanation_mn": "S + 很 + Adj."
+     },
+     {
+      "n": 3,
+      "question_zh": "3. 他 觉得 很 新鲜 这里的空气",
+      "answer": "他觉得这里的空气很新鲜。",
+      "explanation_mn": "觉得 + бүтэн өгүүлбэр."
+     },
+     {
+      "n": 4,
+      "question_zh": "4. 我朋友 很忙 每天 都",
+      "answer": "我朋友每天都很忙。 / 每天我朋友都很忙。",
+      "explanation_mn": "Хоёр дараалал зөв."
+     },
+     {
+      "n": 5,
+      "question_zh": "5. 我们 早上 出发 九点半",
+      "answer": "早上九点半我们出发。 / 我们早上九点半出发。",
+      "explanation_mn": "Хоёр дараалал зөв."
+     },
+     {
+      "n": 6,
+      "question_zh": "6. 喝茶 晚上 茶馆 去 我们",
+      "answer": "晚上我们去茶馆喝茶。 / 我们晚上去茶馆喝茶。",
+      "explanation_mn": "去 + газар + V + O."
+     }
+    ],
+    "instruction_zh": "七、把下面的词语整理成句子"
+   },
+   {
+    "part": 11,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 八、游戏：看谁说得好 — A асуултад хариулна, B A-гийн хэлснийг давтан хэлнэ",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "A 回答：你忙不忙？ 你每天几点起床？ 你们那里有公园吗？ 公园里有什么？ 漂亮不漂亮？",
+      "answer": "(нээлттэй — өөрийн хариулт)",
+      "explanation_mn": "Өөрийн хариулт."
+     },
+     {
+      "n": 2,
+      "question_zh": "B 把 A 同学的话再说一遍。",
+      "answer": "(нээлттэй — өөрийн хариулт)",
+      "explanation_mn": "Давтан хэл."
+     }
+    ],
+    "instruction_zh": "八、游戏：看谁说得好"
+   },
+   {
+    "part": 12,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 写汉字 — 妈, 她, 姓, 娜, 你, 他, 们, 作, 什, 做-г дэвтэр дээр зөв бичих дарааллаар бич",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "妈 — 女 + 马",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "女 зүүн талд."
+     },
+     {
+      "n": 2,
+      "question_zh": "她 — 女 + 也",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "女 зүүн талд."
+     },
+     {
+      "n": 3,
+      "question_zh": "姓 — 女 + 生",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "女 зүүн талд."
+     },
+     {
+      "n": 4,
+      "question_zh": "娜 — 女 + 那",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "女 зүүн талд."
+     },
+     {
+      "n": 5,
+      "question_zh": "你 — 亻 + 尔",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "亻 зүүн талд."
+     },
+     {
+      "n": 6,
+      "question_zh": "他 — 亻 + 也",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "亻 зүүн талд."
+     },
+     {
+      "n": 7,
+      "question_zh": "们 — 亻 + 门",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "亻 зүүн талд."
+     },
+     {
+      "n": 8,
+      "question_zh": "作 — 亻 + 乍",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "亻 зүүн талд."
+     },
+     {
+      "n": 9,
+      "question_zh": "什 — 亻 + 十",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "亻 зүүн талд."
+     },
+     {
+      "n": 10,
+      "question_zh": "做 — 亻 + 故",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "亻 зүүн талд."
+     }
+    ],
+    "instruction_zh": "写汉字：妈 她 姓 娜 你 他 们 作 什 做"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичгийн дасгал · 写汉字 + 我喜欢的地方 — Ханз бичих ба дуртай газрын тухай",
+    "question_zh": "先写汉字：妈、她、姓、娜、你、他、们、作、什、做（注意笔顺），然后写一段话，介绍你喜欢的一个地方，要用“有……，有……”“很/非常”“一下”或“一点儿”。",
+    "answer": "我的城市西边有一个公园。那里有山，有水，有树，有花，风景非常漂亮。星期天我们去爬山，休息一下，喝一点儿茶。",
+    "explanation_mn": "Загвар эссе (zh/mn) texts.json → mainText.writingSample-д. Нээлттэй даалгавар — автомат шалгахгүй."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ярианы дасгал · 三、说一说 你喜欢的一个地方 — дуртай газраа хэл",
+    "question_zh": "你喜欢的一个地方怎么样？",
+    "answer": "那里有山，有水，风景很漂亮",
+    "explanation_mn": "Нээлттэй асуулт: «有……，有……，有……» ба «漂亮 / 好 / 多» ашиглан дуртай газраа тодорхойл (жишээ: 那里有山，有水，有树，风景很漂亮。)."
+   }
+  ]
+ },
+ "answerSource": "发展汉语 初级综合 I 参考答案 (答案本 «第十课») — 综合练习 二, 四, 五, 六, 七 бүрэн тулгасан. 一 (пиньинь) — 生词-ээс; 语音练习 2 (不-ийн аялгуу) — ном хариулт өгөөгүй, агент 不-ийн аялгууны дүрмээр бичсэн. 三, 八, 语音练习, 课堂活动, 写汉字 — нээлттэй."
+}

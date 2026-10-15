@@ -1,0 +1,551 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 一、熟读下面的词语，并写出拼音 — үгийг чанга уншаад пиньинь бич",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "保证",
+      "answer": "bǎozhèng",
+      "explanation_mn": "生词 (课文二)."
+     },
+     {
+      "n": 2,
+      "question_zh": "看见",
+      "answer": "kànjiàn",
+      "explanation_mn": "生词 (课文一)."
+     },
+     {
+      "n": 3,
+      "question_zh": "这样",
+      "answer": "zhèyàng",
+      "explanation_mn": "生词 (课文三)."
+     },
+     {
+      "n": 4,
+      "question_zh": "圣诞节",
+      "answer": "Shèngdàn Jié",
+      "explanation_mn": "专名 (课文二)."
+     },
+     {
+      "n": 5,
+      "question_zh": "暖气",
+      "answer": "nuǎnqì",
+      "explanation_mn": "生词 (课文一)."
+     },
+     {
+      "n": 6,
+      "question_zh": "抱歉",
+      "answer": "bàoqiàn",
+      "explanation_mn": "生词 (课文二)."
+     },
+     {
+      "n": 7,
+      "question_zh": "只好",
+      "answer": "zhǐhǎo",
+      "explanation_mn": "生词 (课文一)."
+     },
+     {
+      "n": 8,
+      "question_zh": "有意思",
+      "answer": "yǒu yìsi",
+      "explanation_mn": "课文三-д гарсан."
+     },
+     {
+      "n": 9,
+      "question_zh": "手套",
+      "answer": "shǒutào",
+      "explanation_mn": "生词 (课文一)."
+     },
+     {
+      "n": 10,
+      "question_zh": "过去",
+      "answer": "guòqu",
+      "explanation_mn": "生词 (课文二)."
+     },
+     {
+      "n": 11,
+      "question_zh": "房东",
+      "answer": "fángdōng",
+      "explanation_mn": "生词 (课文一)."
+     },
+     {
+      "n": 12,
+      "question_zh": "看一遍",
+      "answer": "kàn yí biàn",
+      "explanation_mn": "遍 — 4-р дүрэм (一 → yí)."
+     }
+    ],
+    "instruction_zh": "一、熟读下面的词语，并写出拼音"
+   },
+   {
+    "part": 2,
+    "type": "word",
+    "instruction_mn": "Текстээс үг сэргээж нөхөх дасгал · 二、根据课文填空 — текстийн дагуу хоосон зайг нөх",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "山田房间里的暖气____。",
+      "answer": "坏了",
+      "explanation_mn": "课文一."
+     },
+     {
+      "n": 2,
+      "question_zh": "两个星期过去了，暖气还没有____。",
+      "answer": "修好",
+      "explanation_mn": "课文一, 二."
+     },
+     {
+      "n": 3,
+      "question_zh": "房东说圣诞节____一定修____暖气。",
+      "answer": "以前 / 好",
+      "explanation_mn": "课文二."
+     },
+     {
+      "n": 4,
+      "question_zh": "崔浩的那本书很有____。",
+      "answer": "意思",
+      "explanation_mn": "课文三: 有意思."
+     },
+     {
+      "n": 5,
+      "question_zh": "山田已经看____了那本书。",
+      "answer": "完",
+      "explanation_mn": "课文三: 看完."
+     },
+     {
+      "n": 6,
+      "question_zh": "崔浩的朋友____看那本书。",
+      "answer": "想 / 要",
+      "explanation_mn": "课文三: 参考答案 想."
+     },
+     {
+      "n": 7,
+      "question_zh": "崔浩也想再看一____那本书。",
+      "answer": "遍",
+      "explanation_mn": "课文三: 看一遍."
+     }
+    ],
+    "instruction_zh": "二、根据课文填空"
+   },
+   {
+    "part": 3,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 三、填写表格 — цагийн нэр томьёоны хүснэгтийг бөглө (年 / 天 / 月 / 星期 / 次)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "年：前年 去年 今年 ____ ____",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Хүснэгтийн ерөнхий дараалал: 前年, 去年, 今年, 明年, 后年."
+     },
+     {
+      "n": 2,
+      "question_zh": "天：____ 昨天 今天 明天 后天",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "前天, 昨天, 今天, 明天, 后天."
+     },
+     {
+      "n": 3,
+      "question_zh": "月：上个月 这个月 ____",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "下个月."
+     },
+     {
+      "n": 4,
+      "question_zh": "星期：上星期 这星期 ____",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "下个星期 / 下星期."
+     },
+     {
+      "n": 5,
+      "question_zh": "次：上次 这次 ____",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "下次."
+     }
+    ],
+    "instruction_zh": "三、填写表格"
+   },
+   {
+    "part": 4,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 四、模仿例子，用合适的词语填空 — жишээгээр үйл үгтэй тохирох тусагдахуун үг нөх (看 修 过 打)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "看____",
+      "answer": "书 / 电视",
+      "explanation_mn": "参考答案: 看书, 看电视."
+     },
+     {
+      "n": 2,
+      "question_zh": "修____",
+      "answer": "车 / 房子",
+      "explanation_mn": "修车, 修房子."
+     },
+     {
+      "n": 3,
+      "question_zh": "过____",
+      "answer": "生日 / 圣诞节",
+      "explanation_mn": "过生日, 过圣诞节."
+     },
+     {
+      "n": 4,
+      "question_zh": "打____",
+      "answer": "篮球 / 电话",
+      "explanation_mn": "打篮球, 打电话."
+     }
+    ],
+    "instruction_zh": "四、模仿例子，用合适的词语填空"
+   },
+   {
+    "part": 5,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 五、用适当的结果补语填空 — тохирох үр дүнгийн нөхөх үгээр нөх (完 好 开 上 给 见)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "明天去旅游，你准备（　）东西了吗？",
+      "answer": "好",
+      "explanation_mn": "准备好."
+     },
+     {
+      "n": 2,
+      "question_zh": "我的自行车修（　）了。",
+      "answer": "好",
+      "explanation_mn": "修好."
+     },
+     {
+      "n": 3,
+      "question_zh": "我看（　）很多人在运动场踢足球。",
+      "answer": "见",
+      "explanation_mn": "看见."
+     },
+     {
+      "n": 4,
+      "question_zh": "他送（　）我很多水果。",
+      "answer": "给",
+      "explanation_mn": "送给."
+     },
+     {
+      "n": 5,
+      "question_zh": "外边很冷，你要穿（　）棉衣。",
+      "answer": "上",
+      "explanation_mn": "穿上."
+     },
+     {
+      "n": 6,
+      "question_zh": "这本书你看（　）了没有？",
+      "answer": "完",
+      "explanation_mn": "看完."
+     },
+     {
+      "n": 7,
+      "question_zh": "我的作业还没有做（　）。",
+      "answer": "完",
+      "explanation_mn": "做完."
+     },
+     {
+      "n": 8,
+      "question_zh": "请大家打（　）书。",
+      "answer": "开",
+      "explanation_mn": "打开."
+     }
+    ],
+    "instruction_zh": "五、用适当的结果补语填空"
+   },
+   {
+    "part": 6,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 六、选择适当的词语填空 — өгөгдсөн хоёр, гурван үгээс тохирохыг сонго",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（看 / 看见）(1) 你____，这是什么？",
+      "answer": "看",
+      "explanation_mn": "«Хар даа» — үйл ажиллагаа."
+     },
+     {
+      "n": 2,
+      "question_zh": "（看 / 看见）(2) 我没____他。",
+      "answer": "看见",
+      "explanation_mn": "Үр дүн: хараагүй."
+     },
+     {
+      "n": 3,
+      "question_zh": "（做 / 做完）(1) 我的工作____了。",
+      "answer": "做完",
+      "explanation_mn": "Дууссан."
+     },
+     {
+      "n": 4,
+      "question_zh": "（做 / 做完）(2) 你爸爸____什么工作？",
+      "answer": "做",
+      "explanation_mn": "Үйл ажиллагаа: ямар ажил хийдэг вэ."
+     },
+     {
+      "n": 5,
+      "question_zh": "（再 / 又）(1) 我的电脑____坏了。",
+      "answer": "又",
+      "explanation_mn": "Давтагдсан өнгөрсөн үйл."
+     },
+     {
+      "n": 6,
+      "question_zh": "（再 / 又）(2) 一会儿你____给他打电话。",
+      "answer": "再",
+      "explanation_mn": "Ирээдүйд давтана."
+     },
+     {
+      "n": 7,
+      "question_zh": "（以后 / 后来）(1) 下课____你做什么？",
+      "answer": "以后",
+      "explanation_mn": "下课 + 以后."
+     },
+     {
+      "n": 8,
+      "question_zh": "（以后 / 后来）(2) 去年我先学习汉语，____我去一个学校教英语。",
+      "answer": "后来",
+      "explanation_mn": "Өнгөрсөн цаг."
+     },
+     {
+      "n": 9,
+      "question_zh": "（就 / 才）(1) 他十点____起床。",
+      "answer": "才",
+      "explanation_mn": "Оройтсон байдал."
+     },
+     {
+      "n": 10,
+      "question_zh": "（就 / 才）(2) 他只用一个小时____做完了。",
+      "answer": "就",
+      "explanation_mn": "Хурдан."
+     },
+     {
+      "n": 11,
+      "question_zh": "（遍 / 次 / 趟）(1) 下星期我要去____上海。",
+      "answer": "趟",
+      "explanation_mn": "Очиж ирэх: 趟."
+     },
+     {
+      "n": 12,
+      "question_zh": "（遍 / 次 / 趟）(2) 这个电影我已经看了两____。",
+      "answer": "遍",
+      "explanation_mn": "Эхнээс дуустал: 遍."
+     },
+     {
+      "n": 13,
+      "question_zh": "（遍 / 次 / 趟）(3) 我上____去法国一共玩儿了八天。",
+      "answer": "次",
+      "explanation_mn": "上次."
+     }
+    ],
+    "instruction_zh": "六、选择适当的词语填空"
+   },
+   {
+    "part": 7,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 七、用指定的词语完成句子 — өгөгдсөн үгээр өгүүлбэр гүйцээ",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我现在没有时间，____。（只好）",
+      "answer": "只好以后再去看他",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 2,
+      "question_zh": "我不会说法语，____。（只好）",
+      "answer": "只好说英语",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "____，我不能跟你一起去。（抱歉）",
+      "answer": "很抱歉",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 4,
+      "question_zh": "你来吧，____。（等）",
+      "answer": "我等你",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 5,
+      "question_zh": "我____。（认为）",
+      "answer": "我认为这个电影非常好",
+      "explanation_mn": "参考答案 (бусад хариулт ч боломжтой)."
+     },
+     {
+      "n": 6,
+      "question_zh": "从我家到学校____。（要）",
+      "answer": "要半个小时",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 7,
+      "question_zh": "____我就认识他。（以前）",
+      "answer": "二十年以前",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 8,
+      "question_zh": "请你____。（给……打电话）",
+      "answer": "给我打个电话",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "七、用指定的词语完成句子"
+   },
+   {
+    "part": 8,
+    "type": "sentence",
+    "instruction_mn": "Унших ойлголтын дасгал · 八、阅读短文，回答问题 — Хансын байр хайх тухай өгүүлэмжийг уншиж асуултад хариул",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "汉思来北京多长时间了？",
+      "answer": "汉思来北京三个月了。",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 2,
+      "question_zh": "汉思在哪儿住？",
+      "answer": "汉思在留学生宿舍住。",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "汉思为什么要租房子？",
+      "answer": "他觉得住宿舍不舒服，也不方便。",
+      "explanation_mn": "参考答案: 两个人住一个房间."
+     },
+     {
+      "n": 4,
+      "question_zh": "汉思找到合适的房子了吗？",
+      "answer": "还没有。",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "八、阅读短文，回答问题"
+   },
+   {
+    "part": 9,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 九、指出下面每组汉字的相同的部分，并说说相同的部分是什么意思 — ханз бүрийн нийтлэг хэсгийг ол (想 思 急 / 说 语 话 / 搬 打 找 / 吃 喝 叫)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "想　思　急",
+      "answer": "心（сэтгэл, бодол)",
+      "explanation_mn": "Нийтлэг хэсэг 心 — сэтгэл бодолтой холбоотой. (Агентын тайлбар, ном хариу өгөөгүй.)"
+     },
+     {
+      "n": 2,
+      "question_zh": "说　语　话",
+      "answer": "讠（үг, яриа)",
+      "explanation_mn": "讠 — хэл ярианы утга. (Агентын тайлбар.)"
+     },
+     {
+      "n": 3,
+      "question_zh": "搬　打　找",
+      "answer": "扌（гар)",
+      "explanation_mn": "扌 — гарын үйлдэл. (Агентын тайлбар.)"
+     },
+     {
+      "n": 4,
+      "question_zh": "吃　喝　叫",
+      "answer": "口（ам)",
+      "explanation_mn": "口 — амаар хийх үйл. (Агентын тайлбар.)"
+     }
+    ],
+    "instruction_zh": "九、指出下面每组汉字的相同的部分，并说说相同的部分是什么意思"
+   },
+   {
+    "part": 10,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 一、请你说一说 — «我的……坏了» хэлбэрээр хэл (手机 自行车 电脑 / 空调 电视 电话)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我的暖气坏了。 / 我的……坏了。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Жишээ. Үгс: 手机, 自行车, 电脑, 空调, 电视, 电话."
+     }
+    ],
+    "instruction_zh": "课堂活动：一、请你说一说"
+   },
+   {
+    "part": 11,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 二、问答练习 — үр дүнгийн нөхөх үгтэй асуулт хариулт хосоороо хий",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "A：东西准备好了没有？ B：准备好了。/没准备好。 （礼物 买，第二十课 准备，晚饭 做，护照 办……）",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "V + 好."
+     },
+     {
+      "n": 2,
+      "question_zh": "A：那本书看完了没有？ B：看完了。/没看完。 （作业 做，第十九课 学，汉字 写，课文 看……）",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "V + 完."
+     },
+     {
+      "n": 3,
+      "question_zh": "A：你看见我的笔了没有？ B：看见了。/没看见。 （手机，口语书，衣服，护照……）",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "V + 见."
+     },
+     {
+      "n": 4,
+      "question_zh": "A：你穿上棉衣了没有？ B：穿上了。/没穿上。 （羽绒服 穿，毛衣 穿，帽子 戴，手套 戴……）",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "V + 上."
+     }
+    ],
+    "instruction_zh": "课堂活动：二、问答练习"
+   },
+   {
+    "part": 12,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 写汉字 — дараах ханзуудыг дэвтэртээ бич (帽 帮 带 店 床 麻 应)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "帽　帮　带　店　床　麻　应",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "巾: 帽 帮 带 · 广: 店 床 麻 应."
+     }
+    ],
+    "instruction_zh": "写汉字"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичгийн дасгал · 写汉字 + 综合练习 七 — «只好» ашиглан өгүүлбэр зохио (帽·帮·带·店·床·麻·应)",
+    "question_zh": "先在练习本上写汉字：帽、帮、带、店、床、麻、应。然后用“只好”“给”“……完”“……见”写写你遇到的一件小麻烦。",
+    "answer": "我的暖气坏了，房间里很冷。我穿上了棉衣，可是还觉得冷，只好打开空调。我给房东打了电话，他说一个星期以后修好。我认为他的话不太可靠，我还没看见人来修。",
+    "explanation_mn": "Загвар эссе (zh/mn) texts.json → mainText.writingSample-д. Нээлттэй даалгавар — автомат шалгахгүй."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ярианы дасгал · 七、用指定的词语完成句子 — «只好» ашиглан өгүүлбэр гүйцээ",
+    "question_zh": "我不会说法语，____。（只好）",
+    "answer": "只好说英语",
+    "explanation_mn": "Франц хэлээр ярьж чадахгүй тул «аргагүй англиар ярина». 参考答案: 只好说英语。"
+   }
+  ]
+ },
+ "answerSource": "发展汉语 初级综合 I 参考答案 (答案本, «第十九课» 综合练习) — 二 (7), 四 (4), 五 (8), 六 (13), 七 (8), 八 (4) тулгасан. 一, 三, 九 (агентын тайлбар), 课堂活动, 写汉字 — нээлттэй даалгавар."
+}

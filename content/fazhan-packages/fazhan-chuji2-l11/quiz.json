@@ -1,0 +1,578 @@
+[
+ {
+  "type": "choice",
+  "question": "«书本» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "цэг",
+   "ном",
+   "хуудас",
+   "шоргоолж"
+  ],
+  "correct_answer": "ном",
+  "explanation": "书本 = ном.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«蚂蚁» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "цэцэг",
+   "ном",
+   "хуудас",
+   "шоргоолж"
+  ],
+  "correct_answer": "шоргоолж",
+  "explanation": "蚂蚁 = шоргоолж.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她摘下了一（ ）小花。",
+  "options": [
+   "朵",
+   "本",
+   "只",
+   "页"
+  ],
+  "correct_answer": "朵",
+  "explanation": "朵 — цэцгийн хэмжих үг.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她把小花（ ）进了一本旧书里。",
+  "options": [
+   "送",
+   "摘",
+   "夹",
+   "开"
+  ],
+  "correct_answer": "夹",
+  "explanation": "夹进 — хавчуулж оруулах.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "当它（ ）的时候，好像听到谁在说话。",
+  "options": [
+   "终于",
+   "醒来",
+   "变成",
+   "迷路"
+  ],
+  "correct_answer": "醒来",
+  "explanation": "醒来 — сэрэх.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我也（ ）了一个字。",
+  "options": [
+   "安静",
+   "从此",
+   "编",
+   "变成"
+  ],
+  "correct_answer": "变成",
+  "explanation": "变成 + N — … болон хувирах.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«羡慕» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "зохиох",
+   "атаархан биширэх",
+   "сэрэх",
+   "төөрөх"
+  ],
+  "correct_answer": "атаархан биширэх",
+  "explanation": "羡慕 = атаархан биширэх.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "为什么不试试呢？（ ）我们也会走……",
+  "options": [
+   "仔细",
+   "从此",
+   "终于",
+   "也许"
+  ],
+  "correct_answer": "也许",
+  "explanation": "也许 — магадгүй.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "书里（ ）热闹起来了。",
+  "options": [
+   "仔细",
+   "一下子",
+   "安静",
+   "有趣"
+  ],
+  "correct_answer": "一下子",
+  "explanation": "一下子 — гэнэт.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l11-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她（ ）地看了看，才看出来，那是一个会走路的字。",
+  "options": [
+   "迷路",
+   "自由",
+   "安静",
+   "仔细"
+  ],
+  "correct_answer": "仔细",
+  "explanation": "仔细地看 — сайтар ширтэх.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l11-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "小女孩儿（ ）明白了。",
+  "options": [
+   "也许",
+   "一下子",
+   "从此",
+   "终于"
+  ],
+  "correct_answer": "终于",
+  "explanation": "终于 — эцэст нь.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l11-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "它走得太远了，（ ）了，回不了家了。",
+  "options": [
+   "变成",
+   "醒来",
+   "摘",
+   "迷路"
+  ],
+  "correct_answer": "迷路",
+  "explanation": "迷路 — төөрөх.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l11-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zìyóu zìzài» аль үгэнд таарах вэ?",
+  "options": [
+   "热热闹闹",
+   "仔仔细细",
+   "安安静静",
+   "自由自在"
+  ],
+  "correct_answer": "自由自在",
+  "explanation": "自由自在 = zìyóu zìzài.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l11-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "当它醒来的时候，好像听到（ ）在说话。",
+  "options": [
+   "怎么",
+   "几点",
+   "谁",
+   "为什么"
+  ],
+  "correct_answer": "谁",
+  "explanation": "谁 — «хэн нэгэн» (虚指).",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l11-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хаа нэгтээ жаахан суутгай, ядарлаа» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我们哪儿找坐一会儿吧，太累了。",
+   "我们坐一会儿哪儿找吧，太累了。",
+   "我们找哪儿吗坐一会儿吧，太累了。",
+   "我们找哪儿坐一会儿吧，太累了。"
+  ],
+  "correct_answer": "我们找哪儿坐一会儿吧，太累了。",
+  "explanation": "找哪儿坐 —哪儿 = хаа нэгтээ.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l11-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你饿吗？想吃点儿（ ）吗？",
+  "options": [
+   "谁",
+   "哪儿",
+   "什么",
+   "怎么"
+  ],
+  "correct_answer": "什么",
+  "explanation": "想吃点儿什么吗？ — ямар нэг юм.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l11-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "（ ）知道谁就回答吧。",
+  "options": [
+   "谁",
+   "大家",
+   "他",
+   "什么"
+  ],
+  "correct_answer": "谁",
+  "explanation": "谁……谁 — хоёр ижил асуух төлөөний үг.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l11-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你吃什么，我就吃（ ）。",
+  "options": [
+   "谁",
+   "哪儿",
+   "什么",
+   "怎么"
+  ],
+  "correct_answer": "什么",
+  "explanation": "什么……什么 — ижил.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l11-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи хэрхэн бичмээр байна, тэгж бич» гэхэд аль нь зөв бэ?",
+  "options": [
+   "你想什么写，就怎么写。",
+   "你想怎么写，就写怎么。",
+   "你想怎么写，就什么写。",
+   "你想怎么写，就怎么写。"
+  ],
+  "correct_answer": "你想怎么写，就怎么写。",
+  "explanation": "怎么……怎么 — ижил.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l11-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你变化太大了，我都（ ）了。",
+  "options": [
+   "认不出来",
+   "认出来不",
+   "不认出来",
+   "认出不来"
+  ],
+  "correct_answer": "认不出来",
+  "explanation": "V+不+出来.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l11-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би нэг сайн арга бодож олов» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我想出来一个好办法。",
+   "我想好办法一个出来。",
+   "我出来想一个好办法。",
+   "我想一个好办法出来了。"
+  ],
+  "correct_answer": "我想出来一个好办法。",
+  "explanation": "想出来 — бодож олох.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l11-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "（ ），今天有考试，我忘了！",
+  "options": [
+   "天啊",
+   "对不起",
+   "谢谢",
+   "再见"
+  ],
+  "correct_answer": "天啊",
+  "explanation": "天啊 — гайхал.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l11-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "地铁通了，（ ），这里的交通就方便多了。",
+  "options": [
+   "从此",
+   "从中",
+   "从来",
+   "从前"
+  ],
+  "correct_answer": "从此",
+  "explanation": "从此 — тэр цагаас хойш.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l11-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "买了闹钟以后，他（ ）迟到了。",
+  "options": [
+   "再不也",
+   "不再也",
+   "再也不",
+   "也再不"
+  ],
+  "correct_answer": "再也不",
+  "explanation": "再也不 + V.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l11-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "小女孩儿摘下小花以后，把它夹进了什么里？",
+  "options": [
+   "一个口袋里",
+   "一个盒子里",
+   "一本旧书里",
+   "一个杯子里"
+  ],
+  "correct_answer": "一本旧书里",
+  "explanation": "P1: 夹进了一本旧书里。",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l11-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "小蚂蚁醒来的时候，听到了什么？",
+  "options": [
+   "有人在说话",
+   "有人在敲门",
+   "有人在哭",
+   "有人在唱歌"
+  ],
+  "correct_answer": "有人在说话",
+  "explanation": "P2: 好像听到谁在说话。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l11-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "字们为什么羡慕小蚂蚁？",
+  "options": [
+   "因为小蚂蚁会说话",
+   "因为小蚂蚁会走路，自由自在",
+   "因为小蚂蚁很大",
+   "因为小蚂蚁很新"
+  ],
+  "correct_answer": "因为小蚂蚁会走路，自由自在",
+  "explanation": "P7-8: 它自由自在，喜欢去哪儿就去哪儿。字们羡慕。",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l11-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "小女孩儿终于明白了什么？",
+  "options": [
+   "花是新鲜的",
+   "书里的字都是会走路的，所以故事每天都是新的",
+   "书里有蚂蚁的家",
+   "小蚂蚁会写字"
+  ],
+  "correct_answer": "书里的字都是会走路的，所以故事每天都是新的",
+  "explanation": "P17: 这本书里的字，都是会走路的，所以书里的故事每天都是新的。",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l11-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "有了这本书以后，小女孩儿再也不用做什么了？",
+  "options": [
+   "买别的故事书",
+   "看书",
+   "去花园",
+   "睡觉"
+  ],
+  "correct_answer": "买别的故事书",
+  "explanation": "P19: 再也不用买别的故事书了。",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l11-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：你想去哪个班？ B：（ ）",
+  "options": [
+   "去哪个班哪个班人少。",
+   "哪个班人少，我就去什么班。",
+   "我哪个班去人少哪个班。",
+   "哪个班人少，我就去哪个班。"
+  ],
+  "correct_answer": "哪个班人少，我就去哪个班。",
+  "explanation": "哪个……哪个 — ижил.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l11-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 什么 / 买 / 便宜 / 什么",
+  "options": [
+   "什么买便宜什么",
+   "买什么便宜什么",
+   "什么便宜买什么"
+  ],
+  "correct_answer": "什么便宜买什么",
+  "explanation": "什么……什么 — «юу хямд, тэрийг авна».",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l11-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Чи замаа алдчихлаа. Найздаа утасдаад яаж хэлэх вэ?",
+  "options": [
+   "我迷了，怎么办呢？",
+   "我走路了，怎么办呢？",
+   "我路迷了，怎么办呢？",
+   "我迷路了，怎么办呢？"
+  ],
+  "correct_answer": "我迷路了，怎么办呢？",
+  "explanation": "迷路 — төөрөх.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l11-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

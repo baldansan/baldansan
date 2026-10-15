@@ -1,0 +1,590 @@
+[
+ {
+  "type": "choice",
+  "question": "«懂» ямар утгатай вэ?",
+  "options": [
+   "мартах",
+   "сонсох",
+   "ойлгох",
+   "хэлэх"
+  ],
+  "correct_answer": "ойлгох",
+  "explanation": "懂 = dǒng — ойлгох.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l25-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«司机» ямар утгатай вэ?",
+  "options": [
+   "сувилагч",
+   "багш",
+   "жолооч",
+   "эмч"
+  ],
+  "correct_answer": "жолооч",
+  "explanation": "司机 = sījī.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l25-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«护士» ямар утгатай вэ?",
+  "options": [
+   "сувилагч",
+   "оюутан",
+   "эмч",
+   "жолооч"
+  ],
+  "correct_answer": "сувилагч",
+  "explanation": "护士 = hùshi.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l25-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«担心» ямар утгатай вэ?",
+  "options": [
+   "санаа зовох",
+   "санаа тавих",
+   "мартах",
+   "баярлах"
+  ],
+  "correct_answer": "санаа зовох",
+  "explanation": "担心 = dān xīn.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l25-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«机会» ямар утгатай вэ?",
+  "options": [
+   "цаг",
+   "арга",
+   "боломж",
+   "асуулт"
+  ],
+  "correct_answer": "боломж",
+  "explanation": "机会 = jīhuì.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l25-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«饿» ямар утгатай вэ?",
+  "options": [
+   "өлсөх",
+   "цангах",
+   "унтах",
+   "ядрах"
+  ],
+  "correct_answer": "өлсөх",
+  "explanation": "饿 = è.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l25-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«光盘» ямар утгатай вэ?",
+  "options": [
+   "жимс",
+   "CD, диск",
+   "цонх",
+   "ном"
+  ],
+  "correct_answer": "CD, диск",
+  "explanation": "光盘 = guāngpán.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l25-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«方法» ямар утгатай вэ?",
+  "options": [
+   "амьдрал",
+   "өөрчлөлт",
+   "боломж",
+   "арга"
+  ],
+  "correct_answer": "арга",
+  "explanation": "方法 = fāngfǎ.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l25-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«变化» ямар утгатай вэ?",
+  "options": [
+   "эдийн засаг",
+   "амьдрал",
+   "өөрчлөлт",
+   "хөгжил"
+  ],
+  "correct_answer": "өөрчлөлт",
+  "explanation": "变化 = biànhuà.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l25-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«担心» ба «关心»-ийн ялгаа?",
+  "options": [
+   "担心 — санаа зовох, 关心 — санаа тавих",
+   "担心 — санаа тавих, 关心 — санаа зовох",
+   "ижил",
+   "хоёулаа санаа зовох"
+  ],
+  "correct_answer": "担心 — санаа зовох, 关心 — санаа тавих",
+  "explanation": "担心 = зовнил; 关心 = халамж.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l25-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«普通话» ямар утгатай вэ?",
+  "options": [
+   "Гуандун хэл",
+   "жирийн хүн",
+   "англи хэл",
+   "Хятадын нийтлэг (стандарт) хэл"
+  ],
+  "correct_answer": "Хятадын нийтлэг (стандарт) хэл",
+  "explanation": "普通话 = pǔtōnghuà.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l25-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «hǎohāor» аль ханзтай таарах вэ?",
+  "options": [
+   "出院",
+   "经济",
+   "部分",
+   "好好儿"
+  ],
+  "correct_answer": "好好儿",
+  "explanation": "好好儿 = hǎohāor.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l25-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«比如» ямар утгатай вэ?",
+  "options": [
+   "мөн",
+   "ердөө",
+   "хэрэв",
+   "жишээлбэл"
+  ],
+  "correct_answer": "жишээлбэл",
+  "explanation": "比如 = bǐrú.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l25-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我做________饺子很好吃。",
+  "options": [
+   "得",
+   "的",
+   "了",
+   "地"
+  ],
+  "correct_answer": "的",
+  "explanation": "SP + 的 + N.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l25-q14",
+  "skillTags": [
+   "grammar",
+   "de"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чиний дуртай жимс» аль нь вэ?",
+  "options": [
+   "你的喜欢水果",
+   "你水果喜欢的",
+   "你喜欢的水果",
+   "喜欢你的水果"
+  ],
+  "correct_answer": "你喜欢的水果",
+  "explanation": "SP + 的 + N.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l25-q15",
+  "skillTags": [
+   "grammar",
+   "de"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би багшийн хэлсэн үгийг ойлгоно» аль нь вэ?",
+  "options": [
+   "我能听懂说老师的话。",
+   "我能听懂老师说话的。",
+   "我能听懂老师的说话。",
+   "我能听懂老师说的话。"
+  ],
+  "correct_answer": "我能听懂老师说的话。",
+  "explanation": "老师说的话 = SP + 的 + N.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l25-q16",
+  "skillTags": [
+   "grammar",
+   "de"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他们说话太快，我常常________。",
+  "options": [
+   "听懂不",
+   "听得懂",
+   "听不懂",
+   "不听懂"
+  ],
+  "correct_answer": "听不懂",
+  "explanation": "听不懂 = ойлгохгүй.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l25-q17",
+  "skillTags": [
+   "grammar",
+   "bukedong"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«听得懂» ямар утгатай вэ?",
+  "options": [
+   "сонсоод ойлгохгүй",
+   "сонсоод ойлгож чадна",
+   "сонсохыг хүсэхгүй",
+   "сонсоогүй"
+  ],
+  "correct_answer": "сонсоод ойлгож чадна",
+  "explanation": "听得懂 ↔ 听不懂.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l25-q18",
+  "skillTags": [
+   "grammar",
+   "bukedong"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "虽然他身体不好，________还每天工作。",
+  "options": [
+   "因为",
+   "如果",
+   "但是",
+   "所以"
+  ],
+  "correct_answer": "但是",
+  "explanation": "虽然……但是……",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l25-q19",
+  "skillTags": [
+   "grammar",
+   "suiran"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«虽然» ямар утгатай вэ?",
+  "options": [
+   "учир нь",
+   "…-ын тулд",
+   "хэрэв",
+   "хэдий … ч"
+  ],
+  "correct_answer": "хэдий … ч",
+  "explanation": "虽然 = хэдий … ч.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l25-q20",
+  "skillTags": [
+   "grammar",
+   "suiran"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你应该________休息休息。",
+  "options": [
+   "很好",
+   "好的",
+   "好好儿",
+   "好些"
+  ],
+  "correct_answer": "好好儿",
+  "explanation": "好好儿 + V.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l25-q21",
+  "skillTags": [
+   "grammar",
+   "haohaor"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«教, 收, 数, 放» дөрвөн ханзын нийтлэг偏旁 аль нь вэ?",
+  "options": [
+   "氵",
+   "攵",
+   "饣",
+   "亻"
+  ],
+  "correct_answer": "攵",
+  "explanation": "反文旁.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l25-q22",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«馆, 饭, 饺, 饼, 饿» нийтлэг偏旁 аль нь вэ?",
+  "options": [
+   "忄",
+   "攵",
+   "饣",
+   "辶"
+  ],
+  "correct_answer": "饣",
+  "explanation": "食字旁.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l25-q23",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "从北京到上海坐飞机________两个小时。",
+  "options": [
+   "愿意",
+   "想",
+   "要",
+   "会"
+  ],
+  "correct_answer": "要",
+  "explanation": "要 = шаардагдах.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l25-q24",
+  "skillTags": [
+   "grammar",
+   "zhudongci"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "上课的时候，“我”能听懂老师说的话吗？",
+  "options": [
+   "不知道",
+   "有时候",
+   "能",
+   "不能"
+  ],
+  "correct_answer": "能",
+  "explanation": "课文一: 我能听懂老师说的话.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l25-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "坐出租车的时候，为什么“我”常常听不懂？",
+  "options": [
+   "司机说话太快",
+   "司机说汉语",
+   "出租车很慢",
+   "司机不说话"
+  ],
+  "correct_answer": "司机说话太快",
+  "explanation": "课文一.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l25-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "崔浩现在身体怎么样了？",
+  "options": [
+   "好点儿了",
+   "更不好了",
+   "要出国",
+   "完全好了"
+  ],
+  "correct_answer": "好点儿了",
+  "explanation": "课文二: 好点儿了.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l25-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "李一民给崔浩带来了什么？",
+  "options": [
+   "水果",
+   "书",
+   "饺子",
+   "光盘"
+  ],
+  "correct_answer": "饺子",
+  "explanation": "课文二: 这是我包的饺子.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l25-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "崔浩说练习汉语最好的方法是什么？",
+  "options": [
+   "多看书",
+   "多听、多说",
+   "只学习",
+   "多写"
+  ],
+  "correct_answer": "多听、多说",
+  "explanation": "课文三.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l25-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз тань өвдөж байна. Түүнд юу гэж хэлэх вэ?",
+  "options": [
+   "别着急，你应该好好儿休息。",
+   "我听不懂。",
+   "虽然他很高。",
+   "谢谢你们的关心。"
+  ],
+  "correct_answer": "别着急，你应该好好儿休息。",
+  "explanation": "课文二 Ли Имин.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l25-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Эмнэлэгт хэвтсэн найзууд ирлээ. Тэдэнд юу гэж талархах вэ?",
+  "options": [
+   "我真饿了。",
+   "别着急。",
+   "我听不懂。",
+   "谢谢你们的关心！"
+  ],
+  "correct_answer": "谢谢你们的关心！",
+  "explanation": "课文二 崔浩.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l25-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгний хэлснийг ойлгохгүй байхад яаж хэлэх вэ?",
+  "options": [
+   "对不起，我听不懂。",
+   "我比如你。",
+   "我真饿了。",
+   "我听得懂，谢谢。"
+  ],
+  "correct_answer": "对不起，我听不懂。",
+  "explanation": "听不懂.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l25-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

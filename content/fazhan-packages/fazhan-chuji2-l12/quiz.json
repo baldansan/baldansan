@@ -1,0 +1,582 @@
+[
+ {
+  "type": "choice",
+  "question": "«闹笑话» гэсэн хэллэгийн утга аль нь вэ?",
+  "options": [
+   "талархах",
+   "хоцрох",
+   "мэндлэх",
+   "инээдэмд хүрэх"
+  ],
+  "correct_answer": "инээдэмд хүрэх",
+  "explanation": "闹笑话 = инээдтэй алдаа гаргах.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l12-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的发音不准，经常（ ）。",
+  "options": [
+   "闹笑话",
+   "发抖",
+   "理发",
+   "照镜子"
+  ],
+  "correct_answer": "闹笑话",
+  "explanation": "Дуудлага муу → инээдэмд хүрэх.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l12-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«被子» ба «杯子» хоёрын утга аль нь вэ?",
+  "options": [
+   "дэр ба хөнжил",
+   "хөнжил ба аяга",
+   "аяга ба толь",
+   "хөнжил ба зүү"
+  ],
+  "correct_answer": "хөнжил ба аяга",
+  "explanation": "被子 = хөнжил; 杯子 = аяга.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l12-q03",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "对不起，你（ ）了，我不是那个意思。",
+  "options": [
+   "误会",
+   "发抖",
+   "可笑",
+   "自信"
+  ],
+  "correct_answer": "误会",
+  "explanation": "误会 = буруу ойлгох.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l12-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个枕头太（ ），我想买软一点儿的。",
+  "options": [
+   "剪",
+   "硬",
+   "样子",
+   "准"
+  ],
+  "correct_answer": "硬",
+  "explanation": "硬 = хатуу; 软 = зөөлөн.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l12-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "货架上（ ）摆着那么多枕头，却说不卖枕头。",
+  "options": [
+   "明明",
+   "自信",
+   "实在",
+   "想不到"
+  ],
+  "correct_answer": "明明",
+  "explanation": "明明……却…… — эсрэг утга.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l12-q06",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）说不明白了，就指着货架说。",
+  "options": [
+   "可笑",
+   "实在",
+   "明明",
+   "自信"
+  ],
+  "correct_answer": "实在",
+  "explanation": "实在 = үнэхээр (аргагүй).",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l12-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«想不到外国人也喜欢啊！» дахь «想不到»-ийн утга?",
+  "options": [
+   "мэдэхгүй",
+   "хүссэнгүй",
+   "санасангүй",
+   "мартсан"
+  ],
+  "correct_answer": "санасангүй",
+  "explanation": "想不到 = гэнэтийн, санасангүй.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l12-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«理发师» гэж хэн бэ?",
+  "options": [
+   "багш",
+   "худалдагч",
+   "эмч",
+   "үсчин"
+  ],
+  "correct_answer": "үсчин",
+  "explanation": "理发师 = үсчин.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l12-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "看着他（ ）的样子，我放心了。",
+  "options": [
+   "发抖",
+   "自信",
+   "软",
+   "误会"
+  ],
+  "correct_answer": "自信",
+  "explanation": "自信 = өөртөө итгэлтэй.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l12-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "天啊！我（ ）了。",
+  "options": [
+   "自信",
+   "吓一跳",
+   "理发",
+   "闹笑话"
+  ],
+  "correct_answer": "吓一跳",
+  "explanation": "吓了一跳 = цочирдсон.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l12-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhěntou» аль үгэнд таарах вэ?",
+  "options": [
+   "柜台",
+   "针头",
+   "枕头",
+   "镜子"
+  ],
+  "correct_answer": "枕头",
+  "explanation": "枕头 = zhěntou; 针头 = zhēntóu.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l12-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«本来只想剪掉半寸» — «掉»-ийн үүрэг?",
+  "options": [
+   "байдал үргэлжлэх",
+   "хүсэл",
+   "асуулт",
+   "үр дүн: тайрч хаях"
+  ],
+  "correct_answer": "үр дүн: тайрч хаях",
+  "explanation": "V+掉 — үр дүн (арилгах).",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l12-q13",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Миний хувьд хятад хэл хэцүү» — аль нь зөв бэ?",
+  "options": [
+   "对来说我，汉语很难。",
+   "对我说来，汉语很难。",
+   "对我来说，汉语很难。",
+   "我对来说，汉语很难。"
+  ],
+  "correct_answer": "对我来说，汉语很难。",
+  "explanation": "对 + хүн + 来说.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l12-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Чиний хувьд энэ жижиг юм, харин миний хувьд том хэрэг» — аль нь зөв бэ?",
+  "options": [
+   "对你来这是小事说。",
+   "对你来说，这是小事；对我来说，这是大事。",
+   "对小事你来说是。",
+   "你对来说，这是小事；我对来说，这是大事。"
+  ],
+  "correct_answer": "对你来说，这是小事；对我来说，这是大事。",
+  "explanation": "对……来说 бүтэц.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l12-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би 十四-ийг 四十 гэж хэлчихлээ» — аль нь зөв бэ?",
+  "options": [
+   "我把“十四”说成“四十”了。",
+   "我说把“十四”成“四十”了。",
+   "我把“十四”说“四十”成了。",
+   "我把说成“十四”“四十”了。"
+  ],
+  "correct_answer": "我把“十四”说成“四十”了。",
+  "explanation": "把 + A + V成 + B.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l12-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр үсээ улаан өнгөөр будлаа» — аль нь зөв бэ?",
+  "options": [
+   "他把头发染成了红色。",
+   "他头发把染成了红色。",
+   "他染把头发成红色了。",
+   "他把头发染红色成了。"
+  ],
+  "correct_answer": "他把头发染成了红色。",
+  "explanation": "把 + A + 染成 + B.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l12-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэд хөнжлийг аяга гэж ойлгочихлоо» — аль нь тохиромжтой?",
+  "options": [
+   "他们被子把听成了杯子。",
+   "他们听成把被子杯子了。",
+   "他们把被子听杯子了。",
+   "他们把被子听成了杯子。"
+  ],
+  "correct_answer": "他们把被子听成了杯子。",
+  "explanation": "听成 — буруу сонсох.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l12-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Ингэж хүнээс асуудаг хүн байх уу?» гэдэг нь юу гэсэн үг вэ?",
+  "options": [
+   "Хэн ингэж асууна гэдгийг мэдмээр байна",
+   "Ингэж асуудаг хүн олон",
+   "Би чамаас асууж байна",
+   "Ингэж асуух хүн байхгүй"
+  ],
+  "correct_answer": "Ингэж асуух хүн байхгүй",
+  "explanation": "有……吗 反问 = үгүйсгэл.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l12-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би чамд хэлсэн шүү дээ» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我告诉你不是了吗？",
+   "我是不告诉你了吗？",
+   "我不是告诉你了吗？",
+   "我不告诉你了吗不是？"
+  ],
+  "correct_answer": "我不是告诉你了吗？",
+  "explanation": "不是……吗 = батлал.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l12-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：我的书在哪儿？ B：你看，那________你的书吗？",
+  "options": [
+   "不会",
+   "是不是",
+   "没有",
+   "不是"
+  ],
+  "correct_answer": "不是",
+  "explanation": "那不是你的书吗？ — «тэр чиний ном шүү дээ».",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l12-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тавиур дээр дэр олон байхад зарахгүй гэж байх юм» — аль нь зөв бэ?",
+  "options": [
+   "货架上明明摆着那么多枕头，所以说不卖枕头。",
+   "货架上明明摆着那么多枕头，却说不卖枕头。",
+   "货架上明天摆着那么多枕头，却说不卖枕头。",
+   "货架上明白摆着那么多枕头，却说不卖枕头。"
+  ],
+  "correct_answer": "货架上明明摆着那么多枕头，却说不卖枕头。",
+  "explanation": "明明……却……",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l12-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хувцсан дээрх тос угаагаад арилахаа больсон» — аль нь зөв бэ?",
+  "options": [
+   "衣服上的油洗不掉了。",
+   "衣服上的油不洗掉了。",
+   "衣服上的油没洗掉了。",
+   "衣服上的油洗掉不了。"
+  ],
+  "correct_answer": "衣服上的油洗不掉了。",
+  "explanation": "V不掉 — боломжгүй.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l12-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "A：他是你的朋友，你应该帮助他。（不是……吗）— аль нь зөв бэ?",
+  "options": [
+   "他不是朋友吗你的？",
+   "他是你的朋友吗不？你应该帮助他。",
+   "你的朋友不是吗他？",
+   "他不是你的朋友吗？你应该帮助他。"
+  ],
+  "correct_answer": "他不是你的朋友吗？你应该帮助他。",
+  "explanation": "不是……吗 反问.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l12-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "对“我”来说，什么很难？",
+  "options": [
+   "汉语的词语",
+   "汉字",
+   "语法",
+   "汉语的四声"
+  ],
+  "correct_answer": "汉语的四声",
+  "explanation": "P1: 汉语的四声真是太难了。",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l12-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”为什么冷得发抖的样子？",
+  "options": [
+   "想买衣服",
+   "喜欢演戏",
+   "真的很冷",
+   "想让售货员明白自己要买被子"
+  ],
+  "correct_answer": "想让售货员明白自己要买被子",
+  "explanation": "P2: 没办法，只好做出冷得发抖的样子。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l12-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么售货员说“这个商店不卖针头”？",
+  "options": [
+   "因为“我”把枕头说成了针头",
+   "因为商店只卖杯子",
+   "因为枕头卖完了",
+   "因为商店不开门"
+  ],
+  "correct_answer": "因为“我”把枕头说成了针头",
+  "explanation": "P3: “我”要买一个针头(枕头).",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l12-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "理发师为什么笑着说“想不到外国人也喜欢啊”？",
+  "options": [
+   "他认识“我”",
+   "“我”理过发",
+   "他想少收钱",
+   "板寸正在流行"
+  ],
+  "correct_answer": "板寸正在流行",
+  "explanation": "P4: 板寸正流行呢.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l12-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "理完发以后，“我”为什么吓了一跳？",
+  "options": [
+   "价格太贵",
+   "镜子坏了",
+   "头发被剪成了板寸",
+   "理发师不见了"
+  ],
+  "correct_answer": "头发被剪成了板寸",
+  "explanation": "P5: 理发师把我的头发剪成“板寸”了.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l12-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн таны санааг буруу ойлгов. Аль нь тохиромжтой?",
+  "options": [
+   "你很自信，我不是那个意思。",
+   "你吓一跳，我不是那个意思。",
+   "你可笑，我不是那个意思。",
+   "你误会了，我不是那个意思。"
+  ],
+  "correct_answer": "你误会了，我不是那个意思。",
+  "explanation": "误会 — буруу ойлгох.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l12-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Таны HSK дүн хүлээснээс сайн гарав. Аль нь тохиромжтой?",
+  "options": [
+   "我的HSK误会通过了。",
+   "我的HSK实在吓一跳了。",
+   "我的HSK明明通过了中级。",
+   "想不到我的HSK通过了中级。"
+  ],
+  "correct_answer": "想不到我的HSK通过了中级。",
+  "explanation": "想不到 — санасангүй.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l12-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 把 / 十四 / 说成 / 我 / 四十 / 了",
+  "options": [
+   "我十四把说成四十了",
+   "我把十四说成四十了",
+   "我把四十说成十四了",
+   "把我十四说成四十了"
+  ],
+  "correct_answer": "我把十四说成四十了",
+  "explanation": "把 + A + V成 + B дараалал.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l12-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

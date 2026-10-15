@@ -1,0 +1,25 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-chuji1",
+ "lessonId": "fazhan-chuji1-l23",
+ "hskLevel": 2,
+ "lessonNumber": 23,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "今年冬天变冷了",
+ "mongolianTitle": "Энэ жил өвөл хүйтэрчээ",
+ "series": "发展汉语（第二版）初级综合 I",
+ "seriesLabel_mn": "发展汉语 анхан I (≈HSK1-2)",
+ "source": "发展汉语（第二版）初级综合 I · 第23课 (сурах бичиг, 参考答案 (АУДИО, 课件, 教案 байхгүй))",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (албан 教案 байхгүй тул)"
+ }
+}

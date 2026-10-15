@@ -1,0 +1,578 @@
+[
+ {
+  "type": "choice",
+  "question": "«从前» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "үргэлж",
+   "маргааш",
+   "одоо",
+   "урьд нь"
+  ],
+  "correct_answer": "урьд нь",
+  "explanation": "从前 = урьд нь.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）才能使自己快乐呢？",
+  "options": [
+   "怎样",
+   "这样",
+   "那样",
+   "怎么样的"
+  ],
+  "correct_answer": "怎样",
+  "explanation": "怎样才能 — яаж байж.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "工作（ ）我快乐。",
+  "options": [
+   "把",
+   "被",
+   "对",
+   "使"
+  ],
+  "correct_answer": "使",
+  "explanation": "使我快乐 — намайг жаргалтай болгодог.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«各种各样» гэсэн утга аль нь вэ?",
+  "options": [
+   "цөөхөн",
+   "янз бүрийн",
+   "нэг л",
+   "ижил"
+  ],
+  "correct_answer": "янз бүрийн",
+  "explanation": "各种各样 = янз бүрийн.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«减肥» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "тоглох",
+   "хоол хийх",
+   "таргалах",
+   "турах"
+  ],
+  "correct_answer": "турах",
+  "explanation": "减肥 = турах.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她一张一张地（ ）文件。",
+  "options": [
+   "打印",
+   "祝福",
+   "填",
+   "减肥"
+  ],
+  "correct_answer": "打印",
+  "explanation": "打印文件 — баримт хэвлэх.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不让我工作，我可（ ）。",
+  "options": [
+   "没受",
+   "不受了",
+   "受得了",
+   "受不了"
+  ],
+  "correct_answer": "受不了",
+  "explanation": "受不了 — тэсэхгүй.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一个母亲，不穿好的，不吃好的，每天（ ）。",
+  "options": [
+   "简简单单",
+   "快快乐乐",
+   "辛辛苦苦",
+   "平平安安"
+  ],
+  "correct_answer": "辛辛苦苦",
+  "explanation": "辛辛苦苦 — зовж яваа.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l10-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "全家（ ）就让我快乐。",
+  "options": [
+   "辛辛苦苦",
+   "受不了",
+   "善良",
+   "平平安安"
+  ],
+  "correct_answer": "平平安安",
+  "explanation": "平平安安 — эсэн мэнд.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l10-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«满足» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "сэтгэл ханах",
+   "ерөөх",
+   "өөрчлөх",
+   "хэвлэх"
+  ],
+  "correct_answer": "сэтгэл ханах",
+  "explanation": "满足 = сэтгэл ханах.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l10-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一个（ ）的祝福，就会使我们回到快乐的童年。",
+  "options": [
+   "辛苦",
+   "胖",
+   "善良",
+   "打印"
+  ],
+  "correct_answer": "善良",
+  "explanation": "善良的祝福 — сайхан ерөөл.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l10-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yízhènzi» аль үгэнд таарах вэ?",
+  "options": [
+   "一阵子",
+   "一下",
+   "一遍",
+   "一回"
+  ],
+  "correct_answer": "一阵子",
+  "explanation": "一阵子 = yízhènzi.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l10-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）人们见面打招呼的时候说：“吃了吗？”",
+  "options": [
+   "后来",
+   "现在",
+   "从前",
+   "明天"
+  ],
+  "correct_answer": "从前",
+  "explanation": "从前 — урьд нь.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l10-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр баримт бичгийг хуудас хуудсаар нь хэвлэнэ» гэхэд аль нь зөв бэ?",
+  "options": [
+   "她打印一张一张文件地。",
+   "她一张地一张打印文件。",
+   "她一张一张地打印文件。",
+   "她一张一张文件打印。"
+  ],
+  "correct_answer": "她一张一张地打印文件。",
+  "explanation": "一M一M地 + V.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l10-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "学过的课文，每一篇你都复习了吗？ B：我（ ）都复习了。",
+  "options": [
+   "一篇都一篇",
+   "一篇篇一",
+   "篇一篇一",
+   "一篇一篇"
+  ],
+  "correct_answer": "一篇一篇",
+  "explanation": "一+M一+M.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l10-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Цаг агаар өдрөөс өдөрт хүйтэрч байна» гэхэд аль нь зөв бэ?",
+  "options": [
+   "天气一天比一天很冷了。",
+   "天气比一天一天冷了。",
+   "天气一天比一天冷。",
+   "天气一天比一天冷了。"
+  ],
+  "correct_answer": "天气一天比一天冷了。",
+  "explanation": "一天比一天 + Adj + 了.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l10-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "她读得（ ）流利了。（удаа ирэх тусам）",
+  "options": [
+   "一次比一次",
+   "一年比一年",
+   "一天比一天",
+   "一遍一遍"
+  ],
+  "correct_answer": "一次比一次",
+  "explanation": "Удаа ирэх тусам — 一次比一次.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l10-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би өмнө нь түүнтэй хоёр удаа уулзаж байсан» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我以前见两次过他。",
+   "我以前见过两次他。",
+   "我两次以前见过他。",
+   "我以前见过他两次。"
+  ],
+  "correct_answer": "我以前见过他两次。",
+  "explanation": "Төлөөний үг тусагдахуун — 动量补语-ийн өмнө.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l10-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "他的脸红了好（ ）。",
+  "options": [
+   "一阵子",
+   "一件",
+   "一个",
+   "一本"
+  ],
+  "correct_answer": "一阵子",
+  "explanation": "好一阵子 — хэсэг хугацаа.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l10-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "火车站的人（ ）多了。",
+  "options": [
+   "把",
+   "可",
+   "是",
+   "太"
+  ],
+  "correct_answer": "可",
+  "explanation": "可 + Adj + 了 — онцлох.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l10-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "每天工作十二个小时，真（ ）。",
+  "options": [
+   "受了不",
+   "不受了",
+   "没受",
+   "受不了"
+  ],
+  "correct_answer": "受不了",
+  "explanation": "受不了 — тэсэхгүй.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l10-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我这个月的钱不（ ）花。",
+  "options": [
+   "使",
+   "受",
+   "够",
+   "可"
+  ],
+  "correct_answer": "够",
+  "explanation": "不够花 — хүрэхгүй.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l10-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Би өнөөдөр унтаж ханав» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我今天睡了够。",
+   "我今天够睡了。",
+   "我今天睡不够了。",
+   "我今天睡够了。"
+  ],
+  "correct_answer": "我今天睡够了。",
+  "explanation": "睡够了 — V + 够 + 了.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l10-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他跟我（ ）高。",
+  "options": [
+   "一样",
+   "一样地",
+   "很一样",
+   "比"
+  ],
+  "correct_answer": "一样",
+  "explanation": "跟……一样 + Adj.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l10-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "从前中国人见面打招呼说什么？",
+  "options": [
+   "再见",
+   "你好！",
+   "过得快乐吗？",
+   "吃了吗？"
+  ],
+  "correct_answer": "吃了吗？",
+  "explanation": "P1: 从前人们见面打招呼的时候说：“吃了吗？”",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l10-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "女孩子为什么爬台阶？",
+  "options": [
+   "为了去上班",
+   "为了看风景",
+   "为了减肥",
+   "为了找朋友"
+  ],
+  "correct_answer": "为了减肥",
+  "explanation": "P6: 爬台阶能使我减肥。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l10-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "办公室的朋友对她的工作是什么看法？",
+  "options": [
+   "工作太简单",
+   "工作又累又烦",
+   "工作使她快乐",
+   "想换工作"
+  ],
+  "correct_answer": "工作使她快乐",
+  "explanation": "P7: 工作使我快乐。不让我工作，我可受不了。",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l10-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "母亲说什么让她特别满足？",
+  "options": [
+   "去旅行",
+   "有很多钱",
+   "看着孩子们的生活一天比一天好",
+   "买了新房子"
+  ],
+  "correct_answer": "看着孩子们的生活一天比一天好",
+  "explanation": "P8: 看着孩子们的生活一天比一天好，让我特别满足。",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l10-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者最后得出什么结论？",
+  "options": [
+   "快乐很难找到",
+   "工作越少越快乐",
+   "使自己快乐其实很简单",
+   "钱使人快乐"
+  ],
+  "correct_answer": "使自己快乐其实很简单",
+  "explanation": "P12: 使自己快乐其实很简单。",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l10-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "你为晚会买了饮料，担心人多饮料少。你怎么说？",
+  "options": [
+   "明天晚会的饮料够吗？",
+   "明天晚会的饮料可吗？",
+   "明天晚会的饮料受不了吗？",
+   "明天晚会的饮料使吗？"
+  ],
+  "correct_answer": "明天晚会的饮料够吗？",
+  "explanation": "够 + 吗？",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l10-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 一个一个地 / 大家 / 别挤 / 上",
+  "options": [
+   "大家一个一个地别挤上",
+   "大家别挤，一个一个地上",
+   "一个一个地大家上别挤"
+  ],
+  "correct_answer": "大家别挤，一个一个地上",
+  "explanation": "一个一个地 + V дараалал.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l10-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзынхаа дуудлага өдрөөс өдөрт сайжирч байна. Чи түүнд яаж хэлэх вэ?",
+  "options": [
+   "你的发音很一天比一天好。",
+   "你的发音比一天一天好了。",
+   "你的发音一天一天比好了。",
+   "你的发音一天比一天好了。"
+  ],
+  "correct_answer": "你的发音一天比一天好了。",
+  "explanation": "一天比一天 + Adj + 了.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l10-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

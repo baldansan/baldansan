@@ -5,12 +5,14 @@ audio/text, audio/words, vocabularyAudio бүрэн байхыг шаардах�
 import sys, os, json, re, glob
 D = os.path.abspath(sys.argv[1]); P = f"{D}/pkg"; err, warn = [], []
 NO_AUDIO = "--no-audio" in sys.argv[2:]
+# --min-vocab=N: 初级 early lessons legitimately have ~8-15 生词.
+MIN_VOCAB = next((int(a.split("=", 1)[1]) for a in sys.argv[2:] if a.startswith("--min-vocab=")), 20)
 J = {f: json.load(open(f"{P}/{f}.json")) for f in ["lesson", "manifest", "vocabulary", "texts", "grammar", "quiz", "workbook"]}
 subs = json.load(open(f"{P}/subtitles.json")) if os.path.exists(f"{P}/subtitles.json") else []
 V, T, G, Q, W, M = J["vocabulary"], J["texts"], J["grammar"], J["quiz"], J["workbook"], J["manifest"]
 sents = T["mainText"]["sentences"]
 # counts
-if len(V) < 20: err.append(f"vocab {len(V)} < 20")
+if len(V) < MIN_VOCAB: err.append(f"vocab {len(V)} < {MIN_VOCAB}")
 if len(G) < 3: err.append(f"grammar {len(G)} < 3")
 if len(Q) < 25: err.append(f"quiz {len(Q)} < 25")
 if len(T["wordExplanation"]) < 5: warn.append(f"wordExplanation {len(T['wordExplanation'])} < 5")

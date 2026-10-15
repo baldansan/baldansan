@@ -1,0 +1,568 @@
+[
+ {
+  "type": "choice",
+  "question": "«乞丐» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "эзэн",
+   "багш",
+   "гуйлгачин",
+   "жолооч"
+  ],
+  "correct_answer": "гуйлгачин",
+  "explanation": "乞丐 = гуйлгачин.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l20-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«毛巾» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "цаас",
+   "тоосго",
+   "алчуур",
+   "ширээ"
+  ],
+  "correct_answer": "алчуур",
+  "explanation": "毛巾 = алчуур.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l20-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个（ ）的人只有一只手。",
+  "options": [
+   "了不起",
+   "健全",
+   "可怜",
+   "可爱"
+  ],
+  "correct_answer": "可怜",
+  "explanation": "可怜 = өрөвдөлтэй.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l20-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他一次只能搬两块，（ ）搬了两个多小时。",
+  "options": [
+   "全部",
+   "千万",
+   "永远",
+   "整整"
+  ],
+  "correct_answer": "整整",
+  "explanation": "整整 + тоо = бүтэн.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l20-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "女主人（ ）帮他把脸上的汗擦了擦。",
+  "options": [
+   "亲手",
+   "亲口",
+   "亲耳",
+   "亲眼"
+  ],
+  "correct_answer": "亲手",
+  "explanation": "亲手 = өөрийн гараар.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l20-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "您真（ ）！",
+  "options": [
+   "了不起",
+   "健全",
+   "情愿",
+   "可怜"
+  ],
+  "correct_answer": "了不起",
+  "explanation": "了不起 = гайхалтай.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l20-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "那人（ ）地说：“谢谢您！”",
+  "options": [
+   "纪念",
+   "感激",
+   "可怜",
+   "建"
+  ],
+  "correct_answer": "感激",
+  "explanation": "感激地 = талархан.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l20-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这些钱和（ ）是您用自己的汗水换来的。",
+  "options": [
+   "尊敬",
+   "夫人",
+   "纪念",
+   "老板"
+  ],
+  "correct_answer": "尊敬",
+  "explanation": "尊敬 = хүндлэл.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l20-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "乞丐想把这条毛巾留下来作（ ）。",
+  "options": [
+   "劳动",
+   "人格",
+   "理解",
+   "纪念"
+  ],
+  "correct_answer": "纪念",
+  "explanation": "作纪念 = дурсгал болгох.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l20-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "有人不（ ）女主人为什么这样做。",
+  "options": [
+   "感激",
+   "情愿",
+   "理解",
+   "纪念"
+  ],
+  "correct_answer": "理解",
+  "explanation": "理解 = ойлгох.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l20-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）劳动吃饭，永远是人的第一人格。",
+  "options": [
+   "对",
+   "靠",
+   "给",
+   "被"
+  ],
+  "correct_answer": "靠",
+  "explanation": "靠劳动吃饭.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l20-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "您可（ ）别谢我，这是您自己努力的结果。",
+  "options": [
+   "全部",
+   "永远",
+   "千万",
+   "整整"
+  ],
+  "correct_answer": "千万",
+  "explanation": "可千万别 — сануулга.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l20-q12",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我决定给您（ ）一座新房子。",
+  "options": [
+   "擦",
+   "指",
+   "搬",
+   "建"
+  ],
+  "correct_answer": "建",
+  "explanation": "建 = барих.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l20-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр өрөөгөө жаахан цэвэрлэсэн» — аль нь зөв бэ?",
+  "options": [
+   "他把房间打扫。",
+   "他把房间打扫了打扫。",
+   "他房间把打扫了打扫。"
+  ],
+  "correct_answer": "他把房间打扫了打扫。",
+  "explanation": "把 + O + V了V.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l20-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«把»-өгүүлбэрт үйл үгийн ард юу заавал орох вэ?",
+  "options": [
+   "дахин 把",
+   "хоосон",
+   "нэмэлт хэсэг (了/一下/үр дүн/…)",
+   "байгаа тоо"
+  ],
+  "correct_answer": "нэмэлт хэсэг (了/一下/үр дүн/…)",
+  "explanation": "Үйл үг ганцаараа биш.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l20-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：你帮我把________。 B：房间不是昨天刚打扫过吗？",
+  "options": [
+   "房间一下打扫",
+   "打扫房间一下",
+   "房间打扫一下"
+  ],
+  "correct_answer": "房间打扫一下",
+  "explanation": "你帮我把房间打扫一下.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l20-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Маргаашаас эхлэн би өглөөний цай уух болно» — аль нь зөв бэ?",
+  "options": [
+   "从明天起我就吃早饭。",
+   "从明天我就起吃早饭。",
+   "明天从起我就吃早饭。"
+  ],
+  "correct_answer": "从明天起我就吃早饭。",
+  "explanation": "从……起.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l20-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«从……起»-ийн «起» орхиж болох уу?",
+  "options": [
+   "Тийм, ямар ч үед",
+   "Зөвхөн өнгөрсөнд",
+   "Үгүй, «起» заавал үлдэнэ",
+   "Зөвхөн ирээдүйд"
+  ],
+  "correct_answer": "Үгүй, «起» заавал үлдэнэ",
+  "explanation": "从……起 хос.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l20-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这个秘密只有你和我知道，你可________说出去！",
+  "options": [
+   "永远去",
+   "千万去",
+   "千万别"
+  ],
+  "correct_answer": "千万别",
+  "explanation": "千万 + 别.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l20-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我的话你可千万________记住！",
+  "options": [
+   "要",
+   "不",
+   "别"
+  ],
+  "correct_answer": "要",
+  "explanation": "千万要 (батлах).",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l20-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«千万» аль өгүүлбэрт орж болохгүй вэ?",
+  "options": [
+   "你千万不能酒后开车。",
+   "你千万别忘了。",
+   "你千万要记住。",
+   "我千万去北京。"
+  ],
+  "correct_answer": "我千万去北京。",
+  "explanation": "千万 нь тушаалт, сануулгад.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l20-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Би түүнийг бүтэн гурван цаг хүлээсэн» — аль нь зөв бэ?",
+  "options": [
+   "我整整等了他三个小时。",
+   "我整整三个等了他小时。",
+   "我等了他三个整整小时。"
+  ],
+  "correct_answer": "我整整等了他三个小时。",
+  "explanation": "整整 + тоо.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l20-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Харахад тэр өнөөдөр ядарсан» — аль нь зөв бэ?",
+  "options": [
+   "看上去，他今天有点儿累。",
+   "他今天看有点儿上去累。",
+   "看上，他今天去有点儿累。"
+  ],
+  "correct_answer": "看上去，他今天有点儿累。",
+  "explanation": "看上去.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l20-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр чинжүүгээ зарсангүй» — аль нь зөв бэ?",
+  "options": [
+   "她把辣椒没卖出去。",
+   "她没辣椒把卖出去。",
+   "她没把辣椒卖出去。"
+  ],
+  "correct_answer": "她没把辣椒卖出去。",
+  "explanation": "Сөрөг 没 нь 把-ийн өмнө.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l20-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么说第一个乞丐是个可怜的人？",
+  "options": [
+   "他没有钱",
+   "他只有一只手",
+   "他很老",
+   "他没有家"
+  ],
+  "correct_answer": "他只有一只手",
+  "explanation": "P1.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l20-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "女主人让第一个乞丐做什么？",
+  "options": [
+   "做饭",
+   "打扫房间",
+   "把砖搬到屋子后面去",
+   "洗衣服"
+  ],
+  "correct_answer": "把砖搬到屋子后面去",
+  "explanation": "P2.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l20-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "乞丐搬完砖以后，女主人给了他什么？",
+  "options": [
+   "一顿饭",
+   "一座房子",
+   "一件衣服",
+   "20元钱和一条白毛巾"
+  ],
+  "correct_answer": "20元钱和一条白毛巾",
+  "explanation": "P3.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l20-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "第二个乞丐为什么生气地走了？",
+  "options": [
+   "女主人不在家",
+   "他有工作",
+   "他是健全的人，却不愿意干累活儿",
+   "他得到的钱太少"
+  ],
+  "correct_answer": "他是健全的人，却不愿意干累活儿",
+  "explanation": "P6.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l20-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "很多年以后，那个有钱人想怎么感谢女主人？",
+  "options": [
+   "给她很多钱",
+   "送她一条毛巾",
+   "请她吃饭",
+   "给她建一座新房子"
+  ],
+  "correct_answer": "给她建一座新房子",
+  "explanation": "P11.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l20-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн таныг баярлалаа гэхэд «Баярлах хэрэггүй, энэ бол таны өөрийн хичээл зүтгэл» — аль нь зохимжтой вэ?",
+  "options": [
+   "您可别千万谢我，努力是结果。",
+   "您可千万别谢我，这是您自己努力的结果。",
+   "您千万谢我，这是您自己努力。"
+  ],
+  "correct_answer": "您可千万别谢我，这是您自己努力的结果。",
+  "explanation": "千万别 + 是……的结果.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l20-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз утсаа мартах вий гэж санаа зовсон — аль нь зохимжтой вэ?",
+  "options": [
+   "你千万要忘了带手机。",
+   "你千万别忘了带手机。",
+   "你千万忘了带手机。"
+  ],
+  "correct_answer": "你千万别忘了带手机。",
+  "explanation": "千万别.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l20-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 把 / 作业 / 老师 / 我们 / 交给 / 了",
+  "options": [
+   "我们把作业交给老师了",
+   "我们作业把交给老师了",
+   "把我们作业交给老师了"
+  ],
+  "correct_answer": "我们把作业交给老师了",
+  "explanation": "S + 把 + O + V给 + хүн + 了.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l20-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

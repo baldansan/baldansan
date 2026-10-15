@@ -1,0 +1,599 @@
+[
+ {
+  "type": "choice",
+  "question": "«黄色» ямар өнгө вэ?",
+  "options": [
+   "шар",
+   "хар",
+   "хөх",
+   "улаан"
+  ],
+  "correct_answer": "шар",
+  "explanation": "黄色 = huángsè — шар.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l22-q01",
+  "skillTags": [
+   "vocabulary",
+   "color"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«衬衫» ямар хувцас вэ?",
+  "options": [
+   "өмд",
+   "юбка",
+   "гутал",
+   "цамц"
+  ],
+  "correct_answer": "цамц",
+  "explanation": "衬衫 = chènshān — цамц.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l22-q02",
+  "skillTags": [
+   "vocabulary",
+   "clothes"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«裤子»-ийн ойлгоц аль нь вэ?",
+  "options": [
+   "辆",
+   "双",
+   "件",
+   "条"
+  ],
+  "correct_answer": "条",
+  "explanation": "裤子-д «条» хэмжих үг хэрэглэнэ: 一条裤子.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l22-q03",
+  "skillTags": [
+   "vocabulary",
+   "measure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«件» ямар хувцастай хослох вэ?",
+  "options": [
+   "自行车",
+   "鞋",
+   "衬衫, 上衣",
+   "裤子"
+  ],
+  "correct_answer": "衬衫, 上衣",
+  "explanation": "Дээд биеийн хувцас: 一件衬衫, 一件上衣.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l22-q04",
+  "skillTags": [
+   "vocabulary",
+   "measure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«鞋»-ийн хэмжих үг аль нь вэ?",
+  "options": [
+   "双",
+   "辆",
+   "条",
+   "件"
+  ],
+  "correct_answer": "双",
+  "explanation": "Хос зүйлд «双»: 一双鞋.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l22-q05",
+  "skillTags": [
+   "vocabulary",
+   "measure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«丢» үгийн утга аль нь вэ?",
+  "options": [
+   "солих",
+   "амсах",
+   "гээх, алдах",
+   "хямд"
+  ],
+  "correct_answer": "гээх, алдах",
+  "explanation": "丢 = diū — гээх, алдах.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l22-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«尝» үгийн утга аль нь вэ?",
+  "options": [
+   "солих",
+   "амсах",
+   "санах",
+   "гээх"
+  ],
+  "correct_answer": "амсах",
+  "explanation": "尝 = cháng — амсах.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l22-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«便宜»-ийн эсрэг утгатай үг аль нь вэ?",
+  "options": [
+   "好看",
+   "贵",
+   "短",
+   "旧"
+  ],
+  "correct_answer": "贵",
+  "explanation": "便宜 ↔ 贵 (хямд ↔ үнэтэй).",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l22-q08",
+  "skillTags": [
+   "vocabulary",
+   "antonym"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«瘦» ≠ «肥» (хувцасны хувьд) — «肥» ямар утгатай вэ?",
+  "options": [
+   "сул, том",
+   "богино",
+   "жижиг, чанга",
+   "хуучин"
+  ],
+  "correct_answer": "сул, том",
+  "explanation": "肥 = féi — (хувцас) сул, том.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l22-q09",
+  "skillTags": [
+   "vocabulary",
+   "antonym"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«旧» ба «新»-ийн харьцаа?",
+  "options": [
+   "ижил утга",
+   "эсрэг",
+   "хоёулаа өнгө",
+   "огт холбоогүй"
+  ],
+  "correct_answer": "эсрэг",
+  "explanation": "旧 = хуучин ↔ 新 = шинэ.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l22-q10",
+  "skillTags": [
+   "vocabulary",
+   "antonym"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«红色» ханзын пиньинь аль нь вэ?",
+  "options": [
+   "lánsè",
+   "huángsè",
+   "hóngsè",
+   "hēisè"
+  ],
+  "correct_answer": "hóngsè",
+  "explanation": "红色 = hóngsè — улаан.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l22-q11",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shìyījiān» аль ханзтай таарах вэ?",
+  "options": [
+   "正好",
+   "样子",
+   "试衣间",
+   "衬衫"
+  ],
+  "correct_answer": "试衣间",
+  "explanation": "试衣间 = shìyījiān — өмсөж үзэх өрөө.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l22-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«算了» үгийн утга аль нь вэ?",
+  "options": [
+   "болъё, больё",
+   "жаахан",
+   "ердөө",
+   "амсах"
+  ],
+  "correct_answer": "болъё, больё",
+  "explanation": "算了 = suàn le — орхих, болъё.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l22-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«…的» хэллэг: «我的自行车是红色________，不是黄的。»",
+  "options": [
+   "的",
+   "吧",
+   "吗",
+   "了"
+  ],
+  "correct_answer": "的",
+  "explanation": "红色的 = улаан нь (нэр үгийн оронд).",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l22-q14",
+  "skillTags": [
+   "grammar",
+   "de-phrase"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«吃的» ямар утгатай вэ?",
+  "options": [
+   "идэхгүй",
+   "идэх юм",
+   "идсэн",
+   "идэж байна"
+  ],
+  "correct_answer": "идэх юм",
+  "explanation": "V + 的 = нэр үг шиг («идэх юм»).",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l22-q15",
+  "skillTags": [
+   "grammar",
+   "de-phrase"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Энэ ном номын сангийнх» аль нь вэ?",
+  "options": [
+   "图书馆是这本书的。",
+   "这本书是图书馆。",
+   "这本书的图书馆。",
+   "这本书是图书馆的。"
+  ],
+  "correct_answer": "这本书是图书馆的。",
+  "explanation": "N + 的 = «……ийнх».",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l22-q16",
+  "skillTags": [
+   "grammar",
+   "de-phrase"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这件衣服________短。(жаахан богино, таагүй)",
+  "options": [
+   "一点儿",
+   "才",
+   "一些",
+   "有点儿"
+  ],
+  "correct_answer": "有点儿",
+  "explanation": "Adj-ийн өмнө, таагүй мэдэгдэл — 有点儿.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l22-q17",
+  "skillTags": [
+   "grammar",
+   "youdianr"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你能慢________说吗？",
+  "options": [
+   "有点儿",
+   "才",
+   "一点儿",
+   "算了"
+  ],
+  "correct_answer": "一点儿",
+  "explanation": "Харьцуулсан хүсэлт — Adj-ийн ард 一点儿.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l22-q18",
+  "skillTags": [
+   "grammar",
+   "yidianr"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这条裤子有点儿的短。",
+   "这条裤子有点儿短。",
+   "这条裤子点儿有短。",
+   "这条裤子短有点儿。"
+  ],
+  "correct_answer": "这条裤子有点儿短。",
+  "explanation": "有点儿 нь Adj-ийн өмнө.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l22-q19",
+  "skillTags": [
+   "grammar",
+   "youdianr"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们班一共________十个人。(ердөө)",
+  "options": [
+   "也",
+   "都",
+   "就",
+   "才"
+  ],
+  "correct_answer": "才",
+  "explanation": "才 + тоо = «ердөө».",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l22-q20",
+  "skillTags": [
+   "grammar",
+   "cai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«这双鞋才300元» гэдэг нь ямар утга илэрхийлэх вэ?",
+  "options": [
+   "үнэ үнэтэй",
+   "хүн олон",
+   "цаг орой",
+   "үнэ хямд"
+  ],
+  "correct_answer": "үнэ хямд",
+  "explanation": "才 + үнэ = хямд, цөөн.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l22-q21",
+  "skillTags": [
+   "grammar",
+   "cai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "太冷了，________，今天不去了。",
+  "options": [
+   "算了",
+   "可是",
+   "当然",
+   "正好"
+  ],
+  "correct_answer": "算了",
+  "explanation": "算了 = болъё, больё.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l22-q22",
+  "skillTags": [
+   "grammar",
+   "suanle"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«灬»偏旁 аль ханзад байна вэ?",
+  "options": [
+   "衬",
+   "裤",
+   "袋",
+   "黑"
+  ],
+  "correct_answer": "黑",
+  "explanation": "黑 = 罒 + 灬.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l22-q23",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«衤»偏旁тэй ханз аль нь вэ?",
+  "options": [
+   "衫",
+   "热",
+   "然",
+   "点"
+  ],
+  "correct_answer": "衫",
+  "explanation": "衫 = 衤 + 彡 (хувцастай холбоотой).",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l22-q24",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "妈妈给林娜带了什么？",
+  "options": [
+   "自行车",
+   "鞋和书",
+   "吃的和衣服",
+   "词典"
+  ],
+  "correct_answer": "吃的和衣服",
+  "explanation": "课文一: 很多好吃的，还带了一些衣服.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l22-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "林娜最喜欢什么？",
+  "options": [
+   "那条黑裤子",
+   "那件黄衬衫",
+   "那双鞋",
+   "那件蓝色的上衣"
+  ],
+  "correct_answer": "那件蓝色的上衣",
+  "explanation": "课文一: 那件蓝上衣是我最喜欢的.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l22-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "林娜为什么觉得那件衣服贵？",
+  "options": [
+   "太长",
+   "颜色不好看",
+   "490块，而她的鞋才300",
+   "太旧"
+  ],
+  "correct_answer": "490块，而她的鞋才300",
+  "explanation": "课文二: 她用300块的鞋对比，说当然不便宜.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l22-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "林娜的自行车是什么样子的？",
+  "options": [
+   "黑色的，小的",
+   "红色的，比较大，新的",
+   "蓝色的，新的",
+   "黄色的，旧的"
+  ],
+  "correct_answer": "红色的，比较大，新的",
+  "explanation": "课文三: 红色的，比较大的，新的.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l22-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "林娜最后为什么说“算了”？",
+  "options": [
+   "她找到了",
+   "自行车没有找到",
+   "她不想买",
+   "她生妈妈的气"
+  ],
+  "correct_answer": "自行车没有找到",
+  "explanation": "课文三: 马丁和山田指的车都不是她的，所以决定别找了.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l22-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дэлгүүрт хувцас жаахан жижиг байвал худалдагчид юу гэх вэ?",
+  "options": [
+   "算了。",
+   "我丢了。",
+   "能不能换一件肥点儿的？",
+   "这件很便宜。"
+  ],
+  "correct_answer": "能不能换一件肥点儿的？",
+  "explanation": "Арай том нэгээр солих хүсэлт.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l22-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаас «Чиний дугуй ямар вэ?» гэж асуухад хэрхэн хариулах вэ?",
+  "options": [
+   "才300块。",
+   "我会说汉语。",
+   "我有点儿生气。",
+   "是红色的，比较大的。"
+  ],
+  "correct_answer": "是红色的，比较大的。",
+  "explanation": "«……的» хэллэгээр дүр төрхийг хэлнэ.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l22-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Бэлэг авсны дараа талархал хэлэх өгүүлбэр аль нь вэ?",
+  "options": [
+   "谢谢你的礼物，我很喜欢。",
+   "麻烦你。",
+   "算了，别找了。",
+   "太贵了。"
+  ],
+  "correct_answer": "谢谢你的礼物，我很喜欢。",
+  "explanation": "日常用语: 谢谢你的礼物，我很喜欢.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l22-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

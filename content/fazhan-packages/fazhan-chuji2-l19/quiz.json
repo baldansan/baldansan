@@ -1,0 +1,568 @@
+[
+ {
+  "type": "choice",
+  "question": "«笔友» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "захидлын найз",
+   "нэг сургуулийн найз",
+   "хуучин найз",
+   "бөмбөгийн найз"
+  ],
+  "correct_answer": "захидлын найз",
+  "explanation": "笔友 = захидлын найз.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l19-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«母语» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "төрөлх хэл",
+   "гадаад хэл",
+   "хэлний хичээл",
+   "эх орон"
+  ],
+  "correct_answer": "төрөлх хэл",
+  "explanation": "母语 = төрөлх хэл.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l19-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "英语是爱丽丝的（ ），她的信写得不但优美而且流畅。",
+  "options": [
+   "母语",
+   "说法",
+   "请求",
+   "地址"
+  ],
+  "correct_answer": "母语",
+  "explanation": "母语 = төрөлх хэл.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l19-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我不知道我的（ ）怎么会出现在杂志上。",
+  "options": [
+   "母语",
+   "地址",
+   "笔友",
+   "地点"
+  ],
+  "correct_answer": "地址",
+  "explanation": "地址 = хаяг.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l19-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "能收到（ ）人的信，真是一件好事。",
+  "options": [
+   "流畅",
+   "礼貌",
+   "吃力",
+   "陌生"
+  ],
+  "correct_answer": "陌生",
+  "explanation": "陌生人 = танихгүй хүн.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l19-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她的信写得不但优美而且（ ）。",
+  "options": [
+   "礼貌",
+   "流畅",
+   "陌生",
+   "善良"
+  ],
+  "correct_answer": "流畅",
+  "explanation": "流畅 = урсгалтай.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l19-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "可是我的信却写得很（ ），当时我的英语水平还不高。",
+  "options": [
+   "吃力",
+   "陌生",
+   "优美",
+   "流畅"
+  ],
+  "correct_answer": "吃力",
+  "explanation": "写得吃力 = ядан бичих.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l19-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "问女孩子的年龄是不（ ）的。",
+  "options": [
+   "吃力",
+   "陌生",
+   "流畅",
+   "礼貌"
+  ],
+  "correct_answer": "礼貌",
+  "explanation": "不礼貌 = ёс зүйгүй.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l19-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）提出过要一张她的照片，她却说现在没有。",
+  "options": [
+   "已经",
+   "正在",
+   "曾经",
+   "仍然"
+  ],
+  "correct_answer": "曾经",
+  "explanation": "曾经…过 — өнгөрсөн туршлага.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l19-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我和爱丽丝一直（ ）着通信。",
+  "options": [
+   "接受",
+   "保存",
+   "提出",
+   "保持"
+  ],
+  "correct_answer": "保持",
+  "explanation": "保持通信 — холбоо хадгалах.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l19-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "您的每一封信她都认真地（ ）着。",
+  "options": [
+   "接受",
+   "保持",
+   "提出",
+   "保存"
+  ],
+  "correct_answer": "保存",
+  "explanation": "保存 — захиа хадгалах.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l19-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "请您（ ）她的照片。",
+  "options": [
+   "接受",
+   "提出",
+   "保持",
+   "保存"
+  ],
+  "correct_answer": "接受",
+  "explanation": "接受 — хүлээн авах.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l19-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那是一张虽然老了却（ ）非常可爱的脸。",
+  "options": [
+   "仍然",
+   "曾经",
+   "正在",
+   "已经"
+  ],
+  "correct_answer": "仍然",
+  "explanation": "仍然 — хэвээр.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l19-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Англи хэлтэй орны найзтай байнга захидалзаж байж л англи хэл ахина» — аль нь зөв бэ?",
+  "options": [
+   "只有经常跟英语国家的笔友通信，英语就能进步。",
+   "只有经常跟英语国家的笔友通信，英语也能进步。",
+   "只有经常跟英语国家的笔友通信，英语才能进步。"
+  ],
+  "correct_answer": "只有经常跟英语国家的笔友通信，英语才能进步。",
+  "explanation": "只有……才……",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l19-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "只有努力，________进步。",
+  "options": [
+   "都能",
+   "就能",
+   "也能",
+   "才能"
+  ],
+  "correct_answer": "才能",
+  "explanation": "只有 + 才.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l19-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Зөвхөн Үндэсний номын санд л тэр номыг авч болно» — аль нь зөв бэ?",
+  "options": [
+   "只在国家图书馆就能借到那本书。",
+   "只有在国家图书馆才能借到那本书。",
+   "只有在国家图书馆能借到那本书。"
+  ],
+  "correct_answer": "只有在国家图书馆才能借到那本书。",
+  "explanation": "只有……才……",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l19-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Охины насыг асуух нь ёс зүйгүй» — аль нь зөв бэ?",
+  "options": [
+   "问女孩子的年龄的不礼貌。",
+   "问女孩子的年龄是不礼貌的。",
+   "问女孩子的年龄不礼貌的是。"
+  ],
+  "correct_answer": "问女孩子的年龄是不礼貌的。",
+  "explanation": "是……的",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l19-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：他一个人去旅行，我不放心。 B：去那儿旅游________，你不用担心。",
+  "options": [
+   "是很安全的",
+   "是很安全",
+   "很安全了"
+  ],
+  "correct_answer": "是很安全的",
+  "explanation": "是……的.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l19-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«是……的» (评价) бүтэцд аль нь заавал үлдэх вэ?",
+  "options": [
+   "着",
+   "的",
+   "了",
+   "过"
+  ],
+  "correct_answer": "的",
+  "explanation": "是……的 — «的» заавал.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l19-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：路上情况怎么样？没迟到吧？ B：今天路上堵得厉害，________。",
+  "options": [
+   "因为我出来得早",
+   "好在我出来得早",
+   "所以我出来得早"
+  ],
+  "correct_answer": "好在我出来得早",
+  "explanation": "好在 — таагүй нөхцөлд ашигтай хүчин зүйл.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l19-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«好在»-д ихэвчлэн ямар үгстэй хамт таагүй үр дүнг сануулдаг вэ?",
+  "options": [
+   "而且 / 并且",
+   "虽然 / 但是",
+   "要不 / 不然",
+   "因为 / 所以"
+  ],
+  "correct_answer": "要不 / 不然",
+  "explanation": "好在……，要不……",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l19-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "我们买张地图吧，________在旅行的时候用。",
+  "options": [
+   "好",
+   "为了",
+   "因为"
+  ],
+  "correct_answer": "好",
+  "explanation": "好 — зорилго (хойд өгүүлбэр).",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l19-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«V啊V» бүтэц аль нь вэ?",
+  "options": [
+   "我等啊等，一直没收到她的照片。",
+   "我啊等啊等，一直没收到。",
+   "我等等啊，一直没收到。"
+  ],
+  "correct_answer": "我等啊等，一直没收到她的照片。",
+  "explanation": "V啊V.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l19-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他洗________洗，怎么也洗不干净。",
+  "options": [
+   "着",
+   "了",
+   "过",
+   "啊"
+  ],
+  "correct_answer": "啊",
+  "explanation": "洗啊洗.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l19-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”为什么决定找一个笔友？",
+  "options": [
+   "因为想去美国",
+   "因为喜欢爱丽丝",
+   "因为朋友让我找",
+   "同学几乎人人都有，想提高英语水平"
+  ],
+  "correct_answer": "同学几乎人人都有，想提高英语水平",
+  "explanation": "P1.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l19-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”为什么买了粉色信纸和信封？",
+  "options": [
+   "自己喜欢粉色",
+   "爱丽丝要求的",
+   "信纸很便宜",
+   "朋友说女孩子都喜欢粉色"
+  ],
+  "correct_answer": "朋友说女孩子都喜欢粉色",
+  "explanation": "P2.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l19-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”为什么一直不知道爱丽丝的年龄？",
+  "options": [
+   "年龄不重要",
+   "信丢了",
+   "爱丽丝不愿意回信",
+   "问女孩子的年龄是不礼貌的"
+  ],
+  "correct_answer": "问女孩子的年龄是不礼貌的",
+  "explanation": "P7.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l19-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "寄包裹的人是谁？",
+  "options": [
+   "爱丽丝的好朋友",
+   "“我”的朋友",
+   "爱丽丝本人",
+   "爱丽丝的女儿"
+  ],
+  "correct_answer": "爱丽丝的好朋友",
+  "explanation": "P9-P10.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l19-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "爱丽丝为什么让朋友在她死后才寄照片？",
+  "options": [
+   "不想见“我”",
+   "忘记了",
+   "担心“我”看了会失望",
+   "没有照片"
+  ],
+  "correct_answer": "担心“我”看了会失望",
+  "explanation": "P7, P10.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l19-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн таныг баярлалаа гэхэд «Баярлах хэрэггүй, энэ бол миний хийх ёстой зүйл» — аль нь зохимжтой вэ?",
+  "options": [
+   "不用谢，是我应该的做。",
+   "不用谢，这是我应该做的。",
+   "不用谢，这是我应该做。"
+  ],
+  "correct_answer": "不用谢，这是我应该做的。",
+  "explanation": "是……的 — үүрэг, үнэлгээ.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l19-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Бороо орсон ч шүхэртэй байсан — аль нь зохимжтой вэ?",
+  "options": [
+   "下雨了，所以我带了伞。",
+   "下雨了，可是我带了伞。",
+   "下雨了，好在我带了伞。"
+  ],
+  "correct_answer": "下雨了，好在我带了伞。",
+  "explanation": "好在.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l19-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 只有 / 努力 / 才能 / 进步",
+  "options": [
+   "才能只有努力，进步",
+   "只有努力，才能进步",
+   "努力只有，进步才能"
+  ],
+  "correct_answer": "只有努力，才能进步",
+  "explanation": "只有 А, 才 В дараалал.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l19-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

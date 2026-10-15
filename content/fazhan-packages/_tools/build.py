@@ -55,13 +55,29 @@ def segment(zh):
             if zh[i:i+L] in _dict: out.append(zh[i:i+L]); i += L; break
         else: out.append(zh[i]); i += 1
     return out
+_T4 = set("àèìòùǜ"); _NUMCH = set("一二三四五六七八九十零百千万两")
+def _first_tone4(py):
+    for ch in py:
+        if ch in _T4: return True
+        if ch in "āáǎēéěīíǐōóǒūúǔǖǘǚ": return False
+    return False
 def py_token(zh):
     if zh in PROPER_PY: return PROPER_PY[zh]
     if all(c in PUNCT or not re.match(r"[一-鿿]", c) for c in zh): return ""
-    return "".join(x[0] for x in pinyin(zh, style=Style.TONE))
+    sy = [x[0] for x in pinyin(zh, style=Style.TONE)]
+    # 不 + 4-р аялгуу (токен дотор) → bú
+    for i in range(len(sy) - 1):
+        if sy[i] == "bù" and _first_tone4(sy[i+1]): sy[i] = "bú"
+    return "".join(sy)
 def py_sent(zh, tokens=None):
     toks = tokens or segment(zh)
-    return _fix(" ".join(py_token(t) or t for t in toks))
+    pys = [py_token(t) or t for t in toks]
+    # токен хоорондын сандхи: 不 → bú (дараа нь 4-р аялгуу); 一 → yí/yì (тоо биш үгийн өмнө)
+    for i in range(len(toks) - 1):
+        if toks[i] == "不" and _first_tone4(pys[i+1]): pys[i] = "bú"
+        elif toks[i] == "一" and not (toks[i+1][:1] in _NUMCH):
+            pys[i] = "yí" if _first_tone4(pys[i+1]) else ("yì" if pys[i+1][:1].isalpha() else pys[i])
+    return _fix(" ".join(pys))
 def cap(s): return s[:1].upper() + s[1:]
 def shuffle(options, correct_idx, seed):
     idx = list(range(len(options))); random.Random(hashlib.md5(seed.encode()).hexdigest()).shuffle(idx)
@@ -115,7 +131,7 @@ for pno, sents in TEXT:
 WRITING = X.WRITING
 main_text = {"id": 1, "title": TITLE_ZH, "mongolianTitle": TITLE_MN, "title_mn": f"课文 · {TITLE_ZH} ({TITLE_MN})",
     "audioFile": AUDIO_TEXT, "charCount": sum(len(re.findall(r"[一-鿿]", s["zh"])) for s in sentences),
-    "source": f"发展汉语（第二版）中级综合 I — 第{N}课 课文 " + SOURCE_NOTE, "author_zh": META.get("author_zh", ""), "intro_zh": META.get("intro_zh", ""),
+    "source": f"{SERIES_ZH} — 第{N}课 课文 " + SOURCE_NOTE, "author_zh": META.get("author_zh", ""), "intro_zh": META.get("intro_zh", ""),
     "intro_mn": META.get("intro_mn", ""),
     "sentences": sentences, "paragraph_summaries": para_summ,
     "reflection": {"questions_mn": META["reflection_mn"]},
@@ -170,7 +186,9 @@ for p in WB_READING:
     if p.get("bank") and p["answer_type"] == "word": part["bank"] = p["bank"]
     parts.append(part)
 n_shi = sum(len(items) for g, items in SHIYISHI)
-parts.insert(0, {"part": 0, "type": "sentence", "instruction_zh": "综合注释 试一试", "instruction_mn": f"Дүрмийн дасгал · 综合注释 试一试 — дүрэм бүрийн номын дасгал БҮГД ({n_shi}), хариулт 参考答案; grammar.json-д эдгээрээс заримыг интерактив болгосон.",
+# 初级 books have no 试一试 — don't emit an empty part 0 then.
+if n_shi:
+  parts.insert(0, {"part": 0, "type": "sentence", "instruction_zh": "综合注释 试一试", "instruction_mn": f"Дүрмийн дасгал · 综合注释 试一试 — дүрэм бүрийн номын дасгал БҮГД ({n_shi}), хариулт 参考答案; grammar.json-д эдгээрээс заримыг интерактив болгосон.",
     "items": [{"n": f"{g[0]}-{n}", "question_zh": q, "answer": a, "explanation_mn": e, "grammar": g} for g, items in SHIYISHI for n, q, a, e in items]})
 workbook = {"reading": {"parts": parts},
     "writing": {"items": [{"n": 1, "prompt_mn": WRITING["title_mn"], "question_zh": WRITING["prompt_zh"], "answer": WRITING["zh"],

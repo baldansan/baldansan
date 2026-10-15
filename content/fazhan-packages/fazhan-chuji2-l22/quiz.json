@@ -1,0 +1,579 @@
+[
+ {
+  "type": "cloze",
+  "question": "如果需要现金，只要把卡（ ）进银行的自动取款机里，钱就出来了。",
+  "options": [
+   "插",
+   "欠",
+   "代替",
+   "订"
+  ],
+  "correct_answer": "插",
+  "explanation": "插 = хийх, тусгах (оруулж тавих).",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l22-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«钥匙» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "карт",
+   "нууц код",
+   "түлхүүр",
+   "нэрийн хуудас"
+  ],
+  "correct_answer": "түлхүүр",
+  "explanation": "钥匙 = түлхүүр.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l22-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "旅行的时候，要是带着现金，那多（ ）啊！",
+  "options": [
+   "危险",
+   "方便",
+   "安全",
+   "可爱"
+  ],
+  "correct_answer": "危险",
+  "explanation": "危险 = аюултай; 安全 = аюулгүй.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l22-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«卡只有（ ）那么大，又轻又小。» — хоосон зайд аль нь орох вэ?",
+  "options": [
+   "钥匙",
+   "名片",
+   "密码",
+   "机器"
+  ],
+  "correct_answer": "名片",
+  "explanation": "名片 = нэрийн хуудас.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l22-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "只要有卡，就什么事都能（ ）了。",
+  "options": [
+   "解决",
+   "欠",
+   "成为",
+   "享受"
+  ],
+  "correct_answer": "解决",
+  "explanation": "解决 = шийдэх.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l22-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "卡永远也不可能完全（ ）现金。",
+  "options": [
+   "订",
+   "插",
+   "代替",
+   "享受"
+  ],
+  "correct_answer": "代替",
+  "explanation": "代替 = орлох.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l22-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "要是机器出了（ ），卡就不如现金方便了。",
+  "options": [
+   "时代",
+   "计划",
+   "密码",
+   "毛病"
+  ],
+  "correct_answer": "毛病",
+  "explanation": "出毛病 = гэмтэх.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l22-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "还可能（ ）银行的债，成为“卡奴”呢。",
+  "options": [
+   "订",
+   "享受",
+   "插",
+   "欠"
+  ],
+  "correct_answer": "欠",
+  "explanation": "欠债 = өр тавих, өртэй байх.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l22-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«可怕» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "аймшигтай",
+   "харамсалтай",
+   "хөөрхөн",
+   "инээдтэй"
+  ],
+  "correct_answer": "аймшигтай",
+  "explanation": "可怕 = 让人害怕.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l22-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "用卡买东西一定得有（ ），需要的买，不需要的就不买。",
+  "options": [
+   "机器",
+   "时代",
+   "计划",
+   "现金"
+  ],
+  "correct_answer": "计划",
+  "explanation": "计划 = төлөвлөгөө.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l22-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你可千万别忘了（ ）！",
+  "options": [
+   "密码",
+   "旅馆",
+   "名片",
+   "钥匙"
+  ],
+  "correct_answer": "密码",
+  "explanation": "密码 = нууц код.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l22-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xiǎngshòu» аль үгэнд таарах вэ?",
+  "options": [
+   "享受",
+   "解决",
+   "成为",
+   "代替"
+  ],
+  "correct_answer": "享受",
+  "explanation": "享受 = xiǎngshòu.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l22-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«卡奴» гэж хэнийг хэлдэг вэ?",
+  "options": [
+   "картын банкны ажилтан",
+   "карт алдсан хүн",
+   "картаар төлөх дуртай хүн",
+   "зээлийн картын өрөө дараалан 3 сар төлөөгүй хүн"
+  ],
+  "correct_answer": "зээлийн картын өрөө дараалан 3 сар төлөөгүй хүн",
+  "explanation": "Номын зүүлт: 连续三个月不能还钱给银行的人.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l22-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи санаа зовох хэрэггүй» гэхэд аль нь зөв бэ?",
+  "options": [
+   "你不必担心。",
+   "你没必担心。",
+   "不必你担心。",
+   "你担心不必。"
+  ],
+  "correct_answer": "你不必担心。",
+  "explanation": "不必 — өгүүлэгдэхүүний ард, үйл үгийн өмнө.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l22-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Бусдаас асуух хэрэггүй» аль нь зөв бэ?",
+  "options": [
+   "不必人问别。",
+   "问别人不必。",
+   "不必问别人。",
+   "别不问人。"
+  ],
+  "correct_answer": "不必问别人。",
+  "explanation": "不必 + V.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l22-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Цаг байвал интернетэд ордог. — аль нь зөв бэ?",
+  "options": [
+   "只有有时间，我就上网。",
+   "只要有时间，我才上网。",
+   "既然有时间，我也上网。",
+   "只要有时间，我就上网。"
+  ],
+  "correct_answer": "只要有时间，我就上网。",
+  "explanation": "只要……就……",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l22-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：这个工作难做吗？ B：不难，________，肯定能做好。",
+  "options": [
+   "只要认真做",
+   "既然认真做",
+   "因为认真做",
+   "即使认真做"
+  ],
+  "correct_answer": "只要认真做",
+  "explanation": "只要 = «…-сан л бол».",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l22-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«只要……就……» бүтцийн «就»-ийн дараа юу ордог вэ?",
+  "options": [
+   "шалтгаан",
+   "үр дүн",
+   "сонголт",
+   "нөхцөл"
+  ],
+  "correct_answer": "үр дүн",
+  "explanation": "就 + үр дүн.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l22-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Чамд таалагдвал өгье: ________，就给你。",
+  "options": [
+   "既然你还没喜欢",
+   "不必你喜欢",
+   "即使你不喜欢",
+   "只要你喜欢"
+  ],
+  "correct_answer": "只要你喜欢",
+  "explanation": "只要 + нөхцөл.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l22-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：我很想去中国留学。 B：________，就去吧。",
+  "options": [
+   "即使想去留学",
+   "不必想去留学",
+   "只要想去留学也",
+   "既然想去留学"
+  ],
+  "correct_answer": "既然想去留学",
+  "explanation": "既然 + баримт, 就 + шийдвэр.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l22-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：你拍的这张照片，我太喜欢了！ B：________，那就给你吧。",
+  "options": [
+   "只有你喜欢",
+   "不必你喜欢",
+   "既然你喜欢",
+   "即使你喜欢"
+  ],
+  "correct_answer": "既然你喜欢",
+  "explanation": "既然……那就……",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l22-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Бүгд зөвшөөрсөн болохоор бид ажлаа эхэлцгээе» — аль нь зөв бэ?",
+  "options": [
+   "如果大家都同意了，才开始干吧。",
+   "既然大家都同意了，也开始干吧。",
+   "既然大家都同意了，我们就开始干吧。",
+   "即使大家都同意了，就开始干吧。"
+  ],
+  "correct_answer": "既然大家都同意了，我们就开始干吧。",
+  "explanation": "既然……就……",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l22-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Нэг мөнгөгүй ч гэсэн санаа зовох хэрэггүй» — аль нь зөв бэ?",
+  "options": [
+   "只要你一分钱都没有，也不必担心。",
+   "既然你一分钱都没有，才不必担心。",
+   "即使你一分钱都没有，也不必担心。",
+   "即使你一分钱都没有，就不必担心。"
+  ],
+  "correct_answer": "即使你一分钱都没有，也不必担心。",
+  "explanation": "即使……也……",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l22-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Машин гэмтвэл карт бэлэн мөнгөнөөс бага тохиромжтой болно» — аль нь зөв бэ?",
+  "options": [
+   "机器出了毛病，卡不如方便现金了。",
+   "机器出了毛病，卡就不如现金方便了。",
+   "机器出了毛病，现金不如卡方便了。",
+   "机器出了毛病，卡就比不如现金方便了。"
+  ],
+  "correct_answer": "机器出了毛病，卡就不如现金方便了。",
+  "explanation": "A 不如 B + Adj.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l22-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "现在人们的钱包里有什么变化？",
+  "options": [
+   "钱包越来越大",
+   "现金越来越少，卡越来越多",
+   "现金越来越多，卡越来越少",
+   "现金和卡都越来越少"
+  ],
+  "correct_answer": "现金越来越少，卡越来越多",
+  "explanation": "P1: 现金越来越少，各种各样的卡却越来越多了.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l22-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "旅行时，带着卡为什么比带着现金安全？",
+  "options": [
+   "现金比卡贵",
+   "丢了马上给银行打电话，钱就不会被取走",
+   "卡不用密码",
+   "卡很大，不容易丢"
+  ],
+  "correct_answer": "丢了马上给银行打电话，钱就不会被取走",
+  "explanation": "P3: 丢了也没关系，马上给银行打个电话...",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l22-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么说卡不能完全代替现金？",
+  "options": [
+   "卡不能买东西",
+   "银行不让用卡",
+   "卡很重",
+   "用卡必须用机器，机器出了毛病就不方便"
+  ],
+  "correct_answer": "用卡必须用机器，机器出了毛病就不方便",
+  "explanation": "P4.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l22-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "什么样的人可能成为“卡奴”？",
+  "options": [
+   "只用现金的人",
+   "用卡不清楚钱，多花钱，欠银行的债",
+   "不喜欢用卡的人",
+   "没有钱包的人"
+  ],
+  "correct_answer": "用卡不清楚钱，多花钱，欠银行的债",
+  "explanation": "P5.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l22-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "课文最后建议我们怎么办？",
+  "options": [
+   "只用现金",
+   "给自己订个计划，好好儿地享受卡的方便",
+   "忘记密码",
+   "不再用卡"
+  ],
+  "correct_answer": "给自己订个计划，好好儿地享受卡的方便",
+  "explanation": "P6: 那我们就给自己订个计划，然后好好儿地享受它带给我们的方便吧.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l22-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз нь «Бид хүнээс асууя» гэв. Чи «интернетээр хайвал мэдэгдэнэ, хүнээс асуух хэрэггүй» гэж хэлэх бол аль нь зохимжтой вэ?",
+  "options": [
+   "上网一查就知道了，只有问别人。",
+   "上网一查就知道了，既然问别人。",
+   "上网一查就知道了，不必问别人。",
+   "上网一查就知道了，必须问别人。"
+  ],
+  "correct_answer": "上网一查就知道了，不必问别人。",
+  "explanation": "不必 + V.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l22-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Сануулж хэлэх: «Нууц кодоо хэзээ ч бүү март!»",
+  "options": [
+   "你可必须忘了密码！",
+   "你可千万不必忘了密码！",
+   "你千万忘了密码可！",
+   "你可千万别忘了密码！"
+  ],
+  "correct_answer": "你可千万别忘了密码！",
+  "explanation": "千万 + 别 + V.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l22-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 只要 / 你喜欢 / 就 / 给你",
+  "options": [
+   "给你只要，就你喜欢",
+   "只要你喜欢，就给你",
+   "就你喜欢，只要给你",
+   "你喜欢给你只要就"
+  ],
+  "correct_answer": "只要你喜欢，就给你",
+  "explanation": "只要 + нөхцөл，就 + үр дүн.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l22-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "easy"
+ }
+]

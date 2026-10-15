@@ -1,0 +1,441 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 1. 听读辨音 — хоёр гийгүүлэгчийн хосыг чанга уншиж ялга (zh—ch, z—c, z—zh, c—ch, s—sh, l—r)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "zh — ch：zhe—che、zhui—chui、zhuo—chuo、zhun—chun、zhong—chong",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "zh хийгүй, ch хийтэй (хоёулаа хэл мушгисан)."
+     },
+     {
+      "n": 2,
+      "question_zh": "z — c：zu—cu、zai—cai、zui—cui、zun—cun、zuan—cuan",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "z хийгүй, c хийтэй (хоёулаа хэл хавтгай)."
+     },
+     {
+      "n": 3,
+      "question_zh": "z — zh：ze—zhe、zu—zhu、zai—zhai、zao—zhao、zeng—zheng",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "z хавтгай, zh мушгисан."
+     },
+     {
+      "n": 4,
+      "question_zh": "c — ch：ca—cha、cui—chui、cai—chai、cao—chao、cun—chun",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "c хавтгай, ch мушгисан (хоёулаа хийтэй)."
+     },
+     {
+      "n": 5,
+      "question_zh": "s — sh：si—shi、se—she、sai—shai、san—shan、sen—shen",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "s хавтгай, sh мушгисан."
+     },
+     {
+      "n": 6,
+      "question_zh": "l — r：le—re、li—ri、lu—ru、lao—rao、long—rong",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "l хажуугийн, r мушгисан дуугарсан."
+     }
+    ],
+    "instruction_zh": "1. 听读辨音"
+   },
+   {
+    "part": 2,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 2. 唱读四声 — нэг үеийг дөрвөн аялгуугаар дуулж унш (zh ch sh z c s r-тэй)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "zhā zhá zhǎ zhà · zhē zhé zhě zhè · zhāi zhái zhǎi zhài · zhī zhí zhǐ zhì",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дөрвөн аялгууг дараалан унш."
+     },
+     {
+      "n": 2,
+      "question_zh": "chū chú chǔ chù · chōu chóu chǒu chòu · chuān chuán chuǎn chuàn · chī chí chǐ chì",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дөрвөн аялгууг дараалан унш."
+     },
+     {
+      "n": 3,
+      "question_zh": "shū shú shǔ shù · shāo sháo shǎo shào · shēn shén shěn shèn · shī shí shǐ shì",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дөрвөн аялгууг дараалан унш."
+     },
+     {
+      "n": 4,
+      "question_zh": "zāo záo zǎo zào · zuō zuó zuǒ zuò · zān zán zǎn zàn · zī zǐ zì",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Номд зарим аялгуу алга (zí) — байгаа хэлбэрээр унш."
+     },
+     {
+      "n": 5,
+      "question_zh": "cāi cái cǎi cài · cān cán cǎn càn · cuī cuǐ cuì · cī cí cǐ cì",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дөрвөн аялгууг дараалан унш."
+     },
+     {
+      "n": 6,
+      "question_zh": "sā sǎ sà · sū sú sù · suī suí suǐ suì · sī sǐ sì",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Номд зарим аялгуу алга — байгаа хэлбэрээр унш."
+     },
+     {
+      "n": 7,
+      "question_zh": "rū rú rǔ rù · rēn rén rěn rèn · ráo rǎo rào · ráng rǎng ràng",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дөрвөн аялгууг дараалан унш."
+     }
+    ],
+    "instruction_zh": "2. 唱读四声"
+   },
+   {
+    "part": 3,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 3. 听读辨调 — ижил үеийн өөр аялгууг чанга уншиж ялга",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "wǒ — wò · zǒu — zòu · shí — shì · rén — rèn",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Аялгуугаар ялгана."
+     },
+     {
+      "n": 2,
+      "question_zh": "rù — rú · guò — guó · cuī — cuì · sī — sì",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Аялгуугаар ялгана."
+     },
+     {
+      "n": 3,
+      "question_zh": "méi — měi · hàn — hán · sān — sǎn · léi — lèi",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Аялгуугаар ялгана."
+     },
+     {
+      "n": 4,
+      "question_zh": "chī — chǐ · zhī — zhí · shàng — shāng · tā — tà",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Аялгуугаар ялгана."
+     }
+    ],
+    "instruction_zh": "3. 听读辨调"
+   },
+   {
+    "part": 4,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 4. 听后标上声调 — сонсоод пиньинь дээр аялгууны тэмдэг тавь (АУДИОгүй тул хариулт 参考答案-д ТЕКСТГҮЙ — нээлттэй)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "cha　zhao　zi　chui　shang",
+      "answer": "(нээлттэй — аудио/хариулт байхгүй)",
+      "explanation_mn": "Аудиогоос хамаарах даалгавар; 参考答案-д текст алга."
+     },
+     {
+      "n": 2,
+      "question_zh": "cou　sun　chang　sheng　re",
+      "answer": "(нээлттэй — аудио/хариулт байхгүй)",
+      "explanation_mn": "Аудиогоос хамаарах даалгавар; 参考答案-д текст алга."
+     },
+     {
+      "n": 3,
+      "question_zh": "shi　cai　chen　zhuan　sui",
+      "answer": "(нээлттэй — аудио/хариулт байхгүй)",
+      "explanation_mn": "Аудиогоос хамаарах даалгавар; 参考答案-д текст алга."
+     },
+     {
+      "n": 4,
+      "question_zh": "zu　zao　reng　cun　shou",
+      "answer": "(нээлттэй — аудио/хариулт байхгүй)",
+      "explanation_mn": "Аудиогоос хамаарах даалгавар; 参考答案-д текст алга."
+     }
+    ],
+    "instruction_zh": "4. 听后标上声调"
+   },
+   {
+    "part": 5,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 一 — хосоороо: нэг нь гийгүүлэгч + эгшиг хэлнэ, нөгөө нь нийлүүлж уншина (zh + ong → zhong)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "声母：zh ch sh r z c s",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Хос хосоор дадлага."
+     },
+     {
+      "n": 2,
+      "question_zh": "韵母：ua uo uai uei(ui) uan uen(un) uang ueng · a e i u ai ei ao ou an en ang eng ong",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Гийгүүлэгч ба эгшгийг нийлүүлж үе үүсгэнэ."
+     }
+    ],
+    "instruction_zh": "课堂活动 一：声母和韵母拼读练习"
+   },
+   {
+    "part": 6,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 二 «互相提问» — хосоороо харьяа улсаа асууж хариул",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "A：你是哪国人？ B：我是＿＿人。",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Өөрийн харьяаг хэл (жишээ: 我是蒙古人)."
+     },
+     {
+      "n": 2,
+      "question_zh": "A：他是哪国人？ B：他是＿＿人。",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Найзынхаа харьяаг хэл."
+     }
+    ],
+    "instruction_zh": "课堂活动 二：互相提问"
+   },
+   {
+    "part": 7,
+    "type": "word",
+    "instruction_mn": "Тохируулах дасгал · 综合练习 一 «给下列汉字找到对应的拼音» — ханз бүрт тохирох пиньиныг ол (连线)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "美",
+      "answer": "měi",
+      "explanation_mn": "美 = měi (сайхан; 美国 Америк)."
+     },
+     {
+      "n": 2,
+      "question_zh": "您",
+      "answer": "nín",
+      "explanation_mn": "您 = nín (та, хүндэтгэлтэй)."
+     },
+     {
+      "n": 3,
+      "question_zh": "国",
+      "answer": "guó",
+      "explanation_mn": "国 = guó (улс)."
+     },
+     {
+      "n": 4,
+      "question_zh": "韩",
+      "answer": "hán",
+      "explanation_mn": "韩 = hán (韩国 Солонгос)."
+     },
+     {
+      "n": 5,
+      "question_zh": "哪",
+      "answer": "nǎ",
+      "explanation_mn": "哪 = nǎ (аль)."
+     },
+     {
+      "n": 6,
+      "question_zh": "日",
+      "answer": "rì",
+      "explanation_mn": "日 = rì (нар; 日本 Япон)."
+     },
+     {
+      "n": 7,
+      "question_zh": "你",
+      "answer": "nǐ",
+      "explanation_mn": "你 = nǐ (чи)."
+     },
+     {
+      "n": 8,
+      "question_zh": "他",
+      "answer": "tā",
+      "explanation_mn": "他 = tā (тэр)."
+     },
+     {
+      "n": 9,
+      "question_zh": "本",
+      "answer": "běn",
+      "explanation_mn": "本 = běn (日本-ын хоёр дахь ханз)."
+     }
+    ],
+    "instruction_zh": "综合练习 一：给下列汉字找到对应的拼音"
+   },
+   {
+    "part": 8,
+    "type": "sentence",
+    "instruction_mn": "Унших ойлголтын дасгал · 综合练习 二 «看图回答问题» — зураг (Парис, Лондон, Тажмахал…) дээрх улсаар «他是哪国人？»-д хариул",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "他是哪国人？ （图1：法国 Fǎguó — Эйфелийн цамхаг）",
+      "answer": "他是法国人。",
+      "explanation_mn": "Зураг 1 — 法国."
+     },
+     {
+      "n": 2,
+      "question_zh": "他是哪国人？ （图2：英国 Yīngguó — Биг Бен）",
+      "answer": "他是英国人。",
+      "explanation_mn": "Зураг 2 — 英国."
+     },
+     {
+      "n": 3,
+      "question_zh": "他是哪国人？ （图3：印度 Yìndù — Тажмахал）",
+      "answer": "他是印度人。",
+      "explanation_mn": "Зураг 3 — 印度."
+     },
+     {
+      "n": 4,
+      "question_zh": "他是哪国人？ （图4：泰国 Tàiguó — Тайн ступа）",
+      "answer": "他是泰国人。",
+      "explanation_mn": "Зураг 4 — 泰国."
+     },
+     {
+      "n": 5,
+      "question_zh": "他是哪国人？ （图5：日本 Rìběn — Фүжи уул）",
+      "answer": "他是日本人。",
+      "explanation_mn": "Зураг 5 — 日本."
+     },
+     {
+      "n": 6,
+      "question_zh": "他是哪国人？ （图6：德国 Déguó — Бранденбургийн хаалга）",
+      "answer": "他是德国人。",
+      "explanation_mn": "Зураг 6 — 德国."
+     }
+    ],
+    "instruction_zh": "综合练习 二：看图回答问题"
+   },
+   {
+    "part": 9,
+    "type": "sentence",
+    "instruction_mn": "Харилцан яриа гүйцээх дасгал · 综合练习 三 «完成对话» — хоосон зайг (哪 / 呢 заалттай) нөх",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. A：你是________？(哪)  B：我是日本人。",
+      "answer": "哪国人",
+      "explanation_mn": "«哪» заалттай: 你是哪国人？"
+     },
+     {
+      "n": 2,
+      "question_zh": "1. A：________？(呢)  B：他是韩国人。（өмнө нь «我是日本人。»-д хариулсан）",
+      "answer": "他呢",
+      "explanation_mn": "Өөр хүний тухай асуух — «他呢？»."
+     },
+     {
+      "n": 3,
+      "question_zh": "2. A：我是美国人，________？(呢)  B：我是法国人。",
+      "answer": "你呢",
+      "explanation_mn": "Эргүүлж асуух — «你呢？»."
+     },
+     {
+      "n": 4,
+      "question_zh": "3. A：________！  B：早上好！",
+      "answer": "早上好",
+      "explanation_mn": "Өглөөний мэндчилгээ — «早上好»."
+     }
+    ],
+    "instruction_zh": "综合练习 三：完成对话"
+   },
+   {
+    "part": 10,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 综合练习 四 «根据实际情况进行问答练习» — бодит байдалд тулгуурлан асуулт хариулт хий",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. 你的同学是哪国人？",
+      "answer": "(нээлттэй — өөрийн ангийн найзаар хариулна)",
+      "explanation_mn": "Загвар: 他/她是…人。"
+     },
+     {
+      "n": 2,
+      "question_zh": "2. 你朋友是哪国人？",
+      "answer": "(нээлттэй — өөрийн найзаар хариулна)",
+      "explanation_mn": "Загвар: 他/她是…人。"
+     }
+    ],
+    "instruction_zh": "综合练习 四：根据实际情况进行问答练习"
+   },
+   {
+    "part": 11,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 写汉字 — 六, 口, 日, 五, 山, 么, 三, 人-г дэвтэр дээр зөв бичих дарааллаар бич",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "六 — 点 + …",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дээд 点, дараа нь бусад зураас."
+     },
+     {
+      "n": 2,
+      "question_zh": "口 — 横折",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Зүүн босоо, 横折, доод хэвтээ."
+     },
+     {
+      "n": 3,
+      "question_zh": "日 — 横折",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Хүрээ бичээд дунд зураас."
+     },
+     {
+      "n": 4,
+      "question_zh": "五 — 横折",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дээд 横, босоо, 横折, доод 横."
+     },
+     {
+      "n": 5,
+      "question_zh": "山 — 竖折",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дунд, зүүн 竖折, баруун."
+     },
+     {
+      "n": 6,
+      "question_zh": "么 — 撇折",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "撇折 + 点."
+     },
+     {
+      "n": 7,
+      "question_zh": "三 — 先上后下",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дээрээс доош гурван 横."
+     },
+     {
+      "n": 8,
+      "question_zh": "人 — 先左后右",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Эхлээд 丿, дараа ㇏."
+     }
+    ],
+    "instruction_zh": "写汉字：六 口 日 五 山 么 三 人"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичгийн дасгал · 写汉字 — 六 口 日 五 山 么 三 人 + өөрийгөө танилцуулах жижиг яриа (Ханз бичих ба харьяа)",
+    "question_zh": "先写汉字：六、口、日、五、山、么、三、人（注意笔顺），然后用“你是哪国人？”“你呢？”写一段两个人的小对话。",
+    "answer": "崔浩：早上好！ 马丁：早上好！ 崔浩：你是哪国人？ 马丁：我是美国人。你呢？ 崔浩：我是韩国人。",
+    "explanation_mn": "Загвар эссе (zh/mn) texts.json → mainText.writingSample-д. Нээлттэй даалгавар — автомат шалгахгүй."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ярианы дасгал · 互相提问 — Хосоороо харьяа улсаа асууж хариул",
+    "question_zh": "A：你是哪国人？ B：我是＿＿人。 A：他是哪国人？ B：他是＿＿人。",
+    "answer": "我是蒙古人。 他是日本人。",
+    "explanation_mn": "Номд жишээ хариулт өгөөгүй (нээлттэй). Загвар: өөрийнхөө улсыг «我是…人», бусдынхыг «他是…人» гэж хэлнэ. «Монгол» = 蒙古."
+   }
+  ]
+ },
+ "answerSource": "发展汉语 初级综合 I 参考答案 (答案本 х.1-2, \"第二课\") — 综合练习 一 (连线, 9 ханз), 二 (看图, 6 зураг), 三 (完成对话, 4 хоосон) 100% тулгасан. 语音练习 1-3, 课堂活动, 综合练习 四, 写汉字 — нээлттэй даалгавар; 语音练习 4 «听后标上声调» — аудиогоос хамаарах тул хариулт 参考答案-д ТЕКСТГҮЙ."
+}

@@ -1,0 +1,571 @@
+[
+ {
+  "type": "choice",
+  "question": "«入乡随俗» гэдэг хэлцийн утга аль нь вэ?",
+  "options": [
+   "гэр орноо санах",
+   "хурдан хоол идэх",
+   "өглөө эрт босох",
+   "шинэ газар очвол тэндхийн заншилд зохицох"
+  ],
+  "correct_answer": "шинэ газар очвол тэндхийн заншилд зохицох",
+  "explanation": "入乡随俗 = Орсон нутгийн ёсыг дага.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "来中国半年多了，我已经（ ）地习惯了这里的生活。",
+  "options": [
+   "肯定",
+   "却",
+   "挺",
+   "渐渐"
+  ],
+  "correct_answer": "渐渐",
+  "explanation": "渐渐 = аажмаар (өөрчлөлт). 肯定 — лав, 挺 — нэлээд, 却 — гэтэл.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "因为我是个夜猫子，所以经常（ ）。",
+  "options": [
+   "回答",
+   "感谢",
+   "适应",
+   "迟到"
+  ],
+  "correct_answer": "迟到",
+  "explanation": "迟到 = хоцрох.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你进教室的时候，别人正上（ ）课呢。",
+  "options": [
+   "着",
+   "过",
+   "的",
+   "了"
+  ],
+  "correct_answer": "着",
+  "explanation": "V+着 — үргэлжилж буй үйлдэл.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l01-q04",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）不迟到，我买了一个闹钟。",
+  "options": [
+   "所以",
+   "虽然",
+   "为了",
+   "因为"
+  ],
+  "correct_answer": "为了",
+  "explanation": "为了 = …-хын тулд (зорилго).",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l01-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«懒虫，该起床了！» гэж хэн хэлдэг вэ?",
+  "options": [
+   "хөрш",
+   "найз",
+   "багш",
+   "сэрүүлэг"
+  ],
+  "correct_answer": "сэрүүлэг",
+  "explanation": "闹钟 нь «懒虫，该起床了！» гэж хашгирдаг.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l01-q06",
+  "skillTags": [
+   "vocabulary",
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "虽然不好听，我还不能不（ ）它。",
+  "options": [
+   "回答",
+   "感谢",
+   "问好",
+   "适应"
+  ],
+  "correct_answer": "感谢",
+  "explanation": "感谢 = талархах.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«有些中国人见面不是问好，而是问一些（ ）的问题。» — хоосон зайд аль нь орох вэ?",
+  "options": [
+   "亲切",
+   "肯定",
+   "奇怪",
+   "适应"
+  ],
+  "correct_answer": "奇怪",
+  "explanation": "奇怪 = хачин.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l01-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«邻居» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "хөрш",
+   "хамт олон",
+   "танил",
+   "найз"
+  ],
+  "correct_answer": "хөрш",
+  "explanation": "邻居 = хөрш.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l01-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这要是在半年以前，我（ ）生气了。",
+  "options": [
+   "却",
+   "该",
+   "肯定",
+   "挺"
+  ],
+  "correct_answer": "肯定",
+  "explanation": "肯定 = мэдээж, лав.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l01-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "现在我却觉得（ ）亲切的。",
+  "options": [
+   "着",
+   "该",
+   "挺",
+   "为了"
+  ],
+  "correct_answer": "挺",
+  "explanation": "挺……的 = нэлээд.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l01-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "到了一个新的地方，就要（ ）那里的风俗习惯。",
+  "options": [
+   "迟到",
+   "适应",
+   "感谢",
+   "回答"
+  ],
+  "correct_answer": "适应",
+  "explanation": "适应 = зохицох, дасах.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l01-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bù hǎoyìsi» аль хэллэгт таарах вэ?",
+  "options": [
+   "入乡随俗",
+   "不好意思",
+   "问好",
+   "打招呼"
+  ],
+  "correct_answer": "不好意思",
+  "explanation": "不好意思 = bù hǎoyìsi.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l01-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр нүдээ аниад байна» гэхэд аль нь зөв бэ?",
+  "options": [
+   "他闭了着眼睛。",
+   "他闭眼睛着。",
+   "他闭着眼睛。"
+  ],
+  "correct_answer": "他闭着眼睛。",
+  "explanation": "V+着 — үйл үгийн ард шууд.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l01-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Гадаа бороо орж байна» гэж V+着-аар хэлэхэд аль нь зөв бэ?",
+  "options": [
+   "外面正下着雨呢。",
+   "外面正下雨着了。",
+   "外面下着了雨。"
+  ],
+  "correct_answer": "外面正下着雨呢。",
+  "explanation": "正 + V着 + 呢.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l01-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Шүхэр авсан уу?» — «Авсан байгаа.» Хариултыг аль нь зөв илэрхийлэх вэ?",
+  "options": [
+   "我着带呢。",
+   "我带了着呢。",
+   "我带着呢。"
+  ],
+  "correct_answer": "我带着呢。",
+  "explanation": "带着呢 = авсан байгаа (V+着).",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l01-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«不会不来» гэдэг нь юу гэсэн үг вэ?",
+  "options": [
+   "ирэх эсэх нь мэдэгдэхгүй",
+   "хэзээ ч ирдэггүй",
+   "лавтай ирнэ",
+   "ирэхгүй"
+  ],
+  "correct_answer": "лавтай ирнэ",
+  "explanation": "Давхар үгүйсгэл = батлал.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l01-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Маргаашийн арга хэмжээ чухал, би заавал оролцох ёстой» — аль нь зөв бэ?",
+  "options": [
+   "我没有不参加了。",
+   "我不能不参加。",
+   "我不能参加。"
+  ],
+  "correct_answer": "我不能不参加。",
+  "explanation": "不能不 = заавал.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l01-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би чамд хэлээгүй юм биш шүү дээ» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我又不是没告诉过你。",
+   "我又不没告诉过你。",
+   "我又没不告诉过你。"
+  ],
+  "correct_answer": "我又不是没告诉过你。",
+  "explanation": "不是没 + V — хэлсэн гэдгээ онцлох.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l01-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр хятадаар ярьж чадахгүй биш, харин ярьхаас ичиж байна» — аль нь зөв бэ?",
+  "options": [
+   "他不是不会说汉语，但是不好意思说。",
+   "他是不会说汉语，而是不好意思说。",
+   "他不是不会说汉语，而是不好意思说。"
+  ],
+  "correct_answer": "他不是不会说汉语，而是不好意思说。",
+  "explanation": "不是A，而是B.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l01-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：她是不是病了？ B：她________，而是在减肥呢。",
+  "options": [
+   "不是病了",
+   "没有病了",
+   "病了",
+   "是病了"
+  ],
+  "correct_answer": "不是病了",
+  "explanation": "而是-ийн өмнө «不是 + А».",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l01-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Шалтгаан → үр дүн»-г зөв холбосон өгүүлбэр аль нь вэ?",
+  "options": [
+   "因为堵车，所以他还没到。",
+   "所以堵车，因为他还没到。",
+   "因为堵车，但是他还没到。"
+  ],
+  "correct_answer": "因为堵车，所以他还没到。",
+  "explanation": "因为 → шалтгаан, 所以 → үр дүн.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l01-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "「却」-ийн зөв байрлал аль нь вэ?",
+  "options": [
+   "现在觉得我却挺亲切的。",
+   "现在我却觉得挺亲切的。",
+   "却现在我觉得挺亲切的。"
+  ],
+  "correct_answer": "现在我却觉得挺亲切的。",
+  "explanation": "却 — өгүүлэгдэхүүний ард, үйл үгийн өмнө.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l01-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：你上课怎么不发言呢？ B：因为怕说错，所以________。",
+  "options": [
+   "不好意思说",
+   "不好意思着",
+   "不好意思你"
+  ],
+  "correct_answer": "不好意思说",
+  "explanation": "不好意思 + V (ичээд хэлж чадахгүй).",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l01-q24",
+  "skillTags": [
+   "grammar",
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”刚来中国的时候，最不习惯的是什么？",
+  "options": [
+   "中国菜",
+   "天气太冷",
+   "早上八点钟上课",
+   "汉字太难"
+  ],
+  "correct_answer": "早上八点钟上课",
+  "explanation": "P2: 最不习惯的是早上八点钟上课。",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l01-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么“我”经常迟到？",
+  "options": [
+   "因为“我”是夜猫子，喜欢晚睡晚起",
+   "因为生病了",
+   "因为不喜欢上课",
+   "因为路上堵车"
+  ],
+  "correct_answer": "因为“我”是夜猫子，喜欢晚睡晚起",
+  "explanation": "P2: 因为我是个夜猫子…所以经常迟到。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l01-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么“我”现在很少迟到了？",
+  "options": [
+   "因为老师批评了我",
+   "因为课改在九点",
+   "因为有了闹钟",
+   "因为搬家了"
+  ],
+  "correct_answer": "因为有了闹钟",
+  "explanation": "P2: 因为有了它，我现在已经很少迟到了。",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l01-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "半年前有人问“吃了吗？”，“我”会怎么样？",
+  "options": [
+   "很高兴",
+   "不回答",
+   "肯定生气",
+   "马上请他吃饭"
+  ],
+  "correct_answer": "肯定生气",
+  "explanation": "P4: 这要是在半年以前…我肯定生气了。",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l01-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "中国人和谁才这么打招呼（“吃了吗？”）？",
+  "options": [
+   "老师",
+   "熟人",
+   "警察",
+   "陌生人"
+  ],
+  "correct_answer": "熟人",
+  "explanation": "P4: 他们跟熟人才这么打招呼。",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l01-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн «去上课呀？» гэж мэндэллээ. Зөв хариулт аль нь вэ?",
+  "options": [
+   "是。",
+   "你好，吃了吗。",
+   "再见。",
+   "不客气。"
+  ],
+  "correct_answer": "是。",
+  "explanation": "Мэндчилгээний асуултад богино хариулна.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l01-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хэлэхийг хүссэн: «Оройтлоо, уучлаарай». Аль нь зохимжтой вэ?",
+  "options": [
+   "我来晚了，真不好意思！",
+   "我来晚了，太感谢了！",
+   "我来晚了，挺好的！"
+  ],
+  "correct_answer": "我来晚了，真不好意思！",
+  "explanation": "Уучлал → 不好意思.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l01-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 不是 / 我没来 / 而是 / 你没看见我",
+  "options": [
+   "不是我没来，而是你没看见我",
+   "我没来不是，你没看见我而是",
+   "而是不是我没来，你没看见我"
+  ],
+  "correct_answer": "不是我没来，而是你没看见我",
+  "explanation": "不是A，而是B дараалал.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l01-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

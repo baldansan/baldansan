@@ -1,0 +1,433 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 一、熟读下面的词语，选择正确的拼音 — үг бүрийн зөв пиньиныг сонго (A эсвэл B)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "付钱",
+      "answer": "A. fù qián",
+      "explanation_mn": "参考答案: A."
+     },
+     {
+      "n": 2,
+      "question_zh": "下次",
+      "answer": "B. xià cì",
+      "explanation_mn": "参考答案: B."
+     },
+     {
+      "n": 3,
+      "question_zh": "习惯",
+      "answer": "A. xíguàn",
+      "explanation_mn": "参考答案: A."
+     },
+     {
+      "n": 4,
+      "question_zh": "结账",
+      "answer": "B. jié zhàng",
+      "explanation_mn": "参考答案: B."
+     },
+     {
+      "n": 5,
+      "question_zh": "做法",
+      "answer": "A. zuòfǎ",
+      "explanation_mn": "参考答案: A."
+     },
+     {
+      "n": 6,
+      "question_zh": "所有",
+      "answer": "B. suǒyǒu",
+      "explanation_mn": "参考答案: B."
+     },
+     {
+      "n": 7,
+      "question_zh": "这些",
+      "answer": "A. zhèxiē",
+      "explanation_mn": "参考答案: A."
+     },
+     {
+      "n": 8,
+      "question_zh": "小费",
+      "answer": "B. xiǎofèi",
+      "explanation_mn": "参考答案: B."
+     },
+     {
+      "n": 9,
+      "question_zh": "桌子",
+      "answer": "A. zhuōzi",
+      "explanation_mn": "参考答案: A."
+     },
+     {
+      "n": 10,
+      "question_zh": "自己",
+      "answer": "B. zìjǐ",
+      "explanation_mn": "参考答案: B."
+     }
+    ],
+    "instruction_zh": "一、熟读下面的词语，选择正确的拼音"
+   },
+   {
+    "part": 2,
+    "type": "word",
+    "instruction_mn": "Текстээс үг сэргээж нөхөх дасгал · 二、根据课文内容填空 — текстийн дагуу хоосон зайг нөх",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "很多国家的人（　）“AA制”，他们常常自己付（　）的钱。",
+      "answer": "习惯 / 自己",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 2,
+      "question_zh": "大家一起吃饭的时候，中国人经常（　）付钱。",
+      "answer": "一个人",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "林娜认为中国人（　）习惯“AA制”。",
+      "answer": "不",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 4,
+      "question_zh": "在中国，饭馆服务员（　）收小费。",
+      "answer": "不",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 5,
+      "question_zh": "日本人很（　）“AA制”。",
+      "answer": "习惯",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 6,
+      "question_zh": "（　）认为外国人应该慢慢习惯中国人的做法。",
+      "answer": "林娜",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "二、根据课文内容填空"
+   },
+   {
+    "part": 3,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 三、模仿例子组词 — жишээгээр өгөгдсөн ханзын өмнө, ард нь ханз нэмж үг зохио (房子, 饺子 шиг)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "____习 / 习____",
+      "answer": "学习 / 习惯",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 2,
+      "question_zh": "____年 / 年____",
+      "answer": "今年 / 年轻",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "____法 / 法____",
+      "answer": "做法 / 法语",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 4,
+      "question_zh": "____次 / ____次",
+      "answer": "这次 / 下次",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 5,
+      "question_zh": "____些 / ____些",
+      "answer": "一些 / 这些",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 6,
+      "question_zh": "____费 / ____费",
+      "answer": "小费 / 交费",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "三、模仿例子组词"
+   },
+   {
+    "part": 4,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 四、选择适当的词语填空 — өгөгдсөн үгээс сонго (下次 习惯 把 慢慢 清楚 拿 自己 所有 一样 影响)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "这是我____的事，我自己知道怎么办。",
+      "answer": "自己",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 2,
+      "question_zh": "别着急，请你____说。",
+      "answer": "慢慢",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "我们班二十个人，今天____的人都来了。",
+      "answer": "所有",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 4,
+      "question_zh": "这次我一个人去，____我们一起去。",
+      "answer": "下次",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 5,
+      "question_zh": "这些东西你都要____走吗？",
+      "answer": "拿",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 6,
+      "question_zh": "别____手机放在桌子上。",
+      "answer": "把",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 7,
+      "question_zh": "我还不____吃中国菜。",
+      "answer": "习惯",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 8,
+      "question_zh": "她的帽子跟我的____。",
+      "answer": "一样",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 9,
+      "question_zh": "这件事对我____很大。",
+      "answer": "影响",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 10,
+      "question_zh": "我不太____他来不来。",
+      "answer": "清楚",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "四、选择适当的词语填空"
+   },
+   {
+    "part": 5,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 五、把下面的句子改写成“把”字句 — өгөгдсөн өгүүлбэрийг «把» өгүүлбэр болго",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "书你放在桌子上。",
+      "answer": "你把书放在桌子上。",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 2,
+      "question_zh": "手机你放在背包里吧。",
+      "answer": "你把手机放在背包里吧。",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "词典我没放在桌子上。",
+      "answer": "我没把词典放在桌子上。",
+      "explanation_mn": "没 нь 把-ийн өмнө."
+     },
+     {
+      "n": 4,
+      "question_zh": "笔你放在哪儿了？",
+      "answer": "你把笔放在哪儿了？",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 5,
+      "question_zh": "你的自行车我放在宿舍前边了。",
+      "answer": "我把你的自行车放在宿舍前边了。",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "五、把下面的句子改写成“把”字句"
+   },
+   {
+    "part": 6,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 六、用“有的”完成句子 — «有的» ашиглан өгүүлбэрийг гүйцээ",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我的同学，____，____。",
+      "answer": "有的英语很好，有的日语很好",
+      "explanation_mn": "参考答案 (бусад хариулт ч боломжтой)."
+     },
+     {
+      "n": 2,
+      "question_zh": "我有很多书，____，____。",
+      "answer": "有的是中文书，有的是英文书",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "在中国，____，____。",
+      "answer": "有的东西很贵，有的东西很便宜",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 4,
+      "question_zh": "这些东西____，____。",
+      "answer": "有的我喜欢，有的我不喜欢",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "六、用“有的”完成句子"
+   },
+   {
+    "part": 7,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 七、说一说，写一写 — санал бодлоо хэл, бич (1 你习惯中国人请客时的做法了吗？ 2 你认为“AA制”怎么样？)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你习惯中国人请客时的做法了吗？（提示：中国人的哪些做法现在你已经习惯了？哪些你现在还不习惯？为什么？）",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Өөрийн бодлоо хэл."
+     },
+     {
+      "n": 2,
+      "question_zh": "你认为“AA制”怎么样？（提示：在你们国家，朋友们在一起吃饭要“AA制”吗？什么时候一起吃饭不用“AA制”？你觉得“AA制”好不好？为什么？）",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Өөрийн бодлоо хэл."
+     }
+    ],
+    "instruction_zh": "七、说一说，写一写"
+   },
+   {
+    "part": 8,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 八、根据所给的偏旁写出汉字 — өгөгдсөн хэсгээр аль болох олон ханз бич (亻 扌 木)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "亻：____、____、____…",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Жишээ: 你 他 们 住 休. Нээлттэй."
+     },
+     {
+      "n": 2,
+      "question_zh": "扌：____、____、____…",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Жишээ: 打 找 拿 把 搬. Нээлттэй."
+     },
+     {
+      "n": 3,
+      "question_zh": "木：____、____、____…",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Жишээ: 桌 椅 样 校 极. Нээлттэй."
+     }
+    ],
+    "instruction_zh": "八、根据所给的偏旁写出汉字"
+   },
+   {
+    "part": 9,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 边说边做 — нэг нь хэлж, нөгөө нь тэр үйлийг хийнэ",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "把笔放在汉语书旁边。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "把-тэй тушаал."
+     },
+     {
+      "n": 2,
+      "question_zh": "把手机放在桌子上。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "把-тэй тушаал."
+     },
+     {
+      "n": 3,
+      "question_zh": "把衣服放在旁边的椅子上。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "把-тэй тушаал."
+     },
+     {
+      "n": 4,
+      "question_zh": "把你的东西都放在老师的桌子上。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "把-тэй тушаал."
+     },
+     {
+      "n": 5,
+      "question_zh": "把词典放在你的背包里。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "把-тэй тушаал."
+     },
+     {
+      "n": 6,
+      "question_zh": "把钱包放在桌子上。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "把-тэй тушаал."
+     },
+     {
+      "n": 7,
+      "question_zh": "把一瓶水放在桌子下边。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "把-тэй тушаал."
+     }
+    ],
+    "instruction_zh": "课堂活动：边说边做：一个人说，一个人做"
+   },
+   {
+    "part": 10,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 写汉字 — дараах ханзуудыг дэвтэртээ бич (到 刻 别 制 笔 篮 箱 等 管 简 第)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "到　刻　别　制　笔　篮　箱　等　管　简　第",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "刂: 到 刻 别 制 · ⺮: 笔 篮 箱 等 管 简 第."
+     }
+    ],
+    "instruction_zh": "写汉字"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичгийн дасгал · 七、说一说，写一写 — «AA制» тухай санал бич (到·刻·别·制·笔·篮·箱·等·管·简·第)",
+    "question_zh": "先在练习本上写汉字：到、刻、别、制、笔、篮、箱、等、管、简、第。然后回答：你习惯中国人请客的做法了吗？你认为“AA制”怎么样？",
+    "answer": "在我们国家，朋友们一起吃饭一般AA制。我觉得AA制很好，大家自己付自己的钱。可是在中国，一般是一个人请客，这次你请客，下次他请客。我还不太习惯这种做法，但是我愿意慢慢习惯。",
+    "explanation_mn": "Загвар эссе (zh/mn) texts.json → mainText.writingSample-д. Нээлттэй даалгавар — автомат шалгахгүй."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ярианы дасгал · 五、把下面的句子改写成“把”字句 — «把» өгүүлбэр болгон бич",
+    "question_zh": "书你放在桌子上。（改写成“把”字句）",
+    "answer": "你把书放在桌子上。",
+    "explanation_mn": "«把» өгүүлбэр: хийгч + 把 + юм + V + 在 + газар. 参考答案: 你把书放在桌子上。"
+   }
+  ]
+ },
+ "answerSource": "发展汉语 初级综合 I 参考答案 (答案本, «第二十一课» 综合练习) — 一 (10), 二 (6), 三 (6), 四 (10), 五 (5), 六 (4) тулгасан. 七, 八, 课堂活动, 写汉字 — нээлттэй даалгавар."
+}

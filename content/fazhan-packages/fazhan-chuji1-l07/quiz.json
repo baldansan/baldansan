@@ -1,0 +1,610 @@
+[
+ {
+  "type": "choice",
+  "question": "«图书馆» ямар утгатай вэ?",
+  "options": [
+   "банк",
+   "номын сан",
+   "хоолны газар",
+   "шуудан"
+  ],
+  "correct_answer": "номын сан",
+  "explanation": "图书馆 = túshūguǎn — номын сан.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«银行»-ийн пиньинь аль нь вэ?",
+  "options": [
+   "yǐnháng",
+   "yìnhāng",
+   "yínxíng",
+   "yínháng"
+  ],
+  "correct_answer": "yínháng",
+  "explanation": "银行 = yínháng — банк.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l07-q02",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«卫生间» ямар утгатай вэ?",
+  "options": [
+   "хоолны газар",
+   "номын сан",
+   "дэлгүүр",
+   "бие засах газар"
+  ],
+  "correct_answer": "бие засах газар",
+  "explanation": "卫生间 = wèishēngjiān.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«哪儿» ямар утгатай вэ?",
+  "options": [
+   "тэнд",
+   "энд",
+   "хэн",
+   "хаана, хаашаа"
+  ],
+  "correct_answer": "хаана, хаашаа",
+  "explanation": "哪儿 = nǎr — хаана.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«运动场» ямар газар вэ?",
+  "options": [
+   "тэмцээний талбай",
+   "хоолны газар",
+   "номын дэлгүүр",
+   "шуудан"
+  ],
+  "correct_answer": "тэмцээний талбай",
+  "explanation": "运动场 = yùndòngchǎng.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«超市» ямар утгатай вэ?",
+  "options": [
+   "гадаад оюутны байр",
+   "номын сан",
+   "супермаркет",
+   "банк"
+  ],
+  "correct_answer": "супермаркет",
+  "explanation": "超市 = chāoshì.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«对不起»-д хариулах хэллэг:",
+  "options": [
+   "没关系",
+   "太好了",
+   "不客气",
+   "请问"
+  ],
+  "correct_answer": "没关系",
+  "explanation": "对不起 — 没关系; 谢谢 — 不客气.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l07-q07",
+  "skillTags": [
+   "vocabulary",
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«北边» ямар утгатай вэ?",
+  "options": [
+   "хойд тал",
+   "урд тал",
+   "баруун тал",
+   "зүүн тал"
+  ],
+  "correct_answer": "хойд тал",
+  "explanation": "北 = хойд, 南 = урд.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«书包» ямар утгатай вэ?",
+  "options": [
+   "номын дэлгүүр",
+   "оюутны байр",
+   "ширээ",
+   "сурагчийн цүнх"
+  ],
+  "correct_answer": "сурагчийн цүнх",
+  "explanation": "书包 = shūbāo.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«知道»-ийн пиньинь:",
+  "options": [
+   "zìdào",
+   "zhīdòu",
+   "zhídào",
+   "zhīdao"
+  ],
+  "correct_answer": "zhīdao",
+  "explanation": "知道 = zhīdao (道 хөнгөн аялгуутай).",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l07-q10",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你去（　）？— 我去超市。",
+  "options": [
+   "那儿",
+   "吗",
+   "这儿",
+   "哪儿"
+  ],
+  "correct_answer": "哪儿",
+  "explanation": "Асуулт «хаашаа» → 哪儿.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l07-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«宿舍» ямар утгатай вэ?",
+  "options": [
+   "шуудан",
+   "дэлгүүр",
+   "оюутны байр",
+   "хоолны газар"
+  ],
+  "correct_answer": "оюутны байр",
+  "explanation": "宿舍 = sùshè.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l07-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«邮局» ямар утгатай вэ?",
+  "options": [
+   "номын сан",
+   "супермаркет",
+   "банк",
+   "шуудан"
+  ],
+  "correct_answer": "шуудан",
+  "explanation": "邮局 = yóujú.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l07-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«图书馆（　）教学楼北边。» — аль үг орох вэ?",
+  "options": [
+   "去",
+   "在",
+   "有",
+   "还"
+  ],
+  "correct_answer": "在",
+  "explanation": "Юу хаана байгааг хэлэхэд «在».",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l07-q14",
+  "skillTags": [
+   "grammar",
+   "zai-you"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«北边（　）一个超市。» — аль үг орох вэ?",
+  "options": [
+   "在",
+   "有",
+   "跟",
+   "吧"
+  ],
+  "correct_answer": "有",
+  "explanation": "Хаана юу байгааг хэлэхэд «有».",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l07-q15",
+  "skillTags": [
+   "grammar",
+   "zai-you"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "银行有超市东边。",
+   "银行在超市东边。",
+   "在银行超市东边。",
+   "银行去超市东边。"
+  ],
+  "correct_answer": "银行在超市东边。",
+  "explanation": "«юу + 在 + газар».",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l07-q16",
+  "skillTags": [
+   "grammar",
+   "zai-you"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Баруун тал» хятадаар:",
+  "options": [
+   "东边",
+   "西边",
+   "南边",
+   "北边"
+  ],
+  "correct_answer": "西边",
+  "explanation": "西 = баруун.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l07-q17",
+  "skillTags": [
+   "grammar",
+   "fangweici"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«我有一个哥哥，（　）有一个姐姐。»",
+  "options": [
+   "还",
+   "就",
+   "吧",
+   "太"
+  ],
+  "correct_answer": "还",
+  "explanation": "«还» = бас, үйл үгийн өмнө.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l07-q18",
+  "skillTags": [
+   "grammar",
+   "hai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«银行（　）哪儿？» — зөв нь:",
+  "options": [
+   "去",
+   "跟",
+   "有",
+   "在"
+  ],
+  "correct_answer": "在",
+  "explanation": "银行在哪儿？ = банк хаана байдаг вэ.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l07-q19",
+  "skillTags": [
+   "grammar",
+   "nar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«我们一起去银行（　）。» (санал болгох)",
+  "options": [
+   "吗",
+   "还",
+   "吧",
+   "哪儿"
+  ],
+  "correct_answer": "吧",
+  "explanation": "«吧» = санал болгох төгсгөлийн үг.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l07-q20",
+  "skillTags": [
+   "grammar",
+   "ba"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "跟我你一起去。",
+   "我跟你一起去。",
+   "我去一起跟你。",
+   "我一起跟你去。"
+  ],
+  "correct_answer": "我跟你一起去。",
+  "explanation": "跟 + хүн + 一起 + үйл үг.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l07-q21",
+  "skillTags": [
+   "grammar",
+   "gen"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "n + iou бичигдэх хэлбэр:",
+  "options": [
+   "niu",
+   "nio",
+   "niou",
+   "nou"
+  ],
+  "correct_answer": "niu",
+  "explanation": "iou → iu.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l07-q22",
+  "skillTags": [
+   "grammar",
+   "spelling"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«哪儿»-ийн дуудлага аль нь вэ?",
+  "options": [
+   "nǎr",
+   "nàr",
+   "nǎér",
+   "nǎn"
+  ],
+  "correct_answer": "nǎr",
+  "explanation": "儿化: нэг үе nǎr.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l07-q23",
+  "skillTags": [
+   "grammar",
+   "erhua"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«谢» ханзын бүтэц (ном ёсоор):",
+  "options": [
+   "左中右结构",
+   "上中下结构",
+   "上下结构",
+   "左右结构"
+  ],
+  "correct_answer": "左中右结构",
+  "explanation": "讠 + 身 + 寸.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l07-q24",
+  "skillTags": [
+   "grammar",
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "Мартин ба Ямата: 山田，你去（　）？ 山田：我去超市。",
+  "options": [
+   "吧",
+   "哪",
+   "吗",
+   "哪儿"
+  ],
+  "correct_answer": "哪儿",
+  "explanation": "你去哪儿？",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l07-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "中国银行在（　）东边。",
+  "options": [
+   "图书馆",
+   "超市",
+   "体育馆",
+   "运动场"
+  ],
+  "correct_answer": "超市",
+  "explanation": "课文二: 在超市东边.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l07-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "Амин бие засах газар хаана байдгийг оюутан Б-ээс асуухад яаж хариулсан бэ? «商店（　）有。»",
+  "options": [
+   "北边",
+   "里边",
+   "东边",
+   "旁边"
+  ],
+  "correct_answer": "里边",
+  "explanation": "课文三: 商店里边有.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l07-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "留学生楼在（　）南边。",
+  "options": [
+   "图书馆",
+   "超市",
+   "运动场",
+   "银行"
+  ],
+  "correct_answer": "运动场",
+  "explanation": "课文一: 留学生楼在运动场南边。",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l07-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "Ямата: 我跟你一起去（　）。",
+  "options": [
+   "哪",
+   "了",
+   "吧",
+   "吗"
+  ],
+  "correct_answer": "吧",
+  "explanation": "Санал болгох: 去吧.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l07-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Замд хүнээс бие засах газар асуух эелдэг эхлэл:",
+  "options": [
+   "你好，卫生间吗？",
+   "请问，哪儿有卫生间？",
+   "卫生间有哪儿吗？",
+   "哪儿卫生间去？"
+  ],
+  "correct_answer": "请问，哪儿有卫生间？",
+  "explanation": "请问 + 哪儿有 + газар.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l07-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хүн танд талархахад (谢谢) хариулах:",
+  "options": [
+   "不客气",
+   "对不起",
+   "没关系",
+   "请问"
+  ],
+  "correct_answer": "不客气",
+  "explanation": "谢谢 — 不客气.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l07-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзад «хамт банк явъя» гэж санал болгох:",
+  "options": [
+   "我们一起去银行吧。",
+   "我们去银行哪儿？",
+   "去银行我们还。",
+   "我们一起去银行吗？"
+  ],
+  "correct_answer": "我们一起去银行吧。",
+  "explanation": "吧 = санал болгох.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l07-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Зааж харуулан «Яг тэнд байна» гэж хэлэх:",
+  "options": [
+   "那儿就是。",
+   "那儿太是。",
+   "那儿还是。",
+   "那儿吧是。"
+  ],
+  "correct_answer": "那儿就是。",
+  "explanation": "就是 = яг тэр.",
+  "order_index": 33,
+  "id": "fazhan-chuji1-l07-q33",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

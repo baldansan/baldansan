@@ -1,0 +1,610 @@
+[
+ {
+  "type": "choice",
+  "question": "«起床»-ийн утга:",
+  "options": [
+   "хичээл орох",
+   "унтах",
+   "босох",
+   "усанд орох"
+  ],
+  "correct_answer": "босох",
+  "explanation": "起床 = qǐ chuáng.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«早饭»-ийн утга:",
+  "options": [
+   "бэлэг",
+   "өглөөний цай, хоол",
+   "үдийн хоол",
+   "оройн хоол"
+  ],
+  "correct_answer": "өглөөний цай, хоол",
+  "explanation": "早饭 = zǎofàn.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«刻» хэдэн минут вэ?",
+  "options": [
+   "15 минут",
+   "10 минут",
+   "45 минут",
+   "30 минут"
+  ],
+  "correct_answer": "15 минут",
+  "explanation": "一刻 = 15 минут.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l09-q03",
+  "skillTags": [
+   "vocabulary",
+   "time"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«半» ямар утгатай вэ?",
+  "options": [
+   "бүтэн",
+   "дутуу",
+   "хоёр дахин",
+   "хагас"
+  ],
+  "correct_answer": "хагас",
+  "explanation": "六点半 = 6:30.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«下午»-ийн утга:",
+  "options": [
+   "шөнө",
+   "үдээс хойш",
+   "орой",
+   "өглөө"
+  ],
+  "correct_answer": "үдээс хойш",
+  "explanation": "下午 = xiàwǔ.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«常常»-ийн утга:",
+  "options": [
+   "заримдаа",
+   "нэг удаа",
+   "хэзээ ч үгүй",
+   "байнга"
+  ],
+  "correct_answer": "байнга",
+  "explanation": "常常 = chángcháng.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«有时候»-ийн утга:",
+  "options": [
+   "заримдаа",
+   "хэзээ ч",
+   "байнга",
+   "өдөр бүр"
+  ],
+  "correct_answer": "заримдаа",
+  "explanation": "有时候 = yǒushíhou.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«开门»-ийн утга:",
+  "options": [
+   "орох",
+   "хаалга хаах",
+   "хаалга нээх, нээгдэх",
+   "хичээл эхлэх"
+  ],
+  "correct_answer": "хаалга нээх, нээгдэх",
+  "explanation": "开 + 门.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«关门»-ийн утга:",
+  "options": [
+   "хичээл тарах",
+   "явах",
+   "хаалга нээх",
+   "хаалга хаах, хаагдах"
+  ],
+  "correct_answer": "хаалга хаах, хаагдах",
+  "explanation": "关 + 门.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l09-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«安排»-ийн утга:",
+  "options": [
+   "кино",
+   "төлөвлөгөө, хуваарь",
+   "ажил",
+   "найз"
+  ],
+  "correct_answer": "төлөвлөгөө, хуваарь",
+  "explanation": "安排 = ānpái.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l09-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«见面»-ийн утга:",
+  "options": [
+   "уулзах",
+   "хэлэх",
+   "сонсох",
+   "харах"
+  ],
+  "correct_answer": "уулзах",
+  "explanation": "见面 = jiàn miàn.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l09-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«现在»-ийн пиньинь:",
+  "options": [
+   "shiànzài",
+   "xiànzhài",
+   "xiànzài",
+   "xiānzài"
+  ],
+  "correct_answer": "xiànzài",
+  "explanation": "现在 = xiànzài.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l09-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«晚上»-ийн пиньинь:",
+  "options": [
+   "wānshang",
+   "wǎnshāng",
+   "wǎnshang",
+   "wàncháng"
+  ],
+  "correct_answer": "wǎnshang",
+  "explanation": "晚上 = wǎnshang.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l09-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Эхлээд усанд орж, дараа нь унтана» зөв нь:",
+  "options": [
+   "我然后洗澡，先睡觉。",
+   "先我洗澡，然后睡觉。",
+   "我先洗澡，然后睡觉。",
+   "我洗澡先，睡觉然后。"
+  ],
+  "correct_answer": "我先洗澡，然后睡觉。",
+  "explanation": "先……，然后……",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l09-q14",
+  "skillTags": [
+   "grammar",
+   "xian-ranhou"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тэр эхлээд банк явж, дараа нь дэлгүүр явна»:",
+  "options": [
+   "他先然后去银行商店。",
+   "他然后去银行，先去商店。",
+   "他先去银行，然后去商店。",
+   "他去银行先，去商店然后。"
+  ],
+  "correct_answer": "他先去银行，然后去商店。",
+  "explanation": "先 + V₁，然后 + V₂",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l09-q15",
+  "skillTags": [
+   "grammar",
+   "xian-ranhou"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би маргааш номын санд очиж ном уншина»:",
+  "options": [
+   "我去看书明天图书馆。",
+   "我明天看书去图书馆。",
+   "明天图书馆我去看书。",
+   "我明天去图书馆看书。"
+  ],
+  "correct_answer": "我明天去图书馆看书。",
+  "explanation": "去 + газар + V + O",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l09-q16",
+  "skillTags": [
+   "grammar",
+   "qu-v-o"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Тэр манайд хоол идэхээр ирнэ»:",
+  "options": [
+   "他来吃饭我家。",
+   "他来我家吃饭。",
+   "他我家来吃饭。",
+   "他吃饭来我家。"
+  ],
+  "correct_answer": "他来我家吃饭。",
+  "explanation": "来 + газар + V + O",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l09-q17",
+  "skillTags": [
+   "grammar",
+   "qu-v-o"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би зургаан хагаст босно» зөв нь:",
+  "options": [
+   "我起床六点半。",
+   "我起床在六点半。",
+   "我六点半起床。",
+   "六点半我的起床。"
+  ],
+  "correct_answer": "我六点半起床。",
+  "explanation": "Цаг үйл үгийн өмнө.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l09-q18",
+  "skillTags": [
+   "grammar",
+   "time-word"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Кино хэдэн цагт эхэлдэг вэ?»:",
+  "options": [
+   "电影几点开始吗？",
+   "几点开始电影吗？",
+   "电影几点开始？",
+   "电影开始几点？"
+  ],
+  "correct_answer": "电影几点开始？",
+  "explanation": "几点 + V.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l09-q19",
+  "skillTags": [
+   "grammar",
+   "time-word"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "2:00-г зөв хэлбэл:",
+  "options": [
+   "二点",
+   "两点",
+   "两分",
+   "两个点"
+  ],
+  "correct_answer": "两点",
+  "explanation": "2:00 = 两点.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l09-q20",
+  "skillTags": [
+   "grammar",
+   "time"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "3:05-г зөв хэлбэл:",
+  "options": [
+   "三五点",
+   "三点五分",
+   "三点零五分",
+   "三点分五"
+  ],
+  "correct_answer": "三点零五分",
+  "explanation": "Минут < 10 бол 零 нэм.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l09-q21",
+  "skillTags": [
+   "grammar",
+   "time"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«四点一刻» хэдэн цаг вэ?",
+  "options": [
+   "4:15",
+   "4:30",
+   "4:45",
+   "3:45"
+  ],
+  "correct_answer": "4:15",
+  "explanation": "一刻 = 15.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l09-q22",
+  "skillTags": [
+   "grammar",
+   "time"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«差一刻七点» хэдэн цаг вэ?",
+  "options": [
+   "6:15",
+   "7:45",
+   "7:15",
+   "6:45"
+  ],
+  "correct_answer": "6:45",
+  "explanation": "差一刻七点 = 7 цагт 15 минут дутуу.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l09-q23",
+  "skillTags": [
+   "grammar",
+   "time"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«duō» (多)-д тон тэмдэг аль үсэг дээр байна?",
+  "options": [
+   "o",
+   "u",
+   "d",
+   "ō-ийн ард"
+  ],
+  "correct_answer": "o",
+  "explanation": "uo-д o давуу.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l09-q24",
+  "skillTags": [
+   "grammar",
+   "tone-mark"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "课文一-д «我» хэдэн цагт босдог вэ?",
+  "options": [
+   "七点",
+   "六点半",
+   "五点",
+   "八点"
+  ],
+  "correct_answer": "六点半",
+  "explanation": "课文一: 六点半起床.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l09-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "课文一-д «我» хэдэн цагт хичээлд очдог вэ?",
+  "options": [
+   "差一刻八点",
+   "九点",
+   "八点",
+   "七点半"
+  ],
+  "correct_answer": "差一刻八点",
+  "explanation": "课文一: 差一刻八点去教室.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l09-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "Мартин 2 цагт хаашаа явах вэ?",
+  "options": [
+   "饭馆",
+   "图书馆",
+   "银行",
+   "教室"
+  ],
+  "correct_answer": "图书馆",
+  "explanation": "课文二.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l09-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "Номын сан хэдэн цагт хаагддаг вэ?",
+  "options": [
+   "下午六点",
+   "晚上八点",
+   "早上八点",
+   "晚上十点"
+  ],
+  "correct_answer": "晚上八点",
+  "explanation": "课文二: 晚上八点关门.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l09-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "Кино хэдэн цагт эхэлдэг вэ?",
+  "options": [
+   "下午两点半",
+   "晚上八点",
+   "上午九点",
+   "下午两点一刻"
+  ],
+  "correct_answer": "下午两点半",
+  "explanation": "课文三: 下午两点半开始.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l09-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаасаа цаг асуух:",
+  "options": [
+   "再见！",
+   "今天几号？",
+   "你有事吗？",
+   "现在几点？"
+  ],
+  "correct_answer": "现在几点？",
+  "explanation": "几点 = хэдэн цаг.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l09-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзыгаа өнөөдрийн төлөвлөгөөг асуух:",
+  "options": [
+   "你叫什么名字？",
+   "你今天几号？",
+   "你几点吃饭？",
+   "你今天有什么安排？"
+  ],
+  "correct_answer": "你今天有什么安排？",
+  "explanation": "安排 = төлөвлөгөө.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l09-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Талархалд хариулах:",
+  "options": [
+   "不用谢！",
+   "对不起。",
+   "再见！",
+   "明天见。"
+  ],
+  "correct_answer": "不用谢！",
+  "explanation": "不用谢 = баярлах хэрэггүй.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l09-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хамт кино үзэхийг санал болгох:",
+  "options": [
+   "我请你电影看。",
+   "我想请你看电影。",
+   "你看电影请我。",
+   "我想请你有电影。"
+  ],
+  "correct_answer": "我想请你看电影。",
+  "explanation": "请你看电影.",
+  "order_index": 33,
+  "id": "fazhan-chuji1-l09-q33",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,576 @@
+[
+ {
+  "type": "choice",
+  "question": "«地图» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "нэрийн хуудас",
+   "пирамид",
+   "газрын зураг",
+   "ил захидал"
+  ],
+  "correct_answer": "газрын зураг",
+  "explanation": "地图 = газрын зураг.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小学的时候，我考试（ ）了第一名。",
+  "options": [
+   "得",
+   "灭",
+   "冲",
+   "围"
+  ],
+  "correct_answer": "得",
+  "explanation": "得了第一名 — нэгдүгээр байр авах.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天（ ）到谁打扫房间了？",
+  "options": [
+   "敢",
+   "干",
+   "叫",
+   "轮"
+  ],
+  "correct_answer": "轮",
+  "explanation": "轮到 — ээлж ирэх.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一个人（ ）着浴巾从浴室里冲出来。",
+  "options": [
+   "烧",
+   "灭",
+   "叫",
+   "围"
+  ],
+  "correct_answer": "围",
+  "explanation": "围着浴巾 — усны алчуур ороосон.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«讨厌» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "санах",
+   "дургүйцэх",
+   "үргэлжлүүлэх",
+   "зориглох"
+  ],
+  "correct_answer": "дургүйцэх",
+  "explanation": "讨厌 = дургүйцэх.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我不（ ）一个人走夜路，你陪着我吧。",
+  "options": [
+   "讨厌",
+   "敢",
+   "记得",
+   "继续"
+  ],
+  "correct_answer": "敢",
+  "explanation": "不敢 — зүрхлэхгүй.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "您还（ ）吗？两年前我们见过面。",
+  "options": [
+   "轮",
+   "讨厌",
+   "记得",
+   "继续"
+  ],
+  "correct_answer": "记得",
+  "explanation": "记得 — санаж байх.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我只好放下地图，（ ）烧水。",
+  "options": [
+   "记得",
+   "敢",
+   "继续",
+   "灭"
+  ],
+  "correct_answer": "继续",
+  "explanation": "继续 — цааш үргэлжлүүлэх.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«明信片» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "талхны зүсэм",
+   "үгийн карт",
+   "ил захидал",
+   "нэрийн хуудас"
+  ],
+  "correct_answer": "ил захидал",
+  "explanation": "明信片 = ил захидал.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你在（ ）什么呢？",
+  "options": [
+   "冲",
+   "干",
+   "灭",
+   "围"
+  ],
+  "correct_answer": "干",
+  "explanation": "干什么 — юу хийх.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xiǎoshíhou» аль үгэнд таарах вэ?",
+  "options": [
+   "小时候",
+   "小学",
+   "小子",
+   "小声"
+  ],
+  "correct_answer": "小时候",
+  "explanation": "小时候 = xiǎoshíhou.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l07-q11",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他对着我大（ ）：“你在干什么呢？”",
+  "options": [
+   "烧",
+   "围",
+   "叫",
+   "灭"
+  ],
+  "correct_answer": "叫",
+  "explanation": "大叫 — чанга хашгирах.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l07-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«一辈子» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "нэг удаа",
+   "насан туршдаа",
+   "хэдэн жил",
+   "багадаа"
+  ],
+  "correct_answer": "насан туршдаа",
+  "explanation": "一辈子 = насан туршдаа.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l07-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр баярласандаа дуулж эхэллээ» гэхэд аль нь зөв бэ?",
+  "options": [
+   "他高兴得唱起歌来。",
+   "他高兴得唱起来歌。",
+   "他高兴得起唱歌来。"
+  ],
+  "correct_answer": "他高兴得唱起歌来。",
+  "explanation": "Тусагдахуун «起» ба «来»-ийн дунд.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l07-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Миний үгийг сонсоод тэр инээж эхэллээ» гэхэд аль нь зөв бэ?",
+  "options": [
+   "听了我的话，她笑起来了一下。",
+   "听了我的话，她笑了起来。",
+   "听了我的话，她起来笑了。"
+  ],
+  "correct_answer": "听了我的话，她笑了起来。",
+  "explanation": "V+了+起来.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l07-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：明天上午你做什么？ B：我想睡觉。 A：________？天气那么好，出去玩儿玩儿吧。",
+  "options": [
+   "睡什么觉",
+   "睡觉吗",
+   "睡觉什么",
+   "什么睡觉"
+  ],
+  "correct_answer": "睡什么觉",
+  "explanation": "V+什么 — салдаг үйл үгэнд 什么 дунд.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l07-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«看什么地图！快烧火！» гэдэг нь юу гэсэн утгатай вэ?",
+  "options": [
+   "Газрын зураг үзсэнд баярлалаа",
+   "Газрын зураг үзэж болохгүй, хурдан гал түү (уур бухимдал)",
+   "Ямар газрын зураг үзэж байна?",
+   "Миний газрын зургийг үз"
+  ],
+  "correct_answer": "Газрын зураг үзэж болохгүй, хурдан гал түү (уур бухимдал)",
+  "explanation": "V+什么 — зогсоох, болиулах.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l07-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "他病了，今天（ ），你别等他了。",
+  "options": [
+   "来了不",
+   "没来了",
+   "来不了",
+   "不来了"
+  ],
+  "correct_answer": "来不了",
+  "explanation": "V+不了 — чадахгүй.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l07-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这么多，咱们肯定（ ）。",
+  "options": [
+   "不吃了",
+   "吃不了",
+   "没吃了",
+   "吃了不"
+  ],
+  "correct_answer": "吃不了",
+  "explanation": "吃不了 — идэж дуусахгүй.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l07-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«你一辈子也去不了那么远的地方» дахь «了» яаж дуудагдах вэ?",
+  "options": [
+   "lǎo",
+   "le",
+   "liǎo",
+   "liào"
+  ],
+  "correct_answer": "liǎo",
+  "explanation": "V+不了 дахь 了 = liǎo.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l07-q20",
+  "skillTags": [
+   "grammar",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这个工作太累了，我不想干（ ）了。",
+  "options": [
+   "下去",
+   "起来",
+   "不了",
+   "什么"
+  ],
+  "correct_answer": "下去",
+  "explanation": "V+下去 — цааш үргэлжлүүлэх.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l07-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "天气热（ ）了，我应该买夏天的衣服了。",
+  "options": [
+   "什么",
+   "得了",
+   "起来",
+   "下去"
+  ],
+  "correct_answer": "起来",
+  "explanation": "Adj+起来 — халуун болж эхэллээ.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l07-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我就（ ）烧水（ ）看地图。",
+  "options": [
+   "一……就",
+   "一边……一边",
+   "因为……所以",
+   "不是……而是"
+  ],
+  "correct_answer": "一边……一边",
+  "explanation": "一边……一边 — хоёр үйлдэл зэрэг.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l07-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：你今天能参加晚会吗？ B：对不起，我有事，________。",
+  "options": [
+   "去了不",
+   "不去了了",
+   "去得不了",
+   "去不了了"
+  ],
+  "correct_answer": "去不了了",
+  "explanation": "去不了了 — чадахгүй боллоо.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l07-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "老师给了“我”什么？",
+  "options": [
+   "一本词典",
+   "《世界地图》",
+   "一块手表",
+   "一张明信片"
+  ],
+  "correct_answer": "《世界地图》",
+  "explanation": "P1: 老师给了我一本《世界地图》。",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l07-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "谁围着浴巾从浴室里冲出来？",
+  "options": [
+   "邻居",
+   "哥哥",
+   "爸爸",
+   "老师"
+  ],
+  "correct_answer": "爸爸",
+  "explanation": "P2: 是爸爸。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l07-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "爸爸为什么更生气了？",
+  "options": [
+   "因为水太热了",
+   "因为“我”说在看埃及地图，没有烧火",
+   "因为“我”考试得了第一名",
+   "因为“我”买了地图"
+  ],
+  "correct_answer": "因为“我”说在看埃及地图，没有烧火",
+  "explanation": "P2: 爸爸最讨厌做事不认真的人。",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l07-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "20年后，“我”第一次出国去了哪里？",
+  "options": [
+   "南京",
+   "南非",
+   "埃及",
+   "北京"
+  ],
+  "correct_answer": "埃及",
+  "explanation": "P3: 我第一次出国就去了埃及。",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l07-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "明信片上写了什么？",
+  "options": [
+   "我想回家",
+   "我现在在埃及，面前就是金字塔",
+   "我考试得了第一名",
+   "请寄给我一本地图"
+  ],
+  "correct_answer": "我现在在埃及，面前就是金字塔",
+  "explanation": "P3: 我现在正在埃及，我的面前就是金字塔。",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l07-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чамайг оройн хоолонд урьж байна, гэвч чи завгүй. Зөөлөн татгалзахад аль нь зохимжтой вэ?",
+  "options": [
+   "对不起，我有事去不了了。",
+   "你去什么！",
+   "我记得去。",
+   "我不敢去。"
+  ],
+  "correct_answer": "对不起，我有事去不了了。",
+  "explanation": "去不了 — шалтгаантай татгалзах.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l07-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 大家 / 唱起来 / 一起 / 吧",
+  "options": [
+   "一起大家唱吧起来",
+   "大家一起唱起来吧",
+   "唱起来吧大家一起"
+  ],
+  "correct_answer": "大家一起唱起来吧",
+  "explanation": "V+起来 — эхлэх урилга.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l07-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз «Би хятад хэл сурахаа болъё» гэв. Чи урамшуулж, «Тууштай байвал заавал амжилт гарна» гэхэд аль нь зөв бэ?",
+  "options": [
+   "只要坚持起来，就一定能成功。",
+   "只要坚持下去，就一定能成功。",
+   "只要坚持什么，就一定能成功。"
+  ],
+  "correct_answer": "只要坚持下去，就一定能成功。",
+  "explanation": "坚持下去 — цааш тууштай байх.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l07-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

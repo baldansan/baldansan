@@ -1,0 +1,579 @@
+[
+ {
+  "type": "choice",
+  "question": "«必须» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "бага зэрэг",
+   "азаар",
+   "бодсоноор",
+   "заавал, зайлшгүй"
+  ],
+  "correct_answer": "заавал, зайлшгүй",
+  "explanation": "必须 = заавал.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l14-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "孩子的病很严重，（ ）住院。",
+  "options": [
+   "稍微",
+   "就是",
+   "果然",
+   "必须"
+  ],
+  "correct_answer": "必须",
+  "explanation": "必须 — заавал.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l14-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«借» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "алдах",
+   "хөөх",
+   "зээлэх, зээлүүлэх",
+   "талархах"
+  ],
+  "correct_answer": "зээлэх, зээлүүлэх",
+  "explanation": "借 = зээлэх.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l14-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«万» нь ямар тоо вэ?",
+  "options": [
+   "100",
+   "1 000",
+   "100 000",
+   "10 000"
+  ],
+  "correct_answer": "10 000",
+  "explanation": "万 = 10 000.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l14-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）跑出去追，车已经开走了。",
+  "options": [
+   "必须",
+   "急忙",
+   "一边",
+   "幸好"
+  ],
+  "correct_answer": "急忙",
+  "explanation": "急忙 = яаран.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l14-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "司机二十多岁，挺（ ），看样子是个认真的人。",
+  "options": [
+   "匆忙",
+   "严重",
+   "和气",
+   "紧张"
+  ],
+  "correct_answer": "和气",
+  "explanation": "和气 = эелдэг.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l14-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«弄丢» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "олж авах",
+   "хөөх",
+   "зээлэх",
+   "алдчихах"
+  ],
+  "correct_answer": "алдчихах",
+  "explanation": "弄丢 = алдах.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l14-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这么大的天津，上哪儿去（ ）？",
+  "options": [
+   "借",
+   "找",
+   "追",
+   "记"
+  ],
+  "correct_answer": "找",
+  "explanation": "上哪儿去找 — хаа хайх вэ.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l14-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«印象» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "сэтгэгдэл",
+   "туршлага",
+   "хүсэл",
+   "шалтгаан"
+  ],
+  "correct_answer": "сэтгэгдэл",
+  "explanation": "印象 = сэтгэгдэл.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l14-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "天气预报说今天有雨，（ ）下雨了。",
+  "options": [
+   "幸好",
+   "稍微",
+   "果然",
+   "必须"
+  ],
+  "correct_answer": "果然",
+  "explanation": "果然 — бодсоноор.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l14-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我从来（ ）打过的，所以很害怕。",
+  "options": [
+   "没",
+   "别",
+   "不",
+   "被"
+  ],
+  "correct_answer": "没",
+  "explanation": "从来没……过.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l14-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xìnghǎo» аль үгэнд таарах вэ?",
+  "options": [
+   "印象",
+   "果然",
+   "幸好",
+   "必须"
+  ],
+  "correct_answer": "幸好",
+  "explanation": "幸好 = xìnghǎo.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l14-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«车牌号» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "жолоочийн нэр",
+   "автобусны буудал",
+   "замын мөнгө",
+   "машины дугаар"
+  ],
+  "correct_answer": "машины дугаар",
+  "explanation": "车牌号 = машины дугаар.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l14-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "20 500 гэдгийг аль нь зөв унших вэ?",
+  "options": [
+   "两万〇五百",
+   "两万零零五",
+   "两千〇五百",
+   "二万五百"
+  ],
+  "correct_answer": "两万〇五百",
+  "explanation": "Завсрын тэг нэг ○, 万 өмнө 两.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l14-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "101-ийг аль нь зөв унших вэ?",
+  "options": [
+   "百〇一",
+   "一百〇一",
+   "一百零十一",
+   "一百一"
+  ],
+  "correct_answer": "一百〇一",
+  "explanation": "百 өмнө 一 заавал, завсар ○.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l14-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "15 000-ыг аль нь зөв унших вэ?",
+  "options": [
+   "一万五",
+   "一千五万",
+   "一万五千",
+   "十五千"
+  ],
+  "correct_answer": "一万五千",
+  "explanation": "一万五千.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l14-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Миний номыг ангийн нэг хүн зээлээд явчихлаа» — аль нь зөв бэ?",
+  "options": [
+   "我的书被同学借走了。",
+   "被同学我的书借走了。",
+   "我的书借被同学走了。",
+   "我的书同学被借走了。"
+  ],
+  "correct_answer": "我的书被同学借走了。",
+  "explanation": "S + 被 + N + V + …",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l14-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Миний компьютер эвдрээгүй» — аль нь зөв бэ?",
+  "options": [
+   "我的电脑被弄没坏。",
+   "我的电脑被没弄坏。",
+   "我的电脑没被弄坏。",
+   "没我的电脑被弄坏。"
+  ],
+  "correct_answer": "我的电脑没被弄坏。",
+  "explanation": "Сөрөг үг 被-ийн өмнө.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l14-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Сяо Ван багшид хэзээ ч шүүмжлүүлж байгаагүй» — аль нь зөв бэ?",
+  "options": [
+   "小王被从来没老师批评过。",
+   "小王被老师从来批评没过。",
+   "小王从来没被老师批评过。",
+   "小王没从来被老师批评过。"
+  ],
+  "correct_answer": "小王从来没被老师批评过。",
+  "explanation": "从来没被……过.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l14-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Дугуйг хулгайлчихлаа» — ярианы хэлэнд аль нь зөв бэ?",
+  "options": [
+   "我的自行车被偷。",
+   "偷被我的自行车了。",
+   "我的自行车被偷了。",
+   "我的自行车偷了被。"
+  ],
+  "correct_answer": "我的自行车被偷了。",
+  "explanation": "被偷了.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l14-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Азаар шүхэр авсан» — аль нь зөв бэ?",
+  "options": [
+   "雨下得真大，幸好我们带了伞。",
+   "雨下得真大，我们幸好带伞了不。",
+   "幸好雨下得真大，我们带了伞。",
+   "雨下得真大，幸好我们没带伞。"
+  ],
+  "correct_answer": "雨下得真大，幸好我们带了伞。",
+  "explanation": "幸好 + аз болсон шалтгаан.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l14-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：你怎么没迷路？ B：________有你的手机号码，我们才找到了你。",
+  "options": [
+   "幸好",
+   "稍微",
+   "果然",
+   "就是"
+  ],
+  "correct_answer": "幸好",
+  "explanation": "幸好……才……",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l14-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Бүгд амр гэж ятгасан ч тэр огт амрахгүй» — аль нь зөв бэ?",
+  "options": [
+   "大家都劝他休息，他幸好不休息。",
+   "大家都劝他休息，他稍微不休息。",
+   "大家都劝他休息，他果然不休息。",
+   "大家都劝他休息，他就是不休息。"
+  ],
+  "correct_answer": "大家都劝他休息，他就是不休息。",
+  "explanation": "就是不 + V — шийдэмгий.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l14-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Бодсоноор бороо орлоо» — аль нь зөв бэ?",
+  "options": [
+   "天气预报说有雨，稍微下雨了。",
+   "天气预报说有雨，幸好下雨了。",
+   "天气预报说有雨，就是下雨了。",
+   "天气预报说有雨，果然下雨了。"
+  ],
+  "correct_answer": "天气预报说有雨，果然下雨了。",
+  "explanation": "果然 — хүлээлттэй таарсан.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l14-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”为什么借了一万五千块钱去天津？",
+  "options": [
+   "要买火车票",
+   "要旅游",
+   "要买提包",
+   "孩子病得很严重，必须住院"
+  ],
+  "correct_answer": "孩子病得很严重，必须住院",
+  "explanation": "P1.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l14-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”为什么很害怕坐出租车？",
+  "options": [
+   "车费很贵",
+   "司机不和气",
+   "听说大城市的司机常常骗农村人",
+   "车里太脏"
+  ],
+  "correct_answer": "听说大城市的司机常常骗农村人",
+  "explanation": "P3.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l14-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "到了医院，司机说车费多少钱？",
+  "options": [
+   "一百块",
+   "九块",
+   "十九块",
+   "五百块"
+  ],
+  "correct_answer": "十九块",
+  "explanation": "P5.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l14-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "司机是怎么和“我”联系上的？",
+  "options": [
+   "在医院门口",
+   "包里有电话号码",
+   "有名片",
+   "有车牌号"
+  ],
+  "correct_answer": "包里有电话号码",
+  "explanation": "P8.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l14-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”拿出五百块钱，司机怎么做的？",
+  "options": [
+   "没看见",
+   "就是不要",
+   "要更多",
+   "接受了"
+  ],
+  "correct_answer": "就是不要",
+  "explanation": "P8.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l14-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн танд талархал илэрхийлэхэд зүгээр л «Юуны баярлалаа, энэ бол миний хийх ёстой зүйл» гэж хэлэхдээ аль нь тохиромжтой?",
+  "options": [
+   "谢什么！这是我应该做的。",
+   "谢谢你的帮助！",
+   "不用谢你的。",
+   "再见啦！"
+  ],
+  "correct_answer": "谢什么！这是我应该做的。",
+  "explanation": "谢什么.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l14-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Та гээсэн зүйлээ олсон хүнд тун талархсан. Аль нь тохиромжтой?",
+  "options": [
+   "幸好您没来，谢谢！",
+   "就是不谢谢您。",
+   "您果然是个坏人。",
+   "幸好遇到的是您，太谢谢了！"
+  ],
+  "correct_answer": "幸好遇到的是您，太谢谢了！",
+  "explanation": "幸好 + талархал.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l14-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 被 / 钱包 / 弄丢 / 我 / 了",
+  "options": [
+   "钱包我被弄丢了",
+   "我被钱包弄丢了",
+   "钱包被弄我丢了",
+   "钱包被我弄丢了"
+  ],
+  "correct_answer": "钱包被我弄丢了",
+  "explanation": "S + 被 + N + V.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l14-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

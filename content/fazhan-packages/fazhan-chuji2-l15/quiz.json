@@ -1,0 +1,579 @@
+[
+ {
+  "type": "choice",
+  "question": "«相识» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "тэмцэх",
+   "бие биедээ танилцах",
+   "холдох",
+   "хайрлах"
+  ],
+  "correct_answer": "бие биедээ танилцах",
+  "explanation": "相识 = хоёр талт танилцах.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l15-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们两家既不（ ），也没有任何关系。",
+  "options": [
+   "耐心",
+   "相同",
+   "相识",
+   "安慰"
+  ],
+  "correct_answer": "相识",
+  "explanation": "既不相识，也没有……",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l15-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«唯一» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "олон",
+   "бүгд",
+   "хоёр",
+   "цорын ганц"
+  ],
+  "correct_answer": "цорын ганц",
+  "explanation": "唯一 = цорын ганц.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l15-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这是他最（ ）的东西，别给他弄坏了。",
+  "options": [
+   "北上",
+   "相识",
+   "日子",
+   "心爱"
+  ],
+  "correct_answer": "心爱",
+  "explanation": "心爱的 — хайртай.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l15-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«安慰» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "ачих",
+   "бэлэглэх",
+   "тайвшруулах",
+   "хөөх"
+  ],
+  "correct_answer": "тайвшруулах",
+  "explanation": "安慰 = тайвшруулах.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l15-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "儿子天天都在担心，天天都在（ ）。",
+  "options": [
+   "收养",
+   "装",
+   "治",
+   "盼望"
+  ],
+  "correct_answer": "盼望",
+  "explanation": "盼望 — тэсэн ядан хүлээх.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l15-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«耐心点儿» гэдэг нь юу гэсэн үг вэ?",
+  "options": [
+   "арай тэвчээртэй бай",
+   "хурдан яв",
+   "сайн ус",
+   "тайван суу"
+  ],
+  "correct_answer": "арай тэвчээртэй бай",
+  "explanation": "耐心点儿.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l15-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她变化太大了，我（ ）认不出她来了。",
+  "options": [
+   "唯一",
+   "任何",
+   "几乎",
+   "相同"
+  ],
+  "correct_answer": "几乎",
+  "explanation": "几乎 = бараг.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l15-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«北上» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "өрнө зүг явах",
+   "умар зүг явах",
+   "урд зүг явах",
+   "гэртээ харих"
+  ],
+  "correct_answer": "умар зүг явах",
+  "explanation": "北上 / 南下.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l15-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«日子» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "өдөр хоног, амьдрал",
+   "эзэн",
+   "цаг",
+   "хонх"
+  ],
+  "correct_answer": "өдөр хоног, амьдрал",
+  "explanation": "日子.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l15-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小鸽子遇到了雷雨，（ ）了伤，飞落在我家的阳台上。",
+  "options": [
+   "治",
+   "养",
+   "受",
+   "收"
+  ],
+  "correct_answer": "受",
+  "explanation": "受了伤.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l15-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «gēzi» аль үгэнд таарах вэ?",
+  "options": [
+   "鸽子",
+   "日子",
+   "主人",
+   "腿子"
+  ],
+  "correct_answer": "鸽子",
+  "explanation": "鸽子 = gēzi.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l15-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«主人» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "эзэн",
+   "хүү",
+   "жолооч",
+   "зочин"
+  ],
+  "correct_answer": "эзэн",
+  "explanation": "主人 = эзэн.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l15-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Мундаг л юм, гэвч …» — аль нь зөв бэ?",
+  "options": [
+   "棒是棒，可是，它不会遇到雷雨吗？",
+   "是棒棒，可是，它不会遇到雷雨吗？",
+   "棒不棒是，可是，它不会遇到雷雨吗？",
+   "棒是，可是棒，它不会遇到雷雨吗？"
+  ],
+  "correct_answer": "棒是棒，可是，它不会遇到雷雨吗？",
+  "explanation": "A是A，可是……",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l15-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：烤鸭这么好吃，你为什么不吃了呢？ B：________，可是我不能吃得太多。",
+  "options": [
+   "好吃不是好吃",
+   "吃是好吃",
+   "好吃是好吃",
+   "好是好吃"
+  ],
+  "correct_answer": "好吃是好吃",
+  "explanation": "A是A，可是……",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l15-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тийрэг нисэх онгоц хурдан л юм, гэвч хэт үнэтэй» — аль нь зөв бэ?",
+  "options": [
+   "快是坐飞机快，可是太贵了。",
+   "坐飞机快是快，可是太贵了。",
+   "坐飞机快快是，可是太贵了。",
+   "坐飞机是快快，可是太贵了。"
+  ],
+  "correct_answer": "坐飞机快是快，可是太贵了。",
+  "explanation": "快是快.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l15-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би буцаж ирэх үед тэр аль хэдийн унтсан байв» — аль нь зөв бэ?",
+  "options": [
+   "当我回来时候的，他已经睡了。",
+   "当我回来的时候，他已经睡了。",
+   "我当回来的时候，他已经睡了。",
+   "当我回来的，他已经睡了时候。"
+  ],
+  "correct_answer": "当我回来的时候，他已经睡了。",
+  "explanation": "当……的时候.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l15-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "他毕业那年，玛丽已经结婚了。→ дахин бич:",
+  "options": [
+   "他毕业当的时候，玛丽已经结婚了。",
+   "当他毕业的时候，玛丽已经结婚了。",
+   "他毕业的时候当，玛丽已经结婚了。",
+   "当他毕业，玛丽已经结婚了的时候。"
+  ],
+  "correct_answer": "当他毕业的时候，玛丽已经结婚了。",
+  "explanation": "当……的时候.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l15-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тасалбар аль хэдийн авагдсан» — аль нь зөв бэ?",
+  "options": [
+   "车票已经买到了。",
+   "车票已经买。",
+   "已经车票买到了。",
+   "车票买已经到了。"
+  ],
+  "correct_answer": "车票已经买到了。",
+  "explanation": "Утгаараа идэвхгүй.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l15-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：我的自行车修好了吗？ B：你的自行车________。",
+  "options": [
+   "还没修好呢",
+   "没还修好",
+   "修好还没呢",
+   "修还没好"
+  ],
+  "correct_answer": "还没修好呢",
+  "explanation": "Adv + V + үр дүн.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l15-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Ямар ч бэрхшээлээс айдаггүй» — аль нь зөв бэ?",
+  "options": [
+   "他不任何怕困难。",
+   "他任何不怕困难。",
+   "他不怕任何困难。",
+   "他不怕任何的困难。"
+  ],
+  "correct_answer": "他不怕任何困难。",
+  "explanation": "任何 + N, 的 хэрэггүй.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l15-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Түүний хоолой хэтэрхий намуу, бараг сонсогдохгүй» — аль нь зөв бэ?",
+  "options": [
+   "他的声音太小了，几乎很听不见。",
+   "几乎他的声音太小了，听不见。",
+   "他的声音太小了，几乎听不见。",
+   "他的声音太小了，听几乎不见。"
+  ],
+  "correct_answer": "他的声音太小了，几乎听不见。",
+  "explanation": "几乎 + V.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l15-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр толь бичгийг зээлээд явчихсан» (агентгүй) — аль нь зөв бэ?",
+  "options": [
+   "那本词典叫借走了。",
+   "那本词典让借走了。",
+   "那本词典被借走了。",
+   "那本词典给借走了。"
+  ],
+  "correct_answer": "那本词典被借走了。",
+  "explanation": "Агентгүй бол зөвхөн 被.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l15-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Компьютерийг тэр эвдчихсэн» (ярианы хэлэнд) — аль нь зөв бэ?",
+  "options": [
+   "电脑他让弄坏了。",
+   "电脑让他给弄坏了。",
+   "电脑弄让他坏了。",
+   "电脑让弄坏了。"
+  ],
+  "correct_answer": "电脑让他给弄坏了。",
+  "explanation": "让 + агент.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l15-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "两个家庭唯一相同的是什么？",
+  "options": [
+   "都有一个十岁的儿子",
+   "都认识",
+   "都养狗",
+   "都在北方"
+  ],
+  "correct_answer": "都有一个十岁的儿子",
+  "explanation": "P1.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l15-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "南方父子的信鸽叫什么名字？",
+  "options": [
+   "小白",
+   "大白",
+   "小雨点儿",
+   "雷雨"
+  ],
+  "correct_answer": "小雨点儿",
+  "explanation": "P2.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l15-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "小雨点儿是什么时候回来的？",
+  "options": [
+   "第二天",
+   "一年后",
+   "一个星期后",
+   "几个月以后"
+  ],
+  "correct_answer": "几个月以后",
+  "explanation": "P7.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l15-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "小雨点儿腿上多了什么？",
+  "options": [
+   "一个铃",
+   "一封信",
+   "一根绳子",
+   "一张照片"
+  ],
+  "correct_answer": "一封信",
+  "explanation": "P7.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l15-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "南北两家后来成了什么关系？",
+  "options": [
+   "对手",
+   "最好的朋友",
+   "邻居",
+   "同学"
+  ],
+  "correct_answer": "最好的朋友",
+  "explanation": "P12.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l15-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн санаа зовж байхад «Тэвчээртэй бай, заавал ирнэ» гэж хэлэхдээ аль нь тохиромжтой?",
+  "options": [
+   "盼望点儿，它一定会回来的。",
+   "你别耐心，它一定会回来的。",
+   "安慰点儿，它一定会回来的。",
+   "耐心点儿，它一定会回来的。"
+  ],
+  "correct_answer": "耐心点儿，它一定会回来的。",
+  "explanation": "耐心点儿.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l15-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз нь гунигтай байна; та түүнийг тайвшруулахыг санал болгов. Аль нь тохиромжтой?",
+  "options": [
+   "我们治治她吧。",
+   "我们收养收养她吧。",
+   "我们相识相识她吧。",
+   "我们安慰安慰她吧。"
+  ],
+  "correct_answer": "我们安慰安慰她吧。",
+  "explanation": "安慰安慰.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l15-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 当 / 的 / 回来 / 我 / 时候 / ，/ 他已经睡了",
+  "options": [
+   "我当回来的时候，他已经睡了",
+   "当我回来的时候，他已经睡了",
+   "当我的回来时候，他已经睡了",
+   "当回来我的时候，他已经睡了"
+  ],
+  "correct_answer": "当我回来的时候，他已经睡了",
+  "explanation": "当……的时候.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l15-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,578 @@
+[
+ {
+  "type": "choice",
+  "question": "«改变» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "өөрчлөх",
+   "мартах",
+   "тарааж өгөх",
+   "инээмсэглэх"
+  ],
+  "correct_answer": "өөрчлөх",
+  "explanation": "改变 = өөрчлөх.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个礼物（ ）了他的人生。",
+  "options": [
+   "表示",
+   "包括",
+   "改变",
+   "微笑"
+  ],
+  "correct_answer": "改变",
+  "explanation": "改变人生 — амьдралыг өөрчлөх.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "就要考试了，大家心里都很（ ）。",
+  "options": [
+   "紧张",
+   "可爱",
+   "幸福",
+   "特殊"
+  ],
+  "correct_answer": "紧张",
+  "explanation": "紧张 = түгшүүртэй.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师要送给每个人一件（ ）的礼物。",
+  "options": [
+   "激动",
+   "幸福",
+   "热烈",
+   "同样"
+  ],
+  "correct_answer": "同样",
+  "explanation": "同样的礼物 — адил бэлэг.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "还有一件（ ）的礼物送给了班里最可爱的同学。",
+  "options": [
+   "特殊",
+   "同样",
+   "美丽",
+   "紧张"
+  ],
+  "correct_answer": "特殊",
+  "explanation": "特殊的礼物 — онцгой бэлэг.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个数字（ ）班里有几个自己不喜欢的人。",
+  "options": [
+   "改变",
+   "发",
+   "表示",
+   "响"
+  ],
+  "correct_answer": "表示",
+  "explanation": "表示 — заах.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«微笑» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "алга ташилт",
+   "нулимс",
+   "инээмсэглэх",
+   "үнсэх"
+  ],
+  "correct_answer": "инээмсэглэх",
+  "explanation": "微笑 = инээмсэглэх.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«掌声» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "алга ташилт",
+   "дух",
+   "чих",
+   "цаас"
+  ],
+  "correct_answer": "алга ташилт",
+  "explanation": "掌声 = алга ташилт.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们结婚以后生活很（ ），现在又有了可爱的宝宝。",
+  "options": [
+   "特殊",
+   "热烈",
+   "紧张",
+   "幸福"
+  ],
+  "correct_answer": "幸福",
+  "explanation": "幸福 — аз жаргалтай.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l09-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我激动得流下了（ ）。",
+  "options": [
+   "纪念品",
+   "耳朵",
+   "眼泪",
+   "额头"
+  ],
+  "correct_answer": "眼泪",
+  "explanation": "眼泪 = нулимс.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l09-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bānzhǔrèn» аль үгэнд таарах вэ?",
+  "options": [
+   "班主任",
+   "纪念品",
+   "数字",
+   "高考"
+  ],
+  "correct_answer": "班主任",
+  "explanation": "班主任 = bānzhǔrèn.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l09-q11",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«高考» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "тоглоом",
+   "ангийн багш",
+   "дурсгалын зүйл",
+   "их сургуулийн элсэлтийн шалгалт"
+  ],
+  "correct_answer": "их сургуулийн элсэлтийн шалгалт",
+  "explanation": "高考 = их сургуулийн элсэлтийн улсын шалгалт.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l09-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老师（ ）给每个人一张纸。",
+  "options": [
+   "响",
+   "吻",
+   "发",
+   "轻"
+  ],
+  "correct_answer": "发",
+  "explanation": "发给 — тарааж өгөх.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l09-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Ээж намайг гэртээ харь гэв» гэхэд аль нь зөв бэ?",
+  "options": [
+   "妈妈我让回家。",
+   "妈妈让回家我。",
+   "妈妈回家让我。",
+   "妈妈让我回家。"
+  ],
+  "correct_answer": "妈妈让我回家。",
+  "explanation": "N1+让+N2+V.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l09-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Ээж намайг дүүтэйгээ архи уухыг зөвшөөрдөггүй» гэхэд аль нь зөв бэ?",
+  "options": [
+   "妈妈不让我和弟弟喝酒。",
+   "妈妈让不我和弟弟喝酒。",
+   "妈妈我不让和弟弟喝酒。",
+   "妈妈让我不和弟弟喝酒。"
+  ],
+  "correct_answer": "妈妈不让我和弟弟喝酒。",
+  "explanation": "不 нь 让-ийн өмнө.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l09-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：你怎么来了？ B：张老师（ ）我来帮助你们。",
+  "options": [
+   "把",
+   "叫",
+   "对",
+   "被"
+  ],
+  "correct_answer": "叫",
+  "explanation": "N1+叫+N2+V.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l09-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我爱吃中国菜，（ ）四川菜。",
+  "options": [
+   "特别",
+   "太",
+   "更是不",
+   "特别是"
+  ],
+  "correct_answer": "特别是",
+  "explanation": "，特别是 — ялангуяа.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l09-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Танайд өвөл хүйтэн үү? — Маш хүйтэн, ялангуяа нэгдүгээр сард» гэхэд аль нь зөв бэ?",
+  "options": [
+   "很冷，特别是一月。",
+   "特别是一月，很冷。",
+   "很冷，特别是的一月。",
+   "很冷，特别一月。"
+  ],
+  "correct_answer": "很冷，特别是一月。",
+  "explanation": "特别是 хойд хэсэгт.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l09-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我的汉语（ ）他说得好。（В нь илүү сайн）",
+  "options": [
+   "比",
+   "不比",
+   "不如",
+   "没比"
+  ],
+  "correct_answer": "不如",
+  "explanation": "A不如B+Adj.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l09-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Миний өрөө Мартингийнхаас жижиг» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我的房间比不如马丁的大。",
+   "我的房间不如马丁的大。",
+   "我的房间不如大马丁的。",
+   "我的房间不如马丁的很大。"
+  ],
+  "correct_answer": "我的房间不如马丁的大。",
+  "explanation": "不如 + B + Adj.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l09-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他做的饭比我做的好吃多了。→",
+  "options": [
+   "他做的饭不如我做的好吃。",
+   "我做的饭比不如他做的好吃。",
+   "我做的饭不如他做的好吃。",
+   "他做的饭没有比我做的好吃。"
+  ],
+  "correct_answer": "我做的饭不如他做的好吃。",
+  "explanation": "А, В-г солино.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l09-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "东京冬天（ ）北京这么冷。（хүйтэн биш）",
+  "options": [
+   "像",
+   "更",
+   "不比",
+   "没有"
+  ],
+  "correct_answer": "没有",
+  "explanation": "没有 + B + 这么 + Adj.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l09-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：东京冬天（ ）北京冷吗？ B：没有。",
+  "options": [
+   "像",
+   "比",
+   "不如",
+   "有"
+  ],
+  "correct_answer": "有",
+  "explanation": "A有B+Adj+吗？",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l09-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Одоо хэн надтай адил аз жаргалтай вэ?» гэхэд аль нь зөв бэ?",
+  "options": [
+   "现在谁有我这么幸福？",
+   "现在谁有幸福我这么？",
+   "现在谁有这么我幸福？",
+   "现在谁我有这么幸福？"
+  ],
+  "correct_answer": "现在谁有我这么幸福？",
+  "explanation": "谁有我这么Adj.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l09-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "高考结束后，“我”的班级做了什么？",
+  "options": [
+   "去旅行了",
+   "参加了考试",
+   "开了一个告别晚会",
+   "开了运动会"
+  ],
+  "correct_answer": "开了一个告别晚会",
+  "explanation": "P2: 我们班开了一个告别晚会。",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l09-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "老师让每个人在纸上写的数字表示什么？",
+  "options": [
+   "自己的年龄",
+   "自己的成绩",
+   "班里有几个男同学",
+   "班里有几个自己不喜欢的人"
+  ],
+  "correct_answer": "班里有几个自己不喜欢的人",
+  "explanation": "P4: 这个数字表示班里有几个自己不喜欢的人。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l09-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "男同学为什么特别紧张？",
+  "options": [
+   "因为他们不想要礼物",
+   "因为考试没通过",
+   "因为他们没写数字",
+   "因为所有的男同学都喜欢这位美丽的班主任"
+  ],
+  "correct_answer": "因为所有的男同学都喜欢这位美丽的班主任",
+  "explanation": "P5: 因为所有的男同学都喜欢这位美丽的班主任。",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l09-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "老师为什么说刘文辉是最可爱的同学？",
+  "options": [
+   "因为他写的数字是“0”",
+   "因为他最高",
+   "因为他最先交了纸",
+   "因为他的成绩最好"
+  ],
+  "correct_answer": "因为他写的数字是“0”",
+  "explanation": "P7: 全班只有刘文辉同学写的数字是“0”。",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l09-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "这件事对“我”有什么影响？",
+  "options": [
+   "“我”的人生发生了变化",
+   "“我”不喜欢老师了",
+   "“我”不想毕业了",
+   "“我”成绩变差了"
+  ],
+  "correct_answer": "“我”的人生发生了变化",
+  "explanation": "P9: 从这一刻开始，我的人生发生了变化。",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l09-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：你们那儿吃的东西便宜吗？ B：很便宜，",
+  "options": [
+   "是特别水果。",
+   "特别不是水果。",
+   "特别是水果。",
+   "特别水果。"
+  ],
+  "correct_answer": "特别是水果。",
+  "explanation": "特别是 + онцгой зүйл.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l09-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 公司 / 叫 / 去 / 我 / 四川 / 工作",
+  "options": [
+   "公司去叫我四川工作",
+   "我叫公司去四川工作",
+   "公司叫我去四川工作"
+  ],
+  "correct_answer": "公司叫我去四川工作",
+  "explanation": "N1+叫+N2+V дараалал.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l09-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Шалгалтад муу оноо авсан найз «миний дүн бусдаас муу» гэж байна. Чи үүнийг яаж хэлэх вэ?",
+  "options": [
+   "我的成绩别人不如好。",
+   "我的成绩不如别人好。",
+   "我的成绩不如别人很好。",
+   "我的成绩比不如别人好。"
+  ],
+  "correct_answer": "我的成绩不如别人好。",
+  "explanation": "A不如B+Adj.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l09-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

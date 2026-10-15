@@ -1,0 +1,579 @@
+[
+ {
+  "type": "choice",
+  "question": "«娶» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "хуурах",
+   "эхнэр авах (эр хүн)",
+   "сонгох",
+   "нөхөрт гарах"
+  ],
+  "correct_answer": "эхнэр авах (эр хүн)",
+  "explanation": "娶 = эр хүн эхнэр авах.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«皇帝» гэж хэн бэ?",
+  "options": [
+   "тогооч",
+   "хөтөч",
+   "багш",
+   "хаан (эзэн хаан)"
+  ],
+  "correct_answer": "хаан (эзэн хаан)",
+  "explanation": "皇帝 = хаан.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小王（ ）说：“要是一百年前你来到中国……”",
+  "options": [
+   "尊重",
+   "骗人",
+   "吃惊",
+   "开玩笑"
+  ],
+  "correct_answer": "开玩笑",
+  "explanation": "开玩笑 = хошигнох.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "中国很（ ）妇女，女人结婚以后都不用改姓。",
+  "options": [
+   "游览",
+   "尊重",
+   "蘸",
+   "噎"
+  ],
+  "correct_answer": "尊重",
+  "explanation": "尊重 = хүндлэх.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«豆浆» гэж юу вэ?",
+  "options": [
+   "банш",
+   "соёоны сүү",
+   "шарсан гурилан савх",
+   "будаа"
+  ],
+  "correct_answer": "соёоны сүү",
+  "explanation": "豆浆 = соёоны сүү.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«油条» гэж юу вэ?",
+  "options": [
+   "соёоны сүү",
+   "талх",
+   "жигнэмэг",
+   "юутяо (шарсан гурилан савх)"
+  ],
+  "correct_answer": "юутяо (шарсан гурилан савх)",
+  "explanation": "油条.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "黛比（ ）地看着小王，不懂他说的是什么意思。",
+  "options": [
+   "着急",
+   "放心",
+   "高兴",
+   "吃惊"
+  ],
+  "correct_answer": "吃惊",
+  "explanation": "吃惊地 = гайхан.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你还说中国尊重妇女呢，（ ）。",
+  "options": [
+   "开玩笑",
+   "骗人",
+   "吃惊",
+   "尊重"
+  ],
+  "correct_answer": "骗人",
+  "explanation": "骗人 = хуурах, худлаа.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "黛比喜欢得（ ），拿起油条大口大口地吃起来。",
+  "options": [
+   "不得了",
+   "改",
+   "选中",
+   "开玩笑"
+  ],
+  "correct_answer": "不得了",
+  "explanation": "喜欢得不得了.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l05-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«蘸着吃» дахь «蘸» ямар утгатай вэ?",
+  "options": [
+   "тээглэх",
+   "зогсох",
+   "дүрэх",
+   "заах"
+  ],
+  "correct_answer": "дүрэх",
+  "explanation": "蘸 = дүрэх, дэвтээх.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l05-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«婆婆» гэж хэн бэ?",
+  "options": [
+   "хадам аав",
+   "эгч",
+   "эмээ",
+   "хадам ээж (нөхрийн ээж)"
+  ],
+  "correct_answer": "хадам ээж (нөхрийн ээж)",
+  "explanation": "婆婆 = нөхрийн ээж.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l05-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«改姓» гэж юу вэ?",
+  "options": [
+   "гэрлэх",
+   "овог солих",
+   "хуурах",
+   "нэр өгөх"
+  ],
+  "correct_answer": "овог солих",
+  "explanation": "改姓 = овог солих.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l05-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yóulǎn» аль үгэнд таарах вэ?",
+  "options": [
+   "尊重",
+   "游览",
+   "早餐",
+   "吃惊"
+  ],
+  "correct_answer": "游览",
+  "explanation": "游览 = yóulǎn.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l05-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Би хөгжим сонсож яваад машин жолоодох дуртай» — аль нь зөв бэ?",
+  "options": [
+   "我喜欢听着开车音乐。",
+   "我喜欢听着音乐开车。",
+   "我喜欢听音乐着开车。",
+   "我喜欢着听音乐开车。"
+  ],
+  "correct_answer": "我喜欢听着音乐开车。",
+  "explanation": "V₁着 + O + V₂.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l05-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр шүхрээ барьсаар явав» — аль нь зөв бэ?",
+  "options": [
+   "她拿伞着走了。",
+   "她拿着伞走了。",
+   "她着拿伞走了。",
+   "她拿了着伞走。"
+  ],
+  "correct_answer": "她拿着伞走了。",
+  "explanation": "V₁+着+O+V₂+了.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l05-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Нийтийн автобус байхгүй тул алхаж гэртээ харина» — аль нь зөв бэ?",
+  "options": [
+   "只好走回着家。",
+   "只好着走回家。",
+   "只好走了着回家。",
+   "只好走着回家。"
+  ],
+  "correct_answer": "只好走着回家。",
+  "explanation": "走着回家.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l05-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Бид кофе ууж, хамт чатлаж байна» (V₁着V₂) — аль нь зөв бэ?",
+  "options": [
+   "我们喝咖啡着聊天儿。",
+   "我们喝了着咖啡聊天儿。",
+   "我们着喝咖啡聊天儿。",
+   "我们喝着咖啡聊天儿。"
+  ],
+  "correct_answer": "我们喝着咖啡聊天儿。",
+  "explanation": "V₁着 + O + V₂.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l05-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би ням гарагт хаашаа ч явахгүй» — аль нь зөв бэ?",
+  "options": [
+   "星期天，哪儿我不都去。",
+   "星期天，我都哪儿不去。",
+   "星期天，我不去哪儿都。",
+   "星期天，我哪儿都不去。"
+  ],
+  "correct_answer": "星期天，我哪儿都不去。",
+  "explanation": "哪儿 + 都 + 不 + V.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l05-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр алдартай тул хэн ч түүнийг мэднэ» — аль нь зөв бэ?",
+  "options": [
+   "他很有名，都谁认识他。",
+   "他很有名，谁都认识他。",
+   "他很有名，认识谁都他。",
+   "他很有名，谁认识都他。"
+  ],
+  "correct_answer": "他很有名，谁都认识他。",
+  "explanation": "谁 + 都 + V.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l05-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«也» нь ихэвчлэн үгүйсгэлд ордог. Аль нь зөв бэ?",
+  "options": [
+   "我谁也认识他。",
+   "我什么也想吃。",
+   "我哪儿也想去。",
+   "我哪儿也不想去。"
+  ],
+  "correct_answer": "我哪儿也不想去。",
+  "explanation": "«也» нь үгүйсгэлд.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l05-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Өнөөдөр үнэхээр завгүй» — аль нь зөв бэ?",
+  "options": [
+   "今天不得了忙得。",
+   "今天很忙不得了。",
+   "今天忙得不得了。",
+   "今天忙不得了得。"
+  ],
+  "correct_answer": "今天忙得不得了。",
+  "explanation": "V/Adj + 得 + 不得了.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l05-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи энд халуун биш гэсэн биз дээ, би халуунд үхэх шахаж байна» — аль нь зөв бэ?",
+  "options": [
+   "你还说这儿不热，我都快热死。",
+   "你还说不热这儿，我都快热死了。",
+   "你还说这儿不热呢，我都快热死了。",
+   "你说还这儿不热呢，我都快热死了。"
+  ],
+  "correct_answer": "你还说这儿不热呢，我都快热死了。",
+  "explanation": "还说……呢.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l05-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Би Бээжинд гурван удаа очиж үзсэн» — аль нь зөв бэ?",
+  "options": [
+   "我去过三次北京。",
+   "我去三次过北京。",
+   "我过去三次北京。",
+   "我去着三次北京。"
+  ],
+  "correct_answer": "我去过三次北京。",
+  "explanation": "V + 过 + тоо + 次.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l05-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би түүнийг хэзээ ч уулзаж үзээгүй» — аль нь зөв бэ?",
+  "options": [
+   "我从来没见着她。",
+   "我从来不有见过她。",
+   "我从来没有见过她。",
+   "我从来没有见了她。"
+  ],
+  "correct_answer": "我从来没有见过她。",
+  "explanation": "没(有) + V + 过.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l05-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "黛比是哪国人？",
+  "options": [
+   "美国人",
+   "英国人",
+   "日本人",
+   "德国人"
+  ],
+  "correct_answer": "美国人",
+  "explanation": "P1: 美国姑娘.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l05-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "黛比说中国的皇帝奇怪，因为皇帝：",
+  "options": [
+   "不喜欢旅行",
+   "没有孩子",
+   "不吃饭",
+   "娶那么多的妻子"
+  ],
+  "correct_answer": "娶那么多的妻子",
+  "explanation": "P2.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l05-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "小王为什么说“蘸着吃”？",
+  "options": [
+   "怕黛比噎着",
+   "想让黛比站起来",
+   "想开玩笑",
+   "不喜欢油条"
+  ],
+  "correct_answer": "怕黛比噎着",
+  "explanation": "P3: 小王怕她噎着.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l05-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "黛比把“蘸着吃”听成了：",
+  "options": [
+   "蘸着喝",
+   "吃着蘸",
+   "站着吃",
+   "坐着吃"
+  ],
+  "correct_answer": "站着吃",
+  "explanation": "P5.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l05-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "黛比为什么说小王骗人？",
+  "options": [
+   "油条不好吃",
+   "她没吃早饭",
+   "她觉得中国不尊重妇女，因为只有她站着吃",
+   "小王娶了很多妻子"
+  ],
+  "correct_answer": "她觉得中国不尊重妇女，因为只有她站着吃",
+  "explanation": "P5.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l05-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чамд «хаана хоол идэх вэ?» гэж асуухад «таных л байна» гэж хэлэхийг хүсвэл:",
+  "options": [
+   "去哪儿都行，听你的。",
+   "谁都去。",
+   "去哪儿都不行。",
+   "你还说去哪儿呢。"
+  ],
+  "correct_answer": "去哪儿都行，听你的。",
+  "explanation": "哪儿都 — хаана ч болно.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l05-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Таны хошигнолоос найз чинь бухимдсан. Тайлбарлах өгүүлбэр аль нь вэ?",
+  "options": [
+   "对不起，我是在开玩笑。",
+   "对不起，我改了。",
+   "对不起，我吃惊了。",
+   "对不起，我选中了你。"
+  ],
+  "correct_answer": "对不起，我是在开玩笑。",
+  "explanation": "开玩笑 — хошигнож байсан.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l05-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 黛比 / 拿着 / 油条 / 慢慢地 / 站了起来",
+  "options": [
+   "黛比拿着油条慢慢地站了起来",
+   "黛比慢慢地拿着站了起来油条",
+   "拿着黛比油条慢慢地站了起来",
+   "黛比油条拿着站慢慢地了起来"
+  ],
+  "correct_answer": "黛比拿着油条慢慢地站了起来",
+  "explanation": "V₁+着+O+V₂.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l05-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

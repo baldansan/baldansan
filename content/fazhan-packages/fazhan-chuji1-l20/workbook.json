@@ -1,0 +1,377 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 一、熟读下面的词语，并写出拼音 — үгийг чанга уншаад пиньинь бич",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "一些",
+      "answer": "yìxiē",
+      "explanation_mn": "生词 (课文一)."
+     },
+     {
+      "n": 2,
+      "question_zh": "欢迎",
+      "answer": "huānyíng",
+      "explanation_mn": "生词 (课文二)."
+     },
+     {
+      "n": 3,
+      "question_zh": "电视迷",
+      "answer": "diànshìmí",
+      "explanation_mn": "迷 (课文三)."
+     },
+     {
+      "n": 4,
+      "question_zh": "丰富",
+      "answer": "fēngfù",
+      "explanation_mn": "丰富 — баялаг."
+     },
+     {
+      "n": 5,
+      "question_zh": "面条",
+      "answer": "miàntiáo",
+      "explanation_mn": "生词 (课文二)."
+     },
+     {
+      "n": 6,
+      "question_zh": "快餐店",
+      "answer": "kuàicāndiàn",
+      "explanation_mn": "生词 (课文一)."
+     },
+     {
+      "n": 7,
+      "question_zh": "舒服",
+      "answer": "shūfu",
+      "explanation_mn": "生词 (课文一)."
+     },
+     {
+      "n": 8,
+      "question_zh": "外国",
+      "answer": "wàiguó",
+      "explanation_mn": "生词 (课文一)."
+     },
+     {
+      "n": 9,
+      "question_zh": "收音机",
+      "answer": "shōuyīnjī",
+      "explanation_mn": "生词 (课文三)."
+     }
+    ],
+    "instruction_zh": "一、熟读下面的词语，并写出拼音"
+   },
+   {
+    "part": 2,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 二、模仿例子组词 — жишээгээр үг зохио (____迷, ____馆, ____国, ____机, ____茶, ____语)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "____迷",
+      "answer": "球迷 / 电视迷",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 2,
+      "question_zh": "____馆",
+      "answer": "体育馆 / 图书馆",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "____国",
+      "answer": "中国 / 外国",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 4,
+      "question_zh": "____机",
+      "answer": "手机 / 电视机",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 5,
+      "question_zh": "____茶",
+      "answer": "绿茶 / 红茶",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 6,
+      "question_zh": "____语",
+      "answer": "外语 / 日语",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "二、模仿例子组词"
+   },
+   {
+    "part": 3,
+    "type": "word",
+    "instruction_mn": "Үг сонгож нөхөх дасгал · 三、选词填空 — өгөгдсөн үгээс сонго (走 到 在 满)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我坐____教室里上课。",
+      "answer": "在",
+      "explanation_mn": "坐在 (V + 在)."
+     },
+     {
+      "n": 2,
+      "question_zh": "你们学____二十一课了吗？",
+      "answer": "到",
+      "explanation_mn": "学到 (V + 到, хүрэх)."
+     },
+     {
+      "n": 3,
+      "question_zh": "他带____了我的书。",
+      "answer": "走",
+      "explanation_mn": "带走."
+     },
+     {
+      "n": 4,
+      "question_zh": "我住____留学生宿舍。",
+      "answer": "在",
+      "explanation_mn": "住在."
+     },
+     {
+      "n": 5,
+      "question_zh": "车里已经坐____了人。",
+      "answer": "满",
+      "explanation_mn": "坐满."
+     },
+     {
+      "n": 6,
+      "question_zh": "他不在这儿了，他上星期搬____了。",
+      "answer": "走",
+      "explanation_mn": "搬走."
+     }
+    ],
+    "instruction_zh": "三、选词填空"
+   },
+   {
+    "part": 4,
+    "type": "sentence",
+    "instruction_mn": "Харилцан яриа гүйцээх дасгал · 四、用所给的词语完成对话 — өгөгдсөн үгээр яриаг гүйцээ",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "A：这家饭馆的菜怎么样？ B：____。（又……又……）",
+      "answer": "这家饭馆的菜又好吃又便宜",
+      "explanation_mn": "参考答案: 又好吃又便宜."
+     },
+     {
+      "n": 2,
+      "question_zh": "A：____？（做什么） B：昨天晚上我去看电影了。",
+      "answer": "昨天晚上你做什么了",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "A：____？（怎么样） B：非常有意思。",
+      "answer": "电影怎么样",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 4,
+      "question_zh": "A：你最近忙吗？ B：我很忙。 A：你为什么____？（那么） B：工作太多了。",
+      "answer": "那么忙",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 5,
+      "question_zh": "A：今天中午我们一起吃饭吧。 B：____！（主意）",
+      "answer": "好主意",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 6,
+      "question_zh": "A：今天下午你有事吗？ B：有事。____。（对了）",
+      "answer": "对了，今天上午林娜给你打电话了",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 7,
+      "question_zh": "A：你去超市了？ B：对，我去____。（一些）",
+      "answer": "买了一些水果",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 8,
+      "question_zh": "A：请问您要什么水果？ B：我买几个苹果。 A：____？（别的） B：我还要几根香蕉。",
+      "answer": "您还要别的吗",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 9,
+      "question_zh": "A：这个人你知道吗？ B：知道，他____。（有名）",
+      "answer": "他是一个很有名的人",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "四、用所给的词语完成对话"
+   },
+   {
+    "part": 5,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 五、请你上网查一下这些快餐店的电话号码 — 麦当劳, 肯德基, 必胜客, 真功夫, 马兰拉面, 吉野家 хоолны газрын утасны дугаарыг интернетээс ол",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "麦当劳 · 肯德基 · 必胜客 · 真功夫 · 马兰拉面 · 吉野家 的电话号码",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Өөрөө хайж олно — нээлттэй."
+     }
+    ],
+    "instruction_zh": "五、请你上网查一下这些快餐店的电话号码"
+   },
+   {
+    "part": 6,
+    "type": "word",
+    "instruction_mn": "Текстээс үг сэргээж нөхөх дасгал · 六、阅读短文，并选词填空 — өгөгдсөн үгээр хоосон зайг нөх (有时候 送到 平时 方便 或者 经常)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我____不常在家吃饭，",
+      "answer": "平时",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 2,
+      "question_zh": "____在食堂吃饭，",
+      "answer": "经常",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 3,
+      "question_zh": "____也去饭馆",
+      "answer": "有时候",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 4,
+      "question_zh": "饭馆____快餐店。",
+      "answer": "或者",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 5,
+      "question_zh": "外卖可以____家里，",
+      "answer": "送到",
+      "explanation_mn": "参考答案."
+     },
+     {
+      "n": 6,
+      "question_zh": "特别____。",
+      "answer": "方便",
+      "explanation_mn": "参考答案."
+     }
+    ],
+    "instruction_zh": "六、阅读短文，并选词填空"
+   },
+   {
+    "part": 7,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 一、你知道下面这些快餐店的名字吗？请你念一念 — түргэн хоолны газрын нэрийг чанга унш",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "麦当劳 Màidāngláo · 肯德基 Kěndéjī · 必胜客 Bìshèngkè · 真功夫 Zhēngōngfu · 马兰拉面 Mǎlán Lāmiàn · 吉野家 Jíyějiā",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Нэрээ чанга унш."
+     }
+    ],
+    "instruction_zh": "课堂活动：一、你知道下面这些快餐店的名字吗？请你念一念"
+   },
+   {
+    "part": 8,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 二、两人一组，根据实际情况进行问答练习 — бодит байдлаа хэлж асуулт хариулт хий",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你现在住在哪儿？",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "V + 在."
+     },
+     {
+      "n": 2,
+      "question_zh": "谁坐在你前边？",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "V + 在."
+     },
+     {
+      "n": 3,
+      "question_zh": "他的书放在哪儿？",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "放 + 在."
+     },
+     {
+      "n": 4,
+      "question_zh": "老师站在哪儿？",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "站 + 在."
+     },
+     {
+      "n": 5,
+      "question_zh": "你的笔放在哪儿了？",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "放 + 在."
+     },
+     {
+      "n": 6,
+      "question_zh": "我们现在学到第几课了？",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "学 + 到."
+     },
+     {
+      "n": 7,
+      "question_zh": "下课以后，你回到宿舍/家一般几点？",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "回 + 到."
+     }
+    ],
+    "instruction_zh": "课堂活动：二、两人一组，根据实际情况进行问答练习"
+   },
+   {
+    "part": 9,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 写汉字 — дараах ханзуудыг дэвтэртээ бич (少 光 当 堂 常 分 公 前 关 共 兴 典)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "少　光　当　堂　常　分　公　前　关　共　兴　典",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "小/⺌: 少 光 当 堂 常 · 八/丷: 分 公 前 关 共 兴 典."
+     }
+    ],
+    "instruction_zh": "写汉字"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичгийн дасгал · 综合练习 六 + 写汉字 — өөрийн хоолны хэвшлийг бич (少·光·当·堂·常·分·公·前·关·共·兴·典)",
+    "question_zh": "先在练习本上写汉字：少、光、当、堂、常、分、公、前、关、共、兴、典。然后用“经常”“又……又……”“送到”写写你平时在哪儿吃饭。",
+    "answer": "我平时不常在家吃饭，经常在食堂吃饭，有时候也去饭馆或者快餐店。周末我常常叫外卖。外卖可以送到家里，特别方便。那个快餐店的菜又好吃又便宜。",
+    "explanation_mn": "Загвар эссе (zh/mn) texts.json → mainText.writingSample-д. Нээлттэй даалгавар — автомат шалгахгүй."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ярианы дасгал · 四、用所给的词语完成对话 — «又……又……» ашиглан ресторан тухай хариул",
+    "question_zh": "A：这家饭馆的菜怎么样？ B：________。（又……又……）",
+    "answer": "这家饭馆的菜又好吃又便宜",
+    "explanation_mn": "Хоолны сайн талыг хоёр шинжээр хэлнэ: «ч амттай, ч хямд». 参考答案: 又好吃又便宜。"
+   }
+  ]
+ },
+ "answerSource": "发展汉语 初级综合 I 参考答案 (答案本, «第二十课» 综合练习) — 二 (6), 三 (6), 四 (9), 六 (6) тулгасан. 一 (пиньинь), 五 (утасны дугаар), 课堂活动, 写汉字 — нээлттэй даалгавар."
+}

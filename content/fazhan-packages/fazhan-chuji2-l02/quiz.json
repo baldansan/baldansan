@@ -1,0 +1,579 @@
+[
+ {
+  "type": "choice",
+  "question": "«毕业» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "эхлэх",
+   "ажилд орох",
+   "төгсөх (сургууль)",
+   "шилжих"
+  ],
+  "correct_answer": "төгсөх (сургууль)",
+  "explanation": "毕业 = төгсөх.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）以后，我就去上海工作。",
+  "options": [
+   "毕业",
+   "小心",
+   "保护",
+   "害怕"
+  ],
+  "correct_answer": "毕业",
+  "explanation": "毕业以后 = төгссөний дараа.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "旅行的时候，我很（ ）生病，因为有时候找不到医院。",
+  "options": [
+   "消毒",
+   "毕业",
+   "害怕",
+   "自由"
+  ],
+  "correct_answer": "害怕",
+  "explanation": "害怕 = айх.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的电脑有（ ）了，怎么办？",
+  "options": [
+   "垃圾",
+   "环境",
+   "病毒",
+   "自由"
+  ],
+  "correct_answer": "病毒",
+  "explanation": "病毒 = вирус.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "路上车多人多，骑自行车（ ）一点儿！",
+  "options": [
+   "自由",
+   "消毒",
+   "毕业",
+   "小心"
+  ],
+  "correct_answer": "小心",
+  "explanation": "小心 = болгоомжтой бай.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«脏» гэдэг үгийн эсрэг утгатай үг аль нь вэ?",
+  "options": [
+   "旧",
+   "小",
+   "干净",
+   "空"
+  ],
+  "correct_answer": "干净",
+  "explanation": "脏 (бохир) ↔ 干净 (цэвэр).",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«乱七八糟» гэсэн хэлцийн утга аль нь вэ?",
+  "options": [
+   "маш цэвэрхэн",
+   "эмх замбараагүй",
+   "маш дулаан",
+   "маш хурдан"
+  ],
+  "correct_answer": "эмх замбараагүй",
+  "explanation": "乱七八糟 = замбараагүй.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你用电脑的时间别太长了，（ ）好自己的眼睛。",
+  "options": [
+   "堆",
+   "保护",
+   "害怕",
+   "毕业"
+  ],
+  "correct_answer": "保护",
+  "explanation": "保护 = хамгаалах.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l02-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "墙角放着一个（ ）箱，是吧？",
+  "options": [
+   "废纸",
+   "酸奶",
+   "食品",
+   "垃圾"
+  ],
+  "correct_answer": "垃圾",
+  "explanation": "垃圾箱 = хогийн сав.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l02-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«靠墙摆着一张床» — «摆» гэдэг үйл үгийн утга аль нь вэ?",
+  "options": [
+   "эмхлэн тавих",
+   "тасдах",
+   "хаях",
+   "идэх"
+  ],
+  "correct_answer": "эмхлэн тавих",
+  "explanation": "摆 = байрлуулах.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l02-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «lājī» аль үгэнд таарах вэ?",
+  "options": [
+   "垃圾",
+   "食品",
+   "墙角",
+   "废纸"
+  ],
+  "correct_answer": "垃圾",
+  "explanation": "垃圾 = lājī.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l02-q11",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "有，（ ）衣柜里没挂着衣服，却放着足球、篮球什么的。",
+  "options": [
+   "从来",
+   "所以",
+   "因为",
+   "不过"
+  ],
+  "correct_answer": "不过",
+  "explanation": "不过 = гэхдээ.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l02-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«酸奶» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "цай",
+   "сүү",
+   "тараг",
+   "жимс"
+  ],
+  "correct_answer": "тараг",
+  "explanation": "酸奶 = тараг (йогурт).",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l02-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Би гольф хэзээ ч тоглож үзээгүй» — аль нь зөв бэ?",
+  "options": [
+   "我从来没打过高尔夫球。",
+   "我没从来打高尔夫球。",
+   "我从来打过高尔夫球。",
+   "我从来不打过高尔夫球。"
+  ],
+  "correct_answer": "我从来没打过高尔夫球。",
+  "explanation": "从来没 + V + 过.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l02-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр хэзээ ч хоцрохгүй» (дадал) — аль нь зөв бэ?",
+  "options": [
+   "他从来不迟到。",
+   "他从来没迟到了。",
+   "他不从来迟到。",
+   "他从来迟到不。"
+  ],
+  "correct_answer": "他从来不迟到。",
+  "explanation": "从来不 + V — дадал.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l02-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：这个房间是不是有点儿小？ B：________，一个人住正合适。",
+  "options": [
+   "不小不好",
+   "不大不小",
+   "不大不好",
+   "大不小"
+  ],
+  "correct_answer": "不大不小",
+  "explanation": "不A不B — эсрэг утгатай хос.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l02-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«不A不B»-д A, B нь ямар байх ёстой вэ?",
+  "options": [
+   "хоёр нэр үг",
+   "эсрэг утгатай хос тэмдэг нэр",
+   "ижил утгатай үг",
+   "хоёр үйл үг"
+  ],
+  "correct_answer": "эсрэг утгатай хос тэмдэг нэр",
+  "explanation": "不冷不热, 不大不小.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l02-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Ханан дээр маш олон зураг өлгөөтэй байна» — аль нь зөв бэ?",
+  "options": [
+   "墙上挂着很多照片。",
+   "在墙上挂很多照片着。",
+   "墙上很多照片挂着。",
+   "墙上挂了着很多照片。"
+  ],
+  "correct_answer": "墙上挂着很多照片。",
+  "explanation": "处所+V+着+N.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l02-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр оршихуйн өгүүлбэрийн зөв бүтэцтэй вэ?",
+  "options": [
+   "在桌子上放两本书着。",
+   "桌子上两本书放着。",
+   "桌子上放着两本书。",
+   "桌子放着上两本书。"
+  ],
+  "correct_answer": "桌子上放着两本书。",
+  "explanation": "处所 + V + 着 + N.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l02-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Ярианд дундуур нь шинэ сэдэв санаж хэлэхдээ аль нь тохирох вэ?",
+  "options": [
+   "对不起，你明天有时间吗？",
+   "好了，你明天有时间吗？",
+   "对啊，你明天有时间吗？",
+   "对了，你明天有时间吗？"
+  ],
+  "correct_answer": "对了，你明天有时间吗？",
+  "explanation": "对了 — шинэ сэдэв оруулна.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l02-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Жагсаалтын төгсгөлд «гэх мэт» гэж хэлэхэд аль нь зөв бэ?",
+  "options": [
+   "衣柜里放着什么的足球、篮球。",
+   "衣柜里放着足球什么的、篮球。",
+   "衣柜里什么的放着足球、篮球。",
+   "衣柜里放着足球、篮球什么的。"
+  ],
+  "correct_answer": "衣柜里放着足球、篮球什么的。",
+  "explanation": "什么的 — жагсаалтын ард.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l02-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：我住在留学生宿舍好呢，还是住在中国朋友家好呢？ B：________住在中国朋友家里。",
+  "options": [
+   "很好了",
+   "最好",
+   "好最",
+   "最了"
+  ],
+  "correct_answer": "最好",
+  "explanation": "最好 — зөвлөгөө.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l02-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи битгий явсан нь дээр» — аль нь зөв бэ?",
+  "options": [
+   "你最好了别去。",
+   "你别最好去。",
+   "你最好别去。",
+   "你不去最好了。"
+  ],
+  "correct_answer": "你最好别去。",
+  "explanation": "最好别 + V.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l02-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ?（跟……没关系）",
+  "options": [
+   "你的房间乱不乱我跟没关系。",
+   "你的房间乱不乱跟我没关系。",
+   "你的房间乱不乱没关系跟我。",
+   "跟没关系你的房间乱不乱我。"
+  ],
+  "correct_answer": "你的房间乱不乱跟我没关系。",
+  "explanation": "跟 + хүн + 没关系.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l02-q24",
+  "skillTags": [
+   "grammar",
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "妈妈为什么担心儿子回家？",
+  "options": [
+   "没有房间",
+   "没有钱",
+   "害怕他带着病毒回家",
+   "儿子不想回家"
+  ],
+  "correct_answer": "害怕他带着病毒回家",
+  "explanation": "妈妈：我害怕他带着病毒回家。",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l02-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "儿子的宿舍里，床下放着什么？",
+  "options": [
+   "足球",
+   "一个垃圾箱",
+   "一台电脑",
+   "一堆脏衣服"
+  ],
+  "correct_answer": "一堆脏衣服",
+  "explanation": "床下放着一堆脏衣服。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l02-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "衣柜里放着什么？",
+  "options": [
+   "衣服",
+   "足球、篮球什么的",
+   "书",
+   "食品"
+  ],
+  "correct_answer": "足球、篮球什么的",
+  "explanation": "衣柜里没挂着衣服，却放着足球、篮球什么的。",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l02-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "儿子多长时间洗一次盘子和碗？",
+  "options": [
+   "每顿饭后",
+   "每天一次",
+   "一个星期一次",
+   "一个月一次"
+  ],
+  "correct_answer": "一个星期一次",
+  "explanation": "他一个星期才洗一次。",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l02-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "医生朋友给妈妈什么建议？",
+  "options": [
+   "最好给儿子的东西消消毒",
+   "马上去看病",
+   "让儿子别回家",
+   "自己去打扫"
+  ],
+  "correct_answer": "最好给儿子的东西消消毒",
+  "explanation": "你们真应该小心点儿，最好给他的东西消消毒。",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l02-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «听说你儿子大学毕业了，恭喜恭喜！» гэвэл зөв хариулт аль нь вэ?",
+  "options": [
+   "对不起！",
+   "再见！",
+   "不客气！",
+   "谢谢！"
+  ],
+  "correct_answer": "谢谢！",
+  "explanation": "Баяр хүргэхэд талархаж хариулна (энд ээж санаа зовсон ч ерөнхий хариулт «谢谢»).",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l02-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хэлэхийг хүссэн: «Энэ хувцас том ч биш, жижиг ч биш, яг таарч байна». Аль нь зохимжтой вэ?",
+  "options": [
+   "这件衣服不小不好。",
+   "这件衣服不大小，正合适。",
+   "这件衣服大小，正合适。",
+   "这件衣服不大不小，正合适。"
+  ],
+  "correct_answer": "这件衣服不大不小，正合适。",
+  "explanation": "不大不小.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l02-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 靠墙 / 摆着 / 一张床",
+  "options": [
+   "摆着靠墙一张床",
+   "靠墙摆着一张床",
+   "一张床靠墙摆着"
+  ],
+  "correct_answer": "靠墙摆着一张床",
+  "explanation": "处所 + V着 + N дараалал.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l02-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

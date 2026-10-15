@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "爬了一天山，我晚上才回到宿舍，已经（ ）了。",
+  "options": [
+   "筋疲力尽",
+   "笨鸟先飞",
+   "擦肩而过",
+   "恋恋不舍"
+  ],
+  "correct_answer": "筋疲力尽",
+  "explanation": "筋疲力尽 = ядарч туйлдсан. 恋恋不舍 — салахдаа харамсах, 笨鸟先飞 — түрүүлж зүтгэх, 擦肩而过 — боломж алдах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji1-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "有时候，机会和自己（ ），多么可惜啊！",
+  "options": [
+   "擦肩而过",
+   "筋疲力尽",
+   "笨鸟先飞",
+   "顺其自然"
+  ],
+  "correct_answer": "擦肩而过",
+  "explanation": "擦肩而过 = боломжтойгоо мөр зэрэгцэн өнгөрөх.",
+  "order_index": 2,
+  "id": "fazhan-gaoji1-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不是个很聪明的人，我只是不断地努力，（ ），才取得现在的成功。",
+  "options": [
+   "恋恋不舍",
+   "顺其自然",
+   "笨鸟先飞",
+   "擦肩而过"
+  ],
+  "correct_answer": "笨鸟先飞",
+  "explanation": "笨鸟先飞 = чадал багатай нь бусдаас түрүүлж зүтгэх.",
+  "order_index": 3,
+  "id": "fazhan-gaoji1-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "放假的日子结束了，我（ ）地离开父母，回到学校。",
+  "options": [
+   "顺其自然",
+   "笨鸟先飞",
+   "擦肩而过",
+   "恋恋不舍"
+  ],
+  "correct_answer": "恋恋不舍",
+  "explanation": "恋恋不舍 = салахдаа харамсах.",
+  "order_index": 4,
+  "id": "fazhan-gaoji1-l01-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "道路变得泥泞（ ），你怎么办？",
+  "options": [
+   "不堪",
+   "不得已",
+   "恰巧",
+   "一定"
+  ],
+  "correct_answer": "不堪",
+  "explanation": "不堪 нь сөрөг утгатай хоёр үетийн ард тэсвэрлэхийн аргагүй зэргийг илэрхийлнэ.",
+  "order_index": 5,
+  "id": "fazhan-gaoji1-l01-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在这个人口（ ）的国家，机械化的过快发展也使一部分人失去工作的机会。",
+  "options": [
+   "众多",
+   "狭窄",
+   "宽大",
+   "简陋"
+  ],
+  "correct_answer": "众多",
+  "explanation": "众多 = маш олон. 狭窄 — давчуу, 宽大 — өргөн, 简陋 — тарчиг.",
+  "order_index": 6,
+  "id": "fazhan-gaoji1-l01-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这里的人（ ）采用人力劳动方式，也不使用机器。",
+  "options": [
+   "索性",
+   "宁愿",
+   "或许",
+   "恰巧"
+  ],
+  "correct_answer": "宁愿",
+  "explanation": "宁愿……也不…… нь харьцуулж сонгох бүтэц.",
+  "order_index": 7,
+  "id": "fazhan-gaoji1-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不要因为遇上了几个小偷就怀疑、（ ）这个地方所有的人。",
+  "options": [
+   "提防",
+   "向往",
+   "体验",
+   "期待"
+  ],
+  "correct_answer": "提防",
+  "explanation": "提防 = сэрэмжлэх. Бусад нь эерэг утгатай.",
+  "order_index": 8,
+  "id": "fazhan-gaoji1-l01-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "外面太阳很大，我感到很（ ）。",
+  "options": [
+   "烦躁",
+   "狭窄",
+   "理智",
+   "幽默"
+  ],
+  "correct_answer": "烦躁",
+  "explanation": "烦躁 = бухимдах.",
+  "order_index": 9,
+  "id": "fazhan-gaoji1-l01-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "多留意你周围隐藏的快乐（ ）。",
+  "options": [
+   "经费",
+   "源泉",
+   "时光",
+   "障碍"
+  ],
+  "correct_answer": "源泉",
+  "explanation": "源泉 = эх булаг (зүйрлэлээр).",
+  "order_index": 10,
+  "id": "fazhan-gaoji1-l01-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "当然，如果旅行（ ）不足，这是无可奈何的。",
+  "options": [
+   "难关",
+   "夕阳",
+   "经费",
+   "比喻"
+  ],
+  "correct_answer": "经费",
+  "explanation": "经费 = зардал, санхүүжилт.",
+  "order_index": 11,
+  "id": "fazhan-gaoji1-l01-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在决定放弃参观之前，我的心情也开始（ ）起来。",
+  "options": [
+   "兴冲冲",
+   "宽大",
+   "理智",
+   "沮丧"
+  ],
+  "correct_answer": "沮丧",
+  "explanation": "沮丧 = сэтгэл гундах. 兴冲冲 нь «起来»-тай нийцэхгүй.",
+  "order_index": 12,
+  "id": "fazhan-gaoji1-l01-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "世界各地的时间观念相差很远，形象的（ ）是：有的像兔子跑，有的则像蜗牛爬。",
+  "options": [
+   "比喻",
+   "时光",
+   "障碍",
+   "源泉"
+  ],
+  "correct_answer": "比喻",
+  "explanation": "比喻 = зүйрлэл.",
+  "order_index": 13,
+  "id": "fazhan-gaoji1-l01-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句是“假设”关系的复句？",
+  "options": [
+   "他虽然学会了汉语，但是没学好日语。",
+   "他不但学会了汉语，还学好了日语。",
+   "因为你不告诉我，所以我去问李兰。",
+   "如果你不告诉我，那我就去问李兰。"
+  ],
+  "correct_answer": "如果你不告诉我，那我就去问李兰。",
+  "explanation": "如果……那…… = 假设. 因为……所以 = 因果, 虽然……但是 = 转折, 不但……还 = 递进.",
+  "order_index": 14,
+  "id": "fazhan-gaoji1-l01-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“只要星期天回来，我就可以按时上课”属于哪种复句？",
+  "options": [
+   "递进",
+   "条件",
+   "假设",
+   "转折"
+  ],
+  "correct_answer": "条件",
+  "explanation": "只要……就…… — хангалттай 条件.",
+  "order_index": 15,
+  "id": "fazhan-gaoji1-l01-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“你既然相信我，就按我说的做吧”属于哪种复句？",
+  "options": [
+   "因果",
+   "推论",
+   "转折",
+   "递进"
+  ],
+  "correct_answer": "推论",
+  "explanation": "既然……就…… — аль хэдийн болсон баримтаас 推论 (дүгнэлт).",
+  "order_index": 16,
+  "id": "fazhan-gaoji1-l01-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "“这里的风景和泰山的风景一样美”用“不亚于”改写，哪个对？",
+  "options": [
+   "这里的风景不亚于泰山很美。",
+   "这里的风景不亚于泰山的风景低。",
+   "这里的风景亚于泰山的风景。",
+   "这里的风景不亚于泰山的风景。"
+  ],
+  "correct_answer": "这里的风景不亚于泰山的风景。",
+  "explanation": "不亚于 + харьцуулах зүйл. Тэмдэг нэр хавсаргахгүй.",
+  "order_index": 17,
+  "id": "fazhan-gaoji1-l01-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句有语病？",
+  "options": [
+   "母亲的烹调水平不亚于专业厨师。",
+   "这里的风景不亚于泰山的风景。",
+   "我们今年的经济收入不亚于去年。",
+   "他的设计能力不亚于大学生低。"
+  ],
+  "correct_answer": "他的设计能力不亚于大学生低。",
+  "explanation": "不亚于 = «дутахгүй» тул 低 (доогуур)-тай зөрчилдөнө.",
+  "order_index": 18,
+  "id": "fazhan-gaoji1-l01-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "我躺在床上半天也睡不着，（ ）。",
+  "options": [
+   "索性起来了",
+   "索性睡得很香",
+   "索性更加舒服",
+   "索性睡着了"
+  ],
+  "correct_answer": "索性起来了",
+  "explanation": "Унтаж чадахгүй тул бүр босох — 索性 + шийдэмгий үйлдэл.",
+  "order_index": 19,
+  "id": "fazhan-gaoji1-l01-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "她这人做事说话都很（ ）。",
+  "options": [
+   "或许",
+   "索性",
+   "干脆",
+   "恰巧"
+  ],
+  "correct_answer": "干脆",
+  "explanation": "干脆 тэмдэг нэр болж чадна; 索性 дайвар үг л.",
+  "order_index": 20,
+  "id": "fazhan-gaoji1-l01-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他今天没有来，（ ）生病了吧。",
+  "options": [
+   "恰巧",
+   "或许",
+   "索性",
+   "不亚于"
+  ],
+  "correct_answer": "或许",
+  "explanation": "或许 = таамаглал; «…吧»-тай тохирно.",
+  "order_index": 21,
+  "id": "fazhan-gaoji1-l01-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句中“或许”的位置正确？",
+  "options": [
+   "明天就或许了会听到新消息。",
+   "明天或许就会听到新消息了。",
+   "或许明天就会听到新消息了的。",
+   "明天就会听到新消息了或许。"
+  ],
+  "correct_answer": "明天或许就会听到新消息了。",
+  "explanation": "或许 — сэдвийн ард (谓语前) эсвэл өгүүлбэрийн эхэнд ордог.",
+  "order_index": 22,
+  "id": "fazhan-gaoji1-l01-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我正想叫辆出租车，（ ）一辆车就开过来了。",
+  "options": [
+   "索性",
+   "宁愿",
+   "恰巧",
+   "不堪"
+  ],
+  "correct_answer": "恰巧",
+  "explanation": "恰巧 = яг таарч давхцах.",
+  "order_index": 23,
+  "id": "fazhan-gaoji1-l01-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "下面哪一句“恰巧”用得不对？",
+  "options": [
+   "我恰巧努力学习，所以考得很好。",
+   "我刚刚走出大门，恰巧一辆出租车过来了。",
+   "平时我都不在家，今天恰巧没出门。",
+   "你想找的这本书我恰巧有。"
+  ],
+  "correct_answer": "我恰巧努力学习，所以考得很好。",
+  "explanation": "恰巧 нь тохиолын давхцал; хичээл зүтгэл (努力) → үр дүн холбоос биш.",
+  "order_index": 24,
+  "id": "fazhan-gaoji1-l01-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "作者在小城的剧院吃了闭门羹以后，后来怎么样了？",
+  "options": [
+   "马上放弃，回旅馆休息",
+   "从正门买票进去参观",
+   "在一个不起眼儿的角落找到一个小门，一位老人带他参观",
+   "请警察帮他打开大门"
+  ],
+  "correct_answer": "在一个不起眼儿的角落找到一个小门，一位老人带他参观",
+  "explanation": "6-р догол мөр: 功夫不负有心人.",
+  "order_index": 25,
+  "id": "fazhan-gaoji1-l01-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "为什么这个并不太贫困的地方的工人用锤子砸石头？",
+  "options": [
+   "因为他们买不起机器",
+   "机械化过快发展会使一部分人失去工作机会，所以人们宁愿用人力",
+   "因为石头太大，机器放不下",
+   "因为他们不喜欢机器的声音"
+  ],
+  "correct_answer": "机械化过快发展会使一部分人失去工作机会，所以人们宁愿用人力",
+  "explanation": "7-р догол мөр: 人口众多, 不得已.",
+  "order_index": 26,
+  "id": "fazhan-gaoji1-l01-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "作者说的“最佳旅伴”那位女士，在狭窄闷热的汽车里做什么？",
+  "options": [
+   "睡着了",
+   "抱怨天气太热",
+   "安静地望着窗外，欣赏马路两边的树",
+   "和司机聊天"
+  ],
+  "correct_answer": "安静地望着窗外，欣赏马路两边的树",
+  "explanation": "9-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-gaoji1-l01-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "课文用什么比喻世界各地的时间观念？",
+  "options": [
+   "有的像鸟飞，有的像鱼游",
+   "有的像风，有的像雨",
+   "有的像马，有的像牛",
+   "有的像兔子跑，有的像蜗牛爬"
+  ],
+  "correct_answer": "有的像兔子跑，有的像蜗牛爬",
+  "explanation": "4-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-gaoji1-l01-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "澳大利亚的情侣为什么租条件很简陋的小屋？",
+  "options": [
+   "因为他们想体验原始生活",
+   "因为小屋宽大明亮",
+   "因为小屋离海边很近",
+   "因为那里的租金便宜，一晚上5美元"
+  ],
+  "correct_answer": "因为那里的租金便宜，一晚上5美元",
+  "explanation": "11-р догол мөр: 并不是想体验原始生活，只是因为租金便宜.",
+  "order_index": 29,
+  "id": "fazhan-gaoji1-l01-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Утгыг зөв илэрхийлсэн нь аль вэ? «Хөлөө хамгаалахын тулд гутал элээсэн ч гутал хэмнэж хөл нүцгэн явахгүй»",
+  "options": [
+   "宁愿为节约鞋而光着脚，也不为保护脚而磨破鞋",
+   "磨破鞋宁愿，为保护脚而也不光着脚",
+   "宁愿为保护脚而磨破鞋，也不为节约鞋而光着脚",
+   "也不宁愿为保护脚而磨破鞋，光着脚"
+  ],
+  "correct_answer": "宁愿为保护脚而磨破鞋，也不为节约鞋而光着脚",
+  "explanation": "宁愿 + сонгосон зүйл，也不 + татгалзсан зүйл.",
+  "order_index": 30,
+  "id": "fazhan-gaoji1-l01-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "“宁愿A，也不B”中，说话人真正选择的是哪一个？",
+  "options": [
+   "A和B都不选",
+   "A和B都选",
+   "B",
+   "A"
+  ],
+  "correct_answer": "A",
+  "explanation": "宁愿 + A = сонгосон; 也不 + B = татгалзсан.",
+  "order_index": 31,
+  "id": "fazhan-gaoji1-l01-q31",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "你去车站，车刚好开走了，你决定走路去。最合适的说法是：",
+  "options": [
+   "车开走了，我或许走路去吧。",
+   "车开走了，我索性走路去吧。",
+   "车开走了，我不亚于走路去吧。",
+   "车开走了，我恰巧走路去吧。"
+  ],
+  "correct_answer": "车开走了，我索性走路去吧。",
+  "explanation": "Өмнөх хэсэг үр дүнгүй болсон тул бүр шууд өөр арга сонгох — 索性.",
+  "order_index": 32,
+  "id": "fazhan-gaoji1-l01-q32",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ }
+]

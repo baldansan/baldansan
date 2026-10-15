@@ -1,0 +1,589 @@
+[
+ {
+  "type": "choice",
+  "question": "«做客» ямар утгатай вэ?",
+  "options": [
+   "дарс уух",
+   "гэртээ харих",
+   "зочлох",
+   "хоол хийх"
+  ],
+  "correct_answer": "зочлох",
+  "explanation": "做客 = зочноор очих.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l17-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«饺子» ямар хоол вэ?",
+  "options": [
+   "талх",
+   "шөл",
+   "будаа",
+   "банш"
+  ],
+  "correct_answer": "банш",
+  "explanation": "饺子 = банш.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l17-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«葡萄酒» юу вэ?",
+  "options": [
+   "сүү",
+   "цай",
+   "шар айраг",
+   "дарс"
+  ],
+  "correct_answer": "дарс",
+  "explanation": "葡萄酒 = дарс, 啤酒 = шар айраг.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l17-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«才» ямар утга илэрхийлэх вэ?",
+  "options": [
+   "бүү",
+   "оройтож, хүлээснээс хожуу",
+   "аль хэдийн, эрт",
+   "улам"
+  ],
+  "correct_answer": "оройтож, хүлээснээс хожуу",
+  "explanation": "才 = оройтсон; 就 = эрт.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l17-q04",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«热闹» гэдэг үгийн утга:",
+  "options": [
+   "завгүй",
+   "хүйтэн",
+   "чимээгүй",
+   "хөл хөдөлгөөнтэй, дэгдүүн"
+  ],
+  "correct_answer": "хөл хөдөлгөөнтэй, дэгдүүн",
+  "explanation": "热闹 = дэгдүүн.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l17-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«总是» ямар утгатай вэ?",
+  "options": [
+   "саяхан",
+   "үргэлж",
+   "хааяа",
+   "хэзээ ч үгүй"
+  ],
+  "correct_answer": "үргэлж",
+  "explanation": "总是 = үргэлж.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l17-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«着急» ямар утгатай вэ?",
+  "options": [
+   "цангах",
+   "баярлах",
+   "санаа зовох, яарах",
+   "ядрах"
+  ],
+  "correct_answer": "санаа зовох, яарах",
+  "explanation": "着急 = zháojí.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l17-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«发音» гэж юу вэ?",
+  "options": [
+   "яриа",
+   "ханз",
+   "сонсгол",
+   "дуудлага"
+  ],
+  "correct_answer": "дуудлага",
+  "explanation": "发音 = дуудлага.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l17-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«听力» ямар чадвар вэ?",
+  "options": [
+   "бичих",
+   "унших",
+   "ярих",
+   "сонсох"
+  ],
+  "correct_answer": "сонсох",
+  "explanation": "听力 = сонсох чадвар; 口语 = ярих.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l17-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«进步» нь юу гэсэн үг вэ?",
+  "options": [
+   "уруудах",
+   "ахиц, дэвших",
+   "зогсох",
+   "мартах"
+  ],
+  "correct_answer": "ахиц, дэвших",
+  "explanation": "进步 = ахих.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l17-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«更» ямар утгатай вэ?",
+  "options": [
+   "үргэлж",
+   "улам",
+   "оройтож",
+   "бүү"
+  ],
+  "correct_answer": "улам",
+  "explanation": "更 = улам.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l17-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«别着急» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Хурдан яв",
+   "Бүү санаа зов",
+   "Хойш яв",
+   "Маш их санаа зов"
+  ],
+  "correct_answer": "Бүү санаа зов",
+  "explanation": "别 = бүү.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l17-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«最近» ямар утгатай вэ?",
+  "options": [
+   "хойшид",
+   "сүүлийн үед",
+   "өчигдөр",
+   "үргэлж"
+  ],
+  "correct_answer": "сүүлийн үед",
+  "explanation": "最近 = сүүлийн үед.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l17-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们十点（ ）回家。 (оройтсон мэдрэмж)",
+  "options": [
+   "就",
+   "别",
+   "更",
+   "才"
+  ],
+  "correct_answer": "才",
+  "explanation": "Оройтсон → 才.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l17-q14",
+  "skillTags": [
+   "grammar",
+   "cai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们四点半（ ）到了。 (эрт)",
+  "options": [
+   "才",
+   "总是",
+   "别",
+   "就"
+  ],
+  "correct_answer": "就",
+  "explanation": "Эрт ирсэн → 就.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l17-q15",
+  "skillTags": [
+   "grammar",
+   "cai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Тэр есөн цагт л босдог» хятадаар:",
+  "options": [
+   "他九点就起床。",
+   "他九点才起床。",
+   "他才九点起床了。",
+   "他九点才起床了。"
+  ],
+  "correct_answer": "他九点才起床。",
+  "explanation": "цаг + 才 + үйл.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l17-q16",
+  "skillTags": [
+   "grammar",
+   "cai"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«Миний бие муу» хятадаар:",
+  "options": [
+   "我身体不好。",
+   "我身体很不。",
+   "我不好身体。",
+   "我是身体不好。"
+  ],
+  "correct_answer": "我身体不好。",
+  "explanation": "主谓谓语句: S + S' + P'.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l17-q17",
+  "skillTags": [
+   "grammar",
+   "subject-predicate"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Тэр ярианы чадвар сайн» хятадаар:",
+  "options": [
+   "他口语很好。",
+   "他好口语。",
+   "他口语是很好。",
+   "他很口语好。"
+  ],
+  "correct_answer": "他口语很好。",
+  "explanation": "S + S' + 很 + тэмдэг нэр.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l17-q18",
+  "skillTags": [
+   "grammar",
+   "subject-predicate"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Олон ярь» хятадаар:",
+  "options": [
+   "说地",
+   "很说",
+   "说多",
+   "多说"
+  ],
+  "correct_answer": "多说",
+  "explanation": "Тэмдэг нэр + үйл үг.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l17-q19",
+  "skillTags": [
+   "grammar",
+   "adverbial"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Англи хэл сурахад хэцүү юу?»",
+  "options": [
+   "难英语学吗？",
+   "英语学难吗？",
+   "英语难学吗？",
+   "英语很学难吗？"
+  ],
+  "correct_answer": "英语难学吗？",
+  "explanation": "难 + 学.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l17-q20",
+  "skillTags": [
+   "grammar",
+   "adverbial"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Энэ ханзыг яаж бичдэг вэ?»",
+  "options": [
+   "这个汉字怎么样写？",
+   "这个汉字写怎么？",
+   "这个汉字怎么写？",
+   "这个汉字什么写？"
+  ],
+  "correct_answer": "这个汉字怎么写？",
+  "explanation": "怎么 + үйл үг.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l17-q21",
+  "skillTags": [
+   "grammar",
+   "zenme"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Яах вэ?» гэсэн тогтсон хэлбэр:",
+  "options": [
+   "怎么办？",
+   "做什么？",
+   "什么办？",
+   "怎么样？"
+  ],
+  "correct_answer": "怎么办？",
+  "explanation": "怎么办 = яах вэ.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l17-q22",
+  "skillTags": [
+   "grammar",
+   "zenme"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«好，我们走吧。» дахь 好 ямар утгатай?",
+  "options": [
+   "маш",
+   "хэтэрхий",
+   "сайн",
+   "за, (шилжих/дуусгах)"
+  ],
+  "correct_answer": "за, (шилжих/дуусгах)",
+  "explanation": "Яриаг дуусгах «好».",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l17-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«难» ханзын зүүн хэсэг аль нь вэ?",
+  "options": [
+   "又",
+   "月",
+   "欠",
+   "寸"
+  ],
+  "correct_answer": "又",
+  "explanation": "难 = 又 + 隹.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l17-q24",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "李老师为什么不喝酒？",
+  "options": [
+   "他没有买酒",
+   "他不喜欢啤酒",
+   "他很忙",
+   "他最近身体不好"
+  ],
+  "correct_answer": "他最近身体不好",
+  "explanation": "课文二: 我最近身体不好，不能喝酒.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l17-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "李老师买了几瓶啤酒？",
+  "options": [
+   "五瓶",
+   "一瓶",
+   "两瓶",
+   "十瓶"
+  ],
+  "correct_answer": "十瓶",
+  "explanation": "买了一瓶葡萄酒，还买了十瓶啤酒.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l17-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "林娜觉得包饺子怎么样？",
+  "options": [
+   "非常难学",
+   "很简单，也不麻烦",
+   "不喜欢",
+   "不难学，但准备很麻烦"
+  ],
+  "correct_answer": "不难学，但准备很麻烦",
+  "explanation": "课文二: 不难学，可是准备包饺子很麻烦.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l17-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "马丁的汉语哪方面不好？",
+  "options": [
+   "汉字不会写",
+   "发音",
+   "口语",
+   "听力"
+  ],
+  "correct_answer": "汉字不会写",
+  "explanation": "口语和听力都很好，汉字也认识，但是不会写.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l17-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "谁的声调总是不好？",
+  "options": [
+   "林娜",
+   "马丁",
+   "李老师",
+   "山田"
+  ],
+  "correct_answer": "林娜",
+  "explanation": "课文三: 林娜: 我的声调总是不好.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l17-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «хятад хэлний аялгуу хэцүү, яахав?» гэж санаа зовсон. Юу гэж тайвшруулах вэ?",
+  "options": [
+   "别着急，多听多说。",
+   "更难。",
+   "你总是不好。",
+   "才十点。"
+  ],
+  "correct_answer": "别着急，多听多说。",
+  "explanation": "别着急 + зөвлөгөө.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l17-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Өөр хүн үдээс хойш багшийнд очсон. Орой арван цагт харьсан гэдгийг «оройтож» гэсэн утгатай хэлэх:",
+  "options": [
+   "晚上十点我们才回家。",
+   "晚上十点我们总是回家。",
+   "晚上我们更回家。",
+   "晚上十点我们别回家。"
+  ],
+  "correct_answer": "晚上十点我们才回家。",
+  "explanation": "才 = оройтож.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l17-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэнд төвөг удахдаа эелдэг хэлэх нь:",
+  "options": [
+   "我才麻烦。",
+   "不好意思，麻烦你……",
+   "请原谅你。",
+   "你好麻烦。"
+  ],
+  "correct_answer": "不好意思，麻烦你……",
+  "explanation": "日常用语.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l17-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

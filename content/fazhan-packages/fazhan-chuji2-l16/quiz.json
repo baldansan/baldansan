@@ -1,0 +1,579 @@
+[
+ {
+  "type": "choice",
+  "question": "«准时» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "хожим",
+   "цагтаа, яг цагт нь",
+   "удаан",
+   "эрт"
+  ],
+  "correct_answer": "цагтаа, яг цагт нь",
+  "explanation": "准时 = цагтаа.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l16-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我五点半一定（ ）到。",
+  "options": [
+   "浪费",
+   "准时",
+   "放弃",
+   "解释"
+  ],
+  "correct_answer": "准时",
+  "explanation": "一定准时到.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l16-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«浪费» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "олж авах",
+   "хэмнэх",
+   "дэмий үрэх",
+   "хайрлах"
+  ],
+  "correct_answer": "дэмий үрэх",
+  "explanation": "浪费 = дэмий үрэх.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l16-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我很（ ）时间，从来不浪费一分钟。",
+  "options": [
+   "需要",
+   "爱惜",
+   "取得",
+   "放弃"
+  ],
+  "correct_answer": "爱惜",
+  "explanation": "爱惜时间.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l16-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«提前» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "хойшлуулах",
+   "цуцлах",
+   "түр зогсоох",
+   "хугацаанаас нь өмнө хийх"
+  ],
+  "correct_answer": "хугацаанаас нь өмнө хийх",
+  "explanation": "提前 = урагшлуулах.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l16-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她不想去得太早，打算（ ）几分钟到酒店。",
+  "options": [
+   "计算",
+   "提前",
+   "放弃",
+   "解释"
+  ],
+  "correct_answer": "提前",
+  "explanation": "提前几分钟到.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l16-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«放弃» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "эхлэх",
+   "олж авах",
+   "хүлээх",
+   "орхих, татгалзах"
+  ],
+  "correct_answer": "орхих, татгалзах",
+  "explanation": "放弃 = татгалзах.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l16-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小王在比赛中（ ）了第一名的好成绩。",
+  "options": [
+   "取得",
+   "守时",
+   "浪费",
+   "需要"
+  ],
+  "correct_answer": "取得",
+  "explanation": "取得成绩.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l16-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«难道» гэдэг үг ямар утга нэмдэг вэ?",
+  "options": [
+   "эсэргүүцлийн асуултыг хүчтэй болгоно",
+   "тоо хэмжээг заана",
+   "хүсэлтийг заана",
+   "цагийг заана"
+  ],
+  "correct_answer": "эсэргүүцлийн асуултыг хүчтэй болгоно",
+  "explanation": "难道……吗.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l16-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«堵车» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "хоцрох",
+   "галт тэргээр явах",
+   "хурдан гүйх",
+   "замын түгжрээнд орох"
+  ],
+  "correct_answer": "замын түгжрээнд орох",
+  "explanation": "堵车 = түгжрэх.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l16-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他最大的（ ）是守时。",
+  "options": [
+   "成功",
+   "领导",
+   "好处",
+   "优点"
+  ],
+  "correct_answer": "优点",
+  "explanation": "Хүний чанар → 优点.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l16-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jiěshì» аль үгэнд таарах вэ?",
+  "options": [
+   "酒店",
+   "经理",
+   "解释",
+   "计算"
+  ],
+  "correct_answer": "解释",
+  "explanation": "解释 = jiěshì.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l16-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«酒店» энэ хичээлд ямар утгатай вэ?",
+  "options": [
+   "ресторан",
+   "дэлгүүр",
+   "зочид буудал",
+   "хүнсний зах"
+  ],
+  "correct_answer": "зочид буудал",
+  "explanation": "酒店 = зочид буудал.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l16-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Би цагаа 10 минут түргэсгэсэн» — аль нь зөв бэ?",
+  "options": [
+   "我把表拨快了10分钟。",
+   "我拨把表快了10分钟。",
+   "我把拨快了表10分钟。",
+   "把我表拨快了10分钟。"
+  ],
+  "correct_answer": "我把表拨快了10分钟。",
+  "explanation": "把 + O + V + NM.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l16-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр агааржуулагчийг 2 градус өсгөхийг хүсч байна» — аль нь зөв бэ?",
+  "options": [
+   "他想把空调调高两度。",
+   "他把想空调调高两度。",
+   "他想空调把调高两度。",
+   "他想把调高空调两度。"
+  ],
+  "correct_answer": "他想把空调调高两度。",
+  "explanation": "Туслах үйл үг 把-ийн өмнө.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l16-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи цагийг хагас цагаар урагшлуулж болох уу?» — аль нь зөв бэ?",
+  "options": [
+   "你能不能时间把提前半小时？",
+   "你把能不能时间提前半小时？",
+   "你能不能把时间提前半小时？",
+   "你能不能提前把时间半小时？"
+  ],
+  "correct_answer": "你能不能把时间提前半小时？",
+  "explanation": "把 + O + V + NM.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l16-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Эсэргүүцлийн асуулт — «Чи яагаад гурван минутын өмнө гарсангүй юм бэ?» — аль нь зөв бэ?",
+  "options": [
+   "你不早三分钟为什么出门呢？",
+   "你为什么不早三分钟出门呢？",
+   "你为什么早三分钟不出门吗？",
+   "你为什么不出门早三分钟吗？"
+  ],
+  "correct_answer": "你为什么不早三分钟出门呢？",
+  "explanation": "为什么不……呢.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l16-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хэн ч мэдэхгүй байх вэ?» (бүгд мэднэ) — аль нь зөв бэ?",
+  "options": [
+   "谁不知道这件事呢？",
+   "不谁知道这件事呢？",
+   "谁不这件事知道呢？",
+   "谁知道不这件事呢？"
+  ],
+  "correct_answer": "谁不知道这件事呢？",
+  "explanation": "谁不……呢.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l16-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би хэзээ ингэж хэлсэн юм бэ?» (хэлээгүй) — аль нь зөв бэ?",
+  "options": [
+   "我这么什么时候说了？",
+   "什么我时候这么说了？",
+   "我什么这么时候说了？",
+   "我什么时候这么说了？"
+  ],
+  "correct_answer": "我什么时候这么说了？",
+  "explanation": "什么时候……了？",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l16-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би завгүй, цаг хаанаас гарах вэ?» — аль нь зөв бэ?",
+  "options": [
+   "我太忙了，时间哪有？啊",
+   "我太忙了，哪有时间啊？",
+   "我太忙了，哪时间有啊？",
+   "我太忙了，有哪时间啊？"
+  ],
+  "correct_answer": "我太忙了，哪有时间啊？",
+  "explanation": "哪有……啊？",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l16-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи сонсоогүй гэж үү?» — аль нь зөв бэ?",
+  "options": [
+   "你没难道听见吗？",
+   "难道你没听见？",
+   "难道你没听见吗？",
+   "你没听见难道？"
+  ],
+  "correct_answer": "难道你没听见吗？",
+  "explanation": "难道……吗.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l16-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Бүх хүн чамайг хүлээж байгааг чи мэдэхгүй гэж үү?» — аль нь зөв бэ?",
+  "options": [
+   "你难道不知道所有的人都在等你吗？",
+   "你不难道知道所有的人都在等你吗？",
+   "难道你知道不所有的人都在等你吗？",
+   "你难道不知道所有的人都在等你。"
+  ],
+  "correct_answer": "你难道不知道所有的人都在等你吗？",
+  "explanation": "难道……吗.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l16-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр төгсөнгүүт захирлын нарийн бичгийн дарга болов» — аль нь зөв бэ?",
+  "options": [
+   "他一毕业就上当了经理秘书。",
+   "他一毕业就当了上经理秘书。",
+   "他一毕业就当上了经理秘书。",
+   "他一毕业当就上了经理秘书。"
+  ],
+  "correct_answer": "他一毕业就当上了经理秘书。",
+  "explanation": "当上.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l16-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Энд урьд нь сургууль байсан, одоо зах болжээ» — аль нь зөв бэ?",
+  "options": [
+   "这里原来是个学校，现在变成市场了。",
+   "原来这里学校是，现在变成市场。",
+   "这里是原来个学校，现在变成市场了。",
+   "这里原因是个学校，现在变成市场了。"
+  ],
+  "correct_answer": "这里原来是个学校，现在变成市场了。",
+  "explanation": "原来 + 是.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l16-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "朋友大学毕业后找到了什么工作？",
+  "options": [
+   "经理秘书",
+   "记者",
+   "司机",
+   "老师"
+  ],
+  "correct_answer": "经理秘书",
+  "explanation": "P1.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l16-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "经理为什么对她的回答很满意？",
+  "options": [
+   "她说自己很有钱",
+   "她说自己守时、爱惜时间",
+   "她说自己很能说",
+   "她说自己很聪明"
+  ],
+  "correct_answer": "她说自己守时、爱惜时间",
+  "explanation": "P3-5.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l16-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "她为什么放弃了坐出租车？",
+  "options": [
+   "她不喜欢",
+   "出租车太贵",
+   "路上堵车",
+   "出租车坏了"
+  ],
+  "correct_answer": "路上堵车",
+  "explanation": "P7.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l16-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "她最后迟到了多长时间？",
+  "options": [
+   "三十分钟",
+   "一个小时",
+   "五分钟",
+   "三分钟"
+  ],
+  "correct_answer": "三分钟",
+  "explanation": "P7.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l16-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "那件事以后，朋友把什么拨快了三分钟？",
+  "options": [
+   "作业",
+   "汽车",
+   "手表、手机和闹钟",
+   "电脑和电视"
+  ],
+  "correct_answer": "手表、手机和闹钟",
+  "explanation": "P13.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l16-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн хоцорсон; та дургүйцлээ илэрхийлж «Бүх хүн чамайг хүлээж байгааг мэдэхгүй гэж үү?» гэж хэлэх нь аль нь вэ?",
+  "options": [
+   "谢谢你来得这么早。",
+   "我也迟到了。",
+   "难道你不知道大家都在等你吗？",
+   "你知道大家在等你，对不起。"
+  ],
+  "correct_answer": "难道你不知道大家都在等你吗？",
+  "explanation": "难道……吗.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l16-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн «Таны хятад хэл сайн юм аа» гэж магтав. Даруу татгалзахдаа аль нь тохиромжтой?",
+  "options": [
+   "我的发音哪有那么好啊？",
+   "我的发音真的很好。",
+   "你说得不对。",
+   "谢谢，你说得对。"
+  ],
+  "correct_answer": "我的发音哪有那么好啊？",
+  "explanation": "哪有……啊.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l16-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 把 / 我 / 表 / 了 / 拨快 / 三分钟",
+  "options": [
+   "我把表拨快了三分钟",
+   "我把拨快表了三分钟",
+   "我表把拨快了三分钟",
+   "把我表拨快了三分钟"
+  ],
+  "correct_answer": "我把表拨快了三分钟",
+  "explanation": "把 + O + V + NM.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l16-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

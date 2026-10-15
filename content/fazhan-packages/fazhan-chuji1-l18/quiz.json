@@ -1,0 +1,589 @@
+[
+ {
+  "type": "choice",
+  "question": "«最少» ямар утгатай вэ?",
+  "options": [
+   "хамгийн ихдээ",
+   "огт үгүй",
+   "хамгийн багадаа",
+   "ихэвчлэн"
+  ],
+  "correct_answer": "хамгийн багадаа",
+  "explanation": "最少 = хамгийн багадаа.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l18-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«新闻» гэж юу вэ?",
+  "options": [
+   "шуудан",
+   "мэдээ",
+   "карт",
+   "утас"
+  ],
+  "correct_answer": "мэдээ",
+  "explanation": "新闻 = мэдээ.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l18-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«邮件» гэж юу вэ?",
+  "options": [
+   "утас",
+   "данс",
+   "шуудан, имэйл",
+   "мэдээ"
+  ],
+  "correct_answer": "шуудан, имэйл",
+  "explanation": "邮件 = шуудан, имэйл.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l18-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«聊天儿» ямар утгатай вэ?",
+  "options": [
+   "хичээл хийх",
+   "төлбөр төлөх",
+   "дараалалд зогсох",
+   "чатлах, чөлөөтэй ярих"
+  ],
+  "correct_answer": "чатлах, чөлөөтэй ярих",
+  "explanation": "聊 = чөлөөтэй ярих.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l18-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«排队» гэж юу вэ?",
+  "options": [
+   "дуудах",
+   "тоглох",
+   "дараалалд зогсох",
+   "хуурах"
+  ],
+  "correct_answer": "дараалалд зогсох",
+  "explanation": "排队 = дараалалд зогсох.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l18-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«账户» гэж юу вэ?",
+  "options": [
+   "карт",
+   "данс",
+   "шуудан",
+   "төлбөр"
+  ],
+  "correct_answer": "данс",
+  "explanation": "账户 = данс.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l18-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«交费» гэж юу вэ?",
+  "options": [
+   "ярих",
+   "дуудах",
+   "төлбөр төлөх",
+   "хоол иддэг"
+  ],
+  "correct_answer": "төлбөр төлөх",
+  "explanation": "交 + 费 = төлбөр төлөх.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l18-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«只» (zhǐ) ямар утгатай вэ?",
+  "options": [
+   "зөвхөн",
+   "бүү",
+   "улам",
+   "мартсан"
+  ],
+  "correct_answer": "зөвхөн",
+  "explanation": "只 = зөвхөн.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l18-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«得» (děi) ямар утгатай вэ?",
+  "options": [
+   "жаахан",
+   "мартах",
+   "—х ёстой",
+   "хурдан"
+  ],
+  "correct_answer": "—х ёстой",
+  "explanation": "得 (děi) = хийх ёстой.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l18-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«忘» ямар утгатай вэ?",
+  "options": [
+   "мартах",
+   "өгөх",
+   "санах",
+   "сурах"
+  ],
+  "correct_answer": "мартах",
+  "explanation": "忘 = мартах.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l18-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«一直» ямар утгатай вэ?",
+  "options": [
+   "тасралтгүй, үргэлж",
+   "хааяа",
+   "орой",
+   "эхлээд"
+  ],
+  "correct_answer": "тасралтгүй, үргэлж",
+  "explanation": "一直 = тасралтгүй.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l18-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«另外» ямар үүрэгтэй вэ?",
+  "options": [
+   "түүнээс гадна гэж нэмж хэлэх",
+   "асуух",
+   "дуусгах",
+   "хориглох"
+  ],
+  "correct_answer": "түүнээс гадна гэж нэмж хэлэх",
+  "explanation": "另外 = түүнээс гадна.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l18-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«急急忙忙» ямар утгатай вэ?",
+  "options": [
+   "чимээгүй",
+   "аажуухан",
+   "баяртайхан",
+   "яаран сандран"
+  ],
+  "correct_answer": "яаран сандран",
+  "explanation": "急急忙忙 = яаран.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l18-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Хоёр цаг хагас» хятадаар:",
+  "options": [
+   "两半个小时",
+   "半两小时",
+   "两小时个半",
+   "两个半小时"
+  ],
+  "correct_answer": "两个半小时",
+  "explanation": "个 + 半 + 小时.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l18-q14",
+  "skillTags": [
+   "grammar",
+   "duration"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Дөрвөн жил» хятадаар:",
+  "options": [
+   "四年个",
+   "年四",
+   "四年",
+   "四个年"
+  ],
+  "correct_answer": "四年",
+  "explanation": "年-ийн өмнө 个 орохгүй.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l18-q15",
+  "skillTags": [
+   "grammar",
+   "duration"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би найман цаг унтсан» хятадаар:",
+  "options": [
+   "我睡八个小时了了。",
+   "我了睡八个小时。",
+   "我八个小时睡了。",
+   "我睡了八个小时。"
+  ],
+  "correct_answer": "我睡了八个小时。",
+  "explanation": "V了 + хугацаа.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l18-q16",
+  "skillTags": [
+   "grammar",
+   "complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи хэр удаан телевиз үзсэн бэ?»",
+  "options": [
+   "你看电视了多长时间？",
+   "你看了多长时间（的）电视？",
+   "你看了电视多长时间吗？",
+   "你多长时间看了电视？"
+  ],
+  "correct_answer": "你看了多长时间（的）电视？",
+  "explanation": "V了 + 多长时间 + (的) + O.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l18-q17",
+  "skillTags": [
+   "grammar",
+   "complement"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би Хятадад ирээд хоёр жил болж байна»:",
+  "options": [
+   "我来中国两年了。",
+   "我两年来中国了。",
+   "我来了两年中国。",
+   "我来中国了两年。"
+  ],
+  "correct_answer": "我来中国两年了。",
+  "explanation": "来 + O + хугацаа + 了.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l18-q18",
+  "skillTags": [
+   "grammar",
+   "complement"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«看»-ийн давталт нь:",
+  "options": [
+   "看了看了",
+   "看看看",
+   "看看看看",
+   "看看"
+  ],
+  "correct_answer": "看看",
+  "explanation": "AA давталт.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l18-q19",
+  "skillTags": [
+   "grammar",
+   "reduplication"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«休息»-ийн давталт нь:",
+  "options": [
+   "息息休休",
+   "休息息息",
+   "休休息息",
+   "休息休息"
+  ],
+  "correct_answer": "休息休息",
+  "explanation": "ABAB давталт.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l18-q20",
+  "skillTags": [
+   "grammar",
+   "reduplication"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Туршиж үзье» хятадаар:",
+  "options": [
+   "试试试",
+   "试一试一",
+   "试了试了",
+   "试试"
+  ],
+  "correct_answer": "试试",
+  "explanation": "试试 — туршиж үзэх.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l18-q21",
+  "skillTags": [
+   "grammar",
+   "reduplication"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Асуулт: аль нь «биз дээ» гэсэн таамагласан асуулт вэ?",
+  "options": [
+   "你上网学汉语什么？",
+   "你上网学汉语谁？",
+   "你是不是也上网学汉语？",
+   "你上网学汉语吗？"
+  ],
+  "correct_answer": "你是不是也上网学汉语？",
+  "explanation": "是不是 = таамагласан асуулт.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l18-q22",
+  "skillTags": [
+   "grammar",
+   "shibushi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他（ ）地回去了。 (баяртайхан)",
+  "options": [
+   "高兴高兴",
+   "高兴兴兴",
+   "高高兴",
+   "高高兴兴"
+  ],
+  "correct_answer": "高高兴兴",
+  "explanation": "Тэмдэг нэр AABB давтагдана.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l18-q23",
+  "skillTags": [
+   "grammar",
+   "reduplication"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«钱» ханзын зүүн хэсэг аль нь вэ?",
+  "options": [
+   "王",
+   "又",
+   "月",
+   "钅"
+  ],
+  "correct_answer": "钅",
+  "explanation": "钱 = 钅 + 戋.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l18-q24",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "课文一: “我”每天最少上几个小时的网？",
+  "options": [
+   "四个小时",
+   "一个小时",
+   "八个小时",
+   "两个小时"
+  ],
+  "correct_answer": "两个小时",
+  "explanation": "每天最少上两个小时的网.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l18-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "阿明为什么没吃晚饭？",
+  "options": [
+   "他不饿",
+   "他一直上网，忘了吃饭",
+   "他没有钱",
+   "他在银行"
+  ],
+  "correct_answer": "他一直上网，忘了吃饭",
+  "explanation": "阿明: 我一直上网，忘了吃饭.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l18-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "阿明上了多长时间的网？",
+  "options": [
+   "四个小时",
+   "两个小时",
+   "九个小时",
+   "半个小时"
+  ],
+  "correct_answer": "四个小时",
+  "explanation": "上了四个小时.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l18-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "山田要去银行做什么？",
+  "options": [
+   "借书",
+   "开会",
+   "交电话费",
+   "买书"
+  ],
+  "correct_answer": "交电话费",
+  "explanation": "我要去银行交电话费.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l18-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "崔浩说网上交费怎么样？",
+  "options": [
+   "很麻烦",
+   "要排队",
+   "很贵",
+   "很方便，只需要几分钟"
+  ],
+  "correct_answer": "很方便，只需要几分钟",
+  "explanation": "网上交费只需要几分钟.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l18-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «хэр удаан чатласан бэ?» гэж асуухад хариулах:",
+  "options": [
+   "聊天儿了两个小时。",
+   "聊了两个小时天儿。",
+   "两个小时聊天儿。",
+   "我聊两小时的天儿了。"
+  ],
+  "correct_answer": "聊了两个小时天儿。",
+  "explanation": "V了 + хугацаа + O.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l18-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Нөхөр чинь банкинд дараалалд зогсох нь ядраагаад байна. Юу гэж зөвлөх вэ?",
+  "options": [
+   "你得排队。",
+   "你为什么不在网上交费？",
+   "你别上网。",
+   "你只排队。"
+  ],
+  "correct_answer": "你为什么不在网上交费？",
+  "explanation": "为什么不……？ = зөвлөх.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l18-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Өөр хүний хувцсыг өмсөж үзэхийг эелдгээр хүсэхдээ:",
+  "options": [
+   "我可以试试这件衣服吗？",
+   "这件衣服忘了。",
+   "我试试了吗？",
+   "我得这件衣服。"
+  ],
+  "correct_answer": "我可以试试这件衣服吗？",
+  "explanation": "试试 + 可以……吗.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l18-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

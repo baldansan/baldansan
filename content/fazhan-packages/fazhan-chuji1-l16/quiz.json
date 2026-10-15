@@ -1,0 +1,589 @@
+[
+ {
+  "type": "choice",
+  "question": "«结婚» ямар утгатай вэ?",
+  "options": [
+   "салах",
+   "гэрлэх",
+   "танилцах",
+   "уулзах"
+  ],
+  "correct_answer": "гэрлэх",
+  "explanation": "结婚 = jié hūn.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l16-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«婚礼» ямар утгатай вэ?",
+  "options": [
+   "хурим",
+   "төрсөн өдөр",
+   "баяр",
+   "уулзалт"
+  ],
+  "correct_answer": "хурим",
+  "explanation": "婚礼 = hūnlǐ.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l16-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«送» ямар утгатай вэ?",
+  "options": [
+   "бэлэглэх, өгөх",
+   "худалдах",
+   "авах",
+   "зээлэх"
+  ],
+  "correct_answer": "бэлэглэх, өгөх",
+  "explanation": "送 = sòng.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l16-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«应该» ямар утгатай вэ?",
+  "options": [
+   "болохгүй",
+   "хүсэх",
+   "чадна",
+   "-х ёстой, -вал зохино"
+  ],
+  "correct_answer": "-х ёстой, -вал зохино",
+  "explanation": "应该 = yīnggāi.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l16-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«希望» ямар утгатай вэ?",
+  "options": [
+   "шийдэх",
+   "найдах, хүсэх",
+   "мартах",
+   "цаашлах"
+  ],
+  "correct_answer": "найдах, хүсэх",
+  "explanation": "希望 = xīwàng.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l16-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«参加» ямар утгатай вэ?",
+  "options": [
+   "өгөх",
+   "сурах",
+   "хүлээх",
+   "оролцох"
+  ],
+  "correct_answer": "оролцох",
+  "explanation": "参加 = cānjiā.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l16-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«亲戚» ямар утгатай вэ?",
+  "options": [
+   "багш нар",
+   "оюутнууд",
+   "найз нөхөд",
+   "хамаатан садан"
+  ],
+  "correct_answer": "хамаатан садан",
+  "explanation": "亲戚 = qīnqi.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l16-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«麻烦» ямар утгатай вэ?",
+  "options": [
+   "төвөгтэй",
+   "энгийн",
+   "чухал",
+   "сонирхолтой"
+  ],
+  "correct_answer": "төвөгтэй",
+  "explanation": "麻烦 = máfan.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l16-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«简单» ямар утгатай вэ?",
+  "options": [
+   "онцгой",
+   "чухал",
+   "энгийн, хялбар",
+   "төвөгтэй"
+  ],
+  "correct_answer": "энгийн, хялбар",
+  "explanation": "简单 = jiǎndān.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l16-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«办法» ямар утгатай вэ?",
+  "options": [
+   "арга",
+   "байр",
+   "эм",
+   "хэрэг явдал"
+  ],
+  "correct_answer": "арга",
+  "explanation": "办法 = bànfǎ.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l16-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«当然» ямар утгатай вэ?",
+  "options": [
+   "мэдээжийн хэрэг",
+   "хэзээ ч",
+   "заавал",
+   "дахиад"
+  ],
+  "correct_answer": "мэдээжийн хэрэг",
+  "explanation": "当然 = dāngrán.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l16-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«节日» ямар утгатай вэ?",
+  "options": [
+   "өдөр",
+   "долоо хоног",
+   "улирал",
+   "баяр ёслол"
+  ],
+  "correct_answer": "баяр ёслол",
+  "explanation": "节日 = jiérì.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l16-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你可以带一（　）花。",
+  "options": [
+   "束",
+   "辆",
+   "份",
+   "趟"
+  ],
+  "correct_answer": "束",
+  "explanation": "Цэцгийн тооллын үг — «束».",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l16-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«照相» ямар утгатай вэ?",
+  "options": [
+   "зураг зурах",
+   "зураг өгөх",
+   "зураг авах",
+   "зураг үзэх"
+  ],
+  "correct_answer": "зураг авах",
+  "explanation": "照相 = zhào xiàng.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l16-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би түүнд нэг бэлэг өгнө» — аль нь зөв бэ?",
+  "options": [
+   "我送一份礼物他。",
+   "我送礼物他一份。",
+   "我他送一份礼物。",
+   "我送他一份礼物。"
+  ],
+  "correct_answer": "我送他一份礼物。",
+  "explanation": "送 + хүн + юм.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l16-q15",
+  "skillTags": [
+   "grammar",
+   "shuangbinyu"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他给（　）一点儿钱。",
+  "options": [
+   "我",
+   "的我",
+   "我的",
+   "给我"
+  ],
+  "correct_answer": "我",
+  "explanation": "给 + хүн + юм: 给我一点儿钱.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l16-q16",
+  "skillTags": [
+   "grammar",
+   "shuangbinyu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи ханиад хүрсэн, эм уух хэрэгтэй» — аль нь зөв бэ?",
+  "options": [
+   "你感冒了，吃要药。",
+   "你感冒了，要药吃。",
+   "你感冒了，要吃药。",
+   "你感冒了，药要吃。"
+  ],
+  "correct_answer": "你感冒了，要吃药。",
+  "explanation": "要(2) = ёстой.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l16-q17",
+  "skillTags": [
+   "grammar",
+   "yao2"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "去看朋友（　）带一点儿东西。",
+  "options": [
+   "想",
+   "要",
+   "能",
+   "会"
+  ],
+  "correct_answer": "要",
+  "explanation": "要(2) — ёстой.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l16-q18",
+  "skillTags": [
+   "grammar",
+   "yao2"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«要» нь аль өгүүлбэрт «ёстой» утгатай вэ?",
+  "options": [
+   "我也要去。",
+   "汉思要学习汉语。",
+   "我要买电脑。",
+   "去看朋友要带一点儿东西。"
+  ],
+  "correct_answer": "去看朋友要带一点儿东西。",
+  "explanation": "要(2) — ёс заншил, ёстой.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l16-q19",
+  "skillTags": [
+   "grammar",
+   "yao2"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "我觉得（　）带点儿东西比较好。",
+  "options": [
+   "还是",
+   "当然",
+   "一定",
+   "或者"
+  ],
+  "correct_answer": "还是",
+  "explanation": "还是 — сонгосон зүйлийг тэргүүлэх.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l16-q20",
+  "skillTags": [
+   "grammar",
+   "haishi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "我还是他跟说吧。",
+   "还是我跟他说吗。",
+   "我跟还是他说吧。",
+   "还是我跟他说吧。"
+  ],
+  "correct_answer": "还是我跟他说吧。",
+  "explanation": "还是 + S + V + 吧.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l16-q21",
+  "skillTags": [
+   "grammar",
+   "haishi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你可以送水果，（　）可以送花儿。",
+  "options": [
+   "也",
+   "还",
+   "就",
+   "才"
+  ],
+  "correct_answer": "也",
+  "explanation": "可以…也可以…",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l16-q22",
+  "skillTags": [
+   "grammar",
+   "keyi3"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«可以» (3) аль өгүүлбэрт «санал болгох» утгатай вэ?",
+  "options": [
+   "我可以问你一个问题吗？",
+   "明天我可以去。",
+   "你可以送水果，也可以送花儿。",
+   "这儿可以抽烟吗？"
+  ],
+  "correct_answer": "你可以送水果，也可以送花儿。",
+  "explanation": "可以(3) — боломжит сонголт санал болгох.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l16-q23",
+  "skillTags": [
+   "grammar",
+   "keyi3"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«宿» ханзад аль 偏旁 орсон бэ?",
+  "options": [
+   "⻊",
+   "阝",
+   "心",
+   "宀"
+  ],
+  "correct_answer": "宀",
+  "explanation": "宿 = 宀 + 亻 + 百.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l16-q24",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«阿» ханзад аль 偏旁 орсон бэ?",
+  "options": [
+   "木",
+   "宀",
+   "纟",
+   "阝"
+  ],
+  "correct_answer": "阝",
+  "explanation": "阿 = 阝 + 可.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l16-q25",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "马丁的中国朋友什么时候结婚？ (课文一)",
+  "options": [
+   "下个星期",
+   "这个星期",
+   "明年",
+   "下个月"
+  ],
+  "correct_answer": "下个星期",
+  "explanation": "马丁有一个中国朋友下个星期结婚。",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l16-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "马丁准备了什么礼物？ (课文二)",
+  "options": [
+   "一本书",
+   "钱",
+   "一束花",
+   "帮朋友们照相，然后送照片"
+  ],
+  "correct_answer": "帮朋友们照相，然后送照片",
+  "explanation": "到时候，我帮他们照相，然后送他们照片。",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l16-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "韩国人结婚的时候一般送什么？ (课文二)",
+  "options": [
+   "花儿",
+   "酒",
+   "衣服",
+   "钱"
+  ],
+  "correct_answer": "钱",
+  "explanation": "亲戚、朋友常常送钱。",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l16-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "朱云说去朋友家可以带什么？ (课文三)",
+  "options": [
+   "一点儿水果，也可以带一束花",
+   "手机",
+   "钱",
+   "书"
+  ],
+  "correct_answer": "一点儿水果，也可以带一束花",
+  "explanation": "你可以带一点儿水果，也可以带一束花。",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l16-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзынд очихдоо бага зэрэг юм авч очих хэрэгтэй гэж зөвлөх. Аль нь тохиромжтой вэ?",
+  "options": [
+   "去朋友家不要带东西。",
+   "去朋友家要带一点儿东西。",
+   "去朋友家能带东西。",
+   "去朋友家会带东西。"
+  ],
+  "correct_answer": "去朋友家要带一点儿东西。",
+  "explanation": "要(2) — ёстой.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l16-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дэлгүүрт хямдруулж болох эсэхийг асуухдаа аль хэллэг тохиромжтой вэ?",
+  "options": [
+   "我们机场见。",
+   "我的护照丢了。",
+   "还可以便宜（一些）吗？",
+   "请问，在哪儿？"
+  ],
+  "correct_answer": "还可以便宜（一些）吗？",
+  "explanation": "日常用语 — үнэ тохиролцох.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l16-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Паспорт, түрийвчээ алдсан гэж хэлэхэд аль нь тохиромжтой вэ?",
+  "options": [
+   "我的护照和钱包都丢了。",
+   "我的护照和钱包都给了。",
+   "我的护照和钱包都带了。",
+   "我的护照和钱包都送了。"
+  ],
+  "correct_answer": "我的护照和钱包都丢了。",
+  "explanation": "丢了 — алдсан.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l16-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

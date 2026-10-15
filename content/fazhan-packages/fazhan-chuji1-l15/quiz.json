@@ -1,0 +1,589 @@
+[
+ {
+  "type": "choice",
+  "question": "«打工» ямар утгатай вэ?",
+  "options": [
+   "сургуульд сурах",
+   "амрах",
+   "цагийн ажил хийх",
+   "аялах"
+  ],
+  "correct_answer": "цагийн ажил хийх",
+  "explanation": "打工 = dǎ gōng.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l15-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«挣钱» ямар утгатай вэ?",
+  "options": [
+   "мөнгө зарах",
+   "мөнгө олох",
+   "мөнгө өгөх",
+   "мөнгө хайх"
+  ],
+  "correct_answer": "мөнгө олох",
+  "explanation": "挣钱 = zhèng qián.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l15-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«告诉» ямар утгатай вэ?",
+  "options": [
+   "хэлэх, мэдэгдэх",
+   "асуух",
+   "сонсох",
+   "үзэх"
+  ],
+  "correct_answer": "хэлэх, мэдэгдэх",
+  "explanation": "告诉 = gàosu.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l15-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«合适» ямар утгатай вэ?",
+  "options": [
+   "тохиромжтой",
+   "үнэтэй",
+   "амар",
+   "хол"
+  ],
+  "correct_answer": "тохиромжтой",
+  "explanation": "合适 = héshì.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l15-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«互相» ямар утгатай вэ?",
+  "options": [
+   "нэг удаа",
+   "бие биенээ, харилцан",
+   "дахин",
+   "хамт"
+  ],
+  "correct_answer": "бие биенээ, харилцан",
+  "explanation": "互相 = hùxiāng.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l15-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«放假» ямар утгатай вэ?",
+  "options": [
+   "амралт болох",
+   "ажилд орох",
+   "хичээл тарах",
+   "аялах"
+  ],
+  "correct_answer": "амралт болох",
+  "explanation": "放假 = fàng jià.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l15-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«旅游» ямар утгатай вэ?",
+  "options": [
+   "аялах",
+   "хоол идэх",
+   "сурах",
+   "зугаалах"
+  ],
+  "correct_answer": "аялах",
+  "explanation": "旅游 = lǚyóu.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l15-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«办公室» ямар утгатай вэ?",
+  "options": [
+   "сургууль",
+   "хоолны газар",
+   "албан өрөө",
+   "номын сан"
+  ],
+  "correct_answer": "албан өрөө",
+  "explanation": "办公室 = bàngōngshì.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l15-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«帮忙» ямар утгатай вэ?",
+  "options": [
+   "сурах",
+   "тусалах",
+   "хүлээх",
+   "ажиллах"
+  ],
+  "correct_answer": "тусалах",
+  "explanation": "帮忙 = bāng máng.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l15-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«陪» ямар утгатай вэ?",
+  "options": [
+   "хүлээх",
+   "хамт байх, дагалдах",
+   "тусалах",
+   "дагах"
+  ],
+  "correct_answer": "хамт байх, дагалдах",
+  "explanation": "陪 = péi.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l15-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我想买一（　）汽车。",
+  "options": [
+   "杯",
+   "辆",
+   "趟",
+   "件"
+  ],
+  "correct_answer": "辆",
+  "explanation": "Машины тооллын үг — «辆».",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l15-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«比较» ямар утгатай вэ?",
+  "options": [
+   "маш",
+   "харьцангуй, нэлээд",
+   "хамгийн",
+   "өчүүхэн"
+  ],
+  "correct_answer": "харьцангуй, нэлээд",
+  "explanation": "比较 = bǐjiào.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l15-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«感谢» ямар утгатай вэ?",
+  "options": [
+   "мэндлэх",
+   "салах",
+   "уучлал гуйх",
+   "талархах"
+  ],
+  "correct_answer": "талархах",
+  "explanation": "感谢 = gǎnxiè.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l15-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«假期» ямар утгатай вэ?",
+  "options": [
+   "хичээлийн үе",
+   "өглөө",
+   "ажлын өдөр",
+   "амралтын үе"
+  ],
+  "correct_answer": "амралтын үе",
+  "explanation": "假期 = jiàqī.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l15-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "汉思（　）学习汉语。",
+  "options": [
+   "会",
+   "可以",
+   "要",
+   "能"
+  ],
+  "correct_answer": "要",
+  "explanation": "Төлөвлөх — «要».",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l15-q15",
+  "skillTags": [
+   "grammar",
+   "yao"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би цагийн ажил хийхийг хүсэхгүй» — аль нь зөв бэ?",
+  "options": [
+   "我要不打工。",
+   "我不想打工。",
+   "我不要打工。",
+   "我没要打工。"
+  ],
+  "correct_answer": "我不想打工。",
+  "explanation": "要(1)-ийн үгүйсгэл — «不想».",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l15-q16",
+  "skillTags": [
+   "grammar",
+   "yao"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不（　）游泳。",
+  "options": [
+   "想",
+   "要",
+   "可以",
+   "会"
+  ],
+  "correct_answer": "会",
+  "explanation": "Сураагүй чадвар — «不会».",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l15-q17",
+  "skillTags": [
+   "grammar",
+   "hui"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи машин жолоодож чадах уу?» (正反) — аль нь зөв бэ?",
+  "options": [
+   "你开会不会车？",
+   "你会开不开车？",
+   "你会不会开车？",
+   "你不会开车吗？"
+  ],
+  "correct_answer": "你会不会开车？",
+  "explanation": "会不会 + V + O.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l15-q18",
+  "skillTags": [
+   "grammar",
+   "hui"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "明天我很忙，不（　）去看电影。",
+  "options": [
+   "想",
+   "能",
+   "要",
+   "会"
+  ],
+  "correct_answer": "能",
+  "explanation": "Боломжгүй — «不能».",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l15-q19",
+  "skillTags": [
+   "grammar",
+   "neng"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр «能»-ийг зөв хэрэглэсэн бэ?",
+  "options": [
+   "我能一点儿说日语。",
+   "我能说一点儿日语。",
+   "我说能一点儿日语。",
+   "我说一点儿日语能。"
+  ],
+  "correct_answer": "我能说一点儿日语。",
+  "explanation": "能 + V + O.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l15-q20",
+  "skillTags": [
+   "grammar",
+   "neng"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）问你一个问题吗？",
+  "options": [
+   "要",
+   "会",
+   "想",
+   "可以"
+  ],
+  "correct_answer": "可以",
+  "explanation": "Зөвшөөрөл асуух — «可以».",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l15-q21",
+  "skillTags": [
+   "grammar",
+   "keyi"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Энд тамхи татаж болох уу?» асуултад үгүйсгэх хариулт аль нь вэ?",
+  "options": [
+   "没可以。",
+   "不可以。",
+   "不要。",
+   "可以不。"
+  ],
+  "correct_answer": "不可以。",
+  "explanation": "Зөвшөөрлийн үгүйсгэл — «不可以/不能».",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l15-q22",
+  "skillTags": [
+   "grammar",
+   "keyi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«会 / 能 / 可以»-гийн аль нь сурсан чадварыг (хэл, жолоо) заадаг вэ?",
+  "options": [
+   "要",
+   "能",
+   "可以",
+   "会"
+  ],
+  "correct_answer": "会",
+  "explanation": "会 = сурсан чадвар.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l15-q23",
+  "skillTags": [
+   "grammar",
+   "hui"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр буруу вэ?",
+  "options": [
+   "你忙吗？",
+   "这是谁的手机吗？",
+   "我是泰国人，你呢？",
+   "你忙不忙？"
+  ],
+  "correct_answer": "这是谁的手机吗？",
+  "explanation": "Асуух төлөөний үгтэй «吗» хэрэглэхгүй.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l15-q24",
+  "skillTags": [
+   "grammar",
+   "question"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«想» ханзад аль 偏旁 орсон бэ?",
+  "options": [
+   "木",
+   "心",
+   "纟",
+   "⻊"
+  ],
+  "correct_answer": "心",
+  "explanation": "想 = 相 + 心.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l15-q25",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "这学期朱云想做什么？ (课文一)",
+  "options": [
+   "去旅游",
+   "打工挣钱",
+   "学习法语",
+   "回家"
+  ],
+  "correct_answer": "打工挣钱",
+  "explanation": "她想打工挣点儿钱。",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l15-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "汉思会什么，不会什么？ (课文一)",
+  "options": [
+   "会汉语，不会法语",
+   "会日语和法语",
+   "会汉语和英语",
+   "会英语和法语，不会汉语"
+  ],
+  "correct_answer": "会英语和法语，不会汉语",
+  "explanation": "汉思会英语和法语，不会汉语。",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l15-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "美国大学生可以在哪儿帮忙？ (课文二)",
+  "options": [
+   "商店",
+   "医院",
+   "银行",
+   "餐厅、图书馆或者办公室"
+  ],
+  "correct_answer": "餐厅、图书馆或者办公室",
+  "explanation": "学生可以在大学的餐厅、图书馆或者办公室帮忙。",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l15-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "阿明为什么说“我可以帮你租一辆汽车”？ (课文三)",
+  "options": [
+   "因为开车比较方便",
+   "因为马丁没有钱",
+   "因为他不会开车",
+   "因为他想买车"
+  ],
+  "correct_answer": "因为开车比较方便",
+  "explanation": "开车比较方便。",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l15-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хичээлийн үеэр сурагч «Би нэг юм асууж болох уу?» гэж зөвшөөрөл асуух. Аль нь тохиромжтой вэ?",
+  "options": [
+   "我可以问一个问题吗？",
+   "我要问一个问题吗？",
+   "我会问一个问题吗？",
+   "我能问你吗一个问题？"
+  ],
+  "correct_answer": "我可以问一个问题吗？",
+  "explanation": "Зөвшөөрөл — «可以…吗？».",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l15-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз «Чи сэлж чадах уу?» гэж асууна. Чи сураагүй. Аль хариулт тохиромжтой вэ?",
+  "options": [
+   "没有。",
+   "不会。",
+   "不可以。",
+   "不要。"
+  ],
+  "correct_answer": "不会。",
+  "explanation": "Сураагүй чадвар — «不会».",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l15-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Галт тэрэгний билет захиалахдаа «Би хоёр билет авна» гэхэд аль нь тохиромжтой вэ?",
+  "options": [
+   "我能两张票。",
+   "我可以两张票。",
+   "我要两张票。",
+   "我会两张票。"
+  ],
+  "correct_answer": "我要两张票。",
+  "explanation": "要 + тоо хэмжээ = «авна, захиална».",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l15-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

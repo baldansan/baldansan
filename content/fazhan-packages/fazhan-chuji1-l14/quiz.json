@@ -1,0 +1,589 @@
+[
+ {
+  "type": "choice",
+  "question": "«冬天» ямар утгатай вэ?",
+  "options": [
+   "хавар",
+   "зун",
+   "намар",
+   "өвөл"
+  ],
+  "correct_answer": "өвөл",
+  "explanation": "冬天 = dōngtiān.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l14-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«感冒» ямар утгатай вэ?",
+  "options": [
+   "ханиад хүрэх",
+   "хүйтэн",
+   "өвдөх",
+   "эм уух"
+  ],
+  "correct_answer": "ханиад хүрэх",
+  "explanation": "感冒 = gǎnmào.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l14-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«羽绒服» ямар утгатай вэ?",
+  "options": [
+   "гутал",
+   "өмд",
+   "ноосон цамц",
+   "өдөн хүрэм"
+  ],
+  "correct_answer": "өдөн хүрэм",
+  "explanation": "羽绒服 = yǔróngfú.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l14-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«毛衣» ямар утгатай вэ?",
+  "options": [
+   "малгай",
+   "ороолт",
+   "өдөн хүрэм",
+   "ноосон цамц"
+  ],
+  "correct_answer": "ноосон цамц",
+  "explanation": "毛衣 = máoyī.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l14-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我买了一（　）毛衣。",
+  "options": [
+   "杯",
+   "套",
+   "趟",
+   "件"
+  ],
+  "correct_answer": "件",
+  "explanation": "Хувцасны тооллын үг — «件».",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l14-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«厚» ямар утгатай вэ?",
+  "options": [
+   "зузаан",
+   "нимгэн",
+   "хурдан",
+   "хүйтэн"
+  ],
+  "correct_answer": "зузаан",
+  "explanation": "厚 = hòu.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l14-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«医院» ямар утгатай вэ?",
+  "options": [
+   "дэлгүүр",
+   "зочид буудал",
+   "эмнэлэг",
+   "сургууль"
+  ],
+  "correct_answer": "эмнэлэг",
+  "explanation": "医院 = yīyuàn.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l14-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«水果» ямар утгатай вэ?",
+  "options": [
+   "сүү",
+   "жимс",
+   "талх",
+   "хүнсний ногоо"
+  ],
+  "correct_answer": "жимс",
+  "explanation": "水果 = shuǐguǒ.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l14-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«跑步» ямар утгатай вэ?",
+  "options": [
+   "алхах",
+   "гүйх",
+   "сэлэх",
+   "сууж амрах"
+  ],
+  "correct_answer": "гүйх",
+  "explanation": "跑步 = pǎo bù.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l14-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«天气» ямар утгатай вэ?",
+  "options": [
+   "цаг",
+   "цаг агаар",
+   "өдөр",
+   "улирал"
+  ],
+  "correct_answer": "цаг агаар",
+  "explanation": "天气 = tiānqì.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l14-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«但是» ямар утгатай вэ?",
+  "options": [
+   "мөн",
+   "гэвч",
+   "тиймээс",
+   "хэрэв"
+  ],
+  "correct_answer": "гэвч",
+  "explanation": "但是 = dànshì.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l14-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«生病» ямар утгатай вэ?",
+  "options": [
+   "эмчид үзүүлэх",
+   "эм уух",
+   "өвдөх",
+   "эдгэрэх"
+  ],
+  "correct_answer": "өвдөх",
+  "explanation": "生病 = shēng bìng.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l14-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«趟» ямар утгатай вэ?",
+  "options": [
+   "явж ирэх нэг удаа",
+   "ширхэг",
+   "иж бүрдэл",
+   "аяга"
+  ],
+  "correct_answer": "явж ирэх нэг удаа",
+  "explanation": "趟 = tàng — явж ирэх нэг удаагийн тооллын үг.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l14-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«有空儿» ямар утгатай вэ?",
+  "options": [
+   "завтай байх",
+   "сурах",
+   "амрах",
+   "завгүй байх"
+  ],
+  "correct_answer": "завтай байх",
+  "explanation": "有空儿 = yǒu kòngr.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l14-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "林娜买（　）很多水果。",
+  "options": [
+   "吧",
+   "吗",
+   "了",
+   "呢"
+  ],
+  "correct_answer": "了",
+  "explanation": "Үйл үгийн ард «了» — биелсэн үйлдэл.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l14-q15",
+  "skillTags": [
+   "grammar",
+   "le"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би цамц аваагүй» — аль нь зөв бэ?",
+  "options": [
+   "我不买了毛衣。",
+   "我买没毛衣。",
+   "我没买了毛衣。",
+   "我没买毛衣。"
+  ],
+  "correct_answer": "我没买毛衣。",
+  "explanation": "没 + V, «了»-гүй.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l14-q16",
+  "skillTags": [
+   "grammar",
+   "le"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр «了»-г зөв хэрэглэсэн бэ?",
+  "options": [
+   "他穿一件了羽绒服。",
+   "他穿羽绒服了一件。",
+   "他了穿一件羽绒服。",
+   "他穿了一件羽绒服。"
+  ],
+  "correct_answer": "他穿了一件羽绒服。",
+  "explanation": "V + 了 + тоо хэмжээ + нэр үг.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l14-q17",
+  "skillTags": [
+   "grammar",
+   "le"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（　）下课就去医院。",
+  "options": [
+   "还",
+   "又",
+   "一",
+   "才"
+  ],
+  "correct_answer": "一",
+  "explanation": "一……就……",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l14-q18",
+  "skillTags": [
+   "grammar",
+   "yijiu"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тэр ирмэгц бид явна» — аль нь зөв бэ?",
+  "options": [
+   "他来一，我们就走。",
+   "他一来我们走。",
+   "他一来，就我们走。",
+   "他一来，我们就走。"
+  ],
+  "correct_answer": "他一来，我们就走。",
+  "explanation": "一 + V₁，S + 就 + V₂",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l14-q19",
+  "skillTags": [
+   "grammar",
+   "yijiu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "八点上课，他七点（　）来了。",
+  "options": [
+   "但是",
+   "就",
+   "还",
+   "真"
+  ],
+  "correct_answer": "就",
+  "explanation": "«就» — эрт болсныг онцолно.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l14-q20",
+  "skillTags": [
+   "grammar",
+   "jiu"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«感冒昨天就好了» өгүүлбэрт «就» юу заадаг вэ?",
+  "options": [
+   "давтагдсан",
+   "санал болгох",
+   "эрт, хурдан эдгэрсэн",
+   "үргэлжилж байгаа"
+  ],
+  "correct_answer": "эрт, хурдан эдгэрсэн",
+  "explanation": "就 = эрт, хурдан болсныг онцолно.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l14-q21",
+  "skillTags": [
+   "grammar",
+   "jiu"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "天气（　）冷，你还每天跑步吗？",
+  "options": [
+   "哪儿",
+   "什么",
+   "这么",
+   "怎么样"
+  ],
+  "correct_answer": "这么",
+  "explanation": "这么冷 = ийм хүйтэн.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l14-q22",
+  "skillTags": [
+   "grammar",
+   "zheme"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ингэтлээ хурдан гэж!» — аль нь зөв бэ?",
+  "options": [
+   "快这么呀！",
+   "这么快呀！",
+   "很这么快呀！",
+   "这么很快呀！"
+  ],
+  "correct_answer": "这么快呀！",
+  "explanation": "这么 + тэмдэг нэр.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l14-q23",
+  "skillTags": [
+   "grammar",
+   "zheme"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи одоо ч өдөр бүр гүйдэг үү?» — аль нь зөв бэ?",
+  "options": [
+   "你每天还跑步吗？",
+   "你还吗每天跑步？",
+   "你跑步还每天吗？",
+   "你还每天跑步吗？"
+  ],
+  "correct_answer": "你还每天跑步吗？",
+  "explanation": "还 + цагийн үг + үйл үг.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l14-q24",
+  "skillTags": [
+   "grammar",
+   "hai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«红» ханзад аль 偏旁 орсон бэ?",
+  "options": [
+   "扌",
+   "辶",
+   "纟",
+   "木"
+  ],
+  "correct_answer": "纟",
+  "explanation": "红 = 纟 + 工.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l14-q25",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "北京今年冬天冷不冷？ (课文一)",
+  "options": [
+   "特别冷",
+   "很暖和",
+   "不太冷",
+   "不冷"
+  ],
+  "correct_answer": "特别冷",
+  "explanation": "今年冬天北京特别冷。",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l14-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "“我”去商场买了什么？ (课文一)",
+  "options": [
+   "水果和牛奶",
+   "一本词典",
+   "面包和咖啡",
+   "一件毛衣和一件羽绒服"
+  ],
+  "correct_answer": "一件毛衣和一件羽绒服",
+  "explanation": "我买了一件毛衣，还买了一件羽绒服。",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l14-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "阿明的感冒好了吗？ (课文二)",
+  "options": [
+   "还没好",
+   "昨天就好了",
+   "没感冒",
+   "一星期以后好了"
+  ],
+  "correct_answer": "昨天就好了",
+  "explanation": "感冒昨天就好了。",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l14-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "阿明每天跑步吗？ (课文三)",
+  "options": [
+   "只在周末",
+   "每天都去",
+   "不跑步",
+   "不是每天，一有空儿就去"
+  ],
+  "correct_answer": "不是每天，一有空儿就去",
+  "explanation": "不是每天跑，但是我一有空儿就去跑。",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l14-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз 1188 юаний хувцас авлаа гэж хэлэв. Гайхаж хэлэхдээ аль нь тохиромжтой вэ?",
+  "options": [
+   "没有。",
+   "你真行！",
+   "再见！",
+   "这么贵！"
+  ],
+  "correct_answer": "这么贵！",
+  "explanation": "Гайхшрал, үнэтэй — 这么贵！",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l14-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн таныг ямар ч ажлыг сайн хийснийг сайшаахад аль хэллэг тохиромжтой вэ?",
+  "options": [
+   "我们电话联系。",
+   "你真行！",
+   "请问，在哪儿？",
+   "再见。"
+  ],
+  "correct_answer": "你真行！",
+  "explanation": "真行 — «чи үнэхээр мундаг юм!»",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l14-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Нисэх буудал дээр найзтайгаа салахдаа дараагийн уулзах газраа хэлж, аль нь тохиромжтой вэ?",
+  "options": [
+   "我们见机场。",
+   "机场我们好。",
+   "我们机场联系。",
+   "我们机场见。"
+  ],
+  "correct_answer": "我们机场见。",
+  "explanation": "日常用语 — 我们机场见。",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l14-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

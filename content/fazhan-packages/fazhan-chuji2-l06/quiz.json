@@ -1,0 +1,579 @@
+[
+ {
+  "type": "choice",
+  "question": "«一切» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "зөвхөн нэг",
+   "бүх зүйл, бүгд",
+   "хэсэг нь",
+   "хэзээ ч"
+  ],
+  "correct_answer": "бүх зүйл, бүгд",
+  "explanation": "一切 = бүх зүйл.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«放心» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "санаа амрах",
+   "санаа зовох",
+   "нүүх",
+   "ерөөх"
+  ],
+  "correct_answer": "санаа амрах",
+  "explanation": "放心 = санаа амрах.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你回来了，我就（ ）了。",
+  "options": [
+   "可惜",
+   "放心",
+   "搬",
+   "担心"
+  ],
+  "correct_answer": "放心",
+  "explanation": "放心 = санаа амрах.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我刚到中国，觉得这里的（ ）都很新鲜。",
+  "options": [
+   "一切",
+   "声音",
+   "健康",
+   "可惜"
+  ],
+  "correct_answer": "一切",
+  "explanation": "一切 — бүх юм.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«中国菜吃得惯吗？» дахь «惯» ямар утгатай вэ?",
+  "options": [
+   "нууц",
+   "дасах",
+   "харамсах",
+   "нүүх"
+  ],
+  "correct_answer": "дасах",
+  "explanation": "惯 = дасах.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他的口语好（ ）。",
+  "options": [
+   "一切",
+   "可惜",
+   "极了",
+   "好像"
+  ],
+  "correct_answer": "极了",
+  "explanation": "Adj + 极了 — «маш …».",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«可惜» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "эрүүл",
+   "харамсалтай",
+   "ухаалаг",
+   "нууц"
+  ],
+  "correct_answer": "харамсалтай",
+  "explanation": "可惜 = харамсалтай.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«西红柿炒鸡蛋» дахь «炒» ямар утгатай вэ?",
+  "options": [
+   "уух",
+   "хайлах",
+   "шарах, хуурах",
+   "чанах"
+  ],
+  "correct_answer": "шарах, хуурах",
+  "explanation": "炒 = тосонд хутган шарах.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我有一个小（ ），现在还不能告诉你。",
+  "options": [
+   "情况",
+   "秘密",
+   "声音",
+   "家乡"
+  ],
+  "correct_answer": "秘密",
+  "explanation": "秘密 = нууц.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l06-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«我们打算搬家» дахь «搬» ямар утгатай вэ?",
+  "options": [
+   "нүүх, зөөх",
+   "илгээх",
+   "үнэрлэх",
+   "ерөөх"
+  ],
+  "correct_answer": "нүүх, зөөх",
+  "explanation": "搬 = нүүх, зөөх.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l06-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«祝你生日快乐！» дахь «祝» ямар утгатай вэ?",
+  "options": [
+   "ерөөх, сайн сайхныг хүсэх",
+   "шарах",
+   "илгээх",
+   "дасах"
+  ],
+  "correct_answer": "ерөөх, сайн сайхныг хүсэх",
+  "explanation": "祝 = ерөөх.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l06-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«闻到香味儿» дахь «闻» ямар утгатай вэ?",
+  "options": [
+   "харах",
+   "үнэрлэх",
+   "сонсох",
+   "идэх"
+  ],
+  "correct_answer": "үнэрлэх",
+  "explanation": "闻 = үнэрлэх.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l06-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jiāxiāng» аль үгэнд таарах вэ?",
+  "options": [
+   "声音",
+   "情况",
+   "家乡",
+   "网络"
+  ],
+  "correct_answer": "家乡",
+  "explanation": "家乡 = jiāxiāng.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l06-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Хятад хэл сурах тусам сонирхолтой болдог» — аль нь зөв бэ?",
+  "options": [
+   "越汉语学越有意思。",
+   "汉语越学越有意思。",
+   "汉语越学很有意思。",
+   "汉语学越有意思越。"
+  ],
+  "correct_answer": "汉语越学越有意思。",
+  "explanation": "S + 越V + 越adj.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l06-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Бороо орох тусам ширүүсч байна» — аль нь зөв бэ?",
+  "options": [
+   "雨越下很大。",
+   "雨下越大越。",
+   "雨越下越大。",
+   "越雨下越大。"
+  ],
+  "correct_answer": "雨越下越大。",
+  "explanation": "越A越B.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l06-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр хэлэх тусам би ойлгохгүй» — аль нь зөв бэ?",
+  "options": [
+   "越他说，我不懂越。",
+   "他说越，我不越懂。",
+   "他越说，我越不懂。",
+   "他越说，我越懂不。"
+  ],
+  "correct_answer": "他越说，我越不懂。",
+  "explanation": "A ба B-гийн эзэн өөр.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l06-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Сүүлийн үед чиний цахим захидал улам цөөрч байна» — аль нь зөв бэ?",
+  "options": [
+   "最近你的电子邮件来越越少。",
+   "最近你的电子邮件越来越少。",
+   "最近你的电子邮件越少越来。",
+   "最近你的电子邮件越越来少。"
+  ],
+  "correct_answer": "最近你的电子邮件越来越少。",
+  "explanation": "越来越 + adj.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l06-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Бараа хямд байх тусам сайн биш» — аль нь зөв бэ?",
+  "options": [
+   "东西不是越好越便宜。",
+   "东西不是便宜越好越。",
+   "东西越不是便宜越好。",
+   "东西不是越便宜越好。"
+  ],
+  "correct_answer": "东西不是越便宜越好。",
+  "explanation": "不是越A越B.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l06-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр цэцэрлэгт тасалбаргүй орж чадахгүй» — аль нь зөв бэ?",
+  "options": [
+   "那个公园没有票不进去。",
+   "那个公园没有票进去不。",
+   "那个公园没有票进不去。",
+   "那个公园没有票进得去不。"
+  ],
+  "correct_answer": "那个公园没有票进不去。",
+  "explanation": "V不趋向.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l06-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Одоохондоо ойлгож уншиж чадахгүй» — аль нь зөв бэ?",
+  "options": [
+   "现在还看不懂。",
+   "现在还不看得懂。",
+   "现在还得看不懂。",
+   "现在还看懂不。"
+  ],
+  "correct_answer": "现在还看不懂。",
+  "explanation": "V不C: 看不懂.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l06-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Даалгавар хэт олон, би бичиж дуусгаж чадахгүй» — аль нь зөв бэ?",
+  "options": [
+   "作业太多了，我不写完。",
+   "作业太多了，我写不完。",
+   "作业太多了，我写完不。",
+   "作业太多了，我不写得完。"
+  ],
+  "correct_answer": "作业太多了，我写不完。",
+  "explanation": "V不C: 写不完.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l06-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Миний түлхүүр олдохгүй байна» — аль нь зөв бэ?",
+  "options": [
+   "我的钥匙找不到了。",
+   "我的钥匙不找到了。",
+   "我的钥匙找到不了。",
+   "我的钥匙找得不到了。"
+  ],
+  "correct_answer": "我的钥匙找不到了。",
+  "explanation": "V不C: 找不到.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l06-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр жимс улаан улаан, амттай байх шиг» — аль нь зөв бэ?",
+  "options": [
+   "那种水果红红的，好像挺好吃的。",
+   "那种水果好像红红的，挺好吃的极了。",
+   "那种水果红红的，一定好像好吃。",
+   "那种水果红红的，好像极了。"
+  ],
+  "correct_answer": "那种水果红红的，好像挺好吃的。",
+  "explanation": "好像 — таамаг.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l06-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Маргааш эцэг эх ирнэ, би тэднийг сайтар үзүүлнэ» — аль нь зөв бэ?",
+  "options": [
+   "我要好好儿带他们极了参观。",
+   "我要带他们好好儿参观参观。",
+   "我要带他们参观参观好好儿。",
+   "我要带他们参观好好儿参观。"
+  ],
+  "correct_answer": "我要带他们好好儿参观参观。",
+  "explanation": "好好儿 + V.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l06-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "马克的父母每天早上起床先做什么？",
+  "options": [
+   "上网打开电子邮箱",
+   "做早饭",
+   "给马克打电话",
+   "去邮局"
+  ],
+  "correct_answer": "上网打开电子邮箱",
+  "explanation": "P1.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l06-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "妈妈为什么说“要感谢电脑和网络”？",
+  "options": [
+   "因为网络很慢",
+   "因为马克会做饭",
+   "因为能很快知道马克的情况",
+   "因为电脑很便宜"
+  ],
+  "correct_answer": "因为能很快知道马克的情况",
+  "explanation": "P1: 能这么快地知道你那里的情况.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l06-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "马克为什么打算搬家？",
+  "options": [
+   "现在住的地方离学校有点儿远",
+   "房子太小",
+   "房租太贵",
+   "朋友不喜欢"
+  ],
+  "correct_answer": "现在住的地方离学校有点儿远",
+  "explanation": "P4.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l06-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "马克的汉语怎么样？",
+  "options": [
+   "都听得懂",
+   "上课听得懂，街上还是听不懂",
+   "都听不懂",
+   "上课听不懂，街上听得懂"
+  ],
+  "correct_answer": "上课听得懂，街上还是听不懂",
+  "explanation": "P4.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l06-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "马克的秘密是什么？",
+  "options": [
+   "他想回家",
+   "他会做很多菜",
+   "他喜欢班里的韩国姑娘，她也喜欢他",
+   "他不想学习"
+  ],
+  "correct_answer": "他喜欢班里的韩国姑娘，她也喜欢他",
+  "explanation": "P5.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l06-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Захидлын төгсгөлд эцэг эхэд эрүүл энх байхыг ерөөхөд аль нь вэ?",
+  "options": [
+   "对不起，我是在开玩笑。",
+   "祝您和爸爸身体健康！",
+   "喂，你听得清楚吗？",
+   "祝您生日快乐！"
+  ],
+  "correct_answer": "祝您和爸爸身体健康！",
+  "explanation": "祝您……身体健康.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l06-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Утсаар ярихад дуу тод сонсогдохгүй. Эсрэг талд яаж асуух вэ?",
+  "options": [
+   "我好像越来越少。",
+   "祝你生日快乐！",
+   "你下得去吗？",
+   "喂，你听得清楚吗？"
+  ],
+  "correct_answer": "喂，你听得清楚吗？",
+  "explanation": "听得清楚吗.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l06-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 最近 / 我的 / 邮件 / 越写越短",
+  "options": [
+   "越写越短最近我的邮件",
+   "最近我的邮件越写越短",
+   "我的最近邮件越写越短",
+   "最近邮件我的越写越短"
+  ],
+  "correct_answer": "最近我的邮件越写越短",
+  "explanation": "S + 越A越B.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l06-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

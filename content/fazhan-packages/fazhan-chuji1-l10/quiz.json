@@ -1,0 +1,607 @@
+[
+ {
+  "type": "choice",
+  "question": "«风景»-ийн утга:",
+  "options": [
+   "мод",
+   "хот",
+   "үзэмж",
+   "цэцэг"
+  ],
+  "correct_answer": "үзэмж",
+  "explanation": "风景 = fēngjǐng.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«空气»-ийн утга:",
+  "options": [
+   "цэцэг",
+   "ус",
+   "агаар",
+   "мод"
+  ],
+  "correct_answer": "агаар",
+  "explanation": "空气 = kōngqì.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«新鲜»-ийн утга:",
+  "options": [
+   "халуун",
+   "шинэхэн, цэвэр",
+   "хуучин",
+   "хүйтэн"
+  ],
+  "correct_answer": "шинэхэн, цэвэр",
+  "explanation": "新鲜 = xīnxian.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«爬山»-ийн утга:",
+  "options": [
+   "гүйх",
+   "усанд сэлэх",
+   "унтах",
+   "уулаар гарах"
+  ],
+  "correct_answer": "уулаар гарах",
+  "explanation": "爬 + 山.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«漂亮»-ийн утга:",
+  "options": [
+   "үзэсгэлэнтэй",
+   "ядарсан",
+   "завгүй",
+   "жижиг"
+  ],
+  "correct_answer": "үзэсгэлэнтэй",
+  "explanation": "漂亮 = piàoliang.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«觉得»-ийн утга:",
+  "options": [
+   "хайх",
+   "санагдах, бодох",
+   "гарах",
+   "амрах"
+  ],
+  "correct_answer": "санагдах, бодох",
+  "explanation": "觉得 = juéde.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«休息»-ийн утга:",
+  "options": [
+   "амрах",
+   "хайх",
+   "явах",
+   "унтах"
+  ],
+  "correct_answer": "амрах",
+  "explanation": "休息 = xiūxi.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«出发»-ийн утга:",
+  "options": [
+   "ирэх",
+   "хайх",
+   "уух",
+   "гарах, хөдлөх"
+  ],
+  "correct_answer": "гарах, хөдлөх",
+  "explanation": "出发 = chūfā.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l10-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«茶馆»-ийн утга:",
+  "options": [
+   "ресторан",
+   "цайны газар",
+   "цэцэрлэгт хүрээлэн",
+   "номын сан"
+  ],
+  "correct_answer": "цайны газар",
+  "explanation": "茶 + 馆.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l10-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«听说»-ийн утга:",
+  "options": [
+   "мэдсэнээр",
+   "уншсанаар",
+   "харсанаар",
+   "сонссоноор"
+  ],
+  "correct_answer": "сонссоноор",
+  "explanation": "听说 = tīngshuō.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l10-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«大家»-ийн утга:",
+  "options": [
+   "том гэр",
+   "бусад",
+   "жижиг хүн",
+   "бүгд, та бүхэн"
+  ],
+  "correct_answer": "бүгд, та бүхэн",
+  "explanation": "大家 = dàjiā.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l10-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«渴»-ийн утга:",
+  "options": [
+   "өлссөн",
+   "цангасан",
+   "даарсан",
+   "халуун"
+  ],
+  "correct_answer": "цангасан",
+  "explanation": "渴 = kě.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l10-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«便宜»-ийн утга:",
+  "options": [
+   "хямд",
+   "үнэтэй",
+   "жижиг",
+   "шинэ"
+  ],
+  "correct_answer": "хямд",
+  "explanation": "便宜 = piányi.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l10-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Үзэмж маш сайхан» зөв нь:",
+  "options": [
+   "风景漂亮是非常。",
+   "风景有漂亮。",
+   "风景非常漂亮。",
+   "风景是漂亮。"
+  ],
+  "correct_answer": "风景非常漂亮。",
+  "explanation": "Adj өгүүлэгдэхүүнд «是» хэрэггүй.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l10-q14",
+  "skillTags": [
+   "grammar",
+   "adj-predicate"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би завгүй» зөв нь:",
+  "options": [
+   "我很忙。",
+   "我有忙。",
+   "我忙很。",
+   "我是忙。"
+  ],
+  "correct_answer": "我很忙。",
+  "explanation": "很 + Adj.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l10-q15",
+  "skillTags": [
+   "grammar",
+   "adj-predicate"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би завгүй биш»:",
+  "options": [
+   "我没忙。",
+   "我忙不。",
+   "我不是忙。",
+   "我不忙。"
+  ],
+  "correct_answer": "我不忙。",
+  "explanation": "不 + Adj.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l10-q16",
+  "skillTags": [
+   "grammar",
+   "adj-predicate"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи завгүй юу?» давтан асуулт:",
+  "options": [
+   "你忙不忙？",
+   "你忙不忙吗？",
+   "你忙吗不？",
+   "你不忙忙？"
+  ],
+  "correct_answer": "你忙不忙？",
+  "explanation": "Adj + 不 + Adj.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l10-q17",
+  "skillTags": [
+   "grammar",
+   "question"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи явах уу?» давтан асуулт:",
+  "options": [
+   "你去去不？",
+   "你不去去？",
+   "你去吗不去？",
+   "你去不去？"
+  ],
+  "correct_answer": "你去不去？",
+  "explanation": "V + 不 + V.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l10-q18",
+  "skillTags": [
+   "grammar",
+   "question"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи кино үзэхээр явах уу?»:",
+  "options": [
+   "你去看不看电影？",
+   "你去不去看不看电影？",
+   "你看去不去电影？",
+   "你去不去看电影？"
+  ],
+  "correct_answer": "你去不去看电影？",
+  "explanation": "V₁不V₁ + V₂ + O.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l10-q19",
+  "skillTags": [
+   "grammar",
+   "question"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«Бага зэрэг амарцгаая»:",
+  "options": [
+   "一下我们休息吧。",
+   "我们休息一下吧。",
+   "我们一下休息吧。",
+   "我们休息吧一下。"
+  ],
+  "correct_answer": "我们休息一下吧。",
+  "explanation": "V + 一下.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l10-q20",
+  "skillTags": [
+   "grammar",
+   "yixia"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чиний ном нэг харъя»:",
+  "options": [
+   "我看你的书一下。",
+   "我看一下你的书。",
+   "我一下看你的书。",
+   "我看一点儿你的书。"
+  ],
+  "correct_answer": "我看一下你的书。",
+  "explanation": "V + 一下 + O.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l10-q21",
+  "skillTags": [
+   "grammar",
+   "yixia"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би жаахан цай авна»:",
+  "options": [
+   "我买茶一点儿。",
+   "我一点儿买茶。",
+   "我买一下茶。",
+   "我买一点儿茶。"
+  ],
+  "correct_answer": "我买一点儿茶。",
+  "explanation": "V + 一点儿 + N.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l10-q22",
+  "skillTags": [
+   "grammar",
+   "yidianr"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«不去» зөв дуудлага:",
+  "options": [
+   "bú qù",
+   "bù qù",
+   "bū qù",
+   "bǔ qù"
+  ],
+  "correct_answer": "bú qù",
+  "explanation": "4-р аялгууны өмнө bú.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l10-q23",
+  "skillTags": [
+   "grammar",
+   "bu-tone"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«她»-ийн зүүн хэсэг:",
+  "options": [
+   "口",
+   "女",
+   "囗",
+   "亻"
+  ],
+  "correct_answer": "女",
+  "explanation": "她 = 女 + 也.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l10-q24",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "西山公园在哪儿？",
+  "options": [
+   "这个城市的西边",
+   "图书馆里",
+   "学校里",
+   "这个城市的东边"
+  ],
+  "correct_answer": "这个城市的西边",
+  "explanation": "课文一: 这个城市西边有一个公园.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l10-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "西山公园怎么样？",
+  "options": [
+   "风景非常漂亮，空气新鲜",
+   "很多人不去",
+   "又小又贵",
+   "没有山"
+  ],
+  "correct_answer": "风景非常漂亮，空气新鲜",
+  "explanation": "课文一.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l10-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "马丁星期天做什么？",
+  "options": [
+   "去看电影",
+   "去爬山",
+   "去上课",
+   "去买东西"
+  ],
+  "correct_answer": "去爬山",
+  "explanation": "课文二.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l10-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "他们早上几点出发？",
+  "options": [
+   "七点半",
+   "九点",
+   "十点",
+   "八点"
+  ],
+  "correct_answer": "八点",
+  "explanation": "课文二: 早上八点出发.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l10-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "他们爬山以后去哪儿喝茶？",
+  "options": [
+   "图书馆",
+   "饭馆",
+   "前边的小茶馆",
+   "西山公园"
+  ],
+  "correct_answer": "前边的小茶馆",
+  "explanation": "课文三.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l10-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаас ням гарагт завтай эсэхийг асуух:",
+  "options": [
+   "你是哪国人？",
+   "你叫什么名字？",
+   "这个星期天你忙不忙？",
+   "这个星期天几号？"
+  ],
+  "correct_answer": "这个星期天你忙不忙？",
+  "explanation": "忙不忙 — завгүй юу.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l10-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаа уулаар гарахыг урих:",
+  "options": [
+   "去爬山星期天你吗？",
+   "爬山你对吗？",
+   "星期天爬山几点？",
+   "星期天我们去爬山，你去不去？"
+  ],
+  "correct_answer": "星期天我们去爬山，你去不去？",
+  "explanation": "去不去 — санал асуух.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l10-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ядарсан үедээ амрахыг санал болгох:",
+  "options": [
+   "我们找一下吧。",
+   "我们休息一下吧。",
+   "我们出发一下吧。",
+   "我们喝一下吧。"
+  ],
+  "correct_answer": "我们休息一下吧。",
+  "explanation": "休息一下 + 吧.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l10-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Такси дуудахыг гуйх:",
+  "options": [
+   "劳驾，帮我叫辆出租车！",
+   "不客气。",
+   "明天见！",
+   "再见！"
+  ],
+  "correct_answer": "劳驾，帮我叫辆出租车！",
+  "explanation": "劳驾 = уучлаарай.",
+  "order_index": 33,
+  "id": "fazhan-chuji1-l10-q33",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

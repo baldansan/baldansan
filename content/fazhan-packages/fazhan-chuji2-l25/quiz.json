@@ -1,0 +1,579 @@
+[
+ {
+  "type": "choice",
+  "question": "«搭车» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "машин угаах",
+   "машин зарах",
+   "бусдын машинд суух",
+   "машин жолоодох"
+  ],
+  "correct_answer": "бусдын машинд суух",
+  "explanation": "搭车 = замын машинд суух.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l25-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他站在路边向过往的汽车（ ）手。",
+  "options": [
+   "拍",
+   "搭",
+   "招",
+   "穿"
+  ],
+  "correct_answer": "招",
+  "explanation": "招手 = гар даллах.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l25-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们一共（ ）了十三个国家。",
+  "options": [
+   "说服",
+   "穿越",
+   "拥抱",
+   "拒绝"
+  ],
+  "correct_answer": "穿越",
+  "explanation": "穿越 = гатлан өнгөрөх.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l25-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«公里» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "цаг",
+   "километр",
+   "хоног",
+   "метр"
+  ],
+  "correct_answer": "километр",
+  "explanation": "公里 = километр.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l25-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们的（ ）是送一件特别的礼物。",
+  "options": [
+   "边界",
+   "旅途",
+   "签证",
+   "目的"
+  ],
+  "correct_answer": "目的",
+  "explanation": "目的 = зорилго.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l25-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "明天就离开中国了，我真（ ）这里的朋友。",
+  "options": [
+   "记得",
+   "舍得",
+   "懂得",
+   "舍不得"
+  ],
+  "correct_answer": "舍不得",
+  "explanation": "舍不得 = салмааргүй.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l25-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "刘畅用摄像机（ ）下了这次旅途的故事。",
+  "options": [
+   "拥",
+   "拍",
+   "招",
+   "搭"
+  ],
+  "correct_answer": "拍",
+  "explanation": "拍 = зураг, бичлэг авах.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l25-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们要（ ）十二个国家的签证官。",
+  "options": [
+   "落山",
+   "拥抱",
+   "穿越",
+   "说服"
+  ],
+  "correct_answer": "说服",
+  "explanation": "说服 = ятгах.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l25-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«签证» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "виз",
+   "паспорт",
+   "хил",
+   "тийз"
+  ],
+  "correct_answer": "виз",
+  "explanation": "签证 = виз.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l25-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们曾经被一千多位司机（ ）过。",
+  "options": [
+   "浪漫",
+   "想象",
+   "招手",
+   "拒绝"
+  ],
+  "correct_answer": "拒绝",
+  "explanation": "被……拒绝过.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l25-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在街道（ ），谷岳和伊卡拥抱在一起。",
+  "options": [
+   "行程",
+   "中央",
+   "边界",
+   "目的"
+  ],
+  "correct_answer": "中央",
+  "explanation": "街道中央 = гудамжны голд.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l25-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "经过了（ ）的旅途，谷岳把礼物送给了伊卡。",
+  "options": [
+   "幼小",
+   "强壮",
+   "浪漫",
+   "漫长"
+  ],
+  "correct_answer": "漫长",
+  "explanation": "漫长的旅途.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l25-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shěbude» аль үгэнд таарах вэ?",
+  "options": [
+   "舍不得",
+   "拥抱",
+   "说服",
+   "拒绝"
+  ],
+  "correct_answer": "舍不得",
+  "explanation": "舍不得 = shěbude.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l25-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Ийм зузаан номыг чи гэнэт нэг өдөр уншчихаа юу!» — аль нь зөв бэ?",
+  "options": [
+   "这么厚的书，你一天竟然就看完了的！",
+   "这么厚的书，你竟然一天就看完了！",
+   "这么厚的书，竟然你一天就看完了！",
+   "这么厚的书，你竟然一天才看完了！"
+  ],
+  "correct_answer": "这么厚的书，你竟然一天就看完了！",
+  "explanation": "竟然 — өгүүлэгдэхүүний ард.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l25-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我担心他不会来了，他________早早就来了。",
+  "options": [
+   "当然",
+   "已经",
+   "然后",
+   "竟然"
+  ],
+  "correct_answer": "竟然",
+  "explanation": "竟然 = санаандгүй.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l25-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "我到处找你，想不到________在这儿遇见了你。",
+  "options": [
+   "当然",
+   "竟然",
+   "本来",
+   "只好"
+  ],
+  "correct_answer": "竟然",
+  "explanation": "想不到……竟然.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l25-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "订餐的事________小王负责。",
+  "options": [
+   "被",
+   "把",
+   "让",
+   "由"
+  ],
+  "correct_answer": "由",
+  "explanation": "由 + N + 负责.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l25-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Өнөөдрийн хоолыг би хийе» — аль нь зөв бэ?",
+  "options": [
+   "今天的饭由我来做吧。",
+   "今天的饭来由我做吧。",
+   "由今天的饭我来做吧。",
+   "今天的饭我由做吧。"
+  ],
+  "correct_answer": "今天的饭由我来做吧。",
+  "explanation": "由 + N + 来 + V.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l25-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "到了半夜，外面才能________。",
+  "options": [
+   "安静上去",
+   "安静起来",
+   "安静出来",
+   "安静下来"
+  ],
+  "correct_answer": "安静下来",
+  "explanation": "Нам гүм болох — 下来.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l25-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "考试结束了，紧张的心情终于________了。",
+  "options": [
+   "放松过去",
+   "放松下来",
+   "放松起来",
+   "放松去"
+  ],
+  "correct_answer": "放松下来",
+  "explanation": "Тогтох чиглэл — 下来.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l25-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би хэлэхэд л чи заавал зөвшөөрнө» — аль нь зөв бэ?",
+  "options": [
+   "我一说了，你肯定愿意。",
+   "我说一，你肯定愿意。",
+   "我一说，你肯定愿意。",
+   "一我说，你肯定愿意。"
+  ],
+  "correct_answer": "我一说，你肯定愿意。",
+  "explanation": "一 + V，……",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l25-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "那天考试，我一马虎，________。",
+  "options": [
+   "很早就交了",
+   "没有写错",
+   "答错了好几个问题",
+   "得了一百分"
+  ],
+  "correct_answer": "答错了好几个问题",
+  "explanation": "Хайхрамжгүй байхад алдаа гарна.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l25-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这儿的风景太美了，真________离开这儿。",
+  "options": [
+   "舍得",
+   "舍不得",
+   "记得",
+   "懂得"
+  ],
+  "correct_answer": "舍不得",
+  "explanation": "舍不得 + V.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l25-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "汽车________地开过去，却没有人愿意让他们搭车。",
+  "options": [
+   "一个接一辆",
+   "一支接一支",
+   "一辆接一辆",
+   "一辆接一个"
+  ],
+  "correct_answer": "一辆接一辆",
+  "explanation": "Хэмжих үг ижил: 一辆接一辆.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l25-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "谷岳和刘畅从北京到柏林搭了多少次车？",
+  "options": [
+   "十三次",
+   "八十八次",
+   "一百次",
+   "三十次"
+  ],
+  "correct_answer": "八十八次",
+  "explanation": "P1: 搭车88次.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l25-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "他们的目的是什么？",
+  "options": [
+   "看朋友",
+   "去旅游",
+   "送给伊卡一件特别的情人节礼物",
+   "参加比赛"
+  ],
+  "correct_answer": "送给伊卡一件特别的情人节礼物",
+  "explanation": "P1: 目的……情人节礼物.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l25-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "办好签证用了多长时间？",
+  "options": [
+   "三天",
+   "两个星期",
+   "一个月",
+   "半年"
+  ],
+  "correct_answer": "半年",
+  "explanation": "P3: 在半年后，签证办好了.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l25-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "在土耳其那个开车人为什么说“你们是我的客人”？",
+  "options": [
+   "因为他们说了俄语",
+   "因为他们认识",
+   "因为他们很有钱",
+   "因为他们坐了他的车，他还替他们付了宾馆钱"
+  ],
+  "correct_answer": "因为他们坐了他的车，他还替他们付了宾馆钱",
+  "explanation": "P5.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l25-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "他们为什么每天朝着太阳落山的方向走？",
+  "options": [
+   "因为太阳落山的方向就是柏林",
+   "因为那边路好",
+   "因为那里风景好",
+   "因为那里近"
+  ],
+  "correct_answer": "因为太阳落山的方向就是柏林",
+  "explanation": "P6.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l25-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Замын машинд суулгахыг гуйх: «Уучлаарай, нэг хэсэг замд аваад явж болох уу?»",
+  "options": [
+   "谢谢，我们要自己去。",
+   "不好意思，如果方便的话，能带我们一段吗？",
+   "你们为什么搭车？",
+   "对不起，我不想搭车。"
+  ],
+  "correct_answer": "不好意思，如果方便的话，能带我们一段吗？",
+  "explanation": "不好意思 + 如果方便的话 + 能……吗.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l25-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзууд салах үед: «Бид салмааргүй байна.»",
+  "options": [
+   "大家都要回国了，我们去买票。",
+   "我们不认识朋友。",
+   "毕业了，大家都要回国了，我真舍不得离开朋友们。",
+   "毕业了，我很高兴。"
+  ],
+  "correct_answer": "毕业了，大家都要回国了，我真舍不得离开朋友们。",
+  "explanation": "舍不得 + V.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l25-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 汽车 / 一辆 / 接 / 一辆 / 地 / 开过去",
+  "options": [
+   "汽车一辆一辆接地开过去",
+   "汽车地一辆接一辆开过去",
+   "一辆接一辆汽车地开过去",
+   "汽车一辆接一辆地开过去"
+  ],
+  "correct_answer": "汽车一辆接一辆地开过去",
+  "explanation": "一M接一M + 地 + V.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l25-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

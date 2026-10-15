@@ -1,0 +1,25 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-chuji2",
+ "lessonId": "fazhan-chuji2-l12",
+ "hskLevel": 3,
+ "lessonNumber": 12,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "是“枕头”，不是“针头”",
+ "mongolianTitle": "«枕头» (дэр) мөн, «针头» (зүүний үзүүр) биш",
+ "series": "发展汉语（第二版）初级综合 II",
+ "seriesLabel_mn": "发展汉语 анхан II (≈HSK3)",
+ "source": "发展汉语（第二版）初级综合 II · 第12课 (сурах бичиг, 参考答案 (АУДИО, 课件, 教案 байхгүй))",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (албан 教案 байхгүй тул)"
+ }
+}

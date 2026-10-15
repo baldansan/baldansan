@@ -1,0 +1,600 @@
+[
+ {
+  "type": "choice",
+  "question": "«公里» ямар утгатай вэ?",
+  "options": [
+   "ли (0.5 км)",
+   "километр",
+   "метр",
+   "юань"
+  ],
+  "correct_answer": "километр",
+  "explanation": "公里 = gōnglǐ.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l28-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«里» (lǐ) нь хэдэн км вэ?",
+  "options": [
+   "0.5 км",
+   "1 км",
+   "10 км",
+   "2 км"
+  ],
+  "correct_answer": "0.5 км",
+  "explanation": "1 公里 = 2 里.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l28-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«到达» ямар утгатай вэ?",
+  "options": [
+   "төлөх",
+   "хүрэх, ирж очих",
+   "хадгалах",
+   "хөдлөх"
+  ],
+  "correct_answer": "хүрэх, ирж очих",
+  "explanation": "到达 = dàodá.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l28-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«大概» ямар утгатай вэ?",
+  "options": [
+   "мөн байж",
+   "яг",
+   "ойролцоогоор",
+   "тиймээс"
+  ],
+  "correct_answer": "ойролцоогоор",
+  "explanation": "大概 = dàgài.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l28-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«所以» ямар утгатай вэ?",
+  "options": [
+   "хэрэв",
+   "мөн байж",
+   "гэхдээ",
+   "тиймээс"
+  ],
+  "correct_answer": "тиймээс",
+  "explanation": "所以 = suǒyǐ.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l28-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«原来» ямар утгатай вэ?",
+  "options": [
+   "хамт",
+   "тиймээс",
+   "ойролцоогоор",
+   "мөн байж, нээрээ л"
+  ],
+  "correct_answer": "мөн байж, нээрээ л",
+  "explanation": "原来 = yuánlái.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l28-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«学生证» ямар утгатай вэ?",
+  "options": [
+   "билет",
+   "кредит карт",
+   "паспорт",
+   "оюутны үнэмлэх"
+  ],
+  "correct_answer": "оюутны үнэмлэх",
+  "explanation": "学生证 = xuéshēngzhèng.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l28-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«刷卡» ямар утгатай вэ?",
+  "options": [
+   "карт хаях",
+   "карт зурах",
+   "картаар төлөх",
+   "карт хулгайлах"
+  ],
+  "correct_answer": "картаар төлөх",
+  "explanation": "刷卡 = shuā kǎ.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l28-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«存钱» ямар утгатай вэ?",
+  "options": [
+   "мөнгө зээлэх",
+   "мөнгө авах",
+   "мөнгө төлөх",
+   "мөнгө хадгалуулах"
+  ],
+  "correct_answer": "мөнгө хадгалуулах",
+  "explanation": "存钱 = cún qián.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l28-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «gōngjiāokǎ» аль үгтэй таарах вэ?",
+  "options": [
+   "信用卡",
+   "公交卡",
+   "学生证",
+   "车票"
+  ],
+  "correct_answer": "公交卡",
+  "explanation": "公交卡 = нийтийн тээврийн карт.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l28-q10",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«通过» ямар утгатай вэ?",
+  "options": [
+   "хүрэх газар",
+   "учир нь",
+   "ойролцоо",
+   "-аар дамжуулан, аргаар"
+  ],
+  "correct_answer": "-аар дамжуулан, аргаар",
+  "explanation": "通过 = tōngguò.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l28-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«张» ямар төрлийн үг вэ?",
+  "options": [
+   "хуудас хэлбэрийн юмыг тоолох үг",
+   "асуух үг",
+   "хүнийг тоолох үг",
+   "хэмжих нэгж (кг)"
+  ],
+  "correct_answer": "хуудас хэлбэрийн юмыг тоолох үг",
+  "explanation": "一张票 / 一张卡.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l28-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«万» ямар тоо вэ?",
+  "options": [
+   "зуу",
+   "мянга",
+   "сая",
+   "арван мянга"
+  ],
+  "correct_answer": "арван мянга",
+  "explanation": "万 = wàn = 10 000.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l28-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хорин гаруй кг жимс» аль нь вэ?",
+  "options": [
+   "二十多斤水果",
+   "多二十斤水果",
+   "二十斤多水果",
+   "二多十斤水果"
+  ],
+  "correct_answer": "二十多斤水果",
+  "explanation": "Бүхэл тооны ард 多.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l28-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Хоёр гаруй цаг» аль нь вэ?",
+  "options": [
+   "两小时多个",
+   "两个多小时",
+   "多两个小时",
+   "两多个小时"
+  ],
+  "correct_answer": "两个多小时",
+  "explanation": "1-9 + нэгж + 多.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l28-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Арван гаруй юань (11-19)» аль нь вэ?",
+  "options": [
+   "几十块钱",
+   "十几块钱",
+   "十块几钱",
+   "十多几块"
+  ],
+  "correct_answer": "十几块钱",
+  "explanation": "十几 = 11-19.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l28-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Хэдэн зуун километр» аль нь вэ?",
+  "options": [
+   "百公里几",
+   "几百公里",
+   "几公里百",
+   "百几公里"
+  ],
+  "correct_answer": "几百公里",
+  "explanation": "几百 = хэдэн зуу.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l28-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Галт тэрэг найман цаг хагасын орчим хөдөлнө» — аль нь зөв бэ?",
+  "options": [
+   "火车左右八点半出发",
+   "火车八点半左右出发",
+   "火车大概左右八点半出发",
+   "火车八点左右半出发"
+  ],
+  "correct_answer": "火车八点半左右出发",
+  "explanation": "Цагийн ард 左右.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l28-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "长城有________？(Их хэрэм хэр урт вэ?)",
+  "options": [
+   "几长",
+   "多长度",
+   "多少长",
+   "多长"
+  ],
+  "correct_answer": "多长",
+  "explanation": "多 + тэмдэг нэр.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l28-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "从北京到上海________？(Бээжингээс Шанхай хүртэл хэр хол вэ?)",
+  "options": [
+   "多少远",
+   "几远",
+   "多远",
+   "大概远"
+  ],
+  "correct_answer": "多远",
+  "explanation": "多 + 远.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l28-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "我________看电视学习汉语。(зурагт үзэх замаар)",
+  "options": [
+   "通过",
+   "原来",
+   "所以",
+   "大概"
+  ],
+  "correct_answer": "通过",
+  "explanation": "通过 = арга зам.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l28-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "我以为他是你弟弟，________你们不认识。",
+  "options": [
+   "大概",
+   "所以",
+   "原来",
+   "通过"
+  ],
+  "correct_answer": "原来",
+  "explanation": "Бодсоноос өөр байсныг ойлгосон.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l28-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль ханз «彳»偏旁-тэй вэ?",
+  "options": [
+   "很",
+   "冷",
+   "次",
+   "空"
+  ],
+  "correct_answer": "很",
+  "explanation": "很 = 彳 + 艮.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l28-q23",
+  "skillTags": [
+   "grammar",
+   "hanzi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль ханз «冫»偏旁-тэй вэ?",
+  "options": [
+   "冷",
+   "得",
+   "穿",
+   "行"
+  ],
+  "correct_answer": "冷",
+  "explanation": "冷 = 冫 + 令.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l28-q24",
+  "skillTags": [
+   "grammar",
+   "hanzi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«穿» ханзын дээд хэсэг (偏旁) аль нь вэ?",
+  "options": [
+   "车",
+   "穴",
+   "彳",
+   "冫"
+  ],
+  "correct_answer": "穴",
+  "explanation": "穿 = 穴 + 牙.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l28-q25",
+  "skillTags": [
+   "grammar",
+   "hanzi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "八达岭长城在北京的哪个方向？",
+  "options": [
+   "东南部",
+   "西北部",
+   "西南部",
+   "东北部"
+  ],
+  "correct_answer": "西北部",
+  "explanation": "课文一.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l28-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "坐旅游车去八达岭要多长时间？",
+  "options": [
+   "五六分钟",
+   "四十多分钟",
+   "两个多小时",
+   "一个多月"
+  ],
+  "correct_answer": "四十多分钟",
+  "explanation": "课文一.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l28-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "长城为什么也叫“万里长城”？",
+  "options": [
+   "长城有一万个门",
+   "中国人喜欢数字一万",
+   "八千八百五十多公里是一万七千七百多里",
+   "长城有一万公里"
+  ],
+  "correct_answer": "八千八百五十多公里是一万七千七百多里",
+  "explanation": "课文二.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l28-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "崔浩说怎么办银行卡？",
+  "options": [
+   "在网上办",
+   "学生不能办",
+   "要办一个月",
+   "带护照、学生证和一些钱去银行"
+  ],
+  "correct_answer": "带护照、学生证和一些钱去银行",
+  "explanation": "课文三.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l28-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "学生办哪种卡很麻烦？",
+  "options": [
+   "公交卡",
+   "银行卡",
+   "信用卡",
+   "学生证"
+  ],
+  "correct_answer": "信用卡",
+  "explanation": "课文三: 学生办信用卡很麻烦.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l28-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чамаас «Чи хэр удаан хичээллэдэг вэ?» гэж асуувал юу гэж хэлэх вэ?",
+  "options": [
+   "你每天学习多长时间？",
+   "你每天学习几长？",
+   "你每天学习多少长？",
+   "你每天学习大概长？"
+  ],
+  "correct_answer": "你每天学习多长时间？",
+  "explanation": "多长时间 — хугацааг асуух.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l28-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Тээврийн картаар төлөхийг хүсэх үед юу гэж асуух вэ?",
+  "options": [
+   "请问，这儿可以存钱吗？",
+   "请问，这儿可以住吗？",
+   "请问，这儿可以通过吗？",
+   "请问，这儿可以刷卡吗？"
+  ],
+  "correct_answer": "请问，这儿可以刷卡吗？",
+  "explanation": "刷卡 — картаар төлөх.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l28-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Бодсоноос өөр юм байсныг ойлгоод юу гэх вэ?",
+  "options": [
+   "原来是这样啊！",
+   "大概是这样啊！",
+   "所以是这样啊！",
+   "通过是这样啊！"
+  ],
+  "correct_answer": "原来是这样啊！",
+  "explanation": "原来 = мөн байж.",
+  "order_index": 33,
+  "id": "fazhan-chuji1-l28-q33",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

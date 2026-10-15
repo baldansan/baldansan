@@ -1,0 +1,582 @@
+[
+ {
+  "type": "choice",
+  "question": "«毕业» ямар утгатай вэ?",
+  "options": [
+   "сурах",
+   "шалгалт өгөх",
+   "элсэх",
+   "төгсөх"
+  ],
+  "correct_answer": "төгсөх",
+  "explanation": "毕业 = bìyè.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l30-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«选择» ямар утгатай вэ?",
+  "options": [
+   "олох",
+   "шийдэх",
+   "орхих",
+   "сонгох"
+  ],
+  "correct_answer": "сонгох",
+  "explanation": "选择 = xuǎnzé.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l30-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«熟悉» ямар утгатай вэ?",
+  "options": [
+   "ядуу",
+   "хэцүү",
+   "хол",
+   "сайн мэдэх, танил"
+  ],
+  "correct_answer": "сайн мэдэх, танил",
+  "explanation": "熟悉 = shúxī.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l30-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«遇到» ямар утгатай вэ?",
+  "options": [
+   "олох",
+   "орхих",
+   "шийдэх",
+   "таарах, тулгарах"
+  ],
+  "correct_answer": "таарах, тулгарах",
+  "explanation": "遇到 = yùdào.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l30-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«坚持» ямар утгатай вэ?",
+  "options": [
+   "хэлэх",
+   "шийдэх",
+   "орхих",
+   "тууштай үргэлжлүүлэх"
+  ],
+  "correct_answer": "тууштай үргэлжлүүлэх",
+  "explanation": "坚持 = jiānchí.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l30-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«困难» ямар утгатай вэ?",
+  "options": [
+   "хурдан",
+   "хэцүү",
+   "амар",
+   "хямд"
+  ],
+  "correct_answer": "хэцүү",
+  "explanation": "困难 = kùnnan.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l30-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«决定» ямар утгатай вэ?",
+  "options": [
+   "сонгох",
+   "шийдэх",
+   "уйлах",
+   "мартах"
+  ],
+  "correct_answer": "шийдэх",
+  "explanation": "决定 = juédìng.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l30-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«钱包» ямар утгатай вэ?",
+  "options": [
+   "мөнгө",
+   "карт",
+   "цүнх",
+   "түрийвч"
+  ],
+  "correct_answer": "түрийвч",
+  "explanation": "钱包 = qiánbāo.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l30-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«热情» ямар утгатай вэ?",
+  "options": [
+   "ядуу",
+   "халуун дулаан, найрсаг",
+   "хэцүү",
+   "хүйтэн"
+  ],
+  "correct_answer": "халуун дулаан, найрсаг",
+  "explanation": "热情 = rèqíng.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l30-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«经验» ямар утгатай вэ?",
+  "options": [
+   "орчуулга",
+   "туршлага (ажил, ур чадварын)",
+   "түрийвч",
+   "хэл"
+  ],
+  "correct_answer": "туршлага (ажил, ур чадварын)",
+  "explanation": "经验 = jīngyàn.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l30-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«意义» ямар утгатай вэ?",
+  "options": [
+   "өнгө",
+   "цаг",
+   "утга учир, ач холбогдол",
+   "хэл"
+  ],
+  "correct_answer": "утга учир, ач холбогдол",
+  "explanation": "意义 = yìyì.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l30-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«农村» ямар утгатай вэ?",
+  "options": [
+   "хөдөө, тосгон",
+   "компани",
+   "сургууль",
+   "хот"
+  ],
+  "correct_answer": "хөдөө, тосгон",
+  "explanation": "农村 = nóngcūn.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l30-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «fānyì» аль үгтэй таарах вэ?",
+  "options": [
+   "发现",
+   "意义",
+   "离开",
+   "翻译"
+  ],
+  "correct_answer": "翻译",
+  "explanation": "翻译 = fānyì.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l30-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би орчуулагч хийж байсан» — аль нь зөв бэ?",
+  "options": [
+   "我过当翻译",
+   "我当翻译过",
+   "我当过翻译",
+   "我当了过翻译"
+  ],
+  "correct_answer": "我当过翻译",
+  "explanation": "V + 过 + O.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l30-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би баруун хойд очиж үзээгүй» — аль нь зөв бэ?",
+  "options": [
+   "我没去了西北",
+   "我去没过西北",
+   "我没去过西北",
+   "我不去过西北"
+  ],
+  "correct_answer": "我没去过西北",
+  "explanation": "没 + V + 过.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l30-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "你吃过饺子________？(Чи бууз идэж үзсэн үү?)",
+  "options": [
+   "没过",
+   "不是",
+   "不过",
+   "没有"
+  ],
+  "correct_answer": "没有",
+  "explanation": "Төгсгөлд 没有 нэмж асууна.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l30-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Тэд гадаад хүн хараагүй» — аль нь зөв бэ?",
+  "options": [
+   "他们没见过外国人",
+   "他们没见了外国人",
+   "他们不见过外国人",
+   "他们见没过外国人"
+  ],
+  "correct_answer": "他们没见过外国人",
+  "explanation": "没 + V + 过.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l30-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "我高兴________。(Би туйлын баяртай байлаа)",
+  "options": [
+   "非常极",
+   "极的",
+   "很了",
+   "极了"
+  ],
+  "correct_answer": "极了",
+  "explanation": "Adj + 极了.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l30-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "这个容易________。(Энэ үнэхээр амархан)",
+  "options": [
+   "过了",
+   "极了",
+   "当了",
+   "很极"
+  ],
+  "correct_answer": "极了",
+  "explanation": "Adj + 极了.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l30-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "________我回来的时候，他已经睡了。",
+  "options": [
+   "因为",
+   "如果",
+   "当",
+   "所以"
+  ],
+  "correct_answer": "当",
+  "explanation": "当…的时候.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l30-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "当比赛开始________，我已经睡了。",
+  "options": [
+   "的时候",
+   "的",
+   "过",
+   "了"
+  ],
+  "correct_answer": "的时候",
+  "explanation": "当…的时候.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l30-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«过» нь ямар утгатай вэ? （我去过西北）",
+  "options": [
+   "дууссан",
+   "болох гэж байна",
+   "туршлага",
+   "үргэлжилж байна"
+  ],
+  "correct_answer": "туршлага",
+  "explanation": "V + 过 = туршлага.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l30-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль ханз «田»偏旁-тэй вэ?",
+  "options": [
+   "加",
+   "特",
+   "男",
+   "动"
+  ],
+  "correct_answer": "男",
+  "explanation": "男 = 田 + 力.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l30-q23",
+  "skillTags": [
+   "grammar",
+   "hanzi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль ханз «牛»偏旁-тэй вэ?",
+  "options": [
+   "思",
+   "努",
+   "特",
+   "累"
+  ],
+  "correct_answer": "特",
+  "explanation": "特 = 牛 + 寺.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l30-q24",
+  "skillTags": [
+   "grammar",
+   "hanzi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«加» ханзыг бүрдүүлэх: ________",
+  "options": [
+   "力 + 口",
+   "田 + 力",
+   "云 + 力",
+   "牛 + 口"
+  ],
+  "correct_answer": "力 + 口",
+  "explanation": "加 = 力 + 口.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l30-q25",
+  "skillTags": [
+   "grammar",
+   "hanzi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "“我”大学毕业以后马上工作了吗？",
+  "options": [
+   "有，去公司",
+   "没有，回国",
+   "没有，选择去中国",
+   "有，当老师"
+  ],
+  "correct_answer": "没有，选择去中国",
+  "explanation": "课文 1-р догол.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l30-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "“我”的钱包为什么找到了？",
+  "options": [
+   "朋友帮忙",
+   "司机在家里",
+   "司机看了学生证，到学校找到了“我”",
+   "“我”报了警"
+  ],
+  "correct_answer": "司机看了学生证，到学校找到了“我”",
+  "explanation": "课文 3-р догол: 是你的学生证帮了我的忙.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l30-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "“我”为什么去西北农村当外语老师？",
+  "options": [
+   "没有别的工作",
+   "朋友让去",
+   "那里工资高",
+   "觉得应该做更有意义的事情"
+  ],
+  "correct_answer": "觉得应该做更有意义的事情",
+  "explanation": "课文 4-р догол.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l30-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "“我”现在在哪儿工作？",
+  "options": [
+   "西北的学校",
+   "出租汽车公司",
+   "北京的语言学校",
+   "一家大公司"
+  ],
+  "correct_answer": "一家大公司",
+  "explanation": "课文 6-р догол.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l30-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз аялалд явахдаа юу гэж хэлэх вэ?",
+  "options": [
+   "祝你好吃。",
+   "祝你晚安。",
+   "祝你一路顺风。",
+   "祝你生日快乐。"
+  ],
+  "correct_answer": "祝你一路顺风。",
+  "explanation": "日常用语 2.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l30-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз шалгалт өгөхөөр явахдаа юу гэж хэлэх вэ?",
+  "options": [
+   "祝你一路顺风。",
+   "对不起。",
+   "祝你好运！",
+   "请你坐。"
+  ],
+  "correct_answer": "祝你好运！",
+  "explanation": "日常用语 1.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l30-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаас Хятадын Бээжингийн дуурь үзсэн эсэхийг асуух хэллэг аль нь вэ?",
+  "options": [
+   "你看了过京剧？",
+   "你过看京剧吗？",
+   "你看京剧过没有？",
+   "你看过京剧没有？"
+  ],
+  "correct_answer": "你看过京剧没有？",
+  "explanation": "V + 过 + O + 没有.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l30-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

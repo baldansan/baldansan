@@ -1,0 +1,578 @@
+[
+ {
+  "type": "choice",
+  "question": "«哪怕» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "ачаар",
+   "хэрэв гэнэт",
+   "шаардлагагүй",
+   "хичнээн … ч гэсэн"
+  ],
+  "correct_answer": "хичнээн … ч гэсэн",
+  "explanation": "哪怕 = even if.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l24-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "父亲只好从后面（ ）住儿子的衣服。",
+  "options": [
+   "提",
+   "登",
+   "迈",
+   "抓"
+  ],
+  "correct_answer": "抓",
+  "explanation": "抓住 = барьж авах.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l24-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "站在山顶能（ ）到远处的村庄。",
+  "options": [
+   "登",
+   "迈",
+   "提",
+   "望"
+  ],
+  "correct_answer": "望",
+  "explanation": "望 = алсыг харах.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l24-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我最喜欢的运动是（ ）山。",
+  "options": [
+   "提",
+   "登",
+   "迈",
+   "望"
+  ],
+  "correct_answer": "登",
+  "explanation": "登山 = уул авирах.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l24-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的行李太重了，麻烦你帮我（ ）一下。",
+  "options": [
+   "迈",
+   "抓",
+   "登",
+   "提"
+  ],
+  "correct_answer": "提",
+  "explanation": "提 = өргөх, барьж өргөх.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l24-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "儿子的身体越来越（ ）了。",
+  "options": [
+   "优秀",
+   "幼小",
+   "强壮",
+   "眼前"
+  ],
+  "correct_answer": "强壮",
+  "explanation": "身体强壮 = бие чийрэг.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l24-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«懂事» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "гэнэтийн хэрэг",
+   "юм олох",
+   "хөл дээрээ зогсох",
+   "ухаан орсон, ухаантай"
+  ],
+  "correct_answer": "ухаан орсон, ухаантай",
+  "explanation": "懂事 = ухаантай (хүүхэд).",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l24-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "要不是老板（ ）他，他就当不成经理了。",
+  "options": [
+   "信任",
+   "搜集",
+   "哪怕",
+   "每隔"
+  ],
+  "correct_answer": "信任",
+  "explanation": "信任 = итгэх.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l24-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "想要取得好成绩，就要（ ）努力。",
+  "options": [
+   "差点儿",
+   "不断",
+   "有关",
+   "多亏"
+  ],
+  "correct_answer": "不断",
+  "explanation": "不断努力 = тасралтгүй хичээх.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l24-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他们搜集了很多（ ）长城的历史资料。",
+  "options": [
+   "优秀",
+   "有关",
+   "眼前",
+   "幼小"
+  ],
+  "correct_answer": "有关",
+  "explanation": "有关长城 = Их хэрэмтэй холбоотой.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l24-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "因为他（ ）要写一部有关长城的历史，所以选择了历史专业。",
+  "options": [
+   "哪怕",
+   "多亏",
+   "以来",
+   "决心"
+  ],
+  "correct_answer": "决心",
+  "explanation": "决心 = бат шийдэх.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l24-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«烽火台» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "цайны газар",
+   "дохионы гал асаадаг цамхаг",
+   "гал тогоо",
+   "галт тэрэг"
+  ],
+  "correct_answer": "дохионы гал асаадаг цамхаг",
+  "explanation": "烽火台 = beacon tower.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l24-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "每（ ）一段时间，父子俩就要爬一次长城。",
+  "options": [
+   "遍",
+   "壶",
+   "肩",
+   "隔"
+  ],
+  "correct_answer": "隔",
+  "explanation": "每隔 = тутамд.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l24-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хичнээн хол ч би явна» — аль нь зөв бэ?",
+  "options": [
+   "哪怕再远，我也要去。",
+   "哪怕再远，我就要去。",
+   "哪怕再远，我才要去。",
+   "哪怕再远，我都要去。"
+  ],
+  "correct_answer": "哪怕再远，我也要去。",
+  "explanation": "哪怕……也……",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l24-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "哪怕儿子再累，父亲________不背他。",
+  "options": [
+   "才",
+   "再",
+   "就",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "哪怕……也……",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l24-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр хичнээн ядуу ч би түүнд дуртай» — аль нь зөв бэ?",
+  "options": [
+   "哪怕他再穷，我只喜欢他。",
+   "他哪怕再穷，我就喜欢他。",
+   "哪怕再他穷，我也喜欢他。",
+   "哪怕他再穷，我也喜欢他。"
+  ],
+  "correct_answer": "哪怕他再穷，我也喜欢他。",
+  "explanation": "哪怕 + 再 + тэмдэг нэр.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l24-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "今天天气真好，不过还是带着伞吧，________。",
+  "options": [
+   "万一天气好",
+   "万一下雨呢",
+   "万一很高兴",
+   "万一没关系"
+  ],
+  "correct_answer": "万一下雨呢",
+  "explanation": "万一 + таагүй нөхцөл + 呢.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l24-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我们还是检查一下吧，________。",
+  "options": [
+   "万一错了呢",
+   "万一很好",
+   "万一对了",
+   "万一高兴"
+  ],
+  "correct_answer": "万一错了呢",
+  "explanation": "万一 + таагүй нөхцөл.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l24-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "坐地铁更方便，________打车。",
+  "options": [
+   "用得着",
+   "不用着",
+   "没用着",
+   "用不着"
+  ],
+  "correct_answer": "用不着",
+  "explanation": "用不着 = хэрэггүй.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l24-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "十几年________，父亲坚持经常带着儿子爬长城。",
+  "options": [
+   "以上",
+   "以后",
+   "以来",
+   "以前"
+  ],
+  "correct_answer": "以来",
+  "explanation": "以来 = … -аас хойш одоо хүртэл.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l24-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "到学校的公共汽车________十五分钟一辆。",
+  "options": [
+   "常常",
+   "每次",
+   "每隔",
+   "一直"
+  ],
+  "correct_answer": "每隔",
+  "explanation": "每隔 + хугацаа.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l24-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他们十几年来几乎爬________了北京附近的每一段长城。",
+  "options": [
+   "遍",
+   "过",
+   "完成",
+   "着"
+  ],
+  "correct_answer": "遍",
+  "explanation": "V+遍 = бүгдийг.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l24-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "今天堵车，我________迟到了。",
+  "options": [
+   "差点儿",
+   "差远了",
+   "差不多",
+   "差得多"
+  ],
+  "correct_answer": "差点儿",
+  "explanation": "差点儿 = болох шахсан ч болоогүй.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l24-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "父亲差点儿掉下去，________儿子手快，一把拉住了他。",
+  "options": [
+   "用不着",
+   "万一",
+   "多亏",
+   "哪怕"
+  ],
+  "correct_answer": "多亏",
+  "explanation": "多亏 = ачаар.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l24-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "第一次爬长城时，儿子几岁？",
+  "options": [
+   "十八岁",
+   "十六岁",
+   "五岁",
+   "十岁"
+  ],
+  "correct_answer": "五岁",
+  "explanation": "P2: 儿子才五岁.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l24-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "儿子累了，父亲为什么不背他？",
+  "options": [
+   "路太远",
+   "父亲没有力气",
+   "父亲背不动",
+   "要把他锻炼成男子汉"
+  ],
+  "correct_answer": "要把他锻炼成男子汉",
+  "explanation": "P2: 目的是把他锻炼成男子汉.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l24-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "下山时发生了什么事？",
+  "options": [
+   "父亲差点儿从山上掉下去，儿子一把拉住了他",
+   "他们没带水",
+   "他们遇到了老虎",
+   "儿子迷路了"
+  ],
+  "correct_answer": "父亲差点儿从山上掉下去，儿子一把拉住了他",
+  "explanation": "P5.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l24-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "这一次爬长城和以前有什么不同？",
+  "options": [
+   "他们走得更快",
+   "父亲听了儿子的话",
+   "他们不拍照",
+   "他们坐火车去"
+  ],
+  "correct_answer": "父亲听了儿子的话",
+  "explanation": "P6: 这次，不是儿子听父亲的，而是父亲听了儿子的话.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l24-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "儿子为什么选择了历史专业？",
+  "options": [
+   "他决心要写一部有关长城的历史",
+   "他喜欢旅行",
+   "他不喜欢数学",
+   "父亲让他选的"
+  ],
+  "correct_answer": "他决心要写一部有关长城的历史",
+  "explanation": "P8.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l24-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз нь «Бид такси барья» гэв. Метро илүү тохиромжтой гэж хэлэх нь:",
+  "options": [
+   "我们不去了。",
+   "坐地铁更贵，一定打车。",
+   "坐地铁更方便，用不着打车。",
+   "打车更方便，用不着坐地铁。"
+  ],
+  "correct_answer": "坐地铁更方便，用不着打车。",
+  "explanation": "用不着 + V.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l24-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Бусдаас талархах: «Чиний ачаар би билет авч чадлаа».",
+  "options": [
+   "这次用不着你，我才买到了车票。",
+   "这次万一你，我才买到了车票。",
+   "这次哪怕你，我才买到了车票。",
+   "这次多亏了你，我才买到了车票。"
+  ],
+  "correct_answer": "这次多亏了你，我才买到了车票。",
+  "explanation": "多亏 = ачаар.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l24-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 哪怕 / 再 / 累 / 也 / 我 / 要 / 去",
+  "options": [
+   "哪怕再累我也要去",
+   "哪怕我再累也要去",
+   "我哪怕也再累要去",
+   "再累哪怕我也要去"
+  ],
+  "correct_answer": "哪怕再累我也要去",
+  "explanation": "哪怕 + 再 + A，主语 + 也 + V.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l24-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,589 @@
+[
+ {
+  "type": "choice",
+  "question": "«租» ямар утгатай вэ?",
+  "options": [
+   "түрээслэх",
+   "худалдах",
+   "зөөх",
+   "хайх"
+  ],
+  "correct_answer": "түрээслэх",
+  "explanation": "租 = zū — түрээслэх.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l13-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«房子» ямар утгатай вэ?",
+  "options": [
+   "дэлгүүр",
+   "өрөө",
+   "байшин, орон сууц",
+   "сургууль"
+  ],
+  "correct_answer": "байшин, орон сууц",
+  "explanation": "房子 = fángzi.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l13-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想租一（　）房子。",
+  "options": [
+   "杯",
+   "套",
+   "位",
+   "门"
+  ],
+  "correct_answer": "套",
+  "explanation": "Орон сууцны тооллын үг — «套».",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l13-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«方便» ямар утгатай вэ?",
+  "options": [
+   "үнэтэй",
+   "том",
+   "хол",
+   "тохиромжтой, амар"
+  ],
+  "correct_answer": "тохиромжтой, амар",
+  "explanation": "方便 = fāngbiàn.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l13-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«房租» ямар утгатай вэ?",
+  "options": [
+   "байрны хаяг",
+   "байрны үнэ",
+   "байрны хэмжээ",
+   "байрны түрээс"
+  ],
+  "correct_answer": "байрны түрээс",
+  "explanation": "房租 = fángzū.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l13-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«贵» ямар утгатай вэ?",
+  "options": [
+   "үнэтэй",
+   "том",
+   "хол",
+   "хямд"
+  ],
+  "correct_answer": "үнэтэй",
+  "explanation": "贵 = guì — үнэтэй.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l13-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«最后» ямар утгатай вэ?",
+  "options": [
+   "анх",
+   "өчигдөр",
+   "эцэст нь",
+   "дараа нь"
+  ],
+  "correct_answer": "эцэст нь",
+  "explanation": "最后 = zuìhòu.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l13-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«满意» ямар утгатай вэ?",
+  "options": [
+   "сэтгэл хангалуун байх",
+   "яарах",
+   "дургүйцэх",
+   "сэтгэл гутрах"
+  ],
+  "correct_answer": "сэтгэл хангалуун байх",
+  "explanation": "满意 = mǎnyì.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l13-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«搬家» ямар утгатай вэ?",
+  "options": [
+   "гэр нүүх",
+   "гэрт ирэх",
+   "гэр түрээслэх",
+   "гэр цэвэрлэх"
+  ],
+  "correct_answer": "гэр нүүх",
+  "explanation": "搬家 = bān jiā.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l13-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«已经» ямар утгатай вэ?",
+  "options": [
+   "заавал",
+   "дахин",
+   "хамгийн",
+   "аль хэдийн"
+  ],
+  "correct_answer": "аль хэдийн",
+  "explanation": "已经 = yǐjīng.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l13-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«远» ямар утгатай вэ?",
+  "options": [
+   "амар",
+   "хол",
+   "том",
+   "ойр"
+  ],
+  "correct_answer": "хол",
+  "explanation": "远 = yuǎn.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l13-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«请客» ямар утгатай вэ?",
+  "options": [
+   "мөнгө төлөх",
+   "зочин болох",
+   "хоол хийх",
+   "дайлах"
+  ],
+  "correct_answer": "дайлах",
+  "explanation": "请客 = qǐng kè.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l13-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«父母» ямар утгатай вэ?",
+  "options": [
+   "ах дүүс",
+   "багш нар",
+   "эцэг эх",
+   "найз нөхөд"
+  ],
+  "correct_answer": "эцэг эх",
+  "explanation": "父母 = fùmǔ.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l13-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«玩儿» ямар утгатай вэ?",
+  "options": [
+   "унтах",
+   "тоглох, зугаалах",
+   "суралцах",
+   "ажиллах"
+  ],
+  "correct_answer": "тоглох, зугаалах",
+  "explanation": "玩儿 = wánr.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l13-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他昨天没来，今天（　）没来。",
+  "options": [
+   "再见",
+   "最",
+   "对",
+   "又"
+  ],
+  "correct_answer": "又",
+  "explanation": "Давтагдсан үйлдэл — «又».",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l13-q15",
+  "skillTags": [
+   "grammar",
+   "you"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр «又»-г зөв хэрэглэсэн бэ?",
+  "options": [
+   "他今天又去书店了。",
+   "他今天去又书店了。",
+   "他今天去书店又。",
+   "他又今天去书店了。"
+  ],
+  "correct_answer": "他今天又去书店了。",
+  "explanation": "又 нь үйл үгийн өмнө.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l13-q16",
+  "skillTags": [
+   "grammar",
+   "you"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би өглөөний цай уугаагүй» — аль нь зөв бэ?",
+  "options": [
+   "我吃没早饭。",
+   "我没吃早饭了。",
+   "我不吃早饭了。",
+   "我没吃早饭。"
+  ],
+  "correct_answer": "我没吃早饭。",
+  "explanation": "没 + V, «了»-гүй.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l13-q17",
+  "skillTags": [
+   "grammar",
+   "le"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我已经搬家（　）。",
+  "options": [
+   "了",
+   "吧",
+   "吗",
+   "呢"
+  ],
+  "correct_answer": "了",
+  "explanation": "Болсон үйлдэл — «了».",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l13-q18",
+  "skillTags": [
+   "grammar",
+   "le"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«他来了。» өгүүлбэрийг «V没V» асуулт болго:",
+  "options": [
+   "他没来吗？",
+   "他来没来？",
+   "他来了吗？",
+   "他不来来？"
+  ],
+  "correct_answer": "他来没来？",
+  "explanation": "V + 没 + V.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l13-q19",
+  "skillTags": [
+   "grammar",
+   "le"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь болсон үйлдлийн асуулт биш вэ?",
+  "options": [
+   "你吃没吃早饭？",
+   "你吃早饭了没有？",
+   "你吃早饭了吗？",
+   "你想吃吗？"
+  ],
+  "correct_answer": "你想吃吗？",
+  "explanation": "«想» нь хүсэл, «了» байхгүй — болсон үйлдлийн асуулт биш.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l13-q20",
+  "skillTags": [
+   "grammar",
+   "le"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«Ямада нүүсэн үү?» гэж асуухад аль нь зөв бэ?",
+  "options": [
+   "山田没搬家了吗？",
+   "山田不搬家了？",
+   "山田搬家了没有？",
+   "山田搬了家吗了？"
+  ],
+  "correct_answer": "山田搬家了没有？",
+  "explanation": "V+O+了+没有.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l13-q21",
+  "skillTags": [
+   "grammar",
+   "le"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«这套房子怎么样？» гэсэн асуултад тохирох хариулт аль нь вэ?",
+  "options": [
+   "不错。",
+   "在学校旁边。",
+   "我昨天去了。",
+   "四千五百块。"
+  ],
+  "correct_answer": "不错。",
+  "explanation": "怎么样 — байдал, чанар асууна.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l13-q22",
+  "skillTags": [
+   "grammar",
+   "zenmeyang"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的身体（　）？",
+  "options": [
+   "怎么样",
+   "什么",
+   "哪儿",
+   "谁"
+  ],
+  "correct_answer": "怎么样",
+  "explanation": "Эрүүл мэнд хэр вэ.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l13-q23",
+  "skillTags": [
+   "grammar",
+   "zenmeyang"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи яагаад очсонгүй вэ?» — аль нь зөв бэ?",
+  "options": [
+   "你没怎么去？",
+   "你怎么没去？",
+   "你怎么去没？",
+   "你怎么样没去？"
+  ],
+  "correct_answer": "你怎么没去？",
+  "explanation": "怎么 + 没 + V.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l13-q24",
+  "skillTags": [
+   "grammar",
+   "zenme"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«辶» 偏旁-тэй ханз аль нь вэ?",
+  "options": [
+   "报",
+   "打",
+   "选",
+   "找"
+  ],
+  "correct_answer": "选",
+  "explanation": "选 = 辶 + 先; бусад нь 扌-тэй.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l13-q25",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "山田什么时候去看房子了？ (课文一)",
+  "options": [
+   "今天",
+   "星期一",
+   "上星期六",
+   "昨天"
+  ],
+  "correct_answer": "上星期六",
+  "explanation": "山田上星期六去看房子了。",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l13-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "山田为什么没租第一套房子？ (课文一)",
+  "options": [
+   "房子太大，房租也太贵",
+   "离学校太远",
+   "买东西不方便",
+   "他不喜欢学校"
+  ],
+  "correct_answer": "房子太大，房租也太贵",
+  "explanation": "他觉得房子太大，房租也太贵。",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l13-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "山田现在的家离学校远吗？ (课文二)",
+  "options": [
+   "很近，没有路",
+   "不远，骑自行车、走路都行",
+   "不知道",
+   "很远，要坐车"
+  ],
+  "correct_answer": "不远，骑自行车、走路都行",
+  "explanation": "山田：不远，骑自行车、走路都行。",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l13-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "崔浩为什么没去山田的请客？ (课文三)",
+  "options": [
+   "他的父母来了，他们去玩儿了",
+   "他不喜欢山田",
+   "他生病了",
+   "他有课"
+  ],
+  "correct_answer": "他的父母来了，他们去玩儿了",
+  "explanation": "崔浩：我父母来了，我们昨天去玩儿了。",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l13-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз өчигдөр ирээгүй. Яагаад гэж асуухдаа аль нь тохиромжтой вэ?",
+  "options": [
+   "你怎么样来？",
+   "你怎么没来？",
+   "你来吗？",
+   "你没怎么来？"
+  ],
+  "correct_answer": "你怎么没来？",
+  "explanation": "怎么没来 — яагаад ирсэнгүй гэж асууна.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l13-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн «你吃早饭了吗？» гэж асууна, чи уугаагүй. Аль хариулт тохирох вэ?",
+  "options": [
+   "吃了。",
+   "没有。",
+   "吃吧。",
+   "不吃了。"
+  ],
+  "correct_answer": "没有。",
+  "explanation": "Болсон үйлдлийн үгүйсгэл — «没有».",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l13-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Зам асуухдаа «Уучлаарай, Найрамдал зочид буудал хаана байдаг вэ?» гэж хэлэх нь аль нь вэ?",
+  "options": [
+   "请问，友谊宾馆在哪儿？",
+   "搬家，友谊宾馆在哪儿？",
+   "请客，友谊宾馆。",
+   "友谊宾馆很贵。"
+  ],
+  "correct_answer": "请问，友谊宾馆在哪儿？",
+  "explanation": "请问 — эелдэг асуулт.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l13-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

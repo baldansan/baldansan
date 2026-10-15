@@ -1,0 +1,589 @@
+[
+ {
+  "type": "choice",
+  "question": "«快要» ямар утгатай вэ?",
+  "options": [
+   "удахгүй, болох гэж байна",
+   "хэрэв",
+   "санасангүй",
+   "ялангуяа"
+  ],
+  "correct_answer": "удахгүй, болох гэж байна",
+  "explanation": "快要 = kuàiyào.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l26-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«丰富» ямар утгатай вэ?",
+  "options": [
+   "олон",
+   "баялаг",
+   "өөр",
+   "хичээнгүй"
+  ],
+  "correct_answer": "баялаг",
+  "explanation": "丰富 = fēngfù.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l26-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«迎接» ямар утгатай вэ?",
+  "options": [
+   "ашиглах",
+   "төлөвлөх",
+   "илгээх",
+   "угтах"
+  ],
+  "correct_answer": "угтах",
+  "explanation": "迎接 = yíngjiē.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l26-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«利用» ямар утгатай вэ?",
+  "options": [
+   "бэлдэх",
+   "угтах",
+   "мартах",
+   "ашиглах, далимдуулах"
+  ],
+  "correct_answer": "ашиглах, далимдуулах",
+  "explanation": "利用 = lìyòng.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l26-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«打算» ямар утгатай вэ?",
+  "options": [
+   "төлөвлөх",
+   "уйтгартай",
+   "шалгалт",
+   "ойр хавь"
+  ],
+  "correct_answer": "төлөвлөх",
+  "explanation": "打算 = dǎsuan.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l26-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«教堂» ямар утгатай вэ?",
+  "options": [
+   "эмнэлэг",
+   "сүм",
+   "сургууль",
+   "зах"
+  ],
+  "correct_answer": "сүм",
+  "explanation": "教堂 = jiàotáng.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l26-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«到处» ямар утгатай вэ?",
+  "options": [
+   "удахгүй",
+   "хаа сайгүй",
+   "заримдаа",
+   "ялангуяа"
+  ],
+  "correct_answer": "хаа сайгүй",
+  "explanation": "到处 = dàochù.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l26-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«外地» ямар утгатай вэ?",
+  "options": [
+   "гэр",
+   "гадаад улс",
+   "ойр хавь",
+   "өөр хот, өөр газар"
+  ],
+  "correct_answer": "өөр хот, өөр газар",
+  "explanation": "外地 = wàidì.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l26-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«认真» ямар утгатай вэ?",
+  "options": [
+   "хичээнгүй, нямбай",
+   "баялаг",
+   "өөр",
+   "уйтгартай"
+  ],
+  "correct_answer": "хичээнгүй, нямбай",
+  "explanation": "认真 = rènzhēn.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l26-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«没意思» ямар утгатай вэ?",
+  "options": [
+   "амархан",
+   "уйтгартай",
+   "хэцүү",
+   "сонирхолтой"
+  ],
+  "correct_answer": "уйтгартай",
+  "explanation": "没意思 = méi yìsi.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l26-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«没想到» ямар утгатай вэ?",
+  "options": [
+   "мартсан",
+   "мэдэж байсан",
+   "төлөвлөсөн",
+   "санасангүй"
+  ],
+  "correct_answer": "санасангүй",
+  "explanation": "没想到 = méi xiǎngdào.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l26-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«春节» ямар баяр вэ?",
+  "options": [
+   "Дунд намар",
+   "Зул сар",
+   "Цагаан сар (Хаврын баяр)",
+   "Дуаньүү"
+  ],
+  "correct_answer": "Цагаан сар (Хаврын баяр)",
+  "explanation": "春节 = Chūnjié.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l26-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«孩子» ба «家人»-ийн утга?",
+  "options": [
+   "хүүхэд ба гэр бүлийн гишүүд",
+   "эцэг эх ба өвөө",
+   "сурагч ба багш",
+   "найз ба хөрш"
+  ],
+  "correct_answer": "хүүхэд ба гэр бүлийн гишүүд",
+  "explanation": "孩子 = хүүхэд, 家人 = гэр бүлийн гишүүд.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l26-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们下个星期________考试了。",
+  "options": [
+   "就要",
+   "不",
+   "快要",
+   "很"
+  ],
+  "correct_answer": "就要",
+  "explanation": "Цагийн үгийн дараа 就要.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l26-q14",
+  "skillTags": [
+   "grammar",
+   "kuaiyao"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "天________下雨了。",
+  "options": [
+   "特别",
+   "快要",
+   "要是",
+   "就"
+  ],
+  "correct_answer": "快要",
+  "explanation": "快要 + V + 了.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l26-q15",
+  "skillTags": [
+   "grammar",
+   "kuaiyao"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь зөв вэ?",
+  "options": [
+   "他明天要回国。",
+   "他快要明天回国了。",
+   "他明天快要回国了。",
+   "他明天就要回国了。"
+  ],
+  "correct_answer": "他明天就要回国了。",
+  "explanation": "明天-ийн дараа 就要.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l26-q16",
+  "skillTags": [
+   "grammar",
+   "kuaiyao"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我喜欢很多运动，________足球。",
+  "options": [
+   "但是",
+   "可是",
+   "所以",
+   "特别是"
+  ],
+  "correct_answer": "特别是",
+  "explanation": "特别是 = ялангуяа.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l26-q17",
+  "skillTags": [
+   "grammar",
+   "tebieshi"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«特别是» ямар утгатай вэ?",
+  "options": [
+   "эцэст нь",
+   "ялангуяа",
+   "хэрэв",
+   "жишээлбэл"
+  ],
+  "correct_answer": "ялангуяа",
+  "explanation": "特别是 = ялангуяа.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l26-q18",
+  "skillTags": [
+   "grammar",
+   "tebieshi"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь зөв вэ? («Таван өдөр амрах»)",
+  "options": [
+   "放五假天",
+   "五天放假",
+   "放五天假",
+   "放假五天"
+  ],
+  "correct_answer": "放五天假",
+  "explanation": "离合词: 放 + хугацаа + 假.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l26-q19",
+  "skillTags": [
+   "grammar",
+   "lihe"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь зөв вэ? («Би арван цаг унтлаа»)",
+  "options": [
+   "我睡觉了十个小时。",
+   "我睡了十个小时觉。",
+   "我睡觉十个小时了。",
+   "我十个小时睡觉了。"
+  ],
+  "correct_answer": "我睡了十个小时觉。",
+  "explanation": "睡 + хугацаа + 觉.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l26-q20",
+  "skillTags": [
+   "grammar",
+   "lihe"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "________你有时间，就来我家玩儿。",
+  "options": [
+   "虽然",
+   "要是",
+   "特别是",
+   "因为"
+  ],
+  "correct_answer": "要是",
+  "explanation": "要是 = хэрэв.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l26-q21",
+  "skillTags": [
+   "grammar",
+   "yaoshi"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«要是» нь ямар үгтэй адил утгатай вэ?",
+  "options": [
+   "所以",
+   "因为",
+   "可是",
+   "如果"
+  ],
+  "correct_answer": "如果",
+  "explanation": "要是 ≈ 如果.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l26-q22",
+  "skillTags": [
+   "grammar",
+   "yaoshi"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«问, 闻, 间, 闹» дөрвөн ханзын нийтлэг偏旁 аль нь вэ?",
+  "options": [
+   "疒",
+   "门",
+   "讠",
+   "禾"
+  ],
+  "correct_answer": "门",
+  "explanation": "门字框.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l26-q23",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«病, 瘦» хоёр ханзын нийтлэг偏旁 аль нь вэ?",
+  "options": [
+   "禾",
+   "门",
+   "亻",
+   "疒"
+  ],
+  "correct_answer": "疒",
+  "explanation": "病字旁.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l26-q24",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "以前中国人过圣诞节吗？",
+  "options": [
+   "只有商店过",
+   "每年都过",
+   "不过",
+   "只有年轻人过"
+  ],
+  "correct_answer": "不过",
+  "explanation": "课文一: 以前中国人不过圣诞节.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l26-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "为什么现在很多商店、饭店利用圣诞节这个机会？",
+  "options": [
+   "为了旅游",
+   "为了休息",
+   "为了学习",
+   "为了挣钱"
+  ],
+  "correct_answer": "为了挣钱",
+  "explanation": "课文一: 商店、饭店也利用这个机会挣钱.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l26-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "法国人十二月二十四日晚上一般先做什么？",
+  "options": [
+   "买礼物",
+   "去教堂参加活动",
+   "吃晚饭",
+   "唱歌跳舞"
+  ],
+  "correct_answer": "去教堂参加活动",
+  "explanation": "课文二: 先去教堂参加活动.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l26-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "马丁圣诞节打算做什么？",
+  "options": [
+   "在家学习",
+   "去打工",
+   "在附近玩儿",
+   "和父母到外地去旅游"
+  ],
+  "correct_answer": "和父母到外地去旅游",
+  "explanation": "课文三.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l26-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "山田为什么想在家学习？",
+  "options": [
+   "他不喜欢旅游",
+   "他生病了",
+   "他没有钱",
+   "圣诞节以后就要考试了"
+  ],
+  "correct_answer": "圣诞节以后就要考试了",
+  "explanation": "课文三.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l26-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаа амралтаар юу хийхийг асуухад яаж хэлэх вэ?",
+  "options": [
+   "我没想到。",
+   "听说圣诞节要放五天假，你们想怎么过啊？",
+   "我对足球不感兴趣。",
+   "要是不放假，我就不能去旅游了。"
+  ],
+  "correct_answer": "听说圣诞节要放五天假，你们想怎么过啊？",
+  "explanation": "课文三 崔浩.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l26-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хөл бөмбөгт сонирхолгүй гэдгээ яаж хэлэх вэ?",
+  "options": [
+   "我足球不对感兴趣。",
+   "我对足球不感兴趣。",
+   "我对足球感兴趣。",
+   "我不足球感兴趣。"
+  ],
+  "correct_answer": "我对足球不感兴趣。",
+  "explanation": "对……不感兴趣.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l26-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хэрэв амралтгүй бол аялж чадахгүй гэдгээ яаж хэлэх вэ?",
+  "options": [
+   "我不放假，旅游了。",
+   "特别是不放假，我去旅游。",
+   "要是不放假，我就不能去旅游了。",
+   "快要不放假，我旅游。"
+  ],
+  "correct_answer": "要是不放假，我就不能去旅游了。",
+  "explanation": "课文三 马丁.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l26-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

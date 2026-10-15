@@ -1,0 +1,572 @@
+[
+ {
+  "type": "cloze",
+  "question": "我感觉我们（ ）已经有了问题。",
+  "options": [
+   "中心",
+   "一片",
+   "之间",
+   "地点"
+  ],
+  "correct_answer": "之间",
+  "explanation": "之间 = хоорондох.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l17-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）这样，我还是跟她约好了晚上见面。",
+  "options": [
+   "尽管",
+   "因为",
+   "于是",
+   "不再"
+  ],
+  "correct_answer": "尽管",
+  "explanation": "尽管这样 = ийм байсан ч.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l17-q02",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）买了一大束鲜花，准备送给她。",
+  "options": [
+   "离开",
+   "到底",
+   "特意",
+   "忽然"
+  ],
+  "correct_answer": "特意",
+  "explanation": "特意 = тусгайлан.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l17-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«广场» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "сандал",
+   "нүдний шил",
+   "талбай",
+   "хогийн сав"
+  ],
+  "correct_answer": "талбай",
+  "explanation": "广场 = талбай.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l17-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她告诉我，她（ ）爱我了。",
+  "options": [
+   "特意",
+   "十分",
+   "于是",
+   "不再"
+  ],
+  "correct_answer": "不再",
+  "explanation": "不再 = дахин …-хгүй.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l17-q05",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我一直担心的事情（ ）还是发生了。",
+  "options": [
+   "到底",
+   "朝",
+   "忽然",
+   "特意"
+  ],
+  "correct_answer": "到底",
+  "explanation": "到底还是 = эцэст нь.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l17-q06",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«孤零零» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "халуун дотно",
+   "олон хүнтэй",
+   "баяртай",
+   "ганцаардмал"
+  ],
+  "correct_answer": "ганцаардмал",
+  "explanation": "孤零零 = ганцаардмал.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l17-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在这个没有情人的情人节晚上，我感到十分（ ）。",
+  "options": [
+   "幸福",
+   "满意",
+   "高兴",
+   "寂寞"
+  ],
+  "correct_answer": "寂寞",
+  "explanation": "寂寞 = ганцаардсан.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l17-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«不知不觉» гэсэн хэлцийн утга аль нь вэ?",
+  "options": [
+   "санаатайгаар",
+   "хүчээр",
+   "өөрийн эрхгүй, мэдэлгүй",
+   "гэнэт"
+  ],
+  "correct_answer": "өөрийн эрхгүй, мэдэлгүй",
+  "explanation": "不知不觉 = мэдэлгүй.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l17-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我刚想离开，（ ），看到一个姑娘朝我走来。",
+  "options": [
+   "之间",
+   "特意",
+   "十分",
+   "忽然"
+  ],
+  "correct_answer": "忽然",
+  "explanation": "忽然 = гэнэт.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l17-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一个姑娘（ ）我走来，头发长长的。",
+  "options": [
+   "朝",
+   "离",
+   "把",
+   "在"
+  ],
+  "correct_answer": "朝",
+  "explanation": "朝 + хүн + V = …-руу.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l17-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«长相» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "нас",
+   "царай төрх",
+   "бие",
+   "өндөр"
+  ],
+  "correct_answer": "царай төрх",
+  "explanation": "长相 = гадаад дүр.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l17-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我很（ ），那椅子是空的。",
+  "options": [
+   "失望",
+   "寂寞",
+   "提前",
+   "幸福"
+  ],
+  "correct_answer": "失望",
+  "explanation": "失望 = урам хугарах.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l17-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Бие нь муу ч хичээлдээ ирлээ» гэхэд аль нь зөв бэ?",
+  "options": [
+   "因为尽管身体不舒服，他来上课了。",
+   "尽管身体不太舒服，所以他来上课了。",
+   "尽管身体不太舒服，但他还是来上课了。"
+  ],
+  "correct_answer": "尽管身体不太舒服，但他还是来上课了。",
+  "explanation": "尽管 … 但 … — эсрэг утга.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l17-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«尽管……» -ийн хоёр дахь хэсэгт аль нь орж болохгүй вэ?",
+  "options": [
+   "还是",
+   "但是",
+   "可是",
+   "所以"
+  ],
+  "correct_answer": "所以",
+  "explanation": "所以 нь шалтгаан-үр дүн, эсрэг утга биш.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l17-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：他考上大学了吗？ B：________，但还是没考上大学。",
+  "options": [
+   "所以他很努力",
+   "因为他很努力",
+   "虽然他很努力所以",
+   "尽管他很努力"
+  ],
+  "correct_answer": "尽管他很努力",
+  "explanation": "尽管 + А, 但还是 + В.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l17-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Удаан бодоод эцэст нь ойлголоо» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我想了很久，到底明白吗？",
+   "我想了很久，明白了到底。",
+   "我想了很久，到底明白了。"
+  ],
+  "correct_answer": "我想了很久，到底明白了。",
+  "explanation": "到底 нь үйл үгийн өмнө.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l17-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи яг ирэх юм уу, үгүй юу?» — аль нь зөв бэ?",
+  "options": [
+   "你到底来不来？",
+   "你到底来吗？",
+   "你来到底不来？"
+  ],
+  "correct_answer": "你到底来不来？",
+  "explanation": "到底 + V不V.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l17-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт 到底 нь «яг, үнэндээ» (асуулт) утгатай вэ?",
+  "options": [
+   "你到底是怎么想的？",
+   "我找了一个多小时，到底找到了。",
+   "他们试验了三年，到底成功了。",
+   "我想了很久，到底明白了。"
+  ],
+  "correct_answer": "你到底是怎么想的？",
+  "explanation": "Асуух үгтэй асуулт — «究竟».",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l17-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр надад дахин хайргүй болсон» — аль нь зөв бэ?",
+  "options": [
+   "她没再爱我。",
+   "她不再爱我了。",
+   "她再不爱我了。",
+   "她不爱再我了。"
+  ],
+  "correct_answer": "她不再爱我了。",
+  "explanation": "不再 + V + 了.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l17-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Би цаашид ингэж хийхгүй» — аль нь зөв бэ?",
+  "options": [
+   "我以后再不做这样的事了。",
+   "我以后不再做这样的事了。",
+   "我以后没再做这样的事。"
+  ],
+  "correct_answer": "我以后不再做这样的事了。",
+  "explanation": "不再 + V + 了.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l17-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "我今天在家没事做，________就上网聊天儿。",
+  "options": [
+   "虽然",
+   "而是",
+   "尽管",
+   "于是"
+  ],
+  "correct_answer": "于是",
+  "explanation": "于是 — үйл явдлын дараалал.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l17-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэрт 于是 зөв байрласан бэ?",
+  "options": [
+   "我没事做，于是上网聊天儿。",
+   "我没事做，上网聊天儿于是。",
+   "于是我没事做，上网聊天儿。"
+  ],
+  "correct_answer": "我没事做，于是上网聊天儿。",
+  "explanation": "于是 нь хоёр дахь хэсгийн эхэнд.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l17-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "你一会儿说来，一会儿说不来，________？",
+  "options": [
+   "到底来不来",
+   "来到底不来",
+   "到底来吗"
+  ],
+  "correct_answer": "到底来不来",
+  "explanation": "到底 + V不V.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l17-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”和女朋友约好在哪儿见面？",
+  "options": [
+   "咖啡馆",
+   "学校门口",
+   "公园",
+   "市中心广场"
+  ],
+  "correct_answer": "市中心广场",
+  "explanation": "P1: 约好了晚上在市中心广场见面。",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l17-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "女朋友为什么没来？",
+  "options": [
+   "因为她生病了",
+   "因为堵车",
+   "因为她不再爱“我”了",
+   "因为忘了"
+  ],
+  "correct_answer": "因为她不再爱“我”了",
+  "explanation": "P2: 她不能来了，因为她不再爱我了。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l17-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”为什么没有把花扔掉？",
+  "options": [
+   "因为花很贵",
+   "因为旁边没有垃圾箱，不能扔在干净的广场上",
+   "因为想送给朋友",
+   "因为想自己留着"
+  ],
+  "correct_answer": "因为旁边没有垃圾箱，不能扔在干净的广场上",
+  "explanation": "P3.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l17-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”把花送给了谁？",
+  "options": [
+   "朋友",
+   "一个孤零零坐在椅子上的姑娘",
+   "女朋友",
+   "老师"
+  ],
+  "correct_answer": "一个孤零零坐在椅子上的姑娘",
+  "explanation": "P4.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l17-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "最后，那个姑娘怎么样了？",
+  "options": [
+   "成了“我”的朋友",
+   "不认识“我”",
+   "去了别的国家",
+   "成了“我”的妻子"
+  ],
+  "correct_answer": "成了“我”的妻子",
+  "explanation": "P9: 她成了我的妻子！",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l17-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «Би ирж чадахгүй» гэв. Чи түүнийг асуух нь: ямар нь зохимжтой вэ?",
+  "options": [
+   "你到底有什么事？",
+   "你到底有什么事吗？",
+   "你有到底什么事？"
+  ],
+  "correct_answer": "你到底有什么事？",
+  "explanation": "到底 + асуух үг.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l17-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хайртай хүнгүй шөнө би маш ганцаарданаад байна» — аль нь зөв бэ?",
+  "options": [
+   "我十分寂寞的感到。",
+   "我感到十分寂寞。",
+   "我感到十分孤零零。"
+  ],
+  "correct_answer": "我感到十分寂寞。",
+  "explanation": "感到 + 十分 + 寂寞.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l17-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 尽管 / 我很想去 / 可是 / 我还是不能去",
+  "options": [
+   "尽管我很想去，可是我还是不能去",
+   "可是尽管我很想去，我还是不能去",
+   "我很想去尽管，可是不能去我还是"
+  ],
+  "correct_answer": "尽管我很想去，可是我还是不能去",
+  "explanation": "尽管 А, 可是 В дараалал.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l17-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

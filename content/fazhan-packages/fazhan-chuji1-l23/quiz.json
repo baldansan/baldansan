@@ -1,0 +1,593 @@
+[
+ {
+  "type": "choice",
+  "question": "«零下» ямар утгатай вэ?",
+  "options": [
+   "тэглээс доош",
+   "тэглээс дээш",
+   "тэг",
+   "нэг"
+  ],
+  "correct_answer": "тэглээс доош",
+  "explanation": "零下 = líng xià — тэглээс доош.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l23-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«雪» ханзын утга аль нь вэ?",
+  "options": [
+   "салхи",
+   "бороо",
+   "цас",
+   "өвөл"
+  ],
+  "correct_answer": "цас",
+  "explanation": "雪 = xuě — цас.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l23-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«气温» ямар утгатай вэ?",
+  "options": [
+   "агаарын температур",
+   "улирал",
+   "цаг агаарын мэдээ",
+   "уур амьсгал"
+  ],
+  "correct_answer": "агаарын температур",
+  "explanation": "气温 = qìwēn.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l23-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«突然» ямар утгатай вэ?",
+  "options": [
+   "хэвийн",
+   "бараг",
+   "онцгой",
+   "гэнэт"
+  ],
+  "correct_answer": "гэнэт",
+  "explanation": "突然 = tūrán — гэнэт.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l23-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«寒冷» ямар утгатай вэ?",
+  "options": [
+   "дулаан",
+   "цэлмэг",
+   "халуун",
+   "хүйтэн"
+  ],
+  "correct_answer": "хүйтэн",
+  "explanation": "寒冷 = hánlěng.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l23-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«暖» ба «冷»-ийн харьцаа?",
+  "options": [
+   "хоёулаа улирал",
+   "ижил утгатай",
+   "эсрэг утгатай",
+   "хоёулаа өнгө"
+  ],
+  "correct_answer": "эсрэг утгатай",
+  "explanation": "暖 = дулаан ↔ 冷 = хүйтэн.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l23-q06",
+  "skillTags": [
+   "vocabulary",
+   "antonym"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«专家» ямар утгатай вэ?",
+  "options": [
+   "мэргэжилтэн",
+   "оюутан",
+   "багш",
+   "өвгөд"
+  ],
+  "correct_answer": "мэргэжилтэн",
+  "explanation": "专家 = zhuānjiā.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l23-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«地球» ханзын пиньинь аль нь вэ?",
+  "options": [
+   "tūrán",
+   "dìqiú",
+   "qìhòu",
+   "dìzhǐ"
+  ],
+  "correct_answer": "dìqiú",
+  "explanation": "地球 = dìqiú — дэлхий.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l23-q08",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«锻炼» ямар утгатай вэ?",
+  "options": [
+   "ханиадлах",
+   "цас орох",
+   "биеэ чийрэгжүүлэх",
+   "гэнэт болох"
+  ],
+  "correct_answer": "биеэ чийрэгжүүлэх",
+  "explanation": "锻炼 = duànliàn.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l23-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«气候» ба «天气»-ийн ялгаа?",
+  "options": [
+   "气候 — урт хугацааны уур амьсгал, 天气 — тухайн өдрийн байдал",
+   "天气 нь урт хугацааных",
+   "ижил",
+   "хоёулаа температур"
+  ],
+  "correct_answer": "气候 — урт хугацааны уур амьсгал, 天气 — тухайн өдрийн байдал",
+  "explanation": "气候 = климат; 天气 = өнөөдрийн цаг агаар.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l23-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«下雨» ба «下雪» дахь «下» ямар утгатай вэ?",
+  "options": [
+   "доод",
+   "дараа",
+   "доош",
+   "(бороо, цас) орох"
+  ],
+  "correct_answer": "(бороо, цас) орох",
+  "explanation": "Бороо, цас оронд «下» хэрэглэнэ.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l23-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«场» (cháng) ямар юмны хэмжих үг вэ?",
+  "options": [
+   "өмд",
+   "гутал",
+   "дугуй",
+   "бороо, цасны удаа"
+  ],
+  "correct_answer": "бороо, цасны удаа",
+  "explanation": "一场雨 / 一场雪.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l23-q12",
+  "skillTags": [
+   "vocabulary",
+   "measure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jìjié» аль ханзтай таарах вэ?",
+  "options": [
+   "气候",
+   "锻炼",
+   "正常",
+   "季节"
+  ],
+  "correct_answer": "季节",
+  "explanation": "季节 = jìjié — улирал.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l23-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这件衣服三百块钱________。(орчим)",
+  "options": [
+   "差不多",
+   "才",
+   "突然",
+   "左右"
+  ],
+  "correct_answer": "左右",
+  "explanation": "数量词语 + 左右.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l23-q14",
+  "skillTags": [
+   "grammar",
+   "zuoyou"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我们十左右点到学校。",
+   "我们十点左右到学校。",
+   "我们到十点学校左右。",
+   "我们左右十点到学校。"
+  ],
+  "correct_answer": "我们十点左右到学校。",
+  "explanation": "左右 нь тоо хэмжээний ард.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l23-q15",
+  "skillTags": [
+   "grammar",
+   "zuoyou"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：今天有多少度？ B：________有35度。",
+  "options": [
+   "才",
+   "左右",
+   "突然",
+   "差不多"
+  ],
+  "correct_answer": "差不多",
+  "explanation": "差不多 + 有 + тоо.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l23-q16",
+  "skillTags": [
+   "grammar",
+   "chabuduo"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«A: 这两件衣服一样吗？ B: 差不多。» гэх «差不多» ямар утгатай вэ?",
+  "options": [
+   "маш үнэтэй",
+   "огт өөр",
+   "хуучин",
+   "бараг адилхан"
+  ],
+  "correct_answer": "бараг адилхан",
+  "explanation": "差不多 = бараг адил.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l23-q17",
+  "skillTags": [
+   "grammar",
+   "chabuduo"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我的汉语一般，他的汉语________好呢。",
+  "options": [
+   "都",
+   "也",
+   "就",
+   "才"
+  ],
+  "correct_answer": "才",
+  "explanation": "才 (3) — онцлох.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l23-q18",
+  "skillTags": [
+   "grammar",
+   "cai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«可是今年冬天才冷呢» дахь «才» ямар утгатай вэ?",
+  "options": [
+   "дөнгөж",
+   "дараа",
+   "ердөө",
+   "онцлох (яг энэ жил л)"
+  ],
+  "correct_answer": "онцлох (яг энэ жил л)",
+  "explanation": "才 (3) = онцлох.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l23-q19",
+  "skillTags": [
+   "grammar",
+   "cai"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今年冬天突然变冷________。",
+  "options": [
+   "吗",
+   "吧",
+   "了",
+   "呢"
+  ],
+  "correct_answer": "了",
+  "explanation": "Өгүүлбэр төгсгөл 了 = өөрчлөлт.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l23-q20",
+  "skillTags": [
+   "grammar",
+   "le3"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«下雨了» гэдэг нь юу гэсэн үг вэ?",
+  "options": [
+   "бороо ордог",
+   "бороо орлоо (шинээр)",
+   "бороо орсон байсан",
+   "бороо орохгүй"
+  ],
+  "correct_answer": "бороо орлоо (шинээр)",
+  "explanation": "了 (3) = байдал өөрчлөгдсөн.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l23-q21",
+  "skillTags": [
+   "grammar",
+   "le3"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你的英语怎么样？ B：________。",
+  "options": [
+   "左右",
+   "差不多有",
+   "还可以",
+   "不可以"
+  ],
+  "correct_answer": "还可以",
+  "explanation": "还可以 = дажгүй.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l23-q22",
+  "skillTags": [
+   "grammar",
+   "haikeyi"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«还可以» ямар утгатай вэ?",
+  "options": [
+   "болохгүй",
+   "дажгүй, муу ч биш",
+   "маш муу",
+   "маш сайн"
+  ],
+  "correct_answer": "дажгүй, муу ч биш",
+  "explanation": "不是最好，也不是最差.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l23-q23",
+  "skillTags": [
+   "grammar",
+   "haikeyi"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«雪, 零, 需» гурван ханзын нийтлэг偏旁 аль нь вэ?",
+  "options": [
+   "令",
+   "雨",
+   "土",
+   "彐"
+  ],
+  "correct_answer": "雨",
+  "explanation": "雨字头.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l23-q24",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "Бээжинд өвлийн хамгийн бага температур ихэвчлэн хэд вэ?",
+  "options": [
+   "零下十度左右",
+   "零下十七度",
+   "零度",
+   "零下二十度"
+  ],
+  "correct_answer": "零下十度左右",
+  "explanation": "课文一: 一般在零下十度左右.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l23-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "老人们说今年冬天怎么样？",
+  "options": [
+   "没有雪",
+   "最近四十年最寒冷的冬天",
+   "和以前一样",
+   "最暖的冬天"
+  ],
+  "correct_answer": "最近四十年最寒冷的冬天",
+  "explanation": "课文一.",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l23-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "专家说地球怎么样了？",
+  "options": [
+   "没变",
+   "变冷了",
+   "变暖了",
+   "变小了"
+  ],
+  "correct_answer": "变暖了",
+  "explanation": "课文一: 有的专家说地球变暖了.",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l23-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "阿明现在身体怎么样？",
+  "options": [
+   "还在发烧",
+   "更不好了",
+   "好点儿了",
+   "完全好了"
+  ],
+  "correct_answer": "好点儿了",
+  "explanation": "课文二: 他现在好点儿了.",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l23-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "以前这个季节泰国天气怎么样？",
+  "options": [
+   "很冷",
+   "不冷也不热，最舒服",
+   "很热",
+   "常下雨"
+  ],
+  "correct_answer": "不冷也不热，最舒服",
+  "explanation": "课文三.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l23-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз ханиадлачихсан бол багш шиг юу гэж сануулах вэ?",
+  "options": [
+   "差不多",
+   "多穿点儿衣服，多喝水",
+   "算了",
+   "突然"
+  ],
+  "correct_answer": "多穿点儿衣服，多喝水",
+  "explanation": "课文二 Ли багшийн зөвлөгөө.",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l23-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Цаг агаар гэнэт хүйтэрсэнийг хэлэх өгүүлбэр аль нь вэ?",
+  "options": [
+   "天气突然变冷。",
+   "天气变突然冷了。",
+   "天气突然变冷了。",
+   "天气冷突然了。"
+  ],
+  "correct_answer": "天气突然变冷了。",
+  "explanation": "变冷了 + 突然.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l23-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Асуулт «Тайландын цаг агаар ямар вэ?»-д «хүйтэн, хэвийн бус» гэж хариулах?",
+  "options": [
+   "算了。",
+   "才300块。",
+   "我爱感冒。",
+   "很冷，很不正常。"
+  ],
+  "correct_answer": "很冷，很不正常。",
+  "explanation": "课文三.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l23-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

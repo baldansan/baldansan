@@ -1,0 +1,587 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 1. 听读下面的音节 — j—zh, q—ch, x—sh, s—x хосыг чанга уншиж ялга",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "j — zh：jiānzhí、zhǎngjià、zhěngjié、zhēnjiǔ",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "j хэлний дунд, zh хэл мушгиж."
+     },
+     {
+      "n": 2,
+      "question_zh": "q — ch：qiúchǎng、qìchē、cháoqì、chúqù",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "q хэлний дунд, ch хэл мушгиж."
+     },
+     {
+      "n": 3,
+      "question_zh": "x — sh：xiāngshí、xiǎoshòu、xīnshǎng、shàngxīn",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "x хэлний дунд, sh хэл мушгиж."
+     },
+     {
+      "n": 4,
+      "question_zh": "s — x：sānxīn、sīxià、suǒxiǎo、xísú",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "s хэлний үзүүр, x хэлний дунд."
+     }
+    ],
+    "instruction_zh": "1. 听读下面的音节"
+   },
+   {
+    "part": 2,
+    "type": "word",
+    "instruction_mn": "Ярианы дасгал · 2. 听后选择正确的拼音 — үг бүрийн зөв пиньинийг (A/B) сонго (参考答案-ийн хариултын мөр эмх замбараагүй тул 5 үгийг дүрмээр тулгасан)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "香蕉：A. xiāngjiāo　B. xiangjiao (аялгуугүй)",
+      "answer": "B",
+      "explanation_mn": "Хариултын мөрөөс; зураг дээр аялгуу бүдэг."
+     },
+     {
+      "n": 2,
+      "question_zh": "苹果：A. píngguǒ　B. pīngguǒ",
+      "answer": "A",
+      "explanation_mn": "píng-guǒ: 2-р + 3-р аялгуу."
+     },
+     {
+      "n": 3,
+      "question_zh": "需要：A. xūyǎo　B. xūyào",
+      "answer": "B",
+      "explanation_mn": "xū-yào: 1-р + 4-р аялгуу."
+     },
+     {
+      "n": 4,
+      "question_zh": "词典：A. cīdiǎn　B. cídiǎn",
+      "answer": "B",
+      "explanation_mn": "cí-diǎn: 2-р + 3-р аялгуу."
+     },
+     {
+      "n": 5,
+      "question_zh": "面包：A. miànbāo　B. miànbāo (бүдэг)",
+      "answer": "B",
+      "explanation_mn": "Хариултын мөрөөс."
+     },
+     {
+      "n": 6,
+      "question_zh": "营业员：A. yèngyuán...　B. yíngyèyuán",
+      "answer": "B",
+      "explanation_mn": "Хариултын мөрөөс."
+     },
+     {
+      "n": 7,
+      "question_zh": "这种：A. zhè zhǒng　B. zhē zhǒng",
+      "answer": "A",
+      "explanation_mn": "这 = zhè (4-р аялгуу)."
+     },
+     {
+      "n": 8,
+      "question_zh": "哪种：A. nà zhǒng　B. nǎ zhǒng",
+      "answer": "B",
+      "explanation_mn": "哪 = nǎ (3-р аялгуу)."
+     }
+    ],
+    "instruction_zh": "2. 听后选择正确的拼音"
+   },
+   {
+    "part": 3,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 3. 给下面的“yi”标上声调 — «一»-ийн зөв аялгууг тавь (参考答案-д хариулт байхгүй — агент сандхины дүрмээр бичсэн)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "yi bēi kāfēi",
+      "answer": "yì bēi kāfēi",
+      "explanation_mn": "杯 = 1-р аялгуу → yì."
+     },
+     {
+      "n": 2,
+      "question_zh": "yi běn cídiǎn",
+      "answer": "yì běn cídiǎn",
+      "explanation_mn": "本 = 3-р аялгуу → yì."
+     },
+     {
+      "n": 3,
+      "question_zh": "yi jīn píngguǒ",
+      "answer": "yì jīn píngguǒ",
+      "explanation_mn": "斤 = 1-р аялгуу → yì."
+     },
+     {
+      "n": 4,
+      "question_zh": "yi bù shǒujī",
+      "answer": "yí bù shǒujī",
+      "explanation_mn": "部 = 4-р аялгуу → yí."
+     },
+     {
+      "n": 5,
+      "question_zh": "yi tái diànnǎo",
+      "answer": "yì tái diànnǎo",
+      "explanation_mn": "台 = 2-р аялгуу → yì."
+     },
+     {
+      "n": 6,
+      "question_zh": "yi zhāng guāngpán",
+      "answer": "yì zhāng guāngpán",
+      "explanation_mn": "张 = 1-р аялгуу → yì."
+     },
+     {
+      "n": 7,
+      "question_zh": "yi ge lǎoshī",
+      "answer": "yí ge lǎoshī",
+      "explanation_mn": "个 = 4-р аялгуу → yí."
+     },
+     {
+      "n": 8,
+      "question_zh": "yi píng píjiǔ",
+      "answer": "yì píng píjiǔ",
+      "explanation_mn": "瓶 = 2-р аялгуу → yì."
+     },
+     {
+      "n": 9,
+      "question_zh": "yi jīn cǎoméi",
+      "answer": "yì jīn cǎoméi",
+      "explanation_mn": "斤 = 1-р аялгуу → yì."
+     }
+    ],
+    "instruction_zh": "3. 给下面的“yi”标上声调"
+   },
+   {
+    "part": 4,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 «问答练习» — хосоороо «……多少钱一……？» гэж асууж үнээр хариул",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "A：苹果多少钱一斤？ B：三块五一斤。",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Үнийг өөрчлөн хэл."
+     },
+     {
+      "n": 2,
+      "question_zh": "A：……多少钱一……？ B：……一……。",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Өөр бараа, тоолуур үгээр солиорой."
+     }
+    ],
+    "instruction_zh": "课堂活动：问答练习"
+   },
+   {
+    "part": 5,
+    "type": "sentence",
+    "instruction_mn": "Ярианы дасгал · 课堂活动 «看图问答» — зураг дээрх үнийг хятадаар хэл (咖啡 16元/杯 …)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "咖啡 16元 / 杯",
+      "answer": "咖啡十六块一杯",
+      "explanation_mn": "16元 = 十六块."
+     },
+     {
+      "n": 2,
+      "question_zh": "牛奶 3.5元 / 袋",
+      "answer": "牛奶三块五一袋",
+      "explanation_mn": "3.5元 = 三块五."
+     },
+     {
+      "n": 3,
+      "question_zh": "啤酒 5.5元 / 瓶",
+      "answer": "啤酒五块五一瓶",
+      "explanation_mn": "5.5元 = 五块五."
+     },
+     {
+      "n": 4,
+      "question_zh": "矿泉水 1.2元 / 瓶",
+      "answer": "矿泉水一块二一瓶",
+      "explanation_mn": "1.2元 = 一块二."
+     },
+     {
+      "n": 5,
+      "question_zh": "汉语书 30元 / 本",
+      "answer": "汉语书三十块一本",
+      "explanation_mn": "30元 = 三十块."
+     },
+     {
+      "n": 6,
+      "question_zh": "草莓 5.50元 / 斤",
+      "answer": "草莓五块五一斤",
+      "explanation_mn": "5.50元 = 五块五."
+     },
+     {
+      "n": 7,
+      "question_zh": "橘子 2.8元 / 斤",
+      "answer": "橘子两块八一斤",
+      "explanation_mn": "2.8元: 塊-ийн өмнө «两»."
+     },
+     {
+      "n": 8,
+      "question_zh": "西瓜 1.5元 / 斤",
+      "answer": "西瓜一块五一斤",
+      "explanation_mn": "1.5元 = 一块五."
+     }
+    ],
+    "instruction_zh": "课堂活动：看图问答 (价格图)"
+   },
+   {
+    "part": 6,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 综合练习 一 «读出下面的数字» — тоог хятадаар (ханзаар) бич (参考答案-д хариулт байхгүй — агент дүрмээр бичсэн)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "897",
+      "answer": "八百九十七",
+      "explanation_mn": "bābǎi jiǔshíqī."
+     },
+     {
+      "n": 2,
+      "question_zh": "115",
+      "answer": "一百一十五",
+      "explanation_mn": "yìbǎi yīshíwǔ."
+     },
+     {
+      "n": 3,
+      "question_zh": "201",
+      "answer": "二百零一",
+      "explanation_mn": "èrbǎi líng yī."
+     },
+     {
+      "n": 4,
+      "question_zh": "3012",
+      "answer": "三千零一十二",
+      "explanation_mn": "sānqiān líng yīshí'èr."
+     },
+     {
+      "n": 5,
+      "question_zh": "2009",
+      "answer": "二千零九",
+      "explanation_mn": "èrqiān líng jiǔ (两千零九 ч болно)."
+     },
+     {
+      "n": 6,
+      "question_zh": "5879",
+      "answer": "五千八百七十九",
+      "explanation_mn": "wǔqiān bābǎi qīshíjiǔ."
+     },
+     {
+      "n": 7,
+      "question_zh": "25600",
+      "answer": "二万五千六百",
+      "explanation_mn": "èrwàn wǔqiān liùbǎi."
+     },
+     {
+      "n": 8,
+      "question_zh": "75023",
+      "answer": "七万五千零二十三",
+      "explanation_mn": "qīwàn wǔqiān líng èrshísān."
+     },
+     {
+      "n": 9,
+      "question_zh": "56210",
+      "answer": "五万六千二百一十",
+      "explanation_mn": "wǔwàn liùqiān èrbǎi yīshí."
+     }
+    ],
+    "instruction_zh": "综合练习 一：读出下面的数字"
+   },
+   {
+    "part": 7,
+    "type": "word",
+    "instruction_mn": "Бичгийн дасгал · 综合练习 二 «读出下面的钱数» — мөнгөн дүнг ярианы хэлбэрээр (块 毛 分) бич (参考答案-д хариулт байхгүй — агент дүрмээр бичсэн)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "50.20元",
+      "answer": "五十块二",
+      "explanation_mn": "50 + 块 + 2 (毛 орхино)."
+     },
+     {
+      "n": 2,
+      "question_zh": "22.22元",
+      "answer": "二十二块二毛二",
+      "explanation_mn": "22块2毛2."
+     },
+     {
+      "n": 3,
+      "question_zh": "0.78元",
+      "answer": "七毛八分",
+      "explanation_mn": "7毛8分."
+     },
+     {
+      "n": 4,
+      "question_zh": "18303元",
+      "answer": "一万八千三百零三块",
+      "explanation_mn": "18303 = 一万八千三百零三."
+     },
+     {
+      "n": 5,
+      "question_zh": "0.02元",
+      "answer": "二分",
+      "explanation_mn": "2分."
+     },
+     {
+      "n": 6,
+      "question_zh": "116.26元",
+      "answer": "一百一十六块二毛六",
+      "explanation_mn": "116块2毛6."
+     },
+     {
+      "n": 7,
+      "question_zh": "2001.20元",
+      "answer": "二千零一块二",
+      "explanation_mn": "2001 = 二千零一."
+     },
+     {
+      "n": 8,
+      "question_zh": "305.80元",
+      "answer": "三百零五块八",
+      "explanation_mn": "305块8."
+     },
+     {
+      "n": 9,
+      "question_zh": "252.61元",
+      "answer": "二百五十二块六毛一",
+      "explanation_mn": "252块6毛1."
+     }
+    ],
+    "instruction_zh": "综合练习 二：读出下面的钱数"
+   },
+   {
+    "part": 8,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 综合练习 三 — өөрийн утас, ном, компьютерийн үнийг бодитоор асууж хариул",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你的手机多少钱？",
+      "answer": "(нээлттэй — бодит байдлаар хариулна)",
+      "explanation_mn": "Загвар: 我的手机……块钱。"
+     },
+     {
+      "n": 2,
+      "question_zh": "你的汉语书多少钱？",
+      "answer": "(нээлттэй — бодит байдлаар хариулна)",
+      "explanation_mn": "Загвар: ……块钱一本。"
+     },
+     {
+      "n": 3,
+      "question_zh": "你的电脑多少钱？",
+      "answer": "(нээлттэй — бодит байдлаар хариулна)",
+      "explanation_mn": "Загвар: ……块钱。"
+     },
+     {
+      "n": 4,
+      "question_zh": "你的……多少钱？",
+      "answer": "(нээлттэй — өөрийн зүйлээр орлуулна)",
+      "explanation_mn": "Өөр зүйлийг сонго."
+     }
+    ],
+    "instruction_zh": "综合练习 三：根据实际情况进行问答练习"
+   },
+   {
+    "part": 9,
+    "type": "sentence",
+    "instruction_mn": "Харилцан яриа гүйцээх дасгал · 综合练习 四 «完成对话» — заасан үгийг ашиглан хоосон зайг нөх (想买 · 多少钱 · 呢 · 一共 · 哪种 · 多少)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "1. A：＿＿＿＿？(想买……)  B：我想买手机。",
+      "answer": "您想买什么",
+      "explanation_mn": "«想买» заалттай."
+     },
+     {
+      "n": 2,
+      "question_zh": "2. A：请问，＿＿＿＿？(多少钱)  B：四块五一斤。",
+      "answer": "苹果多少钱一斤",
+      "explanation_mn": "«多少钱» заалттай (жимсийг өөрчилж болно)."
+     },
+     {
+      "n": 3,
+      "question_zh": "2. A：＿＿＿＿？(呢)  B：三块二一斤。",
+      "answer": "草莓呢",
+      "explanation_mn": "«呢» заалттай."
+     },
+     {
+      "n": 4,
+      "question_zh": "2. A：我买二斤＿＿＿＿，一斤＿＿＿＿。",
+      "answer": "苹果 / 草莓",
+      "explanation_mn": "Өмнөх хэсэгтэй нийцүүл."
+     },
+     {
+      "n": 5,
+      "question_zh": "3. A：这本词典多少钱？ B：＿＿＿＿。",
+      "answer": "八十五块钱一本",
+      "explanation_mn": "Нэгж үнэ (хүссэн тоогоор)."
+     },
+     {
+      "n": 6,
+      "question_zh": "3. A：我要两本。 B：＿＿＿＿。(一共)",
+      "answer": "一共一百七十块钱",
+      "explanation_mn": "«一共» заалттай: 85 × 2 = 170."
+     },
+     {
+      "n": 7,
+      "question_zh": "4. B：＿＿＿＿？(哪种)  A：我要这种。",
+      "answer": "你要哪种",
+      "explanation_mn": "«哪种» заалттай."
+     },
+     {
+      "n": 8,
+      "question_zh": "4. B：三块一斤。＿＿＿＿？(多少)  A：我要五个。",
+      "answer": "你要多少",
+      "explanation_mn": "«多少» заалттай."
+     },
+     {
+      "n": 9,
+      "question_zh": "4. A：我＿＿＿＿五个。 B：四块五。",
+      "answer": "要",
+      "explanation_mn": "Хоосон: «要»."
+     }
+    ],
+    "instruction_zh": "综合练习 四：完成对话"
+   },
+   {
+    "part": 10,
+    "type": "sentence",
+    "instruction_mn": "Өгүүлбэр дахин бичих дасгал · 综合练习 五 «把下面的词语整理成句子» — үгсийг зөв дараалалд оруулж өгүүлбэр болго",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "台　多少钱　这　电脑",
+      "answer": "这台电脑多少钱？",
+      "explanation_mn": "这 + 台 + 电脑 + 多少钱."
+     },
+     {
+      "n": 2,
+      "question_zh": "我　香蕉　不　买",
+      "answer": "我不买香蕉。",
+      "explanation_mn": "S + 不 + V + O."
+     },
+     {
+      "n": 3,
+      "question_zh": "我　再　一　买　汉语书　本　想",
+      "answer": "我想再买一本汉语书。",
+      "explanation_mn": "想 + 再 + 买 + 一本 + 汉语书."
+     },
+     {
+      "n": 4,
+      "question_zh": "要　哪　面包　种　你",
+      "answer": "你要哪种面包？",
+      "explanation_mn": "你 + 要 + 哪种 + 面包."
+     },
+     {
+      "n": 5,
+      "question_zh": "这　电子词典　部　一千二百九十块钱",
+      "answer": "这部电子词典一千二百九十块钱。",
+      "explanation_mn": "这 + 部 + 电子词典 + үнэ."
+     }
+    ],
+    "instruction_zh": "综合练习 五：把下面的词语整理成句子"
+   },
+   {
+    "part": 11,
+    "type": "open",
+    "instruction_mn": "Ярианы дасгал · 综合练习 六 — зах, дэлгүүрт орж доорх зүйлсийн үнийг судалж, дараагийн хичээлд хэл",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "NOKIA手机 · 面包 · 牛奶",
+      "answer": "(нээлттэй — бодит үнээр)",
+      "explanation_mn": "Өөрийн улсын үнээр хэл."
+     },
+     {
+      "n": 2,
+      "question_zh": "矿泉水 · 啤酒 · 可乐",
+      "answer": "(нээлттэй — бодит үнээр)",
+      "explanation_mn": "Нэгж (瓶)-тэй хамт хэл."
+     },
+     {
+      "n": 3,
+      "question_zh": "香蕉 · 橘子 · 咖啡",
+      "answer": "(нээлттэй — бодит үнээр)",
+      "explanation_mn": "香蕉 · 橘子 — 斤; 咖啡 — 杯."
+     }
+    ],
+    "instruction_zh": "综合练习 六：到市场和商店去调查一下下面这些东西的价格，下次告诉大家"
+   },
+   {
+    "part": 12,
+    "type": "open",
+    "instruction_mn": "Бичгийн дасгал · 写汉字 — 部, 奶, 马, 风, 爸, 学, 意-г дэвтэр дээр зөв бичих дарааллаар бич",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "部 — 横撇弯钩",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Баруун «阝»-ийн эхний зураас."
+     },
+     {
+      "n": 2,
+      "question_zh": "奶 — 横折折折钩",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Баруун «乃»-ийн эхний зураас."
+     },
+     {
+      "n": 3,
+      "question_zh": "马 — 竖折折钩",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Нэг үргэлжилсэн зураас."
+     },
+     {
+      "n": 4,
+      "question_zh": "风 — 横折斜钩",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Гадна хүрээ налуу дэгээтэй."
+     },
+     {
+      "n": 5,
+      "question_zh": "爸 — 上下结构",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дээр 父, доор 巴."
+     },
+     {
+      "n": 6,
+      "question_zh": "学 — 上下结构",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "Дээр ⺍冖, доор 子."
+     },
+     {
+      "n": 7,
+      "question_zh": "意 — 上中下结构",
+      "answer": "(нээлттэй — чанга уншиж ялгана)",
+      "explanation_mn": "立 · 日 · 心."
+     }
+    ],
+    "instruction_zh": "写汉字：部 奶 马 风 爸 学 意"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичгийн дасгал · 写汉字 — 部 奶 马 风 爸 学 意 + зах дээр юм авах яриа (Ханз бичих ба худалдаа хийх)",
+    "question_zh": "先写汉字：部、奶、马、风、爸、学、意（注意笔画和结构），然后用“多少钱一斤”“我想买……”“一共多少钱”写一段买东西的小对话。",
+    "answer": "营业员：你好！你想买什么？ 马丁：请问，苹果多少钱一斤？ 营业员：三块五一斤。 马丁：我买三斤，一共多少钱？ 营业员：一共十块五。",
+    "explanation_mn": "Загвар эссе (zh/mn) texts.json → mainText.writingSample-д. Нээлттэй даалгавар — автомат шалгахгүй."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ярианы дасгал · 根据实际情况进行问答练习 — Өөрийн гар утас, ном, компьютерийн үнийг асууж хариул",
+    "question_zh": "A：你的手机多少钱？ B：……块钱。",
+    "answer": "你的手机多少钱？ 我的手机三千块钱。",
+    "explanation_mn": "Номд жишээ хариулт нээлттэй (бодит байдлаар хариулна). Загвар: «你的手机多少钱？» — «我的手机……块钱。»"
+   }
+  ]
+ },
+ "answerSource": "发展汉语 初级综合 I 参考答案 (答案本 х.5-6, \"第六课\") — 综合练习 四 (完成对话 4 яриа), 五 (整理成句子 5) 100% тулгасан. 综合练习 一, 二 (тоо, мөнгө унших) — хариулт номд байхгүй, агент дүрмээр бичсэн. 语音练习 2 — хариултын мөр эмх замбараагүй (OCR), хүлээн авсан хувилбарыг хэсэгчлэн тулгасан. 语音练习 3 — хариулт номд байхгүй, агент сандхины дүрмээр. 综合练习 三, 六, 课堂活动 — нээлттэй."
+}

@@ -1,0 +1,580 @@
+[
+ {
+  "type": "choice",
+  "question": "«除了» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "учир нь",
+   "аас гадна, аас бусад",
+   "яаран",
+   "бас"
+  ],
+  "correct_answer": "аас гадна, аас бусад",
+  "explanation": "除了 = …-аас гадна / бусад.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l13-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）天气非常不好，旅行计划改变了。",
+  "options": [
+   "连忙",
+   "除了",
+   "由于",
+   "并且"
+  ],
+  "correct_answer": "由于",
+  "explanation": "由于 = шалтгаан.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l13-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«差不多» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "огт биш",
+   "маш өөр",
+   "бараг, ойролцоо",
+   "үргэлж"
+  ],
+  "correct_answer": "бараг, ойролцоо",
+  "explanation": "差不多 = бараг.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l13-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "除了上网（ ）帮助，我没有别的办法。",
+  "options": [
+   "请求",
+   "学好",
+   "回信",
+   "猜"
+  ],
+  "correct_answer": "请求",
+  "explanation": "请求帮助 = тусламж гуйх.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l13-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "听到铃声，我（ ）拿起电话。",
+  "options": [
+   "从来",
+   "一直",
+   "并且",
+   "连忙"
+  ],
+  "correct_answer": "连忙",
+  "explanation": "连忙 = яаран (өнгөрсөн).",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l13-q05",
+  "skillTags": [
+   "vocabulary",
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "要是你能（ ）出来哪个表示难过，你就一定能学好汉语。",
+  "options": [
+   "哭",
+   "猜",
+   "回信",
+   "请求"
+  ],
+  "correct_answer": "猜",
+  "explanation": "猜出来 = таан олох.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l13-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«愉快» нь аль үгийн эсрэг утгатай вэ?",
+  "options": [
+   "有用",
+   "请求",
+   "难过",
+   "差不多"
+  ],
+  "correct_answer": "难过",
+  "explanation": "愉快 ↔ 难过.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l13-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«哭» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "сурах",
+   "ярих",
+   "уйлах",
+   "инээх"
+  ],
+  "correct_answer": "уйлах",
+  "explanation": "哭 = уйлах; 笑 = инээх.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l13-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "希望有一天能和你见面，（ ）能用汉语和你聊天儿。",
+  "options": [
+   "除了",
+   "连忙",
+   "由于",
+   "并且"
+  ],
+  "correct_answer": "并且",
+  "explanation": "并且 = мөн.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l13-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那就什么（ ）学什么吧。",
+  "options": [
+   "背面",
+   "有用",
+   "差不多",
+   "愉快"
+  ],
+  "correct_answer": "有用",
+  "explanation": "什么有用学什么 — ашигтайг сур.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l13-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«答案在背面» дахь «背面» нь юу гэсэн үг вэ?",
+  "options": [
+   "хажуу",
+   "урд тал",
+   "доод",
+   "ар тал"
+  ],
+  "correct_answer": "ар тал",
+  "explanation": "背面 = ар тал.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l13-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bìngqiě» аль үгэнд таарах вэ?",
+  "options": [
+   "并且",
+   "愉快",
+   "由于",
+   "连忙"
+  ],
+  "correct_answer": "并且",
+  "explanation": "并且 = bìngqiě.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l13-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "因为它有眼睛和（ ）。",
+  "options": [
+   "帖子",
+   "泪水",
+   "答案",
+   "历史"
+  ],
+  "correct_answer": "泪水",
+  "explanation": "泪水 = нулимс.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l13-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр хятад хэлнээс гадна англи, франц хэл ч мэднэ» — аль нь зөв бэ?",
+  "options": [
+   "他还除了汉语以外，会英语和法语。",
+   "他除了汉语以外，都会英语和法语。",
+   "他除了汉语以外，还会英语和法语。",
+   "他除了汉语以外，会不英语和法语。"
+  ],
+  "correct_answer": "他除了汉语以外，还会英语和法语。",
+  "explanation": "除了……还……",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l13-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Түүнээс бусад бид бүгд очсон» — аль нь зөв бэ?",
+  "options": [
+   "除了他以外，我们都去过。",
+   "除了他以外，我们也不去过。",
+   "他以外除了，我们去过。",
+   "除了他以外，我们还去过。"
+  ],
+  "correct_answer": "除了他以外，我们都去过。",
+  "explanation": "除了……都……",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l13-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр унтаж байна юм уу интернетэд байна» — аль нь зөв бэ?",
+  "options": [
+   "他不在睡觉，就在上网。",
+   "他是在睡觉，不是在上网。",
+   "他不是在睡觉，而是在上网。",
+   "他不是在睡觉，就是在上网。"
+  ],
+  "correct_answer": "他不是在睡觉，就是在上网。",
+  "explanation": "不是A就是B.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l13-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：他不在公司，在哪儿呢？ B：他不是去了银行，________。",
+  "options": [
+   "而是不在",
+   "不是在家",
+   "就是在家",
+   "就是去了"
+  ],
+  "correct_answer": "就是在家",
+  "explanation": "不是……就是……",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l13-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Айл бүр автомашинтай» — аль нь зөв бэ?",
+  "options": [
+   "家家都有汽车。",
+   "每家家有汽车。",
+   "家都家有汽车。",
+   "家家是有汽车。"
+  ],
+  "correct_answer": "家家都有汽车。",
+  "explanation": "Давтагдал + 都.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l13-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тоглолт болгонд үзэгч олон» — аль нь зөв бэ?",
+  "options": [
+   "每场场比赛观众很多。",
+   "场场比赛观众都很多。",
+   "场比赛场观众很多。",
+   "场场是比赛观众都很多。"
+  ],
+  "correct_answer": "场场比赛观众都很多。",
+  "explanation": "场场 + 都.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l13-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хүн бүр энэ киноны од мэднэ» — аль нь зөв бэ?",
+  "options": [
+   "人都人知道这个电影明星。",
+   "每人人知道这个电影明星。",
+   "人人都知道这个电影明星。",
+   "人人是知道这个电影明星。"
+  ],
+  "correct_answer": "人人都知道这个电影明星。",
+  "explanation": "人人都.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l13-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Би яаран нээж харав» — аль нь зөв бэ?",
+  "options": [
+   "请你连忙打开看。",
+   "明天我连忙打开看。",
+   "我连忙打开看。",
+   "我打开连忙看。"
+  ],
+  "correct_answer": "我连忙打开看。",
+  "explanation": "连忙 — өнгөрсөн.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l13-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр компани нээгээд, мөн сайн ажиллуулж байна» — аль нь зөв бэ?",
+  "options": [
+   "他开了一家公司，并且做得很好。",
+   "他开了一家公司并且很好做得。",
+   "他并且开了一家公司，做得很好。",
+   "他开了一家公司，和做得很好。"
+  ],
+  "correct_answer": "他开了一家公司，并且做得很好。",
+  "explanation": "并且 — үйлдэл.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l13-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Ням гарагаас бусад өдөр бид амардаггүй» — аль нь зөв бэ?",
+  "options": [
+   "除了星期天以外，我们哪天还不休息。",
+   "星期天除了以外，我们哪天不休息。",
+   "除了星期天以外，我们哪天都不休息。",
+   "除了星期天，我们哪天也休息。"
+  ],
+  "correct_answer": "除了星期天以外，我们哪天都不休息。",
+  "explanation": "哪天都不……",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l13-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Энэ цэцэг жил бүр яг энэ үед цэцэглэдэг» — аль нь зөв бэ?",
+  "options": [
+   "这花年都年这时候开。",
+   "这花每年年是这时候开。",
+   "这花年年是都这时候开。",
+   "这花年年都是这时候开。"
+  ],
+  "correct_answer": "这花年年都是这时候开。",
+  "explanation": "年年都.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l13-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "父亲让“我”学习什么？",
+  "options": [
+   "学法语",
+   "除了西班牙语和英语以外，再学一种语言",
+   "学汉字",
+   "学数学"
+  ],
+  "correct_answer": "除了西班牙语和英语以外，再学一种语言",
+  "explanation": "P1.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l13-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”为什么选中了汉语？",
+  "options": [
+   "因为汉语容易",
+   "世界上有很多人说，但在哥伦比亚很少有人会说",
+   "因为朋友会说汉语",
+   "因为喜欢中国菜"
+  ],
+  "correct_answer": "世界上有很多人说，但在哥伦比亚很少有人会说",
+  "explanation": "P1.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l13-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "“我”请求帮助的办法是什么？",
+  "options": [
+   "打电话",
+   "找老师",
+   "去中国",
+   "上网发帖子、发电子邮件"
+  ],
+  "correct_answer": "上网发帖子、发电子邮件",
+  "explanation": "P2.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l13-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "中国姑娘的信里让“我”猜什么？",
+  "options": [
+   "哪个汉字表示难过，哪个表示愉快",
+   "她在哪个城市",
+   "一道数学题",
+   "她叫什么名字"
+  ],
+  "correct_answer": "哪个汉字表示难过，哪个表示愉快",
+  "explanation": "P3: 哭和笑.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l13-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "四年以后，“我”想对那个女孩儿说什么？",
+  "options": [
+   "谢谢她，因为她的信改变了我的人生",
+   "请她来哥伦比亚",
+   "问她的名字",
+   "批评她"
+  ],
+  "correct_answer": "谢谢她，因为她的信改变了我的人生",
+  "explanation": "P5.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l13-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн «чи юу сурах вэ?» гэж асуув; хамгийн ашигтайг сурахыг хүсвэл аль нь тохиромжтой?",
+  "options": [
+   "什么差不多学什么。",
+   "什么请求学什么。",
+   "什么有用学什么。",
+   "什么愉快学什么。"
+  ],
+  "correct_answer": "什么有用学什么。",
+  "explanation": "什么有用学什么.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l13-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Таны ангийн хүн бүр шаргуу. Аль нь тохиромжтой?",
+  "options": [
+   "我们班的同学个个都很努力。",
+   "我们班的同学是个个很努力。",
+   "我们班个个的同学努力。",
+   "我们班的同学个都个很努力。"
+  ],
+  "correct_answer": "我们班的同学个个都很努力。",
+  "explanation": "个个都.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l13-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 除了 / 他 / 汉语 / 英语 / 还 / 以外 / 会",
+  "options": [
+   "他会除了汉语以外，还英语",
+   "他还除了汉语以外，会英语",
+   "他除了汉语以外，还会英语",
+   "他除了汉语会，还以外英语"
+  ],
+  "correct_answer": "他除了汉语以外，还会英语",
+  "explanation": "除了……以外，还……",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l13-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

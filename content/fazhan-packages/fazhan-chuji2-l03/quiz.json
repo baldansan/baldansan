@@ -1,0 +1,578 @@
+[
+ {
+  "type": "choice",
+  "question": "«市场» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "зах",
+   "сургууль",
+   "дэлгүүр",
+   "гэр"
+  ],
+  "correct_answer": "зах",
+  "explanation": "市场 = зах, зах зээл.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "因为没有（ ），她只带了一篮子辣椒。",
+  "options": [
+   "奇迹",
+   "经验",
+   "顾客",
+   "味道"
+  ],
+  "correct_answer": "经验",
+  "explanation": "经验 = туршлага.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她的辣椒红红的，又好看又（ ）。",
+  "options": [
+   "赶紧",
+   "发生",
+   "新鲜",
+   "难过"
+  ],
+  "correct_answer": "新鲜",
+  "explanation": "新鲜 = шинэхэн.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "女孩儿（ ）自己的辣椒一定好卖。",
+  "options": [
+   "只好",
+   "想不通",
+   "相信",
+   "所有"
+  ],
+  "correct_answer": "相信",
+  "explanation": "相信 = итгэх.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«顾客» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "худалдан авагч",
+   "багш",
+   "худалдагч",
+   "жолооч"
+  ],
+  "correct_answer": "худалдан авагч",
+  "explanation": "顾客 = худалдан авагч.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小姑娘（ ）回答：“甜的。”",
+  "options": [
+   "所有",
+   "味道",
+   "赶紧",
+   "经验"
+  ],
+  "correct_answer": "赶紧",
+  "explanation": "赶紧 = яаран.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«摇头» гэж юу гэсэн үг вэ?",
+  "options": [
+   "толгой дохих",
+   "толгой сэгсрэх",
+   "гараа даллах",
+   "алхах"
+  ],
+  "correct_answer": "толгой сэгсрэх",
+  "explanation": "摇头 = толгой сэгсрэх.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "女孩儿很（ ），她怎么也想不通。",
+  "options": [
+   "奇迹",
+   "难过",
+   "所有",
+   "新鲜"
+  ],
+  "correct_answer": "难过",
+  "explanation": "难过 = гомдох.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这辣椒是什么（ ）的？",
+  "options": [
+   "顾客",
+   "味道",
+   "经验",
+   "市场"
+  ],
+  "correct_answer": "味道",
+  "explanation": "味道 = амт.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l03-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«怎么没有又辣又甜又（ ）的呢？» — хоосон зайд аль нь орох вэ?",
+  "options": [
+   "红",
+   "旧",
+   "难",
+   "香"
+  ],
+  "correct_answer": "香",
+  "explanation": "香 = анхилуун, амттай үнэртэй.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l03-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这一天，奇迹（ ）了，小姑娘把所有的辣椒都卖出去了。",
+  "options": [
+   "发生",
+   "相信",
+   "难过",
+   "赶紧"
+  ],
+  "correct_answer": "发生",
+  "explanation": "发生 = болох.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l03-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shìchǎng» аль үгэнд таарах вэ?",
+  "options": [
+   "奇迹",
+   "市场",
+   "味道",
+   "顾客"
+  ],
+  "correct_answer": "市场",
+  "explanation": "市场 = shìchǎng.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l03-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«中间» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "баруун",
+   "зүүн",
+   "дээр",
+   "дунд"
+  ],
+  "correct_answer": "дунд",
+  "explanation": "中间 = дунд.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l03-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Яригч доор байхад «Тэр шатаар доош бууж ирлээ» — аль нь зөв бэ?",
+  "options": [
+   "他走楼下来了。",
+   "他走下楼来了。",
+   "他走下楼去了。",
+   "他走来下楼了。"
+  ],
+  "correct_answer": "他走下楼来了。",
+  "explanation": "Яригч руу ирж байна — 来; газрын тусагдахуун «来»-ийн өмнө.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l03-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Яригч нь Хятадад бөгөөд «Тэр Хятадаас ном илгээсэн» — аль нь зөв бэ?",
+  "options": [
+   "他从中国寄回去一些书。",
+   "他从中国寄去回一些书。",
+   "他从中国寄回来一些书。",
+   "他从中国寄进一些书来。"
+  ],
+  "correct_answer": "他从中国寄回去一些书。",
+  "explanation": "Яригчаас холдох чиглэл — 去.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l03-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Газрын тусагдахуунтай зөв өгүүлбэр аль нь вэ?",
+  "options": [
+   "小王山跑下去了。",
+   "小王跑下去山了。",
+   "小王跑山下去了。",
+   "小王跑下山去了。"
+  ],
+  "correct_answer": "小王跑下山去了。",
+  "explanation": "处所宾语 — «去»-ийн өмнө.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l03-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би өглөө нэг ч хоол идсэнгүй» — аль нь зөв бэ?",
+  "options": [
+   "我早晨一口饭也没吃。",
+   "我早晨没一口饭也吃。",
+   "我早晨一口饭没也吃。",
+   "我早晨一口饭没吃也。"
+  ],
+  "correct_answer": "我早晨一口饭也没吃。",
+  "explanation": "一 + M + N + 也 + 没 + V.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l03-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр нэг ч найзгүй» — аль нь зөв бэ?",
+  "options": [
+   "她一个朋友也没有。",
+   "她也一个朋友没有。",
+   "她一个朋友没有也。",
+   "她没有一个朋友也。"
+  ],
+  "correct_answer": "她一个朋友也没有。",
+  "explanation": "一个……也没有.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l03-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Энэ хоол амттай ч, хямд ч» — аль нь зөв бэ?",
+  "options": [
+   "这个菜既好吃而不便宜。",
+   "这个菜好吃既便宜。",
+   "这个菜既好吃但便宜。",
+   "这个菜既好吃又便宜。"
+  ],
+  "correct_answer": "这个菜既好吃又便宜。",
+  "explanation": "既……又……",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l03-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр ресторан хямд ч биш, амттай ч биш» — зөв хэлбэрийг сонго:",
+  "options": [
+   "那个饭馆既便宜，也不好吃。",
+   "那个饭馆既不便宜也好吃。",
+   "那个饭馆既不便宜，也不好吃。",
+   "那个饭馆不既便宜也好吃。"
+  ],
+  "correct_answer": "那个饭馆既不便宜，也不好吃。",
+  "explanation": "Хоёулаа муу — 既不……也不……",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l03-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Цүнхээ дотуур байранд хүргэж өг» — аль нь зөв бэ?",
+  "options": [
+   "把送回书包宿舍去。",
+   "送回宿舍把书包去。",
+   "把书包送回宿舍去。",
+   "书包把宿舍送回去。"
+  ],
+  "correct_answer": "把书包送回宿舍去。",
+  "explanation": "把 + O + V + 趋向补语 + 处所 + 去.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l03-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Охин бүх чинжүүгээ зарчихлаа» — аль нь зөв бэ?",
+  "options": [
+   "把小姑娘所有的辣椒卖出去都了。",
+   "小姑娘把所有的辣椒都卖出去了。",
+   "小姑娘所有的辣椒把都卖出去了。",
+   "小姑娘把都所有的辣椒卖出去了。"
+  ],
+  "correct_answer": "小姑娘把所有的辣椒都卖出去了。",
+  "explanation": "把 + O + 都 + V + 趋向补语 + 了.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l03-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "商店已经关门了，我们________明天去买了。",
+  "options": [
+   "最好",
+   "只好",
+   "只有",
+   "一定"
+  ],
+  "correct_answer": "只好",
+  "explanation": "只好 — өөр арга байхгүй.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l03-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би яагаад гэдгийг ойлгохгүй байна» — аль нь зөв бэ?",
+  "options": [
+   "我不通想为什么。",
+   "我不想通为什么。",
+   "我想通不为什么。",
+   "我想不通为什么。"
+  ],
+  "correct_answer": "我想不通为什么。",
+  "explanation": "V + 不 + C (想不通).",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l03-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "女孩儿第一天带了几篮子辣椒？",
+  "options": [
+   "三篮子",
+   "四篮子",
+   "一篮子",
+   "两篮子"
+  ],
+  "correct_answer": "一篮子",
+  "explanation": "P2: 她只带了一篮子辣椒。",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l03-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "第一个顾客为什么没买？",
+  "options": [
+   "他不喜欢市场",
+   "太贵了",
+   "他喜欢吃甜的",
+   "辣椒不新鲜"
+  ],
+  "correct_answer": "他喜欢吃甜的",
+  "explanation": "P2: 我是上海人，喜欢吃甜的。",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l03-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "第二天谁买了甜的？",
+  "options": [
+   "四川人",
+   "北京人",
+   "山东人",
+   "上海人"
+  ],
+  "correct_answer": "上海人",
+  "explanation": "P3: 上海人买了甜的，四川人买了辣的。",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l03-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "山东人想买什么样的辣椒？",
+  "options": [
+   "只要甜的",
+   "又辣又甜又香的",
+   "既不辣也不甜的",
+   "只要辣的"
+  ],
+  "correct_answer": "又辣又甜又香的",
+  "explanation": "P4: 怎么没有又辣又甜又香的呢？",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l03-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "第四天发生了什么？",
+  "options": [
+   "小姑娘把所有的辣椒都卖出去了",
+   "一个辣椒也没卖出去",
+   "她把辣椒带回家了",
+   "只卖了辣的"
+  ],
+  "correct_answer": "小姑娘把所有的辣椒都卖出去了",
+  "explanation": "P5: 奇迹发生了，小姑娘把所有的辣椒都卖出去了。",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l03-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хэлэхийг хүссэн: «Автобус байхгүй, алхаж буцахаас өөр аргагүй». Аль нь зохимжтой вэ?",
+  "options": [
+   "没有车了，我们最好走回去。",
+   "没有车了，我们肯定走回去。",
+   "没有车了，我们只好走回去了。",
+   "没有车了，我们赶紧走回去。"
+  ],
+  "correct_answer": "没有车了，我们只好走回去了。",
+  "explanation": "只好 — албадмал.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l03-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хоёр сагс (зүүн нь халуун, баруун нь чихэрлэг) авчирсан охиноос «这辣椒是什么味道的？» гэж асуувал зохистой хариулт аль нь вэ?",
+  "options": [
+   "再见。",
+   "我是四川人。",
+   "不知道。",
+   "左边是辣的，右边是甜的。"
+  ],
+  "correct_answer": "左边是辣的，右边是甜的。",
+  "explanation": "Сагс бүрийг тайлбарласан.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l03-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 她 / 把 / 所有的 / 辣椒 / 都 / 卖出去了",
+  "options": [
+   "她把所有的辣椒都卖出去了",
+   "她所有的辣椒把都卖出去了",
+   "她把辣椒所有的都卖出去了"
+  ],
+  "correct_answer": "她把所有的辣椒都卖出去了",
+  "explanation": "把 + O + 都 + V + 趋向补语 + 了.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l03-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

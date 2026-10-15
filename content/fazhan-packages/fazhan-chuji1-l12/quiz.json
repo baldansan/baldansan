@@ -1,0 +1,590 @@
+[
+ {
+  "type": "choice",
+  "question": "«学期» ямар утгатай вэ?",
+  "options": [
+   "хичээлийн анги",
+   "хичээлийн цаг",
+   "хичээлийн улирал",
+   "хичээлийн дэвтэр"
+  ],
+  "correct_answer": "хичээлийн улирал",
+  "explanation": "学期 = xuéqī — улирал.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l12-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«兴趣» ханзын пиньинь аль нь вэ?",
+  "options": [
+   "xìngjù",
+   "xìngqù",
+   "xīngqù",
+   "xíngqù"
+  ],
+  "correct_answer": "xìngqù",
+  "explanation": "兴趣 = xìngqù — сонирхол.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l12-q02",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«书法» ямар утгатай вэ?",
+  "options": [
+   "ном",
+   "хичээл",
+   "нэр",
+   "гоо бичиг"
+  ],
+  "correct_answer": "гоо бичиг",
+  "explanation": "书法 = shūfǎ — гоо бичиг.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l12-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«一样» ямар утгатай вэ?",
+  "options": [
+   "хоёулаа",
+   "адил",
+   "ялгаатай",
+   "хамгийн"
+  ],
+  "correct_answer": "адил",
+  "explanation": "一样 = yíyàng — адил.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l12-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«爱好» ямар утгатай вэ?",
+  "options": [
+   "хобби, дуртай зүйл",
+   "спорт заал",
+   "найз",
+   "хичээл"
+  ],
+  "correct_answer": "хобби, дуртай зүйл",
+  "explanation": "爱好 = àihào — хобби.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l12-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我喜欢（　）足球。",
+  "options": [
+   "踢",
+   "骑",
+   "选",
+   "打"
+  ],
+  "correct_answer": "踢",
+  "explanation": "足球-д «踢» хэрэглэнэ.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l12-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他喜欢（　）篮球。",
+  "options": [
+   "打",
+   "踢",
+   "骑",
+   "报"
+  ],
+  "correct_answer": "打",
+  "explanation": "篮球-д «打» хэрэглэнэ.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l12-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我最喜欢骑自行车» гэсэн өгүүлбэр дэх «最» ямар утгатай вэ?",
+  "options": [
+   "бас",
+   "дахин",
+   "хамгийн",
+   "маш"
+  ],
+  "correct_answer": "хамгийн",
+  "explanation": "最 = хамгийн.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l12-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«骑自行车» гэсэн хэллэг дэх «骑» ямар утгатай вэ?",
+  "options": [
+   "сонгох",
+   "тоглох",
+   "унах",
+   "өшиглөх"
+  ],
+  "correct_answer": "унах",
+  "explanation": "骑 = qí — унах.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l12-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«报名» ямар утгатай вэ?",
+  "options": [
+   "нэр сонгох",
+   "нэр өгөх",
+   "нэр хүндтэй",
+   "нэрээ өгөх, бүртгүүлэх"
+  ],
+  "correct_answer": "нэрээ өгөх, бүртгүүлэх",
+  "explanation": "报名 = bào míng — бүртгүүлэх.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l12-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我要一（　）红茶。",
+  "options": [
+   "门",
+   "位",
+   "本",
+   "杯"
+  ],
+  "correct_answer": "杯",
+  "explanation": "Аяга цай — «杯».",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l12-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这学期我一共有三（　）课。",
+  "options": [
+   "杯",
+   "位",
+   "个",
+   "门"
+  ],
+  "correct_answer": "门",
+  "explanation": "Хичээлийн тооллын үг — «门».",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l12-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«红茶» гэж монголоор яаж нэрлэдэг вэ?",
+  "options": [
+   "сүүтэй цай",
+   "кофе",
+   "ногоон цай",
+   "хар цай"
+  ],
+  "correct_answer": "хар цай",
+  "explanation": "红茶 = hóngchá — хар цай.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l12-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«没错儿» ямар утгатай вэ?",
+  "options": [
+   "алдаа гаргав",
+   "мэдэхгүй",
+   "яг зөв",
+   "болохгүй"
+  ],
+  "correct_answer": "яг зөв",
+  "explanation": "没错儿 = яг тийм.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l12-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би гоо бичгийг сонирхдог» — аль нь зөв бэ?",
+  "options": [
+   "我对书法感兴趣。",
+   "我感兴趣书法。",
+   "我对感兴趣书法。",
+   "我书法对感兴趣。"
+  ],
+  "correct_answer": "我对书法感兴趣。",
+  "explanation": "«感兴趣»-ийн тухайн зүйлийг «对»-оор оруулна.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l12-q15",
+  "skillTags": [
+   "grammar",
+   "dui"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他（　）太极拳不感兴趣。",
+  "options": [
+   "在",
+   "是",
+   "和",
+   "对"
+  ],
+  "correct_answer": "对",
+  "explanation": "对…不感兴趣.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l12-q16",
+  "skillTags": [
+   "grammar",
+   "dui"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь зөв үгүйсгэл вэ?",
+  "options": [
+   "我对看电视不感兴趣。",
+   "我对看电视感兴趣不。",
+   "我不对看电视感兴趣。",
+   "我不感兴趣对看电视。"
+  ],
+  "correct_answer": "我对看电视不感兴趣。",
+  "explanation": "«不» нь «感兴趣»-ийн өмнө.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l12-q17",
+  "skillTags": [
+   "grammar",
+   "dui"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр «呢»-г зөв хэрэглэсэн бэ?",
+  "options": [
+   "我去呢了。",
+   "我去还是不去呢？",
+   "呢我去。",
+   "我去吗呢？"
+  ],
+  "correct_answer": "我去还是不去呢？",
+  "explanation": "呢 нь асуултын төгсгөлд.",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l12-q18",
+  "skillTags": [
+   "grammar",
+   "ne"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«呢 (2)» ямар өгүүлбэрт хэрэглэгддэг вэ?",
+  "options": [
+   "Тооны дараа",
+   "Асуултын төгсгөлд, асуултыг хүчтэй болгоно",
+   "Хүсэлтийн төгсгөлд",
+   "Өгүүлэх өгүүлбэрийн эхэнд"
+  ],
+  "correct_answer": "Асуултын төгсгөлд, асуултыг хүчтэй болгоно",
+  "explanation": "呢(2) — асуултын сэтгэлийн өнгө.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l12-q19",
+  "skillTags": [
+   "grammar",
+   "ne"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "你要茶（　）咖啡？",
+  "options": [
+   "可是",
+   "还是",
+   "和",
+   "再"
+  ],
+  "correct_answer": "还是",
+  "explanation": "Сонголтот асуулт — 还是.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l12-q20",
+  "skillTags": [
+   "grammar",
+   "haishi"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи өглөө гүйдэг үү, орой гүйдэг үү?» — аль нь вэ?",
+  "options": [
+   "你早上跑步和晚上跑步吗？",
+   "你早上跑步还是晚上跑步？",
+   "你早上跑步可是晚上跑步？",
+   "你早上还是晚上跑步吗？"
+  ],
+  "correct_answer": "你早上跑步还是晚上跑步？",
+  "explanation": "A 还是 B — сонголтот асуулт.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l12-q21",
+  "skillTags": [
+   "grammar",
+   "haishi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр буруу вэ?",
+  "options": [
+   "你喝茶还是咖啡吗？",
+   "你是老师还是学生？",
+   "你要红茶还是绿茶？",
+   "你喝茶还是咖啡？"
+  ],
+  "correct_answer": "你喝茶还是咖啡吗？",
+  "explanation": "Сонголтот асуултад «吗» хэрэглэхгүй.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l12-q22",
+  "skillTags": [
+   "grammar",
+   "haishi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«你要红茶还是绿茶？» гэсэн асуултад зөв хариулт аль нь вэ?",
+  "options": [
+   "是的。",
+   "对。",
+   "我要红茶还是绿茶。",
+   "我要绿茶。"
+  ],
+  "correct_answer": "我要绿茶。",
+  "explanation": "Нэг зүйлээ сонгож хариулна.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l12-q23",
+  "skillTags": [
+   "grammar",
+   "haishi"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«讠» 偏旁-тэй ханз аль нь вэ?",
+  "options": [
+   "茶",
+   "课",
+   "花",
+   "英"
+  ],
+  "correct_answer": "课",
+  "explanation": "课 = 讠 + 果.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l12-q24",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«艹» 偏旁-г ханзын аль хэсэгт бичдэг вэ?",
+  "options": [
+   "Дээд талд",
+   "Зүүн талд",
+   "Доод талд",
+   "Баруун талд"
+  ],
+  "correct_answer": "Дээд талд",
+  "explanation": "艹 = 草字头 — дээд талд.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l12-q25",
+  "skillTags": [
+   "grammar",
+   "radical"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "“我”想选什么课？ (课文一)",
+  "options": [
+   "兴趣课",
+   "汉语",
+   "书法",
+   "太极拳"
+  ],
+  "correct_answer": "太极拳",
+  "explanation": "这学期“我”想选太极拳，下学期再选书法。",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l12-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "阿明什么时候跑步？ (课文二)",
+  "options": [
+   "中午",
+   "早上",
+   "晚上",
+   "下午"
+  ],
+  "correct_answer": "晚上",
+  "explanation": "阿明说：我一般晚上跑步。",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l12-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "马丁最喜欢什么？ (课文二)",
+  "options": [
+   "跑步",
+   "骑自行车",
+   "踢足球",
+   "打篮球"
+  ],
+  "correct_answer": "骑自行车",
+  "explanation": "马丁：我最喜欢骑自行车。",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l12-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "马丁要什么？阿明要什么？ (课文三)",
+  "options": [
+   "马丁要绿茶，阿明要红茶",
+   "马丁要红茶，阿明要咖啡",
+   "两个人都要咖啡",
+   "马丁要咖啡，阿明要红茶"
+  ],
+  "correct_answer": "马丁要红茶，阿明要咖啡",
+  "explanation": "马丁：我要一杯红茶。阿明：我要咖啡。",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l12-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найздаа «Чи цай авах уу, кофе авах уу?» гэж асуухад аль нь тохирох вэ?",
+  "options": [
+   "你要茶和咖啡吗？",
+   "你要茶还是咖啡？",
+   "你要茶吗咖啡？",
+   "你要茶可是咖啡？"
+  ],
+  "correct_answer": "你要茶还是咖啡？",
+  "explanation": "Хоёроос сонгуулахад «还是».",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l12-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Танилцуулахдаа «Энэ бол ноён Жан Пэн» гэж хэлэх нь аль нь вэ?",
+  "options": [
+   "你好吗？",
+   "我来介绍一下，这位是张鹏先生。",
+   "张鹏最喜欢先生。",
+   "认识您很高兴。"
+  ],
+  "correct_answer": "我来介绍一下，这位是张鹏先生。",
+  "explanation": "日常用语 — танилцуулах хэллэг.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l12-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэг хүн «Чи кофенд маш их дуртай гэж сонссон, тийм биз?» гэвэл «Яг тийм» гэж хэлэх нь аль нь вэ?",
+  "options": [
+   "我最喜欢。",
+   "再见。",
+   "没错儿。",
+   "不用。"
+  ],
+  "correct_answer": "没错儿。",
+  "explanation": "没错儿 — «яг зөв» гэж батална.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l12-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

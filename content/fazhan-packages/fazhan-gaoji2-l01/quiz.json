@@ -1,0 +1,578 @@
+[
+ {
+  "type": "cloze",
+  "question": "决定着该国能否在某些前沿领域（ ）技术优势地位。",
+  "options": [
+   "占据",
+   "奠定",
+   "鼓吹",
+   "开创"
+  ],
+  "correct_answer": "占据",
+  "explanation": "占据 = эзлэх (бичгийн хэллэг). 开创 — шинээр эхлүүлэх, 奠定 — суурь тавих, 鼓吹 — суртал ухуулах.",
+  "order_index": 1,
+  "id": "fazhan-gaoji2-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这可喜局面的（ ）正得益于邓小平的人才思想所奠定的坚实基础。",
+  "options": [
+   "排挤",
+   "料理",
+   "开创",
+   "粉碎"
+  ],
+  "correct_answer": "开创",
+  "explanation": "开创 = шинээр эхлүүлэх. 粉碎 — бут цохих, 排挤 — шахах, 料理 — зохицуулах.",
+  "order_index": 2,
+  "id": "fazhan-gaoji2-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "邓小平的人才思想所奠定的（ ）基础。",
+  "options": [
+   "朴素",
+   "非凡",
+   "反动",
+   "坚实"
+  ],
+  "correct_answer": "坚实",
+  "explanation": "坚实 = бат бөх. 朴素 — энгийн, 非凡 — ер бусын, 反动 — урвагч.",
+  "order_index": 3,
+  "id": "fazhan-gaoji2-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一席话大大激发了知识分子（ ）参加社会主义建设的积极性。",
+  "options": [
+   "专心",
+   "踊跃",
+   "同甘",
+   "百废"
+  ],
+  "correct_answer": "踊跃",
+  "explanation": "踊跃 = идэвхтэй шамдан. Бусад нь утгад нийцэхгүй.",
+  "order_index": 4,
+  "id": "fazhan-gaoji2-l01-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "“四人帮”一伙（ ）“知识越多越反动”。",
+  "options": [
+   "鼓吹",
+   "粉碎",
+   "料理",
+   "津贴"
+  ],
+  "correct_answer": "鼓吹",
+  "explanation": "鼓吹 = суртал ухуулах (сөрөг). 津贴 — тэтгэмж, 料理 — зохицуулах, 粉碎 — бут цохих.",
+  "order_index": 5,
+  "id": "fazhan-gaoji2-l01-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "如果一个城市总是歧视、（ ）外地人，它是不会有多大的发展的。",
+  "options": [
+   "排挤",
+   "激发",
+   "奠定",
+   "调整"
+  ],
+  "correct_answer": "排挤",
+  "explanation": "排挤 = шахан гадуурхах.",
+  "order_index": 6,
+  "id": "fazhan-gaoji2-l01-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）“四人帮”以后，百废待兴。",
+  "options": [
+   "进军",
+   "开创",
+   "粉碎",
+   "得益"
+  ],
+  "correct_answer": "粉碎",
+  "explanation": "粉碎 = бут цохих.",
+  "order_index": 7,
+  "id": "fazhan-gaoji2-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "诗人还在上小学的时候就在艺术方面展现出了（ ）的才能。",
+  "options": [
+   "非凡",
+   "朴素",
+   "坚实",
+   "反动"
+  ],
+  "correct_answer": "非凡",
+  "explanation": "非凡 = ер бусын.",
+  "order_index": 8,
+  "id": "fazhan-gaoji2-l01-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "科研人员我们只有二十多万，真正（ ）的不很多。",
+  "options": [
+   "电钮",
+   "顶用",
+   "料理",
+   "津贴"
+  ],
+  "correct_answer": "顶用",
+  "explanation": "顶用 = хэрэг болох (ярианы).",
+  "order_index": 9,
+  "id": "fazhan-gaoji2-l01-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "五年小见（ ），十年中见（ ），十五年二十年大见（ ）。",
+  "options": [
+   "成效",
+   "国力",
+   "阶级",
+   "胆略"
+  ],
+  "correct_answer": "成效",
+  "explanation": "成效 = үр дүн.",
+  "order_index": 10,
+  "id": "fazhan-gaoji2-l01-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "生活有困难的，可以给（ ）补助。",
+  "options": [
+   "电钮",
+   "津贴",
+   "阶级",
+   "国力"
+  ],
+  "correct_answer": "津贴",
+  "explanation": "津贴 = цалингаас гадуурх тэтгэмж.",
+  "order_index": 11,
+  "id": "fazhan-gaoji2-l01-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "投入硬币，按下（ ），机器就会自动把饮料送出来。",
+  "options": [
+   "津贴",
+   "胆略",
+   "主义",
+   "电钮"
+  ],
+  "correct_answer": "电钮",
+  "explanation": "电钮 = товч.",
+  "order_index": 12,
+  "id": "fazhan-gaoji2-l01-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "让他们（ ）地做研究工作。",
+  "options": [
+   "同甘共苦",
+   "专心致志",
+   "百废待兴",
+   "小心翼翼"
+  ],
+  "correct_answer": "专心致志",
+  "explanation": "专心致志 + 地 = дайвар үг (ганц зүйлд бүх сэтгэлээ зориулах).",
+  "order_index": 13,
+  "id": "fazhan-gaoji2-l01-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Эдгээрийн аль нь БИЧГИЙН өнгө давамгайлсан «үндсэндээ» гэсэн хэллэг вэ?",
+  "options": [
+   "说白了",
+   "一句话",
+   "归根结底",
+   "说穿了"
+  ],
+  "correct_answer": "归根结底",
+  "explanation": "归根结底 — 书面色彩较浓; 说白了/说穿了 — 口语.",
+  "order_index": 14,
+  "id": "fazhan-gaoji2-l01-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "「Гадаад хэл сурах нууц гэвэл олон ярьж, олон дадлага хийх л явдал」— ярианы өнгөтэй хувилбар аль нь?",
+  "options": [
+   "学习外语的奥秘归根结底就是多说多练。",
+   "学习外语的奥秘从根本上说就是多说多练。",
+   "学习外语的奥秘说白了就是多说多练。",
+   "学习外语的奥秘一旦就是多说多练。"
+  ],
+  "correct_answer": "学习外语的奥秘说白了就是多说多练。",
+  "explanation": "说白了 бол ярианы хэв маяг; бусад нь бичгийн хэллэг, сүүлчийнх буруу.",
+  "order_index": 15,
+  "id": "fazhan-gaoji2-l01-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "年轻人（ ）进取精神，敢想敢干。",
+  "options": [
+   "设有",
+   "留有",
+   "含有",
+   "富有"
+  ],
+  "correct_answer": "富有",
+  "explanation": "富有 + хийсвэр чанар (X有 загвар). 设有 — байгууллага, тоног төхөөрөмж; 留有 — орхисон; 含有 — агуулсан.",
+  "order_index": 16,
+  "id": "fazhan-gaoji2-l01-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "大楼内（ ）餐厅、吸烟室，非常方便。",
+  "options": [
+   "大有",
+   "少有",
+   "富有",
+   "设有"
+  ],
+  "correct_answer": "设有",
+  "explanation": "设有 = байрлуулсан, тохижуулсан (V有 загвар).",
+  "order_index": 17,
+  "id": "fazhan-gaoji2-l01-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "「老弱病残」нь ямар төрлийн 四字格 вэ? Өгүүлбэрт ямар үүрэгтэй вэ?",
+  "options": [
+   "нэр үгийн шинжтэй — өгүүлэгдэхүүн, тусагдахуун",
+   "тэмдэг нэрийн шинжтэй — дайвар үг",
+   "үйл үгийн шинжтэй — өгүүлэхүүн",
+   "жижиг өгүүлбэр шиг бие даасан"
+  ],
+  "correct_answer": "нэр үгийн шинжтэй — өгүүлэгдэхүүн, тусагдахуун",
+  "explanation": "老弱病残 нь 名词性 四字格 (ном дээр 风口浪尖-тэй хамт).",
+  "order_index": 18,
+  "id": "fazhan-gaoji2-l01-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь «чадахгүй / боломжгүй» утгатай зөв өгүүлбэр вэ?",
+  "options": [
+   "我没有学过韩语，听不懂他们在说什么。",
+   "我没有学过韩语，能听不懂他们在说什么。",
+   "我没有学过韩语，听得懂不他们在说什么。",
+   "我没有学过韩语，不能听懂他们在说什么。"
+  ],
+  "correct_answer": "我没有学过韩语，听不懂他们在说什么。",
+  "explanation": "V不C = боломжгүй. «不能VC» нь хориг, зөвшөөрөхгүй.",
+  "order_index": 19,
+  "id": "fazhan-gaoji2-l01-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Гадаа хүйтэн, чи халуурч байна — гарч болохгүй» гэх ХОРИГ утга аль нь вэ?",
+  "options": [
+   "外边很冷，你又在发烧，出得去。",
+   "外边很冷，你又在发烧，出不去。",
+   "外边很冷，你又在发烧，能出不去。",
+   "外边很冷，你又在发烧，不能出去。"
+  ],
+  "correct_answer": "外边很冷，你又在发烧，不能出去。",
+  "explanation": "不能VC = 不应该/不允许; V不C = чадахгүй.",
+  "order_index": 20,
+  "id": "fazhan-gaoji2-l01-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль өгүүлбэр ЗӨВ бэ?",
+  "options": [
+   "我打不开门。",
+   "我把门打不开了。",
+   "我把门不能打开了。",
+   "门被我打不开了。"
+  ],
+  "correct_answer": "我打不开门。",
+  "explanation": "V不C-г 把/被 өгүүлбэрт хэрэглэж болохгүй.",
+  "order_index": 21,
+  "id": "fazhan-gaoji2-l01-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«中见成效» нь ямар найруулгын аргаар зохиогдсон бэ?",
+  "options": [
+   "排比",
+   "比喻",
+   "仿词",
+   "夸张"
+  ],
+  "correct_answer": "仿词",
+  "explanation": "小见成效 / 大见成效-ийг дууриан түр зуур зохиосон — 仿词.",
+  "order_index": 22,
+  "id": "fazhan-gaoji2-l01-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«因材施教» → «因财施教» дахь солигдсон үсэг ямар утгыг өгч байна вэ?",
+  "options": [
+   "бүгдэд адил заах",
+   "төлбөрөөс хамаарч заах",
+   "хурдан заах",
+   "илүү сайн заах"
+  ],
+  "correct_answer": "төлбөрөөс хамаарч заах",
+  "explanation": "因财施教 = 根据别人付给报酬的多少来决定教学的态度、方法.",
+  "order_index": 23,
+  "id": "fazhan-gaoji2-l01-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "“把‘剩女’的帽子一直戴下去”-д «帽子» юу вэ?",
+  "options": [
+   "наранд халдах хэрэгсэл",
+   "муу шошго, хоч",
+   "цэнхэр өнгө",
+   "жинхэнэ малгай"
+  ],
+  "correct_answer": "муу шошго, хоч",
+  "explanation": "帽子 нь «不好的称呼或成分»-ийг зүйрлэнэ.",
+  "order_index": 24,
+  "id": "fazhan-gaoji2-l01-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«办教育要两条腿走路，既注意普及，又注意提高» гэж юу гэсэн үг вэ?",
+  "options": [
+   "хоёр хөлөө хөдөлгөх дасгал",
+   "хоёр талдаа зэрэг анхаарах",
+   "зөвхөн нэг чиглэлд тулгуурлах",
+   "хоёр хөлөөр алхах"
+  ],
+  "correct_answer": "хоёр талдаа зэрэг анхаарах",
+  "explanation": "两条腿走路 = 要依靠两个方面 (注释7).",
+  "order_index": 25,
+  "id": "fazhan-gaoji2-l01-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "1956年周恩来代表党中央宣布了什么？",
+  "options": [
+   "知识分子都是资产阶级",
+   "知识分子不能参加建设",
+   "知识分子的绝大部分已经成为国家工作人员，已为社会主义服务",
+   "知识分子必须去农村"
+  ],
+  "correct_answer": "知识分子的绝大部分已经成为国家工作人员，已为社会主义服务",
+  "explanation": "Р2 (1956 оны чуулган).",
+  "order_index": 26,
+  "id": "fazhan-gaoji2-l01-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "反右派斗争的扩大化给知识分子带来了什么？",
+  "options": [
+   "被派到国外学习",
+   "得到了更多的奖金",
+   "没有任何影响",
+   "被推向阶级斗争的风口浪尖，一大批受到伤害"
+  ],
+  "correct_answer": "被推向阶级斗争的风口浪尖，一大批受到伤害",
+  "explanation": "Р2.",
+  "order_index": 27,
+  "id": "fazhan-gaoji2-l01-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "邓小平认为我国的科学技术和教育同发达国家相比落后了多少年？",
+  "options": [
+   "五年",
+   "四十年",
+   "整整二十年",
+   "十年"
+  ],
+  "correct_answer": "整整二十年",
+  "explanation": "Р5: 整整落后了二十年.",
+  "order_index": 28,
+  "id": "fazhan-gaoji2-l01-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "邓小平说，办教育应该怎样“两条腿走路”？",
+  "options": [
+   "既注意国内，又注意国外",
+   "既注意普及，又注意提高",
+   "既注意小学，又注意幼儿园",
+   "既注意理论，又注意实践"
+  ],
+  "correct_answer": "既注意普及，又注意提高",
+  "explanation": "Р6.",
+  "order_index": 29,
+  "id": "fazhan-gaoji2-l01-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "邓小平对“脑力劳动”和“体力劳动”是怎么看的？",
+  "options": [
+   "脑力劳动比体力劳动更重要",
+   "两者没有任何关系",
+   "只有体力劳动才算劳动",
+   "都是劳动，从事脑力劳动的人也是劳动者"
+  ],
+  "correct_answer": "都是劳动，从事脑力劳动的人也是劳动者",
+  "explanation": "Р8.",
+  "order_index": 30,
+  "id": "fazhan-gaoji2-l01-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 企业的竞争 / 归根结底 / 人才的竞争 / 是",
+  "options": [
+   "是企业的竞争归根结底人才的竞争",
+   "企业的竞争归根结底是人才的竞争",
+   "归根结底企业的竞争人才的竞争是",
+   "人才的竞争归根结底是企业的竞争"
+  ],
+  "correct_answer": "企业的竞争归根结底是人才的竞争",
+  "explanation": "归根结底 нь өгүүлэгдэхүүн ба 是 хоёрын хооронд дайвар үг шиг орно.",
+  "order_index": 31,
+  "id": "fazhan-gaoji2-l01-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 同发达国家相比 / 落后了二十年 / 我们的科学技术 / 整整",
+  "options": [
+   "我们的科学技术同发达国家相比整整落后了二十年的",
+   "同发达国家相比，我们的科学技术整整落后了二十年",
+   "整整同发达国家相比，我们的科学技术落后了二十年",
+   "落后了二十年同发达国家相比，我们的科学技术整整"
+  ],
+  "correct_answer": "同发达国家相比，我们的科学技术整整落后了二十年",
+  "explanation": "同……相比，…… бүтэц: харьцуулалт өгүүлбэрийн эхэнд.",
+  "order_index": 32,
+  "id": "fazhan-gaoji2-l01-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

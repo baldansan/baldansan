@@ -1,0 +1,579 @@
+[
+ {
+  "type": "choice",
+  "question": "«约会» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "тогооч",
+   "болзоо, уулзалтын цаг товлох",
+   "шүлс",
+   "сургалтын төлбөр"
+  ],
+  "correct_answer": "болзоо, уулзалтын цаг товлох",
+  "explanation": "约会 = болзоо, уулзалт.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l04-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我和中国的（ ）是从六岁开始的。",
+  "options": [
+   "缘分",
+   "口水",
+   "元素",
+   "学费"
+  ],
+  "correct_answer": "缘分",
+  "explanation": "缘分 = заяа, хувь тохиол.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l04-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那时正在（ ）成龙的电影，我就开始喜欢中国功夫了。",
+  "options": [
+   "选择",
+   "流行",
+   "后悔",
+   "认真"
+  ],
+  "correct_answer": "流行",
+  "explanation": "流行 = моодонд байх, түгэх.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l04-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«学费» гэсэн үгийн утга аль нь вэ?",
+  "options": [
+   "хөтөч",
+   "амралт",
+   "сургалтын төлбөр",
+   "ирээдүй"
+  ],
+  "correct_answer": "сургалтын төлбөр",
+  "explanation": "学费 = сургалтын төлбөр.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l04-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "但是我还是（ ）了汉语，而且一点儿也不后悔。",
+  "options": [
+   "挣",
+   "约会",
+   "流",
+   "选择"
+  ],
+  "correct_answer": "选择",
+  "explanation": "选择 = сонгох.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l04-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我真（ ）小时候没好好儿学习英语。",
+  "options": [
+   "交",
+   "后悔",
+   "认真",
+   "流行"
+  ],
+  "correct_answer": "后悔",
+  "explanation": "后悔 = харамсах.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l04-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "听说你（ ）了一个中国朋友。",
+  "options": [
+   "交",
+   "做",
+   "挣",
+   "流"
+  ],
+  "correct_answer": "交",
+  "explanation": "交朋友 = найзтай болох.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l04-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«厨师» гэж хэн бэ?",
+  "options": [
+   "хөтөч",
+   "тогооч",
+   "жолооч",
+   "багш"
+  ],
+  "correct_answer": "тогооч",
+  "explanation": "厨师 = тогооч.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l04-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«导游» гэж хэн бэ?",
+  "options": [
+   "худалдагч",
+   "оюутан",
+   "хөтөч",
+   "тогооч"
+  ],
+  "correct_answer": "хөтөч",
+  "explanation": "导游 = жуулчны хөтөч.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l04-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "学汉语既不能（ ）大钱，也没什么出息。",
+  "options": [
+   "流",
+   "选",
+   "交",
+   "挣"
+  ],
+  "correct_answer": "挣",
+  "explanation": "挣钱 = мөнгө олох.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l04-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在我的生活里，（ ）都能找到中国元素。",
+  "options": [
+   "其实",
+   "认真",
+   "到处",
+   "因此"
+  ],
+  "correct_answer": "到处",
+  "explanation": "到处 = хаа сайгүй.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l04-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«流口水» гэж юу вэ?",
+  "options": [
+   "гар угаах",
+   "шүлс гоожих",
+   "дуу дуулах",
+   "ус хутгах"
+  ],
+  "correct_answer": "шүлс гоожих",
+  "explanation": "流口水 = шүлс гоожих.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l04-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yuēhuì» аль үгэнд таарах вэ?",
+  "options": [
+   "缘分",
+   "约会",
+   "其实",
+   "学费"
+  ],
+  "correct_answer": "约会",
+  "explanation": "约会 = yuēhuì.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l04-q13",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "A：你是怎么去长城的？ B：（ ）",
+  "options": [
+   "我们坐火车是去的。",
+   "我们是坐火车去了的。",
+   "我们是坐火车去的。",
+   "我们是去坐火车的。"
+  ],
+  "correct_answer": "我们是坐火车去的。",
+  "explanation": "是 + арга + V + 的.",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l04-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：你父母是什么时候来的？ B：（ ）",
+  "options": [
+   "我父母是来的上星期。",
+   "我父母是上星期来的。",
+   "我父母上星期是来。",
+   "我父母是上星期来了的。"
+  ],
+  "correct_answer": "我父母是上星期来的。",
+  "explanation": "是 + цаг + V + 的.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l04-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би Америкаас ирээгүй» — аль нь зөв бэ?",
+  "options": [
+   "我没是从美国来的。",
+   "我不是从美国来的。",
+   "我不是从美国来。",
+   "我是不从美国来的。"
+  ],
+  "correct_answer": "我不是从美国来的。",
+  "explanation": "不是……的 — «的» үлдэнэ.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l04-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр англиар ч, хятадаар ч ярьдаг» (нэг хүн) — аль нь зөв бэ?",
+  "options": [
+   "他会不但说英语，而且说汉语。",
+   "他不但会说英语，因为会说汉语。",
+   "他不但会说英语，而且会说汉语。",
+   "不但他会说英语，而且会说汉语。"
+  ],
+  "correct_answer": "他不但会说英语，而且会说汉语。",
+  "explanation": "Нэг өгүүлэгдэхүүн — 不但 ард.",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l04-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Мэри ч, Анна ч дуулдаг» — аль нь зөв бэ?",
+  "options": [
+   "玛丽会不但唱歌，安娜也会。",
+   "不但玛丽会唱歌，安娜也会唱歌。",
+   "玛丽不但唱歌会，安娜也唱歌会。",
+   "玛丽不但会唱歌，安娜也会唱歌。"
+  ],
+  "correct_answer": "不但玛丽会唱歌，安娜也会唱歌。",
+  "explanation": "Өөр өгүүлэгдэхүүн — 不但 өмнө.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l04-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "那家超市的水果不但新鲜，（ ）便宜。",
+  "options": [
+   "因此",
+   "而且",
+   "因为",
+   "但是"
+  ],
+  "correct_answer": "而且",
+  "explanation": "不但……而且……",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l04-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "有人说北京的夏天很热，（ ）不太热。",
+  "options": [
+   "其实",
+   "因此",
+   "而且",
+   "真的"
+  ],
+  "correct_answer": "其实",
+  "explanation": "其实 — өмнөх санааг засах.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l04-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "朋友说得没错，这里的天气（ ）很热。",
+  "options": [
+   "其实",
+   "而且",
+   "真的",
+   "因此"
+  ],
+  "correct_answer": "真的",
+  "explanation": "Найзын үгийг батлах — 真的.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l04-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "在中国，能经常和中国人聊天儿，（ ）我的汉语进步得很快。",
+  "options": [
+   "因为",
+   "而且",
+   "因此",
+   "其实"
+  ],
+  "correct_answer": "因此",
+  "explanation": "Үр дүнгийн өмнө — 因此.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l04-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь ЗӨВ бэ?",
+  "options": [
+   "因为路上的车太多了，因此经常堵车。",
+   "路上的车太多了，因此因为经常堵车。",
+   "因此路上的车太多了，经常堵车。",
+   "路上的车太多了，因此经常堵车。"
+  ],
+  "correct_answer": "路上的车太多了，因此经常堵车。",
+  "explanation": "因此 нь 因为-тай хамт орохгүй.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l04-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "他喜欢（ ）朋友。 — «шинэ найз олох» гэсэн утгаар:",
+  "options": [
+   "做",
+   "选",
+   "挣",
+   "交"
+  ],
+  "correct_answer": "交",
+  "explanation": "交朋友 — шинэ найз олох.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l04-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "马丁和中国的缘分是从几岁开始的？",
+  "options": [
+   "八岁",
+   "六岁",
+   "十二岁",
+   "十八岁"
+  ],
+  "correct_answer": "六岁",
+  "explanation": "P1: 从六岁开始的.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l04-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "马丁为什么喜欢中国功夫？",
+  "options": [
+   "他想当警察",
+   "他在德国学过",
+   "那时正在流行成龙的电影",
+   "他的家人是中国人"
+  ],
+  "correct_answer": "那时正在流行成龙的电影",
+  "explanation": "P1.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l04-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "有人说学汉语怎么样？",
+  "options": [
+   "很容易也很有用",
+   "能挣很多钱",
+   "既不能挣大钱，也没什么出息",
+   "不太难"
+  ],
+  "correct_answer": "既不能挣大钱，也没什么出息",
+  "explanation": "P2.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l04-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "马丁的学费是怎么来的？",
+  "options": [
+   "家人给的",
+   "他利用假期打工挣的",
+   "借的",
+   "奖学金"
+  ],
+  "correct_answer": "他利用假期打工挣的",
+  "explanation": "P3: 学费是我利用假期打工挣的.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l04-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "马丁将来想做什么工作？",
+  "options": [
+   "当老师",
+   "当医生",
+   "当厨师或者导游",
+   "当演员"
+  ],
+  "correct_answer": "当厨师或者导游",
+  "explanation": "P4.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l04-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хэлэхийг хүссэн: «Сая нэг хятад хүнтэй танилцсан, найзалмаар байна». Аль нь зохимжтой вэ?",
+  "options": [
+   "我们流个口水吧。",
+   "我们做个约会吧。",
+   "我们交个朋友吧。",
+   "我们挣个朋友吧。"
+  ],
+  "correct_answer": "我们交个朋友吧。",
+  "explanation": "交个朋友 — найзлахыг санал болгох.",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l04-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаасаа «Чи хэзээ ирсэн юм бэ?» гэж цагийг онцолж асууж байна. Аль нь зохимжтой вэ?",
+  "options": [
+   "你来是什么时候？",
+   "你是什么时候来的？",
+   "你什么时候来了的？",
+   "你是来什么时候的？"
+  ],
+  "correct_answer": "你是什么时候来的？",
+  "explanation": "是……的 — цагийг онцолж асуух.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l04-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 他 / 不但 / 教 / 我 / 功夫 / 而且 / 还 / 教 / 我 / 道理",
+  "options": [
+   "不但他教我功夫，而且还教我道理",
+   "他不但功夫教我，而且还教道理我",
+   "他不但教我功夫，而且还教我道理",
+   "他教我不但功夫，而且还教我道理"
+  ],
+  "correct_answer": "他不但教我功夫，而且还教我道理",
+  "explanation": "Нэг өгүүлэгдэхүүн — 不但 ард.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l04-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

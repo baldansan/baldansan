@@ -1,0 +1,567 @@
+[
+ {
+  "type": "choice",
+  "question": "«愚公移山» гэдэг нь юуг сургадаг үлгэр вэ?",
+  "options": [
+   "Өвгөн хүн ухаантай",
+   "Уул нүүлгэхэд хэцүү",
+   "Гэр бүл цуг амьдрах ёстой",
+   "Тэвчээр, зүтгэлээр бүхнийг бүтээж болно"
+  ],
+  "correct_answer": "Тэвчээр, зүтгэлээр бүхнийг бүтээж болно",
+  "explanation": "愚公移山 — тэвчээрийн сургаал.",
+  "order_index": 1,
+  "id": "fazhan-chuji2-l21-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«半天» гэдгийн энэ хичээлд хэрэглэсэн утга аль нь вэ?",
+  "options": [
+   "нэлээд удаан",
+   "хагас жил",
+   "өглөө",
+   "яг 12 цаг"
+  ],
+  "correct_answer": "нэлээд удаан",
+  "explanation": "大家商量了半天 — нэлээд удаан.",
+  "order_index": 2,
+  "id": "fazhan-chuji2-l21-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«往返» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "очоод буцах",
+   "зөвхөн ирэх",
+   "шилжих",
+   "нэг талын явах"
+  ],
+  "correct_answer": "очоод буцах",
+  "explanation": "往返 = очиж ирэх.",
+  "order_index": 3,
+  "id": "fazhan-chuji2-l21-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这两座大山（ ）住了他家的路。",
+  "options": [
+   "背",
+   "派",
+   "挖",
+   "挡"
+  ],
+  "correct_answer": "挡",
+  "explanation": "挡住 — замыг хаах.",
+  "order_index": 4,
+  "id": "fazhan-chuji2-l21-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "儿子、孙子都表示（ ），只有妻子不同意。",
+  "options": [
+   "往返",
+   "赞成",
+   "方便",
+   "毅力"
+  ],
+  "correct_answer": "赞成",
+  "explanation": "表示赞成 — дэмжих.",
+  "order_index": 5,
+  "id": "fazhan-chuji2-l21-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们把土和石头（ ）到大海里去。",
+  "options": [
+   "挡",
+   "商量",
+   "背",
+   "运"
+  ],
+  "correct_answer": "运",
+  "explanation": "运 — тээх, зөөх.",
+  "order_index": 6,
+  "id": "fazhan-chuji2-l21-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "愚公（ ）全家人开始挖山了。",
+  "options": [
+   "带领",
+   "延续",
+   "往返",
+   "赞成"
+  ],
+  "correct_answer": "带领",
+  "explanation": "带领 — удирдан дагуулах.",
+  "order_index": 7,
+  "id": "fazhan-chuji2-l21-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "玉帝被愚公一家人不怕困难的（ ）感动了。",
+  "options": [
+   "精神",
+   "春夏秋冬",
+   "年纪",
+   "毅力"
+  ],
+  "correct_answer": "精神",
+  "explanation": "精神 — сүнс, зүтгэл.",
+  "order_index": 8,
+  "id": "fazhan-chuji2-l21-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "玉帝（ ）两个神仙把大山背走了。",
+  "options": [
+   "让",
+   "带",
+   "派",
+   "叫"
+  ],
+  "correct_answer": "派",
+  "explanation": "派 — албан томилж илгээх.",
+  "order_index": 9,
+  "id": "fazhan-chuji2-l21-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "只要有（ ），坚持到底，就能成功。",
+  "options": [
+   "毅力",
+   "石头",
+   "精神",
+   "孙子"
+  ],
+  "correct_answer": "毅力",
+  "explanation": "毅力 — хатуу зүтгэл.",
+  "order_index": 10,
+  "id": "fazhan-chuji2-l21-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你都这么大（ ）了，连石头都搬不动。",
+  "options": [
+   "春夏秋冬",
+   "石头",
+   "半天",
+   "年纪"
+  ],
+  "correct_answer": "年纪",
+  "explanation": "年纪 — нас.",
+  "order_index": 11,
+  "id": "fazhan-chuji2-l21-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那么多的土和石头放到哪儿去呢？ 大家（ ）了半天。",
+  "options": [
+   "方便",
+   "同意",
+   "背",
+   "商量"
+  ],
+  "correct_answer": "商量",
+  "explanation": "商量 — зөвлөлдөх.",
+  "order_index": 12,
+  "id": "fazhan-chuji2-l21-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«子子孙孙» гэдэг үгийн утга аль нь вэ?",
+  "options": [
+   "нөхөр, эхнэр",
+   "үр сад, ач зээ нар",
+   "хүү, охин",
+   "өвөг дээдэс"
+  ],
+  "correct_answer": "үр сад, ач зээ нар",
+  "explanation": "子孙 — үр хойч.",
+  "order_index": 13,
+  "id": "fazhan-chuji2-l21-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Хаашаа ч явсан тэд уулыг давах ёстой» — аль нь зөв бэ?",
+  "options": [
+   "不管去哪儿，因为他们得翻过大山。",
+   "不管去哪儿，他们都得翻过这两座大山。",
+   "不管去哪儿，他们翻过这两座大山。"
+  ],
+  "correct_answer": "不管去哪儿，他们都得翻过这两座大山。",
+  "explanation": "不管……都……",
+  "order_index": 14,
+  "id": "fazhan-chuji2-l21-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«不管……都……»-д «不管»-ийн дараа ямар нөхцөл орох ёстой вэ?",
+  "options": [
+   "зөвхөн тоо",
+   "олон сонголттой (A不A / асуух үг)",
+   "зөвхөн нэр",
+   "ганц тодорхой нөхцөл"
+  ],
+  "correct_answer": "олон сонголттой (A不A / асуух үг)",
+  "explanation": "不管 + олон сонголт.",
+  "order_index": 15,
+  "id": "fazhan-chuji2-l21-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "________，我们都想去。",
+  "options": [
+   "不管天气好",
+   "不管天气好不好",
+   "因为天气好不好"
+  ],
+  "correct_answer": "不管天气好不好",
+  "explanation": "不管 + A不A.",
+  "order_index": 16,
+  "id": "fazhan-chuji2-l21-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "不管多么忙，________。",
+  "options": [
+   "都应该吃早饭",
+   "因为应该吃早饭",
+   "应该吃早饭不"
+  ],
+  "correct_answer": "都应该吃早饭",
+  "explanation": "不管……都……",
+  "order_index": 17,
+  "id": "fazhan-chuji2-l21-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«……，再说，……» нь юу хийдэг вэ?",
+  "options": [
+   "шалтгааныг сөргөнө",
+   "асуулт асууна",
+   "дахин ярихыг хүснэ",
+   "шинэ шалтгаан нэмнэ"
+  ],
+  "correct_answer": "шинэ шалтгаан нэмнэ",
+  "explanation": "再说 — шинэ шалтгаан нэмэх.",
+  "order_index": 18,
+  "id": "fazhan-chuji2-l21-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "对不起！我明天和朋友有约会，________，我后天还有个考试。",
+  "options": [
+   "可是",
+   "所以",
+   "再说"
+  ],
+  "correct_answer": "再说",
+  "explanation": "再说 — шалтгаан нэмэх.",
+  "order_index": 19,
+  "id": "fazhan-chuji2-l21-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "这个手机我可以买吗？ — 行。你的手机已经坏了，________，这个手机也不贵。",
+  "options": [
+   "但是",
+   "再说",
+   "如果"
+  ],
+  "correct_answer": "再说",
+  "explanation": "再说 — нэмэлт шалтгаан.",
+  "order_index": 20,
+  "id": "fazhan-chuji2-l21-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Дуустал тэвчих» — аль нь зөв бэ?",
+  "options": [
+   "坚持底到",
+   "到底坚持",
+   "坚持到底"
+  ],
+  "correct_answer": "坚持到底",
+  "explanation": "V+到底.",
+  "order_index": 21,
+  "id": "fazhan-chuji2-l21-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "这条路一直________，就是你要找的地方。",
+  "options": [
+   "走底到",
+   "到底走",
+   "走到底"
+  ],
+  "correct_answer": "走到底",
+  "explanation": "走到底 — төгсгөл хүртэл.",
+  "order_index": 22,
+  "id": "fazhan-chuji2-l21-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "不管结果怎么样，这件事必须________，不能放弃。",
+  "options": [
+   "做到底",
+   "到底做",
+   "做底到"
+  ],
+  "correct_answer": "做到底",
+  "explanation": "做到底.",
+  "order_index": 23,
+  "id": "fazhan-chuji2-l21-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«V+到底» ба «到底+V» хоёр ижил утгатай юу?",
+  "options": [
+   "Зөвхөн нэр үгэнд",
+   "Тийм, адилхан",
+   "Зөвхөн сөрөг өгүүлбэрт",
+   "Үгүй: V+到底 = дуустал; 到底+V = яг"
+  ],
+  "correct_answer": "Үгүй: V+到底 = дуустал; 到底+V = яг",
+  "explanation": "Үйл үгийн ард/өмнө өөр утга.",
+  "order_index": 24,
+  "id": "fazhan-chuji2-l21-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "愚公家为什么出门不方便？",
+  "options": [
+   "没有车",
+   "家太远",
+   "没有路",
+   "门前有两座大山挡住了路"
+  ],
+  "correct_answer": "门前有两座大山挡住了路",
+  "explanation": "P1.",
+  "order_index": 25,
+  "id": "fazhan-chuji2-l21-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "谁不同意搬山？",
+  "options": [
+   "愚公的孙子",
+   "聪明老人",
+   "愚公的儿子",
+   "愚公的妻子"
+  ],
+  "correct_answer": "愚公的妻子",
+  "explanation": "P2.",
+  "order_index": 26,
+  "id": "fazhan-chuji2-l21-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "他们决定把土和石头运到哪里去？",
+  "options": [
+   "河里",
+   "东边的大海里",
+   "山后面",
+   "城里"
+  ],
+  "correct_answer": "东边的大海里",
+  "explanation": "P2.",
+  "order_index": 27,
+  "id": "fazhan-chuji2-l21-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "运石头往返一次要多长时间？",
+  "options": [
+   "半天",
+   "一个月",
+   "一年",
+   "一天"
+  ],
+  "correct_answer": "一年",
+  "explanation": "P3: 往返一次，就要一年的时间.",
+  "order_index": 28,
+  "id": "fazhan-chuji2-l21-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "最后谁把两座大山背走了？",
+  "options": [
+   "玉帝派的两个神仙",
+   "愚公一家",
+   "孙子们",
+   "聪明老人"
+  ],
+  "correct_answer": "玉帝派的两个神仙",
+  "explanation": "P5.",
+  "order_index": 29,
+  "id": "fazhan-chuji2-l21-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Таны найз «хамтдаа амралтаараа Юньнань явъя» гэхэд «Явахыг хүсч байна ч явж чадахгүй: ажил хийх ёстой, түүнээс гадна өнгөрсөн жил очсон» гэж хэлэхэд — аль нь зохимжтой вэ?",
+  "options": [
+   "我想去，可是去不了。因为我得打工，再说，我前年去过了。",
+   "我想去，可是去不了。因为我得打工，不管，我前年去过了。",
+   "我想去，再说去不了。我得打工，因为前年去过了。"
+  ],
+  "correct_answer": "我想去，可是去不了。因为我得打工，再说，我前年去过了。",
+  "explanation": "因为……，再说，……",
+  "order_index": 30,
+  "id": "fazhan-chuji2-l21-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Автомашин аваая» гэсэнд «Би дэмжихгүй: үнэтэй, түүнээс гадна байгальд ч муу» гэж хэлэхэд аль нь зөв бэ?",
+  "options": [
+   "我不赞成。汽车很贵，再说，对环境也不好。",
+   "我不赞成。汽车很贵，因为对环境也不好。",
+   "我不赞成汽车，再说很贵，对环境好。"
+  ],
+  "correct_answer": "我不赞成。汽车很贵，再说，对环境也不好。",
+  "explanation": "赞成 + 再说.",
+  "order_index": 31,
+  "id": "fazhan-chuji2-l21-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 大家 / 商量 / 了 / 半天",
+  "options": [
+   "商量大家了半天",
+   "大家半天商量了",
+   "大家商量了半天"
+  ],
+  "correct_answer": "大家商量了半天",
+  "explanation": "S + V + 了 + 半天.",
+  "order_index": 32,
+  "id": "fazhan-chuji2-l21-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

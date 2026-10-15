@@ -1,0 +1,587 @@
+[
+ {
+  "type": "choice",
+  "question": "«叫» ханзын утга аль нь вэ?",
+  "options": [
+   "нэрлэгдэх, ...гэдэг",
+   "юу",
+   "маш",
+   "овогтой байх"
+  ],
+  "correct_answer": "нэрлэгдэх, ...гэдэг",
+  "explanation": "叫 = jiào — нэрлэгдэх.",
+  "order_index": 1,
+  "id": "fazhan-chuji1-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«姓» ханзын утга аль нь вэ?",
+  "options": [
+   "таних",
+   "баярлах",
+   "овогтой байх; овог",
+   "нэрлэгдэх"
+  ],
+  "correct_answer": "овогтой байх; овог",
+  "explanation": "姓 = xìng.",
+  "order_index": 2,
+  "id": "fazhan-chuji1-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«什么» ямар утгатай вэ?",
+  "options": [
+   "хэн",
+   "юу, ямар",
+   "хэзээ",
+   "хаана"
+  ],
+  "correct_answer": "юу, ямар",
+  "explanation": "什么 = shénme — юу.",
+  "order_index": 3,
+  "id": "fazhan-chuji1-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«名字» ямар утгатай вэ?",
+  "options": [
+   "нэр",
+   "хүн",
+   "овог",
+   "улс"
+  ],
+  "correct_answer": "нэр",
+  "explanation": "名字 = míngzi — нэр.",
+  "order_index": 4,
+  "id": "fazhan-chuji1-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«认识» ямар утгатай вэ?",
+  "options": [
+   "баярлах",
+   "таних, танилцах",
+   "асуух",
+   "унших"
+  ],
+  "correct_answer": "таних, танилцах",
+  "explanation": "认识 = rènshi.",
+  "order_index": 5,
+  "id": "fazhan-chuji1-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«高兴» ямар утгатай вэ?",
+  "options": [
+   "уйтгартай",
+   "хөл",
+   "баярлах, таатай",
+   "өвдсөн"
+  ],
+  "correct_answer": "баярлах, таатай",
+  "explanation": "高兴 = gāoxìng.",
+  "order_index": 6,
+  "id": "fazhan-chuji1-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«也» ямар утгатай вэ?",
+  "options": [
+   "огт",
+   "маш",
+   "бүгд",
+   "мөн, бас"
+  ],
+  "correct_answer": "мөн, бас",
+  "explanation": "也 = yě.",
+  "order_index": 7,
+  "id": "fazhan-chuji1-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«很» ямар утгатай вэ?",
+  "options": [
+   "жаахан",
+   "мөн",
+   "маш",
+   "бүх"
+  ],
+  "correct_answer": "маш",
+  "explanation": "很 = hěn.",
+  "order_index": 8,
+  "id": "fazhan-chuji1-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«请问» ямар үед хэлэх вэ?",
+  "options": [
+   "Мэндлэхэд",
+   "Баяртай гэхэд",
+   "Баярлалаа гэхэд",
+   "Асуулт асуухын өмнө эелдэгээр"
+  ],
+  "correct_answer": "Асуулт асуухын өмнө эелдэгээр",
+  "explanation": "请问 = уучлаарай, асууя гэвэл.",
+  "order_index": 9,
+  "id": "fazhan-chuji1-l03-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«六» ханзын пиньинь аль нь вэ?",
+  "options": [
+   "liù",
+   "qī",
+   "jiǔ",
+   "sì"
+  ],
+  "correct_answer": "liù",
+  "explanation": "六 = liù — зургаа.",
+  "order_index": 10,
+  "id": "fazhan-chuji1-l03-q10",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«七» ямар тоо вэ?",
+  "options": [
+   "зургаа",
+   "ес",
+   "долоо",
+   "тав"
+  ],
+  "correct_answer": "долоо",
+  "explanation": "七 = qī — долоо.",
+  "order_index": 11,
+  "id": "fazhan-chuji1-l03-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«九» ханзын пиньинь аль нь вэ?",
+  "options": [
+   "jiǔ",
+   "xiǔ",
+   "qiū",
+   "jiù"
+  ],
+  "correct_answer": "jiǔ",
+  "explanation": "九 = jiǔ — ес.",
+  "order_index": 12,
+  "id": "fazhan-chuji1-l03-q12",
+  "skillTags": [
+   "vocabulary",
+   "pinyin"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«老师» ямар утгатай вэ?",
+  "options": [
+   "багш",
+   "хүү",
+   "найз",
+   "оюутан"
+  ],
+  "correct_answer": "багш",
+  "explanation": "老师 = lǎoshī.",
+  "order_index": 13,
+  "id": "fazhan-chuji1-l03-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«您贵姓？»-д зөв хариулт аль нь вэ?",
+  "options": [
+   "我姓李。",
+   "我贵姓李。",
+   "你姓李。",
+   "我叫姓李。"
+  ],
+  "correct_answer": "我姓李。",
+  "explanation": "«贵姓» нь өөрийн тухайд хэрэглэгдэхгүй.",
+  "order_index": 14,
+  "id": "fazhan-chuji1-l03-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Овог асуух энгийн хэлбэр аль нь вэ?",
+  "options": [
+   "你姓什么？",
+   "你叫什么姓？",
+   "你什么姓？",
+   "姓你什么？"
+  ],
+  "correct_answer": "你姓什么？",
+  "explanation": "姓 + 什么.",
+  "order_index": 15,
+  "id": "fazhan-chuji1-l03-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我叫……» ард юу ордог вэ?",
+  "options": [
+   "зөвхөн овог",
+   "улсын нэр",
+   "бүтэн нэр",
+   "тоо"
+  ],
+  "correct_answer": "бүтэн нэр",
+  "explanation": "叫 + нэр; 姓 + овог.",
+  "order_index": 16,
+  "id": "fazhan-chuji1-l03-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«也» өгүүлбэрт хаана ордог вэ?",
+  "options": [
+   "Сэдвийн ард, үйл үг/тэмдэг нэрийн өмнө",
+   "Нэр үгийн дараа",
+   "Өгүүлбэрийн эхэнд",
+   "Өгүүлбэрийн төгсгөлд"
+  ],
+  "correct_answer": "Сэдвийн ард, үйл үг/тэмдэг нэрийн өмнө",
+  "explanation": "我也很高兴.",
+  "order_index": 17,
+  "id": "fazhan-chuji1-l03-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "j, q, x нь ихэвчлэн ямар эгшигтэй хамт ирдэг вэ?",
+  "options": [
+   "er",
+   "i, ü-ээр эхэлсэн",
+   "a, o, e",
+   "u-аар эхэлсэн"
+  ],
+  "correct_answer": "i, ü-ээр эхэлсэн",
+  "explanation": "ji, qi, xi, xue...",
+  "order_index": 18,
+  "id": "fazhan-chuji1-l03-q18",
+  "skillTags": [
+   "grammar",
+   "initial"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь хийтэй гийгүүлэгч вэ?",
+  "options": [
+   "j",
+   "zh",
+   "x",
+   "q"
+  ],
+  "correct_answer": "q",
+  "explanation": "q хийтэй; j хийгүй.",
+  "order_index": 19,
+  "id": "fazhan-chuji1-l03-q19",
+  "skillTags": [
+   "grammar",
+   "initial"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "j + iou нийлүүлж бичвэл юу болох вэ?",
+  "options": [
+   "jiou",
+   "jou",
+   "ju",
+   "jiu"
+  ],
+  "correct_answer": "jiu",
+  "explanation": "Гийгүүлэгчийн ард iou → iu.",
+  "order_index": 20,
+  "id": "fazhan-chuji1-l03-q20",
+  "skillTags": [
+   "grammar",
+   "final"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«xue» дахь «u» нь үнэндээ аль эгшиг вэ?",
+  "options": [
+   "ü",
+   "e",
+   "o",
+   "u"
+  ],
+  "correct_answer": "ü",
+  "explanation": "j q x-ийн ард ü нь u болж бичигдэнэ.",
+  "order_index": 21,
+  "id": "fazhan-chuji1-l03-q21",
+  "skillTags": [
+   "grammar",
+   "final"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«小»-гийн эхний зураас аль нь вэ (先中间后两边)?",
+  "options": [
+   "Хэвтээ зураас",
+   "Зүүн цэг",
+   "Дунд босоо зураас",
+   "Баруун цэг"
+  ],
+  "correct_answer": "Дунд босоо зураас",
+  "explanation": "小: дунд → хоёр тал.",
+  "order_index": 22,
+  "id": "fazhan-chuji1-l03-q22",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«月»-ийг бичихдээ эхлээд аль хэсгийг бичих вэ?",
+  "options": [
+   "Дотор хоёр зураас",
+   "Дунд",
+   "Гадна хүрээ",
+   "Хамгийн доод"
+  ],
+  "correct_answer": "Гадна хүрээ",
+  "explanation": "从外到内.",
+  "order_index": 23,
+  "id": "fazhan-chuji1-l03-q23",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«七» ханзын ёроолын зураас аль нь вэ?",
+  "options": [
+   "弯钩",
+   "竖弯钩",
+   "横钩",
+   "竖钩"
+  ],
+  "correct_answer": "竖弯钩",
+  "explanation": "七 = 竖弯钩.",
+  "order_index": 24,
+  "id": "fazhan-chuji1-l03-q24",
+  "skillTags": [
+   "grammar",
+   "stroke"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "reading",
+  "question": "山田：你好！请问，你叫什么名字？ 林娜：我叫（ ）。",
+  "options": [
+   "马丁",
+   "林娜",
+   "山田",
+   "李"
+  ],
+  "correct_answer": "林娜",
+  "explanation": "Линна өөрийнхөө нэрийг хэлнэ.",
+  "order_index": 25,
+  "id": "fazhan-chuji1-l03-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "reading",
+  "question": "山田：我叫山田佑，（ ）山田。",
+  "options": [
+   "姓",
+   "叫",
+   "是",
+   "很"
+  ],
+  "correct_answer": "姓",
+  "explanation": "Овог — «姓».",
+  "order_index": 26,
+  "id": "fazhan-chuji1-l03-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "马丁：老师，您（ ）？ 李一民：我姓李。",
+  "options": [
+   "贵姓",
+   "认识",
+   "高兴",
+   "叫什么"
+  ],
+  "correct_answer": "贵姓",
+  "explanation": "Багшаас овог асуух — «贵姓».",
+  "order_index": 27,
+  "id": "fazhan-chuji1-l03-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "山田：认识你很高兴。 林娜：认识你我（ ）很高兴。",
+  "options": [
+   "也",
+   "叫",
+   "吗",
+   "姓"
+  ],
+  "correct_answer": "也",
+  "explanation": "Би ч бас — «也».",
+  "order_index": 28,
+  "id": "fazhan-chuji1-l03-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "reading",
+  "question": "山田佑-гийн овог аль нь вэ?",
+  "options": [
+   "田佑",
+   "山田",
+   "佑",
+   "山"
+  ],
+  "correct_answer": "山田",
+  "explanation": "山田佑 = овог 山田 + нэр 佑.",
+  "order_index": 29,
+  "id": "fazhan-chuji1-l03-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Багшаас овгийг нь хүндэтгэлтэй асуух:",
+  "options": [
+   "老师，姓什么？",
+   "老师，我贵姓？",
+   "老师，你叫姓？",
+   "老师，您贵姓？"
+  ],
+  "correct_answer": "老师，您贵姓？",
+  "explanation": "«您贵姓».",
+  "order_index": 30,
+  "id": "fazhan-chuji1-l03-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Шинэ танил: «认识你很高兴。» Хариулах:",
+  "options": [
+   "我姓你。",
+   "下课！",
+   "认识你我也很高兴。",
+   "三、四、十。"
+  ],
+  "correct_answer": "认识你我也很高兴。",
+  "explanation": "«也» ашиглан.",
+  "order_index": 31,
+  "id": "fazhan-chuji1-l03-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаасаа нэрийг нь асуух:",
+  "options": [
+   "你叫什么名字？",
+   "你姓名字什么？",
+   "你什么叫？",
+   "你贵姓名字？"
+  ],
+  "correct_answer": "你叫什么名字？",
+  "explanation": "叫 + 什么 + 名字.",
+  "order_index": 32,
+  "id": "fazhan-chuji1-l03-q32",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]
