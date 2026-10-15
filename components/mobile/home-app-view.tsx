@@ -43,6 +43,7 @@ import "@/components/helzui/helzui-course.css";
 import { tr } from "@/lib/i18n/translate";
 import { getUiLocale, useUiLocale } from "@/lib/i18n/ui-locale";
 import type { LessonContent } from "@/types/lesson-content";
+import type { HelzuiHomeSummary } from "@/lib/helzui/home-summary";
 
 type Props = {
   catalog: MobileCourseCatalogEntry[];
@@ -50,6 +51,7 @@ type Props = {
   fazhanCatalog: MobileCourseCatalogEntry[];
   fazhanDefaultChipId: string;
   libraryPreview: LibraryPreviewItem[];
+  helzuiSummary: HelzuiHomeSummary;
 };
 
 type BookSeries = "standard" | "fazhan";
@@ -67,6 +69,7 @@ export function HomeAppView({
   defaultChipId,
   fazhanCatalog,
   libraryPreview,
+  helzuiSummary,
 }: Props) {
   const locale = useUiLocale();
   const {
@@ -260,42 +263,48 @@ export function HomeAppView({
   const lessonIds = useMemo(() => lessons.map((l) => l.id), [lessons]);
 
   useEffect(() => {
+    let alive = true;
     async function load() {
       let isLoggedIn = false;
       if (hasSupabaseConfig) {
         const { data } = await getCurrentUser();
+        if (!alive) return;
         isLoggedIn = Boolean(data);
         setLoggedIn(isLoggedIn);
         setDisplayName(data?.email?.split("@")[0] ?? "Суралцагч");
       }
-      const retention = await getStreakUnified();
+      // Урьд нь 4 дуудлага дараалж (streak → continue → progress → bichleg) явдаг байсан —
+      // бие биенээсээ хамаарахгүй тул зэрэг явуулна (нэг roundtrip-ийн хугацаа).
+      const [retention, cont, progress, clip] = await Promise.all([
+        getStreakUnified().catch(() => null),
+        lessonIds.length > 0
+          ? resolveContinueLearning(lessonIds).catch(() => null)
+          : Promise.resolve(null),
+        allLessonIds.length > 0
+          ? getLessonProgressMapSmart(allLessonIds).catch(() => null)
+          : Promise.resolve(null),
+        isLoggedIn ? fetchBichlegContinueTargetClient().catch(() => null) : Promise.resolve(null),
+      ]);
+      if (!alive) return;
       setStreak(retention?.currentStreak ?? 0);
-      if (lessonIds.length > 0) {
-        const cont = await resolveContinueLearning(lessonIds);
-        if (cont) {
-          setContinueHref(cont.href);
-          const lesson = lessons.find((l) => l.id === cont.lessonId);
-          setContinueTitle(
-            lesson
-              ? getUiLocale() === "zh" && lesson.chineseTitle
-                ? lesson.chineseTitle
-                : `${lesson.chineseTitle} · ${lesson.title}`
-              : `Хичээл ${cont.lessonId}`
-          );
-        }
+      if (cont) {
+        setContinueHref(cont.href);
+        const lesson = lessons.find((l) => l.id === cont.lessonId);
+        setContinueTitle(
+          lesson
+            ? getUiLocale() === "zh" && lesson.chineseTitle
+              ? lesson.chineseTitle
+              : `${lesson.chineseTitle} · ${lesson.title}`
+            : `Хичээл ${cont.lessonId}`
+        );
       }
-      if (allLessonIds.length > 0) {
-        const { byLesson } = await getLessonProgressMapSmart(allLessonIds);
-        setStatusByLesson(byLesson);
-      }
-      if (isLoggedIn) {
-        const clip = await fetchBichlegContinueTargetClient();
-        setBichlegContinue(clip);
-      } else {
-        setBichlegContinue(null);
-      }
+      if (progress) setStatusByLesson(progress.byLesson);
+      setBichlegContinue(isLoggedIn ? clip : null);
     }
     void load();
+    return () => {
+      alive = false;
+    };
   }, [lessonIds, lessons, allLessonIds]);
 
   // Ангийн заавал хөтөлбөр (066) — байвал нэг жижиг карт. Алдаа гарвал чимээгүй нууна.
@@ -549,7 +558,7 @@ export function HomeAppView({
         <div className="px-3 pb-3 pt-1">
           <LibraryPreviewRow items={libraryPreview} />
           <DailyToneHomeCard />
-          {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
+          {selectedLang !== "ko" ? <HelzuiHomeCard summary={helzuiSummary} /> : null}
         </div>
       </details>
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Hsk30ExamplesList } from "@/components/hsk30-durem/hsk30-examples-list";
 import { Hsk30QuizBlock } from "@/components/hsk30-durem/hsk30-quiz-block";
 import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
-import { hsk30LevelHref } from "@/lib/hsk30-durem/load-course";
+import { hsk30LevelHref } from "@/lib/hsk30-durem/hrefs";
 import { highlightZh } from "@/lib/text/highlight-zh";
 import type { Hsk30Point } from "@/types/hsk30-durem";
 

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { startDomTranslator } from "@/lib/i18n/dom-translator";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 
 function unhide() {
@@ -22,13 +21,21 @@ export function UiTranslator() {
     }
     let stop: (() => void) | null = null;
     let started = false;
+    let cancelled = false;
+    // zh-ui-auto (405KB) + dom-translator-ыг зөвхөн zh үед л татна (mn хэрэглэгч ачаалахгүй).
+    const modPromise = import("@/lib/i18n/dom-translator");
     const start = () => {
       if (started) return;
       started = true;
       // load-ын дараа сүүлийн hydration commit-ыг нэг tick хүлээнэ
       setTimeout(() => {
-        stop = startDomTranslator();
-        unhide();
+        modPromise
+          .then((mod) => {
+            if (cancelled) return;
+            stop = mod.startDomTranslator();
+          })
+          .catch(() => {})
+          .finally(unhide);
       }, 30);
     };
     if (document.readyState === "complete") start();
@@ -36,6 +43,7 @@ export function UiTranslator() {
     // Хамгаалалт: load удвал ч 2.5с-ийн дараа эхэлнэ
     const guard = setTimeout(start, 2500);
     return () => {
+      cancelled = true;
       clearTimeout(guard);
       window.removeEventListener("load", start);
       stop?.();

@@ -7,7 +7,7 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { buildHsk30SearchEntries } from "@/lib/grammar/grammar-search";
-import { hsk30LevelHref } from "@/lib/hsk30-durem/load-course";
+import { hsk30LevelHref } from "@/lib/hsk30-durem/hrefs";
 import type { Hsk30DuremCourse } from "@/types/hsk30-durem";
 
 type Props = {

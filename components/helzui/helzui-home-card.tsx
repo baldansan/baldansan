@@ -1,28 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import { getHelzuiCourse } from "@/lib/helzui/load-course";
+import type { HelzuiHomeSummary } from "@/lib/helzui/home-summary";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 
 export const HELZUI_COURSE_ID = "helzui-suuri";
 export const HELZUI_CATEGORY_LABEL = "Заавал сурах";
 
-export function helzuiCourseSummary() {
-  const course = getHelzuiCourse();
-  return {
-    id: course.courseId,
-    title: course.title,
-    subtitle: course.subtitle ?? "",
-    category: course.category,
-    moduleCount: course.modules.length,
-    href: "/courses/helzui-suuri",
-  };
-}
-
-export function HelzuiHomeCard() {
+/**
+ * Хэлзүйн суурь курсын карт. `summary`-г сервер (app/home/page.tsx → lib/helzui/home-summary)
+ * тооцоолж өгнө — урьд нь 164KB helzui-suuri.json бүхэлдээ home-ийн client bundle-д ордог байв.
+ */
+export function HelzuiHomeCard({ summary }: { summary: HelzuiHomeSummary }) {
   const locale = useUiLocale();
-  const summary = helzuiCourseSummary();
   return (
     <section className="mb-4">
       <h2 className="mb-2 text-xs font-bold uppercase tracking-wide text-[var(--app-muted)]">

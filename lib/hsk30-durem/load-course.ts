@@ -1,8 +1,12 @@
 import courseData from "@/src/data/hsk30-durem.json";
 import type { Hsk30DuremCourse, Hsk30Level, Hsk30Point } from "@/types/hsk30-durem";
 
-export const HSK30_DUREM_COURSE_ID = "hsk30-durem";
-export const HSK30_REVIEW_BASE = "/review/grammar/hsk30";
+export {
+  HSK30_DUREM_COURSE_ID,
+  HSK30_REVIEW_BASE,
+  hsk30LevelHref,
+  hsk30PointHref,
+} from "./hrefs";
 
 export const hsk30Course = courseData as Hsk30DuremCourse;
 
@@ -25,10 +29,3 @@ export function getHsk30Point(
   return { level, point };
 }
 
-export function hsk30LevelHref(levelId: string): string {
-  return `${HSK30_REVIEW_BASE}/${levelId}`;
-}
-
-export function hsk30PointHref(levelId: string, pointId: string): string {
-  return `${HSK30_REVIEW_BASE}/${levelId}/${pointId}`;
-}
