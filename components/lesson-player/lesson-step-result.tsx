@@ -4,6 +4,8 @@ import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { getMyLessonBest, type MyLessonBest } from "@/lib/student/records";
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { lessonTrainingPath } from "@/lib/content";
@@ -37,6 +39,27 @@ export function LessonStepResult({
   srsSeed = null,
 }: Props) {
   const locale = useUiLocale();
+  // Ангид бүртгэлтэй сурагчид л: дээд оноо + оролдлогын тоо (жирийн хэрэглэгчид null).
+  const [bestRecord, setBestRecord] = useState<MyLessonBest | null>(null);
+  useEffect(() => {
+    if (quizTotal <= 0 || adminPreview) return;
+    let off = false;
+    const load = () =>
+      getMyLessonBest(lessonId)
+        .then((r) => {
+          if (!off) setBestRecord(r);
+        })
+        .catch(() => {
+          /* чимээгүй */
+        });
+    void load();
+    // Дасгалын дүн серверт бичигдэхийг хүлээгээд нэг удаа дахин уншина.
+    const t = window.setTimeout(() => void load(), 2500);
+    return () => {
+      off = true;
+      window.clearTimeout(t);
+    };
+  }, [lessonId, quizTotal, adminPreview]);
   const quizPercent =
     quizTotal > 0 ? Math.round((quizCorrect / quizTotal) * 100) : 100;
   const srsTotal = srsSeed ? srsSeed.added + srsSeed.already : 0;
@@ -79,6 +102,11 @@ export function LessonStepResult({
         ) : null}
         {!simplified ? (
           <p className="mt-2 text-lg font-bold text-emerald-600">+{xp} XP</p>
+        ) : null}
+        {bestRecord && !adminPreview ? (
+          <p className="mt-2 text-sm font-semibold text-slate-700">
+            Таны дээд оноо: {bestRecord.bestScorePct}% · {bestRecord.attempts} оролдлого
+          </p>
         ) : null}
         {!simplified && !passed && quizTotal > 0 ? (
           <p className="mt-2 text-sm text-amber-700">

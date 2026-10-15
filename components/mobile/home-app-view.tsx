@@ -45,6 +45,7 @@ import { tr } from "@/lib/i18n/translate";
 import { getUiLocale, useUiLocale } from "@/lib/i18n/ui-locale";
 import type { LessonContent } from "@/types/lesson-content";
 import type { HelzuiHomeSummary } from "@/lib/helzui/home-summary";
+import { OpenClassQuizBanner } from "@/components/student/open-class-quiz-banner";
 
 type Props = {
   catalog: MobileCourseCatalogEntry[];
@@ -505,6 +506,8 @@ export function HomeAppView({
           </span>
         </Link>
       ) : null}
+
+      <OpenClassQuizBanner />
 
       {activeCourse?.available && lessonIds.length > 0 ? (
         <Link href={continueHref} className="bs-tm-continue">

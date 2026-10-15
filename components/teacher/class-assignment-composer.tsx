@@ -14,15 +14,27 @@ import {
   type AssignableLesson,
 } from "@/lib/supabase/content";
 
+/** Самбараас (сул тал, алдсан асуулт) даалгаврыг урьдчилан бөглөх зорилготой. */
+export type ComposerPrefill = {
+  /** Өөрчлөгдөх бүрт composer дахин бөглөгдөнө. */
+  key: number;
+  studentUserIds: string[];
+  lessonId?: string | null;
+  assignmentType?: string;
+  title?: string;
+  instructions?: string;
+};
+
 type Props = {
   classroomId: string;
   onCreated?: () => void;
+  prefill?: ComposerPrefill | null;
+  /** Өгвөл зөвхөн эдгээр сурагчид онилно (сурагчийн дэлгэрэнгүй хуудас). */
+  lockedStudentIds?: string[];
+  lockedLabel?: string;
 };
 
 type Mode = "lesson" | "custom";
-
-/** «Бүх анги» сонголтын утга — сурагчийн ID-тай давхцахгүй. */
-const WHOLE_CLASS = "";
 
 const ASSIGNMENT_TYPE_LABELS: Record<string, string> = {
   full_lesson: "Бүтэн хичээл",
@@ -32,7 +44,13 @@ const ASSIGNMENT_TYPE_LABELS: Record<string, string> = {
   review: "Давталт",
 };
 
-export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
+export function ClassAssignmentComposer({
+  classroomId,
+  onCreated,
+  prefill = null,
+  lockedStudentIds,
+  lockedLabel,
+}: Props) {
   const [mode, setMode] = useState<Mode>("lesson");
   const [lessons, setLessons] = useState<AssignableLesson[]>([]);
   const [lessonsError, setLessonsError] = useState<string | null>(null);
@@ -42,7 +60,8 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
   const [titleTouched, setTitleTouched] = useState(false);
   const [instructions, setInstructions] = useState("");
   const [dueDate, setDueDate] = useState("");
-  const [targetStudentUserId, setTargetStudentUserId] = useState(WHOLE_CLASS);
+  // Хоосон = бүх анги. Утгатай = сонгосон сурагч бүрт тусдаа даалгавар үүснэ.
+  const [targetIds, setTargetIds] = useState<string[]>(lockedStudentIds ?? []);
   const [students, setStudents] = useState<ClassroomStudent[]>([]);
   const [attachment, setAttachment] = useState<File | null>(null);
   // Даалгавар амжилттай үүссэний дараа file input-ыг цэвэрлэхэд ашиглана.
@@ -87,6 +106,26 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
     };
   }, [classroomId]);
 
+  useEffect(() => {
+    if (!prefill) return;
+    setTargetIds(prefill.studentUserIds);
+    if (prefill.lessonId) {
+      setMode("lesson");
+      setLessonId(prefill.lessonId);
+    } else {
+      setMode("custom");
+    }
+    if (prefill.assignmentType) setAssignmentType(prefill.assignmentType);
+    if (prefill.title != null) {
+      setTitle(prefill.title);
+      setTitleTouched(true);
+    }
+    if (prefill.instructions != null) setInstructions(prefill.instructions);
+    setNotice(null);
+    setError(null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [prefill?.key]);
+
   const groupedLessons = useMemo(() => {
     const groups = new Map<string, AssignableLesson[]>();
     for (const lesson of lessons) {
@@ -104,12 +143,22 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
   );
 
   const targetLabel = useMemo(() => {
-    if (!targetStudentUserId) return "";
-    const found = students.find(
-      (s) => s.studentUserId === targetStudentUserId
+    if (lockedStudentIds && lockedLabel) return lockedLabel;
+    if (targetIds.length === 0) return "";
+    const names = targetIds.map((id) => {
+      const found = students.find((s) => s.studentUserId === id);
+      return found?.displayName ?? found?.email ?? "сурагч";
+    });
+    return names.length <= 3
+      ? names.join(", ")
+      : `${names.slice(0, 3).join(", ")} болон бусад ${names.length - 3}`;
+  }, [students, targetIds, lockedStudentIds, lockedLabel]);
+
+  function toggleTarget(id: string) {
+    setTargetIds((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
     );
-    return found?.displayName ?? found?.email ?? "сонгосон";
-  }, [students, targetStudentUserId]);
+  }
 
   // Багш гарчгаа гараар бичээгүй байвал сонгосон хичээлээр санал болгоно.
   const effectiveTitle =
@@ -127,34 +176,53 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
     setError(null);
     setNotice(null);
 
-    const { data, error: createError } = await createAssignment({
-      classroomId,
-      // Хичээл хавсраагүй даалгаварт NULL бичнэ — хиймэл 'custom' утга хэрэггүй.
-      lessonId: mode === "lesson" ? lessonId : null,
-      assignmentType: mode === "lesson" ? assignmentType : "review",
-      title: effectiveTitle,
-      instructions,
-      dueDate: dueDate || undefined,
-      targetStudentUserId: targetStudentUserId || null,
-      attachment,
-    });
+    const recipients: (string | null)[] =
+      targetIds.length > 0 ? targetIds : [null];
+    let created = 0;
+    let firstTitle = effectiveTitle.trim();
+    let failure: string | null = null;
+    let attachmentWarning: string | null = null;
+
+    // Сурагч бүрт тусдаа мөр (target_student_user_id) — бусад сурагчид харагдахгүй.
+    for (const target of recipients) {
+      const { data, error: createError } = await createAssignment({
+        classroomId,
+        // Хичээл хавсраагүй даалгаварт NULL бичнэ — хиймэл 'custom' утга хэрэггүй.
+        lessonId: mode === "lesson" ? lessonId : null,
+        assignmentType: mode === "lesson" ? assignmentType : "review",
+        title: effectiveTitle,
+        instructions,
+        dueDate: dueDate || undefined,
+        targetStudentUserId: target,
+        attachment,
+      });
+      if (!data) {
+        failure = createError ?? "Даалгавар үүсгэж чадсангүй.";
+        break;
+      }
+      created += 1;
+      firstTitle = data.title;
+      if (createError) attachmentWarning = createError;
+    }
 
     setSaving(false);
-    if (!data) {
-      setError(createError ?? "Даалгавар үүсгэж чадсангүй.");
+    if (created === 0) {
+      setError(failure ?? "Даалгавар үүсгэж чадсангүй.");
       return;
     }
-    if (createError) {
+    if (failure) {
+      setError(`${created} сурагчид өгсөн ч үлдсэнд алдаа гарлаа: ${failure}`);
+    } else if (attachmentWarning) {
       // Даалгавар үүссэн ч хавсралт байршуулахад алдаа гарсан тохиолдол.
-      setError(`Даалгавар үүссэн ч файл хавсаргаж чадсангүй: ${createError}`);
+      setError(`Даалгавар үүссэн ч файл хавсаргаж чадсангүй: ${attachmentWarning}`);
     } else {
       setError(null);
     }
 
     setNotice(
-      targetStudentUserId
-        ? `«${data.title}» даалгаврыг ${targetLabel} сурагчид өглөө. Ангийн бусад сурагчид энэ даалгавар харагдахгүй.`
-        : `«${data.title}» даалгаврыг ангид өглөө.`
+      targetIds.length > 0
+        ? `«${firstTitle}» даалгаврыг ${targetLabel} (${created} сурагч)-д өглөө. Ангийн бусад сурагчид харагдахгүй.`
+        : `«${firstTitle}» даалгаврыг ангид өглөө.`
     );
     setTitle("");
     setTitleTouched(false);
@@ -162,7 +230,7 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
     setDueDate("");
     setAttachment(null);
     setAttachmentResetKey((k) => k + 1);
-    setTargetStudentUserId(WHOLE_CLASS);
+    setTargetIds(lockedStudentIds ?? []);
     onCreated?.();
   }
 
@@ -294,31 +362,75 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
         />
       </label>
 
-      <label className="flex flex-col gap-1 text-sm">
-        <span className="font-medium text-slate-700">Хэнд өгөх</span>
-        <select
-          value={targetStudentUserId}
-          onChange={(e) => setTargetStudentUserId(e.target.value)}
-          className="rounded-lg border border-slate-200 px-3 py-2"
-        >
-          <option value={WHOLE_CLASS}>Бүх анги</option>
-          {students.map((s) => (
-            <option key={s.id} value={s.studentUserId ?? ""}>
-              {s.displayName ?? s.email ?? "Сурагч"}
-            </option>
-          ))}
-        </select>
-      </label>
-
-      {targetStudentUserId ? (
+      {lockedStudentIds ? (
         <p className="rounded-lg bg-emerald-50 px-3 py-2 text-xs text-emerald-900 ring-1 ring-emerald-200">
-          Энэ даалгавар болон хавсралтыг зөвхөн {targetLabel} харна. Ангийн
-          бусад сурагчид гарчиг нь ч харагдахгүй.
+          Энэ даалгавар зөвхөн {targetLabel || "сонгосон сурагч"}-д харагдана.
         </p>
       ) : (
-        <p className="rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600">
-          Ангийн бүх сурагч энэ даалгаврыг харна.
-        </p>
+        <>
+          <fieldset className="flex flex-col gap-2 text-sm">
+            <legend className="font-medium text-slate-700">Хэнд өгөх</legend>
+            <div className="flex flex-wrap gap-2">
+              <button
+                type="button"
+                onClick={() => setTargetIds([])}
+                className={`rounded-full px-4 py-1.5 text-xs font-semibold ${
+                  targetIds.length === 0
+                    ? "bg-emerald-500 text-white"
+                    : "border border-slate-200 text-slate-600"
+                }`}
+              >
+                Бүх анги
+              </button>
+              <button
+                type="button"
+                onClick={() =>
+                  setTargetIds((prev) =>
+                    prev.length > 0 ? prev : students[0]?.studentUserId ? [students[0].studentUserId] : prev
+                  )
+                }
+                disabled={students.length === 0}
+                className={`rounded-full px-4 py-1.5 text-xs font-semibold disabled:opacity-50 ${
+                  targetIds.length > 0
+                    ? "bg-emerald-500 text-white"
+                    : "border border-slate-200 text-slate-600"
+                }`}
+              >
+                Сонгосон сурагчид{targetIds.length > 0 ? ` (${targetIds.length})` : ""}
+              </button>
+            </div>
+            {targetIds.length > 0 ? (
+              <ul className="grid max-h-56 gap-1 overflow-y-auto rounded-lg border border-slate-200 p-2 sm:grid-cols-2">
+                {students.map((s) => {
+                  const id = s.studentUserId ?? "";
+                  return (
+                    <li key={s.id}>
+                      <label className="flex cursor-pointer items-center gap-2 rounded px-2 py-1 hover:bg-slate-50">
+                        <input
+                          type="checkbox"
+                          checked={targetIds.includes(id)}
+                          onChange={() => toggleTarget(id)}
+                        />
+                        <span className="truncate">{s.displayName ?? s.email ?? "Сурагч"}</span>
+                      </label>
+                    </li>
+                  );
+                })}
+              </ul>
+            ) : null}
+          </fieldset>
+
+          {targetIds.length > 0 ? (
+            <p className="rounded-lg bg-emerald-50 px-3 py-2 text-xs text-emerald-900 ring-1 ring-emerald-200">
+              Сурагч бүрт тусдаа даалгавар үүснэ — зөвхөн {targetLabel} харна. Ангийн бусад
+              сурагчид гарчиг нь ч харагдахгүй.
+            </p>
+          ) : (
+            <p className="rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600">
+              Ангийн бүх сурагч энэ даалгаврыг харна.
+            </p>
+          )}
+        </>
       )}
 
       {students.length === 0 ? (
@@ -351,7 +463,11 @@ export function ClassAssignmentComposer({ classroomId, onCreated }: Props) {
         disabled={saving}
         className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-600 disabled:opacity-60"
       >
-        {saving ? "Өгч байна…" : "Ангид даалгавар өгөх"}
+        {saving
+          ? "Өгч байна…"
+          : targetIds.length > 0
+            ? `${targetIds.length} сурагчид даалгавар өгөх`
+            : "Ангид даалгавар өгөх"}
       </button>
 
       <p className="text-xs text-slate-500">

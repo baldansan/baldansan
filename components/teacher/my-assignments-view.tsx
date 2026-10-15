@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { PublicPageShell } from "@/components/public-page-shell";
+import { MyRecordsLink, OpenClassQuizBanner } from "@/components/student/open-class-quiz-banner";
 import { AssignmentAttachmentLink } from "@/components/teacher/assignment-attachment-link";
 import { MyCurriculumSection } from "@/components/teacher/my-curriculum-section";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
@@ -101,6 +102,9 @@ export function MyAssignmentsView() {
           Багшийн танд өгсөн даалгаврууд
         </p>
       </section>
+
+      <OpenClassQuizBanner />
+      <MyRecordsLink />
 
       <MyCurriculumSection classes={curriculum} />
       {curriculum.length > 0 && assignments.length > 0 ? (
