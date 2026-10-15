@@ -7,7 +7,10 @@ import {
 } from "@/lib/lesson-id";
 import { mapLessonReleaseFields } from "@/lib/supabase/lesson-release-map";
 import { normalizePublishStatus } from "@/lib/lesson-publish";
-import { enrichLessonContentMeta } from "@/lib/lesson-content-type";
+import {
+  enrichLessonContentMeta,
+  isLessonContentType,
+} from "@/lib/lesson-content-type";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { normalizeCourseCoverUrl } from "@/lib/course-cover";
@@ -39,6 +42,18 @@ const LESSON_ROW_SELECT =
 /** Fallback when optional workflow / language / image_url columns are not migrated yet. */
 const LESSON_ROW_SELECT_CORE =
   "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, audio_url, source_note, media_status";
+
+/**
+ * Жагсаалт (каталог, /home, admin list) — `source_note`-ГҮЙ. Тэр багана хичээлийн бүх
+ * агуулгыг (100–300KB/мөр) хадгалдаг тул жагсаалтад татвал /home нэг удаад ~6MB болдог.
+ * contentType/lessonType-ийг DB-ийн `content_type`/`lesson_type` баганаас авна
+ * (064_lessons_content_type_cols.sql — trigger-ээр source_note-оос тооцоолно).
+ */
+const LESSON_ROW_SELECT_LIST =
+  "id, course_id, title, chinese_title, subtitle, description, duration, vocabulary_count, quiz_count, status, order_index, video_url, thumbnail_url, image_url, audio_url, media_status, language, release_status, qa_status, approved_at, approved_by, release_notes, last_reviewed_at, content_type, lesson_type";
+
+/** Жагсаалтын fallback — 064 migration хараахан ажиллаагүй үед (хуучин select, source_note-тэй). */
+const LESSON_ROW_SELECT_LIST_LEGACY = LESSON_ROW_SELECT;
 
 function isMissingColumnSelectError(message: string): boolean {
   const lower = message.toLowerCase();
@@ -83,6 +98,8 @@ type DbLesson = {
   image_url?: string | null;
   audio_url?: string | null;
   source_note?: string | null;
+  content_type?: string | null;
+  lesson_type?: string | null;
   media_status?: string | null;
   release_status?: string | null;
   qa_status?: string | null;
@@ -245,11 +262,15 @@ function mapSubtitleLine(row: DbSubtitleLine) {
 function mapLessonRowToSummary(row: DbLesson): LessonContent {
   const id = canonicalLessonId(row.id);
   const language = row.language?.trim() || undefined;
+  const contentType = row.content_type?.trim().toLowerCase() || undefined;
+  const lessonType = row.lesson_type?.trim().toLowerCase() || undefined;
   return enrichLessonContentMeta(
     {
       id,
       courseId: row.course_id,
       language,
+      ...(contentType && isLessonContentType(contentType) ? { contentType } : {}),
+      ...(lessonType === "prelesson" || lessonType === "lesson" ? { lessonType } : {}),
       title: row.title,
       chineseTitle: row.chinese_title ?? "",
       subtitle: row.subtitle ?? "",
@@ -468,41 +489,27 @@ async function fetchSupabaseLessonsByCourse(
   publicOnly: boolean,
   client: SupabaseClient
 ): Promise<LessonContent[]> {
-  let query = client
-    .from("lessons")
-    .select(LESSON_ROW_SELECT)
-    .eq("course_id", courseId);
-
-  if (publicOnly) {
-    query = query.eq("status", "available");
-  }
-
-  const { data, error } = await query.order("order_index", { ascending: true });
-
-  if (error) {
-    if (isMissingColumnSelectError(error.message)) {
-      // The core-column fallback used to drop the status filter, so any
-      // course on a DB missing an optional column leaked its drafts into
-      // public lists (they showed up locked). Keep publicOnly here too.
-      let fallbackQuery = client
-        .from("lessons")
-        .select(LESSON_ROW_SELECT_CORE)
-        .eq("course_id", courseId);
-      if (publicOnly) {
-        fallbackQuery = fallbackQuery.eq("status", "available");
-      }
-      const { data: fallbackData, error: fallbackError } =
-        await fallbackQuery.order("order_index", { ascending: true });
-
-      if (fallbackError) throw fallbackError;
-      if (!fallbackData?.length) return [];
-      return (fallbackData as DbLesson[]).map(mapLessonRowToSummary);
+  const run = (select: string) => {
+    let query = client.from("lessons").select(select).eq("course_id", courseId);
+    if (publicOnly) {
+      query = query.eq("status", "available");
     }
-    throw error;
+    return query.order("order_index", { ascending: true });
+  };
+
+  // 1) source_note-гүй хөнгөн select → 2) 064 migration байхгүй бол хуучин select
+  // → 3) workflow/language баганууд ч байхгүй бол core select.
+  let { data, error } = await run(LESSON_ROW_SELECT_LIST);
+  if (error && isMissingColumnSelectError(error.message)) {
+    ({ data, error } = await run(LESSON_ROW_SELECT_LIST_LEGACY));
   }
+  if (error && isMissingColumnSelectError(error.message)) {
+    ({ data, error } = await run(LESSON_ROW_SELECT_CORE));
+  }
+  if (error) throw error;
   if (!data?.length) return [];
 
-  return (data as DbLesson[]).map(mapLessonRowToSummary);
+  return (data as unknown as DbLesson[]).map(mapLessonRowToSummary);
 }
 
 type ResolvedLessonRow = {
