@@ -111,7 +111,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   themeColor: "#1FB85A",
   /** Light-only design — opts the page out of Chrome's auto dark mode. */
-  colorScheme: "light",
+  colorScheme: "only light",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
