@@ -93,6 +93,9 @@ export async function getTodayGoalProgressUnified(): Promise<LearningRetentionSu
   return getStreakUnified();
 }
 
+/** Нэг вкладад streak бонусыг өдөрт нэг л удаа илгээнэ. */
+let streakBonusSentDay = "";
+
 export async function getStreakUnified(): Promise<LearningRetentionSummary> {
   bootstrapRetentionFromProgressIfEmpty();
   const local = getLocalRetentionSummary();
@@ -107,6 +110,19 @@ export async function getStreakUnified(): Promise<LearningRetentionSummary> {
     if (error || !data) {
       console.warn("[retention] Supabase summary fetch failed; using local.", error);
       return local;
+    }
+
+    // Оноо: өнөөдөр идэвхтэй байсан бол өдрийн бонус (сервер өдөрт нэг удаа).
+    const t = data.today;
+    const dayKey = new Date().toISOString().slice(0, 10);
+    if (
+      streakBonusSentDay !== dayKey &&
+      t.lessonEvents + t.wordEvents + t.quizEvents + t.reviewEvents > 0
+    ) {
+      streakBonusSentDay = dayKey;
+      void import("@/lib/points/award").then(({ awardPoints }) =>
+        awardPoints("streak_bonus", null, 10, { label: "Өдөр тутмын бонус" })
+      );
     }
 
     return data;

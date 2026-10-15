@@ -1,3 +1,5 @@
+import { awardPoints } from "@/lib/points/award";
+import { POINT_VALUES } from "@/lib/points/points-config";
 import {
   activeLevelToCatalogLevel,
   type ActiveHskLevel,
@@ -316,6 +318,9 @@ export async function rateWordSrs(
   if (error) {
     return { data: null, error: error.message };
   }
+
+  // Оноо: карт бүр 1 оноо (сервер өдөрт 50-аар хязгаарлана).
+  awardPoints("srs_review", null, POINT_VALUES.srsPerCard);
 
   return { data: data as WordSrsRow, error: null };
 }

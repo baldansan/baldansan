@@ -1,5 +1,7 @@
 import { isVideoWatchCompleted } from "@/lib/bichleg/video-progress-utils";
 import type { BichlegContinueTarget, UserVideoProgress } from "@/lib/bichleg/types";
+import { awardPoints } from "@/lib/points/award";
+import { POINT_VALUES } from "@/lib/points/points-config";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -56,6 +58,17 @@ export async function upsertVideoWatchProgress(input: {
     .upsert(row, { onConflict: "user_id,video_id" });
 
   if (error) return { ok: false };
+
+  // Оноо: шинээр дууссан бүтэн минут бүр 2 оноо (сервер өдөр/видео бүрт 30-аар хязгаарлана).
+  const newMinutes = Math.floor(newWatched / 60) - Math.floor(prevWatched / 60);
+  if (newMinutes > 0) {
+    awardPoints(
+      "video_minutes",
+      input.videoId,
+      newMinutes * POINT_VALUES.videoPerMinute,
+      { videoId: input.videoId, minutes: newMinutes }
+    );
+  }
 
   return {
     ok: true,

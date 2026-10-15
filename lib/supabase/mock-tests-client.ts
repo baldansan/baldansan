@@ -4,6 +4,8 @@ import {
   type WritingSelfGrade,
 } from "@/lib/mock-test/hsk-scoring";
 import type { MockTestExamMode, MockTestScoreResult } from "@/lib/mock-test/types";
+import { awardPoints } from "@/lib/points/award";
+import { examPoints } from "@/lib/points/points-config";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
 export async function saveCheckpointAttempt(
@@ -59,6 +61,14 @@ export async function saveCheckpointAttempt(
       .insert(responses);
     if (respErr) return { ok: false, error: respErr.message };
   }
+
+  // Оноо: шалгалт бүр нэг удаа (тэнцсэн бол 100 + оноо%).
+  const percent = hsk.maxTotal > 0 ? (hsk.totalScore / hsk.maxTotal) * 100 : 0;
+  awardPoints("exam", String(attempt.id), examPoints(percent, percent >= 60), {
+    label: testId,
+    testId,
+    percent: Math.round(percent),
+  });
 
   return { ok: true };
 }

@@ -5,6 +5,8 @@
  * localStorage stays the source of truth for the UI.
  */
 
+import { awardPoints } from "@/lib/points/award";
+import { gamePoints, POINT_VALUES } from "@/lib/points/points-config";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -26,7 +28,7 @@ export function recordGameResultRemote(result: GameResultRecord): void {
     try {
       const { userId } = await getAuthenticatedUserId();
       if (!userId) return;
-      await client.from("user_game_results").insert({
+      const { error: insertError } = await client.from("user_game_results").insert({
         user_id: userId,
         game_type: result.gameType,
         lesson_id: result.lessonId ?? "",
@@ -36,6 +38,14 @@ export function recordGameResultRemote(result: GameResultRecord): void {
         accuracy: Math.round(Number(result.accuracy) || 0),
         played_at: result.playedAt || new Date().toISOString(),
       });
+      if (!insertError && result.total > 0) {
+        awardPoints(
+          "game",
+          `${result.gameType}:${result.playedAt || Date.now()}`,
+          gamePoints(result.accuracy),
+          { label: result.gameType, lessonId: result.lessonId, accuracy: result.accuracy }
+        );
+      }
     } catch {
       // silent — analytics must not affect learner UX
     }
@@ -55,12 +65,16 @@ export function recordWritingCharRemote(char: string): void {
     try {
       const { userId } = await getAuthenticatedUserId();
       if (!userId) return;
-      await client
+      const { error: upsertError } = await client
         .from("user_writing_chars")
         .upsert(
           { user_id: userId, char: trimmed },
           { onConflict: "user_id,char", ignoreDuplicates: true }
         );
+      if (!upsertError) {
+        // Иероглиф бүр нэг удаа 2 оноо (сервер ref_id=char-аар давхардлыг хаана).
+        awardPoints("writing", trimmed, POINT_VALUES.writingChar, { label: trimmed });
+      }
     } catch {
       // silent
     }

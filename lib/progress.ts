@@ -493,6 +493,11 @@ export async function markLessonCompletedSmart(
       "[progress] Supabase lesson completed write failed; local saved.",
       error
     );
+  } else {
+    // Оноо: хичээл бүр нэг удаа (сервер идемпотент).
+    void import("@/lib/points/award").then(({ awardPoints }) =>
+      awardPoints("lesson_complete", lessonId, 50, { label: lessonId, lessonId })
+    );
   }
 
   if (reviewOptions) {

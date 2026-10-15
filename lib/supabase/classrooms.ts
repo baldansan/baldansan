@@ -1210,6 +1210,43 @@ export async function getAssignmentResults(
   return { data: (data ?? []).map(mapAssignmentResult), error: null };
 }
 
+/**
+ * Оноо: сурагч өөрөө даалгавраа дуусгахад (багш тэмдэглэхэд биш).
+ * Хугацаандаа бол 30, хоцорсон бол 10. Сервер assignmentId-аар давхардлыг хаана.
+ */
+function awardAssignmentPoints(input: {
+  assignmentId: string;
+  studentUserId: string;
+  status?: string;
+}): void {
+  if (!supabase || (input.status ?? "completed") !== "completed") return;
+  const client = supabase;
+  void (async () => {
+    try {
+      const { data: auth } = await client.auth.getUser();
+      if (!auth.user || auth.user.id !== input.studentUserId) return;
+      const { data: a } = await client
+        .from("assignments")
+        .select("due_date, title")
+        .eq("id", input.assignmentId)
+        .maybeSingle();
+      const due = a?.due_date ? String(a.due_date) : null;
+      const today = new Date().toISOString().slice(0, 10);
+      const onTime = !due || today <= due;
+      const { awardPoints } = await import("@/lib/points/award");
+      const { POINT_VALUES } = await import("@/lib/points/points-config");
+      awardPoints(
+        "assignment",
+        input.assignmentId,
+        onTime ? POINT_VALUES.assignmentOnTime : POINT_VALUES.assignmentLate,
+        { label: a?.title ?? "Даалгавар", onTime }
+      );
+    } catch (err) {
+      console.warn("[points] assignment award skipped.", err);
+    }
+  })();
+}
+
 export async function upsertAssignmentResult(input: {
   assignmentId: string;
   studentUserId: string;
@@ -1248,6 +1285,7 @@ export async function upsertAssignmentResult(input: {
       .select("*")
       .single();
     if (error) return { data: null, error: toError(error) };
+    awardAssignmentPoints(input);
     return { data: mapAssignmentResult(data), error: null };
   }
 
@@ -1258,6 +1296,7 @@ export async function upsertAssignmentResult(input: {
     .single();
 
   if (error) return { data: null, error: toError(error) };
+  awardAssignmentPoints(input);
   return { data: mapAssignmentResult(data), error: null };
 }
 

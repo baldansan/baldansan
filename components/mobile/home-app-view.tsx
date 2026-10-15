@@ -31,6 +31,7 @@ import {
   type LessonStatus,
 } from "@/lib/progress";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
+import { fetchMyPoints } from "@/lib/points/rank";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import {
   filterLessonsByActiveHskLevel,
@@ -83,6 +84,7 @@ export function HomeAppView({
   const [displayName, setDisplayName] = useState("Суралцагч");
   const [loggedIn, setLoggedIn] = useState(false);
   const [streak, setStreak] = useState(0);
+  const [points, setPoints] = useState<number | null>(null);
   const [continueHref, setContinueHref] = useState("/lessons/1");
   const [continueTitle, setContinueTitle] = useState("Хичээл 1");
   const [statusByLesson, setStatusByLesson] = useState<
@@ -275,7 +277,7 @@ export function HomeAppView({
       }
       // Урьд нь 4 дуудлага дараалж (streak → continue → progress → bichleg) явдаг байсан —
       // бие биенээсээ хамаарахгүй тул зэрэг явуулна (нэг roundtrip-ийн хугацаа).
-      const [retention, cont, progress, clip] = await Promise.all([
+      const [retention, cont, progress, clip, pts] = await Promise.all([
         getStreakUnified().catch(() => null),
         lessonIds.length > 0
           ? resolveContinueLearning(lessonIds).catch(() => null)
@@ -284,9 +286,11 @@ export function HomeAppView({
           ? getLessonProgressMapSmart(allLessonIds).catch(() => null)
           : Promise.resolve(null),
         isLoggedIn ? fetchBichlegContinueTargetClient().catch(() => null) : Promise.resolve(null),
+        isLoggedIn ? fetchMyPoints().catch(() => null) : Promise.resolve(null),
       ]);
       if (!alive) return;
       setStreak(retention?.currentStreak ?? 0);
+      setPoints(pts ? pts.total : null);
       if (cont) {
         setContinueHref(cont.href);
         const lesson = lessons.find((l) => l.id === cont.lessonId);
@@ -439,6 +443,15 @@ export function HomeAppView({
                   <span aria-hidden>🔥</span>
                   {streak} {tr(locale, "өдөр дараалан")}
                 </span>
+              ) : null}
+              {loggedIn && points !== null ? (
+                <Link
+                  href="/points"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold ring-1 ring-white/25"
+                >
+                  <span aria-hidden>⭐</span>
+                  {points} {tr(locale, "оноо")}
+                </Link>
               ) : null}
               {!loggedIn ? (
                 <Link

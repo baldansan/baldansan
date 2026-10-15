@@ -3,6 +3,8 @@ import {
 } from "@/lib/analytics/attempt-metrics";
 import { HELZUI_COURSE_ID } from "@/lib/helzui/question-lookup";
 import { HSK30_DUREM_COURSE_ID } from "@/lib/hsk30-durem/load-course";
+import { awardPoints } from "@/lib/points/award";
+import { POINT_VALUES } from "@/lib/points/points-config";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -61,6 +63,16 @@ export function recordQuestionAttempt(input: RecordQuestionAttemptInput): void {
         time_spent_ms: input.timeSpentMs ?? null,
       });
       if (error) return;
+      if (input.isCorrect) {
+        // Оноо: эхний зөв хариулт 5, давтан зөв 1 (асуулт бүрт нэг удаа).
+        const repeat = attemptNumber > 1;
+        awardPoints(
+          "quiz_correct",
+          `${input.lessonId.trim()}:${input.questionId}${repeat ? ":r" : ""}`,
+          repeat ? POINT_VALUES.quizCorrectRepeat : POINT_VALUES.quizCorrectFirst,
+          { lessonId: input.lessonId.trim(), stage: input.stage }
+        );
+      }
     } catch {
       // silent — analytics must not affect learner UX
     }
