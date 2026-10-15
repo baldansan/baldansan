@@ -17,7 +17,7 @@
  * offline-lesson-prefetch нь тэднийг cors горимоор татдаг тул уншигдах
  * (opaque биш) хариу болж кэшэнд ордог.
  */
-const VERSION = "v4";
+const VERSION = "v5";
 const OFFLINE_CACHE = `buunduu-surtsgaay-offline-${VERSION}`;
 const PAGES_CACHE = `buunduu-pages-${VERSION}`;
 const STATIC_CACHE = `buunduu-static-${VERSION}`;
@@ -241,6 +241,12 @@ self.addEventListener("fetch", (event) => {
 
   if (isPublicStorageUrl(url)) {
     event.respondWith(cacheFirst(event.request, MEDIA_CACHE, MEDIA_MAX_ENTRIES));
+    return;
+  }
+
+  // Ханзны зурлагын JSON (jsdelivr, hanzi-writer-data) — хэзээ ч өөрчлөгдөхгүй → cache-first.
+  if (url.hostname === "cdn.jsdelivr.net" && url.pathname.includes("/hanzi-writer-data@")) {
+    event.respondWith(cacheFirst(event.request, STATIC_CACHE, 1500));
     return;
   }
 
