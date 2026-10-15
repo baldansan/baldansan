@@ -200,26 +200,37 @@ export async function getPublicLessonsByCourseId(
   );
 }
 
-async function getPublicLessonSummariesByCourseIdUncached(
-  courseId: string
-): Promise<LessonContent[]> {
-  const lessons = await fetchSupabaseListOnly(
-    `getPublicLessonSummariesByCourseId(${courseId})`,
-    () => getSupabasePublicLessonsByCourseId(courseId)
-  );
-
-  return lessons.map(toLessonListSummary);
-}
+/**
+ * Кэшлэгдэх дотоод хувилбар: Supabase алдаа гарвал [] БУЦААХГҮЙ, throw хийнэ —
+ * unstable_cache нь throw-ыг кэшлэдэггүй тул түр зуурын алдаа (timeout, egress
+ * хязгаар) 120с-ийн турш "хичээлгүй курс" болж хадгалагдахгүй.
+ */
+const getPublicLessonSummariesByCourseIdCached = unstable_cache(
+  async (courseId: string): Promise<LessonContent[]> => {
+    if (!hasSupabaseConfig) return [];
+    const lessons = await getSupabasePublicLessonsByCourseId(courseId);
+    lastContentSource = "supabase";
+    return lessons.map(toLessonListSummary);
+  },
+  ["public-lesson-summaries"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.lessons] }
+);
 
 /**
  * Public course list without vocabulary/quiz payload — for study hub and navigation.
  * Нийтийн дата (status=available, anon клиент) → Data Cache 120с (tag: catalog:lessons).
+ * Алдаа гарвал тухайн render-д л [] (кэшлэгдэхгүй).
  */
-export const getPublicLessonSummariesByCourseId = unstable_cache(
-  getPublicLessonSummariesByCourseIdUncached,
-  ["public-lesson-summaries"],
-  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.lessons] }
-);
+export async function getPublicLessonSummariesByCourseId(
+  courseId: string
+): Promise<LessonContent[]> {
+  try {
+    return await getPublicLessonSummariesByCourseIdCached(courseId);
+  } catch (error) {
+    warnSupabaseFetchFailure(`getPublicLessonSummariesByCourseId(${courseId})`, error);
+    return [];
+  }
+}
 
 /** Admin / internal: all lessons including draft and archived. */
 export async function getLessonsByCourseId(
