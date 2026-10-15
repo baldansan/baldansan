@@ -50,11 +50,11 @@
  {
   "chinese": "会",
   "pinyin": "huì",
-  "mongolian": "мэдэх, чадах (сурсан зүйлээ)",
-  "notes": "үйл үг · гол үг",
-  "exampleChinese": "汉思会英语和法语。",
-  "examplePinyin": "Hànsī huì Yīngyǔ hé Fǎyǔ.",
-  "exampleMongolian": "Ханс англи, франц хэл мэднэ.",
+  "mongolian": "мэдэх, чадах (сурсан зүйлээ); мөн чадна, мэднэ (сурсан арга) · 课文一, 课文三",
+  "notes": "үйл үг/туслах үйл үг · гол үг",
+  "exampleChinese": "汉思会英语和法语。你会不会开车？",
+  "examplePinyin": "Hànsī huì Yīngyǔ hé Fǎyǔ. nǐ huìbuhuì kāi chē?",
+  "exampleMongolian": "Ханс англи, франц хэл мэднэ. Чи машин жолоодож чадах уу?",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
   "orderIndex": 5
@@ -216,18 +216,6 @@
   "orderIndex": 18
  },
  {
-  "chinese": "会",
-  "pinyin": "huì",
-  "mongolian": "чадна, мэднэ (сурсан арга) · 课文三",
-  "notes": "туслах үйл үг · гол үг",
-  "exampleChinese": "你会不会开车？",
-  "examplePinyin": "Nǐ huìbuhuì kāi chē?",
-  "exampleMongolian": "Чи машин жолоодож чадах уу?",
-  "hskLevel": "发展汉语 初级I",
-  "keyWord": true,
-  "orderIndex": 19
- },
- {
   "chinese": "假期",
   "pinyin": "jiàqī",
   "mongolian": "амралтын үе, амралт",
@@ -237,7 +225,7 @@
   "exampleMongolian": "Амралтаар би ч гэртээ харина.",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
-  "orderIndex": 20
+  "orderIndex": 19
  },
  {
   "chinese": "回",
@@ -249,7 +237,7 @@
   "exampleMongolian": "Хичээл тарсны дараа би гэртээ харина.",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
-  "orderIndex": 21
+  "orderIndex": 20
  },
  {
   "chinese": "开",
@@ -261,7 +249,7 @@
   "exampleMongolian": "Би машин жолоодож чамтай хамт зугаалж чадна.",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
-  "orderIndex": 22
+  "orderIndex": 21
  },
  {
   "chinese": "车",
@@ -273,7 +261,7 @@
   "exampleMongolian": "Чи машин жолоодож чадах уу?",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
-  "orderIndex": 23
+  "orderIndex": 22
  },
  {
   "chinese": "陪",
@@ -285,7 +273,7 @@
   "exampleMongolian": "Би машинаар чамтай хамт зугаалж өгч чадна.",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
-  "orderIndex": 24
+  "orderIndex": 23
  },
  {
   "chinese": "帮",
@@ -297,7 +285,7 @@
   "exampleMongolian": "Би чамд нэг машин түрээслэхэд тусалж чадна.",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
-  "orderIndex": 25
+  "orderIndex": 24
  },
  {
   "chinese": "辆",
@@ -309,7 +297,7 @@
   "exampleMongolian": "Би нэг машин худалдаж авмаар байна.",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
-  "orderIndex": 26
+  "orderIndex": 25
  },
  {
   "chinese": "比较",
@@ -321,7 +309,7 @@
   "exampleMongolian": "Машин жолоодох нь харьцангуй амар.",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
-  "orderIndex": 27
+  "orderIndex": 26
  },
  {
   "chinese": "感谢",
@@ -333,7 +321,7 @@
   "exampleMongolian": "Маш их баярлалаа!",
   "hskLevel": "发展汉语 初级I",
   "keyWord": true,
-  "orderIndex": 28
+  "orderIndex": 27
  },
  {
   "chinese": "试衣服",
@@ -345,7 +333,7 @@
   "exampleMongolian": "Би энэ хувцсыг өмсөж үзэж болох уу?",
   "hskLevel": "发展汉语 初级I",
   "keyWord": false,
-  "orderIndex": 29
+  "orderIndex": 28
  },
  {
   "chinese": "打网球",
@@ -357,7 +345,7 @@
   "exampleMongolian": "Чи теннис тоглож чадах уу?",
   "hskLevel": "发展汉语 初级I",
   "keyWord": false,
-  "orderIndex": 30
+  "orderIndex": 29
  },
  {
   "chinese": "下星期一到泰国的航班还有票吗",
@@ -369,7 +357,7 @@
   "exampleMongolian": "Дараа долоо хоногийн даваа гарагийн Тайланд руу нисэх нислэгт билет байгаа юу?",
   "hskLevel": "发展汉语 初级I",
   "keyWord": false,
-  "orderIndex": 31
+  "orderIndex": 30
  },
  {
   "chinese": "我要两张十一号到成都的硬卧",
@@ -381,6 +369,6 @@
   "exampleMongolian": "Би 11-ний өдөр Чэнду руу явах хатуу орны хоёр билет авна.",
   "hskLevel": "发展汉语 初级I",
   "keyWord": false,
-  "orderIndex": 32
+  "orderIndex": 31
  }
 ]
