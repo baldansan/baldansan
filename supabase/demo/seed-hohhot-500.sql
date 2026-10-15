@@ -34,24 +34,15 @@
 --   2013 user_test_attempts   2014 user_quiz_attempts           2015 user_lesson_progress
 --   2016 question_attempts    2017 user_activity_sessions       2018 user_daily_activity
 --   2019 user_game_results    2020 user_video_progress          2021 user_points_ledger
---   2022 chat_rooms
+--   2022 (хуучин: chat_rooms — одоо 074 триггер үүсгэнэ)
 -- Байгууллагын ID: d0000000-0000-4000-8000-200100000001
 --
--- ТЕХНИКИЙН ТЭМДЭГЛЭЛ (яагаад session_replication_role = replica вэ?):
---   Демо хэрэглэгчид auth.users-д БАЙХГҮЙ. Харин question_attempts,
---   user_activity_sessions, user_game_results, user_video_progress,
---   user_test_attempts, user_points_*, chat_* хүснэгтүүдийн user_id нь
---   auth.users-д FOREIGN KEY-тэй. Тиймээс энэ скрипт гүйлгэх хугацаандаа
---   (зөвхөн тухайн transaction-д) session_replication_role = replica болгож
---   FK шалгалт ба триггерийг түр унтраана. Үр дүнд:
---     - user_points_daily / user_points_totals-ийг триггер биш, энэ скрипт
---       өөрөө user_points_ledger-ээс тооцож бөглөнө (071-ийн триггертэй ижил дүн).
---     - Ангийн чат өрөөг (074-ийн триггер) энэ скрипт өөрөө үүсгэнэ
---       (owner_user_id = NULL; чатын гишүүн/топик өрөө үүсгэхгүй — FK-тэй).
---     - user_public_profile-ийг БИЧИХГҮЙ (auth.users-д FK, демо хэрэглэгчид
---       байхгүй) тул «Шилдэг сурагчид» (public) жагсаалтад харагдахгүй.
---       Харин байгууллагын самбар (rank_organization) нэрийг classroom_students-ээс авдаг.
--- =============================================================================
+-- ТЕХНИКИЙН ТЭМДЭГЛЭЛ:
+--   - Демо оюутан/багш бүрт auth.users мөр үүсгэнэ (FK-ийн улмаас заавал). Нууц үг хоосон
+--     тул нэвтрэх боломжгүй; имэйл @demo.buunduu.mn; цэвэрлэх блок устгана.
+--   - user_points_ledger-ийн нэгтгэх триггерийг seed-ийн үед түр зогсоож, daily/totals-ийг
+--     нэг удаа өөрөө тооцно (071-ийн триггертэй ижил дүн), дараа нь буцааж асаана.
+--   - Ангийн чат өрөө, гишүүдийг 074-ийн триггер өөрөө үүсгэнэ.
 
 
 -- =============================================================================
@@ -61,13 +52,6 @@ do $cleanup$
 declare
   v_sql text;
 begin
-  -- FK шалгалт + триггер түр унтраах (зөвхөн энэ transaction-д).
-  begin
-    perform set_config('session_replication_role', 'replica', true);
-  exception when others then
-    raise exception 'session_replication_role=replica тохируулах эрх алга (%). Supabase SQL Editor-ийг postgres эрхээр ажиллуулна уу.', sqlerrm;
-  end;
-
   -- Зөвхөн ЭНЭ seed-ийн төрлийн кодууд (2001–2022). Хуучин seed-ийн 0001–0007 кодод хүрэхгүй.
   foreach v_sql in array array[
     $q$delete from public.user_points_daily  where user_id::text like 'd0000000-0000-4000-8000-2004%'$q$,
@@ -94,7 +78,10 @@ begin
     $q$delete from public.classrooms where id::text like 'd0000000-0000-4000-8000-2003%'$q$,
     $q$delete from public.teacher_profiles where user_id::text like 'd0000000-0000-4000-8000-2002%'$q$,
     $q$delete from public.organization_members where organization_id::text like 'd0000000-0000-4000-8000-2001%' or user_id::text like 'd0000000-0000-4000-8000-2002%'$q$,
-    $q$delete from public.organizations where id::text like 'd0000000-0000-4000-8000-2001%'$q$
+    $q$delete from public.organizations where id::text like 'd0000000-0000-4000-8000-2001%'$q$,
+    $q$delete from public.chat_members where user_id::text like 'd0000000-0000-4000-8000-200[24]%'$q$,
+    $q$delete from public.user_public_profile where user_id::text like 'd0000000-0000-4000-8000-200[24]%'$q$,
+    $q$delete from auth.users where id::text like 'd0000000-0000-4000-8000-200[24]%'$q$
   ] loop
     begin
       execute v_sql;
@@ -103,7 +90,6 @@ begin
     end;
   end loop;
 
-  perform set_config('session_replication_role', 'origin', true);
   raise notice 'Хөх хотын демо өгөгдөл цэвэрлэгдлээ.';
 end $cleanup$;
 
@@ -144,15 +130,9 @@ begin
     raise exception '073 миграц (question_attempts.source) ажиллаагүй байна.';
   end if;
 
-  -- FK шалгалт + триггер түр унтраах (зөвхөн энэ transaction-д; төгсгөлд буцаана).
-  begin
-    perform set_config('session_replication_role', 'replica', true);
-  exception when others then
-    raise exception 'session_replication_role=replica тохируулах эрх алга (%). Supabase SQL Editor-ийг postgres эрхээр ажиллуулна уу.', sqlerrm;
-  end;
-  if current_setting('session_replication_role') <> 'replica' then
-    raise exception 'session_replication_role=replica идэвхжсэнгүй.';
-  end if;
+  -- Оноо нэгтгэх триггерийг түр зогсооно (100 мянган мөр тус бүрд ажиллахгүйн тулд;
+  -- daily/totals-ийг доор нэг удаа өөрөө тооцно). Хүснэгтийн эзэмшигч (postgres) хангалттай.
+  alter table public.user_points_ledger disable trigger user_points_ledger_apply_trg;
 
   -- ------------------------------------------------------------- Туслах функцүүд
   -- (pg_temp: зөвхөн энэ session-д, төгсгөлд устгана)
@@ -674,6 +654,27 @@ begin
     now()
   );
 
+  -- 2.1b Демо хэрэглэгчдийн auth.users мөр (FK-ийн улмаас заавал; нууц үггүй — нэвтрэх боломжгүй)
+  insert into auth.users
+    (id, instance_id, aud, role, email, encrypted_password, email_confirmed_at,
+     raw_app_meta_data, raw_user_meta_data, is_super_admin, created_at, updated_at,
+     confirmation_token, recovery_token, email_change_token_new, email_change,
+     email_change_token_current, phone_change, phone_change_token, reauthentication_token, is_sso_user)
+  select u.id, '00000000-0000-0000-0000-000000000000', 'authenticated', 'authenticated', u.email, '',
+         now() - interval '70 days',
+         '{"provider":"email","providers":["email"],"demo":true}'::jsonb,
+         jsonb_build_object('display_name', u.display_name, 'demo', true),
+         false, now() - interval '70 days', now(),
+         '', '', '', '', '', '', '', '', false
+    from (
+      select c.teacher_id as id, 'bagsh' || c.cls || '@demo.buunduu.mn' as email, c.teacher_name as display_name from _cls c
+      union all
+      select pg_temp.did('2002', 21), 'zahiral@demo.buunduu.mn', 'Д. Гантулга (тэнхимийн эрхлэгч)'
+      union all
+      select s.user_id, 'oyutan' || s.seq || '@demo.buunduu.mn', s.full_name from _s s
+    ) u
+  on conflict (id) do nothing;
+
   -- 2.2 Багш нар (teacher_profiles + organization_members) ба эрхлэгч
   insert into public.teacher_profiles
     (user_id, display_name, organization, role, default_organization_id, created_at, updated_at)
@@ -711,13 +712,7 @@ begin
          now() - interval '68 days', now()
     from _cls c;
 
-  -- 2.4 Ангийн чат өрөө (074 триггерийг орлоно; owner NULL — FK-тэй тул)
-  insert into public.chat_rooms
-    (id, kind, title, owner_user_id, classroom_id, is_open, is_closed, language, created_at)
-  select pg_temp.did('2022', c.cls), 'class', left(c.class_name, 80), null, c.class_id, false, false, 'zh',
-         now() - interval '68 days'
-    from _cls c
-  on conflict do nothing;
+  -- 2.4 Ангийн чат өрөө: 074-ийн триггер classrooms insert дээр өөрөө үүсгэнэ (owner = багш, гишүүд = оюутнууд)
 
   -- 2.5 Оюутнууд
   insert into public.classroom_students
@@ -1066,7 +1061,7 @@ begin
     left join wk w on w.user_id = t.user_id;
 
   -- ============================================================ Дуусгавар
-  perform set_config('session_replication_role', 'origin', true);
+  alter table public.user_points_ledger enable trigger user_points_ledger_apply_trg;
 
   execute 'drop function if exists pg_temp.hr(text)';
   execute 'drop function if exists pg_temp.did(text, bigint)';
