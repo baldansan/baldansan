@@ -16,7 +16,19 @@
  "seriesLabel_mn": "发展汉语 дунд II (≈HSK5)",
  "source": "发展汉语（第二版）中级综合 II · 第1课 (сурах бичиг, 参考答案 (АУДИО, 课件, 教案 байхгүй — агент өөрөө бэлдсэн тайлбар))",
  "hasAudio": false,
- "hasImages": false,
+ "hasImages": true,
+ "media": {
+  "lessonId": "fazhan-zhongji2-l01",
+  "images": [
+   {
+    "id": "ai-illustration",
+    "file": "images/ai-illustration.png",
+    "title": "故事二则 — Хоёр түүх (AI зураг)",
+    "role": "hero",
+    "section": "teacher-intro"
+   }
+  ]
+ },
  "verification": {
   "answerStatus": "official_answer_key_verified (参考答案)",
   "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
