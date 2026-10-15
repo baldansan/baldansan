@@ -189,6 +189,13 @@ export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
     match: (p) => p.startsWith("/admin/final-audit"),
   },
   {
+    href: "/admin/chat",
+    label: "Чатын мэдээлэл",
+    icon: "💬",
+    hint: "Мэдээлсэн мессеж, түгжих.",
+    match: (p) => p.startsWith("/admin/chat"),
+  },
+  {
     href: "/admin/security-audit",
     label: "Аюулгүй байдал",
     icon: "🔒",
