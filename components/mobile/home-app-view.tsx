@@ -173,6 +173,11 @@ export function HomeAppView({
   };
 
   // The grid always shows both series, whichever one the selected book is in.
+  const countCompleted = (entry: MobileCourseCatalogEntry) =>
+    entry.lessons.filter(
+      (lesson) => (statusByLesson[lesson.id] ?? "not_started") === "completed"
+    ).length;
+
   const pickerEntries: BookPickerEntry[] = useMemo(() => {
     const standardEntries: BookPickerEntry[] = standardCatalog.map((entry) => ({
       key: `standard:${entry.chipId}`,
@@ -184,6 +189,7 @@ export function HomeAppView({
       coverUrl: entry.coverUrl,
       available: entry.available,
       lessonCount: entry.lessons.length,
+      completedCount: countCompleted(entry),
       reviewLevel: resolveCatalogChipLevel(entry),
     }));
     if (selectedLang === "ko") return standardEntries;
@@ -197,12 +203,23 @@ export function HomeAppView({
       coverUrl: entry.coverUrl,
       available: entry.available,
       lessonCount: entry.lessons.length,
+      completedCount: countCompleted(entry),
       reviewLevel: resolveCatalogChipLevel(entry),
     }));
     return [...standardEntries, ...fazhanEntries];
-  }, [standardCatalog, fazhanCatalog, selectedLang]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [standardCatalog, fazhanCatalog, selectedLang, statusByLesson]);
 
   const activePickerKey = `${activeSeries}:${activeChip}`;
+
+  /** Every published lesson on the page — progress is loaded once for all books. */
+  const allLessonIds = useMemo(
+    () =>
+      [...standardCatalog, ...fazhanCatalog].flatMap((entry) =>
+        entry.lessons.map((lesson) => lesson.id)
+      ),
+    [standardCatalog, fazhanCatalog]
+  );
 
   /** Hero numbers — "free" is only convincing with real counts behind it. */
   const totals = useMemo(() => {
@@ -210,6 +227,7 @@ export function HomeAppView({
     return {
       books: open.length,
       lessons: open.reduce((sum, e) => sum + e.lessonCount, 0),
+      completed: open.reduce((sum, e) => sum + e.completedCount, 0),
     };
   }, [pickerEntries]);
 
@@ -265,7 +283,9 @@ export function HomeAppView({
               : `Хичээл ${cont.lessonId}`
           );
         }
-        const { byLesson } = await getLessonProgressMapSmart(lessonIds);
+      }
+      if (allLessonIds.length > 0) {
+        const { byLesson } = await getLessonProgressMapSmart(allLessonIds);
         setStatusByLesson(byLesson);
       }
       if (isLoggedIn) {
@@ -276,7 +296,7 @@ export function HomeAppView({
       }
     }
     void load();
-  }, [lessonIds, lessons]);
+  }, [lessonIds, lessons, allLessonIds]);
 
   // Ангийн заавал хөтөлбөр (066) — байвал нэг жижиг карт. Алдаа гарвал чимээгүй нууна.
   useEffect(() => {
@@ -409,6 +429,9 @@ export function HomeAppView({
                 <span className="font-bold text-white">
                   {totals.books} {tr(locale, "ном")} · {totals.lessons}{" "}
                   {tr(locale, "хичээл нээлттэй")}
+                  {totals.completed > 0
+                    ? ` · ${totals.completed} ${tr(locale, "дууссан")}`
+                    : ""}
                 </span>
               ) : null}
             </p>

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
@@ -28,13 +27,9 @@ export function MobileShellHeader() {
 
   if (!showChinese) return null;
 
-  if (isHomePath(pathname)) {
-    return (
-      <header className="mb-3 flex items-center">
-        <HskLevelSelector placement="header" />
-      </header>
-    );
-  }
+  // Home no longer carries the HSK-level picker: the book grid is the
+  // picker (choosing a book sets the level).
+  if (isHomePath(pathname)) return null;
 
   if (isActiveGamePath(pathname)) {
     return (

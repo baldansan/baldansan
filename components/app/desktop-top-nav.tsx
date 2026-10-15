@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
 import { APP_NAV_ITEMS, type AppNavTab } from "@/lib/app-navigation";
 import { tr } from "@/lib/i18n/translate";
 import { switchUiLocale, useUiLocale } from "@/lib/i18n/ui-locale";
@@ -65,8 +64,6 @@ export function DesktopTopNav({ active }: Props) {
           />
         </form>
       ) : null}
-
-      {showChinese ? <HskLevelSelector placement="header" /> : null}
 
       <div className="bs-desknav-seg" role="group" aria-label="UI хэл">
         <button
