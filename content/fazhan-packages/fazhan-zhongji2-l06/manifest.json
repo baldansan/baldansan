@@ -1,0 +1,25 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji2",
+ "lessonId": "fazhan-zhongji2-l06",
+ "hskLevel": 5,
+ "lessonNumber": 6,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "从\"鸡毛换糖\"到\"世界超市\"",
+ "mongolianTitle": "«Тахианы өд сольж чихэр өгөх»-өөс «Дэлхийн супермаркет» хүртэл",
+ "series": "发展汉语（第二版）中级综合 II",
+ "seriesLabel_mn": "发展汉语 дунд II (≈HSK5)",
+ "source": "发展汉语（第二版）中级综合 II · 第6课 (сурах бичиг, 参考答案 (АУДИО, 课件, 教案 байхгүй — агент өөрөө бэлдсэн тайлбар))",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (албан 教案 байхгүй тул)"
+ }
+}

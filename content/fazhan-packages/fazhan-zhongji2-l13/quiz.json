@@ -1,0 +1,560 @@
+[
+ {
+  "type": "cloze",
+  "question": "我看到两匹草原狼——当然是养在（ ）里。",
+  "options": [
+   "机构",
+   "姿态",
+   "锁",
+   "笼子"
+  ],
+  "correct_answer": "笼子",
+  "explanation": "笼子 = тор. Бусад нь энд тохирохгүй.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l13-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这两匹狼和一本书里写的狼是同一个（ ）。",
+  "options": [
+   "祖先",
+   "身份",
+   "素质",
+   "人力"
+  ],
+  "correct_answer": "祖先",
+  "explanation": "祖先 = өвөг дээдэс.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l13-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "因为有主人（ ），看门狗显得很威武。",
+  "options": [
+   "丧失",
+   "撑腰",
+   "把握",
+   "看管"
+  ],
+  "correct_answer": "撑腰",
+  "explanation": "撑腰 = дэмжих.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l13-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "狼显得有些无能，不敢（ ）。",
+  "options": [
+   "反抗",
+   "应聘",
+   "转化",
+   "推销"
+  ],
+  "correct_answer": "反抗",
+  "explanation": "反抗 = эсэргүүцэх.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l13-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "笼子是完整的，（ ）还好好地挂在那里。",
+  "options": [
+   "权利",
+   "待遇",
+   "锁",
+   "职务"
+  ],
+  "correct_answer": "锁",
+  "explanation": "锁 = цоож.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l13-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "它们面对的不仅仅是自由的（ ）。",
+  "options": [
+   "消失",
+   "转化",
+   "丢失",
+   "丧失"
+  ],
+  "correct_answer": "丧失",
+  "explanation": "丧失 = (хийсвэр зүйл) алдах.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l13-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "大部分人会尽量选择福利（ ）好的机构。",
+  "options": [
+   "素质",
+   "待遇",
+   "原理",
+   "动机"
+  ],
+  "correct_answer": "待遇",
+  "explanation": "待遇 = цалин хангамж.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l13-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "人类会按照经济学的（ ）来评价好坏。",
+  "options": [
+   "人力",
+   "身份",
+   "职务",
+   "原理"
+  ],
+  "correct_answer": "原理",
+  "explanation": "原理 = зарчим.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l13-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在和外界（ ）的过程中，你受到热烈款待。",
+  "options": [
+   "应聘",
+   "裁减",
+   "打交道",
+   "看管"
+  ],
+  "correct_answer": "打交道",
+  "explanation": "打交道 = харьцах.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l13-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "对方不知道你真正（ ）的时候，你究竟办成过几件事？",
+  "options": [
+   "身份",
+   "价钱",
+   "人力",
+   "主管"
+  ],
+  "correct_answer": "身份",
+  "explanation": "身份 = байр суурь.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l13-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "很多人是因为足够优秀而被（ ）到著名的机构里。",
+  "options": [
+   "裁减",
+   "招聘",
+   "应聘",
+   "归"
+  ],
+  "correct_answer": "招聘",
+  "explanation": "招聘 = ажилд авах зарлах.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l13-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他每年都要偷偷地去一些民营企业（ ）。",
+  "options": [
+   "应聘",
+   "自信",
+   "招聘",
+   "在意"
+  ],
+  "correct_answer": "应聘",
+  "explanation": "应聘 = ажилд өргөдөл гаргах.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l13-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你依然毫不（ ），祝贺你，你依然保持着野生的状态。",
+  "options": [
+   "在意",
+   "把握",
+   "丧失",
+   "自信"
+  ],
+  "correct_answer": "在意",
+  "explanation": "在意 = (ихэвчлэн үгүйсгэлд) санаа зовох.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l13-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр юу болсныг эцэслэн мэдэхийг хүссэн тул очиж харав» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他想个究竟知道，就去看。",
+   "他想知道究竟个是怎么回事，就去看。",
+   "他想知道究竟是怎么回事，就去看个究竟。"
+  ],
+  "correct_answer": "他想知道究竟是怎么回事，就去看个究竟。",
+  "explanation": "V个究竟 — V + 个 + 究竟 дараалал зөв.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l13-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь ЗӨВ бэ?",
+  "options": [
+   "现在离回国的日子还很早着呢。",
+   "现在离回国的日子还早着呢。",
+   "现在离回国的日子不早着呢。"
+  ],
+  "correct_answer": "现在离回国的日子还早着呢。",
+  "explanation": "……着呢-ийн өмнө 很 орохгүй, үгүйсгэлийн хэлбэргүй.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l13-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би багаасаа компьютертай харьцаж ирсэн» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "我从小就打交道电脑。",
+   "我从小电脑打交道。",
+   "我从小就和电脑打交道。"
+  ],
+  "correct_answer": "我从小就和电脑打交道。",
+  "explanation": "打交道-ийн өмнө 和/同/跟 угтвар үг заавал байна.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l13-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр намайг ятгахдаа багшийн хэлсэн үгийг иш татдаг» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他劝我的时候，老师说的话把搬出来。",
+   "他劝我的时候，总搬出来老师说的话。",
+   "他劝我的时候，总把老师说的话搬出来。"
+  ],
+  "correct_answer": "他劝我的时候，总把老师说的话搬出来。",
+  "explanation": "把……搬出来 — 把 + N + 搬出来 дараалал.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l13-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чухал нь чин сэтгэл, мөнгө биш» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "重要的真心，而不是是钱。",
+   "重要的是真心，不是而钱。",
+   "重要的是真心，而不是钱。"
+  ],
+  "correct_answer": "重要的是真心，而不是钱。",
+  "explanation": "是A，而不是B — 而不是 хамт ирнэ.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l13-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ?",
+  "options": [
+   "他想看个究竟。",
+   "他想看究竟个。",
+   "这事让我想探个究竟。"
+  ],
+  "correct_answer": "他想看究竟个。",
+  "explanation": "个 нь 究竟-ийн ӨМНӨ ордог, дараалал эргэж болохгүй.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l13-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ?",
+  "options": [
+   "这个小镇风景迷人着呢。",
+   "这个小镇风景很迷人着呢。",
+   "这个小镇风景美极了。"
+  ],
+  "correct_answer": "这个小镇风景很迷人着呢。",
+  "explanation": "着呢-ийн өмнө 很 орвол давхар хэтрүүлэлт болж буруу.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l13-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«打交道»-ийн өмнөх угтвар үгийг аль нь ЧӨЛӨӨТЭЙ сольж болохгvй вэ?",
+  "options": [
+   "跟",
+   "和",
+   "把"
+  ],
+  "correct_answer": "把",
+  "explanation": "打交道-ийн өмнө 和/跟/同 ордог, 把 ордоггүй.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l13-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 六-4. 这套房子不是我买的，（ ）我的收入，就是一辈子不吃不喝也买不起。",
+  "options": [
+   "随",
+   "凭",
+   "隔",
+   "理"
+  ],
+  "correct_answer": "凭",
+  "explanation": "凭 = …-д тулгуурлан.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l13-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«是A，而不是B» бүтцэд А, B нь ямар төрлийн үг байх ёстой вэ?",
+  "options": [
+   "ихэвчлэн ижил төрлийн, харьцуулж болохуйц үг",
+   "огт ялгаатай, холбоогүй үг",
+   "зөвхөн тоо хэмжээ заасан үг"
+  ],
+  "correct_answer": "ихэвчлэн ижил төрлийн, харьцуулж болохуйц үг",
+  "explanation": "Харьцуулалт утгатай байхын тулд A, B ижил төрлийн байх ёстой.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l13-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者在哪里看到了两匹草原狼？",
+  "options": [
+   "北京动物园",
+   "内蒙古的一个草原度假村",
+   "一本书里"
+  ],
+  "correct_answer": "内蒙古的一个草原度假村",
+  "explanation": "1-р догол мөр.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l13-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "第二天，笼子里发生了什么意外的事？",
+  "options": [
+   "狗把两只狼咬死了",
+   "狼和狗都不见了",
+   "笼子里只剩下两只狼，狗不见了"
+  ],
+  "correct_answer": "笼子里只剩下两只狼，狗不见了",
+  "explanation": "3-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l13-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者认为我们应该怎样做才能保持野性？",
+  "options": [
+   "尽量保持身上的野性，推迟能力退化的时间",
+   "完全不工作",
+   "永远留在笼子里"
+  ],
+  "correct_answer": "尽量保持身上的野性，推迟能力退化的时间",
+  "explanation": "7-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l13-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者举例说明\"那不是你的能力\"指的是什么？",
+  "options": [
+   "自己学会开车",
+   "靠公司地位签大单、采访到重要人物",
+   "自己学会做饭"
+  ],
+  "correct_answer": "靠公司地位签大单、采访到重要人物",
+  "explanation": "8-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l13-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "那位人力资源主管每年偷偷去做什么？为什么？",
+  "options": [
+   "去旅游，放松心情",
+   "去学校学习新知识",
+   "去民营企业应聘，检验自己是否还保持野生状态"
+  ],
+  "correct_answer": "去民营企业应聘，检验自己是否还保持野生状态",
+  "explanation": "11-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l13-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者记在小本子上的那句话，讲的是什么？",
+  "options": [
+   "真正的自信是永远能打败对手",
+   "真正的自信是从不犯错误",
+   "真正的自信是任何时候都不怕失去"
+  ],
+  "correct_answer": "真正的自信是任何时候都不怕失去",
+  "explanation": "12-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l13-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 看个究竟 / 他 / 想 / 就",
+  "options": [
+   "他想就看个究竟",
+   "他就想看个究竟",
+   "看个究竟他就想"
+  ],
+  "correct_answer": "他就想看个究竟",
+  "explanation": "V个究竟 — S + 就 + 想 + 看个究竟 дараалал.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l13-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 搬出来 / 他 / 把 / 自己的职务 / 总",
+  "options": [
+   "他总搬出来把自己的职务",
+   "他总把自己的职务搬出来",
+   "把他总自己的职务搬出来"
+  ],
+  "correct_answer": "他总把自己的职务搬出来",
+  "explanation": "把 + N + V дараалал.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l13-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 而不是 / 是A / 能力 / 优秀",
+  "options": [
+   "是优秀而不是能力",
+   "而不是是优秀能力",
+   "优秀是而不是能力"
+  ],
+  "correct_answer": "是优秀而不是能力",
+  "explanation": "是A，而不是B дараалал.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l13-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

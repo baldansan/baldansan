@@ -1,0 +1,558 @@
+[
+ {
+  "type": "cloze",
+  "question": "他是\"打遍天下无敌手的武术界（ ）\"。",
+  "options": [
+   "明星",
+   "敌手",
+   "大师",
+   "荣誉"
+  ],
+  "correct_answer": "大师",
+  "explanation": "大师 = агуу их мастер.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "正是小孩子（ ）疯玩的时候，他已经拿到了全国武术大会的少年组冠军。",
+  "options": [
+   "关注",
+   "回想",
+   "思考",
+   "只顾"
+  ],
+  "correct_answer": "只顾",
+  "explanation": "只顾 = зөвхөн л анхаарах.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "竟然连续五年获得全国大赛的（ ）冠军。",
+  "options": [
+   "重大",
+   "全能",
+   "强烈",
+   "足够"
+  ],
+  "correct_answer": "全能",
+  "explanation": "全能 = бүх төрлийн.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在电影中（ ）觉远和尚的，正是17岁的李连杰。",
+  "options": [
+   "扮演",
+   "关注",
+   "提倡",
+   "启动"
+  ],
+  "correct_answer": "扮演",
+  "explanation": "扮演 = дүрд тоглох.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他感觉到一阵（ ）的震动。",
+  "options": [
+   "深情",
+   "强烈",
+   "重大",
+   "冰冷"
+  ],
+  "correct_answer": "强烈",
+  "explanation": "强烈 = хүчтэй.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "面对着灭顶之灾，他（ ）地用最大的声音呼喊。",
+  "options": [
+   "本能",
+   "甘心",
+   "只顾",
+   "责备"
+  ],
+  "correct_answer": "本能",
+  "explanation": "本能 = зөн совингоор.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "四个（ ）的男人跑过来，把他和孩子们救上了岸。",
+  "options": [
+   "强壮",
+   "强烈",
+   "足够",
+   "重大"
+  ],
+  "correct_answer": "强壮",
+  "explanation": "强壮 = хүчирхэг.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "除了宾馆的卫星电话，所有（ ）都中断了。",
+  "options": [
+   "观念",
+   "通讯",
+   "公式",
+   "仪式"
+  ],
+  "correct_answer": "通讯",
+  "explanation": "通讯 = холбоо харилцаа.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他从来没有像当时那样（ ）过自己。",
+  "options": [
+   "回想",
+   "甘心",
+   "责备",
+   "思考"
+  ],
+  "correct_answer": "责备",
+  "explanation": "责备 = буруутгах, зэмлэх.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l09-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他开始（ ）生命的意义到底是什么。",
+  "options": [
+   "回想",
+   "思考",
+   "关注",
+   "责备"
+  ],
+  "correct_answer": "思考",
+  "explanation": "思考 = гүнзгий бодох.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l09-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "\"壹基金\"（ ）全球公益观念。",
+  "options": [
+   "超",
+   "提倡",
+   "捐款",
+   "启动"
+  ],
+  "correct_answer": "提倡",
+  "explanation": "提倡 = дэмжин сурталчлах.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l09-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "竟有11万（ ）拨通了999309这个手机号码。",
+  "options": [
+   "人员",
+   "人数",
+   "人次",
+   "人口"
+  ],
+  "correct_answer": "人次",
+  "explanation": "人次 = хүн-удаа.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l09-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чи хичнээн удаа энэ бодлыг давтсан ч хэн ч тэгж ярьдаггүй» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "一张嘴就骂人，哪有你这么说话的？",
+   "一张嘴就骂人，哪有这么说话你的？",
+   "一张嘴就骂人，你哪有这么说话的？"
+  ],
+  "correct_answer": "一张嘴就骂人，哪有你这么说话的？",
+  "explanation": "综合注释 1: 哪有N这么V/Adj的 — 哪有-ийн ард субьект шууд ирнэ.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l09-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Шөнийн тэнгэр харанхуй хартай, хүний дотор бүхэлдээ хүйтэн мэдрэмж байв» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "夜空黑黑极了，人的内心一片冰冷。",
+   "夜空黑黑的，人的内心一片冰冷。",
+   "夜空很黑黑的，人的内心一片冰冷。"
+  ],
+  "correct_answer": "夜空黑黑的，人的内心一片冰冷。",
+  "explanation": "综合注释 2: 状态形容词-ийн өмнө 很 нэмэхгүй, ардаа 极了 нэмэхгүй.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l09-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хэрэв бурхан намайг аварсан бол, энэ нь заавал ямар нэг утга учиртай байх ёстой» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "如果上帝救了我，那意味着一定什么。",
+   "如果上帝救了我，那一定意味着什么。",
+   "意味着如果上帝救了我，那一定什么。"
+  ],
+  "correct_answer": "如果上帝救了我，那一定意味着什么。",
+  "explanation": "综合注释 3: A意味着B дараалал зөв.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l09-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«110,000 хүн-удаа энэ дугаарыг залгажээ» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "竟有11万人拨通了这个手机号码次。",
+   "竟有人次11万拨通了这个手机号码。",
+   "竟有11万人次拨通了这个手机号码。"
+  ],
+  "correct_answer": "竟有11万人次拨通了这个手机号码。",
+  "explanation": "综合注释 4: тоо+人次 дараалал зөв.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l09-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Ли Лянжэ ийм гүн сэтгэлээр өөрийн амьдралаа танилцуулжээ» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "李连杰如此地深情介绍自己现在的生活。",
+   "李连杰地如此深情介绍自己现在的生活。",
+   "李连杰如此深情地介绍自己现在的生活。"
+  ],
+  "correct_answer": "李连杰如此深情地介绍自己现在的生活。",
+  "explanation": "综合注释 5: 名词(深情)+地 дайвар үг болох дараалал.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l09-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (2). 连这么点儿钱都舍不得花，________？",
+  "options": [
+   "有这么小气你的吗",
+   "有你这么小气的吗",
+   "你有这么小气的吗"
+  ],
+  "correct_answer": "有你这么小气的吗",
+  "explanation": "有+你+这么+小气+的吗 дараалал зөв.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l09-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (3). 这么可爱的小狗她也害怕，________？",
+  "options": [
+   "哪有她这么胆小的",
+   "哪有这么胆小她的",
+   "她哪有这么胆小的"
+  ],
+  "correct_answer": "哪有她这么胆小的",
+  "explanation": "哪有+她+这么+胆小+的 дараалал зөв.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l09-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (1). 他紧握着方向盘，大开着（ ）的车灯。",
+  "options": [
+   "滚圆",
+   "血红",
+   "雪亮"
+  ],
+  "correct_answer": "雪亮",
+  "explanation": "车灯(машины чийдэн)-д 雪亮 тохирно.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l09-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (1). 有了错误却不愿意改正，意味着________。",
+  "options": [
+   "永远不能再进步",
+   "进步永远不能",
+   "不能再进步永远"
+  ],
+  "correct_answer": "永远不能再进步",
+  "explanation": "意味着+B дараалал зөв.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l09-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (3). 我住酒店916房间，咱们下午再（ ）联系。",
+  "options": [
+   "电话",
+   "公费",
+   "红牌"
+  ],
+  "correct_answer": "电话",
+  "explanation": "联系-ийн аргыг заахад 电话 тохирно.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l09-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "李连杰是11岁时拿到了什么冠军？",
+  "options": [
+   "全国武术大会的少年组冠军",
+   "全国大赛的全能冠军",
+   "奥运会冠军"
+  ],
+  "correct_answer": "全国武术大会的少年组冠军",
+  "explanation": "2-р хэсэг.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l09-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "李连杰在电影《少林寺》中扮演什么角色？",
+  "options": [
+   "武术教练",
+   "体育老师",
+   "觉远和尚"
+  ],
+  "correct_answer": "觉远和尚",
+  "explanation": "3-р хэсэг.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l09-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "是什么改变了李连杰的人生？",
+  "options": [
+   "他41岁时经历的一场海啸灾难",
+   "他的电影获得了奥斯卡奖",
+   "他认识了一位哲学家"
+  ],
+  "correct_answer": "他41岁时经历的一场海啸灾难",
+  "explanation": "5-р хэсэг.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l09-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "李连杰在灾难后开始思考什么？",
+  "options": [
+   "生命的意义到底是什么",
+   "怎样拍更好的电影",
+   "怎样赚更多的钱"
+  ],
+  "correct_answer": "生命的意义到底是什么",
+  "explanation": "7-р хэсэг.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l09-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"壹基金\"可以概括成什么公式？",
+  "options": [
+   "每1人+每1年+每100元=1个大家庭",
+   "每1家+每1个月+每1万元=1个大家庭",
+   "每1人+每1个月+每1元=1个大家庭"
+  ],
+  "correct_answer": "每1人+每1个月+每1元=1个大家庭",
+  "explanation": "7-р хэсэг.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l09-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"壹基金\"对哪五个方面特别关注？",
+  "options": [
+   "娱乐、体育、艺术、科学、旅游",
+   "经济、政治、文化、教育、军事",
+   "环保、教育、扶贫、健康、救灾"
+  ],
+  "correct_answer": "环保、教育、扶贫、健康、救灾",
+  "explanation": "7-р хэсэг.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l09-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 天底下 / 哪有 / 他这么拼命干的",
+  "options": [
+   "他这么拼命干的天底下哪有？",
+   "天底下哪有他这么拼命干的？",
+   "哪有天底下他这么拼命干的？"
+  ],
+  "correct_answer": "天底下哪有他这么拼命干的？",
+  "explanation": "哪有N这么V的 句子語序.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l09-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 竟有11万人次 / 就在那一天 / 拨通了999309这个手机号码",
+  "options": [
+   "就在那一天，竟有11万人次拨通了999309这个手机号码。",
+   "竟有11万人次，就在那一天拨通了999309这个手机号码。",
+   "拨通了999309这个手机号码，就在那一天竟有11万人次。"
+  ],
+  "correct_answer": "就在那一天，竟有11万人次拨通了999309这个手机号码。",
+  "explanation": "人次 句子語序.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l09-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 都不能 / 世界上一切金钱和权力 / 把人从水中救出来",
+  "options": [
+   "把人从水中救出来，世界上一切金钱和权力都不能。",
+   "都不能世界上一切金钱和权力把人从水中救出来。",
+   "世界上一切金钱和权力都不能把人从水中救出来。"
+  ],
+  "correct_answer": "世界上一切金钱和权力都不能把人从水中救出来。",
+  "explanation": "基本句子語序.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l09-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 如果上帝救了我 / 意味着什么 / 那一定",
+  "options": [
+   "那一定如果上帝救了我，意味着什么。",
+   "如果上帝救了我，意味着那一定什么。",
+   "如果上帝救了我，那一定意味着什么。"
+  ],
+  "correct_answer": "如果上帝救了我，那一定意味着什么。",
+  "explanation": "意味着 句子語序.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l09-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

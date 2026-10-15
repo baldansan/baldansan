@@ -1,0 +1,559 @@
+[
+ {
+  "type": "cloze",
+  "question": "专家有专家的（ ），老百姓有老百姓的主意。",
+  "options": [
+   "观点",
+   "指标",
+   "局部",
+   "说法"
+  ],
+  "correct_answer": "观点",
+  "explanation": "观点 = үзэл бодол.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l14-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "要是买了薄皮车，（ ）会出大事的。",
+  "options": [
+   "依然",
+   "早晚",
+   "反复",
+   "万万"
+  ],
+  "correct_answer": "早晚",
+  "explanation": "早晚 = эрт орой.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l14-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "钢板越厚，吸收（ ）越差。",
+  "options": [
+   "风险",
+   "本钱",
+   "黄金",
+   "能量"
+  ],
+  "correct_answer": "能量",
+  "explanation": "能量 = энерги.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l14-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我觉得普通人的话只不过是经验之谈，（ ）听听专家怎么说。",
+  "options": [
+   "善于",
+   "可笑",
+   "万万",
+   "不妨"
+  ],
+  "correct_answer": "不妨",
+  "explanation": "不妨 = болохгүй биш, оролдож болно.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l14-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "打开各个汽车网站一看，专家们（ ）发表意见。",
+  "options": [
+   "各自",
+   "依然",
+   "反复",
+   "早晚"
+  ],
+  "correct_answer": "各自",
+  "explanation": "各自 = тус бүр.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l14-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "股票市场（ ）进不得。",
+  "options": [
+   "万万",
+   "善于",
+   "不妨",
+   "早晚"
+  ],
+  "correct_answer": "万万",
+  "explanation": "万万 = (үгүйсгэлд) огт.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l14-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你那点儿买车的钱（ ）要被炒没了。",
+  "options": [
+   "反复",
+   "万万",
+   "依然",
+   "迟早"
+  ],
+  "correct_answer": "迟早",
+  "explanation": "迟早 = эрт орой нэг өдөр.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l14-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "把身体弄得好好儿的，这就是（ ）。",
+  "options": [
+   "风险",
+   "黄金",
+   "指标",
+   "本钱"
+  ],
+  "correct_answer": "本钱",
+  "explanation": "本钱 = хөрөнгө, суурь мөнгө.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l14-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一些人（ ）强调吃鱼吃肉很不卫生。",
+  "options": [
+   "万万",
+   "善于",
+   "早晚",
+   "反复"
+  ],
+  "correct_answer": "反复",
+  "explanation": "反复 = давтан.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l14-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "长期吃素会让人营养不足、记忆力（ ）。",
+  "options": [
+   "下降",
+   "死亡",
+   "冲击",
+   "震"
+  ],
+  "correct_answer": "下降",
+  "explanation": "下降 = буурах.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l14-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们会觉得这些盲人实在（ ）。",
+  "options": [
+   "极端",
+   "可笑",
+   "健全",
+   "局部"
+  ],
+  "correct_answer": "可笑",
+  "explanation": "可笑 = инээдтэй.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l14-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们这些（ ）人，为什么也像那些盲人一样？",
+  "options": [
+   "健全",
+   "可笑",
+   "极端",
+   "局部"
+  ],
+  "correct_answer": "健全",
+  "explanation": "健全 = эрүүл, бүрэн төгс.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l14-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "每种方法适合的（ ）不同。",
+  "options": [
+   "人群",
+   "指标",
+   "观点",
+   "说法"
+  ],
+  "correct_answer": "人群",
+  "explanation": "人群 = хэсэг бүлэг хүн.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l14-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хэрэв галт тэрэгнээс хоцорвол маргааш хүртэл хүлээх хэрэгтэй» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "错过了一旦火车，就得等到明天了。",
+   "一旦错过了火车，就得等到明天了。",
+   "一旦就得等到明天了，错过了火车。"
+  ],
+  "correct_answer": "一旦错过了火车，就得等到明天了。",
+  "explanation": "一旦 нь нөхцөл хэсгийн эхэнд, 就 дараа нь ирнэ.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l14-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хоол бүрт өөрийн амт бий» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "这道菜味道有这道菜的，特点有那道菜的。",
+   "这道菜有那道菜的味道，那道菜有这道菜的特点。",
+   "这道菜有这道菜的味道，那道菜有那道菜的特点。"
+  ],
+  "correct_answer": "这道菜有这道菜的味道，那道菜有那道菜的特点。",
+  "explanation": "A有A的X бүтцийн дараалал зөв.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l14-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр асуудлыг эрт орой нэг өдөр шийдэх ёстой» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "这个问题解决早晚要。",
+   "这个问题是早晚解决的。",
+   "这个问题早晚要解决。"
+  ],
+  "correct_answer": "这个问题早晚要解决。",
+  "explanation": "早晚 + V дараалал.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l14-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн чамайг магтахад даруухнаар хариулахад аль нь зөв бэ?",
+  "options": [
+   "看你说的，我哪有那么聪明？",
+   "你看说的，我哪有那么聪明？",
+   "看你的说，我哪有那么聪明？"
+  ],
+  "correct_answer": "看你说的，我哪有那么聪明？",
+  "explanation": "看你V的 — 看+你+V+的 дараалал.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l14-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«车辆» гэдэг цуглуулах нэр үгийг аль хэмжүүрээр зөв илэрхийлэх вэ?",
+  "options": [
+   "一些车辆",
+   "一辆车辆",
+   "一张车辆"
+  ],
+  "correct_answer": "一些车辆",
+  "explanation": "Цуглуулах нэр үг 辆/张/个/支-ээр тоологдохгүй.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l14-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ?",
+  "options": [
+   "一旦下雨，路就很滑。",
+   "他昨天来了以后，我们就谈了很久。",
+   "一旦他昨天来了，我们就谈了很久。"
+  ],
+  "correct_answer": "一旦他昨天来了，我们就谈了很久。",
+  "explanation": "一旦 нь зөвхөн ирээдүйд болзошгүй нөхцөлд хэрэглэгдэнэ, өнгөрсөн явдалд хэрэглэгдэхгүй.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l14-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ?",
+  "options": [
+   "这件事万万不可告诉别人。",
+   "我万万没有想到会这样。",
+   "这件事万万可以告诉别人。"
+  ],
+  "correct_answer": "这件事万万可以告诉别人。",
+  "explanation": "万万 нь зөвхөн үгүйсгэлийн өгүүлбэрт хэрэглэгдэнэ.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l14-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "早晚 ба 迟早-ийн аль нь илүү ярианы хэллэг вэ?",
+  "options": [
+   "迟早",
+   "хоёулаа адил",
+   "早晚"
+  ],
+  "correct_answer": "早晚",
+  "explanation": "早晚 илүү ярианы, 迟早 илүү бичгийн.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l14-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "善于-ийн ард ямар төрлийн үг ордог вэ?",
+  "options": [
+   "тоо хэмжээ",
+   "биет эд зүйл",
+   "хийсвэр, оюуны үйл үг"
+  ],
+  "correct_answer": "хийсвэр, оюуны үйл үг",
+  "explanation": "善于 + V(хийсвэр).",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l14-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A有A的X，B有B的Y бүтэцд X ба Y нь заавал яг ижил үг байх ёстой юу?",
+  "options": [
+   "холбоогүй",
+   "үгүй, ойролцоо утгатай өөр үг байж болно",
+   "тийм, заавал ижил байх ёстой"
+  ],
+  "correct_answer": "үгүй, ойролцоо утгатай өөр үг байж болно",
+  "explanation": "X, Y нь ойролцоо утгатай өөр үг байж болно.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l14-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "张三和李四对车皮厚薄的看法一样吗？",
+  "options": [
+   "他们都没有意见",
+   "不一样，意见相反",
+   "一样，都认为车皮厚更安全"
+  ],
+  "correct_answer": "不一样，意见相反",
+  "explanation": "2-р догол мөр.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l14-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者为什么最后放弃了买车的想法？",
+  "options": [
+   "家里人反对他买车",
+   "他没有钱买车",
+   "专家们的意见更复杂，让人弄不懂"
+  ],
+  "correct_answer": "专家们的意见更复杂，让人弄不懂",
+  "explanation": "2-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l14-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "妈妈给作者的建议是什么？",
+  "options": [
+   "去买股票",
+   "去买黄金",
+   "把身体弄好，这就是本钱"
+  ],
+  "correct_answer": "把身体弄好，这就是本钱",
+  "explanation": "4-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l14-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "几个盲人摸到大象鼻子后，说大象像什么？",
+  "options": [
+   "一把扇子",
+   "一根萝卜",
+   "一根圆木棒"
+  ],
+  "correct_answer": "一根圆木棒",
+  "explanation": "7-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l14-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者认为盲人和\"健全人\"犯的是同一种什么错误？",
+  "options": [
+   "都不懂科学",
+   "都不愿意学习",
+   "只看事情的一面，把局部强调到极端"
+  ],
+  "correct_answer": "只看事情的一面，把局部强调到极端",
+  "explanation": "8-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l14-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者在文章最后提出，聪明的现代人应该怎样做？",
+  "options": [
+   "只听专家的意见",
+   "善于从各种争论中发现最适合自己的方法",
+   "完全不听别人的意见"
+  ],
+  "correct_answer": "善于从各种争论中发现最适合自己的方法",
+  "explanation": "9-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l14-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 一旦 / 就 / 发生事故 / 后果不堪设想",
+  "options": [
+   "发生事故一旦，后果就不堪设想",
+   "一旦发生事故，后果就不堪设想",
+   "一旦后果不堪设想，就发生事故"
+  ],
+  "correct_answer": "一旦发生事故，后果就不堪设想",
+  "explanation": "一旦……就 дараалал.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l14-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 专家 / 有 / 专家的观点 / 老百姓 / 有 / 老百姓的主意",
+  "options": [
+   "专家有专家的观点，老百姓有老百姓的主意",
+   "专家的观点有专家，老百姓的主意有老百姓",
+   "有专家观点专家，有老百姓主意老百姓"
+  ],
+  "correct_answer": "专家有专家的观点，老百姓有老百姓的主意",
+  "explanation": "A有A的X дараалал.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l14-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 看你 / 的 / 说 / 我哪有那么好",
+  "options": [
+   "你看说的，我哪有那么好",
+   "看你说的，我哪有那么好",
+   "看说你的，我哪有那么好"
+  ],
+  "correct_answer": "看你说的，我哪有那么好",
+  "explanation": "看你V的 дараалал.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l14-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

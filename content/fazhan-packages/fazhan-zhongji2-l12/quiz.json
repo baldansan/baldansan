@@ -1,0 +1,559 @@
+[
+ {
+  "type": "cloze",
+  "question": "那里有不少简单的视觉（ ）让人亲身感受到，人的眼睛是多么容易被欺骗。",
+  "options": [
+   "实验",
+   "共识",
+   "理论",
+   "背景"
+  ],
+  "correct_answer": "实验",
+  "explanation": "实验 = туршилт.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l12-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "对这个现象最（ ）的解释是太阳或者月亮在地平线上时更接近地球。",
+  "options": [
+   "直观",
+   "常见",
+   "明显",
+   "过分"
+  ],
+  "correct_answer": "明显",
+  "explanation": "明显 = тодорхой, илэрхий.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l12-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "调节纸筒的大小，直到与月亮刚刚（ ）。",
+  "options": [
+   "参照",
+   "吻合",
+   "依照",
+   "面对"
+  ],
+  "correct_answer": "吻合",
+  "explanation": "吻合 = яг тохирох, давхцах.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l12-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "更可以（ ）地显示月亮在天空中的运行轨道。",
+  "options": [
+   "直观",
+   "明显",
+   "过分",
+   "常见"
+  ],
+  "correct_answer": "直观",
+  "explanation": "直观 = шууд харагдах, нүдэнд харагдахуйц.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l12-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "最常见的解释是月亮在地平线上时，因为有房子、树木等作为（ ）物。",
+  "options": [
+   "理论",
+   "共识",
+   "参照",
+   "背景"
+  ],
+  "correct_answer": "参照",
+  "explanation": "参照 = харьцуулж үзэх зүйл.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l12-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "人的大脑在（ ）地平线上的月亮时错误估计了距离。",
+  "options": [
+   "参照",
+   "依照",
+   "面对",
+   "号称"
+  ],
+  "correct_answer": "面对",
+  "explanation": "面对 = нүүр тулах, тулгарах.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l12-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一位社会心理学的创始人在1937年（ ）做过一个经典实验。",
+  "options": [
+   "曾经",
+   "从而",
+   "再三",
+   "过分"
+  ],
+  "correct_answer": "曾经",
+  "explanation": "曾经 = хэзээ нэгэн цагт.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l12-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "由于没有任何固定的（ ）可作参照，人脑将没办法稳定它处理的图像。",
+  "options": [
+   "背景",
+   "共识",
+   "面貌",
+   "理论"
+  ],
+  "correct_answer": "背景",
+  "explanation": "背景 = дэвсгэр, суурь.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l12-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "最后他们全都报告看到了向同一个方向、距离移动的亮点，最后会形成一种（ ）。",
+  "options": [
+   "理论",
+   "幻觉",
+   "共识",
+   "背景"
+  ],
+  "correct_answer": "共识",
+  "explanation": "共识 = нийтлэг ойлголт.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l12-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "人们在描述自己的经历时，容易不自觉地加以（ ）。",
+  "options": [
+   "面对",
+   "参照",
+   "依照",
+   "夸大"
+  ],
+  "correct_answer": "夸大",
+  "explanation": "夸大 = хэтрүүлэх.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l12-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这些\"专家\"显然（ ）相信人的视觉和心理。",
+  "options": [
+   "常见",
+   "直观",
+   "明显",
+   "过分"
+  ],
+  "correct_answer": "过分",
+  "explanation": "过分 = хэт их, хэмжээнээс хэтэрсэн.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l12-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "人们所感觉到的世界，其实并不是世界的本来（ ）。",
+  "options": [
+   "共识",
+   "理论",
+   "背景",
+   "面貌"
+  ],
+  "correct_answer": "面貌",
+  "explanation": "面貌 = дүр төрх.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l12-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "是大脑依照感官（ ）来的信息进行加工、重建出来的。",
+  "options": [
+   "参照",
+   "夸大",
+   "收集",
+   "描述"
+  ],
+  "correct_answer": "收集",
+  "explanation": "收集 = цуглуулах.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l12-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "这个孩子只是不爱说话，却____。",
+  "options": [
+   "成被说\"哑巴\"",
+   "被说成是\"哑巴\"",
+   "被说是成\"哑巴\""
+  ],
+  "correct_answer": "被说成是\"哑巴\"",
+  "explanation": "被 + V(说) + 成 дараалал (答案已核对).",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l12-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "会见开始后，记者____分批进入会见大厅。",
+  "options": [
+   "被分成两组",
+   "被两组分成",
+   "分成被两组"
+  ],
+  "correct_answer": "被分成两组",
+  "explanation": "被 + V(分) + 成 + тоо хэмжээ дараалал (答案已核对).",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l12-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "可见 холбоос ямар байрлалд ордог вэ?",
+  "options": [
+   "Өгүүлбэрийн хамгийн эхэнд, баримтгүйгээр",
+   "Асуултын төгсгөлд",
+   "Хоёр салаа өгүүлбэрийн хооронд, дүгнэлтийн өмнө"
+  ],
+  "correct_answer": "Хоёр салаа өгүүлбэрийн хооронд, дүгнэлтийн өмнө",
+  "explanation": "可见 нь өмнөх баримтаас гарах дүгнэлтийг онцолно.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l12-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "推门一看，满地都是水，____。",
+  "options": [
+   "可见，水管肯定漏水了",
+   "可见，房间很干净",
+   "可见，天气很热"
+  ],
+  "correct_answer": "可见，水管肯定漏水了",
+  "explanation": "Логик дүгнэлт (答案已核对).",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l12-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他拒绝接受采访，我们____，他才勉强答应。",
+  "options": [
+   "再三请求",
+   "请求再三了",
+   "再三了请求"
+  ],
+  "correct_answer": "再三请求",
+  "explanation": "再三 нь V(请求)-ийн шууд өмнө ордог (答案已核对).",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l12-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "食堂的饭菜刚出锅，____。",
+  "options": [
+   "端出来时还是热腾腾的",
+   "端出来时很热腾腾的",
+   "端出来时热腾腾极了"
+  ],
+  "correct_answer": "端出来时还是热腾腾的",
+  "explanation": "ABB хэлбэрийн тэмдэг нэрийн өмнө 很 авахгүй, ард нь 的 авна (答案已核对).",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l12-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他刚出生的儿子长得____。",
+  "options": [
+   "胖乎乎的，真可爱",
+   "很胖乎乎，真可爱",
+   "胖乎乎极了，真可爱"
+  ],
+  "correct_answer": "胖乎乎的，真可爱",
+  "explanation": "ABB хэлбэр 很/极了 авахгүй (答案已核对).",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l12-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "ABB хэлбэрийн тэмдэг нэрийн онцлог аль нь вэ?",
+  "options": [
+   "Өмнө нь чимэх үг авахгүй, ард нь 极了 авахгүй",
+   "Өмнө нь 很 авна, ард нь 极了 авна",
+   "Зөвхөн нэрийн ард л орно"
+  ],
+  "correct_answer": "Өмнө нь чимэх үг авахгүй, ард нь 极了 авахгүй",
+  "explanation": "亮晶晶, 绿油油 зэрэг нь өөрөө хангалттай хүчтэй дүрслэлтэй.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l12-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "明天我们都得早起，____。（不许睡懒觉）",
+  "options": [
+   "也就是说，谁也不许睡懒觉",
+   "也就是说，大家可以睡懒觉",
+   "也就是说，早起不重要"
+  ],
+  "correct_answer": "也就是说，谁也不许睡懒觉",
+  "explanation": "也就是说-ийн дараах санаа нь өмнөх өгүүлбэртэй нийцэх ёстой (答案已核对).",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l12-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "4年来该国烟民从1530万下降到1350万，____。（减少了）",
+  "options": [
+   "也就是说，烟民数量增加了180万",
+   "也就是说，烟民数量减少了180万",
+   "也就是说，烟民数量没有变化"
+  ],
+  "correct_answer": "也就是说，烟民数量减少了180万",
+  "explanation": "1530-1350=180, тооцоо зөв (答案已核对).",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l12-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "也就是说-ийн үүрэг юу вэ?",
+  "options": [
+   "Шинэ сэдэв эхлүүлэх",
+   "Өмнөх санааг өөр үгээр тодруулан дахин хэлэх",
+   "Эсрэг санаа илэрхийлэх"
+  ],
+  "correct_answer": "Өмнөх санааг өөр үгээр тодруулан дахин хэлэх",
+  "explanation": "也就是说 нь өмнөх санааг өөр өнцгөөс дахин илэрхийлнэ.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l12-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "几天前作者去参观什么地方了？",
+  "options": [
+   "一个公园",
+   "一所大学",
+   "一家研究所的科学博物馆"
+  ],
+  "correct_answer": "一家研究所的科学博物馆",
+  "explanation": "1-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l12-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "月亮错觉对所有的人都是一样的吗？",
+  "options": [
+   "完全不一样",
+   "只有老年人才会有",
+   "是一样的，但不同的人有时会产生不同的错觉"
+  ],
+  "correct_answer": "是一样的，但不同的人有时会产生不同的错觉",
+  "explanation": "7-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l12-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "那位社会心理学的创始人做的经典实验说明了什么？",
+  "options": [
+   "所有人看到的都完全一样",
+   "不同的人产生的不同错觉会在讨论后变得一致",
+   "错觉只在暗室中才会发生"
+  ],
+  "correct_answer": "不同的人产生的不同错觉会在讨论后变得一致",
+  "explanation": "7-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l12-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么说目击者的一致描述也不一定可靠？",
+  "options": [
+   "人们讨论时会互相影响，描述经历时也容易不自觉地夸大",
+   "因为目击者都是说谎的人",
+   "因为目击者看不清楚"
+  ],
+  "correct_answer": "人们讨论时会互相影响，描述经历时也容易不自觉地夸大",
+  "explanation": "8-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l12-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者认为人们感觉到的世界是什么样的？",
+  "options": [
+   "是完全虚假、毫无意义的",
+   "是世界的本来面貌，完全真实",
+   "是大脑依照感官信息加工、重建出来的\"虚拟世界\""
+  ],
+  "correct_answer": "是大脑依照感官信息加工、重建出来的\"虚拟世界\"",
+  "explanation": "9-р догол мөр, өгүүллэгийн төгсгөл.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l12-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "《两小儿辩日》的故事和什么有关系？",
+  "options": [
+   "人的味觉错觉",
+   "人的视错觉（远近大小的视觉错觉）",
+   "人的听觉错觉"
+  ],
+  "correct_answer": "人的视错觉（远近大小的视觉错觉）",
+  "explanation": "综合练习九阅读短文.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l12-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 都 / 一样的 / 对所有的人 / 月亮错觉 / 是",
+  "options": [
+   "月亮错觉对所有的人都是一样的",
+   "月亮错觉是都对所有的人一样的",
+   "对所有的人月亮错觉都是一样的"
+  ],
+  "correct_answer": "月亮错觉对所有的人都是一样的",
+  "explanation": "月亮错觉对所有的人都是一样的。(原文第7段)",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l12-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 产生 / 容易 / 错觉 / 出现 / 甚至是幻觉 / 在这个处理过程中",
+  "options": [
+   "在这个处理过程中，很容易出现错觉甚至是幻觉",
+   "很容易在这个处理过程中出现错觉甚至是幻觉",
+   "在这个处理过程中出现很容易错觉甚至是幻觉"
+  ],
+  "correct_answer": "在这个处理过程中，很容易出现错觉甚至是幻觉",
+  "explanation": "原文第9段结尾句.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l12-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

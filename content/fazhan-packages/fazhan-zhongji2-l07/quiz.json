@@ -1,0 +1,558 @@
+[
+ {
+  "type": "cloze",
+  "question": "彩票，就是让20世纪80年代的中国人感到（ ）的东西。",
+  "options": [
+   "陌生",
+   "好奇",
+   "坦率",
+   "神秘"
+  ],
+  "correct_answer": "陌生",
+  "explanation": "陌生 = танил бус.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "当它重新出现的时候，自然就吸引了人们（ ）的目光。",
+  "options": [
+   "坦率",
+   "陌生",
+   "好奇",
+   "舍得"
+  ],
+  "correct_answer": "好奇",
+  "explanation": "好奇 = сониуч.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他顺手买了一张彩票，（ ）中了500万元大奖。",
+  "options": [
+   "毕竟",
+   "居然",
+   "其实",
+   "此外"
+  ],
+  "correct_answer": "居然",
+  "explanation": "居然 = гэнэт, гайхалтайгаар.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "有人说了一句大实话：中奖的机会比（ ）还少。",
+  "options": [
+   "空难",
+   "游戏",
+   "运气",
+   "刺激"
+  ],
+  "correct_answer": "空难",
+  "explanation": "空难 = нисэх онгоцны осол.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "绝大多数人难以实现（ ）梦。",
+  "options": [
+   "兴办",
+   "收藏",
+   "纳税",
+   "发财"
+  ],
+  "correct_answer": "发财",
+  "explanation": "发财 = баяжих.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "花钱（ ）多，中奖的机会就愈大。",
+  "options": [
+   "其实",
+   "此外",
+   "愈",
+   "毕竟"
+  ],
+  "correct_answer": "愈",
+  "explanation": "愈……愈…… — хэдий чинээ…тодий чинээ….",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "有的人把买彩票当成一种（ ）。",
+  "options": [
+   "实话",
+   "游戏",
+   "岗位",
+   "命运"
+  ],
+  "correct_answer": "游戏",
+  "explanation": "游戏 = тоглоом.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "把这当成微笑（ ）。",
+  "options": [
+   "收藏",
+   "购买",
+   "兴办",
+   "纳税"
+  ],
+  "correct_answer": "纳税",
+  "explanation": "纳税 = татвар төлөх.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "据统计，到2009年，中国（ ）彩票的人数已经达到1000多万。",
+  "options": [
+   "收藏",
+   "发行",
+   "购买",
+   "销售"
+  ],
+  "correct_answer": "收藏",
+  "explanation": "收藏 = цуглуулах.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那些辛辛苦苦挣钱的人，怎么（ ）把钱白白扔掉呢？",
+  "options": [
+   "舍得",
+   "居然",
+   "顺手",
+   "毕竟"
+  ],
+  "correct_answer": "舍得",
+  "explanation": "舍得 = зарцуулахад харамгүй байх.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "卖福利彩票得到的钱主要用在（ ）福利事业上了。",
+  "options": [
+   "发行",
+   "购买",
+   "销售",
+   "兴办"
+  ],
+  "correct_answer": "兴办",
+  "explanation": "兴办 = байгуулах.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l07-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "为残疾人提供更多工作（ ）。",
+  "options": [
+   "老年",
+   "社区",
+   "公寓",
+   "岗位"
+  ],
+  "correct_answer": "岗位",
+  "explanation": "岗位 = ажлын байр.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l07-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Хэрэв их шагнал хоохоогүй бол магадгүй тэр аль хэдийн нас барсан байх байсан» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他早就活不成了要不是中了大奖。",
+   "要不是中了大奖，他早就活不成了。",
+   "中了大奖要不是，他早就活不成了。"
+  ],
+  "correct_answer": "要不是中了大奖，他早就活不成了。",
+  "explanation": "要不是 нь эхэнд ирнэ.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l07-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тоо баримтаар дэлхий дээр 50 гаруй түмэн төрлийн ургамал байдаг» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "地球上的植物据统计大约有50多万种吗？",
+   "据统计，地球上的植物大约有50多万种。",
+   "地球上据统计的植物大约有50多万种。"
+  ],
+  "correct_answer": "据统计，地球上的植物大约有50多万种。",
+  "explanation": "据统计 нь өгүүлбэрийн эхэнд ирнэ.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l07-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Цас ихсэх тусам их оров» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "雪已经下了一天了，而且下愈大愈。",
+   "雪已经下了一天了，而且愈下愈大。",
+   "雪已经下了一天了，而且愈大愈下。"
+  ],
+  "correct_answer": "雪已经下了一天了，而且愈下愈大。",
+  "explanation": "愈下愈大 — цас орох тусам ихсэнэ.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l07-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэд хамтдаа сул ярилцахдаа дуртай, ярьсан даруйдаа төгсгөлгүй ярилцдаг» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他们总喜欢到一块儿闲聊，一聊就个聊没完。",
+   "他们总喜欢到一块儿闲聊，一聊就聊没个完。",
+   "他们总喜欢到一块儿闲聊，一聊就聊个没完。"
+  ],
+  "correct_answer": "他们总喜欢到一块儿闲聊，一聊就聊个没完。",
+  "explanation": "个 нь V-ийн ард, 没完-ийн өмнө ирнэ.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l07-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр чамайг яв гэсэн чинь чи ЯГ Л явчихав уу?» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他让你走真，你还走哇？",
+   "他让你走，你还走真哇？",
+   "他让你走，你还真走哇？"
+  ],
+  "correct_answer": "他让你走，你还真走哇？",
+  "explanation": "还真走 дараалал зөв.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l07-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (3). 我要不是一直感冒、发烧，________。",
+  "options": [
+   "从来没有和你们一起去旅游过",
+   "肯定不会和你们一起去旅游",
+   "肯定和你们一起去旅游"
+  ],
+  "correct_answer": "肯定和你们一起去旅游",
+  "explanation": "Нөхцөл сөрөг тул үр дагавар эерэг.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l07-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (2). ________，中国现有儿童3.6亿人，占世界儿童总数的六分之一。（统计者：国家统计局）",
+  "options": [
+   "据此",
+   "据说",
+   "据统计"
+  ],
+  "correct_answer": "据统计",
+  "explanation": "据统计 — тоо баримтын мэдээлэл.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l07-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (4). 雪已经下了一天了，而且________。（下 大）",
+  "options": [
+   "愈大愈下",
+   "愈下愈大",
+   "越下越小"
+  ],
+  "correct_answer": "愈下愈大",
+  "explanation": "愈下愈大 — цас орох тусам ихсэнэ.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l07-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (3). 他们总喜欢到一块儿闲聊，________。（聊）",
+  "options": [
+   "一聊就没聊个完",
+   "一聊就聊个没完",
+   "一聊个就聊没完"
+  ],
+  "correct_answer": "一聊就聊个没完",
+  "explanation": "聊+个+没完 дараалал зөв.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l07-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (4). 父母打自己的孩子也不行，________。（打）",
+  "options": [
+   "他叫你打孩子，你就真打啊",
+   "他叫你打孩子，你真就打啊",
+   "他叫你孩子打，你就真打啊"
+  ],
+  "correct_answer": "他叫你打孩子，你就真打啊",
+  "explanation": "打孩子 (V+O) дараалал зөв.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l07-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "彩票在中国是从什么时候开始出现的？",
+  "options": [
+   "1987年7月27日",
+   "2000年",
+   "1978年"
+  ],
+  "correct_answer": "1987年7月27日",
+  "explanation": "2-р догол мөр.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l07-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "彩民是一群什么样的人？",
+  "options": [
+   "都是政府工作人员",
+   "喜欢新鲜事、爱追求刺激的人",
+   "都是有钱人"
+  ],
+  "correct_answer": "喜欢新鲜事、爱追求刺激的人",
+  "explanation": "3-р догол мөр.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l07-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "为什么真正中大奖的人很少？",
+  "options": [
+   "因为花两块钱买一张彩票，中奖的可能性只有五千万分之一",
+   "因为彩票很贵",
+   "因为政府限制中奖人数"
+  ],
+  "correct_answer": "因为花两块钱买一张彩票，中奖的可能性只有五千万分之一",
+  "explanation": "6-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l07-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "有人为什么不想买彩票？",
+  "options": [
+   "因为害怕中了大奖却失去平静的生活",
+   "因为买不到彩票",
+   "因为不知道怎么买"
+  ],
+  "correct_answer": "因为害怕中了大奖却失去平静的生活",
+  "explanation": "9-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l07-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "福利彩票的钱主要用在哪里？",
+  "options": [
+   "兴办敬老院、儿童福利院等福利事业",
+   "用于政府官员的工资",
+   "全部交给中奖者"
+  ],
+  "correct_answer": "兴办敬老院、儿童福利院等福利事业",
+  "explanation": "11-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l07-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者对中国彩票事业未来的发展持什么态度？",
+  "options": [
+   "悲观，认为应该取消彩票",
+   "乐观，认为还要有更快更大的发展",
+   "中立，没有表达看法"
+  ],
+  "correct_answer": "乐观，认为还要有更快更大的发展",
+  "explanation": "12-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l07-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 以后 / 彩票事业 / 更快更大 / 还要有 / 的发展",
+  "options": [
+   "彩票事业以后还要更快更大有的发展。",
+   "以后，彩票事业更快更大还要有的发展。",
+   "以后，彩票事业还要有更快更大的发展。"
+  ],
+  "correct_answer": "以后，彩票事业还要有更快更大的发展。",
+  "explanation": "副词句子語序.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l07-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 据统计 / 中国 / 收藏 / 彩票的人数 / 已经达到1000多万",
+  "options": [
+   "据统计，中国收藏彩票的人数已经达到1000多万。",
+   "中国据统计收藏彩票的人数已经达到1000多万。",
+   "据统计，彩票的人数中国收藏已经达到1000多万。"
+  ],
+  "correct_answer": "据统计，中国收藏彩票的人数已经达到1000多万。",
+  "explanation": "据统计 нь эхэнд ирнэ.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l07-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 他让你走 / 你还真走哇",
+  "options": [
+   "他让你走，你还真走哇。",
+   "你还真走哇，他让你走走。",
+   "走他让你，你还真走哇。"
+  ],
+  "correct_answer": "他让你走，你还真走哇。",
+  "explanation": "让N+V，N还真V呀 бүтэц.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l07-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 花钱愈多 / 中奖的机会 / 就愈大",
+  "options": [
+   "愈多花钱，中奖的机会就愈大。",
+   "花钱愈多，中奖的机会就愈大。",
+   "中奖的机会愈多，花钱就愈大。"
+  ],
+  "correct_answer": "花钱愈多，中奖的机会就愈大。",
+  "explanation": "愈……愈…… 句子語序.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l07-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

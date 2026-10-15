@@ -1,0 +1,558 @@
+[
+ {
+  "type": "cloze",
+  "question": "今年，报纸上、网上都在（ ）房子该降价了。",
+  "options": [
+   "应付",
+   "议论",
+   "再说",
+   "应"
+  ],
+  "correct_answer": "议论",
+  "explanation": "议论 = ярилцах, хэлэлцэх.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "朋友（ ）告诉燕子，她买的房赠送了精装修。",
+  "options": [
+   "亲口",
+   "好歹",
+   "最终",
+   "虽说"
+  ],
+  "correct_answer": "亲口",
+  "explanation": "亲口 = өөрийн амаар.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "到处都有\"特价促销\"的（ ）。",
+  "options": [
+   "设施",
+   "面子",
+   "口号",
+   "心思"
+  ],
+  "correct_answer": "口号",
+  "explanation": "口号 = уриа.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "到底该买哪儿的房子，让燕子他们费尽了（ ）。",
+  "options": [
+   "朝向",
+   "好歹",
+   "心思",
+   "面子"
+  ],
+  "correct_answer": "心思",
+  "explanation": "心思 = сэтгэл санаа, бодол зовнил.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）当一辈子\"负翁\"，也住不上这天价楼房啊。",
+  "options": [
+   "即使",
+   "要么",
+   "再说",
+   "虽说"
+  ],
+  "correct_answer": "即使",
+  "explanation": "即使……也…… = тэр байтугай … ч.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老公看上了西北四环，强调那里是上风上水，（ ）环境不错。",
+  "options": [
+   "设施",
+   "居民",
+   "人文",
+   "配套"
+  ],
+  "correct_answer": "人文",
+  "explanation": "人文环境 = хүмүүнлэг орчин.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "从面积到朝向，从楼层到价格，从周围环境到配套（ ）。",
+  "options": [
+   "心思",
+   "面子",
+   "设施",
+   "口号"
+  ],
+  "correct_answer": "设施",
+  "explanation": "设施 = тоног төхөөрөмж, байгууламж.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "燕子心动了，觉得哪套房子都不错，不买就像（ ）了大亏似的。",
+  "options": [
+   "应付",
+   "赠送",
+   "吃",
+   "签订"
+  ],
+  "correct_answer": "吃",
+  "explanation": "吃亏 = хохирол амсах.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "燕子觉得老公真给她（ ）。",
+  "options": [
+   "好歹",
+   "心思",
+   "面子",
+   "应付"
+  ],
+  "correct_answer": "面子",
+  "explanation": "面子 = нүүр царай, нэр хүнд.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l08-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "以后必须按月还（ ）。",
+  "options": [
+   "价",
+   "债",
+   "贷款",
+   "税"
+  ],
+  "correct_answer": "贷款",
+  "explanation": "贷款 = зээл.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l08-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）有个好歹的话，一点儿应急的钱都没有。",
+  "options": [
+   "就是",
+   "万一",
+   "即使",
+   "要么"
+  ],
+  "correct_answer": "万一",
+  "explanation": "万一 = хэрэв осолдвол.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l08-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "买房后，除了（ ）日常生活外，他们肯定是\"月光族\"。",
+  "options": [
+   "应付",
+   "购",
+   "应",
+   "按"
+  ],
+  "correct_answer": "应付",
+  "explanation": "应付 = даван туулах, хангах.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l08-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чиний ядарснаа хар даа, эрт унт» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "你看累的，早点儿睡吧。",
+   "看（把）你累的，早点儿睡吧。",
+   "看累你的，早点儿睡吧。"
+  ],
+  "correct_answer": "看（把）你累的，早点儿睡吧。",
+  "explanation": "看（把）你/他V/Adj的 — 看-ийн ард субьект шууд ирнэ.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l08-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр ч байтугай тэнгэрээс хутга унасан ч намайг хориглож чадахгүй» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "就是天上下刀子，拦不住我！",
+   "就是天上下刀子也拦不住我！",
+   "天上下刀子就是也拦不住我！"
+  ],
+  "correct_answer": "就是天上下刀子也拦不住我！",
+  "explanation": "就是……也…… — 也 заавал байх ёстой.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l08-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Юу хийхдээ ч бодит байдлаас эхлэх ёстой» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "干什么都得从实际出发。",
+   "从出发实际，干什么都得。",
+   "干什么都得出发从实际。"
+  ],
+  "correct_answer": "干什么都得从实际出发。",
+  "explanation": "从……出发 — 从 ба 出发-ийн хооронд нэр үг орно.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l08-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Чамайг намайг сонс гэж байгаа бол, чи намайг сонс» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "叫你听我的，你就听我的。",
+   "你叫听我的就听我的你。",
+   "叫听你我的，你就听我的。"
+  ],
+  "correct_answer": "叫你听我的，你就听我的。",
+  "explanation": "让/叫你V你就V — 叫/你-ийн дараалал зөв байх ёстой.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l08-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Эсвэл, эхлээд интернетээр харцгаая?» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "要么先上网，看看？",
+   "先上网看看，要么？",
+   "要么，先上网看看？"
+  ],
+  "correct_answer": "要么，先上网看看？",
+  "explanation": "要么 — санал болгох өгүүлбэрийн эхэнд ирнэ.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l08-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Давхар намхан бол намхан байг, юуг нь тайтгаруулах вэ?» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "楼层低就低点儿吧，有什么可安慰的？",
+   "楼层低点儿就低吧，有什么可安慰的？",
+   "楼层就低低点儿吧，有什么可安慰的？"
+  ],
+  "correct_answer": "楼层低就低点儿吧，有什么可安慰的？",
+  "explanation": "Adj/V（点儿）就Adj/V（点儿）（吧） — 就-ийн байрлал хоёр Adj-ийн хооронд.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l08-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (1). ________，连一分钟也不能休息？（忙）",
+  "options": [
+   "看把你忙的",
+   "你看把忙的",
+   "看忙把你的"
+  ],
+  "correct_answer": "看把你忙的",
+  "explanation": "看把+чи+Adj(忙)+的 дараалал зөв.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l08-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (2). ________，我也不愿意再见她。（无论什么理由）",
+  "options": [
+   "理由就是再好",
+   "就是有再好的理由",
+   "再好的理由就是"
+  ],
+  "correct_answer": "就是有再好的理由",
+  "explanation": "就是+нөхцөл(理由) дараалал зөв.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l08-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (3). 绝不要________，做伤害农民的事情。（自己的利益）",
+  "options": [
+   "自己的利益从出发",
+   "从自己的利益出发",
+   "从出发自己的利益"
+  ],
+  "correct_answer": "从自己的利益出发",
+  "explanation": "从+自己的利益+出发 дараалал зөв.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l08-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "试一试 (4). A：今天我想睡懒觉，不想去上学了。 B：________。（上学 没出息）",
+  "options": [
+   "让你上学你就上学，你不学习，长大没出息",
+   "你让上学你就上学，你不学习，长大没出息",
+   "让你上学就上学你，你不学习，长大没出息"
+  ],
+  "correct_answer": "让你上学你就上学，你不学习，长大没出息",
+  "explanation": "让+你+V(上学)，你+就+V(上学) дараалал зөв.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l08-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "燕子在北京住了多少年？住房情况怎么样？",
+  "options": [
+   "住了十年，一直租房子住",
+   "住了二十年，自己有房子",
+   "刚搬到北京，还没找到房子"
+  ],
+  "correct_answer": "住了十年，一直租房子住",
+  "explanation": "1-р догол мөр.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l08-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "燕子他们最终决定在哪个范围内选房子？",
+  "options": [
+   "远郊区",
+   "三环以内",
+   "四环和五环之间"
+  ],
+  "correct_answer": "四环和五环之间",
+  "explanation": "3-р догол мөр.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l08-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "燕子和老公对买房方向有什么不同意见？",
+  "options": [
+   "燕子喜欢东四环，老公看上了西北四环",
+   "两人都喜欢东四环",
+   "两人都喜欢西北四环"
+  ],
+  "correct_answer": "燕子喜欢东四环，老公看上了西北四环",
+  "explanation": "4-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l08-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "燕子选的是哪一套房子？",
+  "options": [
+   "一层、朝北的房子",
+   "三层、靠边、朝南的房子",
+   "顶层、朝西的房子"
+  ],
+  "correct_answer": "三层、靠边、朝南的房子",
+  "explanation": "5-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l08-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "买三层的房子对燕子一家的经济会有什么影响？",
+  "options": [
+   "只够交首付，以后要按月还贷款，会成为\"月光族\"",
+   "可以马上全款买下",
+   "完全不用贷款"
+  ],
+  "correct_answer": "只够交首付，以后要按月还贷款，会成为\"月光族\"",
+  "explanation": "6-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l08-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "售楼小姐给了燕子他们什么建议？",
+  "options": [
+   "一定要买三层的",
+   "手头紧可以买一层的，更便宜、进出更方便",
+   "应该再等等看房价"
+  ],
+  "correct_answer": "手头紧可以买一层的，更便宜、进出更方便",
+  "explanation": "6-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l08-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 叫你今天下午搬 / 没商量 / 你就赶快搬",
+  "options": [
+   "叫你今天下午搬，没商量你就赶快搬。",
+   "没商量，叫你今天下午搬你就赶快搬。",
+   "你就赶快搬，没商量叫你今天下午搬。"
+  ],
+  "correct_answer": "没商量，叫你今天下午搬你就赶快搬。",
+  "explanation": "让/叫你V你就V 句子語序.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l08-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 从 / 两国人民的根本利益 / 出发 / 应该",
+  "options": [
+   "应该出发从两国人民的根本利益。",
+   "应该从两国人民的根本利益出发。",
+   "从应该两国人民的根本利益出发。"
+  ],
+  "correct_answer": "应该从两国人民的根本利益出发。",
+  "explanation": "从……出发 句子語序.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l08-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 楼层低 / 有什么可安慰的 / 就低点儿吧",
+  "options": [
+   "楼层低就低点儿吧，有什么可安慰的？",
+   "楼层就低低点儿吧，有什么可安慰的？",
+   "有什么可安慰的，楼层低点儿就低吧？"
+  ],
+  "correct_answer": "楼层低就低点儿吧，有什么可安慰的？",
+  "explanation": "Adj/V（点儿）就Adj/V（点儿）（吧） 句子語序.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l08-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 就是成了房奴 / 家里的事情得一起办 / 也得一起还债",
+  "options": [
+   "就是成了房奴，家里的事情得一起办，也得一起还债。",
+   "家里的事情得一起办，也得一起还债，就是成了房奴。",
+   "家里的事情得一起办，就是成了房奴，也得一起还债。"
+  ],
+  "correct_answer": "家里的事情得一起办，就是成了房奴，也得一起还债。",
+  "explanation": "就是……也…… 句子語序.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l08-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

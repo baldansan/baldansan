@@ -1,0 +1,526 @@
+[
+ {
+  "type": "cloze",
+  "question": "他一生无儿无女，从一家工厂（ ）后，一个人住在昆明城外。",
+  "options": [
+   "辞职",
+   "退休",
+   "工作",
+   "离开"
+  ],
+  "correct_answer": "退休",
+  "explanation": "退休 = тэтгэвэрт гарах (课文原词).",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老人毫不（ ），马上从商店里买来了一些饼干等食品。",
+  "options": [
+   "迟疑",
+   "考虑",
+   "犹豫",
+   "担心"
+  ],
+  "correct_answer": "迟疑",
+  "explanation": "毫不迟疑 = огт эргэлзэлгүй (тогтсон хэллэг).",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老人从鸟儿快乐的飞舞中（ ）到了从来没有过的开心和快乐。",
+  "options": [
+   "感动",
+   "觉得",
+   "感受",
+   "感觉"
+  ],
+  "correct_answer": "感受",
+  "explanation": "感受到 = мэдрэх (课文原词).",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "直到来年的3月，红嘴鸥才（ ）地离去。",
+  "options": [
+   "依依不舍",
+   "无可奈何",
+   "毫不犹豫",
+   "自言自语"
+  ],
+  "correct_answer": "依依不舍",
+  "explanation": "依依不舍 = дурамжхан хагацах (课文原词成语).",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "北方食物充足，更何况，它们还要回到那儿（ ）儿女。",
+  "options": [
+   "生活",
+   "生产",
+   "生存",
+   "生育"
+  ],
+  "correct_answer": "生育",
+  "explanation": "生育 = төрүүлэх (课文原词).",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "它们一来，老人的（ ）突然就大了起来。",
+  "options": [
+   "工资",
+   "开销",
+   "收入",
+   "生活"
+  ],
+  "correct_answer": "开销",
+  "explanation": "开销 = зарлага (课文原词).",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "第二年，第三年……红嘴鸥（ )，而且鸟儿日益增多。",
+  "options": [
+   "按时到达",
+   "如期而至",
+   "如愿以偿",
+   "准时出发"
+  ],
+  "correct_answer": "如期而至",
+  "explanation": "如期而至 = товлосон цагтаа ирэх (课文原词成语).",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "老人每天（ ）着背，走两三个钟头的路来喂养红嘴鸥。",
+  "options": [
+   "佝偻",
+   "低头",
+   "弯腰",
+   "弯曲"
+  ],
+  "correct_answer": "佝偻",
+  "explanation": "佝偻着背 = нуруу бөхийх (课文原词).",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "四五块钱一斤的饼干，他一买就是一大布袋，眼睛都不（ ）一下。",
+  "options": [
+   "眨",
+   "闭",
+   "看",
+   "睁"
+  ],
+  "correct_answer": "眨",
+  "explanation": "眼睛都不眨一下 = огтхон ч эргэлзэлгүй (тогтсон хэллэг).",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l05-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "游客们为人与自然的（ ）感动着。",
+  "options": [
+   "融洽",
+   "和谐",
+   "感受",
+   "乐趣"
+  ],
+  "correct_answer": "融洽",
+  "explanation": "融洽 = найрсаг, дотно харилцаа (课文原词).",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l05-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "摄影家开车来到老人的家（ ），却吃惊地发现老人已经去世了。",
+  "options": [
+   "访问",
+   "拜访",
+   "探望",
+   "看望"
+  ],
+  "correct_answer": "看望",
+  "explanation": "看望 = эргэж үзэх (课文原词).",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l05-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "它们凄厉地叫着，好像一群被老人丢下的儿女，很久都不愿（ ）。",
+  "options": [
+   "回去",
+   "离去",
+   "离别",
+   "离开"
+  ],
+  "correct_answer": "离去",
+  "explanation": "离去 = явах, одох (课文原词).",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l05-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一家企业的老板（ ）要求每年拿出10万元给昆明爱鸟协会。",
+  "options": [
+   "自动",
+   "自发",
+   "自觉",
+   "主动"
+  ],
+  "correct_answer": "主动",
+  "explanation": "主动 = санаачилгатайгаар (课文原词).",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l05-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "雕像是昆明人民在老人去世10周年时（ ）提议和捐钱建造的。",
+  "options": [
+   "自发",
+   "自动",
+   "自愿",
+   "主动"
+  ],
+  "correct_answer": "自发",
+  "explanation": "自发 = аяндаа, олон хүний санаачилгаар (课文原词).",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l05-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«外面的雨下得再大» гэдгийг «再……也……»-гаар гүйцээхэд аль нь зөв бэ?",
+  "options": [
+   "我也得走。",
+   "我得走。",
+   "再走。"
+  ],
+  "correct_answer": "我也得走。",
+  "explanation": "再……也…… — ямар нөхцөлд ч үр дүн өөрчлөгдөхгүй.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l05-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«再……也……»-ийн «再»-гийн ард ихэвчлэн ямар үг ордог вэ?",
+  "options": [
+   "зөвхөн тоо хэмжээний үг",
+   "зөвхөн нэр үг",
+   "тэмдэг нэр (заримдаа үйл үг)"
+  ],
+  "correct_answer": "тэмдэг нэр (заримдаа үйл үг)",
+  "explanation": "综合注释 1-ийн тодорхойлолтын дагуу.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l05-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "A：他都退休了，还买得起大房子吗？ B：（何况）ашигласан зөв хариулт аль нь вэ?",
+  "options": [
+   "他有不少存款呢，何况儿女们都愿意帮助他。",
+   "他有存款，何况帮助他。",
+   "何况他有存款。"
+  ],
+  "correct_answer": "他有不少存款呢，何况儿女们都愿意帮助他。",
+  "explanation": "何况 — нэмэлт шалтгаан онцолсон бүтэц.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l05-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«何况»-ийн өмнө ямар үг нэмж болох вэ?",
+  "options": [
+   "才/就",
+   "也/都",
+   "更/又"
+  ],
+  "correct_answer": "更/又",
+  "explanation": "综合注释 2-т тодорхой дурдсан.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l05-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«不看报不清楚天气怎么样» гэдгийн ардах зөв үргэлжлэл аль нь вэ?",
+  "options": [
+   "一看报不知道天气。",
+   "看报才知道天气。",
+   "一看报才知道大风降温了。"
+  ],
+  "correct_answer": "一看报才知道大风降温了。",
+  "explanation": "不V……，一V…… — эсрэг тэсрэг харьцуулалт.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l05-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«不V……，一V……»-ийн «不» ба «一»-гийн ард ямар үг ирэх ёстой вэ?",
+  "options": [
+   "ИЖИЛ үйл үг (эсвэл үйл үгийн хэллэг)",
+   "нэр үг",
+   "ялгаатай хоёр үйл үг"
+  ],
+  "correct_answer": "ИЖИЛ үйл үг (эсвэл үйл үгийн хэллэг)",
+  "explanation": "综合注释 3-ийн тодорхойлолтын дагуу.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l05-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«他们总是喜欢说________，就是不说怎么做才对» гэдгийг «这也不……，那也不……»-гаар гүйцээхэд аль нь зөв бэ?",
+  "options": [
+   "不对这，不对那",
+   "这不对也，那不对也",
+   "这也不对，那也不对"
+  ],
+  "correct_answer": "这也不对，那也不对",
+  "explanation": "这也不……，那也不…… — тогтсон бүтцийн дараалал.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l05-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«这/那也不……，那/这也不……» нь ихэвчлэн ямар өнгө аясыг илэрхийлдэг вэ?",
+  "options": [
+   "сэтгэл ханамжгүй, дургүйцсэн",
+   "баяр хөөртэй",
+   "эелдэг хүндэтгэлтэй"
+  ],
+  "correct_answer": "сэтгэл ханамжгүй, дургүйцсэн",
+  "explanation": "综合注释 4-ийн тодорхойлолтын дагуу.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l05-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«商店里的东西太多了……我觉得他说得对» гэдгийн ардах зөв үргэлжлэл аль нь вэ? (没有比较/没有选择)",
+  "options": [
+   "比较没有选择没有。",
+   "没有比较就没有选择。",
+   "没比较没选择。"
+  ],
+  "correct_answer": "没有比较就没有选择。",
+  "explanation": "没有A就没有B — урьдчилсан нөхцөл, үр дүн.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l05-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«没有A就没有B»-ийн «A»-г ямар утгаар ойлгох ёстой вэ?",
+  "options": [
+   "B-тэй огт хамаагүй зүйл",
+   "B-ийн оршин тогтнох урьдчилсан нөхцөл",
+   "B-ийн эсрэг зүйл"
+  ],
+  "correct_answer": "B-ийн оршин тогтнох урьдчилсан нөхцөл",
+  "explanation": "综合注释 5-ийн тодорхойлолтын дагуу.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l05-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "老人是在哪儿、什么时候第一次碰到红嘴鸥的？",
+  "options": [
+   "1995年冬天，在翠湖边上",
+   "1985年11月，在翠湖边上",
+   "1985年11月，在昆明火车站"
+  ],
+  "correct_answer": "1985年11月，在翠湖边上",
+  "explanation": "2-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l05-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "老人去世后，摄影家做了什么？",
+  "options": [
+   "立刻给老人办了葬礼",
+   "把红嘴鸥都带回了家",
+   "把老人喂鸟的照片摆在老人经常喂鸟的地方，发布了他去世的消息"
+  ],
+  "correct_answer": "把老人喂鸟的照片摆在老人经常喂鸟的地方，发布了他去世的消息",
+  "explanation": "9-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l05-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "昆明人为了纪念吴庆恒老人做了什么？",
+  "options": [
+   "把翠湖公园改名为吴庆恒公园",
+   "把他喂养红嘴鸥的故事写进课本，并在他去世10周年时建造了青铜雕像",
+   "给他的家人发放补助金"
+  ],
+  "correct_answer": "把他喂养红嘴鸥的故事写进课本，并在他去世10周年时建造了青铜雕像",
+  "explanation": "10-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l05-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "课文最后说\"一个人只要能坚持美好的品德和到死也不改变的付出\"，这句话的意思最接近哪一项？",
+  "options": [
+   "只有伟大的人物才能被称为丰碑",
+   "喂养动物是每个人都应该做的事",
+   "哪怕一个人很平凡，只要坚持善良和奉献，也能被人们永远记住"
+  ],
+  "correct_answer": "哪怕一个人很平凡，只要坚持善良和奉献，也能被人们永远记住",
+  "explanation": "11-р догол мөр, 课文-ийн гол санаа.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l05-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 带着喂鸟的食物 / 每天都用一个大大的布包 / 来到湖边",
+  "options": [
+   "带着喂鸟的食物每天都用一个大大的布包来到湖边",
+   "每天都用一个大大的布包带着喂鸟的食物来到湖边",
+   "来到湖边每天都用一个大大的布包带着喂鸟的食物"
+  ],
+  "correct_answer": "每天都用一个大大的布包带着喂鸟的食物来到湖边",
+  "explanation": "每天(цаг)+都用一个大大的布包(арга хэрэгсэл)+带着……食物(агуулга)+来到湖边(хаашаа) дараалал.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l05-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 永远地留在了 / 一座雕像把人、鸥和谐相伴的美景 / 翠湖边上",
+  "options": [
+   "永远地留在了一座雕像把人、鸥和谐相伴的美景翠湖边上",
+   "一座雕像把人、鸥和谐相伴的美景永远地留在了翠湖边上",
+   "一座雕像永远地留在了把人、鸥和谐相伴的美景翠湖边上"
+  ],
+  "correct_answer": "一座雕像把人、鸥和谐相伴的美景永远地留在了翠湖边上",
+  "explanation": "把-бүтэц: 主语(一座雕像)+把+тусагдахуун(美景)+永远地留在了+газар(翠湖边上).",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l05-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

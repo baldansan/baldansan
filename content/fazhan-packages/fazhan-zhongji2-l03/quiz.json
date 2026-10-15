@@ -1,0 +1,543 @@
+[
+ {
+  "type": "cloze",
+  "question": "它冻得（ ）发抖，眼睛里充满害怕的神情。",
+  "options": [
+   "全身",
+   "周身",
+   "浑身",
+   "满身"
+  ],
+  "correct_answer": "浑身",
+  "explanation": "浑身 = бүх бие (толгойноос хөл хүртэл). Бусад нь энэ хичээлийн тогтсон хэллэг биш.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "看见它是个结结实实的大（ ），有什么脾气也不知道，又有些犹豫。",
+  "options": [
+   "宝贝",
+   "家伙",
+   "东西",
+   "角色"
+  ],
+  "correct_answer": "家伙",
+  "explanation": "家伙 = амьтан/залуу (чөлөөт үг).",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他（ ）为乖乖煮了一大罐肉，乖乖狼吞虎咽地吃了一顿。",
+  "options": [
+   "特别",
+   "赶忙",
+   "格外",
+   "特意"
+  ],
+  "correct_answer": "特意",
+  "explanation": "特意 = санаатайгаар, тусгайлан.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "吃饱喝足、洗过澡的乖乖立刻变得精神起来，对贾俊特别（ ）。",
+  "options": [
+   "亲切",
+   "懂事",
+   "亲热",
+   "用心"
+  ],
+  "correct_answer": "亲热",
+  "explanation": "亲热 = дотно, халуун дулаан (амьтан/хүний харилцаа).",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她特地打了预防针，（ ）刚刚半岁的女儿连妈妈的奶都不能吃了。",
+  "options": [
+   "以致",
+   "导致",
+   "以至",
+   "致使"
+  ],
+  "correct_answer": "以致",
+  "explanation": "以致 = энэ хичээлийн гол холбоо үг, муу үр дагавар гаргах.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她担心自己的孩子也被这条大狗咬伤，因此不（ ）这个大家伙留在家里。",
+  "options": [
+   "收养",
+   "容许",
+   "盼",
+   "预防"
+  ],
+  "correct_answer": "容许",
+  "explanation": "容许 = зөвшөөрөх (голчлон үгүйсгэх хэлбэрээр).",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "贾俊对乖乖格外（ ），他发现，这条狗好像懂人话。",
+  "options": [
+   "踏实",
+   "教养",
+   "假如",
+   "用心"
+  ],
+  "correct_answer": "用心",
+  "explanation": "用心 = анхааралтай, сэтгэл зүтгэл гаргасан.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不叫它吃，它从来不自己吃，显示出乖乖有着良好的（ ）。",
+  "options": [
+   "教养",
+   "容许",
+   "攻击",
+   "收养"
+  ],
+  "correct_answer": "教养",
+  "explanation": "教养 = зан харилцааны сурган хүмүүжил.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "有个人（ ）乖乖属于拉布拉多犬，是值很多钱的宝贝。",
+  "options": [
+   "显示",
+   "盼",
+   "查看",
+   "认出"
+  ],
+  "correct_answer": "认出",
+  "explanation": "认出 = таньж мэдэх (课文 原句\"认出\").",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l03-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）我要了乖乖，心里总是会不踏实的。",
+  "options": [
+   "假如",
+   "以致",
+   "假设",
+   "既然"
+  ],
+  "correct_answer": "假如",
+  "explanation": "假如 = хэрэв (зохиомол нөхцөл).",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l03-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他暗暗（ ）着今后的努力不会有结果，这样，乖乖就可以不走了。",
+  "options": [
+   "等",
+   "求",
+   "盼",
+   "望"
+  ],
+  "correct_answer": "盼",
+  "explanation": "盼 = хүсэх, тэсэн ядан хүлээх.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l03-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "贾俊担心有人错领走乖乖，还（ ）了队长的证件。",
+  "options": [
+   "预防",
+   "认",
+   "查看",
+   "显示"
+  ],
+  "correct_answer": "查看",
+  "explanation": "查看 = шалгах, хянах.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l03-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他就要给贾俊（ ）表示感谢，贾俊却拒绝了他的心意。",
+  "options": [
+   "工资",
+   "报酬",
+   "薪水",
+   "奖金"
+  ],
+  "correct_answer": "报酬",
+  "explanation": "报酬 = шан харамж (课文原词).",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l03-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "乖乖的\"丈夫\"班克（ ）还不知道在什么地方。",
+  "options": [
+   "向来",
+   "至今",
+   "现在",
+   "从来"
+  ],
+  "correct_answer": "至今",
+  "explanation": "至今 = өнөөг хүртэл (хэвээр үргэлжилж буй байдал).",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l03-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Нэг хоёрхон хоногт л гайхамшиг мэт эргэж олдлоо» гэдгийг «般» ашиглан илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "它奇迹般地找回来了。",
+   "它找回来般地奇迹了。",
+   "它奇迹般的找回来了。"
+  ],
+  "correct_answer": "它奇迹般地找回来了。",
+  "explanation": "般地 нь үйл үгийн өмнө нөхцөл болж ордог (的 биш, 地).",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l03-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«般的» ба «般地»-ийн ялгаа аль нь зөв бэ?",
+  "options": [
+   "般的 нэрийн өмнө (тодотгол), 般地 үйл үг/тэмдэг нэрийн өмнө (нөхцөл)",
+   "般的 ба 般地 бүрэн адилхан, ялгаагүй",
+   "般的 зөвхөн ярианд, 般地 зөвхөн бичигт хэрэглэгдэнэ"
+  ],
+  "correct_answer": "般的 нэрийн өмнө (тодотгол), 般地 үйл үг/тэмдэг нэрийн өмнө (нөхцөл)",
+  "explanation": "的/地-ийн энгийн дүрэм энд ч хэрэгждэг.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l03-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр үгээр хэлэхийн аргагүй баяртай байв» гэдгийг «V/Adj+得+什么似的» ашиглан илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他得高兴什么似的。",
+   "他高兴什么似的得。",
+   "他高兴得什么似的。"
+  ],
+  "correct_answer": "他高兴得什么似的。",
+  "explanation": "得 нь V/Adj-ийн ард, 什么似的-ийн өмнө байрлана.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l03-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 五-4. 冬天来了，天气（ ）一样冷。（……般地）",
+  "options": [
+   "冬天的般",
+   "般地冬天",
+   "冬天般地"
+  ],
+  "correct_answer": "冬天般地",
+  "explanation": "般地 — нөхцөл болж 冷-ийг чимнэ.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l03-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«以致» ба «以至»-ийн гол ялгаа юу вэ?",
+  "options": [
+   "以致 зөвхөн ярианд, 以至 зөвхөн бичигт хэрэглэгдэнэ",
+   "хоёул адилхан, ялгаагүй",
+   "以致 голчлон МУУ үр дагавар, 以至 төвийг сахисан/эерэг ч байж болно"
+  ],
+  "correct_answer": "以致 голчлон МУУ үр дагавар, 以至 төвийг сахисан/эерэг ч байж болно",
+  "explanation": "综合练习 四-3-ийн жишээгээр баталгаажсан ялгаа.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l03-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Зөвхөн гараа угаавал л хооллоно» гэдгийг «不……不/别……» ашиглан илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "不洗手吃饭。",
+   "不洗手不吃饭。",
+   "洗手不吃饭。"
+  ],
+  "correct_answer": "不洗手不吃饭。",
+  "explanation": "Хос сөрөг бүтэц — эхний хэсэгт заавал 不 орно.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l03-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 六-4. 只有这样做才能明确自己努力的方向。→（不……不……）",
+  "options": [
+   "这样做不能明确自己努力的方向。",
+   "不这样做就不能明确自己努力的方向。",
+   "不明确方向就不这样做。"
+  ],
+  "correct_answer": "不这样做就不能明确自己努力的方向。",
+  "explanation": "只有A才B = 不A就不B (逆成立хэлбэр).",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l03-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«有着»-ийн ардах нэр үгэнд ямар шаардлага тавигддаг вэ?",
+  "options": [
+   "дор хаяж 3 үетэй тодотголтой байх ёстой",
+   "ямар ч нэг үетэй нэр үг байж болно",
+   "зөвхөн тоо хэмжээний нэр үг байх ёстой"
+  ],
+  "correct_answer": "дор хаяж 3 үетэй тодотголтой байх ёстой",
+  "explanation": "综合注释 5-ийн тодорхойлолтын дагуу.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l03-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Энэ хотод олон жилийн түүх бий» гэдгийг «有着» ашиглан илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "这座城市历史有着悠久的。",
+   "这座城市有历史。",
+   "这座城市有着悠久的历史。"
+  ],
+  "correct_answer": "这座城市有着悠久的历史。",
+  "explanation": "有着 + ≥3 үетэй тодотголтой нэр үг дараалал зөв.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l03-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 七-⑦. 为什么说乖乖不同于一般的狗？ B：那是因为乖乖除了有着狗的本性外，________。（有着）",
+  "options": [
+   "还有着良好的\"教养\"。",
+   "还有良好的\"教养\"着。",
+   "还着有良好的\"教养\"。"
+  ],
+  "correct_answer": "还有着良好的\"教养\"。",
+  "explanation": "有着 + тодотголтой нэр үг (良好的教养) дараалал зөв хадгалагдсан.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l03-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«V/Adj+得+什么似的» ямар хэлний өнгөтэй вэ?",
+  "options": [
+   "шүлгийн хэлний хэллэг",
+   "ярианы хэлний хэллэг",
+   "албан бичгийн хэллэг"
+  ],
+  "correct_answer": "ярианы хэлний хэллэг",
+  "explanation": "Энэ бол тогтсон ярианы хэлц.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l03-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "贾俊为什么一开始对收养这条狗有些犹豫？",
+  "options": [
+   "因为他家里已经有一条狗了",
+   "因为狗是个结结实实的大家伙，不知道它的脾气",
+   "因为他不喜欢狗"
+  ],
+  "correct_answer": "因为狗是个结结实实的大家伙，不知道它的脾气",
+  "explanation": "2-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l03-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "贾俊的妻子一开始为什么不同意收养乖乖？",
+  "options": [
+   "因为她不喜欢狗的样子",
+   "因为家里没有地方养狗",
+   "因为她曾经被狗咬伤，打预防针影响了给孩子喂奶，担心孩子也被咬伤"
+  ],
+  "correct_answer": "因为她曾经被狗咬伤，打预防针影响了给孩子喂奶，担心孩子也被咬伤",
+  "explanation": "5-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l03-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "贾俊为什么决定要帮乖乖找回原来的主人？",
+  "options": [
+   "因为贾俊的妻子让他这样做",
+   "因为乖乖不听话",
+   "因为有人认出乖乖是值钱的拉布拉多犬，贾俊觉得应该让它回到原主人身边"
+  ],
+  "correct_answer": "因为有人认出乖乖是值钱的拉布拉多犬，贾俊觉得应该让它回到原主人身边",
+  "explanation": "7-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l03-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "贾俊为什么拒绝了救援队队长给的报酬？",
+  "options": [
+   "因为他不认识队长",
+   "因为他觉得报酬太少",
+   "因为他只想让乖乖回到需要它的地方，不是为了钱"
+  ],
+  "correct_answer": "因为他只想让乖乖回到需要它的地方，不是为了钱",
+  "explanation": "9-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l03-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 般地 / 把头靠在贾俊身上 / 还撒娇",
+  "options": [
+   "把头靠在贾俊身上还撒娇般地",
+   "还般地撒娇把头靠在贾俊身上",
+   "还撒娇般地把头靠在贾俊身上"
+  ],
+  "correct_answer": "还撒娇般地把头靠在贾俊身上",
+  "explanation": "撒娇般地 нөхцөл + үйл үг (把头靠在) дараалал.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l03-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 除非 / 否则 / 不会有大问题 / 情况特别严重",
+  "options": [
+   "否则情况特别严重，除非不会有大问题",
+   "情况特别严重，除非否则不会有大问题",
+   "除非情况特别严重，否则不会有大问题"
+  ],
+  "correct_answer": "除非情况特别严重，否则不会有大问题",
+  "explanation": "除非(нөхцөл)，否则(биелээгүй бол үр дагавар) дараалал.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l03-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

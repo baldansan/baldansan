@@ -1,0 +1,543 @@
+[
+ {
+  "type": "cloze",
+  "question": "她头朝下，重重地摔到地上，伤得非常严重，双手、胸部以下什么感觉都没有了，这场（ ）彻底改变了她的人生。",
+  "options": [
+   "灾难",
+   "意外",
+   "不幸",
+   "打击"
+  ],
+  "correct_answer": "意外",
+  "explanation": "意外 = 课文原词，突然发生的事故.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l04-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "虽然她的头被铁架子（ ）着，但是她依然在笑。",
+  "options": [
+   "戴上",
+   "挂满",
+   "固定",
+   "靠"
+  ],
+  "correct_answer": "固定",
+  "explanation": "固定 = бэхлэх (铁架子固定着头).",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l04-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "刚刚从手术中醒过来的那一刻，她（ ）过。",
+  "options": [
+   "难过",
+   "失望",
+   "绝望",
+   "伤心"
+  ],
+  "correct_answer": "绝望",
+  "explanation": "绝望 = ямар ч найдвар үгүй болох хамгийн хүнд мэдрэмж.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l04-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "桑兰从来不叫疼，更不会（ ）流眼泪。",
+  "options": [
+   "总是",
+   "经常",
+   "当众",
+   "随时"
+  ],
+  "correct_answer": "当众",
+  "explanation": "当众 = олны өмнө (дайвар үг, V-ийн өмнө ордог).",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l04-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "十个月后，桑兰从美国回到中国继续进行（ ）。",
+  "options": [
+   "治疗",
+   "手术",
+   "康复",
+   "仪器"
+  ],
+  "correct_answer": "康复",
+  "explanation": "康复 = сэргээн засах (课文原词).",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l04-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她的双手改变了形状，右手（ ）摸到头顶。",
+  "options": [
+   "甚至",
+   "简直",
+   "勉强",
+   "如此"
+  ],
+  "correct_answer": "勉强",
+  "explanation": "勉强 = хүчээр ядан (хийх).",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l04-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "正常高矮的电灯开关，在桑兰看来（ ）太高了。",
+  "options": [
+   "勉强",
+   "甚至",
+   "如此",
+   "简直"
+  ],
+  "correct_answer": "简直",
+  "explanation": "简直 = бараг, үнэхээр (太……了-тай хамт).",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l04-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她的手指还是不能动，（ ）手被热水烫坏了她都不知道。",
+  "options": [
+   "甚至",
+   "勉强",
+   "竟然",
+   "简直"
+  ],
+  "correct_answer": "甚至",
+  "explanation": "甚至 = бүр, хүртэл (илүү туйлширсан жишээ нэмэх).",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l04-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在家（ ），出门坐火车、乘飞机就更艰难了。",
+  "options": [
+   "那样",
+   "如此",
+   "这么",
+   "这样"
+  ],
+  "correct_answer": "如此",
+  "explanation": "如此 = ийм (бичгийн хэлний хэллэг).",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l04-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "桑兰不（ ）忘记过，社会各界成千上万人曾经关心和照顾过她。",
+  "options": [
+   "会",
+   "曾",
+   "再",
+   "断"
+  ],
+  "correct_answer": "曾",
+  "explanation": "不曾 = хэзээ ч (болоогүй).",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l04-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她得到过社会各界（ ）人的关心和照顾。",
+  "options": [
+   "各种各样",
+   "许许多多",
+   "大大小小",
+   "成千上万"
+  ],
+  "correct_answer": "成千上万",
+  "explanation": "成千上万 = олон мянган (课文原词成语).",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l04-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她每年都要跟着基金会到贫穷地区，去帮助那里的孩子们，这体现了她的（ ）之心。",
+  "options": [
+   "好",
+   "爱",
+   "善",
+   "热"
+  ],
+  "correct_answer": "爱",
+  "explanation": "爱心 = энэрэх сэтгэл (课文原词).",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l04-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她（ ）了一只名叫\"同同\"的母熊猫。",
+  "options": [
+   "认养",
+   "抚养",
+   "养育",
+   "收养"
+  ],
+  "correct_answer": "认养",
+  "explanation": "认养 = ивээн тэтгэх (биечлэн авахгүйгээр).",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l04-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "她还（ ）为北京2008年奥运会做了很多事情。",
+  "options": [
+   "请求",
+   "接受",
+   "应邀",
+   "邀请"
+  ],
+  "correct_answer": "应邀",
+  "explanation": "应邀 = урилгыг хүлээн авах.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l04-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэд юм алдаад эцэст нь хүүхдэд буруутгал тулгалаа» гэдгийг «V到……头上来» ашиглан илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他们丢了东西，查来查去倒查小孩子了。",
+   "他们丢了东西，查来查去倒查到小孩子那儿去了。",
+   "他们丢了东西，查来查去倒查到小孩子头上来了。"
+  ],
+  "correct_answer": "他们丢了东西，查来查去倒查到小孩子头上来了。",
+  "explanation": "V到……头上来 — тогтсон хэллэгийг бүрэн хэвээр нь хэрэглэх ёстой.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l04-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«V到……头上来»-ийн ардах тусагдахуунд ямар зүйл ихэвчлэн ирдэг вэ?",
+  "options": [
+   "муу зүйл (буруутгал, дарамт)",
+   "эерэг зүйл (шагнал, магтаал)",
+   "төвийг сахисан, аль ч утгагүй зүйл"
+  ],
+  "correct_answer": "муу зүйл (буруутгал, дарамт)",
+  "explanation": "Тодорхойлолтын гол шинж чанар.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l04-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 六-9. 你得好好儿管管你的孩子啦！ B：（V1也V1不得，V2也V2不得）",
+  "options": [
+   "这孩子也太难管了，说也说不得，骂也骂不得。",
+   "这孩子说不得骂不得。",
+   "这孩子也太难管了，不说不骂不得。"
+  ],
+  "correct_answer": "这孩子也太难管了，说也说不得，骂也骂不得。",
+  "explanation": "V1也V1不得，V2也V2不得 — хоёр үйл үгийг давхар хослуулсан тогтсон бүтэц.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l04-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«V1也V1不得，V2也V2不得»-ийн V1, V2 нь ямар шинжтэй байдаг вэ?",
+  "options": [
+   "хоёр ялгаатай, холбоотой эсвэл эсрэг утгатай үйл үг",
+   "нэр үг, тэмдэг нэрийн хослол",
+   "яг адилхан нэг үйл үгийн давталт"
+  ],
+  "correct_answer": "хоёр ялгаатай, холбоотой эсвэл эсрэг утгатай үйл үг",
+  "explanation": "综合注释 2-ийн тодорхойлолтын дагуу.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l04-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Энэ хог хаягдлыг задгай хаяж болохгүй» гэдгийг «V不得» ашиглан илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "这种垃圾乱的扔不得。",
+   "这种垃圾不得乱扔。",
+   "这种垃圾乱扔不得。"
+  ],
+  "correct_answer": "这种垃圾乱扔不得。",
+  "explanation": "V不得 — нэгдсэн үгүйсгэх хэлбэр, дунд нь «的» орохгүй.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l04-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«V不得»-ийн эсрэг утгатай хэлбэр аль нь вэ?",
+  "options": [
+   "V了",
+   "V过",
+   "V得"
+  ],
+  "correct_answer": "V得",
+  "explanation": "综合注释 3-т тодорхой дурдсан.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l04-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 六-7. 我非要把他做的坏事都告诉大家不可。 B：算了吧，（跟……过不去）",
+  "options": [
+   "算了吧，何必和他过去呢！",
+   "算了吧，何必跟他过不去呢！",
+   "算了吧，何必他跟过不去呢！"
+  ],
+  "correct_answer": "算了吧，何必跟他过不去呢！",
+  "explanation": "跟……过不去 — 跟/和 холбоосыг зөв байрлуулсан хэлбэр.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l04-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«A跟B过不去»-ийн «跟»-г ямар үгээр солиж болох вэ?",
+  "options": [
+   "和",
+   "对",
+   "给"
+  ],
+  "correct_answer": "和",
+  "explanation": "综合注释 4-т тодорхой дурдсан.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l04-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 七-4. 我接受他的邀请去他的家乡做客。→（应邀）",
+  "options": [
+   "我应邀去他的家乡做客。",
+   "我应邀请他去他的家乡做客。",
+   "我应他邀去他的家乡做客。"
+  ],
+  "correct_answer": "我应邀去他的家乡做客。",
+  "explanation": "接受邀请 = 应邀，хамгийн энгийн хэлбэр.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l04-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«应……之邀»-ийн «之邀»-гийн өмнө ямар төрлийн үг ордог вэ?",
+  "options": [
+   "хүн/байгууллагыг нэрлэсэн нэр үг",
+   "тоо хэмжээний үг",
+   "цаг хугацаа заасан үг"
+  ],
+  "correct_answer": "хүн/байгууллагыг нэрлэсэн нэр үг",
+  "explanation": "综合注释 5: «应+хүн/байгууллага+之邀».",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l04-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«应邀» ба «应……的邀请»/«应……之邀»-ийн ялгаа юу вэ?",
+  "options": [
+   "хоёул яг адилхан, ялгаагүй",
+   "хоёр дахь хэлбэр нь урьсан хүн/байгууллагыг тодорхой заана",
+   "эхнийх нь зөвхөн бичгийн хэлэнд хэрэглэгдэнэ"
+  ],
+  "correct_answer": "хоёр дахь хэлбэр нь урьсан хүн/байгууллагыг тодорхой заана",
+  "explanation": "综合注释 5-ийн тайлбарын дагуу.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l04-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "桑兰是在什么情况下受伤的？",
+  "options": [
+   "在赛前练习跳马时头朝下摔到地上",
+   "在正式比赛中摔倒",
+   "在回国的飞机上发生意外"
+  ],
+  "correct_answer": "在赛前练习跳马时头朝下摔到地上",
+  "explanation": "1-2 догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l04-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "桑兰最喜欢的生日礼物是什么，为什么？",
+  "options": [
+   "一辆轮椅，因为方便她出行",
+   "一幅小毛驴的画，因为喜欢小毛驴永不放弃的性格",
+   "一台电脑，因为能学习新闻"
+  ],
+  "correct_answer": "一幅小毛驴的画，因为喜欢小毛驴永不放弃的性格",
+  "explanation": "8-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l04-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "谁是支持桑兰最大的人？她做了什么？",
+  "options": [
+   "谢晓红女士；她支付了桑兰在国内治疗和教育的全部费用并日夜照顾她",
+   "桑兰的父母；他们每天都来医院看她",
+   "中国青少年发展基金会；他们给了桑兰奖学金"
+  ],
+  "correct_answer": "谢晓红女士；她支付了桑兰在国内治疗和教育的全部费用并日夜照顾她",
+  "explanation": "9-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l04-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "桑兰是怎样回报社会的？",
+  "options": [
+   "捐赠治疗仪器、资助贫困地区孩子、认养熊猫、慰问灾区、为奥运会做事情等",
+   "拒绝了所有媒体的采访",
+   "只是每年去看望谢晓红女士"
+  ],
+  "correct_answer": "捐赠治疗仪器、资助贫困地区孩子、认养熊猫、慰问灾区、为奥运会做事情等",
+  "explanation": "9-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l04-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 头上来 / 不幸却 / 一下子落到她的",
+  "options": [
+   "不幸却一下子落到她的头上来",
+   "一下子不幸却落到她的头上来",
+   "头上来不幸却一下子落到她的"
+  ],
+  "correct_answer": "不幸却一下子落到她的头上来",
+  "explanation": "不幸却(дайвар үг)+一下子(дайвар үг)+落到……头上来(тогтсон хэллэг) дараалал.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l04-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 日常生活的小事 / 跟她 / 随时 / 过不去",
+  "options": [
+   "随时日常生活的小事跟她过不去",
+   "日常生活的小事随时跟她过不去",
+   "日常生活的小事跟她随时过不去"
+  ],
+  "correct_answer": "日常生活的小事随时跟她过不去",
+  "explanation": "Өгүүлэгдэхүүн(日常生活的小事)+随时(дайвар)+跟她过不去(хэлц) дараалал.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l04-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

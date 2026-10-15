@@ -1,0 +1,560 @@
+[
+ {
+  "type": "cloze",
+  "question": "义乌既不靠着江海，也无资源（ ）。",
+  "options": [
+   "奇迹",
+   "优势",
+   "批发",
+   "信念"
+  ],
+  "correct_answer": "优势",
+  "explanation": "优势 = давуу тал.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在化学肥料没有（ ）的年代，义乌人发现用杀鸡洗毛的水可以让土地高产。",
+  "options": [
+   "遭受",
+   "普及",
+   "经营",
+   "追求"
+  ],
+  "correct_answer": "普及",
+  "explanation": "普及 = өргөн дэлгэрэх.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "人们只能想办法多找鸡毛、多增加肥料（ ）提高产量。",
+  "options": [
+   "以便",
+   "竟",
+   "只能",
+   "以"
+  ],
+  "correct_answer": "以",
+  "explanation": "以 = зорилго илэрхийлэх холбоос.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "义乌人的双脚已经走遍了四省，翻过千山（ ）水。",
+  "options": [
+   "百",
+   "千",
+   "万",
+   "亿"
+  ],
+  "correct_answer": "万",
+  "explanation": "千山万水 — тогтсон хэллэг.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在那时，（ ）块钱就能让家里过个好年。",
+  "options": [
+   "百把",
+   "千把",
+   "万把",
+   "亿把"
+  ],
+  "correct_answer": "百把",
+  "explanation": "百把块钱 ≈ зуу орчим юань.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "挑着沉重的担子，常常使他们（ ）其他人不能想象的痛苦。",
+  "options": [
+   "遭受",
+   "接受",
+   "感受",
+   "享受"
+  ],
+  "correct_answer": "遭受",
+  "explanation": "遭受 — (муу зүйл) туулах.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他只有一个（ ）：不管走到几时，总要回去过年的！",
+  "options": [
+   "资金",
+   "奇迹",
+   "信念",
+   "优势"
+  ],
+  "correct_answer": "信念",
+  "explanation": "信念 = итгэл үнэмшил.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这中间价格的小小差别，他们（ ）可以计算得一点儿不差。",
+  "options": [
+   "一心",
+   "独自",
+   "只能",
+   "竟"
+  ],
+  "correct_answer": "竟",
+  "explanation": "竟 = гэнэт, гайхалтайгаар.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）义乌当时的土政策，人们可以为生产队到外面去换鸡毛。",
+  "options": [
+   "经营",
+   "聚集",
+   "依据",
+   "追求"
+  ],
+  "correct_answer": "依据",
+  "explanation": "依据 = …-д үндэслэн.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l06-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "随着\"文革\"的结束，农民们开始摆（ ）叫卖。",
+  "options": [
+   "摊",
+   "额",
+   "盏",
+   "户"
+  ],
+  "correct_answer": "摊",
+  "explanation": "摊 = дэлгүүр, таслаа.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l06-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "市场是义乌（ ）的优势。",
+  "options": [
+   "所谓",
+   "唯一",
+   "本地",
+   "独自"
+  ],
+  "correct_answer": "唯一",
+  "explanation": "唯一 = цор ганц.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l06-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个\"世界超市\"正像一（ ）明亮的灯，点亮了中国农民追求幸福的希望。",
+  "options": [
+   "盏",
+   "把",
+   "亩",
+   "担"
+  ],
+  "correct_answer": "盏",
+  "explanation": "盏 — дэнлүүний хэмжих нэгж.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l06-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Бид бүтээгдэхүүний чанарыг байнга сайжруулж, зах зээлийн эзлэх хувийг нэмэгдүүлнэ» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "我们要不断提高产品质量，扩大市场占有率以。",
+   "以我们要不断提高产品质量，扩大市场占有率。",
+   "我们要不断提高产品质量，以扩大市场占有率。"
+  ],
+  "correct_answer": "我们要不断提高产品质量，以扩大市场占有率。",
+  "explanation": "以 нь зорилгын өмнө ирнэ.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l06-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь ЗӨВ бэ (千…万… бүтэц)?",
+  "options": [
+   "他常说：一张图片胜过言语千万。",
+   "他常说：一张图片胜过千万言语。",
+   "他常说：一张图片胜过千言万语。"
+  ],
+  "correct_answer": "他常说：一张图片胜过千言万语。",
+  "explanation": "千言万语 — тогтсон хэллэг, нийлүүлж бичихгүй.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l06-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр нэг түмэн орчим юань ашиг олжээ» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他万把赚了块钱。",
+   "他赚了万把块钱。",
+   "他赚了块万把钱。"
+  ],
+  "correct_answer": "他赚了万把块钱。",
+  "explanation": "把 нь 万-ийн ард, хэмжих нэгжийн өмнө.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l06-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Унтаж чадна ч унтах ёстой, унтаж чадахгүй ч унтах ёстой» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "你睡着得也睡，不睡着也得睡。",
+   "你睡得也着睡，睡不着得也睡。",
+   "你睡得着也得睡，睡不着也得睡。"
+  ],
+  "correct_answer": "你睡得着也得睡，睡不着也得睡。",
+  "explanation": "V也得V，不V也得V — дөрвөн V ижил байна.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l06-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ (V也得V бүтэц)?",
+  "options": [
+   "走也得走，不走也得走。",
+   "你学也得学，不学也得学。",
+   "走也得走，不走也得停。"
+  ],
+  "correct_answer": "走也得走，不走也得停。",
+  "explanation": "Дөрвөн V БҮГД ижил байх ёстой — 走/停 өөр үг тул буруу.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l06-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Зам тээврийн ослын хариуцлагыг хоёр тал хамтран хүлээх ёстой — шударга зарчмын дагуу» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "依据公平原则，发生车祸的责任应该由双方共同承担。",
+   "公平原则依据，发生车祸的责任应该由双方共同承担。",
+   "发生车祸的责任应该由双方共同承担依据公平原则。"
+  ],
+  "correct_answer": "依据公平原则，发生车祸的责任应该由双方共同承担。",
+  "explanation": "依据 нь нэр үгийн өмнө ирнэ.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l06-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«依据» нь ярианы хэлэнд «根据»-ээс илүү түгээмэл үү?",
+  "options": [
+   "Үгүй, 根据 илүү түгээмэл",
+   "Тийм, 依据 илүү түгээмэл",
+   "Хоёул адил хэмжээгээр хэрэглэгддэг"
+  ],
+  "correct_answer": "Үгүй, 根据 илүү түгээмэл",
+  "explanation": "依据 нь бичгийн хэллэг, 根据 нь ярианд илүү түгээмэл.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l06-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«她并没有写过什么了不得的大文章，只在小报上发表过几篇（ ）字的小文章» гэдэгт тохирох хэллэг аль нь вэ?",
+  "options": [
+   "一百",
+   "百把",
+   "百万",
+   "百个"
+  ],
+  "correct_answer": "百把",
+  "explanation": "百把字 ≈ зуу орчим үг.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l06-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«这些社会团体都____法律独立自主地开展活动» гэдэгт тохирох үг аль нь вэ?",
+  "options": [
+   "追求",
+   "依据",
+   "竟",
+   "遭受"
+  ],
+  "correct_answer": "依据",
+  "explanation": "依据 + 法律 — хуулийн дагуу.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l06-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«千山万水»-ийн 千 ба 万 нь бодит тоо мөн үү?",
+  "options": [
+   "Тийм, яг 1000 ба 10000",
+   "Үгүй, зөвхөн хэтрүүлэл",
+   "Тийм, ойролцоогоор"
+  ],
+  "correct_answer": "Үгүй, зөвхөн хэтрүүлэл",
+  "explanation": "千…万… нь бодит тоо биш, хэтрүүлэх хэллэг.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l06-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«今后要节约开支，________» гэдгийг гүйцээхэд тохирох хэллэг аль нь вэ?（以）",
+  "options": [
+   "保证以减少成本",
+   "以保证减少成本",
+   "减少成本以保证"
+  ],
+  "correct_answer": "以保证减少成本",
+  "explanation": "以 + V(保证) — зорилгоо ардаас нь илэрхийлнэ.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l06-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "义乌为什么被人们叫做\"世界超市\"？",
+  "options": [
+   "因为义乌有国家特殊政策",
+   "因为义乌靠近海边",
+   "因为每天有30万商人在此谈生意，10万吨商品流向215个国家和地区"
+  ],
+  "correct_answer": "因为每天有30万商人在此谈生意，10万吨商品流向215个国家和地区",
+  "explanation": "1-р догол мөр.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l06-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "什么叫做\"鸡毛换糖\"？",
+  "options": [
+   "用鸡毛做肥料",
+   "开大型超市",
+   "挑着担子换杂物"
+  ],
+  "correct_answer": "挑着担子换杂物",
+  "explanation": "2-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l06-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "老金为什么在雪地里把鞋脱掉？",
+  "options": [
+   "因为鞋坏了",
+   "因为鞋被雪冻成了冰疙瘩，穿着难走",
+   "因为他喜欢光脚走路"
+  ],
+  "correct_answer": "因为鞋被雪冻成了冰疙瘩，穿着难走",
+  "explanation": "7-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l06-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "义乌人为什么宁可吃苦也要到处鸡毛换糖？",
+  "options": [
+   "因为他们喜欢旅行",
+   "因为外出换鸡毛两个月就能赚到两三百，远高于平时的收入",
+   "因为政府强迫他们这样做"
+  ],
+  "correct_answer": "因为外出换鸡毛两个月就能赚到两三百，远高于平时的收入",
+  "explanation": "9-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l06-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "1982年义乌的领导表示什么想法？",
+  "options": [
+   "应该继续限制农民做生意",
+   "市场是义乌唯一的优势，应该利用这个优势找发展道路",
+   "应该发展工业而不是市场"
+  ],
+  "correct_answer": "市场是义乌唯一的优势，应该利用这个优势找发展道路",
+  "explanation": "13-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l06-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "义乌第一代小商品市场建在哪里？",
+  "options": [
+   "一座山上",
+   "一个旧工厂里",
+   "一条被填平的旧河道上"
+  ],
+  "correct_answer": "一条被填平的旧河道上",
+  "explanation": "13-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l06-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 以 / 提高产量 / 多增加肥料 / 多找鸡毛 / 人们只能想办法",
+  "options": [
+   "人们只能多找鸡毛想办法、多增加肥料以提高产量",
+   "人们只能想办法以多找鸡毛、多增加肥料提高产量",
+   "人们只能想办法多找鸡毛、多增加肥料以提高产量"
+  ],
+  "correct_answer": "人们只能想办法多找鸡毛、多增加肥料以提高产量",
+  "explanation": "以 нь зорилгын өмнө, арга хийгдсэний дараа ирнэ.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l06-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 也得走 / 走 / 不走 / 也得走",
+  "options": [
+   "走不走也得走也得",
+   "走也得走，不走也得走",
+   "也得走走，不也得走走"
+  ],
+  "correct_answer": "走也得走，不走也得走",
+  "explanation": "V也得V，不V也得V бүтэц.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l06-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 公平原则 / 依据 / 发生车祸的责任 / 应该由双方共同承担",
+  "options": [
+   "发生车祸的责任，依据公平原则应该由双方共同承担",
+   "依据公平原则，发生车祸的责任应该由双方共同承担",
+   "应该由双方共同承担依据公平原则发生车祸的责任"
+  ],
+  "correct_answer": "依据公平原则，发生车祸的责任应该由双方共同承担",
+  "explanation": "依据 + N, 句子语序.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l06-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

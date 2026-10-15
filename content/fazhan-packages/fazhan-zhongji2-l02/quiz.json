@@ -1,0 +1,560 @@
+[
+ {
+  "type": "cloze",
+  "question": "生活不总是充满阳光，地震、大火、水灾等往往不请自来，把（ ）准备的人类推到危机的面前。",
+  "options": [
+   "万分",
+   "毫无",
+   "难以",
+   "不止"
+  ],
+  "correct_answer": "毫无",
+  "explanation": "毫无 = огт байхгүй. 万分 — маш их, 难以 — хэцүү, 不止 — илүү байх.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "在（ ）紧急的情况下，如果人们具备处理危机的知识，就有可能保护自己。",
+  "options": [
+   "万分",
+   "冷静",
+   "八成",
+   "毫无"
+  ],
+  "correct_answer": "万分",
+  "explanation": "万分 = маш их (2 үет тэмдэг нэрийн өмнө). 毫无 — огт байхгүй, 八成 — 80%, 冷静 — тайван.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ）这些生存知识和逃生技巧吗？",
+  "options": [
+   "存在",
+   "具备",
+   "有着",
+   "包括"
+  ],
+  "correct_answer": "具备",
+  "explanation": "具备 = (нөхцөл, чадвар) эзэмших.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "尽可能让自己保持（ ），闭着眼睛好好儿休息。",
+  "options": [
+   "冷静",
+   "紧张",
+   "危机",
+   "剧烈"
+  ],
+  "correct_answer": "冷静",
+  "explanation": "冷静 = тайван. 紧张 — түгшсэн, 危机 — хямрал, 剧烈 — хүчтэй.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "以免在逃生时吸进烟雾中的有害气体，（ ）不能呼吸而死去。",
+  "options": [
+   "避",
+   "导致",
+   "提供",
+   "转移"
+  ],
+  "correct_answer": "导致",
+  "explanation": "导致 = (муу үр дагавар) учруулах.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "迅速向山坡、高地、楼房（ ），耐心等待大水退下去。",
+  "options": [
+   "顺",
+   "避",
+   "转移",
+   "投"
+  ],
+  "correct_answer": "转移",
+  "explanation": "转移 = шилжих.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "只有很快避开大水，才（ ）被大水冲走。",
+  "options": [
+   "难以",
+   "毫无",
+   "不止",
+   "不至于"
+  ],
+  "correct_answer": "不至于",
+  "explanation": "不至于 = тийм хэмжээнд хүрэхгүй.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "生活里的紧急情况远（ ）这八种。",
+  "options": [
+   "难以",
+   "不止",
+   "不至于",
+   "八成"
+  ],
+  "correct_answer": "不止",
+  "explanation": "不止 = зөвхөн …биш, илүү байна.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l02-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在你的一生中（ ）会遇到这样或那样的危机。",
+  "options": [
+   "万分",
+   "不止",
+   "毫无",
+   "八成"
+  ],
+  "correct_answer": "八成",
+  "explanation": "八成 = 80%, их магадлалтай.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l02-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "人的生命太宝贵了，需要永远（ ）和珍惜它。",
+  "options": [
+   "尊重",
+   "导致",
+   "具备",
+   "尊敬"
+  ],
+  "correct_answer": "尊重",
+  "explanation": "尊重 = хүндэтгэх (эрх, санал).",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l02-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "赶快钻进比较结实的桌子下面躲起来，以免被高处掉下来的东西（ ）伤。",
+  "options": [
+   "砸",
+   "投",
+   "顺",
+   "避"
+  ],
+  "correct_answer": "砸",
+  "explanation": "砸 = дарагдах, цохигдох.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l02-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "火灾发生后，正确的身体（ ）应该是低头弯腰往前跑。",
+  "options": [
+   "场地",
+   "信号",
+   "姿势",
+   "气体"
+  ],
+  "correct_answer": "姿势",
+  "explanation": "姿势 = биеийн байрлал.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l02-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "着火后，（ ）很可能已被切断，不能朝有光亮的地方跑。",
+  "options": [
+   "电源",
+   "气体",
+   "信号",
+   "场地"
+  ],
+  "correct_answer": "电源",
+  "explanation": "电源 = цахилгааны эх үүсвэр.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l02-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "必要时用石头敲打能发出声音的东西，向外发出求救（ ）。",
+  "options": [
+   "后果",
+   "信号",
+   "危机",
+   "电源"
+  ],
+  "correct_answer": "信号",
+  "explanation": "信号 = дохио.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l02-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "「Хортой зүйл болохоос сэргийлж энэ арга хэмжээг ав」гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "以免被砸伤，就赶快躲起来了。",
+   "赶快躲起来，以便被砸伤。",
+   "赶快躲起来，以免被砸伤。"
+  ],
+  "correct_answer": "赶快躲起来，以免被砸伤。",
+  "explanation": "以免 — арга хэмжээ эхэнд, муу үр дагавар ард.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l02-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь ЗӨВ бэ?",
+  "options": [
+   "宁可跑楼梯被撞伤，与其留下来躲起来。",
+   "与其跑楼梯被撞伤，宁可留下来躲起来。",
+   "留下来躲起来，宁可跑楼梯被撞伤。"
+  ],
+  "correct_answer": "与其跑楼梯被撞伤，宁可留下来躲起来。",
+  "explanation": "与其(сонгохгүй)……宁可(сонгож буй)…… дараалал тогтмол.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l02-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "「Зөвхөн баороо зогсоход л би явна」гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "我才去，除非雨停了。",
+   "除非雨停了，我才去。",
+   "除非雨停了，我去。"
+  ],
+  "correct_answer": "除非雨停了，我才去。",
+  "explanation": "除非……才…… — 才 орхигдож болохгүй.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l02-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ?",
+  "options": [
+   "除非涨工资，否则我们这些刚工作的人根本不敢买房子。",
+   "除非涨工资，我们这些刚工作的人才敢买房子。",
+   "否则涨工资，除非我们不敢买房子。"
+  ],
+  "correct_answer": "否则涨工资，除非我们不敢买房子。",
+  "explanation": "除非/否则-ийн байрлал сольж болохгүй — 除非 эхэнд, 否则 ард.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l02-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "「Энэ нууцыг хэн ч мэдэхгүй」гэдгийг «为……所……» бүтцээр илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "这个秘密他人为不所知。",
+   "这个秘密不为他人所知。",
+   "这个秘密不所他人为知。"
+  ],
+  "correct_answer": "这个秘密不为他人所知。",
+  "explanation": "为(үйлдэгч)所(V) дараалал тогтмол.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l02-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "「坏人欺骗不了我」-г «为……所……»-р хэрхэн хувиргах вэ?",
+  "options": [
+   "我为坏人所不能欺骗。",
+   "我不能为坏人所欺骗。",
+   "我不能所为坏人欺骗。"
+  ],
+  "correct_answer": "我不能为坏人所欺骗。",
+  "explanation": "为/所-ийн байрлал зөв хадгалах.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l02-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 五-4. 我们到底去四川还是去云南？ B：________（与其……宁可/不如……；要了解少数民族生活）",
+  "options": [
+   "要了解少数民族的生活，宁可去四川，与其去云南。",
+   "要了解少数民族的生活，与其去四川，不如去云南。",
+   "去云南，与其去四川，要了解少数民族生活。"
+  ],
+  "correct_answer": "要了解少数民族的生活，与其去四川，不如去云南。",
+  "explanation": "与其……不如…… дараалал, бодит сонголт (云南) ард нь ирнэ.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l02-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "综合练习 六-3. 如果能在第一时间跑到外面，你就下决心往外跑。→（除非……才……）",
+  "options": [
+   "你才下决心往外跑，除非能在第一时间跑到外面。",
+   "除非你下决心往外跑，才能在第一时间跑到外面。",
+   "除非能在第一时间跑到外面，你才下决心往外跑。"
+  ],
+  "correct_answer": "除非能在第一时间跑到外面，你才下决心往外跑。",
+  "explanation": "如果……就 = 除非……才…… (唯一条件变形时语序通常保持除非在前)。",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l02-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "「以免» ардах хэсэгт ямар утгатай зүйл ордог вэ?",
+  "options": [
+   "эерэг зорилго",
+   "тоо хэмжээ",
+   "сөрөг, муу үр дагавар"
+  ],
+  "correct_answer": "сөрөг, муу үр дагавар",
+  "explanation": "以免 = муу зүйл болохоос сэргийлэх.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l02-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "「除非……才……» ба «除非……否则……» хоёрын гол ялгаа юу вэ?",
+  "options": [
+   "эхнийх нь нөхцөл биелсэн үеийг, хоёр дахь нь нөхцөл биелээгүй үеийг онцолдог",
+   "хоёул яг адилхан, ялгаагүй",
+   "эхнийх нь зөвхөн ярианд, хоёр дахь нь зөвхөн бичгийн хэлэнд хэрэглэгддэг"
+  ],
+  "correct_answer": "эхнийх нь нөхцөл биелсэн үеийг, хоёр дахь нь нөхцөл биелээгүй үеийг онцолдог",
+  "explanation": "才 нь нөхцөл биелсэн үед юу болохыг, 否则 нь биелээгүй үед юу болохыг онцолно.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l02-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "「与其……宁可/不如……»-ийн «与其»-ийн ардах хэсэг нь юу вэ?",
+  "options": [
+   "сонгож буй сонголт",
+   "нөхцөл",
+   "сонгохгүй сонголт"
+  ],
+  "correct_answer": "сонгохгүй сонголт",
+  "explanation": "与其-ийн ард сонгохгүй зүйл, 宁可/不如-ийн ард сонгож буй зүйл ирнэ.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l02-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "地震刚刚发生的时候，如果住在高层，作者认为正确的做法是什么？",
+  "options": [
+   "马上从窗户跳下去",
+   "立刻跑到楼梯间，用最快的速度往下跑",
+   "与其跑楼梯被撞伤、摔死，宁可留下来找安全的地方躲起来"
+  ],
+  "correct_answer": "与其跑楼梯被撞伤、摔死，宁可留下来找安全的地方躲起来",
+  "explanation": "3-р догол мөр (二).",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l02-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "如果已经被困在楼房里或埋在废墟下，正确的做法是什么？",
+  "options": [
+   "尽可能保持冷静，必要时用石头敲打东西求救",
+   "大声喊叫，不停地跑来跑去",
+   "立刻放弃希望，安静地等死"
+  ],
+  "correct_answer": "尽可能保持冷静，必要时用石头敲打东西求救",
+  "explanation": "4-р догол мөр (三)-ийн B сонголт (зөв хариулт).",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l02-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "逃离烟雾区时，正确的身体姿势应该是什么？",
+  "options": [
+   "站着不动，等烟雾散开",
+   "尽量低头弯腰往前跑，烟雾太大时可以爬行",
+   "必须直起身子、大步往前跑"
+  ],
+  "correct_answer": "尽量低头弯腰往前跑，烟雾太大时可以爬行",
+  "explanation": "6-р догол мөр (五)-ийн B сонголт.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l02-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "半夜起火时，为什么不能朝有光亮的地方跑？",
+  "options": [
+   "因为电源可能已被切断，有光亮说明那里有大火在燃烧",
+   "因为光亮的地方离出口最远",
+   "因为光亮的地方人太多"
+  ],
+  "correct_answer": "因为电源可能已被切断，有光亮说明那里有大火在燃烧",
+  "explanation": "7-р догол мөр (六).",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l02-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "出门在外碰到发大水时，正确的逃生方向是什么？",
+  "options": [
+   "朝着水流的两边跑，避开大水的主流",
+   "站在原地不动，等待水退",
+   "顺着大水下来的方向跑"
+  ],
+  "correct_answer": "朝着水流的两边跑，避开大水的主流",
+  "explanation": "9-р догол мөр (八)-ийн B сонголт.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l02-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 以免 / 赶快躲起来 / 被砸伤",
+  "options": [
+   "被砸伤，以免赶快躲起来",
+   "赶快躲起来，以免被砸伤",
+   "以免赶快躲起来，被砸伤"
+  ],
+  "correct_answer": "赶快躲起来，以免被砸伤",
+  "explanation": "арга хэмжээ(V₁)，以免+муу үр дагавар(V₂) дараалал.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l02-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 除非 / 否则 / 你亲自试过 / 你不会真正理解",
+  "options": [
+   "你亲自试过，除非否则你不会真正理解",
+   "除非你亲自试过，否则你不会真正理解",
+   "否则你亲自试过，除非你不会真正理解"
+  ],
+  "correct_answer": "除非你亲自试过，否则你不会真正理解",
+  "explanation": "除非(нөхцөл)，否则(биелээгүй бол үр дагавар) дараалал.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l02-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

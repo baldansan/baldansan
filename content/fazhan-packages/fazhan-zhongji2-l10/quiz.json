@@ -1,0 +1,541 @@
+[
+ {
+  "type": "cloze",
+  "question": "星期天，你（ ）有了享受的时间，打算看会儿书。",
+  "options": [
+   "只管",
+   "难得",
+   "往常",
+   "净"
+  ],
+  "correct_answer": "难得",
+  "explanation": "难得 = ховорхон. 往常 — өмнө нь, 只管 — зөвхөн, 净 — зөвхөн л.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他（ ）给你布置和工作一点儿关系没有的新任务。",
+  "options": [
+   "净",
+   "起码",
+   "偶尔",
+   "共同"
+  ],
+  "correct_answer": "净",
+  "explanation": "净 = зөвхөн л (сөрөг өнгөтэй давталт). Бусад сонголт утга тохирохгүй.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他几乎一看到你，就要给你发来新作品，（ ）提出要求。",
+  "options": [
+   "情愿",
+   "总得",
+   "只管",
+   "起码"
+  ],
+  "correct_answer": "总得",
+  "explanation": "总得 = заавал (ямар нэг байдлаар).",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "又怕被（ ）认识的人揭穿，那多不好意思。",
+  "options": [
+   "人际",
+   "起码",
+   "类似",
+   "共同"
+  ],
+  "correct_answer": "共同",
+  "explanation": "共同 = хамтын, нийтлэг (хоёулаа мэддэг).",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "同事以为你（ ）只用半小时的时间。",
+  "options": [
+   "眼看",
+   "出门",
+   "来回",
+   "往常"
+  ],
+  "correct_answer": "来回",
+  "explanation": "来回 = очиж ирэх (аялал хоёр чиглэлд).",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你为了让商家赠送点儿什么，（ ）了近一个小时。",
+  "options": [
+   "花费",
+   "耗",
+   "挑选",
+   "分配"
+  ],
+  "correct_answer": "耗",
+  "explanation": "耗 = (цаг хугацаа) зарцуулах, үрэх.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "往常，你接受朋友小梁的（ ）情绪时，对心理没有好处。",
+  "options": [
+   "消极",
+   "积极",
+   "温暖",
+   "开心"
+  ],
+  "correct_answer": "消极",
+  "explanation": "消极 = сөрөг, идэвхгүй. Эсрэг нь 积极.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你只能（ ）着时间像水一样流去。",
+  "options": [
+   "只管",
+   "情愿",
+   "起码",
+   "眼看"
+  ],
+  "correct_answer": "眼看",
+  "explanation": "眼看(着) = хараад байхаас өөр аргагүй болох.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l10-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "如果你早上拆开那张CD，（ ）能读一万字。",
+  "options": [
+   "偶尔",
+   "难得",
+   "只管",
+   "起码"
+  ],
+  "correct_answer": "起码",
+  "explanation": "起码 = дор хаяж, хамгийн багадаа.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l10-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天你被（ ）的一万字阅读，就是你和目标本来能缩短的一步。",
+  "options": [
+   "耽误",
+   "揉",
+   "制止",
+   "摆脱"
+  ],
+  "correct_answer": "耽误",
+  "explanation": "耽误 = хойшлуулах, цаг алдах.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l10-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你今天却（ ）着、后悔着，去做你原来并不打算做的那些事。",
+  "options": [
+   "从容",
+   "狠",
+   "别扭",
+   "开心"
+  ],
+  "correct_answer": "别扭",
+  "explanation": "别扭 = эвгүй, таагүй санагдах.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l10-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不拒绝，就没办法（ ），难道你还要等着烦心事复制下去？",
+  "options": [
+   "制止",
+   "维持",
+   "分配",
+   "类似"
+  ],
+  "correct_answer": "制止",
+  "explanation": "制止 = зогсоох, хориглох.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l10-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Тэр өнөөдөр үдээс хойш нийтдээ хоёр хэлэлцүүлэг даргалсан»",
+  "options": [
+   "他主持今天下午一共两场讨论。",
+   "他一共今天下午主持两场讨论。",
+   "他今天下午一共主持两场讨论。"
+  ],
+  "correct_answer": "他今天下午一共主持两场讨论。",
+  "explanation": "多项状语: 时间(今天下午)→范围(一共)→动词 дараалал.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l10-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Бүх ажилтнууд өнөө орой спорт талбайд яаралтай цугларна»",
+  "options": [
+   "全体人员在操场今晚紧急集合。",
+   "全体人员紧急今晚在操场集合。",
+   "全体人员今晚在操场紧急集合。"
+  ],
+  "correct_answer": "全体人员今晚在操场紧急集合。",
+  "explanation": "多项状语: 时间→处所→方式 дараалал.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l10-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Ардын их сургуулийн шагнал хүртсэн энэ хэдэн гайхамшигтай хятад хэлний багш нар»",
+  "options": [
+   "这人民大学几位获过奖的优秀汉语教师",
+   "几位人民大学这获过奖的优秀汉语教师",
+   "人民大学这几位获过奖的优秀汉语教师"
+  ],
+  "correct_answer": "人民大学这几位获过奖的优秀汉语教师",
+  "explanation": "多项定语: 所属(人民大学)→指示(这)→数量(几位) дараалал.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l10-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь зөв бэ? «Урлаг дизайн хийдэг нэг чадварлаг авьяастан»",
+  "options": [
+   "一个搞美术设计的优秀人才",
+   "一个优秀的搞美术设计人才",
+   "搞美术设计一个的优秀人才"
+  ],
+  "correct_answer": "一个搞美术设计的优秀人才",
+  "explanation": "多项定语: 动词短语(搞美术设计)нь形容词(优秀)-ийн ӨМНӨ ордог.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l10-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "眼看(着) ямар утгатай зүйлд хэрэглэгддэг вэ?",
+  "options": [
+   "баяртай, сайн зүйл болохыг хүлээж байгаа",
+   "таагүй, хүсээгүй зүйл болохыг хараад байхаас аргагүй",
+   "ямар ч онцгой утгагүй"
+  ],
+  "correct_answer": "таагүй, хүсээгүй зүйл болохыг хараад байхаас аргагүй",
+  "explanation": "眼看(着) нь зөвхөн сөрөг үр дагавартай зүйлд хэрэглэгддэг.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l10-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«浓烟、火光包围了那片楼房，________。» гэдгийг зөв гүйцээвэл аль нь вэ?",
+  "options": [
+   "眼看着大家都搬进了新楼房",
+   "眼看着楼房就要被烧毁了",
+   "眼看着楼房修得更漂亮了"
+  ],
+  "correct_answer": "眼看着楼房就要被烧毁了",
+  "explanation": "眼看(着) нь ТААГҮЙ үр дагаварт хэрэглэгддэг тул байшин шатах гэж буйг заана.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l10-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«……不Adj/V，Adj/V的是……» бүтцэд эхний болон хоёр дахь хэсгийн Adj/V ямар байх ёстой вэ?",
+  "options": [
+   "ямар ч ялгаагүй",
+   "ЗААВАЛ ӨӨР байх ёстой",
+   "ЗААВАЛ ИЖИЛ байх ёстой"
+  ],
+  "correct_answer": "ЗААВАЛ ИЖИЛ байх ёстой",
+  "explanation": "不重要…重要的是 жишээнд ижил 重要 давтагдаж байгаа шиг, ижил Adj/V ашиглана.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l10-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Хэвтэх өрөө хамгийн бузар биш, хамгийн бузар нь угаалгын өрөө, гал тогооны өрөө» гэдгийг зөв илэрхийлэхэд аль нь вэ?",
+  "options": [
+   "卧室最脏不是，脏的卫生间和厨房是。",
+   "卧室不脏最，最脏卫生间厨房的是。",
+   "卧室不是最脏的，最脏的是卫生间和厨房。"
+  ],
+  "correct_answer": "卧室不是最脏的，最脏的是卫生间和厨房。",
+  "explanation": "……不Adj，Adj的是…… дарааллыг зөв хэрэглэв.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l10-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "V/Adj不得V/Adj不得 бүтцэд 不得 хаана ордог вэ?",
+  "options": [
+   "V/Adj-ийн ШУУД АРД",
+   "V/Adj-ийн ӨМНӨ",
+   "өгүүлбэрийн эхэнд"
+  ],
+  "correct_answer": "V/Adj-ийн ШУУД АРД",
+  "explanation": "说不得，问不得 жишээнд 不得 нь V-ийн ард ордог.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l10-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь ЗӨВ бэ? «Тэр хэтэрхий эмзэг зантай, хүйтэнд ч, халуунд ч, зав гарахад ч, ядрахад ч болохгүй»",
+  "options": [
+   "她也太娇气了，不得冷，不得热，不得闲，不得累。",
+   "她也太娇气了，冷得不，热得不，闲得不，累得不。",
+   "她也太娇气了，冷不得，热不得，闲不得，累不得。"
+  ],
+  "correct_answer": "她也太娇气了，冷不得，热不得，闲不得，累不得。",
+  "explanation": "V/Adj不得 дараалал — 不得 нь Adj-ийн шууд ард ордог.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l10-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "领导给你打电话让你做什么？",
+  "options": [
+   "让你去开会",
+   "帮他写一篇婚礼致辞",
+   "让你加班"
+  ],
+  "correct_answer": "帮他写一篇婚礼致辞",
+  "explanation": "2-р догол мөр.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l10-q23",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "你为什么没有封掉总找你改稿子的师弟？",
+  "options": [
+   "因为他是你最好的朋友",
+   "怕被共同认识的人揭穿，觉得不好意思",
+   "因为他从不打扰你"
+  ],
+  "correct_answer": "怕被共同认识的人揭穿，觉得不好意思",
+  "explanation": "3-р догол мөр.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l10-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "你难以拒绝别人的原因是什么？",
+  "options": [
+   "因为你很喜欢帮助别人",
+   "因为你没有自己的事情要做",
+   "怕领导不高兴，怕师弟认为你不热情，怕同事说你不尽心"
+  ],
+  "correct_answer": "怕领导不高兴，怕师弟认为你不热情，怕同事说你不尽心",
+  "explanation": "5-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l10-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者认为我们应该怎样对待自己的时间？",
+  "options": [
+   "应该把所有时间都让给别人",
+   "应该有个时间分配计划，最重要的事不能让位",
+   "应该完全不理会别人的请求"
+  ],
+  "correct_answer": "应该有个时间分配计划，最重要的事不能让位",
+  "explanation": "11-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l10-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"十分之一\"在文中指的是什么？",
+  "options": [
+   "别人需要你、非你不行的那部分事情",
+   "你每天工作的十分之一时间",
+   "你最不重要的事情"
+  ],
+  "correct_answer": "别人需要你、非你不行的那部分事情",
+  "explanation": "12-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l10-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "文章最后说，谁能安排你的生活？",
+  "options": [
+   "谁都不能，除了你自己，除非你同意",
+   "只有领导能安排",
+   "你的朋友们共同决定"
+  ],
+  "correct_answer": "谁都不能，除了你自己，除非你同意",
+  "explanation": "14-р догол мөр, өгүүллэгийн төгсгөл.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l10-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 今天下午 / 他 / 一共 / 主持 / 两场讨论",
+  "options": [
+   "他今天下午一共主持两场讨论",
+   "他主持今天下午一共两场讨论",
+   "他一共今天下午主持两场讨论"
+  ],
+  "correct_answer": "他今天下午一共主持两场讨论",
+  "explanation": "多项状语: 时间→范围→动词.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l10-q29",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 一个 / 搞美术设计 / 的 / 优秀 / 人才 / 是",
+  "options": [
+   "他一个是搞美术设计的优秀人才",
+   "他是一个优秀搞美术设计的人才",
+   "他是一个搞美术设计的优秀人才"
+  ],
+  "correct_answer": "他是一个搞美术设计的优秀人才",
+  "explanation": "多项定语: 数量→动词短语→形容词→N.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l10-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 重要的是 / 这些 / 不重要 / 合乎你的想象",
+  "options": [
+   "这些不重要，重要的是合乎你的想象",
+   "重要的是这些不重要合乎你的想象",
+   "这些重要的是不重要合乎你的想象"
+  ],
+  "correct_answer": "这些不重要，重要的是合乎你的想象",
+  "explanation": "……不Adj，Adj的是…… дараалал.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l10-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

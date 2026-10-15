@@ -1,0 +1,559 @@
+[
+ {
+  "type": "cloze",
+  "question": "有一位50多岁的日本律师，在东京一家汤面店（ ）地吃汤面。",
+  "options": [
+   "稀里呼噜",
+   "出洋相",
+   "不由得",
+   "无可奈何"
+  ],
+  "correct_answer": "稀里呼噜",
+  "explanation": "稀里呼噜 = гоймон идэх дуу дуурайх үг.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "有的人还在斜着眼睛（ ）他。",
+  "options": [
+   "扭",
+   "瞪",
+   "甩",
+   "吼"
+  ],
+  "correct_answer": "瞪",
+  "explanation": "瞪 = нүд ангайтал харах, ширтэх.",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这里也没写着'吃面请（ ）出声'啊。",
+  "options": [
+   "不必",
+   "勿",
+   "别",
+   "没"
+  ],
+  "correct_answer": "勿",
+  "explanation": "勿 = бичгийн хэллэгийн хориг (请勿).",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "认为只有这样才符合传统（ ）。",
+  "options": [
+   "礼仪",
+   "体现",
+   "修养",
+   "差别"
+  ],
+  "correct_answer": "礼仪",
+  "explanation": "礼仪 = ёс жаяг, зан заншил.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "日本老少两代人在同一个店里吃汤面时，（ ）出现两种完全不同的礼仪。",
+  "options": [
+   "不满",
+   "甚至于",
+   "不免",
+   "不光"
+  ],
+  "correct_answer": "不免",
+  "explanation": "不免 = зайлшгүй, зайлсхийх аргагүй.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "沟那边的看沟这边的（ ）。",
+  "options": [
+   "差别",
+   "不像话",
+   "不由得",
+   "不满"
+  ],
+  "correct_answer": "不像话",
+  "explanation": "不像话 = утга учиргүй, хэв журамгүй.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "对立到什么程度，就要看双方的（ ）怎样了。",
+  "options": [
+   "修养",
+   "趣味",
+   "体现",
+   "行为"
+  ],
+  "correct_answer": "修养",
+  "explanation": "修养 = хүмүүжил, соёл боловсрол.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "三代人之间隔着两条沟，说话做事当然（ ）更大。",
+  "options": [
+   "差别",
+   "界线",
+   "体现",
+   "修养"
+  ],
+  "correct_answer": "差别",
+  "explanation": "差别 = ялгаа.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "两代人意见不一致，（ ）体现在怎么吃、怎么坐的小事上。",
+  "options": [
+   "甚至于",
+   "不免",
+   "不光",
+   "只能"
+  ],
+  "correct_answer": "不光",
+  "explanation": "不光 = зөвхөн… биш, бас.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l11-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他们舍得花几百块、几千块钱到处（ ）。",
+  "options": [
+   "流行",
+   "时髦",
+   "说服",
+   "旅游"
+  ],
+  "correct_answer": "旅游",
+  "explanation": "旅游 = аялах, жуулчлах.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l11-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "年轻人喜欢（ ）的、带有刺激性的事情或活动。",
+  "options": [
+   "流行",
+   "新式",
+   "时髦",
+   "喇叭"
+  ],
+  "correct_answer": "新式",
+  "explanation": "新式 = шинэ маягийн (非谓形容词).",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l11-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "年轻人不仅敢和长辈吵架，（ ）敢离家出走。",
+  "options": [
+   "只能",
+   "甚至于",
+   "不免",
+   "不光"
+  ],
+  "correct_answer": "甚至于",
+  "explanation": "甚至于 = тэр байтугай, бүр ч.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l11-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "大家也就会摆脱\"代沟\"所带来的（ ）了。",
+  "options": [
+   "难题",
+   "行为",
+   "苦恼",
+   "趣味"
+  ],
+  "correct_answer": "苦恼",
+  "explanation": "苦恼 = зовлонтой, уй гашуудсан.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l11-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "\"这里也没写着'吃面请勿出声'啊\" дэх 勿 ямар хэллэг вэ?",
+  "options": [
+   "Хоёр хэллэгт адил хэрэглэгддэг",
+   "Ярианы хэллэг",
+   "Бичгийн хэллэг, ярианд 别-ийг хэрэглэнэ"
+  ],
+  "correct_answer": "Бичгийн хэллэг, ярианд 别-ийг хэрэглэнэ",
+  "explanation": "勿 нь зөвхөн бичгийн хэллэг, сануулга/анхааруулгад хэрэглэгддэг.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l11-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "教师讲课时，学生可以插话，____举手、起立。",
+  "options": [
+   "勿",
+   "不必",
+   "别"
+  ],
+  "correct_answer": "不必",
+  "explanation": "不必 = шаардлагагүй (答案已核对).",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l11-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "总而言之-ийн товчилсон хэлбэр аль нь вэ?",
+  "options": [
+   "总是",
+   "总共",
+   "总之"
+  ],
+  "correct_answer": "总之",
+  "explanation": "总而言之 → 总之.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l11-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "他们决定实行会议改革，不但要少开会，还要开短会，开高效率的会。____。",
+  "options": [
+   "总之，会议时间越长越好",
+   "总之，要用更多的时间做实事",
+   "总之，开会越多越好"
+  ],
+  "correct_answer": "总之，要用更多的时间做实事",
+  "explanation": "Хурлын шинэчлэлийн зорилгыг дүгнэв (答案已核对).",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l11-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "\"省一分钱是一分钱\" бүтцийн утга аль нь вэ?",
+  "options": [
+   "Хоёр дахин их мөнгө олох",
+   "Хэмжээ бага ч гэсэн нэг бүрийг нь үнэ цэнэтэй гэж үзэх",
+   "Мөнгийг огт зарцуулахгүй гэсэн хориг"
+  ],
+  "correct_answer": "Хэмжээ бага ч гэсэн нэг бүрийг нь үнэ цэнэтэй гэж үзэх",
+  "explanation": "V+数量(+N)+是+数量(+N) бол энэ санааг илэрхийлнэ.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l11-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "不困也该睡会儿觉，____，明天我们还要赶一天的路呢。",
+  "options": [
+   "不睡觉也行",
+   "睡一个小时是一个小时",
+   "睡一个小时是两个小时"
+  ],
+  "correct_answer": "睡一个小时是一个小时",
+  "explanation": "V+数量+是+数量 бүтцэд тоо хэмжээ ижил давтагдана (答案已核对).",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l11-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "新式 ямар төрлийн тэмдэг нэр вэ?",
+  "options": [
+   "Энгийн тэмдэг нэр — өгүүлэгч ч болно",
+   "非谓形容词 — зөвхөн тодотгол болно, өгүүлэгч болохгүй",
+   "Үйл үг"
+  ],
+  "correct_answer": "非谓形容词 — зөвхөн тодотгол болно, өгүүлэгч болохгүй",
+  "explanation": "新式 зөвхөн N-ийн өмнө тодотгол болно.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l11-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "有的人认为，水是大自然里本来就有的，而____，为什么用水还要交钱？",
+  "options": [
+   "非人造的",
+   "不人造的",
+   "人造不"
+  ],
+  "correct_answer": "非人造的",
+  "explanation": "人造-г 非-ээр үгүйсгэнэ (答案已核对).",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l11-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«你不宽容别人，别人也就不宽容你» дэх 你 ямар хэрэглээ вэ?",
+  "options": [
+   "泛指 — хэн боловч",
+   "Зөвхөн ярилцагчид чиглэсэн шууд хандалт",
+   "Тоо нэмэгдүүлэх утгатай"
+  ],
+  "correct_answer": "泛指 — хэн боловч",
+  "explanation": "Энэ бол ерөнхий зарчим (泛指).",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l11-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "他们谁也不说话，你望着我，我望着你，沉默了好长时间。 — энэ өгүүлбэр дэх 你/我 ямар хэрэглээ вэ?",
+  "options": [
+   "单数用做复数",
+   "泛指",
+   "虚指"
+  ],
+  "correct_answer": "虚指",
+  "explanation": "虚指 — тодорхойгүй хэн нэгнийг заана (答案已核对).",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l11-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "我代表团作为观察员首次出席会议。 — энэ өгүүлбэр дэх 我 ямар хэрэглээ вэ?",
+  "options": [
+   "单数用做复数",
+   "泛指",
+   "虚指"
+  ],
+  "correct_answer": "单数用做复数",
+  "explanation": "我 нь 我们-ийг (төлөөлөгчдийн бүрэлдэхүүн) төлөөлж байна (答案已核对).",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l11-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "comprehension",
+  "question": "那位日本律师在汤面店里做了什么，让他觉得不对劲？",
+  "options": [
+   "他吃错了东西",
+   "他\"稀里呼噜\"地吃汤面，发现别人都静悄悄地吃",
+   "他忘了付钱"
+  ],
+  "correct_answer": "他\"稀里呼噜\"地吃汤面，发现别人都静悄悄地吃",
+  "explanation": "1-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l11-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "中老年人认为吃汤面发出声音符合什么？",
+  "options": [
+   "没有什么特别意义",
+   "现代礼仪",
+   "传统礼仪，也是对厨师手艺的赞扬"
+  ],
+  "correct_answer": "传统礼仪，也是对厨师手艺的赞扬",
+  "explanation": "2-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l11-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "作者小时候因为什么事对长辈产生过强烈的不满？",
+  "options": [
+   "吃饭的问题",
+   "坐的姿势问题——甩腿被爷爷批评",
+   "穿衣服的问题"
+  ],
+  "correct_answer": "坐的姿势问题——甩腿被爷爷批评",
+  "explanation": "4-р догол мөр (课文第5段).",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l11-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "长辈和年轻人在花钱问题上有什么不同的看法？",
+  "options": [
+   "长辈主张多花钱，年轻人主张存钱",
+   "长辈能省则省，年轻人觉得有钱就该花",
+   "长辈和年轻人看法完全一样"
+  ],
+  "correct_answer": "长辈能省则省，年轻人觉得有钱就该花",
+  "explanation": "7-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l11-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "\"代沟\"是正常的社会现象吗？为什么？",
+  "options": [
+   "是，因为社会不断发展变化，两代人社会经历不同",
+   "不是，这是教育失败造成的",
+   "不是，这是个人性格问题"
+  ],
+  "correct_answer": "是，因为社会不断发展变化，两代人社会经历不同",
+  "explanation": "8-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l11-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "课文最后提出了什么观点？",
+  "options": [
+   "年轻人应该完全听长辈的话",
+   "人与人之间应该多一些宽容，互相理解才能摆脱代沟的苦恼",
+   "代沟问题无法解决"
+  ],
+  "correct_answer": "人与人之间应该多一些宽容，互相理解才能摆脱代沟的苦恼",
+  "explanation": "11-р догол мөр, өгүүллэгийн төгсгөл.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l11-q30",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 代沟 / 这件事 / 和 / 有关系 / 就",
+  "options": [
+   "这件事就和代沟有关系",
+   "代沟和这件事就有关系",
+   "就这件事和代沟有关系"
+  ],
+  "correct_answer": "这件事就和代沟有关系",
+  "explanation": "其实，这件事就和\"代沟\"有关系。",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l11-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 别人 / 你 / 不宽容 / 别人也就不宽容你",
+  "options": [
+   "不宽容你别人，别人也就你不宽容",
+   "别人不宽容你，你也就不宽容别人",
+   "你不宽容别人，别人也就不宽容你"
+  ],
+  "correct_answer": "你不宽容别人，别人也就不宽容你",
+  "explanation": "人与人之间应该多一些宽容的核心句.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l11-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ }
+]

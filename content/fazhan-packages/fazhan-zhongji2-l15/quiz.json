@@ -1,0 +1,559 @@
+[
+ {
+  "type": "cloze",
+  "question": "67年，对人的一生来说，是一段（ ）的时间。",
+  "options": [
+   "高潮",
+   "漫长",
+   "规矩",
+   "气氛"
+  ],
+  "correct_answer": "漫长",
+  "explanation": "漫长 = урт удаан.",
+  "order_index": 1,
+  "id": "fazhan-zhongji2-l15-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "订婚时才十五六岁，懂（ ）？",
+  "options": [
+   "俊",
+   "丑",
+   "啥",
+   "倔"
+  ],
+  "correct_answer": "啥",
+  "explanation": "啥 = юу (нутгийн аялга).",
+  "order_index": 2,
+  "id": "fazhan-zhongji2-l15-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "打那时起家里才有了点欢乐（ ）。",
+  "options": [
+   "气氛",
+   "台阶",
+   "规矩",
+   "高潮"
+  ],
+  "correct_answer": "气氛",
+  "explanation": "气氛 = уур амьсгал.",
+  "order_index": 3,
+  "id": "fazhan-zhongji2-l15-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他（ ）就吵人，不想理他。",
+  "options": [
+   "动不动",
+   "照例",
+   "反倒",
+   "总算"
+  ],
+  "correct_answer": "动不动",
+  "explanation": "动不动 = юм болгонд л.",
+  "order_index": 4,
+  "id": "fazhan-zhongji2-l15-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "娘烦（ ）了，足足喝下一灯煤油。",
+  "options": [
+   "较真",
+   "倔",
+   "惯",
+   "透"
+  ],
+  "correct_answer": "透",
+  "explanation": "透 = бүрэн, туйлдаа хүртэл.",
+  "order_index": 5,
+  "id": "fazhan-zhongji2-l15-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）家里人发现早，才活了下来。",
+  "options": [
+   "总算",
+   "照例",
+   "多亏",
+   "反而"
+  ],
+  "correct_answer": "多亏",
+  "explanation": "多亏 = ачаар.",
+  "order_index": 6,
+  "id": "fazhan-zhongji2-l15-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "以后日子长了，他们（ ）处好了。",
+  "options": [
+   "反倒",
+   "总算",
+   "假装",
+   "动不动"
+  ],
+  "correct_answer": "总算",
+  "explanation": "总算 = эцэст нь.",
+  "order_index": 7,
+  "id": "fazhan-zhongji2-l15-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "娘（ ）没听见就过去了。",
+  "options": [
+   "假装",
+   "总算",
+   "地道",
+   "较真"
+  ],
+  "correct_answer": "假装",
+  "explanation": "假装 = дүр үзүүлэх.",
+  "order_index": 8,
+  "id": "fazhan-zhongji2-l15-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "说的（ ）是一些家里家外发生的事。",
+  "options": [
+   "反而",
+   "以至",
+   "反倒",
+   "无非"
+  ],
+  "correct_answer": "无非",
+  "explanation": "无非 = зөвхөн ... байх.",
+  "order_index": 9,
+  "id": "fazhan-zhongji2-l15-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "爹脾气倔，干啥都（ ）。",
+  "options": [
+   "地道",
+   "大方",
+   "丢人",
+   "较真"
+  ],
+  "correct_answer": "较真",
+  "explanation": "较真 = нямбай, нягт нямбай.",
+  "order_index": 10,
+  "id": "fazhan-zhongji2-l15-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "爹的较真碰了（ ）。",
+  "options": [
+   "账",
+   "钉子",
+   "风光",
+   "台阶"
+  ],
+  "correct_answer": "钉子",
+  "explanation": "碰钉子 = бэрхшээлтэй тулгарах.",
+  "order_index": 11,
+  "id": "fazhan-zhongji2-l15-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "用最（ ）的北京话说：\"老人家，你还真较真啊！\"",
+  "options": [
+   "反而",
+   "地道",
+   "反倒",
+   "丢人"
+  ],
+  "correct_answer": "地道",
+  "explanation": "地道 = жинхэнэ, цэвэр.",
+  "order_index": 12,
+  "id": "fazhan-zhongji2-l15-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "咱们（ ）不能丢在北京城！",
+  "options": [
+   "反倒",
+   "挖苦",
+   "大方",
+   "丢人"
+  ],
+  "correct_answer": "丢人",
+  "explanation": "丢人 = нэр хүндээ гутаах.",
+  "order_index": 13,
+  "id": "fazhan-zhongji2-l15-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэдний цалин их ч биш, бага ч биш» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他们的工资不算多，也不算少。",
+   "他们的工资不算多钱，也不算少钱。",
+   "他们的工资多不算，少不算。"
+  ],
+  "correct_answer": "他们的工资不算多，也不算少。",
+  "explanation": "不算A，也不算B нь шууд тэмдэг нэрийн урдах байрлалд ордог.",
+  "order_index": 14,
+  "id": "fazhan-zhongji2-l15-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Түүний тусламжийн ачаар би их сургуульд орсон» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "多亏他帮助我，我才考上了大学。",
+   "我才考上了大学，多亏他帮助我才。",
+   "他帮助我多亏，我才考上了大学。"
+  ],
+  "correct_answer": "多亏他帮助我，我才考上了大学。",
+  "explanation": "多亏 нь өгүүлбэрийн эхэнд, шалтгааны өмнө ордог.",
+  "order_index": 15,
+  "id": "fazhan-zhongji2-l15-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Манай баг хожигдсон ч дасгалжуулагч биднийг загнаагүй, харин эсрэгээрээ хоолонд урив» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "反倒我们队输了球，教练没骂我们请我们吃了一顿饭。",
+   "我们队输了球，反倒教练没骂我们吃了一顿饭。",
+   "我们队输了球，教练没骂我们，反倒请我们吃了一顿饭。"
+  ],
+  "correct_answer": "我们队输了球，教练没骂我们，反倒请我们吃了一顿饭。",
+  "explanation": "反倒 нь хүлээгдээгүй үр дүнгийн өгүүлбэрт ордог.",
+  "order_index": 16,
+  "id": "fazhan-zhongji2-l15-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр Бээжинд очих болгонд тэдний тухай энэ тэрийг асуудаг» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "他总要问这问那。",
+   "他总要问那问这那本书。",
+   "他问这那问的总要。"
+  ],
+  "correct_answer": "他总要问这问那。",
+  "explanation": "V这V那 — V давтагдах дараалал зөв.",
+  "order_index": 17,
+  "id": "fazhan-zhongji2-l15-q17",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Манан их байсан тул машин маш удаан явж, нэг цаг гаруй хоцорсон» гэдгийг илэрхийлэхэд аль нь зөв бэ?",
+  "options": [
+   "雾大，车开得很慢，以致于早到了一个多小时。",
+   "雾大，车开得很慢，以致晚点一个多小时。",
+   "雾大，车开得很慢，以至晚点一个多小时。"
+  ],
+  "correct_answer": "雾大，车开得很慢，以致晚点一个多小时。",
+  "explanation": "Сөрөг үр дүнд 以致-ийг хэрэглэнэ.",
+  "order_index": 18,
+  "id": "fazhan-zhongji2-l15-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ?",
+  "options": [
+   "多亏他帮忙，我才顺利毕业。",
+   "多亏家里人发现早，不然才活了下来。",
+   "多亏家里人发现早，才活了下来。"
+  ],
+  "correct_answer": "多亏家里人发现早，不然才活了下来。",
+  "explanation": "才 ба 不然-ийг нэг өгүүлбэрт хамт хэрэглэж болохгүй.",
+  "order_index": 19,
+  "id": "fazhan-zhongji2-l15-q19",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь БУРУУ бэ?",
+  "options": [
+   "个子挺矮，长得不算丑，也不算俊。",
+   "个子挺矮，不算丑也不算俊的。",
+   "他的工作不算忙，家庭生活不算闲。"
+  ],
+  "correct_answer": "个子挺矮，不算丑也不算俊的。",
+  "explanation": "不算A也不算B нь 长得 зэрэг сэдвийг заасны дараа ордог, өгүүлбэрийн төгсгөлд 的 нэмэхгүй.",
+  "order_index": 20,
+  "id": "fazhan-zhongji2-l15-q20",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "不算A，也不算B бүтцэд A, B нь заавал эсрэг утгатай үг байх ёстой юу?",
+  "options": [
+   "тийм, заавал эсрэг утгатай байх ёстой",
+   "үгүй, ойролцоо утгатай өөр үг ч байж болно",
+   "холбоогүй"
+  ],
+  "correct_answer": "үгүй, ойролцоо утгатай өөр үг ч байж болно",
+  "explanation": "Нэг зүйлд эсрэг, өөр зүйлд ойролцоо утгатай байж болно.",
+  "order_index": 21,
+  "id": "fazhan-zhongji2-l15-q21",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "反倒 нь ямар утгыг илэрхийлдэг вэ?",
+  "options": [
+   "цаг хугацааны дараалал",
+   "хүлээгдсэнээс эсрэг, гэнэтийн үр дүн",
+   "ердийн, хүлээгдсэн үр дүн"
+  ],
+  "correct_answer": "хүлээгдсэнээс эсрэг, гэнэтийн үр дүн",
+  "explanation": "反倒 нь үргэлж эсрэг, гэнэтийн үр дүнг заана.",
+  "order_index": 22,
+  "id": "fazhan-zhongji2-l15-q22",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "以致 нь ямар төрлийн үр дүнд хэрэглэгддэг вэ?",
+  "options": [
+   "зөвхөн сөрөг, хүсээгүй үр дүнд",
+   "хоёуланд адил",
+   "зөвхөн эерэг үр дүнд"
+  ],
+  "correct_answer": "зөвхөн сөрөг, хүсээгүй үр дүнд",
+  "explanation": "以致 нь зөвхөн муу үр дүнд хэрэглэгдэнэ.",
+  "order_index": 23,
+  "id": "fazhan-zhongji2-l15-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "父母的婚姻由谁决定？",
+  "options": [
+   "由作者本人决定",
+   "由媒人决定",
+   "由爹娘（长辈）做主"
+  ],
+  "correct_answer": "由爹娘（长辈）做主",
+  "explanation": "3-р догол мөр.",
+  "order_index": 24,
+  "id": "fazhan-zhongji2-l15-q24",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "母亲为什么要喝煤油？",
+  "options": [
+   "因为她生病了",
+   "因为爹打了她两巴掌，她气得想不开",
+   "因为她不小心喝错了"
+  ],
+  "correct_answer": "因为爹打了她两巴掌，她气得想不开",
+  "explanation": "5-р догол мөр.",
+  "order_index": 25,
+  "id": "fazhan-zhongji2-l15-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "父亲常说的一句话是什么？",
+  "options": [
+   "嫁鸡随鸡，嫁狗随狗",
+   "一个巴掌拍不响",
+   "丁是丁，卯是卯，木匠手中的尺子是规矩"
+  ],
+  "correct_answer": "丁是丁，卯是卯，木匠手中的尺子是规矩",
+  "explanation": "14-р догол мөр.",
+  "order_index": 26,
+  "id": "fazhan-zhongji2-l15-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "comprehension",
+  "question": "父亲的较真在哪件事上达到了高潮？",
+  "options": [
+   "在问邻居八达岭的距离",
+   "在颐和园数台阶",
+   "在旅店坚持多交5块钱赔偿裂了的茶杯"
+  ],
+  "correct_answer": "在旅店坚持多交5块钱赔偿裂了的茶杯",
+  "explanation": "18-р догол мөр.",
+  "order_index": 27,
+  "id": "fazhan-zhongji2-l15-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "在那个黑夜里，母亲是怎样送作者的？",
+  "options": [
+   "打着手电非送到大门口，光消失后仍望着他",
+   "让他自己走，不出门送",
+   "开车送他到车站"
+  ],
+  "correct_answer": "打着手电非送到大门口，光消失后仍望着他",
+  "explanation": "22-р догол мөр.",
+  "order_index": 28,
+  "id": "fazhan-zhongji2-l15-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "comprehension",
+  "question": "文章最后，父母的生活状况是怎样的？",
+  "options": [
+   "依然住在老房子里，吃自家种的粮食，平静地生活着",
+   "已经搬到北京和作者一起住",
+   "已经都不在人世了"
+  ],
+  "correct_answer": "依然住在老房子里，吃自家种的粮食，平静地生活着",
+  "explanation": "25-р догол мөр.",
+  "order_index": 29,
+  "id": "fazhan-zhongji2-l15-q29",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 多亏 / 家里人 / 发现 / 早 / 才 / 活了下来",
+  "options": [
+   "多亏家里人发现早，才活了下来",
+   "多亏才活了下来，家里人发现早",
+   "家里人多亏发现早，才活了下来"
+  ],
+  "correct_answer": "多亏家里人发现早，才活了下来",
+  "explanation": "多亏……才…… дараалал.",
+  "order_index": 30,
+  "id": "fazhan-zhongji2-l15-q30",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 个子 / 挺矮 / 长得 / 不算丑 / 也不算俊",
+  "options": [
+   "个子挺矮，长得不算丑，也不算俊",
+   "个子不算丑，挺矮，长得也不算俊",
+   "长得个子挺矮，不算俊，也不算丑"
+  ],
+  "correct_answer": "个子挺矮，长得不算丑，也不算俊",
+  "explanation": "不算A也不算B дараалал.",
+  "order_index": 31,
+  "id": "fazhan-zhongji2-l15-q31",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "order",
+  "question": "Үгсийг эвлүүл: 路上 / 的光 / 越来越淡 / 以至 / 到 / 完全消失",
+  "options": [
+   "以至路上的光越来越淡，完全消失到",
+   "路上的光以至越来越淡，到完全消失",
+   "路上的光越来越淡，以至到完全消失"
+  ],
+  "correct_answer": "路上的光越来越淡，以至到完全消失",
+  "explanation": "以至 дараалал.",
+  "order_index": 32,
+  "id": "fazhan-zhongji2-l15-q32",
+  "skillTags": [
+   "writing"
+  ],
+  "difficulty": "hard"
+ }
+]

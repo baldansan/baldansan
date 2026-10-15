@@ -1,0 +1,25 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "fazhan-zhongji2",
+ "lessonId": "fazhan-zhongji2-l05",
+ "hskLevel": 5,
+ "lessonNumber": 5,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "再平凡也可以活成一座丰碑",
+ "mongolianTitle": "Хэчнээн энгийн ч атлаа хөшөө дурсгал болж чадна",
+ "series": "发展汉语（第二版）中级综合 II",
+ "seriesLabel_mn": "发展汉语 дунд II (≈HSK5)",
+ "source": "发展汉语（第二版）中级综合 II · 第5课 (сурах бичиг, 参考答案 (АУДИО, 课件, 教案 байхгүй — агент өөрөө бэлдсэн тайлбар))",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_answer_key_verified (参考答案)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (албан 教案 байхгүй тул)"
+ }
+}
