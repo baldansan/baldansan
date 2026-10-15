@@ -245,29 +245,32 @@ function mapSubtitleLine(row: DbSubtitleLine) {
 function mapLessonRowToSummary(row: DbLesson): LessonContent {
   const id = canonicalLessonId(row.id);
   const language = row.language?.trim() || undefined;
-  return enrichLessonContentMeta({
-    id,
-    courseId: row.course_id,
-    language,
-    title: row.title,
-    chineseTitle: row.chinese_title ?? "",
-    subtitle: row.subtitle ?? "",
-    description: row.description ?? "",
-    duration: row.duration ?? "",
-    vocabularyCount: row.vocabulary_count,
-    quizCount: row.quiz_count,
-    status: parseLessonStatus(row.status),
-    publishStatus: normalizePublishStatus(row.status),
-    videoPlaceholder: VIDEO_PLACEHOLDER,
-    watchTotalTime: durationToWatchTime(row.duration),
-    ...mapLessonMediaFields(row),
-    ...mapLessonReleaseFields(row),
-    subtitlePreview: [],
-    timedSubtitles: [],
-    vocabulary: [],
-    quizQuestions: [],
-    quizTypes: DEFAULT_QUIZ_TYPES,
-  });
+  return enrichLessonContentMeta(
+    {
+      id,
+      courseId: row.course_id,
+      language,
+      title: row.title,
+      chineseTitle: row.chinese_title ?? "",
+      subtitle: row.subtitle ?? "",
+      description: row.description ?? "",
+      duration: row.duration ?? "",
+      vocabularyCount: row.vocabulary_count,
+      quizCount: row.quiz_count,
+      status: parseLessonStatus(row.status),
+      publishStatus: normalizePublishStatus(row.status),
+      videoPlaceholder: VIDEO_PLACEHOLDER,
+      watchTotalTime: durationToWatchTime(row.duration),
+      ...mapLessonMediaFields(row),
+      ...mapLessonReleaseFields(row),
+      subtitlePreview: [],
+      timedSubtitles: [],
+      vocabulary: [],
+      quizQuestions: [],
+      quizTypes: DEFAULT_QUIZ_TYPES,
+    },
+    { skipHskParse: true }
+  );
 }
 
 function mapFullLesson(

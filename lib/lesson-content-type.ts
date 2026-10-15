@@ -102,7 +102,19 @@ export function resolveLessonContentType(lesson: LessonContent): LessonContentTy
   });
 }
 
-export function enrichLessonContentMeta(lesson: LessonContent): LessonContent {
+/**
+ * `skipHskParse: true` is for list/catalog views: `contentType`/`lessonType`
+ * above are already derived from the raw `sourceNote` string (cheap regex/tag
+ * lookups), so a list row doesn't need `enrichLessonHskContent`'s full parse
+ * of `sourceNote` into `hskStudy` (dialogues, workbook, teaching goals — the
+ * whole lesson, structurally) — that parse is the expensive part, and a list
+ * summary throws the result away immediately via `toLessonListSummary`
+ * anyway. Full single-lesson pages must keep passing this unset.
+ */
+export function enrichLessonContentMeta(
+  lesson: LessonContent,
+  options?: { skipHskParse?: boolean }
+): LessonContent {
   const contentType = resolveLessonContentType(lesson);
   const tag = resolveLessonTypeTag(lesson);
   const lessonType =
@@ -118,7 +130,8 @@ export function enrichLessonContentMeta(lesson: LessonContent): LessonContent {
           ...(lessonType ? { lessonType } : {}),
         };
 
-  return enrichLessonHskContent(enrichLessonTeachingMedia(withMeta));
+  const withMedia = enrichLessonTeachingMedia(withMeta);
+  return options?.skipHskParse ? withMedia : enrichLessonHskContent(withMedia);
 }
 
 export function isTextbookContent(lesson: LessonContent): boolean {
