@@ -6,6 +6,9 @@ import { useUiLocale } from "@/lib/i18n/ui-locale";
 
 
 import { SpeakerButton } from "@/components/tts/speaker-button";
+import { ToneHanzi, ToneLegend } from "@/components/hanzi/ToneHanzi";
+import { WordWriterPanel } from "@/components/hanzi/WordWriterPanel";
+import { isCjkChar } from "@/lib/pinyin/tone";
 
 import { LessonPlayerCard } from "@/components/lesson-player/lesson-player-shell";
 
@@ -93,6 +96,7 @@ export function LessonStepFlashcard({
   const currentKey = vocabularyWordKey(current);
 
   const isLearned = learned.has(currentKey);
+  const hasHanzi = Array.from(current.chinese ?? "").some(isCjkChar);
 
   const groupLabel = getHangulVocabGroupLabel(current);
 
@@ -180,21 +184,26 @@ export function LessonStepFlashcard({
 
 
 
-        <p className="mt-4 break-all text-5xl font-bold leading-none text-slate-900">
-
-          {current.chinese}
-
-        </p>
-
-
-
-        {current.pinyin ? (
-
-          <p className="mt-3 text-base font-medium text-slate-600">{current.pinyin}</p>
-
-        ) : null}
-
-
+        {hasHanzi ? (
+          <div className="mt-4">
+            <ToneHanzi word={current.chinese} pinyin={current.pinyin} size="xl" />
+            {current.mongolian && !showPronunciation ? (
+              <p className="mt-3 text-sm font-medium text-slate-500" translate="no">
+                {current.mongolian}
+              </p>
+            ) : null}
+            <ToneLegend />
+          </div>
+        ) : (
+          <>
+            <p className="mt-4 break-all text-5xl font-bold leading-none text-slate-900">
+              {current.chinese}
+            </p>
+            {current.pinyin ? (
+              <p className="mt-3 text-base font-medium text-slate-600">{current.pinyin}</p>
+            ) : null}
+          </>
+        )}
 
         {showPronunciation ? (
 
@@ -214,12 +223,11 @@ export function LessonStepFlashcard({
 
           <MongolianMeaningHint meaning={meaning} className="mt-3" />
 
-        ) : current.mongolian ? (
-
+        ) : current.mongolian && !hasHanzi ? (
           <p className="mt-2 text-sm font-medium text-emerald-700" translate="no">{current.mongolian}</p>
-
         ) : null}
 
+        {hasHanzi ? <WordWriterPanel word={current.chinese} /> : null}
       </div>
 
 

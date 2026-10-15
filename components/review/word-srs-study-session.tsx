@@ -2,6 +2,7 @@
 
 
 
+import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
 import Link from "next/link";
 
 import {
@@ -958,7 +959,7 @@ export function WordSrsStudySession({
 
             <div className="bs-srs-flip-face bs-srs-flip-front">
 
-              <p className="bs-srs-hanzi-only">{word.simplified}</p>
+              <ToneHanzi word={word.simplified} pinyin={word.pinyin} size="xl" showPinyin={false} />
 
               <SpeakerButton
                 text={word.simplified}
@@ -976,7 +977,7 @@ export function WordSrsStudySession({
             <div className="bs-srs-flip-face bs-srs-flip-back">
 
               <div className="flex items-center justify-center gap-2">
-                <p className="bs-srs-pinyin">{word.pinyin ?? "—"}</p>
+                <ToneHanzi word={word.simplified} pinyin={word.pinyin} size="lg" />
                 <SpeakerButton
                   text={word.simplified}
                   lang="zh"
