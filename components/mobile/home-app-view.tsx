@@ -382,17 +382,6 @@ export function HomeAppView({
         </Link>
       ) : null}
 
-      <div className="bs-home-rail-card">
-        <p className="bs-tm-sec">{tr(locale, "Хурдан эхлэх")}</p>
-        <div className="bs-home-rail-links">
-          <Link href="/review/daily">🔥 {tr(locale, "Өнөөдрийн давталт")}</Link>
-          <Link href="/games">🎮 {tr(locale, "Тоглоом")}</Link>
-          <Link href="/bichleg">📺 {tr(locale, "Дуу·Бичлэг")}</Link>
-          <Link href="/dictionary">🔍 {tr(locale, "Толь бичиг")}</Link>
-          <Link href="/library">📚 {tr(locale, "Уншлагын сан")}</Link>
-          <Link href="/books">📖 {tr(locale, "Ном сонгох")}</Link>
-        </div>
-      </div>
     </div>
   );
 
@@ -435,11 +424,13 @@ export function HomeAppView({
                 </span>
               ) : null}
             </p>
-            <div className="mt-3 flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold ring-1 ring-white/25">
-                <span aria-hidden>🔥</span>
-                {streak} {tr(locale, "өдөр")}
-              </span>
+            <div className="mt-3 flex flex-wrap items-center gap-2 empty:hidden">
+              {streak > 0 ? (
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold ring-1 ring-white/25">
+                  <span aria-hidden>🔥</span>
+                  {streak} {tr(locale, "өдөр дараалан")}
+                </span>
+              ) : null}
               {!loggedIn ? (
                 <Link
                   href="/login"
@@ -547,12 +538,20 @@ export function HomeAppView({
         />
       ) : null}
 
-      {/* Нэмэлт — номын жагсаалт ба хичээлийн доор, нүүрийг чөлөөтэй үлдээнэ */}
-      <LibraryPreviewRow items={libraryPreview} />
-
-      <DailyToneHomeCard />
-
-      {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
+      {/* Нэмэлт — эвхээстэй: нүүр нь ном + хичээл л байг */}
+      <details className="group mt-2 mb-3 rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] shadow-[var(--app-shadow)]">
+        <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-extrabold text-[var(--app-text)] [&::-webkit-details-marker]:hidden">
+          <span>📚 {tr(locale, "Нэмэлт: уншлага, дуудлага, хэлзүй")}</span>
+          <span className="text-[var(--app-muted)] transition-transform group-open:rotate-180" aria-hidden>
+            ▾
+          </span>
+        </summary>
+        <div className="px-3 pb-3 pt-1">
+          <LibraryPreviewRow items={libraryPreview} />
+          <DailyToneHomeCard />
+          {selectedLang !== "ko" ? <HelzuiHomeCard /> : null}
+        </div>
+      </details>
 
       {bichlegContinue ? (
         <Link href={bichlegContinue.href} className="bs-tm-continue bs-desk-hide">

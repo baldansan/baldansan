@@ -38,6 +38,19 @@ export const HSK_HOME_LEVELS = [
 
 export type HskHomeLevelId = (typeof HSK_HOME_LEVELS)[number]["courseId"];
 
+/**
+ * Every book ships with a drawn cover in `public/covers/<courseId>.svg`
+ * (one template, one colour per level). A cover uploaded through admin
+ * still wins; this only fills the gaps so the grid never mixes drawn
+ * fallbacks with real art.
+ */
+export function defaultCoverUrl(courseId: string): string | null {
+  if (/^hsk[1-6]$/.test(courseId) || courseId.startsWith("fazhan-")) {
+    return `/covers/${courseId}.svg`;
+  }
+  return null;
+}
+
 function liveCourseEntry(
   chipId: string,
   chipLabel: string,
@@ -52,7 +65,7 @@ function liveCourseEntry(
     available,
     title: courseDisplayTitle(courseId, meta.title, chipLabel),
     subtitle: courseDisplaySubtitle(courseId, meta.subtitle),
-    coverUrl: meta.coverUrl ?? null,
+    coverUrl: meta.coverUrl ?? defaultCoverUrl(courseId),
     lessons: meta.lessons,
     allLessonsHref: available ? `/courses/${courseId}` : null,
   };
@@ -70,6 +83,7 @@ function placeholderHskEntry(
     available: false,
     title: chipLabel,
     subtitle: "Удахгүй",
+    coverUrl: defaultCoverUrl(courseId),
     lessons: [],
     allLessonsHref: null,
   };
@@ -189,6 +203,7 @@ function placeholderFazhanEntry(
     available: false,
     title: level.chipLabel,
     subtitle: `${level.hskEquivalent} · Удахгүй`,
+    coverUrl: defaultCoverUrl(level.courseId),
     lessons: [],
     allLessonsHref: null,
   };
