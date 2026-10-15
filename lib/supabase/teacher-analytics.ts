@@ -265,11 +265,7 @@ export async function getClassroomProgressAnalytics(
     .filter(Boolean) as string[];
   const { counts: vocabCounts, blocked: vocabBlocked } =
     await tryFetchLearnedVocabCounts(linkedIds);
-  if (vocabBlocked) {
-    warnings.push(
-      "Learned vocabulary counts may be unavailable (RLS: teacher cannot read all student progress)."
-    );
-  }
+  // Vocabulary counts are optional; a blocked read just shows "—" instead of a warning.
 
   let learnedTotal: number | null = null;
   if (linkedIds.length > 0 && !vocabBlocked) {
@@ -411,11 +407,7 @@ export async function getClassroomStudentProgress(
     .filter(Boolean) as string[];
   const { counts: vocabCounts, blocked } =
     await tryFetchLearnedVocabCounts(linkedIds);
-  if (blocked) {
-    warnings.push(
-      "Per-student vocabulary counts may be unavailable due to RLS."
-    );
-  }
+  void blocked;
 
   return withWarnings(
     buildStudentProgressRows(
