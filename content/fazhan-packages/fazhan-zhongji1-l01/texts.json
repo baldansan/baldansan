@@ -1596,7 +1596,7 @@
    },
    {
     "zh": "从那时起，一天不知要从外地运来多少只羊，才能满足北京人的馋嘴呢！",
-    "pinyin": "Cóng nàshí qǐ, yītiān bùzhī yào cóng wàidì yùnlái duōshǎo zhǐ yáng, cái néng mǎnzú Běijīngrén de chánzuǐ ne!",
+    "pinyin": "Cóng nàshí qǐ, yìtiān bùzhī yào cóng wàidì yùnlái duōshǎo zhǐ yáng, cái néng mǎnzú Běijīngrén de chánzuǐ ne!",
     "mn": "Тэр цагаас эхлээд өдөрт хэчнээн хонь өөр нутгаас тээвэрлэж байж Бээжингийнхний идэх хүслийг хангадгийг бүү мэд!",
     "paragraph": 7,
     "tokens": [
@@ -1618,7 +1618,7 @@
      },
      {
       "zh": "一天",
-      "py": "yītiān"
+      "py": "yìtiān"
      },
      {
       "zh": "不知",
@@ -1971,7 +1971,7 @@
    },
    {
     "zh": "秋深了，冬天快到了，年轻人从床底下拿出休息了一年的冰鞋，把它擦得亮亮的，等着北海结冰。",
-    "pinyin": "Qiū shēn le, dōngtiān kuài dào le, niánqīngrén cóng chuáng dǐxià náchū xiūxī le yīnián de bīngxié, bǎ tā cā de liàngliàng de, děng zhe Běihǎi jiébīng.",
+    "pinyin": "Qiū shēn le, dōngtiān kuài dào le, niánqīngrén cóng chuáng dǐxià náchū xiūxī le yìnián de bīngxié, bǎ tā cā de liàngliàng de, děng zhe Běihǎi jiébīng.",
     "mn": "Намар гүнзгийрч өвөл ойртоход залуус орныхоо доороос бүтэн жил хэвтсэн тэшүүрээ гаргаж, гялалзтал нь арчаад Бэйхай хөлдөхийг хүлээнэ.",
     "paragraph": 9,
     "tokens": [
@@ -2041,7 +2041,7 @@
      },
      {
       "zh": "一年",
-      "py": "yīnián"
+      "py": "yìnián"
      },
      {
       "zh": "的",
@@ -2700,7 +2700,7 @@
     },
     {
      "chinese": "他和我一起度过了小学和中学时代。",
-     "pinyin": "Tā hé wǒ yī qǐ dùguò le xiǎo xué hé zhōng xué shí dài.",
+     "pinyin": "Tā hé wǒ yī qǐ dùguò le xiǎoxué hé zhōngxué shí dài.",
      "mongolian": "Тэр бид хоёр бага, дунд сургуулиа хамт өнгөрөөсөн."
     },
     {
@@ -2923,7 +2923,7 @@
     },
     {
      "chinese": "我多么熟悉这里的一切啊！",
-     "pinyin": "Wǒ duōme shúxī zhèlǐ de yīqiè a!",
+     "pinyin": "Wǒ duōme shúxī zhèlǐ de yíqiè a!",
      "mongolian": "Би эндхийн бүхнийг ямар сайн мэдэх вэ!"
     },
     {
@@ -2933,7 +2933,7 @@
     },
     {
      "chinese": "要是我的汉语说得像中国人一样，那该多么好啊！",
-     "pinyin": "Yàoshì wǒ de hànyǔ shuō de xiàng Zhōngguórén yíyàng, nà gāi duōme hǎo a!",
+     "pinyin": "Yàoshì wǒ de Hànyǔ shuō de xiàng Zhōngguórén yíyàng, nà gāi duōme hǎo a!",
      "mongolian": "Хятад хэлээ хятад хүн шиг ярьдаг бол ямар сайхан байх вэ!"
     }
    ],
@@ -3143,7 +3143,7 @@
      "usage_mn": "Газар (дайрах) ба хугацаа/үйл явц (дамжих) хоёуланд нь.",
      "example": {
       "chinese": "我去邮局经过超市，可以顺便买面包。",
-      "pinyin": "Wǒ qù yóu jú jīngguò chāo shì, kě yǐ shùn biàn mǎi miàn bāo.",
+      "pinyin": "Wǒ qù yóu jú jīngguò chāoshì, kěyǐ shùn biàn mǎi miàn bāo.",
       "mongolian": "Шуудан руу явахдаа дэлгүүрээр дайрна, завшаанд нь талх авч болно."
      }
     }
@@ -3485,7 +3485,7 @@
     },
     {
      "chinese": "那些年轻人已经把冰鞋擦得亮亮的了。",
-     "pinyin": "Nà xiē niánqīngrén yǐjīng bǎ bīngxié cā de liàngliàngde le.",
+     "pinyin": "Nàxiē niánqīngrén yǐjīng bǎ bīngxié cā de liàngliàngde le.",
      "mongolian": "Тэр залуус тэшүүрээ аль хэдийн гялалзтал нь арччихсан."
     },
     {
@@ -3495,7 +3495,7 @@
     },
     {
      "chinese": "弟弟把屋子弄得乱七八糟。",
-     "pinyin": "Dì dì bǎ wūzi nòng de luànqībāzāo.",
+     "pinyin": "Dìdi bǎ wūzi nòng de luànqībāzāo.",
      "mongolian": "Дүү өрөөг замбараагүй болгочихжээ."
     },
     {
@@ -3730,7 +3730,7 @@
    "examples": [
     {
      "chinese": "一天不知要从外地运来多少只羊，才能满足北京人的馋嘴呢！",
-     "pinyin": "Yītiān bùzhī yào cóng wàidì yùnlái duōshǎo zhǐ yáng, cái néng mǎnzú Běijīngrén de chánzuǐ ne!",
+     "pinyin": "Yìtiān bùzhī yào cóng wàidì yùnlái duōshǎo zhǐ yáng, cái néng mǎnzú Běijīngrén de chánzuǐ ne!",
      "mongolian": "Өдөрт хэчнээн хонь өөр нутгаас тээвэрлэж байж бээжингийнхний идэх хүслийг хангадгийг бүү мэд!"
     },
     {
@@ -3904,7 +3904,7 @@
   }
  },
  "workbookReading": {
-  "answer_source": "答案本 (初级综合1参考答案.pdf → workbook/zhongji-zonghe-1-answers.md х.1–2) — 综合练习 一–七",
+  "answer_source": "发展汉语 中级综合 I 参考答案 (答案本 х. 1–2) + 教案 PPT 22 (练习六 хүснэгт); нээлттэй даалгавар (七-2, 八, 九) — эх бичвэр/загвар хариулт.",
   "parts": []
  }
 }

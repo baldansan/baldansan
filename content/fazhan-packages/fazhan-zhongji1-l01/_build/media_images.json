@@ -61,5 +61,12 @@
   "title": "心儿里美",
   "role": "illustration",
   "section": "vocabulary"
+ },
+ {
+  "id": "ai-four-seasons",
+  "file": "images/ai-four-seasons.png",
+  "title": "Бээжингийн дөрвөн улирал (AI зураг)",
+  "role": "illustration",
+  "section": "teacher-intro"
  }
 ]

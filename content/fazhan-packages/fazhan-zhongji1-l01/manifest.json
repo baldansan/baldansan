@@ -20,7 +20,7 @@
  "audio": {
   "text": "audio/fazhan-zhongji1-01-text.mp3",
   "words": "audio/fazhan-zhongji1-01-words.mp3",
-  "vocabularyClips": "audio/words/w01..w42.mp3 (42, албан 生词 бичлэгээс хайчилсан)"
+  "vocabularyClips": "audio/words/w01..w42.mp3 (албан 生词 бичлэгээс хайчилсан)"
  },
  "media": {
   "lessonId": "fazhan-zhongji1-l01",
@@ -87,12 +87,19 @@
     "title": "心儿里美",
     "role": "illustration",
     "section": "vocabulary"
+   },
+   {
+    "id": "ai-four-seasons",
+    "file": "images/ai-four-seasons.png",
+    "title": "Бээжингийн дөрвөн улирал (AI зураг)",
+    "role": "illustration",
+    "section": "teacher-intro"
    }
   ]
  },
  "verification": {
   "answerStatus": "official_answer_key_verified (参考答案)",
-  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан, OCR биш)",
-  "teacherLayer": "教案 (徐桂梅) + PPT 课件-д тулгуурласан"
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "教案 + PPT 课件-д тулгуурласан"
  }
 }
