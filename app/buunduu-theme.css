@@ -1243,3 +1243,35 @@ body{
 .bs-song--kid .bs-song-line-py{font-size:15px}
 .bs-song--kid .bs-song-line--current .bs-song-line-py{font-size:17px}
 .bs-song--kid .bs-song-line-mn{font-size:15px}
+
+/* === Хөгийн өнгө (ToneHanzi) — цагаан ба харанхуй дэвсгэр дээр уншигдах дунд өнгө === */
+:root{
+  --tone-1:#e5484d; /* 1-р хөг: улаан */
+  --tone-2:#d9890a; /* 2-р хөг: шар/улбар */
+  --tone-3:#1f9d55; /* 3-р хөг: ногоон */
+  --tone-4:#2f6fe0; /* 4-р хөг: цэнхэр */
+  --tone-0:#8a949e; /* хөггүй: саарал */
+}
+.bs-tone-1{color:var(--tone-1)}
+.bs-tone-2{color:var(--tone-2)}
+.bs-tone-3{color:var(--tone-3)}
+.bs-tone-4{color:var(--tone-4)}
+.bs-tone-0{color:var(--tone-0)}
+.bs-tone-word{display:inline-flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:0 .12em;line-height:1;vertical-align:bottom}
+.bs-tone-word--plain{flex-direction:column;align-items:center}
+.bs-tone-unit{display:inline-flex;flex-direction:column;align-items:center}
+.bs-tone-py{font-family:var(--bs-ui);font-weight:800;line-height:1.15;white-space:nowrap;color:var(--bs-ink-2)}
+.bs-tone-py.bs-tone-1{color:var(--tone-1)}.bs-tone-py.bs-tone-2{color:var(--tone-2)}.bs-tone-py.bs-tone-3{color:var(--tone-3)}.bs-tone-py.bs-tone-4{color:var(--tone-4)}.bs-tone-py.bs-tone-0{color:var(--tone-0)}
+.bs-tone-zh{font-family:var(--bs-zh);font-weight:900;line-height:1.15}
+.bs-tone-xl .bs-tone-zh{font-size:60px}.bs-tone-xl .bs-tone-py{font-size:20px}
+.bs-tone-lg .bs-tone-zh{font-size:40px}.bs-tone-lg .bs-tone-py{font-size:15px}
+.bs-tone-md .bs-tone-zh{font-size:26px}.bs-tone-md .bs-tone-py{font-size:12px}
+.bs-tone-sm .bs-tone-zh{font-size:18px}.bs-tone-sm .bs-tone-py{font-size:10px}
+.bs-tone-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 12px;margin:8px 0 0;font-size:11px;font-weight:800}
+.bs-tone-legend-item{display:inline-flex;align-items:center;gap:4px}
+.bs-tone-legend-dot{width:8px;height:8px;border-radius:999px;background:currentColor}
+.bs-word-writer{margin-top:12px;width:100%}
+.bs-word-writer-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:0 16px;border:1px solid var(--bs-line);border-radius:999px;background:#fff;font-size:13px;font-weight:800;color:var(--bs-green-700);cursor:pointer}
+.bs-word-writer-toggle[aria-expanded="true"]{background:var(--bs-green-50);border-color:var(--bs-green)}
+.bs-word-writer .bs-char-writer{margin-top:0}
+.bs-word-writer .bs-mizige{max-width:220px;margin:0 auto}

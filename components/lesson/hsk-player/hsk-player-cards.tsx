@@ -1,5 +1,6 @@
 "use client";
 
+import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 
@@ -189,12 +190,7 @@ export function KeyPhraseCard({
         alt={chinese}
       />
       <div className="mt-4 text-center">
-        <p className="text-5xl font-bold leading-none" style={{ color: HSK_PLAYER.text }}>
-          {chinese}
-        </p>
-        <p className="mt-2 text-xl font-semibold" style={{ color: HSK_PLAYER.primary }}>
-          {pinyin}
-        </p>
+        <ToneHanzi word={chinese} pinyin={pinyin} size="xl" />
         <p translate="no" className="mt-2 text-base" style={{ color: HSK_PLAYER.muted }}>
           {mongolian}
         </p>

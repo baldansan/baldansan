@@ -1,5 +1,6 @@
 "use client";
 
+import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
 import Link from "next/link";
 import Image from "next/image";
 import { useCallback, useEffect, useMemo, useState, type KeyboardEvent } from "react";
@@ -267,9 +268,7 @@ export function HskFlashcardVocabularyStudy({
                 />
               ) : null}
             </div>
-            <p className="text-5xl font-bold leading-none text-slate-900 sm:text-6xl">
-              {current?.chinese}
-            </p>
+            <ToneHanzi word={current?.chinese ?? ""} pinyin={current?.pinyin} size="xl" showPinyin={false} />
             <p className="mt-4 text-xs text-slate-500">
               Мэдэхгүй бол дарж хараарай
             </p>
@@ -280,10 +279,7 @@ export function HskFlashcardVocabularyStudy({
               flipped ? "" : "invisible"
             }`}
           >
-            <p className="text-3xl font-bold text-slate-900">{current?.chinese}</p>
-            {current?.pinyin ? (
-              <p className="text-lg font-medium text-emerald-700">{current.pinyin}</p>
-            ) : null}
+            <ToneHanzi word={current?.chinese ?? ""} pinyin={current?.pinyin} size="lg" />
             {current?.mongolian ? (
               <p className="text-base text-slate-700" translate="no">{current.mongolian}</p>
             ) : null}

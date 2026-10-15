@@ -1,5 +1,6 @@
 "use client";
 
+import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { SpeakerButton } from "@/components/tts/speaker-button";
@@ -215,14 +216,9 @@ export function VocabularyFlashcardStudy({
             />
           </div>
 
-          <p className="mt-2 text-5xl font-bold leading-none text-slate-900 sm:text-6xl">
-            {current.chinese}
-          </p>
-          {current.pinyin ? (
-            <p className="mt-3 text-lg font-medium text-emerald-700">
-              {current.pinyin}
-            </p>
-          ) : null}
+          <div className="mt-2">
+            <ToneHanzi word={current.chinese} pinyin={current.pinyin} size="xl" />
+          </div>
           {showPronunciation ? (
             <MongolianPronunciationHint
               pronunciation={pronunciation}

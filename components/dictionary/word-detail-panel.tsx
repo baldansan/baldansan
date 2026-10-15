@@ -1,5 +1,7 @@
 "use client";
 
+import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
+import { WordWriterPanel } from "@/components/hanzi/WordWriterPanel";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ConfusableChars } from "@/components/hanzi/confusable-chars";
@@ -71,9 +73,8 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
     <div className="bs-dict-panel" translate="no">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
-          <p className="hanzi text-5xl font-bold leading-tight text-[var(--app-text)]">{word.simplified}</p>
+          <ToneHanzi word={word.simplified} pinyin={word.pinyin} size="xl" className="!items-start" />
           {showTraditional ? <p className="hanzi mt-0.5 text-sm text-slate-400">{word.traditional}</p> : null}
-          <p className="mt-1 text-lg font-semibold text-emerald-700">{word.pinyin}</p>
         </div>
         <SpeakerButton
           text={word.simplified}
@@ -83,6 +84,7 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
           showInlineError={false}
         />
       </div>
+      <WordWriterPanel word={word.simplified} className="!mt-2 !text-left" />
       <div className="mt-2 flex flex-wrap gap-1.5">
         {word.hsk_level != null && word.hsk_level !== "" ? (
           <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-bold text-emerald-700 ring-1 ring-emerald-200">

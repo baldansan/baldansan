@@ -1,5 +1,7 @@
 "use client";
 
+import { WordWriterPanel } from "@/components/hanzi/WordWriterPanel";
+import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
@@ -131,7 +133,7 @@ export function KanjiDetailClient({
 
       <MobileCard className="mb-4 text-center !p-5">
         <div className="flex items-start justify-center gap-2">
-          <p className="text-6xl font-bold text-[var(--app-text)]" translate="no">{word.chinese}</p>
+          <ToneHanzi word={word.chinese} pinyin={word.pinyin} size="xl" />
           <SpeakerButton
             text={word.chinese}
             lang={ttsLang}
@@ -141,7 +143,7 @@ export function KanjiDetailClient({
             size="md"
           />
         </div>
-        <p className="mt-3 text-xl text-emerald-700" translate="no">{word.pinyin}</p>
+        <WordWriterPanel word={word.chinese} />
         <p className="mt-2 text-base text-[var(--app-text)]" translate="no">{word.mongolian}</p>
         <p className="mt-3 text-xs text-[var(--app-muted)]">
           {taskCount} {tr(locale, "хичээлд орсон")}

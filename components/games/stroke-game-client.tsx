@@ -1,5 +1,6 @@
 "use client";
 
+import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
 import Link from "next/link";
 import { Fragment, useMemo, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
@@ -199,10 +200,7 @@ export function StrokeGameClient({
               </>
             ) : (
               <>
-                <p className="text-5xl font-bold text-[var(--app-text)]">
-                  {current.chinese}
-                </p>
-                <p className="mt-2 text-lg text-emerald-700">{current.pinyin}</p>
+                <ToneHanzi word={current.chinese} pinyin={current.pinyin} size="xl" />
                 <p className="mt-1 text-sm text-[var(--app-muted)]" translate="no">
                   {current.mongolian}
                 </p>

@@ -1,5 +1,6 @@
 "use client";
 
+import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
 import { useState } from "react";
 import { MotionButton } from "@/components/motion/motion-pressable";
 import { VocabFlipCard } from "@/components/motion/vocab-flip-card";
@@ -45,7 +46,7 @@ export function VocabCard({
 
   const front = (
     <div className="flex flex-col items-center justify-center gap-4 py-6">
-      <span className="text-5xl font-bold text-slate-900">{word.zh}</span>
+      <ToneHanzi word={word.zh} pinyin={word.pinyin} size="xl" showPinyin={false} />
       <div onClick={(e) => e.stopPropagation()} role="presentation">
         <SpeakerButton
           text={word.zh}
@@ -62,10 +63,7 @@ export function VocabCard({
 
   const back = (
     <div className="flex flex-col items-center gap-3 py-4">
-      <span className="text-3xl font-bold text-slate-900">{word.zh}</span>
-      <p className="text-lg font-medium" style={{ color: EXERCISE_PRIMARY }}>
-        {word.pinyin}
-      </p>
+      <ToneHanzi word={word.zh} pinyin={word.pinyin} size="lg" />
       <p className="text-base text-slate-700" translate="no">{word.mn}</p>
       {word.example_zh ? (
         <p
