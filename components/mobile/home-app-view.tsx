@@ -226,8 +226,14 @@ export function HomeAppView({
   const lessons = useMemo(() => {
     const base = activeCourse?.lessons ?? [];
     if (selectedLang !== "zh" || !hskHydrated) return base;
+    // A book that is itself one HSK level (hsk1…hsk6, 发展汉语 volumes)
+    // shows all its lessons — otherwise a stored level of 4 with a stored
+    // book of HSK 1 filtered the list down to nothing. The global level
+    // only narrows mixed-level courses.
+    if (activeSeries === "fazhan") return base;
+    if (activeCourse && resolveCatalogChipLevel(activeCourse) != null) return base;
     return filterLessonsByActiveHskLevel(base, activeHskLevel);
-  }, [activeCourse?.lessons, selectedLang, hskHydrated, activeHskLevel]);
+  }, [activeCourse, activeSeries, selectedLang, hskHydrated, activeHskLevel]);
   const lessonIds = useMemo(() => lessons.map((l) => l.id), [lessons]);
 
   useEffect(() => {
