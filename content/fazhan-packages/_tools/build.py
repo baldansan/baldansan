@@ -166,10 +166,11 @@ for p in WB_READING:
         if p["answer_type"] == "category": d["options"] = {"A": p["bank"][0], "B": p["bank"][1]}; d["answer"] = "A" if a == p["bank"][0] else "B"; d["answer_text"] = a
         items.append(d)
     part = {"part": p["part"], "type": p["answer_type"], "instruction_mn": p["instruction_mn"], "items": items}
+    if p.get("instruction_zh"): part["instruction_zh"] = p["instruction_zh"]
     if p.get("bank") and p["answer_type"] == "word": part["bank"] = p["bank"]
     parts.append(part)
 n_shi = sum(len(items) for g, items in SHIYISHI)
-parts.insert(0, {"part": 0, "type": "sentence", "instruction_mn": f"综合注释 试一试 — дүрэм бүрийн номын дасгал БҮГД ({n_shi}), хариулт 参考答案; grammar.json-д эдгээрээс заримыг интерактив болгосон.",
+parts.insert(0, {"part": 0, "type": "sentence", "instruction_zh": "综合注释 试一试", "instruction_mn": f"Дүрмийн дасгал · 综合注释 试一试 — дүрэм бүрийн номын дасгал БҮГД ({n_shi}), хариулт 参考答案; grammar.json-д эдгээрээс заримыг интерактив болгосон.",
     "items": [{"n": f"{g[0]}-{n}", "question_zh": q, "answer": a, "explanation_mn": e, "grammar": g} for g, items in SHIYISHI for n, q, a, e in items]})
 workbook = {"reading": {"parts": parts},
     "writing": {"items": [{"n": 1, "prompt_mn": WRITING["title_mn"], "question_zh": WRITING["prompt_zh"], "answer": WRITING["zh"],
