@@ -1,0 +1,10 @@
+# Source material for the 发展汉语 (fazhan) lesson pipeline: raw textbook
+# OCR, build scripts, FLAT-package zips and AI-generated images used only
+# to author lessons locally and import them via the admin UI upload flow.
+# Nothing in the deployed app reads this directory at build or request
+# time (lessons live in the database once imported), and it has grown
+# past 160MB, which was tipping Vercel builds over their size limit and
+# causing every deployment since early October to fail silently (site
+# kept serving the last successful build). Keep it in git for our own
+# reference, just don't ship it.
+content/fazhan-packages
