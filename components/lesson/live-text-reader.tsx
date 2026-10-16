@@ -14,6 +14,7 @@ import {
   type WordTapPayload,
 } from "@/components/lesson/word-tap-sheet";
 import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
+import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import { coalesceSentenceTokens } from "@/lib/lesson/coalesce-text-tokens";
 import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import {
@@ -183,6 +184,9 @@ export function LiveTextReader({
           <div className="bs-txt-mn-line">
             <MnGrammarTermText text={sentence.mn} />
           </div>
+        ) : null}
+        {sentence.zh ? (
+          <PronunciationCheck compact text={sentence.zh} pinyin={sentence.pinyin} />
         ) : null}
         {renderSentenceNote(sentence, si, hasNote, noteOpen)}
       </div>

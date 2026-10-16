@@ -6,6 +6,7 @@ import { AppShell } from "@/components/app/app-shell";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { BichlegSlangSheet } from "@/components/bichleg/bichleg-slang-sheet";
+import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import {
   formatSeriesEpisodeBadge,
   type SubtitleSlangNote,
@@ -163,6 +164,8 @@ export function BichlegFeedClient({
   const [liked, setLiked] = useState<Record<string, boolean>>({});
   const [bookmarked, setBookmarked] = useState<Record<string, boolean>>({});
   const [showKeys, setShowKeys] = useState(false);
+  // 🎤 Дуудлага шалгах — идэвхтэй мөрийг микрофоноор хэлж үнэлүүлэх
+  const [pronLine, setPronLine] = useState<{ zh: string; pinyin: string | null } | null>(null);
   const [pickedWord, setPickedWord] = useState<PickedWord | null>(null);
   const [pickedSlangNote, setPickedSlangNote] = useState<SubtitleSlangNote | null>(
     null
@@ -812,6 +815,19 @@ export function BichlegFeedClient({
                     >
                       <BichlegIcon name="book" className="bs-bichleg-action-icon" />
                     </button>
+                    {activeSubtitle?.zh ? (
+                      <button
+                        type="button"
+                        className="bs-bichleg-action"
+                        aria-label={tr(locale, "Дуудлага шалгах")}
+                        onClick={() => {
+                          pausePlayback();
+                          setPronLine({ zh: activeSubtitle.zh ?? "", pinyin: activeSubtitle.pinyin ?? null });
+                        }}
+                      >
+                        <span className="bs-bichleg-action-icon" aria-hidden>🎤</span>
+                      </button>
+                    ) : null}
                     <button
                       type="button"
                       className="bs-bichleg-action"
@@ -886,6 +902,27 @@ export function BichlegFeedClient({
 
         {pickedSlangNote ? (
           <BichlegSlangSheet note={pickedSlangNote} onClose={handleSlangClose} />
+        ) : null}
+
+        {pronLine ? (
+          <div className="bs-bichleg-sheet-backdrop" onClick={() => setPronLine(null)}>
+            <div className="bs-bichleg-sheet" onClick={(e) => e.stopPropagation()}>
+              <p className="bs-bichleg-sheet-title">🎤 {tr(locale, "Дуудлага шалгах")}</p>
+              <p className="bs-bichleg-sheet-zh hanzi" translate="no">{pronLine.zh}</p>
+              {pronLine.pinyin ? (
+                <p className="bs-bichleg-sheet-py" translate="no">{pronLine.pinyin}</p>
+              ) : null}
+              <PronunciationCheck text={pronLine.zh} pinyin={pronLine.pinyin} />
+              <button
+                type="button"
+                className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--full"
+                style={{ marginTop: 12 }}
+                onClick={() => setPronLine(null)}
+              >
+                {tr(locale, "▶ Үргэлжлүүлэх")}
+              </button>
+            </div>
+          </div>
         ) : null}
 
         {pickedWord ? (

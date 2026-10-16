@@ -1,0 +1,35 @@
+/* 🎤 Дуудлагын үнэлгээ — PronunciationCheck */
+.bs-pc{margin-top:10px;font-size:14px;color:var(--app-text,#1e293b)}
+.bs-pc--compact{margin-top:6px}
+.bs-pc-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.bs-pc-btn{display:inline-flex;align-items:center;gap:7px;border:1px solid #c7f0d8;background:#f0fdf4;color:#166534;
+  border-radius:999px;padding:8px 14px;font-weight:700;font-size:13px;cursor:pointer;transition:background .15s,transform .1s}
+.bs-pc--compact .bs-pc-btn{padding:5px 10px;font-size:12px}
+.bs-pc-btn:active{transform:scale(.97)}
+.bs-pc-btn:disabled{opacity:.6;cursor:default}
+.bs-pc-btn--live{background:#fee2e2;border-color:#fca5a5;color:#991b1b}
+.bs-pc-btn--live .bs-pc-mic{animation:bs-pc-pulse 1s ease-in-out infinite}
+@keyframes bs-pc-pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.25)}}
+.bs-pc-play{width:34px;height:34px;border-radius:10px;border:1px solid #e2e8f0;background:#fff;cursor:pointer;font-size:16px;display:grid;place-items:center}
+.bs-pc-hint{margin:8px 0 0;color:#475569;font-size:13px}
+.bs-pc-hint b{font-size:16px;color:#0f172a}
+.bs-pc-err{margin:8px 0 0;color:#b91c1c;font-size:13px;line-height:1.5}
+.bs-pc--unsupported{color:#64748b;font-size:12px;line-height:1.5}
+.bs-pc-result{margin-top:10px;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:12px}
+.bs-pc-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.bs-pc-pct{font-weight:900;font-size:22px;letter-spacing:-.02em}
+.bs-pc-pct--good{color:#16a34a}.bs-pc-pct--mid{color:#d97706}.bs-pc-pct--low{color:#dc2626}
+.bs-pc-verdict{font-weight:700;color:#334155}
+.bs-pc-pts{margin-left:auto;background:#fef3c7;color:#92400e;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:800}
+.bs-pc-chars{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.bs-pc-ch{display:inline-flex;flex-direction:column;align-items:center;min-width:34px;padding:4px 6px;border-radius:10px;line-height:1.1}
+.bs-pc-ch small{font-size:11px;opacity:.85}
+.bs-pc-ch b{font-size:22px;font-weight:600}
+.bs-pc-ch--ok{background:#dcfce7;color:#166534}
+.bs-pc-ch--tone{background:#fef9c3;color:#854d0e}
+.bs-pc-ch--bad{background:#fee2e2;color:#991b1b}
+.bs-pc-tones{margin:10px 0 0;padding:0 0 0 18px;font-size:13px;color:#854d0e}
+.bs-pc-heard{margin:8px 0 0;font-size:12px;color:#64748b}
+.bs-pc-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.bs-pc-again{border:none;background:#16a34a;color:#fff;border-radius:999px;padding:8px 14px;font-weight:700;font-size:13px;cursor:pointer}
+.bs-pc-again--ghost{background:#f1f5f9;color:#334155}

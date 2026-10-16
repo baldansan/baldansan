@@ -683,6 +683,24 @@ export function HomeAppView({
         </div>
       </details>
 
+      {/* Ярилцах — AI ролийн яриа (нэг жижиг блок) */}
+      <Link href="/talk" className="bs-tm-continue mb-3">
+        <span
+          className="bs-tm-continue-ic"
+          style={{ background: "linear-gradient(135deg, #34d399, #059669)" }}
+          aria-hidden
+        >
+          💬
+        </span>
+        <span className="min-w-0 flex-1">
+          <p className="bs-tm-continue-kicker">{tr(locale, "Ярилцах")}</p>
+          <p className="bs-tm-continue-title">{tr(locale, "Дэлгүүр, гуанз, такси — хятадаар ярьж үз")}</p>
+        </span>
+        <span className="bs-tm-card-chev" aria-hidden>
+          ›
+        </span>
+      </Link>
+
       {bichlegContinue ? (
         <PrefetchLink href={bichlegContinue.href} className="bs-tm-continue bs-desk-hide">
           <span
