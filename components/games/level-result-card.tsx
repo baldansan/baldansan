@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
+import { emitCelebrate } from "@/lib/celebrate/celebrate-events";
 import { levelXp, starsFor, type LevelMeta } from "@/lib/games/level-core";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { tr } from "@/lib/i18n/translate";
@@ -35,6 +36,11 @@ export function LevelResultCard({
   const passed = stars >= 1;
   const xp = levelXp(correct, meta.isBoss);
   const [lit, setLit] = useState(0);
+
+  useEffect(() => {
+    if (passed) emitCelebrate({ kind: "level_done" });
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- үе бүрт нэг л удаа
+  }, [meta.level]);
 
   useEffect(() => {
     setLit(0);

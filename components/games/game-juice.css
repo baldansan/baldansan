@@ -108,7 +108,7 @@
   margin-bottom: 26px;
   padding: 6px 10px;
   border-radius: 12px 12px 12px 3px;
-  background: #fff;
+  background:var(--bs-card);
   box-shadow: 0 4px 12px rgba(15, 27, 20, 0.12);
   font-size: 12px;
   font-weight: 800;
@@ -132,7 +132,7 @@
   height: 32px;
   border: 1px solid var(--app-border, #e7ece8);
   border-radius: 999px;
-  background: #fff;
+  background:var(--bs-card);
   font-size: 14px;
   cursor: pointer;
   line-height: 1;

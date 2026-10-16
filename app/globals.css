@@ -60,6 +60,10 @@ body {
   line-height: 1.65;
 }
 
+/*
+ * Системийн dark горимд автоматаар ХАРАНХУЙ болохгүй — зөвхөн
+ * <html data-theme="dark"> (lib/theme/theme-pref, Тохиргоо → Харагдах байдал) удирдана.
+ */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
@@ -436,3 +440,219 @@ html.ui-zh-pending body { visibility: hidden; }
 /* /books эх сурвалж — хариулт нуух горим */
 .src-hide-answers .src-answer { display: none; }
 .src-hide-answers .src-answer-opt { font-weight: inherit; color: inherit; }
+
+
+/* ============================================================
+   ХАРАНХУЙ ГОРИМ — html[data-theme="dark"]
+   Эх сурвалж: lib/theme/theme-pref.ts (Тохиргоо → Харагдах байдал).
+   1) --bs-* / --app-* / --tone-* токенуудыг бараан хувилбараар дахин тодорхойлно
+   2) Хамгийн их хэрэглэгддэг Tailwind тогтмол өнгөнүүдийг (bg-white, text-slate-* …)
+      энд нэг дор дарж бичнэ — файл бүрийг засахгүйгээр бүх дэлгэц хамрагдана.
+      (Tailwind v4 утилит нь @layer дотор тул энэ unlayered CSS үргэлж давуу.)
+   Admin / багш / байгууллагын замд data-theme үргэлж "light" (ThemeController).
+   ============================================================ */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #0f1512;
+  --foreground: #e8efea;
+
+  /* --app-* (mobile shell) */
+  --app-outer: #0b100d;
+  --app-bg: #0f1512;
+  --app-card: #182019;
+  --app-primary: #2ecc6a;
+  --app-primary-dark: #1fb85a;
+  --app-primary-light: #16311f;
+  --app-text: #e8efea;
+  --app-muted: #93a398;
+  --app-border: #273229;
+  --app-purple-light: #2a1f45;
+  --app-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  --app-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.45);
+
+  /* --bs-* (дизайн систем, app/buunduu-theme.css) */
+  --bs-green: #2ecc6a;
+  --bs-green-700: #4fd98a;
+  --bs-green-800: #7ee3a8;
+  --bs-green-50: #16311f;
+  --bs-green-100: #1e4229;
+  --bs-amber: #f2a93b;
+  --bs-amber-50: #332816;
+  --bs-amber-100: #4a391c;
+  --bs-ink: #e8efea;
+  --bs-ink-2: #c3cec6;
+  --bs-muted: #93a398;
+  --bs-line: #273229;
+  --bs-bg: #0f1512;
+  --bs-card: #182019;
+  --bs-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --bs-shadow-lg: 0 2px 6px rgba(0, 0, 0, 0.35), 0 18px 50px rgba(0, 0, 0, 0.5);
+
+  /* Temee redesign (components/temee/temee-redesign.css) */
+  --bs-tm-ink: #e8efea;
+  --bs-tm-muted: #93a398;
+  --bs-tm-soft: #212b23;
+
+  /* Хөгийн өнгө — харанхуй дэвсгэр дээр ч тод уншигдах */
+  --tone-1: #ff7b7f;
+  --tone-2: #ffb547;
+  --tone-3: #4fd98a;
+  --tone-4: #7aa7ff;
+  --tone-0: #a4adb6;
+}
+
+html[data-theme="dark"] body {
+  background:
+    radial-gradient(900px 500px at 50% -10%, #1a2a1f 0%, rgba(26, 42, 31, 0) 60%),
+    var(--bs-bg);
+  color: var(--bs-ink);
+}
+
+/* --- Tailwind тогтмол өнгөнүүд: дэвсгэр --- */
+html[data-theme="dark"] .bg-white,
+html[data-theme="dark"] .bg-slate-50,
+html[data-theme="dark"] .bg-slate-50\/90,
+html[data-theme="dark"] .bg-slate-50\/50 {
+  background-color: var(--bs-card);
+}
+html[data-theme="dark"] .bg-white\/90,
+html[data-theme="dark"] .bg-white\/80 {
+  background-color: rgba(24, 32, 25, 0.9);
+}
+html[data-theme="dark"] .bg-slate-100,
+html[data-theme="dark"] .bg-slate-200 {
+  background-color: var(--bs-tm-soft);
+}
+html[data-theme="dark"] .bg-emerald-50,
+html[data-theme="dark"] .bg-emerald-50\/60,
+html[data-theme="dark"] .bg-emerald-50\/80,
+html[data-theme="dark"] .bg-emerald-100 {
+  background-color: var(--bs-green-50);
+}
+html[data-theme="dark"] .bg-amber-50,
+html[data-theme="dark"] .bg-amber-50\/60,
+html[data-theme="dark"] .bg-amber-100 {
+  background-color: var(--bs-amber-50);
+}
+html[data-theme="dark"] .bg-red-50,
+html[data-theme="dark"] .bg-rose-50 {
+  background-color: #3a1c1e;
+}
+html[data-theme="dark"] .bg-sky-50,
+html[data-theme="dark"] .bg-blue-100 {
+  background-color: #16283a;
+}
+html[data-theme="dark"] .bg-purple-100 {
+  background-color: #2a1f45;
+}
+
+/* --- Текст --- */
+html[data-theme="dark"] .text-slate-900,
+html[data-theme="dark"] .text-slate-800 {
+  color: var(--bs-ink);
+}
+html[data-theme="dark"] .text-slate-700,
+html[data-theme="dark"] .text-slate-600 {
+  color: var(--bs-ink-2);
+}
+html[data-theme="dark"] .text-slate-500,
+html[data-theme="dark"] .text-slate-400 {
+  color: var(--bs-muted);
+}
+html[data-theme="dark"] .text-emerald-900,
+html[data-theme="dark"] .text-emerald-800,
+html[data-theme="dark"] .text-emerald-700 {
+  color: var(--bs-green-700);
+}
+html[data-theme="dark"] .text-emerald-600 {
+  color: var(--bs-green);
+}
+html[data-theme="dark"] .text-amber-900,
+html[data-theme="dark"] .text-amber-800,
+html[data-theme="dark"] .text-amber-700 {
+  color: #ffc46b;
+}
+html[data-theme="dark"] .text-red-900,
+html[data-theme="dark"] .text-red-800,
+html[data-theme="dark"] .text-red-700 {
+  color: #ff8a8e;
+}
+html[data-theme="dark"] .text-sky-800,
+html[data-theme="dark"] .text-sky-700,
+html[data-theme="dark"] .text-blue-800 {
+  color: #8dc1ff;
+}
+
+/* --- Хүрээ, цагираг --- */
+html[data-theme="dark"] .border-slate-200,
+html[data-theme="dark"] .border-slate-100,
+html[data-theme="dark"] .border-slate-300,
+html[data-theme="dark"] .border-slate-200\/80 {
+  border-color: var(--bs-line);
+}
+html[data-theme="dark"] .ring-slate-200,
+html[data-theme="dark"] .ring-slate-100 {
+  --tw-ring-color: var(--bs-line);
+}
+html[data-theme="dark"] .border-emerald-200,
+html[data-theme="dark"] .border-emerald-100,
+html[data-theme="dark"] .border-emerald-300 {
+  border-color: var(--bs-green-100);
+}
+html[data-theme="dark"] .ring-emerald-200,
+html[data-theme="dark"] .ring-emerald-100 {
+  --tw-ring-color: var(--bs-green-100);
+}
+html[data-theme="dark"] .border-amber-200,
+html[data-theme="dark"] .ring-amber-200,
+html[data-theme="dark"] .ring-amber-100 {
+  border-color: var(--bs-amber-100);
+  --tw-ring-color: var(--bs-amber-100);
+}
+html[data-theme="dark"] .border-red-200,
+html[data-theme="dark"] .ring-red-200,
+html[data-theme="dark"] .ring-red-100 {
+  border-color: #5a2a2d;
+  --tw-ring-color: #5a2a2d;
+}
+html[data-theme="dark"] .divide-slate-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: var(--bs-line);
+}
+html[data-theme="dark"] .shadow-sm,
+html[data-theme="dark"] .shadow-md,
+html[data-theme="dark"] .shadow-lg {
+  --tw-shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* --- Форм элемент --- */
+html[data-theme="dark"] input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  background-color: var(--bs-card);
+  color: var(--bs-ink);
+  border-color: var(--bs-line);
+}
+html[data-theme="dark"] ::placeholder {
+  color: var(--bs-muted);
+}
+
+/* --- Аппын shell-ийн тодорхой классууд --- */
+html[data-theme="dark"] .app-shell-frame {
+  border-color: var(--bs-line);
+}
+html[data-theme="dark"] .level-boss-shell {
+  background-color: var(--bs-amber-50);
+}
+html[data-theme="dark"] .app-lesson-media-placeholder {
+  background-image: linear-gradient(to bottom right, #1c261f, #121a15);
+}
+html[data-theme="dark"] .bs-btn-ghost,
+html[data-theme="dark"] .bs-srs-fav {
+  background: var(--bs-tm-soft);
+}
+html[data-theme="dark"] .bs-pnum.bs-lock {
+  background: var(--bs-tm-soft);
+}
+html[data-theme="dark"] .app-timeline-card-locked {
+  background-color: var(--bs-tm-soft);
+}

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
+import { TemeeMascot } from "@/components/temee/temee-mascot";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
@@ -324,12 +325,7 @@ export function ReviewMenuHubClient({
         </div>
 
         <div className="bs-tm-greet">
-          <TemeeEmojiIcon
-            variant="greet"
-            className="bs-tm-greet-img"
-            width={86}
-            height={86}
-          />
+          <TemeeMascot streak={stats.streak} hideLine size="md" className="bs-tm-greet-img bs-tm-greet-mascot" />
           <div className="bs-tm-bubble">
             <p className="bs-tm-bubble-title">
               {loading ? tr(locale, "Ачааллаж байна…") : greetTitle}

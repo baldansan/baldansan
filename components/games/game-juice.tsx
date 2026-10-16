@@ -12,6 +12,7 @@ import {
   setSfxMuted,
   type AnswerOutcome,
 } from "@/lib/games/game-fx";
+import { emitCorrectAnswer } from "@/lib/celebrate/celebrate-events";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import "./game-juice.css";
@@ -74,6 +75,7 @@ export function useGameJuice(options?: { lives?: boolean }) {
         const outcome = scoreCorrect(combo, elapsed);
         const milestone = isComboMilestone(combo);
         playSfx(milestone ? "combo" : "correct");
+        emitCorrectAnswer();
         if (outcome.speedBonus > 0 && !milestone) playSfx("bonus");
         setState((s) => ({
           ...s,

@@ -200,7 +200,7 @@
 .bs-path-finish-chip:focus-visible {
   color: var(--bs-ink-2);
   border-color: #d0d0cb;
-  background: #fff;
+  background:var(--bs-card);
   outline: none;
 }
 
@@ -344,6 +344,10 @@
 }
 
 /* Summary stage */
+.bs-path-summary-mascot {
+  margin-bottom: 4px;
+}
+
 .bs-path-summary {
   display: flex;
   flex-direction: column;

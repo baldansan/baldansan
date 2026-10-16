@@ -59,6 +59,8 @@ export default function VocabularyCard({
   const words: VocabItem[] = lesson.vocabulary ?? [];
   const [i, setI] = useState(0);
   const [known, setKnown] = useState<Set<number>>(new Set());
+  /** 3D flip: эхлээд ханз (урд тал), дарахад утга (ар тал). Үг солигдоход буцна. */
+  const [flipped, setFlipped] = useState(false);
   const hydrateDoneRef = useRef(false);
   const persistReadyRef = useRef(false);
 
@@ -161,6 +163,7 @@ export default function VocabularyCard({
   }
 
   function goNext() {
+    setFlipped(false);
     if (i < total - 1) setI(i + 1);
     else {
       markBsModuleCompleted(lessonId, "vocabulary");
@@ -169,10 +172,12 @@ export default function VocabularyCard({
   }
 
   function goPrev() {
+    setFlipped(false);
     if (i > 0) setI(i - 1);
   }
 
   function restartVocab() {
+    setFlipped(false);
     setI(0);
     setKnown(new Set());
     saveBsVocabularyProgress(lessonId, {
@@ -199,18 +204,42 @@ export default function VocabularyCard({
       </div>
 
       <div className="bs-vcard">
-        {/* Пиньинь ханзныхаа яг дээр, хөг бүр өөр өнгөтэй — утга нь шууд доор нь */}
-        <div className="bs-hanzi bs-hanzi--tone">
-          <ToneHanzi word={w.zh} pinyin={w.pinyin} size="xl" />
+        {/* 3D flip карт: урд тал — ханз (пиньинь хөгийн өнгөтэй), ар тал — утга */}
+        <div className="bs-vflip-scene">
+          <button
+            type="button"
+            className={`bs-vflip ${flipped ? "bs-vflip--flipped" : ""}`}
+            onClick={() => setFlipped((f) => !f)}
+            aria-pressed={flipped}
+            aria-label={flipped ? "Ханзыг харах" : "Утгыг харах"}
+          >
+            <div className="bs-vflip-inner">
+              <div className="bs-vflip-face bs-vflip-front">
+                <div className="bs-hanzi bs-hanzi--tone">
+                  <ToneHanzi word={w.zh} pinyin={w.pinyin} size="xl" />
+                </div>
+                {meaning.text ? (
+                  <p className="bs-vflip-hint">Утгыг харахаар дарна уу</p>
+                ) : null}
+              </div>
+              <div className="bs-vflip-face bs-vflip-back" aria-hidden={!flipped}>
+                <div className="bs-hanzi bs-hanzi--tone">
+                  <ToneHanzi word={w.zh} pinyin={w.pinyin} size="lg" />
+                </div>
+                {meaning.text ? (
+                  <div className={meaning.pending ? "bs-vmn bs-vmn-pending" : "bs-vmn"}>
+                    <span translate="no">{meaning.text}</span>
+                    {meaning.pending ? (
+                      <span className="bs-vmn-badge">орчуулга хүлээгдэж буй</span>
+                    ) : null}
+                  </div>
+                ) : (
+                  <p className="bs-vflip-hint">Утга бүртгэгдээгүй</p>
+                )}
+              </div>
+            </div>
+          </button>
         </div>
-        {meaning.text ? (
-          <div className={meaning.pending ? "bs-vmn bs-vmn-pending" : "bs-vmn"}>
-            <span translate="no">{meaning.text}</span>
-            {meaning.pending ? (
-              <span className="bs-vmn-badge">орчуулга хүлээгдэж буй</span>
-            ) : null}
-          </div>
-        ) : null}
         <div className="bs-tone-legend-row">
           <ToneLegend />
         </div>

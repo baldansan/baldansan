@@ -14,6 +14,7 @@ import {
   useRegisterLessonHskLevels,
 } from "@/components/providers/active-hsk-level-provider";
 import { HomeLessonList } from "@/components/temee/home-lesson-list";
+import { TemeeMascot } from "@/components/temee/temee-mascot";
 import { BookPickerGrid, type BookPickerEntry } from "@/components/mobile/book-picker-grid";
 import {
   LibraryPreviewRow,
@@ -474,6 +475,9 @@ export function HomeAppView({
           />
         </div>
       </section>
+
+      {/* Тэмээ багш — баяртай / ердийн / гунигтай / унтаж буй (components/temee/temee-mascot) */}
+      <TemeeMascot streak={streak} size="sm" className="mb-3" />
 
       {/* Хүүхдийн горим эсвэл зам эхэлсэн бол — хамгийн эхний карт */}
       <KidPathHomeCard />
