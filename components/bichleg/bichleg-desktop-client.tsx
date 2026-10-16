@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AppShell } from "@/components/app/app-shell";
 import { BichlegYouTubePlayer } from "@/components/bichleg/bichleg-youtube-player";
 import { BichlegEpisodeQuiz } from "@/components/bichleg/bichleg-episode-quiz";
+import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import { familiarityOf, fetchKnownWordSets, type KnownWordSets } from "@/lib/bichleg/known-words";
 import {
   countSentenceCards,
@@ -176,6 +177,8 @@ export function BichlegDesktopClient({
   const [progress, setProgress] = useState<UserVideoProgress | null>(
     activeVideo ? (initialProgress[activeVideo.id] ?? null) : null
   );
+  // 🎤 Дуудлага шалгах (SpeechRecognition)
+  const [pronCheckOpen, setPronCheckOpen] = useState(false);
   // Дуурайж хэлэх (shadowing)
   const [recState, setRecState] = useState<"idle" | "recording" | "ready">("idle");
   const [recUrl, setRecUrl] = useState<string | null>(null);
@@ -975,6 +978,17 @@ export function BichlegDesktopClient({
                   ) : null}
                   <button
                     type="button"
+                    className={`bs-bd-chip${pronCheckOpen ? " bs-bd-chip--on" : ""}`}
+                    onClick={() => {
+                      if (!pronCheckOpen) pause();
+                      setPronCheckOpen((v) => !v);
+                    }}
+                    title="G"
+                  >
+                    🎤 {tr(locale, "Дуудлага шалгах")}
+                  </button>
+                  <button
+                    type="button"
                     className={`bs-bd-chip${savedSentences.has(activeSubtitle.idx) ? " bs-bd-chip--on" : ""}`}
                     onClick={() => handleSaveSentence()}
                     title="B"
@@ -986,6 +1000,13 @@ export function BichlegDesktopClient({
                     <span className="bs-bd-chip bs-bd-chip--slang">💬 {tr(locale, "Залуусын хэллэг")}</span>
                   ) : null}
                 </div>
+                {pronCheckOpen && activeSubtitle.zh ? (
+                  <PronunciationCheck
+                    key={activeSubtitle.idx}
+                    text={activeSubtitle.zh}
+                    pinyin={activeSubtitle.pinyin ?? null}
+                  />
+                ) : null}
               </>
             ) : (
               <p className="bs-bd-hint">{tr(locale, "Тоглуулбал энд өгүүлбэр үг үгээр гарна")}</p>

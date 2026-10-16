@@ -6,7 +6,9 @@
 // recap нь ихэвчлэн СҮҮЛИЙН модуль тул onDone() дарахад player-ээс гарна.
 // types/lesson.ts-г өөрчлөх ШААРДЛАГАГҮЙ. Гэрээ: { lesson, onDone }.
 
+import Link from "next/link";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
+import { suggestScenarioForLevel } from "@/lib/talk/scenarios";
 import "./recap-module.css";
 
 interface RecapData {
@@ -31,6 +33,7 @@ export default function RecapModule({
   const pronN =
     (lesson.pronunciation as { items?: unknown[] } | undefined)?.items?.length ??
     0;
+  const talk = suggestScenarioForLevel(lesson.level);
 
   return (
     <>
@@ -82,6 +85,11 @@ export default function RecapModule({
           </div>
         </div>
       </div>
+
+      {/* Ярилцъя — сурснаа ролийн яриагаар хэрэглэх */}
+      <Link href={`/talk?scenario=${talk.id}`} className="bs-cta bs-cta-secondary bs-rc-talk">
+        💬 Ярилцъя: {talk.emoji} {talk.title_mn} →
+      </Link>
 
       <button className="bs-cta" onClick={onDone}>
         Хичээлээ дуусгах ✓

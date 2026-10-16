@@ -200,6 +200,22 @@ export function ReviewDashboard({ lessons, lessonIds }: Props) {
           </div>
         </section>
 
+        <Link
+          href="/talk"
+          className="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-emerald-200 transition-colors active:bg-emerald-50"
+        >
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-50 text-2xl" aria-hidden>
+            💬
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block font-bold text-[var(--app-text)]">Ярилцах</span>
+            <span className="block text-sm text-[var(--app-muted)]">
+              Дэлгүүр, гуанз, такси… 7 сценар — хятадаар ярьж хариул, 🎤 дуудлагаа шалгуул.
+            </span>
+          </span>
+          <span className="text-lg text-[var(--app-muted)]">›</span>
+        </Link>
+
         <section className="rounded-2xl bg-emerald-50/70 p-5 ring-1 ring-emerald-200">
           <h2 className="font-semibold text-emerald-900">Daily review & reports</h2>
           <p className="mt-2 text-sm text-emerald-800">

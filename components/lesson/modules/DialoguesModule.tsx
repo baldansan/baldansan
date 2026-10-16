@@ -7,6 +7,7 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
 import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
+import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import "./dialogues-module.css";
 import "./texts-module.css";
@@ -225,6 +226,9 @@ export default function DialoguesModule({
                       )}
                     </div>
                     <div className="bs-mn" translate="no">{f(line, "mn", "mongolian")}</div>
+                    {f(line, "zh", "chinese") ? (
+                      <PronunciationCheck compact text={f(line, "zh", "chinese")} pinyin={f(line, "pinyin") || null} />
+                    ) : null}
                   </div>
                 </div>
               </div>

@@ -16,6 +16,7 @@ import type {
 import { CharacterDecompositionHint } from "@/components/hanzi/CharacterDecompositionHint";
 import { ToneHanzi, ToneLegend } from "@/components/hanzi/ToneHanzi";
 import { WordWriterPanel } from "@/components/hanzi/WordWriterPanel";
+import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import { resolveDecompositionCharacters } from "@/lib/hanzi/character-decomposition";
 import SpeakButton from "../SpeakButton";
 import { DeepWordPanel } from "@/components/lesson/deep/deep-teaching-blocks";
@@ -215,6 +216,7 @@ export default function VocabularyCard({
           <ToneLegend />
         </div>
         <WordWriterPanel word={w.zh} />
+        <PronunciationCheck key={w.zh} text={w.zh} pinyin={w.pinyin} />
         {decompositionCharacters.length > 0 ? (
           <div className="bs-decomp-hint-stack">
             {decompositionCharacters.map((view) => (
