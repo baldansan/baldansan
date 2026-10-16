@@ -36,6 +36,7 @@ function mapTeacherProfile(row: Record<string, unknown>): TeacherProfile {
     organization: row.organization ? String(row.organization) : null,
     bio: row.bio ? String(row.bio) : null,
     role: String(row.role ?? "teacher"),
+    weeklyReportEnabled: row.weekly_report_enabled !== false,
     createdAt: row.created_at ? String(row.created_at) : undefined,
     updatedAt: row.updated_at ? String(row.updated_at) : undefined,
   };
@@ -236,6 +237,23 @@ export async function upsertCurrentTeacherProfile(input: {
 export async function isCurrentUserTeacher(): Promise<boolean> {
   const { data } = await getCurrentTeacherProfile();
   return Boolean(data);
+}
+
+/** Долоо хоногийн имэйл тайлан идэвхжүүлэх/унтраах (багш өөрөө сонгоно). */
+export async function setWeeklyReportEnabled(
+  enabled: boolean
+): Promise<ClassroomResult<boolean>> {
+  if (!supabase) return notConfigured();
+  const userId = await requireUserId();
+  if (!userId) return { data: null, error: "Not signed in." };
+
+  const { error } = await supabase
+    .from("teacher_profiles")
+    .update({ weekly_report_enabled: enabled })
+    .eq("user_id", userId);
+
+  if (error) return { data: null, error: toError(error) };
+  return { data: enabled, error: null };
 }
 
 // --- Student profiles ---

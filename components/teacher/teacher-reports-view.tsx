@@ -6,6 +6,7 @@ import { PublicPageShell } from "@/components/public-page-shell";
 import { ReportExportCard } from "@/components/teacher/report-export-card";
 import { TeacherMetricCard } from "@/components/teacher/teacher-metric-card";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
+import { WeeklyReportToggle } from "@/components/teacher/weekly-report-toggle";
 import type {
   ClassroomProgressAnalytics,
   TeacherAssignmentSummaryItem,
@@ -134,6 +135,9 @@ export function TeacherReportsView() {
         <p className="mt-2 text-sm text-slate-600">
           Overview metrics, per-class progress, and assignment summaries.
         </p>
+        <div className="mt-4">
+          <WeeklyReportToggle />
+        </div>
         {error ? (
           <p className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800">
             {error}

@@ -17,7 +17,7 @@
  * offline-lesson-prefetch нь тэднийг cors горимоор татдаг тул уншигдах
  * (opaque биш) хариу болж кэшэнд ордог.
  */
-const VERSION = "v5";
+const VERSION = "v6";
 const OFFLINE_CACHE = `buunduu-surtsgaay-offline-${VERSION}`;
 const PAGES_CACHE = `buunduu-pages-${VERSION}`;
 const STATIC_CACHE = `buunduu-static-${VERSION}`;
@@ -275,4 +275,48 @@ self.addEventListener("fetch", (event) => {
       })()
     );
   }
+});
+
+// -----------------------------------------------------------------------
+// Push notifications — идэвхгүй сурагчдад сэргээх мэдэгдэл (v6).
+// Сервер /api/cron/inactive-student-check-ээс web-push-ээр JSON payload
+// ({ title, body, url }) илгээнэ.
+// -----------------------------------------------------------------------
+self.addEventListener("push", (event) => {
+  let payload = { title: "Сурцгаая!", body: "Шинэ мэдэгдэл байна.", url: "/" };
+  try {
+    if (event.data) {
+      payload = { ...payload, ...event.data.json() };
+    }
+  } catch {
+    if (event.data) {
+      payload.body = event.data.text();
+    }
+  }
+
+  event.waitUntil(
+    self.registration.showNotification(payload.title, {
+      body: payload.body,
+      icon: "/icons/icon-192.png",
+      badge: "/icons/icon-192.png",
+      data: { url: payload.url || "/" },
+    })
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url = event.notification.data?.url || "/";
+  event.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((clients) => {
+      for (const client of clients) {
+        if (client.url.includes(url) && "focus" in client) {
+          return client.focus();
+        }
+      }
+      if (self.clients.openWindow) {
+        return self.clients.openWindow(url);
+      }
+    })
+  );
 });
