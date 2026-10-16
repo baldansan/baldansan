@@ -6,6 +6,7 @@ import { DeleteAccountCard } from "@/components/account/delete-account-card";
 import { HanziFontSetting } from "@/components/settings/hanzi-font-setting";
 import { ThemeSetting } from "@/components/settings/theme-setting";
 import { ToneColorSetting } from "@/components/settings/tone-color-setting";
+import { PushNotificationSetting } from "@/components/settings/push-notification-setting";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -120,6 +121,7 @@ export function SettingsAppView() {
       <ThemeSetting />
       <HanziFontSetting />
       <ToneColorSetting />
+      <PushNotificationSetting />
 
       {!language ? (
         <MobileCard className="mb-4 border-amber-200 bg-amber-50">

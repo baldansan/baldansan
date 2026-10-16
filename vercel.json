@@ -1,4 +1,14 @@
 {
   "framework": "nextjs",
-  "regions": ["hnd1"]
+  "regions": ["hnd1"],
+  "crons": [
+    {
+      "path": "/api/cron/weekly-teacher-report",
+      "schedule": "0 0 * * 1"
+    },
+    {
+      "path": "/api/cron/inactive-student-check",
+      "schedule": "0 1 * * *"
+    }
+  ]
 }

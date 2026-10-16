@@ -6,6 +6,7 @@ export type TeacherProfile = {
   organization: string | null;
   bio: string | null;
   role: string;
+  weeklyReportEnabled: boolean;
   createdAt?: string;
   updatedAt?: string;
 };
