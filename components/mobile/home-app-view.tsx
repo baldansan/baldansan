@@ -33,7 +33,16 @@ import {
   type LessonStatus,
 } from "@/lib/progress";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
-import { fetchMyPoints } from "@/lib/points/rank";
+import {
+  fetchMyClassRank,
+  fetchMyPoints,
+  fetchMyPointsToday,
+  type MyRank,
+} from "@/lib/points/rank";
+import { HomeTodaySection } from "@/components/home/home-today-section";
+import { HomeQuickSearch } from "@/components/home/home-quick-search";
+import { QuickStartCard } from "@/components/home/quick-start-card";
+import type { BichlegSuggestion } from "@/lib/mobile-home-data";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import {
   filterLessonsByActiveHskLevel,
@@ -56,6 +65,7 @@ type Props = {
   fazhanDefaultChipId: string;
   libraryPreview: LibraryPreviewItem[];
   helzuiSummary: HelzuiHomeSummary;
+  bichlegSuggestion: BichlegSuggestion | null;
 };
 
 type BookSeries = "standard" | "fazhan";
@@ -88,6 +98,7 @@ export function HomeAppView({
   fazhanCatalog,
   libraryPreview,
   helzuiSummary,
+  bichlegSuggestion,
 }: Props) {
   const locale = useUiLocale();
   const {
@@ -102,6 +113,8 @@ export function HomeAppView({
   const [freshLoggedIn, setLoggedIn] = useState(false);
   const [freshStreak, setStreak] = useState(0);
   const [freshPoints, setPoints] = useState<number | null>(null);
+  const [pointsToday, setPointsToday] = useState<number | null>(null);
+  const [classRank, setClassRank] = useState<MyRank | null>(null);
   const [freshContinueHref, setContinueHref] = useState("/lessons/1");
   const [freshContinueTitle, setContinueTitle] = useState("Хичээл 1");
   /** Үргэлжлүүлэх холбоос бодит утгаа авсны дараа л бүтэн prefetch (eager) хийнэ. */
@@ -315,7 +328,7 @@ export function HomeAppView({
       }
       // Урьд нь 4 дуудлага дараалж (streak → continue → progress → bichleg) явдаг байсан —
       // бие биенээсээ хамаарахгүй тул зэрэг явуулна (нэг roundtrip-ийн хугацаа).
-      const [retention, cont, progress, clip, pts] = await Promise.all([
+      const [retention, cont, progress, clip, pts, ptsToday, rank] = await Promise.all([
         getStreakUnified().catch(() => null),
         lessonIds.length > 0
           ? resolveContinueLearning(lessonIds).catch(() => null)
@@ -325,6 +338,9 @@ export function HomeAppView({
           : Promise.resolve(null),
         isLoggedIn ? fetchBichlegContinueTargetClient().catch(() => null) : Promise.resolve(null),
         isLoggedIn ? fetchMyPoints().catch(() => null) : Promise.resolve(null),
+        isLoggedIn ? fetchMyPointsToday().catch(() => null) : Promise.resolve(null),
+        // Ангийн байр — ангигүй / RPC байхгүй бол null → мөрөнд харуулахгүй.
+        isLoggedIn ? fetchMyClassRank().catch(() => null) : Promise.resolve(null),
       ]);
       if (!alive) return;
       const nextStreak = retention?.currentStreak ?? 0;
@@ -333,6 +349,8 @@ export function HomeAppView({
       let nextTitle = "Хичээл 1";
       setStreak(nextStreak);
       setPoints(nextPoints);
+      setPointsToday(ptsToday);
+      setClassRank(rank);
       if (cont) {
         nextHref = cont.href;
         const lesson = lessons.find((l) => l.id === cont.lessonId);
@@ -495,21 +513,6 @@ export function HomeAppView({
               ) : null}
             </p>
             <div className="mt-3 flex flex-wrap items-center gap-2 empty:hidden">
-              {streak > 0 ? (
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold ring-1 ring-white/25">
-                  <span aria-hidden>🔥</span>
-                  {streak} {tr(locale, "өдөр дараалан")}
-                </span>
-              ) : null}
-              {loggedIn && points !== null ? (
-                <Link
-                  href="/points"
-                  className="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1.5 text-xs font-bold ring-1 ring-white/25"
-                >
-                  <span aria-hidden>⭐</span>
-                  {points} {tr(locale, "оноо")}
-                </Link>
-              ) : null}
               {!loggedIn ? (
                 <Link
                   href="/login"
@@ -530,6 +533,52 @@ export function HomeAppView({
           />
         </div>
       </section>
+
+      {/* Статус мөр: streak · өнөөдрийн оноо · ангийн байр */}
+      <ul className="bs-home-status" aria-label={tr(locale, "Миний статус")}>
+        <li>
+          <span aria-hidden>🔥</span>
+          {streak}
+          <span className="bs-home-status-sub">{tr(locale, "өдөр дараалан")}</span>
+        </li>
+        {loggedIn ? (
+          <Link href="/points">
+            <span aria-hidden>⭐</span>
+            {pointsToday ?? 0}
+            <span className="bs-home-status-sub">
+              {tr(locale, "өнөөдөр")}
+              {points !== null ? ` · ${points}` : ""}
+            </span>
+          </Link>
+        ) : (
+          <Link href="/login">
+            <span aria-hidden>⭐</span>
+            {tr(locale, "Оноо цуглуулах")}
+          </Link>
+        )}
+        {classRank ? (
+          <Link href="/rank">
+            <span aria-hidden>🏆</span>
+            #{classRank.rank}
+            <span className="bs-home-status-sub">
+              /{classRank.participants} {tr(locale, "ангидаа")}
+            </span>
+          </Link>
+        ) : null}
+      </ul>
+
+      {/* Өнөөдөр: даалгавар · давтах · бичлэг */}
+      <HomeTodaySection
+        loggedIn={loggedIn}
+        bichlegContinue={bichlegContinue}
+        bichlegSuggestion={bichlegSuggestion}
+      />
+
+      {/* Хурдан хайлт (Pleco маяг) */}
+      <HomeQuickSearch />
+
+      {/* 60 секундын онбординг — шинэ хэрэглэгчид */}
+      <QuickStartCard loggedIn={loggedIn} hasProgress={totals.completed > 0 || streak > 0} />
 
       {/* Хүүхдийн горим эсвэл зам эхэлсэн бол — хамгийн эхний карт */}
       <KidPathHomeCard />

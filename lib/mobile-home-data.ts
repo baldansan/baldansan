@@ -14,6 +14,14 @@ import {
 } from "@/lib/content";
 import { getStories } from "@/lib/library/data";
 import type { LibraryPreviewItem } from "@/components/mobile/library-preview-row";
+import { fetchVideoSeriesCatalogCached } from "@/lib/supabase/videos-server";
+
+/** Нүүрний «Өнөөдрийн бичлэг» — үргэлжлүүлэх бичлэггүй үед санал болгох цуврал. */
+export type BichlegSuggestion = {
+  href: string;
+  title: string;
+  subtitle: string;
+};
 
 export type MobileHomeData = {
   catalog: MobileCourseCatalogEntry[];
@@ -21,6 +29,7 @@ export type MobileHomeData = {
   fazhanCatalog: MobileCourseCatalogEntry[];
   fazhanDefaultChipId: string;
   libraryPreview: LibraryPreviewItem[];
+  bichlegSuggestion: BichlegSuggestion | null;
 };
 
 type KoreanLoadResult = {
@@ -126,15 +135,39 @@ async function loadLibraryPreviewForHome(): Promise<LibraryPreviewItem[]> {
   }
 }
 
+/** Хамгийн доод HSK түвшний, бичлэгтэй цувралыг санал болгоно (кэштэй каталог). */
+async function loadBichlegSuggestionForHome(): Promise<BichlegSuggestion | null> {
+  try {
+    const series = await fetchVideoSeriesCatalogCached();
+    const withVideos = series.filter((s) => s.videoCount > 0);
+    if (withVideos.length === 0) return null;
+    withVideos.sort(
+      (a, b) => (a.hsk_level ?? 99) - (b.hsk_level ?? 99) || b.videoCount - a.videoCount
+    );
+    const pick = withVideos[0]!;
+    const title = pick.title_mn ?? pick.title_zh ?? "Бичлэг";
+    const level = pick.hsk_level != null ? `HSK ${pick.hsk_level} · ` : "";
+    return {
+      href: `/bichleg/${encodeURIComponent(pick.id)}`,
+      title,
+      subtitle: `${level}${pick.videoCount} бичлэг`,
+    };
+  } catch {
+    return null;
+  }
+}
+
 export async function loadMobileHomeData(): Promise<MobileHomeData> {
-  const [hskLevels, korean, fazhanLevels, libraryPreview] = await Promise.all([
-    Promise.all(HSK_LEVEL_IDS.map((id) => loadHskLevelForHome(id))),
-    loadKoreanCourseForHome(),
-    Promise.all(
-      FAZHAN_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
-    ),
-    loadLibraryPreviewForHome(),
-  ]);
+  const [hskLevels, korean, fazhanLevels, libraryPreview, bichlegSuggestion] =
+    await Promise.all([
+      Promise.all(HSK_LEVEL_IDS.map((id) => loadHskLevelForHome(id))),
+      loadKoreanCourseForHome(),
+      Promise.all(
+        FAZHAN_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
+      ),
+      loadLibraryPreviewForHome(),
+      loadBichlegSuggestionForHome(),
+    ]);
 
   const hsk: Partial<
     Record<HskHomeLevelId, Awaited<ReturnType<typeof loadHskLevelForHome>>>
@@ -170,5 +203,6 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
     fazhanCatalog,
     fazhanDefaultChipId: defaultFazhanChipId(fazhanCatalog),
     libraryPreview,
+    bichlegSuggestion,
   };
 }
