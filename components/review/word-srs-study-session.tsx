@@ -70,6 +70,8 @@ import {
   writeSessionResume,
 } from "@/lib/srs/session-resume";
 
+import { emitCorrectAnswer } from "@/lib/celebrate/celebrate-events";
+
 import type { WordSrsQueueItem, WordSrsRating } from "@/lib/srs/word-srs-types";
 
 import { hasSupabaseConfig } from "@/lib/supabase/auth";
@@ -461,6 +463,8 @@ export function WordSrsStudySession({
 
 
     void recordActivity("review_opened");
+
+    if (rating === "known") emitCorrectAnswer();
 
     if (phase === "study") {
 

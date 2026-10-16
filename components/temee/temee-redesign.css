@@ -25,11 +25,23 @@
   width: 86px;
   height: 86px;
 }
+/* Тэмээ дүр (temee-mascot) ногоон greet карт дотор */
+.bs-tm-greet-mascot {
+  display: block;
+}
+.bs-tm-greet-mascot .bs-mascot-figure {
+  width: 86px;
+  height: 86px;
+  border-radius: 26px;
+}
+.bs-tm-greet-mascot .bs-mascot-body {
+  font-size: 48px;
+}
 
 .bs-tm-bubble {
   flex: 1;
   min-width: 0;
-  background: #fff;
+  background: var(--bs-card);
   border-radius: 16px 16px 16px 4px;
   padding: 11px 13px;
 }
@@ -38,14 +50,14 @@
   margin: 0;
   font-size: 14px;
   font-weight: 700;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
   line-height: 1.35;
 }
 
 .bs-tm-bubble-sub {
   margin: 2px 0 0;
   font-size: 11.5px;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-topbar {
@@ -57,7 +69,7 @@
 
 .bs-tm-hello {
   font-size: 13px;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
   font-weight: 600;
 }
 
@@ -66,7 +78,7 @@
   margin-top: 2px;
   font-size: 20px;
   font-weight: 800;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
   letter-spacing: -0.4px;
 }
 
@@ -102,7 +114,7 @@
 }
 
 .bs-tm-stat {
-  background: #fff;
+  background: var(--bs-card);
   border-radius: 18px;
   padding: 12px 8px;
   text-align: center;
@@ -117,7 +129,7 @@
 .bs-tm-stat-n {
   font-size: 18px;
   font-weight: 900;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
   line-height: 1;
 }
 
@@ -125,7 +137,7 @@
   margin-top: 3px;
   font-size: 10px;
   font-weight: 600;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-feat {
@@ -170,7 +182,7 @@
   display: block;
   height: 100%;
   border-radius: 10px;
-  background: #fff;
+  background: var(--bs-card);
   transition: width 0.3s ease;
 }
 
@@ -206,7 +218,7 @@
   overflow: hidden;
   border-radius: 50%;
   border: 4px solid rgba(255, 255, 255, 0.5);
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -265,7 +277,7 @@
   margin-bottom: 16px;
   padding: 15px 16px;
   border-radius: 20px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -276,7 +288,7 @@
   left: 50%;
   transform: translateX(-50%);
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #fff;
+  border-bottom: 10px solid var(--bs-card);
   border-left: 10px solid transparent;
 }
 
@@ -284,7 +296,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: 800;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
   text-align: center;
   line-height: 1.45;
 }
@@ -292,7 +304,7 @@
 .bs-tm-intro-bubble-sub {
   margin: 4px 0 0;
   font-size: 13px;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
   text-align: center;
 }
 
@@ -300,7 +312,7 @@
   margin: 6px 0 10px;
   font-size: 12px;
   font-weight: 800;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -309,7 +321,7 @@
   margin-bottom: 14px;
   padding: 6px 4px;
   border-radius: 18px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
 }
 
@@ -318,7 +330,7 @@
   align-items: center;
   gap: 11px;
   padding: 11px 13px;
-  border-bottom: 1px solid #eef3f0;
+  border-bottom: 1px solid var(--bs-line);
 }
 
 .bs-tm-goal-item:last-child {
@@ -338,12 +350,12 @@
 .bs-tm-goal-title {
   font-size: 14px;
   font-weight: 700;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 
 .bs-tm-goal-sub {
   font-size: 11.5px;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-warm {
@@ -372,7 +384,7 @@
 .bs-tm-warm-word {
   padding: 8px 12px;
   border-radius: 12px;
-  background: #fff;
+  background: var(--bs-card);
   font-weight: 700;
 }
 
@@ -384,7 +396,7 @@
 
 .bs-tm-warm-word-mn {
   font-size: 11px;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-review-hub-icon--temee {
@@ -400,7 +412,7 @@
   padding: 14px;
   border: 2px solid transparent;
   border-radius: 20px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
   text-decoration: none;
   color: inherit;
@@ -454,13 +466,13 @@
   display: block;
   font-size: 15.5px;
   font-weight: 800;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 
 .bs-tm-card-sub {
   display: block;
   font-size: 12px;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-card-chev {
@@ -491,11 +503,11 @@
 .bs-tm-bdg span:last-child {
   font-size: 9px;
   font-weight: 700;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 
 .bs-tm-bdg--on {
-  background: #fff;
+  background: var(--bs-card);
 }
 
 .bs-tm-bdg--off {
@@ -529,19 +541,19 @@
 
 .bs-tm-lvl-head b {
   font-weight: 800;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 
 .bs-tm-lvl-head span {
   font-weight: 600;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-lvl-bar {
   height: 9px;
   overflow: hidden;
   border-radius: 10px;
-  background: #eef3f0;
+  background: var(--bs-tm-soft);
 }
 
 .bs-tm-lvl-bar > i {
@@ -582,7 +594,7 @@
   margin-bottom: 14px;
   padding: 14px 16px;
   border-radius: 20px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
   text-decoration: none;
   color: inherit;
@@ -618,7 +630,7 @@
   margin: 2px 0 0;
   font-size: 14px;
   font-weight: 800;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 
 .bs-tm-hsk-card {
@@ -674,7 +686,7 @@
   display: block;
   height: 100%;
   border-radius: 10px;
-  background: #fff;
+  background: var(--bs-card);
 }
 
 .bs-tm-chip-row {
@@ -695,17 +707,17 @@
   padding: 8px 14px;
   border: 2px solid transparent;
   border-radius: 14px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.04);
   font-size: 12px;
   font-weight: 700;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
   cursor: pointer;
 }
 
 .bs-tm-chip--on {
   border-color: #1fb85a;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
   background: #e3f7eb;
 }
 
@@ -722,7 +734,7 @@
   margin-bottom: 14px;
   padding: 16px 16px 14px;
   border-radius: 20px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 4px 16px rgba(26, 46, 34, 0.06);
 }
 
@@ -731,7 +743,7 @@
   font-size: 17px;
   font-weight: 900;
   line-height: 1.35;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
   letter-spacing: -0.3px;
 }
 
@@ -739,7 +751,7 @@
   margin: 8px 0 0;
   font-size: 12px;
   font-weight: 700;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-lesson-catalog-bar {
@@ -747,7 +759,7 @@
   margin-top: 10px;
   overflow: hidden;
   border-radius: 8px;
-  background: #eef3f0;
+  background: var(--bs-tm-soft);
 }
 
 .bs-tm-lesson-catalog-bar > i {
@@ -772,7 +784,7 @@
   gap: 12px;
   padding: 14px 14px 14px 12px;
   border-radius: 18px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 3px 12px rgba(26, 46, 34, 0.05);
   text-decoration: none;
   color: inherit;
@@ -789,7 +801,7 @@
   height: 36px;
   place-items: center;
   border-radius: 12px;
-  background: #eef3f0;
+  background: var(--bs-tm-soft);
   font-size: 14px;
   font-weight: 900;
   color: #5a6d62;
@@ -824,7 +836,7 @@
   font-size: 17px;
   font-weight: 800;
   line-height: 1.3;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 
 .bs-tm-lesson-mn {
@@ -833,7 +845,7 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 1.4;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-lesson-status {
@@ -863,10 +875,10 @@
 .bs-tm-catalog-empty {
   padding: 20px;
   border-radius: 18px;
-  background: #fff;
+  background: var(--bs-card);
   text-align: center;
   font-size: 13px;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
   box-shadow: 0 3px 12px rgba(26, 46, 34, 0.05);
 }
 
@@ -911,7 +923,7 @@
   margin: 0 0 14px;
   font-size: 22px;
   font-weight: 900;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
   letter-spacing: -0.4px;
 }
 
@@ -919,7 +931,7 @@
   display: block;
   overflow: hidden;
   border-radius: 22px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 4px 16px rgba(26, 46, 34, 0.07);
   text-decoration: none;
   color: inherit;
@@ -1025,7 +1037,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: 900;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
   line-height: 1.35;
 }
 
@@ -1033,7 +1045,7 @@
   margin: 4px 0 0;
   font-size: 13px;
   font-weight: 600;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-video-tags {
@@ -1060,7 +1072,7 @@
 .bs-tm-video-progress {
   margin-top: 12px;
   padding-top: 10px;
-  border-top: 1px solid #eef3f0;
+  border-top: 1px solid var(--bs-line);
 }
 
 .bs-tm-video-progress--inline {
@@ -1077,14 +1089,14 @@
   margin: 0 0 4px;
   font-size: 11px;
   font-weight: 700;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-video-progress-track {
   height: 6px;
   overflow: hidden;
   border-radius: 8px;
-  background: #eef3f0;
+  background: var(--bs-tm-soft);
 }
 
 .bs-tm-video-progress-track > i {
@@ -1107,7 +1119,7 @@
   display: block;
   padding: 12px;
   border-radius: 18px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
   text-decoration: none;
   color: inherit;
@@ -1144,14 +1156,14 @@
   margin: 0;
   font-size: 13px;
   font-weight: 800;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 
 .bs-tm-game-tile-sub {
   margin: 3px 0 0;
   font-size: 10px;
   line-height: 1.35;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-game-feat {
@@ -1199,7 +1211,7 @@
   margin-bottom: 14px;
   padding: 14px 16px;
   border-radius: 20px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
 }
 .bs-tm-missions-head {
@@ -1209,7 +1221,7 @@
   margin-bottom: 8px;
   font-size: 13px;
   font-weight: 900;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 .bs-tm-missions-count {
   padding: 2px 10px;
@@ -1233,7 +1245,7 @@
   gap: 10px;
   font-size: 13px;
   font-weight: 700;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 .bs-tm-mission-check {
   width: 22px;
@@ -1251,13 +1263,13 @@
   border-color: #1fb85a;
 }
 .bs-tm-mission--done .bs-tm-mission-label {
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
   text-decoration: line-through;
 }
 .bs-tm-mission-bar {
   height: 8px;
   border-radius: 99px;
-  background: #eef3f0;
+  background: var(--bs-tm-soft);
   overflow: hidden;
 }
 .bs-tm-mission-bar i {
@@ -1272,7 +1284,7 @@
 .bs-tm-mission-num {
   text-align: right;
   font-size: 11px;
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 /* ---- Багцын зураг (hero + зурагт тайлбар) ба багшийн оршил — 发展汉语 г.м. ---- */
@@ -1304,7 +1316,7 @@
   margin: 10px 0 0;
   font-size: 14px;
   line-height: 1.55;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 
 .bs-tm-warmup-q {
@@ -1323,7 +1335,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 1.5;
-  color: #1a2e22;
+  color: var(--bs-tm-ink);
 }
 
 .bs-tm-illus {
@@ -1331,7 +1343,7 @@
 }
 
 .bs-tm-illus .bs-tm-warm-head {
-  color: #7a8c82;
+  color: var(--bs-tm-muted);
 }
 
 .bs-tm-illus-grid {
@@ -1344,7 +1356,7 @@
   margin: 0;
   overflow: hidden;
   border-radius: 14px;
-  background: #fff;
+  background: var(--bs-card);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
 }
 

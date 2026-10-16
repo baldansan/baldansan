@@ -3,6 +3,7 @@ import {
 } from "@/lib/analytics/attempt-metrics";
 import { HELZUI_COURSE_ID } from "@/lib/helzui/question-lookup";
 import { HSK30_DUREM_COURSE_ID } from "@/lib/hsk30-durem/load-course";
+import { emitCorrectAnswer } from "@/lib/celebrate/celebrate-events";
 import { awardPoints } from "@/lib/points/award";
 import { POINT_VALUES } from "@/lib/points/points-config";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
@@ -42,6 +43,8 @@ export type RecordQuestionAttemptInput = {
 
 /** Fire-and-forget: never throws; failures are ignored. */
 export function recordQuestionAttempt(input: RecordQuestionAttemptInput): void {
+  // Зөв хариулт → жижиг confetti (нэвтрээгүй, Supabase-гүй ч ажиллана).
+  if (input.isCorrect) emitCorrectAnswer();
   if (!hasSupabaseConfig || !supabase) return;
 
   void (async () => {

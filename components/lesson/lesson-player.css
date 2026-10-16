@@ -91,13 +91,13 @@
   box-shadow:0 8px 20px rgba(31,184,90,.28);transition:transform .15s ease, box-shadow .15s ease}
 .bs-cta:active{transform:scale(.985)}
 .bs-cta:disabled{opacity:.4;cursor:default;box-shadow:none}
-.bs-cta-secondary{background:#fff;color:var(--bs-green);box-shadow:inset 0 0 0 2px var(--bs-green);margin-bottom:8px}
+.bs-cta-secondary{background:var(--bs-card);color:var(--bs-green);box-shadow:inset 0 0 0 2px var(--bs-green);margin-bottom:8px}
 
 /* vocabulary */
 .bs-vtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
 .bs-counter{font-size:12px;font-weight:700;color:var(--bs-green-700);background:var(--bs-green-50);padding:4px 10px;border-radius:99px}
 .bs-vcard{text-align:center;padding:26px 18px 22px;border:1px solid var(--bs-line);border-radius:18px;margin-top:12px;
-  background:linear-gradient(180deg,#fff,#FCFDFC)}
+  background:var(--bs-card)}
 .bs-vcard .bs-hanzi{font-family:var(--bs-zh);font-weight:900;font-size:52px;letter-spacing:.04em;line-height:1}
 .bs-vcard .bs-vpy{color:var(--bs-green-700);font-weight:600;font-size:18px;margin-top:10px}
 .bs-vcard .bs-vmn{font-size:16px;color:var(--bs-ink-2);margin-top:6px;font-weight:500}
@@ -114,20 +114,20 @@
 .bs-vcard .bs-vfreq{font-size:10px;font-weight:700;color:var(--bs-green-700);background:var(--bs-green-50);border:1px dashed var(--bs-green-100);padding:3px 9px;border-radius:99px}
 .bs-vcard .bs-vclassifiers{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:5px;width:100%;margin-top:2px}
 .bs-vcard .bs-vclassifiers-title{font-size:10px;font-weight:700;color:var(--bs-muted);letter-spacing:.02em;margin-right:2px}
-.bs-vcard .bs-vchip-cls{font-size:10.5px;font-weight:600;color:var(--bs-ink-2);border:1px solid var(--bs-line);background:#fff;padding:3px 8px;border-radius:99px}
+.bs-vcard .bs-vchip-cls{font-size:10.5px;font-weight:600;color:var(--bs-ink-2);border:1px solid var(--bs-line);background:var(--bs-card);padding:3px 8px;border-radius:99px}
 
 .bs-example{margin-top:16px;padding:14px;border-radius:14px;background:var(--bs-green-50);text-align:left;display:flex;gap:11px;align-items:flex-start}
 .bs-example .bs-ex-zh{font-family:var(--bs-zh);font-size:16px;font-weight:500;line-height:1.4}
 .bs-example .bs-ex-py{font-size:11.5px;color:var(--bs-green-700);font-weight:600;margin-top:4px}
 .bs-example .bs-ex-mn{font-size:12.5px;color:var(--bs-ink-2);margin-top:4px}
 
-.bs-speak{width:38px;height:38px;border-radius:11px;flex:none;display:grid;place-items:center;background:#fff;
+.bs-speak{width:38px;height:38px;border-radius:11px;flex:none;display:grid;place-items:center;background:var(--bs-card);
   border:1px solid var(--bs-green-100);color:var(--bs-green-700);cursor:pointer;font-size:17px;transition:transform .15s}
 .bs-speak:active{transform:scale(.9)}
 .bs-speak.bs-lg{width:54px;height:54px;border-radius:16px;font-size:22px;margin:16px auto 0}
 
 .bs-vbtns{display:flex;gap:9px;margin-top:16px}
-.bs-vbtn{flex:1;border:1px solid var(--bs-line);background:#fff;border-radius:14px;padding:13px;
+.bs-vbtn{flex:1;border:1px solid var(--bs-line);background:var(--bs-card);border-radius:14px;padding:13px;
   font-family:var(--bs-ui);font-weight:700;font-size:14px;cursor:pointer;color:var(--bs-ink);transition:transform .15s,background .15s,border-color .15s}
 .bs-vbtn:active{transform:scale(.97)}
 .bs-vbtn.bs-know{background:var(--bs-green);color:#fff;border-color:var(--bs-green)}
@@ -135,7 +135,7 @@
 
 /* nav row (prev/next within a module/player) */
 .bs-navrow{display:flex;gap:9px;margin:6px 4px 0}
-.bs-navbtn{flex:1;border:1px solid var(--bs-line);background:#fff;border-radius:14px;padding:13px;
+.bs-navbtn{flex:1;border:1px solid var(--bs-line);background:var(--bs-card);border-radius:14px;padding:13px;
   font-family:var(--bs-ui);font-weight:700;font-size:14px;cursor:pointer;color:var(--bs-ink-2);transition:transform .15s}
 .bs-navbtn:active{transform:scale(.98)}
 .bs-navbtn:disabled{opacity:.4;cursor:default}
@@ -152,7 +152,7 @@
 .bs-char-glyph{font-family:var(--bs-zh);font-size:42px;font-weight:900;display:block;line-height:1.1}
 .bs-char-pinyin{display:block;font-size:14px;font-weight:600;color:var(--bs-green-700);margin-top:4px}
 .bs-char-meaning{display:block;font-size:13px;color:var(--bs-ink-2);margin-top:2px}
-.bs-mizige{position:relative;width:280px;height:280px;margin:0 auto;border:2px solid #c5cfc8;border-radius:12px;background:#fff;overflow:hidden;color:#d1d5db}
+.bs-mizige{position:relative;width:280px;height:280px;margin:0 auto;border:2px solid #c5cfc8;border-radius:12px;background:var(--bs-card);overflow:hidden;color:#d1d5db}
 .bs-mizige-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
 .bs-mizige-canvas{position:relative;z-index:1;width:100%;height:100%}
 .bs-mizige-loading{position:absolute;inset:0;display:grid;place-items:center;font-size:13px;color:var(--bs-muted);z-index:1}
@@ -170,12 +170,12 @@
 .bs-decomp-hint-label{margin:0 0 6px;font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--bs-green-700)}
 .bs-decomp-hint-char{font-family:var(--bs-zh);font-size:12px;font-weight:900;color:var(--bs-ink);text-transform:none;letter-spacing:0}
 .bs-decomp-hint-row{display:flex;flex-wrap:wrap;gap:6px}
-.bs-decomp-chip{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;border-radius:999px;background:#fff;border:1px solid var(--bs-line);font-size:11px;line-height:1.2}
+.bs-decomp-chip{display:inline-flex;align-items:center;gap:4px;padding:4px 8px;border-radius:999px;background:var(--bs-card);border:1px solid var(--bs-line);font-size:11px;line-height:1.2}
 .bs-decomp-chip-icon{font-size:14px;line-height:1}
 .bs-decomp-chip-glyph{font-family:var(--bs-zh);font-size:13px;font-weight:800;color:var(--bs-ink)}
 .bs-decomp-chip-name{color:var(--bs-muted);font-weight:600}
 .bs-decomp-etym{margin:8px 0 0;font-size:11px;line-height:1.45;color:var(--bs-ink-2)}
-.bs-cta-muted{margin-top:8px;background:#fff;color:var(--bs-ink-2);border:1px solid var(--bs-line);box-shadow:none}
+.bs-cta-muted{margin-top:8px;background:var(--bs-card);color:var(--bs-ink-2);border:1px solid var(--bs-line);box-shadow:none}
 
 /* ---- PC (≥920px): зүүн үеийн жагсаалт · голд .bs-root · баруун үгс (lesson-path-player.tsx) ---- */
 .bs-lp-grid{display:contents}
@@ -213,3 +213,26 @@
 .bs-vcard .bs-hanzi--tone .bs-tone-zh{font-size:60px;letter-spacing:.04em}
 .bs-vcard .bs-tone-legend-row{margin-top:10px}
 .bs-vcard .bs-word-writer{margin-top:12px}
+
+
+/* === Үгийн карт — 3D flip (ханз → утга) === */
+.bs-vflip-scene{perspective:1000px;-webkit-tap-highlight-color:transparent}
+.bs-vflip{position:relative;display:block;width:100%;min-height:150px;margin:0;padding:0;border:none;background:transparent;cursor:pointer;font:inherit;color:inherit;text-align:center}
+.bs-vflip-inner{position:relative;width:100%;min-height:150px;transform-style:preserve-3d;transition:transform .35s cubic-bezier(.4,.2,.2,1)}
+.bs-vflip--flipped .bs-vflip-inner{transform:rotateY(180deg)}
+.bs-vflip-face{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border-radius:16px;backface-visibility:hidden;-webkit-backface-visibility:hidden;padding:8px 6px}
+.bs-vflip-front{background:var(--bs-green-50)}
+.bs-vflip-back{transform:rotateY(180deg);background:var(--bs-card);border:1px dashed var(--bs-green-100)}
+.bs-vflip-hint{margin:0;font-size:11px;font-weight:700;color:var(--bs-muted)}
+.bs-vflip-hint::before{content:"👆 "}
+.bs-vcard .bs-vflip-back .bs-vmn{margin-top:4px;font-size:20px;font-weight:800;color:var(--bs-ink)}
+.bs-vcard .bs-vflip-back .bs-hanzi--tone .bs-tone-zh{font-size:40px}
+.bs-vcard .bs-vflip-back .bs-hanzi--tone .bs-tone-py{font-size:15px}
+@media (prefers-reduced-motion: reduce){
+  .bs-vflip-inner{transition:none;transform:none!important}
+  .bs-vflip-face{transition:opacity .25s ease;transform:none}
+  .bs-vflip-front{opacity:1}
+  .bs-vflip-back{opacity:0}
+  .bs-vflip--flipped .bs-vflip-front{opacity:0}
+  .bs-vflip--flipped .bs-vflip-back{opacity:1}
+}

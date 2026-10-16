@@ -1,0 +1,271 @@
+/* components/temee/temee-mascot.css — Тэмээ багшийн дүр (emoji + CSS анимейшн) */
+
+.bs-mascot {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.bs-mascot-figure {
+  position: relative;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border: none;
+  border-radius: 24px;
+  background: radial-gradient(circle at 35% 30%, #ffe3a8, var(--bs-amber));
+  box-shadow: 0 6px 16px rgba(242, 169, 59, 0.35);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  overflow: visible;
+}
+.bs-mascot--sm .bs-mascot-figure {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+}
+.bs-mascot--lg .bs-mascot-figure {
+  width: 96px;
+  height: 96px;
+  border-radius: 30px;
+}
+.bs-mascot-body {
+  display: block;
+  font-size: 40px;
+  line-height: 1;
+  transform-origin: 50% 90%;
+  animation: bs-mascot-float 3.2s ease-in-out infinite;
+}
+.bs-mascot--sm .bs-mascot-body {
+  font-size: 28px;
+}
+.bs-mascot--lg .bs-mascot-body {
+  font-size: 56px;
+}
+
+/* Нүд анивчих — emoji дээр нимгэн давхарга (blink) */
+.bs-mascot-eyes {
+  position: absolute;
+  left: 50%;
+  top: 34%;
+  width: 34%;
+  height: 10%;
+  transform: translateX(-50%) scaleY(0);
+  border-radius: 999px;
+  background: radial-gradient(circle at 35% 30%, #ffe3a8, var(--bs-amber));
+  opacity: 0.9;
+  animation: bs-mascot-blink 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.bs-mascot-badge {
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--bs-card);
+  box-shadow: var(--bs-shadow);
+  font-size: 14px;
+  line-height: 1;
+}
+.bs-mascot--sm .bs-mascot-badge {
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+}
+
+.bs-mascot-line {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 10px 13px;
+  border-radius: 16px 16px 16px 4px;
+  background: var(--bs-card);
+  border: 1px solid var(--bs-line);
+  color: var(--bs-ink);
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.45;
+  box-shadow: var(--bs-shadow);
+  animation: bs-mascot-line-in 0.3s ease both;
+}
+.bs-mascot-line::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  bottom: 10px;
+  width: 12px;
+  height: 12px;
+  background: var(--bs-card);
+  border-left: 1px solid var(--bs-line);
+  border-bottom: 1px solid var(--bs-line);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+/* --- Сэтгэл санаа --- */
+.bs-mascot--happy .bs-mascot-body {
+  animation: bs-mascot-bounce 0.9s cubic-bezier(0.3, 0.8, 0.4, 1.2) infinite;
+}
+.bs-mascot--happy .bs-mascot-badge {
+  animation: bs-mascot-sparkle 1.2s ease-in-out infinite;
+}
+.bs-mascot--normal .bs-mascot-badge {
+  transform-origin: 70% 80%;
+  animation: bs-mascot-wave 1.6s ease-in-out infinite;
+}
+.bs-mascot--sad .bs-mascot-figure {
+  background: radial-gradient(circle at 35% 30%, #dfe7e2, #a9b7ae);
+  box-shadow: 0 6px 16px rgba(80, 96, 88, 0.25);
+}
+.bs-mascot--sad .bs-mascot-body {
+  filter: saturate(0.6);
+  animation: bs-mascot-droop 3s ease-in-out infinite;
+}
+.bs-mascot--sad .bs-mascot-badge {
+  animation: bs-mascot-tear 2.4s ease-in infinite;
+}
+.bs-mascot--sleepy .bs-mascot-figure {
+  background: radial-gradient(circle at 35% 30%, #c9d6ff, #6f7fc4);
+  box-shadow: 0 6px 16px rgba(80, 96, 160, 0.3);
+}
+.bs-mascot--sleepy .bs-mascot-body {
+  filter: brightness(0.9);
+  animation: bs-mascot-breathe 3.6s ease-in-out infinite;
+}
+.bs-mascot--sleepy .bs-mascot-eyes {
+  transform: translateX(-50%) scaleY(1);
+  animation: none;
+  background: radial-gradient(circle at 35% 30%, #c9d6ff, #8b9ad6);
+}
+.bs-mascot--sleepy .bs-mascot-badge {
+  animation: bs-mascot-zzz 2.2s ease-in-out infinite;
+}
+
+@keyframes bs-mascot-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+@keyframes bs-mascot-bounce {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  30% {
+    transform: translateY(-9px) scale(0.96, 1.06);
+  }
+  55% {
+    transform: translateY(0) scale(1.05, 0.95);
+  }
+}
+@keyframes bs-mascot-blink {
+  0%,
+  92%,
+  100% {
+    transform: translateX(-50%) scaleY(0);
+  }
+  95% {
+    transform: translateX(-50%) scaleY(1);
+  }
+}
+@keyframes bs-mascot-wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(18deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(14deg);
+  }
+}
+@keyframes bs-mascot-sparkle {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.25) rotate(20deg);
+    opacity: 0.8;
+  }
+}
+@keyframes bs-mascot-droop {
+  0%,
+  100% {
+    transform: rotate(-6deg) translateY(2px);
+  }
+  50% {
+    transform: rotate(-3deg) translateY(4px);
+  }
+}
+@keyframes bs-mascot-tear {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+}
+@keyframes bs-mascot-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04) translateY(1px);
+  }
+}
+@keyframes bs-mascot-zzz {
+  0% {
+    transform: translate(0, 0) scale(0.8);
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(6px, -12px) scale(1.15);
+    opacity: 0;
+  }
+}
+@keyframes bs-mascot-line-in {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bs-mascot-body,
+  .bs-mascot-eyes,
+  .bs-mascot-badge,
+  .bs-mascot-line {
+    animation: none !important;
+  }
+}

@@ -111,7 +111,10 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#1FB85A",
-  /** Light-only design — opts the page out of Chrome's auto dark mode. */
+  /**
+   * Chrome-ийн auto dark mode-оос хамгаална; жинхэнэ харанхуй горимыг
+   * globals.css дэх html[data-theme="dark"]{color-scheme:dark} удирдана.
+   */
   colorScheme: "only light",
   width: "device-width",
   initialScale: 1,
@@ -129,6 +132,13 @@ const PENDING_SCRIPT = `(function(){try{var m=document.cookie.match(/(?:^|;\s*)b
  * Ханзны фонтын сонголт (Тохиргоо: Энгийн/Сурах бичиг/Самбар) — localStorage-оос
  * унших ба CSS-ийн зурагдахаас (flash) өмнө html дээр data-hanzi-font тавина.
  */
+/**
+ * Харагдах байдал (Гэрэлтэй/Харанхуй/Системийн) — lib/theme/theme-pref.
+ * CSS зурагдахаас өмнө <html data-theme> тавина (flash гарахгүй).
+ * Admin/багш/байгууллагын зам үргэлж light.
+ */
+const THEME_SCRIPT = `(function(){try{var p=location.pathname;var forced=/^\\/(admin|teachers?|teacher-dashboard|organization)(\\/|$)/.test(p);var t=localStorage.getItem('buunduu-theme-v1');var d=t==='dark'||((t!=='light')&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);var th=forced||!d?'light':'dark';document.documentElement.setAttribute('data-theme',th);if(th==='dark'){var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content','#0f1512')}}catch(e){}})()`;
+
 const HANZI_FONT_SCRIPT = `(function(){try{var f=localStorage.getItem('buunduu-hanzi-font-v1');if(f==='serif'||f==='brush'){document.documentElement.setAttribute('data-hanzi-font',f)}}catch(e){}})()`;
 
 export default async function RootLayout({
@@ -145,6 +155,7 @@ export default async function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: PENDING_SCRIPT }} />
         <script dangerouslySetInnerHTML={{ __html: HANZI_FONT_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
       </head>
       <body className="flex min-h-full flex-col font-sans">
         <UiLocaleProvider locale={locale}>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { DeleteAccountCard } from "@/components/account/delete-account-card";
 import { HanziFontSetting } from "@/components/settings/hanzi-font-setting";
+import { ThemeSetting } from "@/components/settings/theme-setting";
 import { ToneColorSetting } from "@/components/settings/tone-color-setting";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
@@ -116,6 +117,7 @@ export function SettingsAppView() {
         </div>
       </MobileCard>
 
+      <ThemeSetting />
       <HanziFontSetting />
       <ToneColorSetting />
 

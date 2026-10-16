@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { LessonDifficultyFeedback } from "@/components/feedback/lesson-difficulty-feedback";
+import { TemeeMascot } from "@/components/temee/temee-mascot";
 import { getBsQuizProgress } from "@/lib/lesson/bs-step-progress";
 import { extractLessonPathSummaryData } from "@/lib/lesson/lesson-path-summary-data";
 import {
@@ -110,6 +111,9 @@ export function LessonPathSummaryStage({
           {toast}
         </p>
       ) : null}
+
+      {/* Тэмээ багш баярлаж байна — хичээл дууслаа */}
+      <TemeeMascot celebrate size="md" className="bs-path-summary-mascot" />
 
       <div className="bs-card">
         <div className="bs-label">

@@ -1,3 +1,5 @@
+import { emitCelebrate } from "@/lib/celebrate/celebrate-events";
+
 export const PROGRESS_STORAGE_KEY = "buunduu-surtsgaay-progress";
 export const PASSING_QUIZ_PERCENT = 70;
 
@@ -109,6 +111,8 @@ export function markLessonCompleted(lessonId: string): void {
   store.lastActiveLessonId = lessonId;
   writeStore(store);
   notifyRetentionActivity("lesson_completed", { lessonId });
+  // Том confetti + badge шалгалт (components/celebrate/celebration-layer.tsx)
+  emitCelebrate({ kind: "lesson_done", lessonId });
 }
 
 export function getLearnedWords(lessonId: string): string[] {
@@ -178,6 +182,7 @@ export function saveQuizResult(
   store.lastActiveLessonId = lessonId;
   writeStore(store);
   notifyRetentionActivity("quiz_attempt", { lessonId });
+  emitCelebrate({ kind: "quiz_done", lessonId, percent: percentage });
   return result;
 }
 

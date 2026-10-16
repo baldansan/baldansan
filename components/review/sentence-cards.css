@@ -3,7 +3,7 @@
 .bs-sc-empty {
   padding: 28px 18px;
   border-radius: 20px;
-  background: #fff;
+  background:var(--bs-card);
   box-shadow: var(--bs-shadow);
   text-align: center;
   font-size: 14px;
@@ -17,7 +17,7 @@
 .bs-sc-card {
   padding: 18px;
   border-radius: 22px;
-  background: #fff;
+  background:var(--bs-card);
   box-shadow: var(--bs-shadow);
 }
 .bs-sc-card-top {
@@ -47,7 +47,7 @@
   padding: 0 12px;
   border: 1px solid var(--bs-line);
   border-radius: 999px;
-  background: #fff;
+  background:var(--bs-card);
   font-size: 12px;
   font-weight: 800;
   color: var(--bs-ink-2);
@@ -80,7 +80,7 @@
 @media (max-width: 919px) { .bs-sc-keys { display: none; } }
 
 .bs-sc-groups { display: flex; flex-direction: column; gap: 14px; }
-.bs-sc-group { padding: 14px 16px; border-radius: 20px; background: #fff; box-shadow: var(--bs-shadow); }
+.bs-sc-group { padding: 14px 16px; border-radius: 20px; background:var(--bs-card); box-shadow: var(--bs-shadow); }
 .bs-sc-group-title { margin: 0 0 8px; font-size: 13px; font-weight: 900; color: var(--bs-ink); }
 .bs-sc-list { list-style: none; margin: 0; padding: 0; }
 .bs-sc-item {
