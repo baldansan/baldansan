@@ -3,7 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PrefetchLink } from "@/components/navigation/prefetch-link";
-import { useLocalSnapshot, writeLocalSnapshot } from "@/lib/cache/local-snapshot";
+import {
+  readLocalSnapshot,
+  useLocalSnapshot,
+  writeLocalSnapshot,
+} from "@/lib/cache/local-snapshot";
 import { useEffect, useMemo, useState } from "react";
 import { getSelectedLanguage } from "@/lib/learner-onboarding";
 import {
@@ -314,6 +318,9 @@ export function HomeAppView({
   }, [activeCourse, activeSeries, selectedLang, hskHydrated, activeHskLevel]);
   const lessonIds = useMemo(() => lessons.map((l) => l.id), [lessons]);
 
+  // Хэрэглэгч/streak/оноо/rank — зөвхөн анх ачаалахад нэг л удаа татна.
+  // (Урьд нь ном сонголт солигдох бүрт ЭНЭ хэсгийг ч дахин татдаг байсан —
+  // тухайн дата номоос хамаардаггүй тул номоор дахин ачаалах шалтгаангүй.)
   useEffect(() => {
     let alive = true;
     async function load() {
@@ -327,16 +334,8 @@ export function HomeAppView({
         setLoggedIn(isLoggedIn);
         setDisplayName(name);
       }
-      // Урьд нь 4 дуудлага дараалж (streak → continue → progress → bichleg) явдаг байсан —
-      // бие биенээсээ хамаарахгүй тул зэрэг явуулна (нэг roundtrip-ийн хугацаа).
-      const [retention, cont, progress, clip, pts, ptsToday, rank] = await Promise.all([
+      const [retention, clip, pts, ptsToday, rank] = await Promise.all([
         getStreakUnified().catch(() => null),
-        lessonIds.length > 0
-          ? resolveContinueLearning(lessonIds).catch(() => null)
-          : Promise.resolve(null),
-        allLessonIds.length > 0
-          ? getLessonProgressMapSmart(allLessonIds).catch(() => null)
-          : Promise.resolve(null),
         isLoggedIn ? fetchBichlegContinueTargetClient().catch(() => null) : Promise.resolve(null),
         isLoggedIn ? fetchMyPoints().catch(() => null) : Promise.resolve(null),
         isLoggedIn ? fetchMyPointsToday().catch(() => null) : Promise.resolve(null),
@@ -346,12 +345,44 @@ export function HomeAppView({
       if (!alive) return;
       const nextStreak = retention?.currentStreak ?? 0;
       const nextPoints = pts ? pts.total : null;
-      let nextHref = "/lessons/1";
-      let nextTitle = "Хичээл 1";
       setStreak(nextStreak);
       setPoints(nextPoints);
       setPointsToday(ptsToday);
       setClassRank(rank);
+      setBichlegContinue(isLoggedIn ? clip : null);
+      const prev = readLocalSnapshot<HomeSnapshot>(HOME_SNAPSHOT_KEY);
+      writeLocalSnapshot<HomeSnapshot>(HOME_SNAPSHOT_KEY, {
+        displayName: name,
+        loggedIn: isLoggedIn,
+        streak: nextStreak,
+        points: nextPoints,
+        continueHref: prev?.continueHref ?? "/lessons/1",
+        continueTitle: prev?.continueTitle ?? "Хичээл 1",
+        statusByLesson: prev?.statusByLesson ?? {},
+        bichlegContinue: isLoggedIn ? clip : null,
+      });
+    }
+    void load();
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  // Үргэлжлүүлэх хичээл + явц — сонгосон ном/курс солигдох бүрт л дахин татна.
+  useEffect(() => {
+    let alive = true;
+    async function load() {
+      const [cont, progress] = await Promise.all([
+        lessonIds.length > 0
+          ? resolveContinueLearning(lessonIds).catch(() => null)
+          : Promise.resolve(null),
+        allLessonIds.length > 0
+          ? getLessonProgressMapSmart(allLessonIds).catch(() => null)
+          : Promise.resolve(null),
+      ]);
+      if (!alive) return;
+      let nextHref = "/lessons/1";
+      let nextTitle = "Хичээл 1";
       if (cont) {
         nextHref = cont.href;
         const lesson = lessons.find((l) => l.id === cont.lessonId);
@@ -364,17 +395,17 @@ export function HomeAppView({
         setContinueTitle(nextTitle);
       }
       if (progress) setStatusByLesson(progress.byLesson);
-      setBichlegContinue(isLoggedIn ? clip : null);
       setContinueResolved(true);
+      const prev = readLocalSnapshot<HomeSnapshot>(HOME_SNAPSHOT_KEY);
       writeLocalSnapshot<HomeSnapshot>(HOME_SNAPSHOT_KEY, {
-        displayName: name,
-        loggedIn: isLoggedIn,
-        streak: nextStreak,
-        points: nextPoints,
+        displayName: prev?.displayName ?? "Суралцагч",
+        loggedIn: prev?.loggedIn ?? false,
+        streak: prev?.streak ?? 0,
+        points: prev?.points ?? null,
         continueHref: nextHref,
         continueTitle: nextTitle,
         statusByLesson: progress?.byLesson ?? {},
-        bichlegContinue: isLoggedIn ? clip : null,
+        bichlegContinue: prev?.bichlegContinue ?? null,
       });
     }
     void load();
