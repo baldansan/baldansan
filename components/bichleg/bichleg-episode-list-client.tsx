@@ -10,16 +10,21 @@ import {
   formatSeriesHeaderMeta,
 } from "@/lib/bichleg/episode-label";
 import {
-  formatEpisodePartialPercent,
-  resolveSeriesContinueVideoId,
-} from "@/lib/bichleg/video-progress-utils";
+  episodeProgressPct,
+  episodeWatchHref,
+  formatResumeLabel,
+  getNextEpisodeInList,
+  resolveEpisodeWatchState,
+  resolveLastWatchedVideoId,
+  resolveSeriesContinueTarget,
+} from "@/lib/bichleg/episode-progress";
 import { seriesCoverInitial } from "@/lib/bichleg/series-cover";
 import type {
   UserVideoProgress,
   VideoEpisodeItem,
   VideoSeriesInfo,
 } from "@/lib/bichleg/types";
-import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { useUiLocale, type UiLocale } from "@/lib/i18n/ui-locale";
 import { tr } from "@/lib/i18n/translate";
 
 type Props = {
@@ -27,11 +32,9 @@ type Props = {
   series: VideoSeriesInfo | null;
   episodes: VideoEpisodeItem[];
   progressByVideoId?: Record<string, UserVideoProgress>;
+  /** false (зочин) бол явцын UI огт харуулахгүй. */
+  loggedIn?: boolean;
 };
-
-function episodeHref(seriesId: string, videoId: string): string {
-  return `/bichleg/${encodeURIComponent(seriesId)}/${encodeURIComponent(videoId)}`;
-}
 
 function episodeHanzi(episode: VideoEpisodeItem): string {
   const zh = episode.title_zh?.trim();
@@ -39,11 +42,21 @@ function episodeHanzi(episode: VideoEpisodeItem): string {
   return seriesCoverInitial(episode.title_mn);
 }
 
+function episodeBadgeLabel(
+  locale: UiLocale,
+  episode: VideoEpisodeItem,
+  index: number
+): string {
+  const no = episode.episode_no ?? index + 1;
+  return locale === "zh" ? `第${no}集` : `${no}-р анги`;
+}
+
 export function BichlegEpisodeListClient({
   seriesId,
   series,
   episodes,
   progressByVideoId = {},
+  loggedIn = false,
 }: Props) {
   const locale = useUiLocale();
   const isOther = seriesId === "other";
@@ -61,19 +74,45 @@ export function BichlegEpisodeListClient({
         )
       : tr(locale, isOther ? "Цувралгүй бичлэг" : "Анги олдсонгүй");
 
-  const continueVideoId = resolveSeriesContinueVideoId(episodes, progressByVideoId);
-  const continueEpisode = continueVideoId
-    ? episodes.find((ep) => ep.id === continueVideoId)
+  const showProgress = loggedIn;
+  const watchedCount = showProgress
+    ? episodes.filter(
+        (ep) =>
+          resolveEpisodeWatchState(progressByVideoId[ep.id], ep.duration_sec) ===
+          "completed"
+      ).length
+    : 0;
+
+  const continueTarget = showProgress
+    ? resolveSeriesContinueTarget(episodes, progressByVideoId)
     : null;
-  const continueLabel = continueEpisode
-    ? formatEpisodeListTitle(continueEpisode.episode_no, continueEpisode.title_mn)
+  const continueEpisode = continueTarget
+    ? episodes.find((ep) => ep.id === continueTarget.videoId) ?? null
     : null;
-  const hasPartialProgress =
-    continueVideoId != null &&
-    Boolean(
-      progressByVideoId[continueVideoId]?.watched_sec &&
-        !progressByVideoId[continueVideoId]?.completed
-    );
+  const continuePct = continueEpisode
+    ? episodeProgressPct(progressByVideoId[continueEpisode.id], continueEpisode.duration_sec)
+    : 0;
+  const continueKicker =
+    continueTarget?.kind === "resume"
+      ? tr(locale, "Үргэлжлүүлэх")
+      : continueTarget?.kind === "next"
+        ? tr(locale, "Дараагийн анги")
+        : tr(locale, "Эхлэх");
+  const allDone = showProgress && episodes.length > 0 && !continueTarget;
+
+  // Сүүлд үзсэн ангийн дараагийнх — «Дараагийн анги →» онцлох карт.
+  const lastWatchedId = showProgress
+    ? resolveLastWatchedVideoId(episodes, progressByVideoId)
+    : null;
+  const nextAfterLast = lastWatchedId
+    ? getNextEpisodeInList(episodes, lastWatchedId)
+    : null;
+  const nextAfterLastId =
+    nextAfterLast &&
+    resolveEpisodeWatchState(progressByVideoId[nextAfterLast.id], nextAfterLast.duration_sec) !==
+      "completed"
+      ? nextAfterLast.id
+      : null;
 
   return (
     <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
@@ -81,7 +120,12 @@ export function BichlegEpisodeListClient({
         {tr(locale, "← Цуврал сонгох")}
       </Link>
       <h1 className="bs-tm-page-title" translate="no">{titleMn}</h1>
-      <p className="mb-4 text-sm font-semibold text-[#7a8c82]">{headerMeta}</p>
+      <p className="mb-4 text-sm font-semibold text-[#7a8c82]">
+        {headerMeta}
+        {showProgress && episodes.length > 0
+          ? ` · ${watchedCount}/${episodes.length} ${tr(locale, "анги үзсэн")}`
+          : null}
+      </p>
 
       {episodes.length === 0 ? (
         <div className="bs-bichleg-pick-empty">
@@ -99,73 +143,85 @@ export function BichlegEpisodeListClient({
         </div>
       ) : (
         <>
-          {continueVideoId && continueLabel ? (
-            <Link href={episodeHref(seriesId, continueVideoId)} className="bs-tm-continue mb-4">
+          {continueTarget && continueEpisode ? (
+            <Link
+              href={episodeWatchHref(
+                seriesId,
+                continueEpisode.id,
+                continueTarget.kind === "resume" ? continueTarget.watchedSec : 0
+              )}
+              className="bs-tm-continue bs-tm-continue--bichleg mb-4"
+            >
               <span className="bs-tm-continue-ic" aria-hidden>
                 ▶
               </span>
               <span className="min-w-0 flex-1">
-                <p className="bs-tm-continue-kicker">
-                  {tr(locale, hasPartialProgress ? "Үргэлжлүүлэх" : "Эхлэх")}
+                <p className="bs-tm-continue-kicker">{continueKicker}</p>
+                <p className="bs-tm-continue-title" translate="no">
+                  {formatEpisodeListTitle(
+                    continueEpisode.episode_no,
+                    continueEpisode.title_mn
+                  )}
                 </p>
-                <p className="bs-tm-continue-title">{continueLabel}</p>
+                {continueTarget.kind === "resume" ? (
+                  <span className="bs-tm-continue-progress">
+                    <span className="bs-tm-video-progress-track">
+                      <i style={{ width: `${continuePct}%` }} />
+                    </span>
+                    <span className="bs-tm-continue-progress-label">
+                      {formatResumeLabel(locale, continuePct, continueTarget.watchedSec)}
+                    </span>
+                  </span>
+                ) : null}
+              </span>
+              <span className="bs-tm-continue-arrow" aria-hidden>
+                →
               </span>
             </Link>
           ) : null}
+          {allDone ? (
+            <p className="bs-tm-continue-done mb-4">
+              {tr(locale, "Бүх ангийг үзсэн ✓")}
+            </p>
+          ) : null}
           <div className="bs-bichleg-ep-grid">
           {episodes.map((episode, index) => {
-            const progress = progressByVideoId[episode.id];
-            const completed = Boolean(progress?.completed);
-            const partialPct =
-              !completed && progress && episode.duration_sec
-                ? Math.min(
-                    100,
-                    Math.round(
-                      (progress.watched_sec / episode.duration_sec) * 100
-                    )
-                  )
-                : completed
-                  ? 100
-                  : 0;
+            const progress = showProgress ? progressByVideoId[episode.id] : undefined;
+            const state = resolveEpisodeWatchState(progress, episode.duration_sec);
+            const pct = episodeProgressPct(progress, episode.duration_sec);
             const label = formatEpisodeListTitle(
               episode.episode_no,
               episode.title_mn
             );
-            const partialLabel =
-              !completed && progress
-                ? formatEpisodePartialPercent(
-                    progress.watched_sec,
-                    episode.duration_sec
-                  )
-                : null;
+            const stateLabel = !showProgress
+              ? undefined
+              : state === "completed"
+                ? tr(locale, "✓ Үзсэн")
+                : state === "partial" && progress
+                  ? formatResumeLabel(locale, pct, progress.watched_sec)
+                  : tr(locale, "Үзээгүй");
+            const isNext = nextAfterLastId === episode.id;
 
             return (
               <BichlegVideoCard
                 key={episode.id}
-                href={episodeHref(seriesId, episode.id)}
+                href={episodeWatchHref(
+                  seriesId,
+                  episode.id,
+                  state === "partial" ? progress?.watched_sec : 0
+                )}
                 titleMn={label}
                 titleZh={episode.title_zh}
                 hanzi={episodeHanzi(episode)}
                 coverUrl={youtubeThumbUrl(episode.youtube_id)}
                 thumbIndex={index}
-                episodeBadge={
-                  locale === "zh"
-                    ? `第${episode.episode_no ?? index + 1}集`
-                    : episode.episode_no != null
-                      ? `${episode.episode_no}-р анги`
-                      : `${index + 1}-р анги`
-                }
+                episodeBadge={episodeBadgeLabel(locale, episode, index)}
                 hskLevel={episode.hsk_level}
-                progressPct={partialPct > 0 ? partialPct : undefined}
-                progressLabel={
-                  completed
-                    ? tr(locale, "Дууссан ✓")
-                    : partialLabel
-                      ? locale === "zh"
-                        ? `已看 ${partialLabel}`
-                        : `${partialLabel} үзсэн`
-                      : undefined
-                }
+                showProgressBar={showProgress}
+                progressPct={showProgress ? pct : undefined}
+                progressLabel={stateLabel}
+                progressDone={state === "completed"}
+                accentLabel={isNext ? tr(locale, "Дараагийн анги →") : undefined}
               />
             );
           })}

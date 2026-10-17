@@ -7,10 +7,7 @@ import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
 import { fetchSongVideos } from "@/lib/songs/supabase";
 import { groupSongsBySeries } from "@/lib/songs/song-groups";
-import {
-  fetchSeriesWatchProgressMap,
-  isServerUserAuthenticated,
-} from "@/lib/supabase/video-progress-server";
+import { fetchSeriesWatchProgressOverview } from "@/lib/supabase/video-progress-server";
 import {
   countOrphanVideosCached,
   fetchVideoSeriesCatalogCached,
@@ -49,22 +46,21 @@ export default async function BichlegPage({ searchParams }: Props) {
     countOrphanVideosCached(),
   ]);
 
-  const isAuthenticated = await isServerUserAuthenticated();
+  // Нэг auth + 2 query: цуврал бүрийн N/M, сүүлд үзсэн цаг, үргэлжлүүлэх анги.
   const totalsBySeriesId = Object.fromEntries(
     seriesList.map((s) => [s.id, s.videoCount])
   );
-  const seriesProgress = isAuthenticated
-    ? await fetchSeriesWatchProgressMap(
-        seriesList.map((s) => s.id),
-        totalsBySeriesId
-      )
-    : {};
+  const { loggedIn, bySeriesId } = await fetchSeriesWatchProgressOverview(
+    seriesList.map((s) => s.id),
+    totalsBySeriesId
+  );
 
   return (
     <BichlegSeriesPickerClient
       seriesList={seriesList}
       orphanCount={orphanCount}
-      seriesProgress={seriesProgress}
+      seriesProgress={bySeriesId}
+      loggedIn={loggedIn}
     />
   );
 }

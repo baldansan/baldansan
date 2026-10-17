@@ -24,7 +24,12 @@ type Props = {
   progressLabel?: string;
   /** Catalog card for series picker; stack for episode list. */
   layout?: "catalog" | "stack";
+  /** Явцын мөрийг 0% байсан ч харуулна (нэвтэрсэн хэрэглэгч). */
   showProgressBar?: boolean;
+  /** Дууссан анги — мөр бүтэн, ✓ өнгө. */
+  progressDone?: boolean;
+  /** «Дараагийн анги →» мэт онцлох туузан бичиг (hero дээр) + хүрээ. */
+  accentLabel?: string;
 };
 
 function ThumbArea({
@@ -79,6 +84,8 @@ export function BichlegVideoCard({
   progressLabel,
   layout = "stack",
   showProgressBar = false,
+  progressDone = false,
+  accentLabel,
 }: Props) {
   const [coverFailed, setCoverFailed] = useState(false);
   const grad = THUMB_GRADS[thumbIndex % THUMB_GRADS.length];
@@ -91,9 +98,12 @@ export function BichlegVideoCard({
     return (
       <PrefetchLink
         href={href}
-        className="bs-tm-video-card bs-tm-video-card--catalog"
+        className={`bs-tm-video-card bs-tm-video-card--catalog${accentLabel ? " bs-tm-video-card--accent" : ""}`}
       >
         <div className="bs-tm-video-hero">
+          {accentLabel ? (
+            <span className="bs-tm-video-accent">{accentLabel}</span>
+          ) : null}
           <ThumbArea
             showCover={showCover}
             coverUrl={coverUrl ?? ""}
@@ -122,7 +132,9 @@ export function BichlegVideoCard({
             <p className="bs-tm-video-zh hanzi" translate="no">{titleZh}</p>
           ) : null}
           {showProgressBar && progressLabel ? (
-            <div className="bs-tm-video-progress bs-tm-video-progress--inline">
+            <div
+              className={`bs-tm-video-progress bs-tm-video-progress--inline${progressDone ? " bs-tm-video-progress--done" : ""}`}
+            >
               <div className="bs-tm-video-progress-track">
                 <i style={{ width: `${pct}%` }} />
               </div>
@@ -135,8 +147,14 @@ export function BichlegVideoCard({
   }
 
   return (
-    <PrefetchLink href={href} className="bs-tm-video-card bs-tm-video-card--stack">
+    <PrefetchLink
+      href={href}
+      className={`bs-tm-video-card bs-tm-video-card--stack${accentLabel ? " bs-tm-video-card--accent" : ""}`}
+    >
       <div className="bs-tm-video-hero">
+        {accentLabel ? (
+          <span className="bs-tm-video-accent">{accentLabel}</span>
+        ) : null}
         <ThumbArea
           showCover={showCover}
           coverUrl={coverUrl ?? ""}
@@ -163,8 +181,10 @@ export function BichlegVideoCard({
             </span>
           ) : null}
         </div>
-        {progressPct != null && progressPct > 0 ? (
-          <div className="bs-tm-video-progress">
+        {showProgressBar || (progressPct != null && progressPct > 0) ? (
+          <div
+            className={`bs-tm-video-progress${progressDone ? " bs-tm-video-progress--done" : ""}${pct === 0 ? " bs-tm-video-progress--empty" : ""}`}
+          >
             {progressLabel ? (
               <p className="bs-tm-video-progress-label">{progressLabel}</p>
             ) : null}

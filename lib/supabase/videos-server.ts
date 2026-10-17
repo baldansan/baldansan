@@ -394,6 +394,28 @@ export async function fetchVideos(seriesId?: string | null): Promise<VideoRow[]>
   return rows.map((row) => mapVideo(row));
 }
 
+/**
+ * Цуврал дотор `videoId`-ийн ДАРААГИЙН анги (episode_no → created_at дараалал).
+ * `seriesId === "other"` бол цувралгүй бичлэгүүдийн дараалал.
+ *
+ * Хямд: нэг select (video_series join-той, subtitle count-гүй). Тоглуулагч auto-next
+ * хийхдээ сервер талаас дуудаж болно; клиент талд `videos` массив байгаа бол
+ * `getNextEpisodeInList` (lib/bichleg/episode-progress.ts) query-гүй хийнэ.
+ * Сүүлийн анги / олдохгүй бол null.
+ */
+export async function getNextVideoInSeries(
+  seriesId: string,
+  videoId: string
+): Promise<VideoRow | null> {
+  const list =
+    seriesId === "other"
+      ? await fetchOrphanVideos()
+      : await fetchVideosBySeriesId(seriesId);
+  const idx = list.findIndex((v) => v.id === videoId);
+  if (idx < 0 || idx + 1 >= list.length) return null;
+  return list[idx + 1] ?? null;
+}
+
 export async function fetchVideoSubtitles(
   videoId: string
 ): Promise<VideoSubtitleRow[]> {

@@ -1,5 +1,5 @@
 import { BichlegEpisodeListClient } from "@/components/bichleg/bichleg-episode-list-client";
-import { fetchUserVideoProgressMap } from "@/lib/supabase/video-progress-server";
+import { fetchUserVideoProgressState } from "@/lib/supabase/video-progress-server";
 import {
   fetchOrphanEpisodes,
   fetchSeriesEpisodes,
@@ -28,7 +28,7 @@ export default async function BichlegSeriesEpisodeListPage({ params }: Props) {
 
   if (seriesId === "other") {
     const episodes = await fetchOrphanEpisodes();
-    const progressByVideoId = await fetchUserVideoProgressMap(
+    const { loggedIn, byVideoId } = await fetchUserVideoProgressState(
       episodes.map((ep) => ep.id)
     );
     return (
@@ -36,7 +36,8 @@ export default async function BichlegSeriesEpisodeListPage({ params }: Props) {
         seriesId="other"
         series={null}
         episodes={episodes}
-        progressByVideoId={progressByVideoId}
+        progressByVideoId={byVideoId}
+        loggedIn={loggedIn}
       />
     );
   }
@@ -50,7 +51,8 @@ export default async function BichlegSeriesEpisodeListPage({ params }: Props) {
     console.warn("[bichleg] series episode list empty", { seriesId, hasSeries: Boolean(series) });
   }
 
-  const progressByVideoId = await fetchUserVideoProgressMap(
+  // Нэг auth + нэг query (N+1 байхгүй).
+  const { loggedIn, byVideoId } = await fetchUserVideoProgressState(
     episodes.map((ep) => ep.id)
   );
 
@@ -59,7 +61,8 @@ export default async function BichlegSeriesEpisodeListPage({ params }: Props) {
       seriesId={seriesId}
       series={series}
       episodes={episodes}
-      progressByVideoId={progressByVideoId}
+      progressByVideoId={byVideoId}
+      loggedIn={loggedIn}
     />
   );
 }

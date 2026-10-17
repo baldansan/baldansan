@@ -4,6 +4,11 @@ import type {
   UserVideoProgress,
 } from "@/lib/bichleg/types";
 import {
+  resolveEpisodeWatchState,
+  resolveSeriesContinueTarget,
+  type SeriesWatchProgressDetail,
+} from "@/lib/bichleg/episode-progress";
+import {
   createServerSupabaseClient,
   hasServerSupabaseConfig,
 } from "@/lib/supabase/server";
@@ -29,17 +34,27 @@ async function getServerUserId(): Promise<string | null> {
   return data.user?.id ?? null;
 }
 
-export async function fetchUserVideoProgressMap(
+export type UserVideoProgressState = {
+  /** false бол зочин — явцын UI огт харуулахгүй. */
+  loggedIn: boolean;
+  byVideoId: Record<string, UserVideoProgress>;
+};
+
+/**
+ * Нэвтэрсэн эсэх + өгсөн бичлэгүүдийн явц — НЭГ auth + НЭГ query.
+ * Хуудас дээр isServerUserAuthenticated-ийг давхар дуудахгүйн тулд энийг ашиглана.
+ */
+export async function fetchUserVideoProgressState(
   videoIds: string[]
-): Promise<Record<string, UserVideoProgress>> {
-  const out: Record<string, UserVideoProgress> = {};
-  if (!videoIds.length) return out;
+): Promise<UserVideoProgressState> {
+  const byVideoId: Record<string, UserVideoProgress> = {};
 
   const userId = await getServerUserId();
-  if (!userId) return out;
+  if (!userId) return { loggedIn: false, byVideoId };
+  if (!videoIds.length) return { loggedIn: true, byVideoId };
 
   const client = await createServerSupabaseClient();
-  if (!client) return out;
+  if (!client) return { loggedIn: true, byVideoId };
 
   const { data, error } = await client
     .from("user_video_progress")
@@ -47,63 +62,160 @@ export async function fetchUserVideoProgressMap(
     .eq("user_id", userId)
     .in("video_id", videoIds);
 
-  if (error || !data) return out;
+  if (error || !data) return { loggedIn: true, byVideoId };
 
   for (const row of data) {
     const mapped = mapProgressRow(row as Record<string, unknown>);
-    out[mapped.video_id] = mapped;
+    byVideoId[mapped.video_id] = mapped;
   }
-  return out;
+  return { loggedIn: true, byVideoId };
 }
 
+export async function fetchUserVideoProgressMap(
+  videoIds: string[]
+): Promise<Record<string, UserVideoProgress>> {
+  const { byVideoId } = await fetchUserVideoProgressState(videoIds);
+  return byVideoId;
+}
+
+export type SeriesWatchProgressOverview = {
+  loggedIn: boolean;
+  bySeriesId: Record<string, SeriesWatchProgressDetail>;
+};
+
+type SeriesVideoLite = {
+  id: string;
+  series_id: string;
+  title_mn: string | null;
+  title_zh: string | null;
+  episode_no: number | null;
+  duration_sec: number | null;
+  youtube_id: string | null;
+  created_at: string;
+};
+
+function compareEpisodeOrder(a: SeriesVideoLite, b: SeriesVideoLite): number {
+  const an = a.episode_no;
+  const bn = b.episode_no;
+  if (an != null && bn != null && an !== bn) return an - bn;
+  if (an == null && bn != null) return -1;
+  if (an != null && bn == null) return 1;
+  return a.created_at.localeCompare(b.created_at);
+}
+
+/**
+ * Цуврал бүрийн явц (N/M үзсэн, сүүлд үзсэн цаг, үргэлжлүүлэх анги) —
+ * нэвтэрсэн хэрэглэгчид НЭГ auth + 2 query (videos, user_video_progress). N+1 байхгүй.
+ */
+export async function fetchSeriesWatchProgressOverview(
+  seriesIds: string[],
+  totalsBySeriesId: Record<string, number>
+): Promise<SeriesWatchProgressOverview> {
+  const bySeriesId: Record<string, SeriesWatchProgressDetail> = {};
+  for (const id of seriesIds) {
+    bySeriesId[id] = {
+      watchedCount: 0,
+      totalCount: totalsBySeriesId[id] ?? 0,
+      inProgressCount: 0,
+      lastWatchedAt: null,
+      continueTarget: null,
+    };
+  }
+
+  const userId = await getServerUserId();
+  if (!userId) return { loggedIn: false, bySeriesId };
+  if (!seriesIds.length) return { loggedIn: true, bySeriesId };
+
+  const client = await createServerSupabaseClient();
+  if (!client) return { loggedIn: true, bySeriesId };
+
+  const { data: videos, error: videosError } = await client
+    .from("videos")
+    .select("id, series_id, title_mn, title_zh, episode_no, duration_sec, youtube_id, created_at")
+    .in("series_id", seriesIds);
+
+  if (videosError || !videos?.length) return { loggedIn: true, bySeriesId };
+
+  const episodesBySeries = new Map<string, SeriesVideoLite[]>();
+  for (const raw of videos as Record<string, unknown>[]) {
+    const lite: SeriesVideoLite = {
+      id: String(raw.id),
+      series_id: String(raw.series_id),
+      title_mn: raw.title_mn ? String(raw.title_mn) : null,
+      title_zh: raw.title_zh ? String(raw.title_zh) : null,
+      episode_no: raw.episode_no != null ? Number(raw.episode_no) : null,
+      duration_sec: raw.duration_sec != null ? Number(raw.duration_sec) : null,
+      youtube_id: raw.youtube_id ? String(raw.youtube_id) : null,
+      created_at: String(raw.created_at ?? ""),
+    };
+    const list = episodesBySeries.get(lite.series_id) ?? [];
+    list.push(lite);
+    episodesBySeries.set(lite.series_id, list);
+  }
+
+  const videoIds = (videos as { id: unknown }[]).map((v) => String(v.id));
+  const { data: progressRows, error: progressError } = await client
+    .from("user_video_progress")
+    .select("video_id, watched_sec, completed, last_watched_at")
+    .eq("user_id", userId)
+    .in("video_id", videoIds);
+
+  if (progressError || !progressRows) return { loggedIn: true, bySeriesId };
+
+  const progressByVideoId: Record<string, UserVideoProgress> = {};
+  for (const row of progressRows) {
+    const mapped = mapProgressRow(row as Record<string, unknown>);
+    progressByVideoId[mapped.video_id] = mapped;
+  }
+
+  for (const [seriesId, list] of episodesBySeries) {
+    const out = bySeriesId[seriesId];
+    if (!out) continue;
+    list.sort(compareEpisodeOrder);
+
+    let lastAt = -1;
+    let lastAtIso: string | null = null;
+    for (const ep of list) {
+      const p = progressByVideoId[ep.id];
+      if (!p) continue;
+      const state = resolveEpisodeWatchState(p, ep.duration_sec);
+      if (state === "completed") out.watchedCount += 1;
+      else if (state === "partial") out.inProgressCount += 1;
+      if (p.watched_sec > 0) {
+        const at = Date.parse(p.last_watched_at);
+        if (Number.isFinite(at) && at > lastAt) {
+          lastAt = at;
+          lastAtIso = p.last_watched_at;
+        }
+      }
+    }
+    out.lastWatchedAt = lastAtIso;
+    if (out.totalCount < list.length) out.totalCount = list.length;
+
+    const target = resolveSeriesContinueTarget(list, progressByVideoId);
+    if (target) {
+      const ep = list.find((v) => v.id === target.videoId);
+      out.continueTarget = {
+        ...target,
+        title_mn: ep?.title_mn ?? null,
+        title_zh: ep?.title_zh ?? null,
+        episode_no: ep?.episode_no ?? null,
+        duration_sec: ep?.duration_sec ?? null,
+        youtube_id: ep?.youtube_id ?? null,
+      };
+    }
+  }
+
+  return { loggedIn: true, bySeriesId };
+}
+
+/** Хуучин API — study-plan ашиглана. watchedCount/totalCount хэвээр, нэмэлт талбарууд ирнэ. */
 export async function fetchSeriesWatchProgressMap(
   seriesIds: string[],
   totalsBySeriesId: Record<string, number>
 ): Promise<Record<string, SeriesWatchProgress>> {
-  const out: Record<string, SeriesWatchProgress> = {};
-  for (const id of seriesIds) {
-    out[id] = {
-      watchedCount: 0,
-      totalCount: totalsBySeriesId[id] ?? 0,
-    };
-  }
-  if (!seriesIds.length) return out;
-
-  const userId = await getServerUserId();
-  if (!userId) return out;
-
-  const client = await createServerSupabaseClient();
-  if (!client) return out;
-
-  const { data: videos, error: videosError } = await client
-    .from("videos")
-    .select("id, series_id")
-    .in("series_id", seriesIds);
-
-  if (videosError || !videos?.length) return out;
-
-  const videoIds = videos.map((v) => String(v.id));
-  const seriesByVideo = new Map<string, string>();
-  for (const row of videos) {
-    seriesByVideo.set(String(row.id), String(row.series_id));
-  }
-
-  const { data: progress, error: progressError } = await client
-    .from("user_video_progress")
-    .select("video_id, completed")
-    .eq("user_id", userId)
-    .eq("completed", true)
-    .in("video_id", videoIds);
-
-  if (progressError || !progress) return out;
-
-  for (const row of progress) {
-    const seriesId = seriesByVideo.get(String(row.video_id));
-    if (!seriesId || !out[seriesId]) continue;
-    out[seriesId].watchedCount += 1;
-  }
-
-  return out;
+  const { bySeriesId } = await fetchSeriesWatchProgressOverview(seriesIds, totalsBySeriesId);
+  return bySeriesId;
 }
 
 export async function fetchBichlegContinueTarget(): Promise<BichlegContinueTarget | null> {
