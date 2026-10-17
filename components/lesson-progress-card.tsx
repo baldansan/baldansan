@@ -1,8 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import { AnimatedProgressBar } from "@/components/motion/animated-progress-bar";
-import { CountUp } from "@/components/motion/count-up";
+// motion/react-гүй хөнгөн хувилбар — хичээлийн хуудасны эхний ачаалалд 44KB(gz) хэмнэнэ.
+import { CountUpLite, ProgressBarLite } from "@/components/motion/progress-lite";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { LocalProgressNote } from "@/components/local-progress-note";
 import {
@@ -65,9 +65,9 @@ export function LessonProgressCard({ lessonId, quizCount = 0 }: Props) {
           </span>
         ) : null}
       </div>
-      <AnimatedProgressBar value={progressPercent} className="mt-3" />
+      <ProgressBarLite value={progressPercent} className="mt-3" />
       <p className="mt-2 text-xs font-medium text-emerald-700">
-        <CountUp value={progressPercent} suffix="% дууссан" />
+        <CountUpLite value={progressPercent} suffix="% дууссан" />
       </p>
       <div className="mt-3">
         <LocalProgressNote />

@@ -1,11 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import {
-  Geist_Mono,
-  Ma_Shan_Zheng,
-  Noto_Sans_SC,
-  Noto_Serif_SC,
-  Nunito,
-} from "next/font/google";
+import { Geist_Mono, Noto_Sans_SC, Nunito } from "next/font/google";
 import { LearnerLanguageGuard } from "@/components/learner-language-guard";
 import { AppProviders } from "@/components/providers/app-providers";
 import { UiLocaleProvider } from "@/components/i18n/ui-locale-provider";
@@ -23,33 +17,31 @@ const nunito = Nunito({
   display: "swap",
 });
 
-/** Mongolian Cyrillic (Ө, Ү, etc.) — latin-only Geist is not sufficient for mn UI. */
+/**
+ * Ханзны үндсэн фонт (--font-zh / --bs-zh).
+ * Google нэг л variable файлыг жин бүрт өгдөг тул `variable` гэж авахад
+ * татагдах woff2 өөрчлөгдөхгүй, харин @font-face CSS 404 → 101 мөр болж
+ * (~270KB) хөнгөрнө. Latin хэсгийг preload хийхгүй — үндсэн текст Nunito.
+ */
 const notoSansSc = Noto_Sans_SC({
   variable: "--font-noto-sc",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "variable",
   display: "swap",
+  preload: false,
 });
 
-/** Ханз фонт сонголт — Тохиргоо хуудсанд сурагч сонгоно (lib/hanzi-font). */
-const notoSerifSc = Noto_Serif_SC({
-  variable: "--font-noto-serif-sc",
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  display: "swap",
-});
+/*
+ * Noto Serif SC / Ma Shan Zheng (Тохиргоо → ханзны фонт сонголт) энд байхгүй:
+ * components/theme/optional-hanzi-fonts.tsx — сурагч сонгосон үед л ачаална
+ * (өмнө нь хуудас бүрт ~370KB @font-face CSS + 2 preload нэмж байсан).
+ */
 
-/** Гар бичлэг/самбар дээрх бичлэгтэй төстэй донж — нарийн зураастай (马善政楷书). */
-const maShanZheng = Ma_Shan_Zheng({
-  variable: "--font-zh-brush",
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
-
+/** Код/ID харуулах газар л хэрэгтэй — preload хийхгүй. */
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  preload: false,
 });
 
 const siteUrl = "https://baldansan.vercel.app";
@@ -150,7 +142,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale === "zh" ? "zh-CN" : "mn"}
-      className={`${nunito.variable} ${notoSansSc.variable} ${notoSerifSc.variable} ${maShanZheng.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${nunito.variable} ${notoSansSc.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: PENDING_SCRIPT }} />

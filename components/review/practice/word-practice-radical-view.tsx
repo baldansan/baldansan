@@ -1,10 +1,25 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
-import { RadicalGameClient } from "@/components/games/radical-game-client";
 import type { RadicalGameEntry } from "@/lib/games/radical-game-data";
+
+/**
+ * Задлах тоглоом (+ бүрдлийн нэрийн ~225KB JSON толь) — давтлагын хуудсын
+ * эхний ачаалалд биш, сурагч энэ дасгалыг сонгоход л татна. Өгөгдөл API-аас
+ * ирдэг тул SSR хэрэггүй.
+ */
+const RadicalGameClient = dynamic(
+  () => import("@/components/games/radical-game-client").then((m) => m.RadicalGameClient),
+  {
+    ssr: false,
+    loading: () => (
+      <p className="py-12 text-center text-sm text-[var(--app-muted)]">Ачааллаж байна…</p>
+    ),
+  }
+);
 
 type Props = {
   wordIds: number[];

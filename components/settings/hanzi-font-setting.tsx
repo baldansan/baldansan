@@ -6,6 +6,7 @@ import {
   DEFAULT_HANZI_FONT,
   HANZI_FONT_OPTIONS,
   getHanziFont,
+  requestOptionalHanziFonts,
   setHanziFont,
   type HanziFontId,
 } from "@/lib/hanzi-font/hanzi-font-pref";
@@ -17,6 +18,8 @@ export function HanziFontSetting() {
 
   useEffect(() => {
     setSelected(getHanziFont());
+    // Урьдчилан харах жишээнүүд жинхэнэ фонтоор харагдахын тулд нэмэлт фонтыг ачаална.
+    requestOptionalHanziFonts();
   }, []);
 
   function handleSelect(id: HanziFontId) {

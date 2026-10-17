@@ -2,19 +2,13 @@
 
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
-import {
-  BADGE_DEFS,
-  computeNewBadges,
-  markBadgeSeen,
-  type BadgeDef,
-} from "@/lib/celebrate/badges";
+import type { BadgeDef } from "@/lib/celebrate/badges";
 import {
   CELEBRATE_EVENT,
   CORRECT_ANSWER_EVENT,
   prefersReducedMotion,
   type CelebrateDetail,
 } from "@/lib/celebrate/celebrate-events";
-import { burstConfetti, rainConfetti } from "@/lib/celebrate/confetti";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { POINTS_AWARDED_EVENT } from "@/lib/points/award";
@@ -26,6 +20,20 @@ type PointsToast = { id: number; points: number; icon: string };
 
 const TOAST_MS = 1800;
 const CORRECT_THROTTLE_MS = 250;
+
+/*
+ * Confetti canvas + badge тооцоолол (badges → achievements/retention/srs) —
+ * хуудас бүрт суудаг давхарга тул эхний ачаалалд биш, анхны event ирэхэд л татна.
+ */
+const loadConfetti = () => import("@/lib/celebrate/confetti");
+const loadBadges = () => import("@/lib/celebrate/badges");
+
+function burst(opts: Parameters<typeof import("@/lib/celebrate/confetti").burstConfetti>[0]) {
+  void loadConfetti().then((m) => m.burstConfetti(opts)).catch(() => {});
+}
+function rain() {
+  void loadConfetti().then((m) => m.rainConfetti()).catch(() => {});
+}
 
 /**
  * Глобал «тоглоомын мэдрэмж» давхарга (AppProviders-д нэг удаа суулгасан):
@@ -40,6 +48,7 @@ export function CelebrationLayer() {
   const disabled = isForcedLightPath(pathname);
   const [toasts, setToasts] = useState<PointsToast[]>([]);
   const [badgeQueue, setBadgeQueue] = useState<BadgeDef[]>([]);
+  const [badgeTotal, setBadgeTotal] = useState(0);
   const lastCorrectRef = useRef(0);
   const pointsCheckRef = useRef<number | null>(null);
   const toastIdRef = useRef(0);
@@ -62,8 +71,15 @@ export function CelebrationLayer() {
       } catch {
         totalPoints = null;
       }
+      let badges: Awaited<ReturnType<typeof loadBadges>>;
+      try {
+        badges = await loadBadges();
+      } catch {
+        return;
+      }
+      setBadgeTotal(Object.keys(badges.BADGE_DEFS).length);
       showBadges(
-        computeNewBadges({
+        badges.computeNewBadges({
           totalPoints,
           quizPercent: detail?.percent,
         })
@@ -79,7 +95,7 @@ export function CelebrationLayer() {
       const now = Date.now();
       if (now - lastCorrectRef.current < CORRECT_THROTTLE_MS) return;
       lastCorrectRef.current = now;
-      if (!prefersReducedMotion()) burstConfetti({ count: 18, y: 0.4, power: 0.8 });
+      if (!prefersReducedMotion()) burst({ count: 18, y: 0.4, power: 0.8 });
     };
 
     const onPoints = (e: Event) => {
@@ -101,9 +117,9 @@ export function CelebrationLayer() {
       const detail = (e as CustomEvent<CelebrateDetail>).detail;
       if (!prefersReducedMotion()) {
         if (detail?.kind === "quiz_done" && (detail.percent ?? 0) < 60) {
-          burstConfetti({ count: 24, power: 0.9 });
+          burst({ count: 24, power: 0.9 });
         } else {
-          rainConfetti();
+          rain();
         }
       }
       void checkBadges(detail);
@@ -124,13 +140,14 @@ export function CelebrationLayer() {
 
   useEffect(() => {
     if (!current || prefersReducedMotion()) return;
-    const t = window.setTimeout(() => burstConfetti({ count: 30, y: 0.45 }), 150);
+    const t = window.setTimeout(() => burst({ count: 30, y: 0.45 }), 150);
     return () => window.clearTimeout(t);
   }, [current]);
 
   function closeBadge() {
     if (!current) return;
-    markBadgeSeen(current.id);
+    const id = current.id;
+    void loadBadges().then((m) => m.markBadgeSeen(id)).catch(() => {});
     setBadgeQueue((q) => q.slice(1));
   }
 
@@ -165,7 +182,7 @@ export function CelebrationLayer() {
             <p className="bs-cel-count">
               {badgeQueue.length > 1
                 ? `${tr(locale, "Дараагийнх")}: ${badgeQueue.length - 1}`
-                : `${Object.keys(BADGE_DEFS).length} ${tr(locale, "цолноос")}`}
+                : `${badgeTotal} ${tr(locale, "цолноос")}`}
             </p>
             <button type="button" className="bs-cel-btn" onClick={closeBadge} autoFocus>
               {tr(locale, "Баярлалаа, Тэмээ!")} 🐫

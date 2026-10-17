@@ -53,6 +53,8 @@ function ThumbArea({
           src={coverUrl}
           alt=""
           className="bs-tm-video-thumb-img"
+          loading="lazy"
+          decoding="async"
           onError={onCoverError}
         />
       ) : (

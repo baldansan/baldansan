@@ -1,4 +1,6 @@
 import challengeData from "@/data/radical_challenge_data.json";
+// Sync нэрийн нөөц толь — бүрдлийн нэрийг шууд (await-гүй) авахад хэрэгтэй.
+import "@/lib/hanzi/component-names-register";
 import { shuffleArray } from "@/lib/games/game-data-core";
 import type { RadicalGameEntry } from "@/lib/games/radical-game-data";
 import {

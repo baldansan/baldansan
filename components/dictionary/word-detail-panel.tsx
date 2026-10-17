@@ -3,10 +3,17 @@
 import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
 import { WordWriterPanel } from "@/components/hanzi/WordWriterPanel";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { ConfusableChars } from "@/components/hanzi/confusable-chars";
-import { HanziWriterPractice } from "@/components/hanzi/hanzi-writer-practice";
 import { SpeakerButton } from "@/components/tts/speaker-button";
+
+/** hanzi-writer зурлагын самбар — ханз дээр дарахад л татна. */
+const HanziWriterPractice = dynamic(
+  () =>
+    import("@/components/hanzi/hanzi-writer-practice").then((m) => m.HanziWriterPractice),
+  { ssr: false, loading: () => <p className="text-xs text-[var(--app-muted)]">Ачааллаж байна…</p> }
+);
 import { saveWordFromLesson } from "@/lib/supabase/saved-words";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";

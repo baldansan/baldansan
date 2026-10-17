@@ -64,6 +64,8 @@ export function CourseCover({
       src={src}
       alt={alt}
       className={className}
+      loading="lazy"
+      decoding="async"
       onError={() => setFailed(true)}
     />
   );

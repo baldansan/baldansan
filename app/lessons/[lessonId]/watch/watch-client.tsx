@@ -4,10 +4,6 @@ import { useRouter } from "next/navigation";
 import nextDynamic from "next/dynamic";
 import { AppShell } from "@/components/app/app-shell";
 import { AdminPreviewBanner } from "@/components/admin-preview-banner";
-import LessonPathPlayer from "@/components/lesson/lesson-path-player";
-import { ExamLessonWatchClient } from "@/components/lesson/exam-lesson-watch";
-import { TextbookLessonWatchClient } from "@/components/lesson/textbook-lesson-watch";
-import { VideoLessonWatchClient } from "@/components/lesson/video-lesson-watch";
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { resolveLessonContentType } from "@/lib/lesson-content-type";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
@@ -16,18 +12,53 @@ import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
+function WatchLoading() {
+  return (
+    <p className="py-16 text-center text-sm text-[var(--app-muted)]">
+      Хичээл ачаалж байна...
+    </p>
+  );
+}
+
+/*
+ * Хичээлийн төрөл бүрт нэг л тоглуулагч хэрэгтэй — бүгдийг тусдаа chunk болгож,
+ * тухайн хичээлийнхийг л татна (SSR хэвээр; сервер HTML-ийг бүтнээр өгдөг).
+ */
 const HskGuidedLessonPlayer = nextDynamic(
   () =>
     import("@/components/lesson/hsk-player/hsk-guided-lesson-player").then(
       (mod) => mod.HskGuidedLessonPlayer
     ),
-  {
-    loading: () => (
-      <p className="py-16 text-center text-sm text-[var(--app-muted)]">
-        Хичээл ачаалж байна...
-      </p>
+  { loading: WatchLoading }
+);
+
+const LessonPathPlayer = nextDynamic(
+  () => import("@/components/lesson/lesson-path-player"),
+  { loading: WatchLoading }
+);
+
+const TextbookLessonWatchClient = nextDynamic(
+  () =>
+    import("@/components/lesson/textbook-lesson-watch").then(
+      (mod) => mod.TextbookLessonWatchClient
     ),
-  }
+  { loading: WatchLoading }
+);
+
+const ExamLessonWatchClient = nextDynamic(
+  () =>
+    import("@/components/lesson/exam-lesson-watch").then(
+      (mod) => mod.ExamLessonWatchClient
+    ),
+  { loading: WatchLoading }
+);
+
+const VideoLessonWatchClient = nextDynamic(
+  () =>
+    import("@/components/lesson/video-lesson-watch").then(
+      (mod) => mod.VideoLessonWatchClient
+    ),
+  { loading: WatchLoading }
 );
 
 type Props = {

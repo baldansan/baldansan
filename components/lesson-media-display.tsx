@@ -156,6 +156,7 @@ export function LessonDetailMediaSection({
           <img
             src={lesson.thumbnailUrl}
             alt={`${lesson.title} thumbnail`}
+            decoding="async"
             className="aspect-video w-full object-cover"
           />
         ) : (

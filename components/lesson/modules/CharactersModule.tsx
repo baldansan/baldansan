@@ -1,8 +1,14 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
 import { CharacterDecompositionHint } from "@/components/hanzi/CharacterDecompositionHint";
-import { CharacterWriter } from "@/components/hanzi/CharacterWriter";
+
+/** hanzi-writer + самбар — зөвхөн «Ханз бичих» модульд хүрэхэд татна (WordWriterPanel-тэй адил). */
+const CharacterWriter = dynamic(
+  () => import("@/components/hanzi/CharacterWriter").then((m) => m.CharacterWriter),
+  { ssr: false, loading: () => <p className="bs-srs-stroke-loading">Ачааллаж байна…</p> }
+);
 import { markBsModuleCompleted } from "@/lib/lesson/bs-step-progress";
 import { HANZI_WRITING_LABELS } from "@/lib/hanzi/writing-practice";
 import { DeepHanziPanel } from "@/components/lesson/deep/deep-teaching-blocks";
