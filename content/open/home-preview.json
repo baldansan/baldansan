@@ -1,0 +1,58 @@
+[
+  {
+    "id": "gsb-zh-0008",
+    "title": "你在做什么？",
+    "titlePinyin": "nǐ zài zuò shénme？",
+    "cover": "/open/global-storybooks-zh/covers/0008.jpg",
+    "level": 1
+  },
+  {
+    "id": "gsb-zh-0302",
+    "title": "火",
+    "titlePinyin": "huǒ",
+    "cover": "/open/global-storybooks-zh/covers/0302.jpg",
+    "level": 1
+  },
+  {
+    "id": "gsb-zh-0156",
+    "title": "很饿的鳄鱼",
+    "titlePinyin": "hěn è de èyú",
+    "cover": "/open/global-storybooks-zh/covers/0156.jpg",
+    "level": 1
+  },
+  {
+    "id": "gsb-zh-0087",
+    "title": "我喜欢看书",
+    "titlePinyin": "wǒ xǐhuān kànshū",
+    "cover": "/open/global-storybooks-zh/covers/0087.jpg",
+    "level": 1
+  },
+  {
+    "id": "gsb-zh-0327",
+    "title": "数数动物",
+    "titlePinyin": "shǔshù dòngwù",
+    "cover": "/open/global-storybooks-zh/covers/0327.jpg",
+    "level": 1
+  },
+  {
+    "id": "gsb-zh-0001",
+    "title": "一个很高的人",
+    "titlePinyin": "yígè hěn gāo de rén",
+    "cover": "/open/global-storybooks-zh/covers/0001.jpg",
+    "level": 2
+  },
+  {
+    "id": "gsb-zh-0210",
+    "title": "丁吉和奶牛",
+    "titlePinyin": "dīng jí hé nǎi niú",
+    "cover": "/open/global-storybooks-zh/covers/0210.jpg",
+    "level": 2
+  },
+  {
+    "id": "gsb-zh-0095",
+    "title": "赞玛很棒！",
+    "titlePinyin": "zàn mǎ hěn bàng！",
+    "cover": "/open/global-storybooks-zh/covers/0095.jpg",
+    "level": 2
+  }
+]

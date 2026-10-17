@@ -12,7 +12,10 @@ import {
   getCourseContentById,
   getPublicLessonSummariesByCourseId,
 } from "@/lib/content";
-import { getStories } from "@/lib/library/data";
+// Нүүрний 8 номын жижиг урьдчилсан жагсаалт — content/open/*.json (46MB)-ийг
+// нүүрний серверийн функцэд оруулахгүй, cold start дээр унших/parse хийхгүй.
+// Дахин үүсгэх: scripts/gen-home-preview.mjs
+import homePreview from "@/content/open/home-preview.json";
 import type { LibraryPreviewItem } from "@/components/mobile/library-preview-row";
 import { fetchVideoSeriesCatalogCached } from "@/lib/supabase/videos-server";
 
@@ -121,18 +124,7 @@ async function loadFazhanCourseForHome(courseId: string) {
 }
 
 async function loadLibraryPreviewForHome(): Promise<LibraryPreviewItem[]> {
-  try {
-    const stories = await getStories();
-    return stories.slice(0, 8).map((s) => ({
-      id: s.id,
-      title: s.title,
-      titlePinyin: s.title_pinyin,
-      cover: s.cover,
-      level: s.level,
-    }));
-  } catch {
-    return [];
-  }
+  return (homePreview as LibraryPreviewItem[]).slice(0, 8);
 }
 
 /** Хамгийн доод HSK түвшний, бичлэгтэй цувралыг санал болгоно (кэштэй каталог). */

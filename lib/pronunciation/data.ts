@@ -13,11 +13,16 @@ import type { PinyinChart } from "./minimal-pairs";
 
 const cache = new Map<string, Promise<unknown>>();
 
-async function readJson<T>(rel: string): Promise<T> {
-  let p = cache.get(rel) as Promise<T> | undefined;
+/**
+ * АНХААР: файлын замыг `path.join(process.cwd(), "literal", ...)` хэлбэрээр
+ * ШУУД бичнэ. Хувьсагчаар (`path.join(cwd, rel)`) өгвөл Vercel-ийн file tracer
+ * бүх repo-г (375 MB) серверийн функцэд багцалж, cold start 30с+ болдог байсан.
+ */
+function readJsonAt<T>(key: string, absPath: string): Promise<T> {
+  let p = cache.get(key) as Promise<T> | undefined;
   if (!p) {
-    p = fs.readFile(path.join(process.cwd(), rel), "utf8").then((s) => JSON.parse(s) as T);
-    cache.set(rel, p);
+    p = fs.readFile(absPath, "utf8").then((s) => JSON.parse(s) as T);
+    cache.set(key, p);
   }
   return p;
 }
@@ -28,11 +33,17 @@ export type TonePairs = Record<string, TonePairWord[]>;
 type HskWord = { simplified: string; pinyin: string; hsk_level: string };
 
 export function getPinyinChart(): Promise<PinyinChart> {
-  return readJson<PinyinChart>("public/data/pinyin_chart.json");
+  return readJsonAt<PinyinChart>(
+    "pinyin_chart",
+    path.join(process.cwd(), "public", "data", "pinyin_chart.json")
+  );
 }
 
 export function getTonePairs(): Promise<TonePairs> {
-  return readJson<TonePairs>("public/data/tone_pairs.json");
+  return readJsonAt<TonePairs>(
+    "tone_pairs",
+    path.join(process.cwd(), "public", "data", "tone_pairs.json")
+  );
 }
 
 export type ToneGameItem = { syllable: string; tone: number; file: string };
@@ -41,7 +52,10 @@ export type ToneGameItem = { syllable: string; tone: number; file: string };
  * «Аялгуу таних» тоглоомын үеүд: самбар ∩ HSK 1–2 үгсийн үеүд, 1–4-р аялгаар.
  */
 export async function getCommonSyllableItems(): Promise<ToneGameItem[]> {
-  const [chart, words] = await Promise.all([getPinyinChart(), readJson<HskWord[]>("data/hsk_words.json")]);
+  const [chart, words] = await Promise.all([getPinyinChart(), readJsonAt<HskWord[]>(
+      "hsk_words",
+      path.join(process.cwd(), "data", "hsk_words.json")
+    )]);
   const bases = new Set<string>();
   for (const w of words) {
     if (w.hsk_level !== "1" && w.hsk_level !== "2") continue;
