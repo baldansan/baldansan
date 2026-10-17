@@ -37,6 +37,7 @@ export type YtPlayer = {
   getDuration: () => number;
   setPlaybackRate: (rate: number) => void;
   getPlaybackRate?: () => number;
+  getPlayerState?: () => number;
   getAvailablePlaybackRates?: () => number[];
   mute: () => void;
   unMute: () => void;

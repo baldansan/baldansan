@@ -198,6 +198,39 @@
   color: var(--bd-green-2);
   cursor: default;
 }
+/* ⏮ Үргэлжлүүлэх чип (PC) */
+.bs-bd-resume {
+  position: absolute;
+  z-index: 3;
+  bottom: 14px;
+  left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 4px 4px 4px 12px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  font: 700 13px/1 var(--bs-ui, system-ui, sans-serif);
+  backdrop-filter: blur(8px);
+}
+.bs-bd-resume button {
+  min-height: 32px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--bd-green);
+  color: #0b1a10;
+  font: 800 12px/1 var(--bs-ui, system-ui, sans-serif);
+  cursor: pointer;
+}
+.bs-bd-resume button:last-child {
+  width: 32px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
 .bs-bd-caption {
   position: absolute;
   left: 0;

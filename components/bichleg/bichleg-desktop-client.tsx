@@ -35,7 +35,15 @@ import {
   BICHLEG_SKIP_SECONDS,
   clampPlaybackTime,
   formatSubtitleClock,
+  resolveResumeSeekSec,
 } from "@/lib/bichleg/player-seek";
+import {
+  clearResumePosition,
+  readPreferredSpeed,
+  readResumePosition,
+  writePreferredSpeed,
+  writeResumePosition,
+} from "@/lib/bichleg/player-prefs";
 import {
   findActiveSubtitle,
   formatUserSubtitleOffsetLabel,
@@ -74,7 +82,8 @@ type Props = {
 /** Харах горим: Бүтэн (ханз+пиньинь+монгол) · Ханз (зөвхөн ханз) · Сонсгол (эхлээд нуугдана). */
 type ViewMode = "full" | "zh" | "listen";
 
-const WATCH_SAVE_INTERVAL_MS = 10_000;
+const WATCH_SAVE_INTERVAL_MS = 5_000;
+const RESUME_CHIP_MS = 8_000;
 const REPEAT_COUNT = 3;
 const MAX_RECORD_MS = 12_000;
 
@@ -154,7 +163,13 @@ export function BichlegDesktopClient({
   const [playerReady, setPlayerReady] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [muted, setMuted] = useState(true);
-  const [preferredSpeed, setPreferredSpeed] = useState<BichlegPreferredSpeed>(1);
+  // Хурд — localStorage (PlayerSwitch клиент дээр л mount хийдэг тул SSR зөрүү үгүй)
+  const [preferredSpeed, setPreferredSpeed] = useState<BichlegPreferredSpeed>(() =>
+    readPreferredSpeed()
+  );
+  const [resumeChip, setResumeChip] = useState<number | null>(null);
+  const resumeChipTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const lastResumeWriteRef = useRef(0);
   const [displaySpeed, setDisplaySpeed] = useState(1);
   const [userSubtitleOffset, setUserSubtitleOffset] = useState<UserSubtitleOffsetOption>(0);
   const [videoLayout, setVideoLayout] = useState<BichlegVideoLayout>("landscape");
@@ -297,9 +312,26 @@ export function BichlegDesktopClient({
         player.seekTo(t, true);
         currentTimeRef.current = t;
         setCurrentTime(t);
+        return;
+      }
+      initialSeekRef.current = -1;
+      if (!activeVideo) return;
+      // ⏮ Үргэлжлүүлэх: localStorage яг байрлал → серверийн watched_sec (оргил)
+      const local = readResumePosition(activeVideo.id);
+      const fromSec = local?.sec ?? initialProgress[activeVideo.id]?.watched_sec ?? 0;
+      const dur = (d != null && d > 0 ? d : Number(activeVideo.duration_sec ?? 0)) || 0;
+      const seek = resolveResumeSeekSec(fromSec, dur);
+      if (seek != null) {
+        player.seekTo(seek, true);
+        currentTimeRef.current = seek;
+        setCurrentTime(seek);
+        setResumeChip(fromSec);
+        if (resumeChipTimerRef.current) clearTimeout(resumeChipTimerRef.current);
+        resumeChipTimerRef.current = setTimeout(() => setResumeChip(null), RESUME_CHIP_MS);
       }
     });
-  }, [preferredSpeed, runOnPlayer]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [preferredSpeed, runOnPlayer, activeVideo?.id]);
 
   useEffect(() => {
     if (!playerReady) return;
@@ -317,9 +349,14 @@ export function BichlegDesktopClient({
       setEnded(false);
     } else if (state === YT.PlayerState.PAUSED) {
       setIsPlaying(false);
+      if (activeVideo) {
+        writeResumePosition(activeVideo.id, currentTimeRef.current, duration);
+        lastResumeWriteRef.current = Date.now();
+      }
     } else if (state === YT.PlayerState.ENDED) {
       setIsPlaying(false);
       setEnded(true);
+      if (activeVideo) clearResumePosition(activeVideo.id);
     }
   }
 
@@ -336,6 +373,16 @@ export function BichlegDesktopClient({
       const d = safePlayerDuration(player);
       if (d != null && d > 0) setDuration(d);
       if (t > peakRef.current) peakRef.current = t;
+      if (activeVideo && Date.now() - lastResumeWriteRef.current >= WATCH_SAVE_INTERVAL_MS) {
+        try {
+          if (player.getPlayerState?.() === YT.PlayerState.PLAYING) {
+            writeResumePosition(activeVideo.id, t, d ?? duration);
+            lastResumeWriteRef.current = Date.now();
+          }
+        } catch {
+          /* player destroyed */
+        }
+      }
 
       // Давтах ×N
       const rep = repeatRef.current;
@@ -400,7 +447,11 @@ export function BichlegDesktopClient({
     return () => {
       clearInterval(interval);
       flush();
+      if (currentTimeRef.current > 0) {
+        writeResumePosition(activeVideo.id, currentTimeRef.current, duration);
+      }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeVideo?.id, playerReady]);
 
   useEffect(() => {
@@ -760,6 +811,26 @@ export function BichlegDesktopClient({
                 {tr(locale, "Дууг асаах")}
               </button>
             ) : null}
+            {resumeChip != null ? (
+              <div className="bs-bd-resume" role="status">
+                <span>
+                  ⏮ {formatSubtitleClock(resumeChip)}
+                  {tr(locale, "-өөс үргэлжилж байна")}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setResumeChip(null);
+                    seekTo(0);
+                  }}
+                >
+                  {tr(locale, "Эхнээс")}
+                </button>
+                <button type="button" aria-label={tr(locale, "Хаах")} onClick={() => setResumeChip(null)}>
+                  ✕
+                </button>
+              </div>
+            ) : null}
             {ended && !quizOpen && keyWords.length >= 4 ? (
               <button type="button" className="bs-bd-paused" onClick={() => setQuizOpen(true)}>
                 🏁 {tr(locale, "Ангийн шалгалт өгөх")} · {Math.min(10, keyWords.length)} {tr(locale, "асуулт")}
@@ -817,7 +888,13 @@ export function BichlegDesktopClient({
             <button
               type="button"
               className={`bs-bd-btn bs-bd-btn--text${Math.abs(displaySpeed - 1) > 0.001 ? " bs-bd-btn--on" : ""}`}
-              onClick={() => setPreferredSpeed((c) => nextBichlegSpeed(c))}
+              onClick={() =>
+                setPreferredSpeed((c) => {
+                  const next = nextBichlegSpeed(c);
+                  writePreferredSpeed(next);
+                  return next;
+                })
+              }
               title={tr(locale, "Хурд")}
             >
               {formatPlaybackRateLabel(displaySpeed)}
