@@ -17,30 +17,41 @@ type ShotState =
   | { kind: "failed" };
 
 /**
- * Дэлгэцийн зураг — html2canvas (lazy, зөвхөн энэ үед татна). Overlay нээгдэхээс
- * ӨМНӨ авна, тэгэхгүй бол цонх өөрөө зурагт орно. JPEG 0.7, 1× scale — ~150–400 KB.
+ * Дэлгэцийн зураг — modern-screenshot (lazy). html2canvas нь Tailwind 4-ийн oklch()
+ * өнгийг ойлгодоггүй тул бүтдэггүй байсан; modern-screenshot DOM-ийг SVG
+ * foreignObject-оор хөтчөөр нь зуруулдаг тул орчин үеийн CSS бүгд зөв гарна.
+ * Overlay нээгдэхээс ӨМНӨ авна. JPEG 0.7, хамгийн ихдээ 1.5× scale.
  */
 async function captureScreen(): Promise<string | null> {
   try {
-    const { default: html2canvas } = await import("html2canvas");
-    const canvas = await html2canvas(document.documentElement, {
-      useCORS: true,
-      allowTaint: false,
-      logging: false,
-      scale: Math.min(1, window.devicePixelRatio || 1),
-      backgroundColor: null,
-      x: window.scrollX,
-      y: window.scrollY,
-      width: window.innerWidth,
-      height: window.innerHeight,
-      windowWidth: document.documentElement.clientWidth,
-      windowHeight: document.documentElement.clientHeight,
-      ignoreElements: (el) =>
-        el.classList?.contains("bs-fb-report-fab") ||
-        el.classList?.contains("bs-fb-report-overlay"),
+    const { domToJpeg } = await import("modern-screenshot");
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    const dataUrl = await domToJpeg(document.documentElement, {
+      quality: 0.7,
+      scale: Math.min(1.5, window.devicePixelRatio || 1),
+      width: w,
+      height: h,
+      backgroundColor: getComputedStyle(document.body).backgroundColor || "#fff",
+      style: {
+        // Одоогийн гүйлгэсэн байрлалыг хэвээр нь (viewport-ын хэсгийг) буулгана.
+        transform: `translate(${-window.scrollX}px, ${-window.scrollY}px)`,
+        transformOrigin: "top left",
+      },
+      filter: (node) => {
+        const el = node as HTMLElement;
+        if (!el || !el.classList) return true;
+        return (
+          !el.classList.contains("bs-fb-report-fab") &&
+          !el.classList.contains("bs-fb-report-overlay")
+        );
+      },
+      fetch: { requestInit: { mode: "cors", credentials: "omit" }, bypassingCache: true },
+      timeout: 15000,
     });
-    return canvas.toDataURL("image/jpeg", 0.7);
-  } catch {
+    return dataUrl && dataUrl.length > 1000 ? dataUrl : null;
+  } catch (error) {
+    console.warn("[feedback] screenshot failed", error);
     return null;
   }
 }
