@@ -87,7 +87,7 @@ export function AppShell({
           </main>
           {showBottomNav ? (
             <div
-              className="bs-desk-hide absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2"
+              className="bs-desk-hide fixed inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2"
               /* Хуудас солиход доод цэс хөдлөхгүй (app/motion.css: bs-bottom-nav) */
               style={{ viewTransitionName: "bs-bottom-nav" }}
             >
