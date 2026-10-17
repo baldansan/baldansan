@@ -3,11 +3,13 @@
 // Богино эх / mainText — LiveTextReader (үг дарах + toggle).
 // subtitles.json (subtitle_lines) байвал 课文 сонсох үед өгүүлбэр highlight хийнэ.
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LiveTextReader } from "@/components/lesson/live-text-reader";
 import { useGlobalAudio } from "@/components/providers/global-audio-provider";
+import { globalAudio } from "@/lib/audio/global-audio-store";
 import { WritingSampleCard } from "@/components/lesson/modules/WritingSampleCard";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
+import { speakText, stopSpeaking } from "@/lib/tts/speech";
 import {
   buildSentenceTimeWindows,
   findActiveSentenceIndex,
@@ -53,13 +55,43 @@ export default function TextsModule({
 
   const src = resolveLessonPackagePlayableUrl(text?.audio, { packageAudioBase: base });
   const trackId = src ? `texts:${src}` : `texts:none:${ti}`;
-  const playing = audio.isActive(trackId);
+  const filePlaying = audio.isActive(trackId);
   const currentTime = audio.isCurrent(trackId) ? audio.state.currentTime : 0;
 
   const fullZh = useMemo(
     () => sentences.map((s) => s.zh).join(""),
     [sentences]
   );
+
+  // Албан аудио байхгүй (файл заагаагүй / storage-д алга → 404) номуудад (发展汉语
+  // 中级 II, 初级, 高级) «Сонсох» ажиллахгүй байсан. Файл тоглож чадахгүй бол
+  // хөтчийн дуугаар (SpeechSynthesis, zh-CN) эхийг уншина — юу ч болохгүйгээс дээр.
+  const [failedSrcs, setFailedSrcs] = useState<Set<string>>(() => new Set());
+  const fileFailed = src != null && failedSrcs.has(src);
+  const useTts = !src || fileFailed;
+  const [ttsPlaying, setTtsPlaying] = useState(false);
+  const ttsRun = useRef(0);
+  const playing = useTts ? ttsPlaying : filePlaying;
+
+  const stopTts = useCallback(() => {
+    ttsRun.current += 1;
+    stopSpeaking();
+    setTtsPlaying(false);
+  }, []);
+
+  const speakFull = useCallback(
+    async (rate: number) => {
+      if (!fullZh) return;
+      const run = ++ttsRun.current;
+      setTtsPlaying(true);
+      await speakText(fullZh, { lang: "zh-CN", rate: Math.max(0.5, rate * 0.9) });
+      if (ttsRun.current === run) setTtsPlaying(false);
+    },
+    [fullZh]
+  );
+
+  // Модулиас гарахад хөтчийн уншлагыг зогсооно (файл бол mini-player үргэлжилнэ).
+  useEffect(() => () => stopSpeaking(), []);
 
   /** Per-sentence [start, end) windows from subtitle rows (null → no sync). */
   const sentenceWindows = useMemo(
@@ -78,11 +110,17 @@ export default function TextsModule({
 
   const stopAudio = useCallback(() => {
     audio.stopIf(trackId);
-  }, [audio, trackId]);
+    stopTts();
+  }, [audio, trackId, stopTts]);
 
-  function playAudio() {
-    if (!src) return;
-    void audio.toggle(
+  async function playAudio() {
+    if (useTts || !src) {
+      if (ttsPlaying) stopTts();
+      else void speakFull(speed);
+      return;
+    }
+    const wasActive = audio.isActive(trackId);
+    const ok = await audio.toggle(
       {
         id: trackId,
         src,
@@ -92,11 +130,18 @@ export default function TextsModule({
       },
       { rate: speed }
     );
+    // Файл тоглуулах гэтэл алдаа (storage-д байхгүй → 404 г.м.) → энэ эхийг TTS-ээр уншина.
+    if (!ok && !wasActive && globalAudio.getState().status === "error") {
+      setFailedSrcs((prev) => new Set(prev).add(src));
+      audio.stopIf(trackId);
+      void speakFull(speed);
+    }
   }
 
   function changeSpeed(s: Speed) {
     setSpeed(s);
     if (audio.isCurrent(trackId)) audio.setRate(s);
+    if (useTts && ttsPlaying) void speakFull(s);
   }
 
   function goPrev() {
@@ -159,7 +204,7 @@ export default function TextsModule({
             <button
               type="button"
               className={`bs-txt-play ${playing ? "bs-on" : ""}`}
-              onClick={playAudio}
+              onClick={() => void playAudio()}
               disabled={!text.audio && !fullZh}
               aria-label={playing ? "Зогсоох" : "Сонсох"}
             >
@@ -167,6 +212,13 @@ export default function TextsModule({
               {playing ? "Зогсоож байна" : "Сонсох"}
             </button>
           </div>
+          {useTts && fullZh ? (
+            <p className="bs-txt-ttsnote" translate="no">
+              {fileFailed
+                ? "Энэ хичээлийн аудио файл олдсонгүй — хөтчийн дуугаар уншиж байна."
+                : "Энэ номд албан аудио байхгүй — хөтчийн дуугаар уншина."}
+            </p>
+          ) : null}
 
           <LiveTextReader
             text={text}

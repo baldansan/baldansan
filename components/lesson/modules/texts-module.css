@@ -355,3 +355,11 @@
   line-height: 1.6;
   margin-top: 8px;
 }
+
+/* Албан аудиогүй үед хөтчийн TTS ашиглаж буйг мэдэгдэх жижиг тэмдэглэл */
+.bs-txt-ttsnote {
+  margin: 6px 0 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--bs-muted, #6b7280);
+}
