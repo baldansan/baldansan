@@ -16,3 +16,11 @@ create policy "feedback_screenshots_public_read"
   on storage.objects for select
   to anon, authenticated
   using (bucket_id = 'feedback-screenshots');
+
+-- Service role (SUPABASE_SERVICE_ROLE_KEY) Vercel дээр тохируулаагүй бол клиент
+-- anon түлхүүрээрээ шууд upload хийнэ (зөвхөн энэ bucket, зөвхөн reports/ зам, insert л).
+drop policy if exists "feedback_screenshots_anon_insert" on storage.objects;
+create policy "feedback_screenshots_anon_insert"
+  on storage.objects for insert
+  to anon, authenticated
+  with check (bucket_id = 'feedback-screenshots' and (storage.foldername(name))[1] = 'reports');

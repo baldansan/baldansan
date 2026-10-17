@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { recordFeedback } from "@/lib/analytics/record-feedback";
+import { uploadReportScreenshotClient } from "@/lib/feedback/upload-screenshot-client";
 
 type Props = {
   lessonId?: string | null;
@@ -95,8 +96,19 @@ export function ReportIssueLink({ lessonId = null, variant = "fab" }: Props) {
       ok = false;
     }
     if (!ok) {
-      // Server route бүтэхгүй бол (service role байхгүй г.м.) зураггүйгээр хуучин замаар.
-      recordFeedback({ stage: "report", lessonId, note: text, pagePath: pathname });
+      // Server route бүтэхгүй бол (service role байхгүй г.м.) клиент өөрөө оролдоно:
+      // зургийг anon-аар bucket-д (077 migration-ийн policy) → мөрийг RLS insert-ээр.
+      const shotUrl =
+        shot.kind === "ready" ? await uploadReportScreenshotClient(shot.dataUrl) : null;
+      recordFeedback({
+        stage: "report",
+        lessonId,
+        note: text,
+        pagePath: pathname,
+        screenshotUrl: shotUrl,
+        userAgent: payload.userAgent,
+        viewport: payload.viewport,
+      });
     }
     setSent("yes");
     window.setTimeout(close, 1800);
