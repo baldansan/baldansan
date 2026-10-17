@@ -85,26 +85,74 @@ function writeTotalsCache(totals: Record<number, number>) {
   }
 }
 
-/** Head-only counts per HSK level (6 small requests vs 10k+ rows). */
-export async function fetchHskLevelTotals(): Promise<{
+/** Нэг зэрэг хэд хэдэн компонент дуудахад нэг л хүсэлт явуулна (in-flight dedupe). */
+let totalsInFlight: Promise<{ totals: Record<number, number>; error: string | null }> | null =
+  null;
+
+/** Серверийн кэштэй нэг GET (/api/hsk/level-totals) — амжилтгүй бол null. */
+async function fetchTotalsFromApi(): Promise<Record<number, number> | null> {
+  if (typeof window === "undefined" || typeof fetch !== "function") return null;
+  try {
+    const res = await fetch("/api/hsk/level-totals", { credentials: "same-origin" });
+    if (!res.ok) return null;
+    const body = (await res.json()) as { totals?: Record<string, number> | null };
+    if (!body.totals) return null;
+    const totals: Record<number, number> = {};
+    for (const [level, total] of Object.entries(body.totals)) {
+      totals[Number(level)] = Number(total) || 0;
+    }
+    return Object.keys(totals).length > 0 ? totals : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Түвшин бүрийн үгийн тоо. Эхлээд sessionStorage, дараа нь серверийн кэштэй
+ * нэг хүсэлт; тэр ч бүтэхгүй бол хуучин арга (6 HEAD count query).
+ */
+export function fetchHskLevelTotals(): Promise<{
+  totals: Record<number, number>;
+  error: string | null;
+}> {
+  if (!supabase || !hasSupabaseConfig) {
+    return Promise.resolve({ totals: {}, error: "Supabase тохиргоо байхгүй." });
+  }
+
+  const cached = readTotalsCache();
+  if (cached) {
+    return Promise.resolve({ totals: cached, error: null });
+  }
+
+  if (totalsInFlight) return totalsInFlight;
+  totalsInFlight = (async () => {
+    try {
+      const fromApi = await fetchTotalsFromApi();
+      if (fromApi) {
+        writeTotalsCache(fromApi);
+        return { totals: fromApi, error: null };
+      }
+      return await fetchHskLevelTotalsDirect();
+    } finally {
+      totalsInFlight = null;
+    }
+  })();
+  return totalsInFlight;
+}
+
+async function fetchHskLevelTotalsDirect(): Promise<{
   totals: Record<number, number>;
   error: string | null;
 }> {
   if (!supabase || !hasSupabaseConfig) {
     return { totals: {}, error: "Supabase тохиргоо байхгүй." };
   }
-
-  const cached = readTotalsCache();
-  if (cached) {
-    return { totals: cached, error: null };
-  }
-
   const client = supabase;
   const entries = await Promise.all(
     CATALOG_LEVELS.map(async (level) => {
       const { count, error } = await client
         .from("hsk_words")
-        .select("*", { count: "exact", head: true })
+        .select("id", { count: "exact", head: true })
         .eq("hsk_level", level)
         .eq("is_function_word", false);
 
