@@ -24,6 +24,14 @@ export async function loadLessonQuizQuestionsForPage(
 ): Promise<LessonQuizPageData> {
   const normalizedId = normalizeLessonRouteId(lessonId);
 
+  // Хичээл Supabase-аас (кэштэй getPublicLessonById / admin loader) ирсэн бол
+  // quizQuestions нь яг энэ quiz_questions хүснэгтийн мөрүүд (ижил mapper) —
+  // зочин бүрт дахин кэшгүй query явуулах шаардлагагүй. Хоосон бол л (RLS/түр
+  // алдаа) хуучин замаар шууд уншина.
+  if (hasSupabaseConfig && lesson.quizQuestions.length > 0) {
+    return { questions: lesson.quizQuestions, fromDatabase: true };
+  }
+
   if (hasSupabaseConfig) {
     const client = await createServerSupabaseClient();
     if (client) {
