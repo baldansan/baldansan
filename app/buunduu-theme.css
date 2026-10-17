@@ -467,7 +467,7 @@ body{
 .bs-bichleg-filter-chip{flex:0 0 auto;min-height:28px;padding:0 10px;border:none;border-radius:999px;background:rgba(0,0,0,.45);color:#fff;font-size:11px;font-weight:700;backdrop-filter:blur(6px);cursor:pointer;white-space:nowrap}
 .bs-bichleg-filter-chip--on{background:rgba(31,184,90,.9)}
 .bs-bichleg-feed{height:calc(100dvh - 7.5rem);overflow-y:auto;scroll-snap-type:y mandatory;-webkit-overflow-scrolling:touch}
-.bs-bichleg-series-badge{position:absolute;left:12px;bottom:12px;z-index:3;margin:0;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.55);color:rgba(255,255,255,.92);font-size:11px;font-weight:700;backdrop-filter:blur(6px);pointer-events:none}
+.bs-bichleg-series-badge{position:absolute;right:12px;top:10px;z-index:3;margin:0;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.55);color:rgba(255,255,255,.92);font-size:11px;font-weight:700;backdrop-filter:blur(6px);pointer-events:none}
 .bs-bichleg-slide{position:relative;height:calc(100dvh - 7.5rem);scroll-snap-align:start;scroll-snap-stop:always;background:#000}
 .bs-bichleg-player-wrap{position:absolute;inset:0;background:#111}
 .bs-bichleg-player-mount,.bs-bichleg-player-placeholder{position:absolute;inset:0}
@@ -478,20 +478,22 @@ body{
 .bs-bichleg-slide--landscape .bs-bichleg-player-mount,.bs-bichleg-slide--landscape .bs-bichleg-player-placeholder{position:relative;inset:auto;width:100%;max-width:100%;height:auto;max-height:100%;aspect-ratio:16/9}
 .bs-bichleg-slide--landscape .bs-bichleg-player-mount-inner{position:absolute;inset:0;width:100%!important;height:100%!important}
 .bs-bichleg-slide--landscape .bs-bichleg-player-mount iframe{position:absolute;inset:0;width:100%!important;height:100%!important;object-fit:contain}
-.bs-bichleg-slide--landscape .bs-bichleg-subs{top:66.666%;right:0;bottom:0;left:0;height:auto;display:flex;align-items:flex-start;justify-content:center;padding:10px 56px 12px 16px}
-.bs-bichleg-slide--landscape .bs-bichleg-actions{top:67%;bottom:auto}
+.bs-bichleg-slide--landscape .bs-bichleg-subs{top:66.666%;right:0;bottom:3.5rem;left:0;height:auto;display:flex;align-items:flex-start;justify-content:center;padding:10px 56px 8px 16px;overflow:hidden}
+.bs-bichleg-slide--landscape .bs-bichleg-actions{bottom:4rem}
 .bs-bichleg-progress{position:absolute;top:0;left:0;height:3px;background:#1FB85A;transition:width .15s linear;z-index:2}
-.bs-bichleg-subs{position:absolute;left:0;right:56px;bottom:5.5rem;padding:0 16px 12px;z-index:3;text-align:center;pointer-events:auto}
+.bs-bichleg-subs{position:absolute;left:0;right:56px;bottom:3.5rem;padding:0 16px 8px;z-index:3;text-align:center;pointer-events:auto}
 .bs-bichleg-subs-panel{display:inline-block;max-width:92%;padding:10px 14px;border:0;border-radius:12px;background:rgba(0,0,0,.55);backdrop-filter:blur(2px);text-align:center;color:inherit;font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .bs-bichleg-subs-panel:active{background:rgba(0,0,0,.68)}
 .bs-bl-time-badge{display:inline-flex;align-items:center;margin-bottom:6px;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.16);font-size:10px;font-weight:800;color:rgba(255,255,255,.88);line-height:1.4}
 .bs-bichleg-touch-layer{position:absolute;inset:0;z-index:3;display:flex;pointer-events:none}
-.bs-bichleg-touch-zone{flex:1;pointer-events:auto;touch-action:manipulation}
+.bs-bichleg-touch-zone{flex:1;pointer-events:auto;touch-action:pan-y pinch-zoom}
 .bs-bichleg-skip-overlay{position:absolute;left:50%;top:42%;z-index:4;transform:translate(-50%,-50%);padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.62);color:#fff;font-size:15px;font-weight:800;pointer-events:none;animation:bs-bichleg-skip-fade .5s ease forwards}
 @keyframes bs-bichleg-skip-fade{0%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-58%) scale(1.04)}}
-.bs-bichleg-transport{position:absolute;left:50%;bottom:18%;z-index:5;display:flex;align-items:center;gap:10px;transform:translateX(-50%);padding:6px 10px;border-radius:999px;background:rgba(0,0,0,.5);backdrop-filter:blur(8px)}
-.bs-bichleg-slide--landscape .bs-bichleg-transport{bottom:14%}
-.bs-bichleg-transport-btn{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border:none;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;cursor:pointer;touch-action:manipulation}
+.bs-bichleg-transport{position:absolute;left:50%;top:38%;z-index:5;display:flex;align-items:center;gap:8px;transform:translate(-50%,-50%);padding:6px 8px;border-radius:999px;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);max-width:calc(100% - 16px)}
+.bs-bichleg-slide--landscape .bs-bichleg-transport{top:33.333%}
+.bs-bichleg-transport-btn{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border:none;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;cursor:pointer;touch-action:manipulation;flex:0 0 auto}
+.bs-bichleg-transport-btn--sent{background:rgba(31,184,90,.28)}
+.bs-bichleg-sent-icon{width:24px;height:24px}
 .bs-bichleg-transport-btn:active{transform:scale(0.94);background:rgba(255,255,255,.22)}
 .bs-bichleg-transport-btn--play{width:56px;height:56px;background:rgba(31,184,90,.92)}
 .bs-bichleg-transport-btn--play svg{width:26px;height:26px}
@@ -515,12 +517,15 @@ body{
 .bs-bl-slang-meaning{margin:12px 0 0;font-size:16px;font-weight:800;color:var(--bs-ink);line-height:1.45}
 .bs-bl-slang-usage{margin:8px 0 0;font-size:14px;font-weight:600;color:var(--bs-ink-2);line-height:1.5}
 .bs-bichleg-sheet-btn--full{width:100%;margin-top:16px}
-.bs-bichleg-actions{position:absolute;right:10px;bottom:6.5rem;display:flex;flex-direction:column;gap:10px;z-index:4}
+.bs-bichleg-actions{position:absolute;right:10px;bottom:4rem;display:flex;flex-direction:column;gap:10px;z-index:4}
 .bs-bichleg-action{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border:none;border-radius:999px;background:rgba(0,0,0,.45);color:#fff;backdrop-filter:blur(6px);cursor:pointer}
 .bs-bichleg-action--on{color:#fb7185}
 .bs-bichleg-action-icon{width:20px;height:20px}
-.bs-bichleg-controls{position:absolute;left:12px;bottom:4.75rem;display:flex;flex-wrap:wrap;gap:8px;z-index:5;max-width:calc(100% - 68px)}
-.bs-bichleg-ctrl-btn{min-height:32px;padding:0 12px;border:none;border-radius:999px;background:rgba(255,255,255,.18);color:rgba(255,255,255,.7);font-size:11px;font-weight:800;backdrop-filter:blur(6px);cursor:pointer}
+.bs-bichleg-controls{position:absolute;left:0;right:0;bottom:4.75rem;display:flex;flex-wrap:nowrap;gap:8px;z-index:5;padding:0 12px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.bs-bichleg-controls::-webkit-scrollbar{display:none}
+.bs-bichleg-ctrl-btn{flex:0 0 auto;min-height:40px;min-width:40px;padding:0 12px;border:none;border-radius:999px;background:rgba(255,255,255,.18);color:rgba(255,255,255,.78);font-size:11px;font-weight:800;backdrop-filter:blur(6px);cursor:pointer;white-space:nowrap}
+.bs-bichleg-ctrl-btn:disabled{opacity:.4;cursor:default}
+.bs-bichleg-ctrl-btn--size{font-size:13px;font-weight:900;letter-spacing:.5px}
 .bs-bichleg-ctrl-btn--on{background:#1FB85A;color:#fff}
 .bs-bichleg-ctrl-btn--warn{background:rgba(31,184,90,.85);color:#fff}
 .bs-bichleg-ctrl-btn--speed{background:#1FB85A;color:#fff}
@@ -622,6 +627,86 @@ body{
 .bs-srs-words-delete{flex-shrink:0;min-height:32px;padding:0 12px;border:1px solid #fca5a5;border-radius:10px;background:var(--bs-card);font-size:11px;font-weight:800;color:#b91c1c;cursor:pointer}
 .bs-bichleg-sheet-note{margin:10px 0 0;padding:8px 10px;border-radius:10px;background:#fffbeb;border:1px solid #fde68a;font-size:11px;font-weight:700;color:#92400e;line-height:1.4}
 .bs-bichleg-sheet-btn--done{background:#e5e7eb;color:#6b7280;cursor:default}
+html[data-theme="dark"] .bs-bichleg-sheet-btn--done{background:#273229;color:#93a398}
+.bs-bichleg-sheet-btn--pop{border-color:#1FB85A;background:#e8f8ee;color:#1a7a42;animation:bs-bichleg-pop .25s ease}
+html[data-theme="dark"] .bs-bichleg-sheet-btn--pop{background:#16311f;color:#4fd98a}
+.bs-bichleg-sheet-btn--dim{opacity:.85}
+@keyframes bs-bichleg-pop{0%{transform:scale(.96)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+/* === Бичлэг тоглуулагч (утас): seek bar === */
+.bs-bichleg-seekwrap{position:absolute;left:8px;right:8px;bottom:6px;z-index:4}
+.bs-bichleg-seek{display:flex;align-items:center;gap:6px;padding:0 2px}
+.bs-bichleg-seek-time{flex:0 0 auto;min-width:34px;font-size:11px;font-weight:800;color:rgba(255,255,255,.88);font-variant-numeric:tabular-nums;text-shadow:0 1px 2px rgba(0,0,0,.7)}
+.bs-bichleg-seek-time:last-child{text-align:right}
+.bs-bichleg-seek-track{position:relative;flex:1;min-width:0;height:40px;border-radius:8px;cursor:pointer;touch-action:none;outline:none;-webkit-tap-highlight-color:transparent}
+.bs-bichleg-seek-track:focus-visible{box-shadow:0 0 0 2px #1FB85A}
+.bs-bichleg-seek-rail,.bs-bichleg-seek-watched,.bs-bichleg-seek-fill{position:absolute;left:0;top:50%;height:4px;transform:translateY(-50%);border-radius:999px;pointer-events:none;transition:height .12s ease}
+.bs-bichleg-seek-rail{right:0;background:rgba(255,255,255,.28)}
+.bs-bichleg-seek-watched{background:rgba(255,255,255,.5)}
+.bs-bichleg-seek-fill{background:#1FB85A}
+.bs-bichleg-seek-thumb{position:absolute;top:50%;width:14px;height:14px;border-radius:999px;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.5);transform:translate(-50%,-50%);pointer-events:none;transition:transform .12s ease}
+.bs-bichleg-seek[data-scrubbing] .bs-bichleg-seek-thumb{transform:translate(-50%,-50%) scale(1.35)}
+.bs-bichleg-seek[data-scrubbing] .bs-bichleg-seek-rail,.bs-bichleg-seek[data-scrubbing] .bs-bichleg-seek-watched,.bs-bichleg-seek[data-scrubbing] .bs-bichleg-seek-fill{height:6px}
+.bs-bichleg-seek-tip{position:absolute;bottom:calc(100% - 4px);display:flex;flex-direction:column;gap:2px;max-width:min(78vw,320px);padding:8px 12px;border-radius:12px;background:rgba(0,0,0,.9);color:#fff;text-align:center;pointer-events:none;transform:translateX(-50%);box-shadow:0 4px 16px rgba(0,0,0,.4)}
+.bs-bichleg-seek-tip-time{font-size:12px;font-weight:900;color:#9de0b8;font-variant-numeric:tabular-nums}
+.bs-bichleg-seek-tip-zh{font-size:16px;font-weight:800;line-height:1.3;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.bs-bichleg-seek-tip-mn{font-size:11px;font-weight:600;color:#d6d6d6;line-height:1.35;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.bs-bichleg-skip-overlay--scrub{top:28%;animation:none;font-size:22px;font-variant-numeric:tabular-nums}
+/* === Үргэлжлүүлэх чип === */
+.bs-bichleg-resume{position:absolute;top:8px;left:56px;right:12px;z-index:7;display:flex;align-items:center;gap:6px;min-height:40px;padding:4px 4px 4px 12px;border-radius:999px;background:rgba(0,0,0,.72);color:#fff;backdrop-filter:blur(8px);animation:bs-bichleg-fade-in .25s ease}
+.bs-bichleg-resume-text{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight:700}
+.bs-bichleg-resume-btn{flex:0 0 auto;min-height:32px;padding:0 12px;border:0;border-radius:999px;background:#1FB85A;color:#fff;font-size:12px;font-weight:800;cursor:pointer}
+.bs-bichleg-resume-x{flex:0 0 auto;width:32px;height:32px;border:0;border-radius:999px;background:rgba(255,255,255,.14);color:#fff;font-size:13px;font-weight:800;cursor:pointer}
+@keyframes bs-bichleg-fade-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+/* === Давталт / автомат зогсоох төлөв === */
+.bs-bichleg-state-badge{position:absolute;left:50%;top:calc(38% + 44px);z-index:5;transform:translateX(-50%);max-width:calc(100% - 24px);min-height:40px;padding:0 14px;border:0;border-radius:999px;font-size:12px;font-weight:800;color:#fff;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;backdrop-filter:blur(6px)}
+.bs-bichleg-slide--landscape .bs-bichleg-state-badge{top:calc(33.333% + 44px)}
+.bs-bichleg-state-badge--loop{background:rgba(31,184,90,.9)}
+.bs-bichleg-state-badge--pause{background:rgba(242,169,59,.95);color:#2a1a00}
+/* === Ангийн төгсгөлийн карт === */
+.bs-bichleg-endcard{position:absolute;left:50%;top:38%;z-index:6;width:min(88%,340px);padding:20px 16px 16px;border-radius:20px;background:rgba(10,15,12,.94);color:#fff;text-align:center;transform:translate(-50%,-50%);box-shadow:0 12px 40px rgba(0,0,0,.5);animation:bs-bichleg-fade-in .25s ease}
+.bs-bichleg-endcard-x{position:absolute;top:6px;right:6px;width:36px;height:36px;border:0;border-radius:999px;background:rgba(255,255,255,.1);color:#fff;font-size:14px;font-weight:800;cursor:pointer}
+.bs-bichleg-endcard-title{margin:0 0 12px;font-size:16px;font-weight:900}
+.bs-bichleg-endcard-cta{display:block;width:100%;min-height:46px;padding:12px 14px;border:0;border-radius:14px;background:#1FB85A;color:#fff;font-size:13px;font-weight:800;line-height:1.35;text-decoration:none;cursor:pointer;box-sizing:border-box}
+.bs-bichleg-endcard-secondary{display:block;width:100%;min-height:42px;margin-top:8px;border:1px solid rgba(255,255,255,.2);border-radius:14px;background:transparent;color:#fff;font-size:12px;font-weight:800;cursor:pointer}
+/* === Сонсголын горим: ханзыг нуух === */
+.bs-bichleg-subs-panel .bs-bl-zh--hidden{display:flex;flex-direction:column;align-items:center;gap:2px;width:100%;margin:0;padding:2px 0;border:0;background:transparent;color:#fff;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.bs-bichleg-subs-panel .bs-bl-zh--hidden:not(:first-child){margin-top:6px}
+.bs-bl-zh-mask{letter-spacing:3px;opacity:.5;line-height:1.2}
+.bs-bl-zh-mask-hint{font-size:11px;font-weight:700;color:#9de0b8;letter-spacing:0}
+/* === Ханзын хэмжээ (S/M/L) === */
+.bs-bichleg-shell[data-hanzi="s"] .bs-bichleg-subs-panel .bs-bl-zh{font-size:18px}
+.bs-bichleg-shell[data-hanzi="s"] .bs-bl-pinyin{font-size:12px}
+.bs-bichleg-shell[data-hanzi="l"] .bs-bichleg-subs-panel .bs-bl-zh{font-size:28px;line-height:1.3}
+.bs-bichleg-shell[data-hanzi="l"] .bs-bl-pinyin{font-size:15px}
+.bs-bichleg-shell[data-hanzi="l"] .bs-bl-mn{font-size:15px}
+/* === Бүх өгүүлбэр (transcript) хуудас === */
+.bs-bichleg-sheet--transcript{display:flex;flex-direction:column;max-height:74dvh;padding-bottom:max(12px,env(safe-area-inset-bottom))}
+.bs-bichleg-transcript-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.bs-bichleg-transcript-close{flex:0 0 auto;width:40px;height:40px;border:0;border-radius:999px;background:var(--bs-bg);color:var(--bs-ink);font-size:15px;font-weight:800;cursor:pointer}
+.bs-bichleg-transcript-search{width:100%;min-height:42px;margin-top:10px;padding:0 12px;border:1px solid var(--bs-line);border-radius:12px;background:var(--bs-bg);color:var(--bs-ink);font:inherit;font-size:14px;box-sizing:border-box}
+.bs-bichleg-transcript-search:focus{outline:2px solid #1FB85A;outline-offset:1px}
+.bs-bichleg-transcript-list{flex:1;min-height:0;margin:10px 0 0;padding:0;list-style:none;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.bs-bichleg-transcript-list>li{content-visibility:auto;contain-intrinsic-size:auto 64px}
+.bs-bichleg-transcript-row{display:flex;gap:10px;width:100%;min-height:52px;padding:10px 8px;border:0;border-bottom:1px solid var(--bs-line);border-radius:10px;background:transparent;color:var(--bs-ink);font:inherit;text-align:left;cursor:pointer}
+.bs-bichleg-transcript-row--on{background:var(--bs-green-50);box-shadow:inset 3px 0 0 var(--bs-green)}
+.bs-bichleg-transcript-time{flex:0 0 auto;min-width:38px;padding-top:2px;font-size:11px;font-weight:800;color:var(--bs-muted);font-variant-numeric:tabular-nums}
+.bs-bichleg-transcript-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+.bs-bichleg-transcript-speaker{font-size:11px;font-weight:700;color:var(--bs-green-700)}
+.bs-bichleg-transcript-zh{font-size:17px;font-weight:800;line-height:1.35}
+.bs-bichleg-transcript-mn{font-size:12.5px;font-weight:600;color:var(--bs-ink-2);line-height:1.4}
+/* === Бүтэн дэлгэц (native + iOS fake) === */
+html.bs-bichleg-fs-root,html.bs-bichleg-fs-root body{overflow:hidden}
+.bs-bichleg-shell--fs,.bs-app-root .bs-bichleg-shell--fs{position:fixed;inset:0;z-index:1000;max-width:none;margin:0;height:100dvh;min-height:100dvh;background:#000}
+.bs-bichleg-shell--fs .bs-bichleg-feed,.bs-bichleg-shell--fs .bs-bichleg-slide,.bs-app-root .bs-bichleg-shell--fs .bs-bichleg-feed,.bs-app-root .bs-bichleg-shell--fs .bs-bichleg-slide{height:100dvh}
+.bs-bichleg-shell--fs .bs-bichleg-controls{bottom:max(8px,env(safe-area-inset-bottom));padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
+.bs-bichleg-shell--fs .bs-bichleg-seekwrap{bottom:3.5rem;left:max(8px,env(safe-area-inset-left));right:max(8px,env(safe-area-inset-right))}
+.bs-bichleg-shell--fs .bs-bichleg-subs{bottom:6.25rem}
+.bs-bichleg-shell--fs .bs-bichleg-actions{bottom:6.75rem;right:max(10px,env(safe-area-inset-right))}
+.bs-bichleg-shell--fs .bs-bichleg-transport,.bs-bichleg-shell--fs .bs-bichleg-slide--landscape .bs-bichleg-transport,.bs-bichleg-shell--fs .bs-bichleg-endcard{top:45%}
+.bs-bichleg-shell--fs .bs-bichleg-state-badge,.bs-bichleg-shell--fs .bs-bichleg-slide--landscape .bs-bichleg-state-badge{top:calc(45% + 44px)}
+.bs-bichleg-shell--fs .bs-bichleg-slide--landscape .bs-bichleg-player-wrap{inset:0}
+.bs-bichleg-shell--fs .bs-bichleg-slide--landscape .bs-bichleg-subs{top:auto;bottom:6.25rem;display:block;padding:0 56px 8px 16px;overflow:visible}
+.bs-bichleg-fs-exit{left:max(10px,env(safe-area-inset-left));border:0;cursor:pointer}
 .bs-mock-title{margin:0;font-size:20px;font-weight:800;color:var(--bs-ink)}
 .bs-mock-sub{margin:6px 0 0;font-size:12px;font-weight:600;color:var(--bs-muted);line-height:1.45}
 .bs-mock-info-card{padding:14px;border-radius:16px;background:var(--bs-card);box-shadow:var(--bs-shadow)}

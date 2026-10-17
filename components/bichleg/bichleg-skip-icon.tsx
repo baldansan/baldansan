@@ -1,3 +1,5 @@
+import { BICHLEG_SKIP_SECONDS } from "@/lib/bichleg/player-seek";
+
 type Props = {
   direction: "back" | "forward";
   className?: string;
@@ -21,11 +23,11 @@ export function BichlegSkipIcon({ direction, className = "" }: Props) {
         x="12"
         y="15.5"
         textAnchor="middle"
-        fontSize="7"
+        fontSize="5.5"
         fontWeight="800"
         fill="currentColor"
       >
-        3
+        {BICHLEG_SKIP_SECONDS}
       </text>
     </svg>
   );

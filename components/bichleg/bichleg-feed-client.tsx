@@ -6,6 +6,8 @@ import { AppShell } from "@/components/app/app-shell";
 import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { BichlegSlangSheet } from "@/components/bichleg/bichleg-slang-sheet";
+import { BichlegSeekBar } from "@/components/bichleg/bichleg-seek-bar";
+import { BichlegTranscriptSheet } from "@/components/bichleg/bichleg-transcript-sheet";
 import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import {
   formatSeriesEpisodeBadge,
@@ -32,9 +34,33 @@ import {
 } from "@/lib/bichleg/youtube-api";
 import {
   BICHLEG_SKIP_SECONDS,
+  BICHLEG_SWIPE_SEC_PER_PX,
   clampPlaybackTime,
   formatSubtitleClock,
+  nextSentenceSeekSec,
+  prevSentenceSeekSec,
+  resolveResumeSeekSec,
 } from "@/lib/bichleg/player-seek";
+import {
+  clearResumePosition,
+  formatHanziSizeLabel,
+  nextHanziSize,
+  readHanziSize,
+  readPreferredSpeed,
+  readResumePosition,
+  writeHanziSize,
+  writePreferredSpeed,
+  writeResumePosition,
+  type BichlegHanziSize,
+} from "@/lib/bichleg/player-prefs";
+import {
+  currentFullscreenElement,
+  exitNativeFullscreen,
+  isCoarsePointerLandscape,
+  requestNativeFullscreen,
+  subscribeOrientation,
+  type BichlegFullscreenMode,
+} from "@/lib/bichleg/fullscreen";
 import {
   findActiveSubtitle,
   formatUserSubtitleOffsetLabel,
@@ -67,9 +93,15 @@ type Props = {
   initialActiveIndex?: number;
 };
 
-const WATCH_SAVE_INTERVAL_MS = 10_000;
+/** Сервер (оргил watched_sec) + localStorage (яг байрлал) хадгалах давтамж. */
+const WATCH_SAVE_INTERVAL_MS = 5_000;
+/** «⏮ … -өөс үргэлжилж байна» чип хэдэн мс харагдах вэ. */
+const RESUME_CHIP_MS = 8_000;
+/** Үг хадгалсны дараа «Нэмэгдсэн ✓» харуулж байж хуудсыг хаах хугацаа. */
+const SAVE_DONE_CLOSE_MS = 650;
 
 type PickedWord = SubtitleWord & { sourceVideoId: string };
+type SaveState = "idle" | "saving" | "done";
 
 function collectKeyWords(subtitles: VideoSubtitleRow[]): SubtitleWord[] {
   const seen = new Set<string>();
@@ -82,6 +114,16 @@ function collectKeyWords(subtitles: VideoSubtitleRow[]): SubtitleWord[] {
     }
   }
   return out;
+}
+
+function readInitialSeekQuery(): number {
+  if (typeof window === "undefined") return 0;
+  try {
+    const t = Number(new URLSearchParams(window.location.search).get("t"));
+    return Number.isFinite(t) && t > 0 ? t : 0;
+  } catch {
+    return 0;
+  }
 }
 
 function BichlegIcon({
@@ -141,6 +183,7 @@ export function BichlegFeedClient({
   initialActiveIndex = 0,
 }: Props) {
   const locale = useUiLocale();
+  const shellRef = useRef<HTMLDivElement>(null);
   const feedRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YtPlayer | null>(null);
   const subtitlesLoadedRef = useRef<Set<string>>(new Set());
@@ -158,7 +201,10 @@ export function BichlegFeedClient({
   const [duration, setDuration] = useState(0);
   const [showPinyin, setShowPinyin] = useState(true);
   const [showMn, setShowMn] = useState(true);
-  const [preferredSpeed, setPreferredSpeed] = useState<BichlegPreferredSpeed>(1);
+  // Хурд — localStorage (PlayerSwitch зөвхөн клиент дээр mount хийдэг тул SSR зөрүү үгүй)
+  const [preferredSpeed, setPreferredSpeed] = useState<BichlegPreferredSpeed>(() =>
+    readPreferredSpeed()
+  );
   const [displaySpeed, setDisplaySpeed] = useState(1);
   const [muted, setMuted] = useState(true);
   const [liked, setLiked] = useState<Record<string, boolean>>({});
@@ -173,15 +219,47 @@ export function BichlegFeedClient({
   const [slangSubtitleIdx, setSlangSubtitleIdx] = useState<number | null>(null);
   const [wordStatus, setWordStatus] = useState<BichlegWordStatus | null>(null);
   const [statusLoading, setStatusLoading] = useState(false);
+  const [saveState, setSaveState] = useState<SaveState>("idle");
   const [toast, setToast] = useState<string | null>(null);
   const [playerReady, setPlayerReady] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [ended, setEnded] = useState(false);
   const [skipOverlay, setSkipOverlay] = useState<string | null>(null);
   const [userSubtitleOffset, setUserSubtitleOffset] =
     useState<UserSubtitleOffsetOption>(0);
   const [layoutByYoutubeId, setLayoutByYoutubeId] = useState<
     Record<string, BichlegVideoLayout>
   >({});
+
+  // --- Шинэ: seek / үргэлжлүүлэх / өгүүлбэрийн дасгал / сонсгол / transcript / бүтэн дэлгэц ---
+  const [resumeChip, setResumeChip] = useState<{ fromSec: number } | null>(null);
+  const [scrubPreviewSec, setScrubPreviewSec] = useState<number | null>(null);
+  const [loopIdx, setLoopIdx] = useState<number | null>(null);
+  const [autoPause, setAutoPause] = useState(false);
+  const [pausedAtSentence, setPausedAtSentence] = useState(false);
+  const [listenMode, setListenMode] = useState(false);
+  const [revealedIdx, setRevealedIdx] = useState<Set<number>>(() => new Set());
+  const [hanziSize, setHanziSize] = useState<BichlegHanziSize>(() => readHanziSize());
+  const [showTranscript, setShowTranscript] = useState(false);
+  const [savedThisEpisode, setSavedThisEpisode] = useState<Record<string, string[]>>({});
+  const [endCardDismissed, setEndCardDismissed] = useState(false);
+  const [fsMode, setFsMode] = useState<BichlegFullscreenMode>("none");
+
+  const isPlayingRef = useRef(true);
+  const currentTimeRef = useRef(0);
+  const loopIdxRef = useRef<number | null>(null);
+  const autoPauseRef = useRef(false);
+  const autoPausedIdxRef = useRef<number | null>(null);
+  const lastActiveIdxRef = useRef<number | null>(null);
+  const subsRef = useRef<VideoSubtitleRow[]>([]);
+  const offsetRef = useRef(0);
+  const scrubStartSecRef = useRef(0);
+  const scrubPreviewRef = useRef<number | null>(null);
+  const durationRef = useRef(0);
+  const lastResumeWriteRef = useRef(0);
+  const initialSeekQueryRef = useRef<number | null>(null);
+  const resumeChipTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const fsModeRef = useRef<BichlegFullscreenMode>("none");
 
   const activeVideo = videos[activeIndex] ?? null;
   // Time-on-video (Оюу оноо): re-keys per active video in the feed.
@@ -244,6 +322,16 @@ export function BichlegFeedClient({
     [flushWatchProgress]
   );
 
+  /** Яг зогссон байрлалыг localStorage-д (үргэлжлүүлэхэд) бичнэ. */
+  const writeResumeNow = useCallback(
+    (video: VideoRow | null, sec: number, dur: number) => {
+      if (!video) return;
+      writeResumePosition(video.id, sec, dur);
+      lastResumeWriteRef.current = Date.now();
+    },
+    []
+  );
+
   const activeSubtitles = activeVideo
     ? (subtitlesMap[activeVideo.id] ?? [])
     : [];
@@ -257,10 +345,24 @@ export function BichlegFeedClient({
       findActiveSubtitle(activeSubtitles, currentTime, totalSubtitleOffset),
     [activeSubtitles, currentTime, totalSubtitleOffset]
   );
+  const activeIdx = activeSubtitle?.idx ?? null;
   const keyWords = useMemo(
     () => collectKeyWords(activeSubtitles),
     [activeSubtitles]
   );
+
+  useEffect(() => {
+    subsRef.current = activeSubtitles;
+    offsetRef.current = totalSubtitleOffset;
+  }, [activeSubtitles, totalSubtitleOffset]);
+
+  useEffect(() => {
+    loopIdxRef.current = loopIdx;
+  }, [loopIdx]);
+
+  useEffect(() => {
+    autoPauseRef.current = autoPause;
+  }, [autoPause]);
 
   useEffect(() => {
     if (!activeVideo) return;
@@ -287,22 +389,79 @@ export function BichlegFeedClient({
     [preferredSpeed]
   );
 
+  const showResumeChip = useCallback((fromSec: number) => {
+    setResumeChip({ fromSec });
+    if (resumeChipTimerRef.current) clearTimeout(resumeChipTimerRef.current);
+    resumeChipTimerRef.current = setTimeout(() => setResumeChip(null), RESUME_CHIP_MS);
+  }, []);
+
   const handlePlayerReady = useCallback(() => {
     setPlayerReady(true);
     const player = playerRef.current;
     if (!player) return;
     syncPlaybackRate(player);
     const d = safePlayerDuration(player);
-    if (d != null) setDuration(d);
-    else if (activeVideo?.duration_sec) {
-      setDuration(Number(activeVideo.duration_sec));
-    }
-  }, [activeVideo?.duration_sec, syncPlaybackRate]);
+    const dur =
+      d != null && d > 0
+        ? d
+        : activeVideo?.duration_sec
+          ? Number(activeVideo.duration_sec)
+          : 0;
+    if (dur > 0) setDuration(dur);
 
+    if (!activeVideo) return;
+
+    // ?t=SEC — өгүүлбэрийн картаас (нэг л удаа, зөвхөн эхний ачааллын анги)
+    if (initialSeekQueryRef.current === null) {
+      initialSeekQueryRef.current = readInitialSeekQuery();
+      const t = initialSeekQueryRef.current;
+      if (t > 0) {
+        try {
+          player.seekTo(t, true);
+        } catch {
+          /* player destroyed */
+        }
+        currentTimeRef.current = t;
+        setCurrentTime(t);
+        return;
+      }
+    }
+
+    // ⏮ Үргэлжлүүлэх: localStorage яг байрлал → серверийн watched_sec (оргил)
+    const local = readResumePosition(activeVideo.id);
+    const fromSec =
+      local?.sec ?? progressRef.current[activeVideo.id]?.watched_sec ?? 0;
+    const seek = resolveResumeSeekSec(fromSec, dur);
+    if (seek != null) {
+      try {
+        player.seekTo(seek, true);
+      } catch {
+        /* player destroyed */
+      }
+      currentTimeRef.current = seek;
+      setCurrentTime(seek);
+      showResumeChip(fromSec);
+    }
+  }, [activeVideo, syncPlaybackRate, showResumeChip]);
+
+  // Анги солигдоход тоглуулагчийн төлөв, өгүүлбэрийн дасгалын төлөв цэвэрлэх
   useEffect(() => {
     setCurrentTime(0);
+    currentTimeRef.current = 0;
     setIsPlaying(true);
+    isPlayingRef.current = true;
+    setEnded(false);
+    setEndCardDismissed(false);
     setSkipOverlay(null);
+    setResumeChip(null);
+    setScrubPreviewSec(null);
+    setLoopIdx(null);
+    loopIdxRef.current = null;
+    setPausedAtSentence(false);
+    autoPausedIdxRef.current = null;
+    lastActiveIdxRef.current = null;
+    setRevealedIdx(new Set());
+    setShowTranscript(false);
   }, [activeVideo?.id]);
 
   useEffect(() => {
@@ -327,6 +486,7 @@ export function BichlegFeedClient({
     }
   }, [muted, playerReady]);
 
+  // 150мс тутам: цаг, оргил, 🔁 давталт, «Автомат зогсоох», localStorage байрлал
   useEffect(() => {
     const player = playerRef.current;
     if (!player || !playerReady) return;
@@ -334,17 +494,78 @@ export function BichlegFeedClient({
     const tick = setInterval(() => {
       const t = safePlayerCurrentTime(player);
       if (t == null) return;
+      currentTimeRef.current = t;
       setCurrentTime(t);
       const d = safePlayerDuration(player);
-      if (d != null) setDuration(d);
-      if (activeVideo) {
-        const prevPeak = peakWatchedRef.current[activeVideo.id] ?? 0;
-        if (t > prevPeak) peakWatchedRef.current[activeVideo.id] = t;
+      if (d != null) {
+        durationRef.current = d;
+        setDuration(d);
+      }
+      if (!activeVideo) return;
+
+      const prevPeak = peakWatchedRef.current[activeVideo.id] ?? 0;
+      if (t > prevPeak) peakWatchedRef.current[activeVideo.id] = t;
+
+      const subs = subsRef.current;
+      const off = offsetRef.current;
+
+      // 🔁 Нэг өгүүлбэр давтах
+      const loop = loopIdxRef.current;
+      if (loop != null) {
+        const sub = subs.find((s) => s.idx === loop);
+        if (sub) {
+          const start = subtitlePlayerSeekSec(sub, off);
+          const end = sub.end_sec + off;
+          if (t >= end - 0.05 && t < end + 1.5) {
+            try {
+              player.seekTo(start, true);
+            } catch {
+              /* player destroyed */
+            }
+          } else if (t >= end + 1.5 || t < start - 1.5) {
+            // Хэрэглэгч өөр тийш шилжсэн — давталтыг болиулна
+            loopIdxRef.current = null;
+            setLoopIdx(null);
+          }
+        } else {
+          loopIdxRef.current = null;
+          setLoopIdx(null);
+        }
+      }
+
+      // ⏸ Өгүүлбэр бүрийн төгсгөлд зогсох
+      const active = findActiveSubtitle(subs, t, off);
+      const activeId = active?.idx ?? null;
+      const prevId = lastActiveIdxRef.current;
+      lastActiveIdxRef.current = activeId;
+      if (autoPauseRef.current && loopIdxRef.current == null && isPlayingRef.current) {
+        let pauseFor: VideoSubtitleRow | null = null;
+        if (active && t >= active.end_sec + off - 0.12 && autoPausedIdxRef.current !== active.idx) {
+          pauseFor = active;
+        } else if (prevId != null && prevId !== activeId && autoPausedIdxRef.current !== prevId) {
+          // Мөр хоорондын завсаргүй — өмнөх мөрийн төгсгөлийг алгассан
+          pauseFor = subs.find((s) => s.idx === prevId) ?? null;
+        }
+        if (pauseFor) {
+          autoPausedIdxRef.current = pauseFor.idx;
+          try {
+            player.seekTo(Math.max(0, pauseFor.end_sec + off - 0.05), true);
+            player.pauseVideo();
+          } catch {
+            /* player destroyed */
+          }
+          setPausedAtSentence(true);
+        }
+      }
+
+      // Байрлал (үргэлжлүүлэх) — тоглож байх үед ~5с тутам
+      if (isPlayingRef.current && Date.now() - lastResumeWriteRef.current >= WATCH_SAVE_INTERVAL_MS) {
+        writeResumeNow(activeVideo, t, d ?? 0);
       }
     }, 150);
 
     return () => clearInterval(tick);
-  }, [playerReady, activeVideo?.id]);
+  }, [playerReady, activeVideo?.id, writeResumeNow]);
 
   useEffect(() => {
     progressRef.current = initialProgress;
@@ -369,8 +590,9 @@ export function BichlegFeedClient({
     slide?.scrollIntoView({ block: "start" });
   }, [videos, initialActiveIndex]);
 
+  // Сервер: тоглож байх үед 5с тутам оргил хадгална (peak семантик хэвээр)
   useEffect(() => {
-    if (!activeVideo || !playerReady) return;
+    if (!activeVideo || !playerReady || !isPlaying) return;
 
     const interval = setInterval(() => {
       const player = playerRef.current;
@@ -385,7 +607,7 @@ export function BichlegFeedClient({
     }, WATCH_SAVE_INTERVAL_MS);
 
     return () => clearInterval(interval);
-  }, [activeVideo?.id, playerReady, duration, enqueueFlush]);
+  }, [activeVideo?.id, playerReady, isPlaying, duration, enqueueFlush]);
 
   useEffect(() => {
     const previousId = lastFlushedVideoIdRef.current;
@@ -409,6 +631,34 @@ export function BichlegFeedClient({
       void enqueueFlush(video, peak, duration);
     };
   }, [videos, duration, enqueueFlush]);
+
+  // Анги солигдох / компонент хаагдах үед яг байрлалыг хадгална
+  useEffect(() => {
+    if (!activeVideo) return;
+    const video = activeVideo;
+    return () => {
+      const t = currentTimeRef.current;
+      if (t > 0) writeResumeNow(video, t, durationRef.current);
+    };
+  }, [activeVideo?.id, writeResumeNow]);
+
+  // Таб далд орох / хуудас хаагдах үед хадгална
+  useEffect(() => {
+    if (!activeVideo) return;
+    const onHide = () => {
+      if (document.visibilityState !== "hidden") return;
+      const player = playerRef.current;
+      const t = (player && safePlayerCurrentTime(player)) ?? currentTimeRef.current;
+      writeResumeNow(activeVideo, t, duration);
+      void enqueueFlush(activeVideo, t, duration);
+    };
+    document.addEventListener("visibilitychange", onHide);
+    window.addEventListener("pagehide", onHide);
+    return () => {
+      document.removeEventListener("visibilitychange", onHide);
+      window.removeEventListener("pagehide", onHide);
+    };
+  }, [activeVideo, duration, enqueueFlush, writeResumeNow]);
 
   useEffect(() => {
     const root = feedRef.current;
@@ -442,6 +692,73 @@ export function BichlegFeedClient({
     return () => clearTimeout(t);
   }, [skipOverlay]);
 
+  // --- Бүтэн дэлгэц: native fullscreenchange-тэй синк ---
+  useEffect(() => {
+    fsModeRef.current = fsMode;
+  }, [fsMode]);
+
+  useEffect(() => {
+    const onChange = () => {
+      const el = currentFullscreenElement();
+      if (!el && fsModeRef.current === "native") setFsMode("none");
+    };
+    document.addEventListener("fullscreenchange", onChange);
+    document.addEventListener("webkitfullscreenchange", onChange);
+    return () => {
+      document.removeEventListener("fullscreenchange", onChange);
+      document.removeEventListener("webkitfullscreenchange", onChange);
+    };
+  }, []);
+
+  // Утсаа хэвтээ эргүүлэхэд автоматаар бүтэн дэлгэц, босоо болоход гарна
+  useEffect(() => {
+    return subscribeOrientation(() => {
+      const landscape = isCoarsePointerLandscape();
+      if (landscape && fsModeRef.current === "none") {
+        setFsMode("fake");
+      } else if (!landscape && fsModeRef.current !== "none") {
+        void exitNativeFullscreen();
+        setFsMode("none");
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    if (fsMode === "none") return;
+    document.documentElement.classList.add("bs-bichleg-fs-root");
+    return () => document.documentElement.classList.remove("bs-bichleg-fs-root");
+  }, [fsMode]);
+
+  // Гар (PC-ийн нарийн цонх): ←/→ = ±10с, Space = тоглуулах/зогсоох
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      const target = e.target as HTMLElement | null;
+      if (
+        target &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.isContentEditable ||
+          target.getAttribute("role") === "slider")
+      )
+        return;
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        seekRelative(-BICHLEG_SKIP_SECONDS);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        seekRelative(BICHLEG_SKIP_SECONDS);
+      } else if (e.key === " ") {
+        e.preventDefault();
+        togglePlayPause();
+      } else if (e.key === "Escape" && fsModeRef.current !== "none") {
+        exitFullscreen();
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+
   function ensureUnmuted() {
     if (muted) setMuted(false);
   }
@@ -449,10 +766,30 @@ export function BichlegFeedClient({
   function handlePlayerStateChange(state: number) {
     if (state === YT.PlayerState.PLAYING) {
       setIsPlaying(true);
+      isPlayingRef.current = true;
+      setEnded(false);
+      setPausedAtSentence(false);
       return;
     }
     if (state === YT.PlayerState.PAUSED || state === YT.PlayerState.ENDED) {
       setIsPlaying(false);
+      isPlayingRef.current = false;
+      if (activeVideo) {
+        const player = playerRef.current;
+        const t = (player && safePlayerCurrentTime(player)) ?? currentTimeRef.current;
+        const d = (player && safePlayerDuration(player)) ?? duration;
+        if (state === YT.PlayerState.ENDED) {
+          setEnded(true);
+          setLoopIdx(null);
+          loopIdxRef.current = null;
+          // Дуусгасан — дараа нь эхнээс
+          clearResumePosition(activeVideo.id);
+          void enqueueFlush(activeVideo, Math.max(t, d), d);
+        } else {
+          writeResumeNow(activeVideo, t, d);
+          void enqueueFlush(activeVideo, t, d);
+        }
+      }
     }
   }
 
@@ -466,35 +803,37 @@ export function BichlegFeedClient({
 
   function seekToTime(targetSec: number, showSkipLabel?: string) {
     ensureUnmuted();
+    autoPausedIdxRef.current = null;
+    setPausedAtSentence(false);
     runOnPlayer((player) => {
       const max = resolvePlayerDuration(player);
       const next = clampPlaybackTime(targetSec, max);
       player.seekTo(next, true);
+      currentTimeRef.current = next;
       setCurrentTime(next);
       if (max > 0) setDuration(max);
+      lastActiveIdxRef.current =
+        findActiveSubtitle(subsRef.current, next, offsetRef.current)?.idx ?? null;
     });
     if (showSkipLabel) setSkipOverlay(showSkipLabel);
   }
 
   function seekRelative(deltaSec: number) {
-    runOnPlayer((player) => {
-      const max = resolvePlayerDuration(player);
-      const current = safePlayerCurrentTime(player) ?? currentTime;
-      const next = clampPlaybackTime(current + deltaSec, max);
-      player.seekTo(next, true);
-      setCurrentTime(next);
-    });
-    setSkipOverlay(
+    const current = (() => {
+      const player = playerRef.current;
+      return (player && safePlayerCurrentTime(player)) ?? currentTimeRef.current;
+    })();
+    seekToTime(
+      current + deltaSec,
       deltaSec < 0
         ? `-${BICHLEG_SKIP_SECONDS}${tr(locale, "с")}`
         : `+${BICHLEG_SKIP_SECONDS}${tr(locale, "с")}`
     );
-    ensureUnmuted();
   }
 
   function togglePlayPause() {
     ensureUnmuted();
-    if (isPlaying) pausePlayback();
+    if (isPlayingRef.current) pausePlayback();
     else resumePlayback();
   }
 
@@ -502,11 +841,74 @@ export function BichlegFeedClient({
     seekToTime(subtitlePlayerSeekSec(sub, totalSubtitleOffset));
   }
 
+  function goPrevSentence() {
+    const t = currentTimeRef.current;
+    const target = prevSentenceSeekSec(activeSubtitles, activeIdx, t, totalSubtitleOffset);
+    if (target == null) return;
+    if (loopIdx != null) {
+      const sub = findActiveSubtitle(activeSubtitles, target + 0.01, totalSubtitleOffset);
+      setLoopIdx(sub?.idx ?? null);
+      loopIdxRef.current = sub?.idx ?? null;
+    }
+    seekToTime(target);
+    runOnPlayer((p) => p.playVideo());
+  }
+
+  function goNextSentence() {
+    const t = currentTimeRef.current;
+    const target = nextSentenceSeekSec(activeSubtitles, activeIdx, t, totalSubtitleOffset);
+    if (target == null) return;
+    if (loopIdx != null) {
+      const sub = findActiveSubtitle(activeSubtitles, target + 0.01, totalSubtitleOffset);
+      setLoopIdx(sub?.idx ?? null);
+      loopIdxRef.current = sub?.idx ?? null;
+    }
+    seekToTime(target);
+    runOnPlayer((p) => p.playVideo());
+  }
+
+  function toggleLoop() {
+    if (loopIdx != null) {
+      setLoopIdx(null);
+      loopIdxRef.current = null;
+      return;
+    }
+    const sub =
+      activeSubtitle ??
+      activeSubtitles.find(
+        (s) => s.start_sec + totalSubtitleOffset > currentTimeRef.current
+      ) ??
+      null;
+    if (!sub) return;
+    ensureUnmuted();
+    setLoopIdx(sub.idx);
+    loopIdxRef.current = sub.idx;
+    setPausedAtSentence(false);
+    if (!activeSubtitle) seekToTime(subtitlePlayerSeekSec(sub, totalSubtitleOffset));
+    runOnPlayer((p) => p.playVideo());
+  }
+
   function cycleUserSubtitleOffset() {
     if (!activeVideo) return;
     const next = nextUserSubtitleOffset(userSubtitleOffset);
     setUserSubtitleOffset(next);
     writeUserSubtitleOffset(activeVideo.id, next);
+  }
+
+  function cycleSpeed() {
+    setPreferredSpeed((current) => {
+      const next = nextBichlegSpeed(current);
+      writePreferredSpeed(next);
+      return next;
+    });
+  }
+
+  function cycleHanziSize() {
+    setHanziSize((cur) => {
+      const next = nextHanziSize(cur);
+      writeHanziSize(next);
+      return next;
+    });
   }
 
   function runOnPlayer(fn: (player: YtPlayer) => void) {
@@ -520,11 +922,53 @@ export function BichlegFeedClient({
   }
 
   function resumePlayback() {
+    setPausedAtSentence(false);
     runOnPlayer((player) => player.playVideo());
   }
 
   function pausePlayback() {
     runOnPlayer((player) => player.pauseVideo());
+  }
+
+  // --- Хэвтээ шудрах (видео дээр) ---
+  function handleScrubStart() {
+    const player = playerRef.current;
+    const t = (player && safePlayerCurrentTime(player)) ?? currentTimeRef.current;
+    scrubStartSecRef.current = t;
+    scrubPreviewRef.current = t;
+    setScrubPreviewSec(t);
+  }
+
+  function handleScrubMove(dxPx: number) {
+    const max = durationRef.current > 0 ? durationRef.current : duration;
+    const next = clampPlaybackTime(
+      scrubStartSecRef.current + dxPx * BICHLEG_SWIPE_SEC_PER_PX,
+      max
+    );
+    scrubPreviewRef.current = next;
+    setScrubPreviewSec(next);
+  }
+
+  function handleScrubEnd(commit: boolean) {
+    const target = scrubPreviewRef.current;
+    scrubPreviewRef.current = null;
+    setScrubPreviewSec(null);
+    if (commit && target != null) seekToTime(target);
+  }
+
+  // --- Бүтэн дэлгэц ---
+  async function enterFullscreen() {
+    const el = shellRef.current;
+    if (el && (await requestNativeFullscreen(el))) {
+      setFsMode("native");
+      return;
+    }
+    setFsMode("fake");
+  }
+
+  function exitFullscreen() {
+    void exitNativeFullscreen();
+    setFsMode("none");
   }
 
   function handleWordPick(word: SubtitleWord) {
@@ -533,6 +977,7 @@ export function BichlegFeedClient({
     setPickedSlangNote(null);
     setSlangSubtitleIdx(null);
     setWordStatus(null);
+    setSaveState("idle");
     setPickedWord({ ...word, sourceVideoId: activeVideo.id });
   }
 
@@ -571,7 +1016,8 @@ export function BichlegFeedClient({
   function handleContinue() {
     setPickedWord(null);
     setWordStatus(null);
-    resumePlayback();
+    setSaveState("idle");
+    if (!ended) resumePlayback();
   }
 
   useEffect(() => {
@@ -584,12 +1030,14 @@ export function BichlegFeedClient({
   }, [activeSubtitle?.idx, pickedSlangNote, slangSubtitleIdx]);
 
   async function handleSaveWord() {
-    if (!pickedWord || wordStatus?.inSrs) return;
+    if (!pickedWord || wordStatus?.inSrs || saveState !== "idle") return;
+    const word = pickedWord;
+    setSaveState("saving");
     const result = await saveWordFromVideo({
-      zh: pickedWord.zh,
-      pinyin: pickedWord.pinyin,
-      mn: pickedWord.mn,
-      sourceVideoId: pickedWord.sourceVideoId,
+      zh: word.zh,
+      pinyin: word.pinyin,
+      mn: word.mn,
+      sourceVideoId: word.sourceVideoId,
     });
     if (result.ok) {
       if (result.isFunctionWord) {
@@ -605,15 +1053,57 @@ export function BichlegFeedClient({
       } else {
         setToast(tr(locale, "Хадгаллаа ✓"));
       }
-      setPickedWord(null);
-      setWordStatus(null);
-      resumePlayback();
-    } else if (result.error) {
-      setToast(result.error);
+      if (!result.isFunctionWord) {
+        setSavedThisEpisode((prev) => {
+          const list = prev[word.sourceVideoId] ?? [];
+          if (list.includes(word.zh)) return prev;
+          return { ...prev, [word.sourceVideoId]: [...list, word.zh] };
+        });
+      }
+      setSaveState("done");
+      setTimeout(() => {
+        setPickedWord((cur) => (cur === word ? null : cur));
+        setWordStatus(null);
+        setSaveState("idle");
+        if (!ended) resumePlayback();
+      }, SAVE_DONE_CLOSE_MS);
+    } else {
+      setSaveState("idle");
+      if (result.error) setToast(result.error);
     }
   }
 
+  function revealSubtitle(idx: number) {
+    setRevealedIdx((prev) => {
+      if (prev.has(idx)) return prev;
+      const next = new Set(prev);
+      next.add(idx);
+      return next;
+    });
+  }
+
   function renderZh(sub: VideoSubtitleRow) {
+    const hidden = listenMode && !revealedIdx.has(sub.idx);
+    if (hidden) {
+      const len = Math.min(14, Math.max(4, (sub.zh ?? "").replace(/\s/g, "").length));
+      return (
+        <button
+          type="button"
+          className="bs-bl-zh bs-bl-zh--hidden hanzi"
+          translate="no"
+          aria-label={tr(locale, "Дарж харах")}
+          onClick={(event) => {
+            event.stopPropagation();
+            revealSubtitle(sub.idx);
+          }}
+        >
+          <span className="bs-bl-zh-mask" aria-hidden>
+            {"●".repeat(len)}
+          </span>
+          <span className="bs-bl-zh-mask-hint">👁 {tr(locale, "Дарж харах")}</span>
+        </button>
+      );
+    }
     const words = sub.words?.length ? sub.words : [{ zh: sub.zh ?? "" }];
     return (
       <p className="bs-bl-zh hanzi" translate="no">
@@ -664,17 +1154,69 @@ export function BichlegFeedClient({
 
   const progressPct =
     duration > 0 ? Math.min(100, (currentTime / duration) * 100) : 0;
+  const activeWatchedSec = activeVideo
+    ? Math.max(
+        peakWatchedRef.current[activeVideo.id] ?? 0,
+        progressByVideoId[activeVideo.id]?.watched_sec ?? 0
+      )
+    : 0;
+  const savedCount = activeVideo ? (savedThisEpisode[activeVideo.id]?.length ?? 0) : 0;
+  const isFs = fsMode !== "none";
+  const hasSubs = activeSubtitles.length > 0;
 
   return (
     <AppShell activeTab="clips" showBottomNav={false} immersive>
-      <div className="bs-bichleg-shell">
-        <Link
-          href={backHref}
-          className="bs-bichleg-back"
-          aria-label={tr(locale, "Буцах")}
-        >
-          ←
-        </Link>
+      <div
+        className={`bs-bichleg-shell${isFs ? " bs-bichleg-shell--fs" : ""}`}
+        ref={shellRef}
+        data-hanzi={hanziSize}
+      >
+        {isFs ? (
+          <button
+            type="button"
+            className="bs-bichleg-back bs-bichleg-fs-exit"
+            aria-label={tr(locale, "Бүтэн дэлгэцээс гарах")}
+            onClick={exitFullscreen}
+          >
+            ✕
+          </button>
+        ) : (
+          <Link
+            href={backHref}
+            className="bs-bichleg-back"
+            aria-label={tr(locale, "Буцах")}
+          >
+            ←
+          </Link>
+        )}
+
+        {resumeChip ? (
+          <div className="bs-bichleg-resume" role="status">
+            <span className="bs-bichleg-resume-text">
+              ⏮ {formatSubtitleClock(resumeChip.fromSec)}
+              {tr(locale, "-өөс үргэлжилж байна")}
+            </span>
+            <button
+              type="button"
+              className="bs-bichleg-resume-btn"
+              onClick={() => {
+                setResumeChip(null);
+                seekToTime(0);
+                runOnPlayer((p) => p.playVideo());
+              }}
+            >
+              {tr(locale, "Эхнээс")}
+            </button>
+            <button
+              type="button"
+              className="bs-bichleg-resume-x"
+              aria-label={tr(locale, "Хаах")}
+              onClick={() => setResumeChip(null)}
+            >
+              ✕
+            </button>
+          </div>
+        ) : null}
 
         <div className="bs-bichleg-feed" ref={feedRef}>
           {videos.map((video, index) => {
@@ -721,16 +1263,86 @@ export function BichlegFeedClient({
                           seekRelative(BICHLEG_SKIP_SECONDS)
                         }
                         onSingleTapCenter={togglePlayPause}
+                        onScrubStart={handleScrubStart}
+                        onScrubMove={handleScrubMove}
+                        onScrubEnd={handleScrubEnd}
                       />
                       {skipOverlay ? (
                         <div className="bs-bichleg-skip-overlay">{skipOverlay}</div>
+                      ) : null}
+                      {scrubPreviewSec != null ? (
+                        <div className="bs-bichleg-skip-overlay bs-bichleg-skip-overlay--scrub">
+                          {formatSubtitleClock(scrubPreviewSec)}
+                        </div>
                       ) : null}
                       <BichlegPlayerTransport
                         isPlaying={isPlaying}
                         onRewind={() => seekRelative(-BICHLEG_SKIP_SECONDS)}
                         onTogglePlay={togglePlayPause}
                         onForward={() => seekRelative(BICHLEG_SKIP_SECONDS)}
+                        onPrevSentence={hasSubs ? goPrevSentence : undefined}
+                        onNextSentence={hasSubs ? goNextSentence : undefined}
                       />
+                      {loopIdx != null ? (
+                        <button
+                          type="button"
+                          className="bs-bichleg-state-badge bs-bichleg-state-badge--loop"
+                          onClick={toggleLoop}
+                        >
+                          🔁 {tr(locale, "Энэ өгүүлбэрийг давтаж байна")} · ✕
+                        </button>
+                      ) : pausedAtSentence ? (
+                        <button
+                          type="button"
+                          className="bs-bichleg-state-badge bs-bichleg-state-badge--pause"
+                          onClick={resumePlayback}
+                        >
+                          ⏸ {tr(locale, "Өгүүлбэр дууслаа — ▶ дараагийн")}
+                        </button>
+                      ) : null}
+                      {ended && !endCardDismissed ? (
+                        <div className="bs-bichleg-endcard" role="dialog">
+                          <button
+                            type="button"
+                            className="bs-bichleg-endcard-x"
+                            aria-label={tr(locale, "Хаах")}
+                            onClick={() => setEndCardDismissed(true)}
+                          >
+                            ✕
+                          </button>
+                          <p className="bs-bichleg-endcard-title">
+                            🏁 {tr(locale, "Анги дууслаа")}
+                          </p>
+                          {savedCount > 0 ? (
+                            <Link href="/review/words" className="bs-bichleg-endcard-cta">
+                              {tr(locale, "Энэ ангиас")} {savedCount} {tr(locale, "шинэ үг")} —{" "}
+                              {tr(locale, "картаар давтах")} →
+                            </Link>
+                          ) : keyWords.length > 0 ? (
+                            <button
+                              type="button"
+                              className="bs-bichleg-endcard-cta"
+                              onClick={() => {
+                                setEndCardDismissed(true);
+                                setShowKeys(true);
+                              }}
+                            >
+                              {keyWords.length} {tr(locale, "түлхүүр үг — харах")} →
+                            </button>
+                          ) : null}
+                          <button
+                            type="button"
+                            className="bs-bichleg-endcard-secondary"
+                            onClick={() => {
+                              setEndCardDismissed(true);
+                              seekToTime(0);
+                              runOnPlayer((p) => p.playVideo());
+                            }}
+                          >
+                            ↻ {tr(locale, "Дахин үзэх")}
+                          </button>
+                        </div>
+                      ) : null}
                     </>
                   ) : null}
                   <div
@@ -757,7 +1369,7 @@ export function BichlegFeedClient({
                         {activeSubtitle.speaker ? (
                           <p className="bs-bl-speaker" translate="no">{activeSubtitle.speaker}</p>
                         ) : null}
-                        {showPinyin && activeSubtitle.pinyin ? (
+                        {showPinyin && activeSubtitle.pinyin && !(listenMode && !revealedIdx.has(activeSubtitle.idx)) ? (
                           <p className="bs-bl-pinyin" translate="no">{activeSubtitle.pinyin}</p>
                         ) : null}
                         {activeSubtitle.zh ? renderZh(activeSubtitle) : null}
@@ -776,6 +1388,21 @@ export function BichlegFeedClient({
                         </button>
                       ) : null}
                     </div>
+                  </div>
+                ) : null}
+
+                {isActive ? (
+                  <div className="bs-bichleg-seekwrap">
+                    <BichlegSeekBar
+                      currentTime={currentTime}
+                      duration={duration}
+                      watchedSec={activeWatchedSec}
+                      subtitles={activeSubtitles}
+                      totalOffsetSec={totalSubtitleOffset}
+                      previewSec={scrubPreviewSec}
+                      onSeek={(sec) => seekToTime(sec)}
+                      keyStepSec={BICHLEG_SKIP_SECONDS}
+                    />
                   </div>
                 ) : null}
 
@@ -833,10 +1460,9 @@ export function BichlegFeedClient({
                       className="bs-bichleg-action"
                       aria-label={tr(locale, "Дахин эхлэх")}
                       onClick={() => {
-                        runOnPlayer((player) => {
-                          player.seekTo(0, true);
-                          player.playVideo();
-                        });
+                        setEndCardDismissed(true);
+                        seekToTime(0);
+                        runOnPlayer((player) => player.playVideo());
                       }}
                     >
                       <BichlegIcon name="refresh" className="bs-bichleg-action-icon" />
@@ -849,6 +1475,15 @@ export function BichlegFeedClient({
         </div>
 
         <div className="bs-bichleg-controls">
+          {muted ? (
+            <button
+              type="button"
+              className="bs-bichleg-ctrl-btn bs-bichleg-ctrl-btn--warn"
+              onClick={() => setMuted(false)}
+            >
+              {tr(locale, "Дууг асаах")}
+            </button>
+          ) : null}
           <button
             type="button"
             className={`bs-bichleg-ctrl-btn ${showPinyin ? "bs-bichleg-ctrl-btn--on" : ""}`}
@@ -870,11 +1505,73 @@ export function BichlegFeedClient({
           <button
             type="button"
             className={`bs-bichleg-ctrl-btn ${Math.abs(displaySpeed - 1) > 0.001 ? "bs-bichleg-ctrl-btn--speed" : ""}`}
-            onClick={() =>
-              setPreferredSpeed((current) => nextBichlegSpeed(current))
-            }
+            aria-label={tr(locale, "Хурд")}
+            onClick={cycleSpeed}
           >
             {formatPlaybackRateLabel(displaySpeed)}
+          </button>
+          <button
+            type="button"
+            className={`bs-bichleg-ctrl-btn ${loopIdx != null ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-pressed={loopIdx != null}
+            aria-label={tr(locale, "Давталт")}
+            title={tr(locale, "Давталт")}
+            disabled={!hasSubs}
+            onClick={toggleLoop}
+          >
+            🔁
+          </button>
+          <button
+            type="button"
+            className={`bs-bichleg-ctrl-btn ${autoPause ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-pressed={autoPause}
+            disabled={!hasSubs}
+            onClick={() => {
+              setAutoPause((v) => !v);
+              setPausedAtSentence(false);
+            }}
+          >
+            ⏸ {tr(locale, "Автомат зогсоох")}
+          </button>
+          <button
+            type="button"
+            className={`bs-bichleg-ctrl-btn ${listenMode ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-pressed={listenMode}
+            onClick={() => {
+              setListenMode((v) => !v);
+              setRevealedIdx(new Set());
+            }}
+          >
+            👂 {tr(locale, "Хадмалгүй")}
+          </button>
+          <button
+            type="button"
+            className="bs-bichleg-ctrl-btn bs-bichleg-ctrl-btn--size"
+            aria-label={tr(locale, "Ханзын хэмжээ")}
+            title={tr(locale, "Ханзын хэмжээ")}
+            onClick={cycleHanziSize}
+          >
+            {formatHanziSizeLabel(hanziSize)}
+          </button>
+          <button
+            type="button"
+            className="bs-bichleg-ctrl-btn"
+            disabled={!hasSubs}
+            onClick={() => {
+              pausePlayback();
+              setShowTranscript(true);
+            }}
+          >
+            ☰ {tr(locale, "Бүх өгүүлбэр")}
+          </button>
+          <button
+            type="button"
+            className={`bs-bichleg-ctrl-btn ${isFs ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-label={tr(locale, isFs ? "Бүтэн дэлгэцээс гарах" : "Бүтэн дэлгэц")}
+            aria-pressed={isFs}
+            onClick={() => (isFs ? exitFullscreen() : void enterFullscreen())}
+          >
+            ⛶
           </button>
           <button
             type="button"
@@ -883,25 +1580,35 @@ export function BichlegFeedClient({
             title={tr(locale, "Хадмалын цаг")}
             onClick={cycleUserSubtitleOffset}
           >
-            {formatUserSubtitleOffsetLabel(userSubtitleOffset)}
+            ⏱ {formatUserSubtitleOffsetLabel(userSubtitleOffset)}
           </button>
-          {muted ? (
-            <button
-              type="button"
-              className="bs-bichleg-ctrl-btn bs-bichleg-ctrl-btn--warn"
-              onClick={() => setMuted(false)}
-            >
-              {tr(locale, "Дууг асаах")}
-            </button>
-          ) : null}
         </div>
 
-        <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
-          <BottomNavChrome active="clips" />
-        </div>
+        {!isFs ? (
+          <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
+            <BottomNavChrome active="clips" />
+          </div>
+        ) : null}
 
         {pickedSlangNote ? (
           <BichlegSlangSheet note={pickedSlangNote} onClose={handleSlangClose} />
+        ) : null}
+
+        {showTranscript ? (
+          <BichlegTranscriptSheet
+            subtitles={activeSubtitles}
+            activeIdx={activeIdx}
+            onPick={(sub) => {
+              setShowTranscript(false);
+              revealSubtitle(sub.idx);
+              seekToSubtitle(sub);
+              runOnPlayer((p) => p.playVideo());
+            }}
+            onClose={() => {
+              setShowTranscript(false);
+              resumePlayback();
+            }}
+          />
         ) : null}
 
         {pronLine ? (
@@ -953,13 +1660,21 @@ export function BichlegFeedClient({
                 >
                   {tr(locale, "▶ Үргэлжлүүлэх")}
                 </button>
-                {statusLoading ? (
+                {saveState === "done" ? (
+                  <button
+                    type="button"
+                    className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--done bs-bichleg-sheet-btn--pop"
+                    disabled
+                  >
+                    {tr(locale, "Нэмэгдсэн ✓")}
+                  </button>
+                ) : saveState === "saving" ? (
                   <button
                     type="button"
                     className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary"
                     disabled
                   >
-                    {tr(locale, "Шалгаж байна…")}
+                    {tr(locale, "Нэмж байна…")}
                   </button>
                 ) : wordStatus?.inSrs ? (
                   <button
@@ -972,10 +1687,10 @@ export function BichlegFeedClient({
                 ) : (
                   <button
                     type="button"
-                    className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary"
+                    className={`bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary${statusLoading ? " bs-bichleg-sheet-btn--dim" : ""}`}
                     onClick={() => void handleSaveWord()}
                   >
-                    {tr(locale, "＋ Үгсэд нэмэх")}
+                    {tr(locale, "＋ Миний үгс")}
                   </button>
                 )}
               </div>
