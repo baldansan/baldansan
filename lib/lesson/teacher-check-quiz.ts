@@ -6,12 +6,16 @@ export function resolveTeacherCheckAnswer(check: HskTeacherCheckQuiz): string {
   if (!raw) return "";
 
   const asNum = Number(raw);
+  // Багцын тоон хариулт нь 0-ээс эхэлсэн индекс (Python `idx`, _tools/GUIDE.md;
+  // hsk3/fazhan бүх багц ийм). Урьд нь 1-ээс эхэлсэн гэж уншдаг байсан тул
+  // бүх choice асуултын зөв хариулт нэгээр зөрж байв (багшийн 2026-10-17 мэдээлэл).
+  // Зөвхөн options.length-тэй тэнцүү тоо л 1-ээс эхэлсэн гэж тайлбарлана.
   if (Number.isInteger(asNum) && check.options.length > 0) {
-    if (asNum >= 1 && asNum <= check.options.length) {
-      return check.options[asNum - 1];
-    }
     if (asNum >= 0 && asNum < check.options.length) {
       return check.options[asNum];
+    }
+    if (asNum === check.options.length) {
+      return check.options[asNum - 1];
     }
   }
 

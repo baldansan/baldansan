@@ -19,12 +19,13 @@ export function resolveGrammarExerciseAnswer(
 
   if (ex.type === "choice" && ex.options?.length) {
     const asNum = Number(raw);
+    // 0-ээс эхэлсэн индекс (багцын convention — lib/lesson/teacher-check-quiz.ts-ийн тайлбарыг үз).
     if (Number.isInteger(asNum)) {
-      if (asNum >= 1 && asNum <= ex.options.length) {
-        return ex.options[asNum - 1];
-      }
       if (asNum >= 0 && asNum < ex.options.length) {
         return ex.options[asNum];
+      }
+      if (asNum === ex.options.length) {
+        return ex.options[asNum - 1];
       }
     }
     const text = String(raw ?? "").trim();
