@@ -66,6 +66,19 @@ export function setHanziFont(font: HanziFontId): void {
   applyHanziFontToDocument(font);
 }
 
+/**
+ * Нэмэлт фонтууд (Noto Serif SC, Ma Shan Zheng) өгөгдмөл хуудсанд ачаалагддаггүй.
+ * components/theme/hanzi-font-loader.tsx энэ event-ийг сонсож, тэдгээрийг
+ * (next/font-ийн @font-face CSS-тэй нь) тусдаа chunk-аар татна.
+ * Тохиргооны хуудас урьдчилан харуулахдаа дуудна.
+ */
+export const HANZI_FONT_LOAD_EVENT = "bs:hanzi-font-load";
+
+export function requestOptionalHanziFonts(): void {
+  if (typeof window === "undefined") return;
+  window.dispatchEvent(new Event(HANZI_FONT_LOAD_EVENT));
+}
+
 export function applyHanziFontToDocument(font: HanziFontId): void {
   if (typeof document === "undefined") return;
   if (font === DEFAULT_HANZI_FONT) {

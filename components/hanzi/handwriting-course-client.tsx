@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
-import { CharacterWriter } from "@/components/hanzi/CharacterWriter";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
@@ -14,6 +14,12 @@ import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import "@/components/lesson/lesson-player.css";
+
+/** hanzi-writer самбар — ханз сонгосон үед л татна (эхний ачаалалд оруулахгүй). */
+const CharacterWriter = dynamic(
+  () => import("@/components/hanzi/CharacterWriter").then((m) => m.CharacterWriter),
+  { ssr: false, loading: () => <p className="bs-srs-stroke-loading">Ачааллаж байна…</p> }
+);
 
 const PROGRESS_KEY = "buunduu-handwriting-progress-v1";
 const LEVEL_ORDER = ["1-2", "3", "4", "5", "6", "7-9"] as const;

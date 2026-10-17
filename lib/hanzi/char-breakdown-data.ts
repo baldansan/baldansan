@@ -1,7 +1,9 @@
 import charBreakdownData from "@/data/char_breakdown.json";
 import componentMeaningsData from "@/data/component_meanings.json";
-import partNamesMn from "@/public/data/component_meanings_mn.json";
-import charGloss from "@/public/data/hsk_char_gloss.json";
+import {
+  ensureComponentNamesLoaded,
+  fallbackComponentNameMn,
+} from "@/lib/hanzi/component-names-lazy";
 import { resolveComponentIcon } from "@/lib/hanzi/component-icon-map";
 import type { DecompositionComponent } from "@/lib/hanzi/character-decomposition";
 import type {
@@ -85,9 +87,9 @@ export function getComponentMeaning(glyph: string): ComponentMeaning | null {
   const row = COMPONENT_MEANINGS[key];
   if (!row) {
     // Нөөц: makemeahanzi-ийн бүрдэл хэсгийн нэр (1020), дараа нь ханзны морфемийн утга (3088).
-    const part = (partNamesMn as Record<string, { mn?: string }>)[key];
-    const gloss = (charGloss as Record<string, { mn?: string }>)[key];
-    const mn = part?.mn?.trim() || gloss?.mn?.trim() || "";
+    // Толиуд lazy (component-names-lazy) — async замууд ensureComponentNamesLoaded()-г
+    // урьдаар дуудна; sync хэрэглэгчид component-names-register-ийг импортолно.
+    const mn = fallbackComponentNameMn(key);
     if (!mn) return null;
     return { mn, en: "", icon: resolveComponentIcon(key) };
   }
@@ -358,12 +360,12 @@ export async function loadFullCharBreakdownView(
 ): Promise<CharBreakdownView | null> {
   const glyph = char.trim();
   if (!glyph || !HANZI_RE.test(glyph)) return null;
-  const {
-    ensureCharBreakdownFullLoaded,
-    getFullBreakdownEntry,
-    getFullComponentMn,
-    getFullComponentZh,
-  } = await import("@/lib/hanzi/char-breakdown-full");
+  const [
+    { ensureCharBreakdownFullLoaded, getFullBreakdownEntry, getFullComponentMn, getFullComponentZh },
+  ] = await Promise.all([
+    import("@/lib/hanzi/char-breakdown-full"),
+    ensureComponentNamesLoaded(),
+  ]);
   const loaded = await ensureCharBreakdownFullLoaded();
   if (!loaded) return null;
   const entry = getFullBreakdownEntry(glyph);
@@ -387,12 +389,12 @@ export async function resolveWordBreakdownViewsAsync(
   const zh = text.trim();
   if (!zh) return [];
 
-  const {
-    ensureCharBreakdownFullLoaded,
-    getFullBreakdownEntry,
-    getFullComponentMn,
-    getFullComponentZh,
-  } = await import("@/lib/hanzi/char-breakdown-full");
+  const [
+    { ensureCharBreakdownFullLoaded, getFullBreakdownEntry, getFullComponentMn, getFullComponentZh },
+  ] = await Promise.all([
+    import("@/lib/hanzi/char-breakdown-full"),
+    ensureComponentNamesLoaded(),
+  ]);
 
   const loaded = await ensureCharBreakdownFullLoaded();
   if (!loaded) return [];

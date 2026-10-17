@@ -89,7 +89,7 @@ export function LessonPathWarmupStage({
       {hero ? (
         <figure className="bs-tm-hero">
           {/* eslint-disable-next-line @next/next/no-img-element -- Supabase public URL, хэмжээ урьдчилж мэдэгдэхгүй */}
-          <img src={hero.url} alt={hero.title} loading="lazy" />
+          <img src={hero.url} alt={hero.title} loading="lazy" decoding="async" />
           <figcaption translate="no">{hero.title}</figcaption>
         </figure>
       ) : null}
@@ -136,7 +136,7 @@ export function LessonPathWarmupStage({
             {illustrations.map((img) => (
               <figure key={img.id} className="bs-tm-illus-item">
                 {/* eslint-disable-next-line @next/next/no-img-element -- Supabase public URL */}
-                <img src={img.url} alt={img.title} loading="lazy" />
+                <img src={img.url} alt={img.title} loading="lazy" decoding="async" />
                 <figcaption translate="no">{img.title}</figcaption>
               </figure>
             ))}

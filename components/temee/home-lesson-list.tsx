@@ -72,7 +72,7 @@ export function HomeLessonList({
                 {coverUrl ? (
                   <span className="bs-tm-lesson-thumb" aria-hidden>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={coverUrl} alt="" loading="lazy" />
+                    <img src={coverUrl} alt="" loading="lazy" decoding="async" />
                   </span>
                 ) : null}
                 <span className="bs-tm-lesson-body" translate="no">

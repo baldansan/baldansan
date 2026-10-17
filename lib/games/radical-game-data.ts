@@ -1,4 +1,6 @@
 import radicalGameData from "@/data/radical_game_data.json";
+// Sync нэрийн нөөц толь — бүрдлийн нэрийг шууд (await-гүй) авахад хэрэгтэй.
+import "@/lib/hanzi/component-names-register";
 import {
   buildDecompositionParts,
   componentDisplayIcon,

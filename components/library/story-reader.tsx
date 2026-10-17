@@ -322,7 +322,7 @@ function PageView({
       {page.image ? (
         <div className="w-full bg-slate-100">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={page.image} alt="" className="h-auto w-full object-contain" />
+          <img src={page.image} alt="" decoding="async" className="h-auto w-full object-contain" />
         </div>
       ) : null}
       <div className="p-4">

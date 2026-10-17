@@ -306,7 +306,7 @@ export default function VocabularyCard({
         {wordImage ? (
           <figure className="bs-vimg">
             {/* eslint-disable-next-line @next/next/no-img-element -- Supabase public URL */}
-            <img src={wordImage.url} alt={wordImage.title} loading="lazy" />
+            <img src={wordImage.url} alt={wordImage.title} loading="lazy" decoding="async" />
             <figcaption translate="no">{wordImage.title}</figcaption>
           </figure>
         ) : null}

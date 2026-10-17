@@ -43,6 +43,8 @@ export function KoreanTeachingVisuals({
               <img
                 src={image.url}
                 alt={image.title}
+                loading="lazy"
+                decoding="async"
                 className="w-full object-contain"
               />
               <figcaption className="border-t border-slate-100 px-4 py-3">

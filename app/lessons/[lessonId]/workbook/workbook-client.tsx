@@ -99,6 +99,8 @@ export function LessonWorkbookClient({ lesson, sections, adminPreview = false }:
                   <img
                     src={section.pageImageUrl}
                     alt={`Workbook ${section.sectionLabel}`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full object-contain"
                   />
                 </div>

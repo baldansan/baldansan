@@ -9,12 +9,14 @@ import { FloatingLocaleToggle } from "@/components/i18n/locale-toggle";
 import { UiTranslator } from "@/components/i18n/ui-translator";
 import { PendingClassJoin } from "@/components/classroom/pending-class-join";
 import { ThemeController } from "@/components/theme/theme-controller";
+import { HanziFontLoader } from "@/components/theme/hanzi-font-loader";
 import { CelebrationLayer } from "@/components/celebrate/celebration-layer";
 
 export function AppProviders({ children }: { children: ReactNode }) {
   return (
     <ActiveHskLevelProvider>
       <ThemeController />
+      <HanziFontLoader />
       <GlobalAudioProvider>
         {children}
         <MiniAudioPlayer />
