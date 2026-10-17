@@ -1,5 +1,5 @@
 import { CourseDetailAppView } from "@/components/mobile/course-detail-app-view";
-import { getCourseContentById, getPublicLessonsByCourseId } from "@/lib/content";
+import { getCourseContentById, getPublicLessonSummariesByCourseId } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
 
@@ -11,7 +11,7 @@ export const metadata = {
 export default async function Hsk5CoursePage() {
   const [course, lessons] = await Promise.all([
     getCourseContentById("hsk5"),
-    getPublicLessonsByCourseId("hsk5"),
+    getPublicLessonSummariesByCourseId("hsk5"),
   ]);
 
   return (

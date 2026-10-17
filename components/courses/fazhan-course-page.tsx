@@ -1,5 +1,5 @@
 import { CourseDetailAppView } from "@/components/mobile/course-detail-app-view";
-import { getCourseContentById, getPublicLessonsByCourseId } from "@/lib/content";
+import { getCourseContentById, getPublicLessonSummariesByCourseId } from "@/lib/content";
 import { courseSeriesMeta } from "@/lib/lesson/course-series-label";
 
 /**
@@ -11,7 +11,7 @@ export async function FazhanCoursePage({ courseId }: { courseId: string }) {
   const meta = courseSeriesMeta(courseId);
   const [course, lessons] = await Promise.all([
     getCourseContentById(courseId),
-    getPublicLessonsByCourseId(courseId),
+    getPublicLessonSummariesByCourseId(courseId),
   ]);
 
   return (

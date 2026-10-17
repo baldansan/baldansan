@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { CourseDetailAppView } from "@/components/mobile/course-detail-app-view";
-import { getCourseContentById, getPublicLessonsByCourseId } from "@/lib/content";
+import { getCourseContentById, getPublicLessonSummariesByCourseId } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
 
@@ -12,7 +12,7 @@ export const metadata = {
 export default async function KoreanSurvivalCoursePage() {
   const [course, lessons] = await Promise.all([
     getCourseContentById("korean-survival"),
-    getPublicLessonsByCourseId("korean-survival"),
+    getPublicLessonSummariesByCourseId("korean-survival"),
   ]);
 
   if (!course && lessons.length === 0) {

@@ -7,6 +7,7 @@ import {
   getActivityDiff,
   type ActivityDiffResult,
 } from "@/lib/admin/admin-activity-diff";
+import { notifyCatalogChangedFromBrowser } from "@/lib/cache/catalog-cache-client";
 import { getCurrentUser } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -161,6 +162,12 @@ async function insertActivityLogRow(
 export async function logAdminActivity(
   input: AdminActivityInput
 ): Promise<void> {
+  // Хичээлтэй холбоотой бичлэг бүр энд ирдэг тул нийтийн каталог/хичээлийн Data Cache-ийг
+  // энд хуучруулна (browser-д л; server route-ууд revalidateCatalog/revalidateLesson өөрсдөө дуудна).
+  if (input.lessonId || input.entityType === "lesson") {
+    notifyCatalogChangedFromBrowser(input.lessonId ?? input.entityId ?? null);
+  }
+
   try {
     if (!supabase || !hasSupabaseConfig) return;
 

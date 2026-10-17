@@ -4,8 +4,9 @@ import { LessonPageError } from "@/components/lesson/lesson-page-error";
 import {
   findNextLessonId,
   getLessonsByCourseId,
-  getPublicLessonsByCourseId,
+  getPublicLessonSummariesByCourseId,
 } from "@/lib/content";
+import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
 import { buildLessonLoadDebugInfo } from "@/lib/lesson/lesson-load-diagnostics";
 import { resolveLessonPageAccess, resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
 import { loadLessonQuizQuestionsForPage } from "@/lib/lesson/quiz-page-loader";
@@ -58,9 +59,10 @@ export default async function LessonQuizPage({
   const { lesson, adminPreview } = access;
   const { questions: quizQuestions, fromDatabase } =
     await loadLessonQuizQuestionsForPage(lessonId, lesson);
+  // Зөвхөн "дараагийн хичээл" id хэрэгтэй — кэштэй хураангуй жагсаалт (watch/training-тэй ижил).
   const courseLessons = adminPreview
-    ? await getLessonsByCourseId(lesson.courseId)
-    : await getPublicLessonsByCourseId(lesson.courseId);
+    ? (await getLessonsByCourseId(lesson.courseId)).map(toLessonListSummary)
+    : await getPublicLessonSummariesByCourseId(lesson.courseId);
   const nextLessonId = findNextLessonId(lessonId, courseLessons);
 
   return (

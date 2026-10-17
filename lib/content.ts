@@ -1,6 +1,10 @@
-import { canonicalLessonId, normalizeLessonRouteId } from "@/lib/lesson-id";
+import { normalizeLessonRouteId } from "@/lib/lesson-id";
 import { unstable_cache } from "next/cache";
-import { CATALOG_REVALIDATE_SECONDS, CATALOG_TAG } from "@/lib/cache/catalog-cache";
+import {
+  CATALOG_REVALIDATE_SECONDS,
+  CATALOG_TAG,
+  lessonCacheTag,
+} from "@/lib/cache/catalog-cache";
 import { courses } from "@/data/courses";
 import {
   getSupabaseCourseById,
@@ -161,15 +165,100 @@ export async function getLessonById(
   return enrichLessonContentMeta({ ...lesson, vocabulary });
 }
 
-/** Public lesson fetch; undefined if draft or archived. */
+/**
+ * Кэшлэгдэх функц дотроос throw хийх "мэдэгдэж буй" шалтгаанууд. unstable_cache throw-ыг
+ * кэшлэдэггүй тул draft/archived/олдохгүй/түр алдаа 120с-ийн турш хадгалагдахгүй.
+ */
+class LessonNotPublicError extends Error {
+  constructor(lessonId: string) {
+    super(`Lesson not public: ${lessonId}`);
+    this.name = "LessonNotPublicError";
+  }
+}
+
+/**
+ * Мөр олдсон ч хүүхэд мөрүүд (үг/асуулт) metadata тооноос дутуу ирсэн — түр алдаа байж
+ * болзошгүй тул кэшлэхгүй; татсан агуулгыг нь алдаатай хамт буцааж, тухайн render-д л ашиглана.
+ */
+class LessonIncompleteError extends Error {
+  constructor(
+    lessonId: string,
+    readonly lesson: LessonContent
+  ) {
+    super(`Lesson children incomplete: ${lessonId}`);
+    this.name = "LessonIncompleteError";
+  }
+}
+
+async function fetchPublicLessonForCache(
+  normalizedId: string
+): Promise<LessonContent> {
+  // getSupabaseLessonById: Supabase алдаа → throw (кэшлэгдэхгүй); олдохгүй → undefined.
+  const lesson = await getSupabaseLessonById(normalizedId);
+  if (!lesson || !isPublicLesson(lesson)) {
+    throw new LessonNotPublicError(normalizedId);
+  }
+
+  // fetchChildRowsForLesson алдааг дотроо [] болгодог тул metadata тоо > 0 байхад
+  // хоосон ирвэл түр алдаа гэж үзэж кэшлэхгүй.
+  const { enrichVocabularyWithDbIds } = await import("@/lib/supabase/content");
+  const vocabulary = await enrichVocabularyWithDbIds(lesson.id, lesson.vocabulary);
+  const enriched = enrichLessonContentMeta({ ...lesson, vocabulary });
+
+  if (
+    (lesson.vocabularyCount > 0 && lesson.vocabulary.length === 0) ||
+    (lesson.quizCount > 0 && lesson.quizQuestions.length === 0)
+  ) {
+    throw new LessonIncompleteError(normalizedId, enriched);
+  }
+
+  return enriched;
+}
+
+/**
+ * Public lesson fetch; undefined if draft or archived.
+ *
+ * Нийтийн (status=available) хичээлийн бүтэн агуулга → Data Cache 120с
+ * (tags: catalog:lessons, lesson:<id>). Өмнө нь зочин бүрт 4 Supabase query
+ * (мөр + 3 хүүхэд хүснэгт) кэшгүй явдаг байсан. Admin/preview зам `getLessonById`
+ * (кэшгүй) хэвээр. Draft/олдохгүй/алдаа → тухайн render-д л undefined (кэшлэгдэхгүй).
+ */
 export async function getPublicLessonById(
   lessonId: string
 ): Promise<LessonContent | undefined> {
-  const lesson = await getLessonById(lessonId);
-  if (!lesson || !isPublicLesson(lesson)) {
+  const normalizedId = normalizeLessonRouteId(lessonId);
+  if (!hasSupabaseConfig) {
+    lastContentSource = "local";
     return undefined;
   }
-  return lesson;
+
+  // Tag нь id-аас хамаарах тул unstable_cache-ийг дуудлага бүрт үүсгэнэ (Next docs-ийн жишээтэй ижил).
+  const cached = unstable_cache(fetchPublicLessonForCache, ["public-lesson"], {
+    revalidate: CATALOG_REVALIDATE_SECONDS,
+    tags: [CATALOG_TAG.lessons, lessonCacheTag(normalizedId)],
+  });
+
+  try {
+    const lesson = await cached(normalizedId);
+    lastContentSource = "supabase";
+    return lesson;
+  } catch (error) {
+    const name = error instanceof Error ? error.name : "";
+    if (error instanceof LessonNotPublicError || name === "LessonNotPublicError") {
+      return undefined;
+    }
+    if (error instanceof LessonIncompleteError) {
+      lastContentSource = "supabase";
+      return error.lesson;
+    }
+    if (name === "LessonIncompleteError") {
+      // Алдааны объект дамжиж ирээгүй — хуучин кэшгүй зам.
+      const lesson = await getLessonById(normalizedId);
+      return lesson && isPublicLesson(lesson) ? lesson : undefined;
+    }
+    warnSupabaseFetchFailure(`getPublicLessonById(${normalizedId})`, error);
+    return undefined;
+  }
 }
 
 /** Public course list: only lessons with publish status `available`. */

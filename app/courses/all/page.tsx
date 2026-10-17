@@ -2,7 +2,7 @@ import { CoursesListAppView } from "@/components/mobile/courses-list-app-view";
 import { isKoreanCourse } from "@/lib/course-display";
 import { courses } from "@/data/courses";
 import { getHelzuiCourse } from "@/lib/helzui/load-course";
-import { getCourseContentById, getPublicLessonsByCourseId } from "@/lib/content";
+import { getCourseContentById, getPublicLessonSummariesByCourseId } from "@/lib/content";
 import type { Course } from "@/types/course";
 
 export const dynamic = "force-dynamic";
@@ -19,7 +19,7 @@ export const metadata = {
  */
 async function loadCourseSource(courseId: string) {
   const [lessons, course] = await Promise.all([
-    getPublicLessonsByCourseId(courseId),
+    getPublicLessonSummariesByCourseId(courseId),
     getCourseContentById(courseId),
   ]);
   return { courseId, lessons, course };

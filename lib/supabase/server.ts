@@ -1,6 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { cookies } from "next/headers";
+import { fetchWithTimeout } from "@/lib/supabase/fetch-with-timeout";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -16,6 +17,8 @@ export async function createServerSupabaseClient(): Promise<SupabaseClient | nul
   const cookieStore = await cookies();
 
   return createServerClient(supabaseUrl!, supabaseAnonKey!, {
+    // Гацсан query 8с-д алдаа буцаана (fetch-with-timeout.ts).
+    global: { fetch: fetchWithTimeout },
     cookies: {
       getAll() {
         return cookieStore.getAll();
@@ -41,5 +44,6 @@ export function createAnonServerSupabaseClient(): SupabaseClient | null {
   if (!hasServerSupabaseConfig) return null;
   return createClient(supabaseUrl!, supabaseAnonKey!, {
     auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
+    global: { fetch: fetchWithTimeout },
   });
 }

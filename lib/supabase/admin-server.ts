@@ -1,5 +1,7 @@
 import "server-only";
 
+import { cookies } from "next/headers";
+import { cache } from "react";
 import { isAdminRole } from "@/lib/supabase/admin";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 /** Dev-only diagnostics — never log user ids/roles in production. */
@@ -22,8 +24,36 @@ async function resolveServerUserId(
   return data.user.id;
 }
 
-/** Server Components: reads session from request cookies. */
-export async function isCurrentUserAdminServer(): Promise<boolean> {
+/**
+ * @supabase/ssr нь session-ийг `sb-<project-ref>-auth-token[.N]` cookie-д хадгалдаг.
+ * Ийм cookie огт байхгүй бол зочин (anonymous) — auth.getUser() сүлжээний дуудлага хийх хэрэггүй.
+ */
+async function hasSupabaseAuthCookie(): Promise<boolean> {
+  try {
+    const cookieStore = await cookies();
+    return cookieStore.getAll().some((cookie) => cookie.name.startsWith("sb-"));
+  } catch {
+    // cookies() боломжгүй контекст — хуучин зам (сүлжээгээр шалгана).
+    return true;
+  }
+}
+
+/**
+ * Server Components: reads session from request cookies.
+ *
+ * React `cache()` — нэг request дотор олон удаа дуудагдвал (page + loader + layout)
+ * Supabase auth/RPC руу нэг л удаа явна. Зочинд (sb- cookie-гүй) сүлжээний дуудлагагүйгээр false.
+ */
+export const isCurrentUserAdminServer = cache(
+  async function isCurrentUserAdminServer(): Promise<boolean> {
+    if (!(await hasSupabaseAuthCookie())) {
+      return false;
+    }
+    return isCurrentUserAdminServerUncached();
+  }
+);
+
+async function isCurrentUserAdminServerUncached(): Promise<boolean> {
   const client = await createServerSupabaseClient();
   if (!client) {
     return false;
