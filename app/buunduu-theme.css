@@ -1288,3 +1288,11 @@ body{
 .bs-word-writer-toggle[aria-expanded="true"]{background:var(--bs-green-50);border-color:var(--bs-green)}
 .bs-word-writer .bs-char-writer{margin-top:0}
 .bs-word-writer .bs-mizige{max-width:220px;margin:0 auto}
+
+/* Алдаа мэдээлэх — дэлгэцийн зургийн урьдчилсан харагдац */
+.bs-fb-shot{margin:0 0 10px;border:1px solid var(--bs-line);border-radius:12px;overflow:hidden;background:#f6f8f7}
+.bs-fb-shot-img{display:block;width:100%;max-height:160px;object-fit:cover;object-position:top}
+.bs-fb-shot-row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 10px;font-size:12px;color:var(--bs-muted)}
+.bs-fb-shot-remove{border:0;background:transparent;color:var(--bs-muted);font-size:12px;font-weight:600;text-decoration:underline;cursor:pointer}
+.bs-fb-shot-note{margin:0 0 10px;font-size:12px;color:var(--bs-muted)}
+.bs-fb-report-fab:disabled{opacity:.7}

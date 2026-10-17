@@ -80,6 +80,13 @@ export const ADMIN_NAV_INSIGHTS: AdminNavItem[] = [
     match: (p) => p.startsWith("/admin/analytics"),
   },
   {
+    href: "/admin/feedback",
+    label: "Алдааны мэдээлэл",
+    icon: "🐞",
+    hint: "Хэрэглэгч/багшийн илгээсэн алдаа — дэлгэцийн зурагтай.",
+    match: (p) => p.startsWith("/admin/feedback"),
+  },
+  {
     href: "/admin/learners",
     label: "Суралцагчдын үнэлгээ",
     icon: "🎓",
