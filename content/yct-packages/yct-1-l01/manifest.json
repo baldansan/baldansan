@@ -18,7 +18,8 @@
  "hasAudio": true,
  "hasImages": true,
  "audio": {
-  "text": "audio/yct-1-01-text.mp3",
+  "text": "audio/yct-1-01-text-song.mp3",
+  "dialogues": "audio/yct-1-01-text.mp3",
   "words": "audio/yct-1-01-words.mp3",
   "song": "audio/yct-1-01-song.mp3",
   "test": "audio/yct-1-01-test.mp3",

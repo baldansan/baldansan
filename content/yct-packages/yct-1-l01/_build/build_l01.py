@@ -61,9 +61,22 @@ song_lines = [
  ("我很好，再见。我很好，再见。","Wǒ hěn hǎo, zàijiàn. Wǒ hěn hǎo, zàijiàn.","Би сайн байна, баяртай. Би сайн байна, баяртай.","我|wǒ 很|hěn 好|hǎo ，| 再见|zàijiàn 。| 我|wǒ 很|hěn 好|hǎo ，| 再见|zàijiàn 。|"),
  ("再见，再见。","Zàijiàn, zàijiàn.","Баяртай, баяртай.","再见|zàijiàn ，| 再见|zàijiàn 。|"),
 ]
+AUD_MAIN="audio/yct-1-01-text-song.mp3"
 sentences=[]
+dlg_lines=[
+ (1,"A：你好！","A: Nǐ hǎo!","А: Сайн уу!","A：| 你|nǐ 好|hǎo ！|","你好 — анхны мэндчилгээ. Хоёр сурагч сургуулийн хашаанд уулзаж байна.",["你好"]),
+ (1,"B：你好！","B: Nǐ hǎo!","Б: Сайн уу!","B：| 你|nǐ 好|hǎo ！|",None,[]),
+ (2,"学生：老师好！","Xuésheng: Lǎoshī hǎo!","Сурагч: Багш аа, сайн байна уу!","学生：| 老师|lǎoshī 好|hǎo ！|","老师好 — багштайгаа мэндлэхдээ 你-гийн оронд 老师 гэж тавина.",["你好"]),
+ (2,"老师：你好！","Lǎoshī: Nǐ hǎo!","Багш: Сайн уу!","老师：| 你|nǐ 好|hǎo ！|",None,[]),
+ (3,"A：再见！","A: Zàijiàn!","А: Баяртай!","A：| 再见|zàijiàn ！|","再见 — салахдаа хэлнэ. Хичээл тарлаа.",["再见"]),
+ (3,"B：再见！","B: Zàijiàn!","Б: Баяртай!","B：| 再见|zàijiàn ！|",None,[]),
+]
+for para,zh,py,mn,tk,note,ks in dlg_lines:
+    s={"zh":zh,"pinyin":py,"mn":mn,"paragraph":para,"tokens":tok(tk)}
+    if note: s["note"]=note; s["key_structures"]=ks
+    sentences.append(s)
 for i,(zh,py,mn,tk) in enumerate(song_lines):
-    s={"zh":zh,"pinyin":py,"mn":mn,"paragraph":1,"tokens":tok(tk)}
+    s={"zh":zh,"pinyin":py,"mn":mn,"paragraph":4,"tokens":tok(tk)}
     if i==1: s["note"]="你好吗？ — «Сайн байна уу?» гэж асууж байна. 吗 нь өгүүлбэрийн төгсгөлд орж асуулт болгодог. Энэ үг дараагийн хичээлүүдэд дахин гарна, одоохондоо дуугаар нь л цээжилье."; s["key_structures"]=["你好"]
     if i==2: s["note"]="我很好 — «Би сайн байна». 很 = «маш, их», харин «我很好» гэдэг нь зүгээр л «би сайн» гэсэн утгатай."; s["key_structures"]=["再见"]
     sentences.append(s)
@@ -78,12 +91,12 @@ texts = {
  "vocabularyAudio":{},
  "dialogues":dialogues,
  "mainText":{
-  "id":"1","title":"你好（儿歌）","mongolianTitle":"«Сайн уу» дуу","title_mn":"Let's sing · 你好 (дуу)","audioFile":AUD_SONG,
-  "charCount":str(sum(len(z) for z,_,_,_ in song_lines)),
+  "id":"1","title":"你好！","mongolianTitle":"Сайн уу! — яриа ба дуу","title_mn":"Let's read · 3 яриа + Let's sing · 你好 (дуу)","audioFile":AUD_MAIN,
+  "charCount":str(sum(len(x["zh"]) for x in sentences)),
   "source":"YCT 标准教程 1 · 第1课 Let's sing（CD 01-03）","author_zh":"",
-  "intro_zh":"这是第一课的儿歌，一起唱“你好”“再见”。","intro_mn":"Энэ бол 1-р хичээлийн дуу. «Сайн уу», «баяртай» гэж хамтдаа дуулцгаая. Эхлээд аудиог сонс, дараа нь хамт дуул, гараараа даллаж бүжиглэ!",
+  "intro_zh":"三段小对话：你好！老师好！再见！然后一起唱儿歌“你好”。","intro_mn":"Эхлээд гурван богино яриа: сургуулийн хашаанд «你好!», ангид багштайгаа «老师好!», хичээл тараад «再见!». Дараа нь 1-р хичээлийн дуу. «Сайн уу», «баяртай» гэж хамтдаа дуулцгаая. Эхлээд аудиог сонс, дараа нь хамт дуул, гараараа даллаж бүжиглэ!",
   "sentences":sentences,
-  "paragraph_summaries":[{"paragraph":1,"mn":"Дуунд «你好» (сайн уу), «你好吗» (сайн байна уу), «我很好» (би сайн байна), «再见» (баяртай) гэсэн дөрвөн хэллэг давтагдана. Хоёр хүүхэд уулзаж мэндлээд, салахдаа баяртай гэж хэлж байгаа мэт дуул."}],
+  "paragraph_summaries":[{"paragraph":1,"mn":"Яриа 1 — Сургуулийн хашаанд хоёр сурагч уулзаад «你好!» гэж мэндэлнэ."},{"paragraph":2,"mn":"Яриа 2 — Сурагч ангид орж ирээд «老师好!» гэнэ, багш «你好!» гэж хариулна."},{"paragraph":3,"mn":"Яриа 3 — Хичээл тараад хоёр сурагч «再见!» гэж салах ёс хийнэ."},{"paragraph":4,"mn":"Дуу «你好». Дуунд «你好» (сайн уу), «你好吗» (сайн байна уу), «我很好» (би сайн байна), «再见» (баяртай) гэсэн дөрвөн хэллэг давтагдана. Хоёр хүүхэд уулзаж мэндлээд, салахдаа баяртай гэж хэлж байгаа мэт дуул."}],
   "reflection":{"questions_mn":["Өглөө сургуульд ороод багштайгаа хятадаар яаж мэндлэх вэ?","Найзтайгаа салахдаа хятадаар юу гэж хэлэх вэ?","Хятадаар нэгээс арав хүртэл тоолж үзээрэй. Аль тоог хэлэхэд хамгийн хэцүү байна?"]},
   "writingSample":{"title_mn":"Ярих дасгал · Өөрийгөө танилцуулж мэндэл","zh":"老师好！你好！再见！","pinyin":"Lǎoshī hǎo! Nǐ hǎo! Zàijiàn!","mn":"Багш аа, сайн байна уу! Сайн уу! Баяртай!"},
   "writingPrompt_mn":"Гурван хүнтэй мэндэл: багштайгаа (老师好), найзтайгаа (你好), дараа нь салах ёс хий (再见). Гараараа даллаж, чанга хэл!"},
@@ -247,7 +260,7 @@ lesson = {
  "title":"YCT 1 · 1-р хичээл — Сайн уу!","chineseTitle":"你好！","targetTitle":"你好！","mongolianTitle":"Сайн уу!",
  "subtitle":"你好 · 老师好 · 再见 · тоо 一～十 · «你好» дуу · гарын тоглоом",
  "description":"Мэндлэх (你好, 老师好), баяртай гэж хэлэх (再见), 1–10 хүртэл тоолох. 14 үг, 3 зурагт яриа, 1 дуу, 3 түлхүүр өгүүлбэр, 22 шалгалтын асуулт, номын тест (сонсох 3 + унших 3) — АЛБАН АУДИО, ЗУРАГТАЙ.",
- "duration":"2 × 35 мин","status":"draft","orderIndex":1,"icon":"👋","thumbnailFile":"images/d1-nihao.png","audioFile":AUD_TEXT,
+ "duration":"2 × 35 мин","status":"draft","orderIndex":1,"icon":"👋","thumbnailFile":"images/d1-nihao.png","audioFile":AUD_MAIN,
  "level":"YCT 1",
  "hook":texts["lessonIntro"] | {},
  "sourceNote":"YCT 标准教程 1 — 第1课《你好！》 [hskLevel=1] [lessonNumber=1]; эх: YCT1标准教程.pdf х.1–4, х.61 (сонсголын текст), х.63 (хариу); аудио CD 01-01…01-04"
@@ -263,7 +276,7 @@ manifest = {
  "series":"YCT 标准教程 1","seriesLabel_mn":"YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
  "source":"YCT 标准教程 1 · 第1课 (сурах бичиг + CD аудио 01-01..04 + Test Answers)",
  "hasAudio":True,"hasImages":True,
- "audio":{"text":AUD_TEXT,"words":AUD_WORDS,"song":AUD_SONG,"test":AUD_TEST,"vocabularyClips":"байхгүй (ASR ажиллаагүй) — үг TTS-ээр"},
+ "audio":{"text":AUD_MAIN,"dialogues":AUD_TEXT,"words":AUD_WORDS,"song":AUD_SONG,"test":AUD_TEST,"vocabularyClips":"байхгүй (ASR ажиллаагүй) — үг TTS-ээр"},
  "media":{"lessonId":LID,"images":images},
  "verification":{"answerStatus":"official_answer_key_verified (Test Answers х.63)","textStatus":"source_verified (сурах бичгийн хуудсыг зургаар уншсан)","teacherLayer":"агентаар бичигдсэн (хүүхдэд зориулсан)"}
 }
