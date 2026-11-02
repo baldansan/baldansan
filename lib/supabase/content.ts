@@ -63,6 +63,15 @@ function isMissingColumnSelectError(message: string): boolean {
   );
 }
 
+/** "column lessons.image_url does not exist" / "Could not find the 'language' column" → багана нэр. */
+function missingColumnFromError(message: string): string | null {
+  const m1 = message.match(/column\s+(?:[a-z_]+\.)?([a-z_]+)\s+does not exist/i);
+  if (m1) return m1[1];
+  const m2 = message.match(/could not find the '([a-z_]+)' column/i);
+  if (m2) return m2[1];
+  return null;
+}
+
 async function selectLessonRowById(
   client: SupabaseClient,
   candidate: string | number,
@@ -497,9 +506,22 @@ async function fetchSupabaseLessonsByCourse(
     return query.order("order_index", { ascending: true });
   };
 
-  // 1) source_note-гүй хөнгөн select → 2) 064 migration байхгүй бол хуучин select
-  // → 3) workflow/language баганууд ч байхгүй бол core select.
-  let { data, error } = await run(LESSON_ROW_SELECT_LIST);
+  // 1) source_note-гүй хөнгөн select. Prod DB-д дутуу багана (ж: image_url, language —
+  // migration 019/021 ажиллаагүй) байвал алдааны мессежээс баганыг нь олж select-ээс
+  // хасаад дахин асууна — source_note-тэй хүнд select рүү ХЭЗЭЭ Ч буцахгүй
+  // (2026-11-03: тэр fallback /home-ыг 50–75с болгож байсан).
+  let select = LESSON_ROW_SELECT_LIST;
+  let { data, error } = await run(select);
+  for (let attempt = 0; attempt < 6 && error && isMissingColumnSelectError(error.message); attempt++) {
+    const missing = missingColumnFromError(error.message);
+    if (!missing || !select.split(",").some((c) => c.trim() === missing)) break;
+    select = select
+      .split(",")
+      .map((c) => c.trim())
+      .filter((c) => c !== missing)
+      .join(", ");
+    ({ data, error } = await run(select));
+  }
   if (error && isMissingColumnSelectError(error.message)) {
     ({ data, error } = await run(LESSON_ROW_SELECT_LIST_LEGACY));
   }
