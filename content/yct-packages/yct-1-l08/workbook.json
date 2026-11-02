@@ -1,0 +1,190 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "judge",
+    "instruction_mn": "Сонсох — Аудио (08-05) сонсоод зурагтай таарч байвал ✓, таарахгүй бол ✗.",
+    "audio": "audio/yct-1-08-test.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）我去商店。",
+      "image": "images/t1.png",
+      "answer": "✗",
+      "script_zh": "我去商店。",
+      "explanation_mn": "Аудионд «Би дэлгүүр явна» гэнэ. Зураг дээр хоёр охин сургуулийн ширээнд бичиж байна, дэлгүүр биш. ✗."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）我在学校。",
+      "image": "images/t2.png",
+      "answer": "✓",
+      "script_zh": "我在学校。",
+      "explanation_mn": "«Би сургууль дээр байна». Зураг дээр багш болон сурагчид ангид байна. ✓."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）你的耳朵在这儿。",
+      "image": "images/t3.png",
+      "answer": "✗",
+      "script_zh": "你的耳朵在这儿。",
+      "explanation_mn": "«Чиний чих энд байна». Зураг дээр эмэгтэй охины хамарт хүрч байна, чихэнд биш. ✗."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）我去学校，再见。",
+      "image": "images/t4.png",
+      "answer": "✓",
+      "script_zh": "我去学校，再见。",
+      "explanation_mn": "«Би сургууль руу явна, баяртай». Зураг дээр охин гараа даллаж салах ёс хийж байна. ✓."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 1✗ 2✓ 3✗ 4✓; Listening script х.61"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — өгүүлбэрт таарах зургийг сонго (A/B/C/D).",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "小鸟在那儿。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/tA.png",
+       "images/tB.png",
+       "images/tC.png",
+       "images/tD.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Шувуу тэнд байна». D зураг дээр охин дээш заагаад байна. A — аав, ээж хүүхдээ савлуулж байна. B — хүү багшдаа юм заав. C — багш, сурагчид ширээнд сууж байна."
+     },
+     {
+      "n": 6,
+      "question_zh": "你去哪儿？学校？",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/tA.png",
+       "images/tB.png",
+       "images/tC.png",
+       "images/tD.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Чи хаашаа явах вэ? Сургууль уу?» C зураг дээр багш, сурагчид ангид байна. A дэлгүүр явж байгаа гэр бүл. B, D өөр юм хийж байна."
+     },
+     {
+      "n": 7,
+      "question_zh": "她和爸爸妈妈去商店。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/tA.png",
+       "images/tB.png",
+       "images/tC.png",
+       "images/tD.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Тэр аав, ээжтэйгээ дэлгүүр явна». A зураг дээр охин аав, ээжийнхээ гарыг бариад алхаж байна."
+     },
+     {
+      "n": 8,
+      "question_zh": "老师，中国在这儿。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/tA.png",
+       "images/tB.png",
+       "images/tC.png",
+       "images/tD.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Багш аа, Хятад энд байна». B зураг дээр хүү багшдаа юм зааж өгч байна."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 5D 6C 7A 8B"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's match — асуулт ба хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你姐姐在家吗？",
+      "answer": "她不在。",
+      "explanation_mn": "Эгч байгаа эсэхийг асуулаа. «Тэр байхгүй» гэж хариулна."
+     },
+     {
+      "n": 2,
+      "question_zh": "你去哪儿？",
+      "answer": "我去商店。",
+      "explanation_mn": "Хаашаа гэсэн асуултад газраа хэлнэ."
+     },
+     {
+      "n": 3,
+      "question_zh": "你去学校吗？",
+      "answer": "我不去学校。",
+      "explanation_mn": "Явах уу гэж асуусан. «Явахгүй» гэж хариулна."
+     }
+    ],
+    "answer_source": "textbook х.36 (номд хариу байхгүй, утгаар нь тааруулсан)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Өөрийнхөө дуртай газрыг сонгоод хятадаар бич: «我去…»",
+    "question_zh": "我去商店。",
+    "answer": "我去商店。",
+    "explanation_mn": "去 + газар."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа хаашаа явахыг асуу.",
+    "question_zh": "你去哪儿？",
+    "answer": "你去哪儿？",
+    "explanation_mn": "哪儿 = хаашаа."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "«我去商店» гэж хариул.",
+    "question_zh": "我去商店。",
+    "answer": "我去商店。",
+    "explanation_mn": "去 + газар."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«鼻子在这儿» дууг дуулж биеийнхээ хэсгийг зааж үз.",
+    "question_zh": "鼻子，鼻子，鼻子在这儿。",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 08-03-ын хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · х.61 Test Listening Scripts, х.63 Test Answers (Lesson 8)"
+}

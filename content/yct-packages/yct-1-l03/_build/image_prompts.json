@@ -1,0 +1,132 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "他是谁？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands in a museum next to a baby camel boy and girl pointing at a wax figure of a friendly kung-fu actor; speech bubble with the Chinese text 他是谁？ in large clear black font. No English text in the image.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ta.jpg",
+  "aspect": "1:1",
+  "title": "他",
+  "section": "vocabulary",
+  "prompt": "A young camel boy (blue vest) points at a smiling boy standing nearby, thought bubble showing a boy silhouette; clearly 'he'. No English text in the image.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shi.jpg",
+  "aspect": "1:1",
+  "title": "是",
+  "section": "vocabulary",
+  "prompt": "Baby camel girl proudly holds a name card and points to herself saying 'I am'; speech bubble with the Chinese text 我是 in large clear black font, friendly classroom. No English text in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shei.jpg",
+  "aspect": "1:1",
+  "title": "谁",
+  "section": "vocabulary",
+  "prompt": "Baby camel boy with a big question mark above his head looking at a mysterious figure behind a curtain, curious expression. No English text in the image.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-na.jpg",
+  "aspect": "1:1",
+  "title": "哪",
+  "section": "vocabulary",
+  "prompt": "Brown baby camel boy holding a world globe and looking puzzled, a big question mark and several small flags to choose from. No English text in the image.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-guo.jpg",
+  "aspect": "1:1",
+  "title": "国",
+  "section": "vocabulary",
+  "prompt": "Baby camels pointing at a big colorful map of a country with a red flag with yellow stars, joyful. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ren.jpg",
+  "aspect": "1:1",
+  "title": "人",
+  "section": "vocabulary",
+  "prompt": "Teacher camel and children camels beside a big simple drawing of a standing person (a boy), pointing at him. No English text in the image.",
+  "chars": [
+   "temee",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhongguoren.jpg",
+  "aspect": "1:1",
+  "title": "中国人",
+  "section": "vocabulary",
+  "prompt": "Baby camel boy and girl greeting a smiling Chinese child dressed in a red Tang suit holding a small red Chinese flag. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "他是谁？",
+  "section": "dialogue",
+  "prompt": "In a museum, a baby camel girl points at a wax figure of a kung-fu actor on a red stand while her adult camel mother stands beside her; speech bubble 他是谁？ and second bubble 他是成龙。 in large clear black font. No English text in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "成龙是哪国人？",
+  "section": "dialogue",
+  "prompt": "Baby camel girl asks her adult camel mother in front of a red dragon-pattern backdrop with the actor figure; speech bubbles with the Chinese text 成龙是哪国人？ and 中国人。 in large clear black font. No English text in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d3.jpg",
+  "aspect": "4:3",
+  "title": "妈妈，她是谁？",
+  "section": "dialogue",
+  "prompt": "Mini story: baby camel girl and adult camel mother meet famous people (a basketball player in red, a woman in a red dress, a dancer in a black hat) and finally pose for a camera photo shouting; speech bubble 一、二、三，茄子！ in large clear black font. No English text in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "找朋友",
+  "section": "song",
+  "prompt": "Teacher camel, yellow baby camel boy, girl camel and brown boy camel hold hands in a circle clapping and singing outdoors, musical notes, joyful. No English text in the image.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

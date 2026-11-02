@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«现在» гэж юу вэ?",
+  "options": [
+   "одоо",
+   "багш",
+   "маргааш",
+   "өглөө"
+  ],
+  "correct_answer": "одоо",
+  "explanation": "现在 (xiànzài) = одоо.",
+  "order_index": 1,
+  "id": "yct-1-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«点» (цаг) хятадаар аль нь вэ?",
+  "options": [
+   "分",
+   "见",
+   "早上",
+   "点"
+  ],
+  "correct_answer": "点",
+  "explanation": "点 (diǎn) = цаг. 分 = минут.",
+  "order_index": 2,
+  "id": "yct-1-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«分» гэж юу вэ?",
+  "options": [
+   "уулзах",
+   "цаг",
+   "өглөө",
+   "минут"
+  ],
+  "correct_answer": "минут",
+  "explanation": "分 (fēn) = минут.",
+  "order_index": 3,
+  "id": "yct-1-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«见» гэж юу вэ?",
+  "options": [
+   "унтах",
+   "уулзах",
+   "явах",
+   "идэх"
+  ],
+  "correct_answer": "уулзах",
+  "explanation": "见 (jiàn) = уулзах.",
+  "order_index": 4,
+  "id": "yct-1-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«早上» гэж юу вэ?",
+  "options": [
+   "өглөө",
+   "шөнө",
+   "орой",
+   "өнөөдөр"
+  ],
+  "correct_answer": "өглөө",
+  "explanation": "早上 (zǎoshang) = өглөө.",
+  "order_index": 5,
+  "id": "yct-1-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«太早了！» гэж ямар үед хэлэх вэ?",
+  "options": [
+   "Цаг асуухад",
+   "Хэтэрхий эрт санагдахад",
+   "Мэндлэхэд",
+   "Баяртай гэхэд"
+  ],
+  "correct_answer": "Хэтэрхий эрт санагдахад",
+  "explanation": "太早了 = хэтэрхий эрт байна.",
+  "order_index": 6,
+  "id": "yct-1-l10-q06",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хэдэн цаг» хятадаар аль нь вэ?",
+  "options": [
+   "早上",
+   "几点",
+   "现在",
+   "明天"
+  ],
+  "correct_answer": "几点",
+  "explanation": "几点 (jǐdiǎn) = хэдэн цаг.",
+  "order_index": 7,
+  "id": "yct-1-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Одоо хэдэн цаг болж байна?» хятадаар:",
+  "options": [
+   "现在几点？",
+   "太早了！",
+   "早上五点。",
+   "明天几点见？"
+  ],
+  "correct_answer": "现在几点？",
+  "explanation": "现在 = одоо, 几点 = хэдэн цаг.",
+  "order_index": 8,
+  "id": "yct-1-l10-q08",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Маргааш хэдэн цагт уулзах вэ?» хятадаар:",
+  "options": [
+   "明天几点见？",
+   "早上五点。",
+   "你几岁？",
+   "现在几点？"
+  ],
+  "correct_answer": "明天几点见？",
+  "explanation": "明天 = маргааш, 见 = уулзах.",
+  "order_index": 9,
+  "id": "yct-1-l10-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "妈妈：十一点十分。 Хэдэн цаг вэ?",
+  "options": [
+   "11 цаг",
+   "10 цаг 11 минут",
+   "11 цаг 10 минут",
+   "1 цаг 10 минут"
+  ],
+  "correct_answer": "11 цаг 10 минут",
+  "explanation": "十一点十分 — 11 цаг 10 минут.",
+  "order_index": 10,
+  "id": "yct-1-l10-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дэвид «早上五点» гэв. Хэдэн цаг вэ?",
+  "options": [
+   "Өглөө 3 цаг",
+   "Орой 5 цаг",
+   "Өглөө 1 цаг",
+   "Өглөө 5 цаг"
+  ],
+  "correct_answer": "Өглөө 5 цаг",
+  "explanation": "早上 = өглөө, 五点 = 5 цаг.",
+  "order_index": 11,
+  "id": "yct-1-l10-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小明：现在几点？ 妈妈：（ ）。",
+  "options": [
+   "再见",
+   "太早了",
+   "明天见",
+   "十一点十分"
+  ],
+  "correct_answer": "十一点十分",
+  "explanation": "Цаг асуувал цагаар хариулна.",
+  "order_index": 12,
+  "id": "yct-1-l10-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：明天几点见？ B：早上五点。 A：（ ）！",
+  "options": [
+   "三点",
+   "你好",
+   "现在",
+   "太早了"
+  ],
+  "correct_answer": "太早了",
+  "explanation": "Өглөө 5 цаг — хэтэрхий эрт тул 太早了.",
+  "order_index": 13,
+  "id": "yct-1-l10-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "现在（ ）点？ — «Одоо хэдэн цаг?»",
+  "options": [
+   "几",
+   "五",
+   "三",
+   "见"
+  ],
+  "correct_answer": "几",
+  "explanation": "几点 = хэдэн цаг.",
+  "order_index": 14,
+  "id": "yct-1-l10-q14",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "五（ ）。 — «5 цаг»",
+  "options": [
+   "分",
+   "点",
+   "了",
+   "见"
+  ],
+  "correct_answer": "点",
+  "explanation": "Цагийг тооны ард 点 залгаж хэлнэ.",
+  "order_index": 15,
+  "id": "yct-1-l10-q15",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一点十（ ）。 — «1 цаг 10 минут»",
+  "options": [
+   "点",
+   "分",
+   "早",
+   "见"
+  ],
+  "correct_answer": "分",
+  "explanation": "Минутыг 分 гэнэ.",
+  "order_index": 16,
+  "id": "yct-1-l10-q16",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«三点» (sān diǎn) хэдэн цаг вэ?",
+  "options": [
+   "8 цаг",
+   "3 цаг",
+   "12 цаг",
+   "5 цаг"
+  ],
+  "correct_answer": "3 цаг",
+  "explanation": "三点 = 3 цаг.",
+  "order_index": 17,
+  "id": "yct-1-l10-q17",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«五点» (wǔ diǎn) хэдэн цаг вэ?",
+  "options": [
+   "3 цаг",
+   "8 цаг",
+   "12 цаг",
+   "5 цаг"
+  ],
+  "correct_answer": "5 цаг",
+  "explanation": "五点 = 5 цаг.",
+  "order_index": 18,
+  "id": "yct-1-l10-q18",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«十二点» (shí'èr diǎn) хэдэн цаг вэ?",
+  "options": [
+   "5 цаг",
+   "8 цаг",
+   "12 цаг",
+   "3 цаг"
+  ],
+  "correct_answer": "12 цаг",
+  "explanation": "十二点 = 12 цаг.",
+  "order_index": 19,
+  "id": "yct-1-l10-q19",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«八点» (bā diǎn) хэдэн цаг вэ?",
+  "options": [
+   "8 цаг",
+   "3 цаг",
+   "5 цаг",
+   "12 цаг"
+  ],
+  "correct_answer": "8 цаг",
+  "explanation": "八点 = 8 цаг.",
+  "order_index": 20,
+  "id": "yct-1-l10-q20",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«7 цаг» хятадаар аль нь вэ?",
+  "options": [
+   "七点",
+   "六点",
+   "九点",
+   "四点"
+  ],
+  "correct_answer": "七点",
+  "explanation": "七 = 7, 点 = цаг.",
+  "order_index": 21,
+  "id": "yct-1-l10-q21",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«4 цаг» хятадаар аль нь вэ?",
+  "options": [
+   "十点",
+   "五点",
+   "三点",
+   "四点"
+  ],
+  "correct_answer": "四点",
+  "explanation": "四 = 4. 十 = 10 — андуурахгүй!",
+  "order_index": 22,
+  "id": "yct-1-l10-q22",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xiànzài» гэж уншдаг үг:",
+  "options": [
+   "几点",
+   "现在",
+   "早上",
+   "明天"
+  ],
+  "correct_answer": "现在",
+  "explanation": "现在 = xiànzài = одоо.",
+  "order_index": 23,
+  "id": "yct-1-l10-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zǎoshang» гэж уншдаг үг:",
+  "options": [
+   "分",
+   "点",
+   "现在",
+   "早上"
+  ],
+  "correct_answer": "早上",
+  "explanation": "早上 = zǎoshang = өглөө.",
+  "order_index": 24,
+  "id": "yct-1-l10-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jǐdiǎn» гэж уншдаг үг:",
+  "options": [
+   "分",
+   "见",
+   "几点",
+   "太早了"
+  ],
+  "correct_answer": "几点",
+  "explanation": "几点 = jǐdiǎn = хэдэн цаг.",
+  "order_index": 25,
+  "id": "yct-1-l10-q25",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Гар цагаа хараад ээжээсээ цаг асуу:",
+  "options": [
+   "妈妈，再见！",
+   "妈妈，太早了！",
+   "妈妈，现在几点？",
+   "妈妈，五个人。"
+  ],
+  "correct_answer": "妈妈，现在几点？",
+  "explanation": "Цаг асуухдаа 现在几点？.",
+  "order_index": 26,
+  "id": "yct-1-l10-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаа маргааш 5 цагт уулзахыг хүсвэл:",
+  "options": [
+   "早上好。",
+   "明天五点见。",
+   "现在五点。",
+   "五分。"
+  ],
+  "correct_answer": "明天五点见。",
+  "explanation": "明天 + цаг + 见 = маргааш … цагт уулзъя.",
+  "order_index": 27,
+  "id": "yct-1-l10-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "1 цаг 10 минутыг хятадаар яаж хэлэх вэ?",
+  "options": [
+   "十分一点",
+   "一点十分",
+   "十点一分",
+   "一分十点"
+  ],
+  "correct_answer": "一点十分",
+  "explanation": "Эхлээд цаг (点), дараа минут (分).",
+  "order_index": 28,
+  "id": "yct-1-l10-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Өглөө 5 цагт уулзъя гэвэл «хэтэрхий эрт байна» гэж яаж хэлэх вэ?",
+  "options": [
+   "三点。",
+   "现在几点？",
+   "明天见！",
+   "太早了！"
+  ],
+  "correct_answer": "太早了！",
+  "explanation": "太早了 = хэтэрхий эрт байна.",
+  "order_index": 29,
+  "id": "yct-1-l10-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

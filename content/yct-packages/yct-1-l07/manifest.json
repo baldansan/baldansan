@@ -1,0 +1,214 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-1",
+ "lessonId": "yct-1-l07",
+ "hskLevel": 1,
+ "lessonNumber": 7,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "这是谁的狗？",
+ "mongolianTitle": "Энэ хэний нохой вэ?",
+ "series": "YCT 标准教程 1",
+ "seriesLabel_mn": "YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
+ "source": "YCT 标准教程 1 · 第7课 (сурах бичиг + CD аудио 07-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-1-07-text-song.mp3",
+  "dialogues": "audio/yct-1-07-02.mp3",
+  "words": "audio/yct-1-07-01.mp3",
+  "song": "audio/yct-1-07-04.mp3",
+  "culture": "audio/yct-1-07-03.mp3",
+  "test": "audio/yct-1-07-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-1-l07",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "这是谁的狗？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-zhe",
+    "file": "images/w-zhe.jpg",
+    "title": "这",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-na",
+    "file": "images/w-na.jpg",
+    "title": "那",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shei",
+    "file": "images/w-shei.jpg",
+    "title": "谁",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kan",
+    "file": "images/w-kan.jpg",
+    "title": "看",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zher",
+    "file": "images/w-zher.jpg",
+    "title": "这儿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-duo",
+    "file": "images/w-duo.jpg",
+    "title": "多",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nar",
+    "file": "images/w-nar.jpg",
+    "title": "那儿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mao",
+    "file": "images/w-mao.jpg",
+    "title": "猫",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gou",
+    "file": "images/w-gou.jpg",
+    "title": "狗",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yu",
+    "file": "images/w-yu.jpg",
+    "title": "鱼",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-niao",
+    "file": "images/w-niao.jpg",
+    "title": "鸟",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "这是谁的狗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你看，这儿有很多小鱼。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "动物歌",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "zodiac",
+    "file": "images/zodiac.png",
+    "title": "十二生肖",
+    "role": "illustration",
+    "section": "culture"
+   },
+   {
+    "id": "guess",
+    "file": "images/guess.png",
+    "title": "Let's guess",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5a",
+    "file": "images/t5a.png",
+    "title": "Test 5a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5b",
+    "file": "images/t5b.png",
+    "title": "Test 5b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5c",
+    "file": "images/t5c.png",
+    "title": "Test 5c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5d",
+    "file": "images/t5d.png",
+    "title": "Test 5d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers: 1✗ 2✗ 3✓ 4✓ 5D 6C 7B 8A)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,227 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "listening",
+    "instruction_mn": "Сонсох — Аудио (10-05) сонсоод зөв цаг, огноог сонго (A/B/C).",
+    "audio": "audio/yct-1-10-test.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）四点",
+      "question_mn": "1-р асуулт: сонсоод зөв цагийг сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png"
+      ],
+      "answer": "C",
+      "script_zh": "四点",
+      "explanation_mn": "Аудионд «四点 — 4 цаг» гэнэ. C цагны богино зүү 4 дээр, урт зүү 12 дээр байна. A, B цагийн зүү өөр газар заана."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）七点",
+      "question_mn": "2-р асуулт: сонсоод зөв цагийг сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png"
+      ],
+      "answer": "B",
+      "script_zh": "七点",
+      "explanation_mn": "«七点 — 7 цаг». Хөх сэрүүлэгт богино зүү 7 дээр, урт зүү 12 дээр байна (B). A, C-ийн зүү өөр тоон дээр."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）十四号",
+      "question_mn": "3-р асуулт: сонсоод зөв хуанлийн хуудсыг сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t3a.png",
+       "images/t3b.png",
+       "images/t3c.png"
+      ],
+      "answer": "A",
+      "script_zh": "十四号",
+      "explanation_mn": "«十四号 — 14-ний өдөр». A хуудсан дээр «14» гэж бичсэн. B дээр 21, C дээр 4 байна."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 1.C 2.B 3.A; Listening script: 四点 / 七点 / 十四号"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — Хоосон зайд тохирох үгийг A–D-ээс сонго. A 我们 (бид) · B 商店 (дэлгүүр) · C 三 (гурав) · D 现在 (одоо).",
+    "options": [
+     "A 我们",
+     "B 商店",
+     "C 三",
+     "D 现在"
+    ],
+    "items": [
+     {
+      "n": 4,
+      "question_zh": "爸爸，（ ）几点？ — 十二点。",
+      "image": "images/t4.png",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "answer": "D",
+      "explanation_mn": "Зурагт цаг 12-г заана. «爸爸，现在几点？» — «Аав аа, одоо хэдэн цаг?» Тиймээс D 现在. 我们, 商店, 三 тохирохгүй."
+     },
+     {
+      "n": 5,
+      "question_zh": "星期二（ ）几点见？ — 八点。",
+      "image": "images/t5.png",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "answer": "A",
+      "explanation_mn": "«星期二我们几点见？» — «Мягмар гарагт бид хэдэн цагт уулзах вэ?» Зурагт цаг барьсан хүн байна. 我们 = бид, тиймээс A."
+     },
+     {
+      "n": 6,
+      "question_zh": "这儿有几个人？ — 这儿有（ ）个人。",
+      "image": "images/t6.png",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "answer": "C",
+      "explanation_mn": "Асуулт нь «хэдэн хүн?» тул хариулт нь тоо байх ёстой. Зурагт хөнжлийн доороос хөлүүд цухуйсан, тэр нь «三个人» — гурван хүн. Тиймээс C 三."
+     },
+     {
+      "n": 7,
+      "question_zh": "明天几点去（ ）？ — 八点。",
+      "image": "images/t7.png",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "answer": "B",
+      "explanation_mn": "«明天几点去商店？» — «Маргааш хэдэн цагт дэлгүүрт явах вэ?» 去 (явах)-ийн ард очих газар орно, 商店 = дэлгүүр. Хариулт нь B."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 4.D 5.A 6.C 7.B"
+   },
+   {
+    "part": 3,
+    "type": "fill",
+    "instruction_mn": "Let's write — өөрийн амьдралаараа нөхөж бич.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "现在____点____。",
+      "answer": "(жишээ: 现在三点十分。)",
+      "explanation_mn": "Гар цагаа хараад одоо хэдэн цаг хэдэн минут болсныг бич. Цаг (点) нь урд, минут (分) нь ард."
+     },
+     {
+      "n": 2,
+      "question_zh": "我____点去学校。",
+      "answer": "(жишээ: 我八点去学校。)",
+      "explanation_mn": "Чи хэдэн цагт сургуульдаа явдаг вэ? Тоо + 点 бич. 去学校 = сургуульд явах."
+     },
+     {
+      "n": 3,
+      "question_zh": "我早上____点起床。",
+      "answer": "(жишээ: 我早上七点起床。)",
+      "explanation_mn": "Өглөө хэдэн цагт босдгоо бич. 起床 (qǐchuáng) = босох."
+     }
+    ],
+    "answer_source": "textbook (х.46 Let's write; нээлттэй хариулт)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Mini story — зургийг хараад хотыг цагтай нь холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "纽约",
+      "image": "images/story1.png",
+      "answer": "十二点",
+      "explanation_mn": "Нью-Йоркт шинэ жилийн шөнө. Том цаг 12 дээр, салют буудаж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "北京",
+      "image": "images/story2.png",
+      "answer": "一点",
+      "explanation_mn": "Бээжинд өдрийн 1 цаг. Хүү ширээ цэвэрлэж, өвөө эмээ нь сонин уншиж байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "悉尼",
+      "image": "images/story3.png",
+      "answer": "四点",
+      "explanation_mn": "Сиднейд гар цаг 4 цагийг заана. Хоёр хүүхэд майханд сууж байна."
+     }
+    ],
+    "answer_source": "textbook х.46 Mini story (зургаас уншсан)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ханзаа бич — «点» ба «分» гэсэн хоёр үгийг дэвтэртээ хуулж бич.",
+    "question_zh": "点 分",
+    "answer": "点 分",
+    "explanation_mn": "Зүүнээс баруун, дээрээс доош бич."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Гар цагаа хараад цаг хэл.",
+    "question_zh": "现在五点。",
+    "answer": "现在五点。",
+    "explanation_mn": "现在 + тоо + 点."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Найздаа маргаашийн уулзах цагийг асуу.",
+    "question_zh": "明天几点见？",
+    "answer": "明天几点见？",
+    "explanation_mn": "Хариулт: 明天…点见."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«现在几点？» дууг хуруугаар цаг дүрслэн дуул.",
+    "question_zh": "现在几点？",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 10-04-ийн хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · х.61 Test Listening Scripts, х.63 Test Answers (Lesson 10)"
+}

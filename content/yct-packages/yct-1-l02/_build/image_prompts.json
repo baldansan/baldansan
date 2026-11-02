@@ -1,0 +1,151 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你叫什么？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "A cheerful yellow camel teacher with glasses and the young yellow camel boy wave hello to a small friendly green alien child in the schoolyard at sunset; speech bubble with the Chinese text 你叫什么？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-wo.jpg",
+  "aspect": "1:1",
+  "title": "我",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy in blue vest points proudly at his own chest, smiling. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jiao.jpg",
+  "aspect": "1:1",
+  "title": "叫",
+  "section": "vocabulary",
+  "prompt": "The camel girl in yellow dress holds a hand-made name tag and introduces herself to a friend, name tag on her chest. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shenme.jpg",
+  "aspect": "1:1",
+  "title": "什么",
+  "section": "vocabulary",
+  "prompt": "The brown camel boy in green hat tilts his head with a big question mark above him, holding a mystery box. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-renshi.jpg",
+  "aspect": "1:1",
+  "title": "认识",
+  "section": "vocabulary",
+  "prompt": "Two camel calves shake hands happily meeting for the first time in a classroom. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-hen.jpg",
+  "aspect": "1:1",
+  "title": "很",
+  "section": "vocabulary",
+  "prompt": "A very tall tower of colorful building blocks with the camel calf boy stretching up to reach the top, showing the idea of very much. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-gaoxing.jpg",
+  "aspect": "1:1",
+  "title": "高兴",
+  "section": "vocabulary",
+  "prompt": "The camel girl in yellow dress jumps with joy and a huge smile, confetti around her. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ta.jpg",
+  "aspect": "1:1",
+  "title": "她",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy points at the camel girl in yellow dress with pink ribbon standing at a distance. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ma.jpg",
+  "aspect": "1:1",
+  "title": "吗",
+  "section": "vocabulary",
+  "prompt": "The camel teacher with glasses asks a question with a big glowing question mark bubble floating above, kids listening. No English text.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-bu.jpg",
+  "aspect": "1:1",
+  "title": "不",
+  "section": "vocabulary",
+  "prompt": "The brown camel boy in green hat shakes his head and crosses his arms in a no gesture. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你好！我叫星星，你叫什么？",
+  "section": "dialogue",
+  "prompt": "A small friendly green alien child in a silver suit hovers in a glowing beam outside a window and waves; the camel girl in yellow dress leans out of the window; speech bubble with the Chinese text 你好！我叫星星，你叫什么？ in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你认识她吗？",
+  "section": "dialogue",
+  "prompt": "The yellow camel calf boy asks the camel girl at a doorway while a green alien girl waits in the garden behind; speech bubble with the Chinese text 你认识她吗？ in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d3.jpg",
+  "aspect": "4:3",
+  "title": "你好！我叫李芳，你叫什么？",
+  "section": "dialogue",
+  "prompt": "In a bright classroom two camel calves exchange handmade name cards; speech bubble with the Chinese text 你好！我叫李芳 in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/play.jpg",
+  "aspect": "4:3",
+  "title": "起名字",
+  "section": "song",
+  "prompt": "Camel teacher shows a poster of Chinese names; camel calves write their Chinese names on paper name cards with colorful markers; the cards show the characters 李 王 张 刘. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

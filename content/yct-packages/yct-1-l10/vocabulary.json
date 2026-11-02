@@ -1,0 +1,86 @@
+[
+ {
+  "chinese": "现在",
+  "pinyin": "xiànzài",
+  "mongolian": "одоо",
+  "notes": "цаг үеийн үг · гол үг",
+  "exampleChinese": "现在几点？",
+  "examplePinyin": "Xiànzài jǐdiǎn?",
+  "exampleMongolian": "Одоо хэдэн цаг болж байна?",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "几点",
+  "pinyin": "jǐdiǎn",
+  "mongolian": "хэдэн цаг",
+  "notes": "асуух үг · гол үг",
+  "exampleChinese": "明天几点见？",
+  "examplePinyin": "Míngtiān jǐdiǎn jiàn?",
+  "exampleMongolian": "Маргааш хэдэн цагт уулзах вэ?",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "点",
+  "pinyin": "diǎn",
+  "mongolian": "цаг (цагийн цаг)",
+  "notes": "хэмжих үг · гол үг",
+  "exampleChinese": "五点。",
+  "examplePinyin": "Wǔ diǎn.",
+  "exampleMongolian": "5 цаг.",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "分",
+  "pinyin": "fēn",
+  "mongolian": "минут",
+  "notes": "хэмжих үг",
+  "exampleChinese": "一点十分。",
+  "examplePinyin": "Yī diǎn shí fēn.",
+  "exampleMongolian": "1 цаг 10 минут.",
+  "hskLevel": "YCT 1",
+  "keyWord": false,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "见",
+  "pinyin": "jiàn",
+  "mongolian": "уулзах",
+  "notes": "үйл үг",
+  "exampleChinese": "明天五点见。",
+  "examplePinyin": "Míngtiān wǔ diǎn jiàn.",
+  "exampleMongolian": "Маргааш 5 цагт уулзъя.",
+  "hskLevel": "YCT 1",
+  "keyWord": false,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "早上",
+  "pinyin": "zǎoshang",
+  "mongolian": "өглөө",
+  "notes": "цаг үеийн үг",
+  "exampleChinese": "早上五点。",
+  "examplePinyin": "Zǎoshang wǔ diǎn.",
+  "exampleMongolian": "Өглөө 5 цаг.",
+  "hskLevel": "YCT 1",
+  "keyWord": false,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "太早了",
+  "pinyin": "tài zǎo le",
+  "mongolian": "хэтэрхий эрт байна",
+  "notes": "хэллэг",
+  "exampleChinese": "太早了！",
+  "examplePinyin": "Tài zǎo le!",
+  "exampleMongolian": "Хэтэрхий эрт байна шүү!",
+  "hskLevel": "YCT 1",
+  "keyWord": false,
+  "orderIndex": 7
+ }
+]

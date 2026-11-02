@@ -1,0 +1,144 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我去商店。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Temee teacher (yellow camel with glasses) stands with the young camel calves Huu and Ohin in front of a colorful toy store and a school gate, pointing to the store; speech bubble with the Chinese text 我去商店。 in large clear black font No English text, bright friendly children's book illustration.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zai.jpg",
+  "aspect": "1:1",
+  "title": "在",
+  "section": "vocabulary",
+  "prompt": "Ohin calf sits at home on a sofa waving, with a cozy house around, showing 'being at a place'. No English text, bright friendly children's book illustration.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiexie.jpg",
+  "aspect": "1:1",
+  "title": "谢谢",
+  "section": "vocabulary",
+  "prompt": "Bor calf hands a toy to Huu calf, who smiles and bows with hands together to say thanks; speech bubble with the Chinese text 谢谢 in large clear black font No English text, bright friendly children's book illustration.",
+  "chars": [
+   "bor",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-qu.jpg",
+  "aspect": "1:1",
+  "title": "去",
+  "section": "vocabulary",
+  "prompt": "Huu calf walks happily along a path with an arrow pointing ahead toward a distant building, showing going. No English text, bright friendly children's book illustration.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-nimen.jpg",
+  "aspect": "1:1",
+  "title": "你们",
+  "section": "vocabulary",
+  "prompt": "Temee teacher points with an open hand to a group of three calves (Huu, Ohin, Bor) standing together. No English text, bright friendly children's book illustration.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-women.jpg",
+  "aspect": "1:1",
+  "title": "我们",
+  "section": "vocabulary",
+  "prompt": "Huu, Ohin and Bor calves hug each other in a group, one pointing to his own chest, showing 'we'. No English text, bright friendly children's book illustration.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-nar.jpg",
+  "aspect": "1:1",
+  "title": "哪儿",
+  "section": "vocabulary",
+  "prompt": "Bor calf looks around with a big question mark above his head and hands raised, searching for something. No English text, bright friendly children's book illustration.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xuexiao.jpg",
+  "aspect": "1:1",
+  "title": "学校",
+  "section": "vocabulary",
+  "prompt": "A colorful school building with a flag, calves Huu and Ohin with backpacks walking in the gate. No English text, bright friendly children's book illustration.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shangdian.jpg",
+  "aspect": "1:1",
+  "title": "商店",
+  "section": "vocabulary",
+  "prompt": "A friendly small shop with a striped awning, shelves of toys and fruit, a calf shopping at the door. No English text, bright friendly children's book illustration.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你姐姐在家吗？",
+  "section": "dialogue",
+  "prompt": "Ohin calf stands at a house door and asks Bor calf at the door; speech bubble with the Chinese text 你姐姐在家吗？ in large clear black font. Brick house with a plant, porch steps. No English text, bright friendly children's book illustration.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "我去商店，你们去吗？",
+  "section": "dialogue",
+  "prompt": "Adult camel mother with a shopping bag asks outside a house, adult camel father mowing the lawn, Huu calf with a basketball; speech bubble with the Chinese text 我去商店，你们去吗？ in large clear black font No English text, bright friendly children's book illustration.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d3.jpg",
+  "aspect": "4:3",
+  "title": "你们去哪儿？",
+  "section": "dialogue",
+  "prompt": "Bear doctor in a tree hospital asks a cat, a panda and a dog, with a turtle in bed with bandages; speech bubble with the Chinese text 你们去哪儿？ in large clear black font No English text, bright friendly children's book illustration.",
+  "chars": []
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "鼻子在这儿",
+  "section": "song",
+  "prompt": "Huu and Ohin calves sing and dance, touching their nose, ears, eyes and hair with Temee teacher waving a small hand far away; speech bubble with the Chinese text 鼻子在这儿 in large clear black font No English text, bright friendly children's book illustration.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ }
+]

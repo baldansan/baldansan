@@ -113,6 +113,7 @@ export function buildKidsLessonData(
   const byFile = new Map<string, string>();
   const byId = new Map<string, string>();
   const byTitle = new Map<string, string>();
+  const bySection = new Map<string, string>();
   for (const im of images) {
     const url = str(im.url);
     if (!url) continue;
@@ -127,6 +128,8 @@ export function buildKidsLessonData(
     const file = str(raw.file);
     const url = byId.get(id) ?? (file ? byFile.get(basename(file)) : undefined);
     if (url && str(raw.title) && !byTitle.has(str(raw.title))) byTitle.set(str(raw.title), url);
+    const sec = str(raw.section).toLowerCase();
+    if (url && sec && !bySection.has(sec)) bySection.set(sec, url);
   }
   const imgByPath = (p: unknown): string | null => {
     const s = str(p);
@@ -199,7 +202,7 @@ export function buildKidsLessonData(
     song = {
       title: str(main.mongolianTitle) || str(main.title) || "Дуу",
       audioUrl: audio(main.audioFile ?? main.audio),
-      imageUrl: byId.get("sing") ?? null,
+      imageUrl: byId.get("sing") ?? byId.get("song") ?? bySection.get("song") ?? null,
       lines: songLines,
     };
   }
@@ -256,7 +259,7 @@ export function buildKidsLessonData(
   }
 
   const culture = isRec(texts.culture)
-    ? { title: str(texts.culture.title_mn) || str(texts.culture.title), text: str(texts.culture.text_mn), imageUrl: byId.get("hands") ?? null }
+    ? { title: str(texts.culture.title_mn) || str(texts.culture.title), text: str(texts.culture.text_mn), imageUrl: byId.get("hands") ?? bySection.get("culture") ?? null }
     : null;
 
   const intro: Rec = isRec(texts.lessonIntro) ? texts.lessonIntro : {};

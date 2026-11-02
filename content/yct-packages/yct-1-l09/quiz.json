@@ -1,0 +1,578 @@
+[
+ {
+  "type": "choice",
+  "question": "«Даваа гариг» хятадаар аль нь вэ?",
+  "options": [
+   "星期一",
+   "星期二",
+   "星期四",
+   "星期三"
+  ],
+  "correct_answer": "星期一",
+  "explanation": "Даваа = 星期一 (Xīngqīyī).",
+  "order_index": 1,
+  "id": "yct-1-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Мягмар гариг» хятадаар аль нь вэ?",
+  "options": [
+   "星期五",
+   "星期三",
+   "星期二",
+   "星期四"
+  ],
+  "correct_answer": "星期二",
+  "explanation": "Мягмар = 星期二 (Xīngqī'èr).",
+  "order_index": 2,
+  "id": "yct-1-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Лхагва гариг» хятадаар аль нь вэ?",
+  "options": [
+   "星期五",
+   "星期六",
+   "星期四",
+   "星期三"
+  ],
+  "correct_answer": "星期三",
+  "explanation": "Лхагва = 星期三 (Xīngqīsān).",
+  "order_index": 3,
+  "id": "yct-1-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Пүрэв гариг» хятадаар аль нь вэ?",
+  "options": [
+   "星期三",
+   "星期四",
+   "星期一",
+   "星期二"
+  ],
+  "correct_answer": "星期四",
+  "explanation": "Пүрэв = 星期四 (Xīngqīsì).",
+  "order_index": 4,
+  "id": "yct-1-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Баасан гариг» хятадаар аль нь вэ?",
+  "options": [
+   "星期三",
+   "星期五",
+   "星期二",
+   "星期四"
+  ],
+  "correct_answer": "星期五",
+  "explanation": "Баасан = 星期五 (Xīngqīwǔ).",
+  "order_index": 5,
+  "id": "yct-1-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бямба гариг» хятадаар аль нь вэ?",
+  "options": [
+   "星期四",
+   "星期六",
+   "星期五",
+   "星期三"
+  ],
+  "correct_answer": "星期六",
+  "explanation": "Бямба = 星期六 (Xīngqīliù).",
+  "order_index": 6,
+  "id": "yct-1-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ням гариг» хятадаар аль нь вэ?",
+  "options": [
+   "星期二",
+   "星期三",
+   "星期一",
+   "星期天"
+  ],
+  "correct_answer": "星期天",
+  "explanation": "Ням = 星期天 (Xīngqītiān).",
+  "order_index": 7,
+  "id": "yct-1-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«今天» гэж юу вэ?",
+  "options": [
+   "өчигдөр",
+   "маргааш",
+   "өнөөдөр",
+   "төрсөн өдөр"
+  ],
+  "correct_answer": "өнөөдөр",
+  "explanation": "今天 (jīntiān) = өнөөдөр.",
+  "order_index": 8,
+  "id": "yct-1-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«明天» гэж юу вэ?",
+  "options": [
+   "маргааш",
+   "өчигдөр",
+   "сар",
+   "өнөөдөр"
+  ],
+  "correct_answer": "маргааш",
+  "explanation": "明天 (míngtiān) = маргааш.",
+  "order_index": 9,
+  "id": "yct-1-l09-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«昨天» гэж юу вэ?",
+  "options": [
+   "дуртай",
+   "өчигдөр",
+   "маргааш",
+   "өнөөдөр"
+  ],
+  "correct_answer": "өчигдөр",
+  "explanation": "昨天 (zuótiān) = өчигдөр.",
+  "order_index": 10,
+  "id": "yct-1-l09-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«生日» гэж юу вэ?",
+  "options": [
+   "долоо хоног",
+   "сар",
+   "дуртай",
+   "төрсөн өдөр"
+  ],
+  "correct_answer": "төрсөн өдөр",
+  "explanation": "生日 (shēngrì) = төрсөн өдөр.",
+  "order_index": 11,
+  "id": "yct-1-l09-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«喜欢» гэж юу вэ?",
+  "options": [
+   "төрсөн өдөр",
+   "дуртай",
+   "маргааш",
+   "сар"
+  ],
+  "correct_answer": "дуртай",
+  "explanation": "喜欢 (xǐhuan) = дуртай.",
+  "order_index": 12,
+  "id": "yct-1-l09-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«月» ба «号» — аль нь «сар», аль нь «өдөр» вэ?",
+  "options": [
+   "月 = сар, 号 = өдөр",
+   "хоёулаа сар",
+   "月 = өдөр, 号 = сар",
+   "хоёулаа гараг"
+  ],
+  "correct_answer": "月 = сар, 号 = өдөр",
+  "explanation": "月 = сар, 号 = сарын өдөр.",
+  "order_index": 13,
+  "id": "yct-1-l09-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хоёр дахь өдөр, «мягмар гариг» хятадаар:",
+  "options": [
+   "星期五",
+   "星期二",
+   "星期三",
+   "星期天"
+  ],
+  "correct_answer": "星期二",
+  "explanation": "二 = хоёр, 星期二 = мягмар.",
+  "order_index": 14,
+  "id": "yct-1-l09-q14",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Найзаасаа төрсөн өдрийг нь асуух:",
+  "options": [
+   "我喜欢星期六。",
+   "明天见！",
+   "今天星期几？",
+   "你的生日是几月几号？"
+  ],
+  "correct_answer": "你的生日是几月几号？",
+  "explanation": "生日 = төрсөн өдөр, 几月几号 = хэдэн сарын хэд.",
+  "order_index": 15,
+  "id": "yct-1-l09-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Ээжээсээ өнөөдөр ямар гариг гэж асуух:",
+  "options": [
+   "你好吗？",
+   "你的生日是几月几号？",
+   "我喜欢星期六。",
+   "今天星期几？"
+  ],
+  "correct_answer": "今天星期几？",
+  "explanation": "今天星期几 = өнөөдөр ямар гариг вэ?",
+  "order_index": 16,
+  "id": "yct-1-l09-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：今天星期几？ B：今天（ ）。",
+  "options": [
+   "喜欢",
+   "明天",
+   "生日",
+   "星期五"
+  ],
+  "correct_answer": "星期五",
+  "explanation": "Асуултад гарагаар хариулна: 今天星期五.",
+  "order_index": 17,
+  "id": "yct-1-l09-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你的生日是几月几号？ B：（ ）。",
+  "options": [
+   "今天",
+   "1月1号",
+   "星期一",
+   "喜欢"
+  ],
+  "correct_answer": "1月1号",
+  "explanation": "Хэдэн сарын хэд гэхэд «1月1号» гэж хариулна.",
+  "order_index": 18,
+  "id": "yct-1-l09-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天星期四，明天星期（ ）。",
+  "options": [
+   "天",
+   "五",
+   "三",
+   "一"
+  ],
+  "correct_answer": "五",
+  "explanation": "Пүрэвийн маргааш баасан — 星期五.",
+  "order_index": 19,
+  "id": "yct-1-l09-q19",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天星期六，昨天星期（ ）。",
+  "options": [
+   "一",
+   "三",
+   "五",
+   "天"
+  ],
+  "correct_answer": "五",
+  "explanation": "Бямбын өчигдөр баасан — 星期五.",
+  "order_index": 20,
+  "id": "yct-1-l09-q20",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天星期六，明天星期（ ）。",
+  "options": [
+   "一",
+   "五",
+   "二",
+   "天"
+  ],
+  "correct_answer": "天",
+  "explanation": "Бямбын маргааш ням — 星期天.",
+  "order_index": 21,
+  "id": "yct-1-l09-q21",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хүү «明天星期六，我喜欢星期六» гэжээ. Тэр юунд дуртай вэ?",
+  "options": [
+   "ням гарагт",
+   "баасан гарагт",
+   "бямба гарагт",
+   "даваа гарагт"
+  ],
+  "correct_answer": "бямба гарагт",
+  "explanation": "喜欢星期六 = бямба гарагт дуртай.",
+  "order_index": 22,
+  "id": "yct-1-l09-q22",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Төрсөн өдрийн яриан дээр охины төрсөн өдөр хэзээ вэ?",
+  "options": [
+   "2月1号",
+   "10月8号",
+   "1月1号",
+   "1月2号"
+  ],
+  "correct_answer": "1月1号",
+  "explanation": "Охин «1月1号» гэж хариулсан.",
+  "order_index": 23,
+  "id": "yct-1-l09-q23",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xīngqīliù» гэж уншдаг үг:",
+  "options": [
+   "星期一",
+   "星期五",
+   "星期六",
+   "星期天"
+  ],
+  "correct_answer": "星期六",
+  "explanation": "星期六 = xīngqīliù = бямба.",
+  "order_index": 24,
+  "id": "yct-1-l09-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «míngtiān» гэж уншдаг үг:",
+  "options": [
+   "昨天",
+   "明天",
+   "星期",
+   "今天"
+  ],
+  "correct_answer": "明天",
+  "explanation": "明天 = míngtiān = маргааш.",
+  "order_index": 25,
+  "id": "yct-1-l09-q25",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xǐhuan» гэж уншдаг үг:",
+  "options": [
+   "生日",
+   "喜欢",
+   "星期",
+   "今天"
+  ],
+  "correct_answer": "喜欢",
+  "explanation": "喜欢 = xǐhuan = дуртай.",
+  "order_index": 26,
+  "id": "yct-1-l09-q26",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«几» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хэд",
+   "дуртай",
+   "сар",
+   "өнөөдөр"
+  ],
+  "correct_answer": "хэд",
+  "explanation": "几 (jǐ) = хэд. Асуух үг.",
+  "order_index": 27,
+  "id": "yct-1-l09-q27",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«我不喜欢星期一» гэдэг нь юу гэсэн үг вэ?",
+  "options": [
+   "Маргааш даваа гариг",
+   "Өнөөдөр даваа гариг",
+   "Би даваа гарагт дургүй",
+   "Би даваа гарагт дуртай"
+  ],
+  "correct_answer": "Би даваа гарагт дургүй",
+  "explanation": "不喜欢 = дургүй.",
+  "order_index": 28,
+  "id": "yct-1-l09-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Мягмар гариг гэхэд тоогоор хэд вэ?",
+  "options": [
+   "1 (一)",
+   "2 (二)",
+   "3 (三)",
+   "7 (天)"
+  ],
+  "correct_answer": "2 (二)",
+  "explanation": "星期二 — тоо 二 = хоёр.",
+  "order_index": 29,
+  "id": "yct-1-l09-q29",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хятад хэлэнд «星期七» гэж хэлдэг үү?",
+  "options": [
+   "Тийм, бямба гарагийг 星期七 гэнэ",
+   "Үгүй, ням гарагийг 星期八 гэнэ",
+   "Тийм, ням гарагийг 星期七 гэнэ",
+   "Үгүй, ням гарагийг 星期天 гэнэ"
+  ],
+  "correct_answer": "Үгүй, ням гарагийг 星期天 гэнэ",
+  "explanation": "Долоо дахь өдрийг 星期天 гэнэ.",
+  "order_index": 30,
+  "id": "yct-1-l09-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Панд ямар гарагт найзуудтайгаа уулздаг вэ? (Mini story)",
+  "options": [
+   "星期六",
+   "星期天",
+   "星期三",
+   "星期一"
+  ],
+  "correct_answer": "星期六",
+  "explanation": "今天星期六，熊猫看朋友。",
+  "order_index": 31,
+  "id": "yct-1-l09-q31",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Панд ням гарагт юу хийдэг вэ? (Mini story)",
+  "options": [
+   "Бүжиг сурдаг",
+   "Ханз бичдэг",
+   "Өдөржин унтдаг",
+   "Хоол иддэг"
+  ],
+  "correct_answer": "Өдөржин унтдаг",
+  "explanation": "星期天，熊猫睡一天！",
+  "order_index": 32,
+  "id": "yct-1-l09-q32",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ }
+]

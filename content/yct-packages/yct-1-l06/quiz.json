@@ -1,0 +1,470 @@
+[
+ {
+  "type": "choice",
+  "question": "«头发» (tóufa) гэж юу вэ?",
+  "options": [
+   "үс",
+   "хамар",
+   "чих",
+   "гар"
+  ],
+  "correct_answer": "үс",
+  "explanation": "头发 = үс.",
+  "order_index": 1,
+  "id": "yct-1-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«鼻子» (bízi) гэж юу вэ?",
+  "options": [
+   "нүд",
+   "хамар",
+   "чих",
+   "үс"
+  ],
+  "correct_answer": "хамар",
+  "explanation": "鼻子 = хамар.",
+  "order_index": 2,
+  "id": "yct-1-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«眼睛» (yǎnjing) гэж юу вэ?",
+  "options": [
+   "гар",
+   "хамар",
+   "чих",
+   "нүд"
+  ],
+  "correct_answer": "нүд",
+  "explanation": "眼睛 = нүд.",
+  "order_index": 3,
+  "id": "yct-1-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«手» (shǒu) гэж юу вэ?",
+  "options": [
+   "нүд",
+   "гар",
+   "чих",
+   "үс"
+  ],
+  "correct_answer": "гар",
+  "explanation": "手 = гар.",
+  "order_index": 4,
+  "id": "yct-1-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«耳朵» (ěrduo) гэж юу вэ?",
+  "options": [
+   "үс",
+   "чих",
+   "хамар",
+   "гар"
+  ],
+  "correct_answer": "чих",
+  "explanation": "耳朵 = чих.",
+  "order_index": 5,
+  "id": "yct-1-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«小» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өндөр",
+   "жижиг",
+   "урт",
+   "том"
+  ],
+  "correct_answer": "жижиг",
+  "explanation": "小 = жижиг.",
+  "order_index": 6,
+  "id": "yct-1-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«大» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өндөр",
+   "том",
+   "урт",
+   "жижиг"
+  ],
+  "correct_answer": "том",
+  "explanation": "大 = том.",
+  "order_index": 7,
+  "id": "yct-1-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«长» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "жижиг",
+   "өндөр",
+   "том",
+   "урт"
+  ],
+  "correct_answer": "урт",
+  "explanation": "长 = урт.",
+  "order_index": 8,
+  "id": "yct-1-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«高» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "урт",
+   "том",
+   "жижиг",
+   "өндөр"
+  ],
+  "correct_answer": "өндөр",
+  "explanation": "高 = өндөр.",
+  "order_index": 9,
+  "id": "yct-1-l06-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«真» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "биш",
+   "сайн",
+   "бас",
+   "үнэхээр"
+  ],
+  "correct_answer": "үнэхээр",
+  "explanation": "真 = үнэхээр.",
+  "order_index": 10,
+  "id": "yct-1-l06-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«个子» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "үс",
+   "биеийн өндөр",
+   "нүд",
+   "хамар"
+  ],
+  "correct_answer": "биеийн өндөр",
+  "explanation": "个子 = биеийн өндөр.",
+  "order_index": 11,
+  "id": "yct-1-l06-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хамар» хятадаар аль нь вэ?",
+  "options": [
+   "耳朵",
+   "头发",
+   "鼻子",
+   "眼睛"
+  ],
+  "correct_answer": "鼻子",
+  "explanation": "鼻子 = хамар.",
+  "order_index": 12,
+  "id": "yct-1-l06-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чих» хятадаар аль нь вэ?",
+  "options": [
+   "耳朵",
+   "眼睛",
+   "手",
+   "鼻子"
+  ],
+  "correct_answer": "耳朵",
+  "explanation": "耳朵 = чих.",
+  "order_index": 13,
+  "id": "yct-1-l06-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妹妹（ ）眼睛很小。",
+  "options": [
+   "吗",
+   "不",
+   "真",
+   "的"
+  ],
+  "correct_answer": "的",
+  "explanation": "Хэний юу гэхэд 的 тавина.",
+  "order_index": 14,
+  "id": "yct-1-l06-q14",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的个子（ ）高！(үнэхээр өндөр юм аа!)",
+  "options": [
+   "和",
+   "真",
+   "的",
+   "不"
+  ],
+  "correct_answer": "真",
+  "explanation": "Гайхахдаа 真.",
+  "order_index": 15,
+  "id": "yct-1-l06-q15",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "手（ ）大。(гар том биш)",
+  "options": [
+   "真",
+   "不",
+   "吗",
+   "的"
+  ],
+  "correct_answer": "不",
+  "explanation": "Биш гэхэд 不.",
+  "order_index": 16,
+  "id": "yct-1-l06-q16",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Заан анаашийг хараад юу гэсэн бэ?",
+  "options": [
+   "你的鼻子真长！",
+   "你是我们的妈妈吗？",
+   "我爱你们。",
+   "你的个子真高！"
+  ],
+  "correct_answer": "你的个子真高！",
+  "explanation": "Заан «你的个子真高!» гэж анаашийн өндрийг магтсан.",
+  "order_index": 17,
+  "id": "yct-1-l06-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Анааш заанд юу гэсэн бэ?",
+  "options": [
+   "我不是。",
+   "你的个子真高！",
+   "你的鼻子真长！",
+   "头发不长。"
+  ],
+  "correct_answer": "你的鼻子真长！",
+  "explanation": "Анааш заны урт хамрыг магтсан.",
+  "order_index": 18,
+  "id": "yct-1-l06-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«妹妹的头发不长。» гэдэг нь:",
+  "options": [
+   "Дүүгийн үс урт",
+   "Дүүгийн нүд том",
+   "Дүүгийн чих том",
+   "Дүүгийн үс урт биш"
+  ],
+  "correct_answer": "Дүүгийн үс урт биш",
+  "explanation": "不长 = урт биш.",
+  "order_index": 19,
+  "id": "yct-1-l06-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Мэлхийн төлүүдийн ээжийн нүд ямар вэ? (нугас хэлсэн)",
+  "options": [
+   "长",
+   "大",
+   "高",
+   "小"
+  ],
+  "correct_answer": "大",
+  "explanation": "Нугас «你们的妈妈眼睛很大» гэсэн.",
+  "order_index": 20,
+  "id": "yct-1-l06-q20",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яст мэлхий ямар шалтгаанаар ээж биш вэ?",
+  "options": [
+   "Нүд том",
+   "Дөрвөн хөлтэй",
+   "Өндөр",
+   "Сүүлгүй (没有尾巴)"
+  ],
+  "correct_answer": "Сүүлгүй (没有尾巴)",
+  "explanation": "乌龟 «你们的妈妈没有尾巴» гэсэн.",
+  "order_index": 21,
+  "id": "yct-1-l06-q21",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Мэлхийн төлүүдийн жинхэнэ ээж хэн бэ?",
+  "options": [
+   "鱼 (загас)",
+   "青蛙 (мэлхий)",
+   "鸭子 (нугас)",
+   "乌龟 (яст мэлхий)"
+  ],
+  "correct_answer": "青蛙 (мэлхий)",
+  "explanation": "青蛙 «我是你们的妈妈。我爱你们。» гэсэн.",
+  "order_index": 22,
+  "id": "yct-1-l06-q22",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «gèzi» гэж уншдаг үг:",
+  "options": [
+   "耳朵",
+   "眼睛",
+   "个子",
+   "鼻子"
+  ],
+  "correct_answer": "个子",
+  "explanation": "个子 = gèzi.",
+  "order_index": 23,
+  "id": "yct-1-l06-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yǎnjing» гэж уншдаг үг:",
+  "options": [
+   "头发",
+   "手",
+   "眼睛",
+   "耳朵"
+  ],
+  "correct_answer": "眼睛",
+  "explanation": "眼睛 = yǎnjing = нүд.",
+  "order_index": 24,
+  "id": "yct-1-l06-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзынхаа хамар урт байхыг хараад юу гэх вэ?",
+  "options": [
+   "你的鼻子不大。",
+   "你好！",
+   "你的鼻子真长！",
+   "再见！"
+  ],
+  "correct_answer": "你的鼻子真长！",
+  "explanation": "Гайхахдаа 真 + тэмдэг нэр.",
+  "order_index": 25,
+  "id": "yct-1-l06-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Юу ХОЁРЫН дундуур 的 тавьдаг вэ?",
+  "options": [
+   "Салах ёс",
+   "Тоо + тоо",
+   "Мэндчилгээ",
+   "Хэн + юу (妹妹的眼睛)"
+  ],
+  "correct_answer": "Хэн + юу (妹妹的眼睛)",
+  "explanation": "的 нь эзэмшил заана.",
+  "order_index": 26,
+  "id": "yct-1-l06-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

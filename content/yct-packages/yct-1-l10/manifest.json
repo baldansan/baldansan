@@ -1,0 +1,256 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-1",
+ "lessonId": "yct-1-l10",
+ "hskLevel": 1,
+ "lessonNumber": 10,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "现在几点？",
+ "mongolianTitle": "Одоо хэдэн цаг болж байна вэ?",
+ "series": "YCT 标准教程 1",
+ "seriesLabel_mn": "YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
+ "source": "YCT 标准教程 1 · 第10课 (сурах бичиг + CD аудио 10-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-1-10-text-song.mp3",
+  "dialogues": "audio/yct-1-10-text.mp3",
+  "words": "audio/yct-1-10-words.mp3",
+  "story": "audio/yct-1-10-story.mp3",
+  "song": "audio/yct-1-10-song.mp3",
+  "test": "audio/yct-1-10-test.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-1-l10",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "现在几点？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-xianzai",
+    "file": "images/w-xianzai.jpg",
+    "title": "现在",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jidian",
+    "file": "images/w-jidian.jpg",
+    "title": "几点",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dian",
+    "file": "images/w-dian.jpg",
+    "title": "点",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-fen",
+    "file": "images/w-fen.jpg",
+    "title": "分",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jian",
+    "file": "images/w-jian.jpg",
+    "title": "见",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zaoshang",
+    "file": "images/w-zaoshang.jpg",
+    "title": "早上",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-taizaole",
+    "file": "images/w-taizaole.jpg",
+    "title": "太早了",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "妈妈，现在几点？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "明天几点见？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "现在几点？",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "clock1",
+    "file": "images/clock1.png",
+    "title": "五点",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "clock2",
+    "file": "images/clock2.png",
+    "title": "十二点",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "clock3",
+    "file": "images/clock3.png",
+    "title": "一点十分",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "story1",
+    "file": "images/story1.png",
+    "title": "纽约",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story2",
+    "file": "images/story2.png",
+    "title": "北京",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story3",
+    "file": "images/story3.png",
+    "title": "悉尼",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story4",
+    "file": "images/story4.png",
+    "title": "北极",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3a",
+    "file": "images/t3a.png",
+    "title": "Test 3a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3b",
+    "file": "images/t3b.png",
+    "title": "Test 3b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3c",
+    "file": "images/t3c.png",
+    "title": "Test 3c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t7",
+    "file": "images/t7.png",
+    "title": "Test 7",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers х.63)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан)"
+ }
+}

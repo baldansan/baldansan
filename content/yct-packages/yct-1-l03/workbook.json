@@ -1,0 +1,142 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "listening",
+    "instruction_mn": "Сонсох — Аудио (03-05) сонсоод зөв зургийг сонго (A/B/C).",
+    "audio": "audio/yct-1-03-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）人",
+      "question_mn": "1-р асуулт: сонсоод зургаа сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png"
+      ],
+      "answer": "A",
+      "script_zh": "人",
+      "explanation_mn": "Аудионд «人 (rén) — хүн» гэж хэлнэ. A зураг дээр хүү (хүн) байна. B — муур, C — туулай, тэд хүн биш."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）中国人",
+      "question_mn": "2-р асуулт: сонсоод зургаа сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png"
+      ],
+      "answer": "B",
+      "script_zh": "中国人",
+      "explanation_mn": "«中国人 — хятад хүн». B зураг дээр хятад хувцастай хятад охин байна. A — цайвар үстэй гадаад охин, C — гадаад эмэгтэй."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）他很高兴。",
+      "question_mn": "3-р асуулт: сонсоод зургаа сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t3a.png",
+       "images/t3b.png",
+       "images/t3c.png"
+      ],
+      "answer": "C",
+      "script_zh": "他很高兴。",
+      "explanation_mn": "«他很高兴 — Тэр баяртай байна». «他» нь эрэгтэй хүүхэд. C зураг дээр хүү улаан загас барьж баярлан инээж байна. A — гэр бүл (хэд хэд хүн), B — охин (她) бөгөөд баяртай биш."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 1.A 2.B 3.C; Listening script х.61"
+   },
+   {
+    "part": 2,
+    "type": "judge",
+    "instruction_mn": "Унших — Зураг ба үг таарч байвал ✓, таарахгүй бол ✗.",
+    "items": [
+     {
+      "n": 4,
+      "question_zh": "二",
+      "image": "images/t4.png",
+      "answer": "✓",
+      "explanation_mn": "Зураг дээр хоёр гүзээлзгэнэ байна — хоёр бол 二 → ✓."
+     },
+     {
+      "n": 5,
+      "question_zh": "他",
+      "image": "images/t5.png",
+      "answer": "✗",
+      "explanation_mn": "Зураг дээр эмэгтэй хүн байна. 他 нь эрэгтэй хүнийг хэлнэ → ✗."
+     },
+     {
+      "n": 6,
+      "question_zh": "中国",
+      "image": "images/t6.png",
+      "answer": "✗",
+      "explanation_mn": "Номын хариу ✗ (х.63). Зураг дээр улаан туг, том хэрэм байна. Бид номын албан хариуг дагалаа."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 4.✓ 5.✗ 6.✗ (6-р асуулт зурагтай зөрөх мэт харагдана — номын хариуг хэрэглэв)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичих дасгал — «他是谁？» гэж асуугаад «他是……» гэж хариулсан хоёр өгүүлбэрийг ханзаар хуулж бич.",
+    "question_zh": "他是谁？他是成龙。",
+    "answer": "他是谁？他是成龙。",
+    "explanation_mn": "Эхлээд асуулт, дараа нь нэрээр хариулна."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Let's guess · Хосоороо: зургийг заагаад асуу, хариул.",
+    "question_zh": "他/她是谁？ 他/她是哪国人？",
+    "answer": "他是……。 他是中国人。",
+    "explanation_mn": "Хүнийг заагаад асууж, нэр, улсыг хариулна."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Бүлгээрээ найзуудаа танилцуул.",
+    "question_zh": "他/她是……，他/她是……国人。",
+    "answer": "她是……，她是中国人。",
+    "explanation_mn": "Нэр, улсаа хэлнэ."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«找朋友» дууг гараа таших хэрэгтэй дуул. Дараа нь гэрийнхэндээ дуулж өг.",
+    "question_zh": "找呀找呀找朋友……",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 03-03-ын хамт. Найзынхаа нэр, улсаар сольж дуул."
+   },
+   {
+    "n": 4,
+    "prompt_mn": "Мини түүхийг уншаад жүжигчилж тогло.",
+    "question_zh": "妈妈，她是谁？",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 03-04-ийн хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · х.61 Test Listening Scripts, х.63 Test Answers (Lesson 3)"
+}

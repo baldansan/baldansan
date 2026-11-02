@@ -1,0 +1,146 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你吃什么？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher Camel with glasses and the three foals sit at a colorful picnic table with rice, noodles, apples, milk and a cake; the teacher asks with a speech bubble with the Chinese text 你吃什么？ in large clear black font. Bright children's book illustration. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你吃什么？",
+  "section": "dialogue",
+  "prompt": "At a buffet restaurant an adult camel mother asks the girl camel which food to pick; speech bubble with the Chinese text 你吃什么？ in large clear black font; buffet tables with fruit, milk bottles and water. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "今天吃什么？",
+  "section": "dialogue",
+  "prompt": "A camel family around a dining table at the father's birthday, a big bowl of noodles in the middle; the yellow foal asks with a speech bubble with the Chinese text 今天吃什么？ in large clear black font. Adult camel father, mother, grandparents. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "你爱吃什么？",
+  "section": "song",
+  "prompt": "A panda eating bamboo, a monkey eating a banana and the yellow foal biting a red apple, singing together on a sunny meadow with music notes. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-mifan.jpg",
+  "aspect": "1:1",
+  "title": "米饭",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: a bowl of steaming white rice with chopsticks, on a cheerful table. Plain soft background. No English text, no letters.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-miantiao.jpg",
+  "aspect": "1:1",
+  "title": "面条",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: a big bowl of noodles with vegetables, the brown boy camel slurping noodles with chopsticks. Plain soft background. No English text, no letters.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-pingguo.jpg",
+  "aspect": "1:1",
+  "title": "苹果",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: a shiny red apple being held up by the girl camel with a smile. Plain soft background. No English text, no letters.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-niunai.jpg",
+  "aspect": "1:1",
+  "title": "牛奶",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: a glass of white milk with a milk moustache on the yellow foal's face. Plain soft background. No English text, no letters.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shui.jpg",
+  "aspect": "1:1",
+  "title": "水",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: a clear glass of water, the girl camel drinking it happily. Plain soft background. No English text, no letters.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-chi.jpg",
+  "aspect": "1:1",
+  "title": "吃",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: the yellow foal happily eating food with mouth open, spoon in hand, showing the action of eating. Plain soft background. No English text, no letters.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-he.jpg",
+  "aspect": "1:1",
+  "title": "喝",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: the brown foal drinking from a cup, showing the action of drinking. Plain soft background. No English text, no letters.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-ai.jpg",
+  "aspect": "1:1",
+  "title": "爱",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: the girl camel hugging a big slice of cake with hearts floating around, showing love for food. Plain soft background. No English text, no letters.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shenme.jpg",
+  "aspect": "1:1",
+  "title": "什么",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: the teacher camel holding two covered plates with a big question mark above, asking what is under them. Plain soft background. No English text, no letters.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-dangao.jpg",
+  "aspect": "1:1",
+  "title": "蛋糕",
+  "section": "vocabulary",
+  "prompt": "Cute children's book illustration: a birthday cake with strawberries and a candle, the yellow foal licking his lips. Plain soft background. No English text, no letters.",
+  "chars": [
+   "huu"
+  ]
+ }
+]

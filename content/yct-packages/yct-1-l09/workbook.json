@@ -1,0 +1,271 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "listening",
+    "instruction_mn": "Сонсох — Аудио (09-05) сонсоод зөв зургийг сонго (A/B/C).",
+    "audio": "audio/yct-1-09-test.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）A：今天星期几？B：今天星期一。",
+      "question_mn": "1-р асуулт: сонсоод зургаа сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png"
+      ],
+      "answer": "B",
+      "script_zh": "A：今天星期几？B：今天星期一。",
+      "explanation_mn": "«星期一 — даваа» гэдэг нь «нэг». B зураг дээр хүү нэг хуруугаа өргөжээ. A-д гурав, дөрөв хуруу, C-д охин хоёр хуруу (V) харуулж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）A：你不去学校吗？B：今天星期六。",
+      "question_mn": "2-р асуулт: сонсоод зургаа сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png"
+      ],
+      "answer": "B",
+      "script_zh": "A：你不去学校吗？B：今天星期六。",
+      "explanation_mn": "Бямба гарагт сургууль байхгүй. B зураг дээр охин теннисний цохиуртай, тоглохоор явна. A — нялх хүүхэд, C — ангид суугаа хүүхдүүд, сургуульд байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）A：再见。B：再见，明天见。",
+      "question_mn": "3-р асуулт: сонсоод зургаа сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t3a.png",
+       "images/t3b.png",
+       "images/t3c.png"
+      ],
+      "answer": "C",
+      "script_zh": "A：再见。B：再见，明天见。",
+      "explanation_mn": "«再见，明天见» — салах ёс, маргааш уулзана. C зураг дээр охин цонхоор гараа даллаж байна. A — ээжтэйгээ ном уншиж байна, B — ээж охиноо тэврэв."
+     }
+    ],
+    "answer_source": "Test Answers: 1.B 2.B 3.C; Listening script"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — Өгүүлбэр бүрт тохирох зургийг сонго (A, B, C, D).",
+    "items": [
+     {
+      "n": 4,
+      "question_zh": "今天星期二。",
+      "image": "images/t4c.png",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t4a.png",
+       "images/t4b.png",
+       "images/t4c.png",
+       "images/t4d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "星期二 — мягмар, «2» тоо. C зураг дээр эр хоёр хуруугаа өргөжээ. A — утсаар ярьж байна, B — «8» хуанли, D — дэлгүүрт байна."
+     },
+     {
+      "n": 5,
+      "question_zh": "今天10月8号。",
+      "image": "images/t4b.png",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t4a.png",
+       "images/t4b.png",
+       "images/t4c.png",
+       "images/t4d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "8号 — сарын 8. B зураг дээр хуанли дээр «8» гэж бичсэн."
+     },
+     {
+      "n": 6,
+      "question_zh": "妈妈明天去商店。",
+      "image": "images/t4d.png",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t4a.png",
+       "images/t4b.png",
+       "images/t4c.png",
+       "images/t4d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "商店 — дэлгүүр. D зураг дээр ээж дэлгүүрт сагстай хүнс авч байна."
+     },
+     {
+      "n": 7,
+      "question_zh": "A：我们哪天去学校？ B：星期六。",
+      "image": "images/t4a.png",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t4a.png",
+       "images/t4b.png",
+       "images/t4c.png",
+       "images/t4d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Бид хэзээ сургуульд явах вэ?» гэж асуух яриа. A зураг дээр охин утсаар ярьж асууж байна."
+     }
+    ],
+    "answer_source": "Test Answers: 4.C 5.B 6.D 7.A"
+   },
+   {
+    "part": 3,
+    "type": "choice",
+    "instruction_mn": "Mini story · 熊猫的一周 — зургийг хараад гарагийг сонго (story.png).",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "今天星期（ ），熊猫学跳舞。",
+      "image": "images/story.png",
+      "options": [
+       "星期五",
+       "星期三",
+       "星期天"
+      ],
+      "answer": "星期五",
+      "explanation_mn": "Зураг 5-д гурван панд бүжиглэж байна — баасан гариг (星期五)."
+     },
+     {
+      "n": 2,
+      "question_zh": "今天星期（ ），熊猫睡一天！",
+      "image": "images/story.png",
+      "options": [
+       "星期天",
+       "星期一",
+       "星期六"
+      ],
+      "answer": "星期天",
+      "explanation_mn": "Зураг 7-д панд унтаж байна — ням гариг (星期天)."
+     },
+     {
+      "n": 3,
+      "question_zh": "今天星期（ ），熊猫写汉字。",
+      "image": "images/story.png",
+      "options": [
+       "星期四",
+       "星期二",
+       "星期六"
+      ],
+      "answer": "星期四",
+      "explanation_mn": "Зураг 4-д панд ханз бичиж байна — пүрэв гариг (星期四)."
+     }
+    ],
+    "answer_source": "textbook х.42"
+   },
+   {
+    "part": 4,
+    "type": "choice",
+    "instruction_mn": "Let's chant — 星期歌-ийг нөх.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "今天星期一，明天星期（ ）。",
+      "options": [
+       "星期二",
+       "星期三",
+       "星期天"
+      ],
+      "answer": "星期二",
+      "explanation_mn": "Даваагийн маргааш мягмар — 星期二."
+     },
+     {
+      "n": 2,
+      "question_zh": "今天星期一，昨天星期（ ）。",
+      "options": [
+       "星期天",
+       "星期二",
+       "星期六"
+      ],
+      "answer": "星期天",
+      "explanation_mn": "Дууны сүүлийн мөр: 昨天星期天 — даваагийн өчигдөр ням."
+     }
+    ],
+    "answer_source": "textbook х.41 (chant)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Let's make — хуанлийн дээд мөрөнд гарагийн ханзуудыг бич: 日 一 二 三 四 五 六.",
+    "question_zh": "日 一 二 三 四 五 六",
+    "answer": "日 一 二 三 四 五 六",
+    "explanation_mn": "Хуанлийн дээд мөр: ням (日), даваа (一) … бямба (六)."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа гарагийг асуу.",
+    "question_zh": "今天星期几？",
+    "answer": "今天星期…",
+    "explanation_mn": "几-ийн оронд гарагаа хэл."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Төрсөн өдрөө хэл.",
+    "question_zh": "我的生日是…月…号。",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Өөрийн сар, өдрөө тавь."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«星期歌»-г дуул.",
+    "question_zh": "一、一、一，星期一……",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 09-03-ын хамт."
+   },
+   {
+    "n": 4,
+    "prompt_mn": "Дуртай гарагаа хэл.",
+    "question_zh": "我喜欢星期…",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Дуртай гарагаа нэрлээд яагаад гэдгийг монголоор хэл."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · Test Listening Scripts, Test Answers (Lesson 9: 1B 2B 3C 4C 5B 6D 7A)"
+}

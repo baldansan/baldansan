@@ -1,0 +1,200 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-1",
+ "lessonId": "yct-1-l11",
+ "hskLevel": 1,
+ "lessonNumber": 11,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你吃什么？",
+ "mongolianTitle": "Чи юу идэх вэ?",
+ "series": "YCT 标准教程 1",
+ "seriesLabel_mn": "YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
+ "source": "YCT 标准教程 1 · 第11课 (сурах бичиг + CD аудио 11-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-1-11-text-song.mp3",
+  "dialogues": "audio/yct-1-11-02.mp3",
+  "story": "audio/yct-1-11-03.mp3",
+  "words": "audio/yct-1-11-01.mp3",
+  "song": "audio/yct-1-11-04.mp3",
+  "test": "audio/yct-1-11-05.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-1-l11",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你吃什么？ — Чи юу идэх вэ?",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你吃什么？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "今天吃什么？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "你爱吃什么？",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "Mini story · 你喜欢吃什么？",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-mifan",
+    "file": "images/w-mifan.jpg",
+    "title": "米饭",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-miantiao",
+    "file": "images/w-miantiao.jpg",
+    "title": "面条",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-pingguo",
+    "file": "images/w-pingguo.jpg",
+    "title": "苹果",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-niunai",
+    "file": "images/w-niunai.jpg",
+    "title": "牛奶",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shui",
+    "file": "images/w-shui.jpg",
+    "title": "水",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chi",
+    "file": "images/w-chi.jpg",
+    "title": "吃",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-he",
+    "file": "images/w-he.jpg",
+    "title": "喝",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ai",
+    "file": "images/w-ai.jpg",
+    "title": "爱",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shenme",
+    "file": "images/w-shenme.jpg",
+    "title": "什么",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dangao",
+    "file": "images/w-dangao.jpg",
+    "title": "蛋糕",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t7",
+    "file": "images/t7.png",
+    "title": "Test 7",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t8",
+    "file": "images/t8.png",
+    "title": "Test 8",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers х.63)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

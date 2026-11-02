@@ -1,0 +1,542 @@
+[
+ {
+  "type": "choice",
+  "question": "«在» гэж юу вэ?",
+  "options": [
+   "явах",
+   "бид",
+   "байна, -д",
+   "хаана"
+  ],
+  "correct_answer": "байна, -д",
+  "explanation": "在 (zài) = байна — хаана байгааг хэлнэ.",
+  "order_index": 1,
+  "id": "yct-1-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«去» гэж юу вэ?",
+  "options": [
+   "явах",
+   "байна",
+   "баярлалаа",
+   "сургууль"
+  ],
+  "correct_answer": "явах",
+  "explanation": "去 (qù) = явах.",
+  "order_index": 2,
+  "id": "yct-1-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«谢谢» гэж юу вэ?",
+  "options": [
+   "баярлалаа",
+   "сайн уу",
+   "та нар",
+   "баяртай"
+  ],
+  "correct_answer": "баярлалаа",
+  "explanation": "谢谢 (xièxie) = баярлалаа.",
+  "order_index": 3,
+  "id": "yct-1-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你们» гэж юу вэ?",
+  "options": [
+   "бид",
+   "тэд",
+   "та нар",
+   "чи"
+  ],
+  "correct_answer": "та нар",
+  "explanation": "你们 = та нар.",
+  "order_index": 4,
+  "id": "yct-1-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«我们» гэж юу вэ?",
+  "options": [
+   "чи",
+   "бид",
+   "би",
+   "та нар"
+  ],
+  "correct_answer": "бид",
+  "explanation": "我们 = бид.",
+  "order_index": 5,
+  "id": "yct-1-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«哪儿» гэж юу вэ?",
+  "options": [
+   "тэнд",
+   "хаана, хаашаа",
+   "хэн",
+   "энд"
+  ],
+  "correct_answer": "хаана, хаашаа",
+  "explanation": "哪儿 (nǎr) = хаана, хаашаа.",
+  "order_index": 6,
+  "id": "yct-1-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«学校» гэж юу вэ?",
+  "options": [
+   "эмнэлэг",
+   "гэр",
+   "сургууль",
+   "дэлгүүр"
+  ],
+  "correct_answer": "сургууль",
+  "explanation": "学校 (xuéxiào) = сургууль.",
+  "order_index": 7,
+  "id": "yct-1-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«商店» гэж юу вэ?",
+  "options": [
+   "дэлгүүр",
+   "сургууль",
+   "багш",
+   "гэр"
+  ],
+  "correct_answer": "дэлгүүр",
+  "explanation": "商店 (shāngdiàn) = дэлгүүр.",
+  "order_index": 8,
+  "id": "yct-1-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Баярлалаа» хятадаар аль нь вэ?",
+  "options": [
+   "你好",
+   "再见",
+   "谢谢",
+   "学校"
+  ],
+  "correct_answer": "谢谢",
+  "explanation": "谢谢 = баярлалаа. 再见 = баяртай.",
+  "order_index": 9,
+  "id": "yct-1-l08-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дэлгүүр» хятадаар аль нь вэ?",
+  "options": [
+   "老师",
+   "鼻子",
+   "学校",
+   "商店"
+  ],
+  "correct_answer": "商店",
+  "explanation": "商店 = дэлгүүр. 学校 = сургууль.",
+  "order_index": 10,
+  "id": "yct-1-l08-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бид» хятадаар аль нь вэ?",
+  "options": [
+   "你们",
+   "我",
+   "我们",
+   "她"
+  ],
+  "correct_answer": "我们",
+  "explanation": "我们 = бид.",
+  "order_index": 11,
+  "id": "yct-1-l08-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nǎr» гэж уншдаг үг:",
+  "options": [
+   "哪儿",
+   "在",
+   "这儿",
+   "那儿"
+  ],
+  "correct_answer": "哪儿",
+  "explanation": "哪儿 = nǎr = хаана. 这儿 = zhèr = энд.",
+  "order_index": 12,
+  "id": "yct-1-l08-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xuéxiào» гэж уншдаг үг:",
+  "options": [
+   "学校",
+   "我们",
+   "谢谢",
+   "商店"
+  ],
+  "correct_answer": "学校",
+  "explanation": "学校 = xuéxiào = сургууль.",
+  "order_index": 13,
+  "id": "yct-1-l08-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xièxie» гэж уншдаг үг:",
+  "options": [
+   "商店",
+   "学校",
+   "谢谢",
+   "再见"
+  ],
+  "correct_answer": "谢谢",
+  "explanation": "谢谢 = xièxie = баярлалаа.",
+  "order_index": 14,
+  "id": "yct-1-l08-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "小红：你姐姐在家（ ）？",
+  "options": [
+   "哪儿",
+   "去",
+   "吗",
+   "们"
+  ],
+  "correct_answer": "吗",
+  "explanation": "Асуулт болгохын тулд төгсгөлд 吗 нэмнэ.",
+  "order_index": 15,
+  "id": "yct-1-l08-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "小明：不在，她（ ）学校。",
+  "options": [
+   "在",
+   "们",
+   "去哪儿",
+   "吗"
+  ],
+  "correct_answer": "在",
+  "explanation": "她在学校 — тэр сургууль дээр байна.",
+  "order_index": 16,
+  "id": "yct-1-l08-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈：我去商店，你们去（ ）？",
+  "options": [
+   "谢谢",
+   "在",
+   "哪儿",
+   "吗"
+  ],
+  "correct_answer": "吗",
+  "explanation": "你们去吗？ — та нар явах уу?",
+  "order_index": 17,
+  "id": "yct-1-l08-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸：不去。我们（ ）家。",
+  "options": [
+   "哪儿",
+   "在",
+   "谢谢",
+   "去"
+  ],
+  "correct_answer": "在",
+  "explanation": "我们在家 — бид гэртээ байна.",
+  "order_index": 18,
+  "id": "yct-1-l08-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "你姐姐在家吗？ — Зөв хариулт аль нь вэ?",
+  "options": [
+   "我去商店。",
+   "不在，她在学校。",
+   "鼻子在这儿。",
+   "谢谢你们。"
+  ],
+  "correct_answer": "不在，她在学校。",
+  "explanation": "Эгч байгаа эсэхийг асуулаа. «Байхгүй, сургууль дээр байна» гэж хариулна.",
+  "order_index": 19,
+  "id": "yct-1-l08-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "你去哪儿？ — Зөв хариулт аль нь вэ?",
+  "options": [
+   "不在。",
+   "谢谢。",
+   "她在家。",
+   "我去商店。"
+  ],
+  "correct_answer": "我去商店。",
+  "explanation": "Хаашаа гэж асуусан тул «Би дэлгүүр явна» гэж хариулна.",
+  "order_index": 20,
+  "id": "yct-1-l08-q20",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ээж хаашаа явах вэ?» хятадаар:",
+  "options": [
+   "妈妈谢谢？",
+   "妈妈在家吗？",
+   "妈妈去哪儿？",
+   "妈妈你们？"
+  ],
+  "correct_answer": "妈妈去哪儿？",
+  "explanation": "去哪儿 = хаашаа явах вэ.",
+  "order_index": 21,
+  "id": "yct-1-l08-q21",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дэлгүүр явахаа хэлэх өгүүлбэр аль нь вэ?",
+  "options": [
+   "我在商店吗？",
+   "我哪儿商店。",
+   "我们谢谢。",
+   "我去商店。"
+  ],
+  "correct_answer": "我去商店。",
+  "explanation": "去 + газар.",
+  "order_index": 22,
+  "id": "yct-1-l08-q22",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь танд ном өглөө. Юу гэж хэлэх вэ?",
+  "options": [
+   "你去哪儿？",
+   "谢谢！",
+   "不在。",
+   "再见！"
+  ],
+  "correct_answer": "谢谢！",
+  "explanation": "Өгсөнд баярлалаа гэнэ.",
+  "order_index": 23,
+  "id": "yct-1-l08-q23",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хоёр найздаа хандаж «Та нар явах уу?» гэж асуу:",
+  "options": [
+   "你去吗？",
+   "我们去吗？",
+   "你们在吗？",
+   "你们去吗？"
+  ],
+  "correct_answer": "你们去吗？",
+  "explanation": "你们 = та нар.",
+  "order_index": 24,
+  "id": "yct-1-l08-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би дэлгүүр явахгүй» хятадаар:",
+  "options": [
+   "我不在商店去",
+   "我不去商店",
+   "我去不商店",
+   "我们不商店"
+  ],
+  "correct_answer": "我不去商店",
+  "explanation": "不 нь 去-ийн өмнө орно.",
+  "order_index": 25,
+  "id": "yct-1-l08-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дуунд «鼻子在这儿» гэж юу заадаг вэ?",
+  "options": [
+   "Хамар явна",
+   "Хамар байхгүй",
+   "Хамар энд байна",
+   "Хамар тэнд байна"
+  ],
+  "correct_answer": "Хамар энд байна",
+  "explanation": "鼻子 = хамар, 在这儿 = энд байна.",
+  "order_index": 26,
+  "id": "yct-1-l08-q26",
+  "skillTags": [
+   "song"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«小手在那儿» гэж юу вэ?",
+  "options": [
+   "Бяцхан гар явна",
+   "Бяцхан гар байхгүй",
+   "Бяцхан гар тэнд байна",
+   "Бяцхан гар энд байна"
+  ],
+  "correct_answer": "Бяцхан гар тэнд байна",
+  "explanation": "那儿 = тэнд (холоос заана).",
+  "order_index": 27,
+  "id": "yct-1-l08-q27",
+  "skillTags": [
+   "song"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д панда «我去商店» гэхэд хаашаа явах вэ?",
+  "options": [
+   "Сургууль",
+   "Эмнэлэг",
+   "Дэлгүүр",
+   "Гэр"
+  ],
+  "correct_answer": "Дэлгүүр",
+  "explanation": "商店 = дэлгүүр. Муур сургууль, нохой гэр рүү явна.",
+  "order_index": 28,
+  "id": "yct-1-l08-q28",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д нохой «我回家» гэжээ. Тэр хаашаа явах вэ?",
+  "options": [
+   "Эмнэлэг",
+   "Сургууль",
+   "Дэлгүүр",
+   "Гэртээ"
+  ],
+  "correct_answer": "Гэртээ",
+  "explanation": "回家 = гэртээ харих.",
+  "order_index": 29,
+  "id": "yct-1-l08-q29",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«耳朵» гэж юу вэ?",
+  "options": [
+   "хамар",
+   "нүд",
+   "чих",
+   "үс"
+  ],
+  "correct_answer": "чих",
+  "explanation": "耳朵 = чих (өмнөх хичээл).",
+  "order_index": 30,
+  "id": "yct-1-l08-q30",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ }
+]

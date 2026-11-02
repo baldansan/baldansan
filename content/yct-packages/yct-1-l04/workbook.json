@@ -1,0 +1,221 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "judge",
+    "instruction_mn": "Сонсох — Аудио (04-05) сонсоод зураг таарч байвал ✓, таарахгүй бол ✗.",
+    "audio": "audio/yct-1-04-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）爸爸",
+      "image": "images/t1.png",
+      "script_zh": "爸爸",
+      "answer": "✓",
+      "explanation_mn": "Аудионд «爸爸 — аав» гэнэ. Зураг дээр охин аавынхаа нүдийг бүтээж байна, аав нь байна → ✓."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）一个人",
+      "image": "images/t2.png",
+      "script_zh": "一个人",
+      "answer": "✗",
+      "explanation_mn": "Аудионд «一个人 — нэг хүн». Зураг дээр буйдан дээр дөрвөн хүн сууж байна → ✗."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）爸爸和妈妈",
+      "image": "images/t3.png",
+      "script_zh": "爸爸和妈妈",
+      "answer": "✗",
+      "explanation_mn": "Аудионд «аав ба ээж». Зураг дээр охин ба ээж инээж байна, аав алга → ✗."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）她是我姐姐。",
+      "image": "images/t4.png",
+      "script_zh": "她是我姐姐。",
+      "answer": "✓",
+      "explanation_mn": "Аудионд «Тэр бол миний эгч». Зураг дээр завин дээр хоёр охин сууж байна — нэг нь эгч → ✓."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 1.✓ 2.✗ 3.✗ 4.✓; Listening script х.61"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — өгүүлбэрт тохирох зургийг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "我家有四口人。",
+      "question_mn": "Дөрвөн хүнтэй гэр бүл",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Манай гэрт дөрвөн хүн» — C зураг дээр аав, ээж, хоёр охин — 4 хүн. A хоёр охин, B хоёр хүү, D нэг хүү."
+     },
+     {
+      "n": 6,
+      "question_zh": "我有一个姐姐。",
+      "question_mn": "Нэг эгчтэй",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Надад нэг эгч бий» — A зураг дээр хоёр охин зэрэгцэж зогсож байна, нэг нь эгч. B хоёр хүү, C гэр бүл, D нэг хүү."
+     },
+     {
+      "n": 7,
+      "question_zh": "他是我哥哥。",
+      "question_mn": "Тэр бол миний ах",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Тэр бол миний ах» — B зураг дээр хоёр хүү, нэг нь нөгөөгөө үүрсэн ах дүү. A охид, C гэр бүл, D ганц хүү."
+     },
+     {
+      "n": 8,
+      "question_zh": "妈妈，再见。",
+      "question_mn": "Ээж ээ, баяртай",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Ээж ээ, баяртай» — D зураг дээр цүнхтэй хүү гараа даллаж байна. Салахдаа гар даллана."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 5.C 6.A 7.B 8.D"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's read — асуултад зөв хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你家有几口人？",
+      "answer": "四口人，爸爸、妈妈、哥哥和我。",
+      "explanation_mn": "Хэдэн хүн гэж асуусан тул тоогоо хэлнэ."
+     },
+     {
+      "n": 2,
+      "question_zh": "你有姐姐吗？",
+      "answer": "没有。我有一个妹妹。",
+      "explanation_mn": "Эгч байхгүй, дүү охин бий."
+     }
+    ],
+    "answer_source": "textbook х.15 (Let's read)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Mini story — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我家有三口人，爸爸、妈妈和我。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр аав, ээж, хүүхэд буйдан дээр сууж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "我爱爸爸妈妈，爸爸妈妈也爱我。",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр аав ээж хүүхдээ тэвэрч байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "我有一只小狗和一只小猫。",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр хүү нохой, мууртайгаа тоглож байна."
+     },
+     {
+      "n": 4,
+      "question_zh": "豆豆爱多多，多多也爱豆豆。",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр нохой ба муур хамт идэж байна."
+     }
+    ],
+    "answer_source": "textbook х.16 (Mini story)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ханз бичих — «аав», «ээж» гэсэн ханзыг дахин бичиж хуулж үз.",
+    "question_zh": "爸爸 妈妈",
+    "answer": "爸爸 妈妈",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Гэр бүлээ хятадаар танилцуул.",
+    "question_zh": "我家有……口人，……和我。",
+    "answer": "我家有……口人",
+    "explanation_mn": "Let's draw — зурсан гэр бүлээ танилцуул."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Найзаасаа ах эгчийг нь асуу.",
+    "question_zh": "你有姐姐吗？",
+    "answer": "你有姐姐吗？",
+    "explanation_mn": "Хосоороо ээлжлэн."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«我爱我的家» chant-ыг гараараа зүрх хийж хэл.",
+    "question_zh": "我爱我的家",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 04-04-ийн хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · х.61 Test Listening Scripts, х.63 Test Answers (Lesson 4)"
+}

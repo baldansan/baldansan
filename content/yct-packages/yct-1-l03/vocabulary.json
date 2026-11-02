@@ -1,0 +1,86 @@
+[
+ {
+  "chinese": "他",
+  "pinyin": "tā",
+  "mongolian": "тэр (эрэгтэй хүн)",
+  "notes": "төлөөний үг · гол үг",
+  "exampleChinese": "他是成龙。",
+  "examplePinyin": "Tā shì Chéng Lóng.",
+  "exampleMongolian": "Тэр бол Чэн Лун.",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "是",
+  "pinyin": "shì",
+  "mongolian": "бол, мөн",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "他是成龙。",
+  "examplePinyin": "Tā shì Chéng Lóng.",
+  "exampleMongolian": "Тэр бол Чэн Лун.",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "谁",
+  "pinyin": "shéi",
+  "mongolian": "хэн",
+  "notes": "асуух үг · гол үг",
+  "exampleChinese": "他是谁？",
+  "examplePinyin": "Tā shì shéi?",
+  "exampleMongolian": "Тэр хэн бэ?",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "哪",
+  "pinyin": "nǎ",
+  "mongolian": "аль",
+  "notes": "асуух үг · гол үг",
+  "exampleChinese": "成龙是哪国人？",
+  "examplePinyin": "Chéng Lóng shì nǎ guó rén?",
+  "exampleMongolian": "Чэн Лун аль улсын хүн бэ?",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "国",
+  "pinyin": "guó",
+  "mongolian": "улс",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "中国",
+  "examplePinyin": "Zhōngguó",
+  "exampleMongolian": "Хятад улс",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "人",
+  "pinyin": "rén",
+  "mongolian": "хүн",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "他是中国人。",
+  "examplePinyin": "Tā shì Zhōngguó rén.",
+  "exampleMongolian": "Тэр бол хятад хүн.",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "中国人",
+  "pinyin": "Zhōngguó rén",
+  "mongolian": "хятад хүн",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "他是中国人。",
+  "examplePinyin": "Tā shì Zhōngguó rén.",
+  "exampleMongolian": "Тэр бол хятад хүн.",
+  "hskLevel": "YCT 1",
+  "keyWord": true,
+  "orderIndex": 7
+ }
+]

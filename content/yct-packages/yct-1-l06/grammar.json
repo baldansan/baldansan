@@ -1,0 +1,233 @@
+[
+ {
+  "point": "妹妹的眼睛很小。— хэний юу нь ямар",
+  "gloss_mn": "«Дүүгийн нүд жижиг» — хэн + 的 + юу + 很 + ямар",
+  "structure": "хэн + 的 + юу + 很 + тэмдэг нэр",
+  "teacher_mn": "Хэний ямар зүйл ямар болохыг хэлж сурцгаая. Эхлээд хэний зүйл вэ гэдгийг хэл: 妹妹的眼睛 — дүүгийн нүд. Дараа нь тэр нь ямар вэ гэдгийг нэм: 很小 — жижигхэн. Дундаа 的-г мартуузай!",
+  "teacher_notes": "Тэмдэг нэрийн өмнө 很 тавина; 很 заавал «маш» гэсэн утгагүй, зүгээр л «нүд нь жижиг». Хүүхдүүдэд найзынхаа биеийн хэсгийг заалгаж хэлүүл.",
+  "examples": [
+   {
+    "chinese": "妹妹的眼睛很小。",
+    "pinyin": "Mèimei de yǎnjing hěn xiǎo.",
+    "mongolian": "Дүүгийн нүд жижигхэн."
+   },
+   {
+    "chinese": "妹妹的耳朵很小。",
+    "pinyin": "Mèimei de ěrduo hěn xiǎo.",
+    "mongolian": "Дүүгийн чих жижигхэн."
+   },
+   {
+    "chinese": "你们的妈妈眼睛很大。",
+    "pinyin": "Nǐmen de māma yǎnjing hěn dà.",
+    "mongolian": "Таны ээж нүд нь том."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "妹妹眼睛的很小",
+    "right": "妹妹的眼睛很小",
+    "why": "的 нь хэн ба юу гэсэн хоёр үгийн дунд орно."
+   }
+  ],
+  "check": {
+   "question": "«Дүүгийн чих» хятадаар:",
+   "options": [
+    "妹妹耳朵的",
+    "耳朵妹妹",
+    "妹妹的耳朵"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你________鼻子很长。",
+    "options": [
+     "不",
+     "真",
+     "的"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! Чиний хамар — 你的鼻子.",
+    "explanation_wrong_mn": "Хэний юу гэхэд 的."
+   },
+   {
+    "type": "judge",
+    "question": "«妹妹的头发很长» гэдэг нь «дүүгийн үс урт».",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "妹妹 = дүү, 头发 = үс, 长 = урт."
+   },
+   {
+    "type": "choice",
+    "question": "«Нүд том» хятадаар?",
+    "options": [
+     "耳朵很大",
+     "眼睛很小",
+     "眼睛很大"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "大 = том, 小 = жижиг, 眼睛 = нүд."
+   }
+  ]
+ },
+ {
+  "point": "你的个子真高！— 真 (үнэхээр)",
+  "gloss_mn": "«Чи үнэхээр өндөр юм аа!» — гайхан магтах",
+  "structure": "хэн + 的 + юу + 真 + тэмдэг нэр！",
+  "teacher_mn": "Ямар нэг зүйлд гайхахдаа 真 гэж хэлдэг. 你的个子真高! — Чи үнэхээр өндөр юм аа! Заан анаашийг хараад ингэж хэлсэн. Чи ч найзаа магтахдаа хэлээрэй!",
+  "teacher_notes": "真 ба 很 хоёр тэмдэг нэрийн өмнө. 真-ийг гайхсан, баярласан өнгөөр хэл.",
+  "examples": [
+   {
+    "chinese": "你的个子真高！",
+    "pinyin": "Nǐ de gèzi zhēn gāo!",
+    "mongolian": "Чи үнэхээр өндөр юм аа!"
+   },
+   {
+    "chinese": "你的鼻子真长！",
+    "pinyin": "Nǐ de bízi zhēn cháng!",
+    "mongolian": "Чиний хамар үнэхээр урт юм аа!"
+   },
+   {
+    "chinese": "你的耳朵真大！",
+    "pinyin": "Nǐ de ěrduo zhēn dà!",
+    "mongolian": "Чиний чих үнэхээр том юм аа!"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "你的个子高真",
+    "right": "你的个子真高",
+    "why": "真 нь тэмдэг нэрийн ӨМНӨ."
+   }
+  ],
+  "check": {
+   "question": "Заан анаашийг хараад гайхаж хэлнэ:",
+   "options": [
+    "你的个子真高！",
+    "你的个子不高。",
+    "你的手很小。"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你的鼻子________长！(үнэхээр)",
+    "options": [
+     "不",
+     "真",
+     "的"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 真 = үнэхээр.",
+    "explanation_wrong_mn": "不 = биш, 的 = эзэмшил."
+   },
+   {
+    "type": "judge",
+    "question": "«真» гэдэг нь «биш» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "false",
+    "explanation_correct_mn": "Зөв — 真 = үнэхээр, 不 = биш.",
+    "explanation_wrong_mn": "真 = үнэхээр."
+   },
+   {
+    "type": "choice",
+    "question": "«Чи үнэхээр өндөр юм аа!»",
+    "options": [
+     "你的个子不高。",
+     "你的鼻子真长！",
+     "你的个子真高！"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "个子 = өндөр, 鼻子 = хамар."
+   }
+  ]
+ },
+ {
+  "point": "不 + тэмдэг нэр — «биш»",
+  "gloss_mn": "手不大 — гар том биш; 头发不长 — үс урт биш",
+  "structure": "юу + 不 + тэмдэг нэр",
+  "teacher_mn": "Ямар нэг зүйл тийм биш гэж хэлэхдээ тэмдэг нэрийн өмнө 不 тавина. 手不大 — гар том биш. 头发不长 — үс урт биш. Дүүгийн үс богино байна, тэгэхээр 头发不长!",
+  "teacher_notes": "不 нь 很-ийн оронд орно: 很大 → 不大 (хоёулаа зэрэг тавихгүй). Асуулт: 大吗？— том уу?",
+  "examples": [
+   {
+    "chinese": "手不大。",
+    "pinyin": "Shǒu bù dà.",
+    "mongolian": "Гар том биш."
+   },
+   {
+    "chinese": "头发不长。",
+    "pinyin": "Tóufa bù cháng.",
+    "mongolian": "Үс урт биш."
+   },
+   {
+    "chinese": "他的个子不高。",
+    "pinyin": "Tā de gèzi bù gāo.",
+    "mongolian": "Түүний өндөр өндөр биш."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "头发很不长",
+    "right": "头发不长",
+    "why": "不 ба 很-г хамт тавихгүй."
+   }
+  ],
+  "check": {
+   "question": "«Үс урт биш» хятадаар:",
+   "options": [
+    "头发很长",
+    "头发长不",
+    "头发不长"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "手________大。(том биш)",
+    "options": [
+     "真",
+     "的",
+     "不"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "Биш = 不."
+   },
+   {
+    "type": "judge",
+    "question": "«他的个子不高» гэдэг нь «тэр өндөр биш».",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "不 = биш, 高 = өндөр."
+   },
+   {
+    "type": "choice",
+    "question": "«Чих жижиг» хятадаар?",
+    "options": [
+     "耳朵很大",
+     "耳朵很小",
+     "耳朵不小"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "小 = жижиг."
+   }
+  ]
+ }
+]

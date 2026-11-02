@@ -1,0 +1,186 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-1",
+ "lessonId": "yct-1-l08",
+ "hskLevel": 1,
+ "lessonNumber": 8,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我去商店。",
+ "mongolianTitle": "Би дэлгүүр явна",
+ "series": "YCT 标准教程 1",
+ "seriesLabel_mn": "YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
+ "source": "YCT 标准教程 1 · 第8课 (сурах бичиг + CD аудио 08-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-1-08-text-song.mp3",
+  "dialogues": "audio/yct-1-08-text.mp3",
+  "words": "audio/yct-1-08-words.mp3",
+  "song": "audio/yct-1-08-song.mp3",
+  "story": "audio/yct-1-08-story.mp3",
+  "test": "audio/yct-1-08-test.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-1-l08",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我去商店。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你姐姐在家吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "我去商店，你们去吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d3",
+    "file": "images/d3.jpg",
+    "title": "你们去哪儿？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "鼻子在这儿",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-zai",
+    "file": "images/w-zai.jpg",
+    "title": "在",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiexie",
+    "file": "images/w-xiexie.jpg",
+    "title": "谢谢",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qu",
+    "file": "images/w-qu.jpg",
+    "title": "去",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nimen",
+    "file": "images/w-nimen.jpg",
+    "title": "你们",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-women",
+    "file": "images/w-women.jpg",
+    "title": "我们",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nar",
+    "file": "images/w-nar.jpg",
+    "title": "哪儿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xuexiao",
+    "file": "images/w-xuexiao.jpg",
+    "title": "学校",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shangdian",
+    "file": "images/w-shangdian.jpg",
+    "title": "商店",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tA",
+    "file": "images/tA.png",
+    "title": "Test A",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tB",
+    "file": "images/tB.png",
+    "title": "Test B",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tC",
+    "file": "images/tC.png",
+    "title": "Test C",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tD",
+    "file": "images/tD.png",
+    "title": "Test D",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers х.63)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

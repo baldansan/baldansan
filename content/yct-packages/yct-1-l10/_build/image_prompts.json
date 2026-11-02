@@ -1,0 +1,122 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "现在几点？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel (yellow camel with glasses) points at a big wall clock showing 5 o'clock while the yellow camel boy checks his wristwatch and the girl camel jumps with joy; speech bubble with the Chinese text 现在几点？ in large clear black font in a bright classroom. No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xianzai.jpg",
+  "aspect": "1:1",
+  "title": "现在",
+  "section": "vocabulary",
+  "prompt": "The yellow camel boy points at his wristwatch with a bright 'right now' sparkle, a glowing 'now' arrow pointing at the clock hands, cheerful face. No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jidian.jpg",
+  "aspect": "1:1",
+  "title": "几点",
+  "section": "vocabulary",
+  "prompt": "The girl camel holds a wall clock and tilts her head with a big question mark above, asking what time it is, curious face. No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-dian.jpg",
+  "aspect": "1:1",
+  "title": "点",
+  "section": "vocabulary",
+  "prompt": "A big round wall clock showing exactly 5 o'clock (short hand on 5, long hand on 12), the brown camel boy pointing proudly at it. No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-fen.jpg",
+  "aspect": "1:1",
+  "title": "分",
+  "section": "vocabulary",
+  "prompt": "A big clock with the long minute hand highlighted in red pointing at 2 (ten minutes past one), the yellow camel boy tracing the minute hand with his finger. No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jian.jpg",
+  "aspect": "1:1",
+  "title": "见",
+  "section": "vocabulary",
+  "prompt": "Two camel kids (yellow boy and girl in yellow dress) meeting happily and shaking hands at a park gate with a clock above. No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zaoshang.jpg",
+  "aspect": "1:1",
+  "title": "早上",
+  "section": "vocabulary",
+  "prompt": "Sunrise over the ger and hills in the morning, the yellow camel boy stretches awake by his window, bright orange sun. No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-taizaole.jpg",
+  "aspect": "1:1",
+  "title": "太早了",
+  "section": "vocabulary",
+  "prompt": "The sleepy brown camel boy in a green hat yawns in pajamas holding an alarm clock showing 5 o'clock, dark sky with a morning star, shocked and sleepy. No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "妈妈，现在几点？",
+  "section": "dialogue",
+  "prompt": "Inside a cozy home, the yellow camel boy at the table looks at his wristwatch and asks his adult camel mother (adult female camel in an orange blouse) who is washing dishes in the kitchen; speech bubble with the Chinese text 妈妈，现在几点？ in large clear black font, mother's bubble 十一点十分。 No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "huu",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "明天几点见？",
+  "section": "dialogue",
+  "prompt": "Three camel kids in a park: the yellow boy asks the others to meet, the green-hat brown boy holds five fingers and the yellow boy covers his face yawning; speech bubble with the Chinese text 明天几点见？ in large clear black font, another bubble 太早了！ No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "huu",
+   "bor",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "现在几点？",
+  "section": "song",
+  "prompt": "Teacher camel and the camel kids hold hands in a circle dancing under fireworks, each child using arms like clock hands, a large clock above the circle, joyful singing. No English text, children's picture-book illustration style, bright warm colors.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

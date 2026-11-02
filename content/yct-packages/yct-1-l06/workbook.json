@@ -1,0 +1,217 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "listening",
+    "instruction_mn": "Сонсох — Аудио (06-05) сонсоод, зураг нь сонссон үгтэй таарвал ✓, таарахгүй бол ✗ сонго.",
+    "audio": "audio/yct-1-06-test.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）眼睛",
+      "question_mn": "1-р асуулт",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "image": "images/t1.png",
+      "answer": "✓",
+      "script_zh": "眼睛",
+      "explanation_mn": "Аудионд «眼睛 — нүд» гэнэ. Зурагт нүд байна → таарч байна ✓."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）头发",
+      "question_mn": "2-р асуулт",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "image": "images/t2.png",
+      "answer": "✗",
+      "script_zh": "头发",
+      "explanation_mn": "Аудионд «头发 — үс» гэнэ. Зурагт толгой нь халзан эр байна, үс байхгүй → таарахгүй ✗."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）手",
+      "question_mn": "3-р асуулт",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "image": "images/t3.png",
+      "answer": "✓",
+      "script_zh": "手",
+      "explanation_mn": "Аудионд «手 — гар» гэнэ. Зурагт хоёр гар байна → ✓."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）鼻子",
+      "question_mn": "4-р асуулт",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "image": "images/t4.png",
+      "answer": "✗",
+      "script_zh": "鼻子",
+      "explanation_mn": "Аудионд «鼻子 — хамар» гэнэ. Зурагт туулайн чих байна (хамар биш) → ✗."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 1.✓ 2.✗ 3.✓ 4.✗; скрипт 1.眼睛 2.头发 3.手 4.鼻子"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — өгүүлбэрийг уншаад тохирох зургийг сонго (A, B, C, D).",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "我的鼻子很长。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/tpa.png",
+       "images/tpb.png",
+       "images/tpc.png",
+       "images/tpd.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Миний хамар урт» — урт хамартай заан (A). B хүү чихээ таглаж байна, C нь жижиг хүүхэд, D нь урт үстэй охин."
+     },
+     {
+      "n": 6,
+      "question_zh": "她的头发很长。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/tpa.png",
+       "images/tpb.png",
+       "images/tpc.png",
+       "images/tpd.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Түүний үс урт» — урт үстэй охин (D). Заан, хүү, жижиг хүүхэд биш."
+     },
+     {
+      "n": 7,
+      "question_zh": "他的个子不高。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/tpa.png",
+       "images/tpb.png",
+       "images/tpc.png",
+       "images/tpd.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Түүний өндөр өндөр биш» — том шуудангийн хайрцагны дэргэд жижигхэн хүүхэд (C)."
+     },
+     {
+      "n": 8,
+      "question_zh": "这是我的耳朵。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/tpa.png",
+       "images/tpb.png",
+       "images/tpc.png",
+       "images/tpd.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Энэ бол миний чих» — хүү хоёр чихээ барьж байна (B)."
+     }
+    ],
+    "answer_source": "Номд 5–8-ийн албан хариу байхгүй (зургаар тодорхойлсон): 5A 6D 7C 8B"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Mini story — хэн юу гэснийг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你们的妈妈眼睛很大。",
+      "answer": "鸭子",
+      "explanation_mn": "Нугас: «таны ээж нүд нь том»."
+     },
+     {
+      "n": 2,
+      "question_zh": "你们的妈妈有四条腿。",
+      "answer": "鱼",
+      "explanation_mn": "Загас: «таны ээж дөрвөн хөлтэй»."
+     },
+     {
+      "n": 3,
+      "question_zh": "你们的妈妈没有尾巴。",
+      "answer": "乌龟",
+      "explanation_mn": "Яст мэлхий: «таны ээж сүүлгүй»."
+     },
+     {
+      "n": 4,
+      "question_zh": "我是你们的妈妈。",
+      "answer": "青蛙",
+      "explanation_mn": "Мэлхий өөрөө ээж нь."
+     }
+    ],
+    "answer_source": "textbook х.27 Mini story",
+    "image": "images/story.png"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Let's draw — найз эсвэл амьтны зураг зураад, ямар нүдтэй, чихтэй, өндөр уу гэдгийг хятадаар тодорхойл.",
+    "question_zh": "他的眼睛很大。",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "«很» ба «真» ашигла."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзынхаа тухай «很» ба «真» ашиглаж 2 өгүүлбэр хэл.",
+    "question_zh": "你的眼睛很大。你的个子真高！",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Pair work."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Mini story-г 4 хүүхэд болж жүжигл.",
+    "question_zh": "你是我们的妈妈吗？",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 06-04."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«身体部位» дууг дуул.",
+    "question_zh": "头、肩膀、膝盖、脚",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 06-03."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · х.28 Test, Test Answers (Lesson 6)"
+}

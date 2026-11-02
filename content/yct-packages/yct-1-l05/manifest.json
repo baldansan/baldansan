@@ -1,0 +1,214 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-1",
+ "lessonId": "yct-1-l05",
+ "hskLevel": 1,
+ "lessonNumber": 5,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我6岁。",
+ "mongolianTitle": "Би 6 настай",
+ "series": "YCT 标准教程 1",
+ "seriesLabel_mn": "YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
+ "source": "YCT 标准教程 1 · 第5课 (сурах бичиг + CD аудио 05-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-1-05-text-song.mp3",
+  "dialogues": "audio/yct-1-05-text.mp3",
+  "words": "audio/yct-1-05-words.mp3",
+  "song": "audio/yct-1-05-song.mp3",
+  "story": "audio/yct-1-05-story.mp3",
+  "test": "audio/yct-1-05-test.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-1-l05",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我6岁。 — нас хэлцгээе",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "月月，你几岁？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你哥哥多大？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "你几岁？",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "numgrid",
+    "file": "images/numgrid.png",
+    "title": "1–100 тооны хүснэгт",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-sui",
+    "file": "images/w-sui.jpg",
+    "title": "岁",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ji",
+    "file": "images/w-ji.jpg",
+    "title": "几",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-duoda",
+    "file": "images/w-duoda.jpg",
+    "title": "多大",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ye",
+    "file": "images/w-ye.jpg",
+    "title": "也",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nin",
+    "file": "images/w-nin.jpg",
+    "title": "您",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mimi",
+    "file": "images/w-mimi.jpg",
+    "title": "秘密",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shiyi",
+    "file": "images/w-shiyi.jpg",
+    "title": "十一",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ershi",
+    "file": "images/w-ershi.jpg",
+    "title": "二十",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yibai",
+    "file": "images/w-yibai.jpg",
+    "title": "一百",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "story1",
+    "file": "images/story1.png",
+    "title": "Mini story 1",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story2",
+    "file": "images/story2.png",
+    "title": "Mini story 2",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story3",
+    "file": "images/story3.png",
+    "title": "Mini story 3",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story4",
+    "file": "images/story4.png",
+    "title": "Mini story 4",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t7",
+    "file": "images/t7.png",
+    "title": "Test 7",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers х.63)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

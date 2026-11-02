@@ -1,0 +1,178 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "listening",
+    "instruction_mn": "Сонсох — Аудио (02-03) сонсоод өгүүлбэр зурагтай таарвал ✓, таарахгүй бол ✗.",
+    "audio": "audio/yct-1-02-test.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）她不高兴。",
+      "question_mn": "1-р асуулт: сонсоод зурагтай тулга",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "image": "images/t1.png",
+      "answer": "✗",
+      "script_zh": "她不高兴。",
+      "explanation_mn": "Аудионд «她不高兴 — тэр баярлахгүй байна». Зурагт бүсгүй баяртай, инээж байна. Тиймээс таарахгүй → ✗."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）我不认识她。",
+      "question_mn": "2-р асуулт: сонсоод зурагтай тулга",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "image": "images/t2.png",
+      "answer": "✗",
+      "script_zh": "我不认识她。",
+      "explanation_mn": "Аудионд «我不认识她 — би түүнийг танихгүй». Зурагт ээж охин хоёр хамт таарч байна — бие биеээ сайн мэднэ. Таарахгүй → ✗."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）认识你很高兴。",
+      "question_mn": "3-р асуулт: сонсоод зурагтай тулга",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "image": "images/t3.png",
+      "answer": "✓",
+      "script_zh": "认识你很高兴。",
+      "explanation_mn": "Аудионд «认识你很高兴 — танилцсандаа баяртай байна». Зурагт хоёр том хүн гар барьж танилцаж байна → ✓."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 1.✗ 2.✗ 3.✓; Listening script х.61"
+   },
+   {
+    "part": 2,
+    "type": "judge",
+    "instruction_mn": "Унших — Зураг ба үг таарч байвал ✓, таарахгүй бол ✗.",
+    "items": [
+     {
+      "n": 4,
+      "question_zh": "她",
+      "image": "images/t4.png",
+      "answer": "✓",
+      "explanation_mn": "Зурагт охин байна. 她 = тэр охин → ✓."
+     },
+     {
+      "n": 5,
+      "question_zh": "很好",
+      "image": "images/t5.png",
+      "answer": "✓",
+      "explanation_mn": "Хүү эрхий хуруугаа өргөж байна — «маш сайн» → ✓."
+     },
+     {
+      "n": 6,
+      "question_zh": "高兴",
+      "image": "images/t6.png",
+      "answer": "✗",
+      "explanation_mn": "Зурагт хүү гунигтай байна. 高兴 = баяртай → таарахгүй, ✗."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 4.✓ 5.✓ 6.✗"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's match — хэллэг ба хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你好。",
+      "answer": "你好。",
+      "explanation_mn": "Сайн уу → Сайн уу (B)."
+     },
+     {
+      "n": 2,
+      "question_zh": "你叫什么？",
+      "answer": "我叫月月。",
+      "explanation_mn": "Нэр асуувал нэрээ хэлнэ (C)."
+     },
+     {
+      "n": 3,
+      "question_zh": "你认识她吗？",
+      "answer": "不认识。",
+      "explanation_mn": "Танихгүй бол «不认识» (A)."
+     }
+    ],
+    "answer_source": "textbook х.7"
+   },
+   {
+    "part": 4,
+    "type": "choice",
+    "instruction_mn": "Let's play — Хятад нэр бүтээх: овог + өөрийн нэр.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "李 + 芳 = ？",
+      "question_mn": "Ли овогтой, «芳» нэртэй охиныг юу гэх вэ?",
+      "options": [
+       "李芳",
+       "芳李",
+       "李月"
+      ],
+      "answer": "李芳",
+      "explanation_mn": "Овог эхэнд, нэр ард: 李芳. 芳李 — буруу дараалал; 李月 — өөр нэр."
+     },
+     {
+      "n": 2,
+      "question_zh": "张 + 伟强 = ？",
+      "question_mn": "Жан овогтой «伟强» нэртэй хүү:",
+      "options": [
+       "张伟强",
+       "伟强张",
+       "王伟强"
+      ],
+      "answer": "张伟强",
+      "explanation_mn": "Овог 张 эхэлнэ: 张伟强. 王 бол өөр овог."
+     }
+    ],
+    "answer_source": "textbook х.7 Let's play"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Хятад нэрээ нэрийн хуудсан дээр том том бич.",
+    "question_zh": "我叫……",
+    "answer": "(өөрийн нэр)",
+    "explanation_mn": "Овог + өөрийн нэр: жишээ нь 李芳."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа нэрийг нь асуу.",
+    "question_zh": "你叫什么？",
+    "answer": "你叫什么？",
+    "explanation_mn": "Нэр асуух өгүүлбэр."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Өөрийгөө танилцуул.",
+    "question_zh": "你好！我叫……",
+    "answer": "你好！我叫……",
+    "explanation_mn": "我叫 + нэр."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "Танилцсандаа баяртай байгаагаа хэл.",
+    "question_zh": "认识你很高兴！",
+    "answer": "认识你很高兴！",
+    "explanation_mn": "Танилцахдаа хэлдэг эелдэг үг."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · х.61 Test Listening Scripts, х.63 Test Answers (Lesson 2)"
+}

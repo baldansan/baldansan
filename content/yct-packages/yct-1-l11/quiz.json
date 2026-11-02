@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Будаа» хятадаар аль нь вэ?",
+  "options": [
+   "米饭",
+   "牛奶",
+   "面条",
+   "苹果"
+  ],
+  "correct_answer": "米饭",
+  "explanation": "米饭 (mǐfàn) = будаа.",
+  "order_index": 1,
+  "id": "yct-1-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Гоймон» хятадаар аль нь вэ?",
+  "options": [
+   "米饭",
+   "蛋糕",
+   "水",
+   "面条"
+  ],
+  "correct_answer": "面条",
+  "explanation": "面条 (miàntiáo) = гоймон.",
+  "order_index": 2,
+  "id": "yct-1-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Алим» хятадаар аль нь вэ?",
+  "options": [
+   "米饭",
+   "蛋糕",
+   "牛奶",
+   "苹果"
+  ],
+  "correct_answer": "苹果",
+  "explanation": "苹果 (píngguǒ) = алим.",
+  "order_index": 3,
+  "id": "yct-1-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сүү» хятадаар аль нь вэ?",
+  "options": [
+   "苹果",
+   "牛奶",
+   "面条",
+   "水"
+  ],
+  "correct_answer": "牛奶",
+  "explanation": "牛奶 (niúnǎi) = сүү.",
+  "order_index": 4,
+  "id": "yct-1-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ус» хятадаар аль нь вэ?",
+  "options": [
+   "水",
+   "米饭",
+   "牛奶",
+   "蛋糕"
+  ],
+  "correct_answer": "水",
+  "explanation": "水 (shuǐ) = ус.",
+  "order_index": 5,
+  "id": "yct-1-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бялуу» хятадаар аль нь вэ?",
+  "options": [
+   "水",
+   "蛋糕",
+   "苹果",
+   "面条"
+  ],
+  "correct_answer": "蛋糕",
+  "explanation": "蛋糕 (dàngāo) = бялуу.",
+  "order_index": 6,
+  "id": "yct-1-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«吃» гэж юу вэ?",
+  "options": [
+   "юу",
+   "идэх",
+   "уух",
+   "дуртай"
+  ],
+  "correct_answer": "идэх",
+  "explanation": "吃 (chī) = идэх.",
+  "order_index": 7,
+  "id": "yct-1-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«喝» гэж юу вэ?",
+  "options": [
+   "уух",
+   "ус",
+   "дуртай",
+   "идэх"
+  ],
+  "correct_answer": "уух",
+  "explanation": "喝 (hē) = уух.",
+  "order_index": 8,
+  "id": "yct-1-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«爱» гэж юу вэ?",
+  "options": [
+   "дуртай",
+   "уух",
+   "чи",
+   "идэх"
+  ],
+  "correct_answer": "дуртай",
+  "explanation": "爱 (ài) = дуртай.",
+  "order_index": 9,
+  "id": "yct-1-l11-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«什么» гэж юу вэ?",
+  "options": [
+   "сайн",
+   "хэн",
+   "юу",
+   "аль"
+  ],
+  "correct_answer": "юу",
+  "explanation": "什么 (shénme) = юу.",
+  "order_index": 10,
+  "id": "yct-1-l11-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Хичээлийн түлхүүр өгүүлбэр «Чи юу идэх вэ?» хятадаар:",
+  "options": [
+   "我吃什么？",
+   "你喝什么？",
+   "你爱吃吗？",
+   "你吃什么？"
+  ],
+  "correct_answer": "你吃什么？",
+  "explanation": "吃 = идэх, 什么 = юу.",
+  "order_index": 11,
+  "id": "yct-1-l11-q11",
+  "skillTags": [
+   "sentence"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би бялуу идэх дуртай» хятадаар:",
+  "options": [
+   "你爱吃蛋糕。",
+   "我爱喝蛋糕。",
+   "我吃爱蛋糕。",
+   "我爱吃蛋糕。"
+  ],
+  "correct_answer": "我爱吃蛋糕。",
+  "explanation": "爱 + 吃 + хоол.",
+  "order_index": 12,
+  "id": "yct-1-l11-q12",
+  "skillTags": [
+   "sentence"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）牛奶。(уух)",
+  "options": [
+   "爱",
+   "吃",
+   "水",
+   "喝"
+  ],
+  "correct_answer": "喝",
+  "explanation": "Сүү уух юм — 喝.",
+  "order_index": 13,
+  "id": "yct-1-l11-q13",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）面条。(идэх)",
+  "options": [
+   "吃",
+   "什么",
+   "喝",
+   "水"
+  ],
+  "correct_answer": "吃",
+  "explanation": "Гоймон идэх юм — 吃.",
+  "order_index": 14,
+  "id": "yct-1-l11-q14",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你吃（ ）？",
+  "options": [
+   "牛奶",
+   "什么",
+   "喝",
+   "爱"
+  ],
+  "correct_answer": "什么",
+  "explanation": "«Чи юу идэх вэ?» — 什么 = юу.",
+  "order_index": 15,
+  "id": "yct-1-l11-q15",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "熊猫（ ）吃竹子。(дуртай)",
+  "options": [
+   "喝",
+   "爱",
+   "吃",
+   "水"
+  ],
+  "correct_answer": "爱",
+  "explanation": "Панда хулс идэх дуртай — 爱.",
+  "order_index": 16,
+  "id": "yct-1-l11-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ээж «你吃什么？» гэж асуулаа. Охин юу гэж хариулав (яриа 1)?",
+  "options": [
+   "我吃面条。",
+   "我爱蛋糕。",
+   "我吃苹果。",
+   "我喝水。"
+  ],
+  "correct_answer": "我吃苹果。",
+  "explanation": "Яриа 1: 我吃苹果。",
+  "order_index": 17,
+  "id": "yct-1-l11-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«牛奶和水，你喝哪个？» — охин юу уусан бэ?",
+  "options": [
+   "面条",
+   "苹果",
+   "水",
+   "牛奶"
+  ],
+  "correct_answer": "牛奶",
+  "explanation": "Охин «我喝牛奶» гэсэн.",
+  "order_index": 18,
+  "id": "yct-1-l11-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аавын төрсөн өдөр гэр бүл юу идэв (яриа 2)?",
+  "options": [
+   "苹果",
+   "面条",
+   "水",
+   "米饭"
+  ],
+  "correct_answer": "面条",
+  "explanation": "今天是爸爸的生日，吃面条。",
+  "order_index": 19,
+  "id": "yct-1-l11-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хүү юу идэх дуртай вэ (яриа 2)?",
+  "options": [
+   "面条",
+   "牛奶",
+   "米饭",
+   "蛋糕"
+  ],
+  "correct_answer": "蛋糕",
+  "explanation": "我爱吃蛋糕。",
+  "order_index": 20,
+  "id": "yct-1-l11-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «niúnǎi» гэж уншдаг үг:",
+  "options": [
+   "牛奶",
+   "面条",
+   "苹果",
+   "蛋糕"
+  ],
+  "correct_answer": "牛奶",
+  "explanation": "牛奶 = niúnǎi = сүү.",
+  "order_index": 21,
+  "id": "yct-1-l11-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «miàntiáo» гэж уншдаг үг:",
+  "options": [
+   "米饭",
+   "水",
+   "苹果",
+   "面条"
+  ],
+  "correct_answer": "面条",
+  "explanation": "面条 = miàntiáo = гоймон.",
+  "order_index": 22,
+  "id": "yct-1-l11-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «píngguǒ» гэж уншдаг үг:",
+  "options": [
+   "面条",
+   "苹果",
+   "蛋糕",
+   "牛奶"
+  ],
+  "correct_answer": "苹果",
+  "explanation": "苹果 = píngguǒ = алим.",
+  "order_index": 23,
+  "id": "yct-1-l11-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь уух зүйл вэ? (喝-тэй хэрэглэнэ)",
+  "options": [
+   "苹果",
+   "米饭",
+   "面条",
+   "牛奶"
+  ],
+  "correct_answer": "牛奶",
+  "explanation": "Сүү уудаг тул 喝牛奶. Бусад нь идэх хоол.",
+  "order_index": 24,
+  "id": "yct-1-l11-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аль нь идэх зүйл вэ? (吃-тэй хэрэглэнэ)",
+  "options": [
+   "牛奶",
+   "水",
+   "蛋糕",
+   "喝"
+  ],
+  "correct_answer": "蛋糕",
+  "explanation": "蛋糕 идэх юм. 水, 牛奶 уух юм.",
+  "order_index": 25,
+  "id": "yct-1-l11-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би алим идэхгүй» хятадаар:",
+  "options": [
+   "我吃不苹果。",
+   "我不喝苹果。",
+   "我不吃苹果。",
+   "我爱吃苹果。"
+  ],
+  "correct_answer": "我不吃苹果。",
+  "explanation": "不 + 吃 = идэхгүй.",
+  "order_index": 26,
+  "id": "yct-1-l11-q26",
+  "skillTags": [
+   "sentence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дарааллаар сайн өгүүлбэр байгуул: 我 / 爱 / 吃 / 面条",
+  "options": [
+   "面条爱我吃",
+   "我爱吃面条",
+   "我吃爱面条",
+   "爱我吃面条"
+  ],
+  "correct_answer": "我爱吃面条",
+  "explanation": "Би + дуртай + идэх + гоймон.",
+  "order_index": 27,
+  "id": "yct-1-l11-q27",
+  "skillTags": [
+   "sentence"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Өмнөх хичээл: «Чи хэдэн настай вэ?» хятадаар:",
+  "options": [
+   "你去哪儿？",
+   "你几岁？",
+   "你吃什么？",
+   "你好吗？"
+  ],
+  "correct_answer": "你几岁？",
+  "explanation": "几岁 = хэдэн настай. 你吃什么 = чи юу идэх вэ.",
+  "order_index": 28,
+  "id": "yct-1-l11-q28",
+  "skillTags": [
+   "review"
+  ],
+  "difficulty": "medium"
+ }
+]

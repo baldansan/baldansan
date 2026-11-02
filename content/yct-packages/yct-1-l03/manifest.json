@@ -1,0 +1,207 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-1",
+ "lessonId": "yct-1-l03",
+ "hskLevel": 1,
+ "lessonNumber": 3,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "他是谁？",
+ "mongolianTitle": "Тэр хэн бэ?",
+ "series": "YCT 标准教程 1",
+ "seriesLabel_mn": "YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
+ "source": "YCT 标准教程 1 · 第3课 (сурах бичиг + CD аудио 03-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-1-03-text-song.mp3",
+  "dialogues": "audio/yct-1-03-02.mp3",
+  "words": "audio/yct-1-03-01.mp3",
+  "song": "audio/yct-1-03-03.mp3",
+  "story": "audio/yct-1-03-04.mp3",
+  "test": "audio/yct-1-03-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-1-l03",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "他是谁？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-ta",
+    "file": "images/w-ta.jpg",
+    "title": "他",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shi",
+    "file": "images/w-shi.jpg",
+    "title": "是",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shei",
+    "file": "images/w-shei.jpg",
+    "title": "谁",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-na",
+    "file": "images/w-na.jpg",
+    "title": "哪",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-guo",
+    "file": "images/w-guo.jpg",
+    "title": "国",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ren",
+    "file": "images/w-ren.jpg",
+    "title": "人",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhongguoren",
+    "file": "images/w-zhongguoren.jpg",
+    "title": "中国人",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "他是谁？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "成龙是哪国人？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d3",
+    "file": "images/d3.jpg",
+    "title": "妈妈，她是谁？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "找朋友",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3a",
+    "file": "images/t3a.png",
+    "title": "Test 3a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3b",
+    "file": "images/t3b.png",
+    "title": "Test 3b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3c",
+    "file": "images/t3c.png",
+    "title": "Test 3c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers х.63); 6-р асуулт зурагтай зөрөх мэт",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан)"
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "judge",
+    "instruction_mn": "Сонсох — Аудио (11-05) сонсоод зураг таарч байвал ✓, таарахгүй бол ✗.",
+    "audio": "audio/yct-1-11-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）他爱吃米饭。",
+      "image": "images/t1.png",
+      "answer": "✓",
+      "script_zh": "他爱吃米饭。",
+      "explanation_mn": "«Тэр будаа идэх дуртай» гэсэн. Зураг дээр будаатай аяга байна → ✓."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）牛奶在这儿，你喝吗？",
+      "image": "images/t2.png",
+      "answer": "✗",
+      "script_zh": "牛奶在这儿，你喝吗？",
+      "explanation_mn": "Аудио «сүү энд байна» гэж байна. Харин зураг дээр эмэгтэй усны шил барьж байна, сүү биш → ✗."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）她不爱吃这个。",
+      "image": "images/t3.png",
+      "answer": "✗",
+      "script_zh": "她不爱吃这个。",
+      "explanation_mn": "«Тэр үүнийг идэх дургүй» гэсэн. Гэтэл зураг дээр охин шоколад идэж, баяртай байна → ✗."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）这是谁的苹果？",
+      "image": "images/t4.png",
+      "answer": "✓",
+      "script_zh": "这是谁的苹果？",
+      "explanation_mn": "«Энэ хэний алим вэ?» — зураг дээр сагс дүүрэн алим байна → ✓."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 1✓ 2✗ 3✗ 4✓; Listening script х.61"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — А-аас D-ийн дундаас таарах үгийг сонго: A 牛奶, B 谁, C 谢谢, D 什么.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "A：（ ）吃米饭？ B：我吃米饭。",
+      "image": "images/t5.png",
+      "options": [
+       "A 牛奶",
+       "B 谁",
+       "C 谢谢",
+       "D 什么"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Хэн будаа идэх вэ?» — «Би будаа иднэ». Хариулт нь хүн (би) тул 谁 (хэн). 什么 биш — юу гэж асууж байгаа биш."
+     },
+     {
+      "n": 6,
+      "question_zh": "A：她们爱吃（ ）？ B：面条。",
+      "image": "images/t6.png",
+      "options": [
+       "A 牛奶",
+       "B 谁",
+       "C 谢谢",
+       "D 什么"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Тэд юу идэх дуртай вэ?» — «Гоймон». Зураг дээр гурван охин гоймон идэж байна. Юу гэж асууж байгаа тул 什么."
+     },
+     {
+      "n": 7,
+      "question_zh": "A：你喝什么？ B：水，（ ）。",
+      "image": "images/t7.png",
+      "options": [
+       "A 牛奶",
+       "B 谁",
+       "C 谢谢",
+       "D 什么"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Чи юу уух вэ?» — «Ус, баярлалаа». Зураг дээр усны сав байна. Ус авахдаа 谢谢 (баярлалаа) гэнэ."
+     },
+     {
+      "n": 8,
+      "question_zh": "A：你爱喝（ ）吗？ B：爱喝。",
+      "image": "images/t8.png",
+      "options": [
+       "A 牛奶",
+       "B 谁",
+       "C 谢谢",
+       "D 什么"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Чи сүү уух дуртай юу?» — «Дуртай». Зураг дээр хүү сүүтэй хундага барьж байна → 牛奶."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 5B 6D 7C 8A"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's match — асуулт ба хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你爱喝什么？",
+      "answer": "我爱喝牛奶。",
+      "explanation_mn": "«Юу уух дуртай вэ?» — «Сүү уух дуртай»."
+     },
+     {
+      "n": 2,
+      "question_zh": "你妈妈喜欢吃什么？",
+      "answer": "她喜欢吃面条。",
+      "explanation_mn": "«Ээж юу идэх дуртай вэ?» — «Гоймонд дуртай»."
+     },
+     {
+      "n": 3,
+      "question_zh": "你吃苹果吗？",
+      "answer": "我不吃苹果。",
+      "explanation_mn": "«Алим идэх үү?» — «Үгүй, идэхгүй»."
+     }
+    ],
+    "answer_source": "textbook х.51"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ханз бичих — 水 гэсэн ханзыг сайн харж, агаарт хуруугаараа 4 удаа зур.",
+    "question_zh": "水",
+    "answer": "水",
+    "explanation_mn": "水 — усны урсгал шиг дунд нь босоо шугамтай."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа асуу: чи юу идэх вэ?",
+    "question_zh": "你吃什么？",
+    "answer": "我吃……",
+    "explanation_mn": "Хоолоо нэрлэж хариул."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Дуртай хоолоо хэл.",
+    "question_zh": "我爱吃……",
+    "answer": "我爱吃蛋糕。",
+    "explanation_mn": "爱吃 + хоол."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«你爱吃什么？» дууг дуул, 苹果-ыг өөрийн хоолоор соль.",
+    "question_zh": "熊猫爱吃竹子……",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 11-04-тэй хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · х.61 Test Listening Scripts, х.63 Test Answers (Lesson 11)"
+}

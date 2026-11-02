@@ -1,0 +1,270 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-1",
+ "lessonId": "yct-1-l09",
+ "hskLevel": 1,
+ "lessonNumber": 9,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "今天星期几？",
+ "mongolianTitle": "Өнөөдөр ямар гариг вэ?",
+ "series": "YCT 标准教程 1",
+ "seriesLabel_mn": "YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
+ "source": "YCT 标准教程 1 · 第9课 (сурах бичиг + CD аудио 09-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-1-09-text-song.mp3",
+  "dialogues": "audio/yct-1-09-text.mp3",
+  "words": "audio/yct-1-09-words.mp3",
+  "song": "audio/yct-1-09-song.mp3",
+  "story": "audio/yct-1-09-story.mp3",
+  "test": "audio/yct-1-09-test.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-1-l09",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "今天星期几？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-xingqi",
+    "file": "images/w-xingqi.jpg",
+    "title": "星期",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xingqiyi",
+    "file": "images/w-xingqiyi.jpg",
+    "title": "星期一",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xingqier",
+    "file": "images/w-xingqier.jpg",
+    "title": "星期二",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xingqisan",
+    "file": "images/w-xingqisan.jpg",
+    "title": "星期三",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xingqisi",
+    "file": "images/w-xingqisi.jpg",
+    "title": "星期四",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xingqiwu",
+    "file": "images/w-xingqiwu.jpg",
+    "title": "星期五",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xingqiliu",
+    "file": "images/w-xingqiliu.jpg",
+    "title": "星期六",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xingqitian",
+    "file": "images/w-xingqitian.jpg",
+    "title": "星期天",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jintian",
+    "file": "images/w-jintian.jpg",
+    "title": "今天",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mingtian",
+    "file": "images/w-mingtian.jpg",
+    "title": "明天",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zuotian",
+    "file": "images/w-zuotian.jpg",
+    "title": "昨天",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yue",
+    "file": "images/w-yue.jpg",
+    "title": "月",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hao",
+    "file": "images/w-hao.jpg",
+    "title": "号",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shengri",
+    "file": "images/w-shengri.jpg",
+    "title": "生日",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xihuan",
+    "file": "images/w-xihuan.jpg",
+    "title": "喜欢",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你的生日是几月几号？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "今天星期几？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "星期歌",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "熊猫的一周 (Mini story)",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3a",
+    "file": "images/t3a.png",
+    "title": "Test 3a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3b",
+    "file": "images/t3b.png",
+    "title": "Test 3b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3c",
+    "file": "images/t3c.png",
+    "title": "Test 3c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4a",
+    "file": "images/t4a.png",
+    "title": "Test 4a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4b",
+    "file": "images/t4b.png",
+    "title": "Test 4b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4c",
+    "file": "images/t4c.png",
+    "title": "Test 4c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4d",
+    "file": "images/t4d.png",
+    "title": "Test 4d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан)"
+ }
+}

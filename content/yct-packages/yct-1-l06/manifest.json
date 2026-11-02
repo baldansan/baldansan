@@ -1,0 +1,221 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-1",
+ "lessonId": "yct-1-l06",
+ "hskLevel": 1,
+ "lessonNumber": 6,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你的个子真高！",
+ "mongolianTitle": "Чи үнэхээр өндөр юм аа!",
+ "series": "YCT 标准教程 1",
+ "seriesLabel_mn": "YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
+ "source": "YCT 标准教程 1 · 第6课 (сурах бичиг + CD аудио 06-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-1-06-text-song.mp3",
+  "dialogues": "audio/yct-1-06-text.mp3",
+  "words": "audio/yct-1-06-words.mp3",
+  "song": "audio/yct-1-06-song.mp3",
+  "story": "audio/yct-1-06-story.mp3",
+  "test": "audio/yct-1-06-test.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-1-l06",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你的个子真高！",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-toufa",
+    "file": "images/w-toufa.jpg",
+    "title": "头发",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bizi",
+    "file": "images/w-bizi.jpg",
+    "title": "鼻子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yanjing",
+    "file": "images/w-yanjing.jpg",
+    "title": "眼睛",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shou",
+    "file": "images/w-shou.jpg",
+    "title": "手",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-erduo",
+    "file": "images/w-erduo.jpg",
+    "title": "耳朵",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-de",
+    "file": "images/w-de.jpg",
+    "title": "的",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiao",
+    "file": "images/w-xiao.jpg",
+    "title": "小",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-da",
+    "file": "images/w-da.jpg",
+    "title": "大",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chang",
+    "file": "images/w-chang.jpg",
+    "title": "长",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gezi",
+    "file": "images/w-gezi.jpg",
+    "title": "个子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhen",
+    "file": "images/w-zhen.jpg",
+    "title": "真",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gao",
+    "file": "images/w-gao.jpg",
+    "title": "高",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "妹妹的眼睛很小",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你的个子真高",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d3",
+    "file": "images/d3.jpg",
+    "title": "小蝌蚪找妈妈",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "身体部位",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "Mini story 小蝌蚪找妈妈",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tpa",
+    "file": "images/tpa.png",
+    "title": "Test pa",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tpb",
+    "file": "images/tpb.png",
+    "title": "Test pb",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tpc",
+    "file": "images/tpc.png",
+    "title": "Test pc",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tpd",
+    "file": "images/tpd.png",
+    "title": "Test pd",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "Test 1–4 official (х.63); 5–8 зургаар тодорхойлсон",
+  "textStatus": "source_verified (хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулгыг чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,219 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "今天星期几？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands beside a big wall calendar in a bright classroom, pointing at it, while the yellow calf boy, the calf girl and the brown calf look up excited; a speech bubble with the Chinese text 今天星期几？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xingqi.jpg",
+  "aspect": "1:1",
+  "title": "星期",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a big weekly calendar with seven colorful days, calf girl flipping a page. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xingqiyi.jpg",
+  "aspect": "1:1",
+  "title": "星期一",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a desk calendar page showing a big number 1 with a sunrise, yellow calf yawning but smiling at the start of the week. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xingqier.jpg",
+  "aspect": "1:1",
+  "title": "星期二",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a desk calendar page with a big number 2, calf girl holding two fingers up. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xingqisan.jpg",
+  "aspect": "1:1",
+  "title": "星期三",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a desk calendar page with a big number 3, brown calf holding three fingers up. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xingqisi.jpg",
+  "aspect": "1:1",
+  "title": "星期四",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a desk calendar page with a big number 4, yellow calf counting four fingers. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xingqiwu.jpg",
+  "aspect": "1:1",
+  "title": "星期五",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a desk calendar page with a big number 5, calf girl holding up five fingers happily. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xingqiliu.jpg",
+  "aspect": "1:1",
+  "title": "星期六",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a desk calendar page with a big number 6, children calves playing a ball game in a park. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xingqitian.jpg",
+  "aspect": "1:1",
+  "title": "星期天",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a desk calendar page with a red sun symbol, calves sleeping late and relaxing at home. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jintian.jpg",
+  "aspect": "1:1",
+  "title": "今天",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a yellow calf pointing at today's date on a calendar with a big sun above, 'today' feeling. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-mingtian.jpg",
+  "aspect": "1:1",
+  "title": "明天",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: calf girl pointing at the next page of a calendar with a rising sun in the distance. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zuotian.jpg",
+  "aspect": "1:1",
+  "title": "昨天",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: brown calf looking back at a crossed-off calendar page and a setting moon behind. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yue.jpg",
+  "aspect": "1:1",
+  "title": "月",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a big moon in the sky next to a calendar page of a month, calf girl pointing at the month. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-hao.jpg",
+  "aspect": "1:1",
+  "title": "号",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: a calendar grid of dates with one date circled in red, yellow calf pointing at it. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shengri.jpg",
+  "aspect": "1:1",
+  "title": "生日",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: calf girl wearing a paper crown beside a birthday cake with candles and balloons. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xihuan.jpg",
+  "aspect": "1:1",
+  "title": "喜欢",
+  "section": "vocabulary",
+  "prompt": "Cute children's-book illustration: yellow calf hugging a heart-shaped pillow with sparkling happy eyes. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你的生日是几月几号？",
+  "section": "dialogue",
+  "prompt": "Birthday party: calf girl in a paper crown stands behind a big cake with candles and balloons, a calf friend asks her with a speech bubble with the Chinese text 你的生日是几月几号？ in large clear black font, and she answers 1月1号. No English text.",
+  "chars": [
+   "ohin",
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "今天星期几？",
+  "section": "dialogue",
+  "prompt": "Cozy living room: calf boy kneels holding a desk calendar and asks his adult camel mother, who stands smiling; speech bubble with the Chinese text 今天星期几？ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "星期歌",
+  "section": "song",
+  "prompt": "Teacher camel and three calves sing and clap in a circle, seven colorful calendar pages floating above them with numbers 1 to 7, musical notes everywhere. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

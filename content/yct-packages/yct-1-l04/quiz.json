@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Аав» хятадаар аль нь вэ?",
+  "options": [
+   "爸爸",
+   "姐姐",
+   "妈妈",
+   "哥哥"
+  ],
+  "correct_answer": "爸爸",
+  "explanation": "爸爸 (bàba) = аав.",
+  "order_index": 1,
+  "id": "yct-1-l04-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ээж» хятадаар аль нь вэ?",
+  "options": [
+   "爸爸",
+   "姐姐",
+   "家",
+   "妈妈"
+  ],
+  "correct_answer": "妈妈",
+  "explanation": "妈妈 (māma) = ээж.",
+  "order_index": 2,
+  "id": "yct-1-l04-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ах» хятадаар аль нь вэ?",
+  "options": [
+   "爸爸",
+   "姐姐",
+   "妹妹",
+   "哥哥"
+  ],
+  "correct_answer": "哥哥",
+  "explanation": "哥哥 (gēge) = ах.",
+  "order_index": 3,
+  "id": "yct-1-l04-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эгч» хятадаар аль нь вэ?",
+  "options": [
+   "老师",
+   "姐姐",
+   "妈妈",
+   "哥哥"
+  ],
+  "correct_answer": "姐姐",
+  "explanation": "姐姐 (jiějie) = эгч.",
+  "order_index": 4,
+  "id": "yct-1-l04-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дүү охин» хятадаар аль нь вэ?",
+  "options": [
+   "妹妹",
+   "哥哥",
+   "姐姐",
+   "妈妈"
+  ],
+  "correct_answer": "妹妹",
+  "explanation": "妹妹 (mèimei) = дүү охин.",
+  "order_index": 5,
+  "id": "yct-1-l04-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«家» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сайн",
+   "гэр бүл, гэр",
+   "баяртай",
+   "багш"
+  ],
+  "correct_answer": "гэр бүл, гэр",
+  "explanation": "家 (jiā) = гэр бүл, гэр.",
+  "order_index": 6,
+  "id": "yct-1-l04-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«有» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хэдэн",
+   "байх, эзэмшиж байх",
+   "байхгүй",
+   "ба"
+  ],
+  "correct_answer": "байх, эзэмшиж байх",
+  "explanation": "有 (yǒu) = байх. 没有 = байхгүй.",
+  "order_index": 7,
+  "id": "yct-1-l04-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«没有» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "байхгүй",
+   "ба",
+   "хэдэн",
+   "байна"
+  ],
+  "correct_answer": "байхгүй",
+  "explanation": "没有 (méiyǒu) = байхгүй.",
+  "order_index": 8,
+  "id": "yct-1-l04-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«几» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хэдэн",
+   "ба",
+   "сайн",
+   "байна"
+  ],
+  "correct_answer": "хэдэн",
+  "explanation": "几 (jǐ) = хэдэн.",
+  "order_index": 9,
+  "id": "yct-1-l04-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«和» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сайн",
+   "байхгүй",
+   "ба",
+   "хэдэн"
+  ],
+  "correct_answer": "ба",
+  "explanation": "和 (hé) = ба.",
+  "order_index": 10,
+  "id": "yct-1-l04-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Гэр бүлийн хүнийг тоолох үг аль нь вэ?",
+  "options": [
+   "和",
+   "几",
+   "有",
+   "口"
+  ],
+  "correct_answer": "口",
+  "explanation": "口 (kǒu) — 四口人 (дөрвөн хүн).",
+  "order_index": 11,
+  "id": "yct-1-l04-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чиний гэрт хэдэн хүн байдаг вэ?» хятадаар:",
+  "options": [
+   "没有。",
+   "我爱我的家。",
+   "你有姐姐吗？",
+   "你家有几口人？"
+  ],
+  "correct_answer": "你家有几口人？",
+  "explanation": "几口人 = хэдэн хүн.",
+  "order_index": 12,
+  "id": "yct-1-l04-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你有姐姐吗？» гэж асуувал юу гэж хариулах вэ (эгч байхгүй)?",
+  "options": [
+   "我爱爸爸。",
+   "四口人。",
+   "再见。",
+   "没有。"
+  ],
+  "correct_answer": "没有。",
+  "explanation": "Байхгүй бол 没有.",
+  "order_index": 13,
+  "id": "yct-1-l04-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你家有（ ）口人？",
+  "options": [
+   "几",
+   "有",
+   "和",
+   "个"
+  ],
+  "correct_answer": "几",
+  "explanation": "«хэдэн» гэж асуухад 几.",
+  "order_index": 14,
+  "id": "yct-1-l04-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸（ ）妈妈",
+  "options": [
+   "几",
+   "和",
+   "口",
+   "没有"
+  ],
+  "correct_answer": "和",
+  "explanation": "«ба» — 和.",
+  "order_index": 15,
+  "id": "yct-1-l04-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我有一（ ）妹妹。",
+  "options": [
+   "口",
+   "个",
+   "和",
+   "几"
+  ],
+  "correct_answer": "个",
+  "explanation": "Нэг хүн — 一个.",
+  "order_index": 16,
+  "id": "yct-1-l04-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我家有三（ ）人。",
+  "options": [
+   "个",
+   "吗",
+   "口",
+   "和"
+  ],
+  "correct_answer": "口",
+  "explanation": "Гэр бүлийн хүн — 口.",
+  "order_index": 17,
+  "id": "yct-1-l04-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Аав, ээж, ах бид хоёр» — хэдэн хүн вэ?",
+  "options": [
+   "五口人",
+   "一口人",
+   "三口人",
+   "四口人"
+  ],
+  "correct_answer": "四口人",
+  "explanation": "爸爸、妈妈、哥哥和我 = 4 хүн = 四口人.",
+  "order_index": 18,
+  "id": "yct-1-l04-q18",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "我家有三口人，爸爸、妈妈和我。Хэдэн хүн бэ?",
+  "options": [
+   "2",
+   "3",
+   "5",
+   "4"
+  ],
+  "correct_answer": "3",
+  "explanation": "三 = гурав.",
+  "order_index": 19,
+  "id": "yct-1-l04-q19",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bàba» гэж уншдаг үг:",
+  "options": [
+   "妈妈",
+   "家",
+   "哥哥",
+   "爸爸"
+  ],
+  "correct_answer": "爸爸",
+  "explanation": "爸爸 = bàba = аав.",
+  "order_index": 20,
+  "id": "yct-1-l04-q20",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jiějie» гэж уншдаг үг:",
+  "options": [
+   "姐姐",
+   "哥哥",
+   "妹妹",
+   "妈妈"
+  ],
+  "correct_answer": "姐姐",
+  "explanation": "姐姐 = jiějie = эгч.",
+  "order_index": 21,
+  "id": "yct-1-l04-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «méiyǒu» гэж уншдаг үг:",
+  "options": [
+   "几口",
+   "你好",
+   "再见",
+   "没有"
+  ],
+  "correct_answer": "没有",
+  "explanation": "没有 = méiyǒu = байхгүй.",
+  "order_index": 22,
+  "id": "yct-1-l04-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你有哥哥吗？» гэж асуулаа. Чамд ах байвал юу гэх вэ?",
+  "options": [
+   "老师好。",
+   "有。",
+   "没有。",
+   "再见。"
+  ],
+  "correct_answer": "有。",
+  "explanation": "Байвал 有.",
+  "order_index": 23,
+  "id": "yct-1-l04-q23",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Chant-д «我爱好爸爸» гэдэг нь:",
+  "options": [
+   "Би хэдэн хүн вэ",
+   "Аав ба ээж",
+   "Миний аав байхгүй",
+   "Би сайн аавыгаа хайрладаг"
+  ],
+  "correct_answer": "Би сайн аавыгаа хайрладаг",
+  "explanation": "爱 = хайрлах, 好爸爸 = сайн аав.",
+  "order_index": 24,
+  "id": "yct-1-l04-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Mini story-д гөлөгний нэр хэн бэ?",
+  "options": [
+   "爸爸",
+   "多多",
+   "豆豆",
+   "妹妹"
+  ],
+  "correct_answer": "豆豆",
+  "explanation": "小狗叫豆豆 — гөлөг нь Доу-доу.",
+  "order_index": 25,
+  "id": "yct-1-l04-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Mini story-д муурны нэр хэн бэ?",
+  "options": [
+   "豆豆",
+   "哥哥",
+   "多多",
+   "姐姐"
+  ],
+  "correct_answer": "多多",
+  "explanation": "小猫叫多多 — муур нь До-до.",
+  "order_index": 26,
+  "id": "yct-1-l04-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дараах дундаас гэр бүлийн гишүүн биш нь:",
+  "options": [
+   "妹妹",
+   "老师",
+   "爸爸",
+   "哥哥"
+  ],
+  "correct_answer": "老师",
+  "explanation": "老师 = багш, бусад нь гэр бүлийн гишүүн.",
+  "order_index": 27,
+  "id": "yct-1-l04-q27",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ }
+]

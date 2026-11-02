@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«谁» гэж юу вэ?",
+  "options": [
+   "хэн",
+   "улс",
+   "аль",
+   "хүн"
+  ],
+  "correct_answer": "хэн",
+  "explanation": "谁 (shéi) = хэн.",
+  "order_index": 1,
+  "id": "yct-1-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«他» гэж юу вэ?",
+  "options": [
+   "чи",
+   "багш",
+   "хэн",
+   "тэр (эрэгтэй)"
+  ],
+  "correct_answer": "тэр (эрэгтэй)",
+  "explanation": "他 (tā) = тэр.",
+  "order_index": 2,
+  "id": "yct-1-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«是» гэж юу вэ?",
+  "options": [
+   "баяртай",
+   "хүн",
+   "сайн",
+   "бол"
+  ],
+  "correct_answer": "бол",
+  "explanation": "是 (shì) = бол, мөн.",
+  "order_index": 3,
+  "id": "yct-1-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«哪» гэж юу вэ?",
+  "options": [
+   "улс",
+   "аль",
+   "тэр",
+   "хэн"
+  ],
+  "correct_answer": "аль",
+  "explanation": "哪 (nǎ) = аль.",
+  "order_index": 4,
+  "id": "yct-1-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«国» гэж юу вэ?",
+  "options": [
+   "улс",
+   "багш",
+   "хүн",
+   "чи"
+  ],
+  "correct_answer": "улс",
+  "explanation": "国 (guó) = улс.",
+  "order_index": 5,
+  "id": "yct-1-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«人» гэж юу вэ?",
+  "options": [
+   "тэр",
+   "хүн",
+   "хэн",
+   "улс"
+  ],
+  "correct_answer": "хүн",
+  "explanation": "人 (rén) = хүн.",
+  "order_index": 6,
+  "id": "yct-1-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«中国人» гэж юу вэ?",
+  "options": [
+   "найз",
+   "хятад хүн",
+   "хятад хэл",
+   "багш"
+  ],
+  "correct_answer": "хятад хүн",
+  "explanation": "中国 = Хятад, 人 = хүн.",
+  "order_index": 7,
+  "id": "yct-1-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хэн» хятадаар аль нь вэ?",
+  "options": [
+   "谁",
+   "是",
+   "他",
+   "哪"
+  ],
+  "correct_answer": "谁",
+  "explanation": "хэн = 谁 (shéi).",
+  "order_index": 8,
+  "id": "yct-1-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хүн» хятадаар аль нь вэ?",
+  "options": [
+   "人",
+   "他",
+   "你",
+   "国"
+  ],
+  "correct_answer": "人",
+  "explanation": "хүн = 人 (rén).",
+  "order_index": 9,
+  "id": "yct-1-l03-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хятад хүн» хятадаар аль нь вэ?",
+  "options": [
+   "你好",
+   "哪国人",
+   "中国人",
+   "老师"
+  ],
+  "correct_answer": "中国人",
+  "explanation": "хятад хүн = 中国人 (Zhōngguó rén).",
+  "order_index": 10,
+  "id": "yct-1-l03-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shéi» гэж уншдаг ханз:",
+  "options": [
+   "是",
+   "哪",
+   "人",
+   "谁"
+  ],
+  "correct_answer": "谁",
+  "explanation": "谁 = shéi = хэн. 是 = shì.",
+  "order_index": 11,
+  "id": "yct-1-l03-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shì» гэж уншдаг ханз:",
+  "options": [
+   "他",
+   "国",
+   "是",
+   "谁"
+  ],
+  "correct_answer": "是",
+  "explanation": "是 = shì = бол.",
+  "order_index": 12,
+  "id": "yct-1-l03-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «Zhōngguó rén» гэж уншдаг үг:",
+  "options": [
+   "中国人",
+   "你好",
+   "再见",
+   "老师"
+  ],
+  "correct_answer": "中国人",
+  "explanation": "中国人 = хятад хүн.",
+  "order_index": 13,
+  "id": "yct-1-l03-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nǎ» гэж уншдаг ханз:",
+  "options": [
+   "哪",
+   "国",
+   "他",
+   "人"
+  ],
+  "correct_answer": "哪",
+  "explanation": "哪 (nǎ) = аль.",
+  "order_index": 14,
+  "id": "yct-1-l03-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «guó» гэж уншдаг ханз:",
+  "options": [
+   "人",
+   "他",
+   "是",
+   "国"
+  ],
+  "correct_answer": "国",
+  "explanation": "国 (guó) = улс.",
+  "order_index": 15,
+  "id": "yct-1-l03-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他是（ ）？ — 他是成龙。",
+  "options": [
+   "国",
+   "人",
+   "谁",
+   "哪"
+  ],
+  "correct_answer": "谁",
+  "explanation": "Нэрийг асууж байна — 谁 (хэн).",
+  "order_index": 16,
+  "id": "yct-1-l03-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "成龙是（ ）国人？ — 中国人。",
+  "options": [
+   "哪",
+   "他",
+   "是",
+   "谁"
+  ],
+  "correct_answer": "哪",
+  "explanation": "哪国人 = аль улсын хүн.",
+  "order_index": 17,
+  "id": "yct-1-l03-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他是（ ）国人。",
+  "options": [
+   "你",
+   "老",
+   "中",
+   "好"
+  ],
+  "correct_answer": "中",
+  "explanation": "他是中国人 — тэр хятад хүн.",
+  "order_index": 18,
+  "id": "yct-1-l03-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你好，我（ ）艾玛。",
+  "options": [
+   "谁",
+   "他",
+   "是",
+   "哪"
+  ],
+  "correct_answer": "是",
+  "explanation": "我是艾玛 = би Ай Ма.",
+  "order_index": 19,
+  "id": "yct-1-l03-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Охин «他是谁？» гэж асуулаа. Ээж нь юу гэж хариулав?",
+  "options": [
+   "一、二、三！",
+   "再见！",
+   "他是成龙。",
+   "老师好！"
+  ],
+  "correct_answer": "他是成龙。",
+  "explanation": "Нэрээр хариулна: 他是成龙.",
+  "order_index": 20,
+  "id": "yct-1-l03-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«成龙是哪国人？» — зөв хариу:",
+  "options": [
+   "再见！",
+   "中国人。",
+   "你好！",
+   "他是谁？"
+  ],
+  "correct_answer": "中国人。",
+  "explanation": "Чэн Лун хятад хүн.",
+  "order_index": 21,
+  "id": "yct-1-l03-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэр хэн бэ?» гэж асуухдаа:",
+  "options": [
+   "他是中国人。",
+   "再见！",
+   "他是谁？",
+   "成龙是哪国人？"
+  ],
+  "correct_answer": "他是谁？",
+  "explanation": "Хэн болохыг асуухад 他是谁？",
+  "order_index": 22,
+  "id": "yct-1-l03-q22",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Аль улсын хүн бэ?» гэж асуухдаа:",
+  "options": [
+   "他是谁？",
+   "你好吗？",
+   "再见！",
+   "哪国人？"
+  ],
+  "correct_answer": "哪国人？",
+  "explanation": "哪国人 — аль улсын хүн.",
+  "order_index": 23,
+  "id": "yct-1-l03-q23",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Зураг авахуулахдаа хятад хүүхдүүд юу гэж хашгирдаг вэ?",
+  "options": [
+   "谁！",
+   "茄子！",
+   "再见！",
+   "你好！"
+  ],
+  "correct_answer": "茄子！",
+  "explanation": "一、二、三，茄子！ — «цээнзэ!»",
+  "order_index": 24,
+  "id": "yct-1-l03-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаа заагаад «Тэр бол Саруул» гэж хэлэх үед ямар үгээр эхэлнэ вэ?",
+  "options": [
+   "她是……",
+   "谁是……",
+   "国是……",
+   "哪是……"
+  ],
+  "correct_answer": "她是……",
+  "explanation": "Эмэгтэйг 她是…… гэж танилцуулна.",
+  "order_index": 25,
+  "id": "yct-1-l03-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«你好» гэж юу вэ?",
+  "options": [
+   "сайн уу",
+   "хятад хүн",
+   "хэн",
+   "баяртай"
+  ],
+  "correct_answer": "сайн уу",
+  "explanation": "你好 = сайн уу (1-р хичээл).",
+  "order_index": 26,
+  "id": "yct-1-l03-q26",
+  "skillTags": [
+   "review"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«老师» гэж юу вэ?",
+  "options": [
+   "хэн",
+   "найз",
+   "хятад хүн",
+   "багш"
+  ],
+  "correct_answer": "багш",
+  "explanation": "老师 = багш (1-р хичээл).",
+  "order_index": 27,
+  "id": "yct-1-l03-q27",
+  "skillTags": [
+   "review"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Дуунд «你是我的好朋友» гэдэг нь:",
+  "options": [
+   "Чи бол миний сайн найз",
+   "Чи хэн бэ",
+   "Тэр хятад хүн",
+   "Баяртай"
+  ],
+  "correct_answer": "Чи бол миний сайн найз",
+  "explanation": "是 = бол, 好朋友 = сайн найз.",
+  "order_index": 28,
+  "id": "yct-1-l03-q28",
+  "skillTags": [
+   "song"
+  ],
+  "difficulty": "medium"
+ }
+]

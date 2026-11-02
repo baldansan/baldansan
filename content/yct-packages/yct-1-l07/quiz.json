@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Нохой» хятадаар аль нь вэ?",
+  "options": [
+   "猫",
+   "鸟",
+   "狗",
+   "鱼"
+  ],
+  "correct_answer": "狗",
+  "explanation": "狗 (gǒu) = нохой.",
+  "order_index": 1,
+  "id": "yct-1-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Муур» хятадаар аль нь вэ?",
+  "options": [
+   "猫",
+   "狗",
+   "鱼",
+   "鸟"
+  ],
+  "correct_answer": "猫",
+  "explanation": "猫 (māo) = муур.",
+  "order_index": 2,
+  "id": "yct-1-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Загас» хятадаар аль нь вэ?",
+  "options": [
+   "鱼",
+   "猫",
+   "狗",
+   "鸟"
+  ],
+  "correct_answer": "鱼",
+  "explanation": "鱼 (yú) = загас.",
+  "order_index": 3,
+  "id": "yct-1-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Шувуу» хятадаар аль нь вэ?",
+  "options": [
+   "鱼",
+   "猫",
+   "鸟",
+   "狗"
+  ],
+  "correct_answer": "鸟",
+  "explanation": "鸟 (niǎo) = шувуу.",
+  "order_index": 4,
+  "id": "yct-1-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«这» гэж юу вэ?",
+  "options": [
+   "олон",
+   "энэ",
+   "энд",
+   "тэр"
+  ],
+  "correct_answer": "энэ",
+  "explanation": "这 (zhè) = энэ.",
+  "order_index": 5,
+  "id": "yct-1-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«那» гэж юу вэ?",
+  "options": [
+   "тэнд",
+   "тэр",
+   "хэн",
+   "энэ"
+  ],
+  "correct_answer": "тэр",
+  "explanation": "那 (nà) = тэр.",
+  "order_index": 6,
+  "id": "yct-1-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«这儿» гэж юу вэ?",
+  "options": [
+   "олон",
+   "энэ",
+   "энд",
+   "тэнд"
+  ],
+  "correct_answer": "энд",
+  "explanation": "这儿 (zhèr) = энд.",
+  "order_index": 7,
+  "id": "yct-1-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«那儿» гэж юу вэ?",
+  "options": [
+   "тэнд",
+   "энд",
+   "харах",
+   "тэр"
+  ],
+  "correct_answer": "тэнд",
+  "explanation": "那儿 (nàr) = тэнд.",
+  "order_index": 8,
+  "id": "yct-1-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«谁» гэж юу вэ?",
+  "options": [
+   "харах",
+   "олон",
+   "хэн",
+   "муур"
+  ],
+  "correct_answer": "хэн",
+  "explanation": "谁 (shéi) = хэн.",
+  "order_index": 9,
+  "id": "yct-1-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«多» гэж юу вэ?",
+  "options": [
+   "тэнд",
+   "хэн",
+   "харах",
+   "олон"
+  ],
+  "correct_answer": "олон",
+  "explanation": "多 (duō) = олон.",
+  "order_index": 10,
+  "id": "yct-1-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«看» гэж юу вэ?",
+  "options": [
+   "олон",
+   "энд",
+   "харах",
+   "шувуу"
+  ],
+  "correct_answer": "харах",
+  "explanation": "看 (kàn) = харах. 你看！ = Чи хар даа!",
+  "order_index": 11,
+  "id": "yct-1-l07-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Энэ хэний нохой вэ?» хятадаар аль нь вэ?",
+  "options": [
+   "这是谁的狗？",
+   "你看！",
+   "这是我的狗。",
+   "那儿有小鸟。"
+  ],
+  "correct_answer": "这是谁的狗？",
+  "explanation": "谁的 = хэний.",
+  "order_index": 12,
+  "id": "yct-1-l07-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：这是谁的狗？ B：这是（ ）的狗。",
+  "options": [
+   "我",
+   "看",
+   "多",
+   "那儿"
+  ],
+  "correct_answer": "我",
+  "explanation": "Хариулахдаа «我的狗» — миний нохой.",
+  "order_index": 13,
+  "id": "yct-1-l07-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«那是明明的猫。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэнд шувуу байна.",
+   "Энэ миний нохой.",
+   "Тэр Мин-мины муур.",
+   "Энд олон загас байна."
+  ],
+  "correct_answer": "Тэр Мин-мины муур.",
+  "explanation": "明明的猫 = Мин-мины муур.",
+  "order_index": 14,
+  "id": "yct-1-l07-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«这儿有很多小鱼。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэнд олон жижиг шувуу байна.",
+   "Энэ миний муур.",
+   "Энд олон жижиг загас байна.",
+   "Энэ хэний загас вэ?"
+  ],
+  "correct_answer": "Энд олон жижиг загас байна.",
+  "explanation": "这儿 = энд, 很多 = олон, 小鱼 = жижиг загас.",
+  "order_index": 15,
+  "id": "yct-1-l07-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Голын эрэг дээр хол олон шувуу харав. Юу гэх вэ?",
+  "options": [
+   "那儿有很多小鸟。",
+   "这是谁的猫？",
+   "这儿有很多小鱼。",
+   "这是我的狗。"
+  ],
+  "correct_answer": "那儿有很多小鸟。",
+  "explanation": "Хол бол 那儿.",
+  "order_index": 16,
+  "id": "yct-1-l07-q16",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你看，（ ）有很多小鱼。（энд）",
+  "options": [
+   "猫",
+   "谁",
+   "那儿",
+   "这儿"
+  ],
+  "correct_answer": "这儿",
+  "explanation": "Ойрхон байгаа тул 这儿.",
+  "order_index": 17,
+  "id": "yct-1-l07-q17",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ойрхон байгаа нохойг заахдаа:",
+  "options": [
+   "谁是狗。",
+   "这是狗。",
+   "那儿是狗。",
+   "那是狗。"
+  ],
+  "correct_answer": "这是狗。",
+  "explanation": "Ойр бол 这.",
+  "order_index": 18,
+  "id": "yct-1-l07-q18",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Холхон байгаа муурыг заахдаа:",
+  "options": [
+   "这是猫。",
+   "那是猫。",
+   "多是猫。",
+   "这儿是猫。"
+  ],
+  "correct_answer": "那是猫。",
+  "explanation": "Хол бол 那.",
+  "order_index": 19,
+  "id": "yct-1-l07-q19",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «gǒu» гэж уншдаг ханз:",
+  "options": [
+   "猫",
+   "鱼",
+   "鸟",
+   "狗"
+  ],
+  "correct_answer": "狗",
+  "explanation": "狗 = gǒu = нохой.",
+  "order_index": 20,
+  "id": "yct-1-l07-q20",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «māo» гэж уншдаг ханз:",
+  "options": [
+   "鱼",
+   "狗",
+   "猫",
+   "鸟"
+  ],
+  "correct_answer": "猫",
+  "explanation": "猫 = māo = муур.",
+  "order_index": 21,
+  "id": "yct-1-l07-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «niǎo» гэж уншдаг ханз:",
+  "options": [
+   "鱼",
+   "狗",
+   "猫",
+   "鸟"
+  ],
+  "correct_answer": "鸟",
+  "explanation": "鸟 = niǎo = шувуу.",
+  "order_index": 22,
+  "id": "yct-1-l07-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shéi» гэж уншдаг ханз:",
+  "options": [
+   "那",
+   "谁",
+   "看",
+   "这"
+  ],
+  "correct_answer": "谁",
+  "explanation": "谁 = shéi = хэн.",
+  "order_index": 23,
+  "id": "yct-1-l07-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дууны «汪汪汪» ямар амьтан вэ?",
+  "options": [
+   "Муур",
+   "Үхэр",
+   "Хонь",
+   "Нохой"
+  ],
+  "correct_answer": "Нохой",
+  "explanation": "小狗小狗，汪汪汪 — нохой.",
+  "order_index": 24,
+  "id": "yct-1-l07-q24",
+  "skillTags": [
+   "song"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Дууны «喵喵喵» ямар амьтан вэ?",
+  "options": [
+   "Үхэр",
+   "Муур",
+   "Нохой",
+   "Хонь"
+  ],
+  "correct_answer": "Муур",
+  "explanation": "小猫小猫，喵喵喵 — муур.",
+  "order_index": 25,
+  "id": "yct-1-l07-q25",
+  "skillTags": [
+   "song"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«小牛» гэж юу вэ?",
+  "options": [
+   "Бяцхан нохой",
+   "Бяцхан муур",
+   "Бяцхан үхэр",
+   "Бяцхан хонь"
+  ],
+  "correct_answer": "Бяцхан үхэр",
+  "explanation": "小 = жижиг, 牛 = үхэр.",
+  "order_index": 26,
+  "id": "yct-1-l07-q26",
+  "skillTags": [
+   "song"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хятад зодиакт хэдэн амьтан байдаг вэ?",
+  "options": [
+   "5",
+   "8",
+   "12",
+   "10"
+  ],
+  "correct_answer": "12",
+  "explanation": "十二生肖 — 12 амьтан.",
+  "order_index": 27,
+  "id": "yct-1-l07-q27",
+  "skillTags": [
+   "culture"
+  ],
+  "difficulty": "medium"
+ }
+]

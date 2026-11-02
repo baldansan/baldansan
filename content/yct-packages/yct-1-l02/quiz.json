@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«我» (wǒ) гэж юу вэ?",
+  "options": [
+   "чи",
+   "багш",
+   "би",
+   "тэр"
+  ],
+  "correct_answer": "би",
+  "explanation": "我 = би. 你 = чи, 她 = тэр.",
+  "order_index": 1,
+  "id": "yct-1-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«什么» гэж юу вэ?",
+  "options": [
+   "юу",
+   "би",
+   "баяртай",
+   "сайн"
+  ],
+  "correct_answer": "юу",
+  "explanation": "什么 (shénme) = юу.",
+  "order_index": 2,
+  "id": "yct-1-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«认识» гэж юу вэ?",
+  "options": [
+   "таних",
+   "юу",
+   "дөрөв",
+   "баяртай"
+  ],
+  "correct_answer": "таних",
+  "explanation": "认识 (rènshi) = таних, танилцах.",
+  "order_index": 3,
+  "id": "yct-1-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«高兴» гэж юу вэ?",
+  "options": [
+   "таних",
+   "сайн",
+   "баярлах",
+   "нэртэй байх"
+  ],
+  "correct_answer": "баярлах",
+  "explanation": "高兴 (gāoxìng) = баярлах, баяртай.",
+  "order_index": 4,
+  "id": "yct-1-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«她» гэж хэнийг хэлэх вэ?",
+  "options": [
+   "багшийг",
+   "тэр охиныг",
+   "чамайг",
+   "намайг"
+  ],
+  "correct_answer": "тэр охиныг",
+  "explanation": "她 (tā) = тэр (охин, эмэгтэй).",
+  "order_index": 5,
+  "id": "yct-1-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«不» гэж юу вэ?",
+  "options": [
+   "юу",
+   "үгүй, биш",
+   "би",
+   "маш"
+  ],
+  "correct_answer": "үгүй, биш",
+  "explanation": "不 (bù) = үгүй, биш.",
+  "order_index": 6,
+  "id": "yct-1-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«叫» гэж юу вэ?",
+  "options": [
+   "баяртай",
+   "баярлах",
+   "нэртэй байх",
+   "таних"
+  ],
+  "correct_answer": "нэртэй байх",
+  "explanation": "叫 (jiào) = нэртэй байх. 我叫月月 = намайг Юэ-юэ гэдэг.",
+  "order_index": 7,
+  "id": "yct-1-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«吗» нь аль өгүүлбэрт хэрэгтэй вэ?",
+  "options": [
+   "你认识她…？",
+   "我叫月月…",
+   "你叫什么…？",
+   "再见…"
+  ],
+  "correct_answer": "你认识她…？",
+  "explanation": "吗 нь «уу/үү?» гэсэн асуулт үүсгэнэ. 什么 өөрөө асуух үг тул 吗 хэрэггүй.",
+  "order_index": 8,
+  "id": "yct-1-l02-q08",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Нэр асуух өгүүлбэр аль нь вэ?",
+  "options": [
+   "不认识。",
+   "我叫月月。",
+   "你叫什么？",
+   "再见。"
+  ],
+  "correct_answer": "你叫什么？",
+  "explanation": "你叫什么？ = Чамайг юу гэдэг вэ?",
+  "order_index": 9,
+  "id": "yct-1-l02-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你叫什么？ B：我（ ）月月。",
+  "options": [
+   "很",
+   "吗",
+   "不",
+   "叫"
+  ],
+  "correct_answer": "叫",
+  "explanation": "我叫月月 = Намайг Юэ-юэ гэдэг.",
+  "order_index": 10,
+  "id": "yct-1-l02-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你认识她吗？ B：（ ）认识。",
+  "options": [
+   "很",
+   "她",
+   "不",
+   "叫"
+  ],
+  "correct_answer": "不",
+  "explanation": "不认识 = танихгүй.",
+  "order_index": 11,
+  "id": "yct-1-l02-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "认识你（ ）高兴！",
+  "options": [
+   "很",
+   "叫",
+   "吗",
+   "不"
+  ],
+  "correct_answer": "很",
+  "explanation": "认识你很高兴 = Танилцсандаа баяртай байна.",
+  "order_index": 12,
+  "id": "yct-1-l02-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Шинэ найзтайгаа танилцахдаа хэлэх үг:",
+  "options": [
+   "认识你很高兴！",
+   "老师好！",
+   "不认识。",
+   "再见！"
+  ],
+  "correct_answer": "认识你很高兴！",
+  "explanation": "Танилцахад «认识你很高兴».",
+  "order_index": 13,
+  "id": "yct-1-l02-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«我叫星星» гэж хэн хэлсэн бэ?",
+  "options": [
+   "ээж",
+   "Юэ-юэ",
+   "ногоон харь гарагийн хүүхэд",
+   "багш"
+  ],
+  "correct_answer": "ногоон харь гарагийн хүүхэд",
+  "explanation": "Ногоон харь гарагийн хүүхэд «你好！我叫星星» гэж хэлсэн.",
+  "order_index": 14,
+  "id": "yct-1-l02-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Юэ-юэ танихгүй охиныг харав. Тэр юу гэсэн бэ?",
+  "options": [
+   "我叫星星。",
+   "很高兴。",
+   "不认识。",
+   "再见。"
+  ],
+  "correct_answer": "不认识。",
+  "explanation": "Хүү «你认识她吗？» гэж асуухад Юэ-юэ «不认识» гэсэн.",
+  "order_index": 15,
+  "id": "yct-1-l02-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shénme» гэж уншдаг үг:",
+  "options": [
+   "什么",
+   "老师",
+   "认识",
+   "高兴"
+  ],
+  "correct_answer": "什么",
+  "explanation": "什么 = shénme = юу.",
+  "order_index": 16,
+  "id": "yct-1-l02-q16",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «gāoxìng» гэж уншдаг үг:",
+  "options": [
+   "你好",
+   "再见",
+   "认识",
+   "高兴"
+  ],
+  "correct_answer": "高兴",
+  "explanation": "高兴 = gāoxìng = баярлах.",
+  "order_index": 17,
+  "id": "yct-1-l02-q17",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «rènshi» гэж уншдаг үг:",
+  "options": [
+   "再见",
+   "认识",
+   "老师",
+   "什么"
+  ],
+  "correct_answer": "认识",
+  "explanation": "认识 = rènshi = таних.",
+  "order_index": 18,
+  "id": "yct-1-l02-q18",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«bù» гэж уншдаг ханз:",
+  "options": [
+   "吗",
+   "不",
+   "她",
+   "很"
+  ],
+  "correct_answer": "不",
+  "explanation": "不 = bù = үгүй, биш.",
+  "order_index": 19,
+  "id": "yct-1-l02-q19",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Хятад хүний нэрэнд эхлээд юу бичигддэг вэ?",
+  "options": [
+   "өөрийн нэр",
+   "нас",
+   "хот",
+   "овог"
+  ],
+  "correct_answer": "овог",
+  "explanation": "Хятадад овог эхэлж, дараа нь өөрийн нэр. 李芳 = Ли (овог) Фан.",
+  "order_index": 20,
+  "id": "yct-1-l02-q20",
+  "skillTags": [
+   "culture"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дараах нэрнээс овог аль нь вэ?",
+  "options": [
+   "月",
+   "芳",
+   "李",
+   "美"
+  ],
+  "correct_answer": "李",
+  "explanation": "李, 王, 张, 刘 — овог. 芳, 月, 美 — охины өөрийн нэр.",
+  "order_index": 21,
+  "id": "yct-1-l02-q21",
+  "skillTags": [
+   "culture"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«月» ямар утгатай вэ?",
+  "options": [
+   "далай",
+   "луу",
+   "хүчтэй",
+   "сар"
+  ],
+  "correct_answer": "сар",
+  "explanation": "月 (yuè) = сар. 海 = далай, 龙 = луу, 强 = хүчтэй.",
+  "order_index": 22,
+  "id": "yct-1-l02-q22",
+  "skillTags": [
+   "culture"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«你好» гэхэд найз чинь юу гэж хариулах вэ?",
+  "options": [
+   "不认识。",
+   "你好！",
+   "三",
+   "再见！"
+  ],
+  "correct_answer": "你好！",
+  "explanation": "Мэндчилгээнд мэндчилгээгээр хариулна.",
+  "order_index": 23,
+  "id": "yct-1-l02-q23",
+  "skillTags": [
+   "review"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Дарааллаар: 一、二、（ ）、四",
+  "options": [
+   "五",
+   "七",
+   "十",
+   "三"
+  ],
+  "correct_answer": "三",
+  "explanation": "1, 2, 3, 4 — 三 = гурав.",
+  "order_index": 24,
+  "id": "yct-1-l02-q24",
+  "skillTags": [
+   "review"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Багш ангид ороод ирлээ. Сурагчид юу гэх вэ?",
+  "options": [
+   "我叫月月。",
+   "老师好！",
+   "老师再见！",
+   "不认识。"
+  ],
+  "correct_answer": "老师好！",
+  "explanation": "Уулзахад 老师好.",
+  "order_index": 25,
+  "id": "yct-1-l02-q25",
+  "skillTags": [
+   "review"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаасаа нэрийг нь асуухдаа:",
+  "options": [
+   "认识你很高兴！",
+   "再见！",
+   "你叫什么？",
+   "你认识她吗？"
+  ],
+  "correct_answer": "你叫什么？",
+  "explanation": "Нэр асуухдаа 你叫什么？",
+  "order_index": 26,
+  "id": "yct-1-l02-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«她» ба «我»-г зөв холбо: «我» =",
+  "options": [
+   "чи",
+   "юу",
+   "би",
+   "тэр"
+  ],
+  "correct_answer": "би",
+  "explanation": "我 = би, 她 = тэр, 你 = чи, 什么 = юу.",
+  "order_index": 27,
+  "id": "yct-1-l02-q27",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ }
+]

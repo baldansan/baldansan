@@ -1,0 +1,207 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "judge",
+    "instruction_mn": "Сонсох — Аудио (07-05) сонсоод зураг таарч байвал ✓, таарахгүй бол ✗.",
+    "audio": "audio/yct-1-07-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）鸟",
+      "image": "images/t1.png",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "answer": "✗",
+      "script_zh": "鸟",
+      "explanation_mn": "Аудионд «鸟 (niǎo) — шувуу» гэнэ. Харин зураг дээр алтан загас байна (鱼). Таарахгүй → ✗."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）长耳朵",
+      "image": "images/t2.png",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "answer": "✗",
+      "script_zh": "长耳朵",
+      "explanation_mn": "«长耳朵» = урт чих. Зураг дээр тахиа байна, урт чихгүй. Таарахгүй → ✗."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）这儿有很多小鸟。",
+      "image": "images/t3.png",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "answer": "✓",
+      "script_zh": "这儿有很多小鸟。",
+      "explanation_mn": "Зураг дээр тэнгэрт олон шувуу нисч, хүүхдүүд харж байна — «энд олон жижиг шувуу байна» таарч байна → ✓."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）看那儿，在那儿。",
+      "image": "images/t4.png",
+      "options": [
+       "✓",
+       "✗"
+      ],
+      "answer": "✓",
+      "script_zh": "看那儿，在那儿。",
+      "explanation_mn": "«Тэнд хар, тэнд байна» — зураг дээр гэр бүл дээш хуруугаараа заагаад харж байна → ✓."
+     }
+    ],
+    "answer_source": "Test Answers: 1✗ 2✗ 3✓ 4✓"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — өгүүлбэр бүрт тохирох зургийг (A, B, C, D) сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "我的鱼在这儿。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Миний загас энд байна» — D зураг дээр хөвгүүн загасны аяга барьж байна. A — нохой, B — охин, муур, C — хоёр тоть."
+     },
+     {
+      "n": 6,
+      "question_zh": "我很喜欢小鸟。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Би жижиг шувууд их дуртай» — C зураг дээр хоёр тоть (шувуу) байна."
+     },
+     {
+      "n": 7,
+      "question_zh": "小猫，你几岁？",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Муур минь, чи хэдэн настай вэ?» — B зураг дээр охин муураа тэврэн хэвтэж байна."
+     },
+     {
+      "n": 8,
+      "question_zh": "那个小狗叫多多。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Тэр гөлөг Дуо-дуо гэдэг нэртэй» — A зураг дээр цамцтай гөлөг байна."
+     }
+    ],
+    "answer_source": "Test Answers: 5D 6C 7B 8A (зурагтай таарч байна)"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's guess — зураг дээрх амьтдыг таагаад хятадаар хэл.",
+    "image": "images/guess.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "这是什么？（1-р зураг）",
+      "answer": "这是狗。",
+      "explanation_mn": "Хэл гарсан, хурц чихтэй — нохой (狗)."
+     },
+     {
+      "n": 2,
+      "question_zh": "这是什么？（2-р зураг）",
+      "answer": "这是猫。",
+      "explanation_mn": "Хар цагаан толгой, ягаан чих — муур (猫)."
+     },
+     {
+      "n": 3,
+      "question_zh": "这是什么？（3-р зураг）",
+      "answer": "这是鱼。",
+      "explanation_mn": "Шар биетэй, ногоон туузтай — загас (鱼). Зураг хэсэгчилсэн тул багшаас шалга."
+     }
+    ],
+    "answer_source": "textbook picture (х.31)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бич: «小鱼» гэсэн хоёр ханзыг тод хуулан бич. 小 = жижиг, 鱼 = загас.",
+    "question_zh": "小鱼",
+    "answer": "小鱼",
+    "explanation_mn": "Эхлээд 小-г, дараа нь 鱼-г бич."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа асуу: «Энэ хэний нохой вэ?»",
+    "question_zh": "这是谁的狗？",
+    "answer": "这是谁的狗？",
+    "explanation_mn": "谁的 = хэний."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Ойрхон загас, холхон шувууг заагаад хэл.",
+    "question_zh": "这儿有很多小鱼。那儿有很多小鸟。",
+    "answer": "这儿有很多小鱼。那儿有很多小鸟。",
+    "explanation_mn": "这儿 = энд, 那儿 = тэнд."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«动物歌»-г хөдөлгөөнтэйгээр дуул.",
+    "question_zh": "小狗小狗，汪汪汪。",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 07-04-тэй хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · Test Answers (Lesson 7): 1✗ 2✗ 3✓ 4✓ 5D 6C 7B 8A"
+}

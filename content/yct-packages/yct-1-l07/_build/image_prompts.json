@@ -1,0 +1,153 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "这是谁的狗？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands beside the yellow camel calf boy, the camel calf girl and the brown camel calf boy in a sunny meadow; a puppy, a kitten, a fish pond and little birds are around, the boy points at the puppy with a speech bubble with the Chinese text 这是谁的狗？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhe.jpg",
+  "aspect": "1:1",
+  "title": "这",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy holds a toy puppy right in front of him, pointing at it with his finger close to his face, bright and clear, near object emphasized. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-na.jpg",
+  "aspect": "1:1",
+  "title": "那",
+  "section": "vocabulary",
+  "prompt": "The camel calf girl points far away across a field at a small house on a distant hill, the object tiny in the distance, arm stretched out. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shei.jpg",
+  "aspect": "1:1",
+  "title": "谁",
+  "section": "vocabulary",
+  "prompt": "The brown camel calf boy scratches his head with a big question mark above, looking at a toy ball that nobody owns, puzzled friendly face. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kan.jpg",
+  "aspect": "1:1",
+  "title": "看",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy looks through his hand like binoculars with wide eyes, excited, a rainbow in the sky. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zher.jpg",
+  "aspect": "1:1",
+  "title": "这儿",
+  "section": "vocabulary",
+  "prompt": "The camel calf girl stands on a river bank pointing at the ground at her feet where many small goldfish swim close to her, a big arrow marker pointing down here. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-duo.jpg",
+  "aspect": "1:1",
+  "title": "多",
+  "section": "vocabulary",
+  "prompt": "A big pile of many colorful apples and balls in a basket, with the brown camel calf boy surprised by how many there are, lots of items filling the picture. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-nar.jpg",
+  "aspect": "1:1",
+  "title": "那儿",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy points far away to a distant tree where many small birds sit, the birds tiny and far, arm stretched out. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-mao.jpg",
+  "aspect": "1:1",
+  "title": "猫",
+  "section": "vocabulary",
+  "prompt": "A cute kitten sitting and washing its paw, soft colors, simple clean background. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-gou.jpg",
+  "aspect": "1:1",
+  "title": "狗",
+  "section": "vocabulary",
+  "prompt": "A friendly brown puppy with its tongue out, wagging its tail, simple clean background. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-yu.jpg",
+  "aspect": "1:1",
+  "title": "鱼",
+  "section": "vocabulary",
+  "prompt": "A bright orange goldfish swimming in blue water with bubbles, simple clean background. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-niao.jpg",
+  "aspect": "1:1",
+  "title": "鸟",
+  "section": "vocabulary",
+  "prompt": "A small colorful bird sitting on a branch and singing, simple clean background. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "这是谁的狗？",
+  "section": "dialogue",
+  "prompt": "A boy with a green hoodie (named David) points at a brown puppy that a smiling girl with braids kneels next to; a kitten walks in the distance near a small house, speech bubble with the Chinese text 这是谁的狗？ in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你看，这儿有很多小鱼。",
+  "section": "dialogue",
+  "prompt": "The camel calf girl in a pink top kneels at a river bank pointing at many small fish while the yellow camel calf boy points far at many little birds near a big tree, speech bubble with the Chinese text 你看，这儿有很多小鱼。 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "动物歌",
+  "section": "song",
+  "prompt": "Four camel calf kids wear animal headbands (dog, cat, cow, sheep) and play chasing each other on a green meadow, laughing, music notes in the air; teacher camel claps happily. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

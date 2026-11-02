@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«岁» хэд гэсэн үг вэ?",
+  "options": [
+   "бас",
+   "нууц",
+   "нас",
+   "хэд"
+  ],
+  "correct_answer": "нас",
+  "explanation": "岁 (suì) = нас.",
+  "order_index": 1,
+  "id": "yct-1-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«几» хэд гэсэн үг вэ?",
+  "options": [
+   "хэд",
+   "нас",
+   "бас",
+   "та"
+  ],
+  "correct_answer": "хэд",
+  "explanation": "几 (jǐ) = хэд.",
+  "order_index": 2,
+  "id": "yct-1-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«也» хэд гэсэн үг вэ?",
+  "options": [
+   "бас",
+   "хэд",
+   "нууц",
+   "нас"
+  ],
+  "correct_answer": "бас",
+  "explanation": "也 (yě) = бас.",
+  "order_index": 3,
+  "id": "yct-1-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«多大» хэд гэсэн үг вэ?",
+  "options": [
+   "баяртай",
+   "нууц",
+   "хэдтэй вэ",
+   "бас"
+  ],
+  "correct_answer": "хэдтэй вэ",
+  "explanation": "多大 (duōdà) = хэдтэй вэ.",
+  "order_index": 4,
+  "id": "yct-1-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«您» хэд гэсэн үг вэ?",
+  "options": [
+   "тэр",
+   "та (хүндэтгэсэн)",
+   "бид",
+   "чи"
+  ],
+  "correct_answer": "та (хүндэтгэсэн)",
+  "explanation": "您 (nín) = та. 你 = чи.",
+  "order_index": 5,
+  "id": "yct-1-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«秘密» хэд гэсэн үг вэ?",
+  "options": [
+   "багш",
+   "нууц",
+   "сайн",
+   "нас"
+  ],
+  "correct_answer": "нууц",
+  "explanation": "秘密 (mìmì) = нууц.",
+  "order_index": 6,
+  "id": "yct-1-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Найзаасаа нас асуухад:",
+  "options": [
+   "他也6岁。",
+   "再见！",
+   "你几岁？",
+   "我6岁。"
+  ],
+  "correct_answer": "你几岁？",
+  "explanation": "你几岁 = чи хэдтэй вэ.",
+  "order_index": 7,
+  "id": "yct-1-l05-q07",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«我6岁。» гэдэг:",
+  "options": [
+   "Би 6 настай.",
+   "Чи хэдтэй вэ?",
+   "Багш аа, баяртай!",
+   "Тэр бас 6 настай."
+  ],
+  "correct_answer": "Би 6 настай.",
+  "explanation": "我6岁 = Би 6 настай.",
+  "order_index": 8,
+  "id": "yct-1-l05-q08",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：月月，你几岁？ B：我（ ）岁。",
+  "options": [
+   "也",
+   "你",
+   "6",
+   "好"
+  ],
+  "correct_answer": "6",
+  "explanation": "Хариу нь тоо: 我6岁.",
+  "order_index": 9,
+  "id": "yct-1-l05-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你哥哥多大？ B：他（ ）6岁。",
+  "options": [
+   "您",
+   "是",
+   "几",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "他也6岁 = тэр бас 6 настай.",
+  "order_index": 10,
+  "id": "yct-1-l05-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ахын насыг асуухад:",
+  "options": [
+   "你哥哥再见。",
+   "他也6岁。",
+   "你哥哥多大？",
+   "我6岁。"
+  ],
+  "correct_answer": "你哥哥多大？",
+  "explanation": "你哥哥多大 = чиний ах хэдтэй вэ.",
+  "order_index": 11,
+  "id": "yct-1-l05-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«他也6岁。» гэдэг:",
+  "options": [
+   "Тэр бас 6 настай.",
+   "Ээж 6 настай.",
+   "Би 6 настай.",
+   "Чи хэдтэй вэ?"
+  ],
+  "correct_answer": "Тэр бас 6 настай.",
+  "explanation": "也 = бас.",
+  "order_index": 12,
+  "id": "yct-1-l05-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Дууны тухай: Мари хэдтэй вэ?",
+  "options": [
+   "8 настай",
+   "7 настай",
+   "6 настай",
+   "9 настай"
+  ],
+  "correct_answer": "8 настай",
+  "explanation": "Дуунд: 玛丽：8岁，8岁，我8岁。",
+  "order_index": 13,
+  "id": "yct-1-l05-q13",
+  "skillTags": [
+   "song"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дууны тухай: Дэвид хэдтэй вэ?",
+  "options": [
+   "10 настай",
+   "8 настай",
+   "9 настай",
+   "7 настай"
+  ],
+  "correct_answer": "9 настай",
+  "explanation": "大卫：9岁，我9岁。",
+  "order_index": 14,
+  "id": "yct-1-l05-q14",
+  "skillTags": [
+   "song"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дуунд багш нас нь хэд вэ гэхэд юу гэж хариулав?",
+  "options": [
+   "我6岁",
+   "再见",
+   "秘密 (нууц)",
+   "他也6岁"
+  ],
+  "correct_answer": "秘密 (нууц)",
+  "explanation": "老师：秘密，秘密，是秘密。",
+  "order_index": 15,
+  "id": "yct-1-l05-q15",
+  "skillTags": [
+   "song"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«十一» хэд вэ?",
+  "options": [
+   "11",
+   "21",
+   "1",
+   "10"
+  ],
+  "correct_answer": "11",
+  "explanation": "十 + 一 = 11.",
+  "order_index": 16,
+  "id": "yct-1-l05-q16",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«二十» хэд вэ?",
+  "options": [
+   "22",
+   "2",
+   "12",
+   "20"
+  ],
+  "correct_answer": "20",
+  "explanation": "二十 = 2 × 10 = 20.",
+  "order_index": 17,
+  "id": "yct-1-l05-q17",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«三十五» хэд вэ?",
+  "options": [
+   "15",
+   "35",
+   "30",
+   "53"
+  ],
+  "correct_answer": "35",
+  "explanation": "三十 = 30, 五 = 5 → 35.",
+  "order_index": 18,
+  "id": "yct-1-l05-q18",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«六十» хэд вэ?",
+  "options": [
+   "16",
+   "60",
+   "66",
+   "6"
+  ],
+  "correct_answer": "60",
+  "explanation": "六十 = 60.",
+  "order_index": 19,
+  "id": "yct-1-l05-q19",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«一百» хэд вэ?",
+  "options": [
+   "10",
+   "1",
+   "1000",
+   "100"
+  ],
+  "correct_answer": "100",
+  "explanation": "一百 = 100.",
+  "order_index": 20,
+  "id": "yct-1-l05-q20",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аль нь «арван хоёр» вэ?",
+  "options": [
+   "二",
+   "二十",
+   "十二",
+   "十"
+  ],
+  "correct_answer": "十二",
+  "explanation": "十二 = 12, 二十 = 20.",
+  "order_index": 21,
+  "id": "yct-1-l05-q21",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «suì» гэж уншдаг ханз:",
+  "options": [
+   "几",
+   "也",
+   "您",
+   "岁"
+  ],
+  "correct_answer": "岁",
+  "explanation": "岁 = suì = нас.",
+  "order_index": 22,
+  "id": "yct-1-l05-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «duōdà» гэж уншдаг үг:",
+  "options": [
+   "老师",
+   "多大",
+   "秘密",
+   "几岁"
+  ],
+  "correct_answer": "多大",
+  "explanation": "多大 = duōdà = хэдтэй вэ.",
+  "order_index": 23,
+  "id": "yct-1-l05-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yě» гэж уншдаг ханз:",
+  "options": [
+   "几",
+   "岁",
+   "好",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "也 = yě = бас.",
+  "order_index": 24,
+  "id": "yct-1-l05-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Багшаас нас асуухдаа хүндэтгэж:",
+  "options": [
+   "老师再见。",
+   "老师，您多大？",
+   "老师，你几岁？",
+   "我6岁。"
+  ],
+  "correct_answer": "老师，您多大？",
+  "explanation": "您 = хүндэтгэсэн «та».",
+  "order_index": 25,
+  "id": "yct-1-l05-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ээжийн нас асуухад аль нь тохиромжтой вэ?",
+  "options": [
+   "我6岁。",
+   "你好！",
+   "妈妈多大？",
+   "妈妈也6岁。"
+  ],
+  "correct_answer": "妈妈多大？",
+  "explanation": "Том хүнд 多大 гэж асууна.",
+  "order_index": 26,
+  "id": "yct-1-l05-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story: «爸爸35岁，妈妈也35岁。» — Ээж хэдтэй вэ?",
+  "options": [
+   "7 настай",
+   "1 настай",
+   "35 настай",
+   "60 настай"
+  ],
+  "correct_answer": "35 настай",
+  "explanation": "妈妈也35岁 = ээж бас 35 настай.",
+  "order_index": 27,
+  "id": "yct-1-l05-q27",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story: «爷爷60岁，奶奶也60岁。» — Эмээ хэдтэй вэ?",
+  "options": [
+   "35 настай",
+   "7 настай",
+   "60 настай",
+   "1 настай"
+  ],
+  "correct_answer": "60 настай",
+  "explanation": "奶奶也60岁 = эмээ бас 60 настай.",
+  "order_index": 28,
+  "id": "yct-1-l05-q28",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "medium"
+ }
+]
