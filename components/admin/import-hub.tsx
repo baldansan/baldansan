@@ -35,6 +35,21 @@ export function ImportHub() {
 
         <article className={cardClass}>
           <span className="text-3xl" aria-hidden>
+            📝
+          </span>
+          <h2 className="mt-4 text-lg font-semibold text-slate-900">
+            Дасгалын ном (练习册) оруулах
+          </h2>
+          <p className="mt-2 flex-1 text-sm text-slate-600">
+            Байгаа хичээлийн зөвхөн workbook хэсгийг солино (GitHub raw JSON эсвэл буулгасан JSON). Бусад агуулга хэвээр.
+          </p>
+          <Link href="/admin/import/workbook" className={btnPrimary}>
+            Дасгалын ном оруулах
+          </Link>
+        </article>
+
+        <article className={cardClass}>
+          <span className="text-3xl" aria-hidden>
             ▶
           </span>
           <h2 className="mt-4 text-lg font-semibold text-slate-900">
