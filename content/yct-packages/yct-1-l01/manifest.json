@@ -30,7 +30,7 @@
   "images": [
    {
     "id": "hero",
-    "file": "images/d1-nihao.jpg",
+    "file": "images/hero.jpg",
     "title": "你好！ — сургуулийн хашаанд мэндлэх",
     "role": "hero",
     "section": "teacher-intro"

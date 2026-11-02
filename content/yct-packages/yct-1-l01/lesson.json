@@ -11,7 +11,7 @@
  "status": "draft",
  "orderIndex": 1,
  "icon": "👋",
- "thumbnailFile": "images/d1-nihao.jpg",
+ "thumbnailFile": "images/hero.jpg",
  "audioFile": "audio/yct-1-01-text-song.mp3",
  "level": "YCT 1",
  "hook": {
