@@ -50,17 +50,31 @@ export type KidsKeySentence = {
 export type KidsListeningItem = {
   n: number;
   scriptZh: string;
+  imageUrl: string | null;
   options: string[];
   optionImages: (string | null)[];
   answer: string;
   explanation: string;
 };
 
+/** scriptZh байвал «сонсоод ✓/✗» (ханз нуугдана), байхгүй бол «унш → ✓/✗». */
 export type KidsJudgeItem = {
   n: number;
   zh: string;
+  scriptZh: string | null;
   imageUrl: string | null;
   answer: boolean;
+  explanation: string;
+};
+
+export type KidsChoiceItem = {
+  n: number;
+  questionZh: string;
+  questionMn: string;
+  imageUrl: string | null;
+  options: string[];
+  optionImages: (string | null)[];
+  answer: string;
   explanation: string;
 };
 
@@ -82,6 +96,7 @@ export type KidsLessonData = {
     audioUrl: string | null;
     listening: KidsListeningItem[];
     judge: KidsJudgeItem[];
+    choice: KidsChoiceItem[];
   };
   culture: { title: string; text: string; imageUrl: string | null } | null;
 };
@@ -228,16 +243,34 @@ export function buildKidsLessonData(
   const parts = arr(reading.parts).filter(isRec);
   const listening: KidsListeningItem[] = [];
   const judge: KidsJudgeItem[] = [];
+  const choice: KidsChoiceItem[] = [];
   let testAudio: string | null = null;
+  const isTick = (v: string) => v === "✓" || v === "√" || v.toLowerCase() === "true";
+  const isJudgeOptions = (o: string[]) => o.length === 2 && o.every((v) => isTick(v) || v === "✗" || v === "×" || v.toLowerCase() === "false");
+  const stripListen = (v: string) => v.replace(/^（.*?）/, "").trim();
   for (const part of parts) {
     const type = str(part.type);
     if (type === "listening") {
       testAudio = testAudio ?? audio(part.audio);
       for (const it of arr(part.items).filter(isRec)) {
         const options = arr(it.options).map(str);
+        const scriptZh = str(it.script_zh) || stripListen(str(it.question_zh));
+        if (isJudgeOptions(options)) {
+          // сонсоод зурагтай тулгах ✓/✗
+          judge.push({
+            n: Number(it.n) || judge.length + 1,
+            zh: scriptZh,
+            scriptZh,
+            imageUrl: imgByPath(it.image),
+            answer: isTick(str(it.answer)),
+            explanation: str(it.explanation_mn),
+          });
+          continue;
+        }
         listening.push({
           n: Number(it.n) || listening.length + 1,
-          scriptZh: str(it.script_zh) || str(it.question_zh).replace(/^（.*?）/, ""),
+          scriptZh,
+          imageUrl: imgByPath(it.image),
           options,
           optionImages: arr(it.optionImages).map(imgByPath),
           answer: str(it.answer),
@@ -245,13 +278,30 @@ export function buildKidsLessonData(
         });
       }
     } else if (type === "judge") {
+      testAudio = testAudio ?? audio(part.audio);
       for (const it of arr(part.items).filter(isRec)) {
-        const a = str(it.answer);
+        const scriptZh = str(it.script_zh) || (/^（听/.test(str(it.question_zh)) ? stripListen(str(it.question_zh)) : "");
         judge.push({
           n: Number(it.n) || judge.length + 1,
-          zh: str(it.question_zh),
+          zh: scriptZh || stripListen(str(it.question_zh)),
+          scriptZh: scriptZh || null,
           imageUrl: imgByPath(it.image),
-          answer: a === "✓" || a.toLowerCase() === "true" || a === "√",
+          answer: isTick(str(it.answer)),
+          explanation: str(it.explanation_mn),
+        });
+      }
+    } else if (type === "choice") {
+      for (const it of arr(part.items).filter(isRec)) {
+        const options = arr(it.options).map(str);
+        if (options.length < 2) continue;
+        choice.push({
+          n: Number(it.n) || choice.length + 1,
+          questionZh: str(it.question_zh),
+          questionMn: str(it.question_mn),
+          imageUrl: imgByPath(it.image),
+          options,
+          optionImages: arr(it.optionImages).map(imgByPath),
+          answer: str(it.answer),
           explanation: str(it.explanation_mn),
         });
       }
@@ -278,7 +328,7 @@ export function buildKidsLessonData(
     dialogues,
     song,
     keySentences,
-    test: { audioUrl: testAudio, listening, judge },
+    test: { audioUrl: testAudio, listening, judge, choice },
     culture,
   };
 }

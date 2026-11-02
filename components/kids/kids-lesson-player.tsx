@@ -299,7 +299,7 @@ export function KidsLessonPlayer({ data, backHref, adminPreview }: { data: KidsL
     if (data.dialogues.length) s.push({ id: "talk", label: "Яриа", emoji: "💬" });
     if (data.song) s.push({ id: "sing", label: "Дуу", emoji: "🎵" });
     s.push({ id: "play", label: "Тоглоом", emoji: "🎮" });
-    if (data.test.listening.length || data.test.judge.length) s.push({ id: "test", label: "Шалгалт", emoji: "🏁" });
+    if (data.test.listening.length || data.test.judge.length || data.test.choice.length) s.push({ id: "test", label: "Шалгалт", emoji: "🏁" });
     s.push({ id: "done", label: "Од", emoji: "⭐" });
     return s;
   }, [data]);
@@ -629,11 +629,26 @@ function PlayStep({ data, onEarn, onNext }: { data: KidsLessonData; onEarn: (n: 
   );
 }
 
+type TestItem =
+  | { kind: "listen"; it: KidsLessonData["test"]["listening"][number] }
+  | { kind: "judge"; it: KidsLessonData["test"]["judge"][number] }
+  | { kind: "choice"; it: KidsLessonData["test"]["choice"][number] };
+
+/** Сонголт хариултай таарах уу: "C" ↔ "C" / "C 哪" / "哪". */
+function choiceMatches(option: string, answer: string): boolean {
+  const o = option.trim();
+  const a = answer.trim();
+  if (!a) return false;
+  return o === a || o.startsWith(a + " ") || o.startsWith(a + "．") || o.startsWith(a + ".") || o.replace(/^[A-D]\s*[.．]?\s*/, "") === a;
+}
+const optionLabel = (o: string) => o.replace(/^[A-D]\s*[.．]?\s*/, "").trim() || o;
+
 function TestStep({ data, onDone }: { data: KidsLessonData; onDone: (r: GameResult) => void }) {
-  const items = useMemo(
+  const items = useMemo<TestItem[]>(
     () => [
       ...data.test.listening.map((it) => ({ kind: "listen" as const, it })),
       ...data.test.judge.map((it) => ({ kind: "judge" as const, it })),
+      ...data.test.choice.map((it) => ({ kind: "choice" as const, it })),
     ],
     [data]
   );
@@ -641,14 +656,25 @@ function TestStep({ data, onDone }: { data: KidsLessonData; onDone: (r: GameResu
   const [picked, setPicked] = useState<string | null>(null);
   const [correct, setCorrect] = useState(0);
   const cur = items[i];
-  useEffect(() => {
-    if (cur?.kind === "listen") void speakWithSavedSettings(cur.it.scriptZh, "zh-CN");
+  const speakCur = useCallback(() => {
+    if (!cur) return;
+    if (cur.kind === "listen") void speakWithSavedSettings(cur.it.scriptZh, "zh-CN");
+    else if (cur.kind === "judge" && cur.it.scriptZh) void speakWithSavedSettings(cur.it.scriptZh, "zh-CN");
+    else if (cur.kind === "choice" && cur.it.questionZh) void speakWithSavedSettings(cur.it.questionZh.replace(/（\s*）/g, "……"), "zh-CN");
   }, [cur]);
+  useEffect(() => {
+    if (cur?.kind === "listen" || (cur?.kind === "judge" && cur.it.scriptZh)) speakCur();
+  }, [cur, speakCur]);
   if (!cur) return null;
+  const check = (v: string): boolean => {
+    if (cur.kind === "listen") return v === cur.it.answer;
+    if (cur.kind === "judge") return (v === "✓") === cur.it.answer;
+    return choiceMatches(v, cur.it.answer);
+  };
   const answer = (v: string) => {
     if (picked) return;
     setPicked(v);
-    const ok = cur.kind === "listen" ? v === cur.it.answer : (v === "✓") === cur.it.answer;
+    const ok = check(v);
     if (ok) setCorrect((c) => c + 1);
     setTimeout(() => {
       if (i + 1 >= items.length) onDone({ correct: correct + (ok ? 1 : 0), total: items.length });
@@ -658,7 +684,8 @@ function TestStep({ data, onDone }: { data: KidsLessonData; onDone: (r: GameResu
       }
     }, 1800);
   };
-  const isOk = picked != null && (cur.kind === "listen" ? picked === cur.it.answer : (picked === "✓") === cur.it.answer);
+  const isOk = picked != null && check(picked);
+  const optionState = (o: string) => (!picked ? "" : check(o) ? "ring-4 ring-emerald-400" : o === picked ? "ring-4 ring-rose-400 opacity-70" : "opacity-50");
   return (
     <div className="flex flex-col items-center gap-4">
       <div className="text-sm font-bold text-amber-800">
@@ -666,29 +693,41 @@ function TestStep({ data, onDone }: { data: KidsLessonData; onDone: (r: GameResu
       </div>
       {cur.kind === "listen" ? (
         <>
-          <BigAudioButton label="Сонс" onClick={() => void speakWithSavedSettings(cur.it.scriptZh, "zh-CN")} />
-          <p className="text-base font-bold text-[#6b3f1d]">Сонсоод зөв зургийг сонго</p>
-          <div className="grid w-full grid-cols-3 gap-3">
-            {cur.it.options.map((o, k) => {
-              const state = !picked ? "" : o === cur.it.answer ? "ring-4 ring-emerald-400" : o === picked ? "ring-4 ring-rose-400 opacity-70" : "opacity-50";
-              return (
-                <button key={o} type="button" onClick={() => answer(o)} className={`${C.card} flex flex-col items-center gap-1 p-2 ${state}`}>
-                  {cur.it.optionImages[k] ? <img src={cur.it.optionImages[k]!} alt="" className="aspect-square w-full object-contain" /> : null}
-                  <span className="text-lg font-extrabold text-[#2b1a05]">{o}</span>
-                </button>
-              );
-            })}
+          <BigAudioButton label="Сонс" onClick={speakCur} />
+          {cur.it.imageUrl ? <img src={cur.it.imageUrl} alt="" className="h-36 object-contain" /> : null}
+          <p className="text-base font-bold text-[#6b3f1d]">{cur.it.optionImages.some(Boolean) ? "Сонсоод зөв зургийг сонго" : "Сонсоод зөв хариуг сонго"}</p>
+          <div className={`grid w-full gap-3 ${cur.it.options.length <= 2 ? "grid-cols-2" : cur.it.options.length === 4 ? "grid-cols-2" : "grid-cols-3"}`}>
+            {cur.it.options.map((o, k) => (
+              <button key={o} type="button" onClick={() => answer(o)} className={`${C.card} flex flex-col items-center gap-1 p-2 ${optionState(o)}`}>
+                {cur.it.optionImages[k] ? <img src={cur.it.optionImages[k]!} alt="" className="aspect-square w-full object-contain" /> : null}
+                <span className="text-lg font-extrabold text-[#2b1a05]" lang="zh-CN">
+                  {optionLabel(o)}
+                </span>
+              </button>
+            ))}
           </div>
         </>
-      ) : (
+      ) : cur.kind === "judge" ? (
         <>
-          <p className="text-base font-bold text-[#6b3f1d]">Зураг, үг хоёр таарч байна уу?</p>
-          <div className={`${C.card} flex w-full items-center justify-center gap-6 p-5`}>
-            {cur.it.imageUrl ? <img src={cur.it.imageUrl} alt="" className="h-36 object-contain" /> : null}
-            <button type="button" onClick={() => void speakWithSavedSettings(cur.it.zh, "zh-CN")} className="text-5xl font-extrabold text-[#2b1a05]" lang="zh-CN">
-              {cur.it.zh}
-            </button>
-          </div>
+          {cur.it.scriptZh ? (
+            <>
+              <BigAudioButton label="Сонс" onClick={speakCur} />
+              <p className="text-base font-bold text-[#6b3f1d]">Сонсоод зурагтай таарч байна уу?</p>
+              <div className={`${C.card} flex w-full items-center justify-center p-5`}>
+                {cur.it.imageUrl ? <img src={cur.it.imageUrl} alt="" className="h-44 object-contain" /> : <span className="text-6xl">🎧</span>}
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="text-base font-bold text-[#6b3f1d]">Зураг, үг хоёр таарч байна уу?</p>
+              <div className={`${C.card} flex w-full items-center justify-center gap-6 p-5`}>
+                {cur.it.imageUrl ? <img src={cur.it.imageUrl} alt="" className="h-36 object-contain" /> : null}
+                <button type="button" onClick={() => void speakWithSavedSettings(cur.it.zh, "zh-CN")} className="text-5xl font-extrabold text-[#2b1a05]" lang="zh-CN">
+                  {cur.it.zh}
+                </button>
+              </div>
+            </>
+          )}
           <div className="flex gap-4">
             <button type="button" onClick={() => answer("✓")} className={`${C.btn} ${picked === "✓" ? (isOk ? C.ok : C.bad) : C.ok} px-10 text-3xl`}>
               ✓
@@ -696,6 +735,32 @@ function TestStep({ data, onDone }: { data: KidsLessonData; onDone: (r: GameResu
             <button type="button" onClick={() => answer("✗")} className={`${C.btn} ${picked === "✗" ? (isOk ? C.ok : C.bad) : C.bad} px-10 text-3xl`}>
               ✗
             </button>
+          </div>
+          {picked && cur.it.scriptZh ? (
+            <div className="text-2xl font-extrabold text-[#2b1a05]" lang="zh-CN">
+              {cur.it.scriptZh}
+            </div>
+          ) : null}
+        </>
+      ) : (
+        <>
+          <p className="text-base font-bold text-[#6b3f1d]">{cur.it.optionImages.some(Boolean) ? "Уншаад зөв зургийг сонго" : "Зөв хариуг сонго"}</p>
+          <div className={`${C.card} flex w-full flex-col items-center gap-3 p-4`}>
+            {cur.it.imageUrl ? <img src={cur.it.imageUrl} alt="" className="h-32 object-contain" /> : null}
+            <button type="button" onClick={speakCur} className="text-center text-3xl font-extrabold leading-snug text-[#2b1a05]" lang="zh-CN">
+              {cur.it.questionZh}
+            </button>
+            {cur.it.questionMn ? <p className="text-sm text-[#6b3f1d]">{cur.it.questionMn}</p> : null}
+          </div>
+          <div className={`grid w-full gap-3 ${cur.it.options.length === 4 ? "grid-cols-2" : cur.it.options.length === 3 ? "grid-cols-3" : "grid-cols-2"}`}>
+            {cur.it.options.map((o, k) => (
+              <button key={o} type="button" onClick={() => answer(o)} className={`${C.card} flex flex-col items-center gap-1 p-2 ${optionState(o)}`}>
+                {cur.it.optionImages[k] ? <img src={cur.it.optionImages[k]!} alt="" className="aspect-square w-full object-contain" /> : null}
+                <span className="text-xl font-extrabold text-[#2b1a05]" lang="zh-CN">
+                  {optionLabel(o)}
+                </span>
+              </button>
+            ))}
           </div>
         </>
       )}
