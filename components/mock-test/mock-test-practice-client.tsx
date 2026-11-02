@@ -437,6 +437,7 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
         ) : null}
 
         <MockTestPracticeQuestion
+          key={question.id}
           question={question}
           answer={answer}
           revealed={revealed}

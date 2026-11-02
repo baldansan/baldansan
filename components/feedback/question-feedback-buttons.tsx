@@ -22,6 +22,15 @@ export function QuestionFeedbackButtons({
   const [showNote, setShowNote] = useState(false);
   const [note, setNote] = useState("");
   const [sent, setSent] = useState(false);
+  // Асуулт солигдоход (эцэг нь key өгөөгүй ч) 👍/👎 төлөв дараагийн асуултад үлдэхгүй.
+  const [forQuestionId, setForQuestionId] = useState(questionId);
+  if (forQuestionId !== questionId) {
+    setForQuestionId(questionId);
+    setRating(null);
+    setShowNote(false);
+    setNote("");
+    setSent(false);
+  }
 
   function submit(next: QuestionFeedbackRating, noteText?: string) {
     if (disabled || sent) return;
