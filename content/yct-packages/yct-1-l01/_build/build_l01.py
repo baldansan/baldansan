@@ -246,12 +246,12 @@ dump("workbook.json", workbook)
 
 # ---------------- LESSON / MANIFEST ----------------
 images = [
- {"id":"hero","file":"images/d1-nihao.png","title":"你好！ — сургуулийн хашаанд мэндлэх","role":"hero","section":"teacher-intro"},
- {"id":"d1","file":"images/d1-nihao.png","title":"你好！","role":"illustration","section":"dialogue"},
- {"id":"d2","file":"images/d2-laoshihao.png","title":"老师好！","role":"illustration","section":"dialogue"},
- {"id":"d3","file":"images/d3-zaijian.png","title":"再见！","role":"illustration","section":"dialogue"},
+ {"id":"hero","file":"images/d1-nihao.jpg","title":"你好！ — сургуулийн хашаанд мэндлэх","role":"hero","section":"teacher-intro"},
+ {"id":"d1","file":"images/d1-nihao.jpg","title":"你好！","role":"illustration","section":"dialogue"},
+ {"id":"d2","file":"images/d2-laoshihao.jpg","title":"老师好！","role":"illustration","section":"dialogue"},
+ {"id":"d3","file":"images/d3-zaijian.jpg","title":"再见！","role":"illustration","section":"dialogue"},
  {"id":"hands","file":"images/hands.png","title":"Хятадын гарын тоо 1–10","role":"illustration","section":"culture"},
- {"id":"sing","file":"images/sing-girl.png","title":"Let's sing · 你好","role":"illustration","section":"song"},
+ {"id":"sing","file":"images/sing-girl.jpg","title":"Let's sing · 你好","role":"illustration","section":"song"},
 ] + [{"id":f"w-{k}","file":f"images/w-{k}.jpg","title":z,"role":"illustration","section":"vocabulary"} for k,z in [("ni","你"),("hao","好"),("laoshi","老师"),("zaijian","再见")]] \
   + [{"id":f"n{i+1}","file":f"images/n{i+1}.png","title":z,"role":"illustration","section":"vocabulary"} for i,(z,p,m) in enumerate(NUM)] \
   + [{"id":f"t{k}","file":f"images/t{k}.png","title":f"Test {k}","role":"illustration","section":"workbook"} for k in ["1a","1b","1c","2a","2b","2c","3a","3b","3c","4","5","6"]]
@@ -261,7 +261,7 @@ lesson = {
  "title":"YCT 1 · 1-р хичээл — Сайн уу!","chineseTitle":"你好！","targetTitle":"你好！","mongolianTitle":"Сайн уу!",
  "subtitle":"你好 · 老师好 · 再见 · тоо 一～十 · «你好» дуу · гарын тоглоом",
  "description":"Мэндлэх (你好, 老师好), баяртай гэж хэлэх (再见), 1–10 хүртэл тоолох. 14 үг, 3 зурагт яриа, 1 дуу, 3 түлхүүр өгүүлбэр, 22 шалгалтын асуулт, номын тест (сонсох 3 + унших 3) — АЛБАН АУДИО, ЗУРАГТАЙ.",
- "duration":"2 × 35 мин","status":"draft","orderIndex":1,"icon":"👋","thumbnailFile":"images/d1-nihao.png","audioFile":AUD_MAIN,
+ "duration":"2 × 35 мин","status":"draft","orderIndex":1,"icon":"👋","thumbnailFile":"images/d1-nihao.jpg","audioFile":AUD_MAIN,
  "level":"YCT 1",
  "hook":texts["lessonIntro"] | {},
  "sourceNote":"YCT 标准教程 1 — 第1课《你好！》 [hskLevel=1] [lessonNumber=1]; эх: YCT1标准教程.pdf х.1–4, х.61 (сонсголын текст), х.63 (хариу); аудио CD 01-01…01-04"

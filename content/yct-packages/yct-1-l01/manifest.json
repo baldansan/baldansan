@@ -30,28 +30,28 @@
   "images": [
    {
     "id": "hero",
-    "file": "images/d1-nihao.png",
+    "file": "images/d1-nihao.jpg",
     "title": "你好！ — сургуулийн хашаанд мэндлэх",
     "role": "hero",
     "section": "teacher-intro"
    },
    {
     "id": "d1",
-    "file": "images/d1-nihao.png",
+    "file": "images/d1-nihao.jpg",
     "title": "你好！",
     "role": "illustration",
     "section": "dialogue"
    },
    {
     "id": "d2",
-    "file": "images/d2-laoshihao.png",
+    "file": "images/d2-laoshihao.jpg",
     "title": "老师好！",
     "role": "illustration",
     "section": "dialogue"
    },
    {
     "id": "d3",
-    "file": "images/d3-zaijian.png",
+    "file": "images/d3-zaijian.jpg",
     "title": "再见！",
     "role": "illustration",
     "section": "dialogue"
@@ -65,7 +65,7 @@
    },
    {
     "id": "sing",
-    "file": "images/sing-girl.png",
+    "file": "images/sing-girl.jpg",
     "title": "Let's sing · 你好",
     "role": "illustration",
     "section": "song"
