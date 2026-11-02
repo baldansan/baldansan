@@ -1,5 +1,7 @@
 import {
   buildFazhanCourseCatalog,
+  buildYctCourseCatalog,
+  YCT_HOME_LEVELS,
   buildHomeCourseCatalog,
   defaultFazhanChipId,
   defaultHomeChipId,
@@ -31,6 +33,7 @@ export type MobileHomeData = {
   defaultChipId: string;
   fazhanCatalog: MobileCourseCatalogEntry[];
   fazhanDefaultChipId: string;
+  yctCatalog: MobileCourseCatalogEntry[];
   libraryPreview: LibraryPreviewItem[];
   bichlegSuggestion: BichlegSuggestion | null;
 };
@@ -150,12 +153,15 @@ async function loadBichlegSuggestionForHome(): Promise<BichlegSuggestion | null>
 }
 
 export async function loadMobileHomeData(): Promise<MobileHomeData> {
-  const [hskLevels, korean, fazhanLevels, libraryPreview, bichlegSuggestion] =
+  const [hskLevels, korean, fazhanLevels, yctLevels, libraryPreview, bichlegSuggestion] =
     await Promise.all([
       Promise.all(HSK_LEVEL_IDS.map((id) => loadHskLevelForHome(id))),
       loadKoreanCourseForHome(),
       Promise.all(
         FAZHAN_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
+      ),
+      Promise.all(
+        YCT_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
       ),
       loadLibraryPreviewForHome(),
       loadBichlegSuggestionForHome(),
@@ -188,12 +194,20 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
     fazhanByCourseId[FAZHAN_HOME_LEVELS[i]!.courseId] = fazhanLevels[i];
   }
   const fazhanCatalog = buildFazhanCourseCatalog(fazhanByCourseId);
+  const yctByCourseId: Partial<
+    Record<string, Awaited<ReturnType<typeof loadFazhanCourseForHome>>>
+  > = {};
+  for (let i = 0; i < YCT_HOME_LEVELS.length; i++) {
+    yctByCourseId[YCT_HOME_LEVELS[i]!.courseId] = yctLevels[i];
+  }
+  const yctCatalog = buildYctCourseCatalog(yctByCourseId);
 
   return {
     catalog,
     defaultChipId: defaultHomeChipId(catalog),
     fazhanCatalog,
     fazhanDefaultChipId: defaultFazhanChipId(fazhanCatalog),
+    yctCatalog,
     libraryPreview,
     bichlegSuggestion,
   };

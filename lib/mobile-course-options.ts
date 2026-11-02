@@ -45,7 +45,8 @@ export type HskHomeLevelId = (typeof HSK_HOME_LEVELS)[number]["courseId"];
  * fallbacks with real art.
  */
 export function defaultCoverUrl(courseId: string): string | null {
-  if (/^hsk[1-6]$/.test(courseId) || courseId.startsWith("fazhan-")) {
+  if (/^hsk[1-6]$/.test(courseId) || courseId.startsWith("fazhan-") ||
+    courseId.startsWith("yct-")) {
     return `/covers/${courseId}.svg`;
   }
   return null;
@@ -232,4 +233,33 @@ export function defaultFazhanChipId(
     catalog.find((entry) => entry.available)?.chipId ??
     FAZHAN_HOME_LEVELS[0].chipId
   );
+}
+
+/**
+ * YCT 标准教程 (Youth Chinese Test) — children's course series. Only yct-1 is
+ * live; yct-2…6 render as "Удахгүй" placeholders until lessons are published.
+ */
+export const YCT_HOME_LEVELS = [
+  { chipId: "yct1", chipLabel: "YCT 1", courseId: "yct-1", hskEquivalent: "HSK1 түвшин" },
+  { chipId: "yct2", chipLabel: "YCT 2", courseId: "yct-2", hskEquivalent: "HSK1 түвшин" },
+  { chipId: "yct3", chipLabel: "YCT 3", courseId: "yct-3", hskEquivalent: "HSK2 түвшин" },
+  { chipId: "yct4", chipLabel: "YCT 4", courseId: "yct-4", hskEquivalent: "HSK2 түвшин" },
+  { chipId: "yct5", chipLabel: "YCT 5", courseId: "yct-5", hskEquivalent: "HSK3 түвшин" },
+  { chipId: "yct6", chipLabel: "YCT 6", courseId: "yct-6", hskEquivalent: "HSK3 түвшин" },
+] as const;
+
+/** Home course chips for the YCT (children) tab. */
+export function buildYctCourseCatalog(
+  byCourseId: Partial<Record<string, CourseMeta | null | undefined>>
+): MobileCourseCatalogEntry[] {
+  return YCT_HOME_LEVELS.map((level) => {
+    const meta = byCourseId[level.courseId];
+    if (meta && meta.lessons.length > 0) {
+      return liveCourseEntry(level.chipId, level.chipLabel, level.courseId, {
+        ...meta,
+        subtitle: meta.subtitle || level.hskEquivalent,
+      });
+    }
+    return placeholderFazhanEntry(level as unknown as (typeof FAZHAN_HOME_LEVELS)[number]);
+  });
 }

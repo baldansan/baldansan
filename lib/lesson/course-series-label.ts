@@ -51,12 +51,51 @@ const FAZHAN_SERIES: Record<string, CourseSeriesMeta> = {
   },
 };
 
+const YCT_SERIES: Record<string, CourseSeriesMeta> = {
+  "yct-1": {
+    label: "YCT 1",
+    title: "YCT 标准教程 1 — Хүүхдийн хятад хэл",
+    subtitle: "Бага сургуулийн хятад хэл · 12 хичээл · YCT 1-р түвшин (≈HSK1)",
+    hskLevel: 1,
+  },
+  "yct-2": {
+    label: "YCT 2",
+    title: "YCT 标准教程 2 — Хүүхдийн хятад хэл",
+    subtitle: "Бага сургуулийн хятад хэл · YCT 2-р түвшин (≈HSK1)",
+    hskLevel: 1,
+  },
+  "yct-3": {
+    label: "YCT 3",
+    title: "YCT 标准教程 3 — Хүүхдийн хятад хэл",
+    subtitle: "Бага сургуулийн хятад хэл · YCT 3-р түвшин (≈HSK2)",
+    hskLevel: 2,
+  },
+  "yct-4": {
+    label: "YCT 4",
+    title: "YCT 标准教程 4 — Хүүхдийн хятад хэл",
+    subtitle: "Бага сургуулийн хятад хэл · YCT 4-р түвшин (≈HSK2)",
+    hskLevel: 2,
+  },
+  "yct-5": {
+    label: "YCT 5",
+    title: "YCT 标准教程 5 — Хүүхдийн хятад хэл",
+    subtitle: "Бага сургуулийн хятад хэл · YCT 5-р түвшин (≈HSK3)",
+    hskLevel: 3,
+  },
+  "yct-6": {
+    label: "YCT 6",
+    title: "YCT 标准教程 6 — Хүүхдийн хятад хэл",
+    subtitle: "Бага сургуулийн хятад хэл · YCT 6-р түвшин (≈HSK3)",
+    hskLevel: 3,
+  },
+};
+
 export const FAZHAN_COURSE_IDS = Object.keys(FAZHAN_SERIES);
 
 export function courseSeriesMeta(courseId: string | null | undefined): CourseSeriesMeta | null {
   const key = String(courseId ?? "").trim().toLowerCase();
   if (!key) return null;
-  return FAZHAN_SERIES[key] ?? null;
+  return FAZHAN_SERIES[key] ?? YCT_SERIES[key] ?? null;
 }
 
 /** "发展汉语 中级 I" гэх мэт; HSK курс бол null (тэнд HSKn хэвээр). */

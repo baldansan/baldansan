@@ -15,6 +15,7 @@ export default async function HomeAppPage() {
     defaultChipId,
     fazhanCatalog,
     fazhanDefaultChipId,
+    yctCatalog,
     libraryPreview,
     bichlegSuggestion,
   } = await loadMobileHomeData();
@@ -25,6 +26,7 @@ export default async function HomeAppPage() {
       defaultChipId={defaultChipId}
       fazhanCatalog={fazhanCatalog}
       fazhanDefaultChipId={fazhanDefaultChipId}
+      yctCatalog={yctCatalog}
       libraryPreview={libraryPreview}
       helzuiSummary={helzuiHomeSummary()}
       bichlegSuggestion={bichlegSuggestion}

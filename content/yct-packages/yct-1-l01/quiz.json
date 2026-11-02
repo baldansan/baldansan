@@ -1,0 +1,470 @@
+[
+ {
+  "type": "choice",
+  "question": "«Сайн уу» хятадаар аль нь вэ?",
+  "options": [
+   "再见",
+   "三",
+   "你好",
+   "老师"
+  ],
+  "correct_answer": "你好",
+  "explanation": "你好 = сайн уу. 再见 = баяртай, 老师 = багш, 三 = гурав.",
+  "order_index": 1,
+  "id": "yct-1-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Баяртай» хятадаар аль нь вэ?",
+  "options": [
+   "再见",
+   "你好",
+   "老师",
+   "十"
+  ],
+  "correct_answer": "再见",
+  "explanation": "再见 = баяртай. 你好 = сайн уу, 老师 = багш, 十 = арав.",
+  "order_index": 2,
+  "id": "yct-1-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«老师» гэж юу вэ?",
+  "options": [
+   "багш",
+   "ээж",
+   "сурагч",
+   "найз"
+  ],
+  "correct_answer": "багш",
+  "explanation": "老师 (lǎoshī) = багш.",
+  "order_index": 3,
+  "id": "yct-1-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Багш ангид орж ирэхэд сурагчид юу гэж хэлэх вэ?",
+  "options": [
+   "老师再见！",
+   "五！",
+   "老师好！",
+   "你好吗？"
+  ],
+  "correct_answer": "老师好！",
+  "explanation": "Уулзахад 老师好 (багш аа, сайн байна уу). 老师再见 — салахад.",
+  "order_index": 4,
+  "id": "yct-1-l01-q04",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Хичээл тараад хэлэх үг:",
+  "options": [
+   "一！",
+   "再见！",
+   "老师好！",
+   "你好！"
+  ],
+  "correct_answer": "再见！",
+  "explanation": "Салахдаа 再见.",
+  "order_index": 5,
+  "id": "yct-1-l01-q05",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你好！ B：（ ）！",
+  "options": [
+   "老师",
+   "你好",
+   "九",
+   "再见"
+  ],
+  "correct_answer": "你好",
+  "explanation": "«Сайн уу» гэхэд «сайн уу» гэж хариулна.",
+  "order_index": 6,
+  "id": "yct-1-l01-q06",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：再见！ B：（ ）！",
+  "options": [
+   "六",
+   "老师好",
+   "再见",
+   "你好"
+  ],
+  "correct_answer": "再见",
+  "explanation": "«Баяртай» гэхэд «баяртай» гэж хариулна.",
+  "order_index": 7,
+  "id": "yct-1-l01-q07",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«一» (yī) хэд вэ?",
+  "options": [
+   "дөрөв",
+   "гурав",
+   "хоёр",
+   "нэг"
+  ],
+  "correct_answer": "нэг",
+  "explanation": "一 = нэг.",
+  "order_index": 8,
+  "id": "yct-1-l01-q08",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«三» (sān) хэд вэ?",
+  "options": [
+   "нэг",
+   "хоёр",
+   "гурав",
+   "дөрөв"
+  ],
+  "correct_answer": "гурав",
+  "explanation": "三 = гурав.",
+  "order_index": 9,
+  "id": "yct-1-l01-q09",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«五» (wǔ) хэд вэ?",
+  "options": [
+   "нэг",
+   "тав",
+   "гурав",
+   "хоёр"
+  ],
+  "correct_answer": "тав",
+  "explanation": "五 = тав.",
+  "order_index": 10,
+  "id": "yct-1-l01-q10",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«七» (qī) хэд вэ?",
+  "options": [
+   "гурав",
+   "долоо",
+   "нэг",
+   "хоёр"
+  ],
+  "correct_answer": "долоо",
+  "explanation": "七 = долоо.",
+  "order_index": 11,
+  "id": "yct-1-l01-q11",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«十» (shí) хэд вэ?",
+  "options": [
+   "нэг",
+   "гурав",
+   "арав",
+   "хоёр"
+  ],
+  "correct_answer": "арав",
+  "explanation": "十 = арав.",
+  "order_index": 12,
+  "id": "yct-1-l01-q12",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«хоёр» хятадаар аль нь вэ?",
+  "options": [
+   "二",
+   "一",
+   "四",
+   "三"
+  ],
+  "correct_answer": "二",
+  "explanation": "хоёр = 二 (èr).",
+  "order_index": 13,
+  "id": "yct-1-l01-q13",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«дөрөв» хятадаар аль нь вэ?",
+  "options": [
+   "四",
+   "三",
+   "一",
+   "二"
+  ],
+  "correct_answer": "四",
+  "explanation": "дөрөв = 四 (sì).",
+  "order_index": 14,
+  "id": "yct-1-l01-q14",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«зургаа» хятадаар аль нь вэ?",
+  "options": [
+   "三",
+   "一",
+   "六",
+   "二"
+  ],
+  "correct_answer": "六",
+  "explanation": "зургаа = 六 (liù).",
+  "order_index": 15,
+  "id": "yct-1-l01-q15",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«найм» хятадаар аль нь вэ?",
+  "options": [
+   "八",
+   "二",
+   "三",
+   "一"
+  ],
+  "correct_answer": "八",
+  "explanation": "найм = 八 (bā).",
+  "order_index": 16,
+  "id": "yct-1-l01-q16",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«ес» хятадаар аль нь вэ?",
+  "options": [
+   "三",
+   "九",
+   "二",
+   "一"
+  ],
+  "correct_answer": "九",
+  "explanation": "ес = 九 (jiǔ).",
+  "order_index": 17,
+  "id": "yct-1-l01-q17",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Дарааллаар: 五、六、（ ）、八",
+  "options": [
+   "十",
+   "七",
+   "四",
+   "九"
+  ],
+  "correct_answer": "七",
+  "explanation": "5, 6, 7, 8 — 七 = долоо.",
+  "order_index": 18,
+  "id": "yct-1-l01-q18",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shí» гэж уншдаг ханз:",
+  "options": [
+   "四",
+   "十",
+   "三",
+   "七"
+  ],
+  "correct_answer": "十",
+  "explanation": "十 = shí = арав. 四 = sì (дөрөв) — андуурахгүй!",
+  "order_index": 19,
+  "id": "yct-1-l01-q19",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zàijiàn» гэж уншдаг үг:",
+  "options": [
+   "你好",
+   "老师",
+   "你",
+   "再见"
+  ],
+  "correct_answer": "再见",
+  "explanation": "再见 = zàijiàn = баяртай.",
+  "order_index": 20,
+  "id": "yct-1-l01-q20",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你好!» гэлээ. Чи юу гэж хэлэх вэ?",
+  "options": [
+   "老师！",
+   "再见！",
+   "你好！",
+   "二！"
+  ],
+  "correct_answer": "你好！",
+  "explanation": "Мэндчилгээнд мэндчилгээгээр хариулна.",
+  "order_index": 21,
+  "id": "yct-1-l01-q21",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«老师再见!» гэдгийг хэзээ хэлэх вэ?",
+  "options": [
+   "Багштайгаа уулзахдаа",
+   "Тоолохдоо",
+   "Дуулахдаа",
+   "Багштайгаа салахдаа"
+  ],
+  "correct_answer": "Багштайгаа салахдаа",
+  "explanation": "再见 = баяртай — салахад.",
+  "order_index": 22,
+  "id": "yct-1-l01-q22",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«你» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "багш",
+   "чи",
+   "сайн",
+   "би"
+  ],
+  "correct_answer": "чи",
+  "explanation": "你 = чи. 好 = сайн, 老师 = багш.",
+  "order_index": 23,
+  "id": "yct-1-l01-q23",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«好» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "муу",
+   "том",
+   "чи",
+   "сайн"
+  ],
+  "correct_answer": "сайн",
+  "explanation": "好 (hǎo) = сайн.",
+  "order_index": 24,
+  "id": "yct-1-l01-q24",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Дарааллаар: 八、九、（ ）",
+  "options": [
+   "六",
+   "十",
+   "七",
+   "一"
+  ],
+  "correct_answer": "十",
+  "explanation": "8, 9, 10 — 十 = арав.",
+  "order_index": 25,
+  "id": "yct-1-l01-q25",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «lǎoshī» гэж уншдаг үг:",
+  "options": [
+   "你好",
+   "九",
+   "老师",
+   "再见"
+  ],
+  "correct_answer": "老师",
+  "explanation": "老师 = lǎoshī = багш.",
+  "order_index": 26,
+  "id": "yct-1-l01-q26",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ }
+]

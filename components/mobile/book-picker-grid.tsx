@@ -10,7 +10,7 @@ export type BookPickerEntry = {
   /** Unique key across both series, e.g. "standard:hsk3" or "fazhan:fazhanZhongji1". */
   key: string;
   chipId: string;
-  series: "standard" | "fazhan";
+  series: "standard" | "fazhan" | "yct";
   chipLabel: string;
   title: string;
   subtitle: string;
@@ -54,6 +54,10 @@ export function BookPickerGrid({ entries, activeKey, onSelect }: Props) {
     .sort(byAvailable);
   const fazhan = entries
     .filter((e) => e.series === "fazhan" && !favorites.includes(e.key))
+    .sort(byAvailable);
+
+  const yct = entries
+    .filter((e) => e.series === "yct" && !favorites.includes(e.key))
     .sort(byAvailable);
 
   const renderCard = (entry: BookPickerEntry) => {
@@ -197,6 +201,10 @@ export function BookPickerGrid({ entries, activeKey, onSelect }: Props) {
       <Section
         title={`发展汉语 · ${tr(locale, "Сургуулийн сурах бичиг")}`}
         items={fazhan}
+      />
+      <Section
+        title={`YCT · ${tr(locale, "Хүүхдийн YCT")}`}
+        items={yct}
       />
     </div>
   );

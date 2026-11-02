@@ -68,12 +68,13 @@ type Props = {
   defaultChipId: string;
   fazhanCatalog: MobileCourseCatalogEntry[];
   fazhanDefaultChipId: string;
+  yctCatalog: MobileCourseCatalogEntry[];
   libraryPreview: LibraryPreviewItem[];
   helzuiSummary: HelzuiHomeSummary;
   bichlegSuggestion: BichlegSuggestion | null;
 };
 
-type BookSeries = "standard" | "fazhan";
+type BookSeries = "standard" | "fazhan" | "yct";
 
 /** Нүүрний сүүлийн харагдац — localStorage (stale-while-revalidate). */
 type HomeSnapshot = {
@@ -101,6 +102,7 @@ export function HomeAppView({
   catalog,
   defaultChipId,
   fazhanCatalog,
+  yctCatalog,
   libraryPreview,
   helzuiSummary,
   bichlegSuggestion,
@@ -172,8 +174,13 @@ export function HomeAppView({
   // its own catalog — the zh/ko language-track filter above is tuned for
   // courseIds like "hsk4" and doesn't apply to "fazhan-*" courseIds.
   const visibleCatalog = useMemo(
-    () => (activeSeries === "fazhan" ? fazhanCatalog : standardCatalog),
-    [activeSeries, fazhanCatalog, standardCatalog]
+    () =>
+      activeSeries === "fazhan"
+        ? fazhanCatalog
+        : activeSeries === "yct"
+          ? yctCatalog
+          : standardCatalog,
+    [activeSeries, fazhanCatalog, yctCatalog, standardCatalog]
   );
 
   useRegisterLessonHskLevels(catalog.flatMap((entry) => entry.lessons));
@@ -195,8 +202,10 @@ export function HomeAppView({
   useEffect(() => {
     try {
       const savedSeries = window.localStorage.getItem("bs:homeSeries");
-      const series: BookSeries = savedSeries === "fazhan" ? "fazhan" : "standard";
-      const savedCatalog = series === "fazhan" ? fazhanCatalog : catalog;
+      const series: BookSeries =
+        savedSeries === "fazhan" || savedSeries === "yct" ? savedSeries : "standard";
+      const savedCatalog =
+        series === "fazhan" ? fazhanCatalog : series === "yct" ? yctCatalog : catalog;
       setActiveSeries(series);
 
       const saved = window.localStorage.getItem("bs:homeChip");
@@ -265,19 +274,32 @@ export function HomeAppView({
       completedCount: countCompleted(entry),
       reviewLevel: resolveCatalogChipLevel(entry),
     }));
-    return [...standardEntries, ...fazhanEntries];
+    const yctEntries: BookPickerEntry[] = yctCatalog.map((entry) => ({
+      key: `yct:${entry.chipId}`,
+      chipId: entry.chipId,
+      series: "yct",
+      chipLabel: entry.chipLabel,
+      title: entry.title,
+      subtitle: entry.subtitle,
+      coverUrl: entry.coverUrl,
+      available: entry.available,
+      lessonCount: entry.lessons.length,
+      completedCount: countCompleted(entry),
+      reviewLevel: resolveCatalogChipLevel(entry),
+    }));
+    return [...standardEntries, ...fazhanEntries, ...yctEntries];
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [standardCatalog, fazhanCatalog, selectedLang, statusByLesson]);
+  }, [standardCatalog, fazhanCatalog, yctCatalog, selectedLang, statusByLesson]);
 
   const activePickerKey = `${activeSeries}:${activeChip}`;
 
   /** Every published lesson on the page — progress is loaded once for all books. */
   const allLessonIds = useMemo(
     () =>
-      [...standardCatalog, ...fazhanCatalog].flatMap((entry) =>
+      [...standardCatalog, ...fazhanCatalog, ...yctCatalog].flatMap((entry) =>
         entry.lessons.map((lesson) => lesson.id)
       ),
-    [standardCatalog, fazhanCatalog]
+    [standardCatalog, fazhanCatalog, yctCatalog]
   );
 
   /** Hero numbers — "free" is only convincing with real counts behind it. */
@@ -312,7 +334,7 @@ export function HomeAppView({
     // shows all its lessons — otherwise a stored level of 4 with a stored
     // book of HSK 1 filtered the list down to nothing. The global level
     // only narrows mixed-level courses.
-    if (activeSeries === "fazhan") return base;
+    if (activeSeries === "fazhan" || activeSeries === "yct") return base;
     if (activeCourse && resolveCatalogChipLevel(activeCourse) != null) return base;
     return filterLessonsByActiveHskLevel(base, activeHskLevel);
   }, [activeCourse, activeSeries, selectedLang, hskHydrated, activeHskLevel]);

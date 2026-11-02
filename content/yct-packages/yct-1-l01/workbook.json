@@ -1,0 +1,161 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "listening",
+    "instruction_mn": "Сонсох — Аудио (01-04) сонсоод зөв зургийг сонго (A/B/C).",
+    "audio": "audio/yct-1-01-test.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）六",
+      "question_mn": "1-р асуулт: сонсоод зургаа сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png"
+      ],
+      "answer": "B",
+      "script_zh": "六",
+      "explanation_mn": "Аудионд «六 (liù) — зургаа» гэж хэлнэ. B зураг дээр охин 6 тоо барьж байна. A — 5, C — 0/нүдний шил."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）你好。",
+      "question_mn": "2-р асуулт: сонсоод зургаа сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png"
+      ],
+      "answer": "A",
+      "script_zh": "你好。",
+      "explanation_mn": "«你好 — сайн уу» — A зураг дээр хоёр хүүхэд гар барьж мэндэлж байна. B — гараа даллаж салах ёс, C — хоёр охин зураг авахуулж байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）老师再见。",
+      "question_mn": "3-р асуулт: сонсоод зургаа сонго",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t3a.png",
+       "images/t3b.png",
+       "images/t3c.png"
+      ],
+      "answer": "C",
+      "script_zh": "老师再见。",
+      "explanation_mn": "«老师再见 — багш аа, баяртай» — C зураг дээр хүүхдүүд машинаас багшдаа гараа даллан баяртай гэж байна."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 1.B 2.A 3.C; Listening script х.61"
+   },
+   {
+    "part": 2,
+    "type": "judge",
+    "instruction_mn": "Унших — Зураг ба үг таарч байвал ✓, таарахгүй бол ✗.",
+    "items": [
+     {
+      "n": 4,
+      "question_zh": "七",
+      "image": "images/t4.png",
+      "answer": "✗",
+      "explanation_mn": "Зураг дээр дөрвөн навчтай цэцэг — дөрөв бол 四. 七 бол долоо → ✗."
+     },
+     {
+      "n": 5,
+      "question_zh": "老师",
+      "image": "images/t5.png",
+      "answer": "✗",
+      "explanation_mn": "Зураг дээр цүнхтэй охин — сурагч. 老师 = багш → ✗."
+     },
+     {
+      "n": 6,
+      "question_zh": "再见",
+      "image": "images/t6.png",
+      "answer": "✓",
+      "explanation_mn": "Хүүхэд гараа даллаж байна — 再见 (баяртай) → ✓."
+     }
+    ],
+    "answer_source": "Test Answers х.63: 4.✗ 5.✗ 6.✓"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's match — хэллэг ба хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你好。",
+      "answer": "你好。",
+      "explanation_mn": "Сайн уу → Сайн уу."
+     },
+     {
+      "n": 2,
+      "question_zh": "老师好。",
+      "answer": "你好。",
+      "explanation_mn": "Багш «你好» гэж хариулна."
+     },
+     {
+      "n": 3,
+      "question_zh": "再见。",
+      "answer": "再见。",
+      "explanation_mn": "Баяртай → Баяртай."
+     }
+    ],
+    "answer_source": "textbook х.3"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ханз бичих — 一 二 三 гурван ханзыг зураасаар нь бич (нэг, хоёр, гурван хэвтээ зураас).",
+    "question_zh": "一 二 三",
+    "answer": "一 二 三",
+    "explanation_mn": "Зураасыг зүүнээс баруун тийш, дээрээс доош бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Багштайгаа мэндэл.",
+    "question_zh": "老师好！",
+    "answer": "老师好！",
+    "explanation_mn": "Уулзахад 老师好."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Гараараа 1–10 зааж хятадаар хэл.",
+    "question_zh": "一……十",
+    "answer": "一 二 三 四 五 六 七 八 九 十",
+    "explanation_mn": "Дарааллаар, чанга."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«你好» дууг дуул.",
+    "question_zh": "你好，你好……",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 01-03-ийн хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 1 · х.61 Test Listening Scripts, х.63 Test Answers (Lesson 1)"
+}

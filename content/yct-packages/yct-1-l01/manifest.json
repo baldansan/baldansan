@@ -1,0 +1,233 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-1",
+ "lessonId": "yct-1-l01",
+ "hskLevel": 1,
+ "lessonNumber": 1,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你好！",
+ "mongolianTitle": "Сайн уу!",
+ "series": "YCT 标准教程 1",
+ "seriesLabel_mn": "YCT 1 — Хүүхдийн хятад хэл (≈HSK1)",
+ "source": "YCT 标准教程 1 · 第1课 (сурах бичиг + CD аудио 01-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-1-01-text.mp3",
+  "words": "audio/yct-1-01-words.mp3",
+  "song": "audio/yct-1-01-song.mp3",
+  "test": "audio/yct-1-01-test.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-1-l01",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/d1-nihao.png",
+    "title": "你好！ — сургуулийн хашаанд мэндлэх",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1-nihao.png",
+    "title": "你好！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2-laoshihao.png",
+    "title": "老师好！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d3",
+    "file": "images/d3-zaijian.png",
+    "title": "再见！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "hands",
+    "file": "images/hands.png",
+    "title": "Хятадын гарын тоо 1–10",
+    "role": "illustration",
+    "section": "culture"
+   },
+   {
+    "id": "sing",
+    "file": "images/sing-girl.png",
+    "title": "Let's sing · 你好",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "n1",
+    "file": "images/n1.png",
+    "title": "一",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "n2",
+    "file": "images/n2.png",
+    "title": "二",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "n3",
+    "file": "images/n3.png",
+    "title": "三",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "n4",
+    "file": "images/n4.png",
+    "title": "四",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "n5",
+    "file": "images/n5.png",
+    "title": "五",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "n6",
+    "file": "images/n6.png",
+    "title": "六",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "n7",
+    "file": "images/n7.png",
+    "title": "七",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "n8",
+    "file": "images/n8.png",
+    "title": "八",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "n9",
+    "file": "images/n9.png",
+    "title": "九",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "n10",
+    "file": "images/n10.png",
+    "title": "十",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3a",
+    "file": "images/t3a.png",
+    "title": "Test 3a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3b",
+    "file": "images/t3b.png",
+    "title": "Test 3b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3c",
+    "file": "images/t3c.png",
+    "title": "Test 3c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers х.63)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан)"
+ }
+}
