@@ -71,6 +71,34 @@
     "section": "song"
    },
    {
+    "id": "w-ni",
+    "file": "images/w-ni.jpg",
+    "title": "你",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hao",
+    "file": "images/w-hao.jpg",
+    "title": "好",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-laoshi",
+    "file": "images/w-laoshi.jpg",
+    "title": "老师",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zaijian",
+    "file": "images/w-zaijian.jpg",
+    "title": "再见",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
     "id": "n1",
     "file": "images/n1.png",
     "title": "一",

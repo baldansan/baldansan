@@ -252,7 +252,8 @@ images = [
  {"id":"d3","file":"images/d3-zaijian.png","title":"再见！","role":"illustration","section":"dialogue"},
  {"id":"hands","file":"images/hands.png","title":"Хятадын гарын тоо 1–10","role":"illustration","section":"culture"},
  {"id":"sing","file":"images/sing-girl.png","title":"Let's sing · 你好","role":"illustration","section":"song"},
-] + [{"id":f"n{i+1}","file":f"images/n{i+1}.png","title":z,"role":"illustration","section":"vocabulary"} for i,(z,p,m) in enumerate(NUM)] \
+] + [{"id":f"w-{k}","file":f"images/w-{k}.jpg","title":z,"role":"illustration","section":"vocabulary"} for k,z in [("ni","你"),("hao","好"),("laoshi","老师"),("zaijian","再见")]] \
+  + [{"id":f"n{i+1}","file":f"images/n{i+1}.png","title":z,"role":"illustration","section":"vocabulary"} for i,(z,p,m) in enumerate(NUM)] \
   + [{"id":f"t{k}","file":f"images/t{k}.png","title":f"Test {k}","role":"illustration","section":"workbook"} for k in ["1a","1b","1c","2a","2b","2c","3a","3b","3c","4","5","6"]]
 
 lesson = {

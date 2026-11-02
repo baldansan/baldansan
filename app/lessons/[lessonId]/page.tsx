@@ -107,6 +107,18 @@ export default async function LessonDetailPage({
           >
             ← Курс руу буцах
           </Link>
+          {lesson.courseId.startsWith("yct-") ? (
+            <Link
+              href={`/kids/lesson/${lesson.id}${adminPreview ? "?preview=admin" : ""}`}
+              className="flex items-center gap-4 rounded-[24px] bg-gradient-to-r from-amber-300 via-orange-300 to-rose-300 p-5 text-[#3b2410] shadow-md transition hover:shadow-lg"
+            >
+              <span className="text-5xl">🧒</span>
+              <span>
+                <span className="block text-xl font-extrabold">Хүүхдийн горимоор үзэх</span>
+                <span className="block text-sm font-semibold text-[#6b3f1d]">Видео · зурагт үг · дуу · тоглоом · од ⭐</span>
+              </span>
+            </Link>
+          ) : null}
           <DownloadLessonButton lessonId={lesson.id} />
           <HskLessonDetailView lesson={lesson} adminPreview={adminPreview} />
         </div>
