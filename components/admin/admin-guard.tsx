@@ -131,8 +131,11 @@ export function AdminGuard({ children }: Props) {
     active: state === "loading",
     onTimeout: useCallback(() => {
       authDevLog("admin guard watchdog timeout");
-      finishWithError("Auth шалгалт хэт удаж байна");
-    }, [finishWithError]),
+      void serverSaysAdmin().then((ok) => {
+        if (ok) setState("admin");
+        else finishWithError("Auth шалгалт хэт удаж байна");
+      });
+    }, [finishWithError, serverSaysAdmin]),
   });
 
   if (state === "loading") {
