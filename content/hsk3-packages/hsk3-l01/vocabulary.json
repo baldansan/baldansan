@@ -1,0 +1,315 @@
+[
+ {
+  "chinese": "周末",
+  "pinyin": "zhōumò",
+  "mongolian": "амралтын өдөр (бямба, ням гараг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "周末你有什么打算？",
+  "exampleMongolian": "Амралтын өдөр чи ямар төлөвлөгөөтэй вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "上个周末 / 周末的打算"
+ },
+ {
+  "chinese": "打算",
+  "pinyin": "dǎsuàn",
+  "mongolian": "төлөвлөгөө; төлөвлөх, зорих",
+  "hskLevel": "HSK3",
+  "exampleChinese": "周末你有什么打算？",
+  "exampleMongolian": "Амралтын өдөр чи ямар төлөвлөгөөтэй вэ?",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "打算去唱歌 / 打算看电影 / 打算在家看书 / 不打算工作 / 不打算搬家 / 没有打算 / 今晚你有什么打算？"
+ },
+ {
+  "chinese": "啊",
+  "pinyin": "a",
+  "mongolian": "өгүүлбэрийн төгсгөлд тавьж «шүү дээ, биз» гэсэн баталгаа, өмгөөллийн өнгө өгдөг сул үг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "是啊，我已经找好饭馆了，电影票也买好了。",
+  "exampleMongolian": "Тиймээ, би хоолны газар хайгаад олчихсон, киноны тасалбараа ч авчихсан.",
+  "pos": "сул үг (өгүүлбэр төгсгөх)",
+  "collocations_zh": "是啊 / 那也不能一直玩儿啊 / 你怎么一点儿也不着急啊？"
+ },
+ {
+  "chinese": "跟",
+  "pinyin": "gēn",
+  "mongolian": "…-тай хамт, …-тай (угтвар үг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我还没想好要不要跟你去呢。",
+  "exampleMongolian": "Чамтай хамт явах эсэхээ би хараахан шийдээгүй байна шүү.",
+  "pos": "угтвар үг",
+  "collocations_zh": "跟朋友去吃饭 / 跟我去商店 / 中午你跟谁一起吃饭？ / 我不跟你去"
+ },
+ {
+  "chinese": "一直",
+  "pinyin": "yìzhí",
+  "mongolian": "байнга, үргэлж, тасралтгүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你一直玩儿电脑游戏，作业写完了吗？",
+  "exampleMongolian": "Чи байнга компьютер тоглоом тоглоод байх юм. Даалгавраа бичиж дууссан уу?",
+  "pos": "дайвар үг",
+  "collocations_zh": "一直学习 / 一直玩儿游戏 / 一直在家看书 / 一直不高兴"
+ },
+ {
+  "chinese": "游戏",
+  "pinyin": "yóuxì",
+  "mongolian": "тоглоом (компьютер тоглоом гэх мэт)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你一直玩儿电脑游戏，作业写完了吗？",
+  "exampleMongolian": "Чи байнга компьютер тоглоом тоглоод байх юм. Даалгавраа бичиж дууссан уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "电脑游戏 / 玩儿游戏"
+ },
+ {
+  "chinese": "作业",
+  "pinyin": "zuòyè",
+  "mongolian": "даалгавар (гэрийн даалгавар)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你一直玩儿电脑游戏，作业写完了吗？",
+  "exampleMongolian": "Чи байнга компьютер тоглоом тоглоод байх юм. Даалгавраа бичиж дууссан уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "写作业 / 写完作业 / 没带作业"
+ },
+ {
+  "chinese": "着急",
+  "pinyin": "zháojí",
+  "mongolian": "санаа зовох, түгшиж яарах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "明天不是有考试吗？你怎么一点儿也不着急？",
+  "exampleMongolian": "Маргааш шалгалттай биз дээ? Чи яагаад огт санаа зоволгүй байгаа юм бэ?",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很着急 / 不着急 / 别着急 / 着急回家 / 让家人着急"
+ },
+ {
+  "chinese": "复习",
+  "pinyin": "fùxí",
+  "mongolian": "давтах (үзсэнээ дахин давтах)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我早就复习好了。",
+  "exampleMongolian": "Би аль эрт давтаад бэлэн болчихсон.",
+  "pos": "үйл үг",
+  "collocations_zh": "复习好 / 复习汉字"
+ },
+ {
+  "chinese": "南（方）",
+  "pinyin": "nán (fāng)",
+  "mongolian": "өмнөд зүг; өмнөд хэсэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "南方啊，我们去年就是这个时候去的。",
+  "exampleMongolian": "Өмнөд зүгт шүү дээ. Бид өнгөрсөн жил яг энэ үед очсон.",
+  "pos": "нэр үг",
+  "collocations_zh": "南方人 / 南方太热了"
+ },
+ {
+  "chinese": "北方",
+  "pinyin": "běifāng",
+  "mongolian": "хойд зүг; хойд хэсэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "南方太热了，北方好一些，不冷也不热。",
+  "exampleMongolian": "Өмнөд зүг хэтэрхий халуун. Хойд зүг арай дээр, хүйтэн ч биш, халуун ч биш.",
+  "pos": "нэр үг",
+  "collocations_zh": "北方人 / 南方—北方"
+ },
+ {
+  "chinese": "面包",
+  "pinyin": "miànbāo",
+  "mongolian": "талх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "水果、面包、茶都准备好了，我们还带什么？",
+  "exampleMongolian": "Жимс, талх, цай бүгдийг бэлдчихлээ. Бид өөр юу авч явах вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "吃面包 / 一个面包"
+ },
+ {
+  "chinese": "带",
+  "pinyin": "dài",
+  "mongolian": "авч явах, авчрах (бариад явах)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "再多带几件衣服吧。",
+  "exampleMongolian": "Дахиад хэдэн хувцас нэмж аваарай.",
+  "pos": "үйл үг",
+  "collocations_zh": "带书 / 带钱 / 带地图 / 多带 / 少带 / 多带一点儿钱 / 没带 / 坐飞机不能带什么东西？"
+ },
+ {
+  "chinese": "地图",
+  "pinyin": "dìtú",
+  "mongolian": "газрын зураг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "手机、电脑、地图，一个也不能少。",
+  "exampleMongolian": "Утас, компьютер, газрын зураг — нэг нь ч дутаж болохгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "带地图 / 一张地图"
+ },
+ {
+  "chinese": "搬",
+  "pinyin": "bān",
+  "mongolian": "зөөх, нүүлгэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们是去旅游，不是搬家，还是少带一些吧。",
+  "exampleMongolian": "Бид аялалд явж байгаа юм, нүүж байгаа юм биш. Цөөхөн аваад явъя.",
+  "pos": "үйл үг",
+  "collocations_zh": "搬桌子 / 搬椅子 / 搬家 / 我下个星期搬家"
+ },
+ {
+  "chinese": "小丽",
+  "pinyin": "Xiǎolì",
+  "mongolian": "Сяоли (охины нэр)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "小丽：周末你有什么打算？",
+  "exampleMongolian": "Сяоли: Амралтын өдөр чи ямар төлөвлөгөөтэй вэ?",
+  "pos": "нэр үг (хүний нэр)",
+  "collocations_zh": ""
+ },
+ {
+  "chinese": "小刚",
+  "pinyin": "Xiǎogāng",
+  "mongolian": "Сяоган (хүүгийн нэр)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "小刚：我早就想好了，请你吃饭、看电影、喝咖啡。",
+  "exampleMongolian": "Сяоган: Би аль эрт шийдчихсэн — чамд хоол авч өгнө, кино үзнэ, кофе уулгана.",
+  "pos": "нэр үг (хүний нэр)",
+  "collocations_zh": ""
+ },
+ {
+  "chinese": "工作日",
+  "pinyin": "gōngzuòrì",
+  "mongolian": "ажлын өдөр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "工作日我很忙，周末不忙。",
+  "exampleMongolian": "Ажлын өдрүүдэд би завгүй, амралтын өдөр завтай.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "兴趣",
+  "pinyin": "xìngqù",
+  "mongolian": "сонирхол, дуртай зүйл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我对电脑游戏很有兴趣。",
+  "exampleMongolian": "Би компьютер тоглоомд их дуртай (сонирхолтой).",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "初中",
+  "pinyin": "chūzhōng",
+  "mongolian": "дунд сургууль (Хятадад 7–9-р ангийн шат)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他今年上初中。",
+  "exampleMongolian": "Тэр энэ жил дунд сургуульд сурч байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "北",
+  "pinyin": "běi",
+  "mongolian": "хойд (зүг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "学校北门有一个书店。",
+  "exampleMongolian": "Сургуулийн хойд хаалганы дэргэд номын дэлгүүр бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "东南",
+  "pinyin": "dōngnán",
+  "mongolian": "зүүн өмнөд (зүг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我家在学校的东南。",
+  "exampleMongolian": "Манай гэр сургуулийн зүүн өмнөд талд байдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "东北",
+  "pinyin": "dōngběi",
+  "mongolian": "зүүн хойд (зүг); Хятадын зүүн хойд нутаг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "东北冬天很冷。",
+  "exampleMongolian": "Зүүн хойд нутагт өвөл их хүйтэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "东方",
+  "pinyin": "dōngfāng",
+  "mongolian": "зүүн зүг; дорно (дорно дахин)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "中国在东方。",
+  "exampleMongolian": "Хятад дорно дахинд оршдог.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "西方",
+  "pinyin": "xīfāng",
+  "mongolian": "баруун зүг; барууны орнууд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他去过很多西方国家。",
+  "exampleMongolian": "Тэр барууны олон оронд очиж байсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "西北",
+  "pinyin": "xīběi",
+  "mongolian": "баруун хойд (зүг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他家在学校的西北。",
+  "exampleMongolian": "Түүний гэр сургуулийн баруун хойд талд байдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "西南",
+  "pinyin": "xīnán",
+  "mongolian": "баруун өмнөд (зүг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我朋友去西南旅游了。",
+  "exampleMongolian": "Миний найз баруун өмнөд зүгт аялалд явсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "搬家",
+  "pinyin": "bānjiā",
+  "mongolian": "нүүх (байраа зөөх)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们是去旅游，不是搬家，还是少带一些吧。",
+  "exampleMongolian": "Бид аялалд явж байгаа юм, нүүж байгаа юм биш. Цөөхөн аваад явъя.",
+  "pos": "үйл үг",
+  "collocations_zh": "不打算搬家 / 我下个星期搬家",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "一块儿",
+  "pinyin": "yíkuàir",
+  "mongolian": "хамт, нэг дор",
+  "hskLevel": "HSK3",
+  "exampleChinese": "周末我们一块儿去吧。",
+  "exampleMongolian": "Амралтын өдөр хамтдаа явъя.",
+  "pos": "нэр үг / дайвар үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ },
+ {
+  "chinese": "园",
+  "pinyin": "yuán",
+  "mongolian": "цэцэрлэг; цэцэрлэгт хүрээлэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "周末我想去公园玩儿。",
+  "exampleMongolian": "Амралтын өдөр би цэцэрлэгт хүрээлэнд очиж тоглохыг хүсч байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "",
+  "tag": "3.0 нэмэлт"
+ }
+]

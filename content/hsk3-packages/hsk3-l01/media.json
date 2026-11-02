@@ -1,0 +1,18 @@
+{
+ "images": [
+  {"id": "hero", "file": "images/hsk3-l01-warmup1-C-weekend.webp", "title": "周末 zhōumò — амралтын өдөр", "role": "hero", "section": "teacher-intro"},
+  {"id": "w1-a", "file": "images/hsk3-l01-warmup1-A-map.webp", "title": "地图 dìtú — газрын зураг", "role": "illustration", "section": "warmup"},
+  {"id": "w1-b", "file": "images/hsk3-l01-warmup1-B-bread.webp", "title": "面包 miànbāo — талх", "role": "illustration", "section": "warmup"},
+  {"id": "w1-d", "file": "images/hsk3-l01-warmup1-D-game.webp", "title": "电脑游戏 diànnǎo yóuxì — компьютерийн тоглоом", "role": "illustration", "section": "warmup"},
+  {"id": "w1-e", "file": "images/hsk3-l01-warmup1-E-homework.webp", "title": "作业 zuòyè — гэрийн даалгавар", "role": "illustration", "section": "warmup"},
+  {"id": "w1-f", "file": "images/hsk3-l01-warmup1-F-north.webp", "title": "北方 běifāng — хойд зүг, умард нутаг", "role": "illustration", "section": "warmup"},
+  {"id": "w2-1", "file": "images/hsk3-l01-warmup2-1-move.webp", "title": "搬 bān — зөөх, нүүх", "role": "illustration", "section": "warmup"},
+  {"id": "w2-2", "file": "images/hsk3-l01-warmup2-2-review.webp", "title": "复习 fùxí — давтах", "role": "illustration", "section": "warmup"},
+  {"id": "w2-3", "file": "images/hsk3-l01-warmup2-3-plan.webp", "title": "打算 dǎsuàn — төлөвлөх", "role": "illustration", "section": "warmup"},
+  {"id": "w2-4", "file": "images/hsk3-l01-warmup2-4-worried.webp", "title": "着急 zháojí — сандрах, яарах", "role": "illustration", "section": "warmup"},
+  {"id": "ex-1", "file": "images/hsk3-l01-describe-1-laundry.webp", "title": "描述图片 ① 洗衣服", "role": "illustration", "section": "exercise"},
+  {"id": "ex-2", "file": "images/hsk3-l01-describe-2-dog.webp", "title": "描述图片 ② 小狗生病了", "role": "illustration", "section": "exercise"},
+  {"id": "ex-3", "file": "images/hsk3-l01-describe-3-car.webp", "title": "描述图片 ③ 搬东西", "role": "illustration", "section": "exercise"},
+  {"id": "ex-4", "file": "images/hsk3-l01-describe-4-ticket.webp", "title": "描述图片 ④ 飞机票", "role": "illustration", "section": "exercise"}
+ ]
+}

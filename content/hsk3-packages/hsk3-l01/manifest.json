@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk3",
+ "lessonId": "hsk3-l01",
+ "hskLevel": 3,
+ "lessonNumber": 1,
+ "lessonProfile": "hsk3-dialogue-reading-writing-review",
+ "lessonType": "hsk3-dialogue-reading-writing-review",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "周末你有什么打算",
+ "mongolianTitle": "Амралтын өдөр чи юу хийх төлөвлөгөөтэй вэ",
+ "source": "HSK Standard Course 3 · 第1课 (сурах бичиг, багшийн ном, дасгалын ном)",
+ "hasAudio": true,
+ "hasImages": true,
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (hsk3-l01.json, verified_pages)"
+ }
+}
