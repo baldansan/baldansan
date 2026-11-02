@@ -124,6 +124,7 @@ export default function LessonPlayer({
       case "texts":
         return (
           <TextsModule
+            lessonId={lessonId}
             lesson={lesson}
             onDone={next}
             trackHref={`/lessons/${lessonId}/watch`}

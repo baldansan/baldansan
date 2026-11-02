@@ -2,6 +2,10 @@
 // components/lesson/modules/ExercisesModule.tsx
 // "exercises_textbook" / "exercises_workbook" модуль — интерактив дасгал.
 
+import {
+  resolveExerciseImageUrl,
+  type LessonPathImage,
+} from "@/lib/lesson/lesson-path-images";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
   clearBsExercisesProgress,
@@ -174,6 +178,7 @@ export default function ExercisesModule({
   active = true,
   embeddedInPath = false,
   onRegisterPathFooter,
+  exerciseImages,
 }: {
   lessonId: string;
   lesson: HskLessonPackage;
@@ -185,6 +190,8 @@ export default function ExercisesModule({
   embeddedInPath?: boolean;
   /** Lesson-path доод товч — дасгал доторх «Дараагийн дасгал» / «Үе дуусгах». */
   onRegisterPathFooter?: (meta: PathExerciseFooterMeta | null) => void;
+  /** media.json section=exercise зургууд — асуултын `image`-ийг URL болгоно. */
+  exerciseImages?: LessonPathImage[];
 }) {
   const base = lesson.audio_base_path;
   const questions = useMemo(() => {
@@ -982,6 +989,26 @@ export default function ExercisesModule({
         </div>
       ) : null}
 
+      {q.kind === "choice" && q.image
+        ? (() => {
+            const src = resolveExerciseImageUrl(q.image, exerciseImages);
+            return src ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={src}
+                alt=""
+                loading="lazy"
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  maxHeight: 220,
+                  margin: "0 auto 10px",
+                  borderRadius: 12,
+                }}
+              />
+            ) : null;
+          })()
+        : null}
       {q.kind === "choice" && q.zh && <div className="bs-ex-zh">{q.zh}</div>}
 
       {(q.kind === "choice" || q.kind === "tf") && q.prompt && (

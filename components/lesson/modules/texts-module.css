@@ -380,6 +380,20 @@
   margin-top: 8px;
 }
 
+/* 俗语 — жишээ өгүүлбэр */
+.bs-txt-saying-ex {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #f5d78e;
+}
+.bs-txt-saying-ex-zh {
+  font-family: var(--bs-zh);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--bs-ink);
+}
+
 /* Албан аудиогүй үед хөтчийн TTS ашиглаж буйг мэдэгдэх жижиг тэмдэглэл */
 .bs-txt-ttsnote {
   margin: 6px 0 10px;

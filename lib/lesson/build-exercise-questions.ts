@@ -31,6 +31,8 @@ export type ExerciseQuestion =
       script?: string;
       audio?: string;
       zh?: string;
+      /** lesson.json exercises_textbook item.image (`images/<file>.webp`) */
+      image?: string;
       prompt: string;
       options: string[];
       answer: string;
@@ -273,8 +275,10 @@ function buildTextbookQuestions(tb: Record<string, unknown>): ExerciseQuestion[]
         q?: unknown;
         answer?: unknown;
         options?: unknown;
+        image?: unknown;
       };
       if (item.q == null) continue;
+      const image = String(item.image ?? "").trim() || undefined;
 
       if (item.options != null) {
         const { values, byKey } = valuesOf(item.options);
@@ -283,6 +287,7 @@ function buildTextbookQuestions(tb: Record<string, unknown>): ExerciseQuestion[]
           n: item.n,
           section: instruction ?? "Дасгал",
           instruction,
+          image,
           prompt: String(item.q),
           options: values,
           explanation: explanationOf(it as Record<string, unknown>),
@@ -300,6 +305,7 @@ function buildTextbookQuestions(tb: Record<string, unknown>): ExerciseQuestion[]
         n: item.n,
         section: instruction ?? "Дасгал",
         instruction,
+        image,
         prompt: String(item.q),
         options,
         explanation: explanationOf(it as Record<string, unknown>),
@@ -381,11 +387,16 @@ function buildWorkbookQuestions(
         n?: number;
         q?: unknown;
         question_zh?: unknown;
+        passage_zh?: unknown;
         options?: unknown;
         answer?: unknown;
       };
       const { values, byKey } = valuesOf(item.options ?? {});
       if (!values.length) continue;
+      const itemPassage =
+        item.passage_zh != null && String(item.passage_zh).trim()
+          ? String(item.passage_zh)
+          : undefined;
       const prompt =
         item.question_zh != null
           ? String(item.question_zh)
@@ -398,7 +409,7 @@ function buildWorkbookQuestions(
         n: item.n,
         section: "Унших",
         instruction,
-        zh,
+        zh: zh ?? itemPassage,
         prompt,
         options: values,
         explanation: explanationOf(it as Record<string, unknown>),

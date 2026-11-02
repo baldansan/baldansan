@@ -263,6 +263,7 @@ export default function LessonPathPlayer({
       case "text":
         return (
           <TextsModule
+            lessonId={lessonId}
             lesson={lesson}
             timedSubtitles={lessonContent.timedSubtitles}
             onDone={finishModuleStage}
@@ -287,6 +288,7 @@ export default function LessonPathPlayer({
             source={pathPlan.practiceSource}
             active
             embeddedInPath
+            exerciseImages={pathImages.exerciseImages}
             onRegisterPathFooter={handleRegisterPracticeFooter}
             onDone={finishModuleStage}
           />

@@ -253,11 +253,21 @@ export function attachCharactersFileToLesson(
   const existing = normalizeCharactersPayload(lesson.characters);
   const merged = [...existing, ...fromFile];
 
+  // intro / wordGame / confusables — массивд хавтгайрахгүйн тулд lesson.charactersExtras-д хадгална
+  // (lessonTeaching-ээр дамжиж resolver-д хүрнэ).
+  const extras: Record<string, unknown> = {};
+  if (isRecord(raw.characters)) {
+    for (const key of ["intro", "wordGame", "confusables"]) {
+      if (isNonEmpty(raw.characters[key])) extras[key] = raw.characters[key];
+    }
+  }
+
   return {
     ...raw,
     lesson: {
       ...lesson,
       characters: merged,
+      ...(Object.keys(extras).length > 0 ? { charactersExtras: extras } : {}),
     },
   };
 }

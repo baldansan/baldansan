@@ -152,6 +152,10 @@ function normalizeListeningPart(raw: unknown): Record<string, unknown> | null {
     part.shared_audio = shared.trim();
   } else if (Array.isArray(shared) && shared.length > 0) {
     part.shared_audio = shared;
+  } else {
+    // Part-түвшний `audio` / `audioFile` → shared_audio
+    const partAudio = trim(raw.audio) || trim(raw.audioFile);
+    if (partAudio) part.shared_audio = partAudio;
   }
 
   return part;

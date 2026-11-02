@@ -19,7 +19,10 @@ import {
   parseLegacySourceNoteJsonSegment,
   parseLessonSourceNote,
 } from "@/lib/lesson/source-note-json";
-import { normalizeCharactersPayload } from "@/lib/hanzi/normalize-characters";
+import {
+  normalizeCharactersExtras,
+  normalizeCharactersPayload,
+} from "@/lib/hanzi/normalize-characters";
 import type {
   HskLessonPackage,
   HskPackageCollocation,
@@ -31,6 +34,7 @@ import type {
   HskPackageParagraphSummary,
   HskPackageShortText,
   HskPackageWritingSample,
+  HskCommonSaying,
   HskPackageTextReflection,
   HskPackageTextSentence,
   HskPackageTextToken,
@@ -164,13 +168,20 @@ function resolvePackageCharacters(
   teaching: Record<string, unknown> | null,
   studyCharacters: unknown
 ): HskLessonPackage["characters"] | undefined {
-  const fromPkg = normalizeCharactersPayload(pkg.characters);
-  if (fromPkg) return fromPkg;
+  const base =
+    normalizeCharactersPayload(pkg.characters) ??
+    normalizeCharactersPayload(teaching?.characters) ??
+    normalizeCharactersPayload(studyCharacters);
+  if (!base) return undefined;
 
-  const fromTeaching = normalizeCharactersPayload(teaching?.characters);
-  if (fromTeaching) return fromTeaching;
-
-  return normalizeCharactersPayload(studyCharacters);
+  // Импортын үед intro/wordGame/confusables нь lesson.charactersExtras-д хадгалагдана.
+  const extras = normalizeCharactersExtras(teaching?.charactersExtras);
+  return {
+    ...base,
+    intro: base.intro ?? extras.intro,
+    wordGame: base.wordGame ?? extras.wordGame,
+    confusables: base.confusables ?? extras.confusables,
+  };
 }
 
 function resolvePackageTexts(
@@ -241,8 +252,17 @@ function enrichPackageFromStudyTeaching(
   const collocations =
     resolvedCollocations.length > 0 ? resolvedCollocations : pkg.collocations;
 
+  const textsFallback = resolveTextsHookFallback(texts);
+  const hook: HskLessonPackage["hook"] = {
+    ...pkg.hook,
+    teacher_mn: pkg.hook?.teacher_mn || textsFallback.teacher_mn || "",
+    warmup_mn: pkg.hook?.warmup_mn || textsFallback.warmup_mn,
+  };
+
   return {
     ...pkg,
+    hook,
+    commonSaying: resolveCommonSaying(texts, teaching) ?? pkg.commonSaying,
     dialogues: dialogues.length > 0 ? dialogues : pkg.dialogues,
     texts: textsOut.length > 0 ? textsOut : pkg.texts,
     characters: characters ?? pkg.characters,
@@ -494,6 +514,8 @@ function normalizePackageText(raw: unknown, index: number): HskPackageShortText 
     raw.paragraph_summaries ?? raw.paragraphSummaries
   );
   const reflection = parseTextReflection(raw.reflection);
+  const parsedExercises = parseGrammarExercises(raw.exercises ?? raw.questions);
+  const exercises = parsedExercises.length > 0 ? parsedExercises : undefined;
 
   if (Array.isArray(raw.sentences) && raw.sentences.length > 0) {
     const sentences = raw.sentences
@@ -508,6 +530,7 @@ function normalizePackageText(raw: unknown, index: number): HskPackageShortText 
       paragraph_summaries:
         paragraph_summaries.length > 0 ? paragraph_summaries : undefined,
       reflection,
+      exercises,
       writingSample,
     };
   }
@@ -527,6 +550,7 @@ function normalizePackageText(raw: unknown, index: number): HskPackageShortText 
     paragraph_summaries:
       paragraph_summaries.length > 0 ? paragraph_summaries : undefined,
     reflection,
+    exercises,
     writingSample,
   };
 }
@@ -547,22 +571,32 @@ function mapTexts(raw: unknown): HskPackageShortText[] {
 
   if (!isRecord(raw)) return [];
 
+  const out: HskPackageShortText[] = [];
+
   for (const key of ["mainText", "longText"]) {
     const nested = raw[key];
     if (nested != null) {
       const fromArticle = normalizePackageText(nested, 0);
-      if (fromArticle) return [fromArticle];
+      if (fromArticle) {
+        out.push(fromArticle);
+        break;
+      }
     }
   }
 
   for (const key of ["shortTexts", "texts", "readings", "passages"]) {
     const nested = raw[key];
-    if (Array.isArray(nested)) {
-      return mapTexts(nested);
+    if (Array.isArray(nested) && nested.length > 0) {
+      nested.forEach((item, index) => {
+        // id давхцахгүй: үндсэн текст 1, дараагийнх нь дарааллаар
+        const row = normalizePackageText(item, out.length + index);
+        if (row) out.push({ ...row, id: out.length + 1 });
+      });
+      break;
     }
   }
 
-  return [];
+  return out;
 }
 
 function mapGrammar(raw: unknown): HskPackageGrammarPoint[] {
@@ -965,6 +999,51 @@ function resolveWorkbookPayloadFromSourceNote(
   return parseLegacySourceNoteJsonSegment(sourceNote, "hskWorkbook");
 }
 
+function resolveTextsHookFallback(textsPayload: unknown): {
+  teacher_mn?: string;
+  warmup_mn?: string;
+} {
+  if (!isRecord(textsPayload)) return {};
+  const intro = isRecord(textsPayload.lessonIntro) ? textsPayload.lessonIntro : null;
+  const warmup = isRecord(textsPayload.warmup) ? textsPayload.warmup : null;
+  return {
+    teacher_mn: trim(intro?.teacher_mn) || undefined,
+    warmup_mn: trim(intro?.warmup_mn) || trim(warmup?.mongolian) || undefined,
+  };
+}
+
+function parseCommonSaying(raw: unknown): HskCommonSaying | undefined {
+  if (!isRecord(raw)) return undefined;
+  const zh = trim(raw.zh) || trim(raw.chinese);
+  if (!zh) return undefined;
+  const ex = isRecord(raw.example) ? raw.example : null;
+  const exZh = trim(ex?.zh);
+  return {
+    zh,
+    pinyin: trim(raw.pinyin) || undefined,
+    en: trim(raw.en) || undefined,
+    meaning_mn: trim(raw.meaning_mn) || trim(raw.meaningMn) || undefined,
+    usage_mn: trim(raw.usage_mn) || trim(raw.usageMn) || undefined,
+    example: exZh
+      ? {
+          zh: exZh,
+          pinyin: trim(ex?.pinyin) || undefined,
+          mn: trim(ex?.mn) || undefined,
+        }
+      : undefined,
+  };
+}
+
+function resolveCommonSaying(
+  textsPayload: unknown,
+  teaching: Record<string, unknown> | null
+): HskCommonSaying | undefined {
+  return (
+    parseCommonSaying(isRecord(textsPayload) ? textsPayload.commonSaying : null) ??
+    parseCommonSaying(teaching?.commonSaying)
+  );
+}
+
 function getStudyPayloads(sourceNote: string | undefined | null) {
   const parsed = parseLessonSourceNote(sourceNote);
   if (parsed.format !== "json" || !isRecord(parsed.data.hskStudyContent)) {
@@ -1052,8 +1131,10 @@ function buildHskLessonPackageFromLessonContent(
   const collocations = resolveCollocations(teaching, studyRecord, sections);
 
   const hookRecord = isRecord(teaching?.hook) ? teaching.hook : null;
+  const textsFallback = resolveTextsHookFallback(texts);
   const teacherMn =
     trim(hookRecord?.teacher_mn) ||
+    textsFallback.teacher_mn ||
     study.teacherNotes.join("\n\n") ||
     lesson.description ||
     lesson.subtitle ||
@@ -1090,7 +1171,8 @@ function buildHskLessonPackageFromLessonContent(
     modules_enabled: [],
     hook: {
       teacher_mn: teacherMn,
-      warmup_mn: trim(hookRecord?.warmup_mn) || undefined,
+      warmup_mn:
+        trim(hookRecord?.warmup_mn) || textsFallback.warmup_mn || undefined,
     },
     vocabulary,
     characters: resolvePackageCharacters({}, teaching, studyCharacters),
@@ -1104,6 +1186,7 @@ function buildHskLessonPackageFromLessonContent(
     exercises_textbook: teaching?.exercises_textbook,
     exercises_workbook: resolveExercisesWorkbook(teaching, workbook),
     recap: teaching?.recap,
+    commonSaying: resolveCommonSaying(texts, teaching),
     proper_nouns: Array.isArray(teaching?.proper_nouns)
       ? (teaching.proper_nouns as HskLessonPackage["proper_nouns"])
       : undefined,

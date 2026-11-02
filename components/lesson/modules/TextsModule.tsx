@@ -7,6 +7,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LiveTextReader } from "@/components/lesson/live-text-reader";
 import { useGlobalAudio } from "@/components/providers/global-audio-provider";
 import { globalAudio } from "@/lib/audio/global-audio-store";
+import { CommonSayingCard } from "@/components/lesson/modules/CommonSayingCard";
 import { WritingSampleCard } from "@/components/lesson/modules/WritingSampleCard";
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
 import { speakText, stopSpeaking } from "@/lib/tts/speech";
@@ -27,11 +28,14 @@ type Speed = 0.5 | 0.75 | 1;
 const SPEEDS: Speed[] = [0.5, 0.75, 1];
 
 export default function TextsModule({
+  lessonId,
   lesson,
   timedSubtitles = [],
   onDone,
   trackHref,
 }: {
+  /** Ойлголтын асуултын аналитик (байхгүй бол асуулт харуулахгүй). */
+  lessonId?: string;
   lesson: HskLessonPackage;
   /** subtitle_lines rows — enables sentence highlight while 课文 audio plays. */
   timedSubtitles?: TimedSubtitle[];
@@ -224,6 +228,7 @@ export default function TextsModule({
             text={text}
             vocabulary={lesson.vocabulary}
             activeSentenceIndex={playing ? activeSentence : null}
+            lessonId={lessonId}
           />
         </>
       ) : null}
@@ -233,6 +238,10 @@ export default function TextsModule({
           sample={text.writingSample}
           sectionTitle={text.title_mn}
         />
+      ) : null}
+
+      {ti === total - 1 && lesson.commonSaying ? (
+        <CommonSayingCard saying={lesson.commonSaying} />
       ) : null}
 
       <div className="bs-navrow">

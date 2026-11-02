@@ -135,6 +135,8 @@ export interface HskPackageShortText {
   sentences: HskPackageTextSentence[];
   paragraph_summaries?: HskPackageParagraphSummary[];
   reflection?: HskPackageTextReflection;
+  /** Текст тус бүрийн ойлголтын асуулт (choice/judge/fill). */
+  exercises?: HskPackageGrammarExercise[];
   /** 写作 — model essay (~100 chars) for writing section. */
   writingSample?: HskPackageWritingSample;
 }
@@ -206,6 +208,39 @@ export interface HskPackageGrammarPoint extends HskTeacherOverlayFields {
   exercises?: HskPackageGrammarExercise[];
 }
 
+export interface HskCharactersIntro {
+  title_zh?: string;
+  title_mn?: string;
+  teacher_mn?: string;
+}
+
+export interface HskCharacterWordGameItem {
+  parts: string[];
+  result: string;
+  pinyin?: string;
+  mn?: string;
+  hint_mn?: string;
+}
+
+export interface HskCharacterConfusable {
+  a: string;
+  b: string;
+  word_a: string;
+  word_b: string;
+  mn?: string;
+  tip_mn?: string;
+}
+
+/** texts.json commonSaying — 俗语 */
+export interface HskCommonSaying {
+  zh: string;
+  pinyin?: string;
+  en?: string;
+  meaning_mn?: string;
+  usage_mn?: string;
+  example?: { zh: string; pinyin?: string; mn?: string };
+}
+
 export interface HskLessonPackage {
   schema_version: string;
   level: string;
@@ -220,7 +255,11 @@ export interface HskLessonPackage {
     count: number;
     writeCount: number;
     characters: HskCharacter[];
+    intro?: HskCharactersIntro;
+    wordGame?: HskCharacterWordGameItem[];
+    confusables?: HskCharacterConfusable[];
   };
+  commonSaying?: HskCommonSaying;
   proper_nouns?: { zh: string; pinyin: string; mn: string }[];
   dialogues?: HskPackageDialogue[];
   texts?: HskPackageShortText[];

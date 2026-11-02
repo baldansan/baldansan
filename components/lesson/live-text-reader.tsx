@@ -13,6 +13,7 @@ import {
   type WordTapAnchorRect,
   type WordTapPayload,
 } from "@/components/lesson/word-tap-sheet";
+import { GrammarPointExercises } from "@/components/lesson/modules/GrammarPointExercises";
 import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import { coalesceSentenceTokens } from "@/lib/lesson/coalesce-text-tokens";
@@ -46,12 +47,44 @@ type Props = {
   vocabulary?: HskPackageVocabItem[];
   /** Sentence highlighted while 课文 audio plays (subtitle_lines sync). */
   activeSentenceIndex?: number | null;
+  /** Ойлголтын асуултын (text.exercises) аналитикт — байхгүй бол асуулт харуулахгүй. */
+  lessonId?: string;
 };
+
+/** Текст бүрийн ойлголтын асуулт — grammar-ийн choice/judge UI-г дахин ашиглана. */
+function TextComprehension({
+  lessonId,
+  text,
+}: {
+  lessonId: string;
+  text: HskPackageShortText;
+}) {
+  const [finished, setFinished] = useState(false);
+  const exercises = text.exercises ?? [];
+  if (exercises.length === 0) return null;
+  return (
+    <div className="bs-txt-footer-section">
+      <p className="bs-txt-footer-title">✅ Ойлголтоо шалгая</p>
+      {finished ? (
+        <p className="bs-txt-hint">Бүх асуултад хариуллаа 👏</p>
+      ) : (
+        <GrammarPointExercises
+          lessonId={lessonId}
+          pointSlug={`text-${text.id}`}
+          exercises={exercises}
+          isLastPoint
+          onComplete={() => setFinished(true)}
+        />
+      )}
+    </div>
+  );
+}
 
 export function LiveTextReader({
   text,
   vocabulary = [],
   activeSentenceIndex = null,
+  lessonId,
 }: Props) {
   const vocabByZh = useMemo(() => buildVocabMap(vocabulary), [vocabulary]);
   const vocabWords = useMemo(() => [...vocabByZh.keys()], [vocabByZh]);
@@ -322,6 +355,10 @@ export function LiveTextReader({
               ))}
             </ul>
           </div>
+        ) : null}
+
+        {lessonId && (text.exercises?.length ?? 0) > 0 ? (
+          <TextComprehension key={text.id} lessonId={lessonId} text={text} />
         ) : null}
       </div>
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import DialoguesModule from "@/components/lesson/modules/DialoguesModule";
 import PronunciationModule from "@/components/lesson/modules/PronunciationModule";
 import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
@@ -8,7 +9,37 @@ import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import { lessonDisplayTitleMn } from "@/lib/course-display-meta";
 import { DeepPronunciationPanel } from "@/components/lesson/deep/deep-teaching-blocks";
 import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
-import type { LessonPathImages } from "@/lib/lesson/lesson-path-images";
+import type {
+  LessonPathImage,
+  LessonPathImages,
+} from "@/lib/lesson/lesson-path-images";
+
+/** section="warmup" зураг — товшиж нээх (нэр нь эхэндээ далд). */
+function WarmupRevealFigure({ img }: { img: LessonPathImage }) {
+  const [revealed, setRevealed] = useState(false);
+  return (
+    <figure
+      className="bs-tm-illus-item"
+      role="button"
+      tabIndex={0}
+      aria-pressed={revealed}
+      onClick={() => setRevealed(true)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          setRevealed(true);
+        }
+      }}
+      style={{ cursor: revealed ? "default" : "pointer" }}
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element -- Supabase public URL */}
+      <img src={img.url} alt="" loading="lazy" decoding="async" />
+      <figcaption translate="no">
+        {revealed ? img.title : "Энэ юу вэ? 👆"}
+      </figcaption>
+    </figure>
+  );
+}
 
 type Props = {
   lesson: HskLessonPackage;
@@ -133,13 +164,17 @@ export function LessonPathWarmupStage({
         <div className="bs-tm-illus">
           <div className="bs-tm-warm-head">🖼️ Энэ хичээлд гарах зүйлс</div>
           <div className="bs-tm-illus-grid">
-            {illustrations.map((img) => (
+            {illustrations.map((img) =>
+              img.section?.trim().toLowerCase() === "warmup" ? (
+                <WarmupRevealFigure key={img.id} img={img} />
+              ) : (
               <figure key={img.id} className="bs-tm-illus-item">
                 {/* eslint-disable-next-line @next/next/no-img-element -- Supabase public URL */}
                 <img src={img.url} alt={img.title} loading="lazy" decoding="async" />
                 <figcaption translate="no">{img.title}</figcaption>
               </figure>
-            ))}
+              )
+            )}
           </div>
         </div>
       ) : null}
