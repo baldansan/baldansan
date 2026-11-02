@@ -84,6 +84,7 @@ export function GrammarPointView({
 
       {point.check && point.check.question && point.check.options.length > 0 ? (
         <TeacherCheckQuizSection
+          key={`check-${slug}`}
           check={point.check}
           lessonId={lessonId}
           pointSlug={slug}
@@ -96,6 +97,7 @@ export function GrammarPointView({
 
       {hasExercises ? (
         <GrammarPointExercises
+          key={`ex-${slug}`}
           lessonId={lessonId}
           pointSlug={slug}
           exercises={exercises}

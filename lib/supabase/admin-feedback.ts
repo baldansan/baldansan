@@ -14,9 +14,12 @@ export type AdminFeedbackRow = {
   screenshotUrl: string | null;
   userAgent: string | null;
   viewport: string | null;
+  resolvedAt: string | null;
   createdAt: string;
 };
 
+const WITH_RESOLVED =
+  "id, user_id, lesson_id, stage, question_id, rating, note, page_path, screenshot_url, user_agent, viewport, resolved_at, created_at";
 const WITH_SHOT =
   "id, user_id, lesson_id, stage, question_id, rating, note, page_path, screenshot_url, user_agent, viewport, created_at";
 const LEGACY = "id, user_id, lesson_id, stage, question_id, rating, note, page_path, created_at";
@@ -32,6 +35,8 @@ function splitLegacyNote(note: string | null): { note: string | null; shot: stri
 /** Бүх санал/алдааны мэдээлэл — сүүлийнх нь эхэнд (admin RLS select). */
 export async function getAdminFeedback(options: {
   stage?: string | null;
+  /** "open" = засагдаагүй, "resolved" = засагдсан, null = бүгд */
+  resolved?: "open" | "resolved" | null;
   limit?: number;
 } = {}): Promise<{ rows: AdminFeedbackRow[]; warnings: string[] }> {
   const warnings: string[] = [];
@@ -39,17 +44,23 @@ export async function getAdminFeedback(options: {
   if (!client) return { rows: [], warnings: ["Supabase тохиргоо байхгүй."] };
   const limit = options.limit ?? 200;
 
-  const run = (select: string) => {
+  const run = (select: string, withResolved: boolean) => {
     let q = client.from("feedback").select(select).order("created_at", { ascending: false }).limit(limit);
     if (options.stage) q = q.eq("stage", options.stage);
+    if (withResolved && options.resolved === "open") q = q.is("resolved_at", null);
+    if (withResolved && options.resolved === "resolved") q = q.not("resolved_at", "is", null);
     return q;
   };
 
-  let { data, error } = await run(WITH_SHOT);
+  let { data, error } = await run(WITH_RESOLVED, true);
   let legacy = false;
   if (error && /column|schema cache/i.test(error.message)) {
+    warnings.push("078_feedback_resolved.sql migration хараахан ажиллаагүй — «Засагдсан ✓» ажиллахгүй.");
+    ({ data, error } = await run(WITH_SHOT, false));
+  }
+  if (error && /column|schema cache/i.test(error.message)) {
     legacy = true;
-    ({ data, error } = await run(LEGACY));
+    ({ data, error } = await run(LEGACY, false));
   }
   if (error) {
     warnings.push(error.message);
@@ -73,6 +84,7 @@ export async function getAdminFeedback(options: {
       screenshotUrl: shot,
       userAgent: r.user_agent ? String(r.user_agent) : null,
       viewport: r.viewport ? String(r.viewport) : null,
+      resolvedAt: r.resolved_at ? String(r.resolved_at) : null,
       createdAt: String(r.created_at),
     };
   });

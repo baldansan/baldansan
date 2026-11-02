@@ -17,6 +17,7 @@ import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import { coalesceSentenceTokens } from "@/lib/lesson/coalesce-text-tokens";
 import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
+import { speakWithSavedSettings, stopPronunciation } from "@/lib/tts/play-pronunciation";
 import {
   loadTextReaderShowMn,
   loadTextReaderShowPinyin,
@@ -186,7 +187,21 @@ export function LiveTextReader({
           </div>
         ) : null}
         {sentence.zh ? (
-          <PronunciationCheck compact text={sentence.zh} pinyin={sentence.pinyin} />
+          <div className="bs-txt-sent-tools">
+            <button
+              type="button"
+              className="bs-txt-sent-play"
+              onClick={() => {
+                stopPronunciation();
+                void speakWithSavedSettings(sentence.zh, "zh-CN");
+              }}
+              aria-label="Өгүүлбэрийг сонсох"
+              title="Өгүүлбэрийг сонсох"
+            >
+              <span aria-hidden>🔊</span> Сонсох
+            </button>
+            <PronunciationCheck compact text={sentence.zh} pinyin={sentence.pinyin} />
+          </div>
         ) : null}
         {renderSentenceNote(sentence, si, hasNote, noteOpen)}
       </div>

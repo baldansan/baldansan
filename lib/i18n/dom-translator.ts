@@ -37,7 +37,12 @@ function buildTables() {
       if (i % 2 === 0) re += escapeRe(parts[i]);
       else {
         order.push(Number(parts[i]));
-        re += "([\\s\\S]*?)";
+        // Placeholder-ийн яг хажууд (зайгүй) үсэг байвал зөвхөн тоо таарна —
+        // "{0}с" загвар "Шинэ үгс" → "Шинэ үг秒" болгохгүй.
+        const prevCh = parts[i - 1]?.slice(-1) ?? "";
+        const nextCh = parts[i + 1]?.slice(0, 1) ?? "";
+        const tight = /[\p{L}\p{N}]/u.test(prevCh) || /[\p{L}\p{N}]/u.test(nextCh);
+        re += tight ? "([\\d.,:%]+)" : "([\\s\\S]*?)";
       }
     }
     re += "$";

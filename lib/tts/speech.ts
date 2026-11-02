@@ -135,8 +135,14 @@ export async function speakText(
     return { ok: false, error: "Хоосон текст." };
   }
 
+  const wasBusy = synth.speaking || synth.pending;
   stopSpeaking();
-  await loadVoices();
+  // Safari/iOS: speak() нь хэрэглэгчийн дарсан gesture дотор дуудагдах ёстой —
+  // voices ачаалагдсан, өмнөх уншлага байхгүй бол await/setTimeout-гүйгээр шууд уншина.
+  // (cancel()-ийн яг дараа speak() дуудвал Safari алгасдаг тул busy үед setTimeout.)
+  if (voicesCache.length === 0 && synth.getVoices().length > 0) voicesCache = synth.getVoices();
+  const voicesReady = voicesCache.length > 0 && !wasBusy;
+  if (voicesCache.length === 0) await loadVoices();
 
   return new Promise((resolve) => {
     try {
@@ -163,13 +169,15 @@ export async function speakText(
       utterance.onerror = () =>
         resolve({ ok: false, error: TTS_UNAVAILABLE_MESSAGE });
 
-      window.setTimeout(() => {
+      const go = () => {
         try {
           synth.speak(utterance);
         } catch {
           resolve({ ok: false, error: TTS_UNAVAILABLE_MESSAGE });
         }
-      }, 0);
+      };
+      if (voicesReady) go();
+      else window.setTimeout(go, 0);
     } catch {
       resolve({ ok: false, error: TTS_UNAVAILABLE_MESSAGE });
     }

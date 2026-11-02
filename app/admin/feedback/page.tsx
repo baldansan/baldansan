@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { getAdminFeedback } from "@/lib/supabase/admin-feedback";
+import { FeedbackResolveButton } from "@/components/admin/feedback-resolve-button";
 
 export const dynamic = "force-dynamic";
 
@@ -25,11 +26,18 @@ function fmt(iso: string) {
 export default async function AdminFeedbackPage({
   searchParams,
 }: {
-  searchParams: Promise<{ stage?: string }>;
+  searchParams: Promise<{ stage?: string; done?: string }>;
 }) {
-  const { stage } = await searchParams;
+  const { stage, done } = await searchParams;
   const activeStage = stage === "all" ? null : stage || "report";
-  const { rows, warnings } = await getAdminFeedback({ stage: activeStage });
+  const resolvedFilter = done === "all" ? null : done === "yes" ? "resolved" : "open";
+  const { rows, warnings } = await getAdminFeedback({ stage: activeStage, resolved: resolvedFilter });
+  const qs = (next: { stage?: string; done?: string }) => {
+    const p = new URLSearchParams();
+    p.set("stage", next.stage ?? (activeStage ?? "all"));
+    p.set("done", next.done ?? (done || "no"));
+    return `/admin/feedback?${p.toString()}`;
+  };
 
   return (
     <div className="flex flex-col gap-6">
@@ -49,7 +57,7 @@ export default async function AdminFeedbackPage({
           return (
             <Link
               key={key}
-              href={`/admin/feedback?stage=${key}`}
+              href={qs({ stage: key })}
               className={`rounded-full px-3 py-1.5 font-semibold ring-1 ${
                 on ? "bg-emerald-600 text-white ring-emerald-600" : "bg-white text-slate-700 ring-slate-200"
               }`}
@@ -58,6 +66,28 @@ export default async function AdminFeedbackPage({
             </Link>
           );
         })}
+      </div>
+
+      <div className="flex flex-wrap gap-2 text-sm">
+        {[
+          ["no", "⏳ Үлдсэн"],
+          ["yes", "✓ Засагдсан"],
+          ["all", "Бүгд"],
+        ].map(([key, label]) => {
+          const on = (done || "no") === key;
+          return (
+            <Link
+              key={key}
+              href={qs({ done: key })}
+              className={`rounded-full px-3 py-1.5 font-semibold ring-1 ${
+                on ? "bg-slate-800 text-white ring-slate-800" : "bg-white text-slate-700 ring-slate-200"
+              }`}
+            >
+              {label}
+            </Link>
+          );
+        })}
+        <span className="self-center text-xs text-slate-500">{rows.length} мөр</span>
       </div>
 
       {warnings.length > 0 ? (
@@ -73,7 +103,10 @@ export default async function AdminFeedbackPage({
       ) : (
         <ul className="flex flex-col gap-3">
           {rows.map((r) => (
-            <li key={r.id} className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
+            <li
+              key={r.id}
+              className={`rounded-2xl bg-white p-4 shadow-sm ring-1 ${r.resolvedAt ? "ring-emerald-200 opacity-80" : "ring-slate-200"}`}
+            >
               <div className="flex flex-col gap-3 sm:flex-row">
                 {r.screenshotUrl ? (
                   <a
@@ -100,6 +133,9 @@ export default async function AdminFeedbackPage({
                     <span>{fmt(r.createdAt)}</span>
                     {r.rating ? <span>· үнэлгээ: {r.rating}</span> : null}
                     {r.viewport ? <span>· {r.viewport}</span> : null}
+                    <span className="ml-auto">
+                      <FeedbackResolveButton id={r.id} resolved={Boolean(r.resolvedAt)} />
+                    </span>
                   </div>
                   {r.note ? (
                     <p className="mt-2 whitespace-pre-wrap text-sm text-slate-900">{r.note}</p>

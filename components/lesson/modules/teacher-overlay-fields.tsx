@@ -229,6 +229,7 @@ export function TeacherOverlayFields({
       ) : null}
       {hasCheck ? (
         <TeacherCheckQuizSection
+          key={`check-${pointSlug ?? check!.question}`}
           check={check!}
           lessonId={lessonId}
           pointSlug={pointSlug}

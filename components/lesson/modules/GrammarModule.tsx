@@ -87,7 +87,10 @@ export default function GrammarModule({
         </span>
       </div>
 
+      {/* key: дүрэм солигдоход «Шалгаад үз»/дасгалын state (picked, ei, answered) дахин эхэлнэ —
+          үгүй бол дараагийн дүрэм дээр хариу урьдчилан харагдаж, сүүлийн дасгалын товч ажиллахгүй байсан. */}
       <GrammarPointView
+        key={`${lessonId}-${gi}`}
         lessonId={lessonId}
         point={point}
         pointIndex={gi}
