@@ -4,11 +4,12 @@ RU=['студент','класс',' час ','телефон','проблем','
 def walk(w):
     for p in w['listening']['parts']:
         for it in p['items']: yield ('L',it)
-    for g in w['reading']['select_word']:
+    r=w.get('reading',{})
+    for g in r.get('select_word',[]):
         for it in g['items']: yield ('S',it)
-    for it in w['reading']['ordering']: yield ('O',it)
-    for it in w['reading']['comprehension']: yield ('C',it)
-    for it in w['writing']['items']: yield ('W',it)
+    for it in r.get('ordering',[]): yield ('O',it)
+    for it in r.get('comprehension',[]): yield ('C',it)
+    for it in w.get('writing',{}).get('items',[]): yield ('W',it)
 ok=True
 for lid in sys.argv[1:]:
     try: w=json.load(open(f'workbook-{lid}.json')); sk=json.load(open(f'skeleton-{lid}.json'))
