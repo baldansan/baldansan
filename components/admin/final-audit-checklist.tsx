@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/site-url";
 import Link from "next/link";
 
 type AuditStatus = "ready" | "needs check" | "planned";
@@ -167,7 +168,7 @@ const SECTIONS: AuditSection[] = [
       {
         label: "Vercel-ийн орчны хувьсагч ба Auth хаягууд",
         status: "needs check",
-        note: "Supabase Auth тохиргоонд https://baldansan.vercel.app байх ёстой",
+        note: `Supabase Auth тохиргоонд ${SITE_URL} байх ёстой`,
       },
       {
         label: "Гаргахад бэлтгэсэн хувилбарын төлөв",
@@ -215,7 +216,7 @@ const SECTIONS: AuditSection[] = [
       {
         label: "Supabase Auth-ийн Site URL ба Redirect URL",
         status: "needs check",
-        note: "https://baldansan.vercel.app-д тохируулна",
+        note: `${SITE_URL}-д тохируулна`,
       },
       {
         label: "Ажлын орчныг шалгах SQL",

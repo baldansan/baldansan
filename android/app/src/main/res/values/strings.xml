@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Бөөндөө Сурцгаая</string>
+    <string name="title_activity_main">Бөөндөө Сурцгаая</string>
+    <string name="package_name">mn.buunduu.surtsgaay</string>
+    <string name="custom_url_scheme">mn.buunduu.surtsgaay</string>
+</resources>

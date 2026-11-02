@@ -1,5 +1,6 @@
+import { SITE_URL } from "@/lib/site-url";
 /** Live production deployment URL — no secrets. */
-export const PRODUCTION_URL = "https://baldansan.vercel.app";
+export const PRODUCTION_URL = SITE_URL;
 
 export const LAUNCH_STORAGE_KEY = "buunduu-launch-candidate";
 

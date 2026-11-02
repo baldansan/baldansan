@@ -190,6 +190,10 @@ export function SettingsAppView() {
         <Link href="/privacy" className="font-semibold text-emerald-600">
           Нууцлалын бодлого
         </Link>
+        {" · "}
+        <Link href="/terms" className="font-semibold text-emerald-600">
+          Үйлчилгээний нөхцөл
+        </Link>
       </p>
 
       {!onboardingDone ? (

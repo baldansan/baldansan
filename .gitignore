@@ -56,3 +56,20 @@ next-env.d.ts
 /public/data/cursor-prompt-breakdown.md
 __pycache__/
 .claude/worktrees/
+
+# Capacitor (android/ ба ios/ төслийн хавтсыг commit хийнэ, build үр дүнг үгүй)
+/android/.gradle
+/android/build
+/android/app/build
+/android/local.properties
+/android/captures
+/android/app/release
+/ios/App/Pods
+/ios/App/build
+/ios/App/output
+/ios/DerivedData
+xcuserdata/
+*.keystore
+*.jks
+*.aab
+*.apk

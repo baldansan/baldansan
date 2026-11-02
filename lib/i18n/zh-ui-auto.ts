@@ -1,5 +1,6 @@
 // АВТОМАТААР ҮҮСГЭСЭН — scripts/i18n/extract-ui-strings.mjs + агентын орчуулга. Гараар засаж болно (ZH_UI давуу).
 /* eslint-disable */
+import { SITE_URL } from "@/lib/site-url";
 export const ZH_UI_AUTO: Record<string, string> = {
   "# Бөөндөө Сурцгаая — Ажлын орчинд гаргах баталгааны тайлан": "# Бөөндөө Сурцгаая — 生产环境发布确认报告",
   "# Бөөндөө Сурцгаая — Ажлын орчны чанарын шалгалтын тайлан": "# Бөөндөө Сурцгаая — 生产环境质量检查报告",
@@ -388,7 +389,7 @@ export const ZH_UI_AUTO: Record<string, string> = {
   "Subtitle уншихад алдаа гарлаа.": "读取字幕时出错。",
   "Subtitle устгахад алдаа гарлаа.": "删除字幕时出错。",
   "Supabase Auth URL-ууд тохируулагдсан": "Supabase Auth URL 已配置",
-  "Supabase Auth тохиргоонд https://baldansan.vercel.app байх ёстой": "Supabase Auth 设置中必须包含 https://baldansan.vercel.app",
+  [`Supabase Auth тохиргоонд ${SITE_URL} байх ёстой`]: `Supabase Auth 设置中必须包含 ${SITE_URL}`,
   "Supabase Auth-ийн Site URL ба Redirect URL": "Supabase Auth 的 Site URL 与 Redirect URL",
   "Supabase Dashboard дээр ажлын орчны URL, /login, /profile болон localhost/** хаягуудыг нэмнэ үү.": "请在 Supabase Dashboard 中添加生产环境 URL、/login、/profile 及 localhost/** 地址。",
   "Supabase SQL шалгалт": "Supabase SQL 检查",
@@ -465,7 +466,7 @@ export const ZH_UI_AUTO: Record<string, string> = {
   "episode_no байвал series_id заавал.": "有 episode_no 时 series_id 为必填。",
   "episode_no эерэг бүхэл тоо байх ёстой.": "episode_no 必须是正整数。",
   "go_live, needs_review, blocked шийдвэрийн үндэслэл": "go_live、needs_review、blocked 决策的理由",
-  "https://baldansan.vercel.app-д тохируулна": "设置为 https://baldansan.vercel.app",
+  [`${SITE_URL}-д тохируулна`]: `设置为 ${SITE_URL}`,
   "id байхгүй.": "缺少 id。",
   "korean-1 курс үүсгэх SQL": "创建 korean-1 课程的 SQL",
   "kxcc-ep1.json маягийн богино видеоны хадмал файлыг Supabase-д оруулна. series.json байвал эхлээд цуврал үүсгэнэ. Шалгалт давсан файлыг л оруулна.": "将 kxcc-ep1.json 格式的短视频字幕文件导入 Supabase。如有 series.json，会先创建系列。仅导入通过校验的文件。",

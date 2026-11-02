@@ -8,15 +8,22 @@ export const metadata = {
     "Бөөндөө Сурцгаая app ямар мэдээлэл цуглуулдаг, хэрхэн хамгаалдаг тухай.",
 };
 
-const LAST_UPDATED = "2026-08-18";
-const CONTACT_EMAIL = "smileycatler1@gmail.com";
+const LAST_UPDATED = "2026-11-03";
+const CONTACT_EMAIL = "support@buunduu.mn";
 
 const sections = [
   {
+    title: "0. Хэн мэдээлэл боловсруулдаг вэ?",
+    body: [
+      "«Бөөндөө Сурцгаая» аппыг Буундуу Карго (Buunduu Cargo, Улаанбаатар, Монгол) ажиллуулдаг бөгөөд таны мэдээллийг боловсруулагч оператор нь Буундуу Карго мөн.",
+    ],
+  },
+  {
     title: "1. Ямар мэдээлэл цуглуулдаг вэ?",
     body: [
-      "Бүртгэл үүсгэхэд: имэйл хаяг, нууц үг (нууц үгийг Supabase аюулгүй хадгална — бид харах боломжгүй).",
+      "Бүртгэл үүсгэхэд: имэйл хаяг, нэвтрэлт (имэйл + нууц үг; нэвтрэлтийг Supabase Auth хариуцна, нууц үгийг шифрлэж хадгалдаг тул бид харах боломжгүй). Google/Apple-ээр нэвтрэх сонголт одоогоор байхгүй.",
       "Сурах явцад: хичээлийн ахиц, сурсан үгс, quiz оноо, давталтын түүх, өдрийн зорилго, streak.",
+      "Төхөөрөмжийн мэдээлэл: хөтөч/үйлдлийн системийн төрөл, апп-ын хувилбар, алдааны техникийн лог, (зөвшөөрсөн бол) push мэдэгдлийн токен. Бид байршил, контакт, камер зэргийг цуглуулдаггүй.",
       "Зочноор (нэвтрэлгүй) ашиглавал ахиц зөвхөн таны төхөөрөмж дээр (browser storage) хадгалагдана — бидэнд илгээгдэхгүй.",
     ],
   },
@@ -24,7 +31,8 @@ const sections = [
     title: "2. Мэдээллийг юунд ашигладаг вэ?",
     body: [
       "Зөвхөн app-ийн үндсэн үйлчилгээнд: таны сурах явцыг хадгалах, төхөөрөмж хооронд sync хийх, давталтын хуваарь гаргах.",
-      "Бид таны мэдээллийг хэнд ч зардаггүй, сурталчилгаанд ашигладаггүй, гуравдагч этгээдэд дамжуулдаггүй.",
+      "Бид таны мэдээллийг хэнд ч зардаггүй, сурталчилгаанд ашигладаггүй.",
+      "Үйлчилгээ үзүүлэгч гуравдагч талууд (зөвхөн аппыг ажиллуулахад): Supabase (өгөгдлийн сан ба нэвтрэлт), Vercel (hosting), болон имэйл илгээх үйлчилгээ (Resend — урилга, сануулгын имэйл).",
     ],
   },
   {
@@ -37,7 +45,7 @@ const sections = [
   {
     title: "4. Бүртгэлээ устгах",
     body: [
-      "Тохиргоо → «Бүртгэл устгах» хэсгээс бүртгэлээ бүрмөсөн устгаж болно. Устгахад таны имэйл, бүх сурах явц, оноо өгөгдлийн сангаас бүрмөсөн арилна — сэргээх боломжгүй.",
+      "Апп доторх зам: Тохиргоо → «Бүртгэл устгах». Нэвтэрч чадахгүй бол /account/delete хуудсанд заасны дагуу имэйлээр хүсэлт гаргана. Тохиргоо → «Бүртгэл устгах» хэсгээс бүртгэлээ бүрмөсөн устгаж болно. Устгахад таны имэйл, бүх сурах явц, оноо өгөгдлийн сангаас бүрмөсөн арилна — сэргээх боломжгүй.",
       `Эсвэл ${CONTACT_EMAIL} хаяг руу имэйл илгээж устгуулах хүсэлт гаргаж болно — 30 хоногийн дотор биелүүлнэ.`,
     ],
   },
@@ -93,12 +101,12 @@ export default function PrivacyPage() {
         </h2>
         <p className="mt-2 text-sm leading-6 text-slate-600">
           Бөөндөө Сурцгаая (&quot;Buunduu Surtsgaay&quot;) is a language
-          learning app. We collect only your email address and learning
+          learning app. Operated by Buunduu Cargo (Ulaanbaatar, Mongolia). We collect your email address, sign-in data (Supabase Auth), basic device information and learning
           progress (lesson completion, learned words, quiz scores), stored
           securely in Supabase and protected by row-level security. We do not
-          sell your data or share it with third parties, and we show no ads.
+          sell your data and show no ads; we only use Supabase, Vercel and an email delivery provider to run the service.
           Guest usage stores progress only on your device. You can permanently
-          delete your account and all associated data from Settings, or by
+          delete your account and all associated data from Settings, via /account/delete, or by
           emailing {CONTACT_EMAIL}. Questions: {CONTACT_EMAIL}.
         </p>
       </article>
@@ -106,6 +114,12 @@ export default function PrivacyPage() {
       <section className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <Link href="/settings" className={ctaPrimaryClass}>
           Тохиргоо
+        </Link>
+        <Link href="/account/delete" className={ctaOutlineClass}>
+          Бүртгэл устгах
+        </Link>
+        <Link href="/terms" className={ctaOutlineClass}>
+          Үйлчилгээний нөхцөл
         </Link>
         <Link href="/help" className={ctaOutlineClass}>
           Тусламж

@@ -21,7 +21,7 @@ export type EmailProviderStatus = {
 };
 
 function getFromAddress(): string {
-  return process.env.EMAIL_FROM?.trim() || "Buunduu Surtsgaay <noreply@baldansan.vercel.app>";
+  return process.env.EMAIL_FROM?.trim() || "Buunduu Surtsgaay <noreply@buunduu.mn>";
 }
 
 export function isEmailProviderConfigured(): boolean {

@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/site-url";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import { getCurrentUser } from "@/lib/supabase/auth";
 import {
@@ -6,7 +7,7 @@ import {
 } from "@/lib/supabase/admin";
 import { getClientEnvStatus } from "@/lib/system/system-checks";
 
-export const PRODUCTION_URL = "https://baldansan.vercel.app";
+export const PRODUCTION_URL = SITE_URL;
 
 export type SecurityCheckResult = "pass" | "warn" | "fail" | "skip" | "manual";
 

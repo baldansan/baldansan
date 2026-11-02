@@ -9,6 +9,10 @@
     "dev:localhost": "next dev",
     "build": "next build",
     "start": "next start",
+    "cap:sync": "cap sync",
+    "cap:android": "cap open android",
+    "cap:ios": "cap open ios",
+    "mobile:assets": "capacitor-assets generate --iconBackgroundColor '#ffffff' --splashBackgroundColor '#1FB85A'",
     "lint": "eslint",
     "hsk1:audit:generate": "tsx scripts/hsk1-generate-source-audit.ts",
     "hsk1:audit:validate": "tsx scripts/hsk1-validate-source-audit.ts",
@@ -22,6 +26,10 @@
     "diag:courses": "node --env-file=.env.local scripts/diagnostics/diag-courses.mjs"
   },
   "dependencies": {
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4",
     "@supabase/ssr": "^0.10.3",
     "@supabase/supabase-js": "^2.106.2",
     "hanzi-writer": "^3.7.3",
@@ -37,6 +45,10 @@
     "web-push": "^3.6.7"
   },
   "devDependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.6.0",
+    "@capacitor/ios": "^8.6.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

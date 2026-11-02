@@ -1,6 +1,8 @@
+import { SITE_URL } from "@/lib/site-url";
 import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Noto_Sans_SC, Nunito } from "next/font/google";
 import { LearnerLanguageGuard } from "@/components/learner-language-guard";
+import { CapacitorBridge } from "@/components/mobile/capacitor-bridge";
 import { AppProviders } from "@/components/providers/app-providers";
 import { UiLocaleProvider } from "@/components/i18n/ui-locale-provider";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
@@ -44,7 +46,7 @@ const geistMono = Geist_Mono({
   preload: false,
 });
 
-const siteUrl = "https://baldansan.vercel.app";
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -155,6 +157,7 @@ export default async function RootLayout({
             <LearnerLanguageGuard />
             {children}
             <PwaServiceWorkerRegister />
+            <CapacitorBridge />
           </AppProviders>
         </UiLocaleProvider>
       </body>
