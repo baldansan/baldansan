@@ -8,12 +8,17 @@ export type ListeningSubQuestion =
       prompt: string;
       options: string[];
       answer: string;
+      explanation?: string;
+      /** Сонсголын бичвэр (录音文本) — аудио файл байхгүй бол TTS-ээр уншина, хариулсны дараа харуулна. */
+      script?: string;
     }
   | {
       kind: "tf";
       n?: number;
       prompt: string;
       answer: boolean;
+      explanation?: string;
+      script?: string;
     };
 
 export type ExerciseQuestion =
@@ -22,6 +27,8 @@ export type ExerciseQuestion =
       n?: number;
       section: string;
       instruction?: string;
+      explanation?: string;
+      script?: string;
       audio?: string;
       zh?: string;
       prompt: string;
@@ -35,6 +42,8 @@ export type ExerciseQuestion =
       n?: number;
       section: string;
       instruction?: string;
+      explanation?: string;
+      script?: string;
       audio?: string;
       prompt: string;
       answer: boolean;
@@ -43,6 +52,8 @@ export type ExerciseQuestion =
       kind: "listening_group";
       section: string;
       instruction?: string;
+      explanation?: string;
+      script?: string;
       audio: string;
       items: ListeningSubQuestion[];
     }
@@ -51,6 +62,8 @@ export type ExerciseQuestion =
       n?: number;
       section: string;
       instruction?: string;
+      explanation?: string;
+      script?: string;
       prompt: string;
       tokens: string[];
       keys: string[];
@@ -61,10 +74,23 @@ export type ExerciseQuestion =
       n?: number;
       section: string;
       instruction?: string;
+      explanation?: string;
+      script?: string;
       prompt: string;
       tokens: string[];
       answer: string;
     };
+
+function explanationOf(it: Record<string, unknown>): string | undefined {
+  const v = it.explanation_mn ?? it.explanationMn ?? it.explanation;
+  const t = String(v ?? "").trim();
+  return t || undefined;
+}
+function scriptOf(it: Record<string, unknown>): string | undefined {
+  const v = it.script_zh ?? it.transcript_zh ?? it.transcript ?? it.script;
+  const t = String(v ?? "").trim();
+  return t || undefined;
+}
 
 function valuesOf(o: unknown): { values: string[]; byKey: Record<string, string> } {
   if (Array.isArray(o)) {
@@ -124,6 +150,8 @@ export function buildListeningSubQuestion(
       prompt,
       options: values,
       answer: resolveAns(it.answer, byKey),
+      explanation: explanationOf(it),
+      script: scriptOf(it),
     };
   }
   const statement =
@@ -140,6 +168,8 @@ export function buildListeningSubQuestion(
     n: Number(it.n) || undefined,
     prompt: statement,
     answer: toBool(it.answer),
+    explanation: explanationOf(it),
+    script: scriptOf(it),
   };
 }
 
@@ -220,6 +250,7 @@ function buildTextbookQuestions(tb: Record<string, unknown>): ExerciseQuestion[]
         instruction: (tb.fill_in as { instruction_mn?: string })?.instruction_mn,
         prompt: String(item.q),
         options: words.length ? words : [String(item.answer)],
+        explanation: explanationOf(it as Record<string, unknown>),
         answer: String(item.answer),
       });
     }
@@ -254,6 +285,7 @@ function buildTextbookQuestions(tb: Record<string, unknown>): ExerciseQuestion[]
           instruction,
           prompt: String(item.q),
           options: values,
+          explanation: explanationOf(it as Record<string, unknown>),
           answer: resolveAns(item.answer, byKey),
         });
         continue;
@@ -270,6 +302,7 @@ function buildTextbookQuestions(tb: Record<string, unknown>): ExerciseQuestion[]
         instruction,
         prompt: String(item.q),
         options,
+        explanation: explanationOf(it as Record<string, unknown>),
         answer: alternatives[0],
         acceptableAnswers: alternatives.length > 1 ? alternatives : undefined,
       });
@@ -326,6 +359,7 @@ function buildWorkbookQuestions(
         section: "Үг сонгох",
         prompt: String(item.q),
         options: values,
+        explanation: explanationOf(it as Record<string, unknown>),
         answer: resolveAns(item.answer, byKey),
       });
     }
@@ -367,6 +401,7 @@ function buildWorkbookQuestions(
         zh,
         prompt,
         options: values,
+        explanation: explanationOf(it as Record<string, unknown>),
         answer: resolveAns(item.answer, byKey),
       });
     }
@@ -389,6 +424,7 @@ function buildWorkbookQuestions(
         tokens,
         keys,
         answer,
+        explanation: explanationOf(it as Record<string, unknown>),
       });
     }
   }
@@ -410,6 +446,7 @@ function buildWorkbookQuestions(
       zh: item?.passage_zh ? String(item.passage_zh) : undefined,
       prompt: String(item?.q_zh ?? ""),
       options: values,
+      explanation: explanationOf(it as Record<string, unknown>),
       answer: resolveAns(item.answer, byKey),
     });
   }
@@ -426,6 +463,7 @@ function buildWorkbookQuestions(
         instruction: ms?.instruction_mn,
         prompt: "Үгсийг эвлүүлж зөв өгүүлбэр болгоорой:",
         tokens: words,
+        explanation: explanationOf(it as Record<string, unknown>),
         answer: String(item.answer),
       });
     }

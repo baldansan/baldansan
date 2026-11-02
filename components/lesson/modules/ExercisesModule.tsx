@@ -32,6 +32,7 @@ import {
 import { resolveLessonPackagePlayableUrl } from "@/lib/lesson/package-audio-resolve";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
+import { speakWithSavedSettings, stopPronunciation } from "@/lib/tts/play-pronunciation";
 import { SentenceStructureGate } from "./SentenceStructureGate";
 import "./exercises-module.css";
 
@@ -946,6 +947,16 @@ export default function ExercisesModule({
                         )}
                       </span>
                     )}
+                    {item.script ? (
+                      <p className="bs-ex-script" translate="no">
+                        🎧 {item.script}
+                      </p>
+                    ) : null}
+                    {item.explanation ? (
+                      <p className="bs-ex-expl">
+                        <MnGrammarTermText text={item.explanation} />
+                      </p>
+                    ) : null}
                   </div>
                 )}
               </div>
@@ -953,6 +964,23 @@ export default function ExercisesModule({
           })}
         </div>
       )}
+
+      {!hasAudio && (q.kind === "choice" || q.kind === "tf") && q.script ? (
+        <div className="bs-ex-audiobar">
+          <button
+            type="button"
+            className="bs-txt-play"
+            onClick={() => {
+              stopPronunciation();
+              void speakWithSavedSettings(q.script!, "zh-CN");
+            }}
+            aria-label="Сонсох"
+          >
+            <span aria-hidden>🔊</span> Сонсох
+          </button>
+          <span className="bs-ex-script-hint">Сонсоод хариул (бичвэр хариулсны дараа гарна)</span>
+        </div>
+      ) : null}
 
       {q.kind === "choice" && q.zh && <div className="bs-ex-zh">{q.zh}</div>}
 
@@ -1072,6 +1100,16 @@ export default function ExercisesModule({
                 {q.kind === "tf" && <b>Зөв: {q.answer ? "Үнэн" : "Худал"}</b>}
               </span>
             )}
+            {(q.kind === "choice" || q.kind === "tf") && q.script ? (
+              <p className="bs-ex-script" translate="no">
+                🎧 {q.script}
+              </p>
+            ) : null}
+            {q.explanation ? (
+              <p className="bs-ex-expl">
+                <MnGrammarTermText text={q.explanation} />
+              </p>
+            ) : null}
           </div>
           <QuestionFeedbackButtons
             lessonId={lessonId}

@@ -52,6 +52,18 @@ export function AdminGuard({ children }: Props) {
     [route]
   );
 
+  /** Client (anon key) шалгалт заримдаа буруу «denied»/timeout өгдөг — cookie session-той сервер шалгалтаар давхар баталгаажуулна. */
+  const serverSaysAdmin = useCallback(async (): Promise<boolean> => {
+    try {
+      const res = await fetch("/api/admin/me", { credentials: "same-origin", cache: "no-store" });
+      if (!res.ok) return false;
+      const json = (await res.json()) as { isAdmin?: boolean };
+      return json.isAdmin === true;
+    } catch {
+      return false;
+    }
+  }, []);
+
   const runCheck = useCallback(async () => {
     setState("loading");
     const pathname =
@@ -73,15 +85,27 @@ export function AdminGuard({ children }: Props) {
       }
 
       if (result.timedOut || (result.error && !result.user)) {
+        if (await serverSaysAdmin()) {
+          setState("admin");
+          return;
+        }
         finishWithError(result.error ?? "Auth шалгалт хэт удаж байна", result);
         return;
       }
 
       if (!result.sessionPresent || !result.user) {
+        if (await serverSaysAdmin()) {
+          setState("admin");
+          return;
+        }
         setState("login");
         return;
       }
 
+      if (!result.isAdmin && (await serverSaysAdmin())) {
+        setState("admin");
+        return;
+      }
       setState(result.isAdmin ? "admin" : "denied");
       authDevLog("admin guard check finished", {
         pathname,
@@ -91,9 +115,13 @@ export function AdminGuard({ children }: Props) {
       const message =
         error instanceof Error ? error.message : "Админ эрхийн шалгалт амжилтгүй боллоо";
       authDevLog("admin guard check error", message);
+      if (await serverSaysAdmin()) {
+        setState("admin");
+        return;
+      }
       finishWithError(message);
     }
-  }, [finishWithError]);
+  }, [finishWithError, serverSaysAdmin]);
 
   useEffect(() => {
     void runCheck();
