@@ -88,12 +88,21 @@ function normalizeListeningItem(raw: unknown): Record<string, unknown> | null {
     trim(raw.statement_zh) || trim(raw.statement) || trim(raw.zh) || undefined;
   const options = raw.options;
   const answer = raw.answer;
+  // Тайлбар + сонсголын бичвэр (аудио файлгүй үед TTS) — дамжуулна.
+  const extras: Record<string, unknown> = {};
+  const question_zh = trim(raw.question_zh) || undefined;
+  const script_zh = trim(raw.script_zh) || trim(raw.transcript_zh) || undefined;
+  const explanation_mn = trim(raw.explanation_mn) || trim(raw.explanation) || undefined;
+  if (question_zh) extras.question_zh = question_zh;
+  if (script_zh) extras.script_zh = script_zh;
+  if (explanation_mn) extras.explanation_mn = explanation_mn;
 
   if (options != null && typeof options === "object") {
     const out: Record<string, unknown> = {
       n: Number.isFinite(n) ? n : undefined,
       options,
       answer,
+      ...extras,
     };
     if (audio) out.audio = audio;
     if (statement_zh) out.statement_zh = statement_zh;
@@ -105,13 +114,14 @@ function normalizeListeningItem(raw: unknown): Record<string, unknown> | null {
       n: Number.isFinite(n) ? n : undefined,
       statement_zh,
       answer,
+      ...extras,
     };
     if (audio) out.audio = audio;
     return out;
   }
 
   if (audio && Number.isFinite(n)) {
-    return { n, audio, answer };
+    return { n, audio, answer, ...extras };
   }
 
   return null;
