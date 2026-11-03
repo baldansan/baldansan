@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk6",
+ "lessonId": "hsk6-l04",
+ "hskLevel": 6,
+ "lessonNumber": 4,
+ "lessonProfile": "hsk6-advanced-reading-output-summary",
+ "lessonType": "hsk6-advanced-reading-output-summary",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "完美的胜利",
+ "mongolianTitle": "Төгс ялалт",
+ "source": "HSK Standard Course 6A · 第4课 (сурах бичиг, дасгалын ном; багшийн ном байхгүй)",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (hsk6-l04.json, verified_pages)"
+ }
+}
