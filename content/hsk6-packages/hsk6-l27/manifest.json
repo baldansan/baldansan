@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk6",
+ "lessonId": "hsk6-l27",
+ "hskLevel": 6,
+ "lessonNumber": 27,
+ "lessonProfile": "hsk6-advanced-reading-output-summary",
+ "lessonType": "hsk6-advanced-reading-output-summary",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "完璧归赵",
+ "mongolianTitle": "Хашийг бүрэн бүтнээр нь Жао улсад буцаасан нь",
+ "source": "HSK Standard Course 6B · 第27课 (сурах бичиг, дасгалын ном; багшийн ном байхгүй)",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (hsk6-l27.json, verified_pages)"
+ }
+}
