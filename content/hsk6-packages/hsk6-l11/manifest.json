@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk6",
+ "lessonId": "hsk6-l11",
+ "hskLevel": 6,
+ "lessonNumber": 11,
+ "lessonProfile": "hsk6-advanced-reading-output-summary",
+ "lessonType": "hsk6-advanced-reading-output-summary",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我不在时，猫在干什么",
+ "mongolianTitle": "Намайг гэртээ байхгүй үед муур юу хийдэг вэ?",
+ "source": "HSK Standard Course 6A · 第11课 (сурах бичиг, дасгалын ном; багшийн ном байхгүй)",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (hsk6-l11.json, verified_pages)"
+ }
+}
