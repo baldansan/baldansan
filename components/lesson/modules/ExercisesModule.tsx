@@ -347,7 +347,9 @@ export default function ExercisesModule({
     clearBsExercisesProgress(lessonId, source);
     savedProgressRef.current = null;
     persistReadyRef.current = true;
-    skipResetOnceRef.current = true;
+    // qi аль хэдийн 0 бол [qi] effect ажиллахгүй → skip флаг «үлдэж», дараагийн
+    // алхам руу үсрэхэд reset алгасагдаж сонсголын бүлгийн асуултууд хоосон харагддаг байв.
+    skipResetOnceRef.current = qi !== 0;
     setQi(0);
     setScore(0);
     setDone(false);
