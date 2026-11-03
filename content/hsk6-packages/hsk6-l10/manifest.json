@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk6",
+ "lessonId": "hsk6-l10",
+ "hskLevel": 6,
+ "lessonNumber": 10,
+ "lessonProfile": "hsk6-advanced-reading-output-summary",
+ "lessonType": "hsk6-advanced-reading-output-summary",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "全球化视野中的中国饮食",
+ "mongolianTitle": "Даяарчлалын өнцгөөс харсан Хятадын хоол",
+ "source": "HSK Standard Course 6A · 第10课 (сурах бичиг, дасгалын ном; багшийн ном байхгүй)",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (hsk6-l10.json, verified_pages)"
+ }
+}
