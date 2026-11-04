@@ -62,7 +62,7 @@ export async function POST(request: Request) {
   if (!client) {
     return NextResponse.json({ error: "Supabase client үүсгэж чадсангүй." }, { status: 503 });
   }
-  let body: { bucket?: string; prefix?: string; cursor?: number; batch?: number; dryRun?: boolean } = {};
+  let body: { bucket?: string; prefix?: string; cursor?: number; batch?: number; dryRun?: boolean; force?: boolean } = {};
   try {
     body = (await request.json()) ?? {};
   } catch {
@@ -80,7 +80,9 @@ export async function POST(request: Request) {
   } catch (e) {
     return NextResponse.json({ error: (e as Error).message }, { status: 500 });
   }
-  const pending = all.filter((e) => e.cacheControl !== `max-age=${TARGET}`);
+  // force: storage.objects.metadata-г SQL-ээр зассан бол жагсаалт "шинэчлэгдсэн" гэж харуулдаг ч S3 header хуучин → бүгдийг дахин бичнэ.
+  const force = Boolean(body.force);
+  const pending = force ? all : all.filter((e) => e.cacheControl !== `max-age=${TARGET}`);
   const total = all.length;
 
   if (body.dryRun) {
@@ -106,7 +108,7 @@ export async function POST(request: Request) {
   const done = results.filter((r) => r.ok).length;
   const failed = results.filter((r) => !r.ok);
   // Амжилттай бичигдсэн файлууд дараагийн list-д pending-ээс гарна → cursor нь зөвхөн алдаатайг алгасна.
-  const nextCursor = cursor + failed.length;
+  const nextCursor = force ? cursor + results.length : cursor + failed.length;
   return NextResponse.json({
     ok: failed.length === 0,
     bucket,
@@ -117,7 +119,7 @@ export async function POST(request: Request) {
     done,
     failed,
     nextCursor,
-    remaining: Math.max(0, pending.length - done - cursor),
+    remaining: Math.max(0, pending.length - (force ? cursor + results.length : done + cursor)),
     ms: Date.now() - started,
   });
 }

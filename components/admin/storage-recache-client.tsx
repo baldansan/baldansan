@@ -38,7 +38,7 @@ export function StorageRecacheClient() {
   async function check() {
     setRunning(true);
     for (const bucket of BUCKETS) {
-      const r = await call({ bucket, dryRun: true });
+      const r = await call({ bucket, dryRun: true, force: true });
       push(r.error ? `${bucket}: АЛДАА — ${r.error}` : `${bucket}: нийт ${r.total}, кэш шинэчлэх шаардлагатай ${r.pending}`);
     }
     setRunning(false);
@@ -52,7 +52,7 @@ export function StorageRecacheClient() {
       let cursor = 0;
       for (;;) {
         if (stopRef.current) break;
-        const r = await call({ bucket, cursor, batch: 20 });
+        const r = await call({ bucket, cursor, batch: 20, force: true });
         if (r.error) {
           push(`${bucket}: АЛДАА — ${r.error}`);
           break;
