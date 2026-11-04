@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { isCurrentUserAdminServer } from "@/lib/supabase/admin-server";
 import { createServiceRoleSupabaseClient } from "@/lib/supabase/service-role-server";
+import { createServerSupabaseClient } from "@/lib/supabase/server";
+import type { SupabaseClient } from "@supabase/supabase-js";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -20,7 +22,7 @@ const TIME_BUDGET_MS = 40_000;
 type Entry = { path: string; cacheControl: string | null; size: number };
 
 async function listAll(
-  client: NonNullable<ReturnType<typeof createServiceRoleSupabaseClient>>,
+  client: SupabaseClient,
   bucket: string,
   prefix: string,
   out: Entry[]
@@ -55,12 +57,10 @@ export async function POST(request: Request) {
   if (!(await isCurrentUserAdminServer())) {
     return NextResponse.json({ error: "Admin эрх шаардлагатай." }, { status: 403 });
   }
-  const client = createServiceRoleSupabaseClient();
+  // Service role байвал түүгээр, үгүй бол admin-ийн өөрийн сесс (storage RLS: admin upsert зөвшөөрнө — ZIP импорттой адил).
+  const client = createServiceRoleSupabaseClient() ?? (await createServerSupabaseClient());
   if (!client) {
-    return NextResponse.json(
-      { error: "SUPABASE_SERVICE_ROLE_KEY Vercel env-д тохируулагдаагүй." },
-      { status: 503 }
-    );
+    return NextResponse.json({ error: "Supabase client үүсгэж чадсангүй." }, { status: 503 });
   }
   let body: { bucket?: string; prefix?: string; cursor?: number; batch?: number; dryRun?: boolean } = {};
   try {
