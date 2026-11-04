@@ -89,7 +89,7 @@ export async function uploadPackageMediaFile(
     const { error: uploadError } = await supabase.storage
       .from(LESSON_MEDIA_BUCKET)
       .upload(storagePath, file, {
-        cacheControl: "3600",
+        cacheControl: "31536000",
         upsert: true,
         contentType: media.mimeType,
       });

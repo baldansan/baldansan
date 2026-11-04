@@ -17,6 +17,15 @@ const nextConfig: NextConfig = {
     // «Дуудлага / 发音» — пиньинь самбар, аялгуу хос, үгийн сан-г fs-ээр уншина.
     "/pronunciation/**": ["./public/data/pinyin_chart.json", "./public/data/tone_pairs.json", "./data/hsk_words.json"],
   },
+  // public/ доторх статик зураг, аудио, фонт — Vercel edge дээр 1 жил кэшлэнэ (өмнө нь max-age=0 → хуудас бүрт дахин татдаг байв).
+  async headers() {
+    return [
+      {
+        source: "/:path*.(svg|png|jpg|jpeg|webp|gif|ico|mp3|m4a|ogg|woff|woff2|json)",
+        headers: [{ key: "Cache-Control", value: "public, max-age=86400, s-maxage=31536000, stale-while-revalidate=604800" }],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

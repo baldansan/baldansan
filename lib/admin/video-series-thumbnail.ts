@@ -58,7 +58,7 @@ export async function uploadVideoSeriesThumbnail(
   const { error: uploadError } = await client.storage
     .from(VIDEO_THUMBNAILS_BUCKET)
     .upload(storagePath, buffer, {
-      cacheControl: "3600",
+      cacheControl: "31536000",
       upsert: true,
       contentType: mime,
     });
