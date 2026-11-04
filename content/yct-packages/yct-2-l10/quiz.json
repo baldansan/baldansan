@@ -291,7 +291,7 @@
   "type": "cloze",
   "question": "我脚不疼（ ）。",
   "options": [
-   "吗",
+   "去",
    "手",
    "了",
    "吃"
@@ -423,7 +423,7 @@
    "毛毛虫"
   ],
   "correct_answer": "毛毛虫",
-  "explanation": "我以前是毛毛虫 — өмнө нь хөлт хорхой байсан.",
+  "explanation": "我以前是毛毛虫 — өмнө нь үслэг хорхой байсан.",
   "order_index": 24,
   "id": "yct-2-l10-q24",
   "skillTags": [

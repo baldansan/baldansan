@@ -178,7 +178,7 @@
    {
     "chinese": "我要3个。",
     "pinyin": "Wǒ yào sān ge.",
-    "mongolian": "Надад 3 өгөөч."
+    "mongolian": "Надад гурвыг өгөөч."
    },
    {
     "chinese": "太贵了！",
@@ -234,14 +234,14 @@
    },
    {
     "type": "judge",
-    "question": "«我要3个» гэдэг нь «Надад 3 өгөөч» гэсэн үг.",
+    "question": "«我要3个» гэдэг нь «Надад гурвыг өгөөч» гэсэн үг.",
     "options": [
      "Зөв",
      "Буруу"
     ],
     "answer": "true",
     "explanation_correct_mn": "Зөв! 要 = хүсэх, авах.",
-    "explanation_wrong_mn": "我要3个 = Надад 3 өгөөч."
+    "explanation_wrong_mn": "我要3个 = Надад гурвыг өгөөч."
    }
   ]
  }

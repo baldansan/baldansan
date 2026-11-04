@@ -2,7 +2,7 @@
  {
   "chinese": "包子",
   "pinyin": "bāozi",
-  "mongolian": "бууз (хятадын уураар чанасан бууз)",
+  "mongolian": "бууз (хятад уурын бууз)",
   "notes": "нэр үг · гол үг",
   "exampleChinese": "这个包子真好吃！",
   "examplePinyin": "Zhège bāozi zhēn hǎochī!",
@@ -90,7 +90,7 @@
   "notes": "тэмдэг нэр · нэмэлт үг",
   "exampleChinese": "妹妹漂亮不漂亮？",
   "examplePinyin": "Mèimei piàoliang bu piàoliang?",
-  "exampleMongolian": "Дүү охин минь үзэсгэлэнтэй юү?",
+  "exampleMongolian": "Дүү охин минь сайхан уу?",
   "hskLevel": "YCT 2",
   "keyWord": false,
   "orderIndex": 8

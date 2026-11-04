@@ -193,5 +193,56 @@
   "chars": [
    "huu"
   ]
+ },
+ {
+  "file": "images/w-yiqian.jpg",
+  "aspect": "1:1",
+  "title": "以前",
+  "section": "vocabulary",
+  "prompt": "Split scene: left a small camel calf in a baby-sized outfit, right the same calf now taller with a backpack, arrow showing before and after. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-hanyu.jpg",
+  "aspect": "1:1",
+  "title": "汉语",
+  "section": "vocabulary",
+  "prompt": "Camel teacher with glasses pointing at a blackboard with the Chinese characters 汉语, calf listening. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xuexi.jpg",
+  "aspect": "1:1",
+  "title": "学习",
+  "section": "vocabulary",
+  "prompt": "Camel calf boy at a desk reading a book and writing in a notebook happily. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-yong.jpg",
+  "aspect": "1:1",
+  "title": "用",
+  "section": "vocabulary",
+  "prompt": "Camel calf girl using a spoon to eat soup, hand holding the spoon highlighted. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ban.jpg",
+  "aspect": "1:1",
+  "title": "半",
+  "section": "vocabulary",
+  "prompt": "A round pizza cut in half, calf holding one half with a smile, other half on plate. No English text.",
+  "chars": [
+   "bor"
+  ]
  }
 ]

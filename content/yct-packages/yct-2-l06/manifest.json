@@ -114,6 +114,13 @@
     "section": "vocabulary"
    },
    {
+    "id": "story-book",
+    "file": "images/story.png",
+    "title": "买花 · Mini story (ном)",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
     "id": "t1a",
     "file": "images/t1a.png",
     "title": "Test 1a",

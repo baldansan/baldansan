@@ -133,7 +133,7 @@
   "exercises": [
    {
     "type": "choice",
-    "question": "书包在桌子 ________ 。",
+    "question": "书包在桌子 ________ 。(дээр)",
     "options": [
      "里",
      "上",
@@ -145,7 +145,7 @@
    },
    {
     "type": "choice",
-    "question": "铅笔在书包 ________ 。",
+    "question": "铅笔在书包 ________ 。(дотор)",
     "options": [
      "呢",
      "上",

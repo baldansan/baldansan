@@ -169,6 +169,41 @@
     "section": "vocabulary"
    },
    {
+    "id": "w-yiqian",
+    "file": "images/w-yiqian.jpg",
+    "title": "以前",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hanyu",
+    "file": "images/w-hanyu.jpg",
+    "title": "汉语",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xuexi",
+    "file": "images/w-xuexi.jpg",
+    "title": "学习",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yong",
+    "file": "images/w-yong.jpg",
+    "title": "用",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ban",
+    "file": "images/w-ban.jpg",
+    "title": "半",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
     "id": "t5a",
     "file": "images/t5a.png",
     "title": "Test 5a",

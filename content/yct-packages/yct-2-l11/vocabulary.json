@@ -14,7 +14,7 @@
  {
   "chinese": "点",
   "pinyin": "diǎn",
-  "mongolian": "цаг (цагийн заагч)",
+  "mongolian": "цаг (3 цаг гэх)",
   "notes": "тоолох үг · гол үг",
   "exampleChinese": "三点零五了。",
   "examplePinyin": "Sān diǎn líng wǔ le.",
@@ -110,7 +110,7 @@
  {
   "chinese": "会",
   "pinyin": "huì",
-  "mongolian": "чаддаг, сурсан",
+  "mongolian": "чадна (сурсан учраас)",
   "notes": "үйл үг · гол үг",
   "exampleChinese": "你会用汉语打电话吗？",
   "examplePinyin": "Nǐ huì yòng Hànyǔ dǎ diànhuà ma?",
@@ -180,6 +180,66 @@
   "orderIndex": 15
  },
  {
+  "chinese": "以前",
+  "pinyin": "yǐqián",
+  "mongolian": "өмнө, урьд",
+  "notes": "цаг хугацаа · нэмэлт үг",
+  "exampleChinese": "我比以前漂亮了！",
+  "examplePinyin": "Wǒ bǐ yǐqián piàoliang le!",
+  "exampleMongolian": "Би өмнөхөөсөө хөөрхөн болжээ!",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 16
+ },
+ {
+  "chinese": "汉语",
+  "pinyin": "Hànyǔ",
+  "mongolian": "хятад хэл",
+  "notes": "нэр үг · нэмэлт үг",
+  "exampleChinese": "我喜欢学习汉语。",
+  "examplePinyin": "Wǒ xǐhuan xuéxí Hànyǔ.",
+  "exampleMongolian": "Би хятад хэл сурах дуртай.",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 17
+ },
+ {
+  "chinese": "学习",
+  "pinyin": "xuéxí",
+  "mongolian": "сурах",
+  "notes": "үйл үг · нэмэлт үг",
+  "exampleChinese": "我喜欢学习汉语。",
+  "examplePinyin": "Wǒ xǐhuan xuéxí Hànyǔ.",
+  "exampleMongolian": "Би хятад хэл сурах дуртай.",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 18
+ },
+ {
+  "chinese": "用",
+  "pinyin": "yòng",
+  "mongolian": "ашиглах, -аар",
+  "notes": "үйл үг · нэмэлт үг",
+  "exampleChinese": "我会用汉语打电话了。",
+  "examplePinyin": "Wǒ huì yòng Hànyǔ dǎ diànhuà le.",
+  "exampleMongolian": "Би хятадаар утсаар ярьж чаддаг болсон.",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 19
+ },
+ {
+  "chinese": "半",
+  "pinyin": "bàn",
+  "mongolian": "хагас",
+  "notes": "тоо · нэмэлт үг",
+  "exampleChinese": "晚上，我看半个小时书。",
+  "examplePinyin": "Wǎnshang, wǒ kàn bàn ge xiǎoshí shū.",
+  "exampleMongolian": "Орой би хагас цаг ном уншина.",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 20
+ },
+ {
   "chinese": "运动",
   "pinyin": "yùndòng",
   "mongolian": "спортоор хичээллэх, хөдөлгөөн хийх",
@@ -189,6 +249,6 @@
   "exampleMongolian": "Би аавтайгаа хөдөлгөөн хийнэ.",
   "hskLevel": "YCT 2",
   "keyWord": false,
-  "orderIndex": 16
+  "orderIndex": 21
  }
 ]

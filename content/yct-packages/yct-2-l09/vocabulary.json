@@ -2,7 +2,7 @@
  {
   "chinese": "香蕉",
   "pinyin": "xiāngjiāo",
-  "mongolian": "гадил жимс (банана)",
+  "mongolian": "гадил жимс",
   "notes": "нэр үг · гол үг",
   "exampleChinese": "我吃了一个香蕉。",
   "examplePinyin": "Wǒ chī le yí ge xiāngjiāo.",
@@ -18,7 +18,7 @@
   "notes": "нэр үг · гол үг",
   "exampleChinese": "这只熊猫真漂亮！",
   "examplePinyin": "Zhè zhī xióngmāo zhēn piàoliang!",
-  "exampleMongolian": "Энэ панда үнэхээр сайхан юм!",
+  "exampleMongolian": "Энэ панда үнэхээр хөөрхөн юм!",
   "hskLevel": "YCT 2",
   "keyWord": true,
   "orderIndex": 2
