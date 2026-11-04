@@ -115,7 +115,16 @@ export default async function LessonDetailPage({
               <span className="text-5xl">🧒</span>
               <span>
                 <span className="block text-xl font-extrabold">Хүүхдийн горимоор үзэх</span>
-                <span className="block text-sm font-semibold text-[#6b3f1d]">Видео · зурагт үг · дуу · тоглоом · од ⭐</span>
+                <span className="block text-sm font-semibold text-[#6b3f1d]">Зурагт үг · яриа · дуу · тоглоом · од ⭐</span>
+              </span>
+            </Link>
+          ) : null}
+          {lesson.courseId.startsWith("yct-") ? (
+            <Link href="/kids/pinyin" className="flex items-center gap-4 rounded-[24px] bg-white p-4 text-[#3b2410] shadow-sm ring-1 ring-amber-200 transition hover:shadow-md">
+              <span className="text-4xl">🔤</span>
+              <span>
+                <span className="block text-lg font-extrabold">Дуудлагын суурь</span>
+                <span className="block text-sm font-semibold text-[#6b3f1d]">a o e · bo po mo fo · 4 аялгуу — сонсоод дагаж хэлж, аппаар шалгуул</span>
               </span>
             </Link>
           ) : null}

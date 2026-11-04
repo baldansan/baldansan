@@ -385,6 +385,13 @@ export function KidsLessonPlayer({ data, backHref, adminPreview }: { data: KidsL
             <button type="button" onClick={next} className={`${C.btn} ${C.primary} text-2xl`}>
               Эхэлье! 🚀
             </button>
+            <Link href="/kids/pinyin" className={`${C.card} flex w-full items-center gap-3 p-4 text-left`}>
+              <span className="text-4xl">🔤</span>
+              <span>
+                <span className="block text-lg font-extrabold text-[#2b1a05]">Дуудлагын суурь</span>
+                <span className="block text-sm text-[#6b3f1d]">a o e · bo po mo fo · 4 аялгуу — сонсоод дагаж хэл</span>
+              </span>
+            </Link>
           </div>
         ) : null}
 
