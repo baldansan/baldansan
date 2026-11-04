@@ -1,0 +1,265 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (06-05) сонсоод A, B, C, D-ээс тохирох зургийг сонго.",
+    "audio": "audio/yct-2-06-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）",
+      "script_zh": "A：喝茶吗？ B：好的，谢谢你。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "Яриа «Цай уух уу?» гэж асууж байна. Цай нь B зураг (аяга цай). A хүү ширээн дээр юм хайж сууж байна, C таван юаний мөнгө, D шүхэр."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）",
+      "script_zh": "A：我要买那个绿的。 B：那个红的也很好。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Ногоон нь авъя», «Улаан нь ч сайн» — өнгөт зүйл. D зураг дээр улаан, ногоон шүхэр байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）",
+      "script_zh": "A：姐姐，我们有几块钱？ B：5块。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Бид хэдэн юань байна?» — «5 юань». C зураг дээр 5 юаний дэвсгэрт байна."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）",
+      "script_zh": "A：那是多少钱？ B：我看看，一块、两块……",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Тэр хэд вэ?» — «Харъя, нэг юань, хоёр юань...» гэж мөнгө тоолж байна. A зураг дээр хүү ширээн дээрх жижиг мөнгийг тоолж байна."
+     }
+    ],
+    "answer_source": "Test Answers: 1.B 2.D 3.C 4.A; Listening script (YCT2 х.68/70)"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — зай нөхөх үгийг A, B, C, D-ээс сонго. A 多少 · B 买 · C 块 · D 茶",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "A：你（　）什么？ B：我买苹果。",
+      "question_mn": "Чи юу ______ вэ? — Би алим авна.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "多少",
+       "买",
+       "块",
+       "茶"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Чи юу авах вэ?» — 你买什么. 多少 нь тоо асуух, 块 юань, 茶 цай тул таарахгүй."
+     },
+     {
+      "n": 6,
+      "question_zh": "小朋友，两个5是（　）？ B：是10。",
+      "question_mn": "Хүүхэд ээ, хоёр тав нь ______ вэ? — 10.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "多少",
+       "买",
+       "块",
+       "茶"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Хоёр тав нь хэд вэ?» — 多少. Хариу нь 10."
+     },
+     {
+      "n": 7,
+      "question_zh": "这个铅笔多少钱？ B：三（　）。",
+      "question_mn": "Энэ харандаа хэд вэ? — гурван ______.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "多少",
+       "买",
+       "块",
+       "茶"
+      ],
+      "answer": "C",
+      "explanation_mn": "Үнийн хариу «三块» — гурван юань."
+     },
+     {
+      "n": 8,
+      "question_zh": "请坐，你喝什么？喝（　）？ B：我不喝了。",
+      "question_mn": "Суугаарай, юу уух вэ? ______ уух уу?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "多少",
+       "买",
+       "块",
+       "茶"
+      ],
+      "answer": "D",
+      "explanation_mn": "Ууж болох зүйл — 茶 (цай). «喝茶？» — цай уух уу?"
+     }
+    ],
+    "answer_source": "Test Answers: 5.B 6.A 7.C 8.D"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Асуулт бүрд тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "包子多少钱一个？",
+      "answer": "两块钱一个。",
+      "explanation_mn": "Үнэ асуусан тул «……块钱一个» гэж хариулна."
+     },
+     {
+      "n": 2,
+      "question_zh": "你买什么？",
+      "answer": "我要3个。",
+      "explanation_mn": "Юу авахыг асуусан тул «Надад 3 өгөөч» гэж хариулна."
+     },
+     {
+      "n": 3,
+      "question_zh": "有绿茶吗？",
+      "answer": "有。",
+      "explanation_mn": "Байгаа эсэхийг асуусан — «有» (байна)."
+     }
+    ],
+    "answer_source": "textbook х.29 (Let's read)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Үлгэр «买花» — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你好！你买什么？",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр худалдагч эгч хүүд «Юу авах вэ?» гэж асууж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "玫瑰花多少钱一枝？",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр хүү сарнай барьж үнийг асууж байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "太贵了！昨天5块吧？",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр хүү гараа эрүүндээ тулан үнэтэй гэж бодож байна."
+     }
+    ],
+    "answer_source": "textbook х.31 (Mini story)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ханз бичих — «цай», «мөнгө» гэсэн ханзыг дахин бичиж хуулж үз.",
+    "question_zh": "茶 钱",
+    "answer": "茶 钱",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Дэлгүүрт баозын үнийг асуу.",
+    "question_zh": "包子多少钱一个？",
+    "answer": "包子多少钱一个？",
+    "explanation_mn": "Хосоороо худалдагч, худалдан авагч болж ээлжлэн."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Үнэ хэтэрхий өндөр бол юу гэх вэ?",
+    "question_zh": "太贵了！",
+    "answer": "太贵了！",
+    "explanation_mn": "Гайхсан хоолойгоор хэл."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«你拍一» дууг алга таших хэлбэрээр хэл.",
+    "question_zh": "你拍一，我拍一",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 06-03-ын хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · Test (х.32), Listening Scripts, Test Answers (Lesson 6)"
+}

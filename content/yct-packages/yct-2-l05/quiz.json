@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Бууз» хятадаар аль нь вэ?",
+  "options": [
+   "包子",
+   "妈妈",
+   "医生",
+   "苹果"
+  ],
+  "correct_answer": "包子",
+  "explanation": "包子 (bāozi) = бууз.",
+  "order_index": 1,
+  "id": "yct-2-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эмч» хятадаар аль нь вэ?",
+  "options": [
+   "厨师",
+   "老师",
+   "妈妈",
+   "医生"
+  ],
+  "correct_answer": "医生",
+  "explanation": "医生 (yīshēng) = эмч.",
+  "order_index": 2,
+  "id": "yct-2-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тогооч» хятадаар аль нь вэ?",
+  "options": [
+   "爸爸",
+   "医生",
+   "包子",
+   "厨师"
+  ],
+  "correct_answer": "厨师",
+  "explanation": "厨师 (chúshī) = тогооч.",
+  "order_index": 3,
+  "id": "yct-2-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«会» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хийх",
+   "чадах",
+   "үнэхээр",
+   "амттай"
+  ],
+  "correct_answer": "чадах",
+  "explanation": "会 (huì) = чадах.",
+  "order_index": 4,
+  "id": "yct-2-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«做» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хийх, хоол хийх",
+   "уух",
+   "идэх",
+   "чадах"
+  ],
+  "correct_answer": "хийх, хоол хийх",
+  "explanation": "做 (zuò) = хийх. 做饭 = хоол хийх.",
+  "order_index": 5,
+  "id": "yct-2-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«真» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сайхан",
+   "үнэхээр",
+   "том",
+   "байхгүй"
+  ],
+  "correct_answer": "үнэхээр",
+  "explanation": "真 (zhēn) = үнэхээр.",
+  "order_index": 6,
+  "id": "yct-2-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«好吃» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "том",
+   "амттай",
+   "чадах",
+   "муухай"
+  ],
+  "correct_answer": "амттай",
+  "explanation": "好吃 (hǎochī) = амттай.",
+  "order_index": 7,
+  "id": "yct-2-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«漂亮» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сайхан, үзэсгэлэнтэй",
+   "жижиг",
+   "өндөр",
+   "амттай"
+  ],
+  "correct_answer": "сайхан, үзэсгэлэнтэй",
+  "explanation": "漂亮 (piàoliang) = сайхан, үзэсгэлэнтэй.",
+  "order_index": 8,
+  "id": "yct-2-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи хоол хийж чадах уу?» хятадаар:",
+  "options": [
+   "你会不会做饭？",
+   "这个包子真好吃！",
+   "我要吃包子。",
+   "你妈妈是不是厨师？"
+  ],
+  "correct_answer": "你会不会做饭？",
+  "explanation": "会不会 = чадах уу.",
+  "order_index": 9,
+  "id": "yct-2-l05-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чиний ээж тогооч уу?» хятадаар:",
+  "options": [
+   "我要吃包子。",
+   "你会不会做饭？",
+   "你妈妈是不是厨师？",
+   "这是我妈妈做的。"
+  ],
+  "correct_answer": "你妈妈是不是厨师？",
+  "explanation": "是不是 = мөн үү.",
+  "order_index": 10,
+  "id": "yct-2-l05-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Эгч «我不会做包子» гэвэл тэр юу гэсэн үг вэ?",
+  "options": [
+   "Бууз амттай байна",
+   "Би бууз идмээр байна",
+   "Би эмч",
+   "Би бууз хийж чадахгүй"
+  ],
+  "correct_answer": "Би бууз хийж чадахгүй",
+  "explanation": "不会 = чадахгүй.",
+  "order_index": 11,
+  "id": "yct-2-l05-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т Дэвидийн ээж хэн бэ?",
+  "options": [
+   "姐姐",
+   "老师",
+   "厨师",
+   "医生"
+  ],
+  "correct_answer": "医生",
+  "explanation": "不是，我妈妈是医生 — ээж нь эмч.",
+  "order_index": 12,
+  "id": "yct-2-l05-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ）不会做饭？",
+  "options": [
+   "真",
+   "是",
+   "做",
+   "会"
+  ],
+  "correct_answer": "会",
+  "explanation": "会不会 = чадах уу.",
+  "order_index": 13,
+  "id": "yct-2-l05-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你妈妈（ ）不是厨师？",
+  "options": [
+   "是",
+   "要",
+   "会",
+   "真"
+  ],
+  "correct_answer": "是",
+  "explanation": "是不是 = мөн үү.",
+  "order_index": 14,
+  "id": "yct-2-l05-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个包子（ ）好吃！",
+  "options": [
+   "会",
+   "真",
+   "吗",
+   "做"
+  ],
+  "correct_answer": "真",
+  "explanation": "真好吃 = үнэхээр амттай.",
+  "order_index": 15,
+  "id": "yct-2-l05-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这是我妈妈（ ）的。",
+  "options": [
+   "吃",
+   "做",
+   "会",
+   "是"
+  ],
+  "correct_answer": "做",
+  "explanation": "做 = хийх.",
+  "order_index": 16,
+  "id": "yct-2-l05-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«大不大» гэж асуувал юу гэж асууж байна вэ?",
+  "options": [
+   "Өндөр үү?",
+   "Чадах уу?",
+   "Том уу?",
+   "Амттай юу?"
+  ],
+  "correct_answer": "Том уу?",
+  "explanation": "大不大 = том уу.",
+  "order_index": 17,
+  "id": "yct-2-l05-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«高不高» гэж асуувал юу гэж асууж байна вэ?",
+  "options": [
+   "Авмаар байна уу?",
+   "Мөн үү?",
+   "Том уу?",
+   "Өндөр үү?"
+  ],
+  "correct_answer": "Өндөр үү?",
+  "explanation": "高不高 = өндөр үү.",
+  "order_index": 18,
+  "id": "yct-2-l05-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«要不要» гэж асуувал юу гэж асууж байна вэ?",
+  "options": [
+   "Чадах уу?",
+   "Авмаар байна уу?",
+   "Том уу?",
+   "Мөн үү?"
+  ],
+  "correct_answer": "Авмаар байна уу?",
+  "explanation": "要不要 = авмаар байна уу.",
+  "order_index": 19,
+  "id": "yct-2-l05-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Үгүй, мөн биш» хэлэхдээ:",
+  "options": [
+   "不会",
+   "再见",
+   "没有",
+   "不是"
+  ],
+  "correct_answer": "不是",
+  "explanation": "不是 = мөн биш.",
+  "order_index": 20,
+  "id": "yct-2-l05-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bāozi» гэж уншдаг үг:",
+  "options": [
+   "包子",
+   "医生",
+   "厨师",
+   "好吃"
+  ],
+  "correct_answer": "包子",
+  "explanation": "包子 = bāozi = бууз.",
+  "order_index": 21,
+  "id": "yct-2-l05-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yīshēng» гэж уншдаг үг:",
+  "options": [
+   "厨师",
+   "漂亮",
+   "包子",
+   "医生"
+  ],
+  "correct_answer": "医生",
+  "explanation": "医生 = yīshēng = эмч.",
+  "order_index": 22,
+  "id": "yct-2-l05-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «hǎochī» гэж уншдаг үг:",
+  "options": [
+   "做饭",
+   "好吃",
+   "漂亮",
+   "厨师"
+  ],
+  "correct_answer": "好吃",
+  "explanation": "好吃 = hǎochī = амттай.",
+  "order_index": 23,
+  "id": "yct-2-l05-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你会不会做饭？» гэж асуулаа. Чи хоол хийж чадахгүй бол:",
+  "options": [
+   "是。",
+   "再见。",
+   "会。",
+   "不会。"
+  ],
+  "correct_answer": "不会。",
+  "explanation": "Чадахгүй бол 不会.",
+  "order_index": 24,
+  "id": "yct-2-l05-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Бууз идээд маш амттай санагдлаа. Юу гэх вэ?",
+  "options": [
+   "你妈妈是医生。",
+   "我不会做包子。",
+   "这个包子真好吃！",
+   "你好！"
+  ],
+  "correct_answer": "这个包子真好吃！",
+  "explanation": "真好吃 = үнэхээр амттай.",
+  "order_index": 25,
+  "id": "yct-2-l05-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "丑小鸭 үлгэрт ангаахайг дүү нь муухай гэхэд ээж нь юу гэсэн бэ?",
+  "options": [
+   "我不喜欢她。",
+   "她不漂亮。",
+   "妈妈爱你。",
+   "太冷了。"
+  ],
+  "correct_answer": "妈妈爱你。",
+  "explanation": "Ээж нь «妈妈爱你» — «ээж чамайг хайрладаг» гэсэн.",
+  "order_index": 26,
+  "id": "yct-2-l05-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хамгийн сүүлд хунгууд ангаахайгаас юу гэж асуусан бэ?",
+  "options": [
+   "你要不要吃？",
+   "你会不会飞？",
+   "你会不会做饭？",
+   "你是不是医生？"
+  ],
+  "correct_answer": "你会不会飞？",
+  "explanation": "你会不会飞？ = чи нисч чадах уу.",
+  "order_index": 27,
+  "id": "yct-2-l05-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

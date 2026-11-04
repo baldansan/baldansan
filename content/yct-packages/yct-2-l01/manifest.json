@@ -1,0 +1,173 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-2",
+ "lessonId": "yct-2-l01",
+ "hskLevel": 1,
+ "lessonNumber": 1,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我可以坐这儿吗？",
+ "mongolianTitle": "Би энд суувал болох уу?",
+ "series": "YCT 标准教程 2",
+ "seriesLabel_mn": "YCT 2 — Хүүхдийн хятад хэл (≈HSK1–2)",
+ "source": "YCT 标准教程 2 · 第1课 (сурах бичиг + CD аудио 00-01, 01-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-2-01-text-song.mp3",
+  "dialogues": "audio/yct-2-01-02.mp3",
+  "words": "audio/yct-2-01-01.mp3",
+  "story": "audio/yct-2-01-04.mp3",
+  "song": "audio/yct-2-01-03.mp3",
+  "test": "audio/yct-2-01-05.mp3",
+  "warmup": "audio/yct-2-00-01.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-2-l01",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我可以坐这儿吗？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "warmup",
+    "file": "images/warmup.jpg",
+    "title": "热身",
+    "role": "illustration",
+    "section": "warmup"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你好，我可以坐这儿吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "请不要说话。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "谢谢您 · 对不起",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story-jpg",
+    "file": "images/story.jpg",
+    "title": "灰姑娘",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "灰姑娘 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-keyi",
+    "file": "images/w-keyi.jpg",
+    "title": "可以",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zuo",
+    "file": "images/w-zuo.jpg",
+    "title": "坐",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qing",
+    "file": "images/w-qing.jpg",
+    "title": "请",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bukeqi",
+    "file": "images/w-bukeqi.jpg",
+    "title": "不客气",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-buyao",
+    "file": "images/w-buyao.jpg",
+    "title": "不要",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuohua",
+    "file": "images/w-shuohua.jpg",
+    "title": "说话",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-duibuqi",
+    "file": "images/w-duibuqi.jpg",
+    "title": "对不起",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-meiguanxi",
+    "file": "images/w-meiguanxi.jpg",
+    "title": "没关系",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

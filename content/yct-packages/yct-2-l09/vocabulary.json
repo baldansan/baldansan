@@ -1,0 +1,74 @@
+[
+ {
+  "chinese": "香蕉",
+  "pinyin": "xiāngjiāo",
+  "mongolian": "гадил жимс (банана)",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我吃了一个香蕉。",
+  "examplePinyin": "Wǒ chī le yí ge xiāngjiāo.",
+  "exampleMongolian": "Би нэг гадил жимс идлээ.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "熊猫",
+  "pinyin": "xióngmāo",
+  "mongolian": "панда",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "这只熊猫真漂亮！",
+  "examplePinyin": "Zhè zhī xióngmāo zhēn piàoliang!",
+  "exampleMongolian": "Энэ панда үнэхээр сайхан юм!",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "水果",
+  "pinyin": "shuǐguǒ",
+  "mongolian": "жимс",
+  "notes": "нэр үг · нэмэлт үг",
+  "exampleChinese": "你今天吃水果了吗？",
+  "examplePinyin": "Nǐ jīntiān chī shuǐguǒ le ma?",
+  "exampleMongolian": "Чи өнөөдөр жимс идсэн үү?",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "了",
+  "pinyin": "le",
+  "mongolian": "«…лаа, …сан» — хийж дууссан үйлийг хэлдэг үг",
+  "notes": "туслах үг · гол үг",
+  "exampleChinese": "我吃了。",
+  "examplePinyin": "Wǒ chī le.",
+  "exampleMongolian": "Би идсэн.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "画",
+  "pinyin": "huà",
+  "mongolian": "зурах; зураг",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我画画儿了。",
+  "examplePinyin": "Wǒ huà huàr le.",
+  "exampleMongolian": "Би зураг зурлаа.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "没（有）",
+  "pinyin": "méi(yǒu)",
+  "mongolian": "…гүй, хийгээгүй",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "我没吃香蕉。",
+  "examplePinyin": "Wǒ méi chī xiāngjiāo.",
+  "exampleMongolian": "Би гадил жимс идээгүй.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 6
+ }
+]

@@ -1,0 +1,248 @@
+[
+ {
+  "point": "包子多少钱一个？ — үнэ асуух",
+  "gloss_mn": "«Баоз нэг нь хэд вэ?» — юмны үнийг асууна",
+  "structure": "……多少钱一个？ → ……块钱一个。",
+  "teacher_mn": "Дэлгүүрт юмны үнийг мэдэхийг хүсвэл «多少钱？» гэж асууна. «包子多少钱一个？» — баоз нэг нь хэд вэ? Хариулахдаа «两块钱一个» гэнэ. Юмаа заагаад асуугаад үз!",
+  "teacher_notes": "Номын Key sentences: 包子多少钱一个？两块钱一个。 Мөн 多少钱一杯？ (цай).",
+  "examples": [
+   {
+    "chinese": "包子多少钱一个？",
+    "pinyin": "Bāozi duōshao qián yí ge?",
+    "mongolian": "Баоз нэг нь хэд вэ?"
+   },
+   {
+    "chinese": "两块钱一个。",
+    "pinyin": "Liǎng kuài qián yí ge.",
+    "mongolian": "Нэг нь хоёр юань."
+   },
+   {
+    "chinese": "多少钱一杯？",
+    "pinyin": "Duōshao qián yì bēi?",
+    "mongolian": "Нэг аяга нь хэд вэ?"
+   },
+   {
+    "chinese": "玫瑰花多少钱一枝？",
+    "pinyin": "Méigui huā duōshao qián yì zhī?",
+    "mongolian": "Сарнай нэг иш нь хэд вэ?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "包子钱多少一个？",
+    "right": "包子多少钱一个？",
+    "why": "Дараалал: 多少 → 钱."
+   }
+  ],
+  "check": {
+   "question": "«Баоз нэг нь хэд вэ?» гэж асуу:",
+   "options": [
+    "太贵了！",
+    "你买什么？",
+    "包子多少钱一个？"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "包子 ________ 钱一个？",
+    "options": [
+     "茶",
+     "买",
+     "多少"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 多少 = хэд.",
+    "explanation_wrong_mn": "多少 = хэд, 买 = авах, 茶 = цай."
+   },
+   {
+    "type": "choice",
+    "question": "«Нэг аяга нь хэд вэ?»",
+    "options": [
+     "你买什么？",
+     "多少钱一杯？",
+     "有绿茶吗？"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 杯 = аяга.",
+    "explanation_wrong_mn": "Үнийг асуухдаа 多少钱."
+   },
+   {
+    "type": "judge",
+    "question": "«多少钱？» гэдэг нь «Хэд вэ, үнэ нь хэд вэ?» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 钱 = мөнгө, 多少 = хэд.",
+    "explanation_wrong_mn": "多少钱 нь үнийг асууна."
+   }
+  ]
+ },
+ {
+  "point": "块 — юань, мөнгөний тоо",
+  "gloss_mn": "«юань» гэж хэлэх",
+  "structure": "тоо + 块 (钱)",
+  "teacher_mn": "Хятадад мөнгийг «块» гэж тоолно. 1 юань = «一块», 5 юань = «五块», 50 юань = «五十块». 2 юаниа «两块» гэж хэлдэг. Цаасан мөнгөөр тоолоод үз!",
+  "teacher_notes": "Let's know RMB: 一块 五块 十块 二十块 五十块 一百块. 两 нь 2-ыг тоолох үед.",
+  "examples": [
+   {
+    "chinese": "五块",
+    "pinyin": "wǔ kuài",
+    "mongolian": "5 юань"
+   },
+   {
+    "chinese": "两块钱",
+    "pinyin": "liǎng kuài qián",
+    "mongolian": "2 юань"
+   },
+   {
+    "chinese": "50块。",
+    "pinyin": "Wǔshí kuài.",
+    "mongolian": "50 юань."
+   },
+   {
+    "chinese": "5块钱3个。",
+    "pinyin": "Wǔ kuài qián sān ge.",
+    "mongolian": "Гуравтаа 5 юань."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "二块钱",
+    "right": "两块钱",
+    "why": "2 юаниа 两块 гэж хэлнэ."
+   }
+  ],
+  "check": {
+   "question": "«2 юань» хятадаар:",
+   "options": [
+    "两块钱",
+    "三块钱",
+    "五块钱"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "五 ________ 钱三个。",
+    "options": [
+     "茶",
+     "块",
+     "买"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 块 = юань.",
+    "explanation_wrong_mn": "Мөнгөний нэгж 块."
+   },
+   {
+    "type": "choice",
+    "question": "«50 юань» хятадаар:",
+    "options": [
+     "十块",
+     "五块",
+     "五十块"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 五十 = 50.",
+    "explanation_wrong_mn": "五十 = 50, 五 = 5, 十 = 10."
+   },
+   {
+    "type": "judge",
+    "question": "«两块钱» гэдэг нь «2 юань» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 两 = 2.",
+    "explanation_wrong_mn": "两 = 2."
+   }
+  ]
+ },
+ {
+  "point": "你买什么？ · 太贵了！",
+  "gloss_mn": "«Чи юу авах вэ?» ба «Үнэтэй байна шүү дээ!»",
+  "structure": "你买什么？ → 我要……  ·  太贵了！",
+  "teacher_mn": "Худалдагч «你买什么？» гэж асууна. Чи «我要3个» гэж хариулна. Хэрвээ үнэ хэтэрхий өндөр бол «太贵了！» гэж хэлнэ. Нүдээ томруулж гайхаад хэлээрэй!",
+  "teacher_notes": "买 = авах. 太贵了 — үнэ хэтэрхий өндөр. Яриа 2-т ашиглагдсан.",
+  "examples": [
+   {
+    "chinese": "你买什么？",
+    "pinyin": "Nǐ mǎi shénme?",
+    "mongolian": "Чи юу авах вэ?"
+   },
+   {
+    "chinese": "我要3个。",
+    "pinyin": "Wǒ yào sān ge.",
+    "mongolian": "Надад 3 өгөөч."
+   },
+   {
+    "chinese": "太贵了！",
+    "pinyin": "Tài guì le!",
+    "mongolian": "Үнэтэй байна шүү дээ!"
+   },
+   {
+    "chinese": "有绿茶吗？",
+    "pinyin": "Yǒu lǜchá ma?",
+    "mongolian": "Ногоон цай байна уу?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "你什么买？",
+    "right": "你买什么？",
+    "why": "Дараалал: 买 → 什么."
+   }
+  ],
+  "check": {
+   "question": "Үнэ хэтэрхий өндөр байна. Юу гэх вэ?",
+   "options": [
+    "你买什么？",
+    "谢谢！",
+    "太贵了！"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你 ________ 什么？",
+    "options": [
+     "块",
+     "杯",
+     "买"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 买 = авах.",
+    "explanation_wrong_mn": "买 = авах."
+   },
+   {
+    "type": "choice",
+    "question": "«50 юань!» гайхаж хэлэх үг:",
+    "options": [
+     "谢谢！",
+     "再见！",
+     "太贵了！"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 太贵了 = үнэтэй байна.",
+    "explanation_wrong_mn": "太贵了 = үнэтэй байна шүү дээ."
+   },
+   {
+    "type": "judge",
+    "question": "«我要3个» гэдэг нь «Надад 3 өгөөч» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 要 = хүсэх, авах.",
+    "explanation_wrong_mn": "我要3个 = Надад 3 өгөөч."
+   }
+  ]
+ }
+]

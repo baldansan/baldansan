@@ -1,0 +1,171 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-2",
+ "lessonId": "yct-2-l08",
+ "hskLevel": 1,
+ "lessonNumber": 8,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "马丁比我大三岁。",
+ "mongolianTitle": "Хэн хэнээсээ өндөр, том вэ",
+ "series": "YCT 标准教程 2",
+ "seriesLabel_mn": "YCT 2 — Хүүхдийн хятад хэл (≈HSK1–2)",
+ "source": "YCT 标准教程 2 · 第8课 (сурах бичиг + CD аудио 08-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-2-08-02.mp3",
+  "dialogues": "audio/yct-2-08-02.mp3",
+  "words": "audio/yct-2-08-01.mp3",
+  "story": "audio/yct-2-08-03.mp3",
+  "test": "audio/yct-2-08-04.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-2-l08",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "马丁比我大三岁。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "哥哥比姐姐高",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "这是苏珊",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "比高矮",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-didi",
+    "file": "images/w-didi.jpg",
+    "title": "弟弟",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-meimei",
+    "file": "images/w-meimei.jpg",
+    "title": "妹妹",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-pengyou",
+    "file": "images/w-pengyou.jpg",
+    "title": "朋友",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tongxue",
+    "file": "images/w-tongxue.jpg",
+    "title": "同学",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ye",
+    "file": "images/w-ye.jpg",
+    "title": "也",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xuesheng",
+    "file": "images/w-xuesheng.jpg",
+    "title": "学生",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5a",
+    "file": "images/t5a.png",
+    "title": "Test 5a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5b",
+    "file": "images/t5b.png",
+    "title": "Test 5b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5c",
+    "file": "images/t5c.png",
+    "title": "Test 5c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5d",
+    "file": "images/t5d.png",
+    "title": "Test 5d",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tstory",
+    "file": "images/tstory.png",
+    "title": "Test story",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Босох» хятадаар аль нь вэ?",
+  "options": [
+   "睡觉",
+   "再见",
+   "吃饭",
+   "起床"
+  ],
+  "correct_answer": "起床",
+  "explanation": "起床 (qǐchuáng) = босох.",
+  "order_index": 1,
+  "id": "yct-2-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Унтах» хятадаар аль нь вэ?",
+  "options": [
+   "早上",
+   "晚上",
+   "睡觉",
+   "起床"
+  ],
+  "correct_answer": "睡觉",
+  "explanation": "睡觉 (shuìjiào) = унтах.",
+  "order_index": 2,
+  "id": "yct-2-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Өглөө» хятадаар аль нь вэ?",
+  "options": [
+   "早上",
+   "晚上",
+   "星期",
+   "点"
+  ],
+  "correct_answer": "早上",
+  "explanation": "早上 (zǎoshang) = өглөө.",
+  "order_index": 3,
+  "id": "yct-2-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Орой» хятадаар аль нь вэ?",
+  "options": [
+   "晚上",
+   "早上",
+   "到",
+   "起床"
+  ],
+  "correct_answer": "晚上",
+  "explanation": "晚上 (wǎnshang) = орой.",
+  "order_index": 4,
+  "id": "yct-2-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«点» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өглөө",
+   "унтах",
+   "хүртэл",
+   "цаг"
+  ],
+  "correct_answer": "цаг",
+  "explanation": "点 (diǎn) = цаг. 七点 = долоон цаг.",
+  "order_index": 5,
+  "id": "yct-2-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«到» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "унтах",
+   "босох",
+   "хүртэл",
+   "орой"
+  ],
+  "correct_answer": "хүртэл",
+  "explanation": "到 (dào) = хүртэл. 星期一到星期五 = даваагаас баасан хүртэл.",
+  "order_index": 6,
+  "id": "yct-2-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«要» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өглөө",
+   "хүртэл",
+   "хүсэх, хийх гэж байх",
+   "унтах"
+  ],
+  "correct_answer": "хүсэх, хийх гэж байх",
+  "explanation": "要 (yào) = хүсэх. 我要喝水 — ус уумаар байна.",
+  "order_index": 7,
+  "id": "yct-2-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи өглөө хэд цагт босдог вэ?» хятадаар:",
+  "options": [
+   "快睡觉！",
+   "星期六呢？",
+   "你早上几点起床？",
+   "你要做什么？"
+  ],
+  "correct_answer": "你早上几点起床？",
+  "explanation": "几点 = хэд цаг, 起床 = босох.",
+  "order_index": 8,
+  "id": "yct-2-l02-q08",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«我早上七点起床» гэдэг нь:",
+  "options": [
+   "Би найздаа баяртай гэв",
+   "Би өглөө долоон цагт босдог",
+   "Би орой долоон цагт унтдаг",
+   "Би хоол идэж байна"
+  ],
+  "correct_answer": "Би өглөө долоон цагт босдог",
+  "explanation": "早上 = өглөө, 七点 = долоон цаг, 起床 = босох.",
+  "order_index": 9,
+  "id": "yct-2-l02-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д хүү бямба, ням гарагт хэдэн цагт босдог вэ?",
+  "options": [
+   "7点",
+   "9点",
+   "12点",
+   "6点"
+  ],
+  "correct_answer": "12点",
+  "explanation": "星期六和星期天我12点起床 — арван хоёр цагт.",
+  "order_index": 10,
+  "id": "yct-2-l02-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т хүү юу хийх гэж байна?",
+  "options": [
+   "Загас хэдэн цагт унтахыг харах",
+   "Ус уух",
+   "Сургуульд явах",
+   "Алим идэх"
+  ],
+  "correct_answer": "Загас хэдэн цагт унтахыг харах",
+  "explanation": "我要看小鱼几点睡觉。",
+  "order_index": 11,
+  "id": "yct-2-l02-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你早上几（ ）起床？",
+  "options": [
+   "点",
+   "要",
+   "呢",
+   "到"
+  ],
+  "correct_answer": "点",
+  "explanation": "几点 = хэд цаг.",
+  "order_index": 12,
+  "id": "yct-2-l02-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "星期一（ ）星期五",
+  "options": [
+   "吗",
+   "要",
+   "到",
+   "呢"
+  ],
+  "correct_answer": "到",
+  "explanation": "«Хүртэл» — 到.",
+  "order_index": 13,
+  "id": "yct-2-l02-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我七点起床，你（ ）？",
+  "options": [
+   "呢",
+   "睡觉",
+   "点",
+   "到"
+  ],
+  "correct_answer": "呢",
+  "explanation": "«Харин чи?» — 你呢？",
+  "order_index": 14,
+  "id": "yct-2-l02-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ）做什么？",
+  "options": [
+   "到",
+   "点",
+   "呢",
+   "要"
+  ],
+  "correct_answer": "要",
+  "explanation": "你要做什么？ — Чи юу хийх гэж байна?",
+  "order_index": 15,
+  "id": "yct-2-l02-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天晚上我可以不睡觉（ ）？",
+  "options": [
+   "要",
+   "吗",
+   "到",
+   "呢"
+  ],
+  "correct_answer": "吗",
+  "explanation": "Зөвшөөрөл гуйхад төгсгөлд 吗.",
+  "order_index": 16,
+  "id": "yct-2-l02-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Өглөө нар гарахад ямар үйлийг хийх вэ?",
+  "options": [
+   "呢",
+   "晚上",
+   "睡觉",
+   "起床"
+  ],
+  "correct_answer": "起床",
+  "explanation": "Нар өндөр болохоор босно — 起床.",
+  "order_index": 17,
+  "id": "yct-2-l02-q17",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Орой сар гарахад ямар үйлийг хийх вэ?",
+  "options": [
+   "早上",
+   "到",
+   "起床",
+   "睡觉"
+  ],
+  "correct_answer": "睡觉",
+  "explanation": "Сар өндөр болохоор унтана — 睡觉.",
+  "order_index": 18,
+  "id": "yct-2-l02-q18",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Chant-д «7点啦» гэдэг нь:",
+  "options": [
+   "Арван хоёр цаг боллоо",
+   "Нэг цаг боллоо",
+   "Долоон цаг боллоо",
+   "Есөн цаг боллоо"
+  ],
+  "correct_answer": "Долоон цаг боллоо",
+  "explanation": "7点 = долоон цаг, 啦 = боллоо.",
+  "order_index": 19,
+  "id": "yct-2-l02-q19",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Chant-д «月亮» гэдэг нь юу вэ?",
+  "options": [
+   "цаг",
+   "сар",
+   "нар",
+   "гэр"
+  ],
+  "correct_answer": "сар",
+  "explanation": "月亮 (yuèliang) = сар.",
+  "order_index": 20,
+  "id": "yct-2-l02-q20",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Chant-д «太阳» гэдэг нь юу вэ?",
+  "options": [
+   "орой",
+   "сар",
+   "нар",
+   "өглөө"
+  ],
+  "correct_answer": "нар",
+  "explanation": "太阳 (tàiyáng) = нар.",
+  "order_index": 21,
+  "id": "yct-2-l02-q21",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «qǐchuáng» гэж уншдаг үг:",
+  "options": [
+   "睡觉",
+   "起床",
+   "晚上",
+   "早上"
+  ],
+  "correct_answer": "起床",
+  "explanation": "起床 = qǐchuáng = босох.",
+  "order_index": 22,
+  "id": "yct-2-l02-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shuìjiào» гэж уншдаг үг:",
+  "options": [
+   "中国",
+   "睡觉",
+   "起床",
+   "星期"
+  ],
+  "correct_answer": "睡觉",
+  "explanation": "睡觉 = shuìjiào = унтах.",
+  "order_index": 23,
+  "id": "yct-2-l02-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «wǎnshang» гэж уншдаг үг:",
+  "options": [
+   "晚上",
+   "起床",
+   "吃饭",
+   "早上"
+  ],
+  "correct_answer": "晚上",
+  "explanation": "晚上 = wǎnshang = орой.",
+  "order_index": 24,
+  "id": "yct-2-l02-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «我七点起床，你呢？» гэв. Чи юу гэж хариулах вэ?",
+  "options": [
+   "再见。",
+   "我要苹果。",
+   "星期一到星期五。",
+   "我八点起床。"
+  ],
+  "correct_answer": "我八点起床。",
+  "explanation": "Цаг хэлж хариулна: 我八点起床.",
+  "order_index": 25,
+  "id": "yct-2-l02-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д хэрэм баавгайг босгохыг оролдоход ямаа өвөө юу гэв?",
+  "options": [
+   "Өвөл бүгд өдөр бүр унтдаг",
+   "Баавгай хоол иддэг",
+   "Өнөөдөр бямба гараг",
+   "Баавгай найзтайгаа тоглож байна"
+  ],
+  "correct_answer": "Өвөл бүгд өдөр бүр унтдаг",
+  "explanation": "冬天它们每天睡觉，不起床。",
+  "order_index": 26,
+  "id": "yct-2-l02-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дараах дундаас цагийг заасан үг биш нь:",
+  "options": [
+   "点",
+   "吃",
+   "早上",
+   "晚上"
+  ],
+  "correct_answer": "吃",
+  "explanation": "吃 = идэх. Бусад нь өглөө, орой, цаг.",
+  "order_index": 27,
+  "id": "yct-2-l02-q27",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ }
+]

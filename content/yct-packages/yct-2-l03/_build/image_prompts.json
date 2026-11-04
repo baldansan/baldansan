@@ -1,0 +1,261 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你的铅笔呢？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel Temee and the three young camel calves search a cozy kids' room, a pencil sticking out of a schoolbag on a table, one calf looking puzzled; speech bubble with the Chinese text 你的铅笔呢？ in large clear black font. No English text. ",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "姐姐，你的铅笔呢？",
+  "section": "dialogue",
+  "prompt": "Calf boy and calf girl draw together at a round table; the boy asks with a speech bubble containing the Chinese text 姐姐，你的铅笔呢？ in large clear black font, a pink schoolbag stands on a shelf behind. No English text. ",
+  "chars": [
+   "huu",
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你们看，这是七个小矮人的房间",
+  "section": "dialogue",
+  "prompt": "A princess in a blue-yellow dress shows two calves a tiny cottage room with small beds, a small table and small chairs but no television; speech bubble with the Chinese text 房间里面没有电视。 in large clear black font. No English text. ",
+  "chars": [
+   "bor",
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "上下左右",
+  "section": "song",
+  "prompt": "Teacher camel and calves stand in a row pointing up, down, left and right with their hooves, joyful chant dance in a classroom. No English text. ",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "找东西",
+  "section": "story",
+  "prompt": "A funny home scene: adult camel father searches everywhere for his glasses while the glasses sit on his own nose; adult camel mother laughs, calf boy looks under the sofa for his pencil. No English text. ",
+  "chars": [
+   "huu"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-fangjian.jpg",
+  "aspect": "1:1",
+  "title": "房间",
+  "section": "vocabulary",
+  "prompt": "A cozy child's room with bed, table and chair, calf boy standing in the doorway. No English text.",
+  "chars": [
+   "huu"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-chuang.jpg",
+  "aspect": "1:1",
+  "title": "床",
+  "section": "vocabulary",
+  "prompt": "A calf boy sleeping in a small bed with a blanket. No English text.",
+  "chars": [
+   "huu"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-dianshi.jpg",
+  "aspect": "1:1",
+  "title": "电视",
+  "section": "vocabulary",
+  "prompt": "Calf girl watching a television showing a cartoon sun, sitting on the floor. No English text.",
+  "chars": [
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-zhuozi.jpg",
+  "aspect": "1:1",
+  "title": "桌子",
+  "section": "vocabulary",
+  "prompt": "A wooden table with a calf boy pointing at it happily. No English text.",
+  "chars": [
+   "bor"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-yizi.jpg",
+  "aspect": "1:1",
+  "title": "椅子",
+  "section": "vocabulary",
+  "prompt": "A wooden chair with a calf girl sitting on it. No English text.",
+  "chars": [
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-qianbi.jpg",
+  "aspect": "1:1",
+  "title": "铅笔",
+  "section": "vocabulary",
+  "prompt": "Calf boy holding up a big yellow pencil. No English text.",
+  "chars": [
+   "huu"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-shubao.jpg",
+  "aspect": "1:1",
+  "title": "书包",
+  "section": "vocabulary",
+  "prompt": "Calf boy holding a red schoolbag on his back, smiling. No English text.",
+  "chars": [
+   "huu"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-limian.jpg",
+  "aspect": "1:1",
+  "title": "里面",
+  "section": "vocabulary",
+  "prompt": "A calf peeking out from inside a large cardboard box. No English text.",
+  "chars": [
+   "bor"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-shangbian.jpg",
+  "aspect": "1:1",
+  "title": "上边",
+  "section": "vocabulary",
+  "prompt": "A cat sitting on top of a table, calf pointing up at it. No English text.",
+  "chars": [
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-ai.jpg",
+  "aspect": "1:1",
+  "title": "矮",
+  "section": "vocabulary",
+  "prompt": "A very short little dwarf next to a tall calf, comparing heights. No English text.",
+  "chars": [
+   "bor"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-zai.jpg",
+  "aspect": "1:1",
+  "title": "在",
+  "section": "vocabulary",
+  "prompt": "A calf boy and a schoolbag on a chair, arrow-free, simple scene showing something is located somewhere. No English text.",
+  "chars": [
+   "huu"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-nar.jpg",
+  "aspect": "1:1",
+  "title": "哪儿",
+  "section": "vocabulary",
+  "prompt": "A puzzled calf girl looking around with hand over eyes for a lost toy, question marks floating. No English text.",
+  "chars": [
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-xiabian.jpg",
+  "aspect": "1:1",
+  "title": "下边",
+  "section": "vocabulary",
+  "prompt": "A cat sitting under a table, calf bending down pointing at it. No English text.",
+  "chars": [
+   "bor"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-zuobian.jpg",
+  "aspect": "1:1",
+  "title": "左边",
+  "section": "vocabulary",
+  "prompt": "Calf boy pointing his left hoof to the left where a ball lies. No English text.",
+  "chars": [
+   "huu"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-youbian.jpg",
+  "aspect": "1:1",
+  "title": "右边",
+  "section": "vocabulary",
+  "prompt": "Calf girl pointing her right hoof to the right where a ball lies. No English text.",
+  "chars": [
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-qianbao.jpg",
+  "aspect": "1:1",
+  "title": "钱包",
+  "section": "vocabulary",
+  "prompt": "Adult camel father holding a brown wallet, looking happy. No English text.",
+  "chars": [],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-yanjing.jpg",
+  "aspect": "1:1",
+  "title": "眼镜",
+  "section": "vocabulary",
+  "prompt": "A pair of round glasses on a table beside a calf. No English text.",
+  "chars": [
+   "bor"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-bizi.jpg",
+  "aspect": "1:1",
+  "title": "鼻子",
+  "section": "vocabulary",
+  "prompt": "Calf boy touching his own nose with a hoof, smiling. No English text.",
+  "chars": [
+   "huu"
+  ],
+  "role": "illustration"
+ }
+]

@@ -1,0 +1,105 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你今天做什么了？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses at a table with a bowl of apples and bananas, a yellow camel calf boy holding a crayon drawing and a camel calf girl eating a banana; a speech bubble with the Chinese text 你今天做什么了？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiangjiao.jpg",
+  "aspect": "1:1",
+  "title": "香蕉",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl in a yellow dress happily peeling a big ripe banana. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiongmao.jpg",
+  "aspect": "1:1",
+  "title": "熊猫",
+  "section": "vocabulary",
+  "prompt": "A cute giant panda sitting and chewing a bamboo stalk in a bamboo forest. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-shuiguo.jpg",
+  "aspect": "1:1",
+  "title": "水果",
+  "section": "vocabulary",
+  "prompt": "A basket full of colorful fruit (apples, bananas, oranges, grapes); a yellow camel calf boy smiling beside it. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-le.jpg",
+  "aspect": "1:1",
+  "title": "了",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf boy in a green hat patting his full belly next to an empty plate with a finished apple core, showing 'already ate'. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-hua.jpg",
+  "aspect": "1:1",
+  "title": "画",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl painting a picture of a flower on an easel with a brush and colorful paints. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-mei.jpg",
+  "aspect": "1:1",
+  "title": "没（有）",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy shaking his head with an empty plate in front of him and a banana untouched far away, showing 'did not eat'. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你今天吃水果了吗？",
+  "section": "dialogue",
+  "prompt": "An adult camel mother in a green sweater leaning toward a camel calf girl in a pink dress in a cozy living room; speech bubble with the Chinese text 你今天吃水果了吗？ in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你今天做什么了？",
+  "section": "dialogue",
+  "prompt": "An adult camel father with a briefcase greets a yellow camel calf boy holding a drawing of a spotted puppy, on a green sofa; speech bubble with the Chinese text 你今天做什么了？ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "如果吃了香蕉",
+  "section": "song",
+  "prompt": "Teacher camel with glasses, a camel calf girl and a brown camel calf boy singing in a circle: one clapping hands holding a banana, another stamping a foot, musical notes floating. No English text.",
+  "chars": [
+   "temee",
+   "ohin",
+   "bor"
+  ]
+ }
+]

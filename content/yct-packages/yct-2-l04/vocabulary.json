@@ -1,0 +1,110 @@
+[
+ {
+  "chinese": "红色",
+  "pinyin": "hóngsè",
+  "mongolian": "улаан өнгө",
+  "notes": "нэр үг · өнгө",
+  "exampleChinese": "我的书包是红色的。",
+  "examplePinyin": "Wǒ de shūbāo shì hóngsè de.",
+  "exampleMongolian": "Миний цүнх улаан.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "黄色",
+  "pinyin": "huángsè",
+  "mongolian": "шар өнгө",
+  "notes": "нэр үг · өнгө",
+  "exampleChinese": "一只是黄色的。",
+  "examplePinyin": "Yì zhī shì huángsè de.",
+  "exampleMongolian": "Нэг нь шар.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "绿色",
+  "pinyin": "lǜsè",
+  "mongolian": "ногоон өнгө",
+  "notes": "нэр үг · өнгө",
+  "exampleChinese": "一只是绿色的。",
+  "examplePinyin": "Yì zhī shì lǜsè de.",
+  "exampleMongolian": "Нэг нь ногоон.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "只",
+  "pinyin": "zhī",
+  "mongolian": "муур, шувуу, нүд зэрэг зарим амьтан, биеийн хэсгийг тоолдог үг",
+  "notes": "тоолох үг",
+  "exampleChinese": "一只猫，一只眼睛",
+  "examplePinyin": "Yì zhī māo, yì zhī yǎnjing",
+  "exampleMongolian": "Нэг муур, нэг нүд",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "名字",
+  "pinyin": "míngzi",
+  "mongolian": "нэр",
+  "notes": "нэр үг",
+  "exampleChinese": "我有一只猫，名字叫豆豆。",
+  "examplePinyin": "Wǒ yǒu yì zhī māo, míngzi jiào Dòudou.",
+  "exampleMongolian": "Надад нэг муур бий. Нэр нь Доу-доу.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "漂亮",
+  "pinyin": "piàoliang",
+  "mongolian": "хөөрхөн, гоё",
+  "notes": "тэмдэг нэр",
+  "exampleChinese": "豆豆的眼睛很漂亮。",
+  "examplePinyin": "Dòudou de yǎnjing hěn piàoliang.",
+  "exampleMongolian": "Доу-доугийн нүд маш хөөрхөн.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "颜色",
+  "pinyin": "yánsè",
+  "mongolian": "өнгө",
+  "notes": "нэр үг",
+  "exampleChinese": "你的书包是什么颜色的？",
+  "examplePinyin": "Nǐ de shūbāo shì shénme yánsè de?",
+  "exampleMongolian": "Чиний цүнх ямар өнгөтэй вэ?",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "两",
+  "pinyin": "liǎng",
+  "mongolian": "хоёр (юм тоолохдоо)",
+  "notes": "тоо",
+  "exampleChinese": "两个苹果",
+  "examplePinyin": "Liǎng ge píngguǒ",
+  "exampleMongolian": "Хоёр алим",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 8
+ },
+ {
+  "chinese": "本",
+  "pinyin": "běn",
+  "mongolian": "ном тоолдог үг",
+  "notes": "тоолох үг · нэмэлт үг",
+  "exampleChinese": "书包里有两本书。",
+  "examplePinyin": "Shūbāo li yǒu liǎng běn shū.",
+  "exampleMongolian": "Цүнхэнд хоёр ном байна.",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 9
+ }
+]

@@ -1,0 +1,206 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-2",
+ "lessonId": "yct-2-l11",
+ "hskLevel": 1,
+ "lessonNumber": 11,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我来北京一年了。",
+ "mongolianTitle": "Цаг хэд вэ, Бээжинд нэг жил",
+ "series": "YCT 标准教程 2",
+ "seriesLabel_mn": "YCT 2 — Хүүхдийн хятад хэл (≈HSK1–2)",
+ "source": "YCT 标准教程 2 · 第11课 (сурах бичиг + CD аудио 11-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-2-11-02.mp3",
+  "dialogues": "audio/yct-2-11-02.mp3",
+  "words": "audio/yct-2-11-01.mp3",
+  "story": "audio/yct-2-11-03.mp3",
+  "test": "audio/yct-2-11-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-2-l11",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我来北京一年了。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "妈妈，几点了？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "我和爸爸妈妈来北京一年了。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "我的星期天 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-xianzai",
+    "file": "images/w-xianzai.jpg",
+    "title": "现在",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dian",
+    "file": "images/w-dian.jpg",
+    "title": "点",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ling",
+    "file": "images/w-ling.jpg",
+    "title": "零",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-fenzhong",
+    "file": "images/w-fenzhong.jpg",
+    "title": "分钟",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiaoshi",
+    "file": "images/w-xiaoshi.jpg",
+    "title": "小时",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nian",
+    "file": "images/w-nian.jpg",
+    "title": "年",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lai",
+    "file": "images/w-lai.jpg",
+    "title": "来",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-beijing",
+    "file": "images/w-beijing.jpg",
+    "title": "北京",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dadianhua",
+    "file": "images/w-dadianhua.jpg",
+    "title": "打电话",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hui",
+    "file": "images/w-hui.jpg",
+    "title": "会",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-piaoliang",
+    "file": "images/w-piaoliang.jpg",
+    "title": "漂亮",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zaoshang",
+    "file": "images/w-zaoshang.jpg",
+    "title": "早上",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhongwu",
+    "file": "images/w-zhongwu.jpg",
+    "title": "中午",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiawu",
+    "file": "images/w-xiawu.jpg",
+    "title": "下午",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wanshang",
+    "file": "images/w-wanshang.jpg",
+    "title": "晚上",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yundong",
+    "file": "images/w-yundong.jpg",
+    "title": "运动",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t5a",
+    "file": "images/t5a.png",
+    "title": "Test 5a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5b",
+    "file": "images/t5b.png",
+    "title": "Test 5b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5c",
+    "file": "images/t5c.png",
+    "title": "Test 5c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5d",
+    "file": "images/t5d.png",
+    "title": "Test 5d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (brief; зурагтай тулгасан)",
+  "textStatus": "source_verified (х.54,56,57); Let's learn (х.53) байхгүй тул үгийн сан хуудас+Vocabulary list-ээс сонгосон",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

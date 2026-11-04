@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Хөл» хятадаар аль нь вэ?",
+  "options": [
+   "脚",
+   "学校",
+   "手",
+   "医院"
+  ],
+  "correct_answer": "脚",
+  "explanation": "脚 (jiǎo) = хөл.",
+  "order_index": 1,
+  "id": "yct-2-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Гар» хятадаар аль нь вэ?",
+  "options": [
+   "脚",
+   "医生",
+   "老师",
+   "手"
+  ],
+  "correct_answer": "手",
+  "explanation": "手 (shǒu) = гар.",
+  "order_index": 2,
+  "id": "yct-2-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эмнэлэг» хятадаар аль нь вэ?",
+  "options": [
+   "起床",
+   "学校",
+   "医生",
+   "医院"
+  ],
+  "correct_answer": "医院",
+  "explanation": "医院 (yīyuàn) = эмнэлэг.",
+  "order_index": 3,
+  "id": "yct-2-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эмч» хятадаар аль нь вэ?",
+  "options": [
+   "妈妈",
+   "医生",
+   "医院",
+   "老师"
+  ],
+  "correct_answer": "医生",
+  "explanation": "医生 (yīshēng) = эмч.",
+  "order_index": 4,
+  "id": "yct-2-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«疼» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өвдөх",
+   "явах",
+   "идэх",
+   "босох"
+  ],
+  "correct_answer": "өвдөх",
+  "explanation": "疼 (téng) = өвдөх.",
+  "order_index": 5,
+  "id": "yct-2-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«起床» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эмч үзэх",
+   "орноосоо босох",
+   "сүү уух",
+   "сургууль явах"
+  ],
+  "correct_answer": "орноосоо босох",
+  "explanation": "起床 (qǐchuáng) = орноосоо босох.",
+  "order_index": 6,
+  "id": "yct-2-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«怎么了» гэдэг хэллэг ямар утгатай вэ?",
+  "options": [
+   "өвдөхгүй",
+   "яасан бэ",
+   "баяртай",
+   "байхгүй"
+  ],
+  "correct_answer": "яасан бэ",
+  "explanation": "你怎么了？ = Чи яасан бэ?",
+  "order_index": 7,
+  "id": "yct-2-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи яасан бэ?» хятадаар:",
+  "options": [
+   "你怎么了？",
+   "你好吗？",
+   "你叫什么？",
+   "你去哪儿？"
+  ],
+  "correct_answer": "你怎么了？",
+  "explanation": "怎么了 = яасан бэ.",
+  "order_index": 8,
+  "id": "yct-2-l10-q08",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你怎么了？» гэж асуувал юу гэж хариулах вэ (хөл өвдөж байвал)?",
+  "options": [
+   "我脚疼。",
+   "再见。",
+   "谢谢。",
+   "我去学校。"
+  ],
+  "correct_answer": "我脚疼。",
+  "explanation": "Хөл өвдөж байгаа тул 我脚疼.",
+  "order_index": 9,
+  "id": "yct-2-l10-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Мин-мин ээждээ «Миний хөл өвдөж байна» гэж хэлэхдээ:",
+  "options": [
+   "我吃了！",
+   "我手疼！",
+   "我脚疼！",
+   "我不去！"
+  ],
+  "correct_answer": "我脚疼！",
+  "explanation": "Яриа 1 — 我脚疼！",
+  "order_index": 10,
+  "id": "yct-2-l10-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Миний хөл өвдөхгүй боллоо» хятадаар:",
+  "options": [
+   "我手疼。",
+   "我脚疼。",
+   "我不去了。",
+   "我脚不疼了。"
+  ],
+  "correct_answer": "我脚不疼了。",
+  "explanation": "不 + 疼 + 了 = өвдөхгүй боллоо.",
+  "order_index": 11,
+  "id": "yct-2-l10-q11",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би идэхгүй боллоо» хятадаар:",
+  "options": [
+   "我去吃。",
+   "我喝茶。",
+   "我吃饭。",
+   "我不吃了。"
+  ],
+  "correct_answer": "我不吃了。",
+  "explanation": "不吃了 = идэхгүй боллоо.",
+  "order_index": 12,
+  "id": "yct-2-l10-q12",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Гэрт сүү дуусчээ» хятадаар:",
+  "options": [
+   "我喝牛奶。",
+   "家里有牛奶。",
+   "牛奶好喝。",
+   "家里没有牛奶了。"
+  ],
+  "correct_answer": "家里没有牛奶了。",
+  "explanation": "没有……了 = дууссан, байхгүй болсон.",
+  "order_index": 13,
+  "id": "yct-2-l10-q13",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ）了？",
+  "options": [
+   "怎么",
+   "手",
+   "医院",
+   "学校"
+  ],
+  "correct_answer": "怎么",
+  "explanation": "你怎么了？",
+  "order_index": 14,
+  "id": "yct-2-l10-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我脚（ ）。",
+  "options": [
+   "医院",
+   "疼",
+   "妈妈",
+   "学校"
+  ],
+  "correct_answer": "疼",
+  "explanation": "我脚疼 — хөл өвдөнө.",
+  "order_index": 15,
+  "id": "yct-2-l10-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们去（ ）看医生。",
+  "options": [
+   "手",
+   "医院",
+   "疼",
+   "脚"
+  ],
+  "correct_answer": "医院",
+  "explanation": "Эмч эмнэлэгт байдаг.",
+  "order_index": 16,
+  "id": "yct-2-l10-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我脚不疼（ ）。",
+  "options": [
+   "吗",
+   "手",
+   "了",
+   "吃"
+  ],
+  "correct_answer": "了",
+  "explanation": "不疼了 — өвдөхгүй боллоо.",
+  "order_index": 17,
+  "id": "yct-2-l10-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不去医院，我去（ ）。",
+  "options": [
+   "疼",
+   "怎么",
+   "脚",
+   "学校"
+  ],
+  "correct_answer": "学校",
+  "explanation": "Мин-мин эмнэлэг явахгүй, сургууль явна.",
+  "order_index": 18,
+  "id": "yct-2-l10-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Мин-мин өглөө юу гэж хэлэв?",
+  "options": [
+   "我去医院了",
+   "今天不去学校了",
+   "我吃了",
+   "今天去学校了"
+  ],
+  "correct_answer": "今天不去学校了",
+  "explanation": "Яриа 1: 我今天不去学校了，可以吗？",
+  "order_index": 19,
+  "id": "yct-2-l10-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Мин-мин яагаад эмнэлэг явахгүй гэв?",
+  "options": [
+   "Эмч дургүй",
+   "Сүү байхгүй",
+   "Сургууль байхгүй",
+   "Хөл нь өвдөхөө больсон"
+  ],
+  "correct_answer": "Хөл нь өвдөхөө больсон",
+  "explanation": "Яриа 2: 不疼了！",
+  "order_index": 20,
+  "id": "yct-2-l10-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jiǎo» гэж уншдаг үг:",
+  "options": [
+   "脚",
+   "手",
+   "疼",
+   "医"
+  ],
+  "correct_answer": "脚",
+  "explanation": "脚 = jiǎo = хөл.",
+  "order_index": 21,
+  "id": "yct-2-l10-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yīyuàn» гэж уншдаг үг:",
+  "options": [
+   "学校",
+   "起床",
+   "医生",
+   "医院"
+  ],
+  "correct_answer": "医院",
+  "explanation": "医院 = yīyuàn = эмнэлэг.",
+  "order_index": 22,
+  "id": "yct-2-l10-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shǒu» гэж уншдаг үг:",
+  "options": [
+   "去",
+   "手",
+   "脚",
+   "疼"
+  ],
+  "correct_answer": "手",
+  "explanation": "手 = shǒu = гар.",
+  "order_index": 23,
+  "id": "yct-2-l10-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д эрвээхэй өмнө нь юу байсан бэ?",
+  "options": [
+   "蚂蚁",
+   "医生",
+   "蜜蜂",
+   "毛毛虫"
+  ],
+  "correct_answer": "毛毛虫",
+  "explanation": "我以前是毛毛虫 — өмнө нь хөлт хорхой байсан.",
+  "order_index": 24,
+  "id": "yct-2-l10-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д «你会飞了！» гэж хэн хэлэв?",
+  "options": [
+   "医生",
+   "蝴蝶",
+   "蚂蚁",
+   "妈妈"
+  ],
+  "correct_answer": "蚂蚁",
+  "explanation": "3-р зураг: шоргоолж «Чи нисдэг боллоо!» гэв.",
+  "order_index": 25,
+  "id": "yct-2-l10-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь гараа барьж гунигтай байна. Юу гэж асуух вэ?",
+  "options": [
+   "再见。",
+   "你去学校吗？",
+   "你怎么了？",
+   "我喝茶。"
+  ],
+  "correct_answer": "你怎么了？",
+  "explanation": "Гунигтай найзаасаа «你怎么了？» гэж асууна.",
+  "order_index": 26,
+  "id": "yct-2-l10-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Өвдөхөө больсон бол юу гэх вэ?",
+  "options": [
+   "怎么了？",
+   "不疼了！",
+   "疼！",
+   "我去医院。"
+  ],
+  "correct_answer": "不疼了！",
+  "explanation": "Өвдөхөө больсон = 不疼了.",
+  "order_index": 27,
+  "id": "yct-2-l10-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дараах дундаас биеийн хэсэг нь:",
+  "options": [
+   "医院",
+   "脚",
+   "学校",
+   "妈妈"
+  ],
+  "correct_answer": "脚",
+  "explanation": "脚 = хөл, бусад нь хүн/газар.",
+  "order_index": 28,
+  "id": "yct-2-l10-q28",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ }
+]

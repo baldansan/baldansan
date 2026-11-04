@@ -1,0 +1,243 @@
+[
+ {
+  "point": "你会不会做饭？ — чадах уу",
+  "gloss_mn": "«Чи хоол хийж чадах уу?» — чадах эсэхийг асууна",
+  "structure": "你会不会 + юу хийх？ → 会。/ 不会。",
+  "teacher_mn": "Найзаасаа хийж чадах эсэхийг нь асуумаар байвал «会不会» гэж хэлнэ. 会 = чадна. Чадахгүй бол «不会» гэнэ. «你会不会做饭？» — чи хоол хийж чадах уу? Гараа даллаад «会！» эсвэл «不会！» гэж хариулж үз.",
+  "teacher_notes": "Номын яриа: 姐姐，你会不会做饭？ 会。 … 我不会做包子。 不会-д 不 нь «bú» гэж уншигдана.",
+  "examples": [
+   {
+    "chinese": "你会不会做饭？",
+    "pinyin": "Nǐ huì bu huì zuò fàn?",
+    "mongolian": "Чи хоол хийж чадах уу?"
+   },
+   {
+    "chinese": "会。你要吃什么？",
+    "pinyin": "Huì. Nǐ yào chī shénme?",
+    "mongolian": "Чадна. Чи юу идмээр байна?"
+   },
+   {
+    "chinese": "我不会做包子。",
+    "pinyin": "Wǒ bú huì zuò bāozi.",
+    "mongolian": "Би бууз хийж чадахгүй."
+   },
+   {
+    "chinese": "你会不会飞？",
+    "pinyin": "Nǐ huì bu huì fēi?",
+    "mongolian": "Чи нисч чадах уу?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我不会做包子吗？",
+    "right": "我不会做包子。",
+    "why": "Хариулахдаа асуулт болгож 吗 нэмэхгүй."
+   }
+  ],
+  "check": {
+   "question": "Найзаасаа «Чи хоол хийж чадах уу?» гэж асуу:",
+   "options": [
+    "这个包子真好吃！",
+    "你妈妈是不是厨师？",
+    "你会不会做饭？"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你 ________ 做饭？",
+    "options": [
+     "大不大",
+     "是不是",
+     "会不会"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 会不会 = чадах уу.",
+    "explanation_wrong_mn": "会不会 = чадах уу, 是不是 = мөн үү, 大不大 = том уу."
+   },
+   {
+    "type": "choice",
+    "question": "«Би чадахгүй» хятадаар:",
+    "options": [
+     "会",
+     "不会",
+     "是"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 不会 = чадахгүй.",
+    "explanation_wrong_mn": "会 = чадна, 不会 = чадахгүй."
+   },
+   {
+    "type": "judge",
+    "question": "«会» гэдэг нь «чадах» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 会 = чадах.",
+    "explanation_wrong_mn": "会 = чадах."
+   }
+  ]
+ },
+ {
+  "point": "你妈妈是不是厨师？ — мөн үү",
+  "gloss_mn": "«Чиний ээж тогооч уу?» — мөн үү, биш үү",
+  "structure": "你妈妈是不是 + хэн？ → 是。/ 不是，……",
+  "teacher_mn": "Хэн болохыг нь лавлахдаа «是不是» гэнэ. 是 = мөн. «你妈妈是不是厨师？» — чиний ээж тогооч уу? Мөн бол «是», биш бол «不是» гэж хэлээд зөв хариултыг нэм: «不是，我妈妈是医生».",
+  "teacher_notes": "Номын яриа 2: 你妈妈是不是厨师？ 不是，我妈妈是医生。",
+  "examples": [
+   {
+    "chinese": "你妈妈是不是厨师？",
+    "pinyin": "Nǐ māma shì bu shì chúshī?",
+    "mongolian": "Чиний ээж тогооч уу?"
+   },
+   {
+    "chinese": "不是，我妈妈是医生。",
+    "pinyin": "Bú shì, wǒ māma shì yīshēng.",
+    "mongolian": "Үгүй, миний ээж эмч."
+   },
+   {
+    "chinese": "他妈妈是不是医生？",
+    "pinyin": "Tā māma shì bu shì yīshēng?",
+    "mongolian": "Түүний ээж эмч үү?"
+   },
+   {
+    "chinese": "这是我妈妈做的。",
+    "pinyin": "Zhè shì wǒ māma zuò de.",
+    "mongolian": "Энийг миний ээж хийсэн."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "你妈妈是厨师不是？",
+    "right": "你妈妈是不是厨师？",
+    "why": "是不是 нь ажлын нэрийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Чиний ээж эмч үү?» хятадаар:",
+   "options": [
+    "你妈妈是不是医生？",
+    "你会不会做饭？",
+    "我要吃包子。"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你爸爸 ________ 医生？",
+    "options": [
+     "会不会",
+     "是不是",
+     "要不要"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 是不是 = мөн үү.",
+    "explanation_wrong_mn": "Ажил, хэн болохыг лавлахад 是不是."
+   },
+   {
+    "type": "choice",
+    "question": "«Үгүй, миний ээж эмч» хятадаар:",
+    "options": [
+     "我要吃包子。",
+     "会。",
+     "不是，我妈妈是医生。"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "不是 = үгүй, мөн биш."
+   },
+   {
+    "type": "judge",
+    "question": "«医生» гэдэг нь «эмч» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 医生 = эмч.",
+    "explanation_wrong_mn": "医生 = эмч, 厨师 = тогооч."
+   }
+  ]
+ },
+ {
+  "point": "大不大 · 漂亮不漂亮 · 要不要",
+  "gloss_mn": "«…уу, үгүй юу?» — тэмдэг нэр ба үйл үгээр асуух",
+  "structure": "A不A？ → 大不大？ 高不高？ 要不要？",
+  "teacher_mn": "Тэмдэг нэрээ хоёр удаа хэлж, дунд нь «不» тавивал асуулт болно. 大不大 — том уу? 高不高 — өндөр үү? 要不要 — авмаар байна уу? Алимаа барьж асуугаад үз!",
+  "teacher_notes": "Let's match: 是不是 会不会 要不要 高不高 大不大 漂亮不漂亮. Бүгд ижил бүтэцтэй.",
+  "examples": [
+   {
+    "chinese": "这个苹果大不大？",
+    "pinyin": "Zhège píngguǒ dà bu dà?",
+    "mongolian": "Энэ алим том уу?"
+   },
+   {
+    "chinese": "妹妹漂亮不漂亮？",
+    "pinyin": "Mèimei piàoliang bu piàoliang?",
+    "mongolian": "Дүү охин минь сайхан уу?"
+   },
+   {
+    "chinese": "你要不要喝牛奶？",
+    "pinyin": "Nǐ yào bu yào hē niúnǎi?",
+    "mongolian": "Чи сүү уумаар байна уу?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "这个苹果大大不？",
+    "right": "这个苹果大不大？",
+    "why": "Дараалал: том → 不 → том."
+   }
+  ],
+  "check": {
+   "question": "«Энэ алим том уу?» хятадаар:",
+   "options": [
+    "这个苹果真好吃！",
+    "你会不会做饭？",
+    "这个苹果大不大？"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你的手 ________ ？",
+    "options": [
+     "会不会",
+     "是不是",
+     "大不大"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 大不大 = том уу.",
+    "explanation_wrong_mn": "Том уу гэж асуухад 大不大."
+   },
+   {
+    "type": "choice",
+    "question": "她的个子 ________ ？",
+    "options": [
+     "要不要",
+     "会不会",
+     "高不高"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 高不高 = өндөр үү.",
+    "explanation_wrong_mn": "个子 өндөр үү гэж 高不高."
+   },
+   {
+    "type": "judge",
+    "question": "«要不要» гэдэг нь «авмаар байна уу?» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "要 = авмаар байх, хүсэх."
+   }
+  ]
+ }
+]

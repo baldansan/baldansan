@@ -1,0 +1,269 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (02-05) сонсоод тохирох зургийг A, B, C-ээс сонго.",
+    "audio": "audio/yct-2-02-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）你明天几点去学校？",
+      "script_zh": "A：你明天几点去学校？B：9点。",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "Хариулт нь «9点» — есөн цаг. B цагны зүү 9-д зогсож байна. A зургийн цаг 6 цаг, C нь 12 цаг."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）今天晚上我们吃什么？",
+      "script_zh": "A：今天晚上我们吃什么？B：吃米饭可以吗？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "Хариулт нь «吃米饭» — будаа идье. C зураг дээр будаа байна. A алим, B уураар жигнэсэн боов."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）再见！我们星期四见！",
+      "script_zh": "A：再见！B：再见！我们星期四见！",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t3a.png",
+       "images/t3b.png",
+       "images/t3c.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Баяртай!» гэж салах үед гараа даллана. B зураг дээр хүү цүнхээ үүрээд гараа даллаж байна. A дуран барьж байна, C эрхий хуруугаа өргөсөн."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）爸爸，星期一我可以不去学校吗？",
+      "script_zh": "A：爸爸，星期一我可以不去学校吗？B：不可以。",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t4a.png",
+       "images/t4b.png",
+       "images/t4c.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "Аав «不可以» — болохгүй гэв. B зураг дээр эр гараа тавьж «болохгүй» гэж харуулж байна. A «за» гэсэн дохио, C эрхий хуруу — «сайн»."
+     }
+    ],
+    "answer_source": "Test Answers: 1B 2C 3B 4B; Listening script (брэнд хураангуй)"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — яриа бүрд тохирох зургийг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "我晚上9点睡觉，你呢？ — 我10点多睡觉。",
+      "question_mn": "Орой унтах цагаа ярилцаж байна",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "Хоёулаа хэд цагт унтахаа ярьж байна — цаг барьсан D зураг таарна. A босож байна, B алим барьсан, C хоёр хуруу."
+     },
+     {
+      "n": 6,
+      "question_zh": "你要吃苹果吗？ — 不吃，谢谢！",
+      "question_mn": "Алим идэх үү? Үгүй, баярлалаа",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Алим идэх үү?» гэсэн ярианд алим барьсан охин B таарна. A унтаж босож буй охин, C хоёр хуруу, D цаг."
+     },
+     {
+      "n": 7,
+      "question_zh": "你早上几点起床？ — 7点。",
+      "question_mn": "Өглөө хэд цагт босдог вэ?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "Босох тухай яриа — A зураг дээр охин орон дээр гараа өргөн сэрж байна. B алим, C хоёр хуруу, D цаг."
+     },
+     {
+      "n": 8,
+      "question_zh": "你星期几去中国？ — 星期二。",
+      "question_mn": "Даваа, мягмар гарагийн тухай",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "Хариулт «星期二» — мягмар гараг, тоо «2». C зураг дээр хоёр хуруу байна. Бусад зураг босох, алим, цагтай холбоотой."
+     }
+    ],
+    "answer_source": "Test Answers: 5D 6B 7A 8C"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Асуулт бүрд тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你早上几点起床？",
+      "answer": "星期一到星期五我7点起床。",
+      "explanation_mn": "Хэд цагт босохыг асуусан тул цагаа хэлнэ."
+     },
+     {
+      "n": 2,
+      "question_zh": "今天晚上我可以不睡觉吗？",
+      "answer": "你要做什么？",
+      "explanation_mn": "Ээж «чи юу хийх гэж байна?» гэж асууна."
+     },
+     {
+      "n": 3,
+      "question_zh": "星期六和星期天呢？",
+      "answer": "星期六和星期天我12点起床。",
+      "explanation_mn": "呢-ээр үргэлжлүүлсэн асуултад арван хоёр цагт босдгоо хэлнэ."
+     }
+    ],
+    "answer_source": "textbook х.9 (Let's read)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Үлгэр — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "妈妈，我要和朋友们出去玩！",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр бяцхан хэрэм ээждээ найзуудтайгаа гадаа тоглохоор явна гэж хэлж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "你们在哪儿？快出来玩吧！",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр хэрэм цас бүхий ойд найзуудаа дуудаж байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "大熊哥哥，你今天怎么不起床？",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр хэрэм баавгайн мод байшингийн өмнө зогсож байна."
+     },
+     {
+      "n": 4,
+      "question_zh": "青蛙弟弟，你今天怎么不起床？",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр хэрэм мэлхийг дуудаж байна."
+     },
+     {
+      "n": 5,
+      "question_zh": "冬天它们每天睡觉，不起床。",
+      "answer": "5",
+      "explanation_mn": "5-р зураг дээр ямаа өвөө хэрэмд өвөл бүгд унтдаг гэж тайлбарлаж байна."
+     }
+    ],
+    "answer_source": "textbook х.11 (Mini story)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Let's make — «Миний хуваарь» хүснэгтийг бөглө. Ням, даваа–баасан, бямба гаригт босох, хоол идэх, сургуульд явах, унтах цагаа бич.",
+    "question_zh": "星期天 · 星期一到星期五 · 星期六",
+    "answer": "(нээлттэй) жишээ: 7点",
+    "explanation_mn": "Цагаа тоогоор бичээд хажууд нь 点 нэм. Найзынхаа хуваартай харьцуул."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Босдог цагаа хятадаар хэл.",
+    "question_zh": "我早上……点起床。",
+    "answer": "我早上……点起床",
+    "explanation_mn": "Өөрийн цагаа хэл."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Найзаасаа хэд цагт босдгийг нь асуу.",
+    "question_zh": "你早上几点起床？",
+    "answer": "你早上几点起床？",
+    "explanation_mn": "Хосоороо ээлжлэн. Хариулсны дараа «你呢？» гэж асуу."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«快快起床» дууг хөдөлгөөнтэй хэл.",
+    "question_zh": "快快起床",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 02-03-ын хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · х.12 Test (Lesson 2); хариу 1B 2C 3B 4B 5D 6B 7A 8C"
+}

@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Болно, чадна» хятадаар аль нь вэ?",
+  "options": [
+   "可以",
+   "不要",
+   "对不起",
+   "没关系"
+  ],
+  "correct_answer": "可以",
+  "explanation": "可以 (kěyǐ) = болно.",
+  "order_index": 1,
+  "id": "yct-2-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Суух» хятадаар аль нь вэ?",
+  "options": [
+   "请",
+   "说话",
+   "去",
+   "坐"
+  ],
+  "correct_answer": "坐",
+  "explanation": "坐 (zuò) = суух.",
+  "order_index": 2,
+  "id": "yct-2-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«请» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "ярих",
+   "баярлалаа",
+   "уучлаарай",
+   "гуйя, ...аарай"
+  ],
+  "correct_answer": "гуйя, ...аарай",
+  "explanation": "请 (qǐng) — эелдэг үг.",
+  "order_index": 3,
+  "id": "yct-2-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зүгээр ээ (талархалд хариулах)» хятадаар:",
+  "options": [
+   "不要",
+   "不客气",
+   "对不起",
+   "没关系"
+  ],
+  "correct_answer": "不客气",
+  "explanation": "不客气 (bú kèqi).",
+  "order_index": 4,
+  "id": "yct-2-l01-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Битгий» хятадаар аль нь вэ?",
+  "options": [
+   "不要",
+   "请",
+   "可以",
+   "坐"
+  ],
+  "correct_answer": "不要",
+  "explanation": "不要 (bú yào) = битгий.",
+  "order_index": 5,
+  "id": "yct-2-l01-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Ярих» хятадаар аль нь вэ?",
+  "options": [
+   "吃",
+   "说话",
+   "喝",
+   "坐"
+  ],
+  "correct_answer": "说话",
+  "explanation": "说话 (shuōhuà) = ярих.",
+  "order_index": 6,
+  "id": "yct-2-l01-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Уучлаарай» хятадаар аль нь вэ?",
+  "options": [
+   "谢谢",
+   "对不起",
+   "没关系",
+   "不客气"
+  ],
+  "correct_answer": "对不起",
+  "explanation": "对不起 (duìbuqǐ).",
+  "order_index": 7,
+  "id": "yct-2-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зүгээр дээ (уучлалтад хариулах)» хятадаар:",
+  "options": [
+   "没关系",
+   "你好",
+   "请坐",
+   "对不起"
+  ],
+  "correct_answer": "没关系",
+  "explanation": "没关系 (méi guānxi).",
+  "order_index": 8,
+  "id": "yct-2-l01-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би энд суувал болох уу?» хятадаар:",
+  "options": [
+   "我可以坐这儿吗？",
+   "我爱爸爸。",
+   "你叫什么？",
+   "请不要说话。"
+  ],
+  "correct_answer": "我可以坐这儿吗？",
+  "explanation": "可以 = болно, 坐 = суух.",
+  "order_index": 9,
+  "id": "yct-2-l01-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Суугаарай» хятадаар:",
+  "options": [
+   "对不起。",
+   "谢谢。",
+   "请坐。",
+   "再见。"
+  ],
+  "correct_answer": "请坐。",
+  "explanation": "请坐 = суугаарай.",
+  "order_index": 10,
+  "id": "yct-2-l01-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дуугүй байгаарай» хятадаар:",
+  "options": [
+   "没关系。",
+   "我可以去吗？",
+   "你好。",
+   "请不要说话。"
+  ],
+  "correct_answer": "请不要说话。",
+  "explanation": "请不要说话 = дуугүй байгаарай.",
+  "order_index": 11,
+  "id": "yct-2-l01-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我可以坐这儿吗？» гэж асуулаа. Болно гэвэл юу гэх вэ?",
+  "options": [
+   "再见。",
+   "请不要说话。",
+   "对不起。",
+   "可以。请坐。"
+  ],
+  "correct_answer": "可以。请坐。",
+  "explanation": "Болно гэвэл 可以.",
+  "order_index": 12,
+  "id": "yct-2-l01-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Хүн «谢谢！» гэвэл чи юу гэх вэ?",
+  "options": [
+   "对不起。",
+   "没关系。",
+   "请坐。",
+   "不客气。"
+  ],
+  "correct_answer": "不客气。",
+  "explanation": "Талархалд 不客气.",
+  "order_index": 13,
+  "id": "yct-2-l01-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Хүн «对不起！» гэвэл чи юу гэх вэ?",
+  "options": [
+   "没关系。",
+   "请坐。",
+   "不客气。",
+   "谢谢。"
+  ],
+  "correct_answer": "没关系。",
+  "explanation": "Уучлалтад 没关系.",
+  "order_index": 14,
+  "id": "yct-2-l01-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）坐这儿吗？",
+  "options": [
+   "请",
+   "可以",
+   "谢谢",
+   "对不起"
+  ],
+  "correct_answer": "可以",
+  "explanation": "«Болох уу» — 可以.",
+  "order_index": 15,
+  "id": "yct-2-l01-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）坐。",
+  "options": [
+   "谢谢",
+   "请",
+   "不客气",
+   "说话"
+  ],
+  "correct_answer": "请",
+  "explanation": "«Суугаарай» — 请坐.",
+  "order_index": 16,
+  "id": "yct-2-l01-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请（ ）说话。",
+  "options": [
+   "可以",
+   "没关系",
+   "不要",
+   "对不起"
+  ],
+  "correct_answer": "不要",
+  "explanation": "«Битгий» — 不要.",
+  "order_index": 17,
+  "id": "yct-2-l01-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ），没关系。",
+  "options": [
+   "请坐",
+   "你好",
+   "不客气",
+   "对不起"
+  ],
+  "correct_answer": "对不起",
+  "explanation": "Уучлалт — 对不起.",
+  "order_index": 18,
+  "id": "yct-2-l01-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «duìbuqǐ» гэж уншдаг үг:",
+  "options": [
+   "不客气",
+   "对不起",
+   "可以",
+   "没关系"
+  ],
+  "correct_answer": "对不起",
+  "explanation": "对不起 = duìbuqǐ.",
+  "order_index": 19,
+  "id": "yct-2-l01-q19",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bú kèqi» гэж уншдаг үг:",
+  "options": [
+   "没关系",
+   "请坐",
+   "说话",
+   "不客气"
+  ],
+  "correct_answer": "不客气",
+  "explanation": "不客气 = bú kèqi.",
+  "order_index": 20,
+  "id": "yct-2-l01-q20",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «méi guānxi» гэж уншдаг үг:",
+  "options": [
+   "没关系",
+   "对不起",
+   "不要",
+   "我们"
+  ],
+  "correct_answer": "没关系",
+  "explanation": "没关系 = méi guānxi.",
+  "order_index": 21,
+  "id": "yct-2-l01-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Номын санд найз чинь чанга ярьж байна. Чи юу гэх вэ?",
+  "options": [
+   "谢谢！",
+   "没关系。",
+   "我可以去吗？",
+   "请不要说话。"
+  ],
+  "correct_answer": "请不要说话。",
+  "explanation": "Дуугүй байхыг эелдгээр хэлнэ.",
+  "order_index": 22,
+  "id": "yct-2-l01-q22",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Чи найзынхаа цүнхийг мөргөчихлөө. Юу гэх вэ?",
+  "options": [
+   "再见。",
+   "对不起。",
+   "不客气。",
+   "请坐。"
+  ],
+  "correct_answer": "对不起。",
+  "explanation": "Буруу хийвэл 对不起.",
+  "order_index": 23,
+  "id": "yct-2-l01-q23",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Үнсгэлжин «我可以去吗？» гэж асуухад хойд эх юу гэв?",
+  "options": [
+   "谢谢。",
+   "没关系。",
+   "可以。",
+   "不可以。"
+  ],
+  "correct_answer": "不可以。",
+  "explanation": "后妈：不可以 — болохгүй.",
+  "order_index": 24,
+  "id": "yct-2-l01-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Үнсгэлжин өмсөж болох уу гэж асуухад шидэт эмээ юу гэв?",
+  "options": [
+   "对不起。",
+   "不可以。",
+   "可以。",
+   "再见。"
+  ],
+  "correct_answer": "可以。",
+  "explanation": "仙女：可以 — болно.",
+  "order_index": 25,
+  "id": "yct-2-l01-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Өмнөх хичээлээс: «Баяртай» хятадаар аль нь вэ?",
+  "options": [
+   "你好",
+   "谢谢",
+   "再见",
+   "对不起"
+  ],
+  "correct_answer": "再见",
+  "explanation": "再见 = баяртай.",
+  "order_index": 26,
+  "id": "yct-2-l01-q26",
+  "skillTags": [
+   "review"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Өмнөх хичээлээс: «Багш» хятадаар аль нь вэ?",
+  "options": [
+   "说话",
+   "老师",
+   "妈妈",
+   "可以"
+  ],
+  "correct_answer": "老师",
+  "explanation": "老师 = багш.",
+  "order_index": 27,
+  "id": "yct-2-l01-q27",
+  "skillTags": [
+   "review"
+  ],
+  "difficulty": "easy"
+ }
+]

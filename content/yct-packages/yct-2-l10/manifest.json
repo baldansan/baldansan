@@ -1,0 +1,220 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-2",
+ "lessonId": "yct-2-l10",
+ "hskLevel": 1,
+ "lessonNumber": 10,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你怎么了？",
+ "mongolianTitle": "Чи яасан бэ?",
+ "series": "YCT 标准教程 2",
+ "seriesLabel_mn": "YCT 2 — Хүүхдийн хятад хэл (≈HSK1–2)",
+ "source": "YCT 标准教程 2 · 第10课 (сурах бичиг + CD аудио 10-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-2-10-text-song.mp3",
+  "dialogues": "audio/yct-2-10-02.mp3",
+  "words": "audio/yct-2-10-01.mp3",
+  "story": "audio/yct-2-10-03.mp3",
+  "test": "audio/yct-2-10-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-2-l10",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你怎么了？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-jiao",
+    "file": "images/w-jiao.jpg",
+    "title": "脚",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yiyuan",
+    "file": "images/w-yiyuan.jpg",
+    "title": "医院",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zenmele",
+    "file": "images/w-zenmele.jpg",
+    "title": "怎么了",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-teng",
+    "file": "images/w-teng.jpg",
+    "title": "疼",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shou",
+    "file": "images/w-shou.jpg",
+    "title": "手",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yisheng",
+    "file": "images/w-yisheng.jpg",
+    "title": "医生",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qichuang",
+    "file": "images/w-qichuang.jpg",
+    "title": "起床",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "明明，起床！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "我们去看医生。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "好朋友",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story-book",
+    "file": "images/story.png",
+    "title": "好朋友 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "match",
+    "file": "images/match.png",
+    "title": "Let's match",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "imagine",
+    "file": "images/imagine.png",
+    "title": "Let's imagine",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1A",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1B",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1C",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2A",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2B",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2C",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3a",
+    "file": "images/t3a.png",
+    "title": "Test 3A",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3b",
+    "file": "images/t3b.png",
+    "title": "Test 3B",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3c",
+    "file": "images/t3c.png",
+    "title": "Test 3C",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4a",
+    "file": "images/t4a.png",
+    "title": "Test 4A",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4b",
+    "file": "images/t4b.png",
+    "title": "Test 4B",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4c",
+    "file": "images/t4c.png",
+    "title": "Test 4C",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (1C 2A 3B 4A 5C 6B 7A 8D); Let's match хариу зургаас тааруулсан",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,135 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "书包里有两本书。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands beside a yellow camel calf boy with a red backpack who opens it to show two books, while a camel calf girl holds a green-and-yellow cat and a small traffic light glows red, yellow and green in the background. Speech bubble with the Chinese text 书包里有两本书。 in large clear black font. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-hongse.jpg",
+  "aspect": "1:1",
+  "title": "红色",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy proudly holds up a bright red balloon and a red apple against a plain light background, red is the clear dominant color. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-huangse.jpg",
+  "aspect": "1:1",
+  "title": "黄色",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl holds up a big yellow sunflower and a yellow banana, yellow is the clear dominant color. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-luse.jpg",
+  "aspect": "1:1",
+  "title": "绿色",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf boy in a green hat holds a green leaf and a green frog on a green meadow, green is the clear dominant color. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhi.jpg",
+  "aspect": "1:1",
+  "title": "只",
+  "section": "vocabulary",
+  "prompt": "A camel calf boy points at one cat and one bird sitting together, and one big eye symbol-like cartoon eye beside them, showing 'one animal' counting. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-mingzi.jpg",
+  "aspect": "1:1",
+  "title": "名字",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl wearing a name tag on her dress, smiling and introducing herself to a small orange cat that wears a collar name tag. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-piaoliang.jpg",
+  "aspect": "1:1",
+  "title": "漂亮",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl in a yellow dress and pink ribbon admires a beautiful rainbow-colored bird and a pretty flower garden with sparkles. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yanse.jpg",
+  "aspect": "1:1",
+  "title": "颜色",
+  "section": "vocabulary",
+  "prompt": "A camel calf boy holds a paint palette with many colors and a paintbrush, rainbow of paint splashes behind him. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-liang.jpg",
+  "aspect": "1:1",
+  "title": "两",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf boy in a green hat holds two big red apples, one in each hand, with two fingers up. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-ben.jpg",
+  "aspect": "1:1",
+  "title": "本",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy puts two thick colorful books into his red backpack on a school desk. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "我有一只猫，名字叫豆豆。",
+  "section": "dialogue",
+  "prompt": "A camel calf girl in a yellow dress hugs an orange cat with one green eye and one yellow eye, a fish on a plate in front of them, in a cozy room. Speech bubble with the Chinese text 我有一只猫，名字叫豆豆。 in large clear black font. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你的书包是什么颜色的？",
+  "section": "dialogue",
+  "prompt": "Teacher camel with glasses stands at a lost-and-found corner and asks a yellow camel calf boy with a red backpack, a brown camel calf boy in a green hat stands beside him. Speech bubble with the Chinese text 你的书包是什么颜色的？ in large clear black font. No English text. Children's picture-book illustration style.",
+  "chars": [
+   "temee",
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "过马路",
+  "section": "story",
+  "prompt": "A white mother duck leads five yellow ducklings across a zebra crossing under a traffic light that glows green, sunflowers on the roadside, sunny town street. Speech bubble with the Chinese text 现在是绿灯，可以过。 in large clear black font. No English text. Children's picture-book illustration style.",
+  "chars": []
+ }
+]

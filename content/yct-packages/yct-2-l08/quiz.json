@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Дүү хүү» хятадаар аль нь вэ?",
+  "options": [
+   "弟弟",
+   "朋友",
+   "哥哥",
+   "妹妹"
+  ],
+  "correct_answer": "弟弟",
+  "explanation": "弟弟 (dìdi) = дүү хүү.",
+  "order_index": 1,
+  "id": "yct-2-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дүү охин» хятадаар аль нь вэ?",
+  "options": [
+   "姐姐",
+   "弟弟",
+   "同学",
+   "妹妹"
+  ],
+  "correct_answer": "妹妹",
+  "explanation": "妹妹 (mèimei) = дүү охин.",
+  "order_index": 2,
+  "id": "yct-2-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Найз» хятадаар аль нь вэ?",
+  "options": [
+   "学生",
+   "同学",
+   "老师",
+   "朋友"
+  ],
+  "correct_answer": "朋友",
+  "explanation": "朋友 (péngyou) = найз.",
+  "order_index": 3,
+  "id": "yct-2-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ангийн хүүхэд» хятадаар аль нь вэ?",
+  "options": [
+   "妈妈",
+   "同学",
+   "哥哥",
+   "朋友"
+  ],
+  "correct_answer": "同学",
+  "explanation": "同学 (tóngxué) = ангийн хүүхэд.",
+  "order_index": 4,
+  "id": "yct-2-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бас, ч» хятадаар аль нь вэ?",
+  "options": [
+   "也",
+   "和",
+   "比",
+   "几"
+  ],
+  "correct_answer": "也",
+  "explanation": "也 (yě) = бас.",
+  "order_index": 5,
+  "id": "yct-2-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сурагч» хятадаар аль нь вэ?",
+  "options": [
+   "朋友",
+   "学生",
+   "弟弟",
+   "老师"
+  ],
+  "correct_answer": "学生",
+  "explanation": "学生 (xuésheng) = сурагч.",
+  "order_index": 6,
+  "id": "yct-2-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«弟弟» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "найз",
+   "дүү хүү",
+   "ах",
+   "эгч"
+  ],
+  "correct_answer": "дүү хүү",
+  "explanation": "弟弟 = дүү хүү.",
+  "order_index": 7,
+  "id": "yct-2-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«同学» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "ангийн хүүхэд",
+   "дүү охин",
+   "ээж",
+   "багш"
+  ],
+  "correct_answer": "ангийн хүүхэд",
+  "explanation": "同学 = ангийн хүүхэд.",
+  "order_index": 8,
+  "id": "yct-2-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«比» гэдэг үг юуг хэлэх вэ?",
+  "options": [
+   "-ээс (жиших)",
+   "ба",
+   "хэдэн",
+   "бас"
+  ],
+  "correct_answer": "-ээс (жиших)",
+  "explanation": "哥哥比姐姐高 — ах эгчээсээ өндөр.",
+  "order_index": 9,
+  "id": "yct-2-l08-q09",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Ах эгчээсээ өндөр» хятадаар:",
+  "options": [
+   "哥哥也姐姐高",
+   "姐姐比哥哥高",
+   "哥哥比姐姐高",
+   "哥哥和姐姐高"
+  ],
+  "correct_answer": "哥哥比姐姐高",
+  "explanation": "哥哥比姐姐高 — ах нь өндөр.",
+  "order_index": 10,
+  "id": "yct-2-l08-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Эгч надаас өндөр» хятадаар:",
+  "options": [
+   "姐姐也我高",
+   "我比姐姐高",
+   "我和姐姐高",
+   "姐姐比我高"
+  ],
+  "correct_answer": "姐姐比我高",
+  "explanation": "姐姐比我高 — эгч нь өндөр.",
+  "order_index": 11,
+  "id": "yct-2-l08-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "哥哥（ ）姐姐高。",
+  "options": [
+   "几",
+   "和",
+   "也",
+   "比"
+  ],
+  "correct_answer": "比",
+  "explanation": "«-ээс» гэж жишихдээ 比.",
+  "order_index": 12,
+  "id": "yct-2-l08-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我是学生，弟弟（ ）是学生。",
+  "options": [
+   "几",
+   "比",
+   "有",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "«Бас» — 也.",
+  "order_index": 13,
+  "id": "yct-2-l08-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们是我的好（ ）。",
+  "options": [
+   "朋友",
+   "学生",
+   "同学",
+   "哥哥"
+  ],
+  "correct_answer": "朋友",
+  "explanation": "好朋友 = сайн найз.",
+  "order_index": 14,
+  "id": "yct-2-l08-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "马丁比我（ ）三岁。",
+  "options": [
+   "高",
+   "大",
+   "比",
+   "也"
+  ],
+  "correct_answer": "大",
+  "explanation": "大 + тоо + 岁 = хэдэн насаар том.",
+  "order_index": 15,
+  "id": "yct-2-l08-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "苏珊比我大（ ）岁。(хоёр)",
+  "options": [
+   "二",
+   "两",
+   "比",
+   "四"
+  ],
+  "correct_answer": "两",
+  "explanation": "Тоолохдоо хоёрыг 两 гэнэ.",
+  "order_index": 16,
+  "id": "yct-2-l08-q16",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Ма-дин надаас гурван насаар том» хятадаар:",
+  "options": [
+   "马丁比我小三岁",
+   "马丁比我高三岁",
+   "马丁比我大三岁",
+   "我比马丁大三岁"
+  ],
+  "correct_answer": "马丁比我大三岁",
+  "explanation": "大 = том, 三岁 = гурван нас.",
+  "order_index": 17,
+  "id": "yct-2-l08-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«他比我小两岁» — тэр хэн бэ?",
+  "options": [
+   "Надтай адил настай",
+   "Надаас 3 насаар том",
+   "Надаас 2 насаар том",
+   "Надаас 2 насаар бага"
+  ],
+  "correct_answer": "Надаас 2 насаар бага",
+  "explanation": "小 = бага, 两岁 = 2 нас.",
+  "order_index": 18,
+  "id": "yct-2-l08-q18",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Ма-дин 3 насаар, Су-шан 2 насаар том. Ма-дин Су-шанаас хэдэн насаар том бэ?",
+  "options": [
+   "3",
+   "1",
+   "5",
+   "2"
+  ],
+  "correct_answer": "1",
+  "explanation": "3 - 2 = 1 нас.",
+  "order_index": 19,
+  "id": "yct-2-l08-q19",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Тэмээ «我比你高» гэвэл ямаа юу гэж хэлэх вэ?",
+  "options": [
+   "我比你高",
+   "我是学生",
+   "我也高",
+   "我比你矮"
+  ],
+  "correct_answer": "我比你矮",
+  "explanation": "矮 = намхан. Ямаа намхан.",
+  "order_index": 20,
+  "id": "yct-2-l08-q20",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «péngyou» гэж уншдаг үг:",
+  "options": [
+   "朋友",
+   "同学",
+   "学生",
+   "弟弟"
+  ],
+  "correct_answer": "朋友",
+  "explanation": "朋友 = péngyou = найз.",
+  "order_index": 21,
+  "id": "yct-2-l08-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «tóngxué» гэж уншдаг үг:",
+  "options": [
+   "学生",
+   "妹妹",
+   "朋友",
+   "同学"
+  ],
+  "correct_answer": "同学",
+  "explanation": "同学 = tóngxué = ангийн хүүхэд.",
+  "order_index": 22,
+  "id": "yct-2-l08-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dìdi» гэж уншдаг үг:",
+  "options": [
+   "姐姐",
+   "弟弟",
+   "哥哥",
+   "妹妹"
+  ],
+  "correct_answer": "弟弟",
+  "explanation": "弟弟 = dìdi = дүү хүү.",
+  "order_index": 23,
+  "id": "yct-2-l08-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Чи сурагч, дүү чинь ч бас сурагч. Юу гэж хэлэх вэ?",
+  "options": [
+   "我也弟弟是学生。",
+   "弟弟是我学生。",
+   "我是学生，弟弟比学生。",
+   "我是学生，弟弟也是学生。"
+  ],
+  "correct_answer": "我是学生，弟弟也是学生。",
+  "explanation": "也 нь 是-ийн өмнө орно.",
+  "order_index": 24,
+  "id": "yct-2-l08-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаасаа «Чи надаас өндөр үү?» гэж хэлэх нь:",
+  "options": [
+   "你是我高吗？",
+   "你也我高吗？",
+   "你比我高吗？",
+   "你和我高？"
+  ],
+  "correct_answer": "你比我高吗？",
+  "explanation": "比 + 吗 = «-ээс өндөр үү?»",
+  "order_index": 25,
+  "id": "yct-2-l08-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«Бид Да-хуанаас хавьгүй өндөр» хятадаар:",
+  "options": [
+   "我们比大黄矮很多",
+   "我们也大黄高",
+   "我们比大黄高很多",
+   "大黄比我们高"
+  ],
+  "correct_answer": "我们比大黄高很多",
+  "explanation": "高很多 = хавьгүй өндөр.",
+  "order_index": 26,
+  "id": "yct-2-l08-q26",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дараах дундаас хүн биш нь:",
+  "options": [
+   "同学",
+   "大黄",
+   "马丁",
+   "苏珊"
+  ],
+  "correct_answer": "大黄",
+  "explanation": "大黄 нь нохойн нэр. Бусад нь хүн.",
+  "order_index": 27,
+  "id": "yct-2-l08-q27",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ }
+]

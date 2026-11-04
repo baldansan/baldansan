@@ -1,0 +1,223 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (03-05) сонсоод тохирох зургийг A, B, C, D-ээс сонго.",
+    "audio": "audio/yct-2-03-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）这里面没有苹果。",
+      "script_zh": "这里面没有苹果。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "Аудионд «Энэ дотор алим байхгүй». B зураг дээр хоосон хайрцаг байна → B. A-д олон харандаа, C-д цүнх, D-д ширээн дээр муур байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）我的书在书包里。",
+      "script_zh": "我的书在书包里。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "Аудионд «Миний ном цүнхэнд байна». C зураг дээр цүнх байна → C. A харандаа, B хоосон хайрцаг, D муур."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）我弟弟有很多铅笔。",
+      "script_zh": "我弟弟有很多铅笔。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "Аудионд «Миний дүүд олон харандаа бий». A зураг дээр аяганд олон харандаа байна → A."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）猫在桌子上。",
+      "script_zh": "猫在桌子上。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "Аудионд «Муур ширээн дээр байна». D зураг дээр ширээн дээр муур сүү уух гэж байна → D."
+     }
+    ],
+    "answer_source": "Test Answers х.68/70: 1B 2C 3A 4D; Listening script"
+   },
+   {
+    "part": 2,
+    "type": "judge",
+    "instruction_mn": "Унших — зураг өгүүлбэртэй таарч байвал ✓, таарахгүй бол ✗.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "看电视",
+      "image": "images/t5.png",
+      "answer": "✗",
+      "explanation_mn": "Зураг дээр эмэгтэй сонин уншиж байна, зурагт үзэхгүй байна → ✗. 看电视 = зурагт үзэх."
+     },
+     {
+      "n": 6,
+      "question_zh": "桌子和椅子",
+      "image": "images/t6.png",
+      "answer": "✓",
+      "explanation_mn": "Зураг дээр ширээ ба сандлууд байна → ✓."
+     },
+     {
+      "n": 7,
+      "question_zh": "在上边",
+      "image": "images/t7.png",
+      "answer": "✗",
+      "explanation_mn": "Зураг дээр хуруу доош заасан байна. 上边 = дээр тул ✗."
+     },
+     {
+      "n": 8,
+      "question_zh": "在里面",
+      "image": "images/t8.png",
+      "answer": "✓",
+      "explanation_mn": "Зураг дээр охин хайрцагны дотор сууж байна → ✓. 里面 = дотор."
+     }
+    ],
+    "answer_source": "Test Answers х.68/70: 5✗ 6✓ 7✗ 8✓"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Асуулт бүрд тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你的铅笔呢？",
+      "answer": "在我的书包里。",
+      "explanation_mn": "Харандаа хаана байгааг асуусан тул хаана байгааг хэлнэ."
+     },
+     {
+      "n": 2,
+      "question_zh": "你的书包在哪儿？",
+      "answer": "在桌子上。",
+      "explanation_mn": "哪儿 = хаана. Цүнх ширээн дээр байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "电视在哪儿呢？",
+      "answer": "房间里面没有电视。",
+      "explanation_mn": "Зурагт байхгүй тул «没有» гэж хариулна."
+     }
+    ],
+    "answer_source": "textbook х.14 (Let's read)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Үлгэр «找东西» — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我的铅笔呢？ — 在书包里。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр хүү шалан дээр хэвтэж харандаагаа хайж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "我的书包呢？ — 在椅子上。",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр цүнх сандал дээр байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "我的钱包呢？ — 在房间里。",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр шилтэй эр түрийвчээ хайж байна."
+     },
+     {
+      "n": 4,
+      "question_zh": "我的眼镜呢？ — 在你的鼻子上。",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр эр нүдний шилээ хайж байна."
+     }
+    ],
+    "answer_source": "textbook х.16 (Mini story)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Let's draw — өрөөгөө зураад юмсын байрыг хятадаар хэл.",
+    "question_zh": "书包在桌子上。",
+    "answer": "书包在桌子上。",
+    "explanation_mn": "Зурсан юм бүрээ «在……上/里» гэж хэл."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа харандааг нь асуу.",
+    "question_zh": "你的铅笔呢？",
+    "answer": "你的铅笔呢？",
+    "explanation_mn": "Хосоороо ээлжлэн асуу, хариул."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Өрөөндөө юу байдгийг хэл.",
+    "question_zh": "房间里面有……",
+    "answer": "房间里面有……",
+    "explanation_mn": "Ор, ширээ, сандал гэх мэт нэрлэ."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«上下左右» дууг заасан тийшээ хараад хэл.",
+    "question_zh": "上，下，左，右",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 03-03-ын хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · Test Listening Scripts, Test Answers (Lesson 3)"
+}

@@ -1,0 +1,123 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "包子多少钱一个？",
+  "section": "teacher-intro",
+  "prompt": "Temee the camel teacher with glasses and the three young camels at a bright street food stall full of steamed baozi buns, a speech bubble with the Chinese text 包子多少钱一个？ in large clear black font, cheerful. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "hero"
+ },
+ {
+  "file": "images/w-qian.jpg",
+  "aspect": "1:1",
+  "title": "钱",
+  "section": "vocabulary",
+  "prompt": "The yellow camel boy holding a handful of paper bank notes and coins, smiling, plain bright background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-cha.jpg",
+  "aspect": "1:1",
+  "title": "茶",
+  "section": "vocabulary",
+  "prompt": "A steaming cup of green tea in a small Chinese tea bowl with a lid, a little camel girl smelling it happily. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-mai.jpg",
+  "aspect": "1:1",
+  "title": "买",
+  "section": "vocabulary",
+  "prompt": "The brown camel boy in green hat handing money to a shopkeeper and receiving a bag of buns, buying scene. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-duoshao.jpg",
+  "aspect": "1:1",
+  "title": "多少",
+  "section": "vocabulary",
+  "prompt": "Yellow camel boy pointing at a pile of apples with a puzzled question-mark above his head, asking how much. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-kuai.jpg",
+  "aspect": "1:1",
+  "title": "块",
+  "section": "vocabulary",
+  "prompt": "Colorful Chinese yuan paper notes fanned out, a young camel girl holding one note up proudly. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-bei.jpg",
+  "aspect": "1:1",
+  "title": "杯",
+  "section": "vocabulary",
+  "prompt": "Three cups of different drinks (tea, milk, juice) lined up on a table, camel boy pointing at one cup. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-taiguile.jpg",
+  "aspect": "1:1",
+  "title": "太贵了",
+  "section": "vocabulary",
+  "prompt": "Yellow camel boy with wide shocked eyes and hands on cheeks looking at a huge price tag on a toy, speech bubble with the Chinese text 太贵了！ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你买什么？",
+  "section": "dialogue",
+  "prompt": "At a baozi shop, a blond human boy points at steamed buns while a saleswoman in a yellow visor smiles behind the counter; speech bubble with the Chinese text 包子多少钱一个？ in large clear black font. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "有绿茶吗？",
+  "section": "dialogue",
+  "prompt": "In a cozy tea cafe a man in a purple shirt reads a menu and looks shocked, a waitress in a blue apron stands by; speech bubble with the Chinese text 太贵了！ in large clear black font. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "你拍一",
+  "section": "song",
+  "prompt": "The camel kids facing each other clapping hands in pairs at a toy stall with colorful balloons, pencils lined up on the counter, musical notes floating. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "买花 · Mini story",
+  "section": "story",
+  "prompt": "A flower shop with roses; a boy in a green striped sweater holds a rose and a florist woman in pink arranges flowers; the calendar on the wall shows 2/14, a thought bubble with a red rose. No English text.",
+  "chars": []
+ }
+]

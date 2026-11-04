@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Өрөө» хятадаар аль нь вэ?",
+  "options": [
+   "桌子",
+   "床",
+   "椅子",
+   "房间"
+  ],
+  "correct_answer": "房间",
+  "explanation": "房间 (fángjiān) = өрөө.",
+  "order_index": 1,
+  "id": "yct-2-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ширээ» хятадаар аль нь вэ?",
+  "options": [
+   "电视",
+   "铅笔",
+   "桌子",
+   "椅子"
+  ],
+  "correct_answer": "桌子",
+  "explanation": "桌子 (zhuōzi) = ширээ.",
+  "order_index": 2,
+  "id": "yct-2-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сандал» хятадаар аль нь вэ?",
+  "options": [
+   "椅子",
+   "桌子",
+   "床",
+   "书包"
+  ],
+  "correct_answer": "椅子",
+  "explanation": "椅子 (yǐzi) = сандал.",
+  "order_index": 3,
+  "id": "yct-2-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Харандаа» хятадаар аль нь вэ?",
+  "options": [
+   "铅笔",
+   "书包",
+   "眼镜",
+   "钱包"
+  ],
+  "correct_answer": "铅笔",
+  "explanation": "铅笔 (qiānbǐ) = харандаа.",
+  "order_index": 4,
+  "id": "yct-2-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цүнх (сургуулийн)» хятадаар аль нь вэ?",
+  "options": [
+   "钱包",
+   "房间",
+   "床",
+   "书包"
+  ],
+  "correct_answer": "书包",
+  "explanation": "书包 (shūbāo) = сургуулийн цүнх.",
+  "order_index": 5,
+  "id": "yct-2-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зурагт» хятадаар аль нь вэ?",
+  "options": [
+   "桌子",
+   "房间",
+   "电视",
+   "眼镜"
+  ],
+  "correct_answer": "电视",
+  "explanation": "电视 (diànshì) = зурагт.",
+  "order_index": 6,
+  "id": "yct-2-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ор» хятадаар аль нь вэ?",
+  "options": [
+   "桌子",
+   "鼻子",
+   "床",
+   "椅子"
+  ],
+  "correct_answer": "床",
+  "explanation": "床 (chuáng) = ор.",
+  "order_index": 7,
+  "id": "yct-2-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Түрийвч» хятадаар аль нь вэ?",
+  "options": [
+   "眼镜",
+   "铅笔",
+   "钱包",
+   "书包"
+  ],
+  "correct_answer": "钱包",
+  "explanation": "钱包 (qiánbāo) = түрийвч.",
+  "order_index": 8,
+  "id": "yct-2-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Нүдний шил» хятадаар аль нь вэ?",
+  "options": [
+   "电视",
+   "眼镜",
+   "钱包",
+   "鼻子"
+  ],
+  "correct_answer": "眼镜",
+  "explanation": "眼镜 (yǎnjìng) = нүдний шил.",
+  "order_index": 9,
+  "id": "yct-2-l03-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«哪儿» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дээр",
+   "дотор",
+   "хаана",
+   "байхгүй"
+  ],
+  "correct_answer": "хаана",
+  "explanation": "哪儿 (nǎr) = хаана.",
+  "order_index": 10,
+  "id": "yct-2-l03-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«里面» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дотор",
+   "зүүн тал",
+   "доор",
+   "дээр"
+  ],
+  "correct_answer": "дотор",
+  "explanation": "里面 (lǐmian) = дотор.",
+  "order_index": 11,
+  "id": "yct-2-l03-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«上边» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дээр",
+   "баруун тал",
+   "доор",
+   "дотор"
+  ],
+  "correct_answer": "дээр",
+  "explanation": "上边 (shàngbian) = дээр.",
+  "order_index": 12,
+  "id": "yct-2-l03-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«下边» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "зүүн тал",
+   "дотор",
+   "доор",
+   "дээр"
+  ],
+  "correct_answer": "доор",
+  "explanation": "下边 (xiàbian) = доор.",
+  "order_index": 13,
+  "id": "yct-2-l03-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«左边» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "зүүн тал",
+   "доор",
+   "дээр",
+   "баруун тал"
+  ],
+  "correct_answer": "зүүн тал",
+  "explanation": "左边 (zuǒbian) = зүүн тал.",
+  "order_index": 14,
+  "id": "yct-2-l03-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чиний харандаа хаана байна?» хятадаар:",
+  "options": [
+   "我的书包在桌子上。",
+   "在椅子上。",
+   "房间里面没有电视。",
+   "你的铅笔呢？"
+  ],
+  "correct_answer": "你的铅笔呢？",
+  "explanation": "«…呢？» = хаана байна вэ?",
+  "order_index": 15,
+  "id": "yct-2-l03-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你的书包在哪儿？» гэж асуувал юу гэж хариулах вэ?",
+  "options": [
+   "再见。",
+   "在桌子上。",
+   "没有。",
+   "你的铅笔呢？"
+  ],
+  "correct_answer": "在桌子上。",
+  "explanation": "Хаана байгааг хэлнэ: 在桌子上.",
+  "order_index": 16,
+  "id": "yct-2-l03-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д эгчийн харандаа хаана байсан бэ?",
+  "options": [
+   "房间里",
+   "椅子上",
+   "桌子上",
+   "书包里"
+  ],
+  "correct_answer": "书包里",
+  "explanation": "在我的书包里 — цүнхэнд.",
+  "order_index": 17,
+  "id": "yct-2-l03-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т өрөөнд юу байхгүй байсан бэ?",
+  "options": [
+   "小桌子",
+   "小椅子",
+   "小床",
+   "电视"
+  ],
+  "correct_answer": "电视",
+  "explanation": "房间里面没有电视 — зурагт байхгүй.",
+  "order_index": 18,
+  "id": "yct-2-l03-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我的书包在桌子（ ）。",
+  "options": [
+   "哪儿",
+   "呢",
+   "上",
+   "里"
+  ],
+  "correct_answer": "上",
+  "explanation": "Дээр байвал 上.",
+  "order_index": 19,
+  "id": "yct-2-l03-q19",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "铅笔在书包（ ）。",
+  "options": [
+   "哪儿",
+   "里",
+   "上",
+   "没有"
+  ],
+  "correct_answer": "里",
+  "explanation": "Дотор байвал 里.",
+  "order_index": 20,
+  "id": "yct-2-l03-q20",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的书包在（ ）？",
+  "options": [
+   "有",
+   "里",
+   "哪儿",
+   "上"
+  ],
+  "correct_answer": "哪儿",
+  "explanation": "Хаана — 哪儿.",
+  "order_index": 21,
+  "id": "yct-2-l03-q21",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "房间里面（ ）电视。(байхгүй)",
+  "options": [
+   "在",
+   "没有",
+   "上",
+   "哪儿"
+  ],
+  "correct_answer": "没有",
+  "explanation": "Байхгүй — 没有.",
+  "order_index": 22,
+  "id": "yct-2-l03-q22",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д хүүний цүнх хаана байсан бэ?",
+  "options": [
+   "鼻子上",
+   "椅子上",
+   "书包里",
+   "房间里"
+  ],
+  "correct_answer": "椅子上",
+  "explanation": "在椅子上 — сандал дээр.",
+  "order_index": 23,
+  "id": "yct-2-l03-q23",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д аавын нүдний шил хаана байсан бэ?",
+  "options": [
+   "鼻子上",
+   "桌子上",
+   "书包里",
+   "房间里"
+  ],
+  "correct_answer": "鼻子上",
+  "explanation": "在你的鼻子上 — хамар дээр!",
+  "order_index": 24,
+  "id": "yct-2-l03-q24",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shūbāo» гэж уншдаг үг:",
+  "options": [
+   "铅笔",
+   "电视",
+   "房间",
+   "书包"
+  ],
+  "correct_answer": "书包",
+  "explanation": "书包 = shūbāo = цүнх.",
+  "order_index": 25,
+  "id": "yct-2-l03-q25",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «qiānbǐ» гэж уншдаг үг:",
+  "options": [
+   "铅笔",
+   "钱包",
+   "桌子",
+   "椅子"
+  ],
+  "correct_answer": "铅笔",
+  "explanation": "铅笔 = qiānbǐ = харандаа.",
+  "order_index": 26,
+  "id": "yct-2-l03-q26",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «diànshì» гэж уншдаг үг:",
+  "options": [
+   "鼻子",
+   "电视",
+   "房间",
+   "眼镜"
+  ],
+  "correct_answer": "电视",
+  "explanation": "电视 = diànshì = зурагт.",
+  "order_index": 27,
+  "id": "yct-2-l03-q27",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Өрөөнд байдаг юмс биш нь аль нь вэ? (ор, ширээ, сандал, ...)",
+  "options": [
+   "床",
+   "椅子",
+   "猫",
+   "桌子"
+  ],
+  "correct_answer": "猫",
+  "explanation": "猫 = муур. Бусад нь өрөөний тавилга.",
+  "order_index": 28,
+  "id": "yct-2-l03-q28",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ }
+]

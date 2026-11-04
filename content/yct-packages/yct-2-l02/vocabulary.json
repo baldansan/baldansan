@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "起床",
+  "pinyin": "qǐchuáng",
+  "mongolian": "орноосоо босох, сэрэх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "快快起床！",
+  "examplePinyin": "Kuài kuài qǐchuáng!",
+  "exampleMongolian": "Хурдан хурдан босоорой!",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "睡觉",
+  "pinyin": "shuìjiào",
+  "mongolian": "унтах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "快睡觉！",
+  "examplePinyin": "Kuài shuìjiào!",
+  "exampleMongolian": "Хурдан унт!",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "早上",
+  "pinyin": "zǎoshang",
+  "mongolian": "өглөө",
+  "notes": "цаг заасан үг · гол үг",
+  "exampleChinese": "你早上几点起床？",
+  "examplePinyin": "Nǐ zǎoshang jǐ diǎn qǐchuáng?",
+  "exampleMongolian": "Чи өглөө хэд цагт босдог вэ?",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "晚上",
+  "pinyin": "wǎnshang",
+  "mongolian": "орой, шөнө",
+  "notes": "цаг заасан үг · гол үг",
+  "exampleChinese": "今天晚上我可以不睡觉吗？",
+  "examplePinyin": "Jīntiān wǎnshang wǒ kěyǐ bú shuìjiào ma?",
+  "exampleMongolian": "Өнөө орой би унтахгүй байж болох уу?",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "点",
+  "pinyin": "diǎn",
+  "mongolian": "цаг (цагийн заалт)",
+  "notes": "тоолох үг · гол үг",
+  "exampleChinese": "我七点起床。",
+  "examplePinyin": "Wǒ qī diǎn qǐchuáng.",
+  "exampleMongolian": "Би долоон цагт босдог.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "到",
+  "pinyin": "dào",
+  "mongolian": "...-аас ... хүртэл",
+  "notes": "холбох үг · нэмэлт үг",
+  "exampleChinese": "星期一到星期五",
+  "examplePinyin": "Xīngqīyī dào Xīngqīwǔ",
+  "exampleMongolian": "Даваагаас баасан гараг хүртэл",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "呢",
+  "pinyin": "ne",
+  "mongolian": "...-ийг яах вэ? (асуулт дагуулдаг үг)",
+  "notes": "өгүүлбэрийн төгсгөлийн үг · нэмэлт үг",
+  "exampleChinese": "星期六和星期天呢？",
+  "examplePinyin": "Xīngqīliù hé Xīngqītiān ne?",
+  "exampleMongolian": "Бямба, ням гарагт яах вэ?",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "要",
+  "pinyin": "yào",
+  "mongolian": "хүсэх, хийхээр төлөвлөх",
+  "notes": "үйл үг · нэмэлт үг",
+  "exampleChinese": "我要看小鱼几点睡觉。",
+  "examplePinyin": "Wǒ yào kàn xiǎo yú jǐ diǎn shuìjiào.",
+  "exampleMongolian": "Би загас хэдэн цагт унтахыг харах гэж байна.",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 8
+ }
+]

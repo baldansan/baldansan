@@ -1,0 +1,145 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-2",
+ "lessonId": "yct-2-l09",
+ "hskLevel": 1,
+ "lessonNumber": 9,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你今天做什么了？",
+ "mongolianTitle": "Чи өнөөдөр юу хийсэн бэ?",
+ "series": "YCT 标准教程 2",
+ "seriesLabel_mn": "YCT 2 — Хүүхдийн хятад хэл (≈HSK1–2)",
+ "source": "YCT 标准教程 2 · 第9课 (сурах бичиг + CD аудио 09-01..06 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-2-09-text-song.mp3",
+  "dialogues": "audio/yct-2-09-02.mp3",
+  "words": "audio/yct-2-09-01.mp3",
+  "listen": "audio/yct-2-09-03.mp3",
+  "song": "audio/yct-2-09-04.mp3",
+  "story": "audio/yct-2-09-05.mp3",
+  "test": "audio/yct-2-09-06.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-2-l09",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你今天做什么了？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你今天吃水果了吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你今天做什么了？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "如果吃了香蕉",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "看医生 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-xiangjiao",
+    "file": "images/w-xiangjiao.jpg",
+    "title": "香蕉",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiongmao",
+    "file": "images/w-xiongmao.jpg",
+    "title": "熊猫",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuiguo",
+    "file": "images/w-shuiguo.jpg",
+    "title": "水果",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-le",
+    "file": "images/w-le.jpg",
+    "title": "了",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hua",
+    "file": "images/w-hua.jpg",
+    "title": "画",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mei",
+    "file": "images/w-mei.jpg",
+    "title": "没（有）",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L9)",
+  "textStatus": "source_verified (хуудас х.43,44,46,47); дуу ба 09-03 текст = аудиогоос ASR (х.45 алга)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

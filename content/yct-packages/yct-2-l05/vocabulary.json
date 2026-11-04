@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "包子",
+  "pinyin": "bāozi",
+  "mongolian": "бууз (хятадын уураар чанасан бууз)",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "这个包子真好吃！",
+  "examplePinyin": "Zhège bāozi zhēn hǎochī!",
+  "exampleMongolian": "Энэ бууз үнэхээр амттай юм!",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "医生",
+  "pinyin": "yīshēng",
+  "mongolian": "эмч",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我妈妈是医生。",
+  "examplePinyin": "Wǒ māma shì yīshēng.",
+  "exampleMongolian": "Миний ээж эмч.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "厨师",
+  "pinyin": "chúshī",
+  "mongolian": "тогооч",
+  "notes": "нэр үг · нэмэлт үг",
+  "exampleChinese": "你妈妈是不是厨师？",
+  "examplePinyin": "Nǐ māma shì bu shì chúshī?",
+  "exampleMongolian": "Чиний ээж тогооч уу?",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "会",
+  "pinyin": "huì",
+  "mongolian": "чадах, мэддэг",
+  "notes": "туслах үйл үг · гол үг",
+  "exampleChinese": "我不会做包子。",
+  "examplePinyin": "Wǒ bú huì zuò bāozi.",
+  "exampleMongolian": "Би бууз хийж чадахгүй.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "做",
+  "pinyin": "zuò",
+  "mongolian": "хийх, хоол хийх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "这是我妈妈做的。",
+  "examplePinyin": "Zhè shì wǒ māma zuò de.",
+  "exampleMongolian": "Энийг миний ээж хийсэн.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "真",
+  "pinyin": "zhēn",
+  "mongolian": "үнэхээр",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "这个包子真好吃！",
+  "examplePinyin": "Zhège bāozi zhēn hǎochī!",
+  "exampleMongolian": "Энэ бууз үнэхээр амттай юм!",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "好吃",
+  "pinyin": "hǎochī",
+  "mongolian": "амттай",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "今天的饭不好吃。",
+  "examplePinyin": "Jīntiān de fàn bù hǎochī.",
+  "exampleMongolian": "Өнөөдрийн хоол амттай биш байна.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "漂亮",
+  "pinyin": "piàoliang",
+  "mongolian": "сайхан, үзэсгэлэнтэй",
+  "notes": "тэмдэг нэр · нэмэлт үг",
+  "exampleChinese": "妹妹漂亮不漂亮？",
+  "examplePinyin": "Mèimei piàoliang bu piàoliang?",
+  "exampleMongolian": "Дүү охин минь үзэсгэлэнтэй юү?",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 8
+ }
+]

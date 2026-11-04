@@ -1,0 +1,263 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-2",
+ "lessonId": "yct-2-l03",
+ "hskLevel": 1,
+ "lessonNumber": 3,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你的铅笔呢？",
+ "mongolianTitle": "Чиний харандаа хаана байна вэ?",
+ "series": "YCT 标准教程 2",
+ "seriesLabel_mn": "YCT 2 — Хүүхдийн хятад хэл (≈HSK1–2)",
+ "source": "YCT 标准教程 2 · 第3课 (сурах бичиг + CD аудио 03-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-2-03-text-song.mp3",
+  "dialogues": "audio/yct-2-03-02.mp3",
+  "words": "audio/yct-2-03-01.mp3",
+  "story": "audio/yct-2-03-04.mp3",
+  "song": "audio/yct-2-03-03.mp3",
+  "test": "audio/yct-2-03-05.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-2-l03",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你的铅笔呢？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "姐姐，你的铅笔呢？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你们看，这是七个小矮人的房间",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "上下左右",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "找东西",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-fangjian",
+    "file": "images/w-fangjian.jpg",
+    "title": "房间",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chuang",
+    "file": "images/w-chuang.jpg",
+    "title": "床",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dianshi",
+    "file": "images/w-dianshi.jpg",
+    "title": "电视",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhuozi",
+    "file": "images/w-zhuozi.jpg",
+    "title": "桌子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yizi",
+    "file": "images/w-yizi.jpg",
+    "title": "椅子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qianbi",
+    "file": "images/w-qianbi.jpg",
+    "title": "铅笔",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shubao",
+    "file": "images/w-shubao.jpg",
+    "title": "书包",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-limian",
+    "file": "images/w-limian.jpg",
+    "title": "里面",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shangbian",
+    "file": "images/w-shangbian.jpg",
+    "title": "上边",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ai",
+    "file": "images/w-ai.jpg",
+    "title": "矮",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zai",
+    "file": "images/w-zai.jpg",
+    "title": "在",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nar",
+    "file": "images/w-nar.jpg",
+    "title": "哪儿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiabian",
+    "file": "images/w-xiabian.jpg",
+    "title": "下边",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zuobian",
+    "file": "images/w-zuobian.jpg",
+    "title": "左边",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-youbian",
+    "file": "images/w-youbian.jpg",
+    "title": "右边",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qianbao",
+    "file": "images/w-qianbao.jpg",
+    "title": "钱包",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yanjing",
+    "file": "images/w-yanjing.jpg",
+    "title": "眼镜",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bizi",
+    "file": "images/w-bizi.jpg",
+    "title": "鼻子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t7",
+    "file": "images/t7.png",
+    "title": "Test 7",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t8",
+    "file": "images/t8.png",
+    "title": "Test 8",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "story-panels",
+    "file": "images/story.png",
+    "title": "找东西 · Mini story (ном)",
+    "role": "illustration",
+    "section": "story"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

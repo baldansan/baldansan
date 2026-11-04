@@ -1,0 +1,315 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (05-04) сонсоод тохирох зургийг A, B, C, D-ээс сонго.",
+    "audio": "audio/yct-2-05-04.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）妈妈，你的个子真高！",
+      "script_zh": "妈妈，你的个子真高！",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Ээж ээ, чи үнэхээр өндөр юм аа!» — C зураг дээр өндөр ээжийн хөлөөс хүүхэд тэвэрч байна. A охин ногоон хоол харж сууна, B тогоочийн малгайтай охин, D алим барьсан гар."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）今天的饭不好吃。",
+      "script_zh": "今天的饭不好吃。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Өнөөдрийн хоол амттай биш» — A зураг дээр охин хоолны өмнө гомдонгуй сууж байна. B тогооч охин, C ээж, D алим."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）我爱做饭。",
+      "script_zh": "我爱做饭。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Би хоол хийх дуртай» — B зураг дээр охин тогоочийн малгай, хормогчтой байна. A охин гунигтай, C ээж, D алим."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）你看，这个苹果大不大？",
+      "script_zh": "你看，这个苹果大不大？",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Хар даа, энэ алим том уу?» — D зураг дээр гарт алим байна. Алим гэдэг 苹果 үг сонсогдсон."
+     }
+    ],
+    "answer_source": "YCT 2 Test Answers L5: 1.C 2.A 3.B 4.D"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — асуултад тохирох хариултыг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "你妈妈是做什么的？",
+      "question_mn": "Чиний ээж юу хийдэг вэ?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "包子。",
+       "她不会。",
+       "我要。",
+       "医生。"
+      ],
+      "answer": "D",
+      "explanation_mn": "Ээжийн ажлыг асуусан тул «医生 — эмч» гэж хариулна. 包子 бууз, 她不会 чадахгүй, 我要 авмаар байна."
+     },
+     {
+      "n": 6,
+      "question_zh": "这个你要不要？",
+      "question_mn": "Энийг чи авмаар байна уу?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "包子。",
+       "她不会。",
+       "我要。",
+       "医生。"
+      ],
+      "answer": "C",
+      "explanation_mn": "要不要 гэж асуусан тул «我要 — би авна» гэж хариулна."
+     },
+     {
+      "n": 7,
+      "question_zh": "你姐姐会不会做面条儿？",
+      "question_mn": "Чиний эгч гоймон хийж чадах уу?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "包子。",
+       "她不会。",
+       "我要。",
+       "医生。"
+      ],
+      "answer": "B",
+      "explanation_mn": "会不会 гэж асуусан. «她不会 — тэр чадахгүй» нь хариулт."
+     },
+     {
+      "n": 8,
+      "question_zh": "明天早上我们吃什么？",
+      "question_mn": "Маргааш өглөө бид юу идэх вэ?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "包子。",
+       "她不会。",
+       "我要。",
+       "医生。"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Юу идэх вэ?» гэсэн асуултад хоолоор хариулна: «包子 — бууз»."
+     }
+    ],
+    "answer_source": "YCT 2 Test Answers L5: 5.D 6.C 7.B 8.A"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's match — бэлэг бүрийн хоосон зайд тохирох бөмбөлгийг сонго.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "她的个子____？",
+      "answer": "高不高",
+      "explanation_mn": "Өндөр эсэхийг асууна."
+     },
+     {
+      "n": 2,
+      "question_zh": "你的手____？",
+      "answer": "大不大",
+      "explanation_mn": "Гар том уу гэж асууна."
+     },
+     {
+      "n": 3,
+      "question_zh": "你____做饭？",
+      "answer": "会不会",
+      "explanation_mn": "Хоол хийж чадах уу."
+     },
+     {
+      "n": 4,
+      "question_zh": "你妈妈____？",
+      "answer": "漂亮不漂亮",
+      "explanation_mn": "Ээж сайхан уу."
+     },
+     {
+      "n": 5,
+      "question_zh": "你____喝牛奶？",
+      "answer": "要不要",
+      "explanation_mn": "Сүү уумаар байна уу."
+     },
+     {
+      "n": 6,
+      "question_zh": "你爸爸____医生？",
+      "answer": "是不是",
+      "explanation_mn": "Аав эмч үү."
+     }
+    ],
+    "answer_source": "Let's match х.25 (хариу агент тааруулсан)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Үлгэр «丑小鸭» — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "她不漂亮。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр ангаахай шинэхэн гарч ирэхэд нугас «Тэр сайхан биш» гэж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "我不喜欢她，她太难看了。",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр шар ангаахайнууд саарал ангаахайг муухай гэнэ."
+     },
+     {
+      "n": 3,
+      "question_zh": "妈妈爱你。",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр ээж нугас ангаахайгаа тэвэрнэ."
+     },
+     {
+      "n": 4,
+      "question_zh": "妈妈，我没有朋友。",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр ангаахай ээжийгээ тэвэрч уйлна."
+     },
+     {
+      "n": 5,
+      "question_zh": "太冷了，太冷了！",
+      "answer": "5",
+      "explanation_mn": "5-р зураг дээр цас, хөлдсөн цөөрөм байна."
+     },
+     {
+      "n": 6,
+      "question_zh": "你会不会飞？",
+      "answer": "6",
+      "explanation_mn": "6-р зураг дээр хунгууд нисч байна."
+     }
+    ],
+    "answer_source": "textbook х.26 (Mini story)"
+   },
+   {
+    "part": 5,
+    "type": "match",
+    "instruction_mn": "Let's play — шоо хаяж хосоороо асуу, хариул.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "妈妈会不会做饭？",
+      "answer": "妈妈会做饭。",
+      "explanation_mn": "Зураг дээр ээж хоол хийж байгаа тул «会»."
+     }
+    ],
+    "answer_source": "Let's play х.25"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичиж үз — «包子» гэсэн ханзыг дахин бичиж хуул.",
+    "question_zh": "包子",
+    "answer": "包子",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа хоол хийж чадахыг нь асуу.",
+    "question_zh": "你会不会做饭？",
+    "answer": "你会不会做饭？",
+    "explanation_mn": "Хосоороо ээлжлэн."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Ээж аавынхаа ажлыг хэл.",
+    "question_zh": "我妈妈是……",
+    "answer": "我妈妈是医生。",
+    "explanation_mn": "Өөрийн ээжийн ажлыг хэл."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "丑小鸭 үлгэрийг жүжигчил.",
+    "question_zh": "你会不会飞？ 我试试……",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 05-03-ын хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · Test Listening Scripts, Test Answers (Lesson 5)"
+}

@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Хүйтэн» хятадаар аль нь вэ?",
+  "options": [
+   "热",
+   "大",
+   "好",
+   "冷"
+  ],
+  "correct_answer": "冷",
+  "explanation": "冷 (lěng) = хүйтэн.",
+  "order_index": 1,
+  "id": "yct-2-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Халуун» хятадаар аль нь вэ?",
+  "options": [
+   "好喝",
+   "比",
+   "热",
+   "冷"
+  ],
+  "correct_answer": "热",
+  "explanation": "热 (rè) = халуун.",
+  "order_index": 2,
+  "id": "yct-2-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цаг агаар» хятадаар аль нь вэ?",
+  "options": [
+   "天气",
+   "昨天",
+   "北京",
+   "冰水"
+  ],
+  "correct_answer": "天气",
+  "explanation": "天气 (tiānqì) = цаг агаар.",
+  "order_index": 3,
+  "id": "yct-2-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Өчигдөр» хятадаар аль нь вэ?",
+  "options": [
+   "昨天",
+   "今天",
+   "天气",
+   "明天"
+  ],
+  "correct_answer": "昨天",
+  "explanation": "昨天 (zuótiān) = өчигдөр.",
+  "order_index": 4,
+  "id": "yct-2-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бээжин» хятадаар аль нь вэ?",
+  "options": [
+   "纽约",
+   "天气",
+   "冰水",
+   "北京"
+  ],
+  "correct_answer": "北京",
+  "explanation": "北京 (Běijīng) = Бээжин.",
+  "order_index": 5,
+  "id": "yct-2-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Нью-Йорк» хятадаар аль нь вэ?",
+  "options": [
+   "北京",
+   "昨天",
+   "纽约",
+   "冷"
+  ],
+  "correct_answer": "纽约",
+  "explanation": "纽约 (Niǔyuē) = Нью-Йорк.",
+  "order_index": 6,
+  "id": "yct-2-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«冰水» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сүү",
+   "будаа",
+   "мөстэй ус",
+   "халуун цай"
+  ],
+  "correct_answer": "мөстэй ус",
+  "explanation": "冰水 (bīng shuǐ) = мөстэй ус.",
+  "order_index": 7,
+  "id": "yct-2-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«比» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хүйтэн",
+   "цаг агаар",
+   "-аас илүү (харьцуулах)",
+   "өчигдөр"
+  ],
+  "correct_answer": "-аас илүү (харьцуулах)",
+  "explanation": "比 (bǐ) — хоёр юмыг харьцуулна.",
+  "order_index": 8,
+  "id": "yct-2-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«觉得» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дуртай",
+   "санагдах, бодох",
+   "уух",
+   "харах"
+  ],
+  "correct_answer": "санагдах, бодох",
+  "explanation": "觉得 (juéde) = бодох.",
+  "order_index": 9,
+  "id": "yct-2-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«好喝» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "халуун",
+   "хүйтэн",
+   "амттай (уух юм)",
+   "өчигдөр"
+  ],
+  "correct_answer": "амттай (уух юм)",
+  "explanation": "好喝 (hǎohē) = амттай (уух).",
+  "order_index": 10,
+  "id": "yct-2-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«怎么样» гэдэг нь:",
+  "options": [
+   "ямар вэ? яаж байна вэ?",
+   "хаана вэ?",
+   "хэдэн вэ?",
+   "хэн бэ?"
+  ],
+  "correct_answer": "ямар вэ? яаж байна вэ?",
+  "explanation": "怎么样 (zěnmeyàng) = ямар вэ?",
+  "order_index": 11,
+  "id": "yct-2-l07-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Бээжингийн цаг агаар ямар байна?» хятадаар:",
+  "options": [
+   "北京天气怎么样？",
+   "我觉得很好喝。",
+   "今天比昨天热。",
+   "北京比纽约冷。"
+  ],
+  "correct_answer": "北京天气怎么样？",
+  "explanation": "天气怎么样 = цаг агаар ямар вэ.",
+  "order_index": 12,
+  "id": "yct-2-l07-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хүйтэн ч биш, халуун ч биш» хятадаар:",
+  "options": [
+   "比昨天热",
+   "很热",
+   "不冷也不热",
+   "很冷"
+  ],
+  "correct_answer": "不冷也不热",
+  "explanation": "不冷也不热 — хүйтэн ч биш, халуун ч биш.",
+  "order_index": 13,
+  "id": "yct-2-l07-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Өнөөдөр өчигдрөөс халуун» хятадаар:",
+  "options": [
+   "今天比昨天热。",
+   "今天不热。",
+   "今天比昨天冷。",
+   "昨天比今天热。"
+  ],
+  "correct_answer": "今天比昨天热。",
+  "explanation": "A 比 B 热 = A нь B-ээс халуун.",
+  "order_index": 14,
+  "id": "yct-2-l07-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天（ ）昨天热。",
+  "options": [
+   "和",
+   "也",
+   "吗",
+   "比"
+  ],
+  "correct_answer": "比",
+  "explanation": "Харьцуулахдаа 比.",
+  "order_index": 15,
+  "id": "yct-2-l07-q15",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "北京（ ）怎么样？",
+  "options": [
+   "觉得",
+   "天气",
+   "冰水",
+   "昨天"
+  ],
+  "correct_answer": "天气",
+  "explanation": "天气怎么样 — цаг агаар ямар вэ.",
+  "order_index": 16,
+  "id": "yct-2-l07-q16",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "纽约比北京（ ）。",
+  "options": [
+   "好",
+   "天气",
+   "比",
+   "冷"
+  ],
+  "correct_answer": "冷",
+  "explanation": "Дуунд: 纽约比北京冷.",
+  "order_index": 17,
+  "id": "yct-2-l07-q17",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）冰水好喝。",
+  "options": [
+   "北京",
+   "怎么样",
+   "比",
+   "觉得"
+  ],
+  "correct_answer": "觉得",
+  "explanation": "觉得 — миний бодоход.",
+  "order_index": 18,
+  "id": "yct-2-l07-q18",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这茶很（ ）！",
+  "options": [
+   "昨天",
+   "比",
+   "好喝",
+   "天气"
+  ],
+  "correct_answer": "好喝",
+  "explanation": "Цай — уух юм, 好喝.",
+  "order_index": 19,
+  "id": "yct-2-l07-q19",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Дуунд Сидней Бээжингээс ямар вэ?",
+  "options": [
+   "好",
+   "热",
+   "冷",
+   "小"
+  ],
+  "correct_answer": "热",
+  "explanation": "悉尼比北京热 — Сидней Бээжингээс халуун.",
+  "order_index": 20,
+  "id": "yct-2-l07-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дуунд Нью-Йорк Бээжингээс ямар вэ?",
+  "options": [
+   "好",
+   "热",
+   "冷",
+   "大"
+  ],
+  "correct_answer": "冷",
+  "explanation": "纽约比北京冷 — Нью-Йорк Бээжингээс хүйтэн.",
+  "order_index": 21,
+  "id": "yct-2-l07-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хүү юу уух дуртай вэ?",
+  "options": [
+   "热水",
+   "冰水",
+   "茶",
+   "牛奶"
+  ],
+  "correct_answer": "冰水",
+  "explanation": "我喜欢喝冰水 — мөстэй ус.",
+  "order_index": 22,
+  "id": "yct-2-l07-q22",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аав ээж юу илүү амттай гэж боддог вэ?",
+  "options": [
+   "米饭",
+   "热水",
+   "冰水",
+   "面条"
+  ],
+  "correct_answer": "热水",
+  "explanation": "爸爸妈妈觉得热水比冰水好喝.",
+  "order_index": 23,
+  "id": "yct-2-l07-q23",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «lěng» гэж уншдаг үг:",
+  "options": [
+   "冷",
+   "比",
+   "好",
+   "热"
+  ],
+  "correct_answer": "冷",
+  "explanation": "冷 = lěng = хүйтэн.",
+  "order_index": 24,
+  "id": "yct-2-l07-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zuótiān» гэж уншдаг үг:",
+  "options": [
+   "今天",
+   "天气",
+   "北京",
+   "昨天"
+  ],
+  "correct_answer": "昨天",
+  "explanation": "昨天 = zuótiān = өчигдөр.",
+  "order_index": 25,
+  "id": "yct-2-l07-q25",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «tiānqì» гэж уншдаг үг:",
+  "options": [
+   "天气",
+   "怎么样",
+   "觉得",
+   "冰水"
+  ],
+  "correct_answer": "天气",
+  "explanation": "天气 = tiānqì = цаг агаар.",
+  "order_index": 26,
+  "id": "yct-2-l07-q26",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Гадаа маш халуун байна. Юу гэж хэлэх вэ?",
+  "options": [
+   "再见。",
+   "今天很热。",
+   "今天很冷。",
+   "北京呢？"
+  ],
+  "correct_answer": "今天很热。",
+  "explanation": "热 = халуун.",
+  "order_index": 27,
+  "id": "yct-2-l07-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Мөстэй ус халуун уснаас амттай гэж бодож байвал:",
+  "options": [
+   "我觉得热水比冰水冷。",
+   "今天天气好。",
+   "我觉得冰水比热水好喝。",
+   "冰水不是水。"
+  ],
+  "correct_answer": "我觉得冰水比热水好喝。",
+  "explanation": "觉得 + A 比 B 好喝.",
+  "order_index": 28,
+  "id": "yct-2-l07-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д ах охиноос ямар вэ?",
+  "options": [
+   "聪明",
+   "好喝",
+   "冷",
+   "热"
+  ],
+  "correct_answer": "聪明",
+  "explanation": "哥哥比我聪明 — ах ухаалаг.",
+  "order_index": 29,
+  "id": "yct-2-l07-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

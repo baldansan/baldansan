@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Одоо» хятадаар аль нь вэ?",
+  "options": [
+   "现在",
+   "早上",
+   "今天",
+   "明天"
+  ],
+  "correct_answer": "现在",
+  "explanation": "现在 (xiànzài) = одоо.",
+  "order_index": 1,
+  "id": "yct-2-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цаг (3 цаг гэх)» хятадаар аль нь вэ?",
+  "options": [
+   "年",
+   "来",
+   "会",
+   "点"
+  ],
+  "correct_answer": "点",
+  "explanation": "点 (diǎn) = цаг.",
+  "order_index": 2,
+  "id": "yct-2-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Минут» хятадаар аль нь вэ?",
+  "options": [
+   "点",
+   "小时",
+   "年",
+   "分钟"
+  ],
+  "correct_answer": "分钟",
+  "explanation": "分钟 (fēnzhōng) = минут.",
+  "order_index": 3,
+  "id": "yct-2-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Жил» хятадаар аль нь вэ?",
+  "options": [
+   "号",
+   "年",
+   "点",
+   "月"
+  ],
+  "correct_answer": "年",
+  "explanation": "年 (nián) = жил.",
+  "order_index": 4,
+  "id": "yct-2-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ирэх» хятадаар аль нь вэ?",
+  "options": [
+   "来",
+   "看",
+   "去",
+   "吃"
+  ],
+  "correct_answer": "来",
+  "explanation": "来 (lái) = ирэх. 去 = явах.",
+  "order_index": 5,
+  "id": "yct-2-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бээжин» хятадаар аль нь вэ?",
+  "options": [
+   "医院",
+   "北京",
+   "商店",
+   "学校"
+  ],
+  "correct_answer": "北京",
+  "explanation": "北京 (Běijīng) = Бээжин.",
+  "order_index": 6,
+  "id": "yct-2-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«打电话» гэдэг нь:",
+  "options": [
+   "зурагт үзэх",
+   "утсаар ярих",
+   "ном унших",
+   "унтах"
+  ],
+  "correct_answer": "утсаар ярих",
+  "explanation": "打电话 (dǎ diànhuà) = утсаар ярих.",
+  "order_index": 7,
+  "id": "yct-2-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«会» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "чадна",
+   "хэдэн",
+   "байна",
+   "явна"
+  ],
+  "correct_answer": "чадна",
+  "explanation": "会 (huì) = сурсан учраас чадна.",
+  "order_index": 8,
+  "id": "yct-2-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«零» гэдэг нь:",
+  "options": [
+   "тэг",
+   "арав",
+   "хоёр",
+   "нэг"
+  ],
+  "correct_answer": "тэг",
+  "explanation": "零 (líng) = тэг.",
+  "order_index": 9,
+  "id": "yct-2-l11-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«早上» гэдэг нь:",
+  "options": [
+   "өчигдөр",
+   "орой",
+   "өглөө",
+   "үд дунд"
+  ],
+  "correct_answer": "өглөө",
+  "explanation": "早上 (zǎoshang) = өглөө. 晚上 = орой.",
+  "order_index": 10,
+  "id": "yct-2-l11-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«晚上» гэдэг нь:",
+  "options": [
+   "одоо",
+   "өглөө",
+   "маргааш",
+   "орой"
+  ],
+  "correct_answer": "орой",
+  "explanation": "晚上 (wǎnshang) = орой.",
+  "order_index": 11,
+  "id": "yct-2-l11-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«漂亮» гэдэг нь:",
+  "options": [
+   "том",
+   "урт",
+   "өндөр",
+   "хөөрхөн"
+  ],
+  "correct_answer": "хөөрхөн",
+  "explanation": "漂亮 (piàoliang) = хөөрхөн.",
+  "order_index": 12,
+  "id": "yct-2-l11-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Одоо хэдэн цаг болж байна?» хятадаар:",
+  "options": [
+   "你叫什么？",
+   "你几岁了？",
+   "你家在哪儿？",
+   "现在几点了？"
+  ],
+  "correct_answer": "现在几点了？",
+  "explanation": "几点 = хэдэн цаг.",
+  "order_index": 13,
+  "id": "yct-2-l11-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«三点零五» гэдэг нь:",
+  "options": [
+   "3 цаг 05 минут",
+   "3 цаг 50",
+   "5 цаг 3 минут",
+   "35 минут"
+  ],
+  "correct_answer": "3 цаг 05 минут",
+  "explanation": "三点 = 3 цаг, 零五 = 05 минут.",
+  "order_index": 14,
+  "id": "yct-2-l11-q14",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«两点零七» гэдэг нь:",
+  "options": [
+   "7 цаг 2 минут",
+   "2 цаг 07 минут",
+   "12 цаг",
+   "2 цаг 70"
+  ],
+  "correct_answer": "2 цаг 07 минут",
+  "explanation": "两点 = 2 цаг, 零七 = 07 минут.",
+  "order_index": 15,
+  "id": "yct-2-l11-q15",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Арван минут» хятадаар:",
+  "options": [
+   "十点",
+   "十分钟",
+   "十个",
+   "十年"
+  ],
+  "correct_answer": "十分钟",
+  "explanation": "分钟 = минут.",
+  "order_index": 16,
+  "id": "yct-2-l11-q16",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "现在几（ ）了？",
+  "options": [
+   "年",
+   "分钟",
+   "点",
+   "会"
+  ],
+  "correct_answer": "点",
+  "explanation": "几点了 — хэдэн цаг болов.",
+  "order_index": 17,
+  "id": "yct-2-l11-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我可以玩十（ ）吗？",
+  "options": [
+   "来",
+   "零",
+   "点",
+   "分钟"
+  ],
+  "correct_answer": "分钟",
+  "explanation": "十分钟 = арван минут.",
+  "order_index": 18,
+  "id": "yct-2-l11-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ）用汉语打电话吗？",
+  "options": [
+   "点",
+   "会",
+   "年",
+   "来"
+  ],
+  "correct_answer": "会",
+  "explanation": "会 = чадах.",
+  "order_index": 19,
+  "id": "yct-2-l11-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我来北京一年（ ）。",
+  "options": [
+   "吗",
+   "的",
+   "几",
+   "了"
+  ],
+  "correct_answer": "了",
+  "explanation": "来北京一年了 — нэг жил болжээ.",
+  "order_index": 20,
+  "id": "yct-2-l11-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我的头发长（ ）。",
+  "options": [
+   "了",
+   "点",
+   "分钟",
+   "年"
+  ],
+  "correct_answer": "了",
+  "explanation": "长了 = урт болсон.",
+  "order_index": 21,
+  "id": "yct-2-l11-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «fēnzhōng» гэж уншдаг үг:",
+  "options": [
+   "北京",
+   "打电话",
+   "现在",
+   "分钟"
+  ],
+  "correct_answer": "分钟",
+  "explanation": "分钟 = fēnzhōng = минут.",
+  "order_index": 22,
+  "id": "yct-2-l11-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «Běijīng» гэж уншдаг үг:",
+  "options": [
+   "晚上",
+   "北京",
+   "学校",
+   "现在"
+  ],
+  "correct_answer": "北京",
+  "explanation": "北京 = Běijīng.",
+  "order_index": 23,
+  "id": "yct-2-l11-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dǎ diànhuà» гэж уншдаг үг:",
+  "options": [
+   "去学校",
+   "喝茶",
+   "看电视",
+   "打电话"
+  ],
+  "correct_answer": "打电话",
+  "explanation": "打电话 = утсаар ярих.",
+  "order_index": 24,
+  "id": "yct-2-l11-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ээжээс тоглох зөвшөөрөл гуйхдаа:",
+  "options": [
+   "现在几点了？",
+   "我会玩。",
+   "我可以玩吗？",
+   "我来了。"
+  ],
+  "correct_answer": "我可以玩吗？",
+  "explanation": "Зөвшөөрөл гуйхад 可以……吗？",
+  "order_index": 25,
+  "id": "yct-2-l11-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ээж «可以» гэвэл:",
+  "options": [
+   "болохгүй гэсэн үг",
+   "баяртай гэсэн үг",
+   "болно гэсэн үг",
+   "хэдэн гэсэн үг"
+  ],
+  "correct_answer": "болно гэсэн үг",
+  "explanation": "可以 = болно.",
+  "order_index": 26,
+  "id": "yct-2-l11-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Мари Бээжинд ирээд хэдэн жил болсон бэ?",
+  "options": [
+   "нэг сар",
+   "нэг жил",
+   "хоёр жил",
+   "гурван жил"
+  ],
+  "correct_answer": "нэг жил",
+  "explanation": "我来北京一年了 — нэг жил.",
+  "order_index": 27,
+  "id": "yct-2-l11-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Mini story-д өглөө хүү хэнтэй хөдөлгөөн хийсэн бэ?",
+  "options": [
+   "найзтайгаа",
+   "аавтайгаа",
+   "ээжтэйгээ",
+   "ахтайгаа"
+  ],
+  "correct_answer": "аавтайгаа",
+  "explanation": "早上，我和爸爸运动。",
+  "order_index": 28,
+  "id": "yct-2-l11-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Mini story-д орой хүү юу хийсэн бэ?",
+  "options": [
+   "тоглосон",
+   "зурагт үзсэн",
+   "унтсан",
+   "ном уншсан"
+  ],
+  "correct_answer": "ном уншсан",
+  "explanation": "晚上，我看半个小时书。",
+  "order_index": 29,
+  "id": "yct-2-l11-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

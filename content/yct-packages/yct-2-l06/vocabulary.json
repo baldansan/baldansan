@@ -1,0 +1,86 @@
+[
+ {
+  "chinese": "钱",
+  "pinyin": "qián",
+  "mongolian": "мөнгө",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "包子多少钱一个？",
+  "examplePinyin": "Bāozi duōshao qián yí ge?",
+  "exampleMongolian": "Баоз нэг нь хэдийн үнэтэй вэ?",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "茶",
+  "pinyin": "chá",
+  "mongolian": "цай",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "有绿茶吗？",
+  "examplePinyin": "Yǒu lǜchá ma?",
+  "exampleMongolian": "Ногоон цай байна уу?",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "买",
+  "pinyin": "mǎi",
+  "mongolian": "худалдаж авах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "你买什么？",
+  "examplePinyin": "Nǐ mǎi shénme?",
+  "exampleMongolian": "Чи юу авах вэ?",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "多少",
+  "pinyin": "duōshao",
+  "mongolian": "хэд вэ, хэдэн (тоо, үнийг асуух)",
+  "notes": "асуух үг · гол үг",
+  "exampleChinese": "多少钱一杯？",
+  "examplePinyin": "Duōshao qián yì bēi?",
+  "exampleMongolian": "Нэг аяга нь хэд вэ?",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "块",
+  "pinyin": "kuài",
+  "mongolian": "юань (хятад мөнгөний нэгж)",
+  "notes": "тоолох үг · гол үг",
+  "exampleChinese": "两块钱一个。",
+  "examplePinyin": "Liǎng kuài qián yí ge.",
+  "exampleMongolian": "Нэг нь хоёр юань.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "杯",
+  "pinyin": "bēi",
+  "mongolian": "аяга (ундааг тоолох үг)",
+  "notes": "тоолох үг · нэмэлт үг",
+  "exampleChinese": "一杯茶",
+  "examplePinyin": "Yì bēi chá",
+  "exampleMongolian": "Нэг аяга цай",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "太贵了",
+  "pinyin": "tài guì le",
+  "mongolian": "үнэтэй байна шүү дээ!",
+  "notes": "хэллэг · нэмэлт үг",
+  "exampleChinese": "50块？！太贵了！",
+  "examplePinyin": "Wǔshí kuài?! Tài guì le!",
+  "exampleMongolian": "50 юань гэнээ?! Үнэтэй байна шүү дээ!",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 7
+ }
+]

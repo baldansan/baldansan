@@ -1,0 +1,285 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (11-04) сонсоод асуултад тохирох хариуг A, B, C-ээс сонго.",
+    "audio": "audio/yct-2-11-04.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）现在几点了？",
+      "question_mn": "1-р асуулт: асуултыг сонсоод тохирох хариуг A, B, C-ээс сонго",
+      "script_zh": "现在几点了？",
+      "pinyin": "Xiànzài jǐ diǎn le?",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "再见",
+       "星期一",
+       "两点零七"
+      ],
+      "optionPinyin": [
+       "zàijiàn",
+       "Xīngqīyī",
+       "liǎng diǎn líng qī"
+      ],
+      "answer": "C",
+      "explanation_mn": "Асуулт «Одоо хэдэн цаг болж байна?» — цагаар хариулна. C «两点零七» = 2 цаг 07 минут. A «баяртай», B «даваа гараг» — цаг биш."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）我可以玩十分钟吗？",
+      "question_mn": "2-р асуулт: асуултыг сонсоод тохирох хариуг A, B, C-ээс сонго",
+      "script_zh": "我可以玩十分钟吗？",
+      "pinyin": "Wǒ kěyǐ wán shí fēnzhōng ma?",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "几个椅子",
+       "不客气",
+       "可以"
+      ],
+      "optionPinyin": [
+       "jǐ ge yǐzi",
+       "bú kèqi",
+       "kěyǐ"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Би арван минут тоглож болох уу?» — зөвшөөрч «可以 (болно)» гэж хариулна. A «хэдэн сандал», B «зүгээр» — таарахгүй."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）你在做什么呢？",
+      "question_mn": "3-р асуулт: асуултыг сонсоод тохирох хариуг A, B, C-ээс сонго",
+      "script_zh": "你在做什么呢？",
+      "pinyin": "Nǐ zài zuò shénme ne?",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "八分钟",
+       "打电话",
+       "来北京"
+      ],
+      "optionPinyin": [
+       "bā fēnzhōng",
+       "dǎ diànhuà",
+       "lái Běijīng"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Чи юу хийж байна?» — үйлдлээр хариулна. B «打电话» = утсаар ярьж байна. A «8 минут» хугацаа, C «Бээжинд ирэх» — тохирохгүй."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）你弟弟在哪个房间？",
+      "question_mn": "4-р асуулт: асуултыг сонсоод тохирох хариуг A, B, C-ээс сонго",
+      "script_zh": "你弟弟在哪个房间？",
+      "pinyin": "Nǐ dìdi zài nǎ ge fángjiān?",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "他在六零七",
+       "他在房间里",
+       "他今年八岁了"
+      ],
+      "optionPinyin": [
+       "tā zài liù líng qī",
+       "tā zài fángjiān li",
+       "tā jīnnián bā suì le"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Дүү чинь аль өрөөнд байна вэ?» — өрөөний дугаараар хариулна. A «607». B «өрөөнд байна» — аль өрөө гэдгийг хэлээгүй. C «8 настай» — нас."
+     }
+    ],
+    "answer_source": "Test Answers: 1.C 2.C 3.B 4.A; Listening script"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — яриа бүрд тохирох зургийг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "A：现在几点了？ B：九点。",
+      "question_mn": "«Одоо хэдэн цаг?» — «Есөн цаг.»",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Есөн цаг» — A зураг дээр ханын цаг 9 цагийг заасан байна. B утсаар ярьж буй хүү, C хоёр хүүхэд, D урт үстэй эмэгтэй."
+     },
+     {
+      "n": 6,
+      "question_zh": "A：我的头发长吗？ B：很长。",
+      "question_mn": "«Миний үс урт уу?» — «Урт.»",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Үс урт» — D зураг дээрх эмэгтэй урт үстэй. A цаг, B утсаар ярьж буй хүү, C хоёр хүүхэд — үс нь урт биш."
+     },
+     {
+      "n": 7,
+      "question_zh": "A：你会用汉语打电话吗？ B：会。",
+      "question_mn": "«Чи хятадаар утсаар ярьж чадах уу?» — «Чадна.»",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Утсаар ярих» — B зураг дээр жижиг хүү утасны тавиур хамар дээр барьж ярьж байна. A цаг, C хоёр хүүхэд, D эмэгтэй."
+     },
+     {
+      "n": 8,
+      "question_zh": "A：谁的个子高？ B：姐姐的个子比弟弟高。",
+      "question_mn": "«Хэн өндөр вэ?» — «Эгч дүүгээс өндөр.»",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Эгч дүүгээсээ өндөр» — C зураг дээр хоёр хүүхэд зэрэгцэж зогсож байна, охин нь хүүгээс өндөр. Бусад зураг дээр ганц хүн эсвэл цаг байна."
+     }
+    ],
+    "answer_source": "Test Answers: 5.A 6.D 7.B 8.C"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Үлгэр «Миний ням гараг» — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "早上，我和爸爸运动两个小时。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр хүү аавтайгаа сагсан бөмбөг барьж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "中午，我睡一个小时。",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр хүү орон дээр унтаж байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "下午，我看一个小时电视。",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр хүү буйдан дээр зурагт үзэж байна."
+     },
+     {
+      "n": 4,
+      "question_zh": "晚上，我看半个小时书。",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр хүү орон дээрээ ном уншиж байна."
+     }
+    ],
+    "answer_source": "textbook х.56 (Mini story)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Асуулт бүрд тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "妈妈，几点了？",
+      "answer": "三点零五了。",
+      "explanation_mn": "Цаг асуусан тул цагаар хариулна."
+     },
+     {
+      "n": 2,
+      "question_zh": "我可以去那儿玩十分钟吗？",
+      "answer": "可以。",
+      "explanation_mn": "Зөвшөөрөл гуйсан тул «болно» гэж хариулна."
+     }
+    ],
+    "answer_source": "textbook х.54 (Let's read)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ханз бичих — «жил», «цаг» гэсэн ханзыг дахин бичиж хуулж үз.",
+    "question_zh": "年 点",
+    "answer": "年 点",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Цаг хэд болсныг асуу, хариул.",
+    "question_zh": "现在几点了？",
+    "answer": "现在……点。",
+    "explanation_mn": "Цаасан цагаа хараад хос болж ээлжлэн."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Өөрийн өөрчлөлтөө хэл.",
+    "question_zh": "我的个子高了。",
+    "answer": "我的……了。",
+    "explanation_mn": "Найздаа, дараа нь бүх ангид хэл."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "Өөрийн ням гарагийг ярь.",
+    "question_zh": "早上，我……",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Өглөө, үд дунд, үдээс хойш, орой юу хийдгээ хэл."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · Test Listening Scripts, Test Answers (Lesson 11)"
+}

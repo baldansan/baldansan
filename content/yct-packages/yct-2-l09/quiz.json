@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Гадил жимс» хятадаар аль нь вэ?",
+  "options": [
+   "苹果",
+   "水果",
+   "熊猫",
+   "香蕉"
+  ],
+  "correct_answer": "香蕉",
+  "explanation": "香蕉 (xiāngjiāo) = гадил жимс.",
+  "order_index": 1,
+  "id": "yct-2-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Панда» хятадаар аль нь вэ?",
+  "options": [
+   "小狗",
+   "香蕉",
+   "熊猫",
+   "小猫"
+  ],
+  "correct_answer": "熊猫",
+  "explanation": "熊猫 (xióngmāo) = панда.",
+  "order_index": 2,
+  "id": "yct-2-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Жимс» хятадаар аль нь вэ?",
+  "options": [
+   "水果",
+   "面条",
+   "米饭",
+   "牛奶"
+  ],
+  "correct_answer": "水果",
+  "explanation": "水果 (shuǐguǒ) = жимс.",
+  "order_index": 3,
+  "id": "yct-2-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«画» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "зурах",
+   "идэх",
+   "унтах",
+   "уух"
+  ],
+  "correct_answer": "зурах",
+  "explanation": "画 (huà) = зурах, зураг.",
+  "order_index": 4,
+  "id": "yct-2-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«没吃» гэдэг ямар утгатай вэ?",
+  "options": [
+   "идсэн",
+   "идмээр байна",
+   "хэдэн",
+   "идээгүй"
+  ],
+  "correct_answer": "идээгүй",
+  "explanation": "没 = …гүй. 没吃 = идээгүй.",
+  "order_index": 5,
+  "id": "yct-2-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«了» гэдэг үг юуг хэлдэг вэ?",
+  "options": [
+   "хийгээгүй",
+   "хэдэн",
+   "хийж дууссан",
+   "ба"
+  ],
+  "correct_answer": "хийж дууссан",
+  "explanation": "吃了 = идсэн. 了 нь хийж дууссаныг хэлнэ.",
+  "order_index": 6,
+  "id": "yct-2-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Алим» хятадаар аль нь вэ?",
+  "options": [
+   "熊猫",
+   "水果",
+   "苹果",
+   "香蕉"
+  ],
+  "correct_answer": "苹果",
+  "explanation": "苹果 (píngguǒ) = алим.",
+  "order_index": 7,
+  "id": "yct-2-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xiāngjiāo» гэж уншдаг үг:",
+  "options": [
+   "苹果",
+   "水果",
+   "香蕉",
+   "熊猫"
+  ],
+  "correct_answer": "香蕉",
+  "explanation": "香蕉 = xiāngjiāo = гадил жимс.",
+  "order_index": 8,
+  "id": "yct-2-l09-q08",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xióngmāo» гэж уншдаг үг:",
+  "options": [
+   "小狗",
+   "熊猫",
+   "香蕉",
+   "小猫"
+  ],
+  "correct_answer": "熊猫",
+  "explanation": "熊猫 = xióngmāo = панда.",
+  "order_index": 9,
+  "id": "yct-2-l09-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shuǐguǒ» гэж уншдаг үг:",
+  "options": [
+   "苹果",
+   "香蕉",
+   "水果",
+   "面条"
+  ],
+  "correct_answer": "水果",
+  "explanation": "水果 = shuǐguǒ = жимс.",
+  "order_index": 10,
+  "id": "yct-2-l09-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би идсэн» хятадаар:",
+  "options": [
+   "我吃了。",
+   "我喝了。",
+   "我画了。",
+   "我没吃。"
+  ],
+  "correct_answer": "我吃了。",
+  "explanation": "吃了 = идсэн.",
+  "order_index": 11,
+  "id": "yct-2-l09-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би зураг зурсан» хятадаар:",
+  "options": [
+   "我画画儿了。",
+   "我画熊猫。",
+   "我没画画儿。",
+   "我吃画儿了。"
+  ],
+  "correct_answer": "我画画儿了。",
+  "explanation": "画画儿 = зураг зурах, 了 = дууссан.",
+  "order_index": 12,
+  "id": "yct-2-l09-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи өнөөдөр юу хийсэн бэ?» хятадаар:",
+  "options": [
+   "你家有几口人？",
+   "你吃了几个？",
+   "你今天做什么了？",
+   "你吃水果了吗？"
+  ],
+  "correct_answer": "你今天做什么了？",
+  "explanation": "做什么了 = юу хийсэн бэ.",
+  "order_index": 13,
+  "id": "yct-2-l09-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи өнөөдөр жимс идсэн үү?» хятадаар:",
+  "options": [
+   "你今天吃水果了吗？",
+   "你有水果吗？",
+   "你今天画画儿了吗？",
+   "你今天吃什么了？"
+  ],
+  "correct_answer": "你今天吃水果了吗？",
+  "explanation": "吃水果了吗 = жимс идсэн үү.",
+  "order_index": 14,
+  "id": "yct-2-l09-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ээж «你今天吃水果了吗？» гэж асуулаа. Идсэн бол юу гэж хариулах вэ?",
+  "options": [
+   "没画。",
+   "画了。",
+   "再见。",
+   "吃了。"
+  ],
+  "correct_answer": "吃了。",
+  "explanation": "Идсэн бол 吃了.",
+  "order_index": 15,
+  "id": "yct-2-l09-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我吃（ ）一个香蕉。",
+  "options": [
+   "画",
+   "了",
+   "吗",
+   "没"
+  ],
+  "correct_answer": "了",
+  "explanation": "Идсэн бол үйл үгийн ард 了.",
+  "order_index": 16,
+  "id": "yct-2-l09-q16",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）画熊猫。",
+  "options": [
+   "几",
+   "吗",
+   "了",
+   "没"
+  ],
+  "correct_answer": "没",
+  "explanation": "Зураагүй бол 没.",
+  "order_index": 17,
+  "id": "yct-2-l09-q17",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你今天做（ ）了？",
+  "options": [
+   "没",
+   "和",
+   "几个",
+   "什么"
+  ],
+  "correct_answer": "什么",
+  "explanation": "«Юу» — 什么.",
+  "order_index": 18,
+  "id": "yct-2-l09-q18",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你吃了（ ）个冰淇淋？",
+  "options": [
+   "没",
+   "了",
+   "几",
+   "什么"
+  ],
+  "correct_answer": "几",
+  "explanation": "«Хэдэн» — 几.",
+  "order_index": 19,
+  "id": "yct-2-l09-q19",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "吃了一个苹果（ ）一个香蕉。",
+  "options": [
+   "吗",
+   "和",
+   "没",
+   "画"
+  ],
+  "correct_answer": "和",
+  "explanation": "«ба» — 和.",
+  "order_index": 20,
+  "id": "yct-2-l09-q20",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我没画熊猫» гэдэг нь:",
+  "options": [
+   "Би панда харсан",
+   "Би панда зурсан",
+   "Би панда зураагүй",
+   "Би панда идсэн"
+  ],
+  "correct_answer": "Би панда зураагүй",
+  "explanation": "没画 = зураагүй.",
+  "order_index": 21,
+  "id": "yct-2-l09-q21",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дараах дундаас зөв өгүүлбэр аль нь вэ?",
+  "options": [
+   "我没吃香蕉了。",
+   "我没吃香蕉。",
+   "没我吃香蕉。",
+   "我吃没香蕉。"
+  ],
+  "correct_answer": "我没吃香蕉。",
+  "explanation": "«没» үйл үгийн өмнө орно, «了» хэрэггүй.",
+  "order_index": 22,
+  "id": "yct-2-l09-q22",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«我吃苹果了» гэдгийн эсрэг нь:",
+  "options": [
+   "我吃了。",
+   "我没吃苹果。",
+   "我吃香蕉了。",
+   "我画苹果了。"
+  ],
+  "correct_answer": "我没吃苹果。",
+  "explanation": "Эсрэг үгийн тоглоом: 吃了 ↔ 没吃.",
+  "order_index": 23,
+  "id": "yct-2-l09-q23",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-д хүү юу зурсан бэ?",
+  "options": [
+   "小狗",
+   "小猫",
+   "苹果",
+   "熊猫"
+  ],
+  "correct_answer": "小狗",
+  "explanation": "Хүү «我没画熊猫，这是小狗！» гэв.",
+  "order_index": 24,
+  "id": "yct-2-l09-q24",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д хулгана хэдэн зайрмаг идсэн бэ?",
+  "options": [
+   "一个",
+   "两个",
+   "四个",
+   "三个"
+  ],
+  "correct_answer": "三个",
+  "explanation": "吃了三个冰淇淋.",
+  "order_index": 25,
+  "id": "yct-2-l09-q25",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д хулгана хэдэн аяга мөстэй ус уусан бэ?",
+  "options": [
+   "四杯",
+   "三杯",
+   "两杯",
+   "一杯"
+  ],
+  "correct_answer": "四杯",
+  "explanation": "还喝了四杯冰水.",
+  "order_index": 26,
+  "id": "yct-2-l09-q26",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дуунд «吃了香蕉» гэхэд юу хийх вэ?",
+  "options": [
+   "зурах",
+   "алгаа таших",
+   "хөлөө дэвсэх",
+   "унтах"
+  ],
+  "correct_answer": "алгаа таших",
+  "explanation": "如果吃了香蕉，你就拍拍手 — алгаа таш.",
+  "order_index": 27,
+  "id": "yct-2-l09-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дараах дундаас жимс биш нь:",
+  "options": [
+   "苹果",
+   "水果",
+   "熊猫",
+   "香蕉"
+  ],
+  "correct_answer": "熊猫",
+  "explanation": "熊猫 = панда (амьтан). Бусад нь жимс.",
+  "order_index": 28,
+  "id": "yct-2-l09-q28",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ }
+]

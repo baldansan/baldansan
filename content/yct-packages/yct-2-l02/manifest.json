@@ -1,0 +1,249 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-2",
+ "lessonId": "yct-2-l02",
+ "hskLevel": 1,
+ "lessonNumber": 2,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你早上几点起床？",
+ "mongolianTitle": "Өглөө хэд цагт босдог вэ?",
+ "series": "YCT 标准教程 2",
+ "seriesLabel_mn": "YCT 2 — Хүүхдийн хятад хэл (≈HSK1–2)",
+ "source": "YCT 标准教程 2 · 第2课 (сурах бичиг + CD аудио 02-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-2-02-text-song.mp3",
+  "dialogues": "audio/yct-2-02-02.mp3",
+  "words": "audio/yct-2-02-01.mp3",
+  "story": "audio/yct-2-02-04.mp3",
+  "song": "audio/yct-2-02-03.mp3",
+  "test": "audio/yct-2-02-05.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-2-l02",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你早上几点起床？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你早上几点起床？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "妈妈，今天晚上我可以不睡觉吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "快快起床",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "你怎么不起床？ · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "你怎么不起床？",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-qichuang",
+    "file": "images/w-qichuang.jpg",
+    "title": "起床",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuijiao",
+    "file": "images/w-shuijiao.jpg",
+    "title": "睡觉",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zaoshang",
+    "file": "images/w-zaoshang.jpg",
+    "title": "早上",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wanshang",
+    "file": "images/w-wanshang.jpg",
+    "title": "晚上",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dian",
+    "file": "images/w-dian.jpg",
+    "title": "点",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dao",
+    "file": "images/w-dao.jpg",
+    "title": "到",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ne",
+    "file": "images/w-ne.jpg",
+    "title": "呢",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yao",
+    "file": "images/w-yao.jpg",
+    "title": "要",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3a",
+    "file": "images/t3a.png",
+    "title": "Test 3a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3b",
+    "file": "images/t3b.png",
+    "title": "Test 3b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3c",
+    "file": "images/t3c.png",
+    "title": "Test 3c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4a",
+    "file": "images/t4a.png",
+    "title": "Test 4a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4b",
+    "file": "images/t4b.png",
+    "title": "Test 4b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4c",
+    "file": "images/t4c.png",
+    "title": "Test 4c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5a",
+    "file": "images/t5a.png",
+    "title": "Test 5a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5b",
+    "file": "images/t5b.png",
+    "title": "Test 5b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5c",
+    "file": "images/t5c.png",
+    "title": "Test 5c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5d",
+    "file": "images/t5d.png",
+    "title": "Test 5d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L2)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "judge",
+    "instruction_mn": "Сонсох — Аудио (01-05) сонсоод зураг таарч байвал ✓, таарахгүй бол ✗.",
+    "audio": "audio/yct-2-01-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）请坐。",
+      "image": "images/t1.png",
+      "script_zh": "请坐。",
+      "answer": "✗",
+      "explanation_mn": "Аудионд «请坐 — суугаарай» гэнэ. Зураг дээр хоёр охин тоглоомон баавгайг булаалдаж байна. Суухыг урьж байгаа биш → ✗."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）谢谢妈妈。",
+      "image": "images/t2.png",
+      "script_zh": "谢谢妈妈。",
+      "answer": "✓",
+      "explanation_mn": "Аудионд «谢谢妈妈 — ээжид баярлалаа». Зураг дээр ээж охиндоо юм өгөхөд охин баярлаж байна → ✓."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）请不要说话。",
+      "image": "images/t3.png",
+      "script_zh": "请不要说话。",
+      "answer": "✓",
+      "explanation_mn": "Аудионд «请不要说话 — дуугүй байгаарай». Зураг дээр эмэгтэй хуруугаа амандаа тавьж «шш» гэж байна → ✓."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）今天吃面条，可以吗？",
+      "image": "images/t4.png",
+      "script_zh": "今天吃面条，可以吗？",
+      "answer": "✗",
+      "explanation_mn": "Аудионд «Өнөөдөр гоймон идэж болох уу?» Зураг дээр хүн алим идэж байна, гоймон биш → ✗."
+     }
+    ],
+    "answer_source": "Test Answers: 1.✗ 2.✓ 3.✓ 4.✗; Listening script х.68/70"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — өгүүлбэр бүрд тохирох хариултыг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "谢谢。",
+      "question_mn": "Баярлалаа гэвэл...",
+      "options": [
+       "A 不，谢谢。",
+       "B 可以，请坐。",
+       "C 不客气。",
+       "D 好的，对不起。"
+      ],
+      "answer": "C",
+      "explanation_mn": "Баярлалаа гэсэнд «不客气» (зүгээр ээ) гэж хариулна. A «үгүй, баярлалаа», B «болно, суугаарай», D «за, уучлаарай»."
+     },
+     {
+      "n": 6,
+      "question_zh": "你喝水吗？",
+      "question_mn": "Ус уух уу?",
+      "options": [
+       "A 不，谢谢。",
+       "B 可以，请坐。",
+       "C 不客气。",
+       "D 好的，对不起。"
+      ],
+      "answer": "A",
+      "explanation_mn": "Ус уух уу гэсэнд «不，谢谢» (үгүй, баярлалаа) гэж татгалзаж болно. B суухыг, C талархлыг, D уучлалтыг хэлнэ."
+     },
+     {
+      "n": 7,
+      "question_zh": "请不要说话。",
+      "question_mn": "Дуугүй байгаарай гэвэл...",
+      "options": [
+       "A 不，谢谢。",
+       "B 可以，请坐。",
+       "C 不客气。",
+       "D 好的，对不起。"
+      ],
+      "answer": "D",
+      "explanation_mn": "Дуугүй байгаарай гэхэд «好的，对不起» (за, уучлаарай) гэнэ. Бусад нь тохирохгүй."
+     },
+     {
+      "n": 8,
+      "question_zh": "你好，我可以坐这儿吗？",
+      "question_mn": "Би энд суувал болох уу?",
+      "options": [
+       "A 不，谢谢。",
+       "B 可以，请坐。",
+       "C 不客气。",
+       "D 好的，对不起。"
+      ],
+      "answer": "B",
+      "explanation_mn": "Суугаарай гэж хариулахдаа «可以，请坐» (болно, суугаарай) гэнэ."
+     }
+    ],
+    "answer_source": "Test Answers: 5.C 6.A 7.D 8.B"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's match — тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "老师好。",
+      "answer": "你好。",
+      "explanation_mn": "Мэндэлсэнд мэндээр хариулна."
+     },
+     {
+      "n": 2,
+      "question_zh": "谢谢。",
+      "answer": "不客气。",
+      "explanation_mn": "Талархалд 不客气."
+     },
+     {
+      "n": 3,
+      "question_zh": "对不起。",
+      "answer": "没关系。",
+      "explanation_mn": "Уучлалтад 没关系."
+     },
+     {
+      "n": 4,
+      "question_zh": "再见。",
+      "answer": "再见。",
+      "explanation_mn": "Баяртай гэвэл баяртай гэж хариулна."
+     }
+    ],
+    "answer_source": "textbook х.5 (Let's match, логикоор)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Давтлага — YCT 1-ийн асуулт бүрд тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "今天星期几？",
+      "answer": "今天星期天。",
+      "explanation_mn": "Ямар гариг вэ гэсэнд гарагаа хэлнэ."
+     },
+     {
+      "n": 2,
+      "question_zh": "你爸爸在家吗？",
+      "answer": "他不在。",
+      "explanation_mn": "Аав гэрт байна уу гэсэнд «Тэр байхгүй»."
+     },
+     {
+      "n": 3,
+      "question_zh": "这是你的小猫吗？",
+      "answer": "不是。",
+      "explanation_mn": "«Энэ чиний муур уу?» — «Үгүй»."
+     },
+     {
+      "n": 4,
+      "question_zh": "今天几月几号？",
+      "answer": "今天二月十号。",
+      "explanation_mn": "Огноо асуусан."
+     },
+     {
+      "n": 5,
+      "question_zh": "你家有几口人？",
+      "answer": "我家有五口人。",
+      "explanation_mn": "Хэдэн хүн вэ гэсэнд тоо хэлнэ."
+     },
+     {
+      "n": 6,
+      "question_zh": "你吃什么？",
+      "answer": "我吃苹果。",
+      "explanation_mn": "Юу идэх вэ гэсэнд алим."
+     },
+     {
+      "n": 7,
+      "question_zh": "你有几个姐姐？",
+      "answer": "我有两个姐姐。",
+      "explanation_mn": "Хэдэн эгчтэй вэ гэсэнд 两个."
+     }
+    ],
+    "answer_source": "textbook х.4 (Let's match, логикоор)"
+   },
+   {
+    "part": 5,
+    "type": "match",
+    "instruction_mn": "Үнсгэлжин — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我可以去吗？——不可以。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг: хойд эх «болохгүй» гэж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "我可以穿吗？——可以。谢谢你！",
+      "answer": "2",
+      "explanation_mn": "2-р зураг: шидэт эмээ даашинз өгч байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "我可以请你跳舞吗？——好的。",
+      "answer": "3",
+      "explanation_mn": "3-р зураг: ханхүү бүжиглэхийг урьж байна."
+     },
+     {
+      "n": 4,
+      "question_zh": "你去哪儿？",
+      "answer": "4",
+      "explanation_mn": "4-р зураг: ханхүү араас нь «хаачих вэ» гэж байна."
+     }
+    ],
+    "answer_source": "textbook х.8 (Mini story)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ханз бичих — «请», «坐» гэсэн ханзыг дахин бичиж хуулж үз.",
+    "question_zh": "请 坐",
+    "answer": "请 坐",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа суухыг эелдгээр асуу.",
+    "question_zh": "我可以坐这儿吗？",
+    "answer": "我可以坐这儿吗？",
+    "explanation_mn": "Хосоороо ээлжлэн."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Чанга ярьж байгаа найздаа эелдгээр хэл.",
+    "question_zh": "请不要说话。",
+    "answer": "请不要说话。",
+    "explanation_mn": "Хуруугаа амандаа тавь."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«谢谢您 · 对不起» дууг хөдөлгөөнтэй дуул.",
+    "question_zh": "谢谢您",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 01-03-ын хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · Test Listening Scripts х.68, Test Answers х.70 (Lesson 1)"
+}

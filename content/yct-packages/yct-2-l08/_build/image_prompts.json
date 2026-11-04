@@ -1,0 +1,121 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "马丁比我大三岁。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands with three young camels (yellow calf boy, calf girl in yellow dress with pink ribbon, brown calf boy with green hat) lined up by height in a sunny schoolyard, the tallest one patting the smallest; a speech bubble with the Chinese text 比 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-didi.jpg",
+  "aspect": "1:1",
+  "title": "弟弟",
+  "section": "vocabulary",
+  "prompt": "A small yellow calf boy in blue vest with red bag hugging an even smaller calf, an older calf brother holding his hand, cheerful home garden. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-meimei.jpg",
+  "aspect": "1:1",
+  "title": "妹妹",
+  "section": "vocabulary",
+  "prompt": "A small calf girl in yellow dress with pink ribbon smiling and waving, her older calf sibling standing behind her. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-pengyou.jpg",
+  "aspect": "1:1",
+  "title": "朋友",
+  "section": "vocabulary",
+  "prompt": "Yellow calf boy and brown calf boy in green hat high-fiving and laughing together in a park, hearts floating. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-tongxue.jpg",
+  "aspect": "1:1",
+  "title": "同学",
+  "section": "vocabulary",
+  "prompt": "Yellow calf boy, calf girl and brown calf boy sitting side by side at classroom desks with school bags, teacher camel at the blackboard. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-ye.jpg",
+  "aspect": "1:1",
+  "title": "也",
+  "section": "vocabulary",
+  "prompt": "Yellow calf boy raising his hand and the calf girl also raising her hand with the same pose, two matching smiling calves, a plus sign arrow between them. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xuesheng.jpg",
+  "aspect": "1:1",
+  "title": "学生",
+  "section": "vocabulary",
+  "prompt": "Three young calves with school bags walking into a school gate in the morning, smiling. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "哥哥比姐姐高",
+  "section": "dialogue",
+  "prompt": "Five camels standing in a row in a park from tallest to smallest: adult camel big brother, adult camel big sister, yellow calf boy, brown calf boy, little calf girl; a small dog named Dahuang beside them. Speech bubble with the Chinese text 哥哥比姐姐高 in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "bor",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "这是苏珊",
+  "section": "dialogue",
+  "prompt": "Birthday party in a garden: calf girl in yellow dress introduces two friends, a calf girl with braids and a taller calf boy, with a birthday cake with candle, fruit basket and juice bottles on a checkered table. Speech bubble with the Chinese text 这是苏珊 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "比高矮",
+  "section": "story",
+  "prompt": "Four-panel look: a tall brown Bactrian camel stretches to eat tree leaves proudly while a small white goat stands below looking up, then the goat on a wall looking at the camel; humorous friendly mood. Speech bubble with the Chinese text 我比你高 in large clear black font. No English text.",
+  "chars": [
+   "temee"
+  ]
+ }
+]

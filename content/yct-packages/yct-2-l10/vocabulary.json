@@ -1,0 +1,86 @@
+[
+ {
+  "chinese": "脚",
+  "pinyin": "jiǎo",
+  "mongolian": "хөл",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我脚疼！",
+  "examplePinyin": "Wǒ jiǎo téng!",
+  "exampleMongolian": "Миний хөл өвдөж байна!",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "医院",
+  "pinyin": "yīyuàn",
+  "mongolian": "эмнэлэг",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我不去医院，我去学校。",
+  "examplePinyin": "Wǒ bú qù yīyuàn, wǒ qù xuéxiào.",
+  "exampleMongolian": "Би эмнэлэг явахгүй, сургууль явна.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "怎么了",
+  "pinyin": "zěnme le",
+  "mongolian": "юу болсон бэ, яасан бэ",
+  "notes": "асуух хэллэг · гол үг",
+  "exampleChinese": "你怎么了？",
+  "examplePinyin": "Nǐ zěnme le?",
+  "exampleMongolian": "Чи яасан бэ?",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "疼",
+  "pinyin": "téng",
+  "mongolian": "өвдөх",
+  "notes": "үйл үг · нэмэлт үг",
+  "exampleChinese": "我脚疼！",
+  "examplePinyin": "Wǒ jiǎo téng!",
+  "exampleMongolian": "Миний хөл өвдөж байна!",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "手",
+  "pinyin": "shǒu",
+  "mongolian": "гар",
+  "notes": "нэр үг · нэмэлт үг",
+  "exampleChinese": "现在我手不疼了。",
+  "examplePinyin": "Xiànzài wǒ shǒu bù téng le.",
+  "exampleMongolian": "Одоо миний гар өвдөхгүй боллоо.",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "医生",
+  "pinyin": "yīshēng",
+  "mongolian": "эмч",
+  "notes": "нэр үг · нэмэлт үг",
+  "exampleChinese": "我们去看医生。",
+  "examplePinyin": "Wǒmen qù kàn yīshēng.",
+  "exampleMongolian": "Бид эмчид үзүүлэхээр явъя.",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "起床",
+  "pinyin": "qǐchuáng",
+  "mongolian": "орноосоо босох",
+  "notes": "үйл үг · нэмэлт үг",
+  "exampleChinese": "明明，起床！",
+  "examplePinyin": "Míngming, qǐchuáng!",
+  "exampleMongolian": "Мин-мин, босооч!",
+  "hskLevel": "YCT 2",
+  "keyWord": false,
+  "orderIndex": 7
+ }
+]

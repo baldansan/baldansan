@@ -1,0 +1,150 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-2",
+ "lessonId": "yct-2-l05",
+ "hskLevel": 1,
+ "lessonNumber": 5,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你会不会做饭？",
+ "mongolianTitle": "Чи хоол хийж чадах уу?",
+ "series": "YCT 标准教程 2",
+ "seriesLabel_mn": "YCT 2 — Хүүхдийн хятад хэл (≈HSK1–2)",
+ "source": "YCT 标准教程 2 · 第5课 (сурах бичиг + CD аудио 05-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-2-05-02.mp3",
+  "dialogues": "audio/yct-2-05-02.mp3",
+  "words": "audio/yct-2-05-01.mp3",
+  "story": "audio/yct-2-05-03.mp3",
+  "test": "audio/yct-2-05-04.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-2-l05",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你会不会做饭？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "姐姐，你会不会做饭？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "这个包子真好吃！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "丑小鸭 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-baozi",
+    "file": "images/w-baozi.jpg",
+    "title": "包子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yisheng",
+    "file": "images/w-yisheng.jpg",
+    "title": "医生",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chushi",
+    "file": "images/w-chushi.jpg",
+    "title": "厨师",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hui",
+    "file": "images/w-hui.jpg",
+    "title": "会",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zuo",
+    "file": "images/w-zuo.jpg",
+    "title": "做",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhen",
+    "file": "images/w-zhen.jpg",
+    "title": "真",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-haochi",
+    "file": "images/w-haochi.jpg",
+    "title": "好吃",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-piaoliang",
+    "file": "images/w-piaoliang.jpg",
+    "title": "漂亮",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L5)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

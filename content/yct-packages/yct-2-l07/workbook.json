@@ -1,0 +1,265 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (07-05) сонсоод тохирох зургийг A, B, C, D-ээс сонго.",
+    "audio": "audio/yct-2-07-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）妹妹爱喝热牛奶。",
+      "script_zh": "妹妹爱喝热牛奶。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Дүү халуун сүү уух дуртай» — B зураг дээр охин аягатай сүү ууж байна. A эр хүн охиныг тэврээд байна, C хүү гоймон идэж байна, D үүргэвчтэй охин зогсож байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）爸爸的个子比我高。",
+      "script_zh": "爸爸的个子比我高。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Аав надаас өндөр» — A зураг дээр өндөр аав жижиг охины ард зогсож байна. B сүү ууж буй охин, C гоймон идэж буй хүү, D үүргэвчтэй охин."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）你看，我的书包怎么样？",
+      "script_zh": "你看，我的书包怎么样？",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Хар даа, миний цүнх ямар байна?» — D зураг дээр охин цүнхээ үзүүлж зогсож байна. Бусад зурагт цүнх алга."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）你觉得这儿的面条儿好吃不好吃？",
+      "script_zh": "你觉得这儿的面条儿好吃不好吃？",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Энд гоймон чамд амттай санагдаж байна уу?» — C зураг дээр хүү том таваг гоймон идэж байна."
+     }
+    ],
+    "answer_source": "YCT 2 Test Answers L7: 1.B 2.A 3.D 4.C"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — ярианд тохирох зургийг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "A：我们两个人谁的手大？ B：你的手比我的小。",
+      "question_mn": "Хоёулаа хэний гар том вэ? — Чиний гар минийхээс жижиг.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "Хоёр хүний гарыг харьцуулж байна — B зураг дээр том, жижиг хоёр гар харагдаж байна. A даарсан хүүхэд, C цай барьсан охин, D эрхий хуруу."
+     },
+     {
+      "n": 6,
+      "question_zh": "A：今天天气怎么样？ B：比昨天冷。",
+      "question_mn": "Өнөөдөр цаг агаар ямар байна? — Өчигдрөөс хүйтэн.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Өчигдрөөс хүйтэн» — A зураг дээр хүүхэд малгай өмсөөд даарч байна. B гар, C цай, D эрхий хуруу."
+     },
+     {
+      "n": 7,
+      "question_zh": "A：这茶好喝不好喝？ B：很好喝！",
+      "question_mn": "Энэ цай амттай юу? — Маш амттай!",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "Цайны тухай — C зураг дээр охин аяга цай барьж байна. Цай = 茶, амттай = 好喝."
+     },
+     {
+      "n": 8,
+      "question_zh": "A：我的汉语怎么样？ B：很好，很好！",
+      "question_mn": "Миний хятад хэл ямар байна? — Маш сайн!",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "Магтаж байна — D зураг дээр эрхий хуруу өргөсөн байна. Энэ нь «маш сайн» гэсэн дохио."
+     }
+    ],
+    "answer_source": "YCT 2 Test Answers L7: 5.B 6.A 7.C 8.D"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Асуулт бүрд тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "北京天气怎么样？",
+      "answer": "很好，不冷也不热。",
+      "explanation_mn": "Цаг агаар ямар вэ гэсэн асуултад хариулсан."
+     },
+     {
+      "n": 2,
+      "question_zh": "纽约呢？",
+      "answer": "纽约今天比昨天热。",
+      "explanation_mn": "Нью-Йорк өчигдрөөс халуун."
+     }
+    ],
+    "answer_source": "textbook х.34 (Let's read)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Үлгэр «比一比» — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "哥哥比我聪明。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр ах тестээ барьж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "姐姐比我漂亮。",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр гоё даашинзтай эгч."
+     },
+     {
+      "n": 3,
+      "question_zh": "我不聪明，也不漂亮。",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр охин гунигтай хацраа түшиж байна."
+     },
+     {
+      "n": 4,
+      "question_zh": "你很可爱，我们爱你！",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр ах эгч нь охиныг гараас нь барьж байна."
+     }
+    ],
+    "answer_source": "textbook х.36 (Mini story)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Let's write — 3 өдрийн хамгийн өндөр, нам температураа тэмдэглээд 比-ээр харьцуул.",
+    "question_zh": "今天比昨天……",
+    "answer": "今天比昨天热/冷。",
+    "explanation_mn": "Хоёр өдрийн температурыг харьцуулж 热 эсвэл 冷 гэж бич."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Let's say — зургийг хараад асуулт хариул.",
+    "question_zh": "今天天气怎么样？ 今天……。",
+    "answer": "今天热。/ 今天冷。",
+    "explanation_mn": "Зургийн нар бол 热, цастай үүл бол 冷."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Гэр бүлийнхээ дуртай ундааг 比-ээр хэл.",
+    "question_zh": "我觉得……比……好喝。",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Номын 2-р текстээр хэл."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«天气怎么样？» дууг чичрэх, сэнгэнэх хөдөлгөөнтэй дуул.",
+    "question_zh": "纽约比北京冷",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 07-03-тай хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · Test Listening Scripts, Test Answers (Lesson 7)"
+}

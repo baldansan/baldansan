@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "可以",
+  "pinyin": "kěyǐ",
+  "mongolian": "болно, чадна",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我可以坐这儿吗？",
+  "examplePinyin": "Wǒ kěyǐ zuò zhèr ma?",
+  "exampleMongolian": "Би энд суувал болох уу?",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "坐",
+  "pinyin": "zuò",
+  "mongolian": "суух",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "请坐。",
+  "examplePinyin": "Qǐng zuò.",
+  "exampleMongolian": "Суугаарай.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "请",
+  "pinyin": "qǐng",
+  "mongolian": "гуйя, ...аарай (эелдгээр хэлэх үг)",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "请坐。",
+  "examplePinyin": "Qǐng zuò.",
+  "exampleMongolian": "Суугаарай.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "不客气",
+  "pinyin": "bú kèqi",
+  "mongolian": "зүгээр ээ (талархалд хариулах үг)",
+  "notes": "хэллэг · гол үг",
+  "exampleChinese": "谢谢！——不客气。",
+  "examplePinyin": "Xièxie! — Bú kèqi.",
+  "exampleMongolian": "Баярлалаа! — Зүгээр ээ.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "不要",
+  "pinyin": "bú yào",
+  "mongolian": "битгий, ... хэрэггүй",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "请不要说话。",
+  "examplePinyin": "Qǐng bú yào shuōhuà.",
+  "exampleMongolian": "Дуугүй байгаарай (ярихгүй байгаарай).",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "说话",
+  "pinyin": "shuōhuà",
+  "mongolian": "ярих",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "请不要说话。",
+  "examplePinyin": "Qǐng bú yào shuōhuà.",
+  "exampleMongolian": "Дуугүй байгаарай (ярихгүй байгаарай).",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "对不起",
+  "pinyin": "duìbuqǐ",
+  "mongolian": "уучлаарай",
+  "notes": "хэллэг · гол үг",
+  "exampleChinese": "好的，对不起。",
+  "examplePinyin": "Hǎode, duìbuqǐ.",
+  "exampleMongolian": "За, уучлаарай.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "没关系",
+  "pinyin": "méi guānxi",
+  "mongolian": "зүгээр, зовох юмгүй",
+  "notes": "хэллэг · гол үг",
+  "exampleChinese": "对不起！——没关系。",
+  "examplePinyin": "Duìbuqǐ! — Méi guānxi.",
+  "exampleMongolian": "Уучлаарай! — Зүгээр дээ.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 8
+ }
+]

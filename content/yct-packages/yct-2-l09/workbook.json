@@ -1,0 +1,259 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "judge",
+    "instruction_mn": "Сонсох — Аудио (09-06) сонсоод зураг таарч байвал ✓, таарахгүй бол ✗.",
+    "audio": "audio/yct-2-09-06.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）两只大熊猫",
+      "image": "images/t1.png",
+      "script_zh": "两只大熊猫",
+      "answer": "✗",
+      "explanation_mn": "Аудионд «两只大熊猫 — хоёр том панда». Зураг дээр хоёр муур байна, панда биш → ✗."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）没睡觉",
+      "image": "images/t2.png",
+      "script_zh": "没睡觉",
+      "answer": "✓",
+      "explanation_mn": "Аудионд «没睡觉 — унтаагүй». Зураг дээр эмэгтэй ор дээр хэвтээд утсаар ярьж байна, нүд нь нээлттэй → ✓."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）吃香蕉",
+      "image": "images/t3.png",
+      "script_zh": "吃香蕉",
+      "answer": "✓",
+      "explanation_mn": "Аудионд «吃香蕉 — гадил жимс идэх». Зураг дээр охин гадил жимс идэж байна → ✓."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）画画儿",
+      "image": "images/t4.png",
+      "script_zh": "画画儿",
+      "answer": "✓",
+      "explanation_mn": "Аудионд «画画儿 — зураг зурах». Зураг дээр хоёр хүүхэд сойз барьж зураг зурж байна → ✓."
+     }
+    ],
+    "answer_source": "Test Answers: 1.✗ 2.✓ 3.✓ 4.✓"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — асуулт бүрд тохирох хариултыг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "你昨天买什么了？",
+      "question_mn": "Чи өчигдөр юу худалдаж авсан бэ?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "没起床。",
+       "两个。",
+       "苹果。",
+       "吃了。"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Юу авсан бэ?» гэж асуусан тул юмаар хариулна: «苹果 — алим». 没起床 босоогүй, 两个 хоёр ширхэг, 吃了 идсэн — асуулттай таарахгүй."
+     },
+     {
+      "n": 6,
+      "question_zh": "你哥哥起床了吗？",
+      "question_mn": "Чиний ах боссон уу?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "没起床。",
+       "两个。",
+       "苹果。",
+       "吃了。"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Боссон уу?» гэж асуусан. «没起床 — босоогүй» нь хариулт болно."
+     },
+     {
+      "n": 7,
+      "question_zh": "你吃饭了吗？",
+      "question_mn": "Чи хоол идсэн үү?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "没起床。",
+       "两个。",
+       "苹果。",
+       "吃了。"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Хоол идсэн үү?» гэсэн асуултад «吃了 — идсэн» гэж хариулна."
+     },
+     {
+      "n": 8,
+      "question_zh": "你吃了几个香蕉？",
+      "question_mn": "Чи хэдэн гадил жимс идсэн бэ?",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionTexts": [
+       "没起床。",
+       "两个。",
+       "苹果。",
+       "吃了。"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Хэдэн?» гэж асуусан тул тоогоор хариулна: «两个 — хоёр ширхэг»."
+     }
+    ],
+    "answer_source": "Test Answers: 5.C 6.A 7.D 8.B"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Асуулт бүрд тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你今天吃水果了吗？",
+      "answer": "吃了。",
+      "explanation_mn": "Асуулт «жимс идсэн үү?» — «吃了» гэж хариулна."
+     },
+     {
+      "n": 2,
+      "question_zh": "吃了什么水果？",
+      "answer": "吃了一个苹果和一个香蕉。",
+      "explanation_mn": "«Ямар жимс?» гэсэн асуултад жимсээ нэрлэнэ."
+     },
+     {
+      "n": 3,
+      "question_zh": "你今天做什么了？",
+      "answer": "我画画儿了。",
+      "explanation_mn": "«Юу хийсэн бэ?» — «зураг зурсан»."
+     },
+     {
+      "n": 4,
+      "question_zh": "你吃了几个冰淇淋？",
+      "answer": "吃了三个冰淇淋。",
+      "explanation_mn": "«Хэдэн?» — тоогоо хэлнэ."
+     }
+    ],
+    "answer_source": "textbook х.44, х.46 (Let's read, Mini story)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Үлгэр «看医生» — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我吃了很多东西。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр эмч хулганаас юу идсэнийг асууж, хулгана «маш олон юм идсэн» гэж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "吃了一个香蕉、两个苹果，还有冰淇淋。",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр хулгана хэвтээд идсэн юмаа жагсааж байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "吃了三个冰淇淋。",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр хулганы толгойн дээр гурван зайрмаг байна."
+     },
+     {
+      "n": 4,
+      "question_zh": "还喝了四杯冰水。",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр хулганы толгойн дээр дөрвөн аяга ус байна."
+     }
+    ],
+    "answer_source": "textbook х.46 (Mini story)"
+   },
+   {
+    "part": 5,
+    "type": "match",
+    "instruction_mn": "Эсрэг үгийн тоглоом — өгүүлбэр бүрийн эсрэгийг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我吃苹果了。",
+      "answer": "我没吃苹果。",
+      "explanation_mn": "吃了 ↔ 没吃."
+     },
+     {
+      "n": 2,
+      "question_zh": "我画熊猫了。",
+      "answer": "我没画熊猫。",
+      "explanation_mn": "画了 ↔ 没画."
+     },
+     {
+      "n": 3,
+      "question_zh": "我没吃香蕉。",
+      "answer": "我吃香蕉了。",
+      "explanation_mn": "没吃 ↔ 吃了."
+     }
+    ],
+    "answer_source": "textbook х.44 (Antonyms game)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Ханз бичих — «画», «了» гэсэн ханзыг дахин бичиж хуулж үз.",
+    "question_zh": "画 了",
+    "answer": "画 了",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Өнөөдөр юу идснээ хэл.",
+    "question_zh": "我吃了……。",
+    "answer": "我吃了……",
+    "explanation_mn": "Идсэн юмаа нэрлэ."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Найзаасаа өнөөдөр юу хийснийг нь асуу.",
+    "question_zh": "你今天做什么了？",
+    "answer": "你今天做什么了？",
+    "explanation_mn": "Хосоороо ээлжлэн."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«如果吃了香蕉» дууг алгаа таших, хөлөө дэвсэх хөдөлгөөнтэй дуул.",
+    "question_zh": "如果吃了香蕉",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 09-04-ийн хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · Test Listening Scripts, Test Answers (Lesson 9)"
+}

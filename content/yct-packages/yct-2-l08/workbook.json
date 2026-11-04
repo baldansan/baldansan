@@ -1,0 +1,271 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (08-04) сонсоод тохирох зургийг A, B, C, D-ээс сонго.",
+    "audio": "audio/yct-2-08-04.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）你弟弟几岁？",
+      "script_zh": "你弟弟几岁？",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Чиний дүү хэдэн настай вэ?» — A зураг дээр жижиг хүү номон дээрээ унтаж байна, тэр бол дүү. B нохой, C хоёр охин, D дөрвөн хүүхэд."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）这儿有四个学生。",
+      "script_zh": "这儿有四个学生。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Энд дөрвөн сурагч бий» — D зураг дээр дөрвөн хүүхэд байна. C дээр хоёр охин л бий."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）我们两个人是好朋友。",
+      "script_zh": "我们两个人是好朋友。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Бид хоёр сайн найзууд» — C зураг дээр хоёр охин инээмсэглэн хамт байна. D дээр дөрвөн хүүхэд."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）我的个子比你高。",
+      "script_zh": "我的个子比你高。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Миний биеийн өндөр чамаас өндөр» — B зураг дээр том нохой жижиг нохойг харж зогсож байна, том нь өндөр."
+     }
+    ],
+    "answer_source": "Test Answers: 1.A 2.D 3.C 4.B; Listening script х.42"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — ярианд тохирох зургийг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "小明：这个人是谁？ 小红：她是妈妈的一个好朋友。",
+      "question_mn": "Энэ хүн хэн бэ? — Тэр ээжийн сайн найз.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "Ээжийн найз — D зураг дээр эмэгтэй жижиг хүүтэй ном үзэж байна. A хоёр охин, B хоёр хүү, C сагсан бөмбөгчид."
+     },
+     {
+      "n": 6,
+      "question_zh": "小明：你认识她吗？ 小红：她是我同学。",
+      "question_mn": "Чи түүнийг мэдэх үү? — Тэр миний ангийн хүүхэд.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "Ангийн хүүхэд — A зураг дээр хоёр охин бие бие рүүгээ харж байна. Тэд ангийн найзууд."
+     },
+     {
+      "n": 7,
+      "question_zh": "小明：你弟弟多大？ 小红：7岁，他比我小两岁。",
+      "question_mn": "Чиний дүү хэдэн настай вэ? — 7 настай, надаас хоёр насаар бага.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "Ах, дүү — B зураг дээр хоёр хүү, нэг нь нөгөөгөө тэвэрсэн. A охид, C өндөр эрчүүд, D эмэгтэй."
+     },
+     {
+      "n": 8,
+      "question_zh": "小明：你们谁高？ 小红：他比我高很多。",
+      "question_mn": "Та хоёрын хэн нь өндөр вэ? — Тэр надаас хавьгүй өндөр.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "Хавьгүй өндөр — C зураг дээр нэг нь нөгөөгөөсөө хавьгүй өндөр хоёр хүн зогсож байна."
+     }
+    ],
+    "answer_source": "Test Answers: 5.D 6.A 7.B 8.C"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Үлгэр «比高矮» — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/tstory.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我比你高，哈哈。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр тэмээ мод руу сунаж, доор нь ямаа зогсож байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "我比你高得多，哈哈。",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр тэмээ усанд, ямаа хажууд нь байна."
+     },
+     {
+      "n": 3,
+      "question_zh": "我比你矮。",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр ямаа ханын дэргэд, тэмээ толгойгоо сунгана."
+     },
+     {
+      "n": 4,
+      "question_zh": "我比你矮，可是我也能做很多事。",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр ямаа өндөр газраас доор байгаа тэмээг харна."
+     }
+    ],
+    "answer_source": "textbook х.41 (Mini story)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Асуулт бүрд тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "马丁比苏珊大几岁？",
+      "answer": "一岁。",
+      "explanation_mn": "Ма-дин 3, Су-шан 2 насаар том: 3 - 2 = 1."
+     },
+     {
+      "n": 2,
+      "question_zh": "谁比他高？",
+      "answer": "姐姐比他高。",
+      "explanation_mn": "Яриа 1 — эгч нь надаас өндөр."
+     },
+     {
+      "n": 3,
+      "question_zh": "他们是谁？",
+      "answer": "他们是我的好朋友。",
+      "explanation_mn": "Яриа 2 — Су-шан, Ма-дин нь миний сайн найзууд."
+     }
+    ],
+    "answer_source": "textbook х.39 (Let's read)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Let's write — найзтайгаа нас, өндөр, жин, гутлын хэмжээгээ хүснэгтэнд бич.",
+    "question_zh": "年龄 身高 体重 鞋的大小",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Хоёулаа бичсэний дараа «我比你大…岁» гэж харьцуул."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Let's say — х.40-ийн зургийг «A 比 B + том / өндөр» гэж тайлбарла.",
+    "question_zh": "A比B大/高……",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Өвөө эмээ, хоёр хүү, хоёр цүнхийг жиш."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Найзтайгаа зэрэгцэж зогсоод хэн өндрийг хэл.",
+    "question_zh": "我比你高。",
+    "answer": "我比你高。",
+    "explanation_mn": "Өндөр нь «高», намхан нь «矮» гэж хэлнэ."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "Тэмээ ямаа хоёрын үлгэрийг жүжигчил.",
+    "question_zh": "我比你矮，可是我也能做很多事。",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 08-03-ын хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · х.42 Test, Test Answers (Lesson 8)"
+}

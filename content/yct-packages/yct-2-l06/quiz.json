@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Мөнгө» хятадаар аль нь вэ?",
+  "options": [
+   "钱",
+   "块",
+   "茶",
+   "买"
+  ],
+  "correct_answer": "钱",
+  "explanation": "钱 (qián) = мөнгө.",
+  "order_index": 1,
+  "id": "yct-2-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цай» хятадаар аль нь вэ?",
+  "options": [
+   "钱",
+   "杯",
+   "买",
+   "茶"
+  ],
+  "correct_answer": "茶",
+  "explanation": "茶 (chá) = цай.",
+  "order_index": 2,
+  "id": "yct-2-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Худалдаж авах» хятадаар аль нь вэ?",
+  "options": [
+   "茶",
+   "块",
+   "钱",
+   "买"
+  ],
+  "correct_answer": "买",
+  "explanation": "买 (mǎi) = худалдаж авах.",
+  "order_index": 3,
+  "id": "yct-2-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хэд вэ, хэдэн» хятадаар аль нь вэ?",
+  "options": [
+   "买",
+   "多少",
+   "杯",
+   "块"
+  ],
+  "correct_answer": "多少",
+  "explanation": "多少 (duōshao) = хэд, хэдэн.",
+  "order_index": 4,
+  "id": "yct-2-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Юань» (хятад мөнгөний нэгж) хятадаар аль нь вэ?",
+  "options": [
+   "块",
+   "茶",
+   "杯",
+   "买"
+  ],
+  "correct_answer": "块",
+  "explanation": "块 (kuài) = юань.",
+  "order_index": 5,
+  "id": "yct-2-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Аяга» (ундааг тоолох үг) хятадаар аль нь вэ?",
+  "options": [
+   "钱",
+   "杯",
+   "个",
+   "块"
+  ],
+  "correct_answer": "杯",
+  "explanation": "杯 (bēi) = аяга.",
+  "order_index": 6,
+  "id": "yct-2-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«太贵了！» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Сайн байна уу!",
+   "Үнэтэй байна шүү дээ!",
+   "Баярлалаа!",
+   "Баяртай!"
+  ],
+  "correct_answer": "Үнэтэй байна шүү дээ!",
+  "explanation": "太贵了 = үнэ хэтэрхий өндөр.",
+  "order_index": 7,
+  "id": "yct-2-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи юу авах вэ?» хятадаар:",
+  "options": [
+   "你买什么？",
+   "你吃什么？",
+   "你有什么？",
+   "你叫什么？"
+  ],
+  "correct_answer": "你买什么？",
+  "explanation": "买 = авах.",
+  "order_index": 8,
+  "id": "yct-2-l06-q08",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Баоз нэг нь хэд вэ?» хятадаар:",
+  "options": [
+   "包子多少钱一个？",
+   "太贵了！",
+   "有绿茶吗？",
+   "你买什么？"
+  ],
+  "correct_answer": "包子多少钱一个？",
+  "explanation": "多少钱 = хэд вэ.",
+  "order_index": 9,
+  "id": "yct-2-l06-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«两块钱一个。» гэж хэлбэл юу гэсэн үг вэ?",
+  "options": [
+   "Хоёр аяга",
+   "Нэг нь 5 юань",
+   "Нэг нь 2 юань",
+   "Хоёр баоз"
+  ],
+  "correct_answer": "Нэг нь 2 юань",
+  "explanation": "两块 = 2 юань.",
+  "order_index": 10,
+  "id": "yct-2-l06-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«有绿茶吗？» гэж юу асууж байна вэ?",
+  "options": [
+   "Цай уух уу?",
+   "Ногоон алим байна уу?",
+   "Цай хэд вэ?",
+   "Ногоон цай байна уу?"
+  ],
+  "correct_answer": "Ногоон цай байна уу?",
+  "explanation": "绿茶 = ногоон цай.",
+  "order_index": 11,
+  "id": "yct-2-l06-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д 3 баоз хэдэн юань вэ?",
+  "options": [
+   "10块",
+   "3块",
+   "2块",
+   "5块"
+  ],
+  "correct_answer": "5块",
+  "explanation": "5块钱3个 — гурав нь 5 юань.",
+  "order_index": 12,
+  "id": "yct-2-l06-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т нэг аяга ногоон цай хэд вэ?",
+  "options": [
+   "15块",
+   "5块",
+   "500块",
+   "50块"
+  ],
+  "correct_answer": "50块",
+  "explanation": "зөөгч «50块» гэв.",
+  "order_index": 13,
+  "id": "yct-2-l06-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "包子（ ）钱一个？",
+  "options": [
+   "多少",
+   "块",
+   "买",
+   "杯"
+  ],
+  "correct_answer": "多少",
+  "explanation": "«Хэд» — 多少.",
+  "order_index": 14,
+  "id": "yct-2-l06-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "两（ ）钱一个。",
+  "options": [
+   "买",
+   "块",
+   "吗",
+   "茶"
+  ],
+  "correct_answer": "块",
+  "explanation": "Юань — 块.",
+  "order_index": 15,
+  "id": "yct-2-l06-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ）什么？",
+  "options": [
+   "块",
+   "买",
+   "杯",
+   "钱"
+  ],
+  "correct_answer": "买",
+  "explanation": "Авах — 买.",
+  "order_index": 16,
+  "id": "yct-2-l06-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "多少钱一（ ）？(цай)",
+  "options": [
+   "块",
+   "买",
+   "杯",
+   "个"
+  ],
+  "correct_answer": "杯",
+  "explanation": "Нэг аяга цай — 一杯.",
+  "order_index": 17,
+  "id": "yct-2-l06-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "有绿（ ）吗？",
+  "options": [
+   "块",
+   "买",
+   "钱",
+   "茶"
+  ],
+  "correct_answer": "茶",
+  "explanation": "绿茶 = ногоон цай.",
+  "order_index": 18,
+  "id": "yct-2-l06-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«5 юань» хятадаар:",
+  "options": [
+   "五杯",
+   "五块",
+   "五买",
+   "五个"
+  ],
+  "correct_answer": "五块",
+  "explanation": "五 = 5, 块 = юань.",
+  "order_index": 19,
+  "id": "yct-2-l06-q19",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«50 юань» хятадаар:",
+  "options": [
+   "五块",
+   "一百块",
+   "十块",
+   "五十块"
+  ],
+  "correct_answer": "五十块",
+  "explanation": "五十 = 50.",
+  "order_index": 20,
+  "id": "yct-2-l06-q20",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«100 юань» хятадаар:",
+  "options": [
+   "一百块",
+   "十块",
+   "五十块",
+   "二十块"
+  ],
+  "correct_answer": "一百块",
+  "explanation": "一百 = 100.",
+  "order_index": 21,
+  "id": "yct-2-l06-q21",
+  "skillTags": [
+   "number"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «qián» гэж уншдаг үг:",
+  "options": [
+   "茶",
+   "买",
+   "块",
+   "钱"
+  ],
+  "correct_answer": "钱",
+  "explanation": "钱 = qián = мөнгө.",
+  "order_index": 22,
+  "id": "yct-2-l06-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «duōshao» гэж уншдаг үг:",
+  "options": [
+   "杯",
+   "多少",
+   "买",
+   "块"
+  ],
+  "correct_answer": "多少",
+  "explanation": "多少 = duōshao = хэд.",
+  "order_index": 23,
+  "id": "yct-2-l06-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «mǎi» гэж уншдаг үг:",
+  "options": [
+   "茶",
+   "块",
+   "钱",
+   "买"
+  ],
+  "correct_answer": "买",
+  "explanation": "买 = mǎi = авах.",
+  "order_index": 24,
+  "id": "yct-2-l06-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Баоз 50 юань гэнэ. Үнэ нь хэтэрхий их. Юу гэх вэ?",
+  "options": [
+   "再见！",
+   "谢谢！",
+   "太贵了！",
+   "你好！"
+  ],
+  "correct_answer": "太贵了！",
+  "explanation": "Үнэтэй байвал 太贵了.",
+  "order_index": 25,
+  "id": "yct-2-l06-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дэлгүүрт юмны үнийг мэдэхийг хүсэв. Юу гэж асуух вэ?",
+  "options": [
+   "你好吗？",
+   "我叫什么？",
+   "多少钱？",
+   "谢谢！"
+  ],
+  "correct_answer": "多少钱？",
+  "explanation": "Үнийг асуухад 多少钱.",
+  "order_index": 26,
+  "id": "yct-2-l06-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Mini story-д Сяо Мин ямар цэцэг авах гэв?",
+  "options": [
+   "绿茶",
+   "玫瑰花",
+   "苹果",
+   "包子"
+  ],
+  "correct_answer": "玫瑰花",
+  "explanation": "玫瑰花 — сарнай.",
+  "order_index": 27,
+  "id": "yct-2-l06-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Mini story-д сарнай яагаад үнэтэй болсон бэ?",
+  "options": [
+   "Баоз үнэтэй",
+   "Өнөөдөр 2 сарын 14",
+   "Өчигдөр 2 сарын 14",
+   "Мөнгө байхгүй"
+  ],
+  "correct_answer": "Өнөөдөр 2 сарын 14",
+  "explanation": "今天2月14号 — хайрлагчдын өдөр.",
+  "order_index": 28,
+  "id": "yct-2-l06-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,117 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你怎么了？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands beside a yellow camel calf boy who holds his sore foot and grimaces, the camel calf girl in a yellow dress asks with a concerned face and a speech bubble with the Chinese text 你怎么了？ in large clear black font; cozy bedroom with a small hospital cross sign on the wall. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jiao.jpg",
+  "aspect": "1:1",
+  "title": "脚",
+  "section": "vocabulary",
+  "prompt": "Close-up of the yellow camel calf boy's bare hooves and feet stepping on a sandy beach with small waves, feet clearly shown, cheerful. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-yiyuan.jpg",
+  "aspect": "1:1",
+  "title": "医院",
+  "section": "vocabulary",
+  "prompt": "A friendly small hospital building with a red cross sign; the brown camel calf boy in a green hat walks in with his adult camel mother, doctor camel in white coat waving at the door. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zenmele.jpg",
+  "aspect": "1:1",
+  "title": "怎么了",
+  "section": "vocabulary",
+  "prompt": "The camel calf girl leans toward a sad yellow camel calf boy sitting on a bench, a big question mark above her head, caring face, asking what is wrong. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-teng.jpg",
+  "aspect": "1:1",
+  "title": "疼",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy holds his front leg with both hands, eyes squeezed shut, small red lightning pain marks around the leg, tears, exaggerated but cute. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shou.jpg",
+  "aspect": "1:1",
+  "title": "手",
+  "section": "vocabulary",
+  "prompt": "The camel calf girl in a yellow dress holds up her hoof-hand waving with fingers spread, big friendly smile, hand centered and clearly visible. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yisheng.jpg",
+  "aspect": "1:1",
+  "title": "医生",
+  "section": "vocabulary",
+  "prompt": "A kind adult camel doctor wearing a white coat and a stethoscope listens to a small camel calf's chest, medical bag beside them, warm clinic room. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-qichuang.jpg",
+  "aspect": "1:1",
+  "title": "起床",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy sits up in bed stretching and yawning, sunlight through the window, his blanket with stars, an alarm clock on the table. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "明明，起床！",
+  "section": "dialogue",
+  "prompt": "An adult camel mother in pink pajamas bends over a bed where the yellow camel calf boy lies under a star blanket covering one eye; speech bubble with the Chinese text 明明，起床！ in large clear black font; window with green curtains. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "我们去看医生。",
+  "section": "dialogue",
+  "prompt": "The adult camel mother sits on the edge of the bed and talks to the yellow camel calf boy who smiles and points at school; two thought bubbles show a doctor and children playing; speech bubble with the Chinese text 我们去看医生。 in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "好朋友",
+  "section": "story",
+  "role": "illustration",
+  "prompt": "A butterfly with big colorful wings landing in a green meadow, a small ant and a small bee stand beside her happily holding hands, a caterpillar-to-butterfly cycle shown faintly in the sky; cute storybook style. No English text.",
+  "chars": [
+   "temee"
+  ]
+ }
+]

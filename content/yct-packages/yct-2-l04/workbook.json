@@ -1,0 +1,233 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (04-04) сонсоод зөв зургийг A, B, C-ээс сонго.",
+    "audio": "audio/yct-2-04-04.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）",
+      "script_zh": "A：你有绿色的铅笔吗？ B：有，这儿有。",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Ногоон харандаа байна уу?» — «Байна, энд байна». C дээр ногоон харандаа байна. A нь улаан, B нь шаргал харандаа."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）",
+      "script_zh": "A：你喜欢哪个椅子？ B：我喜欢红色的那个。",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Улаан нь надад таалагдана» — B дээр улаан хуванцар сандал. A цэнхэр, C улбар шар."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）",
+      "script_zh": "A：我的铅笔在这儿。 B：有绿色的吗？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t3a.png",
+       "images/t3b.png",
+       "images/t3c.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "Харандаа ярьж байна, «ногоон нь байна уу?» — A дээр олон өнгийн харандаа, ногоон нь ч бий. B дээр гутал, C дээр нялхсын хувцас."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）",
+      "script_zh": "A：你要什么颜色的？ B：我要黄色的那个。",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionImages": [
+       "images/t4a.png",
+       "images/t4b.png",
+       "images/t4c.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Шар нь надад хэрэгтэй» — C дээр шар хүрз. A хар, B улаан хүрз."
+     }
+    ],
+    "answer_source": "Test Answers: 1.C 2.B 3.A 4.C; Listening scripts (брифийн дагуу)"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — үгийг сонгоод нөх. A 黄 · B 两 · C 漂亮 · D 名字",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "A：我有（ ）只鸟，喜欢吗？ B：喜欢，真好玩儿。",
+      "question_mn": "Надад ___ шувуу бий, таалагдаж байна уу?",
+      "options": [
+       "A 黄",
+       "B 两",
+       "C 漂亮",
+       "D 名字"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Надад хоёр шувуу бий» — 两只鸟. 黄 (шар), 漂亮 (хөөрхөн), 名字 (нэр) энд таарахгүй."
+     },
+     {
+      "n": 6,
+      "question_zh": "A：那个人叫什么（ ）？ B：对不起，你说谁？",
+      "question_mn": "Тэр хүний ___ юу вэ?",
+      "options": [
+       "A 黄",
+       "B 两",
+       "C 漂亮",
+       "D 名字"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Нэр нь хэн бэ?» — 叫什么名字. Нэр асуухад 名字 хэрэглэнэ."
+     },
+     {
+      "n": 7,
+      "question_zh": "A：你的小猫是什么颜色的？ B：我的小猫是（ ）色的。",
+      "question_mn": "Миний муур ___ өнгөтэй.",
+      "options": [
+       "A 黄",
+       "B 两",
+       "C 漂亮",
+       "D 名字"
+      ],
+      "answer": "A",
+      "explanation_mn": "Өнгө асуусан тул өнгөөр хариулна: 黄色 = шар. 两, 漂亮, 名字 нь өнгө биш."
+     },
+     {
+      "n": 8,
+      "question_zh": "A：你的眼睛真（ ）。 B：是吗？谢谢你！",
+      "question_mn": "Чиний нүд үнэхээр ___.",
+      "options": [
+       "A 黄",
+       "B 两",
+       "C 漂亮",
+       "D 名字"
+      ],
+      "answer": "C",
+      "explanation_mn": "Магтаад «Нүд чинь үнэхээр хөөрхөн» — 漂亮. Сайхан юм хэлэхэд «баярлалаа» гэж хариулна."
+     }
+    ],
+    "answer_source": "Test Answers: 5.B 6.D 7.A 8.C"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Асуулт бүрд тохирох хариултыг холбо.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你的书包是什么颜色的？",
+      "answer": "红色的。",
+      "explanation_mn": "Өнгө асуусан тул өнгөөр хариулна."
+     },
+     {
+      "n": 2,
+      "question_zh": "书包里有什么？",
+      "answer": "有两本书。",
+      "explanation_mn": "Юу байгааг асуусан тул «хоёр ном байна» гэнэ."
+     }
+    ],
+    "answer_source": "textbook х.19 (Let's read)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Үлгэр — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "一二一，一二一。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр нугас ээж дэгдээхэйнүүдээ дагуулан алхаж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "现在是绿灯，可以过。",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр гэрлэн дохио ногоон."
+     },
+     {
+      "n": 3,
+      "question_zh": "现在是黄灯，快！快！",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр шар гэрэл, дэгдээхэйнүүд хурдан явж байна."
+     },
+     {
+      "n": 4,
+      "question_zh": "现在是红灯，不可以过。",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр улаан гэрэл, бүгд зогсож байна."
+     }
+    ],
+    "answer_source": "textbook х.21 (Mini story)"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Будах дасгал — муур, нохой, шувуу, загасыг дуртай өнгөөрөө бүдээд найздаа хэл.",
+    "question_zh": "你的……是什么颜色的？ 我的……是……色的。",
+    "answer": "我的猫是黄色的。",
+    "explanation_mn": "Өөрийн бүдсэн өнгөөрөө хариул (Let's color)."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Цүнхээ хятадаар танилцуул.",
+    "question_zh": "我的书包是……色的，书包里有……。",
+    "answer": "我的书包是红色的，书包里有两本书。",
+    "explanation_mn": "Өөрийнхөө цүнхийг хэл."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Найзаасаа цүнхний өнгийг асуу.",
+    "question_zh": "你的书包是什么颜色的？",
+    "answer": "你的书包是什么颜色的？",
+    "explanation_mn": "Хосоороо ээлжлэн."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "Бичгийн хэрэгслээ ширээн дээр тавиад эзнийг нь хэл (Let's play).",
+    "question_zh": "这个铅笔是……的。",
+    "answer": "这个铅笔是小明的。",
+    "explanation_mn": "Групп болж тогло."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 2 · Test (х.22) Lesson 4 — Test Answers 1.C 2.B 3.A 4.C 5.B 6.D 7.A 8.C"
+}

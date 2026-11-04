@@ -1,0 +1,74 @@
+[
+ {
+  "chinese": "弟弟",
+  "pinyin": "dìdi",
+  "mongolian": "дүү хүү",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我的弟弟是学生。",
+  "examplePinyin": "Wǒ de dìdi shì xuésheng.",
+  "exampleMongolian": "Миний дүү хүү сурагч.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "妹妹",
+  "pinyin": "mèimei",
+  "mongolian": "дүү охин",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我比弟弟、妹妹高。",
+  "examplePinyin": "Wǒ bǐ dìdi, mèimei gāo.",
+  "exampleMongolian": "Би дүү хүү, дүү охин хоёроосоо өндөр.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "朋友",
+  "pinyin": "péngyou",
+  "mongolian": "найз",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "他们是我的好朋友。",
+  "examplePinyin": "Tāmen shì wǒ de hǎo péngyou.",
+  "exampleMongolian": "Тэд миний сайн найзууд.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "同学",
+  "pinyin": "tóngxué",
+  "mongolian": "ангийн хүүхэд, ангийн найз",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "苏珊和马丁是同学。",
+  "examplePinyin": "Sūshān hé Mǎdīng shì tóngxué.",
+  "exampleMongolian": "Су-шан, Ма-дин хоёр ангийн хүүхдүүд.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "也",
+  "pinyin": "yě",
+  "mongolian": "бас, ч",
+  "notes": "холбох үг · гол үг",
+  "exampleChinese": "我也是学生。",
+  "examplePinyin": "Wǒ yě shì xuésheng.",
+  "exampleMongolian": "Би ч бас сурагч.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "学生",
+  "pinyin": "xuésheng",
+  "mongolian": "сурагч",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "他们也是小学生。",
+  "examplePinyin": "Tāmen yě shì xiǎoxuéshēng.",
+  "exampleMongolian": "Тэд ч бас бага ангийн сурагчид.",
+  "hskLevel": "YCT 2",
+  "keyWord": true,
+  "orderIndex": 6
+ }
+]

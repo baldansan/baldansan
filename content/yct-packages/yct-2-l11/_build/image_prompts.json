@@ -1,0 +1,197 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我来北京一年了。",
+  "section": "teacher-intro",
+  "prompt": "Teacher Temee the camel points at a big wall clock while the camel calf kids stand taller than before beside a height chart, a small Beijing Temple of Heaven in the background; speech bubble with the Chinese text 我来北京一年了。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "hero"
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "妈妈，几点了？",
+  "section": "dialogue",
+  "prompt": "A camel calf boy asks his adult camel mother, who reads a book on a bench in a playground with a toy horse, adult camel father beside her; speech bubble with the Chinese text 妈妈，几点了？ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "我和爸爸妈妈来北京一年了。",
+  "section": "dialogue",
+  "prompt": "A camel calf girl holding a basketball smiles outside a house, adult camel mother talks on the phone in the kitchen behind; speech bubble with the Chinese text 我来北京一年了。 No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xianzai.jpg",
+  "aspect": "1:1",
+  "title": "现在",
+  "section": "vocabulary",
+  "prompt": "Camel calf boy points to a big round wall clock saying 'now' with an excited gesture, a glowing NOW sparkle but no letters. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dian.jpg",
+  "aspect": "1:1",
+  "title": "点",
+  "section": "vocabulary",
+  "prompt": "A big round clock showing 3 o'clock on a table, camel calf girl pointing at the short hand. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ling.jpg",
+  "aspect": "1:1",
+  "title": "零",
+  "section": "vocabulary",
+  "prompt": "A camel calf makes a big round zero shape with arms, a giant 0 digit behind, empty basket with nothing inside. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-fenzhong.jpg",
+  "aspect": "1:1",
+  "title": "分钟",
+  "section": "vocabulary",
+  "prompt": "A camel calf boy holds a sand timer (hourglass) while playing with a ball for a short time, small stopwatch beside. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xiaoshi.jpg",
+  "aspect": "1:1",
+  "title": "小时",
+  "section": "vocabulary",
+  "prompt": "Camel calf sleeping in bed under a big wall clock whose hour hand has moved one hour, moon and stars at the window. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-nian.jpg",
+  "aspect": "1:1",
+  "title": "年",
+  "section": "vocabulary",
+  "prompt": "A calendar with a big circle around a whole year of months and a small birthday cake with one candle; camel calf girl pointing happily. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-lai.jpg",
+  "aspect": "1:1",
+  "title": "来",
+  "section": "vocabulary",
+  "prompt": "A camel calf boy runs toward the viewer waving with an open welcoming gesture, with footprints coming from far away. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-beijing.jpg",
+  "aspect": "1:1",
+  "title": "北京",
+  "section": "vocabulary",
+  "prompt": "Camel calf kids in front of the Tiananmen gate tower and the Temple of Heaven in Beijing, sunny day. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-dadianhua.jpg",
+  "aspect": "1:1",
+  "title": "打电话",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl talking on an old-fashioned phone, smiling, other hand waving. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-hui.jpg",
+  "aspect": "1:1",
+  "title": "会",
+  "section": "vocabulary",
+  "prompt": "A proud camel calf boy shows he can ride a bicycle, thumbs up, other calves cheering. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-piaoliang.jpg",
+  "aspect": "1:1",
+  "title": "漂亮",
+  "section": "vocabulary",
+  "prompt": "Camel calf girl in a beautiful dress and pink ribbon twirling in front of a mirror, sparkles around. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zaoshang.jpg",
+  "aspect": "1:1",
+  "title": "早上",
+  "section": "vocabulary",
+  "prompt": "Sunrise over a yard, camel calf boy stretching and exercising, a rooster nearby. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zhongwu.jpg",
+  "aspect": "1:1",
+  "title": "中午",
+  "section": "vocabulary",
+  "prompt": "Bright sun at the top of the sky, camel calf boy napping in bed after lunch, small clock showing 12. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xiawu.jpg",
+  "aspect": "1:1",
+  "title": "下午",
+  "section": "vocabulary",
+  "prompt": "Afternoon sun low in the sky, camel calf watching a cartoon on TV on the sofa. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-wanshang.jpg",
+  "aspect": "1:1",
+  "title": "晚上",
+  "section": "vocabulary",
+  "prompt": "Night sky with moon, camel calf boy reading a book in bed under a lamp. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yundong.jpg",
+  "aspect": "1:1",
+  "title": "运动",
+  "section": "vocabulary",
+  "prompt": "Adult camel father and camel calf boy exercising together, running with a basketball in a park. No English text.",
+  "chars": [
+   "huu"
+  ]
+ }
+]
