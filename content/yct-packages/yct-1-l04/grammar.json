@@ -14,7 +14,7 @@
    {
     "chinese": "四口人，爸爸、妈妈、哥哥和我。",
     "pinyin": "Sì kǒu rén, bàba, māma, gēge hé wǒ.",
-    "mongolian": "Дөрвөн хүн. Аав, ээж, ах бид хоёр."
+    "mongolian": "Дөрвөн хүн. Аав, ээж, ах, би."
    },
    {
     "chinese": "我家有三口人，爸爸、妈妈和我。",
@@ -65,13 +65,13 @@
     "type": "choice",
     "question": "我家有三 ________ 人，爸爸、妈妈和我。",
     "options": [
-     "个",
+     "和",
      "口",
      "有"
     ],
     "answer": "1",
     "explanation_correct_mn": "Зөв! Гэр бүлийн хүнийг тоолоход 口.",
-    "explanation_wrong_mn": "Гэр бүлийн хүн тоолох үг нь 口."
+    "explanation_wrong_mn": "Гэр бүлийн хүнийг тоолоход 口 хэрэглэнэ."
    },
    {
     "type": "judge",
@@ -188,7 +188,7 @@
    {
     "chinese": "爸爸、妈妈、哥哥和我",
     "pinyin": "Bàba, māma, gēge hé wǒ",
-    "mongolian": "Аав, ээж, ах бид хоёр"
+    "mongolian": "Аав, ээж, ах, би"
    },
    {
     "chinese": "一个姐姐",

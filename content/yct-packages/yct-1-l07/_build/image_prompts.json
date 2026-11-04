@@ -18,7 +18,7 @@
   "aspect": "1:1",
   "title": "这",
   "section": "vocabulary",
-  "prompt": "The yellow camel calf boy holds a toy puppy right in front of him, pointing at it with his finger close to his face, bright and clear, near object emphasized. No English text.",
+  "prompt": "Close-up: the yellow camel calf boy stretches his arm and points with his index finger at a toy puppy held right in front of his nose, the puppy big and near, his other hand open, clear near-object emphasis. No English text.",
   "chars": [
    "huu"
   ]
@@ -48,7 +48,7 @@
   "aspect": "1:1",
   "title": "看",
   "section": "vocabulary",
-  "prompt": "The yellow camel calf boy looks through his hand like binoculars with wide eyes, excited, a rainbow in the sky. No English text.",
+  "prompt": "The yellow camel calf boy holds both hands as binoculars in front of his wide-open eyes and looks eagerly at a distant butterfly and a rainbow, both eyes clearly visible, excited face, not covering his face. No English text.",
   "chars": [
    "huu"
   ]
@@ -120,7 +120,7 @@
   "aspect": "4:3",
   "title": "这是谁的狗？",
   "section": "dialogue",
-  "prompt": "A boy with a green hoodie (named David) points at a brown puppy that a smiling girl with braids kneels next to; a kitten walks in the distance near a small house, speech bubble with the Chinese text 这是谁的狗？ in large clear black font. No English text.",
+  "prompt": "The yellow camel calf boy points at a brown puppy while the camel calf girl in a yellow dress kneels beside the puppy and pets it; a small kitten walks in the distance near a little house, speech bubble above the boy with the Chinese text 这是谁的狗？ in large clear black font. Only camel calf characters, no human children. No English text.",
   "chars": [
    "huu",
    "ohin"

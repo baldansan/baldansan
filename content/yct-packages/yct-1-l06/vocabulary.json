@@ -41,7 +41,7 @@
   "mongolian": "гар",
   "notes": "нэр үг · бие",
   "exampleChinese": "手不大。",
-  "examplePinyin": "Shǒu bù dà.",
+  "examplePinyin": "Shǒu bú dà.",
   "exampleMongolian": "Гар нь том биш.",
   "hskLevel": "YCT 1",
   "keyWord": false,
@@ -110,7 +110,7 @@
  {
   "chinese": "个子",
   "pinyin": "gèzi",
-  "mongolian": "биеийн өндөр, нуруу",
+  "mongolian": "биеийн өндөр",
   "notes": "нэр үг · гол үг",
   "exampleChinese": "你的个子真高！",
   "examplePinyin": "Nǐ de gèzi zhēn gāo!",
@@ -138,7 +138,7 @@
   "notes": "тэмдэг нэр",
   "exampleChinese": "个子很高。",
   "examplePinyin": "Gèzi hěn gāo.",
-  "exampleMongolian": "Биеийн өндөр нь өндөр.",
+  "exampleMongolian": "Өндөр биетэй.",
   "hskLevel": "YCT 1",
   "keyWord": false,
   "orderIndex": 12

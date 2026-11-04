@@ -24,11 +24,11 @@ def crop(src, out, x0, y0, x1, y1):
     p = Image.open(f"{BASE}/pages/{src}"); W, H = p.size
     p.crop((int(x0*W), int(y0*H), int(x1*W), int(y1*H))).save(f"{OUT}/images/{out}")
 T = "hi-35.png"
-crop(T,"t1.png",0.33,0.185,0.50,0.252); crop(T,"t2.png",0.33,0.258,0.50,0.325)
-crop(T,"t3.png",0.32,0.322,0.52,0.397); crop(T,"t4.png",0.33,0.396,0.52,0.472)
+crop(T,"t1.png",0.33,0.180,0.50,0.247); crop(T,"t2.png",0.33,0.256,0.50,0.322)
+crop(T,"t3.png",0.32,0.322,0.52,0.394); crop(T,"t4.png",0.33,0.400,0.52,0.468)
 crop(T,"t5a.png",0.20,0.515,0.34,0.625); crop(T,"t5b.png",0.54,0.53,0.74,0.61)
 crop(T,"t5c.png",0.20,0.632,0.38,0.74); crop(T,"t5d.png",0.56,0.615,0.73,0.74)
-crop("hi-33.png","guess.png",0.07,0.12,0.88,0.47)
+crop("hi-33.png","guess.png",0.07,0.095,0.88,0.47)
 crop("hi-33.png","zodiac.png",0.13,0.53,0.84,0.76)
 def img(n): return f"images/{n}.png"
 
@@ -46,11 +46,11 @@ VOCAB = [
  ("这","zhè","энэ","заах үг · гол үг","这是谁的狗？","Zhè shì shéi de gǒu?","Энэ хэний нохой вэ?",True),
  ("那","nà","тэр (холын)","заах үг · гол үг","那是谁的猫？","Nà shì shéi de māo?","Тэр хэний муур вэ?",True),
  ("谁","shéi","хэн","асуух үг · гол үг","这是谁的猫？","Zhè shì shéi de māo?","Энэ хэний муур вэ?",True),
- ("看","kàn","харах","үйл үг","你看！","Nǐ kàn!","Чи хар даа!",False),
+ ("看","kàn","харах","үйл үг","看这儿！","Kàn zhèr!","Энд хар!",False),
  ("这儿","zhèr","энд","газар заах · гол үг","这儿有很多小鱼。","Zhèr yǒu hěn duō xiǎo yú.","Энд олон жижиг загас байна.",True),
  ("多","duō","олон, их","тэмдэг үг · гол үг","很多小鱼。","Hěn duō xiǎo yú.","Олон жижиг загас.",True),
  ("那儿","nàr","тэнд","газар заах · гол үг","那儿有很多小鸟。","Nàr yǒu hěn duō xiǎo niǎo.","Тэнд олон жижиг шувуу байна.",True),
- ("猫","māo","муур","амьтан","小猫，喵喵喵。","Xiǎo māo, miāo miāo miāo.","Муур минь, мяау мяау мяау.",False),
+ ("猫","māo","муур","амьтан","那是明明的猫。","Nà shì Míngming de māo.","Тэр Мин-мины муур.",False),
  ("狗","gǒu","нохой","амьтан","这是我的狗。","Zhè shì wǒ de gǒu.","Энэ миний нохой.",False),
  ("鱼","yú","загас","амьтан","你看，这儿有很多小鱼。","Nǐ kàn, zhèr yǒu hěn duō xiǎo yú.","Хар даа, энд олон жижиг загас байна.",False),
  ("鸟","niǎo","шувуу","амьтан","那儿有很多小鸟。","Nàr yǒu hěn duō xiǎo niǎo.","Тэнд олон жижиг шувуу байна.",False),
@@ -95,11 +95,11 @@ song = [
  ("小猫小猫，喵喵喵。","Xiǎo māo xiǎo māo, miāo miāo miāo.","Бяцхан муур, бяцхан муур, мяау мяау мяау.","小猫|xiǎo māo 小猫|xiǎo māo ，| 喵喵喵|miāo miāo miāo 。|"),
  ("小牛小牛，哞哞哞。","Xiǎo niú xiǎo niú, mōu mōu mōu.","Бяцхан үхэр, бяцхан үхэр, мөө мөө мөө.","小牛|xiǎo niú 小牛|xiǎo niú ，| 哞哞哞|mōu mōu mōu 。|"),
  ("小羊小羊，咩咩咩。","Xiǎo yáng xiǎo yáng, miē miē miē.","Бяцхан хурга, бяцхан хурга, мээ мээ мээ.","小羊|xiǎo yáng 小羊|xiǎo yáng ，| 咩咩咩|miē miē miē 。|"),
- ("你追我赶真热闹！","Nǐ zhuī wǒ gǎn zhēn rènao!","Чи намайг хөөж, би чамайг хөөж — үнэхээр хөгжилтэй!","你|nǐ 追|zhuī 我|wǒ 赶|gǎn 真|zhēn 热闹|rènao ！|"),
+ ("你追我赶真热闹！","Nǐ zhuī wǒ gǎn zhēn rènao!","Чи хөөнө, би гүйцнэ — үнэхээр хөгжилтэй!","你|nǐ 追|zhuī 我|wǒ 赶|gǎn 真|zhēn 热闹|rènao ！|"),
 ]
 for i,(zh,py,mn,tk) in enumerate(song):
     s={"zh":zh,"pinyin":py,"mn":mn,"paragraph":3,"tokens":tok(tk)}
-    if i==0: s["note"]="Хятадад нохой «汪汪汪 (wāng wāng wāng)» гэж хуцдаг, манайд «ав ав». Хөдөлгөөн хийж дуулъя: нохой шиг мөлхөж, муур шиг бяцхан гараа долоож!"
+    if i==0: s["note"]="Хятадад нохой «汪汪汪 (wāng wāng wāng)» гэж хуцдаг, манайд «ав ав». Хөдөлгөөн хийж дуулъя: нохой шиг мөлхөж, муур шиг гараа үрж!"
     if i==4: s["note"]="追 = хөөх, 赶 = гүйцэх. 热闹 = хөгжилтэй, шуугиантай. Хүүхдүүд бие биенээ хөөж тоглоход «你追我赶» гэнэ."
     sentences.append(s)
 
@@ -122,7 +122,7 @@ texts = {
   "paragraph_summaries":[
    {"paragraph":1,"mn":"Яриа 1 — Дэвид «Энэ хэний нохой вэ?» гэж асууна. Юэ-юэ «Энэ миний нохой» гэнэ. Цаана байгаа муур Мин-мины муур."},
    {"paragraph":2,"mn":"Яриа 2 — Голын эрэг дээр Юэ-юэ энд олон жижиг загас, Дэвид тэнд олон жижиг шувуу байгааг харуулна."},
-   {"paragraph":3,"mn":"Дуу «动物歌» — нохой «汪汪汪», муур «喵喵喵», үхэр «哞哞哞», хонь «咩咩咩» гэж дуугарна. «Чи хөөж, би гүйцэж — хөгжилтэй!» гэж төгсөнө."}],
+   {"paragraph":3,"mn":"Дуу «动物歌» — нохой «汪汪汪», муур «喵喵喵», үхэр «哞哞哞», хонь «咩咩咩» гэж дуугарна. «Чи хөөнө, би гүйцнэ — хөгжилтэй!» гэж төгсөнө."}],
   "reflection":{"questions_mn":["Хятадаар «Энэ хэний нохой вэ?» гэж яаж асуух вэ?","Ойрхон байгааг хэлэхдээ 这 уу, 那 уу? Холхон байгааг?","Нохой, муур, үхэр, хонь хятадаар яаж дуугардаг вэ?"]},
   "writingSample":{"title_mn":"Ярих дасгал · Хэний вэ?","zh":"这是谁的猫？这是我的猫。","pinyin":"Zhè shì shéi de māo? Zhè shì wǒ de māo.","mn":"Энэ хэний муур вэ? Энэ миний муур."},
   "writingPrompt_mn":"Гэр доторх эд зүйл, тоглоомоо заагаад «这是谁的…？» гэж асуу. Найз чинь «这是我的…» гэж хариулна. Холхон байгааг 那 гэж асуугаарай!"},
@@ -156,8 +156,9 @@ texts = {
   "selectWord":{"instruction_mn":"Let's guess — зургийн хэсгийг хараад юу болохыг таа.","banks":[{"words":["狗","猫","鱼","鸟"],"items":[
      {"n":1,"question":"Хэл гарсан, хурц чихтэй хүрэн амьтан: 这是________。","answer":"狗","explanation_mn":"Хэлээ гарган, хоёр хурц чихтэй — нохой (狗)."},
      {"n":2,"question":"Хар цагаан толгойтой, ягаан чихтэй амьтан: 这是________。","answer":"猫","explanation_mn":"Муурын толгой — 猫."},
-     {"n":3,"question":"Шар, ногоон туузтай амьтан (загас): 这是________。","answer":"鱼","explanation_mn":"Загасны биетэй — 鱼. (Зураг хэсэгчилсэн тул багшаас асуу.)"}]}],
-   "answer_source":"textbook picture (Let's guess, х.31) — 3-р зураг тодорхойгүй"},
+     {"n":3,"question":"Шар биетэй, өнгөт сэрвээтэй амьтан: 这是________。","answer":"鱼","explanation_mn":"Шар алтан загасны толгой, сэрвээ — 鱼."},
+     {"n":4,"question":"Ягаан биетэй, хөх сүүлтэй амьтан: 这是________。","answer":"鱼","explanation_mn":"Хөх дэлбэгэр сүүл бүхий загас — 鱼."}]}],
+   "answer_source":"textbook picture (Let's guess, х.31): 狗 猫 鱼 鱼 (4-р зураг загасны сүүл гэж таамагласан)"},
   "comprehension":{"instruction_mn":"Let's read — яриаг сонсоод асуултад хариул.","items":[
      {"n":1,"question_zh":"那是谁的猫？","answer":"那是明明的猫。","explanation_mn":"Юэ-юэ «那是明明的猫» гэсэн."},
      {"n":2,"question_zh":"那儿有什么？","answer":"那儿有很多小鸟。","explanation_mn":"Дэвид «那儿有很多小鸟» гэсэн — тэнд олон жижиг шувуу байна."},
@@ -238,7 +239,7 @@ q("choice","«谁» гэж юу вэ?",["хэн","олон","харах","муу
 q("choice","«多» гэж юу вэ?",["олон","харах","тэнд","хэн"],"олон","多 (duō) = олон.","easy",["vocabulary"],"q10")
 q("choice","«看» гэж юу вэ?",["харах","олон","шувуу","энд"],"харах","看 (kàn) = харах. 你看！ = Чи хар даа!","easy",["vocabulary"],"q11")
 q("choice","«Энэ хэний нохой вэ?» хятадаар аль нь вэ?",["这是谁的狗？","这是我的狗。","那儿有小鸟。","你看！"],"这是谁的狗？","谁的 = хэний.","easy",["dialogue"],"q12")
-q("cloze","A：这是谁的狗？ B：这是（ ）的狗。",["我","那儿","多","看"],"我","Хариулахдаа «我的狗» — миний нохой.","easy",["dialogue"],"q13")
+q("cloze","大卫：这是谁的狗？ 月月：这是（ ）的狗。",["我","那儿","多","看"],"我","Хариулахдаа «我的狗» — миний нохой.","easy",["dialogue"],"q13")
 q("choice","«那是明明的猫。» гэдэг юу гэсэн үг вэ?",["Тэр Мин-мины муур.","Энэ миний нохой.","Энд олон загас байна.","Тэнд шувуу байна."],"Тэр Мин-мины муур.","明明的猫 = Мин-мины муур.","medium",["dialogue"],"q14")
 q("choice","«这儿有很多小鱼。» гэдэг юу гэсэн үг вэ?",["Энд олон жижиг загас байна.","Тэнд олон жижиг шувуу байна.","Энэ хэний загас вэ?","Энэ миний муур."],"Энд олон жижиг загас байна.","这儿 = энд, 很多 = олон, 小鱼 = жижиг загас.","medium",["dialogue"],"q15")
 q("choice","Голын эрэг дээр хол олон шувуу харав. Юу гэх вэ?",["那儿有很多小鸟。","这儿有很多小鱼。","这是我的狗。","这是谁的猫？"],"那儿有很多小鸟。","Хол бол 那儿.","medium",["usage"],"q16")
@@ -266,14 +267,15 @@ workbook = {
    "answer_source":"Test Answers: 1✗ 2✗ 3✓ 4✓"},
   {"part":2,"type":"choice","instruction_mn":"Унших — өгүүлбэр бүрт тохирох зургийг (A, B, C, D) сонго.","items":[
     {"n":5,"question_zh":"我的鱼在这儿。","options":["A","B","C","D"],"optionImages":[img("t5a"),img("t5b"),img("t5c"),img("t5d")],"answer":"D","explanation_mn":"«Миний загас энд байна» — D зураг дээр хөвгүүн загасны аяга барьж байна. A — нохой, B — охин, муур, C — хоёр тоть."},
-    {"n":6,"question_zh":"我很喜欢小鸟。","options":["A","B","C","D"],"optionImages":[img("t5a"),img("t5b"),img("t5c"),img("t5d")],"answer":"C","explanation_mn":"«Би жижиг шувууд их дуртай» — C зураг дээр хоёр тоть (шувуу) байна."},
+    {"n":6,"question_zh":"我很喜欢小鸟。","options":["A","B","C","D"],"optionImages":[img("t5a"),img("t5b"),img("t5c"),img("t5d")],"answer":"C","explanation_mn":"«Би жижиг шувуунд маш их дуртай» — C зураг дээр хоёр тоть (шувуу) байна."},
     {"n":7,"question_zh":"小猫，你几岁？","options":["A","B","C","D"],"optionImages":[img("t5a"),img("t5b"),img("t5c"),img("t5d")],"answer":"B","explanation_mn":"«Муур минь, чи хэдэн настай вэ?» — B зураг дээр охин муураа тэврэн хэвтэж байна."},
     {"n":8,"question_zh":"那个小狗叫多多。","options":["A","B","C","D"],"optionImages":[img("t5a"),img("t5b"),img("t5c"),img("t5d")],"answer":"A","explanation_mn":"«Тэр гөлөг Дуо-дуо гэдэг нэртэй» — A зураг дээр цамцтай гөлөг байна."}],
    "answer_source":"Test Answers: 5D 6C 7B 8A (зурагтай таарч байна)"},
   {"part":3,"type":"match","instruction_mn":"Let's guess — зураг дээрх амьтдыг таагаад хятадаар хэл.","image":img("guess"),"items":[
     {"n":1,"question_zh":"这是什么？（1-р зураг）","answer":"这是狗。","explanation_mn":"Хэл гарсан, хурц чихтэй — нохой (狗)."},
     {"n":2,"question_zh":"这是什么？（2-р зураг）","answer":"这是猫。","explanation_mn":"Хар цагаан толгой, ягаан чих — муур (猫)."},
-    {"n":3,"question_zh":"这是什么？（3-р зураг）","answer":"这是鱼。","explanation_mn":"Шар биетэй, ногоон туузтай — загас (鱼). Зураг хэсэгчилсэн тул багшаас шалга."}],
+    {"n":3,"question_zh":"这是什么？（3-р зураг）","answer":"这是鱼。","explanation_mn":"Шар биетэй, өнгөт сэрвээтэй — загас (鱼)."},
+    {"n":4,"question_zh":"这是什么？（4-р зураг）","answer":"这是鱼。","explanation_mn":"Ягаан биетэй, хөх сүүлтэй — загас (鱼)."}],
    "answer_source":"textbook picture (х.31)"}]},
  "writing":{"items":[{"n":1,"prompt_mn":"Бич: «小鱼» гэсэн хоёр ханзыг тод хуулан бич. 小 = жижиг, 鱼 = загас.","question_zh":"小鱼","answer":"小鱼","explanation_mn":"Эхлээд 小-г, дараа нь 鱼-г бич."}]},
  "speaking":{"items":[
@@ -291,10 +293,10 @@ def ip(file, aspect, title, section, prompt, chars, role=None):
     d["prompt"]=prompt+NOTXT; d["chars"]=chars; return d
 PROMPTS = [
  ip("images/hero.jpg","4:3","这是谁的狗？","teacher-intro","Teacher camel with glasses stands beside the yellow camel calf boy, the camel calf girl and the brown camel calf boy in a sunny meadow; a puppy, a kitten, a fish pond and little birds are around, the boy points at the puppy with a speech bubble with the Chinese text 这是谁的狗？ in large clear black font.",["temee","huu","ohin","bor"],"hero"),
- ip("images/w-zhe.jpg","1:1","这","vocabulary","The yellow camel calf boy holds a toy puppy right in front of him, pointing at it with his finger close to his face, bright and clear, near object emphasized.",["huu"]),
+ ip("images/w-zhe.jpg","1:1","这","vocabulary","Close-up: the yellow camel calf boy stretches his arm and points with his index finger at a toy puppy held right in front of his nose, the puppy big and near, his other hand open, clear near-object emphasis.",["huu"]),
  ip("images/w-na.jpg","1:1","那","vocabulary","The camel calf girl points far away across a field at a small house on a distant hill, the object tiny in the distance, arm stretched out.",["ohin"]),
  ip("images/w-shei.jpg","1:1","谁","vocabulary","The brown camel calf boy scratches his head with a big question mark above, looking at a toy ball that nobody owns, puzzled friendly face.",["bor"]),
- ip("images/w-kan.jpg","1:1","看","vocabulary","The yellow camel calf boy looks through his hand like binoculars with wide eyes, excited, a rainbow in the sky.",["huu"]),
+ ip("images/w-kan.jpg","1:1","看","vocabulary","The yellow camel calf boy holds both hands as binoculars in front of his wide-open eyes and looks eagerly at a distant butterfly and a rainbow, both eyes clearly visible, excited face, not covering his face.",["huu"]),
  ip("images/w-zher.jpg","1:1","这儿","vocabulary","The camel calf girl stands on a river bank pointing at the ground at her feet where many small goldfish swim close to her, a big arrow marker pointing down here.",["ohin"]),
  ip("images/w-duo.jpg","1:1","多","vocabulary","A big pile of many colorful apples and balls in a basket, with the brown camel calf boy surprised by how many there are, lots of items filling the picture.",["bor"]),
  ip("images/w-nar.jpg","1:1","那儿","vocabulary","The yellow camel calf boy points far away to a distant tree where many small birds sit, the birds tiny and far, arm stretched out.",["huu"]),
@@ -302,7 +304,7 @@ PROMPTS = [
  ip("images/w-gou.jpg","1:1","狗","vocabulary","A friendly brown puppy with its tongue out, wagging its tail, simple clean background.",[]),
  ip("images/w-yu.jpg","1:1","鱼","vocabulary","A bright orange goldfish swimming in blue water with bubbles, simple clean background.",[]),
  ip("images/w-niao.jpg","1:1","鸟","vocabulary","A small colorful bird sitting on a branch and singing, simple clean background.",[]),
- ip("images/d1.jpg","4:3","这是谁的狗？","dialogue","A boy with a green hoodie (named David) points at a brown puppy that a smiling girl with braids kneels next to; a kitten walks in the distance near a small house, speech bubble with the Chinese text 这是谁的狗？ in large clear black font.",["huu","ohin"]),
+ ip("images/d1.jpg","4:3","这是谁的狗？","dialogue","The yellow camel calf boy points at a brown puppy while the camel calf girl in a yellow dress kneels beside the puppy and pets it; a small kitten walks in the distance near a little house, speech bubble above the boy with the Chinese text 这是谁的狗？ in large clear black font. Only camel calf characters, no human children.",["huu","ohin"]),
  ip("images/d2.jpg","4:3","你看，这儿有很多小鱼。","dialogue","The camel calf girl in a pink top kneels at a river bank pointing at many small fish while the yellow camel calf boy points far at many little birds near a big tree, speech bubble with the Chinese text 你看，这儿有很多小鱼。 in large clear black font.",["ohin","huu"]),
  ip("images/song.jpg","4:3","动物歌","song","Four camel calf kids wear animal headbands (dog, cat, cow, sheep) and play chasing each other on a green meadow, laughing, music notes in the air; teacher camel claps happily.",["temee","huu","ohin","bor"]),
 ]

@@ -2,7 +2,7 @@
  {
   "chinese": "米饭",
   "pinyin": "mǐfàn",
-  "mongolian": "будаа (цагаан будаатай хоол)",
+  "mongolian": "будаа (чанасан цагаан будаа)",
   "notes": "нэр үг",
   "exampleChinese": "我吃米饭。",
   "examplePinyin": "Wǒ chī mǐfàn.",
@@ -90,7 +90,7 @@
   "notes": "үйл үг",
   "exampleChinese": "我爱吃蛋糕。",
   "examplePinyin": "Wǒ ài chī dàngāo.",
-  "exampleMongolian": "Би бялуунд дуртай (бялуу идэх дуртай).",
+  "exampleMongolian": "Би бялуу идэх дуртай.",
   "hskLevel": "YCT 1",
   "keyWord": true,
   "orderIndex": 8
