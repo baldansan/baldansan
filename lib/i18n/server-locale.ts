@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { DEFAULT_UI_LOCALE, UI_LOCALE_COOKIE, isUiLocale, type UiLocale } from "./locale-types";
 
-/** Сервер компонент/route-д UI хэлийг cookie-гоос уншина (байхгүй бол "zh"). */
+/** Сервер компонент/route-д UI хэлийг cookie-гоос уншина (байхгүй бол "mn"). */
 export async function getServerUiLocale(): Promise<UiLocale> {
   try {
     const store = await cookies();

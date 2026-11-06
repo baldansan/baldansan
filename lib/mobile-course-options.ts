@@ -39,15 +39,15 @@ export const HSK_HOME_LEVELS = [
 export type HskHomeLevelId = (typeof HSK_HOME_LEVELS)[number]["courseId"];
 
 /**
- * Every book ships with a drawn cover in `public/covers/<courseId>.svg`
- * (one template, one colour per level). A cover uploaded through admin
- * still wins; this only fills the gaps so the grid never mixes drawn
- * fallbacks with real art.
+ * Every book ships with its real textbook cover in `public/covers/<courseId>.jpg`
+ * (HSK 标准教程 1–6, 发展汉语 综合 I/II ×3, YCT 标准教程 1–2). A cover uploaded
+ * through admin still wins (see normalizeCourseCoverUrl — legacy drawn
+ * `/covers/<id>.png|svg` values are remapped to the real art).
  */
 export function defaultCoverUrl(courseId: string): string | null {
   if (/^hsk[1-6]$/.test(courseId) || courseId.startsWith("fazhan-") ||
     courseId.startsWith("yct-")) {
-    return `/covers/${courseId}.svg`;
+    return `/covers/${courseId}.jpg`;
   }
   return null;
 }

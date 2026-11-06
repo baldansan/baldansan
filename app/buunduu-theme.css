@@ -170,7 +170,7 @@ body{
 
 /* === Тэмээ багшийн бубл === */
 .bs-teacher{display:flex;gap:12px;align-items:flex-start;background:var(--bs-amber-50);border:1px solid var(--bs-amber-100);border-radius:18px;padding:14px}
-.bs-mascot{width:42px;height:42px;border-radius:13px;flex:none;background:radial-gradient(circle at 35% 30%, #FFD389, var(--bs-amber));display:grid;place-items:center;font-size:22px;box-shadow:0 4px 12px rgba(242,169,59,.3)}
+.bs-mascot-icon{width:42px;height:42px;border-radius:13px;flex:none;background:radial-gradient(circle at 35% 30%, #FFD389, var(--bs-amber));display:grid;place-items:center;font-size:22px;box-shadow:0 4px 12px rgba(242,169,59,.3)}
 
 /* === Жижиг туслах === */
 .bs-stack{display:flex;flex-direction:column;gap:16px}

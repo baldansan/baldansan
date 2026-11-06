@@ -136,7 +136,7 @@ export default function LessonOverview({
         {lesson.title.pinyin && <div className="bs-py">{lesson.title.pinyin}</div>}
 
         <div className="bs-teacher">
-          <div className="bs-mascot">🐫</div>
+          <div className="bs-mascot-icon">🐫</div>
           <div>
             <div className="bs-who">Тэмээ багш</div>
             <p translate="no">{lesson.hook.teacher_mn}</p>
