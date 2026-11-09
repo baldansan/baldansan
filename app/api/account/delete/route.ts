@@ -44,6 +44,13 @@ export async function POST() {
   }
 
   if (!hasServiceRoleSupabaseConfig) {
+    // Fallback: SECURITY DEFINER RPC (supabase/migrations/079_delete_own_account.sql) —
+    // хэрэглэгч өөрийн сессээр зөвхөн өөрийн бүртгэлийг устгана.
+    const { error: rpcError } = await sessionClient.rpc("delete_own_account");
+    if (!rpcError) {
+      await sessionClient.auth.signOut();
+      return NextResponse.json({ ok: true, message: "Бүртгэл бүрмөсөн устлаа.", cleanupErrors: [] });
+    }
     return NextResponse.json(
       {
         ok: false,
@@ -51,7 +58,8 @@ export async function POST() {
           "Бүртгэл устгах боломж түр идэвхгүй байна. Та санал хүсэлтээр " +
           "(эсвэл имэйлээр) устгуулах хүсэлт илгээнэ үү.",
         adminHint:
-          "Vercel → Settings → Environment Variables дээр SUPABASE_SERVICE_ROLE_KEY нэмнэ үү.",
+          "Vercel env SUPABASE_SERVICE_ROLE_KEY нэмэх, эсвэл supabase/migrations/079_delete_own_account.sql ажиллуулна уу. " +
+          rpcError.message,
       },
       { status: 503 }
     );

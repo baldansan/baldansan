@@ -45,8 +45,11 @@ export type HskHomeLevelId = (typeof HSK_HOME_LEVELS)[number]["courseId"];
  * `/covers/<id>.png|svg` values are remapped to the real art).
  */
 export function defaultCoverUrl(courseId: string): string | null {
-  if (/^hsk[1-6]$/.test(courseId) || courseId.startsWith("fazhan-") ||
-    courseId.startsWith("yct-")) {
+  if (
+    /^hsk[1-6]$/.test(courseId) ||
+    /^fazhan-(chuji|zhongji|gaoji)[12]$/.test(courseId) ||
+    /^yct-[12]$/.test(courseId)
+  ) {
     return `/covers/${courseId}.jpg`;
   }
   return null;
