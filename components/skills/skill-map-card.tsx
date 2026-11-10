@@ -27,7 +27,7 @@ const STATUS: Record<SkillStatus, { icon: string; label: string; cls: string }> 
 function Row({ it }: { it: SkillMapItem }) {
   const locale = useUiLocale();
   const st = STATUS[it.status];
-  const pct = it.mastery == null ? null : Math.round(it.mastery * 100);
+  const pct = it.mastery == null || it.status === "untested" ? null : Math.round(it.mastery * 100);
   return (
     <li>
       <Link href={it.href} className="flex items-center gap-3 rounded-xl px-2 py-2 hover:bg-slate-50">
@@ -43,8 +43,10 @@ function Row({ it }: { it: SkillMapItem }) {
           </span>
           <span className="block truncate text-xs text-[var(--app-muted)]">
             {pct == null
-              ? tr(locale, "Нотолгоо хараахан алга")
-              : `${pct}% · ${it.evidence} ${tr(locale, "оролдлого")}`}{" "}
+              ? tr(locale, it.kind === "vocab_level" ? "Сурсан үг хараахан алга" : "Нотолгоо хараахан алга")
+              : it.kind === "vocab_level"
+                ? `${it.evidence} ${tr(locale, "үг сурсан")} · ${pct}%`
+                : `${pct}% · ${it.evidence} ${tr(locale, "оролдлого")}`}{" "}
             · {tr(locale, it.hrefLabel)} →
           </span>
         </span>

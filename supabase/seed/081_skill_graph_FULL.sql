@@ -115,7 +115,7 @@ begin
   -- 3) Түвшний үгийн сан: сурсан үг / түвшний нийт үг (сүүлийн үнэлгээ known → 1, hard → 0.6, forgot → 0.2)
   insert into public.user_skill_mastery (user_id, skill_id, mastery, evidence_n, correct_n, last_at, updated_at)
   select p_user, s.id,
-         least(1, coalesce(sum(case u.last_rating when 'known' then 1.0 when 'hard' then 0.6 when 'forgot' then 0.2 else 0.3 end), 0)
+         least(1, coalesce(sum(case when u.word_id is null then 0 when u.last_rating = 'known' then 1.0 when u.last_rating = 'hard' then 0.6 when u.last_rating = 'forgot' then 0.2 else 0.3 end), 0)
                   / greatest(1, (select count(*) from public.hsk_words hw where hw.hsk_level = s.hsk_level::text and hw.is_function_word = false))),
          count(u.word_id), count(u.word_id) filter (where u.last_rating = 'known'), max(u.updated_at), now()
   from public.skills s
