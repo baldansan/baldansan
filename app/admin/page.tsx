@@ -4,6 +4,7 @@ import { getAdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
 import { getActivityTimeOverview } from "@/lib/supabase/activity-time-analytics";
 import { getLearnerGradeBoard } from "@/lib/supabase/admin-learner-grades";
 import { getSupabaseEnvPresence } from "@/lib/dev/local-debug";
+import { getAdminOverview, type AdminOverview } from "@/lib/supabase/admin-overview";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -34,18 +35,20 @@ export default async function AdminPage({
     metrics: Awaited<ReturnType<typeof getAdminDashboardMetrics>>;
     activity: Awaited<ReturnType<typeof getActivityTimeOverview>>;
     grades: Awaited<ReturnType<typeof getLearnerGradeBoard>> | null;
+    overview: AdminOverview | null;
   } | null = null;
   let loadError: string | null = null;
 
   try {
     // Two windows of activity so the cards can show change, not just a total.
-    const [metrics, activity, grades] = await Promise.all([
+    const [metrics, activity, grades, overview] = await Promise.all([
       getAdminDashboardMetrics(),
       getActivityTimeOverview(windowDays * 2),
       // The grade board is a nice-to-have here; never let it fail the page.
       getLearnerGradeBoard().catch(() => null),
+      getAdminOverview().catch(() => null),
     ]);
-    loaded = { metrics, activity, grades };
+    loaded = { metrics, activity, grades, overview };
   } catch (error) {
     loadError =
       error instanceof Error
@@ -74,6 +77,7 @@ export default async function AdminPage({
       metrics={loaded.metrics}
       activity={loaded.activity}
       grades={loaded.grades}
+      overview={loaded.overview}
       windowDays={windowDays}
     />
   );

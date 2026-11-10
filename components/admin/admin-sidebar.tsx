@@ -61,6 +61,11 @@ export function AdminNavBody({
   pathname: string;
   onNavigate?: () => void;
 }) {
+  // Үндсэн бүлэгт орсон холбоосыг «Систем» хэсэгт давхардуулахгүй.
+  const inSections = new Set(
+    ADMIN_NAV_SECTIONS.flatMap((s) => s.items.map((i) => i.href))
+  );
+  const advanced = ADMIN_NAV_ADVANCED.filter((i) => !inSections.has(i.href));
   return (
     <>
       {ADMIN_NAV_SECTIONS.map((section) => (
@@ -85,13 +90,13 @@ export function AdminNavBody({
 
       <details
         className="mt-4 border-t border-white/10 pt-3"
-        open={ADMIN_NAV_ADVANCED.some((item) => item.match(pathname))}
+        open={advanced.some((item) => item.match(pathname))}
       >
         <summary className="cursor-pointer list-none px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-500 hover:text-slate-300 [&::-webkit-details-marker]:hidden">
-          Нэмэлт хэрэгсэл ▾
+          Систем ба гаргалт ▾
         </summary>
         <ul className="mt-1 flex flex-col gap-0.5">
-          {ADMIN_NAV_ADVANCED.map((item) => (
+          {advanced.map((item) => (
             <li key={item.href}>
               <NavLink item={item} pathname={pathname} onNavigate={onNavigate} />
             </li>

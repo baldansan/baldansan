@@ -6,6 +6,7 @@ import {
   type AttentionItem,
 } from "@/components/admin/admin-attention-panel";
 import { AdminMetricCard } from "@/components/admin/admin-metric-card";
+import { AdminOverviewPanel } from "@/components/admin/admin-overview";
 import { GradeChip } from "@/components/admin/learner-grade-board";
 import {
   LEARNER_GRADE_BUCKETS,
@@ -15,11 +16,13 @@ import {
 import type { ActivityTimeOverview } from "@/lib/supabase/activity-time-analytics";
 import type { LearnerGradeBoard } from "@/lib/supabase/admin-learner-grades";
 import type { AdminDashboardMetrics } from "@/lib/supabase/admin-analytics";
+import type { AdminOverview } from "@/lib/supabase/admin-overview";
 
 type Props = {
   metrics: AdminDashboardMetrics;
   activity: ActivityTimeOverview;
   grades: LearnerGradeBoard | null;
+  overview: AdminOverview | null;
   windowDays: number;
 };
 
@@ -86,11 +89,11 @@ export function AdminDashboard({
   metrics,
   activity,
   grades,
+  overview,
   windowDays,
 }: Props) {
   const {
     lessonStatus,
-    contentTotals,
     contentQa,
     media,
     learnerProgress,
@@ -295,40 +298,7 @@ export function AdminDashboard({
         }
       />
 
-      <section aria-labelledby="dash-content">
-        <h2 id="dash-content" className="admin-section-title">
-          Контентын сан
-        </h2>
-        <p className="admin-section-desc">
-          Бүх түвшний хичээл, үг, дасгалын нэгдсэн тоо.
-        </p>
-        <div className="mt-3 grid grid-cols-2 gap-3 lg:grid-cols-4">
-          <AdminMetricCard
-            label="Нийт хичээл"
-            value={formatNumber(lessonStatus.totalLessons)}
-            icon="📚"
-            hint={`${formatNumber(lessonStatus.availableCount)} нийтлэгдсэн · ${formatNumber(lessonStatus.draftCount)} ноорог`}
-          />
-          <AdminMetricCard
-            label="Үгсийн сан"
-            value={formatNumber(contentTotals.totalVocabularyWords)}
-            icon="🔤"
-            hint="Бүртгэлтэй үг"
-          />
-          <AdminMetricCard
-            label="Дасгалын асуулт"
-            value={formatNumber(contentTotals.totalQuizQuestions)}
-            icon="❓"
-            hint="Бүх түвшин"
-          />
-          <AdminMetricCard
-            label="Нийтлэхэд бэлэн"
-            value={formatNumber(contentQa.lessonsReadyToPublish)}
-            icon="✅"
-            hint={`Медиа бэлэн: ${formatNumber(media.mediaReadyCount)}`}
-          />
-        </div>
-      </section>
+      {overview ? <AdminOverviewPanel data={overview} /> : null}
 
       {gradeSummary && gradeSummary.total > 0 ? (
         <section className="admin-panel p-5" aria-labelledby="dash-grades">
@@ -377,43 +347,6 @@ export function AdminDashboard({
           </div>
         </section>
       ) : null}
-
-      <section aria-labelledby="dash-learners">
-        <h2 id="dash-learners" className="admin-section-title">
-          Суралцагчдын үр дүн
-        </h2>
-        <p className="admin-section-desc">
-          Апп дээр бүртгэгдсэн ахиц.
-        </p>
-        <div className="mt-3 grid grid-cols-2 gap-3 lg:grid-cols-4">
-          <AdminMetricCard
-            label="Хичээл эхэлсэн"
-            value={formatNumber(learnerProgress.usersWithLessonProgress)}
-            icon="🚀"
-            hint="Суралцагчийн тоо"
-          />
-          <AdminMetricCard
-            label="Дуусгасан хичээл"
-            value={formatNumber(learnerProgress.completedLessonRows)}
-            icon="🏁"
-          />
-          <AdminMetricCard
-            label="Сурсан үг"
-            value={formatNumber(learnerProgress.learnedVocabularyRows)}
-            icon="🧠"
-          />
-          <AdminMetricCard
-            label="Дасгалын оролдлого"
-            value={formatNumber(learnerProgress.quizAttempts)}
-            icon="📝"
-          />
-        </div>
-        {learnerProgress.limitedByRls ? (
-          <p className="mt-2 text-xs text-slate-500">
-            Зарим тоо RLS-ийн улмаас хязгаарлагдсан байж болно.
-          </p>
-        ) : null}
-      </section>
 
       <div className="grid gap-4 lg:grid-cols-2">
         <section className="admin-panel p-5" aria-labelledby="dash-attention">

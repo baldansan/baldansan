@@ -20,14 +20,14 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
     href: "/admin",
     label: "Хяналтын самбар",
     icon: "📊",
-    hint: "Өнөөдрийн төлөв, анхаарал шаардсан зүйлс.",
+    hint: "Бүх зүйл хувиар нэг харцаар: хичээл, шалгалт, суралцагч, алдаа.",
     match: (p) => p === "/admin",
   },
   {
     href: "/admin/lessons",
     label: "Хичээлүүд",
     icon: "📚",
-    hint: "Бүх хичээлийн жагсаалт, засвар, нийтлэл.",
+    hint: "Бүх курсын хичээл: жагсаалт, засвар, нийтлэх, шинэ хичээл нэмэх.",
     match: (p) =>
       p.startsWith("/admin/lessons") &&
       p !== "/admin/lessons/new" &&
@@ -42,16 +42,16 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
   },
   {
     href: "/admin/import",
-    label: "ZIP импорт",
+    label: "Багц импорт (ZIP)",
     icon: "📦",
-    hint: "Бэлэн багцаас хичээл оруулах.",
+    hint: "Бэлэн ZIP багцаас хичээл, шалгалт, бичлэг оруулах.",
     match: (p) => p.startsWith("/admin/import"),
   },
   {
     href: "/admin/source",
-    label: "Эх сурвалж",
+    label: "Номын эх",
     icon: "📖",
-    hint: "HSK номын хичээл бүрийн бүх агуулга — номд байгаагаар.",
+    hint: "HSK номын хичээл бүрийн агуулга — номд байгаагаар.",
     match: (p) => p.startsWith("/admin/source"),
   },
   {
@@ -63,9 +63,9 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
   },
   {
     href: "/admin/mock-tests/tutor-notes",
-    label: "Багшийн тайлбар",
-    icon: "🎓",
-    hint: "Загвар шалгалтын асуултын экспорт ба «Хувийн багш» тайлбарын импорт.",
+    label: "Загвар шалгалт (真题)",
+    icon: "📝",
+    hint: "Оруулсан шалгалтууд, асуулт бүрийн тайлбар ба «хувийн багш» тэмдэглэл.",
     match: (p) => p.startsWith("/admin/mock-tests"),
   },
 ];
@@ -74,9 +74,9 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
 export const ADMIN_NAV_INSIGHTS: AdminNavItem[] = [
   {
     href: "/admin/analytics",
-    label: "Тайлан",
+    label: "Сурах тайлан",
     icon: "📈",
-    hint: "Суралцалтын гүйцэтгэл, хүндрэлтэй асуултууд.",
+    hint: "Хичээл бүрийн гүйцэтгэл, хүндрэлтэй асуулт, үг.",
     match: (p) => p.startsWith("/admin/analytics"),
   },
   {
@@ -88,51 +88,51 @@ export const ADMIN_NAV_INSIGHTS: AdminNavItem[] = [
   },
   {
     href: "/admin/learners",
-    label: "Суралцагчдын үнэлгээ",
+    label: "Суралцагчид",
     icon: "🎓",
-    hint: "A–F үнэлгээ, бүлэг тус бүрийн жагсаалт.",
+    hint: "Бүх суралцагч A–F үнэлгээтэй; нэг дээр нь дарвал дэлгэрэнгүй.",
     match: (p) => p.startsWith("/admin/learners"),
   },
   {
     href: "/admin/learner",
-    label: "Суралцагчийн дэлгэрэнгүй",
+    label: "Нэг суралцагч",
     icon: "🧑‍🎓",
-    hint: "Нэг хэрэглэгчийн ахиц, гацсан цэг.",
+    hint: "Нэг хүний ахиц, гацсан цэг, сурсан үг.",
     match: (p) => p === "/admin/learner" || p.startsWith("/admin/learner?"),
   },
   {
     href: "/admin/center",
     label: "Сургалтын төв",
     icon: "🏢",
-    hint: "Бүх бүлгийг багш, түвшин, үнэлгээгээр нь харьцуулах.",
+    hint: "Бүлгүүдийг багш, түвшин, үнэлгээгээр харьцуулах.",
     match: (p) => p === "/admin/center",
   },
   {
     href: "/admin/center/report",
-    label: "Төвийн тайлан",
+    label: "Төвийн тайлан (хэвлэх)",
     icon: "🖨",
     hint: "Хэвлэхэд бэлэн нэгдсэн тайлан.",
     match: (p) => p.startsWith("/admin/center/report"),
   },
   {
     href: "/admin/center/certificate",
-    label: "Курс дүүргэлтийн бичиг",
+    label: "Гэрчилгээ",
     icon: "🎖",
     hint: "Курсээ дүүргэсэн сурагчид олгох бичиг.",
     match: (p) => p.startsWith("/admin/center/certificate"),
   },
   {
     href: "/admin/b2b",
-    label: "Байгууллага",
+    label: "Сургууль, анги",
     icon: "🏫",
-    hint: "Сургууль, анги, урилга, хүсэлт.",
+    hint: "Байгууллага, анги, багшийн урилга, хамтрах хүсэлт.",
     match: (p) => p.startsWith("/admin/b2b"),
   },
   {
     href: "/admin/tasks",
-    label: "Даалгавар",
+    label: "Ажлын жагсаалт",
     icon: "✅",
-    hint: "Контентын ажлын төв.",
+    hint: "Контентын хийх ажил, хэн юу хариуцаж байгаа.",
     match: (p) => p.startsWith("/admin/tasks"),
   },
 ];
@@ -155,7 +155,7 @@ export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
   },
   {
     href: "/admin/activity",
-    label: "Үйлдлийн лог",
+    label: "Үйлдлийн түүх",
     icon: "📋",
     hint: "Хэн юу өөрчилсөн бүртгэл.",
     match: (p) => p.startsWith("/admin/activity"),
@@ -225,16 +225,49 @@ export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
   },
 ];
 
+function pick(items: AdminNavItem[], hrefs: string[]): AdminNavItem[] {
+  return hrefs
+    .map((h) => items.find((i) => i.href === h))
+    .filter((i): i is AdminNavItem => Boolean(i));
+}
+
+/** Цэс 4 ойлгомжтой бүлэгт: Самбар → Контент → Суралцагчид → Тайлан. */
 export const ADMIN_NAV_SECTIONS: AdminNavSection[] = [
   {
-    title: "Контент",
-    description: "Хичээл, бичлэг, импорт",
-    items: ADMIN_NAV_PRIMARY,
+    title: "Самбар",
+    description: "Бүгд нэг харцаар, хувиар",
+    items: pick(ADMIN_NAV_PRIMARY, ["/admin"]),
   },
   {
-    title: "Тайлан ба хэрэглэгч",
-    description: "Гүйцэтгэл, суралцагч, байгууллага",
-    items: ADMIN_NAV_INSIGHTS,
+    title: "Контент",
+    description: "Хичээл, шалгалт, бичлэг, импорт",
+    items: pick(ADMIN_NAV_PRIMARY, [
+      "/admin/lessons",
+      "/admin/mock-tests/tutor-notes",
+      "/admin/bichleg",
+      "/admin/source",
+      "/admin/import",
+    ]),
+  },
+  {
+    title: "Суралцагчид",
+    description: "Хүмүүс, бүлэг, сургууль",
+    items: pick(ADMIN_NAV_INSIGHTS, [
+      "/admin/learners",
+      "/admin/learner",
+      "/admin/b2b",
+      "/admin/center",
+      "/admin/center/report",
+      "/admin/center/certificate",
+    ]),
+  },
+  {
+    title: "Тайлан ба ажил",
+    description: "Гүйцэтгэл, алдаа, хийх ажил",
+    items: [
+      ...pick(ADMIN_NAV_INSIGHTS, ["/admin/analytics", "/admin/feedback", "/admin/tasks"]),
+      ...pick(ADMIN_NAV_ADVANCED, ["/admin/activity"]),
+    ],
   },
 ];
 

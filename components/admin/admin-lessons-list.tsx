@@ -19,14 +19,16 @@ import type { LessonQaReport } from "@/lib/admin/lesson-qa";
 
 type Props = {
   reports: LessonQaReport[];
+  /** ?q= — хяналтын самбараас курсаар шүүж орох. */
+  initialQuery?: string;
 };
 
 function audioLabel(hasAudio: boolean): string {
   return hasAudio ? "✓" : "—";
 }
 
-export function AdminLessonsList({ reports }: Props) {
-  const [query, setQuery] = useState("");
+export function AdminLessonsList({ reports, initialQuery = "" }: Props) {
+  const [query, setQuery] = useState(initialQuery);
   const [statusFilter, setStatusFilter] = useState<AdminStatusFilter>("all");
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [bannerMessage, setBannerMessage] = useState<string | null>(null);
