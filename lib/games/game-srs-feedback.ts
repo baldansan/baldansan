@@ -70,3 +70,38 @@ export function rateGameWords(results: { wordId: number | null | undefined; corr
     rateGameWord(r.wordId, r.correct);
   }
 }
+
+// ---- Ханзаар (хичээлийн үг hsk_words id-гүй тул) ----
+const hanziIdCache = new Map<string, Promise<number | null>>();
+
+/** Энгийн ханз → hsk_words.id (кэштэй). Олдохгүй бол null. */
+export function lookupWordIdByHanzi(hanzi: string): Promise<number | null> {
+  const key = hanzi.trim();
+  if (!key || !supabase) return Promise.resolve(null);
+  let p = hanziIdCache.get(key);
+  if (!p) {
+    const client = supabase;
+    p = (async () => {
+      try {
+        const { data } = await client
+          .from("hsk_words")
+          .select("id")
+          .eq("simplified", key)
+          .order("id", { ascending: true })
+          .limit(1)
+          .maybeSingle();
+        return (data?.id as number | undefined) ?? null;
+      } catch {
+        return null;
+      }
+    })();
+    hanziIdCache.set(key, p);
+  }
+  return p;
+}
+
+/** Хичээлийн тоглоомд: ханзаар нь SRS-д бүртгэнэ (HSK үгийн санд байвал). */
+export function rateGameWordByHanzi(hanzi: string | null | undefined, correct: boolean): void {
+  if (!hanzi) return;
+  void lookupWordIdByHanzi(hanzi).then((id) => rateGameWord(id, correct));
+}

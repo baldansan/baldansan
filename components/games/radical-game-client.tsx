@@ -1,5 +1,6 @@
 "use client";
 
+import { rateGameWordByHanzi } from "@/lib/games/game-srs-feedback";
 import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
 import { RadicalHanziPanel } from "@/components/games/radical-hanzi-panel";
@@ -113,6 +114,8 @@ export function RadicalGameClient({
 
     const picked = selected.map((s) => s.c);
     const ok = isAnswerCorrect(picked, current.answer);
+    // Эхний оролдлогод л SRS-д бүртгэнэ (дахин оролдлого тоолохгүй)
+    if (!missedOnChar) rateGameWordByHanzi(current.char, ok);
     setAttempts((a) => a + 1);
 
     if (ok) {

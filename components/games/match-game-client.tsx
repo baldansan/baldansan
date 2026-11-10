@@ -1,5 +1,6 @@
 "use client";
 
+import { rateGameWordByHanzi } from "@/lib/games/game-srs-feedback";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
 import { GameEmptyState } from "@/components/games/game-empty-state";
@@ -176,11 +177,13 @@ export function MatchGameClient({
     (leftId: string, rightId: string) => {
       if (leftId === rightId) {
         const res = juice.answer(true);
+        rateGameWordByHanzi(pairs.find((p) => p.id === leftId)?.chinese, true);
         // Хос бүр 10 оноо (үеийн төгсгөлд нэмэгдэнэ); combo/хурдны урамшуулал энд шууд
         if (res.points > 10) setScore((s) => s + (res.points - 10));
         setMatched((prev) => new Set(prev).add(leftId));
       } else {
         juice.answer(false);
+        rateGameWordByHanzi(pairs.find((p) => p.id === leftId)?.chinese, false);
         wrongRef.current += 1;
         setWrongFlash(`${leftId}-${rightId}`);
         setTimeout(() => setWrongFlash(null), 600);

@@ -1,5 +1,6 @@
 "use client";
 
+import { rateGameWordByHanzi } from "@/lib/games/game-srs-feedback";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { GameShell } from "@/components/games/game-shell";
@@ -105,6 +106,7 @@ export function DictationGameClient() {
         : isDictationPinyinMatch(pinyinInput, current.pinyin);
     setChecked(true);
     setWasCorrect(ok);
+    rateGameWordByHanzi(current.hanzi, ok);
     if (ok) setCorrectCount((c) => c + 1);
   }
 

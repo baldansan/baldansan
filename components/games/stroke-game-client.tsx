@@ -1,5 +1,6 @@
 "use client";
 
+import { rateGameWordByHanzi } from "@/lib/games/game-srs-feedback";
 import { ToneHanzi } from "@/components/hanzi/ToneHanzi";
 import Link from "next/link";
 import { Fragment, useMemo, useState } from "react";
@@ -115,6 +116,7 @@ export function StrokeGameClient({
     setSelected(option);
     setRevealed(true);
     const isCorrect = option === current.correctComponent;
+    rateGameWordByHanzi(current.chinese, isCorrect);
     if (isCorrect) {
       setCorrectCount((c) => c + 1);
       setScore((s) => s + 10);

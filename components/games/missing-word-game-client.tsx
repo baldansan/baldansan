@@ -1,5 +1,6 @@
 "use client";
 
+import { rateGameWordByHanzi } from "@/lib/games/game-srs-feedback";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { GameCard } from "@/components/games/game-card";
 import { GameEmptyState } from "@/components/games/game-empty-state";
@@ -106,6 +107,7 @@ export function MissingWordGameClient({
     setSelected(option);
     setRevealed(true);
     const isCorrect = option === current.correctAnswer;
+    rateGameWordByHanzi(current.correctAnswer, isCorrect);
     const res = juice.answer(isCorrect);
     const nextCorrect = isCorrect ? correctCount + 1 : correctCount;
     const nextScore = score + res.points;
