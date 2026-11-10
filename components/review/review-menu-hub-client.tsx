@@ -24,6 +24,7 @@ import {
 import { loadSrsHubStats } from "@/lib/review/srs-hub-stats";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
 import { countSentenceCards } from "@/lib/bichleg/sentence-cards";
+import { getUserWordSrsCounts } from "@/lib/supabase/user-word-srs";
 import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
 import { fetchMistakes } from "@/lib/supabase/mistake-book";
 import { countDueLocalWriting } from "@/lib/srs/writing-srs";
@@ -79,6 +80,7 @@ export function ReviewMenuHubClient({
     useState<BichlegContinueTarget | null>(null);
   const [freshMistakes, setMistakeCount] = useState<number | null>(null);
   const [writingDue, setWritingDue] = useState(0);
+  const [savedWords, setSavedWords] = useState<{ total: number; due: number } | null>(null);
   const [sentenceCards, setSentenceCards] = useState({ total: 0, due: 0 });
   const [freshLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -134,11 +136,13 @@ export function ReviewMenuHubClient({
     }
 
     // Хүлээж буй карт, өдрийн зорилт — /home «Өнөөдөр» хэсэгтэй нэг эх сурвалж.
-    const [srs, clip] = await Promise.all([
+    const [srs, clip, savedCounts] = await Promise.all([
       loadSrsHubStats({ userId, activeLevel }).catch(() => null),
       userId ? fetchBichlegContinueTargetClient().catch(() => null) : Promise.resolve(null),
+      userId ? getUserWordSrsCounts(userId).catch(() => null) : Promise.resolve(null),
     ]);
     bichlegClip = clip;
+    setSavedWords(savedCounts);
     const { dueCards, dailyDone, dailyGoal, studiedCount, accuracyPct } = srs ?? {
       dueCards: 0,
       dailyDone: 0,
@@ -374,6 +378,26 @@ export function ReviewMenuHubClient({
         </div>
 
         <div className="bs-tm-grid bs-stagger">
+        <PrefetchLink href="/review/words" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
+            📌
+          </span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">
+              {tr(locale, "Миний үгс")}
+              {savedWords && savedWords.total > 0 ? ` · ${savedWords.total}` : ""}
+            </span>
+            <span className="bs-tm-card-sub">
+              {savedWords && savedWords.total > 0
+                ? savedWords.due > 0
+                  ? `${tr(locale, "Цээжлэх")} ${savedWords.total} ${tr(locale, "үг")} · ${savedWords.due} ${tr(locale, "өнөөдөр давтах")}`
+                  : `${tr(locale, "Цээжлэх")} ${savedWords.total} ${tr(locale, "үг")} · ${tr(locale, "өнөөдөр бүгд давтагдсан")}`
+                : tr(locale, "Хичээлээс хадгалсан үгс чинь энд цугларна")}
+            </span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </PrefetchLink>
+
         <PrefetchLink href="/review/memorize" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
             💡

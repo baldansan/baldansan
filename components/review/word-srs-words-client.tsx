@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { getPrimaryPosLabelMn } from "@/lib/hsk/pos-catalog";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
@@ -96,8 +97,24 @@ export function WordSrsWordsClient() {
     <div className="bs-srs-words">
       <h1 className="bs-srs-words-title">Миний үгс</h1>
       <p className="bs-srs-words-sub">
-        Давталтын системд бүртгэгдсэн HSK үгс
+        Хичээл, бичлэг, тольноос хадгалсан үгс чинь энд цугларч, давталтын системээр (SRS) цээжлэгдэнэ.
       </p>
+      {items.length > 0 ? (
+        <div className="bs-srs-words-stats">
+          <span className="bs-srs-words-stat">
+            <b>{items.length}</b> үг цээжлэхээр
+          </span>
+          <span className="bs-srs-words-stat">
+            <b>{items.filter((it) => new Date(it.srs.due_at).getTime() <= Date.now()).length}</b> өнөөдөр давтах
+          </span>
+          <span className="bs-srs-words-stat">
+            <b>{items.filter((it) => it.srs.last_rating === "known").length}</b> мэддэг болсон
+          </span>
+          <Link href="/review/daily" className="bs-srs-words-start">
+            Давтаж эхлэх →
+          </Link>
+        </div>
+      ) : null}
 
       <div className="bs-srs-words-filters">
         <button

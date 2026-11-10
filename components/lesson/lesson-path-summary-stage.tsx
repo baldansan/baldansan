@@ -13,6 +13,7 @@ import {
 import { coursePath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { saveLessonWordsBatch } from "@/lib/supabase/saved-words";
+import { SavedWordsHint } from "@/components/review/saved-words-hint";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 
 type Props = {
@@ -73,6 +74,8 @@ export function LessonPathSummaryStage({
     });
   }
 
+  const [savedToReview, setSavedToReview] = useState(false);
+
   async function handleSaveAllWords() {
     if (summary.vocabulary.length === 0) return;
     setSavingWords(true);
@@ -89,8 +92,9 @@ export function LessonPathSummaryStage({
         return;
       }
       showToast(
-        `${result.added} үг нэмэгдлээ, ${result.alreadyHad} аль хэдийн байсан`
+        `${result.added} үг давталтад нэмэгдлээ (${result.alreadyHad} аль хэдийн байсан) → Давтах → Миний үгс`
       );
+      setSavedToReview(true);
     } finally {
       setSavingWords(false);
     }
@@ -135,6 +139,9 @@ export function LessonPathSummaryStage({
         ) : (
           <p className="text-sm text-[var(--bs-muted)]">Шинэ үг байхгүй.</p>
         )}
+        {savedToReview ? (
+          <SavedWordsHint message="Хадгалагдлаа ✓" refreshKey={summary.vocabulary.length} />
+        ) : null}
       </div>
 
       {summary.structureChips.length > 0 ? (

@@ -13,6 +13,7 @@ import {
   type BichlegWordStatus,
   type HskWordDisplay,
 } from "@/lib/supabase/saved-words";
+import { SavedWordsHint } from "@/components/review/saved-words-hint";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 
 export type WordTapPayload = {
@@ -236,7 +237,13 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
             </button>
           )}
         </div>
-        {toast ? <p className="bs-bichleg-sheet-note">{toast}</p> : null}
+        {toast ? (
+          /✓/.test(toast) ? (
+            <SavedWordsHint message={toast} refreshKey={toast + word.zh} />
+          ) : (
+            <p className="bs-bichleg-sheet-note">{toast}</p>
+          )
+        ) : null}
       </div>
     </>
   );

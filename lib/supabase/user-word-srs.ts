@@ -445,3 +445,23 @@ export async function getUserWordSrsStats(
     error: null,
   };
 }
+
+/** Хадгалсан (SRS-д орсон) үгсийн тоо: нийт + өнөөдөр давтах. Hub карт, toast-д. */
+export async function getUserWordSrsCounts(
+  userId: string
+): Promise<{ total: number; due: number }> {
+  if (!supabase || !hasSupabaseConfig) return { total: 0, due: 0 };
+  const { data, error } = await supabase
+    .from("user_word_srs")
+    .select("due_at")
+    .eq("user_id", userId)
+    .limit(5000);
+  if (error || !data) return { total: 0, due: 0 };
+  const now = Date.now();
+  let due = 0;
+  for (const r of data) {
+    const d = r.due_at ? new Date(r.due_at as string).getTime() : 0;
+    if (d <= now) due += 1;
+  }
+  return { total: data.length, due };
+}

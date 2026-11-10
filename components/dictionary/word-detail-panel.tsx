@@ -15,6 +15,7 @@ const HanziWriterPractice = dynamic(
   { ssr: false, loading: () => <p className="text-xs text-[var(--app-muted)]">Ачааллаж байна…</p> }
 );
 import { saveWordFromLesson } from "@/lib/supabase/saved-words";
+import { SavedWordsHint } from "@/components/review/saved-words-hint";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 
@@ -122,7 +123,7 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
           {tr(locale, "Хэлц үгэнд хайх")}
         </Link>
       </div>
-      {saved ? <p className="mt-2 text-xs font-semibold text-emerald-700">{saved}</p> : null}
+      {saved ? <SavedWordsHint message={saved} refreshKey={saved + word.simplified} /> : null}
 
       {word.example_zh ? (
         <div className="mt-4 rounded-2xl bg-emerald-50 p-3 ring-1 ring-emerald-100">
