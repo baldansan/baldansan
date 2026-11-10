@@ -1,0 +1,74 @@
+[
+ {
+  "chinese": "雨伞",
+  "pinyin": "yǔsǎn",
+  "mongolian": "шүхэр",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "漂亮的雨伞",
+  "examplePinyin": "Piàoliang de yǔsǎn",
+  "exampleMongolian": "Гоё шүхэр",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "拿",
+  "pinyin": "ná",
+  "mongolian": "барих, авах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "你拿雨伞了吗？",
+  "examplePinyin": "Nǐ ná yǔsǎn le ma?",
+  "exampleMongolian": "Чи шүхрээ авсан уу?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "蓝",
+  "pinyin": "lán",
+  "mongolian": "цэнхэр",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "蓝色的花",
+  "examplePinyin": "Lánsè de huā",
+  "exampleMongolian": "Цэнхэр цэцэг",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "坏",
+  "pinyin": "huài",
+  "mongolian": "муу, эвдэрсэн",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "雨伞坏了。",
+  "examplePinyin": "Yǔsǎn huài le.",
+  "exampleMongolian": "Шүхэр эвдэрчээ.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "慢",
+  "pinyin": "màn",
+  "mongolian": "удаан",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "慢一点儿好。",
+  "examplePinyin": "Màn yìdiǎnr hǎo.",
+  "exampleMongolian": "Жаахан удаан нь дээр.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "迟到",
+  "pinyin": "chídào",
+  "mongolian": "хоцрох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "要迟到了，快走！",
+  "examplePinyin": "Yào chídào le, kuài zǒu!",
+  "exampleMongolian": "Хоцрох нь ээ, хурдан яв!",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 6
+ }
+]

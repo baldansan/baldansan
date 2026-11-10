@@ -1,0 +1,143 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l10",
+ "hskLevel": 2,
+ "lessonNumber": 10,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "爸爸为什么不休息？",
+ "mongolianTitle": "Аав яагаад амрахгүй байна вэ?",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第10课 (сурах бичиг + CD аудио 10-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-10-text-song.mp3",
+  "dialogues": "audio/yct-4-10-02.mp3",
+  "words": "audio/yct-4-10-01.mp3",
+  "story": "audio/yct-4-10-03.mp3",
+  "test": "audio/yct-4-10-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l10",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "爸爸为什么不休息？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-dianying",
+    "file": "images/w-dianying.jpg",
+    "title": "电影",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-weishenme",
+    "file": "images/w-weishenme.jpg",
+    "title": "为什么",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mang",
+    "file": "images/w-mang.jpg",
+    "title": "忙",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shiqing",
+    "file": "images/w-shiqing.jpg",
+    "title": "事情",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yisi",
+    "file": "images/w-yisi.jpg",
+    "title": "意思",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yinweisuoyi",
+    "file": "images/w-yinweisuoyi.jpg",
+    "title": "因为……所以……",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "爸爸为什么不休息？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你看过这个电影吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "每个人都很忙",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "每个人都很忙 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2d",
+    "file": "images/t2d.png",
+    "title": "Test 2d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L10)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

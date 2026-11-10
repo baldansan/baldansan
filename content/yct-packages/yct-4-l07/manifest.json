@@ -1,0 +1,220 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l07",
+ "hskLevel": 2,
+ "lessonNumber": 7,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你们每天怎么去学校？",
+ "mongolianTitle": "Та нар өдөр бүр сургуульдаа яаж явдаг вэ?",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第7课 (сурах бичиг + CD аудио 07-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-07-text-song.mp3",
+  "dialogues": "audio/yct-4-07-02.mp3",
+  "words": "audio/yct-4-07-01.mp3",
+  "song": "audio/yct-4-07-03.mp3",
+  "test": "audio/yct-4-07-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l07",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你们每天怎么去学校？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-gonggongqiche",
+    "file": "images/w-gonggongqiche.jpg",
+    "title": "公共汽车",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dongwuyuan",
+    "file": "images/w-dongwuyuan.jpg",
+    "title": "动物园",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chezhan",
+    "file": "images/w-chezhan.jpg",
+    "title": "车站",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kai",
+    "file": "images/w-kai.jpg",
+    "title": "开",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dui",
+    "file": "images/w-dui.jpg",
+    "title": "对",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lu",
+    "file": "images/w-lu.jpg",
+    "title": "路",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yuan",
+    "file": "images/w-yuan.jpg",
+    "title": "远",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jin",
+    "file": "images/w-jin.jpg",
+    "title": "近",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-pangbian",
+    "file": "images/w-pangbian.jpg",
+    "title": "旁边",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tiao",
+    "file": "images/w-tiao.jpg",
+    "title": "条",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zuo",
+    "file": "images/w-zuo.jpg",
+    "title": "坐",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zenme",
+    "file": "images/w-zenme.jpg",
+    "title": "怎么",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你们每天怎么去学校？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "去动物园走这条路，对吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "我爱开公共汽车",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2d",
+    "file": "images/t2d.png",
+    "title": "Test 2d",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "g1",
+    "file": "images/g1.png",
+    "title": "Let's guess 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "g2",
+    "file": "images/g2.png",
+    "title": "Let's guess 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "g3",
+    "file": "images/g3.png",
+    "title": "Let's guess 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "g4",
+    "file": "images/g4.png",
+    "title": "Let's guess 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "find",
+    "file": "images/find.jpg",
+    "title": "Let's find",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "bus",
+    "file": "images/bus.png",
+    "title": "Let's draw · 公共汽车",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L7)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

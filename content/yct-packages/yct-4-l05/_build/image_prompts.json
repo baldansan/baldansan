@@ -1,0 +1,120 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "把门关上。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher Camel (yellow camel with glasses) stands in a cozy home doorway pointing at an open door, a yellow camel calf boy and a calf girl look surprised, a small cat sits near a plate with fish bones. Speech bubble with the Chinese text 把门关上 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yu.jpg",
+  "aspect": "1:1",
+  "title": "鱼",
+  "section": "vocabulary",
+  "prompt": "A calf girl holds a big bowl with a fresh silver fish and smiles, a small cat looks at it hungrily. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-cai.jpg",
+  "aspect": "1:1",
+  "title": "菜",
+  "section": "vocabulary",
+  "prompt": "A calf boy at a table with a plate of colorful cooked vegetable and meat dishes, rice bowl beside it, smiling. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-guozhi.jpg",
+  "aspect": "1:1",
+  "title": "果汁",
+  "section": "vocabulary",
+  "prompt": "A brown calf boy drinks from a tall glass of orange fruit juice with a straw, another yellow juice glass on the table. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xizao.jpg",
+  "aspect": "1:1",
+  "title": "洗澡",
+  "section": "vocabulary",
+  "prompt": "A calf girl in a bathtub full of soap bubbles, with a shower head, happy and covered in foam. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jin.jpg",
+  "aspect": "1:1",
+  "title": "进",
+  "section": "vocabulary",
+  "prompt": "A yellow calf boy walks in through an open front door into a house, waving hello, an adult camel mother welcoming him. No English text.",
+  "chars": [
+   "huu",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-ta.jpg",
+  "aspect": "1:1",
+  "title": "它",
+  "section": "vocabulary",
+  "prompt": "A calf girl hugs a small puppy and points at it with a smile, showing 'it' as her pet. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ba.jpg",
+  "aspect": "1:1",
+  "title": "把",
+  "section": "vocabulary",
+  "prompt": "A calf boy holding a door handle and closing a door, with arrow showing the door swinging shut. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你在做什么？",
+  "section": "dialogue",
+  "prompt": "In a bathroom a calf girl in a pink dress washes a golden dog in a bubble bath with a shower head; an adult camel mother stands surprised at the open doorway. Speech bubble with the Chinese text 请进，快把门关上 in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "我们今天吃什么？",
+  "section": "dialogue",
+  "prompt": "A dining room: a calf girl with hand on head looks worried at the table, an adult camel father in an apron in the kitchen throws up his hands, a small orange cat licks its mouth near fish bones. Speech bubble with the Chinese text 不好，小猫把鱼吃了 in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "奶奶爱吃青菜",
+  "section": "song",
+  "prompt": "A big round table of a camel family at dinner: grandmother and grandfather camels, mother, father, big brother, big sister, little sister and little brother camels, eating vegetables, juice, bread and milk; a cat beneath the table. Warm Chinese home with red pillars. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

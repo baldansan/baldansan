@@ -1,0 +1,129 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你学汉语多长时间了？",
+  "section": "teacher-intro",
+  "prompt": "Teacher Camel (yellow camel with glasses) points to a blackboard in a classroom with a big clock; the yellow calf boy, the calf girl in a yellow dress and the brown calf boy sit at desks with books, the girl holds up one finger and half a finger. Speech bubble with the Chinese text 你学汉语多长时间了？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "hero"
+ },
+ {
+  "file": "images/w-shijian.jpg",
+  "aspect": "1:1",
+  "title": "时间",
+  "section": "vocabulary",
+  "prompt": "A calf looking at a big colorful clock and an hourglass, happy to have free time to play. No text. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ban.jpg",
+  "aspect": "1:1",
+  "title": "半",
+  "section": "vocabulary",
+  "prompt": "The calf girl holding half of a round watermelon, the other half on the table, cut in two equal halves. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-du.jpg",
+  "aspect": "1:1",
+  "title": "读",
+  "section": "vocabulary",
+  "prompt": "The calf girl sitting on a cushion reading a picture book aloud, mouth open. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-nan.jpg",
+  "aspect": "1:1",
+  "title": "难",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy holding his head with both hooves, staring at a huge pile of books and a puzzle he cannot solve. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xiaoshi.jpg",
+  "aspect": "1:1",
+  "title": "小时",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy next to a big alarm clock showing one full hour, with a clock hand tracing the whole circle. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ti.jpg",
+  "aspect": "1:1",
+  "title": "题",
+  "section": "vocabulary",
+  "prompt": "The calf boy at a desk holding a worksheet with a question mark and simple pictures of apples to count. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dong.jpg",
+  "aspect": "1:1",
+  "title": "懂",
+  "section": "vocabulary",
+  "prompt": "The calf girl with a glowing lightbulb above her head, smiling because she understands, teacher camel nodding. No English text.",
+  "chars": [
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你学汉语多长时间了？",
+  "section": "dialogue",
+  "prompt": "In a classroom a Chinese teacher (a camel teacher with glasses) points at the blackboard and asks the calf girl at her desk; the girl holds up one finger and a half-circle; speech bubble with the Chinese text 你学汉语多长时间了？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "这个题我不懂。",
+  "section": "dialogue",
+  "prompt": "At home the yellow calf boy sits at a desk with a worksheet and rests his head on his hoof; a friendly silver robot stands beside the window; speech bubble with the Chinese text 这个题我不懂。 in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "同学好",
+  "section": "song",
+  "prompt": "Classroom scene: calf children sing together, one listens with headphones, two chat, one reads a book, one writes; Teacher Camel conducts with a pointer; musical notes in the air. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "孙悟空和超人",
+  "section": "story",
+  "prompt": "The Monkey King in golden armor and a caped superhero sit at a table solving math problems with paper and a stopwatch, clouds outside the window; the Monkey King looks smug, the superhero is puzzled. No English text.",
+  "chars": []
+ }
+]

@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Нийтийн автобус» хятадаар аль нь вэ?",
+  "options": [
+   "动物园",
+   "学校",
+   "车站",
+   "公共汽车"
+  ],
+  "correct_answer": "公共汽车",
+  "explanation": "公共汽车 (gōnggòng qìchē) = нийтийн автобус.",
+  "order_index": 1,
+  "id": "yct-4-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Амьтны хүрээлэн» хятадаар аль нь вэ?",
+  "options": [
+   "学校",
+   "朋友",
+   "动物园",
+   "车站"
+  ],
+  "correct_answer": "动物园",
+  "explanation": "动物园 (dòngwùyuán) = амьтны хүрээлэн.",
+  "order_index": 2,
+  "id": "yct-4-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Автобусны буудал» хятадаар аль нь вэ?",
+  "options": [
+   "车站",
+   "动物园",
+   "公共汽车",
+   "旁边"
+  ],
+  "correct_answer": "车站",
+  "explanation": "车站 (chēzhàn) = автобусны буудал.",
+  "order_index": 3,
+  "id": "yct-4-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Жолоодох» хятадаар аль нь вэ?",
+  "options": [
+   "开",
+   "对",
+   "远",
+   "路"
+  ],
+  "correct_answer": "开",
+  "explanation": "开 (kāi) = жолоодох. 开车 = машин жолоодох.",
+  "order_index": 4,
+  "id": "yct-4-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зам» хятадаар аль нь вэ?",
+  "options": [
+   "远",
+   "近",
+   "对",
+   "路"
+  ],
+  "correct_answer": "路",
+  "explanation": "路 (lù) = зам.",
+  "order_index": 5,
+  "id": "yct-4-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«远» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "ойр",
+   "зөв",
+   "хол",
+   "хажууд"
+  ],
+  "correct_answer": "хол",
+  "explanation": "远 (yuǎn) = хол.",
+  "order_index": 6,
+  "id": "yct-4-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«近» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "зөв",
+   "зам",
+   "ойр",
+   "хол"
+  ],
+  "correct_answer": "ойр",
+  "explanation": "近 (jìn) = ойр.",
+  "order_index": 7,
+  "id": "yct-4-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«旁边» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "буудал",
+   "зам",
+   "хажууд",
+   "хол"
+  ],
+  "correct_answer": "хажууд",
+  "explanation": "旁边 (pángbiān) = хажууд, дэргэд.",
+  "order_index": 8,
+  "id": "yct-4-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«对» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хажууд",
+   "зөв",
+   "хол",
+   "жолоодох"
+  ],
+  "correct_answer": "зөв",
+  "explanation": "对 (duì) = зөв.",
+  "order_index": 9,
+  "id": "yct-4-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«一条路» гэдэг дэх «条» нь юуг тоолох үг вэ?",
+  "options": [
+   "амьтан",
+   "ном",
+   "зам",
+   "хүн"
+  ],
+  "correct_answer": "зам",
+  "explanation": "条 (tiáo) — зам, гол зэргийг тоолно.",
+  "order_index": 10,
+  "id": "yct-4-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «gōnggòng qìchē» гэж уншдаг үг:",
+  "options": [
+   "公共汽车",
+   "学校",
+   "车站",
+   "动物园"
+  ],
+  "correct_answer": "公共汽车",
+  "explanation": "公共汽车 = gōnggòng qìchē.",
+  "order_index": 11,
+  "id": "yct-4-l07-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dòngwùyuán» гэж уншдаг үг:",
+  "options": [
+   "动物园",
+   "旁边",
+   "车站",
+   "公共汽车"
+  ],
+  "correct_answer": "动物园",
+  "explanation": "动物园 = dòngwùyuán.",
+  "order_index": 12,
+  "id": "yct-4-l07-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «chēzhàn» гэж уншдаг үг:",
+  "options": [
+   "学校",
+   "旁边",
+   "车站",
+   "动物园"
+  ],
+  "correct_answer": "车站",
+  "explanation": "车站 = chēzhàn.",
+  "order_index": 13,
+  "id": "yct-4-l07-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «pángbiān» гэж уншдаг үг:",
+  "options": [
+   "旁边",
+   "近",
+   "远",
+   "车站"
+  ],
+  "correct_answer": "旁边",
+  "explanation": "旁边 = pángbiān.",
+  "order_index": 14,
+  "id": "yct-4-l07-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Та нар сургуульдаа яаж явдаг вэ?» хятадаар:",
+  "options": [
+   "学校远吗？",
+   "对吗？",
+   "车站在哪儿？",
+   "你们每天怎么去学校？"
+  ],
+  "correct_answer": "你们每天怎么去学校？",
+  "explanation": "怎么 = яаж.",
+  "order_index": 15,
+  "id": "yct-4-l07-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«我坐公共汽车去学校» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Би амьтны хүрээлэн рүү явна.",
+   "Би автобусаар сургуульдаа явдаг.",
+   "Миний сургууль хол.",
+   "Би өөрөө машин жолооддог."
+  ],
+  "correct_answer": "Би автобусаар сургуульдаа явдаг.",
+  "explanation": "坐公共汽车 = автобусаар явах.",
+  "order_index": 16,
+  "id": "yct-4-l07-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д Мариын ах сургуульдаа яаж явдаг вэ?",
+  "options": [
+   "Дугуйгаар",
+   "Алхаж",
+   "Автобусаар",
+   "Өөрөө машин жолоодоод"
+  ],
+  "correct_answer": "Өөрөө машин жолоодоод",
+  "explanation": "哥哥自己开车去学校。",
+  "order_index": 17,
+  "id": "yct-4-l07-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Мариын сургууль ойрхон уу, холхон уу?",
+  "options": [
+   "Амьтны хүрээлэнд байдаг",
+   "Буудал дээр байдаг",
+   "Холхон",
+   "Ойрхон"
+  ],
+  "correct_answer": "Ойрхон",
+  "explanation": "我的学校很近。",
+  "order_index": 18,
+  "id": "yct-4-l07-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т автобусны буудал хаана байдаг вэ?",
+  "options": [
+   "Сургууль дотор",
+   "Амьтны хүрээлэнд",
+   "Яг хажууд",
+   "Маш хол"
+  ],
+  "correct_answer": "Яг хажууд",
+  "explanation": "车站就在旁边。",
+  "order_index": 19,
+  "id": "yct-4-l07-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）公共汽车去学校。",
+  "options": [
+   "吗",
+   "坐",
+   "吃",
+   "近"
+  ],
+  "correct_answer": "坐",
+  "explanation": "坐公共汽车 = автобусаар явах.",
+  "order_index": 20,
+  "id": "yct-4-l07-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "哥哥自己（ ）车去学校。",
+  "options": [
+   "对",
+   "吃",
+   "开",
+   "远"
+  ],
+  "correct_answer": "开",
+  "explanation": "开车 = машин жолоодох.",
+  "order_index": 21,
+  "id": "yct-4-l07-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "走这（ ）路，对吗？",
+  "options": [
+   "个",
+   "条",
+   "本",
+   "只"
+  ],
+  "correct_answer": "条",
+  "explanation": "一条路 = нэг зам.",
+  "order_index": 22,
+  "id": "yct-4-l07-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "学校（ ）吗？",
+  "options": [
+   "旁边",
+   "远",
+   "车站",
+   "公共汽车"
+  ],
+  "correct_answer": "远",
+  "explanation": "学校远吗？ = Сургууль хол уу?",
+  "order_index": 23,
+  "id": "yct-4-l07-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "去动物园走这条路，（ ）吗？",
+  "options": [
+   "对",
+   "近",
+   "开",
+   "远"
+  ],
+  "correct_answer": "对",
+  "explanation": "对吗？ = зөв үү?",
+  "order_index": 24,
+  "id": "yct-4-l07-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你们每天怎么去学校？» гэж асууж байна. Чи автобусаар явдаг бол:",
+  "options": [
+   "车站在旁边。",
+   "学校很远吗？",
+   "对，走这条路。",
+   "我坐公共汽车去学校。"
+  ],
+  "correct_answer": "我坐公共汽车去学校。",
+  "explanation": "我坐…… 去 = …-аар явдаг.",
+  "order_index": 25,
+  "id": "yct-4-l07-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Амьтны хүрээлэн рүү явах замаа шалгах бол:",
+  "options": [
+   "去动物园走这条路，对吗？",
+   "我坐公共汽车。",
+   "学校很近。",
+   "车站在哪儿？"
+  ],
+  "correct_answer": "去动物园走这条路，对吗？",
+  "explanation": "对吗 = зөв үү?",
+  "order_index": 26,
+  "id": "yct-4-l07-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Автобусны буудлаа олохгүй байна. Асуух нь:",
+  "options": [
+   "对吗？",
+   "车站在哪儿？",
+   "学校远吗？",
+   "你开车吗？"
+  ],
+  "correct_answer": "车站在哪儿？",
+  "explanation": "在哪儿 = хаана.",
+  "order_index": 27,
+  "id": "yct-4-l07-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Сургууль чинь гэрээс маш ойрхон. Хэлэх нь:",
+  "options": [
+   "我的学校很远。",
+   "车站有一点儿远。",
+   "我的学校很近。",
+   "我开车去。"
+  ],
+  "correct_answer": "我的学校很近。",
+  "explanation": "近 = ойр.",
+  "order_index": 28,
+  "id": "yct-4-l07-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Амьтны хүрээлэн жаахан холхон байвал хэлэх нь:",
+  "options": [
+   "有一点儿远，你可以坐公共汽车。",
+   "我自己开车。",
+   "车站就在旁边。",
+   "很近，走路去。"
+  ],
+  "correct_answer": "有一点儿远，你可以坐公共汽车。",
+  "explanation": "有一点儿远 = жаахан холхон.",
+  "order_index": 29,
+  "id": "yct-4-l07-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "开",
+  "pinyin": "kāi",
+  "mongolian": "нээх, онгойлгох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "商店几点开门？",
+  "examplePinyin": "Shāngdiàn jǐ diǎn kāimén?",
+  "exampleMongolian": "Дэлгүүр хэдэн цагт нээгддэг вэ?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "关",
+  "pinyin": "guān",
+  "mongolian": "хаах, хаалттай болох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "中午不关门。",
+  "examplePinyin": "Zhōngwǔ bù guānmén.",
+  "exampleMongolian": "Үд дунд хаалгаа хаадаггүй.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "门",
+  "pinyin": "mén",
+  "mongolian": "хаалга",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "门关上了。",
+  "examplePinyin": "Mén guānshang le.",
+  "exampleMongolian": "Хаалга хаагдлаа.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "杯子",
+  "pinyin": "bēizi",
+  "mongolian": "аяга",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我买两个老虎杯子。",
+  "examplePinyin": "Wǒ mǎi liǎng ge lǎohǔ bēizi.",
+  "exampleMongolian": "Би барын зурагтай хоёр аяга авна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "中午",
+  "pinyin": "zhōngwǔ",
+  "mongolian": "үд дунд",
+  "notes": "цаг · гол үг",
+  "exampleChinese": "今天中午我吃面条儿。",
+  "examplePinyin": "Jīntiān zhōngwǔ wǒ chī miàntiáor.",
+  "exampleMongolian": "Өнөөдөр үд дунд би гоймон иднэ.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "卖",
+  "pinyin": "mài",
+  "mongolian": "зарах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "这个商店卖什么？",
+  "examplePinyin": "Zhège shāngdiàn mài shénme?",
+  "exampleMongolian": "Энэ дэлгүүрт юу зардаг вэ?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "完",
+  "pinyin": "wán",
+  "mongolian": "дуусах, дуусгах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "老虎杯子都卖完了。",
+  "examplePinyin": "Lǎohǔ bēizi dōu mài wán le.",
+  "exampleMongolian": "Барын зурагтай аяга бүгд зарагдаж дууссан.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "就",
+  "pinyin": "jiù",
+  "mongolian": "аль хэдийнэ, ердөө",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "我六点就起床了。",
+  "examplePinyin": "Wǒ liù diǎn jiù qǐchuáng le.",
+  "exampleMongolian": "Би зургаан цагт л босчихсон.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 8
+ }
+]

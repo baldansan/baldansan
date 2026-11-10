@@ -1,0 +1,243 @@
+[
+ {
+  "point": "你去过我们的新教室吗？ — 过",
+  "gloss_mn": "«Чи очиж үзсэн үү?» — өмнө нь хийж үзсэнийг хэлэх",
+  "structure": "去/吃 + 过 · 没 + 去/吃 + 过",
+  "teacher_mn": "Өмнө нь хийж үзсэн зүйлээ хэлэхдээ «去», «吃» шиг хийх үйлдлийн ард «过» нэм. 去过 = очиж үзсэн. Хийгээгүй бол «没去过» гэнэ. Асуухдаа төгсгөлд «吗» нэм. Чи хаа хаагүй очиж үзсэнээ хэлээд үз!",
+  "teacher_notes": "Номын яриа 1: 你去过我们的新教室吗？ 去过，很大很漂亮。 我还没去过。",
+  "examples": [
+   {
+    "chinese": "你去过我们的新教室吗？",
+    "pinyin": "Nǐ qùguo wǒmen de xīn jiàoshì ma?",
+    "mongolian": "Чи манай шинэ ангид очиж үзсэн үү?"
+   },
+   {
+    "chinese": "去过，很大很漂亮。",
+    "pinyin": "Qùguo, hěn dà hěn piàoliang.",
+    "mongolian": "Очиж үзсэн. Том, гоё."
+   },
+   {
+    "chinese": "我还没去过。",
+    "pinyin": "Wǒ hái méi qùguo.",
+    "mongolian": "Би хараахан очиж үзээгүй."
+   },
+   {
+    "chinese": "你去过北京吗？",
+    "pinyin": "Nǐ qùguo Běijīng ma?",
+    "mongolian": "Чи Бээжинд очиж үзсэн үү?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我不去过。",
+    "right": "我没去过。",
+    "why": "Өмнө нь хийгээгүй бол «没» хэрэглэнэ."
+   }
+  ],
+  "check": {
+   "question": "«Би очиж үзсэн» хятадаар:",
+   "options": [
+    "我走吧。",
+    "我没去过。",
+    "我去过。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你去 ________ 新教室吗？",
+    "options": [
+     "后",
+     "走",
+     "过"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 去过 = очиж үзсэн.",
+    "explanation_wrong_mn": "过 нь 去, 吃 шиг үгийн ард орж, хийж үзсэнийг хэлнэ."
+   },
+   {
+    "type": "choice",
+    "question": "«Би хараахан очиж үзээгүй» хятадаар:",
+    "options": [
+     "我去过了。",
+     "我还没去过。",
+     "我还走吧。"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 没去过 = очиж үзээгүй.",
+    "explanation_wrong_mn": "没 + 去 + 过 = хийж үзээгүй."
+   },
+   {
+    "type": "judge",
+    "question": "«没去过» гэдэг нь «очиж үзээгүй» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "没去过 = очиж үзээгүй."
+   }
+  ]
+ },
+ {
+  "point": "左边 · 右边 · 前边 · 后边",
+  "gloss_mn": "«Зүүн, баруун, урд, ард» — юу хаана байгааг хэлэх",
+  "structure": "юу + 在 + …的 + 左边/右边/前边/后边",
+  "teacher_mn": "Чиглэлийн үгийн ард «边» нэм: 左边 зүүн тал, 右边 баруун тал, 前边 урд тал, 后边 ард тал. Юу хаана байгааг хэлэхдээ «在» ашигла. Жишээ нь «我们的教室在二年级的后边». Зүүн гараа өргөөд «左边!» гэж хэлж үз!",
+  "teacher_notes": "Номын яриа 2: 左边是一年级的教室，右边是二年级的教室。 我们的教室在二年级的后边。",
+  "examples": [
+   {
+    "chinese": "左边是一年级的教室。",
+    "pinyin": "Zuǒbian shì yī niánjí de jiàoshì.",
+    "mongolian": "Зүүн талд 1-р ангийн танхим байна."
+   },
+   {
+    "chinese": "右边是二年级的教室。",
+    "pinyin": "Yòubian shì èr niánjí de jiàoshì.",
+    "mongolian": "Баруун талд 2-р ангийн танхим байна."
+   },
+   {
+    "chinese": "我们的教室在二年级的后边。",
+    "pinyin": "Wǒmen de jiàoshì zài èr niánjí de hòubian.",
+    "mongolian": "Манай танхим 2-р ангийн ард байна."
+   },
+   {
+    "chinese": "先穿左边。",
+    "pinyin": "Xiān chuān zuǒbian.",
+    "mongolian": "Эхлээд зүүн талыг нь өмс."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我们的教室在后边二年级。",
+    "right": "我们的教室在二年级的后边。",
+    "why": "Эхлээд «юуны» гэдгээ, дараа нь чиглэлээ хэлнэ."
+   }
+  ],
+  "check": {
+   "question": "«Ард тал» хятадаар:",
+   "options": [
+    "后边",
+    "前边",
+    "左边"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "我们的教室在二年级的 ________ 边。(ард)",
+    "options": [
+     "前",
+     "后",
+     "走"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 后 = ард.",
+    "explanation_wrong_mn": "后 = ард, 前 = урд."
+   },
+   {
+    "type": "choice",
+    "question": "«Зүүн талд» хятадаар:",
+    "options": [
+     "前边",
+     "右边",
+     "左边"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 左 = зүүн.",
+    "explanation_wrong_mn": "左 = зүүн, 右 = баруун."
+   },
+   {
+    "type": "judge",
+    "question": "«右» гэдэг нь «баруун» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 右 = баруун.",
+    "explanation_wrong_mn": "右 = баруун, 左 = зүүн."
+   }
+  ]
+ },
+ {
+  "point": "前边都是新教室 · 走吧",
+  "gloss_mn": "«Урд талд бүгд шинэ анги» · «явцгаая»",
+  "structure": "…都是…… · 走吧！",
+  "teacher_mn": "«都是» гэвэл «бүгд нь» гэсэн утгатай. 前边都是新教室 гэвэл урд талд бүгд шинэ анги байна гэсэн үг. Найзаа хамт явахыг урихдаа «走吧！» гэж хэл. «吧» нь «явцгаая» гэсэн зөөлөн дуудлага болгоно.",
+  "teacher_notes": "Номын яриа: 前边都是新教室。 好，走吧。",
+  "examples": [
+   {
+    "chinese": "前边都是新教室。",
+    "pinyin": "Qiánbian dōu shì xīn jiàoshì.",
+    "mongolian": "Урд талд бүгд шинэ ангиуд байна."
+   },
+   {
+    "chinese": "好，走吧。",
+    "pinyin": "Hǎo, zǒu ba.",
+    "mongolian": "За, явцгаая."
+   },
+   {
+    "chinese": "你能和我一起去看看吗？",
+    "pinyin": "Nǐ néng hé wǒ yìqǐ qù kànkan ma?",
+    "mongolian": "Чи надтай хамт очиж үзэхгүй юу?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "前边是都新教室。",
+    "right": "前边都是新教室。",
+    "why": "«都» нь «是»-ийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«За, явцгаая» хятадаар:",
+   "options": [
+    "我还没去过。",
+    "太漂亮了！",
+    "好，走吧。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "前边 ________ 是新教室。(бүгд)",
+    "options": [
+     "没",
+     "过",
+     "都"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 都 = бүгд.",
+    "explanation_wrong_mn": "都 = бүгд, 没 = байхгүй."
+   },
+   {
+    "type": "choice",
+    "question": "Найзаа хамт явахыг урихдаа хэлэх нь:",
+    "options": [
+     "没去过。",
+     "右边。",
+     "走吧！"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 走吧 = явцгаая.",
+    "explanation_wrong_mn": "走吧 = явцгаая."
+   },
+   {
+    "type": "judge",
+    "question": "«走» гэдэг нь «явах, алхах» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 走 = явах.",
+    "explanation_wrong_mn": "走 = явах, алхах."
+   }
+  ]
+ }
+]

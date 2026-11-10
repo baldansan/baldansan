@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Банзал» хятадаар аль нь вэ?",
+  "options": [
+   "裙子",
+   "可爱",
+   "裤子",
+   "衣服"
+  ],
+  "correct_answer": "裙子",
+  "explanation": "裙子 (qúnzi) = банзал.",
+  "order_index": 1,
+  "id": "yct-4-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Өмд» хятадаар аль нь вэ?",
+  "options": [
+   "裙子",
+   "衣服",
+   "件",
+   "裤子"
+  ],
+  "correct_answer": "裤子",
+  "explanation": "裤子 (kùzi) = өмд.",
+  "order_index": 2,
+  "id": "yct-4-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цагаан» хятадаар аль нь вэ?",
+  "options": [
+   "蓝",
+   "黑",
+   "红",
+   "白"
+  ],
+  "correct_answer": "白",
+  "explanation": "白 (bái) = цагаан.",
+  "order_index": 3,
+  "id": "yct-4-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хар» хятадаар аль нь вэ?",
+  "options": [
+   "黄",
+   "黑",
+   "绿",
+   "白"
+  ],
+  "correct_answer": "黑",
+  "explanation": "黑 (hēi) = хар.",
+  "order_index": 4,
+  "id": "yct-4-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«可爱» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хөөрхөн",
+   "хурдан",
+   "өндөр",
+   "хүйтэн"
+  ],
+  "correct_answer": "хөөрхөн",
+  "explanation": "可爱 (kě'ài) = хөөрхөн, өхөөрдөм.",
+  "order_index": 5,
+  "id": "yct-4-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«出生» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өмсөх",
+   "төрөх",
+   "унтах",
+   "өсөх"
+  ],
+  "correct_answer": "төрөх",
+  "explanation": "出生 (chūshēng) = төрөх.",
+  "order_index": 6,
+  "id": "yct-4-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«长» (zhǎng) гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хөөрхөн",
+   "ургах, томрох",
+   "өмсөх",
+   "цагаан"
+  ],
+  "correct_answer": "ургах, томрох",
+  "explanation": "长 (zhǎng) = ургах, томрох.",
+  "order_index": 7,
+  "id": "yct-4-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Хувцсыг тоолох үг аль нь вэ?",
+  "options": [
+   "件",
+   "块",
+   "点",
+   "岁"
+  ],
+  "correct_answer": "件",
+  "explanation": "一件衣服 — хувцсыг «件» гэж тоолно.",
+  "order_index": 8,
+  "id": "yct-4-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «qúnzi» гэж уншдаг үг:",
+  "options": [
+   "裙子",
+   "可爱",
+   "出生",
+   "裤子"
+  ],
+  "correct_answer": "裙子",
+  "explanation": "裙子 = qúnzi = банзал.",
+  "order_index": 9,
+  "id": "yct-4-l11-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «kě'ài» гэж уншдаг үг:",
+  "options": [
+   "白色",
+   "出生",
+   "可爱",
+   "裤子"
+  ],
+  "correct_answer": "可爱",
+  "explanation": "可爱 = kě'ài = хөөрхөн.",
+  "order_index": 10,
+  "id": "yct-4-l11-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «chūshēng» гэж уншдаг үг:",
+  "options": [
+   "裙子",
+   "长大",
+   "衣服",
+   "出生"
+  ],
+  "correct_answer": "出生",
+  "explanation": "出生 = chūshēng = төрөх.",
+  "order_index": 11,
+  "id": "yct-4-l11-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «kùzi» гэж уншдаг үг:",
+  "options": [
+   "白色",
+   "黑色",
+   "裙子",
+   "裤子"
+  ],
+  "correct_answer": "裤子",
+  "explanation": "裤子 = kùzi = өмд.",
+  "order_index": 12,
+  "id": "yct-4-l11-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Өнөөдөр чи аль хувцсаа өмсөх вэ?» хятадаар:",
+  "options": [
+   "为什么？",
+   "它长得很快。",
+   "你是哪年出生的？",
+   "今天你穿哪件衣服？"
+  ],
+  "correct_answer": "今天你穿哪件衣服？",
+  "explanation": "穿 = өмсөх, 哪件 = аль нь.",
+  "order_index": 13,
+  "id": "yct-4-l11-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«它长得很快。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Тэр маш хурдан томорч байна.",
+   "Тэр хар өнгөтэй.",
+   "Тэр маш хөөрхөн.",
+   "Тэр өнгөрсөн жил төрсөн."
+  ],
+  "correct_answer": "Тэр маш хурдан томорч байна.",
+  "explanation": "长得很快 = хурдан томрох.",
+  "order_index": 14,
+  "id": "yct-4-l11-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д охин юу өмсөх гэж байна вэ?",
+  "options": [
+   "Хар банзал, цагаан өмд",
+   "Цагаан банзал, хар өмд",
+   "Шар хувцас",
+   "Улаан банзал"
+  ],
+  "correct_answer": "Цагаан банзал, хар өмд",
+  "explanation": "我要穿那条白裙子和那条黑裤子。",
+  "order_index": 15,
+  "id": "yct-4-l11-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Охин яагаад цагаан банзал, хар өмд өмсөх гэж байна вэ?",
+  "options": [
+   "Түүнд дургүй өнгө учраас",
+   "Өнөөдөр тэр том панда учраас",
+   "Ээж нь хэлсэн учраас",
+   "Хүйтэн учраас"
+  ],
+  "correct_answer": "Өнөөдөр тэр том панда учраас",
+  "explanation": "因为今天我是大熊猫。 Панда цагаан, хар.",
+  "order_index": 16,
+  "id": "yct-4-l11-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "它长（ ）很快。",
+  "options": [
+   "了",
+   "呢",
+   "得",
+   "吗"
+  ],
+  "correct_answer": "得",
+  "explanation": "长得很快 — 得 нь 长, 很快-ыг холбоно.",
+  "order_index": 17,
+  "id": "yct-4-l11-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天你穿哪（ ）衣服？",
+  "options": [
+   "岁",
+   "块",
+   "条",
+   "件"
+  ],
+  "correct_answer": "件",
+  "explanation": "哪件衣服 — хувцас → 件.",
+  "order_index": 18,
+  "id": "yct-4-l11-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我要穿那（ ）白裙子。",
+  "options": [
+   "岁",
+   "条",
+   "块",
+   "件"
+  ],
+  "correct_answer": "条",
+  "explanation": "白裙子 → 条.",
+  "order_index": 19,
+  "id": "yct-4-l11-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）今天我是大熊猫。",
+  "options": [
+   "为什么",
+   "还是",
+   "哪件",
+   "因为"
+  ],
+  "correct_answer": "因为",
+  "explanation": "因为 = учир нь.",
+  "order_index": 20,
+  "id": "yct-4-l11-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）？ — 因为我不会。",
+  "options": [
+   "为什么",
+   "因为",
+   "长大",
+   "可爱"
+  ],
+  "correct_answer": "为什么",
+  "explanation": "为什么 = яагаад.",
+  "order_index": 21,
+  "id": "yct-4-l11-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Яагаад?» хятадаар аль нь вэ?",
+  "options": [
+   "因为……",
+   "你呢？",
+   "哪件？",
+   "为什么？"
+  ],
+  "correct_answer": "为什么？",
+  "explanation": "为什么 = яагаад.",
+  "order_index": 22,
+  "id": "yct-4-l11-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«长大了» гэж юу гэсэн үг вэ?",
+  "options": [
+   "өмссөн",
+   "том болсон",
+   "жижиг болсон",
+   "төрсөн"
+  ],
+  "correct_answer": "том болсон",
+  "explanation": "长大 = том болох.",
+  "order_index": 23,
+  "id": "yct-4-l11-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Let's say-д дүүгийн тухай ямар өгүүлбэр байна вэ?",
+  "options": [
+   "她是大熊猫。",
+   "她今年出生了。",
+   "她的裙子是白色的。",
+   "她的个子高高的，头发长长的。"
+  ],
+  "correct_answer": "她的个子高高的，头发长长的。",
+  "explanation": "高高的 = өндөр өндөр, 长长的 (cháng) = урт урт.",
+  "order_index": 24,
+  "id": "yct-4-l11-q24",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «今天你穿哪件衣服？» гэж асуулаа. Чи цагаан банзал өмсөх бол:",
+  "options": [
+   "为什么？",
+   "它长得很快。",
+   "我要穿那条白裙子。",
+   "因为我很可爱。"
+  ],
+  "correct_answer": "我要穿那条白裙子。",
+  "explanation": "我要穿…… = би … өмсөнө.",
+  "order_index": 25,
+  "id": "yct-4-l11-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «今天我是大熊猫» гэвэл шалтгааныг нь асуух:",
+  "options": [
+   "你好吗？",
+   "再见。",
+   "为什么？",
+   "哪件衣服？"
+  ],
+  "correct_answer": "为什么？",
+  "explanation": "为什么 = яагаад.",
+  "order_index": 26,
+  "id": "yct-4-l11-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Бяцхан зулзага хурдан томорсныг хэлэхэд:",
+  "options": [
+   "它穿裙子。",
+   "它长得很快。",
+   "它出生了。",
+   "它是白色的。"
+  ],
+  "correct_answer": "它长得很快。",
+  "explanation": "长得很快 = хурдан томрох.",
+  "order_index": 27,
+  "id": "yct-4-l11-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«月亮的裙子» үлгэрийн төгсгөлд нар сарт ямар өнгийн банзал бэлэглэсэн бэ?",
+  "options": [
+   "Улаан банзал",
+   "Шар банзал",
+   "Хар банзал",
+   "Ногоон банзал"
+  ],
+  "correct_answer": "Шар банзал",
+  "explanation": "我有黄色的裙子，把它送给你！",
+  "order_index": 28,
+  "id": "yct-4-l11-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

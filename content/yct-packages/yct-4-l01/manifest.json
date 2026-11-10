@@ -1,0 +1,171 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l01",
+ "hskLevel": 2,
+ "lessonNumber": 1,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我们有一百零八个学生。",
+ "mongolianTitle": "Манайд 108 сурагч бий",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第1课 (сурах бичиг + CD аудио 01-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-01-text-song.mp3",
+  "dialogues": "audio/yct-4-01-02.mp3",
+  "words": "audio/yct-4-01-01.mp3",
+  "song": "audio/yct-4-01-03.mp3",
+  "test": "audio/yct-4-01-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l01",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我们有一百零八个学生。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你们学校有多少个学生？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "爸爸，我想买一个新电脑",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "一百有两个零",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-shouji",
+    "file": "images/w-shouji.jpg",
+    "title": "手机",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-diannao",
+    "file": "images/w-diannao.jpg",
+    "title": "电脑",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ling",
+    "file": "images/w-ling.jpg",
+    "title": "零",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shangwang",
+    "file": "images/w-shangwang.jpg",
+    "title": "上网",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bai",
+    "file": "images/w-bai.jpg",
+    "title": "百",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qian",
+    "file": "images/w-qian.jpg",
+    "title": "千",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shao",
+    "file": "images/w-shao.jpg",
+    "title": "少",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test t1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test t2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test t3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test t4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5a",
+    "file": "images/t5a.png",
+    "title": "Test t5a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5b",
+    "file": "images/t5b.png",
+    "title": "Test t5b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5c",
+    "file": "images/t5c.png",
+    "title": "Test t5c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5d",
+    "file": "images/t5d.png",
+    "title": "Test t5d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L1)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

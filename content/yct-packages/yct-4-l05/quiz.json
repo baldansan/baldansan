@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Загас» хятадаар аль нь вэ?",
+  "options": [
+   "鱼",
+   "面包",
+   "菜",
+   "牛奶"
+  ],
+  "correct_answer": "鱼",
+  "explanation": "鱼 (yú) = загас.",
+  "order_index": 1,
+  "id": "yct-4-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хоол, ногоо» хятадаар аль нь вэ?",
+  "options": [
+   "鱼",
+   "水",
+   "米饭",
+   "菜"
+  ],
+  "correct_answer": "菜",
+  "explanation": "菜 (cài) = хоол, ногоо.",
+  "order_index": 2,
+  "id": "yct-4-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Жимсний шүүс» хятадаар аль нь вэ?",
+  "options": [
+   "茶",
+   "牛奶",
+   "水",
+   "果汁"
+  ],
+  "correct_answer": "果汁",
+  "explanation": "果汁 (guǒzhī) = жимсний шүүс.",
+  "order_index": 3,
+  "id": "yct-4-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Усанд орох» хятадаар аль нь вэ?",
+  "options": [
+   "游泳",
+   "洗澡",
+   "睡觉",
+   "吃饭"
+  ],
+  "correct_answer": "洗澡",
+  "explanation": "洗澡 (xǐzǎo) = усанд орох, угаалга хийх.",
+  "order_index": 4,
+  "id": "yct-4-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Орох» хятадаар аль нь вэ?",
+  "options": [
+   "进",
+   "喝",
+   "吃",
+   "关"
+  ],
+  "correct_answer": "进",
+  "explanation": "进 (jìn) = орох. 请进 = орж ирээрэй.",
+  "order_index": 5,
+  "id": "yct-4-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«它» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "би",
+   "тэр (амьтан, юм)",
+   "чи",
+   "та нар"
+  ],
+  "correct_answer": "тэр (амьтан, юм)",
+  "explanation": "它 (tā) = амьтан, юмыг «тэр» гэж хэлэх үг.",
+  "order_index": 6,
+  "id": "yct-4-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «guǒzhī» гэж уншдаг үг:",
+  "options": [
+   "面包",
+   "果汁",
+   "洗澡",
+   "牛奶"
+  ],
+  "correct_answer": "果汁",
+  "explanation": "果汁 = guǒzhī = жимсний шүүс.",
+  "order_index": 7,
+  "id": "yct-4-l05-q07",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xǐzǎo» гэж уншдаг үг:",
+  "options": [
+   "洗澡",
+   "睡觉",
+   "游泳",
+   "果汁"
+  ],
+  "correct_answer": "洗澡",
+  "explanation": "洗澡 = xǐzǎo = усанд орох.",
+  "order_index": 8,
+  "id": "yct-4-l05-q08",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yú» гэж уншдаг үг:",
+  "options": [
+   "鱼",
+   "它",
+   "进",
+   "菜"
+  ],
+  "correct_answer": "鱼",
+  "explanation": "鱼 = yú = загас.",
+  "order_index": 9,
+  "id": "yct-4-l05-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bǎ» гэж уншдаг үг:",
+  "options": [
+   "菜",
+   "它",
+   "把",
+   "进"
+  ],
+  "correct_answer": "把",
+  "explanation": "把 = bǎ. 把门关上 = хаалгаа хаа.",
+  "order_index": 10,
+  "id": "yct-4-l05-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«请进，快把门关上。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Би нохойгоо угааж байна.",
+   "Муур загасыг идчихлээ.",
+   "Чи юу хийж байна?",
+   "Орж ир, хурдан хаалгаа хаа."
+  ],
+  "correct_answer": "Орж ир, хурдан хаалгаа хаа.",
+  "explanation": "请进 = орж ир, 把门关上 = хаалгаа хаа.",
+  "order_index": 11,
+  "id": "yct-4-l05-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«不好，小猫把鱼吃了！» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Загас хаана байна?",
+   "Муур загас идэх дуртай.",
+   "Өө, нохой угааж байна!",
+   "Өө, муур загасыг идчихжээ!"
+  ],
+  "correct_answer": "Өө, муур загасыг идчихжээ!",
+  "explanation": "把鱼吃了 = загасыг идчихсэн.",
+  "order_index": 12,
+  "id": "yct-4-l05-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д охин юу хийж байна вэ?",
+  "options": [
+   "Жимсний шүүс ууж байна",
+   "Загас идэж байна",
+   "Хаалга хааж байна",
+   "Нохойгоо угааж байна"
+  ],
+  "correct_answer": "Нохойгоо угааж байна",
+  "explanation": "我在给它洗澡 — «Би түүнийг угааж байна».",
+  "order_index": 13,
+  "id": "yct-4-l05-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т загасыг хэн идчихсэн бэ?",
+  "options": [
+   "Муур",
+   "Ээж",
+   "Нохой",
+   "Аав"
+  ],
+  "correct_answer": "Муур",
+  "explanation": "小猫把鱼吃了 — муур идчихжээ.",
+  "order_index": 14,
+  "id": "yct-4-l05-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Аав оройн хоолонд юу бэлдсэн бэ?",
+  "options": [
+   "Талх, сүү",
+   "Загас, будаа, хоол, жимсний шүүс",
+   "Будаа, цай",
+   "Усан үзэм, ус"
+  ],
+  "correct_answer": "Загас, будаа, хоол, жимсний шүүс",
+  "explanation": "吃鱼，还有米饭和菜，喝果汁。",
+  "order_index": 15,
+  "id": "yct-4-l05-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«你在做什么？» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Чи юу идэх вэ?",
+   "Чи юу хийж байна?",
+   "Чи хэн бэ?",
+   "Чи хаана байна?"
+  ],
+  "correct_answer": "Чи юу хийж байна?",
+  "explanation": "在做什么 = юу хийж байна.",
+  "order_index": 16,
+  "id": "yct-4-l05-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "快（ ）门关上。",
+  "options": [
+   "在",
+   "也",
+   "把",
+   "和"
+  ],
+  "correct_answer": "把",
+  "explanation": "把门关上 = хаалгаа хаа.",
+  "order_index": 17,
+  "id": "yct-4-l05-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "小猫把鱼（ ）了。",
+  "options": [
+   "进",
+   "洗澡",
+   "喝",
+   "吃"
+  ],
+  "correct_answer": "吃",
+  "explanation": "Загас иддэг — 吃.",
+  "order_index": 18,
+  "id": "yct-4-l05-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "爷爷把果汁（ ）了。",
+  "options": [
+   "关",
+   "喝",
+   "进",
+   "吃"
+  ],
+  "correct_answer": "喝",
+  "explanation": "Жимсний шүүс уудаг — 喝.",
+  "order_index": 19,
+  "id": "yct-4-l05-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）给它洗澡。",
+  "options": [
+   "把",
+   "吗",
+   "好",
+   "在"
+  ],
+  "correct_answer": "在",
+  "explanation": "我在给它洗澡 = би түүнийг угааж байна.",
+  "order_index": 20,
+  "id": "yct-4-l05-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "请（ ），快把门关上。",
+  "options": [
+   "进",
+   "吃",
+   "喝",
+   "洗澡"
+  ],
+  "correct_answer": "进",
+  "explanation": "请进 = орж ирээрэй.",
+  "order_index": 21,
+  "id": "yct-4-l05-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Chant-д «妹妹爱吃面包» гэж хэн юу идэх дуртай вэ?",
+  "options": [
+   "Дүү хүү сүү",
+   "Өвөө шүүс",
+   "Эмээ ногоо",
+   "Дүү охин талх"
+  ],
+  "correct_answer": "Дүү охин талх",
+  "explanation": "妹妹 = дүү охин, 面包 = талх.",
+  "order_index": 22,
+  "id": "yct-4-l05-q22",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Chant-д «弟弟爱喝牛奶» гэж хэн юу уух дуртай вэ?",
+  "options": [
+   "Эмээ ногоо",
+   "Дүү хүү сүү",
+   "Дүү охин талх",
+   "Өвөө шүүс"
+  ],
+  "correct_answer": "Дүү хүү сүү",
+  "explanation": "弟弟 = дүү хүү, 牛奶 = сүү.",
+  "order_index": 23,
+  "id": "yct-4-l05-q23",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Chant-д «猫爱吃什么？小鱼知道。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Муур усанд орж байна.",
+   "Муур хаалга хаана.",
+   "Муур загасыг идчихлээ.",
+   "Муур юу идэх дуртай вэ? Жижигхэн загас мэднэ."
+  ],
+  "correct_answer": "Муур юу идэх дуртай вэ? Жижигхэн загас мэднэ.",
+  "explanation": "知道 = мэдэх.",
+  "order_index": 24,
+  "id": "yct-4-l05-q24",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн хаалгыг онгойлгоод орж ирлээ. Чи хэлэх нь:",
+  "options": [
+   "我爱喝果汁。",
+   "不好，小猫把鱼吃了！",
+   "请进，快把门关上。",
+   "小狗在这里。"
+  ],
+  "correct_answer": "请进，快把门关上。",
+  "explanation": "请进 + 把门关上.",
+  "order_index": 25,
+  "id": "yct-4-l05-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Муур загасыг чинь идчихлээ. Чи хашгирах нь:",
+  "options": [
+   "请进。",
+   "我在洗澡。",
+   "不好，小猫把鱼吃了！",
+   "我爱吃菜。"
+  ],
+  "correct_answer": "不好，小猫把鱼吃了！",
+  "explanation": "小猫把鱼吃了 = муур загасыг идчихжээ.",
+  "order_index": 26,
+  "id": "yct-4-l05-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз «你在做什么？» гэж асуув. Чи нохойгоо угааж байгаа бол:",
+  "options": [
+   "把门关上。",
+   "我在给它洗澡。",
+   "我爱吃鱼。",
+   "请进。"
+  ],
+  "correct_answer": "我在给它洗澡。",
+  "explanation": "我在…… = би … хийж байна.",
+  "order_index": 27,
+  "id": "yct-4-l05-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дүү чинь шүүсээ уучихлаа гэж хэлэхэд хэлэх нь:",
+  "options": [
+   "弟弟在洗澡。",
+   "弟弟把果汁喝了。",
+   "弟弟把鱼吃了。",
+   "弟弟请进。"
+  ],
+  "correct_answer": "弟弟把果汁喝了。",
+  "explanation": "喝 = уух, 果汁 = жимсний шүүс.",
+  "order_index": 28,
+  "id": "yct-4-l05-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Чи ээждээ «Загас хаана байна?» гэж асуувал:",
+  "options": [
+   "我爱喝果汁。",
+   "你在做什么？",
+   "请进。",
+   "鱼在哪儿？"
+  ],
+  "correct_answer": "鱼在哪儿？",
+  "explanation": "在哪儿 = хаана.",
+  "order_index": 29,
+  "id": "yct-4-l05-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

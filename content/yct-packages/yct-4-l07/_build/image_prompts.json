@@ -1,0 +1,173 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你们每天怎么去学校？",
+  "section": "teacher-intro",
+  "prompt": "Teacher Camel (a yellow camel with glasses) drives a cute yellow school bus on a sunny road toward a school, the yellow camel calf boy, the camel calf girl in a yellow dress and the green-hat camel calf boy wave happily from the windows; a speech bubble with the Chinese text 你们每天怎么去学校？ in large clear black font. No English text in the image.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "hero"
+ },
+ {
+  "file": "images/w-gonggongqiche.jpg",
+  "aspect": "1:1",
+  "title": "公共汽车",
+  "section": "vocabulary",
+  "prompt": "A bright blue and white city bus stopped at a bus stop, the young camel calf boy waving from the window. No English text in the image.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dongwuyuan.jpg",
+  "aspect": "1:1",
+  "title": "动物园",
+  "section": "vocabulary",
+  "prompt": "A cheerful zoo entrance gate with a lion and a panda peeking out, the young camel calf girl pointing at it. No English text in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-chezhan.jpg",
+  "aspect": "1:1",
+  "title": "车站",
+  "section": "vocabulary",
+  "prompt": "A bus stop shelter with a bench, the green-hat camel calf boy waiting there with a backpack. No English text in the image.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kai.jpg",
+  "aspect": "1:1",
+  "title": "开",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy driving a little toy car with both hands on the steering wheel, big smile. No English text in the image.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dui.jpg",
+  "aspect": "1:1",
+  "title": "对",
+  "section": "vocabulary",
+  "prompt": "The camel calf girl holding up a big green check mark card, smiling. No English text in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-lu.jpg",
+  "aspect": "1:1",
+  "title": "路",
+  "section": "vocabulary",
+  "prompt": "A long winding road through green hills, the little camel calf boy walking on it with a backpack. No English text in the image.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yuan.jpg",
+  "aspect": "1:1",
+  "title": "远",
+  "section": "vocabulary",
+  "prompt": "A tiny school far away in the distance on a hill, the camel calf boy looking out with a hand over his eyes. No English text in the image.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jin.jpg",
+  "aspect": "1:1",
+  "title": "近",
+  "section": "vocabulary",
+  "prompt": "A school right next to a house, the camel calf girl standing close to it, happy. No English text in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-pangbian.jpg",
+  "aspect": "1:1",
+  "title": "旁边",
+  "section": "vocabulary",
+  "prompt": "The camel calf boy standing right beside a big tree, the camel calf girl beside him, close together. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-tiao.jpg",
+  "aspect": "1:1",
+  "title": "条",
+  "section": "vocabulary",
+  "prompt": "One long road drawn clearly, the camel calf boy pointing at it with one finger up. No English text in the image.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zuo.jpg",
+  "aspect": "1:1",
+  "title": "坐",
+  "section": "vocabulary",
+  "prompt": "The camel calf boy sitting in a bus seat by the window, looking outside. No English text in the image.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zenme.jpg",
+  "aspect": "1:1",
+  "title": "怎么",
+  "section": "vocabulary",
+  "prompt": "The camel calf girl with a big question mark above her head, looking at a bus, a bicycle and a car on the road. No English text in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你们每天怎么去学校？",
+  "section": "dialogue",
+  "prompt": "At a bus stop, the yellow camel calf boy asks the camel calf girl a question, a yellow car with an adult camel brother driving passes behind and a bus is coming; speech bubble with the Chinese text 你们每天怎么去学校？ in large clear black font. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "去动物园走这条路，对吗？",
+  "section": "dialogue",
+  "prompt": "Two camel calf girls hold a map on a path and point at a road, the green-hat camel calf boy stands by a bus stop shelter and points to it, a bus stop sign nearby; speech bubble with the Chinese text 去动物园走这条路，对吗？ in large clear black font. No English text in the image.",
+  "chars": [
+   "ohin",
+   "bor",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "我爱开公共汽车",
+  "section": "song",
+  "prompt": "The camel calf children sit on a happy blue bus, Teacher Camel drives with a big smile and hands on the wheel, music notes floating in the air, zoo gate visible ahead. No English text in the image.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

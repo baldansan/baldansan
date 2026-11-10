@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Анги танхим» хятадаар аль нь вэ?",
+  "options": [
+   "学校",
+   "朋友",
+   "老师",
+   "教室"
+  ],
+  "correct_answer": "教室",
+  "explanation": "教室 (jiàoshì) = анги танхим.",
+  "order_index": 1,
+  "id": "yct-4-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Явах, алхах» хятадаар аль нь вэ?",
+  "options": [
+   "左",
+   "后",
+   "走",
+   "过"
+  ],
+  "correct_answer": "走",
+  "explanation": "走 (zǒu) = явах, алхах.",
+  "order_index": 2,
+  "id": "yct-4-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зүүн» хятадаар аль нь вэ?",
+  "options": [
+   "左",
+   "右",
+   "前",
+   "后"
+  ],
+  "correct_answer": "左",
+  "explanation": "左 (zuǒ) = зүүн.",
+  "order_index": 3,
+  "id": "yct-4-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Баруун» хятадаар аль нь вэ?",
+  "options": [
+   "右",
+   "左",
+   "后",
+   "前"
+  ],
+  "correct_answer": "右",
+  "explanation": "右 (yòu) = баруун.",
+  "order_index": 4,
+  "id": "yct-4-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Урд, өмнө» хятадаар аль нь вэ?",
+  "options": [
+   "后",
+   "左",
+   "右",
+   "前"
+  ],
+  "correct_answer": "前",
+  "explanation": "前 (qián) = урд, өмнө.",
+  "order_index": 5,
+  "id": "yct-4-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ард, хойно» хятадаар аль нь вэ?",
+  "options": [
+   "前",
+   "左",
+   "后",
+   "右"
+  ],
+  "correct_answer": "后",
+  "explanation": "后 (hòu) = ард, хойно.",
+  "order_index": 6,
+  "id": "yct-4-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«去过» дахь «过» юуг хэлдэг вэ?",
+  "options": [
+   "Маргааш хийхийг",
+   "Хийхгүй гэснийг",
+   "Өмнө нь хийж үзсэнийг",
+   "Одоо хийж байгааг"
+  ],
+  "correct_answer": "Өмнө нь хийж үзсэнийг",
+  "explanation": "过 нь 去, 吃 шиг үгийн ард орж, хийж үзсэн туршлагыг хэлнэ.",
+  "order_index": 7,
+  "id": "yct-4-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jiàoshì» гэж уншдаг үг:",
+  "options": [
+   "朋友",
+   "走",
+   "教室",
+   "学校"
+  ],
+  "correct_answer": "教室",
+  "explanation": "教室 = jiàoshì = анги танхим.",
+  "order_index": 8,
+  "id": "yct-4-l06-q08",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zuǒbian» гэж уншдаг үг:",
+  "options": [
+   "后边",
+   "左边",
+   "右边",
+   "前边"
+  ],
+  "correct_answer": "左边",
+  "explanation": "左边 = zuǒbian = зүүн тал.",
+  "order_index": 9,
+  "id": "yct-4-l06-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «hòubian» гэж уншдаг үг:",
+  "options": [
+   "前边",
+   "右边",
+   "后边",
+   "左边"
+  ],
+  "correct_answer": "后边",
+  "explanation": "后边 = hòubian = ард тал.",
+  "order_index": 10,
+  "id": "yct-4-l06-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «qùguo» гэж уншдаг үг:",
+  "options": [
+   "去过",
+   "右边",
+   "教室",
+   "走吧"
+  ],
+  "correct_answer": "去过",
+  "explanation": "去过 = qùguo = очиж үзсэн.",
+  "order_index": 11,
+  "id": "yct-4-l06-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«你去过我们的新教室吗？» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Чи манай шинэ ангид очиж үзсэн үү?",
+   "Урд талд бүгд шинэ анги байна.",
+   "Бид хамт явцгаая.",
+   "Манай анги хаана байна вэ?"
+  ],
+  "correct_answer": "Чи манай шинэ ангид очиж үзсэн үү?",
+  "explanation": "去过 = очиж үзсэн, 吗 = асуулт.",
+  "order_index": 12,
+  "id": "yct-4-l06-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«前边都是新教室。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Манай анги ард байна.",
+   "Би шинэ ангид очиж үзсэн.",
+   "Урд талд бүгд шинэ ангиуд байна.",
+   "Зүүн талд шинэ анги байна."
+  ],
+  "correct_answer": "Урд талд бүгд шинэ ангиуд байна.",
+  "explanation": "前边 = урд тал, 都是 = бүгд.",
+  "order_index": 13,
+  "id": "yct-4-l06-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д хүү шинэ ангийг ямар гэж хэлсэн бэ?",
+  "options": [
+   "Том, гоё",
+   "Олон хүнтэй",
+   "Хуучин, том",
+   "Жижиг, хүйтэн"
+  ],
+  "correct_answer": "Том, гоё",
+  "explanation": "去过，很大很漂亮。",
+  "order_index": 14,
+  "id": "yct-4-l06-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т зүүн талд хэний танхим байна вэ?",
+  "options": [
+   "2-р ангийнх",
+   "Манай танхим",
+   "Багшийнх",
+   "1-р ангийнх"
+  ],
+  "correct_answer": "1-р ангийнх",
+  "explanation": "左边是一年级的教室。",
+  "order_index": 15,
+  "id": "yct-4-l06-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т тэдний танхим хаана байна вэ?",
+  "options": [
+   "Зүүн талд",
+   "2-р ангийн ард",
+   "1-р ангийн ард",
+   "2-р ангийн урд"
+  ],
+  "correct_answer": "2-р ангийн ард",
+  "explanation": "我们的教室在二年级的后边。",
+  "order_index": 16,
+  "id": "yct-4-l06-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你去（ ）我们的新教室吗？",
+  "options": [
+   "左",
+   "后",
+   "走",
+   "过"
+  ],
+  "correct_answer": "过",
+  "explanation": "去过 = очиж үзсэн.",
+  "order_index": 17,
+  "id": "yct-4-l06-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我还没去（ ），你能和我一起去看看吗？",
+  "options": [
+   "前",
+   "走",
+   "右",
+   "过"
+  ],
+  "correct_answer": "过",
+  "explanation": "没去过 = очиж үзээгүй.",
+  "order_index": 18,
+  "id": "yct-4-l06-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "好，（ ）吧。",
+  "options": [
+   "右",
+   "后",
+   "走",
+   "过"
+  ],
+  "correct_answer": "走",
+  "explanation": "走吧 = явцгаая.",
+  "order_index": 19,
+  "id": "yct-4-l06-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）边是一年级的教室。",
+  "options": [
+   "过",
+   "左",
+   "走",
+   "教"
+  ],
+  "correct_answer": "左",
+  "explanation": "左边 = зүүн тал.",
+  "order_index": 20,
+  "id": "yct-4-l06-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们的教室在二年级的（ ）边。(ард)",
+  "options": [
+   "左",
+   "走",
+   "后",
+   "过"
+  ],
+  "correct_answer": "后",
+  "explanation": "后边 = ард тал.",
+  "order_index": 21,
+  "id": "yct-4-l06-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "前边（ ）是新教室。",
+  "options": [
+   "过",
+   "都",
+   "左",
+   "走"
+  ],
+  "correct_answer": "都",
+  "explanation": "都是 = бүгд.",
+  "order_index": 22,
+  "id": "yct-4-l06-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我没去过» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Би очихгүй",
+   "Би очиж үзээгүй",
+   "Би очиж үзсэн",
+   "Би очно"
+  ],
+  "correct_answer": "Би очиж үзээгүй",
+  "explanation": "没 + 去 + 过 = хийж үзээгүй.",
+  "order_index": 23,
+  "id": "yct-4-l06-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你去过北京吗？» гэж асууж байна. Чи очиж үзээгүй бол:",
+  "options": [
+   "我没去过。",
+   "左边。",
+   "去过。",
+   "走吧。"
+  ],
+  "correct_answer": "我没去过。",
+  "explanation": "没去过 = очиж үзээгүй.",
+  "order_index": 24,
+  "id": "yct-4-l06-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Шинэ анги руу найзаа хамт явахыг урихдаа:",
+  "options": [
+   "我还没去过。",
+   "后边。",
+   "我去过。",
+   "好，走吧。"
+  ],
+  "correct_answer": "好，走吧。",
+  "explanation": "走吧 = явцгаая.",
+  "order_index": 25,
+  "id": "yct-4-l06-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз «Манай анги хаана вэ?» гэж асуув. Анги чинь 2-р ангийн ард бол:",
+  "options": [
+   "在二年级的后边。",
+   "在二年级的前边。",
+   "我去过。",
+   "走吧。"
+  ],
+  "correct_answer": "在二年级的后边。",
+  "explanation": "后边 = ард тал.",
+  "order_index": 26,
+  "id": "yct-4-l06-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Үлгэрт Дэвид яагаад нэгдүгээр байр авсан бэ?",
+  "options": [
+   "Гутлаа өмсөөгүй",
+   "Гутлынхаа ёроол дахь зургаар зүүн, баруунаа хурдан ялгасан",
+   "Хамгийн өндөр байсан",
+   "Хамгийн хүчтэй байсан"
+  ],
+  "correct_answer": "Гутлынхаа ёроол дахь зургаар зүүн, баруунаа хурдан ялгасан",
+  "explanation": "大卫鞋下边的画儿帮他得了第一。",
+  "order_index": 27,
+  "id": "yct-4-l06-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

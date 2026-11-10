@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Зуу» хятадаар аль нь вэ?",
+  "options": [
+   "百",
+   "少",
+   "千",
+   "零"
+  ],
+  "correct_answer": "百",
+  "explanation": "百 (bǎi) = зуу.",
+  "order_index": 1,
+  "id": "yct-4-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Мянга» хятадаар аль нь вэ?",
+  "options": [
+   "百",
+   "零",
+   "多",
+   "千"
+  ],
+  "correct_answer": "千",
+  "explanation": "千 (qiān) = мянга.",
+  "order_index": 2,
+  "id": "yct-4-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тэг» хятадаар аль нь вэ?",
+  "options": [
+   "少",
+   "百",
+   "千",
+   "零"
+  ],
+  "correct_answer": "零",
+  "explanation": "零 (líng) = тэг.",
+  "order_index": 3,
+  "id": "yct-4-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цөөн» хятадаар аль нь вэ?",
+  "options": [
+   "好",
+   "少",
+   "大",
+   "多"
+  ],
+  "correct_answer": "少",
+  "explanation": "少 (shǎo) = цөөн.",
+  "order_index": 4,
+  "id": "yct-4-l01-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Гар утас» хятадаар аль нь вэ?",
+  "options": [
+   "手机",
+   "老师",
+   "电脑",
+   "学校"
+  ],
+  "correct_answer": "手机",
+  "explanation": "手机 (shǒujī) = гар утас.",
+  "order_index": 5,
+  "id": "yct-4-l01-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Компьютер» хятадаар аль нь вэ?",
+  "options": [
+   "学生",
+   "电脑",
+   "学校",
+   "手机"
+  ],
+  "correct_answer": "电脑",
+  "explanation": "电脑 (diànnǎo) = компьютер.",
+  "order_index": 6,
+  "id": "yct-4-l01-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Интернэтэд орох» хятадаар аль нь вэ?",
+  "options": [
+   "喝水",
+   "上网",
+   "回家",
+   "吃饭"
+  ],
+  "correct_answer": "上网",
+  "explanation": "上网 (shàngwǎng) = интернэтэд орох.",
+  "order_index": 7,
+  "id": "yct-4-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bǎi» гэж уншдаг үг:",
+  "options": [
+   "百",
+   "零",
+   "少",
+   "千"
+  ],
+  "correct_answer": "百",
+  "explanation": "百 = bǎi = зуу.",
+  "order_index": 8,
+  "id": "yct-4-l01-q08",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «qiān» гэж уншдаг үг:",
+  "options": [
+   "千",
+   "少",
+   "零",
+   "百"
+  ],
+  "correct_answer": "千",
+  "explanation": "千 = qiān = мянга.",
+  "order_index": 9,
+  "id": "yct-4-l01-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shǒujī» гэж уншдаг үг:",
+  "options": [
+   "学生",
+   "电脑",
+   "手机",
+   "上网"
+  ],
+  "correct_answer": "手机",
+  "explanation": "手机 = shǒujī = гар утас.",
+  "order_index": 10,
+  "id": "yct-4-l01-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «diànnǎo» гэж уншдаг үг:",
+  "options": [
+   "上网",
+   "手机",
+   "学校",
+   "电脑"
+  ],
+  "correct_answer": "电脑",
+  "explanation": "电脑 = diànnǎo = компьютер.",
+  "order_index": 11,
+  "id": "yct-4-l01-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shàngwǎng» гэж уншдаг үг:",
+  "options": [
+   "学生",
+   "电脑",
+   "手机",
+   "上网"
+  ],
+  "correct_answer": "上网",
+  "explanation": "上网 = shàngwǎng.",
+  "order_index": 12,
+  "id": "yct-4-l01-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «líng» гэж уншдаг үг:",
+  "options": [
+   "百",
+   "少",
+   "千",
+   "零"
+  ],
+  "correct_answer": "零",
+  "explanation": "零 = líng = тэг.",
+  "order_index": 13,
+  "id": "yct-4-l01-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "108 хятадаар аль нь вэ?",
+  "options": [
+   "一百零八",
+   "一千零八",
+   "一百八",
+   "一百八十"
+  ],
+  "correct_answer": "一百零八",
+  "explanation": "Дунд нь тэг байгаа тул 一百零八.",
+  "order_index": 14,
+  "id": "yct-4-l01-q14",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "1800 хятадаар аль нь вэ?",
+  "options": [
+   "一百八十",
+   "一千八百",
+   "一百零八",
+   "一千零八"
+  ],
+  "correct_answer": "一千八百",
+  "explanation": "一千 = 1000, 八百 = 800.",
+  "order_index": 15,
+  "id": "yct-4-l01-q15",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "1200 хятадаар аль нь вэ?",
+  "options": [
+   "一百二十",
+   "一千二百",
+   "二千一百",
+   "一千零二"
+  ],
+  "correct_answer": "一千二百",
+  "explanation": "一千 + 二百 = 1200.",
+  "order_index": 16,
+  "id": "yct-4-l01-q16",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«你们学校有多少个学生？» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Чи ямар спортод дуртай вэ?",
+   "Чи хэдэн настай вэ?",
+   "Таны сургуульд хэдэн сурагч байдаг вэ?",
+   "Чамд хэдэн мөнгө байна?"
+  ],
+  "correct_answer": "Таны сургуульд хэдэн сурагч байдаг вэ?",
+  "explanation": "多少 = хэдэн.",
+  "order_index": 17,
+  "id": "yct-4-l01-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д охины сургуульд хэдэн сурагч байдаг вэ?",
+  "options": [
+   "20",
+   "1200",
+   "1800",
+   "108"
+  ],
+  "correct_answer": "108",
+  "explanation": "我们有一百零八个学生。",
+  "order_index": 18,
+  "id": "yct-4-l01-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д хүүгийн сургуульд хэдэн сурагч байдаг вэ?",
+  "options": [
+   "100",
+   "1800 гаруй",
+   "20",
+   "108"
+  ],
+  "correct_answer": "1800 гаруй",
+  "explanation": "一千八百多个学生。",
+  "order_index": 19,
+  "id": "yct-4-l01-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т хүү яагаад шинэ гар утас авмаар байна вэ?",
+  "options": [
+   "Утас нь хэт том",
+   "Найз нь авсан",
+   "Утас нь улаан",
+   "Хуучин утас нь интернэтэд орж чадахгүй"
+  ],
+  "correct_answer": "Хуучин утас нь интернэтэд орж чадахгүй",
+  "explanation": "我的手机不能上网。",
+  "order_index": 20,
+  "id": "yct-4-l01-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т компьютер, гар утас хоёр хэдэн юань болох вэ?",
+  "options": [
+   "1200",
+   "20",
+   "108",
+   "1800"
+  ],
+  "correct_answer": "1200",
+  "explanation": "电脑和手机要一千二百块。",
+  "order_index": 21,
+  "id": "yct-4-l01-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们有一百（ ）八个学生。",
+  "options": [
+   "千",
+   "多",
+   "少",
+   "零"
+  ],
+  "correct_answer": "零",
+  "explanation": "108 = 一百零八.",
+  "order_index": 22,
+  "id": "yct-4-l01-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们学校有一千八百（ ）个学生。",
+  "options": [
+   "不",
+   "多",
+   "零",
+   "少"
+  ],
+  "correct_answer": "多",
+  "explanation": "八百多个 = 800 гаруй.",
+  "order_index": 23,
+  "id": "yct-4-l01-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "新电脑能（ ）网。",
+  "options": [
+   "大",
+   "小",
+   "下",
+   "上"
+  ],
+  "correct_answer": "上",
+  "explanation": "上网 = интернэтэд орох.",
+  "order_index": 24,
+  "id": "yct-4-l01-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一百有（ ）个零。",
+  "options": [
+   "四",
+   "三",
+   "两",
+   "五"
+  ],
+  "correct_answer": "两",
+  "explanation": "一百 = 100, хоёр тэгтэй.",
+  "order_index": 25,
+  "id": "yct-4-l01-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "一千有几个零？ (хэдэн тэгтэй вэ?)",
+  "options": [
+   "两个",
+   "四个",
+   "三个",
+   "一个"
+  ],
+  "correct_answer": "三个",
+  "explanation": "一千 = 1000, гурван тэгтэй.",
+  "order_index": 26,
+  "id": "yct-4-l01-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "1800 сурагчтай сургуулийн тухай сонсоод гайхаж хэлэх нь:",
+  "options": [
+   "再见。",
+   "太多了！",
+   "太少了！",
+   "没关系。"
+  ],
+  "correct_answer": "太多了！",
+  "explanation": "Олон үед 太多了!",
+  "order_index": 27,
+  "id": "yct-4-l01-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз «Манайд 20 сурагч л байна» гэвэл хэлэх нь:",
+  "options": [
+   "太好了！",
+   "太少了！",
+   "太多了！",
+   "不客气。"
+  ],
+  "correct_answer": "太少了！",
+  "explanation": "Цөөн үед 太少了!",
+  "order_index": 28,
+  "id": "yct-4-l01-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аав «Чамд хэдэн мөнгө байна?» гэж асууна. Хятадаар:",
+  "options": [
+   "你叫什么？",
+   "你想买什么？",
+   "你几岁了？",
+   "你有多少钱？"
+  ],
+  "correct_answer": "你有多少钱？",
+  "explanation": "多少钱 = хэдэн мөнгө.",
+  "order_index": 29,
+  "id": "yct-4-l01-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

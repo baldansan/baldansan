@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "裙子",
+  "pinyin": "qúnzi",
+  "mongolian": "банзал, даашинз",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我有一条白裙子。",
+  "examplePinyin": "Wǒ yǒu yì tiáo bái qúnzi.",
+  "exampleMongolian": "Надад нэг цагаан банзал бий.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "裤子",
+  "pinyin": "kùzi",
+  "mongolian": "өмд",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "他穿黑裤子。",
+  "examplePinyin": "Tā chuān hēi kùzi.",
+  "exampleMongolian": "Тэр хар өмд өмссөн байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "白",
+  "pinyin": "bái",
+  "mongolian": "цагаан",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "她的裙子是白色的。",
+  "examplePinyin": "Tā de qúnzi shì báisè de.",
+  "exampleMongolian": "Түүний банзал цагаан өнгөтэй.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "黑",
+  "pinyin": "hēi",
+  "mongolian": "хар",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "熊猫的眼睛是黑的。",
+  "examplePinyin": "Xióngmāo de yǎnjing shì hēi de.",
+  "exampleMongolian": "Пандагийн нүд хар.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "可爱",
+  "pinyin": "kě'ài",
+  "mongolian": "хөөрхөн, өхөөрдөм",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "小熊猫真可爱！",
+  "examplePinyin": "Xiǎo xióngmāo zhēn kě'ài!",
+  "exampleMongolian": "Бяцхан панда үнэхээр хөөрхөн!",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "长",
+  "pinyin": "zhǎng",
+  "mongolian": "ургах, томрох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "它长得很快。",
+  "examplePinyin": "Tā zhǎng de hěn kuài.",
+  "exampleMongolian": "Тэр маш хурдан томорч байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "出生",
+  "pinyin": "chūshēng",
+  "mongolian": "төрөх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "你是哪年出生的？",
+  "examplePinyin": "Nǐ shì nǎ nián chūshēng de?",
+  "exampleMongolian": "Чи аль жил төрсөн бэ?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "件",
+  "pinyin": "jiàn",
+  "mongolian": "(хувцасны тооны үг)",
+  "notes": "тооны үг · гол үг",
+  "exampleChinese": "今天你穿哪件衣服？",
+  "examplePinyin": "Jīntiān nǐ chuān nǎ jiàn yīfu?",
+  "exampleMongolian": "Өнөөдөр чи аль хувцсаа өмсөх вэ?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 8
+ }
+]

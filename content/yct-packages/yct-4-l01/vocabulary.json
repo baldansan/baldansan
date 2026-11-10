@@ -1,0 +1,86 @@
+[
+ {
+  "chinese": "手机",
+  "pinyin": "shǒujī",
+  "mongolian": "гар утас",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我的手机不能上网。",
+  "examplePinyin": "Wǒ de shǒujī bù néng shàngwǎng.",
+  "exampleMongolian": "Миний гар утас интернэтэд орж чадахгүй байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "电脑",
+  "pinyin": "diànnǎo",
+  "mongolian": "компьютер",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我想买一个新电脑。",
+  "examplePinyin": "Wǒ xiǎng mǎi yí ge xīn diànnǎo.",
+  "exampleMongolian": "Би шинэ компьютер авмаар байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "零",
+  "pinyin": "líng",
+  "mongolian": "тэг",
+  "notes": "тоо · гол үг",
+  "exampleChinese": "我们有一百零八个学生。",
+  "examplePinyin": "Wǒmen yǒu yì bǎi líng bā ge xuésheng.",
+  "exampleMongolian": "Манайд 108 сурагч бий.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "上网",
+  "pinyin": "shàngwǎng",
+  "mongolian": "интернэтэд орох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "新电脑能上网。",
+  "examplePinyin": "Xīn diànnǎo néng shàngwǎng.",
+  "exampleMongolian": "Шинэ компьютер интернэтэд орж чадна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "百",
+  "pinyin": "bǎi",
+  "mongolian": "зуу",
+  "notes": "тоо · гол үг",
+  "exampleChinese": "一百个学生少。",
+  "examplePinyin": "Yì bǎi ge xuésheng shǎo.",
+  "exampleMongolian": "Зуун сурагч бол цөөхөн.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "千",
+  "pinyin": "qiān",
+  "mongolian": "мянга",
+  "notes": "тоо · гол үг",
+  "exampleChinese": "一千个学生多。",
+  "examplePinyin": "Yì qiān ge xuésheng duō.",
+  "exampleMongolian": "Мянган сурагч бол олон.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "少",
+  "pinyin": "shǎo",
+  "mongolian": "цөөн, бага",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "太少了！",
+  "examplePinyin": "Tài shǎo le!",
+  "exampleMongolian": "Ёстой цөөхөн юм аа!",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 7
+ }
+]

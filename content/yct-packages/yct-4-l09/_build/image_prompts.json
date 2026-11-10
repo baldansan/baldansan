@@ -1,0 +1,108 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你是什么时候去的？",
+  "section": "teacher-intro",
+  "prompt": "Teacher camel with glasses and three young camel kids stand in front of a big world map pointing at China, a toy airplane flies above, speech bubble with the Chinese text 你是什么时候去的？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "hero"
+ },
+ {
+  "file": "images/w-shihou.jpg",
+  "aspect": "1:1",
+  "title": "时候",
+  "section": "vocabulary",
+  "prompt": "A young camel kid pointing at a big clock on the wall with a curious face, a calendar next to it. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-qunian.jpg",
+  "aspect": "1:1",
+  "title": "去年",
+  "section": "vocabulary",
+  "prompt": "A girl camel looking at a calendar page showing August with a happy memory bubble of a beach trip, the calendar marked 'last year' by flipping pages back. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ci.jpg",
+  "aspect": "1:1",
+  "title": "次",
+  "section": "vocabulary",
+  "prompt": "A brown camel boy holding up one finger beside a toy airplane, big number 1 sign, first-time excited look. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-feiji.jpg",
+  "aspect": "1:1",
+  "title": "飞机",
+  "section": "vocabulary",
+  "prompt": "A big white passenger airplane flying in a blue sky with fluffy clouds, a yellow camel kid waving from a window. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-lei.jpg",
+  "aspect": "1:1",
+  "title": "累",
+  "section": "vocabulary",
+  "prompt": "A tired boy camel yawning with droopy eyes and a suitcase, sitting on a bench in an airport. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你去过中国吗？",
+  "section": "dialogue",
+  "prompt": "A girl camel with a yellow dress and a boy camel in a blue vest stand in front of a world map; the girl asks with a speech bubble containing the Chinese text 你去过中国吗？ and the boy points at China on the map. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "去年，我和爸爸妈妈去了中国。",
+  "section": "dialogue",
+  "prompt": "A young camel kid inside an airplane window smiling, with adult camel father and adult camel mother beside him, the Great Wall seen below through clouds, speech bubble with the Chinese text 去年，我和爸爸妈妈去了中国。. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "坐飞机",
+  "section": "song",
+  "prompt": "Kids camels with arms spread like wings pretending to fly, an airplane over mountains and the Great Wall, a rainbow of music notes. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "我们的家在哪儿？",
+  "section": "story",
+  "prompt": "Mother panda and baby panda looking at a map of China with a Great Wall, mountains and bamboo drawn, baby panda holding a toy airplane. No English text.",
+  "chars": []
+ }
+]

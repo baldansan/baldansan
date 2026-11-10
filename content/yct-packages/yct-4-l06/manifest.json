@@ -1,0 +1,150 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l06",
+ "hskLevel": 2,
+ "lessonNumber": 6,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你去过我们的新教室吗？",
+ "mongolianTitle": "Чи манай шинэ ангид очиж үзсэн үү?",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第6课 (сурах бичиг + CD аудио 06-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-06-02.mp3",
+  "dialogues": "audio/yct-4-06-02.mp3",
+  "words": "audio/yct-4-06-01.mp3",
+  "story": "audio/yct-4-06-03.mp3",
+  "test": "audio/yct-4-06-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l06",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你去过我们的新教室吗？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-jiaoshi",
+    "file": "images/w-jiaoshi.jpg",
+    "title": "教室",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zou",
+    "file": "images/w-zou.jpg",
+    "title": "走",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-guo",
+    "file": "images/w-guo.jpg",
+    "title": "过",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qian",
+    "file": "images/w-qian.jpg",
+    "title": "前",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zuo",
+    "file": "images/w-zuo.jpg",
+    "title": "左",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-you",
+    "file": "images/w-you.jpg",
+    "title": "右",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hou",
+    "file": "images/w-hou.jpg",
+    "title": "后",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你去过我们的新教室吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你看，前边都是新教室。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "鞋下边的画儿",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "鞋下边的画儿 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test t1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test t2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test t3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test t4",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L6)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

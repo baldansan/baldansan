@@ -1,0 +1,153 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "它长得很快。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses, a yellow camel calf boy and a camel calf girl in a yellow dress stand in a bright bedroom next to a baby panda growing into a big panda, clothes (white skirt, black trousers) laid on the bed, speech bubble with the Chinese text 它长得很快。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-qunzi.jpg",
+  "aspect": "1:1",
+  "title": "裙子",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl in a yellow dress holds up a fluffy white skirt in her room, big cheerful smile. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kuzi.jpg",
+  "aspect": "1:1",
+  "title": "裤子",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf boy in a green hat holds up a pair of black trousers, hanging clothes in the background. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-bai.jpg",
+  "aspect": "1:1",
+  "title": "白",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl with a pink ribbon surrounded by white things: white cloud, white rabbit, white milk bottle. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-hei.jpg",
+  "aspect": "1:1",
+  "title": "黑",
+  "section": "vocabulary",
+  "prompt": "A green-hat camel calf boy with black things: a black cat, black umbrella, black shoes. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-keai.jpg",
+  "aspect": "1:1",
+  "title": "可爱",
+  "section": "vocabulary",
+  "prompt": "A cute baby panda hugged by a camel calf girl, both smiling, sparkles around. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhang.jpg",
+  "aspect": "1:1",
+  "title": "长",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy standing next to height marks on a wall, small tiny version at left and taller version at right, plant growing nearby. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-chusheng.jpg",
+  "aspect": "1:1",
+  "title": "出生",
+  "section": "vocabulary",
+  "prompt": "An adult camel mother holding a newborn baby camel calf with a birthday-style balloon and a calendar, warm family room. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jian.jpg",
+  "aspect": "1:1",
+  "title": "件",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl in a yellow dress choosing among three T-shirts and jackets on a clothes rack, pointing at one. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "今天你穿哪件衣服？",
+  "section": "dialogue",
+  "prompt": "An adult camel mother in a dress asks her camel calf daughter holding a white skirt and black trousers in a bedroom with toys; bubbles with the Chinese text 今天你穿哪件衣服？ in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你们还认识它吗？",
+  "section": "dialogue",
+  "prompt": "Teacher camel with glasses points to a drawing of a baby panda beside a big grown panda eating bamboo, camel calf children watching; speech bubble with the Chinese text 它长得很快。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "妹妹长大了",
+  "section": "song",
+  "prompt": "A camel calf girl in a yellow dress and pink ribbon standing tall with long hair next to growth marks, her older brother calf measuring her height, joyful dancing. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "月亮的裙子",
+  "section": "story",
+  "prompt": "A smiling crescent moon in a striped nightcap holding a red dress, a happy sun beside her, the dress turning into rosy clouds in a bright sky. No English text.",
+  "chars": []
+ }
+]

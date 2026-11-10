@@ -1,0 +1,86 @@
+[
+ {
+  "chinese": "时间",
+  "pinyin": "shíjiān",
+  "mongolian": "цаг хугацаа",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "你有时间吗？",
+  "examplePinyin": "Nǐ yǒu shíjiān ma?",
+  "exampleMongolian": "Чамд завтай юу?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "半",
+  "pinyin": "bàn",
+  "mongolian": "хагас",
+  "notes": "тоо үг · гол үг",
+  "exampleChinese": "半个小时是30分钟。",
+  "examplePinyin": "Bàn ge xiǎoshí shì sānshí fēnzhōng.",
+  "exampleMongolian": "Хагас цаг бол 30 минут.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "读",
+  "pinyin": "dú",
+  "mongolian": "унших",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "请你读，读和写。",
+  "examplePinyin": "Qǐng nǐ dú, dú hé xiě.",
+  "exampleMongolian": "Чи уншаарай, уншиж бас бичээрэй.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "难",
+  "pinyin": "nán",
+  "mongolian": "хэцүү",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "写字很难。",
+  "examplePinyin": "Xiě zì hěn nán.",
+  "exampleMongolian": "Ханз бичих хэцүү.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "小时",
+  "pinyin": "xiǎoshí",
+  "mongolian": "цаг (60 минут)",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "一个小时是60分钟。",
+  "examplePinyin": "Yí ge xiǎoshí shì liùshí fēnzhōng.",
+  "exampleMongolian": "Нэг цаг бол 60 минут.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "题",
+  "pinyin": "tí",
+  "mongolian": "асуулт, бодлого",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "这个题我不懂。",
+  "examplePinyin": "Zhège tí wǒ bù dǒng.",
+  "exampleMongolian": "Энэ бодлогыг би ойлгохгүй байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "懂",
+  "pinyin": "dǒng",
+  "mongolian": "ойлгох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "你懂了吗？",
+  "examplePinyin": "Nǐ dǒng le ma?",
+  "exampleMongolian": "Чи ойлгов уу?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 7
+ }
+]

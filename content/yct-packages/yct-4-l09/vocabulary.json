@@ -1,0 +1,62 @@
+[
+ {
+  "chinese": "时候",
+  "pinyin": "shíhou",
+  "mongolian": "цаг, үе",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "你是什么时候去的？",
+  "examplePinyin": "Nǐ shì shénme shíhou qù de?",
+  "exampleMongolian": "Чи хэзээ явсан юм бэ?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "去年",
+  "pinyin": "qùnián",
+  "mongolian": "өнгөрсөн жил",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我是去年8月去的。",
+  "examplePinyin": "Wǒ shì qùnián bā yuè qù de.",
+  "exampleMongolian": "Би өнгөрсөн жилийн 8-р сард явсан.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "次",
+  "pinyin": "cì",
+  "mongolian": "удаа",
+  "notes": "хэмжих үг · гол үг",
+  "exampleChinese": "那是我第一次坐飞机。",
+  "examplePinyin": "Nà shì wǒ dì yī cì zuò fēijī.",
+  "exampleMongolian": "Миний онгоцонд анх удаа суусан нь тэр байсан.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "飞机",
+  "pinyin": "fēijī",
+  "mongolian": "онгоц",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我们是坐飞机去的。",
+  "examplePinyin": "Wǒmen shì zuò fēijī qù de.",
+  "exampleMongolian": "Бид онгоцоор явсан.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "累",
+  "pinyin": "lèi",
+  "mongolian": "ядарсан, ядрах",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "坐飞机有一点儿累。",
+  "examplePinyin": "Zuò fēijī yǒu yìdiǎnr lèi.",
+  "exampleMongolian": "Онгоцоор явахад жаахан ядардаг.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ }
+]

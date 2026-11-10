@@ -1,0 +1,179 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l08",
+ "hskLevel": 2,
+ "lessonNumber": 8,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "要下雨了。",
+ "mongolianTitle": "Бороо орох нь!",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第8课 (сурах бичиг + CD аудио 08-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-08-text-song.mp3",
+  "dialogues": "audio/yct-4-08-02.mp3",
+  "words": "audio/yct-4-08-01.mp3",
+  "song": "audio/yct-4-08-03.mp3",
+  "story": "audio/yct-4-08-04.mp3",
+  "test": "audio/yct-4-08-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l08",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "要下雨了。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "要下雨了，你拿雨伞了吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你开得太慢了，比我走得还慢。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "要下雨了，要下雨了",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "乌龟的表",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "乌龟的表 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-yusan",
+    "file": "images/w-yusan.jpg",
+    "title": "雨伞",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-na",
+    "file": "images/w-na.jpg",
+    "title": "拿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lan",
+    "file": "images/w-lan.jpg",
+    "title": "蓝",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-huai",
+    "file": "images/w-huai.jpg",
+    "title": "坏",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-man",
+    "file": "images/w-man.jpg",
+    "title": "慢",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chidao",
+    "file": "images/w-chidao.jpg",
+    "title": "迟到",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "cw1",
+    "file": "images/cw1.png",
+    "title": "Choose and write 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "cw2",
+    "file": "images/cw2.png",
+    "title": "Choose and write 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "cw3",
+    "file": "images/cw3.png",
+    "title": "Choose and write 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "cw4",
+    "file": "images/cw4.png",
+    "title": "Choose and write 4",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L8)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,86 @@
+[
+ {
+  "chinese": "鱼",
+  "pinyin": "yú",
+  "mongolian": "загас",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "小猫爱吃小鱼。",
+  "examplePinyin": "Xiǎo māo ài chī xiǎo yú.",
+  "exampleMongolian": "Муур жижиг загас идэх дуртай.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "菜",
+  "pinyin": "cài",
+  "mongolian": "хоол, ногоо",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我爱吃中国菜。",
+  "examplePinyin": "Wǒ ài chī Zhōngguó cài.",
+  "exampleMongolian": "Би хятад хоол идэх дуртай.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "果汁",
+  "pinyin": "guǒzhī",
+  "mongolian": "жимсний шүүс",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我爱喝果汁。",
+  "examplePinyin": "Wǒ ài hē guǒzhī.",
+  "exampleMongolian": "Би жимсний шүүс уух дуртай.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "洗澡",
+  "pinyin": "xǐzǎo",
+  "mongolian": "угаалга хийх, усанд орох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我爱洗澡。",
+  "examplePinyin": "Wǒ ài xǐzǎo.",
+  "exampleMongolian": "Би усанд орох дуртай.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "进",
+  "pinyin": "jìn",
+  "mongolian": "орох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "请进！",
+  "examplePinyin": "Qǐng jìn!",
+  "exampleMongolian": "Орж ирээрэй!",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "它",
+  "pinyin": "tā",
+  "mongolian": "тэр, энэ (амьтан, эд юмыг хэлэх)",
+  "notes": "төлөөний үг · гол үг",
+  "exampleChinese": "我在给它洗澡。",
+  "examplePinyin": "Wǒ zài gěi tā xǐzǎo.",
+  "exampleMongolian": "Би түүнийг угааж байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "把",
+  "pinyin": "bǎ",
+  "mongolian": "«…-ыг» гэсэн утгатай (юмыг дурдаж үйлдэл хийх үг)",
+  "notes": "тусгай үг · дүрмийн үг",
+  "exampleChinese": "快把门关上。",
+  "examplePinyin": "Kuài bǎ mén guānshang.",
+  "exampleMongolian": "Хурдан хаалгаа хаа.",
+  "hskLevel": "YCT 4",
+  "keyWord": false,
+  "orderIndex": 7
+ }
+]

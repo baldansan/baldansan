@@ -1,0 +1,165 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l11",
+ "hskLevel": 2,
+ "lessonNumber": 11,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "它长得很快。",
+ "mongolianTitle": "Тэр маш хурдан томорч байна",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第11课 (сурах бичиг + CD аудио 11-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-11-text-song.mp3",
+  "dialogues": "audio/yct-4-11-02.mp3",
+  "words": "audio/yct-4-11-01.mp3",
+  "song": "audio/yct-4-11-03.mp3",
+  "story": "audio/yct-4-11-04.mp3",
+  "test": "audio/yct-4-11-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l11",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "它长得很快。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "今天你穿哪件衣服？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你们还认识它吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "妹妹长大了",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "月亮的裙子",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "月亮的裙子 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-qunzi",
+    "file": "images/w-qunzi.jpg",
+    "title": "裙子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kuzi",
+    "file": "images/w-kuzi.jpg",
+    "title": "裤子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bai",
+    "file": "images/w-bai.jpg",
+    "title": "白",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hei",
+    "file": "images/w-hei.jpg",
+    "title": "黑",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-keai",
+    "file": "images/w-keai.jpg",
+    "title": "可爱",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhang",
+    "file": "images/w-zhang.jpg",
+    "title": "长",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chusheng",
+    "file": "images/w-chusheng.jpg",
+    "title": "出生",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jian",
+    "file": "images/w-jian.jpg",
+    "title": "件",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L11)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

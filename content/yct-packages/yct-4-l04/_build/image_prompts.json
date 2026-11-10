@@ -1,0 +1,139 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我感冒了。",
+  "section": "teacher-intro",
+  "prompt": "Teacher Camel (yellow camel with glasses) in a cozy room checks the forehead of the yellow calf boy who lies in bed with a wet towel on his head, a thermometer and a cup of water on the bedside table; the calf girl and the brown calf boy stand by with worried faces. Speech bubble with the Chinese text 我感冒了。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "hero"
+ },
+ {
+  "file": "images/w-shenti.jpg",
+  "aspect": "1:1",
+  "title": "身体",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest stands tall and healthy, flexing his arm with a big smile, small hearts around him; sunny background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shufu.jpg",
+  "aspect": "1:1",
+  "title": "舒服",
+  "section": "vocabulary",
+  "prompt": "The calf girl lies happily on a soft sofa with a blanket and pillow, cozy and relaxed; next to it a small sad calf holding its tummy looks uncomfortable. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shengbing.jpg",
+  "aspect": "1:1",
+  "title": "生病",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy with green hat looks sick in bed with a thermometer in his mouth and ice pack on his forehead, a worried adult camel mother beside him. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-ganmao.jpg",
+  "aspect": "1:1",
+  "title": "感冒",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy sneezing into a tissue with red runny nose, scarf around his neck, tissues on the table. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xiuxi.jpg",
+  "aspect": "1:1",
+  "title": "休息",
+  "section": "vocabulary",
+  "prompt": "The calf girl resting under a tree on soft grass, drinking water and wiping her forehead after running, relaxed smile. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-teng.jpg",
+  "aspect": "1:1",
+  "title": "疼",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy holds his sore leg with a pained face, a small red star of pain drawn near the leg. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yao.jpg",
+  "aspect": "1:1",
+  "title": "药",
+  "section": "vocabulary",
+  "prompt": "Teacher Camel holds out a small spoon of medicine and a glass of water to the yellow calf boy; colorful pills and a medicine bottle on the table. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-yidianr.jpg",
+  "aspect": "1:1",
+  "title": "一点儿",
+  "section": "vocabulary",
+  "prompt": "The calf girl holds a plate with a tiny piece of bread and a small cup with only a little water; big tiny size contrast, cute. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "喂，老师您好！",
+  "section": "dialogue",
+  "prompt": "Adult camel mother in a yellow top talks on the phone, a speech bubble with the Chinese text 喂，老师您好！ in large clear black font; behind her the yellow calf boy lies sick in bed with a cold towel on his forehead. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你吃东西了吗？",
+  "section": "dialogue",
+  "prompt": "Adult camel mother touches the forehead of the yellow calf boy lying in bed; on the bedside table a slice of bread and a glass of water; speech bubble with the Chinese text 你吃东西了吗？ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "早上好，早上好",
+  "section": "song",
+  "prompt": "Three camel calf children (yellow calf boy in blue vest, calf girl with pink ribbon, brown calf boy with green hat) jog happily together on a sunny morning road by green bushes and a tree, smiling. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "狐狸生病了吗？",
+  "section": "story",
+  "prompt": "A rooster doctor in a white coat and glasses in an animal hospital examines a dog, a panda, a little bird and a cat in a row; a sneaky fox in a pink headscarf waits at the door with a hungry smile. Comic style. No English text.",
+  "chars": [
+   "temee"
+  ]
+ }
+]

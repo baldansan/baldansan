@@ -1,0 +1,139 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你去过我们的新教室吗？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands in front of a big yellow school building with a red roof and flowers, pointing left; the foal boy and foal girl look at it with excitement. Speech bubble with the Chinese text 你去过我们的新教室吗？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jiaoshi.jpg",
+  "aspect": "1:1",
+  "title": "教室",
+  "section": "vocabulary",
+  "prompt": "A bright school classroom with desks and a blackboard, the camel teacher standing at the door. Cute children's book illustration. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zou.jpg",
+  "aspect": "1:1",
+  "title": "走",
+  "section": "vocabulary",
+  "prompt": "The foal boy walking forward on a road with a backpack, footprints behind him. Cute children's book illustration. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-guo.jpg",
+  "aspect": "1:1",
+  "title": "过",
+  "section": "vocabulary",
+  "prompt": "The foal girl holding a ticket and a map with a check mark and little pictures of places she has visited before. Cute children's book illustration. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-qian.jpg",
+  "aspect": "1:1",
+  "title": "前",
+  "section": "vocabulary",
+  "prompt": "The foal boy standing on a road pointing straight ahead where a big red school building stands. Cute children's book illustration. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zuo.jpg",
+  "aspect": "1:1",
+  "title": "左",
+  "section": "vocabulary",
+  "prompt": "The foal girl raising her LEFT hoof, an arrow pointing to the left, with a tree on the left. Cute children's book illustration. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-you.jpg",
+  "aspect": "1:1",
+  "title": "右",
+  "section": "vocabulary",
+  "prompt": "The brown foal boy raising his RIGHT hoof, an arrow pointing to the right, with a house on the right. Cute children's book illustration. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-hou.jpg",
+  "aspect": "1:1",
+  "title": "后",
+  "section": "vocabulary",
+  "prompt": "The foal boy standing in front of a tree, with the foal girl hiding behind the tree peeking out. Cute children's book illustration. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你去过我们的新教室吗？",
+  "section": "dialogue",
+  "prompt": "In front of a big yellow school building, the foal girl in the yellow dress asks the brown foal boy, who spreads his arms wide happily; speech bubble with the Chinese text 你去过我们的新教室吗？ in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你看，前边都是新教室。",
+  "section": "dialogue",
+  "prompt": "The foal boy and foal girl look out of a tall window at a school campus with new buildings and many flowers; the boy points left and right; speech bubble with the Chinese text 你看，前边都是新教室。 in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "鞋下边的画儿",
+  "section": "story",
+  "prompt": "Two foal boys race to put on clothes and shoes; one holds up a shoe with a small picture drawn on the bottom and smiles proudly, the other scratches his head. Speech bubble with the Chinese text 哪个是左边？ in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "bor"
+  ]
+ }
+]

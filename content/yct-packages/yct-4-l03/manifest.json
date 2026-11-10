@@ -1,0 +1,185 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l03",
+ "hskLevel": 2,
+ "lessonNumber": 3,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "早上八点半就开门。",
+ "mongolianTitle": "Өглөө найман цаг хагаст л нээгддэг",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第3课 (сурах бичиг + CD аудио 03-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-03-text-song.mp3",
+  "dialogues": "audio/yct-4-03-02.mp3",
+  "words": "audio/yct-4-03-01.mp3",
+  "story": "audio/yct-4-03-03.mp3",
+  "test": "audio/yct-4-03-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l03",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "早上八点半就开门。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-kai",
+    "file": "images/w-kai.jpg",
+    "title": "开",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-guan",
+    "file": "images/w-guan.jpg",
+    "title": "关",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-men",
+    "file": "images/w-men.jpg",
+    "title": "门",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-beizi",
+    "file": "images/w-beizi.jpg",
+    "title": "杯子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhongwu",
+    "file": "images/w-zhongwu.jpg",
+    "title": "中午",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mai",
+    "file": "images/w-mai.jpg",
+    "title": "卖",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wan",
+    "file": "images/w-wan.jpg",
+    "title": "完",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jiu",
+    "file": "images/w-jiu.jpg",
+    "title": "就",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "我想去买礼物，商店几点开门？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "我买两个老虎杯子。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "门怎么关不上呢？",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story-panels",
+    "file": "images/story.png",
+    "title": "门怎么关不上呢？ · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test t1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test t2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test t3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test t4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test t5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test t6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t7",
+    "file": "images/t7.png",
+    "title": "Test t7",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t8",
+    "file": "images/t8.png",
+    "title": "Test t8",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L3)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

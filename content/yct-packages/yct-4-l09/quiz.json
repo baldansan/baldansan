@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Онгоц» хятадаар аль нь вэ?",
+  "options": [
+   "医院",
+   "北京",
+   "学校",
+   "飞机"
+  ],
+  "correct_answer": "飞机",
+  "explanation": "飞机 (fēijī) = онгоц.",
+  "order_index": 1,
+  "id": "yct-4-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Өнгөрсөн жил» хятадаар аль нь вэ?",
+  "options": [
+   "星期",
+   "时候",
+   "去年",
+   "昨天"
+  ],
+  "correct_answer": "去年",
+  "explanation": "去年 (qùnián) = өнгөрсөн жил.",
+  "order_index": 2,
+  "id": "yct-4-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ядарсан» хятадаар аль нь вэ?",
+  "options": [
+   "累",
+   "高兴",
+   "远",
+   "小"
+  ],
+  "correct_answer": "累",
+  "explanation": "累 (lèi) = ядарсан.",
+  "order_index": 3,
+  "id": "yct-4-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«次» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "удаа",
+   "цаг",
+   "өнгөрсөн жил",
+   "онгоц"
+  ],
+  "correct_answer": "удаа",
+  "explanation": "次 (cì) = удаа. 第一次 = анх удаа.",
+  "order_index": 4,
+  "id": "yct-4-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«时候» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "удаа",
+   "ядарсан",
+   "онгоц",
+   "цаг, үе"
+  ],
+  "correct_answer": "цаг, үе",
+  "explanation": "时候 (shíhou). 什么时候 = хэзээ.",
+  "order_index": 5,
+  "id": "yct-4-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«什么时候» гэж юу гэсэн үг вэ?",
+  "options": [
+   "хаана",
+   "яаж",
+   "хэзээ",
+   "хэн"
+  ],
+  "correct_answer": "хэзээ",
+  "explanation": "什么时候 = хэзээ.",
+  "order_index": 6,
+  "id": "yct-4-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«第一次» гэж юу гэсэн үг вэ?",
+  "options": [
+   "гурав дахь удаа",
+   "өдөр бүр",
+   "анх удаа",
+   "хоёр дахь удаа"
+  ],
+  "correct_answer": "анх удаа",
+  "explanation": "第一 = эхний, 次 = удаа.",
+  "order_index": 7,
+  "id": "yct-4-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «fēijī» гэж уншдаг үг:",
+  "options": [
+   "时候",
+   "去年",
+   "飞机",
+   "累"
+  ],
+  "correct_answer": "飞机",
+  "explanation": "飞机 = fēijī = онгоц.",
+  "order_index": 8,
+  "id": "yct-4-l09-q08",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «qùnián» гэж уншдаг үг:",
+  "options": [
+   "高兴",
+   "去年",
+   "时候",
+   "飞机"
+  ],
+  "correct_answer": "去年",
+  "explanation": "去年 = qùnián.",
+  "order_index": 9,
+  "id": "yct-4-l09-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shíhou» гэж уншдаг үг:",
+  "options": [
+   "去年",
+   "累",
+   "时候",
+   "次"
+  ],
+  "correct_answer": "时候",
+  "explanation": "时候 = shíhou.",
+  "order_index": 10,
+  "id": "yct-4-l09-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «lèi» гэж уншдаг үг:",
+  "options": [
+   "累",
+   "北京",
+   "飞机",
+   "次"
+  ],
+  "correct_answer": "累",
+  "explanation": "累 = lèi = ядарсан.",
+  "order_index": 11,
+  "id": "yct-4-l09-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи хэзээ явсан юм бэ?» хятадаар:",
+  "options": [
+   "你是什么时候去的？",
+   "你累吗？",
+   "你去过中国吗？",
+   "你是怎么去的？"
+  ],
+  "correct_answer": "你是什么时候去的？",
+  "explanation": "什么时候 = хэзээ.",
+  "order_index": 12,
+  "id": "yct-4-l09-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи яаж явсан бэ?» хятадаар:",
+  "options": [
+   "你累吗？",
+   "你去过吗？",
+   "你是怎么去的？",
+   "你是什么时候去的？"
+  ],
+  "correct_answer": "你是怎么去的？",
+  "explanation": "怎么 = яаж.",
+  "order_index": 13,
+  "id": "yct-4-l09-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д Дэвид хэзээ Хятад явсан бэ?",
+  "options": [
+   "Өнгөрсөн жилийн 8-р сард",
+   "Хэзээ ч яваагүй",
+   "Өнгөрсөн долоо хоногт",
+   "Өчигдөр"
+  ],
+  "correct_answer": "Өнгөрсөн жилийн 8-р сард",
+  "explanation": "我是去年8月去的。",
+  "order_index": 14,
+  "id": "yct-4-l09-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д Мари Хятадад очиж үзсэн үү?",
+  "options": [
+   "Тийм, очсон",
+   "Мэдэхгүй",
+   "Өчигдөр очсон",
+   "Үгүй, очоогүй"
+  ],
+  "correct_answer": "Үгүй, очоогүй",
+  "explanation": "玛丽说：我没去过。",
+  "order_index": 15,
+  "id": "yct-4-l09-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т Дэвид хэд цаг нисэв?",
+  "options": [
+   "3 цаг",
+   "13 цаг",
+   "12 цаг",
+   "10 цаг"
+  ],
+  "correct_answer": "13 цаг",
+  "explanation": "我们飞了十三个小时。",
+  "order_index": 16,
+  "id": "yct-4-l09-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дэвид Хятад руу юугаар явсан бэ?",
+  "options": [
+   "Галт тэргээр",
+   "Машинаар",
+   "Автобусаар",
+   "Онгоцоор"
+  ],
+  "correct_answer": "Онгоцоор",
+  "explanation": "我们是坐飞机去的。",
+  "order_index": 17,
+  "id": "yct-4-l09-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我是（ ）年8月去的。",
+  "options": [
+   "坐",
+   "没",
+   "好",
+   "去"
+  ],
+  "correct_answer": "去",
+  "explanation": "去年 = өнгөрсөн жил.",
+  "order_index": 18,
+  "id": "yct-4-l09-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们是坐（ ）去的。",
+  "options": [
+   "高兴",
+   "星期",
+   "飞机",
+   "北京"
+  ],
+  "correct_answer": "飞机",
+  "explanation": "坐飞机 = онгоцоор.",
+  "order_index": 19,
+  "id": "yct-4-l09-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你是什么（ ）去的？",
+  "options": [
+   "累",
+   "时候",
+   "飞机",
+   "次"
+  ],
+  "correct_answer": "时候",
+  "explanation": "什么时候 = хэзээ.",
+  "order_index": 20,
+  "id": "yct-4-l09-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）去过中国。（Очоогүй）",
+  "options": [
+   "都",
+   "是",
+   "没",
+   "很"
+  ],
+  "correct_answer": "没",
+  "explanation": "没去过 = очоогүй.",
+  "order_index": 21,
+  "id": "yct-4-l09-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那是我第一（ ）坐飞机。",
+  "options": [
+   "年",
+   "次",
+   "月",
+   "天"
+  ],
+  "correct_answer": "次",
+  "explanation": "第一次 = анх удаа.",
+  "order_index": 22,
+  "id": "yct-4-l09-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我没去过。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Би өчигдөр явсан.",
+   "Би очоогүй.",
+   "Би очиж үзсэн.",
+   "Би ядарсан."
+  ],
+  "correct_answer": "Би очоогүй.",
+  "explanation": "没去过 = очоогүй.",
+  "order_index": 23,
+  "id": "yct-4-l09-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Бяцхан панда яагаад онгоцоор гэртээ харьж чадахгүй вэ?",
+  "options": [
+   "Тэр жижиг, ядарна",
+   "Гэр нь ойрхон",
+   "Тэр хүсэхгүй",
+   "Онгоц байхгүй"
+  ],
+  "correct_answer": "Тэр жижиг, ядарна",
+  "explanation": "妈妈说：你太小，坐飞机回家会很累的。",
+  "order_index": 24,
+  "id": "yct-4-l09-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пандын гэр хаана байдаг вэ?",
+  "options": [
+   "Монголд",
+   "Бээжин хотод л",
+   "Онгоцон дээр",
+   "Хятадад"
+  ],
+  "correct_answer": "Хятадад",
+  "explanation": "我们的家在中国。",
+  "order_index": 25,
+  "id": "yct-4-l09-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你去过北京吗？» гэж асуув. Чи очиж үзээгүй бол:",
+  "options": [
+   "我没去过。",
+   "我是去年去的。",
+   "我很累。",
+   "我是坐飞机去的。"
+  ],
+  "correct_answer": "我没去过。",
+  "explanation": "没去过 = очоогүй.",
+  "order_index": 26,
+  "id": "yct-4-l09-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаасаа юугаар явсныг нь асуух нь:",
+  "options": [
+   "你累吗？",
+   "你是怎么去的？",
+   "你是什么时候去的？",
+   "你去过吗？"
+  ],
+  "correct_answer": "你是怎么去的？",
+  "explanation": "怎么 = яаж.",
+  "order_index": 27,
+  "id": "yct-4-l09-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Онгоцоор удаан явсан хойно жаахан ядарсан бол юу гэх вэ?",
+  "options": [
+   "第一次。",
+   "我没去过。",
+   "有一点儿累。",
+   "去年8月。"
+  ],
+  "correct_answer": "有一点儿累。",
+  "explanation": "有一点儿累 = жаахан ядарсан.",
+  "order_index": 28,
+  "id": "yct-4-l09-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

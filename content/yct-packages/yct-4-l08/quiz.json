@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Шүхэр» хятадаар аль нь вэ?",
+  "options": [
+   "雨伞",
+   "学校",
+   "老师",
+   "朋友"
+  ],
+  "correct_answer": "雨伞",
+  "explanation": "雨伞 (yǔsǎn) = шүхэр.",
+  "order_index": 1,
+  "id": "yct-4-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Барих, авах» хятадаар аль нь вэ?",
+  "options": [
+   "慢",
+   "坏",
+   "蓝",
+   "拿"
+  ],
+  "correct_answer": "拿",
+  "explanation": "拿 (ná) = барих, авах.",
+  "order_index": 2,
+  "id": "yct-4-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цэнхэр» хятадаар аль нь вэ?",
+  "options": [
+   "拿",
+   "坏",
+   "慢",
+   "蓝"
+  ],
+  "correct_answer": "蓝",
+  "explanation": "蓝 (lán) = цэнхэр.",
+  "order_index": 3,
+  "id": "yct-4-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Муу, эвдэрсэн» хятадаар аль нь вэ?",
+  "options": [
+   "雨伞",
+   "坏",
+   "慢",
+   "蓝"
+  ],
+  "correct_answer": "坏",
+  "explanation": "坏 (huài) = муу, эвдэрсэн.",
+  "order_index": 4,
+  "id": "yct-4-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«慢» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "удаан",
+   "цэнхэр",
+   "хурдан",
+   "шүхэр"
+  ],
+  "correct_answer": "удаан",
+  "explanation": "慢 (màn) = удаан.",
+  "order_index": 5,
+  "id": "yct-4-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«迟到» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эвдрэх",
+   "хоцрох",
+   "удаан",
+   "авах"
+  ],
+  "correct_answer": "хоцрох",
+  "explanation": "迟到 (chídào) = хоцрох.",
+  "order_index": 6,
+  "id": "yct-4-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yǔsǎn» гэж уншдаг үг:",
+  "options": [
+   "慢",
+   "雨伞",
+   "迟到",
+   "蓝"
+  ],
+  "correct_answer": "雨伞",
+  "explanation": "雨伞 = yǔsǎn = шүхэр.",
+  "order_index": 7,
+  "id": "yct-4-l08-q07",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «chídào» гэж уншдаг үг:",
+  "options": [
+   "迟到",
+   "拿",
+   "坏",
+   "雨伞"
+  ],
+  "correct_answer": "迟到",
+  "explanation": "迟到 = chídào = хоцрох.",
+  "order_index": 8,
+  "id": "yct-4-l08-q08",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «huài» гэж уншдаг үг:",
+  "options": [
+   "坏",
+   "慢",
+   "拿",
+   "蓝"
+  ],
+  "correct_answer": "坏",
+  "explanation": "坏 = huài = эвдэрсэн.",
+  "order_index": 9,
+  "id": "yct-4-l08-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «màn» гэж уншдаг үг:",
+  "options": [
+   "坏",
+   "蓝",
+   "慢",
+   "拿"
+  ],
+  "correct_answer": "慢",
+  "explanation": "慢 = màn = удаан.",
+  "order_index": 10,
+  "id": "yct-4-l08-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«要下雨了。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Би хоцорлоо.",
+   "Би шүхрээ авсан.",
+   "Шүхэр эвдэрсэн.",
+   "Бороо орох нь."
+  ],
+  "correct_answer": "Бороо орох нь.",
+  "explanation": "要……了 = удахгүй. 下雨 = бороо орох.",
+  "order_index": 11,
+  "id": "yct-4-l08-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«要迟到了。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Шүхэр авсан.",
+   "Удаан жолоодоорой.",
+   "Бороо орох нь.",
+   "Хоцрох нь ээ."
+  ],
+  "correct_answer": "Хоцрох нь ээ.",
+  "explanation": "迟到 = хоцрох.",
+  "order_index": 12,
+  "id": "yct-4-l08-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д ээж хүүдээ ямар шүхрийг бүү ав гэсэн бэ?",
+  "options": [
+   "Шар шүхэр",
+   "Улаан шүхэр",
+   "Хар шүхэр",
+   "Цэнхэр шүхэр"
+  ],
+  "correct_answer": "Цэнхэр шүхэр",
+  "explanation": "别拿蓝色的雨伞，那个坏了。",
+  "order_index": 13,
+  "id": "yct-4-l08-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ээж цэнхэр шүхрийг яагаад бүү ав гэсэн бэ?",
+  "options": [
+   "Тэр эвдэрсэн",
+   "Тэр хуучин биш",
+   "Тэр том",
+   "Хүү дуртай"
+  ],
+  "correct_answer": "Тэр эвдэрсэн",
+  "explanation": "那个坏了 = тэр эвдэрсэн.",
+  "order_index": 14,
+  "id": "yct-4-l08-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т яст мэлхий хэрхэн жолооддог вэ?",
+  "options": [
+   "Хурдан",
+   "Удаан",
+   "Шөнө л",
+   "Тэр жолоодохгүй"
+  ],
+  "correct_answer": "Удаан",
+  "explanation": "你开得太慢了。",
+  "order_index": 15,
+  "id": "yct-4-l08-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яст мэлхий яагаад хурдан жолоодохгүй вэ?",
+  "options": [
+   "Машин эвдэрсэн",
+   "Хурдан жолоодох дургүй",
+   "Хоцорсон",
+   "Бороо орж байна"
+  ],
+  "correct_answer": "Хурдан жолоодох дургүй",
+  "explanation": "我不喜欢开快车。",
+  "order_index": 16,
+  "id": "yct-4-l08-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）下雨了，你拿雨伞了吗？",
+  "options": [
+   "也",
+   "吗",
+   "要",
+   "得"
+  ],
+  "correct_answer": "要",
+  "explanation": "要下雨了 = бороо орох нь.",
+  "order_index": 17,
+  "id": "yct-4-l08-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）拿蓝色的雨伞，那个坏了。",
+  "options": [
+   "太",
+   "也",
+   "要",
+   "别"
+  ],
+  "correct_answer": "别",
+  "explanation": "别 = бүү.",
+  "order_index": 18,
+  "id": "yct-4-l08-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你开（ ）太慢了。",
+  "options": [
+   "别",
+   "得",
+   "要",
+   "了"
+  ],
+  "correct_answer": "得",
+  "explanation": "开得 = жолоодох нь … .",
+  "order_index": 19,
+  "id": "yct-4-l08-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "要迟到了，（ ）一点儿吧。",
+  "options": [
+   "慢",
+   "坏",
+   "蓝",
+   "快"
+  ],
+  "correct_answer": "快",
+  "explanation": "快一点儿 = жаахан хурдан.",
+  "order_index": 20,
+  "id": "yct-4-l08-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "雨伞（ ）了，不能用。",
+  "options": [
+   "坏",
+   "蓝",
+   "拿",
+   "慢"
+  ],
+  "correct_answer": "坏",
+  "explanation": "坏了 = эвдэрсэн.",
+  "order_index": 21,
+  "id": "yct-4-l08-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д туулай «现在11点！» гэхэд яст мэлхийн гар цаг яасан бэ?",
+  "options": [
+   "Нэг цагаар хурдассан",
+   "Алга болсон",
+   "Эвдэрч зогссон",
+   "Нэг цагаар удааширсан"
+  ],
+  "correct_answer": "Нэг цагаар удааширсан",
+  "explanation": "我的表慢了1个小时。",
+  "order_index": 22,
+  "id": "yct-4-l08-q22",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«Жаахан хурдлаарай» хятадаар аль нь вэ?",
+  "options": [
+   "要下雨了。",
+   "快一点儿吧。",
+   "慢一点儿好。",
+   "别拿雨伞。"
+  ],
+  "correct_answer": "快一点儿吧。",
+  "explanation": "快 = хурдан.",
+  "order_index": 23,
+  "id": "yct-4-l08-q23",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Тэнгэр харлаж байна. Чи юу хэлэх вэ?",
+  "options": [
+   "我不喜欢。",
+   "拿了。",
+   "要迟到了！",
+   "要下雨了！"
+  ],
+  "correct_answer": "要下雨了！",
+  "explanation": "Бороо орох гэж байна.",
+  "order_index": 24,
+  "id": "yct-4-l08-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ээж «你拿雨伞了吗？» гэж асуулаа. Чи шүхрээ авсан бол:",
+  "options": [
+   "坏了。",
+   "别拿。",
+   "拿了。",
+   "慢一点儿。"
+  ],
+  "correct_answer": "拿了。",
+  "explanation": "拿了 = авсан.",
+  "order_index": 25,
+  "id": "yct-4-l08-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Чи хичээлд хоцрох гэж байна. Яаруулахдаа:",
+  "options": [
+   "慢一点儿好。",
+   "要下雨了。",
+   "要迟到了，快走！",
+   "别拿雨伞。"
+  ],
+  "correct_answer": "要迟到了，快走！",
+  "explanation": "迟到 = хоцрох, 快走 = хурдан яв.",
+  "order_index": 26,
+  "id": "yct-4-l08-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь маш хурдан явж байна. Удаан яваасай гэвэл:",
+  "options": [
+   "拿了。",
+   "慢一点儿好。",
+   "快一点儿吧。",
+   "要迟到了。"
+  ],
+  "correct_answer": "慢一点儿好。",
+  "explanation": "慢一点儿 = жаахан удаан.",
+  "order_index": 27,
+  "id": "yct-4-l08-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

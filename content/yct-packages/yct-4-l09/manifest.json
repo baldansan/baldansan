@@ -1,0 +1,144 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l09",
+ "hskLevel": 2,
+ "lessonNumber": 9,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你是什么时候去的？",
+ "mongolianTitle": "Чи хэзээ явсан юм бэ?",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第9课 (сурах бичиг + CD аудио 09-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-09-text-song.mp3",
+  "dialogues": "audio/yct-4-09-02.mp3",
+  "words": "audio/yct-4-09-01.mp3",
+  "song": "audio/yct-4-09-03.mp3",
+  "story": "audio/yct-4-09-04.mp3",
+  "test": "audio/yct-4-09-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l09",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你是什么时候去的？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你去过中国吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "去年，我和爸爸妈妈去了中国。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "坐飞机",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "我们的家在哪儿？",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "我们的家在哪儿？ · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-shihou",
+    "file": "images/w-shihou.jpg",
+    "title": "时候",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qunian",
+    "file": "images/w-qunian.jpg",
+    "title": "去年",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ci",
+    "file": "images/w-ci.jpg",
+    "title": "次",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-feiji",
+    "file": "images/w-feiji.jpg",
+    "title": "飞机",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lei",
+    "file": "images/w-lei.jpg",
+    "title": "累",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t7",
+    "file": "images/t7.png",
+    "title": "Test 7",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t8",
+    "file": "images/t8.png",
+    "title": "Test 8",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L9)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,74 @@
+[
+ {
+  "chinese": "电影",
+  "pinyin": "diànyǐng",
+  "mongolian": "кино",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "你看过这个电影吗？",
+  "examplePinyin": "Nǐ kànguo zhège diànyǐng ma?",
+  "exampleMongolian": "Чи энэ киног үзсэн үү?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "为什么",
+  "pinyin": "wèi shénme",
+  "mongolian": "яагаад",
+  "notes": "асуух үг · гол үг",
+  "exampleChinese": "爸爸为什么不休息？",
+  "examplePinyin": "Bàba wèi shénme bù xiūxi?",
+  "exampleMongolian": "Аав яагаад амрахгүй байна вэ?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "忙",
+  "pinyin": "máng",
+  "mongolian": "завгүй",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "爸爸太忙了。",
+  "examplePinyin": "Bàba tài máng le.",
+  "exampleMongolian": "Аав дэндүү завгүй байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "事情",
+  "pinyin": "shìqing",
+  "mongolian": "зүйл, ажил хэрэг",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "爸爸有很多事情。",
+  "examplePinyin": "Bàba yǒu hěn duō shìqing.",
+  "exampleMongolian": "Аавд хийх ажил их байгаа.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "意思",
+  "pinyin": "yìsi",
+  "mongolian": "утга",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "这个电影的名字是什么意思？",
+  "examplePinyin": "Zhège diànyǐng de míngzi shì shénme yìsi?",
+  "exampleMongolian": "Энэ киноны нэр ямар утгатай вэ?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "因为……所以……",
+  "pinyin": "yīnwèi … suǒyǐ …",
+  "mongolian": "учир нь … тиймээс …",
+  "notes": "хос бүтэц · гол бүтэц",
+  "exampleChinese": "因为我的电脑坏了，所以不能上网了。",
+  "examplePinyin": "Yīnwèi wǒ de diànnǎo huài le, suǒyǐ bù néng shàngwǎng le.",
+  "exampleMongolian": "Миний компьютер эвдэрсэн болохоор интернэтэд орж чадахгүй байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 6
+ }
+]

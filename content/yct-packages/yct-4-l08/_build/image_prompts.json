@@ -1,0 +1,114 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "要下雨了。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses, a yellow calf boy, a calf girl and a brown calf boy stand under dark rain clouds, holding colorful umbrellas as the first raindrops fall; a speech bubble with the Chinese text 要下雨了 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yusan.jpg",
+  "aspect": "1:1",
+  "title": "雨伞",
+  "section": "vocabulary",
+  "prompt": "A cheerful calf girl holding a big pretty rainbow-colored umbrella in light rain, close-up. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-na.jpg",
+  "aspect": "1:1",
+  "title": "拿",
+  "section": "vocabulary",
+  "prompt": "Yellow calf boy picking up an umbrella from the door stand with one hand, smiling. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-lan.jpg",
+  "aspect": "1:1",
+  "title": "蓝",
+  "section": "vocabulary",
+  "prompt": "A brown calf boy holding a bright blue rose and a blue umbrella, everything blue. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-huai.jpg",
+  "aspect": "1:1",
+  "title": "坏",
+  "section": "vocabulary",
+  "prompt": "Yellow calf boy looking sad holding a broken umbrella with bent ribs in the rain. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-man.jpg",
+  "aspect": "1:1",
+  "title": "慢",
+  "section": "vocabulary",
+  "prompt": "A big slow turtle walking next to a snail on a path, a calf girl watching and smiling. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-chidao.jpg",
+  "aspect": "1:1",
+  "title": "迟到",
+  "section": "vocabulary",
+  "prompt": "Brown calf boy running to school with a backpack looking at a big clock, school gate in the background. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "要下雨了，你拿雨伞了吗？",
+  "section": "dialogue",
+  "prompt": "An adult camel mother at the house window calls to a yellow calf boy at the door holding a closed umbrella; dark clouds outside; speech bubble with the Chinese text 要下雨了，你拿雨伞了吗？ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你开得太慢了，比我走得还慢。",
+  "section": "dialogue",
+  "prompt": "A rabbit in a tie runs beside a small blue car driven slowly by a turtle in a yellow cap on a country road; speech bubble with the Chinese text 你开得太慢了 in large clear black font. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "要下雨了，要下雨了",
+  "section": "song",
+  "prompt": "Before the rain: swallows flying low over a river, ants carrying their eggs in a line, fish jumping out of the water, teacher camel and calves watching the sky with umbrellas. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "乌龟的表",
+  "section": "story",
+  "prompt": "A hurrying rabbit in a yellow hoodie pulls a calm turtle in a yellow cap toward a cinema entrance with a big clock on the wall, funny surprised faces. No English text.",
+  "chars": []
+ }
+]

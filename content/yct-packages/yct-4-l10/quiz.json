@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Кино» хятадаар аль нь вэ?",
+  "options": [
+   "电影",
+   "老师",
+   "学校",
+   "朋友"
+  ],
+  "correct_answer": "电影",
+  "explanation": "电影 (diànyǐng) = кино.",
+  "order_index": 1,
+  "id": "yct-4-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Яагаад» хятадаар аль нь вэ?",
+  "options": [
+   "什么",
+   "怎么样",
+   "谁",
+   "为什么"
+  ],
+  "correct_answer": "为什么",
+  "explanation": "为什么 (wèi shénme) = яагаад.",
+  "order_index": 2,
+  "id": "yct-4-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Завгүй» хятадаар аль нь вэ?",
+  "options": [
+   "好",
+   "高",
+   "累",
+   "忙"
+  ],
+  "correct_answer": "忙",
+  "explanation": "忙 (máng) = завгүй.",
+  "order_index": 3,
+  "id": "yct-4-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зүйл, ажил хэрэг» хятадаар аль нь вэ?",
+  "options": [
+   "名字",
+   "事情",
+   "电影",
+   "意思"
+  ],
+  "correct_answer": "事情",
+  "explanation": "事情 (shìqing) = зүйл, ажил хэрэг.",
+  "order_index": 4,
+  "id": "yct-4-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Утга» хятадаар аль нь вэ?",
+  "options": [
+   "意思",
+   "朋友",
+   "事情",
+   "电影"
+  ],
+  "correct_answer": "意思",
+  "explanation": "意思 (yìsi) = утга.",
+  "order_index": 5,
+  "id": "yct-4-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«因为» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "гэвч",
+   "учир нь",
+   "яагаад",
+   "тиймээс"
+  ],
+  "correct_answer": "учир нь",
+  "explanation": "因为 (yīnwèi) = учир нь.",
+  "order_index": 6,
+  "id": "yct-4-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«所以» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хамт",
+   "тиймээс",
+   "учир нь",
+   "гэвч"
+  ],
+  "correct_answer": "тиймээс",
+  "explanation": "所以 (suǒyǐ) = тиймээс.",
+  "order_index": 7,
+  "id": "yct-4-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «diànyǐng» гэж уншдаг үг:",
+  "options": [
+   "电影",
+   "意思",
+   "学校",
+   "电脑"
+  ],
+  "correct_answer": "电影",
+  "explanation": "电影 = diànyǐng = кино.",
+  "order_index": 8,
+  "id": "yct-4-l10-q08",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «wèi shénme» гэж уншдаг үг:",
+  "options": [
+   "为什么",
+   "怎么",
+   "因为",
+   "什么"
+  ],
+  "correct_answer": "为什么",
+  "explanation": "为什么 = wèi shénme = яагаад.",
+  "order_index": 9,
+  "id": "yct-4-l10-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shìqing» гэж уншдаг үг:",
+  "options": [
+   "休息",
+   "意思",
+   "事情",
+   "电影"
+  ],
+  "correct_answer": "事情",
+  "explanation": "事情 = shìqing = зүйл, ажил хэрэг.",
+  "order_index": 10,
+  "id": "yct-4-l10-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yìsi» гэж уншдаг үг:",
+  "options": [
+   "休息",
+   "事情",
+   "电影",
+   "意思"
+  ],
+  "correct_answer": "意思",
+  "explanation": "意思 = yìsi = утга.",
+  "order_index": 11,
+  "id": "yct-4-l10-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«爸爸为什么不休息？» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Аав завгүй юу?",
+   "Аав кино үзсэн үү?",
+   "Аав хаана байна вэ?",
+   "Аав яагаад амрахгүй байна вэ?"
+  ],
+  "correct_answer": "Аав яагаад амрахгүй байна вэ?",
+  "explanation": "为什么 = яагаад, 不休息 = амрахгүй.",
+  "order_index": 12,
+  "id": "yct-4-l10-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д ээж аав яагаад амрахгүй байгааг юу гэж хэлсэн бэ?",
+  "options": [
+   "Аав кино үзэж байна",
+   "Аав ядарсан",
+   "Аав гэртээ байхгүй",
+   "Аавд ажил их байгаа"
+  ],
+  "correct_answer": "Аавд ажил их байгаа",
+  "explanation": "因为爸爸有很多事情，所以很忙。",
+  "order_index": 13,
+  "id": "yct-4-l10-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我是在电脑上看的» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Би компьютер дээрээс үзсэн юм",
+   "Би кино театрт явсан",
+   "Би компьютер худалдаж авсан",
+   "Би киног ойлгосонгүй"
+  ],
+  "correct_answer": "Би компьютер дээрээс үзсэн юм",
+  "explanation": "在电脑上 = компьютер дээр, 看的 = үзсэн.",
+  "order_index": 14,
+  "id": "yct-4-l10-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т хоёр хүү киноны юуг ойлгохгүй байна вэ?",
+  "options": [
+   "Киноны үнийг",
+   "Киноны нэрийн утгыг",
+   "Киноны газрыг",
+   "Киноны цагийг"
+  ],
+  "correct_answer": "Киноны нэрийн утгыг",
+  "explanation": "这个电影的名字是什么意思？",
+  "order_index": 15,
+  "id": "yct-4-l10-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«没看懂» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Үзээгүй",
+   "Үзсэн ч ойлгосонгүй",
+   "Үзэх дуртай",
+   "Дахин үзнэ"
+  ],
+  "correct_answer": "Үзсэн ч ойлгосонгүй",
+  "explanation": "看懂 = үзээд ойлгох, 没 = үгүй.",
+  "order_index": 16,
+  "id": "yct-4-l10-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸（ ）什么不休息？",
+  "options": [
+   "是",
+   "有",
+   "为",
+   "在"
+  ],
+  "correct_answer": "为",
+  "explanation": "为什么 = яагаад.",
+  "order_index": 17,
+  "id": "yct-4-l10-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）为爸爸太忙了。",
+  "options": [
+   "但",
+   "还",
+   "所",
+   "因"
+  ],
+  "correct_answer": "因",
+  "explanation": "因为 = учир нь.",
+  "order_index": 18,
+  "id": "yct-4-l10-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "因为爸爸有很多事情，（ ）以很忙。",
+  "options": [
+   "但",
+   "所",
+   "也",
+   "因"
+  ],
+  "correct_answer": "所",
+  "explanation": "所以 = тиймээс.",
+  "order_index": 19,
+  "id": "yct-4-l10-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸有很多（ ）情。",
+  "options": [
+   "意",
+   "学",
+   "电",
+   "事"
+  ],
+  "correct_answer": "事",
+  "explanation": "事情 = ажил, зүйл.",
+  "order_index": 20,
+  "id": "yct-4-l10-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个电影的名字是什么（ ）思？",
+  "options": [
+   "意",
+   "事",
+   "电",
+   "忙"
+  ],
+  "correct_answer": "意",
+  "explanation": "意思 = утга.",
+  "order_index": 21,
+  "id": "yct-4-l10-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我是在电影院里（ ）的。",
+  "options": [
+   "吃",
+   "爱",
+   "喝",
+   "看"
+  ],
+  "correct_answer": "看",
+  "explanation": "看的 = үзсэн.",
+  "order_index": 22,
+  "id": "yct-4-l10-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "因为所以我忙去。",
+   "因为我忙，所以没有去。",
+   "所以我忙，因为没有去。",
+   "我忙因为，没有所以去。"
+  ],
+  "correct_answer": "因为我忙，所以没有去。",
+  "explanation": "Эхлээд шалтгаан (因为), дараа нь үр дүн (所以).",
+  "order_index": 23,
+  "id": "yct-4-l10-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«因为要下雨了，所以……» — үр дүнг сонго:",
+  "options": [
+   "我不知道是什么意思",
+   "他要晚一点儿回家",
+   "我们给他买了蛋糕",
+   "妈妈让我拿雨伞"
+  ],
+  "correct_answer": "妈妈让我拿雨伞",
+  "explanation": "Бороо орох гэж байгаа тул шүхэр аваарай гэнэ.",
+  "order_index": 24,
+  "id": "yct-4-l10-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «爸爸为什么不休息？» гэж асуувал та юу гэж хариулах вэ?",
+  "options": [
+   "所以很忙。",
+   "我也看了。",
+   "因为爸爸太忙了。",
+   "你好！"
+  ],
+  "correct_answer": "因为爸爸太忙了。",
+  "explanation": "为什么-д 因为-аар хариулна.",
+  "order_index": 25,
+  "id": "yct-4-l10-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你看过这个电影吗？» гэж асуулаа. Чи үзсэн бол:",
+  "options": [
+   "因为我很忙。",
+   "没关系。",
+   "看过，我是在电脑上看的。",
+   "我不知道。"
+  ],
+  "correct_answer": "看过，我是在电脑上看的。",
+  "explanation": "看过 = үзсэн.",
+  "order_index": 26,
+  "id": "yct-4-l10-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Киноны нэрийн утгыг мэдэхгүй бол юу гэж асуух вэ?",
+  "options": [
+   "你看过吗？",
+   "这个电影的名字是什么意思？",
+   "这个电影在哪儿？",
+   "你为什么忙？"
+  ],
+  "correct_answer": "这个电影的名字是什么意思？",
+  "explanation": "什么意思 = ямар утгатай вэ.",
+  "order_index": 27,
+  "id": "yct-4-l10-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Mini story-д хүү яагаад «他们都忙着找我呢» гэж хэлсэн бэ?",
+  "options": [
+   "Ээж нь утсаар ярьж байгаа тул",
+   "Цагдаа нар түүнийг хайж байгаа тул",
+   "Аав нь гэртээ байхгүй тул",
+   "Тэр кино үзэж байгаа тул"
+  ],
+  "correct_answer": "Цагдаа нар түүнийг хайж байгаа тул",
+  "explanation": "Хүү орны доор нуугдаж, цагдаа нар түүнийг хайж байна — энэ бол хошигнол.",
+  "order_index": 28,
+  "id": "yct-4-l10-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

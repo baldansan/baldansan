@@ -1,0 +1,248 @@
+[
+ {
+  "point": "它长得很快。 — хурдан томрох",
+  "gloss_mn": "«Тэр маш хурдан томорч байна» — өсөлтийг дүрслэх",
+  "structure": "…… 长得很 + хурдан/сайхан",
+  "teacher_mn": "Хүүхэд, амьтан хурдан өсөхөд «它长得很快» гэж хэлнэ. «长» гэдгийг энд «zhǎng» гэж уншина — ургах, томрох. «长» болон «很快»-ийн дунд «得» гэсэн жижиг үг орно. Сайхан харагдаж байвал «长得很漂亮» гэж хэлж болно.",
+  "teacher_notes": "Номын яриа: 那时候它很小，但是它长得很快。 Let's say: 她的个子长得很快，头发长得也很快。",
+  "examples": [
+   {
+    "chinese": "它长得很快。",
+    "pinyin": "Tā zhǎng de hěn kuài.",
+    "mongolian": "Тэр маш хурдан томорч байна."
+   },
+   {
+    "chinese": "她长得很漂亮，很可爱。",
+    "pinyin": "Tā zhǎng de hěn piàoliang, hěn kě'ài.",
+    "mongolian": "Тэр сайхан царайтай, хөөрхөн."
+   },
+   {
+    "chinese": "她的头发长得也很快。",
+    "pinyin": "Tā de tóufa zhǎng de yě hěn kuài.",
+    "mongolian": "Түүний үс ч бас хурдан ургаж байна."
+   },
+   {
+    "chinese": "我的妹妹长大了。",
+    "pinyin": "Wǒ de mèimei zhǎngdà le.",
+    "mongolian": "Миний дүү томорчихлоо."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "它长很快。",
+    "right": "它长得很快。",
+    "why": "«长» болон «很快»-ийн дунд «得» орно."
+   }
+  ],
+  "check": {
+   "question": "«Тэр маш хурдан томорч байна» хятадаар:",
+   "options": [
+    "我要穿白裙子。",
+    "它长大了吗？",
+    "它长得很快。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "它长 ________ 很快。",
+    "options": [
+     "吗",
+     "了",
+     "得"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 长得很快.",
+    "explanation_wrong_mn": "«长» ба «很快»-ийн дунд 得 орно."
+   },
+   {
+    "type": "choice",
+    "question": "«Миний дүү томорчихлоо» хятадаар:",
+    "options": [
+     "我的妹妹很小。",
+     "我的妹妹长大了。",
+     "我的妹妹出生了。"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 长大 = том болох.",
+    "explanation_wrong_mn": "长大 = том болох, 出生 = төрөх."
+   },
+   {
+    "type": "judge",
+    "question": "«长» гэдгийг «zhǎng» гэж уншвал «ургах, томрох» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! zhǎng = ургах.",
+    "explanation_wrong_mn": "长 zhǎng = ургах, томрох; cháng = урт."
+   }
+  ]
+ },
+ {
+  "point": "今天你穿哪件衣服？ — хувцасны тооны үг",
+  "gloss_mn": "«Өнөөдөр чи аль хувцсаа өмсөх вэ?» — хувцас сонгох",
+  "structure": "哪/那 + 件 (衣服) · 条 (裙子, 裤子)",
+  "teacher_mn": "Хувцсаа сонгохдоо «今天你穿哪件衣服？» гэж асууна. Цамц, хүрэм зэрэг хувцсыг «件» гэж тоолно. Банзал, өмдийг «条» гэж тоолно. Тиймээс «那条白裙子», «那条黑裤子» гэнэ.",
+  "teacher_notes": "Номын яриа: 今天你穿哪件衣服？ 我要穿那条白裙子和那条黑裤子。",
+  "examples": [
+   {
+    "chinese": "今天你穿哪件衣服？",
+    "pinyin": "Jīntiān nǐ chuān nǎ jiàn yīfu?",
+    "mongolian": "Өнөөдөр чи аль хувцсаа өмсөх вэ?"
+   },
+   {
+    "chinese": "我要穿那条白裙子和那条黑裤子。",
+    "pinyin": "Wǒ yào chuān nà tiáo bái qúnzi hé nà tiáo hēi kùzi.",
+    "mongolian": "Би тэр цагаан банзал, тэр хар өмдөө өмсөнө."
+   },
+   {
+    "chinese": "我有红色的裙子。",
+    "pinyin": "Wǒ yǒu hóngsè de qúnzi.",
+    "mongolian": "Надад улаан банзал бий."
+   },
+   {
+    "chinese": "我穿什么裙子？",
+    "pinyin": "Wǒ chuān shénme qúnzi?",
+    "mongolian": "Би ямар банзал өмсөх вэ?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "那件白裙子",
+    "right": "那条白裙子",
+    "why": "Банзал, өмдийг «条» гэж тоолно."
+   }
+  ],
+  "check": {
+   "question": "«Тэр хар өмд» хятадаар:",
+   "options": [
+    "那条黑裤子",
+    "那件黑裤子",
+    "那条白裙子"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "今天你穿哪 ________ 衣服？",
+    "options": [
+     "条",
+     "件",
+     "个"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 衣服 → 件.",
+    "explanation_wrong_mn": "Хувцсыг 件 гэж тоолно."
+   },
+   {
+    "type": "choice",
+    "question": "那 ________ 白裙子",
+    "options": [
+     "岁",
+     "件",
+     "条"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 裙子 → 条.",
+    "explanation_wrong_mn": "Банзлыг 条 гэж тоолно."
+   },
+   {
+    "type": "judge",
+    "question": "«裤子»-г «条» гэж тоолно.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 一条裤子.",
+    "explanation_wrong_mn": "Өмд, банзал → 条."
+   }
+  ]
+ },
+ {
+  "point": "为什么？ 因为…… — шалтгаан асуух",
+  "gloss_mn": "«Яагаад? — Учир нь…» — шалтгаан асуух, хэлэх",
+  "structure": "为什么？ → 因为 + шалтгаан",
+  "teacher_mn": "Яагаад гэж асуухдаа «为什么？» гэнэ. Хариулахдаа «因为……» гэж эхэлнэ. Ээж «为什么？» гэхэд охин «因为今天我是大熊猫» гэж хариулсан. Чи ч найзаасаа «为什么？» гэж асуугаад үз!",
+  "teacher_notes": "Номын яриа: 为什么？ 因为今天我是大熊猫。 Test: 为什么月亮晚上出来？",
+  "examples": [
+   {
+    "chinese": "为什么？",
+    "pinyin": "Wèi shénme?",
+    "mongolian": "Яагаад?"
+   },
+   {
+    "chinese": "因为今天我是大熊猫。",
+    "pinyin": "Yīnwèi jīntiān wǒ shì dà xióngmāo.",
+    "mongolian": "Учир нь өнөөдөр би том панда шүү дээ."
+   },
+   {
+    "chinese": "为什么月亮晚上出来？",
+    "pinyin": "Wèi shénme yuèliang wǎnshang chūlái?",
+    "mongolian": "Сар яагаад шөнө гардаг вэ?"
+   },
+   {
+    "chinese": "女孩为什么要穿白裙子和黑裤子？",
+    "pinyin": "Nǚhái wèi shénme yào chuān bái qúnzi hé hēi kùzi?",
+    "mongolian": "Охин яагаад цагаан банзал, хар өмд өмсөх гэж байна вэ?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "因为什么？",
+    "right": "为什么？",
+    "why": "Асуухдаа «为什么», хариулахдаа «因为»."
+   }
+  ],
+  "check": {
+   "question": "Ээж «为什么？» гэвэл хариулахдаа:",
+   "options": [
+    "哪件衣服？",
+    "它长得很快。",
+    "因为今天我是大熊猫。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "________ 今天我是大熊猫。",
+    "options": [
+     "为什么",
+     "哪件",
+     "因为"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 因为 = учир нь.",
+    "explanation_wrong_mn": "Хариулахдаа 因为 гэнэ."
+   },
+   {
+    "type": "choice",
+    "question": "«Яагаад?» хятадаар:",
+    "options": [
+     "因为……",
+     "你好吗？",
+     "为什么？"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 为什么 = яагаад.",
+    "explanation_wrong_mn": "为什么 = яагаад, 因为 = учир нь."
+   },
+   {
+    "type": "judge",
+    "question": "«因为» гэдгээр асуулт эхэлдэг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "false",
+    "explanation_correct_mn": "Зөв! 因为 нь хариултыг эхлүүлнэ.",
+    "explanation_wrong_mn": "Асуулт «为什么», хариулт «因为»."
+   }
+  ]
+ }
+]

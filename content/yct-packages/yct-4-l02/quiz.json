@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Цаг хугацаа» хятадаар аль нь вэ?",
+  "options": [
+   "时间",
+   "学校",
+   "小时",
+   "分钟"
+  ],
+  "correct_answer": "时间",
+  "explanation": "时间 (shíjiān) = цаг хугацаа.",
+  "order_index": 1,
+  "id": "yct-4-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хагас» хятадаар аль нь вэ?",
+  "options": [
+   "难",
+   "读",
+   "懂",
+   "半"
+  ],
+  "correct_answer": "半",
+  "explanation": "半 (bàn) = хагас.",
+  "order_index": 2,
+  "id": "yct-4-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Унших» хятадаар аль нь вэ?",
+  "options": [
+   "难",
+   "懂",
+   "题",
+   "读"
+  ],
+  "correct_answer": "读",
+  "explanation": "读 (dú) = унших.",
+  "order_index": 3,
+  "id": "yct-4-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хэцүү» хятадаар аль нь вэ?",
+  "options": [
+   "时间",
+   "难",
+   "懂",
+   "半"
+  ],
+  "correct_answer": "难",
+  "explanation": "难 (nán) = хэцүү.",
+  "order_index": 4,
+  "id": "yct-4-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«小时» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "цаг (60 минут)",
+   "хагас",
+   "минут",
+   "бодлого"
+  ],
+  "correct_answer": "цаг (60 минут)",
+  "explanation": "小时 (xiǎoshí) = цаг. 一个小时 = 60 минут.",
+  "order_index": 5,
+  "id": "yct-4-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«题» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хэцүү",
+   "асуулт, бодлого",
+   "ойлгох",
+   "хагас"
+  ],
+  "correct_answer": "асуулт, бодлого",
+  "explanation": "题 (tí) = асуулт, бодлого. 做题 = бодлого бодох.",
+  "order_index": 6,
+  "id": "yct-4-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«懂» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сонсох",
+   "ойлгох",
+   "унших",
+   "бичих"
+  ],
+  "correct_answer": "ойлгох",
+  "explanation": "懂 (dǒng) = ойлгох. 不懂 = ойлгохгүй.",
+  "order_index": 7,
+  "id": "yct-4-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«分钟» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "минут",
+   "өдөр",
+   "жил",
+   "цаг"
+  ],
+  "correct_answer": "минут",
+  "explanation": "分钟 (fēnzhōng) = минут.",
+  "order_index": 8,
+  "id": "yct-4-l02-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shíjiān» гэж уншдаг үг:",
+  "options": [
+   "时间",
+   "分钟",
+   "学校",
+   "小时"
+  ],
+  "correct_answer": "时间",
+  "explanation": "时间 = shíjiān = цаг хугацаа.",
+  "order_index": 9,
+  "id": "yct-4-l02-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xiǎoshí» гэж уншдаг үг:",
+  "options": [
+   "朋友",
+   "时间",
+   "小时",
+   "分钟"
+  ],
+  "correct_answer": "小时",
+  "explanation": "小时 = xiǎoshí = цаг.",
+  "order_index": 10,
+  "id": "yct-4-l02-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dǒng» гэж уншдаг үг:",
+  "options": [
+   "难",
+   "读",
+   "半",
+   "懂"
+  ],
+  "correct_answer": "懂",
+  "explanation": "懂 = dǒng = ойлгох.",
+  "order_index": 11,
+  "id": "yct-4-l02-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nán» гэж уншдаг үг:",
+  "options": [
+   "读",
+   "题",
+   "半",
+   "难"
+  ],
+  "correct_answer": "难",
+  "explanation": "难 = nán = хэцүү.",
+  "order_index": 12,
+  "id": "yct-4-l02-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи хятад хэл хэр удаан сурч байна?» хятадаар:",
+  "options": [
+   "这个题我不懂。",
+   "你觉得汉语难不难？",
+   "一年半了。",
+   "你学汉语多长时间了？"
+  ],
+  "correct_answer": "你学汉语多长时间了？",
+  "explanation": "多长时间 = хэр удаан.",
+  "order_index": 13,
+  "id": "yct-4-l02-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你觉得汉语难不难？» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Чиний бодлоор хятад хэл хэцүү юу?",
+   "Энэ бодлогыг би ойлгохгүй байна.",
+   "Чи хятад хэл хэр удаан сурч байна?",
+   "Нэг цаг хагас хэдэн минут вэ?"
+  ],
+  "correct_answer": "Чиний бодлоор хятад хэл хэцүү юу?",
+  "explanation": "难不难 = хэцүү юү.",
+  "order_index": 14,
+  "id": "yct-4-l02-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д Мари хятад хэл хэр удаан сурч байна вэ?",
+  "options": [
+   "Хагас жил",
+   "Нэг жил хагас",
+   "Нэг сар",
+   "Гурван жил"
+  ],
+  "correct_answer": "Нэг жил хагас",
+  "explanation": "一年半了 = нэг жил хагас.",
+  "order_index": 15,
+  "id": "yct-4-l02-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Мари хятад хэлний аль хэсэг хамгийн хэцүү гэсэн бэ?",
+  "options": [
+   "Сонсох",
+   "Ханз бичих",
+   "Унших",
+   "Ярих"
+  ],
+  "correct_answer": "Ханз бичих",
+  "explanation": "写字很难 = ханз бичих хэцүү.",
+  "order_index": 16,
+  "id": "yct-4-l02-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你学汉语多长（ ）了？",
+  "options": [
+   "小时",
+   "学校",
+   "时间",
+   "分钟"
+  ],
+  "correct_answer": "时间",
+  "explanation": "多长时间 = хэр удаан.",
+  "order_index": 17,
+  "id": "yct-4-l02-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一个（ ）是60分钟。",
+  "options": [
+   "年",
+   "读",
+   "时间",
+   "小时"
+  ],
+  "correct_answer": "小时",
+  "explanation": "一个小时 = 60 минут.",
+  "order_index": 18,
+  "id": "yct-4-l02-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一个（ ）小时是90分钟。",
+  "options": [
+   "读",
+   "半",
+   "时间",
+   "难"
+  ],
+  "correct_answer": "半",
+  "explanation": "一个半小时 = нэг цаг хагас.",
+  "order_index": 19,
+  "id": "yct-4-l02-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "汉语难（ ）难？",
+  "options": [
+   "没",
+   "了",
+   "吗",
+   "不"
+  ],
+  "correct_answer": "不",
+  "explanation": "难不难 = хэцүү юү.",
+  "order_index": 20,
+  "id": "yct-4-l02-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Нэг цаг хагас хэдэн минут вэ?",
+  "options": [
+   "90分钟",
+   "60分钟",
+   "30分钟",
+   "120分钟"
+  ],
+  "correct_answer": "90分钟",
+  "explanation": "60 + 30 = 90.",
+  "order_index": 21,
+  "id": "yct-4-l02-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хагас цаг хэдэн минут вэ?",
+  "options": [
+   "60分钟",
+   "15分钟",
+   "90分钟",
+   "30分钟"
+  ],
+  "correct_answer": "30分钟",
+  "explanation": "半个小时 = 30 минут.",
+  "order_index": 22,
+  "id": "yct-4-l02-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Хоёр цаг хагас хэдэн минут вэ?",
+  "options": [
+   "210分钟",
+   "150分钟",
+   "120分钟",
+   "90分钟"
+  ],
+  "correct_answer": "150分钟",
+  "explanation": "120 + 30 = 150.",
+  "order_index": 23,
+  "id": "yct-4-l02-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Гурван цаг хагас хэдэн минут вэ?",
+  "options": [
+   "90分钟",
+   "330分钟",
+   "180分钟",
+   "210分钟"
+  ],
+  "correct_answer": "210分钟",
+  "explanation": "180 + 30 = 210.",
+  "order_index": 24,
+  "id": "yct-4-l02-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Багш «你学汉语多长时间了？» гэж асуулаа. Чи хоёр жил сурсан бол:",
+  "options": [
+   "不懂。",
+   "很难。",
+   "两年了。",
+   "太好了！"
+  ],
+  "correct_answer": "两年了。",
+  "explanation": "Хугацаа + 了 гэж хариулна.",
+  "order_index": 25,
+  "id": "yct-4-l02-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «汉语难不难？» гэж асуулаа. Чи тийм ч хэцүү биш гэж бодвол:",
+  "options": [
+   "一年半了。",
+   "我不懂。",
+   "不太难。",
+   "是90分钟。"
+  ],
+  "correct_answer": "不太难。",
+  "explanation": "不太难 = тийм ч хэцүү биш.",
+  "order_index": 26,
+  "id": "yct-4-l02-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Бодлогоо ойлгохгүй байна. Яаж хэлэх вэ?",
+  "options": [
+   "你懂了吗？",
+   "这个题我不懂。",
+   "这个题太好了。",
+   "一个小时。"
+  ],
+  "correct_answer": "这个题我不懂。",
+  "explanation": "不懂 = ойлгохгүй.",
+  "order_index": 27,
+  "id": "yct-4-l02-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Үлгэрт «五个半小时是多少分钟？» гэсэн асуултын зөв хариу аль нь вэ?",
+  "options": [
+   "不到1分钟",
+   "330分钟",
+   "150分钟",
+   "90分钟"
+  ],
+  "correct_answer": "330分钟",
+  "explanation": "5 × 60 + 30 = 330.",
+  "order_index": 28,
+  "id": "yct-4-l02-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

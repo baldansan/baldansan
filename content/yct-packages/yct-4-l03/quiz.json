@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Нээх, онгойлгох» хятадаар аль нь вэ?",
+  "options": [
+   "开",
+   "卖",
+   "关",
+   "买"
+  ],
+  "correct_answer": "开",
+  "explanation": "开 (kāi) = нээх.",
+  "order_index": 1,
+  "id": "yct-4-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хаах» хятадаар аль нь вэ?",
+  "options": [
+   "开",
+   "完",
+   "就",
+   "关"
+  ],
+  "correct_answer": "关",
+  "explanation": "关 (guān) = хаах.",
+  "order_index": 2,
+  "id": "yct-4-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хаалга» хятадаар аль нь вэ?",
+  "options": [
+   "商店",
+   "杯子",
+   "学校",
+   "门"
+  ],
+  "correct_answer": "门",
+  "explanation": "门 (mén) = хаалга.",
+  "order_index": 3,
+  "id": "yct-4-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Аяга» хятадаар аль нь вэ?",
+  "options": [
+   "朋友",
+   "杯子",
+   "水果",
+   "门"
+  ],
+  "correct_answer": "杯子",
+  "explanation": "杯子 (bēizi) = аяга.",
+  "order_index": 4,
+  "id": "yct-4-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Үд дунд» хятадаар аль нь вэ?",
+  "options": [
+   "中午",
+   "下午",
+   "早上",
+   "晚上"
+  ],
+  "correct_answer": "中午",
+  "explanation": "中午 (zhōngwǔ) = үд дунд.",
+  "order_index": 5,
+  "id": "yct-4-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«卖» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "нээх",
+   "зарах",
+   "хаах",
+   "авах"
+  ],
+  "correct_answer": "зарах",
+  "explanation": "卖 (mài) = зарах. 买 = авах.",
+  "order_index": 6,
+  "id": "yct-4-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«完» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хаалга",
+   "дуусах",
+   "нээх",
+   "аль хэдийнэ"
+  ],
+  "correct_answer": "дуусах",
+  "explanation": "完 (wán) = дуусах. 卖完了 = зарагдаж дууссан.",
+  "order_index": 7,
+  "id": "yct-4-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«就» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "аль хэдийнэ, л",
+   "үд дунд",
+   "аяга",
+   "дуусах"
+  ],
+  "correct_answer": "аль хэдийнэ, л",
+  "explanation": "就 (jiù) = аль хэдийнэ. 八点就开门 = найман цагт л нээгддэг.",
+  "order_index": 8,
+  "id": "yct-4-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bēizi» гэж уншдаг үг:",
+  "options": [
+   "杯子",
+   "桌子",
+   "椅子",
+   "孩子"
+  ],
+  "correct_answer": "杯子",
+  "explanation": "杯子 = bēizi = аяга.",
+  "order_index": 9,
+  "id": "yct-4-l03-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhōngwǔ» гэж уншдаг үг:",
+  "options": [
+   "中国",
+   "下午",
+   "中午",
+   "早上"
+  ],
+  "correct_answer": "中午",
+  "explanation": "中午 = zhōngwǔ = үд дунд.",
+  "order_index": 10,
+  "id": "yct-4-l03-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «kāimén» гэж уншдаг үг:",
+  "options": [
+   "大门",
+   "关门",
+   "同学",
+   "开门"
+  ],
+  "correct_answer": "开门",
+  "explanation": "开门 = kāimén = хаалга нээх, нээгдэх.",
+  "order_index": 11,
+  "id": "yct-4-l03-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «mài» гэж уншдаг үг:",
+  "options": [
+   "去",
+   "来",
+   "买",
+   "卖"
+  ],
+  "correct_answer": "卖",
+  "explanation": "卖 = mài = зарах. 买 = mǎi = авах.",
+  "order_index": 12,
+  "id": "yct-4-l03-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Дэлгүүр хэдэн цагт нээгддэг вэ?» хятадаар:",
+  "options": [
+   "商店在哪儿？",
+   "商店几点关门？",
+   "商店卖什么？",
+   "商店几点开门？"
+  ],
+  "correct_answer": "商店几点开门？",
+  "explanation": "几点 = хэдэн цаг, 开门 = нээгдэх.",
+  "order_index": 13,
+  "id": "yct-4-l03-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«早上八点半就开门。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Өглөө найман цаг хагаст л нээгддэг.",
+   "Үд дунд хаалгаа хаадаг.",
+   "Орой найман цагт хаагддаг.",
+   "Дэлгүүр зарагдсан."
+  ],
+  "correct_answer": "Өглөө найман цаг хагаст л нээгддэг.",
+  "explanation": "早上 = өглөө, 八点半 = найман цаг хагас, 就开门 = л нээгддэг.",
+  "order_index": 14,
+  "id": "yct-4-l03-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д дэлгүүр хэдэн цагт хаагддаг вэ?",
+  "options": [
+   "Үд дунд",
+   "Үдээс хойш гурван цагт",
+   "Орой есөн цагт",
+   "Өглөө найман цагт"
+  ],
+  "correct_answer": "Үдээс хойш гурван цагт",
+  "explanation": "中午不关门，但是下午三点就关门。",
+  "order_index": 15,
+  "id": "yct-4-l03-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т худалдагч «老虎杯子都卖完了» гэхэд охин юу авах гэсэн бэ?",
+  "options": [
+   "Хоёр муур",
+   "Барын зурагтай хоёр аяга",
+   "Хоёр алим",
+   "Хоёр ном"
+  ],
+  "correct_answer": "Барын зурагтай хоёр аяга",
+  "explanation": "我买两个老虎杯子。",
+  "order_index": 16,
+  "id": "yct-4-l03-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "早上八点半（ ）开门。",
+  "options": [
+   "吗",
+   "了",
+   "就",
+   "吧"
+  ],
+  "correct_answer": "就",
+  "explanation": "就开门 = л нээгддэг.",
+  "order_index": 17,
+  "id": "yct-4-l03-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "中午不关门，（ ）下午三点就关门。",
+  "options": [
+   "每",
+   "太",
+   "也",
+   "但是"
+  ],
+  "correct_answer": "但是",
+  "explanation": "但是 = гэхдээ.",
+  "order_index": 18,
+  "id": "yct-4-l03-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你快去（ ）！",
+  "options": [
+   "呢",
+   "吧",
+   "了",
+   "吗"
+  ],
+  "correct_answer": "吧",
+  "explanation": "去吧 = яв даа.",
+  "order_index": 19,
+  "id": "yct-4-l03-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老虎杯子都卖（ ）了。",
+  "options": [
+   "开",
+   "门",
+   "关",
+   "完"
+  ],
+  "correct_answer": "完",
+  "explanation": "卖完了 = зарагдаж дууссан.",
+  "order_index": 20,
+  "id": "yct-4-l03-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "商店几点（ ）门？(нээгдэх)",
+  "options": [
+   "开",
+   "关",
+   "买",
+   "卖"
+  ],
+  "correct_answer": "开",
+  "explanation": "开门 = нээгдэх.",
+  "order_index": 21,
+  "id": "yct-4-l03-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би бичиж дууслаа» хятадаар:",
+  "options": [
+   "我写就了。",
+   "我写开了。",
+   "我完写了。",
+   "我写完了。"
+  ],
+  "correct_answer": "我写完了。",
+  "explanation": "写完了 = бичиж дууслаа.",
+  "order_index": 22,
+  "id": "yct-4-l03-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«关» ба «开»-ийн ялгаа:",
+  "options": [
+   "хоёулаа «зарах»",
+   "关 = хаах, 开 = нээх",
+   "关 = нээх, 开 = хаах",
+   "хоёулаа «авах»"
+  ],
+  "correct_answer": "关 = хаах, 开 = нээх",
+  "explanation": "关 = хаах, 开 = нээх. Хоёр эсрэг утгатай.",
+  "order_index": 23,
+  "id": "yct-4-l03-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«买» ба «卖»-ийн ялгаа:",
+  "options": [
+   "хоёулаа «авах»",
+   "хоёулаа «зарах»",
+   "买 = зарах, 卖 = авах",
+   "买 = авах, 卖 = зарах"
+  ],
+  "correct_answer": "买 = авах, 卖 = зарах",
+  "explanation": "买 (mǎi) = авах, 卖 (mài) = зарах.",
+  "order_index": 24,
+  "id": "yct-4-l03-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дэлгүүр хэдэн цагт нээгддэгийг асуух нь:",
+  "options": [
+   "这个不是吗？",
+   "老虎杯子都卖完了。",
+   "商店几点开门？",
+   "你快去吧。"
+  ],
+  "correct_answer": "商店几点开门？",
+  "explanation": "几点开门 = хэдэн цагт нээгдэх.",
+  "order_index": 25,
+  "id": "yct-4-l03-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Худалдагч «Бүгд зарагдаж дууссан» гэж хэлэх нь:",
+  "options": [
+   "都开门了。",
+   "就关门。",
+   "都卖完了。",
+   "都不是。"
+  ],
+  "correct_answer": "都卖完了。",
+  "explanation": "卖完了 = зарагдаж дууссан.",
+  "order_index": 26,
+  "id": "yct-4-l03-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дэлгүүр үд дунд хаалгаа хаадаггүй гэж хэлэх нь:",
+  "options": [
+   "中午卖完了。",
+   "中午不关门。",
+   "中午关门吗？",
+   "中午就开门。"
+  ],
+  "correct_answer": "中午不关门。",
+  "explanation": "不关门 = хаадаггүй.",
+  "order_index": 27,
+  "id": "yct-4-l03-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Өглөө зургаан цагт л босчихсон гэж хэлэх нь:",
+  "options": [
+   "我就六点吗。",
+   "我六点就起床了。",
+   "我六点起床吗。",
+   "我起床六点。"
+  ],
+  "correct_answer": "我六点就起床了。",
+  "explanation": "цаг + 就 + үйл үг.",
+  "order_index": 28,
+  "id": "yct-4-l03-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Үлгэрт сармагчин хаалгаа яаж хаасан бэ?",
+  "options": [
+   "Хаалгыг орхисон",
+   "Хаалгыг зарсан",
+   "Дэлгүүр хаасан",
+   "Хаалганд орсон юмыг гаргаж хаяад"
+  ],
+  "correct_answer": "Хаалганд орсон юмыг гаргаж хаяад",
+  "explanation": "Сармагчин «这是什么东西？» гээд юмыг аваад хаяхад хаалга хаагдсан.",
+  "order_index": 29,
+  "id": "yct-4-l03-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

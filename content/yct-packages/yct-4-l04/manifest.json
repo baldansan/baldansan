@@ -1,0 +1,193 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l04",
+ "hskLevel": 2,
+ "lessonNumber": 4,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我感冒了。",
+ "mongolianTitle": "Би ханиад хүрлээ",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第4课 (сурах бичиг + CD аудио 04-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-04-text-song.mp3",
+  "dialogues": "audio/yct-4-04-02.mp3",
+  "words": "audio/yct-4-04-01.mp3",
+  "song": "audio/yct-4-04-03.mp3",
+  "story": "audio/yct-4-04-04.mp3",
+  "test": "audio/yct-4-04-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l04",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我感冒了。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "喂，老师您好！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你吃东西了吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "早上好，早上好",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "狐狸生病了吗？",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "狐狸生病了吗？ · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-shenti",
+    "file": "images/w-shenti.jpg",
+    "title": "身体",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shufu",
+    "file": "images/w-shufu.jpg",
+    "title": "舒服",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shengbing",
+    "file": "images/w-shengbing.jpg",
+    "title": "生病",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ganmao",
+    "file": "images/w-ganmao.jpg",
+    "title": "感冒",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiuxi",
+    "file": "images/w-xiuxi.jpg",
+    "title": "休息",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-teng",
+    "file": "images/w-teng.jpg",
+    "title": "疼",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yao",
+    "file": "images/w-yao.jpg",
+    "title": "药",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yidianr",
+    "file": "images/w-yidianr.jpg",
+    "title": "一点儿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5a",
+    "file": "images/t5a.png",
+    "title": "Test 5a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5b",
+    "file": "images/t5b.png",
+    "title": "Test 5b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5c",
+    "file": "images/t5c.png",
+    "title": "Test 5c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5d",
+    "file": "images/t5d.png",
+    "title": "Test 5d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L4)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "身体",
+  "pinyin": "shēntǐ",
+  "mongolian": "бие, эрүүл мэнд",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "你的身体好不好？",
+  "examplePinyin": "Nǐ de shēntǐ hǎo bu hǎo?",
+  "exampleMongolian": "Чиний бие сайн уу?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "舒服",
+  "pinyin": "shūfu",
+  "mongolian": "эвтэйхэн, тухтай (不舒服 = бие муу)",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "你哪儿不舒服？",
+  "examplePinyin": "Nǐ nǎr bù shūfu?",
+  "exampleMongolian": "Чи хаана нь эвгүй байна вэ?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "生病",
+  "pinyin": "shēngbìng",
+  "mongolian": "өвдөх, өвчтэй болох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "他生病了。",
+  "examplePinyin": "Tā shēngbìng le.",
+  "exampleMongolian": "Тэр өвдсөн.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "感冒",
+  "pinyin": "gǎnmào",
+  "mongolian": "ханиад хүрэх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我感冒了。",
+  "examplePinyin": "Wǒ gǎnmào le.",
+  "exampleMongolian": "Би ханиад хүрсэн.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "休息",
+  "pinyin": "xiūxi",
+  "mongolian": "амрах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "在家休息吧。",
+  "examplePinyin": "Zài jiā xiūxi ba.",
+  "exampleMongolian": "Гэртээ амраарай.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "疼",
+  "pinyin": "téng",
+  "mongolian": "өвдөх (бие нь өвдөх)",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我头疼。",
+  "examplePinyin": "Wǒ tóu téng.",
+  "exampleMongolian": "Миний толгой өвдөж байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "药",
+  "pinyin": "yào",
+  "mongolian": "эм",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "吃一点儿药吧。",
+  "examplePinyin": "Chī yìdiǎnr yào ba.",
+  "exampleMongolian": "Жаахан эм уугаарай.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "一点儿",
+  "pinyin": "yìdiǎnr",
+  "mongolian": "жаахан",
+  "notes": "тоо · гол үг",
+  "exampleChinese": "我喝了一点儿水。",
+  "examplePinyin": "Wǒ hēle yìdiǎnr shuǐ.",
+  "exampleMongolian": "Би жаахан ус уусан.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 8
+ }
+]

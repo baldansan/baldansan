@@ -1,0 +1,111 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "爸爸为什么不休息？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher Camel (yellow camel with glasses) stands with a little girl camel calf and a yellow calf boy in front of a front door; an adult camel father in a blue jacket stands at the door holding a briefcase, looking tired and busy. A speech bubble with the Chinese text 为什么 in large clear black font. No English text anywhere in the image.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-dianying.jpg",
+  "aspect": "1:1",
+  "title": "电影",
+  "section": "vocabulary",
+  "prompt": "A cozy movie theater scene: the yellow calf boy and the girl calf sit with popcorn watching a big screen, a classic film reel icon above them. No English text anywhere in the image.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-weishenme.jpg",
+  "aspect": "1:1",
+  "title": "为什么",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy with green hat scratches his head with a big question mark floating above him, curious and puzzled expression. No English text anywhere in the image.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-mang.jpg",
+  "aspect": "1:1",
+  "title": "忙",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy has many arms at once: sweeping, carrying a bucket, holding papers and a phone, looking very busy and sweaty, a funny cartoon scene. No English text anywhere in the image.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shiqing.jpg",
+  "aspect": "1:1",
+  "title": "事情",
+  "section": "vocabulary",
+  "prompt": "A big pile of tasks around the girl calf: a stack of books, a broom, a laundry basket, a to-do list scroll, she looks at them with wide eyes. No English text anywhere in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yisi.jpg",
+  "aspect": "1:1",
+  "title": "意思",
+  "section": "vocabulary",
+  "prompt": "Teacher Camel points to a big magnifying glass over a mysterious signboard; a small thought bubble with a lightbulb shows he is explaining the meaning. No English text anywhere in the image.",
+  "chars": [
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yinweisuoyi.jpg",
+  "aspect": "1:1",
+  "title": "因为……所以……",
+  "section": "vocabulary",
+  "prompt": "Two panels side by side: left, dark rain clouds and rain; right, the girl calf holding a red umbrella happily, with a clear arrow from left to right showing cause and effect. No English text anywhere in the image.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "爸爸为什么不休息？",
+  "section": "dialogue",
+  "prompt": "At home entrance in the evening, a girl calf asks her adult camel mother; an adult camel father in a blue jacket holds a briefcase at the door waving tiredly. Speech bubble with the Chinese text 爸爸为什么不休息？ in large clear black font. No English text anywhere in the image.",
+  "chars": [
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你看过这个电影吗？",
+  "section": "dialogue",
+  "prompt": "Two calf boys (yellow calf in blue vest and brown calf with green hat) stand in front of a cinema poster with hands playing rock-paper-scissors. Speech bubble with the Chinese text 你看过这个电影吗？ in large clear black font. No English text anywhere in the image.",
+  "chars": [
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "每个人都很忙",
+  "section": "story",
+  "role": "illustration",
+  "prompt": "A funny phone call scene: an uncle camel with headset on the phone, and in a thought bubble a calf boy hiding under a bed holding a phone, with tiny police camels looking around the room. Chinese text 每个人都很忙 as a title banner in large clear black font. No English text anywhere in the image.",
+  "chars": [
+   "bor",
+   "temee"
+  ]
+ }
+]

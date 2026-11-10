@@ -1,0 +1,86 @@
+[
+ {
+  "chinese": "教室",
+  "pinyin": "jiàoshì",
+  "mongolian": "анги танхим",
+  "notes": "анги · гол үг",
+  "exampleChinese": "你去过我们的新教室吗？",
+  "examplePinyin": "Nǐ qùguo wǒmen de xīn jiàoshì ma?",
+  "exampleMongolian": "Чи манай шинэ ангид очиж үзсэн үү?",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "走",
+  "pinyin": "zǒu",
+  "mongolian": "явах, алхах",
+  "notes": "хөдөлгөөн · гол үг",
+  "exampleChinese": "好，走吧。",
+  "examplePinyin": "Hǎo, zǒu ba.",
+  "exampleMongolian": "За, явцгаая.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "过",
+  "pinyin": "guo",
+  "mongolian": "-сан, -ж үзсэн (урьд хийж үзсэнийг хэлнэ)",
+  "notes": "нэмэлт үг · гол үг",
+  "exampleChinese": "我还没去过。",
+  "examplePinyin": "Wǒ hái méi qùguo.",
+  "exampleMongolian": "Би хараахан очиж үзээгүй.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "前",
+  "pinyin": "qián",
+  "mongolian": "өмнө, урд",
+  "notes": "чиглэл · гол үг",
+  "exampleChinese": "前边都是新教室。",
+  "examplePinyin": "Qiánbian dōu shì xīn jiàoshì.",
+  "exampleMongolian": "Урд талд бүгд шинэ ангиуд байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "左",
+  "pinyin": "zuǒ",
+  "mongolian": "зүүн",
+  "notes": "чиглэл · гол үг",
+  "exampleChinese": "左边是一年级的教室。",
+  "examplePinyin": "Zuǒbian shì yī niánjí de jiàoshì.",
+  "exampleMongolian": "Зүүн талд 1-р ангийн танхим байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "右",
+  "pinyin": "yòu",
+  "mongolian": "баруун",
+  "notes": "чиглэл · гол үг",
+  "exampleChinese": "右边是二年级的教室。",
+  "examplePinyin": "Yòubian shì èr niánjí de jiàoshì.",
+  "exampleMongolian": "Баруун талд 2-р ангийн танхим байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "后",
+  "pinyin": "hòu",
+  "mongolian": "ард, хойно",
+  "notes": "чиглэл · гол үг",
+  "exampleChinese": "我们的教室在二年级的后边。",
+  "examplePinyin": "Wǒmen de jiàoshì zài èr niánjí de hòubian.",
+  "exampleMongolian": "Манай танхим 2-р ангийн танхимын ард байна.",
+  "hskLevel": "YCT 4",
+  "keyWord": true,
+  "orderIndex": 7
+ }
+]

@@ -1,0 +1,125 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "早上八点半就开门。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses, a yellow camel calf boy and a camel calf girl standing in front of a cute shop with an OPEN sign, a big clock showing 8:30 above; speech bubble with the Chinese text 早上八点半就开门。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-kai.jpg",
+  "aspect": "1:1",
+  "title": "开",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy pushing open a big wooden shop door with both hands, bright morning light pouring in, happy face. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-guan.jpg",
+  "aspect": "1:1",
+  "title": "关",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl in a yellow dress with a pink ribbon gently closing a big wooden door, the door nearly shut, sunset light. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-men.jpg",
+  "aspect": "1:1",
+  "title": "门",
+  "section": "vocabulary",
+  "prompt": "A big red wooden door with golden handles standing alone in a sunny courtyard, a little camel calf boy pointing at it. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-beizi.jpg",
+  "aspect": "1:1",
+  "title": "杯子",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf boy in a green hat holding a cute red mug with a small tiger picture, smiling. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhongwu.jpg",
+  "aspect": "1:1",
+  "title": "中午",
+  "section": "vocabulary",
+  "prompt": "A bright noon sun high in the sky above a school yard, a camel calf girl in a yellow dress eating lunch at a table, a clock showing 12:00. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-mai.jpg",
+  "aspect": "1:1",
+  "title": "卖",
+  "section": "vocabulary",
+  "prompt": "A teacher camel with glasses as a friendly shopkeeper behind a counter selling mugs and fruit to a happy camel calf boy. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-wan.jpg",
+  "aspect": "1:1",
+  "title": "完",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy lifting up an empty shelf and empty basket, with a surprised face, a few crumbs left. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jiu.jpg",
+  "aspect": "1:1",
+  "title": "就",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy in blue vest already standing at a shop door early in the morning, with a big clock showing 8:30 and the sunrise behind him. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "我想去买礼物，商店几点开门？",
+  "section": "dialogue",
+  "prompt": "A yellow camel calf boy and a camel calf girl in a yellow dress on a street in front of a small shop, the boy pointing at the shop, the girl pointing at a clock; speech bubble with the Chinese text 我想去买礼物，商店几点开门？ in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "我买两个老虎杯子。",
+  "section": "dialogue",
+  "prompt": "A camel calf girl in a yellow dress with a pink ribbon at a shop counter; a shopkeeper camel in a green apron shows an empty shelf, with a tiger mug picture and a cat mug on the shelf; speech bubble with the Chinese text 我买两个老虎杯子。 in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "门怎么关不上呢？",
+  "section": "story",
+  "prompt": "A funny little monkey in a purple shirt holding a soccer ball, puzzled, trying to close a big yellow wooden door that will not shut because something is stuck at the bottom; speech bubble with the Chinese text 门怎么关不上呢？ in large clear black font. No English text.",
+  "chars": []
+ }
+]

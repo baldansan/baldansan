@@ -1,0 +1,143 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-4",
+ "lessonId": "yct-4-l05",
+ "hskLevel": 2,
+ "lessonNumber": 5,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "把门关上。",
+ "mongolianTitle": "Хаалгаа хаачих!",
+ "series": "YCT 标准教程 4",
+ "seriesLabel_mn": "YCT 4 — Хүүхдийн хятад хэл (≈HSK2–3)",
+ "source": "YCT 标准教程 4 · 第5课 (сурах бичиг + CD аудио 05-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-4-05-text-song.mp3",
+  "dialogues": "audio/yct-4-05-02.mp3",
+  "words": "audio/yct-4-05-01.mp3",
+  "song": "audio/yct-4-05-03.mp3",
+  "test": "audio/yct-4-05-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-4-l05",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "把门关上。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你在做什么？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "我们今天吃什么？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "奶奶爱吃青菜",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-yu",
+    "file": "images/w-yu.jpg",
+    "title": "鱼",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-cai",
+    "file": "images/w-cai.jpg",
+    "title": "菜",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-guozhi",
+    "file": "images/w-guozhi.jpg",
+    "title": "果汁",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xizao",
+    "file": "images/w-xizao.jpg",
+    "title": "洗澡",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jin",
+    "file": "images/w-jin.jpg",
+    "title": "进",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ta",
+    "file": "images/w-ta.jpg",
+    "title": "它",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ba",
+    "file": "images/w-ba.jpg",
+    "title": "把",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2d",
+    "file": "images/t2d.png",
+    "title": "Test 2d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L5)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,248 @@
+[
+ {
+  "point": "我们有一百零八个学生。 · 百 · 千 · 零",
+  "gloss_mn": "«Манайд 108 сурагч бий» — зуу, мянгат тоо",
+  "structure": "тоо + 百/千 · дунд тэг бол 零",
+  "teacher_mn": "Зуу бол «百», мянга бол «千». 二百 = 200, 三千 = 3000. Дунд нь тэг байвал «零» гэж хэлнэ: 108 = 一百零八. Харин 1200 = 一千二百, тэг хэлэхгүй. Гараараа тэг зурж хэлээд үз!",
+  "teacher_notes": "Key sentence: 我们有一百零八个学生。 Chant: 一百有两个零，一千有三个零。",
+  "examples": [
+   {
+    "chinese": "我们有一百零八个学生。",
+    "pinyin": "Wǒmen yǒu yì bǎi líng bā ge xuésheng.",
+    "mongolian": "Манайд 108 сурагч бий."
+   },
+   {
+    "chinese": "一千八百",
+    "pinyin": "yì qiān bā bǎi",
+    "mongolian": "1800"
+   },
+   {
+    "chinese": "电脑和手机要一千二百块。",
+    "pinyin": "Diànnǎo hé shǒujī yào yì qiān èr bǎi kuài.",
+    "mongolian": "Компьютер, гар утас хоёр 1200 юань болно."
+   },
+   {
+    "chinese": "一百有两个零，一千有三个零。",
+    "pinyin": "Yì bǎi yǒu liǎng ge líng, yì qiān yǒu sān ge líng.",
+    "mongolian": "100-д хоёр тэг, 1000-д гурван тэг бий."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "一百八个学生",
+    "right": "一百零八个学生",
+    "why": "108-д дунд нь тэг байгаа тул «零» хэлнэ."
+   }
+  ],
+  "check": {
+   "question": "108 хятадаар:",
+   "options": [
+    "一千零八",
+    "一百八",
+    "一百零八"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "一百 ________ 八 (108)",
+    "options": [
+     "少",
+     "千",
+     "零"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! Дунд нь тэг тул 零.",
+    "explanation_wrong_mn": "零 = тэг."
+   },
+   {
+    "type": "choice",
+    "question": "«Мянга» хятадаар:",
+    "options": [
+     "百",
+     "千",
+     "少"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 千 = мянга.",
+    "explanation_wrong_mn": "百 = зуу, 千 = мянга."
+   },
+   {
+    "type": "judge",
+    "question": "«一百» гэдэг нь 100.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 一百 = 100.",
+    "explanation_wrong_mn": "一百 = 100, 一千 = 1000."
+   }
+  ]
+ },
+ {
+  "point": "你们学校有多少个学生？ · 太多了/太少了",
+  "gloss_mn": "«Хэдэн сурагч байдаг вэ?» — тоо асуух, олон/цөөн гэж хэлэх",
+  "structure": "有多少 + нэр үг? · 太多了 / 太少了 · тоо + 多个",
+  "teacher_mn": "Тоо асуухдаа «多少» гэнэ. Хариуд нь тоогоо хэлнэ. Олон бол «太多了！», цөөн бол «太少了！» гэж гайхна. «一千八百多个» гэвэл 1800 гаруй гэсэн үг.",
+  "teacher_notes": "Яриа 1: 你们学校有多少个学生？ 太少了，……一千八百多个学生。 一千八百？太多了！",
+  "examples": [
+   {
+    "chinese": "你们学校有多少个学生？",
+    "pinyin": "Nǐmen xuéxiào yǒu duōshao ge xuésheng?",
+    "mongolian": "Таны сургуульд хэдэн сурагч байдаг вэ?"
+   },
+   {
+    "chinese": "太少了！",
+    "pinyin": "Tài shǎo le!",
+    "mongolian": "Ёстой цөөхөн юм аа!"
+   },
+   {
+    "chinese": "一千八百？太多了！",
+    "pinyin": "Yì qiān bā bǎi? Tài duō le!",
+    "mongolian": "1800 гэж үү? Ёстой олон юм аа!"
+   },
+   {
+    "chinese": "你有多少钱？",
+    "pinyin": "Nǐ yǒu duōshao qián?",
+    "mongolian": "Чамд хэдэн мөнгө байна?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "你有钱多少？",
+    "right": "你有多少钱？",
+    "why": "«多少» нь асуух үгийнхээ өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Ёстой олон юм аа!» хятадаар:",
+   "options": [
+    "太多了！",
+    "太少了！",
+    "你有多少钱？"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你们学校有 ________ 个学生？",
+    "options": [
+     "一百",
+     "多少",
+     "零"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 多少 = хэдэн.",
+    "explanation_wrong_mn": "多少 асууна, 一百 нь тоо."
+   },
+   {
+    "type": "choice",
+    "question": "1800 сурагчтай сургууль — олон. Гайхаж хэлэх нь:",
+    "options": [
+     "没关系。",
+     "太少了！",
+     "太多了！"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 多 = олон.",
+    "explanation_wrong_mn": "多 = олон, 少 = цөөн."
+   },
+   {
+    "type": "judge",
+    "question": "«少» гэдэг нь «цөөн» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 少 = цөөн.",
+    "explanation_wrong_mn": "少 = цөөн, 多 = олон."
+   }
+  ]
+ },
+ {
+  "point": "我想买…… · 能上网 / 不能上网",
+  "gloss_mn": "«Би авмаар байна» · «интернэтэд орж чадна/чадахгүй»",
+  "structure": "想 + үйл үг · 能/不能 + үйл үг",
+  "teacher_mn": "Авмаар байвал «我想买……» гэж хэл. Шинэ утас интернэтэд орж чадна — «能上网». Муу утас чадахгүй — «不能上网». «能» бол чадна, «不能» бол чадахгүй.",
+  "teacher_notes": "Яриа 2: 我想买一个新电脑。 我的手机不能上网。 Chant: 新电脑能上网。",
+  "examples": [
+   {
+    "chinese": "我想买一个新电脑。",
+    "pinyin": "Wǒ xiǎng mǎi yí ge xīn diànnǎo.",
+    "mongolian": "Би шинэ компьютер авмаар байна."
+   },
+   {
+    "chinese": "我的手机不能上网。",
+    "pinyin": "Wǒ de shǒujī bù néng shàngwǎng.",
+    "mongolian": "Миний гар утас интернэтэд орж чадахгүй."
+   },
+   {
+    "chinese": "新手机能上网。",
+    "pinyin": "Xīn shǒujī néng shàngwǎng.",
+    "mongolian": "Шинэ гар утас интернэтэд орж чадна."
+   },
+   {
+    "chinese": "你有了一千二百块再说吧。",
+    "pinyin": "Nǐ yǒule yì qiān èr bǎi kuài zài shuō ba.",
+    "mongolian": "Чи 1200 юань цуглуулсан хойноо ярья даа."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我的手机上网不能。",
+    "right": "我的手机不能上网。",
+    "why": "«不能» нь «上网»-ийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Шинэ компьютер интернэтэд орж чадна» хятадаар:",
+   "options": [
+    "新电脑不能上网。",
+    "我想买电脑。",
+    "新电脑能上网。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "我的手机 ________ 上网。(чадахгүй)",
+    "options": [
+     "能",
+     "想",
+     "不能"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 不能 = чадахгүй.",
+    "explanation_wrong_mn": "不能 = чадахгүй."
+   },
+   {
+    "type": "choice",
+    "question": "«Би шинэ гар утас авмаар байна» хятадаар:",
+    "options": [
+     "我不能买手机。",
+     "我有一个手机。",
+     "我想买一个新手机。"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 想买 = авмаар байна.",
+    "explanation_wrong_mn": "想 = хүсэх."
+   },
+   {
+    "type": "judge",
+    "question": "«上网» гэдэг нь «интернэтэд орох» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 上网 = интернэтэд орох.",
+    "explanation_wrong_mn": "上网 = интернэтэд орох."
+   }
+  ]
+ }
+]
