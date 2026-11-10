@@ -1,7 +1,7 @@
 import { NotificationsView } from "@/components/engagement/notifications-view";
 
 export const metadata = {
-  title: "Notifications — Бөөндөө Сурцгаая",
+  title: "Мэдэгдэл — Бөөндөө Сурцгаая",
 };
 
 export default function NotificationsPage() {
