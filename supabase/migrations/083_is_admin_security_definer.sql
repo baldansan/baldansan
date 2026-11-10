@@ -11,7 +11,12 @@ begin
     from pg_proc p join pg_namespace n on n.oid = p.pronamespace
     where n.nspname = 'public' and p.proname = 'is_admin' and p.pronargs > 0
   loop
-    execute format('drop function if exists %s cascade', r.sig);
+    begin
+      execute format('drop function if exists %s', r.sig);
+      raise notice 'dropped %', r.sig;
+    exception when dependent_objects_still_exist then
+      raise notice 'KEPT % — бодлого ашиглаж байна (cascade хийгээгүй)', r.sig;
+    end;
   end loop;
 end $$;
 
