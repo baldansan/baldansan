@@ -1,0 +1,647 @@
+[
+  {
+    "type": "cloze",
+    "question": "斯坦福与科恩（　）“马奔跑时蹄子是否着地”进行了辩论。",
+    "options": [
+      "播放",
+      "拦",
+      "围绕",
+      "纪念",
+      "改进"
+    ],
+    "correct_answer": "围绕",
+    "explanation": "围绕 = …-ийг голлон: 围绕……进行辩论. 播放 — цацах; 改进 — сайжруулах; 纪念 — дурсах; 拦 — хаах.",
+    "order_index": 1,
+    "id": "hsk5-l10-q01",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "我怎么劝他都没用，实在（　）不了他。",
+    "options": [
+      "围绕",
+      "说服",
+      "改进",
+      "纪念",
+      "播放"
+    ],
+    "correct_answer": "说服",
+    "explanation": "说服 = ятгах: 说服不了 = ятгаж чадахгүй. 改进 — сайжруулах; 纪念 — дурсах; 播放 — цацах; 围绕 — голлох.",
+    "order_index": 2,
+    "id": "hsk5-l10-q02",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "相片显示：马奔跑时（　）有一蹄着地。",
+    "options": [
+      "毕竟",
+      "兄弟",
+      "逐渐",
+      "始终",
+      "或许"
+    ],
+    "correct_answer": "始终",
+    "explanation": "始终 = эхнээс дуустал үргэлж. 逐渐 — аажмаар; 毕竟 — ямар ч гэсэн; 或许 — магадгүй; 兄弟 — ах дүү.",
+    "order_index": 3,
+    "id": "hsk5-l10-q03",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "这两张照片的（　）很小，几乎看不出来。",
+    "options": [
+      "操场",
+      "瞬间",
+      "棍",
+      "洞",
+      "差距"
+    ],
+    "correct_answer": "差距",
+    "explanation": "差距 = зөрүү, ялгаа. 洞 — нүх; 棍 — саваа; 瞬间 — агшин; 操场 — спорт талбай.",
+    "order_index": 4,
+    "id": "hsk5-l10-q04",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "电视台正在（　）今年的春节晚会。",
+    "options": [
+      "拦",
+      "系",
+      "拍",
+      "播放",
+      "插"
+    ],
+    "correct_answer": "播放",
+    "explanation": "播放 = цацах, тоглуулах. 拍 — зураг авах; 插 — шигтгэх; 系 — уях; 拦 — хаах.",
+    "order_index": 5,
+    "id": "hsk5-l10-q05",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "这座塔是为了（　）那位英雄而建的。",
+    "options": [
+      "奔跑",
+      "说服",
+      "纪念",
+      "争论",
+      "试验"
+    ],
+    "correct_answer": "纪念",
+    "explanation": "纪念 = дурсах. 争论 — маргах; 说服 — ятгах; 试验 — туршилт; 奔跑 — давхих.",
+    "order_index": 6,
+    "id": "hsk5-l10-q06",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "我们要不断（　）工作方法，让效率更高。",
+    "options": [
+      "插",
+      "改进",
+      "拦",
+      "成熟",
+      "围绕"
+    ],
+    "correct_answer": "改进",
+    "explanation": "改进 = сайжруулах: 改进工作/方法. 围绕 — тойрох; 插 — шигтгэх; 拦 — хаах; 成熟 — боловсрох.",
+    "order_index": 7,
+    "id": "hsk5-l10-q07",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "山区的生活条件很（　），但孩子们学习非常努力。",
+    "options": [
+      "成熟",
+      "艰苦",
+      "始终",
+      "重大",
+      "奇迹"
+    ],
+    "correct_answer": "艰苦",
+    "explanation": "艰苦 = хүнд хэцүү: 艰苦的条件. 成熟 — боловсорсон; 重大 — чухал; 奇迹 — гайхамшиг; 始终 — үргэлж.",
+    "order_index": 8,
+    "id": "hsk5-l10-q08",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "他把风筝线（　）在树枝上，然后去吃饭了。",
+    "options": [
+      "插",
+      "系",
+      "拦",
+      "播放",
+      "拍"
+    ],
+    "correct_answer": "系",
+    "explanation": "系 (jì) = уях. 插 — шигтгэх; 拦 — хаах; 拍 — дарах; 播放 — цацах.",
+    "order_index": 9,
+    "id": "hsk5-l10-q09",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "马的四个（　）都不着地，那就成了青蛙了。",
+    "options": [
+      "导演",
+      "洞",
+      "棍",
+      "蹄",
+      "脖子"
+    ],
+    "correct_answer": "蹄",
+    "explanation": "蹄 (蹄子) = туурай. 脖子 — хүзүү; 洞 — нүх; 棍 — саваа; 导演 — найруулагч.",
+    "order_index": 10,
+    "id": "hsk5-l10-q10",
+    "skillTags": [
+      "vocabulary",
+      "hsk5-l10-words"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "别怪他了，他（　）还是个孩子。",
+    "options": [
+      "显得",
+      "毕竟",
+      "始终",
+      "或许",
+      "逐渐"
+    ],
+    "correct_answer": "毕竟",
+    "explanation": "毕竟 = ямар ч гэсэн: 他毕竟还是个孩子 — өмөөрөх шалтгаан. 逐渐 — аажмаар; 或许 — магадгүй; 显得 — харагдах; 始终 — үргэлж.",
+    "order_index": 11,
+    "id": "hsk5-l10-q11",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "再等会儿吧，他（　）马上就到了。",
+    "options": [
+      "逐渐",
+      "毕竟",
+      "始终",
+      "或许",
+      "显示"
+    ],
+    "correct_answer": "或许",
+    "explanation": "或许 = магадгүй (таамаг). 毕竟 — ямар ч гэсэн; 逐渐 — аажмаар; 显示 — харуулах; 始终 — үргэлж.",
+    "order_index": 12,
+    "id": "hsk5-l10-q12",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "来到北京以后，他（　）习惯了这里的生活。",
+    "options": [
+      "显示",
+      "毕竟",
+      "显得",
+      "或许",
+      "逐渐"
+    ],
+    "correct_answer": "逐渐",
+    "explanation": "逐渐 = аажмаар: 逐渐习惯 (аажмаар дасах). Бусад нь утгын хувьд тохирохгүй.",
+    "order_index": 13,
+    "id": "hsk5-l10-q13",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "调查（　），大多数年轻人喜欢网上购物。",
+    "options": [
+      "或许",
+      "显示",
+      "逐渐",
+      "显得",
+      "毕竟"
+    ],
+    "correct_answer": "显示",
+    "explanation": "显示 = харуулах (баримт, дүн). 显得 нь тэмдэг нэр дагуулдаг, судалгааны дүнд хэрэглэгдэхгүй.",
+    "order_index": 14,
+    "id": "hsk5-l10-q14",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "穿上新衣服，她（　）更年轻了。",
+    "options": [
+      "显示",
+      "或许",
+      "始终",
+      "毕竟",
+      "显得"
+    ],
+    "correct_answer": "显得",
+    "explanation": "显得 + тэмдэг нэр (更年轻) = …шиг харагдах. 显示 нь нэр үг/өгүүлбэр дагуулна.",
+    "order_index": 15,
+    "id": "hsk5-l10-q15",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "下面哪个句子的用法是正确的？",
+    "options": [
+      "孩子还小毕竟，别生气。",
+      "孩子毕竟终于还小，别生气。",
+      "孩子毕竟还小，别生气。",
+      "孩子毕竟还小了吗，别生气。"
+    ],
+    "correct_answer": "孩子毕竟还小，别生气。",
+    "explanation": "毕竟 нь дайвар үг тул үйл үг/тэмдэг нэрийн ӨМНӨ орно: 孩子毕竟还小. «毕竟终于» хоёрыг хамт хэрэглэхгүй.",
+    "order_index": 16,
+    "id": "hsk5-l10-q16",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "斯坦福和科恩争论的问题是什么？",
+    "options": [
+      "青蛙是怎么跳的",
+      "马奔跑时蹄子是否着地",
+      "马能跑多快",
+      "照相机怎么用"
+    ],
+    "correct_answer": "马奔跑时蹄子是否着地",
+    "explanation": "1-р догол: 围绕“马奔跑时蹄子是否着地”进行了辩论.",
+    "order_index": 17,
+    "id": "hsk5-l10-q17",
+    "skillTags": [
+      "reading",
+      "comprehension"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "斯坦福认为马跳起来的时候怎么样？",
+    "options": [
+      "会像青蛙一样跳",
+      "四蹄都着地",
+      "有一蹄一定着地",
+      "四蹄应该都是不落地的"
+    ],
+    "correct_answer": "四蹄应该都是不落地的",
+    "explanation": "Стэнфорд: 在跳起时四蹄应该都是不落地的.",
+    "order_index": 18,
+    "id": "hsk5-l10-q18",
+    "skillTags": [
+      "reading",
+      "comprehension"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "科恩为什么不同意斯坦福的看法？",
+    "options": [
+      "因为他没见过马奔跑",
+      "因为马不会跳起来",
+      "因为马四蹄都不着地就成了青蛙",
+      "因为马跑得不够快"
+    ],
+    "correct_answer": "因为马四蹄都不着地就成了青蛙",
+    "explanation": "Коэн: 马要是四蹄都不着地，那不是成了青蛙啦？",
+    "order_index": 19,
+    "id": "hsk5-l10-q19",
+    "skillTags": [
+      "reading",
+      "comprehension"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "麦布里奇一共放了多少个照相机？",
+    "options": [
+      "48个",
+      "24个",
+      "12个",
+      "4个"
+    ],
+    "correct_answer": "24个",
+    "explanation": "在跑道一边等距离放上24个照相机.",
+    "order_index": 20,
+    "id": "hsk5-l10-q20",
+    "skillTags": [
+      "reading",
+      "comprehension"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "相片显示了什么结果？",
+    "options": [
+      "马跑得越来越慢",
+      "马一直在跳",
+      "马奔跑时始终有一蹄着地",
+      "马奔跑时四蹄都不着地"
+    ],
+    "correct_answer": "马奔跑时始终有一蹄着地",
+    "explanation": "相片显示：马奔跑时始终有一蹄着地，科恩赢了.",
+    "order_index": 21,
+    "id": "hsk5-l10-q21",
+    "skillTags": [
+      "reading",
+      "comprehension"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "有人快速拉动那一长串相片后，出现了什么？",
+    "options": [
+      "所有的相片都消失了",
+      "马变成了青蛙",
+      "相机坏了",
+      "静止的马连成了一匹运动的马"
+    ],
+    "correct_answer": "静止的马连成了一匹运动的马",
+    "explanation": "相片“活”了 — кино анх ийм байсан.",
+    "order_index": 22,
+    "id": "hsk5-l10-q22",
+    "skillTags": [
+      "reading",
+      "comprehension"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "电影产生的纪念日是哪一天？",
+    "options": [
+      "1872年12月28日",
+      "1895年12月28日",
+      "1895年1月28日",
+      "1872年1月1日"
+    ],
+    "correct_answer": "1895年12月28日",
+    "explanation": "卢米埃尔兄弟1895年12月28日在巴黎播放《火车到站》，这一天后来成为电影产生的纪念日.",
+    "order_index": 23,
+    "id": "hsk5-l10-q23",
+    "skillTags": [
+      "reading",
+      "comprehension"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "这篇课文最后想告诉我们什么？",
+    "options": [
+      "不要和别人争论",
+      "留心生活，认真研究，重大发现可能就在眼前",
+      "只有科学家才能有重大发现",
+      "摄影师比科学家更聪明"
+    ],
+    "correct_answer": "留心生活，认真研究，重大发现可能就在眼前",
+    "explanation": "Сүүлийн өгүүлбэр: 留心生活的每一瞬间……或许重大发现就在你的眼前.",
+    "order_index": 24,
+    "id": "hsk5-l10-q24",
+    "skillTags": [
+      "reading",
+      "comprehension"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "阅读短文，回答问题：\n小明喜欢拍照片。开始的时候他拍得不好，后来经过艰苦的练习，技术逐渐成熟，现在已经是一名摄影师了。\n问：小明是怎么成为摄影师的？",
+    "options": [
+      "他从小就拍得很好",
+      "朋友送了他一台新相机",
+      "经过艰苦的练习，技术逐渐成熟",
+      "他看了很多电影"
+    ],
+    "correct_answer": "经过艰苦的练习，技术逐渐成熟",
+    "explanation": "艰苦的练习 + 逐渐成熟 = хүнд хэцүү дадлагаар техник аажмаар боловсорсон.",
+    "order_index": 25,
+    "id": "hsk5-l10-q25",
+    "skillTags": [
+      "reading"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "阅读短文，回答问题：\n有人说早睡早起对身体好，有人说睡够时间更重要。两个人争论了半天，谁也说服不了谁。朋友说：“你们说的都有道理，毕竟每个人的情况不一样。”\n问：朋友的意思是什么？",
+    "options": [
+      "睡得越多越好",
+      "每个人的情况不同，两种说法都有道理",
+      "他们不应该再认识了",
+      "早睡早起一定是错的"
+    ],
+    "correct_answer": "每个人的情况不同，两种说法都有道理",
+    "explanation": "毕竟每个人的情况不一样 = хүн бүрийн нөхцөл өөр тул хоёр үзэл хоёулаа учиртай.",
+    "order_index": 26,
+    "id": "hsk5-l10-q26",
+    "skillTags": [
+      "reading"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "阅读短文，回答问题：\n调查显示，现在很多孩子放学后不再去操场玩儿，而是在家看手机。老师希望学校多组织一些比赛，让孩子们逐渐爱上运动。\n问：老师希望什么？",
+    "options": [
+      "让孩子们都不玩手机",
+      "让孩子们在家里运动",
+      "取消所有的比赛",
+      "让孩子们逐渐爱上运动"
+    ],
+    "correct_answer": "让孩子们逐渐爱上运动",
+    "explanation": "逐渐爱上运动 = аажмаар спортод дурлах.",
+    "order_index": 27,
+    "id": "hsk5-l10-q27",
+    "skillTags": [
+      "reading"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "阅读短文，回答问题：\n每年12月，这家电影院都会播放几部老电影，来纪念电影的诞生。今年播放的第一部电影是《火车到站》。\n问：电影院为什么每年12月播放老电影？",
+    "options": [
+      "因为老电影更便宜",
+      "为了找新的导演",
+      "因为12月人很少",
+      "为了纪念电影的诞生"
+    ],
+    "correct_answer": "为了纪念电影的诞生",
+    "explanation": "来纪念电影的诞生 = киноны мэндэлсэн өдрийг дурсахын тулд.",
+    "order_index": 28,
+    "id": "hsk5-l10-q28",
+    "skillTags": [
+      "reading"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 连续 / 相片 / 24张 / 相机 / 拍下了",
+    "options": [
+      "24张相片拍下了相机连续。",
+      "相机24张相片拍下了连续。",
+      "相机连续拍下了24张相片。"
+    ],
+    "correct_answer": "相机连续拍下了24张相片。",
+    "explanation": "Дараалал: подлежащи (相机) + дайвар (连续) + үйл үг (拍下了) + тоо (24张) + тусагдахуун (相片). 连续 = дараалан; 拍 = зураг авах.",
+    "order_index": 29,
+    "id": "hsk5-l10-q29",
+    "skillTags": [
+      "writing",
+      "sentence_order"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 逐渐 / 改进、成熟 / 电影拍摄技术 / 经过 / 艰苦的 / 试验",
+    "options": [
+      "试验电影拍摄技术改进、成熟经过艰苦的逐渐。",
+      "经过试验改进、成熟逐渐艰苦的电影拍摄技术。",
+      "经过艰苦的试验，电影拍摄技术逐渐改进、成熟。"
+    ],
+    "correct_answer": "经过艰苦的试验，电影拍摄技术逐渐改进、成熟。",
+    "explanation": "经过……，S + 逐渐 + V. 逐渐 = аажмаар; 艰苦 — хүнд хэцүү; 试验 — туршилт.",
+    "order_index": 30,
+    "id": "hsk5-l10-q30",
+    "skillTags": [
+      "writing",
+      "sentence_order"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 你的 / 老板 / 毕竟 / 忍着点儿吧 / 是",
+    "options": [
+      "毕竟老板他忍着点儿吧你的是。",
+      "毕竟老板是你的忍着点儿吧他。",
+      "他毕竟是你的老板，忍着点儿吧。"
+    ],
+    "correct_answer": "他毕竟是你的老板，忍着点儿吧。",
+    "explanation": "毕竟 нь 是-ийн өмнө орно: 他毕竟是你的老板 (ямар ч гэсэн тэр чинь чиний дарга) → дараа нь дүгнэлт.",
+    "order_index": 31,
+    "id": "hsk5-l10-q31",
+    "skillTags": [
+      "writing",
+      "sentence_order"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 有 / 显示 / 一蹄 / 始终 / 相片 / 着地 / 马奔跑时",
+    "options": [
+      "有显示始终着地一蹄马奔跑时相片。",
+      "显示始终有着地相片一蹄马奔跑时。",
+      "相片显示，马奔跑时始终有一蹄着地。"
+    ],
+    "correct_answer": "相片显示，马奔跑时始终有一蹄着地。",
+    "explanation": "相片显示 + өгүүлбэр. 始终 нь 有-ийн өмнө. 显示 = харуулах, 始终 = үргэлж.",
+    "order_index": 32,
+    "id": "hsk5-l10-q32",
+    "skillTags": [
+      "writing",
+      "sentence_order"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 细线 / 跑道 / 穿过 / 接上 / 相机快门",
+    "options": [
+      "相机快门细线接上跑道穿过。",
+      "接上细线相机快门跑道穿过。",
+      "细线穿过跑道，接上相机快门。"
+    ],
+    "correct_answer": "细线穿过跑道，接上相机快门。",
+    "explanation": "细线 (нимгэн утас) — 穿过 (дундуур гарах) — 跑道 (гүйлтийн зам) — 接上 (холбох) — 相机快门 (камерын хаалт).",
+    "order_index": 33,
+    "id": "hsk5-l10-q33",
+    "skillTags": [
+      "writing",
+      "sentence_order"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 眼前 / 重大发现 / 你的 / 就在 / 或许",
+    "options": [
+      "就在或许你的眼前重大发现。",
+      "或许重大发现就在你的眼前。",
+      "或许你的眼前就在重大发现。"
+    ],
+    "correct_answer": "或许重大发现就在你的眼前。",
+    "explanation": "或许 (магадгүй) өгүүлбэрийн эхэнд; 就在 = яг дээр нь байх; 眼前 = нүдний өмнө.",
+    "order_index": 34,
+    "id": "hsk5-l10-q34",
+    "skillTags": [
+      "writing",
+      "sentence_order"
+    ],
+    "difficulty": "hard"
+  }
+]

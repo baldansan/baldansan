@@ -1,0 +1,643 @@
+[
+  {
+    "type": "cloze",
+    "question": "在婚姻问题上，听听父母的意见还是很有（ ）的。",
+    "options": [
+      "必要",
+      "导致",
+      "规律",
+      "所",
+      "享受"
+    ],
+    "correct_answer": "必要",
+    "explanation": "必要 = зайлшгүй хэрэгтэй. 有必要 = хэрэгтэй. 规律 — хэмнэл, 导致 — хүргэх.",
+    "order_index": 1,
+    "id": "hsk5-l11-q01",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "由于近一个月来没有降水，（ ）河水水位持续下降。",
+    "options": [
+      "必要",
+      "享受",
+      "导致",
+      "过渡",
+      "所"
+    ],
+    "correct_answer": "导致",
+    "explanation": "导致 = хүргэх, шалтгаан болох. 所, 过渡 (шилжих) энд тохирохгүй.",
+    "order_index": 2,
+    "id": "hsk5-l11-q02",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "正如你（ ）估计的那样，李岩确实改变了主意。",
+    "options": [
+      "规律",
+      "享受",
+      "必要",
+      "所",
+      "导致"
+    ],
+    "correct_answer": "所",
+    "explanation": "所 нь 估计 үйл үгийн өмнө орж «чиний тооцоолсон шиг» гэсэн утга өгнө.",
+    "order_index": 3,
+    "id": "hsk5-l11-q03",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "擦擦办公桌，整理一下文件，这些都可以让你从放松的休息状态自然（ ）到工作状态。",
+    "options": [
+      "规律",
+      "享受",
+      "过渡",
+      "导致",
+      "所"
+    ],
+    "correct_answer": "过渡",
+    "explanation": "过渡 = шилжих. 从……过渡到…… бүтэцтэй.",
+    "order_index": 4,
+    "id": "hsk5-l11-q04",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "生命在于运动，有（ ）的运动对于身体健康大有好处。",
+    "options": [
+      "必要",
+      "过渡",
+      "所",
+      "导致",
+      "规律"
+    ],
+    "correct_answer": "规律",
+    "explanation": "规律 = хэмнэл; 有规律的运动 = тогтмол хөдөлгөөн.",
+    "order_index": 5,
+    "id": "hsk5-l11-q05",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "为了（ ）轻松的生活，夫妻俩决定把家搬到这个安静的小镇。",
+    "options": [
+      "所",
+      "享受",
+      "导致",
+      "过渡",
+      "规律"
+    ],
+    "correct_answer": "享受",
+    "explanation": "享受 = таашаал авах, эдлэх. 享受生活 = амьдралаа эдлэх.",
+    "order_index": 6,
+    "id": "hsk5-l11-q06",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "听到你要来，李阳一下子就来了（ ）。",
+    "options": [
+      "愿望",
+      "记忆",
+      "危害",
+      "精神",
+      "情绪"
+    ],
+    "correct_answer": "精神",
+    "explanation": "来了精神 = сэргэж, урам орох. 精神 = сэтгэл санаа, урам.",
+    "order_index": 7,
+    "id": "hsk5-l11-q07",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "这题很难，你是怎么（ ）出来的？",
+    "options": [
+      "计算",
+      "模仿",
+      "记忆",
+      "避免",
+      "享受"
+    ],
+    "correct_answer": "计算",
+    "explanation": "计算出来 = тооцоолж гаргах. 计算 = тооцоолох.",
+    "order_index": 8,
+    "id": "hsk5-l11-q08",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "cloze",
+    "question": "这种错误不是不可（ ）的。",
+    "options": [
+      "模仿",
+      "计算",
+      "采用",
+      "导致",
+      "避免"
+    ],
+    "correct_answer": "避免",
+    "explanation": "避免 = зайлсхийх. 不是不可避免 = зайлсхийж болно.",
+    "order_index": 9,
+    "id": "hsk5-l11-q09",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "cloze",
+    "question": "阴天时，教室里的（ ）显得十分暗淡。",
+    "options": [
+      "记忆",
+      "光线",
+      "规律",
+      "愿望",
+      "情绪"
+    ],
+    "correct_answer": "光线",
+    "explanation": "光线 = гэрэл. 光线暗淡 = гэрэл бүүдгэр.",
+    "order_index": 10,
+    "id": "hsk5-l11-q10",
+    "skillTags": [
+      "vocabulary"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "«Ээж өчигдөр ажил хийж байгаад ухаан алдаж, нэлээд хугацааны дараа л ухаан орсон» гэдэг дээр аль нь зөв бэ?",
+    "options": [
+      "妈妈昨天干活儿时晕倒了，半天才过来醒。",
+      "妈妈昨天干活儿时晕倒了，半天才醒去。",
+      "妈妈昨天干活儿时晕倒了，半天才醒过来。",
+      "妈妈昨天干活儿时晕倒了，半天才来醒。"
+    ],
+    "correct_answer": "妈妈昨天干活儿时晕倒了，半天才醒过来。",
+    "explanation": "醒过来 = ухаан орох, сэрэх (хэвийн байдалд эргэх). 过来 нь үйл үгийн ард орно.",
+    "order_index": 11,
+    "id": "hsk5-l11-q11",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "«Лилигийн хувцас хэт олон тул бүгдийг нь өмсөж амжихгүй» — хаалтанд юу орох вэ? 莉莉的衣服多得都（ ）。",
+    "options": [
+      "穿不过来",
+      "不穿过来",
+      "穿过不来",
+      "穿得不过来"
+    ],
+    "correct_answer": "穿不过来",
+    "explanation": "V + 不 + 过来 = амжихгүй, дийлэхгүй. 穿不过来 = өмсөж амжихгүй.",
+    "order_index": 12,
+    "id": "hsk5-l11-q12",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "老太太身边无人照顾，所以就住进了（ ）养老院。",
+    "options": [
+      "一张",
+      "一所",
+      "一座",
+      "一套"
+    ],
+    "correct_answer": "一所",
+    "explanation": "所 нь байгууллагын тооны нэр: 一所养老院, 一所学校.",
+    "order_index": 13,
+    "id": "hsk5-l11-q13",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "西红柿的维生素C含量（ ）苹果的60倍。",
+    "options": [
+      "相当的",
+      "相当",
+      "相当于",
+      "相当地"
+    ],
+    "correct_answer": "相当于",
+    "explanation": "Хоёр тоог тэнцүүлэхэд объект нэр үгийн өмнө 相当于 хэрэгтэй.",
+    "order_index": 14,
+    "id": "hsk5-l11-q14",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "要说我们班跑得最快的，那就（ ）李阳了。",
+    "options": [
+      "数",
+      "想",
+      "给",
+      "找"
+    ],
+    "correct_answer": "数",
+    "explanation": "最……的就数……: «хамгийн … нь гэвэл …». 数 (shǔ) = тооцоход нэгт орох.",
+    "order_index": 15,
+    "id": "hsk5-l11-q15",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "这次的宣传活动将（ ）到9月底。",
+    "options": [
+      "持续",
+      "连续",
+      "继续",
+      "陆续"
+    ],
+    "correct_answer": "持续",
+    "explanation": "Хугацаагаар тасралтгүй үргэлжлэхийг 持续 + 到 гэж хэлнэ.",
+    "order_index": 16,
+    "id": "hsk5-l11-q16",
+    "skillTags": [
+      "grammar"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Бичвэрээр, өөрөө сэрэхэд заавал хэрэгтэй нөхцөл юу вэ?",
+    "options": [
+      "Зөөлөн хөгжим",
+      "Хөшиг",
+      "Гэрэл (光线)",
+      "Чимээгүй орчин"
+    ],
+    "correct_answer": "Гэрэл (光线)",
+    "explanation": "光线是自然醒的必要条件。 光线 = гэрэл, 必要 = зайлшгүй хэрэгтэй.",
+    "order_index": 17,
+    "id": "hsk5-l11-q17",
+    "skillTags": [
+      "sk.reading.comprehension"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Өглөө нарны гэрэл хүчтэй болох тусам бие юу болдог вэ?",
+    "options": [
+      "Цусны даралт буурдаг",
+      "Хүн гүн нойронд ордог",
+      "Бодисын солилцоо хурдсаж, хүн аажим сэрдэг",
+      "Зүрх зогсдог"
+    ],
+    "correct_answer": "Бодисын солилцоо хурдсаж, хүн аажим сэрдэг",
+    "explanation": "新陈代谢随之加快 = бодисын солилцоо хурдсана; 过渡 = шилжих.",
+    "order_index": 18,
+    "id": "hsk5-l11-q18",
+    "skillTags": [
+      "sk.reading.comprehension"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Борооны өдөр хүмүүс яагаад хэвтэж үлдэх дуртай байдаг вэ?",
+    "options": [
+      "Нарны гэрэл сул тул бие аяндаа сэрэхгүй байдаг",
+      "Агаар хүйтэн байдаг",
+      "Сэрүүлэг ажилладаггүй",
+      "Хүмүүс ажилдаа явахыг хүсдэггүй"
+    ],
+    "correct_answer": "Нарны гэрэл сул тул бие аяндаа сэрэхгүй байдаг",
+    "explanation": "Гэрэл нь сэрэх 必要 нөхцөл тул бороотой өдөр гэрэл багатай.",
+    "order_index": 19,
+    "id": "hsk5-l11-q19",
+    "skillTags": [
+      "sk.reading.comprehension"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Нойроос сэрүүн байдалд шилжих үед амьсгал минутад хэд болж нэмэгддэг вэ?",
+    "options": [
+      "16 удаагаас 24 удаа болно",
+      "24 удаагаас 34 удаа",
+      "10 удаагаас 24 удаа",
+      "16 удаагаас 26 удаа"
+    ],
+    "correct_answer": "16 удаагаас 24 удаа болно",
+    "explanation": "呼吸 = амьсгал; 从16次/分钟提高到24次/分钟. «每分钟16次» гэж уншина.",
+    "order_index": 20,
+    "id": "hsk5-l11-q20",
+    "skillTags": [
+      "sk.reading.comprehension"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Гүн нойрноос гэнэт сэрвэл ой тогтоолт, тооцоолох чадвар хэвийн үеийнхийхээ хэдэн хувь болох вэ?",
+    "options": [
+      "100%",
+      "65%",
+      "45%",
+      "85%"
+    ],
+    "correct_answer": "65%",
+    "explanation": "最多为正常状态的65%，与醉酒者相当。 相当 = адил түвшинд.",
+    "order_index": 21,
+    "id": "hsk5-l11-q21",
+    "skillTags": [
+      "sk.reading.comprehension"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Яагаад сэрүүлэгт сэрэхэд бие адреналины хэмжээгээ ихэсгэдэг вэ?",
+    "options": [
+      "Илүү удаан унтахын тулд",
+      "Өөрийгөө хамгаалахын тулд",
+      "Ой тогтоолтоо сайжруулахын тулд",
+      "Өлсөхгүйн тулд"
+    ],
+    "correct_answer": "Өөрийгөө хамгаалахын тулд",
+    "explanation": "出于自我保护。 出于 = …-аас үүдэн. 肾上腺素 = адреналин.",
+    "order_index": 22,
+    "id": "hsk5-l11-q22",
+    "skillTags": [
+      "sk.reading.comprehension"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "Мэргэжилтнүүд заавал сэрүүлэг тавих бол ямар дуу сонгохыг зөвлөв?",
+    "options": [
+      "Зөөлөн дуу эсвэл хөгжим",
+      "Чимээгүй чичиргээ",
+      "Хурдан хэмнэлтэй дуу",
+      "Чанга хонх"
+    ],
+    "correct_answer": "Зөөлөн дуу эсвэл хөгжим",
+    "explanation": "应采用柔和的声音或音乐。 柔和 = зөөлөн, 采用 = ашиглах.",
+    "order_index": 23,
+    "id": "hsk5-l11-q23",
+    "skillTags": [
+      "sk.reading.comprehension"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "«Гэрлэн сэрүүлэг» хэрхэн ажилладаг вэ?",
+    "options": [
+      "Өглөөний байгалийн гэрлийн өөрчлөлтийг дуурайж, хүнийг тогтоосон цагт нь аяндаа сэрээнэ",
+      "Хүнийг дуугаар чанга сэрээнэ",
+      "Хөшгийг өөрөө хаана",
+      "Өрөөг дулаацуулж унтуулна"
+    ],
+    "correct_answer": "Өглөөний байгалийн гэрлийн өөрчлөлтийг дуурайж, хүнийг тогтоосон цагт нь аяндаа сэрээнэ",
+    "explanation": "模仿 = дуурайх; 光线 = гэрэл. 它能在室内模仿早晨自然光线的变化。",
+    "order_index": 24,
+    "id": "hsk5-l11-q24",
+    "skillTags": [
+      "sk.reading.comprehension"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "实验失败了没关系，打起（ ）从头再来。",
+    "options": [
+      "愿望",
+      "状态",
+      "精神",
+      "情绪"
+    ],
+    "correct_answer": "精神",
+    "explanation": "打起精神 = урамаа сэргээх, сэтгэлээ засах. 情绪 нь энд тохирохгүй.",
+    "order_index": 25,
+    "id": "hsk5-l11-q25",
+    "skillTags": [
+      "sk.reading.cloze"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "每晚抽出点儿时间来阅读、学习，坚持（ ）年之后，成功就会向你招手。",
+    "options": [
+      "数",
+      "过来",
+      "来",
+      "所"
+    ],
+    "correct_answer": "数",
+    "explanation": "数年 = хэдэн жил (бичгийн хэл). 来 — «ойролцоогоор» гэсэн өөр хэрэглээтэй, энд тохирохгүй.",
+    "order_index": 26,
+    "id": "hsk5-l11-q26",
+    "skillTags": [
+      "sk.reading.cloze"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "作为孩子的父母，我们当然（ ）他能成为一个有用的人才。",
+    "options": [
+      "希望",
+      "导致",
+      "愿望",
+      "危害"
+    ],
+    "correct_answer": "希望",
+    "explanation": "希望 = найдах (үйл үг). 愿望 нь нэр үг тул «我们愿望他» гэж хэлэхгүй.",
+    "order_index": 27,
+    "id": "hsk5-l11-q27",
+    "skillTags": [
+      "sk.reading.cloze"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "multiple_choice",
+    "question": "他的行为已经严重（ ）到了社会安全。",
+    "options": [
+      "伤害",
+      "避免",
+      "危害",
+      "模仿"
+    ],
+    "correct_answer": "危害",
+    "explanation": "危害 нь нийгмийн аюулгүй байдалд заналхийлэх хор. 伤害 нь хүний бие, сэтгэлийг гомдоох.",
+    "order_index": 28,
+    "id": "hsk5-l11-q28",
+    "skillTags": [
+      "sk.reading.cloze"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 条件。 / 必要 / 是 / 光线 / 自然醒 / 的",
+    "options": [
+      "条件。",
+      "必要",
+      "是",
+      "光线",
+      "自然醒",
+      "的",
+      "光线是自然醒的必要条件。"
+    ],
+    "correct_answer": "光线是自然醒的必要条件。",
+    "explanation": "光线 = гэрэл, 必要条件 = зайлшгүй нөхцөл. «A是B的……» бүтэц.",
+    "order_index": 29,
+    "id": "hsk5-l11-q29",
+    "skillTags": [
+      "sk.writing.order"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 照进来呢？ / 可 / 让阳光 / 替你 / 谁能 / 拉开窗帘",
+    "options": [
+      "照进来呢？",
+      "可",
+      "让阳光",
+      "替你",
+      "谁能",
+      "拉开窗帘",
+      "可谁能替你拉开窗帘让阳光照进来呢？"
+    ],
+    "correct_answer": "可谁能替你拉开窗帘让阳光照进来呢？",
+    "explanation": "替你 = чиний оронд, 窗帘 = хөшиг, 照进来 = гэрэл орж ирэх.",
+    "order_index": 30,
+    "id": "hsk5-l11-q30",
+    "skillTags": [
+      "sk.writing.order"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 有所 / 能 / 帮助。 / 对你 / 希望",
+    "options": [
+      "有所",
+      "能",
+      "帮助。",
+      "对你",
+      "希望",
+      "希望能对你有所帮助。"
+    ],
+    "correct_answer": "希望能对你有所帮助。",
+    "explanation": "有所帮助 = тус болох. 所 нь 有-ийн ард, үйл үгийн өмнө.",
+    "order_index": 31,
+    "id": "hsk5-l11-q31",
+    "skillTags": [
+      "sk.writing.order"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 这 / 了。 / 锻炼 / 相当于 / 就",
+    "options": [
+      "这",
+      "了。",
+      "锻炼",
+      "相当于",
+      "就",
+      "这就相当于锻炼了。"
+    ],
+    "correct_answer": "这就相当于锻炼了。",
+    "explanation": "相当于 = …-тэй тэнцэх. 锻炼 = дасгал хийх.",
+    "order_index": 32,
+    "id": "hsk5-l11-q32",
+    "skillTags": [
+      "sk.writing.order"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 更高。 / 突然 / 被闹铃 / 惊醒的人 / 自然醒的人 / 血压 / 比",
+    "options": [
+      "更高。",
+      "突然",
+      "被闹铃",
+      "惊醒的人",
+      "自然醒的人",
+      "血压",
+      "比",
+      "突然被闹铃惊醒的人比自然醒的人血压更高。"
+    ],
+    "correct_answer": "突然被闹铃惊醒的人比自然醒的人血压更高。",
+    "explanation": "闹铃 = сэрүүлгийн хонх; 比 нь харьцуулалт: A比B更高.",
+    "order_index": 33,
+    "id": "hsk5-l11-q33",
+    "skillTags": [
+      "sk.writing.order"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "type": "sentence_order",
+    "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 热爱北京。 / 我 / 情况 / 非常 / 所了解 / 是 / 的",
+    "options": [
+      "他",
+      "热爱北京。",
+      "我",
+      "情况",
+      "非常",
+      "所了解",
+      "是",
+      "的",
+      "我所了解的情况是他非常热爱北京。"
+    ],
+    "correct_answer": "我所了解的情况是他非常热爱北京。",
+    "explanation": "所了解的情况 = миний мэдэх байдал. 热爱 = маш их хайрлах.",
+    "order_index": 34,
+    "id": "hsk5-l11-q34",
+    "skillTags": [
+      "sk.writing.order"
+    ],
+    "difficulty": "hard"
+  }
+]
