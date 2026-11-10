@@ -63,10 +63,13 @@ export function gradeMockSentenceOrder(
 ): boolean {
   const correct = question.correct_answer?.trim() ?? "";
   if (!correct) return false;
-  return (
-    normalizeMockSentenceAnswer(userAnswer) ===
-    normalizeMockSentenceAnswer(correct)
-  );
+  const user = normalizeMockSentenceAnswer(userAnswer);
+  // Албан хариулт заримдаа 2 хувилбартай («A。/ B。») — аль нь ч зөв.
+  return correct
+    .split(/\s*\/\s*/)
+    .map(normalizeMockSentenceAnswer)
+    .filter(Boolean)
+    .some((c) => c === user);
 }
 
 /** Хадгалсан хариултаас индекс дарааллыг сэргээнэ. */

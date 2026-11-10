@@ -42,7 +42,13 @@ export function gradeQuestion(
     question.q_type === "complete" ||
     question.q_type === "fill_char"
   ) {
-    return normalizeStrict(user) === normalizeStrict(correct);
+    // Албан хариулт 2 хувилбартай байж болно («A。/ B。») — аль нь ч зөв.
+    const u = normalizeStrict(user);
+    return correct
+      .split(/\s*\/\s*/)
+      .map(normalizeStrict)
+      .filter(Boolean)
+      .some((c) => c === u);
   }
 
   return user.toUpperCase() === correct.trim().toUpperCase();
