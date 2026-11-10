@@ -51,6 +51,7 @@ export function buildRandomMockTestAnswers(
         break;
       case "picture_sentence":
       case "essay":
+      case "essay_picture":
       case "summary":
         answers[key] = pickRandom(ESSAY_SAMPLES);
         break;

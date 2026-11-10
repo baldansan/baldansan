@@ -174,7 +174,7 @@ export function validateMockPackage(raw: unknown): { pkg: MockPackage | null; re
       const correct = typeof q.correct_answer === "string" ? q.correct_answer.trim() : null;
       const autograde = typeof q.autograde === "string" ? q.autograde : "auto";
       if (autograde === "auto" && !correct) errors.push(`q${qNo}: correct_answer хоосон.`);
-      if (correct && options && options.length && !["match", "fill_match", "fill_word", "complete", "fill_char", "essay", "summary", "error_find"].includes(qType)) {
+      if (correct && options && options.length && !["match", "fill_match", "fill_word", "complete", "fill_char", "essay", "essay_picture", "summary", "error_find"].includes(qType)) {
         const keys = new Set(options.map((o) => o.key));
         if (!keys.has(correct) && !["√", "×", "✓", "✗", "T", "F"].includes(correct)) {
           warnings.push(`q${qNo}: correct_answer «${correct}» options дотор алга.`);
@@ -187,8 +187,8 @@ export function validateMockPackage(raw: unknown): { pkg: MockPackage | null; re
       const tutor = q.tutor_note == null ? null : parseTutorNote(q.tutor_note);
       if (q.tutor_note != null && !tutor) warnings.push(`q${qNo}: tutor_note бүтэц буруу (why алга) — алгасав.`);
       const expl = typeof q.explanation_mn === "string" && q.explanation_mn.trim() ? q.explanation_mn.trim() : null;
-      if (!expl && !["essay", "summary"].includes(qType)) warnings.push(`q${qNo}: explanation_mn хоосон.`);
-      if (!tutor && !["essay", "summary"].includes(qType)) warnings.push(`q${qNo}: tutor_note алга.`);
+      if (!expl && !["essay", "essay_picture", "summary"].includes(qType)) warnings.push(`q${qNo}: explanation_mn хоосон.`);
+      if (!tutor && !["essay", "essay_picture", "summary"].includes(qType)) warnings.push(`q${qNo}: tutor_note алга.`);
 
       const textForCheck = (expl ?? "") + " " + (tutor ? JSON.stringify(tutor) : "");
       if (SUSPICIOUS_MN.test(textForCheck)) warnings.push(`q${qNo}: ө/ү дутуу бичигдсэн үг байж магадгүй.`);

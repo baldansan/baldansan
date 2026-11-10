@@ -25,6 +25,7 @@ export function formatMockTestAnswer(
     question.q_type === "complete" ||
     question.q_type === "fill_char" ||
     question.q_type === "essay" ||
+    question.q_type === "essay_picture" ||
     question.q_type === "summary" ||
     question.q_type === "picture_sentence"
   ) {
@@ -47,6 +48,7 @@ export function formatCorrectAnswer(question: MockTestQuestionRow): string {
     question.q_type === "complete" ||
     question.q_type === "fill_char" ||
     question.q_type === "essay" ||
+    question.q_type === "essay_picture" ||
     question.q_type === "summary" ||
     question.q_type === "picture_sentence"
   ) {

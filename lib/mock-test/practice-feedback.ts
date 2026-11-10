@@ -48,6 +48,7 @@ export type PracticeFeedback = {
 
 const MANUAL_TYPES = new Set([
   "essay",
+  "essay_picture",
   "summary",
   "picture_sentence",
 ]);

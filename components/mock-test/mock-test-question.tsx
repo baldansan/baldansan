@@ -35,6 +35,7 @@ type Props = {
 const LONG_TEXT_TYPES = new Set([
   "picture_sentence",
   "essay",
+  "essay_picture",
   "summary",
 ]);
 
