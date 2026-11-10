@@ -48,7 +48,7 @@ export function defaultCoverUrl(courseId: string): string | null {
   if (
     /^hsk[1-6]$/.test(courseId) ||
     /^fazhan-(chuji|zhongji|gaoji)[12]$/.test(courseId) ||
-    /^yct-[12]$/.test(courseId)
+    /^yct-[1-3]$/.test(courseId)
   ) {
     return `/covers/${courseId}.jpg`;
   }
