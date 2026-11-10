@@ -17,7 +17,6 @@ import {
 // Нүүрний 8 номын жижиг урьдчилсан жагсаалт — content/open/*.json (46MB)-ийг
 // нүүрний серверийн функцэд оруулахгүй, cold start дээр унших/parse хийхгүй.
 // Дахин үүсгэх: scripts/gen-home-preview.mjs
-import homePreview from "@/content/open/home-preview.json";
 import type { LibraryPreviewItem } from "@/components/mobile/library-preview-row";
 import { fetchVideoSeriesCatalogCached } from "@/lib/supabase/videos-server";
 
@@ -126,8 +125,9 @@ async function loadFazhanCourseForHome(courseId: string) {
   };
 }
 
+/** Хүүхдийн зурагт номыг насанд хүрэгчдийн нүүрнээс хассан (зөвхөн хүүхдийн замд үлдсэн). */
 async function loadLibraryPreviewForHome(): Promise<LibraryPreviewItem[]> {
-  return (homePreview as LibraryPreviewItem[]).slice(0, 8);
+  return [];
 }
 
 /** Хамгийн доод HSK түвшний, бичлэгтэй цувралыг санал болгоно (кэштэй каталог). */

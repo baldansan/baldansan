@@ -4,7 +4,7 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
-import { getIdioms, getStories } from "@/lib/library/data";
+import { getIdioms } from "@/lib/library/data";
 
 export const dynamic = "force-dynamic";
 
@@ -20,32 +20,21 @@ export const metadata = {
  * устгаагүй, зөвхөн орчуулгатай болмогц буцааж холбоно.
  */
 export default async function LibraryPage() {
-  const [locale, stories, idioms, proverbs, xiehouyu] = await Promise.all([
+  const [locale, idioms, proverbs, xiehouyu] = await Promise.all([
     getServerUiLocale(),
-    getStories(),
     getIdioms("idioms"),
     getIdioms("proverbs"),
     getIdioms("xiehouyu"),
   ]);
-  const withAudio = stories.filter((s) => s.provider === "gsb").length;
 
   const sections = [
-    {
-      href: "/library/books",
-      emoji: "📚",
-      zh: "绘本",
-      mn: "Хүүхдийн зурагт ном",
-      descZh: `${stories.length} 本图画书，${withAudio} 本带朗读音频。按阅读级别选书。`,
-      descMn: `${stories.length} зурагт ном, ${withAudio} нь уншсан дуутай. Уншлагын түвшнээр сонгоно.`,
-      bg: "bg-amber-50",
-    },
     {
       href: "/library/idioms",
       emoji: "🀄",
       zh: "成语 · 谚语 · 歇后语",
-      mn: "Хэлц үг · Зүйр цэцэн үг",
-      descZh: `${idioms.length} 条成语、${proverbs.length} 条谚语、${xiehouyu.length} 条歇后语。`,
-      descMn: `${idioms.length} хэлц (成语), ${proverbs.length} зүйр үг, ${xiehouyu.length} 歇后语.`,
+      mn: "Хэлц үг · Зүйр цэцэн үг · Ёгт хэллэг",
+      descZh: `${idioms.length} 条成语、${proverbs.length} 条谚语、${xiehouyu.length} 条歇后语，均有蒙古语讲解。`,
+      descMn: `${idioms.length} хэлц үг, ${proverbs.length} зүйр цэцэн үг, ${xiehouyu.length} ёгт хэллэг — бүгд монгол тайлбар, гарал үүсэл, жишээтэй.`,
       bg: "bg-emerald-50",
     },
   ];
@@ -56,8 +45,8 @@ export default async function LibraryPage() {
         title={L(locale, "文库", "Уншлагын сан")}
         subtitle={L(
           locale,
-          "开放授权的中文阅读材料：图画书、成语。",
-          "Нээлттэй лицензтэй хятад уншлагын материал: зурагт ном, хэлц үг.",
+          "成语、谚语、歇后语——蒙古语讲解。",
+          "Хэлц, зүйр цэцэн үг, ёгт хэллэгийг монголоор ойлгож сурна.",
         )}
       />
       <div className="grid grid-cols-1 gap-3">

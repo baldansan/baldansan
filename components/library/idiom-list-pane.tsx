@@ -46,15 +46,14 @@ function IdiomCard({
             ) : null}
           </p>
           {x.mn ? (
-            <p className="mt-1 text-sm leading-5 text-emerald-800">💡 {x.mn.keyMn}</p>
-          ) : x.en.length > 0 ? (
-            <p className="mt-1 text-sm leading-5 text-[var(--app-text)]">{x.en.join("; ")}</p>
-          ) : null}
-          {x.literal ? (
-            <p className="mt-1 text-xs leading-5 text-[var(--app-text)] bs-lib-card-extra">直译: {x.literal}</p>
-          ) : null}
-          {x.etymology ? (
-            <p className="mt-1 line-clamp-2 text-xs leading-5 text-[var(--app-muted)] bs-lib-card-extra">出处: {x.etymology}</p>
+            <>
+              <p className="mt-1 text-sm leading-5 text-emerald-800">💡 {x.mn.keyMn}</p>
+              {x.mn.similarMn ? (
+                <p className="mt-1 line-clamp-1 text-xs leading-5 text-[var(--app-muted)] bs-lib-card-extra">
+                  🇲🇳 {x.mn.similarMn}
+                </p>
+              ) : null}
+            </>
           ) : null}
         </div>
       </Link>

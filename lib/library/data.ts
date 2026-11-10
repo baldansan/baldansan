@@ -250,8 +250,11 @@ export async function getIdioms(kind: IdiomKind): Promise<Idiom[]> {
     readJson<{ items: Idiom[] }>(`wiktionary-zh/${kind}.json`),
     getIdiomsMn(kind),
   ]);
-  // Зөвхөн путунхуа (Mandarin) хэллэгүүд; кантон гэх мэт аялгууныхыг хасна.
-  return d.items.filter((x) => x.mandarin).map((x) => (mnMap[x.id] ? { ...x, mn: mnMap[x.id] } : x));
+  // Зөвхөн путунхуа (Mandarin) + МОНГОЛ тайлбартай хэллэгүүд. Орчуулгагүйг
+  // харуулахгүй — англи тайлбартай хэллэг суралцагчид ашиггүй.
+  return d.items
+    .filter((x) => x.mandarin && mnMap[x.id])
+    .map((x) => ({ ...x, mn: mnMap[x.id] }));
 }
 
 export type Fable = {
