@@ -50,6 +50,21 @@ export function ImportHub() {
 
         <article className={cardClass}>
           <span className="text-3xl" aria-hidden>
+            🎯
+          </span>
+          <h2 className="mt-4 text-lg font-semibold text-slate-900">
+            Жинхэнэ шалгалт (真题) оруулах
+          </h2>
+          <p className="mt-2 flex-1 text-sm text-slate-600">
+            HSK 1–6 жинхэнэ шалгалтын zip (JSON + аудио + зураг) → Storage + mock_tests. Тайлбар, багшийн тэмдэглэл, аудио цаг хамт орно.
+          </p>
+          <Link href="/admin/import/mock-test" className={btnPrimary}>
+            Шалгалт оруулах
+          </Link>
+        </article>
+
+        <article className={cardClass}>
+          <span className="text-3xl" aria-hidden>
             ▶
           </span>
           <h2 className="mt-4 text-lg font-semibold text-slate-900">
