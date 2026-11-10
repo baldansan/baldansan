@@ -1,5 +1,6 @@
 "use client";
 
+import { rateGameWord } from "@/lib/games/game-srs-feedback";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
@@ -204,6 +205,7 @@ export function HskQuizGameClient({ config }: { config: HskQuizGameConfig }) {
     setPicked(option);
 
     const ok = option === current.correct;
+    rateGameWord(current.wordId, ok);
     if (ok) {
       correctRef.current += 1;
       setCorrectCount(correctRef.current);

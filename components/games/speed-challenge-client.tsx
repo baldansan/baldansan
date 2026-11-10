@@ -1,5 +1,6 @@
 "use client";
 
+import { rateGameWord } from "@/lib/games/game-srs-feedback";
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { GameWordSourcePicker } from "@/components/games/game-word-source-picker";
@@ -142,6 +143,7 @@ export function SpeedChallengeClient() {
     setLocked(true);
     setPicked(option);
     const ok = option === current.correct;
+    rateGameWord(current.wordId, ok);
 
     if (ok) {
       correctRef.current += 1;

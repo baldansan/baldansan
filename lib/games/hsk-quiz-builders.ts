@@ -13,6 +13,8 @@ export type HskQuizKind =
 
 export type HskQuizQuestion = {
   id: number;
+  /** hsk_words.id — тоглоомын үр дүнг SRS-тэй холбоход. */
+  wordId?: number;
   kind: HskQuizKind;
   correct: string;
   options: string[];
@@ -97,6 +99,7 @@ export function buildWordRecallDeck(
       );
       return {
         id: word.id,
+        wordId: word.id,
         kind: "word-recall" as const,
         correct,
         options: mcqOptions(correct, wrong),
@@ -128,6 +131,7 @@ export function buildPinyinDeck(
       );
       return {
         id: word.id,
+        wordId: word.id,
         kind: "pinyin" as const,
         correct,
         options: mcqOptions(correct, wrong),
@@ -165,6 +169,7 @@ export function buildExampleClozeDeck(
       );
       return {
         id: word.id,
+        wordId: word.id,
         kind: "example-cloze" as const,
         correct,
         options: mcqOptions(correct, wrong),
@@ -226,6 +231,7 @@ export function buildRadicalPickDeck(
     if (wrong.length < OPTION_COUNT - 1) continue;
     questions.push({
       id: word.id,
+      wordId: word.id,
       kind: "radical-pick",
       correct,
       options: mcqOptions(correct, wrong),
@@ -289,6 +295,7 @@ export function buildListeningDeck(
 
     questions.push({
       id: word.id,
+      wordId: word.id,
       kind: "listening",
       correct,
       options: mcqOptions(correct, wrong),
@@ -321,6 +328,7 @@ function buildMeaningOne(words: HskWord[], word: HskWord): HskQuizQuestion | nul
   );
   return {
     id: word.id,
+    wordId: word.id,
     kind: "meaning",
     correct,
     options: mcqOptions(correct, wrong),

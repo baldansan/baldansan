@@ -1,5 +1,6 @@
 "use client";
 
+import { rateGameWord } from "@/lib/games/game-srs-feedback";
 import Link from "next/link";
 import {
   useCallback,
@@ -244,6 +245,7 @@ export function HskVocabQuizClient({
       correctRef.current += 1;
       setCorrectCount(correctRef.current);
     }
+    rateGameWord(current.wordId, option === current.correct);
     recordQuestionAttempt({
       lessonId: `hsk${testLevel}`,
       stage: "word_practice",
