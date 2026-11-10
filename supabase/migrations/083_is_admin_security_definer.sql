@@ -2,6 +2,19 @@
 -- Storage (storage.objects) RLS бодлогод public.is_admin() дуудагдахад admin_profiles-ийн RLS
 -- давхар шүүж false буцаадаг байсан (真题 импорт: "new row violates row-level security policy").
 -- Security definer + тогтсон search_path: зөвхөн boolean буцаадаг тул аюулгүй.
+-- Давхардсан (параметртэй) is_admin хувилбаруудыг устгана — "function public.is_admin() is not unique"
+do $$
+declare r record;
+begin
+  for r in
+    select p.oid::regprocedure as sig
+    from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+    where n.nspname = 'public' and p.proname = 'is_admin' and p.pronargs > 0
+  loop
+    execute format('drop function if exists %s cascade', r.sig);
+  end loop;
+end $$;
+
 create or replace function public.is_admin()
 returns boolean
 language sql
