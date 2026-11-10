@@ -384,45 +384,28 @@ export function buildSrsMarathonDeck(
     return singleKindDeck(words, rotation[0]!, size);
   }
 
-  const shuffled = shuffleArray(words);
+  // Төрөл бүрт нэг удаа deck үүсгээд ээлжлэн авна. (Өмнө нь санамсаргүй 8 асуултаас
+  // тухайн үгийг хайдаг байсан тул бараг үргэлж олдохгүй, deck 1–2 асуулттай үлддэг байв.)
+  const perKind = new Map<HskQuizKind, HskQuizQuestion[]>();
+  for (const kind of rotation) {
+    perKind.set(kind, shuffleArray(singleKindDeck(words, kind, size)));
+  }
   const out: HskQuizQuestion[] = [];
-
-  for (let i = 0; i < size; i++) {
+  const used = new Set<string>();
+  for (let i = 0; out.length < size && i < size * rotation.length; i++) {
     const kind = rotation[i % rotation.length];
-    const word = shuffled[i % shuffled.length];
-
-    if (kind === "meaning") {
-      const q = buildMeaningOne(words, word);
-      if (q) out.push(q);
-      continue;
+    const bucket = perKind.get(kind) ?? [];
+    let q: HskQuizQuestion | undefined;
+    while (bucket.length > 0) {
+      const cand = bucket.shift()!;
+      const key = `${cand.kind}:${cand.wordId ?? cand.id}`;
+      if (!used.has(key)) {
+        q = cand;
+        used.add(key);
+        break;
+      }
     }
-
-    const deckBuilders = {
-      "word-recall": buildWordRecallDeck,
-      pinyin: buildPinyinDeck,
-      "example-cloze": buildExampleClozeDeck,
-      "radical-pick": buildRadicalPickDeck,
-      listening: buildListeningDeck,
-    } as const;
-
-    const deck = deckBuilders[kind](
-      words.filter((w) =>
-        kind === "radical-pick"
-          ? w.radical
-          : kind === "example-cloze"
-            ? w.example_zh?.includes(w.simplified)
-            : kind === "pinyin"
-              ? w.pinyin
-              : kind === "listening"
-                ? w.pinyin && w.meaning_mn
-                : w.meaning_mn
-      ),
-      8
-    );
-    const match = deck.find((q) => q.id === word.id);
-    if (match && !out.some((q) => q.id === match.id && q.kind === match.kind)) {
-      out.push(match);
-    }
+    if (q) out.push(q);
   }
 
   return out.slice(0, size);
