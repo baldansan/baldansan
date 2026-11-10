@@ -5,6 +5,7 @@ import { features } from "@/lib/features";
 import { useEffect, useState, type ReactNode } from "react";
 import { DashboardQuickReview } from "@/components/dashboard-quick-review";
 import { DashboardGameStatsCard } from "@/components/games/dashboard-game-stats-card";
+import { SkillMapCard } from "@/components/skills/skill-map-card";
 import { EmptyState } from "@/components/empty-state";
 import { PwaInstallCard } from "@/components/pwa-install-card";
 import { StreakCard } from "@/components/retention/streak-card";
@@ -155,6 +156,8 @@ export function LearnerDashboard({ hsk5LessonIds, trackLabel }: Props) {
 
       {retention ? <StreakCard summary={retention} /> : null}
       {retention ? <DailyGoalCard summary={retention} /> : null}
+
+      <SkillMapCard />
 
       <DashboardEngagementCards />
       <DashboardEngagementQuickActions />

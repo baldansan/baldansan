@@ -1,0 +1,508 @@
+-- 081: Чадварын сүлжээ (Skill Graph) — Үе 1 + 2
+-- skills: нэг чадвар = нэг зангилаа (дүрмийн цэг, шалгалтын ур чадвар, түвшний үгийн сан)
+-- skill_edges: хичээл/ном/дасгал ↔ чадварын холбоос
+-- user_skill_mastery: хэрэглэгч бүрийн чадварын эзэмшил (нотолгооноос тооцно)
+-- Дата: hsk30-durem.json (дүрэм), skill-tag-labels (sk.*), voc.hskN — scripts/skills/seed-skills.mts
+
+create table if not exists public.skills (
+  id text primary key,                       -- gr.hsk4-p1 | sk.listening.dialogue | voc.hsk4
+  kind text not null check (kind in ('grammar', 'skill', 'vocab_level')),
+  hsk_level int,                             -- 1..6 (7 = HSK7-9); sk.* нь null (бүх түвшин)
+  name_mn text not null,
+  name_zh text,
+  desc_mn text,
+  sort int not null default 0,
+  updated_at timestamptz not null default now()
+);
+create index if not exists skills_level_idx on public.skills (hsk_level, kind, sort);
+
+create table if not exists public.skill_edges (
+  id bigserial primary key,
+  skill_id text not null references public.skills (id) on delete cascade,
+  rel text not null check (rel in ('teaches', 'explains', 'tests', 'requires')),
+  ref_type text not null,                    -- lesson | hsk30_point | book_page | mock_question | skill
+  ref_id text not null,
+  locator text,                              -- href / хуудас / тайлбар
+  unique (skill_id, rel, ref_type, ref_id)
+);
+create index if not exists skill_edges_ref_idx on public.skill_edges (ref_type, ref_id);
+
+create table if not exists public.user_skill_mastery (
+  user_id uuid not null references auth.users (id) on delete cascade,
+  skill_id text not null references public.skills (id) on delete cascade,
+  mastery numeric(4,3) not null default 0,   -- 0..1
+  evidence_n int not null default 0,
+  correct_n int not null default 0,
+  last_at timestamptz,
+  updated_at timestamptz not null default now(),
+  primary key (user_id, skill_id)
+);
+
+alter table public.skills enable row level security;
+alter table public.skill_edges enable row level security;
+alter table public.user_skill_mastery enable row level security;
+
+drop policy if exists skills_read_all on public.skills;
+create policy skills_read_all on public.skills for select to anon, authenticated using (true);
+drop policy if exists skill_edges_read_all on public.skill_edges;
+create policy skill_edges_read_all on public.skill_edges for select to anon, authenticated using (true);
+drop policy if exists skills_admin_write on public.skills;
+create policy skills_admin_write on public.skills for all to authenticated using (public.is_admin()) with check (public.is_admin());
+drop policy if exists skill_edges_admin_write on public.skill_edges;
+create policy skill_edges_admin_write on public.skill_edges for all to authenticated using (public.is_admin()) with check (public.is_admin());
+drop policy if exists usm_own on public.user_skill_mastery;
+create policy usm_own on public.user_skill_mastery for all to authenticated using (user_id = auth.uid()) with check (user_id = auth.uid());
+drop policy if exists usm_admin_read on public.user_skill_mastery;
+create policy usm_admin_read on public.user_skill_mastery for select to authenticated using (public.is_admin());
+
+-- -----------------------------------------------------------------------------
+-- Эзэмшил тооцох: нотолгоо бүр = нэг оролдлого. mastery = (зөв + 1) / (нийт + 2) (Лапласын prior 0.5),
+-- сүүлийн 90 хоногийн оролдлого 2 дахин жинтэй.
+--  • grammar  gr.<pointId>   ← question_attempts lesson_id='hsk30-durem', question_id like '<pointId>-%'
+--  • skill    sk.*           ← question_attempts stage='mock_exam', question_id='mock:<uuid>' → mock_test_questions.tags
+--  • vocab    voc.hskN       ← user_word_srs ↔ hsk_words.hsk_level: сурсан (reps>0) үгийн эзлэх хувь × сүүлийн үнэлгээ
+-- -----------------------------------------------------------------------------
+create or replace function public.compute_user_skill_mastery(p_user uuid)
+returns void
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  if p_user is null or p_user <> auth.uid() and not public.is_admin() then
+    raise exception 'not allowed';
+  end if;
+
+  -- 1) Дүрмийн цэгүүд
+  insert into public.user_skill_mastery (user_id, skill_id, mastery, evidence_n, correct_n, last_at, updated_at)
+  select p_user, s.id,
+         least(1, (sum(case when qa.is_correct then w else 0 end) + 1.0) / (sum(w) + 2.0)),
+         count(*), count(*) filter (where qa.is_correct), max(qa.created_at), now()
+  from public.skills s
+  join lateral (
+    select qa.*, case when qa.created_at > now() - interval '90 days' then 2.0 else 1.0 end as w
+    from public.question_attempts qa
+    where qa.user_id = p_user
+      and qa.lesson_id = 'hsk30-durem'
+      and qa.question_id like substr(s.id, 4) || '-%'
+  ) qa on true
+  where s.kind = 'grammar'
+  group by s.id
+  on conflict (user_id, skill_id) do update
+    set mastery = excluded.mastery, evidence_n = excluded.evidence_n, correct_n = excluded.correct_n,
+        last_at = excluded.last_at, updated_at = now();
+
+  -- 2) Шалгалтын ур чадвар (真题 tags)
+  insert into public.user_skill_mastery (user_id, skill_id, mastery, evidence_n, correct_n, last_at, updated_at)
+  select p_user, s.id,
+         least(1, (sum(case when qa.is_correct then w else 0 end) + 1.0) / (sum(w) + 2.0)),
+         count(*), count(*) filter (where qa.is_correct), max(qa.created_at), now()
+  from public.skills s
+  join lateral (
+    select qa.is_correct, qa.created_at,
+           case when qa.created_at > now() - interval '90 days' then 2.0 else 1.0 end as w
+    from public.question_attempts qa
+    join public.mock_test_questions mq on 'mock:' || mq.id::text = qa.question_id
+    where qa.user_id = p_user and qa.stage = 'mock_exam'
+      and mq.tags @> array[s.id]::text[]
+  ) qa on true
+  where s.kind = 'skill'
+  group by s.id
+  on conflict (user_id, skill_id) do update
+    set mastery = excluded.mastery, evidence_n = excluded.evidence_n, correct_n = excluded.correct_n,
+        last_at = excluded.last_at, updated_at = now();
+
+  -- 3) Түвшний үгийн сан: сурсан үг / түвшний нийт үг (сүүлийн үнэлгээ known → 1, hard → 0.6, forgot → 0.2)
+  insert into public.user_skill_mastery (user_id, skill_id, mastery, evidence_n, correct_n, last_at, updated_at)
+  select p_user, s.id,
+         least(1, coalesce(sum(case u.last_rating when 'known' then 1.0 when 'hard' then 0.6 when 'forgot' then 0.2 else 0.3 end), 0)
+                  / greatest(1, (select count(*) from public.hsk_words hw where hw.hsk_level = s.hsk_level::text and hw.is_function_word = false))),
+         count(u.word_id), count(u.word_id) filter (where u.last_rating = 'known'), max(u.updated_at), now()
+  from public.skills s
+  left join public.hsk_words hw on hw.hsk_level = s.hsk_level::text
+  left join public.user_word_srs u on u.word_id = hw.id and u.user_id = p_user and u.reps > 0
+  where s.kind = 'vocab_level'
+  group by s.id, s.hsk_level
+  on conflict (user_id, skill_id) do update
+    set mastery = excluded.mastery, evidence_n = excluded.evidence_n, correct_n = excluded.correct_n,
+        last_at = excluded.last_at, updated_at = now();
+end;
+$$;
+
+grant execute on function public.compute_user_skill_mastery(uuid) to authenticated;
+-- generated by scripts/skills/seed-skills.mts
+insert into public.skills (id, kind, hsk_level, name_mn, name_zh, desc_mn, sort) values
+('gr.hsk1-p1', 'grammar', 1, '是', '是', '...мөн; ...юм (байх) · Бүтэц: А + 是 + В  ·  үгүйсгэл: А + 不是 + В', 1),
+('gr.hsk1-p2', 'grammar', 1, '不 / 没', '不 / 没', 'үгүйсгэх (биш; -гүй) · Бүтэц: 不 + үйл үг/тэмдэг нэр (одоо/ирээдүй)  ·  没(有) + үйл үг (өнгөрсөнд болоогүй)', 2),
+('gr.hsk1-p3', 'grammar', 1, '吗', '吗', '...уу/үү? (асуултын үг) · Бүтэц: [мэдэгдэх өгүүлбэр] + 吗？', 3),
+('gr.hsk1-p4', 'grammar', 1, '的', '的', '-ын/-ийн (эзэмшил) · Бүтэц: эзэмшигч + 的 + юм  ·  我的 / 你的 / 老师的', 4),
+('gr.hsk1-p5', 'grammar', 1, '有', '有', '...тай; ...байгаа (эзэмших/оршихуй) · Бүтэц: эзэмшигч + 有 + юм  ·  газар + 有 + юм  ·  үгүйсгэл: 没有', 5),
+('gr.hsk1-p6', 'grammar', 1, '很 + тэмдэг нэр', '很 + тэмдэг нэр', 'тэмдэг нэрийн өгүүлэхүүн · Бүтэц: А + 很/非常/太 + тэмдэг нэр  ·  (是 ХЭРЭГГҮЙ)', 6),
+('gr.hsk1-p7', 'grammar', 1, '在 / 正在', '在 / 正在', '...ж байна (үргэлжлэх) · Бүтэц: А + (正)在 + үйл үг (+ 呢)', 7),
+('gr.hsk1-p8', 'grammar', 1, '了', '了', '-лаа/-лээ (дуусал/өөрчлөлт) · Бүтэц: үйл үг + 了 (дуусал)  ·  ... + 了 (өөрчлөлт)', 8),
+('gr.hsk1-p9', 'grammar', 1, '比', '比', '-аас (харьцуулах) · Бүтэц: А + 比 + В + тэмдэг нэр  ·  эсрэг: А + 没有 + В + тэмдэг нэр', 9),
+('gr.hsk1-p10', 'grammar', 1, '还是', '还是', 'эсвэл (сонгох асуулт) · Бүтэц: ... А + 还是 + В？', 10),
+('gr.hsk1-p11', 'grammar', 1, '会/能/想/要', '会/能/想/要', 'туслах үйл үг · Бүтэц: А + 会/能/想/要 + үйл үг  ·  үгүйсгэл: 不会/不能/不想/不要', 11),
+('gr.hsk1-p12', 'grammar', 1, '什么/谁/哪儿/几/多少', '什么/谁/哪儿/几/多少', 'тусгай асуулт · Бүтэц: ... + 什么/谁/哪儿/几/多少 + ...？ (асуух үгийг байрандаа тавина)', 12),
+('gr.hsk1-p13', 'grammar', 1, 'V不V', 'V不V', 'эерэг-сөрөг асуулт · Бүтэц: ... V + 不/没 + V ...？  ·  是不是 · 有没有 · 去不去', 13),
+('gr.hsk1-p14', 'grammar', 1, '量词', '量词', 'тооологч үг (个/本/杯) · Бүтэц: тоо + тооологч үг + нэр үг  ·  一个人 · 两本书 · 三杯茶', 14),
+('gr.hsk1-p15', 'grammar', 1, '在/从/跟', '在/从/跟', 'угтвар үг (-д/-аас/-тай) · Бүтэц: А + 在/从/跟 + нэр + үйл үг', 15),
+('gr.hsk1-p16', 'grammar', 1, '吧 / 呢', '吧 / 呢', '-ъя (санал) · -в? (эргүүлж асуух) · Бүтэц: ... + 吧 (санал)  ·  ... + 呢 (эргүүлж асуух / хаана?)', 16),
+('gr.hsk1-p17', 'grammar', 1, '时间·钱数', '时间·钱数', 'цаг, огноо, мөнгө хэлэх · Бүтэц: огноо: ...年 ...月 ...号 · гараг: 星期一~日 · цаг: ...点 · мөнгө: ...块', 17),
+('gr.hsk1-p18', 'grammar', 1, '一边…一边…', '一边…一边…', '...зэрэг (нэгэн зэрэг) · Бүтэц: А + 一边 + үйл үг₁ + 一边 + үйл үг₂', 18),
+('gr.hsk2-p1', 'grammar', 2, '结果补语', '结果补语', 'үр дүнгийн гүйцээгч · Бүтэц: үйл үг + үр дүн (完/到/懂/好/错/清楚) (+ 了)', 1),
+('gr.hsk2-p2', 'grammar', 2, '趋向补语', '趋向补语', 'чиглэлийн гүйцээгч · Бүтэц: үйл үг + 来/去  ·  үйл үг + 上/下/进/出/回/过/起 + 来/去', 2),
+('gr.hsk2-p3', 'grammar', 2, '状态补语 (得)', '状态补语 (得)', 'байдлын гүйцээгч (V得 ...) · Бүтэц: үйл үг + 得 + (很) + тэмдэг нэр  ·  тусагдахуунтай: V + O + V + 得 + ...', 3),
+('gr.hsk2-p4', 'grammar', 2, '数量补语', '数量补语', 'тооны/удааны гүйцээгч · Бүтэц: үйл үг + (了/过) + тоо + 次/遍/下', 4),
+('gr.hsk2-p5', 'grammar', 2, '着', '着', '...сан хэвээр (тогтсон байдал) · Бүтэц: үйл үг + 着  ·  V₁着 + V₂ (нэгийг хийсэн хэвээр нөгөөг хийх)', 5),
+('gr.hsk2-p6', 'grammar', 2, '过', '过', '...ж байсан (туршлага) · Бүтэц: үйл үг + 过  ·  үгүйсгэл: 没 + үйл үг + 过', 6),
+('gr.hsk2-p7', 'grammar', 2, '是……的', '是……的', 'онцлох (өнгөрсний) · Бүтэц: ... 是 + [онцлох хэсэг] + үйл үг + 的', 7),
+('gr.hsk2-p8', 'grammar', 2, '连动句', '连动句', 'дараалсан үйлдэл · Бүтэц: өгүүлэгдэхүүн + үйл үг₁ (+O) + үйл үг₂ (+O)', 8),
+('gr.hsk2-p9', 'grammar', 2, '双宾语句', '双宾语句', 'давхар тусагдахуун · Бүтэц: өгүүлэгдэхүүн + үйл үг + хэнд (O₁) + юуг (O₂)', 9),
+('gr.hsk2-p10', 'grammar', 2, '存现句', '存现句', 'оршихуй (газар + V着 + юм) · Бүтэц: газар + үйл үг + 着 + (тоо) + юм', 10),
+('gr.hsk2-p11', 'grammar', 2, '比较句 (өргөтгөл)', '比较句 (өргөтгөл)', '比 更/还 · 跟…一样 · 不如 · Бүтэц: А比B更/还+тэмдэг нэр  ·  А跟B一样(+тэмдэг нэр)  ·  А不如B(+тэмдэг нэр)', 11),
+('gr.hsk2-p12', 'grammar', 2, '动词重叠', '动词重叠', 'үйл үг давтах (зөөлрүүлэх) · Бүтэц: A → AA / A一A (看看 · 看一看)  ·  AB → ABAB (休息休息)', 12),
+('gr.hsk2-p13', 'grammar', 2, '因为……所以……', '因为……所以……', 'учир нь… тиймээс… · Бүтэц: 因为 + шалтгаан，所以 + үр дагавар', 13),
+('gr.hsk2-p14', 'grammar', 2, '虽然……但是……', '虽然……但是……', 'хэдийгээр… гэвч… · Бүтэц: 虽然 + ..., 但是/可是 + ...', 14),
+('gr.hsk2-p15', 'grammar', 2, '如果……就……', '如果……就……', 'хэрэв… бол… · Бүтэц: 如果 + нөхцөл，(өгүүлэгдэхүүн) 就 + үр дүн', 15),
+('gr.hsk2-p16', 'grammar', 2, '一……就……', '一……就……', '…даруйдаа / …магц · Бүтэц: ... 一 + үйл үг₁ + 就 + үйл үг₂', 16),
+('gr.hsk2-p17', 'grammar', 2, '不但……而且……', '不但……而且……', '…төдийгүй …бас · Бүтэц: 不但 + ..., 而且 + ...', 17),
+('gr.hsk2-p18', 'grammar', 2, '先……再/然后……', '先……再/然后……', 'эхлээд… дараа нь… · Бүтэц: 先 + үйл үг₁，再/然后 + үйл үг₂', 18),
+('gr.hsk2-p19', 'grammar', 2, '又……又……', '又……又……', '…бас… (хоёр шинж зэрэг) · Бүтэц: 又 + шинж₁ + 又 + шинж₂', 19),
+('gr.hsk2-p20', 'grammar', 2, '越来越……', '越来越……', 'улам бүр… · Бүтэц: ... 越来越 + тэмдэг нэр / мэдрэмжийн үйл үг', 20),
+('gr.hsk2-p21', 'grammar', 2, '(在)……以前/以后', '(在)……以前/以后', '…өмнө / …дараа · Бүтэц: [үйл явдал] + 以前/以后', 21),
+('gr.hsk3-p1', 'grammar', 3, '把字句', '把字句', '把 өгүүлбэр (тухайн юмыг яасан) · Бүтэц: өгүүлэгдэхүүн + 把 + тусагдахуун + үйл үг + нэмэлт (在/到+газар · гүйцээгч · 了)', 1),
+('gr.hsk3-p2', 'grammar', 3, '被动句', '被动句', '被 өгүүлбэр (идэвхгүй, -гдсэн) · Бүтэц: өгүүлэгдэхүүн + 被/叫/让 + (хийгч) + үйл үг + нэмэлт', 2),
+('gr.hsk3-p3', 'grammar', 3, '兼语句', '兼语句', 'давхар үүрэгт (захирах/хүсэх) · Бүтэц: өгүүлэгдэхүүн + 让/叫/请 + хүн + үйл үг₂ (+O)', 3),
+('gr.hsk3-p4', 'grammar', 3, '连动句2', '连动句2', 'дараалсан үйлдэл (арга/зорилго) · Бүтэц: V₁着 + V₂ (арга)  ·  V₁ + V₂ (зорилго)', 4),
+('gr.hsk3-p5', 'grammar', 3, '重动句', '重动句', 'үйл үг давтах (O + гүйцээгч зэрэг) · Бүтэц: өгүүлэгдэхүүн + үйл үг + тусагдахуун + үйл үг + 得 + гүйцээгч', 5),
+('gr.hsk3-p6', 'grammar', 3, '离合词', '离合词', 'салддаг үйл үг (见面/帮忙) · Бүтэц: A + B → A + (нэмэлт) + B  ·  «хэнтэй» = 跟… +离合词', 6),
+('gr.hsk3-p7', 'grammar', 3, '可能补语', '可能补语', 'боломжийн гүйцээгч (чадах/чадахгүй) · Бүтэц: үйл үг + 得 + үр дүн (чадна)  ·  үйл үг + 不 + үр дүн (чадахгүй)', 7),
+('gr.hsk3-p8', 'grammar', 3, '复合趋向补语', '复合趋向补语', 'нийлмэл чиглэлийн гүйцээгч · Бүтэц: үйл үг + 出来/出去/过来/过去/回来/回去/进来/进去/起来/上来/下来 …', 8),
+('gr.hsk3-p9', 'grammar', 3, '程度补语', '程度补语', 'зэргийн гүйцээгч (极了/死了) · Бүтэц: тэмдэг нэр + 极了 / 死了 / 得很', 9),
+('gr.hsk3-p10', 'grammar', 3, '结果补语 (到/住/走)', '结果补语 (到/住/走)', 'үр дүнгийн гүйцээгч (到/住/走) · Бүтэц: үйл үг + 到/住/走 (+ 了)', 10),
+('gr.hsk3-p11', 'grammar', 3, '时量补语', '时量补语', 'хугацааны гүйцээгч (хэр удсан) · Бүтэц: үйл үг + 了 + хугацаа (+ тусагдахуун)', 11),
+('gr.hsk3-p12', 'grammar', 3, '比较句4', '比较句4', 'харьцуулалт (比 + тоо хэмжээ) · Бүтэц: А + V得 + 比 + B + тэмдэг нэр  ·  А比B + тэмдэг нэр + зөрүү (三岁/一点儿)', 12),
+('gr.hsk3-p13', 'grammar', 3, '只有……才……', '只有……才……', 'зөвхөн… бол сая… · Бүтэц: 只有 + (цорын ганц нөхцөл)，才 + үр дүн', 13),
+('gr.hsk3-p14', 'grammar', 3, '要是……就……', '要是……就……', 'хэрэв… бол… (ярианы) · Бүтэц: 要是 + нөхцөл，(өгүүлэгдэхүүн) 就 + үр дүн', 14),
+('gr.hsk3-p15', 'grammar', 3, '不是……就是……', '不是……就是……', '…биш бол …(нэг нь заавал) · Бүтэц: 不是 + А，就是 + В (хоёрын нэг нь заавал)', 15),
+('gr.hsk3-p16', 'grammar', 3, '不仅……还……', '不仅……还……', '…төдийгүй …бас · Бүтэц: 不仅 + ..., 还/而且 + ...', 16),
+('gr.hsk3-p17', 'grammar', 3, '除了……以外', '除了……以外', '…-аас гадна / …-аас бусад · Бүтэц: 除了 + А（以外），还/也 + В (нэмэх)  ·  除了 + А，都 + ... (хасах)', 17),
+('gr.hsk3-p18', 'grammar', 3, '越……越……', '越……越……', '…тусам …болно · Бүтэц: 越 + үйл үг₁ + 越 + тэмдэг нэр/үйл үг₂', 18),
+('gr.hsk3-p19', 'grammar', 3, '对……来说', '对……来说', '…-ийн хувьд / …-д бол · Бүтэц: 对 + хүн/юм + 来说，...', 19),
+('gr.hsk3-p20', 'grammar', 3, '一……也/都+不/没……', '一……也/都+不/没……', 'нэг ч … үгүй (бүрэн үгүйсгэл) · Бүтэц: 一 + (тоо хэмжээ) + 也/都 + 不/没 + ...', 20),
+('gr.hsk3-p21', 'grammar', 3, '反问句 (不是……吗？)', '反问句 (不是……吗？)', '…биш гэж үү? (онцлох асуулт) · Бүтэц: 不是 + ... + 吗？  ·  难道 + ... + 吗？', 21),
+('gr.hsk4-p1', 'grammar', 4, '不管/无论……都……', '不管/无论……都……', '…ч бай …бай, бүгд… · Бүтэц: 不管/无论 + [асуух үг / сонголт]，都/也 + ...', 1),
+('gr.hsk4-p2', 'grammar', 4, '即使/哪怕……也……', '即使/哪怕……也……', '…байсан ч гэсэн (таамаг) · Бүтэц: 即使/哪怕 + (таамаг нөхцөл)，也 + ...', 2),
+('gr.hsk4-p3', 'grammar', 4, '既然……就……', '既然……就……', '…л юм чинь / …болсон тул · Бүтэц: 既然 + (мэдэгдсэн нөхцөл)，就 + дүгнэлт', 3),
+('gr.hsk4-p4', 'grammar', 4, '不是……而是……', '不是……而是……', '…биш, харин …(залруулга) · Бүтэц: 不是 + А，而是 + В (А биш, харин В)', 4),
+('gr.hsk4-p5', 'grammar', 4, '既……又……', '既……又……', '…бас …бас (бичгийн) · Бүтэц: 既 + шинж₁ + 又/也 + шинж₂', 5),
+('gr.hsk4-p6', 'grammar', 4, '假如/万一……就……', '假如/万一……就……', 'хэрэв / гэнэт …болбол · Бүтэц: 假如/万一 + нөхцөл，就 + ...', 6),
+('gr.hsk4-p7', 'grammar', 4, '连……也/都……', '连……也/都……', 'бүр …хүртэл (онцлох) · Бүтэц: 连 + (туйлын жишээ) + 也/都 + ...', 7),
+('gr.hsk4-p8', 'grammar', 4, '双重否定', '双重否定', 'давхар үгүйсгэл (= хүчтэй баталгаа) · Бүтэц: 不 + 能/会… + 不 + үйл үг  ·  没有…不…', 8),
+('gr.hsk4-p9', 'grammar', 4, '对于……', '对于……', '…-ийн талаар / …-д хандсан · Бүтэц: 对于 + асуудал/юм，...', 9),
+('gr.hsk4-p10', 'grammar', 4, '关于……', '关于……', '…-ийн тухай (сэдэв) · Бүтэц: 关于 + сэдэв，...  ·  关于 + сэдэв + 的 + юм', 10),
+('gr.hsk4-p11', 'grammar', 4, '根据……', '根据……', '…-д үндэслэн / …-ийн дагуу · Бүтэц: 根据 + эх сурвалж/үндэслэл，...', 11),
+('gr.hsk4-p12', 'grammar', 4, '在……方面', '在……方面', '…-ийн хувьд / …талаар · Бүтэц: 在 + сэдэв + 方面，...', 12),
+('gr.hsk4-p13', 'grammar', 4, '(自)……以来', '(自)……以来', '…-аас хойш (одоог хүртэл) · Бүтэц: (自从) + үйл явдал/цаг + 以来，...', 13),
+('gr.hsk4-p14', 'grammar', 4, '于是……', '于是……', 'тэгээд / улмаар · Бүтэц: (эхний явдал)，于是 + (дараагийн явдал)', 14),
+('gr.hsk4-p15', 'grammar', 4, '然而……', '然而……', 'гэвч (бичгийн) · Бүтэц: ...，然而 + (эсрэг үр дүн)', 15),
+('gr.hsk4-p16', 'grammar', 4, '否则……', '否则……', 'эс бөгөөс / тэгэхгүй бол · Бүтэц: (нөхцөл)，否则 + (муу үр дагавар)', 16),
+('gr.hsk4-p17', 'grammar', 4, '甚至……', '甚至……', 'бүр / тэр байтугай · Бүтэц: ...，甚至 + (туйлын жишээ)', 17),
+('gr.hsk4-p18', 'grammar', 4, '看来 / 说不定 / 一般来说', '看来 / 说不定 / 一般来说', 'бодоход / магадгүй / ерөнхийдөө · Бүтэц: 看来 / 说不定 / 一般来说 + (таамаг / дүгнэлт)', 18),
+('gr.hsk4-p19', 'grammar', 4, '来得及 / 来不及', '来得及 / 来不及', 'амжих / амжихгүй (цаг) · Бүтэц: (还) 来得及 (амжина)  ·  来不及 (амжихгүй)', 19),
+('gr.hsk5-p1', 'grammar', 5, '趋向补语4 (起来/下去)', '趋向补语4 (起来/下去)', 'эхлэх / үргэлжлүүлэх (цагийн утга) · Бүтэц: үйл үг + 起来 (эхлэх)  ·  үйл үг + 下去/下来 (үргэлжлүүлэх/намжих)', 1),
+('gr.hsk5-p2', 'grammar', 5, '可能补语2 (得了/不了)', '可能补语2 (得了/不了)', 'V得了/不了 · 受不了 · Бүтэц: үйл үг + 得了/不了  ·  受不了 · 用得着/用不着', 2),
+('gr.hsk5-p3', 'grammar', 5, '程度补语2 (得不得了)', '程度补语2 (得不得了)', '得不得了 / 坏了 / 透了 · Бүтэц: тэмдэг нэр + 得不得了  ·  тэмдэг нэр + 坏了/透了', 3),
+('gr.hsk5-p4', 'grammar', 5, '状态补语2 (V得+хэллэг)', '状态补语2 (V得+хэллэг)', 'V得 + бүтэн хэллэг · Бүтэц: үйл үг/тэмдэг нэр + 得 + (бүтэн хэллэг/өгүүлбэр)', 4),
+('gr.hsk5-p5', 'grammar', 5, '兼语句3 (使/令)', '兼语句3 (使/令)', '使/令 (…болгох, шалтгаалуулах) · Бүтэц: (юм/хэрэг) + 使/令 + хүн + (мэдрэмж/үр дүн)', 5),
+('gr.hsk5-p6', 'grammar', 5, '比较句5 (跟…相比)', '比较句5 (跟…相比)', '跟……相比 (…-тай харьцуулахад) · Бүтэц: 跟/与 + B + 相比，A + ...', 6),
+('gr.hsk5-p7', 'grammar', 5, '尽管……但是……', '尽管……但是……', 'хэдийгээр… гэвч… (бодит) · Бүтэц: 尽管 + (бодит баримт)，但是/可是 + ...', 7),
+('gr.hsk5-p8', 'grammar', 5, '除非……才/否则……', '除非……才/否则……', 'зөвхөн… л бол / …-аас бусдаар · Бүтэц: 除非 + (зайлшгүй нөхцөл)，才 + ...  ·  除非 + ...，否则 + ...', 8),
+('gr.hsk5-p9', 'grammar', 5, '一旦……就……', '一旦……就……', 'нэгэнт… бол / …болмогц · Бүтэц: 一旦 + (ирээдүйн нөхцөл)，就 + ...', 9),
+('gr.hsk5-p10', 'grammar', 5, '再……也……', '再……也……', 'хичнээн… ч (буулт) · Бүтэц: 再 + (тэмдэг нэр/үйл үг) + 也 + ...', 10),
+('gr.hsk5-p11', 'grammar', 5, '没有……就没有……', '没有……就没有……', '…үгүй бол …ч үгүй · Бүтэц: 没有 + А，就没有 + В', 11),
+('gr.hsk5-p12', 'grammar', 5, '以便 / 从而', '以便 / 从而', '…зорьж / улмаар · Бүтэц: ...，以便 + (зорилго)  ·  ...，从而 + (үр дүн)', 12),
+('gr.hsk5-p13', 'grammar', 5, '从…来看 / 在…看来', '从…来看 / 在…看来', '…-аас үзвэл / …-ийн бодлоор · Бүтэц: 从 + (тал/өнцөг) + 来看，...  ·  在 + хүн + 看来，...', 13),
+('gr.hsk5-p14', 'grammar', 5, '拿……来说', '拿……来说', '…-ийг жишээ болгоход · Бүтэц: 拿 + (жишээ) + 来说，...', 14),
+('gr.hsk5-p15', 'grammar', 5, '到……为止', '到……为止', '…хүртэл (тэр цэг хүртэл) · Бүтэц: 到 + (цаг/цэг) + 为止，...', 15),
+('gr.hsk5-p16', 'grammar', 5, '随着……', '随着……', '…-ийн хэрээр / …дагалдан · Бүтэц: 随着 + (өөрчлөгдөж буй зүйл)，...', 16),
+('gr.hsk5-p17', 'grammar', 5, '凭……', '凭……', '…-д тулгуурлан / …-аар · Бүтэц: 凭 + (тулгуурлах зүйл)，...', 17),
+('gr.hsk5-p18', 'grammar', 5, '再也不/没 · 怎么也/都不', '再也不/没 · 怎么也/都不', 'дахиж …үгүй / яаж ч …үгүй · Бүтэц: 再也 + 不/没 + ...  ·  怎么也/都 + 不/没 + ...', 18),
+('gr.hsk6-p1', 'grammar', 6, '时而……时而……', '时而……时而……', 'заримдаа… заримдаа… (ээлжлэн) · Бүтэц: 时而 + А，时而 + В (ээлжлэн)', 1),
+('gr.hsk6-p2', 'grammar', 6, '要么……要么……', '要么……要么……', 'эсвэл… эсвэл… (хоёрын нэг) · Бүтэц: 要么 + А，要么 + В', 2),
+('gr.hsk6-p3', 'grammar', 6, '不但不/不但没……反而……', '不但不/不但没……反而……', '…биш төдийгүй, харин эсрэгээрээ… · Бүтэц: 不但不/不但没 + (хүлээлт)，反而 + (эсрэг үр дүн)', 3),
+('gr.hsk6-p4', 'grammar', 6, '凡是……都……', '凡是……都……', 'аль ч … бүгд … (үл хамаарах) · Бүтэц: 凡是 + (ангилал)，都 + ...', 4),
+('gr.hsk6-p5', 'grammar', 6, '就算/就是……也……', '就算/就是……也……', '…байсан ч гэсэн (ярианы буулт) · Бүтэц: 就算/就是 + (таамаг нөхцөл)，也 + ...', 5),
+('gr.hsk6-p6', 'grammar', 6, '虽……但/却……', '虽……但/却……', 'хэдий ч … гэвч/харин … (бичгийн богино) · Бүтэц: 虽 + ...，但/可/却 + ...', 6),
+('gr.hsk6-p7', 'grammar', 6, '非……不可', '非……不可', 'заавал …байх ёстой (хүчтэй) · Бүтэц: 非 + (хүн/үйлдэл) + 不可', 7),
+('gr.hsk6-p8', 'grammar', 6, '为了……而……', '为了……而……', '…-ийн төлөө / …-ийн тулд (бичгийн) · Бүтэц: 为了 + (зорилго) + 而 + (үйлдэл)', 8),
+('gr.hsk6-p9', 'grammar', 6, '至于……', '至于……', '…-ийн тухайд бол (сэдэв шилжүүлэх) · Бүтэц: 至于 + (шинэ сэдэв)，...', 9),
+('gr.hsk6-p10', 'grammar', 6, '于……', '于……', '…-д / …-т / …-аас (бичгийн угтвар) · Бүтэц: үйл үг + 于 + (цаг/газар/эх сурвалж)', 10),
+('gr.hsk6-p11', 'grammar', 6, '与/同……', '与/同……', '…-тай / …ба (бичгийн 跟/和) · Бүтэц: A + 与/同 + B  ·  与 + хүн + (хамт үйлдэл)', 11),
+('gr.hsk6-p12', 'grammar', 6, '所 + үйл үг', '所 + үйл үг', '所 + V (…-сан зүйл: 所说的) · Бүтэц: (хэн) + 所 + үйл үг + 的 (+ юм)', 12),
+('gr.hsk6-p13', 'grammar', 6, '趋向补语5 (хийсвэр)', '趋向补语5 (хийсвэр)', '下来/起来/过来 — байдлын утга · Бүтэц: тэмдэг нэр/үйл үг + 下来/起来/过来 (байдлын утга)', 13),
+('gr.hsk6-p14', 'grammar', 6, '据……', '据……', '…-ийн ёсоор / …гэнэ (бичгийн 根据) · Бүтэц: 据 + (эх сурвалж)，...  ·  据说 / 据报道', 14),
+('gr.hsk6-p15', 'grammar', 6, '沿(着)……', '沿(着)……', '…дагуу (зам, гол) · Бүтэц: 沿(着) + (зам/мөр)，...', 15),
+('gr.hsk6-p16', 'grammar', 6, '好(不)容易', '好(不)容易', 'арайхийн / дөнгөж · Бүтэц: 好(不)容易 + 才 + (үйлдэл)', 16),
+('gr.hsk6-p17', 'grammar', 6, '不怎么 / 不怎么样', '不怎么 / 不怎么样', 'тийм ч …биш / тааруухан · Бүтэц: 不怎么 + тэмдэг нэр/үйл үг  ·  ... 不怎么样', 17),
+('gr.hsk6-p18', 'grammar', 6, '(也)就是说', '(也)就是说', 'өөрөөр хэлбэл / тэр нь гэсэн үг · Бүтэц: ...，（也）就是说，...', 18),
+('gr.hsk7-p1', 'grammar', 7, '与其……不如……', '与其……不如……', '…-аас илүү …нь дээр · Бүтэц: 与其 + А，不如 + В (А-аас В нь дээр)', 1),
+('gr.hsk7-p2', 'grammar', 7, '宁可/宁愿……也……', '宁可/宁愿……也……', '…байсан ч …-ыг сонгоно · Бүтэц: 宁可/宁愿 + А，也(不) + В (В-ийн оронд А-г сонгоно)', 2),
+('gr.hsk7-p3', 'grammar', 7, '别说……，连……也/都……', '别说……，连……也/都……', '…-ыг битгий хэл, бүр …хүртэл · Бүтэц: 别说 + А，连 + В + 也/都 + ... (В нь А-аас илүү гайхалтай)', 3),
+('gr.hsk7-p4', 'grammar', 7, '况且 / 何况', '况且 / 何况', 'түүгээр ч барахгүй / тэр байтугай · Бүтэц: ...，况且 + (нэмэлт шалтгаан)  ·  ...，何况 + (бүр илүү тохиолдол)', 4),
+('gr.hsk7-p5', 'grammar', 7, '之所以……，是因为……', '之所以……，是因为……', '…болсон шалтгаан нь … · Бүтэц: А 之所以 + (үр дүн)，是因为 + (шалтгаан)', 5),
+('gr.hsk7-p6', 'grammar', 7, '以致 / 以至于……', '以致 / 以至于……', '…болтлоо хүрсэн (муу үр дагавар) · Бүтэц: (шалтгаан)，以致/以至于 + (үр дагавар)', 6),
+('gr.hsk7-p7', 'grammar', 7, '倘若/若……，就……', '倘若/若……，就……', 'хэрэв… бол (бичгийн 如果) · Бүтэц: 倘若/若 + нөхцөл，就/那么 + ...', 7),
+('gr.hsk7-p8', 'grammar', 7, '即便……，也……', '即便……，也……', '…байсан ч гэсэн (бичгийн 即使) · Бүтэц: 即便 + (таамаг нөхцөл)，也 + ...', 8),
+('gr.hsk7-p9', 'grammar', 7, '固然……，但是……', '固然……，但是……', 'мэдээж … гэхдээ … · Бүтэц: 固然 + (хүлээн зөвшөөрсөн зүйл)，但是/可是 + (гол санаа)', 9),
+('gr.hsk7-p10', 'grammar', 7, '纵然……，也……', '纵然……，也……', 'яахав … гэхэд ч (уран зохиол) · Бүтэц: 纵然 + (таамаг нөхцөл)，也 + ...', 10),
+('gr.hsk7-p11', 'grammar', 7, '任……，也/都……', '任……，也/都……', '…ч байсан, бүгд… (үл хамаарах) · Бүтэц: 任 + [асуух үг]，也/都 + ...', 11),
+('gr.hsk7-p12', 'grammar', 7, '幸亏……，要不然……', '幸亏……，要不然……', 'аз болоход … эс бөгөөс … · Бүтэц: 幸亏 + (азтай нөхцөл)，要不然/否则 + (муу таамаг)', 12),
+('gr.hsk7-p13', 'grammar', 7, '以免 / 免得', '以免 / 免得', '…-аас зайлсхийхийн тулд · Бүтэц: ...，以免/免得 + (зайлсхийх муу зүйл)', 13),
+('gr.hsk7-p14', 'grammar', 7, '以……为……', '以……为……', '…-ыг …болгон үзэх/болгох · Бүтэц: 以 + А + 为 + В (А-ыг В болгон)', 14),
+('gr.hsk7-p15', 'grammar', 7, '无非/只不过……而已/罢了', '无非/只不过……而已/罢了', 'дөнгөж … төдий (багасгах) · Бүтэц: 无非/只不过 + ... + 而已/罢了', 15),
+('gr.hsk7-p16', 'grammar', 7, '所谓……就是……', '所谓……就是……', 'гэгддэг … нь … гэсэн үг · Бүтэц: 所谓 + (нэр томьёо)，就是 + (тодорхойлолт)', 16),
+('gr.hsk7-p17', 'grammar', 7, '程度补语3 (得要命)', '程度补语3 (得要命)', '得不行 / 得要命 / 得要死 · Бүтэц: тэмдэг нэр/үйл үг + 得 + 不行/要命/要死', 17),
+('gr.hsk7-p18', 'grammar', 7, '何必/何苦……呢？', '何必/何苦……呢？', 'яах гэж … ? (хэрэггүй гэсэн санаа) · Бүтэц: 何必/何苦 + ... + 呢？', 18),
+('gr.hsk7-p19', 'grammar', 7, '一面……一面……', '一面……一面……', '…-ангаа … (хоёр үйлдэл зэрэг) · Бүтэц: 一面 + үйлдэл₁，一面 + үйлдэл₂ (зэрэг)', 19),
+('gr.hsk7-p20', 'grammar', 7, '……进而……', '……进而……', 'улмаар (цаашлаад) · Бүтэц: ...，进而 + (цаашлаад дараагийн алхам)', 20),
+('gr.hsk7-p21', 'grammar', 7, '……乃至……', '……乃至……', 'бүр … хүртэл (хүрээ тэлэх) · Бүтэц: ...，乃至 + (бүр илүү өргөн хүрээ)', 21),
+('gr.hsk7-p22', 'grammar', 7, '连……，更不用说……', '连……，更不用说……', '…хүртэл …, тэр байтугай … · Бүтэц: 连 + А + 都/也 + ...，更不用说 + В + 了', 22),
+('gr.hsk7-p23', 'grammar', 7, '……且……', '……且……', 'бас / түүнчлэн (бичгийн) · Бүтэц: А + 且 + В (бас, түүнчлэн)', 23),
+('gr.hsk7-p24', 'grammar', 7, '起初……，后来/才……', '起初……，后来/才……', 'эхэндээ … дараа нь … · Бүтэц: 起初 + (эхний байдал)，后来/才 + (хожмын өөрчлөлт)', 24),
+('gr.hsk7-p25', 'grammar', 7, '……而……则……', '……而……则……', '…, харин … нь … (эсрэгцүүлэх) · Бүтэц: А，而 + В + 则 + ... (А-тай эсрэгцүүлж В нь...)', 25),
+('gr.hsk7-p26', 'grammar', 7, '……反倒/倒……', '……反倒/倒……', 'харин эсрэгээрээ (хүлээлтийн эсрэг) · Бүтэц: ...，(өгүүлэгдэхүүн) + 反倒/倒 + (хүлээлтийн эсрэг)', 26),
+('gr.hsk7-p27', 'grammar', 7, '被……所…… / 为……所……', '被……所…… / 为……所……', '…-д …-гдсан (бичгийн идэвхгүй) · Бүтэц: (объект) + 被/为 + (үйлдэгч) + 所 + үйл үг', 27),
+('gr.hsk7-p28', 'grammar', 7, '比起……来', '比起……来', '…-тай харьцуулбал · Бүтэц: 比起 + B + (来)，A + ...', 28),
+('gr.hsk7-p29', 'grammar', 7, 'A + 形容词 + 于 + B', 'A + 形容词 + 于 + B', 'A нь B-ээс илүү … (бичгийн) · Бүтэц: A + тэмдэг нэр + 于 + B (A нь B-ээс …)', 29),
+('gr.hsk7-p30', 'grammar', 7, '虽说……，但是……', '虽说……，但是……', 'хэдийгээр … гэдэг ч … гэхдээ … · Бүтэц: 虽说 + (хүлээн зөвшөөрөл)，但是/可是 + (гол санаа)', 30),
+('gr.hsk7-p31', 'grammar', 7, '鉴于……，……', '鉴于……，……', '…-ийг харгалзан / …-д үндэслэн · Бүтэц: 鉴于 + (харгалзах нөхцөл)，...', 31),
+('gr.hsk7-p32', 'grammar', 7, '（因）……，故……', '（因）……，故……', '…учир, тиймээс … (бичгийн) · Бүтэц: （因） + (шалтгаан)，故 + (үр дүн)', 32),
+('gr.hsk7-p33', 'grammar', 7, '因……而……', '因……而……', '…-аас болж / …-ийн улмаас · Бүтэц: 因 + (шалтгаан) + 而 + (үр дүн)', 33),
+('gr.hsk7-p34', 'grammar', 7, '别管……，都……', '别管……，都……', '…хамаагүй, бүгд … (ярианы) · Бүтэц: 别管 + [асуух үг/сонголт]，都/也 + ...', 34),
+('gr.hsk7-p35', 'grammar', 7, '状态补语3 (V个)', '状态补语3 (V个)', 'V (得) 个 + үр дүн (ярианы) · Бүтэц: үйл үг + (得) + 个 + (үр дүн/байдал)', 35),
+('gr.hsk7-p36', 'grammar', 7, '不知……好', '不知……好', '…-аа мэдэхгүй (эргэлзээ) · Бүтэц: 不知 + (асуух хэллэг) + 好', 36),
+('gr.hsk7-p37', 'grammar', 7, '要不是……，……', '要不是……，……', '…биш байсан бол / …байгаагүй бол · Бүтэц: 要不是 + (бодит бус нөхцөл)，(就) + (таамаг үр дүн)', 37),
+('gr.hsk7-p38', 'grammar', 7, '……继而……', '……继而……', 'улмаар, дараа нь (залгаа дараалал) · Бүтэц: 先… / 起初…，继而 + (дараагийн үйлдэл)', 38),
+('gr.hsk7-p39', 'grammar', 7, '趁(着)……', '趁(着)……', '…завшааныг ашиглан / …зуур · Бүтэц: 趁(着) + (тохиромжтой үе)，...', 39),
+('gr.hsk7-p40', 'grammar', 7, '基于……', '基于……', '…-д үндэслэн / …-аас үүдэн (албаны) · Бүтэц: 基于 + (үндэслэл)，...', 40),
+('gr.hsk7-p41', 'grammar', 7, '顺着……', '顺着……', '…дагуу / …-ыг даган · Бүтэц: 顺着 + (чиглэл/мөр)，...', 41),
+('gr.hsk7-p42', 'grammar', 7, '之', '之', '…-ийн (бичгийн «的») · Бүтэц: А + 之 + В (А-ийн В)  ·  тоо + 分之 + тоо (бутархай)', 42),
+('gr.hsk7-p43', 'grammar', 7, '未免……', '未免……', 'арай л … / хэтэрхий … (зөөлөн шүүмжлэл) · Бүтэц: ... 未免 + (хэтэрхий ...)', 43),
+('gr.hsk7-p44', 'grammar', 7, '不妨……', '不妨……', '…-вал гэмгүй / зүгээр (зөвлөмж) · Бүтэц: (өгүүлэгдэхүүн) 不妨 + (санал болгож буй үйлдэл)', 44),
+('gr.hsk7-p45', 'grammar', 7, '难怪 / 怪不得', '难怪 / 怪不得', 'гайхах юм алга / тийм болохоор · Бүтэц: 难怪/怪不得 + (одоо ойлгомжтой болсон зүйл)，(原来…)', 45),
+('gr.hsk7-p46', 'grammar', 7, '偏偏……', '偏偏……', 'яаж ийгээд (хүслийн эсрэг) / зориуд · Бүтэц: ... 偏偏 + (хүслийн эсрэг зүйл)', 46),
+('gr.hsk7-p47', 'grammar', 7, '索性……', '索性……', 'болсон хойно нь … / шуудхан · Бүтэц: (нөхцөл болсон тул) 索性 + (эрс шийдэл)', 47),
+('gr.hsk7-p48', 'grammar', 7, '莫非……？', '莫非……？', 'магадгүй … биш биз дээ? (таамаг-асуумж) · Бүтэц: 莫非 + (таамаглал) + (吗/不成)？', 48),
+('gr.hsk7-p49', 'grammar', 7, '凡 / 皆', '凡 / 皆', '凡 (аливаа, бүх) · 皆 (бүгд) · Бүтэц: 凡 + (ангилал) + 皆/都 + ...', 49),
+('gr.hsk7-p50', 'grammar', 7, '亦 / 尚 / 未', '亦 / 尚 / 未', 'бас / одоо хүртэл / хараахан үгүй · Бүтэц: 亦 = 也  ·  尚 = 还  ·  未 = 没/不', 50),
+('gr.hsk7-p51', 'grammar', 7, '比较句6: A 比 名 还 名', '比较句6: A 比 名 还 名', 'A нь B-ээс ч илүү B (туйлшрал) · Бүтэц: A + 比 + B + 还 + (тэмдэг нэр/нэр)', 51),
+('gr.hsk7-p52', 'grammar', 7, '或……，或……', '或……，或……', 'эсвэл … эсвэл … (бичгийн) · Бүтэц: 或 + А，或 + В (，或 + С)', 52),
+('gr.hsk7-p53', 'grammar', 7, '……便……', '……便……', 'тэгээд (даруй) / шууд (бичгийн «就») · Бүтэц: ... + 便 + (шууд дараагийн үйлдэл)', 53),
+('gr.hsk7-p54', 'grammar', 7, '唯独……', '唯独……', 'зөвхөн … л / ганцхан … · Бүтэц: ...，唯独 + (онцгой ялгаатай нэг)', 54),
+('sk.listening.dialogue', 'skill', null, 'Богино яриа сонсох', null, null, 1),
+('sk.listening.interview', 'skill', null, 'Ярилцлага сонсох', null, null, 2),
+('sk.listening.judge', 'skill', null, 'Сонсоод өгүүлбэр зөв эсэхийг шийдэх', null, null, 3),
+('sk.listening.passage', 'skill', null, 'Урт яриа сонсох', null, null, 4),
+('sk.listening.picture_choice', 'skill', null, 'Сонсоод зураг сонгох', null, null, 5),
+('sk.listening.picture_judge', 'skill', null, 'Сонсоод зураг тохирч байгаа эсэхийг шийдэх', null, null, 6),
+('sk.listening.picture_match', 'skill', null, 'Сонсоод зураг тааруулах', null, null, 7),
+('sk.listening.short_news', 'skill', null, 'Богино мэдээ сонсох', null, null, 8),
+('sk.reading.cloze', 'skill', null, 'Цоорхой нөхөх (үг сонгох)', null, null, 9),
+('sk.reading.comprehension', 'skill', null, 'Уншиж ойлгох', null, null, 10),
+('sk.reading.error', 'skill', null, 'Алдаатай өгүүлбэр олох', null, null, 11),
+('sk.reading.judge', 'skill', null, 'Уншаад зөв эсэхийг шийдэх', null, null, 12),
+('sk.reading.match', 'skill', null, 'Өгүүлбэр тааруулах', null, null, 13),
+('sk.reading.match_statement', 'skill', null, 'Агуулгад тохирох өгүүлбэр сонгох', null, null, 14),
+('sk.reading.order', 'skill', null, 'Өгүүлбэр дараалуулах', null, null, 15),
+('sk.reading.picture_match', 'skill', null, 'Өгүүлбэр ↔ зураг тааруулах', null, null, 16),
+('sk.reading.qa_match', 'skill', null, 'Асуулт ↔ хариу тааруулах', null, null, 17),
+('sk.reading.sentence_cloze', 'skill', null, 'Цоорхойд тохирох өгүүлбэр сонгох', null, null, 18),
+('sk.reading.word_picture', 'skill', null, 'Үг ↔ зураг тааруулах', null, null, 19),
+('sk.writing.char', 'skill', null, 'Ханз бичих', null, null, 20),
+('sk.writing.complete', 'skill', null, 'Өгсөн үгээр өгүүлбэр зохиох', null, null, 21),
+('sk.writing.essay', 'skill', null, 'Эссэ бичих', null, null, 22),
+('sk.writing.essay_picture', 'skill', null, 'Зурагт тулгуурлан эссэ бичих', null, null, 23),
+('sk.writing.order', 'skill', null, 'Үг эмхэтгэж өгүүлбэр болгох', null, null, 24),
+('sk.writing.picture', 'skill', null, 'Зураг харж өгүүлбэр бичих', null, null, 25),
+('sk.writing.summary', 'skill', null, 'Уншсанаа товчлон бичих', null, null, 26),
+('voc.hsk1', 'vocab_level', 1, 'HSK 1 үгийн сан', null, 'HSK 3.0 1-р түвшний 500 орчим үг', 1),
+('voc.hsk2', 'vocab_level', 2, 'HSK 2 үгийн сан', null, 'HSK 3.0 2-р түвшний 772 орчим үг', 2),
+('voc.hsk3', 'vocab_level', 3, 'HSK 3 үгийн сан', null, 'HSK 3.0 3-р түвшний 973 орчим үг', 3),
+('voc.hsk4', 'vocab_level', 4, 'HSK 4 үгийн сан', null, 'HSK 3.0 4-р түвшний 1000 орчим үг', 4),
+('voc.hsk5', 'vocab_level', 5, 'HSK 5 үгийн сан', null, 'HSK 3.0 5-р түвшний 1071 орчим үг', 5),
+('voc.hsk6', 'vocab_level', 6, 'HSK 6 үгийн сан', null, 'HSK 3.0 6-р түвшний 1140 орчим үг', 6)
+on conflict (id) do update set kind = excluded.kind, hsk_level = excluded.hsk_level, name_mn = excluded.name_mn, name_zh = excluded.name_zh, desc_mn = excluded.desc_mn, sort = excluded.sort, updated_at = now();
+
+insert into public.skill_edges (skill_id, rel, ref_type, ref_id, locator) values
+('gr.hsk1-p1', 'explains', 'hsk30_point', 'hsk1-p1', '/review/grammar/hsk30/hsk1/hsk1-p1'),
+('gr.hsk1-p2', 'explains', 'hsk30_point', 'hsk1-p2', '/review/grammar/hsk30/hsk1/hsk1-p2'),
+('gr.hsk1-p3', 'explains', 'hsk30_point', 'hsk1-p3', '/review/grammar/hsk30/hsk1/hsk1-p3'),
+('gr.hsk1-p4', 'explains', 'hsk30_point', 'hsk1-p4', '/review/grammar/hsk30/hsk1/hsk1-p4'),
+('gr.hsk1-p5', 'explains', 'hsk30_point', 'hsk1-p5', '/review/grammar/hsk30/hsk1/hsk1-p5'),
+('gr.hsk1-p6', 'explains', 'hsk30_point', 'hsk1-p6', '/review/grammar/hsk30/hsk1/hsk1-p6'),
+('gr.hsk1-p7', 'explains', 'hsk30_point', 'hsk1-p7', '/review/grammar/hsk30/hsk1/hsk1-p7'),
+('gr.hsk1-p8', 'explains', 'hsk30_point', 'hsk1-p8', '/review/grammar/hsk30/hsk1/hsk1-p8'),
+('gr.hsk1-p9', 'explains', 'hsk30_point', 'hsk1-p9', '/review/grammar/hsk30/hsk1/hsk1-p9'),
+('gr.hsk1-p10', 'explains', 'hsk30_point', 'hsk1-p10', '/review/grammar/hsk30/hsk1/hsk1-p10'),
+('gr.hsk1-p11', 'explains', 'hsk30_point', 'hsk1-p11', '/review/grammar/hsk30/hsk1/hsk1-p11'),
+('gr.hsk1-p12', 'explains', 'hsk30_point', 'hsk1-p12', '/review/grammar/hsk30/hsk1/hsk1-p12'),
+('gr.hsk1-p13', 'explains', 'hsk30_point', 'hsk1-p13', '/review/grammar/hsk30/hsk1/hsk1-p13'),
+('gr.hsk1-p14', 'explains', 'hsk30_point', 'hsk1-p14', '/review/grammar/hsk30/hsk1/hsk1-p14'),
+('gr.hsk1-p15', 'explains', 'hsk30_point', 'hsk1-p15', '/review/grammar/hsk30/hsk1/hsk1-p15'),
+('gr.hsk1-p16', 'explains', 'hsk30_point', 'hsk1-p16', '/review/grammar/hsk30/hsk1/hsk1-p16'),
+('gr.hsk1-p17', 'explains', 'hsk30_point', 'hsk1-p17', '/review/grammar/hsk30/hsk1/hsk1-p17'),
+('gr.hsk1-p18', 'explains', 'hsk30_point', 'hsk1-p18', '/review/grammar/hsk30/hsk1/hsk1-p18'),
+('gr.hsk2-p1', 'explains', 'hsk30_point', 'hsk2-p1', '/review/grammar/hsk30/hsk2/hsk2-p1'),
+('gr.hsk2-p2', 'explains', 'hsk30_point', 'hsk2-p2', '/review/grammar/hsk30/hsk2/hsk2-p2'),
+('gr.hsk2-p3', 'explains', 'hsk30_point', 'hsk2-p3', '/review/grammar/hsk30/hsk2/hsk2-p3'),
+('gr.hsk2-p4', 'explains', 'hsk30_point', 'hsk2-p4', '/review/grammar/hsk30/hsk2/hsk2-p4'),
+('gr.hsk2-p5', 'explains', 'hsk30_point', 'hsk2-p5', '/review/grammar/hsk30/hsk2/hsk2-p5'),
+('gr.hsk2-p6', 'explains', 'hsk30_point', 'hsk2-p6', '/review/grammar/hsk30/hsk2/hsk2-p6'),
+('gr.hsk2-p7', 'explains', 'hsk30_point', 'hsk2-p7', '/review/grammar/hsk30/hsk2/hsk2-p7'),
+('gr.hsk2-p8', 'explains', 'hsk30_point', 'hsk2-p8', '/review/grammar/hsk30/hsk2/hsk2-p8'),
+('gr.hsk2-p9', 'explains', 'hsk30_point', 'hsk2-p9', '/review/grammar/hsk30/hsk2/hsk2-p9'),
+('gr.hsk2-p10', 'explains', 'hsk30_point', 'hsk2-p10', '/review/grammar/hsk30/hsk2/hsk2-p10'),
+('gr.hsk2-p11', 'explains', 'hsk30_point', 'hsk2-p11', '/review/grammar/hsk30/hsk2/hsk2-p11'),
+('gr.hsk2-p12', 'explains', 'hsk30_point', 'hsk2-p12', '/review/grammar/hsk30/hsk2/hsk2-p12'),
+('gr.hsk2-p13', 'explains', 'hsk30_point', 'hsk2-p13', '/review/grammar/hsk30/hsk2/hsk2-p13'),
+('gr.hsk2-p14', 'explains', 'hsk30_point', 'hsk2-p14', '/review/grammar/hsk30/hsk2/hsk2-p14'),
+('gr.hsk2-p15', 'explains', 'hsk30_point', 'hsk2-p15', '/review/grammar/hsk30/hsk2/hsk2-p15'),
+('gr.hsk2-p16', 'explains', 'hsk30_point', 'hsk2-p16', '/review/grammar/hsk30/hsk2/hsk2-p16'),
+('gr.hsk2-p17', 'explains', 'hsk30_point', 'hsk2-p17', '/review/grammar/hsk30/hsk2/hsk2-p17'),
+('gr.hsk2-p18', 'explains', 'hsk30_point', 'hsk2-p18', '/review/grammar/hsk30/hsk2/hsk2-p18'),
+('gr.hsk2-p19', 'explains', 'hsk30_point', 'hsk2-p19', '/review/grammar/hsk30/hsk2/hsk2-p19'),
+('gr.hsk2-p20', 'explains', 'hsk30_point', 'hsk2-p20', '/review/grammar/hsk30/hsk2/hsk2-p20'),
+('gr.hsk2-p21', 'explains', 'hsk30_point', 'hsk2-p21', '/review/grammar/hsk30/hsk2/hsk2-p21'),
+('gr.hsk3-p1', 'explains', 'hsk30_point', 'hsk3-p1', '/review/grammar/hsk30/hsk3/hsk3-p1'),
+('gr.hsk3-p2', 'explains', 'hsk30_point', 'hsk3-p2', '/review/grammar/hsk30/hsk3/hsk3-p2'),
+('gr.hsk3-p3', 'explains', 'hsk30_point', 'hsk3-p3', '/review/grammar/hsk30/hsk3/hsk3-p3'),
+('gr.hsk3-p4', 'explains', 'hsk30_point', 'hsk3-p4', '/review/grammar/hsk30/hsk3/hsk3-p4'),
+('gr.hsk3-p5', 'explains', 'hsk30_point', 'hsk3-p5', '/review/grammar/hsk30/hsk3/hsk3-p5'),
+('gr.hsk3-p6', 'explains', 'hsk30_point', 'hsk3-p6', '/review/grammar/hsk30/hsk3/hsk3-p6'),
+('gr.hsk3-p7', 'explains', 'hsk30_point', 'hsk3-p7', '/review/grammar/hsk30/hsk3/hsk3-p7'),
+('gr.hsk3-p8', 'explains', 'hsk30_point', 'hsk3-p8', '/review/grammar/hsk30/hsk3/hsk3-p8'),
+('gr.hsk3-p9', 'explains', 'hsk30_point', 'hsk3-p9', '/review/grammar/hsk30/hsk3/hsk3-p9'),
+('gr.hsk3-p10', 'explains', 'hsk30_point', 'hsk3-p10', '/review/grammar/hsk30/hsk3/hsk3-p10'),
+('gr.hsk3-p11', 'explains', 'hsk30_point', 'hsk3-p11', '/review/grammar/hsk30/hsk3/hsk3-p11'),
+('gr.hsk3-p12', 'explains', 'hsk30_point', 'hsk3-p12', '/review/grammar/hsk30/hsk3/hsk3-p12'),
+('gr.hsk3-p13', 'explains', 'hsk30_point', 'hsk3-p13', '/review/grammar/hsk30/hsk3/hsk3-p13'),
+('gr.hsk3-p14', 'explains', 'hsk30_point', 'hsk3-p14', '/review/grammar/hsk30/hsk3/hsk3-p14'),
+('gr.hsk3-p15', 'explains', 'hsk30_point', 'hsk3-p15', '/review/grammar/hsk30/hsk3/hsk3-p15'),
+('gr.hsk3-p16', 'explains', 'hsk30_point', 'hsk3-p16', '/review/grammar/hsk30/hsk3/hsk3-p16'),
+('gr.hsk3-p17', 'explains', 'hsk30_point', 'hsk3-p17', '/review/grammar/hsk30/hsk3/hsk3-p17'),
+('gr.hsk3-p18', 'explains', 'hsk30_point', 'hsk3-p18', '/review/grammar/hsk30/hsk3/hsk3-p18'),
+('gr.hsk3-p19', 'explains', 'hsk30_point', 'hsk3-p19', '/review/grammar/hsk30/hsk3/hsk3-p19'),
+('gr.hsk3-p20', 'explains', 'hsk30_point', 'hsk3-p20', '/review/grammar/hsk30/hsk3/hsk3-p20'),
+('gr.hsk3-p21', 'explains', 'hsk30_point', 'hsk3-p21', '/review/grammar/hsk30/hsk3/hsk3-p21'),
+('gr.hsk4-p1', 'explains', 'hsk30_point', 'hsk4-p1', '/review/grammar/hsk30/hsk4/hsk4-p1'),
+('gr.hsk4-p2', 'explains', 'hsk30_point', 'hsk4-p2', '/review/grammar/hsk30/hsk4/hsk4-p2'),
+('gr.hsk4-p3', 'explains', 'hsk30_point', 'hsk4-p3', '/review/grammar/hsk30/hsk4/hsk4-p3'),
+('gr.hsk4-p4', 'explains', 'hsk30_point', 'hsk4-p4', '/review/grammar/hsk30/hsk4/hsk4-p4'),
+('gr.hsk4-p5', 'explains', 'hsk30_point', 'hsk4-p5', '/review/grammar/hsk30/hsk4/hsk4-p5'),
+('gr.hsk4-p6', 'explains', 'hsk30_point', 'hsk4-p6', '/review/grammar/hsk30/hsk4/hsk4-p6'),
+('gr.hsk4-p7', 'explains', 'hsk30_point', 'hsk4-p7', '/review/grammar/hsk30/hsk4/hsk4-p7'),
+('gr.hsk4-p8', 'explains', 'hsk30_point', 'hsk4-p8', '/review/grammar/hsk30/hsk4/hsk4-p8'),
+('gr.hsk4-p9', 'explains', 'hsk30_point', 'hsk4-p9', '/review/grammar/hsk30/hsk4/hsk4-p9'),
+('gr.hsk4-p10', 'explains', 'hsk30_point', 'hsk4-p10', '/review/grammar/hsk30/hsk4/hsk4-p10'),
+('gr.hsk4-p11', 'explains', 'hsk30_point', 'hsk4-p11', '/review/grammar/hsk30/hsk4/hsk4-p11'),
+('gr.hsk4-p12', 'explains', 'hsk30_point', 'hsk4-p12', '/review/grammar/hsk30/hsk4/hsk4-p12'),
+('gr.hsk4-p13', 'explains', 'hsk30_point', 'hsk4-p13', '/review/grammar/hsk30/hsk4/hsk4-p13'),
+('gr.hsk4-p14', 'explains', 'hsk30_point', 'hsk4-p14', '/review/grammar/hsk30/hsk4/hsk4-p14'),
+('gr.hsk4-p15', 'explains', 'hsk30_point', 'hsk4-p15', '/review/grammar/hsk30/hsk4/hsk4-p15'),
+('gr.hsk4-p16', 'explains', 'hsk30_point', 'hsk4-p16', '/review/grammar/hsk30/hsk4/hsk4-p16'),
+('gr.hsk4-p17', 'explains', 'hsk30_point', 'hsk4-p17', '/review/grammar/hsk30/hsk4/hsk4-p17'),
+('gr.hsk4-p18', 'explains', 'hsk30_point', 'hsk4-p18', '/review/grammar/hsk30/hsk4/hsk4-p18'),
+('gr.hsk4-p19', 'explains', 'hsk30_point', 'hsk4-p19', '/review/grammar/hsk30/hsk4/hsk4-p19'),
+('gr.hsk5-p1', 'explains', 'hsk30_point', 'hsk5-p1', '/review/grammar/hsk30/hsk5/hsk5-p1'),
+('gr.hsk5-p2', 'explains', 'hsk30_point', 'hsk5-p2', '/review/grammar/hsk30/hsk5/hsk5-p2'),
+('gr.hsk5-p3', 'explains', 'hsk30_point', 'hsk5-p3', '/review/grammar/hsk30/hsk5/hsk5-p3'),
+('gr.hsk5-p4', 'explains', 'hsk30_point', 'hsk5-p4', '/review/grammar/hsk30/hsk5/hsk5-p4'),
+('gr.hsk5-p5', 'explains', 'hsk30_point', 'hsk5-p5', '/review/grammar/hsk30/hsk5/hsk5-p5'),
+('gr.hsk5-p6', 'explains', 'hsk30_point', 'hsk5-p6', '/review/grammar/hsk30/hsk5/hsk5-p6'),
+('gr.hsk5-p7', 'explains', 'hsk30_point', 'hsk5-p7', '/review/grammar/hsk30/hsk5/hsk5-p7'),
+('gr.hsk5-p8', 'explains', 'hsk30_point', 'hsk5-p8', '/review/grammar/hsk30/hsk5/hsk5-p8'),
+('gr.hsk5-p9', 'explains', 'hsk30_point', 'hsk5-p9', '/review/grammar/hsk30/hsk5/hsk5-p9'),
+('gr.hsk5-p10', 'explains', 'hsk30_point', 'hsk5-p10', '/review/grammar/hsk30/hsk5/hsk5-p10'),
+('gr.hsk5-p11', 'explains', 'hsk30_point', 'hsk5-p11', '/review/grammar/hsk30/hsk5/hsk5-p11'),
+('gr.hsk5-p12', 'explains', 'hsk30_point', 'hsk5-p12', '/review/grammar/hsk30/hsk5/hsk5-p12'),
+('gr.hsk5-p13', 'explains', 'hsk30_point', 'hsk5-p13', '/review/grammar/hsk30/hsk5/hsk5-p13'),
+('gr.hsk5-p14', 'explains', 'hsk30_point', 'hsk5-p14', '/review/grammar/hsk30/hsk5/hsk5-p14'),
+('gr.hsk5-p15', 'explains', 'hsk30_point', 'hsk5-p15', '/review/grammar/hsk30/hsk5/hsk5-p15'),
+('gr.hsk5-p16', 'explains', 'hsk30_point', 'hsk5-p16', '/review/grammar/hsk30/hsk5/hsk5-p16'),
+('gr.hsk5-p17', 'explains', 'hsk30_point', 'hsk5-p17', '/review/grammar/hsk30/hsk5/hsk5-p17'),
+('gr.hsk5-p18', 'explains', 'hsk30_point', 'hsk5-p18', '/review/grammar/hsk30/hsk5/hsk5-p18'),
+('gr.hsk6-p1', 'explains', 'hsk30_point', 'hsk6-p1', '/review/grammar/hsk30/hsk6/hsk6-p1'),
+('gr.hsk6-p2', 'explains', 'hsk30_point', 'hsk6-p2', '/review/grammar/hsk30/hsk6/hsk6-p2'),
+('gr.hsk6-p3', 'explains', 'hsk30_point', 'hsk6-p3', '/review/grammar/hsk30/hsk6/hsk6-p3'),
+('gr.hsk6-p4', 'explains', 'hsk30_point', 'hsk6-p4', '/review/grammar/hsk30/hsk6/hsk6-p4'),
+('gr.hsk6-p5', 'explains', 'hsk30_point', 'hsk6-p5', '/review/grammar/hsk30/hsk6/hsk6-p5'),
+('gr.hsk6-p6', 'explains', 'hsk30_point', 'hsk6-p6', '/review/grammar/hsk30/hsk6/hsk6-p6'),
+('gr.hsk6-p7', 'explains', 'hsk30_point', 'hsk6-p7', '/review/grammar/hsk30/hsk6/hsk6-p7'),
+('gr.hsk6-p8', 'explains', 'hsk30_point', 'hsk6-p8', '/review/grammar/hsk30/hsk6/hsk6-p8'),
+('gr.hsk6-p9', 'explains', 'hsk30_point', 'hsk6-p9', '/review/grammar/hsk30/hsk6/hsk6-p9'),
+('gr.hsk6-p10', 'explains', 'hsk30_point', 'hsk6-p10', '/review/grammar/hsk30/hsk6/hsk6-p10'),
+('gr.hsk6-p11', 'explains', 'hsk30_point', 'hsk6-p11', '/review/grammar/hsk30/hsk6/hsk6-p11'),
+('gr.hsk6-p12', 'explains', 'hsk30_point', 'hsk6-p12', '/review/grammar/hsk30/hsk6/hsk6-p12'),
+('gr.hsk6-p13', 'explains', 'hsk30_point', 'hsk6-p13', '/review/grammar/hsk30/hsk6/hsk6-p13'),
+('gr.hsk6-p14', 'explains', 'hsk30_point', 'hsk6-p14', '/review/grammar/hsk30/hsk6/hsk6-p14'),
+('gr.hsk6-p15', 'explains', 'hsk30_point', 'hsk6-p15', '/review/grammar/hsk30/hsk6/hsk6-p15'),
+('gr.hsk6-p16', 'explains', 'hsk30_point', 'hsk6-p16', '/review/grammar/hsk30/hsk6/hsk6-p16'),
+('gr.hsk6-p17', 'explains', 'hsk30_point', 'hsk6-p17', '/review/grammar/hsk30/hsk6/hsk6-p17'),
+('gr.hsk6-p18', 'explains', 'hsk30_point', 'hsk6-p18', '/review/grammar/hsk30/hsk6/hsk6-p18'),
+('gr.hsk7-p1', 'explains', 'hsk30_point', 'hsk7-p1', '/review/grammar/hsk30/hsk7/hsk7-p1'),
+('gr.hsk7-p2', 'explains', 'hsk30_point', 'hsk7-p2', '/review/grammar/hsk30/hsk7/hsk7-p2'),
+('gr.hsk7-p3', 'explains', 'hsk30_point', 'hsk7-p3', '/review/grammar/hsk30/hsk7/hsk7-p3'),
+('gr.hsk7-p4', 'explains', 'hsk30_point', 'hsk7-p4', '/review/grammar/hsk30/hsk7/hsk7-p4'),
+('gr.hsk7-p5', 'explains', 'hsk30_point', 'hsk7-p5', '/review/grammar/hsk30/hsk7/hsk7-p5'),
+('gr.hsk7-p6', 'explains', 'hsk30_point', 'hsk7-p6', '/review/grammar/hsk30/hsk7/hsk7-p6'),
+('gr.hsk7-p7', 'explains', 'hsk30_point', 'hsk7-p7', '/review/grammar/hsk30/hsk7/hsk7-p7'),
+('gr.hsk7-p8', 'explains', 'hsk30_point', 'hsk7-p8', '/review/grammar/hsk30/hsk7/hsk7-p8'),
+('gr.hsk7-p9', 'explains', 'hsk30_point', 'hsk7-p9', '/review/grammar/hsk30/hsk7/hsk7-p9'),
+('gr.hsk7-p10', 'explains', 'hsk30_point', 'hsk7-p10', '/review/grammar/hsk30/hsk7/hsk7-p10'),
+('gr.hsk7-p11', 'explains', 'hsk30_point', 'hsk7-p11', '/review/grammar/hsk30/hsk7/hsk7-p11'),
+('gr.hsk7-p12', 'explains', 'hsk30_point', 'hsk7-p12', '/review/grammar/hsk30/hsk7/hsk7-p12'),
+('gr.hsk7-p13', 'explains', 'hsk30_point', 'hsk7-p13', '/review/grammar/hsk30/hsk7/hsk7-p13'),
+('gr.hsk7-p14', 'explains', 'hsk30_point', 'hsk7-p14', '/review/grammar/hsk30/hsk7/hsk7-p14'),
+('gr.hsk7-p15', 'explains', 'hsk30_point', 'hsk7-p15', '/review/grammar/hsk30/hsk7/hsk7-p15'),
+('gr.hsk7-p16', 'explains', 'hsk30_point', 'hsk7-p16', '/review/grammar/hsk30/hsk7/hsk7-p16'),
+('gr.hsk7-p17', 'explains', 'hsk30_point', 'hsk7-p17', '/review/grammar/hsk30/hsk7/hsk7-p17'),
+('gr.hsk7-p18', 'explains', 'hsk30_point', 'hsk7-p18', '/review/grammar/hsk30/hsk7/hsk7-p18'),
+('gr.hsk7-p19', 'explains', 'hsk30_point', 'hsk7-p19', '/review/grammar/hsk30/hsk7/hsk7-p19'),
+('gr.hsk7-p20', 'explains', 'hsk30_point', 'hsk7-p20', '/review/grammar/hsk30/hsk7/hsk7-p20'),
+('gr.hsk7-p21', 'explains', 'hsk30_point', 'hsk7-p21', '/review/grammar/hsk30/hsk7/hsk7-p21'),
+('gr.hsk7-p22', 'explains', 'hsk30_point', 'hsk7-p22', '/review/grammar/hsk30/hsk7/hsk7-p22'),
+('gr.hsk7-p23', 'explains', 'hsk30_point', 'hsk7-p23', '/review/grammar/hsk30/hsk7/hsk7-p23'),
+('gr.hsk7-p24', 'explains', 'hsk30_point', 'hsk7-p24', '/review/grammar/hsk30/hsk7/hsk7-p24'),
+('gr.hsk7-p25', 'explains', 'hsk30_point', 'hsk7-p25', '/review/grammar/hsk30/hsk7/hsk7-p25'),
+('gr.hsk7-p26', 'explains', 'hsk30_point', 'hsk7-p26', '/review/grammar/hsk30/hsk7/hsk7-p26'),
+('gr.hsk7-p27', 'explains', 'hsk30_point', 'hsk7-p27', '/review/grammar/hsk30/hsk7/hsk7-p27'),
+('gr.hsk7-p28', 'explains', 'hsk30_point', 'hsk7-p28', '/review/grammar/hsk30/hsk7/hsk7-p28'),
+('gr.hsk7-p29', 'explains', 'hsk30_point', 'hsk7-p29', '/review/grammar/hsk30/hsk7/hsk7-p29'),
+('gr.hsk7-p30', 'explains', 'hsk30_point', 'hsk7-p30', '/review/grammar/hsk30/hsk7/hsk7-p30'),
+('gr.hsk7-p31', 'explains', 'hsk30_point', 'hsk7-p31', '/review/grammar/hsk30/hsk7/hsk7-p31'),
+('gr.hsk7-p32', 'explains', 'hsk30_point', 'hsk7-p32', '/review/grammar/hsk30/hsk7/hsk7-p32'),
+('gr.hsk7-p33', 'explains', 'hsk30_point', 'hsk7-p33', '/review/grammar/hsk30/hsk7/hsk7-p33'),
+('gr.hsk7-p34', 'explains', 'hsk30_point', 'hsk7-p34', '/review/grammar/hsk30/hsk7/hsk7-p34'),
+('gr.hsk7-p35', 'explains', 'hsk30_point', 'hsk7-p35', '/review/grammar/hsk30/hsk7/hsk7-p35'),
+('gr.hsk7-p36', 'explains', 'hsk30_point', 'hsk7-p36', '/review/grammar/hsk30/hsk7/hsk7-p36'),
+('gr.hsk7-p37', 'explains', 'hsk30_point', 'hsk7-p37', '/review/grammar/hsk30/hsk7/hsk7-p37'),
+('gr.hsk7-p38', 'explains', 'hsk30_point', 'hsk7-p38', '/review/grammar/hsk30/hsk7/hsk7-p38'),
+('gr.hsk7-p39', 'explains', 'hsk30_point', 'hsk7-p39', '/review/grammar/hsk30/hsk7/hsk7-p39'),
+('gr.hsk7-p40', 'explains', 'hsk30_point', 'hsk7-p40', '/review/grammar/hsk30/hsk7/hsk7-p40'),
+('gr.hsk7-p41', 'explains', 'hsk30_point', 'hsk7-p41', '/review/grammar/hsk30/hsk7/hsk7-p41'),
+('gr.hsk7-p42', 'explains', 'hsk30_point', 'hsk7-p42', '/review/grammar/hsk30/hsk7/hsk7-p42'),
+('gr.hsk7-p43', 'explains', 'hsk30_point', 'hsk7-p43', '/review/grammar/hsk30/hsk7/hsk7-p43'),
+('gr.hsk7-p44', 'explains', 'hsk30_point', 'hsk7-p44', '/review/grammar/hsk30/hsk7/hsk7-p44'),
+('gr.hsk7-p45', 'explains', 'hsk30_point', 'hsk7-p45', '/review/grammar/hsk30/hsk7/hsk7-p45'),
+('gr.hsk7-p46', 'explains', 'hsk30_point', 'hsk7-p46', '/review/grammar/hsk30/hsk7/hsk7-p46'),
+('gr.hsk7-p47', 'explains', 'hsk30_point', 'hsk7-p47', '/review/grammar/hsk30/hsk7/hsk7-p47'),
+('gr.hsk7-p48', 'explains', 'hsk30_point', 'hsk7-p48', '/review/grammar/hsk30/hsk7/hsk7-p48'),
+('gr.hsk7-p49', 'explains', 'hsk30_point', 'hsk7-p49', '/review/grammar/hsk30/hsk7/hsk7-p49'),
+('gr.hsk7-p50', 'explains', 'hsk30_point', 'hsk7-p50', '/review/grammar/hsk30/hsk7/hsk7-p50'),
+('gr.hsk7-p51', 'explains', 'hsk30_point', 'hsk7-p51', '/review/grammar/hsk30/hsk7/hsk7-p51'),
+('gr.hsk7-p52', 'explains', 'hsk30_point', 'hsk7-p52', '/review/grammar/hsk30/hsk7/hsk7-p52'),
+('gr.hsk7-p53', 'explains', 'hsk30_point', 'hsk7-p53', '/review/grammar/hsk30/hsk7/hsk7-p53'),
+('gr.hsk7-p54', 'explains', 'hsk30_point', 'hsk7-p54', '/review/grammar/hsk30/hsk7/hsk7-p54')
+on conflict (skill_id, rel, ref_type, ref_id) do update set locator = excluded.locator;
