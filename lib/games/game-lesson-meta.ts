@@ -37,16 +37,16 @@ export type GameLabels = {
 
 const CHINESE_LABELS: GameLabels = {
   matchTitle: "Холбох",
-  matchDesc: "Хятад үг ↔ орчуулга холбох",
+  matchDesc: "Хичээлийн үгийг орчуулгатай нь холбо",
   translateTitle: "Орчуулах",
-  translateDesc: "Зөв орчуулгыг сонгож сурах",
+  translateDesc: "Хятад үгийн монгол утгыг сонго",
   translateBadge: "Хятад → Монгол",
   missingWordTitle: "Дутуу үг",
   missingWordDesc: "Дутуу үгийг бөглөж өгүүлбэр гүйцээ",
   arrangeTitle: "Дараалал",
-  arrangeDesc: "Үсгийг зөв дараалалд оруулах",
+  arrangeDesc: "Ханзыг зөв дараалалд оруулж өгүүлбэр бүтээ",
   strokeTitle: "Дутуу бүрдэл",
-  strokeDesc: "Ханзны бүтэц / 偏旁 таних",
+  strokeDesc: "Ханзны дутуу бүрдэл хэсгийг ол",
   targetScriptLabel: "Хятад",
   levelLabel: "HSK",
   strokeEmptyMessage:

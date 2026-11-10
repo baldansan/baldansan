@@ -49,7 +49,7 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     id: "hsk-vocab-quiz",
     slug: "hsk-vocab-quiz",
     title: "Үгийн сорил",
-    desc: "Утга · пиньинь · сонсгол · клоз",
+    desc: "Давтах үгээ 6 төрлөөр шалгана · SRS-тэй",
     icon: "🎯",
     gradient: "linear-gradient(145deg, #14b8a6, #0d9488)",
     badge: "Quiz",
@@ -59,7 +59,7 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     id: "dictation",
     slug: "dictation",
     title: "Диктант",
-    desc: "Сонсоод ханзаар бич",
+    desc: "Сонсоод ханзаар нь угсарч бич",
     icon: "👂",
     gradient: "linear-gradient(145deg, #38bdf8, #0284c7)",
     badge: "Сонсгол",
@@ -69,7 +69,7 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     id: "daily-challenge",
     slug: "daily-challenge",
     title: "Өдрийн сорил",
-    desc: "Өдөрт нэг удаа",
+    desc: "Өдөрт нэг удаа 10 асуулт, 3 амь",
     icon: "📅",
     gradient: "linear-gradient(145deg, #ffc94d, #f59e0b)",
     badge: "Өдөр",
@@ -78,8 +78,8 @@ const CHINESE_HSK_GAMES: GameCard[] = [
   {
     id: "mock-tests",
     slug: "mock-tests",
-    title: "Мок шалгалт",
-    desc: "HSK шалгалтын бэлтгэл",
+    title: "HSK загвар шалгалт",
+    desc: "Жинхэнэ шалгалт шиг, тайлбартай",
     icon: "🎓",
     gradient: "linear-gradient(145deg, #9b6bff, #6d28d9)",
     badge: "HSK",
@@ -89,9 +89,9 @@ const CHINESE_HSK_GAMES: GameCard[] = [
 
 /** Secondary variants kept as small links — not primary tiles. */
 const EXTRA_GAME_LINKS = [
-  { slug: "speed", label: "⚡ Хурдны тэмцээн" },
-  { slug: "radical", label: "🧱 Ханз задлах" },
-  { slug: "srs-marathon", label: "🏃 SRS марафон" },
+  { slug: "speed", label: "⚡ Хурдны тэмцээн — цагтай үгийн сорил" },
+  { slug: "radical", label: "🧱 Ханз задлах — бүрдэл хэсгээр нь" },
+  { slug: "srs-marathon", label: "🏃 SRS марафон — давтах үгээ дараалан" },
 ] as const;
 
 function gamesForLanguage(
