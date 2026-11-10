@@ -1,5 +1,6 @@
 "use client";
 
+import { describeTestId } from "@/lib/mock-test/test-id-meta";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -151,7 +152,7 @@ export function MockTestListClient({
           );
           return (
             <section key={lvl} className="bs-mt-level-section">
-              <h2 className="bs-mt-section-title">HSK {lvl}</h2>
+              <h2 className="bs-mt-section-title">HSK {lvl} <span className="text-xs font-normal text-[var(--app-muted)]">· жинхэнэ шалгалтууд (HSK 2.0 бүтэц, 6 түвшин)</span></h2>
               <div className="bs-mt-card-list">
                 {levelTests.map((test, index) => {
                   const skillKeys = skillKeysForTest(test);
@@ -170,7 +171,7 @@ export function MockTestListClient({
                         >
                           <div className="bs-mt-card-head">
                             <h3 className="bs-mt-card-title">
-                              Загвар {index + 1}
+                              {describeTestId(test.id)?.label ?? `Загвар ${index + 1}`}
                             </h3>
                             <span className="bs-mt-card-badge">{test.id}</span>
                           </div>
