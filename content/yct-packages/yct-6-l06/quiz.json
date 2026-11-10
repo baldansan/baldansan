@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Цагдаа» хятадаар аль нь вэ?",
+  "options": [
+   "演员",
+   "售票员",
+   "记者",
+   "警察"
+  ],
+  "correct_answer": "警察",
+  "explanation": "警察 (jǐngchá) = цагдаа.",
+  "order_index": 1,
+  "id": "yct-6-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Жүжигчин» хятадаар аль нь вэ?",
+  "options": [
+   "新闻",
+   "电灯",
+   "演员",
+   "警察"
+  ],
+  "correct_answer": "演员",
+  "explanation": "演员 (yǎnyuán) = жүжигчин.",
+  "order_index": 2,
+  "id": "yct-6-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сэтгүүлч» хятадаар аль нь вэ?",
+  "options": [
+   "记者",
+   "警察",
+   "演员",
+   "医生"
+  ],
+  "correct_answer": "记者",
+  "explanation": "记者 (jìzhě) = сэтгүүлч.",
+  "order_index": 3,
+  "id": "yct-6-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тасалбар зардаг хүн» хятадаар аль нь вэ?",
+  "options": [
+   "售票员",
+   "服务员",
+   "记者",
+   "警察"
+  ],
+  "correct_answer": "售票员",
+  "explanation": "售票员 (shòupiàoyuán) = тасалбар зардаг хүн.",
+  "order_index": 4,
+  "id": "yct-6-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чийдэн» хятадаар аль нь вэ?",
+  "options": [
+   "节目",
+   "新闻",
+   "表演",
+   "电灯"
+  ],
+  "correct_answer": "电灯",
+  "explanation": "电灯 (diàndēng) = цахилгаан чийдэн.",
+  "order_index": 5,
+  "id": "yct-6-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«表演» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "таах",
+   "чухал",
+   "тоглох",
+   "мэдээ"
+  ],
+  "correct_answer": "тоглох",
+  "explanation": "表演 (biǎoyǎn) = тайзан дээр тоглох.",
+  "order_index": 6,
+  "id": "yct-6-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«节目» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "чийдэн",
+   "цагдаа",
+   "тоглолт, нэвтрүүлэг",
+   "мэдээ"
+  ],
+  "correct_answer": "тоглолт, нэвтрүүлэг",
+  "explanation": "节目 (jiémù) = тоглолт, нэвтрүүлэг.",
+  "order_index": 7,
+  "id": "yct-6-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«猜» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "болох",
+   "тоглох",
+   "таах",
+   "харах"
+  ],
+  "correct_answer": "таах",
+  "explanation": "猜 (cāi) = таах.",
+  "order_index": 8,
+  "id": "yct-6-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«重要» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "тоглолт",
+   "чухал",
+   "мэдээ",
+   "чийдэн"
+  ],
+  "correct_answer": "чухал",
+  "explanation": "重要 (zhòngyào) = чухал.",
+  "order_index": 9,
+  "id": "yct-6-l06-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«新闻» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "тоглолт",
+   "чухал",
+   "мэдээ",
+   "жүжигчин"
+  ],
+  "correct_answer": "мэдээ",
+  "explanation": "新闻 (xīnwén) = мэдээ.",
+  "order_index": 10,
+  "id": "yct-6-l06-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«应该» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "…ёстой",
+   "харах",
+   "таах",
+   "…болох"
+  ],
+  "correct_answer": "…ёстой",
+  "explanation": "应该 (yīnggāi) = …ёстой, …хэрэгтэй.",
+  "order_index": 11,
+  "id": "yct-6-l06-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«受欢迎» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "олонд таалагдах",
+   "мартах",
+   "айх",
+   "дургүй байх"
+  ],
+  "correct_answer": "олонд таалагдах",
+  "explanation": "受欢迎 (shòu huānyíng) = олонд таалагдах, алдартай.",
+  "order_index": 12,
+  "id": "yct-6-l06-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yǎnyuán» гэж уншдаг үг:",
+  "options": [
+   "新闻",
+   "记者",
+   "演员",
+   "警察"
+  ],
+  "correct_answer": "演员",
+  "explanation": "演员 = yǎnyuán = жүжигчин.",
+  "order_index": 13,
+  "id": "yct-6-l06-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «diàndēng» гэж уншдаг үг:",
+  "options": [
+   "电灯",
+   "应该",
+   "节目",
+   "重要"
+  ],
+  "correct_answer": "电灯",
+  "explanation": "电灯 = diàndēng = чийдэн.",
+  "order_index": 14,
+  "id": "yct-6-l06-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yīnggāi» гэж уншдаг үг:",
+  "options": [
+   "重要",
+   "新闻",
+   "表演",
+   "应该"
+  ],
+  "correct_answer": "应该",
+  "explanation": "应该 = yīnggāi = …ёстой.",
+  "order_index": 15,
+  "id": "yct-6-l06-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shòupiàoyuán» гэж уншдаг үг:",
+  "options": [
+   "演员",
+   "售票员",
+   "记者",
+   "警察"
+  ],
+  "correct_answer": "售票员",
+  "explanation": "售票员 = shòupiàoyuán = тасалбар зардаг хүн.",
+  "order_index": 16,
+  "id": "yct-6-l06-q16",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь охин ямар дүр тоглосон бэ?",
+  "options": [
+   "Сэтгүүлч",
+   "Тасалбар зардаг хүн",
+   "Цагдаа",
+   "Буудлын чийдэн"
+  ],
+  "correct_answer": "Буудлын чийдэн",
+  "explanation": "我表演车站的电灯。",
+  "order_index": 17,
+  "id": "yct-6-l06-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你猜。» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Чи тогло.",
+   "Чи сонс.",
+   "Чи хар.",
+   "Чи таагаарай."
+  ],
+  "correct_answer": "Чи таагаарай.",
+  "explanation": "猜 = таах.",
+  "order_index": 18,
+  "id": "yct-6-l06-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Жек (杰克) өсөөд юу болмоор байна вэ?",
+  "options": [
+   "Цагдаа",
+   "Эмч",
+   "Сэтгүүлч",
+   "Жүжигчин"
+  ],
+  "correct_answer": "Сэтгүүлч",
+  "explanation": "杰克想当记者。",
+  "order_index": 19,
+  "id": "yct-6-l06-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Охин яагаад жүжигчин болмоор байна вэ?",
+  "options": [
+   "Цагдаа болж чадахгүй учир",
+   "Тоглох дуртай учир",
+   "Мөнгө олохыг хүсдэг учир",
+   "Багш хэлсэн учир"
+  ],
+  "correct_answer": "Тоглох дуртай учир",
+  "explanation": "因为我喜欢表演。",
+  "order_index": 20,
+  "id": "yct-6-l06-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Үнэг барыг яаж хуурсан бэ?",
+  "options": [
+   "Ухаалаг асуулт асуусан",
+   "Зугтаж явсан",
+   "«Би энд хаан» гэж хэлсэн",
+   "Хоол өгсөн"
+  ],
+  "correct_answer": "«Би энд хаан» гэж хэлсэн",
+  "explanation": "狐狸说：“我是这里的大王。”",
+  "order_index": 21,
+  "id": "yct-6-l06-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我想（ ）演员，因为我喜欢表演。",
+  "options": [
+   "猜",
+   "当",
+   "看见",
+   "有"
+  ],
+  "correct_answer": "当",
+  "explanation": "想当 = болмоор.",
+  "order_index": 22,
+  "id": "yct-6-l06-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我一回家（ ）睡觉。",
+  "options": [
+   "还",
+   "就",
+   "也",
+   "都"
+  ],
+  "correct_answer": "就",
+  "explanation": "一……就……",
+  "order_index": 23,
+  "id": "yct-6-l06-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ），我表演什么？",
+  "options": [
+   "猜",
+   "新闻",
+   "节目",
+   "重要"
+  ],
+  "correct_answer": "猜",
+  "explanation": "你猜 = чи таагаарай.",
+  "order_index": 24,
+  "id": "yct-6-l06-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "朋友（ ）互相帮助。",
+  "options": [
+   "表演",
+   "电灯",
+   "警察",
+   "应该"
+  ],
+  "correct_answer": "应该",
+  "explanation": "应该 = ёстой.",
+  "order_index": 25,
+  "id": "yct-6-l06-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个考试很（ ）。",
+  "options": [
+   "重要",
+   "表演",
+   "节目",
+   "看见"
+  ],
+  "correct_answer": "重要",
+  "explanation": "很重要 = их чухал.",
+  "order_index": 26,
+  "id": "yct-6-l06-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Чи гэртээ ирмэгцээ хичээлээ хийдэг. Үүнийг хятадаар хэлбэл:",
+  "options": [
+   "我做作业回家。",
+   "我一回家就做作业。",
+   "我回家了做作业。",
+   "我不回家做作业。"
+  ],
+  "correct_answer": "我一回家就做作业。",
+  "explanation": "一……就……",
+  "order_index": 27,
+  "id": "yct-6-l06-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Бар амьтад үнэгээс айж байна гэж бодсон. Үнэндээ тэд хэнээс айсан бэ?",
+  "options": [
+   "Үнэгээс",
+   "Хаанаас",
+   "Барнаас",
+   "Туулайгаас"
+  ],
+  "correct_answer": "Барнаас",
+  "explanation": "它们是怕老虎。",
+  "order_index": 28,
+  "id": "yct-6-l06-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

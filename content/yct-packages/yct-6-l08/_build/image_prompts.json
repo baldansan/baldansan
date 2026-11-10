@@ -1,0 +1,170 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "小鱼被小猫吃了。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands in a cosy living room with three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap); a smashed fishbowl on the floor and a naughty kitten with a fish tail in its mouth peeking from behind a sofa, a speech bubble with the Chinese text 小鱼被小猫吃了 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-bei.jpg",
+  "aspect": "1:1",
+  "title": "被",
+  "section": "vocabulary",
+  "prompt": "A cartoon scene showing passive action: a little fish with surprised face being gobbled by a cat, an arrow pointing from the cat to the fish, the yellow calf boy in blue vest watching and holding his head. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-you.jpg",
+  "aspect": "1:1",
+  "title": "又",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap arriving late at school the second time, a calendar with two days checked and a clock, the teacher camel with glasses shaking her head; a big 'again' repeat arrow. No English text.",
+  "chars": [
+   "bor",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-yugang.jpg",
+  "aspect": "1:1",
+  "title": "鱼缸",
+  "section": "vocabulary",
+  "prompt": "A round glass fishbowl with a goldfish and green plants on a table, the calf girl in yellow dress with pink ribbon looking at it with happy eyes. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zhong.jpg",
+  "aspect": "1:1",
+  "title": "种",
+  "section": "vocabulary",
+  "prompt": "A row of three kinds of ice cream (cone, cup, popsicle) on a counter with labels showing different kinds; the yellow calf boy in blue vest points at one. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zuijin.jpg",
+  "aspect": "1:1",
+  "title": "最近",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon in front of a calendar with the last few days highlighted, a small clock turning backward, happy face as she recalls recent days. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-youxi.jpg",
+  "aspect": "1:1",
+  "title": "游戏",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap and the yellow calf boy in blue vest playing a board game and a video game controller on a carpet, colourful dice and cards around. No English text.",
+  "chars": [
+   "bor",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-buzenmeyang.jpg",
+  "aspect": "1:1",
+  "title": "不怎么样",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest holding a test paper with a low mark, shrugging with a so-so wobbly hand gesture, a flat mouth, a thumbs-down in the background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-piping.jpg",
+  "aspect": "1:1",
+  "title": "批评",
+  "section": "vocabulary",
+  "prompt": "The teacher camel with glasses pointing a finger at a calf boy in green cap who looks down guiltily at his open notebook, classroom with blackboard. No English text.",
+  "chars": [
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jueding.jpg",
+  "aspect": "1:1",
+  "title": "决定",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest standing at a fork in the road, with a determined face and a fist raised, a signpost pointing two ways, one arrow glowing. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-kaishi.jpg",
+  "aspect": "1:1",
+  "title": "开始",
+  "section": "vocabulary",
+  "prompt": "Calf girl in yellow dress with pink ribbon standing at a starting line of a running track, the teacher camel with glasses raising a flag to start, a bright green go signal. No English text.",
+  "chars": [
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-po.jpg",
+  "aspect": "1:1",
+  "title": "破",
+  "section": "vocabulary",
+  "prompt": "A brown cloth coin bag with a big hole and gold coins falling out, a broken cracked cup beside it, the brown calf boy in green cap looking worried. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-nanguo.jpg",
+  "aspect": "1:1",
+  "title": "难过",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon sitting alone with a sad face and a single tear, holding a small toy fish, grey rainy window behind her. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你找什么？",
+  "section": "dialogue",
+  "prompt": "A living room: the brown calf boy in green cap standing and the calf girl in yellow dress with pink ribbon sitting on a blue sofa; a smashed fishbowl and a puddle on the floor, a kitten shut behind a door in the background, a speech bubble with the Chinese text 你找什么 in large clear black font. No English text.",
+  "chars": [
+   "bor",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "最近，我非常喜欢玩游戏",
+  "section": "speech",
+  "prompt": "A classroom: the teacher camel with glasses stands beside a calf boy in a green striped shirt at his desk, pointing to his open notebook, the boy looks sad with his head down, two other calf students watch from their desks. No English text.",
+  "chars": [
+   "temee",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "掩耳盗铃",
+  "section": "story",
+  "prompt": "An ancient Chinese thief in a brown vest covering both ears with his hands while reaching toward a bronze bell hanging at a red traditional gate; the bell glows with sound waves and a guard in a purple robe points at him from behind the gate. No English text.",
+  "chars": []
+ }
+]

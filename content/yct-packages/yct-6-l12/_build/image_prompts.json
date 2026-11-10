@@ -1,0 +1,183 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "以后要注意。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands on a school playground pointing at a red triangle warning sign, three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) listen and nod; a speech bubble with the Chinese text 以后要注意 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhuyi.jpg",
+  "aspect": "1:1",
+  "title": "注意",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest at a street crossing holding up one finger and looking carefully left and right with wide attentive eyes, a car waiting far away. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jizhu.jpg",
+  "aspect": "1:1",
+  "title": "记住",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon pointing to her head with a happy smile, a glowing lightbulb and a locked padlock above her head showing that she remembered something. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shen.jpg",
+  "aspect": "1:1",
+  "title": "身",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap holding one complete neat set of clothes: a shirt, trousers and socks folded together on his arms. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-biru.jpg",
+  "aspect": "1:1",
+  "title": "比如",
+  "section": "vocabulary",
+  "prompt": "The teacher camel with glasses pointing at three fruits on a table (an apple, a banana, a grape bunch) while explaining, a small glowing star next to each fruit, the yellow calf boy listening. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-limao.jpg",
+  "aspect": "1:1",
+  "title": "礼貌",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress politely bowing to the teacher camel and smiling, handing over a book with both hands, friendly school corridor. No English text.",
+  "chars": [
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-bixu.jpg",
+  "aspect": "1:1",
+  "title": "必须",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap washing his hands at a sink with soap bubbles before eating a bun, a big green check mark above the sink. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xiaoxin.jpg",
+  "aspect": "1:1",
+  "title": "小心",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest carefully carrying a full glass of water with both hands, tip-toeing slowly on the floor, concentrated face. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-difang.jpg",
+  "aspect": "1:1",
+  "title": "地方",
+  "section": "vocabulary",
+  "prompt": "A colourful map pin and a small park scene (swings, tree, bench) where the calf girl in yellow dress points at the place with a happy face. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-tui.jpg",
+  "aspect": "1:1",
+  "title": "腿",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap sitting and pointing at his own leg (one leg highlighted by a soft glow), shorts, a small bandage on the knee. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-weixian.jpg",
+  "aspect": "1:1",
+  "title": "危险",
+  "section": "vocabulary",
+  "prompt": "A big red triangle danger sign with an exclamation mark standing beside a tall slippery cliff edge, the yellow calf boy in blue vest holding his hands out in a stop gesture. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-tuo.jpg",
+  "aspect": "1:1",
+  "title": "脱",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress taking off a jacket and hanging it on a hook at the door, a pair of boots on the floor. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-paidui.jpg",
+  "aspect": "1:1",
+  "title": "排队",
+  "section": "vocabulary",
+  "prompt": "Four calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap, teacher camel with glasses) standing in a neat line one behind another at a bus stop, a bus arriving. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-zhongjian.jpg",
+  "aspect": "1:1",
+  "title": "中间",
+  "section": "vocabulary",
+  "prompt": "Three calves standing in a row: the calf girl in yellow dress with pink ribbon stands in the middle with a glowing arrow, the yellow boy in blue vest on her left and the brown boy in green cap on her right. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "妈妈，弟弟的腿破了。",
+  "section": "dialogue",
+  "prompt": "At home in the living room, a big calf boy (yellow boy in blue vest) leads his tiny little brother calf who is crying with a scraped knee to their adult camel mother, who kneels with open arms; a speech bubble with the Chinese text 弟弟的腿破了 in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "生活中要注意的事情",
+  "section": "speech",
+  "prompt": "Three scenes in one picture: a calf girl in yellow dress washing her hands at a sink, calves lining up politely to board a subway train, and the brown calf boy in green cap playing football carefully on a field; the teacher camel with glasses stands at the side giving a thumbs up. No English text.",
+  "chars": [
+   "temee",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "孔融让梨",
+  "section": "story",
+  "prompt": "Ancient Chinese family scene: a small four-year-old boy in a red robe politely hands the two big pears to two other children while keeping the smallest pear for himself, his father in a blue robe smiling proudly at the table with a plate of pears. No English text.",
+  "chars": []
+ }
+]

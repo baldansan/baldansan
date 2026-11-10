@@ -1,0 +1,190 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你打扫一下房间好吗？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Inside a cozy yurt-style home, teacher camel with glasses holds a broom and a smiling yellow calf boy in blue vest sweeps the floor, a calf girl in yellow dress with pink ribbon washes a bowl, a brown calf boy in green cap carries a basket of grapes; a speech bubble with the Chinese text 你打扫一下房间好吗 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-mianfen.jpg",
+  "aspect": "1:1",
+  "title": "面粉",
+  "section": "vocabulary",
+  "prompt": "A paper sack of white flour with a little cloud of flour, a wooden rolling pin and dumpling dough beside it, the calf girl in yellow dress with pink ribbon with flour on her nose. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jie.jpg",
+  "aspect": "1:1",
+  "title": "接",
+  "section": "vocabulary",
+  "prompt": "At a train-station exit, the brown calf boy in green cap waves happily and hugs an elderly adult camel grandmother arriving with a suitcase, he is picking her up. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-gou.jpg",
+  "aspect": "1:1",
+  "title": "够",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest holding a bag of flour on a market scale showing half a kilogram, giving a thumbs up and a happy 'enough!' face next to a full basket. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dasao.jpg",
+  "aspect": "1:1",
+  "title": "打扫",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon sweeping a classroom floor with a broom, sparkles on the clean floor, desks in the background. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yixia.jpg",
+  "aspect": "1:1",
+  "title": "一下",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest raising one finger to say 'just a moment', a small clock beside him, friendly polite expression, the brown calf boy waiting patiently. No English text.",
+  "chars": [
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-ganjing.jpg",
+  "aspect": "1:1",
+  "title": "干净",
+  "section": "vocabulary",
+  "prompt": "A sparkling clean white plate and a clean tidy room with sparkles; the calf girl in yellow dress with pink ribbon proudly holding up a shiny clean plate. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiujian.jpg",
+  "aspect": "1:1",
+  "title": "修剪",
+  "section": "vocabulary",
+  "prompt": "An adult camel father mowing a green lawn with a lawn mower in a sunny garden, fresh cut grass flying, the brown calf boy in green cap watching nearby. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhaogu.jpg",
+  "aspect": "1:1",
+  "title": "照顾",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon gently feeding milk to a tiny baby camel calf in a blanket, caring tender expression. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shuizhao.jpg",
+  "aspect": "1:1",
+  "title": "睡着",
+  "section": "vocabulary",
+  "prompt": "A small baby camel calf sleeping peacefully on a sofa hugging a toy monkey, 'zzz' bubbles, the yellow calf boy in blue vest holding a finger to his lips saying quiet. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-huxiang.jpg",
+  "aspect": "1:1",
+  "title": "互相",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest and the brown calf boy in green cap helping each other: one lifts the other up to reach a high shelf while the other passes him a book, two-way arrows. No English text.",
+  "chars": [
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-shenghuo.jpg",
+  "aspect": "1:1",
+  "title": "生活",
+  "section": "vocabulary",
+  "prompt": "A happy camel family at home: father camel mowing, mother camel cooking, a calf girl in yellow dress with pink ribbon and two calf boys playing, warm sunny day, hearts floating. No English text.",
+  "chars": [
+   "ohin",
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jin.jpg",
+  "aspect": "1:1",
+  "title": "斤",
+  "section": "vocabulary",
+  "prompt": "A market kitchen scale showing half a kilogram with a bunch of purple grapes on the pan, the calf girl in yellow dress with pink ribbon pointing at the scale. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-putao.jpg",
+  "aspect": "1:1",
+  "title": "葡萄",
+  "section": "vocabulary",
+  "prompt": "A big bunch of juicy purple grapes with green leaves on a plate, the brown calf boy in green cap smiling and about to taste one. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-caodi.jpg",
+  "aspect": "1:1",
+  "title": "草地",
+  "section": "vocabulary",
+  "prompt": "A wide green grassy meadow with a small windmill house far away and blue sky, the yellow calf boy in blue vest running on the lawn. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "今天吃什么？",
+  "section": "dialogue",
+  "prompt": "A living room: an adult camel mother in an orange polka-dot dress and an adult camel father in a blue shirt talk while the yellow calf boy in blue vest lies on the green sofa reading a book, messy hat, sock and backpack on the floor; a speech bubble with the Chinese text 我还是打扫房间吧 in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "今天星期天",
+  "section": "speech",
+  "prompt": "Sunday morning at home: an adult camel mother mopping the floor, an adult camel sister washing dishes in the kitchen, an adult camel father mowing the lawn seen through a glass door, and the yellow calf boy in blue vest playing with a small baby camel brother on the rug. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "我都帮你做完了",
+  "section": "story",
+  "prompt": "A friendly blue-and-white robot butler holding a towel in a kitchen, proudly spreading its arms next to a clean sink and empty plates, while the calf girl in yellow dress with pink ribbon looks surprised and asks where her lunch is. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ }
+]

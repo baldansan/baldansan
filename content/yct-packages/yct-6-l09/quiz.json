@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Номын сан» хятадаар аль нь вэ?",
+  "options": [
+   "动物园",
+   "图书馆",
+   "杂志",
+   "报纸"
+  ],
+  "correct_answer": "图书馆",
+  "explanation": "图书馆 (túshūguǎn) = номын сан.",
+  "order_index": 1,
+  "id": "yct-6-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сонин» хятадаар аль нь вэ?",
+  "options": [
+   "杂志",
+   "地址",
+   "故事",
+   "报纸"
+  ],
+  "correct_answer": "报纸",
+  "explanation": "报纸 (bàozhǐ) = сонин.",
+  "order_index": 2,
+  "id": "yct-6-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сэтгүүл» хятадаар аль нь вэ?",
+  "options": [
+   "杂志",
+   "图书馆",
+   "超人",
+   "报纸"
+  ],
+  "correct_answer": "杂志",
+  "explanation": "杂志 (zázhì) = сэтгүүл.",
+  "order_index": 3,
+  "id": "yct-6-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«搬家» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хөдлөх",
+   "уулзах",
+   "гэр нүүх",
+   "замаа төөрөх"
+  ],
+  "correct_answer": "гэр нүүх",
+  "explanation": "搬家 (bānjiā) = гэр нүүх.",
+  "order_index": 4,
+  "id": "yct-6-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«附近» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хүч",
+   "хол",
+   "хаяг",
+   "ойр, ойролцоо"
+  ],
+  "correct_answer": "ойр, ойролцоо",
+  "explanation": "附近 (fùjìn) = ойр, ойролцоо.",
+  "order_index": 5,
+  "id": "yct-6-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«地址» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сонин",
+   "хаяг",
+   "и-мэйл",
+   "үлгэр"
+  ],
+  "correct_answer": "хаяг",
+  "explanation": "地址 (dìzhǐ) = хаяг.",
+  "order_index": 6,
+  "id": "yct-6-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«电子邮件» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хаяг",
+   "сонин",
+   "и-мэйл",
+   "сэтгүүл"
+  ],
+  "correct_answer": "и-мэйл",
+  "explanation": "电子邮件 (diànzǐ yóujiàn) = и-мэйл.",
+  "order_index": 7,
+  "id": "yct-6-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«迷路» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "замаа төөрөх",
+   "уулзах",
+   "хөдлөх",
+   "гэр нүүх"
+  ],
+  "correct_answer": "замаа төөрөх",
+  "explanation": "迷路 (mílù) = замаа төөрөх.",
+  "order_index": 8,
+  "id": "yct-6-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«出发» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "төөрөх",
+   "хөдлөх, гарах",
+   "уулзах",
+   "хайх"
+  ],
+  "correct_answer": "хөдлөх, гарах",
+  "explanation": "出发 (chūfā) = хөдлөх, замд гарах.",
+  "order_index": 9,
+  "id": "yct-6-l09-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«见面» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хөдлөх",
+   "нүүх",
+   "залгах",
+   "уулзах"
+  ],
+  "correct_answer": "уулзах",
+  "explanation": "见面 (jiànmiàn) = уулзах.",
+  "order_index": 10,
+  "id": "yct-6-l09-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«力气» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хүч",
+   "хурд",
+   "хөгшин",
+   "өндөр"
+  ],
+  "correct_answer": "хүч",
+  "explanation": "力气 (lìqi) = хүч.",
+  "order_index": 11,
+  "id": "yct-6-l09-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«老» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "шинэ",
+   "жижиг",
+   "хөгшин, настай",
+   "хурдан"
+  ],
+  "correct_answer": "хөгшин, настай",
+  "explanation": "老 (lǎo) = хөгшин, настай.",
+  "order_index": 12,
+  "id": "yct-6-l09-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dìzhǐ» гэж уншдаг үг:",
+  "options": [
+   "附近",
+   "迷路",
+   "故事",
+   "地址"
+  ],
+  "correct_answer": "地址",
+  "explanation": "地址 = dìzhǐ = хаяг.",
+  "order_index": 13,
+  "id": "yct-6-l09-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «fùjìn» гэж уншдаг үг:",
+  "options": [
+   "见面",
+   "附近",
+   "出发",
+   "地址"
+  ],
+  "correct_answer": "附近",
+  "explanation": "附近 = fùjìn = ойр.",
+  "order_index": 14,
+  "id": "yct-6-l09-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «túshūguǎn» гэж уншдаг үг:",
+  "options": [
+   "报纸",
+   "动物园",
+   "图书馆",
+   "杂志"
+  ],
+  "correct_answer": "图书馆",
+  "explanation": "图书馆 = túshūguǎn = номын сан.",
+  "order_index": 15,
+  "id": "yct-6-l09-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «mílù» гэж уншдаг үг:",
+  "options": [
+   "迷路",
+   "出发",
+   "搬家",
+   "见面"
+  ],
+  "correct_answer": "迷路",
+  "explanation": "迷路 = mílù = замаа төөрөх.",
+  "order_index": 16,
+  "id": "yct-6-l09-q16",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь Сяо Ли хаашаа нүүсэн бэ?",
+  "options": [
+   "Сургуулийн ойр",
+   "Амьтны хүрээлэнгийн ойр",
+   "Номын сангийн ойр",
+   "Метроны буудлын ойр"
+  ],
+  "correct_answer": "Амьтны хүрээлэнгийн ойр",
+  "explanation": "搬到动物园附近了。",
+  "order_index": 17,
+  "id": "yct-6-l09-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Тэд хаягийг юугаар авсан бэ?",
+  "options": [
+   "Сэтгүүлээр",
+   "Сонингоор",
+   "Утсаар",
+   "И-мэйлээр"
+  ],
+  "correct_answer": "И-мэйлээр",
+  "explanation": "他给我发电子邮件了。",
+  "order_index": 18,
+  "id": "yct-6-l09-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Тэд хэдэн цагт, хаана уулзахаар болсон бэ?",
+  "options": [
+   "8:30, метроны буудал дээр",
+   "8:00, амьтны хүрээлэнд",
+   "8:30, номын сан дээр",
+   "7:30, метроны буудал дээр"
+  ],
+  "correct_answer": "8:30, метроны буудал дээр",
+  "explanation": "8点半在地铁站见面。",
+  "order_index": 19,
+  "id": "yct-6-l09-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我找得到» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Би замаа төөрсөн",
+   "Би хайхгүй",
+   "Би олж чадна",
+   "Би олж чадахгүй"
+  ],
+  "correct_answer": "Би олж чадна",
+  "explanation": "找得到 = олж чадна.",
+  "order_index": 20,
+  "id": "yct-6-l09-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-д Супермэн яасан гэж байна вэ?",
+  "options": [
+   "Ном уншдаг",
+   "Далайд сэлдэг",
+   "Хөгшин",
+   "Онгоцноос ч хурдан нисдэг"
+  ],
+  "correct_answer": "Онгоцноос ч хурдан нисдэг",
+  "explanation": "他飞得比飞机还快。",
+  "order_index": 21,
+  "id": "yct-6-l09-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）到。（Би олж чадна.）",
+  "options": [
+   "来不",
+   "找得",
+   "好得",
+   "找不"
+  ],
+  "correct_answer": "找得",
+  "explanation": "我找得到 = би олж чадна.",
+  "order_index": 22,
+  "id": "yct-6-l09-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）找不到，我们给他打电话。",
+  "options": [
+   "但是",
+   "因为",
+   "如果",
+   "所以"
+  ],
+  "correct_answer": "如果",
+  "explanation": "如果 = хэрвээ.",
+  "order_index": 23,
+  "id": "yct-6-l09-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他家搬（ ）动物园附近了。",
+  "options": [
+   "到",
+   "和",
+   "比",
+   "对"
+  ],
+  "correct_answer": "到",
+  "explanation": "搬到 = руу нүүх.",
+  "order_index": 24,
+  "id": "yct-6-l09-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们8点半（ ）地铁站见面。",
+  "options": [
+   "比",
+   "在",
+   "把",
+   "和"
+  ],
+  "correct_answer": "在",
+  "explanation": "在地铁站见面 = метроны буудал дээр уулзах.",
+  "order_index": 25,
+  "id": "yct-6-l09-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他飞得比飞机（ ）快。",
+  "options": [
+   "更不",
+   "很",
+   "太",
+   "还"
+  ],
+  "correct_answer": "还",
+  "explanation": "比……还快 = …-аас ч хурдан.",
+  "order_index": 26,
+  "id": "yct-6-l09-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь замаа төөрөх вий гэж санаа зовоод «Замаа битгий төөр» гэж хэлэхдээ:",
+  "options": [
+   "别迷路啊！",
+   "别出发啊！",
+   "别见面啊！",
+   "别搬家啊！"
+  ],
+  "correct_answer": "别迷路啊！",
+  "explanation": "别 + үйлдэл = битгий.",
+  "order_index": 27,
+  "id": "yct-6-l09-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найздаа «8:30-д метроны буудал дээр уулзъя, за юу?» гэж хэлэхдээ:",
+  "options": [
+   "我们见面8点半在地铁站吗？",
+   "我们8点半地铁站在见面。",
+   "我们8点半在地铁站见面，行吗？",
+   "行吗我们8点半见面。"
+  ],
+  "correct_answer": "我们8点半在地铁站见面，行吗？",
+  "explanation": "在地铁站见面, …行吗？",
+  "order_index": 28,
+  "id": "yct-6-l09-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Супермэний тухай «Тэр онгоцноос ч хурдан нисдэг» гэж хэлэхдээ:",
+  "options": [
+   "他还飞得比飞机快。",
+   "他飞得比飞机很快。",
+   "他飞得和飞机不快。",
+   "他飞得比飞机还快。"
+  ],
+  "correct_answer": "他飞得比飞机还快。",
+  "explanation": "比……还快 = …-аас ч хурдан.",
+  "order_index": 29,
+  "id": "yct-6-l09-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

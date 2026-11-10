@@ -1,0 +1,243 @@
+[
+ {
+  "point": "句子写错了 · V + 错了",
+  "gloss_mn": "«Буруу бичсэн» — алдаагаа хэлэх",
+  "structure": "үйлдэл + 错了 → 写错了 · 说错了 · 做错了",
+  "teacher_mn": "Алдаа гаргавал үйлдлийнхээ ард «错了» гэж нэм. «写错了» — буруу бичсэн. «说错了» — буруу хэлсэн. Номын Key sentence: «句子写错了». Алдаагаа хүлээн зөвшөөрөх нь сайн хүний шинж шүү!",
+  "teacher_notes": "Let's find: 名子→名字, 唱哥→唱歌, 百裙子→白裙子, 好及了→好极了, 方间→房间, 妈虎→马虎.",
+  "examples": [
+   {
+    "chinese": "句子写错了。",
+    "pinyin": "Jùzi xiěcuò le.",
+    "mongolian": "Өгүүлбэрийг буруу бичжээ."
+   },
+   {
+    "chinese": "我想写“大家”，可是写错了。",
+    "pinyin": "Wǒ xiǎng xiě “dàjiā”, kěshì xiěcuò le.",
+    "mongolian": "Би «大家» гэж бичих гэсэн чинь буруу биччихсэн."
+   },
+   {
+    "chinese": "弟弟把电话号码写错了。",
+    "pinyin": "Dìdi bǎ diànhuà hàomǎ xiěcuò le.",
+    "mongolian": "Дүү утасны дугаарыг буруу бичжээ."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我错写了。",
+    "right": "我写错了。",
+    "why": "«错» нь үйлдлийн ард ордог."
+   }
+  ],
+  "check": {
+   "question": "«Би буруу хэлчихлээ» хятадаар:",
+   "options": [
+    "我说很错。",
+    "我错说了。",
+    "我说错了。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "这个字我写 ________ 了。",
+    "options": [
+     "地",
+     "才",
+     "错"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 写错了 = буруу бичсэн.",
+    "explanation_wrong_mn": "写错了 — «错» үйлдлийн ард."
+   },
+   {
+    "type": "choice",
+    "question": "«Өгүүлбэрийг буруу бичжээ» хятадаар:",
+    "options": [
+     "句子错写了",
+     "句子写错了",
+     "句子很错写"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 写错了.",
+    "explanation_wrong_mn": "Үйл үг + 错了."
+   },
+   {
+    "type": "judge",
+    "question": "«说错了» гэдэг нь «буруу хэлсэн» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 说错了 = буруу хэлсэн.",
+    "explanation_wrong_mn": "说 = хэлэх, 错 = буруу."
+   }
+  ]
+ },
+ {
+  "point": "妈妈生气地说 · 地",
+  "gloss_mn": "«Уурлан хэлэв» — үйлийг дүрсэлэх",
+  "structure": "байдлын үг + 地 + үйлдэл → 生气地说 · 高兴地唱歌",
+  "teacher_mn": "Хэрхэн хийж байгааг хэлэхдээ үйлдлийнхээ өмнө «…地» тавина. «生气地说» — уурлан хэлэв. «高兴地说» — баярлан хэлэв. «认真地写» — анхааралтай бичих. Эхний үг нь юу мэдэрч байгаагаа хэлнэ.",
+  "teacher_notes": "Key sentence: 妈妈生气地说：“你太马虎了！” Let's match: 她生气地说 / 她高兴地说. Test: 同学们在认真地写汉字。",
+  "examples": [
+   {
+    "chinese": "妈妈生气地说：“你太马虎了！”",
+    "pinyin": "Māma shēngqì de shuō: “Nǐ tài mǎhu le!”",
+    "mongolian": "Ээж уурлан: «Чи дэндүү хайнга юм!» гэв."
+   },
+   {
+    "chinese": "她高兴地说。",
+    "pinyin": "Tā gāoxìng de shuō.",
+    "mongolian": "Тэр баярлан хэлэв."
+   },
+   {
+    "chinese": "同学们在认真地写汉字。",
+    "pinyin": "Tóngxuémen zài rènzhēn de xiě Hànzì.",
+    "mongolian": "Хүүхдүүд анхааралтай ханз бичиж байна."
+   },
+   {
+    "chinese": "他大声地笑了起来。",
+    "pinyin": "Tā dàshēng de xiàole qǐlái.",
+    "mongolian": "Тэр чангаар инээж эхлэв."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "妈妈生气的说。",
+    "right": "妈妈生气地说。",
+    "why": "Үйлийг дүрсэлж байвал «地» гэж бич."
+   }
+  ],
+  "check": {
+   "question": "«Тэр баярлан дуулав» хятадаар:",
+   "options": [
+    "他高兴地唱歌。",
+    "他高兴的歌唱。",
+    "他唱歌高兴。"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "妈妈生气 ________ 说：“你太马虎了！”",
+    "options": [
+     "才",
+     "地",
+     "错"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 生气地说.",
+    "explanation_wrong_mn": "Үйлдлийн өмнө «地»."
+   },
+   {
+    "type": "choice",
+    "question": "«Анхааралтай ханз бичиж байна» хятадаар:",
+    "options": [
+     "认真写地汉字",
+     "认真的写汉字",
+     "认真地写汉字"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 认真地写.",
+    "explanation_wrong_mn": "认真 + 地 + 写."
+   },
+   {
+    "type": "judge",
+    "question": "«高兴地说» гэдэг нь «баярлан хэлэв» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 高兴地说 = баярлан хэлэв.",
+    "explanation_wrong_mn": "高兴 = баяртай, 地说 = хэлэв."
+   }
+  ]
+ },
+ {
+  "point": "才 · 从 · 想起来",
+  "gloss_mn": "«Байж л», «…аас», «санаж ирэх»",
+  "structure": "цаг + 才 + үйлдэл · 从 + газар + үйлдэл · 想起来",
+  "teacher_mn": "«才» гэвэл «оройтож л», «удаж байж». «他十点才起床» — тэр арван цагт л босдог. «从» гэвэл «…аас»: «从家到学校». «想起来» гэвэл мартсан зүйлээ санаж ирэх. Гурвуулаа өнөөдрийн түлхүүр үгс шүү!",
+  "teacher_notes": "Short speech: 爬了10分钟才到。 爸爸才想起来，钥匙忘在汽车里了。 Let's read: 大象从教室里走出来。 Reading: 从她家到学校很远，她周末才回家。",
+  "examples": [
+   {
+    "chinese": "他十点才起床。",
+    "pinyin": "Tā shí diǎn cái qǐchuáng.",
+    "mongolian": "Тэр арван цагт л босдог."
+   },
+   {
+    "chinese": "我们爬了10分钟才到。",
+    "pinyin": "Wǒmen pále shí fēnzhōng cái dào.",
+    "mongolian": "Бид арван минут авирч байж л хүрсэн."
+   },
+   {
+    "chinese": "大象从教室里走出来。",
+    "pinyin": "Dàxiàng cóng jiàoshì li zǒu chūlái.",
+    "mongolian": "Заан ангиас гараад ирэв."
+   },
+   {
+    "chinese": "爸爸才想起来，钥匙忘在汽车里了。",
+    "pinyin": "Bàba cái xiǎng qǐlái, yàoshi wàng zài qìchē li le.",
+    "mongolian": "Аав нь л санав: түлхүүр машинд мартагдчихжээ."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "他才十点起床。",
+    "right": "他十点才起床。",
+    "why": "«才» нь цагийн ард, үйлдлийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Би 9 цагт л босов» хятадаар:",
+   "options": [
+    "我才9点起床。",
+    "我9点起床才。",
+    "我9点才起床。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "他十点 ________ 起床。(оройтож л)",
+    "options": [
+     "从",
+     "地",
+     "才"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 十点才起床.",
+    "explanation_wrong_mn": "才 = л (оройтож)."
+   },
+   {
+    "type": "choice",
+    "question": "«Гэрээс сургууль хүртэл» хятадаар:",
+    "options": [
+     "到家从学校",
+     "在家到学校",
+     "从家到学校"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 从 = …аас.",
+    "explanation_wrong_mn": "从…到… = …аас … хүртэл."
+   },
+   {
+    "type": "judge",
+    "question": "«想起来» гэдэг нь «мартчихсан» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "false",
+    "explanation_correct_mn": "Зөв, 想起来 нь санаж ирэх, мартсанд эсрэг утга.",
+    "explanation_wrong_mn": "想起来 = санаж ирэх, 忘 = мартах."
+   }
+  ]
+ }
+]

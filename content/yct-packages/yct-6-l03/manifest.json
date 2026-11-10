@@ -1,0 +1,242 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l03",
+ "hskLevel": 3,
+ "lessonNumber": 3,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "小鸟正在唱歌。",
+ "mongolianTitle": "Жижиг шувууд дуулж байна",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第3课 (сурах бичиг + CD аудио 03-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-03-text-song.mp3",
+  "dialogues": "audio/yct-6-03-02.mp3",
+  "words": "audio/yct-6-03-01.mp3",
+  "speech": "audio/yct-6-03-03.mp3",
+  "story": "audio/yct-6-03-04.mp3",
+  "test": "audio/yct-6-03-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l03",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "小鸟正在唱歌。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "快醒醒，起来吃早饭了。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "现在是上午10点",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "守株待兔",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "守株待兔 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "clocks",
+    "file": "images/clocks.jpg",
+    "title": "Let's recognize",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "classroom",
+    "file": "images/classroom.jpg",
+    "title": "Let's describe",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "w-xing",
+    "file": "images/w-xing.jpg",
+    "title": "醒",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ke",
+    "file": "images/w-ke.jpg",
+    "title": "刻",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiang",
+    "file": "images/w-xiang.jpg",
+    "title": "响",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kaihui",
+    "file": "images/w-kaihui.jpg",
+    "title": "开会",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhaoji",
+    "file": "images/w-zhaoji.jpg",
+    "title": "着急",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-laideji",
+    "file": "images/w-laideji.jpg",
+    "title": "来得及",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shangban",
+    "file": "images/w-shangban.jpg",
+    "title": "上班",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yiwei",
+    "file": "images/w-yiwei.jpg",
+    "title": "以为",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhengzai",
+    "file": "images/w-zhengzai.jpg",
+    "title": "正在",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-anjing",
+    "file": "images/w-anjing.jpg",
+    "title": "安静",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yibian",
+    "file": "images/w-yibian.jpg",
+    "title": "一边……一边……",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qilai",
+    "file": "images/w-qilai.jpg",
+    "title": "起来",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-naozhong",
+    "file": "images/w-naozhong.jpg",
+    "title": "闹钟",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiaoyuan",
+    "file": "images/w-xiaoyuan.jpg",
+    "title": "校园",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shu",
+    "file": "images/w-shu.jpg",
+    "title": "树",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shengyin",
+    "file": "images/w-shengyin.jpg",
+    "title": "声音",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L3)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

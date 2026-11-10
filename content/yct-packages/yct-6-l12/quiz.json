@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Анхаарах» хятадаар аль нь вэ?",
+  "options": [
+   "危险",
+   "小心",
+   "排队",
+   "注意"
+  ],
+  "correct_answer": "注意",
+  "explanation": "注意 (zhùyì) = анхаарах.",
+  "order_index": 1,
+  "id": "yct-6-l12-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Санаж үлдээх» хятадаар аль нь вэ?",
+  "options": [
+   "小心",
+   "必须",
+   "记住",
+   "注意"
+  ],
+  "correct_answer": "记住",
+  "explanation": "记住 (jìzhù) = санаж үлдээх.",
+  "order_index": 2,
+  "id": "yct-6-l12-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эелдэг» хятадаар аль нь вэ?",
+  "options": [
+   "礼貌",
+   "危险",
+   "中间",
+   "地方"
+  ],
+  "correct_answer": "礼貌",
+  "explanation": "礼貌 (lǐmào) = эелдэг.",
+  "order_index": 3,
+  "id": "yct-6-l12-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Заавал» хятадаар аль нь вэ?",
+  "options": [
+   "必须",
+   "小心",
+   "中间",
+   "比如"
+  ],
+  "correct_answer": "必须",
+  "explanation": "必须 (bìxū) = заавал.",
+  "order_index": 4,
+  "id": "yct-6-l12-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Болгоомжтой байх» хятадаар аль нь вэ?",
+  "options": [
+   "危险",
+   "礼貌",
+   "地方",
+   "小心"
+  ],
+  "correct_answer": "小心",
+  "explanation": "小心 (xiǎoxīn) = болгоомжтой байх.",
+  "order_index": 5,
+  "id": "yct-6-l12-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Газар» хятадаар аль нь вэ?",
+  "options": [
+   "中间",
+   "腿",
+   "地方",
+   "身"
+  ],
+  "correct_answer": "地方",
+  "explanation": "地方 (dìfang) = газар.",
+  "order_index": 6,
+  "id": "yct-6-l12-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Хөл» (гуя, шилбэ) хятадаар аль нь вэ?",
+  "options": [
+   "头",
+   "脱",
+   "腿",
+   "手"
+  ],
+  "correct_answer": "腿",
+  "explanation": "腿 (tuǐ) = хөл.",
+  "order_index": 7,
+  "id": "yct-6-l12-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Аюултай» хятадаар аль нь вэ?",
+  "options": [
+   "排队",
+   "注意",
+   "危险",
+   "礼貌"
+  ],
+  "correct_answer": "危险",
+  "explanation": "危险 (wēixiǎn) = аюултай.",
+  "order_index": 8,
+  "id": "yct-6-l12-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тайлах» (хувцас) хятадаар аль нь вэ?",
+  "options": [
+   "记住",
+   "脱",
+   "腿",
+   "身"
+  ],
+  "correct_answer": "脱",
+  "explanation": "脱 (tuō) = тайлах.",
+  "order_index": 9,
+  "id": "yct-6-l12-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Дараалалд зогсох» хятадаар аль нь вэ?",
+  "options": [
+   "小心",
+   "中间",
+   "排队",
+   "比如"
+  ],
+  "correct_answer": "排队",
+  "explanation": "排队 (páiduì) = дараалалд зогсох.",
+  "order_index": 10,
+  "id": "yct-6-l12-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дунд» хятадаар аль нь вэ?",
+  "options": [
+   "中间",
+   "必须",
+   "危险",
+   "地方"
+  ],
+  "correct_answer": "中间",
+  "explanation": "中间 (zhōngjiān) = дунд.",
+  "order_index": 11,
+  "id": "yct-6-l12-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «wēixiǎn» гэж уншдаг үг:",
+  "options": [
+   "危险",
+   "排队",
+   "注意",
+   "小心"
+  ],
+  "correct_answer": "危险",
+  "explanation": "危险 = wēixiǎn = аюултай.",
+  "order_index": 12,
+  "id": "yct-6-l12-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «lǐmào» гэж уншдаг үг:",
+  "options": [
+   "中间",
+   "必须",
+   "礼貌",
+   "记住"
+  ],
+  "correct_answer": "礼貌",
+  "explanation": "礼貌 = lǐmào = эелдэг.",
+  "order_index": 13,
+  "id": "yct-6-l12-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «páiduì» гэж уншдаг үг:",
+  "options": [
+   "排队",
+   "脱",
+   "注意",
+   "地方"
+  ],
+  "correct_answer": "排队",
+  "explanation": "排队 = páiduì = дараалалд зогсох.",
+  "order_index": 14,
+  "id": "yct-6-l12-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь дүүгийн юу нь шалбарсан бэ?",
+  "options": [
+   "Гар",
+   "Хувцас",
+   "Толгой",
+   "Хөл"
+  ],
+  "correct_answer": "Хөл",
+  "explanation": "弟弟的腿破了。",
+  "order_index": 15,
+  "id": "yct-6-l12-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Тэд яагаад хөлөө гэмтээсэн бэ?",
+  "options": [
+   "Унасан дугуйгаа гэмтээсэн",
+   "Мод авирч уралдсан",
+   "Гүйж уралдсан",
+   "Хөл бөмбөг тоглосон"
+  ],
+  "correct_answer": "Мод авирч уралдсан",
+  "explanation": "我们比赛爬树了。",
+  "order_index": 16,
+  "id": "yct-6-l12-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ээж «以后要注意啊» гэв. Энэ юу гэсэн үг вэ?",
+  "options": [
+   "Жүүс уу",
+   "Хувцсаа тайл",
+   "Одоо гэртээ харь",
+   "Дараа нь болгоомжтой байгаарай"
+  ],
+  "correct_answer": "Дараа нь болгоомжтой байгаарай",
+  "explanation": "以后 = дараа, 要注意 = анхаарах хэрэгтэй.",
+  "order_index": 17,
+  "id": "yct-6-l12-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我记住了» гэж ах юу гэсэн бэ?",
+  "options": [
+   "Би явлаа",
+   "Би ойлгоогүй",
+   "Би мартчихлаа",
+   "Би санаж авлаа"
+  ],
+  "correct_answer": "Би санаж авлаа",
+  "explanation": "记住了 = санаж авлаа.",
+  "order_index": 18,
+  "id": "yct-6-l12-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-д метрогоор явахдаа юу хийх ёстой гэсэн бэ?",
+  "options": [
+   "Чанга ярих",
+   "Хоол идэх",
+   "Дараалалд зогсоод суух",
+   "Гүйх"
+  ],
+  "correct_answer": "Дараалалд зогсоод суух",
+  "explanation": "坐地铁时，要排队上车。",
+  "order_index": 19,
+  "id": "yct-6-l12-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "大家一定要（ ）安全。",
+  "options": [
+   "脱",
+   "注意",
+   "排队",
+   "腿"
+  ],
+  "correct_answer": "注意",
+  "explanation": "注意安全 = аюулгүй байдлаа анхаар.",
+  "order_index": 20,
+  "id": "yct-6-l12-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "东西（ ）洗干净再吃。",
+  "options": [
+   "中间",
+   "危险",
+   "必须",
+   "地方"
+  ],
+  "correct_answer": "必须",
+  "explanation": "必须 = заавал.",
+  "order_index": 21,
+  "id": "yct-6-l12-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不要（ ）高的地方向下跳。",
+  "options": [
+   "比",
+   "从",
+   "在",
+   "把"
+  ],
+  "correct_answer": "从",
+  "explanation": "从……向下跳 = …аас доош үсрэх.",
+  "order_index": 22,
+  "id": "yct-6-l12-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们比赛爬树，弟弟的（ ）破了。",
+  "options": [
+   "排队",
+   "腿",
+   "礼貌",
+   "必须"
+  ],
+  "correct_answer": "腿",
+  "explanation": "弟弟的腿破了 = дүүгийн хөл шалбарсан.",
+  "order_index": 23,
+  "id": "yct-6-l12-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这件事情你（ ）知道的？",
+  "options": [
+   "怎么",
+   "哪儿",
+   "谁",
+   "什么"
+  ],
+  "correct_answer": "怎么",
+  "explanation": "怎么知道的？ = яаж мэдсэн бэ?",
+  "order_index": 24,
+  "id": "yct-6-l12-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他（ ）杯子打破了。",
+  "options": [
+   "从",
+   "和",
+   "被",
+   "把"
+  ],
+  "correct_answer": "把",
+  "explanation": "他把杯子打破了 = тэр аягыг хагалчихлаа.",
+  "order_index": 25,
+  "id": "yct-6-l12-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Автобусны буудал дээр хүмүүс дараалалд зогсож байна. Чи юу хэлэх вэ?",
+  "options": [
+   "要排队。",
+   "不要排队。",
+   "太危险了。",
+   "我记住了。"
+  ],
+  "correct_answer": "要排队。",
+  "explanation": "排队 = дараалалд зогсох.",
+  "order_index": 26,
+  "id": "yct-6-l12-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь өндөр хананаас үсрэх гэж байна. Чи юу гэх вэ?",
+  "options": [
+   "比如那儿。",
+   "别从那儿向下跳，太危险了！",
+   "你真有礼貌！",
+   "请排队。"
+  ],
+  "correct_answer": "别从那儿向下跳，太危险了！",
+  "explanation": "向下跳 + 危险 = үсрэх нь аюултай.",
+  "order_index": 27,
+  "id": "yct-6-l12-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Кун Жун яагаад хамгийн жижиг лийрийг авсан бэ?",
+  "options": [
+   "Тэр лийрт дургүй тул",
+   "Аав нь тэгэх гэсэн тул",
+   "Ах нь түүнээс том, дүү нь бага тул",
+   "Тэр өлсөөгүй тул"
+  ],
+  "correct_answer": "Ах нь түүнээс том, дүү нь бага тул",
+  "explanation": "哥哥比我大，应该吃大的。弟弟比我小，应该照顾弟弟。",
+  "order_index": 28,
+  "id": "yct-6-l12-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

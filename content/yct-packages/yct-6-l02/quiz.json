@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Амархан» хятадаар аль нь вэ?",
+  "options": [
+   "明白",
+   "参加",
+   "希望",
+   "容易"
+  ],
+  "correct_answer": "容易",
+  "explanation": "容易 (róngyì) = амархан.",
+  "order_index": 1,
+  "id": "yct-6-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дөнгөж сая» хятадаар аль нь вэ?",
+  "options": [
+   "以后",
+   "现在",
+   "刚才",
+   "将来"
+  ],
+  "correct_answer": "刚才",
+  "explanation": "刚才 (gāngcái) = дөнгөж сая.",
+  "order_index": 2,
+  "id": "yct-6-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ойлгох, ойлгомжтой» хятадаар аль нь вэ?",
+  "options": [
+   "明白",
+   "容易",
+   "参加",
+   "希望"
+  ],
+  "correct_answer": "明白",
+  "explanation": "明白 (míngbai) = ойлгох.",
+  "order_index": 3,
+  "id": "yct-6-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тайлбарлах, ярих» хятадаар аль нь вэ?",
+  "options": [
+   "讲",
+   "骑",
+   "减",
+   "加"
+  ],
+  "correct_answer": "讲",
+  "explanation": "讲 (jiǎng) = тайлбарлах.",
+  "order_index": 4,
+  "id": "yct-6-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Унах (дугуй)» хятадаар аль нь вэ?",
+  "options": [
+   "讲",
+   "加",
+   "参加",
+   "骑"
+  ],
+  "correct_answer": "骑",
+  "explanation": "骑 (qí) = унах.",
+  "order_index": 5,
+  "id": "yct-6-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хүсэх, найдах» хятадаар аль нь вэ?",
+  "options": [
+   "明白",
+   "参加",
+   "希望",
+   "容易"
+  ],
+  "correct_answer": "希望",
+  "explanation": "希望 (xīwàng) = хүсэх.",
+  "order_index": 6,
+  "id": "yct-6-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Оролцох» хятадаар аль нь вэ?",
+  "options": [
+   "明白",
+   "比赛",
+   "参加",
+   "希望"
+  ],
+  "correct_answer": "参加",
+  "explanation": "参加 (cānjiā) = оролцох.",
+  "order_index": 7,
+  "id": "yct-6-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Дугуй» хятадаар аль нь вэ?",
+  "options": [
+   "蛋糕",
+   "比赛",
+   "自行车",
+   "数学"
+  ],
+  "correct_answer": "自行车",
+  "explanation": "自行车 (zìxíngchē) = дугуй.",
+  "order_index": 8,
+  "id": "yct-6-l02-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Уралдаан, тэмцээн» хятадаар аль нь вэ?",
+  "options": [
+   "蛋糕",
+   "比赛",
+   "数学",
+   "自行车"
+  ],
+  "correct_answer": "比赛",
+  "explanation": "比赛 (bǐsài) = уралдаан.",
+  "order_index": 9,
+  "id": "yct-6-l02-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«万» гэдэг тоо хэд вэ?",
+  "options": [
+   "1000",
+   "100000",
+   "10000",
+   "100"
+  ],
+  "correct_answer": "10000",
+  "explanation": "万 (wàn) = 10000.",
+  "order_index": 10,
+  "id": "yct-6-l02-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«减» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хасах",
+   "унах",
+   "оролцох",
+   "нэмэх"
+  ],
+  "correct_answer": "хасах",
+  "explanation": "减 (jiǎn) = хасах. Эсрэг нь 加.",
+  "order_index": 11,
+  "id": "yct-6-l02-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«数学» гэдэг ямар хичээл вэ?",
+  "options": [
+   "Математик",
+   "Зураг",
+   "Хөгжим",
+   "Хэл"
+  ],
+  "correct_answer": "Математик",
+  "explanation": "数学 (shùxué) = математик.",
+  "order_index": 12,
+  "id": "yct-6-l02-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «cānjiā» гэж уншдаг үг:",
+  "options": [
+   "自行车",
+   "明白",
+   "参加",
+   "希望"
+  ],
+  "correct_answer": "参加",
+  "explanation": "参加 = cānjiā = оролцох.",
+  "order_index": 13,
+  "id": "yct-6-l02-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xīwàng» гэж уншдаг үг:",
+  "options": [
+   "希望",
+   "比赛",
+   "刚才",
+   "容易"
+  ],
+  "correct_answer": "希望",
+  "explanation": "希望 = xīwàng = хүсэх.",
+  "order_index": 14,
+  "id": "yct-6-l02-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zìxíngchē» гэж уншдаг үг:",
+  "options": [
+   "比赛",
+   "明白",
+   "数学",
+   "自行车"
+  ],
+  "correct_answer": "自行车",
+  "explanation": "自行车 = zìxíngchē = дугуй.",
+  "order_index": 15,
+  "id": "yct-6-l02-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь Сяо Хун юу асуусан бэ?",
+  "options": [
+   "10000−2000 хэд вэ?",
+   "10000+2000−300 хэд вэ?",
+   "2000−300 хэд вэ?",
+   "10000+300 хэд вэ?"
+  ],
+  "correct_answer": "10000+2000−300 хэд вэ?",
+  "explanation": "一万加两千减三百是多少？",
+  "order_index": 16,
+  "id": "yct-6-l02-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Мин бодлогын хариуг юу гэсэн бэ?",
+  "options": [
+   "一万七千",
+   "一千七百",
+   "一万两千三百",
+   "一万一千七百"
+  ],
+  "correct_answer": "一万一千七百",
+  "explanation": "太容易了，是一万一千七百。",
+  "order_index": 17,
+  "id": "yct-6-l02-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«老师不知道，刚才问我们» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Багш биднийг сургасан",
+   "Багш хариулсан",
+   "Багш мэднэ, биднээс асуусан",
+   "Багш мэдэхгүй, дөнгөж сая биднээс асуусан"
+  ],
+  "correct_answer": "Багш мэдэхгүй, дөнгөж сая биднээс асуусан",
+  "explanation": "老师不知道，刚才问我们。",
+  "order_index": 18,
+  "id": "yct-6-l02-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Өгүүлэмжийн хүн дугуй унахдаа ямар вэ?",
+  "options": [
+   "Жаахан сайн",
+   "Дургүй",
+   "Гойд сайн",
+   "Муу"
+  ],
+  "correct_answer": "Гойд сайн",
+  "explanation": "我骑自行车骑得好极了。",
+  "order_index": 19,
+  "id": "yct-6-l02-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Өгүүлэмж дэх ах нь юунд оролцдог вэ?",
+  "options": [
+   "Шатрын уралдаан",
+   "Математикийн уралдаан",
+   "Дугуйн уралдаан",
+   "Бөмбөгийн тоглолт"
+  ],
+  "correct_answer": "Математикийн уралдаан",
+  "explanation": "他常常参加数学比赛。",
+  "order_index": 20,
+  "id": "yct-6-l02-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他数学好（ ）。",
+  "options": [
+   "明白",
+   "容易",
+   "极了",
+   "希望"
+  ],
+  "correct_answer": "极了",
+  "explanation": "好极了 = гойд сайн.",
+  "order_index": 21,
+  "id": "yct-6-l02-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "太（ ）了，是一万一千七百。",
+  "options": [
+   "刚才",
+   "容易",
+   "参加",
+   "自行车"
+  ],
+  "correct_answer": "容易",
+  "explanation": "太容易了 = үнэхээр амархан.",
+  "order_index": 22,
+  "id": "yct-6-l02-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他能讲（ ）。",
+  "options": [
+   "骑",
+   "明白",
+   "比赛",
+   "数学"
+  ],
+  "correct_answer": "明白",
+  "explanation": "讲明白 = ойлгомжтой тайлбарлах.",
+  "order_index": 23,
+  "id": "yct-6-l02-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我骑自行车骑（ ）好极了。",
+  "options": [
+   "得",
+   "了",
+   "吗",
+   "的"
+  ],
+  "correct_answer": "得",
+  "explanation": "骑得好 = унахдаа сайн.",
+  "order_index": 24,
+  "id": "yct-6-l02-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）将来参加自行车比赛。",
+  "options": [
+   "容易",
+   "刚才",
+   "明白",
+   "希望"
+  ],
+  "correct_answer": "希望",
+  "explanation": "我希望将来…… = хожим би …-ыг хүснэ.",
+  "order_index": 25,
+  "id": "yct-6-l02-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "八（ ）二等于十。",
+  "options": [
+   "加",
+   "减",
+   "万",
+   "讲"
+  ],
+  "correct_answer": "加",
+  "explanation": "8+2=10 → 加.",
+  "order_index": 26,
+  "id": "yct-6-l02-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "三千加五百等于:",
+  "options": [
+   "三千零五",
+   "三千五百",
+   "三万五千",
+   "八百"
+  ],
+  "correct_answer": "三千五百",
+  "explanation": "3000+500=3500 = 三千五百.",
+  "order_index": 27,
+  "id": "yct-6-l02-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«12000» хятадаар:",
+  "options": [
+   "一万零二百",
+   "二万一千",
+   "一万两千",
+   "一千二万"
+  ],
+  "correct_answer": "一万两千",
+  "explanation": "12000 = 一万两千.",
+  "order_index": 28,
+  "id": "yct-6-l02-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «Бялуу гайхалтай амттай» гэж хэлэхийг хүсвэл:",
+  "options": [
+   "蛋糕好吃极了。",
+   "蛋糕不好吃。",
+   "蛋糕很极了。",
+   "蛋糕极了。"
+  ],
+  "correct_answer": "蛋糕好吃极了。",
+  "explanation": "好吃极了 = гайхалтай амттай.",
+  "order_index": 29,
+  "id": "yct-6-l02-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

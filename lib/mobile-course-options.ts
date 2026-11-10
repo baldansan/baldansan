@@ -48,7 +48,7 @@ export function defaultCoverUrl(courseId: string): string | null {
   if (
     /^hsk[1-6]$/.test(courseId) ||
     /^fazhan-(chuji|zhongji|gaoji)[12]$/.test(courseId) ||
-    /^yct-[1-5]$/.test(courseId)
+    /^yct-[1-6]$/.test(courseId)
   ) {
     return `/covers/${courseId}.jpg`;
   }
@@ -239,8 +239,8 @@ export function defaultFazhanChipId(
 }
 
 /**
- * YCT 标准教程 (Youth Chinese Test) — children's course series. Only yct-1 is
- * live; yct-2…6 render as "Удахгүй" placeholders until lessons are published.
+ * YCT 标准教程 (Youth Chinese Test) — children's course series. All six books (yct-1…6) have
+ * lesson packages in content/yct-packages; unpublished ones render as "Удахгүй".
  */
 export const YCT_HOME_LEVELS = [
   { chipId: "yct1", chipLabel: "YCT 1", courseId: "yct-1", hskEquivalent: "HSK1 түвшин" },

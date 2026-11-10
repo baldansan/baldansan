@@ -1,0 +1,221 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l04",
+ "hskLevel": 3,
+ "lessonNumber": 4,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你打扫一下房间好吗？",
+ "mongolianTitle": "Өрөөгөө жаахан цэвэрлэж өгөх үү?",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第4课 (сурах бичиг + CD аудио 04-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-04-text-song.mp3",
+  "dialogues": "audio/yct-6-04-02.mp3",
+  "words": "audio/yct-6-04-01.mp3",
+  "speech": "audio/yct-6-04-03.mp3",
+  "story": "audio/yct-6-04-04.mp3",
+  "test": "audio/yct-6-04-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l04",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你打扫一下房间好吗？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "今天吃什么？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "今天星期天",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "我都帮你做完了",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "我都帮你做完了 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "ask",
+    "file": "images/ask.jpg",
+    "title": "Let's ask",
+    "role": "illustration",
+    "section": "activity"
+   },
+   {
+    "id": "w-mianfen",
+    "file": "images/w-mianfen.jpg",
+    "title": "面粉",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jie",
+    "file": "images/w-jie.jpg",
+    "title": "接",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gou",
+    "file": "images/w-gou.jpg",
+    "title": "够",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dasao",
+    "file": "images/w-dasao.jpg",
+    "title": "打扫",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yixia",
+    "file": "images/w-yixia.jpg",
+    "title": "一下",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ganjing",
+    "file": "images/w-ganjing.jpg",
+    "title": "干净",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiujian",
+    "file": "images/w-xiujian.jpg",
+    "title": "修剪",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhaogu",
+    "file": "images/w-zhaogu.jpg",
+    "title": "照顾",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuizhao",
+    "file": "images/w-shuizhao.jpg",
+    "title": "睡着",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-huxiang",
+    "file": "images/w-huxiang.jpg",
+    "title": "互相",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shenghuo",
+    "file": "images/w-shenghuo.jpg",
+    "title": "生活",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jin",
+    "file": "images/w-jin.jpg",
+    "title": "斤",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-putao",
+    "file": "images/w-putao.jpg",
+    "title": "葡萄",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-caodi",
+    "file": "images/w-caodi.jpg",
+    "title": "草地",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L4)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

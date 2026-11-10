@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Сэрэх» хятадаар аль нь вэ?",
+  "options": [
+   "刻",
+   "树",
+   "醒",
+   "响"
+  ],
+  "correct_answer": "醒",
+  "explanation": "醒 (xǐng) = сэрэх.",
+  "order_index": 1,
+  "id": "yct-6-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дуугарах» (сэрүүлэг дуугарах) хятадаар аль нь вэ?",
+  "options": [
+   "响",
+   "树",
+   "安静",
+   "醒"
+  ],
+  "correct_answer": "响",
+  "explanation": "响 (xiǎng) = дуугарах.",
+  "order_index": 2,
+  "id": "yct-6-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Мод» хятадаар аль нь вэ?",
+  "options": [
+   "醒",
+   "响",
+   "树",
+   "刻"
+  ],
+  "correct_answer": "树",
+  "explanation": "树 (shù) = мод.",
+  "order_index": 3,
+  "id": "yct-6-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сэрүүлэг» хятадаар аль нь вэ?",
+  "options": [
+   "校园",
+   "树",
+   "闹钟",
+   "声音"
+  ],
+  "correct_answer": "闹钟",
+  "explanation": "闹钟 (nàozhōng) = сэрүүлэг.",
+  "order_index": 4,
+  "id": "yct-6-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«校园» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "мод",
+   "дуу чимээ",
+   "сэрүүлэг",
+   "сургуулийн хашаа"
+  ],
+  "correct_answer": "сургуулийн хашаа",
+  "explanation": "校园 (xiàoyuán) = сургуулийн хашаа.",
+  "order_index": 5,
+  "id": "yct-6-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«声音» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "амжих",
+   "дуу чимээ",
+   "мод",
+   "сэрэх"
+  ],
+  "correct_answer": "дуу чимээ",
+  "explanation": "声音 (shēngyīn) = дуу чимээ.",
+  "order_index": 6,
+  "id": "yct-6-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«安静» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сэрэх",
+   "чимээгүй",
+   "хуралдах",
+   "яарах"
+  ],
+  "correct_answer": "чимээгүй",
+  "explanation": "安静 (ānjìng) = чимээгүй.",
+  "order_index": 7,
+  "id": "yct-6-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«开会» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хуралдах",
+   "ажилдаа явах",
+   "сэрэх",
+   "дуугарах"
+  ],
+  "correct_answer": "хуралдах",
+  "explanation": "开会 (kāihuì) = хуралдах.",
+  "order_index": 8,
+  "id": "yct-6-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«着急» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "амжих",
+   "чимээгүй",
+   "яарах",
+   "босох"
+  ],
+  "correct_answer": "яарах",
+  "explanation": "着急 (zháojí) = яарах.",
+  "order_index": 9,
+  "id": "yct-6-l03-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«来得及» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хуралдах",
+   "яарах",
+   "сэрэх",
+   "амжих"
+  ],
+  "correct_answer": "амжих",
+  "explanation": "来得及 (láidejí) = амжих.",
+  "order_index": 10,
+  "id": "yct-6-l03-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«上班» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хуралдах",
+   "ажилдаа явах",
+   "босох",
+   "хичээлдээ явах"
+  ],
+  "correct_answer": "ажилдаа явах",
+  "explanation": "上班 (shàngbān) = ажилдаа явах.",
+  "order_index": 11,
+  "id": "yct-6-l03-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«以为» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "яарах",
+   "гэж хэлэх",
+   "гэж бодох (буруу бодсон)",
+   "сэрэх"
+  ],
+  "correct_answer": "гэж бодох (буруу бодсон)",
+  "explanation": "以为 (yǐwéi) = гэж бодсон (гэтэл буруу).",
+  "order_index": 12,
+  "id": "yct-6-l03-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«刻» гэдэг үг хэдэн минутыг заадаг вэ?",
+  "options": [
+   "5 минут",
+   "30 минут",
+   "15 минут",
+   "60 минут"
+  ],
+  "correct_answer": "15 минут",
+  "explanation": "1刻 = 15 минут.",
+  "order_index": 13,
+  "id": "yct-6-l03-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «láidejí» гэж уншдаг үг:",
+  "options": [
+   "着急",
+   "来得及",
+   "上班",
+   "开会"
+  ],
+  "correct_answer": "来得及",
+  "explanation": "来得及 = láidejí = амжих.",
+  "order_index": 14,
+  "id": "yct-6-l03-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shēngyīn» гэж уншдаг үг:",
+  "options": [
+   "安静",
+   "校园",
+   "闹钟",
+   "声音"
+  ],
+  "correct_answer": "声音",
+  "explanation": "声音 = shēngyīn = дуу чимээ.",
+  "order_index": 15,
+  "id": "yct-6-l03-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nàozhōng» гэж уншдаг үг:",
+  "options": [
+   "校园",
+   "闹钟",
+   "声音",
+   "起来"
+  ],
+  "correct_answer": "闹钟",
+  "explanation": "闹钟 = nàozhōng = сэрүүлэг.",
+  "order_index": 16,
+  "id": "yct-6-l03-q16",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь аав яагаад яарсан бэ?",
+  "options": [
+   "Өлссөн",
+   "9 цагт хуралтай, сэрүүлэг дуугараагүй",
+   "Галт тэрэг барих гэсэн",
+   "Сургуульдаа хоцорсон"
+  ],
+  "correct_answer": "9 цагт хуралтай, сэрүүлэг дуугараагүй",
+  "explanation": "我9点开会。闹钟怎么没响？",
+  "order_index": 17,
+  "id": "yct-6-l03-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь өнөөдөр ямар гараг вэ?",
+  "options": [
+   "Мягмар",
+   "Ням",
+   "Даваа",
+   "Лхагва"
+  ],
+  "correct_answer": "Ням",
+  "explanation": "你怎么星期天还上班？ Аав даваа гэж бодсон ч өнөөдөр ням.",
+  "order_index": 18,
+  "id": "yct-6-l03-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«8点1刻» гэдэг нь хэдэн цаг вэ?",
+  "options": [
+   "8 цаг 1 минут",
+   "1 цаг 8 минут",
+   "8 цаг 15 минут",
+   "8 цаг 45 минут"
+  ],
+  "correct_answer": "8 цаг 15 минут",
+  "explanation": "1刻 = 15 минут.",
+  "order_index": 19,
+  "id": "yct-6-l03-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech: Модон дээр юу дуулж байна?",
+  "options": [
+   "Багш",
+   "Гурван туулай",
+   "Сурагчид",
+   "Хоёр жижиг шувуу"
+  ],
+  "correct_answer": "Хоёр жижиг шувуу",
+  "explanation": "是两只小鸟，它们正在唱歌。",
+  "order_index": 20,
+  "id": "yct-6-l03-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech: Модны доор хэдэн туулай байна?",
+  "options": [
+   "Дөрөв",
+   "Гурав",
+   "Нэг",
+   "Хоёр"
+  ],
+  "correct_answer": "Гурав",
+  "explanation": "树下有三只兔子。",
+  "order_index": 21,
+  "id": "yct-6-l03-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小鸟（ ）唱歌。",
+  "options": [
+   "刻",
+   "正在",
+   "树",
+   "醒"
+  ],
+  "correct_answer": "正在",
+  "explanation": "正在 = яг одоо ... байна.",
+  "order_index": 22,
+  "id": "yct-6-l03-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "兔子一（ ）吃东西一边听小鸟唱歌。",
+  "options": [
+   "边",
+   "正",
+   "醒",
+   "响"
+  ],
+  "correct_answer": "边",
+  "explanation": "一边……一边……",
+  "order_index": 23,
+  "id": "yct-6-l03-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "别（ ），来得及。",
+  "options": [
+   "校园",
+   "着急",
+   "起来",
+   "安静"
+  ],
+  "correct_answer": "着急",
+  "explanation": "别着急 = бүү яар.",
+  "order_index": 24,
+  "id": "yct-6-l03-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）今天是星期一呢。",
+  "options": [
+   "着急",
+   "以为",
+   "开会",
+   "上班"
+  ],
+  "correct_answer": "以为",
+  "explanation": "我以为今天是星期一 = би даваа гэж бодсон.",
+  "order_index": 25,
+  "id": "yct-6-l03-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你的闹钟（ ）了。",
+  "options": [
+   "醒",
+   "树",
+   "刻",
+   "响"
+  ],
+  "correct_answer": "响",
+  "explanation": "闹钟响了 = сэрүүлэг дуугарлаа.",
+  "order_index": 26,
+  "id": "yct-6-l03-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Сурагчид ангидаа яг одоо хичээллэж байна гэж хэлбэл:",
+  "options": [
+   "学生们不上课。",
+   "学生们一边上课。",
+   "学生们以为上课。",
+   "学生们正在教室里上课。"
+  ],
+  "correct_answer": "学生们正在教室里上课。",
+  "explanation": "正在 + үйлдэл.",
+  "order_index": 27,
+  "id": "yct-6-l03-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Чи ном уншиж байгаад бас хөгжим сонсож байна. Хэлвэл:",
+  "options": [
+   "我正在看书一边。",
+   "我以为看书听音乐。",
+   "我一边看书一边听音乐。",
+   "我看书来得及。"
+  ],
+  "correct_answer": "我一边看书一边听音乐。",
+  "explanation": "一边……一边……",
+  "order_index": 28,
+  "id": "yct-6-l03-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Тариачин маргааш нь дахиад модны доор суусан. Яагаад гэвэл:",
+  "options": [
+   "Модонд авирахыг хүссэн",
+   "Унтахыг хүссэн",
+   "Дахиад туулай хүлээсэн",
+   "Шувууд сонсохыг хүссэн"
+  ],
+  "correct_answer": "Дахиад туулай хүлээсэн",
+  "explanation": "一边休息一边等兔子。Гэвч дахиж туулай ирсэнгүй.",
+  "order_index": 29,
+  "id": "yct-6-l03-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

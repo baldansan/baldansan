@@ -1,0 +1,204 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我属猴。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands in front of a big stone board showing the twelve Chinese zodiac animals, with three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap); a little toy monkey sits on the girl's hand and a red lantern hangs above, a speech bubble with the Chinese text 我属猴 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-you.jpg",
+  "aspect": "1:1",
+  "title": "又……又……",
+  "section": "vocabulary",
+  "prompt": "A cute puppy that is both fluffy and wearing a shiny bow, two glowing check marks floating above it, the calf girl in yellow dress with pink ribbon smiling and pointing at both nice things. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yonggan.jpg",
+  "aspect": "1:1",
+  "title": "勇敢",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest standing bravely in front of a huge friendly tiger with a toy sword and a cape, proud confident pose. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-congming.jpg",
+  "aspect": "1:1",
+  "title": "聪明",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap solving a puzzle at a desk, a glowing light bulb above his head and a clever grin, books around him. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-lingwai.jpg",
+  "aspect": "1:1",
+  "title": "另外",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress counting on her fingers, one star on the left, then a plus sign and one more extra star on the right, meaning 'also, besides', cheerful. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shu.jpg",
+  "aspect": "1:1",
+  "title": "属",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest holding a round birthday badge with a cartoon tiger on it, a ring of twelve small zodiac animals around him (rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig). No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shoudao.jpg",
+  "aspect": "1:1",
+  "title": "收到",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress happily receiving a wrapped gift box and a letter from a postman camel at the door, big surprised smile. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zhuhe.jpg",
+  "aspect": "1:1",
+  "title": "祝贺",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap and the yellow calf boy in blue vest shaking hands and clapping, confetti and a banner, congratulating each other. No English text.",
+  "chars": [
+   "bor",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-chuzhong.jpg",
+  "aspect": "1:1",
+  "title": "初中",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with a backpack walking up the steps of a bigger school building with a flag, looking excited to start junior high school. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-gua.jpg",
+  "aspect": "1:1",
+  "title": "挂",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest standing on a small stool hanging a red round lantern on a hook above a wooden door. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jieri.jpg",
+  "aspect": "1:1",
+  "title": "节日",
+  "section": "vocabulary",
+  "prompt": "The three calves (yellow boy, girl in yellow dress with pink ribbon, brown boy in green cap) celebrating a festival with balloons, a cake, streamers and a party hat each. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-houzi.jpg",
+  "aspect": "1:1",
+  "title": "猴子",
+  "section": "vocabulary",
+  "prompt": "A cheerful golden monkey hanging from a tree branch holding a banana, the brown calf boy in green cap waving at it. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-biye.jpg",
+  "aspect": "1:1",
+  "title": "毕业",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress wearing a black graduation cap and gown, holding a rolled certificate, happily throwing another cap in the air. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xinfeng.jpg",
+  "aspect": "1:1",
+  "title": "信封",
+  "section": "vocabulary",
+  "prompt": "A big cream-colored envelope with a red stamp, a photo and a letter sticking out of it, the yellow calf boy in blue vest peeking inside. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-chunjie.jpg",
+  "aspect": "1:1",
+  "title": "春节",
+  "section": "vocabulary",
+  "prompt": "Chinese Spring Festival scene: the calf girl in yellow dress in a red festive outfit, red lanterns, red couplets on the door, a lion dance and fireworks in the night sky. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-denglong.jpg",
+  "aspect": "1:1",
+  "title": "灯笼",
+  "section": "vocabulary",
+  "prompt": "A row of glowing round red paper lanterns with golden tassels hanging above a doorway, the brown calf boy in green cap looking up at them. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你喜欢什么动物？",
+  "section": "dialogue",
+  "prompt": "The calf girl in yellow dress with pink ribbon and the yellow calf boy in blue vest stand in front of a big stone board with twelve zodiac animal carvings, talking happily, a speech bubble with the Chinese text 你喜欢什么动物 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "今天，我姐姐收到了中国朋友的信。",
+  "section": "speech",
+  "prompt": "An adult camel big sister in a red festive outfit stands in a Chinese house doorway with red lanterns and holds a little toy monkey, the open envelope and a photo on a small table beside her, the teacher camel with glasses and a calf watching. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "鼠 牛 虎 兔 龙 蛇",
+  "section": "song",
+  "prompt": "Twelve cute cartoon Chinese zodiac animals (rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig) dancing in two rows with the three calves and the teacher camel clapping along, musical notes in the air. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

@@ -1,0 +1,270 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l01",
+ "hskLevel": 3,
+ "lessonNumber": 1,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我属猴。",
+ "mongolianTitle": "Би сармагчин жилд төрсөн",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第1课 (сурах бичиг + CD аудио 01-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-01-text-song.mp3",
+  "dialogues": "audio/yct-6-01-02.mp3",
+  "words": "audio/yct-6-01-01.mp3",
+  "speech": "audio/yct-6-01-03.mp3",
+  "chant": "audio/yct-6-01-04.mp3",
+  "test": "audio/yct-6-01-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l01",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我属猴。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你喜欢什么动物？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "今天，我姐姐收到了中国朋友的信。",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "鼠 牛 虎 兔 龙 蛇",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-you",
+    "file": "images/w-you.jpg",
+    "title": "又……又……",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yonggan",
+    "file": "images/w-yonggan.jpg",
+    "title": "勇敢",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-congming",
+    "file": "images/w-congming.jpg",
+    "title": "聪明",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lingwai",
+    "file": "images/w-lingwai.jpg",
+    "title": "另外",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shu",
+    "file": "images/w-shu.jpg",
+    "title": "属",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shoudao",
+    "file": "images/w-shoudao.jpg",
+    "title": "收到",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhuhe",
+    "file": "images/w-zhuhe.jpg",
+    "title": "祝贺",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chuzhong",
+    "file": "images/w-chuzhong.jpg",
+    "title": "初中",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gua",
+    "file": "images/w-gua.jpg",
+    "title": "挂",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jieri",
+    "file": "images/w-jieri.jpg",
+    "title": "节日",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-houzi",
+    "file": "images/w-houzi.jpg",
+    "title": "猴子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-biye",
+    "file": "images/w-biye.jpg",
+    "title": "毕业",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xinfeng",
+    "file": "images/w-xinfeng.jpg",
+    "title": "信封",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chunjie",
+    "file": "images/w-chunjie.jpg",
+    "title": "春节",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-denglong",
+    "file": "images/w-denglong.jpg",
+    "title": "灯笼",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c1",
+    "file": "images/c1.png",
+    "title": "Let's choose 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c2",
+    "file": "images/c2.png",
+    "title": "Let's choose 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c3",
+    "file": "images/c3.png",
+    "title": "Let's choose 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c4",
+    "file": "images/c4.png",
+    "title": "Let's choose 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c5",
+    "file": "images/c5.png",
+    "title": "Let's choose 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c6",
+    "file": "images/c6.png",
+    "title": "Let's choose 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c7",
+    "file": "images/c7.png",
+    "title": "Let's choose 7",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c8",
+    "file": "images/c8.png",
+    "title": "Let's choose 8",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "zodiac",
+    "file": "images/zodiac.jpg",
+    "title": "十二生肖",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L1); Let's choose — зургаас тодорхойлсон",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

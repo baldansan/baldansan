@@ -1,0 +1,248 @@
+[
+ {
+  "point": "他数学好极了 · 极了",
+  "gloss_mn": "«Гойд, үнэхээр» — магтах, мэдрэмжээ хэлэх",
+  "structure": "үг + 极了 → 好极了 · 聪明极了 · 冷极了",
+  "teacher_mn": "Ямар нэг зүйл маш сайн, маш хүйтэн байхад үгийнхээ ард «极了» нэм. «好» гэхийн оронд «好极了» гэвэл «гойд сайн» болно. «聪明极了» — гайхалтай ухаантай. «极了» үргэлж ард орно, «很»-г хамт хэлдэггүй.",
+  "teacher_notes": "Номын Key sentence: 他数学好极了。 Let's match: 聪明极了, 好吃极了, 冷极了, 漂亮极了, 难极了。",
+  "examples": [
+   {
+    "chinese": "他数学好极了。",
+    "pinyin": "Tā shùxué hǎojí le.",
+    "mongolian": "Тэр математикт гойд сайн."
+   },
+   {
+    "chinese": "蛋糕好吃极了。",
+    "pinyin": "Dàngāo hǎochī jíle.",
+    "mongolian": "Бялуу гайхалтай амттай."
+   },
+   {
+    "chinese": "外面冷极了。",
+    "pinyin": "Wàimian lěng jíle.",
+    "mongolian": "Гадаа үнэхээр хүйтэн байна."
+   },
+   {
+    "chinese": "数学难极了。",
+    "pinyin": "Shùxué nán jíle.",
+    "mongolian": "Математик үнэхээр хэцүү."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "他数学很好极了。",
+    "right": "他数学好极了。",
+    "why": "«极了» нь «маш» гэсэн утгатай тул «很»-г нэмэхгүй."
+   }
+  ],
+  "check": {
+   "question": "«Бялуу гайхалтай амттай» хятадаар:",
+   "options": [
+    "蛋糕很极了好吃。",
+    "蛋糕极了好吃。",
+    "蛋糕好吃极了。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "外面冷 ________ 。(үнэхээр)",
+    "options": [
+     "一样",
+     "更",
+     "极了"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 冷极了 = үнэхээр хүйтэн.",
+    "explanation_wrong_mn": "冷极了 — «极了» ард орно."
+   },
+   {
+    "type": "choice",
+    "question": "«Гайхалтай хөөрхөн» хятадаар:",
+    "options": [
+     "极了漂亮",
+     "漂亮极了",
+     "很极了漂亮"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 漂亮极了 = гайхалтай хөөрхөн.",
+    "explanation_wrong_mn": "极了 ард орно: 漂亮极了."
+   },
+   {
+    "type": "judge",
+    "question": "«好极了» гэдэг нь «гойд сайн» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 好极了 = гойд сайн.",
+    "explanation_wrong_mn": "好 = сайн, 好极了 = гойд сайн."
+   }
+  ]
+ },
+ {
+  "point": "他能讲明白 · 骑得好极了",
+  "gloss_mn": "«Ойлгомжтой тайлбарлаж чадна», «унахдаа сайн»",
+  "structure": "能 + 讲明白 · 骑自行车 + 骑得 + сайн",
+  "teacher_mn": "«讲» гэвэл тайлбарлах, «明白» гэвэл ойлгомжтой. Хамт «讲明白» гэвэл ойлгомжтой тайлбарлах. «能» нэмбэл «чаддаг» болно. Хэр сайн хийдгээ хэлэхдээ «骑»-ээ хоёр дахин хэлээд «得» нэм: «骑自行车骑得好极了».",
+  "teacher_notes": "Номын Key sentence: 他能讲明白。 Short speech: 我骑自行车骑得好极了。 Test: 我骑自行车骑得特别好。",
+  "examples": [
+   {
+    "chinese": "他能讲明白。",
+    "pinyin": "Tā néng jiǎng míngbai.",
+    "mongolian": "Тэр ойлгомжтой тайлбарлаж чадна."
+   },
+   {
+    "chinese": "明白了吗？",
+    "pinyin": "Míngbai le ma?",
+    "mongolian": "Ойлгов уу?"
+   },
+   {
+    "chinese": "我骑自行车骑得好极了。",
+    "pinyin": "Wǒ qí zìxíngchē qí de hǎojí le.",
+    "mongolian": "Би дугуй унахдаа гойд сайн."
+   },
+   {
+    "chinese": "我骑自行车骑得特别好。",
+    "pinyin": "Wǒ qí zìxíngchē qí de tèbié hǎo.",
+    "mongolian": "Би дугуй унахдаа тун сайн."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我骑得好自行车。",
+    "right": "我骑自行车骑得好。",
+    "why": "«骑»-ээ хоёр удаа хэл: 骑自行车骑得好."
+   }
+  ],
+  "check": {
+   "question": "«Тэр ойлгомжтой тайлбарлаж чадна» хятадаар:",
+   "options": [
+    "他能讲明白。",
+    "他能明白讲。",
+    "他讲能明白。"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "他能讲 ________ 。(ойлгомжтой)",
+    "options": [
+     "容易",
+     "明白",
+     "参加"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 讲明白 = ойлгомжтой тайлбарлах.",
+    "explanation_wrong_mn": "讲明白 — «明白» ард орно."
+   },
+   {
+    "type": "choice",
+    "question": "我骑自行车骑 ________ 好极了。",
+    "options": [
+     "了",
+     "的",
+     "得"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 骑得好 = унахдаа сайн.",
+    "explanation_wrong_mn": "«骑» дараа «得» орно."
+   },
+   {
+    "type": "judge",
+    "question": "«骑自行车骑得好» гэдэг нь «дугуй унахдаа сайн» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 骑得好 = унахдаа сайн.",
+    "explanation_wrong_mn": "骑得好 = унахдаа сайн."
+   }
+  ]
+ },
+ {
+  "point": "一万加两千减三百 · 万 加 减",
+  "gloss_mn": "«Арван мянга», «нэмэх», «хасах»",
+  "structure": "A 加 B 等于 C · A 减 B 等于 C · 一万 = 10000",
+  "teacher_mn": "Хятадууд тоог арван мянгаар бүлэглэдэг: 一万 = 10000. «加» нэмнэ, «减» хасна. «等于» гэвэл «тэнцүү». «千», «万»-ын өмнө ярихдаа «两» гэж хэл: 两千, 两万. «10000+2000−300» = «一万一千七百».",
+  "teacher_notes": "Let's read: 一万加两千减三百是多少？ Let's calculate: 8加2等于10。 Let's say: 10000, 100000, 220000.",
+  "examples": [
+   {
+    "chinese": "一万加两千减三百是多少？",
+    "pinyin": "Yí wàn jiā liǎng qiān jiǎn sān bǎi shì duōshao?",
+    "mongolian": "Арван мянга дээр хоёр мянга нэмээд, гурван зуу хасвал хэд вэ?"
+   },
+   {
+    "chinese": "八加二等于十。",
+    "pinyin": "Bā jiā èr děngyú shí.",
+    "mongolian": "Найм дээр хоёр нэмбэл арав."
+   },
+   {
+    "chinese": "十五减五等于十。",
+    "pinyin": "Shíwǔ jiǎn wǔ děngyú shí.",
+    "mongolian": "Арван таваас тав хасвал арав."
+   },
+   {
+    "chinese": "两千加三百等于两千三百。",
+    "pinyin": "Liǎng qiān jiā sān bǎi děngyú liǎng qiān sān bǎi.",
+    "mongolian": "Хоёр мянга дээр гурван зуу нэмбэл хоёр мянга гурван зуу."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "二千加三百。",
+    "right": "两千加三百。",
+    "why": "«千»-ын өмнө ярихдаа «两» гэж хэлэх нь илүү байгалийн: 两千."
+   }
+  ],
+  "check": {
+   "question": "11700 хятадаар:",
+   "options": [
+    "一千一万七百",
+    "一万七千一百",
+    "一万一千七百"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "八加二等于 ________ 。",
+    "options": [
+     "六",
+     "二十",
+     "十"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 8+2=10.",
+    "explanation_wrong_mn": "8+2=10 → 十."
+   },
+   {
+    "type": "choice",
+    "question": "«Хасах» хятадаар:",
+    "options": [
+     "加",
+     "万",
+     "减"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 减 = хасах.",
+    "explanation_wrong_mn": "加 = нэмэх, 减 = хасах."
+   },
+   {
+    "type": "judge",
+    "question": "«一万» нь 10000 гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 一万 = 10000.",
+    "explanation_wrong_mn": "万 = арван мянга."
+   }
+  ]
+ }
+]

@@ -1,0 +1,185 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "他们不是双胞胎。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands in a sunny park with the yellow calf boy in blue vest and the brown calf boy in green cap, copying each other's pose, standing side by side; a small sign hangs on a baby stroller with a speech bubble with the Chinese text 他们不是双胞胎 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-cidian.jpg",
+  "aspect": "1:1",
+  "title": "词典",
+  "section": "vocabulary",
+  "prompt": "A thick blue dictionary with a magnifying glass on its cover, the calf girl in yellow dress with pink ribbon opening it with interest. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-lian.jpg",
+  "aspect": "1:1",
+  "title": "脸",
+  "section": "vocabulary",
+  "prompt": "Close-up of the yellow calf boy's happy face, with a pointing hoof touching his cheek, bright simple background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-yuan.jpg",
+  "aspect": "1:1",
+  "title": "圆",
+  "section": "vocabulary",
+  "prompt": "A big round full moon in the night sky and a round mooncake on a plate; the brown calf boy in green cap draws a circle in the air with his hoof. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xiansheng.jpg",
+  "aspect": "1:1",
+  "title": "先生",
+  "section": "vocabulary",
+  "prompt": "An adult camel gentleman in a suit and tie politely lifting his hat, the calf girl in yellow dress waving hello to him. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shuangbaotai.jpg",
+  "aspect": "1:1",
+  "title": "双胞胎",
+  "section": "vocabulary",
+  "prompt": "Two identical yellow calves in the same blue vests and red bags standing side by side holding hooves, same smile. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ertongche.jpg",
+  "aspect": "1:1",
+  "title": "儿童车",
+  "section": "vocabulary",
+  "prompt": "A red baby stroller on a park path with a small baby camel calf sleeping in it, the calf girl in yellow dress pushing it. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-huan.jpg",
+  "aspect": "1:1",
+  "title": "还",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap handing a book back to the yellow calf boy in blue vest with a thankful smile, an arrow showing the book going back. No English text.",
+  "chars": [
+   "bor",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jie.jpg",
+  "aspect": "1:1",
+  "title": "借",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress politely holding out her hooves to borrow a book from the yellow calf boy, who hands it over kindly. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ye.jpg",
+  "aspect": "1:1",
+  "title": "页",
+  "section": "vocabulary",
+  "prompt": "An open book with a page being turned in the middle, the brown calf boy in green cap pointing at the first page. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-lia.jpg",
+  "aspect": "1:1",
+  "title": "俩",
+  "section": "vocabulary",
+  "prompt": "Two best-friend calves (yellow boy in blue vest and calf girl in yellow dress) standing together with a big circle drawn around both of them. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiang.jpg",
+  "aspect": "1:1",
+  "title": "像",
+  "section": "vocabulary",
+  "prompt": "A small yellow calf standing next to an adult camel father, both making the same funny pose and the same smile, showing they look alike. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-suiran.jpg",
+  "aspect": "1:1",
+  "title": "虽然……但是……",
+  "section": "vocabulary",
+  "prompt": "Split picture: left, the brown calf boy in green cap sweating while climbing a hill; right, the same calf at the top smiling happily with arms up. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-weile.jpg",
+  "aspect": "1:1",
+  "title": "为了",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress buying a thick dictionary in a bookshop, a small thought bubble with a smiling friend waving and chatting, no text in the bubble. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-paizi.jpg",
+  "aspect": "1:1",
+  "title": "牌子",
+  "section": "vocabulary",
+  "prompt": "A white sign hanging on a baby stroller handle, the yellow calf boy in blue vest pointing proudly at it. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你好，还你词典。",
+  "section": "dialogue",
+  "prompt": "In a classroom the calf girl in yellow dress holds out a dictionary to the brown calf boy in green cap who raises his hoof in surprise; green notice board behind, a speech bubble with the Chinese text 还你词典 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "不是双胞胎",
+  "section": "speech",
+  "prompt": "A father camel with a baby stroller holding two small calves who look alike, a small white sign on the stroller showing the Chinese text 不是双胞胎 in large clear black font, the mother camel next to him, green park. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "圆圆和方方",
+  "section": "story",
+  "prompt": "A mother camel confused with a towel on her head while two identical baby calf girls in pink dresses sit on a towel, a bathtub with soap bubbles behind them. No English text.",
+  "chars": []
+ }
+]

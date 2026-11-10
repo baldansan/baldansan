@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Зоригтой» хятадаар аль нь вэ?",
+  "options": [
+   "漂亮",
+   "可爱",
+   "勇敢",
+   "聪明"
+  ],
+  "correct_answer": "勇敢",
+  "explanation": "勇敢 (yǒnggǎn) = зоригтой.",
+  "order_index": 1,
+  "id": "yct-6-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ухаалаг» хятадаар аль нь вэ?",
+  "options": [
+   "聪明",
+   "漂亮",
+   "高兴",
+   "勇敢"
+  ],
+  "correct_answer": "聪明",
+  "explanation": "聪明 (cōngming) = ухаалаг.",
+  "order_index": 2,
+  "id": "yct-6-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сармагчин» хятадаар аль нь вэ?",
+  "options": [
+   "兔子",
+   "大象",
+   "猴子",
+   "老虎"
+  ],
+  "correct_answer": "猴子",
+  "explanation": "猴子 (hóuzi) = сармагчин.",
+  "order_index": 3,
+  "id": "yct-6-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дугтуй» хятадаар аль нь вэ?",
+  "options": [
+   "灯笼",
+   "礼物",
+   "信封",
+   "节日"
+  ],
+  "correct_answer": "信封",
+  "explanation": "信封 (xìnfēng) = дугтуй.",
+  "order_index": 4,
+  "id": "yct-6-l01-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хавар баяр» хятадаар аль нь вэ?",
+  "options": [
+   "毕业",
+   "初中",
+   "节日",
+   "春节"
+  ],
+  "correct_answer": "春节",
+  "explanation": "春节 (Chūnjié) = Хавар баяр, Хятадын шинэ жил.",
+  "order_index": 5,
+  "id": "yct-6-l01-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цаасан дэнлүү» хятадаар аль нь вэ?",
+  "options": [
+   "照片",
+   "灯笼",
+   "信封",
+   "猴子"
+  ],
+  "correct_answer": "灯笼",
+  "explanation": "灯笼 (dēnglong) = цаасан дэнлүү.",
+  "order_index": 6,
+  "id": "yct-6-l01-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«祝贺» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өлгөх",
+   "баяр хүргэх",
+   "төгсөх",
+   "хүлээн авах"
+  ],
+  "correct_answer": "баяр хүргэх",
+  "explanation": "祝贺 (zhùhè) = баяр хүргэх.",
+  "order_index": 7,
+  "id": "yct-6-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«收到» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хүлээн авах",
+   "баяр хүргэх",
+   "өлгөх",
+   "төгсөх"
+  ],
+  "correct_answer": "хүлээн авах",
+  "explanation": "收到 (shōudào) = хүлээн авах.",
+  "order_index": 8,
+  "id": "yct-6-l01-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«毕业» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "баяр хүргэх",
+   "өлгөх",
+   "төгсөх",
+   "дугтуй"
+  ],
+  "correct_answer": "төгсөх",
+  "explanation": "毕业 (bìyè) = сургууль төгсөх.",
+  "order_index": 9,
+  "id": "yct-6-l01-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«挂» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "барих",
+   "хүлээн авах",
+   "төгсөх",
+   "өлгөх"
+  ],
+  "correct_answer": "өлгөх",
+  "explanation": "挂 (guà) = өлгөх. 门上挂灯笼 = хаалган дээр дэнлүү өлгөнө.",
+  "order_index": 10,
+  "id": "yct-6-l01-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«初中» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "баяр ёслол",
+   "дунд анги",
+   "төрсөн жил",
+   "бага анги"
+  ],
+  "correct_answer": "дунд анги",
+  "explanation": "初中 (chūzhōng) = бага сургуулийн дараах дунд анги.",
+  "order_index": 11,
+  "id": "yct-6-l01-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«节日» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "бэлэг",
+   "сургууль",
+   "баяр ёслол",
+   "амьтан"
+  ],
+  "correct_answer": "баяр ёслол",
+  "explanation": "节日 (jiérì) = баяр ёслол.",
+  "order_index": 12,
+  "id": "yct-6-l01-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би сармагчин жилд төрсөн» гэж хэлэхдээ аль үгийг хэрэглэх вэ?",
+  "options": [
+   "是",
+   "着",
+   "属",
+   "又"
+  ],
+  "correct_answer": "属",
+  "explanation": "我属猴。Төрсөн жилийн амьтныг 属 гэж хэлнэ.",
+  "order_index": 13,
+  "id": "yct-6-l01-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yǒnggǎn» гэж уншдаг үг:",
+  "options": [
+   "聪明",
+   "勇敢",
+   "春节",
+   "祝贺"
+  ],
+  "correct_answer": "勇敢",
+  "explanation": "勇敢 = yǒnggǎn = зоригтой.",
+  "order_index": 14,
+  "id": "yct-6-l01-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhùhè» гэж уншдаг үг:",
+  "options": [
+   "节日",
+   "毕业",
+   "收到",
+   "祝贺"
+  ],
+  "correct_answer": "祝贺",
+  "explanation": "祝贺 = zhùhè = баяр хүргэх.",
+  "order_index": 15,
+  "id": "yct-6-l01-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «Chūnjié» гэж уншдаг үг:",
+  "options": [
+   "初中",
+   "春节",
+   "信封",
+   "灯笼"
+  ],
+  "correct_answer": "春节",
+  "explanation": "春节 = Chūnjié = Хавар баяр.",
+  "order_index": 16,
+  "id": "yct-6-l01-q16",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bìyè» гэж уншдаг үг:",
+  "options": [
+   "节日",
+   "毕业",
+   "初中",
+   "收到"
+  ],
+  "correct_answer": "毕业",
+  "explanation": "毕业 = bìyè = төгсөх.",
+  "order_index": 17,
+  "id": "yct-6-l01-q17",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь Сяо Мин ямар амьтанд дуртай вэ?",
+  "options": [
+   "Туулайд",
+   "Барад",
+   "Сармагчинд",
+   "Нохойд"
+  ],
+  "correct_answer": "Барад",
+  "explanation": "小明：我喜欢老虎。",
+  "order_index": 18,
+  "id": "yct-6-l01-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Хун юу гэж хэлсэн бэ? «我属猴» гэдэг нь:",
+  "options": [
+   "Би бар жилд төрсөн",
+   "Би сармагчинд дургүй",
+   "Би сармагчин жилд төрсөн",
+   "Би сармагчин авсан"
+  ],
+  "correct_answer": "Би сармагчин жилд төрсөн",
+  "explanation": "我属猴 = би сармагчин жилд төрсөн.",
+  "order_index": 19,
+  "id": "yct-6-l01-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Мин яагаад барад дуртай вэ?",
+  "options": [
+   "Бар сармагчин учир",
+   "Бар ухаалаг учир",
+   "Бар жижиг учир",
+   "Бар зоригтой ч, гоё ч учир"
+  ],
+  "correct_answer": "Бар зоригтой ч, гоё ч учир",
+  "explanation": "老虎又勇敢又漂亮。",
+  "order_index": 20,
+  "id": "yct-6-l01-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Эгч Хятад найзаасаа юу хүлээн авсан бэ?",
+  "options": [
+   "Мөнгө",
+   "Захидал",
+   "Дэнлүү",
+   "Хоол"
+  ],
+  "correct_answer": "Захидал",
+  "explanation": "我姐姐收到了中国朋友的信。",
+  "order_index": 21,
+  "id": "yct-6-l01-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Эгчийн найз түүнд юуны тухай баяр хүргэсэн бэ?",
+  "options": [
+   "Дунд ангиа төгссөнд",
+   "Бага сургуулиа төгссөнд",
+   "Шинэ гэр авсанд",
+   "Төрсөн өдрөөр нь"
+  ],
+  "correct_answer": "Бага сургуулиа төгссөнд",
+  "explanation": "朋友祝贺她小学毕业，要上初中了。",
+  "order_index": 22,
+  "id": "yct-6-l01-q22",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "猴子（ ）聪明（ ）可爱。",
+  "options": [
+   "又……又",
+   "属……属",
+   "是……是",
+   "着……着"
+  ],
+  "correct_answer": "又……又",
+  "explanation": "又聪明又可爱 = ухаалаг ч, хөөрхөн ч.",
+  "order_index": 23,
+  "id": "yct-6-l01-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）虎。",
+  "options": [
+   "挂",
+   "属",
+   "着",
+   "又"
+  ],
+  "correct_answer": "属",
+  "explanation": "我属虎 = би бар жилд төрсөн.",
+  "order_index": 24,
+  "id": "yct-6-l01-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "门上挂（ ）红灯笼。",
+  "options": [
+   "又",
+   "着",
+   "属",
+   "了"
+  ],
+  "correct_answer": "着",
+  "explanation": "挂着 = өлгөөстэй байна.",
+  "order_index": 25,
+  "id": "yct-6-l01-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "朋友（ ）她小学毕业。",
+  "options": [
+   "收到",
+   "挂",
+   "属",
+   "祝贺"
+  ],
+  "correct_answer": "祝贺",
+  "explanation": "祝贺她小学毕业 = бага сургуулиа төгссөнд нь баяр хүргэв.",
+  "order_index": 26,
+  "id": "yct-6-l01-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найздаа «Чи ямар жилд төрсөн бэ?» гэж асуувал:",
+  "options": [
+   "你是什么？",
+   "你挂什么？",
+   "你又什么？",
+   "你属什么？"
+  ],
+  "correct_answer": "你属什么？",
+  "explanation": "你属什么？ = чи ямар жилд төрсөн бэ?",
+  "order_index": 27,
+  "id": "yct-6-l01-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хаалган дээр улаан дэнлүү өлгөөстэй байна. Үүнийг хятадаар хэлбэл:",
+  "options": [
+   "门上属红灯笼。",
+   "门上收到红灯笼。",
+   "门上挂着红灯笼。",
+   "门上祝贺红灯笼。"
+  ],
+  "correct_answer": "门上挂着红灯笼。",
+  "explanation": "挂着 = өлгөөстэй байна.",
+  "order_index": 28,
+  "id": "yct-6-l01-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь сургуулиа төгслөө. Чи юу гэж хэлэх вэ?",
+  "options": [
+   "你属什么？",
+   "门上挂着。",
+   "祝贺你！",
+   "我收到信。"
+  ],
+  "correct_answer": "祝贺你！",
+  "explanation": "祝贺你！ = баяр хүргэе!",
+  "order_index": 29,
+  "id": "yct-6-l01-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

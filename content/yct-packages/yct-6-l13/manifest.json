@@ -1,0 +1,193 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l13",
+ "hskLevel": 3,
+ "lessonNumber": 13,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我爱吃辣的。",
+ "mongolianTitle": "Би халуун ногоотойд дуртай",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第13课 (сурах бичиг + CD аудио 13-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-13-text-song.mp3",
+  "dialogues": "audio/yct-6-13-02.mp3",
+  "words": "audio/yct-6-13-01.mp3",
+  "speech": "audio/yct-6-13-03.mp3",
+  "song": "audio/yct-6-13-04.mp3",
+  "test": "audio/yct-6-13-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l13",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我爱吃辣的。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "妈妈，我渴了。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我姐姐想更瘦一点儿",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "酸甜苦辣咸",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-la",
+    "file": "images/w-la.jpg",
+    "title": "辣",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tian",
+    "file": "images/w-tian.jpg",
+    "title": "甜",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chibuliao",
+    "file": "images/w-chibuliao.jpg",
+    "title": "吃不了",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jianchi",
+    "file": "images/w-jianchi.jpg",
+    "title": "坚持",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-he",
+    "file": "images/w-he.jpg",
+    "title": "盒",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shoubuliao",
+    "file": "images/w-shoubuliao.jpg",
+    "title": "受不了",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tongyi",
+    "file": "images/w-tongyi.jpg",
+    "title": "同意",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-taolun",
+    "file": "images/w-taolun.jpg",
+    "title": "讨论",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bingxiang",
+    "file": "images/w-bingxiang.jpg",
+    "title": "冰箱",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xihongshi",
+    "file": "images/w-xihongshi.jpg",
+    "title": "西红柿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shou",
+    "file": "images/w-shou.jpg",
+    "title": "瘦",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tang",
+    "file": "images/w-tang.jpg",
+    "title": "糖",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mapodoufu",
+    "file": "images/w-mapodoufu.jpg",
+    "title": "麻婆豆腐",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xihongshichaojidan",
+    "file": "images/w-xihongshichaojidan.jpg",
+    "title": "西红柿炒鸡蛋",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "say1",
+    "file": "images/say1.png",
+    "title": "Let's say 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "say2",
+    "file": "images/say2.png",
+    "title": "Let's say 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "say3",
+    "file": "images/say3.png",
+    "title": "Let's say 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "say4",
+    "file": "images/say4.png",
+    "title": "Let's say 4",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L13); Let's say/write — зураг, утгаар",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

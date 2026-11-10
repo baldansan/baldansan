@@ -1,0 +1,200 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l14",
+ "hskLevel": 3,
+ "lessonNumber": 14,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "有的熊猫一直睡觉。",
+ "mongolianTitle": "Зарим панда байнга унтдаг",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第14课 (сурах бичиг + CD аудио 14-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-14-text-song.mp3",
+  "dialogues": "audio/yct-6-14-02.mp3",
+  "words": "audio/yct-6-14-01.mp3",
+  "speech": "audio/yct-6-14-03.mp3",
+  "story": "audio/yct-6-14-04.mp3",
+  "test": "audio/yct-6-14-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l14",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "有的熊猫一直睡觉。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "对不起，小姐，打扰一下。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我很喜欢熊猫",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "毕业留言",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "毕业留言 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "say",
+    "file": "images/say.jpg",
+    "title": "Let's say · мэргэжлүүд",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "w-daorao",
+    "file": "images/w-daorao.jpg",
+    "title": "打扰",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-canguan",
+    "file": "images/w-canguan.jpg",
+    "title": "参观",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuxi",
+    "file": "images/w-shuxi.jpg",
+    "title": "熟悉",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wang",
+    "file": "images/w-wang.jpg",
+    "title": "往",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhuan",
+    "file": "images/w-zhuan.jpg",
+    "title": "转",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-youde",
+    "file": "images/w-youde.jpg",
+    "title": "有的",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kanqilai",
+    "file": "images/w-kanqilai.jpg",
+    "title": "看起来",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-guanyu",
+    "file": "images/w-guanyu.jpg",
+    "title": "关于",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhishi",
+    "file": "images/w-zhishi.jpg",
+    "title": "知识",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qingchu",
+    "file": "images/w-qingchu.jpg",
+    "title": "清楚",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiaojie",
+    "file": "images/w-xiaojie.jpg",
+    "title": "小姐",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dong",
+    "file": "images/w-dong.jpg",
+    "title": "东",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xi",
+    "file": "images/w-xi.jpg",
+    "title": "西",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhuzi",
+    "file": "images/w-zhuzi.jpg",
+    "title": "竹子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "m1",
+    "file": "images/m1.png",
+    "title": "Let's match 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "m2",
+    "file": "images/m2.png",
+    "title": "Let's match 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "m3",
+    "file": "images/m3.png",
+    "title": "Let's match 3",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L14)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Толь бичиг» хятадаар аль нь вэ?",
+  "options": [
+   "牌子",
+   "先生",
+   "儿童车",
+   "词典"
+  ],
+  "correct_answer": "词典",
+  "explanation": "词典 (cídiǎn) = толь бичиг.",
+  "order_index": 1,
+  "id": "yct-6-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Нүүр» хятадаар аль нь вэ?",
+  "options": [
+   "圆",
+   "像",
+   "脸",
+   "页"
+  ],
+  "correct_answer": "脸",
+  "explanation": "脸 (liǎn) = нүүр.",
+  "order_index": 2,
+  "id": "yct-6-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дугуй» хятадаар аль нь вэ?",
+  "options": [
+   "圆",
+   "脸",
+   "短",
+   "页"
+  ],
+  "correct_answer": "圆",
+  "explanation": "圆 (yuán) = дугуй.",
+  "order_index": 3,
+  "id": "yct-6-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ихэр» хятадаар аль нь вэ?",
+  "options": [
+   "双胞胎",
+   "先生",
+   "词典",
+   "牌子"
+  ],
+  "correct_answer": "双胞胎",
+  "explanation": "双胞胎 (shuāngbāotāi) = ихэр.",
+  "order_index": 4,
+  "id": "yct-6-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Хүүхдийн тэрэг» хятадаар аль нь вэ?",
+  "options": [
+   "词典",
+   "牌子",
+   "先生",
+   "儿童车"
+  ],
+  "correct_answer": "儿童车",
+  "explanation": "儿童车 (értóngchē) = хүүхдийн тэрэг.",
+  "order_index": 5,
+  "id": "yct-6-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Самбар, тэмдэг» хятадаар аль нь вэ?",
+  "options": [
+   "词典",
+   "脸",
+   "牌子",
+   "页"
+  ],
+  "correct_answer": "牌子",
+  "explanation": "牌子 (páizi) = самбар.",
+  "order_index": 6,
+  "id": "yct-6-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«还» (huán) гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хуудас",
+   "төстэй",
+   "буцааж өгөх",
+   "зээлэх"
+  ],
+  "correct_answer": "буцааж өгөх",
+  "explanation": "还 (huán) = буцааж өгөх.",
+  "order_index": 7,
+  "id": "yct-6-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«借» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дугуй",
+   "хоёулаа",
+   "зээлэх, зээлүүлэх",
+   "буцааж өгөх"
+  ],
+  "correct_answer": "зээлэх, зээлүүлэх",
+  "explanation": "借 (jiè) = зээлэх, зээлүүлэх.",
+  "order_index": 8,
+  "id": "yct-6-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«页» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "самбар",
+   "хуудас",
+   "нүүр",
+   "толь бичиг"
+  ],
+  "correct_answer": "хуудас",
+  "explanation": "页 (yè) = хуудас. 第一页 = эхний хуудас.",
+  "order_index": 9,
+  "id": "yct-6-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«像» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дугуй",
+   "зээлэх",
+   "төстэй",
+   "хуудас"
+  ],
+  "correct_answer": "төстэй",
+  "explanation": "像 (xiàng) = төстэй, адилхан харагдах.",
+  "order_index": 10,
+  "id": "yct-6-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你们俩» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Та хоёр",
+   "Та нар олуулаа",
+   "Чи ганцаараа",
+   "Та гурав"
+  ],
+  "correct_answer": "Та хоёр",
+  "explanation": "俩 (liǎ) = хоёулаа.",
+  "order_index": 11,
+  "id": "yct-6-l07-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shuāngbāotāi» гэж уншдаг үг:",
+  "options": [
+   "双胞胎",
+   "先生",
+   "儿童车",
+   "词典"
+  ],
+  "correct_answer": "双胞胎",
+  "explanation": "双胞胎 = shuāngbāotāi = ихэр.",
+  "order_index": 12,
+  "id": "yct-6-l07-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «cídiǎn» гэж уншдаг үг:",
+  "options": [
+   "儿童车",
+   "先生",
+   "词典",
+   "牌子"
+  ],
+  "correct_answer": "词典",
+  "explanation": "词典 = cídiǎn = толь бичиг.",
+  "order_index": 13,
+  "id": "yct-6-l07-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «páizi» гэж уншдаг үг:",
+  "options": [
+   "牌子",
+   "词典",
+   "页",
+   "脸"
+  ],
+  "correct_answer": "牌子",
+  "explanation": "牌子 = páizi = самбар.",
+  "order_index": 14,
+  "id": "yct-6-l07-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Охин хүүд юуг буцааж өгөх гэсэн бэ?",
+  "options": [
+   "Мөнгө",
+   "Харандаа",
+   "Ном",
+   "Толь бичиг"
+  ],
+  "correct_answer": "Толь бичиг",
+  "explanation": "女孩：还你词典。",
+  "order_index": 15,
+  "id": "yct-6-l07-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Толь бичгийн эхний хуудсан дээр хэний нэр бичээстэй байсан бэ?",
+  "options": [
+   "圆圆",
+   "张大力",
+   "小明",
+   "张小力"
+  ],
+  "correct_answer": "张大力",
+  "explanation": "第一页上写着你的名字：张大力。",
+  "order_index": 16,
+  "id": "yct-6-l07-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«哥哥的脸比我圆» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Ах надтай адилхан",
+   "Ахын толь бичиг миний",
+   "Ах надаас өндөр",
+   "Ахын нүүр надаас дугуй"
+  ],
+  "correct_answer": "Ахын нүүр надаас дугуй",
+  "explanation": "脸 = нүүр, 圆 = дугуй.",
+  "order_index": 17,
+  "id": "yct-6-l07-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ноён Чжан хүүхдийн тэргэн дээр яагаад самбар өлгөсөн бэ?",
+  "options": [
+   "Тэргээ алдахгүйн тулд",
+   "Зөвхөн чимэглэхийн тулд",
+   "Толь бичиг зарахын тулд",
+   "Ихэр биш гэдгийг хүн бүр мэдэг гэж"
+  ],
+  "correct_answer": "Ихэр биш гэдгийг хүн бүр мэдэг гэж",
+  "explanation": "为了让大家知道他们不是双胞胎……",
+  "order_index": 18,
+  "id": "yct-6-l07-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Ээж ихэр охидыг угаахдаа юу андуурсан бэ?",
+  "options": [
+   "Фан-фаныг хоёр удаа угаасан",
+   "Ээж андуураагүй",
+   "Юань-юаньг хоёр удаа угааж, Фан-фаныг угаагаагүй",
+   "Хоёуланг нь угаагаагүй"
+  ],
+  "correct_answer": "Юань-юаньг хоёр удаа угааж, Фан-фаныг угаагаагүй",
+  "explanation": "圆圆洗了两遍，方方没洗。",
+  "order_index": 19,
+  "id": "yct-6-l07-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他们（ ）很像。",
+  "options": [
+   "牌子",
+   "俩",
+   "页",
+   "词典"
+  ],
+  "correct_answer": "俩",
+  "explanation": "他们俩 = тэр хоёр.",
+  "order_index": 20,
+  "id": "yct-6-l07-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师，我来（ ）这本书。",
+  "options": [
+   "页",
+   "像",
+   "还",
+   "脸"
+  ],
+  "correct_answer": "还",
+  "explanation": "还书 = ном буцааж өгөх.",
+  "order_index": 21,
+  "id": "yct-6-l07-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）我一本词典，可以吗？",
+  "options": [
+   "像",
+   "借给",
+   "页",
+   "圆"
+  ],
+  "correct_answer": "借给",
+  "explanation": "借给我 = надад зээлүүл.",
+  "order_index": 22,
+  "id": "yct-6-l07-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）学好汉语，我买了一本词典。",
+  "options": [
+   "但是",
+   "为了",
+   "因为",
+   "所以"
+  ],
+  "correct_answer": "为了",
+  "explanation": "为了 = …-ын тулд.",
+  "order_index": 23,
+  "id": "yct-6-l07-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "虽然他不是中国人，（ ）他汉语说得很好。",
+  "options": [
+   "但是",
+   "所以",
+   "还是",
+   "因为"
+  ],
+  "correct_answer": "但是",
+  "explanation": "虽然……但是……",
+  "order_index": 24,
+  "id": "yct-6-l07-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我和爸爸特别（ ）。",
+  "options": [
+   "圆",
+   "页",
+   "还",
+   "像"
+  ],
+  "correct_answer": "像",
+  "explanation": "像 = төстэй.",
+  "order_index": 25,
+  "id": "yct-6-l07-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "«Тэд ихэр биш ч гэсэн их төстэй» хятадаар:",
+  "options": [
+   "他们虽然不是双胞胎，但是很像。",
+   "他们因为不是双胞胎，所以很像。",
+   "为了他们不是双胞胎，很像。",
+   "他们不像，是双胞胎。"
+  ],
+  "correct_answer": "他们虽然不是双胞胎，但是很像。",
+  "explanation": "虽然……但是…… = …ч гэсэн, гэхдээ…",
+  "order_index": 26,
+  "id": "yct-6-l07-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаасаа мөнгө зээлэхдээ юу гэж хэлэх вэ?",
+  "options": [
+   "这是一页。",
+   "借给我十块钱，可以吗？",
+   "还你十块钱。",
+   "我像十块钱。"
+  ],
+  "correct_answer": "借给我十块钱，可以吗？",
+  "explanation": "借给我 = надад зээлүүл.",
+  "order_index": 27,
+  "id": "yct-6-l07-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Зээлсэн мөнгөө буцааж өгөхдөө юу гэж хэлэх вэ?",
+  "options": [
+   "借给我钱。",
+   "他们是双胞胎。",
+   "还你钱，谢谢！",
+   "你们俩很像。"
+  ],
+  "correct_answer": "还你钱，谢谢！",
+  "explanation": "还你钱 = мөнгийг чинь буцааж өгье.",
+  "order_index": 28,
+  "id": "yct-6-l07-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Халуун ногоотой» хятадаар аль нь вэ?",
+  "options": [
+   "甜",
+   "糖",
+   "瘦",
+   "辣"
+  ],
+  "correct_answer": "辣",
+  "explanation": "辣 (là) = халуун ногоотой.",
+  "order_index": 1,
+  "id": "yct-6-l13-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чихэрлэг» хятадаар аль нь вэ?",
+  "options": [
+   "盒",
+   "瘦",
+   "甜",
+   "辣"
+  ],
+  "correct_answer": "甜",
+  "explanation": "甜 (tián) = чихэрлэг.",
+  "order_index": 2,
+  "id": "yct-6-l13-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хөргөгч» хятадаар аль нь вэ?",
+  "options": [
+   "冰箱",
+   "西红柿",
+   "糖",
+   "盒"
+  ],
+  "correct_answer": "冰箱",
+  "explanation": "冰箱 (bīngxiāng) = хөргөгч.",
+  "order_index": 3,
+  "id": "yct-6-l13-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Улаан лооль» хятадаар аль нь вэ?",
+  "options": [
+   "西红柿",
+   "冰箱",
+   "果汁",
+   "蛋糕"
+  ],
+  "correct_answer": "西红柿",
+  "explanation": "西红柿 (xīhóngshì) = улаан лооль.",
+  "order_index": 4,
+  "id": "yct-6-l13-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«瘦» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "тарган",
+   "намхан",
+   "чихэрлэг",
+   "туранхай"
+  ],
+  "correct_answer": "туранхай",
+  "explanation": "瘦 (shòu) = туранхай. Эсрэг үг нь 胖.",
+  "order_index": 5,
+  "id": "yct-6-l13-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«糖» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хөргөгч",
+   "хайрцаг",
+   "чихэр",
+   "жүүс"
+  ],
+  "correct_answer": "чихэр",
+  "explanation": "糖 (táng) = чихэр.",
+  "order_index": 6,
+  "id": "yct-6-l13-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«盒» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өдөр",
+   "хөргөгч",
+   "хайрцаг (тоолуур үг)",
+   "хуудас"
+  ],
+  "correct_answer": "хайрцаг (тоолуур үг)",
+  "explanation": "盒 (hé) = хайрцаг. 一盒巧克力 = нэг хайрцаг шоколад.",
+  "order_index": 7,
+  "id": "yct-6-l13-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«同意» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "идэх",
+   "тэвчих",
+   "санал нийлэх",
+   "ярилцах"
+  ],
+  "correct_answer": "санал нийлэх",
+  "explanation": "同意 (tóngyì) = санал нийлэх, зөвшөөрөх.",
+  "order_index": 8,
+  "id": "yct-6-l13-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«讨论» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хөргөгч",
+   "ярилцах, хэлэлцэх",
+   "санал нийлэх",
+   "цуцалгүй хийх"
+  ],
+  "correct_answer": "ярилцах, хэлэлцэх",
+  "explanation": "讨论 (tǎolùn) = ярилцах.",
+  "order_index": 9,
+  "id": "yct-6-l13-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«坚持» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "санал нийлэх",
+   "цангах",
+   "цуцалгүй үргэлжлүүлэх",
+   "идэж чадахгүй"
+  ],
+  "correct_answer": "цуцалгүй үргэлжлүүлэх",
+  "explanation": "坚持 (jiānchí) = цуцалгүй, өдөр бүр хийх.",
+  "order_index": 10,
+  "id": "yct-6-l13-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shòubuliǎo» гэж уншдаг үг:",
+  "options": [
+   "受不了",
+   "同意",
+   "讨论",
+   "吃不了"
+  ],
+  "correct_answer": "受不了",
+  "explanation": "受不了 = shòubuliǎo = тэсэхгүй.",
+  "order_index": 11,
+  "id": "yct-6-l13-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bīngxiāng» гэж уншдаг үг:",
+  "options": [
+   "冰箱",
+   "果汁",
+   "蛋糕",
+   "西红柿"
+  ],
+  "correct_answer": "冰箱",
+  "explanation": "冰箱 = bīngxiāng = хөргөгч.",
+  "order_index": 12,
+  "id": "yct-6-l13-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jiānchí» гэж уншдаг үг:",
+  "options": [
+   "受不了",
+   "讨论",
+   "坚持",
+   "同意"
+  ],
+  "correct_answer": "坚持",
+  "explanation": "坚持 = jiānchí = цуцалгүй хийх.",
+  "order_index": 13,
+  "id": "yct-6-l13-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «tǎolùn» гэж уншдаг үг:",
+  "options": [
+   "讨论",
+   "吃不了",
+   "坚持",
+   "同意"
+  ],
+  "correct_answer": "讨论",
+  "explanation": "讨论 = tǎolùn = ярилцах.",
+  "order_index": 14,
+  "id": "yct-6-l13-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь Сяо Мин ямар хоолонд дуртай вэ?",
+  "options": [
+   "Чихэрлэг хоолонд",
+   "Исгэлэн хоолонд",
+   "Давстай хоолонд",
+   "Халуун ногоотой хоолонд"
+  ],
+  "correct_answer": "Халуун ногоотой хоолонд",
+  "explanation": "小明：我爱吃辣的，越辣越好。",
+  "order_index": 15,
+  "id": "yct-6-l13-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Хун яагаад халуун ногоотой хоол идэхгүй вэ?",
+  "options": [
+   "Хоол муухай",
+   "Идэж чадахгүй, чихэрлэгт дуртай",
+   "Хөргөгчид бялуу байгаа",
+   "Өлсөөгүй"
+  ],
+  "correct_answer": "Идэж чадахгүй, чихэрлэгт дуртай",
+  "explanation": "小红：我吃不了辣的，我爱吃甜的。",
+  "order_index": 16,
+  "id": "yct-6-l13-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ээж өнөөдөр ямар хоол хийсэн бэ?",
+  "options": [
+   "Будаа, загас",
+   "Талх, сүү",
+   "Бялуу, жүүс",
+   "Мапо тофу, улаан лоолийтой өндөгний хоол"
+  ],
+  "correct_answer": "Мапо тофу, улаан лоолийтой өндөгний хоол",
+  "explanation": "妈妈：麻婆豆腐和西红柿炒鸡蛋。",
+  "order_index": 17,
+  "id": "yct-6-l13-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Хун өлсөхөд ээж юу гэж хэлсэн бэ?",
+  "options": [
+   "Өнөөдөр хоол байхгүй",
+   "Чихэр идээрэй",
+   "Хөргөгчид жүүс байгаа",
+   "Хөргөгчид бялуу байгаа"
+  ],
+  "correct_answer": "Хөргөгчид бялуу байгаа",
+  "explanation": "小红：我饿了。 妈妈：冰箱里有蛋糕。",
+  "order_index": 18,
+  "id": "yct-6-l13-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«如果不吃巧克力，我可能受不了» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Би шоколад идэж чадахгүй",
+   "Шоколад хөргөгчид байна",
+   "Шоколад идэхгүй бол би тэсэхгүй байх",
+   "Би шоколадыг үзэн яддаг"
+  ],
+  "correct_answer": "Шоколад идэхгүй бол би тэсэхгүй байх",
+  "explanation": "如果 = хэрэв, 受不了 = тэсэхгүй.",
+  "order_index": 19,
+  "id": "yct-6-l13-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "我爱吃辣的，越辣越（ ）。",
+  "options": [
+   "瘦",
+   "好",
+   "甜",
+   "盒"
+  ],
+  "correct_answer": "好",
+  "explanation": "越辣越好 = халуун ногоотой байх тусмаа сайн.",
+  "order_index": 20,
+  "id": "yct-6-l13-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）辣的，我爱吃甜的。",
+  "options": [
+   "讨论",
+   "同意",
+   "吃不了",
+   "坚持"
+  ],
+  "correct_answer": "吃不了",
+  "explanation": "吃不了 = идэж чадахгүй.",
+  "order_index": 21,
+  "id": "yct-6-l13-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我要一（ ）巧克力。",
+  "options": [
+   "糖",
+   "盒",
+   "冰箱",
+   "页"
+  ],
+  "correct_answer": "盒",
+  "explanation": "一盒巧克力 = нэг хайрцаг шоколад.",
+  "order_index": 22,
+  "id": "yct-6-l13-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "姐姐天天（ ）运动，不吃糖。",
+  "options": [
+   "讨论",
+   "坚持",
+   "同意",
+   "受不了"
+  ],
+  "correct_answer": "坚持",
+  "explanation": "天天坚持运动 = өдөр бүр хичээллэнэ.",
+  "order_index": 23,
+  "id": "yct-6-l13-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "大家（ ）一下吧。",
+  "options": [
+   "讨论",
+   "盒",
+   "西红柿",
+   "瘦"
+  ],
+  "correct_answer": "讨论",
+  "explanation": "大家讨论一下吧 = бүгдээрээ ярилцъя.",
+  "order_index": 24,
+  "id": "yct-6-l13-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "飞机越飞越（ ）。",
+  "options": [
+   "辣",
+   "甜",
+   "瘦",
+   "高"
+  ],
+  "correct_answer": "高",
+  "explanation": "越飞越高 = нисэх тусмаа өндөр.",
+  "order_index": 25,
+  "id": "yct-6-l13-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Чи «Би халуун ногоотой юм идэж чадахгүй» гэж хэлэхдээ:",
+  "options": [
+   "我吃不了辣的。",
+   "我爱吃辣的。",
+   "我吃了辣的。",
+   "我同意辣的。"
+  ],
+  "correct_answer": "我吃不了辣的。",
+  "explanation": "吃不了 = идэж чадахгүй.",
+  "order_index": 26,
+  "id": "yct-6-l13-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дууны асуулт: «什么东西是甜的？» Зөв хариу:",
+  "options": [
+   "柠檬是甜的。",
+   "巧克力是甜的。",
+   "辣椒是甜的。",
+   "海水是甜的。"
+  ],
+  "correct_answer": "巧克力是甜的。",
+  "explanation": "Шоколад чихэрлэг. Чинжүү халуун ногоотой, далайн ус давстай, нимбэг исгэлэн.",
+  "order_index": 27,
+  "id": "yct-6-l13-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «Туранхай байвал илүү хөөрхөн» гэхэд чи санал нийлэхгүй бол:",
+  "options": [
+   "我同意。",
+   "我坚持。",
+   "我不同意。",
+   "我吃不了。"
+  ],
+  "correct_answer": "我不同意。",
+  "explanation": "不同意 = санал нийлэхгүй.",
+  "order_index": 28,
+  "id": "yct-6-l13-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,204 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你表演什么？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses on a school stage with red curtains; a calf girl in yellow dress with pink ribbon wears a blue lamp-shade costume, a yellow calf boy in a police cap and a brown calf boy at a small ticket booth watch her; a speech bubble with the Chinese text 你表演什么 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jingcha.jpg",
+  "aspect": "1:1",
+  "title": "警察",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest dressed as a police officer with a cap and whistle, directing traffic on a sunny street. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shoupiaoyuan.jpg",
+  "aspect": "1:1",
+  "title": "售票员",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon in a uniform behind a small ticket window handing out a ticket, a queue of animals waiting. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jizhe.jpg",
+  "aspect": "1:1",
+  "title": "记者",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap holding a microphone and notebook like a reporter, interviewing a rabbit in a school yard. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yanyuan.jpg",
+  "aspect": "1:1",
+  "title": "演员",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon in a fancy costume bowing on a theatre stage under spotlights, clapping animals in the audience. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-biaoyan.jpg",
+  "aspect": "1:1",
+  "title": "表演",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest performing on a stage, waving his arms in a funny pose, curtains and spotlights. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jiemu.jpg",
+  "aspect": "1:1",
+  "title": "节目",
+  "section": "vocabulary",
+  "prompt": "A stage with a colourful poster of a show, three calves in costumes rehearsing a small play, red curtains. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-shouhuanying.jpg",
+  "aspect": "1:1",
+  "title": "受欢迎",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap on stage surrounded by a happy cheering crowd of animals throwing flowers and clapping, popular star feeling. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-cai.jpg",
+  "aspect": "1:1",
+  "title": "猜",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress hiding a toy behind her back, the yellow calf boy thinking with a finger on chin and question marks above his head. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-diandeng.jpg",
+  "aspect": "1:1",
+  "title": "电灯",
+  "section": "vocabulary",
+  "prompt": "A glowing old-fashioned electric ceiling lamp lit up in a cosy room, the yellow calf boy looking up at it. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dang.jpg",
+  "aspect": "1:1",
+  "title": "当",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap daydreaming; a thought cloud shows him grown up as a teacher with a blackboard, becoming something when he grows up. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhongyao.jpg",
+  "aspect": "1:1",
+  "title": "重要",
+  "section": "vocabulary",
+  "prompt": "The teacher camel with glasses pointing at a big red exclamation mark on the blackboard, three calves taking notes carefully, important lesson. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xinwen.jpg",
+  "aspect": "1:1",
+  "title": "新闻",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress reading a newspaper with a big headline, the brown calf boy in green cap watching a news programme on a small TV. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yinggai.jpg",
+  "aspect": "1:1",
+  "title": "应该",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest helping the calf girl in yellow dress pick up her fallen books, a green check mark above, showing the right thing to do. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yijiu.jpg",
+  "aspect": "1:1",
+  "title": "一……就……",
+  "section": "vocabulary",
+  "prompt": "Split picture: left, the brown calf boy in green cap opening the front door of home; right, the same calf immediately sleeping in bed, arrow from left to right. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kanjian.jpg",
+  "aspect": "1:1",
+  "title": "看见",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon happily spotting a red kite in the sky through a gap in the trees, pointing up. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "昨天我们表演的节目很受欢迎。",
+  "section": "dialogue",
+  "prompt": "On a school stage: the calf girl in yellow dress and pink ribbon wears a blue lamp-shade costume and the brown calf boy in a green cap guesses, next to a police costume and a ticket office prop, a speech bubble with the Chinese text 你猜 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我想当演员",
+  "section": "speech",
+  "prompt": "Left: a calf boy with a microphone and notebook as a school reporter; right: the calf girl in yellow dress dressed as a lamp on stage with a spotlight; the teacher camel with glasses asks the class in the middle. No English text.",
+  "chars": [
+   "temee",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "狐假虎威",
+  "section": "story",
+  "prompt": "A clever red fox walking proudly in a green forest with a puzzled tiger following behind it, small animals running away in fear in the background. No English text.",
+  "chars": []
+ }
+]

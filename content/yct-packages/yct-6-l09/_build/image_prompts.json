@@ -1,0 +1,204 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "他家搬到动物园附近了。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses and three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) walk on a sunny path towards a small house next to a zoo with a giraffe and an elephant peeking over the fence; the yellow calf points ahead, a speech bubble with the Chinese text 他家搬到动物园附近了 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-tushuguan.jpg",
+  "aspect": "1:1",
+  "title": "图书馆",
+  "section": "vocabulary",
+  "prompt": "A cozy library with tall bookshelves full of books, the calf girl in yellow dress with pink ribbon reading a book at a table. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-baozhi.jpg",
+  "aspect": "1:1",
+  "title": "报纸",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap holding up a big folded newspaper with headlines and photos, sitting on a bench. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zazhi.jpg",
+  "aspect": "1:1",
+  "title": "杂志",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest reading a colourful magazine with a bright cover of animals and planets. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-chaoren.jpg",
+  "aspect": "1:1",
+  "title": "超人",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest wearing a red cape and flying in the sky like a superhero with fist forward, city far below. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-banjia.jpg",
+  "aspect": "1:1",
+  "title": "搬家",
+  "section": "vocabulary",
+  "prompt": "A moving truck in front of a house, the brown calf boy in green cap and an adult camel family carrying boxes and a plant into the truck. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-fujin.jpg",
+  "aspect": "1:1",
+  "title": "附近",
+  "section": "vocabulary",
+  "prompt": "A small house with a tiny library, a shop and a bus stop all right next to it; the calf girl in yellow dress with pink ribbon standing in front, a dotted circle around the neighbourhood showing 'near'. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-dizhi.jpg",
+  "aspect": "1:1",
+  "title": "地址",
+  "section": "vocabulary",
+  "prompt": "An envelope with an address written on it and a small house with a number on the door, the yellow calf boy in blue vest pointing at the address. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dianziyoujian.jpg",
+  "aspect": "1:1",
+  "title": "电子邮件",
+  "section": "vocabulary",
+  "prompt": "A laptop showing an email window with an envelope icon flying out, the calf girl in yellow dress with pink ribbon typing happily. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-milu.jpg",
+  "aspect": "1:1",
+  "title": "迷路",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap standing at a crossroads with many signposts, holding a map upside down, confused with question marks above his head. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-chufa.jpg",
+  "aspect": "1:1",
+  "title": "出发",
+  "section": "vocabulary",
+  "prompt": "Three young camel calves with backpacks starting a trip at the gate of a house in the morning sunrise, teacher camel waving; a travel road ahead. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jianmian.jpg",
+  "aspect": "1:1",
+  "title": "见面",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest and the calf girl in yellow dress with pink ribbon meeting at a subway station entrance, waving and smiling at each other. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xing.jpg",
+  "aspect": "1:1",
+  "title": "行",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap giving a big thumbs up and a happy OK sign, with a green check mark bubble beside him. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-gushi.jpg",
+  "aspect": "1:1",
+  "title": "故事",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon reading a big storybook to two little animals; a dreamy cloud above shows a castle and a dragon from the story. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-liqi.jpg",
+  "aspect": "1:1",
+  "title": "力气",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest lifting a very heavy barbell over his head with big muscles and a proud face, the other calves cheering. No English text.",
+  "chars": [
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-lao.jpg",
+  "aspect": "1:1",
+  "title": "老",
+  "section": "vocabulary",
+  "prompt": "A kind old adult camel grandfather with white beard and a walking stick sitting on a bench in a park, the calf girl in yellow dress sitting beside him. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "小力搬家了，请我们明天去他家玩。",
+  "section": "dialogue",
+  "prompt": "The brown calf boy in green cap and the calf girl in yellow dress with pink ribbon talk on a stone path near a school; he holds a phone showing an email, a zoo gate is visible in the distance, a speech bubble with the Chinese text 小力搬家了 in large clear black font. No English text.",
+  "chars": [
+   "bor",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我最喜欢看超人的故事",
+  "section": "speech",
+  "prompt": "The yellow calf boy in blue vest reading in a library, a dreamy thought bubble above him shows a superhero in a red cape and blue suit lifting a truck and flying faster than a plane; the teacher camel with glasses stands beside. No English text.",
+  "chars": [
+   "huu",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "小英雄",
+  "section": "song",
+  "prompt": "Young Chinese hero Nezha as a cute child with two hair buns, red sash and fire-wheel shoes, flying above the clouds and the sea, holding a red-tasselled spear; the three calves clap and sing below. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Магтах» хятадаар аль нь вэ?",
+  "options": [
+   "生气",
+   "停",
+   "忘记",
+   "表扬"
+  ],
+  "correct_answer": "表扬",
+  "explanation": "表扬 (biǎoyáng) = магтах.",
+  "order_index": 1,
+  "id": "yct-6-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Өгүүлбэр» хятадаар аль нь вэ?",
+  "options": [
+   "错",
+   "渴",
+   "句子",
+   "钥匙"
+  ],
+  "correct_answer": "句子",
+  "explanation": "句子 (jùzi) = өгүүлбэр.",
+  "order_index": 2,
+  "id": "yct-6-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сонирхолтой» хятадаар аль нь вэ?",
+  "options": [
+   "有意思",
+   "马虎",
+   "生气",
+   "停"
+  ],
+  "correct_answer": "有意思",
+  "explanation": "有意思 (yǒu yìsi) = сонирхолтой.",
+  "order_index": 3,
+  "id": "yct-6-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Түлхүүр» хятадаар аль нь вэ?",
+  "options": [
+   "钥匙",
+   "句子",
+   "错",
+   "渴"
+  ],
+  "correct_answer": "钥匙",
+  "explanation": "钥匙 (yàoshi) = түлхүүр.",
+  "order_index": 4,
+  "id": "yct-6-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цангах» хятадаар аль нь вэ?",
+  "options": [
+   "饿",
+   "累",
+   "停",
+   "渴"
+  ],
+  "correct_answer": "渴",
+  "explanation": "渴 (kě) = цангах.",
+  "order_index": 5,
+  "id": "yct-6-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«马虎» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сонирхолтой",
+   "цангасан",
+   "хайнга, болхой",
+   "уурласан"
+  ],
+  "correct_answer": "хайнга, болхой",
+  "explanation": "马虎 (mǎhu) = хайнга, анхаарал муутай.",
+  "order_index": 6,
+  "id": "yct-6-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«生气» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "магтах",
+   "зогсох",
+   "уурлах",
+   "мартах"
+  ],
+  "correct_answer": "уурлах",
+  "explanation": "生气 (shēngqì) = уурлах.",
+  "order_index": 7,
+  "id": "yct-6-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«停» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "буруу",
+   "санах",
+   "зогсох",
+   "цангах"
+  ],
+  "correct_answer": "зогсох",
+  "explanation": "停 (tíng) = зогсох. 电梯停了 = цахилгаан шат зогссон.",
+  "order_index": 8,
+  "id": "yct-6-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«错» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хөөрхөн",
+   "буруу",
+   "зөв",
+   "хурдан"
+  ],
+  "correct_answer": "буруу",
+  "explanation": "错 (cuò) = буруу. 写错了 = буруу бичсэн.",
+  "order_index": 9,
+  "id": "yct-6-l05-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«忘记» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "санах",
+   "магтах",
+   "мартах",
+   "уурлах"
+  ],
+  "correct_answer": "мартах",
+  "explanation": "忘记 (wàngjì) = мартах.",
+  "order_index": 10,
+  "id": "yct-6-l05-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«想起来» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "санаж ирэх",
+   "уурлах",
+   "зогсох",
+   "мартах"
+  ],
+  "correct_answer": "санаж ирэх",
+  "explanation": "想起来 (xiǎng qǐlái) = санаж ирэх.",
+  "order_index": 11,
+  "id": "yct-6-l05-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yàoshi» гэж уншдаг үг:",
+  "options": [
+   "钥匙",
+   "表扬",
+   "生气",
+   "句子"
+  ],
+  "correct_answer": "钥匙",
+  "explanation": "钥匙 = yàoshi = түлхүүр.",
+  "order_index": 12,
+  "id": "yct-6-l05-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «mǎhu» гэж уншдаг үг:",
+  "options": [
+   "想起来",
+   "有意思",
+   "马虎",
+   "生气"
+  ],
+  "correct_answer": "马虎",
+  "explanation": "马虎 = mǎhu = хайнга.",
+  "order_index": 13,
+  "id": "yct-6-l05-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shēngqì» гэж уншдаг үг:",
+  "options": [
+   "生气",
+   "钥匙",
+   "句子",
+   "表扬"
+  ],
+  "correct_answer": "生气",
+  "explanation": "生气 = shēngqì = уурлах.",
+  "order_index": 14,
+  "id": "yct-6-l05-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «biǎoyáng» гэж уншдаг үг:",
+  "options": [
+   "有意思",
+   "想起来",
+   "马虎",
+   "表扬"
+  ],
+  "correct_answer": "表扬",
+  "explanation": "表扬 = biǎoyáng = магтах.",
+  "order_index": 15,
+  "id": "yct-6-l05-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь Сяо Мин «大家» гэж бичих гэсэн ч юу гэж бичсэн бэ?",
+  "options": [
+   "大人",
+   "大象",
+   "大小",
+   "大学"
+  ],
+  "correct_answer": "大象",
+  "explanation": "Тэр «大家» (бүгд)-ийн оронд «大象» (заан) гэж бичжээ.",
+  "order_index": 16,
+  "id": "yct-6-l05-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Багш Сяо Минг юуны төлөө магтсан бэ?",
+  "options": [
+   "Хурдан гүйсэн учир",
+   "Дуу сайн дуулсан учир",
+   "Зураг сайн зурсан учир",
+   "Бичсэн өгүүлбэр сонирхолтой учир"
+  ],
+  "correct_answer": "Бичсэн өгүүлбэр сонирхолтой учир",
+  "explanation": "老师说我写的句子很有意思。",
+  "order_index": 17,
+  "id": "yct-6-l05-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Гэр бүл 10 давхарт яагаад авирсан бэ?",
+  "options": [
+   "Гэр нь шатны дэргэд учир",
+   "Хурдан байхын тулд",
+   "Ээж дуртай учир",
+   "Цахилгаан шат зогссон учир"
+  ],
+  "correct_answer": "Цахилгаан шат зогссон учир",
+  "explanation": "但是电梯停了。",
+  "order_index": 18,
+  "id": "yct-6-l05-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аав юу мартсан бэ?",
+  "options": [
+   "Цүнхээ сургуульд",
+   "Номоо ангид",
+   "Түлхүүрээ машинд",
+   "Утсаа гэртээ"
+  ],
+  "correct_answer": "Түлхүүрээ машинд",
+  "explanation": "钥匙忘在汽车里了。",
+  "order_index": 19,
+  "id": "yct-6-l05-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Үлгэрт зураач ямар зураг зурсан бэ?",
+  "options": [
+   "Хоёр бар",
+   "Барын толгой, морины биетэй",
+   "Морины толгой, барын биетэй",
+   "Хоёр морь"
+  ],
+  "correct_answer": "Барын толгой, морины биетэй",
+  "explanation": "画上是老虎的头和马的身子。",
+  "order_index": 20,
+  "id": "yct-6-l05-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "句子写（ ）了。",
+  "options": [
+   "从",
+   "才",
+   "错",
+   "地"
+  ],
+  "correct_answer": "错",
+  "explanation": "写错了 = буруу бичсэн.",
+  "order_index": 21,
+  "id": "yct-6-l05-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈生气（ ）说：“你太马虎了！”",
+  "options": [
+   "才",
+   "地",
+   "错",
+   "从"
+  ],
+  "correct_answer": "地",
+  "explanation": "生气地说 = уурлан хэлэв.",
+  "order_index": 22,
+  "id": "yct-6-l05-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他十点（ ）起床。",
+  "options": [
+   "停",
+   "才",
+   "地",
+   "错"
+  ],
+  "correct_answer": "才",
+  "explanation": "十点才起床 = арван цагт л босно.",
+  "order_index": 23,
+  "id": "yct-6-l05-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "大象（ ）教室里走出来。",
+  "options": [
+   "从",
+   "地",
+   "把",
+   "才"
+  ],
+  "correct_answer": "从",
+  "explanation": "从教室里 = ангиас.",
+  "order_index": 24,
+  "id": "yct-6-l05-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我把钥匙（ ）在车里了。",
+  "options": [
+   "想",
+   "渴",
+   "错",
+   "忘"
+  ],
+  "correct_answer": "忘",
+  "explanation": "忘在车里了 = машинд мартчихсан.",
+  "order_index": 25,
+  "id": "yct-6-l05-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我很（ ），想喝水。",
+  "options": [
+   "渴",
+   "错",
+   "停",
+   "才"
+  ],
+  "correct_answer": "渴",
+  "explanation": "渴 = цангах.",
+  "order_index": 26,
+  "id": "yct-6-l05-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь буруу ханз бичсэн. Чи «Чи хайнга юм аа!» гэж хэлэх бол:",
+  "options": [
+   "你生气地说！",
+   "你真马虎！",
+   "你真有意思！",
+   "你太渴了！"
+  ],
+  "correct_answer": "你真马虎！",
+  "explanation": "马虎 = хайнга.",
+  "order_index": 27,
+  "id": "yct-6-l05-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ээж уурлаад «Чи дэндүү хайнга юм!» гэж хэлсэн. Хятадаар:",
+  "options": [
+   "妈妈高兴地说：“你太马虎了！”",
+   "妈妈从生气说",
+   "妈妈生气地说：“你太马虎了！”",
+   "妈妈生气才说"
+  ],
+  "correct_answer": "妈妈生气地说：“你太马虎了！”",
+  "explanation": "生气地说 = уурлан хэлэв.",
+  "order_index": 28,
+  "id": "yct-6-l05-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

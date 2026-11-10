@@ -1,0 +1,542 @@
+[
+ {
+  "type": "choice",
+  "question": "«Малгай» хятадаар аль нь вэ?",
+  "options": [
+   "盘子",
+   "礼物",
+   "自行车",
+   "帽子"
+  ],
+  "correct_answer": "帽子",
+  "explanation": "帽子 (màozi) = малгай.",
+  "order_index": 1,
+  "id": "yct-6-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Юань (мөнгө)» хятадаар аль нь вэ?",
+  "options": [
+   "换",
+   "试",
+   "元",
+   "辆"
+  ],
+  "correct_answer": "元",
+  "explanation": "元 (yuán) = юань. Амаар «块» гэж ч хэлдэг.",
+  "order_index": 2,
+  "id": "yct-6-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«贵» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "үнэтэй",
+   "хямд",
+   "хуучин",
+   "таарсан"
+  ],
+  "correct_answer": "үнэтэй",
+  "explanation": "贵 (guì) = үнэтэй. Эсрэг үг нь 便宜.",
+  "order_index": 3,
+  "id": "yct-6-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«花» (huā) энэ хичээлд ямар утгатай вэ?",
+  "options": [
+   "мөнгө, цаг зарцуулах",
+   "цэцэг",
+   "айх",
+   "солих"
+  ],
+  "correct_answer": "мөнгө, цаг зарцуулах",
+  "explanation": "花了30元 = 30 юань зарцуулсан.",
+  "order_index": 4,
+  "id": "yct-6-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«换» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "оролдох",
+   "айх",
+   "зарцуулах",
+   "солих"
+  ],
+  "correct_answer": "солих",
+  "explanation": "换 (huàn) = солих, солилцох.",
+  "order_index": 5,
+  "id": "yct-6-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«旧» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "шинэ",
+   "үнэтэй",
+   "хуучин",
+   "хөөрхөн"
+  ],
+  "correct_answer": "хуучин",
+  "explanation": "旧 (jiù) = хуучин. Эсрэг үг нь 新.",
+  "order_index": 6,
+  "id": "yct-6-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«试一下» гэж юу гэсэн үг вэ?",
+  "options": [
+   "нэг зарцуулъя",
+   "нэг айя",
+   "нэг үзчихье, өмсөж үзье",
+   "нэг солиё"
+  ],
+  "correct_answer": "нэг үзчихье, өмсөж үзье",
+  "explanation": "试 = оролдох, өмсөж үзэх.",
+  "order_index": 7,
+  "id": "yct-6-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«合适» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "айх",
+   "хуучин",
+   "таарах, зохимжтой",
+   "дэндүү үнэтэй"
+  ],
+  "correct_answer": "таарах, зохимжтой",
+  "explanation": "合适 (héshì) = таарах. Хувцас таарахад «很合适».",
+  "order_index": 8,
+  "id": "yct-6-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Дугуй» (自行车)-ийн хэмжих үг аль нь вэ?",
+  "options": [
+   "只",
+   "辆",
+   "元",
+   "页"
+  ],
+  "correct_answer": "辆",
+  "explanation": "一辆自行车 = нэг дугуй. 辆 нь машин, дугуйны хэмжих үг.",
+  "order_index": 9,
+  "id": "yct-6-l11-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«紧张» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "зүрхлэх",
+   "хуучин",
+   "сандрах",
+   "солих"
+  ],
+  "correct_answer": "сандрах",
+  "explanation": "紧张 (jǐnzhāng) = сандрах, түгшихүй.",
+  "order_index": 10,
+  "id": "yct-6-l11-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«害怕» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "айх",
+   "таарах",
+   "зарцуулах",
+   "баярлах"
+  ],
+  "correct_answer": "айх",
+  "explanation": "害怕 (hàipà) = айх. 不要害怕 = битгий ай.",
+  "order_index": 11,
+  "id": "yct-6-l11-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «huàn» гэж уншдаг үг:",
+  "options": [
+   "换",
+   "旧",
+   "贵",
+   "花"
+  ],
+  "correct_answer": "换",
+  "explanation": "换 = huàn = солих.",
+  "order_index": 12,
+  "id": "yct-6-l11-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «héshì» гэж уншдаг үг:",
+  "options": [
+   "帽子",
+   "害怕",
+   "合适",
+   "紧张"
+  ],
+  "correct_answer": "合适",
+  "explanation": "合适 = héshì = таарах.",
+  "order_index": 13,
+  "id": "yct-6-l11-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jǐnzhāng» гэж уншдаг үг:",
+  "options": [
+   "紧张",
+   "自行车",
+   "合适",
+   "害怕"
+  ],
+  "correct_answer": "紧张",
+  "explanation": "紧张 = jǐnzhāng = сандрах.",
+  "order_index": 14,
+  "id": "yct-6-l11-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «gǎn» гэж уншдаг үг:",
+  "options": [
+   "为",
+   "辆",
+   "贵",
+   "敢"
+  ],
+  "correct_answer": "敢",
+  "explanation": "敢 = gǎn = зүрхлэх.",
+  "order_index": 15,
+  "id": "yct-6-l11-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь тавагны үнэ хэд вэ?",
+  "options": [
+   "Үнэгүй",
+   "Нэг нь арван юань",
+   "Нэг нь нэг юань",
+   "Нэг нь гучин юань"
+  ],
+  "correct_answer": "Нэг нь арван юань",
+  "explanation": "十元一个。 Гучин юань нь Сяо Ли авахдаа төлсөн үнэ.",
+  "order_index": 16,
+  "id": "yct-6-l11-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Ли тавагаа авахдаа хэдэн юань төлсөн бэ?",
+  "options": [
+   "3 юань",
+   "20 юань",
+   "10 юань",
+   "30 юань"
+  ],
+  "correct_answer": "30 юань",
+  "explanation": "我买的时候，花了30元！",
+  "order_index": 17,
+  "id": "yct-6-l11-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Хун яагаад малгайгаа «хуучин биш» гэв?",
+  "options": [
+   "Өөр хүн бэлэглэсэн учир",
+   "Үнэтэй учир",
+   "Өнөөдөр авсан учир",
+   "Өнгөрсөн жил авсан учир"
+  ],
+  "correct_answer": "Өнгөрсөн жил авсан учир",
+  "explanation": "不旧，是去年买的。",
+  "order_index": 18,
+  "id": "yct-6-l11-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Малгайг өмсөж үзсэний дараа Сяо Ли юу хийв?",
+  "options": [
+   "Малгайг хаяв",
+   "Уйлав",
+   "Солихоос татгалзав",
+   "Таваг өгөв"
+  ],
+  "correct_answer": "Солихоос татгалзав",
+  "explanation": "但是对不起，我不想换。",
+  "order_index": 19,
+  "id": "yct-6-l11-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хүүгийн 6 насны төрсөн өдрийн бэлэг юу байсан бэ?",
+  "options": [
+   "Таваг",
+   "Дугуй",
+   "Малгай",
+   "Ном"
+  ],
+  "correct_answer": "Дугуй",
+  "explanation": "一辆旧自行车——爸爸妈妈为我买的礼物。",
+  "order_index": 20,
+  "id": "yct-6-l11-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Хүү дугуй унаж сурах эхэндээ яасан бэ?",
+  "options": [
+   "Дугуйд дургүй байсан",
+   "Шууд унасан",
+   "Сандарч, унахаас айсан",
+   "Дугуйгаа заруулсан"
+  ],
+  "correct_answer": "Сандарч, унахаас айсан",
+  "explanation": "我很紧张，不敢骑。",
+  "order_index": 21,
+  "id": "yct-6-l11-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "多便宜（ ）！",
+  "options": [
+   "吗",
+   "啊",
+   "吧",
+   "呢"
+  ],
+  "correct_answer": "啊",
+  "explanation": "多便宜啊！ = яасан хямд юм бэ!",
+  "order_index": 22,
+  "id": "yct-6-l11-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）帽子换你的盘子。",
+  "options": [
+   "试",
+   "用",
+   "为",
+   "敢"
+  ],
+  "correct_answer": "用",
+  "explanation": "用 A 换 B = А-гаар В-тэй солих.",
+  "order_index": 23,
+  "id": "yct-6-l11-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我买面包（ ）了三十元。",
+  "options": [
+   "花",
+   "贵",
+   "旧",
+   "换"
+  ],
+  "correct_answer": "花",
+  "explanation": "花了三十元 = гучин юань зарцуулсан.",
+  "order_index": 24,
+  "id": "yct-6-l11-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸妈妈（ ）我买的礼物。",
+  "options": [
+   "换",
+   "试",
+   "贵",
+   "为"
+  ],
+  "correct_answer": "为",
+  "explanation": "为我买的礼物 = надад зориулж авсан бэлэг.",
+  "order_index": 25,
+  "id": "yct-6-l11-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个帽子有点儿（ ），是去年买的。",
+  "options": [
+   "旧",
+   "贵",
+   "紧张",
+   "合适"
+  ],
+  "correct_answer": "旧",
+  "explanation": "有点儿旧 = жаахан хуучирсан.",
+  "order_index": 26,
+  "id": "yct-6-l11-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我花了两个小时（ ）学会了。",
+  "options": [
+   "更",
+   "就",
+   "换",
+   "为"
+  ],
+  "correct_answer": "就",
+  "explanation": "花了两个小时就学会了 = хоёрхон цагт сурчихсан.",
+  "order_index": 27,
+  "id": "yct-6-l11-q27",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Дэлгүүрт өмдийг өмсөж үзье гэвэл:",
+  "options": [
+   "我换一下。",
+   "我贵一下。",
+   "我试一下。",
+   "我花一下。"
+  ],
+  "correct_answer": "我试一下。",
+  "explanation": "试一下 = нэг үзчихье.",
+  "order_index": 28,
+  "id": "yct-6-l11-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хөөрхөн хувцас яг таарвал юу гэж хэлэх вэ?",
+  "options": [
+   "很合适！",
+   "有点儿旧。",
+   "我不敢。",
+   "太贵了！"
+  ],
+  "correct_answer": "很合适！",
+  "explanation": "很合适 = яг таарч байна.",
+  "order_index": 29,
+  "id": "yct-6-l11-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Могойд хөл зурсан хүн яагаад нэгдүгээр биш болсон бэ?",
+  "options": [
+   "Тэр удаан зурсан тул",
+   "Дарсыг уусан тул",
+   "Могойд хөл байдаггүй тул",
+   "Тэр дарс уухыг хүсээгүй тул"
+  ],
+  "correct_answer": "Могойд хөл байдаггүй тул",
+  "explanation": "蛇没有脚，所以你画的不是蛇。",
+  "order_index": 30,
+  "id": "yct-6-l11-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

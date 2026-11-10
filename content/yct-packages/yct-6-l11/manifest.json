@@ -1,0 +1,242 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l11",
+ "hskLevel": 3,
+ "lessonNumber": 11,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我用帽子换你的盘子。",
+ "mongolianTitle": "Малгайгаа тавагтай солиё",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第11课 (сурах бичиг + CD аудио 11-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-11-text-song.mp3",
+  "dialogues": "audio/yct-6-11-02.mp3",
+  "words": "audio/yct-6-11-01.mp3",
+  "speech": "audio/yct-6-11-03.mp3",
+  "story": "audio/yct-6-11-04.mp3",
+  "test": "audio/yct-6-11-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l11",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我用帽子换你的盘子。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "那个盘子多少钱？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我家有一辆旧自行车",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "画蛇添足",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "画蛇添足 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-yuan",
+    "file": "images/w-yuan.jpg",
+    "title": "元",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gui",
+    "file": "images/w-gui.jpg",
+    "title": "贵",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hua",
+    "file": "images/w-hua.jpg",
+    "title": "花",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-maozi",
+    "file": "images/w-maozi.jpg",
+    "title": "帽子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-huan",
+    "file": "images/w-huan.jpg",
+    "title": "换",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jiu",
+    "file": "images/w-jiu.jpg",
+    "title": "旧",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shi",
+    "file": "images/w-shi.jpg",
+    "title": "试",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-heshi",
+    "file": "images/w-heshi.jpg",
+    "title": "合适",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-liang",
+    "file": "images/w-liang.jpg",
+    "title": "辆",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wei",
+    "file": "images/w-wei.jpg",
+    "title": "为",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jinzhang",
+    "file": "images/w-jinzhang.jpg",
+    "title": "紧张",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gan",
+    "file": "images/w-gan.jpg",
+    "title": "敢",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-haipa",
+    "file": "images/w-haipa.jpg",
+    "title": "害怕",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s1",
+    "file": "images/s1.png",
+    "title": "Let's say 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s2",
+    "file": "images/s2.png",
+    "title": "Let's say 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s3",
+    "file": "images/s3.png",
+    "title": "Let's say 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s4",
+    "file": "images/s4.png",
+    "title": "Let's say 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s5",
+    "file": "images/s5.png",
+    "title": "Let's say 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s6",
+    "file": "images/s6.png",
+    "title": "Let's say 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L11); Let's say — зургаар шалгасан",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

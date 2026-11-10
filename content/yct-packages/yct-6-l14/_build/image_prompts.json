@@ -1,0 +1,187 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "有的熊猫一直睡觉。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses and three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) stand at a zoo panda enclosure behind a fence, watching pandas: one sleeping, one eating bamboo, one walking; a speech bubble with the Chinese text 有的熊猫一直睡觉 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-daorao.jpg",
+  "aspect": "1:1",
+  "title": "打扰",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest politely raising one hand and tilting forward to ask a passing adult camel on the street, apologetic friendly face, a small map in his other hand. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-canguan.jpg",
+  "aspect": "1:1",
+  "title": "参观",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon visiting a museum or zoo gate, holding a ticket and looking at a big sign with a panda picture, curious happy face. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shuxi.jpg",
+  "aspect": "1:1",
+  "title": "熟悉",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap confidently walking along his own neighbourhood street, waving to a baker and a neighbour who both wave back, home door visible in the background. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-wang.jpg",
+  "aspect": "1:1",
+  "title": "往",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest walking along a path, a big arrow sign points to the right ahead and a dotted line shows his direction of movement. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zhuan.jpg",
+  "aspect": "1:1",
+  "title": "转",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon turning around the corner of a street with a curved arrow showing the turn, her body half turned. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-youde.jpg",
+  "aspect": "1:1",
+  "title": "有的",
+  "section": "vocabulary",
+  "prompt": "Three pandas split into groups: some sleeping on the ground, some eating bamboo; a curly brace in the picture separates the two groups, the brown calf boy in green cap points at them. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kanqilai.jpg",
+  "aspect": "1:1",
+  "title": "看起来",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest looking at a shiny delicious cake in a shop window with big eyes, a happy drooling smile and sparkles around his eyes. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-guanyu.jpg",
+  "aspect": "1:1",
+  "title": "关于",
+  "section": "vocabulary",
+  "prompt": "The teacher camel with glasses holding a thick book with a panda on its cover, pointing to the cover, while the calf girl in yellow dress listens, an arrow pointing from the book to a panda. No English text.",
+  "chars": [
+   "temee",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zhishi.jpg",
+  "aspect": "1:1",
+  "title": "知识",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap reading a book at a desk with a glowing lightbulb above his head and tiny stars flying from the book into his head, a globe beside him. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-qingchu.jpg",
+  "aspect": "1:1",
+  "title": "清楚",
+  "section": "vocabulary",
+  "prompt": "Two pictures side by side: a blurry foggy view on the left and a crystal-clear sharp view of a mountain on the right with a happy yellow calf boy in blue vest pointing at the clear one. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xiaojie.jpg",
+  "aspect": "1:1",
+  "title": "小姐",
+  "section": "vocabulary",
+  "prompt": "A young adult camel lady in a blue dress with a sash standing graciously, the calf girl in yellow dress politely greeting her with a smile. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-dong.jpg",
+  "aspect": "1:1",
+  "title": "东",
+  "section": "vocabulary",
+  "prompt": "A red arrow sign pointing right with a rising sun on the right side of the sky, the brown calf boy in green cap pointing towards the sunrise. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xi.jpg",
+  "aspect": "1:1",
+  "title": "西",
+  "section": "vocabulary",
+  "prompt": "A blue arrow sign pointing left with an orange setting sun on the left side of the sky near the horizon, the yellow calf boy in blue vest pointing towards the sunset. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zhuzi.jpg",
+  "aspect": "1:1",
+  "title": "竹子",
+  "section": "vocabulary",
+  "prompt": "A cluster of tall green bamboo stalks with leaves, a friendly panda chewing a bamboo stalk beside them, the calf girl in yellow dress watching. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "对不起，小姐，打扰一下。",
+  "section": "dialogue",
+  "prompt": "A city street: a young woman tourist with dark curly hair and a headband asks two women for directions, one of them points ahead to the right, a brick wall and trees in the background, a speech bubble with the Chinese text 打扰一下 in large clear black font. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我很喜欢熊猫",
+  "section": "speech",
+  "prompt": "At a zoo: a calf (yellow boy in blue vest) and his adult camel mother look through a railing at pandas: one asleep on a log, one eating bamboo, one walking; a PANDA wooden sign in Chinese style. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "毕业留言",
+  "section": "story",
+  "prompt": "Graduation day: calves in graduation caps holding rolled diplomas and writing messages on each other's yearbook cards, two identical twin calves hugging, a glowing lightbulb doodle on one card. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

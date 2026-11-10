@@ -1,0 +1,207 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l12",
+ "hskLevel": 3,
+ "lessonNumber": 12,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "以后要注意。",
+ "mongolianTitle": "Дараа нь болгоомжтой байя",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第12课 (сурах бичиг + CD аудио 12-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-12-text-song.mp3",
+  "dialogues": "audio/yct-6-12-02.mp3",
+  "words": "audio/yct-6-12-01.mp3",
+  "speech": "audio/yct-6-12-03.mp3",
+  "story": "audio/yct-6-12-04.mp3",
+  "test": "audio/yct-6-12-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l12",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "以后要注意。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "妈妈，弟弟的腿破了。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "生活中要注意的事情",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "孔融让梨",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "孔融让梨 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "decide",
+    "file": "images/decide.jpg",
+    "title": "Let's decide",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "w-zhuyi",
+    "file": "images/w-zhuyi.jpg",
+    "title": "注意",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jizhu",
+    "file": "images/w-jizhu.jpg",
+    "title": "记住",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shen",
+    "file": "images/w-shen.jpg",
+    "title": "身",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-biru",
+    "file": "images/w-biru.jpg",
+    "title": "比如",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-limao",
+    "file": "images/w-limao.jpg",
+    "title": "礼貌",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bixu",
+    "file": "images/w-bixu.jpg",
+    "title": "必须",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiaoxin",
+    "file": "images/w-xiaoxin.jpg",
+    "title": "小心",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-difang",
+    "file": "images/w-difang.jpg",
+    "title": "地方",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tui",
+    "file": "images/w-tui.jpg",
+    "title": "腿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-weixian",
+    "file": "images/w-weixian.jpg",
+    "title": "危险",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tuo",
+    "file": "images/w-tuo.jpg",
+    "title": "脱",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-paidui",
+    "file": "images/w-paidui.jpg",
+    "title": "排队",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhongjian",
+    "file": "images/w-zhongjian.jpg",
+    "title": "中间",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L12)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

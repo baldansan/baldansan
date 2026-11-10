@@ -1,0 +1,176 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我用帽子换你的盘子。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses at a sunny street flea market with three young camel calves (yellow boy in blue vest and red backpack, girl in yellow dress with pink ribbon, brown boy in green cap); a blanket with hats, plates and a toy, the girl calf holds a hat towards the yellow boy who holds a plate, a speech bubble with the Chinese text 我用帽子换你的盘子 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yuan.jpg",
+  "aspect": "1:1",
+  "title": "元",
+  "section": "vocabulary",
+  "prompt": "A pile of Chinese yuan banknotes and shiny coins on a table, the yellow calf boy in blue vest holding one red banknote proudly, simple bright background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-gui.jpg",
+  "aspect": "1:1",
+  "title": "贵",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress looking shocked at a shop shelf with a huge price tag on a golden toy, her eyes wide and hooves on her cheeks. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-hua.jpg",
+  "aspect": "1:1",
+  "title": "花",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap handing coins to a baker and getting a loaf of bread, coins flying out of his open purse, clock beside him showing time passing. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-maozi.jpg",
+  "aspect": "1:1",
+  "title": "帽子",
+  "section": "vocabulary",
+  "prompt": "A bright red baseball cap on a wooden table, the yellow calf boy in blue vest happily holding it up. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-huan.jpg",
+  "aspect": "1:1",
+  "title": "换",
+  "section": "vocabulary",
+  "prompt": "Two calves (girl in yellow dress holding a hat and brown boy in green cap holding a plate) swapping their items, two curved arrows showing the exchange. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jiu.jpg",
+  "aspect": "1:1",
+  "title": "旧",
+  "section": "vocabulary",
+  "prompt": "A worn, faded old hat with a patch next to a bright new hat, the brown calf boy in green cap holding the old one with a gentle smile. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-shi.jpg",
+  "aspect": "1:1",
+  "title": "试",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress trying on a hat in front of a mirror in a hat shop, thumbs up, hat shelves behind. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-heshi.jpg",
+  "aspect": "1:1",
+  "title": "合适",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest wearing a perfectly fitting red hat and sneakers, a sparkling check mark above him, happy face. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-liang.jpg",
+  "aspect": "1:1",
+  "title": "辆",
+  "section": "vocabulary",
+  "prompt": "One shiny blue bicycle leaning against a tree, the brown calf boy in green cap pointing at it with one hoof raised to show one item. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-wei.jpg",
+  "aspect": "1:1",
+  "title": "为",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress carefully wrapping a gift with a ribbon for an adult mother camel, a heart over the mother's head. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jinzhang.jpg",
+  "aspect": "1:1",
+  "title": "紧张",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest standing nervously in front of a classroom with sweat drops, wobbly knees and a stiff smile, notes shaking in his hooves. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-gan.jpg",
+  "aspect": "1:1",
+  "title": "敢",
+  "section": "vocabulary",
+  "prompt": "The brave brown calf boy in green cap standing tall at the edge of a high diving board, fist raised, a determined face, blue pool below. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-haipa.jpg",
+  "aspect": "1:1",
+  "title": "害怕",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress hiding behind a sofa and peeking at a scary shadow on the wall, ears flat and eyes wide, cartoonish not scary. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "那个盘子多少钱？",
+  "section": "dialogue",
+  "prompt": "At a flea market two calf girls (one in yellow dress with pink ribbon holding a hat, one with dark mane holding a plate) talk over a blanket with items for sale, a speech bubble with the Chinese text 那个盘子多少钱 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我家有一辆旧自行车",
+  "section": "speech",
+  "prompt": "A father camel holding the back of an old bicycle while a small yellow calf boy in a striped shirt rides it nervously, a mother camel in an orange dress watches and cheers, suburban street with houses. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "画蛇添足",
+  "section": "story",
+  "prompt": "Ancient Chinese man in a blue robe sitting on the ground proudly drawing little feet on a drawn snake while another man in orange robe holds a finished snake drawing and a jug of wine, rocks and bushes behind. No English text.",
+  "chars": []
+ }
+]

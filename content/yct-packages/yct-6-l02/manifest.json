@@ -1,0 +1,207 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l02",
+ "hskLevel": 3,
+ "lessonNumber": 2,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "他数学好极了。",
+ "mongolianTitle": "Тэр математикт мундаг",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第2课 (сурах бичиг + CD аудио 02-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-02-text-song.mp3",
+  "dialogues": "audio/yct-6-02-02.mp3",
+  "words": "audio/yct-6-02-01.mp3",
+  "speech": "audio/yct-6-02-03.mp3",
+  "song": "audio/yct-6-02-04.mp3",
+  "test": "audio/yct-6-02-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l02",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "他数学好极了。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "我考考你。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我有一个哥哥",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "数青蛙",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-rongyi",
+    "file": "images/w-rongyi.jpg",
+    "title": "容易",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gangcai",
+    "file": "images/w-gangcai.jpg",
+    "title": "刚才",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jile",
+    "file": "images/w-jile.jpg",
+    "title": "极了",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jiang",
+    "file": "images/w-jiang.jpg",
+    "title": "讲",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mingbai",
+    "file": "images/w-mingbai.jpg",
+    "title": "明白",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qi",
+    "file": "images/w-qi.jpg",
+    "title": "骑",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiwang",
+    "file": "images/w-xiwang.jpg",
+    "title": "希望",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-canjia",
+    "file": "images/w-canjia.jpg",
+    "title": "参加",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wan",
+    "file": "images/w-wan.jpg",
+    "title": "万",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jia",
+    "file": "images/w-jia.jpg",
+    "title": "加",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jian",
+    "file": "images/w-jian.jpg",
+    "title": "减",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuxue",
+    "file": "images/w-shuxue.jpg",
+    "title": "数学",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zixingche",
+    "file": "images/w-zixingche.jpg",
+    "title": "自行车",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bisai",
+    "file": "images/w-bisai.jpg",
+    "title": "比赛",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L2)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

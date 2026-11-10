@@ -1,0 +1,228 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l09",
+ "hskLevel": 3,
+ "lessonNumber": 9,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "他家搬到动物园附近了。",
+ "mongolianTitle": "Тэдний гэр амьтны хүрээлэнгийн ойр нүүлээ",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第9课 (сурах бичиг + CD аудио 09-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-09-text-song.mp3",
+  "dialogues": "audio/yct-6-09-02.mp3",
+  "words": "audio/yct-6-09-01.mp3",
+  "speech": "audio/yct-6-09-03.mp3",
+  "song": "audio/yct-6-09-04.mp3",
+  "test": "audio/yct-6-09-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l09",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "他家搬到动物园附近了。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "小力搬家了，请我们明天去他家玩。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我最喜欢看超人的故事",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "小英雄",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-tushuguan",
+    "file": "images/w-tushuguan.jpg",
+    "title": "图书馆",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-baozhi",
+    "file": "images/w-baozhi.jpg",
+    "title": "报纸",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zazhi",
+    "file": "images/w-zazhi.jpg",
+    "title": "杂志",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chaoren",
+    "file": "images/w-chaoren.jpg",
+    "title": "超人",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-banjia",
+    "file": "images/w-banjia.jpg",
+    "title": "搬家",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-fujin",
+    "file": "images/w-fujin.jpg",
+    "title": "附近",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dizhi",
+    "file": "images/w-dizhi.jpg",
+    "title": "地址",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dianziyoujian",
+    "file": "images/w-dianziyoujian.jpg",
+    "title": "电子邮件",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-milu",
+    "file": "images/w-milu.jpg",
+    "title": "迷路",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chufa",
+    "file": "images/w-chufa.jpg",
+    "title": "出发",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jianmian",
+    "file": "images/w-jianmian.jpg",
+    "title": "见面",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xing",
+    "file": "images/w-xing.jpg",
+    "title": "行",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gushi",
+    "file": "images/w-gushi.jpg",
+    "title": "故事",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-liqi",
+    "file": "images/w-liqi.jpg",
+    "title": "力气",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lao",
+    "file": "images/w-lao.jpg",
+    "title": "老",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "find",
+    "file": "images/find.jpg",
+    "title": "Let's find",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "faces",
+    "file": "images/faces.jpg",
+    "title": "脸谱 · Let's paint",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L9)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,186 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l10",
+ "hskLevel": 3,
+ "lessonNumber": 10,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "月亮离我们多远？",
+ "mongolianTitle": "Сар бидэнээс хэр хол вэ?",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第10课 (сурах бичиг + CD аудио 10-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-10-text-song.mp3",
+  "dialogues": "audio/yct-6-10-02.mp3",
+  "words": "audio/yct-6-10-01.mp3",
+  "speech": "audio/yct-6-10-03.mp3",
+  "song": "audio/yct-6-10-04.mp3",
+  "test": "audio/yct-6-10-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l10",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "月亮离我们多远？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "今天的月亮真圆！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我们一家人都很喜欢旅游",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "小月饼",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-yuebing",
+    "file": "images/w-yuebing.jpg",
+    "title": "月饼",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dahai",
+    "file": "images/w-dahai.jpg",
+    "title": "大海",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-caoyuan",
+    "file": "images/w-caoyuan.jpg",
+    "title": "草原",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yun",
+    "file": "images/w-yun.jpg",
+    "title": "云",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qima",
+    "file": "images/w-qima.jpg",
+    "title": "骑马",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xingxing",
+    "file": "images/w-xingxing.jpg",
+    "title": "星星",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-li",
+    "file": "images/w-li.jpg",
+    "title": "离",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dagai",
+    "file": "images/w-dagai.jpg",
+    "title": "大概",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gongli",
+    "file": "images/w-gongli.jpg",
+    "title": "公里",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-cangqilai",
+    "file": "images/w-cangqilai.jpg",
+    "title": "藏起来",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-guojia",
+    "file": "images/w-guojia.jpg",
+    "title": "国家",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-sanya",
+    "file": "images/w-sanya.jpg",
+    "title": "三亚",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L10)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

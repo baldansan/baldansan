@@ -1,0 +1,197 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "小鸟正在唱歌。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses and three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) sit under a big green tree in a school yard, two small birds singing on a branch, three rabbits eating carrots below, the school building with a clock behind, a speech bubble with the Chinese text 小鸟正在唱歌 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xing.jpg",
+  "aspect": "1:1",
+  "title": "醒",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest sitting up in bed stretching and yawning, sunlight through the window, just woken up. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ke.jpg",
+  "aspect": "1:1",
+  "title": "刻",
+  "section": "vocabulary",
+  "prompt": "A big round clock showing a quarter past eight with the quarter section highlighted in colour, the calf girl in yellow dress pointing at it. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiang.jpg",
+  "aspect": "1:1",
+  "title": "响",
+  "section": "vocabulary",
+  "prompt": "A funny ringing alarm clock with sound waves shaking on a bedside table, the brown calf boy in green cap covering his ears. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kaihui.jpg",
+  "aspect": "1:1",
+  "title": "开会",
+  "section": "vocabulary",
+  "prompt": "Adult camels in neat clothes sitting around a meeting table with papers, one adult camel standing and speaking at a whiteboard. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-zhaoji.jpg",
+  "aspect": "1:1",
+  "title": "着急",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest running with a worried face, schoolbag flying, looking at his wrist watch. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-laideji.jpg",
+  "aspect": "1:1",
+  "title": "来得及",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress happily running into a classroom door just as a clock shows it is still on time, relieved smile and a thumbs-up. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shangban.jpg",
+  "aspect": "1:1",
+  "title": "上班",
+  "section": "vocabulary",
+  "prompt": "An adult camel father in a suit with a briefcase walking out of a house door in the morning toward an office building. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-yiwei.jpg",
+  "aspect": "1:1",
+  "title": "以为",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap with a thought bubble showing a calendar with Monday but the real calendar on the wall shows Sunday, surprised confused face. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhengzai.jpg",
+  "aspect": "1:1",
+  "title": "正在",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress right now in the middle of drawing a picture at a desk, a bright circle highlighting her moving hand, speed lines. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-anjing.jpg",
+  "aspect": "1:1",
+  "title": "安静",
+  "section": "vocabulary",
+  "prompt": "A quiet library: the teacher camel with glasses holding a finger to its lips, calves reading quietly, a floating moon and stars calm mood. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-yibian.jpg",
+  "aspect": "1:1",
+  "title": "一边……一边……",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap sitting at a desk reading a book while wearing headphones and listening to music, joyful, two small arrows pointing to the book and the headphones to show two actions at the same time. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-qilai.jpg",
+  "aspect": "1:1",
+  "title": "起来",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest jumping out of bed with arms raised in the morning, sun rising outside. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-naozhong.jpg",
+  "aspect": "1:1",
+  "title": "闹钟",
+  "section": "vocabulary",
+  "prompt": "A colourful round alarm clock with two bells on top ringing, showing seven o'clock, on a wooden bedside table. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-xiaoyuan.jpg",
+  "aspect": "1:1",
+  "title": "校园",
+  "section": "vocabulary",
+  "prompt": "A pretty school campus with a school building, green trees, flower beds and a flag, the calf girl in yellow dress walking in. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shu.jpg",
+  "aspect": "1:1",
+  "title": "树",
+  "section": "vocabulary",
+  "prompt": "A big green leafy tree with a thick trunk and a small bird on a branch, the brown calf boy in green cap hugging the trunk. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-shengyin.jpg",
+  "aspect": "1:1",
+  "title": "声音",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest with his hand behind his ear listening, musical notes and sound waves floating from a small bird singing in a tree. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "快醒醒，起来吃早饭了。",
+  "section": "dialogue",
+  "prompt": "A bedroom in the morning: an adult camel mother in an apron gently wakes the sleepy adult camel father in a bed, a bedside alarm clock showing 8:15, breakfast on a tray, a speech bubble with the Chinese text 快醒醒 in large clear black font. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "现在是上午10点",
+  "section": "speech",
+  "prompt": "A quiet school yard at ten o'clock in the morning, school building with a clock, two small birds singing in a big tree, three white rabbits sitting under the tree eating carrots and listening, camel teacher at the classroom window. No English text.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "守株待兔",
+  "section": "story",
+  "prompt": "An ancient Chinese farmer in blue robe sitting under a big tree resting, a white rabbit that has just run into the trunk lying dizzy at the base, the farmer holding the rabbit happily, hills and farmland in the background. No English text.",
+  "chars": []
+ }
+]

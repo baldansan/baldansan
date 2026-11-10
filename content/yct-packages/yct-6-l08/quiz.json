@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Загасны сав» хятадаар аль нь вэ?",
+  "options": [
+   "作业",
+   "小猫",
+   "鱼缸",
+   "游戏"
+  ],
+  "correct_answer": "鱼缸",
+  "explanation": "鱼缸 (yúgāng) = загасны сав.",
+  "order_index": 1,
+  "id": "yct-6-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тоглоом» хятадаар аль нь вэ?",
+  "options": [
+   "游戏",
+   "作业",
+   "批评",
+   "鱼缸"
+  ],
+  "correct_answer": "游戏",
+  "explanation": "游戏 (yóuxì) = тоглоом.",
+  "order_index": 2,
+  "id": "yct-6-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Загнах» хятадаар аль нь вэ?",
+  "options": [
+   "决定",
+   "开始",
+   "批评",
+   "难过"
+  ],
+  "correct_answer": "批评",
+  "explanation": "批评 (pīpíng) = загнах, зэмлэх.",
+  "order_index": 3,
+  "id": "yct-6-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Шийдэх» хятадаар аль нь вэ?",
+  "options": [
+   "开始",
+   "最近",
+   "决定",
+   "批评"
+  ],
+  "correct_answer": "决定",
+  "explanation": "决定 (juédìng) = шийдэх.",
+  "order_index": 4,
+  "id": "yct-6-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эхлэх» хятадаар аль нь вэ?",
+  "options": [
+   "难过",
+   "又",
+   "决定",
+   "开始"
+  ],
+  "correct_answer": "开始",
+  "explanation": "开始 (kāishǐ) = эхлэх.",
+  "order_index": 5,
+  "id": "yct-6-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«难过» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "ядарсан",
+   "гунигтай",
+   "баяртай",
+   "өлссөн"
+  ],
+  "correct_answer": "гунигтай",
+  "explanation": "难过 (nánguò) = гунигтай.",
+  "order_index": 6,
+  "id": "yct-6-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«破» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "том",
+   "цоорсон, урагдсан",
+   "хөөрхөн",
+   "шинэ"
+  ],
+  "correct_answer": "цоорсон, урагдсан",
+  "explanation": "破 (pò) = цоорсон, урагдсан, эвдэрсэн. Жишээ нь 钱包破了.",
+  "order_index": 7,
+  "id": "yct-6-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«最近» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сүүлийн үед",
+   "өчигдөр",
+   "маргааш",
+   "дараа нь"
+  ],
+  "correct_answer": "сүүлийн үед",
+  "explanation": "最近 (zuìjìn) = сүүлийн үед.",
+  "order_index": 8,
+  "id": "yct-6-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«不怎么样» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "маш хурдан",
+   "гайхалтай",
+   "тийм ч сайн биш",
+   "маш том"
+  ],
+  "correct_answer": "тийм ч сайн биш",
+  "explanation": "不怎么样 (bù zěnmeyàng) = тийм ч сайн биш.",
+  "order_index": 9,
+  "id": "yct-6-l08-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«又» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хэзээ ч",
+   "эхлээд",
+   "хамт",
+   "дахиад (болчихсон зүйл)"
+  ],
+  "correct_answer": "дахиад (болчихсон зүйл)",
+  "explanation": "又 (yòu) = дахиад. 我又迟到了 = Би дахиад хоцорчихлоо.",
+  "order_index": 10,
+  "id": "yct-6-l08-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «juédìng» гэж уншдаг үг:",
+  "options": [
+   "批评",
+   "决定",
+   "最近",
+   "开始"
+  ],
+  "correct_answer": "决定",
+  "explanation": "决定 = juédìng = шийдэх.",
+  "order_index": 11,
+  "id": "yct-6-l08-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «pīpíng» гэж уншдаг үг:",
+  "options": [
+   "游戏",
+   "难过",
+   "批评",
+   "鱼缸"
+  ],
+  "correct_answer": "批评",
+  "explanation": "批评 = pīpíng = загнах.",
+  "order_index": 12,
+  "id": "yct-6-l08-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nánguò» гэж уншдаг үг:",
+  "options": [
+   "决定",
+   "最近",
+   "难过",
+   "开始"
+  ],
+  "correct_answer": "难过",
+  "explanation": "难过 = nánguò = гунигтай.",
+  "order_index": 13,
+  "id": "yct-6-l08-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yóuxì» гэж уншдаг үг:",
+  "options": [
+   "鱼缸",
+   "游戏",
+   "开始",
+   "批评"
+  ],
+  "correct_answer": "游戏",
+  "explanation": "游戏 = yóuxì = тоглоом.",
+  "order_index": 14,
+  "id": "yct-6-l08-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь муур яагаад өрөөнд хоригдсон бэ?",
+  "options": [
+   "Нохойтой хэрэлдсэн учир",
+   "Ээжтэйгээ хэрэлдсэн учир",
+   "Гэрээс гарсан учир",
+   "Аквариумыг хагалж, загасыг идсэн учир"
+  ],
+  "correct_answer": "Аквариумыг хагалж, загасыг идсэн учир",
+  "explanation": "新买的鱼缸被它打破了。鱼被它吃了。",
+  "order_index": 15,
+  "id": "yct-6-l08-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«被妈妈关在房间里了» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Ээж өрөөнд ороод ирсэн",
+   "Ээж нь өрөөнд хорьчихсон",
+   "Ээж өрөөгөө цэвэрлэсэн",
+   "Ээж өрөөнөөс гарсан"
+  ],
+  "correct_answer": "Ээж нь өрөөнд хорьчихсон",
+  "explanation": "被妈妈关 = ээжид хоригдсон.",
+  "order_index": 16,
+  "id": "yct-6-l08-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech дэх хүү багшид яагаад загнуулсан бэ?",
+  "options": [
+   "Дэвтрээ гээсэн",
+   "Тоглоом тоглоод даалгавраа бичихээ мартсан",
+   "Найзтайгаа хэрэлдсэн",
+   "Хичээлээс хоцорсон"
+  ],
+  "correct_answer": "Тоглоом тоглоод даалгавраа бичихээ мартсан",
+  "explanation": "昨天我一直在玩游戏，忘记写作业了。",
+  "order_index": 17,
+  "id": "yct-6-l08-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хүү өнөөдрөөс эхлээд юу хийхээр шийдсэн бэ?",
+  "options": [
+   "Эхлээд тоглоод дараа нь бичих",
+   "Эхлээд даалгавраа бичээд дараа нь тоглох",
+   "Бүр тоглохгүй байх",
+   "Хичээлд явахгүй байх"
+  ],
+  "correct_answer": "Эхлээд даалгавраа бичээд дараа нь тоглох",
+  "explanation": "先写完作业再玩游戏。",
+  "order_index": 18,
+  "id": "yct-6-l08-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«我很难过» гэж хэлсэн хүү ямар байна?",
+  "options": [
+   "Баяртай",
+   "Ядарсан",
+   "Гунигтай",
+   "Өлссөн"
+  ],
+  "correct_answer": "Гунигтай",
+  "explanation": "难过 = гунигтай.",
+  "order_index": 19,
+  "id": "yct-6-l08-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小鱼（ ）小猫吃了。",
+  "options": [
+   "先",
+   "又",
+   "再",
+   "被"
+  ],
+  "correct_answer": "被",
+  "explanation": "被小猫吃了 = муурт идүүлсэн.",
+  "order_index": 20,
+  "id": "yct-6-l08-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我今天（ ）被老师批评了。",
+  "options": [
+   "被",
+   "又",
+   "先",
+   "再"
+  ],
+  "correct_answer": "又",
+  "explanation": "Өнөөдөр болчихсон → 又.",
+  "order_index": 21,
+  "id": "yct-6-l08-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）去买几条鱼！",
+  "options": [
+   "破",
+   "再",
+   "被",
+   "又"
+  ],
+  "correct_answer": "再",
+  "explanation": "Хийх гэж буй зүйл → 再.",
+  "order_index": 22,
+  "id": "yct-6-l08-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "先吃完饭（ ）看电视。",
+  "options": [
+   "再",
+   "被",
+   "难过",
+   "开始"
+  ],
+  "correct_answer": "再",
+  "explanation": "先……再…… = эхлээд…, дараа нь….",
+  "order_index": 23,
+  "id": "yct-6-l08-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）从今天开始，每天跑步。",
+  "options": [
+   "破",
+   "决定",
+   "难过",
+   "批评"
+  ],
+  "correct_answer": "决定",
+  "explanation": "决定从今天开始 = өнөөдрөөс эхлэхээр шийдэх.",
+  "order_index": 24,
+  "id": "yct-6-l08-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这种冰激凌（ ）好吃（ ）便宜。",
+  "options": [
+   "再……再",
+   "又……又",
+   "被……被",
+   "先……先"
+  ],
+  "correct_answer": "又……又",
+  "explanation": "又……又…… = …ч, …ч.",
+  "order_index": 25,
+  "id": "yct-6-l08-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Загасыг муур идчихсэн гэж хэлэхдээ:",
+  "options": [
+   "小猫被小鱼吃了。",
+   "小鱼吃被小猫了。",
+   "小鱼再小猫吃了。",
+   "小鱼被小猫吃了。"
+  ],
+  "correct_answer": "小鱼被小猫吃了。",
+  "explanation": "被 + хэн + үйлдэл.",
+  "order_index": 26,
+  "id": "yct-6-l08-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Би багшид загнуулчихлаа» гэж хэлбэл:",
+  "options": [
+   "我批评被老师了。",
+   "我老师被批评了。",
+   "我再老师批评了。",
+   "我被老师批评了。"
+  ],
+  "correct_answer": "我被老师批评了。",
+  "explanation": "Юу + 被 + хэн + үйлдэл.",
+  "order_index": 27,
+  "id": "yct-6-l08-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хулгайч яагаад баригдсан бэ?",
+  "options": [
+   "Гэрт нь хүн байгаагүй учир",
+   "Чихээ таглаагүй учир",
+   "Хонх дуугарсан учир",
+   "Тэр хонхыг авч чадсан учир"
+  ],
+  "correct_answer": "Хонх дуугарсан учир",
+  "explanation": "铃铛响了，他被抓住了。Сургамж: чихээ таглаад дууг нуух боломжгүй.",
+  "order_index": 28,
+  "id": "yct-6-l08-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

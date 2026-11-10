@@ -1,0 +1,560 @@
+[
+ {
+  "type": "choice",
+  "question": "«Хулс» хятадаар аль нь вэ?",
+  "options": [
+   "熊猫",
+   "知识",
+   "动物园",
+   "竹子"
+  ],
+  "correct_answer": "竹子",
+  "explanation": "竹子 (zhúzi) = хулс. Панда хулс иднэ.",
+  "order_index": 1,
+  "id": "yct-6-l14-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дорно зүг» хятадаар аль нь вэ?",
+  "options": [
+   "右",
+   "往",
+   "东",
+   "西"
+  ],
+  "correct_answer": "东",
+  "explanation": "东 (dōng) = дорно зүг (нар мандах тал).",
+  "order_index": 2,
+  "id": "yct-6-l14-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Өрнө зүг» хятадаар аль нь вэ?",
+  "options": [
+   "西",
+   "东",
+   "转",
+   "竹"
+  ],
+  "correct_answer": "西",
+  "explanation": "西 (xī) = өрнө зүг (нар жаргах тал).",
+  "order_index": 3,
+  "id": "yct-6-l14-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«小姐» гэж юу гэсэн үг вэ?",
+  "options": [
+   "хатагтай, эгч",
+   "багш",
+   "хүү",
+   "эмч"
+  ],
+  "correct_answer": "хатагтай, эгч",
+  "explanation": "小姐 (xiǎojiě) = залуу эмэгтэйг эелдгээр дуудах үг.",
+  "order_index": 4,
+  "id": "yct-6-l14-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«参观» гэж юу гэсэн үг вэ?",
+  "options": [
+   "идэх",
+   "унтах",
+   "тоглох",
+   "үзэж танилцах"
+  ],
+  "correct_answer": "үзэж танилцах",
+  "explanation": "参观 (cānguān) = үзэж танилцах.",
+  "order_index": 5,
+  "id": "yct-6-l14-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«熟悉» гэж юу гэсэн үг вэ?",
+  "options": [
+   "айх",
+   "уйлах",
+   "сайн мэддэг, танил",
+   "хурдан"
+  ],
+  "correct_answer": "сайн мэддэг, танил",
+  "explanation": "熟悉 (shúxi) = сайн мэддэг.",
+  "order_index": 6,
+  "id": "yct-6-l14-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«知识» гэж юу гэсэн үг вэ?",
+  "options": [
+   "хоол",
+   "цаг",
+   "мэдлэг",
+   "мөнгө"
+  ],
+  "correct_answer": "мэдлэг",
+  "explanation": "知识 (zhīshi) = мэдлэг, мэдэх зүйл.",
+  "order_index": 7,
+  "id": "yct-6-l14-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«清楚» гэж юу гэсэн үг вэ?",
+  "options": [
+   "хол",
+   "тарган",
+   "тодорхой, ойлгомжтой",
+   "намхан"
+  ],
+  "correct_answer": "тодорхой, ойлгомжтой",
+  "explanation": "清楚 (qīngchu) = тод, ойлгомжтой.",
+  "order_index": 8,
+  "id": "yct-6-l14-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«关于» гэж юу гэсэн үг вэ?",
+  "options": [
+   "…ийн өмнө",
+   "…ийн тухай",
+   "…ээс хойш",
+   "…ийн дараа"
+  ],
+  "correct_answer": "…ийн тухай",
+  "explanation": "关于熊猫的知识 = пандагийн тухай мэдлэг.",
+  "order_index": 9,
+  "id": "yct-6-l14-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«看起来» гэж юу гэсэн үг вэ?",
+  "options": [
+   "сонсоход",
+   "унтахад",
+   "харахад … юм шиг",
+   "гарахад"
+  ],
+  "correct_answer": "харахад … юм шиг",
+  "explanation": "看起来很好吃 = харахад амттай юм шиг.",
+  "order_index": 10,
+  "id": "yct-6-l14-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«转» гэж юу гэсэн үг вэ?",
+  "options": [
+   "эргэх",
+   "зогсох",
+   "суух",
+   "явах"
+  ],
+  "correct_answer": "эргэх",
+  "explanation": "向右转 = баруун гар тийш эргэх.",
+  "order_index": 11,
+  "id": "yct-6-l14-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dǎrǎo» гэж уншдаг үг:",
+  "options": [
+   "打扰",
+   "清楚",
+   "熟悉",
+   "参观"
+  ],
+  "correct_answer": "打扰",
+  "explanation": "打扰 = dǎrǎo = саад болох.",
+  "order_index": 12,
+  "id": "yct-6-l14-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «cānguān» гэж уншдаг үг:",
+  "options": [
+   "竹子",
+   "知识",
+   "参观",
+   "打扰"
+  ],
+  "correct_answer": "参观",
+  "explanation": "参观 = cānguān = үзэж танилцах.",
+  "order_index": 13,
+  "id": "yct-6-l14-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhīshi» гэж уншдаг үг:",
+  "options": [
+   "知识",
+   "熟悉",
+   "清楚",
+   "竹子"
+  ],
+  "correct_answer": "知识",
+  "explanation": "知识 = zhīshi = мэдлэг.",
+  "order_index": 14,
+  "id": "yct-6-l14-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhúzi» гэж уншдаг үг:",
+  "options": [
+   "知识",
+   "熊猫",
+   "参观",
+   "竹子"
+  ],
+  "correct_answer": "竹子",
+  "explanation": "竹子 = zhúzi = хулс.",
+  "order_index": 15,
+  "id": "yct-6-l14-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь Мари хаашаа очихыг хүссэн бэ?",
+  "options": [
+   "Эмнэлэг",
+   "Панда үздэг байр",
+   "Дэлгүүр",
+   "Сургууль"
+  ],
+  "correct_answer": "Панда үздэг байр",
+  "explanation": "我想参观熊猫馆。",
+  "order_index": 16,
+  "id": "yct-6-l14-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Эгч Мариг яаж явахыг заасан бэ?",
+  "options": [
+   "Автобусаар яв",
+   "Шууд яв",
+   "Өрнө зүг рүү яваад зүүн гар тийш эргэ",
+   "Дорно зүг рүү яваад баруун гар тийш эргэ"
+  ],
+  "correct_answer": "Дорно зүг рүү яваад баруун гар тийш эргэ",
+  "explanation": "从这儿往东走，然后向右转。",
+  "order_index": 17,
+  "id": "yct-6-l14-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Хун яагаад замыг зааж чадаагүй вэ?",
+  "options": [
+   "Тэр Маритай уурласан",
+   "Тэр хятад хэлгүй",
+   "Тэр цагтай биш",
+   "Тэр энд сайн мэдэхгүй"
+  ],
+  "correct_answer": "Тэр энд сайн мэдэхгүй",
+  "explanation": "我对这儿也不太熟悉。",
+  "order_index": 18,
+  "id": "yct-6-l14-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ярианы төгсгөлд Мари юу мэдэхгүй байна вэ?",
+  "options": [
+   "Панда хэд байгаа",
+   "Цаг хэд болсон",
+   "Аль нь дорно, аль нь өрнө зүг",
+   "Тасалбарын үнэ"
+  ],
+  "correct_answer": "Аль нь дорно, аль нь өрнө зүг",
+  "explanation": "我不知道哪儿是东，哪儿是西。",
+  "order_index": 19,
+  "id": "yct-6-l14-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Өгүүлэмжид зарим панда юу хийж байсан бэ?",
+  "options": [
+   "Алим идэж байсан",
+   "Байнга унтаж байсан",
+   "Усанд сэлж байсан",
+   "Бөмбөг тоглож байсан"
+  ],
+  "correct_answer": "Байнга унтаж байсан",
+  "explanation": "有的熊猫一直睡觉。",
+  "order_index": 20,
+  "id": "yct-6-l14-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Харахад пандагууд юунд дуртай юм шиг байсан бэ?",
+  "options": [
+   "Ус",
+   "Загас",
+   "Хулс",
+   "Цас"
+  ],
+  "correct_answer": "Хулс",
+  "explanation": "看起来它们很喜欢竹子。",
+  "order_index": 21,
+  "id": "yct-6-l14-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д Жэк найзаа ямар хоч нэрээр дуудсан бэ?",
+  "options": [
+   "电影",
+   "电灯",
+   "电话",
+   "电脑"
+  ],
+  "correct_answer": "电灯",
+  "explanation": "杰克：“电灯”，你好！ — Жэк найзаа «电灯» (цахилгаан чийдэн) гэж хоч нэрээр дуудсан.",
+  "order_index": 22,
+  "id": "yct-6-l14-q22",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "对不起，小姐，（ ）一下。",
+  "options": [
+   "清楚",
+   "打扰",
+   "参观",
+   "熟悉"
+  ],
+  "correct_answer": "打扰",
+  "explanation": "打扰一下 = түр саад болъё.",
+  "order_index": 23,
+  "id": "yct-6-l14-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想（ ）熊猫馆。",
+  "options": [
+   "参观",
+   "往",
+   "转",
+   "打扰"
+  ],
+  "correct_answer": "参观",
+  "explanation": "参观熊猫馆 = панда үздэг байранд очиж үзэх.",
+  "order_index": 24,
+  "id": "yct-6-l14-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "从这儿（ ）东走。",
+  "options": [
+   "和",
+   "给",
+   "比",
+   "往"
+  ],
+  "correct_answer": "往",
+  "explanation": "往东走 = дорно зүг рүү яв.",
+  "order_index": 25,
+  "id": "yct-6-l14-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "然后向右（ ）。",
+  "options": [
+   "转",
+   "吃",
+   "睡",
+   "笑"
+  ],
+  "correct_answer": "转",
+  "explanation": "向右转 = баруун гар тийш эргэх.",
+  "order_index": 26,
+  "id": "yct-6-l14-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）熊猫睡觉，（ ）熊猫吃竹子。",
+  "options": [
+   "一直 / 一直",
+   "有的 / 有的",
+   "因为 / 所以",
+   "又 / 又"
+  ],
+  "correct_answer": "有的 / 有的",
+  "explanation": "有的……有的…… = зарим нь …, зарим нь ….",
+  "order_index": 27,
+  "id": "yct-6-l14-q27",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我对这儿不太（ ）。",
+  "options": [
+   "参观",
+   "竹子",
+   "熟悉",
+   "知识"
+  ],
+  "correct_answer": "熟悉",
+  "explanation": "对这儿不太熟悉 = энд сайн мэдэхгүй.",
+  "order_index": 28,
+  "id": "yct-6-l14-q28",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我讲得又（ ）又有意思。",
+  "options": [
+   "清楚",
+   "往",
+   "东",
+   "知识"
+  ],
+  "correct_answer": "清楚",
+  "explanation": "又清楚又有意思 = ойлгомжтой бас сонирхолтой.",
+  "order_index": 29,
+  "id": "yct-6-l14-q29",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Танихгүй хүнээс зам асуухын өмнө эелдгээр юу гэж хэлэх вэ?",
+  "options": [
+   "再见！",
+   "我不知道。",
+   "对不起，打扰一下。",
+   "别说话。"
+  ],
+  "correct_answer": "对不起，打扰一下。",
+  "explanation": "打扰一下 = түр саад болъё.",
+  "order_index": 30,
+  "id": "yct-6-l14-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «пандагийн тухай олон зүйл мэднэ» гэж хэлэх гэж байна:",
+  "options": [
+   "熊猫有的知识。",
+   "我参观熊猫的清楚。",
+   "我知道很多关于熊猫的知识。",
+   "我熟悉熊猫的往东。"
+  ],
+  "correct_answer": "我知道很多关于熊猫的知识。",
+  "explanation": "关于熊猫的知识 = пандагийн тухай мэдлэг.",
+  "order_index": 31,
+  "id": "yct-6-l14-q31",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

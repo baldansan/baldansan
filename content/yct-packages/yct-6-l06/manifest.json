@@ -1,0 +1,221 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l06",
+ "hskLevel": 3,
+ "lessonNumber": 6,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你表演什么？",
+ "mongolianTitle": "Чи юу тоглосон бэ?",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第6课 (сурах бичиг + CD аудио 06-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-06-text-song.mp3",
+  "dialogues": "audio/yct-6-06-02.mp3",
+  "words": "audio/yct-6-06-01.mp3",
+  "speech": "audio/yct-6-06-03.mp3",
+  "story": "audio/yct-6-06-04.mp3",
+  "test": "audio/yct-6-06-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l06",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你表演什么？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "昨天我们表演的节目很受欢迎。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我想当演员",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "狐假虎威",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "狐假虎威 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "jobs",
+    "file": "images/jobs.jpg",
+    "title": "Let's say · мэргэжлүүд",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "w-jingcha",
+    "file": "images/w-jingcha.jpg",
+    "title": "警察",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shoupiaoyuan",
+    "file": "images/w-shoupiaoyuan.jpg",
+    "title": "售票员",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jizhe",
+    "file": "images/w-jizhe.jpg",
+    "title": "记者",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yanyuan",
+    "file": "images/w-yanyuan.jpg",
+    "title": "演员",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-biaoyan",
+    "file": "images/w-biaoyan.jpg",
+    "title": "表演",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jiemu",
+    "file": "images/w-jiemu.jpg",
+    "title": "节目",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shouhuanying",
+    "file": "images/w-shouhuanying.jpg",
+    "title": "受欢迎",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-cai",
+    "file": "images/w-cai.jpg",
+    "title": "猜",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-diandeng",
+    "file": "images/w-diandeng.jpg",
+    "title": "电灯",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dang",
+    "file": "images/w-dang.jpg",
+    "title": "当",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhongyao",
+    "file": "images/w-zhongyao.jpg",
+    "title": "重要",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xinwen",
+    "file": "images/w-xinwen.jpg",
+    "title": "新闻",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yinggai",
+    "file": "images/w-yinggai.jpg",
+    "title": "应该",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yijiu",
+    "file": "images/w-yijiu.jpg",
+    "title": "一……就……",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kanjian",
+    "file": "images/w-kanjian.jpg",
+    "title": "看见",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L6)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

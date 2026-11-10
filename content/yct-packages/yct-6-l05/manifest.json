@@ -1,0 +1,221 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l05",
+ "hskLevel": 3,
+ "lessonNumber": 5,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你太马虎了！",
+ "mongolianTitle": "Чи дэндүү хайнга юм!",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第5课 (сурах бичиг + CD аудио 05-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-05-text-song.mp3",
+  "dialogues": "audio/yct-6-05-02.mp3",
+  "words": "audio/yct-6-05-01.mp3",
+  "speech": "audio/yct-6-05-03.mp3",
+  "story": "audio/yct-6-05-04.mp3",
+  "test": "audio/yct-6-05-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l05",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你太马虎了！",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "今天老师表扬我了。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "昨天，我和爸爸妈妈去爬山了。",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "“马虎”的故事",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "“马虎”的故事 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-biaoyang",
+    "file": "images/w-biaoyang.jpg",
+    "title": "表扬",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-juzi",
+    "file": "images/w-juzi.jpg",
+    "title": "句子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-youyisi",
+    "file": "images/w-youyisi.jpg",
+    "title": "有意思",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-cong",
+    "file": "images/w-cong.jpg",
+    "title": "从",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mahu",
+    "file": "images/w-mahu.jpg",
+    "title": "马虎",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-cai",
+    "file": "images/w-cai.jpg",
+    "title": "才",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiangqilai",
+    "file": "images/w-xiangqilai.jpg",
+    "title": "想起来",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wangji",
+    "file": "images/w-wangji.jpg",
+    "title": "忘记",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-de",
+    "file": "images/w-de.jpg",
+    "title": "地",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-cuo",
+    "file": "images/w-cuo.jpg",
+    "title": "错",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ke",
+    "file": "images/w-ke.jpg",
+    "title": "渴",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ting",
+    "file": "images/w-ting.jpg",
+    "title": "停",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yaoshi",
+    "file": "images/w-yaoshi.jpg",
+    "title": "钥匙",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shengqi",
+    "file": "images/w-shengqi.jpg",
+    "title": "生气",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "match",
+    "file": "images/match.jpg",
+    "title": "Let's match",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L5)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

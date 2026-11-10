@@ -1,0 +1,193 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "他数学好极了。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands at a school blackboard full of big numbers and plus and minus signs, three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) cheer and one calf rides a small bicycle in the corner; a speech bubble with the Chinese text 好极了 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-rongyi.jpg",
+  "aspect": "1:1",
+  "title": "容易",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap easily solving a simple sum on a chalkboard with a relaxed smile, a small feather beside him showing the task is light and easy. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-gangcai.jpg",
+  "aspect": "1:1",
+  "title": "刚才",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress looking at a wall clock and pointing behind her at a door that is still swinging, as if someone just left a moment ago. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jile.jpg",
+  "aspect": "1:1",
+  "title": "极了",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest holding a huge golden star trophy overhead with a super excited wow face, sparkles and confetti all around. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jiang.jpg",
+  "aspect": "1:1",
+  "title": "讲",
+  "section": "vocabulary",
+  "prompt": "The teacher camel with glasses explaining a drawing on a blackboard with a pointer, two calves listening, a speech bubble with the shape of a sum. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-mingbai.jpg",
+  "aspect": "1:1",
+  "title": "明白",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap with a bright light bulb glowing above his head and a happy aha face, nodding. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-qi.jpg",
+  "aspect": "1:1",
+  "title": "骑",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon riding a small bicycle in a sunny park, ribbon flying in the wind. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiwang.jpg",
+  "aspect": "1:1",
+  "title": "希望",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest looking at the night sky with hands clasped, a shooting star above and a thought cloud showing him on a podium with a medal. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-canjia.jpg",
+  "aspect": "1:1",
+  "title": "参加",
+  "section": "vocabulary",
+  "prompt": "Several calves in sports shirts lined up at a starting line of a school competition, one calf joining in last and waving happily, banner overhead. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-wan.jpg",
+  "aspect": "1:1",
+  "title": "万",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap standing next to a tall stack of ten giant coin piles labelled with the number 10000 in big digits, amazed face. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jia.jpg",
+  "aspect": "1:1",
+  "title": "加",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress putting three apples and two more apples together on a plate, a big green plus sign floating above. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jian.jpg",
+  "aspect": "1:1",
+  "title": "减",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest taking two cookies away from a plate of three cookies and eating one, a big red minus sign floating above. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shuxue.jpg",
+  "aspect": "1:1",
+  "title": "数学",
+  "section": "vocabulary",
+  "prompt": "A school desk with a math book showing a triangle and numbers, a ruler and a pencil, the brown calf boy in green cap thinking with a pencil. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zixingche.jpg",
+  "aspect": "1:1",
+  "title": "自行车",
+  "section": "vocabulary",
+  "prompt": "A shiny blue children's bicycle with a basket and a bell leaning on a tree, the calf girl in yellow dress standing proudly next to it. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-bisai.jpg",
+  "aspect": "1:1",
+  "title": "比赛",
+  "section": "vocabulary",
+  "prompt": "A race between a rabbit and a turtle on a running track, the yellow calf boy in blue vest holding a finish ribbon, crowd of animals cheering. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "我考考你。",
+  "section": "dialogue",
+  "prompt": "In a school hallway the calf girl in yellow dress and the brown calf boy in green cap talk, the girl holds a small paper with a math sum and points at it, a speech bubble with the Chinese text 我考考你 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我有一个哥哥",
+  "section": "speech",
+  "prompt": "A thinking little calf (yellow boy in blue vest) sits at a desk with a hard math homework, his older brother camel points to the page and explains; in a thought cloud the little calf rides a bicycle happily outdoors. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "数青蛙",
+  "section": "song",
+  "prompt": "Calves sitting on big green lily pads in a pond, three cute frogs jumping into the water with big splashes, the teacher camel with glasses counting on fingers. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

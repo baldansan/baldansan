@@ -1,0 +1,172 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "月亮离我们多远？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses and three young camel calves (yellow boy in blue vest with red bag, girl in yellow dress with pink ribbon, brown boy in green cap) sit on a grassy steppe at night under a huge bright full moon and stars, a plate of round moon cakes beside them, a speech bubble with the Chinese text 月亮离我们多远 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yuebing.jpg",
+  "aspect": "1:1",
+  "title": "月饼",
+  "section": "vocabulary",
+  "prompt": "A plate of round golden moon cakes cut in half showing the filling, the yellow calf boy in blue vest holding one with a happy face, full moon behind. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dahai.jpg",
+  "aspect": "1:1",
+  "title": "大海",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon standing on a sandy beach looking at the wide blue sea with gentle waves and sailboats, sunny sky. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-caoyuan.jpg",
+  "aspect": "1:1",
+  "title": "草原",
+  "section": "vocabulary",
+  "prompt": "A wide green grassland steppe with white clouds, a white ger in the distance, the brown calf boy in green cap standing in the grass. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yun.jpg",
+  "aspect": "1:1",
+  "title": "云",
+  "section": "vocabulary",
+  "prompt": "Fluffy white clouds in a bright blue sky, one cloud shaped like a rabbit, the yellow calf boy in blue vest looking up and pointing. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-qima.jpg",
+  "aspect": "1:1",
+  "title": "骑马",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap riding a brown horse on a green steppe, holding the reins and smiling, wearing a safety helmet. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xingxing.jpg",
+  "aspect": "1:1",
+  "title": "星星",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon lying on the grass at night looking up at many twinkling yellow stars in a dark blue sky. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-li.jpg",
+  "aspect": "1:1",
+  "title": "离",
+  "section": "vocabulary",
+  "prompt": "Two houses far apart on a long road with a double-headed arrow between them, the yellow calf boy in blue vest standing at one house waving to a friend at the other house far away. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dagai.jpg",
+  "aspect": "1:1",
+  "title": "大概",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap squinting at a far-away tree while holding one hand out and tilting it side to side in an about-so-much estimating gesture, a thought bubble with a clock showing roughly ten minutes, curious expression. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-gongli.jpg",
+  "aspect": "1:1",
+  "title": "公里",
+  "section": "vocabulary",
+  "prompt": "A road sign showing the number 5 with a long road going to the horizon, the calf girl in yellow dress walking along the road, kilometer marker stone beside it. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-cangqilai.jpg",
+  "aspect": "1:1",
+  "title": "藏起来",
+  "section": "vocabulary",
+  "prompt": "A small cat hiding behind a curtain with only its tail and one eye peeking out, the yellow calf boy in blue vest searching with a funny look. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-guojia.jpg",
+  "aspect": "1:1",
+  "title": "国家",
+  "section": "vocabulary",
+  "prompt": "A colourful globe with different continents and small invented generic colourful flags around it (no real national flags), the calf girl in yellow dress with pink ribbon pointing at the globe. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-sanya.jpg",
+  "aspect": "1:1",
+  "title": "三亚",
+  "section": "vocabulary",
+  "prompt": "A tropical beach in southern China with palm trees, turquoise sea and white sand, the brown calf boy in green cap wearing sunglasses sitting under a palm tree. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "今天的月亮真圆！",
+  "section": "dialogue",
+  "prompt": "Mid-autumn evening in a Chinese courtyard: an adult camel father, adult camel mother, a calf girl in yellow dress with pink ribbon and a brown calf boy in green sweater sit around a table full of moon cakes and fruit under a huge round moon, red lanterns, a speech bubble with the Chinese text 今天的月亮真圆 in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我们一家人都很喜欢旅游",
+  "section": "speech",
+  "prompt": "Split picture: on the left a sunny tropical beach with palm trees where the camel family plays in the sea with a ball; on the right a night steppe with white gers, a crescent moon and stars where the family sits on the grass looking up; a small airplane flying across the top. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "小月饼",
+  "section": "song",
+  "prompt": "A big smiling full moon with a cute face among soft clouds and smiling stars, round happy moon cakes with faces dancing around, the three calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) singing and holding moon cakes. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

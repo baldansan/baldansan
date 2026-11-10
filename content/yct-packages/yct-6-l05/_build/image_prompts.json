@@ -1,0 +1,184 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你太马虎了！",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses and three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) in a classroom; a big key, a messy notebook with a wrong character circled in red, and an adult camel mother with a speech bubble with the Chinese text 你太马虎了 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-biaoyang.jpg",
+  "aspect": "1:1",
+  "title": "表扬",
+  "section": "vocabulary",
+  "prompt": "The teacher camel with glasses pinning a gold star on the yellow calf boy's vest and clapping, classmates cheering. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-juzi.jpg",
+  "aspect": "1:1",
+  "title": "句子",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress writing one sentence on a big notebook page, pencil in hand, proud smile. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-youyisi.jpg",
+  "aspect": "1:1",
+  "title": "有意思",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap laughing while reading a funny comic book with stars and sparkles around his eyes. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-cong.jpg",
+  "aspect": "1:1",
+  "title": "从",
+  "section": "vocabulary",
+  "prompt": "A map-like picture: the yellow calf boy walking along a dotted path from a small house on the left to a school on the right, an arrow starting at the house. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-mahu.jpg",
+  "aspect": "1:1",
+  "title": "马虎",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest putting on two different shoes and holding a bag upside down, messy room, funny careless face. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-cai.jpg",
+  "aspect": "1:1",
+  "title": "才",
+  "section": "vocabulary",
+  "prompt": "The calf girl yawning in her pajamas with a big clock showing late morning on the wall, sun high in the window, just waking up. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiangqilai.jpg",
+  "aspect": "1:1",
+  "title": "想起来",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap snapping his fingers with a lightbulb above his head and a remembered picture of a key in a thought bubble. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-wangji.jpg",
+  "aspect": "1:1",
+  "title": "忘记",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy scratching his head with a blank empty thought bubble, a school bag open on the table with a missing notebook. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-de.jpg",
+  "aspect": "1:1",
+  "title": "地",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress singing happily with her mouth open, music notes flying, a small arrow pointing from her happy face to her singing. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-cuo.jpg",
+  "aspect": "1:1",
+  "title": "错",
+  "section": "vocabulary",
+  "prompt": "A math worksheet with a big red X and a number crossed out, a pencil with eraser beside it. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-ke.jpg",
+  "aspect": "1:1",
+  "title": "渴",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest with his tongue out and sweat drops looking at a glass of water, hot sunny background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ting.jpg",
+  "aspect": "1:1",
+  "title": "停",
+  "section": "vocabulary",
+  "prompt": "A blue toy car stopped at a red traffic light on a crosswalk, the calf girl in yellow dress holding up her hand like a stop sign. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yaoshi.jpg",
+  "aspect": "1:1",
+  "title": "钥匙",
+  "section": "vocabulary",
+  "prompt": "A big shiny silver key on a red ring held by the brown calf boy in green cap in front of a front door. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-shengqi.jpg",
+  "aspect": "1:1",
+  "title": "生气",
+  "section": "vocabulary",
+  "prompt": "An adult camel mother with crossed arms and a red angry face with steam from her ears, a small calf looking down sheepishly. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "今天老师表扬我了。",
+  "section": "dialogue",
+  "prompt": "Outside a school: the yellow calf boy in blue vest happily talks to the calf girl in yellow dress who looks surprised; a thought bubble above them shows an elephant walking out of a school door; a speech bubble with the Chinese text 大象 in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "昨天，我和爸爸妈妈去爬山了。",
+  "section": "speech",
+  "prompt": "A camel family (adult camel father, adult camel mother, young calf in red cap with a backpack) standing at a closed apartment door with an elevator sign saying out of order; the father is searching his pockets, a thought bubble shows keys left inside a car; the mother frowns angrily. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "“马虎”的故事",
+  "section": "story",
+  "prompt": "Ancient Chinese painter in a purple robe laughing at his desk next to a funny painting of an animal with a tiger's head and a horse's body; two small sons beside him, one holding a bow, ink brushes and wine jar on the desk. No English text.",
+  "chars": []
+ }
+]

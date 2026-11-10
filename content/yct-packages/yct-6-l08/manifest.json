@@ -1,0 +1,158 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l08",
+ "hskLevel": 3,
+ "lessonNumber": 8,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "小鱼被小猫吃了。",
+ "mongolianTitle": "Загасыг муур идчихсэн",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第8课 (сурах бичиг + CD аудио 08-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-08-text-song.mp3",
+  "dialogues": "audio/yct-6-08-02.mp3",
+  "words": "audio/yct-6-08-01.mp3",
+  "speech": "audio/yct-6-08-03.mp3",
+  "story": "audio/yct-6-08-04.mp3",
+  "test": "audio/yct-6-08-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l08",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "小鱼被小猫吃了。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你找什么？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "最近，我非常喜欢玩游戏",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "掩耳盗铃",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "掩耳盗铃 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-bei",
+    "file": "images/w-bei.jpg",
+    "title": "被",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-you",
+    "file": "images/w-you.jpg",
+    "title": "又",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yugang",
+    "file": "images/w-yugang.jpg",
+    "title": "鱼缸",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhong",
+    "file": "images/w-zhong.jpg",
+    "title": "种",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zuijin",
+    "file": "images/w-zuijin.jpg",
+    "title": "最近",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-youxi",
+    "file": "images/w-youxi.jpg",
+    "title": "游戏",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-buzenmeyang",
+    "file": "images/w-buzenmeyang.jpg",
+    "title": "不怎么样",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-piping",
+    "file": "images/w-piping.jpg",
+    "title": "批评",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jueding",
+    "file": "images/w-jueding.jpg",
+    "title": "决定",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kaishi",
+    "file": "images/w-kaishi.jpg",
+    "title": "开始",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-po",
+    "file": "images/w-po.jpg",
+    "title": "破",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nanguo",
+    "file": "images/w-nanguo.jpg",
+    "title": "难过",
+    "role": "illustration",
+    "section": "vocabulary"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L8)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

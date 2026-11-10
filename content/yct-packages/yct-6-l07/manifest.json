@@ -1,0 +1,207 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-6",
+ "lessonId": "yct-6-l07",
+ "hskLevel": 3,
+ "lessonNumber": 7,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "他们不是双胞胎。",
+ "mongolianTitle": "Тэд ихэр биш",
+ "series": "YCT 标准教程 6",
+ "seriesLabel_mn": "YCT 6 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 6 · 第7课 (сурах бичиг + CD аудио 07-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-6-07-text-song.mp3",
+  "dialogues": "audio/yct-6-07-02.mp3",
+  "words": "audio/yct-6-07-01.mp3",
+  "speech": "audio/yct-6-07-03.mp3",
+  "story": "audio/yct-6-07-04.mp3",
+  "test": "audio/yct-6-07-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-6-l07",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "他们不是双胞胎。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你好，还你词典。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "不是双胞胎",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "圆圆和方方",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "圆圆和方方 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-cidian",
+    "file": "images/w-cidian.jpg",
+    "title": "词典",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lian",
+    "file": "images/w-lian.jpg",
+    "title": "脸",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yuan",
+    "file": "images/w-yuan.jpg",
+    "title": "圆",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiansheng",
+    "file": "images/w-xiansheng.jpg",
+    "title": "先生",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuangbaotai",
+    "file": "images/w-shuangbaotai.jpg",
+    "title": "双胞胎",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ertongche",
+    "file": "images/w-ertongche.jpg",
+    "title": "儿童车",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-huan",
+    "file": "images/w-huan.jpg",
+    "title": "还",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jie",
+    "file": "images/w-jie.jpg",
+    "title": "借",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ye",
+    "file": "images/w-ye.jpg",
+    "title": "页",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lia",
+    "file": "images/w-lia.jpg",
+    "title": "俩",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiang",
+    "file": "images/w-xiang.jpg",
+    "title": "像",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-suiran",
+    "file": "images/w-suiran.jpg",
+    "title": "虽然……但是……",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-weile",
+    "file": "images/w-weile.jpg",
+    "title": "为了",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-paizi",
+    "file": "images/w-paizi.jpg",
+    "title": "牌子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L7); Let's match/choose — утгаар",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}
