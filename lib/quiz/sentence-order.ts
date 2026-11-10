@@ -77,9 +77,6 @@ export function hasOrderedCorrectAnswer(question: QuizQuestion): boolean {
 }
 
 export function isQuizSingleSelectQuestion(question: QuizQuestion): boolean {
-  if (SINGLE_SELECT_TYPES.has(question.type)) {
-    return !hasOrderedCorrectAnswer(question);
-  }
   return !isQuizSentenceOrderQuestion(question);
 }
 
@@ -102,7 +99,12 @@ export function parseQuizSentenceOrderTokens(question: QuizQuestion): string[] {
 
 export function isQuizSentenceOrderQuestion(question: QuizQuestion): boolean {
   if (SINGLE_SELECT_TYPES.has(question.type) && !hasOrderedCorrectAnswer(question)) {
-    return false;
+    // cloze/multiple_choice гэж хадгалагдсан ч сонголтгүй, асуулт нь «A / B / C» хэлбэртэй
+    // (HSK5 импортын «Үгсийг эвлүүлж…» асуултууд) → эвлүүлэх асуулт гэж үзнэ.
+    // Үгүй бол хоосон карт гарч хэрэглэгч хариулж чадахгүй байсан.
+    const realOptions = question.options.map((o) => o.trim()).filter(Boolean);
+    if (realOptions.length >= 2) return false;
+    return parseSlashTokensFromText(question.question).length >= 2;
   }
 
   return parseQuizSentenceOrderTokens(question).length >= 2;
