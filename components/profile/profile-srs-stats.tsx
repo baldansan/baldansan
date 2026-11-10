@@ -3,7 +3,6 @@
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ProfileAchievementBadges } from "@/components/profile/profile-achievement-badges";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
@@ -11,7 +10,6 @@ import {
   getRecentGameResults,
   getGameStats,
 } from "@/lib/games/game-progress";
-import { getSelectedLanguage } from "@/lib/learner-onboarding";
 import {
   getLocalWordSrsStats,
   readLocalStudiedWordIds,
@@ -44,11 +42,6 @@ export function ProfileSrsStats({
   const [gamePlayed, setGamePlayed] = useState(0);
   const [gameBest, setGameBest] = useState(0);
   const [gamesCompleted, setGamesCompleted] = useState(0);
-  const [isChinese, setIsChinese] = useState(false);
-
-  useEffect(() => {
-    setIsChinese(getSelectedLanguage() === "zh");
-  }, []);
 
   useEffect(() => {
     if (!hydrated) return;
@@ -130,9 +123,9 @@ export function ProfileSrsStats({
           <div className="bs-tm-stat-l">{tr(locale, "Нарийвчлал")}</div>
         </div>
         <div className="bs-tm-stat">
-          <div className="bs-tm-stat-ic" aria-hidden>🎮</div>
-          <div className="bs-tm-stat-n">{gamePlayed}</div>
-          <div className="bs-tm-stat-l">{tr(locale, "Тоглосон")}</div>
+          <div className="bs-tm-stat-ic" aria-hidden>📖</div>
+          <div className="bs-tm-stat-n">{completedLessons}</div>
+          <div className="bs-tm-stat-l">{tr(locale, "Дуусгасан хичээл")}</div>
         </div>
       </div>
 
@@ -188,31 +181,6 @@ export function ProfileSrsStats({
         </div>
       </div>
 
-      <Link href="/settings" className="bs-tm-card">
-        <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
-          ⚙️
-        </span>
-        <span className="flex-1">
-          <span className="bs-tm-card-title">{tr(locale, "Тохиргоо")}</span>
-        </span>
-        <span className="bs-tm-card-chev" aria-hidden>›</span>
-      </Link>
-
-      {isChinese ? (
-        <Link
-          href="/games/hsk-vocab-quiz?types=meaning"
-          className="bs-tm-card mt-2"
-        >
-          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
-            🎯
-          </span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Утга сонгох тоглоом")}</span>
-            <span className="bs-tm-card-sub">{tr(locale, "Тоглоомын хэсэг")}</span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
-      ) : null}
     </>
   );
 }

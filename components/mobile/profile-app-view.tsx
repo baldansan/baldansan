@@ -32,12 +32,30 @@ import { isKidEmail } from "@/lib/kids/types";
 import { useKidMode } from "@/lib/kids/use-kid-mode";
 import { ChatProfileSettings } from "@/components/social/chat-profile-settings";
 import { ts } from "@/lib/social/i18n";
+import { getOwnProfile } from "@/lib/social/profile";
 
 type LoadState = "loading" | "ready" | "error";
 
 const PROFILE_ROUTE = "/profile";
 
-function ProfileAvatar({ displayName, guest }: { displayName: string; guest?: boolean }) {
+function ProfileAvatar({
+  displayName,
+  guest,
+  emoji,
+}: {
+  displayName: string;
+  guest?: boolean;
+  emoji?: string | null;
+}) {
+  if (emoji) {
+    return (
+      <div className="bs-tm-avatar">
+        <span className="bs-tm-avatar-initial" aria-hidden>
+          {emoji}
+        </span>
+      </div>
+    );
+  }
   if (guest) {
     return (
       <div className="bs-tm-avatar">
@@ -62,6 +80,34 @@ function ProfileAvatar({ displayName, guest }: { displayName: string; guest?: bo
   );
 }
 
+/** Нэг мөр = нэг холбоос; профайл дээр бүлэглэж харуулна. */
+function LinkRow({
+  href,
+  icon,
+  title,
+  sub,
+  iconClass = "",
+}: {
+  href: string;
+  icon: string;
+  title: string;
+  sub?: string;
+  iconClass?: string;
+}) {
+  return (
+    <Link href={href} className="bs-tm-card mt-2">
+      <span className={`bs-tm-card-ic ${iconClass}`} aria-hidden>
+        {icon}
+      </span>
+      <span className="flex-1">
+        <span className="bs-tm-card-title">{title}</span>
+        {sub ? <span className="block text-xs text-[var(--app-muted)]">{sub}</span> : null}
+      </span>
+      <span className="bs-tm-card-chev" aria-hidden>›</span>
+    </Link>
+  );
+}
+
 export function ProfileAppView() {
   const locale = useUiLocale();
   const router = useRouter();
@@ -77,6 +123,10 @@ export function ProfileAppView() {
     total: number;
   } | null>(null);
   const [signingOut, setSigningOut] = useState(false);
+  const [ownProfile, setOwnProfile] = useState<{ name: string | null; avatar: string | null }>({
+    name: null,
+    avatar: null,
+  });
   const [checkResult, setCheckResult] = useState<ClientAuthCheckResult | null>(
     null
   );
@@ -153,6 +203,15 @@ export function ProfileAppView() {
         return;
       }
 
+      void withTimeout(getOwnProfile(auth.user.id), 5000, "profileOwn")
+        .then((res) =>
+          setOwnProfile({
+            name: res.data?.display_name?.trim() || null,
+            avatar: res.data?.avatar ?? null,
+          })
+        )
+        .catch(() => undefined);
+
       void withTimeout(isCurrentUserAdmin(), 5000, "profileAdminCheck")
         .then((admin) => {
           setIsAdmin(admin);
@@ -190,7 +249,8 @@ export function ProfileAppView() {
   }, [finishWithError]);
 
   useEffect(() => {
-    void loadProfile();
+    const t = setTimeout(() => void loadProfile(), 0);
+    return () => clearTimeout(t);
   }, [loadProfile, attempt]);
 
   useLoadingWatchdog({
@@ -354,7 +414,9 @@ export function ProfileAppView() {
     );
   }
 
-  const displayName = user.email?.split("@")[0] ?? tr(locale, "Хэрэглэгч");
+  const emailName = user.email?.split("@")[0] ?? tr(locale, "Хэрэглэгч");
+  const displayName = ownProfile.name ?? emailName;
+  const freezeLeft = streakFreeze ? streakFreeze.total - streakFreeze.usedThisMonth : 0;
 
   return (
     <MobileAppShell
@@ -363,20 +425,20 @@ export function ProfileAppView() {
       rightRail={<ProfileStatsRail />}
       >
       <div className="bs-tm-phead">
-        <ProfileAvatar displayName={displayName} />
-        <h1 className="bs-tm-pname">{displayName}</h1>
+        <ProfileAvatar displayName={displayName} emoji={ownProfile.avatar} />
+        <h1 className="bs-tm-pname" translate="no">{displayName}</h1>
         <p className="bs-tm-prank">
           {hydrated
             ? `${formatActiveHskLevel(activeLevel)} ${tr(locale, "суралцагч")}`
             : tr(locale, "Суралцагч")}
+          {user.email ? <span className="block text-xs opacity-70">{user.email}</span> : null}
         </p>
         {streak > 0 ? (
           <span className="bs-tm-plvlbadge">🔥 {streak} {tr(locale, "өдөр дараалан")}</span>
         ) : null}
-        {streakFreeze ? (
-          <span className="bs-tm-plvlbadge">
-            {tr(locale, "🧊 Хамгаалалт:")} {streakFreeze.total - streakFreeze.usedThisMonth}/
-            {streakFreeze.total}
+        {streakFreeze && freezeLeft > 0 ? (
+          <span className="bs-tm-plvlbadge" title={tr(locale, "Нэг өдөр алгасвал streak тасрахгүй")}>
+            🧊 {tr(locale, "Streak хамгаалалт")} {freezeLeft}/{streakFreeze.total}
           </span>
         ) : null}
       </div>
@@ -393,70 +455,35 @@ export function ProfileAppView() {
         completedLessons={completedLessons}
       />
 
-      <Link href="/points" className="bs-tm-card mt-2">
-        <span className="bs-tm-card-ic" aria-hidden>
-          ⭐
-        </span>
-        <span className="flex-1">
-          <span className="bs-tm-card-title">{tr(locale, "Миний оноо")}</span>
-          <span className="block text-xs text-[var(--app-muted)]">
-            {tr(locale, "Оноо, зэрэглэл, миний тайлан")}
-          </span>
-        </span>
-        <span className="bs-tm-card-chev" aria-hidden>›</span>
-      </Link>
+      <p className="bs-tm-sec">{tr(locale, "📚 Миний суралцалт")}</p>
+      <LinkRow href="/progress" icon="📈" title={tr(locale, "Ахиц")} sub={tr(locale, "Хичээл, үг, шалгалтын явц")} iconClass="bs-tm-card-ic--green" />
+      <LinkRow href="/points" icon="⭐" title={tr(locale, "Оноо, зэрэглэл")} sub={tr(locale, "Миний оноо, бусадтай харьцуулах")} />
+      <LinkRow href="/weekly-report" icon="🗓" title={tr(locale, "Долоо хоногийн тайлан")} sub={tr(locale, "Энэ долоо хоногт хэр суралцсан бэ")} />
+      <LinkRow href="/reminders" icon="⏰" title={tr(locale, "Сурах сануулга")} sub={tr(locale, "Өдөр бүр ямар цагт сануулах")} />
 
-      <Link href="/chat" className="bs-tm-card mt-2">
-        <span className="bs-tm-card-ic" aria-hidden>
-          💬
-        </span>
-        <span className="flex-1">
-          <span className="bs-tm-card-title">{ts(locale, "Чат")} · 聊天</span>
-          <span className="block text-xs text-[var(--app-muted)]">
-            {ts(locale, "Хятадаар ярилцъя")}
-          </span>
-        </span>
-        <span className="bs-tm-card-chev" aria-hidden>›</span>
-      </Link>
+      <p className="bs-tm-sec mt-5">{tr(locale, "👥 Бусадтай хамт")}</p>
+      <LinkRow href="/chat" icon="💬" title={`${ts(locale, "Чат")} · 聊天`} sub={ts(locale, "Хятадаар ярилцъя")} />
+      <LinkRow href="/join" icon="🏫" title={tr(locale, "Ангид орох")} sub={tr(locale, "Багшийн өгсөн 6 оронтой кодоор")} />
+      <LinkRow href="/family" icon="👨‍👩‍👧" title={tr(locale, "Хүүхдийн бүртгэл")} sub={tr(locale, "Хүүхдэдээ тусдаа бүртгэл нээх (PIN-тэй)")} />
 
-      <Link href="/join" className="bs-tm-card mt-2">
-        <span className="bs-tm-card-ic" aria-hidden>
-          🏫
-        </span>
-        <span className="flex-1">
-          <span className="bs-tm-card-title">{tr(locale, "Ангид орох")}</span>
-          <span className="block text-xs text-[var(--app-muted)]">{tr(locale, "Багшийн өгсөн 6 оронтой код")}</span>
-        </span>
-        <span className="bs-tm-card-chev" aria-hidden>›</span>
-      </Link>
-
-      <Link href="/family" className="bs-tm-card mt-2">
-        <span className="bs-tm-card-ic" aria-hidden>
-          👨‍👩‍👧
-        </span>
-        <span className="flex-1">
-          <span className="bs-tm-card-title">{tr(locale, "Гэр бүл — хүүхдийн бүртгэл")}</span>
-          <span className="block text-xs text-[var(--app-muted)]">
-            {tr(locale, "Имэйлгүй хүүхдэд avatar + PIN-тэй бүртгэл")}
-          </span>
-        </span>
-        <span className="bs-tm-card-chev" aria-hidden>›</span>
-      </Link>
-
-      <div className="mt-4">
-        <ChatProfileSettings userId={user.id} defaultName={displayName} />
-      </div>
-
-      {isAdmin ? (
-        <Link href="/admin" className="bs-tm-card mt-2">
-          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
-            ⚙️
-          </span>
+      <p className="bs-tm-sec mt-5">{tr(locale, "⚙️ Бүртгэл")}</p>
+      <details className="bs-tm-card mt-2 block">
+        <summary className="flex cursor-pointer list-none items-center gap-3 [&::-webkit-details-marker]:hidden">
+          <span className="bs-tm-card-ic" aria-hidden>✏️</span>
           <span className="flex-1">
-            <span className="bs-tm-card-title">{tr(locale, "Админ самбар")}</span>
+            <span className="bs-tm-card-title">{tr(locale, "Нэр, зураг засах")}</span>
+            <span className="block text-xs text-[var(--app-muted)]">{tr(locale, "Чат болон зэрэглэлд харагдах нэр")}</span>
           </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </Link>
+          <span className="bs-tm-card-chev" aria-hidden>▾</span>
+        </summary>
+        <div className="mt-4 border-t border-[var(--app-border)] pt-4">
+          <ChatProfileSettings userId={user.id} defaultName={emailName} />
+        </div>
+      </details>
+      <LinkRow href="/notifications" icon="🔔" title={tr(locale, "Мэдэгдэл")} />
+      <LinkRow href="/settings" icon="⚙️" title={tr(locale, "Тохиргоо")} sub={tr(locale, "Хэл, түвшин, дуу, бусад")} />
+      {isAdmin ? (
+        <LinkRow href="/admin" icon="🛠" title={tr(locale, "Админ самбар")} iconClass="bs-tm-card-ic--purple" />
       ) : null}
 
       <button
