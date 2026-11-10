@@ -11,6 +11,40 @@ export function WorkbookImportClient() {
   const [busy, setBusy] = useState(false);
   const [log, setLog] = useState<string[]>([]);
   const [bulkIds, setBulkIds] = useState("");
+  const [patchId, setPatchId] = useState("");
+  const [patchUrl, setPatchUrl] = useState("");
+  const [patchText, setPatchText] = useState("");
+
+  /** Хэсэгчилсэн шинэчлэл: { study: {grammar|texts|...}, vocabulary: [...] } → PUT /api/admin/lessons/<id>/patch */
+  async function runPatch() {
+    if (busy) return;
+    const id = patchId.trim();
+    if (!id) return;
+    setBusy(true);
+    setLog([]);
+    try {
+      let patch: unknown;
+      if (patchText.trim()) patch = JSON.parse(patchText);
+      else {
+        const res = await fetch(`${patchUrl}${patchUrl.includes("?") ? "&" : "?"}t=${Date.now()}`);
+        if (!res.ok) throw new Error(`Файл татагдсангүй (${res.status})`);
+        patch = await res.json();
+      }
+      const r = await fetch(`/api/admin/lessons/${encodeURIComponent(id)}/patch`, {
+        method: "PUT",
+        credentials: "same-origin",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(patch),
+      });
+      const body = (await r.json().catch(() => ({}))) as { error?: string; studyKeys?: string[]; vocabularyUpdated?: number; vocabularyMissing?: string[] };
+      if (!r.ok) throw new Error(body.error || `HTTP ${r.status}`);
+      push(`✅ ${id}: ${body.studyKeys?.length ? `hskStudyContent → ${body.studyKeys.join(", ")}` : ""} ${body.vocabularyUpdated != null ? `· үг ${body.vocabularyUpdated} шинэчлэгдсэн` : ""} ${body.vocabularyMissing?.length ? `· олдоогүй: ${body.vocabularyMissing.join(" ")}` : ""}`);
+    } catch (e) {
+      push(`❌ ${e instanceof Error ? e.message : "Алдаа"}`);
+    } finally {
+      setBusy(false);
+    }
+  }
 
   const push = (m: string) => setLog((l) => [...l, m]);
 
@@ -104,6 +138,18 @@ export function WorkbookImportClient() {
         </label>
         <button type="button" onClick={() => void runBulk()} disabled={busy || !bulkIds.trim()} className="self-start rounded-full bg-slate-800 px-5 py-2 text-sm font-semibold text-white hover:bg-slate-900 disabled:opacity-60">
           {busy ? "Оруулж байна…" : "Жагсаалтыг бүгдийг оруулах"}
+        </button>
+      </div>
+      <div className="mt-2 flex flex-col gap-2 rounded-xl bg-amber-50 p-3 ring-1 ring-amber-200">
+        <p className="text-sm font-semibold text-amber-900">Хэсэгчилсэн шинэчлэл (patch) — дүрэм, текст, үгийн жишээ г.м. зөвхөн заасан хэсгийг солино</p>
+        <p className="text-xs text-amber-800">JSON: {"{ \"study\": { \"grammar\": [...] }, \"vocabulary\": [{ \"chinese\": \"如何\", \"exampleChinese\": \"…\", \"exampleMongolian\": \"…\" }] }"}</p>
+        <div className="flex flex-wrap gap-2">
+          <input value={patchId} onChange={(e) => setPatchId(e.target.value)} className="min-w-[160px] rounded-lg border border-amber-200 px-3 py-2 text-sm" placeholder="hsk5-l09" />
+          <input value={patchUrl} onChange={(e) => setPatchUrl(e.target.value)} className="min-w-[320px] flex-1 rounded-lg border border-amber-200 px-3 py-2 font-mono text-xs" placeholder="https://raw.githubusercontent.com/…/patch.json (эсвэл доор JSON буулга)" />
+        </div>
+        <textarea value={patchText} onChange={(e) => setPatchText(e.target.value)} rows={4} className="rounded-lg border border-amber-200 px-3 py-2 font-mono text-xs" placeholder='{"study":{...},"vocabulary":[...]}' />
+        <button type="button" onClick={() => void runPatch()} disabled={busy || !patchId.trim() || (!patchUrl.trim() && !patchText.trim())} className="self-start rounded-full bg-amber-600 px-5 py-2 text-sm font-semibold text-white hover:bg-amber-700 disabled:opacity-60">
+          {busy ? "Шинэчилж байна…" : "Хэсэгчлэн шинэчлэх"}
         </button>
       </div>
       {log.length ? (
