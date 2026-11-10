@@ -1,0 +1,74 @@
+[
+ {
+  "chinese": "衣服",
+  "pinyin": "yīfu",
+  "mongolian": "хувцас",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "这是我的衣服。",
+  "examplePinyin": "Zhè shì wǒ de yīfu.",
+  "exampleMongolian": "Энэ бол миний хувцас.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "鞋",
+  "pinyin": "xié",
+  "mongolian": "гутал",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我的鞋在哪儿？",
+  "examplePinyin": "Wǒ de xié zài nǎr?",
+  "exampleMongolian": "Миний гутал хаана байна?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "帮助",
+  "pinyin": "bāngzhù",
+  "mongolian": "туслах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我帮你，好不好？",
+  "examplePinyin": "Wǒ bāng nǐ, hǎo bu hǎo?",
+  "exampleMongolian": "Би чамд туслах уу?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "穿",
+  "pinyin": "chuān",
+  "mongolian": "өмсөх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我能自己穿衣服。",
+  "examplePinyin": "Wǒ néng zìjǐ chuān yīfu.",
+  "exampleMongolian": "Би хувцсаа өөрөө өмсч чадна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "能",
+  "pinyin": "néng",
+  "mongolian": "чадах, болох",
+  "notes": "туслах үйл үг · гол үг",
+  "exampleChinese": "我能穿你的鞋吗？",
+  "examplePinyin": "Wǒ néng chuān nǐ de xié ma?",
+  "exampleMongolian": "Би чиний гутлыг өмсөж болох уу?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "自己",
+  "pinyin": "zìjǐ",
+  "mongolian": "өөрөө",
+  "notes": "төлөөний үг · гол үг",
+  "exampleChinese": "我能自己穿。",
+  "examplePinyin": "Wǒ néng zìjǐ chuān.",
+  "exampleMongolian": "Би өөрөө өмсч чадна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 6
+ }
+]

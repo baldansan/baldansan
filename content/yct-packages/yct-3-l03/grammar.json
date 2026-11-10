@@ -1,0 +1,243 @@
+[
+ {
+  "point": "我在画画儿呢。 — одоо юу хийж байна",
+  "gloss_mn": "«Би зураг зурж байна» — яг одоо хийж байгаагаа хэлнэ",
+  "structure": "我在 + хийх үйлдэл + 呢。 / 你在做什么呢？",
+  "teacher_mn": "Яг одоо хийж байгаа юмаа хэлэхдээ «在……呢» гэнэ. Зураг зурж байвал «我在画画儿呢». Найзаасаа асуухдаа «你在做什么呢？» гэнэ. Гараа даллаад, хийж байгаагаа дүрсэлж үз!",
+  "teacher_notes": "Номын яриа: 你在做什么呢？ 我在画画儿呢。 太阳和月亮在跑步。",
+  "examples": [
+   {
+    "chinese": "你在做什么呢？",
+    "pinyin": "Nǐ zài zuò shénme ne?",
+    "mongolian": "Чи юу хийж байна?"
+   },
+   {
+    "chinese": "我在画画儿呢。",
+    "pinyin": "Wǒ zài huà huàr ne.",
+    "mongolian": "Би зураг зурж байна."
+   },
+   {
+    "chinese": "太阳和月亮在跑步。",
+    "pinyin": "Tàiyáng hé yuèliang zài pǎobù.",
+    "mongolian": "Нар сар хоёр гүйж байна."
+   },
+   {
+    "chinese": "爷爷唱歌呢，奶奶跳舞呢。",
+    "pinyin": "Yéye chànggē ne, nǎinai tiàowǔ ne.",
+    "mongolian": "Өвөө дуулж байна, эмээ бүжиглэж байна."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我画画儿在呢。",
+    "right": "我在画画儿呢。",
+    "why": "在 нь хийж буй үйлдлийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "Найзаасаа «Чи юу хийж байна?» гэж асуу:",
+   "options": [
+    "爷爷唱歌呢。",
+    "让我看看。",
+    "你在做什么呢？"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "我 ________ 画画儿呢。",
+    "options": [
+     "和",
+     "让",
+     "在"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 在 = ...ж байна.",
+    "explanation_wrong_mn": "在……呢 — одоо хийж байгааг хэлнэ."
+   },
+   {
+    "type": "choice",
+    "question": "«Өвөө дуулж байна» хятадаар:",
+    "options": [
+     "奶奶跳舞呢。",
+     "爷爷唱歌呢。",
+     "我在画画儿呢。"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 唱歌 = дуулах.",
+    "explanation_wrong_mn": "唱歌 = дуулах, 跳舞 = бүжиглэх."
+   },
+   {
+    "type": "judge",
+    "question": "«你在做什么呢？» гэдэг нь «Чи юу хийж байна?» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "你在做什么呢？ = Чи юу хийж байна?"
+   }
+  ]
+ },
+ {
+  "point": "让我看看。 — би хараад үзье",
+  "gloss_mn": "«Би хараад үзье» — найзаасаа юм үзэхээр хүснэ",
+  "structure": "让我 + хийх үйлдэл ×2，好吗？",
+  "teacher_mn": "Найзынхаа зургийг үзмээр байвал «让我看看» гэнэ. Хийх үйлдлээ хоёр дахин хэлбэл «жаахан …ж үзье» гэсэн утга болно. 玩玩, 画画, 坐坐 гэж бас хэлнэ. Эцэст нь «好吗？» гэвэл эелдэг сонсогдоно.",
+  "teacher_notes": "Let's match: 让我看看 / 玩玩 / 画画 / 坐坐, бүгд «好吗？»-аар төгсөнө.",
+  "examples": [
+   {
+    "chinese": "让我看看。",
+    "pinyin": "Ràng wǒ kànkan.",
+    "mongolian": "Би хараад үзье."
+   },
+   {
+    "chinese": "让我玩玩，好吗？",
+    "pinyin": "Ràng wǒ wánwan, hǎo ma?",
+    "mongolian": "Би жаахан тоглоод үзье, болох уу?"
+   },
+   {
+    "chinese": "让我画画，好吗？",
+    "pinyin": "Ràng wǒ huàhua, hǎo ma?",
+    "mongolian": "Би жаахан зураад үзье, болох уу?"
+   },
+   {
+    "chinese": "让我坐坐，好吗？",
+    "pinyin": "Ràng wǒ zuòzuo, hǎo ma?",
+    "mongolian": "Би жаахан суугаад үзье, болох уу?"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我让看看。",
+    "right": "让我看看。",
+    "why": "让 нь эхэнд орно."
+   }
+  ],
+  "check": {
+   "question": "«Би жаахан тоглоод үзье, болох уу?» хятадаар:",
+   "options": [
+    "让我玩玩，好吗？",
+    "让我坐坐，好吗？",
+    "我在画画儿呢。"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "________ 我看看。",
+    "options": [
+     "在",
+     "让",
+     "和"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 让 = ...болгох, зөвшөөрөх.",
+    "explanation_wrong_mn": "让我看看 — «Би хараад үзье»."
+   },
+   {
+    "type": "choice",
+    "question": "Машинд суумаар байна. Юу гэх вэ?",
+    "options": [
+     "让我看看，好吗？",
+     "让我画画，好吗？",
+     "让我坐坐，好吗？"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 坐 = суух.",
+    "explanation_wrong_mn": "坐坐 = суух, 画画 = зурах."
+   },
+   {
+    "type": "judge",
+    "question": "«让我看看» гэдэг нь «Би хараад үзье» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "让我看看 = Би хараад үзье."
+   }
+  ]
+ },
+ {
+  "point": "太阳和月亮 · 跟……一起",
+  "gloss_mn": "«ба», «…тай хамт»",
+  "structure": "A 和 B；A 跟 B 一起 + үйлдэл",
+  "teacher_mn": "Хоёр юмыг холбохдоо «和» гэнэ: 爷爷和奶奶 — өвөө эмээ хоёр. «…тай хамт» гэвэл «跟……一起» гэнэ: 奶奶跟太阳一起跳舞. Найзтайгаа хамт юм хийхээ хэлж үз!",
+  "teacher_notes": "Mini story: 奶奶跟太阳一起跳舞。爷爷跟月亮一起跑步。",
+  "examples": [
+   {
+    "chinese": "太阳和月亮在跑步。",
+    "pinyin": "Tàiyáng hé yuèliang zài pǎobù.",
+    "mongolian": "Нар сар хоёр гүйж байна."
+   },
+   {
+    "chinese": "奶奶跟太阳一起跳舞。",
+    "pinyin": "Nǎinai gēn tàiyáng yìqǐ tiàowǔ.",
+    "mongolian": "Эмээ нартай хамт бүжиглэнэ."
+   },
+   {
+    "chinese": "爷爷跟月亮一起跑步。",
+    "pinyin": "Yéye gēn yuèliang yìqǐ pǎobù.",
+    "mongolian": "Өвөө сартай хамт гүйнэ."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "爷爷跟月亮跑步一起。",
+    "right": "爷爷跟月亮一起跑步。",
+    "why": "一起 нь хийх үйлдлийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Өвөө эмээ хоёр» хятадаар:",
+   "options": [
+    "太阳和月亮",
+    "唱歌和跳舞",
+    "爷爷和奶奶"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "太阳 ________ 月亮",
+    "options": [
+     "让",
+     "在",
+     "和"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 和 = ба.",
+    "explanation_wrong_mn": "Хоёр юмыг холбохдоо 和."
+   },
+   {
+    "type": "choice",
+    "question": "«Эмээ нартай хамт бүжиглэнэ» хятадаар:",
+    "options": [
+     "爷爷跟月亮一起跑步。",
+     "奶奶喜欢月亮。",
+     "奶奶跟太阳一起跳舞。"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "跳舞 = бүжиглэх, 太阳 = нар."
+   },
+   {
+    "type": "judge",
+    "question": "«跑步» гэдэг нь «дуулах» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "false",
+    "explanation_correct_mn": "Зөв! 跑步 = гүйх.",
+    "explanation_wrong_mn": "跑步 = гүйх, 唱歌 = дуулах."
+   }
+  ]
+ }
+]

@@ -1,0 +1,252 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (07-04) сонсоод зөв хариултыг A, B, C-ээс сонго.",
+    "audio": "audio/yct-3-07-04.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）你想要什么生日礼物？",
+      "script_zh": "男：你想要什么生日礼物？ 女：我想要花。 问：男的会送女的什么？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "蛋糕",
+       "花",
+       "画"
+      ],
+      "answer": "B",
+      "explanation_mn": "Эмэгтэй «我想要花» — цэцэг авмаар байна гэсэн. Тиймээс эрэгтэй цэцэг өгнө. 蛋糕 бялуу, 画 зураг."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）你吃蛋糕吗？",
+      "script_zh": "男：你吃蛋糕吗？这个蛋糕很好吃。 女：谢谢，我不吃了，我不饿。 问：女的现在觉得怎么样？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "不饿",
+       "没吃饱",
+       "想吃蛋糕"
+      ],
+      "answer": "A",
+      "explanation_mn": "Эмэгтэй «我不饿» — өлсөөгүй гэсэн. 没吃饱 бол цатгалан идээгүй, 想吃蛋糕 бялуу идмээр байна гэсэн үг тул буруу."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）今天几号？",
+      "script_zh": "男：今天几号？ 女：今天三号，明天是我的生日。 问：哪天是她的生日？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "三号",
+       "四号",
+       "今天"
+      ],
+      "answer": "B",
+      "explanation_mn": "Өнөөдөр 3-ны өдөр, маргааш нь төрсөн өдөр. Тэгэхээр 4-ний өдөр. A 3-ны өдөр буюу өнөөдөр, C өнөөдөр гэсэн нь буруу."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）生日那天你快乐吗？",
+      "script_zh": "男：生日那天你快乐吗？ 女：快乐，我最爱和小狗玩了。 问：女的生日那天做什么了？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "不快乐",
+       "送礼物了",
+       "和小狗玩了"
+      ],
+      "answer": "C",
+      "explanation_mn": "Охин «我最爱和小狗玩了» — хамгийн их нохойтой тоглох дуртай гэсэн. Тэр баярласан тул A буруу. Бэлэг өгсөн тухай яриагүй тул B буруу."
+     }
+    ],
+    "answer_source": "YCT 3 Test Answers L7: 1.B 2.A 3.B 4.C"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — яриа бүрд тохирох зургийг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "A：怎么了？不好吃？ B：我想吃水果蛋糕。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Яасан бэ? Амттай биш юу? Би жимсний бялуу идмээр байна» — C зураг дээр хүү аяганы өмнө гунигтай сууж байна. A охин бэлгийн хайрцагтай, B хоёр хүн бэлэг, D хоёр хүүхэд идэж байна."
+     },
+     {
+      "n": 6,
+      "question_zh": "A：这是谁送你的生日礼物？ B：我们班同学。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Энэ бэлгийг чамд хэн өгсөн бэ? Манай ангийн найзууд.» — A зураг дээр охин бэлгийн хайрцагт хүрч байна. B дээр хоёр эр, C уйтгартай хүү, D идэж байна."
+     },
+     {
+      "n": 7,
+      "question_zh": "女：这个蛋糕在哪儿买的？真好吃。 男：不是买的，是我奶奶自己做的。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "Бялуу идэж байгаа хоёр хүүхэд — D зураг. Эмээ өөрөө хийсэн тул идэж, амттай гэж байна. A бэлэг, B эрчүүд, C уйтгартай хүү."
+     },
+     {
+      "n": 8,
+      "question_zh": "A：让我看看，这是什么礼物？ B：不，这是爷爷给我买的。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "Хоёр хүн бэлгийг харж байна — B зураг. Өвөө худалдаж авсан бэлгийг үзэхийг хүсэж байна. A дээр охин ганцаараа, C хүү гунигтай, D идэж байна."
+     }
+    ],
+    "answer_source": "YCT 3 Test Answers L7: 5.C 6.A 7.D 8.B"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Нөхөж бич — 给, 送, 但是, 吧, 快乐-аас зөв үгийг сонго.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "我们____妈妈做一个蛋糕吧。",
+      "answer": "给",
+      "explanation_mn": "Ээжийн төлөө — 给."
+     },
+     {
+      "n": 2,
+      "question_zh": "我们____她什么礼物？",
+      "answer": "送",
+      "explanation_mn": "Бэлэг өгөх — 送."
+     },
+     {
+      "n": 3,
+      "question_zh": "我不会做蛋糕，____我会画蛋糕。",
+      "answer": "但是",
+      "explanation_mn": "Гэвч — 但是."
+     },
+     {
+      "n": 4,
+      "question_zh": "来一起唱歌____。",
+      "answer": "吧",
+      "explanation_mn": "Санал болгох — 吧."
+     },
+     {
+      "n": 5,
+      "question_zh": "生日____！",
+      "answer": "快乐",
+      "explanation_mn": "生日快乐 — төрсөн өдрийн мэнд."
+     }
+    ],
+    "answer_source": "Let's learn х.33 (хариу агент тааруулсан)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Let's draw and compare — зураад хоосон зайг нөх.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "……人……，但是中国人……。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Монгол хүн төрсөн өдөр юу хийдэг, хятад хүн юу хийдэг вэ? Жишээ нь: монгол хүн бялуу иддэг, гэвч хятад хүн 长寿面 иддэг."
+     }
+    ],
+    "answer_source": "Let's draw and compare х.36"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичиж үз — «生日» гэсэн ханзыг дахин бичиж хуул.",
+    "question_zh": "生日",
+    "answer": "生日",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найздаа санал тавь.",
+    "question_zh": "来一起唱歌吧。",
+    "answer": "但是我不会唱。",
+    "explanation_mn": "Нэг нь санал тавина, нөгөө нь шалтаг хэлнэ."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Төрсөн өдрийн дууг дуул.",
+    "question_zh": "祝你生日快乐。",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 07-03-ын хамт дуул."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "Ээждээ юу бэлэглэхээ хэл.",
+    "question_zh": "我送妈妈……",
+    "answer": "我送妈妈花。",
+    "explanation_mn": "Өөрийн бэлгээ нэрлэ."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 3 · Test Listening Scripts, Test Answers (Lesson 7)"
+}

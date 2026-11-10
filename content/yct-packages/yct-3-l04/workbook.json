@@ -1,0 +1,229 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "judge",
+    "instruction_mn": "Сонсох — Аудио (04-04) сонсоод зураг таарч байвал ✓, таарахгүй бол ✗.",
+    "audio": "audio/yct-3-04-04.mp3",
+    "answer_source": "YCT 3 Test Answers L4: 1.✓ 2.✗ 3.✓ 4.✓",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）下课了，回家了。",
+      "image": "images/t1.png",
+      "script_zh": "下课了，回家了。",
+      "answer": "✓",
+      "explanation_mn": "«Хичээл тарлаа, гэртээ харилаа» — зураг дээр эмэгтэй ном, цүнхээ бэлдэж байна. Хичээл тарсан, харих гэж байгаа тул ✓."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）他在打电话。",
+      "image": "images/t2.png",
+      "script_zh": "他在打电话。",
+      "answer": "✗",
+      "explanation_mn": "«Тэр утсаар ярьж байна» гэсэн. Зураг дээр хоёр хөвгүүн сагсан бөмбөг тоглож байна, утас байхгүй тул ✗."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）小朋友，你有什么问题？",
+      "image": "images/t3.png",
+      "script_zh": "小朋友，你有什么问题？",
+      "answer": "✓",
+      "explanation_mn": "«Хүүхэд минь, чамд ямар асуулт байна?» — зураг дээр эмэгтэй суугаад жаахан охинтой ярьж, асуултыг нь сонсож байна. ✓."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）你找谁？",
+      "image": "images/t4.png",
+      "script_zh": "你找谁？",
+      "answer": "✓",
+      "explanation_mn": "«Чи хэнийг хайж байна?» — зураг дээр хаалганы цаанаас нэг эрэгтэй шагайж байна. Хэн нэгнийг хайж байгаа тул ✓."
+     }
+    ]
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — яриа бүрд тохирох зургийг A, B, C, D-ээс сонго.",
+    "answer_source": "YCT 3 Test Answers L4: 5.B 6.C 7.A 8.D",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "A：他在找什么呢？ B：让我看看。",
+      "question_mn": "— Тэр юу хайж байна вэ? — Надад харуулаач.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "Хайж байгаа хүн — B зураг дээр нэг хүн шүүгээнд толгойгоо хийж, дотор нь юм хайж байна. A охин утсаар ярьж байна, C аав охиноо тэвэрсэн, D хоёр хүн зогсож байна."
+     },
+     {
+      "n": 6,
+      "question_zh": "A：喜欢哪一个？ B：我要那个红色的。",
+      "question_mn": "— Аль нь таалагдаж байна? — Би тэр улаан өнгийхийг авна.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "Сонгож байгаа дүр — C зураг дээр охин ямар нэг юмыг заагаад «тэрийг» гэж байна. Аав нь түүнийг тэвэрч байна. B юм хайж байна, A утсаар ярьж байна."
+     },
+     {
+      "n": 7,
+      "question_zh": "A：喂，请问张老师在吗？ B：他去跑步了。",
+      "question_mn": "— Халло, Жан багш байна уу? — Тэр гүйхээр явсан.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«喂» гэж утсаар ярьж байна — A зураг дээр охин утсаа чихэндээ барьж ярьж байна."
+     },
+     {
+      "n": 8,
+      "question_zh": "A：我可以坐这儿吗？ B：可以，请坐。",
+      "question_mn": "— Энд суувал болох уу? — Болно, суугаарай.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "Суудлын тухай — D зураг дээр нисэх буудлын суудлууд байна: нэг эрэгтэй зогсож, жаахан охин улаан цүнхтэйгээ суудлын дэргэд байна. «Энд суувал болох уу?» гэж суудал асуух дүр тохирно. A охин утсаар ярьж байна, B юм хайж байна, C хаалга заасан."
+     }
+    ]
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's match — үг бүрд тохирох хэллэгийг холбо.",
+    "answer_source": "Let's match х.20 (хариу агент тааруулсан: 喂-您好, 问-问题, 你-找谁)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "喂",
+      "answer": "您好",
+      "explanation_mn": "喂，您好！ — утсаар мэндэлнэ."
+     },
+     {
+      "n": 2,
+      "question_zh": "问",
+      "answer": "问题",
+      "explanation_mn": "问 — асуух, 问题 — асуулт."
+     },
+     {
+      "n": 3,
+      "question_zh": "你",
+      "answer": "找谁",
+      "explanation_mn": "你找谁？ — Чи хэнийг хайж байна?"
+     }
+    ]
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Let's chant — мөр бүрд зөв үгийг холбо.",
+    "answer_source": "Let's chant х.20",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "喂喂喂，你在哪里呀？ — 哎哎哎，我在……",
+      "answer": "我的家",
+      "explanation_mn": "«Чи хаана байна?» гэвэл «Би гэртээ байна»."
+     },
+     {
+      "n": 2,
+      "question_zh": "喂喂喂，你在做什么？ — 哎哎哎，我在……",
+      "answer": "学画画儿",
+      "explanation_mn": "«Чи юу хийж байна?» гэвэл «Би зураг зурж сурч байна»."
+     }
+    ]
+   },
+   {
+    "part": 5,
+    "type": "match",
+    "instruction_mn": "Let's play — хосоороо нуугдсан зургуудыг хай.",
+    "image": "images/play.png",
+    "answer_source": "Let's play х.21",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "你找什么？",
+      "answer": "我找电话。",
+      "explanation_mn": "Зураг дээр утас олон бий. «我找……» гэж хариулаад нуугдсан зургаа заана."
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичиж үз — «问题» гэсэн ханзыг дахин бичиж хуул.",
+    "question_zh": "问题",
+    "answer": "问题",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Утсаар ярьж байгаа дүр үзүүл.",
+    "question_zh": "喂，您好！我找……",
+    "answer": "喂，您好！我找我妈妈。",
+    "explanation_mn": "Хосоороо ээлжлэн."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Багшаасаа эелдгээр асуу.",
+    "question_zh": "我有一个问题，可以问您吗？",
+    "answer": "我有一个问题，可以问您吗？",
+    "explanation_mn": "Багш «可以，什么问题？» гэж хариулна."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "«两个小娃娃» дууг дуул.",
+    "question_zh": "喂喂喂，你在哪里呀？",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 04-03-ын хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 3 · Test Listening Scripts, Test Answers (Lesson 4)"
+}

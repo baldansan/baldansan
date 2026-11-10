@@ -1,0 +1,164 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-3",
+ "lessonId": "yct-3-l11",
+ "hskLevel": 2,
+ "lessonNumber": 11,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "妈妈把糖给弟弟了。",
+ "mongolianTitle": "Ээж чихрийг дүүд өгчихлөө",
+ "series": "YCT 标准教程 3",
+ "seriesLabel_mn": "YCT 3 — Хүүхдийн хятад хэл (≈HSK2)",
+ "source": "YCT 标准教程 3 · 第11课 (сурах бичиг + CD аудио 11-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-3-11-02.mp3",
+  "dialogues": "audio/yct-3-11-02.mp3",
+  "words": "audio/yct-3-11-01.mp3",
+  "story": "audio/yct-3-11-03.mp3",
+  "test": "audio/yct-3-11-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-3-l11",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "妈妈把糖给弟弟了。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你吃什么？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "爸爸，把糖给我吧。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "play",
+    "file": "images/play.jpg",
+    "title": "老虎把花给猴子。",
+    "role": "illustration",
+    "section": "activity"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "野餐 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story-cover",
+    "file": "images/story.jpg",
+    "title": "野餐",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-ba",
+    "file": "images/w-ba.jpg",
+    "title": "把",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tang",
+    "file": "images/w-tang.jpg",
+    "title": "糖",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuiguo",
+    "file": "images/w-shuiguo.jpg",
+    "title": "水果",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xigua",
+    "file": "images/w-xigua.jpg",
+    "title": "西瓜",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jidan",
+    "file": "images/w-jidan.jpg",
+    "title": "鸡蛋",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mianbao",
+    "file": "images/w-mianbao.jpg",
+    "title": "面包",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-guozhi",
+    "file": "images/w-guozhi.jpg",
+    "title": "果汁",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-houzi",
+    "file": "images/w-houzi.jpg",
+    "title": "猴子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L11)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

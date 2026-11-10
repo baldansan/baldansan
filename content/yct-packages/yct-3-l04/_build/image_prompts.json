@@ -1,0 +1,110 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "喂，您好！",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses, a yellow camel calf boy and a camel calf girl each holding a big old red telephone receiver, smiling; a speech bubble with the Chinese text 喂，您好！ in large clear black font, bright classroom. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-wei.jpg",
+  "aspect": "1:1",
+  "title": "喂",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy holding a red old-fashioned telephone receiver to his ear, smiling and waving; a speech bubble with the Chinese text 喂 in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-nin.jpg",
+  "aspect": "1:1",
+  "title": "您",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl in a yellow dress with a pink ribbon bowing politely to the teacher camel with glasses; a speech bubble with the Chinese text 您好 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-zhao.jpg",
+  "aspect": "1:1",
+  "title": "找",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf boy in a green hat holding a magnifying glass, looking under a sofa for his lost toy ball. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-hui.jpg",
+  "aspect": "1:1",
+  "title": "回",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy with a red backpack walking happily home along a path toward a cozy house with a smoking chimney. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-wenti.jpg",
+  "aspect": "1:1",
+  "title": "问题",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl raising her hand in the classroom with a big question mark above her head, teacher camel with glasses smiling at the blackboard. No English text.",
+  "chars": [
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-wen.jpg",
+  "aspect": "1:1",
+  "title": "问",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf boy in a green hat asking the teacher camel a question, hand cupped near his mouth, a small question mark above him. No English text.",
+  "chars": [
+   "bor",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "喂，您好！我找我妈妈。",
+  "section": "dialogue",
+  "prompt": "A camel calf girl in a yellow dress sits on a green sofa talking on a telephone; in a thought bubble a nurse camel in white at a hospital desk answers the phone; speech bubble with the Chinese text 喂，您好！我找我妈妈。 in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "喂，您好！张老师在吗？",
+  "section": "dialogue",
+  "prompt": "A curly-haired camel calf girl in a pink dress phoning on a desk; in a bubble a female teacher camel in an office answers; speech bubble with the Chinese text 喂，您好！张老师在吗？ in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "两个小娃娃",
+  "section": "song",
+  "prompt": "A yellow camel calf boy and a camel calf girl in a red dress talk through two paper cups connected by a long curly string, singing and smiling, happy meadow. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ }
+]

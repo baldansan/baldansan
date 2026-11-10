@@ -1,0 +1,334 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "judge",
+    "instruction_mn": "Сонсох — Аудио (01-04) сонсоод зураг таарч байвал ✓, таарахгүй бол ✗.",
+    "audio": "audio/yct-3-01-04.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）八点了，我去上课了！",
+      "image": "images/t1.png",
+      "script_zh": "八点了，我去上课了！",
+      "answer": "✓",
+      "explanation_mn": "«8 цаг боллоо, би хичээлдээ явлаа!» — зураг дээр хүүхэд 8 цагийн цаг барьж байна → ✓."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）对，这是女的。",
+      "image": "images/t2.png",
+      "script_zh": "对，这是女的。",
+      "answer": "✓",
+      "explanation_mn": "«Тийм, энэ бол эмэгтэй» — зураг дээр эмэгтэйн дүрс (даашинзтай) байна → ✓. 女 = эмэгтэй."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）你看，这是我的新书包！",
+      "image": "images/t3.png",
+      "script_zh": "你看，这是我的新书包！",
+      "answer": "✗",
+      "explanation_mn": "«Хар даа, энэ миний шинэ цүнх!» — зураг дээр нил ягаан цүнх байна, гэхдээ цүнх нь хуучирч элэгдсэн харагдаж байна — «шинэ цүнх» биш → ✗."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）我三年级了，你呢？",
+      "image": "images/t4.png",
+      "script_zh": "我三年级了，你呢？",
+      "answer": "✓",
+      "explanation_mn": "«Би 3-р ангид орлоо, чи?» — зураг дээр хоёр хүүхэд утсан утсаар ярилцаж байна. Ярилцаж ангиа асууж байгаа тул → ✓."
+     }
+    ],
+    "answer_source": "YCT 3 Test Answers L1: 1✓ 2✓ 3✗ 4✓"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — яриа бүрд тохирох зургийг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "A：你们班也有一个张老师吗？ B：是，我们班的张老师是男老师。",
+      "question_mn": "A: Танай ангид бас нэг Жан багш бий юу? B: Тийм, манай ангийн Жан багш эрэгтэй багш.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "Ангийн багш гэж яригдаж байна. C зураг дээр багш самбар дээр бичиж, хүүхдүүд сууж байна. A харандаа, B лууван, D хоёр хүүхэд ширээний ард."
+     },
+     {
+      "n": 6,
+      "question_zh": "A：这两个你都要吗？ B：都要。",
+      "question_mn": "A: Эдгээр хоёрыг чи хоёуланг нь авах уу? B: Хоёуланг нь авна.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«这两个 — эдгээр хоёр» ба «都要 — хоёуланг авна». B зураг дээр эмэгтэй хоёр юм барьж байна (хоёр ногоо). A харандаа, C анги, D хүүхдүүд."
+     },
+     {
+      "n": 7,
+      "question_zh": "A：二年级有汉语课吗？ B：有，二年级、三年级都有。",
+      "question_mn": "A: 2-р ангид хятад хэлний хичээл байдаг уу? B: Байдаг, 2, 3-р ангид бүгдэд бий.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "Яриа ангийн хичээлийн тухай. D зураг дээр хоёр хүүхэд ширээний ард гараа өргөж хичээлд сууж байна. C зураг дээр багш ганцаараа самбар дээр бичиж байгаа тул 5-р асуултад таарна."
+     },
+     {
+      "n": 8,
+      "question_zh": "A：你还有铅笔吗？ B：我还有很多。",
+      "question_mn": "A: Чамд бас харандаа байна уу? B: Надад бас их байна.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t5a.png",
+       "images/t5b.png",
+       "images/t5c.png",
+       "images/t5d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "铅笔 = харандаа. A зураг дээр охин гартаа олон өнгийн харандаа барьж байна. B лууван, C анги, D хүүхдүүд."
+     }
+    ],
+    "answer_source": "YCT 3 Test Answers L1: 5.C 6.B 7.D 8.A"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Warm-up · Let's find — хоосон нүдэнд тохирох ханзыг сонгож үг гарга (上 面 天 学 医 子 不 好).",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "____客气",
+      "answer": "不",
+      "explanation_mn": "不客气 = баярлах хэрэггүй."
+     },
+     {
+      "n": 2,
+      "question_zh": "椅____",
+      "answer": "子",
+      "explanation_mn": "椅子 = сандал."
+     },
+     {
+      "n": 3,
+      "question_zh": "晚____",
+      "answer": "上",
+      "explanation_mn": "晚上 = орой."
+     },
+     {
+      "n": 4,
+      "question_zh": "小____生",
+      "answer": "学",
+      "explanation_mn": "小学生 = бага ангийн сурагч."
+     },
+     {
+      "n": 5,
+      "question_zh": "____院",
+      "answer": "医",
+      "explanation_mn": "医院 = эмнэлэг."
+     },
+     {
+      "n": 6,
+      "question_zh": "里____",
+      "answer": "面",
+      "explanation_mn": "里面 = дотор."
+     },
+     {
+      "n": 7,
+      "question_zh": "____吃",
+      "answer": "好",
+      "explanation_mn": "好吃 = амттай."
+     },
+     {
+      "n": 8,
+      "question_zh": "昨____",
+      "answer": "天",
+      "explanation_mn": "昨天 = өчигдөр."
+     }
+    ],
+    "answer_source": "Warm-up х.2 Let's find (хариу тааруулсан)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Warm-up · Let's arrange — үгсийг зөв дарааллаар тавьж өгүүлбэр болго.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "天气 今天 很 好",
+      "answer": "今天天气很好。",
+      "explanation_mn": "Өнөөдөр цаг агаар сайхан байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "是 绿色 床 的",
+      "answer": "床是绿色的。",
+      "explanation_mn": "Ор нь ногоон."
+     },
+     {
+      "n": 3,
+      "question_zh": "比 好吃 苹果 香蕉",
+      "answer": "苹果比香蕉好吃。",
+      "explanation_mn": "Алим гадил жимсээс амттай."
+     },
+     {
+      "n": 4,
+      "question_zh": "多少 个 包子 钱 一",
+      "answer": "一个包子多少钱？",
+      "explanation_mn": "Нэг бууз хэдэн төгрөг вэ?"
+     },
+     {
+      "n": 5,
+      "question_zh": "可以 这儿 我 坐 吗",
+      "answer": "我可以坐这儿吗？",
+      "explanation_mn": "Би энд суухад болох уу?"
+     },
+     {
+      "n": 6,
+      "question_zh": "小狗 家 有 你 没有",
+      "answer": "你家有小狗没有？",
+      "explanation_mn": "Танай гэрт гөлөг байна уу?"
+     },
+     {
+      "n": 7,
+      "question_zh": "熊猫 弟弟 只 画 了 一",
+      "answer": "弟弟画了一只熊猫。",
+      "explanation_mn": "Дүү нэг панда зурлаа."
+     },
+     {
+      "n": 8,
+      "question_zh": "学校 姐姐 没有 去 昨天",
+      "answer": "姐姐昨天没有去学校。",
+      "explanation_mn": "Эгч өчигдөр сургуульд яваагүй."
+     },
+     {
+      "n": 9,
+      "question_zh": "书包 的 你 不 桌子 上 在",
+      "answer": "你的书包不在桌子上。",
+      "explanation_mn": "Чиний цүнх ширээн дээр байхгүй."
+     },
+     {
+      "n": 10,
+      "question_zh": "去 爸爸 一个 月 北京 了",
+      "answer": "爸爸去北京一个月了。",
+      "explanation_mn": "Аав Бээжинд очоод нэг сар болж байна."
+     }
+    ],
+    "answer_source": "Warm-up х.2 Let's arrange (хариу зохиосон; номд хариу байхгүй)"
+   },
+   {
+    "part": 5,
+    "type": "match",
+    "instruction_mn": "Warm-up · Let's listen — аудио (00-01) сонсоод 12 зургийг сонссон дарааллаар нь 1–12 гэж дугаарла.",
+    "audio": "audio/yct-3-00-01.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）зургуудыг дугаарла",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Номд скрипт, хариу байхгүй — аудиог дахин сонсож өөрөө шалга."
+     }
+    ],
+    "answer_source": "Warm-up х.1 Let's listen (аудио 00-01, скрипт алга)"
+   },
+   {
+    "part": 6,
+    "type": "match",
+    "instruction_mn": "Let's draw / Let's DIY — ангийнхаа зургийг зур, ширээний шошгоо хий.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "这是我们班。他是男老师。",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Ангийнхаа найз нар, багш нарыг зураад «男» эсвэл «女» гэж хэл."
+     },
+     {
+      "n": 2,
+      "question_zh": "名字 · 年级",
+      "answer": "(нээлттэй)",
+      "explanation_mn": "Ширээний шошго дээр нэр, анги, хүйсээ ханзаар бич."
+     }
+    ],
+    "answer_source": "Let's draw / Let's DIY х.5"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичиж үз — «年级» гэсэн ханзыг дахин бичиж хуул.",
+    "question_zh": "年级",
+    "answer": "年级",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Бичиж үз — «新老师» гэж хуул.",
+    "question_zh": "新老师",
+    "answer": "新老师",
+    "explanation_mn": "3 ханзыг ээлжлэн бич."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа ангийг нь асуу.",
+    "question_zh": "你几年级？",
+    "answer": "我……年级。",
+    "explanation_mn": "Хосоороо ээлжлэн."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Ангийнхаа багш нарыг танилцуул.",
+    "question_zh": "我们班有……个老师。",
+    "answer": "我们班有两个老师。",
+    "explanation_mn": "Хэдэн багш байгааг хэл."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "Chant-ыг дуул.",
+    "question_zh": "一年级、二年级……",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 01-03-ын хамт дуул."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 3 · Test Listening Scripts, Test Answers (Lesson 1)"
+}

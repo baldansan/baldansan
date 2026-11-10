@@ -1,0 +1,158 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-3",
+ "lessonId": "yct-3-l10",
+ "hskLevel": 2,
+ "lessonNumber": 10,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "谁跑得快？",
+ "mongolianTitle": "Хэн хурдан гүйдэг вэ?",
+ "series": "YCT 标准教程 3",
+ "seriesLabel_mn": "YCT 3 — Хүүхдийн хятад хэл (≈HSK2)",
+ "source": "YCT 标准教程 3 · 第10课 (сурах бичиг + CD аудио 10-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-3-10-text-song.mp3",
+  "dialogues": "audio/yct-3-10-02.mp3",
+  "words": "audio/yct-3-10-01.mp3",
+  "song": "audio/yct-3-10-03.mp3",
+  "story": "audio/yct-3-10-04.mp3",
+  "test": "audio/yct-3-10-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-3-l10",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "谁跑得快？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "这些老虎谁跑得快？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "那只瘦老虎是第一吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "两只老虎",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "谁跑得最快？ · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-laohu",
+    "file": "images/w-laohu.jpg",
+    "title": "老虎",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-diyi",
+    "file": "images/w-diyi.jpg",
+    "title": "第一",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-pang",
+    "file": "images/w-pang.jpg",
+    "title": "胖",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shou",
+    "file": "images/w-shou.jpg",
+    "title": "瘦",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xie",
+    "file": "images/w-xie.jpg",
+    "title": "些",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-de",
+    "file": "images/w-de.jpg",
+    "title": "得",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kuai",
+    "file": "images/w-kuai.jpg",
+    "title": "快",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhidao",
+    "file": "images/w-zhidao.jpg",
+    "title": "知道",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2d",
+    "file": "images/t2d.png",
+    "title": "Test 2d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L10)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "老虎",
+  "pinyin": "lǎohǔ",
+  "mongolian": "бар",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "老虎跑得快。",
+  "examplePinyin": "Lǎohǔ pǎo de kuài.",
+  "exampleMongolian": "Бар хурдан гүйдэг.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "第一",
+  "pinyin": "dì yī",
+  "mongolian": "нэгдүгээр, тэргүүн",
+  "notes": "тоо · гол үг",
+  "exampleChinese": "胖的第一。",
+  "examplePinyin": "Pàngde dì yī.",
+  "exampleMongolian": "Тарган нь нэгдүгээр.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "胖",
+  "pinyin": "pàng",
+  "mongolian": "тарган",
+  "notes": "тэмдэг нэр · нэмэлт үг",
+  "exampleChinese": "这只老虎很胖。",
+  "examplePinyin": "Zhè zhī lǎohǔ hěn pàng.",
+  "exampleMongolian": "Энэ бар тарган байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "瘦",
+  "pinyin": "shòu",
+  "mongolian": "туранхай",
+  "notes": "тэмдэг нэр · нэмэлт үг",
+  "exampleChinese": "那只老虎很瘦。",
+  "examplePinyin": "Nà zhī lǎohǔ hěn shòu.",
+  "exampleMongolian": "Тэр бар туранхай байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "些",
+  "pinyin": "xiē",
+  "mongolian": "хэдэн, зарим",
+  "notes": "хэмжигдэхүүн · гол үг",
+  "exampleChinese": "这些老虎谁跑得快？",
+  "examplePinyin": "Zhèxiē lǎohǔ shéi pǎo de kuài?",
+  "exampleMongolian": "Эдгээр бар дотроос хэн хурдан гүйх вэ?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "得",
+  "pinyin": "de",
+  "mongolian": "(хэрхэн хийдгийг холбодог үг)",
+  "notes": "туслах үг · гол үг",
+  "exampleChinese": "他吃得很多。",
+  "examplePinyin": "Tā chī de hěn duō.",
+  "exampleMongolian": "Тэр маш их иддэг.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "快",
+  "pinyin": "kuài",
+  "mongolian": "хурдан",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "你跑得快吗？",
+  "examplePinyin": "Nǐ pǎo de kuài ma?",
+  "exampleMongolian": "Чи хурдан гүйдэг үү?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "知道",
+  "pinyin": "zhīdào",
+  "mongolian": "мэдэх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我不知道。",
+  "examplePinyin": "Wǒ bù zhīdào.",
+  "exampleMongolian": "Би мэдэхгүй.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 8
+ }
+]

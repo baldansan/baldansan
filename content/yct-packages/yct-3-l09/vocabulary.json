@@ -1,0 +1,62 @@
+[
+ {
+  "chinese": "哭",
+  "pinyin": "kū",
+  "mongolian": "уйлах",
+  "notes": "үйлдэл заасан үг · гол үг",
+  "exampleChinese": "你怎么哭了？",
+  "examplePinyin": "Nǐ zěnme kū le?",
+  "exampleMongolian": "Чи яагаад уйлаад байгаа юм бэ?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "笑",
+  "pinyin": "xiào",
+  "mongolian": "инээх, инээмсэглэх",
+  "notes": "үйлдэл заасан үг · гол үг",
+  "exampleChinese": "笑一笑！",
+  "examplePinyin": "Xiào yi xiào!",
+  "exampleMongolian": "Инээмсэглээрэй!",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "东西",
+  "pinyin": "dōngxi",
+  "mongolian": "юм, эд зүйл",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我的东西丢了。",
+  "examplePinyin": "Wǒ de dōngxi diū le.",
+  "exampleMongolian": "Миний юм алга болсон.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "丢",
+  "pinyin": "diū",
+  "mongolian": "гээх, алдах",
+  "notes": "үйлдэл заасан үг · гол үг",
+  "exampleChinese": "我的熊猫丢了。",
+  "examplePinyin": "Wǒ de xiōngmāo diū le.",
+  "exampleMongolian": "Миний панда алга болчихлоо.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "到",
+  "pinyin": "dào",
+  "mongolian": "хайх, харах зэрэг үгийн ард орж «амжилттай болсон» гэдгийг заана",
+  "notes": "үйлдлийн дараа орно · гол үг",
+  "exampleChinese": "找到了！",
+  "examplePinyin": "Zhǎodào le!",
+  "exampleMongolian": "Олдлоо!",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ }
+]

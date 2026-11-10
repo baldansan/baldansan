@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Бар» хятадаар аль нь вэ?",
+  "options": [
+   "老虎",
+   "妈妈",
+   "医生",
+   "包子"
+  ],
+  "correct_answer": "老虎",
+  "explanation": "老虎 (lǎohǔ) = бар.",
+  "order_index": 1,
+  "id": "yct-3-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тарган» хятадаар аль нь вэ?",
+  "options": [
+   "瘦",
+   "快",
+   "第一",
+   "胖"
+  ],
+  "correct_answer": "胖",
+  "explanation": "胖 (pàng) = тарган.",
+  "order_index": 2,
+  "id": "yct-3-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Туранхай» хятадаар аль нь вэ?",
+  "options": [
+   "老虎",
+   "胖",
+   "快",
+   "瘦"
+  ],
+  "correct_answer": "瘦",
+  "explanation": "瘦 (shòu) = туранхай.",
+  "order_index": 3,
+  "id": "yct-3-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«快» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "бар",
+   "хурдан",
+   "мэдэх",
+   "тарган"
+  ],
+  "correct_answer": "хурдан",
+  "explanation": "快 (kuài) = хурдан.",
+  "order_index": 4,
+  "id": "yct-3-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«知道» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "мэдэх",
+   "туранхай",
+   "хурдан",
+   "нэгдүгээр"
+  ],
+  "correct_answer": "мэдэх",
+  "explanation": "知道 (zhīdào) = мэдэх.",
+  "order_index": 5,
+  "id": "yct-3-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«第一» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хамгийн",
+   "нэгдүгээр",
+   "хурдан",
+   "гуравдугаар"
+  ],
+  "correct_answer": "нэгдүгээр",
+  "explanation": "第一 (dì yī) = нэгдүгээр.",
+  "order_index": 6,
+  "id": "yct-3-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«这些» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хэн",
+   "эдгээр",
+   "тэр",
+   "энэ нэг"
+  ],
+  "correct_answer": "эдгээр",
+  "explanation": "这些 (zhèxiē) = эдгээр.",
+  "order_index": 7,
+  "id": "yct-3-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«最» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хамгийн",
+   "нэгдүгээр",
+   "мэдэх",
+   "гэвч"
+  ],
+  "correct_answer": "хамгийн",
+  "explanation": "最 (zuì) = хамгийн.",
+  "order_index": 8,
+  "id": "yct-3-l10-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Хэн хурдан гүйдэг вэ?» хятадаар:",
+  "options": [
+   "谁跑得快？",
+   "你知道吗？",
+   "老虎很胖。",
+   "谁是医生？"
+  ],
+  "correct_answer": "谁跑得快？",
+  "explanation": "跑得快 = хурдан гүйдэг.",
+  "order_index": 9,
+  "id": "yct-3-l10-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тарган нь нэгдүгээр» хятадаар:",
+  "options": [
+   "老虎第一。",
+   "瘦的第一。",
+   "胖的第一。",
+   "胖的第三。"
+  ],
+  "correct_answer": "胖的第一。",
+  "explanation": "胖的 = тарган нь, 第一 = нэгдүгээр.",
+  "order_index": 10,
+  "id": "yct-3-l10-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Арслан «瘦的第三，胖的第一» гэвэл юу гэсэн үг вэ?",
+  "options": [
+   "Хоёулаа тарган",
+   "Туранхай нь нэгдүгээр",
+   "Бүгд хурдан",
+   "Туранхай нь гуравдугаар, тарган нь нэгдүгээр"
+  ],
+  "correct_answer": "Туранхай нь гуравдугаар, тарган нь нэгдүгээр",
+  "explanation": "瘦的第三，胖的第一.",
+  "order_index": 11,
+  "id": "yct-3-l10-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т хамгийн хурдан гүйсэн бар ямар байсан бэ?",
+  "options": [
+   "Хамгийн өндөр",
+   "Хамгийн жижиг",
+   "Хамгийн туранхай",
+   "Хамгийн тарган"
+  ],
+  "correct_answer": "Хамгийн тарган",
+  "explanation": "那只老虎最胖，但是跑得最快。",
+  "order_index": 12,
+  "id": "yct-3-l10-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "谁跑（ ）快？",
+  "options": [
+   "了",
+   "的",
+   "吗",
+   "得"
+  ],
+  "correct_answer": "得",
+  "explanation": "跑得快 — 得 заавал орно.",
+  "order_index": 13,
+  "id": "yct-3-l10-q13",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "胖（ ）第一。",
+  "options": [
+   "的",
+   "最",
+   "得",
+   "吗"
+  ],
+  "correct_answer": "的",
+  "explanation": "胖的 = тарган нь.",
+  "order_index": 14,
+  "id": "yct-3-l10-q14",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "那只老虎（ ）胖。",
+  "options": [
+   "得",
+   "最",
+   "吗",
+   "的"
+  ],
+  "correct_answer": "最",
+  "explanation": "最胖 = хамгийн тарган.",
+  "order_index": 15,
+  "id": "yct-3-l10-q15",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他很瘦，（ ）跑得很快。",
+  "options": [
+   "第一",
+   "但是",
+   "老虎",
+   "知道"
+  ],
+  "correct_answer": "但是",
+  "explanation": "但是 = гэвч.",
+  "order_index": 16,
+  "id": "yct-3-l10-q16",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«不知道» гэж хэлвэл юу гэсэн үг вэ?",
+  "options": [
+   "Хурдан",
+   "Нэгдүгээр",
+   "Мэдэхгүй",
+   "Тарган"
+  ],
+  "correct_answer": "Мэдэхгүй",
+  "explanation": "不知道 = мэдэхгүй.",
+  "order_index": 17,
+  "id": "yct-3-l10-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«最快» гэж хэлвэл:",
+  "options": [
+   "нэгдүгээр",
+   "туранхай",
+   "хамгийн тарган",
+   "хамгийн хурдан"
+  ],
+  "correct_answer": "хамгийн хурдан",
+  "explanation": "最快 = хамгийн хурдан.",
+  "order_index": 18,
+  "id": "yct-3-l10-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«飞机飞得最快» гэвэл юу гэсэн үг вэ?",
+  "options": [
+   "Онгоц мэдэхгүй",
+   "Онгоц хамгийн хурдан нисдэг",
+   "Онгоц нэгдүгээр байсангүй",
+   "Онгоц тарган"
+  ],
+  "correct_answer": "Онгоц хамгийн хурдан нисдэг",
+  "explanation": "飞机 = онгоц.",
+  "order_index": 19,
+  "id": "yct-3-l10-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Мэдэхгүй» гэж хэлэхдээ:",
+  "options": [
+   "我很胖。",
+   "我跑得快。",
+   "我是第一。",
+   "我不知道。"
+  ],
+  "correct_answer": "我不知道。",
+  "explanation": "不知道 = мэдэхгүй.",
+  "order_index": 20,
+  "id": "yct-3-l10-q20",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «lǎohǔ» гэж уншдаг үг:",
+  "options": [
+   "老虎",
+   "胖",
+   "知道",
+   "第一"
+  ],
+  "correct_answer": "老虎",
+  "explanation": "老虎 = lǎohǔ = бар.",
+  "order_index": 21,
+  "id": "yct-3-l10-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «kuài» гэж уншдаг үг:",
+  "options": [
+   "瘦",
+   "些",
+   "胖",
+   "快"
+  ],
+  "correct_answer": "快",
+  "explanation": "快 = kuài = хурдан.",
+  "order_index": 22,
+  "id": "yct-3-l10-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhīdào» гэж уншдаг үг:",
+  "options": [
+   "这些",
+   "知道",
+   "第一",
+   "老虎"
+  ],
+  "correct_answer": "知道",
+  "explanation": "知道 = zhīdào = мэдэх.",
+  "order_index": 23,
+  "id": "yct-3-l10-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Гүйлтийн дараа «хэн хурдан байсан бэ?» гэж асуух:",
+  "options": [
+   "胖的第一。",
+   "你是医生。",
+   "我不知道。",
+   "谁跑得快？"
+  ],
+  "correct_answer": "谁跑得快？",
+  "explanation": "Хэн хурдан гэж асуухдаа 谁跑得快.",
+  "order_index": 24,
+  "id": "yct-3-l10-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Тарган бар нэгдүгээрт орсныг сонсоод туулай «Үнэн үү?» гэж асуувал:",
+  "options": [
+   "胖的第一。",
+   "我不知道。",
+   "真的吗？",
+   "瘦的第三。"
+  ],
+  "correct_answer": "真的吗？",
+  "explanation": "真的吗 = үнэн үү.",
+  "order_index": 25,
+  "id": "yct-3-l10-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Сан Ху «我也穿了运动鞋» гэвэл тэр юу хэлэв?",
+  "options": [
+   "Би тарган",
+   "Би мэдэхгүй",
+   "Би ч гэсэн спортын гутал өмссөн",
+   "Би нэгдүгээр"
+  ],
+  "correct_answer": "Би ч гэсэн спортын гутал өмссөн",
+  "explanation": "也 = ч гэсэн, 运动鞋 = спортын гутал.",
+  "order_index": 26,
+  "id": "yct-3-l10-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Mini story-д Эр Ху яагаад нэгдүгээр гэж бодсон бэ?",
+  "options": [
+   "Тэр мэддэг тул",
+   "Гутал дээр нь онгоц байгаа тул",
+   "Тэр хамгийн туранхай тул",
+   "Тэр хамгийн жижиг тул"
+  ],
+  "correct_answer": "Гутал дээр нь онгоц байгаа тул",
+  "explanation": "我的鞋上有“飞机” — онгоц хамгийн хурдан!",
+  "order_index": 27,
+  "id": "yct-3-l10-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

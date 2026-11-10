@@ -1,0 +1,315 @@
+[
+ {
+  "point": "什么东西丢了？ — юм алга болсон",
+  "gloss_mn": "«Ямар юм алга болсон бэ?» — алдсан юмаа хэлэх",
+  "structure": "什么东西丢了？ → 我的……丢了。",
+  "teacher_mn": "Найз чинь юмаа алдвал «什么东西丢了？» гэж асууна. 东西 = юм. 丢了 = алга болсон. Хариулахдаа «我的熊猫丢了» гэж өөрийн юмаа хэлнэ. Бүх юмаа нэрлэж үз!",
+  "teacher_notes": "Номын яриа: 什么东西丢了？ 我的熊猫丢了。",
+  "examples": [
+   {
+    "chinese": "什么东西丢了？",
+    "pinyin": "Shénme dōngxi diū le?",
+    "mongolian": "Ямар юм алга болсон бэ?"
+   },
+   {
+    "chinese": "我的东西丢了。",
+    "pinyin": "Wǒ de dōngxi diū le.",
+    "mongolian": "Миний юм алга болсон."
+   },
+   {
+    "chinese": "我的熊猫丢了。",
+    "pinyin": "Wǒ de xiōngmāo diū le.",
+    "mongolian": "Миний панда алга болчихлоо."
+   },
+   {
+    "chinese": "我弟弟丢了。",
+    "pinyin": "Wǒ dìdi diū le.",
+    "mongolian": "Миний дүү алга болчихлоо."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "丢我的熊猫了。",
+    "right": "我的熊猫丢了。",
+    "why": "Эхлээд юмаа, дараа нь 丢了."
+   }
+  ],
+  "check": {
+   "question": "«Ямар юм алга болсон бэ?» хятадаар:",
+   "options": [
+    "笑一笑！",
+    "你怎么哭了？",
+    "什么东西丢了？"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "什么 ________ 丢了？",
+    "options": [
+     "弟弟",
+     "熊猫",
+     "东西"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 东西 = юм.",
+    "explanation_wrong_mn": "«Ямар юм» гэхдээ 什么东西."
+   },
+   {
+    "type": "choice",
+    "question": "«Миний юм алга болсон» хятадаар:",
+    "options": [
+     "我的东西找到了。",
+     "我的东西丢了。",
+     "你的东西丢了。"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "丢了 = алга болсон, 我的 = миний."
+   },
+   {
+    "type": "judge",
+    "question": "«丢» гэдэг нь «алдах, гээх» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 丢 = гээх, алдах.",
+    "explanation_wrong_mn": "丢 = гээх, алдах."
+   }
+  ]
+ },
+ {
+  "point": "你怎么哭了？ — яагаад … байна",
+  "gloss_mn": "«Чи яагаад уйлав?» — найзаасаа шалтгааныг нь асуух",
+  "structure": "你怎么 + юу болсон + 了？",
+  "teacher_mn": "Найз чинь гэнэт уйлбал «яасан бэ?» гэж асууна. Хятадаар «你怎么哭了？» гэнэ. 怎么 = яагаад. Хариулахдаа шалтгаанаа хэлнэ: «我的东西丢了». Гунигтай царай гаргаад хосоороо тоглож үз!",
+  "teacher_notes": "Номын яриа: 你怎么哭了？ Mini story: 熊猫，你怎么哭了？",
+  "examples": [
+   {
+    "chinese": "你怎么哭了？",
+    "pinyin": "Nǐ zěnme kū le?",
+    "mongolian": "Чи яагаад уйлаад байгаа юм бэ?"
+   },
+   {
+    "chinese": "熊猫，你怎么哭了？",
+    "pinyin": "Xióngmāo, nǐ zěnme kū le?",
+    "mongolian": "Панда аа, чи яагаад уйлаад байгаа юм бэ?"
+   },
+   {
+    "chinese": "我弟弟丢了。",
+    "pinyin": "Wǒ dìdi diū le.",
+    "mongolian": "Миний дүү алга болчихлоо."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "你哭怎么了？",
+    "right": "你怎么哭了？",
+    "why": "怎么 нь 哭-ийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "Уйлж буй найзаасаа «Яагаад уйлав?» гэж асуу:",
+   "options": [
+    "你怎么哭了？",
+    "别哭。",
+    "找到了！"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你 ________ 哭了？",
+    "options": [
+     "什么",
+     "怎么",
+     "别"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 怎么 = яагаад.",
+    "explanation_wrong_mn": "«Яагаад» гэж асуухдаа 怎么."
+   },
+   {
+    "type": "choice",
+    "question": "«Яагаад уйлав?» гэж асуухад хариулах нь:",
+    "options": [
+     "太好了！",
+     "笑一笑！",
+     "我的东西丢了。"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "Уйлсан шалтгаанаа хэлнэ."
+   },
+   {
+    "type": "judge",
+    "question": "«哭» гэдэг нь «уйлах» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 哭 = уйлах.",
+    "explanation_wrong_mn": "哭 = уйлах, 笑 = инээх."
+   }
+  ]
+ },
+ {
+  "point": "别哭 · 找一找 · 笑一笑",
+  "gloss_mn": "«Бүү уйл», «хайж үзье», «инээмсэглээрэй»",
+  "structure": "别 + юу хийх · 找一找 · 笑一笑",
+  "teacher_mn": "Найзаа тайвшруулахдаа «别哭» гэнэ. 别 = бүү. Хамт хайя гэвэл «找一找» гэнэ — нэг үгээ хоёр хэлж, дундуур нь 一 хийнэ. Зураг авахдаа «笑一笑！» гэж хэлээрэй. Гараа тавиад тайвшруулах дүр үзүүл!",
+  "teacher_notes": "Номын яриа: 别哭，我们一起找一找。 太好了！找到了，笑一笑吧！",
+  "examples": [
+   {
+    "chinese": "别哭，我们一起找一找。",
+    "pinyin": "Bié kū, wǒmen yìqǐ zhǎo yi zhǎo.",
+    "mongolian": "Бүү уйл, бид хамт хайж үзье."
+   },
+   {
+    "chinese": "笑一笑！",
+    "pinyin": "Xiào yi xiào!",
+    "mongolian": "Инээмсэглээрэй!"
+   },
+   {
+    "chinese": "别着急，我帮你找一找。",
+    "pinyin": "Bié zháojí, wǒ bāng nǐ zhǎo yi zhǎo.",
+    "mongolian": "Санаа битгий зов, би чамд туслаж хайя."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "哭别。",
+    "right": "别哭。",
+    "why": "别 нь хийх зүйлийнхээ өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Бүү уйл» хятадаар:",
+   "options": [
+    "笑一笑",
+    "找到了",
+    "别哭"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "________ 哭，我们一起找一找。",
+    "options": [
+     "会",
+     "要",
+     "别"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 别 = бүү.",
+    "explanation_wrong_mn": "«Бүү, битгий» — 别."
+   },
+   {
+    "type": "choice",
+    "question": "«Хайж үзье» хятадаар:",
+    "options": [
+     "笑一笑",
+     "哭一哭",
+     "找一找"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "找 = хайх, 找一找 = хайж үзэх."
+   },
+   {
+    "type": "judge",
+    "question": "«笑一笑» гэж зураг авахдаа хэлж болно.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! «Инээмсэглээрэй!»",
+    "explanation_wrong_mn": "笑一笑 = инээмсэглээрэй."
+   }
+  ]
+ },
+ {
+  "point": "找到了 — олдлоо",
+  "gloss_mn": "«Олдлоо!» — үйлдэл амжилттай болсныг хэлэх",
+  "structure": "找 + 到 + 了 → 找到了，看到了",
+  "teacher_mn": "Юмаа хайгаад олбол «找到了！» гэж хашгирна. 找 = хайх. 到 нь ард нь орж «олдсон» гэсэн амжилтыг заана. Олохгүй бол «找不到» гэнэ. Нэг юмаа нуугаад олоод үз!",
+  "teacher_notes": "Chant: 东西丢了找不到 … 找到了，找到了。 Mini story: 我的弟弟找到了！",
+  "examples": [
+   {
+    "chinese": "找到了！",
+    "pinyin": "Zhǎodào le!",
+    "mongolian": "Олдлоо!"
+   },
+   {
+    "chinese": "我的弟弟找到了！",
+    "pinyin": "Wǒ de dìdi zhǎodào le!",
+    "mongolian": "Миний дүү олдлоо!"
+   },
+   {
+    "chinese": "东西丢了找不到。",
+    "pinyin": "Dōngxi diū le zhǎo bu dào.",
+    "mongolian": "Юм алга болоод олдохгүй байна."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "到找了！",
+    "right": "找到了！",
+    "why": "到 нь 找-ын ард орно."
+   }
+  ],
+  "check": {
+   "question": "«Олдлоо!» хятадаар:",
+   "options": [
+    "找到了！",
+    "哭了。",
+    "丢了。"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "我的熊猫找 ________ 了！",
+    "options": [
+     "别",
+     "到",
+     "哭"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 找到 = олох.",
+    "explanation_wrong_mn": "Олсныг 找到 гэнэ."
+   },
+   {
+    "type": "choice",
+    "question": "«Олдохгүй байна» хятадаар:",
+    "options": [
+     "找不到",
+     "找到了",
+     "别哭"
+    ],
+    "answer": "0",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "不到 = олдохгүй."
+   },
+   {
+    "type": "judge",
+    "question": "«找到了» гэдэг нь «алга болсон» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "false",
+    "explanation_correct_mn": "Зөв! 找到了 = олдлоо.",
+    "explanation_wrong_mn": "找到了 = олдлоо, 丢了 = алга болсон."
+   }
+  ]
+ }
+]

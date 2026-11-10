@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Уйлах» хятадаар аль нь вэ?",
+  "options": [
+   "哭",
+   "看",
+   "笑",
+   "吃"
+  ],
+  "correct_answer": "哭",
+  "explanation": "哭 (kū) = уйлах.",
+  "order_index": 1,
+  "id": "yct-3-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Инээх, инээмсэглэх» хятадаар аль нь вэ?",
+  "options": [
+   "哭",
+   "丢",
+   "去",
+   "笑"
+  ],
+  "correct_answer": "笑",
+  "explanation": "笑 (xiào) = инээх.",
+  "order_index": 2,
+  "id": "yct-3-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Юм, эд зүйл» хятадаар аль нь вэ?",
+  "options": [
+   "老师",
+   "熊猫",
+   "弟弟",
+   "东西"
+  ],
+  "correct_answer": "东西",
+  "explanation": "东西 (dōngxi) = юм, эд зүйл.",
+  "order_index": 3,
+  "id": "yct-3-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Гээх, алдах» хятадаар аль нь вэ?",
+  "options": [
+   "去",
+   "丢",
+   "看",
+   "吃"
+  ],
+  "correct_answer": "丢",
+  "explanation": "丢 (diū) = гээх, алдах.",
+  "order_index": 4,
+  "id": "yct-3-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«找到了» доторх 到 нь юу заадаг вэ?",
+  "options": [
+   "Үйлдэл амжилттай болсныг",
+   "Тоог",
+   "Хүний нэрийг",
+   "Асуултыг"
+  ],
+  "correct_answer": "Үйлдэл амжилттай болсныг",
+  "explanation": "找到 = хайгаад олох. 到 нь амжилттай болсныг заана.",
+  "order_index": 5,
+  "id": "yct-3-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«哭»-ийн эсрэг утгатай үг аль нь вэ?",
+  "options": [
+   "大",
+   "笑",
+   "小",
+   "丢"
+  ],
+  "correct_answer": "笑",
+  "explanation": "哭 (уйлах) — 笑 (инээх).",
+  "order_index": 6,
+  "id": "yct-3-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«东西丢了»-ийн эсрэг утгатай хэллэг аль нь вэ?",
+  "options": [
+   "你好",
+   "东西找到了",
+   "东西大了",
+   "我哭了"
+  ],
+  "correct_answer": "东西找到了",
+  "explanation": "东西丢了 (алга болсон) — 东西找到了 (олдсон).",
+  "order_index": 7,
+  "id": "yct-3-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи яагаад уйлаад байгаа юм бэ?» хятадаар:",
+  "options": [
+   "你怎么哭了？",
+   "我的东西丢了。",
+   "笑一笑！",
+   "什么东西丢了？"
+  ],
+  "correct_answer": "你怎么哭了？",
+  "explanation": "怎么 = яагаад.",
+  "order_index": 8,
+  "id": "yct-3-l09-q08",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ямар юм алга болсон бэ?» хятадаар:",
+  "options": [
+   "什么东西丢了？",
+   "别哭。",
+   "找到了！",
+   "你怎么哭了？"
+  ],
+  "correct_answer": "什么东西丢了？",
+  "explanation": "什么东西 = ямар юм.",
+  "order_index": 9,
+  "id": "yct-3-l09-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д хүү яагаад уйлсан бэ?",
+  "options": [
+   "Түүний дүү инээсэн",
+   "Түүний багш ирээгүй",
+   "Түүний панда алга болсон",
+   "Түүнд хоол байхгүй"
+  ],
+  "correct_answer": "Түүний панда алга болсон",
+  "explanation": "我的熊猫丢了 — миний панда алга болсон.",
+  "order_index": 10,
+  "id": "yct-3-l09-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Охин «别哭，我们一起找一找» гэвэл юу гэсэн үг вэ?",
+  "options": [
+   "Би чамд панда өгье",
+   "Би гэртээ харилаа",
+   "Чи ирээрэй",
+   "Бүү уйл, бид хамт хайж үзье"
+  ],
+  "correct_answer": "Бүү уйл, бид хамт хайж үзье",
+  "explanation": "别哭 = бүү уйл, 找一找 = хайж үзэх.",
+  "order_index": 11,
+  "id": "yct-3-l09-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хүү «看，我的熊猫在那儿！» гэвэл юу гэсэн үг вэ?",
+  "options": [
+   "Панда уйлж байна",
+   "Би панда хайхгүй",
+   "Миний панда алга боллоо",
+   "Хар даа, миний панда тэнд байна"
+  ],
+  "correct_answer": "Хар даа, миний панда тэнд байна",
+  "explanation": "那儿 = тэнд.",
+  "order_index": 12,
+  "id": "yct-3-l09-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你怎么（ ）了？",
+  "options": [
+   "熊猫",
+   "东西",
+   "那儿",
+   "哭"
+  ],
+  "correct_answer": "哭",
+  "explanation": "你怎么哭了？ = Чи яагаад уйлав?",
+  "order_index": 13,
+  "id": "yct-3-l09-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的东西（ ）了。",
+  "options": [
+   "丢",
+   "笑",
+   "哭",
+   "去"
+  ],
+  "correct_answer": "丢",
+  "explanation": "东西丢了 = юм алга болсон.",
+  "order_index": 14,
+  "id": "yct-3-l09-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "找（ ）了！",
+  "options": [
+   "哭",
+   "到",
+   "吗",
+   "笑"
+  ],
+  "correct_answer": "到",
+  "explanation": "找到了 = олдлоо.",
+  "order_index": 15,
+  "id": "yct-3-l09-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）哭，我们一起找一找。",
+  "options": [
+   "不",
+   "别",
+   "是",
+   "没"
+  ],
+  "correct_answer": "别",
+  "explanation": "别哭 = бүү уйл.",
+  "order_index": 16,
+  "id": "yct-3-l09-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Mini story-д панда «我弟弟丢了» гэвэл юу гэсэн үг вэ?",
+  "options": [
+   "Миний дүү инээж байна",
+   "Миний дүү сургуульд явсан",
+   "Миний дүү алга болчихлоо",
+   "Миний дүү ногоон"
+  ],
+  "correct_answer": "Миний дүү алга болчихлоо",
+  "explanation": "弟弟丢了 = дүү алга болсон.",
+  "order_index": 17,
+  "id": "yct-3-l09-q17",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Панда «我弟弟不是绿色的» гэж яагаад хэлсэн бэ?",
+  "options": [
+   "Дүү нь ногоонд дуртай",
+   "Дүү нь сургуульд байсан",
+   "Дүү нь ногоон малгай өмссөн",
+   "Тэр ногоон зүйл түүний дүү биш байсан"
+  ],
+  "correct_answer": "Тэр ногоон зүйл түүний дүү биш байсан",
+  "explanation": "Панда ногоон боодлыг дүү биш гэж хэлсэн.",
+  "order_index": 18,
+  "id": "yct-3-l09-q18",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Үлгэрийн төгсгөлд юу болсон бэ?",
+  "options": [
+   "Панда сургуульд явсан",
+   "Дүү олдсон",
+   "Бороо зогссон",
+   "Бар алга болсон"
+  ],
+  "correct_answer": "Дүү олдсон",
+  "explanation": "我的弟弟找到了！ = Дүү маань олдлоо!",
+  "order_index": 19,
+  "id": "yct-3-l09-q19",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Chant-д бяцхан панда хаашаа явсан бэ?",
+  "options": [
+   "Зах руу",
+   "Цэцэрлэг рүү",
+   "Гэр рүү",
+   "Сургууль руу"
+  ],
+  "correct_answer": "Сургууль руу",
+  "explanation": "小熊猫，去学校 = Бяцхан панда сургууль руу явна.",
+  "order_index": 20,
+  "id": "yct-3-l09-q20",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Chant-д ямар юм алга болсон бэ?",
+  "options": [
+   "Ном, харандаа",
+   "Гутал, малгай",
+   "Алим, талх",
+   "Нохой, муур"
+  ],
+  "correct_answer": "Ном, харандаа",
+  "explanation": "书和铅笔都丢了。",
+  "order_index": 21,
+  "id": "yct-3-l09-q21",
+  "skillTags": [
+   "story"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «kū» гэж уншдаг үг:",
+  "options": [
+   "笑",
+   "到",
+   "丢",
+   "哭"
+  ],
+  "correct_answer": "哭",
+  "explanation": "哭 = kū = уйлах.",
+  "order_index": 22,
+  "id": "yct-3-l09-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xiào» гэж уншдаг үг:",
+  "options": [
+   "丢",
+   "笑",
+   "哭",
+   "东西"
+  ],
+  "correct_answer": "笑",
+  "explanation": "笑 = xiào = инээх.",
+  "order_index": 23,
+  "id": "yct-3-l09-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dōngxi» гэж уншдаг үг:",
+  "options": [
+   "老师",
+   "弟弟",
+   "熊猫",
+   "东西"
+  ],
+  "correct_answer": "东西",
+  "explanation": "东西 = dōngxi = юм.",
+  "order_index": 24,
+  "id": "yct-3-l09-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «diū» гэж уншдаг үг:",
+  "options": [
+   "哭",
+   "到",
+   "丢",
+   "笑"
+  ],
+  "correct_answer": "丢",
+  "explanation": "丢 = diū = гээх, алдах.",
+  "order_index": 25,
+  "id": "yct-3-l09-q25",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь уйлж байна. Чи юу гэж асуух вэ?",
+  "options": [
+   "笑一笑！",
+   "找到了！",
+   "你怎么哭了？",
+   "再见！"
+  ],
+  "correct_answer": "你怎么哭了？",
+  "explanation": "Яагаад уйлснийг 你怎么哭了？ гэж асууна.",
+  "order_index": 26,
+  "id": "yct-3-l09-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь юмаа алдаж уйлж байна. Тайвшруулахад юу гэх вэ?",
+  "options": [
+   "我不去。",
+   "别哭，我们一起找一找。",
+   "太好了！",
+   "你好！"
+  ],
+  "correct_answer": "别哭，我们一起找一找。",
+  "explanation": "Тайвшруулж, хамт хайна.",
+  "order_index": 27,
+  "id": "yct-3-l09-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Алдсан юмаа олоод баярлалаа. Юу гэх вэ?",
+  "options": [
+   "别哭。",
+   "找到了！",
+   "我丢了。",
+   "再见。"
+  ],
+  "correct_answer": "找到了！",
+  "explanation": "Олсон үедээ 找到了！",
+  "order_index": 28,
+  "id": "yct-3-l09-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Багш зураг авахын өмнө юу гэж хэлдэг вэ?",
+  "options": [
+   "你怎么了？",
+   "别哭！",
+   "什么东西？",
+   "笑一笑！"
+  ],
+  "correct_answer": "笑一笑！",
+  "explanation": "笑一笑 = инээмсэглээрэй.",
+  "order_index": 29,
+  "id": "yct-3-l09-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ }
+]

@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Төрсөн өдөр» хятадаар аль нь вэ?",
+  "options": [
+   "生日",
+   "花",
+   "礼物",
+   "蛋糕"
+  ],
+  "correct_answer": "生日",
+  "explanation": "生日 (shēngrì) = төрсөн өдөр.",
+  "order_index": 1,
+  "id": "yct-3-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бэлэг» хятадаар аль нь вэ?",
+  "options": [
+   "生日",
+   "苹果",
+   "包子",
+   "礼物"
+  ],
+  "correct_answer": "礼物",
+  "explanation": "礼物 (lǐwù) = бэлэг.",
+  "order_index": 2,
+  "id": "yct-3-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бялуу» хятадаар аль нь вэ?",
+  "options": [
+   "生日",
+   "花",
+   "包子",
+   "蛋糕"
+  ],
+  "correct_answer": "蛋糕",
+  "explanation": "蛋糕 (dàngāo) = бялуу.",
+  "order_index": 3,
+  "id": "yct-3-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цэцэг» хятадаар аль нь вэ?",
+  "options": [
+   "给",
+   "花",
+   "送",
+   "画"
+  ],
+  "correct_answer": "花",
+  "explanation": "花 (huā) = цэцэг. 画 = зурах.",
+  "order_index": 4,
+  "id": "yct-3-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«送» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "бэлэглэх",
+   "идэх",
+   "зурах",
+   "чадах"
+  ],
+  "correct_answer": "бэлэглэх",
+  "explanation": "送 (sòng) = бэлэглэх.",
+  "order_index": 5,
+  "id": "yct-3-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«给» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "цэцэг",
+   "-д, -ийн төлөө",
+   "амттай",
+   "гэвч"
+  ],
+  "correct_answer": "-д, -ийн төлөө",
+  "explanation": "给 (gěi) = -д, -ийн төлөө.",
+  "order_index": 6,
+  "id": "yct-3-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«但是» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "чадах",
+   "гэвч, гэхдээ",
+   "бялуу",
+   "баяртай"
+  ],
+  "correct_answer": "гэвч, гэхдээ",
+  "explanation": "但是 (dànshì) = гэвч.",
+  "order_index": 7,
+  "id": "yct-3-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«快乐» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хөгжилтэй, баяр хөөртэй",
+   "муухай",
+   "бэлэг",
+   "төрсөн өдөр"
+  ],
+  "correct_answer": "хөгжилтэй, баяр хөөртэй",
+  "explanation": "快乐 (kuàilè) = хөгжилтэй, баяр хөөртэй.",
+  "order_index": 8,
+  "id": "yct-3-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Төрсөн өдрийн мэнд!» хятадаар:",
+  "options": [
+   "生日快乐！",
+   "来一起唱歌吧。",
+   "太漂亮了。",
+   "我们送她什么礼物？"
+  ],
+  "correct_answer": "生日快乐！",
+  "explanation": "生日快乐 = төрсөн өдрийн мэнд.",
+  "order_index": 9,
+  "id": "yct-3-l07-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бид түүнд ямар бэлэг өгөх вэ?» хятадаар:",
+  "options": [
+   "这是我们送您的花。",
+   "你会做蛋糕吗？",
+   "我们送她什么礼物？",
+   "现在可以吃蛋糕吗？"
+  ],
+  "correct_answer": "我们送她什么礼物？",
+  "explanation": "送 + 礼物 = бэлэг өгөх.",
+  "order_index": 10,
+  "id": "yct-3-l07-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д дүү юу гэсэн бэ?",
+  "options": [
+   "Би хоол идэхгүй",
+   "Би цэцэг авмаар байна",
+   "Би сургуульд явна",
+   "Би бялуу зурж чадна"
+  ],
+  "correct_answer": "Би бялуу зурж чадна",
+  "explanation": "不会，但是我会画蛋糕。",
+  "order_index": 11,
+  "id": "yct-3-l07-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т хүүхдүүд ээждээ юу өгсөн бэ?",
+  "options": [
+   "书",
+   "苹果",
+   "蛋糕",
+   "花"
+  ],
+  "correct_answer": "花",
+  "explanation": "这是我们送您的花 — цэцэг өгсөн.",
+  "order_index": 12,
+  "id": "yct-3-l07-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们（ ）妈妈做一个蛋糕吧。",
+  "options": [
+   "花",
+   "但是",
+   "快乐",
+   "给"
+  ],
+  "correct_answer": "给",
+  "explanation": "给妈妈 = ээжийн төлөө.",
+  "order_index": 13,
+  "id": "yct-3-l07-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我不会做蛋糕，（ ）我会画蛋糕。",
+  "options": [
+   "但是",
+   "吧",
+   "给",
+   "送"
+  ],
+  "correct_answer": "但是",
+  "explanation": "但是 = гэвч.",
+  "order_index": 14,
+  "id": "yct-3-l07-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈，生日（ ）！",
+  "options": [
+   "礼物",
+   "快乐",
+   "花",
+   "蛋糕"
+  ],
+  "correct_answer": "快乐",
+  "explanation": "生日快乐 = төрсөн өдрийн мэнд.",
+  "order_index": 15,
+  "id": "yct-3-l07-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "来一起唱歌（ ）。",
+  "options": [
+   "很",
+   "吧",
+   "的",
+   "了"
+  ],
+  "correct_answer": "吧",
+  "explanation": "吧 = «…цгаая» санал болгоно.",
+  "order_index": 16,
+  "id": "yct-3-l07-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Эгч «你会做蛋糕吗？» гэвэл тэр юу асууж байна вэ?",
+  "options": [
+   "Чи бялуу идэх үү?",
+   "Бялуу хэд вэ?",
+   "Чи бялуу хийж чадах уу?",
+   "Чи цэцэг авах уу?"
+  ],
+  "correct_answer": "Чи бялуу хийж чадах уу?",
+  "explanation": "会 = чадах, 吗 = асуух.",
+  "order_index": 17,
+  "id": "yct-3-l07-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Найз «来一起唱歌吧» гэвэл чи дуулж чадахгүй. Юу гэх вэ?",
+  "options": [
+   "这是花。",
+   "我送你礼物。",
+   "生日快乐！",
+   "但是我不会唱。"
+  ],
+  "correct_answer": "但是我不会唱。",
+  "explanation": "但是 = гэвч, 不会 = чадахгүй.",
+  "order_index": 18,
+  "id": "yct-3-l07-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«吧» гэж өгүүлбэрийн төгсгөлд хэлбэл юу болох вэ?",
+  "options": [
+   "Үгүйсгэл",
+   "Зөөлөн санал",
+   "Тоо",
+   "Асуулт"
+  ],
+  "correct_answer": "Зөөлөн санал",
+  "explanation": "来吧 = ирээрэй, …цгаая.",
+  "order_index": 19,
+  "id": "yct-3-l07-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би бялуу хийж чадахгүй» хятадаар:",
+  "options": [
+   "我会画蛋糕。",
+   "我要吃蛋糕。",
+   "我送你花。",
+   "我不会做蛋糕。"
+  ],
+  "correct_answer": "我不会做蛋糕。",
+  "explanation": "不会 = чадахгүй.",
+  "order_index": 20,
+  "id": "yct-3-l07-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shēngrì» гэж уншдаг үг:",
+  "options": [
+   "生日",
+   "礼物",
+   "蛋糕",
+   "快乐"
+  ],
+  "correct_answer": "生日",
+  "explanation": "生日 = shēngrì = төрсөн өдөр.",
+  "order_index": 21,
+  "id": "yct-3-l07-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «lǐwù» гэж уншдаг үг:",
+  "options": [
+   "生日",
+   "蛋糕",
+   "但是",
+   "礼物"
+  ],
+  "correct_answer": "礼物",
+  "explanation": "礼物 = lǐwù = бэлэг.",
+  "order_index": 22,
+  "id": "yct-3-l07-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dàngāo» гэж уншдаг үг:",
+  "options": [
+   "包子",
+   "蛋糕",
+   "但是",
+   "快乐"
+  ],
+  "correct_answer": "蛋糕",
+  "explanation": "蛋糕 = dàngāo = бялуу.",
+  "order_index": 23,
+  "id": "yct-3-l07-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзынхаа төрсөн өдөр дээр мэндлэхдээ юу гэх вэ?",
+  "options": [
+   "谢谢。",
+   "不会。",
+   "再见！",
+   "生日快乐！"
+  ],
+  "correct_answer": "生日快乐！",
+  "explanation": "生日快乐 = төрсөн өдрийн мэнд.",
+  "order_index": 24,
+  "id": "yct-3-l07-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Ээжид цэцэг өгөөд юу гэх вэ?",
+  "options": [
+   "你会画画吗？",
+   "我不会做蛋糕。",
+   "这是我们送您的花。",
+   "你吃苹果吗？"
+  ],
+  "correct_answer": "这是我们送您的花。",
+  "explanation": "送 нь бэлэг өгөх, 您 = Та.",
+  "order_index": 25,
+  "id": "yct-3-l07-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«生日快乐歌»-д «Ээжид мэнд хүргэе» гэсэн мөр аль нь вэ?",
+  "options": [
+   "祝你每天快乐",
+   "我会画蛋糕",
+   "祝妈妈生日快乐",
+   "这是我的书"
+  ],
+  "correct_answer": "祝妈妈生日快乐",
+  "explanation": "祝妈妈生日快乐 = ээждээ төрсөн өдрийн мэнд хүргэе.",
+  "order_index": 26,
+  "id": "yct-3-l07-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хятадын төрсөн өдөр дээр идэх урт гоймон юу вэ?",
+  "options": [
+   "苹果",
+   "长寿面",
+   "包子",
+   "蛋糕"
+  ],
+  "correct_answer": "长寿面",
+  "explanation": "长寿面 = урт насны гоймон.",
+  "order_index": 27,
+  "id": "yct-3-l07-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

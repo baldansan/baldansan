@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Спорт» хятадаар аль нь вэ?",
+  "options": [
+   "运动",
+   "欢迎",
+   "学校",
+   "朋友"
+  ],
+  "correct_answer": "运动",
+  "explanation": "运动 (yùndòng) = спорт.",
+  "order_index": 1,
+  "id": "yct-3-l02-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сэлэх» хятадаар аль нь вэ?",
+  "options": [
+   "踢足球",
+   "打篮球",
+   "运动",
+   "游泳"
+  ],
+  "correct_answer": "游泳",
+  "explanation": "游泳 (yóuyǒng) = сэлэх.",
+  "order_index": 2,
+  "id": "yct-3-l02-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сагсан бөмбөг тоглох» хятадаар аль нь вэ?",
+  "options": [
+   "欢迎",
+   "踢足球",
+   "游泳",
+   "打篮球"
+  ],
+  "correct_answer": "打篮球",
+  "explanation": "打篮球 (dǎ lánqiú) = сагсан бөмбөг тоглох.",
+  "order_index": 3,
+  "id": "yct-3-l02-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хөл бөмбөг тоглох» хятадаар аль нь вэ?",
+  "options": [
+   "一起",
+   "踢足球",
+   "游泳",
+   "打篮球"
+  ],
+  "correct_answer": "踢足球",
+  "explanation": "踢足球 (tī zúqiú) = хөл бөмбөг тоглох.",
+  "order_index": 4,
+  "id": "yct-3-l02-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«太» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дэндүү, үнэхээр",
+   "хамт",
+   "өдөр бүр",
+   "сэлэх"
+  ],
+  "correct_answer": "дэндүү, үнэхээр",
+  "explanation": "太 (tài) = дэндүү, үнэхээр. 太好了 = үнэхээр сайхан!",
+  "order_index": 5,
+  "id": "yct-3-l02-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«每» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дэндүү",
+   "бүр, тус бүр",
+   "спорт",
+   "хамт"
+  ],
+  "correct_answer": "бүр, тус бүр",
+  "explanation": "每 (měi) = бүр. 每天 = өдөр бүр.",
+  "order_index": 6,
+  "id": "yct-3-l02-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«一起» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "тавтай морил",
+   "хамт",
+   "бүр",
+   "сэлэх"
+  ],
+  "correct_answer": "хамт",
+  "explanation": "一起 (yìqǐ) = хамт.",
+  "order_index": 7,
+  "id": "yct-3-l02-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«欢迎» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "тавтай морилно уу",
+   "спорт",
+   "үнэхээр",
+   "хамт"
+  ],
+  "correct_answer": "тавтай морилно уу",
+  "explanation": "欢迎 (huānyíng) = тавтай морилно уу.",
+  "order_index": 8,
+  "id": "yct-3-l02-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yóuyǒng» гэж уншдаг үг:",
+  "options": [
+   "游泳",
+   "一起",
+   "欢迎",
+   "运动"
+  ],
+  "correct_answer": "游泳",
+  "explanation": "游泳 = yóuyǒng = сэлэх.",
+  "order_index": 9,
+  "id": "yct-3-l02-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yùndòng» гэж уншдаг үг:",
+  "options": [
+   "学校",
+   "游泳",
+   "运动",
+   "朋友"
+  ],
+  "correct_answer": "运动",
+  "explanation": "运动 = yùndòng = спорт.",
+  "order_index": 10,
+  "id": "yct-3-l02-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yìqǐ» гэж уншдаг үг:",
+  "options": [
+   "每天",
+   "欢迎",
+   "踢足球",
+   "一起"
+  ],
+  "correct_answer": "一起",
+  "explanation": "一起 = yìqǐ = хамт.",
+  "order_index": 11,
+  "id": "yct-3-l02-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «huānyíng» гэж уншдаг үг:",
+  "options": [
+   "朋友",
+   "运动",
+   "游泳",
+   "欢迎"
+  ],
+  "correct_answer": "欢迎",
+  "explanation": "欢迎 = huānyíng = тавтай морил.",
+  "order_index": 12,
+  "id": "yct-3-l02-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи ямар спортод дуртай вэ?» хятадаар:",
+  "options": [
+   "太好了！",
+   "我也喜欢游泳。",
+   "欢迎，欢迎！",
+   "你喜欢什么运动？"
+  ],
+  "correct_answer": "你喜欢什么运动？",
+  "explanation": "什么运动 = ямар спорт.",
+  "order_index": 13,
+  "id": "yct-3-l02-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«我和你们一起踢，好吗？» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Би та нартай хамт тоглож болох уу?",
+   "Чи сэлэх дуртай юу?",
+   "Би өдөр бүр хөл бөмбөг тоглодог.",
+   "Үнэхээр сайхан юм!"
+  ],
+  "correct_answer": "Би та нартай хамт тоглож болох уу?",
+  "explanation": "一起 = хамт, 好吗 = за юу.",
+  "order_index": 14,
+  "id": "yct-3-l02-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д Дэвид ямар спортод дуртай вэ?",
+  "options": [
+   "Зөвхөн хөл бөмбөг",
+   "Сэлэх, сагсан бөмбөг тоглох",
+   "Зөвхөн сагсан бөмбөг",
+   "Сэлэх, хөл бөмбөг"
+  ],
+  "correct_answer": "Сэлэх, сагсан бөмбөг тоглох",
+  "explanation": "我喜欢游泳，还喜欢打篮球。",
+  "order_index": 15,
+  "id": "yct-3-l02-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т хөвгүүд хаана хөл бөмбөг тоглодог вэ?",
+  "options": [
+   "Гэртээ",
+   "Сургууль дээр",
+   "Цэцэрлэгт",
+   "Усан санд"
+  ],
+  "correct_answer": "Сургууль дээр",
+  "explanation": "我们每天都在学校踢足球。",
+  "order_index": 16,
+  "id": "yct-3-l02-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我喜欢游泳，（ ）喜欢打篮球。",
+  "options": [
+   "每",
+   "了",
+   "还",
+   "吗"
+  ],
+  "correct_answer": "还",
+  "explanation": "还喜欢 = бас дуртай.",
+  "order_index": 17,
+  "id": "yct-3-l02-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）喜欢游泳和打篮球。",
+  "options": [
+   "吗",
+   "了",
+   "每",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "也喜欢 = ч бас дуртай.",
+  "order_index": 18,
+  "id": "yct-3-l02-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们（ ）天都在学校踢足球。",
+  "options": [
+   "真",
+   "每",
+   "也",
+   "太"
+  ],
+  "correct_answer": "每",
+  "explanation": "每天 = өдөр бүр.",
+  "order_index": 19,
+  "id": "yct-3-l02-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们（ ）起去打篮球，好吗？",
+  "options": [
+   "每",
+   "也",
+   "太",
+   "一"
+  ],
+  "correct_answer": "一",
+  "explanation": "一起 = хамт.",
+  "order_index": 20,
+  "id": "yct-3-l02-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）好了！",
+  "options": [
+   "太",
+   "每",
+   "一起",
+   "欢迎"
+  ],
+  "correct_answer": "太",
+  "explanation": "太好了 = үнэхээр сайхан!",
+  "order_index": 21,
+  "id": "yct-3-l02-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«好啊！» гэж найз хэлэхэд яах гэж байна вэ?",
+  "options": [
+   "Дургүйцэж байна",
+   "Асууж байна",
+   "Баяртай гэж байна",
+   "Зөвшөөрч байна"
+  ],
+  "correct_answer": "Зөвшөөрч байна",
+  "explanation": "好啊 = за, зөвшөөрч байна.",
+  "order_index": 22,
+  "id": "yct-3-l02-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«没关系» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Хамт",
+   "Зүгээр ээ",
+   "Баяртай",
+   "Тавтай морил"
+  ],
+  "correct_answer": "Зүгээр ээ",
+  "explanation": "没关系 = зүгээр ээ.",
+  "order_index": 23,
+  "id": "yct-3-l02-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Үлгэрт зулзага муур «太高了……» гэхэд юу гэсэн үг вэ?",
+  "options": [
+   "Үнэхээр сайхан юм",
+   "Хамт тоглоё",
+   "Дэндүү намхан юм аа",
+   "Дэндүү өндөр юм аа"
+  ],
+  "correct_answer": "Дэндүү өндөр юм аа",
+  "explanation": "高 = өндөр, 太 = дэндүү.",
+  "order_index": 24,
+  "id": "yct-3-l02-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你喜欢什么运动？» гэж асуулаа. Чи сэлэх дуртай бол:",
+  "options": [
+   "欢迎，欢迎！",
+   "太好了！",
+   "我喜欢游泳。",
+   "没关系。"
+  ],
+  "correct_answer": "我喜欢游泳。",
+  "explanation": "我喜欢…… = би …-д дуртай.",
+  "order_index": 25,
+  "id": "yct-3-l02-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хөл бөмбөг тоглож буй хүүхдүүдэд нэгдэхийг хүсвэл:",
+  "options": [
+   "你喜欢什么运动？",
+   "没关系。",
+   "我和你们一起踢，好吗？",
+   "欢迎，欢迎！"
+  ],
+  "correct_answer": "我和你们一起踢，好吗？",
+  "explanation": "一起 + 好吗 = хамт, за юу?",
+  "order_index": 26,
+  "id": "yct-3-l02-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Шинэ найз тоглоомд нэгдэхэд угтаж хэлэх нь:",
+  "options": [
+   "没关系。",
+   "欢迎，欢迎！",
+   "我不喜欢。",
+   "太高了。"
+  ],
+  "correct_answer": "欢迎，欢迎！",
+  "explanation": "欢迎 = тавтай морил.",
+  "order_index": 27,
+  "id": "yct-3-l02-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь чамтай адилхан сэлэх дуртай гэж хэллээ. Баярлаж:",
+  "options": [
+   "你喜欢什么运动？",
+   "太好了！",
+   "没关系。",
+   "我不会。"
+  ],
+  "correct_answer": "太好了！",
+  "explanation": "太好了 = үнэхээр сайхан!",
+  "order_index": 28,
+  "id": "yct-3-l02-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«两个朋友» үлгэрт зулзага муур яагаад сагсанд хүрч чадаагүй вэ?",
+  "options": [
+   "Хүйтэн байсан",
+   "Муур дуртай биш",
+   "Бөмбөг байхгүй",
+   "Сагс дэндүү өндөр"
+  ],
+  "correct_answer": "Сагс дэндүү өндөр",
+  "explanation": "小猫说：太高了…… Муур намхан тул панда үүрсэн.",
+  "order_index": 29,
+  "id": "yct-3-l02-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

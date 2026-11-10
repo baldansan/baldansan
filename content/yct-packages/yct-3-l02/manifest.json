@@ -1,0 +1,193 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-3",
+ "lessonId": "yct-3-l02",
+ "hskLevel": 2,
+ "lessonNumber": 2,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你喜欢什么运动？",
+ "mongolianTitle": "Чи ямар спортод дуртай вэ?",
+ "series": "YCT 标准教程 3",
+ "seriesLabel_mn": "YCT 3 — Хүүхдийн хятад хэл (≈HSK2)",
+ "source": "YCT 标准教程 3 · 第2课 (сурах бичиг + CD аудио 02-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-3-02-text-song.mp3",
+  "dialogues": "audio/yct-3-02-02.mp3",
+  "words": "audio/yct-3-02-01.mp3",
+  "song": "audio/yct-3-02-03.mp3",
+  "story": "audio/yct-3-02-04.mp3",
+  "test": "audio/yct-3-02-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-3-l02",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你喜欢什么运动？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你喜欢什么运动？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你喜欢踢足球？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "篮球篮球，打打打",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "两个朋友",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "两个朋友 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-yundong",
+    "file": "images/w-yundong.jpg",
+    "title": "运动",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-youyong",
+    "file": "images/w-youyong.jpg",
+    "title": "游泳",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dalanqiu",
+    "file": "images/w-dalanqiu.jpg",
+    "title": "打篮球",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tizuqiu",
+    "file": "images/w-tizuqiu.jpg",
+    "title": "踢足球",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tai",
+    "file": "images/w-tai.jpg",
+    "title": "太",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mei",
+    "file": "images/w-mei.jpg",
+    "title": "每",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yiqi",
+    "file": "images/w-yiqi.jpg",
+    "title": "一起",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-huanying",
+    "file": "images/w-huanying.jpg",
+    "title": "欢迎",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2d",
+    "file": "images/t2d.png",
+    "title": "Test 2d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L2)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

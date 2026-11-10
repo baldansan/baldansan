@@ -1,0 +1,277 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (10-05) сонсоод зөв хариултыг A, B, C-ээс сонго.",
+    "audio": "audio/yct-3-10-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）女的怎么样？",
+      "script_zh": "男：你能跑慢一些吗？ 女：好的，对不起。 问：女的怎么样？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "跑得慢",
+       "跑得快",
+       "不知道"
+      ],
+      "answer": "B",
+      "explanation_mn": "Эрэгтэй «арай удаан гүйж чадах уу?» гэж гуйсан. Тэгэхээр эмэгтэй хурдан гүйж байсан — B «跑得快». A «удаан» биш, C «мэдэхгүй» биш."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）男的怎么了？",
+      "script_zh": "男：我中午吃得太多，晚上不吃了。 女：那我们出去走走？ 问：男的怎么了？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "饿了",
+       "吃多了",
+       "觉得冷"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Үдэд хэтэрхий их идсэн» гэсэн тул B «吃多了» (хэтэрхий их идсэн). A «өлссөн» биш, C «даарсан» биш."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）女的昨晚做什么了？",
+      "script_zh": "男：九点了，你怎么还不起床？ 女：我昨晚看电视看得太晚了。 问：女的昨晚做什么了？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "跳舞",
+       "看电视",
+       "画画儿"
+      ],
+      "answer": "B",
+      "explanation_mn": "Эмэгтэй «өчигдөр орой зурагт үзээд хэт оройтсон» гэсэн — B «看电视»."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）女的怎么不吃蛋糕？",
+      "script_zh": "男：来，吃块儿蛋糕吧。 女：不，我太胖了，我不能再吃蛋糕了。 问：女的怎么不吃蛋糕？",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "想喝水",
+       "吃饱了",
+       "太胖了"
+      ],
+      "answer": "C",
+      "explanation_mn": "Эмэгтэй «Би хэтэрхий тарган болсон, дахиж бялуу идэж болохгүй» гэсэн — C «太胖了»."
+     }
+    ],
+    "answer_source": "YCT 3 Test Answers L10: 1.B 2.B 3.B 4.C"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — яриа бүрд тохирох зургийг A, B, C, D-ээс сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "A：你哥哥游泳游得怎么样？ B：在我们学校是第一。",
+      "question_mn": "Чиний ах сэлэлтэнд хэр вэ? — Манай сургуульд нэгдүгээр.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png",
+       "images/t2d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "Сэлэлтийн тухай ярьж байна. B зураг дээр хүн усанд сэлж байна. A дээр хоёр охины нэг нь жин дээр, C өндөр намхан хоёр хүүхэд, D бар гөлөг."
+     },
+     {
+      "n": 6,
+      "question_zh": "A：姐姐比弟弟个子高。 B：但是弟弟比姐姐跑得快。",
+      "question_mn": "Эгч дүүгээсээ өндөр. — Гэвч дүү эгчээсээ хурдан гүйдэг.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png",
+       "images/t2d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "Хэн өндөр, хэн намхан гэж ярьж байна. C зураг дээр өндөр охин, намхан хөвгүүн зэрэгцэж зогсож байна. A жин, B сэлэлт, D бар."
+     },
+     {
+      "n": 7,
+      "question_zh": "A：姐姐，你胖了吗？ B：没有，我瘦了一些。",
+      "question_mn": "Эгч ээ, чи таргалсан уу? — Үгүй, би бага зэрэг туранхайрсан.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png",
+       "images/t2d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "Таргалсан эсэхийг ярьж байна. A зураг дээр охин жин дээр зогсож жингээ шалгаж байна. B сэлэлт, C өндөр, D бар."
+     },
+     {
+      "n": 8,
+      "question_zh": "A：那只小老虎在看什么呢？ B：我也不知道。",
+      "question_mn": "Тэр бяцхан бар юу харж байна вэ? — Би ч мэдэхгүй.",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t2a.png",
+       "images/t2b.png",
+       "images/t2c.png",
+       "images/t2d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "Бар гөлөг гэсэн үг яриад байна (小老虎). D зураг дээр бяцхан бар гөлөг байна. Бусад зурагт бар байхгүй."
+     }
+    ],
+    "answer_source": "YCT 3 Test Answers L10: 5.B 6.C 7.A 8.D"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's match — өгүүлбэрийн эхэнд тохирох төгсгөлийг сонго.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "这些老虎很胖，____",
+      "answer": "但是吃得很多。",
+      "explanation_mn": "Бар тарган бол их иддэг."
+     },
+     {
+      "n": 2,
+      "question_zh": "这些天都在下雪，____",
+      "answer": "但是下得不大。",
+      "explanation_mn": "Сүүлийн хэд хоногт байнга цас орж байгаа ч их биш."
+     },
+     {
+      "n": 3,
+      "question_zh": "那些熊猫很瘦，____",
+      "answer": "但是跑得最快。",
+      "explanation_mn": "Панда туранхай ч хамгийн хурдан гүйдэг."
+     }
+    ],
+    "answer_source": "Let's match х.50 (хариу агент тааруулсан)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Үлгэр «谁跑得最快？» — зураг бүрд тохирох өгүүлбэрийг сонго.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "当然是我。",
+      "answer": "1",
+      "explanation_mn": "1-р зураг дээр нэг бар «Мэдээж би!» гэж хариулна."
+     },
+     {
+      "n": 2,
+      "question_zh": "我穿了运动鞋。",
+      "answer": "2",
+      "explanation_mn": "2-р зураг дээр «Яагаад?» гэхэд спортын гутал өмссөнөө хэлнэ."
+     },
+     {
+      "n": 3,
+      "question_zh": "我的鞋上有“飞机”。",
+      "answer": "3",
+      "explanation_mn": "3-р зураг дээр бар гутлаа зааж «онгоц» байна гэнэ."
+     },
+     {
+      "n": 4,
+      "question_zh": "当然我是第一。",
+      "answer": "4",
+      "explanation_mn": "4-р зураг дээр бар «Онгоц хурдан тул би нэгдүгээр!» гэнэ."
+     }
+    ],
+    "answer_source": "textbook х.51 (Mini story)"
+   },
+   {
+    "part": 5,
+    "type": "match",
+    "instruction_mn": "Guesswork — багаар хөдөлгөөнөөр үг таа.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "胖 — хөдөлгөөнөөр үзүүл",
+      "answer": "胖",
+      "explanation_mn": "Хоёр гараараа том гэдэс харуулж болно."
+     }
+    ],
+    "answer_source": "Guesswork х.48"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичиж үз — «老虎» гэсэн ханзыг дахин бичиж хуул.",
+    "question_zh": "老虎",
+    "answer": "老虎",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Найзаасаа хэн хурдан гүйхийг асуу.",
+    "question_zh": "谁跑得快？",
+    "answer": "谁跑得快？",
+    "explanation_mn": "Хосоороо ээлжлэн."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Дуугаа хөдөлгөөнтэй дуул.",
+    "question_zh": "两只老虎",
+    "answer": "两只老虎，两只老虎，跑得快，跑得快……",
+    "explanation_mn": "Аудио 10-03-ын хамт."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "三只老虎 үлгэрийг жүжигчил.",
+    "question_zh": "谁跑得最快？",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 10-04-ийн хамт."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 3 · Test Listening Scripts, Test Answers (Lesson 10)"
+}

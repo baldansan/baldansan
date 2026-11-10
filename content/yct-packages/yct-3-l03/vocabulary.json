@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "太阳",
+  "pinyin": "tàiyáng",
+  "mongolian": "нар",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "太阳出来了，天亮了。",
+  "examplePinyin": "Tàiyáng chūlái le, tiān liàng le.",
+  "exampleMongolian": "Нар мандлаа, үүр цайлаа.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "月亮",
+  "pinyin": "yuèliang",
+  "mongolian": "сар",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "今天的月亮真漂亮。",
+  "examplePinyin": "Jīntiān de yuèliang zhēn piàoliang.",
+  "exampleMongolian": "Өнөөдрийн сар үнэхээр хөөрхөн юм.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "跑步",
+  "pinyin": "pǎobù",
+  "mongolian": "гүйх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "爷爷跟月亮一起跑步。",
+  "examplePinyin": "Yéye gēn yuèliang yìqǐ pǎobù.",
+  "exampleMongolian": "Өвөө сартай хамт гүйж байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "爷爷",
+  "pinyin": "yéye",
+  "mongolian": "өвөө (аавын аав)",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "爷爷唱歌呢。",
+  "examplePinyin": "Yéye chànggē ne.",
+  "exampleMongolian": "Өвөө дуулж байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "奶奶",
+  "pinyin": "nǎinai",
+  "mongolian": "эмээ (аавын ээж)",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "奶奶跳舞呢。",
+  "examplePinyin": "Nǎinai tiàowǔ ne.",
+  "exampleMongolian": "Эмээ бүжиглэж байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "唱歌",
+  "pinyin": "chànggē",
+  "mongolian": "дуулах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我喜欢唱歌。",
+  "examplePinyin": "Wǒ xǐhuan chànggē.",
+  "exampleMongolian": "Би дуулах дуртай.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "跳舞",
+  "pinyin": "tiàowǔ",
+  "mongolian": "бүжиглэх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "奶奶跟太阳一起跳舞。",
+  "examplePinyin": "Nǎinai gēn tàiyáng yìqǐ tiàowǔ.",
+  "exampleMongolian": "Эмээ нартай хамт бүжиглэж байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "让",
+  "pinyin": "ràng",
+  "mongolian": "зөвшөөрөх, …болгох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "让我看看。",
+  "examplePinyin": "Ràng wǒ kànkan.",
+  "exampleMongolian": "Би хараад үзье.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 8
+ }
+]

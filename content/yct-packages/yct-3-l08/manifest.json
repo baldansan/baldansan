@@ -1,0 +1,214 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-3",
+ "lessonId": "yct-3-l08",
+ "hskLevel": 2,
+ "lessonNumber": 8,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "下雪了。",
+ "mongolianTitle": "Цас орлоо",
+ "series": "YCT 标准教程 3",
+ "seriesLabel_mn": "YCT 3 — Хүүхдийн хятад хэл (≈HSK2)",
+ "source": "YCT 标准教程 3 · 第8课 (сурах бичиг + CD аудио 08-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-3-08-text-song.mp3",
+  "dialogues": "audio/yct-3-08-02.mp3",
+  "words": "audio/yct-3-08-01.mp3",
+  "story": "audio/yct-3-08-03.mp3",
+  "song": "audio/yct-3-08-04.mp3",
+  "test": "audio/yct-3-08-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-3-l08",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "下雪了。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "哥哥，你看，下雪了！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "你听，外面下雨了",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "外面外面下雪了",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "北京 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-xiaxue",
+    "file": "images/w-xiaxue.jpg",
+    "title": "下雪",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ting",
+    "file": "images/w-ting.jpg",
+    "title": "听",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiayu",
+    "file": "images/w-xiayu.jpg",
+    "title": "下雨",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-waimian",
+    "file": "images/w-waimian.jpg",
+    "title": "外面",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chu",
+    "file": "images/w-chu.jpg",
+    "title": "出",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bie",
+    "file": "images/w-bie.jpg",
+    "title": "别",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zuoye",
+    "file": "images/w-zuoye.jpg",
+    "title": "作业",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-leng",
+    "file": "images/w-leng.jpg",
+    "title": "冷",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-re",
+    "file": "images/w-re.jpg",
+    "title": "热",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-limian",
+    "file": "images/w-limian.jpg",
+    "title": "里面",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c1",
+    "file": "images/c1.png",
+    "title": "Choose and write 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c2",
+    "file": "images/c2.png",
+    "title": "Choose and write 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c3",
+    "file": "images/c3.png",
+    "title": "Choose and write 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c4",
+    "file": "images/c4.png",
+    "title": "Choose and write 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c5",
+    "file": "images/c5.png",
+    "title": "Choose and write 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c6",
+    "file": "images/c6.png",
+    "title": "Choose and write 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L8)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

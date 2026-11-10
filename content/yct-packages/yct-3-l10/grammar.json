@@ -1,0 +1,233 @@
+[
+ {
+  "point": "谁跑得快？ — хэн хурдан вэ",
+  "gloss_mn": "«Хэн хурдан гүйдэг вэ?» — хэн нэгний чадварыг асууна",
+  "structure": "谁 + юу хийх + 得 + 快？ → 他跑得快。",
+  "teacher_mn": "Хэн хурдан гүйдгийг асуумаар байвал «谁跑得快？» гэнэ. 跑 = гүйх, 快 = хурдан. Дундаа 得 гэсэн жижиг үг орно. Хариулахдаа «他跑得快» гэнэ. Хөл дээрээ гүйж байгаа юм шиг хийгээд хэлж үз!",
+  "teacher_notes": "Номын яриа: 这些老虎谁跑得快？ 瘦的那只。 得 нь үйлдлийг хэрхэн хийдгийг холбоно.",
+  "examples": [
+   {
+    "chinese": "这些老虎谁跑得快？",
+    "pinyin": "Zhèxiē lǎohǔ shéi pǎo de kuài?",
+    "mongolian": "Эдгээр бар дотроос хэн хурдан гүйх вэ?"
+   },
+   {
+    "chinese": "谁跑得最快？",
+    "pinyin": "Shéi pǎo de zuì kuài?",
+    "mongolian": "Хэн хамгийн хурдан гүйдэг вэ?"
+   },
+   {
+    "chinese": "飞机飞得最快。",
+    "pinyin": "Fēijī fēi de zuì kuài.",
+    "mongolian": "Онгоц хамгийн хурдан нисдэг."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "谁跑快？",
+    "right": "谁跑得快？",
+    "why": "跑 ба 快-ийн дунд 得 орно."
+   }
+  ],
+  "check": {
+   "question": "«Хэн хурдан гүйдэг вэ?» гэж асуу:",
+   "options": [
+    "我不知道。",
+    "这些老虎很胖。",
+    "谁跑得快？"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "谁跑 ________ 快？",
+    "options": [
+     "了",
+     "的",
+     "得"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 跑得快.",
+    "explanation_wrong_mn": "Үйл үг ба «хэрхэн»-ийн дунд 得 орно."
+   },
+   {
+    "type": "choice",
+    "question": "«Онгоц хамгийн хурдан нисдэг» хятадаар:",
+    "options": [
+     "飞机很胖。",
+     "飞机飞得最快。",
+     "飞机不知道。"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "最快 = хамгийн хурдан."
+   },
+   {
+    "type": "judge",
+    "question": "«快» гэдэг нь «хурдан» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 快 = хурдан.",
+    "explanation_wrong_mn": "快 = хурдан."
+   }
+  ]
+ },
+ {
+  "point": "胖的第一 — тарган нь нэгдүгээр",
+  "gloss_mn": "«…нь» — олноос аль нэгийг заана",
+  "structure": "胖/瘦 + 的 + 第一/第三 → 胖的第一。",
+  "teacher_mn": "Олон барын дундаас аль нэгийг заахдаа үгийн ард 的 нэмнэ. 胖的 = тарган нь. 瘦的 = туранхай нь. 第一 = нэгдүгээр, 第三 = гуравдугаар. Хоёр найзаа «高的 …» гэж заагаад үз!",
+  "teacher_notes": "Номын яриа 2: 瘦的第三，胖的第一。",
+  "examples": [
+   {
+    "chinese": "胖的第一。",
+    "pinyin": "Pàngde dì yī.",
+    "mongolian": "Тарган нь нэгдүгээр."
+   },
+   {
+    "chinese": "瘦的第三。",
+    "pinyin": "Shòude dì sān.",
+    "mongolian": "Туранхай нь гуравдугаар."
+   },
+   {
+    "chinese": "瘦的那只。",
+    "pinyin": "Shòude nà zhī.",
+    "mongolian": "Тэр туранхай нь байх аа."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "胖第一。",
+    "right": "胖的第一。",
+    "why": "Аль нь гэдгийг заахад 的 хэрэгтэй."
+   }
+  ],
+  "check": {
+   "question": "«Тарган нь нэгдүгээр» хятадаар:",
+   "options": [
+    "胖的第一。",
+    "瘦的第三。",
+    "老虎跑得快。"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "瘦 ________ 第三。",
+    "options": [
+     "得",
+     "的",
+     "吗"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 瘦的 = туранхай нь.",
+    "explanation_wrong_mn": "Аль нь гэдгийг заахад 的."
+   },
+   {
+    "type": "choice",
+    "question": "«Туранхай» хятадаар:",
+    "options": [
+     "快",
+     "胖",
+     "瘦"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 瘦 = туранхай.",
+    "explanation_wrong_mn": "胖 = тарган, 瘦 = туранхай, 快 = хурдан."
+   },
+   {
+    "type": "judge",
+    "question": "«第一» гэдэг нь «нэгдүгээр» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 第一 = нэгдүгээр.",
+    "explanation_wrong_mn": "第一 = нэгдүгээр."
+   }
+  ]
+ },
+ {
+  "point": "最 · 但是 — хамгийн, гэвч",
+  "gloss_mn": "«Тэр хамгийн тарган, гэвч хамгийн хурдан»",
+  "structure": "最 + ямар (快/胖) · ……，但是……",
+  "teacher_mn": "Хамгийн ихийг хэлэхдээ 最 гэнэ. 最快 = хамгийн хурдан. Хоёр өөр зүйлийг холбохдоо 但是 = «гэвч» гэнэ. Тарган бар хамгийн хурдан гүйсэн нь гайхалтай биш үү!",
+  "teacher_notes": "Let's match: 这些老虎很胖，但是吃得很多。",
+  "examples": [
+   {
+    "chinese": "那只老虎最胖，但是跑得最快。",
+    "pinyin": "Nà zhī lǎohǔ zuì pàng, dànshì pǎo de zuì kuài.",
+    "mongolian": "Тэр бар хамгийн тарган боловч хамгийн хурдан гүйсэн."
+   },
+   {
+    "chinese": "那些熊猫很瘦，但是跑得最快。",
+    "pinyin": "Nàxiē xióngmāo hěn shòu, dànshì pǎo de zuì kuài.",
+    "mongolian": "Тэр пандууд туранхай ч хамгийн хурдан гүйдэг."
+   },
+   {
+    "chinese": "这些老虎很胖，但是吃得很多。",
+    "pinyin": "Zhèxiē lǎohǔ hěn pàng, dànshì chī de hěn duō.",
+    "mongolian": "Эдгээр бар тарган, гэвч их иддэг."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "跑得快最。",
+    "right": "跑得最快。",
+    "why": "最 нь 快-ийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Хамгийн хурдан» хятадаар:",
+   "options": [
+    "很胖",
+    "第一",
+    "最快"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "那只老虎 ________ 胖。",
+    "options": [
+     "得",
+     "的",
+     "最"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 最胖 = хамгийн тарган.",
+    "explanation_wrong_mn": "最 = хамгийн."
+   },
+   {
+    "type": "choice",
+    "question": "她很瘦，________ 跑得很快。",
+    "options": [
+     "第一",
+     "知道",
+     "但是"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 但是 = гэвч.",
+    "explanation_wrong_mn": "Эсрэг утгатай хоёр хэсгийг 但是 (гэвч)-ээр холбоно."
+   },
+   {
+    "type": "judge",
+    "question": "«但是» гэдэг нь «гэвч» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 但是 = гэвч.",
+    "explanation_wrong_mn": "但是 = гэвч, харин."
+   }
+  ]
+ }
+]

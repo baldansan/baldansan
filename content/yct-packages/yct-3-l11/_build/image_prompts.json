@@ -1,0 +1,144 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "妈妈把糖给弟弟了。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands at a cozy Halloween doorway; an adult camel mother hands a candy bag to a small camel brother while the yellow camel boy and camel girl in costumes watch; speech bubble with the Chinese text 妈妈把糖给弟弟了。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ba.jpg",
+  "aspect": "1:1",
+  "title": "把",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy pushes a big watermelon across a table toward the camel girl with both hands, a small arrow shows passing it over, bright cartoon style. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-tang.jpg",
+  "aspect": "1:1",
+  "title": "糖",
+  "section": "vocabulary",
+  "prompt": "The camel girl holds a jar overflowing with colorful candies, happy face, bright cartoon style. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-shuiguo.jpg",
+  "aspect": "1:1",
+  "title": "水果",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy holds a big basket full of apples, oranges, grapes and a watermelon, bright cartoon style. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xigua.jpg",
+  "aspect": "1:1",
+  "title": "西瓜",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy hugs a big round watermelon that is cut open to show red inside and green outside, bright cartoon style. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jidan.jpg",
+  "aspect": "1:1",
+  "title": "鸡蛋",
+  "section": "vocabulary",
+  "prompt": "The camel girl holds a bowl with five white eggs and one egg cracked open, bright cartoon style. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-mianbao.jpg",
+  "aspect": "1:1",
+  "title": "面包",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy proudly holds a fresh loaf of bread and slices of bread, bright cartoon style. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-guozhi.jpg",
+  "aspect": "1:1",
+  "title": "果汁",
+  "section": "vocabulary",
+  "prompt": "The camel girl drinks orange juice from a glass with a straw, a juice carton beside her, bright cartoon style. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-houzi.jpg",
+  "aspect": "1:1",
+  "title": "猴子",
+  "section": "vocabulary",
+  "prompt": "A cute monkey sits on a tree branch holding a banana, the yellow calf waves at it, bright cartoon style. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你吃什么？",
+  "section": "dialogue",
+  "prompt": "Adult camel mother and father sit at a breakfast table with bread, eggs, steamed buns and a plate of watermelon; the mother asks, speech bubble with the Chinese text 你吃什么？ in large clear black font. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "爸爸，把糖给我吧。",
+  "section": "dialogue",
+  "prompt": "Halloween evening: a camel girl in witch costume and a calf boy stand outside a house door with candy bags; adult camel father inside by the window; speech bubble with the Chinese text 爸爸，把糖给我吧。 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/play.jpg",
+  "aspect": "4:3",
+  "title": "老虎把花给猴子。",
+  "section": "activity",
+  "prompt": "Animal relay race on a park track: tiger hands a flower baton to a monkey, panda, ox and cat wait in line; speech bubble with the Chinese text 老虎把花给猴子。 in large clear black font. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "野餐",
+  "section": "story",
+  "prompt": "Picnic in a park: four calf kids around a picnic table with cake, juice and bread, surprised that food is missing, a monkey mother and baby monkey in a tree nearby with the food. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

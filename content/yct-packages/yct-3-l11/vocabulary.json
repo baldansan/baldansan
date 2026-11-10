@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "把",
+  "pinyin": "bǎ",
+  "mongolian": "-ыг, -ийг (юуг өгөхийг хэлэх үг)",
+  "notes": "туслах үг · гол үг",
+  "exampleChinese": "把西瓜给我。",
+  "examplePinyin": "Bǎ xīguā gěi wǒ.",
+  "exampleMongolian": "Тарвасыг надад өгөөч.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "糖",
+  "pinyin": "táng",
+  "mongolian": "чихэр",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "妈妈把糖给弟弟了。",
+  "examplePinyin": "Māma bǎ táng gěi dìdi le.",
+  "exampleMongolian": "Ээж чихрийг дүүд өгчихлөө.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "水果",
+  "pinyin": "shuǐguǒ",
+  "mongolian": "жимс",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "要水果吗？",
+  "examplePinyin": "Yào shuǐguǒ ma?",
+  "exampleMongolian": "Жимс авах уу?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "西瓜",
+  "pinyin": "xīguā",
+  "mongolian": "тарвас",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "把西瓜给我吧。",
+  "examplePinyin": "Bǎ xīguā gěi wǒ ba.",
+  "exampleMongolian": "Тарвасыг надад өгөөч.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "鸡蛋",
+  "pinyin": "jīdàn",
+  "mongolian": "тахианы өндөг",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我吃面包和鸡蛋。",
+  "examplePinyin": "Wǒ chī miànbāo hé jīdàn.",
+  "exampleMongolian": "Би талх, өндөг идэж байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "面包",
+  "pinyin": "miànbāo",
+  "mongolian": "талх",
+  "notes": "нэр үг · нэмэлт үг",
+  "exampleChinese": "我还有面包。",
+  "examplePinyin": "Wǒ hái yǒu miànbāo.",
+  "exampleMongolian": "Надад талх бас байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "果汁",
+  "pinyin": "guǒzhī",
+  "mongolian": "жимсний шүүс",
+  "notes": "нэр үг · нэмэлт үг",
+  "exampleChinese": "谁喝了我的果汁？",
+  "examplePinyin": "Shéi hē le wǒ de guǒzhī?",
+  "exampleMongolian": "Миний жимсний шүүсийг хэн уучихав?",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "猴子",
+  "pinyin": "hóuzi",
+  "mongolian": "сармагчин",
+  "notes": "нэр үг · нэмэлт үг",
+  "exampleChinese": "你们看，是猴子！",
+  "examplePinyin": "Nǐmen kàn, shì hóuzi!",
+  "exampleMongolian": "Хараарай, сармагчин байна!",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 8
+ }
+]

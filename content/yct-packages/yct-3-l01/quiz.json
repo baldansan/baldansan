@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Анги (1-р анги, 2-р анги)» хятадаар аль нь вэ?",
+  "options": [
+   "年级",
+   "还",
+   "新",
+   "男"
+  ],
+  "correct_answer": "年级",
+  "explanation": "年级 (niánjí) = анги, шат.",
+  "order_index": 1,
+  "id": "yct-3-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хичээл» хятадаар аль нь вэ?",
+  "options": [
+   "班",
+   "都",
+   "张",
+   "课"
+  ],
+  "correct_answer": "课",
+  "explanation": "课 (kè) = хичээл.",
+  "order_index": 2,
+  "id": "yct-3-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«都» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "анги",
+   "шинэ",
+   "бас",
+   "бүгд, хоёулаа"
+  ],
+  "correct_answer": "бүгд, хоёулаа",
+  "explanation": "都 (dōu) = бүгд.",
+  "order_index": 3,
+  "id": "yct-3-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«班» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эмэгтэй",
+   "анги (хамт сурдаг нөхдүүд)",
+   "шинэ",
+   "хичээл"
+  ],
+  "correct_answer": "анги (хамт сурдаг нөхдүүд)",
+  "explanation": "班 (bān) = анги, нэг ангийн хүүхдүүд.",
+  "order_index": 4,
+  "id": "yct-3-l01-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Жан (хятад овог)» хятадаар аль нь вэ?",
+  "options": [
+   "张",
+   "女",
+   "男",
+   "新"
+  ],
+  "correct_answer": "张",
+  "explanation": "张 (Zhāng) = Жан, хятад овог.",
+  "order_index": 5,
+  "id": "yct-3-l01-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«还» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хичээл",
+   "бас, мөн",
+   "эрэгтэй",
+   "бүгд"
+  ],
+  "correct_answer": "бас, мөн",
+  "explanation": "还 (hái) = бас, мөн.",
+  "order_index": 6,
+  "id": "yct-3-l01-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«新» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "анги",
+   "шинэ",
+   "том",
+   "бүгд"
+  ],
+  "correct_answer": "шинэ",
+  "explanation": "新 (xīn) = шинэ.",
+  "order_index": 7,
+  "id": "yct-3-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«男» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эрэгтэй",
+   "бас",
+   "шинэ",
+   "эмэгтэй"
+  ],
+  "correct_answer": "эрэгтэй",
+  "explanation": "男 (nán) = эр, эрэгтэй.",
+  "order_index": 8,
+  "id": "yct-3-l01-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«女» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эмэгтэй",
+   "бүгд",
+   "хичээл",
+   "эрэгтэй"
+  ],
+  "correct_answer": "эмэгтэй",
+  "explanation": "女 (nǚ) = эм, эмэгтэй.",
+  "order_index": 9,
+  "id": "yct-3-l01-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи хэддүгээр ангид сурдаг вэ?» хятадаар:",
+  "options": [
+   "他们都是新老师。",
+   "我三年级。",
+   "你几年级？",
+   "三年级有汉语课吗？"
+  ],
+  "correct_answer": "你几年级？",
+  "explanation": "几 = хэд? Ангиа асуухдаа 你几年级？",
+  "order_index": 10,
+  "id": "yct-3-l01-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би 3-р ангид сурдаг» хятадаар:",
+  "options": [
+   "我六年级。",
+   "我二年级。",
+   "你几年级？",
+   "我三年级。"
+  ],
+  "correct_answer": "我三年级。",
+  "explanation": "三 = 3.",
+  "order_index": 11,
+  "id": "yct-3-l01-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«3-р ангид хятад хэлний хичээл байдаг уу?» хятадаар:",
+  "options": [
+   "还有一个是女老师。",
+   "你几年级？",
+   "我们都有汉语课。",
+   "三年级有汉语课吗？"
+  ],
+  "correct_answer": "三年级有汉语课吗？",
+  "explanation": "有……吗？ = … байдаг уу?",
+  "order_index": 12,
+  "id": "yct-3-l01-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д хятад хэлний хичээл хэддүгээр ангид байдаг вэ?",
+  "options": [
+   "зөвхөн 6-р ангид",
+   "зөвхөн 1-р ангид",
+   "байдаггүй",
+   "1, 2, 3-р ангид"
+  ],
+  "correct_answer": "1, 2, 3-р ангид",
+  "explanation": "一年级、二年级和三年级都有汉语课。",
+  "order_index": 13,
+  "id": "yct-3-l01-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т Жан багш нар хэд байсан бэ?",
+  "options": [
+   "хоёр",
+   "гурав",
+   "нэг",
+   "зургаа"
+  ],
+  "correct_answer": "хоёр",
+  "explanation": "两个张老师 — нэг эрэгтэй, нэг эмэгтэй.",
+  "order_index": 14,
+  "id": "yct-3-l01-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ）年级？",
+  "options": [
+   "都",
+   "几",
+   "新",
+   "还"
+  ],
+  "correct_answer": "几",
+  "explanation": "你几年级？ = Чи хэддүгээр ангид сурдаг вэ?",
+  "order_index": 15,
+  "id": "yct-3-l01-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们（ ）有汉语课。",
+  "options": [
+   "几",
+   "都",
+   "女",
+   "男"
+  ],
+  "correct_answer": "都",
+  "explanation": "我们都有 = бид бүгд бий.",
+  "order_index": 16,
+  "id": "yct-3-l01-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一个是男老师，（ ）有一个是女老师。",
+  "options": [
+   "都",
+   "新",
+   "还",
+   "几"
+  ],
+  "correct_answer": "还",
+  "explanation": "还有 = бас … бий.",
+  "order_index": 17,
+  "id": "yct-3-l01-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他们都是（ ）老师。",
+  "options": [
+   "班",
+   "课",
+   "几",
+   "新"
+  ],
+  "correct_answer": "新",
+  "explanation": "新老师 = шинэ багш.",
+  "order_index": 18,
+  "id": "yct-3-l01-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Chant-ын «五年级、六年级，还要学很多新东西» гэсэн мөр ямар утгатай вэ?",
+  "options": [
+   "Тэд сураагүй",
+   "5, 6-р ангид бас олон шинэ юм сурна",
+   "Тэд бүгд багш нар",
+   "5, 6-р анги байхгүй"
+  ],
+  "correct_answer": "5, 6-р ангид бас олон шинэ юм сурна",
+  "explanation": "还要学很多新东西 = бас маш олон шинэ юм сурна.",
+  "order_index": 19,
+  "id": "yct-3-l01-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«一年级、二年级，都是妹妹和弟弟» — энэ анги хэн бэ?",
+  "options": [
+   "багш нар",
+   "эмч нар",
+   "аав ээж",
+   "дүү нар"
+  ],
+  "correct_answer": "дүү нар",
+  "explanation": "妹妹和弟弟 = дүү охид, дүү хөвгүүд.",
+  "order_index": 20,
+  "id": "yct-3-l01-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«三» ба «年级»-ийг нийлүүлвэл:",
+  "options": [
+   "三年级",
+   "年级三",
+   "三班",
+   "三课"
+  ],
+  "correct_answer": "三年级",
+  "explanation": "Тоо нь 年级-ийн өмнө: 三年级.",
+  "order_index": 21,
+  "id": "yct-3-l01-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тэд бүгд шинэ багш» хятадаар:",
+  "options": [
+   "他们有都老师。",
+   "我们都有新课。",
+   "他们还是新老师。",
+   "他们都是新老师。"
+  ],
+  "correct_answer": "他们都是新老师。",
+  "explanation": "都 нь 是-ийн өмнө: 他们都是…",
+  "order_index": 22,
+  "id": "yct-3-l01-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «niánjí» гэж уншдаг үг:",
+  "options": [
+   "课",
+   "年级",
+   "新",
+   "班"
+  ],
+  "correct_answer": "年级",
+  "explanation": "年级 = niánjí = анги.",
+  "order_index": 23,
+  "id": "yct-3-l01-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «Zhāng lǎoshī» гэж уншигдах хослол:",
+  "options": [
+   "男老师",
+   "女老师",
+   "新老师",
+   "张老师"
+  ],
+  "correct_answer": "张老师",
+  "explanation": "张老师 = Жан багш.",
+  "order_index": 24,
+  "id": "yct-3-l01-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nǚ» гэж уншдаг үг:",
+  "options": [
+   "新",
+   "男",
+   "女",
+   "还"
+  ],
+  "correct_answer": "女",
+  "explanation": "女 = nǚ = эмэгтэй.",
+  "order_index": 25,
+  "id": "yct-3-l01-q25",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你几年级？» гэж асуулаа. Чи 4-р ангид бол:",
+  "options": [
+   "我三年级。",
+   "我五年级。",
+   "我四年级。",
+   "我六年级。"
+  ],
+  "correct_answer": "我四年级。",
+  "explanation": "四 = 4.",
+  "order_index": 26,
+  "id": "yct-3-l01-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ангийнхаа бүх хүүхэд хятад хэлний хичээлтэй гэж хэлэх:",
+  "options": [
+   "他是男老师。",
+   "我们都有汉语课。",
+   "我三年级。",
+   "你几年级？"
+  ],
+  "correct_answer": "我们都有汉语课。",
+  "explanation": "都 = бүгд.",
+  "order_index": 27,
+  "id": "yct-3-l01-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хоёр багшаа танилцуулна. Нэг нь эрэгтэй. Нөгөөг нь яаж хэлэх вэ?",
+  "options": [
+   "我三年级。",
+   "还有一个是女老师。",
+   "还有一个是男老师。",
+   "你几年级？"
+  ],
+  "correct_answer": "还有一个是女老师。",
+  "explanation": "还有 = бас … бий. Нөгөө нь 女老师.",
+  "order_index": 28,
+  "id": "yct-3-l01-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

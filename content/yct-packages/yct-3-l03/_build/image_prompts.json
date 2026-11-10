@@ -1,0 +1,149 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我在画画儿呢。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Camel teacher with glasses stands beside a painting easel where the yellow calf boy paints a smiling sun and moon; the calf girl in the yellow dress watches. Speech bubble with the Chinese text 我在画画儿呢。 in large clear black font. No English text. ",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你在做什么呢？",
+  "section": "dialogue",
+  "prompt": "In a bright art room, the green-hat brown calf boy asks the calf girl in yellow dress who stands by an easel painting a sun and moon running. Speech bubble with the Chinese text 你在做什么呢？ in large clear black font. No English text. ",
+  "chars": [
+   "bor",
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "爷爷、奶奶做什么呢？",
+  "section": "dialogue",
+  "prompt": "In a park with a fountain, an old adult camel grandfather sings with friends while an old adult camel grandmother dances; the yellow calf boy and calf girl watch. Speech bubble with the Chinese text 爷爷唱歌呢，奶奶跳舞呢。 No English text. ",
+  "chars": [
+   "huu",
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "我们一起来运动",
+  "section": "song",
+  "prompt": "Elderly camel grandparents and the calf children hold hands in a circle and exercise happily in a sunny park, a smiling sun and crescent moon in the sky. Speech bubble with the Chinese text 我们一起来运动！ No English text. ",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "爷爷和奶奶",
+  "section": "story",
+  "prompt": "Elderly camel grandmother dances with a smiling sun in the morning while grandfather camel jogs under the crescent moon at night, split scene, storybook style. No English text. ",
+  "chars": [
+   "temee"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-taiyang.jpg",
+  "aspect": "1:1",
+  "title": "太阳",
+  "section": "vocabulary",
+  "prompt": "A big smiling cartoon sun shining over a green meadow while a yellow calf boy waves at it. No English text. ",
+  "chars": [
+   "huu"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-yueliang.jpg",
+  "aspect": "1:1",
+  "title": "月亮",
+  "section": "vocabulary",
+  "prompt": "A smiling crescent moon in the night sky above a sleepy hill, the calf girl in yellow dress looks up. No English text. ",
+  "chars": [
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-paobu.jpg",
+  "aspect": "1:1",
+  "title": "跑步",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy with green hat jogs on a park path, happy, in sports mood. No English text. ",
+  "chars": [
+   "bor"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-yeye.jpg",
+  "aspect": "1:1",
+  "title": "爷爷",
+  "section": "vocabulary",
+  "prompt": "A kind old adult camel grandfather with white hair, glasses and a cane, smiling. No English text. ",
+  "chars": [],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-nainai.jpg",
+  "aspect": "1:1",
+  "title": "奶奶",
+  "section": "vocabulary",
+  "prompt": "A kind old adult camel grandmother with grey bun and a green vest, smiling. No English text. ",
+  "chars": [],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-changge.jpg",
+  "aspect": "1:1",
+  "title": "唱歌",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress sings happily into a microphone with music notes around her. No English text. ",
+  "chars": [
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-tiaowu.jpg",
+  "aspect": "1:1",
+  "title": "跳舞",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy and calf girl dance together on a stage with music notes. No English text. ",
+  "chars": [
+   "huu",
+   "ohin"
+  ],
+  "role": "illustration"
+ },
+ {
+  "file": "images/w-rang.jpg",
+  "aspect": "1:1",
+  "title": "让",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy politely holds out his hand to a friend's drawing asking to look at it, friend handing it over. No English text. ",
+  "chars": [
+   "bor",
+   "huu"
+  ],
+  "role": "illustration"
+ }
+]

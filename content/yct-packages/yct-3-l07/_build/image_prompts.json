@@ -1,0 +1,159 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "生日快乐！",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Cheerful birthday party in a cozy room: Teacher Camel, the shaggy yellow camel with glasses, and three young camel calves hold a big birthday cake with candles, balloons and a flower bouquet, with a speech bubble with the Chinese text 生日快乐！ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "明天是妈妈的生日。",
+  "section": "dialogue",
+  "prompt": "Living room: the calf girl in a yellow dress sits on a sofa talking, while the yellow calf boy in a blue vest draws a cake on paper at the table; speech bubble with the Chinese text 明天是妈妈的生日。 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "妈妈，生日快乐！",
+  "section": "dialogue",
+  "prompt": "Birthday party at home with balloons and a banner: the calf girl hands a flower bouquet to an adult mother camel, the calf boy looks at a cake on the table with a speech bubble with the Chinese text 妈妈，生日快乐！ in large clear black font. A father camel in an apron stands nearby. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "生日快乐歌",
+  "section": "song",
+  "prompt": "Teacher Camel and the calves sing around a birthday cake with candles, clapping and holding music notes, speech bubble with the Chinese text 祝你生日快乐 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-shengri.jpg",
+  "aspect": "1:1",
+  "title": "生日",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy blows out candles on a birthday cake with a small calendar page behind him. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-liwu.jpg",
+  "aspect": "1:1",
+  "title": "礼物",
+  "section": "vocabulary",
+  "prompt": "The calf girl holds a big wrapped gift box with a red ribbon, smiling. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-song.jpg",
+  "aspect": "1:1",
+  "title": "送",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy hands a wrapped gift to the calf girl, who happily takes it. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-gei.jpg",
+  "aspect": "1:1",
+  "title": "给",
+  "section": "vocabulary",
+  "prompt": "The calf girl gives a drawing to an adult mother camel, arrows suggest giving for someone. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-hua.jpg",
+  "aspect": "1:1",
+  "title": "花",
+  "section": "vocabulary",
+  "prompt": "The calf girl smells a bunch of colorful flowers in a garden. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-dangao.jpg",
+  "aspect": "1:1",
+  "title": "蛋糕",
+  "section": "vocabulary",
+  "prompt": "A big round cake with strawberries and one candle on a table. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-ba.jpg",
+  "aspect": "1:1",
+  "title": "吧",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy waves and invites a friend with an open hand, speech bubble with the Chinese text 来吧 in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-danshi.jpg",
+  "aspect": "1:1",
+  "title": "但是",
+  "section": "vocabulary",
+  "prompt": "The calf boy shakes his head and holds up a drawing instead of a cake, with a cake that is too hard to make shown crossed out in a thought bubble. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kuaile.jpg",
+  "aspect": "1:1",
+  "title": "快乐",
+  "section": "vocabulary",
+  "prompt": "Calves jump happily with balloons and big smiles. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

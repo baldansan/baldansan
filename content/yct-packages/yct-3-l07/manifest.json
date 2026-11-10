@@ -1,0 +1,157 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-3",
+ "lessonId": "yct-3-l07",
+ "hskLevel": 2,
+ "lessonNumber": 7,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "生日快乐！",
+ "mongolianTitle": "Төрсөн өдрийн мэнд!",
+ "series": "YCT 标准教程 3",
+ "seriesLabel_mn": "YCT 3 — Хүүхдийн хятад хэл (≈HSK2)",
+ "source": "YCT 标准教程 3 · 第7课 (сурах бичиг + CD аудио 07-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-3-07-text-song.mp3",
+  "dialogues": "audio/yct-3-07-02.mp3",
+  "words": "audio/yct-3-07-01.mp3",
+  "story": "audio/yct-3-07-03.mp3",
+  "test": "audio/yct-3-07-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-3-l07",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "生日快乐！",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "明天是妈妈的生日。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "妈妈，生日快乐！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "生日快乐歌",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-shengri",
+    "file": "images/w-shengri.jpg",
+    "title": "生日",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-liwu",
+    "file": "images/w-liwu.jpg",
+    "title": "礼物",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-song",
+    "file": "images/w-song.jpg",
+    "title": "送",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gei",
+    "file": "images/w-gei.jpg",
+    "title": "给",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hua",
+    "file": "images/w-hua.jpg",
+    "title": "花",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dangao",
+    "file": "images/w-dangao.jpg",
+    "title": "蛋糕",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ba",
+    "file": "images/w-ba.jpg",
+    "title": "吧",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-danshi",
+    "file": "images/w-danshi.jpg",
+    "title": "但是",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kuaile",
+    "file": "images/w-kuaile.jpg",
+    "title": "快乐",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L7)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

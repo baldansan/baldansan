@@ -1,0 +1,122 @@
+[
+ {
+  "chinese": "下雪",
+  "pinyin": "xiàxuě",
+  "mongolian": "цас орох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "今天下雪了。",
+  "examplePinyin": "Jīntiān xiàxuě le.",
+  "exampleMongolian": "Өнөөдөр цас орж байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "听",
+  "pinyin": "tīng",
+  "mongolian": "сонсох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "你听，外面下雨了。",
+  "examplePinyin": "Nǐ tīng, wàimian xiàyǔ le.",
+  "exampleMongolian": "Чи сонс, гадаа бороо орж байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "下雨",
+  "pinyin": "xiàyǔ",
+  "mongolian": "бороо орох",
+  "notes": "үйл үг · нэмэлт үг",
+  "exampleChinese": "外面下雨了。",
+  "examplePinyin": "Wàimian xiàyǔ le.",
+  "exampleMongolian": "Гадаа бороо орж байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "外面",
+  "pinyin": "wàimian",
+  "mongolian": "гадаа",
+  "notes": "байршил · гол үг",
+  "exampleChinese": "外面很冷吧？",
+  "examplePinyin": "Wàimian hěn lěng ba?",
+  "exampleMongolian": "Гадаа хүйтэн байгаа биз?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "出",
+  "pinyin": "chū",
+  "mongolian": "гарах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "他出来了。",
+  "examplePinyin": "Tā chūlai le.",
+  "exampleMongolian": "Тэр гарч ирлээ.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "别",
+  "pinyin": "bié",
+  "mongolian": "битгий",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "别出去跑步了。",
+  "examplePinyin": "Bié chūqu pǎobù le.",
+  "exampleMongolian": "Битгий гүйлт хийхээр гараарай.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "作业",
+  "pinyin": "zuòyè",
+  "mongolian": "гэрийн даалгавар",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "帮我做作业吧！",
+  "examplePinyin": "Bāng wǒ zuò zuòyè ba!",
+  "exampleMongolian": "Надад гэрийн даалгавраа хийхэд тусал даа!",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "冷",
+  "pinyin": "lěng",
+  "mongolian": "хүйтэн, даарах",
+  "notes": "тэмдэг нэр · нэмэлт үг",
+  "exampleChinese": "太冷了！",
+  "examplePinyin": "Tài lěng le!",
+  "exampleMongolian": "Үнэхээр хүйтэн байна!",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 8
+ },
+ {
+  "chinese": "热",
+  "pinyin": "rè",
+  "mongolian": "халуун",
+  "notes": "тэмдэг нэр · нэмэлт үг",
+  "exampleChinese": "太热了！",
+  "examplePinyin": "Tài rè le!",
+  "exampleMongolian": "Үнэхээр халуун байна!",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 9
+ },
+ {
+  "chinese": "里面",
+  "pinyin": "lǐmian",
+  "mongolian": "дотор",
+  "notes": "байршил · нэмэлт үг",
+  "exampleChinese": "小狗在里面。",
+  "examplePinyin": "Xiǎo gǒu zài lǐmian.",
+  "exampleMongolian": "Нохой дотор байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 10
+ }
+]

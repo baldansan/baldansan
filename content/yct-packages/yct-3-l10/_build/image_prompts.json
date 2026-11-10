@@ -1,0 +1,136 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "谁跑得快？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands at a sports-day finish line with a ribbon, cheering; a fat tiger and a thin tiger race beside the three young camels who point and smile. Speech bubble with the Chinese text 谁跑得快？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-laohu.jpg",
+  "aspect": "1:1",
+  "title": "老虎",
+  "section": "vocabulary",
+  "prompt": "A cute friendly tiger sitting on grass, a young camel boy waving at it. Bright children's book style. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-diyi.jpg",
+  "aspect": "1:1",
+  "title": "第一",
+  "section": "vocabulary",
+  "prompt": "A young camel girl crossing the finish ribbon first holding a sign with the number 1 on it, other runners behind. Bright children's book style. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-pang.jpg",
+  "aspect": "1:1",
+  "title": "胖",
+  "section": "vocabulary",
+  "prompt": "A very round chubby cartoon tiger patting its big belly, a young camel boy looking amazed. Bright children's book style. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shou.jpg",
+  "aspect": "1:1",
+  "title": "瘦",
+  "section": "vocabulary",
+  "prompt": "A tall thin slim tiger standing next to a young camel girl, both smiling. Bright children's book style. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xie.jpg",
+  "aspect": "1:1",
+  "title": "些",
+  "section": "vocabulary",
+  "prompt": "A group of several tigers standing together, a young camel pointing at them with one hand. Bright children's book style. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-de.jpg",
+  "aspect": "1:1",
+  "title": "得",
+  "section": "vocabulary",
+  "prompt": "A young camel boy running very fast with motion lines, a tiny speech bubble with the Chinese character 得 in large clear black font. Bright children's book style. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-kuai.jpg",
+  "aspect": "1:1",
+  "title": "快",
+  "section": "vocabulary",
+  "prompt": "A cheetah-style fast running tiger with speed lines next to a slow turtle, a young camel cheering. Bright children's book style. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zhidao.jpg",
+  "aspect": "1:1",
+  "title": "知道",
+  "section": "vocabulary",
+  "prompt": "A young camel girl with a lightbulb above her head, finger raised, saying she knows the answer. Bright children's book style. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "这些老虎谁跑得快？",
+  "section": "dialogue",
+  "prompt": "Lion referee on a stump, four tigers lined up at a numbered running track, panda, rabbit and monkey in a tree watching; speech bubble with the Chinese text 这些老虎谁跑得快？ in large clear black font. No English text.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "那只瘦老虎是第一吗？",
+  "section": "dialogue",
+  "prompt": "A race just finished: a fat tiger breaks the ribbon first, a thin tiger behind; surprised rabbit, panda and monkey cheer; speech bubble with the Chinese text 那只瘦老虎是第一吗？ in large clear black font. No English text.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "两只老虎",
+  "section": "song",
+  "prompt": "Two tigers running happily on green grass, one without ears and one without a tail, three young camels dancing and singing along. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

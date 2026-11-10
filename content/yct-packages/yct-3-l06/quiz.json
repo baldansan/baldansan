@@ -1,0 +1,470 @@
+[
+ {
+  "type": "choice",
+  "question": "«Хувцас» хятадаар аль нь вэ?",
+  "options": [
+   "衣服",
+   "妈妈",
+   "鞋",
+   "苹果"
+  ],
+  "correct_answer": "衣服",
+  "explanation": "衣服 (yīfu) = хувцас.",
+  "order_index": 1,
+  "id": "yct-3-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Гутал» хятадаар аль нь вэ?",
+  "options": [
+   "衣服",
+   "姐姐",
+   "包子",
+   "鞋"
+  ],
+  "correct_answer": "鞋",
+  "explanation": "鞋 (xié) = гутал.",
+  "order_index": 2,
+  "id": "yct-3-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тусалъя» гэж хэлэхдээ аль үгийг хэрэглэх вэ?",
+  "options": [
+   "鞋",
+   "穿",
+   "自己",
+   "帮助"
+  ],
+  "correct_answer": "帮助",
+  "explanation": "帮助 (bāngzhù) = тусах.",
+  "order_index": 3,
+  "id": "yct-3-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«穿» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өөрөө",
+   "өмсөх",
+   "тусах",
+   "идэх"
+  ],
+  "correct_answer": "өмсөх",
+  "explanation": "穿 (chuān) = өмсөх.",
+  "order_index": 4,
+  "id": "yct-3-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«能» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "чадах, болох",
+   "гутал",
+   "өмсөх",
+   "амттай"
+  ],
+  "correct_answer": "чадах, болох",
+  "explanation": "能 (néng) = чадах, болох.",
+  "order_index": 5,
+  "id": "yct-3-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«自己» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "тусах",
+   "өөрөө",
+   "сайхан",
+   "хувцас"
+  ],
+  "correct_answer": "өөрөө",
+  "explanation": "自己 (zìjǐ) = өөрөө.",
+  "order_index": 6,
+  "id": "yct-3-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yīfu» гэж уншдаг үг:",
+  "options": [
+   "帮助",
+   "衣服",
+   "鞋",
+   "自己"
+  ],
+  "correct_answer": "衣服",
+  "explanation": "衣服 = yīfu = хувцас.",
+  "order_index": 7,
+  "id": "yct-3-l06-q07",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xié» гэж уншдаг үг:",
+  "options": [
+   "鞋",
+   "衣服",
+   "能",
+   "穿"
+  ],
+  "correct_answer": "鞋",
+  "explanation": "鞋 = xié = гутал.",
+  "order_index": 8,
+  "id": "yct-3-l06-q08",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zìjǐ» гэж уншдаг үг:",
+  "options": [
+   "自己",
+   "衣服",
+   "妈妈",
+   "帮助"
+  ],
+  "correct_answer": "自己",
+  "explanation": "自己 = zìjǐ = өөрөө.",
+  "order_index": 9,
+  "id": "yct-3-l06-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «chuān» гэж уншдаг үг:",
+  "options": [
+   "帮助",
+   "能",
+   "穿",
+   "鞋"
+  ],
+  "correct_answer": "穿",
+  "explanation": "穿 = chuān = өмсөх.",
+  "order_index": 10,
+  "id": "yct-3-l06-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би өөрөө өмсч чадна» хятадаар:",
+  "options": [
+   "我能穿你的鞋吗？",
+   "我帮你，好不好？",
+   "你的鞋在哪儿？",
+   "我能自己穿。"
+  ],
+  "correct_answer": "我能自己穿。",
+  "explanation": "能 = чадна, 自己 = өөрөө, 穿 = өмсөх.",
+  "order_index": 11,
+  "id": "yct-3-l06-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би чамд туслах уу?» хятадаар:",
+  "options": [
+   "太好了！",
+   "不能。",
+   "我能自己穿。",
+   "我帮你，好不好？"
+  ],
+  "correct_answer": "我帮你，好不好？",
+  "explanation": "帮 = туслах, 好不好 = за юу.",
+  "order_index": 12,
+  "id": "yct-3-l06-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чиний гутал хаана байна?» хятадаар:",
+  "options": [
+   "我的鞋大。",
+   "我能穿你的鞋吗？",
+   "我帮你。",
+   "你的鞋在哪儿？"
+  ],
+  "correct_answer": "你的鞋在哪儿？",
+  "explanation": "在哪儿 = хаана байна.",
+  "order_index": 13,
+  "id": "yct-3-l06-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д эгч «我帮你穿衣服，好不好？» гэхэд дүү юу гэж хариулсан бэ?",
+  "options": [
+   "不，我能自己穿。",
+   "我在睡觉。",
+   "好，谢谢。",
+   "在桌子下边。"
+  ],
+  "correct_answer": "不，我能自己穿。",
+  "explanation": "Дүү өөрөө өмсч чадах тул «不，我能自己穿» гэсэн.",
+  "order_index": 14,
+  "id": "yct-3-l06-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т эгчийн гутал хаана байсан бэ?",
+  "options": [
+   "在妈妈的家。",
+   "在桌子下边。",
+   "在苹果里。",
+   "在我的手里。"
+  ],
+  "correct_answer": "在桌子下边。",
+  "explanation": "在桌子下边 — ширээний доор.",
+  "order_index": 15,
+  "id": "yct-3-l06-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дүү эгчийнхээ гутлыг өмсөж болох уу?",
+  "options": [
+   "Болно",
+   "Болохгүй, учир нь гутал том",
+   "Эгч нь тусална",
+   "Эгч нь өгнө"
+  ],
+  "correct_answer": "Болохгүй, учир нь гутал том",
+  "explanation": "Эгч «不能。我的鞋大，你的脚小» гэсэн.",
+  "order_index": 16,
+  "id": "yct-3-l06-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）你，好不好？",
+  "options": [
+   "穿",
+   "真",
+   "帮",
+   "是"
+  ],
+  "correct_answer": "帮",
+  "explanation": "我帮你 = би чамд тусалъя.",
+  "order_index": 17,
+  "id": "yct-3-l06-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我能自己（ ）衣服。",
+  "options": [
+   "会",
+   "帮",
+   "吃",
+   "穿"
+  ],
+  "correct_answer": "穿",
+  "explanation": "穿衣服 = хувцас өмсөх.",
+  "order_index": 18,
+  "id": "yct-3-l06-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）穿你的鞋吗？",
+  "options": [
+   "是",
+   "能",
+   "大",
+   "真"
+  ],
+  "correct_answer": "能",
+  "explanation": "我能……吗？ = …болох уу?",
+  "order_index": 19,
+  "id": "yct-3-l06-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "不，我能（ ）穿。",
+  "options": [
+   "衣服",
+   "大",
+   "鞋",
+   "自己"
+  ],
+  "correct_answer": "自己",
+  "explanation": "自己 = өөрөө.",
+  "order_index": 20,
+  "id": "yct-3-l06-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Найз чинь «我能穿你的衣服吗？» гэж асуув. Чи болохгүй гэвэл юу гэх вэ?",
+  "options": [
+   "不能。",
+   "谢谢。",
+   "太好了！",
+   "再见。"
+  ],
+  "correct_answer": "不能。",
+  "explanation": "不能 = болохгүй.",
+  "order_index": 21,
+  "id": "yct-3-l06-q21",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Баярлалаа, би өөрөө чадна» хэлэхдээ:",
+  "options": [
+   "我帮你。",
+   "在桌子下边。",
+   "不能。",
+   "谢谢，我自己可以。"
+  ],
+  "correct_answer": "谢谢，我自己可以。",
+  "explanation": "自己 = өөрөө, 可以 = чадна.",
+  "order_index": 22,
+  "id": "yct-3-l06-q22",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь хүнд цүнх үүрч яваа. Туслахыг санал болгохдоо:",
+  "options": [
+   "不能。",
+   "我帮你，好不好？",
+   "我能自己穿。",
+   "你的鞋在哪儿？"
+  ],
+  "correct_answer": "我帮你，好不好？",
+  "explanation": "帮 = туслах.",
+  "order_index": 23,
+  "id": "yct-3-l06-q23",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Чи өөрөө хувцсаа өмсөж чадах бол ээждээ:",
+  "options": [
+   "不能。",
+   "你的鞋在哪儿？",
+   "我帮你穿。",
+   "我能自己穿。"
+  ],
+  "correct_answer": "我能自己穿。",
+  "explanation": "Өөрөө чадахаа 我能自己穿 гэж хэлнэ.",
+  "order_index": 24,
+  "id": "yct-3-l06-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Мини үлгэрт зуун хөлт «Чи юу хийж байна?» гэхэд юу гэж хариулсан бэ?",
+  "options": [
+   "我不去。",
+   "我在睡觉。",
+   "我在穿鞋呢！",
+   "我要吃包子。"
+  ],
+  "correct_answer": "我在穿鞋呢！",
+  "explanation": "Зуун хөлт гутлаа өмсөж байсан.",
+  "order_index": 25,
+  "id": "yct-3-l06-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Гүрвэл зуун хөлтөд туслахыг санал болгоход зуун хөлт юу гэсэн бэ?",
+  "options": [
+   "好，谢谢。",
+   "我不想去。",
+   "不，我能自己穿。",
+   "太好了！"
+  ],
+  "correct_answer": "不，我能自己穿。",
+  "explanation": "Тэр өөрөө гутлаа өмсөх дуртай.",
+  "order_index": 26,
+  "id": "yct-3-l06-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Гоймон» хятадаар аль нь вэ?",
+  "options": [
+   "饺子",
+   "牛奶",
+   "苹果",
+   "面条儿"
+  ],
+  "correct_answer": "面条儿",
+  "explanation": "面条儿 (miàntiáor) = гоймон.",
+  "order_index": 1,
+  "id": "yct-3-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Банш» хятадаар аль нь вэ?",
+  "options": [
+   "包子",
+   "香蕉",
+   "饺子",
+   "面条儿"
+  ],
+  "correct_answer": "饺子",
+  "explanation": "饺子 (jiǎozi) = банш.",
+  "order_index": 2,
+  "id": "yct-3-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«饿» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өлсөх",
+   "цадах",
+   "өгөх",
+   "дахиад"
+  ],
+  "correct_answer": "өлсөх",
+  "explanation": "饿 (è) = өлсөх.",
+  "order_index": 3,
+  "id": "yct-3-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«想» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хүсэх, идмээр байх",
+   "өгөх",
+   "цадах",
+   "хамгийн"
+  ],
+  "correct_answer": "хүсэх, идмээр байх",
+  "explanation": "想 (xiǎng) = хүсэх.",
+  "order_index": 4,
+  "id": "yct-3-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«最» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дахиад",
+   "өгөх",
+   "өлсөх",
+   "хамгийн"
+  ],
+  "correct_answer": "хамгийн",
+  "explanation": "最 (zuì) = хамгийн.",
+  "order_index": 5,
+  "id": "yct-3-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«给» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "идэх",
+   "цадах",
+   "өгөх",
+   "хүсэх"
+  ],
+  "correct_answer": "өгөх",
+  "explanation": "给 (gěi) = өгөх.",
+  "order_index": 6,
+  "id": "yct-3-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«再» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "цадах",
+   "өгөх",
+   "дахиад",
+   "хамгийн"
+  ],
+  "correct_answer": "дахиад",
+  "explanation": "再 (zài) = дахиад.",
+  "order_index": 7,
+  "id": "yct-3-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«饱» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хүсэх",
+   "дахиад",
+   "цадах",
+   "өлсөх"
+  ],
+  "correct_answer": "цадах",
+  "explanation": "饱 (bǎo) = цадах.",
+  "order_index": 8,
+  "id": "yct-3-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эмээ ээ, би өлсөж байна» хятадаар:",
+  "options": [
+   "奶奶，再见。",
+   "奶奶，我饿了。",
+   "奶奶，我饱了。",
+   "奶奶，给你。"
+  ],
+  "correct_answer": "奶奶，我饿了。",
+  "explanation": "饿了 = өлслөө.",
+  "order_index": 9,
+  "id": "yct-3-l05-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би банш идэх хамгийн их дуртай» хятадаар:",
+  "options": [
+   "我饿了，吃饺子。",
+   "再吃几个。",
+   "我最爱吃饺子。",
+   "你想吃吗？"
+  ],
+  "correct_answer": "我最爱吃饺子。",
+  "explanation": "最爱 = хамгийн их дуртай.",
+  "order_index": 10,
+  "id": "yct-3-l05-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Эмээ «好，给你» гэвэл юу гэсэн үг вэ?",
+  "options": [
+   "За, ав даа",
+   "Дахиад ид",
+   "Би өлсөж байна",
+   "Больё"
+  ],
+  "correct_answer": "За, ав даа",
+  "explanation": "给你 = ав даа.",
+  "order_index": 11,
+  "id": "yct-3-l05-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т эмээ «再吃几个» гэвэл юу гэсэн үг вэ?",
+  "options": [
+   "Дахиад хэдэн ширхэг ид",
+   "Гоймон байна уу",
+   "Би цадлаа",
+   "Хамгийн их дуртай"
+  ],
+  "correct_answer": "Дахиад хэдэн ширхэг ид",
+  "explanation": "再 = дахиад, 几个 = хэдэн ширхэг.",
+  "order_index": 12,
+  "id": "yct-3-l05-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "奶奶，我（ ）了。",
+  "options": [
+   "再",
+   "给",
+   "饿",
+   "最"
+  ],
+  "correct_answer": "饿",
+  "explanation": "我饿了 = би өлслөө.",
+  "order_index": 13,
+  "id": "yct-3-l05-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）爱吃饺子。",
+  "options": [
+   "最",
+   "想",
+   "给",
+   "再"
+  ],
+  "correct_answer": "最",
+  "explanation": "最爱 = хамгийн их дуртай.",
+  "order_index": 14,
+  "id": "yct-3-l05-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）吃几个。",
+  "options": [
+   "最",
+   "给",
+   "饿",
+   "再"
+  ],
+  "correct_answer": "再",
+  "explanation": "再吃几个 = дахиад хэдэн ширхэг ид.",
+  "order_index": 15,
+  "id": "yct-3-l05-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不吃了，太（ ）了。",
+  "options": [
+   "最",
+   "饱",
+   "给",
+   "想"
+  ],
+  "correct_answer": "饱",
+  "explanation": "太饱了 = хэтэрхий цадлаа.",
+  "order_index": 16,
+  "id": "yct-3-l05-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-т хүү юунд хамгийн их дуртай вэ?",
+  "options": [
+   "牛奶",
+   "苹果",
+   "面条儿",
+   "奶奶做的饺子"
+  ],
+  "correct_answer": "奶奶做的饺子",
+  "explanation": "我最爱吃奶奶做的饺子 — эмээгийн хийсэн банш.",
+  "order_index": 17,
+  "id": "yct-3-l05-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хүү яагаад «不吃了» гэсэн бэ?",
+  "options": [
+   "Банш дуртай биш",
+   "Гоймон хүссэн",
+   "Өлссөн",
+   "Цадчихсан"
+  ],
+  "correct_answer": "Цадчихсан",
+  "explanation": "太饱了 = хэтэрхий цадсан.",
+  "order_index": 18,
+  "id": "yct-3-l05-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи идмээр байна уу?» хятадаар:",
+  "options": [
+   "你给吃吗？",
+   "你饿了吃。",
+   "你想吃吗？",
+   "你最爱吃吗？"
+  ],
+  "correct_answer": "你想吃吗？",
+  "explanation": "想 = хүсэх.",
+  "order_index": 19,
+  "id": "yct-3-l05-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Дахиад нэг банш идэх үү?» хятадаар:",
+  "options": [
+   "我饿了，吃饺子。",
+   "再吃一个饺子吧？",
+   "我最爱吃饺子。",
+   "不吃了，太饱了。"
+  ],
+  "correct_answer": "再吃一个饺子吧？",
+  "explanation": "再吃一个 = дахиад нэг ширхэг идэх.",
+  "order_index": 20,
+  "id": "yct-3-l05-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«几个» гэж асуувал юу гэж асууж байна вэ?",
+  "options": [
+   "Юу вэ?",
+   "Хэн бэ?",
+   "Хэдэн ширхэг?",
+   "Хаана вэ?"
+  ],
+  "correct_answer": "Хэдэн ширхэг?",
+  "explanation": "几个 = хэдэн ширхэг.",
+  "order_index": 21,
+  "id": "yct-3-l05-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jiǎozi» гэж уншдаг үг:",
+  "options": [
+   "面条儿",
+   "饺子",
+   "牛奶",
+   "苹果"
+  ],
+  "correct_answer": "饺子",
+  "explanation": "饺子 = jiǎozi = банш.",
+  "order_index": 22,
+  "id": "yct-3-l05-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bǎo» гэж уншдаг үг:",
+  "options": [
+   "想",
+   "饱",
+   "饿",
+   "给"
+  ],
+  "correct_answer": "饱",
+  "explanation": "饱 = bǎo = цадах.",
+  "order_index": 23,
+  "id": "yct-3-l05-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zài» гэж уншдаг үг:",
+  "options": [
+   "再",
+   "给",
+   "想",
+   "最"
+  ],
+  "correct_answer": "再",
+  "explanation": "再 = zài = дахиад.",
+  "order_index": 24,
+  "id": "yct-3-l05-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Эмээ дахиад идүүлэх гэж байна, харин чи цадчихсан. Юу гэх вэ?",
+  "options": [
+   "我饿了。",
+   "好，给你。",
+   "再吃几个。",
+   "不吃了，太饱了。"
+  ],
+  "correct_answer": "不吃了，太饱了。",
+  "explanation": "Цадсан бол 不吃了，太饱了.",
+  "order_index": 25,
+  "id": "yct-3-l05-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你最爱吃什么？» гэж асуулаа. Чи банш идэх хамгийн дуртай бол:",
+  "options": [
+   "我最爱吃饺子。",
+   "我最爱喝牛奶。",
+   "不吃了。",
+   "奶奶，我饿了。"
+  ],
+  "correct_answer": "我最爱吃饺子。",
+  "explanation": "最爱吃 + хоол.",
+  "order_index": 26,
+  "id": "yct-3-l05-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Өлсөөд эмээгээсээ гоймон байгаа эсэхийг асуух:",
+  "options": [
+   "奶奶，给你。",
+   "奶奶，有面条儿吗？",
+   "奶奶，太饱了。",
+   "奶奶，再吃一个。"
+  ],
+  "correct_answer": "奶奶，有面条儿吗？",
+  "explanation": "有…吗 = …байна уу?",
+  "order_index": 27,
+  "id": "yct-3-l05-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

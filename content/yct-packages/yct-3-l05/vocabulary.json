@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "面条儿",
+  "pinyin": "miàntiáor",
+  "mongolian": "гоймон",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "奶奶，有面条儿吗？",
+  "examplePinyin": "Nǎinai, yǒu miàntiáor ma?",
+  "exampleMongolian": "Эмээ ээ, гоймон байна уу?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "饺子",
+  "pinyin": "jiǎozi",
+  "mongolian": "банш (хятад банш)",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我最爱吃饺子。",
+  "examplePinyin": "Wǒ zuì ài chī jiǎozi.",
+  "exampleMongolian": "Би банш идэх хамгийн их дуртай.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "饿",
+  "pinyin": "è",
+  "mongolian": "өлсөх",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "奶奶，我饿了。",
+  "examplePinyin": "Nǎinai, wǒ è le.",
+  "exampleMongolian": "Эмээ ээ, би өлсөж байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "想",
+  "pinyin": "xiǎng",
+  "mongolian": "хүсэх, идмээр байх",
+  "notes": "туслах үг · гол үг",
+  "exampleChinese": "你想吃吗？",
+  "examplePinyin": "Nǐ xiǎng chī ma?",
+  "exampleMongolian": "Чи идмээр байна уу?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "最",
+  "pinyin": "zuì",
+  "mongolian": "хамгийн",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "我最爱吃奶奶做的饺子。",
+  "examplePinyin": "Wǒ zuì ài chī nǎinai zuò de jiǎozi.",
+  "exampleMongolian": "Би эмээгийн хийсэн баншинд хамгийн их дуртай.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "给",
+  "pinyin": "gěi",
+  "mongolian": "өгөх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "好，给你。",
+  "examplePinyin": "Hǎo, gěi nǐ.",
+  "exampleMongolian": "За, ав даа.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "再",
+  "pinyin": "zài",
+  "mongolian": "дахиад",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "再吃几个。",
+  "examplePinyin": "Zài chī jǐ ge.",
+  "exampleMongolian": "Дахиад хэдэн ширхэг ид.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "饱",
+  "pinyin": "bǎo",
+  "mongolian": "цадах",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "不吃了，太饱了。",
+  "examplePinyin": "Bù chī le, tài bǎo le.",
+  "exampleMongolian": "Больё, би хэтэрхий цадчихлаа.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 8
+ }
+]

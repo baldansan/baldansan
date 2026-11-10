@@ -1,0 +1,74 @@
+[
+ {
+  "chinese": "喂",
+  "pinyin": "wèi",
+  "mongolian": "халло! (утсаар ярихад)",
+  "notes": "аялга үг · гол үг",
+  "exampleChinese": "喂，你好！",
+  "examplePinyin": "Wèi, nǐ hǎo!",
+  "exampleMongolian": "Халло, сайн уу!",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "您",
+  "pinyin": "nín",
+  "mongolian": "та (хүндэтгэж хэлэх «чи»)",
+  "notes": "төлөөний үг · гол үг",
+  "exampleChinese": "老师，您好！",
+  "examplePinyin": "Lǎoshī, nín hǎo!",
+  "exampleMongolian": "Багш аа, сайн байна уу!",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "找",
+  "pinyin": "zhǎo",
+  "mongolian": "хайх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "你找谁？",
+  "examplePinyin": "Nǐ zhǎo shéi?",
+  "exampleMongolian": "Чи хэнийг хайж байна?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "回",
+  "pinyin": "huí",
+  "mongolian": "буцах, харих",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "下课了，回家了。",
+  "examplePinyin": "Xiàkè le, huí jiā le.",
+  "exampleMongolian": "Хичээл тарлаа, гэртээ харилаа.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "问题",
+  "pinyin": "wèntí",
+  "mongolian": "асуулт",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我有一个问题。",
+  "examplePinyin": "Wǒ yǒu yí ge wèntí.",
+  "exampleMongolian": "Надад нэг асуулт байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "问",
+  "pinyin": "wèn",
+  "mongolian": "асуух",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "可以问您吗？",
+  "examplePinyin": "Kěyǐ wèn nín ma?",
+  "exampleMongolian": "Танаас асууж болох уу?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 6
+ }
+]

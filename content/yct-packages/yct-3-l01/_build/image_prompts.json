@@ -1,0 +1,146 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我三年级。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses at a school gate welcoming a yellow camel calf boy with a red backpack and a camel calf girl in a yellow dress; the boy holds up three fingers; speech bubble with the Chinese text 我三年级。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-nianji.jpg",
+  "aspect": "1:1",
+  "title": "年级",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy in a blue vest holding up three fingers in front of a school building with a big sign showing the number 3. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ke.jpg",
+  "aspect": "1:1",
+  "title": "课",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf boy in a green hat sitting at a school desk during a lesson, an open book and a pencil in front of him, blackboard behind. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-dou.jpg",
+  "aspect": "1:1",
+  "title": "都",
+  "section": "vocabulary",
+  "prompt": "Three camel calves (yellow boy, girl in yellow dress, brown boy in green hat) all raising both hands together and cheering, 'everyone' feeling. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-ban.jpg",
+  "aspect": "1:1",
+  "title": "班",
+  "section": "vocabulary",
+  "prompt": "A classroom full of camel calves sitting in rows at desks, smiling, a camel teacher with glasses at the front. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhang.jpg",
+  "aspect": "1:1",
+  "title": "张",
+  "section": "vocabulary",
+  "prompt": "A friendly adult camel teacher with glasses wearing a name badge, standing in front of a blackboard with a big Chinese character 张 written on it. No English text.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-hai.jpg",
+  "aspect": "1:1",
+  "title": "还",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl in a yellow dress holding one apple and happily reaching for one more apple being handed to her ('one more, also'). No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xin.jpg",
+  "aspect": "1:1",
+  "title": "新",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy proudly showing a brand new shiny red backpack with a sparkle and a bow on it. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-nan.jpg",
+  "aspect": "1:1",
+  "title": "男",
+  "section": "vocabulary",
+  "prompt": "A boy camel calf in blue vest standing next to a clear blue boy icon silhouette. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-nv.jpg",
+  "aspect": "1:1",
+  "title": "女",
+  "section": "vocabulary",
+  "prompt": "A girl camel calf in a yellow dress with pink ribbon standing next to a clear pink girl icon silhouette. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你几年级？",
+  "section": "dialogue",
+  "prompt": "On the stairs outside a Chinese classroom, a yellow camel calf boy asks a camel calf girl in a yellow dress a question; inside the doorway a camel teacher with glasses writes on a blackboard; speech bubble with the Chinese text 你几年级？ in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "我们班有两个张老师",
+  "section": "dialogue",
+  "prompt": "A camel calf girl in a yellow dress presents two adult camel teachers standing side by side, one adult male camel teacher with glasses and one adult female camel teacher with a scarf, in a bright classroom; speech bubble with the Chinese text 两个张老师 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "一年级、二年级",
+  "section": "song",
+  "prompt": "Camel calves of different ages walking and singing in a school yard: small calves (grade 1-2), medium (grade 3-4), and older ones doing a science experiment (grade 5-6); musical notes in the air, a large school building behind. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor",
+   "temee"
+  ]
+ }
+]

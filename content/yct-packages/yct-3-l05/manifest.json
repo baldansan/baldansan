@@ -1,0 +1,151 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-3",
+ "lessonId": "yct-3-l05",
+ "hskLevel": 2,
+ "lessonNumber": 5,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "再吃几个。",
+ "mongolianTitle": "Дахиад хэдэн ширхэг идээрэй",
+ "series": "YCT 标准教程 3",
+ "seriesLabel_mn": "YCT 3 — Хүүхдийн хятад хэл (≈HSK2)",
+ "source": "YCT 标准教程 3 · 第5课 (сурах бичиг + CD аудио 05-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-3-05-text-song.mp3",
+  "dialogues": "audio/yct-3-05-02.mp3",
+  "words": "audio/yct-3-05-01.mp3",
+  "song": "audio/yct-3-05-03.mp3",
+  "test": "audio/yct-3-05-05.mp3",
+  "play": "",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-3-l05",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "再吃几个。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "奶奶，我饿了，有面条儿吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "奶奶，谢谢您，饺子太好吃了！",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "我饿了，吃饺子。",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-miantiaor",
+    "file": "images/w-miantiaor.jpg",
+    "title": "面条儿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jiaozi",
+    "file": "images/w-jiaozi.jpg",
+    "title": "饺子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-e",
+    "file": "images/w-e.jpg",
+    "title": "饿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiang",
+    "file": "images/w-xiang.jpg",
+    "title": "想",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zui",
+    "file": "images/w-zui.jpg",
+    "title": "最",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gei",
+    "file": "images/w-gei.jpg",
+    "title": "给",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zai",
+    "file": "images/w-zai.jpg",
+    "title": "再",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bao",
+    "file": "images/w-bao.jpg",
+    "title": "饱",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t2a",
+    "file": "images/t2a.png",
+    "title": "Test 2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2b",
+    "file": "images/t2b.png",
+    "title": "Test 2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2c",
+    "file": "images/t2c.png",
+    "title": "Test 2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2d",
+    "file": "images/t2d.png",
+    "title": "Test 2d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L5)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

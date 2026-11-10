@@ -1,0 +1,110 @@
+[
+ {
+  "chinese": "生日",
+  "pinyin": "shēngrì",
+  "mongolian": "төрсөн өдөр",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "明天是妈妈的生日。",
+  "examplePinyin": "Míngtiān shì māma de shēngrì.",
+  "exampleMongolian": "Маргааш ээжийн төрсөн өдөр.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "礼物",
+  "pinyin": "lǐwù",
+  "mongolian": "бэлэг",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我们送她什么礼物？",
+  "examplePinyin": "Wǒmen sòng tā shénme lǐwù?",
+  "exampleMongolian": "Бид түүнд ямар бэлэг өгөх вэ?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "送",
+  "pinyin": "sòng",
+  "mongolian": "бэлэглэх, өгөх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我送你一个礼物。",
+  "examplePinyin": "Wǒ sòng nǐ yí ge lǐwù.",
+  "exampleMongolian": "Би чамд нэг бэлэг өгье.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "给",
+  "pinyin": "gěi",
+  "mongolian": "…-д, …-ийн төлөө",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我们给妈妈做一个蛋糕吧。",
+  "examplePinyin": "Wǒmen gěi māma zuò yí ge dàngāo ba.",
+  "exampleMongolian": "Бид ээждээ нэг бялуу хийж өгөөд үзье.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "花",
+  "pinyin": "huā",
+  "mongolian": "цэцэг",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "这是我们送您的花。",
+  "examplePinyin": "Zhè shì wǒmen sòng nín de huā.",
+  "exampleMongolian": "Энэ цэцгийг бид танд өгч байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "蛋糕",
+  "pinyin": "dàngāo",
+  "mongolian": "бялуу",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "这个蛋糕很好吃。",
+  "examplePinyin": "Zhège dàngāo hěn hǎochī.",
+  "exampleMongolian": "Энэ бялуу маш амттай.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "吧",
+  "pinyin": "ba",
+  "mongolian": "…ээ, …цгаая (санал болгох үг)",
+  "notes": "дагавар үг · гол үг",
+  "exampleChinese": "来一起唱歌吧。",
+  "examplePinyin": "Lái yìqǐ chàng gē ba.",
+  "exampleMongolian": "Хамт дуулъя даа.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "但是",
+  "pinyin": "dànshì",
+  "mongolian": "гэвч, гэхдээ",
+  "notes": "холбоос үг · гол үг",
+  "exampleChinese": "这个蛋糕好吃，但是不好看。",
+  "examplePinyin": "Zhège dàngāo hǎochī, dànshì bù hǎokàn.",
+  "exampleMongolian": "Энэ бялуу амттай, гэвч гоё харагдахгүй байна.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 8
+ },
+ {
+  "chinese": "快乐",
+  "pinyin": "kuàilè",
+  "mongolian": "хөгжилтэй, баяр хөөртэй",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "妈妈，生日快乐！",
+  "examplePinyin": "Māma, shēngrì kuàilè!",
+  "exampleMongolian": "Ээж ээ, төрсөн өдрийн мэнд!",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 9
+ }
+]

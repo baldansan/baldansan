@@ -1,0 +1,105 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我能自己穿。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Camel teacher with glasses cheers beside a proud yellow camel calf boy who has just put on his own shoes and shirt in a sunny bedroom, small shoes and clothes around; speech bubble with the Chinese text 我能自己穿 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-yifu.jpg",
+  "aspect": "1:1",
+  "title": "衣服",
+  "section": "vocabulary",
+  "prompt": "A colorful shirt, pants and a dress hanging on a clothesline, a happy camel calf girl pointing at them. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xie.jpg",
+  "aspect": "1:1",
+  "title": "鞋",
+  "section": "vocabulary",
+  "prompt": "A pair of cute children's shoes on a wooden floor, a yellow camel calf boy holding one shoe proudly. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-bangzhu.jpg",
+  "aspect": "1:1",
+  "title": "帮助",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf boy helping a yellow camel calf girl carry a heavy bag, both smiling. No English text.",
+  "chars": [
+   "bor",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-chuan.jpg",
+  "aspect": "1:1",
+  "title": "穿",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy pulling a blue vest on over his head by himself, smiling. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-neng.jpg",
+  "aspect": "1:1",
+  "title": "能",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl lifting a small box with a big happy smile and a strong-arm gesture showing she can do it. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ziji.jpg",
+  "aspect": "1:1",
+  "title": "自己",
+  "section": "vocabulary",
+  "prompt": "A proud brown camel calf boy pointing to himself with a thumb while buttoning his own green shirt. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "妹妹，起床了！",
+  "section": "dialogue",
+  "prompt": "Morning bedroom: an adult-looking big sister camel (older girl camel with a ponytail) stands by a bed offering help with clothes to a small camel calf sister in the bed who is sitting up; speech bubble with the Chinese text 我能自己穿 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "姐姐，你的鞋在哪儿？",
+  "section": "dialogue",
+  "prompt": "By the entrance door, a small camel calf girl looks up at her taller sister camel who points under a table where big shoes sit; small shoes lie on the mat; speech bubble with the Chinese text 在桌子下边 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "我在穿鞋呢！",
+  "section": "story",
+  "prompt": "A green gecko stands at a round door in a mud house, while a brown centipede with many tiny shoes proudly puts on his shoes himself, speech bubble with the Chinese text 我在穿鞋呢 in large clear black font. Fun, colorful children's story style. No English text.",
+  "chars": []
+ }
+]

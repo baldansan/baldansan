@@ -1,0 +1,248 @@
+[
+ {
+  "point": "把西瓜给我。 — юуг надад өг",
+  "gloss_mn": "«Тарвасыг надад өгөөч» — юуг хэнд өгөхийг хэлнэ",
+  "structure": "把 + юу + 给 + хэнд",
+  "teacher_mn": "Ширээн дээрээс юм авмаар байвал «把……给我» гэж хэлнэ. 把 нь «юуг» гэсэн үг. 给 нь «өгөх». «把西瓜给我» — тарвасыг надад өг. Гараа сунгаад «把糖给我！» гэж хэлж үз.",
+  "teacher_notes": "Номын Key sentence: 把西瓜给我。 Яриа 1: 把西瓜给我吧。",
+  "examples": [
+   {
+    "chinese": "把西瓜给我。",
+    "pinyin": "Bǎ xīguā gěi wǒ.",
+    "mongolian": "Тарвасыг надад өгөөч."
+   },
+   {
+    "chinese": "把西瓜给我吧。",
+    "pinyin": "Bǎ xīguā gěi wǒ ba.",
+    "mongolian": "Тэгвэл тарвасыг надад өгөөч."
+   },
+   {
+    "chinese": "把面包给妈妈。",
+    "pinyin": "Bǎ miànbāo gěi māma.",
+    "mongolian": "Талхыг ээжид өг."
+   },
+   {
+    "chinese": "爸爸，把糖给我吧。",
+    "pinyin": "Bàba, bǎ táng gěi wǒ ba.",
+    "mongolian": "Аав аа, чихрээ надад өгөөч."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "给我把西瓜。",
+    "right": "把西瓜给我。",
+    "why": "把 + юу эхэнд, 给 + хэнд сүүлд."
+   }
+  ],
+  "check": {
+   "question": "«Тарвасыг надад өгөөч» хятадаар:",
+   "options": [
+    "要水果吗？",
+    "你吃什么？",
+    "把西瓜给我。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "________ 糖给我。",
+    "options": [
+     "和",
+     "吗",
+     "把"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 把 = юуг.",
+    "explanation_wrong_mn": "Юуг гэж заахдаа 把 хэрэглэнэ."
+   },
+   {
+    "type": "choice",
+    "question": "«Талхыг ээжид өг» хятадаар:",
+    "options": [
+     "我吃面包。",
+     "把面包给妈妈。",
+     "面包和鸡蛋。"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "把 + юу + 给 + хэнд гэж дараалуул."
+   },
+   {
+    "type": "judge",
+    "question": "«给» гэдэг нь «өгөх» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 给 = өгөх.",
+    "explanation_wrong_mn": "给 = өгөх."
+   }
+  ]
+ },
+ {
+  "point": "妈妈把糖给弟弟了。 — өгчихлөө",
+  "gloss_mn": "«Ээж чихрийг дүүд өгчихлөө» — өгчихсөнийг хэлнэ",
+  "structure": "хэн + 把 + юу + 给 + хэнд + 了",
+  "teacher_mn": "Өгч дууссан бол төгсгөлд нь «了» нэмнэ. «妈妈把糖给弟弟了» — ээж чихрийг дүүд өгчихлөө. «没有了» гэвэл «алга болчихлоо» гэсэн утга. Чихэр алга болбол «糖没有了！» гэж хэл.",
+  "teacher_notes": "Яриа 2: 妈妈把糖给弟弟了。弟弟把我们的糖都给那个同学了。",
+  "examples": [
+   {
+    "chinese": "妈妈把糖给弟弟了。",
+    "pinyin": "Māma bǎ táng gěi dìdi le.",
+    "mongolian": "Ээж чихрийг дүүд өгчихлөө."
+   },
+   {
+    "chinese": "弟弟把我们的糖都给那个同学了。",
+    "pinyin": "Dìdi bǎ wǒmen de táng dōu gěi nà ge tóngxué le.",
+    "mongolian": "Дүү маань бидний бүх чихрийг тэр ангийн найздаа өгчихөж."
+   },
+   {
+    "chinese": "我的水果也没有了。",
+    "pinyin": "Wǒ de shuǐguǒ yě méiyǒu le.",
+    "mongolian": "Миний жимс ч алга болчихлоо."
+   },
+   {
+    "chinese": "猴子妈妈把我们的东西给小猴子了。",
+    "pinyin": "Hóuzi māma bǎ wǒmen de dōngxi gěi xiǎo hóuzi le.",
+    "mongolian": "Сармагчин ээж бидний юмыг хүүдээ өгчихжээ."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "妈妈把糖给弟弟。(өгчихсөн гэж)",
+    "right": "妈妈把糖给弟弟了。",
+    "why": "Өгчихсөн гэхэд төгсгөлд 了 хэрэгтэй."
+   }
+  ],
+  "check": {
+   "question": "«Ээж чихрийг дүүд өгчихлөө» хятадаар:",
+   "options": [
+    "妈妈把糖给弟弟了。",
+    "妈妈吃糖。",
+    "弟弟呢？"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "妈妈把糖给弟弟 ________ 。",
+    "options": [
+     "吗",
+     "了",
+     "吧"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 了 = өгчихлөө.",
+    "explanation_wrong_mn": "Дууссаныг 了 илэрхийлнэ."
+   },
+   {
+    "type": "choice",
+    "question": "«Миний жимс алга болчихлоо» хятадаар:",
+    "options": [
+     "我要水果。",
+     "我的水果吃了吗？",
+     "我的水果没有了。"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "没有了 = алга болчихлоо."
+   },
+   {
+    "type": "judge",
+    "question": "«弟弟呢？» гэдэг нь «дүү хаана байна?» гэсэн асуулт.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 呢 нь «хаана вэ?» гэж асууна.",
+    "explanation_wrong_mn": "弟弟呢？ = дүү хаана вэ?"
+   }
+  ]
+ },
+ {
+  "point": "要水果吗？ · 把西瓜给我吧。 — асуух, гуйх",
+  "gloss_mn": "吗 — асуух, 吧 — зөөлөн гуйх",
+  "structure": "…… 吗？ (асуух)  /  …… 吧。 (гуйх)",
+  "teacher_mn": "Асуумаар байвал төгсгөлд нь «吗» нэм: «要水果吗？» — жимс авах уу? Гуйж, санал болгомоор байвал «吧» нэм: «把西瓜给我吧» — тарвасыг надад өгөөч. Хос хосоороо ээлжлэн асуугаад, гуйгаад үз!",
+  "teacher_notes": "Яриа 1: 要水果吗？ 把西瓜给我吧。 Яриа 2: 把糖给我吧。",
+  "examples": [
+   {
+    "chinese": "要水果吗？",
+    "pinyin": "Yào shuǐguǒ ma?",
+    "mongolian": "Жимс авах уу?"
+   },
+   {
+    "chinese": "把西瓜给我吧。",
+    "pinyin": "Bǎ xīguā gěi wǒ ba.",
+    "mongolian": "Тарвасыг надад өгөөч."
+   },
+   {
+    "chinese": "把糖给我吧。",
+    "pinyin": "Bǎ táng gěi wǒ ba.",
+    "mongolian": "Чихрээ надад өгөөч."
+   },
+   {
+    "chinese": "我还有面包，把面包也给小猴子吧。",
+    "pinyin": "Wǒ hái yǒu miànbāo, bǎ miànbāo yě gěi xiǎo hóuzi ba.",
+    "mongolian": "Надад талх үлдсэн байна. Талхаа ч хүү сармагчинд өгье."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "要水果吧？",
+    "right": "要水果吗？",
+    "why": "Асуухад 吗, гуйхад 吧."
+   }
+  ],
+  "check": {
+   "question": "«Жимс авах уу?» хятадаар:",
+   "options": [
+    "把糖给我吧。",
+    "我吃面包。",
+    "要水果吗？"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "要水果 ________ ？",
+    "options": [
+     "吧",
+     "了",
+     "吗"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 吗 нь асуулт болгоно.",
+    "explanation_wrong_mn": "Асуултын төгсгөлд 吗."
+   },
+   {
+    "type": "choice",
+    "question": "把西瓜给我 ________ 。",
+    "options": [
+     "吗",
+     "什么",
+     "吧"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 吧 = гуйх.",
+    "explanation_wrong_mn": "Зөөлөн гуйхад 吧."
+   },
+   {
+    "type": "judge",
+    "question": "«你吃什么？» гэдэг нь «чи юу идэх вэ?» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 什么 = юу.",
+    "explanation_wrong_mn": "你吃什么？ = чи юу идэх вэ?"
+   }
+  ]
+ }
+]

@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Чихэр» хятадаар аль нь вэ?",
+  "options": [
+   "糖",
+   "鸡蛋",
+   "水果",
+   "西瓜"
+  ],
+  "correct_answer": "糖",
+  "explanation": "糖 (táng) = чихэр.",
+  "order_index": 1,
+  "id": "yct-3-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Жимс» хятадаар аль нь вэ?",
+  "options": [
+   "糖",
+   "面包",
+   "果汁",
+   "水果"
+  ],
+  "correct_answer": "水果",
+  "explanation": "水果 (shuǐguǒ) = жимс.",
+  "order_index": 2,
+  "id": "yct-3-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тарвас» хятадаар аль нь вэ?",
+  "options": [
+   "面包",
+   "苹果",
+   "鸡蛋",
+   "西瓜"
+  ],
+  "correct_answer": "西瓜",
+  "explanation": "西瓜 (xīguā) = тарвас.",
+  "order_index": 3,
+  "id": "yct-3-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тахианы өндөг» хятадаар аль нь вэ?",
+  "options": [
+   "包子",
+   "鸡蛋",
+   "西瓜",
+   "糖"
+  ],
+  "correct_answer": "鸡蛋",
+  "explanation": "鸡蛋 (jīdàn) = өндөг.",
+  "order_index": 4,
+  "id": "yct-3-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«面包» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "талх",
+   "чихэр",
+   "жимс",
+   "сүү"
+  ],
+  "correct_answer": "талх",
+  "explanation": "面包 (miànbāo) = талх.",
+  "order_index": 5,
+  "id": "yct-3-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«果汁» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өндөг",
+   "жимсний шүүс",
+   "чихэр",
+   "талх"
+  ],
+  "correct_answer": "жимсний шүүс",
+  "explanation": "果汁 (guǒzhī) = жимсний шүүс.",
+  "order_index": 6,
+  "id": "yct-3-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«猴子» гэдэг амьтан аль нь вэ?",
+  "options": [
+   "заан",
+   "сармагчин",
+   "нохой",
+   "муур"
+  ],
+  "correct_answer": "сармагчин",
+  "explanation": "猴子 (hóuzi) = сармагчин.",
+  "order_index": 7,
+  "id": "yct-3-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«给» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өгөх",
+   "харах",
+   "уух",
+   "идэх"
+  ],
+  "correct_answer": "өгөх",
+  "explanation": "给 (gěi) = өгөх.",
+  "order_index": 8,
+  "id": "yct-3-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тарвасыг надад өгөөч» хятадаар:",
+  "options": [
+   "把西瓜给我。",
+   "要水果吗？",
+   "我吃鸡蛋。",
+   "你吃什么？"
+  ],
+  "correct_answer": "把西瓜给我。",
+  "explanation": "把 + юу + 给 + хэнд.",
+  "order_index": 9,
+  "id": "yct-3-l11-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ээж чихрийг дүүд өгчихлөө» хятадаар:",
+  "options": [
+   "把糖给我吧。",
+   "妈妈吃糖。",
+   "妈妈把糖给弟弟了。",
+   "弟弟吃糖了吗？"
+  ],
+  "correct_answer": "妈妈把糖给弟弟了。",
+  "explanation": "把糖给弟弟了 = чихрийг дүүд өгчихлөө.",
+  "order_index": 10,
+  "id": "yct-3-l11-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д аав юу авахыг хүссэн бэ?",
+  "options": [
+   "蛋糕",
+   "糖",
+   "果汁",
+   "西瓜"
+  ],
+  "correct_answer": "西瓜",
+  "explanation": "Аав «把西瓜给我吧» гэсэн.",
+  "order_index": 11,
+  "id": "yct-3-l11-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д аав юу идэж байна?",
+  "options": [
+   "蛋糕",
+   "包子和西瓜",
+   "糖和水果",
+   "面包和鸡蛋"
+  ],
+  "correct_answer": "面包和鸡蛋",
+  "explanation": "«我吃面包和鸡蛋» — талх, өндөг.",
+  "order_index": 12,
+  "id": "yct-3-l11-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т чихэр хаана байна?",
+  "options": [
+   "爸爸吃了",
+   "妈妈吃了",
+   "猴子吃了",
+   "弟弟给同学了"
+  ],
+  "correct_answer": "弟弟给同学了",
+  "explanation": "Дүү бүх чихрийг ангийн найздаа өгчихсөн.",
+  "order_index": 13,
+  "id": "yct-3-l11-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）西瓜给我吧。",
+  "options": [
+   "把",
+   "和",
+   "吗",
+   "了"
+  ],
+  "correct_answer": "把",
+  "explanation": "把西瓜给我吧 = тарвасыг надад өгөөч.",
+  "order_index": 14,
+  "id": "yct-3-l11-q14",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈把糖给弟弟（ ）。(өгчихлөө)",
+  "options": [
+   "吗",
+   "了",
+   "什么",
+   "吧"
+  ],
+  "correct_answer": "了",
+  "explanation": "了 = өгчихлөө.",
+  "order_index": 15,
+  "id": "yct-3-l11-q15",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "要水果（ ）？(асуулт)",
+  "options": [
+   "吧",
+   "吗",
+   "把",
+   "了"
+  ],
+  "correct_answer": "吗",
+  "explanation": "吗 = асуулт.",
+  "order_index": 16,
+  "id": "yct-3-l11-q16",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我吃面包（ ）鸡蛋。",
+  "options": [
+   "把",
+   "了",
+   "和",
+   "给"
+  ],
+  "correct_answer": "和",
+  "explanation": "和 = ба, болон.",
+  "order_index": 17,
+  "id": "yct-3-l11-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "把糖（ ）我吧。",
+  "options": [
+   "喝",
+   "看",
+   "吃",
+   "给"
+  ],
+  "correct_answer": "给",
+  "explanation": "把糖给我 = чихрийг надад өг.",
+  "order_index": 18,
+  "id": "yct-3-l11-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«你吃什么？» гэдэг юу гэж асууж байна вэ?",
+  "options": [
+   "Чи хэн бэ?",
+   "Чи юу идэх вэ?",
+   "Чи хэдэн настай вэ?",
+   "Чи хаана байна?"
+  ],
+  "correct_answer": "Чи юу идэх вэ?",
+  "explanation": "什么 = юу.",
+  "order_index": 19,
+  "id": "yct-3-l11-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«弟弟呢？» гэж асуувал юу гэсэн үг вэ?",
+  "options": [
+   "Дүү хэдэн настай вэ?",
+   "Дүү өндөр үү?",
+   "Дүү юу идэж байна?",
+   "Дүү хаана байна?"
+  ],
+  "correct_answer": "Дүү хаана байна?",
+  "explanation": "呢 нь «хаана вэ?» гэж асууна.",
+  "order_index": 20,
+  "id": "yct-3-l11-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xīguā» гэж уншдаг үг:",
+  "options": [
+   "西瓜",
+   "水果",
+   "鸡蛋",
+   "面包"
+  ],
+  "correct_answer": "西瓜",
+  "explanation": "西瓜 = xīguā = тарвас.",
+  "order_index": 21,
+  "id": "yct-3-l11-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jīdàn» гэж уншдаг үг:",
+  "options": [
+   "西瓜",
+   "蛋糕",
+   "果汁",
+   "鸡蛋"
+  ],
+  "correct_answer": "鸡蛋",
+  "explanation": "鸡蛋 = jīdàn = өндөг.",
+  "order_index": 22,
+  "id": "yct-3-l11-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shuǐguǒ» гэж уншдаг үг:",
+  "options": [
+   "面包",
+   "水果",
+   "果汁",
+   "西瓜"
+  ],
+  "correct_answer": "水果",
+  "explanation": "水果 = shuǐguǒ = жимс.",
+  "order_index": 23,
+  "id": "yct-3-l11-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ширээн дээрээс чихрээ авмаар байна. Юу гэх вэ?",
+  "options": [
+   "我吃面包。",
+   "弟弟呢？",
+   "你吃什么？",
+   "把糖给我吧。"
+  ],
+  "correct_answer": "把糖给我吧。",
+  "explanation": "把……给我吧 = …-ыг надад өгөөч.",
+  "order_index": 24,
+  "id": "yct-3-l11-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ээж «要水果吗？» гэж асуулаа. Тарвас авмаар байвал:",
+  "options": [
+   "弟弟呢？",
+   "我吃面包。",
+   "把西瓜给我吧。",
+   "谁吃了我的蛋糕？"
+  ],
+  "correct_answer": "把西瓜给我吧。",
+  "explanation": "Тарвас авахыг хүсвэл «把西瓜给我吧».",
+  "order_index": 25,
+  "id": "yct-3-l11-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "野餐 үлгэрт сармагчин ээж хэнд хоол өгсөн бэ?",
+  "options": [
+   "弟弟",
+   "同学",
+   "小猴子",
+   "老师"
+  ],
+  "correct_answer": "小猴子",
+  "explanation": "猴子妈妈把我们的东西给小猴子了 — хүү сармагчинд.",
+  "order_index": 26,
+  "id": "yct-3-l11-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Үлгэрийн төгсгөлд хүүхэд талхаа хэнд өгсөн бэ?",
+  "options": [
+   "弟弟",
+   "小猴子",
+   "妈妈",
+   "爸爸"
+  ],
+  "correct_answer": "小猴子",
+  "explanation": "把面包也给小猴子吧 — талхыг ч хүү сармагчинд өгье.",
+  "order_index": 27,
+  "id": "yct-3-l11-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«谁吃了我的蛋糕？» гэж хэлбэл:",
+  "options": [
+   "Надад бялуу байхгүй",
+   "Миний бялууг хэн идчихэв?",
+   "Миний бялуу амттай байна",
+   "Бялуу өгөөч"
+  ],
+  "correct_answer": "Миний бялууг хэн идчихэв?",
+  "explanation": "谁 = хэн; 吃了 = идчихэв.",
+  "order_index": 28,
+  "id": "yct-3-l11-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

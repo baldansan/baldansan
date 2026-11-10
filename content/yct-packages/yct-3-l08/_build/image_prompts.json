@@ -1,0 +1,151 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "下雪了。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel in glasses and three young camels (yellow calf boy in blue vest, calf girl in yellow dress, brown calf in green hat) in warm winter clothes, laughing in the falling snow beside a snowman; a speech bubble with the Chinese text 下雪了！ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "哥哥，你看，下雪了！",
+  "section": "dialogue",
+  "prompt": "Two young camels (calf girl and calf boy) at a window excitedly pointing at snow falling outside, speech bubble with the Chinese text 哥哥，你看，下雪了！ in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "你听，外面下雨了",
+  "section": "dialogue",
+  "prompt": "Inside a cozy room, a small calf boy points to the rainy window while an older calf girl in a pink jacket ties her running shoes; speech bubble with the Chinese text 你听，外面下雨了 in large clear black font. No English text.",
+  "chars": [
+   "bor",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "外面外面下雪了",
+  "section": "song",
+  "prompt": "Four young camels and the teacher camel build a snowman with a red hat and long carrot nose in a snowy courtyard, clapping and singing happily. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xiaxue.jpg",
+  "aspect": "1:1",
+  "title": "下雪",
+  "section": "vocabulary",
+  "prompt": "A snowy day with big snowflakes falling on a young camel who catches them on its tongue. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ting.jpg",
+  "aspect": "1:1",
+  "title": "听",
+  "section": "vocabulary",
+  "prompt": "A young camel putting a hand behind its ear, listening carefully, musical notes floating. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xiayu.jpg",
+  "aspect": "1:1",
+  "title": "下雨",
+  "section": "vocabulary",
+  "prompt": "A young camel under a big umbrella in the rain with raindrops and puddles. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-waimian.jpg",
+  "aspect": "1:1",
+  "title": "外面",
+  "section": "vocabulary",
+  "prompt": "A young camel standing outside a house door in the garden, house behind it. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-chu.jpg",
+  "aspect": "1:1",
+  "title": "出",
+  "section": "vocabulary",
+  "prompt": "A young camel stepping out through a front door into the sunshine, arrow pointing outwards. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-bie.jpg",
+  "aspect": "1:1",
+  "title": "别",
+  "section": "vocabulary",
+  "prompt": "A young camel holding up a hand in a clear stop gesture, a red crossed circle behind. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zuoye.jpg",
+  "aspect": "1:1",
+  "title": "作业",
+  "section": "vocabulary",
+  "prompt": "A young camel at a desk writing in an exercise book with a pencil and a stack of books. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-leng.jpg",
+  "aspect": "1:1",
+  "title": "冷",
+  "section": "vocabulary",
+  "prompt": "A young camel in a red coat and scarf shivering in the snow. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-re.jpg",
+  "aspect": "1:1",
+  "title": "热",
+  "section": "vocabulary",
+  "prompt": "A young camel sweating under a hot sun with sunglasses, wiping its forehead. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-limian.jpg",
+  "aspect": "1:1",
+  "title": "里面",
+  "section": "vocabulary",
+  "prompt": "A small dog sitting inside its kennel, the camel pointing at the inside. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ }
+]

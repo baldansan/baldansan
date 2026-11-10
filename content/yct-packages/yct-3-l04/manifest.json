@@ -1,0 +1,172 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-3",
+ "lessonId": "yct-3-l04",
+ "hskLevel": 2,
+ "lessonNumber": 4,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "喂，您好！",
+ "mongolianTitle": "Халло, сайн байна уу!",
+ "series": "YCT 标准教程 3",
+ "seriesLabel_mn": "YCT 3 — Хүүхдийн хятад хэл (≈HSK2)",
+ "source": "YCT 标准教程 3 · 第4课 (сурах бичиг + CD аудио 04-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-3-04-text-song.mp3",
+  "dialogues": "audio/yct-3-04-02.mp3",
+  "words": "audio/yct-3-04-01.mp3",
+  "story": "audio/yct-3-04-03.mp3",
+  "song": "audio/yct-3-04-03.mp3",
+  "test": "audio/yct-3-04-04.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-3-l04",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "喂，您好！",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "w-wei",
+    "file": "images/w-wei.jpg",
+    "title": "喂",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nin",
+    "file": "images/w-nin.jpg",
+    "title": "您",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhao",
+    "file": "images/w-zhao.jpg",
+    "title": "找",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hui",
+    "file": "images/w-hui.jpg",
+    "title": "回",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wenti",
+    "file": "images/w-wenti.jpg",
+    "title": "问题",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wen",
+    "file": "images/w-wen.jpg",
+    "title": "问",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "喂，您好！我找我妈妈。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "喂，您好！张老师在吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "两个小娃娃",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "play",
+    "file": "images/play.png",
+    "title": "Let's play · нуугдсан зургууд",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test t1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test t2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test t3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test t4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5a",
+    "file": "images/t5a.png",
+    "title": "Test t5a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5b",
+    "file": "images/t5b.png",
+    "title": "Test t5b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5c",
+    "file": "images/t5c.png",
+    "title": "Test t5c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5d",
+    "file": "images/t5d.png",
+    "title": "Test t5d",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L4)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,488 @@
+[
+ {
+  "type": "choice",
+  "question": "«Нар» хятадаар аль нь вэ?",
+  "options": [
+   "太阳",
+   "苹果",
+   "月亮",
+   "爷爷"
+  ],
+  "correct_answer": "太阳",
+  "explanation": "太阳 (tàiyáng) = нар.",
+  "order_index": 1,
+  "id": "yct-3-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сар» хятадаар аль нь вэ?",
+  "options": [
+   "太阳",
+   "奶奶",
+   "妈妈",
+   "月亮"
+  ],
+  "correct_answer": "月亮",
+  "explanation": "月亮 (yuèliang) = сар.",
+  "order_index": 2,
+  "id": "yct-3-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Гүйх» хятадаар аль нь вэ?",
+  "options": [
+   "吃",
+   "唱歌",
+   "跳舞",
+   "跑步"
+  ],
+  "correct_answer": "跑步",
+  "explanation": "跑步 (pǎobù) = гүйх.",
+  "order_index": 3,
+  "id": "yct-3-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Өвөө» хятадаар аль нь вэ?",
+  "options": [
+   "老师",
+   "爷爷",
+   "爸爸",
+   "奶奶"
+  ],
+  "correct_answer": "爷爷",
+  "explanation": "爷爷 (yéye) = өвөө.",
+  "order_index": 4,
+  "id": "yct-3-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эмээ» хятадаар аль нь вэ?",
+  "options": [
+   "奶奶",
+   "妈妈",
+   "爷爷",
+   "月亮"
+  ],
+  "correct_answer": "奶奶",
+  "explanation": "奶奶 (nǎinai) = эмээ.",
+  "order_index": 5,
+  "id": "yct-3-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дуулах» хятадаар аль нь вэ?",
+  "options": [
+   "跑步",
+   "唱歌",
+   "看",
+   "跳舞"
+  ],
+  "correct_answer": "唱歌",
+  "explanation": "唱歌 (chànggē) = дуулах.",
+  "order_index": 6,
+  "id": "yct-3-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бүжиглэх» хятадаар аль нь вэ?",
+  "options": [
+   "喝",
+   "跳舞",
+   "唱歌",
+   "跑步"
+  ],
+  "correct_answer": "跳舞",
+  "explanation": "跳舞 (tiàowǔ) = бүжиглэх.",
+  "order_index": 7,
+  "id": "yct-3-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«让» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "зөвшөөрөх, …болгох",
+   "ба",
+   "дуулах",
+   "гүйх"
+  ],
+  "correct_answer": "зөвшөөрөх, …болгох",
+  "explanation": "让 (ràng) — «让我看看» гэх мэтээр хэрэглэнэ.",
+  "order_index": 8,
+  "id": "yct-3-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи юу хийж байна?» хятадаар:",
+  "options": [
+   "你在做什么呢？",
+   "我在画画儿呢。",
+   "爷爷唱歌呢。",
+   "让我看看。"
+  ],
+  "correct_answer": "你在做什么呢？",
+  "explanation": "在……呢 = ...ж байна.",
+  "order_index": 9,
+  "id": "yct-3-l03-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би зураг зурж байна» хятадаар:",
+  "options": [
+   "奶奶跳舞呢。",
+   "你在做什么呢？",
+   "我在画画儿呢。",
+   "让我看看。"
+  ],
+  "correct_answer": "我在画画儿呢。",
+  "explanation": "画画儿 = зураг зурах.",
+  "order_index": 10,
+  "id": "yct-3-l03-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д охин юу зурсан бэ?",
+  "options": [
+   "Эмээ бүжиглэж байгаа",
+   "Өвөө дуулж байгаа",
+   "Алим",
+   "Нар сар гүйж байгаа"
+  ],
+  "correct_answer": "Нар сар гүйж байгаа",
+  "explanation": "太阳和月亮在跑步 — нар сар гүйж байна.",
+  "order_index": 11,
+  "id": "yct-3-l03-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т өвөө юу хийж байна?",
+  "options": [
+   "画画儿",
+   "跑步",
+   "跳舞",
+   "唱歌"
+  ],
+  "correct_answer": "唱歌",
+  "explanation": "爷爷唱歌呢 — өвөө дуулж байна.",
+  "order_index": 12,
+  "id": "yct-3-l03-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）画画儿呢。",
+  "options": [
+   "和",
+   "让",
+   "真",
+   "在"
+  ],
+  "correct_answer": "在",
+  "explanation": "在……呢 = ...ж байна.",
+  "order_index": 13,
+  "id": "yct-3-l03-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）我看看。",
+  "options": [
+   "让",
+   "和",
+   "在",
+   "吃"
+  ],
+  "correct_answer": "让",
+  "explanation": "让我看看 = Би хараад үзье.",
+  "order_index": 14,
+  "id": "yct-3-l03-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "太阳（ ）月亮在跑步。",
+  "options": [
+   "让",
+   "和",
+   "吗",
+   "呢"
+  ],
+  "correct_answer": "和",
+  "explanation": "和 = ба.",
+  "order_index": 15,
+  "id": "yct-3-l03-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "奶奶（ ）太阳一起跳舞。",
+  "options": [
+   "让",
+   "跟",
+   "吃",
+   "在"
+  ],
+  "correct_answer": "跟",
+  "explanation": "跟……一起 = …тай хамт.",
+  "order_index": 16,
+  "id": "yct-3-l03-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«让我看看，好吗？» гэж хэзээ хэлэх вэ?",
+  "options": [
+   "Дуулмаар байхад",
+   "Сайн уу гэхэд",
+   "Найзын зургийг үзмээр байхад",
+   "Өвөө дуудахад"
+  ],
+  "correct_answer": "Найзын зургийг үзмээр байхад",
+  "explanation": "让我看看 = Би хараад үзье.",
+  "order_index": 17,
+  "id": "yct-3-l03-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«让我坐坐» гэвэл юу хийхийг хүсч байна вэ?",
+  "options": [
+   "Зурах",
+   "Дуулах",
+   "Гүйх",
+   "Суух"
+  ],
+  "correct_answer": "Суух",
+  "explanation": "坐 = суух.",
+  "order_index": 18,
+  "id": "yct-3-l03-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«让我玩玩» гэвэл юу хийхийг хүсч байна вэ?",
+  "options": [
+   "Харах",
+   "Тоглох",
+   "Бүжиглэх",
+   "Суух"
+  ],
+  "correct_answer": "Тоглох",
+  "explanation": "玩 = тоглох.",
+  "order_index": 19,
+  "id": "yct-3-l03-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«让我画画» гэвэл юу хийхийг хүсч байна вэ?",
+  "options": [
+   "Харах",
+   "Гүйх",
+   "Суух",
+   "Зурах"
+  ],
+  "correct_answer": "Зурах",
+  "explanation": "画 = зурах.",
+  "order_index": 20,
+  "id": "yct-3-l03-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «tàiyáng» гэж уншдаг үг:",
+  "options": [
+   "太阳",
+   "月亮",
+   "爷爷",
+   "奶奶"
+  ],
+  "correct_answer": "太阳",
+  "explanation": "太阳 = tàiyáng = нар.",
+  "order_index": 21,
+  "id": "yct-3-l03-q21",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «pǎobù» гэж уншдаг үг:",
+  "options": [
+   "唱歌",
+   "月亮",
+   "跳舞",
+   "跑步"
+  ],
+  "correct_answer": "跑步",
+  "explanation": "跑步 = pǎobù = гүйх.",
+  "order_index": 22,
+  "id": "yct-3-l03-q22",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yéye» гэж уншдаг үг:",
+  "options": [
+   "爸爸",
+   "爷爷",
+   "奶奶",
+   "妈妈"
+  ],
+  "correct_answer": "爷爷",
+  "explanation": "爷爷 = yéye = өвөө.",
+  "order_index": 23,
+  "id": "yct-3-l03-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你在做什么呢？» гэж асуулаа. Чи дуулж байгаа бол:",
+  "options": [
+   "让我看看。",
+   "奶奶唱歌呢。",
+   "我在跳舞呢。",
+   "我在唱歌呢。"
+  ],
+  "correct_answer": "我在唱歌呢。",
+  "explanation": "Дуулж байгаа бол 唱歌.",
+  "order_index": 24,
+  "id": "yct-3-l03-q24",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзынхаа тоглоомыг үзмээр байна. Юу гэх вэ?",
+  "options": [
+   "太阳和月亮。",
+   "我在画画儿呢。",
+   "让我看看，好吗？",
+   "爷爷唱歌呢。"
+  ],
+  "correct_answer": "让我看看，好吗？",
+  "explanation": "让我看看 = Би хараад үзье.",
+  "order_index": 25,
+  "id": "yct-3-l03-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "爷爷和奶奶 үлгэрт өглөө эмээ юу хийдэг вэ?",
+  "options": [
+   "Сартай хамт гүйнэ",
+   "Дуулна",
+   "Нартай хамт бүжиглэнэ",
+   "Зураг зурна"
+  ],
+  "correct_answer": "Нартай хамт бүжиглэнэ",
+  "explanation": "早上，奶奶跟太阳一起跳舞。",
+  "order_index": 26,
+  "id": "yct-3-l03-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "爷爷和奶奶 үлгэрт орой өвөө юу хийдэг вэ?",
+  "options": [
+   "Хоол хийнэ",
+   "Сартай хамт гүйнэ",
+   "Нартай хамт бүжиглэнэ",
+   "Дуулна"
+  ],
+  "correct_answer": "Сартай хамт гүйнэ",
+  "explanation": "晚上，爷爷跟月亮一起跑步。",
+  "order_index": 27,
+  "id": "yct-3-l03-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

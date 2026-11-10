@@ -1,0 +1,126 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "再吃几个。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Camel teacher with glasses and the yellow calf boy at a cozy table, an adult camel grandmother offering a plate of steaming jiaozi dumplings; the grandmother's speech bubble with the Chinese text 再吃几个。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "奶奶，我饿了，有面条儿吗？",
+  "section": "dialogue",
+  "prompt": "Kitchen scene: the yellow camel calf boy with a red backpack raising his arms and holding his tummy, an adult camel grandmother in a blue cardigan holding a plate of jiaozi; speech bubble with the Chinese text 奶奶，我饿了，有面条儿吗？ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d2.jpg",
+  "aspect": "4:3",
+  "title": "奶奶，谢谢您，饺子太好吃了！",
+  "section": "dialogue",
+  "prompt": "The yellow camel calf boy hugging the adult camel grandmother happily at the kitchen table with jiaozi, grandmother offering more; speech bubble with the Chinese text 奶奶，谢谢您，饺子太好吃了！ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "我饿了，吃饺子。",
+  "section": "song",
+  "prompt": "A round-bellied happy yellow camel calf patting his full tummy, a cartoon toy train inside carrying jiaozi, noodles and rice bowls, the camel calf girl in a yellow dress laughing beside him, musical notes around. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-miantiaor.jpg",
+  "aspect": "1:1",
+  "title": "面条儿",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy slurping a big bowl of steaming noodles with chopsticks. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jiaozi.jpg",
+  "aspect": "1:1",
+  "title": "饺子",
+  "section": "vocabulary",
+  "prompt": "The camel calf girl in a yellow dress proudly holding a plate of freshly boiled white jiaozi dumplings. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-e.jpg",
+  "aspect": "1:1",
+  "title": "饿",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy holding his empty tummy with a sad hungry face, tummy rumbling lines. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xiang.jpg",
+  "aspect": "1:1",
+  "title": "想",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in a green hat with a thought bubble showing a plate of jiaozi, finger on his chin. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zui.jpg",
+  "aspect": "1:1",
+  "title": "最",
+  "section": "vocabulary",
+  "prompt": "The camel calf girl hugging one big bowl of jiaozi tightly among many other dishes on the table, as her very favorite, with a gold star. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-gei.jpg",
+  "aspect": "1:1",
+  "title": "给",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy handing a red apple to the brown calf boy with both hands, smiling. No English text.",
+  "chars": [
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zai.jpg",
+  "aspect": "1:1",
+  "title": "再",
+  "section": "vocabulary",
+  "prompt": "The camel calf girl holding out an empty bowl asking for one more jiaozi, an adult camel grandmother putting another dumpling in. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-bao.jpg",
+  "aspect": "1:1",
+  "title": "饱",
+  "section": "vocabulary",
+  "prompt": "The yellow camel calf boy with a big round full tummy, patting it happily, an empty plate in front of him. No English text.",
+  "chars": [
+   "huu"
+  ]
+ }
+]

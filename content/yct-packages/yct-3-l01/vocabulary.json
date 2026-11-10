@@ -1,0 +1,110 @@
+[
+ {
+  "chinese": "年级",
+  "pinyin": "niánjí",
+  "mongolian": "анги (1-р анги, 2-р анги гэх мэт)",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我三年级。",
+  "examplePinyin": "Wǒ sān niánjí.",
+  "exampleMongolian": "Би 3-р ангид сурдаг.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "课",
+  "pinyin": "kè",
+  "mongolian": "хичээл",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我们有汉语课。",
+  "examplePinyin": "Wǒmen yǒu Hànyǔ kè.",
+  "exampleMongolian": "Бидэнд хятад хэлний хичээл бий.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "都",
+  "pinyin": "dōu",
+  "mongolian": "бүгд, хоёулаа",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "我们都有汉语课。",
+  "examplePinyin": "Wǒmen dōu yǒu Hànyǔ kè.",
+  "exampleMongolian": "Бид бүгд хятад хэлний хичээлтэй.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "班",
+  "pinyin": "bān",
+  "mongolian": "анги (хамт сурдаг нөхдүүд)",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我们班有两个张老师。",
+  "examplePinyin": "Wǒmen bān yǒu liǎng ge Zhāng lǎoshī.",
+  "exampleMongolian": "Манай ангид хоёр Жан багш бий.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "张",
+  "pinyin": "Zhāng",
+  "mongolian": "Жан (хятад овог)",
+  "notes": "нэр · нэмэлт үг",
+  "exampleChinese": "张老师是男老师。",
+  "examplePinyin": "Zhāng lǎoshī shì nán lǎoshī.",
+  "exampleMongolian": "Жан багш бол эрэгтэй багш.",
+  "hskLevel": "YCT 3",
+  "keyWord": false,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "还",
+  "pinyin": "hái",
+  "mongolian": "бас, мөн",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "还有一个是女老师。",
+  "examplePinyin": "Hái yǒu yí ge shì nǚ lǎoshī.",
+  "exampleMongolian": "Бас нэг нь эмэгтэй багш.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "新",
+  "pinyin": "xīn",
+  "mongolian": "шинэ",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "他们都是新老师。",
+  "examplePinyin": "Tāmen dōu shì xīn lǎoshī.",
+  "exampleMongolian": "Тэд бүгд шинэ багш нар.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "男",
+  "pinyin": "nán",
+  "mongolian": "эр, эрэгтэй",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "他是男老师。",
+  "examplePinyin": "Tā shì nán lǎoshī.",
+  "exampleMongolian": "Тэр эрэгтэй багш.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 8
+ },
+ {
+  "chinese": "女",
+  "pinyin": "nǚ",
+  "mongolian": "эм, эмэгтэй",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "她是女老师。",
+  "examplePinyin": "Tā shì nǚ lǎoshī.",
+  "exampleMongolian": "Тэр эмэгтэй багш.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 9
+ }
+]

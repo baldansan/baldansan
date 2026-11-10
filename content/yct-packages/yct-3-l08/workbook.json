@@ -1,0 +1,313 @@
+{
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "choice",
+    "instruction_mn": "Сонсох — Аудио (08-05) сонсоод тохирох зургийг A, B, C, D-ээс сонго.",
+    "audio": "audio/yct-3-08-05.mp3",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（听录音）你别说了，我不想听。好好好，不说了。",
+      "script_zh": "男：你别说了，我不想听。 女：好好好，不说了。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "C",
+      "explanation_mn": "«Битгий ярь, би сонсмооргүй байна» — C зураг дээр хүү хоёр чихээ таглачихсан байна. A бороонд шүхэртэй хүүхэд, B хоёр хүүхэд бичиж байна, D цастай газар гэр рүү явж байна."
+     },
+     {
+      "n": 2,
+      "question_zh": "（听录音）今天雪真大！是，我们回去吧。",
+      "script_zh": "女：今天雪真大！ 男：是，我们回去吧。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "D",
+      "explanation_mn": "«Өнөөдөр цас үнэхээр их орлоо! Тийм ээ, буцаж харьцгаая» — D зураг дээр цастай газраар хүн байшин руу явж байна. A бороо, B бичиж буй хүүхдүүд, C чих таглаж буй хүү."
+     },
+     {
+      "n": 3,
+      "question_zh": "（听录音）下雨了，别在外面玩了。没关系。",
+      "script_zh": "女：下雨了，别在外面玩了。 男：没关系。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "A",
+      "explanation_mn": "«Бороо орлоо, гадаа битгий тогло. — Зүгээр ээ» — A зураг дээр хүүхэд бороонд шүхэртэй зогсож байна. B бичиж байна, C чих таглаж байна, D цас."
+     },
+     {
+      "n": 4,
+      "question_zh": "（听录音）太阳出来了，我们出去玩吧。不，我要做作业。",
+      "script_zh": "女：太阳出来了，我们出去玩吧。 男：不，我要做作业。",
+      "options": [
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      "optionImages": [
+       "images/t1a.png",
+       "images/t1b.png",
+       "images/t1c.png",
+       "images/t1d.png"
+      ],
+      "answer": "B",
+      "explanation_mn": "«Нар гарлаа, гараад тоглоцгооё. — Үгүй, би даалгавраа хийнэ» — B зураг дээр хоёр хүүхэд даалгавар бичиж байна. A бороо, C чих таглаж буй хүү, D цас."
+     }
+    ],
+    "answer_source": "YCT 3 Test Answers L8: 1.C 2.D 3.A 4.B"
+   },
+   {
+    "part": 2,
+    "type": "choice",
+    "instruction_mn": "Унших — хоосон зайд тохирох үгийг сонго.",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "外面（　　）了，我不想去了。 我也不去了。",
+      "question_mn": "Гадаа (...), би явмааргүй байна. — Би ч бас явахгүй.",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "说话",
+       "出来",
+       "下雪"
+      ],
+      "answer": "C",
+      "explanation_mn": "Гадаа цас орвол явмааргүй болно: «下雪了». 说话 ярих, 出来 гарч ирэх — утга таарахгүй."
+     },
+     {
+      "n": 6,
+      "question_zh": "请问，白老师在吗？ （　　）。",
+      "question_mn": "Уучлаарай, Бай багш байна уу? — (...).",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "不客气",
+       "她饿了",
+       "她出去了"
+      ],
+      "answer": "C",
+      "explanation_mn": "Багш байгаа эсэхийг асуусан тул «她出去了 — тэр гарсан» гэж хариулна. 不客气 «баярлалаа»-д хариулах үг, 她饿了 «тэр өлсөв» — таарахгүй."
+     },
+     {
+      "n": 7,
+      "question_zh": "（　　）下雨了，你还去跑步吗？ 去。",
+      "question_mn": "(...) бороо орж байна, чи гүйлтэд явах уу? — Явна.",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "里面",
+       "太阳",
+       "外面"
+      ],
+      "answer": "C",
+      "explanation_mn": "«外面下雨了 — гадаа бороо орж байна». 里面 дотор, 太阳 нар — таарахгүй."
+     },
+     {
+      "n": 8,
+      "question_zh": "今天没有（　　），我们出去玩儿吧。 但是我有。",
+      "question_mn": "Өнөөдөр (...) алга, гараад тоглоцгооё. — Гэхдээ надад байгаа.",
+      "options": [
+       "A",
+       "B",
+       "C"
+      ],
+      "optionTexts": [
+       "作业",
+       "运动",
+       "外面"
+      ],
+      "answer": "A",
+      "explanation_mn": "«今天没有作业 — өнөөдөр даалгавар байхгүй». «Гэхдээ надад байгаа» гэхээр даалгавар. 外面 гадаа, 运动 спорт — таарахгүй."
+     }
+    ],
+    "answer_source": "YCT 3 Test Answers L8: 5.C 6.C 7.C 8.A"
+   },
+   {
+    "part": 3,
+    "type": "match",
+    "instruction_mn": "Let's choose and write — зураг бүрд тохирох үгийг сонго.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "（зураг: халуунд хөлсөө арчиж буй охин）",
+      "image": "images/c1.png",
+      "answer": "热",
+      "explanation_mn": "Нар төөнөж, охин хөлсөө арчиж байна — халуун, 热."
+     },
+     {
+      "n": 2,
+      "question_zh": "（зураг: нохой байшингийнхаа дотор）",
+      "image": "images/c2.png",
+      "answer": "里面",
+      "explanation_mn": "Нохой байшингийн дотор хэвтэж байна — 里面."
+     },
+     {
+      "n": 3,
+      "question_zh": "（зураг: хүү хаалгаар гарч ирж байна）",
+      "image": "images/c3.png",
+      "answer": "出来",
+      "explanation_mn": "Хүү дотроос гадаа гарч ирж байна — 出来."
+     },
+     {
+      "n": 4,
+      "question_zh": "（зураг: зузаан хувцастай даарч буй хүүхэд）",
+      "image": "images/c4.png",
+      "answer": "冷",
+      "explanation_mn": "Хүүхэд даарч чичирч байна — 冷."
+     },
+     {
+      "n": 5,
+      "question_zh": "（зураг: нохой байшингийнхаа гадна）",
+      "image": "images/c5.png",
+      "answer": "外面",
+      "explanation_mn": "Нохой байшингийн гадна байна — 外面."
+     },
+     {
+      "n": 6,
+      "question_zh": "（зураг: хоёр хүү хаалгыг түлхэж байна）",
+      "image": "images/c6.png",
+      "answer": "出去",
+      "explanation_mn": "Хаалгаар гадагш гарч байна — 出去."
+     }
+    ],
+    "answer_source": "Let's choose and write х.40 (зургаар тааруулсан, аудитаар баталгаажсан)"
+   },
+   {
+    "part": 4,
+    "type": "match",
+    "instruction_mn": "Mini story «北京» — сар бүрийн цаг агаарыг тааруул.",
+    "image": "images/story.png",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "4月的北京，……",
+      "answer": "刮风了",
+      "explanation_mn": "1-р зураг — цэцэглэсэн мод, салхи: «刮风了»."
+     },
+     {
+      "n": 2,
+      "question_zh": "7月的北京，……",
+      "answer": "下雨了",
+      "explanation_mn": "2-р зураг — нуур, бороо: «下雨了»."
+     },
+     {
+      "n": 3,
+      "question_zh": "10月的北京，……",
+      "answer": "不冷也不热",
+      "explanation_mn": "3-р зураг — улаан навчтай намрын уул: хүйтэн ч биш, халуун ч биш."
+     },
+     {
+      "n": 4,
+      "question_zh": "1月的北京，……",
+      "answer": "下雪了",
+      "explanation_mn": "4-р зураг — цастай Их хэрэм: «下雪了»."
+     }
+    ],
+    "answer_source": "textbook х.41 (Mini story)"
+   },
+   {
+    "part": 5,
+    "type": "match",
+    "instruction_mn": "Let's chant — дууг сонсоод мөр бүрийг гүйцээ.",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "外面外面下雪了，小朋友们____笑。",
+      "answer": "拍手",
+      "explanation_mn": "Алга таших — 拍手."
+     },
+     {
+      "n": 2,
+      "question_zh": "雪人雪人你____跑，我来给你戴红帽。",
+      "answer": "别",
+      "explanation_mn": "Цасан хүнд «битгий зугт» гэж хэлж байна — 别."
+     },
+     {
+      "n": 3,
+      "question_zh": "雪人雪人开口笑，新朋友们，你们____！",
+      "answer": "好",
+      "explanation_mn": "«你们好» — сайн уу гэж мэндэлнэ."
+     }
+    ],
+    "answer_source": "Let's chant х.41"
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Бичиж үз — «下雪» гэсэн ханзыг дахин бичиж хуул.",
+    "question_zh": "下雪",
+    "answer": "下雪",
+    "explanation_mn": "Зураасыг дээрээс доош, зүүнээс баруун тийш бичнэ."
+   }
+  ]
+ },
+ "speaking": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "Цонхоор хараад цаг агаарыг хэл.",
+    "question_zh": "下雪了！/ 下雨了！",
+    "answer": "外面下雪了。",
+    "explanation_mn": "Өнөөдрийн цаг агаарыг хэл."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "Найздаа «битгий» гэж хэл.",
+    "question_zh": "别……了",
+    "answer": "别跑了！",
+    "explanation_mn": "别 + хөдөлгөөн + 了."
+   },
+   {
+    "n": 3,
+    "prompt_mn": "Цасан хүний дууг дуул.",
+    "question_zh": "外面外面下雪了",
+    "answer": "(нээлттэй)",
+    "explanation_mn": "Аудио 08-04-ийн хамт, алга таш."
+   }
+  ]
+ },
+ "answerSource": "YCT 标准教程 3 · Test Listening Scripts, Test Answers (Lesson 8)"
+}

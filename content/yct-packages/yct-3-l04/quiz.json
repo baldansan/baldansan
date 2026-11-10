@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Халло!» (утсаар) хятадаар аль нь вэ?",
+  "options": [
+   "喂",
+   "问",
+   "您",
+   "找"
+  ],
+  "correct_answer": "喂",
+  "explanation": "喂 (wèi) = халло.",
+  "order_index": 1,
+  "id": "yct-3-l04-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Та» (хүндэтгэж) хятадаар аль нь вэ?",
+  "options": [
+   "你",
+   "我",
+   "他",
+   "您"
+  ],
+  "correct_answer": "您",
+  "explanation": "您 (nín) = та.",
+  "order_index": 2,
+  "id": "yct-3-l04-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«找» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "халло",
+   "асуух",
+   "харих",
+   "хайх"
+  ],
+  "correct_answer": "хайх",
+  "explanation": "找 (zhǎo) = хайх.",
+  "order_index": 3,
+  "id": "yct-3-l04-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«回» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "та",
+   "буцах, харих",
+   "хайх",
+   "асуух"
+  ],
+  "correct_answer": "буцах, харих",
+  "explanation": "回 (huí) = буцах.",
+  "order_index": 4,
+  "id": "yct-3-l04-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«问题» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "асуулт",
+   "багш",
+   "халло",
+   "ээж"
+  ],
+  "correct_answer": "асуулт",
+  "explanation": "问题 (wèntí) = асуулт.",
+  "order_index": 5,
+  "id": "yct-3-l04-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«问» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "харих",
+   "асуух",
+   "сайн",
+   "хайх"
+  ],
+  "correct_answer": "асуух",
+  "explanation": "问 (wèn) = асуух.",
+  "order_index": 6,
+  "id": "yct-3-l04-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Гэртээ харих» хятадаар:",
+  "options": [
+   "喂家",
+   "回家",
+   "找家",
+   "问家"
+  ],
+  "correct_answer": "回家",
+  "explanation": "回家 = гэртээ харих.",
+  "order_index": 7,
+  "id": "yct-3-l04-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Утсаар ярихад эхлээд юу гэж хэлдэг вэ?",
+  "options": [
+   "喂",
+   "对不起",
+   "再见",
+   "谢谢"
+  ],
+  "correct_answer": "喂",
+  "explanation": "Утсаа аваад 喂 гэж хэлнэ.",
+  "order_index": 8,
+  "id": "yct-3-l04-q08",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Би ээжийгээ хайж байна» хятадаар:",
+  "options": [
+   "我找我妈妈。",
+   "张老师回家了。",
+   "你找谁？",
+   "我有一个问题。"
+  ],
+  "correct_answer": "我找我妈妈。",
+  "explanation": "找 = хайх.",
+  "order_index": 9,
+  "id": "yct-3-l04-q09",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи хэнийг хайж байна?» хятадаар:",
+  "options": [
+   "你妈妈是谁？",
+   "你找什么？",
+   "你找谁？",
+   "你在家吗？"
+  ],
+  "correct_answer": "你找谁？",
+  "explanation": "谁 = хэн.",
+  "order_index": 10,
+  "id": "yct-3-l04-q10",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чиний ээж хэн бэ?» хятадаар:",
+  "options": [
+   "我妈妈是医生。",
+   "你找哪个？",
+   "你好！",
+   "你妈妈是谁？"
+  ],
+  "correct_answer": "你妈妈是谁？",
+  "explanation": "是谁 = хэн бэ.",
+  "order_index": 11,
+  "id": "yct-3-l04-q11",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д охины ээж хэн бэ?",
+  "options": [
+   "护士",
+   "小红",
+   "张老师",
+   "黄医生"
+  ],
+  "correct_answer": "黄医生",
+  "explanation": "我妈妈是黄医生 — ээж нь Хуан эмч.",
+  "order_index": 12,
+  "id": "yct-3-l04-q12",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Жан багш гэртээ харьсан» хятадаар:",
+  "options": [
+   "我找张老师。",
+   "张老师在吗？",
+   "张老师好！",
+   "张老师回家了。"
+  ],
+  "correct_answer": "张老师回家了。",
+  "explanation": "回家了 = гэртээ харьсан.",
+  "order_index": 13,
+  "id": "yct-3-l04-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 2-т Жан багш хаана байна?",
+  "options": [
+   "Гэртээ харьсан",
+   "Хичээл орж байна",
+   "Сургууль дээр байна",
+   "Эмнэлэгт байна"
+  ],
+  "correct_answer": "Гэртээ харьсан",
+  "explanation": "张老师回家了 — гэртээ харьсан.",
+  "order_index": 14,
+  "id": "yct-3-l04-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ），您好！",
+  "options": [
+   "找",
+   "喂",
+   "回",
+   "问"
+  ],
+  "correct_answer": "喂",
+  "explanation": "Утсаар ярихад 喂.",
+  "order_index": 15,
+  "id": "yct-3-l04-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）我妈妈。",
+  "options": [
+   "喂",
+   "找",
+   "问题",
+   "您"
+  ],
+  "correct_answer": "找",
+  "explanation": "Ээжийгээ хайна — 找.",
+  "order_index": 16,
+  "id": "yct-3-l04-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我有一个（ ）。",
+  "options": [
+   "找",
+   "喂",
+   "问题",
+   "回家"
+  ],
+  "correct_answer": "问题",
+  "explanation": "Асуулт = 问题.",
+  "order_index": 17,
+  "id": "yct-3-l04-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "可以（ ）您吗？",
+  "options": [
+   "问题",
+   "您",
+   "喂",
+   "问"
+  ],
+  "correct_answer": "问",
+  "explanation": "可以问您吗 = танаас асууж болох уу.",
+  "order_index": 18,
+  "id": "yct-3-l04-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Багшдаа хүндэтгэж «Сайн байна уу» гэхдээ:",
+  "options": [
+   "老师，谢谢！",
+   "老师，您好！",
+   "老师，我找你！",
+   "老师，再见！"
+  ],
+  "correct_answer": "老师，您好！",
+  "explanation": "您好 = хүндэтгэсэн мэндчилгээ.",
+  "order_index": 19,
+  "id": "yct-3-l04-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你找什么？» гэж асуувал юу гэж асууж байна вэ?",
+  "options": [
+   "Чи хэнийг хайж байна?",
+   "Чи хэн бэ?",
+   "Чи хаана байна?",
+   "Чи юу хайж байна?"
+  ],
+  "correct_answer": "Чи юу хайж байна?",
+  "explanation": "什么 = юу.",
+  "order_index": 20,
+  "id": "yct-3-l04-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«可以问您吗？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Танаас асууж болох уу?",
+   "Танд асуулт байна уу?",
+   "Та хаана байна?",
+   "Та хэн бэ?"
+  ],
+  "correct_answer": "Танаас асууж болох уу?",
+  "explanation": "可以……吗 = …болох уу.",
+  "order_index": 21,
+  "id": "yct-3-l04-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«这儿有两个黄医生，你找哪个？» — «哪个» юу гэсэн үг вэ?",
+  "options": [
+   "хэн",
+   "хаана",
+   "юу",
+   "аль нь"
+  ],
+  "correct_answer": "аль нь",
+  "explanation": "哪个 = аль нь.",
+  "order_index": 22,
+  "id": "yct-3-l04-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «wèntí» гэж уншдаг үг:",
+  "options": [
+   "您好",
+   "问题",
+   "找",
+   "回家"
+  ],
+  "correct_answer": "问题",
+  "explanation": "问题 = wèntí = асуулт.",
+  "order_index": 23,
+  "id": "yct-3-l04-q23",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhǎo» гэж уншдаг үг:",
+  "options": [
+   "回",
+   "您",
+   "问",
+   "找"
+  ],
+  "correct_answer": "找",
+  "explanation": "找 = zhǎo = хайх.",
+  "order_index": 24,
+  "id": "yct-3-l04-q24",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nín» гэж уншдаг үг:",
+  "options": [
+   "问",
+   "你",
+   "您",
+   "找"
+  ],
+  "correct_answer": "您",
+  "explanation": "您 = nín = та.",
+  "order_index": 25,
+  "id": "yct-3-l04-q25",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Утсаар найздаа залгаад «Чи хаана байна?» гэж асуух:",
+  "options": [
+   "你找谁？",
+   "你是谁？",
+   "你在哪里？",
+   "我有一个问题。"
+  ],
+  "correct_answer": "你在哪里？",
+  "explanation": "在哪里 = хаана байна.",
+  "order_index": 26,
+  "id": "yct-3-l04-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Багшаас асуулт асуух гэж байна. Эхлээд юу гэх вэ?",
+  "options": [
+   "张老师回家了。",
+   "我有一个问题，可以问您吗？",
+   "我找我妈妈。",
+   "喂，再见！"
+  ],
+  "correct_answer": "我有一个问题，可以问您吗？",
+  "explanation": "Эелдгээр зөвшөөрөл асууна.",
+  "order_index": 27,
+  "id": "yct-3-l04-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«两个小娃娃» дуунд «你在做什么？» гэж асуухад хариулсан мөр:",
+  "options": [
+   "我找我妈妈。",
+   "我在学画画儿。",
+   "我在我的家。",
+   "我有一个问题。"
+  ],
+  "correct_answer": "我在学画画儿。",
+  "explanation": "Дууны сүүлийн мөр: 哎哎哎，我在学画画儿。",
+  "order_index": 28,
+  "id": "yct-3-l04-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

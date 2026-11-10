@@ -1,0 +1,98 @@
+[
+ {
+  "chinese": "运动",
+  "pinyin": "yùndòng",
+  "mongolian": "спорт, биеийн тамир",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "你喜欢什么运动？",
+  "examplePinyin": "Nǐ xǐhuan shénme yùndòng?",
+  "exampleMongolian": "Чи ямар спортод дуртай вэ?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "游泳",
+  "pinyin": "yóuyǒng",
+  "mongolian": "сэлэх",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我喜欢游泳。",
+  "examplePinyin": "Wǒ xǐhuan yóuyǒng.",
+  "exampleMongolian": "Би сэлэх дуртай.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "打篮球",
+  "pinyin": "dǎ lánqiú",
+  "mongolian": "сагсан бөмбөг тоглох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "他每天打篮球。",
+  "examplePinyin": "Tā měitiān dǎ lánqiú.",
+  "exampleMongolian": "Тэр өдөр бүр сагсан бөмбөг тоглодог.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "踢足球",
+  "pinyin": "tī zúqiú",
+  "mongolian": "хөл бөмбөг тоглох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我们在学校踢足球。",
+  "examplePinyin": "Wǒmen zài xuéxiào tī zúqiú.",
+  "exampleMongolian": "Бид сургууль дээрээ хөл бөмбөг тоглодог.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "太",
+  "pinyin": "tài",
+  "mongolian": "дэндүү, үнэхээр",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "太好了！",
+  "examplePinyin": "Tài hǎo le!",
+  "exampleMongolian": "Үнэхээр сайхан юм!",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "每",
+  "pinyin": "měi",
+  "mongolian": "бүр, тус бүр",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "我每天都运动。",
+  "examplePinyin": "Wǒ měitiān dōu yùndòng.",
+  "exampleMongolian": "Би өдөр бүр спорт хийдэг.",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "一起",
+  "pinyin": "yìqǐ",
+  "mongolian": "хамт",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "我们一起玩，好吗？",
+  "examplePinyin": "Wǒmen yìqǐ wán, hǎo ma?",
+  "exampleMongolian": "Бид хамт тоглоё, за юу?",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "欢迎",
+  "pinyin": "huānyíng",
+  "mongolian": "тавтай морилно уу, угтан авах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "欢迎，欢迎！",
+  "examplePinyin": "Huānyíng, huānyíng!",
+  "exampleMongolian": "Тавтай морилно уу, тавтай морил!",
+  "hskLevel": "YCT 3",
+  "keyWord": true,
+  "orderIndex": 8
+ }
+]

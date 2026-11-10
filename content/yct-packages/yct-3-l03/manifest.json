@@ -1,0 +1,221 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-3",
+ "lessonId": "yct-3-l03",
+ "hskLevel": 2,
+ "lessonNumber": 3,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我在画画儿呢。",
+ "mongolianTitle": "Би зураг зурж байна",
+ "series": "YCT 标准教程 3",
+ "seriesLabel_mn": "YCT 3 — Хүүхдийн хятад хэл (≈HSK2)",
+ "source": "YCT 标准教程 3 · 第3课 (сурах бичиг + CD аудио 03-01,02,04,05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-3-03-text-song.mp3",
+  "dialogues": "audio/yct-3-03-02.mp3",
+  "words": "audio/yct-3-03-01.mp3",
+  "story": "audio/yct-3-03-04.mp3",
+  "play": "",
+  "test": "audio/yct-3-03-05.mp3",
+  "vocabularyClips": "байхгүй (ASR ажиллаагүй) — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-3-l03",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我在画画儿呢。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你在做什么呢？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "d2",
+    "file": "images/d2.jpg",
+    "title": "爷爷、奶奶做什么呢？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "我们一起来运动",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "story",
+    "file": "images/story.png",
+    "title": "爷爷和奶奶 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "爷爷和奶奶",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-taiyang",
+    "file": "images/w-taiyang.jpg",
+    "title": "太阳",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yueliang",
+    "file": "images/w-yueliang.jpg",
+    "title": "月亮",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-paobu",
+    "file": "images/w-paobu.jpg",
+    "title": "跑步",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yeye",
+    "file": "images/w-yeye.jpg",
+    "title": "爷爷",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nainai",
+    "file": "images/w-nainai.jpg",
+    "title": "奶奶",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-changge",
+    "file": "images/w-changge.jpg",
+    "title": "唱歌",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tiaowu",
+    "file": "images/w-tiaowu.jpg",
+    "title": "跳舞",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-rang",
+    "file": "images/w-rang.jpg",
+    "title": "让",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1a",
+    "file": "images/t1a.png",
+    "title": "Test 1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1b",
+    "file": "images/t1b.png",
+    "title": "Test 1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1c",
+    "file": "images/t1c.png",
+    "title": "Test 1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t1d",
+    "file": "images/t1d.png",
+    "title": "Test 1d",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t7",
+    "file": "images/t7.png",
+    "title": "Test 7",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t8",
+    "file": "images/t8.png",
+    "title": "Test 8",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "m1",
+    "file": "images/m1.png",
+    "title": "Let's match 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "m2",
+    "file": "images/m2.png",
+    "title": "Let's match 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "m3",
+    "file": "images/m3.png",
+    "title": "Let's match 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "m4",
+    "file": "images/m4.png",
+    "title": "Let's match 4",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L3)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}
