@@ -1,0 +1,200 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l10",
+ "hskLevel": 3,
+ "lessonNumber": 10,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你的汉语会越来越好。",
+ "mongolianTitle": "Чиний хятад хэл улам улам сайжирна",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第10课 (сурах бичиг + CD аудио 10-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-10-text-song.mp3",
+  "dialogues": "audio/yct-5-10-02.mp3",
+  "words": "audio/yct-5-10-01.mp3",
+  "story": "audio/yct-5-10-04.mp3",
+  "speech": "audio/yct-5-10-03.mp3",
+  "test": "audio/yct-5-10-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l10",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你的汉语会越来越好。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你在写作业吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我每天认真写作业",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "杰克学汉语",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "杰克学汉语 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-kaoshi",
+    "file": "images/w-kaoshi.jpg",
+    "title": "考试",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chengji",
+    "file": "images/w-chengji.jpg",
+    "title": "成绩",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-liaotianr",
+    "file": "images/w-liaotianr.jpg",
+    "title": "聊天儿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-fuxi",
+    "file": "images/w-fuxi.jpg",
+    "title": "复习",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhunbei",
+    "file": "images/w-zhunbei.jpg",
+    "title": "准备",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nuli",
+    "file": "images/w-nuli.jpg",
+    "title": "努力",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yiding",
+    "file": "images/w-yiding.jpg",
+    "title": "一定",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhiyao",
+    "file": "images/w-zhiyao.jpg",
+    "title": "只要",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jiu",
+    "file": "images/w-jiu.jpg",
+    "title": "就",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-renzhen",
+    "file": "images/w-renzhen.jpg",
+    "title": "认真",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lianxi",
+    "file": "images/w-lianxi.jpg",
+    "title": "练习",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yuelaiyue",
+    "file": "images/w-yuelaiyue.jpg",
+    "title": "越来越",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiangxin",
+    "file": "images/w-xiangxin.jpg",
+    "title": "相信",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L10)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

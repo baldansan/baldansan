@@ -1,0 +1,193 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l04",
+ "hskLevel": 3,
+ "lessonNumber": 4,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "每个人都有自己的习惯。",
+ "mongolianTitle": "Хүн бүр өөрийн гэсэн зуршилтай",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第4课 (сурах бичиг + CD аудио 04-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-04-text-song.mp3",
+  "dialogues": "audio/yct-5-04-02.mp3",
+  "words": "audio/yct-5-04-01.mp3",
+  "speech": "audio/yct-5-04-03.mp3",
+  "story": "audio/yct-5-04-04.mp3",
+  "test": "audio/yct-5-04-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l04",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "每个人都有自己的习惯。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "我的邻居有个习惯。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "每个人都有自己的习惯。",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "读书好习惯",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "读书好习惯 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-linju",
+    "file": "images/w-linju.jpg",
+    "title": "邻居",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiguan",
+    "file": "images/w-xiguan.jpg",
+    "title": "习惯",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yihuir",
+    "file": "images/w-yihuir.jpg",
+    "title": "一会儿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yiqian",
+    "file": "images/w-yiqian.jpg",
+    "title": "以前",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhoumo",
+    "file": "images/w-zhoumo.jpg",
+    "title": "周末",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dai",
+    "file": "images/w-dai.jpg",
+    "title": "带",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qiguai",
+    "file": "images/w-qiguai.jpg",
+    "title": "奇怪",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kafei",
+    "file": "images/w-kafei.jpg",
+    "title": "咖啡",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tan-gangqin",
+    "file": "images/w-tan-gangqin.jpg",
+    "title": "弹钢琴",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gongyuan",
+    "file": "images/w-gongyuan.jpg",
+    "title": "公园",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-sanbu",
+    "file": "images/w-sanbu.jpg",
+    "title": "散步",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-pashan",
+    "file": "images/w-pashan.jpg",
+    "title": "爬山",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L4)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

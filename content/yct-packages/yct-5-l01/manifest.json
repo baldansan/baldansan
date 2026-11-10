@@ -1,0 +1,178 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l01",
+ "hskLevel": 3,
+ "lessonNumber": 1,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你对中国功夫感兴趣吗？",
+ "mongolianTitle": "Чи хятад кунфуд сонирхолтой юу?",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第1课 (сурах бичиг + CD аудио 01-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-01-text-song.mp3",
+  "dialogues": "audio/yct-5-01-02.mp3",
+  "words": "audio/yct-5-01-01.mp3",
+  "speech": "audio/yct-5-01-03.mp3",
+  "test": "audio/yct-5-01-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l01",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "你对中国功夫感兴趣吗？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "你会中国功夫吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我也想和阿宝一样",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "compare",
+    "file": "images/compare.jpg",
+    "title": "Let's compare",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "say",
+    "file": "images/say.jpg",
+    "title": "Let's say",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "w-gongfu",
+    "file": "images/w-gongfu.jpg",
+    "title": "功夫",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ganxingqu",
+    "file": "images/w-ganxingqu.jpg",
+    "title": "对……感兴趣",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-feichang",
+    "file": "images/w-feichang.jpg",
+    "title": "非常",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-fei",
+    "file": "images/w-fei.jpg",
+    "title": "飞",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dangran",
+    "file": "images/w-dangran.jpg",
+    "title": "当然",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tebie",
+    "file": "images/w-tebie.jpg",
+    "title": "特别",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lihai",
+    "file": "images/w-lihai.jpg",
+    "title": "厉害",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yiyang",
+    "file": "images/w-yiyang.jpg",
+    "title": "一样",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bangzhu",
+    "file": "images/w-bangzhu.jpg",
+    "title": "帮助",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bieren",
+    "file": "images/w-bieren.jpg",
+    "title": "别人",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L1)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

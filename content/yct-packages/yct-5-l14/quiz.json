@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Өвлийн амралт» хятадаар аль нь вэ?",
+  "options": [
+   "暑假",
+   "学校",
+   "时间",
+   "寒假"
+  ],
+  "correct_answer": "寒假",
+  "explanation": "寒假 (hánjià) = өвлийн амралт.",
+  "order_index": 1,
+  "id": "yct-5-l14-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зуны амралт» хятадаар аль нь вэ?",
+  "options": [
+   "北方",
+   "朋友",
+   "暑假",
+   "寒假"
+  ],
+  "correct_answer": "暑假",
+  "explanation": "暑假 (shǔjià) = зуны амралт.",
+  "order_index": 2,
+  "id": "yct-5-l14-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Аялах» хятадаар аль нь вэ?",
+  "options": [
+   "旅游",
+   "介绍",
+   "打算",
+   "学习"
+  ],
+  "correct_answer": "旅游",
+  "explanation": "旅游 (lǚyóu) = аялах.",
+  "order_index": 3,
+  "id": "yct-5-l14-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Өмнөд зүг» хятадаар аль нь вэ?",
+  "options": [
+   "南方",
+   "北方",
+   "老师",
+   "地图"
+  ],
+  "correct_answer": "南方",
+  "explanation": "南方 (nánfāng) = өмнөд зүг.",
+  "order_index": 4,
+  "id": "yct-5-l14-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хойд зүг» хятадаар аль нь вэ?",
+  "options": [
+   "南方",
+   "长城",
+   "时间",
+   "北方"
+  ],
+  "correct_answer": "北方",
+  "explanation": "北方 (běifāng) = хойд зүг.",
+  "order_index": 5,
+  "id": "yct-5-l14-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Газрын зураг» хятадаар аль нь вэ?",
+  "options": [
+   "长城",
+   "小笼包",
+   "地图",
+   "学校"
+  ],
+  "correct_answer": "地图",
+  "explanation": "地图 (dìtú) = газрын зураг.",
+  "order_index": 6,
+  "id": "yct-5-l14-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Алдартай» хятадаар аль нь вэ?",
+  "options": [
+   "然后",
+   "难",
+   "有名",
+   "介绍"
+  ],
+  "correct_answer": "有名",
+  "explanation": "有名 (yǒumíng) = алдартай.",
+  "order_index": 7,
+  "id": "yct-5-l14-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«打算» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дараа нь",
+   "аялах",
+   "төлөвлөх",
+   "танилцуулах"
+  ],
+  "correct_answer": "төлөвлөх",
+  "explanation": "打算 (dǎsuàn) = төлөвлөх, санаатай байх.",
+  "order_index": 8,
+  "id": "yct-5-l14-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«介绍» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хагас",
+   "танилцуулах",
+   "төлөвлөх",
+   "алдартай"
+  ],
+  "correct_answer": "танилцуулах",
+  "explanation": "介绍 (jièshào) = танилцуулах.",
+  "order_index": 9,
+  "id": "yct-5-l14-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«然后» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "-аас гадна",
+   "алдартай",
+   "дараа нь",
+   "өвлийн амралт"
+  ],
+  "correct_answer": "дараа нь",
+  "explanation": "然后 (ránhòu) = дараа нь.",
+  "order_index": 10,
+  "id": "yct-5-l14-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«长城» гэдэг юу вэ?",
+  "options": [
+   "Их хэрэм",
+   "өмнөд нутаг",
+   "жижиг банш",
+   "газрын зураг"
+  ],
+  "correct_answer": "Их хэрэм",
+  "explanation": "长城 (Chángchéng) = Их хэрэм.",
+  "order_index": 11,
+  "id": "yct-5-l14-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«小笼包» гэдэг юу вэ?",
+  "options": [
+   "жижиг уураар жигнэсэн банш",
+   "зуны амралт",
+   "газрын зураг",
+   "Их хэрэм"
+  ],
+  "correct_answer": "жижиг уураар жигнэсэн банш",
+  "explanation": "小笼包 (Xiǎolóngbāo) — Шанхайн алдарт жижиг банш.",
+  "order_index": 12,
+  "id": "yct-5-l14-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dǎsuàn» гэж уншдаг үг:",
+  "options": [
+   "然后",
+   "旅游",
+   "打算",
+   "介绍"
+  ],
+  "correct_answer": "打算",
+  "explanation": "打算 = dǎsuàn = төлөвлөх.",
+  "order_index": 13,
+  "id": "yct-5-l14-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «lǚyóu» гэж уншдаг үг:",
+  "options": [
+   "旅游",
+   "地图",
+   "寒假",
+   "有名"
+  ],
+  "correct_answer": "旅游",
+  "explanation": "旅游 = lǚyóu = аялах.",
+  "order_index": 14,
+  "id": "yct-5-l14-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «chúle» гэж уншдаг үг:",
+  "options": [
+   "然后",
+   "暑假",
+   "介绍",
+   "除了"
+  ],
+  "correct_answer": "除了",
+  "explanation": "除了 = chúle = -аас гадна.",
+  "order_index": 15,
+  "id": "yct-5-l14-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dìtú» гэж уншдаг үг:",
+  "options": [
+   "小时",
+   "地图",
+   "南方",
+   "长城"
+  ],
+  "correct_answer": "地图",
+  "explanation": "地图 = dìtú = газрын зураг.",
+  "order_index": 16,
+  "id": "yct-5-l14-q16",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Мари багшаасаа юу гэж асуусан бэ?",
+  "options": [
+   "Сяолунбао хаана байдаг вэ?",
+   "Хятад хэл хэцүү юү?",
+   "Хэдэн цагт хичээл тарах вэ?",
+   "Өмнөд зүгт явах уу, хойд зүгт явах уу?"
+  ],
+  "correct_answer": "Өмнөд зүгт явах уу, хойд зүгт явах уу?",
+  "explanation": "去南方好还是去北方好？ — өмнөд үү, хойд уу гэж асуусан.",
+  "order_index": 17,
+  "id": "yct-5-l14-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Багш яагаад «你去南方吧» гэсэн бэ?",
+  "options": [
+   "Мари өмнөд зүгт амьдардаг учраас",
+   "Хойд зүгт газрын зураг байхгүй учраас",
+   "Өмнөд зүгт Их хэрэм байдаг учраас",
+   "Өвөл хойд зүгт маш хүйтэн учраас"
+  ],
+  "correct_answer": "Өвөл хойд зүгт маш хүйтэн учраас",
+  "explanation": "冬天北方非常冷 = өвөл хойд зүгт маш хүйтэн.",
+  "order_index": 18,
+  "id": "yct-5-l14-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Богино өгүүлэмжид хүү эхлээд хаашаа очих вэ?",
+  "options": [
+   "Хангжоу",
+   "Өмнөд нутаг",
+   "Бээжин, Их хэрэм",
+   "Шанхай, сяолунбао"
+  ],
+  "correct_answer": "Бээжин, Их хэрэм",
+  "explanation": "我想先去北京爬长城 — эхлээд Бээжин.",
+  "order_index": 19,
+  "id": "yct-5-l14-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аав ээж нь яагаад жаахан санаа зовсон бэ?",
+  "options": [
+   "Хүү савхаар идэж чаддаггүй учраас",
+   "Хүү урьд нь Хятадад очиж үзээгүй учраас",
+   "Хүү хятадаар ярьж чаддаггүй учраас",
+   "Аялал хэт урт учраас"
+  ],
+  "correct_answer": "Хүү урьд нь Хятадад очиж үзээгүй учраас",
+  "explanation": "我以前没去过中国 — урьд нь очиж үзээгүй.",
+  "order_index": 20,
+  "id": "yct-5-l14-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "今年寒假我（ ）去中国旅游。",
+  "options": [
+   "有名",
+   "介绍",
+   "打算",
+   "然后"
+  ],
+  "correct_answer": "打算",
+  "explanation": "我打算 + үйлдэл = би … хийхээр төлөвлөж байна.",
+  "order_index": 21,
+  "id": "yct-5-l14-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我先写作业，（ ）踢足球。",
+  "options": [
+   "除了",
+   "然后",
+   "地图",
+   "还是"
+  ],
+  "correct_answer": "然后",
+  "explanation": "先……然后…… = эхлээд …, дараа нь ….",
+  "order_index": 22,
+  "id": "yct-5-l14-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）上海，我还去过北京。",
+  "options": [
+   "旅游",
+   "除了",
+   "然后",
+   "打算"
+  ],
+  "correct_answer": "除了",
+  "explanation": "除了……还…… = -аас гадна бас ….",
+  "order_index": 23,
+  "id": "yct-5-l14-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你喜欢南方（ ）北方？",
+  "options": [
+   "还是",
+   "除了",
+   "吧",
+   "然后"
+  ],
+  "correct_answer": "还是",
+  "explanation": "A 还是 B？ = A уу, B уу?",
+  "order_index": 24,
+  "id": "yct-5-l14-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Эхлээд Бээжинд очоод, дараа нь Шанхайд очно» хятадаар:",
+  "options": [
+   "除了北京，去上海",
+   "去北京还是去上海",
+   "打算北京上海",
+   "先去北京，然后去上海"
+  ],
+  "correct_answer": "先去北京，然后去上海",
+  "explanation": "先……然后…… = эхлээд …, дараа нь ….",
+  "order_index": 25,
+  "id": "yct-5-l14-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «这个暑假你有什么打算？» гэж асуулаа. Чи Хятад руу аялахаар төлөвлөсөн бол:",
+  "options": [
+   "我打算去中国旅游。",
+   "我去过中国。",
+   "地图在这儿。",
+   "冬天很冷。"
+  ],
+  "correct_answer": "我打算去中国旅游。",
+  "explanation": "打算 = төлөвлөж байна.",
+  "order_index": 26,
+  "id": "yct-5-l14-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Аавдаа санаа зоволтгүй гэж хэлэх бол:",
+  "options": [
+   "有名的地方很多。",
+   "别担心。",
+   "我打算去。",
+   "除了上海。"
+  ],
+  "correct_answer": "别担心。",
+  "explanation": "别担心 = санаа бүү зов.",
+  "order_index": 27,
+  "id": "yct-5-l14-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найздаа газрын зураг дээр газруудыг танилцуулах бол:",
+  "options": [
+   "我打算去南方。",
+   "你喜欢北方吗？",
+   "我给你介绍介绍。",
+   "然后去上海。"
+  ],
+  "correct_answer": "我给你介绍介绍。",
+  "explanation": "介绍介绍 = жаахан танилцуулъя.",
+  "order_index": 28,
+  "id": "yct-5-l14-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,165 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我经常去体育馆锻炼身体",
+  "section": "teacher-intro",
+  "prompt": "Teacher Camel (yellow camel with glasses) stands in a bright gym with a tennis racket, volleyball and ping-pong table; the yellow calf boy, the calf girl in a yellow dress and the brown calf boy in a green hat cheerfully play sports, sweat drops flying. Speech bubble with the Chinese text 我经常去体育馆锻炼身体 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "hero"
+ },
+ {
+  "file": "images/w-xuanze.jpg",
+  "aspect": "1:1",
+  "title": "选择",
+  "section": "vocabulary",
+  "prompt": "The calf girl in a yellow dress stands in front of three balls (a tennis ball, a volleyball, a ping-pong ball) on a table, thinking and pointing at one of them. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jingchang.jpg",
+  "aspect": "1:1",
+  "title": "经常",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in a blue vest goes to the gym with his red bag on five different days shown on a calendar with a check mark on each day. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-duanlian.jpg",
+  "aspect": "1:1",
+  "title": "锻炼",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in a green hat lifts small dumbbells and jogs in a gym, looking strong and happy. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-budan.jpg",
+  "aspect": "1:1",
+  "title": "不但…而且…",
+  "section": "vocabulary",
+  "prompt": "The calf girl proudly holds up two things at once: a shiny gold medal in one hand and a big bouquet in the other, with two glowing arrows 'plus' symbol between them (no letters). No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jiankang.jpg",
+  "aspect": "1:1",
+  "title": "健康",
+  "section": "vocabulary",
+  "prompt": "A strong happy calf flexing his arm muscles, eating an apple, with a glowing green heart above his head. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xinqing.jpg",
+  "aspect": "1:1",
+  "title": "心情",
+  "section": "vocabulary",
+  "prompt": "The calf girl with a pink ribbon happily smiling, with a small rainbow and sparkles above her head, and beside her a small cloud turning into sunshine. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-liuhan.jpg",
+  "aspect": "1:1",
+  "title": "流汗",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy after running, red-faced with big sweat drops on his forehead, wiping his face with a towel. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-wangqiu.jpg",
+  "aspect": "1:1",
+  "title": "网球",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy swinging a tennis racket to hit a yellow tennis ball on a tennis court. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-paiqiu.jpg",
+  "aspect": "1:1",
+  "title": "排球",
+  "section": "vocabulary",
+  "prompt": "The calf girl jumping to hit a white volleyball over a volleyball net on a sunny court. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-pingpangqiu.jpg",
+  "aspect": "1:1",
+  "title": "乒乓球",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy and the yellow calf boy playing ping-pong on a table with red paddles and a small white ball. No English text.",
+  "chars": [
+   "bor",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-tiyuguan.jpg",
+  "aspect": "1:1",
+  "title": "体育馆",
+  "section": "vocabulary",
+  "prompt": "The outside of a big modern gym building with a basketball hoop visible through the open door; the calf friends walk in with sports bags. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "今年的体育课，你选网球、排球还是乒乓球？",
+  "section": "dialogue",
+  "prompt": "The brown calf boy (green hat) and a calf friend stand on a school sports field with a running track; the brown calf boy asks with a speech bubble with the Chinese text 今年的体育课，你选网球、排球还是乒乓球？ in large clear black font, the friend thinks of a ping-pong paddle. No English text.",
+  "chars": [
+   "bor",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我特别喜欢运动",
+  "section": "speech",
+  "prompt": "In a gym three calves play: the yellow calf boy swings a tennis racket, the brown calf boy plays ping-pong, the calf girl hits a volleyball; all are smiling with a few sweat drops. Speech bubble with the Chinese text 我特别喜欢运动 in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "bor",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "爱运动",
+  "section": "song",
+  "prompt": "Four calves and Teacher Camel sing and cheer together on a sports field with a tennis racket, volleyball, basketball and soccer ball around them; musical notes in the air. Speech bubble with the Chinese text 我们爱运动 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

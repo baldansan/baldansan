@@ -1,0 +1,193 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l13",
+ "hskLevel": 3,
+ "lessonNumber": 13,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我先帮你补牙。",
+ "mongolianTitle": "Би эхлээд шүдийг чинь дүүргээд өгье",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第13课 (сурах бичиг + CD аудио 13-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-13-text-song.mp3",
+  "dialogues": "audio/yct-5-13-02.mp3",
+  "words": "audio/yct-5-13-01.mp3",
+  "speech": "audio/yct-5-13-03.mp3",
+  "song": "audio/yct-5-13-04.mp3",
+  "test": "audio/yct-5-13-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l13",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我先帮你补牙。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "小朋友，你哪儿不舒服？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "昨天晚上我突然肚子疼",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "吃药",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-shuaya",
+    "file": "images/w-shuaya.jpg",
+    "title": "刷牙",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hushi",
+    "file": "images/w-hushi.jpg",
+    "title": "护士",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-duzi",
+    "file": "images/w-duzi.jpg",
+    "title": "肚子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-fashao",
+    "file": "images/w-fashao.jpg",
+    "title": "发烧",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dazhen",
+    "file": "images/w-dazhen.jpg",
+    "title": "打针",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xian",
+    "file": "images/w-xian.jpg",
+    "title": "先",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-buya",
+    "file": "images/w-buya.jpg",
+    "title": "补牙",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jiao",
+    "file": "images/w-jiao.jpg",
+    "title": "教",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-turan",
+    "file": "images/w-turan.jpg",
+    "title": "突然",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-mashang",
+    "file": "images/w-mashang.jpg",
+    "title": "马上",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kaiyao",
+    "file": "images/w-kaiyao.jpg",
+    "title": "开药",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yizhi",
+    "file": "images/w-yizhi.jpg",
+    "title": "一直",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tang",
+    "file": "images/w-tang.jpg",
+    "title": "躺",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L13)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

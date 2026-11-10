@@ -1,0 +1,229 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l06",
+ "hskLevel": 3,
+ "lessonNumber": 6,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "站着的还是坐着的？",
+ "mongolianTitle": "Зогсож байгаа нь уу, сууж байгаа нь уу?",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第6课 (сурах бичиг + CD аудио 06-01..06 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-06-text-song.mp3",
+  "dialogues": "audio/yct-5-06-02.mp3",
+  "words": "audio/yct-5-06-01.mp3",
+  "speech": "audio/yct-5-06-03.mp3",
+  "choose": "audio/yct-5-06-04.mp3",
+  "song": "audio/yct-5-06-05.mp3",
+  "test": "audio/yct-5-06-06.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l06",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "站着的还是坐着的？",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "哪个是你？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我的小猫不见了",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "桌子上放着什么？",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-zhan",
+    "file": "images/w-zhan.jpg",
+    "title": "站",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhe",
+    "file": "images/w-zhe.jpg",
+    "title": "着",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dai",
+    "file": "images/w-dai.jpg",
+    "title": "戴",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yanjing",
+    "file": "images/w-yanjing.jpg",
+    "title": "眼镜",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-cuo",
+    "file": "images/w-cuo.jpg",
+    "title": "错",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dajia",
+    "file": "images/w-dajia.jpg",
+    "title": "大家",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jian",
+    "file": "images/w-jian.jpg",
+    "title": "见",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiangquan",
+    "file": "images/w-xiangquan.jpg",
+    "title": "项圈",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lianxi",
+    "file": "images/w-lianxi.jpg",
+    "title": "联系",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-haoma",
+    "file": "images/w-haoma.jpg",
+    "title": "号码",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "c1a",
+    "file": "images/c1a.png",
+    "title": "Test c1a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c1b",
+    "file": "images/c1b.png",
+    "title": "Test c1b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c1c",
+    "file": "images/c1c.png",
+    "title": "Test c1c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c2a",
+    "file": "images/c2a.png",
+    "title": "Test c2a",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c2b",
+    "file": "images/c2b.png",
+    "title": "Test c2b",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "c2c",
+    "file": "images/c2c.png",
+    "title": "Test c2c",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "r1",
+    "file": "images/r1.png",
+    "title": "Test r1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "r2",
+    "file": "images/r2.png",
+    "title": "Test r2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "r3",
+    "file": "images/r3.png",
+    "title": "Test r3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "r4",
+    "file": "images/r4.png",
+    "title": "Test r4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "r5",
+    "file": "images/r5.png",
+    "title": "Test r5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "cmp1",
+    "file": "images/cmp1.jpg",
+    "title": "Test cmp1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "cmp2",
+    "file": "images/cmp2.jpg",
+    "title": "Test cmp2",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L6)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

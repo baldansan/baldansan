@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Сонгох» хятадаар аль нь вэ?",
+  "options": [
+   "选择",
+   "健康",
+   "锻炼",
+   "流汗"
+  ],
+  "correct_answer": "选择",
+  "explanation": "选择 (xuǎnzé) = сонгох.",
+  "order_index": 1,
+  "id": "yct-5-l07-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Байнга» хятадаар аль нь вэ?",
+  "options": [
+   "健康",
+   "心情",
+   "选择",
+   "经常"
+  ],
+  "correct_answer": "经常",
+  "explanation": "经常 (jīngcháng) = байнга.",
+  "order_index": 2,
+  "id": "yct-5-l07-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дасгал хийж биеэ чийрэгжүүлэх» хятадаар аль нь вэ?",
+  "options": [
+   "网球",
+   "流汗",
+   "心情",
+   "锻炼"
+  ],
+  "correct_answer": "锻炼",
+  "explanation": "锻炼 (duànliàn) = дасгал хийх.",
+  "order_index": 3,
+  "id": "yct-5-l07-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эрүүл» хятадаар аль нь вэ?",
+  "options": [
+   "排球",
+   "健康",
+   "经常",
+   "心情"
+  ],
+  "correct_answer": "健康",
+  "explanation": "健康 (jiànkāng) = эрүүл.",
+  "order_index": 4,
+  "id": "yct-5-l07-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«心情» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сэтгэлийн байдал",
+   "спорт заал",
+   "хөлс",
+   "байнга"
+  ],
+  "correct_answer": "сэтгэлийн байдал",
+  "explanation": "心情 (xīnqíng) = сэтгэлийн байдал. 快乐的心情 = сайхан сэтгэл.",
+  "order_index": 5,
+  "id": "yct-5-l07-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«流汗» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эрүүл",
+   "хөлс гарах",
+   "байнга",
+   "сонгох"
+  ],
+  "correct_answer": "хөлс гарах",
+  "explanation": "流汗 (liúhàn) = хөлс гарах.",
+  "order_index": 6,
+  "id": "yct-5-l07-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Теннис» хятадаар аль нь вэ?",
+  "options": [
+   "篮球",
+   "网球",
+   "排球",
+   "足球"
+  ],
+  "correct_answer": "网球",
+  "explanation": "网球 (wǎngqiú) = теннис.",
+  "order_index": 7,
+  "id": "yct-5-l07-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Волейбол» хятадаар аль нь вэ?",
+  "options": [
+   "排球",
+   "篮球",
+   "乒乓球",
+   "网球"
+  ],
+  "correct_answer": "排球",
+  "explanation": "排球 (páiqiú) = волейбол.",
+  "order_index": 8,
+  "id": "yct-5-l07-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«乒乓球» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "ширээний теннис",
+   "волейбол",
+   "хөл бөмбөг",
+   "теннис"
+  ],
+  "correct_answer": "ширээний теннис",
+  "explanation": "乒乓球 (pīngpāngqiú) = ширээний теннис.",
+  "order_index": 9,
+  "id": "yct-5-l07-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«体育馆» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эмнэлэг",
+   "сургууль",
+   "спорт заал",
+   "дэлгүүр"
+  ],
+  "correct_answer": "спорт заал",
+  "explanation": "体育馆 (tǐyùguǎn) = спорт заал.",
+  "order_index": 10,
+  "id": "yct-5-l07-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jiànkāng» гэж уншдаг үг:",
+  "options": [
+   "锻炼",
+   "经常",
+   "心情",
+   "健康"
+  ],
+  "correct_answer": "健康",
+  "explanation": "健康 = jiànkāng = эрүүл.",
+  "order_index": 11,
+  "id": "yct-5-l07-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xīnqíng» гэж уншдаг үг:",
+  "options": [
+   "排球",
+   "选择",
+   "流汗",
+   "心情"
+  ],
+  "correct_answer": "心情",
+  "explanation": "心情 = xīnqíng = сэтгэлийн байдал.",
+  "order_index": 12,
+  "id": "yct-5-l07-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «liúhàn» гэж уншдаг үг:",
+  "options": [
+   "健康",
+   "锻炼",
+   "经常",
+   "流汗"
+  ],
+  "correct_answer": "流汗",
+  "explanation": "流汗 = liúhàn = хөлс гарах.",
+  "order_index": 13,
+  "id": "yct-5-l07-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «tǐyùguǎn» гэж уншдаг үг:",
+  "options": [
+   "体育馆",
+   "网球",
+   "乒乓球",
+   "排球"
+  ],
+  "correct_answer": "体育馆",
+  "explanation": "体育馆 = tǐyùguǎn = спорт заал.",
+  "order_index": 14,
+  "id": "yct-5-l07-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи теннис, волейбол, ширээний теннисийн аль нэгийг нь сонгох вэ?» хятадаар:",
+  "options": [
+   "你喜欢乒乓球吗？",
+   "你选网球、排球还是乒乓球？",
+   "你不会打排球吗？",
+   "你经常去体育馆吗？"
+  ],
+  "correct_answer": "你选网球、排球还是乒乓球？",
+  "explanation": "选…还是… = аль нэгийг нь сонгох.",
+  "order_index": 15,
+  "id": "yct-5-l07-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д Сяо Мин бие бялдрын хичээлд юу сонгосон бэ?",
+  "options": [
+   "Теннис",
+   "Ширээний теннис",
+   "Хөл бөмбөг",
+   "Волейбол"
+  ],
+  "correct_answer": "Ширээний теннис",
+  "explanation": "我选乒乓球 = би ширээний теннис сонгоно.",
+  "order_index": 16,
+  "id": "yct-5-l07-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Мин ширээний теннис тоглож чадах уу?",
+  "options": [
+   "Тийм, маш сайн",
+   "Яриагаар мэдэгдэхгүй",
+   "Үгүй, чаддаггүй",
+   "Бага зэрэг"
+  ],
+  "correct_answer": "Үгүй, чаддаггүй",
+  "explanation": "我不会打乒乓球 = би тоглож чаддаггүй.",
+  "order_index": 17,
+  "id": "yct-5-l07-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дэвид яагаад гайхсан бэ?",
+  "options": [
+   "Сяо Мин спортод дургүй",
+   "Бие бялдрын хичээл байхгүй",
+   "Сяо Мин волейбол сонгосон",
+   "Хятад хүн бүр ширээний теннис тоглодог гэж боддог байсан"
+  ],
+  "correct_answer": "Хятад хүн бүр ширээний теннис тоглодог гэж боддог байсан",
+  "explanation": "中国人不是都会打乒乓球吗？ — хятад хүн бүр тоглодог биш үү?",
+  "order_index": 18,
+  "id": "yct-5-l07-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "Богино үгэнд спорт юу өгдөг гэж хэлсэн бэ?",
+  "options": [
+   "Шинэ найз",
+   "Эрүүл бие, сайхан сэтгэл",
+   "Сайн дүн",
+   "Их мөнгө"
+  ],
+  "correct_answer": "Эрүүл бие, сайхан сэтгэл",
+  "explanation": "健康的身体 + 快乐的心情.",
+  "order_index": 19,
+  "id": "yct-5-l07-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）去体育馆锻炼身体。",
+  "options": [
+   "选择",
+   "心情",
+   "健康",
+   "经常"
+  ],
+  "correct_answer": "经常",
+  "explanation": "经常 = байнга.",
+  "order_index": 20,
+  "id": "yct-5-l07-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你选网球（ ）排球？",
+  "options": [
+   "还是",
+   "而且",
+   "经常",
+   "因为"
+  ],
+  "correct_answer": "还是",
+  "explanation": "选…还是… = аль нэгийг нь сонгох.",
+  "order_index": 21,
+  "id": "yct-5-l07-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "运动不但让我有健康的身体，（ ）让我有快乐的心情。",
+  "options": [
+   "还是",
+   "但是",
+   "所以",
+   "而且"
+  ],
+  "correct_answer": "而且",
+  "explanation": "不但…而且….",
+  "order_index": 22,
+  "id": "yct-5-l07-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我去体育馆（ ）身体。",
+  "options": [
+   "心情",
+   "锻炼",
+   "流汗",
+   "选择"
+  ],
+  "correct_answer": "锻炼",
+  "explanation": "锻炼身体 = дасгал хийх.",
+  "order_index": 23,
+  "id": "yct-5-l07-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Эрүүл бие» хятадаар аль нь вэ?",
+  "options": [
+   "经常的身体",
+   "选择的身体",
+   "快乐的身体",
+   "健康的身体"
+  ],
+  "correct_answer": "健康的身体",
+  "explanation": "健康的身体 = эрүүл бие.",
+  "order_index": 24,
+  "id": "yct-5-l07-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Сайхан сэтгэл» хятадаар аль нь вэ?",
+  "options": [
+   "经常的心情",
+   "健康的心情",
+   "快乐的心情",
+   "网球的心情"
+  ],
+  "correct_answer": "快乐的心情",
+  "explanation": "快乐的心情 = сайхан (баяртай) сэтгэл.",
+  "order_index": 25,
+  "id": "yct-5-l07-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «这个周末我们一起去流汗吧！» гэвэл чи юу гэж хариулах вэ?",
+  "options": [
+   "我选网球。",
+   "我心情不太好吧。",
+   "好啊，一起去！",
+   "你经常去体育馆。"
+  ],
+  "correct_answer": "好啊，一起去！",
+  "explanation": "«…吧！» гэж урьсан тул «好啊，一起去！» гэж зөвшөөрнө.",
+  "order_index": 26,
+  "id": "yct-5-l07-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你选足球还是乒乓球？» гэж асууна. Чи ширээний теннис сонгох бол:",
+  "options": [
+   "健康。",
+   "我选乒乓球。",
+   "我经常去体育馆。",
+   "我不会流汗。"
+  ],
+  "correct_answer": "我选乒乓球。",
+  "explanation": "我选 + юуг сонгосон.",
+  "order_index": 27,
+  "id": "yct-5-l07-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Сэтгэл сайнгүй байгаа найздаа хэлэх өгүүлбэр аль нь вэ?",
+  "options": [
+   "你今天流汗吗？",
+   "你今天心情不太好吗？",
+   "你今天选网球吗？",
+   "你今天排球吗？"
+  ],
+  "correct_answer": "你今天心情不太好吗？",
+  "explanation": "心情不太好 = сэтгэл нь тийм ч сайнгүй.",
+  "order_index": 28,
+  "id": "yct-5-l07-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

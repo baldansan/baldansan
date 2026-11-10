@@ -1,0 +1,180 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我先帮你补牙。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Friendly dentist's office: the teacher camel with glasses in a white coat holds a dental mirror next to a dental chair where the yellow calf boy in blue vest sits with open mouth; the calf girl in yellow dress with pink ribbon, dressed as a nurse with a white cap, holds a big toothbrush; a speech bubble with the Chinese text 我先帮你补牙 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shuaya.jpg",
+  "aspect": "1:1",
+  "title": "刷牙",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap brushing his teeth with a toothbrush and white foam in front of a bathroom mirror, happy face. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-hushi.jpg",
+  "aspect": "1:1",
+  "title": "护士",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon wearing a white nurse cap and apron, holding a clipboard and smiling in a bright hospital corridor. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-duzi.jpg",
+  "aspect": "1:1",
+  "title": "肚子",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest holding his round tummy with both hands, slightly uncomfortable face, simple bright room. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-fashao.jpg",
+  "aspect": "1:1",
+  "title": "发烧",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap lying in bed with a thermometer in his mouth, a wet cloth on his forehead and red cheeks, mother adult camel nearby. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-dazhen.jpg",
+  "aspect": "1:1",
+  "title": "打针",
+  "section": "vocabulary",
+  "prompt": "A friendly nurse camel in a white cap holding a small syringe near the arm of the yellow calf boy in blue vest, who closes his eyes bravely; a sticker on the wall. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xian.jpg",
+  "aspect": "1:1",
+  "title": "先",
+  "section": "vocabulary",
+  "prompt": "Two steps shown with arrows: first the calf girl in yellow dress washes her hands at a sink, then she sits at a table with a plate of food; big number 1 and number 2 beside the scenes. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-buya.jpg",
+  "aspect": "1:1",
+  "title": "补牙",
+  "section": "vocabulary",
+  "prompt": "A dentist camel in a white coat with a small dental drill leaning over the yellow calf boy in blue vest in a dental chair, a big model tooth beside them with a small hole. No English text.",
+  "chars": [
+   "huu",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-jiao.jpg",
+  "aspect": "1:1",
+  "title": "教",
+  "section": "vocabulary",
+  "prompt": "The teacher camel with glasses pointing at a blackboard with simple drawings while the brown calf boy in green cap and the calf girl in yellow dress listen and take notes. No English text.",
+  "chars": [
+   "temee",
+   "bor",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-turan.jpg",
+  "aspect": "1:1",
+  "title": "突然",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest walking happily when a big exclamation mark and a flash of lightning suddenly appear; he jumps up in surprise with wide eyes, hair standing up. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-mashang.jpg",
+  "aspect": "1:1",
+  "title": "马上",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon sprinting very fast with motion lines and dust clouds, a speech bubble with an exclamation mark, a wall clock showing a few seconds. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-kaiyao.jpg",
+  "aspect": "1:1",
+  "title": "开药",
+  "section": "vocabulary",
+  "prompt": "A doctor camel in a white coat writing a prescription on a paper pad at a desk, and handing a small paper bag of colourful pills to the brown calf boy in green cap. No English text.",
+  "chars": [
+   "bor",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-yizhi.jpg",
+  "aspect": "1:1",
+  "title": "一直",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest running on a long straight road that continues far into the distance without stopping, a long arrow along the road, sweat drops, determined face. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-tang.jpg",
+  "aspect": "1:1",
+  "title": "躺",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap lying flat on his back on a bed with a blanket and a pillow, hands behind his head, bored but relaxed. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "小朋友，你哪儿不舒服？",
+  "section": "dialogue",
+  "prompt": "Dentist's room: an adult camel dentist in a white coat with glasses examines the open mouth of the yellow calf boy in blue vest lying in the dental chair, a nurse in a white cap stands behind with a tray; a speech bubble with the Chinese text 我牙疼 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "昨天晚上我突然肚子疼",
+  "section": "speech",
+  "prompt": "The yellow calf boy in blue vest lies in bed in his bedroom looking bored, a baseball bat and glove on the blanket; in a thought bubble above him he plays baseball outside happily, a thermometer on the bedside table. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "吃药",
+  "section": "song",
+  "prompt": "Cute smiling round and oval pills of different colours (white, red, yellow, green) as cartoon characters playing on a see-saw and dancing, the calf girl in yellow dress with pink ribbon laughing and clapping next to them. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ }
+]

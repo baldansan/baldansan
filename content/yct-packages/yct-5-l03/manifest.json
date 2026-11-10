@@ -1,0 +1,178 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l03",
+ "hskLevel": 3,
+ "lessonNumber": 3,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "电梯坏了。",
+ "mongolianTitle": "Цахилгаан шат эвдэрчээ",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第3课 (сурах бичиг + CD аудио 03-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-03-text-song.mp3",
+  "dialogues": "audio/yct-5-03-02.mp3",
+  "words": "audio/yct-5-03-01.mp3",
+  "speech": "audio/yct-5-03-03.mp3",
+  "test": "audio/yct-5-03-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l03",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "电梯坏了。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "小红，我到你们家楼下了。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我的房间",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "w-lou",
+    "file": "images/w-lou.jpg",
+    "title": "楼",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dianti",
+    "file": "images/w-dianti.jpg",
+    "title": "电梯",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kongtiao",
+    "file": "images/w-kongtiao.jpg",
+    "title": "空调",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chuanghu",
+    "file": "images/w-chuanghu.jpg",
+    "title": "窗户",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shafa",
+    "file": "images/w-shafa.jpg",
+    "title": "沙发",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xishoujian",
+    "file": "images/w-xishoujian.jpg",
+    "title": "洗手间",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-deng",
+    "file": "images/w-deng.jpg",
+    "title": "等",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhu",
+    "file": "images/w-zhu.jpg",
+    "title": "住",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ceng",
+    "file": "images/w-ceng.jpg",
+    "title": "层",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-haishi",
+    "file": "images/w-haishi.jpg",
+    "title": "还是",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-a",
+    "file": "images/w-a.jpg",
+    "title": "啊",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-fang",
+    "file": "images/w-fang.jpg",
+    "title": "放",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L3)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,243 @@
+[
+ {
+  "point": "北京一共有春、夏、秋、冬四个季节。 · 一共",
+  "gloss_mn": "«Нийтдээ» — бүгдийг нийлүүлж тоолох",
+  "structure": "一共 + 有 + тоо + зүйл",
+  "teacher_mn": "Бүх зүйлийг нийлүүлж тоолоод «нийтдээ» гэхдээ «一共» гэнэ. Энэ үгийг «有»-ийн өмнө тавина: «北京一共有四个季节». Мөн үнэ хэлэхэд ч хэрэглэнэ: «一共五块钱».",
+  "teacher_notes": "Key sentence: 北京一共有春、夏、秋、冬四个季节。 Let's learn: 一共五块钱，一共三十人。 Let's say: 男生＋女生＝一共……个学生。",
+  "examples": [
+   {
+    "chinese": "北京一共有四个季节。",
+    "pinyin": "Běijīng yígòng yǒu sì ge jìjié.",
+    "mongolian": "Бээжинд нийтдээ дөрвөн улирал бий."
+   },
+   {
+    "chinese": "一共五块钱。",
+    "pinyin": "Yígòng wǔ kuài qián.",
+    "mongolian": "Нийтдээ таван юань."
+   },
+   {
+    "chinese": "一共三十人。",
+    "pinyin": "Yígòng sānshí rén.",
+    "mongolian": "Нийтдээ гучин хүн."
+   },
+   {
+    "chinese": "黑裤子、红裤子、白裤子一共三条裤子。",
+    "pinyin": "Hēi kùzi, hóng kùzi, bái kùzi yígòng sān tiáo kùzi.",
+    "mongolian": "Хар, улаан, цагаан өмд нийтдээ гурван өмд."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "北京有一共四个季节。",
+    "right": "北京一共有四个季节。",
+    "why": "«一共» нь «有»-ийн өмнө ордог."
+   }
+  ],
+  "check": {
+   "question": "«Нийтдээ таван юань» хятадаар:",
+   "options": [
+    "有五块一共钱",
+    "五块钱一共有",
+    "一共五块钱"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "北京 ________ 有四个季节。",
+    "options": [
+     "经常",
+     "到处",
+     "一共"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 一共 = нийтдээ.",
+    "explanation_wrong_mn": "一共 = нийтдээ, 到处 = хаа сайгүй."
+   },
+   {
+    "type": "choice",
+    "question": "«Нийтдээ гучин хүн» хятадаар:",
+    "options": [
+     "到处三十人",
+     "一共三十人",
+     "变化三十人"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 一共 = нийтдээ.",
+    "explanation_wrong_mn": "нийтдээ = 一共."
+   },
+   {
+    "type": "judge",
+    "question": "«一共» гэдэг нь «нийтдээ, бүгд» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! Бүгдийг нийлүүлж тоолно.",
+    "explanation_wrong_mn": "一共 = нийтдээ."
+   }
+  ]
+ },
+ {
+  "point": "到处都是花。 · 到处都是……",
+  "gloss_mn": "«Хаа сайгүй … байна»",
+  "structure": "到处 + 都是 + юм",
+  "teacher_mn": "Хаа сайгүй нэг зүйл байвал «到处都是……» гэж хэлнэ. «到处» нь «хаа сайгүй». «都是» нь «бүгд нь …». Хавар цэцэг цэцэглэхэд «到处都是花» гэнэ!",
+  "teacher_notes": "Key sentence: 到处都是花。 Short speech: 春天很暖和，到处都是花。 Writing: 房间里到处都是她的照片。",
+  "examples": [
+   {
+    "chinese": "到处都是花。",
+    "pinyin": "Dàochù dōu shì huā.",
+    "mongolian": "Хаа сайгүй цэцэг байна."
+   },
+   {
+    "chinese": "房间里到处都是她的照片。",
+    "pinyin": "Fángjiān li dàochù dōu shì tā de zhàopiàn.",
+    "mongolian": "Өрөөнд хаа сайгүй түүний зураг байна."
+   },
+   {
+    "chinese": "冬天到处都是雪。",
+    "pinyin": "Dōngtiān dàochù dōu shì xuě.",
+    "mongolian": "Өвөл хаа сайгүй цас байна."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "到处都花。",
+    "right": "到处都是花。",
+    "why": "«是» гэдгийг мартуузай: 到处都是 + юм."
+   }
+  ],
+  "check": {
+   "question": "«Хаа сайгүй цас байна» хятадаар:",
+   "options": [
+    "到处都是雪",
+    "一共都是雪",
+    "变化都是雪"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "春天，到处 ________ 是花。",
+    "options": [
+     "也",
+     "都",
+     "不"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 到处都是 = хаа сайгүй.",
+    "explanation_wrong_mn": "到处都是 гэж хамт хэлнэ."
+   },
+   {
+    "type": "choice",
+    "question": "«Хаа сайгүй цэцэг байна» хятадаар:",
+    "options": [
+     "暖和都是花",
+     "一共都是花",
+     "到处都是花"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 到处 = хаа сайгүй.",
+    "explanation_wrong_mn": "хаа сайгүй = 到处."
+   },
+   {
+    "type": "judge",
+    "question": "«到处都是花» гэдэг нь «хаа сайгүй цэцэг байна» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! Хаа сайгүй цэцэг байна.",
+    "explanation_wrong_mn": "到处 = хаа сайгүй."
+   }
+  ]
+ },
+ {
+  "point": "一会儿晴，一会儿阴 · 变化很大",
+  "gloss_mn": "«Нэг …, нэг …» — хурдан өөрчлөгдөх",
+  "structure": "一会儿 + A，一会儿 + B",
+  "teacher_mn": "Юм хурдан солигдвол «一会儿……，一会儿……» гэж хэлнэ. Нэг нарлаж, нэг бүрхэж байвал «一会儿晴，一会儿阴». Маш их өөрчлөгдвөл «变化很大» гэнэ. Сяо Мин ууланд ингэж хэлсэн шүү!",
+  "teacher_notes": "Let's read: 山里的天气变化很大，一会儿晴，一会儿阴，一会儿刮风，一会儿下雨。 Test Reading 4: 夏天的天气变化很快，一会儿下雨，一会儿晴。",
+  "examples": [
+   {
+    "chinese": "一会儿晴，一会儿阴。",
+    "pinyin": "Yíhuìr qíng, yíhuìr yīn.",
+    "mongolian": "Нэг нарлаж, нэг бүрхэнэ."
+   },
+   {
+    "chinese": "一会儿刮风，一会儿下雨。",
+    "pinyin": "Yíhuìr guāfēng, yíhuìr xiàyǔ.",
+    "mongolian": "Нэг салхилж, нэг бороо орно."
+   },
+   {
+    "chinese": "山里的天气变化很大。",
+    "pinyin": "Shān li de tiānqì biànhuà hěn dà.",
+    "mongolian": "Уулын цаг агаар маш их өөрчлөгддөг."
+   },
+   {
+    "chinese": "这个星期天气变化太大了。",
+    "pinyin": "Zhège xīngqī tiānqì biànhuà tài dà le.",
+    "mongolian": "Энэ долоо хоногт цаг агаар дэндүү их өөрчлөгдлөө."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "一会儿晴，阴。",
+    "right": "一会儿晴，一会儿阴。",
+    "why": "«一会儿» хоёр удаа хэлнэ."
+   }
+  ],
+  "check": {
+   "question": "«Нэг нарлаж, нэг бороо орно» хятадаар:",
+   "options": [
+    "一共晴，一共下雨",
+    "到处晴，到处下雨",
+    "一会儿晴，一会儿下雨"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "一会儿晴，一会儿 ________ 。",
+    "options": [
+     "暖和",
+     "一共",
+     "阴"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 一会儿晴，一会儿阴.",
+    "explanation_wrong_mn": "晴-ийн эсрэг нь 阴."
+   },
+   {
+    "type": "choice",
+    "question": "山里的天气 ________ 很大。",
+    "options": [
+     "一共",
+     "到处",
+     "变化"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 变化很大 = маш их өөрчлөгддөг.",
+    "explanation_wrong_mn": "变化 = өөрчлөлт."
+   },
+   {
+    "type": "judge",
+    "question": "«一会儿刮风，一会儿下雨» гэдэг нь цаг агаар байн байн хувирч байна гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! Нэг салхилж, нэг бороо орж байна.",
+    "explanation_wrong_mn": "一会儿…一会儿… = нэг …, нэг …"
+   }
+  ]
+ }
+]

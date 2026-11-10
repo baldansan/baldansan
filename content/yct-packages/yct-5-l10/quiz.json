@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Шалгалт» хятадаар аль нь вэ?",
+  "options": [
+   "考试",
+   "准备",
+   "成绩",
+   "复习"
+  ],
+  "correct_answer": "考试",
+  "explanation": "考试 (kǎoshì) = шалгалт.",
+  "order_index": 1,
+  "id": "yct-5-l10-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дүн, оноо» хятадаар аль нь вэ?",
+  "options": [
+   "考试",
+   "练习",
+   "努力",
+   "成绩"
+  ],
+  "correct_answer": "成绩",
+  "explanation": "成绩 (chéngjì) = дүн, оноо.",
+  "order_index": 2,
+  "id": "yct-5-l10-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Давтах» хятадаар аль нь вэ?",
+  "options": [
+   "练习",
+   "准备",
+   "聊天儿",
+   "复习"
+  ],
+  "correct_answer": "复习",
+  "explanation": "复习 (fùxí) = давтах.",
+  "order_index": 3,
+  "id": "yct-5-l10-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хичээх» хятадаар аль нь вэ?",
+  "options": [
+   "相信",
+   "努力",
+   "一定",
+   "认真"
+  ],
+  "correct_answer": "努力",
+  "explanation": "努力 (nǔlì) = хичээх.",
+  "order_index": 4,
+  "id": "yct-5-l10-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дасгал хийх» хятадаар аль нь вэ?",
+  "options": [
+   "练习",
+   "考试",
+   "复习",
+   "成绩"
+  ],
+  "correct_answer": "练习",
+  "explanation": "练习 (liànxí) = дасгал хийх.",
+  "order_index": 5,
+  "id": "yct-5-l10-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«认真» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "итгэх",
+   "нухацтай, анхааралтай",
+   "улам улам",
+   "заавал"
+  ],
+  "correct_answer": "нухацтай, анхааралтай",
+  "explanation": "认真 (rènzhēn) = нухацтай, анхааралтай.",
+  "order_index": 6,
+  "id": "yct-5-l10-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«一定» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "шалгалт",
+   "заавал, мэдээж",
+   "давтах",
+   "бэлдэх"
+  ],
+  "correct_answer": "заавал, мэдээж",
+  "explanation": "一定 (yídìng) = заавал, мэдээж.",
+  "order_index": 7,
+  "id": "yct-5-l10-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«相信» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "итгэх",
+   "хөөрөлдөх",
+   "давтах",
+   "хичээх"
+  ],
+  "correct_answer": "итгэх",
+  "explanation": "相信 (xiāngxìn) = итгэх.",
+  "order_index": 8,
+  "id": "yct-5-l10-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«聊天儿» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хөөрөлдөх, ярилцах",
+   "дасгал хийх",
+   "бэлдэх",
+   "шалгалт өгөх"
+  ],
+  "correct_answer": "хөөрөлдөх, ярилцах",
+  "explanation": "聊天儿 (liáotiānr) = хөөрөлдөх.",
+  "order_index": 9,
+  "id": "yct-5-l10-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«准备» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хичээх",
+   "давтах",
+   "бэлдэх",
+   "итгэх"
+  ],
+  "correct_answer": "бэлдэх",
+  "explanation": "准备 (zhǔnbèi) = бэлдэх.",
+  "order_index": 10,
+  "id": "yct-5-l10-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «fùxí» гэж уншдаг үг:",
+  "options": [
+   "考试",
+   "练习",
+   "成绩",
+   "复习"
+  ],
+  "correct_answer": "复习",
+  "explanation": "复习 = fùxí = давтах.",
+  "order_index": 11,
+  "id": "yct-5-l10-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nǔlì» гэж уншдаг үг:",
+  "options": [
+   "相信",
+   "一定",
+   "认真",
+   "努力"
+  ],
+  "correct_answer": "努力",
+  "explanation": "努力 = nǔlì = хичээх.",
+  "order_index": 12,
+  "id": "yct-5-l10-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «chéngjì» гэж уншдаг үг:",
+  "options": [
+   "准备",
+   "考试",
+   "练习",
+   "成绩"
+  ],
+  "correct_answer": "成绩",
+  "explanation": "成绩 = chéngjì = дүн.",
+  "order_index": 13,
+  "id": "yct-5-l10-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи даалгавраа бичиж байна уу?» хятадаар:",
+  "options": [
+   "你在写作业吗？",
+   "你一定会成功吗？",
+   "你在看书吗？",
+   "你相信老师吗？"
+  ],
+  "correct_answer": "你在写作业吗？",
+  "explanation": "在 + үйл үг = хийж байна. 写作业 = даалгавар бичих.",
+  "order_index": 14,
+  "id": "yct-5-l10-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дээр Сяо Хун юу хийж байна?",
+  "options": [
+   "Хөл бөмбөг тоглож байна",
+   "Хятад хэлээ давтаж, шалгалтандаа бэлдэж байна",
+   "Багшдаа утсаар ярьж байна",
+   "Найзтайгаа хөөрөлдөж байна"
+  ],
+  "correct_answer": "Хятад хэлээ давтаж, шалгалтандаа бэлдэж байна",
+  "explanation": "我在复习汉语，准备考试。",
+  "order_index": 15,
+  "id": "yct-5-l10-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Мин Сяо Хунд юу гэж хэлсэн бэ?",
+  "options": [
+   "Чи заавал ялна",
+   "Чи заавал сайн дүн авна",
+   "Чи заавал ирнэ",
+   "Чи заавал явна"
+  ],
+  "correct_answer": "Чи заавал сайн дүн авна",
+  "explanation": "你这么努力，一定会有好成绩。",
+  "order_index": 16,
+  "id": "yct-5-l10-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Хуны хятад хэлний багш байнга юу гэж хэлдэг вэ?",
+  "options": [
+   "你在写作业吗？",
+   "你一定会去中国。",
+   "只要努力，就会有好成绩。",
+   "我相信自己。"
+  ],
+  "correct_answer": "只要努力，就会有好成绩。",
+  "explanation": "Хичээвэл сайн дүн авна.",
+  "order_index": 17,
+  "id": "yct-5-l10-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Богино өгүүлэмжид охин юу хийдэг вэ?",
+  "options": [
+   "Өдөр бүр кино үздэг",
+   "Хөл бөмбөг тоглодог",
+   "Зөвхөн ном уншдаг",
+   "Анхааралтай даалгавраа бичиж, дасгал хийж, хятад найзуудтайгаа хөөрөлддөг"
+  ],
+  "correct_answer": "Анхааралтай даалгавраа бичиж, дасгал хийж, хятад найзуудтайгаа хөөрөлддөг",
+  "explanation": "Охин олон аргаар хятад хэл сурдаг.",
+  "order_index": 18,
+  "id": "yct-5-l10-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Үлгэрт Жэк зун хаашаа явах гэж байна?",
+  "options": [
+   "Сургууль руу",
+   "Хятад руу",
+   "Гэр рүүгээ",
+   "Монгол руу"
+  ],
+  "correct_answer": "Хятад руу",
+  "explanation": "这个暑假杰克要跟同学们一起去中国。",
+  "order_index": 19,
+  "id": "yct-5-l10-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "只要努力，（ ）会有好成绩。",
+  "options": [
+   "在",
+   "吗",
+   "也",
+   "就"
+  ],
+  "correct_answer": "就",
+  "explanation": "只要……就……",
+  "order_index": 20,
+  "id": "yct-5-l10-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的汉语会（ ）好。",
+  "options": [
+   "越来越",
+   "一定",
+   "认真",
+   "准备"
+  ],
+  "correct_answer": "越来越",
+  "explanation": "越来越好 = улам улам сайн.",
+  "order_index": 21,
+  "id": "yct-5-l10-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你这么努力，（ ）会有好成绩。",
+  "options": [
+   "越来越",
+   "就",
+   "只要",
+   "一定"
+  ],
+  "correct_answer": "一定",
+  "explanation": "一定会 = заавал … болно.",
+  "order_index": 22,
+  "id": "yct-5-l10-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）复习汉语，准备考试。",
+  "options": [
+   "吗",
+   "在",
+   "就",
+   "越"
+  ],
+  "correct_answer": "在",
+  "explanation": "在 + үйл үг = хийж байна.",
+  "order_index": 23,
+  "id": "yct-5-l10-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我每天（ ）写作业。",
+  "options": [
+   "成绩",
+   "相信",
+   "考试",
+   "认真"
+  ],
+  "correct_answer": "认真",
+  "explanation": "认真写作业 = анхааралтай даалгавраа бичих.",
+  "order_index": 24,
+  "id": "yct-5-l10-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Хичээвэл сайн дүн авна» хятадаар:",
+  "options": [
+   "我在准备考试。",
+   "你一定会越来越好。",
+   "只要努力，就会有好成绩。",
+   "你认真复习。"
+  ],
+  "correct_answer": "只要努力，就会有好成绩。",
+  "explanation": "只要……就……",
+  "order_index": 25,
+  "id": "yct-5-l10-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь шалгалтандаа бэлдэж байна. Түүнийг урамшуулж хэлэх өгүүлбэр аль нь вэ?",
+  "options": [
+   "我在复习汉语。",
+   "考试成绩很好。",
+   "你一定会有好成绩。",
+   "你在写作业吗？"
+  ],
+  "correct_answer": "你一定会有好成绩。",
+  "explanation": "一定会 = заавал … болно. Урамшуулахад хэрэглэнэ.",
+  "order_index": 26,
+  "id": "yct-5-l10-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хятад хэл чинь өмнөхөөсөө сайжирлаа. Яаж хэлэх вэ?",
+  "options": [
+   "我相信老师。",
+   "我的汉语越来越好了。",
+   "我的汉语越来越难。",
+   "我在复习汉语。"
+  ],
+  "correct_answer": "我的汉语越来越好了。",
+  "explanation": "越来越好 = улам улам сайн болж байна.",
+  "order_index": 27,
+  "id": "yct-5-l10-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Өөртөө итгэж байгаагаа хэлэхдээ:",
+  "options": [
+   "我在练习！",
+   "我相信自己！",
+   "我准备考试！",
+   "我聊天儿！"
+  ],
+  "correct_answer": "我相信自己！",
+  "explanation": "相信自己 = өөртөө итгэх.",
+  "order_index": 28,
+  "id": "yct-5-l10-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

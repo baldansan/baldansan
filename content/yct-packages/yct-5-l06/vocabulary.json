@@ -1,0 +1,122 @@
+[
+ {
+  "chinese": "站",
+  "pinyin": "zhàn",
+  "mongolian": "зогсох",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "站在桌子上",
+  "examplePinyin": "Zhàn zài zhuōzi shang",
+  "exampleMongolian": "Ширээн дээр зогсож байна",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "着",
+  "pinyin": "zhe",
+  "mongolian": "…ж байна (үйлдэл үргэлжилж буйг заана)",
+  "notes": "туслах үг · гол үг",
+  "exampleChinese": "他坐着，穿着红衣服。",
+  "examplePinyin": "Tā zuòzhe, chuānzhe hóng yīfu.",
+  "exampleMongolian": "Тэр сууж байна, улаан хувцас өмссөн байна.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "戴",
+  "pinyin": "dài",
+  "mongolian": "зүүх (шил, малгай)",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "他戴着眼镜。",
+  "examplePinyin": "Tā dàizhe yǎnjìng.",
+  "exampleMongolian": "Тэр нүдний шил зүүсэн байна.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "眼镜",
+  "pinyin": "yǎnjìng",
+  "mongolian": "нүдний шил",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我的眼镜坏了。",
+  "examplePinyin": "Wǒ de yǎnjìng huài le.",
+  "exampleMongolian": "Миний нүдний шил эвдэрчихлээ.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "错",
+  "pinyin": "cuò",
+  "mongolian": "буруу",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "没错！",
+  "examplePinyin": "Méicuò!",
+  "exampleMongolian": "Яг зөв!",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "大家",
+  "pinyin": "dàjiā",
+  "mongolian": "бүгдээрээ",
+  "notes": "төлөөний үг · гол үг",
+  "exampleChinese": "大家好！",
+  "examplePinyin": "Dàjiā hǎo!",
+  "exampleMongolian": "Бүгдээрээ сайн уу!",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "见",
+  "pinyin": "jiàn",
+  "mongolian": "харах (看见)",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "我看见了一只小狗。",
+  "examplePinyin": "Wǒ kànjiàn le yì zhī xiǎo gǒu.",
+  "exampleMongolian": "Би нэг бяцхан нохой харлаа.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "项圈",
+  "pinyin": "xiàngquān",
+  "mongolian": "хүзүүвч",
+  "notes": "нэр үг",
+  "exampleChinese": "小猫戴着黄色的项圈。",
+  "examplePinyin": "Xiǎo māo dàizhe huángsè de xiàngquān.",
+  "exampleMongolian": "Муур шар хүзүүвч зүүсэн байна.",
+  "hskLevel": "YCT 5",
+  "keyWord": false,
+  "orderIndex": 8
+ },
+ {
+  "chinese": "联系",
+  "pinyin": "liánxì",
+  "mongolian": "холбоо барих",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "请和我联系。",
+  "examplePinyin": "Qǐng hé wǒ liánxì.",
+  "exampleMongolian": "Надтай холбоо барина уу.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 9
+ },
+ {
+  "chinese": "号码",
+  "pinyin": "hàomǎ",
+  "mongolian": "дугаар",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "你的电话号码是多少？",
+  "examplePinyin": "Nǐ de diànhuà hàomǎ shì duōshao?",
+  "exampleMongolian": "Чиний утасны дугаар хэд вэ?",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 10
+ }
+]

@@ -1,0 +1,248 @@
+[
+ {
+  "point": "既……又……",
+  "gloss_mn": "«…ч …ч» — хоёр сайн талыг хамт хэлэх",
+  "structure": "既 + сайн тал 1 + 又 + сайн тал 2",
+  "teacher_mn": "Дуртай зүйлээ магтахдаа «既……又……» гэж хэл. «既» болон «又»-ийн хойно хоёр сайн талыг тавина. Жишээ нь «既好吃又便宜» — амттай ч, хямд ч. Хоёр тал нь ижил төрлийн, хоёулаа сайн байх ёстой шүү.",
+  "teacher_notes": "Key sentence: 冰激凌既好吃又便宜。 Дуу: 既便宜又好吃！ Test Writing: 那种饮料既好喝又健康。",
+  "examples": [
+   {
+    "chinese": "冰激凌既好吃又便宜。",
+    "pinyin": "Bīngjīlíng jì hǎochī yòu piányi.",
+    "mongolian": "Зайрмаг амттай ч, хямд ч."
+   },
+   {
+    "chinese": "既便宜又好吃！",
+    "pinyin": "Jì piányi yòu hǎochī!",
+    "mongolian": "Хямд ч, амттай ч!"
+   },
+   {
+    "chinese": "那种饮料既好喝又健康。",
+    "pinyin": "Nà zhǒng yǐnliào jì hǎohē yòu jiànkāng.",
+    "mongolian": "Тэр ундаа амттай ч, эрүүл ч."
+   },
+   {
+    "chinese": "既好吃又便宜！",
+    "pinyin": "Jì hǎochī yòu piányi!",
+    "mongolian": "Амттай ч, хямд ч!"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "冰激凌既好吃也便宜。",
+    "right": "冰激凌既好吃又便宜。",
+    "why": "«既» -ийн хойно «又» хэлнэ."
+   }
+  ],
+  "check": {
+   "question": "«Хямд ч, амттай ч» хятадаар:",
+   "options": [
+    "又便宜又不好吃",
+    "已经便宜了",
+    "既便宜又好吃"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "冰激凌既好吃 ________ 便宜。",
+    "options": [
+     "吗",
+     "了",
+     "又"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 既……又…… гэж хамт хэлнэ.",
+    "explanation_wrong_mn": "既-ийн хойно 又 ирнэ."
+   },
+   {
+    "type": "choice",
+    "question": "«Амттай ч, хямд ч» хятадаар:",
+    "options": [
+     "好吃已经便宜",
+     "既好吃又便宜",
+     "又好吃了"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 既好吃又便宜.",
+    "explanation_wrong_mn": "既……又…… бүтцээр хэл."
+   },
+   {
+    "type": "judge",
+    "question": "«既好吃又便宜» нь хоёр сайн талыг хамт хэлж байна.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! Амттай ч, хямд ч.",
+    "explanation_wrong_mn": "Хоёулаа сайн тал."
+   }
+  ]
+ },
+ {
+  "point": "已经……了",
+  "gloss_mn": "«Аль хэдийн … болсон» — өнгөрсөн зүйлийг хэлэх",
+  "structure": "已经 + юу хийсэн (吃/送/去) + 了",
+  "teacher_mn": "Ямар нэг юм өмнө нь болчихсон гэж хэлэхдээ «已经……了» гэнэ. «已经» нь 吃, 送, 去 шиг үгийн өмнө, «了» нь өгүүлбэрийн төгсгөлд. Жишээ нь «去年我们已经送他手表了» — өнгөрсөн жил бид түүнд цаг аль хэдийн өгсөн.",
+  "teacher_notes": "Key sentence: 去年我们已经送他手表了。 Test: 他已经去北京了。 你已经吃了三块了。 Let's say: 已经……了-аар хариул.",
+  "examples": [
+   {
+    "chinese": "去年我们已经送他手表了。",
+    "pinyin": "Qùnián wǒmen yǐjīng sòng tā shǒubiǎo le.",
+    "mongolian": "Өнгөрсөн жил бид түүнд цаг аль хэдийн өгсөн."
+   },
+   {
+    "chinese": "别吃了，你已经吃了三块了。",
+    "pinyin": "Bié chī le, nǐ yǐjīng chī le sān kuài le.",
+    "mongolian": "Битгий ид, чи гурав аль хэдийн идсэн."
+   },
+   {
+    "chinese": "他已经去北京了。",
+    "pinyin": "Tā yǐjīng qù Běijīng le.",
+    "mongolian": "Тэр Бээжинд аль хэдийн очсон."
+   },
+   {
+    "chinese": "我已经习惯了。",
+    "pinyin": "Wǒ yǐjīng xíguàn le.",
+    "mongolian": "Би аль хэдийн дассан."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我们送他手表已经了。",
+    "right": "我们已经送他手表了。",
+    "why": "«已经» нь 送, 吃 шиг үгийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Тэр аль хэдийн очсон» хятадаар:",
+   "options": [
+    "他已经去了",
+    "他去已经了",
+    "他已经去"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "他 ________ 去北京了。",
+    "options": [
+     "既",
+     "已经",
+     "记得"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 已经……了 = аль хэдийн.",
+    "explanation_wrong_mn": "已经 нь 去, 吃 шиг үгийн өмнө."
+   },
+   {
+    "type": "choice",
+    "question": "«Би аль хэдийн идсэн» хятадаар:",
+    "options": [
+     "我既吃了",
+     "我吃已经",
+     "我已经吃了"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 已经 + 吃 + 了.",
+    "explanation_wrong_mn": "已经 нь 吃 шиг үгийн өмнө."
+   },
+   {
+    "type": "judge",
+    "question": "«已经» нь «аль хэдийн» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 已经 = аль хэдийн.",
+    "explanation_wrong_mn": "已经 = аль хэдийн."
+   }
+  ]
+ },
+ {
+  "point": "送 + хэн + юу · 买一送一",
+  "gloss_mn": "«Бэлэглэх, нэмж өгөх»",
+  "structure": "送 + хэн + юу · 买 A 送 B",
+  "teacher_mn": "Бэлэг өгөхдөө «送» гэнэ. Эхлээд хэнд, дараа нь юуг хэлнэ: «送他手表» — түүнд цаг өгнө. Дэлгүүрт «买冰激凌可以送饼干» гэвэл зайрмаг авбал жигнэмэг нэмж өгнө гэсэн үг. «买一送一» — нэгийг авбал нэгийг нэмж өгнө.",
+  "teacher_notes": "Let's read: 我们送他什么礼物好呢？ 送一块漂亮的手表吧。 Short speech: 现在买一送一，买冰激凌可以送饼干，还可以送饮料。",
+  "examples": [
+   {
+    "chinese": "我们送他什么礼物好呢？",
+    "pinyin": "Wǒmen sòng tā shénme lǐwù hǎo ne?",
+    "mongolian": "Бид түүнд ямар бэлэг өгвөл зүгээр вэ?"
+   },
+   {
+    "chinese": "送一块漂亮的手表吧。",
+    "pinyin": "Sòng yí kuài piàoliang de shǒubiǎo ba.",
+    "mongolian": "Гоё бугуйн цаг өгье."
+   },
+   {
+    "chinese": "现在买一送一。",
+    "pinyin": "Xiànzài mǎi yī sòng yī.",
+    "mongolian": "Одоо нэгийг авбал нэгийг нэмж өгнө."
+   },
+   {
+    "chinese": "买冰激凌可以送饼干。",
+    "pinyin": "Mǎi bīngjīlíng kěyǐ sòng bǐnggān.",
+    "mongolian": "Зайрмаг авбал жигнэмэг нэмж өгнө."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我们送手表他。",
+    "right": "我们送他手表。",
+    "why": "Эхлээд хэнд (他), дараа нь юу (手表)."
+   }
+  ],
+  "check": {
+   "question": "«Түүнд бугуйн цаг өгье» хятадаар:",
+   "options": [
+    "送手表他",
+    "他送手表",
+    "送他手表"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "现在买一 ________ 一。",
+    "options": [
+     "吃",
+     "喝",
+     "送"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 买一送一.",
+    "explanation_wrong_mn": "买一送一 = нэгийг авбал нэгийг нэмж өгнө."
+   },
+   {
+    "type": "choice",
+    "question": "«Түүнд ямар бэлэг өгөх вэ?» хятадаар:",
+    "options": [
+     "他送什么礼物吗？",
+     "什么送他？",
+     "送他什么礼物？"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 送 + хэн + юу.",
+    "explanation_wrong_mn": "Эхлээд хэнд, дараа нь юу."
+   },
+   {
+    "type": "judge",
+    "question": "«买一送一» гэдэг нь «нэгийг авбал нэгийг нэмж өгнө» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв!",
+    "explanation_wrong_mn": "买一送一 = нэгийг авбал нэгийг нэмж өгнө."
+   }
+  ]
+ }
+]

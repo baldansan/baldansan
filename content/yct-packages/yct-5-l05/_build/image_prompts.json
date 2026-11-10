@@ -1,0 +1,170 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "他们多么年轻啊！",
+  "section": "teacher-intro",
+  "prompt": "Teacher Camel (yellow camel with glasses) shows an old framed family photo to the yellow calf boy, the calf girl in a yellow dress and the brown calf boy in a cozy living room; the calves look amazed. Speech bubble with the Chinese text 他们多么年轻啊！ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "hero"
+ },
+ {
+  "file": "images/w-erzi.jpg",
+  "aspect": "1:1",
+  "title": "儿子",
+  "section": "vocabulary",
+  "prompt": "An adult camel father proudly standing with his young calf son, hand on his shoulder, family photo mood. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ayi.jpg",
+  "aspect": "1:1",
+  "title": "阿姨",
+  "section": "vocabulary",
+  "prompt": "A friendly adult camel auntie in a red blouse smiling and waving hello to the calf girl. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shuai.jpg",
+  "aspect": "1:1",
+  "title": "帅",
+  "section": "vocabulary",
+  "prompt": "A handsome young calf with sunglasses and a bright smile posing like a model, sparkles around him. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-nuer.jpg",
+  "aspect": "1:1",
+  "title": "女儿",
+  "section": "vocabulary",
+  "prompt": "An adult camel mother hugging her little calf daughter in a yellow dress with a pink ribbon. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-nianqing.jpg",
+  "aspect": "1:1",
+  "title": "年轻",
+  "section": "vocabulary",
+  "prompt": "A young energetic camel jogging happily next to a very old camel with a walking stick, to show young. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-zhaoxiang.jpg",
+  "aspect": "1:1",
+  "title": "照相",
+  "section": "vocabulary",
+  "prompt": "The calf boy holding a camera taking a photo of the smiling calf girl. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zhang.jpg",
+  "aspect": "1:1",
+  "title": "张",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy holding up one flat photo card and a table with a flat top beside him, to show a flat object. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhaopian.jpg",
+  "aspect": "1:1",
+  "title": "照片",
+  "section": "vocabulary",
+  "prompt": "The calf girl looking happily at a printed family photo in her hands. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-duome.jpg",
+  "aspect": "1:1",
+  "title": "多么",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy with wide-open amazed eyes and mouth looking at a huge beautiful rainbow, sparkles. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-haizi.jpg",
+  "aspect": "1:1",
+  "title": "孩子",
+  "section": "vocabulary",
+  "prompt": "Three small calf children playing happily with a ball in a playground. No English text.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-shushu.jpg",
+  "aspect": "1:1",
+  "title": "叔叔",
+  "section": "vocabulary",
+  "prompt": "A friendly adult male camel uncle in a blue shirt giving a toy to the yellow calf boy. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-sunzi.jpg",
+  "aspect": "1:1",
+  "title": "孙子",
+  "section": "vocabulary",
+  "prompt": "An old grandfather camel with a walking stick holding hands with his little calf grandson. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "这是你儿子吗？",
+  "section": "dialogue",
+  "prompt": "Outside a building, an adult camel auntie in a red jacket points to the calf boy standing with his adult camel father; the calf boy waves hello; another adult camel woman stands beside the auntie. Speech bubble with the Chinese text 这是你儿子吗？ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我爷爷和奶奶很喜欢照相。",
+  "section": "speech",
+  "prompt": "The yellow calf boy shows two framed family photos on a brick wall, an old black-and-white one and a color one, grandfather and grandmother camels smiling beside him holding a camera. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "家庭歌",
+  "section": "song",
+  "prompt": "The calf children and Teacher Camel sing happily in front of a big family tree with grandparent, uncle, aunt camels in the leaves, musical notes floating. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

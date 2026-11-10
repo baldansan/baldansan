@@ -1,0 +1,168 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "兔子更可爱。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands at a sunny children's zoo with three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap); an elephant with a long trunk and a small white rabbit stand in front, a speech bubble with the Chinese text 兔子更可爱 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-daxiang.jpg",
+  "aspect": "1:1",
+  "title": "大象",
+  "section": "vocabulary",
+  "prompt": "A big friendly elephant with a long trunk, the yellow calf boy in blue vest patting its trunk, simple bright background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-tuzi.jpg",
+  "aspect": "1:1",
+  "title": "兔子",
+  "section": "vocabulary",
+  "prompt": "A cute white rabbit with long ears sitting on grass, the calf girl in yellow dress with pink ribbon petting it. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-hudie.jpg",
+  "aspect": "1:1",
+  "title": "蝴蝶",
+  "section": "vocabulary",
+  "prompt": "A colourful butterfly landing on the nose of the brown calf boy in green cap, flower garden background. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-chongzi.jpg",
+  "aspect": "1:1",
+  "title": "虫子",
+  "section": "vocabulary",
+  "prompt": "A friendly green caterpillar on a leaf, the yellow calf boy looking at it with a magnifying glass, curious face. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-weiba.jpg",
+  "aspect": "1:1",
+  "title": "尾巴",
+  "section": "vocabulary",
+  "prompt": "A white cat seen from behind with a long fluffy tail raised up, the calf girl in yellow dress pointing at the tail. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ai.jpg",
+  "aspect": "1:1",
+  "title": "矮",
+  "section": "vocabulary",
+  "prompt": "A small short calf (brown boy in green cap) standing next to a very tall adult camel, showing short versus tall, funny but kind. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-pang.jpg",
+  "aspect": "1:1",
+  "title": "胖",
+  "section": "vocabulary",
+  "prompt": "A round chubby hippo happily eating a big bun, the yellow calf boy laughing next to it. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-duan.jpg",
+  "aspect": "1:1",
+  "title": "短",
+  "section": "vocabulary",
+  "prompt": "A very short stub of a pencil next to a long pencil on a desk, calf girl in yellow dress holding the short one. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-geng.jpg",
+  "aspect": "1:1",
+  "title": "更",
+  "section": "vocabulary",
+  "prompt": "Two cakes: one nice cake and next to it an even bigger, fancier cake with a glowing star; the brown calf boy in green cap points to the bigger one with a wow face, an arrow showing 'even more'. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-taoyan.jpg",
+  "aspect": "1:1",
+  "title": "讨厌",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest holding his nose and frowning at a buzzing fly, crossed arms, clear dislike expression. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-gaosu.jpg",
+  "aspect": "1:1",
+  "title": "告诉",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress whispering a secret into the ear of the brown calf boy in green cap, hand beside mouth. No English text.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jianglai.jpg",
+  "aspect": "1:1",
+  "title": "将来",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest daydreaming; a thought cloud shows him grown up as a doctor in a white coat and a rocket in the sky, calendar pages flying. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "我喜欢大象。",
+  "section": "dialogue",
+  "prompt": "A school stage play: the yellow calf boy in an elephant costume and the calf girl in a white rabbit costume talk on stage, a panda costume and a crocodile costume behind them, red curtains, a speech bubble with the Chinese text 我喜欢大象 in large clear black font. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我喜欢蝴蝶",
+  "section": "speech",
+  "prompt": "Life of a butterfly in three steps on a green bush: a green caterpillar, a cocoon, then a beautiful butterfly, arrows between them; the teacher camel with glasses points at them while two calves watch. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "叶公好龙",
+  "section": "story",
+  "prompt": "Ancient Chinese gentleman in a red robe screaming in fear under a table while a huge friendly-looking green Chinese dragon peeks in through the window; his room is full of dragon paintings, vases and carvings. No English text.",
+  "chars": []
+ }
+]

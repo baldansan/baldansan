@@ -1,0 +1,122 @@
+[
+ {
+  "chinese": "功夫",
+  "pinyin": "gōngfu",
+  "mongolian": "кунфу",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "我学功夫。",
+  "examplePinyin": "Wǒ xué gōngfu.",
+  "exampleMongolian": "Би кунфу сурдаг.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 1
+ },
+ {
+  "chinese": "对……感兴趣",
+  "pinyin": "duì…gǎn xìngqù",
+  "mongolian": "…-д сонирхолтой байх",
+  "notes": "хэллэг · гол үг",
+  "exampleChinese": "我对中国功夫很感兴趣。",
+  "examplePinyin": "Wǒ duì Zhōngguó gōngfu hěn gǎn xìngqù.",
+  "exampleMongolian": "Би хятад кунфуд сонирхолтой.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 2
+ },
+ {
+  "chinese": "非常",
+  "pinyin": "fēicháng",
+  "mongolian": "маш их",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "非常好，非常漂亮。",
+  "examplePinyin": "Fēicháng hǎo, fēicháng piàoliang.",
+  "exampleMongolian": "Маш сайн, маш гоё.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 3
+ },
+ {
+  "chinese": "飞",
+  "pinyin": "fēi",
+  "mongolian": "нисэх",
+  "notes": "үйл үг",
+  "exampleChinese": "会飞，飞得很高。",
+  "examplePinyin": "Huì fēi, fēi de hěn gāo.",
+  "exampleMongolian": "Нисч чадна, маш өндөр нисдэг.",
+  "hskLevel": "YCT 5",
+  "keyWord": false,
+  "orderIndex": 4
+ },
+ {
+  "chinese": "当然",
+  "pinyin": "dāngrán",
+  "mongolian": "мэдээж",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "当然可以，当然知道。",
+  "examplePinyin": "Dāngrán kěyǐ, dāngrán zhīdào.",
+  "exampleMongolian": "Мэдээж болно, мэдээж мэднэ.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 5
+ },
+ {
+  "chinese": "特别",
+  "pinyin": "tèbié",
+  "mongolian": "онцгой, их",
+  "notes": "дайвар үг · гол үг",
+  "exampleChinese": "特别高兴，很特别。",
+  "examplePinyin": "Tèbié gāoxìng, hěn tèbié.",
+  "exampleMongolian": "Онцгой баяртай байна, маш өвөрмөц.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 6
+ },
+ {
+  "chinese": "厉害",
+  "pinyin": "lìhai",
+  "mongolian": "мундаг, гайхалтай",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "你真厉害！",
+  "examplePinyin": "Nǐ zhēn lìhai!",
+  "exampleMongolian": "Чи үнэхээр мундаг!",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 7
+ },
+ {
+  "chinese": "一样",
+  "pinyin": "yíyàng",
+  "mongolian": "адилхан",
+  "notes": "тэмдэг нэр · гол үг",
+  "exampleChinese": "我和他一样高。",
+  "examplePinyin": "Wǒ hé tā yíyàng gāo.",
+  "exampleMongolian": "Би түүнтэй адилхан өндөр.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 8
+ },
+ {
+  "chinese": "帮助",
+  "pinyin": "bāngzhù",
+  "mongolian": "тусалах",
+  "notes": "үйл үг · гол үг",
+  "exampleChinese": "帮助朋友，谢谢你的帮助。",
+  "examplePinyin": "Bāngzhù péngyou, xièxie nǐ de bāngzhù.",
+  "exampleMongolian": "Найздаа тусална. Тусалсанд баярлалаа.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 9
+ },
+ {
+  "chinese": "别人",
+  "pinyin": "biérén",
+  "mongolian": "бусад хүн",
+  "notes": "нэр үг · гол үг",
+  "exampleChinese": "帮助别人，别人不知道。",
+  "examplePinyin": "Bāngzhù biérén, biérén bù zhīdào.",
+  "exampleMongolian": "Бусдад тусална, бусад хүн мэдэхгүй.",
+  "hskLevel": "YCT 5",
+  "keyWord": true,
+  "orderIndex": 10
+ }
+]

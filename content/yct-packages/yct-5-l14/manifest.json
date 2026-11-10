@@ -1,0 +1,192 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l14",
+ "hskLevel": 3,
+ "lessonNumber": 14,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我打算去中国旅游。",
+ "mongolianTitle": "Би Хятад руу аялахаар төлөвлөж байна",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第14课 (сурах бичиг + CD аудио 14-01..04 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-14-text-song.mp3",
+  "dialogues": "audio/yct-5-14-02.mp3",
+  "words": "audio/yct-5-14-01.mp3",
+  "speech": "audio/yct-5-14-03.mp3",
+  "test": "audio/yct-5-14-04.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l14",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我打算去中国旅游。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "老师，今年寒假我打算去中国旅游，",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "这个暑假我打算去中国旅游。",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "w-hanjia",
+    "file": "images/w-hanjia.jpg",
+    "title": "寒假",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dasuan",
+    "file": "images/w-dasuan.jpg",
+    "title": "打算",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-lvyou",
+    "file": "images/w-lvyou.jpg",
+    "title": "旅游",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nanfang",
+    "file": "images/w-nanfang.jpg",
+    "title": "南方",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-beifang",
+    "file": "images/w-beifang.jpg",
+    "title": "北方",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chule",
+    "file": "images/w-chule.jpg",
+    "title": "除了",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-youming",
+    "file": "images/w-youming.jpg",
+    "title": "有名",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jieshao",
+    "file": "images/w-jieshao.jpg",
+    "title": "介绍",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shujia",
+    "file": "images/w-shujia.jpg",
+    "title": "暑假",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ranhou",
+    "file": "images/w-ranhou.jpg",
+    "title": "然后",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ditu",
+    "file": "images/w-ditu.jpg",
+    "title": "地图",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-changcheng",
+    "file": "images/w-changcheng.jpg",
+    "title": "长城",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiaolongbao",
+    "file": "images/w-xiaolongbao.jpg",
+    "title": "小笼包",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.jpg",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L14)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

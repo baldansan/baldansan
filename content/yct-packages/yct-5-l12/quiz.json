@@ -1,0 +1,542 @@
+[
+ {
+  "type": "choice",
+  "question": "«Метро» хятадаар аль нь вэ?",
+  "options": [
+   "火车",
+   "公共汽车",
+   "飞机",
+   "地铁"
+  ],
+  "correct_answer": "地铁",
+  "explanation": "地铁 (dìtiě) = метро.",
+  "order_index": 1,
+  "id": "yct-5-l12-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Галт тэрэг» хятадаар аль нь вэ?",
+  "options": [
+   "飞机",
+   "公共汽车",
+   "火车",
+   "地铁"
+  ],
+  "correct_answer": "火车",
+  "explanation": "火车 (huǒchē) = галт тэрэг.",
+  "order_index": 2,
+  "id": "yct-5-l12-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Байж магадгүй» хятадаар аль нь вэ?",
+  "options": [
+   "可能",
+   "担心",
+   "方便",
+   "安全"
+  ],
+  "correct_answer": "可能",
+  "explanation": "可能 (kěnéng) = байж магадгүй.",
+  "order_index": 3,
+  "id": "yct-5-l12-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Санаа зовох» хятадаар аль нь вэ?",
+  "options": [
+   "担心",
+   "工作",
+   "迟到",
+   "准时"
+  ],
+  "correct_answer": "担心",
+  "explanation": "担心 (dānxīn) = санаа зовох.",
+  "order_index": 4,
+  "id": "yct-5-l12-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ажиллах» хятадаар аль нь вэ?",
+  "options": [
+   "出差",
+   "锻炼",
+   "迟到",
+   "工作"
+  ],
+  "correct_answer": "工作",
+  "explanation": "工作 (gōngzuò) = ажиллах, ажил.",
+  "order_index": 5,
+  "id": "yct-5-l12-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Аюулгүй» хятадаар аль нь вэ?",
+  "options": [
+   "准时",
+   "方便",
+   "安全",
+   "可能"
+  ],
+  "correct_answer": "安全",
+  "explanation": "安全 (ānquán) = аюулгүй.",
+  "order_index": 6,
+  "id": "yct-5-l12-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цагтаа, хоцролгүй» хятадаар аль нь вэ?",
+  "options": [
+   "安全",
+   "慢",
+   "准时",
+   "迟到"
+  ],
+  "correct_answer": "准时",
+  "explanation": "准时 (zhǔnshí) = цагтаа ирдэг, хоцрохгүй.",
+  "order_index": 7,
+  "id": "yct-5-l12-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Амар, тохиромжтой» хятадаар аль нь вэ?",
+  "options": [
+   "工作",
+   "担心",
+   "方便",
+   "安全"
+  ],
+  "correct_answer": "方便",
+  "explanation": "方便 (fāngbiàn) = амар, тохиромжтой.",
+  "order_index": 8,
+  "id": "yct-5-l12-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Эсвэл» (өгүүлбэрт) хятадаар аль нь вэ?",
+  "options": [
+   "因为",
+   "或者",
+   "如果",
+   "可能"
+  ],
+  "correct_answer": "或者",
+  "explanation": "或者 (huòzhě) = эсвэл.",
+  "order_index": 9,
+  "id": "yct-5-l12-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«出差» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "ажил хийх",
+   "хоол идэх",
+   "ажлаар томилолтоор явах",
+   "сургуульд явах"
+  ],
+  "correct_answer": "ажлаар томилолтоор явах",
+  "explanation": "出差 (chūchāi) = ажлаар өөр хот руу явах.",
+  "order_index": 10,
+  "id": "yct-5-l12-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«如果…那么…» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Хэрвээ …бол тэгвэл …",
+   "… учраас …",
+   "… эсвэл …",
+   "…төдийгүй бас …"
+  ],
+  "correct_answer": "Хэрвээ …бол тэгвэл …",
+  "explanation": "如果 = хэрвээ, 那么 = тэгвэл.",
+  "order_index": 11,
+  "id": "yct-5-l12-q11",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Шанхай» хятадаар аль нь вэ?",
+  "options": [
+   "上海",
+   "学校",
+   "中国",
+   "北京"
+  ],
+  "correct_answer": "上海",
+  "explanation": "上海 (Shànghǎi) = Шанхай.",
+  "order_index": 12,
+  "id": "yct-5-l12-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «ānquán» гэж уншдаг үг:",
+  "options": [
+   "准时",
+   "担心",
+   "安全",
+   "方便"
+  ],
+  "correct_answer": "安全",
+  "explanation": "安全 = ānquán = аюулгүй.",
+  "order_index": 13,
+  "id": "yct-5-l12-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «fāngbiàn» гэж уншдаг үг:",
+  "options": [
+   "方便",
+   "可能",
+   "工作",
+   "安全"
+  ],
+  "correct_answer": "方便",
+  "explanation": "方便 = fāngbiàn = амар, тохиромжтой.",
+  "order_index": 14,
+  "id": "yct-5-l12-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «huǒchē» гэж уншдаг үг:",
+  "options": [
+   "地铁",
+   "工作",
+   "飞机",
+   "火车"
+  ],
+  "correct_answer": "火车",
+  "explanation": "火车 = huǒchē = галт тэрэг.",
+  "order_index": 15,
+  "id": "yct-5-l12-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дээр Юэ-юэ ямар хоёр замыг хэлсэн бэ?",
+  "options": [
+   "Такси эсвэл машин",
+   "Автобус эсвэл метро",
+   "Дугуй эсвэл явган",
+   "Онгоц эсвэл галт тэрэг"
+  ],
+  "correct_answer": "Автобус эсвэл метро",
+  "explanation": "坐公共汽车或者坐地铁都可以。",
+  "order_index": 16,
+  "id": "yct-5-l12-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«哪个更方便？» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Чи хэзээ ирэх вэ?",
+   "Хэдэн цаг вэ?",
+   "Хаашаа явах вэ?",
+   "Аль нь илүү амар вэ?"
+  ],
+  "correct_answer": "Аль нь илүү амар вэ?",
+  "explanation": "哪个 = аль нь, 更方便 = илүү амар.",
+  "order_index": 17,
+  "id": "yct-5-l12-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Мари яагаад санаа зовсон бэ?",
+  "options": [
+   "Төөрөх вий гэж",
+   "Өлсөх вий гэж",
+   "Бороо орох вий гэж",
+   "Хоцрох вий гэж"
+  ],
+  "correct_answer": "Хоцрох вий гэж",
+  "explanation": "我担心会迟到。",
+  "order_index": 18,
+  "id": "yct-5-l12-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Юэ-юэ Маринд эцэст нь юу зөвлөсөн бэ?",
+  "options": [
+   "Онгоцоор яв",
+   "Галт тэргээр яв",
+   "Метроор яв",
+   "Автобусаар яв"
+  ],
+  "correct_answer": "Метроор яв",
+  "explanation": "如果想快一点儿，那么就坐地铁吧。",
+  "order_index": 19,
+  "id": "yct-5-l12-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аав яагаад галт тэргээр явах дуртай вэ?",
+  "options": [
+   "Онгоцноос том",
+   "Аюулгүй бас цагтаа ирдэг",
+   "Хямд бас хурдан",
+   "Цонхоор гоё харагддаг"
+  ],
+  "correct_answer": "Аюулгүй бас цагтаа ирдэг",
+  "explanation": "不但很安全而且很准时。",
+  "order_index": 20,
+  "id": "yct-5-l12-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аав хаана ажилладаг вэ?",
+  "options": [
+   "Сургуульд",
+   "Бээжинд",
+   "Шанхайд",
+   "Эмнэлэгт"
+  ],
+  "correct_answer": "Шанхайд",
+  "explanation": "我爸爸在上海工作。",
+  "order_index": 21,
+  "id": "yct-5-l12-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "坐飞机（ ）坐火车都可以。",
+  "options": [
+   "如果",
+   "或者",
+   "担心",
+   "可能"
+  ],
+  "correct_answer": "或者",
+  "explanation": "A或者B都可以.",
+  "order_index": 22,
+  "id": "yct-5-l12-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（ ）想快一点儿，那么就坐地铁吧。",
+  "options": [
+   "安全",
+   "如果",
+   "或者",
+   "可能"
+  ],
+  "correct_answer": "如果",
+  "explanation": "如果…那么…",
+  "order_index": 23,
+  "id": "yct-5-l12-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "火车不但很安全（ ）很准时。",
+  "options": [
+   "而且",
+   "所以",
+   "但是",
+   "或者"
+  ],
+  "correct_answer": "而且",
+  "explanation": "不但…而且…",
+  "order_index": 24,
+  "id": "yct-5-l12-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我担心（ ）迟到。",
+  "options": [
+   "在",
+   "是",
+   "吗",
+   "会"
+  ],
+  "correct_answer": "会",
+  "explanation": "担心会迟到.",
+  "order_index": 25,
+  "id": "yct-5-l12-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我爸爸在上海（ ）。",
+  "options": [
+   "工作",
+   "可能",
+   "担心",
+   "方便"
+  ],
+  "correct_answer": "工作",
+  "explanation": "在上海工作 = Шанхайд ажилладаг.",
+  "order_index": 26,
+  "id": "yct-5-l12-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Автобус удаан явах вий, хоцрох вий гэж санаа зовлоо. Яаж хэлэх вэ?",
+  "options": [
+   "我在上海工作。",
+   "我担心会迟到。",
+   "火车很安全。",
+   "茶或者咖啡都可以。"
+  ],
+  "correct_answer": "我担心会迟到。",
+  "explanation": "担心会迟到 = хоцрох вий гэж санаа зовох.",
+  "order_index": 27,
+  "id": "yct-5-l12-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «Цай уух уу, кофе уух уу?» гэж асуулаа. Аль нь ч болно гэвэл:",
+  "options": [
+   "我担心会迟到。",
+   "坐火车很准时。",
+   "茶或者咖啡都可以。",
+   "我在上海工作。"
+  ],
+  "correct_answer": "茶或者咖啡都可以。",
+  "explanation": "或者 … 都可以 = аль нь ч болно.",
+  "order_index": 28,
+  "id": "yct-5-l12-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«Маргааш бороо орвол бид гэртээ байна» хятадаар:",
+  "options": [
+   "如果明天下雨，那么我们就在家。",
+   "明天可能不准时。",
+   "我担心明天在家。",
+   "明天下雨或者我们在家。"
+  ],
+  "correct_answer": "如果明天下雨，那么我们就在家。",
+  "explanation": "如果…那么… = хэрвээ …бол тэгвэл ….",
+  "order_index": 29,
+  "id": "yct-5-l12-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "«Галт тэрэг аюулгүй төдийгүй цагтаа ирдэг» хятадаар:",
+  "options": [
+   "火车或者安全或者准时。",
+   "火车如果安全那么准时。",
+   "火车不但很安全而且很准时。",
+   "火车可能安全。"
+  ],
+  "correct_answer": "火车不但很安全而且很准时。",
+  "explanation": "不但…而且… = …төдийгүй бас ….",
+  "order_index": 30,
+  "id": "yct-5-l12-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

@@ -1,0 +1,193 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "北京一共有四个季节。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands in the middle of a big picture split into four seasons (spring blossoms, summer lotus pond, golden autumn tree, snowy winter), with the yellow calf boy in blue vest, the calf girl in yellow dress and the brown calf boy in green cap making a snowman on the winter side; a speech bubble with the Chinese text 北京一共有四个季节 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-qing.jpg",
+  "aspect": "1:1",
+  "title": "晴",
+  "section": "vocabulary",
+  "prompt": "A bright sunny sky with a big smiling sun and a few small clouds, the yellow calf boy in blue vest happily looking up with his hand over his eyes. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-yin.jpg",
+  "aspect": "1:1",
+  "title": "阴",
+  "section": "vocabulary",
+  "prompt": "A grey overcast sky full of thick clouds over a small city, the brown calf boy in green cap looking up with a thoughtful face. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-guafeng.jpg",
+  "aspect": "1:1",
+  "title": "刮风",
+  "section": "vocabulary",
+  "prompt": "Strong wind blowing: the calf girl in yellow dress holds her pink ribbon and hat while leaves and a kite fly sideways, windy lines in the air. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-chuntian.jpg",
+  "aspect": "1:1",
+  "title": "春天",
+  "section": "vocabulary",
+  "prompt": "Spring scene: green hills, pink blossoms, a kite in the sky and a river; the calf girl in yellow dress picks a flower. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiatian.jpg",
+  "aspect": "1:1",
+  "title": "夏天",
+  "section": "vocabulary",
+  "prompt": "Summer scene: a pond with pink lotus flowers and bright sun, the yellow calf boy in blue vest holds a slice of watermelon. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-qiutian.jpg",
+  "aspect": "1:1",
+  "title": "秋天",
+  "section": "vocabulary",
+  "prompt": "Autumn scene: a big tree with orange and golden falling leaves by a lake, the brown calf boy in green cap catching a leaf. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-dongtian.jpg",
+  "aspect": "1:1",
+  "title": "冬天",
+  "section": "vocabulary",
+  "prompt": "Winter scene: deep white snow, a snowman with a red bucket hat, the yellow calf boy in blue vest wearing a warm scarf and mittens. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-bianhua.jpg",
+  "aspect": "1:1",
+  "title": "变化",
+  "section": "vocabulary",
+  "prompt": "A split picture showing change: on the left a small green seedling, on the right the same plant grown into a tall flowering tree, the calf girl in yellow dress pointing amazed at both with an arrow between. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yigong.jpg",
+  "aspect": "1:1",
+  "title": "一共",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap counting coins on a table, three small piles being pushed together into one big pile, a total feeling. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jijie.jpg",
+  "aspect": "1:1",
+  "title": "季节",
+  "section": "vocabulary",
+  "prompt": "A big round wheel divided into four colored parts: spring blossoms, summer sun, autumn leaves, winter snowflakes; teacher camel with glasses pointing at it with a stick. No English text.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-nuanhuo.jpg",
+  "aspect": "1:1",
+  "title": "暖和",
+  "section": "vocabulary",
+  "prompt": "A cozy warm sunny day outdoors, the calf girl in yellow dress with pink ribbon smiling, sitting on soft grass in gentle sunshine, a few flowers around. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-daochu.jpg",
+  "aspect": "1:1",
+  "title": "到处",
+  "section": "vocabulary",
+  "prompt": "A meadow full of flowers everywhere, covering the whole picture, the yellow calf boy in blue vest and the brown calf boy in green cap looking around in wonder. No English text.",
+  "chars": [
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-liangkuai.jpg",
+  "aspect": "1:1",
+  "title": "凉快",
+  "section": "vocabulary",
+  "prompt": "A pleasant cool breeze under a shady tree, the brown calf boy in green cap relaxing and smiling, a glass of cool water beside him. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-duixueren.jpg",
+  "aspect": "1:1",
+  "title": "堆雪人",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest and the calf girl in yellow dress building a snowman together in the snow with a carrot nose and red hat. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "听说你们周末去爬山了，玩得怎么样？",
+  "section": "dialogue",
+  "prompt": "The calf girl in yellow dress with pink ribbon asks the yellow calf boy in blue vest; above the boy a thought bubble shows a mountain with sun, clouds, wind and rain changing quickly; he looks tired and a bit wet, she looks curious; speech bubble with the Chinese text 一会儿晴，一会儿阴 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "北京的四个季节",
+  "section": "speech",
+  "prompt": "Four small panels in one picture showing Beijing's four seasons: spring willows and a kite, summer lotus pond, autumn golden tree, winter snowman; the brown calf boy in green cap and teacher camel with glasses looking at the winter panel happily. No English text.",
+  "chars": [
+   "bor",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "季节和食物",
+  "section": "story",
+  "prompt": "Teacher camel with glasses and the three calves sit at a table with seasonal foods: fruits for spring, tea cup for autumn, hot dumplings steaming for winter; a calendar with four seasons on the wall. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

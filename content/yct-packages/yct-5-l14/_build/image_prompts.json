@@ -1,0 +1,171 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "我打算去中国旅游。",
+  "section": "teacher-intro",
+  "prompt": "Teacher camel (yellow, glasses) points at a big map of China on the wall while the yellow calf boy, calf girl and brown calf boy look excited with small backpacks; the Great Wall and a steamer of dumplings are drawn on the map. Speech bubble with the Chinese text 我打算去中国旅游。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ],
+  "role": "hero"
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "老师，今年寒假我打算去中国旅游，",
+  "section": "dialogue",
+  "prompt": "In a classroom, the calf girl (yellow dress, pink ribbon) asks teacher camel a question in front of a blackboard; teacher camel points to a map of China with the north in snow and the south green. Speech bubble with the Chinese text 去南方好还是去北方好？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "这个暑假我打算去中国旅游。",
+  "section": "speech",
+  "prompt": "Split scene: the yellow calf boy in a blue vest waves a V sign on the Great Wall; on the other side he eats xiaolongbao steamed buns with chopsticks, while adult camel father and mother watch with slightly worried faces. Speech bubble with the Chinese text 别担心！ in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-hanjia.jpg",
+  "aspect": "1:1",
+  "title": "寒假",
+  "section": "vocabulary",
+  "prompt": "Calf boy and girl in warm winter coats and scarves play in the snow, a calendar with a snowflake on the wall. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-dasuan.jpg",
+  "aspect": "1:1",
+  "title": "打算",
+  "section": "vocabulary",
+  "prompt": "Brown calf boy sits thoughtfully with a thought bubble showing a suitcase, airplane and map of China. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-lvyou.jpg",
+  "aspect": "1:1",
+  "title": "旅游",
+  "section": "vocabulary",
+  "prompt": "Calf girl with a suitcase and hat takes a photo of a famous landmark, happy tourist. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-nanfang.jpg",
+  "aspect": "1:1",
+  "title": "南方",
+  "section": "vocabulary",
+  "prompt": "A map arrow pointing down (south) over a warm green landscape with palm trees, rice fields and light rain; yellow calf boy holds an umbrella. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-beifang.jpg",
+  "aspect": "1:1",
+  "title": "北方",
+  "section": "vocabulary",
+  "prompt": "A map arrow pointing up (north) over a snowy landscape; brown calf boy in a thick coat and green hat shivers. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-chule.jpg",
+  "aspect": "1:1",
+  "title": "除了",
+  "section": "vocabulary",
+  "prompt": "Calf girl holds up one apple in one hand and also points at two more apples on the table, showing 'besides this, there are more'. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-youming.jpg",
+  "aspect": "1:1",
+  "title": "有名",
+  "section": "vocabulary",
+  "prompt": "A famous calf star on a red carpet with many cameras flashing and fans cheering. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-jieshao.jpg",
+  "aspect": "1:1",
+  "title": "介绍",
+  "section": "vocabulary",
+  "prompt": "Teacher camel presents a map to the calves, introducing a place with a pointer. No English text.",
+  "chars": [
+   "temee",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shujia.jpg",
+  "aspect": "1:1",
+  "title": "暑假",
+  "section": "vocabulary",
+  "prompt": "Calf boy and girl in summer clothes with sun hats and ice cream under a bright sun at a beach. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ranhou.jpg",
+  "aspect": "1:1",
+  "title": "然后",
+  "section": "vocabulary",
+  "prompt": "Two panels with an arrow: first the calf boy writes homework at a desk, then he kicks a football. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-ditu.jpg",
+  "aspect": "1:1",
+  "title": "地图",
+  "section": "vocabulary",
+  "prompt": "Calf girl unfolds a large paper map of China and points at it. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-changcheng.jpg",
+  "aspect": "1:1",
+  "title": "长城",
+  "section": "vocabulary",
+  "prompt": "Yellow calf boy and calf girl climb the winding Great Wall on a green mountain. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xiaolongbao.jpg",
+  "aspect": "1:1",
+  "title": "小笼包",
+  "section": "vocabulary",
+  "prompt": "A bamboo steamer full of xiaolongbao buns with steam; brown calf boy holds chopsticks, licking his lips. No English text.",
+  "chars": [
+   "bor"
+  ]
+ }
+]

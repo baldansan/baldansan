@@ -1,0 +1,243 @@
+[
+ {
+  "point": "来一盘羊肉饺子 · 一盘 · 一碗 · 一双",
+  "gloss_mn": "«Нэг таваг … авъя» — хоол захиалах",
+  "structure": "来 + 一 + 盘/碗/双 + юу",
+  "teacher_mn": "Хоолны газарт хоол захиалахдаа «来一盘……» гэж хэлнэ. «来» гэдэг нь «авъя, өгөөрэй». Таваг хоолыг «一盘», аяга хоолыг «一碗», савхыг «一双» гэж тоолно. Жишээ нь «来一盘羊肉饺子» — нэг таваг хонины махтай банш авъя.",
+  "teacher_notes": "Номын Key sentence ба Let's read: 来一盘羊肉饺子。 Short speech: 一盘羊肉饺子、一碗饺子汤、一双筷子。",
+  "examples": [
+   {
+    "chinese": "来一盘羊肉饺子。",
+    "pinyin": "Lái yì pán yángròu jiǎozi.",
+    "mongolian": "Нэг таваг хонины махтай банш авъя."
+   },
+   {
+    "chinese": "我喝了一碗饺子汤。",
+    "pinyin": "Wǒ hēle yì wǎn jiǎozitāng.",
+    "mongolian": "Би нэг аяга банш чанасан шөл уулаа."
+   },
+   {
+    "chinese": "我要了一双筷子。",
+    "pinyin": "Wǒ yàole yì shuāng kuàizi.",
+    "mongolian": "Би нэг хос савх гуйлаа."
+   },
+   {
+    "chinese": "你好，你要……？ 来……。",
+    "pinyin": "Nǐ hǎo, nǐ yào……? Lái……",
+    "mongolian": "Сайн байна уу, юу авах вэ? … авъя."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "来一碗羊肉饺子。",
+    "right": "来一盘羊肉饺子。",
+    "why": "Банш таваг дээр ирнэ тул «一盘»."
+   }
+  ],
+  "check": {
+   "question": "«Нэг хос савх» хятадаар:",
+   "options": [
+    "一碗筷子",
+    "一盘筷子",
+    "一双筷子"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "来一 ________ 羊肉饺子。",
+    "options": [
+     "用",
+     "双",
+     "盘"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! Таваг хоол = 一盘.",
+    "explanation_wrong_mn": "Банш таваг дээр ирдэг: 一盘."
+   },
+   {
+    "type": "choice",
+    "question": "«Нэг аяга шөл» хятадаар:",
+    "options": [
+     "一双汤",
+     "一碗汤",
+     "一盘汤"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! Аяга = 一碗.",
+    "explanation_wrong_mn": "Аяганд хийсэн шөл = 一碗汤."
+   },
+   {
+    "type": "judge",
+    "question": "«一双筷子» гэдэг нь «нэг хос савх» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 一双 = нэг хос.",
+    "explanation_wrong_mn": "双 = хос. Савх үргэлж хос."
+   }
+  ]
+ },
+ {
+  "point": "练习练习 · 尝尝 · 休息休息",
+  "gloss_mn": "«Жаахан … үзэх» — юу хийхээ хоёр удаа хэлэх",
+  "structure": "练习 + 练习 → жаахан дадлага хийх",
+  "teacher_mn": "Юу хийхээ хэлсэн үгээ хоёр удаа хэлбэл «жаахан … үзэх» гэсэн зөөлөн, эелдэг утга гарна. «练习» бол дадлага хийх, «练习练习» гэвэл жаахан дадлага хийх. «尝尝» — амсаад үзэх, «问问» — асууж үзэх, «休息休息» — жаахан амрах.",
+  "teacher_notes": "Номын Key sentence: 回家以后我想练习练习。 Let's read: 你可以尝尝羊肉饺子。 Let's choose: 练习练习、运动运动、休息休息、问问、找找。",
+  "examples": [
+   {
+    "chinese": "回家以后我想练习练习。",
+    "pinyin": "Huíjiā yǐhòu wǒ xiǎng liànxí liànxí.",
+    "mongolian": "Гэртээ очсоны дараа би жаахан дадлага хийнэ."
+   },
+   {
+    "chinese": "你可以尝尝羊肉饺子。",
+    "pinyin": "Nǐ kěyǐ chángchang yángròu jiǎozi.",
+    "mongolian": "Хонины махтай банш амсаад үзээрэй."
+   },
+   {
+    "chinese": "你可以问问老师。",
+    "pinyin": "Nǐ kěyǐ wènwen lǎoshī.",
+    "mongolian": "Багшаасаа асууж үзээрэй."
+   },
+   {
+    "chinese": "你先休息休息。",
+    "pinyin": "Nǐ xiān xiūxi xiūxi.",
+    "mongolian": "Чи эхлээд жаахан амр."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "你可以问老师问。",
+    "right": "你可以问问老师。",
+    "why": "«问» гэж ганц хэлэлгүй хоёр удаа хэл: 问问."
+   }
+  ],
+  "check": {
+   "question": "«Жаахан амр» хятадаар:",
+   "options": [
+    "休息休息",
+    "休息不休息",
+    "休息了"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "你可以 ________ 老师。",
+    "options": [
+     "问了",
+     "问问",
+     "问吗"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 问问 = асууж үзэх.",
+    "explanation_wrong_mn": "Юу хийхээ хоёр удаа хэл: 问问."
+   },
+   {
+    "type": "choice",
+    "question": "弟弟用筷子用得不太好，妈妈让他再 ________ 。",
+    "options": [
+     "找找",
+     "休息休息",
+     "练习练习"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! Савхаа дадлага хийх хэрэгтэй.",
+    "explanation_wrong_mn": "Савх сайн барьж чадахгүй бол дадлага хийнэ."
+   },
+   {
+    "type": "judge",
+    "question": "«尝尝» гэдэг нь «амсаад үзэх» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 尝尝 = амсаад үзэх.",
+    "explanation_wrong_mn": "尝 = амсах, 尝尝 = жаахан амсаад үзэх."
+   }
+  ]
+ },
+ {
+  "point": "回家以后 · 离开的时候",
+  "gloss_mn": "«…-ийн дараа», «…-х үед» — хэзээ гэдгийг хэлэх",
+  "structure": "юу хийсэн + 以后 / 的时候 , …",
+  "teacher_mn": "Хэзээ хийснээ хэлэхдээ хийсэн зүйлийнхээ ард «以后» (дараа) эсвэл «的时候» (үед) гэж нэмнэ. «回家以后» — гэртээ очсоны дараа. «离开的时候» — явах үед. Дараа нь юу хийснээ өгүүлбэрийн хоёр дахь хэсэгт хэлнэ.",
+  "teacher_notes": "Номын Key sentence ба Short speech: 回家以后我想练习练习。 离开的时候，我要了一双筷子。",
+  "examples": [
+   {
+    "chinese": "回家以后我想练习练习。",
+    "pinyin": "Huíjiā yǐhòu wǒ xiǎng liànxí liànxí.",
+    "mongolian": "Гэртээ очсоны дараа би дадлага хийнэ."
+   },
+   {
+    "chinese": "离开的时候，我要了一双筷子。",
+    "pinyin": "Líkāi de shíhou, wǒ yàole yì shuāng kuàizi.",
+    "mongolian": "Явах үедээ би нэг хос савх гуйлаа."
+   },
+   {
+    "chinese": "吃饭以后，我去休息。",
+    "pinyin": "Chīfàn yǐhòu, wǒ qù xiūxi.",
+    "mongolian": "Хоол идсэний дараа би амарна."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "以后回家我想练习。",
+    "right": "回家以后我想练习。",
+    "why": "«以后» нь «回家»-ийн ард орно: 回家以后."
+   }
+  ],
+  "check": {
+   "question": "«Гэртээ очсоны дараа» хятадаар:",
+   "options": [
+    "以后回家",
+    "回家的以后",
+    "回家以后"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "回家 ________ 我想练习练习。",
+    "options": [
+     "的时候吗",
+     "了不",
+     "以后"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 回家以后 = гэртээ очсоны дараа.",
+    "explanation_wrong_mn": "«дараа» = 以后."
+   },
+   {
+    "type": "choice",
+    "question": "«Явах үедээ» хятадаар:",
+    "options": [
+     "离开以后了",
+     "离开吗",
+     "离开的时候"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 的时候 = …х үед.",
+    "explanation_wrong_mn": "«үед» = 的时候."
+   },
+   {
+    "type": "judge",
+    "question": "«吃饭以后» гэдэг нь «хоол идсэний дараа» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 以后 = дараа.",
+    "explanation_wrong_mn": "以后 = дараа."
+   }
+  ]
+ }
+]

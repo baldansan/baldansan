@@ -1,0 +1,542 @@
+[
+ {
+  "type": "choice",
+  "question": "«Хавар» хятадаар аль нь вэ?",
+  "options": [
+   "春天",
+   "冬天",
+   "夏天",
+   "秋天"
+  ],
+  "correct_answer": "春天",
+  "explanation": "春天 (chūntiān) = хавар.",
+  "order_index": 1,
+  "id": "yct-5-l08-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зун» хятадаар аль нь вэ?",
+  "options": [
+   "春天",
+   "秋天",
+   "冬天",
+   "夏天"
+  ],
+  "correct_answer": "夏天",
+  "explanation": "夏天 (xiàtiān) = зун.",
+  "order_index": 2,
+  "id": "yct-5-l08-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Намар» хятадаар аль нь вэ?",
+  "options": [
+   "春天",
+   "冬天",
+   "夏天",
+   "秋天"
+  ],
+  "correct_answer": "秋天",
+  "explanation": "秋天 (qiūtiān) = намар.",
+  "order_index": 3,
+  "id": "yct-5-l08-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Өвөл» хятадаар аль нь вэ?",
+  "options": [
+   "秋天",
+   "冬天",
+   "夏天",
+   "春天"
+  ],
+  "correct_answer": "冬天",
+  "explanation": "冬天 (dōngtiān) = өвөл.",
+  "order_index": 4,
+  "id": "yct-5-l08-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дулаахан» хятадаар аль нь вэ?",
+  "options": [
+   "暖和",
+   "变化",
+   "凉快",
+   "一共"
+  ],
+  "correct_answer": "暖和",
+  "explanation": "暖和 (nuǎnhuo) = дулаахан.",
+  "order_index": 5,
+  "id": "yct-5-l08-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сэрүүхэн» хятадаар аль нь вэ?",
+  "options": [
+   "到处",
+   "凉快",
+   "晴",
+   "暖和"
+  ],
+  "correct_answer": "凉快",
+  "explanation": "凉快 (liángkuai) = сайхан сэрүүхэн.",
+  "order_index": 6,
+  "id": "yct-5-l08-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«变化» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "дулаахан",
+   "өөрчлөгдөх, өөрчлөлт",
+   "нийтдээ",
+   "хаа сайгүй"
+  ],
+  "correct_answer": "өөрчлөгдөх, өөрчлөлт",
+  "explanation": "变化 (biànhuà) = өөрчлөгдөх.",
+  "order_index": 7,
+  "id": "yct-5-l08-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«一共» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "нийтдээ",
+   "салхилах",
+   "улирал",
+   "хаа сайгүй"
+  ],
+  "correct_answer": "нийтдээ",
+  "explanation": "一共 (yígòng) = нийтдээ, бүгд.",
+  "order_index": 8,
+  "id": "yct-5-l08-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«到处» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хаа сайгүй",
+   "хавар",
+   "өөрчлөлт",
+   "нийтдээ"
+  ],
+  "correct_answer": "хаа сайгүй",
+  "explanation": "到处 (dàochù) = хаа сайгүй.",
+  "order_index": 9,
+  "id": "yct-5-l08-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«刮风» гэдэг юу вэ?",
+  "options": [
+   "нарлах",
+   "бороо орох",
+   "салхи салхилах",
+   "цас орох"
+  ],
+  "correct_answer": "салхи салхилах",
+  "explanation": "刮风 (guāfēng) = салхи салхилах.",
+  "order_index": 10,
+  "id": "yct-5-l08-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«晴» гэдэг ямар цаг агаар вэ?",
+  "options": [
+   "бороотой",
+   "бүрхэг",
+   "цастай",
+   "нартай, тунгалаг"
+  ],
+  "correct_answer": "нартай, тунгалаг",
+  "explanation": "晴 (qíng) = нартай, тунгалаг.",
+  "order_index": 11,
+  "id": "yct-5-l08-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«阴» гэдэг ямар цаг агаар вэ?",
+  "options": [
+   "халуун",
+   "салхитай",
+   "нартай",
+   "бүрхэг, үүлэрхэг"
+  ],
+  "correct_answer": "бүрхэг, үүлэрхэг",
+  "explanation": "阴 (yīn) = бүрхэг.",
+  "order_index": 12,
+  "id": "yct-5-l08-q12",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«季节» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "сар",
+   "цаг агаар",
+   "долоо хоног",
+   "улирал"
+  ],
+  "correct_answer": "улирал",
+  "explanation": "季节 (jìjié) = улирал.",
+  "order_index": 13,
+  "id": "yct-5-l08-q13",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«堆雪人» гэж юу хийхийг хэлдэг вэ?",
+  "options": [
+   "цасан хүн хийх",
+   "цаснаас зугтах",
+   "цас шүүрдэх",
+   "цасанд унах"
+  ],
+  "correct_answer": "цасан хүн хийх",
+  "explanation": "堆雪人 (duī xuěrén) = цасан хүн хийх.",
+  "order_index": 14,
+  "id": "yct-5-l08-q14",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «nuǎnhuo» гэж уншдаг үг:",
+  "options": [
+   "凉快",
+   "暖和",
+   "到处",
+   "变化"
+  ],
+  "correct_answer": "暖和",
+  "explanation": "暖和 = nuǎnhuo = дулаахан.",
+  "order_index": 15,
+  "id": "yct-5-l08-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dàochù» гэж уншдаг үг:",
+  "options": [
+   "一共",
+   "到处",
+   "变化",
+   "季节"
+  ],
+  "correct_answer": "到处",
+  "explanation": "到处 = dàochù = хаа сайгүй.",
+  "order_index": 16,
+  "id": "yct-5-l08-q16",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «biànhuà» гэж уншдаг үг:",
+  "options": [
+   "暖和",
+   "堆雪人",
+   "变化",
+   "刮风"
+  ],
+  "correct_answer": "变化",
+  "explanation": "变化 = biànhuà = өөрчлөлт.",
+  "order_index": 17,
+  "id": "yct-5-l08-q17",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа дээр Сяо Мин ууланд цаг агаар ямар байсан гэсэн бэ?",
+  "options": [
+   "Үргэлж бороотой байсан",
+   "Үргэлж хүйтэн байсан",
+   "Үргэлж нартай байсан",
+   "Байн байн хувирч байсан"
+  ],
+  "correct_answer": "Байн байн хувирч байсан",
+  "explanation": "山里的天气变化很大 = ууланд цаг агаар их хувирсан.",
+  "order_index": 18,
+  "id": "yct-5-l08-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«听说你们周末去爬山了，玩得怎么样？» гэж юу асууж байна вэ?",
+  "options": [
+   "Хэн хамт явсан бэ?",
+   "Амралтаар ууланд гарсан, хэр байв?",
+   "Уул хэр өндөр вэ?",
+   "Хэдэн цагт гарсан бэ?"
+  ],
+  "correct_answer": "Амралтаар ууланд гарсан, хэр байв?",
+  "explanation": "玩得怎么样 = хэр байв, хөгжилтэй байв уу.",
+  "order_index": 19,
+  "id": "yct-5-l08-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-д Бээжинд хавар ямар байдаг вэ?",
+  "options": [
+   "Маш хүйтэн, цас ордог",
+   "Сэрүүхэн, жимс их",
+   "Жаахан халуун",
+   "Дулаахан, хаа сайгүй цэцэг, салхи их"
+  ],
+  "correct_answer": "Дулаахан, хаа сайгүй цэцэг, салхи их",
+  "explanation": "春天很暖和，到处都是花，但是经常刮大风。",
+  "order_index": 20,
+  "id": "yct-5-l08-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-ийн зохиогч яагаад өвөлд дуртай вэ?",
+  "options": [
+   "Цасан хүн хийх дуртай учраас",
+   "Жимс их байдаг учраас",
+   "Дулаахан учраас",
+   "Цэцэг их байдаг учраас"
+  ],
+  "correct_answer": "Цасан хүн хийх дуртай учраас",
+  "explanation": "我喜欢冬天，因为我喜欢堆雪人。",
+  "order_index": 21,
+  "id": "yct-5-l08-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "北京（ ）有四个季节。",
+  "options": [
+   "到处",
+   "凉快",
+   "变化",
+   "一共"
+  ],
+  "correct_answer": "一共",
+  "explanation": "一共有 = нийтдээ ... бий.",
+  "order_index": 22,
+  "id": "yct-5-l08-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "春天到处（ ）是花。",
+  "options": [
+   "又",
+   "都",
+   "不",
+   "也"
+  ],
+  "correct_answer": "都",
+  "explanation": "到处都是 = хаа сайгүй ... байна.",
+  "order_index": 23,
+  "id": "yct-5-l08-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "秋天很（ ），有很多好吃的水果。",
+  "options": [
+   "阴",
+   "到处",
+   "晴",
+   "凉快"
+  ],
+  "correct_answer": "凉快",
+  "explanation": "秋天很凉快 = намар сэрүүхэн.",
+  "order_index": 24,
+  "id": "yct-5-l08-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一会儿晴，一会儿（ ）。",
+  "options": [
+   "一共",
+   "暖和",
+   "阴",
+   "季节"
+  ],
+  "correct_answer": "阴",
+  "explanation": "晴-ийн эсрэг: 阴 (бүрхэг).",
+  "order_index": 25,
+  "id": "yct-5-l08-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "一个书包70块，两个本子20块。一共多少钱？",
+  "options": [
+   "70块",
+   "20块",
+   "90块",
+   "100块"
+  ],
+  "correct_answer": "90块",
+  "explanation": "70 + 20 = 90. 一共 = нийтдээ.",
+  "order_index": 26,
+  "id": "yct-5-l08-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你最喜欢哪个季节？» гэж асуулаа. Чи зунд дуртай бол:",
+  "options": [
+   "我喜欢堆夏天。",
+   "我最喜欢夏天。",
+   "我一共夏天。",
+   "夏天到处变化。"
+  ],
+  "correct_answer": "我最喜欢夏天。",
+  "explanation": "我最喜欢 + улирал.",
+  "order_index": 27,
+  "id": "yct-5-l08-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Цаг агаар нэг нарлаж, нэг бороо орж байна. Яаж хэлэх вэ?",
+  "options": [
+   "到处晴，到处下雨。",
+   "一会儿晴，一会儿下雨。",
+   "一共晴，一共下雨。",
+   "变化晴，变化下雨。"
+  ],
+  "correct_answer": "一会儿晴，一会儿下雨。",
+  "explanation": "一会儿…，一会儿… = нэг …, нэг …",
+  "order_index": 28,
+  "id": "yct-5-l08-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Мини үлгэрт өвөл ямар хоол идвэл тухтай вэ?",
+  "options": [
+   "Хүйтэн жимс",
+   "Хүйтэн зайрмаг",
+   "Халуун ногоотой хоол",
+   "Халуун банш"
+  ],
+  "correct_answer": "Халуун банш",
+  "explanation": "冬天…吃热热的饺子会特别舒服。",
+  "order_index": 29,
+  "id": "yct-5-l08-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Мини үлгэрт намар ямар ундаа их уух вэ?",
+  "options": [
+   "Жүүс",
+   "Халуун ус, халуун цай",
+   "Хүйтэн ус",
+   "Хүйтэн сүү"
+  ],
+  "correct_answer": "Халуун ус, халуун цай",
+  "explanation": "秋天…要多喝热水、热茶。",
+  "order_index": 30,
+  "id": "yct-5-l08-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

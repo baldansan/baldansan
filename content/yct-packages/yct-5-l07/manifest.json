@@ -1,0 +1,179 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l07",
+ "hskLevel": 3,
+ "lessonNumber": 7,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我经常去体育馆锻炼身体",
+ "mongolianTitle": "Би байнга спорт заал руу очиж дасгал хийдэг",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第7课 (сурах бичиг + CD аудио 07-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-07-text-song.mp3",
+  "dialogues": "audio/yct-5-07-02.mp3",
+  "words": "audio/yct-5-07-01.mp3",
+  "song": "audio/yct-5-07-04.mp3",
+  "speech": "audio/yct-5-07-03.mp3",
+  "test": "audio/yct-5-07-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l07",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "我经常去体育馆锻炼身体",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "今年的体育课，你选网球、排球还是乒乓球？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我特别喜欢运动",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "爱运动",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-xuanze",
+    "file": "images/w-xuanze.jpg",
+    "title": "选择",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jingchang",
+    "file": "images/w-jingchang.jpg",
+    "title": "经常",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-duanlian",
+    "file": "images/w-duanlian.jpg",
+    "title": "锻炼",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-budan",
+    "file": "images/w-budan.jpg",
+    "title": "不但…而且…",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jiankang",
+    "file": "images/w-jiankang.jpg",
+    "title": "健康",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xinqing",
+    "file": "images/w-xinqing.jpg",
+    "title": "心情",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-liuhan",
+    "file": "images/w-liuhan.jpg",
+    "title": "流汗",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wangqiu",
+    "file": "images/w-wangqiu.jpg",
+    "title": "网球",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-paiqiu",
+    "file": "images/w-paiqiu.jpg",
+    "title": "排球",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-pingpangqiu",
+    "file": "images/w-pingpangqiu.jpg",
+    "title": "乒乓球",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tiyuguan",
+    "file": "images/w-tiyuguan.jpg",
+    "title": "体育馆",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "s1",
+    "file": "images/s1.png",
+    "title": "Test s1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s2",
+    "file": "images/s2.png",
+    "title": "Test s2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s3",
+    "file": "images/s3.png",
+    "title": "Test s3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s4",
+    "file": "images/s4.png",
+    "title": "Test s4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "scene",
+    "file": "images/scene.jpg",
+    "title": "Test scene",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L7)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

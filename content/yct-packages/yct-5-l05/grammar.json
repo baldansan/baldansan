@@ -1,0 +1,243 @@
+[
+ {
+  "point": "这张照片是二十年前照的",
+  "gloss_mn": "«Энэ зургийг хорин жилийн өмнө авсан» — хэзээ хийснийг хэлэх",
+  "structure": "这张照片 + 是 + хугацаа + 照 + 的",
+  "teacher_mn": "Зургийг хэзээ авснаа хэлэхдээ «是……的» гэж хэлнэ. Хугацаагаа «是»-ийн ард тавина. Жишээ нь «是二十年前照的» — хорин жилийн өмнө авсан. «是去年照的» — өнгөрсөн жил авсан. Төгсгөлд нь «的» гэж хэлэхээ бүү март!",
+  "teacher_notes": "Key Sentence: 这张照片是二十年前照的。 Short speech: 这是去年照的。 Test: 这张照片是十年前照的。",
+  "examples": [
+   {
+    "chinese": "这张照片是二十年前照的。",
+    "pinyin": "Zhè zhāng zhàopiàn shì èrshí nián qián zhào de.",
+    "mongolian": "Энэ зургийг хорин жилийн өмнө авсан."
+   },
+   {
+    "chinese": "这是去年照的。",
+    "pinyin": "Zhè shì qùnián zhào de.",
+    "mongolian": "Энэ нь өнгөрсөн жил авсан зураг."
+   },
+   {
+    "chinese": "这张照片是十年前照的。",
+    "pinyin": "Zhè zhāng zhàopiàn shì shí nián qián zhào de.",
+    "mongolian": "Энэ зургийг арван жилийн өмнө авсан."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "这张照片是照二十年前的。",
+    "right": "这张照片是二十年前照的。",
+    "why": "Хугацаа «照»-ны өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Энэ зургийг өнгөрсөн жил авсан» хятадаар:",
+   "options": [
+    "你儿子真帅",
+    "这是我儿子",
+    "这是去年照的"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "这张照片是二十年前照 ________ 。",
+    "options": [
+     "吗",
+     "了",
+     "的"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 是……的.",
+    "explanation_wrong_mn": "是……的 хэлбэрийн төгсгөлд «的» орно."
+   },
+   {
+    "type": "choice",
+    "question": "«Хорин жилийн өмнө» хятадаар:",
+    "options": [
+     "二十年后",
+     "二十年前",
+     "二十个年"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 前 = өмнө.",
+    "explanation_wrong_mn": "前 = өмнө, 后 = хойно."
+   },
+   {
+    "type": "judge",
+    "question": "«这是去年照的» гэдэг нь «Энэ нь өнгөрсөн жил авсан зураг» гэсэн үг.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 去年 = өнгөрсөн жил.",
+    "explanation_wrong_mn": "去年 = өнгөрсөн жил."
+   }
+  ]
+ },
+ {
+  "point": "他们多么年轻啊！",
+  "gloss_mn": "«Тэд ямар залуухан юм бэ!» — гайхан магтах",
+  "structure": "多么 + 年轻/可爱/帅 + 啊！",
+  "teacher_mn": "Ямар нэг юманд баярлаж, гайхахдаа «多么……啊！» гэж хэлнэ. «Ямар … юм бэ!» гэсэн утгатай. «年轻», «可爱», «帅» гэх мэт үгийн өмнө «多么» тавьж, төгсгөлд нь «啊» нэм. Хөгжилтэйгөөр, чангаар хэлээрэй!",
+  "teacher_notes": "Key Sentence: 他们多么年轻啊！ Let's match: 今天的天气多么好啊！ 这只小猫多么可爱啊！",
+  "examples": [
+   {
+    "chinese": "他们多么年轻啊！",
+    "pinyin": "Tāmen duōme niánqīng a!",
+    "mongolian": "Тэд ямар залуухан юм бэ!"
+   },
+   {
+    "chinese": "这只小猫多么可爱啊！",
+    "pinyin": "Zhè zhī xiǎo māo duōme kě'ài a!",
+    "mongolian": "Энэ зулзага ямар хөөрхөн юм бэ!"
+   },
+   {
+    "chinese": "今天的天气多么好啊！",
+    "pinyin": "Jīntiān de tiānqì duōme hǎo a!",
+    "mongolian": "Өнөөдрийн цаг агаар ямар сайхан юм бэ!"
+   },
+   {
+    "chinese": "中国的饺子多么好吃啊！",
+    "pinyin": "Zhōngguó de jiǎozi duōme hǎochī a!",
+    "mongolian": "Хятадын банш ямар амттай юм бэ!"
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "他们年轻多么啊！",
+    "right": "他们多么年轻啊！",
+    "why": "«多么» нь «年轻» гэх мэт үгийн өмнө орно."
+   }
+  ],
+  "check": {
+   "question": "«Ямар хөөрхөн юм бэ!» хятадаар:",
+   "options": [
+    "多么可爱啊！",
+    "这是你女儿吗？",
+    "我喜欢照相。"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "他们 ________ 年轻啊！",
+    "options": [
+     "一起",
+     "多么",
+     "多少"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 多么……啊 = ямар … вэ!",
+    "explanation_wrong_mn": "多么 = ямар. 多少 = хэд вэ."
+   },
+   {
+    "type": "choice",
+    "question": "«Ямар царайлаг юм бэ!» хятадаар:",
+    "options": [
+     "多么吃啊！",
+     "多么大啊！",
+     "多么帅啊！"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 帅 = царайлаг.",
+    "explanation_wrong_mn": "帅 = царайлаг."
+   },
+   {
+    "type": "judge",
+    "question": "«多么好吃啊！» гэж амттай хоол идэж байхдаа хэлж болно.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 好吃 = амттай.",
+    "explanation_wrong_mn": "好吃 = амттай, тиймээс болно."
+   }
+  ]
+ },
+ {
+  "point": "爸爸的爸爸叫爷爷 · 一张照片",
+  "gloss_mn": "Хамаатны нэр, «张» гэсэн тоо ширхэг",
+  "structure": "X的Y叫Z · 一/这 + 张 + 照片/桌子",
+  "teacher_mn": "Хамаатнаа тайлбарлахдаа «аавын аав» гэх мэт «爸爸的爸爸» гэж хэлнэ. Дараа нь «叫爷爷» — «өвөө гэнэ». Зураг, ширээ, цаасыг тоолохдоо «个» биш «张» гэж хэлнэ: «一张照片».",
+  "teacher_notes": "Let's chant: 爸爸的爸爸叫爷爷。 妈妈的姐妹叫阿姨。 Let's play: 爸爸的爸爸 → 爷爷。 Let's learn: 一张照片，这张桌子。",
+  "examples": [
+   {
+    "chinese": "爸爸的爸爸叫爷爷。",
+    "pinyin": "Bàba de bàba jiào yéye.",
+    "mongolian": "Аавын аавыг өвөө гэнэ."
+   },
+   {
+    "chinese": "妈妈的姐妹叫阿姨。",
+    "pinyin": "Māma de jiěmèi jiào āyí.",
+    "mongolian": "Ээжийн эгч, дүүг нагац эгч гэнэ."
+   },
+   {
+    "chinese": "爸爸的弟弟叫叔叔。",
+    "pinyin": "Bàba de dìdi jiào shūshu.",
+    "mongolian": "Аавын дүүг авга ах гэнэ."
+   },
+   {
+    "chinese": "一张照片，这张桌子。",
+    "pinyin": "Yì zhāng zhàopiàn, zhè zhāng zhuōzi.",
+    "mongolian": "Нэг зураг, энэ ширээ."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "一个照片",
+    "right": "一张照片",
+    "why": "Зураг, ширээг «张»-аар тоолно."
+   }
+  ],
+  "check": {
+   "question": "«Аавын дүү» хятадаар юу вэ?",
+   "options": [
+    "舅舅",
+    "外公",
+    "叔叔"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "妈妈的爸爸叫 ________ 。",
+    "options": [
+     "爷爷",
+     "叔叔",
+     "外公"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 外公 = ээжийн аав.",
+    "explanation_wrong_mn": "爷爷 = аавын аав, 外公 = ээжийн аав."
+   },
+   {
+    "type": "choice",
+    "question": "一 ________ 照片",
+    "options": [
+     "个",
+     "只",
+     "张"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! Зургийг 张-аар тоолно.",
+    "explanation_wrong_mn": "Зураг — 张."
+   },
+   {
+    "type": "judge",
+    "question": "«妈妈的姐妹叫阿姨» — ээжийн эгч, дүүг 阿姨 гэнэ.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 阿姨 = нагац эгч.",
+    "explanation_wrong_mn": "阿姨 = ээжийн эгч, дүү."
+   }
+  ]
+ }
+]

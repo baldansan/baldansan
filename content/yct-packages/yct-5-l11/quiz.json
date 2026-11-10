@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Шарсан нугас» хятадаар аль нь вэ?",
+  "options": [
+   "鸡蛋",
+   "饺子",
+   "烤鸭",
+   "羊肉"
+  ],
+  "correct_answer": "烤鸭",
+  "explanation": "烤鸭 (kǎoyā) = шарсан нугас.",
+  "order_index": 1,
+  "id": "yct-5-l11-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зөөгч» хятадаар аль нь вэ?",
+  "options": [
+   "服务员",
+   "离开",
+   "筷子",
+   "其他"
+  ],
+  "correct_answer": "服务员",
+  "explanation": "服务员 (fúwùyuán) = зөөгч.",
+  "order_index": 2,
+  "id": "yct-5-l11-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Таваг» хятадаар аль нь вэ?",
+  "options": [
+   "碗",
+   "汤",
+   "盘子",
+   "双"
+  ],
+  "correct_answer": "盘子",
+  "explanation": "盘子 (pánzi) = таваг.",
+  "order_index": 3,
+  "id": "yct-5-l11-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Аяга» хятадаар аль нь вэ?",
+  "options": [
+   "盘子",
+   "筷子",
+   "碗",
+   "叉子"
+  ],
+  "correct_answer": "碗",
+  "explanation": "碗 (wǎn) = аяга.",
+  "order_index": 4,
+  "id": "yct-5-l11-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Савх» хятадаар аль нь вэ?",
+  "options": [
+   "盘子",
+   "汤",
+   "叉子",
+   "筷子"
+  ],
+  "correct_answer": "筷子",
+  "explanation": "筷子 (kuàizi) = савх.",
+  "order_index": 5,
+  "id": "yct-5-l11-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сэрээ» хятадаар аль нь вэ?",
+  "options": [
+   "双",
+   "叉子",
+   "筷子",
+   "碗"
+  ],
+  "correct_answer": "叉子",
+  "explanation": "叉子 (chāzi) = сэрээ.",
+  "order_index": 6,
+  "id": "yct-5-l11-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хонины мах» хятадаар аль нь вэ?",
+  "options": [
+   "鸡蛋",
+   "羊肉",
+   "水果",
+   "烤鸭"
+  ],
+  "correct_answer": "羊肉",
+  "explanation": "羊肉 (yángròu) = хонины мах.",
+  "order_index": 7,
+  "id": "yct-5-l11-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«汤» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "шөл",
+   "таваг",
+   "аяга",
+   "савх"
+  ],
+  "correct_answer": "шөл",
+  "explanation": "汤 (tāng) = шөл. 喝汤 = шөл уух.",
+  "order_index": 8,
+  "id": "yct-5-l11-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«其他» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "явах",
+   "хос",
+   "бусад",
+   "зөөгч"
+  ],
+  "correct_answer": "бусад",
+  "explanation": "其他 (qítā) = бусад. 其他人 = бусад хүмүүс.",
+  "order_index": 9,
+  "id": "yct-5-l11-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«离开» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хүлээх",
+   "хэрэглэх",
+   "амсах",
+   "орхин явах"
+  ],
+  "correct_answer": "орхин явах",
+  "explanation": "离开 (líkāi) = орхин явах.",
+  "order_index": 10,
+  "id": "yct-5-l11-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «kuàizi» гэж уншдаг үг:",
+  "options": [
+   "盘子",
+   "筷子",
+   "碗",
+   "叉子"
+  ],
+  "correct_answer": "筷子",
+  "explanation": "筷子 = kuàizi = савх.",
+  "order_index": 11,
+  "id": "yct-5-l11-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shuāng» гэж уншдаг үг:",
+  "options": [
+   "汤",
+   "用",
+   "双",
+   "碗"
+  ],
+  "correct_answer": "双",
+  "explanation": "双 = shuāng = хос.",
+  "order_index": 12,
+  "id": "yct-5-l11-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yòng» гэж уншдаг үг:",
+  "options": [
+   "双",
+   "汤",
+   "用",
+   "碗"
+  ],
+  "correct_answer": "用",
+  "explanation": "用 = yòng = хэрэглэх.",
+  "order_index": 13,
+  "id": "yct-5-l11-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yángròu» гэж уншдаг үг:",
+  "options": [
+   "烤鸭",
+   "羊肉",
+   "其他",
+   "服务员"
+  ],
+  "correct_answer": "羊肉",
+  "explanation": "羊肉 = yángròu = хонины мах.",
+  "order_index": 14,
+  "id": "yct-5-l11-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Нэг таваг хонины махтай банш авъя» хятадаар:",
+  "options": [
+   "对不起，没有。",
+   "来一碗羊肉饺子。",
+   "我要一双羊肉饺子。",
+   "来一盘羊肉饺子。"
+  ],
+  "correct_answer": "来一盘羊肉饺子。",
+  "explanation": "Таваг хоол = 一盘.",
+  "order_index": 15,
+  "id": "yct-5-l11-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Зөөгч «对不起，没有» гэж хэлэв. Энэ юу гэсэн үг вэ?",
+  "options": [
+   "Өөр юм авах уу?",
+   "Уучлаарай, байхгүй байна.",
+   "Түр хүлээгээрэй.",
+   "Амсаад үзээрэй."
+  ],
+  "correct_answer": "Уучлаарай, байхгүй байна.",
+  "explanation": "对不起 = уучлаарай, 没有 = байхгүй.",
+  "order_index": 16,
+  "id": "yct-5-l11-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Ярианд хүү юу захиалсан бэ?",
+  "options": [
+   "Зайрмаг",
+   "Хонины махтай банш",
+   "Шөл",
+   "Шарсан нугас"
+  ],
+  "correct_answer": "Хонины махтай банш",
+  "explanation": "Тэр «来一盘羊肉饺子» гэж хэлсэн. Шарсан нугас байхгүй байсан.",
+  "order_index": 17,
+  "id": "yct-5-l11-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«还要别的吗？» гэж зөөгч юу асуув?",
+  "options": [
+   "Хэдэн хүн бэ?",
+   "Өөр юм авах уу?",
+   "Юу идэх вэ?",
+   "Хаанаас ирсэн бэ?"
+  ],
+  "correct_answer": "Өөр юм авах уу?",
+  "explanation": "别的 = өөр юм. 还要别的吗？ = өөр юм авах уу?",
+  "order_index": 18,
+  "id": "yct-5-l11-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-д хүү яагаад нэг хос савх гуйсан бэ?",
+  "options": [
+   "Савхаа гээсэн учраас",
+   "Сэрээнд дургүй учраас",
+   "Гэртээ савх дадлага хийхийн тулд",
+   "Найздаа өгөхийн тулд"
+  ],
+  "correct_answer": "Гэртээ савх дадлага хийхийн тулд",
+  "explanation": "Бусад савхаар иддэг, харин тэр зөвхөн сэрээгээр л идэж чаддаг. Тиймээс 回家以后我想练习练习.",
+  "order_index": 19,
+  "id": "yct-5-l11-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "来一（ ）羊肉饺子。",
+  "options": [
+   "汤",
+   "双",
+   "用",
+   "盘"
+  ],
+  "correct_answer": "盘",
+  "explanation": "一盘 = нэг таваг.",
+  "order_index": 20,
+  "id": "yct-5-l11-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我要了一（ ）筷子。",
+  "options": [
+   "汤",
+   "双",
+   "碗",
+   "盘"
+  ],
+  "correct_answer": "双",
+  "explanation": "一双筷子 = нэг хос савх.",
+  "order_index": 21,
+  "id": "yct-5-l11-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "其他人都（ ）筷子。",
+  "options": [
+   "汤",
+   "用",
+   "双",
+   "离开"
+  ],
+  "correct_answer": "用",
+  "explanation": "用筷子 = савхаар.",
+  "order_index": 22,
+  "id": "yct-5-l11-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "回家（ ）我想练习练习。",
+  "options": [
+   "以后",
+   "汤",
+   "双",
+   "盘子"
+  ],
+  "correct_answer": "以后",
+  "explanation": "回家以后 = гэртээ очсоны дараа.",
+  "order_index": 23,
+  "id": "yct-5-l11-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你可以（ ）老师。",
+  "options": [
+   "问问问",
+   "问问",
+   "问吗",
+   "问了"
+  ],
+  "correct_answer": "问问",
+  "explanation": "问问 = асууж үзэх.",
+  "order_index": 24,
+  "id": "yct-5-l11-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Жаахан амр» хятадаар:",
+  "options": [
+   "休息以后",
+   "休息休息",
+   "休息的时候吗",
+   "不休息"
+  ],
+  "correct_answer": "休息休息",
+  "explanation": "Юу хийхээ хоёр удаа хэл: 休息休息.",
+  "order_index": 25,
+  "id": "yct-5-l11-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Чи хоолны газарт зөөгчийг дуудах гэж байна. Юу гэх вэ?",
+  "options": [
+   "老师！",
+   "谢谢！",
+   "再见！",
+   "服务员！"
+  ],
+  "correct_answer": "服务员！",
+  "explanation": "服务员 = зөөгч.",
+  "order_index": 26,
+  "id": "yct-5-l11-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Зөөгч «还要别的吗？» гэж асуув. Чи өөр юм хэрэггүй бол:",
+  "options": [
+   "来一盘。",
+   "对不起。",
+   "我是学生。",
+   "不要了。"
+  ],
+  "correct_answer": "不要了。",
+  "explanation": "不要了 = өөр хэрэггүй, болно.",
+  "order_index": 27,
+  "id": "yct-5-l11-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Чи савхаар идэж чадахгүй, сэрээгээр л иднэ. Яаж хэлэх вэ?",
+  "options": [
+   "我只会用筷子。",
+   "我离开叉子。",
+   "我只会用叉子。",
+   "我用汤。"
+  ],
+  "correct_answer": "我只会用叉子。",
+  "explanation": "只会用叉子 = зөвхөн сэрээгээр л идэж чадна.",
+  "order_index": 28,
+  "id": "yct-5-l11-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

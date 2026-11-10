@@ -1,0 +1,166 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "来一盘羊肉饺子。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses and three young camel calves (yellow boy in blue vest with red backpack, girl in yellow dress with pink ribbon, brown boy in green cap) sit at a round table in a cosy Chinese restaurant; a big plate of steaming dumplings, bowls and chopsticks on the table; a waitress camel with a notepad smiles, a speech bubble with the Chinese text 来一盘羊肉饺子 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kaoya.jpg",
+  "aspect": "1:1",
+  "title": "烤鸭",
+  "section": "vocabulary",
+  "prompt": "A glossy golden roast duck on a white plate with lettuce garnish, the yellow calf boy in blue vest licking his lips next to it. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-fuwuyuan.jpg",
+  "aspect": "1:1",
+  "title": "服务员",
+  "section": "vocabulary",
+  "prompt": "A friendly adult camel waitress in a red uniform holding a notepad and a pen, standing next to a restaurant table, smiling. No English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-panzi.jpg",
+  "aspect": "1:1",
+  "title": "盘子",
+  "section": "vocabulary",
+  "prompt": "A round white plate with a few red apples on it, held up by the calf girl in yellow dress with pink ribbon. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-wan.jpg",
+  "aspect": "1:1",
+  "title": "碗",
+  "section": "vocabulary",
+  "prompt": "A blue ceramic bowl of steaming rice held with both hands by the brown calf boy in green cap, happy face. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kuaizi.jpg",
+  "aspect": "1:1",
+  "title": "筷子",
+  "section": "vocabulary",
+  "prompt": "A pair of wooden chopsticks held in a calf's hoof picking up a dumpling, the yellow calf boy in blue vest concentrating. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-chazi.jpg",
+  "aspect": "1:1",
+  "title": "叉子",
+  "section": "vocabulary",
+  "prompt": "A silver fork with a piece of cake on it, the calf girl in yellow dress with pink ribbon about to take a bite. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yangrou.jpg",
+  "aspect": "1:1",
+  "title": "羊肉",
+  "section": "vocabulary",
+  "prompt": "A plate of cooked sliced lamb meat with herbs, a small cute cartoon lamb icon on the side, brown calf boy in green cap pointing at the meat happily. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-tang.jpg",
+  "aspect": "1:1",
+  "title": "汤",
+  "section": "vocabulary",
+  "prompt": "A steaming bowl of soup with a spoon, steam rising in a swirl, the yellow calf boy in blue vest blowing on a spoonful. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-qita.jpg",
+  "aspect": "1:1",
+  "title": "其他",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress holding a red balloon while a group of other children hold blue balloons, showing 'the others' versus one. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yong.jpg",
+  "aspect": "1:1",
+  "title": "用",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap using a pencil to write in a notebook and a spoon beside a bowl on the desk, showing 'using things to do things'. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-likai.jpg",
+  "aspect": "1:1",
+  "title": "离开",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest with a red backpack walking out of a door waving goodbye, a house behind him. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shuang.jpg",
+  "aspect": "1:1",
+  "title": "双",
+  "section": "vocabulary",
+  "prompt": "Two pairs of things: a pair of chopsticks and a pair of red shoes lined up neatly, the calf girl in yellow dress holding up two fingers. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "服务员，有烤鸭吗？",
+  "section": "dialogue",
+  "prompt": "At a restaurant table numbered 2 with a green checkered tablecloth, the yellow calf boy in blue vest holds a menu and waves a hoof; a waitress camel in an orange blouse with a notepad stands beside him; a leafy plant in the corner, a speech bubble with the Chinese text 来一盘羊肉饺子 in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "昨天我去吃中国菜了。",
+  "section": "speech",
+  "prompt": "The yellow calf boy in blue vest sits at a restaurant table with a plate of dumplings and a bowl of soup, holding a fork while other diners use chopsticks; a pair of chopsticks beside him and a thought bubble of him practicing with chopsticks at home. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "包饺子",
+  "section": "song",
+  "prompt": "A warm kitchen scene: the calf girl in yellow dress with pink ribbon and the brown calf boy in green cap in aprons making dumplings on a wooden board with rolling pin, flour, cabbage and a steaming pot; the teacher camel with glasses smiles and points. No English text.",
+  "chars": [
+   "temee",
+   "ohin",
+   "bor"
+  ]
+ }
+]

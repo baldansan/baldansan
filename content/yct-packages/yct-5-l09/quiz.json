@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Ундаа» хятадаар аль нь вэ?",
+  "options": [
+   "饮料",
+   "超市",
+   "饼干",
+   "玩具"
+  ],
+  "correct_answer": "饮料",
+  "explanation": "饮料 (yǐnliào) = ундаа.",
+  "order_index": 1,
+  "id": "yct-5-l09-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Шоколад» хятадаар аль нь вэ?",
+  "options": [
+   "蛋糕",
+   "面包",
+   "手表",
+   "巧克力"
+  ],
+  "correct_answer": "巧克力",
+  "explanation": "巧克力 (qiǎokèlì) = шоколад.",
+  "order_index": 2,
+  "id": "yct-5-l09-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Жигнэмэг» хятадаар аль нь вэ?",
+  "options": [
+   "苹果",
+   "冰激凌",
+   "牛奶",
+   "饼干"
+  ],
+  "correct_answer": "饼干",
+  "explanation": "饼干 (bǐnggān) = жигнэмэг.",
+  "order_index": 3,
+  "id": "yct-5-l09-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зайрмаг» хятадаар аль нь вэ?",
+  "options": [
+   "西瓜",
+   "冰激凌",
+   "果汁",
+   "巧克力"
+  ],
+  "correct_answer": "冰激凌",
+  "explanation": "冰激凌 (bīngjīlíng) = зайрмаг.",
+  "order_index": 4,
+  "id": "yct-5-l09-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«玩具» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "тоглоом",
+   "их дэлгүүр",
+   "бугуйн цаг",
+   "ундаа"
+  ],
+  "correct_answer": "тоглоом",
+  "explanation": "玩具 (wánjù) = тоглоом.",
+  "order_index": 5,
+  "id": "yct-5-l09-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«超市» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эмнэлэг",
+   "их дэлгүүр",
+   "гэр",
+   "сургууль"
+  ],
+  "correct_answer": "их дэлгүүр",
+  "explanation": "超市 (chāoshì) = их дэлгүүр.",
+  "order_index": 6,
+  "id": "yct-5-l09-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«手表» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "ном",
+   "бугуйн цаг",
+   "гар утас",
+   "цүнх"
+  ],
+  "correct_answer": "бугуйн цаг",
+  "explanation": "手表 (shǒubiǎo) = бугуйн цаг.",
+  "order_index": 7,
+  "id": "yct-5-l09-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«便宜» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хямд",
+   "том",
+   "амттай",
+   "үнэтэй"
+  ],
+  "correct_answer": "хямд",
+  "explanation": "便宜 (piányi) = хямд.",
+  "order_index": 8,
+  "id": "yct-5-l09-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«办法» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "арга",
+   "асуулт",
+   "хоол",
+   "бэлэг"
+  ],
+  "correct_answer": "арга",
+  "explanation": "办法 (bànfǎ) = арга. 我有办法 = надад арга бий.",
+  "order_index": 9,
+  "id": "yct-5-l09-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yǐjīng» гэж уншдаг үг:",
+  "options": [
+   "尝",
+   "记得",
+   "已经",
+   "办法"
+  ],
+  "correct_answer": "已经",
+  "explanation": "已经 = yǐjīng = аль хэдийн.",
+  "order_index": 10,
+  "id": "yct-5-l09-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bīngjīlíng» гэж уншдаг үг:",
+  "options": [
+   "饮料",
+   "饼干",
+   "巧克力",
+   "冰激凌"
+  ],
+  "correct_answer": "冰激凌",
+  "explanation": "冰激凌 = bīngjīlíng = зайрмаг.",
+  "order_index": 11,
+  "id": "yct-5-l09-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «jìde» гэж уншдаг үг:",
+  "options": [
+   "便宜",
+   "办法",
+   "已经",
+   "记得"
+  ],
+  "correct_answer": "记得",
+  "explanation": "记得 = jìde = санах.",
+  "order_index": 12,
+  "id": "yct-5-l09-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «piányi» гэж уншдаг үг:",
+  "options": [
+   "玩具",
+   "办法",
+   "超市",
+   "便宜"
+  ],
+  "correct_answer": "便宜",
+  "explanation": "便宜 = piányi = хямд.",
+  "order_index": 13,
+  "id": "yct-5-l09-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Аль хэдийн … болсон» хятадаар хэлэхдээ аль үгийг хэрэглэх вэ?",
+  "options": [
+   "已经",
+   "尝",
+   "既",
+   "送"
+  ],
+  "correct_answer": "已经",
+  "explanation": "已经……了 = аль хэдийн … болсон.",
+  "order_index": 14,
+  "id": "yct-5-l09-q14",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Амттай ч, хямд ч» хятадаар:",
+  "options": [
+   "已经好吃了",
+   "既好吃又便宜",
+   "又好吃吗",
+   "好吃不便宜"
+  ],
+  "correct_answer": "既好吃又便宜",
+  "explanation": "既……又…… = …ч …ч.",
+  "order_index": 15,
+  "id": "yct-5-l09-q15",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "冰激凌既好吃（ ）便宜。",
+  "options": [
+   "了",
+   "又",
+   "的",
+   "吗"
+  ],
+  "correct_answer": "又",
+  "explanation": "既……又…… гэж хамт хэлнэ.",
+  "order_index": 16,
+  "id": "yct-5-l09-q16",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "去年我们（ ）送他手表了。",
+  "options": [
+   "既",
+   "便宜",
+   "已经",
+   "尝"
+  ],
+  "correct_answer": "已经",
+  "explanation": "已经……了 = аль хэдийн.",
+  "order_index": 17,
+  "id": "yct-5-l09-q17",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "现在买一（ ）一。",
+  "options": [
+   "看",
+   "写",
+   "吃",
+   "送"
+  ],
+  "correct_answer": "送",
+  "explanation": "买一送一 = нэгийг авбал нэгийг нэмж өгнө.",
+  "order_index": 18,
+  "id": "yct-5-l09-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "看一看，（ ）一尝！",
+  "options": [
+   "记",
+   "尝",
+   "买",
+   "送"
+  ],
+  "correct_answer": "尝",
+  "explanation": "尝一尝 = амсаж үз.",
+  "order_index": 19,
+  "id": "yct-5-l09-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь ээж охиндоо «去年我们已经送他手表了» гэж яагаад хэлсэн бэ?",
+  "options": [
+   "Бугуйн цаг үнэтэй тул",
+   "Охин цаг авмаар байсан тул",
+   "Аав цаг мартсан тул",
+   "Өнгөрсөн жил бугуйн цаг аль хэдийн өгсөн тул"
+  ],
+  "correct_answer": "Өнгөрсөн жил бугуйн цаг аль хэдийн өгсөн тул",
+  "explanation": "已经送他手表了 = бугуйн цаг аль хэдийн өгсөн.",
+  "order_index": 20,
+  "id": "yct-5-l09-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аав юунд дургүй вэ?",
+  "options": [
+   "Шоколад",
+   "Торт",
+   "Зайрмаг",
+   "Жигнэмэг"
+  ],
+  "correct_answer": "Шоколад",
+  "explanation": "爸爸不爱吃巧克力。",
+  "order_index": 21,
+  "id": "yct-5-l09-q21",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Охин яагаад шоколадтай торт өгье гэсэн бэ?",
+  "options": [
+   "Аав шоколад маш их дуртай",
+   "Ээж хүссэн",
+   "Торт хямд байсан",
+   "Өөрөө идэж аавд тусалмаар байсан"
+  ],
+  "correct_answer": "Өөрөө идэж аавд тусалмаар байсан",
+  "explanation": "我有办法，我帮爸爸吃。 Охин өөрөө идмээр байгаа юм.",
+  "order_index": 22,
+  "id": "yct-5-l09-q22",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Худалдагч «买冰激凌可以送什么» гэхэд юу өгөх вэ?",
+  "options": [
+   "Алим, сүү",
+   "Жигнэмэг, ундаа",
+   "Торт, цаг",
+   "Тоглоом, шоколад"
+  ],
+  "correct_answer": "Жигнэмэг, ундаа",
+  "explanation": "买冰激凌可以送饼干，还可以送饮料。",
+  "order_index": 23,
+  "id": "yct-5-l09-q23",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дууны мөр: «什么我都喜欢吃！» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Юу идэх вэ?",
+   "Би цатсан",
+   "Би юу ч идэхгүй",
+   "Юу ч байсан би бүгдийг нь идэх дуртай"
+  ],
+  "correct_answer": "Юу ч байсан би бүгдийг нь идэх дуртай",
+  "explanation": "什么……都…… = юу ч … бүгд.",
+  "order_index": 24,
+  "id": "yct-5-l09-q24",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «这个饼干好吃吗？» гэж асууна. Чи амтлаад үзье гэвэл:",
+  "options": [
+   "我送他。",
+   "我已经。",
+   "我尝尝。",
+   "便宜了。"
+  ],
+  "correct_answer": "我尝尝。",
+  "explanation": "尝尝 = амсаад үзэх.",
+  "order_index": 25,
+  "id": "yct-5-l09-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дэлгүүрийн худалдагч «Нэгийг авбал нэгийг нэмж өгнө» гэж зарлахдаа:",
+  "options": [
+   "买一已经！",
+   "既买又送！",
+   "买一送一！",
+   "一个便宜！"
+  ],
+  "correct_answer": "买一送一！",
+  "explanation": "买一送一 = нэгийг авбал нэгийг нэмж өгнө.",
+  "order_index": 26,
+  "id": "yct-5-l09-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ээж «Чи оройн хоол идсэн үү?» гэж асууна. Чи аль хэдийн идсэн бол:",
+  "options": [
+   "我有办法。",
+   "我已经吃了。",
+   "我记得。",
+   "我尝尝。"
+  ],
+  "correct_answer": "我已经吃了。",
+  "explanation": "已经……了 = аль хэдийн.",
+  "order_index": 27,
+  "id": "yct-5-l09-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Дуртай ундаагаа «амттай ч, эрүүл ч» гэж магтвал:",
+  "options": [
+   "好喝便宜。",
+   "既好喝又健康。",
+   "已经好喝了。",
+   "送好喝。"
+  ],
+  "correct_answer": "既好喝又健康。",
+  "explanation": "既……又…… = …ч …ч.",
+  "order_index": 28,
+  "id": "yct-5-l09-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

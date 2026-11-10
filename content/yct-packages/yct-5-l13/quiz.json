@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Шүд угаах» хятадаар аль нь вэ?",
+  "options": [
+   "刷牙",
+   "开药",
+   "打针",
+   "发烧"
+  ],
+  "correct_answer": "刷牙",
+  "explanation": "刷牙 (shuāyá) = шүд угаах.",
+  "order_index": 1,
+  "id": "yct-5-l13-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Сувилагч» хятадаар аль нь вэ?",
+  "options": [
+   "医生",
+   "老师",
+   "朋友",
+   "护士"
+  ],
+  "correct_answer": "护士",
+  "explanation": "护士 (hùshi) = сувилагч.",
+  "order_index": 2,
+  "id": "yct-5-l13-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Гэдэс» хятадаар аль нь вэ?",
+  "options": [
+   "药",
+   "牙",
+   "头",
+   "肚子"
+  ],
+  "correct_answer": "肚子",
+  "explanation": "肚子 (dùzi) = гэдэс.",
+  "order_index": 3,
+  "id": "yct-5-l13-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Халуурах» хятадаар аль нь вэ?",
+  "options": [
+   "躺",
+   "发烧",
+   "刷牙",
+   "打针"
+  ],
+  "correct_answer": "发烧",
+  "explanation": "发烧 (fāshāo) = халуурах.",
+  "order_index": 4,
+  "id": "yct-5-l13-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тариа хийлгэх» хятадаар аль нь вэ?",
+  "options": [
+   "打针",
+   "发烧",
+   "刷牙",
+   "补牙"
+  ],
+  "correct_answer": "打针",
+  "explanation": "打针 (dǎzhēn) = тариа хийлгэх.",
+  "order_index": 5,
+  "id": "yct-5-l13-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хэвтэх» хятадаар аль нь вэ?",
+  "options": [
+   "先",
+   "躺",
+   "打针",
+   "教"
+  ],
+  "correct_answer": "躺",
+  "explanation": "躺 (tǎng) = хэвтэх.",
+  "order_index": 6,
+  "id": "yct-5-l13-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«突然» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эхлээд",
+   "гэнэт",
+   "тэр даруй",
+   "байнга"
+  ],
+  "correct_answer": "гэнэт",
+  "explanation": "突然 (tūrán) = гэнэт.",
+  "order_index": 7,
+  "id": "yct-5-l13-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«马上» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "тэр даруй",
+   "хэвтэх",
+   "байнга",
+   "гэнэт"
+  ],
+  "correct_answer": "тэр даруй",
+  "explanation": "马上 (mǎshàng) = тэр даруй.",
+  "order_index": 8,
+  "id": "yct-5-l13-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«一直» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "байнга, тасралтгүй",
+   "эхлээд",
+   "заах",
+   "гэнэт"
+  ],
+  "correct_answer": "байнга, тасралтгүй",
+  "explanation": "一直 (yìzhí) = байнга, тасралтгүй.",
+  "order_index": 9,
+  "id": "yct-5-l13-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«教» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "шүд угаах",
+   "хэвтэх",
+   "заах",
+   "халуурах"
+  ],
+  "correct_answer": "заах",
+  "explanation": "教 (jiāo) = заах. 老师教我汉语.",
+  "order_index": 10,
+  "id": "yct-5-l13-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«先» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "байнга",
+   "дараа нь",
+   "гэнэт",
+   "эхлээд"
+  ],
+  "correct_answer": "эхлээд",
+  "explanation": "先 (xiān) = эхлээд.",
+  "order_index": 11,
+  "id": "yct-5-l13-q11",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «hùshi» гэж уншдаг үг:",
+  "options": [
+   "打针",
+   "发烧",
+   "肚子",
+   "护士"
+  ],
+  "correct_answer": "护士",
+  "explanation": "护士 = hùshi = сувилагч.",
+  "order_index": 12,
+  "id": "yct-5-l13-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «dùzi» гэж уншдаг үг:",
+  "options": [
+   "刷牙",
+   "护士",
+   "突然",
+   "肚子"
+  ],
+  "correct_answer": "肚子",
+  "explanation": "肚子 = dùzi = гэдэс.",
+  "order_index": 13,
+  "id": "yct-5-l13-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «tūrán» гэж уншдаг үг:",
+  "options": [
+   "突然",
+   "一直",
+   "马上",
+   "躺"
+  ],
+  "correct_answer": "突然",
+  "explanation": "突然 = tūrán = гэнэт.",
+  "order_index": 14,
+  "id": "yct-5-l13-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «mǎshàng» гэж уншдаг үг:",
+  "options": [
+   "一直",
+   "马上",
+   "先",
+   "突然"
+  ],
+  "correct_answer": "马上",
+  "explanation": "马上 = mǎshàng = тэр даруй.",
+  "order_index": 15,
+  "id": "yct-5-l13-q15",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чамд хаана нь эвгүй байна?» хятадаар:",
+  "options": [
+   "你为什么牙疼？",
+   "你哪儿不舒服？",
+   "你去哪儿？",
+   "你怎么刷牙？"
+  ],
+  "correct_answer": "你哪儿不舒服？",
+  "explanation": "哪儿不舒服 = хаана нь эвгүй байна. Эмч ингэж асуудаг.",
+  "order_index": 16,
+  "id": "yct-5-l13-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дээр хүүд юу өвдөж байна вэ?",
+  "options": [
+   "Гэдэс",
+   "Хөл",
+   "Шүд",
+   "Толгой"
+  ],
+  "correct_answer": "Шүд",
+  "explanation": "我牙疼 = миний шүд өвдөж байна.",
+  "order_index": 17,
+  "id": "yct-5-l13-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Эмч хүүд эхлээд юу хийж өгөх вэ?",
+  "options": [
+   "Эм бичих",
+   "Шүд угаахыг заах",
+   "Тариа хийх",
+   "Шүдийг нь дүүргэх"
+  ],
+  "correct_answer": "Шүдийг нь дүүргэх",
+  "explanation": "我先帮你补牙 = би эхлээд шүдийг чинь дүүргэе.",
+  "order_index": 18,
+  "id": "yct-5-l13-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ямар хүн шүдээ яаж угаахыг заах вэ?",
+  "options": [
+   "Аав",
+   "Сувилагч",
+   "Ээж",
+   "Багш"
+  ],
+  "correct_answer": "Сувилагч",
+  "explanation": "护士教你怎么刷牙 = сувилагч чамд шүдээ яаж угаахыг заана.",
+  "order_index": 19,
+  "id": "yct-5-l13-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-д хүүг эмнэлэгт хэн авч явсан бэ?",
+  "options": [
+   "Багш",
+   "Найз",
+   "Эгч",
+   "Аав ээж"
+  ],
+  "correct_answer": "Аав ээж",
+  "explanation": "爸爸妈妈马上带我去了医院 = аав ээж тэр даруй эмнэлэгт аваачсан.",
+  "order_index": 20,
+  "id": "yct-5-l13-q20",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我（ ）帮你补牙。",
+  "options": [
+   "先",
+   "一直",
+   "突然",
+   "教"
+  ],
+  "correct_answer": "先",
+  "explanation": "我先帮你补牙 = би эхлээд шүдийг чинь дүүргэе.",
+  "order_index": 21,
+  "id": "yct-5-l13-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "护士（ ）你怎么刷牙。",
+  "options": [
+   "先",
+   "打",
+   "躺",
+   "教"
+  ],
+  "correct_answer": "教",
+  "explanation": "护士教你怎么刷牙.",
+  "order_index": 22,
+  "id": "yct-5-l13-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不想（ ）在床上躺着。",
+  "options": [
+   "先",
+   "一直",
+   "突然",
+   "马上"
+  ],
+  "correct_answer": "一直",
+  "explanation": "不想一直躺着 = байнга хэвтэхийг хүсэхгүй.",
+  "order_index": 23,
+  "id": "yct-5-l13-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "昨天晚上我（ ）肚子疼。",
+  "options": [
+   "先",
+   "教",
+   "一直",
+   "突然"
+  ],
+  "correct_answer": "突然",
+  "explanation": "突然肚子疼 = гэнэт гэдэс өвдсөн.",
+  "order_index": 24,
+  "id": "yct-5-l13-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би халуурчихлаа» хятадаар:",
+  "options": [
+   "我刷牙了。",
+   "我打针了。",
+   "我发烧了。",
+   "我躺着。"
+  ],
+  "correct_answer": "我发烧了。",
+  "explanation": "发烧 = халуурах.",
+  "order_index": 25,
+  "id": "yct-5-l13-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Гэдэс чинь өвдөж байна. Эмчид яаж хэлэх вэ?",
+  "options": [
+   "我刷牙。",
+   "我教你。",
+   "我肚子疼。",
+   "我先躺。"
+  ],
+  "correct_answer": "我肚子疼。",
+  "explanation": "肚子疼 = гэдэс өвдөж байна.",
+  "order_index": 26,
+  "id": "yct-5-l13-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хоол идэхээс өмнө гараа угаахыг сануулахдаа:",
+  "options": [
+   "吃饭以前教洗手。",
+   "吃饭以前先洗手。",
+   "吃饭以前突然洗手。",
+   "吃饭以前一直洗手。"
+  ],
+  "correct_answer": "吃饭以前先洗手。",
+  "explanation": "先 = эхлээд. 先洗手 = эхлээд гараа угаа.",
+  "order_index": 27,
+  "id": "yct-5-l13-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Эмч «医生，我不想打针» гэж өвчтөн хэлсэнд юу гэсэн үг вэ?",
+  "options": [
+   "Эмч ээ, би халуурсан",
+   "Эмч ээ, би тариа хийлгэмээргүй байна",
+   "Эмч ээ, би шүд угаахгүй",
+   "Эмч ээ, би гэдэс өвдөж байна"
+  ],
+  "correct_answer": "Эмч ээ, би тариа хийлгэмээргүй байна",
+  "explanation": "打针 = тариа хийлгэх, 不想 = хүсэхгүй байна.",
+  "order_index": 28,
+  "id": "yct-5-l13-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

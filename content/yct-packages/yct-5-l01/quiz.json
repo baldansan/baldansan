@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Кунфу» хятадаар аль нь вэ?",
+  "options": [
+   "朋友",
+   "篮球",
+   "学校",
+   "功夫"
+  ],
+  "correct_answer": "功夫",
+  "explanation": "功夫 (gōngfu) = кунфу.",
+  "order_index": 1,
+  "id": "yct-5-l01-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Маш их» хятадаар аль нь вэ?",
+  "options": [
+   "别人",
+   "当然",
+   "非常",
+   "一样"
+  ],
+  "correct_answer": "非常",
+  "explanation": "非常 (fēicháng) = маш их.",
+  "order_index": 2,
+  "id": "yct-5-l01-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Нисэх» хятадаар аль нь вэ?",
+  "options": [
+   "飞",
+   "难",
+   "读",
+   "懂"
+  ],
+  "correct_answer": "飞",
+  "explanation": "飞 (fēi) = нисэх.",
+  "order_index": 3,
+  "id": "yct-5-l01-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Мэдээж» хятадаар аль нь вэ?",
+  "options": [
+   "当然",
+   "特别",
+   "厉害",
+   "一样"
+  ],
+  "correct_answer": "当然",
+  "explanation": "当然 (dāngrán) = мэдээж.",
+  "order_index": 4,
+  "id": "yct-5-l01-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Мундаг, гайхалтай» хятадаар аль нь вэ?",
+  "options": [
+   "别人",
+   "帮助",
+   "一样",
+   "厉害"
+  ],
+  "correct_answer": "厉害",
+  "explanation": "厉害 (lìhai) = мундаг.",
+  "order_index": 5,
+  "id": "yct-5-l01-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Адилхан» хятадаар аль нь вэ?",
+  "options": [
+   "非常",
+   "特别",
+   "一样",
+   "当然"
+  ],
+  "correct_answer": "一样",
+  "explanation": "一样 (yíyàng) = адилхан.",
+  "order_index": 6,
+  "id": "yct-5-l01-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Тусалах» хятадаар аль нь вэ?",
+  "options": [
+   "功夫",
+   "喜欢",
+   "帮助",
+   "别人"
+  ],
+  "correct_answer": "帮助",
+  "explanation": "帮助 (bāngzhù) = тусалах.",
+  "order_index": 7,
+  "id": "yct-5-l01-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бусад хүн» хятадаар аль нь вэ?",
+  "options": [
+   "同学",
+   "老师",
+   "别人",
+   "朋友"
+  ],
+  "correct_answer": "别人",
+  "explanation": "别人 (biérén) = бусад хүн.",
+  "order_index": 8,
+  "id": "yct-5-l01-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«特别» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "нисэх",
+   "онцгой, их",
+   "мэдээж",
+   "адилхан"
+  ],
+  "correct_answer": "онцгой, их",
+  "explanation": "特别 (tèbié) = онцгой, маш. 特别高兴 = онцгой баяртай.",
+  "order_index": 9,
+  "id": "yct-5-l01-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«对……感兴趣» гэдэг ямар утгатай вэ?",
+  "options": [
+   "…-тай адилхан байх",
+   "…-д тусалах",
+   "…-д сонирхолтой байх",
+   "…-ийг мэдэх"
+  ],
+  "correct_answer": "…-д сонирхолтой байх",
+  "explanation": "对……感兴趣 = …-д сонирхолтой.",
+  "order_index": 10,
+  "id": "yct-5-l01-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «gōngfu» гэж уншдаг үг:",
+  "options": [
+   "功夫",
+   "厉害",
+   "一样",
+   "帮助"
+  ],
+  "correct_answer": "功夫",
+  "explanation": "功夫 = gōngfu = кунфу.",
+  "order_index": 11,
+  "id": "yct-5-l01-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «bāngzhù» гэж уншдаг үг:",
+  "options": [
+   "帮助",
+   "当然",
+   "非常",
+   "别人"
+  ],
+  "correct_answer": "帮助",
+  "explanation": "帮助 = bāngzhù = тусалах.",
+  "order_index": 12,
+  "id": "yct-5-l01-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «lìhai» гэж уншдаг үг:",
+  "options": [
+   "非常",
+   "一样",
+   "厉害",
+   "特别"
+  ],
+  "correct_answer": "厉害",
+  "explanation": "厉害 = lìhai = мундаг.",
+  "order_index": 13,
+  "id": "yct-5-l01-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «biérén» гэж уншдаг үг:",
+  "options": [
+   "别人",
+   "一样",
+   "朋友",
+   "帮助"
+  ],
+  "correct_answer": "别人",
+  "explanation": "别人 = biérén = бусад хүн.",
+  "order_index": 14,
+  "id": "yct-5-l01-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи хятад кунфуд сонирхолтой юу?» хятадаар:",
+  "options": [
+   "你会中国功夫吗？",
+   "你喜欢看电影吗？",
+   "你爸爸会飞吗？",
+   "你对中国功夫感兴趣吗？"
+  ],
+  "correct_answer": "你对中国功夫感兴趣吗？",
+  "explanation": "对……感兴趣 = …-д сонирхолтой.",
+  "order_index": 15,
+  "id": "yct-5-l01-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дээр хэний аав кунфу мэддэг вэ?",
+  "options": [
+   "Эгчийн аав",
+   "Сяо Мины аав",
+   "Багшийн аав",
+   "Дэвидийн аав"
+  ],
+  "correct_answer": "Сяо Мины аав",
+  "explanation": "小明说：不会，我爸爸会。",
+  "order_index": 16,
+  "id": "yct-5-l01-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Дэвид «你爸爸会飞吗？» гэж асуухад Сяо Мин юу гэж хариулсан бэ?",
+  "options": [
+   "一样。",
+   "我爸爸会。",
+   "非常感兴趣！",
+   "飞？当然不会！"
+  ],
+  "correct_answer": "飞？当然不会！",
+  "explanation": "Аав нь нисч чадахгүй — «当然不会» = мэдээж үгүй.",
+  "order_index": 17,
+  "id": "yct-5-l01-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Богино өгүүлэмжид хүү яагаад «Кунфу панда» киног үзэх дуртай вэ?",
+  "options": [
+   "Найз нь үзэхийг хүссэн тул",
+   "Кино богино тул",
+   "Аав нь кино үзэхийг хүссэн тул",
+   "Кунфуд маш их сонирхолтой, А Бао мундаг тул"
+  ],
+  "correct_answer": "Кунфуд маш их сонирхолтой, А Бао мундаг тул",
+  "explanation": "我对中国功夫特别感兴趣；熊猫阿宝真厉害！",
+  "order_index": 18,
+  "id": "yct-5-l01-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Хүү кунфу сурчхаад юу хийхийг хүсдэг вэ?",
+  "options": [
+   "Нисэж үзье",
+   "Эмч болъё",
+   "Бусдад тусалъя",
+   "Кино гаргая"
+  ],
+  "correct_answer": "Бусдад тусалъя",
+  "explanation": "学了功夫去帮助别人。",
+  "order_index": 19,
+  "id": "yct-5-l01-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你（ ）中国功夫感兴趣吗？",
+  "options": [
+   "在",
+   "对",
+   "和",
+   "是"
+  ],
+  "correct_answer": "对",
+  "explanation": "对……感兴趣 = …-д сонирхолтой.",
+  "order_index": 20,
+  "id": "yct-5-l01-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我和姐姐（ ）高。",
+  "options": [
+   "当然",
+   "一起",
+   "一样",
+   "别人"
+  ],
+  "correct_answer": "一样",
+  "explanation": "和……一样 = …-тай адилхан.",
+  "order_index": 21,
+  "id": "yct-5-l01-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你会中国功夫？你真（ ）！",
+  "options": [
+   "一样",
+   "厉害",
+   "帮助",
+   "别人"
+  ],
+  "correct_answer": "厉害",
+  "explanation": "你真厉害！= Чи үнэхээр мундаг!",
+  "order_index": 22,
+  "id": "yct-5-l01-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我对足球（ ）感兴趣。",
+  "options": [
+   "一样",
+   "非常",
+   "别人",
+   "功夫"
+  ],
+  "correct_answer": "非常",
+  "explanation": "非常感兴趣 = маш их сонирхолтой.",
+  "order_index": 23,
+  "id": "yct-5-l01-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "谢谢你的（ ）。",
+  "options": [
+   "帮助",
+   "功夫",
+   "特别",
+   "别人"
+  ],
+  "correct_answer": "帮助",
+  "explanation": "谢谢你的帮助 = Тусалсанд баярлалаа.",
+  "order_index": 24,
+  "id": "yct-5-l01-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Би эгчтэйгээ адилхан өндөр» хятадаар:",
+  "options": [
+   "我对姐姐感兴趣",
+   "我帮助姐姐高",
+   "我姐姐很厉害",
+   "我和姐姐一样高"
+  ],
+  "correct_answer": "我和姐姐一样高",
+  "explanation": "和……一样 + өндөр.",
+  "order_index": 25,
+  "id": "yct-5-l01-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你会飞吗？» гэж асуулаа. Мэдээж чадахгүй бол:",
+  "options": [
+   "当然不会！",
+   "非常感兴趣！",
+   "我和你一样。",
+   "谢谢你的帮助。"
+  ],
+  "correct_answer": "当然不会！",
+  "explanation": "当然不会 = мэдээж үгүй.",
+  "order_index": 26,
+  "id": "yct-5-l01-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «我会中国功夫» гэлээ. Магтахдаа:",
+  "options": [
+   "你真当然！",
+   "你真厉害！",
+   "你真别人！",
+   "你真一样！"
+  ],
+  "correct_answer": "你真厉害！",
+  "explanation": "厉害 = мундаг.",
+  "order_index": 27,
+  "id": "yct-5-l01-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Багш «你对什么感兴趣？» гэж асуулаа. Чи усанд сэлэх дуртай бол:",
+  "options": [
+   "我会飞。",
+   "我帮助你。",
+   "我对游泳感兴趣。",
+   "我和别人一样。"
+  ],
+  "correct_answer": "我对游泳感兴趣。",
+  "explanation": "对 + юу + 感兴趣.",
+  "order_index": 28,
+  "id": "yct-5-l01-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хэн нэгэн танд тусалсан. Баярлаж хэлэхдээ:",
+  "options": [
+   "谢谢你的帮助。",
+   "我对功夫感兴趣。",
+   "当然是别人。",
+   "你真一样。"
+  ],
+  "correct_answer": "谢谢你的帮助。",
+  "explanation": "帮助 = тусалах.",
+  "order_index": 29,
+  "id": "yct-5-l01-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ }
+]

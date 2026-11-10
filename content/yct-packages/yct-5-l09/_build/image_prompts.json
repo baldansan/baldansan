@@ -1,0 +1,181 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "冰激凌既好吃又便宜。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands at a colorful supermarket ice-cream freezer with three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) licking ice-cream cones, a sign 买一送一 on the freezer. A speech bubble with the Chinese text 冰激凌既好吃又便宜 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yinliao.jpg",
+  "aspect": "1:1",
+  "title": "饮料",
+  "section": "vocabulary",
+  "prompt": "A glass bottle of cold orange drink and a juice box on a table, the yellow calf boy in blue vest holding a straw, simple bright background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-qiaokeli.jpg",
+  "aspect": "1:1",
+  "title": "巧克力",
+  "section": "vocabulary",
+  "prompt": "Pieces of brown chocolate bars and a chocolate bunny, the calf girl in yellow dress with pink ribbon smiling and holding a bar, simple bright background. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-binggan.jpg",
+  "aspect": "1:1",
+  "title": "饼干",
+  "section": "vocabulary",
+  "prompt": "A jar of round cookies and a plate of biscuits, the brown calf boy in green cap taking one cookie, simple bright background. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-bingjiling.jpg",
+  "aspect": "1:1",
+  "title": "冰激凌",
+  "section": "vocabulary",
+  "prompt": "A big pink ice-cream cone with three scoops held by the yellow calf boy in blue vest, happy face, simple bright background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-wanju.jpg",
+  "aspect": "1:1",
+  "title": "玩具",
+  "section": "vocabulary",
+  "prompt": "A toy car, a teddy bear and building blocks on a play mat, the calf girl in yellow dress playing with them, simple bright background. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-chaoshi.jpg",
+  "aspect": "1:1",
+  "title": "超市",
+  "section": "vocabulary",
+  "prompt": "A big colorful supermarket with shelves full of food and a shopping cart, the teacher camel with glasses pushing the cart with two calves, simple bright scene. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shoubiao.jpg",
+  "aspect": "1:1",
+  "title": "手表",
+  "section": "vocabulary",
+  "prompt": "A shiny wristwatch on a gift box with a bow, the brown calf boy in green cap pointing at it proudly, simple bright background. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jide.jpg",
+  "aspect": "1:1",
+  "title": "记得",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest with a thought bubble showing a happy memory of a birthday cake, finger on his forehead as if remembering, simple bright background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-yijing.jpg",
+  "aspect": "1:1",
+  "title": "已经",
+  "section": "vocabulary",
+  "prompt": "A clock showing late evening and the calf girl in yellow dress already in pajamas with a toothbrush, a tick mark next to her, simple bright background. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-banfa.jpg",
+  "aspect": "1:1",
+  "title": "办法",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap with a lightbulb above his head and a finger raised, a ladder to reach a cookie jar on a high shelf, simple bright background. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-chang.jpg",
+  "aspect": "1:1",
+  "title": "尝",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress tasting a small spoon of cake with closed eyes, a happy face, simple bright background. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-jiyou.jpg",
+  "aspect": "1:1",
+  "title": "既……又……",
+  "section": "vocabulary",
+  "prompt": "An ice cream cone with a happy smiling face and two thumbs-up signs: a delicious tag and a cheap price tag, the yellow calf boy happily holding it, simple bright background. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-pianyi.jpg",
+  "aspect": "1:1",
+  "title": "便宜",
+  "section": "vocabulary",
+  "prompt": "A price tag with a small number and a happy smile, a basket of apples with a cheap sign, the teacher camel with glasses pointing at it, simple bright background. No English text.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "下周六是你爸爸的生日",
+  "section": "dialogue",
+  "prompt": "An adult camel mother with a blue shopping bag and the calf girl in yellow dress walk in a shopping mall past a bakery window with a big chocolate cake and a watch shop window; the mother points to the watch. A speech bubble with the Chinese text 送一块漂亮的手表吧 in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "冰激凌！冰激凌！",
+  "section": "speech",
+  "prompt": "A supermarket promotion counter: a friendly salesperson camel in a yellow shirt hands an ice-cream cone to the brown calf boy in green cap; a red sign 促销 hangs above, apples and fruit in the background. A speech bubble with the Chinese text 买一送一 in large clear black font. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "既便宜又好吃",
+  "section": "song",
+  "prompt": "A party table full of food: cookies, chocolate, drinks, bread, cake, dumplings, milk, juice, ice cream, apples, watermelon and bananas; the teacher camel with glasses and three calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) laughing and eating happily. A speech bubble with the Chinese text 既便宜又好吃 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

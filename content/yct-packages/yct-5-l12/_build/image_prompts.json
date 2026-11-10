@@ -1,0 +1,167 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "坐飞机或者坐火车都可以。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands at a bright travel hub with three young camel calves (yellow boy in blue vest and red backpack, girl in yellow dress with pink ribbon, brown boy in green cap); an airplane flies above and a white high-speed train waits on the platform, a speech bubble with the Chinese text 坐飞机或者坐火车都可以 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-ditie.jpg",
+  "aspect": "1:1",
+  "title": "地铁",
+  "section": "vocabulary",
+  "prompt": "A subway train arriving at a clean underground platform, the yellow calf boy in blue vest and red backpack waiting by the yellow line, simple bright style. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-huoche.jpg",
+  "aspect": "1:1",
+  "title": "火车",
+  "section": "vocabulary",
+  "prompt": "A white high-speed train speeding through green hills, the calf girl in yellow dress with pink ribbon waving from the platform. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-shanghai.jpg",
+  "aspect": "1:1",
+  "title": "上海",
+  "section": "vocabulary",
+  "prompt": "Shanghai skyline with the Oriental Pearl Tower at sunset by the river, the brown calf boy in green cap pointing at the tower with a happy face. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-keneng.jpg",
+  "aspect": "1:1",
+  "title": "可能",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest looks up at a sky that is half sunny and half full of grey rain clouds with a thinking face, a question-mark cloud above his head. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-danxin.jpg",
+  "aspect": "1:1",
+  "title": "担心",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon looking worried at a big wall clock, hands on cheeks, sweat drop, a bus far away in the background. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ruguo.jpg",
+  "aspect": "1:1",
+  "title": "如果…那么…",
+  "section": "vocabulary",
+  "prompt": "Split picture: on the left rain falls and the brown calf boy in green cap looks out the window; on the right the same calf plays a video game happily at home with a curved arrow from the rain picture to the game picture. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-gongzuo.jpg",
+  "aspect": "1:1",
+  "title": "工作",
+  "section": "vocabulary",
+  "prompt": "An adult camel mother in a white doctor coat working in a hospital office, the yellow calf boy in blue vest waving at her from the doorway. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-chuchai.jpg",
+  "aspect": "1:1",
+  "title": "出差",
+  "section": "vocabulary",
+  "prompt": "An adult camel father in a suit pulling a suitcase at a station, waving goodbye, the calf girl in yellow dress with pink ribbon waving back. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-anquan.jpg",
+  "aspect": "1:1",
+  "title": "安全",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap sitting happily in a car seat wearing a seat belt, calm and safe, a big green shield with a check mark floating beside him. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhunshi.jpg",
+  "aspect": "1:1",
+  "title": "准时",
+  "section": "vocabulary",
+  "prompt": "A train pulling into a station right when a big station clock shows the exact departure time, the yellow calf boy in blue vest checking his watch with a thumbs-up. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-huozhe.jpg",
+  "aspect": "1:1",
+  "title": "或者",
+  "section": "vocabulary",
+  "prompt": "The calf girl in yellow dress with pink ribbon smiling, holding a cup of tea in one hand and a glass of juice in the other, both offered to the viewer, 'either one is fine' look. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-fangbian.jpg",
+  "aspect": "1:1",
+  "title": "方便",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap stepping easily out of a subway exit right at the door of a school, relaxed happy face. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "我想去这里，怎么去呢？",
+  "section": "dialogue",
+  "prompt": "In a sunny park the calf girl in yellow dress with pink ribbon and a second young calf girl with dark hair and a purple top look at a city map together, one points ahead; a bus stop sign and a subway entrance are visible in the background, a speech bubble with the Chinese text 坐地铁吧 in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我爸爸在上海工作",
+  "section": "speech",
+  "prompt": "A blue airplane in the sky and a white high-speed train crossing green hills below; an adult camel father with a suitcase and a yellow calf boy in blue vest watch from a station, the father proudly pointing at the train. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "春节回家",
+  "section": "story",
+  "prompt": "Chinese New Year homecoming: a family of adult camels with calves arrive at a decorated home with red lanterns, behind them a plane, a bus, a train and a motorbike travel the roads; inside a table full of festive food, everyone smiling happily. No English text.",
+  "chars": [
+   "huu",
+   "ohin"
+  ]
+ }
+]

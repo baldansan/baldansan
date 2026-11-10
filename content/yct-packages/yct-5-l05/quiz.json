@@ -1,0 +1,542 @@
+[
+ {
+  "type": "choice",
+  "question": "«Хүү (өөрийн хүү)» хятадаар аль нь вэ?",
+  "options": [
+   "儿子",
+   "叔叔",
+   "女儿",
+   "孩子"
+  ],
+  "correct_answer": "儿子",
+  "explanation": "儿子 (érzi) = хүү.",
+  "order_index": 1,
+  "id": "yct-5-l05-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Охин (өөрийн охин)» хятадаар аль нь вэ?",
+  "options": [
+   "儿子",
+   "妹妹",
+   "孙子",
+   "女儿"
+  ],
+  "correct_answer": "女儿",
+  "explanation": "女儿 (nǚ'ér) = охин.",
+  "order_index": 2,
+  "id": "yct-5-l05-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Нагац эгч, ээжийн насны эмэгтэй» хятадаар аль нь вэ?",
+  "options": [
+   "奶奶",
+   "叔叔",
+   "姐姐",
+   "阿姨"
+  ],
+  "correct_answer": "阿姨",
+  "explanation": "阿姨 (āyí) = нагац эгч.",
+  "order_index": 3,
+  "id": "yct-5-l05-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Залуу» хятадаар аль нь вэ?",
+  "options": [
+   "高兴",
+   "年轻",
+   "可爱",
+   "帅"
+  ],
+  "correct_answer": "年轻",
+  "explanation": "年轻 (niánqīng) = залуу.",
+  "order_index": 4,
+  "id": "yct-5-l05-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Царайлаг» хятадаар аль нь вэ?",
+  "options": [
+   "帅",
+   "多么",
+   "年轻",
+   "照片"
+  ],
+  "correct_answer": "帅",
+  "explanation": "帅 (shuài) = царайлаг.",
+  "order_index": 5,
+  "id": "yct-5-l05-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зураг авах» хятадаар аль нь вэ?",
+  "options": [
+   "年轻",
+   "照相",
+   "孩子",
+   "照片"
+  ],
+  "correct_answer": "照相",
+  "explanation": "照相 (zhàoxiàng) = зураг авах.",
+  "order_index": 6,
+  "id": "yct-5-l05-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Гэрэл зураг» хятадаар аль нь вэ?",
+  "options": [
+   "张",
+   "照片",
+   "照相",
+   "孩子"
+  ],
+  "correct_answer": "照片",
+  "explanation": "照片 (zhàopiàn) = гэрэл зураг.",
+  "order_index": 7,
+  "id": "yct-5-l05-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Ач хүү» хятадаар аль нь вэ?",
+  "options": [
+   "孙子",
+   "弟弟",
+   "爷爷",
+   "儿子"
+  ],
+  "correct_answer": "孙子",
+  "explanation": "孙子 (sūnzi) = ач хүү.",
+  "order_index": 8,
+  "id": "yct-5-l05-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«叔叔» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "авга ах (аавын дүү)",
+   "ээжийн ээж",
+   "охин",
+   "өвөө"
+  ],
+  "correct_answer": "авга ах (аавын дүү)",
+  "explanation": "叔叔 (shūshu) = аавын дүү.",
+  "order_index": 9,
+  "id": "yct-5-l05-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«孩子» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "өвөө",
+   "нагац эгч",
+   "хүүхэд",
+   "хүү"
+  ],
+  "correct_answer": "хүүхэд",
+  "explanation": "孩子 (háizi) = хүүхэд.",
+  "order_index": 10,
+  "id": "yct-5-l05-q10",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhàopiàn» гэж уншдаг үг:",
+  "options": [
+   "孩子",
+   "照相",
+   "年轻",
+   "照片"
+  ],
+  "correct_answer": "照片",
+  "explanation": "照片 = zhàopiàn = гэрэл зураг.",
+  "order_index": 11,
+  "id": "yct-5-l05-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «niánqīng» гэж уншдаг үг:",
+  "options": [
+   "叔叔",
+   "孩子",
+   "多么",
+   "年轻"
+  ],
+  "correct_answer": "年轻",
+  "explanation": "年轻 = niánqīng = залуу.",
+  "order_index": 12,
+  "id": "yct-5-l05-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «shūshu» гэж уншдаг үг:",
+  "options": [
+   "阿姨",
+   "孙子",
+   "儿子",
+   "叔叔"
+  ],
+  "correct_answer": "叔叔",
+  "explanation": "叔叔 = shūshu = авга ах.",
+  "order_index": 13,
+  "id": "yct-5-l05-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «duōme» гэж уншдаг үг:",
+  "options": [
+   "多么",
+   "照相",
+   "年轻",
+   "孩子"
+  ],
+  "correct_answer": "多么",
+  "explanation": "多么 = duōme = ямар.",
+  "order_index": 14,
+  "id": "yct-5-l05-q14",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Энэ чиний хүү юм уу?» хятадаар:",
+  "options": [
+   "这是你女儿吗？",
+   "这是你儿子吗？",
+   "你儿子真帅！",
+   "这是白阿姨。"
+  ],
+  "correct_answer": "这是你儿子吗？",
+  "explanation": "儿子 = хүү.",
+  "order_index": 15,
+  "id": "yct-5-l05-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«你儿子真帅！» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Энэ чиний охин уу?",
+   "Чиний хүү үнэхээр царайлаг юм!",
+   "Энэ бол Бай нагац эгч.",
+   "Чиний дүү залуухан юм!"
+  ],
+  "correct_answer": "Чиний хүү үнэхээр царайлаг юм!",
+  "explanation": "帅 = царайлаг.",
+  "order_index": 16,
+  "id": "yct-5-l05-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дээр Бай нагац эгчийн хажууд байсан охин хэн бэ?",
+  "options": [
+   "Түүний охин",
+   "Түүний эгч",
+   "Түүний дүү",
+   "Түүний хүү"
+  ],
+  "correct_answer": "Түүний дүү",
+  "explanation": "Яриа — «不是，是我妹妹»: Үгүй, миний дүү.",
+  "order_index": 17,
+  "id": "yct-5-l05-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-д өвөө, эмээ юунд маш их дуртай вэ?",
+  "options": [
+   "Бүжиглэхдээ",
+   "Хоол хийхдээ",
+   "Ном уншихдаа",
+   "Зураг авахдаа"
+  ],
+  "correct_answer": "Зураг авахдаа",
+  "explanation": "很喜欢照相 = зураг авах маш дуртай.",
+  "order_index": 18,
+  "id": "yct-5-l05-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-д нэг зургийг хэзээ авсан бэ?",
+  "options": [
+   "Өчигдөр",
+   "Хорин жилийн өмнө",
+   "Гурван жилийн өмнө",
+   "Арван жилийн өмнө"
+  ],
+  "correct_answer": "Хорин жилийн өмнө",
+  "explanation": "二十年前照的 = хорин жилийн өмнө авсан.",
+  "order_index": 19,
+  "id": "yct-5-l05-q19",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "这张照片是二十年前照（ ）。",
+  "options": [
+   "了",
+   "吧",
+   "吗",
+   "的"
+  ],
+  "correct_answer": "的",
+  "explanation": "是……的.",
+  "order_index": 20,
+  "id": "yct-5-l05-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他们（ ）年轻啊！",
+  "options": [
+   "多么",
+   "一起",
+   "多少",
+   "已经"
+  ],
+  "correct_answer": "多么",
+  "explanation": "多么……啊 = ямар … вэ!",
+  "order_index": 21,
+  "id": "yct-5-l05-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "一（ ）照片",
+  "options": [
+   "个",
+   "本",
+   "只",
+   "张"
+  ],
+  "correct_answer": "张",
+  "explanation": "Зургийг 张-аар тоолно.",
+  "order_index": 22,
+  "id": "yct-5-l05-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸的爸爸叫（ ）。",
+  "options": [
+   "舅舅",
+   "爷爷",
+   "外公",
+   "叔叔"
+  ],
+  "correct_answer": "爷爷",
+  "explanation": "Аавын аав = 爷爷.",
+  "order_index": 23,
+  "id": "yct-5-l05-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈的妈妈叫（ ）。",
+  "options": [
+   "阿姨",
+   "姑姑",
+   "奶奶",
+   "外婆"
+  ],
+  "correct_answer": "外婆",
+  "explanation": "Ээжийн ээж = 外婆.",
+  "order_index": 24,
+  "id": "yct-5-l05-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Аавын эгч, дүү эмэгтэй» хятадаар юу гэж дууддаг вэ?",
+  "options": [
+   "奶奶",
+   "阿姨",
+   "姑姑",
+   "外婆"
+  ],
+  "correct_answer": "姑姑",
+  "explanation": "爸爸的姐妹叫姑姑.",
+  "order_index": 25,
+  "id": "yct-5-l05-q25",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "choice",
+  "question": "«Ээжийн ах, дүү эрэгтэй» хятадаар юу гэж дууддаг вэ?",
+  "options": [
+   "叔叔",
+   "伯伯",
+   "舅舅",
+   "爷爷"
+  ],
+  "correct_answer": "舅舅",
+  "explanation": "妈妈的兄弟叫舅舅.",
+  "order_index": 26,
+  "id": "yct-5-l05-q26",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найзынхаа хөөрхөн зулзагыг хараад «Ямар хөөрхөн юм бэ!» гэж яаж хэлэх вэ?",
+  "options": [
+   "这张照片",
+   "多么可爱啊！",
+   "这是你女儿吗？",
+   "我叔叔"
+  ],
+  "correct_answer": "多么可爱啊！",
+  "explanation": "多么……啊 = ямар … вэ!",
+  "order_index": 27,
+  "id": "yct-5-l05-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Хуучин зургаа үзүүлээд «Энэ зургийг арван жилийн өмнө авсан» гэж хэлэх үү?",
+  "options": [
+   "你妹妹真年轻！",
+   "这张照片是十年前照的。",
+   "这是我儿子。",
+   "我喜欢吃饺子。"
+  ],
+  "correct_answer": "这张照片是十年前照的。",
+  "explanation": "是……的 — хэзээ авснаа хэлнэ.",
+  "order_index": 28,
+  "id": "yct-5-l05-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзынхаа ээжийг «залуухан юм» гэж магтъя. Яаж хэлэх вэ?",
+  "options": [
+   "这是你儿子。",
+   "你妈妈真帅！",
+   "你妈妈是孩子。",
+   "你妈妈真年轻！"
+  ],
+  "correct_answer": "你妈妈真年轻！",
+  "explanation": "年轻 = залуу.",
+  "order_index": 29,
+  "id": "yct-5-l05-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Зураг авч өгөхийг хүсэхдээ яаж хэлэх вэ?",
+  "options": [
+   "我有两个孙子。",
+   "帮我照张相。",
+   "他们多么年轻啊！",
+   "这是你女儿吗？"
+  ],
+  "correct_answer": "帮我照张相。",
+  "explanation": "照相 = зураг авах.",
+  "order_index": 30,
+  "id": "yct-5-l05-q30",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

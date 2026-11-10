@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Цахилгаан шат» хятадаар аль нь вэ?",
+  "options": [
+   "电梯",
+   "空调",
+   "窗户",
+   "沙发"
+  ],
+  "correct_answer": "电梯",
+  "explanation": "电梯 (diàntī) = цахилгаан шат.",
+  "order_index": 1,
+  "id": "yct-5-l03-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Цонх» хятадаар аль нь вэ?",
+  "options": [
+   "楼",
+   "房间",
+   "桌子",
+   "窗户"
+  ],
+  "correct_answer": "窗户",
+  "explanation": "窗户 (chuānghu) = цонх.",
+  "order_index": 2,
+  "id": "yct-5-l03-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Буйдан» хятадаар аль нь вэ?",
+  "options": [
+   "电梯",
+   "床",
+   "空调",
+   "沙发"
+  ],
+  "correct_answer": "沙发",
+  "explanation": "沙发 (shāfā) = буйдан.",
+  "order_index": 3,
+  "id": "yct-5-l03-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Агааржуулагч» хятадаар аль нь вэ?",
+  "options": [
+   "桌子",
+   "空调",
+   "洗手间",
+   "窗户"
+  ],
+  "correct_answer": "空调",
+  "explanation": "空调 (kōngtiáo) = агааржуулагч.",
+  "order_index": 4,
+  "id": "yct-5-l03-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Жорлон, гар угаах өрөө» хятадаар аль нь вэ?",
+  "options": [
+   "洗手间",
+   "学校",
+   "房间",
+   "门口"
+  ],
+  "correct_answer": "洗手间",
+  "explanation": "洗手间 (xǐshǒujiān).",
+  "order_index": 5,
+  "id": "yct-5-l03-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«层» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "хүлээх",
+   "давхар",
+   "тавих",
+   "байшин"
+  ],
+  "correct_answer": "давхар",
+  "explanation": "层 (céng) = давхар. 3层 = 3-р давхар.",
+  "order_index": 6,
+  "id": "yct-5-l03-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«等» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "эсвэл",
+   "хүлээх",
+   "амьдрах",
+   "тавих"
+  ],
+  "correct_answer": "хүлээх",
+  "explanation": "等 (děng) = хүлээх.",
+  "order_index": 7,
+  "id": "yct-5-l03-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«放» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "тавих",
+   "эсвэл",
+   "хүлээх",
+   "амьдрах"
+  ],
+  "correct_answer": "тавих",
+  "explanation": "放 (fàng) = тавих.",
+  "order_index": 8,
+  "id": "yct-5-l03-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «diàntī» гэж уншдаг үг:",
+  "options": [
+   "电梯",
+   "楼",
+   "沙发",
+   "窗户"
+  ],
+  "correct_answer": "电梯",
+  "explanation": "电梯 = diàntī = цахилгаан шат.",
+  "order_index": 9,
+  "id": "yct-5-l03-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «háishi» гэж уншдаг үг:",
+  "options": [
+   "洗手间",
+   "房间",
+   "还是",
+   "沙发"
+  ],
+  "correct_answer": "还是",
+  "explanation": "还是 = háishi = эсвэл.",
+  "order_index": 10,
+  "id": "yct-5-l03-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «xǐshǒujiān» гэж уншдаг үг:",
+  "options": [
+   "窗户",
+   "沙发",
+   "空调",
+   "洗手间"
+  ],
+  "correct_answer": "洗手间",
+  "explanation": "洗手间 = xǐshǒujiān = жорлон.",
+  "order_index": 11,
+  "id": "yct-5-l03-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhù» гэж уншдаг үг:",
+  "options": [
+   "层",
+   "放",
+   "等",
+   "住"
+  ],
+  "correct_answer": "住",
+  "explanation": "住 = zhù = амьдрах.",
+  "order_index": 12,
+  "id": "yct-5-l03-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«小红，我到你们家楼下了» — Мари хаана ирсэн бэ?",
+  "options": [
+   "Эмнэлэгт",
+   "Сургуулийн хаалганд",
+   "Дэлгүүрт",
+   "Сяо Хунгийн байшингийн доор"
+  ],
+  "correct_answer": "Сяо Хунгийн байшингийн доор",
+  "explanation": "楼下 = байшингийн доор.",
+  "order_index": 13,
+  "id": "yct-5-l03-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Мари яагаад цахилгаан шатаар гарч чадахгүй байна вэ?",
+  "options": [
+   "Цахилгаан шат эвдэрсэн",
+   "Цахилгаан шат хаалттай",
+   "Цахилгаан шат хэтэрхий том",
+   "Мари айдаг"
+  ],
+  "correct_answer": "Цахилгаан шат эвдэрсэн",
+  "explanation": "电梯坏了 = цахилгаан шат эвдэрчихсэн.",
+  "order_index": 14,
+  "id": "yct-5-l03-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Сяо Хун хэдэн давхарт амьдардаг вэ?",
+  "options": [
+   "3-р давхар",
+   "34-р давхар",
+   "43-р давхар",
+   "4-р давхар"
+  ],
+  "correct_answer": "34-р давхар",
+  "explanation": "是34层 = 34-р давхар.",
+  "order_index": 15,
+  "id": "yct-5-l03-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«啊？» гэж Мари яагаад хэлсэн бэ?",
+  "options": [
+   "Баярласан",
+   "Гайхсан",
+   "Хүлээсэн",
+   "Өлссөн"
+  ],
+  "correct_answer": "Гайхсан",
+  "explanation": "啊 = гайхахад хэлдэг дуу. 34 давхар гэхээр гайхмаар!",
+  "order_index": 16,
+  "id": "yct-5-l03-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-д охины муур хаана унтдаг вэ?",
+  "options": [
+   "Буйдан дээр",
+   "Цонхны дэргэд",
+   "Жорлонгийн үүдэнд",
+   "Орон дээр"
+  ],
+  "correct_answer": "Жорлонгийн үүдэнд",
+  "explanation": "猫喜欢在洗手间门口睡觉。",
+  "order_index": 17,
+  "id": "yct-5-l03-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你住3层（ ）4层？",
+  "options": [
+   "吗",
+   "了",
+   "和",
+   "还是"
+  ],
+  "correct_answer": "还是",
+  "explanation": "还是 = эсвэл.",
+  "order_index": 18,
+  "id": "yct-5-l03-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们的教室在3（ ）。",
+  "options": [
+   "放",
+   "层",
+   "还是",
+   "等"
+  ],
+  "correct_answer": "层",
+  "explanation": "3层 = 3-р давхар.",
+  "order_index": 19,
+  "id": "yct-5-l03-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "窗户旁边（ ）了一个大沙发。",
+  "options": [
+   "等",
+   "还是",
+   "住",
+   "放"
+  ],
+  "correct_answer": "放",
+  "explanation": "放了 = тавьсан.",
+  "order_index": 20,
+  "id": "yct-5-l03-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我在门口（ ）你。",
+  "options": [
+   "等",
+   "住",
+   "放",
+   "还是"
+  ],
+  "correct_answer": "等",
+  "explanation": "等你 = чамайг хүлээх.",
+  "order_index": 21,
+  "id": "yct-5-l03-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "不是3层，（ ）不是4层，是34层。",
+  "options": [
+   "还是",
+   "和",
+   "啊",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "也不是 = …ч биш.",
+  "order_index": 22,
+  "id": "yct-5-l03-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Чи цай уух уу, жүүс уух уу?» хятадаар:",
+  "options": [
+   "你喝茶了果汁？",
+   "你喝茶还是果汁？",
+   "你喝茶吗果汁？",
+   "你喝茶和果汁吗？"
+  ],
+  "correct_answer": "你喝茶还是果汁？",
+  "explanation": "Хоёроос сонгохдоо 还是.",
+  "order_index": 23,
+  "id": "yct-5-l03-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Номоо ширээн дээр тавь» хятадаар:",
+  "options": [
+   "把书住桌子上",
+   "把书还是桌子上",
+   "把书等桌子上",
+   "把书放在桌子上"
+  ],
+  "correct_answer": "把书放在桌子上",
+  "explanation": "把…放在… = … -г … -д тавих.",
+  "order_index": 24,
+  "id": "yct-5-l03-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你住3层还是4层？» гэж асуулаа. Чи 4-р давхарт амьдардаг бол:",
+  "options": [
+   "是桌子。",
+   "我等4层。",
+   "我住4层。",
+   "电梯坏了。"
+  ],
+  "correct_answer": "我住4层。",
+  "explanation": "住 + тоо + 层.",
+  "order_index": 25,
+  "id": "yct-5-l03-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найзаа үүдэнд хүлээхэд хэрхэн хэлэх вэ?",
+  "options": [
+   "我在门口放你。",
+   "我在门口住你。",
+   "我在门口等你。",
+   "我在门口还是你。"
+  ],
+  "correct_answer": "我在门口等你。",
+  "explanation": "等你 = чамайг хүлээх.",
+  "order_index": 26,
+  "id": "yct-5-l03-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Цахилгаан шат эвдэрсэн. Яаж хэлэх вэ?",
+  "options": [
+   "电梯等了。",
+   "电梯坏了。",
+   "电梯放了。",
+   "电梯住了。"
+  ],
+  "correct_answer": "电梯坏了。",
+  "explanation": "坏了 = эвдэрчихсэн.",
+  "order_index": 27,
+  "id": "yct-5-l03-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "usage",
+  "question": "Өрөөнийхөө тухай «Цонхны хажууд том буйдан тавьсан» гэж хэлэхэд:",
+  "options": [
+   "窗户旁边等了一个大沙发。",
+   "窗户旁边放了一个大沙发。",
+   "窗户旁边住了一个大沙发。",
+   "窗户旁边坏了一个大沙发。"
+  ],
+  "correct_answer": "窗户旁边放了一个大沙发。",
+  "explanation": "газар + 放了 + нэг + юм.",
+  "order_index": 28,
+  "id": "yct-5-l03-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

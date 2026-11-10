@@ -1,0 +1,242 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l09",
+ "hskLevel": 3,
+ "lessonNumber": 9,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "冰激凌既好吃又便宜。",
+ "mongolianTitle": "Зайрмаг амттай ч, хямд ч",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第9课 (сурах бичиг + CD аудио 09-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-09-text-song.mp3",
+  "dialogues": "audio/yct-5-09-02.mp3",
+  "words": "audio/yct-5-09-01.mp3",
+  "speech": "audio/yct-5-09-03.mp3",
+  "song": "audio/yct-5-09-04.mp3",
+  "test": "audio/yct-5-09-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l09",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "冰激凌既好吃又便宜。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "下周六是你爸爸的生日",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "冰激凌！冰激凌！",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "既便宜又好吃",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-yinliao",
+    "file": "images/w-yinliao.jpg",
+    "title": "饮料",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qiaokeli",
+    "file": "images/w-qiaokeli.jpg",
+    "title": "巧克力",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-binggan",
+    "file": "images/w-binggan.jpg",
+    "title": "饼干",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bingjiling",
+    "file": "images/w-bingjiling.jpg",
+    "title": "冰激凌",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wanju",
+    "file": "images/w-wanju.jpg",
+    "title": "玩具",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chaoshi",
+    "file": "images/w-chaoshi.jpg",
+    "title": "超市",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shoubiao",
+    "file": "images/w-shoubiao.jpg",
+    "title": "手表",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jide",
+    "file": "images/w-jide.jpg",
+    "title": "记得",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yijing",
+    "file": "images/w-yijing.jpg",
+    "title": "已经",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-banfa",
+    "file": "images/w-banfa.jpg",
+    "title": "办法",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chang",
+    "file": "images/w-chang.jpg",
+    "title": "尝",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jiyou",
+    "file": "images/w-jiyou.jpg",
+    "title": "既……又……",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-pianyi",
+    "file": "images/w-pianyi.jpg",
+    "title": "便宜",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "ls1",
+    "file": "images/ls1.png",
+    "title": "Let's say 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "ls2",
+    "file": "images/ls2.png",
+    "title": "Let's say 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "ls3",
+    "file": "images/ls3.png",
+    "title": "Let's say 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "ls4",
+    "file": "images/ls4.png",
+    "title": "Let's say 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "ls5",
+    "file": "images/ls5.png",
+    "title": "Let's say 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "ls6",
+    "file": "images/ls6.png",
+    "title": "Let's say 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L9)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

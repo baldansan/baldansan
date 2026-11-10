@@ -1,0 +1,193 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l11",
+ "hskLevel": 3,
+ "lessonNumber": 11,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "来一盘羊肉饺子。",
+ "mongolianTitle": "Нэг таваг хонины махтай банш авъя",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第11课 (сурах бичиг + CD аудио 11-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-11-text-song.mp3",
+  "dialogues": "audio/yct-5-11-02.mp3",
+  "words": "audio/yct-5-11-01.mp3",
+  "speech": "audio/yct-5-11-03.mp3",
+  "song": "audio/yct-5-11-04.mp3",
+  "test": "audio/yct-5-11-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l11",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "来一盘羊肉饺子。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "服务员，有烤鸭吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "昨天我去吃中国菜了。",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "包饺子",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-kaoya",
+    "file": "images/w-kaoya.jpg",
+    "title": "烤鸭",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-fuwuyuan",
+    "file": "images/w-fuwuyuan.jpg",
+    "title": "服务员",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-panzi",
+    "file": "images/w-panzi.jpg",
+    "title": "盘子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-wan",
+    "file": "images/w-wan.jpg",
+    "title": "碗",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-kuaizi",
+    "file": "images/w-kuaizi.jpg",
+    "title": "筷子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chazi",
+    "file": "images/w-chazi.jpg",
+    "title": "叉子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yangrou",
+    "file": "images/w-yangrou.jpg",
+    "title": "羊肉",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tang",
+    "file": "images/w-tang.jpg",
+    "title": "汤",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qita",
+    "file": "images/w-qita.jpg",
+    "title": "其他",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yong",
+    "file": "images/w-yong.jpg",
+    "title": "用",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-likai",
+    "file": "images/w-likai.jpg",
+    "title": "离开",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuang",
+    "file": "images/w-shuang.jpg",
+    "title": "双",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L11)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

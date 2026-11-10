@@ -1,0 +1,200 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l05",
+ "hskLevel": 3,
+ "lessonNumber": 5,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "他们多么年轻啊！",
+ "mongolianTitle": "Тэд ямар залуухан юм бэ!",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第5课 (сурах бичиг + CD аудио 05-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-05-text-song.mp3",
+  "dialogues": "audio/yct-5-05-02.mp3",
+  "words": "audio/yct-5-05-01.mp3",
+  "speech": "audio/yct-5-05-03.mp3",
+  "song": "audio/yct-5-05-04.mp3",
+  "test": "audio/yct-5-05-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l05",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "他们多么年轻啊！",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "这是你儿子吗？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我爷爷和奶奶很喜欢照相。",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "song",
+    "file": "images/song.jpg",
+    "title": "家庭歌",
+    "role": "illustration",
+    "section": "song"
+   },
+   {
+    "id": "w-erzi",
+    "file": "images/w-erzi.jpg",
+    "title": "儿子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ayi",
+    "file": "images/w-ayi.jpg",
+    "title": "阿姨",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shuai",
+    "file": "images/w-shuai.jpg",
+    "title": "帅",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nuer",
+    "file": "images/w-nuer.jpg",
+    "title": "女儿",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nianqing",
+    "file": "images/w-nianqing.jpg",
+    "title": "年轻",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhaoxiang",
+    "file": "images/w-zhaoxiang.jpg",
+    "title": "照相",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhang",
+    "file": "images/w-zhang.jpg",
+    "title": "张",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhaopian",
+    "file": "images/w-zhaopian.jpg",
+    "title": "照片",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-duome",
+    "file": "images/w-duome.jpg",
+    "title": "多么",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-haizi",
+    "file": "images/w-haizi.jpg",
+    "title": "孩子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shushu",
+    "file": "images/w-shushu.jpg",
+    "title": "叔叔",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-sunzi",
+    "file": "images/w-sunzi.jpg",
+    "title": "孙子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "match",
+    "file": "images/match.jpg",
+    "title": "Let's match",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L5)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

@@ -1,0 +1,235 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l08",
+ "hskLevel": 3,
+ "lessonNumber": 8,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "北京一共有四个季节。",
+ "mongolianTitle": "Бээжинд нийтдээ дөрвөн улирал бий",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第8课 (сурах бичиг + CD аудио 08-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-08-text-song.mp3",
+  "dialogues": "audio/yct-5-08-02.mp3",
+  "words": "audio/yct-5-08-01.mp3",
+  "speech": "audio/yct-5-08-03.mp3",
+  "story": "audio/yct-5-08-04.mp3",
+  "test": "audio/yct-5-08-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l08",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "北京一共有四个季节。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "听说你们周末去爬山了，玩得怎么样？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "北京的四个季节",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "季节和食物",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "季节和食物 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-qing",
+    "file": "images/w-qing.jpg",
+    "title": "晴",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yin",
+    "file": "images/w-yin.jpg",
+    "title": "阴",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-guafeng",
+    "file": "images/w-guafeng.jpg",
+    "title": "刮风",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chuntian",
+    "file": "images/w-chuntian.jpg",
+    "title": "春天",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-xiatian",
+    "file": "images/w-xiatian.jpg",
+    "title": "夏天",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-qiutian",
+    "file": "images/w-qiutian.jpg",
+    "title": "秋天",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-dongtian",
+    "file": "images/w-dongtian.jpg",
+    "title": "冬天",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-bianhua",
+    "file": "images/w-bianhua.jpg",
+    "title": "变化",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-yigong",
+    "file": "images/w-yigong.jpg",
+    "title": "一共",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jijie",
+    "file": "images/w-jijie.jpg",
+    "title": "季节",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-nuanhuo",
+    "file": "images/w-nuanhuo.jpg",
+    "title": "暖和",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-daochu",
+    "file": "images/w-daochu.jpg",
+    "title": "到处",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-liangkuai",
+    "file": "images/w-liangkuai.jpg",
+    "title": "凉快",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-duixueren",
+    "file": "images/w-duixueren.jpg",
+    "title": "堆雪人",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s1",
+    "file": "images/s1.png",
+    "title": "Let's say 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s2",
+    "file": "images/s2.png",
+    "title": "Let's say 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s3",
+    "file": "images/s3.png",
+    "title": "Let's say 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s4",
+    "file": "images/s4.png",
+    "title": "Let's say 4",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L8)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

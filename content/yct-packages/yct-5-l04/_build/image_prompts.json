@@ -1,0 +1,194 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "每个人都有自己的习惯。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher Camel stands in a sunny park holding a coffee cup; behind him a yellow foal plays the piano on a small stage, a brown foal hikes up a hill and a girl foal walks along a path, a big speech bubble with the Chinese text 习惯 in large clear black font. No English text in the image.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "我的邻居有个习惯。",
+  "section": "dialogue",
+  "prompt": "Girl foal in a yellow dress and a brown foal chat in a bright hallway; through the window a thought bubble shows a lady camel neighbor playing a grand piano in the morning, a wall clock shows early morning; speech bubble with the Chinese text 我的邻居有个习惯 in large clear black font. No English text in the image.",
+  "chars": [
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "每个人都有自己的习惯。",
+  "section": "speech",
+  "prompt": "Three panels in one picture: an adult camel grandfather walking in a park after dinner, an adult camel father leading three foals up a mountain trail, an adult camel mother drinking a cup of coffee at night by a lamp; the Chinese text 每个人都有自己的习惯 in a banner in large clear black font. No English text in the image.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "读书好习惯",
+  "section": "story",
+  "prompt": "Teacher Camel with glasses sitting at a wooden desk full of books, washing his hooves in a basin before reading, repairing an old torn book, with a paper on the wall showing the Chinese text 心到 眼到 口到 in large clear black font. No English text in the image.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-linju.jpg",
+  "aspect": "1:1",
+  "title": "邻居",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: two foals waving to each other over a garden fence between two neighboring houses. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-xiguan.jpg",
+  "aspect": "1:1",
+  "title": "习惯",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: a foal doing the same morning routine every day: calendar with check marks, toothbrush and cup, happy and calm. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yihuir.jpg",
+  "aspect": "1:1",
+  "title": "一会儿",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: a foal playing with toy blocks while a small hourglass with a little sand shows a short time. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-yiqian.jpg",
+  "aspect": "1:1",
+  "title": "以前",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: a foal brushing his teeth with a clock showing bedtime, an arrow pointing to the bed that comes after. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-zhoumo.jpg",
+  "aspect": "1:1",
+  "title": "周末",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: a calendar with Saturday and Sunday circled in red, a happy foal with a backpack jumping for joy. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-dai.jpg",
+  "aspect": "1:1",
+  "title": "带",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: an adult camel father holding the hand of a foal and carrying a backpack, leading him forward. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-qiguai.jpg",
+  "aspect": "1:1",
+  "title": "奇怪",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: a funny foal wearing a strange mismatched costume, a boot on his head and a flower on his tail, friends looking surprised. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kafei.jpg",
+  "aspect": "1:1",
+  "title": "咖啡",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: a steaming cup of coffee on a saucer beside a coffee pot, adult camel mother sipping. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-tan-gangqin.jpg",
+  "aspect": "1:1",
+  "title": "弹钢琴",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: a yellow foal playing a grand piano, musical notes floating. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-gongyuan.jpg",
+  "aspect": "1:1",
+  "title": "公园",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: a green park with trees, benches, a pond and a path, foals playing. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-sanbu.jpg",
+  "aspect": "1:1",
+  "title": "散步",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: an adult camel grandfather and a foal taking a slow walk on a park path in the evening. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-pashan.jpg",
+  "aspect": "1:1",
+  "title": "爬山",
+  "section": "vocabulary",
+  "prompt": "Cute friendly children's-book illustration: a foal and an adult camel father climbing a rocky mountain trail with backpacks and walking sticks. Simple clean background. No English text in the image.",
+  "chars": [
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ }
+]

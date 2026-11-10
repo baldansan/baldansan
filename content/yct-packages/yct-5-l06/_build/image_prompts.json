@@ -1,0 +1,154 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "站着的还是坐着的？",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands beside a group photo frame while the yellow camel boy, the girl camel and the brown camel boy pose, some standing and some sitting, one wearing glasses and holding a book. Speech bubble with the Chinese text 站着的还是坐着的？ in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "哪个是你？",
+  "section": "dialogue",
+  "prompt": "Two young camel friends in a bedroom point at a framed group photo on a desk; one asks, speech bubble with the Chinese text 哪个是你？ in large clear black font; in the photo one camel wearing glasses holds a book. No English text.",
+  "chars": [
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我的小猫不见了",
+  "section": "speech",
+  "prompt": "A lost-pet poster on a wall showing a white kitten wearing a yellow collar tag, the camel boy holds the poster sadly while the teacher camel comforts him. The poster has the Chinese text 多多 in large black font. No English text.",
+  "chars": [
+   "huu",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/song.jpg",
+  "aspect": "4:3",
+  "title": "桌子上放着什么？",
+  "section": "song",
+  "prompt": "Classroom scene: a schoolbag on a desk, a notebook with a name written on it, and the teacher camel holding a pile of homework while the girl and brown camels clap and sing. No English text.",
+  "chars": [
+   "temee",
+   "ohin",
+   "bor",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zhan.jpg",
+  "aspect": "1:1",
+  "title": "站",
+  "section": "vocabulary",
+  "prompt": "The yellow camel boy standing upright and tall with arms at his sides, next to a chair. Simple clear child-friendly illustration, no English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zhe.jpg",
+  "aspect": "1:1",
+  "title": "着",
+  "section": "vocabulary",
+  "prompt": "The brown camel boy sitting on a chair reading a book, a small glowing arrow loop around him to show an action in progress. Simple clear child-friendly illustration, no English text.",
+  "chars": [
+   "temee",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dai.jpg",
+  "aspect": "1:1",
+  "title": "戴",
+  "section": "vocabulary",
+  "prompt": "The girl camel putting on round glasses and a hat, wearing them proudly. Simple clear child-friendly illustration, no English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yanjing.jpg",
+  "aspect": "1:1",
+  "title": "眼镜",
+  "section": "vocabulary",
+  "prompt": "A pair of round glasses on a table, big and clear, with a small camel nose near them. Simple clear child-friendly illustration, no English text.",
+  "chars": [
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-cuo.jpg",
+  "aspect": "1:1",
+  "title": "错",
+  "section": "vocabulary",
+  "prompt": "A big red cross on a math notebook page and the brown camel boy scratching his head sadly. Simple clear child-friendly illustration, no English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-dajia.jpg",
+  "aspect": "1:1",
+  "title": "大家",
+  "section": "vocabulary",
+  "prompt": "The four camel friends and teacher waving together at the viewer, all smiling. Simple clear child-friendly illustration, no English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-jian.jpg",
+  "aspect": "1:1",
+  "title": "见",
+  "section": "vocabulary",
+  "prompt": "The yellow camel boy pointing and looking at a small puppy with wide eyes, eye sparkles. Simple clear child-friendly illustration, no English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xiangquan.jpg",
+  "aspect": "1:1",
+  "title": "项圈",
+  "section": "vocabulary",
+  "prompt": "A white kitten wearing a yellow collar necklace with a small tag. Simple clear child-friendly illustration, no English text.",
+  "chars": []
+ },
+ {
+  "file": "images/w-lianxi.jpg",
+  "aspect": "1:1",
+  "title": "联系",
+  "section": "vocabulary",
+  "prompt": "The girl camel talking on a mobile phone and waving happily to a friend. Simple clear child-friendly illustration, no English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-haoma.jpg",
+  "aspect": "1:1",
+  "title": "号码",
+  "section": "vocabulary",
+  "prompt": "A big telephone keypad with the camel boy pressing buttons and numbers on the screen. Simple clear child-friendly illustration, no English text.",
+  "chars": [
+   "huu"
+  ]
+ }
+]

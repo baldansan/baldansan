@@ -1,0 +1,506 @@
+[
+ {
+  "type": "choice",
+  "question": "«Зогсох» хятадаар аль нь вэ?",
+  "options": [
+   "站",
+   "错",
+   "坐",
+   "戴"
+  ],
+  "correct_answer": "站",
+  "explanation": "站 (zhàn) = зогсох.",
+  "order_index": 1,
+  "id": "yct-5-l06-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Нүдний шил» хятадаар аль нь вэ?",
+  "options": [
+   "项圈",
+   "号码",
+   "书包",
+   "眼镜"
+  ],
+  "correct_answer": "眼镜",
+  "explanation": "眼镜 (yǎnjìng) = нүдний шил.",
+  "order_index": 2,
+  "id": "yct-5-l06-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Дугаар» хятадаар аль нь вэ?",
+  "options": [
+   "大家",
+   "眼镜",
+   "联系",
+   "号码"
+  ],
+  "correct_answer": "号码",
+  "explanation": "号码 (hàomǎ) = дугаар. 电话号码 = утасны дугаар.",
+  "order_index": 3,
+  "id": "yct-5-l06-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Бүгдээрээ» хятадаар аль нь вэ?",
+  "options": [
+   "同学",
+   "大家",
+   "朋友",
+   "老师"
+  ],
+  "correct_answer": "大家",
+  "explanation": "大家 (dàjiā) = бүгдээрээ. 大家好！ = Бүгдээрээ сайн уу!",
+  "order_index": 4,
+  "id": "yct-5-l06-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Холбоо барих» хятадаар аль нь вэ?",
+  "options": [
+   "联系",
+   "戴",
+   "照相",
+   "找"
+  ],
+  "correct_answer": "联系",
+  "explanation": "联系 (liánxì) = холбоо барих.",
+  "order_index": 5,
+  "id": "yct-5-l06-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хүзүүвч» хятадаар аль нь вэ?",
+  "options": [
+   "书包",
+   "项圈",
+   "本子",
+   "眼镜"
+  ],
+  "correct_answer": "项圈",
+  "explanation": "项圈 (xiàngquān) = хүзүүвч (муурын, нохойн).",
+  "order_index": 6,
+  "id": "yct-5-l06-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«错» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "баяртай",
+   "буруу",
+   "зөв",
+   "удаан"
+  ],
+  "correct_answer": "буруу",
+  "explanation": "错 (cuò) = буруу. 没错 = яг зөв.",
+  "order_index": 7,
+  "id": "yct-5-l06-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«戴» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "зүүх (шил, малгай)",
+   "унших",
+   "сууж байх",
+   "зогсох"
+  ],
+  "correct_answer": "зүүх (шил, малгай)",
+  "explanation": "戴 (dài) = зүүх. 戴眼镜 = шил зүүх.",
+  "order_index": 8,
+  "id": "yct-5-l06-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «yǎnjìng» гэж уншдаг үг:",
+  "options": [
+   "眼镜",
+   "号码",
+   "联系",
+   "项圈"
+  ],
+  "correct_answer": "眼镜",
+  "explanation": "眼镜 = yǎnjìng = нүдний шил.",
+  "order_index": 9,
+  "id": "yct-5-l06-q09",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «zhàn» гэж уншдаг үг:",
+  "options": [
+   "坐",
+   "找",
+   "站",
+   "错"
+  ],
+  "correct_answer": "站",
+  "explanation": "站 = zhàn = зогсох.",
+  "order_index": 10,
+  "id": "yct-5-l06-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «liánxì» гэж уншдаг үг:",
+  "options": [
+   "项圈",
+   "号码",
+   "大家",
+   "联系"
+  ],
+  "correct_answer": "联系",
+  "explanation": "联系 = liánxì = холбоо барих.",
+  "order_index": 11,
+  "id": "yct-5-l06-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «hàomǎ» гэж уншдаг үг:",
+  "options": [
+   "没错",
+   "大家",
+   "眼镜",
+   "号码"
+  ],
+  "correct_answer": "号码",
+  "explanation": "号码 = hàomǎ = дугаар.",
+  "order_index": 12,
+  "id": "yct-5-l06-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Аль нь чи вэ?» хятадаар:",
+  "options": [
+   "没错！",
+   "你找找。",
+   "大家好！",
+   "哪个是你？"
+  ],
+  "correct_answer": "哪个是你？",
+  "explanation": "哪个 = аль нь.",
+  "order_index": 13,
+  "id": "yct-5-l06-q13",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«站着的还是坐着的？» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Зогсож байгаа нь уу, сууж байгаа нь уу?",
+   "Багш хаана байна?",
+   "Чи хаана сууж байна?",
+   "Нүдний шил зүүсэн үү?"
+  ],
+  "correct_answer": "Зогсож байгаа нь уу, сууж байгаа нь уу?",
+  "explanation": "还是 = эсвэл.",
+  "order_index": 14,
+  "id": "yct-5-l06-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Яриан дахь хүү ямар хүнийг тааж олсон бэ?",
+  "options": [
+   "Малгай өмссөн хүн",
+   "Нүдний шил зүүгээд ном барьсан хүн",
+   "Цэнхэр хувцастай хүн",
+   "Бөмбөг барьсан хүн"
+  ],
+  "correct_answer": "Нүдний шил зүүгээд ном барьсан хүн",
+  "explanation": "这个戴着眼镜、拿着书的！",
+  "order_index": 15,
+  "id": "yct-5-l06-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Short speech-д муурын хүзүүвч дээр юу гэж бичсэн бэ?",
+  "options": [
+   "美美",
+   "多多",
+   "小明",
+   "月月"
+  ],
+  "correct_answer": "多多",
+  "explanation": "上面写着“多多” = дээр нь «Дуо-дуо» гэж бичсэн.",
+  "order_index": 16,
+  "id": "yct-5-l06-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Муур ямар өнгөтэй байсан бэ?",
+  "options": [
+   "黄色",
+   "红色",
+   "白色",
+   "黑色"
+  ],
+  "correct_answer": "白色",
+  "explanation": "它是一只白色的小猫。",
+  "order_index": 17,
+  "id": "yct-5-l06-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老师站（ ），我们都坐着。",
+  "options": [
+   "吗",
+   "呢",
+   "了",
+   "着"
+  ],
+  "correct_answer": "着",
+  "explanation": "站着 = зогсож байна.",
+  "order_index": 18,
+  "id": "yct-5-l06-q18",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他（ ）着眼镜。",
+  "options": [
+   "站",
+   "戴",
+   "拿",
+   "穿"
+  ],
+  "correct_answer": "戴",
+  "explanation": "Шилийг 戴 гэж хэлнэ.",
+  "order_index": 19,
+  "id": "yct-5-l06-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她今天（ ）着蓝色的裙子。",
+  "options": [
+   "戴",
+   "站",
+   "写",
+   "穿"
+  ],
+  "correct_answer": "穿",
+  "explanation": "Банзал, хувцсыг 穿 гэж хэлнэ.",
+  "order_index": 20,
+  "id": "yct-5-l06-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "本子上（ ）着名字。",
+  "options": [
+   "写",
+   "拿",
+   "站",
+   "找"
+  ],
+  "correct_answer": "写",
+  "explanation": "写着 = бичсэн байна.",
+  "order_index": 21,
+  "id": "yct-5-l06-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "桌子上（ ）着书包。",
+  "options": [
+   "写",
+   "站",
+   "戴",
+   "放"
+  ],
+  "correct_answer": "放",
+  "explanation": "放着 = тавьсан байна.",
+  "order_index": 22,
+  "id": "yct-5-l06-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "站着的（ ）坐着的？",
+  "options": [
+   "都",
+   "还是",
+   "和",
+   "也"
+  ],
+  "correct_answer": "还是",
+  "explanation": "А 还是 Б？ = А уу, Б уу?",
+  "order_index": 23,
+  "id": "yct-5-l06-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Утасны дугаар 58556012-г хэрхэн уншдаг вэ?",
+  "options": [
+   "wǔ bā wǔ liù liù líng yāo èr",
+   "wǔ bā wǔ wǔ liù líng èr yāo",
+   "wǔ bā wǔ wǔ liù líng yī èr",
+   "wǔ bā wǔ wǔ liù líng yāo èr"
+  ],
+  "correct_answer": "wǔ bā wǔ wǔ liù líng yāo èr",
+  "explanation": "Дугаар уншихдаа 0-ийг líng, 1-ийг yāo гэнэ.",
+  "order_index": 24,
+  "id": "yct-5-l06-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь зурагнаас танийг хайж байна. Хариулахдаа «Нүдний шил зүүгээд, ном барьсан нь» гэвэл:",
+  "options": [
+   "写着眼镜、放着书的。",
+   "站着眼镜、坐着书的。",
+   "戴着眼镜、拿着书的。",
+   "戴眼镜着书的。"
+  ],
+  "correct_answer": "戴着眼镜、拿着书的。",
+  "explanation": "戴着 = зүүсэн, 拿着 = барьсан.",
+  "order_index": 25,
+  "id": "yct-5-l06-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Муур чинь алга болсон. Зарандаа утасны дугаараа бичихдээ:",
+  "options": [
+   "请站着，电话错了",
+   "大家好，我的眼镜坏了",
+   "请和我联系，电话号码：……",
+   "没错，谢谢"
+  ],
+  "correct_answer": "请和我联系，电话号码：……",
+  "explanation": "和我联系 = надтай холбоо бариарай.",
+  "order_index": 26,
+  "id": "yct-5-l06-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你的汉语书在哪儿？» гэж асуулаа. Ширээн дээр байвал:",
+  "options": [
+   "在桌子上联系着。",
+   "在桌子上放着。",
+   "在桌子上站着。",
+   "在桌子上戴着。"
+  ],
+  "correct_answer": "在桌子上放着。",
+  "explanation": "放着 = тавьсан байна.",
+  "order_index": 27,
+  "id": "yct-5-l06-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь чамд «Чи үнэхээр сурах дуртай юм аа!» гэсэн бол яаж хэлэх вэ?",
+  "options": [
+   "你找找。",
+   "真爱学习！",
+   "没错！",
+   "站着的。"
+  ],
+  "correct_answer": "真爱学习！",
+  "explanation": "爱学习 = сурах дуртай.",
+  "order_index": 28,
+  "id": "yct-5-l06-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

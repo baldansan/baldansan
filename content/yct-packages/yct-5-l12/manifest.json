@@ -1,0 +1,235 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l12",
+ "hskLevel": 3,
+ "lessonNumber": 12,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "坐飞机或者坐火车都可以。",
+ "mongolianTitle": "Онгоцоор эсвэл галт тэргээр явахад аль нь ч болно",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第12课 (сурах бичиг + CD аудио 12-01..05 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-12-text-song.mp3",
+  "dialogues": "audio/yct-5-12-02.mp3",
+  "words": "audio/yct-5-12-01.mp3",
+  "speech": "audio/yct-5-12-03.mp3",
+  "story": "audio/yct-5-12-04.mp3",
+  "test": "audio/yct-5-12-05.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l12",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "坐飞机或者坐火车都可以。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "我想去这里，怎么去呢？",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我爸爸在上海工作",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "春节回家",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "春节回家 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-ditie",
+    "file": "images/w-ditie.jpg",
+    "title": "地铁",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-huoche",
+    "file": "images/w-huoche.jpg",
+    "title": "火车",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-shanghai",
+    "file": "images/w-shanghai.jpg",
+    "title": "上海",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-keneng",
+    "file": "images/w-keneng.jpg",
+    "title": "可能",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-danxin",
+    "file": "images/w-danxin.jpg",
+    "title": "担心",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ruguo",
+    "file": "images/w-ruguo.jpg",
+    "title": "如果…那么…",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gongzuo",
+    "file": "images/w-gongzuo.jpg",
+    "title": "工作",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chuchai",
+    "file": "images/w-chuchai.jpg",
+    "title": "出差",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-anquan",
+    "file": "images/w-anquan.jpg",
+    "title": "安全",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-zhunshi",
+    "file": "images/w-zhunshi.jpg",
+    "title": "准时",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-huozhe",
+    "file": "images/w-huozhe.jpg",
+    "title": "或者",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-fangbian",
+    "file": "images/w-fangbian.jpg",
+    "title": "方便",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s1",
+    "file": "images/s1.png",
+    "title": "Let's say 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s2",
+    "file": "images/s2.png",
+    "title": "Let's say 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s3",
+    "file": "images/s3.png",
+    "title": "Let's say 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s4",
+    "file": "images/s4.png",
+    "title": "Let's say 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s5",
+    "file": "images/s5.png",
+    "title": "Let's say 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "s6",
+    "file": "images/s6.png",
+    "title": "Let's say 6",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L12)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

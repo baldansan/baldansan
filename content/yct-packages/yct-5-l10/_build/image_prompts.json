@@ -1,0 +1,181 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "你的汉语会越来越好。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses stands beside a classroom blackboard showing a rising bar chart; three young camel calves (yellow boy in blue vest, girl in yellow dress with pink ribbon, brown boy in green cap) hold notebooks and a gold star, speech bubble with the Chinese text 越来越好 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-kaoshi.jpg",
+  "aspect": "1:1",
+  "title": "考试",
+  "section": "vocabulary",
+  "prompt": "Classroom with exam papers on desks; the yellow calf boy in blue vest sits at a desk writing on a test paper, teacher camel watching. No English text.",
+  "chars": [
+   "huu",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-chengji.jpg",
+  "aspect": "1:1",
+  "title": "成绩",
+  "section": "vocabulary",
+  "prompt": "The girl calf in yellow dress proudly holding up a test paper with a big red star and a high score, happy smile. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-liaotianr.jpg",
+  "aspect": "1:1",
+  "title": "聊天儿",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy and the brown calf boy sitting side by side chatting happily, colorful speech bubbles above them. No English text.",
+  "chars": [
+   "huu",
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-fuxi.jpg",
+  "aspect": "1:1",
+  "title": "复习",
+  "section": "vocabulary",
+  "prompt": "The girl calf in yellow dress at a desk reviewing a thick textbook and notes, a small lamp and a stack of books beside her. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zhunbei.jpg",
+  "aspect": "1:1",
+  "title": "准备",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap packing a school bag with books and pencils on the morning of an exam, a checklist on the wall. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-nuli.jpg",
+  "aspect": "1:1",
+  "title": "努力",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy in blue vest sweating while studying hard at a desk, a headband and a determined face, a tall pile of books. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-yiding.jpg",
+  "aspect": "1:1",
+  "title": "一定",
+  "section": "vocabulary",
+  "prompt": "The girl calf giving a confident thumbs up with a big smile, golden sparkles around her, a trophy in the background. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-zhiyao.jpg",
+  "aspect": "1:1",
+  "title": "只要",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy and teacher camel at a blackboard where a simple chalk diagram shows an arrow from a pencil to a gold star, teacher points to it. No English text.",
+  "chars": [
+   "huu",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/w-jiu.jpg",
+  "aspect": "1:1",
+  "title": "就",
+  "section": "vocabulary",
+  "prompt": "The brown calf boy in green cap putting on running shoes and instantly jumping out the door into a sunny park, motion lines. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-renzhen.jpg",
+  "aspect": "1:1",
+  "title": "认真",
+  "section": "vocabulary",
+  "prompt": "The yellow calf boy writing homework very carefully with a focused face, a magnifying glass on the desk, tidy neat notebook. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-lianxi.jpg",
+  "aspect": "1:1",
+  "title": "练习",
+  "section": "vocabulary",
+  "prompt": "The girl calf in yellow dress practicing dance steps in a bright room with a mirror, music notes in the air. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-yuelaiyue.jpg",
+  "aspect": "1:1",
+  "title": "越来越",
+  "section": "vocabulary",
+  "prompt": "Three plants growing taller in a row, smallest to tallest, the yellow calf boy measuring them with a ruler and smiling. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-xiangxin.jpg",
+  "aspect": "1:1",
+  "title": "相信",
+  "section": "vocabulary",
+  "prompt": "The girl calf standing in front of a mirror with her hand on her heart, her reflection smiling confidently, a small sparkling heart above her. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "你在写作业吗？",
+  "section": "dialogue",
+  "prompt": "The girl calf in yellow dress sits at a desk by a window writing in her notebook; the yellow calf boy in blue vest holds a soccer ball and asks her something with a friendly smile, speech bubble with the Chinese text 你在写作业吗 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "huu"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我每天认真写作业",
+  "section": "speech",
+  "prompt": "The girl calf in yellow dress with pink ribbon studies at her desk, writing carefully in a notebook; a thought bubble shows her chatting on a phone with a Chinese friend and teacher camel smiling, speech bubble with the Chinese text 越来越好 in large clear black font. No English text.",
+  "chars": [
+   "ohin",
+   "temee"
+  ]
+ },
+ {
+  "file": "images/story.jpg",
+  "aspect": "4:3",
+  "title": "杰克学汉语",
+  "section": "story",
+  "prompt": "A foreign boy named Jack (human boy with short brown hair) sits at a desk writing a letter in Chinese to a friendly teacher, a kung fu movie playing on a TV behind him and a small airplane toy on the shelf; the yellow calf boy cheers beside him with a thumbs up. No English text.",
+  "chars": [
+   "huu"
+  ]
+ }
+]

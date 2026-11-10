@@ -1,0 +1,229 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "yct-5",
+ "lessonId": "yct-5-l02",
+ "hskLevel": 3,
+ "lessonNumber": 2,
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "兔子更可爱。",
+ "mongolianTitle": "Туулай бүр ч хөөрхөн",
+ "series": "YCT 标准教程 5",
+ "seriesLabel_mn": "YCT 5 — Хүүхдийн хятад хэл (≈HSK3)",
+ "source": "YCT 标准教程 5 · 第2课 (сурах бичиг + CD аудио 02-01..06 + Test Answers)",
+ "hasAudio": true,
+ "hasImages": true,
+ "audio": {
+  "text": "audio/yct-5-02-text-song.mp3",
+  "dialogues": "audio/yct-5-02-02.mp3",
+  "words": "audio/yct-5-02-01.mp3",
+  "speech": "audio/yct-5-02-03.mp3",
+  "listen": "audio/yct-5-02-04.mp3",
+  "story": "audio/yct-5-02-05.mp3",
+  "test": "audio/yct-5-02-06.mp3",
+  "vocabularyClips": "байхгүй — үг TTS-ээр"
+ },
+ "media": {
+  "lessonId": "yct-5-l02",
+  "images": [
+   {
+    "id": "hero",
+    "file": "images/hero.jpg",
+    "title": "兔子更可爱。",
+    "role": "hero",
+    "section": "teacher-intro"
+   },
+   {
+    "id": "d1",
+    "file": "images/d1.jpg",
+    "title": "我喜欢大象。",
+    "role": "illustration",
+    "section": "dialogue"
+   },
+   {
+    "id": "speech",
+    "file": "images/speech.jpg",
+    "title": "我喜欢蝴蝶",
+    "role": "illustration",
+    "section": "speech"
+   },
+   {
+    "id": "story-art",
+    "file": "images/story.jpg",
+    "title": "叶公好龙",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "story",
+    "file": "images/story.jpg",
+    "title": "叶公好龙 · Mini story",
+    "role": "illustration",
+    "section": "story"
+   },
+   {
+    "id": "w-daxiang",
+    "file": "images/w-daxiang.jpg",
+    "title": "大象",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-tuzi",
+    "file": "images/w-tuzi.jpg",
+    "title": "兔子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-hudie",
+    "file": "images/w-hudie.jpg",
+    "title": "蝴蝶",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-chongzi",
+    "file": "images/w-chongzi.jpg",
+    "title": "虫子",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-weiba",
+    "file": "images/w-weiba.jpg",
+    "title": "尾巴",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-ai",
+    "file": "images/w-ai.jpg",
+    "title": "矮",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-pang",
+    "file": "images/w-pang.jpg",
+    "title": "胖",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-duan",
+    "file": "images/w-duan.jpg",
+    "title": "短",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-geng",
+    "file": "images/w-geng.jpg",
+    "title": "更",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-taoyan",
+    "file": "images/w-taoyan.jpg",
+    "title": "讨厌",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-gaosu",
+    "file": "images/w-gaosu.jpg",
+    "title": "告诉",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "w-jianglai",
+    "file": "images/w-jianglai.jpg",
+    "title": "将来",
+    "role": "illustration",
+    "section": "vocabulary"
+   },
+   {
+    "id": "t1",
+    "file": "images/t1.png",
+    "title": "Test 1",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t2",
+    "file": "images/t2.png",
+    "title": "Test 2",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t3",
+    "file": "images/t3.png",
+    "title": "Test 3",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t4",
+    "file": "images/t4.png",
+    "title": "Test 4",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t5",
+    "file": "images/t5.png",
+    "title": "Test 5",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "t6",
+    "file": "images/t6.png",
+    "title": "Test 6",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tla",
+    "file": "images/tla.png",
+    "title": "Test la",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tlb",
+    "file": "images/tlb.png",
+    "title": "Test lb",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tlc",
+    "file": "images/tlc.png",
+    "title": "Test lc",
+    "role": "illustration",
+    "section": "workbook"
+   },
+   {
+    "id": "tld",
+    "file": "images/tld.png",
+    "title": "Test ld",
+    "role": "illustration",
+    "section": "workbook"
+   }
+  ]
+ },
+ "verification": {
+  "answerStatus": "official_answer_key_verified (Test Answers L2)",
+  "textStatus": "source_verified (сурах бичгийн хуудсыг зургаар уншсан)",
+  "teacherLayer": "агентаар бичигдсэн (хүүхдэд зориулсан); орчуулга чангаар уншиж шалгасан"
+ }
+}

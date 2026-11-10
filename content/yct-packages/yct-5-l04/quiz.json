@@ -1,0 +1,524 @@
+[
+ {
+  "type": "choice",
+  "question": "«Хөрш» хятадаар аль нь вэ?",
+  "options": [
+   "邻居",
+   "同学",
+   "朋友",
+   "老师"
+  ],
+  "correct_answer": "邻居",
+  "explanation": "邻居 (línjū) = хөрш.",
+  "order_index": 1,
+  "id": "yct-5-l04-q01",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Зуршил» хятадаар аль нь вэ?",
+  "options": [
+   "时间",
+   "周末",
+   "公园",
+   "习惯"
+  ],
+  "correct_answer": "习惯",
+  "explanation": "习惯 (xíguàn) = зуршил.",
+  "order_index": 2,
+  "id": "yct-5-l04-q02",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Жаахан хугацаа» хятадаар аль нь вэ?",
+  "options": [
+   "每天",
+   "以前",
+   "周末",
+   "一会儿"
+  ],
+  "correct_answer": "一会儿",
+  "explanation": "一会儿 (yíhuìr) = жаахан хугацаа.",
+  "order_index": 3,
+  "id": "yct-5-l04-q03",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Амралтын өдрүүд» хятадаар аль нь вэ?",
+  "options": [
+   "晚上",
+   "周末",
+   "早上",
+   "以前"
+  ],
+  "correct_answer": "周末",
+  "explanation": "周末 (zhōumò) = амралтын өдрүүд.",
+  "order_index": 4,
+  "id": "yct-5-l04-q04",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Хачин» хятадаар аль нь вэ?",
+  "options": [
+   "奇怪",
+   "漂亮",
+   "好听",
+   "习惯"
+  ],
+  "correct_answer": "奇怪",
+  "explanation": "奇怪 (qíguài) = хачин.",
+  "order_index": 5,
+  "id": "yct-5-l04-q05",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«爬山» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "төгөлдөр хуур тоглох",
+   "уул авирах",
+   "кофе уух",
+   "алхаж зугаалах"
+  ],
+  "correct_answer": "уул авирах",
+  "explanation": "爬山 (pá shān) = уул авирах.",
+  "order_index": 6,
+  "id": "yct-5-l04-q06",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«散步» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "унтах",
+   "алхаж зугаалах",
+   "уул авирах",
+   "гүйх"
+  ],
+  "correct_answer": "алхаж зугаалах",
+  "explanation": "散步 (sànbù) = алхаж зугаалах.",
+  "order_index": 7,
+  "id": "yct-5-l04-q07",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«弹钢琴» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "төгөлдөр хуур тоглох",
+   "ном унших",
+   "зураг зурах",
+   "дуу дуулах"
+  ],
+  "correct_answer": "төгөлдөр хуур тоглох",
+  "explanation": "弹钢琴 (tán gāngqín) = төгөлдөр хуур тоглох.",
+  "order_index": 8,
+  "id": "yct-5-l04-q08",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«带» гэдэг үг ямар утгатай вэ?",
+  "options": [
+   "авч явах, дагуулах",
+   "хүлээх",
+   "алдах",
+   "өгөх"
+  ],
+  "correct_answer": "авч явах, дагуулах",
+  "explanation": "带 (dài) = авч явах, дагуулах. 带我们去爬山.",
+  "order_index": 9,
+  "id": "yct-5-l04-q09",
+  "skillTags": [
+   "vocabulary"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «gōngyuán» гэж уншдаг үг:",
+  "options": [
+   "咖啡",
+   "学校",
+   "公园",
+   "邻居"
+  ],
+  "correct_answer": "公园",
+  "explanation": "公园 = gōngyuán = цэцэрлэгт хүрээлэн.",
+  "order_index": 10,
+  "id": "yct-5-l04-q10",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «línjū» гэж уншдаг үг:",
+  "options": [
+   "奇怪",
+   "习惯",
+   "周末",
+   "邻居"
+  ],
+  "correct_answer": "邻居",
+  "explanation": "邻居 = línjū = хөрш.",
+  "order_index": 11,
+  "id": "yct-5-l04-q11",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «qíguài» гэж уншдаг үг:",
+  "options": [
+   "一会儿",
+   "咖啡",
+   "习惯",
+   "奇怪"
+  ],
+  "correct_answer": "奇怪",
+  "explanation": "奇怪 = qíguài = хачин.",
+  "order_index": 12,
+  "id": "yct-5-l04-q12",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Пиньинь «kāfēi» гэж уншдаг үг:",
+  "options": [
+   "周末",
+   "公园",
+   "散步",
+   "咖啡"
+  ],
+  "correct_answer": "咖啡",
+  "explanation": "咖啡 = kāfēi = кофе.",
+  "order_index": 13,
+  "id": "yct-5-l04-q13",
+  "skillTags": [
+   "pronunciation"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Миний хөршид нэг зуршил бий» хятадаар:",
+  "options": [
+   "我的邻居有个习惯。",
+   "我的邻居喜欢咖啡。",
+   "我的邻居是老师。",
+   "我习惯了。"
+  ],
+  "correct_answer": "我的邻居有个习惯。",
+  "explanation": "邻居 + 有个习惯.",
+  "order_index": 14,
+  "id": "yct-5-l04-q14",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "Яриа 1-д хөрш өглөө бүр юу хийдэг вэ?",
+  "options": [
+   "Алхдаг",
+   "Төгөлдөр хуур тоглодог",
+   "Уул авирдаг",
+   "Кофе уудаг"
+  ],
+  "correct_answer": "Төгөлдөр хуур тоглодог",
+  "explanation": "她每天早上弹一会儿钢琴 = тэр өдөр бүр өглөө жаахан төгөлдөр хуур тоглодог.",
+  "order_index": 15,
+  "id": "yct-5-l04-q15",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Өвөө өдөр бүр оройн хоолын дараа юу хийдэг вэ?",
+  "options": [
+   "Уул авирдаг",
+   "Цэцэрлэгт хүрээлэнд алхдаг",
+   "Төгөлдөр хуур тоглодог",
+   "Кофе уудаг"
+  ],
+  "correct_answer": "Цэцэрлэгт хүрээлэнд алхдаг",
+  "explanation": "爷爷每天吃完晚饭都去公园散步.",
+  "order_index": 16,
+  "id": "yct-5-l04-q16",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Аав амралт болгон юу хийдэг вэ?",
+  "options": [
+   "Цэцэрлэгт хүрээлэнд алхдаг",
+   "Ном уншдаг",
+   "Биднийг уул авирахаар дагуулж явдаг",
+   "Кофе уудаг"
+  ],
+  "correct_answer": "Биднийг уул авирахаар дагуулж явдаг",
+  "explanation": "爸爸每个周末都带我们去爬山.",
+  "order_index": 17,
+  "id": "yct-5-l04-q17",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "Ээжийн зуршил яагаад хачин бэ?",
+  "options": [
+   "Өдөр бүр алхдаг",
+   "Амралтаар уул авирдаг",
+   "Өглөө хөгжим тоглодог",
+   "Унтахынхаа өмнө кофе уудаг"
+  ],
+  "correct_answer": "Унтахынхаа өмнө кофе уудаг",
+  "explanation": "她每天睡觉以前都喝一杯咖啡 — унтахынхаа өмнө кофе уудаг.",
+  "order_index": 18,
+  "id": "yct-5-l04-q18",
+  "skillTags": [
+   "dialogue"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "每个人（ ）有自己的习惯。",
+  "options": [
+   "也",
+   "都",
+   "在",
+   "就"
+  ],
+  "correct_answer": "都",
+  "explanation": "每个人都 = хүн бүр.",
+  "order_index": 19,
+  "id": "yct-5-l04-q19",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸每个周末（ ）带我们去爬山。",
+  "options": [
+   "在",
+   "了",
+   "吗",
+   "都"
+  ],
+  "correct_answer": "都",
+  "explanation": "每个周末都 = амралт болгон.",
+  "order_index": 20,
+  "id": "yct-5-l04-q20",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她每天早上弹（ ）钢琴。",
+  "options": [
+   "一会儿",
+   "以前",
+   "周末",
+   "奇怪"
+  ],
+  "correct_answer": "一会儿",
+  "explanation": "弹一会儿钢琴 = жаахан төгөлдөр хуур тоглох.",
+  "order_index": 21,
+  "id": "yct-5-l04-q21",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "睡觉（ ），她喝一杯咖啡。",
+  "options": [
+   "一会儿",
+   "邻居",
+   "周末",
+   "以前"
+  ],
+  "correct_answer": "以前",
+  "explanation": "睡觉以前 = унтахынхаа өмнө.",
+  "order_index": 22,
+  "id": "yct-5-l04-q22",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "choice",
+  "question": "«Өдөр болгон» хятадаар:",
+  "options": [
+   "以前",
+   "每天都",
+   "每个人",
+   "一会儿"
+  ],
+  "correct_answer": "每天都",
+  "explanation": "每天都 = өдөр болгон.",
+  "order_index": 23,
+  "id": "yct-5-l04-q23",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "choice",
+  "question": "«Босохоосоо өмнө» хятадаар:",
+  "options": [
+   "起床一会儿",
+   "起床周末",
+   "以前起床",
+   "起床以前"
+  ],
+  "correct_answer": "起床以前",
+  "explanation": "Үйл үг + 以前.",
+  "order_index": 24,
+  "id": "yct-5-l04-q24",
+  "skillTags": [
+   "structure"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Ээж «Одоо унтах цаг боллоо» гэхэд чи жаахан л тоглохыг хүсвэл:",
+  "options": [
+   "妈妈，这很奇怪。",
+   "妈妈，我习惯了。",
+   "妈妈，我还想玩一会儿。",
+   "妈妈，我去爬山。"
+  ],
+  "correct_answer": "妈妈，我还想玩一会儿。",
+  "explanation": "玩一会儿 = жаахан тоглох.",
+  "order_index": 25,
+  "id": "yct-5-l04-q25",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Найз чинь «你有什么习惯？» гэж асуулаа. Чи өдөр бүр өглөө гүйдэг бол:",
+  "options": [
+   "我有一只猫。",
+   "我是学生。",
+   "我每天早上都跑步。",
+   "这个周末去公园。"
+  ],
+  "correct_answer": "我每天早上都跑步。",
+  "explanation": "每天早上都 + үйл.",
+  "order_index": 26,
+  "id": "yct-5-l04-q26",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "Чи ээж рүүгээ «Аав маань амралт болгон биднийг уул авирахаар дагуулж явдаг» гэж хэлэх бол:",
+  "options": [
+   "我爸爸有个邻居。",
+   "我爸爸每个周末都带我们去爬山。",
+   "我爸爸每天都喝咖啡。",
+   "我爸爸在公园散步。"
+  ],
+  "correct_answer": "我爸爸每个周末都带我们去爬山。",
+  "explanation": "每个周末都带我们去爬山.",
+  "order_index": 27,
+  "id": "yct-5-l04-q27",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "usage",
+  "question": "Лу Синь ном уншихаасаа өмнө юу хийдэг байсан бэ?",
+  "options": [
+   "Алхдаг",
+   "Гараа цэвэрхэн угаадаг",
+   "Кофе уудаг",
+   "Төгөлдөр хуур тоглодог"
+  ],
+  "correct_answer": "Гараа цэвэрхэн угаадаг",
+  "explanation": "每次看书以前，他都把手洗干净.",
+  "order_index": 28,
+  "id": "yct-5-l04-q28",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "usage",
+  "question": "«心到、眼到、口到» гэж юу гэсэн үг вэ?",
+  "options": [
+   "Хурдан алхана",
+   "Ном уншихдаа ам ангайна",
+   "Нүдээ аниад ярина",
+   "Ном уншихдаа бодож, харж, чангаар уншина"
+  ],
+  "correct_answer": "Ном уншихдаа бодож, харж, чангаар уншина",
+  "explanation": "想一想、看一看、读一读.",
+  "order_index": 29,
+  "id": "yct-5-l04-q29",
+  "skillTags": [
+   "usage"
+  ],
+  "difficulty": "hard"
+ }
+]

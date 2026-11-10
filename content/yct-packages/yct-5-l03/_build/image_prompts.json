@@ -1,0 +1,155 @@
+[
+ {
+  "file": "images/hero.jpg",
+  "aspect": "4:3",
+  "title": "电梯坏了。",
+  "section": "teacher-intro",
+  "role": "hero",
+  "prompt": "Teacher camel with glasses, a yellow camel calf boy and a camel calf girl standing in front of a very tall apartment building; an elevator door with a yellow sign 电梯维修 beside them, the calves looking up in surprise at the many floors; speech bubble with the Chinese text 电梯坏了。 in large clear black font. No English text.",
+  "chars": [
+   "temee",
+   "huu",
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-lou.jpg",
+  "aspect": "1:1",
+  "title": "楼",
+  "section": "vocabulary",
+  "prompt": "A tall modern apartment building with many windows, a yellow camel calf boy pointing up at it from the street, sunny sky. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-dianti.jpg",
+  "aspect": "1:1",
+  "title": "电梯",
+  "section": "vocabulary",
+  "prompt": "A shiny silver elevator with open doors, a camel calf girl in a yellow dress with a pink ribbon stepping in and pressing the button, up and down arrow buttons visible. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-kongtiao.jpg",
+  "aspect": "1:1",
+  "title": "空调",
+  "section": "vocabulary",
+  "prompt": "A white wall-mounted air conditioner blowing cool air with little snowflakes and wind lines, a brown camel calf with a green hat cooling off happily under it on a hot day. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-chuanghu.jpg",
+  "aspect": "1:1",
+  "title": "窗户",
+  "section": "vocabulary",
+  "prompt": "A big bright window with open curtains, a yellow camel calf boy looking out at blue sky and clouds, smiling. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-shafa.jpg",
+  "aspect": "1:1",
+  "title": "沙发",
+  "section": "vocabulary",
+  "prompt": "A big comfy yellow sofa, a camel calf girl in a yellow dress sitting happily on it hugging a cushion. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-xishoujian.jpg",
+  "aspect": "1:1",
+  "title": "洗手间",
+  "section": "vocabulary",
+  "prompt": "A simple restroom door with a toilet sign next to a sink with a mirror, a brown camel calf with a green hat washing his hands and smiling, soap bubbles. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-deng.jpg",
+  "aspect": "1:1",
+  "title": "等",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy standing at a gate and waiting patiently, looking at a big wall clock with one hand on his hip, a small cloud of dots above his head. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-zhu.jpg",
+  "aspect": "1:1",
+  "title": "住",
+  "section": "vocabulary",
+  "prompt": "A cozy small house with warm lit windows, a camel calf girl in a yellow dress waving from the doorway, a camel mother behind her. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-ceng.jpg",
+  "aspect": "1:1",
+  "title": "层",
+  "section": "vocabulary",
+  "prompt": "A cross-section of a tall building showing 5 floors stacked, a tiny camel calf waving from the third floor, floor numbers 1 to 5 in large clear black font. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/w-haishi.jpg",
+  "aspect": "1:1",
+  "title": "还是",
+  "section": "vocabulary",
+  "prompt": "A camel calf girl in a yellow dress holding out two choices, a bowl of rice in the left hand and a bowl of noodles in the right hand, thinking pose with a question mark above her head. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/w-a.jpg",
+  "aspect": "1:1",
+  "title": "啊",
+  "section": "vocabulary",
+  "prompt": "A brown camel calf with a green hat with wide-open surprised eyes and mouth, hands on cheeks, a big speech bubble with the Chinese text 啊？ in large clear black font. No English text.",
+  "chars": [
+   "bor"
+  ]
+ },
+ {
+  "file": "images/w-fang.jpg",
+  "aspect": "1:1",
+  "title": "放",
+  "section": "vocabulary",
+  "prompt": "A yellow camel calf boy gently putting a book down on a wooden table, the book just above the table surface. No English text.",
+  "chars": [
+   "huu"
+  ]
+ },
+ {
+  "file": "images/d1.jpg",
+  "aspect": "4:3",
+  "title": "小红，我到你们家楼下了。",
+  "section": "dialogue",
+  "prompt": "A camel calf girl in a yellow dress with a pink ribbon stands at the foot of a tall apartment building talking on a phone, next to a broken elevator with a yellow sign 电梯维修; a thought cloud shows another smiling camel calf girl with a phone; speech bubble with the Chinese text 小红，我到你们家楼下了。 in large clear black font. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ },
+ {
+  "file": "images/speech.jpg",
+  "aspect": "4:3",
+  "title": "我的房间",
+  "section": "speech",
+  "prompt": "A cozy bedroom: a camel calf girl in a yellow dress with a pink ribbon sits on a big yellow sofa beside a large window reading a book; a bed with a green blanket, a wooden desk, an air conditioner on the wall, and a tabby cat sleeping near the bathroom door. No English text.",
+  "chars": [
+   "ohin"
+  ]
+ }
+]

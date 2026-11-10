@@ -1,0 +1,243 @@
+[
+ {
+  "point": "大象的鼻子长长的 · AA的",
+  "gloss_mn": "«Урт урт», «богинохон» — амьтдыг дүрслэх",
+  "structure": "…的 + 部位 + AA的 → 鼻子长长的 · 尾巴短短的",
+  "teacher_mn": "Амьтны хамар, сүүл, чихийг дүрслэхдээ «урт», «богино» гэх мэт үгээ хоёр удаа хэлнэ. «长» гэхийн оронд «长长的» гэвэл «урт урт» гэсэн хөөрхөн дүр төрх гарна. «短短的» — богинохон. «大大的» — том том. Төгсгөлд нь «的» гэж нэм.",
+  "teacher_notes": "Номын Key sentence ба Let's listen: 大象的鼻子长长的。 腿短短的、耳朵长长的、眼睛大大的、鼻子小小的、胖胖的。",
+  "examples": [
+   {
+    "chinese": "大象的鼻子长长的。",
+    "pinyin": "Dàxiàng de bízi chángcháng de.",
+    "mongolian": "Заны хамар урт урт."
+   },
+   {
+    "chinese": "兔子的尾巴短短的。",
+    "pinyin": "Tùzi de wěiba duǎnduǎn de.",
+    "mongolian": "Туулайн сүүл богинохон."
+   },
+   {
+    "chinese": "点点的耳朵长长的，眼睛大大的。",
+    "pinyin": "Diǎndiǎn de ěrduo chángcháng de, yǎnjing dàdà de.",
+    "mongolian": "Дяньдяний чих урт урт, нүд нь том том."
+   },
+   {
+    "chinese": "点点的鼻子小小的。",
+    "pinyin": "Diǎndiǎn de bízi xiǎoxiǎo de.",
+    "mongolian": "Дяньдяний хамар жижигхэн."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "大象的鼻子长的。",
+    "right": "大象的鼻子长长的。",
+    "why": "Урт, богино гэх мэт үгээ хоёр удаа хэл: 长长."
+   }
+  ],
+  "check": {
+   "question": "«Туулайн сүүл богинохон» хятадаар:",
+   "options": [
+    "大象的鼻子短短的。",
+    "兔子的尾巴长长的。",
+    "兔子的尾巴短短的。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "大象的鼻子长 ________ 的。",
+    "options": [
+     "更",
+     "短",
+     "长"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 长长的 = урт урт.",
+    "explanation_wrong_mn": "长长的 — «长»-аа хоёр удаа хэл."
+   },
+   {
+    "type": "choice",
+    "question": "«Том том нүд» хятадаар:",
+    "options": [
+     "大的眼睛",
+     "大大的眼睛",
+     "太大眼睛"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 大大的 = том том.",
+    "explanation_wrong_mn": "AA的: 大大的."
+   },
+   {
+    "type": "judge",
+    "question": "«短短的» гэдэг нь «богинохон» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 短短的 = богинохон.",
+    "explanation_wrong_mn": "短 = богино, 短短的 = богинохон."
+   }
+  ]
+ },
+ {
+  "point": "兔子更可爱 · 更",
+  "gloss_mn": "«Бүр ч, илүү» — харьцуулах",
+  "structure": "…更 + үг (хөөрхөн, дуртай…) → 更可爱 · 更喜欢",
+  "teacher_mn": "«更» гэвэл «бүр ч, илүү» гэсэн үг. Заан хөөрхөн, гэхдээ туулай бүр ч хөөрхөн гэх үед «兔子更可爱» гэнэ. «更» нь «хөөрхөн», «дуртай» гэх мэт үгийн өмнө ордог. «很更» гэж хамт хэлдэггүй.",
+  "teacher_notes": "Номын Key sentence: 兔子更可爱。 Test: 我喜欢大象，更喜欢熊猫。 那件衣服很漂亮，但是这件更漂亮。",
+  "examples": [
+   {
+    "chinese": "兔子更可爱。",
+    "pinyin": "Tùzi gèng kě'ài.",
+    "mongolian": "Туулай бүр ч хөөрхөн."
+   },
+   {
+    "chinese": "我喜欢大象，更喜欢熊猫。",
+    "pinyin": "Wǒ xǐhuan dàxiàng, gèng xǐhuan xióngmāo.",
+    "mongolian": "Би заанд дуртай, пандад бүр ч дуртай."
+   },
+   {
+    "chinese": "那件衣服很漂亮，但是这件更漂亮。",
+    "pinyin": "Nà jiàn yīfu hěn piàoliang, dànshì zhè jiàn gèng piàoliang.",
+    "mongolian": "Тэр хувцас хөөрхөн, гэхдээ энэ нь бүр ч хөөрхөн."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "兔子很更可爱。",
+    "right": "兔子更可爱。",
+    "why": "«很» ба «更»-г хамт хэлдэггүй."
+   }
+  ],
+  "check": {
+   "question": "«Туулай бүр ч хөөрхөн» хятадаар:",
+   "options": [
+    "兔子更可爱。",
+    "兔子太可爱。",
+    "兔子不可爱。"
+   ],
+   "answer": "0"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "这件衣服 ________ 漂亮。(бүр ч)",
+    "options": [
+     "不",
+     "更",
+     "都"
+    ],
+    "answer": "1",
+    "explanation_correct_mn": "Зөв! 更漂亮 = бүр ч хөөрхөн.",
+    "explanation_wrong_mn": "更 = бүр ч."
+   },
+   {
+    "type": "choice",
+    "question": "«Би пандад бүр ч их дуртай» хятадаар:",
+    "options": [
+     "我告诉熊猫",
+     "我讨厌熊猫",
+     "我更喜欢熊猫"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 更喜欢 = бүр ч их дуртай.",
+    "explanation_wrong_mn": "更喜欢 = илүү дуртай."
+   },
+   {
+    "type": "judge",
+    "question": "«兔子更可爱» гэдэг нь «туулай бүр ч хөөрхөн» гэсэн утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "true",
+    "explanation_correct_mn": "Зөв! 更 = бүр ч.",
+    "explanation_wrong_mn": "更可爱 = бүр ч хөөрхөн."
+   }
+  ]
+ },
+ {
+  "point": "和……一样 · 太……了 · 讨厌",
+  "gloss_mn": "«Адилхан», «дэндүү», «дургүй»",
+  "structure": "A 和 B 一样 · 太 + дүрслэх үг + 了 · 讨厌 + юу",
+  "teacher_mn": "Хоёр зүйл адилхан гэвэл «A 和 B 一样»: «蝴蝶小时候和虫子一样». Дэндүү их гэвэл «太……了»: «兔子太矮了！» Дургүй бол «讨厌»: «我讨厌虫子». «喜欢»-ийн эсрэг үг шүү!",
+  "teacher_notes": "Short speech: 我喜欢蝴蝶，讨厌虫子。 蝴蝶小时候和虫子一样。 你小时候和现在一样吗？ Let's read: 兔子太矮了！ 大象太胖了！",
+  "examples": [
+   {
+    "chinese": "蝴蝶小时候和虫子一样。",
+    "pinyin": "Húdié xiǎoshíhou hé chóngzi yíyàng.",
+    "mongolian": "Эрвээхэй багадаа хорхойтой адилхан."
+   },
+   {
+    "chinese": "你小时候和现在一样吗？",
+    "pinyin": "Nǐ xiǎoshíhou hé xiànzài yíyàng ma?",
+    "mongolian": "Чи багадаа одоогийнхоо адилхан байсан уу?"
+   },
+   {
+    "chinese": "兔子太矮了！",
+    "pinyin": "Tùzi tài ǎi le!",
+    "mongolian": "Туулай дэндүү намхан юм!"
+   },
+   {
+    "chinese": "我讨厌虫子。",
+    "pinyin": "Wǒ tǎoyàn chóngzi.",
+    "mongolian": "Би хорхойд дургүй."
+   }
+  ],
+  "common_mistakes": [
+   {
+    "wrong": "我喜欢虫子讨厌。",
+    "right": "我讨厌虫子。",
+    "why": "«讨厌» дараа нь юунд дургүйгээ шууд хэлнэ: 讨厌虫子."
+   }
+  ],
+  "check": {
+   "question": "«Эрвээхэй багадаа хорхойтой адилхан» хятадаар:",
+   "options": [
+    "蝴蝶小时候不是虫子。",
+    "蝴蝶和大象一样。",
+    "蝴蝶小时候和虫子一样。"
+   ],
+   "answer": "2"
+  },
+  "exercises": [
+   {
+    "type": "choice",
+    "question": "将来和现在 ________ 吗？(адилхан)",
+    "options": [
+     "更",
+     "太",
+     "一样"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 和……一样 = …тэй адилхан.",
+    "explanation_wrong_mn": "和……一样 = адилхан."
+   },
+   {
+    "type": "choice",
+    "question": "«Заан дэндүү тарган юм!» хятадаар:",
+    "options": [
+     "大象更胖。",
+     "大象和胖一样。",
+     "大象太胖了！"
+    ],
+    "answer": "2",
+    "explanation_correct_mn": "Зөв! 太……了 = дэндүү.",
+    "explanation_wrong_mn": "太胖了 = дэндүү тарган."
+   },
+   {
+    "type": "judge",
+    "question": "«讨厌» нь «喜欢»-тэй адил утгатай.",
+    "options": [
+     "Зөв",
+     "Буруу"
+    ],
+    "answer": "false",
+    "explanation_correct_mn": "Зөв, 讨厌 нь дургүй гэсэн эсрэг утгатай!",
+    "explanation_wrong_mn": "讨厌 = дургүй, 喜欢 = дуртай."
+   }
+  ]
+ }
+]
