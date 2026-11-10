@@ -19,7 +19,7 @@ export function WordSrsRatingButtons({ disabled, onRate }: Props) {
         onClick={() => onRate("forgot")}
         className="bs-srs-rating-btn bs-srs-rating-forgot"
       >
-        {tr(locale, "Мартсан")}
+        {tr(locale, "Мэдэхгүй")}
       </button>
       <button
         type="button"
@@ -27,7 +27,7 @@ export function WordSrsRatingButtons({ disabled, onRate }: Props) {
         onClick={() => onRate("hard")}
         className="bs-srs-rating-btn bs-srs-rating-hard"
       >
-        {tr(locale, "Эргэлзсэн")}
+        {tr(locale, "Эргэлзэж байна")}
       </button>
       <button
         type="button"
@@ -35,7 +35,7 @@ export function WordSrsRatingButtons({ disabled, onRate }: Props) {
         onClick={() => onRate("known")}
         className="bs-srs-rating-btn bs-srs-rating-known"
       >
-        {tr(locale, "Мэдсэн")}
+        {tr(locale, "Мэднэ")}
       </button>
     </div>
   );

@@ -504,33 +504,9 @@ export function WordSrsStudySession({
 
 
 
-    if (rating === "forgot" && phase === "study") {
-
-      if (index >= queue.length - 1) {
-
-        setQueue((prev) => [...prev, reinsert]);
-
-        setIndex((i) => i + 1);
-
-        return;
-
-      }
-
-      setQueue((prev) => {
-
-        const next = [...prev];
-
-        next.splice(index + 1, 0, reinsert);
-
-        return next;
-
-      });
-
-      setIndex((i) => i + 1);
-
-      return;
-
-    }
+    // Эхний шат = зөвхөн ангилах (мэднэ / эргэлзэж байна / мэдэхгүй).
+    // Мэдэхгүй үгийг шууд дахин үзүүлэхгүй — ангилж дуусаад сурах аргаа сонгоно.
+    void reinsert;
 
 
 

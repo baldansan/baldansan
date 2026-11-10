@@ -50,8 +50,8 @@ export const PRACTICE_CARDS: PracticeCardDef[] = [
   {
     mode: "srs-retry",
     emoji: "🔁",
-    title: "Дахин давтах",
-    description: "SRS карт",
+    title: "Флашкарт",
+    description: "Карт эргүүлж цээжлэх",
   },
 ];
 

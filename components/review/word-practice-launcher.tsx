@@ -25,9 +25,9 @@ type Props = {
 
 const GROUP_ORDER: { rating: WordSrsRating; label: string; chipClass: string }[] =
   [
-    { rating: "forgot", label: "Мартсан", chipClass: "bs-wpl-dot--forgot" },
+    { rating: "forgot", label: "Мэдэхгүй", chipClass: "bs-wpl-dot--forgot" },
     { rating: "hard", label: "Эргэлзсэн", chipClass: "bs-wpl-dot--hard" },
-    { rating: "known", label: "Мэдсэн", chipClass: "bs-wpl-dot--known" },
+    { rating: "known", label: "Мэднэ", chipClass: "bs-wpl-dot--known" },
   ];
 
 function toggleId(set: Set<number>, id: number, on: boolean): Set<number> {
@@ -87,18 +87,65 @@ export function WordPracticeLauncher({
 
       <div className="bs-wpl-chips" aria-label={tr(locale, "Дүгнэлт")}>
         <span className="bs-wpl-chip bs-wpl-chip--known">
-          {tr(locale, "Мэдсэн")} {counts.known}
+          {tr(locale, "Мэднэ")} {counts.known}
         </span>
         <span className="bs-wpl-chip bs-wpl-chip--hard">
           {tr(locale, "Эргэлзсэн")} {counts.hard}
         </span>
         <span className="bs-wpl-chip bs-wpl-chip--forgot">
-          {tr(locale, "Мартсан")} {counts.forgot}
+          {tr(locale, "Мэдэхгүй")} {counts.forgot}
         </span>
       </div>
 
+      {/* 1-р алхам: сурах аргаа сонгох — мэдэхгүй + эргэлзсэн үг автоматаар сонгогдсон */}
       <section className="bs-wpl-section">
-        <div className="bs-wpl-section-head">
+        <h3 className="bs-wpl-section-title">
+          {selectedCount > 0
+            ? `${selectedCount} ${tr(locale, "үгийг одоо сурцгаая — аргаа сонго")}`
+            : tr(locale, "Сурах аргаа сонго")}
+        </h3>
+        <p className="bs-wpl-section-hint">
+          {selectedCount > 0
+            ? tr(locale, "Мэдэхгүй болон эргэлзсэн үгс автоматаар орсон. Дуусмагц сурсан үгэнд тоологдоно.")
+            : counts.forgot + counts.hard === 0 && words.length > 0
+              ? tr(locale, "🎉 Бүгдийг мэдэж байна! Доороос үг сонгож дахин бататгаж болно.")
+              : tr(locale, "Доороос дор хаяж нэг үг сонгоно уу")}
+        </p>
+        <div className="bs-wpl-practice-grid">
+          {PRACTICE_CARDS.map((card) => {
+            const enabled = enabledModes.includes(card.mode);
+            const canStart = enabled && selectedCount > 0;
+            const recommended = card.mode === "srs-retry";
+            return (
+              <button
+                key={card.mode}
+                type="button"
+                className={`bs-wpl-practice-card${enabled ? "" : " bs-wpl-practice-card--soon"}${recommended && canStart ? " ring-2 ring-emerald-400" : ""}`}
+                disabled={!canStart}
+                onClick={() => onStartPractice(card.mode)}
+              >
+                <span className="bs-wpl-practice-emoji">{card.emoji}</span>
+                <span className="bs-wpl-practice-title">{tr(locale, card.title)}</span>
+                <span className="bs-wpl-practice-desc">{tr(locale, card.description)}</span>
+                <span className="bs-wpl-practice-count">
+                  {enabled
+                    ? recommended && canStart
+                      ? `★ ${tr(locale, "Санал болгох")} · ${selectedCount} ${tr(locale, "үг")}`
+                      : `${selectedCount} ${tr(locale, "үгээр")}`
+                    : tr(locale, "Удахгүй")}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      </section>
+
+
+      <details className="bs-wpl-section">
+        <summary className="cursor-pointer list-none text-sm font-semibold text-[var(--app-muted)] [&::-webkit-details-marker]:hidden">
+          ▸ {tr(locale, "Үгсээ өөрчлөх")} ({selectedCount}/{words.length})
+        </summary>
+        <div className="bs-wpl-section-head mt-3">
           <h3 className="bs-wpl-section-title">{tr(locale, "Үг сонгох")}</h3>
           <div className="bs-wpl-bulk">
             <button type="button" className="bs-wpl-bulk-btn" onClick={selectAll}>
@@ -230,40 +277,9 @@ export function WordPracticeLauncher({
             </div>
           ) : null}
         </div>
-      </section>
+      </details>
 
-      <section className="bs-wpl-section">
-        <h3 className="bs-wpl-section-title">{tr(locale, "Дасгал сонгох")}</h3>
-        <p className="bs-wpl-section-hint">
-          {selectedCount > 0
-            ? `${selectedCount} ${tr(locale, "үг сонгогдсон")}`
-            : tr(locale, "Эхлээд дор хаяж нэг үг сонгоно уу")}
-        </p>
-        <div className="bs-wpl-practice-grid">
-          {PRACTICE_CARDS.map((card) => {
-            const enabled = enabledModes.includes(card.mode);
-            const canStart = enabled && selectedCount > 0;
-            return (
-              <button
-                key={card.mode}
-                type="button"
-                className={`bs-wpl-practice-card${enabled ? "" : " bs-wpl-practice-card--soon"}`}
-                disabled={!canStart}
-                onClick={() => onStartPractice(card.mode)}
-              >
-                <span className="bs-wpl-practice-emoji">{card.emoji}</span>
-                <span className="bs-wpl-practice-title">{tr(locale, card.title)}</span>
-                <span className="bs-wpl-practice-desc">{tr(locale, card.description)}</span>
-                <span className="bs-wpl-practice-count">
-                  {enabled
-                    ? `${selectedCount} ${tr(locale, "үгээр")}`
-                    : tr(locale, "Удахгүй")}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </section>
+      
 
       {onNextBatch ? (
         <button type="button" className="bs-wpl-next-batch" onClick={onNextBatch}>
