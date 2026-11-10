@@ -44,12 +44,7 @@ export function MockTestImportClient() {
   const [patchText, setPatchText] = useState("");
   const push = (m: string) => setLog((l) => [...l, m]);
 
-  async function onFile(file: File | null) {
-    setParsed(null);
-    setLog([]);
-    if (!file) return;
-    setBusy(true);
-    try {
+  async function parseZip(file: File): Promise<Parsed> {
       const zip = await JSZip.loadAsync(file);
       const jsonEntry = Object.values(zip.files).find(
         (e) => !e.dir && /(^|\/)[A-Z]\d{5}[A-Z]?\.json$/i.test(e.name)
@@ -57,10 +52,7 @@ export function MockTestImportClient() {
       if (!jsonEntry) throw new Error("Zip дотор <TID>.json (жишээ H41329.json) олдсонгүй.");
       const raw = JSON.parse(await jsonEntry.async("string"));
       const { pkg, report } = validateMockPackage(raw);
-      if (!pkg) {
-        setLog(["❌ Багцын алдаа:", ...report.errors]);
-        return;
-      }
+      if (!pkg) throw new Error(`Багцын алдаа: ${report.errors.join("; ")}`);
       const root = jsonEntry.name.includes("/") ? jsonEntry.name.replace(/[^/]*$/, "") : "";
       const assetEntries: Parsed["assetEntries"] = [];
       const missing: string[] = [];
@@ -73,8 +65,18 @@ export function MockTestImportClient() {
         const size = (entry as unknown as { _data?: { uncompressedSize?: number } })._data?.uncompressedSize ?? 0;
         assetEntries.push({ rel, entry, size });
       }
-      setParsed({ fileName: file.name, pkg, report, zip, assetEntries, missing });
-      push(`Багц уншлаа: ${pkg.test_id} · ${pkg.questions.length} асуулт · asset ${assetEntries.length}${missing.length ? ` · ДУТУУ ${missing.length}` : ""}`);
+      return { fileName: file.name, pkg, report, zip, assetEntries, missing };
+  }
+
+  async function onFile(file: File | null) {
+    setParsed(null);
+    setLog([]);
+    if (!file) return;
+    setBusy(true);
+    try {
+      const p = await parseZip(file);
+      setParsed(p);
+      push(`Багц уншлаа: ${p.pkg.test_id} · ${p.pkg.questions.length} асуулт · asset ${p.assetEntries.length}${p.missing.length ? ` · ДУТУУ ${p.missing.length}` : ""}`);
     } catch (e) {
       push(`❌ ${e instanceof Error ? e.message : "Zip уншихад алдаа."}`);
     } finally {
@@ -82,18 +84,45 @@ export function MockTestImportClient() {
     }
   }
 
+  /** Олон zip сонгосон бол дараалан уншиж шууд импортолно. */
+  async function onFiles(files: FileList | null) {
+    if (!files || files.length === 0) return;
+    if (files.length === 1) return onFile(files[0]);
+    setParsed(null);
+    setLog([`📦 ${files.length} багц дараалан орно…`]);
+    setBusy(true);
+    let ok = 0;
+    const failed: string[] = [];
+    for (const file of Array.from(files).sort((a, b) => a.name.localeCompare(b.name))) {
+      try {
+        const p = await parseZip(file);
+        await importParsed(p, true);
+        ok += 1;
+      } catch (e) {
+        failed.push(file.name);
+        push(`❌ ${file.name}: ${e instanceof Error ? e.message : "алдаа"}`);
+      }
+    }
+    push(`🏁 Дууслаа: ${ok}/${files.length} амжилттай${failed.length ? ` · амжилтгүй: ${failed.join(", ")}` : ""}`);
+    setBusy(false);
+  }
+
   async function runImport() {
     if (!parsed || busy) return;
-    if (parsed.missing.length) {
-      push(`❌ Zip-д байхгүй asset: ${parsed.missing.join(", ")}`);
-      return;
-    }
-    if (!supabase) {
-      push("❌ Supabase client тохируулагдаагүй.");
-      return;
-    }
     setBusy(true);
     try {
+      await importParsed(parsed, false);
+    } catch (e) {
+      push(`❌ ${e instanceof Error ? e.message : "Импорт амжилтгүй."}`);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function importParsed(parsed: Parsed, quiet: boolean) {
+    if (parsed.missing.length) throw new Error(`Zip-д байхгүй asset: ${parsed.missing.join(", ")}`);
+    if (!supabase) throw new Error("Supabase client тохируулагдаагүй.");
+    {
       const urlMap: Record<string, string> = {};
       let done = 0;
       for (const a of parsed.assetEntries) {
@@ -118,9 +147,9 @@ export function MockTestImportClient() {
         const { data } = supabase.storage.from(BUCKET).getPublicUrl(path);
         urlMap[a.rel] = data.publicUrl;
         done += 1;
-        if (done % 10 === 0 || blob.size > 1024 * 1024) push(`↑ ${done}/${parsed.assetEntries.length} ${a.rel} (${fmtMb(blob.size)})`);
+        if (!quiet && (done % 10 === 0 || blob.size > 1024 * 1024)) push(`↑ ${done}/${parsed.assetEntries.length} ${a.rel} (${fmtMb(blob.size)})`);
       }
-      push(`Storage: ${done} файл орлоо.`);
+      if (!quiet) push(`Storage: ${done} файл орлоо.`);
 
       const resolved = resolvePackageAssets(parsed.pkg, urlMap);
       const r = await fetch("/api/admin/mock-tests/import", {
@@ -136,12 +165,8 @@ export function MockTestImportClient() {
         questions?: number;
       };
       if (!r.ok || !body.ok) throw new Error((body.errors ?? [`HTTP ${r.status}`]).join("; "));
-      push(`✅ ${parsed.pkg.test_id}: ${body.questions} асуулт DB-д орлоо. Шалгах: /review/practice/${parsed.pkg.test_id}`);
-      if (body.warnings?.length) push(`⚠️ ${body.warnings.length} анхааруулга (дээр жагсаасан).`);
-    } catch (e) {
-      push(`❌ ${e instanceof Error ? e.message : "Импорт амжилтгүй."}`);
-    } finally {
-      setBusy(false);
+      push(`✅ ${parsed.pkg.test_id}: ${body.questions} асуулт · ${done} файл DB-д орлоо.`);
+      if (!quiet && body.warnings?.length) push(`⚠️ ${body.warnings.length} анхааруулга (дээр жагсаасан).`);
     }
   }
 
@@ -179,7 +204,8 @@ export function MockTestImportClient() {
           type="file"
           accept=".zip"
           disabled={busy}
-          onChange={(e) => void onFile(e.target.files?.[0] ?? null)}
+          multiple
+          onChange={(e) => void onFiles(e.target.files)}
           className="text-sm"
         />
         {parsed && st ? (
