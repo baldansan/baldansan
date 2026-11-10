@@ -199,6 +199,12 @@ export function LoginForm() {
               {tr(locale, submitting ? "Нэвтэрч байна..." : "Нэвтрэх")}
             </button>
 
+            <p className="text-center text-sm">
+              <Link href="/forgot-password" className="font-medium text-emerald-700">
+                {tr(locale, "Нууц үгээ мартсан уу?")}
+              </Link>
+            </p>
+
             <p className="text-center text-sm text-[var(--app-muted)]">
               {tr(locale, "Бүртгэл байхгүй юу?")}{" "}
               <Link

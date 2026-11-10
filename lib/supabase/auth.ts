@@ -242,6 +242,32 @@ export async function signUpWithEmail(
   };
 }
 
+/** Нууц үг сэргээх имэйл илгээнэ — линк нь /reset-password руу буцна. */
+export async function sendPasswordResetEmail(
+  email: string
+): Promise<AuthResult<null>> {
+  if (!supabase) {
+    return notConfigured();
+  }
+  const origin =
+    typeof window !== "undefined" ? window.location.origin : "";
+  const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), {
+    redirectTo: `${origin}/reset-password`,
+  });
+  return { data: null, error: toErrorMessage(error) };
+}
+
+/** Сэргээх линкээр орж ирсэн (recovery session) хэрэглэгчийн нууц үгийг солино. */
+export async function updatePassword(
+  password: string
+): Promise<AuthResult<AuthUser>> {
+  if (!supabase) {
+    return notConfigured();
+  }
+  const { data, error } = await supabase.auth.updateUser({ password });
+  return { data: mapUser(data.user), error: toErrorMessage(error) };
+}
+
 export async function signOut(): Promise<AuthResult<null>> {
   if (!supabase) {
     return notConfigured();
