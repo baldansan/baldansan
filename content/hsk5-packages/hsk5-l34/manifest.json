@@ -1,0 +1,29 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk5",
+ "lessonId": "hsk5-l34",
+ "hskLevel": 5,
+ "lessonNumber": 34,
+ "lessonProfile": "hsk5-article-topic-vocab-nuance-writing",
+ "lessonType": "hsk5-article-topic-vocab-nuance-writing",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "鸟儿的护肤术",
+ "mongolianTitle": "Шувууд өөрийгөө хэрхэн арчилдаг вэ",
+ "series": "HSK标准教程5下",
+ "seriesLabel_mn": "HSK5B",
+ "source": "HSK标准教程5下 · 第34课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариулт)",
+ "hasAudio": false,
+ "hasImages": false,
+ "media": {
+  "lessonId": "hsk5-l34",
+  "images": []
+ },
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (hsk5-l34.json, verified_pages)",
+  "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
+ }
+}

@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "这两种颜色很像，请你仔细（　）一下。",
+  "options": [
+   "区分",
+   "保养",
+   "迎接",
+   "接触",
+   "概括"
+  ],
+  "correct_answer": "区分",
+  "explanation": "区分 = ялгах: 仔细区分 (нягт ялгах). Бусад: 迎接 — угтах; 保养 — арчлах; 概括 — товч дүгнэх; 接触 — хүрэлцэх, харьцах.",
+  "order_index": 1,
+  "id": "hsk5-l34-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这张小桌子晚上还要（　）床头柜。",
+  "options": [
+   "概括",
+   "啄",
+   "区分",
+   "充当",
+   "抓"
+  ],
+  "correct_answer": "充当",
+  "explanation": "充当 = ямар нэг үүрэг гүйцэтгэх: 充当床头柜 (орны тэргүүний шүүгээний үүрэг гүйцэтгэх). Бусад: 抓 — барих; 啄 — тоншох; 区分 — ялгах; 概括 — товч дүгнэх.",
+  "order_index": 2,
+  "id": "hsk5-l34-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "粮食来之不易，我们要（　）每一粒粮食。",
+  "options": [
+   "充当",
+   "爱惜",
+   "抓",
+   "迎接",
+   "概括"
+  ],
+  "correct_answer": "爱惜",
+  "explanation": "爱惜 = нандигах, үрэлгэн бус хайрлах: 爱惜粮食 (будааг харамлан хайрлах). Бусад: 迎接 — угтах; 概括 — товч дүгнэх; 充当 — үүрэг гүйцэтгэх; 抓 — барих.",
+  "order_index": 3,
+  "id": "hsk5-l34-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "新买的车要定期（　），才能用得更久。",
+  "options": [
+   "区分",
+   "概括",
+   "迎接",
+   "接触",
+   "保养"
+  ],
+  "correct_answer": "保养",
+  "explanation": "保养 = арчилж хамгаалах: 保养汽车 (машиндаа засвар үйлчилгээ хийх). Бусад: 接触 — хүрэлцэх, харьцах; 概括 — товч дүгнэх; 区分 — ялгах; 迎接 — угтах.",
+  "order_index": 4,
+  "id": "hsk5-l34-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这块石头被河水冲得非常（　），摸上去很舒服。",
+  "options": [
+   "秘密",
+   "唯一",
+   "干燥",
+   "光滑",
+   "痛快"
+  ],
+  "correct_answer": "光滑",
+  "explanation": "光滑 = гөлгөр: 光滑的石头 (гөлгөр чулуу). Бусад: 干燥 — хуурай; 痛快 — цэнгэлтэй, дураараа; 秘密 — нууц; 唯一 — цор ганц.",
+  "order_index": 5,
+  "id": "hsk5-l34-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "冬天的空气很（　），要多喝水。",
+  "options": [
+   "秘密",
+   "干燥",
+   "光滑",
+   "痛快",
+   "唯一"
+  ],
+  "correct_answer": "干燥",
+  "explanation": "干燥 = хуурай: 干燥的空气 (хуурай агаар) — 词语搭配-д орсон. Бусад: 光滑 — гөлгөр; 痛快 — цэнгэлтэй, дураараа; 秘密 — нууц; 唯一 — цор ганц.",
+  "order_index": 6,
+  "id": "hsk5-l34-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这是我们俩之间的（　），请你不要告诉别人。",
+  "options": [
+   "特征",
+   "角色",
+   "种类",
+   "洗礼",
+   "秘密"
+  ],
+  "correct_answer": "秘密",
+  "explanation": "秘密 = нууц: 我们俩之间的秘密 (бидний хоёрын хоорондын нууц). Бусад: 特征 — онцлог шинж; 种类 — төрөл; 角色 — дүр, үүрэг; 洗礼 — угаалга.",
+  "order_index": 7,
+  "id": "hsk5-l34-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请用一句话（　）这篇文章的主要内容。",
+  "options": [
+   "迎接",
+   "区分",
+   "概括",
+   "接触",
+   "保养"
+  ],
+  "correct_answer": "概括",
+  "explanation": "概括 = товчхон дүгнэх: 概括主要内容 (гол агуулгыг товч дүгнэх). Бусад: 保养 — арчлах; 接触 — хүрэлцэх, харьцах; 区分 — ялгах; 迎接 — угтах.",
+  "order_index": 8,
+  "id": "hsk5-l34-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "同学们站在门口，热情地（　）新来的老师。",
+  "options": [
+   "啄",
+   "迎接",
+   "接触",
+   "抓",
+   "充当"
+  ],
+  "correct_answer": "迎接",
+  "explanation": "迎接 = угтах: 热情地迎接 (халуунаар угтах) — 词语搭配-д орсон. Бусад: 充当 — үүрэг гүйцэтгэх; 抓 — барих; 啄 — тоншох; 接触 — хүрэлцэх, харьцах.",
+  "order_index": 9,
+  "id": "hsk5-l34-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天的比赛我们赢了，大家玩儿得真（　）！",
+  "options": [
+   "干燥",
+   "种类",
+   "唯一",
+   "随身",
+   "痛快"
+  ],
+  "correct_answer": "痛快",
+  "explanation": "痛快 = сэтгэл ханасан, цэнгэлтэй: 玩儿得真痛快. Бусад: 唯一 — цор ганц; 随身 — биедээ авч явах; 种类 — төрөл; 干燥 — хуурай.",
+  "order_index": 10,
+  "id": "hsk5-l34-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l34-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他会唱歌，会跳舞，还会画画儿，（　），样样都行。",
+  "options": [
+   "另外",
+   "比如",
+   "总之",
+   "其实",
+   "因此"
+  ],
+  "correct_answer": "总之",
+  "explanation": "总之 = товчхондоо: жагсаасан зүйлсийг дүгнэнэ.",
+  "order_index": 11,
+  "id": "hsk5-l34-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "听到有人叫他，他回（　）头看了一眼。",
+  "options": [
+   "过",
+   "起",
+   "开",
+   "下",
+   "出"
+  ],
+  "correct_answer": "过",
+  "explanation": "回过头 = толгойгоо эргүүлэх. «动词＋过» чиглэл өөрчлөхийг заана.",
+  "order_index": 12,
+  "id": "hsk5-l34-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "孩子看见妈妈，高兴地张（　）双臂跑了过去。",
+  "options": [
+   "出",
+   "到",
+   "过",
+   "起",
+   "开"
+  ],
+  "correct_answer": "开",
+  "explanation": "张开双臂 = хоёр гараа дэлгэх. «动词＋开» дэлгэх, тэлэхийг заана.",
+  "order_index": 13,
+  "id": "hsk5-l34-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他的病情经常出现（　），一直没有完全好。",
+  "options": [
+   "重新",
+   "回复",
+   "反复",
+   "复习",
+   "重复"
+  ],
+  "correct_answer": "反复",
+  "explanation": "反复 = (муу байдал) дахин сэдрэх: 病情反复. 重复 нь ижил зүйл давхцахад хэрэглэгдэнэ.",
+  "order_index": 14,
+  "id": "hsk5-l34-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这两道题的内容完全一样，出题人不小心把题目（　）了。",
+  "options": [
+   "重复",
+   "复习",
+   "反复",
+   "继续",
+   "重新"
+  ],
+  "correct_answer": "重复",
+  "explanation": "重复 = ижил зүйл давхцах: 题目重复了. 反复 нь «дахин дахин» гэсэн дайвар үг.",
+  "order_index": 15,
+  "id": "hsk5-l34-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子的用法是正确的？",
+  "options": [
+   "他转过身，一句话也不说。",
+   "他过转身，一句话也不说。",
+   "他转身过了，一句话也不说。",
+   "他转身过，一句话也不说。"
+  ],
+  "correct_answer": "他转过身，一句话也不说。",
+  "explanation": "«转过身» — 过 нь үйл үг 转-ийн шууд ард, тусагдахуун 身-ийн өмнө орно. Бусад хувилбарт 过-ийн байрлал буруу.",
+  "order_index": 16,
+  "id": "hsk5-l34-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "鸟儿最重要的特征是什么？",
+  "options": [
+   "有羽毛",
+   "吃昆虫",
+   "有翅膀",
+   "会飞行"
+  ],
+  "correct_answer": "有羽毛",
+  "explanation": "5-р өгүүлбэр: 区分鸟儿和其他动物的唯一特征就是羽毛，而不是会不会飞. Нисэх, далавчтай байх, шавж идэх нь гол шинж биш.",
+  "order_index": 17,
+  "id": "hsk5-l34-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪一项不是羽毛的作用？",
+  "options": [
+   "有助于飞行",
+   "保暖",
+   "保护皮肤",
+   "帮助鸟儿消化食物"
+  ],
+  "correct_answer": "帮助鸟儿消化食物",
+  "explanation": "6-р өгүүлбэр: дулаацуулах, арьс хамгаалах, хамгаалалтын өнгө болох, нисэхэд туслах, хүрэлцэх мэдрэмж. Хоол боловсруулахад туслах гэсэн зүйл байхгүй.",
+  "order_index": 18,
+  "id": "hsk5-l34-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "鸟儿整理羽毛的时候，常常怎么做？",
+  "options": [
+   "一直在天空中飞",
+   "用肥皂洗羽毛",
+   "背过头去，反复地啄羽毛",
+   "把羽毛一根一根拔下来"
+  ],
+  "correct_answer": "背过头去，反复地啄羽毛",
+  "explanation": "9-р өгүүлбэр: 背过头去，反复地啄着羽毛 — толгойгоо эргүүлж өдөө дахин дахин тоншино. Саван хэрэглэхгүй (12-р өгүүлбэр).",
+  "order_index": 19,
+  "id": "hsk5-l34-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "鸟儿理毛的时候，还会抓出什么？",
+  "options": [
+   "昆虫",
+   "寄生虫",
+   "沙子",
+   "肥皂"
+  ],
+  "correct_answer": "寄生虫",
+  "explanation": "10-р өгүүлбэр: 还会抓出一点儿寄生虫 — өдөө янзлах зуураа шимэгч хорхой барьж гаргадаг.",
+  "order_index": 20,
+  "id": "hsk5-l34-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老鹰是怎样洗澡的？",
+  "options": [
+   "在沙子里洗",
+   "在雨中张开双翅",
+   "在路旁的水坑里洗",
+   "在雪里打滚"
+  ],
+  "correct_answer": "在雨中张开双翅",
+  "explanation": "13-р өгүүлбэр: 老鹰……会在雨中张开双翅痛快地迎接洗礼. Цасаар угаах нь хүйтэн бүсийн шувууд, шалбаагт нь 知更鸟 дуртай.",
+  "order_index": 21,
+  "id": "hsk5-l34-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "寒带的鸟为什么“以雪代水”？",
+  "options": [
+   "因为江河池塘不好找",
+   "因为雪比水干净",
+   "因为它们喜欢雪",
+   "因为它们怕水"
+  ],
+  "correct_answer": "因为江河池塘不好找",
+  "explanation": "13-р өгүүлбэр: 因为江河池塘不好找，只好以雪代水 — гол горхи, цөөрөм олдохгүй тул цасаар усыг орлуулна.",
+  "order_index": 22,
+  "id": "hsk5-l34-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "有些鸟儿喜欢沙浴，主要和什么有关？",
+  "options": [
+   "它们怕冷",
+   "它们没有羽毛",
+   "它们想抓昆虫",
+   "它们的生活环境"
+  ],
+  "correct_answer": "它们的生活环境",
+  "explanation": "15-р өгүүлбэр: 在很大程度上和它们的生活环境有关 — цөл зэрэг хуурай орчинд амьдардагтай холбоотой.",
+  "order_index": 23,
+  "id": "hsk5-l34-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "为什么我们很少看到睡眠中的鸟儿？",
+  "options": [
+   "因为它们睡在水里",
+   "因为它们不睡觉",
+   "因为它们通常在秘密的地方休息",
+   "因为它们只在白天睡觉"
+  ],
+  "correct_answer": "因为它们通常在秘密的地方休息",
+  "explanation": "16-р өгүүлбэр: 它们通常会寻找一处秘密的地方休息 — ихэвчлэн нууц газар олж амардаг.",
+  "order_index": 24,
+  "id": "hsk5-l34-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n我家的小猫特别爱干净。每天吃完饭，它都会反复地舔自己的毛，就像随身带了一把梳子一样。妈妈说，这样做既能让毛更光滑，又能赶走身上的小虫子。\n问：小猫为什么常常舔自己的毛？",
+  "options": [
+   "因为它饿了",
+   "因为它想睡觉",
+   "让毛更光滑，也能赶走小虫子",
+   "因为它没有水喝"
+  ],
+  "correct_answer": "让毛更光滑，也能赶走小虫子",
+  "explanation": "既能让毛更光滑，又能赶走身上的小虫子 — Үсийг гөлгөр болгож, биеийн жижиг хорхойг зайлуулдаг.",
+  "order_index": 25,
+  "id": "hsk5-l34-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n北京的冬天很干燥，皮肤容易变得粗糙。小李以前不爱惜自己的皮肤，后来每天洗完脸都涂一点儿护肤品，现在皮肤光滑多了。\n问：小李的皮肤为什么变好了？",
+  "options": [
+   "他搬到了南方",
+   "他每天洗完脸都涂护肤品",
+   "他不再洗脸了",
+   "他喝了很多水"
+  ],
+  "correct_answer": "他每天洗完脸都涂护肤品",
+  "explanation": "每天洗完脸都涂一点儿护肤品 — өдөр бүр нүүрээ угаасны дараа тос түрхдэг болсон тул арьс гөлгөр болсон.",
+  "order_index": 26,
+  "id": "hsk5-l34-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n我弟弟喜欢画画儿，喜欢踢球，还喜欢养小动物，总之，他对什么都很感兴趣。\n问：说话人想说明什么？",
+  "options": [
+   "弟弟对什么都很感兴趣",
+   "弟弟不喜欢小动物",
+   "弟弟不喜欢踢球",
+   "弟弟只喜欢画画儿"
+  ],
+  "correct_answer": "弟弟对什么都很感兴趣",
+  "explanation": "总之 нь өмнөх бүх зүйлийг дүгнэнэ: зураг зурах, хөл бөмбөг, амьтан тэжээх → юунд ч сонирхолтой.",
+  "order_index": 27,
+  "id": "hsk5-l34-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n下周是妈妈的生日，我们准备给她一个惊喜。爸爸负责买蛋糕，姐姐负责布置房间，我负责把这件事当成秘密，不让妈妈知道。\n问：“我”要做什么？",
+  "options": [
+   "给妈妈做饭",
+   "布置房间",
+   "买蛋糕",
+   "不让妈妈知道生日的惊喜"
+  ],
+  "correct_answer": "不让妈妈知道生日的惊喜",
+  "explanation": "Аав бялуу авна, эгч өрөө чимнэ; «би» нууц байлгаж, ээжид мэдүүлэхгүй.",
+  "order_index": 28,
+  "id": "hsk5-l34-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 区分鸟儿和其他动物的 / 唯一特征 / 就是 / 羽毛",
+  "options": [
+   "羽毛区分鸟儿和其他动物的就是唯一特征。",
+   "区分鸟儿和其他动物的唯一特征就是羽毛。",
+   "唯一特征区分鸟儿和其他动物的就是羽毛。"
+  ],
+  "correct_answer": "区分鸟儿和其他动物的唯一特征就是羽毛。",
+  "explanation": "Бичвэрийн өгүүлбэр: «区分鸟儿和其他动物的» нь «唯一特征»-ийг тодорхойлно, дараа нь 就是 + 羽毛.",
+  "order_index": 29,
+  "id": "hsk5-l34-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 总之 / 在鸟儿的生活中 / 羽毛 / 充当着 / 重要的角色",
+  "options": [
+   "总之充当着重要的角色羽毛在鸟儿的生活中。",
+   "羽毛在鸟儿的生活中总之充当着重要的角色。",
+   "总之，在鸟儿的生活中，羽毛充当着重要的角色。"
+  ],
+  "correct_answer": "总之，在鸟儿的生活中，羽毛充当着重要的角色。",
+  "explanation": "总之 өгүүлбэрийн эхэнд дүгнэлт оруулна; дараа нь нөхцөл (在鸟儿的生活中), өгүүлэгдэхүүн (羽毛), 充当着 + 重要的角色.",
+  "order_index": 30,
+  "id": "hsk5-l34-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 听到妈妈叫他 / 小明 / 回过头 / 看了一眼",
+  "options": [
+   "听到妈妈叫他，小明回过头看了一眼。",
+   "看了一眼听到妈妈叫他，小明回过头。",
+   "回过头听到妈妈叫他，小明看了一眼。"
+  ],
+  "correct_answer": "听到妈妈叫他，小明回过头看了一眼。",
+  "explanation": "Цаг хугацааны нөхцөл (听到妈妈叫他) → өгүүлэгдэхүүн (小明) → 回过头 (толгойгоо эргүүлэх) → 看了一眼.",
+  "order_index": 31,
+  "id": "hsk5-l34-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 老鹰 / 在雨中 / 张开 / 双翅",
+  "options": [
+   "老鹰张开在雨中双翅。",
+   "老鹰在雨中张开双翅。",
+   "双翅在雨中老鹰张开。"
+  ],
+  "correct_answer": "老鹰在雨中张开双翅。",
+  "explanation": "Өгүүлэгдэхүүн (老鹰) + нөхцөл (在雨中) + 张开 + тусагдахуун (双翅). 开 нь 张-ийн шууд ард, тусагдахуун 开-ийн ард.",
+  "order_index": 32,
+  "id": "hsk5-l34-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 她 / 反复 / 检查了 / 三遍 / 作业",
+  "options": [
+   "作业她三遍反复检查了。",
+   "她检查了反复三遍作业。",
+   "她反复检查了三遍作业。"
+  ],
+  "correct_answer": "她反复检查了三遍作业。",
+  "explanation": "反复 дайвар үг тул үйл үгийн өмнө (反复检查). Дараа нь тоо хэмжээ (三遍) + тусагдахуун (作业).",
+  "order_index": 33,
+  "id": "hsk5-l34-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 小王 / 随身 / 带着 / 一把梳子",
+  "options": [
+   "小王随身带着一把梳子。",
+   "小王带着随身一把梳子。",
+   "随身小王一把梳子带着。"
+  ],
+  "correct_answer": "小王随身带着一把梳子。",
+  "explanation": "随身 нь үйл үгийн өмнөх нөхцөл: 随身带着. Тусагдахуун (一把梳子) төгсгөлд.",
+  "order_index": 34,
+  "id": "hsk5-l34-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
