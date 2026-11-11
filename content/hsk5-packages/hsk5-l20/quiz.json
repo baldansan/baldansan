@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "我想（　）有挑战性的工作，因为那样可以更好地成长。",
+  "options": [
+   "办理",
+   "收藏",
+   "从事",
+   "印刷",
+   "登记"
+  ],
+  "correct_answer": "从事",
+  "explanation": "从事 = эрхлэх: 从事 + 工作/业务/职业 гэсэн холбоо. 办理 — хийж гүйцэтгэх, шийдвэрлэх; 收藏 — цуглуулах; 印刷 — хэвлэх; 登记 — бүртгэх.",
+  "order_index": 1,
+  "id": "hsk5-l20-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请96号顾客到2号窗口（　）业务。",
+  "options": [
+   "办理",
+   "粗糙",
+   "整齐",
+   "收藏",
+   "涨"
+  ],
+  "correct_answer": "办理",
+  "explanation": "办理 = хийж гүйцэтгэх, шийдвэрлэх: 办理 + 业务/手续/信用卡 гэсэн холбоо. 粗糙 — барзгар; 整齐 — эмх цэгцтэй; 收藏 — цуглуулах; 涨 — өсөх.",
+  "order_index": 2,
+  "id": "hsk5-l20-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这房子装修得太（　）了！你看，地板都没铺平。",
+  "options": [
+   "单调",
+   "整齐",
+   "无数",
+   "木头",
+   "粗糙"
+  ],
+  "correct_answer": "粗糙",
+  "explanation": "粗糙 = барзгар: шалаа тэгшилж чадаагүй нь ажил бүдүүлэг гэсэн үг. 单调 — нэгэн хэвийн; 整齐 — эмх цэгцтэй; 无数 — тоо томшгүй олон; 木头 — мод.",
+  "order_index": 3,
+  "id": "hsk5-l20-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "窗外响起了一阵（　）的歌声。",
+  "options": [
+   "粗糙",
+   "整齐",
+   "疑问",
+   "年纪",
+   "押金"
+  ],
+  "correct_answer": "整齐",
+  "explanation": "整齐 = эмх цэгцтэй: 整齐的声音/歌声 — олон хүн нэг дор жигд дуулах. 粗糙 — барзгар; 疑问 — эргэлзээ; 年纪 — нас; 押金 — барьцааны мөнгө.",
+  "order_index": 4,
+  "id": "hsk5-l20-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他觉得在中国的生活很（　），我却觉得很丰富。",
+  "options": [
+   "整齐",
+   "粗糙",
+   "手续",
+   "单调",
+   "假如"
+  ],
+  "correct_answer": "单调",
+  "explanation": "单调 = нэгэн хэвийн: «丰富» (баялаг)-ын эсрэг утга — «нэгэн хэвийн» амьдрал. 整齐 — эмх цэгцтэй; 粗糙 — барзгар; 手续 — журам, бүрдүүлэх дараалал; 假如 — хэрэв.",
+  "order_index": 5,
+  "id": "hsk5-l20-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "最近几年，物价（　）得很厉害。",
+  "options": [
+   "涨",
+   "登记",
+   "搭",
+   "毫无",
+   "凭"
+  ],
+  "correct_answer": "涨",
+  "explanation": "涨 = өсөх: 物价涨 — үнэ өсөх. 登记 — бүртгэх; 搭 — өлгөх, дээр нь тавих; 毫无 — огт …гүй; 凭 — үндэслэх, түшиглэх.",
+  "order_index": 6,
+  "id": "hsk5-l20-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）你每天都能做好一件事，那么你每天都能得到一份快乐。",
+  "options": [
+   "毫无",
+   "凭",
+   "假如",
+   "从事",
+   "无数"
+  ],
+  "correct_answer": "假如",
+  "explanation": "假如 = хэрэв: 假如……，那么…… гэсэн нөхцөлт өгүүлбэр. 毫无 — огт …гүй; 凭 — үндэслэх, түшиглэх; 从事 — эрхлэх; 无数 — тоо томшгүй олон.",
+  "order_index": 7,
+  "id": "hsk5-l20-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "鸡蛋的这面煎得差不多了，可以（　）过去煎另一面了。",
+  "options": [
+   "支",
+   "搭",
+   "涨",
+   "凭",
+   "翻"
+  ],
+  "correct_answer": "翻",
+  "explanation": "翻 = эргүүлэх: 翻过去 — нөгөө тал руу нь эргүүлэх. 支 — түших; ширхэг; 搭 — өлгөх, дээр нь тавих; 涨 — өсөх; 凭 — үндэслэх, түшиглэх.",
+  "order_index": 8,
+  "id": "hsk5-l20-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "来联系业务的人需要先在门口（　）姓名和单位。",
+  "options": [
+   "印刷",
+   "登记",
+   "涨",
+   "棚子",
+   "砖头"
+  ],
+  "correct_answer": "登记",
+  "explanation": "登记 = бүртгэх: 登记 + 姓名/单位 — нэр, байгууллагыг бүртгэх. 印刷 — хэвлэх; 涨 — өсөх; 棚子 — саравч; 砖头 — тоосго.",
+  "order_index": 9,
+  "id": "hsk5-l20-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "除了一年的租金，你还需要付一笔（　）。",
+  "options": [
+   "手续",
+   "年代",
+   "题材",
+   "押金",
+   "疑问"
+  ],
+  "correct_answer": "押金",
+  "explanation": "押金 = барьцааны мөнгө: 一笔押金 — нэг удаа төлөх барьцаа мөнгө. 手续 — журам, бүрдүүлэх дараалал; 年代 — арван жилийн үе; 题材 — сэдэв; 疑问 — эргэлзээ.",
+  "order_index": 10,
+  "id": "hsk5-l20-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l20-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这么贵的手机，我们学生可买（　）。",
+  "options": [
+   "起不",
+   "不起",
+   "得不",
+   "没起",
+   "了起"
+  ],
+  "correct_answer": "不起",
+  "explanation": "买不起 = мөнгө хүрэхгүй. 动词＋不＋起: 不 нь үйл үг ба 起-ийн дунд орно. 起不, 得不, 没起, 了起 гэсэн хэлбэр байхгүй.",
+  "order_index": 11,
+  "id": "hsk5-l20-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他送了我一（　）新钢笔。",
+  "options": [
+   "册",
+   "张",
+   "匹",
+   "支",
+   "件"
+  ],
+  "correct_answer": "支",
+  "explanation": "钢笔-ийг 支 гэж тоолно. 册 — ном, 张 — цаас/ширээ, 匹 — морь, 件 — хувцас/зүйл.",
+  "order_index": 12,
+  "id": "hsk5-l20-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "房子的门不稳，我们先拿根木头把它（　）住。",
+  "options": [
+   "支",
+   "凭",
+   "印刷",
+   "涨",
+   "登记"
+  ],
+  "correct_answer": "支",
+  "explanation": "支住 = түшиж барих (үйл үгийн 支). 凭 — үндэслэх; 印刷 — хэвлэх; 涨 — өсөх; 登记 — бүртгэх.",
+  "order_index": 13,
+  "id": "hsk5-l20-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "进站时，请旅客（　）车票入内。",
+  "options": [
+   "从事",
+   "办理",
+   "凭",
+   "收藏",
+   "登记"
+  ],
+  "correct_answer": "凭",
+  "explanation": "凭票进站 = тасалбараа үзүүлж өртөөнд орох. 凭 + нэр үг + үйл үг. 从事 — эрхлэх; 办理 — шийдвэрлэх; 收藏 — цуглуулах; 登记 — бүртгэх.",
+  "order_index": 14,
+  "id": "hsk5-l20-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他打破了男子一百米的世界（　）。",
+  "options": [
+   "记录",
+   "出版",
+   "手续",
+   "押金",
+   "纪录"
+  ],
+  "correct_answer": "纪录",
+  "explanation": "世界纪录 = дэлхийн дээд амжилт. 纪录 нь амжилт; 记录 нь тэмдэглэх, тэмдэглэл. 出版 — хэвлэн гаргах; 手续 — журам; 押金 — барьцаа мөнгө.",
+  "order_index": 15,
+  "id": "hsk5-l20-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子是对的？",
+  "options": [
+   "这件衣服太贵了，我买起不。",
+   "他用手支头着，想了很久。",
+   "他是穷学生，这么贵的房子他住不起。",
+   "你不能一次印象凭就下结论。"
+  ],
+  "correct_answer": "他是穷学生，这么贵的房子他住不起。",
+  "explanation": "Зөв нь «住不起» (不 нь 起-ийн өмнө). «买起不» буруу дараалалтай; «支头着» — 着 нь 支-ийн ард (支着头); «一次印象凭» — 凭 нь объектынхоо өмнө (凭一次印象).",
+  "order_index": 16,
+  "id": "hsk5-l20-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小人书是什么？",
+  "options": [
+   "一种以书的形式出版的连环画",
+   "一种电视里的动画片",
+   "一种介绍网络的杂志",
+   "一种专门写给大人的小说"
+  ],
+  "correct_answer": "一种以书的形式出版的连环画",
+  "explanation": "1-р өгүүлбэр: 小人书，是一种以书的形式出版的连环画 — ном хэлбэрээр хэвлэсэн зурагт түүх.",
+  "order_index": 17,
+  "id": "hsk5-l20-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "根据课文，小人书在哪个年代是儿童最主要的娱乐之一？",
+  "options": [
+   "二十世纪二三十年代",
+   "二十世纪九十年代",
+   "二十世纪五六十年代",
+   "二十一世纪初"
+  ],
+  "correct_answer": "二十世纪五六十年代",
+  "explanation": "2-р өгүүлбэр: 在二十世纪五六十年代……读小人书是儿童最主要的娱乐之一 — 20-р зууны 50-60-аад он.",
+  "order_index": 18,
+  "id": "hsk5-l20-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小人书摊是做什么的？",
+  "options": [
+   "出版小人书",
+   "出租小人书",
+   "印刷小人书",
+   "收藏小人书"
+  ],
+  "correct_answer": "出租小人书",
+  "explanation": "4-р өгүүлбэр: 从事租书业务的小人书摊 — ном түрээслэх ажил эрхэлдэг лангуу.",
+  "order_index": 19,
+  "id": "hsk5-l20-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "想看书又买不起书的人为什么喜欢小人书摊？",
+  "options": [
+   "摊里的书都是免费的",
+   "摊主会把书送给孩子",
+   "摊里的书比外面的更长",
+   "只用很少的钱就能看一本"
+  ],
+  "correct_answer": "只用很少的钱就能看一本",
+  "explanation": "4-р өгүүлбэр: 只用很少的钱就能看一本 — маш бага мөнгөөр нэг ном үзэж болно.",
+  "order_index": 20,
+  "id": "hsk5-l20-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“我”家附近的小人书摊是什么样的？",
+  "options": [
+   "靠墙的一个小棚子，用砖头支着木头板子",
+   "街口的一座三层小楼",
+   "公园里一个有空调的大帐篷",
+   "学校里一间明亮的图书室"
+  ],
+  "correct_answer": "靠墙的一个小棚子，用砖头支着木头板子",
+  "explanation": "5-р өгүүлбэр: 靠墙的一个小棚子，里面用几块砖头支着粗糙的木头板子 — хананд налсан жижиг саравч, тоосгон дээр тавьсан модон банз.",
+  "order_index": 21,
+  "id": "hsk5-l20-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "摊主是个什么样的人？",
+  "options": [
+   "高大年轻的大学生",
+   "爱说话、喜欢吵架的中年人",
+   "上了年纪、身材瘦小的老人",
+   "穿着西装的商人"
+  ],
+  "correct_answer": "上了年纪、身材瘦小的老人",
+  "explanation": "8-р өгүүлбэр: 上了年纪、身材瘦小的老人，总是穿着一件灰色长衫 — настай, жижиг биетэй өвгөн.",
+  "order_index": 22,
+  "id": "hsk5-l20-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "在摊里看书和借回家看，收费有什么不同？",
+  "options": [
+   "摊里看每册2分钱，借回家每本1分钱",
+   "两种方式都是每册1分钱",
+   "借回家看要先交很多押金",
+   "摊里看每册1分钱，借回家每本每天2分钱"
+  ],
+  "correct_answer": "摊里看每册1分钱，借回家每本每天2分钱",
+  "explanation": "10-р өгүүлбэр: 在摊里看，每册1分钱；借走回家看，每本每天2分钱. 11-р өгүүлбэрт барьцаа мөнгө байгаагүй (没有什么押金).",
+  "order_index": 23,
+  "id": "hsk5-l20-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "现在的小人书怎么样了？",
+  "options": [
+   "仍然是儿童最主要的娱乐",
+   "有的成了收藏品，甚至进了博物馆",
+   "在每个书店里都能买到",
+   "已经完全找不到了"
+  ],
+  "correct_answer": "有的成了收藏品，甚至进了博物馆",
+  "explanation": "13-р өгүүлбэр: 只能在旧书摊上找到……成了收藏品，甚至进了博物馆 — одоо хуучин номын лангуунаас л олдох бөгөөд зарим нь цуглуулгын эд, бүр музейд хүртэл орсон.",
+  "order_index": 24,
+  "id": "hsk5-l20-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小王是留学生，想租一套便宜的房子。房东说，租金每月两千，另外还要付一笔押金，搬走的时候再还给他。小王觉得太贵了，他现在付不起这么多钱，所以决定先住学校的宿舍。\n问：小王为什么没有租这套房子？",
+  "options": [
+   "房子太旧了",
+   "他付不起这么多钱",
+   "房东不愿意租给留学生",
+   "他不想办理手续"
+  ],
+  "correct_answer": "他付不起这么多钱",
+  "explanation": "Эшлэлд: 他现在付不起这么多钱 — түрээс ба барьцаа мөнгийг төлж чадахгүй тул оюутны дотуур байранд амьдрахаар шийдсэн. Бусад хариулт эшлэлд байхгүй.",
+  "order_index": 25,
+  "id": "hsk5-l20-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n老张退休以后爱上了收藏旧邮票。几年前他花十块钱买的一枚邮票，现在价格已经涨到了两千多块。不过他说，他收藏邮票不是为了赚钱，而是因为喜欢。\n问：关于老张，下面哪句话是对的？",
+  "options": [
+   "他靠卖邮票赚了很多钱",
+   "他的邮票价格下跌了",
+   "他刚开始收藏邮票",
+   "他收藏邮票是因为喜欢"
+  ],
+  "correct_answer": "他收藏邮票是因为喜欢",
+  "explanation": "Эшлэлд: 不是为了赚钱，而是因为喜欢 — мөнгө олохын тулд бус, дурласандаа цуглуулдаг. Үнэ нь өссөн (涨), мөн хэдэн жилийн өмнөөс цуглуулж эхэлсэн.",
+  "order_index": 26,
+  "id": "hsk5-l20-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n图书馆规定：读者需要先办理借书证，借书时凭证登记，每次最多借五本，一个月内还书。如果超过时间，每本每天要交一毛钱。\n问：借书时必须做什么？",
+  "options": [
+   "凭借书证登记",
+   "先交一笔押金",
+   "一次借十本",
+   "带照片和身份证"
+  ],
+  "correct_answer": "凭借书证登记",
+  "explanation": "Эшлэлд: 借书时凭证登记 — ном авахдаа үнэмлэхээ үзүүлж бүртгүүлнэ. Нэг удаад ихдээ 5 ном; барьцаа мөнгө тухай бичээгүй.",
+  "order_index": 27,
+  "id": "hsk5-l20-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n夜市里的摊子很多。白天这里没有人，到了晚上，卖衣服的、卖小吃的，一个一个的摊子支了起来，整条街变得热闹起来。我最喜欢的是那个卖烤羊肉串的摊子，老板总是一边烤，一边和客人聊天。\n问：关于夜市，下面哪句话是对的？",
+  "options": [
+   "白天最热闹",
+   "只卖衣服",
+   "晚上摊子支起来以后才热闹",
+   "老板不爱和客人聊天"
+  ],
+  "correct_answer": "晚上摊子支起来以后才热闹",
+  "explanation": "Эшлэлд: 到了晚上……摊子支了起来，整条街变得热闹起来 — орой лангуу босгосны дараа л хөл хөдөлгөөн ихэсдэг. Өдөр хүн байдаггүй; хувцас, хоол хоёулаа зарна; эзэн нь ярьдаг.",
+  "order_index": 28,
+  "id": "hsk5-l20-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 正在想事情 / 脑袋 / 支着",
+  "options": [
+   "他支着脑袋，正在想事情。",
+   "正在想事情他支着脑袋。",
+   "脑袋正在想事情他支着。"
+  ],
+  "correct_answer": "他支着脑袋，正在想事情。",
+  "explanation": "支着脑袋 — 着 нь 支-ийн шууд ард, тусагдахуун дараа нь: 他支着脑袋 (тэр толгойгоо түшиж), дараа нь үйлдэл «正在想事情».",
+  "order_index": 29,
+  "id": "hsk5-l20-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 买不起 / 我们 / 机票 / 又不是",
+  "options": [
+   "机票又不是买不起我们。",
+   "我们买不起又不是机票。",
+   "我们又不是买不起机票。"
+  ],
+  "correct_answer": "我们又不是买不起机票。",
+  "explanation": "又不是 + 买不起 + 机票: «онгоцны тийз авч чадахгүй юм биш шүү дээ». Эзэн (我们) өгүүлбэрийн эхэнд, 又不是 нь 买不起-ийн өмнө.",
+  "order_index": 30,
+  "id": "hsk5-l20-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 干工作 / 还要有创新 / 光凭经验 / 不能",
+  "options": [
+   "光凭经验干工作不能还要有创新。",
+   "干工作不能光凭经验，还要有创新。",
+   "光凭经验不能还要有创新干工作。"
+  ],
+  "correct_answer": "干工作不能光凭经验，还要有创新。",
+  "explanation": "不能光凭经验 (зөвхөн туршлагад найдаж болохгүй) → 还要有创新 (шинийг санаачлах ч хэрэгтэй). 凭 нь объектынхоо (经验) өмнө.",
+  "order_index": 31,
+  "id": "hsk5-l20-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 简单 / 很 / 手续 / 考试报名的",
+  "options": [
+   "考试报名的手续简单很。",
+   "考试报名的手续很简单。",
+   "考试报名的很手续简单。"
+  ],
+  "correct_answer": "考试报名的手续很简单。",
+  "explanation": "Тодотгол + нэр үг + 很 + тэмдэг нэр: 考试报名的手续很简单 (шалгалтад бүртгүүлэх журам их энгийн).",
+  "order_index": 32,
+  "id": "hsk5-l20-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 在摊里看 / 1分钱 / 每册",
+  "options": [
+   "在摊里看，每册1分钱。",
+   "1分钱在摊里看每册。",
+   "1分钱每册在摊里看。"
+  ],
+  "correct_answer": "在摊里看，每册1分钱。",
+  "explanation": "Нөхцөл (在摊里看 — лангуун дээр нь үзвэл) эхэлж, үнэ нь дараа орно: 每册1分钱.",
+  "order_index": 33,
+  "id": "hsk5-l20-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 成了收藏品 / 一些印刷精美的作品 / 身价大涨",
+  "options": [
+   "成了收藏品身价大涨一些印刷精美的作品。",
+   "身价大涨一些印刷精美的作品成了收藏品。",
+   "一些印刷精美的作品身价大涨，成了收藏品。"
+  ],
+  "correct_answer": "一些印刷精美的作品身价大涨，成了收藏品。",
+  "explanation": "Эзэн (作品) + үнэ өссөн (身价大涨) + үр дүн (成了收藏品).",
+  "order_index": 34,
+  "id": "hsk5-l20-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]

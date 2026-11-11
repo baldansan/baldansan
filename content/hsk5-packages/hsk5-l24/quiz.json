@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "上课时，同学们都抢着（　），气氛很热烈。",
+  "options": [
+   "及格",
+   "交往",
+   "留守",
+   "发言",
+   "培训"
+  ],
+  "correct_answer": "发言",
+  "explanation": "发言 = хичээл дээр үг хэлэх. 及格 — тэнцэх; 交往 — харилцах; 培训 — сургах; 留守 — нутагтаа үлдэх.",
+  "order_index": 1,
+  "id": "hsk5-l24-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这次考试他考了65分，终于（　）了。",
+  "options": [
+   "闯",
+   "及格",
+   "排练",
+   "朗读",
+   "鼓掌"
+  ],
+  "correct_answer": "及格",
+  "explanation": "及格 = шалгалтад тэнцэх (60 оноо хүрэх). 鼓掌 — алга таших; 朗读 — чангаар унших; 闯 — амьдралаа эрж гарах, дайрч орох; 排练 — бэлтгэл хийх.",
+  "order_index": 2,
+  "id": "hsk5-l24-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这位老师很（　），对学生说话总是轻声细语。",
+  "options": [
+   "空闲",
+   "用功",
+   "热烈",
+   "艰巨",
+   "温柔"
+  ],
+  "correct_answer": "温柔",
+  "explanation": "温柔 = зөөлөн, эелдэг. 热烈 — халуун догдлом; 艰巨 — маш хүнд; 用功 — шаргуу суралцагч; 空闲 — чөлөөт.",
+  "order_index": 3,
+  "id": "hsk5-l24-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "表演结束后，台下的观众（　）了很久。",
+  "options": [
+   "承担",
+   "家访",
+   "留守",
+   "鼓掌",
+   "采访"
+  ],
+  "correct_answer": "鼓掌",
+  "explanation": "鼓掌 = алга таших: 鼓掌了很久. 采访 — ярилцлага авах; 家访 — гэрт очих; 承担 — үүрэх; 留守 — үлдэх.",
+  "order_index": 4,
+  "id": "hsk5-l24-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们要（　）周末的时间学习汉语。",
+  "options": [
+   "建设",
+   "利用",
+   "培训",
+   "采访",
+   "闯"
+  ],
+  "correct_answer": "利用",
+  "explanation": "利用 = ашиглах: 利用时间. 建设 — бүтээн байгуулах; 采访 — ярилцлага авах; 培训 — сургалтад хамруулах; 闯 — амьдралаа эрж гарах, дайрч орох.",
+  "order_index": 5,
+  "id": "hsk5-l24-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "孩子已经长大了，你不用再为他（　）了。",
+  "options": [
+   "交往",
+   "家访",
+   "建设",
+   "排练",
+   "操心"
+  ],
+  "correct_answer": "操心",
+  "explanation": "操心 = санаа зовох: 为他操心. Бусад үгс «хүүхдийн төлөө» гэсэн утгад таарахгүй.",
+  "order_index": 6,
+  "id": "hsk5-l24-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "完成这个（　）的任务需要大家共同努力。",
+  "options": [
+   "体贴",
+   "空闲",
+   "艰巨",
+   "热烈",
+   "及格"
+  ],
+  "correct_answer": "艰巨",
+  "explanation": "艰巨 = маш хүнд, бэрх: 艰巨的任务. 体贴 — бусдыг бодох; 热烈 — халуун; 空闲 — чөлөөт; 及格 — тэнцэх.",
+  "order_index": 7,
+  "id": "hsk5-l24-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "做错了事，就要（　）责任。",
+  "options": [
+   "朗读",
+   "承担",
+   "指导",
+   "排练",
+   "闯"
+  ],
+  "correct_answer": "承担",
+  "explanation": "承担 = үүрэх: 承担责任. 闯 — амьдралаа эрж гарах, дайрч орох; 排练 — бэлтгэл хийх; 朗读 — чангаар унших; 指导 — зааварчлах.",
+  "order_index": 8,
+  "id": "hsk5-l24-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "遇到困难时，他鼓起（　），一个人去了陌生的城市。",
+  "options": [
+   "主题",
+   "题目",
+   "家务",
+   "力量",
+   "勇气"
+  ],
+  "correct_answer": "勇气",
+  "explanation": "勇气 = зориг: 鼓起勇气 (зориг гаргах). 力量 — хүч (鼓起力量 гэж хэлэхгүй); 题目 — гарчиг; 主题 — сэдэв; 家务 — гэрийн ажил.",
+  "order_index": 9,
+  "id": "hsk5-l24-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这次去山区旅行，我的（　）很大。",
+  "options": [
+   "冠军",
+   "舞蹈",
+   "收获",
+   "题目",
+   "地理"
+  ],
+  "correct_answer": "收获",
+  "explanation": "收获 = ололт, сурсан зүйл: 收获很大. 冠军 — түрүүлэгч; 题目 — гарчиг; 舞蹈 — бүжиг; 地理 — газар зүй.",
+  "order_index": 10,
+  "id": "hsk5-l24-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l24-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "公民有遵守法律的（　）。",
+  "options": [
+   "义务",
+   "发表",
+   "进步",
+   "行动",
+   "发言"
+  ],
+  "correct_answer": "义务",
+  "explanation": "义务 = үүрэг (нэр үг): 遵守法律的义务. 行动 — үйлдэл; 发言 — үг хэлэх; 发表 — нийтлүүлэх; 进步 — ахиц.",
+  "order_index": 11,
+  "id": "hsk5-l24-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他昨天摔伤了腿，现在（　）不便。",
+  "options": [
+   "承担",
+   "发言",
+   "义务",
+   "发表",
+   "行动"
+  ],
+  "correct_answer": "行动",
+  "explanation": "行动不便 = хөдлөхөд төвөгтэй (行动 — үйл үг). 义务 нь нэр үг/тэмдэг нэр, 发言/发表 нь үг хэлэхтэй холбоотой.",
+  "order_index": 12,
+  "id": "hsk5-l24-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们每个学期都要参加三次（　）劳动。",
+  "options": [
+   "发言",
+   "发表",
+   "义务",
+   "力量",
+   "行动"
+  ],
+  "correct_answer": "义务",
+  "explanation": "义务劳动 = сайн дурын, цалингүй хөдөлмөр: 义务 нь энд тэмдэг нэр. 行动劳动 гэж хэлэхгүй.",
+  "order_index": 13,
+  "id": "hsk5-l24-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "明天上课该轮到我（　）了，我有点儿紧张。",
+  "options": [
+   "发言",
+   "行动",
+   "发表",
+   "承担",
+   "义务"
+  ],
+  "correct_answer": "发言",
+  "explanation": "发言 = хичээл дээр үг хэлэх. 发表 нь албан ёсоор нийтлүүлэх/мэдэгдэл хийх; 行动 — үйлдэл; 承担 — үүрэх; 义务 — үүрэг.",
+  "order_index": 14,
+  "id": "hsk5-l24-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她年纪虽小，已经在杂志上（　）过几首诗了。",
+  "options": [
+   "发言",
+   "行动",
+   "义务",
+   "发表",
+   "培训"
+  ],
+  "correct_answer": "发表",
+  "explanation": "发表 = нийтлүүлэх: 在杂志上发表. 发言 нь хурал, хичээл дээр үг хэлэх.",
+  "order_index": 15,
+  "id": "hsk5-l24-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子的用法是正确的？",
+  "options": [
+   "你发表过这篇文章吗？",
+   "你发言过这篇文章吗？",
+   "你发表了言这篇文章吗？",
+   "你发过表这篇文章吗？"
+  ],
+  "correct_answer": "你发表过这篇文章吗？",
+  "explanation": "发表 нь салдаг үг биш бөгөөд объект авна: 发表过这篇文章. 发言 объект авахгүй, 发言/发表-ийг салгаж болохгүй.",
+  "order_index": 16,
+  "id": "hsk5-l24-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "郝老师刚到云南时，引起她注意的是谁？",
+  "options": [
+   "一位志愿者",
+   "一位村里的老人",
+   "一位音乐老师",
+   "一位叫赵福根的男生"
+  ],
+  "correct_answer": "一位叫赵福根的男生",
+  "explanation": "1-р догол: 刚到时，一位叫赵福根的男生引起了她的注意.",
+  "order_index": 17,
+  "id": "hsk5-l24-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "赵福根平时是什么样的学生？",
+  "options": [
+   "喜欢和同学交往",
+   "经常在课上表演",
+   "上课从不发言，很多课不及格",
+   "学习非常用功，成绩最好"
+  ],
+  "correct_answer": "上课从不发言，很多课不及格",
+  "explanation": "3-р өгүүлбэр: 他上课从不发言，很多课不及格，平时也几乎不和同学交往.",
+  "order_index": 18,
+  "id": "hsk5-l24-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "赵福根的家庭情况怎么样？",
+  "options": [
+   "家里很富，不用做家务",
+   "父亲去世了，家里很穷",
+   "他和姐姐一起住",
+   "父母都在外面打工"
+  ],
+  "correct_answer": "父亲去世了，家里很穷",
+  "explanation": "Аав нь нас барсан, эгч нь өөр газар ажилладаг, гэр бүл нь маш ядуу, тэр гэрийн ажилд тусалдаг.",
+  "order_index": 19,
+  "id": "hsk5-l24-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "郝老师是怎么知道福根喜欢跳舞的？",
+  "options": [
+   "看了他的表演",
+   "和他妈妈聊天",
+   "听同学说",
+   "音乐老师告诉她"
+  ],
+  "correct_answer": "和他妈妈聊天",
+  "explanation": "“和他妈妈聊天才知道他很喜欢跳舞”.",
+  "order_index": 20,
+  "id": "hsk5-l24-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "福根在学校艺术节上取得了什么成绩？",
+  "options": [
+   "蝴蝶舞得了舞蹈组的冠军",
+   "没有参加表演",
+   "得了唱歌第一名",
+   "作文得了全班最高分"
+  ],
+  "correct_answer": "蝴蝶舞得了舞蹈组的冠军",
+  "explanation": "艺术节 дээр 蝴蝶舞 бүжгийн төрөлд түрүүлсэн. Эссэ бичиж ангидаа хамгийн өндөр оноо авсан нь дараа нь болсон явдал.",
+  "order_index": 21,
+  "id": "hsk5-l24-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "郝老师为什么组织研究型学习活动？",
+  "options": [
+   "学校要举办艺术节",
+   "学生们的成绩不好",
+   "村里要建新学校",
+   "她发现山里的青壮年都出去了，只有老人和孩子留守"
+  ],
+  "correct_answer": "她发现山里的青壮年都出去了，只有老人和孩子留守",
+  "explanation": "10-р өгүүлбэр: залуу, дунд насныхан гадагш гарсан, зөвхөн өвгөд, хүүхдүүд үлдсэн тул «хэн нутгийг хариуцах вэ?» гэсэн асуудал гарсан.",
+  "order_index": 22,
+  "id": "hsk5-l24-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "通过这个活动，学生们有了什么新认识？",
+  "options": [
+   "应该早点儿离开山村",
+   "学习比建设家乡更重要",
+   "建设家乡人人有责，自己也要承担义务",
+   "建设家乡是大人的事"
+  ],
+  "correct_answer": "建设家乡人人有责，自己也要承担义务",
+  "explanation": "Сурагчид: «урьд нь томчуудын ажил гэж боддог байсан; одоо хүн бүр хариуцлагатай, бид ч үүрэг хүлээнэ».",
+  "order_index": 23,
+  "id": "hsk5-l24-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "对支教活动，郝老师有什么感受？",
+  "options": [
+   "觉得非常辛苦，想回家",
+   "孩子们给她的帮助很少",
+   "自己的收获远多于给孩子们的",
+   "打算以后不再回山里"
+  ],
+  "correct_answer": "自己的收获远多于给孩子们的",
+  "explanation": "Төгсгөл: 郝琳硕觉得自己的收获远多于给孩子们的.",
+  "order_index": 24,
+  "id": "hsk5-l24-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n大学毕业后，小林去山区当了一年志愿者。那里的孩子很少有机会读课外书，所以他利用周末给孩子们建了一个小图书角。一开始只有二十多本书，后来越来越多的人寄书来，孩子们都爱上了读书。\n问：小林周末做了什么？",
+  "options": [
+   "去城市里买书",
+   "给孩子们建了一个小图书角",
+   "给孩子们上音乐课",
+   "带孩子们去旅游"
+  ],
+  "correct_answer": "给孩子们建了一个小图书角",
+  "explanation": "利用周末 + 建了一个小图书角 = амралтын өдрөөр хүүхдүүдэд жижиг номын булан байгуулсан.",
+  "order_index": 25,
+  "id": "hsk5-l24-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n每年春天，社区都会组织义务植树活动。今年小王一早就来了，他说：“保护环境是每个人的义务，我们要用行动告诉孩子们该怎么做。”\n问：小王为什么参加植树活动？",
+  "options": [
+   "他觉得保护环境是每个人的义务",
+   "老师要求他必须参加",
+   "他喜欢和朋友玩儿",
+   "他想得到一些报酬"
+  ],
+  "correct_answer": "他觉得保护环境是每个人的义务",
+  "explanation": "Тэр «байгаль хамгаалах нь хүн бүрийн үүрэг» гэж хэлсэн. 义务 植树 — цалингүй тул «шагнал авах» гэсэн хариулт буруу.",
+  "order_index": 26,
+  "id": "hsk5-l24-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n妈妈对我说：“你已经长大了，妈妈不能再为你操心一辈子。遇到问题，要自己想办法，别怕失败，要有勇气去闯一闯。”\n问：妈妈希望“我”怎么做？",
+  "options": [
+   "不要再回家",
+   "一直留在家里",
+   "遇到问题就问妈妈",
+   "自己想办法，有勇气去闯一闯"
+  ],
+  "correct_answer": "自己想办法，有勇气去闯一闯",
+  "explanation": "Ээж: «өөрөө арга олж, зориглон туршиж үз» гэсэн. 不能再为你操心一辈子 — насан туршдаа санаа зовж чадахгүй.",
+  "order_index": 27,
+  "id": "hsk5-l24-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小丽以前数学总是不及格，她很着急。后来，她请老师指导，每天又利用午休时间做练习，三个月以后，成绩进步了很多。\n问：小丽的成绩为什么进步了？",
+  "options": [
+   "她换了一所学校",
+   "同学们帮她做作业",
+   "老师降低了考试要求",
+   "她请老师指导，并利用午休时间练习"
+  ],
+  "correct_answer": "她请老师指导，并利用午休时间练习",
+  "explanation": "请老师指导 + 利用午休时间做练习 = багшийн зааварчилгаа + үдийн цагаар дасгал хийсэн.",
+  "order_index": 28,
+  "id": "hsk5-l24-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 学生们 / 提出了 / 解决方案 / 最终",
+  "options": [
+   "解决方案学生们提出了最终。",
+   "学生们最终提出了解决方案。",
+   "最终学生们解决方案提出了。"
+  ],
+  "correct_answer": "学生们最终提出了解决方案。",
+  "explanation": "S + 最终 + V. 最终 (дайвар үг) нь үйл үгийн өмнө орно: 学生们最终提出了解决方案. 最终 = эцэст нь; 解决方案 — шийдлийн санал.",
+  "order_index": 29,
+  "id": "hsk5-l24-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 利用 / 学习 / 空闲时间",
+  "options": [
+   "利用他学习空闲时间。",
+   "他利用空闲时间学习。",
+   "他空闲时间利用学习。"
+  ],
+  "correct_answer": "他利用空闲时间学习。",
+  "explanation": "S + 利用 + O + V. 利用空闲时间 = чөлөөт цагаа ашиглах, дараа нь 学习 (зорилго). 空闲 — чөлөөт.",
+  "order_index": 30,
+  "id": "hsk5-l24-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我们 / 承担 / 这个 / 义务 / 也要",
+  "options": [
+   "我们承担也要这个义务。",
+   "我们也要承担这个义务。",
+   "也要我们这个义务承担。"
+  ],
+  "correct_answer": "我们也要承担这个义务。",
+  "explanation": "S + 也要 + V + O. 也要 нь үйл үгийн өмнө орно; 承担这个义务 = энэ үүргийг үүрэх.",
+  "order_index": 31,
+  "id": "hsk5-l24-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 通过 / 采访 / 村里的老人 / 学生们 / 了解了 / 村子的历史",
+  "options": [
+   "学生们村里的老人通过采访了解了村子的历史。",
+   "通过村子的历史，学生们采访了解了村里的老人。",
+   "通过采访村里的老人，学生们了解了村子的历史。"
+  ],
+  "correct_answer": "通过采访村里的老人，学生们了解了村子的历史。",
+  "explanation": "通过……，S + V: «……-аар дамжуулан, ...». 通过 нь арга замыг; 采访村里的老人 = тосгоны өвгөдөөс ярилцлага авах нь арга зам, 了解村子的历史 нь үр дүн.",
+  "order_index": 32,
+  "id": "hsk5-l24-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 她 / 每周二 / 带着 / 他 / 去找 / 音乐老师 / 排练",
+  "options": [
+   "她带着每周二他去找音乐老师排练。",
+   "她每周二排练带着他去找音乐老师。",
+   "她每周二带着他去找音乐老师排练。"
+  ],
+  "correct_answer": "她每周二带着他去找音乐老师排练。",
+  "explanation": "Хугацаа (每周二) дараа нь 带着他 + 去找音乐老师 + 排练: «түүнийг дагуулан хөгжмийн багшид очиж бэлтгэл хийх». 带着 — дагуулан. Үйл үгсийн дараалал алдагдвал өгүүлбэр утгагүй болно.",
+  "order_index": 33,
+  "id": "hsk5-l24-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 郝老师 / 觉得 / 自己的收获 / 远多于 / 给孩子们的",
+  "options": [
+   "郝老师觉得远多于自己的收获给孩子们的。",
+   "郝老师自己的收获觉得远多于给孩子们的。",
+   "郝老师觉得自己的收获远多于给孩子们的。"
+  ],
+  "correct_answer": "郝老师觉得自己的收获远多于给孩子们的。",
+  "explanation": "S + 觉得 + (小句). A远多于B = A нь B-ээс хавьгүй их. 收获 — ололт, сурсан зүйл.",
+  "order_index": 34,
+  "id": "hsk5-l24-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
