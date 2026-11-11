@@ -1,11 +1,6 @@
-import { DictationGameClient } from "@/components/games/dictation-game-client";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export const metadata = {
-  title: "Диктант — сонсоод бич | Бөөндөө Сурцгаая",
-};
-
-export default function DictationGamePage() {
-  return <DictationGameClient />;
+/** Тусдаа тоглоом байхаа больсон — «Тоглож сурах»-ын нэг горим болсон. */
+export default function Page() {
+  redirect("/games/learn?preset=dictation");
 }

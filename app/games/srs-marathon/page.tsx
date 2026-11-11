@@ -1,7 +1,6 @@
-import { SrsMarathonClient } from "@/components/games/srs-marathon-client";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export default function SrsMarathonPage() {
-  return <SrsMarathonClient />;
+/** Тусдаа тоглоом байхаа больсон — «Тоглож сурах»-ын нэг горим болсон. */
+export default function Page() {
+  redirect("/games/learn?preset=marathon");
 }

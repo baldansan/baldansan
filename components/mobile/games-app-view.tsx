@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { PrefetchLink } from "@/components/navigation/prefetch-link";
 import { useEffect, useMemo, useState } from "react";
-import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import {
@@ -87,12 +86,6 @@ const CHINESE_HSK_GAMES: GameCard[] = [
   },
 ];
 
-/** Secondary variants kept as small links — not primary tiles. */
-const EXTRA_GAME_LINKS = [
-  { slug: "speed", label: "⚡ Хурдны тэмцээн — цагтай үгийн сорил" },
-  { slug: "radical", label: "🧱 Ханз задлах — бүрдэл хэсгээр нь" },
-  { slug: "srs-marathon", label: "🏃 SRS марафон — давтах үгээ дараалан" },
-] as const;
 
 function gamesForLanguage(
   lang: SelectedLanguage | null,
@@ -264,7 +257,6 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
     };
   }, [lessonIds, lessonTitles]);
 
-  const marathonHref = "/games/srs-marathon";
   // «Үе давах» — хятад үгийн кампанит; солонгос хэл сонгосон бол харуулахгүй.
   const showCampaign = lang !== "ko";
 
@@ -319,6 +311,70 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
         </div>
       ) : null}
 
+      {lang === "zh" ? (
+        <>
+          {/* Гол тоглоом: нэг тоглоом — олон төрөл. Бусад нь үүний горим. */}
+          <section className="bs-page-in overflow-hidden rounded-3xl bg-[linear-gradient(135deg,#059669,#10b981_55%,#34d399)] p-5 text-white shadow-[0_10px_28px_rgba(5,150,105,0.35)]">
+            <p className="text-[11px] font-extrabold uppercase tracking-widest text-emerald-100">
+              {tr(locale, "Нэг тоглоом · 8 төрөл")}
+            </p>
+            <h2 className="mt-1 text-2xl font-extrabold leading-tight">
+              🎮 {tr(locale, "Тоглож сурах")}
+            </h2>
+            <p className="mt-1 text-sm leading-5 text-emerald-50">
+              {tr(
+                locale,
+                "Өөрийн үгс эсвэл HSK үгсээр тоглоно. Утга, ханз, пиньинь, сонсох, диктант, холбох — аль алийг нь холихоо ⚙ дээрээс сонгоно."
+              )}
+            </p>
+            <PrefetchLink
+              href="/games/learn"
+              className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-white px-6 py-3.5 text-base font-extrabold text-emerald-700 shadow-md transition active:scale-[0.98] sm:w-auto"
+              data-testid="learn-game-start"
+            >
+              ▶ {tr(locale, "Эхлэх")}
+            </PrefetchLink>
+            <p className="mt-4 text-[11px] font-bold uppercase tracking-wider text-emerald-100">
+              {tr(locale, "Бэлэн горимууд")}
+            </p>
+            <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+              {[
+                { preset: "marathon", icon: "🏃", label: "Марафон", hint: "Давтах бүх үгээ" },
+                { preset: "speed", icon: "⚡", label: "Хурдны горим", hint: "6 секундэд хариул" },
+                { preset: "dictation", icon: "👂", label: "Диктант", hint: "Сонсоод угсар" },
+                { preset: "hanzi", icon: "🧩", label: "Ханз задлах", hint: "Язгуур, бичлэг" },
+              ].map((p) => (
+                <PrefetchLink
+                  key={p.preset}
+                  href={`/games/learn?preset=${p.preset}`}
+                  className="rounded-2xl bg-white/15 px-3 py-2.5 ring-1 ring-white/25 backdrop-blur transition hover:bg-white/25 active:scale-[0.98]"
+                >
+                  <p className="text-sm font-extrabold">
+                    {p.icon} {tr(locale, p.label)}
+                  </p>
+                  <p className="text-[11px] text-emerald-50">{tr(locale, p.hint)}</p>
+                </PrefetchLink>
+              ))}
+            </div>
+          </section>
+
+          <p className="bs-tm-sec">{tr(locale, "Шалгалт")}</p>
+          <div className="bs-tm-game-grid bs-stagger">
+            {CHINESE_HSK_GAMES.filter(
+              (g) => g.slug !== "hsk-vocab-quiz" && g.slug !== "dictation"
+            ).map((game) => (
+              <GameTile key={game.id} game={game} href={`/games/${game.slug}`} />
+            ))}
+          </div>
+
+          <details className="mt-5 rounded-3xl bg-white/70 p-3 ring-1 ring-slate-200">
+            <summary className="cursor-pointer list-none px-2 py-1 text-sm font-bold text-slate-800 [&::-webkit-details-marker]:hidden">
+              📘 {tr(locale, "Хичээлээр дасгал хийх")}{" "}
+              <span className="font-medium text-slate-500">
+                — {lessonTitle ?? tr(locale, "одоогийн хичээл")} ▾
+              </span>
+            </summary>
+            <div className="mt-3 flex flex-col gap-3">
       {showCampaign ? (
         <PrefetchLink
           href={levelMapHref(campaignGame)}
@@ -342,37 +398,23 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
         </PrefetchLink>
       ) : null}
 
-      {lang === "zh" ? (
-        <>
-          <p className="bs-tm-sec">{tr(locale, "Тоглоомууд")}</p>
-          <div className="bs-tm-game-grid bs-stagger">
-            {CHINESE_HSK_GAMES.map((game) => (
-              <GameTile
-                key={game.id}
-                game={game}
-                href={`/games/${game.slug}`}
-              />
-            ))}
-          </div>
+      <div className="bs-tm-game-grid bs-stagger">
+        {games.map((game) => {
+          const href = game.global
+            ? `/games/${game.slug}`
+            : `/games/${game.slug}?lessonId=${currentLessonId}`;
+          const level =
+            showCampaign && isLevelGame(game.slug) ? levelInfo[game.slug] : undefined;
+          return <GameTile key={game.id} game={game} href={href} level={level} />;
+        })}
+      </div>
+
+            </div>
+          </details>
+          <div className="pb-6" />
         </>
-      ) : null}
-
-      <PrefetchLink href={marathonHref} className="bs-tm-game-feat">
-        <TemeeEmojiIcon
-          variant="games"
-          className="bs-tm-game-feat-img"
-          width={64}
-          height={64}
-        />
-        <span className="flex-1 min-w-0">
-          <p className="bs-tm-game-feat-kicker">{tr(locale, "Тоглоомын чиглэл")}</p>
-          <p className="bs-tm-game-feat-title">
-            {lessonTitle ?? tr(locale, "Одоогийн хичээлийн үгээр")}
-          </p>
-          <p className="bs-tm-game-feat-sub">{tr(locale, "SRS марафон эхлүүлэх →")}</p>
-        </span>
-      </PrefetchLink>
-
+      ) : (
+        <>
       <p className="bs-tm-sec">{tr(locale, "Хичээлийн дасгалууд")}</p>
       <div className="bs-tm-game-grid bs-stagger">
         {games.map((game) => {
@@ -385,19 +427,9 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
         })}
       </div>
 
-      {lang === "zh" ? (
-        <div className="mt-4 flex flex-wrap gap-2 pb-6">
-          {EXTRA_GAME_LINKS.map((link) => (
-            <Link
-              key={link.slug}
-              href={`/games/${link.slug}`}
-              className="rounded-full bg-white px-4 py-2 text-xs font-semibold text-slate-600 ring-1 ring-slate-200"
-            >
-              {tr(locale, link.label)}
-            </Link>
-          ))}
-        </div>
-      ) : null}
+          <div className="pb-6" />
+        </>
+      )}
     </MobileAppShell>
   );
 }

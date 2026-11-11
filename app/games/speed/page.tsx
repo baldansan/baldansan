@@ -1,7 +1,6 @@
-import { SpeedChallengeClient } from "@/components/games/speed-challenge-client";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export default function SpeedChallengePage() {
-  return <SpeedChallengeClient />;
+/** Тусдаа тоглоом байхаа больсон — «Тоглож сурах»-ын нэг горим болсон. */
+export default function Page() {
+  redirect("/games/learn?preset=speed");
 }
