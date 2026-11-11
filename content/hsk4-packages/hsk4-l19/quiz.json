@@ -1,0 +1,686 @@
+[
+ {
+  "type": "cloze",
+  "question": "请在表格上填好姓名、（　）、年龄和职业，然后再交给我们。",
+  "options": [
+   "性别",
+   "厨房",
+   "刀",
+   "零钱",
+   "座位"
+  ],
+  "correct_answer": "性别",
+  "explanation": "性别 = хүйс: 姓名、性别、年龄、职业 — маягтын энгийн талбарууд. 座位 — суудал; 零钱 — задгай мөнгө; 厨房 — гал тогоо; 刀 — хутга.",
+  "order_index": 1,
+  "id": "hsk4-l19-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我不小心把你的杯子弄坏了，真的要向你（　）。",
+  "options": [
+   "打印",
+   "理发",
+   "租",
+   "道歉",
+   "复印"
+  ],
+  "correct_answer": "道歉",
+  "explanation": "道歉 = уучлалт гуйх: 向你道歉. 打印 — хэвлэх; 复印 — хувилах; 理发 — үс засуулах; 租 — түрээслэх.",
+  "order_index": 2,
+  "id": "hsk4-l19-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师，请您把这份材料（　）十份，明天开会要用。",
+  "options": [
+   "道歉",
+   "打印",
+   "转",
+   "打招呼",
+   "抬"
+  ],
+  "correct_answer": "打印",
+  "explanation": "打印 = (принтерээр) хэвлэх: 打印十份. 道歉 — уучлалт гуйх; 打招呼 — мэндлэх; 抬 — өргөх; 转 — эргэх.",
+  "order_index": 3,
+  "id": "hsk4-l19-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他的衣服太旧了，已经（　）了好几个洞。",
+  "options": [
+   "场",
+   "戴",
+   "租",
+   "吵",
+   "破"
+  ],
+  "correct_answer": "破",
+  "explanation": "破 = урагдсан, цоорсон: 衣服破了. 吵 — чимээтэй; 租 — түрээслэх; 戴 — зүүх; 场 — тоглолтын хэмжих нэр.",
+  "order_index": 4,
+  "id": "hsk4-l19-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我身上只有一张一百块的，没有（　），买不了东西。",
+  "options": [
+   "座位",
+   "刀",
+   "国籍",
+   "眼镜",
+   "零钱"
+  ],
+  "correct_answer": "零钱",
+  "explanation": "零钱 = задгай мөнгө: 没有零钱 — задгай мөнгөгүй. 座位 — суудал; 刀 — хутга; 眼镜 — нүдний шил; 国籍 — харьяалал.",
+  "order_index": 5,
+  "id": "hsk4-l19-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你给他打电话了吗？他的电话一直（　），可能在跟别人说话。",
+  "options": [
+   "复印",
+   "禁止",
+   "占线",
+   "出生",
+   "吵"
+  ],
+  "correct_answer": "占线",
+  "explanation": "占线 = (утас) завгүй байх: 电话一直占线. 禁止 — хориглох; 出生 — төрөх; 复印 — хувилах; 吵 — чимээтэй.",
+  "order_index": 6,
+  "id": "hsk4-l19-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "图书馆里（　）大声说话，请大家保持安静。",
+  "options": [
+   "禁止",
+   "打印",
+   "理发",
+   "占线",
+   "道歉"
+  ],
+  "correct_answer": "禁止",
+  "explanation": "禁止 = хориглох: 禁止大声说话 — чанга ярихыг хориглоно. 打印 — хэвлэх; 占线 — завгүй; 道歉 — уучлалт гуйх; 理发 — үс засуулах.",
+  "order_index": 7,
+  "id": "hsk4-l19-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "电影院里还有很多空（　），我们可以随便坐。",
+  "options": [
+   "零钱",
+   "眼镜",
+   "座位",
+   "厨房",
+   "胳膊"
+  ],
+  "correct_answer": "座位",
+  "explanation": "座位 = суудал: 空座位 — сул суудал. 零钱 — задгай мөнгө; 眼镜 — нүдний шил; 胳膊 — гар; 厨房 — гал тогоо.",
+  "order_index": 8,
+  "id": "hsk4-l19-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "楼下的商店太（　）了，晚上我睡不着觉。",
+  "options": [
+   "破",
+   "戴",
+   "转",
+   "租",
+   "吵"
+  ],
+  "correct_answer": "吵",
+  "explanation": "吵 = чимээтэй, шуугиантай: 太吵了. 破 — урагдсан; 租 — түрээслэх; 转 — эргэх; 戴 — зүүх.",
+  "order_index": 9,
+  "id": "hsk4-l19-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我想在学校附近（　）一套便宜的房子。",
+  "options": [
+   "脱",
+   "抬",
+   "转",
+   "场",
+   "租"
+  ],
+  "correct_answer": "租",
+  "explanation": "租 = түрээслэх: 租一套房子. 抬 — өргөх; 脱 — тайлах; 转 — эргэх; 场 — хэмжих нэр.",
+  "order_index": 10,
+  "id": "hsk4-l19-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他的名字我（　）想都想不起来了。",
+  "options": [
+   "哪儿",
+   "怎么",
+   "什么",
+   "几",
+   "谁"
+  ],
+  "correct_answer": "怎么",
+  "explanation": "怎么想都想不起来 — яаж ч бодсон санаж чадахгүй. «怎么 + V + 都 + V不…» бүтэц. Бусад асуух үг энд утга зохихгүй.",
+  "order_index": 11,
+  "id": "hsk4-l19-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他学习很努力，终于考（　）了理想的大学。",
+  "options": [
+   "回",
+   "过",
+   "起",
+   "出",
+   "上"
+  ],
+  "correct_answer": "上",
+  "explanation": "考上了 = тэнцэж орох: «V上» нь зорилгод хүрсэн утга. 考出, 考起, 考回, 考过 нь энд тохирохгүй.",
+  "order_index": 12,
+  "id": "hsk4-l19-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他说得太快了，我听不（　）他在说什么。",
+  "options": [
+   "出来",
+   "进来",
+   "过来",
+   "下来",
+   "起来"
+  ],
+  "correct_answer": "出来",
+  "explanation": "听不出来 = (хэлийг) ялгаж чадахгүй: «V不出来» — анзаарч, ялгаж чадахгүй. 听不起来, 听不下来, 听不过来, 听不进来 энд зохихгүй.",
+  "order_index": 13,
+  "id": "hsk4-l19-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "成功的关键（　）坚持，不在于聪明。",
+  "options": [
+   "对于",
+   "至于",
+   "由于",
+   "在于",
+   "关于"
+  ],
+  "correct_answer": "在于",
+  "explanation": "在于 = …д оршино: 关键在于坚持. 对于 (…-д хамаарах), 关于 (…-ийн тухай), 由于 (…-ээс болж), 至于 (…-ийн тухайд) нь энд утга зохихгүй.",
+  "order_index": 14,
+  "id": "hsk4-l19-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "马克为什么要请高老师再给他一份新的申请表？",
+  "options": [
+   "他不小心把护照号码填错了",
+   "他把申请表弄丢了",
+   "申请表上没有他的名字",
+   "他想换一个专业"
+  ],
+  "correct_answer": "他不小心把护照号码填错了",
+  "explanation": "Бичвэр 1: 我不小心把护照号码填错了 — паспортын дугаараа буруу бөглөсөн тул шинэ маягт хүссэн.",
+  "order_index": 15,
+  "id": "hsk4-l19-q15",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王静的手是怎么弄破的？",
+  "options": [
+   "用刀切肉的时候",
+   "拿东西的时候",
+   "洗衣服的时候",
+   "包饺子的时候"
+  ],
+  "correct_answer": "用刀切肉的时候",
+  "explanation": "Бичвэр 2: 刚才用刀切肉的时候把手弄破了 — мах хэрчих үедээ хутгаар гараа зүссэн.",
+  "order_index": 16,
+  "id": "hsk4-l19-q16",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王静和李进最后打算吃什么？",
+  "options": [
+   "王静再做羊肉饺子",
+   "李进去买包子",
+   "去餐厅吃烤鸭",
+   "在家煮面条"
+  ],
+  "correct_answer": "李进去买包子",
+  "explanation": "Бичвэр 2: 那我们就吃点儿别的…包子很好吃，我一会儿去买一点儿 — Ли Жин бууз авчирна.",
+  "order_index": 17,
+  "id": "hsk4-l19-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "安娜早上为什么没看见马克打招呼？",
+  "options": [
+   "她在看书",
+   "她在跳舞",
+   "她不想看见马克",
+   "她忘戴眼镜了"
+  ],
+  "correct_answer": "她忘戴眼镜了",
+  "explanation": "Бичвэр 3: 今天早上我忘戴眼镜了，看不清楚 — нүдний шилээ зүүхээ мартсан тул сайн харагдаагүй.",
+  "order_index": 18,
+  "id": "hsk4-l19-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "安娜说，这个舞蹈动作应该怎么做？",
+  "options": [
+   "先抬胳膊，再向右转头，最后抬腿",
+   "先抬胳膊，然后抬腿，最后头向右转",
+   "先转头，然后抬胳膊，最后抬腿",
+   "先抬腿，然后抬胳膊，最后头向左转"
+  ],
+  "correct_answer": "先抬胳膊，然后抬腿，最后头向右转",
+  "explanation": "Бичвэр 3: 先抬胳膊，然后抬腿，最后头再向右转一下 — эхлээд гар, дараа нь хөл, эцэст нь толгойгоо баруун тийш эргүүлнэ.",
+  "order_index": 19,
+  "id": "hsk4-l19-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "马克为什么一直没联系上房东？",
+  "options": [
+   "广告上没有电话",
+   "房东出国了",
+   "他记号码的时候写错了一个数字",
+   "他忘了带手机"
+  ],
+  "correct_answer": "他记号码的时候写错了一个数字",
+  "explanation": "Бичвэр 4: 原来在记号码的时候写错了一个数字 — дугаараа тэмдэглэхдээ нэг цифрийг буруу бичсэн.",
+  "order_index": 20,
+  "id": "hsk4-l19-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "马克去年租的房子有什么问题？",
+  "options": [
+   "厨房太小",
+   "离马路很近，周围很吵",
+   "房租太贵",
+   "离学校太远"
+  ],
+  "correct_answer": "离马路很近，周围很吵",
+  "explanation": "Бичвэр 4: 离马路很近…周围环境非常吵 — авто замд ойр, орчин нь маш чимээтэй.",
+  "order_index": 21,
+  "id": "hsk4-l19-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "看乒乓球比赛的时候，观众应该怎么做？",
+  "options": [
+   "一边看一边打电话",
+   "大声给运动员加油",
+   "保持安静，不能大声讲话",
+   "随便离开座位"
+  ],
+  "correct_answer": "保持安静，不能大声讲话",
+  "explanation": "Бичвэр 5: 观众要安静，禁止大声讲话或者离开座位随便走动 — нам гүм байх, чанга ярих, суудлаа орхихыг хориглоно.",
+  "order_index": 22,
+  "id": "hsk4-l19-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“谁都有粗心填错的时候”中的“谁”是什么意思？",
+  "options": [
+   "Хэн бэ гэж асууж буй хүн",
+   "Нэг тодорхой хүн",
+   "Ямар ч хүн, хэн ч",
+   "Хэн ч биш"
+  ],
+  "correct_answer": "Ямар ч хүн, хэн ч",
+  "explanation": "Энд «谁» асуулт биш, «都»-тэй хамт «хэн ч» гэсэн ерөнхийлсөн утга гаргаж байна: хэн ч болгоомжгүй байх үе бий.",
+  "order_index": 23,
+  "id": "hsk4-l19-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“看来今天吃不上羊肉饺子了”中的“吃不上”表示什么？",
+  "options": [
+   "Хоол амттангүйг",
+   "Идсэний дараа ханасныг",
+   "Идэхийг хүсэхгүй байгааг",
+   "Хүссэн зүйлдээ хүрч чадахгүй байгааг"
+  ],
+  "correct_answer": "Хүссэн зүйлдээ хүрч чадахгүй байгааг",
+  "explanation": "吃不上 = V不上: зорилгод хүрч чадахгүй — идэхийг хүссэн ч боломжгүй (хутгаар гараа зүссэн тул).",
+  "order_index": 24,
+  "id": "hsk4-l19-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“我想起来了，那个唱歌的男孩子是高老师的孙子”中的“想起来”是什么意思？",
+  "options": [
+   "Бодож эхлэх",
+   "Мартсан зүйлээ санаж олох",
+   "Босож бодох",
+   "Шинэ санаа гаргах"
+  ],
+  "correct_answer": "Мартсан зүйлээ санаж олох",
+  "explanation": "想起来 = мартсан зүйлээ санах. Шинээр бодож олохыг «想出来» гэнэ; «起来» энд сэргээн санах утгатай.",
+  "order_index": 25,
+  "id": "hsk4-l19-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“总的来说，这套房子他很满意”中的“总的来说”在句中起什么作用？",
+  "options": [
+   "Эсрэг утга гаргах",
+   "Шалтгаан хэлэх",
+   "Дараалал заах",
+   "Өмнөх мэдээллийг нэгтгэн ерөнхийд нь дүгнэх"
+  ],
+  "correct_answer": "Өмнөх мэдээллийг нэгтгэн ерөнхийд нь дүгнэх",
+  "explanation": "Өмнө нь «交通方便, 周围很安静, 厨房很大» гэж хэд хэдэн талыг хэлсний дараа «总的来说» нэгтгэн дүгнэж байна.",
+  "order_index": 26,
+  "id": "hsk4-l19-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小林想租房子。他看了三套：第一套太吵，第二套没有厨房，第三套安静，交通也方便，房东也很热情。总的来说，他最喜欢第三套。\n问：小林为什么最喜欢第三套？",
+  "options": [
+   "房子安静，交通方便",
+   "价格最便宜",
+   "厨房最大",
+   "离公司最近"
+  ],
+  "correct_answer": "房子安静，交通方便",
+  "explanation": "Эшлэл: 第三套安静，交通也方便 — гурав дахь байр нам гүм, тээвэр тохиромжтой. Үнэ, гал тогооны хэмжээ, зай дурдаагүй.",
+  "order_index": 27,
+  "id": "hsk4-l19-q27",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "昨天我去买包子，发现身上只有一张一百块的，没有零钱。老板说他找不开，我只好先去旁边的银行换了零钱，才买上包子。\n问：他为什么去银行？",
+  "options": [
+   "要把一百块换成零钱",
+   "要打印材料",
+   "要租房子",
+   "要办护照"
+  ],
+  "correct_answer": "要把一百块换成零钱",
+  "explanation": "Эшлэл: 没有零钱…我只好先去旁边的银行换了零钱 — задгай мөнгөгүй тул 100 юанийг задгайруулахаар банкинд очсон.",
+  "order_index": 28,
+  "id": "hsk4-l19-q28",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小王一回家就玩儿手机，妈妈说什么他都不听。妈妈很着急。\n问：下面哪个是对的？",
+  "options": [
+   "小王每天做饭",
+   "小王不听妈妈说的话",
+   "小王不喜欢手机",
+   "小王回家很晚"
+  ],
+  "correct_answer": "小王不听妈妈说的话",
+  "explanation": "Эшлэл: 妈妈说什么他都不听 — ээжийн хэлсэн юуг ч сонсдоггүй. Гар утсанд дуртай, гэртээ орсон даруйдаа тоглодог.",
+  "order_index": 29,
+  "id": "hsk4-l19-q29",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我很喜欢运动，特别是羽毛球。我觉得生命在于运动，所以每个周末我都会去体育馆打几场球。\n问：他每个周末做什么？",
+  "options": [
+   "去公园跑步",
+   "去体育馆打羽毛球",
+   "在家看电视",
+   "去图书馆看书"
+  ],
+  "correct_answer": "去体育馆打羽毛球",
+  "explanation": "Эшлэл: 每个周末我都会去体育馆打几场球 — амралтын өдөр бүр спорт заалд очиж бөмбөг тоглодог (羽毛球 сонирхолтой).",
+  "order_index": 30,
+  "id": "hsk4-l19-q30",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我 / 给你 / 重新 / 打印一份 / 申请表",
+  "options": [
+   "给你我重新打印申请表一份。",
+   "我重新给你一份打印申请表。",
+   "我给你重新打印一份申请表。"
+  ],
+  "correct_answer": "我给你重新打印一份申请表。",
+  "explanation": "Дараалал: эзэн (我) + 给你 + 重新 + 打印一份 + тусагдахуун (申请表). 重新 = дахин; 打印 = хэвлэх.",
+  "order_index": 31,
+  "id": "hsk4-l19-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 用刀切肉时 / 把手 / 弄破了",
+  "options": [
+   "他用刀切肉时把手弄破了。",
+   "他把手用刀切肉时弄破了。",
+   "用刀切肉时他弄破了把手。"
+  ],
+  "correct_answer": "他用刀切肉时把手弄破了。",
+  "explanation": "Дараалал: 他 + цаг (用刀切肉时) + 把手 + 弄破了. «把» өгүүлбэр: тусагдахуун үйл үгийн өмнө орно.",
+  "order_index": 32,
+  "id": "hsk4-l19-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 看来 / 吃不上 / 今天 / 羊肉饺子了",
+  "options": [
+   "看来今天吃不上羊肉饺子了。",
+   "吃不上看来今天羊肉饺子了。",
+   "看来吃不上今天羊肉饺子了。"
+  ],
+  "correct_answer": "看来今天吃不上羊肉饺子了。",
+  "explanation": "看来 (бололтой) өгүүлбэрийн эхэнд, дараа нь цаг (今天), V不上 + тусагдахуун. 吃不上 = идэж чадахгүй.",
+  "order_index": 33,
+  "id": "hsk4-l19-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 成功的关键 / 在于 / 不放弃",
+  "options": [
+   "成功的关键不放弃在于。",
+   "在于成功的关键不放弃。",
+   "成功的关键在于不放弃。"
+  ],
+  "correct_answer": "成功的关键在于不放弃。",
+  "explanation": "Бүтэц: нэр үгийн хэллэг (成功的关键) + 在于 + тусагдахуун (不放弃). «在于» ард заавал тусагдахуун орно.",
+  "order_index": 34,
+  "id": "hsk4-l19-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 谁都 / 粗心 / 有 / 填错的 / 时候",
+  "options": [
+   "有谁都填错粗心的时候。",
+   "谁都粗心有填错的时候。",
+   "谁都有粗心填错的时候。"
+  ],
+  "correct_answer": "谁都有粗心填错的时候。",
+  "explanation": "Бүтэц: 谁都 + 有 + (粗心填错的) + 时候. «谁都» нь эзэн, «有…的时候» — …х үе байдаг.",
+  "order_index": 35,
+  "id": "hsk4-l19-q35",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 安娜 / 今天早上 / 忘戴 / 眼镜了",
+  "options": [
+   "安娜今天早上忘戴眼镜了。",
+   "今天早上忘戴安娜眼镜了。",
+   "安娜眼镜了今天早上忘戴。"
+  ],
+  "correct_answer": "安娜今天早上忘戴眼镜了。",
+  "explanation": "Дараалал: эзэн (安娜) + цаг (今天早上) + 忘戴 + 眼镜了. 忘 = мартах; 戴 = зүүх.",
+  "order_index": 36,
+  "id": "hsk4-l19-q36",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "medium"
+ }
+]
