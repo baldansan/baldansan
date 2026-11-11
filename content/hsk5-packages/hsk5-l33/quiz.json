@@ -1,0 +1,642 @@
+[
+ {
+  "type": "cloze",
+  "question": "早高峰的地铁里人太多，十分（　）。",
+  "options": [
+   "繁荣",
+   "明确",
+   "拥挤",
+   "宽",
+   "虚心"
+  ],
+  "correct_answer": "拥挤",
+  "explanation": "拥挤 = давчуу, түгжирсэн: 十分拥挤. 繁荣 — цэцэглэсэн; 明确 — тодорхой; 宽 — өргөн; 虚心 — даруу.",
+  "order_index": 1,
+  "id": "hsk5-l33-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "吃了药以后，他的疼痛慢慢（　）了。",
+  "options": [
+   "缓解",
+   "取消",
+   "批准",
+   "赔偿",
+   "期待"
+  ],
+  "correct_answer": "缓解",
+  "explanation": "缓解 = сулрах, хөнгөрөх: 疼痛缓解. 取消 — цуцлах; 批准 — батлах; 赔偿 — нөхөн төлөх; 期待 — хүлээх.",
+  "order_index": 2,
+  "id": "hsk5-l33-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "买房子以前，我先去（　）了一位律师。",
+  "options": [
+   "展开",
+   "归纳",
+   "取消",
+   "咨询",
+   "批准"
+  ],
+  "correct_answer": "咨询",
+  "explanation": "咨询 = зөвлөгөө авах: 咨询律师. 展开 — өрнүүлэх; 归纳 — нэгтгэн дүгнэх; 取消 — цуцлах; 批准 — батлах.",
+  "order_index": 3,
+  "id": "hsk5-l33-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他不小心把邻居的玻璃打碎了，只好（　）损失。",
+  "options": [
+   "咨询",
+   "赔偿",
+   "缓解",
+   "归纳",
+   "期待"
+  ],
+  "correct_answer": "赔偿",
+  "explanation": "赔偿 = нөхөн төлөх: 赔偿损失 (хохирлыг барагдуулах). 咨询 — зөвлөгөө авах; 缓解 — сулруулах; 归纳 — дүгнэх; 期待 — хүлээх.",
+  "order_index": 4,
+  "id": "hsk5-l33-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "学校（　）了他的请假申请，他可以回家了。",
+  "options": [
+   "取消",
+   "缓解",
+   "解放",
+   "展开",
+   "批准"
+  ],
+  "correct_answer": "批准",
+  "explanation": "批准 = батлах, зөвшөөрөх: 批准申请. 取消 — цуцлах; 缓解 — сулруулах; 解放 — чөлөөлөх; 展开 — өрнүүлэх.",
+  "order_index": 5,
+  "id": "hsk5-l33-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "没有人逼他，这项工作是他（　）报名的。",
+  "options": [
+   "明确",
+   "主观",
+   "自愿",
+   "繁荣",
+   "虚心"
+  ],
+  "correct_answer": "自愿",
+  "explanation": "自愿 = сайн дураараа: 自愿报名. 明确 — тодорхой; 主观 — субъектив; 繁荣 — цэцэглэсэн; 虚心 — даруу.",
+  "order_index": 6,
+  "id": "hsk5-l33-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个房间的（　）不大，放不下三张床。",
+  "options": [
+   "广场",
+   "政府",
+   "汽油",
+   "面积",
+   "保险"
+  ],
+  "correct_answer": "面积",
+  "explanation": "面积 = талбайн хэмжээ: 房间的面积. 广场 — нийтийн талбай; 政府 — засгийн газар; 汽油 — бензин; 保险 — даатгал.",
+  "order_index": 7,
+  "id": "hsk5-l33-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师给了我们（　）的答案，一点儿也不含糊。",
+  "options": [
+   "主观",
+   "明确",
+   "虚心",
+   "拥挤",
+   "自愿"
+  ],
+  "correct_answer": "明确",
+  "explanation": "明确 = тодорхой, тов тодорхой: 明确的答案. 主观 — субъектив; 虚心 — даруу; 拥挤 — давчуу; 自愿 — сайн дураараа.",
+  "order_index": 8,
+  "id": "hsk5-l33-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这座城市经济（　），街上到处都是商店和游客。",
+  "options": [
+   "繁荣",
+   "宽",
+   "明确",
+   "主观",
+   "拥挤"
+  ],
+  "correct_answer": "繁荣",
+  "explanation": "繁荣 = цэцэглэсэн, хөгжин дэвшсэн: 经济繁荣. 宽 — өргөн; 明确 — тодорхой; 主观 — субъектив; 拥挤 — давчуу.",
+  "order_index": 9,
+  "id": "hsk5-l33-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "因为台风，今天的航班全部被（　）了。",
+  "options": [
+   "批准",
+   "归纳",
+   "咨询",
+   "解放",
+   "取消"
+  ],
+  "correct_answer": "取消",
+  "explanation": "取消 = цуцлах: 航班被取消. 批准 — батлах; 归纳 — нэгтгэн дүгнэх; 咨询 — зөвлөгөө авах; 解放 — чөлөөлөх.",
+  "order_index": 10,
+  "id": "hsk5-l33-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l33-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他生病了，但是今天（　）来上班。",
+  "options": [
+   "难怪",
+   "照常",
+   "与其",
+   "表现"
+  ],
+  "correct_answer": "照常",
+  "explanation": "照常 = ердийнхөөрөө: 照常来上班 (хэвийн ажилдаа ирлээ). 难怪 — гайхах юмгүй; 与其 — …гэснээс; 表现 — харуулах.",
+  "order_index": 11,
+  "id": "hsk5-l33-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你昨晚只睡了两个小时，（　）今天这么没精神。",
+  "options": [
+   "难怪",
+   "照常",
+   "与其",
+   "体现"
+  ],
+  "correct_answer": "难怪",
+  "explanation": "难怪 = тэгээд л тийм байжээ: шалтгааныг мэдээд гайхахаа болих. 照常 — ердийнхөөрөө; 与其 — …гэснээс; 体现 — тусгагдах.",
+  "order_index": 12,
+  "id": "hsk5-l33-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）在家看电视，不如出去走走。",
+  "options": [
+   "难怪",
+   "照常",
+   "无形之中",
+   "与其"
+  ],
+  "correct_answer": "与其",
+  "explanation": "与其……，不如……: орхих талыг 与其-ийн ард, сонгох талыг 不如-гийн ард хэлнэ. 难怪, 照常, 无形之中 энд таарахгүй.",
+  "order_index": 13,
+  "id": "hsk5-l33-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "长期听英文歌，他的口语（　）提高了。",
+  "options": [
+   "照常",
+   "与其",
+   "无形之中",
+   "故意"
+  ],
+  "correct_answer": "无形之中",
+  "explanation": "无形之中 = мэдэлгүй, үл мэдэгдэн: санаатай бус аажмаар сайжирсан. 照常 — ердийнхөөрөө; 与其 — …гэснээс; 故意 — санаатай.",
+  "order_index": 14,
+  "id": "hsk5-l33-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老师对你这次考试的（　）很满意。",
+  "options": [
+   "表现",
+   "体现",
+   "表示",
+   "显得"
+  ],
+  "correct_answer": "表现",
+  "explanation": "表现 (нэр үг) = зан байдал, гүйцэтгэл: 对你的表现很满意. 体现 нь ийм утгагүй; 表示 — илэрхийлэх; 显得 — харагдах.",
+  "order_index": 15,
+  "id": "hsk5-l33-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子的用法是正确的？",
+  "options": [
+   "宁可坐飞机，与其我坐火车。",
+   "与其坐火车，我宁可坐飞机。",
+   "与其坐火车，可是我坐飞机。",
+   "我坐飞机与其坐火车。"
+  ],
+  "correct_answer": "与其坐火车，我宁可坐飞机。",
+  "explanation": "与其 + орхих тал, 宁可 + сонгох тал. Бусад хувилбарт 与其-ийн байрлал буруу эсвэл «可是» хэрэглэсэн.",
+  "order_index": 16,
+  "id": "hsk5-l33-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "城市汽车数量迅速增长，人们最初是怎么看的？",
+  "options": [
+   "认为这会让道路变得更宽",
+   "认为这会让空气更好",
+   "认为这是社会发展、经济繁荣的体现",
+   "认为这是政府的错误"
+  ],
+  "correct_answer": "认为这是社会发展、经济繁荣的体现",
+  "explanation": "1-р догол: 最初还被视为是社会发展、经济繁荣的体现.",
+  "order_index": 17,
+  "id": "hsk5-l33-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "一般人认为，解决交通拥堵最基本的方法是什么？",
+  "options": [
+   "新建或加宽道路",
+   "限制汽车的数量",
+   "多建停车场",
+   "发展公共交通"
+  ],
+  "correct_answer": "新建或加宽道路",
+  "explanation": "3-р өгүүлбэр: 新建或加宽道路被公认为最基本的方法.",
+  "order_index": 18,
+  "id": "hsk5-l33-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "为什么扩建道路没能解决问题？",
+  "options": [
+   "道路越宽越危险",
+   "司机越来越少",
+   "政府不批准扩建",
+   "道路扩建的速度跟不上车流量增加的速度"
+  ],
+  "correct_answer": "道路扩建的速度跟不上车流量增加的速度",
+  "explanation": "4-р өгүүлбэр: 道路扩建的速度远远跟不上车流量增加的速度.",
+  "order_index": 19,
+  "id": "hsk5-l33-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "詹森在哪里工作？",
+  "options": [
+   "市政府公交公司",
+   "欧洲环境保护署交通部",
+   "一家保险公司",
+   "一所大学的交通系"
+  ],
+  "correct_answer": "欧洲环境保护署交通部",
+  "explanation": "7-р өгүүлбэр: 詹森一到欧洲环境保护署交通部工作.",
+  "order_index": 20,
+  "id": "hsk5-l33-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "九月中旬的那天早晨，詹森看到了什么？",
+  "options": [
+   "一个健身的人没上天桥，横穿马路被车撞倒",
+   "两辆车在路口相撞",
+   "一个司机没有买保险",
+   "行人在天桥上摔倒了"
+  ],
+  "correct_answer": "一个健身的人没上天桥，横穿马路被车撞倒",
+  "explanation": "10-11-р өгүүлбэр: 没上天桥，而是横穿马路, 被一辆车撞倒在地.",
+  "order_index": 21,
+  "id": "hsk5-l33-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "这件事给了詹森什么启发？",
+  "options": [
+   "应该多建一些过街天桥",
+   "应该禁止人们慢跑",
+   "可以让开车变得麻烦，反过来改变人们的出行观念",
+   "应该让司机多买保险"
+  ],
+  "correct_answer": "可以让开车变得麻烦，反过来改变人们的出行观念",
+  "explanation": "12-13-р өгүүлбэр: 如果情况相反呢？ → 让城市先堵起来，给司机制造麻烦，以堵治堵.",
+  "order_index": 22,
+  "id": "hsk5-l33-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪一项不是詹森提出的措施？",
+  "options": [
+   "增设红绿灯",
+   "禁止所有私家车上路",
+   "取消主要十字路口的地下通道",
+   "在购物广场附近不建停车场"
+  ],
+  "correct_answer": "禁止所有私家车上路",
+  "explanation": "14-р өгүүлбэр: 增设红绿灯, 取消地下通道, 不建停车场 гурав байгаа; 禁止所有私家车上路 гэж бичвэрт байхгүй.",
+  "order_index": 23,
+  "id": "hsk5-l33-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "措施实施半年后，效果怎么样？",
+  "options": [
+   "市民都很满意，没有人抱怨",
+   "拥堵比以前更严重了",
+   "政府取消了这些措施",
+   "自愿放弃开私家车的人越来越多，拥堵大为缓解"
+  ],
+  "correct_answer": "自愿放弃开私家车的人越来越多，拥堵大为缓解",
+  "explanation": "16-18-р өгүүлбэр: 虽然市民们有些抱怨，但效果非常明显 ... 道路拥堵大为缓解.",
+  "order_index": 24,
+  "id": "hsk5-l33-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小李以前每天开车上班，路上常常堵一个多小时。后来公司附近取消了免费停车场，他就改坐地铁，现在二十分钟就到了。\n问：小李为什么改坐地铁？",
+  "options": [
+   "他的车坏了",
+   "公司附近取消了免费停车场",
+   "地铁票很便宜",
+   "他搬家了"
+  ],
+  "correct_answer": "公司附近取消了免费停车场",
+  "explanation": "取消了免费停车场 — шалтгаан, дараа нь 改坐地铁. Бусад хариулт эшлэлд байхгүй.",
+  "order_index": 25,
+  "id": "hsk5-l33-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n王阿姨每天早上六点照常去公园锻炼，哪怕下小雨也不例外。昨天下了一场大雨，她才第一次待在家里。\n问：王阿姨昨天为什么没去公园？",
+  "options": [
+   "因为雨下得很大",
+   "因为她生病了",
+   "因为她睡过头了",
+   "因为公园关门了"
+  ],
+  "correct_answer": "因为雨下得很大",
+  "explanation": "哪怕下小雨也不例外 → 昨天下了一场大雨, 才第一次待在家里. Шалтгаан нь том бороо.",
+  "order_index": 26,
+  "id": "hsk5-l33-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n为了缓解停车难的问题，小区决定把花园的一部分改成停车场。可是很多住户不同意，他们认为，与其多停几辆车，不如留下一块绿地给孩子们玩儿。\n问：住户们是怎么想的？",
+  "options": [
+   "希望多建一些停车场",
+   "希望搬到别的小区",
+   "更希望保留绿地给孩子们",
+   "希望取消小区里的健身设备"
+  ],
+  "correct_answer": "更希望保留绿地给孩子们",
+  "explanation": "与其多停几辆车，不如留下一块绿地: орхих тал — зогсоол, сонгох тал — ногоон талбай.",
+  "order_index": 27,
+  "id": "hsk5-l33-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小张刚到公司时很害羞，不太爱说话。同事们常常主动找他聊天，请他一起吃饭。无形之中，他慢慢变得开朗起来，现在已经是办公室里最爱笑的人了。\n问：小张是怎么变得开朗的？",
+  "options": [
+   "他参加了一个培训班",
+   "他换了一份新工作",
+   "他自己决定要改变",
+   "同事们的关心让他不知不觉地改变了"
+  ],
+  "correct_answer": "同事们的关心让他不知不觉地改变了",
+  "explanation": "无形之中 = мэдэлгүй: хамт ажиллагсдын халамжаар өөрөө ч мэдэлгүй хөгжилтэй болсон.",
+  "order_index": 28,
+  "id": "hsk5-l33-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 比赛 / 照常 / 进行 / 明天的",
+  "options": [
+   "明天的比赛进行照常。",
+   "照常明天的进行比赛。",
+   "明天的比赛照常进行。"
+  ],
+  "correct_answer": "明天的比赛照常进行。",
+  "explanation": "Дараалал: 明天的 + 比赛 + 照常 + 进行. 照常 нь дайвар үг тул үйл үг 进行-ийн өмнө орно.",
+  "order_index": 29,
+  "id": "hsk5-l33-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 难怪 / 他 / 这么 / 失望 / 呢",
+  "options": [
+   "难怪他这么失望呢。",
+   "这么失望难怪他呢。",
+   "他这么失望难怪呢。"
+  ],
+  "correct_answer": "难怪他这么失望呢。",
+  "explanation": "难怪 өгүүлбэрийн эхэнд орж, ард нь үр дүн (他这么失望) ордог. 呢 төгсгөлд.",
+  "order_index": 30,
+  "id": "hsk5-l33-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 与其 / 等车 / 还不如 / 走着去",
+  "options": [
+   "还不如等车，与其走着去。",
+   "与其等车，还不如走着去。",
+   "与其还不如等车，走着去。"
+  ],
+  "correct_answer": "与其等车，还不如走着去。",
+  "explanation": "与其 + орхих тал (等车), 还不如 + сонгох тал (走着去).",
+  "order_index": 31,
+  "id": "hsk5-l33-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 无形之中 / 孩子 / 爱上了 / 阅读 / 也",
+  "options": [
+   "无形之中爱上了孩子也阅读。",
+   "孩子爱上了无形之中也阅读。",
+   "孩子也无形之中爱上了阅读。"
+  ],
+  "correct_answer": "孩子也无形之中爱上了阅读。",
+  "explanation": "Өгүүлэгдэхүүн 孩子 + 也 + 无形之中 (нөхцөл) + 爱上了 + 阅读. 无形之中 үйл үгийн өмнө.",
+  "order_index": 32,
+  "id": "hsk5-l33-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 这样一来 / 道路拥堵 / 大为缓解",
+  "options": [
+   "这样一来，道路拥堵大为缓解。",
+   "道路拥堵，这样一来大为缓解。",
+   "大为缓解，这样一来道路拥堵。"
+  ],
+  "correct_answer": "这样一来，道路拥堵大为缓解。",
+  "explanation": "这样一来 нь эхэнд орж, ард нь үр дүн: 道路拥堵 + 大为缓解.",
+  "order_index": 33,
+  "id": "hsk5-l33-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 体现 / 文化的差异 / 在语言上 / 最突出 / 得",
+  "options": [
+   "体现文化的差异得在语言上最突出。",
+   "文化的差异在语言上体现得最突出。",
+   "在语言上文化的差异最突出得体现。"
+  ],
+  "correct_answer": "文化的差异在语言上体现得最突出。",
+  "explanation": "Бүтэц: S + 在语言上 + 体现 + 得 + 最突出. 体现得最突出 — 体现-ийн хэмжээний нөхөх хэсэг.",
+  "order_index": 34,
+  "id": "hsk5-l33-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
