@@ -1,0 +1,686 @@
+[
+ {
+  "type": "cloze",
+  "question": "你洗新衣服的时候，在水里加一点儿（　），衣服就不容易掉颜色。",
+  "options": [
+   "力气",
+   "任务",
+   "规定",
+   "盐",
+   "叶子"
+  ],
+  "correct_answer": "盐",
+  "explanation": "盐 = давс: 在水里加一点儿盐 — усанд жаахан давс нэмнэ. 力气 — хүч; 叶子 — навч; 任务 — даалгавар; 规定 — дүрэм журам.",
+  "order_index": 1,
+  "id": "hsk4-l12-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这么好的机会，你却没有参加，真（　）！",
+  "options": [
+   "仔细",
+   "节约",
+   "详细",
+   "误会",
+   "可惜"
+  ],
+  "correct_answer": "可惜",
+  "explanation": "可惜 = харамсалтай: 真可惜 — үнэхээр харамсалтай. 详细 — нарийвчилсан; 仔细 — болгоомжтой; 节约 — хэмнэх; 误会 — буруу ойлголт.",
+  "order_index": 2,
+  "id": "hsk4-l12-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这件事很重要，我们得跟大家（　）一下再决定。",
+  "options": [
+   "友好",
+   "引起",
+   "保护",
+   "节约",
+   "商量"
+  ],
+  "correct_answer": "商量",
+  "explanation": "商量 = зөвлөлдөх: 跟大家商量一下 — бусадтай зөвлөлдөнө. 保护 — хамгаалах; 节约 — хэмнэх; 引起 — үүсгэх; 友好 — найрсаг.",
+  "order_index": 3,
+  "id": "hsk4-l12-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们每个人都应该（　）环境，不乱扔垃圾。",
+  "options": [
+   "规定",
+   "任务",
+   "误会",
+   "保护",
+   "商量"
+  ],
+  "correct_answer": "保护",
+  "explanation": "保护 = хамгаалах: 保护环境 — байгаль орчныг хамгаалах. 商量 — зөвлөлдөх; 任务 — даалгавар; 规定 — дүрэм; 误会 — буруу ойлголт.",
+  "order_index": 4,
+  "id": "hsk4-l12-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "学校有一条（　）：上课的时候不能玩儿手机。",
+  "options": [
+   "意见",
+   "盐",
+   "力气",
+   "叶子",
+   "规定"
+  ],
+  "correct_answer": "规定",
+  "explanation": "规定 = дүрэм журам: 学校的规定 — сургуулийн дүрэм. 力气 — хүч; 叶子 — навч; 意见 — санал; 盐 — давс.",
+  "order_index": 5,
+  "id": "hsk4-l12-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师，您能把这个语法点（　）地说一说吗？",
+  "options": [
+   "也许",
+   "详细",
+   "可惜",
+   "友好",
+   "全部"
+  ],
+  "correct_answer": "详细",
+  "explanation": "详细 = нарийвчилсан: 详细地说一说 — нарийвчилж ярих. 友好 — найрсаг; 可惜 — харамсалтай; 全部 — бүх; 也许 — магадгүй.",
+  "order_index": 6,
+  "id": "hsk4-l12-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他没有说清楚，所以大家产生了（　）。",
+  "options": [
+   "叶子",
+   "作用",
+   "规定",
+   "误会",
+   "任务"
+  ],
+  "correct_answer": "误会",
+  "explanation": "误会 = буруу ойлголт: 产生了误会 — буруу ойлголт төрсөн. 规定 — дүрэм; 任务 — даалгавар; 作用 — үүрэг; 叶子 — навч.",
+  "order_index": 7,
+  "id": "hsk4-l12-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "水很重要，我们要（　）用水。",
+  "options": [
+   "节约",
+   "引起",
+   "保护",
+   "使用",
+   "达到"
+  ],
+  "correct_answer": "节约",
+  "explanation": "节约 = хэмнэх: 节约用水 — усыг хэмнэх. 达到 — хүрэх; 使用 — ашиглах; 保护 — хамгаалах; 引起 — үүсгэх.",
+  "order_index": 8,
+  "id": "hsk4-l12-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老师给我们布置了一个新的（　），一个星期以后要完成。",
+  "options": [
+   "任务",
+   "叶子",
+   "盐",
+   "力气",
+   "语言"
+  ],
+  "correct_answer": "任务",
+  "explanation": "任务 = даалгавар: 布置任务 — даалгавар өгөх. 叶子 — навч; 盐 — давс; 语言 — хэл; 力气 — хүч.",
+  "order_index": 9,
+  "id": "hsk4-l12-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "大家对这个计划有什么（　），请现在说。",
+  "options": [
+   "盐",
+   "任务",
+   "力气",
+   "意见",
+   "叶子"
+  ],
+  "correct_answer": "意见",
+  "explanation": "意见 = санал, үзэл бодол: 对计划有什么意见 — төлөвлөгөөний талаар ямар санал байна. 任务 — даалгавар; 叶子 — навч; 盐 — давс; 力气 — хүч.",
+  "order_index": 10,
+  "id": "hsk4-l12-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他是一位好医生，（　）对病人很耐心。",
+  "options": [
+   "如果",
+   "所以",
+   "并且",
+   "但是",
+   "虽然"
+  ],
+  "correct_answer": "并且",
+  "explanation": "并且 = бас, түүнчлэн: 好医生，并且对病人很耐心 — сайн эмч, бас өвчтөнд тэвчээртэй. 但是 — гэвч; 所以 — тиймээс; 如果 — хэрэв; 虽然 — хэдий ч.",
+  "order_index": 11,
+  "id": "hsk4-l12-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个问题（　）难，我们（　）要试一试。",
+  "options": [
+   "再……也……",
+   "虽然……但是……",
+   "不但……而且……",
+   "如果……才……",
+   "因为……所以……"
+  ],
+  "correct_answer": "再……也……",
+  "explanation": "再……也……: 再难也要试一试 — хичнээн хэцүү ч оролдоно. 因为…所以 — шалтгаан; 虽然…但是 — эсрэг; 不但…而且 — нэмэх; 如果…才 — нөхцөл-хожуу.",
+  "order_index": 12,
+  "id": "hsk4-l12-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）这个问题，大家的看法不一样。",
+  "options": [
+   "对于",
+   "相反",
+   "而且",
+   "因此",
+   "并且"
+  ],
+  "correct_answer": "对于",
+  "explanation": "对于 = …-ын хувьд: 对于这个问题 — энэ асуудлын хувьд. 并且, 而且 — холбоос; 相反 — эсрэгээр; 因此 — тиймээс; эдгээр нь өгүүлбэр эхлүүлэх угтвар үг биш.",
+  "order_index": 13,
+  "id": "hsk4-l12-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他的汉语不是越来越差，（　），进步得很快。",
+  "options": [
+   "因此",
+   "可惜",
+   "对于",
+   "所以",
+   "相反"
+  ],
+  "correct_answer": "相反",
+  "explanation": "相反 = эсрэгээр: 不是越来越差，相反，进步得很快 — улам дордоогүй, эсрэгээр хурдан ахисан. 因此, 所以 — шалтгаан-үр дагаврыг холбодог тул энд утга зөрнө; 可惜 — харамсалтай; 对于 — …-ын хувьд.",
+  "order_index": 14,
+  "id": "hsk4-l12-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1里，马经理遇到了什么困难？",
+  "options": [
+   "他不知道怎么做经理",
+   "他对这个工作没有经验",
+   "同事不愿意帮他",
+   "这次生意到现在还没谈成"
+  ],
+  "correct_answer": "这次生意到现在还没谈成",
+  "explanation": "Бичвэр 1: 听说这次生意你到现在还没谈成 — энэ удаагийн наймаа одоог хүртэл тохирч амжаагүй.",
+  "order_index": 15,
+  "id": "hsk4-l12-q15",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王经理建议马经理怎么做？",
+  "options": [
+   "放弃这次生意",
+   "继续用以前的经验",
+   "换一个新同事",
+   "改变自己的态度和想法"
+  ],
+  "correct_answer": "改变自己的态度和想法",
+  "explanation": "Бичвэр 1: 建议你改变一下自己的态度和想法 — хандлага, бодлоо өөрчил гэж зөвлөсөн.",
+  "order_index": 16,
+  "id": "hsk4-l12-q16",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "高老师说，怎么洗新衣服才不容易掉颜色？",
+  "options": [
+   "多洗几次",
+   "用很热的水洗",
+   "在水里加点儿盐",
+   "在水里加糖"
+  ],
+  "correct_answer": "在水里加点儿盐",
+  "explanation": "Бичвэр 2: 你洗的时候在水里加点儿盐就不会这样了 — угаахдаа усанд давс нэмбэл өнгө алдахгүй.",
+  "order_index": 17,
+  "id": "hsk4-l12-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "女儿听说放盐可以让衣服不掉颜色，她是什么反应？",
+  "options": [
+   "觉得没有什么意思",
+   "很高兴，马上去洗衣服",
+   "很吃惊，因为盐是用来做饭的",
+   "很生气，不想听妈妈的话"
+  ],
+  "correct_answer": "很吃惊，因为盐是用来做饭的",
+  "explanation": "Бичвэр 2: 放盐？！盐不是用来做饭的吗？ — охин гайхаж, давсыг хоол хийхэд хэрэглэдэг гэж боддог.",
+  "order_index": 18,
+  "id": "hsk4-l12-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王教授说，他的课受欢迎是因为什么？",
+  "options": [
+   "他比较了解每个学生的能力水平",
+   "他讲得很快",
+   "他的课很短",
+   "他给学生很多作业"
+  ],
+  "correct_answer": "他比较了解每个学生的能力水平",
+  "explanation": "Бичвэр 3: 这只是因为我对每个学生的能力水平比较了解 — оюутан бүрийн чадварын түвшинг сайн мэддэгтээ.",
+  "order_index": 19,
+  "id": "hsk4-l12-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王教授认为，对老师来说什么最难做到？",
+  "options": [
+   "让所有学生都喜欢自己",
+   "每天认真准备课",
+   "把课讲得很快",
+   "根据学生的特点选择不同的方法"
+  ],
+  "correct_answer": "根据学生的特点选择不同的方法",
+  "explanation": "Бичвэр 3: 要根据学生的特点选择不同的方法，我想这应该是最不容易做到的 — оюутны онцлогт тааруулж өөр аргыг сонгох нь хамгийн хэцүү.",
+  "order_index": 20,
+  "id": "hsk4-l12-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "根据课文4，把别人的缺点直接说出来，可能会怎么样？",
+  "options": [
+   "让别人马上改正",
+   "让别人觉得更友好",
+   "让别人更诚实",
+   "引起别人的误会"
+  ],
+  "correct_answer": "引起别人的误会",
+  "explanation": "Бичвэр 4: 即使是别人的缺点，他也会直接说出来……可能会引起别人的误会 — дутагдлыг шууд хэлбэл буруу ойлголт төрүүлж болзошгүй.",
+  "order_index": 21,
+  "id": "hsk4-l12-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文5中的“事半功倍”是什么意思？",
+  "options": [
+   "方法不对，任务完不成",
+   "花很多时间，结果不好",
+   "用较少的力气，取得更好的效果",
+   "只有一半的人成功"
+  ],
+  "correct_answer": "用较少的力气，取得更好的效果",
+  "explanation": "Бичвэр 5: 能节约时间，用较少的力气，取得更好的效果 — цаг хэмнэж, бага хүчээр илүү сайн үр дүнд хүрэх.",
+  "order_index": 22,
+  "id": "hsk4-l12-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "我们对于了这件事有不同的看法。",
+   "他关于这件事有自己的看法。",
+   "《对于中国经济的几个问题》这本书很有名。",
+   "对于这件事，我跟大家的看法不同。"
+  ],
+  "correct_answer": "对于这件事，我跟大家的看法不同。",
+  "explanation": "«对于» өгүүлбэр эхэлж, хандаж буй зүйлийг заасан: 对于这件事，我跟大家的看法不同. «关于» өгүүлэгдэхүүний ард орохгүй, гарчигт «对于» орохгүй, «对于»-ийн дараа «了» орохгүй.",
+  "order_index": 23,
+  "id": "hsk4-l12-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "每个人人都想去旅行。",
+   "他喜欢吃个个苹果。",
+   "天天都有很多人来这家咖啡馆。",
+   "我昨天买了件件衣服。"
+  ],
+  "correct_answer": "天天都有很多人来这家咖啡馆。",
+  "explanation": "«AA» өгүүлэгдэхүүн/дайвар тодотгол болно: 天天都有…. Тусагдахуун (件件衣服, 个个苹果) болохгүй, «每»-тэй давхцахгүй (每个人人).",
+  "order_index": 24,
+  "id": "hsk4-l12-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“调查结果和他们想的完全相反”中的“相反”是什么词？",
+  "options": [
+   "Тэмдэг нэр (өгүүлэхүүн болсон)",
+   "Холбоос үг (өгүүлбэр эхлүүлсэн)",
+   "Хэмжих нэр",
+   "Дайвар үг"
+  ],
+  "correct_answer": "Тэмдэг нэр (өгүүлэхүүн болсон)",
+  "explanation": "Энд «相反» нь «和…… 完全相反» гэж өгүүлэхүүний байрлалд орсон тэмдэг нэр: «ард нь 的 орохгүй». Холбоос үг бол өгүүлбэрийн эхэнд «相反，……» хэлбэрээр ордог.",
+  "order_index": 25,
+  "id": "hsk4-l12-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "这个问题再难，也我们要试一试。",
+   "这个问题再难，我们也要试一试。",
+   "这个问题再难，我们就要试一试。",
+   "这个问题难再，我们也要试一试。"
+  ],
+  "correct_answer": "这个问题再难，我们也要试一试。",
+  "explanation": "«再……也……»: 再难，我们也要试一试. «就» хос биш; «再» тэмдэг нэрийн ӨМНӨ; «也» өгүүлэгдэхүүний ард, үйл үгийн өмнө.",
+  "order_index": 26,
+  "id": "hsk4-l12-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小王最近总是睡得很晚，早上起不来。朋友建议他：每天晚上十点以后不要看手机，并且早点儿睡觉。他试了一个星期，发现精神好多了。\n问：朋友建议小王做什么？",
+  "options": [
+   "晚上多看书",
+   "十点以后不看手机，早点儿睡觉",
+   "白天多睡觉",
+   "早上早点儿起床"
+  ],
+  "correct_answer": "十点以后不看手机，早点儿睡觉",
+  "explanation": "Эшлэл: 十点以后不要看手机，并且早点儿睡觉 — арван цагаас хойш гар утас үзэхгүй, бас эрт унт.",
+  "order_index": 27,
+  "id": "hsk4-l12-q27",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我哥哥学汉语的方法很特别。他不喜欢背单词，相反，他每天看一个汉语电影，听着听着就记住了很多词语。\n问：哥哥是怎么学汉语的？",
+  "options": [
+   "每天背很多单词",
+   "每天写汉字",
+   "每天看一个汉语电影",
+   "每天听老师讲课"
+  ],
+  "correct_answer": "每天看一个汉语电影",
+  "explanation": "Эшлэл: 他每天看一个汉语电影，听着听着就记住了很多词语 — өдөр бүр хятад кино үзэж, сонсож байгаад олон үг цээжилсэн.",
+  "order_index": 28,
+  "id": "hsk4-l12-q28",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "对于怎么学好外语，每个人的看法不一样。有人觉得要多说，有人觉得要多听。其实，别人的方法再好，也不一定适合自己，最重要的是找到适合自己的方法。\n问：这段话主要想说什么？",
+  "options": [
+   "外语很难学",
+   "要找到适合自己的方法",
+   "要多说多听",
+   "要多听别人的意见"
+  ],
+  "correct_answer": "要找到适合自己的方法",
+  "explanation": "Эшлэл: 别人的方法再好，也不一定适合自己，最重要的是找到适合自己的方法 — бусдын арга хичнээн сайн ч өөрт тохирохгүй байж болно, чухал нь өөртөө тохирох аргыг олох.",
+  "order_index": 29,
+  "id": "hsk4-l12-q29",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "公司的新规定说，每个人每天上班不能迟到。可是小张天天都迟到，因为他住得很远。经理跟他商量以后，让他每天晚半个小时上班。\n问：经理怎么解决小张的问题？",
+  "options": [
+   "让他晚半个小时上班",
+   "让他不要上班",
+   "让他早点儿起床",
+   "让他搬家"
+  ],
+  "correct_answer": "让他晚半个小时上班",
+  "explanation": "Эшлэл: 经理跟他商量以后，让他每天晚半个小时上班 — менежер түүнтэй зөвлөлдсөний дараа өдөр бүр хагас цагаар хожуу ажилд гарахыг зөвшөөрсөн.",
+  "order_index": 30,
+  "id": "hsk4-l12-q30",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 王经理 / 建议 / 马经理 / 改变 / 自己的态度",
+  "options": [
+   "王经理改变建议马经理自己的态度。",
+   "王经理建议马经理改变自己的态度。",
+   "建议王经理马经理自己的态度改变。"
+  ],
+  "correct_answer": "王经理建议马经理改变自己的态度。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (王经理) + 建议 (зөвлөх) + хэнд (马经理) + 改变 + тусагдахуун (自己的态度). 建议 = зөвлөх.",
+  "order_index": 31,
+  "id": "hsk4-l12-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 洗的时候 / 在水里 / 加点儿盐 / 就不会 / 掉颜色了",
+  "options": [
+   "洗的时候在水里加点儿盐就不会掉颜色了。",
+   "加点儿盐洗的时候在水里就不会掉颜色了。",
+   "洗的时候就不会在水里加点儿盐掉颜色了。"
+  ],
+  "correct_answer": "洗的时候在水里加点儿盐就不会掉颜色了。",
+  "explanation": "Цаг (洗的时候) + газар (在水里) + үйлдэл (加点儿盐) + үр дүн (就不会掉颜色了). 掉颜色 = өнгө алдах.",
+  "order_index": 32,
+  "id": "hsk4-l12-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 王教授 / 总是 / 用最简单的方法 / 解释 / 复杂的问题",
+  "options": [
+   "王教授总是用最简单的方法解释复杂的问题。",
+   "总是王教授解释用最简单的方法复杂的问题。",
+   "王教授用最简单的方法总是复杂的问题解释。"
+  ],
+  "correct_answer": "王教授总是用最简单的方法解释复杂的问题。",
+  "explanation": "Өгүүлэгдэхүүн + 总是 + арга (用最简单的方法) + үйл үг (解释) + тусагдахуун (复杂的问题). 解释 = тайлбарлах.",
+  "order_index": 33,
+  "id": "hsk4-l12-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 这个问题 / 再难 / 我们 / 也 / 要试一试",
+  "options": [
+   "再难这个问题，我们也要试一试。",
+   "这个问题我们再难，也要试一试。",
+   "这个问题再难，我们也要试一试。"
+  ],
+  "correct_answer": "这个问题再难，我们也要试一试。",
+  "explanation": "再……也……: сэдэв (这个问题) + 再难 + өгүүлэгдэхүүн (我们) + 也 + 要试一试. «再» тэмдэг нэрийн өмнө, «也» хоёр дахь хэсэгт.",
+  "order_index": 34,
+  "id": "hsk4-l12-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 对于 / 老师来说 / 最难的 / 是 / 因材施教",
+  "options": [
+   "对于最难的老师来说，是因材施教。",
+   "对于老师来说，最难的是因材施教。",
+   "老师来说对于，最难的是因材施教。"
+  ],
+  "correct_answer": "对于老师来说，最难的是因材施教。",
+  "explanation": "对于……来说 — …-ын хувьд: 对于老师来说 өгүүлбэрийг эхэлж, дараа нь 最难的是因材施教. 因材施教 = хүн бүрт тааруулан заах.",
+  "order_index": 35,
+  "id": "hsk4-l12-q35",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 天天 / 白先生 / 都去 / 那家咖啡馆 / 坐一会儿",
+  "options": [
+   "天天白先生都去坐一会儿那家咖啡馆。",
+   "白先生天天都去那家咖啡馆坐一会儿。",
+   "白先生都去那家咖啡馆天天坐一会儿。"
+  ],
+  "correct_answer": "白先生天天都去那家咖啡馆坐一会儿。",
+  "explanation": "AA (天天) дайвар тодотгол болж 都-ийн өмнө: өгүүлэгдэхүүн (白先生) + 天天 + 都去 + 那家咖啡馆 + 坐一会儿. «天天» — өдөр бүр.",
+  "order_index": 36,
+  "id": "hsk4-l12-q36",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
