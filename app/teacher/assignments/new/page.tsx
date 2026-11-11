@@ -1,15 +1,14 @@
 import { Suspense } from "react";
-import { NewAssignmentForm } from "./new-assignment-form";
+import { AssignmentWizard } from "@/components/teacher/assignment-wizard";
 
 export const metadata = {
-  title: "Шинэ даалгавар — Багшийн dashboard",
-  description: "Create assignment preview — classroom workflow.",
+  title: "Даалгавар өгөх — Багш",
 };
 
 export default function NewAssignmentPage() {
   return (
-    <Suspense fallback={<p className="p-4 text-sm text-slate-600">Loading…</p>}>
-      <NewAssignmentForm />
+    <Suspense fallback={<p className="p-4 text-sm text-slate-600">Ачаалж байна…</p>}>
+      <AssignmentWizard />
     </Suspense>
   );
 }

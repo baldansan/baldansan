@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { B2BSteps } from "@/components/b2b/b2b-section";
 import { OrganizationRoleBadge } from "@/components/organization/organization-role-badge";
 import { PilotReadinessCard } from "@/components/organization/pilot-readiness-card";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { NeedsAttentionCard } from "@/components/teacher/needs-attention-card";
 import { TeacherMetricCard } from "@/components/teacher/teacher-metric-card";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
@@ -114,15 +114,15 @@ export function TeacherDashboardView() {
 
   if (loggedIn === null) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Ачаалж байна…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!loggedIn) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           <h1 className="text-2xl font-bold text-slate-900">Багшийн самбар</h1>
           <p className="mt-2 text-sm text-slate-600">
@@ -143,21 +143,21 @@ export function TeacherDashboardView() {
             </Link>
           </div>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (profile === undefined) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Самбарыг ачаалж байна…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!profile) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
             Багш
@@ -205,7 +205,7 @@ export function TeacherDashboardView() {
             </Link>
           </div>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
@@ -218,7 +218,7 @@ export function TeacherDashboardView() {
   );
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <p className="text-sm font-semibold uppercase tracking-wide text-emerald-600">
           Багш
@@ -485,6 +485,6 @@ export function TeacherDashboardView() {
           <B2BSteps steps={CLASSROOM_WORKFLOW_STEPS} />
         </div>
       </section>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

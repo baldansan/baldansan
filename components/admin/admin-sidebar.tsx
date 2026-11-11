@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  ADMIN_NAV_ADVANCED,
   ADMIN_NAV_SECONDARY,
   ADMIN_NAV_SECTIONS,
+  ADMIN_NAV_SYSTEM,
   type AdminNavItem,
 } from "@/lib/admin/admin-nav";
+import { useWorkspaceRole } from "@/components/workspace/workspace-context";
 
 function NavLink({
   item,
@@ -61,48 +62,56 @@ export function AdminNavBody({
   pathname: string;
   onNavigate?: () => void;
 }) {
-  // Үндсэн бүлэгт орсон холбоосыг «Систем» хэсэгт давхардуулахгүй.
-  const inSections = new Set(
-    ADMIN_NAV_SECTIONS.flatMap((s) => s.items.map((i) => i.href))
-  );
-  const advanced = ADMIN_NAV_ADVANCED.filter((i) => !inSections.has(i.href));
+  const role = useWorkspaceRole();
+  // /admin доторх хуудсыг AdminGuard аль хэдийн хамгаалдаг тул тэнд шууд бүгдийг
+  // харуулна; /teacher дээр сервер «админ» гэж хариулсны дараа л нэмж гаргана.
+  const isAdmin = role === "admin" || (role === "unknown" && pathname.startsWith("/admin"));
+  const visible = (items: AdminNavItem[]) =>
+    items.filter((i) => isAdmin || !i.adminOnly);
+
   return (
     <>
-      {ADMIN_NAV_SECTIONS.map((section) => (
-        <div key={section.title}>
-          <SectionHeading
-            title={section.title}
-            description={section.description}
-          />
-          <ul className="flex flex-col gap-0.5">
-            {section.items.map((item) => (
+      {ADMIN_NAV_SECTIONS.map((section) => {
+        const items = visible(section.items);
+        if (items.length === 0) return null;
+        return (
+          <div key={section.title}>
+            <SectionHeading
+              title={section.title}
+              description={section.description}
+            />
+            <ul className="flex flex-col gap-0.5">
+              {items.map((item) => (
+                <li key={item.href}>
+                  <NavLink
+                    item={item}
+                    pathname={pathname}
+                    onNavigate={onNavigate}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+
+      {isAdmin ? (
+        <details
+          className="mt-4 border-t border-white/10 pt-3"
+          open={ADMIN_NAV_SYSTEM.some((item) => item.match(pathname))}
+        >
+          <summary className="cursor-pointer list-none rounded-xl px-3 py-2 text-xs font-semibold text-slate-400 hover:bg-white/5 hover:text-slate-200 [&::-webkit-details-marker]:hidden">
+            ⚙️ Систем <span className="text-[10px] font-normal">(ховор хэрэгтэй) ▾</span>
+          </summary>
+          <ul className="mt-1 flex flex-col gap-0.5">
+            {ADMIN_NAV_SYSTEM.map((item) => (
               <li key={item.href}>
-                <NavLink
-                  item={item}
-                  pathname={pathname}
-                  onNavigate={onNavigate}
-                />
+                <NavLink item={item} pathname={pathname} onNavigate={onNavigate} />
               </li>
             ))}
           </ul>
-        </div>
-      ))}
-
-      <details
-        className="mt-4 border-t border-white/10 pt-3"
-        open={advanced.some((item) => item.match(pathname))}
-      >
-        <summary className="cursor-pointer list-none px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-500 hover:text-slate-300 [&::-webkit-details-marker]:hidden">
-          Систем ба гаргалт ▾
-        </summary>
-        <ul className="mt-1 flex flex-col gap-0.5">
-          {advanced.map((item) => (
-            <li key={item.href}>
-              <NavLink item={item} pathname={pathname} onNavigate={onNavigate} />
-            </li>
-          ))}
-        </ul>
-      </details>
+        </details>
+      ) : null}
 
       <div className="mt-4 border-t border-white/10 pt-3">
         <ul className="flex flex-col gap-0.5">
@@ -133,11 +142,11 @@ export function AdminSidebar() {
           <p className="truncate text-sm font-bold text-white">
             Бөөндөө Сурцгаая
           </p>
-          <p className="text-[10px] text-slate-400">Удирдлагын хэсэг</p>
+          <p className="text-[10px] text-slate-400">Багшийн ажлын талбар</p>
         </div>
       </div>
       <nav
-        aria-label="Админ цэс"
+        aria-label="Ажлын талбарын цэс"
         className="flex-1 overflow-y-auto px-3 pb-6 pt-1"
       >
         <AdminNavBody pathname={pathname} />

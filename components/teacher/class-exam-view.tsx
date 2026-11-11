@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { ClassExamComposer } from "@/components/teacher/class-exam-composer";
 import { ClassExamResults } from "@/components/teacher/class-exam-results";
 import type { ClassroomExamSummary } from "@/lib/classroom/exam-types";
@@ -48,14 +48,14 @@ export function ClassExamView({ classroomId }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Ачаалж байна…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/teacher/classes/${classroomId}`}
@@ -114,6 +114,6 @@ export function ClassExamView({ classroomId }: Props) {
           </div>
         )}
       </section>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

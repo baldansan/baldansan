@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { CLASS_LEVELS } from "@/lib/content/classroom-copy";
 import type { MyOrganization } from "@/lib/b2b/types";
 import { canManageClassrooms } from "@/lib/supabase/organization-permissions";
@@ -65,7 +65,7 @@ export function CreateClassForm() {
   const selectedOrg = orgs.find((o) => o.id === organizationId);
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href="/teacher/classes"
@@ -86,7 +86,7 @@ export function CreateClassForm() {
         {orgs.length > 0 ? (
           <>
             <label className="flex flex-col gap-1 text-sm">
-              <span className="font-medium text-slate-700">Classroom type</span>
+              <span className="font-medium text-slate-700">Ангийн төрөл</span>
               <select
                 value={scope}
                 onChange={(e) =>
@@ -94,14 +94,14 @@ export function CreateClassForm() {
                 }
                 className="rounded-lg border border-slate-200 px-3 py-2"
               >
-                <option value="personal">Personal classroom</option>
-                <option value="organization">Organization classroom</option>
+                <option value="personal">Миний хувийн анги</option>
+                <option value="organization">Байгууллагын анги</option>
               </select>
             </label>
             {scope === "organization" ? (
               <>
                 <label className="flex flex-col gap-1 text-sm">
-                  <span className="font-medium text-slate-700">Organization</span>
+                  <span className="font-medium text-slate-700">Байгууллага</span>
                   <select
                     value={organizationId}
                     onChange={(e) => setOrganizationId(e.target.value)}
@@ -125,7 +125,7 @@ export function CreateClassForm() {
         ) : null}
 
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Class name</span>
+          <span className="font-medium text-slate-700">Ангийн нэр</span>
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -135,7 +135,7 @@ export function CreateClassForm() {
           />
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Level</span>
+          <span className="font-medium text-slate-700">Түвшин</span>
           <select
             value={level}
             onChange={(e) => setLevel(e.target.value)}
@@ -149,7 +149,7 @@ export function CreateClassForm() {
           </select>
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Description</span>
+          <span className="font-medium text-slate-700">Тайлбар</span>
           <textarea
             value={description}
             onChange={(e) => setDescription(e.target.value)}
@@ -165,9 +165,9 @@ export function CreateClassForm() {
           disabled={saving}
           className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-600 disabled:opacity-60"
         >
-          {saving ? "Creating…" : "Create class"}
+          {saving ? "Үүсгэж байна…" : "Анги үүсгэх"}
         </button>
       </form>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

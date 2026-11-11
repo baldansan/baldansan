@@ -53,17 +53,17 @@ export function StudentInviteForm({
       onSubmit={(e) => void handleSubmit(e)}
       className="flex flex-col gap-3 rounded-2xl bg-slate-50 p-4 ring-1 ring-slate-200"
     >
-      <h3 className="text-sm font-semibold text-slate-800">Generate student invite link</h3>
+      <h3 className="text-sm font-semibold text-slate-800">Сурагчийн урилгын холбоос үүсгэх</h3>
       <input
         value={displayName}
         onChange={(e) => setDisplayName(e.target.value)}
-        placeholder="Display name"
+        placeholder="Нэр"
         className="rounded-lg border border-slate-200 px-3 py-2 text-sm"
       />
       <input
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email"
+        placeholder="Имэйл"
         className="rounded-lg border border-slate-200 px-3 py-2 text-sm"
       />
       <button
@@ -71,7 +71,7 @@ export function StudentInviteForm({
         disabled={saving}
         className="self-start rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white disabled:opacity-60"
       >
-        {saving ? "Creating…" : "Generate student invite link"}
+        {saving ? "Үүсгэж байна…" : "Урилгын холбоос үүсгэх"}
       </button>
       {invitation ? (
         <InviteLinkActions

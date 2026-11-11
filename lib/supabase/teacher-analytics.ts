@@ -278,7 +278,8 @@ export async function getClassroomProgressAnalytics(
 
   const assignmentSummaries: AssignmentSummaryRow[] = assignmentList.map((a) => {
     const forAssignment = results.filter((r) => r.assignmentId === a.id);
-    const linkedCount = linkedStudents.length;
+    // Нэг сурагчид онилсон даалгаврыг бүх ангиар хуваахгүй — 1 хүнээс хэд нь хийсэн.
+    const linkedCount = a.targetStudentUserId ? 1 : linkedStudents.length;
     const completed = forAssignment.filter((r) =>
       completedStatus(r.status)
     ).length;
@@ -549,6 +550,8 @@ export async function getTeacherAssignmentSummary(): Promise<
       dueDate: a.dueDate,
       completionRate: rate(completed, total),
       averageQuizPercentage: avg(percents),
+      completedCount: completed,
+      totalCount: total,
     };
   });
 

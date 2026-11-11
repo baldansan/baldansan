@@ -7,7 +7,7 @@ type Props = {
 
 export function AssignmentProgressTable({ rows }: Props) {
   if (rows.length === 0) {
-    return <p className="text-sm text-slate-600">No students enrolled.</p>;
+    return <p className="text-sm text-slate-600">Сурагч алга.</p>;
   }
 
   return (
@@ -15,10 +15,10 @@ export function AssignmentProgressTable({ rows }: Props) {
       <table className="w-full min-w-[520px] text-left text-sm">
         <thead className="bg-slate-50 text-xs uppercase text-slate-500">
           <tr>
-            <th className="px-4 py-3">Student</th>
-            <th className="px-4 py-3">Status</th>
-            <th className="px-4 py-3">Quiz</th>
-            <th className="px-4 py-3">Completed</th>
+            <th className="px-4 py-3">Сурагч</th>
+            <th className="px-4 py-3">Төлөв</th>
+            <th className="px-4 py-3">Дасгалын оноо</th>
+            <th className="px-4 py-3">Дуусгасан</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-slate-100 bg-white">

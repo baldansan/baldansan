@@ -3,7 +3,19 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-export function FeedbackResolveButton({ id, resolved }: { id: string; resolved: boolean }) {
+export function FeedbackResolveButton({
+  id,
+  ids,
+  resolved,
+  label,
+}: {
+  id?: string;
+  /** Олон мөрийг нэг дор тэмдэглэх (бүлгийн товч). */
+  ids?: string[];
+  resolved: boolean;
+  label?: string;
+}) {
+  const targetIds = ids ?? (id ? [id] : []);
   const router = useRouter();
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
@@ -16,7 +28,7 @@ export function FeedbackResolveButton({ id, resolved }: { id: string; resolved: 
       const res = await fetch("/api/admin/feedback/resolve", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ids: [id], resolved: !resolved }),
+        body: JSON.stringify({ ids: targetIds, resolved: !resolved }),
       });
       const json = (await res.json().catch(() => ({}))) as { error?: string };
       if (!res.ok) throw new Error(json.error || `HTTP ${res.status}`);
@@ -40,7 +52,7 @@ export function FeedbackResolveButton({ id, resolved }: { id: string; resolved: 
             : "bg-white text-emerald-700 ring-emerald-300 hover:bg-emerald-50"
         } disabled:opacity-60`}
       >
-        {busy ? "…" : resolved ? "✓ Засагдсан" : "Засагдсан гэж тэмдэглэх"}
+        {busy ? "…" : (label ?? (resolved ? "✓ Засагдсан" : "Засагдсан гэж тэмдэглэх"))}
       </button>
       {err ? <span className="text-xs text-rose-600">{err}</span> : null}
     </span>

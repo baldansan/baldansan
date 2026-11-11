@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function NewClassPage() {
   return (
-    <Suspense fallback={<p className="p-4 text-sm text-slate-600">Loading…</p>}>
+    <Suspense fallback={<p className="p-4 text-sm text-slate-600">Ачаалж байна…</p>}>
       <CreateClassForm />
     </Suspense>
   );

@@ -1,11 +1,6 @@
-import { TeacherDashboardView } from "@/components/b2b/teacher-dashboard-view";
+import { redirect } from "next/navigation";
 
-export const metadata = {
-  title: "Багшийн самбар — Бөөндөө Сурцгаая",
-  description:
-    "Багшийн самбар — ангийн ахиц, даалгавар, тайлан.",
-};
-
+/** Хуучин хаяг — одоо багшийн нүүр «Өнөөдөр». */
 export default function TeacherDashboardPage() {
-  return <TeacherDashboardView />;
+  redirect("/teacher/today");
 }

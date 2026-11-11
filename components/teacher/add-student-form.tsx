@@ -46,9 +46,9 @@ export function AddStudentForm({ classroomId, onAdded }: Props) {
         void handleAdd();
       }}
     >
-      <h3 className="font-semibold text-slate-900">Add student</h3>
+      <h3 className="font-semibold text-slate-900">Сурагч нэмэх</h3>
       <label className="flex flex-col gap-1 text-sm">
-        <span className="font-medium text-slate-700">Display name</span>
+        <span className="font-medium text-slate-700">Нэр</span>
         <input
           value={displayName}
           onChange={(e) => setDisplayName(e.target.value)}
@@ -57,7 +57,7 @@ export function AddStudentForm({ classroomId, onAdded }: Props) {
         />
       </label>
       <label className="flex flex-col gap-1 text-sm">
-        <span className="font-medium text-slate-700">Email</span>
+        <span className="font-medium text-slate-700">Имэйл</span>
         <input
           type="email"
           value={email}
@@ -72,7 +72,7 @@ export function AddStudentForm({ classroomId, onAdded }: Props) {
         <input
           value={studentUserId}
           onChange={(e) => setStudentUserId(e.target.value)}
-          placeholder="UUID if known"
+          placeholder="Хэрэглэгчийн ID (мэдэж байвал)"
           className="rounded-lg border border-slate-200 px-3 py-2 font-mono text-xs"
         />
       </label>
@@ -84,7 +84,7 @@ export function AddStudentForm({ classroomId, onAdded }: Props) {
         disabled={saving}
         className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600 disabled:opacity-60"
       >
-        {saving ? "Adding…" : "Add student"}
+        {saving ? "Нэмж байна…" : "Сурагч нэмэх"}
       </button>
     </form>
   );

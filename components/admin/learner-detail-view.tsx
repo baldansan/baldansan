@@ -69,13 +69,13 @@ export function LearnerDetailView({ learners, detail }: Props) {
         >
           {learners.map((l) => (
             <option key={l.userId} value={l.userId}>
-              {l.userId.slice(0, 8)}… — {l.attemptCount} оролдлого
+              {l.label ?? `Нэргүй суралцагч · ${l.userId.slice(0, 4)}`} — {l.attemptCount} хариулт
             </option>
           ))}
         </select>
         {detail.userId ? (
-          <p className="mt-2 font-mono text-xs text-slate-500">
-            user_id: {detail.userId}
+          <p className="mt-2 text-xs text-slate-400">
+            Системийн дугаар: <span className="font-mono">{detail.userId.slice(0, 8)}</span>
           </p>
         ) : null}
       </div>

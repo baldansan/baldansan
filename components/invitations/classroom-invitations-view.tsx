@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { InviteLinkActions } from "@/components/invitations/invite-link-actions";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import type { OrganizationInvitation } from "@/lib/b2b/types";
 import { buildInviteUrl } from "@/lib/organization/invite-url";
 import { getClassroomById } from "@/lib/supabase/classrooms";
@@ -50,14 +50,14 @@ export function ClassroomInvitationsView({ classroomId }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
-        <p className="text-sm text-slate-600">Loading invitations…</p>
-      </PublicPageShell>
+      <TeacherShell active="help" showBottomNav={false}>
+        <p className="text-sm text-slate-600">Урилгуудыг ачаалж байна…</p>
+      </TeacherShell>
     );
   }
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/teacher/classes/${classroomId}`}
@@ -65,7 +65,7 @@ export function ClassroomInvitationsView({ classroomId }: Props) {
         >
           ← Classroom
         </Link>
-        <h1 className="mt-2 text-2xl font-bold">Classroom invitations</h1>
+        <h1 className="mt-2 text-2xl font-bold">Ангийн урилгууд</h1>
         <p className="mt-1 text-sm text-slate-600">{classroomName}</p>
         {error ? (
           <p className="mt-2 rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800">
@@ -76,7 +76,7 @@ export function ClassroomInvitationsView({ classroomId }: Props) {
 
       <ul className="flex flex-col gap-2">
         {invitations.length === 0 ? (
-          <li className="text-sm text-slate-600">No student invitations yet.</li>
+          <li className="text-sm text-slate-600">Одоогоор урилга алга.</li>
         ) : (
           invitations.map((inv) => (
             <li
@@ -86,7 +86,7 @@ export function ClassroomInvitationsView({ classroomId }: Props) {
               <div className="flex flex-wrap items-start justify-between gap-2">
                 <div>
                   <p className="font-medium text-slate-900">
-                    {inv.displayName ?? inv.email ?? "Student invite"}
+                    {inv.displayName ?? inv.email ?? "Сурагчийн урилга"}
                   </p>
                   <p className="text-xs text-slate-500">
                     {inv.status} · expires{" "}
@@ -100,14 +100,14 @@ export function ClassroomInvitationsView({ classroomId }: Props) {
                       onClick={() => void handleCopyUrl(inv.inviteToken, inv.id)}
                       className="text-xs font-semibold text-emerald-600"
                     >
-                      {copiedId === inv.id ? "Copied!" : "Copy URL"}
+                      {copiedId === inv.id ? "Хууллаа!" : "Холбоос хуулах"}
                     </button>
                     <button
                       type="button"
                       onClick={() => void handleRevoke(inv.id)}
                       className="text-xs text-red-600"
                     >
-                      Revoke
+                      Цуцлах
                     </button>
                   </div>
                 ) : null}
@@ -124,6 +124,6 @@ export function ClassroomInvitationsView({ classroomId }: Props) {
           ))
         )}
       </ul>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

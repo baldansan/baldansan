@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { DonutChart, LineChart, StatTile, fmtNum, fmtPct } from "@/components/charts";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { ClassAssignmentComposer } from "@/components/teacher/class-assignment-composer";
 import { GradeChip, Pct, WeakAreaChip, formatLastActive } from "@/components/teacher/class-dashboard/shared";
 import { WEAK_SPOT_AREA_LABELS } from "@/lib/analytics/weak-spots";
@@ -73,20 +73,20 @@ export function StudentDetailView({ classroomId, studentUserId }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Ачаалж байна…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!detail) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">{error ?? "Сурагч олдсонгүй."}</p>
         <Link href={`/teacher/classes/${classroomId}`} className="mt-2 text-sm text-emerald-600">
           ← Ангид буцах
         </Link>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
@@ -98,7 +98,7 @@ export function StudentDetailView({ classroomId, studentUserId }: Props) {
   const hours30 = detail.minutes30 / 60;
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/teacher/classes/${classroomId}`}
@@ -353,6 +353,6 @@ export function StudentDetailView({ classroomId, studentUserId }: Props) {
           />
         </div>
       </section>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

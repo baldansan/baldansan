@@ -1,7 +1,7 @@
 import { AssignmentDetailView } from "@/components/teacher/assignment-detail-view";
 
 export const metadata = {
-  title: "Assignment detail — Teacher",
+  title: "Даалгаврын үр дүн — Багш",
   description: "Assignment details and student results.",
 };
 

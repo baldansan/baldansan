@@ -49,7 +49,7 @@ export function ReportExportCard({
         onClick={handleDownload}
         className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:border-emerald-200"
       >
-        Download markdown
+        Файлаар татах
       </button>
     </div>
   );

@@ -190,7 +190,7 @@ export function AdminDashboard({
             return (
               <Link
                 key={option.days}
-                href={`/admin?days=${option.days}`}
+                href={`/admin/overview?days=${option.days}`}
                 aria-current={active ? "true" : undefined}
                 className={
                   active

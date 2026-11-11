@@ -1,6 +1,11 @@
 import "server-only";
 
 import {
+  getLearnerNameMap,
+  learnerDisplayLabel,
+  type LearnerNameMap,
+} from "@/lib/supabase/admin-learner-grades";
+import {
   formatGrammarAttemptPointLabel,
   formatGrammarAttemptQuestionLabel,
 } from "@/lib/grammar/grammar-attempt-label";
@@ -14,6 +19,8 @@ export type LearnerOption = {
   userId: string;
   attemptCount: number;
   lastActiveAt: string | null;
+  /** Нэр эсвэл имэйл (090) — байхгүй бол null. */
+  label?: string | null;
 };
 
 export type LearnerAttemptRow = {
@@ -130,7 +137,17 @@ export async function listLearnerOptions(): Promise<LearnerOption[]> {
     }
   }
 
-  return [...byUser.values()].sort((a, b) => b.attemptCount - a.attemptCount);
+  const names = await getLearnerNameMap().catch(() => ({}) as LearnerNameMap);
+  return [...byUser.values()]
+    .map((o) => ({
+      ...o,
+      label: learnerDisplayLabel(
+        o.userId,
+        names[o.userId]?.displayName,
+        names[o.userId]?.email
+      ),
+    }))
+    .sort((a, b) => b.attemptCount - a.attemptCount);
 }
 
 export async function getLearnerDetail(

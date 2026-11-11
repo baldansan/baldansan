@@ -45,6 +45,7 @@ import {
   type MyRank,
 } from "@/lib/points/rank";
 import { HomeTodaySection } from "@/components/home/home-today-section";
+import { TeacherAssignmentBanner } from "@/components/home/teacher-assignment-banner";
 import { HomeQuickSearch } from "@/components/home/home-quick-search";
 import { QuickStartCard } from "@/components/home/quick-start-card";
 import type { BichlegSuggestion } from "@/lib/mobile-home-data";
@@ -623,6 +624,9 @@ export function HomeAppView({
           </Link>
         ) : null}
       </ul>
+
+      {/* Багшийн даалгавар — ЗААВАЛ; хийж дуустал хамгийн дээр байна */}
+      <TeacherAssignmentBanner loggedIn={loggedIn} />
 
       {/* Өнөөдөр: даалгавар · давтах · бичлэг */}
       <HomeTodaySection

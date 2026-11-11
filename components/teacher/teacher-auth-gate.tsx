@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { getCurrentUser, hasSupabaseConfig } from "@/lib/supabase/auth";
 
 type Props = {
@@ -35,18 +35,18 @@ export function TeacherAuthGate({
 
   if (loggedIn === null) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
-        <p className="text-sm text-slate-600">Loading…</p>
-      </PublicPageShell>
+      <TeacherShell active="help" showBottomNav={false}>
+        <p className="text-sm text-slate-600">Ачаалж байна…</p>
+      </TeacherShell>
     );
   }
 
   if (requireLogin && !loggedIn) {
     return (
       loginPrompt ?? (
-        <PublicPageShell active="help" showBottomNav={false}>
+        <TeacherShell active="help" showBottomNav={false}>
           <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
-            <h1 className="text-2xl font-bold text-slate-900">Teacher area</h1>
+            <h1 className="text-2xl font-bold text-slate-900">Багшийн хэсэг</h1>
             <p className="mt-2 text-sm text-slate-600">
               Энэ хэсэгт нэвтрэх шаардлагатай.
             </p>
@@ -65,7 +65,7 @@ export function TeacherAuthGate({
               </Link>
             </div>
           </section>
-        </PublicPageShell>
+        </TeacherShell>
       )
     );
   }

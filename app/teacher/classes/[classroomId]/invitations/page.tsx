@@ -1,7 +1,7 @@
 import { ClassroomInvitationsView } from "@/components/invitations/classroom-invitations-view";
 
 export const metadata = {
-  title: "Classroom invitations",
+  title: "Ангийн урилгууд",
 };
 
 type Props = {

@@ -315,7 +315,31 @@ export async function getLearnerGradeBoard(
   };
 }
 
-/** Names from class rosters, when the admin can read them. */
+/** Харуулах нэр: нэр → имэйл → «Нэргүй суралцагч · код». Хэзээ ч зөвхөн код биш. */
+export function learnerDisplayLabel(
+  userId: string,
+  displayName?: string | null,
+  email?: string | null
+): string {
+  if (displayName?.trim()) return displayName.trim();
+  if (email?.trim()) return email.trim();
+  return `Нэргүй суралцагч · ${userId.slice(0, 4)}`;
+}
+
+export type LearnerNameMap = Record<
+  string,
+  { displayName: string | null; email: string | null }
+>;
+
+/** Бүх суралцагчийн нэр/имэйл — админ хуудсуудад код биш нэр харуулахад. */
+export async function getLearnerNameMap(): Promise<LearnerNameMap> {
+  const client = await createServerSupabaseClient();
+  if (!client) return {};
+  const names = await readRosterNames(client);
+  return Object.fromEntries(names.entries());
+}
+
+/** Names from class rosters + profiles (090), when the admin can read them. */
 async function readRosterNames(
   client: SupabaseServerClient
 ): Promise<Map<string, { displayName: string | null; email: string | null }>> {
@@ -331,15 +355,37 @@ async function readRosterNames(
       .not("student_user_id", "is", null)
       .limit(5000);
 
-    if (error || !data) return names;
+    if (!error && data) {
+      for (const row of data as unknown as Record<string, unknown>[]) {
+        const userId = row.student_user_id ? String(row.student_user_id) : "";
+        if (!userId || names.has(userId)) continue;
+        names.set(userId, {
+          displayName: row.display_name ? String(row.display_name) : null,
+          email: row.email ? String(row.email) : null,
+        });
+      }
+    }
+  } catch {
+    // Roster names are a nicety; the board works without them.
+  }
 
-    for (const row of data as unknown as Record<string, unknown>[]) {
-      const userId = row.student_user_id ? String(row.student_user_id) : "";
-      if (!userId || names.has(userId)) continue;
-      names.set(userId, {
-        displayName: row.display_name ? String(row.display_name) : null,
-        email: row.email ? String(row.email) : null,
-      });
+  // 090: ангид ороогүй хүний нэр/имэйлийг ч авна (профайл, бүртгэлийн нэр).
+  // Функц байхгүй (migration ажиллаагүй) бол чимээгүй алгасна.
+  try {
+    const { data, error } = await client.rpc("admin_learner_names");
+    if (!error && Array.isArray(data)) {
+      for (const row of data as Record<string, unknown>[]) {
+        const userId = row.user_id ? String(row.user_id) : "";
+        if (!userId) continue;
+        const prev = names.get(userId);
+        const displayName = row.display_name ? String(row.display_name) : null;
+        const email = row.email ? String(row.email) : null;
+        names.set(userId, {
+          // Ангийн жагсаалтад багшийн өгсөн нэр байвал түүнийг эрхэмлэнэ.
+          displayName: prev?.displayName ?? displayName,
+          email: prev?.email ?? email,
+        });
+      }
     }
   } catch {
     // Roster names are a nicety; the board works without them.

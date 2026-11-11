@@ -35,9 +35,14 @@ function formatDate(value: string | null): string {
   });
 }
 
-function learnerLabel(userId: string, displayName: string | null): string {
+function learnerLabel(
+  userId: string,
+  displayName: string | null,
+  email?: string | null
+): string {
   if (displayName?.trim()) return displayName.trim();
-  return `Суралцагч ${userId.slice(0, 8)}`;
+  if (email?.trim()) return email.trim();
+  return `Нэргүй суралцагч · ${userId.slice(0, 4)}`;
 }
 
 export function GradeChip({
@@ -229,7 +234,7 @@ export function LearnerGradeBoardView({ board }: Props) {
                             href={`/admin/learner?user=${row.userId}`}
                             className="font-medium text-slate-900 hover:text-emerald-700"
                           >
-                            {learnerLabel(row.userId, row.displayName)}
+                            {learnerLabel(row.userId, row.displayName, row.email)}
                           </Link>
                           {row.isDemo ? (
                             <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-bold text-amber-900">

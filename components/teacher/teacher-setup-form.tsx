@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
 import { upsertCurrentTeacherProfile } from "@/lib/supabase/classrooms";
 
@@ -18,15 +18,15 @@ export function TeacherSetupForm() {
 
   if (loggedIn === null) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
-        <p className="text-sm text-slate-600">Loading…</p>
-      </PublicPageShell>
+      <TeacherShell active="help" showBottomNav={false}>
+        <p className="text-sm text-slate-600">Ачаалж байна…</p>
+      </TeacherShell>
     );
   }
 
   if (!loggedIn) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           <h1 className="text-2xl font-bold">Багшийн profile</h1>
           <p className="mt-2 text-sm text-slate-600">Нэвтэрсний дараа profile үүсгэнэ.</p>
@@ -37,7 +37,7 @@ export function TeacherSetupForm() {
             Нэвтрэх
           </Link>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
@@ -55,11 +55,11 @@ export function TeacherSetupForm() {
       setError(saveError);
       return;
     }
-    router.push("/teacher-dashboard");
+    router.push("/teacher/today");
   }
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <h1 className="text-3xl font-bold tracking-tight">Багшийн profile</h1>
         <p className="mt-2 text-sm text-slate-600">
@@ -75,7 +75,7 @@ export function TeacherSetupForm() {
         }}
       >
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Display name</span>
+          <span className="font-medium text-slate-700">Нэр</span>
           <input
             value={displayName}
             onChange={(e) => setDisplayName(e.target.value)}
@@ -84,7 +84,7 @@ export function TeacherSetupForm() {
           />
         </label>
         <label className="flex flex-col gap-1 text-sm">
-          <span className="font-medium text-slate-700">Organization</span>
+          <span className="font-medium text-slate-700">Байгууллага</span>
           <input
             value={organization}
             onChange={(e) => setOrganization(e.target.value)}
@@ -113,9 +113,9 @@ export function TeacherSetupForm() {
           disabled={saving}
           className="rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-600 disabled:opacity-60"
         >
-          {saving ? "Saving…" : "Save teacher profile"}
+          {saving ? "Хадгалж байна…" : "Хадгалах"}
         </button>
       </form>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

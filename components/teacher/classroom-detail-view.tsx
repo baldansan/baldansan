@@ -13,7 +13,7 @@ import { ClassJoinCodeCard } from "@/components/teacher/class-join-code-card";
 import { ClassCurriculumEditor } from "@/components/teacher/class-curriculum-editor";
 import { ClassKidsSection } from "@/components/teacher/class-kids-section";
 import { ClassWritingHomework } from "@/components/teacher/class-writing-homework";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { StatTile, fmtNum, fmtPct } from "@/components/charts";
 import {
   ClassAssignmentComposer,
@@ -74,7 +74,12 @@ export function ClassroomDetailView({ classroomId }: Props) {
   const [insights, setInsights] = useState<ClassInsights | null>(null);
   const [insightsLoading, setInsightsLoading] = useState(true);
   const [insightsError, setInsightsError] = useState<string | null>(null);
-  const [tab, setTab] = useState<TabKey>("students");
+  // ?tab=weak гэх мэтээр шууд тухайн таб руу орж болно («Өнөөдөр» хуудаснаас).
+  const [tab, setTab] = useState<TabKey>(() => {
+    if (typeof window === "undefined") return "students";
+    const wanted = new URLSearchParams(window.location.search).get("tab");
+    return TABS.some((t) => t.key === wanted) ? (wanted as TabKey) : "students";
+  });
   const [prefill, setPrefill] = useState<ComposerPrefill | null>(null);
   const composerRef = useRef<HTMLDivElement | null>(null);
 
@@ -121,20 +126,20 @@ export function ClassroomDetailView({ classroomId }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Ачаалж байна…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!analytics) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">{error ?? "Анги олдсонгүй."}</p>
         <Link href="/teacher/classes" className="mt-2 text-sm text-emerald-600">
           ← Миний ангиуд
         </Link>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
@@ -147,7 +152,7 @@ export function ClassroomDetailView({ classroomId }: Props) {
   );
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href="/teacher/classes"
@@ -468,6 +473,6 @@ export function ClassroomDetailView({ classroomId }: Props) {
           </div>
         </section>
       ) : null}
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

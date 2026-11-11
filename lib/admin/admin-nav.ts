@@ -5,6 +5,8 @@ export type AdminNavItem = {
   /** One line explaining what the page is for — shown in the settings index. */
   hint?: string;
   match: (pathname: string) => boolean;
+  /** Зөвхөн админд (эзэмшигчид) харагдана; багшид нуугдана. */
+  adminOnly?: boolean;
 };
 
 export type AdminNavSection = {
@@ -17,11 +19,11 @@ export type AdminNavSection = {
 /** Daily-use sidebar links — what content work actually touches. */
 export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
   {
-    href: "/admin",
-    label: "Хяналтын самбар",
+    href: "/admin/overview",
+    label: "Контентын самбар",
     icon: "📊",
-    hint: "Бүх зүйл хувиар нэг харцаар: хичээл, шалгалт, суралцагч, алдаа.",
-    match: (p) => p === "/admin",
+    hint: "Аппын агуулга хувиар нэг харцаар: хичээл, шалгалт, суралцагч, алдаа.",
+    match: (p) => p.startsWith("/admin/overview"),
   },
   {
     href: "/admin/lessons",
@@ -148,9 +150,9 @@ export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
   },
   {
     href: "/admin/settings",
-    label: "Тохиргоо",
-    icon: "⚙️",
-    hint: "Бүх хэрэгслийн жагсаалт.",
+    label: "Бүх хэрэгсэл",
+    icon: "🧰",
+    hint: "Ажлын талбарын бүх хуудасны жагсаалт нэг дор.",
     match: (p) => p.startsWith("/admin/settings"),
   },
   {
@@ -231,45 +233,138 @@ function pick(items: AdminNavItem[], hrefs: string[]): AdminNavItem[] {
     .filter((i): i is AdminNavItem => Boolean(i));
 }
 
-/** Цэс 4 ойлгомжтой бүлэгт: Самбар → Контент → Суралцагчид → Тайлан. */
-export const ADMIN_NAV_SECTIONS: AdminNavSection[] = [
+/** Багшийн өдөр тутмын ажил — анги, сурагч, даалгавар, тайлан. */
+export const ADMIN_NAV_TEACHER: AdminNavItem[] = [
   {
-    title: "Самбар",
-    description: "Бүгд нэг харцаар, хувиар",
-    items: pick(ADMIN_NAV_PRIMARY, ["/admin"]),
+    href: "/teacher/today",
+    label: "Өнөөдөр",
+    icon: "🏠",
+    hint: "Ангийн байдал нэг харцаар: хэн сайн, хэн хоцорч байна, хэнд юу өгөх.",
+    match: (p) => p === "/teacher/today" || p === "/admin",
   },
   {
-    title: "Контент",
-    description: "Хичээл, шалгалт, бичлэг, импорт",
-    items: pick(ADMIN_NAV_PRIMARY, [
-      "/admin/lessons",
-      "/admin/mock-tests/tutor-notes",
-      "/admin/bichleg",
-      "/admin/source",
-      "/admin/import",
-    ]),
+    href: "/teacher/classes",
+    label: "Миний ангиуд",
+    icon: "👥",
+    hint: "Анги үүсгэх, сурагч нэмэх, ангийн ахиц, ирц, шалгалт.",
+    match: (p) => p.startsWith("/teacher/classes"),
   },
   {
-    title: "Суралцагчид",
-    description: "Хүмүүс, бүлэг, сургууль",
-    items: pick(ADMIN_NAV_INSIGHTS, [
-      "/admin/learners",
-      "/admin/learner",
-      "/admin/b2b",
-      "/admin/center",
-      "/admin/center/report",
-      "/admin/center/certificate",
-    ]),
+    href: "/admin/learners",
+    label: "Сурагчид",
+    icon: "🎓",
+    hint: "Апп ашиглаж буй бүх хүн нэрээрээ, A–F үнэлгээтэй.",
+    match: (p) => p.startsWith("/admin/learner"),
+    adminOnly: true,
   },
   {
-    title: "Тайлан ба ажил",
-    description: "Гүйцэтгэл, алдаа, хийх ажил",
-    items: [
-      ...pick(ADMIN_NAV_INSIGHTS, ["/admin/analytics", "/admin/feedback", "/admin/tasks"]),
-      ...pick(ADMIN_NAV_ADVANCED, ["/admin/activity"]),
-    ],
+    href: "/teacher/assignments",
+    label: "Даалгавар",
+    icon: "📝",
+    hint: "Даалгавар өгөх, хэн хийсэн/хийгээгүйг харах.",
+    match: (p) => p.startsWith("/teacher/assignments"),
+  },
+  {
+    href: "/teacher/reports",
+    label: "Тайлан",
+    icon: "📈",
+    hint: "Ангийн, сурагчийн, эцэг эхэд өгөх тайлан, гэрчилгээ.",
+    match: (p) =>
+      p.startsWith("/teacher/reports") ||
+      p.startsWith("/admin/analytics") ||
+      p.startsWith("/admin/center"),
   },
 ];
+
+/** Хичээлийн сан — багш сонгож ангидаа өгнө, админ засна. */
+export const ADMIN_NAV_LIBRARY: AdminNavItem[] = [
+  {
+    href: "/teacher/library",
+    label: "Хичээлүүд",
+    icon: "📚",
+    hint: "Бүх хичээл номоор бүлэглэсэн; «Ангид өгөх» товчтой.",
+    match: (p) =>
+      p.startsWith("/teacher/library") ||
+      (p.startsWith("/admin/lessons") && p !== "/admin/lessons/new"),
+  },
+  {
+    href: "/admin/mock-tests/tutor-notes",
+    label: "Загвар шалгалт",
+    icon: "🧾",
+    hint: "HSK-ийн жинхэнэ шалгалтууд (真题), асуулт бүрийн тайлбар.",
+    match: (p) => p.startsWith("/admin/mock-tests"),
+    adminOnly: true,
+  },
+  {
+    href: "/admin/bichleg",
+    label: "Бичлэг",
+    icon: "▶",
+    hint: "Хадмалтай видео хичээлүүд.",
+    match: (p) => p.startsWith("/admin/bichleg"),
+    adminOnly: true,
+  },
+  {
+    href: "/admin/import",
+    label: "Шинээр оруулах",
+    icon: "➕",
+    hint: "Бэлэн багцаас (ZIP) хичээл, шалгалт, бичлэг оруулах.",
+    match: (p) => p.startsWith("/admin/import") || p === "/admin/lessons/new",
+    adminOnly: true,
+  },
+];
+
+/** Бусад — алдаа, байгууллага, заавар. */
+export const ADMIN_NAV_OTHER: AdminNavItem[] = [
+  {
+    href: "/admin/feedback",
+    label: "Алдааны мэдээлэл",
+    icon: "🐞",
+    hint: "Хэрэглэгчдийн илгээсэн алдаа — хичээлээр бүлэглэсэн.",
+    match: (p) => p.startsWith("/admin/feedback"),
+    adminOnly: true,
+  },
+  {
+    href: "/admin/b2b",
+    label: "Сургууль, байгууллага",
+    icon: "🏫",
+    hint: "Хамтрагч сургууль, тэдний анги, багшийн урилга.",
+    match: (p) => p.startsWith("/admin/b2b"),
+    adminOnly: true,
+  },
+  {
+    href: "/teacher/guide",
+    label: "Заавар",
+    icon: "❓",
+    hint: "«Би … хиймээр байна» — алхам алхмаар заавар.",
+    match: (p) => p.startsWith("/teacher/guide") || p.startsWith("/admin/guide"),
+  },
+];
+
+/** Цэс 3 бүлэгт: Багшийн ажил → Хичээлийн сан → Бусад. «Систем» тусдаа, хураалттай. */
+export const ADMIN_NAV_SECTIONS: AdminNavSection[] = [
+  {
+    title: "Багшийн ажил",
+    description: "Анги, сурагч, даалгавар",
+    items: ADMIN_NAV_TEACHER,
+  },
+  {
+    title: "Хичээлийн сан",
+    description: "Бэлэн хичээл, шалгалт, бичлэг",
+    items: ADMIN_NAV_LIBRARY,
+  },
+  {
+    title: "Бусад",
+    description: "Алдаа, байгууллага, заавар",
+    items: ADMIN_NAV_OTHER,
+  },
+];
+
+/** «Систем» — ховор хэрэглэгдэх, зөвхөн эзэмшигчид. Цэсэнд хураалттай. */
+export const ADMIN_NAV_SYSTEM: AdminNavItem[] = [
+  ...pick(ADMIN_NAV_PRIMARY, ["/admin/overview", "/admin/source"]),
+  ...pick(ADMIN_NAV_INSIGHTS, ["/admin/tasks"]),
+  ...ADMIN_NAV_ADVANCED.filter((i) => i.href !== "/admin/guide"),
+].map((i) => ({ ...i, adminOnly: true }));
 
 export const ADMIN_NAV_SECONDARY: AdminNavItem[] = [
   {
@@ -282,14 +377,29 @@ export const ADMIN_NAV_SECONDARY: AdminNavItem[] = [
 
 /** Every navigable admin destination — used for titles and the settings index. */
 export const ADMIN_NAV_ALL: AdminNavItem[] = [
+  ...ADMIN_NAV_TEACHER,
+  ...ADMIN_NAV_LIBRARY,
+  ...ADMIN_NAV_OTHER,
   ...ADMIN_NAV_PRIMARY,
   ...ADMIN_NAV_INSIGHTS,
   ...ADMIN_NAV_ADVANCED,
 ];
 
 export function resolveAdminPageTitle(pathname: string): string {
-  if (pathname === "/admin") return "Хяналтын самбар";
+  if (pathname === "/admin" || pathname === "/teacher/today") return "Өнөөдөр";
   if (pathname === "/admin/lessons/new") return "Шинэ хичээл";
+  if (pathname === "/teacher/classes/new") return "Шинэ анги";
+  if (pathname === "/teacher/assignments/new") return "Даалгавар өгөх";
+  if (/^\/teacher\/classes\/[^/]+\/students\/[^/]+$/.test(pathname)) {
+    return "Сурагчийн хуудас";
+  }
+  if (/^\/teacher\/assignments\/[^/]+$/.test(pathname)) {
+    return "Даалгаврын үр дүн";
+  }
+  if (pathname.startsWith("/admin/lessons")) return "Хичээлүүд (засвар)";
+  if (pathname.startsWith("/admin/learner")) return "Сурагчид";
+  if (pathname.startsWith("/admin/analytics")) return "Сурах тайлан";
+  if (pathname.startsWith("/admin/center")) return "Сургалтын төв";
 
   if (pathname.includes("/admin/lessons/") && pathname.includes("/edit")) {
     return "Хичээл засах";

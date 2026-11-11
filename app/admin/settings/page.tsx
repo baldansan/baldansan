@@ -2,12 +2,16 @@ import Link from "next/link";
 import {
   ADMIN_NAV_ADVANCED,
   ADMIN_NAV_INSIGHTS,
+  ADMIN_NAV_LIBRARY,
+  ADMIN_NAV_OTHER,
+  ADMIN_NAV_PRIMARY,
+  ADMIN_NAV_TEACHER,
 } from "@/lib/admin/admin-nav";
 
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Тохиргоо — Админ",
+  title: "Систем — бүх хэрэгсэл",
 };
 
 function ToolGrid({ items }: { items: typeof ADMIN_NAV_ADVANCED }) {
@@ -40,28 +44,57 @@ export default function AdminSettingsPage() {
   return (
     <div className="flex flex-col gap-6">
       <header>
-        <h1 className="text-2xl font-bold text-slate-900">Тохиргоо</h1>
+        <h1 className="text-2xl font-bold text-slate-900">Систем — бүх хэрэгсэл</h1>
         <p className="mt-1 text-sm text-slate-600">
-          Админы бүх хэрэгслийн жагсаалт — өдөр тутмын ажилд ихэвчлэн хэрэггүй.
+          Ажлын талбарын БҮХ хуудас нэг дор. Цэснээс олохгүй байгаа зүйлээ эндээс хайна.
+          Доод хэсгийн техникийн хэрэгслүүд өдөр тутмын ажилд хэрэггүй.
         </p>
       </header>
 
       <section>
-        <h2 className="admin-section-title">Тайлан ба хэрэглэгч</h2>
-        <p className="admin-section-desc mb-3">
-          Сурагчдын идэвх, байгууллагын бүртгэл, даалгаврын төв.
-        </p>
-        <ToolGrid items={ADMIN_NAV_INSIGHTS} />
+        <h2 className="admin-section-title">Багшийн ажил</h2>
+        <p className="admin-section-desc mb-3">Анги, сурагч, даалгавар, тайлан.</p>
+        <ToolGrid items={ADMIN_NAV_TEACHER} />
       </section>
 
       <section>
-        <h2 className="admin-section-title">Нэмэлт хэрэгсэл</h2>
+        <h2 className="admin-section-title">Хичээлийн сан</h2>
+        <p className="admin-section-desc mb-3">Хичээл, шалгалт, бичлэг, импорт.</p>
+        <ToolGrid
+          items={[
+            ...ADMIN_NAV_LIBRARY,
+            ...ADMIN_NAV_PRIMARY.filter((i) =>
+              ["/admin/lessons", "/admin/source", "/admin/overview"].includes(i.href)
+            ),
+          ]}
+        />
+      </section>
+
+      <section>
+        <h2 className="admin-section-title">Тайлан ба байгууллага</h2>
         <p className="admin-section-desc mb-3">
-          Үйлдлийн лог, системийн шалгалт, гаргалтын баталгаа.
+          Хичээлийн гүйцэтгэл, бүлгүүдийн харьцуулалт, гэрчилгээ, алдааны мэдээлэл.
+        </p>
+        <ToolGrid
+          items={[
+            ...ADMIN_NAV_INSIGHTS.filter(
+              (i) => !["/admin/learners", "/admin/feedback", "/admin/b2b"].includes(i.href)
+            ),
+            ...ADMIN_NAV_OTHER,
+          ]}
+        />
+      </section>
+
+      <section>
+        <h2 className="admin-section-title">Техникийн хэрэгсэл</h2>
+        <p className="admin-section-desc mb-3">
+          Үйлдлийн түүх, системийн шалгалт, гаргалтын баталгаа — ихэвчлэн хөгжүүлэгч ашиглана.
         </p>
         <ToolGrid
           items={ADMIN_NAV_ADVANCED.filter(
-            (item) => !item.href.startsWith("/admin/settings")
+            (item) =>
+              !item.href.startsWith("/admin/settings") &&
+              !item.href.startsWith("/admin/guide")
           )}
         />
       </section>

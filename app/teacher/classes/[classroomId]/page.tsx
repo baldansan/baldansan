@@ -1,7 +1,7 @@
 import { ClassroomDetailView } from "@/components/teacher/classroom-detail-view";
 
 export const metadata = {
-  title: "Class detail — Teacher",
+  title: "Анги — Багш",
   description: "Classroom students and assignments.",
 };
 

@@ -104,6 +104,9 @@ export type TeacherAssignmentSummaryItem = {
   dueDate: string | null;
   completionRate: number;
   averageQuizPercentage: number | null;
+  /** Хийж дуусгасан / нийт өгөгдсөн сурагчийн тоо. */
+  completedCount: number;
+  totalCount: number;
 };
 
 export type RecentClassActivity = {

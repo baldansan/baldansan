@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 import { AttendanceSummaryCard } from "@/components/teacher/attendance-summary-card";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { mongoliaDay } from "@/lib/analytics/activity-tracker";
 import {
   ATTENDANCE_STATUSES,
@@ -219,7 +219,7 @@ export function AttendanceRegisterView({ classroomId }: Props) {
     : null;
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/teacher/classes/${classroomId}`}
@@ -426,6 +426,6 @@ export function AttendanceRegisterView({ classroomId }: Props) {
       )}
 
       {summary ? <AttendanceSummaryCard summary={summary} /> : null}
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

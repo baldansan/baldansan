@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { CsvImportCard } from "@/components/import/csv-import-card";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import type { BulkImportResult, ClassroomStudentImportRow } from "@/lib/import/csv-import";
 import { CLASSROOM_STUDENT_EXAMPLE_CSV } from "@/lib/import/csv-import";
 import {
@@ -61,7 +61,7 @@ export function ClassroomStudentsImportView({ classroomId }: Props) {
         type: "classroom_students",
         inserted: 0,
         skipped: 0,
-        errors: [res.error ?? "Import failed."],
+        errors: [res.error ?? "Оруулж чадсангүй."],
         warnings: [],
         duplicates: [],
         rows: [],
@@ -89,14 +89,14 @@ export function ClassroomStudentsImportView({ classroomId }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
-        <p className="text-sm text-slate-600">Loading…</p>
-      </PublicPageShell>
+      <TeacherShell active="help" showBottomNav={false}>
+        <p className="text-sm text-slate-600">Ачаалж байна…</p>
+      </TeacherShell>
     );
   }
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/teacher/classes/${classroomId}`}
@@ -115,8 +115,8 @@ export function ClassroomStudentsImportView({ classroomId }: Props) {
       </section>
 
       <CsvImportCard
-        title="Classroom student CSV import"
-        subtitle="Paste CSV with email, display_name, status. No email is sent yet."
+        title="Сурагчдыг жагсаалтаар оруулах"
+        subtitle="Имэйл, нэр бүхий жагсаалтаа (CSV) буулгана. Имэйл илгээгдэхгүй."
         importType="classroom_students"
         expectedHeaders={["email", "display_name", "status"]}
         exampleCsv={CLASSROOM_STUDENT_EXAMPLE_CSV}
@@ -148,6 +148,6 @@ export function ClassroomStudentsImportView({ classroomId }: Props) {
         </Link>
         .
       </p>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }
