@@ -1,0 +1,694 @@
+[
+ {
+  "type": "cloze",
+  "question": "飞机将于二十分钟后（　）在首都机场，请大家系好安全带。",
+  "options": [
+   "降落",
+   "警察",
+   "邮局",
+   "密码",
+   "作者"
+  ],
+  "correct_answer": "降落",
+  "explanation": "降落 = газардах: 飞机降落在首都机场. 作者 — зохиолч; 密码 — нууц үг; 邮局 — шуудан; 警察 — цагдаа.",
+  "order_index": 1,
+  "id": "hsk4-l18-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这本书的（　）是一位很有名的科学家。",
+  "options": [
+   "邮局",
+   "桥",
+   "警察",
+   "日记",
+   "作者"
+  ],
+  "correct_answer": "作者",
+  "explanation": "作者 = зохиогч, зохиолч: 书的作者. 警察 — цагдаа; 日记 — өдрийн тэмдэглэл; 邮局 — шуудан; 桥 — гүүр.",
+  "order_index": 2,
+  "id": "hsk4-l18-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我忘了手机的（　），怎么也打不开。",
+  "options": [
+   "密码",
+   "信封",
+   "矿泉水",
+   "座",
+   "日记"
+  ],
+  "correct_answer": "密码",
+  "explanation": "密码 = нууц үг: 手机的密码. 信封 — дугтуй; 日记 — өдрийн тэмдэглэл; 矿泉水 — ус; 座 — гүүр, уул хэмжих нэр (量词).",
+  "order_index": 3,
+  "id": "hsk4-l18-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "把钱放在银行里比放在家里更（　）。",
+  "options": [
+   "安全",
+   "咸",
+   "举",
+   "抓",
+   "火"
+  ],
+  "correct_answer": "安全",
+  "explanation": "安全 = аюулгүй: 更安全. 咸 — давстай; 火 — алдартай, эрэлттэй; 抓 — барих; 举 — өргөх, жишээ татах.",
+  "order_index": 4,
+  "id": "hsk4-l18-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "过马路的时候一边走一边玩儿手机，太（　）了。",
+  "options": [
+   "方式",
+   "允许",
+   "危险",
+   "安全",
+   "咸"
+  ],
+  "correct_answer": "危险",
+  "explanation": "危险 = аюултай: 太危险了 — зам хөндлөн гарахдаа гар утас оролдох нь аюултай. 安全 — аюулгүй (утга эсрэг); 咸 — давстай; 允许 — зөвшөөрөх; 方式 — арга, хэлбэр.",
+  "order_index": 5,
+  "id": "hsk4-l18-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "汤里盐放多了，喝起来有点儿（　）。",
+  "options": [
+   "咸",
+   "危险",
+   "安全",
+   "火",
+   "抓"
+  ],
+  "correct_answer": "咸",
+  "explanation": "咸 = давстай: 汤有点儿咸 — шөл жаахан давстай. 火 — алдартай; 危险 — аюултай; 安全 — аюулгүй; 抓 — барих.",
+  "order_index": 6,
+  "id": "hsk4-l18-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个城市很大，我第一次来，真怕自己（　）。",
+  "options": [
+   "举",
+   "付款",
+   "迷路",
+   "收",
+   "抓"
+  ],
+  "correct_answer": "迷路",
+  "explanation": "迷路 = төөрөх: 怕迷路 — төөрөхөөс айх. 付款 — төлбөр төлөх; 举 — өргөх; 抓 — барих; 收 — хүлээн авах.",
+  "order_index": 7,
+  "id": "hsk4-l18-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我要去（　）寄一封信，顺便买几个信封。",
+  "options": [
+   "矿泉水",
+   "桥",
+   "网站",
+   "邮局",
+   "警察"
+  ],
+  "correct_answer": "邮局",
+  "explanation": "邮局 = шуудан: 去邮局寄信 — шуудан руу очиж захидал илгээнэ. 警察 — цагдаа; 矿泉水 — рашаан ус; 网站 — вэб сайт; 桥 — гүүр.",
+  "order_index": 8,
+  "id": "hsk4-l18-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小偷被（　）抓住了，大家都松了一口气。",
+  "options": [
+   "信封",
+   "警察",
+   "密码",
+   "日记",
+   "作者"
+  ],
+  "correct_answer": "警察",
+  "explanation": "警察 = цагдаа: 被警察抓住了 — цагдаад баригдлаа. 作者 — зохиогч; 信封 — дугтуй; 密码 — нууц үг; 日记 — өдрийн тэмдэглэл.",
+  "order_index": 9,
+  "id": "hsk4-l18-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这里不（　）带宠物进来，请您在门口等一下。",
+  "options": [
+   "举",
+   "收",
+   "抓",
+   "付款",
+   "允许"
+  ],
+  "correct_answer": "允许",
+  "explanation": "允许 = зөвшөөрөх: 不允许带宠物进来 — тэжээвэр амьтан оруулахыг зөвшөөрөхгүй. 举 — өргөх; 收 — хүлээн авах; 抓 — барих; 付款 — төлбөр төлөх.",
+  "order_index": 10,
+  "id": "hsk4-l18-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l18-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "请你查一下，明天的航班（　）准时起飞。",
+  "options": [
+   "接着",
+   "是否",
+   "除此以外",
+   "不管",
+   "受不了"
+  ],
+  "correct_answer": "是否",
+  "explanation": "是否 = …эсэх: 查一下航班是否准时起飞 — нислэг цагтаа хөөрөх эсэхийг шалга. Бусад нь энд утга зүйн хувьд тохирохгүй.",
+  "order_index": 11,
+  "id": "hsk4-l18-q11",
+  "skillTags": [
+   "grammar",
+   "hsk4-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这里的夏天又热又闷，我真（　）。",
+  "options": [
+   "接着",
+   "受不了",
+   "不管",
+   "除此以外",
+   "是否"
+  ],
+  "correct_answer": "受不了",
+  "explanation": "受不了 = тэсэхгүй: 我真受不了 — би үнэхээр тэсэхгүй байна. 是否 — эсэх; 接着 — дараа нь шууд; 除此以外 — үүнээс гадна.",
+  "order_index": 12,
+  "id": "hsk4-l18-q12",
+  "skillTags": [
+   "grammar",
+   "hsk4-l18-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他先喝了一杯水，（　）又吃了一个苹果。",
+  "options": [
+   "除此以外",
+   "受不了",
+   "是否",
+   "不管",
+   "接着"
+  ],
+  "correct_answer": "接着",
+  "explanation": "接着 = дараа нь шууд: 先喝了一杯水，接着又吃了一个苹果 — эхлээд ус уугаад, дараа нь шууд алим идлээ. 是否, 受不了, 除此以外, 不管 энд таарахгүй.",
+  "order_index": 13,
+  "id": "hsk4-l18-q13",
+  "skillTags": [
+   "grammar",
+   "hsk4-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这家饭馆儿的菜很好吃，（　），服务也很不错。",
+  "options": [
+   "受不了",
+   "不管",
+   "接着",
+   "是否",
+   "除此以外"
+  ],
+  "correct_answer": "除此以外",
+  "explanation": "除此以外 = үүнээс гадна: 菜很好吃，除此以外，服务也很不错 — хоол нь амттай, үүнээс гадна үйлчилгээ нь ч сайн. Нэмэлтийн хэлбэр.",
+  "order_index": 14,
+  "id": "hsk4-l18-q14",
+  "skillTags": [
+   "grammar",
+   "hsk4-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "《新十万个为什么》这本书现在卖得怎么样？",
+  "options": [
+   "已经卖完了",
+   "没有人买",
+   "卖得非常火",
+   "卖得不太好"
+  ],
+  "correct_answer": "卖得非常火",
+  "explanation": "Бичвэр 1: 现在卖得非常火 — одоо маш их борлогдож байна.",
+  "order_index": 15,
+  "id": "hsk4-l18-q15",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪一项不是《新十万个为什么》介绍的内容？",
+  "options": [
+   "动物",
+   "植物",
+   "交通",
+   "体育"
+  ],
+  "correct_answer": "体育",
+  "explanation": "Бичвэр 1: 地球、动物、植物、交通、科学技术、社会和文化 — спорт (体育) орсонгүй.",
+  "order_index": 16,
+  "id": "hsk4-l18-q16",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "据调查，70%的人遇到问题时，首先想到的是什么？",
+  "options": [
+   "上网找答案",
+   "问老师",
+   "问朋友",
+   "查词典"
+  ],
+  "correct_answer": "上网找答案",
+  "explanation": "Бичвэр 2: 70%的人遇到问题时，首先想到的就是上网找答案 — 70% нь асуудалтай тулгарахад эхлээд интернетээс хариу хайна гэжээ.",
+  "order_index": 17,
+  "id": "hsk4-l18-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "网上的日记，别人怎样才能看到？",
+  "options": [
+   "所有人都能看到",
+   "不能给别人看",
+   "只有老师能看到",
+   "得到允许才能看到"
+  ],
+  "correct_answer": "得到允许才能看到",
+  "explanation": "Бичвэр 2: 可以给网上的日记加密码，那样只有得到了允许，别人才能看到 — нууц үг тавьж, зөвшөөрөл авсан хүн л харна.",
+  "order_index": 18,
+  "id": "hsk4-l18-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王静为什么梦见自己到处找商店买矿泉水？",
+  "options": [
+   "天气太热",
+   "睡前看了电影",
+   "晚饭吃得太咸",
+   "晚饭没吃饱"
+  ],
+  "correct_answer": "晚饭吃得太咸",
+  "explanation": "Бичвэр 3: 我晚饭吃得太咸，那天晚上就梦见自己到处找商店买矿泉水 — оройн хоол хэт давстай байсан.",
+  "order_index": 19,
+  "id": "hsk4-l18-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王静认为孙月为什么觉得自己从来没做过梦？",
+  "options": [
+   "不喜欢做梦",
+   "身体不好",
+   "只是忘记了",
+   "睡得太少"
+  ],
+  "correct_answer": "只是忘记了",
+  "explanation": "Бичвэр 3: 你之所以觉得从来没做过梦，只不过是忘记了 — зүгээр л мартсан гэж Ван Жин үзжээ.",
+  "order_index": 20,
+  "id": "hsk4-l18-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "迷路的时候，手机可以怎样帮助我们？",
+  "options": [
+   "给警察打电话",
+   "上网看新闻",
+   "用手机地图查地址，马上知道怎么走",
+   "发短信给朋友"
+  ],
+  "correct_answer": "用手机地图查地址，马上知道怎么走",
+  "explanation": "Бичвэр 4: 迷路时，只要用手机地图查一下地址，马上就能知道怎么去那个地点 — гар утасны газрын зургаар хаяг хайхад л хүрэх замаа мэднэ.",
+  "order_index": 21,
+  "id": "hsk4-l18-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "为什么现在人们把地球叫作“地球村”？",
+  "options": [
+   "地球上有很多村子",
+   "科学技术让世界变得越来越小",
+   "因为地球很安全",
+   "地球是圆的"
+  ],
+  "correct_answer": "科学技术让世界变得越来越小",
+  "explanation": "Бичвэр 5: 现代科学技术的发展让世界变得越来越小，所以……把地球叫作“地球村” — шинжлэх ухаан, технологи дэлхийг жижгэрүүлсэн учраас.",
+  "order_index": 22,
+  "id": "hsk4-l18-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "把人们地球叫作“地球村”。",
+   "人们把地球叫作“地球村”。",
+   "人们叫作地球把“地球村”。",
+   "人们地球把叫作“地球村”。"
+  ],
+  "correct_answer": "人们把地球叫作“地球村”。",
+  "explanation": "«把……叫作……»: мэдэгдэж буй зүйл «把»-ийн ард, шинэ нэр «叫作»-ийн ард: 把地球叫作“地球村”. Бусад нь дарааллын алдаатай.",
+  "order_index": 23,
+  "id": "hsk4-l18-q23",
+  "skillTags": [
+   "grammar",
+   "hsk4-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“这本书你看完了我（　）看吧。”应该选哪个？",
+  "options": [
+   "然后",
+   "除此以外",
+   "是否",
+   "接着"
+  ],
+  "correct_answer": "接着",
+  "explanation": "Өгүүлэгдэхүүн өөр (чи → би) тул «接着» таарна. «然后»-ийн өгүүлэгдэхүүн ихэвчлэн ижил байдаг. 是否 — эсэх; 除此以外 — үүнээс гадна.",
+  "order_index": 24,
+  "id": "hsk4-l18-q24",
+  "skillTags": [
+   "grammar",
+   "hsk4-l18-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话用“是否”是对的？",
+  "options": [
+   "我不知道他是否同意不同意。",
+   "我不知道他是否同意。",
+   "我不知道他能是否同意。",
+   "我不知道他同意是否。"
+  ],
+  "correct_answer": "我不知道他是否同意。",
+  "explanation": "«是否» нь модаль үйл үг ба гол үйл үгийн ӨМНӨ орно: 他是否同意. Төгсгөлд тавих, «能»-ийн ард тавих, «同意不同意» гэж давхардуулах нь буруу.",
+  "order_index": 25,
+  "id": "hsk4-l18-q25",
+  "skillTags": [
+   "grammar",
+   "hsk4-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“他的脾气太坏了，我真受不了他。”中的“受不了”是什么意思？",
+  "options": [
+   "Тэвчиж чадна",
+   "Тэвчиж чадахгүй",
+   "Хүлээж авахгүй байж магадгүй",
+   "Дуртай, таалагддаг"
+  ],
+  "correct_answer": "Тэвчиж чадахгүй",
+  "explanation": "受不了 = тэвчиж чадахгүй, тэсэхгүй. 他的脾气太坏 — зан нь хэтэрхий муу тул тэсэхгүй гэсэн утгатай.",
+  "order_index": 26,
+  "id": "hsk4-l18-q26",
+  "skillTags": [
+   "grammar",
+   "hsk4-l18-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小明喜欢在网上写日记。他给日记加了密码，只有他允许的朋友才能看。\n问：别人怎样才能看到小明的日记？",
+  "options": [
+   "买他的书",
+   "知道他的名字",
+   "去他的学校",
+   "得到小明的允许"
+  ],
+  "correct_answer": "得到小明的允许",
+  "explanation": "Эшлэл: 只有他允许的朋友才能看 — зөвхөн тэр зөвшөөрсөн найзууд л харна.",
+  "order_index": 27,
+  "id": "hsk4-l18-q27",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "昨天我在城里迷路了，就用手机查了地图。地图告诉我地址在东边，走十分钟就到了。\n问：他是怎么找到那个地方的？",
+  "options": [
+   "用手机地图",
+   "坐出租车",
+   "问朋友",
+   "问警察"
+  ],
+  "correct_answer": "用手机地图",
+  "explanation": "Эшлэл: 就用手机查了地图 — гар утасны газрын зураг ашигласан.",
+  "order_index": 28,
+  "id": "hsk4-l18-q28",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "以前寄信要好几天，现在发电子邮件，不到一分钟朋友就能收到，所以他很少去邮局了。\n问：他为什么很少去邮局？",
+  "options": [
+   "信封太贵",
+   "电子邮件又快又方便",
+   "朋友不收信",
+   "邮局离家太远"
+  ],
+  "correct_answer": "电子邮件又快又方便",
+  "explanation": "Эшлэл: 发电子邮件，不到一分钟朋友就能收到 — цахим шуудан хурдан, хялбар тул шуудан руу ховор явна.",
+  "order_index": 29,
+  "id": "hsk4-l18-q29",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "妈妈给我买了一本关于动物的书。我一拿到书就开始读，读着读着天就黑了。\n问：他是什么时候开始读书的？",
+  "options": [
+   "一拿到书就开始",
+   "第二天早上",
+   "天黑以后",
+   "吃完饭以后"
+  ],
+  "correct_answer": "一拿到书就开始",
+  "explanation": "Эшлэл: 一拿到书就开始读 — ном гартаа авмагцаа уншиж эхэлсэн.",
+  "order_index": 30,
+  "id": "hsk4-l18-q30",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 孩子 / 是否 / 能读懂 / 这本书 / 我不知道",
+  "options": [
+   "我不知道孩子是否能读懂这本书。",
+   "孩子我不知道是否这本书能读懂。",
+   "我不知道孩子能是否读懂这本书。"
+  ],
+  "correct_answer": "我不知道孩子是否能读懂这本书。",
+  "explanation": "Дараалал: 我不知道 + өгүүлэгдэхүүн (孩子) + 是否 + модаль (能) + 读懂 + 这本书. «是否» нь «能»-ийн ӨМНӨ орно.",
+  "order_index": 31,
+  "id": "hsk4-l18-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 天天对着电脑 / 眼睛 / 实在 / 受不了",
+  "options": [
+   "受不了眼睛，天天对着电脑实在。",
+   "实在受不了，天天对着电脑眼睛。",
+   "天天对着电脑，眼睛实在受不了。"
+  ],
+  "correct_answer": "天天对着电脑，眼睛实在受不了。",
+  "explanation": "Дараалал: нөхцөл (天天对着电脑) + өгүүлэгдэхүүн (眼睛) + 实在 + 受不了. 受不了 = тэсэхгүй.",
+  "order_index": 32,
+  "id": "hsk4-l18-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 先喝了一杯水 / 接着 / 又吃了一个苹果",
+  "options": [
+   "他接着先喝了一杯水，又吃了一个苹果。",
+   "他先喝了一杯水，接着又吃了一个苹果。",
+   "又吃了一个苹果，他先喝了一杯水接着。"
+  ],
+  "correct_answer": "他先喝了一杯水，接着又吃了一个苹果。",
+  "explanation": "Дараалал: эхний үйлдэл (先喝了一杯水) + 接着又 + дараагийн үйлдэл (吃了一个苹果). 接着 нь дараагийн үйлдлийн өмнө орно.",
+  "order_index": 33,
+  "id": "hsk4-l18-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 手机 / 可以打电话 / 除此以外 / 还可以 / 听音乐",
+  "options": [
+   "可以打电话，还可以除此以外，手机听音乐。",
+   "手机可以打电话，除此以外，还可以听音乐。",
+   "手机除此以外可以打电话，还可以听音乐。"
+  ],
+  "correct_answer": "手机可以打电话，除此以外，还可以听音乐。",
+  "explanation": "Дараалал: эхний утга (手机可以打电话) + 除此以外 + нэмэлт (还可以听音乐). «除此以外» нь өмнөх өгүүлбэрийг заана.",
+  "order_index": 34,
+  "id": "hsk4-l18-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 人们 / 把 / 地球 / 叫作 / “地球村”",
+  "options": [
+   "人们地球把叫作“地球村”。",
+   "人们把叫作地球“地球村”。",
+   "人们把地球叫作“地球村”。"
+  ],
+  "correct_answer": "人们把地球叫作“地球村”。",
+  "explanation": "«把……叫作……»: 人们 + 把 + 地球 (тусагдахуун) + 叫作 + “地球村” (нэр). «把»-ийн ард тусагдахуун, «叫作»-ийн ард нэр орно.",
+  "order_index": 35,
+  "id": "hsk4-l18-q35",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 用不了一分钟 / 远处的朋友 / 就能收到",
+  "options": [
+   "用不了一分钟，远处的朋友就能收到。",
+   "就能收到远处的朋友，用不了一分钟。",
+   "远处的朋友用不了就能收到一分钟。"
+  ],
+  "correct_answer": "用不了一分钟，远处的朋友就能收到。",
+  "explanation": "Дараалал: хугацаа (用不了一分钟) + өгүүлэгдэхүүн (远处的朋友) + 就能收到. 用不了一分钟 = нэг минут ч болохгүй.",
+  "order_index": 36,
+  "id": "hsk4-l18-q36",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
