@@ -887,7 +887,7 @@ html.bs-bichleg-fs-root,html.bs-bichleg-fs-root body{overflow:hidden}
 .bs-mt-skill-bar-row{display:grid;grid-template-columns:72px 1fr 36px;align-items:center;gap:8px;margin-top:10px}
 .bs-mt-skill-bar-label{font-size:12px;font-weight:800;color:var(--bs-ink-2)}
 .bs-mt-skill-bar-track{height:8px;border-radius:99px;background:var(--bs-line);overflow:hidden}
-.bs-mt-skill-bar-fill{height:100%;border-radius:99px;background:var(--bs-green)}
+.bs-mt-skill-bar-fill{display:block;height:100%;border-radius:99px;background:var(--bs-green)}
 .bs-mt-skill-bar-val{font-size:12px;font-weight:800;color:var(--bs-green-700);text-align:right}
 .bs-mt-writing-grade{padding-top:8px}
 .bs-mt-writing-label{margin:10px 0 0;font-size:11px;font-weight:800;color:var(--bs-muted);text-transform:uppercase;letter-spacing:.04em}
@@ -1385,3 +1385,13 @@ html.bs-bichleg-fs-root,html.bs-bichleg-fs-root body{overflow:hidden}
 .bs-fb-shot-remove{border:0;background:transparent;color:var(--bs-muted);font-size:12px;font-weight:600;text-decoration:underline;cursor:pointer}
 .bs-fb-shot-note{margin:0 0 10px;font-size:12px;color:var(--bs-muted)}
 .bs-fb-report-fab:disabled{opacity:.7}
+
+/* Шалгалтын дүн — чадварын задаргаа (sk.* шошгоор) */
+.bs-mt-tag-list{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.bs-mt-tag-row{padding:10px 12px;border-radius:14px;background:var(--bs-card);border:1px solid var(--bs-line)}
+.bs-mt-tag-row--weak{background:#fff6f4;border-color:#f7d2c9}
+.bs-mt-tag-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:6px}
+.bs-mt-tag-label{font-size:13px;font-weight:700;color:var(--bs-ink)}
+.bs-mt-tag-val{font-size:12px;font-weight:800;color:var(--bs-ink-2);white-space:nowrap}
+.bs-mt-skill-bar-fill--weak{background:#e5533d}
+.bs-mt-tag-link{display:inline-block;margin-top:8px;font-size:12px;font-weight:800;color:var(--bs-green-700);text-decoration:none}

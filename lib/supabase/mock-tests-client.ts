@@ -7,6 +7,7 @@ import type { MockTestExamMode, MockTestScoreResult } from "@/lib/mock-test/type
 import { awardPoints } from "@/lib/points/award";
 import { examPoints } from "@/lib/points/points-config";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
+import { mapMockQuestionType } from "@/lib/analytics/record-question-attempt";
 
 export async function saveCheckpointAttempt(
   testId: string,
@@ -60,6 +61,28 @@ export async function saveCheckpointAttempt(
       .from("user_question_responses")
       .insert(responses);
     if (respErr) return { ok: false, error: respErr.message };
+  }
+
+  // Асуулт бүрийг question_attempts-д ч бичнэ → алдааны дэвтэр (错题本),
+  // чадварын зураг (compute_user_skill_mastery нь question_attempts ⋈ mock_test_questions).
+  // Гараар дүгнэх (эссэ) асуултууд isCorrect=null → орохгүй.
+  const attemptRows = scored.details
+    .filter((d) => d.isCorrect !== null)
+    .map((d) => ({
+      user_id: user.id,
+      lesson_id: testId,
+      stage: "mock_exam",
+      question_id: `mock:${d.questionId}`,
+      question_type: mapMockQuestionType(d.qType),
+      is_correct: d.isCorrect === true,
+      selected_answer: d.userAnswer,
+      correct_answer: d.correctAnswer,
+    }));
+  if (attemptRows.length) {
+    // Алдаа гарвал гол хадгалалтыг унагахгүй.
+    await supabase.from("question_attempts").insert(attemptRows).then(() => undefined, () => undefined);
+    // Чадварын эзэмшлийг шинэчилнэ (хүлээхгүй).
+    void supabase.rpc("compute_user_skill_mastery", { p_user: user.id }).then(() => undefined, () => undefined);
   }
 
   // Оноо: шалгалт бүр нэг удаа (тэнцсэн бол 100 + оноо%).
