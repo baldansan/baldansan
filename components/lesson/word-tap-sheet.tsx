@@ -3,8 +3,6 @@
 import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { WordCharBreakdownPanel } from "@/components/review/word-char-breakdown-panel";
-import { WordPartsLine } from "@/components/review/word-parts-line";
 import SpeakButton from "@/components/lesson/SpeakButton";
 import {
   getBichlegWordStatus,
@@ -110,16 +108,41 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
       setCatalog(display);
       setStatus(wordStatus);
       setLoading(false);
+
+      // Мэдэхгүй үг дээр дарсан = цээжлэх үг → шууд давталтад нэмнэ (товч дарахгүй).
+      const alreadySaved = Boolean(wordStatus?.saved || wordStatus?.inSrs);
+      if (userId && !alreadySaved && !display?.is_function_word) {
+        setSaving(true);
+        const result = await saveWordFromLesson({
+          zh: word.zh,
+          pinyin: display?.pinyin || word.pinyin || undefined,
+          mn: display?.meaning_mn?.trim() || word.lessonMn?.trim() || undefined,
+        });
+        if (cancelled) return;
+        setSaving(false);
+        if (result.ok) {
+          setToast(
+            result.inCatalog === false
+              ? "Тольд алга — миний үгсэд хадгаллаа ✓"
+              : "Цээжлэх үгсэд нэмэгдлээ ✓"
+          );
+          setStatus(await getBichlegWordStatus(word.zh));
+          onSaved?.();
+        } else if (result.error) {
+          setToast(result.error);
+        }
+      }
     })();
 
     return () => {
       cancelled = true;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word.zh]);
 
   useEffect(() => {
     if (!toast) return;
-    const t = setTimeout(() => setToast(null), 2200);
+    const t = setTimeout(() => setToast(null), 3000);
     return () => clearTimeout(t);
   }, [toast]);
 
@@ -188,12 +211,13 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
           </p>
         ) : null}
 
-        <WordPartsLine text={word.zh} />
-
-        <WordCharBreakdownPanel
-          text={word.zh}
-          wordRadical={catalog?.radical ?? null}
-        />
+        {catalog?.example_zh ? (
+          <div className="bs-word-tap-example">
+            <p className="hanzi" translate="no">{catalog.example_zh}</p>
+            {catalog.example_pinyin ? <p className="bs-word-tap-example-py">{catalog.example_pinyin}</p> : null}
+            {catalog.example_mn ? <p className="bs-word-tap-example-mn" translate="no">{catalog.example_mn}</p> : null}
+          </div>
+        ) : null}
 
         <div className="bs-bichleg-sheet-listen">
           <SpeakButton text={word.zh} large title="Үгийг сонсох" />
@@ -219,21 +243,23 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
               Нэвтрэх
             </Link>
           ) : saved ? (
-            <button
-              type="button"
-              className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--done"
-              disabled
+            <Link
+              href="/review/words"
+              className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--done inline-flex items-center justify-center no-underline"
             >
-              Хадгалсан ✓
+              Цээжлэх үгсэд ✓
+            </Link>
+          ) : saving ? (
+            <button type="button" className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary" disabled>
+              Нэмж байна…
             </button>
           ) : (
             <button
               type="button"
               className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary"
-              disabled={saving}
               onClick={() => void handleSave()}
             >
-              {saving ? "Хадгалж байна…" : "Хадгалах"}
+              Цээжлэх
             </button>
           )}
         </div>

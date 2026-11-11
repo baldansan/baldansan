@@ -35,6 +35,9 @@ export type HskWordDisplay = {
   meaning_mn: string | null;
   radical: string | null;
   is_function_word: boolean;
+  example_zh: string | null;
+  example_pinyin: string | null;
+  example_mn: string | null;
 };
 
 export type BichlegWordStatus = {
@@ -81,7 +84,7 @@ export async function lookupHskWordDisplayBySimplified(
 
   const { data, error } = await supabase
     .from("hsk_words")
-    .select("id, pinyin, meaning_mn, radical, is_function_word")
+    .select("id, pinyin, meaning_mn, radical, is_function_word, example_zh, example_pinyin, example_mn")
     .eq("simplified", trimmed)
     .limit(1)
     .maybeSingle();
@@ -93,6 +96,9 @@ export async function lookupHskWordDisplayBySimplified(
     meaning_mn: (data.meaning_mn as string | null) ?? null,
     radical: (data.radical as string | null) ?? null,
     is_function_word: Boolean(data.is_function_word),
+    example_zh: (data.example_zh as string | null) ?? null,
+    example_pinyin: (data.example_pinyin as string | null) ?? null,
+    example_mn: (data.example_mn as string | null) ?? null,
   };
 }
 
