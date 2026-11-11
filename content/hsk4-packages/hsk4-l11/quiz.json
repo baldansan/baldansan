@@ -1,0 +1,686 @@
+[
+ {
+  "type": "cloze",
+  "question": "他的汉语说得很（　），像中国人一样。",
+  "options": [
+   "相同",
+   "流利",
+   "客厅",
+   "页",
+   "复杂"
+  ],
+  "correct_answer": "流利",
+  "explanation": "流利 = чөлөөтэй, урсгалтай: 汉语说得很流利. 复杂 — төвөгтэй; 相同 — адил; 客厅 — зочны өрөө; 页 — хуудас.",
+  "order_index": 1,
+  "id": "hsk4-l11-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这道题太（　）了，我想了很久也没想明白。",
+  "options": [
+   "流利",
+   "相同",
+   "复杂",
+   "顺序",
+   "著名"
+  ],
+  "correct_answer": "复杂",
+  "explanation": "复杂 = төвөгтэй: 题太复杂了. 流利 — чөлөөтэй; 著名 — нэрт; 相同 — адил; 顺序 — дараалал.",
+  "order_index": 2,
+  "id": "hsk4-l11-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他回答得非常（　），一个错误也没有。",
+  "options": [
+   "页",
+   "增加",
+   "杂志",
+   "准确",
+   "养成"
+  ],
+  "correct_answer": "准确",
+  "explanation": "准确 = үнэн зөв: 回答得非常准确 — маш үнэн зөв хариулсан. 杂志 — сэтгүүл; 页 — хуудас; 养成 — төлөвшүүлэх; 增加 — нэмэх.",
+  "order_index": 3,
+  "id": "hsk4-l11-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "最后一班车已经走了，我们（　）打车回家。",
+  "options": [
+   "准确",
+   "无论",
+   "只好",
+   "然而",
+   "否则"
+  ],
+  "correct_answer": "只好",
+  "explanation": "只好 = өөр аргагүй: 只好打车回家 — өөр аргагүй такси бариад гэртээ харна. 否则 — тэгэхгүй бол; 无论 — ямар ч байсан; 然而 — гэвч; 准确 — үнэн зөв.",
+  "order_index": 4,
+  "id": "hsk4-l11-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这道题我不会，只能随便（　）一个答案。",
+  "options": [
+   "准确",
+   "养成",
+   "表示",
+   "阅读",
+   "猜"
+  ],
+  "correct_answer": "猜",
+  "explanation": "猜 = таах: 随便猜一个答案 — дураараа нэг хариулт таах. 阅读 — унших; 表示 — илэрхийлэх; 养成 — төлөвшүүлэх; 准确 — үнэн зөв.",
+  "order_index": 5,
+  "id": "hsk4-l11-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我家的（　）里有一张大沙发和一台电视。",
+  "options": [
+   "内容",
+   "语法",
+   "客厅",
+   "文章",
+   "杂志"
+  ],
+  "correct_answer": "客厅",
+  "explanation": "客厅 = зочны өрөө: 客厅里有沙发和电视. 杂志 — сэтгүүл; 文章 — өгүүлэл; 内容 — агуулга; 语法 — хэл зүй.",
+  "order_index": 6,
+  "id": "hsk4-l11-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她每个月都买一本时装（　）。",
+  "options": [
+   "客厅",
+   "顺序",
+   "语法",
+   "杂志",
+   "看法"
+  ],
+  "correct_answer": "杂志",
+  "explanation": "杂志 = сэтгүүл: 买一本时装杂志 — загварын сэтгүүл худалдаж авах. 客厅 — зочны өрөө; 语法 — хэл зүй; 看法 — үзэл бодол; 顺序 — дараалал.",
+  "order_index": 7,
+  "id": "hsk4-l11-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "多吃蔬菜和水果，能（　）身体需要的维生素。",
+  "options": [
+   "阅读",
+   "表示",
+   "猜",
+   "填空",
+   "增加"
+  ],
+  "correct_answer": "增加",
+  "explanation": "增加 = нэмэх: 增加维生素 — витамин нэмэх. 猜 — таах; 表示 — илэрхийлэх; 填空 — хоосон зай нөхөх; 阅读 — унших.",
+  "order_index": 8,
+  "id": "hsk4-l11-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "请按照（　）排队，不要抢先。",
+  "options": [
+   "看法",
+   "杂志",
+   "页",
+   "文章",
+   "顺序"
+  ],
+  "correct_answer": "顺序",
+  "explanation": "顺序 = дараалал: 按照顺序排队 — дарааллын дагуу жагсах. 页 — хуудас; 文章 — өгүүлэл; 看法 — үзэл бодол; 杂志 — сэтгүүл.",
+  "order_index": 9,
+  "id": "hsk4-l11-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他从小就（　）了早睡早起的好习惯。",
+  "options": [
+   "表示",
+   "猜",
+   "养成",
+   "填空",
+   "准确"
+  ],
+  "correct_answer": "养成",
+  "explanation": "养成 = дадал болгох: 养成好习惯 — сайн дадал төлөвшүүлэх. 表示 — илэрхийлэх; 猜 — таах; 填空 — хоосон зай нөхөх; 准确 — үнэн зөв.",
+  "order_index": 10,
+  "id": "hsk4-l11-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他太忙了，（　）吃饭的时间都没有。",
+  "options": [
+   "就",
+   "被",
+   "把",
+   "连",
+   "才"
+  ],
+  "correct_answer": "连",
+  "explanation": "连……都……: 连吃饭的时间都没有 — хоол идэх цаг хүртэл байхгүй. 就, 才, 把, 被 — «都»-тэй хамт онцолж хэлэх үүрэггүй.",
+  "order_index": 11,
+  "id": "hsk4-l11-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你要认真准备，（　）会考不好。",
+  "options": [
+   "否则",
+   "而且",
+   "因此",
+   "虽然",
+   "所以"
+  ],
+  "correct_answer": "否则",
+  "explanation": "否则 = тэгэхгүй бол: 要认真准备，否则会考不好. 因此, 所以 — шалтгаан-үр дүн; 而且 — нэмэх; 虽然 — «ч гэсэн» — энд логикоор таарахгүй.",
+  "order_index": 12,
+  "id": "hsk4-l11-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）天气怎么样，我们都要去爬山。",
+  "options": [
+   "只有",
+   "无论",
+   "因为",
+   "如果",
+   "虽然"
+  ],
+  "correct_answer": "无论",
+  "explanation": "无论……都……: 无论天气怎么样，我们都要去 — цаг агаар ямар ч байсан. 如果, 虽然, 因为, 只有 — «怎么样»-тай «都» бүтцийг үүсгэхгүй.",
+  "order_index": 13,
+  "id": "hsk4-l11-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她是我的老师，（　）也是我的好朋友。",
+  "options": [
+   "无论",
+   "然而",
+   "同时",
+   "只好",
+   "否则"
+  ],
+  "correct_answer": "同时",
+  "explanation": "同时也……: 她是老师，同时也是好朋友 — багш, үүний зэрэгцээ найз. 然而 — гэвч; 否则 — тэгэхгүй бол; 无论 — ямар ч байсан; 只好 — өөр аргагүй.",
+  "order_index": 14,
+  "id": "hsk4-l11-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "马克来中国多长时间了？",
+  "options": [
+   "半年",
+   "两年",
+   "一年",
+   "三年"
+  ],
+  "correct_answer": "一年",
+  "explanation": "Бичвэр 1: 你来中国才一年 — Хятадад ирээд дөнгөж нэг жил болсон.",
+  "order_index": 15,
+  "id": "hsk4-l11-q15",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "马克建议大卫怎样学到很多新词语？",
+  "options": [
+   "坚持看中文报纸",
+   "多听中文歌",
+   "每天写日记",
+   "多看中国电影"
+  ],
+  "correct_answer": "坚持看中文报纸",
+  "explanation": "Бичвэр 1: 我建议你坚持看中文报纸，这样能学到很多新词语 — хятад сонин тасралтгүй уншвал олон шинэ үг сурна.",
+  "order_index": 16,
+  "id": "hsk4-l11-q16",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小雨为什么对自己的成绩不满意？",
+  "options": [
+   "没有认真复习",
+   "考试时间只有一个小时",
+   "一个选择题都没猜对",
+   "阅读考试的题太多，没做完"
+  ],
+  "correct_answer": "阅读考试的题太多，没做完",
+  "explanation": "Бичвэр 2: 这次阅读考试的题太多了，我没做完 — асуулт хэт олон байсан тул дуусгаж амжаагүй. «Нэгийг ч зөв таасангүй» гэж хэлсэн нь 小夏.",
+  "order_index": 17,
+  "id": "hsk4-l11-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小夏遇到不知道选哪个的选择题时，是怎么做的？",
+  "options": [
+   "问了旁边的人",
+   "随便猜了一个答案",
+   "放弃了这道题",
+   "查了词典"
+  ],
+  "correct_answer": "随便猜了一个答案",
+  "explanation": "Бичвэр 2: 实在想不出来该选哪个，就随便猜了一个答案 — аль нь болохыг бодож олохгүй бол дураараа нэг хариулт таасан.",
+  "order_index": 18,
+  "id": "hsk4-l11-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小李的客厅有什么特点？",
+  "options": [
+   "放着很多电视",
+   "挂着很多画",
+   "没有沙发",
+   "到处是书"
+  ],
+  "correct_answer": "到处是书",
+  "explanation": "Бичвэр 3: 你的客厅里怎么到处是书啊？ — зочны өрөөнд хаа сайгүй ном байна.",
+  "order_index": 19,
+  "id": "hsk4-l11-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小李每天花半个小时读书，一个月大约能读多少页？",
+  "options": [
+   "300页",
+   "100页",
+   "1000页",
+   "30页"
+  ],
+  "correct_answer": "300页",
+  "explanation": "Бичвэр 3: 半个小时就可以读10页 … 一个月就可以读300页 — өдөрт 10 хуудас, сард 300 хуудас.",
+  "order_index": 20,
+  "id": "hsk4-l11-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "根据调查，阅读能力好的人有什么特点？",
+  "options": [
+   "工作很忙，很少休息",
+   "容易找到工作，工资也比较高",
+   "都喜欢做读书笔记",
+   "都不用上班"
+  ],
+  "correct_answer": "容易找到工作，工资也比较高",
+  "explanation": "Бичвэр 4: 阅读能力好的人，不但容易找到工作，而且工资也比较高 — ажил олоход хялбар, цалин нь ч арай өндөр.",
+  "order_index": 21,
+  "id": "hsk4-l11-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“读书好，读好书，好读书”中的“好读书”是什么意思？",
+  "options": [
+   "读书有很多好处",
+   "养成阅读的习惯，爱好读书",
+   "书读得很好",
+   "要读好的书"
+  ],
+  "correct_answer": "养成阅读的习惯，爱好读书",
+  "explanation": "Бичвэр 5: “好读书”就是要养成阅读的习惯，使读书真正成为自己的兴趣爱好. «读书好» — уншихын ашиг; «读好书» — сайн ном унш.",
+  "order_index": 22,
+  "id": "hsk4-l11-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子用“然而”是对的？",
+  "options": [
+   "他生病了，然而他去医院看病了。",
+   "我很喜欢这本书，然而我每天都读。",
+   "他学习很努力，然而成绩一直很好。",
+   "天气很冷，然而他穿得很少。"
+  ],
+  "correct_answer": "天气很冷，然而他穿得很少。",
+  "explanation": "«然而» нь эргэлтийн үг: хүйтэн байхад бага хувцасласан — эсрэг утга. Бусад нь нэг чиглэлтэй (хичээнгүй → сайн дүн, дуртай → уншина, өвчтэй → эмнэлэгт очно) тул «然而» таарахгүй.",
+  "order_index": 23,
+  "id": "hsk4-l11-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "他都连不会做这道题，我更不会了。",
+   "他连都不会做这道题，我更不会了。",
+   "连他不会做这道题都，我更不会了。",
+   "连他都不会做这道题，我更不会了。"
+  ],
+  "correct_answer": "连他都不会做这道题，我更不会了。",
+  "explanation": "连 + нэр үг (他) + 都 + үйл үг: 连他都不会做这道题. «连都» гэж залгах, «都»-г дараа нь тавих, «都连» гэж эргүүлэх нь буруу.",
+  "order_index": 24,
+  "id": "hsk4-l11-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子里的“无论”不能换成“不管”？",
+  "options": [
+   "无论做什么，都要认真。",
+   "无论天气怎么样，他都去跑步。",
+   "无论如何，我都会来。",
+   "无论是你还是他，都可以参加。"
+  ],
+  "correct_answer": "无论如何，我都会来。",
+  "explanation": "«不管» нь ярианд хэрэглэгддэг тул «如何, 是否» гэх мэт бичгийн хэлний үг авдаггүй. 无论如何 — «无论»-ийг «不管»-аар солихгүй. Бусад гурван өгүүлбэрт «不管» гэж сольж болно.",
+  "order_index": 25,
+  "id": "hsk4-l11-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "她工作的同时在，还在学习汉语。",
+   "她在工作的同时，还在学习汉语。",
+   "她在的同时工作，还在学习汉语。",
+   "她在工作同时的，还在学习汉语。"
+  ],
+  "correct_answer": "她在工作的同时，还在学习汉语。",
+  "explanation": "«在 + A + 的 + 同时» бүтэц: 在工作的同时 — ажиллахын зэрэгцээ. «同时的», «同时在», «在的同时» гэх мэт байрлал буруу.",
+  "order_index": 26,
+  "id": "hsk4-l11-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我是上个月开始学汉语的。老师告诉我们，学汉语不能怕错，要多说。所以我每天晚上都和中国朋友聊天儿，一开始只能说几个词，现在已经能说一些简单的句子了。\n问：他是怎么提高汉语的？",
+  "options": [
+   "每天看中文报纸",
+   "每天抄写汉字",
+   "每天晚上和中国朋友聊天儿",
+   "每天查词典"
+  ],
+  "correct_answer": "每天晚上和中国朋友聊天儿",
+  "explanation": "Эшлэл: 我每天晚上都和中国朋友聊天儿 — оройдоо хятад найзтайгаа ярилцаж хэл сайжруулсан.",
+  "order_index": 27,
+  "id": "hsk4-l11-q27",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我有个习惯：每天睡觉以前都要看半个小时书。有时候书太有意思，看着看着就忘了时间。但是我知道，如果睡得太晚，第二天就没有精神，所以不管书多么有意思，我都会在十一点关灯。\n问：他每天几点关灯？",
+  "options": [
+   "十一点",
+   "半夜一点",
+   "十点",
+   "十二点"
+  ],
+  "correct_answer": "十一点",
+  "explanation": "Эшлэл: 不管书多么有意思，我都会在十一点关灯 — ном ямар сонирхолтой байсан ч арван нэгэн цагт гэрлээ унтраадаг.",
+  "order_index": 28,
+  "id": "hsk4-l11-q28",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小王每次考试以前都会认真复习。考试的时候，他先做简单的题，再做难的题。他说，这样才不会因为难题花太多时间，否则简单的题也可能来不及做。\n问：小王为什么先做简单的题？",
+  "options": [
+   "他不会做难题",
+   "他觉得简单的题更有意思",
+   "老师要求他这样做",
+   "怕难题花太多时间，简单的题来不及做"
+  ],
+  "correct_answer": "怕难题花太多时间，简单的题来不及做",
+  "explanation": "Эшлэл: 否则简单的题也可能来不及做 — хэцүү асуултад хэт их цаг зарцуулбал хялбар асуултаа ч амжихгүй тул.",
+  "order_index": 29,
+  "id": "hsk4-l11-q29",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我弟弟以前不爱读书，一看书就想睡觉。后来朋友送给他一本很有意思的小说，他读着读着就爱上了读书，现在每个周末都去书店。\n问：弟弟现在怎么样？",
+  "options": [
+   "一看书就想睡觉",
+   "不喜欢读小说",
+   "每个周末都去书店",
+   "每天写读书笔记"
+  ],
+  "correct_answer": "每个周末都去书店",
+  "explanation": "Эшлэл: 现在每个周末都去书店 — одоо амралтын өдөр бүр номын дэлгүүр явдаг. «Үзэхээр л нойр хүрдэг» нь өмнөх байдал.",
+  "order_index": 30,
+  "id": "hsk4-l11-q30",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 连 / 中文报纸 / 他 / 都 / 看得懂",
+  "options": [
+   "他连中文报纸都看得懂。",
+   "他看得懂连中文报纸都。",
+   "他中文报纸连都看得懂。"
+  ],
+  "correct_answer": "他连中文报纸都看得懂。",
+  "explanation": "连 + нэр үг + 都 + үйл үг: 他 (өгүүлэгдэхүүн) + 连中文报纸都 + 看得懂. Онцолсон тусагдахуун нь үйл үгийн өмнө, «都»-тэй хамт гарна.",
+  "order_index": 31,
+  "id": "hsk4-l11-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 无论 / 天气 / 怎么样 / 他 / 都去跑步",
+  "options": [
+   "无论天气怎么样，他都去跑步。",
+   "无论怎么样天气，他都去跑步。",
+   "无论天气，他怎么样都去跑步。"
+  ],
+  "correct_answer": "无论天气怎么样，他都去跑步。",
+  "explanation": "无论 + нэр үг + асуух төлөөний үг (天气怎么样)，主语 + 都 + үйлдэл. «怎么样» нь «天气»-ийн ард өгүүлэхүүн болж орно.",
+  "order_index": 32,
+  "id": "hsk4-l11-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 你 / 要认真复习 / 否则 / 会考不好",
+  "options": [
+   "你要认真复习会考不好，否则。",
+   "你否则要认真复习，会考不好。",
+   "你要认真复习，否则会考不好。"
+  ],
+  "correct_answer": "你要认真复习，否则会考不好。",
+  "explanation": "Шаардлага (你要认真复习) + 否则 + хүсээгүй үр дүн (会考不好). «否则» нь хоёр дахь хэсгийн эхэнд орно.",
+  "order_index": 33,
+  "id": "hsk4-l11-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 在学习汉语 / 的同时 / 也喜欢中国文化",
+  "options": [
+   "他的同时在学习汉语，也喜欢中国文化。",
+   "他在学习汉语的同时，也喜欢中国文化。",
+   "他在的同时学习汉语，也喜欢中国文化。"
+  ],
+  "correct_answer": "他在学习汉语的同时，也喜欢中国文化。",
+  "explanation": "在 + A + 的 + 同时，也 + B: 在学习汉语的同时 — хятад хэл сурахын зэрэгцээ. «在……的同时» бүтэц хэвээр байна.",
+  "order_index": 34,
+  "id": "hsk4-l11-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 试了很多次 / 然而 / 都没有成功",
+  "options": [
+   "他试了很多次，然而都没有成功。",
+   "他然而试了很多次，都没有成功。",
+   "他试了很多次，都然而没有成功。"
+  ],
+  "correct_answer": "他试了很多次，然而都没有成功。",
+  "explanation": "A，然而 B: 他试了很多次 (хүлээлт) + 然而 + 都没有成功 (эсрэг үр дүн). «然而» нь хоёр дахь хэсгийн эхэнд орно.",
+  "order_index": 35,
+  "id": "hsk4-l11-q35",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 把有用的句子 / 记在 / 本子上",
+  "options": [
+   "他把有用的句子记在本子上。",
+   "他记在把有用的句子本子上。",
+   "把有用的句子他本子上记在。"
+  ],
+  "correct_answer": "他把有用的句子记在本子上。",
+  "explanation": "把-бүтэц: 主语 + 把 + тусагдахуун + үйл үг + 在 + байршил. 他把有用的句子记在本子上 — ашигтай өгүүлбэрийг дэвтэртээ тэмдэглэнэ.",
+  "order_index": 36,
+  "id": "hsk4-l11-q36",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]

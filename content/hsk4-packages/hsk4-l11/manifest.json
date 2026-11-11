@@ -1,0 +1,30 @@
+{
+  "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+  "courseType": "chinese-hsk",
+  "courseId": "hsk4",
+  "lessonId": "hsk4-l11",
+  "hskLevel": 4,
+  "lessonNumber": 11,
+  "bookPart": "B",
+  "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+  "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+  "language": "zh-MN",
+  "targetLanguage": "zh",
+  "uiLanguage": "mn",
+  "title": "读书好，读好书，好读书",
+  "mongolianTitle": "Ном унших сайн — унших, сурах арга",
+  "series": "HSK标准教程4下",
+  "seriesLabel_mn": "HSK4B",
+  "source": "HSK标准教程4下 · 第11课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариу)",
+  "hasAudio": true,
+  "hasImages": false,
+  "media": {
+    "lessonId": "hsk4-l11",
+    "images": []
+  },
+  "verification": {
+    "answerStatus": "official_verified",
+    "textStatus": "source_verified (hsk4-l11.json, verified_pages)",
+    "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
+  }
+}
