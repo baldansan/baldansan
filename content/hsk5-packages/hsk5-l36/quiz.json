@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "对老舍来说，养花是一种生活的（　）。",
+  "options": [
+   "腰",
+   "剪刀",
+   "乐趣",
+   "暴雨",
+   "菊花"
+  ],
+  "correct_answer": "乐趣",
+  "explanation": "乐趣 = таашаал: 乐趣 нь «таашаал, баяр баясгалан»: 生活乐趣. 剪刀 — хайч; 暴雨 — аадар бороо; 菊花 — удвал цэцэг; 腰 — бэлхүүс.",
+  "order_index": 1,
+  "id": "hsk5-l36-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他一点儿也不（　）别人怎么看他。",
+  "options": [
+   "在乎",
+   "浇",
+   "砸",
+   "庆祝",
+   "吹"
+  ],
+  "correct_answer": "在乎",
+  "explanation": "在乎 = тоох: 在乎 нь «тоох, анхаарах»: 不在乎 = тоодоггүй. 庆祝 — баяр тэмдэглэх; 浇 — услах; 吹 — сайрхах; 砸 — дарж бяцлах.",
+  "order_index": 2,
+  "id": "hsk5-l36-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这种花喜欢干燥，千万不要多（　）水。",
+  "options": [
+   "砸",
+   "捡",
+   "吹",
+   "养",
+   "浇"
+  ],
+  "correct_answer": "浇",
+  "explanation": "浇 = услах: 浇水 = усалах. 捡 — түүх; 吹 — сайрхах; 养 — ургуулах; 砸 — дарж бяцлах.",
+  "order_index": 3,
+  "id": "hsk5-l36-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个袋子很结实，用手撕不开，去拿把（　）吧。",
+  "options": [
+   "昙花",
+   "剪刀",
+   "乐趣",
+   "菊花",
+   "腰"
+  ],
+  "correct_answer": "剪刀",
+  "explanation": "剪刀 = хайч: 一把剪刀 = нэг хайч; 把 нь бариултай эд зүйлийн хэмжих нэр (量词). 菊花 — удвал цэцэг; 腰 — бэлхүүс; 昙花 — тань хуа цэцэг (шөнө дэлгэрдэг кактус цэцэг); 乐趣 — таашаал.",
+  "order_index": 4,
+  "id": "hsk5-l36-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "昨天夜里下了一场（　），街上到处都是水。",
+  "options": [
+   "剪刀",
+   "真理",
+   "菊花",
+   "暴雨",
+   "装饰"
+  ],
+  "correct_answer": "暴雨",
+  "explanation": "暴雨 = аадар бороо: 下暴雨 = аадар бороо орох. 真理 — үнэн; 装饰 — чимэглэл; 剪刀 — хайч; 菊花 — удвал цэцэг.",
+  "order_index": 5,
+  "id": "hsk5-l36-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "连续下了几天小雨，屋子里的空气很（　）。",
+  "options": [
+   "紧急",
+   "潮湿",
+   "熟练",
+   "鲜艳",
+   "自豪"
+  ],
+  "correct_answer": "潮湿",
+  "explanation": "潮湿 = чийглэг: 潮湿的空气 = чийглэг агаар. 鲜艳 — тод өнгөтэй; 熟练 — гар сайтай; 自豪 — бахархах; 紧急 — яаралтай.",
+  "order_index": 6,
+  "id": "hsk5-l36-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "医生们正在全力（　）受伤的人。",
+  "options": [
+   "抢救",
+   "保留",
+   "回报",
+   "庆祝",
+   "分享"
+  ],
+  "correct_answer": "抢救",
+  "explanation": "抢救 = аврах: 抢救 нь аюулд орсон хүн, эд зүйлийг яаралтай аврах. 回报 — хариу барих; 分享 — хуваалцах; 庆祝 — баяр тэмдэглэх; 保留 — хадгалан үлдээх.",
+  "order_index": 7,
+  "id": "hsk5-l36-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他开了二十年车，技术非常（　）。",
+  "options": [
+   "潮湿",
+   "鲜艳",
+   "紧急",
+   "熟练",
+   "悲伤"
+  ],
+  "correct_answer": "熟练",
+  "explanation": "熟练 = гар сайтай: 熟练 нь «дадсан, чадварлаг»: 技术熟练. 鲜艳 — тод өнгөтэй; 潮湿 — чийглэг; 悲伤 — гунигтай; 紧急 — яаралтай.",
+  "order_index": 8,
+  "id": "hsk5-l36-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "公司准备举行晚会，（　）成立十周年。",
+  "options": [
+   "浇",
+   "结合",
+   "装饰",
+   "应付",
+   "庆祝"
+  ],
+  "correct_answer": "庆祝",
+  "explanation": "庆祝 = баяр тэмдэглэх: 庆祝 нь «баяр тэмдэглэх»: 庆祝活动. 应付 — даван туулах, аргалах; 结合 — хослуулах; 装饰 — чимэглэл; 浇 — услах.",
+  "order_index": 9,
+  "id": "hsk5-l36-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "付出了辛苦，总会有（　）。",
+  "options": [
+   "菊花",
+   "暴雨",
+   "回报",
+   "腰",
+   "剪刀"
+  ],
+  "correct_answer": "回报",
+  "explanation": "回报 = хариу барих: 回报 нь «хариу, үр шим»: 付出有回报. 剪刀 — хайч; 暴雨 — аадар бороо; 菊花 — удвал цэцэг; 腰 — бэлхүүс.",
+  "order_index": 10,
+  "id": "hsk5-l36-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l36-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）你亲自去请他，否则他是不会来的。",
+  "options": [
+   "不然",
+   "除非",
+   "反正",
+   "直",
+   "因为"
+  ],
+  "correct_answer": "除非",
+  "explanation": "除非 = зөвхөн … бол л: 除非……，否则…… бүтэц. 反正 — ямар ч байсан; 直 — тасралтгүй; 不然 — үгүй бол; 因为 — учир нь.",
+  "order_index": 11,
+  "id": "hsk5-l36-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你别再劝我了，（　）我是不会改变主意的。",
+  "options": [
+   "直",
+   "终于",
+   "除非",
+   "反正",
+   "不然"
+  ],
+  "correct_answer": "反正",
+  "explanation": "反正 = ямар ч байсан: шийдэмгий өнгө өгнө. 除非 — зөвхөн … бол л; 直 — тасралтгүй; 不然 — үгүй бол; 终于 — эцэст нь.",
+  "order_index": 12,
+  "id": "hsk5-l36-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "听到这个消息，她高兴得（　）拍手。",
+  "options": [
+   "直",
+   "不然",
+   "反正",
+   "才",
+   "除非"
+  ],
+  "correct_answer": "直",
+  "explanation": "直 = тасралтгүй: 高兴得直拍手 (баярласандаа алга ташсаар). 直 нь нэг үет үйл үгийн өмнө орно. 反正 — ямар ч байсан; 除非 — зөвхөн … бол л; 不然 — үгүй бол; 才 — зөвхөн тэгээд л.",
+  "order_index": 13,
+  "id": "hsk5-l36-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这批过季的衣服要尽快减价（　）。",
+  "options": [
+   "结合",
+   "应付",
+   "保留",
+   "装饰",
+   "处理"
+  ],
+  "correct_answer": "处理",
+  "explanation": "处理 = хямдруулж борлуулах, зохицуулах: 减价处理. 应付 — даван туулах, аргалах; 保留 — хадгалан үлдээх; 结合 — хослуулах; 装饰 — чимэглэх.",
+  "order_index": 14,
+  "id": "hsk5-l36-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他学习不认真，完全是在（　）老师。",
+  "options": [
+   "分享",
+   "处理",
+   "应付",
+   "热爱",
+   "回报"
+  ],
+  "correct_answer": "应付",
+  "explanation": "应付 = зүгээр л нэг өнгөрөөх (хариуцлагагүй): 应付老师. 处理 — шийдвэрлэх; 回报 — хариу барих; 分享 — хуваалцах; 热爱 — хайрлах.",
+  "order_index": 15,
+  "id": "hsk5-l36-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子的用法是正确的？",
+  "options": [
+   "除非你道歉，他会才原谅你。",
+   "除非你道歉，他才会原谅你。",
+   "除非你道歉，所以他会原谅你。",
+   "除非你道歉，他就会原谅你。"
+  ],
+  "correct_answer": "除非你道歉，他才会原谅你。",
+  "explanation": "除非 + нөхцөл，才/否则 + үр дүн. «就» нь 如果-той хамт орно; «所以» нь шалтгаан-үр дагаврын холбоос; «才» нь үйл үгийн өмнө орно: 他才会.",
+  "order_index": 16,
+  "id": "hsk5-l36-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老舍喜欢养什么样的花？",
+  "options": [
+   "不用浇水的花",
+   "好种易活、自己会奋斗的花草",
+   "只开大花的名贵花",
+   "南方的名花"
+  ],
+  "correct_answer": "好种易活、自己会奋斗的花草",
+  "explanation": "好种易活、自己会奋斗的花草 — 2-р өгүүлбэр: 除非是那些好种易活、自己会奋斗的花草，否则他是不养的.",
+  "order_index": 17,
+  "id": "hsk5-l36-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老舍工作的时候怎么休息？",
+  "options": [
+   "睡一会儿",
+   "出门去朋友家",
+   "整天坐在屋里写作",
+   "写几十个字就到院子里转转，照管花草"
+  ],
+  "correct_answer": "写几十个字就到院子里转转，照管花草",
+  "explanation": "写几十个字就到院子里转转，照管花草 — 7-р өгүүлбэр: 经常写几十个字，就到院中去转转……脑力和体力很好地结合.",
+  "order_index": 18,
+  "id": "hsk5-l36-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "遇到狂风暴雨时，老舍怎么做？",
+  "options": [
+   "请全家人一起抢救花草",
+   "不管花草",
+   "一个人悄悄搬花",
+   "把花草都送给朋友"
+  ],
+  "correct_answer": "请全家人一起抢救花草",
+  "explanation": "请全家人一起抢救花草 — 9-р өгүүлбэр: 他就得劳驾全家人抢救花草.",
+  "order_index": 19,
+  "id": "hsk5-l36-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老舍怎么看待“付出”？",
+  "options": [
+   "只有花钱才有回报",
+   "养花是很容易的事",
+   "任何事都要有付出，才会有回报",
+   "付出了就一定后悔"
+  ],
+  "correct_answer": "任何事都要有付出，才会有回报",
+  "explanation": "任何事都要有付出，才会有回报 — 12-р өгүүлбэр: 任何事都要有付出，不然怎么会有回报？",
+  "order_index": 20,
+  "id": "hsk5-l36-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老舍总结出了什么养花经验？",
+  "options": [
+   "花不用换盆施肥",
+   "喜欢干的花少浇水，喜欢潮湿的花别放在太阳地里",
+   "所有的花都要多浇水",
+   "花都要放在太阳地里"
+  ],
+  "correct_answer": "喜欢干的花少浇水，喜欢潮湿的花别放在太阳地里",
+  "explanation": "喜欢干的花少浇水，喜欢潮湿的花别放在太阳地里 — 14-р өгүүлбэр: 有的花喜干，就别多浇水；有的花喜欢潮湿的环境，就别放在太阳地里.",
+  "order_index": 21,
+  "id": "hsk5-l36-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老舍怎么和朋友分享养花的快乐？",
+  "options": [
+   "把花都卖给朋友",
+   "只在文章里写花",
+   "请朋友来家里赏昙花，把分根的花送给朋友",
+   "不让朋友进院子"
+  ],
+  "correct_answer": "请朋友来家里赏昙花，把分根的花送给朋友",
+  "explanation": "请朋友来家里赏昙花，把分根的花送给朋友 — 18–19-р өгүүлбэр: 约上几位朋友来家里赏花庆祝，毫无保留地送给朋友们.",
+  "order_index": 22,
+  "id": "hsk5-l36-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "菊花被砸死以后，老舍怎么样？",
+  "options": [
+   "很难受，一连几天没有笑容",
+   "马上买了新花",
+   "一点儿也不在乎",
+   "把邻居骂了一顿"
+  ],
+  "correct_answer": "很难受，一连几天没有笑容",
+  "explanation": "很难受，一连几天没有笑容 — 24-р өгүүлбэр: 这下可把老舍难受坏了，一连几天人们都看不到他脸上的笑容.",
+  "order_index": 23,
+  "id": "hsk5-l36-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "从课文中可以看出，老舍是个什么样的人？",
+  "options": [
+   "只关心自己的人",
+   "很怕麻烦的人",
+   "不喜欢工作的人",
+   "热爱大自然、热爱生活的人"
+  ],
+  "correct_answer": "热爱大自然、热爱生活的人",
+  "explanation": "热爱大自然、热爱生活的人 — Сүүлийн өгүүлбэр: 对大自然的热爱，对生活的热爱.",
+  "order_index": 24,
+  "id": "hsk5-l36-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小李喜欢养花，可是他养的花总是死。朋友告诉他，有的花喜欢潮湿的环境，有的花喜欢干燥的环境，要先了解花的习性，不然浇再多水也没用。后来他认真学习，慢慢地养花越来越熟练了。\n问：朋友认为小李的花为什么总是死？",
+  "options": [
+   "他买的花太便宜",
+   "他住的地方没有太阳",
+   "他没有先了解花的习性",
+   "他浇的水太少"
+  ],
+  "correct_answer": "他没有先了解花的习性",
+  "explanation": "他没有先了解花的习性 — Найз: 要先了解花的习性，不然浇再多水也没用 — эхлээд цэцгийн зан төлөвийг ойлгохгүй бол хичнээн услаад ч хэрэггүй.",
+  "order_index": 25,
+  "id": "hsk5-l36-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n邻居家的孩子生病了，王阿姨每天给他送饭。她说：“反正我也要做饭，多做一份没什么。”\n问：王阿姨为什么每天给孩子送饭？",
+  "options": [
+   "她本来就要做饭，多做一份不麻烦",
+   "她想让孩子付钱",
+   "孩子的妈妈请她做的",
+   "她不会做饭"
+  ],
+  "correct_answer": "她本来就要做饭，多做一份不麻烦",
+  "explanation": "她本来就要做饭，多做一份不麻烦 — 反正我也要做饭 = ямар ч байсан би хоол хийх ёстой, нэг хэсэг нэмж хийх нь төвөггүй.",
+  "order_index": 26,
+  "id": "hsk5-l36-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n我平时十点就睡觉，除非有重要的工作没做完。昨天晚上，我有一份重要的报告没写完，忙到十二点才睡。\n问：他昨天为什么睡得很晚？",
+  "options": [
+   "他不想睡觉",
+   "他看了一晚上电视",
+   "他平时就睡得很晚",
+   "有重要的工作没做完"
+  ],
+  "correct_answer": "有重要的工作没做完",
+  "explanation": "有重要的工作没做完 — 除非有重要的工作没做完 = чухал ажил дуусаагүй үед л орой унтана; өчигдөр чухал тайлан дуусаагүй тул яг тийм байсан.",
+  "order_index": 27,
+  "id": "hsk5-l36-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n公司成立十周年那天，经理请大家一起吃饭，庆祝公司取得的成绩。他说，成绩是大家努力的结果，快乐也要和大家分享。\n问：经理为什么请大家吃饭？",
+  "options": [
+   "为了批评大家",
+   "为了庆祝公司的成绩，和大家分享快乐",
+   "为了介绍新产品",
+   "为了欢送同事"
+  ],
+  "correct_answer": "为了庆祝公司的成绩，和大家分享快乐",
+  "explanation": "为了庆祝公司的成绩，和大家分享快乐 — 庆祝公司取得的成绩 + 快乐要分享 = компанийн амжилтыг тэмдэглэж, баяраа хуваалцахын тулд.",
+  "order_index": 28,
+  "id": "hsk5-l36-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 老舍 / 把 / 养花 / 当作 / 一种生活乐趣",
+  "options": [
+   "当作老舍把一种生活乐趣养花。",
+   "当作老舍养花把一种生活乐趣。",
+   "老舍把养花当作一种生活乐趣。"
+  ],
+  "correct_answer": "老舍把养花当作一种生活乐趣。",
+  "explanation": "Бүтэц: S + 把 + O + 当作 + ……: 把养花当作 = цэцэг ургуулахыг … гэж үзэх. 生活乐趣 — амьдралын таашаал.",
+  "order_index": 29,
+  "id": "hsk5-l36-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 可是 / 他 / 并不 / 抱怨",
+  "options": [
+   "可是，他并不抱怨。",
+   "可是他抱怨并不。",
+   "抱怨他可是并不。"
+  ],
+  "correct_answer": "可是，他并不抱怨。",
+  "explanation": "可是 өгүүлбэрийн эхэнд (гэвч), дараа нь өгүүлэгдэхүүн 他, дайвар 并不, үйл үг 抱怨. 并不 = огт … биш.",
+  "order_index": 30,
+  "id": "hsk5-l36-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 除非 / 是他家人 / 别人的电话 / 他都不接",
+  "options": [
+   "除非别人的电话是他家人他都不接。",
+   "除非是他家人，别人的电话他都不接。",
+   "他都不接除非别人的电话是他家人。"
+  ],
+  "correct_answer": "除非是他家人，别人的电话他都不接。",
+  "explanation": "除非 + нөхцөл (是他家人), дараа нь үр дүн: 别人的电话他都不接. 除非 = …-аас бусад нь.",
+  "order_index": 31,
+  "id": "hsk5-l36-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 你别再说了 / 反正 / 我 / 是 / 不会考虑的",
+  "options": [
+   "你别再说了我不会考虑的是反正。",
+   "我不会考虑的是你别再说了反正。",
+   "你别再说了，反正我是不会考虑的。"
+  ],
+  "correct_answer": "你别再说了，反正我是不会考虑的。",
+  "explanation": "Эхлээд хүсэлт (你别再说了), дараа нь 反正 + шийдэмгий мэдэгдэл: 我是不会考虑的. 是……的 нь баттай өнгө нэмнэ.",
+  "order_index": 32,
+  "id": "hsk5-l36-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 给花换盆剪枝施肥的活儿 / 他 / 越做越熟练",
+  "options": [
+   "越做越熟练给花换盆剪枝施肥的活儿他。",
+   "给花换盆剪枝施肥的活儿他越做越熟练。",
+   "他越做越熟练给花换盆剪枝施肥的活儿。"
+  ],
+  "correct_answer": "给花换盆剪枝施肥的活儿他越做越熟练。",
+  "explanation": "Сэдэв (给花换盆剪枝施肥的活儿) + өгүүлэгдэхүүн 他 + 越做越熟练 (хийх тусам улам чадварлаг). 越……越…… = … тусам улам ….",
+  "order_index": 33,
+  "id": "hsk5-l36-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 每到 / 昙花开放的时候 / 他就 / 约上几位朋友 / 来家里赏花",
+  "options": [
+   "每到昙花开放的时候，他就约上几位朋友来家里赏花。",
+   "约上几位朋友昙花开放的时候每到他就来家里赏花。",
+   "昙花开放的时候来家里赏花约上几位朋友他就每到。"
+  ],
+  "correct_answer": "每到昙花开放的时候，他就约上几位朋友来家里赏花。",
+  "explanation": "每到……的时候，他就…… = … бүрд тэр …. Дараалал: цаг (每到昙花开放的时候) + 他就 + 约上几位朋友 + 来家里赏花.",
+  "order_index": 34,
+  "id": "hsk5-l36-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
