@@ -13,7 +13,11 @@ const isRec = (v: unknown): v is Rec => typeof v === "object" && v !== null && !
  * Admin PUT: хичээлийн хэсэгчилсэн шинэчлэл (бусад агуулга хэвээр).
  * Body:
  *  { study?: { grammar?: ..., texts?: ..., workbook?: ... }   // hskStudyContent-ийн түлхүүр бүрийг солино
- *    vocabulary?: [{ chinese, exampleChinese?, examplePinyin?, exampleMongolian?, mongolian?, notes? }] } // vocabulary_words мөрийг chinese-ээр олж шинэчилнэ
+ *    vocabulary?: [{ chinese, exampleChinese?, examplePinyin?, exampleMongolian?, mongolian?, notes? }] // vocabulary_words мөрийг chinese-ээр олж шинэчилнэ
+ *    quiz?: [{ type, question, options, correct_answer, explanation, order_index?, option_feedback? }]  // хичээлийн БҮХ сорилыг сольно
+ *    quizExplanations?: [{ id, explanation }]   // зөвхөн тайлбарыг шинэчилнэ
+ *    lesson?: { title?, chinese_title?, subtitle?, description? }
+ *    recount?: true }                            // lessons.vocabulary_count / quiz_count-ыг бодит тоогоор
  */
 export async function PUT(request: Request, ctx: { params: Promise<{ lessonId: string }> }) {
   if (!hasServerSupabaseConfig) return NextResponse.json({ error: "Supabase not configured." }, { status: 503 });
@@ -22,7 +26,7 @@ export async function PUT(request: Request, ctx: { params: Promise<{ lessonId: s
   if (!client) return NextResponse.json({ error: "Supabase client алга." }, { status: 503 });
   const { lessonId } = await ctx.params;
 
-  let body: { study?: unknown; vocabulary?: unknown };
+  let body: { study?: unknown; vocabulary?: unknown; quiz?: unknown; quizExplanations?: unknown; lesson?: unknown; recount?: unknown };
   try {
     body = (await request.json()) as typeof body;
   } catch {
@@ -90,6 +94,72 @@ export async function PUT(request: Request, ctx: { params: Promise<{ lessonId: s
     }
     result.vocabularyUpdated = updated;
     result.vocabularyMissing = missing;
+  }
+
+  // --- Сорилыг бүхэлд нь солих ---
+  if (Array.isArray(body.quiz) && body.quiz.length) {
+    const rows: Rec[] = [];
+    body.quiz.forEach((item, i) => {
+      if (!isRec(item) || typeof item.question !== "string" || typeof item.correct_answer !== "string") return;
+      rows.push({
+        lesson_id: lessonId,
+        type: typeof item.type === "string" ? item.type : "multiple_choice",
+        question: item.question,
+        options: Array.isArray(item.options) ? item.options : [],
+        correct_answer: item.correct_answer,
+        explanation: typeof item.explanation === "string" ? item.explanation : null,
+        order_index: typeof item.order_index === "number" ? item.order_index : i + 1,
+        ...(isRec(item.option_feedback) ? { option_feedback: item.option_feedback } : {}),
+      });
+    });
+    if (!rows.length) return NextResponse.json({ error: "quiz: хүчинтэй асуулт алга." }, { status: 400 });
+    const del = await client.from("quiz_questions").delete().eq("lesson_id", lessonId);
+    if (del.error) return NextResponse.json({ error: del.error.message }, { status: 500 });
+    const ins = await client.from("quiz_questions").insert(rows).select("id");
+    if (ins.error) return NextResponse.json({ error: ins.error.message }, { status: 500 });
+    result.quizInserted = ins.data?.length ?? 0;
+    body.recount = true;
+  }
+
+  // --- Зөвхөн тайлбар ---
+  if (Array.isArray(body.quizExplanations) && body.quizExplanations.length) {
+    let updated = 0;
+    const failed: string[] = [];
+    for (const item of body.quizExplanations) {
+      if (!isRec(item) || item.id == null || typeof item.explanation !== "string" || !item.explanation.trim()) continue;
+      const { data, error } = await client
+        .from("quiz_questions")
+        .update({ explanation: item.explanation.trim() })
+        .eq("id", item.id as string | number)
+        .eq("lesson_id", lessonId)
+        .select("id");
+      if (error || !data?.length) failed.push(String(item.id));
+      else updated += 1;
+    }
+    result.quizExplanationsUpdated = updated;
+    result.quizExplanationsFailed = failed;
+  }
+
+  // --- Хичээлийн мета ---
+  const lessonPatch: Rec = {};
+  if (isRec(body.lesson)) {
+    for (const k of ["title", "chinese_title", "subtitle", "description"] as const) {
+      const v = body.lesson[k];
+      if (typeof v === "string" && v.trim()) lessonPatch[k] = v.trim();
+    }
+  }
+  if (body.recount === true) {
+    const [v, q] = await Promise.all([
+      client.from("vocabulary_words").select("id", { count: "exact", head: true }).eq("lesson_id", lessonId),
+      client.from("quiz_questions").select("id", { count: "exact", head: true }).eq("lesson_id", lessonId),
+    ]);
+    if (!v.error) lessonPatch.vocabulary_count = v.count ?? 0;
+    if (!q.error) lessonPatch.quiz_count = q.count ?? 0;
+  }
+  if (Object.keys(lessonPatch).length) {
+    const { error } = await client.from("lessons").update(lessonPatch).eq("id", lessonId);
+    if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    result.lessonPatched = lessonPatch;
   }
 
   revalidateLesson(lessonId);
