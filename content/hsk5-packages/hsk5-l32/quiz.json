@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "这种鸟在地球上已经（　）了，我们再也看不到它们了。",
+  "options": [
+   "消失",
+   "夸张",
+   "贡献",
+   "公布",
+   "燃烧"
+  ],
+  "correct_answer": "消失",
+  "explanation": "消失 = алга болох: 已经消失了. 公布 — зарлах; 燃烧 — шатах; 夸张 — хэтрүүлсэн; 贡献 — хувь нэмэр.",
+  "order_index": 1,
+  "id": "hsk5-l32-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他把自己的青春都（　）给了山区的孩子们。",
+  "options": [
+   "公布",
+   "掌握",
+   "砍",
+   "贡献",
+   "破坏"
+  ],
+  "correct_answer": "贡献",
+  "explanation": "贡献 = хувь нэмэр оруулах, зориулах: 贡献青春. 砍 — цавчих; 掌握 — эзэмших; 公布 — зарлах; 破坏 — сүйтгэх.",
+  "order_index": 2,
+  "id": "hsk5-l32-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "考试成绩明天上午十点在网上（　）。",
+  "options": [
+   "公布",
+   "尊敬",
+   "消极",
+   "生产",
+   "幸运"
+  ],
+  "correct_answer": "公布",
+  "explanation": "公布 = нийтэд зарлах: 成绩公布. 生产 — үйлдвэрлэх; 消极 — идэвхгүй; 幸运 — азтай; 尊敬 — хүндлэх.",
+  "order_index": 3,
+  "id": "hsk5-l32-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "鱼类需要干净的水才能（　）。",
+  "options": [
+   "幻想",
+   "煤炭",
+   "生存",
+   "尊敬",
+   "设施"
+  ],
+  "correct_answer": "生存",
+  "explanation": "生存 = оршин тогтнох, амьд үлдэх: 适合鱼类生存 (бичвэрт). 尊敬 — хүндлэх; 幻想 — хий мөрөөдөл; 设施 — байгууламж; 煤炭 — нүүрс.",
+  "order_index": 4,
+  "id": "hsk5-l32-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "孩子对声音很（　），一点儿小动静就会醒。",
+  "options": [
+   "敏感",
+   "大型",
+   "不安",
+   "废",
+   "夸张"
+  ],
+  "correct_answer": "敏感",
+  "explanation": "敏感 = мэдрэмтгий: 对……很敏感. 夸张 — хэтрүүлсэн; 废 — хаягдсан; 大型 — том оврын; 不安 — тайван бус.",
+  "order_index": 5,
+  "id": "hsk5-l32-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "冬天很多家庭用（　）取暖，容易造成空气污染。",
+  "options": [
+   "洪水",
+   "车祸",
+   "沙漠",
+   "资源",
+   "煤炭"
+  ],
+  "correct_answer": "煤炭",
+  "explanation": "煤炭 = нүүрс: 燃烧煤炭 (бичвэрт). 资源 — нөөц; 沙漠 — цөл; 洪水 — үер; 车祸 — автомашины осол.",
+  "order_index": 6,
+  "id": "hsk5-l32-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这家（　）每天生产一万台电视机。",
+  "options": [
+   "工厂",
+   "地震",
+   "农业",
+   "设施",
+   "能源"
+  ],
+  "correct_answer": "工厂",
+  "explanation": "工厂 = үйлдвэр: 大型工厂. 能源 — эрчим хүч; 设施 — байгууламж; 农业 — хөдөө аж ахуй; 地震 — газар хөдлөлт.",
+  "order_index": 7,
+  "id": "hsk5-l32-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你应该学会（　）自己的命运，别总靠别人。",
+  "options": [
+   "公布",
+   "掌握",
+   "砍",
+   "燃烧",
+   "破坏"
+  ],
+  "correct_answer": "掌握",
+  "explanation": "掌握 = мэдэлдээ байлгах, эзэмших: 掌握命运. 破坏 — сүйтгэх; 公布 — зарлах; 燃烧 — шатаах; 砍 — цавчих.",
+  "order_index": 8,
+  "id": "hsk5-l32-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "长时间等不到消息，她心里越来越（　）。",
+  "options": [
+   "幻想",
+   "不安",
+   "真实",
+   "夸张",
+   "幸运"
+  ],
+  "correct_answer": "不安",
+  "explanation": "不安 = сэтгэл түгшсэн: 心里不安. 幸运 — азтай; 真实 — бодит; 幻想 — хий мөрөөдөл; 夸张 — хэтрүүлсэн.",
+  "order_index": 9,
+  "id": "hsk5-l32-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "那位老教授受到所有学生的（　）。",
+  "options": [
+   "数据",
+   "沙漠",
+   "尾气",
+   "尊敬",
+   "洪水"
+  ],
+  "correct_answer": "尊敬",
+  "explanation": "尊敬 = хүндлэх: 受到尊敬. 数据 — тоон мэдээлэл; 沙漠 — цөл; 尾气 — яндангийн хий; 洪水 — үер.",
+  "order_index": 10,
+  "id": "hsk5-l32-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l32-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这两个国家的经济联系越来越（　）。",
+  "options": [
+   "逐步",
+   "鼓励",
+   "尽量",
+   "鼓舞",
+   "密切"
+  ],
+  "correct_answer": "密切",
+  "explanation": "密切 = нягт, ойр дотно (тэмдэг нэр): 联系密切. 尽量 — аль болох; 逐步 — аажмаар; 鼓励 — урамшуулах; 鼓舞 — урам зориг өгөх.",
+  "order_index": 11,
+  "id": "hsk5-l32-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你明天（　）早点儿来，我们八点开会。",
+  "options": [
+   "鼓励",
+   "逐步",
+   "密切",
+   "鼓舞",
+   "尽量"
+  ],
+  "correct_answer": "尽量",
+  "explanation": "尽量 = аль болох: 尽量早点儿来 — үйл үгийн өмнө орж хүсэлт илэрхийлнэ. 逐步 — аажмаар; 密切 — нягт.",
+  "order_index": 12,
+  "id": "hsk5-l32-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "经过几年的努力，这个地区的环境（　）改善了。",
+  "options": [
+   "鼓舞",
+   "尽量",
+   "鼓励",
+   "逐步",
+   "密切"
+  ],
+  "correct_answer": "逐步",
+  "explanation": "逐步 = алхам алхмаар: 逐步改善 — шат дараатай өөрчлөлт. 尽量 — аль болох; 鼓励/鼓舞 — үйл үг, энд таарахгүй.",
+  "order_index": 13,
+  "id": "hsk5-l32-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老师总是（　）我们多说汉语，不要怕说错。",
+  "options": [
+   "鼓舞",
+   "密切",
+   "鼓励",
+   "尽量",
+   "逐步"
+  ],
+  "correct_answer": "鼓励",
+  "explanation": "鼓励 + хүн + үйлдэл (鼓励某人做某事): 鼓励我们多说汉语. 鼓舞 нь энэ бүтэцтэй байдаггүй.",
+  "order_index": 14,
+  "id": "hsk5-l32-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "看到这么多人参加环保活动，我觉得很（　）。",
+  "options": [
+   "鼓励",
+   "鼓舞",
+   "尽量",
+   "密切",
+   "逐步"
+  ],
+  "correct_answer": "鼓舞",
+  "explanation": "鼓舞 тэмдэг нэр болж «сэтгэл догдлуулам, урам зориг өгөхүйц» гэсэн утгатай: 很鼓舞. 鼓励 тэмдэг нэр болдоггүй.",
+  "order_index": 15,
+  "id": "hsk5-l32-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子的用法是正确的？",
+  "options": [
+   "受灾群众已逐步恢复了正常生活。",
+   "他的成绩逐步高。",
+   "天气逐步冷了。",
+   "经济全球化把各国的经济联系地密切在一起。"
+  ],
+  "correct_answer": "受灾群众已逐步恢复了正常生活。",
+  "explanation": "逐步 нь үйл үгийн өмнө орно (逐步恢复). Тэмдэг нэрийг шууд өөрчилдөггүй (逐步高 ❌, 逐步冷 ❌). 密切地 + үйл үг (密切地联系) гэж «地» үйл үгийн өмнө байна.",
+  "order_index": 16,
+  "id": "hsk5-l32-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文说，动植物消失的更大原因是什么？",
+  "options": [
+   "太阳变热了",
+   "动物太多了",
+   "洪水、地震等自然变化",
+   "人类对自然的破坏"
+  ],
+  "correct_answer": "人类对自然的破坏",
+  "explanation": "2-р догол: 更大的原因则是人类对自然的破坏. Үер, газар хөдлөлт зөвхөн нэг хэсэг шалтгаан.",
+  "order_index": 17,
+  "id": "hsk5-l32-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文说，目前世界上有百分之几的人无法享用干净的饮用水？",
+  "options": [
+   "17%",
+   "71%",
+   "7%",
+   "27%"
+  ],
+  "correct_answer": "17%",
+  "explanation": "3-р догол: 目前世界上有17%的人无法享用干净的饮用水.",
+  "order_index": 18,
+  "id": "hsk5-l32-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "每年死于什么的人比死于车祸的还要多？",
+  "options": [
+   "地震",
+   "洪水",
+   "战争",
+   "与空气污染有关的疾病"
+  ],
+  "correct_answer": "与空气污染有关的疾病",
+  "explanation": "3-р догол: 每年死于与空气污染有关的疾病的人比死于车祸的还要多.",
+  "order_index": 19,
+  "id": "hsk5-l32-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "大型工厂造成污染的原因之一是什么？",
+  "options": [
+   "少用电",
+   "大量燃烧煤炭，产生废气和废物",
+   "多骑自行车",
+   "种了很多树"
+  ],
+  "correct_answer": "大量燃烧煤炭，产生废气和废物",
+  "explanation": "4-р догол: 有的要大量燃烧煤炭，从而产生大量废气和废物. Бусад хариулт нь бохирдлыг БАГАСГАХ арга.",
+  "order_index": 20,
+  "id": "hsk5-l32-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文提到，和日常生活密切相关的污染例子是什么？",
+  "options": [
+   "公共交通",
+   "汽车尾气",
+   "可再生能源",
+   "自行车"
+  ],
+  "correct_answer": "汽车尾气",
+  "explanation": "4-р догол: 汽车尾气就是其中之一. Бусад нь бохирдлыг багасгах арга хэрэгсэл.",
+  "order_index": 21,
+  "id": "hsk5-l32-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "为了保护环境，人们在日常生活中可以怎么做？",
+  "options": [
+   "不再骑自行车",
+   "多使用私家车",
+   "尽量少使用私家车，多选择公共交通",
+   "多买新东西"
+  ],
+  "correct_answer": "尽量少使用私家车，多选择公共交通",
+  "explanation": "5-р догол: 尽量多骑自行车，多选择公共交通，少使用私家车.",
+  "order_index": 22,
+  "id": "hsk5-l32-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "作者对努力保护环境的人们是什么态度？",
+  "options": [
+   "觉得他们的行动没有用",
+   "不关心他们",
+   "他们令人尊敬，成绩令人鼓舞",
+   "担心他们太累"
+  ],
+  "correct_answer": "他们令人尊敬，成绩令人鼓舞",
+  "explanation": "5-р догол: 这些为此付出努力的人们令人尊敬，取得的成绩也令人鼓舞.",
+  "order_index": 23,
+  "id": "hsk5-l32-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "作者认为应该把地球看作什么？",
+  "options": [
+   "一片沙漠",
+   "一座大工厂",
+   "一个属于自己的大房间",
+   "别人的家"
+  ],
+  "correct_answer": "一个属于自己的大房间",
+  "explanation": "6-р догол: 我们应该把它看作一个属于自己的大房间.",
+  "order_index": 24,
+  "id": "hsk5-l32-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小王家住在城市里，以前每天开车上班。后来他发现汽车尾气污染很严重，就逐步改变了习惯，现在尽量骑自行车，下雨天才坐公共交通。\n问：小王现在怎么上班？",
+  "options": [
+   "一直坐出租车",
+   "走路去",
+   "尽量骑自行车，下雨天坐公共交通",
+   "每天开私家车"
+  ],
+  "correct_answer": "尽量骑自行车，下雨天坐公共交通",
+  "explanation": "尽量骑自行车 + 下雨天才坐公共交通. Өмнө нь машинаар явдаг байсан, одоо зуршлаа аажмаар өөрчилсөн.",
+  "order_index": 25,
+  "id": "hsk5-l32-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n社区里新增了垃圾分类的设施，一开始很多人不习惯，常常把垃圾扔错。工作人员耐心地解释，大家慢慢地自觉起来，现在很少有人扔错了。\n问：现在社区的情况怎么样？",
+  "options": [
+   "很多人还是不习惯",
+   "大家自觉分类，很少有人扔错",
+   "垃圾桶都被拿走了",
+   "工作人员不再解释了"
+  ],
+  "correct_answer": "大家自觉分类，很少有人扔错",
+  "explanation": "慢慢地自觉起来，现在很少有人扔错了 = одоо хүмүүс өөрсдөө ангилдаг болж, алдах нь цөөн.",
+  "order_index": 26,
+  "id": "hsk5-l32-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n有的人觉得，一个人的力量太小，节约一张纸、少用一个塑料袋根本没什么用。可是如果十个人、一百个人、一万个人都这样做，贡献就很大了。\n问：这段话主要想说什么？",
+  "options": [
+   "塑料袋比纸更环保",
+   "每个人的小行动聚起来也有大贡献",
+   "应该只让别人去做",
+   "一个人的力量太小，不用环保"
+  ],
+  "correct_answer": "每个人的小行动聚起来也有大贡献",
+  "explanation": "Нэг хүний үйлдэл бага боловч олон хүн хамт хийвэл хувь нэмэр их болно гэсэн санаа.",
+  "order_index": 27,
+  "id": "hsk5-l32-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n老张是一家工厂的厂长。以前工厂的废水直接排进河里，河里的鱼都死了。后来他花钱建了新设施，水处理以后才排放，河里的鱼又多起来了。\n问：老张做了什么？",
+  "options": [
+   "把工厂关了",
+   "不再生产东西",
+   "在河里放了很多鱼",
+   "建了新设施，处理废水后再排放"
+  ],
+  "correct_answer": "建了新设施，处理废水后再排放",
+  "explanation": "建了新设施，水处理以后才排放 = шинэ байгууламж барьж, бохир усыг цэвэрлээд гаргадаг болсон.",
+  "order_index": 28,
+  "id": "hsk5-l32-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 尽量 / 大家 / 明天 / 早点儿 / 请 / 来",
+  "options": [
+   "请大家明天尽量早点儿来。",
+   "请明天大家来尽量早点儿。",
+   "大家请明天早点儿尽量来。"
+  ],
+  "correct_answer": "请大家明天尽量早点儿来。",
+  "explanation": "Дараалал: 请 + хүн (大家) + цаг (明天) + 尽量 + 早点儿 + үйл үг (来). 尽量 = аль болох; үйл үгийн өмнө орно.",
+  "order_index": 29,
+  "id": "hsk5-l32-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 受灾群众 / 已 / 逐步 / 恢复了 / 正常的生产生活",
+  "options": [
+   "受灾群众已逐步恢复了正常的生产生活。",
+   "已受灾群众恢复了逐步正常的生产生活。",
+   "受灾群众逐步已正常的生产生活恢复了。"
+  ],
+  "correct_answer": "受灾群众已逐步恢复了正常的生产生活。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (受灾群众) + 已 + 逐步 + үйл үг (恢复了) + тусагдахуун. 逐步 = аажмаар, үйл үгийн өмнө.",
+  "order_index": 30,
+  "id": "hsk5-l32-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 汽车尾气 / 是 / 其中 / 之一 / 就",
+  "options": [
+   "就汽车尾气之一是其中。",
+   "汽车尾气就是其中之一。",
+   "其中就是汽车尾气之一。"
+  ],
+  "correct_answer": "汽车尾气就是其中之一。",
+  "explanation": "Дараалал: 汽车尾气 + 就是 + 其中之一. 其中之一 = тэдгээрийн нэг.",
+  "order_index": 31,
+  "id": "hsk5-l32-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 医生 / 刘 / 观察着 / 密切地 / 病情的发展",
+  "options": [
+   "密切地刘医生观察着病情的发展。",
+   "刘医生观察着密切地病情的发展。",
+   "刘医生密切地观察着病情的发展。"
+  ],
+  "correct_answer": "刘医生密切地观察着病情的发展。",
+  "explanation": "Дараалал: 刘医生 + 密切地 + 观察着 + 病情的发展. 密切地 нь үйл үгийн өмнө «анхааралтай» гэсэн байдал заана.",
+  "order_index": 32,
+  "id": "hsk5-l32-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 国家 / 越来越 / 鼓励 / 大学生 / 开办公司",
+  "options": [
+   "越来越国家大学生鼓励开办公司。",
+   "国家越来越鼓励大学生开办公司。",
+   "国家大学生越来越开办公司鼓励。"
+  ],
+  "correct_answer": "国家越来越鼓励大学生开办公司。",
+  "explanation": "Дараалал: 国家 + 越来越 + 鼓励 + хүн (大学生) + үйлдэл (开办公司). 鼓励某人做某事 бүтэц.",
+  "order_index": 33,
+  "id": "hsk5-l32-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 为 / 保持 / 环境的卫生 / 每个人 / 都应该 / 做出贡献",
+  "options": [
+   "为保持环境的卫生，每个人都应该做出贡献。",
+   "为每个人保持环境的卫生都应该做出贡献。",
+   "做出贡献为保持环境的卫生，每个人都应该。"
+  ],
+  "correct_answer": "为保持环境的卫生，每个人都应该做出贡献。",
+  "explanation": "Дараалал: 为 + зорилго (保持环境的卫生)，+ 每个人 + 都应该 + 做出贡献. 为…… = …-ийн тулд.",
+  "order_index": 34,
+  "id": "hsk5-l32-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]

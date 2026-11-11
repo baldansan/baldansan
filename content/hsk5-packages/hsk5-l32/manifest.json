@@ -1,0 +1,29 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk5",
+ "lessonId": "hsk5-l32",
+ "hskLevel": 5,
+ "lessonNumber": 32,
+ "lessonProfile": "hsk5-article-topic-vocab-nuance-writing",
+ "lessonType": "hsk5-article-topic-vocab-nuance-writing",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "身边的环保",
+ "mongolianTitle": "Бидний эргэн тойрон дахь байгаль орчны хамгаалал",
+ "series": "HSK标准教程5下",
+ "seriesLabel_mn": "HSK5B",
+ "source": "HSK标准教程5下 · 第32课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариулт)",
+ "hasAudio": false,
+ "hasImages": false,
+ "media": {
+  "lessonId": "hsk5-l32",
+  "images": []
+ },
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (hsk5-l32.json, verified_pages)",
+  "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
+ }
+}

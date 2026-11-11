@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "他们在屋前立了一块圆形的（　），提醒大家小心驾驶。",
+  "options": [
+   "社区",
+   "报告",
+   "身段",
+   "标志",
+   "门槛"
+  ],
+  "correct_answer": "标志",
+  "explanation": "标志 = тэмдэг, тэмдэглэгээ: 立一块标志. 门槛 — босго; 报告 — тайлан; 身段 — биеэ авч явах байдал; 社区 — хороолол.",
+  "order_index": 1,
+  "id": "hsk5-l31-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个周末轮到我（　），不能和你们一起去玩儿了。",
+  "options": [
+   "出示",
+   "值班",
+   "缩短",
+   "实践",
+   "劝"
+  ],
+  "correct_answer": "值班",
+  "explanation": "值班 = жижүүрийн ээлж хийх: 轮到我值班. 缩短 — богиносгох; 出示 — гаргаж үзүүлэх; 劝 — ятгах; 实践 — хэрэгжүүлэх.",
+  "order_index": 2,
+  "id": "hsk5-l31-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "大家都（　）这个计划，只有他一个人反对。",
+  "options": [
+   "犹豫",
+   "缩短",
+   "出示",
+   "劝",
+   "赞成"
+  ],
+  "correct_answer": "赞成",
+  "explanation": "赞成 = дэмжих, зөвшөөрөх: 赞成这个计划 («зөвхөн тэр нэг хүн эсрэг» гэсэн утгатай таарна). 劝 — ятгах; 缩短 — богиносгох; 出示 — үзүүлэх; 犹豫 — эргэлзэх.",
+  "order_index": 3,
+  "id": "hsk5-l31-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "高铁开通以后，两个城市之间的时间大大（　）了。",
+  "options": [
+   "赞成",
+   "劝",
+   "出示",
+   "缩短",
+   "处理"
+  ],
+  "correct_answer": "缩短",
+  "explanation": "缩短 = богиносгох: 时间缩短了. 处理 — шийдвэрлэх; 劝 — ятгах; 赞成 — дэмжих; 出示 — гаргаж үзүүлэх.",
+  "order_index": 4,
+  "id": "hsk5-l31-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "面对这么重要的选择，她（　）了很久，还是没有决定。",
+  "options": [
+   "缩短",
+   "犹豫",
+   "实践",
+   "出示",
+   "赞成"
+  ],
+  "correct_answer": "犹豫",
+  "explanation": "犹豫 = эргэлзэх: 犹豫了很久，还是没有决定. 缩短 — богиносгох; 赞成 — дэмжих; 出示 — үзүүлэх; 实践 — хэрэгжүүлэх.",
+  "order_index": 5,
+  "id": "hsk5-l31-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他对这件事的态度很（　），好像一点儿也不关心。",
+  "options": [
+   "迫切",
+   "圆",
+   "狡猾",
+   "谦虚",
+   "冷淡"
+  ],
+  "correct_answer": "冷淡",
+  "explanation": "冷淡 = хүйтэн хөндий: 态度冷淡. 迫切 — яаралтай; 谦虚 — даруу; 狡猾 — зальжин; 圆 — дугуй.",
+  "order_index": 6,
+  "id": "hsk5-l31-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他取得了那么多成绩，却从不骄傲，说话做事都很（　）。",
+  "options": [
+   "迫切",
+   "狡猾",
+   "谦虚",
+   "模糊",
+   "冷淡"
+  ],
+  "correct_answer": "谦虚",
+  "explanation": "谦虚 = даруу: 说话做事都很谦虚 («ихэмсэг биш» гэсэн утгатай таарна). 狡猾 — зальжин; 冷淡 — хүйтэн хөндий; 模糊 — бүдэг; 迫切 — яаралтай.",
+  "order_index": 7,
+  "id": "hsk5-l31-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这张照片太（　）了，我看不清上面的人是谁。",
+  "options": [
+   "迫切",
+   "模糊",
+   "谦虚",
+   "狡猾",
+   "冷淡"
+  ],
+  "correct_answer": "模糊",
+  "explanation": "模糊 = бүдэг, тодорхойгүй: 照片模糊. 狡猾 — зальжин; 谦虚 — даруу; 冷淡 — хүйтэн хөндий; 迫切 — яаралтай.",
+  "order_index": 8,
+  "id": "hsk5-l31-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不就是考了一次第一名吗？有什么（　）的！",
+  "options": [
+   "狡猾",
+   "模糊",
+   "冷淡",
+   "圆",
+   "了不起"
+  ],
+  "correct_answer": "了不起",
+  "explanation": "有什么了不起的 = юугаараа гайхалтай юм бэ (дооглосон өнгө аяс). 狡猾 — зальжин; 模糊 — бүдэг; 冷淡 — хүйтэн хөндий; 圆 — дугуй.",
+  "order_index": 9,
+  "id": "hsk5-l31-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这件事很复杂，你一个人（　）不了，我来帮你。",
+  "options": [
+   "犹豫",
+   "狡猾",
+   "处理",
+   "赞成",
+   "谦虚"
+  ],
+  "correct_answer": "处理",
+  "explanation": "处理不了 = шийдвэрлэж чадахгүй: 处理 + 不了. 赞成 — дэмжих; 犹豫 — эргэлзэх; 谦虚 — даруу; 狡猾 — зальжин.",
+  "order_index": 10,
+  "id": "hsk5-l31-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l31-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：小李怎么还没到？ B：都这时候了，我看他（　）是不会来了。",
+  "options": [
+   "八成儿",
+   "无所谓",
+   "轻易",
+   "改天",
+   "容易"
+  ],
+  "correct_answer": "八成儿",
+  "explanation": "八成儿 = ихэнх магадлалаар (таамаглал): 我看他八成儿是不会来了. 改天 — өөр өдөр; 轻易 — амархан, хөнгөхөн; 容易 — хялбар; 无所谓 — хамаагүй.",
+  "order_index": 11,
+  "id": "hsk5-l31-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天我有点儿事，咱们（　）再聊吧。",
+  "options": [
+   "轻易",
+   "八成儿",
+   "迫切",
+   "容易",
+   "改天"
+  ],
+  "correct_answer": "改天",
+  "explanation": "改天 = өөр нэг өдөр: 改天再聊. 八成儿 — ихэнх магадлалаар; 轻易 — амархан; 容易 — хялбар; 迫切 — яаралтай.",
+  "order_index": 12,
+  "id": "hsk5-l31-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他为人好强，（　）不求人，这次借钱一定是遇到难事了。",
+  "options": [
+   "容易",
+   "无所谓",
+   "轻易",
+   "改天",
+   "八成儿"
+  ],
+  "correct_answer": "轻易",
+  "explanation": "轻易不 + V = амархан … хийдэггүй. 容易 нь «轻易不» гэсэн хэлбэрт орохгүй; 改天 — өөр өдөр; 八成儿 — ихэнх магадлалаар.",
+  "order_index": 13,
+  "id": "hsk5-l31-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天的考试特别（　），我半个小时就答完了。",
+  "options": [
+   "容易",
+   "轻易",
+   "改天",
+   "八成儿",
+   "犹豫"
+  ],
+  "correct_answer": "容易",
+  "explanation": "容易 нь өгүүлэхүүн болж «амар» гэж хэлж чадна. 轻易 нь голдуу үйл үгийн өмнө «轻易地 + V» гэж орно; 犹豫 — эргэлзэх.",
+  "order_index": 14,
+  "id": "hsk5-l31-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她从小学习就好，高考时很（　）地考上了名牌大学。",
+  "options": [
+   "八成儿",
+   "容易",
+   "改天",
+   "轻易",
+   "谦虚"
+  ],
+  "correct_answer": "轻易",
+  "explanation": "轻易地 + V = хөнгөхөн, амархан …: 很轻易地考上了. «容易地» гэж хэлдэггүй; 八成儿, 改天 нь «地»-гүй дайвар үг.",
+  "order_index": 15,
+  "id": "hsk5-l31-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“嗯（　）我的手机怎么不见了？”括号里应该填哪个标点？",
+  "options": [
+   "？",
+   "。",
+   "！",
+   "，"
+  ],
+  "correct_answer": "？",
+  "explanation": "Утас алга болсныг лавлаж байгаа тул ńg — асуултын тэмдэг (？). Таслал нь зөвшөөрөх, анхаарлын тэмдэг нь гайхах утгатай.",
+  "order_index": 16,
+  "id": "hsk5-l31-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文里，朋友在哪儿工作？",
+  "options": [
+   "在公司当经理",
+   "在医院当医生",
+   "在学校当老师",
+   "在报社当编辑"
+  ],
+  "correct_answer": "在报社当编辑",
+  "explanation": "1-р өгүүлбэр: 一个朋友在报社当编辑 — найз сонины газарт редактор хийдэг.",
+  "order_index": 17,
+  "id": "hsk5-l31-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "请假的时候，朋友先问了领导什么？",
+  "options": [
+   "您今天有时间吗？",
+   "您想让我做什么？",
+   "您今天心情好吗？",
+   "您什么时候休假？"
+  ],
+  "correct_answer": "您今天心情好吗？",
+  "explanation": "2-р өгүүлбэр: 他先问领导：“您今天心情好吗？” — эхлээд даргаас «Таны сэтгэл өнөөдөр сайн уу?» гэж асуусан.",
+  "order_index": 18,
+  "id": "hsk5-l31-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "听了朋友的话，领导有什么反应？",
+  "options": [
+   "什么也没说",
+   "有了兴趣",
+   "很生气",
+   "马上拒绝了"
+  ],
+  "correct_answer": "有了兴趣",
+  "explanation": "Дарга 有了兴趣 — сонирхол татагдсан бөгөөд чөлөөг амархан олгосон.",
+  "order_index": 19,
+  "id": "hsk5-l31-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "在第一个社区，研究人员是怎么提出要求的？",
+  "options": [
+   "先给人们送礼物",
+   "直接向人们提出要求",
+   "几周后才提出要求",
+   "先让人们签字"
+  ],
+  "correct_answer": "直接向人们提出要求",
+  "explanation": "Эхний хороололд хүсэлтийг 直接 (шууд) тавьсан тул зөвхөн 17% зөвшөөрсөн.",
+  "order_index": 20,
+  "id": "hsk5-l31-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "第二个社区里，接受立牌要求的人占多少？",
+  "options": [
+   "55%",
+   "71%",
+   "17%",
+   "38%"
+  ],
+  "correct_answer": "55%",
+  "explanation": "Хоёр дахь хороололд 55% зөвшөөрсөн (эхнийд 17%). Хоёр шатанд хуваасан нь үр дүнтэй байв.",
+  "order_index": 21,
+  "id": "hsk5-l31-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "第二个社区里，研究人员请人们先做什么？",
+  "options": [
+   "立一块圆形标志",
+   "写一份报告",
+   "参加安全驾驶培训",
+   "在请愿书上签字"
+  ],
+  "correct_answer": "在请愿书上签字",
+  "explanation": "Эхлээд 请愿书 дээр гарын үсэг зурахыг хүссэн (өргөдөл). Тэмдэг босгох хүсэлт хэдэн долоо хоногийн дараа тавигдсан.",
+  "order_index": 22,
+  "id": "hsk5-l31-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "想让女孩答应约会，课文建议可以先怎么说？",
+  "options": [
+   "先请她帮一个大忙",
+   "先送她很贵的礼物",
+   "先请她一起吃饭",
+   "直接请她去看电影"
+  ],
+  "correct_answer": "先请她一起吃饭",
+  "explanation": "饭总是要吃的吧，一起吃饭吧 — эхлээд хамт хооллохыг санал болго; зөвшөөрвөл кино, бар хамаагүй болно.",
+  "order_index": 23,
+  "id": "hsk5-l31-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "作者认为，放低身段的人会给别人什么印象？",
+  "options": [
+   "让人看不起",
+   "不过如此",
+   "为人谦虚",
+   "很狡猾"
+  ],
+  "correct_answer": "为人谦虚",
+  "explanation": "放低身段 → 缩短与人的距离, 别人不会看不起你，反而觉得你为人谦虚.",
+  "order_index": 24,
+  "id": "hsk5-l31-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小周想请同事帮他值一次班，可是他怕同事拒绝。他先问同事：“你周六有空儿吗？能不能帮我个小忙？”同事说：“什么忙？”他才说出自己的请求，同事想了想，就答应了。\n问：小周为什么先问同事有没有空儿？",
+  "options": [
+   "他想让同事请他吃饭",
+   "他怕同事拒绝，想先把事情说得轻松一点儿",
+   "他想自己周六去值班",
+   "他对同事很冷淡"
+  ],
+  "correct_answer": "他怕同事拒绝，想先把事情说得轻松一点儿",
+  "explanation": "Тэр татгалзуулахаас эмээж, эхлээд «жаахан тусламж» гэж хөнгөн хэлсэн — босго давах нөлөөний арга. 值班 — жижүүрийн ээлж.",
+  "order_index": 25,
+  "id": "hsk5-l31-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n王经理是一位了不起的企业家，但他从来不看不起别人。无论是新来的员工，还是打扫卫生的阿姨，他见面都会主动打招呼，说话也很谦虚。大家都愿意和他一起工作。\n问：大家为什么愿意和王经理一起工作？",
+  "options": [
+   "他为人谦虚，不看不起别人",
+   "他很少跟员工说话",
+   "他经常帮员工值班",
+   "他的工资比别人高"
+  ],
+  "correct_answer": "他为人谦虚，不看不起别人",
+  "explanation": "Текстэд: 从来不看不起别人, 说话也很谦虚 — хүн бүрт даруу ханддаг. Цалин, жижүүрийн тухай ярьсангүй.",
+  "order_index": 26,
+  "id": "hsk5-l31-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小李想买一台新电脑，可是价格太贵，他一直很犹豫。朋友劝他说：“你现在的电脑已经用了七年，慢得很，该换了。”听了朋友的话，小李终于决定下个月就去买。\n问：小李最后为什么决定买新电脑？",
+  "options": [
+   "价格已经变便宜了",
+   "他想跟朋友比一比",
+   "公司送给他一台新电脑",
+   "朋友劝他旧电脑该换了"
+  ],
+  "correct_answer": "朋友劝他旧电脑该换了",
+  "explanation": "Найз ятгаж «хуучин компьютер 7 жил болсон, удаан, солих цаг боллоо» гэсэн тул шийдсэн. Үнэ буурсан тухай ярьсангүй.",
+  "order_index": 27,
+  "id": "hsk5-l31-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n高铁开通以后，从贵阳到重庆的时间缩短了一半，人们的生活也发生了很大的变化。以前很多人轻易不出远门，现在周末就可以去外地看看。\n问：高铁开通以后，人们有什么变化？",
+  "options": [
+   "不愿意再坐火车了",
+   "出远门的时间变长了",
+   "大家更喜欢待在家里",
+   "周末也愿意去外地看看了"
+  ],
+  "correct_answer": "周末也愿意去外地看看了",
+  "explanation": "时间缩短了一半 → 轻易不出远门-ийн оронд амралтаараа гадагш явдаг болсон. 缩短 — богиносгох.",
+  "order_index": 28,
+  "id": "hsk5-l31-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 轻易 / 不 / 求人",
+  "options": [
+   "轻易他不求人。",
+   "他轻易不求人。",
+   "他不求人轻易。"
+  ],
+  "correct_answer": "他轻易不求人。",
+  "explanation": "S + 轻易不 + V: 轻易 нь дайвар үг тул 不-ийн өмнө, үйл үгийн өмнө орно. 求人 — хүнээс тусламж гуйх.",
+  "order_index": 29,
+  "id": "hsk5-l31-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 研究人员 / 把 / 事情 / 分成 / 两个步骤",
+  "options": [
+   "把事情研究人员分成两个步骤。",
+   "研究人员把事情分成两个步骤。",
+   "研究人员分成把事情两个步骤。"
+  ],
+  "correct_answer": "研究人员把事情分成两个步骤。",
+  "explanation": "S + 把 + O + V + үр дүн: 把事情分成两个步骤 = ажлыг хоёр шатанд хуваах. 把-ийн өгүүлбэрт 把 нь тусагдахууны өмнө, үйл үгийн өмнө орно.",
+  "order_index": 30,
+  "id": "hsk5-l31-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 如果 / 您 / 心情好 / 我就 / 说件事",
+  "options": [
+   "您如果我就心情好说件事。",
+   "如果您心情好，我就说件事。",
+   "说件事我就如果心情好您。"
+  ],
+  "correct_answer": "如果您心情好，我就说件事。",
+  "explanation": "如果 …, 就 …: «хэрэв … бол …». 如果 нөхцөлийг (您心情好), 我就 үр дүнг (说件事) эхлүүлнэ.",
+  "order_index": 31,
+  "id": "hsk5-l31-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 大家 / 赞成 / 都 / 这个 / 计划",
+  "options": [
+   "大家赞成都这个计划。",
+   "都大家这个赞成计划。",
+   "大家都赞成这个计划。"
+  ],
+  "correct_answer": "大家都赞成这个计划。",
+  "explanation": "S + 都 + V + O: 都 нь үйл үгийн өмнө орно. 赞成这个计划 = энэ төлөвлөгөөг дэмжих.",
+  "order_index": 32,
+  "id": "hsk5-l31-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 这事 / 他 / 八成儿 / 已经 / 知道了",
+  "options": [
+   "他知道了这事八成儿已经。",
+   "这事已经八成儿他知道了。",
+   "这事他八成儿已经知道了。"
+  ],
+  "correct_answer": "这事他八成儿已经知道了。",
+  "explanation": "Сэдэв + S + 八成儿 + 已经 + V: 八成儿 нь дайвар үг тул 已经-ийн өмнө, үйл үгийн өмнө орно. 这事 — сэдэв.",
+  "order_index": 33,
+  "id": "hsk5-l31-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我们 / 改天 / 再 / 聊 / 吧",
+  "options": [
+   "改天聊我们再吧。",
+   "我们聊改天再吧。",
+   "我们改天再聊吧。"
+  ],
+  "correct_answer": "我们改天再聊吧。",
+  "explanation": "S + 改天再 + V + 吧: 改天 дараа 再, дараа нь үйл үг. 吧 өгүүлбэрийн төгсгөлд санал болгоно.",
+  "order_index": 34,
+  "id": "hsk5-l31-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
