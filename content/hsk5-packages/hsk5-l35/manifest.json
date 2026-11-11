@@ -1,0 +1,29 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk5",
+ "lessonId": "hsk5-l35",
+ "hskLevel": 5,
+ "lessonNumber": 35,
+ "lessonProfile": "hsk5-article-topic-vocab-nuance-writing",
+ "lessonType": "hsk5-article-topic-vocab-nuance-writing",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "植物会出汗",
+ "mongolianTitle": "Ургамал ч хөлсөлдөг",
+ "series": "HSK标准教程5下",
+ "seriesLabel_mn": "HSK5B",
+ "source": "HSK标准教程5下 · 第35课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариулт)",
+ "hasAudio": false,
+ "hasImages": false,
+ "media": {
+  "lessonId": "hsk5-l35",
+  "images": []
+ },
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (hsk5-l35.json, verified_pages)",
+  "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
+ }
+}

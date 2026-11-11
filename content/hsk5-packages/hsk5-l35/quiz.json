@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "他太激动了，说话时很难（　）自己的情绪。",
+  "options": [
+   "补充",
+   "吸收",
+   "控制",
+   "测验",
+   "指挥"
+  ],
+  "correct_answer": "控制",
+  "explanation": "控制 = хянах: 控制情绪 = сэтгэл хөдлөлөө хянах. 补充 — нөхөх; 吸收 — шингээх; 测验 — шалгалт, шалгах; 指挥 — удирдах.",
+  "order_index": 1,
+  "id": "hsk5-l35-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这种植物的叶子能（　）空气中的水分。",
+  "options": [
+   "吸收",
+   "恢复",
+   "测验",
+   "指挥",
+   "歇"
+  ],
+  "correct_answer": "吸收",
+  "explanation": "吸收 = шингээх: 吸收水分 = ус шингээх. 恢复 — сэргэх; 测验 — шалгалт, шалгах; 指挥 — удирдах; 歇 — амрах.",
+  "order_index": 2,
+  "id": "hsk5-l35-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "运动以后要多喝水，及时（　）身体失去的水分。",
+  "options": [
+   "指挥",
+   "测验",
+   "歇",
+   "释放",
+   "补充"
+  ],
+  "correct_answer": "补充",
+  "explanation": "补充 = нөхөх: 补充水分 = усыг нөхөж авах. 指挥 — удирдах; 测验 — шалгалт, шалгах; 歇 — амрах; 释放 — ялгаруулах.",
+  "order_index": 3,
+  "id": "hsk5-l35-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老师下周要对全班同学进行一次汉语水平（　）。",
+  "options": [
+   "秩序",
+   "测验",
+   "系统",
+   "肌肉",
+   "常识"
+  ],
+  "correct_answer": "测验",
+  "explanation": "测验 = шалгалт, шалгах: 进行测验 = шалгалт хийх; 测验 энд нэр үгээр орсон. 秩序 — дэг журам; 系统 — систем; 肌肉 — булчин; 常识 — энгийн мэдлэг.",
+  "order_index": 4,
+  "id": "hsk5-l35-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "阳台上的花喜欢（　）的空气，所以要经常喷水。",
+  "options": [
+   "特殊",
+   "自动",
+   "内部",
+   "湿润",
+   "玻璃"
+  ],
+  "correct_answer": "湿润",
+  "explanation": "湿润 = чийглэг: 湿润的空气 = чийглэг агаар. 特殊 — онцгой (бичгийн); 自动 — өөрөө, автоматаар; 内部 — дотоод; 玻璃 — шил.",
+  "order_index": 5,
+  "id": "hsk5-l35-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "公共场所要遵守（　），不能大声吵闹。",
+  "options": [
+   "肌肉",
+   "秩序",
+   "成分",
+   "系统",
+   "状况"
+  ],
+  "correct_answer": "秩序",
+  "explanation": "秩序 = дэг журам: 遵守秩序 = дэг журам сахих. 肌肉 — булчин; 成分 — найрлага; 系统 — систем; 状况 — байдал.",
+  "order_index": 6,
+  "id": "hsk5-l35-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这台机器启动后会（　）停止，不用人管。",
+  "options": [
+   "炎热",
+   "湿润",
+   "内部",
+   "荫凉",
+   "自动"
+  ],
+  "correct_answer": "自动",
+  "explanation": "自动 = өөрөө, автоматаар: 自动 нь дайвар үгээр «өөрөө, автоматаар» гэсэн утгатай. 炎热 — халуун; 湿润 — чийглэг; 内部 — дотоод; 荫凉 — сүүдэртэй сэрүүн.",
+  "order_index": 7,
+  "id": "hsk5-l35-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "窗户的（　）碎了，要换一块新的。",
+  "options": [
+   "玻璃",
+   "管子",
+   "肌肉",
+   "毛孔",
+   "成分"
+  ],
+  "correct_answer": "玻璃",
+  "explanation": "玻璃 = шил: 一块玻璃 = нэг ширхэг шил. 管子 — хоолой; 肌肉 — булчин; 毛孔 — арьсны сүв; 成分 — найрлага.",
+  "order_index": 8,
+  "id": "hsk5-l35-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这份文件是（　）资料，不能给外人看。",
+  "options": [
+   "炎热",
+   "荫凉",
+   "肌肉",
+   "内部",
+   "毛孔"
+  ],
+  "correct_answer": "内部",
+  "explanation": "内部 = дотоод: 内部资料 = дотоодын материал. 炎热 — халуун; 荫凉 — сүүдэртэй сэрүүн; 肌肉 — булчин; 毛孔 — арьсны сүв.",
+  "order_index": 9,
+  "id": "hsk5-l35-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "工厂不能随便向空气中（　）有害气体。",
+  "options": [
+   "补充",
+   "测验",
+   "释放",
+   "恢复",
+   "指挥"
+  ],
+  "correct_answer": "释放",
+  "explanation": "释放 = ялгаруулах: 释放气体 = хий ялгаруулах. 补充 — нөхөх; 测验 — шалгалт, шалгах; 恢复 — сэргэх; 指挥 — удирдах.",
+  "order_index": 10,
+  "id": "hsk5-l35-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l35-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "快迟到了，你（　）起床吧！",
+  "options": [
+   "根本",
+   "特殊",
+   "一片",
+   "赶快",
+   "慢慢"
+  ],
+  "correct_answer": "赶快",
+  "explanation": "赶快 + V = хурдан …: яарах шалтгаан (удахгүй хоцрох) байна. Бусад сонголт: 根本 — огт; үндсэн; 特殊 — онцгой (бичгийн); 一片 — нэг зүсэм / тал газар; 慢慢 — аажим.",
+  "order_index": 11,
+  "id": "hsk5-l35-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "医生说这种药每次吃一（　）就够了。",
+  "options": [
+   "张",
+   "片",
+   "根",
+   "位",
+   "条"
+  ],
+  "correct_answer": "片",
+  "explanation": "Шахмал эмийг 片-ээр тоолно: 一片药. Бусад сонголт: 张 — хавтгай цаас, ширээ зэргийн хэмжих нэр; 根 — урт нимгэн зүйлийн хэмжих нэр; 位 — хүндэтгэлтэй хүний хэмжих нэр; 条 — урт зүйлийн хэмжих нэр.",
+  "order_index": 12,
+  "id": "hsk5-l35-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我（　）没听过这个人的名字。",
+  "options": [
+   "根本",
+   "赶快",
+   "特别",
+   "特殊",
+   "一片"
+  ],
+  "correct_answer": "根本",
+  "explanation": "根本 + 没 = огт … байгаагүй (сөрөх өгүүлбэр). Бусад сонголт: 赶快 — хурдан; 特别 — маш; онцгой; 特殊 — онцгой (бичгийн); 一片 — нэг зүсэм / тал газар.",
+  "order_index": 13,
+  "id": "hsk5-l35-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我喜欢运动，（　）是游泳。",
+  "options": [
+   "特殊",
+   "根本",
+   "赶快",
+   "一片",
+   "特别"
+  ],
+  "correct_answer": "特别",
+  "explanation": "特别是 = ялангуяа. 特殊是 гэж хэлэхгүй. Бусад сонголт: 特殊 — онцгой (бичгийн); 根本 — огт; үндсэн; 赶快 — хурдан; 一片 — нэг зүсэм / тал газар.",
+  "order_index": 14,
+  "id": "hsk5-l35-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不解决这个（　）问题，其他办法都没有用。",
+  "options": [
+   "赶快",
+   "片",
+   "根本",
+   "一旦",
+   "忽然"
+  ],
+  "correct_answer": "根本",
+  "explanation": "根本问题 = үндсэн асуудал (тэмдэг нэрийн 根本). Бусад сонголт: 赶快 — хурдан; 片 — зүсэм, ширхэг; 一旦 — нэгэнт; 忽然 — гэнэт.",
+  "order_index": 15,
+  "id": "hsk5-l35-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子的用法是正确的？",
+  "options": [
+   "今天天气特殊冷。",
+   "我喜欢北京，特别是北京的秋天。",
+   "我特殊喜欢这个电影。",
+   "这个问题特别是很难。"
+  ],
+  "correct_answer": "我喜欢北京，特别是北京的秋天。",
+  "explanation": "特别是 = ялангуяа. «Маш» гэсэн дайвар үг нь зөвхөн 特别 (特别冷, 特别喜欢), 特殊 нь дайвар үг болдоггүй.",
+  "order_index": 16,
+  "id": "hsk5-l35-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "夏天踢完球赛以后，队员们的状况怎么样？",
+  "options": [
+   "冻得发抖",
+   "饿得不想动",
+   "又困又想睡",
+   "汗如雨下"
+  ],
+  "correct_answer": "汗如雨下",
+  "explanation": "1-р өгүүлбэр: 每个队员都已经是汗如雨下 — тоглогч бүр хөлс урсган норсон.",
+  "order_index": 17,
+  "id": "hsk5-l35-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "人体温度上升时，是什么指挥身体出汗的？",
+  "options": [
+   "大脑",
+   "汗腺",
+   "毛孔",
+   "肌肉"
+  ],
+  "correct_answer": "大脑",
+  "explanation": "4-р өгүүлбэр: 大脑就会指挥我们的身体赶快出汗. Хөлсний булчирхай (汗腺) нь тушаалыг биелүүлдэг.",
+  "order_index": 18,
+  "id": "hsk5-l35-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文说，大树“出汗”是为了什么？",
+  "options": [
+   "为了降低温度",
+   "为了吸引昆虫",
+   "为了运输养分",
+   "为了保护叶子"
+  ],
+  "correct_answer": "为了运输养分",
+  "explanation": "5-р өгүүлбэр: 不是为了降低温度，而是为了运输养分 — модны «хөлрөлт» тэжээл тээх зорилготой.",
+  "order_index": 19,
+  "id": "hsk5-l35-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "最初人们认为大树是靠什么把水提上去的？",
+  "options": [
+   "蒸腾拉力",
+   "毛细作用",
+   "风的力量",
+   "雨水"
+  ],
+  "correct_answer": "毛细作用",
+  "explanation": "7-р өгүүлбэр: 最初人们认为大树是通过毛细作用来提水的.",
+  "order_index": 20,
+  "id": "hsk5-l35-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "水在很细的玻璃管里会怎么样？",
+  "options": [
+   "向下流，管子越细流得越快",
+   "一动也不动",
+   "变成水汽",
+   "向上“爬”，管子越细爬得越高"
+  ],
+  "correct_answer": "向上“爬”，管子越细爬得越高",
+  "explanation": "8-9-р өгүүлбэр: нарийн шилэн хоолойд ус дээш «авирна», хоолой нарийн байх тусам улам өндөрт авирна.",
+  "order_index": 21,
+  "id": "hsk5-l35-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "测验计算的结果说明了什么？",
+  "options": [
+   "毛细作用无法把水送到几十米高",
+   "毛细作用能把水送到上百米",
+   "大树不需要水",
+   "玻璃管不能做实验"
+  ],
+  "correct_answer": "毛细作用无法把水送到几十米高",
+  "explanation": "10-р өгүүлбэр: 根本无法把水分送到几十米高的地方 — хялгасан судасны үзэгдэл усыг хэдэн арван метрийн өндөрт хүргэж чадахгүй.",
+  "order_index": 22,
+  "id": "hsk5-l35-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "实际上，大树靠什么把水分“抽”上来？",
+  "options": [
+   "根不停地吸水",
+   "树干自己会动",
+   "叶子不停地向空气中释放水汽",
+   "雨水从上面流下来"
+  ],
+  "correct_answer": "叶子不停地向空气中释放水汽",
+  "explanation": "12-р өгүүлбэр: навч агаарт усны уур тасралтгүй ялгарснаар их бие доторх ус өөрөө нөхөгдөж, дээш татагдана.",
+  "order_index": 23,
+  "id": "hsk5-l35-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "关于“蒸腾拉力”，课文最后说了什么？",
+  "options": [
+   "科学家已经完全研究清楚了",
+   "它是怎么运转的，到现在还是个谜",
+   "它只在夏天出现",
+   "它和人出汗一样"
+  ],
+  "correct_answer": "它是怎么运转的，到现在还是个谜",
+  "explanation": "14-р өгүүлбэр: 到目前还是个谜 — яг хэрхэн ажилладаг, яагаад ийм их таталт үүсдэг нь одоо ч нууц.",
+  "order_index": 24,
+  "id": "hsk5-l35-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n夏天，爸爸在花园里干了一上午活儿，衣服都被汗湿透了。他坐在大树下歇了一会儿，喝了一杯凉开水，很快就恢复了体力。\n问：爸爸休息以后怎么样了？",
+  "options": [
+   "觉得更累了",
+   "生病了",
+   "去买冰激凌了",
+   "很快恢复了体力"
+  ],
+  "correct_answer": "很快恢复了体力",
+  "explanation": "恢复了体力 = бие хүч сэргэсэн. Эхний хэсэгт ядарсан, сүүдэрт амарч ус уусны дараа сэргэсэн гэж бичсэн.",
+  "order_index": 25,
+  "id": "hsk5-l35-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小林的电脑总是自动重新启动。修理工检查以后说，电脑内部没有坏，是系统出了问题，需要重新安装。\n问：电脑出了什么问题？",
+  "options": [
+   "系统出了问题",
+   "电脑内部坏了",
+   "电脑的玻璃碎了",
+   "没有电了"
+  ],
+  "correct_answer": "系统出了问题",
+  "explanation": "电脑内部没有坏，是系统出了问题 — дотоод эд анги эвдрээгүй, системд асуудал гарсан.",
+  "order_index": 26,
+  "id": "hsk5-l35-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n老师在课堂上做了一个小实验：把一根很细的玻璃管放进水里，水慢慢地向上“爬”。同学们都很惊讶，因为他们以前根本不知道水还会向上“爬”。\n问：同学们为什么很惊讶？",
+  "options": [
+   "实验失败了",
+   "玻璃管碎了",
+   "他们以前不知道水会向上“爬”",
+   "水变成了冰"
+  ],
+  "correct_answer": "他们以前不知道水会向上“爬”",
+  "explanation": "根本不知道 = огт мэддэггүй байсан. Тэд ус дээш «авирдаг» гэдгийг урьд нь мэдээгүй тул гайхсан.",
+  "order_index": 27,
+  "id": "hsk5-l35-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n李明参加了一次汉语测验，成绩不太好。老师没有批评他，而是帮他补充了不少词汇。一个月以后，他的成绩提高了很多。\n问：老师是怎么帮助李明的？",
+  "options": [
+   "批评了他",
+   "帮他补充词汇",
+   "不让他参加测验",
+   "给他换了一个班"
+  ],
+  "correct_answer": "帮他补充词汇",
+  "explanation": "没有批评他，而是帮他补充了不少词汇 — багш шүүмжлээгүй, харин үгийн сангаа нөхөхөд нь тусалсан.",
+  "order_index": 28,
+  "id": "hsk5-l35-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 出汗 / 大脑 / 赶快 / 会 / 身体 / 指挥",
+  "options": [
+   "大脑会指挥赶快身体出汗。",
+   "大脑赶快会指挥出汗身体。",
+   "大脑会指挥身体赶快出汗。"
+  ],
+  "correct_answer": "大脑会指挥身体赶快出汗。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (大脑) + 会 + 指挥 + биед (身体) + 赶快 + 出汗. 赶快 нь үйл үг 出汗-ийн өмнө орно.",
+  "order_index": 29,
+  "id": "hsk5-l35-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 根本 / 毛细作用 / 把水 / 送到高处 / 无法",
+  "options": [
+   "毛细作用根本无法把水送到高处。",
+   "毛细作用无法根本把水送到高处。",
+   "根本毛细作用无法把水送到高处。"
+  ],
+  "correct_answer": "毛细作用根本无法把水送到高处。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (毛细作用) + 根本 + 无法 + 把水送到高处. 根本 нь 无法-ийн ӨМНӨ орно.",
+  "order_index": 30,
+  "id": "hsk5-l35-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 叶子 / 不停地 / 向空气中 / 释放 / 水汽",
+  "options": [
+   "叶子释放不停地向空气中水汽。",
+   "叶子不停地向空气中释放水汽。",
+   "不停地叶子向空气中水汽释放。"
+  ],
+  "correct_answer": "叶子不停地向空气中释放水汽。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (叶子) + 不停地 + 向空气中 + 释放 + 水汽. Дайвар хэсэг үйл үгийн өмнө.",
+  "order_index": 31,
+  "id": "hsk5-l35-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 夏天 / 我 / 特别 / 喜欢 / 在大树下 / 歇一歇",
+  "options": [
+   "夏天我喜欢特别在大树下歇一歇。",
+   "夏天特别我喜欢歇一歇在大树下。",
+   "夏天我特别喜欢在大树下歇一歇。"
+  ],
+  "correct_answer": "夏天我特别喜欢在大树下歇一歇。",
+  "explanation": "Дараалал: цаг (夏天) + 我 + 特别 + 喜欢 + газар (在大树下) + 歇一歇. 特别 нь 喜欢-ийн өмнө «маш» гэсэн утгатай.",
+  "order_index": 32,
+  "id": "hsk5-l35-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 窗外的树叶 / 一片一片地 / 落了下来",
+  "options": [
+   "窗外的树叶一片一片地落了下来。",
+   "一片一片地窗外的树叶落了下来。",
+   "窗外的树叶落了下来一片一片地。"
+  ],
+  "correct_answer": "窗外的树叶一片一片地落了下来。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (窗外的树叶) + дайвар (一片一片地) + үйл үг (落了下来). 一片一片 = нэг нэгээрээ.",
+  "order_index": 33,
+  "id": "hsk5-l35-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 大家 / 应该 / 遵守 / 公共 / 秩序",
+  "options": [
+   "大家应该公共遵守秩序。",
+   "大家应该遵守公共秩序。",
+   "大家遵守应该公共秩序。"
+  ],
+  "correct_answer": "大家应该遵守公共秩序。",
+  "explanation": "Дараалал: 大家 + 应该 + 遵守 + 公共 + 秩序. 遵守秩序 = дэг журам сахих, 公共 нь 秩序-ийг тодорхойлно.",
+  "order_index": 34,
+  "id": "hsk5-l35-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
