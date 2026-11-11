@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AppShell } from "@/components/app/app-shell";
-import { BottomNavChrome } from "@/components/mobile/bottom-nav-chrome";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import { BichlegSlangSheet } from "@/components/bichleg/bichleg-slang-sheet";
 import { BichlegSeekBar } from "@/components/bichleg/bichleg-seek-bar";
@@ -244,6 +243,10 @@ export function BichlegFeedClient({
   const [savedThisEpisode, setSavedThisEpisode] = useState<Record<string, string[]>>({});
   const [endCardDismissed, setEndCardDismissed] = useState(false);
   const [fsMode, setFsMode] = useState<BichlegFullscreenMode>("none");
+  const [showMore, setShowMore] = useState(false);
+  /** Тоглож байхад товчнууд хэдэн секундын дараа нуугдана; дэлгэцэд хүрэхэд эргэн гарна. */
+  const [chromeHidden, setChromeHidden] = useState(false);
+  const chromeTimerRef = useRef<number | null>(null);
 
   const isPlayingRef = useRef(true);
   const currentTimeRef = useRef(0);
@@ -763,17 +766,28 @@ export function BichlegFeedClient({
     if (muted) setMuted(false);
   }
 
+  function pokeChrome(playing: boolean) {
+    if (chromeTimerRef.current != null) window.clearTimeout(chromeTimerRef.current);
+    chromeTimerRef.current = null;
+    setChromeHidden(false);
+    if (playing) {
+      chromeTimerRef.current = window.setTimeout(() => setChromeHidden(true), 2800);
+    }
+  }
+
   function handlePlayerStateChange(state: number) {
     if (state === YT.PlayerState.PLAYING) {
       setIsPlaying(true);
       isPlayingRef.current = true;
       setEnded(false);
       setPausedAtSentence(false);
+      pokeChrome(true);
       return;
     }
     if (state === YT.PlayerState.PAUSED || state === YT.PlayerState.ENDED) {
       setIsPlaying(false);
       isPlayingRef.current = false;
+      pokeChrome(false);
       if (activeVideo) {
         const player = playerRef.current;
         const t = (player && safePlayerCurrentTime(player)) ?? currentTimeRef.current;
@@ -1167,9 +1181,12 @@ export function BichlegFeedClient({
   return (
     <AppShell activeTab="clips" showBottomNav={false} immersive>
       <div
-        className={`bs-bichleg-shell${isFs ? " bs-bichleg-shell--fs" : ""}`}
+        className={`bs-bichleg-shell${isFs ? " bs-bichleg-shell--fs" : ""}${
+          chromeHidden && isPlaying ? " bs-bichleg-shell--idle" : ""
+        }`}
         ref={shellRef}
         data-hanzi={hanziSize}
+        onPointerDownCapture={() => pokeChrome(isPlayingRef.current)}
       >
         {isFs ? (
           <button
@@ -1357,11 +1374,18 @@ export function BichlegFeedClient({
                 {isActive && activeSubtitle ? (
                   <div className="bs-bichleg-subs">
                     <div className="bs-bichleg-subs-row">
-                      <button
-                        type="button"
+                      <div
+                        role="button"
+                        tabIndex={0}
                         className="bs-bichleg-subs-panel"
                         aria-label={tr(locale, "Энэ мөрийн эхнээс сонсох")}
                         onClick={() => seekToSubtitle(activeSubtitle)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            seekToSubtitle(activeSubtitle);
+                          }
+                        }}
                       >
                         <span className="bs-bl-time-badge">
                           {formatSubtitleClock(activeSubtitle.start_sec)}
@@ -1376,7 +1400,7 @@ export function BichlegFeedClient({
                         {showMn && activeSubtitle.mn ? (
                           <p className="bs-bl-mn" translate="no">{activeSubtitle.mn}</p>
                         ) : null}
-                      </button>
+                      </div>
                       {activeSubtitle.slang_note ? (
                         <button
                           type="button"
@@ -1474,16 +1498,13 @@ export function BichlegFeedClient({
           })}
         </div>
 
+        {muted ? (
+          <button type="button" className="bs-bichleg-unmute" onClick={() => setMuted(false)}>
+            🔇 {tr(locale, "Дууг асаах")}
+          </button>
+        ) : null}
+
         <div className="bs-bichleg-controls">
-          {muted ? (
-            <button
-              type="button"
-              className="bs-bichleg-ctrl-btn bs-bichleg-ctrl-btn--warn"
-              onClick={() => setMuted(false)}
-            >
-              {tr(locale, "Дууг асаах")}
-            </button>
-          ) : null}
           <button
             type="button"
             className={`bs-bichleg-ctrl-btn ${showPinyin ? "bs-bichleg-ctrl-btn--on" : ""}`}
@@ -1523,70 +1544,103 @@ export function BichlegFeedClient({
           </button>
           <button
             type="button"
-            className={`bs-bichleg-ctrl-btn ${autoPause ? "bs-bichleg-ctrl-btn--on" : ""}`}
-            aria-pressed={autoPause}
-            disabled={!hasSubs}
-            onClick={() => {
-              setAutoPause((v) => !v);
-              setPausedAtSentence(false);
-            }}
-          >
-            ⏸ {tr(locale, "Автомат зогсоох")}
-          </button>
-          <button
-            type="button"
-            className={`bs-bichleg-ctrl-btn ${listenMode ? "bs-bichleg-ctrl-btn--on" : ""}`}
-            aria-pressed={listenMode}
-            onClick={() => {
-              setListenMode((v) => !v);
-              setRevealedIdx(new Set());
-            }}
-          >
-            👂 {tr(locale, "Хадмалгүй")}
-          </button>
-          <button
-            type="button"
-            className="bs-bichleg-ctrl-btn bs-bichleg-ctrl-btn--size"
-            aria-label={tr(locale, "Ханзын хэмжээ")}
-            title={tr(locale, "Ханзын хэмжээ")}
-            onClick={cycleHanziSize}
-          >
-            {formatHanziSizeLabel(hanziSize)}
-          </button>
-          <button
-            type="button"
             className="bs-bichleg-ctrl-btn"
+            aria-label={tr(locale, "Бүх өгүүлбэр")}
             disabled={!hasSubs}
             onClick={() => {
               pausePlayback();
               setShowTranscript(true);
             }}
           >
-            ☰ {tr(locale, "Бүх өгүүлбэр")}
+            ☰
           </button>
           <button
             type="button"
-            className={`bs-bichleg-ctrl-btn ${isFs ? "bs-bichleg-ctrl-btn--on" : ""}`}
-            aria-label={tr(locale, isFs ? "Бүтэн дэлгэцээс гарах" : "Бүтэн дэлгэц")}
-            aria-pressed={isFs}
-            onClick={() => (isFs ? exitFullscreen() : void enterFullscreen())}
+            className={`bs-bichleg-ctrl-btn ${autoPause || listenMode || userSubtitleOffset !== 0 || isFs ? "bs-bichleg-ctrl-btn--on" : ""}`}
+            aria-label={tr(locale, "Тохиргоо")}
+            onClick={() => setShowMore(true)}
           >
-            ⛶
-          </button>
-          <button
-            type="button"
-            className={`bs-bichleg-ctrl-btn bs-bichleg-ctrl-btn--offset ${userSubtitleOffset !== 0 ? "bs-bichleg-ctrl-btn--on" : ""}`}
-            aria-label={tr(locale, "Хадмалын цаг")}
-            title={tr(locale, "Хадмалын цаг")}
-            onClick={cycleUserSubtitleOffset}
-          >
-            ⏱ {formatUserSubtitleOffsetLabel(userSubtitleOffset)}
+            ⚙
           </button>
         </div>
 
-        {!isFs ? (
-          <div className="absolute inset-x-0 bottom-0 z-50 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-2">
-            <BottomNavChrome active="clips" />
+        {showMore ? (
+          <div className="bs-bichleg-sheet-backdrop" onClick={() => setShowMore(false)}>
+            <div className="bs-bichleg-sheet bs-bichleg-sheet--more" onClick={(e) => e.stopPropagation()}>
+              <p className="bs-bichleg-sheet-title">⚙ {tr(locale, "Тохиргоо")}</p>
+              <button
+                type="button"
+                className="bs-bichleg-more-row"
+                aria-pressed={autoPause}
+                disabled={!hasSubs}
+                onClick={() => {
+                  setAutoPause((v) => !v);
+                  setPausedAtSentence(false);
+                }}
+              >
+                <span className="bs-bichleg-more-ico">⏸</span>
+                <span className="bs-bichleg-more-text">
+                  <b>{tr(locale, "Автомат зогсоох")}</b>
+                  <small>{tr(locale, "Өгүүлбэр бүрийн төгсгөлд зогсоно — дагаж хэлэхэд")}</small>
+                </span>
+                <span className={`bs-bichleg-more-switch${autoPause ? " bs-bichleg-more-switch--on" : ""}`} />
+              </button>
+              <button
+                type="button"
+                className="bs-bichleg-more-row"
+                aria-pressed={listenMode}
+                onClick={() => {
+                  setListenMode((v) => !v);
+                  setRevealedIdx(new Set());
+                }}
+              >
+                <span className="bs-bichleg-more-ico">👂</span>
+                <span className="bs-bichleg-more-text">
+                  <b>{tr(locale, "Хадмалгүй")}</b>
+                  <small>{tr(locale, "Эхлээд сонсоно, хадмал дээр дарвал нээгдэнэ")}</small>
+                </span>
+                <span className={`bs-bichleg-more-switch${listenMode ? " bs-bichleg-more-switch--on" : ""}`} />
+              </button>
+              <button type="button" className="bs-bichleg-more-row" onClick={cycleHanziSize}>
+                <span className="bs-bichleg-more-ico">字</span>
+                <span className="bs-bichleg-more-text">
+                  <b>{tr(locale, "Ханзын хэмжээ")}</b>
+                  <small>{tr(locale, "Дарах бүрд солигдоно")}</small>
+                </span>
+                <span className="bs-bichleg-more-value">{formatHanziSizeLabel(hanziSize)}</span>
+              </button>
+              <button type="button" className="bs-bichleg-more-row" onClick={cycleUserSubtitleOffset}>
+                <span className="bs-bichleg-more-ico">⏱</span>
+                <span className="bs-bichleg-more-text">
+                  <b>{tr(locale, "Хадмалын цаг")}</b>
+                  <small>{tr(locale, "Хадмал дуунаас түрүүлж/хоцорч байвал тааруулна")}</small>
+                </span>
+                <span className="bs-bichleg-more-value">{formatUserSubtitleOffsetLabel(userSubtitleOffset)}</span>
+              </button>
+              <button
+                type="button"
+                className="bs-bichleg-more-row"
+                aria-pressed={isFs}
+                onClick={() => {
+                  setShowMore(false);
+                  if (isFs) exitFullscreen();
+                  else void enterFullscreen();
+                }}
+              >
+                <span className="bs-bichleg-more-ico">⛶</span>
+                <span className="bs-bichleg-more-text">
+                  <b>{tr(locale, isFs ? "Бүтэн дэлгэцээс гарах" : "Бүтэн дэлгэц")}</b>
+                  <small>{tr(locale, "Утсаа хэвтээ болгож үзэхэд тохиромжтой")}</small>
+                </span>
+              </button>
+              <button
+                type="button"
+                className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--full"
+                onClick={() => setShowMore(false)}
+              >
+                {tr(locale, "Хаах")}
+              </button>
+            </div>
           </div>
         ) : null}
 

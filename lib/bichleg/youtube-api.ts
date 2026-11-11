@@ -42,7 +42,30 @@ export type YtPlayer = {
   mute: () => void;
   unMute: () => void;
   destroy: () => void;
+  unloadModule?: (name: string) => void;
+  setOption?: (module: string, option: string, value: unknown) => void;
 };
+
+/**
+ * YouTube-ийн өөрийн хадмалыг (CC) унтраана. Дуугүй автоматаар эхлэхэд YouTube хадмалаа
+ * өөрөө асаадаг бөгөөд манай хадмалтай давхцдаг. Модуль дахин ачаалагдаж болох тул
+ * тоглож эхлэх бүрд дуудна.
+ */
+export function disableYouTubeCaptions(player: YtPlayer | null | undefined): void {
+  if (!player) return;
+  for (const name of ["captions", "cc"]) {
+    try {
+      player.unloadModule?.(name);
+    } catch {
+      /* модуль ачаалагдаагүй */
+    }
+  }
+  try {
+    player.setOption?.("captions", "track", {});
+  } catch {
+    /* ignore */
+  }
+}
 
 export function destroyYouTubeMount(
   player: YtPlayer | null,
@@ -92,17 +115,26 @@ export async function createYouTubePlayer(
           rel: 0,
           playsinline: 1,
           fs: 0,
+          // Манай хадмалтай давхцуулахгүй: YouTube-ийн CC, тайлбар давхаргыг унтраана.
+          cc_load_policy: 0,
+          iv_load_policy: 3,
+          disablekb: 1,
           autoplay: 1,
           mute: opts?.muted ? 1 : 0,
           ...(origin ? { origin } : {}),
         },
         events: {
           onReady: () => {
+            disableYouTubeCaptions(player as unknown as YtPlayer);
             opts?.onReady?.();
             resolve(player as unknown as YtPlayer);
           },
           onError: () => reject(new Error("YouTube player error")),
           onStateChange: (event: { data: number }) => {
+            // 1 = PLAYING, 3 = BUFFERING — хадмалын модуль энэ үед (дахин) ачаалагддаг.
+            if (event.data === 1 || event.data === 3) {
+              disableYouTubeCaptions(player as unknown as YtPlayer);
+            }
             opts?.onStateChange?.(event.data);
           },
         },
