@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "这家公司专门负责把新鲜水果（　）到全国各地。",
+  "options": [
+   "延长",
+   "改善",
+   "运输",
+   "构成",
+   "逃避"
+  ],
+  "correct_answer": "运输",
+  "explanation": "运输 = тээвэрлэх: 运输水果 (жимс тээвэрлэх). 延长 — уртасгах; 改善 — сайжруулах; 构成 — бүрдүүлэх; 逃避 — зайлсхийх.",
+  "order_index": 1,
+  "id": "hsk5-l30-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "船靠了（　），乘客们陆续走下船。",
+  "options": [
+   "岸",
+   "比例",
+   "概念",
+   "核心",
+   "商品"
+  ],
+  "correct_answer": "岸",
+  "explanation": "岸 = эрэг: 靠岸 (эрэгт ойртох), 上岸 (эрэгт гарах). 比例 — харьцаа; 概念 — ойлголт; 核心 — цөм; 商品 — бараа.",
+  "order_index": 2,
+  "id": "hsk5-l30-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "为了让更多人能参加，主办方决定把报名时间（　）三天。",
+  "options": [
+   "逃避",
+   "构成",
+   "接近",
+   "延长",
+   "落后"
+  ],
+  "correct_answer": "延长",
+  "explanation": "延长 = уртасгах, сунгах: 延长时间. 逃避 — зайлсхийх; 构成 — бүрдүүлэх; 接近 — ойртох; 落后 — хоцрох.",
+  "order_index": 3,
+  "id": "hsk5-l30-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "遇到困难要勇敢面对，不能总是（　）。",
+  "options": [
+   "延长",
+   "逃避",
+   "刺激",
+   "运输",
+   "构成"
+  ],
+  "correct_answer": "逃避",
+  "explanation": "逃避 = зайлсхийх, мултрах: 逃避困难 / 责任. 延长 — уртасгах; 刺激 — өдөөх; 运输 — тээвэрлэх; 构成 — бүрдүүлэх.",
+  "order_index": 4,
+  "id": "hsk5-l30-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们的服务质量还需要不断（　）。",
+  "options": [
+   "构成",
+   "逃避",
+   "落后",
+   "运输",
+   "改善"
+  ],
+  "correct_answer": "改善",
+  "explanation": "改善 = сайжруулах: 改善服务/条件/环境. 构成 — бүрдүүлэх; 逃避 — зайлсхийх; 落后 — хоцрох; 运输 — тээвэрлэх.",
+  "order_index": 5,
+  "id": "hsk5-l30-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他想出了一个（　）的办法，一下子解决了难题。",
+  "options": [
+   "旺盛",
+   "巧妙",
+   "员工",
+   "比例",
+   "本质"
+  ],
+  "correct_answer": "巧妙",
+  "explanation": "巧妙 = ухаалаг, овсгоотой: 巧妙的办法/主意. 旺盛 — эрч хүчтэй; 员工 — ажилтан; 比例 — харьцаа; 本质 — мөн чанар.",
+  "order_index": 6,
+  "id": "hsk5-l30-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这家工厂的（　）很落后，需要尽快更新。",
+  "options": [
+   "感想",
+   "比例",
+   "决赛",
+   "设备",
+   "天敌"
+  ],
+  "correct_answer": "设备",
+  "explanation": "设备 = тоног төхөөрөмж: 设备落后 (тоног төхөөрөмж хоцрогдсон). 感想 — сэтгэгдэл; 比例 — харьцаа; 决赛 — финал; 天敌 — байгалийн дайсан.",
+  "order_index": 7,
+  "id": "hsk5-l30-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "咖啡能（　）大脑，让人更清醒。",
+  "options": [
+   "刺激",
+   "构成",
+   "延长",
+   "逃避",
+   "运输"
+  ],
+  "correct_answer": "刺激",
+  "explanation": "刺激 = өдөөх, цочроох: 刺激大脑 (тархийг өдөөх). 构成 — бүрдүүлэх; 延长 — уртасгах; 逃避 — зайлсхийх; 运输 — тээвэрлэх.",
+  "order_index": 8,
+  "id": "hsk5-l30-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个孩子精力很（　），玩了一整天也不觉得累。",
+  "options": [
+   "实用",
+   "和平",
+   "旺盛",
+   "巧妙",
+   "有利"
+  ],
+  "correct_answer": "旺盛",
+  "explanation": "旺盛 = эрч хүчтэй, бадрангуй: 精力旺盛 (эрч хүч дүүрэн). 实用 — хэрэгцээтэй; 和平 — энх тайван; 巧妙 — ухаалаг; 有利 — тустай.",
+  "order_index": 9,
+  "id": "hsk5-l30-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老师请同学们谈谈参观以后的（　）和体会。",
+  "options": [
+   "概念",
+   "比例",
+   "员工",
+   "商品",
+   "感想"
+  ],
+  "correct_answer": "感想",
+  "explanation": "感想 = сэтгэгдэл, бодол: 谈感想 (сэтгэгдлээ хуваалцах). 概念 — ойлголт; 比例 — харьцаа; 员工 — ажилтан; 商品 — бараа.",
+  "order_index": 10,
+  "id": "hsk5-l30-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l30-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他（　）中听到了经理的电话，才知道公司要搬家。",
+  "options": [
+   "的确",
+   "无意",
+   "有利",
+   "接近",
+   "靠近"
+  ],
+  "correct_answer": "无意",
+  "explanation": "无意中 + V = санамсаргүй …: 无意中听到 (санамсаргүй сонссон). 的确 — үнэхээр; 有利 — тустай; 接近/靠近 — ойртох.",
+  "order_index": 11,
+  "id": "hsk5-l30-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "多喝水（　）身体健康，特别是在夏天。",
+  "options": [
+   "无意中",
+   "的确",
+   "接近",
+   "有利于",
+   "靠近"
+  ],
+  "correct_answer": "有利于",
+  "explanation": "有利于 + N = …-д тустай: 有利于身体健康. Бусад нь энд утгын хувьд таарахгүй: 无意中 — санамсаргүй; 的确 — үнэхээр; 接近/靠近 — ойртох.",
+  "order_index": 12,
+  "id": "hsk5-l30-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个孩子（　）很聪明，难怪老师这么喜欢他。",
+  "options": [
+   "的确",
+   "无意",
+   "有利",
+   "靠近",
+   "接近"
+  ],
+  "correct_answer": "的确",
+  "explanation": "的确 = үнэхээр: 的确很聪明. 无意 — санаагүй; 有利 — тустай; 靠近/接近 — ойртох.",
+  "order_index": 13,
+  "id": "hsk5-l30-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "坐在（　）窗户的人，请帮忙把窗户关一下。",
+  "options": [
+   "无意",
+   "有利",
+   "靠近",
+   "的确",
+   "逃避"
+  ],
+  "correct_answer": "靠近",
+  "explanation": "靠近 + бодит зүйл/газар: 靠近窗户 (цонхны дэргэд). Бусад нь утгад таарахгүй.",
+  "order_index": 14,
+  "id": "hsk5-l30-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "现在已经（　）中午十二点了，我们先去吃饭吧。",
+  "options": [
+   "靠近",
+   "无意",
+   "有利",
+   "的确",
+   "接近"
+  ],
+  "correct_answer": "接近",
+  "explanation": "接近 + цаг хугацаа: 接近十二点 (арван хоёр цаг дөхлөө). Цаг хугацаанд 靠近 хэрэглэхгүй.",
+  "order_index": 15,
+  "id": "hsk5-l30-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子的用法是正确的？",
+  "options": [
+   "现在已经靠近晚上十点了。",
+   "两个队的水平非常接近。",
+   "他是的确我们班最高的学生。",
+   "对不起，我是无意中的。"
+  ],
+  "correct_answer": "两个队的水平非常接近。",
+  "explanation": "接近 + хийсвэр зүйл (水平) / ялгаа бага — зөв. Бусад: 靠近 цаг хугацаанд хэрэглэхгүй (→ 接近晚上十点); 的确 нь 是-ийн өмнө орно (→ 他的确是……); «Би санаатай хийгээгүй» нь 我是无意的.",
+  "order_index": 16,
+  "id": "hsk5-l30-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "西班牙人特别喜欢吃什么？",
+  "options": [
+   "鲇鱼",
+   "海虾",
+   "沙丁鱼",
+   "螃蟹"
+  ],
+  "correct_answer": "沙丁鱼",
+  "explanation": "1-р өгүүлбэр: 西班牙人特别喜欢吃沙丁鱼 (Испаничууд сардин загас идэх их дуртай).",
+  "order_index": 17,
+  "id": "hsk5-l30-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "沙丁鱼运输中遇到的最大问题是什么？",
+  "options": [
+   "鱼上岸后过不了多久就会死去",
+   "鱼太小，不好装箱",
+   "渔民不会捕鱼",
+   "路太远，没有车"
+  ],
+  "correct_answer": "鱼上岸后过不了多久就会死去",
+  "explanation": "2–3-р өгүүлбэр: 沙丁鱼对离开大海后的环境极不适应，鱼上岸后，过不了多久就会死去 (удалгүй үхдэг).",
+  "order_index": 18,
+  "id": "hsk5-l30-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "死掉的沙丁鱼为什么卖得便宜？",
+  "options": [
+   "因为个头太小",
+   "因为颜色不好看",
+   "因为数量太多",
+   "因为口感很差"
+  ],
+  "correct_answer": "因为口感很差",
+  "explanation": "4-р өгүүлбэр: 死掉的沙丁鱼口感很差，价格就会便宜很多 (амт муу тул үнэ хямд).",
+  "order_index": 19,
+  "id": "hsk5-l30-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "一位渔民无意中发现了什么办法？",
+  "options": [
+   "在水里多放一些盐",
+   "把鲇鱼放进装沙丁鱼的设备中",
+   "让沙丁鱼晚上再运输",
+   "把沙丁鱼放在冰里"
+  ],
+  "correct_answer": "把鲇鱼放进装沙丁鱼的设备中",
+  "explanation": "7-р өгүүлбэр: 把几条沙丁鱼的天敌鲇鱼放进装鱼的设备中 (байгалийн дайсан цулбуурт загасыг саванд хийх).",
+  "order_index": 20,
+  "id": "hsk5-l30-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "沙丁鱼为什么会不断地加速游动？",
+  "options": [
+   "为了逃避天敌鲇鱼",
+   "因为它们想早点上岸",
+   "因为水太冷了",
+   "因为它们在寻找食物"
+  ],
+  "correct_answer": "为了逃避天敌鲇鱼",
+  "explanation": "9-р өгүүлбэр: 为了逃避天敌，沙丁鱼自然会不断地加速游动 (дайснаасаа мултрахын тулд).",
+  "order_index": 21,
+  "id": "hsk5-l30-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“鲇鱼效应”的核心是什么？",
+  "options": [
+   "让所有企业变得一样大",
+   "减少企业的员工",
+   "刺激企业活跃起来，促使市场更高效",
+   "让沙丁鱼卖更高的价格"
+  ],
+  "correct_answer": "刺激企业活跃起来，促使市场更高效",
+  "explanation": "13-р өгүүлбэр: 采取一种措施，刺激企业活跃起来……促使市场更为高效 (аж ахуйн нэгжийг идэвхжүүлж, зах зээлийг үр ашигтай болгох).",
+  "order_index": 22,
+  "id": "hsk5-l30-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "从本质上说，“鲇鱼效应”是一种什么效应？",
+  "options": [
+   "运输效应",
+   "压力效应",
+   "价格效应",
+   "增长效应"
+  ],
+  "correct_answer": "压力效应",
+  "explanation": "14-р өгүүлбэр: 使得企业和员工产生一种危机感，其实就是一种压力效应 (дарамтын нөлөө).",
+  "order_index": 23,
+  "id": "hsk5-l30-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "这篇课文最后想告诉我们什么？",
+  "options": [
+   "压力越大越好",
+   "运动员不需要压力",
+   "沙丁鱼比鲇鱼更重要",
+   "适度的压力有利于发挥潜力、提高企业活力"
+  ],
+  "correct_answer": "适度的压力有利于发挥潜力、提高企业活力",
+  "explanation": "15–17-р өгүүлбэр: 适度的压力有利于……挖掘我们的潜力; 运动员-ийн жишээ; 因此“鲇鱼效应”的确对……具有积极的意义.",
+  "order_index": 24,
+  "id": "hsk5-l30-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小王刚到公司时，总觉得自己不如别人。后来公司来了几位能力很强的新同事，小王产生了危机感，开始不断学习，工作能力提高了很多。\n问：小王为什么不断学习？",
+  "options": [
+   "因为公司要求他每天加班",
+   "因为新同事让他产生了危机感",
+   "因为他想早点退休",
+   "因为他的工资太低了"
+  ],
+  "correct_answer": "因为新同事让他产生了危机感",
+  "explanation": "产生了危机感，开始不断学习 = хямралын мэдрэмж төрж, байнга суралцаж эхэлсэн.",
+  "order_index": 25,
+  "id": "hsk5-l30-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n我家附近新开了一家饭馆，老板无意中听到客人说菜太咸，就改善了做法，现在生意越来越好。\n问：老板是怎么知道菜太咸的？",
+  "options": [
+   "自己尝出来的",
+   "朋友告诉他的",
+   "看了网上的评价",
+   "无意中听到客人说的"
+  ],
+  "correct_answer": "无意中听到客人说的",
+  "explanation": "无意中听到客人说菜太咸 = санамсаргүй үйлчлүүлэгчийн яриаг сонссон.",
+  "order_index": 26,
+  "id": "hsk5-l30-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n医生说，适度运动有利于身体健康，但是运动时间太长的话，身体也会很累。\n问：医生的意思是什么？",
+  "options": [
+   "运动要适度，不能太多",
+   "运动越多越好",
+   "最好不要运动",
+   "运动对身体没有好处"
+  ],
+  "correct_answer": "运动要适度，不能太多",
+  "explanation": "适度运动有利于健康 + 时间太长会累 = дасгал зохистой байх ёстой.",
+  "order_index": 27,
+  "id": "hsk5-l30-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n我们学校靠近一条小河。每到接近傍晚的时候，河边就会有很多人散步，空气特别清新。\n问：下面哪个说法是对的？",
+  "options": [
+   "学校离小河很远",
+   "早上河边的人最多",
+   "学校靠近小河，傍晚河边人很多",
+   "河边的空气不太好"
+  ],
+  "correct_answer": "学校靠近小河，傍晚河边人很多",
+  "explanation": "靠近一条小河 = голын дэргэд; 接近傍晚 = үдшийн алдад ойртоход; 散步的人很多.",
+  "order_index": 28,
+  "id": "hsk5-l30-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 发现了 / 无意中 / 渔民 / 巧妙的方法 / 一种",
+  "options": [
+   "渔民巧妙的方法发现了一种无意中。",
+   "发现了一种无意中巧妙的方法渔民。",
+   "渔民无意中发现了一种巧妙的方法。"
+  ],
+  "correct_answer": "渔民无意中发现了一种巧妙的方法。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (渔民) + дайвар үг (无意中) + үйл үг (发现了) + тоо ба хэмжих нэр (一种) + тусагдахуун (巧妙的方法). 无意中 нь үйл үгийн ӨМНӨ орно.",
+  "order_index": 29,
+  "id": "hsk5-l30-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我们 / 保持 / 良好的状态 / 有利于 / 适度的压力",
+  "options": [
+   "适度的压力有利于我们保持良好的状态。",
+   "良好的状态有利于我们保持适度的压力。",
+   "有利于良好的状态我们适度的压力保持。"
+  ],
+  "correct_answer": "适度的压力有利于我们保持良好的状态。",
+  "explanation": "适度的压力 (өгүүлэгдэхүүн) + 有利于 + 我们 + 保持 + 良好的状态: «зохистой дарамт бидний сайн төлөвийг хадгалахад тустай».",
+  "order_index": 30,
+  "id": "hsk5-l30-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 提高了 / 这个办法 / 工作效率 / 的确",
+  "options": [
+   "工作效率这个办法的确提高了。",
+   "这个办法的确提高了工作效率。",
+   "提高了工作效率的确这个办法。"
+  ],
+  "correct_answer": "这个办法的确提高了工作效率。",
+  "explanation": "的确 нь өгүүлэгдэхүүний ард, үйл үгийн өмнө: 这个办法 + 的确 + 提高了 + 工作效率 (энэ арга үнэхээр ажлын бүтээмжийг дээшлүүлсэн).",
+  "order_index": 31,
+  "id": "hsk5-l30-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 加速游动 / 沙丁鱼 / 不断地 / 为了逃避天敌",
+  "options": [
+   "加速游动沙丁鱼为了逃避天敌不断地。",
+   "为了逃避天敌加速游动沙丁鱼不断地。",
+   "为了逃避天敌，沙丁鱼不断地加速游动。"
+  ],
+  "correct_answer": "为了逃避天敌，沙丁鱼不断地加速游动。",
+  "explanation": "Зорилгын хэсэг (为了逃避天敌) өгүүлбэрийн эхэнд, дараа нь өгүүлэгдэхүүн + 不断地 + үйл үг: 沙丁鱼不断地加速游动.",
+  "order_index": 32,
+  "id": "hsk5-l30-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 接近 / 这项技术 / 世界先进水平 / 已经",
+  "options": [
+   "这项技术已经接近世界先进水平。",
+   "这项技术世界先进水平已经接近。",
+   "已经世界先进水平接近这项技术。"
+  ],
+  "correct_answer": "这项技术已经接近世界先进水平。",
+  "explanation": "接近 + хийсвэр зүйл (世界先进水平): 这项技术 + 已经 + 接近 + 世界先进水平 (энэ технологи дэлхийн дэвшилтэт түвшинд ойртсон).",
+  "order_index": 33,
+  "id": "hsk5-l30-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 竞争 / 让 / 产生了 / 企业 / 危机感",
+  "options": [
+   "危机感产生了竞争让企业。",
+   "竞争让企业产生了危机感。",
+   "企业竞争产生了让危机感。"
+  ],
+  "correct_answer": "竞争让企业产生了危机感。",
+  "explanation": "竞争 (өгүүлэгдэхүүн) + 让 + 企业 + 产生了 + 危机感: «өрсөлдөөн аж ахуйн нэгжид хямралын мэдрэмж төрүүлсэн».",
+  "order_index": 34,
+  "id": "hsk5-l30-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
