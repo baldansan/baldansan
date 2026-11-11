@@ -1,0 +1,646 @@
+[
+ {
+  "type": "cloze",
+  "question": "这里四季多风，冬季尤甚，自然环境很（　）。",
+  "options": [
+   "慌张",
+   "窄",
+   "猛烈",
+   "恶劣",
+   "相似"
+  ],
+  "correct_answer": "恶劣",
+  "explanation": "恶劣 = муу, хүнд хэцүү (自然环境恶劣). 窄 — нарийн; 相似 — төстэй; 慌张 — сандарсан; 猛烈 — ширүүн (салхи, давалгаа-д), харин «орчин» гэхэд 恶劣.",
+  "order_index": 1,
+  "id": "hsk5-l25-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "遇到险情要沉着冷静，不要（　）。",
+  "options": [
+   "慌张",
+   "滚",
+   "威胁",
+   "恶劣",
+   "沉"
+  ],
+  "correct_answer": "慌张",
+  "explanation": "慌张 = сандрах. 恶劣 — муу; 沉 — живэх; 滚 — өнхрөх; 威胁 — заналхийлэх: «аюулын үед тайван бай, сандрах хэрэггүй» гэсэн утгад зөвхөн 慌张 таарна.",
+  "order_index": 2,
+  "id": "hsk5-l25-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "初学骑自行车最重要的是注意保持（　）。",
+  "options": [
+   "钢铁",
+   "重量",
+   "平衡",
+   "效应",
+   "风险"
+  ],
+  "correct_answer": "平衡",
+  "explanation": "平衡 = тэнцвэр (保持平衡). 重量 — жин; 风险 — эрсдэл; 效应 — нөлөө; 钢铁 — ган.",
+  "order_index": 3,
+  "id": "hsk5-l25-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你决定在海外投资，有没有考虑到（　）？",
+  "options": [
+   "胸",
+   "窄",
+   "吨",
+   "钟",
+   "风险"
+  ],
+  "correct_answer": "风险",
+  "explanation": "风险 = эрсдэл (投资有风险). 吨 — тонн; 钟 — хонх; 窄 — нарийн; 胸 — цээж.",
+  "order_index": 4,
+  "id": "hsk5-l25-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他年纪大了，身体已经（　）不了这样激烈的比赛了。",
+  "options": [
+   "返航",
+   "承受",
+   "游览",
+   "滚",
+   "彻底"
+  ],
+  "correct_answer": "承受",
+  "explanation": "承受 = даах, тэсвэрлэх (承受不了). 游览 — аялан үзэх; 返航 — буцах; 滚 — өнхрөх; 彻底 — бүрэн.",
+  "order_index": 5,
+  "id": "hsk5-l25-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "股市有风险，投资需要（　）。",
+  "options": [
+   "吨",
+   "沉",
+   "窄",
+   "谨慎",
+   "钟"
+  ],
+  "correct_answer": "谨慎",
+  "explanation": "谨慎 = болгоомжтой (投资需谨慎). 窄 — нарийн; 吨 — тонн; 钟 — хонх; 沉 — живэх.",
+  "order_index": 6,
+  "id": "hsk5-l25-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们这儿去年发生了好几（　）交通意外。",
+  "options": [
+   "起",
+   "胸",
+   "舱",
+   "钟",
+   "吨"
+  ],
+  "correct_answer": "起",
+  "explanation": "起 = осол, хэргийг тоолох хэмжих үг (好几起意外). 吨 — тонн; 钟 — хонх; 舱 — тасалгаа; 胸 — цээж.",
+  "order_index": 7,
+  "id": "hsk5-l25-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他脸上没有（　）的笑容，看起来很生气。",
+  "options": [
+   "简直",
+   "彻底",
+   "丝毫",
+   "猛烈",
+   "相似"
+  ],
+  "correct_answer": "丝毫",
+  "explanation": "丝毫 = ганц ч, хамгийн ч бага (没有丝毫的笑容). 简直 — яг л (дайвар үг, 的-ийн өмнө орохгүй); 猛烈 — ширүүн; 彻底 — бүрэн; 相似 — төстэй.",
+  "order_index": 8,
+  "id": "hsk5-l25-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "孩子们在山顶（　）了一天，累得不想说话。",
+  "options": [
+   "威胁",
+   "发抖",
+   "承受",
+   "返航",
+   "游览"
+  ],
+  "correct_answer": "游览",
+  "explanation": "游览 = аялан үзэх (游览了一天). 返航 — буцах; 威胁 — заналхийлэх; 发抖 — чичрэх; 承受 — даах.",
+  "order_index": 9,
+  "id": "hsk5-l25-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这辆卡车一次能运五（　）货物。",
+  "options": [
+   "钟",
+   "吨",
+   "起",
+   "根基",
+   "舱"
+  ],
+  "correct_answer": "吨",
+  "explanation": "吨 = тонн (五吨). 起 — осол тоолох үг; 舱 — тасалгаа; 钟 — хонх; 根基 — суурь.",
+  "order_index": 10,
+  "id": "hsk5-l25-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l25-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她很喜欢这套房子，因为客厅和卧室都（　）南，阳光好。",
+  "options": [
+   "简直",
+   "严格",
+   "严肃",
+   "朝",
+   "相似"
+  ],
+  "correct_answer": "朝",
+  "explanation": "朝 = …тийш харсан (朝南). 简直 — яг л; 严格 — хатуу чанд; 严肃 — нухацтай; 相似 — төстэй: чиглэл заахад зөвхөн 朝 таарна.",
+  "order_index": 11,
+  "id": "hsk5-l25-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр буруу вэ?",
+  "options": [
+   "老师朝我笑了笑。",
+   "他把球扔朝我。",
+   "他朝我走来。",
+   "窗户朝南。"
+  ],
+  "correct_answer": "他把球扔朝我。",
+  "explanation": "朝 нь 向-аас ялгаатай нь үйл үгийн ард нөхөх хэсэг болж чадахгүй: «扔朝我» буруу, «扔向我» эсвэл «朝我扔» зөв.",
+  "order_index": 12,
+  "id": "hsk5-l25-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "听到这个消息，我（　）不敢相信自己的耳朵。",
+  "options": [
+   "简直",
+   "彻底",
+   "朝",
+   "严肃",
+   "严格"
+  ],
+  "correct_answer": "简直",
+  "explanation": "简直 = яг л, бараг л (简直不敢相信自己的耳朵 — чихэндээ итгэж ядах шахуу). 严格 — чанд; 朝 — …тийш; 严肃 — нухацтай; 彻底 — бүрэн: бүгд энд утга төрүүлэхгүй.",
+  "order_index": 13,
+  "id": "hsk5-l25-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт “简直”-ийг зөв хэрэглэсэн бэ?",
+  "options": [
+   "我简直明天去北京。",
+   "他简直在北京工作。",
+   "简直今天是星期三。",
+   "这个孩子的汉语说得简直像中国人一样。"
+  ],
+  "correct_answer": "这个孩子的汉语说得简直像中国人一样。",
+  "explanation": "简直 нь хэтрүүлж онцолдог: «Хятад хүн шиг» гэж хэлж байна. Бусад өгүүлбэр нь энгийн баримт, төлөвлөгөө тул 简直 тохирохгүй.",
+  "order_index": 14,
+  "id": "hsk5-l25-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "刘老师虽然看上去很（　），但其实对人很友善。",
+  "options": [
+   "威胁",
+   "简直",
+   "严肃",
+   "严格",
+   "朝"
+  ],
+  "correct_answer": "严肃",
+  "explanation": "严肃 = нухацтай, ширүүн төрхтэй (人的表情, 气氛). 严格 нь дүрэм, стандартыг чанд мөрдөх тул хүний төрхөд хэрэглэхгүй.",
+  "order_index": 15,
+  "id": "hsk5-l25-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "实验过程中，温度、水分等条件都要（　）地控制。",
+  "options": [
+   "朝",
+   "简直",
+   "严肃",
+   "平衡",
+   "严格"
+  ],
+  "correct_answer": "严格",
+  "explanation": "严格 = стандартыг чанд мөрдөх (严格控制). 严肃 нь хандлага, царайд хэрэглэгдэнэ.",
+  "order_index": 16,
+  "id": "hsk5-l25-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老船长的船在返航中遇到了什么？",
+  "options": [
+   "恶劣的天气和巨大的风浪",
+   "一场大火",
+   "没有风的天气",
+   "一次撞船事故"
+  ],
+  "correct_answer": "恶劣的天气和巨大的风浪",
+  "explanation": "Бичвэр: 一次返航中，天气恶劣，他们的船遇到了可怕的巨大风浪.",
+  "order_index": 17,
+  "id": "hsk5-l25-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老船长命令水手们做什么？",
+  "options": [
+   "把货物扔进海里",
+   "马上回港口",
+   "打开货舱，往里面放水",
+   "关上所有的门"
+  ],
+  "correct_answer": "打开货舱，往里面放水",
+  "explanation": "Бичвэр: 老船长命令水手们立刻打开货舱，使劲儿朝里面放水.",
+  "order_index": 18,
+  "id": "hsk5-l25-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "年轻水手为什么骂船长？",
+  "options": [
+   "他觉得天气太冷",
+   "他觉得放水会增加压力，船会沉得更快",
+   "他觉得船长不认识路",
+   "他不想工作"
+  ],
+  "correct_answer": "他觉得放水会增加压力，船会沉得更快",
+  "explanation": "Залуу далайчин «ингэвэл хөлөгт дарамт нэмээд улам хурдан живнэ» гэж бодсон тул ахмадыг загнасан.",
+  "order_index": 19,
+  "id": "hsk5-l25-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "货舱里的水位越升越高以后，船怎么样了？",
+  "options": [
+   "被风浪打翻了",
+   "沉到了海底",
+   "开得更快了",
+   "渐渐取得了平衡"
+  ],
+  "correct_answer": "渐渐取得了平衡",
+  "explanation": "Бичвэр: 船一点一点地下沉，……对船的威胁却减小了，船也渐渐取得了平衡.",
+  "order_index": 20,
+  "id": "hsk5-l25-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老船长说，船什么时候最安全？",
+  "options": [
+   "有一定重量的时候",
+   "空着的时候",
+   "没有风的时候",
+   "速度最快的时候"
+  ],
+  "correct_answer": "有一定重量的时候",
+  "explanation": "Бичвэр: 船在有一定重量的时候是最安全的，在空的时候则是最危险的.",
+  "order_index": 21,
+  "id": "hsk5-l25-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“鬼谷”是一个什么样的地方？",
+  "options": [
+   "一条又宽又平的大路",
+   "一个有很多人的城市",
+   "山路很窄，两边是万丈深渊",
+   "一座没有风景的山"
+  ],
+  "correct_answer": "山路很窄，两边是万丈深渊",
+  "explanation": "Бичвэр: 山路非常窄，两边是万丈深渊. «Чөтгөрийн хөндий» бол хамгийн аюултай хэсэг зам.",
+  "order_index": 22,
+  "id": "hsk5-l25-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "导游为什么让游客背点或拿点东西再过去？",
+  "options": [
+   "因为路上有很多商店",
+   "谨慎地负重前行反而更安全",
+   "为了让游客多买东西",
+   "因为东西太多没人拿"
+  ],
+  "correct_answer": "谨慎地负重前行反而更安全",
+  "explanation": "Хөтөч: 感觉到了有风险，谨慎地负重前行，反而会更安全. Дарамт мэдэрвэл болгоомжтой алхаж, осол багасна.",
+  "order_index": 23,
+  "id": "hsk5-l25-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "这篇课文最后想告诉我们什么？",
+  "options": [
+   "空船比重船更安全",
+   "旅游时不要拿东西",
+   "人一定要少做事",
+   "有理想、有责任感的人才能承受住压力"
+  ],
+  "correct_answer": "有理想、有责任感的人才能承受住压力",
+  "explanation": "Төгсгөл: 那些胸怀理想、肩上有责任感的人，才能承受住压力. Дарамтыг даах нь мөрөөдөл, хариуцлагаас хамаарна.",
+  "order_index": 24,
+  "id": "hsk5-l25-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小李马上要参加重要的考试，他觉得有压力才有动力。每天晚上他都复习到很晚，考试的时候也很谨慎，最后取得了好成绩。\n问：小李为什么能取得好成绩？",
+  "options": [
+   "他把压力变成动力，认真复习，考试时很谨慎",
+   "老师提前告诉了他答案",
+   "他一点儿也没复习",
+   "他的运气特别好"
+  ],
+  "correct_answer": "他把压力变成动力，认真复习，考试时很谨慎",
+  "explanation": "Эшлэл: 有压力才有动力 + 复习到很晚 + 考试很谨慎 → дарамтаа урам болгож, сайн бэлдсэн.",
+  "order_index": 25,
+  "id": "hsk5-l25-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n山里的路很窄，下雨天更危险。去年那里发生了好几起意外。现在导游要求游客走得慢一点，互相提醒，谨慎地走。\n问：现在导游要求游客怎么做？",
+  "options": [
+   "一个人快点走",
+   "不要带任何东西",
+   "走得慢，互相提醒，谨慎地走",
+   "跑着通过"
+  ],
+  "correct_answer": "走得慢，互相提醒，谨慎地走",
+  "explanation": "Эшлэл: 走得慢一点，互相提醒，谨慎地走 — удаан, бие биедээ сануулж, болгоомжтой алхах.",
+  "order_index": 26,
+  "id": "hsk5-l25-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小林觉得工作压力太大，简直要被压垮了。朋友对他说：“适当的压力能让你进步，但你也要学会放松，保持生活的平衡。”小林听了以后，每个周末都去爬山。\n问：朋友建议小林怎么做？",
+  "options": [
+   "工作得更努力",
+   "在工作和生活之间保持平衡",
+   "不要接受任何压力",
+   "马上辞职"
+  ],
+  "correct_answer": "在工作和生活之间保持平衡",
+  "explanation": "Найз: 适当的压力能让你进步，但你也要学会放松，保持生活的平衡 — ажил, амьдралын тэнцвэрийг хадгал.",
+  "order_index": 27,
+  "id": "hsk5-l25-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n公司想在国外开一家新店，大家对风险有不同的看法。经理说：“没有风险就没有收获，但我们必须谨慎，彻底调查以后再决定。”\n问：经理的意思是什么？",
+  "options": [
+   "先开店，以后再调查",
+   "不用考虑风险，马上开店",
+   "因为有风险，所以不开店",
+   "要在彻底调查以后谨慎地做决定"
+  ],
+  "correct_answer": "要在彻底调查以后谨慎地做决定",
+  "explanation": "Менежер: 必须谨慎，彻底调查以后再决定 — бүрэн судалсны дараа болгоомжтой шийд.",
+  "order_index": 28,
+  "id": "hsk5-l25-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 水手们 / 打开货舱 / 命令 / 立刻 / 老船长",
+  "options": [
+   "老船长水手们命令立刻打开货舱。",
+   "老船长命令水手们立刻打开货舱。",
+   "老船长命令立刻水手们打开货舱。"
+  ],
+  "correct_answer": "老船长命令水手们立刻打开货舱。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (老船长) + үйл үг (命令) + тусагдахуун хүн (水手们) + дайвар (立刻) + үйлдэл (打开货舱). 命令 + хүн + үйлдэл гэсэн бүтэц.",
+  "order_index": 29,
+  "id": "hsk5-l25-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 你病成这样 / 是疯了 / 简直 / 还要去上班",
+  "options": [
+   "你病成这样还要去上班是疯了，简直。",
+   "你简直病成这样还要去上班，是疯了。",
+   "你病成这样还要去上班，简直是疯了。"
+  ],
+  "correct_answer": "你病成这样还要去上班，简直是疯了。",
+  "explanation": "Эхлээд шалтгаан/нөхцөл (你病成这样还要去上班), дараа нь 简直 + 是疯了 гэж хэтрүүлж дүгнэнэ. 简直 нь дүгнэлт хэсгийн өмнө орно.",
+  "order_index": 30,
+  "id": "hsk5-l25-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 妈妈 / 高兴地 / 跑去 / 他 / 朝",
+  "options": [
+   "他高兴地朝妈妈跑去。",
+   "他朝高兴地妈妈跑去。",
+   "他高兴地跑去朝妈妈。"
+  ],
+  "correct_answer": "他高兴地朝妈妈跑去。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн + дайвар (高兴地) + 朝 + хүн + үйл үг (跑去). 朝 нь үйл үгийн ӨМНӨ орно, 补语 болохгүй.",
+  "order_index": 31,
+  "id": "hsk5-l25-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 对人很友善 / 刘老师看上去 / 但其实 / 很严肃",
+  "options": [
+   "刘老师很严肃看上去，但其实对人很友善。",
+   "刘老师看上去很严肃，但其实对人很友善。",
+   "刘老师看上去但其实很严肃，对人很友善。"
+  ],
+  "correct_answer": "刘老师看上去很严肃，但其实对人很友善。",
+  "explanation": "看上去 … 但其实 … бүтэц: эхлээд харагдах байдал (很严肃), дараа нь бодит байдал (对人很友善).",
+  "order_index": 32,
+  "id": "hsk5-l25-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 股市 / 有风险 / 需谨慎 / 投资",
+  "options": [
+   "投资需谨慎，有风险股市。",
+   "股市投资有谨慎需风险。",
+   "股市有风险，投资需谨慎。"
+  ],
+  "correct_answer": "股市有风险，投资需谨慎。",
+  "explanation": "Хоёр богино хэсэг: шалтгаан (股市有风险) + зөвлөгөө (投资需谨慎). 风险, 谨慎 хоёр хос үг.",
+  "order_index": 33,
+  "id": "hsk5-l25-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 压力 / 才能 / 承受住 / 胸怀理想的人",
+  "options": [
+   "胸怀理想的人才能承受住压力。",
+   "胸怀理想的人承受住才能压力。",
+   "才能胸怀理想的人承受住压力。"
+  ],
+  "correct_answer": "胸怀理想的人才能承受住压力。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (胸怀理想的人) + 才能 + үйл үг + үр дүнгийн нөхөх хэсэг (承受住) + тусагдахуун (压力). 才能 нь үйл үгийн өмнө.",
+  "order_index": 34,
+  "id": "hsk5-l25-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
