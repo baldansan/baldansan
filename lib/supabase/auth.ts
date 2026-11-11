@@ -251,8 +251,10 @@ export async function sendPasswordResetEmail(
   }
   const origin =
     typeof window !== "undefined" ? window.location.origin : "";
+  // /auth/confirm нь ?code= (PKCE) болон ?token_hash= хоёуланг нь боловсруулаад
+  // session cookie тавьж /reset-password руу шилжүүлнэ.
   const { error } = await supabase.auth.resetPasswordForEmail(email.trim(), {
-    redirectTo: `${origin}/reset-password`,
+    redirectTo: `${origin}/auth/confirm?next=/reset-password`,
   });
   return { data: null, error: toErrorMessage(error) };
 }

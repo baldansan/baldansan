@@ -8,6 +8,7 @@ import { MobileCard } from "@/components/mobile/mobile-card";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { getSession, onAuthStateChange, updatePassword } from "@/lib/supabase/auth";
+import { supabase } from "@/lib/supabase/client";
 
 const INPUT =
   "mt-1 w-full rounded-xl border border-[var(--app-border)] px-4 py-3 text-sm outline-none focus:border-emerald-300 focus:ring-2 focus:ring-emerald-500";
@@ -25,9 +26,34 @@ export default function ResetPasswordPage() {
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [done, setDone] = useState(false);
+  const [linkError, setLinkError] = useState<string | null>(null);
 
   useEffect(() => {
     let settled = false;
+    // Линкний алдаа (?error= — /auth/confirm-оос; #error_description= — Supabase-ээс шууд).
+    try {
+      const sp = new URLSearchParams(window.location.search);
+      const hp = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+      const msg = sp.get("error") || hp.get("error_description") || hp.get("error");
+      if (msg) {
+        setLinkError(msg);
+        setReady("invalid");
+        settled = true;
+      }
+      // Линк шууд ?code= тэй энд ирсэн бол (хуучин линк) энд солилцоно.
+      const code = sp.get("code");
+      if (code && supabase && !settled) {
+        void supabase.auth.exchangeCodeForSession(code).then(({ error }) => {
+          if (error && !settled) {
+            settled = true;
+            setLinkError(error.message);
+            setReady("invalid");
+          }
+        });
+      }
+    } catch {
+      /* ignore */
+    }
     const off = onAuthStateChange((event, session) => {
       if (settled) return;
       if (event === "PASSWORD_RECOVERY" || (event === "SIGNED_IN" && session)) {
@@ -93,6 +119,10 @@ export default function ResetPasswordPage() {
           <div className="flex flex-col gap-4">
             <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
               {tr(locale, "Сэргээх линк буруу эсвэл хугацаа нь дууссан байна. Дахин хүсэлт илгээнэ үү.")}
+              {linkError ? <span className="mt-1 block text-xs opacity-80">{linkError}</span> : null}
+            </p>
+            <p className="text-xs text-[var(--app-muted)]">
+              {tr(locale, "Зөвлөмж: линкийг «Сэргээх линк илгээх» дарсан тэр браузер дээрээ нээнэ үү (имэйл апп дотроос биш). Линк нэг л удаа, 1 цаг хүчинтэй.")}
             </p>
             <Link
               href="/forgot-password"
