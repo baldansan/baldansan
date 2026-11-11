@@ -370,8 +370,8 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
             >
               Өөр хэсэг сонгох
             </button>
-            <Link href="/review/weak-spots" className="bs-mtp-secondary">
-              Миний сул тал →
+            <Link href="/review/mistakes" className="bs-mtp-secondary">
+              Миний алдаанууд →
             </Link>
           </div>
         </div>

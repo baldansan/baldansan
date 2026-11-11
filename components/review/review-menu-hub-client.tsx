@@ -377,6 +377,9 @@ export function ReviewMenuHubClient({
           {bichlegCard}
         </div>
 
+        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
+          {tr(locale, "Үг, ханзаа давтах")}
+        </p>
         <div className="bs-tm-grid bs-stagger">
         <PrefetchLink href="/review/words" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
@@ -447,6 +450,11 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
 
+        </div>
+        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
+          {tr(locale, "Алдаагаа засах")}
+        </p>
+        <div className="bs-tm-grid bs-stagger">
         <PrefetchLink href="/review/mistakes" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
             ❌
@@ -471,21 +479,11 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
 
-        <PrefetchLink href="/review/weak-spots" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
-            📉
-          </span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Миний сул тал")}</span>
-            <span className="bs-tm-card-sub">
-              {!isLoggedIn
-                ? tr(locale, "Нэвтэрч орвол харагдана")
-                : tr(locale, "Алдааны задаргаа, юуг давтах нь")}
-            </span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </PrefetchLink>
-
+        </div>
+        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
+          {tr(locale, "Шалгалтад бэлдэх")}
+        </p>
+        <div className="bs-tm-grid bs-stagger">
         <PrefetchLink href="/review/practice" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
             🎯

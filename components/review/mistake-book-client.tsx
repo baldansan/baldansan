@@ -16,6 +16,28 @@ import {
 } from "@/lib/supabase/mistake-book";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import { supabase } from "@/lib/supabase/client";
+import { prettyCourseTitle } from "@/lib/classroom/course-label";
+
+type MistakeContext = {
+  question: string | null;
+  passage: string | null;
+  explanation: string | null;
+};
+type LessonInfo = { title: string; courseId: string; orderIndex: number | null };
+
+/** «hsk5-l19» гэсэн кодын оронд «HSK 5 · 19-р хичээл — Гарчиг». */
+function lessonLabel(lessonId: string, info?: LessonInfo): string {
+  if (lessonId === "hsk30-durem") return "HSK 3.0 дүрэм";
+  if (lessonId === "helzui-suuri") return "Хэл зүйн суурь";
+  const no = /l(\d+)$/.exec(lessonId)?.[1];
+  if (!info) {
+    const course = lessonId.replace(/-?l\d+$/, "");
+    return `${prettyCourseTitle(course)}${no ? ` · ${Number(no)}-р хичээл` : ""}`;
+  }
+  // Гарчиг өөрөө «HSK4A 1-р хичээл — …» гэж эхэлдэг бол давхардуулахгүй.
+  const title = info.title.replace(/^.*?хичээл\s*[—–-]\s*/u, "");
+  return `${prettyCourseTitle(info.courseId)}${no ? ` · ${Number(no)}-р хичээл` : ""} — ${title}`;
+}
 
 const PRACTICE_DECK_SIZE = 10;
 
@@ -36,12 +58,6 @@ const STAGE_LABELS: Record<string, string> = {
   mistake_review: "Алдааны давталт",
 };
 
-const TYPE_LABELS: Record<string, string> = {
-  choice: "Сонголт",
-  judge: "Зөв/буруу",
-  fill: "Нөхөх",
-  order: "Дараалал",
-};
 
 function stageLabel(stage: string): string {
   return STAGE_LABELS[stage] ?? stage;
@@ -122,7 +138,12 @@ export function MistakeBookClient() {
 
   const [view, setView] = useState<View>("list");
   const [lessonFilter, setLessonFilter] = useState("all");
-  const [typeFilter, setTypeFilter] = useState("all");
+  // Асуултын бичвэр, эх, тайлбар (серверээс дугаараар нь олж авна).
+  const [contexts, setContexts] = useState<Record<string, MistakeContext>>({});
+  const [lessonInfo, setLessonInfo] = useState<Record<string, LessonInfo>>({});
+  const [openLessons, setOpenLessons] = useState<string[]>([]);
+  const [openTips, setOpenTips] = useState<string[]>([]);
+  const typeFilter = "all";
 
   const [deck, setDeck] = useState<PracticeQuestion[]>([]);
   const [deckIndex, setDeckIndex] = useState(0);
@@ -138,8 +159,31 @@ export function MistakeBookClient() {
     if (err) setError(err);
     const mock = rows.filter(isMockMistake);
     setZhenti({ total: mock.length, due: mock.filter((m) => isDue(m)).length });
-    setMistakes(rows.filter((m) => !isMockMistake(m)));
+    const own = rows.filter((m) => !isMockMistake(m));
+    setMistakes(own);
     setLoading(false);
+    // Асуултуудыг ард нь татна — жагсаалт эхлээд гарч, асуулт нь дараа нь нэмэгдэнэ.
+    if (own.length > 0) {
+      try {
+        const res = await fetch("/api/review/mistake-context", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            items: own.map((m) => ({ lessonId: m.lessonId, questionId: m.questionId })),
+          }),
+        });
+        if (res.ok) {
+          const json = (await res.json()) as {
+            contexts?: Record<string, MistakeContext>;
+            lessons?: Record<string, LessonInfo>;
+          };
+          setContexts(json.contexts ?? {});
+          setLessonInfo(json.lessons ?? {});
+        }
+      } catch {
+        /* асуултгүй ч жагсаалт ажиллана */
+      }
+    }
   }, []);
 
   useEffect(() => {
@@ -163,15 +207,6 @@ export function MistakeBookClient() {
     void init();
   }, [load]);
 
-  const lessons = useMemo(
-    () => [...new Set(mistakes.map((m) => m.lessonId))].sort(),
-    [mistakes]
-  );
-  const types = useMemo(
-    () => [...new Set(mistakes.map((m) => m.questionType))],
-    [mistakes]
-  );
-
   const filtered = useMemo(
     () =>
       mistakes.filter(
@@ -182,8 +217,23 @@ export function MistakeBookClient() {
     [mistakes, lessonFilter, typeFilter]
   );
 
-  async function startPractice() {
-    const pool = practicableMistakes(filtered);
+  // Хичээлээр бүлэглэнэ: олон алдаатай хичээл дээрээ.
+  const groups = useMemo(() => {
+    const map = new Map<string, MistakeEntry[]>();
+    for (const m of mistakes) {
+      const list = map.get(m.lessonId);
+      if (list) list.push(m);
+      else map.set(m.lessonId, [m]);
+    }
+    return [...map.entries()]
+      .map(([lessonId, items]) => ({ lessonId, items }))
+      .sort((a, b) => b.items.length - a.items.length);
+  }, [mistakes]);
+
+  async function startPractice(onlyLesson?: string) {
+    const pool = practicableMistakes(
+      onlyLesson ? mistakes.filter((m) => m.lessonId === onlyLesson) : mistakes
+    );
     if (pool.length === 0) return;
     let extra: string[] = [];
     const globalCount = new Set(
@@ -302,12 +352,30 @@ export function MistakeBookClient() {
 
         <div className="rounded-[20px] bg-white p-5 shadow-sm ring-1 ring-slate-100">
           <p className="text-[11px] font-bold text-[var(--app-muted)]">
-            {q.mistake.lessonId} · {stageLabel(q.mistake.stage)} ·{" "}
-            {formatDate(q.mistake.lastWrongAt)}
+            {lessonLabel(q.mistake.lessonId, lessonInfo[q.mistake.lessonId])} ·{" "}
+            {tr(locale, stageLabel(q.mistake.stage))}
           </p>
-          <p className="mt-2 text-center text-sm font-bold text-[var(--app-text)]">
-            {tr(locale, "Аль нь зөв хариулт байсан бэ?")}
-          </p>
+          {(() => {
+            const ctx = contexts[`${q.mistake.lessonId}::${q.mistake.questionId}`];
+            return ctx?.question || ctx?.passage ? (
+              <div className="mt-3">
+                {ctx.passage ? (
+                  <p className="rounded-xl bg-slate-50 px-3 py-2 text-sm leading-6 text-slate-700" translate="no">
+                    {ctx.passage}
+                  </p>
+                ) : null}
+                {ctx.question ? (
+                  <p className="mt-2 text-base font-bold leading-7 text-[var(--app-text)]" translate="no">
+                    {ctx.question}
+                  </p>
+                ) : null}
+              </div>
+            ) : (
+              <p className="mt-2 text-center text-sm font-bold text-[var(--app-text)]">
+                {tr(locale, "Аль нь зөв хариулт байсан бэ?")}
+              </p>
+            );
+          })()}
 
           <div className="mt-4 grid gap-2">
             {q.options.map((option) => {
@@ -434,20 +502,6 @@ export function MistakeBookClient() {
         <span className="bs-tm-card-chev" aria-hidden>›</span>
       </Link>
 
-      <Link href="/review/weak-spots" className="bs-tm-card mt-3">
-        <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
-          📉
-        </span>
-        <span className="bs-tm-card-body">
-          <span className="bs-tm-card-title">{tr(locale, "Миний сул тал")}</span>
-          <span className="bs-tm-card-sub">
-            {tr(locale, "Алдааны задаргаа, юуг давтах нь")}
-          </span>
-        </span>
-        <span className="bs-tm-card-chev" aria-hidden>
-          ›
-        </span>
-      </Link>
 
       {error ? <p className="mt-2 text-sm text-red-600">{tr(locale, error)}</p> : null}
 
@@ -470,88 +524,149 @@ export function MistakeBookClient() {
 
       {mistakes.length > 0 ? (
         <>
+          <p className="mt-3 text-xs leading-5 text-[var(--app-muted)]">
+            {tr(
+              locale,
+              "Хичээл, дасгал дээр буруу хариулсан асуултууд. Хоёр удаа зөв хариулбал жагсаалтаас гарна."
+            )}
+          </p>
+
           {practicable.length > 0 ? (
             <button
               type="button"
-              className="bs-mock-primary-btn mt-3"
               onClick={() => void startPractice()}
+              className="mt-3 w-full rounded-full bg-[var(--bs-green)] py-3.5 text-sm font-extrabold text-white shadow-sm active:scale-[0.99]"
             >
-              🔁 {tr(locale, "Алдаагаа давтах")}
+              🔁 {tr(locale, "Алдаагаа давтах")}{" "}
+              {lessonFilter === "all" ? "" : `(${practicable.length})`}
             </button>
           ) : null}
 
-          <div className="mt-4 flex flex-wrap items-center gap-2">
-            <select
-              value={lessonFilter}
-              onChange={(e) => setLessonFilter(e.target.value)}
-              className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700"
-              aria-label={tr(locale, "Хичээлээр шүүх")}
-            >
-              <option value="all">
-                {tr(locale, "Бүх хичээл")} ({mistakes.length})
-              </option>
-              {lessons.map((lessonId) => (
-                <option key={lessonId} value={lessonId}>
-                  {lessonId}
-                </option>
-              ))}
-            </select>
-            {["all", ...types].map((type) => (
-              <button
-                key={type}
-                type="button"
-                onClick={() => setTypeFilter(type)}
-                className={`rounded-full px-3 py-1.5 text-xs font-bold ring-1 ${
-                  typeFilter === type
-                    ? "bg-[var(--bs-green)] text-white ring-[var(--bs-green)]"
-                    : "bg-white text-slate-600 ring-slate-200"
-                }`}
-              >
-                {type === "all"
-                  ? tr(locale, "Бүгд")
-                  : tr(locale, TYPE_LABELS[type] ?? type)}
-              </button>
-            ))}
-          </div>
+          {/* Хичээлээр бүлэглэсэн — олон алдаатай нь дээрээ */}
+          <ul className="mt-4 flex flex-col gap-2">
+            {groups.map((g) => {
+              const open = openLessons.includes(g.lessonId) || groups.length === 1;
+              return (
+                <li key={g.lessonId} className="rounded-[18px] bg-white shadow-sm ring-1 ring-slate-100">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setOpenLessons((prev) =>
+                        prev.includes(g.lessonId)
+                          ? prev.filter((x) => x !== g.lessonId)
+                          : [...prev, g.lessonId]
+                      )
+                    }
+                    aria-expanded={open}
+                    className="flex w-full items-center gap-3 px-4 py-3 text-left"
+                  >
+                    <span
+                      className={`flex h-8 min-w-8 items-center justify-center rounded-full px-2 text-sm font-extrabold ${
+                        g.items.length >= 10
+                          ? "bg-red-500 text-white"
+                          : g.items.length >= 4
+                            ? "bg-amber-400 text-slate-900"
+                            : "bg-slate-100 text-slate-700"
+                      }`}
+                    >
+                      {g.items.length}
+                    </span>
+                    <span className="min-w-0 flex-1 text-sm font-bold leading-5 text-[var(--app-text)]">
+                      {lessonLabel(g.lessonId, lessonInfo[g.lessonId])}
+                    </span>
+                    <span className="shrink-0 text-xs text-slate-400">{open ? "▴" : "▾"}</span>
+                  </button>
 
-          <ul className="mt-3 flex flex-col gap-2">
-            {filtered.map((m) => (
-              <li
-                key={m.key}
-                className="rounded-[16px] bg-white p-4 shadow-sm ring-1 ring-slate-100"
-              >
-                <div className="flex flex-wrap items-center gap-1.5 text-[10px] font-bold text-[var(--app-muted)]">
-                  <span className="rounded-full bg-slate-100 px-2 py-0.5">
-                    {m.lessonId}
-                  </span>
-                  <span className="rounded-full bg-slate-100 px-2 py-0.5">
-                    {tr(locale, stageLabel(m.stage))}
-                  </span>
-                  <span>{formatDate(m.lastWrongAt)}</span>
-                  {m.wrongCount > 1 ? (
-                    <span className="rounded-full bg-red-50 px-2 py-0.5 text-red-600">
-                      ×{m.wrongCount}
-                    </span>
+                  {open ? (
+                    <div className="border-t border-slate-100 px-3 pb-3">
+                      <div className="flex flex-wrap gap-2 py-2">
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setLessonFilter(g.lessonId);
+                            void startPractice(g.lessonId);
+                          }}
+                          className="rounded-full bg-[var(--bs-green-50)] px-3 py-1.5 text-xs font-bold text-[var(--bs-green-700)]"
+                        >
+                          🔁 {tr(locale, "Энэ хичээлийн алдааг давтах")}
+                        </button>
+                        {/^(hsk\d|yct|fazhan)/.test(g.lessonId) && /l\d+$/.test(g.lessonId) ? (
+                          <Link
+                            href={`/lessons/${g.lessonId}`}
+                            className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-bold text-slate-700"
+                          >
+                            📖 {tr(locale, "Хичээлийг нээх")}
+                          </Link>
+                        ) : null}
+                      </div>
+                      <ul className="flex flex-col gap-2">
+                        {g.items.map((m) => {
+                          const ctx = contexts[`${m.lessonId}::${m.questionId}`];
+                          const tipOpen = openTips.includes(m.key);
+                          return (
+                            <li key={m.key} className="rounded-2xl bg-slate-50 p-3">
+                              {ctx?.passage ? (
+                                <p className="mb-1.5 text-xs leading-5 text-slate-500" translate="no">
+                                  {ctx.passage}
+                                </p>
+                              ) : null}
+                              <p className="text-sm font-bold leading-6 text-[var(--app-text)]" translate="no">
+                                {ctx?.question ?? (
+                                  <span className="font-medium text-slate-400">
+                                    {tr(locale, stageLabel(m.stage))} — {tr(locale, "асуултын бичвэр олдсонгүй")}
+                                  </span>
+                                )}
+                              </p>
+                              {m.selectedAnswer && m.selectedAnswer !== m.correctAnswer ? (
+                                <p className="mt-2 flex gap-2 text-sm text-red-600" translate="no">
+                                  <span className="shrink-0 font-bold">✗ {tr(locale, "Таны")}:</span>
+                                  <span className="break-words">{m.selectedAnswer}</span>
+                                </p>
+                              ) : null}
+                              {m.correctAnswer ? (
+                                <p className="mt-1 flex gap-2 text-sm text-emerald-700" translate="no">
+                                  <span className="shrink-0 font-bold">✓ {tr(locale, "Зөв")}:</span>
+                                  <span className="break-words font-bold">{m.correctAnswer}</span>
+                                </p>
+                              ) : null}
+                              {ctx?.explanation ? (
+                                tipOpen ? (
+                                  <p className="mt-2 rounded-xl bg-amber-50 px-3 py-2 text-[13px] leading-6 text-amber-950" translate="no">
+                                    💡 {ctx.explanation}
+                                  </p>
+                                ) : (
+                                  <button
+                                    type="button"
+                                    onClick={() => setOpenTips((p) => [...p, m.key])}
+                                    className="mt-2 text-xs font-bold text-amber-700"
+                                  >
+                                    💡 {tr(locale, "Яагаад? Тайлбар харах")}
+                                  </button>
+                                )
+                              ) : null}
+                              <p className="mt-2 flex flex-wrap items-center gap-1.5 text-[10px] font-bold text-slate-400">
+                                <span>{tr(locale, stageLabel(m.stage))}</span>
+                                <span>· {formatDate(m.lastWrongAt)}</span>
+                                {m.wrongCount > 1 ? (
+                                  <span className="rounded-full bg-red-50 px-2 py-0.5 text-red-600">
+                                    {m.wrongCount} {tr(locale, "удаа алдсан")}
+                                  </span>
+                                ) : null}
+                                {m.lastAttemptCorrect ? (
+                                  <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-emerald-700">
+                                    {tr(locale, "1 зөв — дахиад 1!")}
+                                  </span>
+                                ) : null}
+                              </p>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
                   ) : null}
-                  {m.lastAttemptCorrect ? (
-                    <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-emerald-700">
-                      {tr(locale, "1 зөв — дахиад 1!")}
-                    </span>
-                  ) : null}
-                </div>
-                {m.correctAnswer ? (
-                  <p className="mt-2 break-words text-sm font-bold text-emerald-700" translate="no">
-                    ✓ {m.correctAnswer}
-                  </p>
-                ) : null}
-                {m.selectedAnswer &&
-                m.selectedAnswer !== m.correctAnswer ? (
-                  <p className="mt-1 break-words text-xs text-red-500 line-through" translate="no">
-                    {m.selectedAnswer}
-                  </p>
-                ) : null}
-              </li>
-            ))}
+                </li>
+              );
+            })}
           </ul>
         </>
       ) : null}
