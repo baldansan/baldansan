@@ -1394,7 +1394,8 @@
 /* ------------------------------------------------------------------ */
 .bs-home-today {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* 3–4 карт: утсан дээр 2×2, өргөн дэлгэцэд нэг мөр */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 9px;
 }
 
@@ -1428,6 +1429,10 @@
 
 .bs-home-today-card--blue {
   background: linear-gradient(160deg, #e7f0ff, #d6e6ff);
+}
+
+.bs-home-today-card--violet {
+  background: linear-gradient(160deg, #f1ebff, #e4d9ff);
 }
 
 .bs-home-today-card:hover {

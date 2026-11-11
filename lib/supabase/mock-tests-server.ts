@@ -189,6 +189,23 @@ export async function fetchMockTestQuestions(
   return data.map((row) => mapQuestion(row as Record<string, unknown>));
 }
 
+/** Олон тестээс сонгосон асуултуудыг id-ээр татна (өдрийн сонсгол, алдааны дэвтэр). */
+export async function fetchMockTestQuestionsByIds(
+  ids: string[]
+): Promise<MockTestQuestionRow[]> {
+  if (!hasServerSupabaseConfig || ids.length === 0) return [];
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+
+  const { data, error } = await client
+    .from("mock_test_questions")
+    .select("*")
+    .in("id", ids);
+
+  if (error || !data) return [];
+  return data.map((row) => mapQuestion(row as Record<string, unknown>));
+}
+
 /**
  * Шалгалт бүрд «багшийн тайлбартай» асуултын тоо — дасгалын жагсаалтын
  * «🎓 N/M тайлбартай» тэмдэгт. Зөвхөн (test_id) багана татдаг хөнгөн асуулга;

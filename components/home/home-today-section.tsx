@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
+import { readDailyListeningResult, todayKeyUB } from "@/lib/listen/daily-listening-local";
 import { loadSrsHubStats } from "@/lib/review/srs-hub-stats";
 import { getAuthenticatedUserId, hasSupabaseConfig } from "@/lib/supabase/auth";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
@@ -31,6 +32,14 @@ export function HomeTodaySection({ loggedIn, bichlegContinue, bichlegSuggestion 
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [assignments, setAssignments] = useState<AssignmentCount>(null);
   const [dueCards, setDueCards] = useState<number | null>(null);
+  const [listenDone, setListenDone] = useState<{ correct: number; total: number } | null>(null);
+
+  // (г) Өнөөдрийн сонсгол — өнөөдөр энэ түвшинд хийсэн бол «✓ 8/10».
+  useEffect(() => {
+    if (!hydrated) return;
+    const r = readDailyListeningResult(todayKeyUB(), Number(activeLevel));
+    setListenDone(r ? { correct: r.correct, total: r.total } : null);
+  }, [hydrated, activeLevel]);
 
   // (б) Хүлээж буй карт — нэвтрээгүй ч localStorage SRS-ээс тоолно.
   useEffect(() => {
@@ -114,6 +123,23 @@ export function HomeTodaySection({ loggedIn, bichlegContinue, bichlegSuggestion 
           </span>
           <span className="bs-home-today-l">
             {dueCards === 0 ? tr(locale, "Давтах карт алга") : tr(locale, "Давтах карт")}
+          </span>
+        </Link>
+
+        <Link
+          href={`/listen/daily?level=${activeLevel}`}
+          className="bs-home-today-card bs-home-today-card--violet"
+        >
+          <span className="bs-home-today-ic" aria-hidden>
+            🎧
+          </span>
+          <span className="bs-home-today-n">
+            {listenDone ? `${listenDone.correct}/${listenDone.total}` : "10"}
+          </span>
+          <span className="bs-home-today-l">
+            {listenDone
+              ? tr(locale, "Сонсгол хийсэн ✓")
+              : tr(locale, "Өнөөдрийн сонсгол")}
           </span>
         </Link>
 
