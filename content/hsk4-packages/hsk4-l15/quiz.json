@@ -1,0 +1,686 @@
+[
+ {
+  "type": "cloze",
+  "question": "早上（　）响了，可是他还没醒。",
+  "options": [
+   "寒假",
+   "厕所",
+   "儿童",
+   "闹钟",
+   "护士"
+  ],
+  "correct_answer": "闹钟",
+  "explanation": "闹钟 = сэрүүлэг: 早上闹钟响了 — өглөө сэрүүлэг дуугарлаа. 厕所 — бие засах газар; 护士 — сувилагч; 寒假 — өвлийн амралт; 儿童 — хүүхэд.",
+  "order_index": 1,
+  "id": "hsk4-l15-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "学校放（　）以后，他打算去海边玩。",
+  "options": [
+   "闹钟",
+   "父亲",
+   "寒假",
+   "孙子",
+   "厕所"
+  ],
+  "correct_answer": "寒假",
+  "explanation": "寒假 = өвлийн амралт: 放寒假 — өвлийн амралтад гарах. 闹钟 — сэрүүлэг; 厕所 — бие засах газар; 孙子 — ач хүү; 父亲 — эцэг.",
+  "order_index": 2,
+  "id": "hsk4-l15-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他今天又迟到了，老师（　）了他几句。",
+  "options": [
+   "管理",
+   "批评",
+   "整理",
+   "怀疑",
+   "表扬"
+  ],
+  "correct_answer": "批评",
+  "explanation": "批评 = загнах: 迟到了，老师批评了他. 表扬 — сайшаах; 怀疑 — эргэлзэх; 整理 — эмхлэх; 管理 — удирдах.",
+  "order_index": 3,
+  "id": "hsk4-l15-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他很会（　）时间，每天都安排得很好。",
+  "options": [
+   "骗",
+   "批评",
+   "打针",
+   "怀疑",
+   "管理"
+  ],
+  "correct_answer": "管理",
+  "explanation": "管理 = зохицуулах: 管理时间 — цагаа зохицуулах. 批评 — загнах; 怀疑 — эргэлзэх; 打针 — тариа хийх; 骗 — мэхлэх.",
+  "order_index": 4,
+  "id": "hsk4-l15-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "孩子发烧了，医生说要去医院（　）。",
+  "options": [
+   "骗",
+   "批评",
+   "表扬",
+   "打针",
+   "整理"
+  ],
+  "correct_answer": "打针",
+  "explanation": "打针 = тариа хийх/хийлгэх: 去医院打针. 表扬 — сайшаах; 整理 — эмхлэх; 批评 — загнах; 骗 — мэхлэх.",
+  "order_index": 5,
+  "id": "hsk4-l15-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）正在给病人量体温。",
+  "options": [
+   "孙子",
+   "闹钟",
+   "儿童",
+   "父亲",
+   "护士"
+  ],
+  "correct_answer": "护士",
+  "explanation": "护士 = сувилагч: 护士给病人量体温. 儿童 — хүүхэд; 孙子 — ач хүү; 父亲 — эцэг; 闹钟 — сэрүүлэг.",
+  "order_index": 6,
+  "id": "hsk4-l15-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他说的话我有点儿（　），好像不是真的。",
+  "options": [
+   "怀疑",
+   "表扬",
+   "整理",
+   "合适",
+   "管理"
+  ],
+  "correct_answer": "怀疑",
+  "explanation": "怀疑 = эргэлзэх, сэжиглэх: 我有点儿怀疑 — би жаахан эргэлзэж байна. 表扬 — сайшаах; 整理 — эмхлэх; 合适 — тохиромжтой; 管理 — удирдах.",
+  "order_index": 7,
+  "id": "hsk4-l15-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "房间太乱了，你快去（　）一下。",
+  "options": [
+   "批评",
+   "整理",
+   "打针",
+   "怀疑",
+   "响"
+  ],
+  "correct_answer": "整理",
+  "explanation": "整理 = эмхлэх, цэгцлэх: 整理一下房间 — өрөөгөө цэгцэл. 批评 — загнах; 怀疑 — эргэлзэх; 打针 — тариа хийх; 响 — дуугарах.",
+  "order_index": 8,
+  "id": "hsk4-l15-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这件衣服大小正（　），你穿着很好看。",
+  "options": [
+   "合适",
+   "骄傲",
+   "害羞",
+   "假",
+   "粗心"
+  ],
+  "correct_answer": "合适",
+  "explanation": "合适 = тохиромжтой, таарсан: 大小正合适. 骄傲 — бардам; 害羞 — ичимхий; 粗心 — болгоомжгүй; 假 — хуурамч.",
+  "order_index": 9,
+  "id": "hsk4-l15-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他做题总是（　），把很简单的题也做错了。",
+  "options": [
+   "骄傲",
+   "害羞",
+   "假",
+   "合适",
+   "粗心"
+  ],
+  "correct_answer": "粗心",
+  "explanation": "粗心 = болгоомжгүй: 做题总是粗心 — бодлого бодохдоо үргэлж болгоомжгүй. 骄傲 — бардам; 害羞 — ичимхий; 合适 — тохиромжтой; 假 — хуурамч.",
+  "order_index": 10,
+  "id": "hsk4-l15-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我突然（　）今天是妈妈的生日，赶紧去买蛋糕。",
+  "options": [
+   "想起来",
+   "想进来",
+   "想下来",
+   "想不起来",
+   "想起去"
+  ],
+  "correct_answer": "想起来",
+  "explanation": "想起来 = санаж олох: 我突然想起来今天是妈妈的生日. 想不起来 — санахгүй (утгаараа зөрчилдөнө); бусад нь байхгүй хэлбэр.",
+  "order_index": 11,
+  "id": "hsk4-l15-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "手机掉在地上，屏幕被我（　）坏了。",
+  "options": [
+   "借",
+   "问",
+   "弄",
+   "走",
+   "买"
+  ],
+  "correct_answer": "弄",
+  "explanation": "弄坏 = эвдэх: 屏幕被我弄坏了. 买坏, 借坏, 问坏, 走坏 — ийм нийлмэл байхгүй, утга таарахгүй.",
+  "order_index": 12,
+  "id": "hsk4-l15-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "明天的考试（　）别迟到！",
+  "options": [
+   "一直",
+   "常常",
+   "已经",
+   "千万",
+   "刚才"
+  ],
+  "correct_answer": "千万",
+  "explanation": "千万 + 别: 千万别迟到 — ямар ч байсан бүү хоцор. 一直 — үргэлж; 常常 — байнга; 已经 — аль хэдийн; 刚才 — дөнгөж сая.",
+  "order_index": 13,
+  "id": "hsk4-l15-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "从我家到学校走路二十分钟（　）。",
+  "options": [
+   "左右",
+   "以后",
+   "的时候",
+   "一样",
+   "以前"
+  ],
+  "correct_answer": "左右",
+  "explanation": "左右 = орчим: 二十分钟左右 — хорин минут орчим. 以前 — өмнө; 以后 — дараа; 的时候 — үед; 一样 — адил.",
+  "order_index": 14,
+  "id": "hsk4-l15-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "那个男孩子表演了什么？",
+  "options": [
+   "一边写字一边唱歌",
+   "一边弹钢琴一边唱歌",
+   "一边弹吉他一边唱歌",
+   "一边跳舞一边唱歌"
+  ],
+  "correct_answer": "一边弹钢琴一边唱歌",
+  "explanation": "Бичвэр 1: 一边弹钢琴一边唱歌 — төгөлдөр хуур тоглож байгаад дуулсан.",
+  "order_index": 15,
+  "id": "hsk4-l15-q15",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "李老师认为他的孙子为什么这么优秀？",
+  "options": [
+   "他的老师是钢琴家",
+   "他学了很多年外语",
+   "他每天练习十个小时",
+   "他父母教育得好，帮他养成了好习惯"
+  ],
+  "correct_answer": "他父母教育得好，帮他养成了好习惯",
+  "explanation": "Бичвэр 1: 是他父母教育得好 ... 帮助他养成了非常好的习惯 — эцэг эх нь сайн хүмүүжүүлж, сайн зуршил төлөвшүүлсэн.",
+  "order_index": 16,
+  "id": "hsk4-l15-q16",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "孙月的女儿昨晚为什么没休息好？",
+  "options": [
+   "和朋友玩到很晚",
+   "看电视到十一点",
+   "作业做到十一点",
+   "生病了"
+  ],
+  "correct_answer": "作业做到十一点",
+  "explanation": "Бичвэр 2: 我女儿昨晚做作业又做到11点 — даалгавраа арван нэг цаг хүртэл хийсэн.",
+  "order_index": 17,
+  "id": "hsk4-l15-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王静认为孩子做事慢，往往是因为什么？",
+  "options": [
+   "不会安排自己的时间",
+   "身体不好",
+   "没有闹钟",
+   "作业太多"
+  ],
+  "correct_answer": "不会安排自己的时间",
+  "explanation": "Бичвэр 2: 往往是因为他们不会安排自己的时间 — өөрийн цагийг зохицуулж чаддаггүйгээс.",
+  "order_index": 18,
+  "id": "hsk4-l15-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "孙月的女儿小时候打针前，孙月是怎么做的？",
+  "options": [
+   "小声告诉护士女儿很勇敢，不怕打针",
+   "没有带女儿去医院",
+   "给女儿买了很多礼物",
+   "批评了女儿"
+  ],
+  "correct_answer": "小声告诉护士女儿很勇敢，不怕打针",
+  "explanation": "Бичвэр 3: 我就小声地和护士说我女儿很勇敢，一点儿也不怕打针 — сувилагчид охин зоригтой, тарианаас айдаггүй гэж аяархан хэлсэн.",
+  "order_index": 19,
+  "id": "hsk4-l15-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "孩子得不到想要的东西时，可能怎么做来引起父母的注意？",
+  "options": [
+   "大声唱歌",
+   "哭、扔东西或者故意敲打",
+   "不吃饭",
+   "一直睡觉"
+  ],
+  "correct_answer": "哭、扔东西或者故意敲打",
+  "explanation": "Бичвэр 4: 会通过哭、扔东西或者故意敲打来引起父母的注意 — уйлах, юм шидэх, санаатайгаар цохиж тогших.",
+  "order_index": 20,
+  "id": "hsk4-l15-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "七岁左右的儿童有什么特点？",
+  "options": [
+   "很安静",
+   "很害羞",
+   "普遍好动，坐不住",
+   "很骄傲"
+  ],
+  "correct_answer": "普遍好动，坐不住",
+  "explanation": "Бичвэр 5: 七岁左右的儿童普遍好动，坐不住 — ерөнхийдөө хөдөлгөөнтэй, тайван суугаад байж чаддаггүй.",
+  "order_index": 21,
+  "id": "hsk4-l15-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "如果孩子性格有些害羞，父母应该怎么做？",
+  "options": [
+   "批评他",
+   "不要理他",
+   "让他少说话",
+   "经常鼓励他说出自己的看法"
+  ],
+  "correct_answer": "经常鼓励他说出自己的看法",
+  "explanation": "Бичвэр 5: 要是孩子性格有些害羞，就要经常鼓励他说出自己的看法 — ичимхий бол үзэл бодлоо хэлэхэд нь байнга урамшуулах.",
+  "order_index": 22,
+  "id": "hsk4-l15-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“这件事让小王来负责吧”中的“来”是什么意思？",
+  "options": [
+   "Асуултыг заана",
+   "Ирж байгааг заана",
+   "Чиглэлийг заана",
+   "Хийхээр бэлдэж буйг заана (…хийе, …хийх)"
+  ],
+  "correct_answer": "Хийхээр бэлдэж буйг заана (…хийе, …хийх)",
+  "explanation": "Үйл үгийн өмнөх «来» нь «要做某事» — «хийе, хариуцъя» гэсэн утга. «来»-г хасахад утга өөрчлөгдөхгүй.",
+  "order_index": 23,
+  "id": "hsk4-l15-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“千万”常常和哪种形式一起用？",
+  "options": [
+   "Өнгөрсөн цаг (了)",
+   "Асуулт (吗)",
+   "Харьцуулалт (比)",
+   "Үгүйсгэл (别、不要、不能)"
+  ],
+  "correct_answer": "Үгүйсгэл (别、不要、不能)",
+  "explanation": "«千万» нь ихэвчлэн үгүйсгэлтэй: 千万别…, 千万不要…, 千万不能… — ямар ч байсан бүү…",
+  "order_index": 24,
+  "id": "hsk4-l15-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "我们等了十分左右钟。",
+   "我们左右等了十分钟。",
+   "我们等了十分钟左右。",
+   "我们等了左右十分钟。"
+  ],
+  "correct_answer": "我们等了十分钟左右。",
+  "explanation": "«左右» нь тоо + хэмжих нэрийн ДАРАА орно: 十分钟左右. Бусад дараалал буруу.",
+  "order_index": 25,
+  "id": "hsk4-l15-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "我起想来了，他叫王明。",
+   "我想起来了，他叫王明。",
+   "我想起了来，他叫王明。",
+   "我想来起了，他叫王明。"
+  ],
+  "correct_answer": "我想起来了，他叫王明。",
+  "explanation": "«想起来» — санаж олох: 想 + 起来 хоёр салахгүй, дараалал өөрчлөгдөхгүй.",
+  "order_index": 26,
+  "id": "hsk4-l15-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小明今年七岁，不太爱说话，别人问他问题时，他的脸总是红红的。妈妈常常鼓励他，慢慢地，他敢在同学们面前说话了。\n问：小明有什么特点？",
+  "options": [
+   "很粗心",
+   "很骄傲",
+   "很害羞",
+   "很懒"
+  ],
+  "correct_answer": "很害羞",
+  "explanation": "Эшлэл: 不太爱说话，脸总是红红的 — бага ярьдаг, царай нь улайдаг тул ичимхий (害羞).",
+  "order_index": 27,
+  "id": "hsk4-l15-q27",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "李明每天晚上八点左右到家，先吃饭，然后整理一下房间，九点开始看书。周末他一般睡到九点才醒。\n问：李明每天几点开始看书？",
+  "options": [
+   "十点",
+   "八点",
+   "九点",
+   "七点"
+  ],
+  "correct_answer": "九点",
+  "explanation": "Эшлэл: 九点开始看书 — есөн цагт ном унших эхэлнэ. 八点左右 нь гэртээ ирэх цаг.",
+  "order_index": 28,
+  "id": "hsk4-l15-q28",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "昨天我一不小心把朋友的杯子弄坏了。我很不好意思，就买了一个新的送给他。他笑着说：“没关系，千万别放在心上。”\n问：朋友是什么态度？",
+  "options": [
+   "不想再见他",
+   "不生气，让他别放在心上",
+   "要他买贵的",
+   "很生气"
+  ],
+  "correct_answer": "不生气，让他别放在心上",
+  "explanation": "Эшлэл: 笑着说：“没关系，千万别放在心上” — инээмсэглээд «зүгээр, бүү санаа зов» гэсэн тул уурлаагүй.",
+  "order_index": 29,
+  "id": "hsk4-l15-q29",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王先生的儿子很懒，作业总是不认真做。爸爸没有批评他，而是和他一起安排了学习时间，每完成一项就表扬他。两个月以后，儿子变得爱学习了。\n问：爸爸用什么方法教育儿子？",
+  "options": [
+   "天天批评他",
+   "骗他说有礼物",
+   "一起安排学习时间，完成就表扬",
+   "不管他"
+  ],
+  "correct_answer": "一起安排学习时间，完成就表扬",
+  "explanation": "Эшлэл: 一起安排了学习时间，每完成一项就表扬他 — хамт цаг төлөвлөж, нэг ажил дуусах бүрд сайшаасан.",
+  "order_index": 30,
+  "id": "hsk4-l15-q30",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 一边 / 弹钢琴 / 一边 / 唱歌",
+  "options": [
+   "他弹钢琴一边一边唱歌。",
+   "一边他弹钢琴一边唱歌。",
+   "他一边弹钢琴一边唱歌。"
+  ],
+  "correct_answer": "他一边弹钢琴一边唱歌。",
+  "explanation": "一边……一边……: хоёр үйлдэл зэрэг. Эзэн (他) эхлээд, дараа нь 一边 + үйл үг тус бүр: 他一边弹钢琴一边唱歌.",
+  "order_index": 31,
+  "id": "hsk4-l15-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 孩子 / 做事慢 / 往往 / 是因为 / 不会安排时间",
+  "options": [
+   "往往孩子是因为做事慢不会安排时间。",
+   "孩子做事慢往往是因为不会安排时间。",
+   "孩子是因为往往做事慢不会安排时间。"
+  ],
+  "correct_answer": "孩子做事慢往往是因为不会安排时间。",
+  "explanation": "往往……是因为……: 孩子 (эзэн) + 做事慢 (үр дүн) + 往往 + 是因为 (шалтгаан). 是因为 нь шалтгааныг эхлүүлнэ.",
+  "order_index": 32,
+  "id": "hsk4-l15-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 表扬 / 千万 / 不要 / 太多",
+  "options": [
+   "千万表扬不要太多。",
+   "表扬千万不要太多。",
+   "表扬不要千万太多。"
+  ],
+  "correct_answer": "表扬千万不要太多。",
+  "explanation": "千万 + үгүйсгэл: 表扬 (сэдэв) + 千万 + 不要 + 太多 — сайшаалыг хэт их хийж болохгүй. 千万 нь 不要-ийн өмнө.",
+  "order_index": 33,
+  "id": "hsk4-l15-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我得 / 向他父母 / 好好儿 / 学习",
+  "options": [
+   "我得向他父母好好儿学习。",
+   "向他父母我得学习好好儿。",
+   "我得学习好好儿向他父母。"
+  ],
+  "correct_answer": "我得向他父母好好儿学习。",
+  "explanation": "向 + хүн + дайвар тодотгол (好好儿) + V: 我得向他父母好好儿学习 — би тэдний эцэг эхээс сайн суралцах ёстой.",
+  "order_index": 34,
+  "id": "hsk4-l15-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 七岁左右的 / 儿童 / 普遍 / 好动",
+  "options": [
+   "七岁的左右儿童普遍好动。",
+   "七岁左右的儿童普遍好动。",
+   "儿童七岁左右的普遍好动。"
+  ],
+  "correct_answer": "七岁左右的儿童普遍好动。",
+  "explanation": "左右 нь тоо + хэмжих нэрийн ард: 七岁左右 + 的 + 儿童 (тодотгол) + 普遍 + 好动.",
+  "order_index": 35,
+  "id": "hsk4-l15-q35",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 这次 / 让 / 他 / 来 / 负责",
+  "options": [
+   "这次他让来负责。",
+   "这次让来他负责。",
+   "这次让他来负责。"
+  ],
+  "correct_answer": "这次让他来负责。",
+  "explanation": "让 + хүн + 来 + V: 让他来负责 — түүнд хариуцуулах. «来» нь үйл үг «负责»-ийн өмнө.",
+  "order_index": 36,
+  "id": "hsk4-l15-q36",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
