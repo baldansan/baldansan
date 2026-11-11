@@ -1,5 +1,7 @@
 "use client";
 
+import { AiWritingGrade } from "@/components/mock-test/ai-writing-grade";
+
 import { useEffect, useRef, useState } from "react";
 import {
   getPracticeAudio,
@@ -584,7 +586,10 @@ export function MockTestPracticeQuestion({
                 </div>
               ) : null}
               {selfGraded && feedback.isCorrect == null ? (
-                <SelfGradeButtons onSelfGrade={onSelfGrade} />
+                <>
+                  <AiWritingGrade questionId={question.id} answer={answer} onGraded={(ok) => onSelfGrade(ok)} />
+                  <SelfGradeButtons onSelfGrade={onSelfGrade} />
+                </>
               ) : null}
             </>
           }
@@ -594,6 +599,8 @@ export function MockTestPracticeQuestion({
           feedback={feedback}
           selfGraded={selfGraded}
           onSelfGrade={onSelfGrade}
+          questionId={question.id}
+          answer={answer}
         />
       ) : null}
     </div>
@@ -604,10 +611,14 @@ function PracticeFeedbackPanel({
   feedback,
   selfGraded,
   onSelfGrade,
+  questionId,
+  answer,
 }: {
   feedback: PracticeFeedback;
   selfGraded: boolean;
   onSelfGrade: (isCorrect: boolean) => void;
+  questionId: string;
+  answer: string | null;
 }) {
   const tone =
     feedback.isCorrect === true
@@ -660,7 +671,10 @@ function PracticeFeedbackPanel({
       ) : null}
 
       {selfGraded && feedback.isCorrect == null ? (
-        <SelfGradeButtons onSelfGrade={onSelfGrade} />
+        <>
+          <AiWritingGrade questionId={questionId} answer={answer} onGraded={(ok) => onSelfGrade(ok)} />
+          <SelfGradeButtons onSelfGrade={onSelfGrade} />
+        </>
       ) : null}
     </div>
   );

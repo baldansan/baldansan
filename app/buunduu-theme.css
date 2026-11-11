@@ -1395,3 +1395,29 @@ html.bs-bichleg-fs-root,html.bs-bichleg-fs-root body{overflow:hidden}
 .bs-mt-tag-val{font-size:12px;font-weight:800;color:var(--bs-ink-2);white-space:nowrap}
 .bs-mt-skill-bar-fill--weak{background:#e5533d}
 .bs-mt-tag-link{display:inline-block;margin-top:8px;font-size:12px;font-weight:800;color:var(--bs-green-700);text-decoration:none}
+
+/* Бичих хэсгийн AI үнэлгээ */
+.bs-mtp-ai{margin-top:12px;padding:12px;border-radius:14px;background:#f6f3ff;border:1px solid #e3dbfa}
+.bs-mtp-ai--ok{background:#f0faf3;border-color:#bfe8cc}
+.bs-mtp-ai--bad{background:#fff6f4;border-color:#f7d2c9}
+.bs-mtp-ai-btn{width:100%;min-height:44px;border-radius:12px;border:0;background:#6d4de0;color:#fff;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit}
+.bs-mtp-ai-btn:disabled{opacity:.6;cursor:wait}
+.bs-mtp-ai-err{margin:8px 0 0;font-size:12px;color:#b91c1c}
+.bs-mtp-ai-note{margin:8px 0 0;font-size:11px;color:var(--bs-muted)}
+.bs-mtp-ai-head{display:flex;align-items:baseline;gap:6px}
+.bs-mtp-ai-score{font-size:30px;font-weight:900;color:var(--bs-ink)}
+.bs-mtp-ai-score-meta{font-size:12px;font-weight:700;color:var(--bs-ink-2)}
+.bs-mtp-ai-criteria{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.bs-mtp-ai-criteria li{padding:8px 10px;border-radius:10px;background:#fff9}
+.bs-mtp-ai-criteria p{margin:4px 0 0;font-size:12.5px;line-height:1.45;color:var(--bs-ink-2)}
+.bs-mtp-ai-crit-head{display:flex;justify-content:space-between;gap:8px;font-size:13px;font-weight:800;color:var(--bs-ink)}
+.bs-mtp-ai-stars{color:#f2a93b;letter-spacing:1px;white-space:nowrap}
+.bs-mtp-ai-stars-dim{color:#ddd}
+.bs-mtp-ai-sec{margin:12px 0 6px;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--bs-ink-2)}
+.bs-mtp-ai-corr-row{padding:6px 0;border-top:1px dashed #0001}
+.bs-mtp-ai-corr-row p{margin:0;font-size:14px}
+.bs-mtp-ai-corr-row s{color:#b91c1c}
+.bs-mtp-ai-why{font-size:12px!important;color:var(--bs-ink-2);margin-top:2px!important}
+.bs-mtp-ai-advice{margin:12px 0 0;font-size:13px;line-height:1.5;color:var(--bs-ink)}
+.bs-mtp-ai-link{margin-top:10px;border:0;background:none;padding:0;font-size:12.5px;font-weight:800;color:#6d4de0;cursor:pointer;font-family:inherit}
+.bs-mtp-ai-improved{margin:8px 0 0;padding:10px;border-radius:10px;background:#fff;font-size:15px;line-height:1.7;white-space:pre-wrap}

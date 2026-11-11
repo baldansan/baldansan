@@ -1,5 +1,6 @@
 "use client";
 
+import { AiWritingGrade } from "@/components/mock-test/ai-writing-grade";
 import { SKILL_LABELS_MN, type MockTestQuestionRow } from "@/lib/mock-test/types";
 import type { WritingSelfGrade } from "@/lib/mock-test/hsk-scoring";
 
@@ -57,6 +58,16 @@ export function MockTestWritingGrade({
                     {question.correct_answer}
                   </p>
                 </>
+              ) : null}
+              {answer.trim() ? (
+                <AiWritingGrade
+                  questionId={question.id}
+                  answer={answer}
+                  onGraded={(_ok, reply) =>
+                    // AI оноо → 0 / Тал / Бүтэн санал (суралцагч өөрчилж болно).
+                    onGrade(question.q_no, reply.score >= 80 ? "full" : reply.score >= 50 ? "half" : "none")
+                  }
+                />
               ) : null}
               <div className="bs-mt-grade-row">
                 {GRADE_OPTIONS.map((option) => (
