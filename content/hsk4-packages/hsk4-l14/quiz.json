@@ -1,0 +1,686 @@
+[
+ {
+  "type": "cloze",
+  "question": "我明天要去上海（　），大概三天后回来。",
+  "options": [
+   "鼓励",
+   "拒绝",
+   "污染",
+   "抱歉",
+   "出差"
+  ],
+  "correct_answer": "出差",
+  "explanation": "出差 = томилолтоор явах: 去上海出差 — Шанхай руу томилолтоор явах. 抱歉 — уучлал гуйх; 污染 — бохирдуулах; 拒绝 — татгалзах; 鼓励 — урамшуулах.",
+  "order_index": 1,
+  "id": "hsk4-l14-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "坐地铁去机场又快又（　）钱。",
+  "options": [
+   "停",
+   "省",
+   "脏",
+   "重",
+   "扔"
+  ],
+  "correct_answer": "省",
+  "explanation": "省 = хэмнэх: 省钱 — мөнгө хэмнэх. 扔 — хаях; 停 — зогсох; 重 — хүнд; 脏 — бохир.",
+  "order_index": 2,
+  "id": "hsk4-l14-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个箱子太（　）了，我一个人拿不动。",
+  "options": [
+   "空",
+   "脏",
+   "行",
+   "重",
+   "暖"
+  ],
+  "correct_answer": "重",
+  "explanation": "重 (zhòng) = хүнд: 箱子太重 — чемодан хэт хүнд тул ганцаараа өргөж чадахгүй. 空 — хоосон; 脏 — бохир; 暖 — дулаан; 行 — болно.",
+  "order_index": 3,
+  "id": "hsk4-l14-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "卫生间里很（　），快去打扫一下。",
+  "options": [
+   "脏",
+   "空",
+   "重",
+   "暖",
+   "美丽"
+  ],
+  "correct_answer": "脏",
+  "explanation": "脏 = бохир: 卫生间很脏 — ариун цэврийн өрөө бохир тул цэвэрлэх хэрэгтэй. 暖 — дулаан; 空 — хоосон; 重 — хүнд; 美丽 — үзэсгэлэнтэй.",
+  "order_index": 4,
+  "id": "hsk4-l14-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "吃完的饮料瓶子请（　）进垃圾桶里。",
+  "options": [
+   "拒绝",
+   "省",
+   "扔",
+   "停",
+   "减少"
+  ],
+  "correct_answer": "扔",
+  "explanation": "扔 = хаях, шидэх: 扔进垃圾桶 — хогийн саванд хаях. 省 — хэмнэх; 停 — зогсох; 拒绝 — татгалзах; 减少 — багасгах.",
+  "order_index": 5,
+  "id": "hsk4-l14-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他提了很多要求，可是我都（　）了。",
+  "options": [
+   "鼓励",
+   "乘坐",
+   "拒绝",
+   "减少",
+   "污染"
+  ],
+  "correct_answer": "拒绝",
+  "explanation": "拒绝 = татгалзах: 都拒绝了 — бүгдээс нь татгалзсан. 鼓励 — урамшуулах; 乘坐 — суух; 减少 — багасгах; 污染 — бохирдуулах.",
+  "order_index": 6,
+  "id": "hsk4-l14-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "工厂排出的烟会（　）空气。",
+  "options": [
+   "丢",
+   "乘坐",
+   "鼓励",
+   "省",
+   "污染"
+  ],
+  "correct_answer": "污染",
+  "explanation": "污染 = бохирдуулах: 污染空气 — агаарыг бохирдуулах. 鼓励 — урамшуулах; 省 — хэмнэх; 乘坐 — суух; 丢 — хаях.",
+  "order_index": 7,
+  "id": "hsk4-l14-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老师常常（　）我们多说汉语。",
+  "options": [
+   "停",
+   "鼓励",
+   "拒绝",
+   "丢",
+   "污染"
+  ],
+  "correct_answer": "鼓励",
+  "explanation": "鼓励 = урамшуулах: 鼓励我们多说汉语 — биднийг хятадаар илүү ярихыг урамшуулдаг. 拒绝 — татгалзах; 污染 — бохирдуулах; 丢 — хаях; 停 — зогсох.",
+  "order_index": 8,
+  "id": "hsk4-l14-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "开车的（　）太快了，很危险。",
+  "options": [
+   "速度",
+   "目的",
+   "温度",
+   "地球",
+   "数量"
+  ],
+  "correct_answer": "速度",
+  "explanation": "速度 = хурд: 开车的速度太快 — машин жолоодох хурд хэт хурдан. 温度 — температур; 数量 — тоо хэмжээ; 目的 — зорилго; 地球 — дэлхий.",
+  "order_index": 9,
+  "id": "hsk4-l14-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "夏天空调的（　）不要开得太低。",
+  "options": [
+   "毛巾",
+   "温度",
+   "目的",
+   "数量",
+   "速度"
+  ],
+  "correct_answer": "温度",
+  "explanation": "温度 = температур: 空调的温度 — агааржуулагчийн температур. 速度 — хурд; 数量 — тоо хэмжээ; 目的 — зорилго; 毛巾 — алчуур.",
+  "order_index": 10,
+  "id": "hsk4-l14-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你放心，这些钱（　）我们用一个月了。",
+  "options": [
+   "就",
+   "才",
+   "还",
+   "却",
+   "够"
+  ],
+  "correct_answer": "够",
+  "explanation": "够 (үйл үг) = хүрэлцэх: 钱够我们用一个月 — мөнгө бидэнд нэг сар хэрэглэхэд хүрэлцэнэ. 才, 就, 却, 还 нь дайвар үг тул «хүрэлцэх» утга өгөхгүй.",
+  "order_index": 11,
+  "id": "hsk4-l14-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）你不想去，就别勉强了。",
+  "options": [
+   "虽然",
+   "不管",
+   "既然",
+   "尽管",
+   "即使"
+  ],
+  "correct_answer": "既然",
+  "explanation": "既然……就……: 既然你不想去，就别勉强了 — чи хүсэхгүй юм бол албадах хэрэггүй. 虽然, 即使, 不管, 尽管 нь эсрэг утга эсвэл «хамаагүй» гэсэн утга өгдөг тул «就» -тай хос болохгүй.",
+  "order_index": 12,
+  "id": "hsk4-l14-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "公司规定不能带食物，（　）我们把东西放在门口了。",
+  "options": [
+   "而且",
+   "于是",
+   "或者",
+   "不过",
+   "但是"
+  ],
+  "correct_answer": "于是",
+  "explanation": "于是 = ингээд: дүрэм тогтоосны дараа бид юмаа үүдэнд үлдээсэн — үйл явдлын дараалал. 但是, 不过 — эсрэг утга; 或者 — эсвэл; 而且 — нэмэх.",
+  "order_index": 13,
+  "id": "hsk4-l14-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他很喜欢运动，打篮球、游泳、爬山（　）。",
+  "options": [
+   "什么的",
+   "起来",
+   "一样",
+   "的话",
+   "为止"
+  ],
+  "correct_answer": "什么的",
+  "explanation": "什么的 = гэх мэт: 打篮球、游泳、爬山什么的 — сагсан бөмбөг, сэлэлт, ууланд авирах гэх мэт. 的话, 一样, 起来, 为止 нь жагсаалтыг хаахад тохирохгүй.",
+  "order_index": 14,
+  "id": "hsk4-l14-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王静为什么让李进自己带毛巾、牙膏和牙刷？",
+  "options": [
+   "因为箱子太轻",
+   "为了保护环境",
+   "因为这些东西很便宜",
+   "因为宾馆没有"
+  ],
+  "correct_answer": "为了保护环境",
+  "explanation": "Бичвэр 1: 你不是一直说要保护环境吗？现在就从身边的小事做起吧 — Ван Жин «байгаль орчноо хамгаалъя гэж үргэлж ярьдаг биз дээ, жижиг зүйлээс эхэл» гэсэн.",
+  "order_index": 15,
+  "id": "hsk4-l14-q15",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "明天李进怎么去机场？",
+  "options": [
+   "坐出租车",
+   "骑自行车",
+   "开车",
+   "坐地铁"
+  ],
+  "correct_answer": "坐地铁",
+  "explanation": "Бичвэр 1: 你还是坐地铁去机场吧 — тэр цагт зам түгжирдэг, мөн метро шатахууны мөнгө хэмнэж агаар бохирдуулдаггүй тул метроор явна.",
+  "order_index": 16,
+  "id": "hsk4-l14-q16",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "经理为什么让小王打扫卫生间？",
+  "options": [
+   "因为客人在等小王",
+   "因为卫生间很脏",
+   "因为小王迟到了",
+   "因为小王要下班了"
+  ],
+  "correct_answer": "因为卫生间很脏",
+  "explanation": "Бичвэр 2: 卫生间怎么那么脏啊？这会给客人留下不好的印象 — ариун цэврийн өрөө бохир, зочдод муу сэтгэгдэл үлдээнэ.",
+  "order_index": 17,
+  "id": "hsk4-l14-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "服务员说她会怎么完成工作？",
+  "options": [
+   "以最快的速度",
+   "明天再做",
+   "让别的服务员做",
+   "等客人走了再做"
+  ],
+  "correct_answer": "以最快的速度",
+  "explanation": "Бичвэр 2: 我一定以最快的速度完成 — хамгийн хурдан хугацаанд хийж дуусгана гэж амласан.",
+  "order_index": 18,
+  "id": "hsk4-l14-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "明天晚上，很多人会为“地球一小时”做什么？",
+  "options": [
+   "一小时不吃饭",
+   "关灯一小时",
+   "少开车一小时",
+   "关电视一小时"
+  ],
+  "correct_answer": "关灯一小时",
+  "explanation": "Бичвэр 3: 很多人都会关灯一小时，支持这个活动 — олон хүн нэг цаг гэрлээ унтрааж дэмжинэ.",
+  "order_index": 19,
+  "id": "hsk4-l14-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“地球一小时”活动的目的是什么？",
+  "options": [
+   "让人们早点儿睡觉",
+   "提醒人们节约用电，关注气候变暖",
+   "宣传一家公司",
+   "庆祝一个节日"
+  ],
+  "correct_answer": "提醒人们节约用电，关注气候变暖",
+  "explanation": "Бичвэр 3: 提醒人们节约用电，希望引起人们对气候变暖问题的关注 — цахилгаан хэмнэхийг сануулж, уур амьсгал дулаарах асуудалд анхаарлыг татах.",
+  "order_index": 20,
+  "id": "hsk4-l14-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "一些国家规定，超市、商场不能做什么？",
+  "options": [
+   "卖购物袋",
+   "晚上营业",
+   "为顾客提供免费塑料袋",
+   "卖饮料"
+  ],
+  "correct_answer": "为顾客提供免费塑料袋",
+  "explanation": "Бичвэр 4: 超市、商场不能为顾客提供免费塑料袋 — үйлчлүүлэгчдэд хуванцар уут үнэгүй өгч болохгүй.",
+  "order_index": 21,
+  "id": "hsk4-l14-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "夏天怎样用空调可以节约用电？",
+  "options": [
+   "把温度开得低一些",
+   "整夜开着空调",
+   "把温度开得高一些",
+   "一直不开空调"
+  ],
+  "correct_answer": "把温度开得高一些",
+  "explanation": "Бичвэр 5: 夏天把空调的温度开得高一些…这样可以节约用电 — зун агааржуулагчийн температурыг арай өндөр тавибал цахилгаан хэмнэнэ.",
+  "order_index": 22,
+  "id": "hsk4-l14-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“房间里的人已经够多的了，别再让人进来了。”中的“够”是什么意思？",
+  "options": [
+   "Мөнгө хүрэлцэхгүй байх",
+   "Тодорхой түвшинд хүрсэн (нэлээд …)",
+   "Хүн авчрах",
+   "Хэт цөөн байх"
+  ],
+  "correct_answer": "Тодорхой түвшинд хүрсэн (нэлээд …)",
+  "explanation": "«够多的» дайвар үгийн хэрэглээ: «нэлээд олон болсон» — тодорхой түвшинд хүрсэн. «够 + тэмдэг нэр + 的» бүтэц; үйл үгийн «хүрэлцэх» биш.",
+  "order_index": 23,
+  "id": "hsk4-l14-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子用“以”是对的？",
+  "options": [
+   "以我们要积极的态度面对困难。",
+   "我们要积极的态度以面对困难。",
+   "我们要以积极的态度面对困难。",
+   "我们以要积极的态度面对困难。"
+  ],
+  "correct_answer": "我们要以积极的态度面对困难。",
+  "explanation": "«以 + нэр хэсэг + V»: 以积极的态度面对困难 — эерэг хандлагаар бэрхшээлийг даван туулах. «以» нь нэр хэсгийн өмнө, үйл үгийн өмнө байна; бусад гурав нь байрлал нь буруу.",
+  "order_index": 24,
+  "id": "hsk4-l14-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“习惯是不容易改变的，（　），在孩子小的时候，父母要帮他们养成好的生活、学习习惯。”应该选哪个？",
+  "options": [
+   "因此",
+   "于是",
+   "既然",
+   "什么的"
+  ],
+  "correct_answer": "因此",
+  "explanation": "Эхний хэсэг нь шалтгаан, хоёр дахь нь дүгнэлт тул «因此» зөв (номын 比一比: 于是 ×, 因此 ✓). «于是» дарааллыг, «既然» баримтаас гарсан дүгнэлтийг, «什么的» жагсаалтыг заадаг.",
+  "order_index": 25,
+  "id": "hsk4-l14-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“我去超市买了饼干、面包什么的。”中的“什么的”表示什么？",
+  "options": [
+   "Асуулт асууж байна",
+   "Үйлдэл дууссан",
+   "Эдгээртэй төстэй өөр зүйлс бас бий",
+   "Юу авснаа мэдэхгүй байна"
+  ],
+  "correct_answer": "Эдгээртэй төстэй өөр зүйлс бас бий",
+  "explanation": "«什么的» жагсаалтын ард орж, «жигнэмэг, талх гэх мэт, төстэй өөр зүйл бас бий» гэсэн утга өгнө. Энэ нь асуух төлөөний үг биш.",
+  "order_index": 26,
+  "id": "hsk4-l14-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小王每天骑自行车上班。他说，骑车不但能锻炼身体，还可以节约钱，也不会污染空气。所以他很少开车。\n问：小王为什么很少开车？",
+  "options": [
+   "他没有车",
+   "他觉得骑车更好",
+   "他不会开车",
+   "他家离公司很近"
+  ],
+  "correct_answer": "他觉得骑车更好",
+  "explanation": "Эшлэл: 骑车不但能锻炼身体，还可以节约钱，也不会污染空气 — дугуй унах нь бие чийрэгжүүлж, мөнгө хэмнэж, агаар бохирдуулахгүй тул тэр дугуйг илүүд үздэг.",
+  "order_index": 27,
+  "id": "hsk4-l14-q27",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "昨天晚上，我们全家参加了“地球一小时”活动。晚上八点半，我们关了灯，在阳台上看星星。女儿说，这是她看过的最美的夜空。\n问：他们关灯以后做什么？",
+  "options": [
+   "在阳台上看星星",
+   "出去吃饭",
+   "看电视",
+   "睡觉"
+  ],
+  "correct_answer": "在阳台上看星星",
+  "explanation": "Эшлэл: 我们关了灯，在阳台上看星星 — гэрлээ унтрааж, тагтан дээр одод харсан.",
+  "order_index": 28,
+  "id": "hsk4-l14-q28",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "超市不再免费给顾客塑料袋了。妈妈每次去买东西都带着自己的布袋。她说，这样既方便又环保。\n问：妈妈觉得带布袋有什么好处？",
+  "options": [
+   "又轻又大",
+   "又快又干净",
+   "又方便又环保",
+   "又便宜又好看"
+  ],
+  "correct_answer": "又方便又环保",
+  "explanation": "Эшлэл: 这样既方便又环保 — ийм байвал тохиромжтой бөгөөд байгальд ээлтэй гэж ээж хэлсэн.",
+  "order_index": 29,
+  "id": "hsk4-l14-q29",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我们的办公室里，每个人桌子上都有一个小垃圾桶。以前，大家总是把饮料瓶、纸和吃剩的东西都扔在一起。现在经理要求大家把垃圾分开扔，于是我们在门口又放了三个大垃圾桶。\n问：为什么在门口又放了三个大垃圾桶？",
+  "options": [
+   "因为桌子上的垃圾桶坏了",
+   "因为新同事来了",
+   "因为办公室里太脏",
+   "因为经理要求把垃圾分开扔"
+  ],
+  "correct_answer": "因为经理要求把垃圾分开扔",
+  "explanation": "Эшлэл: 经理要求大家把垃圾分开扔，于是…又放了三个大垃圾桶 — менежер хогоо ангилж хаяхыг шаардсан тул үүдэнд гурван том хогийн сав нэмж тавьсан.",
+  "order_index": 30,
+  "id": "hsk4-l14-q30",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我们 / 应该 / 以积极的态度 / 面对困难",
+  "options": [
+   "我们应该以积极的态度面对困难。",
+   "以积极的态度我们面对困难应该。",
+   "我们应该面对困难以积极的态度。"
+  ],
+  "correct_answer": "我们应该以积极的态度面对困难。",
+  "explanation": "Дараалал: эзэн (我们) + 应该 + «以 + нэр хэсэг» (以积极的态度) + үйл үг (面对困难). «以» хэсэг үйл үгийн өмнө орно.",
+  "order_index": 31,
+  "id": "hsk4-l14-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 既然 / 明天会堵车 / 你 / 就坐地铁吧",
+  "options": [
+   "你既然就坐地铁吧明天会堵车。",
+   "明天会堵车就既然你坐地铁吧。",
+   "既然明天会堵车，你就坐地铁吧。"
+  ],
+  "correct_answer": "既然明天会堵车，你就坐地铁吧。",
+  "explanation": "既然 + баримт (明天会堵车)，эзэн (你) + 就 + санал (坐地铁吧). «就» нь эзний ард, үйл үгийн өмнө.",
+  "order_index": 32,
+  "id": "hsk4-l14-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 超市 / 不能 / 免费 / 提供塑料袋",
+  "options": [
+   "超市免费不能提供塑料袋。",
+   "超市不能免费提供塑料袋。",
+   "不能超市提供免费塑料袋。"
+  ],
+  "correct_answer": "超市不能免费提供塑料袋。",
+  "explanation": "Дараалал: эзэн (超市) + 不能 + арга (免费) + үйл үг (提供塑料袋). «不能» нь үйл үг, дайвар үгийн өмнө орно.",
+  "order_index": 33,
+  "id": "hsk4-l14-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 卫生间 / 我 / 还没来得及 / 打扫",
+  "options": [
+   "卫生间我还没来得及打扫。",
+   "我还没卫生间来得及打扫。",
+   "打扫还没来得及我卫生间。"
+  ],
+  "correct_answer": "卫生间我还没来得及打扫。",
+  "explanation": "Сэдэв (卫生间) өгүүлбэрийн эхэнд гарч, дараа нь эзэн (我) + 还没来得及 + 打扫 орно: ариун цэврийн өрөөг би цэвэрлэж амжаагүй байна.",
+  "order_index": 34,
+  "id": "hsk4-l14-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他怕堵车 / 于是 / 决定 / 坐地铁去机场",
+  "options": [
+   "他怕堵车，于是决定坐地铁去机场。",
+   "坐地铁去机场，他怕堵车，于是决定。",
+   "于是他怕堵车，决定坐地铁去机场。"
+  ],
+  "correct_answer": "他怕堵车，于是决定坐地铁去机场。",
+  "explanation": "于是 нь өмнөх үйл явдлын (他怕堵车) ДАРАА, хоёр дахь хэсэгт орно: 于是决定… Эхэнд тавьвал өмнөх үйл явдалгүй болно.",
+  "order_index": 35,
+  "id": "hsk4-l14-q35",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 保护环境 / 需要 / 从身边的小事 / 做起",
+  "options": [
+   "需要保护环境做起从身边的小事。",
+   "保护环境需要从身边的小事做起。",
+   "从身边的小事保护环境需要做起。"
+  ],
+  "correct_answer": "保护环境需要从身边的小事做起。",
+  "explanation": "Дараалал: сэдэв (保护环境) + 需要 + «从身边的小事» + 做起. «从……做起» — …-аас эхлэх, нэг бүтэц.",
+  "order_index": 36,
+  "id": "hsk4-l14-q36",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
