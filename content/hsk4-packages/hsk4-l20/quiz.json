@@ -1,0 +1,686 @@
+[
+ {
+  "type": "cloze",
+  "question": "我坐的（　）是下午三点的，不用去得太早。",
+  "options": [
+   "棵",
+   "钥匙",
+   "航班",
+   "民族",
+   "汤"
+  ],
+  "correct_answer": "航班",
+  "explanation": "航班 = нислэг: 我坐的航班是下午三点的. 钥匙 — түлхүүр; 民族 — үндэстэн; 汤 — шөл; 棵 — мод тоолох нэгж.",
+  "order_index": 1,
+  "id": "hsk4-l20-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天下大雨，足球比赛要（　）到下个星期。",
+  "options": [
+   "收拾",
+   "干杯",
+   "存",
+   "出发",
+   "推迟"
+  ],
+  "correct_answer": "推迟",
+  "explanation": "推迟 = хойшлуулах: 推迟到下个星期. 收拾 — цэгцлэх; 出发 — хөдлөх; 干杯 — хундага өргөх; 存 — хадгалах.",
+  "order_index": 2,
+  "id": "hsk4-l20-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "车快没油了，前面有（　）吗？",
+  "options": [
+   "笑话",
+   "登机牌",
+   "烤鸭",
+   "加油站",
+   "首都"
+  ],
+  "correct_answer": "加油站",
+  "explanation": "加油站 = шатахуун түгээх станц (车快没油了-тай холбоотой). 登机牌 — суух талон; 烤鸭 — шарсан нугас; 笑话 — онигоо; 首都 — нийслэл.",
+  "order_index": 3,
+  "id": "hsk4-l20-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他这次考试的成绩都（　），老师很满意。",
+  "options": [
+   "合格",
+   "可怜",
+   "打扮",
+   "旅行",
+   "对面"
+  ],
+  "correct_answer": "合格",
+  "explanation": "合格 = тэнцсэн, шаардлага хангасан: 成绩合格. 可怜 — хөөрхий; 旅行 — аялах; 对面 — эсрэг тал; 打扮 — гоёх.",
+  "order_index": 4,
+  "id": "hsk4-l20-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "那只小狗又冷又饿，看起来很（　）。",
+  "options": [
+   "辣",
+   "祝贺",
+   "存",
+   "合格",
+   "可怜"
+  ],
+  "correct_answer": "可怜",
+  "explanation": "可怜 = хөөрхий, өрөвдмөөр: 看起来很可怜. 合格 — тэнцсэн; 祝贺 — баяр хүргэх; 辣 — халуун ногоотой; 存 — хадгалах.",
+  "order_index": 5,
+  "id": "hsk4-l20-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我出门时忘带（　）了，只好在门口等妈妈回来。",
+  "options": [
+   "打扮",
+   "钥匙",
+   "汤",
+   "笑话",
+   "小吃"
+  ],
+  "correct_answer": "钥匙",
+  "explanation": "钥匙 = түлхүүр: 忘带钥匙 — түлхүүрээ мартсан тул үүдэнд хүлээнэ. 汤 — шөл; 笑话 — онигоо; 小吃 — хөнгөн зууш; 打扮 — гоёх.",
+  "order_index": 6,
+  "id": "hsk4-l20-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她今天（　）得很漂亮，像是要去参加舞会。",
+  "options": [
+   "打扮",
+   "干杯",
+   "存",
+   "出发",
+   "祝贺"
+  ],
+  "correct_answer": "打扮",
+  "explanation": "打扮 = гоёх, хувцаслан засах: 打扮得很漂亮. 祝贺 — баяр хүргэх; 存 — хадгалах; 干杯 — хундага өргөх; 出发 — хөдлөх.",
+  "order_index": 7,
+  "id": "hsk4-l20-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他很爱说（　），大家都被他逗笑了。",
+  "options": [
+   "民族",
+   "钥匙",
+   "航班",
+   "汤",
+   "笑话"
+  ],
+  "correct_answer": "笑话",
+  "explanation": "笑话 = онигоо: 说笑话 — онигоо ярих. 钥匙 — түлхүүр; 汤 — шөл; 民族 — үндэстэн; 航班 — нислэг.",
+  "order_index": 8,
+  "id": "hsk4-l20-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他是南方人，（　）说得不太标准。",
+  "options": [
+   "普通话",
+   "首都",
+   "笑话",
+   "对话",
+   "民族"
+  ],
+  "correct_answer": "普通话",
+  "explanation": "普通话 = стандарт хятад хэл (путунхуа): 普通话说得不标准. 对话 — харилцан яриа; 民族 — үндэстэн; 笑话 — онигоо; 首都 — нийслэл.",
+  "order_index": 9,
+  "id": "hsk4-l20-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "明天要出发了，我今晚得把行李（　）好。",
+  "options": [
+   "祝贺",
+   "打扮",
+   "存",
+   "推迟",
+   "收拾"
+  ],
+  "correct_answer": "收拾",
+  "explanation": "收拾 = эмхлэх, бэлдэх: 把行李收拾好 — ачаагаа бэлдэх. 存 — хадгалах; 打扮 — гоёх; 推迟 — хойшлуулах; 祝贺 — баяр хүргэх.",
+  "order_index": 10,
+  "id": "hsk4-l20-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l20-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他听音乐，（　）就睡着了。",
+  "options": [
+   "听着听着",
+   "听了听了",
+   "听着唱着",
+   "一听听",
+   "听着听"
+  ],
+  "correct_answer": "听着听着",
+  "explanation": "V着V着: 听着听着就睡着了 — сонссоор байгаад унтчихлаа. 听了听了, 听着唱着, 听着听, 一听听 — энэ бүтэцтэй таарахгүй.",
+  "order_index": 11,
+  "id": "hsk4-l20-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他（　）回家，（　）打开电视。",
+  "options": [
+   "不但……而且……",
+   "虽然……但是……",
+   "如果……才……",
+   "一……就……",
+   "因为……所以……"
+  ],
+  "correct_answer": "一……就……",
+  "explanation": "一……就……: 他一回家就打开电视 — гэртээ ормогц зурагт асаана. 因为…所以 — шалтгаан; 虽然…但是 — эсрэг; 不但…而且 — нэмэх; 如果…才 — нөхцөл-хожуу.",
+  "order_index": 12,
+  "id": "hsk4-l20-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你（　）想去哪儿旅行？是南方还是北方？",
+  "options": [
+   "一直",
+   "刚刚",
+   "只好",
+   "究竟",
+   "已经"
+  ],
+  "correct_answer": "究竟",
+  "explanation": "究竟 = яг (асуултыг онцлох): 你究竟想去哪儿？ 已经 — аль хэдийн; 刚刚 — дөнгөж; 一直 — үргэлж; 只好 — аргагүйн эрхэнд.",
+  "order_index": 13,
+  "id": "hsk4-l20-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个歌听（　）很好听，可是唱（　）很难。",
+  "options": [
+   "过来",
+   "下去",
+   "上去",
+   "起来",
+   "出来"
+  ],
+  "correct_answer": "起来",
+  "explanation": "起来: 听起来 / 唱起来 — сонсоход / дуулахад (үнэлэлт). 过来, 出来, 下去, 上去 — чиглэл, энд таарахгүй.",
+  "order_index": 14,
+  "id": "hsk4-l20-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "去机场的路上，加油站在哪儿？",
+  "options": [
+   "过了长江大桥往右一拐",
+   "在高速公路上",
+   "在机场对面",
+   "过了长江大桥往左一拐"
+  ],
+  "correct_answer": "过了长江大桥往右一拐",
+  "explanation": "Бичвэр 1: 我记得过了长江大桥往右一拐就有一个 — гүүрээр гараад баруун тийш эргэхэд.",
+  "order_index": 15,
+  "id": "hsk4-l20-q15",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小张的航班后来推迟到几点？",
+  "options": [
+   "十点",
+   "十二点",
+   "十一点",
+   "九点半"
+  ],
+  "correct_answer": "十一点",
+  "explanation": "Анх 10 цагийнх байсан, нэг цагаар хойшилсон (推迟了一个小时) тул 11 цаг.",
+  "order_index": 16,
+  "id": "hsk4-l20-q16",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "孙月和丈夫为什么想带女儿去旅行？",
+  "options": [
+   "女儿考试没合格",
+   "他们想吃烤鸭",
+   "女儿平时课多，想去旅行却没时间",
+   "女儿生病了"
+  ],
+  "correct_answer": "女儿平时课多，想去旅行却没时间",
+  "explanation": "Бичвэр 2: 平时女儿那么多课，总是说想去旅行，但是没时间 — охин хичээл ихтэй, аялмаар ч цаг байдаггүй.",
+  "order_index": 17,
+  "id": "hsk4-l20-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "他们打算什么时候告诉女儿去广西的消息？",
+  "options": [
+   "中午吃烤鸭的时候",
+   "放寒假以后",
+   "女儿一回来",
+   "明天早上"
+  ],
+  "correct_answer": "中午吃烤鸭的时候",
+  "explanation": "Эхэндээ нөхөр «女儿一回来» гэсэн ч Сүн Юэ «中午…吃烤鸭…那时候再告诉她» гэж санал болгож, нөхөр зөвшөөрсөн.",
+  "order_index": 18,
+  "id": "hsk4-l20-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "照片上和安娜干杯的人是谁？",
+  "options": [
+   "导游",
+   "安娜的同事",
+   "马克的老师",
+   "少数民族朋友"
+  ],
+  "correct_answer": "导游",
+  "explanation": "Бичвэр 3: 她是我们的导游，不是少数民族 — тэр хөтөч, цөөн тооны үндэстэн биш.",
+  "order_index": 19,
+  "id": "hsk4-l20-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "去丽江旅游，什么时候交通、吃、住都比较便宜？",
+  "options": [
+   "只有三月",
+   "每年12月到第二年3月",
+   "春天和秋天",
+   "夏天"
+  ],
+  "correct_answer": "每年12月到第二年3月",
+  "explanation": "Хавар, намар хамгийн гоё ч хүн их. 12 сараас дараа оны 3 сар хүртэл унаа, хоол, байр бүгд хямд.",
+  "order_index": 20,
+  "id": "hsk4-l20-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "三四月份从北方坐火车去南方，窗外的树会怎么样？",
+  "options": [
+   "一棵一棵地变黄",
+   "都被雪盖住",
+   "一棵一棵地变绿",
+   "越来越少"
+  ],
+  "correct_answer": "一棵一棵地变绿",
+  "explanation": "Бичвэр 4: 窗外的树一棵一棵地变绿 — мод нэг нэгээрээ ногоорно.",
+  "order_index": 21,
+  "id": "hsk4-l20-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "湖南菜的辣主要有哪几种？",
+  "options": [
+   "甜辣、咸辣和苦辣",
+   "咸辣、香辣和酸辣",
+   "只有一种辣",
+   "香辣、麻辣和甜辣"
+  ],
+  "correct_answer": "咸辣、香辣和酸辣",
+  "explanation": "Бичвэр 5: 湖南菜的辣主要是咸辣、香辣和酸辣 — давслаг, анхилуун, исгэлэн халуун гэсэн гурав.",
+  "order_index": 22,
+  "id": "hsk4-l20-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "谁是最好究竟的导游？",
+   "谁是究竟最好的导游？",
+   "谁究竟是最好的导游？",
+   "究竟谁是最好的导游？"
+  ],
+  "correct_answer": "究竟谁是最好的导游？",
+  "explanation": "Эзэн нь асуух төлөөний үг (谁) бол «究竟»-ийг эзний ӨМНӨ тавина: 究竟谁是最好的导游？",
+  "order_index": 23,
+  "id": "hsk4-l20-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“他一紧张就说不出话来”中的“一……就……”表示什么？",
+  "options": [
+   "Эсрэг утгатай хоёр зүйл",
+   "Хэмжээ, тоо ихэсэх",
+   "Хоёр үйлдэл дараалан шууд тохиох",
+   "Хэрэв …бол … гэсэн нөхцөл"
+  ],
+  "correct_answer": "Хэрэв …бол … гэсэн нөхцөл",
+  "explanation": "Энд «一紧张» нь нөхцөл, «就说不出话来» нь тэр нөхцөлд гарах үр дүн: «хэрэв сандарвал, ярьж чадахгүй» (要是……就……).",
+  "order_index": 24,
+  "id": "hsk4-l20-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“她一听这个笑话就笑起来了”中的“起来”表示什么？",
+  "options": [
+   "Ярьж буй хүний үнэлэлтийг",
+   "Доороос дээш чиглэсэн хөдөлгөөнийг",
+   "Үйлдэл эхэлж үргэлжилж байгааг",
+   "Үйлдэл дууссаныг"
+  ],
+  "correct_answer": "Үйлдэл эхэлж үргэлжилж байгааг",
+  "explanation": "笑起来 = инээж эхлэх: «起来» үйлдлийн эхлэл ба үргэлжлэлийг заана. Дээш чиглэсэн (拿起来) ба үнэлэлт (听起来) биш.",
+  "order_index": 25,
+  "id": "hsk4-l20-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“____小时候的事，他总是笑个不停。”应该选哪个？",
+  "options": [
+   "说下",
+   "说起",
+   "说开",
+   "说来"
+  ],
+  "correct_answer": "说起",
+  "explanation": "V+起 + нэр үг: 说起小时候的事 — багын тухай ярихад. 说来, 说开, 说下 нь энд тохирохгүй.",
+  "order_index": 26,
+  "id": "hsk4-l20-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小李每年放假都去不同的地方旅行。去年他去了云南，今年他打算去海南。他说，旅行时最开心的是认识新朋友，还可以尝到各地的小吃。\n问：今年小李打算去哪儿？",
+  "options": [
+   "广西",
+   "丽江",
+   "海南",
+   "云南"
+  ],
+  "correct_answer": "海南",
+  "explanation": "Эшлэл: 去年…云南，今年他打算去海南 — өнгөрсөн жил Юньнань, энэ жил Хайнань.",
+  "order_index": 27,
+  "id": "hsk4-l20-q27",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我的朋友在北方长大，第一次去南方过冬天。他一下火车就脱了大衣，因为那儿的冬天一点儿也不冷。\n问：他为什么一下火车就脱了大衣？",
+  "options": [
+   "他觉得大衣不好看",
+   "他要换衣服",
+   "南方的冬天不冷",
+   "他的大衣太小了"
+  ],
+  "correct_answer": "南方的冬天不冷",
+  "explanation": "Эшлэл: 那儿的冬天一点儿也不冷 — өмнөд зүгийн өвөл огт хүйтэнгүй тул.",
+  "order_index": 28,
+  "id": "hsk4-l20-q28",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我去机场的时候，发现忘带护照了，只好让妈妈把护照送过来。还好航班推迟了一个小时，我才没有错过。\n问：他为什么没有错过航班？",
+  "options": [
+   "因为他走得很快",
+   "因为妈妈开车很快",
+   "因为他提前到了",
+   "因为航班推迟了"
+  ],
+  "correct_answer": "因为航班推迟了",
+  "explanation": "Эшлэл: 还好航班推迟了一个小时 — нислэг нэг цагаар хойшилсон тул оргосонгүй.",
+  "order_index": 29,
+  "id": "hsk4-l20-q29",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "外国朋友说，他一开始觉得汉语很难，学着学着，却越来越喜欢了。现在他说起汉语来，一点儿也不紧张。\n问：他现在对汉语的态度是什么？",
+  "options": [
+   "有点儿紧张",
+   "不想再学",
+   "越来越喜欢",
+   "觉得很难"
+  ],
+  "correct_answer": "越来越喜欢",
+  "explanation": "Эшлэл: 学着学着，却越来越喜欢了 — суралцсаар байгаад улам дуртай болсон.",
+  "order_index": 30,
+  "id": "hsk4-l20-q30",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 航班 / 推迟了 / 一个小时 / 通知 / 机场网站上",
+  "options": [
+   "航班通知机场网站上推迟了一个小时。",
+   "机场网站上通知航班推迟了一个小时。",
+   "机场网站上推迟了航班通知一个小时。"
+  ],
+  "correct_answer": "机场网站上通知航班推迟了一个小时。",
+  "explanation": "Дараалал: байршил (机场网站上) + үйл үг (通知) + тусагдахуун (航班) + үйлдэл (推迟了) + хугацаа (一个小时). 推迟 = хойшлуулах.",
+  "order_index": 31,
+  "id": "hsk4-l20-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我 / 一到首都机场 / 就 / 给你 / 发短信",
+  "options": [
+   "我就一到首都机场给你发短信。",
+   "给你我一到首都机场就发短信。",
+   "我一到首都机场就给你发短信。"
+  ],
+  "correct_answer": "我一到首都机场就给你发短信。",
+  "explanation": "一……就……: 一 нь эхний үйл үгийн өмнө (一到), 就 нь хоёр дахь үйлдлийн өмнө. 给你发短信 — чамд мессеж явуулах.",
+  "order_index": 32,
+  "id": "hsk4-l20-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 究竟 / 哪个季节 / 去丽江 / 旅游 / 比较好",
+  "options": [
+   "哪个季节究竟去丽江旅游比较好？",
+   "去丽江究竟旅游哪个季节比较好？",
+   "究竟哪个季节去丽江旅游比较好？"
+  ],
+  "correct_answer": "究竟哪个季节去丽江旅游比较好？",
+  "explanation": "Эзэн нь асуух үг (哪个季节) тул 究竟 өгүүлбэрийн эхэнд, эзний өмнө орно. 比较好 — арай дээр.",
+  "order_index": 33,
+  "id": "hsk4-l20-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 孩子 / 听着听着 / 就 / 睡着了",
+  "options": [
+   "孩子听着听着就睡着了。",
+   "睡着了孩子听着听着就。",
+   "听着听着孩子睡着了就。"
+  ],
+  "correct_answer": "孩子听着听着就睡着了。",
+  "explanation": "V着V着 + 就 + үр дүн: 孩子 (эзэн) + 听着听着 + 就 + 睡着了 — хүүхэд сонссоор байгаад унтчихлаа.",
+  "order_index": 34,
+  "id": "hsk4-l20-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 说起 / 吃的东西 / 给我 / 印象最深的 / 是湖南菜",
+  "options": [
+   "印象最深的说起吃的东西，给我是湖南菜。",
+   "说起吃的东西，给我印象最深的是湖南菜。",
+   "吃的东西说起，印象最深的给我是湖南菜。"
+  ],
+  "correct_answer": "说起吃的东西，给我印象最深的是湖南菜。",
+  "explanation": "V+起+нэр үг: 说起吃的东西 — хоолны тухай ярихад; дараа нь 给我印象最深的 (надад хамгийн гүн сэтгэгдэл үлдээсэн) + 是湖南菜.",
+  "order_index": 35,
+  "id": "hsk4-l20-q35",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 上海话 / 听起来 / 就像 / 外语 / 一样",
+  "options": [
+   "听起来上海话外语就像一样。",
+   "上海话就像听起来外语一样。",
+   "上海话听起来就像外语一样。"
+  ],
+  "correct_answer": "上海话听起来就像外语一样。",
+  "explanation": "听起来 — сонсоход (үнэлэлт). 就像……一样 = яг л … шиг. 上海话 (эзэн) + 听起来 + 就像外语一样.",
+  "order_index": 36,
+  "id": "hsk4-l20-q36",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]

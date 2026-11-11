@@ -1,0 +1,30 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "hsk4",
+ "lessonId": "hsk4-l20",
+ "hskLevel": 4,
+ "lessonNumber": 20,
+ "bookPart": "B",
+ "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+ "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "路上的风景",
+ "mongolianTitle": "Замын үзэмж — аялал, зам тээвэр",
+ "series": "HSK标准教程4下",
+ "seriesLabel_mn": "HSK4B",
+ "source": "HSK标准教程4下 · 第20课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариу)",
+ "hasAudio": false,
+ "hasImages": false,
+ "media": {
+  "lessonId": "hsk4-l20",
+  "images": []
+ },
+ "verification": {
+  "answerStatus": "official_verified",
+  "textStatus": "source_verified (hsk4-l20.json, verified_pages)",
+  "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
+ }
+}
