@@ -1,29 +1,29 @@
 {
- "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
- "courseType": "chinese-hsk",
- "courseId": "hsk5",
- "lessonId": "hsk5-l25",
- "hskLevel": 5,
- "lessonNumber": 25,
- "lessonProfile": "hsk5-article-topic-vocab-nuance-writing",
- "lessonType": "hsk5-article-topic-vocab-nuance-writing",
- "language": "zh-MN",
- "targetLanguage": "zh",
- "uiLanguage": "mn",
- "title": "给自己加满水",
- "mongolianTitle": "Өөртөө ус дүүргэ",
- "series": "HSK标准教程5下",
- "seriesLabel_mn": "HSK5B",
- "source": "HSK标准教程5下 · 第25课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариу)",
- "hasAudio": false,
- "hasImages": false,
- "media": {
+  "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+  "courseType": "chinese-hsk",
+  "courseId": "hsk5",
   "lessonId": "hsk5-l25",
-  "images": []
- },
- "verification": {
-  "answerStatus": "official_verified",
-  "textStatus": "source_verified (hsk5-l25.json, verified_pages)",
-  "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
- }
+  "hskLevel": 5,
+  "lessonNumber": 25,
+  "lessonProfile": "hsk5-article-topic-vocab-nuance-writing",
+  "lessonType": "hsk5-article-topic-vocab-nuance-writing",
+  "language": "zh-MN",
+  "targetLanguage": "zh",
+  "uiLanguage": "mn",
+  "title": "给自己加满水",
+  "mongolianTitle": "Өөртөө ус дүүргэ",
+  "series": "HSK标准教程5下",
+  "seriesLabel_mn": "HSK5B",
+  "source": "HSK标准教程5下 · 第25课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариу)",
+  "hasAudio": true,
+  "hasImages": false,
+  "media": {
+    "lessonId": "hsk5-l25",
+    "images": []
+  },
+  "verification": {
+    "answerStatus": "official_verified",
+    "textStatus": "source_verified (hsk5-l25.json, verified_pages)",
+    "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
+  }
 }

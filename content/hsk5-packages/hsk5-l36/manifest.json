@@ -1,29 +1,29 @@
 {
- "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
- "courseType": "chinese-hsk",
- "courseId": "hsk5",
- "lessonId": "hsk5-l36",
- "hskLevel": 5,
- "lessonNumber": 36,
- "lessonProfile": "hsk5-article-topic-vocab-nuance-writing",
- "lessonType": "hsk5-article-topic-vocab-nuance-writing",
- "language": "zh-MN",
- "targetLanguage": "zh",
- "uiLanguage": "mn",
- "title": "老舍与养花",
- "mongolianTitle": "Лао Шө ба түүний цэцэг ургуулах дуртай зуршил",
- "series": "HSK标准教程5下",
- "seriesLabel_mn": "HSK5B",
- "source": "HSK标准教程5下 · 第36课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариулт)",
- "hasAudio": false,
- "hasImages": false,
- "media": {
+  "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+  "courseType": "chinese-hsk",
+  "courseId": "hsk5",
   "lessonId": "hsk5-l36",
-  "images": []
- },
- "verification": {
-  "answerStatus": "official_verified",
-  "textStatus": "source_verified (hsk5-l36.json, verified_pages)",
-  "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
- }
+  "hskLevel": 5,
+  "lessonNumber": 36,
+  "lessonProfile": "hsk5-article-topic-vocab-nuance-writing",
+  "lessonType": "hsk5-article-topic-vocab-nuance-writing",
+  "language": "zh-MN",
+  "targetLanguage": "zh",
+  "uiLanguage": "mn",
+  "title": "老舍与养花",
+  "mongolianTitle": "Лао Шө ба түүний цэцэг ургуулах дуртай зуршил",
+  "series": "HSK标准教程5下",
+  "seriesLabel_mn": "HSK5B",
+  "source": "HSK标准教程5下 · 第36课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариулт)",
+  "hasAudio": true,
+  "hasImages": false,
+  "media": {
+    "lessonId": "hsk5-l36",
+    "images": []
+  },
+  "verification": {
+    "answerStatus": "official_verified",
+    "textStatus": "source_verified (hsk5-l36.json, verified_pages)",
+    "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
+  }
 }
