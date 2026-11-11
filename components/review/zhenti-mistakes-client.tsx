@@ -10,6 +10,7 @@ import {
   recordQuestionAttempt,
 } from "@/lib/analytics/record-question-attempt";
 import { mapQuestion } from "@/lib/mock-test/map-question";
+import { describeTestId } from "@/lib/mock-test/test-id-meta";
 import {
   buildPracticeFeedback,
   type PracticeFeedback,
@@ -230,7 +231,8 @@ export function ZhentiMistakesClient() {
   // --- Давтах ---
   if (view === "practice" && current) {
     const q = current.question;
-    const title = titles[q.test_id] ?? q.test_id;
+    const meta = describeTestId(q.test_id);
+    const title = meta ? `HSK ${meta.level} · ${meta.label}` : (titles[q.test_id] ?? q.test_id);
     return (
       <div className="bs-mtp-wrap">
         <div className="bs-mtp-runbar">
@@ -355,7 +357,7 @@ export function ZhentiMistakesClient() {
                 <li key={m.key} className="rounded-[16px] bg-white p-3 shadow-sm ring-1 ring-slate-100">
                   <div className="flex flex-wrap items-center gap-1.5 text-[11px] font-bold text-[var(--app-muted)]">
                     <span className="rounded-full bg-slate-100 px-2 py-0.5" translate="no">
-                      {titles[q.test_id] ?? q.test_id} №{q.q_no}
+                      {(() => { const m = describeTestId(q.test_id); return m ? `HSK ${m.level} · ${m.isSample ? "загвар" : `${m.year} №${m.serial}${m.variant ?? ""}`}` : (titles[q.test_id] ?? q.test_id); })()} · асуулт {q.q_no}
                     </span>
                     <span className="rounded-full bg-slate-100 px-2 py-0.5">
                       {q.skill === "listening" ? "Сонсгол" : q.skill === "reading" ? "Унших" : "Бичих"}

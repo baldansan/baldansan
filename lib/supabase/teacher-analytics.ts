@@ -473,7 +473,7 @@ export async function getAssignmentAnalytics(
     .map((s) => ({
       displayName: studentLabel(s),
       email: s.email,
-      reason: s.studentUserId ? "Not started" : "Invited — no account linked",
+      reason: s.studentUserId ? "Эхлээгүй" : "Урьсан — бүртгэл холбогдоогүй",
     }));
 
   const started = results.filter((r) => startedStatus(r.status)).length;

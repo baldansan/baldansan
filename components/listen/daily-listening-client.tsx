@@ -16,6 +16,7 @@ import {
 } from "@/lib/mock-test/practice-feedback";
 import type { MockTestQuestionRow } from "@/lib/mock-test/types";
 import { saveDailyListeningResult } from "@/lib/listen/daily-listening-local";
+import { describeTestId } from "@/lib/mock-test/test-id-meta";
 
 type Props = {
   level: number;
@@ -160,7 +161,7 @@ export function DailyListeningClient({
                       {q.stem?.trim() || q.options?.map((o) => o.text).filter(Boolean).join(" / ") || "—"}
                     </span>
                     <Link href={`/review/practice/${q.test_id}`} className="bs-mtp-wrong-lesson">
-                      <span translate="no">{testTitles[q.test_id] ?? q.test_id}</span> →
+                      <span translate="no">{describeTestId(q.test_id)?.label ?? testTitles[q.test_id] ?? q.test_id}</span> →
                     </Link>
                   </div>
                 ))}
@@ -187,7 +188,7 @@ export function DailyListeningClient({
   }
 
   const progressPercent = Math.round(((index + (revealed ? 1 : 0)) / questions.length) * 100);
-  const title = testTitles[question.test_id] ?? question.test_id;
+  const title = describeTestId(question.test_id)?.label ?? testTitles[question.test_id] ?? question.test_id;
 
   return (
     <MobileAppShell activeTab="study" showBottomNav>
@@ -207,7 +208,7 @@ export function DailyListeningClient({
         </div>
 
         <p className="bs-mtp-group-line">
-          🎧 Өнөөдрийн сонсгол · HSK {level} · <span translate="no">{title}</span> №{question.q_no}
+          🎧 HSK {level} · <span translate="no">{title}</span> · асуулт {question.q_no}
         </p>
 
         <MockTestPracticeQuestion

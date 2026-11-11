@@ -125,7 +125,7 @@ export const ASSIGNMENT_STATUS_LABELS: Record<
   "assigned" | "in_progress" | "completed",
   string
 > = {
-  assigned: "Assigned",
-  in_progress: "In progress",
-  completed: "Completed",
+  assigned: "Өгсөн",
+  in_progress: "Хийж байна",
+  completed: "Дууссан",
 };

@@ -200,11 +200,11 @@ export function countCompletedLessons(lessonIds: string[]): number {
 export function lessonStatusLabel(status: LessonStatus): string {
   switch (status) {
     case "started":
-      return "Started";
+      return "Эхэлсэн";
     case "completed":
-      return "Completed";
+      return "Дууссан";
     default:
-      return "Not started";
+      return "Эхлээгүй";
   }
 }
 

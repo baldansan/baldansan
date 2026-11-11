@@ -69,7 +69,7 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
       href: watchHref,
       icon: "📖",
       title: "Хичээл судлах",
-      desc: "Багшийн тайлбар, pinyin, tone",
+      desc: "Багшийн тайлбар, пиньинь, аялга",
     },
     {
       step: "2",
@@ -79,7 +79,7 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
       desc:
         studiedCount > 0
           ? `${studiedCount} / ${lesson.vocabularyCount} үг сурсан`
-          : `${lesson.vocabularyCount} үг · flashcard`,
+          : `${lesson.vocabularyCount} үг · үгийн карт`,
     },
     {
       step: "3",
