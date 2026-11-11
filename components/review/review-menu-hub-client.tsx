@@ -452,35 +452,6 @@ export function ReviewMenuHubClient({
 
         </div>
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>
-          {tr(locale, "Алдаагаа засах")}
-        </p>
-        <div className="bs-tm-grid bs-stagger">
-        <PrefetchLink href="/review/mistakes" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
-            ❌
-          </span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">
-              {tr(locale, "Миний алдаанууд")}
-              {mistakeCount != null && mistakeCount > 0
-                ? ` · ${mistakeCount}`
-                : ""}
-            </span>
-            <span className="bs-tm-card-sub">
-              {!isLoggedIn
-                ? tr(locale, "Нэвтэрч орвол хадгалагдана")
-                : mistakeCount == null
-                  ? "…"
-                  : mistakeCount > 0
-                    ? `${mistakeCount} ${tr(locale, "идэвхтэй алдаа")}`
-                    : tr(locale, "Алдаа алга — маш сайн! ✅")}
-            </span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </PrefetchLink>
-
-        </div>
-        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
           {tr(locale, "Шалгалтад бэлдэх")}
         </p>
         <div className="bs-tm-grid bs-stagger">

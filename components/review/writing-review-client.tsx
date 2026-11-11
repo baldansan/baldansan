@@ -171,14 +171,6 @@ export function WritingReviewClient() {
             {tr(locale, "Үргэлжлүүлэх")} · {remaining}
           </button>
         ) : null}
-        {mistakeCount > 0 ? (
-          <Link
-            href="/review/mistakes"
-            className="mt-3 block min-h-[48px] w-full rounded-[14px] bg-rose-50 py-3.5 text-center text-sm font-extrabold text-rose-700 ring-1 ring-rose-200"
-          >
-            ❌ {tr(locale, "Алдаагаа засах")} ({mistakeCount}) →
-          </Link>
-        ) : null}
         <Link
           href="/review"
           className="mt-3 block min-h-[48px] w-full rounded-[14px] bg-[#eaf0ed] py-3.5 text-center text-sm font-extrabold text-[#3b473f]"

@@ -1,16 +1,6 @@
-import { ReviewSubScreen } from "@/components/review/review-sub-screen";
-import { MistakeBookClient } from "@/components/review/mistake-book-client";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export const metadata = {
-  title: "Миний алдаанууд — Бөөндөө Сурцгаая",
-};
-
-export default function ReviewMistakesPage() {
-  return (
-    <ReviewSubScreen>
-      <MistakeBookClient />
-    </ReviewSubScreen>
-  );
+/** Хэрэглэгчид тусдаа «алдааны» хуудас харуулахаа больсон — «Давтах» нүүр рүү. */
+export default function Page() {
+  redirect("/review");
 }

@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** «Миний сул тал» тусдаа хуудас байхаа больсон — алдаанууд хичээлээр бүлэглэгдэн «Миний алдаанууд»-д харагдана. */
-export default function ReviewWeakSpotsPage() {
-  redirect("/review/mistakes");
+/** Хэрэглэгчид тусдаа «алдааны» хуудас харуулахаа больсон — «Давтах» нүүр рүү. */
+export default function Page() {
+  redirect("/review");
 }
