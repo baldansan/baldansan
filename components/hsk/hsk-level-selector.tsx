@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import {
@@ -100,6 +101,14 @@ export function HskLevelSelector({
                 </button>
               );
             })}
+            <Link
+              href="/placement"
+              onClick={() => setOpen(false)}
+              className="mt-1 flex w-full items-center justify-between rounded-xl border-t border-slate-100 px-3 py-2.5 text-left text-xs font-bold text-emerald-700"
+            >
+              Түвшингээ мэдэхгүй юу? Шалгалт өгөх
+              <span aria-hidden>→</span>
+            </Link>
           </div>
         </>
       ) : null}

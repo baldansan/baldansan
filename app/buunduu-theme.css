@@ -1421,3 +1421,16 @@ html.bs-bichleg-fs-root,html.bs-bichleg-fs-root body{overflow:hidden}
 .bs-mtp-ai-advice{margin:12px 0 0;font-size:13px;line-height:1.5;color:var(--bs-ink)}
 .bs-mtp-ai-link{margin-top:10px;border:0;background:none;padding:0;font-size:12.5px;font-weight:800;color:#6d4de0;cursor:pointer;font-family:inherit}
 .bs-mtp-ai-improved{margin:8px 0 0;padding:10px;border-radius:10px;background:#fff;font-size:15px;line-height:1.7;white-space:pre-wrap}
+
+/* Түвшин тогтоох шалгалт */
+.bs-mtp-timer{font-size:13px;font-weight:800;color:var(--bs-ink-2);white-space:nowrap}
+.bs-mtp-timer--low{color:#b91c1c}
+.bs-mtp-level-row{display:flex;gap:6px;justify-content:center;margin:4px 0}
+.bs-mtp-level-chip{width:36px;height:36px;border-radius:999px;display:grid;place-items:center;font-size:14px;font-weight:800;background:var(--bs-card);border:1.5px solid var(--bs-line);color:var(--bs-ink-2);text-decoration:none}
+.bs-mtp-level-chip--on{background:var(--bs-green);border-color:var(--bs-green);color:#fff}
+.bs-mtp-blocks{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.bs-mtp-block{flex:1 1 90px;padding:8px 10px;border-radius:12px;background:var(--bs-card);border:1px solid var(--bs-line);display:flex;justify-content:space-between;font-size:12.5px;font-weight:800}
+.bs-mtp-block-lvl{color:var(--bs-ink-2)}
+.bs-mtp-block-val{color:var(--bs-ink)}
+.bs-mtp-block-val.ok{color:var(--bs-green-700)}
+.bs-mtp-block-val.bad{color:#b91c1c}
