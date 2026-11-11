@@ -3,6 +3,7 @@
 /**
  * Тоглоомын хариултыг цээжлэх үгийн SRS-тэй холбоно.
  * Зөв хариулсан үг → «known» (давталтын хугацаа уртасна), буруу → «forgot» (удахгүй дахин гарна).
+ * Зөвхөн хэрэглэгчийн өөрөө нэмсэн (цээжлэх үгсэд байгаа) үгийг шинэчилнэ — шинэ үг нэмэхгүй.
  * Нэвтэрсэн бол Supabase user_word_srs, зочин бол төхөөрөмж дээрх SRS.
  * Fire-and-forget: тоглоомыг удаашруулахгүй, алдаа гарвал чимээгүй.
  */
@@ -49,8 +50,9 @@ export function rateGameWord(wordId: number | null | undefined, correct: boolean
       const uid = await userId();
       if (uid && supabase) {
         const existing = await existingRow(uid, wordId);
-        // Шинэ үг зөв бол SRS-д нэмэхгүй — зөвхөн аль хэдийн сурч буй эсвэл алдсан үг орно.
-        if (!existing && correct) return;
+        // Цээжлэх үгсэд ЗӨВХӨН хэрэглэгч өөрөө нэмнэ — тоглоом шинэ үг автоматаар
+        // нэмэхгүй (алдсан ч). Аль хэдийн сурч буй үгийн л хуваарийг шинэчилнэ.
+        if (!existing) return;
         await rateWordSrs(uid, wordId, rating, existing);
       } else {
         rateLocalWordSrs(wordId, rating, null);

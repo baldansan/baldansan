@@ -7,6 +7,7 @@ import SpeakButton from "@/components/lesson/SpeakButton";
 import {
   getBichlegWordStatus,
   lookupHskWordDisplayBySimplified,
+  removeWordFromStudy,
   saveWordFromLesson,
   type BichlegWordStatus,
   type HskWordDisplay,
@@ -157,6 +158,20 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
     }
   }
 
+  async function handleRemove() {
+    if (!saved || saving) return;
+    setSaving(true);
+    const result = await removeWordFromStudy(word.zh);
+    setSaving(false);
+    if (result.ok) {
+      setToast("Цээжлэх үгсээс хасагдлаа");
+      setStatus(await getBichlegWordStatus(word.zh));
+      onSaved?.();
+    } else if (result.error) {
+      setToast(result.error);
+    }
+  }
+
   const node = (
     <>
       <div
@@ -218,12 +233,15 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
               Нэвтрэх
             </Link>
           ) : saved ? (
-            <Link
-              href="/review/words"
-              className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--done inline-flex items-center justify-center no-underline"
+            <button
+              type="button"
+              className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--done"
+              disabled={saving}
+              onClick={() => void handleRemove()}
+              title="Цээжлэх үгсээс хасах"
             >
-              Цээжлэх үгсэд ✓
-            </Link>
+              {saving ? "Хасаж байна…" : "✓ Нэмсэн · хасах"}
+            </button>
           ) : saving ? (
             <button type="button" className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary" disabled>
               Нэмж байна…

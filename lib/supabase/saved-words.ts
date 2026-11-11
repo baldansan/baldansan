@@ -222,6 +222,40 @@ export async function getBichlegWordStatus(
   };
 }
 
+/**
+ * Үгийг цээжлэх үгсээс бүрэн хасна: user_saved_words мөр + user_word_srs давталт.
+ * (Санамсаргүй нэмсэн үгийг буцаахад.)
+ */
+export async function removeWordFromStudy(
+  zh: string
+): Promise<{ ok: boolean; error?: string }> {
+  if (!supabase || !hasSupabaseConfig) {
+    return { ok: false, error: "Supabase тохируулагдаагүй." };
+  }
+  const { userId } = await getAuthenticatedUserId();
+  if (!userId) return { ok: false, error: "Нэвтрээгүй хэрэглэгч." };
+
+  const trimmed = zh.trim();
+  const hskWordId = await lookupHskWordIdBySimplified(trimmed);
+
+  const { error: e1 } = await supabase
+    .from("user_saved_words")
+    .delete()
+    .eq("user_id", userId)
+    .eq("zh", trimmed);
+  if (e1) return { ok: false, error: e1.message };
+
+  if (hskWordId != null) {
+    const { error: e2 } = await supabase
+      .from("user_word_srs")
+      .delete()
+      .eq("user_id", userId)
+      .eq("word_id", hskWordId);
+    if (e2) return { ok: false, error: e2.message };
+  }
+  return { ok: true };
+}
+
 async function persistUserSavedWord(input: {
   zh: string;
   pinyin?: string;
