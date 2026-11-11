@@ -1,0 +1,686 @@
+[
+ {
+  "type": "cloze",
+  "question": "台下的（　）们都站起来鼓掌。",
+  "options": [
+   "苦",
+   "遍",
+   "观众",
+   "省",
+   "基础"
+  ],
+  "correct_answer": "观众",
+  "explanation": "观众 = үзэгч: 台下的观众们 — тайзны доорх үзэгчид. 基础 — суурь; 苦 — гашуун; 遍 — удаа (хэмжих нэр); 省 — муж.",
+  "order_index": 1,
+  "id": "hsk4-l13-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个京剧团下个月要去上海（　），票已经卖完了。",
+  "options": [
+   "吃惊",
+   "来自",
+   "普遍",
+   "稍微",
+   "演出"
+  ],
+  "correct_answer": "演出",
+  "explanation": "演出 = тоглолт хийх: 去上海演出 — Шанхайд тоглолт хийхээр явна. 来自 — …-аас ирсэн; 吃惊 — гайхах; 普遍 — түгээмэл; 稍微 — жаахан.",
+  "order_index": 2,
+  "id": "hsk4-l13-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的同屋（　）日本，他的汉语说得很不错。",
+  "options": [
+   "继续",
+   "来自",
+   "申请",
+   "讨论",
+   "基础"
+  ],
+  "correct_answer": "来自",
+  "explanation": "来自 = …-аас ирсэн: 来自日本 — Японоос ирсэн. 继续 — үргэлжлүүлэх; 基础 — суурь; 申请 — өргөдөл гаргах; 讨论 — хэлэлцэх.",
+  "order_index": 3,
+  "id": "hsk4-l13-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这篇课文很长，我已经读了三（　），还是不太明白。",
+  "options": [
+   "遍",
+   "正常",
+   "省",
+   "苦",
+   "错误"
+  ],
+  "correct_answer": "遍",
+  "explanation": "遍 = удаа (эхнээс нь дуустал нь хийх үйлийн хэмжих нэр): 读了三遍 — гурван удаа уншсан. 苦 — гашуун; 省 — муж; 错误 — алдаа; 正常 — хэвийн.",
+  "order_index": 4,
+  "id": "hsk4-l13-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "听到这个消息，大家都很（　），谁也没想到他会辞职。",
+  "options": [
+   "正常",
+   "有趣",
+   "稍微",
+   "吃惊",
+   "普遍"
+  ],
+  "correct_answer": "吃惊",
+  "explanation": "吃惊 = гайхах, цочирдох: 大家都很吃惊 — бүгд гайхсан. 有趣 — сонирхолтой; 正常 — хэвийн; 普遍 — түгээмэл; 稍微 — жаахан.",
+  "order_index": 5,
+  "id": "hsk4-l13-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他学过三年汉语，有一定的汉语（　）。",
+  "options": [
+   "纸袋",
+   "餐厅",
+   "省",
+   "基础",
+   "互联网"
+  ],
+  "correct_answer": "基础",
+  "explanation": "基础 = суурь: 汉语基础 — хятад хэлний суурь мэдлэг. 餐厅 — хоолны газар; 纸袋 — цаасан уут; 互联网 — интернет; 省 — муж.",
+  "order_index": 6,
+  "id": "hsk4-l13-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他打算向学校（　）奖学金。",
+  "options": [
+   "表演",
+   "演出",
+   "申请",
+   "大约",
+   "苦"
+  ],
+  "correct_answer": "申请",
+  "explanation": "申请 = өргөдөл гаргах: 申请奖学金 — тэтгэлэгт хүсэлт гаргах. 表演 — тоглох; 演出 — тоглолт; 苦 — гашуун; 大约 — ойролцоогоор.",
+  "order_index": 7,
+  "id": "hsk4-l13-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这部电影非常（　），我和朋友看了都笑得很开心。",
+  "options": [
+   "错误",
+   "有趣",
+   "正常",
+   "餐厅",
+   "部分"
+  ],
+  "correct_answer": "有趣",
+  "explanation": "有趣 = сонирхолтой: 电影非常有趣 — кино маш сонирхолтой. 错误 — алдаа; 部分 — хэсэг; 餐厅 — хоолны газар; 正常 — хэвийн.",
+  "order_index": 8,
+  "id": "hsk4-l13-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个句子里有一个（　），你再检查一下。",
+  "options": [
+   "错误",
+   "省",
+   "纸袋",
+   "遍",
+   "基础"
+  ],
+  "correct_answer": "错误",
+  "explanation": "错误 = алдаа, буруу: 有一个错误 — нэг алдаа байна. 基础 — суурь; 遍 — удаа; 省 — муж; 纸袋 — цаасан уут.",
+  "order_index": 9,
+  "id": "hsk4-l13-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这种茶有点儿（　），可是喝完以后觉得很舒服。",
+  "options": [
+   "由",
+   "部分",
+   "吃惊",
+   "有趣",
+   "苦"
+  ],
+  "correct_answer": "苦",
+  "explanation": "苦 = гашуун: 茶有点儿苦 — цай жаахан гашуун. 有趣 — сонирхолтой; 部分 — хэсэг; 吃惊 — гайхах; 由 — …-аар (хариуцагч).",
+  "order_index": 10,
+  "id": "hsk4-l13-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他唱京剧已经（　）六十年了。",
+  "options": [
+   "由",
+   "进行",
+   "大概",
+   "随着",
+   "偶尔"
+  ],
+  "correct_answer": "大概",
+  "explanation": "大概 = ойролцоогоор: 大概六十年 — ойролцоогоор жаран жил (тоо хэмжээний тооцоо). 偶尔 — хааяа; 由 — хариуцагчийг оруулах угтвар үг; 进行 — явуулах; 随着 — …-ийн хэрээр.",
+  "order_index": 11,
+  "id": "hsk4-l13-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我平时很忙，周末（　）去爬山。",
+  "options": [
+   "随着",
+   "从",
+   "进行",
+   "由",
+   "偶尔"
+  ],
+  "correct_answer": "偶尔",
+  "explanation": "偶尔 = хааяа: 周末偶尔去爬山 — амралтаар хааяа ууланд гардаг. 由, 进行, 随着, 从 — энд утга, бүтэц таарахгүй.",
+  "order_index": 12,
+  "id": "hsk4-l13-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这次文化节活动（　）李老师负责。",
+  "options": [
+   "随着",
+   "由",
+   "偶尔",
+   "从",
+   "进行"
+  ],
+  "correct_answer": "由",
+  "explanation": "由 = …-аар: 活动由李老师负责 — арга хэмжээг багш Ли хариуцна. «由 + хүн + 负责» бүтэц. 进行, 随着, 偶尔, 从 — энд таарахгүй.",
+  "order_index": 13,
+  "id": "hsk4-l13-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）科技的发展，人们的生活越来越方便。",
+  "options": [
+   "进行",
+   "大概",
+   "由",
+   "随着",
+   "偶尔"
+  ],
+  "correct_answer": "随着",
+  "explanation": "随着 = …-ийн хэрээр: 随着科技的发展，……越来越…… — технологи хөгжихийн хэрээр улам тохь тухтай болж байна. 由, 偶尔, 进行, 大概 — энд таарахгүй.",
+  "order_index": 14,
+  "id": "hsk4-l13-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小夏的爷爷大概唱了多少年京剧？",
+  "options": [
+   "一百年",
+   "八年",
+   "三十多年",
+   "六十多年"
+  ],
+  "correct_answer": "六十多年",
+  "explanation": "Бичвэр 1: 他8岁就开始上台演出，到现在大概唱了60多年了 — найман настайгаасаа тайзанд гарч, ойролцоогоор жаран гаруй жил дуулсан.",
+  "order_index": 15,
+  "id": "hsk4-l13-q15",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小夏为什么也喜欢听京剧？",
+  "options": [
+   "爸爸是京剧演员",
+   "受了爷爷的影响",
+   "学校有京剧课",
+   "想当京剧演员"
+  ],
+  "correct_answer": "受了爷爷的影响",
+  "explanation": "Бичвэр 1: 受了你爷爷的影响 — өвөөгийнхөө нөлөөг авсан. Багадаа өвөөгийнхөө тоглолтыг үзэж, түүнээс түүхэн үлгэр сонсдог байсан.",
+  "order_index": 16,
+  "id": "hsk4-l13-q16",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "马克是怎么学唱京剧的？",
+  "options": [
+   "在美国的剧院学",
+   "跟爷爷学",
+   "跟着电视学，一遍一遍地练习",
+   "在学校上京剧课"
+  ],
+  "correct_answer": "跟着电视学，一遍一遍地练习",
+  "explanation": "Бичвэр 2: 跟着电视学唱京剧，然后一遍一遍地练习 — зурагтыг дагаж сурч, дахин дахин давтсан.",
+  "order_index": 17,
+  "id": "hsk4-l13-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "马克为什么能比较容易地学会京剧的唱法？",
+  "options": [
+   "他学过音乐，又对京剧很感兴趣",
+   "他爷爷是京剧演员",
+   "他是中国人",
+   "他每天唱八个小时"
+  ],
+  "correct_answer": "他学过音乐，又对京剧很感兴趣",
+  "explanation": "Бичвэр 2: 我以前学习过音乐，有一些音乐基础，又对京剧……非常感兴趣 — хөгжим сурч байсан, суурьтай, мөн маш сонирхсон.",
+  "order_index": 18,
+  "id": "hsk4-l13-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "李老师为什么想举办中国传统文化节活动？",
+  "options": [
+   "学校里没有别的活动",
+   "校长要求他办",
+   "想去春游",
+   "留学生不了解中国文化，会影响正常交流"
+  ],
+  "correct_answer": "留学生不了解中国文化，会影响正常交流",
+  "explanation": "Бичвэр 3: 外国留学生不了解中国文化，……影响……正常交流 — оюутнууд Хятадын соёлыг мэдэхгүй тул хэвийн харилцаанд нөлөөлдөг.",
+  "order_index": 19,
+  "id": "hsk4-l13-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "校长为什么让李老师继续负责这次活动？",
+  "options": [
+   "上次的春游活动办得很有趣，大家玩儿得很开心",
+   "校长不想负责",
+   "李老师没有别的工作",
+   "李老师是新老师"
+  ],
+  "correct_answer": "上次的春游活动办得很有趣，大家玩儿得很开心",
+  "explanation": "Бичвэр 3: 上次的春游活动你们办得非常有趣，大家都玩儿得很开心，这次活动继续由你负责 — өмнөх аялал амжилттай болсон тул.",
+  "order_index": 20,
+  "id": "hsk4-l13-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "关于使用筷子的调查，结果是什么？",
+  "options": [
+   "六个中国人中有五个用错筷子",
+   "每个中国人都会正确使用筷子",
+   "每六个中国人中就有一个用错筷子",
+   "一半的中国人用错筷子"
+  ],
+  "correct_answer": "每六个中国人中就有一个用错筷子",
+  "explanation": "Бичвэр 4: 每六个中国人中就有一个使用筷子的方法是错误的 — зургаан хятад хүн тутмын нэг нь савхыг буруу барьдаг.",
+  "order_index": 21,
+  "id": "hsk4-l13-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "茶最早在中国被当作什么？",
+  "options": [
+   "一种食物",
+   "一种药",
+   "解渴的饮料",
+   "凉茶"
+  ],
+  "correct_answer": "一种药",
+  "explanation": "Бичвэр 5: 最早的时候，茶只是被当作一种药，而不是饮料 — анх цайг эм гэж үздэг байсан, ундаа биш.",
+  "order_index": 22,
+  "id": "hsk4-l13-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“他8岁就开始上台演出，到现在大概唱了60多年了”中的“大概”表示什么？",
+  "options": [
+   "Үйлдэл хэзээ ч болоогүйг",
+   "Тоо хэмжээний ойролцоо тооцоо",
+   "Хүсэл эрмэлзлийг",
+   "Огт мэдэхгүй байгааг"
+  ],
+  "correct_answer": "Тоо хэмжээний ойролцоо тооцоо",
+  "explanation": "«大概唱了60多年» — «ойролцоогоор жаран гаруй жил». «大概» нь тоо хэмжээ, цагийг нарийн биш тооцоолохыг заана.",
+  "order_index": 23,
+  "id": "hsk4-l13-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子用“偶尔”最合适？",
+  "options": [
+   "我偶尔去图书馆，一个月只去一两次。",
+   "我偶尔从来不去图书馆。",
+   "我偶尔去图书馆三十次。",
+   "我偶尔每天都去图书馆。"
+  ],
+  "correct_answer": "我偶尔去图书馆，一个月只去一两次。",
+  "explanation": "«偶尔» = хааяа, маш цөөн удаа: «сард нэг хоёр удаа» гэсэн утгатай таарна. «每天», «三十次», «从来不» нь «偶尔»-тэй зөрчилдөнө.",
+  "order_index": 24,
+  "id": "hsk4-l13-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子用“进行”是对的？",
+  "options": [
+   "我进行去商店。",
+   "他每天早上进行跑步。",
+   "我们对这个问题进行了讨论。",
+   "我们正在进行吃饭。"
+  ],
+  "correct_answer": "我们对这个问题进行了讨论。",
+  "explanation": "«对这个问题进行了讨论» — зөв: тусагдахуун «对»-ээр гарч, «进行» + хоёр үетэй албан үйл үг (讨论). 吃饭, 跑步 — энгийн өдөр тутмын үйлдэл, «进行» тохирохгүй.",
+  "order_index": 25,
+  "id": "hsk4-l13-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“随着人们对茶的认识的加深”中的“随着”表示什么？",
+  "options": [
+   "Үйлдэл маш цөөн тохиолддог",
+   "Тоо хэмжээг ойролцоогоор тооцдог",
+   "Хэн нэгэн ажлыг хариуцдаг",
+   "Нэг зүйл нөгөө зүйл тохиолдох нөхцөл болдог"
+  ],
+  "correct_answer": "Нэг зүйл нөгөө зүйл тохиолдох нөхцөл болдог",
+  "explanation": "«随着……» нь «…-ийн хэрээр, …-х тусам»: хүмүүсийн мэдлэг гүнзгийрэхийн хэрээр цайг ундаа болгох болсон. Хариуцагч — «由», цөөн тохиолдол — «偶尔», тооцоо — «大概».",
+  "order_index": 26,
+  "id": "hsk4-l13-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小李刚到中国的时候，不会用筷子，吃饭很不方便。后来他每天练习，现在已经用得很好了。\n问：小李现在用筷子用得怎么样？",
+  "options": [
+   "还是不会用",
+   "用得不太好",
+   "已经用得很好了",
+   "不想用筷子"
+  ],
+  "correct_answer": "已经用得很好了",
+  "explanation": "Эшлэл: 现在已经用得很好了 — одоо савхаа маш сайн хэрэглэдэг болсон. Эхэндээ л хэцүү байсан.",
+  "order_index": 27,
+  "id": "hsk4-l13-q27",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "张叔叔的爷爷是京剧演员，所以他从小就喜欢京剧。现在他工作很忙，只是偶尔去剧院看一场演出。\n问：张叔叔现在常常去剧院吗？",
+  "options": [
+   "从来不去",
+   "不常去，偶尔去",
+   "每天都去",
+   "每个星期去三次"
+  ],
+  "correct_answer": "不常去，偶尔去",
+  "explanation": "Эшлэл: 只是偶尔去剧院看一场演出 — зөвхөн хааяа театрт очиж нэг тоглолт үздэг. Ажил ихтэй тул байнга очдоггүй.",
+  "order_index": 28,
+  "id": "hsk4-l13-q28",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "随着生活水平的提高，越来越多的中国年轻人喜欢喝咖啡，但是他们也没有忘记喝茶。很多年轻人说，喝咖啡是为了工作，喝茶是为了放松。\n问：很多年轻人为什么喝茶？",
+  "options": [
+   "为了放松",
+   "为了工作",
+   "因为茶很便宜",
+   "因为不喜欢咖啡"
+  ],
+  "correct_answer": "为了放松",
+  "explanation": "Эшлэл: 喝茶是为了放松 — цай уух нь амрахын тулд. Кофе нь ажлын тулд гэж хэлж байна.",
+  "order_index": 29,
+  "id": "hsk4-l13-q29",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "今年的汉语节活动由王老师负责。她打算请学生表演节目，还准备了筷子比赛和茶会。\n问：今年的汉语节活动由谁负责？",
+  "options": [
+   "学生们",
+   "外国留学生",
+   "校长",
+   "王老师"
+  ],
+  "correct_answer": "王老师",
+  "explanation": "Эшлэл: 活动由王老师负责 — арга хэмжээг багш Ван хариуцна. «由 + хүн + 负责» бүтэц.",
+  "order_index": 30,
+  "id": "hsk4-l13-q30",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 偶尔 / 跟中国人 / 一起唱京剧",
+  "options": [
+   "他一起唱京剧偶尔跟中国人。",
+   "偶尔他一起唱京剧跟中国人。",
+   "他偶尔跟中国人一起唱京剧。"
+  ],
+  "correct_answer": "他偶尔跟中国人一起唱京剧。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (他) + 偶尔 + 跟中国人 + 一起唱京剧. «偶尔» нь үйл үг, угтвар хэллэгийн өмнө орно.",
+  "order_index": 31,
+  "id": "hsk4-l13-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 这次活动 / 由 / 李老师 / 负责",
+  "options": [
+   "由这次活动负责李老师。",
+   "这次活动由李老师负责。",
+   "这次活动李老师由负责。"
+  ],
+  "correct_answer": "这次活动由李老师负责。",
+  "explanation": "Дараалал: сэдэв (这次活动) + 由 + хүн (李老师) + 负责. «由 + хүн» нь үйл үгийн өмнө орно.",
+  "order_index": 32,
+  "id": "hsk4-l13-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 对这个问题 / 我们 / 进行了 / 调查",
+  "options": [
+   "我们对这个问题进行了调查。",
+   "对这个问题进行了我们调查。",
+   "我们进行了对这个问题调查。"
+  ],
+  "correct_answer": "我们对这个问题进行了调查。",
+  "explanation": "Дараалал: 我们 + 对这个问题 + 进行了 + 调查. «对 + зүйл + 进行 + хоёр үетэй үйл үг» бүтэц.",
+  "order_index": 33,
+  "id": "hsk4-l13-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 随着 / 经济的发展 / 人们的生活 / 越来越好",
+  "options": [
+   "人们的生活越来越好经济的发展随着。",
+   "随着经济的发展，人们的生活越来越好。",
+   "随着越来越好经济的发展，人们的生活。"
+  ],
+  "correct_answer": "随着经济的发展，人们的生活越来越好。",
+  "explanation": "Дараалал: 随着 + 经济的发展, + үр дүн (人们的生活越来越好). «随着» өгүүлбэрийн эхэнд, нөхцөлөө «……的发展» хэлбэрээр авна.",
+  "order_index": 34,
+  "id": "hsk4-l13-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 演员们 / 在台上 / 一遍一遍地 / 练习",
+  "options": [
+   "演员们在台上一遍一遍地练习。",
+   "演员们练习在台上一遍一遍地。",
+   "在台上练习演员们一遍一遍地。"
+  ],
+  "correct_answer": "演员们在台上一遍一遍地练习。",
+  "explanation": "Дараалал: 演员们 + 在台上 (газар) + 一遍一遍地 (арга барил) + 练习. 一遍一遍地 — дахин дахин.",
+  "order_index": 35,
+  "id": "hsk4-l13-q35",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 这种凉茶 / 稍微 / 有点儿 / 苦",
+  "options": [
+   "这种凉茶有点儿稍微苦。",
+   "稍微这种凉茶苦有点儿。",
+   "这种凉茶稍微有点儿苦。"
+  ],
+  "correct_answer": "这种凉茶稍微有点儿苦。",
+  "explanation": "Дараалал: 这种凉茶 + 稍微 + 有点儿 + 苦. «稍微有点儿 + тэмдэг нэр» — жаахан … гэсэн хэлбэр. 苦 — гашуун.",
+  "order_index": 36,
+  "id": "hsk4-l13-q36",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
