@@ -35,6 +35,8 @@ export function CapacitorBridge() {
         });
         removeListener = () => void handle.remove();
         await SplashScreen.hide();
+        // Мэдэгдлийн зөвшөөрөл өмнө нь өгсөн бол token-оо шинэчилнэ (асуулт гаргахгүй).
+        void import("@/lib/push/native-push-client").then((m) => m.refreshNativePushIfGranted());
       } catch {
         // Native plugin байхгүй бол чимээгүй алгасна.
       }

@@ -51,6 +51,114 @@ export function effectiveStatus(q: ClassQuiz, now: number = Date.now()): QuizSta
 }
 
 /* ------------------------------------------------------------------ */
+/* Багшийн өөрийн асуулт (migration 093)                                */
+/* ------------------------------------------------------------------ */
+
+export const TEACHER_CUSTOM_LESSON_ID = "teacher-custom";
+
+type AnyQuestionRow = {
+  id: number;
+  lesson_id: string;
+  question: string;
+  options: unknown;
+  correct_answer: string;
+};
+
+/** Өгсөн ID-уудаас багшийн зохиосон асуултуудыг уншина. 093 ажиллаагүй бол хоосон. */
+async function fetchTeacherQuestionsByIds(ids: number[]): Promise<AnyQuestionRow[]> {
+  if (!supabase || ids.length === 0) return [];
+  const { data, error } = await supabase
+    .from("teacher_questions")
+    .select("id, question, options, correct_answer")
+    .in("id", ids);
+  if (error || !data) return [];
+  return data.map((r) => ({
+    id: Number(r.id),
+    lesson_id: TEACHER_CUSTOM_LESSON_ID,
+    question: String(r.question ?? ""),
+    options: r.options,
+    correct_answer: String(r.correct_answer ?? ""),
+  }));
+}
+
+/** Нэвтэрсэн багшийн өөрийн зохиосон бүх асуулт (шинэ нь эхэндээ). */
+export async function listMyTeacherQuestions(): Promise<{
+  data: QuizQuestionOption[];
+  /** 093 migration ажиллаагүй. */
+  missing: boolean;
+}> {
+  if (!hasSupabaseConfig || !supabase) return { data: [], missing: false };
+  const { userId } = await getAuthenticatedUserId();
+  if (!userId) return { data: [], missing: false };
+  const { data, error } = await supabase
+    .from("teacher_questions")
+    .select("id, question, options, correct_answer, created_at")
+    .eq("teacher_user_id", userId)
+    .order("created_at", { ascending: false })
+    .limit(500);
+  if (error) {
+    return {
+      data: [],
+      missing: /does not exist|schema cache|Could not find|42P01/i.test(
+        `${error.code} ${error.message}`
+      ),
+    };
+  }
+  return {
+    data: (data ?? []).map((r, i) => ({
+      id: Number(r.id),
+      lessonId: TEACHER_CUSTOM_LESSON_ID,
+      question: String(r.question ?? ""),
+      options: parseOptions(r.options),
+      correctAnswer: String(r.correct_answer ?? ""),
+      type: "choice",
+      orderIndex: i,
+    })),
+    missing: false,
+  };
+}
+
+export async function addTeacherQuestion(input: {
+  question: string;
+  options: string[];
+  correctAnswer: string;
+}): Promise<QuizResult<QuizQuestionOption>> {
+  if (!hasSupabaseConfig || !supabase) return { data: null, error: NOT_CONFIGURED };
+  const options = input.options.map((o) => o.trim()).filter(Boolean);
+  const correct = input.correctAnswer.trim();
+  if (!input.question.trim()) return { data: null, error: "Асуултаа бичнэ үү." };
+  if (options.length < 2) return { data: null, error: "Дор хаяж 2 хариулт бичнэ үү." };
+  if (new Set(options).size !== options.length) {
+    return { data: null, error: "Хариултууд давхардаж болохгүй." };
+  }
+  if (!options.includes(correct)) return { data: null, error: "Зөв хариултыг сонгоно уу." };
+  const { data, error } = await supabase
+    .from("teacher_questions")
+    .insert({ question: input.question.trim(), options, correct_answer: correct })
+    .select("id, question, options, correct_answer")
+    .single();
+  if (error) return { data: null, error: error.message };
+  return {
+    data: {
+      id: Number(data.id),
+      lessonId: TEACHER_CUSTOM_LESSON_ID,
+      question: String(data.question),
+      options: parseOptions(data.options),
+      correctAnswer: String(data.correct_answer),
+      type: "choice",
+      orderIndex: 0,
+    },
+    error: null,
+  };
+}
+
+export async function deleteTeacherQuestion(id: number): Promise<boolean> {
+  if (!supabase) return false;
+  const { error } = await supabase.from("teacher_questions").delete().eq("id", id);
+  return !error;
+}
+
+/* ------------------------------------------------------------------ */
 /* Асуулт сонголт                                                      */
 /* ------------------------------------------------------------------ */
 
@@ -316,7 +424,8 @@ export async function getQuizResults(
     : null;
 
   const submittedAttempts = (attemptsRes.data ?? []).filter((a) => a.submitted_at);
-  const questions: QuizQuestionStat[] = (questionsRes.data ?? [])
+  const customRows = await fetchTeacherQuestionsByIds(quiz.questionIds);
+  const questions: QuizQuestionStat[] = [...(questionsRes.data ?? []), ...customRows]
     .map((q) => {
       let attemptsCount = 0;
       let wrong = 0;
@@ -399,7 +508,13 @@ export async function getQuizForStudent(quizId: string): Promise<
     .select("id, question, options")
     .in("id", quiz.questionIds.length ? quiz.questionIds : [-1]);
   if (qErr) return { data: null, error: qErr.message };
-  const byId = new Map((qs ?? []).map((q) => [Number(q.id), q]));
+  const custom = await fetchTeacherQuestionsByIds(quiz.questionIds);
+  const byId = new Map(
+    [...(qs ?? []), ...custom].map((q) => [
+      Number(q.id),
+      { id: q.id, question: q.question, options: q.options },
+    ])
+  );
   const questions: StudentQuizQuestion[] = quiz.questionIds
     .map((id) => byId.get(id))
     .filter((q): q is NonNullable<typeof q> => Boolean(q))

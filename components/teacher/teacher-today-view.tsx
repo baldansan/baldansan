@@ -595,7 +595,56 @@ export function TeacherTodayView() {
                   </Link>
                 </div>
               ) : (
-                <div className="overflow-x-auto rounded-2xl bg-white ring-1 ring-slate-200">
+                <>
+                {/* Утас: сурагч бүр нэг карт */}
+                <ul className="flex flex-col gap-2 md:hidden">
+                  {rows.map((s) => {
+                    const meta = STATUS_META[statusOf(s)];
+                    return (
+                      <li key={s.userId} className="rounded-2xl bg-white p-3 ring-1 ring-slate-200">
+                        <div className="flex items-start justify-between gap-2">
+                          <Link
+                            href={`/teacher/classes/${selected.id}/students/${s.userId}`}
+                            className="min-w-0 truncate text-base font-bold text-slate-900"
+                            translate="no"
+                          >
+                            {s.name}
+                          </Link>
+                          <span className="flex shrink-0 items-center gap-1.5">
+                            <span
+                              className={`whitespace-nowrap rounded-full px-2 py-0.5 text-xs font-semibold ring-1 ${meta.chip}`}
+                            >
+                              {meta.label}
+                            </span>
+                            <GradeChip grade={s.grade} />
+                          </span>
+                        </div>
+                        <p className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-600">
+                          <span>
+                            🕒 {s.lastActiveAt ? formatLastActive(s.lastActiveAt) : "Огт ороогүй"}
+                          </span>
+                          <span>
+                            ✔ <Pct value={s.accuracy} />
+                          </span>
+                          <span>
+                            📝{" "}
+                            {s.assignmentsAssigned > 0
+                              ? `${s.assignmentsCompleted}/${s.assignmentsAssigned}`
+                              : "—"}
+                          </span>
+                          <WeakAreaChip area={s.weakArea} />
+                        </p>
+                        <Link
+                          href={`/teacher/assignments/new?classroom=${selected.id}&student=${s.userId}`}
+                          className="mt-2 inline-flex rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-200"
+                        >
+                          Даалгавар өгөх
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <div className="hidden overflow-x-auto rounded-2xl bg-white ring-1 ring-slate-200 md:block">
                   <table className="w-full min-w-[780px] text-sm">
                     <thead>
                       <tr className="border-b border-slate-200 text-left text-xs text-slate-500">
@@ -664,6 +713,7 @@ export function TeacherTodayView() {
                     </tbody>
                   </table>
                 </div>
+                </>
               )}
               {unlinked.length > 0 && students.length > 0 ? (
                 <p className="mt-2 text-xs text-slate-500">

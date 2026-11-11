@@ -4,6 +4,8 @@ import {
   hasServiceRoleSupabaseConfig,
 } from "@/lib/supabase/service-role-server";
 import { isWebPushConfigured, sendWebPush } from "@/lib/server/push/web-push-client";
+import { runAssignmentSchedulesServer } from "@/lib/server/assignment-schedules-server";
+import { sendPushToUsers } from "@/lib/server/push/send-to-users";
 
 export const dynamic = "force-dynamic";
 
@@ -41,6 +43,25 @@ export async function GET(request: Request) {
       { ok: false, skipped: true, reason: "Service role Supabase not configured" },
       { status: 200 }
     );
+  }
+
+  // Долоо хоног бүрийн автомат даалгавар (091) — мэдэгдлийн тохиргооноос үл хамаарч ажиллана.
+  const scheduleService = createServiceRoleSupabaseClient();
+  let schedules: Awaited<ReturnType<typeof runAssignmentSchedulesServer>> | null = null;
+  if (scheduleService) {
+    try {
+      schedules = await runAssignmentSchedulesServer(scheduleService);
+      for (const n of schedules.notify) {
+        await sendPushToUsers(scheduleService, n.userIds, {
+          title: "📌 Багшийн шинэ даалгавар",
+          body: n.title,
+          url: "/home",
+        });
+      }
+      console.log("[cron] assignment schedules:", schedules.due, "due,", schedules.created, "created");
+    } catch (e) {
+      console.error("[cron] assignment schedules failed:", e);
+    }
   }
 
   if (!isWebPushConfigured()) {

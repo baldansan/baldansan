@@ -46,6 +46,7 @@ export function TeacherAssignmentBanner({ loggedIn }: { loggedIn: boolean }) {
   const [pending, setPending] = useState<StudentAssignment[]>([]);
   // Ангид харьяалагддаг, мэдэгдэл асаагаагүй сурагчид «мэдэгдэл авах» товч санал болгоно.
   const [askPush, setAskPush] = useState(false);
+  const [inClass, setInClass] = useState(false);
   const [pushState, setPushState] = useState<"idle" | "busy" | "on" | "denied">("idle");
 
   useEffect(() => {
@@ -57,13 +58,20 @@ export function TeacherAssignmentBanner({ loggedIn }: { loggedIn: boolean }) {
         const { data } = await getStudentAssignments();
         if (!alive) return;
         if ((data ?? []).length > 0) {
-          const push = await import("@/lib/push/push-client");
-          if (
-            alive &&
-            push.getPushAvailability() === "ready" &&
-            (await push.getNotificationPermissionState()) === "default"
-          ) {
-            setAskPush(true);
+          setInClass(true);
+          const native = await import("@/lib/push/native-push-client");
+          if (native.isNativeApp()) {
+            // Store-ын апп: жинхэнэ мэдэгдэл.
+            if (alive && (await native.getNativePushPermission()) === "prompt") setAskPush(true);
+          } else {
+            const push = await import("@/lib/push/push-client");
+            if (
+              alive &&
+              push.getPushAvailability() === "ready" &&
+              (await push.getNotificationPermissionState()) === "default"
+            ) {
+              setAskPush(true);
+            }
           }
         }
         if (!alive) return;
@@ -86,8 +94,10 @@ export function TeacherAssignmentBanner({ loggedIn }: { loggedIn: boolean }) {
 
   async function enablePush() {
     setPushState("busy");
-    const push = await import("@/lib/push/push-client");
-    const res = await push.subscribeToPush();
+    const native = await import("@/lib/push/native-push-client");
+    const res = native.isNativeApp()
+      ? await native.enableNativePush()
+      : await (await import("@/lib/push/push-client")).subscribeToPush();
     setPushState(res.ok ? "on" : "denied");
   }
 
@@ -105,8 +115,24 @@ export function TeacherAssignmentBanner({ loggedIn }: { loggedIn: boolean }) {
       </button>
     ) : null;
 
+  const standingLink = inClass ? (
+    <Link
+      href="/my-standing"
+      className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-slate-200"
+    >
+      📊 {tr(locale, "Миний дүн — багш намайг яаж харж байна?")} →
+    </Link>
+  ) : null;
+
   if (!loggedIn) return null;
-  if (pending.length === 0) return pushPrompt;
+  if (pending.length === 0) {
+    return pushPrompt || standingLink ? (
+      <section className="flex flex-col gap-2">
+        {standingLink}
+        {pushPrompt}
+      </section>
+    ) : null;
+  }
 
   const shown = pending.slice(0, 2);
   const rest = pending.length - shown.length;
@@ -164,6 +190,7 @@ export function TeacherAssignmentBanner({ loggedIn }: { loggedIn: boolean }) {
           {tr(locale, "Бас")} {rest} {tr(locale, "даалгавар байна — бүгдийг харах")} →
         </Link>
       ) : null}
+      {standingLink}
       {pushPrompt}
     </section>
   );

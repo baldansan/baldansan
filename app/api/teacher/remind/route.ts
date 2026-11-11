@@ -5,7 +5,7 @@ import {
   createServiceRoleSupabaseClient,
   hasServiceRoleSupabaseConfig,
 } from "@/lib/supabase/service-role-server";
-import { isWebPushConfigured, sendWebPush } from "@/lib/server/push/web-push-client";
+import { sendPushToUsers } from "@/lib/server/push/send-to-users";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -72,43 +72,17 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true, configured: true, targets: 0, reached: 0 });
   }
 
-  if (!hasServiceRoleSupabaseConfig || !isWebPushConfigured()) {
-    return NextResponse.json({ ok: true, configured: false, targets: targets.length, reached: 0 });
-  }
-  const service = createServiceRoleSupabaseClient();
+  const service = hasServiceRoleSupabaseConfig ? createServiceRoleSupabaseClient() : null;
   if (!service) {
     return NextResponse.json({ ok: true, configured: false, targets: targets.length, reached: 0 });
   }
 
-  const { data: subs, error: subError } = await service
-    .from("push_subscriptions")
-    .select("id, user_id, endpoint, keys")
-    .in("user_id", targets);
-  if (subError) {
-    return NextResponse.json({ ok: true, configured: false, targets: targets.length, reached: 0 });
-  }
-
-  const reachedUsers = new Set<string>();
-  for (const sub of (subs ?? []) as {
-    id: string;
-    user_id: string;
-    endpoint: string;
-    keys: { p256dh: string; auth: string };
-  }[]) {
-    const result = await sendWebPush(
-      { endpoint: sub.endpoint, keys: sub.keys },
-      { title, body, url }
-    );
-    if (result.ok) reachedUsers.add(String(sub.user_id));
-    else if (result.statusCode === 410 || result.statusCode === 404) {
-      await service.from("push_subscriptions").delete().eq("id", sub.id);
-    }
-  }
-
+  // Хөтөч, Android апп, iPhone апп — сурагчийн бүх төхөөрөмж рүү.
+  const result = await sendPushToUsers(service, targets, { title, body, url });
   return NextResponse.json({
     ok: true,
-    configured: true,
+    configured: result.configured,
     targets: targets.length,
-    reached: reachedUsers.size,
+    reached: result.reached.size,
   });
 }

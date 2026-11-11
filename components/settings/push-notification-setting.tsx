@@ -21,8 +21,18 @@ export function PushNotificationSetting() {
   const [message, setMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    setAvailable(getPushAvailability() === "ready");
-    void getNotificationPermissionState().then(setPermission);
+    void (async () => {
+      const native = await import("@/lib/push/native-push-client");
+      if (native.isNativePushEnabled()) {
+        // Store-ын апп: жинхэнэ мэдэгдэл.
+        const p = await native.getNativePushPermission();
+        setAvailable(true);
+        setPermission(p === "granted" ? "granted" : p === "denied" ? "denied" : "default");
+        return;
+      }
+      setAvailable(getPushAvailability() === "ready");
+      setPermission(await getNotificationPermissionState());
+    })();
   }, []);
 
   if (!available) return null;
@@ -30,6 +40,18 @@ export function PushNotificationSetting() {
   async function handleEnable() {
     setBusy(true);
     setMessage(null);
+    const native = await import("@/lib/push/native-push-client");
+    if (native.isNativePushEnabled()) {
+      const r = await native.enableNativePush();
+      setBusy(false);
+      setPermission(r.ok ? "granted" : "denied");
+      setMessage(
+        r.ok
+          ? tr(locale, "Мэдэгдэл идэвхжлээ ✓")
+          : tr(locale, "Идэвхжүүлж чадсангүй — дахин оролдоно уу.")
+      );
+      return;
+    }
     const result = await subscribeToPush();
     setBusy(false);
     setPermission(await getNotificationPermissionState());

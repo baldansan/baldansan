@@ -5,6 +5,7 @@ import { AdminSidebar } from "@/components/admin/admin-sidebar";
 import { AdminTopbar } from "@/components/admin/admin-topbar";
 import { PageHelpStrip } from "@/components/workspace/page-help-strip";
 import { ScheduleRunner } from "@/components/workspace/schedule-runner";
+import { WorkspaceBottomNav } from "@/components/workspace/workspace-bottom-nav";
 import { WorkspaceContext } from "@/components/workspace/workspace-context";
 
 /**
@@ -32,10 +33,11 @@ export function AdminLayoutShell({
         <AdminSidebar />
         <div className="flex min-w-0 flex-1 flex-col">
           <AdminTopbar />
-          <main className="admin-main flex-1 overflow-x-hidden">
+          <main className="admin-main flex-1 overflow-x-hidden pb-24 lg:pb-6">
             {guard ? <AdminGuard>{body}</AdminGuard> : body}
           </main>
         </div>
+        <WorkspaceBottomNav />
       </div>
     </WorkspaceContext.Provider>
   );

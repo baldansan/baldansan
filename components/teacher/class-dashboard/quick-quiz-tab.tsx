@@ -3,7 +3,10 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { C, StatTile } from "@/components/charts";
 import {
+  addTeacherQuestion,
   autoPickQuestions,
+  deleteTeacherQuestion,
+  listMyTeacherQuestions,
   closeClassQuiz,
   createClassQuiz,
   deleteClassQuiz,
@@ -22,7 +25,7 @@ import { getSupabaseAssignableLessons, type AssignableLesson } from "@/lib/supab
 import { Pct } from "./shared";
 
 const POLL_MS = 5000;
-const MIN_Q = 10;
+const MIN_Q = 3;
 const MAX_Q = 20;
 
 const STATUS_LABEL = { draft: "Ноорог", open: "Нээлттэй", closed: "Хаагдсан" } as const;
@@ -68,6 +71,55 @@ function QuizCreator({
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // --- Багшийн өөрийн асуултууд (093) ---
+  const [myQuestions, setMyQuestions] = useState<QuizQuestionOption[]>([]);
+  const [myMissing, setMyMissing] = useState(false);
+  const [showOwn, setShowOwn] = useState(false);
+  const [newQ, setNewQ] = useState("");
+  const [newOpts, setNewOpts] = useState<string[]>(["", "", "", ""]);
+  const [newCorrect, setNewCorrect] = useState(0);
+  const [addErr, setAddErr] = useState<string | null>(null);
+  const [adding, setAdding] = useState(false);
+
+  useEffect(() => {
+    let off = false;
+    void listMyTeacherQuestions().then((r) => {
+      if (off) return;
+      setMyQuestions(r.data);
+      setMyMissing(r.missing);
+    });
+    return () => {
+      off = true;
+    };
+  }, []);
+
+  async function addOwn() {
+    setAdding(true);
+    setAddErr(null);
+    const res = await addTeacherQuestion({
+      question: newQ,
+      options: newOpts,
+      correctAnswer: newOpts[newCorrect] ?? "",
+    });
+    setAdding(false);
+    if (!res.data) {
+      setAddErr(res.error ?? "Хадгалж чадсангүй.");
+      return;
+    }
+    const added = res.data;
+    setMyQuestions((p) => [added, ...p]);
+    setPicked((p) => [...p, added.id]);
+    setNewQ("");
+    setNewOpts(["", "", "", ""]);
+    setNewCorrect(0);
+  }
+
+  async function removeOwn(id: number) {
+    if (!(await deleteTeacherQuestion(id))) return;
+    setMyQuestions((p) => p.filter((q) => q.id !== id));
+    setPicked((p) => p.filter((x) => x !== id));
+  }
+
   useEffect(() => {
     let off = false;
     void getSupabaseAssignableLessons()
@@ -102,13 +154,20 @@ function QuizCreator({
       return;
     }
     setQuestions(res.data);
-    setPicked(autoPickQuestions(res.data, Math.min(count, res.data.length)));
+    // Өөрийн зохиосон асуултын сонголтыг хэвээр үлдээнэ.
+    setPicked((prev) => [
+      ...autoPickQuestions(res.data ?? [], Math.min(count, (res.data ?? []).length)),
+      ...prev.filter((id) => myQuestions.some((q) => q.id === id)),
+    ]);
     if (res.data.length === 0) setError("Сонгосон хичээлд сорилд тохирох (сонголттой) асуулт алга.");
   }
 
   function autoPick(n: number) {
     setCount(n);
-    setPicked(autoPickQuestions(questions, Math.min(n, questions.length)));
+    setPicked((prev) => [
+      ...autoPickQuestions(questions, Math.min(n, questions.length)),
+      ...prev.filter((id) => myQuestions.some((q) => q.id === id)),
+    ]);
   }
 
   const toggleQ = (id: number) =>
@@ -120,7 +179,10 @@ function QuizCreator({
     setSaving(true);
     setError(null);
     // Сонгосон дарааллаар (хичээл → асуултын дараалал) хадгална.
-    const order = new Map(questions.map((q, i) => [q.id, i]));
+    // Хичээлийн асуултууд эхэндээ, багшийн өөрийн асуултууд төгсгөлд нь.
+    const order = new Map(
+      [...questions, ...[...myQuestions].reverse()].map((q, i) => [q.id, i])
+    );
     const ids = [...picked].sort((a, b) => (order.get(a) ?? 0) - (order.get(b) ?? 0));
     const usedLessons = [...new Set(questions.filter((q) => ids.includes(q.id)).map((q) => q.lessonId))];
     const res = await createClassQuiz({
@@ -184,6 +246,118 @@ function QuizCreator({
         >
           {loadingQ ? "Татаж байна…" : `Асуулт татах (${lessonIds.length} хичээл)`}
         </button>
+      </div>
+
+      {/* Багшийн өөрийн асуулт */}
+      <div className="rounded-xl border border-sky-200 bg-sky-50/60 p-3">
+        <button
+          type="button"
+          onClick={() => setShowOwn((v) => !v)}
+          aria-expanded={showOwn}
+          className="flex w-full items-center justify-between text-left text-sm font-semibold text-slate-800"
+        >
+          <span>
+            ✍️ Өөрийн асуулт нэмэх{" "}
+            <span className="font-normal text-slate-500">
+              ({myQuestions.length} асуулт
+              {myQuestions.filter((q) => picked.includes(q.id)).length > 0
+                ? `, ${myQuestions.filter((q) => picked.includes(q.id)).length} сонгосон`
+                : ""}
+              )
+            </span>
+          </span>
+          <span className="text-slate-400">{showOwn ? "▴" : "▾"}</span>
+        </button>
+        {showOwn ? (
+          myMissing ? (
+            <p className="mt-2 text-xs text-amber-800">
+              Энэ боломж 093_teacher_questions.sql файлыг Supabase дээр ажиллуулсны дараа нээгдэнэ.
+            </p>
+          ) : (
+            <div className="mt-3 flex flex-col gap-3">
+              <p className="text-xs leading-5 text-slate-600">
+                Асуултаа бичээд хариултуудаа оруулна. Зөв хариултын өмнөх дугуйг дарж тэмдэглэнэ.
+                Хадгалсан асуулт таны санд үлдэж, дараагийн сорилуудад дахин ашиглагдана.
+              </p>
+              <textarea
+                value={newQ}
+                onChange={(e) => setNewQ(e.target.value)}
+                rows={2}
+                placeholder="Асуулт. Жишээ: «谢谢» гэдэг үгийн утга юу вэ?"
+                className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm"
+              />
+              <div className="grid gap-2 sm:grid-cols-2">
+                {newOpts.map((opt, i) => (
+                  <label
+                    key={i}
+                    className={`flex items-center gap-2 rounded-lg border bg-white px-2 py-1.5 text-sm ${
+                      newCorrect === i ? "border-emerald-500 ring-1 ring-emerald-300" : "border-slate-300"
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="own-correct"
+                      checked={newCorrect === i}
+                      onChange={() => setNewCorrect(i)}
+                      aria-label={`${i + 1}-р хариулт зөв`}
+                    />
+                    <input
+                      value={opt}
+                      onChange={(e) =>
+                        setNewOpts((p) => p.map((x, k) => (k === i ? e.target.value : x)))
+                      }
+                      placeholder={`${i + 1}-р хариулт${i < 2 ? "" : " (заавал биш)"}`}
+                      className="min-w-0 flex-1 bg-transparent outline-none"
+                    />
+                    {newCorrect === i ? (
+                      <span className="text-xs font-semibold text-emerald-700">зөв</span>
+                    ) : null}
+                  </label>
+                ))}
+              </div>
+              {addErr ? <p className="text-xs text-red-700">{addErr}</p> : null}
+              <button
+                type="button"
+                disabled={adding}
+                onClick={() => void addOwn()}
+                className="self-start rounded-full bg-sky-600 px-4 py-2 text-xs font-semibold text-white disabled:opacity-60"
+              >
+                {adding ? "Хадгалж байна…" : "+ Асуултыг хадгалж сорилд нэмэх"}
+              </button>
+
+              {myQuestions.length > 0 ? (
+                <ul className="max-h-56 overflow-y-auto rounded-lg border border-slate-200 bg-white p-2">
+                  {myQuestions.map((q) => (
+                    <li key={q.id} className="flex items-start gap-2 rounded px-2 py-1 text-sm hover:bg-slate-50">
+                      <input
+                        type="checkbox"
+                        className="mt-1"
+                        checked={picked.includes(q.id)}
+                        onChange={() => toggleQ(q.id)}
+                        aria-label="Сорилд оруулах"
+                      />
+                      <span className="min-w-0 flex-1" translate="no">
+                        <span className="line-clamp-2">{q.question}</span>
+                        <span className="text-xs text-slate-500">
+                          {q.options
+                            .map((o) => (o === q.correctAnswer ? `✓ ${o}` : o))
+                            .join(" · ")}
+                        </span>
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => void removeOwn(q.id)}
+                        className="shrink-0 text-xs font-semibold text-red-600 hover:underline"
+                      >
+                        Устгах
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+          )
+        ) : null}
       </div>
 
       {questions.length > 0 ? (
