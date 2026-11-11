@@ -1,0 +1,30 @@
+{
+  "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+  "courseType": "chinese-hsk",
+  "courseId": "hsk4",
+  "lessonId": "hsk4-l16",
+  "hskLevel": 4,
+  "lessonNumber": 16,
+  "bookPart": "B",
+  "lessonProfile": "hsk4-dialogue-shorttext-exam-workbook",
+  "lessonType": "hsk4-dialogue-shorttext-exam-workbook",
+  "language": "zh-MN",
+  "targetLanguage": "zh",
+  "uiLanguage": "mn",
+  "title": "生活可以更美好",
+  "mongolianTitle": "Амьдрал илүү сайхан байж болно — амьдралын ухаан, туршлага",
+  "series": "HSK标准教程4下",
+  "seriesLabel_mn": "HSK4B",
+  "source": "HSK标准教程4下 · 第16课 (сурах бичиг, багшийн ном, дасгалын ном, албан хариу)",
+  "hasAudio": true,
+  "hasImages": false,
+  "media": {
+    "lessonId": "hsk4-l16",
+    "images": []
+  },
+  "verification": {
+    "answerStatus": "official_verified",
+    "textStatus": "source_verified (hsk4-l16.json, verified_pages)",
+    "teacherLayer": "багшийн номын агуулгад тулгуурласан + агентаар бичсэн Монгол тайлбар"
+  }
+}

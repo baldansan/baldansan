@@ -1,0 +1,686 @@
+[
+ {
+  "type": "cloze",
+  "question": "下个星期我要去使馆办（　），材料都准备好了。",
+  "options": [
+   "签证",
+   "表格",
+   "记者",
+   "博士",
+   "号码"
+  ],
+  "correct_answer": "签证",
+  "explanation": "签证 = виз: 去使馆办签证 — элчин сайдын яаманд виз хийлгэх. 表格 — хүснэгт, маягт; 号码 — дугаар; 记者 — сэтгүүлч; 博士 — докторын зэрэг.",
+  "order_index": 1,
+  "id": "hsk4-l16-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想参加汉语考试，今天先去网上（　）。",
+  "options": [
+   "同情",
+   "原谅",
+   "参观",
+   "预习",
+   "报名"
+  ],
+  "correct_answer": "报名",
+  "explanation": "报名 = бүртгүүлэх: 参加考试要先报名. 预习 — урьдчилан бэлдэх; 原谅 — уучлах; 参观 — үзэх, аялан үзэх; 同情 — өрөвдөх.",
+  "order_index": 2,
+  "id": "hsk4-l16-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "明天老师带我们去（　）一家大公司。",
+  "options": [
+   "挂",
+   "参观",
+   "输",
+   "推",
+   "报名"
+  ],
+  "correct_answer": "参观",
+  "explanation": "参观 = үзэж танилцах: 参观公司 — компаниар зочлон үзэх. 报名 — бүртгүүлэх; 推 — түлхэх, хойшлуулах; 挂 — өлгөх; 输 — ялагдах.",
+  "order_index": 3,
+  "id": "hsk4-l16-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "第一次看到大海，孩子们都非常（　）。",
+  "options": [
+   "礼貌",
+   "激动",
+   "马虎",
+   "导游",
+   "号码"
+  ],
+  "correct_answer": "激动",
+  "explanation": "激动 = догдлох, сэтгэл хөдлөх: 非常激动. 马虎 — хайхрамжгүй; 礼貌 — ёс зүй; 导游 — хөтөч; 号码 — дугаар.",
+  "order_index": 4,
+  "id": "hsk4-l16-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他又没通过考试，父母很（　）。",
+  "options": [
+   "礼貌",
+   "失望",
+   "郊区",
+   "报名",
+   "小伙子"
+  ],
+  "correct_answer": "失望",
+  "explanation": "失望 = урам хугарах: 父母很失望 — эцэг эх нь урам хугарсан. 礼貌 — ёс зүй; 报名 — бүртгүүлэх; 郊区 — хотын захын бүс; 小伙子 — залуу эр.",
+  "order_index": 5,
+  "id": "hsk4-l16-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "城里太吵了，周末我想去（　）住两天。",
+  "options": [
+   "郊区",
+   "表格",
+   "记者",
+   "号码",
+   "签证"
+  ],
+  "correct_answer": "郊区",
+  "explanation": "郊区 = хотын захын бүс: 去郊区住两天 — хотын захад хоёр хоног амрах. 表格 — хүснэгт; 号码 — дугаар; 签证 — виз; 记者 — сэтгүүлч.",
+  "order_index": 6,
+  "id": "hsk4-l16-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他很有（　），见了老师总是先问好。",
+  "options": [
+   "郊区",
+   "重点",
+   "礼貌",
+   "签证",
+   "记者"
+  ],
+  "correct_answer": "礼貌",
+  "explanation": "礼貌 = ёс зүй, хүндэтгэл: 很有礼貌 — маш ёс зүйтэй. 重点 — гол агуулга; 郊区 — хотын захын бүс; 记者 — сэтгүүлч; 签证 — виз.",
+  "order_index": 7,
+  "id": "hsk4-l16-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "对不起，我不是故意的，请你（　）我。",
+  "options": [
+   "挂",
+   "预习",
+   "报名",
+   "推",
+   "原谅"
+  ],
+  "correct_answer": "原谅",
+  "explanation": "原谅 = уучлах: 请你原谅我 — намайг уучлаарай. 报名 — бүртгүүлэх; 预习 — урьдчилан бэлдэх; 推 — түлхэх; 挂 — өлгөх.",
+  "order_index": 8,
+  "id": "hsk4-l16-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他做作业很（　），常常写错字。",
+  "options": [
+   "礼貌",
+   "马虎",
+   "自信",
+   "冷静",
+   "激动"
+  ],
+  "correct_answer": "马虎",
+  "explanation": "马虎 = хайхрамжгүй, болхи: 做作业很马虎 — даалгавраа хайхрамжгүй хийдэг. 冷静 — тайван; 自信 — өөртөө итгэлтэй; 礼貌 — ёс зүйтэй; 激动 — догдолсон.",
+  "order_index": 9,
+  "id": "hsk4-l16-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们应该（　）别人的选择，不能随便批评。",
+  "options": [
+   "尊重",
+   "同情",
+   "预习",
+   "报名",
+   "参观"
+  ],
+  "correct_answer": "尊重",
+  "explanation": "尊重 = хүндэтгэх: 尊重别人的选择 — бусдын сонголтыг хүндэтгэх. 同情 — өрөвдөх; 预习 — урьдчилан бэлдэх; 参观 — үзэх; 报名 — бүртгүүлэх.",
+  "order_index": 10,
+  "id": "hsk4-l16-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk4-l16-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个箱子（　）重了！需要三个人一起推。",
+  "options": [
+   "到底",
+   "可",
+   "敢",
+   "恐怕",
+   "拿"
+  ],
+  "correct_answer": "可",
+  "explanation": "可 = ёстой, үнэхээр: 可重了 — ёстой хүнд. «可 + тэмдэг нэр + 了» ярианы онцлох хэлбэр. 敢 — зүрхлэх; 到底 — ер нь; 恐怕 — санаа зовох, магадгүй; 拿 — барих, …-ийг авч үзвэл.",
+  "order_index": 11,
+  "id": "hsk4-l16-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "现在已经十一点了，他（　）不会来了。",
+  "options": [
+   "敢",
+   "拿",
+   "所以",
+   "到底",
+   "恐怕"
+  ],
+  "correct_answer": "恐怕",
+  "explanation": "恐怕 = магадгүй, санаа зовсон таамаг: 他恐怕不会来了 — тэр ирэхгүй байх. 到底 — ер нь; 敢 — зүрхлэх; 拿 — барих; 所以 — тиймээс.",
+  "order_index": 12,
+  "id": "hsk4-l16-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你（　）想不想去？快点儿决定吧！",
+  "options": [
+   "拿",
+   "敢",
+   "到底",
+   "可",
+   "恐怕"
+  ],
+  "correct_answer": "到底",
+  "explanation": "到底 = яг, ер нь (асуултыг тодруулах): 你到底想不想去？ — чи ер нь явмаар байна уу, үгүй юу? 恐怕, 敢, 可, 拿 — энэ сонголтот асуулттай таарахгүй.",
+  "order_index": 13,
+  "id": "hsk4-l16-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不（　）一个人晚上看恐怖电影。",
+  "options": [
+   "恐怕",
+   "拿",
+   "敢",
+   "到底",
+   "可"
+  ],
+  "correct_answer": "敢",
+  "explanation": "敢 = зүрхлэх: 不敢一个人看 — ганцаараа үзэхээс зүрхлэхгүй. «不敢 + V» бүтэц. 可, 拿, 到底, 恐怕 нь «不»-ийн ард ийм утгаар орохгүй.",
+  "order_index": 14,
+  "id": "hsk4-l16-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小夏为什么一直在准备材料？",
+  "options": [
+   "因为他要去旅游",
+   "因为他想出国读博士",
+   "因为他要找工作",
+   "因为他要结婚"
+  ],
+  "correct_answer": "因为他想出国读博士",
+  "explanation": "Бичвэр 1: 我想出国读博士，一直在准备办签证需要的材料 — гадаадад докторантурт суралцахаар виз хийлгэхэд хэрэгтэй материалаа бэлдэж байна.",
+  "order_index": 15,
+  "id": "hsk4-l16-q15",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "国外的大学还没有做什么？",
+  "options": [
+   "给他发护照",
+   "给他寄报名表格",
+   "给他打电话",
+   "把邀请信传真给他"
+  ],
+  "correct_answer": "把邀请信传真给他",
+  "explanation": "Бичвэр 1: 没有啊 — урилгын захидлыг факсаар явуулаагүй (把邀请信传真给你了吗？ — 没有啊).",
+  "order_index": 16,
+  "id": "hsk4-l16-q16",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小雨建议小夏怎么办？",
+  "options": [
+   "再等一个星期",
+   "去使馆问",
+   "自己写邀请信",
+   "打电话问学校"
+  ],
+  "correct_answer": "打电话问学校",
+  "explanation": "Бичвэр 1: 我帮你查一下学校的电话号码，你打电话问一下吧 — сургуулийн утасны дугаарыг хайж өгөөд, залгаж асуу гэсэн.",
+  "order_index": 17,
+  "id": "hsk4-l16-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王老板从大学毕业开始工作，到现在多长时间了？",
+  "options": [
+   "十年",
+   "五年",
+   "二十年",
+   "三年"
+  ],
+  "correct_answer": "十年",
+  "explanation": "Бичвэр 2: 您从大学毕业开始工作，到现在才十年时间 — дөнгөж арван жил.",
+  "order_index": 18,
+  "id": "hsk4-l16-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王老板会先吃哪块西瓜？",
+  "options": [
+   "最小的一块",
+   "哪块都不吃",
+   "最大的一块",
+   "中间的一块"
+  ],
+  "correct_answer": "最小的一块",
+  "explanation": "Бичвэр 2: 我会先吃最小的一块 — тэр хамгийн жижиг хэсгийг эхлээд идэнэ, учир нь хамгийн том нь дуусаагүй байхад дахиад нэг хэсэг идэж амждаг.",
+  "order_index": 19,
+  "id": "hsk4-l16-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小林为什么今年又回不了家？",
+  "options": [
+   "他工作太忙",
+   "他要给外地的好朋友当导游",
+   "他生病了",
+   "他没有买到火车票"
+  ],
+  "correct_answer": "他要给外地的好朋友当导游",
+  "explanation": "Бичвэр 3: 一个外地的好朋友打电话说要来旅游，让我当导游 — хөдөөнөөс найз нь аялахаар ирж, хөтөч болгохыг хүссэн.",
+  "order_index": 20,
+  "id": "hsk4-l16-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4说，学汉语首先要注意什么？",
+  "options": [
+   "上课认真听",
+   "课前预习",
+   "完成作业",
+   "课后复习"
+  ],
+  "correct_answer": "课前预习",
+  "explanation": "Бичвэр 4: 首先要注意课前预习 — юуны өмнө хичээлийн өмнө урьдчилан бэлдэх; дараа нь хичээлд анхааралтай сонсох, хичээлийн дараа давтах.",
+  "order_index": 21,
+  "id": "hsk4-l16-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文5中，“天外有天，人外有人”想说明什么？",
+  "options": [
+   "世界很小",
+   "第一名永远是第一名",
+   "不需要向别人学习",
+   "总有人比你更厉害，不要骄傲"
+  ],
+  "correct_answer": "总有人比你更厉害，不要骄傲",
+  "explanation": "Бичвэр 5: 很可能有人在这方面比你更厉害 — чамаас илүү чадалтай хүн үргэлж олдоно, тиймээс бардамнаж болохгүй.",
+  "order_index": 22,
+  "id": "hsk4-l16-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话是对的？",
+  "options": [
+   "谁到底去参加比赛，大家还没决定。",
+   "到底谁去参加比赛吗，大家还没决定。",
+   "谁去参加比赛到底，大家还没决定。",
+   "到底谁去参加比赛，大家还没决定。"
+  ],
+  "correct_answer": "到底谁去参加比赛，大家还没决定。",
+  "explanation": "Өгүүлэгдэхүүн нь асуух төлөөний үг (谁) бол «到底»-г өгүүлэгдэхүүний ӨМНӨ тавина: 到底谁去参加比赛. «吗» нэмэх, «到底»-г ард тавих нь буруу.",
+  "order_index": 23,
+  "id": "hsk4-l16-q23",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“听完我的回答，恐怕你已经知道我的答案了吧。”中的“恐怕”是什么意思？",
+  "options": [
+   "Айх, цочирдох",
+   "Заавал, мэдээж",
+   "Магадгүй, таамаглаж байна",
+   "Хүсэх, найдах"
+  ],
+  "correct_answer": "Магадгүй, таамаглаж байна",
+  "explanation": "Энд «恐怕» нь дайвар үг бөгөөд «大概、也许» — магадгүй, таамаглаж байна гэсэн утгатай. Санаа зовох өнгө байхгүй.",
+  "order_index": 24,
+  "id": "hsk4-l16-q24",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“我（　）你忘了这件事，所以打电话提醒你。”应该选哪个？",
+  "options": [
+   "敢",
+   "可",
+   "恐怕",
+   "怕"
+  ],
+  "correct_answer": "怕",
+  "explanation": "«我怕你忘了» — «怕» нь нэр үг, төлөөний үгийн өмнө орж «санаа зовох» утга өгч чадна. «恐怕» энэ утгаар зөвхөн үйл үгийн өмнө орно (比一比 不同点1). 可, 敢 нь утгад таарахгүй.",
+  "order_index": 25,
+  "id": "hsk4-l16-q25",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪句话用得对？",
+  "options": [
+   "汉语有点儿难，拿来说发音，我总是说不准。",
+   "汉语有点儿难，拿发音说，来我总是说不准。",
+   "汉语有点儿难，拿发音来说，我总是说不准。",
+   "汉语有点儿难，发音拿来说，我总是说不准。"
+  ],
+  "correct_answer": "汉语有点儿难，拿发音来说，我总是说不准。",
+  "explanation": "«拿……来说» бүтцэд «拿» ба «来说» хоёр хоорондоо тайлбарлах зүйлийг (发音) агуулна: 拿发音来说. Бусад сонголтод дараалал эвдэгдсэн.",
+  "order_index": 26,
+  "id": "hsk4-l16-q26",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小王下个月想去国外读书，所以最近一直在准备签证需要的材料。今天他已经把护照和成绩证明都准备好了，只差一封邀请信。\n问：小王还缺什么？",
+  "options": [
+   "护照",
+   "报名表格",
+   "成绩证明",
+   "邀请信"
+  ],
+  "correct_answer": "邀请信",
+  "explanation": "Эшлэл: 只差一封邀请信 — зөвхөн урилгын захидал дутуу. Паспорт, дүнгийн тодорхойлолт аль хэдийн бэлэн.",
+  "order_index": 27,
+  "id": "hsk4-l16-q27",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小林的朋友邀请他周末去郊区爬山，可是他周末要复习，所以他用礼貌的方法拒绝了朋友。朋友没有生气，还说下次再约。\n问：朋友听了小林的话以后怎么样？",
+  "options": [
+   "很失望，不再理他",
+   "要求他一起去",
+   "非常激动",
+   "没有生气"
+  ],
+  "correct_answer": "没有生气",
+  "explanation": "Эшлэл: 朋友没有生气，还说下次再约 — найз нь уурласангүй, дараагийн удаа уулзъя гэсэн.",
+  "order_index": 28,
+  "id": "hsk4-l16-q28",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "马克说，他以前不敢在课上说话，因为怕说错。后来老师总是说：“不懂就问，别怕。”现在，他每节课都敢回答问题，汉语也越来越好了。\n问：现在马克怎么样？",
+  "options": [
+   "不想上课了",
+   "很怕老师",
+   "敢回答问题了",
+   "还是不敢说话"
+  ],
+  "correct_answer": "敢回答问题了",
+  "explanation": "Эшлэл: 现在，他每节课都敢回答问题 — одоо тэр хичээл бүрт асуултад хариулах зүрхтэй болсон.",
+  "order_index": 29,
+  "id": "hsk4-l16-q29",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "有个同学总是说“明天再做”，结果作业越来越多，考试也没有准备好。老师对他说：“一切从现在做起。”\n问：老师希望这位同学怎么做？",
+  "options": [
+   "现在就开始做",
+   "明天再做",
+   "不用做作业",
+   "等考试以后再做"
+  ],
+  "correct_answer": "现在就开始做",
+  "explanation": "Эшлэл: 一切从现在做起 — бүх зүйлийг одооноос эхэл гэж багш хэлсэн.",
+  "order_index": 30,
+  "id": "hsk4-l16-q30",
+  "skillTags": [
+   "reading",
+   "short-passage"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 小夏 / 一直 / 在准备 / 办签证 / 需要的材料",
+  "options": [
+   "小夏在准备一直办签证需要的材料。",
+   "需要的材料小夏办签证一直在准备。",
+   "小夏一直在准备办签证需要的材料。"
+  ],
+  "correct_answer": "小夏一直在准备办签证需要的材料。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (小夏) + дайвар (一直) + 在准备 + тодотголтой тусагдахуун (办签证需要的材料) — Сяо Ся виз хийлгэхэд хэрэгтэй материалыг тасралтгүй бэлдэж байна.",
+  "order_index": 31,
+  "id": "hsk4-l16-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 你 / 到底 / 怎么 / 打算 / 的呀",
+  "options": [
+   "你怎么打算到底的呀？",
+   "打算你到底怎么的呀？",
+   "你到底怎么打算的呀？"
+  ],
+  "correct_answer": "你到底怎么打算的呀？",
+  "explanation": "到底 нь асуух үг (怎么)-ийн өмнө, өгүүлэгдэхүүний ард: 你到底怎么打算的呀？ — чи ер нь яахаар төлөвлөж байгаа юм бэ? 到底-г өгүүлбэрийн төгсгөлд тавьж болохгүй.",
+  "order_index": 32,
+  "id": "hsk4-l16-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 京剧演出7点就开始了， / 现在 / 恐怕 / 已经 / 结束了",
+  "options": [
+   "京剧演出7点就开始了，现在已经结束恐怕了。",
+   "现在已经恐怕结束了，京剧演出7点就开始了。",
+   "京剧演出7点就开始了，现在恐怕已经结束了。"
+  ],
+  "correct_answer": "京剧演出7点就开始了，现在恐怕已经结束了。",
+  "explanation": "恐怕 нь таамаг илэрхийлж өгүүлэхүүний өмнө (已经结束了) орно: 现在恐怕已经结束了 — одоо бол дууссан байх. 恐怕-г үйл үгийн ард тавьж болохгүй.",
+  "order_index": 33,
+  "id": "hsk4-l16-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 拿 / 学汉语 / 来说 / 首先 / 要预习",
+  "options": [
+   "拿学汉语来说，首先要预习。",
+   "首先拿学汉语要预习来说。",
+   "拿来说学汉语，首先要预习。"
+  ],
+  "correct_answer": "拿学汉语来说，首先要预习。",
+  "explanation": "«拿……来说» бүтэц: 拿 + тайлбарлах зүйл (学汉语) + 来说, дараа нь таслалаар тодорхой тайлбар (首先要预习).",
+  "order_index": 34,
+  "id": "hsk4-l16-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 这 / 可 / 怎么 / 办 / 呀",
+  "options": [
+   "这怎么可办呀？",
+   "这可怎么办呀？",
+   "可这办怎么呀？"
+  ],
+  "correct_answer": "这可怎么办呀？",
+  "explanation": "可 нь асуух үг (怎么)-ийн өмнө орж асуултын өнгийг чангална: 这可怎么办呀？ — одоо яалтай билээ?",
+  "order_index": 35,
+  "id": "hsk4-l16-q35",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 不敢 / 再 / 躺着 / 看书了",
+  "options": [
+   "看书了他不敢再躺着。",
+   "他不敢再躺着看书了。",
+   "他再不敢看书躺着了。"
+  ],
+  "correct_answer": "他不敢再躺着看书了。",
+  "explanation": "不敢 + V: 他不敢再躺着看书了 — тэр дахиж хэвтээд ном уншихаас зүрхлэхгүй боллоо. 不敢 нь үйл үгийн өмнө шууд орно.",
+  "order_index": 36,
+  "id": "hsk4-l16-q36",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
