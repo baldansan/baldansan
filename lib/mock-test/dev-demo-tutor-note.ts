@@ -20,6 +20,7 @@ export function devDemoPracticeData(
     total_questions: 1,
     time_limit_min: 5,
     has_writing: false,
+    is_active: true,
     sections: [
       {
         skill: "listening",

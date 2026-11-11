@@ -12,7 +12,7 @@ export const metadata = {
 
 /** Admin-guarded: app/admin/layout.tsx → AdminLayoutShell → AdminGuard. */
 export default async function AdminTutorNotesPage() {
-  const tests = await fetchMockTests();
+  const tests = await fetchMockTests(undefined, { includeInactive: true });
   return (
     <TutorNotesAdminClient
       tests={tests.map((test) => ({

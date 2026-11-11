@@ -68,13 +68,15 @@ function mapTest(raw: Record<string, unknown>): MockTestRow {
     has_writing: Boolean(raw.has_writing),
     sections: mapSections(raw.sections),
     created_at: String(raw.created_at),
+    is_active: raw.is_active == null ? true : Boolean(raw.is_active),
   };
 }
 
 
 async function fetchMockTestsWith(
   client: SupabaseClient,
-  hskLevel?: number
+  hskLevel?: number,
+  opts: { includeInactive?: boolean } = {}
 ): Promise<MockTestRow[]> {
   let query = client
     .from("mock_tests")
@@ -85,19 +87,28 @@ async function fetchMockTestsWith(
   if (hskLevel != null) {
     query = query.eq("hsk_level", hskLevel);
   }
+  // Нуусан (is_active=false) тестүүд суралцагчид харагдахгүй; админ бүгдийг харна.
+  if (!opts.includeInactive) {
+    query = query.eq("is_active", true);
+  }
 
   const { data, error } = await query;
+  if (error && !opts.includeInactive && /is_active/.test(error.message)) {
+    // 084 migration хараахан ажиллаагүй → багана байхгүй; шүүлтгүйгээр буцаана.
+    return fetchMockTestsWith(client, hskLevel, { includeInactive: true });
+  }
   if (error || !data) return [];
   return data.map((row) => mapTest(row as Record<string, unknown>));
 }
 
 export async function fetchMockTests(
-  hskLevel?: number
+  hskLevel?: number,
+  opts: { includeInactive?: boolean } = {}
 ): Promise<MockTestRow[]> {
   if (!hasServerSupabaseConfig) return [];
   const client = await createServerSupabaseClient();
   if (!client) return [];
-  return fetchMockTestsWith(client, hskLevel);
+  return fetchMockTestsWith(client, hskLevel, opts);
 }
 
 /**

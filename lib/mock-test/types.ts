@@ -30,6 +30,8 @@ export type MockTestRow = {
   has_writing: boolean;
   sections: MockTestSection[];
   created_at: string;
+  /** false бол суралцагчид харагдахгүй (084). */
+  is_active: boolean;
 };
 
 export type MockTestQuestionRow = {

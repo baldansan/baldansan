@@ -102,10 +102,15 @@ export async function fetchDailyListeningSet(opts: {
   const dateKey = opts.dateKey ?? ulaanbaatarDateKey();
   const salt = opts.salt ?? "";
 
-  const { data: tests, error: tErr } = await client
+  let { data: tests, error: tErr } = await client
     .from("mock_tests")
     .select("id")
-    .eq("hsk_level", level);
+    .eq("hsk_level", level)
+    .eq("is_active", true);
+  if (tErr && /is_active/.test(tErr.message)) {
+    // 084 migration ажиллаагүй бол шүүлтгүй.
+    ({ data: tests, error: tErr } = await client.from("mock_tests").select("id").eq("hsk_level", level));
+  }
   if (tErr || !tests?.length) return null;
   const testIds = tests.map((t) => String(t.id));
 
