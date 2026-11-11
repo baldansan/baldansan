@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "她从小就是个（　）孩子，从不跟大人顶嘴。",
+  "options": [
+   "暗",
+   "建立",
+   "乖",
+   "面临",
+   "组织"
+  ],
+  "correct_answer": "乖",
+  "explanation": "乖 = дуулгавартай, номхон: 乖孩子. 暗 — харанхуй; 建立 — байгуулах; 面临 — тулгарах; 组织 — зохион байгуулах (бүгд үйл үг эсвэл утга таардаггүй).",
+  "order_index": 1,
+  "id": "hsk5-l23-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他学习很（　），每天都练习到很晚。",
+  "options": [
+   "刻苦",
+   "陌生",
+   "一致",
+   "单独",
+   "沉默"
+  ],
+  "correct_answer": "刻苦",
+  "explanation": "刻苦 = шаргуу, зүтгэлтэй: 学习很刻苦. 陌生 — танихгүй; 一致 — санал нэгтэй; 单独 — тусад нь; 沉默 — дуугүй байх.",
+  "order_index": 2,
+  "id": "hsk5-l23-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请大家（　）学校的纪律，不要迟到。",
+  "options": [
+   "征求",
+   "担任",
+   "录取",
+   "遵守",
+   "吻"
+  ],
+  "correct_answer": "遵守",
+  "explanation": "遵守纪律 = сахилга батыг сахих. 征求 — санал асуух; 担任 — албан тушаал хашиж ажиллах; 录取 — элсүүлэх; 吻 — үнсэх.",
+  "order_index": 3,
+  "id": "hsk5-l23-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "校长在做决定以前，先（　）了老师们的意见。",
+  "options": [
+   "建立",
+   "征求",
+   "录取",
+   "让步",
+   "组织"
+  ],
+  "correct_answer": "征求",
+  "explanation": "征求意见 = санал авах. 建立 — байгуулах; 录取 — элсүүлэх; 让步 — буулт хийх; 组织 — зохион байгуулах.",
+  "order_index": 4,
+  "id": "hsk5-l23-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这家公司现在（　）着很大的困难。",
+  "options": [
+   "担任",
+   "出席",
+   "面临",
+   "遵守",
+   "沟通"
+  ],
+  "correct_answer": "面临",
+  "explanation": "面临困难 = бэрхшээлтэй нүүр тулах. 担任 — хашиж ажиллах; 出席 — оролцох (хурал); 遵守 — сахих; 沟通 — харилцан ойлголцох.",
+  "order_index": 5,
+  "id": "hsk5-l23-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "总经理明天要（　）一个很重要的会议。",
+  "options": [
+   "建立",
+   "违反",
+   "吻",
+   "暗",
+   "出席"
+  ],
+  "correct_answer": "出席",
+  "explanation": "出席会议 = хуралд оролцох. 建立 — байгуулах; 违反 — зөрчих; 吻 — үнсэх; 暗 — харанхуй.",
+  "order_index": 6,
+  "id": "hsk5-l23-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这孩子很（　），自己会做饭，还会照顾弟弟妹妹。",
+  "options": [
+   "陌生",
+   "能干",
+   "沙滩",
+   "阶段",
+   "幸亏"
+  ],
+  "correct_answer": "能干",
+  "explanation": "能干 = чадварлаг: 这孩子很能干. 陌生 — танихгүй; 沙滩 — элсэн эрэг; 阶段 — үе шат; 幸亏 — аз болоход.",
+  "order_index": 7,
+  "id": "hsk5-l23-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "到了一个（　）的城市，我们先买了一张地图。",
+  "options": [
+   "刻苦",
+   "一致",
+   "基本",
+   "陌生",
+   "乖"
+  ],
+  "correct_answer": "陌生",
+  "explanation": "陌生的城市 = танихгүй хот. 刻苦 — шаргуу; 一致 — санал нэгтэй; 基本 — үндсэндээ; 乖 — дуулгавартай.",
+  "order_index": 8,
+  "id": "hsk5-l23-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老板要求每个员工都要遵守公司的（　）。",
+  "options": [
+   "规矩",
+   "讲座",
+   "酒吧",
+   "系",
+   "外交"
+  ],
+  "correct_answer": "规矩",
+  "explanation": "遵守规矩 = дүрэм журмыг сахих. 讲座 — лекц; 酒吧 — бар; 系 — тэнхим; 外交 — гадаад харилцаа.",
+  "order_index": 9,
+  "id": "hsk5-l23-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈听了她的话，终于（　）了，同意她去国外留学。",
+  "options": [
+   "陌生",
+   "建立",
+   "让步",
+   "组织",
+   "暗"
+  ],
+  "correct_answer": "让步",
+  "explanation": "让步 = буулт хийх: 妈妈让步了 (бичвэрт ч гарсан). 陌生 — танихгүй; 建立 — байгуулах; 组织 — зохион байгуулах; 暗 — харанхуй.",
+  "order_index": 10,
+  "id": "hsk5-l23-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l23-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "专家们（　）认为这个办法最好。",
+  "options": [
+   "一致",
+   "一样",
+   "单独",
+   "独自",
+   "幸亏"
+  ],
+  "correct_answer": "一致",
+  "explanation": "一致 (дайвар үг) = санал нэгтэй: 一致认为. 一样 — адилхан («认为»-ийн өмнө ийм утгаар орохгүй); 单独/独自 — ганцаараа; 幸亏 — аз болоход.",
+  "order_index": 11,
+  "id": "hsk5-l23-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我昨天在（　）网站上看到了这个消息，现在想不起来是哪个了。",
+  "options": [
+   "一致",
+   "单独",
+   "独自",
+   "某",
+   "幸亏"
+  ],
+  "correct_answer": "某",
+  "explanation": "某 = ямар нэгэн (нэрийг нь тодорхой хэлэхгүй): 某网站. 一致 — санал нэгтэй; 单独/独自 — ганцаараа; 幸亏 — аз болоход.",
+  "order_index": 12,
+  "id": "hsk5-l23-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）你提醒我，不然我就忘了带护照。",
+  "options": [
+   "某",
+   "幸亏",
+   "单独",
+   "一致",
+   "独自"
+  ],
+  "correct_answer": "幸亏",
+  "explanation": "幸亏 ... 不然 ... = «аз болоход ..., эс бөгөөс ...». Бусад үгс ийм утга өгөхгүй.",
+  "order_index": 13,
+  "id": "hsk5-l23-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个菜要先（　）炒好，再和别的菜放在一起。",
+  "options": [
+   "独自",
+   "一致",
+   "某",
+   "幸亏",
+   "单独"
+  ],
+  "correct_answer": "单独",
+  "explanation": "单独 = тусад нь, зүйлд хэрэглэнэ: 单独炒好. 独自 — зөвхөн хүн өөрөө бие даан хийхэд хэрэглэнэ, зүйлд хэрэглэхгүй.",
+  "order_index": 14,
+  "id": "hsk5-l23-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "妹妹长得跟姐姐（　）漂亮。",
+  "options": [
+   "一致",
+   "一样",
+   "单独",
+   "独自",
+   "某"
+  ],
+  "correct_answer": "一样",
+  "explanation": "A 跟 B 一样 + тэмдэг нэр. 一致 нь хийсвэр зүйлд хэрэглэгдэх тул гадаад төрхөд тохирохгүй; 单独/独自 — ганцаараа.",
+  "order_index": 15,
+  "id": "hsk5-l23-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "幸亏你及时提醒我，我才没有迟到。",
+   "幸亏了你的帮助，我才完成了工作。",
+   "幸亏下大雨了，所以我们没去成。",
+   "我幸亏没带伞，全身都湿透了。"
+  ],
+  "correct_answer": "幸亏你及时提醒我，我才没有迟到。",
+  "explanation": "Зөв: тааламжтай нөхцөл (及时提醒) + хүсээгүй зүйлээс сэргийлсэн (迟到). Бусад: «幸亏了你» гэж болохгүй (多亏了你); бороо орсноор үр дагавар муу; шүхэргүй нь муу үр дагавартай тул 幸亏 таарахгүй.",
+  "order_index": 16,
+  "id": "hsk5-l23-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "文文小时候是个什么样的孩子？",
+  "options": [
+   "很调皮，不爱学习",
+   "乖乖女，学习刻苦，遵守纪律",
+   "喜欢逃课，爱交朋友",
+   "非常独立，很有主见"
+  ],
+  "correct_answer": "乖乖女，学习刻苦，遵守纪律",
+  "explanation": "1-р өгүүлбэр: 文文从小是个乖乖女，学习刻苦，遵守纪律.",
+  "order_index": 17,
+  "id": "hsk5-l23-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "小时候，上哪所学校、念什么专业，主要是谁决定的？",
+  "options": [
+   "文文自己",
+   "爸爸",
+   "老师",
+   "妈妈"
+  ],
+  "correct_answer": "妈妈",
+  "explanation": "2-р өгүүлбэр: 基本上都是妈妈说了算 — ихэнхдээ ээж нь шийддэг байсан.",
+  "order_index": 18,
+  "id": "hsk5-l23-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "上大学以后，文文有什么变化？",
+  "options": [
+   "越来越有主见，越来越能干、独立",
+   "成绩越来越差",
+   "还是什么都听妈妈的",
+   "不再参加任何活动"
+  ],
+  "correct_answer": "越来越有主见，越来越能干、独立",
+  "explanation": "3-р өгүүлбэр: 越来越有自己的主见，越来越能干、独立了. Дүн нь «仍然是第一名», үйл ажиллагаанд идэвхтэй оролцсон.",
+  "order_index": 19,
+  "id": "hsk5-l23-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "文文觉得自己的目标是什么？",
+  "options": [
+   "当外交官",
+   "当老师",
+   "经商",
+   "当医生"
+  ],
+  "correct_answer": "经商",
+  "explanation": "5-р өгүүлбэр: 她觉得经商才是自己的目标. 当外交官 нь ээжийнх нь төлөвлөгөө байсан.",
+  "order_index": 20,
+  "id": "hsk5-l23-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "一共有多少所世界名牌大学录取了文文？",
+  "options": [
+   "2所",
+   "12所",
+   "8所",
+   "21所"
+  ],
+  "correct_answer": "12所",
+  "explanation": "6-р өгүүлбэр: 结果12所世界名牌大学录取了她.",
+  "order_index": 21,
+  "id": "hsk5-l23-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "在要不要去牛津大学这件事上，文文是怎么想的？",
+  "options": [
+   "她听父母的话，决定去牛津",
+   "她不想继续读书",
+   "她想去夏威夷工作",
+   "她和父母的意见不一致，坚持要去美国"
+  ],
+  "correct_answer": "她和父母的意见不一致，坚持要去美国",
+  "explanation": "7-р өгүүлбэр: 文文跟他们的意见不一致，她坚持要去美国.",
+  "order_index": 22,
+  "id": "hsk5-l23-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "妈妈刚到美国时是什么样子？",
+  "options": [
+   "哪儿也不敢去，什么都要靠女儿",
+   "一个人去了很多地方",
+   "每天都去超市买东西",
+   "很快就交了很多朋友"
+  ],
+  "correct_answer": "哪儿也不敢去，什么都要靠女儿",
+  "explanation": "14-р өгүүлбэр: 哪儿也不敢去，不能单独出门，不能与人沟通，什么都要靠女儿.",
+  "order_index": 23,
+  "id": "hsk5-l23-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "妈妈为什么说“幸亏那晚天色很暗”？",
+  "options": [
+   "因为她们迷路了",
+   "因为她们没有带灯",
+   "因为她不想让女儿看见自己流泪",
+   "因为她怕黑"
+  ],
+  "correct_answer": "因为她不想让女儿看见自己流泪",
+  "explanation": "Төгсгөлд ээж нь «忍不住流下了眼泪» гэж бичсэн; харанхуй байсан тул охин нулимсыг нь харсангүй. Тиймээс «幸亏».",
+  "order_index": 24,
+  "id": "hsk5-l23-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n王明的父母从来不替他做决定。上大学选专业时，他们只是说：“你自己想好，我们支持你。”王明很感谢父母，因为这让他学会了为自己负责。\n问：王明为什么感谢父母？",
+  "options": [
+   "父母替他选了专业",
+   "父母让他自己做决定，他学会了负责",
+   "父母给了他很多钱",
+   "父母每天陪他学习"
+  ],
+  "correct_answer": "父母让他自己做决定，他学会了负责",
+  "explanation": "让他自己想好 + 学会了为自己负责 = ээж аав шийдвэрийг нь өөрт нь үлдээснээр хариуцлага хүлээж сурсан.",
+  "order_index": 25,
+  "id": "hsk5-l23-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小张刚到一个陌生的国家工作，什么都不会，幸亏当地的同事帮他办了手机卡，还陪他熟悉了周围的环境。\n问：当地的同事帮了小张什么忙？",
+  "options": [
+   "教他说汉语",
+   "给他介绍女朋友",
+   "送他回国",
+   "帮他办手机卡，陪他熟悉环境"
+  ],
+  "correct_answer": "帮他办手机卡，陪他熟悉环境",
+  "explanation": "帮他办了手机卡 + 陪他熟悉了周围的环境 = утасны сим авч өгч, орчинтой танилцахад нь хамт явсан.",
+  "order_index": 26,
+  "id": "hsk5-l23-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n学校正在征求同学们对下个月讲座的意见。结果，大多数同学一致希望请一位作家来讲旅行的故事。\n问：同学们希望请谁来做讲座？",
+  "options": [
+   "校长",
+   "一位医生",
+   "一位作家",
+   "一位老师"
+  ],
+  "correct_answer": "一位作家",
+  "explanation": "大多数同学一致希望请一位作家 = ихэнх сурагч санал нэгтэй нэгэн зохиолч урихыг хүссэн.",
+  "order_index": 27,
+  "id": "hsk5-l23-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n妈妈以前每天都提醒女儿带伞、多穿衣服。女儿上大学以后，妈妈决定不再事事说了算，让女儿自己安排生活。现在，母女俩常常通过电话沟通，关系比以前更好了。\n问：妈妈有什么变化？",
+  "options": [
+   "不再事事替女儿做主",
+   "搬到女儿的学校附近",
+   "不再给女儿打电话",
+   "对女儿越来越严格"
+  ],
+  "correct_answer": "不再事事替女儿做主",
+  "explanation": "不再事事说了算 = бүх зүйлд өөрөө шийддэггүй болсон. Утсаар ярьдаг хэвээр, харилцаа сайжирсан.",
+  "order_index": 28,
+  "id": "hsk5-l23-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 认为 / 他们 / 这个办法 / 最好 / 一致",
+  "options": [
+   "他们认为一致这个办法最好。",
+   "一致他们这个办法认为最好。",
+   "他们一致认为这个办法最好。"
+  ],
+  "correct_answer": "他们一致认为这个办法最好。",
+  "explanation": "Дайвар үг 一致 нь үйл үг 认为-ийн өмнө орно: 他们一致认为…. (санал нэгтэй үзэв)",
+  "order_index": 29,
+  "id": "hsk5-l23-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我就忘了 / 幸亏 / 提醒了我 / 你 / 不然",
+  "options": [
+   "幸亏你提醒了我，不然我就忘了。",
+   "不然我就忘了幸亏你提醒了我。",
+   "幸亏不然你提醒了我，我就忘了。"
+  ],
+  "correct_answer": "幸亏你提醒了我，不然我就忘了。",
+  "explanation": "Бүтэц: 幸亏 + тааламжтай нөхцөл，不然 + муу үр дагавар. Аз болоход чи сануулсан, эс бөгөөс мартчихна.",
+  "order_index": 30,
+  "id": "hsk5-l23-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 炒好 / 鸡蛋 / 单独 / 备用 / 要",
+  "options": [
+   "要单独鸡蛋炒好备用。",
+   "鸡蛋要单独炒好备用。",
+   "要鸡蛋炒好单独备用。"
+  ],
+  "correct_answer": "鸡蛋要单独炒好备用。",
+  "explanation": "Дараалал: тусагдахуун (鸡蛋) + 要 + дайвар (单独) + үйл үг (炒好) + 备用. Өндөгийг тусад нь хуураад бэлдэнэ.",
+  "order_index": 31,
+  "id": "hsk5-l23-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 有 / 越来越 / 女儿 / 自己的 / 主见",
+  "options": [
+   "女儿有越来越自己的主见。",
+   "越来越女儿有自己的主见。",
+   "女儿越来越有自己的主见。"
+  ],
+  "correct_answer": "女儿越来越有自己的主见。",
+  "explanation": "越来越 нь үйл үг 有-ийн өмнө орно: 越来越有 + 自己的主见. (охин улам өөрийн үзэл бодолтой болсоор)",
+  "order_index": 32,
+  "id": "hsk5-l23-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 把美国 / 妈妈 / 横穿了 / 一遍 / 独自",
+  "options": [
+   "妈妈独自把美国横穿了一遍。",
+   "妈妈横穿了把美国独自一遍。",
+   "把美国妈妈一遍独自横穿了。"
+  ],
+  "correct_answer": "妈妈独自把美国横穿了一遍。",
+  "explanation": "Бүтэц: S + 独自 + 把 + O + V + 了 + тоо. Ээж ганцаараа Америкийг нэг удаа хөндлөн гулд нь туулав.",
+  "order_index": 33,
+  "id": "hsk5-l23-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 主席 / 他 / 学生会 / 担任了",
+  "options": [
+   "担任了他学生会主席。",
+   "他担任了学生会主席。",
+   "学生会担任了他主席。"
+  ],
+  "correct_answer": "他担任了学生会主席。",
+  "explanation": "Дараалал: подлежащи 他 + 担任了 + 学生会主席. Тэр оюутны холбооны даргаар ажилласан.",
+  "order_index": 34,
+  "id": "hsk5-l23-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
