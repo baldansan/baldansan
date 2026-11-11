@@ -43,6 +43,11 @@ import {
   readResumePosition,
   writePreferredSpeed,
   writeResumePosition,
+  readSubBg,
+  nextSubBg,
+  subBgLabel,
+  writeSubBg,
+  type BichlegSubBg,
 } from "@/lib/bichleg/player-prefs";
 import {
   findActiveSubtitle,
@@ -163,6 +168,7 @@ export function BichlegDesktopClient({
   const [playerReady, setPlayerReady] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [muted, setMuted] = useState(true);
+  const [subBg, setSubBg] = useState<BichlegSubBg>(() => readSubBg());
   // Хурд — localStorage (PlayerSwitch клиент дээр л mount хийдэг тул SSR зөрүү үгүй)
   const [preferredSpeed, setPreferredSpeed] = useState<BichlegPreferredSpeed>(() =>
     readPreferredSpeed()
@@ -779,7 +785,10 @@ export function BichlegDesktopClient({
           </div>
 
           {/* Тоглуулагч */}
-          <div className={`bs-bd-player${videoLayout === "portrait" ? " bs-bd-player--portrait" : ""}`}>
+          <div
+            className={`bs-bd-player${videoLayout === "portrait" ? " bs-bd-player--portrait" : ""}`}
+            data-subbg={subBg}
+          >
             <div className="bs-bd-player-box">
               <BichlegYouTubePlayer
                 key={activeVideo.id}
@@ -923,6 +932,20 @@ export function BichlegDesktopClient({
               title={tr(locale, "Хадмалын цаг")}
             >
               {tr(locale, "Хадмал")} {formatUserSubtitleOffsetLabel(userSubtitleOffset)}
+            </button>
+            <button
+              type="button"
+              className="bs-bd-btn bs-bd-btn--text"
+              onClick={() =>
+                setSubBg((cur) => {
+                  const next = nextSubBg(cur);
+                  writeSubBg(next);
+                  return next;
+                })
+              }
+              title={tr(locale, "Хадмалын дэвсгэр — битүү нь видеоны өөрийн бичгийг дарна")}
+            >
+              {tr(locale, "Дэвсгэр")}: {tr(locale, subBgLabel(subBg))}
             </button>
           </div>
 

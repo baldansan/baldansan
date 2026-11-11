@@ -67,6 +67,49 @@ export function formatHanziSizeLabel(size: BichlegHanziSize): string {
   return size === "s" ? "A-" : size === "l" ? "A+" : "A";
 }
 
+/* ---------- хадмалын дэвсгэр ---------- */
+
+const SUB_BG_KEY = "bichleg:sub-bg";
+/** solid = битүү хар (видеоны өөрийн бичгийг дарна), soft = хагас тунгалаг, none = дэвсгэргүй. */
+export type BichlegSubBg = "solid" | "soft" | "none";
+export const BICHLEG_SUB_BGS: BichlegSubBg[] = ["solid", "soft", "none"];
+
+export function readSubBg(): BichlegSubBg {
+  const raw = safeGet(SUB_BG_KEY);
+  return raw === "soft" || raw === "none" ? raw : "solid";
+}
+
+export function writeSubBg(bg: BichlegSubBg): void {
+  safeSet(SUB_BG_KEY, bg);
+}
+
+export function nextSubBg(current: BichlegSubBg): BichlegSubBg {
+  const i = BICHLEG_SUB_BGS.indexOf(current);
+  return BICHLEG_SUB_BGS[(i + 1) % BICHLEG_SUB_BGS.length]!;
+}
+
+export function subBgLabel(bg: BichlegSubBg): string {
+  return bg === "solid" ? "Битүү" : bg === "soft" ? "Хагас тунгалаг" : "Дэвсгэргүй";
+}
+
+/* ---------- утас хэвтээ үеийн горим ---------- */
+
+const LAND_MODE_KEY = "bichleg:land-mode";
+/** full = видео бүтэн дэлгэц, хадмал дээр нь; side = видео зүүн талд, хадмал баруун талд. */
+export type BichlegLandMode = "full" | "side";
+
+export function readLandMode(): BichlegLandMode {
+  return safeGet(LAND_MODE_KEY) === "side" ? "side" : "full";
+}
+
+export function writeLandMode(mode: BichlegLandMode): void {
+  safeSet(LAND_MODE_KEY, mode);
+}
+
+export function landModeLabel(mode: BichlegLandMode): string {
+  return mode === "side" ? "Хажууд" : "Дээр нь";
+}
+
 /* ---------- сүүлд үзсэн байрлал (үргэлжлүүлэх) ---------- */
 
 export type BichlegResumeEntry = {

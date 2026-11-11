@@ -904,3 +904,24 @@
 .bs-bd-sent-link:hover {
   background: rgba(31, 184, 90, 0.24);
 }
+
+/* Хадмалын дэвсгэр (Битүү / Хагас тунгалаг / Дэвсгэргүй) */
+.bs-bd-player[data-subbg="solid"] .bs-bd-caption {
+  padding: 10px 24px 12px;
+  background: #000;
+}
+.bs-bd-player[data-subbg="solid"] .bs-bd-caption-zh,
+.bs-bd-player[data-subbg="solid"] .bs-bd-caption-mn {
+  text-shadow: none;
+}
+.bs-bd-player[data-subbg="none"] .bs-bd-caption {
+  background: transparent;
+}
+.bs-bd-player[data-subbg="none"] .bs-bd-caption-zh,
+.bs-bd-player[data-subbg="none"] .bs-bd-caption-mn {
+  text-shadow: 0 0 4px #000, 0 1px 3px #000, 0 0 10px rgba(0, 0, 0, 0.9);
+}
+.bs-bd-caption-mn {
+  font-size: 17px;
+  font-weight: 600;
+}

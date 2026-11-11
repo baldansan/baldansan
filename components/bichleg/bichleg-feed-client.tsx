@@ -51,6 +51,15 @@ import {
   writePreferredSpeed,
   writeResumePosition,
   type BichlegHanziSize,
+  readLandMode,
+  readSubBg,
+  nextSubBg,
+  subBgLabel,
+  landModeLabel,
+  writeLandMode,
+  writeSubBg,
+  type BichlegLandMode,
+  type BichlegSubBg,
 } from "@/lib/bichleg/player-prefs";
 import {
   currentFullscreenElement,
@@ -244,6 +253,8 @@ export function BichlegFeedClient({
   const [endCardDismissed, setEndCardDismissed] = useState(false);
   const [fsMode, setFsMode] = useState<BichlegFullscreenMode>("none");
   const [showMore, setShowMore] = useState(false);
+  const [subBg, setSubBg] = useState<BichlegSubBg>(() => readSubBg());
+  const [landMode, setLandMode] = useState<BichlegLandMode>(() => readLandMode());
   /** Тоглож байхад товчнууд хэдэн секундын дараа нуугдана; дэлгэцэд хүрэхэд эргэн гарна. */
   const [chromeHidden, setChromeHidden] = useState(false);
   const chromeTimerRef = useRef<number | null>(null);
@@ -1178,6 +1189,118 @@ export function BichlegFeedClient({
   const isFs = fsMode !== "none";
   const hasSubs = activeSubtitles.length > 0;
 
+  const upcomingSubs = (() => {
+    if (!activeSubtitles.length) return [];
+    const from = activeSubtitle
+      ? activeSubtitles.findIndex((x) => x.idx === activeSubtitle.idx) + 1
+      : activeSubtitles.findIndex((x) => Number(x.start_sec) + totalSubtitleOffset > currentTime);
+    return from < 0 ? [] : activeSubtitles.slice(from, from + 3);
+  })();
+
+  /** Хадмалын самбар — видеон дээрх давхарга болон видеоны доорх хэсэг хоёуланд. */
+  function renderSubPanel(sub: VideoSubtitleRow) {
+    const zhLen = (sub.zh ?? "").length;
+    const mnLen = (sub.mn ?? "").length;
+    return (
+      <div className="bs-bichleg-subs-row">
+        <div
+          role="button"
+          tabIndex={0}
+          className="bs-bichleg-subs-panel"
+          data-zlen={zhLen <= 14 ? "s" : zhLen <= 24 ? "m" : "l"}
+          data-mlen={mnLen <= 60 ? "s" : "l"}
+          aria-label={tr(locale, "Энэ мөрийн эхнээс сонсох")}
+          onClick={() => seekToSubtitle(sub)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              seekToSubtitle(sub);
+            }
+          }}
+        >
+          <span className="bs-bl-time-badge">{formatSubtitleClock(sub.start_sec)}</span>
+          {sub.speaker ? (
+            <p className="bs-bl-speaker" translate="no">{sub.speaker}</p>
+          ) : null}
+          {showPinyin && sub.pinyin && !(listenMode && !revealedIdx.has(sub.idx)) ? (
+            <p className="bs-bl-pinyin" translate="no">{sub.pinyin}</p>
+          ) : null}
+          {sub.zh ? renderZh(sub) : null}
+          {showMn && sub.mn ? (
+            <p className="bs-bl-mn" translate="no">{sub.mn}</p>
+          ) : null}
+        </div>
+        {sub.slang_note ? (
+          <button
+            type="button"
+            className="bs-bl-slang-badge"
+            aria-label={tr(locale, "Залуусын хэллэг")}
+            onClick={() => handleSlangOpen(sub.slang_note!)}
+          >
+            💬
+          </button>
+        ) : null}
+      </div>
+    );
+  }
+
+  /** Үйлдлийн товчнууд. `labeled` = видеоны доорх хэвтээ мөр (бичигтэй), үгүй бол дугуй дүрс. */
+  function renderActions(video: VideoRow, labeled: boolean) {
+    const cls = (on?: boolean) =>
+      `${labeled ? "bs-bichleg-chip" : "bs-bichleg-action"}${on ? (labeled ? " bs-bichleg-chip--on" : " bs-bichleg-action--on") : ""}`;
+    return (
+      <>
+        {activeSubtitle?.zh ? (
+          <button
+            type="button"
+            className={cls()}
+            aria-label={tr(locale, "Дуудлага шалгах")}
+            onClick={() => {
+              pausePlayback();
+              setPronLine({ zh: activeSubtitle.zh ?? "", pinyin: activeSubtitle.pinyin ?? null });
+            }}
+          >
+            <span className="bs-bichleg-action-icon" aria-hidden>🎤</span>
+            {labeled ? <span>{tr(locale, "Дуудлага")}</span> : null}
+          </button>
+        ) : null}
+        <button type="button" className={cls()} aria-label={tr(locale, "Түлхүүр үгс")} onClick={() => setShowKeys(true)}>
+          <BichlegIcon name="book" className="bs-bichleg-action-icon" />
+          {labeled ? <span>{tr(locale, "Түлхүүр үг")}</span> : null}
+        </button>
+        <button
+          type="button"
+          className={cls(bookmarked[video.id])}
+          aria-label={tr(locale, "Хадгалах")}
+          onClick={() => setBookmarked((p) => ({ ...p, [video.id]: !p[video.id] }))}
+        >
+          <BichlegIcon name="bookmark" className="bs-bichleg-action-icon" />
+          {labeled ? <span>{tr(locale, "Хадгалах")}</span> : null}
+        </button>
+        <button
+          type="button"
+          className={cls(liked[video.id])}
+          aria-label={tr(locale, "Дуртай")}
+          onClick={() => setLiked((p) => ({ ...p, [video.id]: !p[video.id] }))}
+        >
+          <BichlegIcon name="heart" className="bs-bichleg-action-icon" />
+        </button>
+        <button
+          type="button"
+          className={cls()}
+          aria-label={tr(locale, "Дахин эхлэх")}
+          onClick={() => {
+            setEndCardDismissed(true);
+            seekToTime(0);
+            runOnPlayer((player) => player.playVideo());
+          }}
+        >
+          <BichlegIcon name="refresh" className="bs-bichleg-action-icon" />
+        </button>
+      </>
+    );
+  }
+
   return (
     <AppShell activeTab="clips" showBottomNav={false} immersive>
       <div
@@ -1186,6 +1309,8 @@ export function BichlegFeedClient({
         }`}
         ref={shellRef}
         data-hanzi={hanziSize}
+        data-subbg={subBg}
+        data-land={landMode}
         onPointerDownCapture={() => pokeChrome(isPlayingRef.current)}
       >
         {isFs ? (
@@ -1372,47 +1497,7 @@ export function BichlegFeedClient({
                 </div>
 
                 {isActive && activeSubtitle ? (
-                  <div className="bs-bichleg-subs">
-                    <div className="bs-bichleg-subs-row">
-                      <div
-                        role="button"
-                        tabIndex={0}
-                        className="bs-bichleg-subs-panel"
-                        aria-label={tr(locale, "Энэ мөрийн эхнээс сонсох")}
-                        onClick={() => seekToSubtitle(activeSubtitle)}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter" || e.key === " ") {
-                            e.preventDefault();
-                            seekToSubtitle(activeSubtitle);
-                          }
-                        }}
-                      >
-                        <span className="bs-bl-time-badge">
-                          {formatSubtitleClock(activeSubtitle.start_sec)}
-                        </span>
-                        {activeSubtitle.speaker ? (
-                          <p className="bs-bl-speaker" translate="no">{activeSubtitle.speaker}</p>
-                        ) : null}
-                        {showPinyin && activeSubtitle.pinyin && !(listenMode && !revealedIdx.has(activeSubtitle.idx)) ? (
-                          <p className="bs-bl-pinyin" translate="no">{activeSubtitle.pinyin}</p>
-                        ) : null}
-                        {activeSubtitle.zh ? renderZh(activeSubtitle) : null}
-                        {showMn && activeSubtitle.mn ? (
-                          <p className="bs-bl-mn" translate="no">{activeSubtitle.mn}</p>
-                        ) : null}
-                      </div>
-                      {activeSubtitle.slang_note ? (
-                        <button
-                          type="button"
-                          className="bs-bl-slang-badge"
-                          aria-label={tr(locale, "Залуусын хэллэг")}
-                          onClick={() => handleSlangOpen(activeSubtitle.slang_note!)}
-                        >
-                          💬
-                        </button>
-                      ) : null}
-                    </div>
-                  </div>
+                  <div className="bs-bichleg-subs">{renderSubPanel(activeSubtitle)}</div>
                 ) : null}
 
                 {isActive ? (
@@ -1430,67 +1515,40 @@ export function BichlegFeedClient({
                   </div>
                 ) : null}
 
-                {isActive ? (
-                  <div className="bs-bichleg-actions">
-                    <button
-                      type="button"
-                      className={`bs-bichleg-action ${liked[video.id] ? "bs-bichleg-action--on" : ""}`}
-                      aria-label={tr(locale, "Дуртай")}
-                      onClick={() =>
-                        setLiked((p) => ({
-                          ...p,
-                          [video.id]: !p[video.id],
-                        }))
-                      }
-                    >
-                      <BichlegIcon name="heart" className="bs-bichleg-action-icon" />
-                    </button>
-                    <button
-                      type="button"
-                      className={`bs-bichleg-action ${bookmarked[video.id] ? "bs-bichleg-action--on" : ""}`}
-                      aria-label={tr(locale, "Хадгалах")}
-                      onClick={() =>
-                        setBookmarked((p) => ({
-                          ...p,
-                          [video.id]: !p[video.id],
-                        }))
-                      }
-                    >
-                      <BichlegIcon name="bookmark" className="bs-bichleg-action-icon" />
-                    </button>
-                    <button
-                      type="button"
-                      className="bs-bichleg-action"
-                      aria-label={tr(locale, "Түлхүүр үгс")}
-                      onClick={() => setShowKeys(true)}
-                    >
-                      <BichlegIcon name="book" className="bs-bichleg-action-icon" />
-                    </button>
-                    {activeSubtitle?.zh ? (
-                      <button
-                        type="button"
-                        className="bs-bichleg-action"
-                        aria-label={tr(locale, "Дуудлага шалгах")}
-                        onClick={() => {
-                          pausePlayback();
-                          setPronLine({ zh: activeSubtitle.zh ?? "", pinyin: activeSubtitle.pinyin ?? null });
-                        }}
-                      >
-                        <span className="bs-bichleg-action-icon" aria-hidden>🎤</span>
-                      </button>
+                {isActive ? <div className="bs-bichleg-actions">{renderActions(video, false)}</div> : null}
+
+                {isActive && videoLayout === "landscape" ? (
+                  <div className="bs-bichleg-below">
+                    {activeSubtitle ? (
+                      renderSubPanel(activeSubtitle)
+                    ) : (
+                      <p className="bs-bichleg-below-wait">♪ …</p>
+                    )}
+                    <div className="bs-bichleg-below-actions">{renderActions(video, true)}</div>
+                    {upcomingSubs.length && !listenMode ? (
+                      <div className="bs-bichleg-next">
+                        <p className="bs-bichleg-next-title">{tr(locale, "Дараагийн өгүүлбэрүүд")}</p>
+                        {upcomingSubs.map((sub) => (
+                          <button
+                            key={sub.idx}
+                            type="button"
+                            className="bs-bichleg-next-row"
+                            translate="no"
+                            onClick={() => {
+                              revealSubtitle(sub.idx);
+                              seekToSubtitle(sub);
+                              runOnPlayer((p) => p.playVideo());
+                            }}
+                          >
+                            <span className="bs-bichleg-next-time">{formatSubtitleClock(sub.start_sec)}</span>
+                            <span className="bs-bichleg-next-text">
+                              <span className="bs-bichleg-next-zh hanzi">{sub.zh}</span>
+                              {showMn && sub.mn ? <span className="bs-bichleg-next-mn">{sub.mn}</span> : null}
+                            </span>
+                          </button>
+                        ))}
+                      </div>
                     ) : null}
-                    <button
-                      type="button"
-                      className="bs-bichleg-action"
-                      aria-label={tr(locale, "Дахин эхлэх")}
-                      onClick={() => {
-                        setEndCardDismissed(true);
-                        seekToTime(0);
-                        runOnPlayer((player) => player.playVideo());
-                      }}
-                    >
-                      <BichlegIcon name="refresh" className="bs-bichleg-action-icon" />
-                    </button>
                   </div>
                 ) : null}
               </section>
@@ -1608,6 +1666,42 @@ export function BichlegFeedClient({
                   <small>{tr(locale, "Дарах бүрд солигдоно")}</small>
                 </span>
                 <span className="bs-bichleg-more-value">{formatHanziSizeLabel(hanziSize)}</span>
+              </button>
+              <button
+                type="button"
+                className="bs-bichleg-more-row"
+                onClick={() =>
+                  setSubBg((cur) => {
+                    const next = nextSubBg(cur);
+                    writeSubBg(next);
+                    return next;
+                  })
+                }
+              >
+                <span className="bs-bichleg-more-ico">▣</span>
+                <span className="bs-bichleg-more-text">
+                  <b>{tr(locale, "Хадмалын дэвсгэр")}</b>
+                  <small>{tr(locale, "Битүү нь видеоны өөрийн хятад бичгийг дарна")}</small>
+                </span>
+                <span className="bs-bichleg-more-value">{tr(locale, subBgLabel(subBg))}</span>
+              </button>
+              <button
+                type="button"
+                className="bs-bichleg-more-row"
+                onClick={() =>
+                  setLandMode((cur) => {
+                    const next = cur === "full" ? "side" : "full";
+                    writeLandMode(next);
+                    return next;
+                  })
+                }
+              >
+                <span className="bs-bichleg-more-ico">⇄</span>
+                <span className="bs-bichleg-more-text">
+                  <b>{tr(locale, "Утас хэвтээ үед хадмал")}</b>
+                  <small>{tr(locale, "Дээр нь: видео бүтэн дэлгэц · Хажууд: видео зүүн, хадмал баруун талд")}</small>
+                </span>
+                <span className="bs-bichleg-more-value">{tr(locale, landModeLabel(landMode))}</span>
               </button>
               <button type="button" className="bs-bichleg-more-row" onClick={cycleUserSubtitleOffset}>
                 <span className="bs-bichleg-more-ico">⏱</span>
