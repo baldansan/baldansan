@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "这点儿困难不算什么，我一定可以（　）的。",
+  "options": [
+   "称呼",
+   "下载",
+   "克服",
+   "佩服",
+   "收集"
+  ],
+  "correct_answer": "克服",
+  "explanation": "克服 = даван туулах: 克服困难. 收集 — цуглуулах; 佩服 — биширэх; 称呼 — дуудах; 下载 — татаж авах.",
+  "order_index": 1,
+  "id": "hsk5-l21-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她对工作认真负责的态度很让人（　）。",
+  "options": [
+   "佩服",
+   "公开",
+   "输入",
+   "称呼",
+   "追求"
+  ],
+  "correct_answer": "佩服",
+  "explanation": "佩服 = биширэх: 让人佩服. 追求 — хөөцөлдөх; 公开 — олонд ил болгох; 称呼 — дуудах; 输入 — оруулах.",
+  "order_index": 2,
+  "id": "hsk5-l21-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我妹妹喜欢（　）各种门票。",
+  "options": [
+   "创办",
+   "克服",
+   "收集",
+   "思考",
+   "退休"
+  ],
+  "correct_answer": "收集",
+  "explanation": "收集 = цуглуулах: 收集门票. 克服 — даван туулах; 退休 — тэтгэвэрт гарах; 思考 — бодох; 创办 — үүсгэн байгуулах.",
+  "order_index": 3,
+  "id": "hsk5-l21-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你（　）准备一下，争取下周把这个项目谈下来。",
+  "options": [
+   "称赞",
+   "演变",
+   "包含",
+   "识别",
+   "抓紧"
+  ],
+  "correct_answer": "抓紧",
+  "explanation": "抓紧 = хугацаа алдалгүй хөөцөлдөх: 抓紧准备. 包含 — агуулах; 称赞 — магтах; 演变 — хувьсан өөрчлөгдөх; 识别 — таних.",
+  "order_index": 4,
+  "id": "hsk5-l21-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "其实，林峰与刘医生的恋情，在医院里已经是（　）的秘密了。",
+  "options": [
+   "公开",
+   "偶然",
+   "痛苦",
+   "经典",
+   "开放"
+  ],
+  "correct_answer": "公开",
+  "explanation": "公开的秘密 = нийтийн ил нууц. 偶然 — санамсаргүй; 痛苦 — зовлонтой; 经典 — сонгодог; 开放 — олонд нээх.",
+  "order_index": 5,
+  "id": "hsk5-l21-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "乒乓球（　）其实是英国人发明的一项饭后运动。",
+  "options": [
+   "库",
+   "日程",
+   "元旦",
+   "最初",
+   "单位"
+  ],
+  "correct_answer": "最初",
+  "explanation": "最初 = анх, эхэн үед. 元旦 — шинэ жилийн өдөр; 日程 — хуваарь; 单位 — байгууллага; 库 — сан.",
+  "order_index": 6,
+  "id": "hsk5-l21-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "令人（　）的是，中国至今还没有自己的国花。",
+  "options": [
+   "公开",
+   "遗憾",
+   "完善",
+   "称赞",
+   "逻辑"
+  ],
+  "correct_answer": "遗憾",
+  "explanation": "令人遗憾的是 = харамсалтай нь. 称赞 — магтах; 公开 — олонд ил болгох; 完善 — төгөлдөржүүлэх; 逻辑 — логик.",
+  "order_index": 7,
+  "id": "hsk5-l21-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个网站（　）了汉字的各种字形和读音。",
+  "options": [
+   "创办",
+   "追求",
+   "退休",
+   "克服",
+   "包含"
+  ],
+  "correct_answer": "包含",
+  "explanation": "包含 = агуулах, багтаах: 包含字形和读音. 创办 — үүсгэн байгуулах; 克服 — даван туулах; 退休 — тэтгэвэрт гарах; 追求 — хөөцөлдөх.",
+  "order_index": 8,
+  "id": "hsk5-l21-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他从小就（　）成为一名科学家。",
+  "options": [
+   "梦想",
+   "方言",
+   "真相",
+   "日程",
+   "物理"
+  ],
+  "correct_answer": "梦想",
+  "explanation": "梦想 (үйл үг) = мөрөөдөх: 梦想成为…. 日程 — хуваарь; 物理 — физик; 方言 — аялгуу; 真相 — үнэн байдал.",
+  "order_index": 9,
+  "id": "hsk5-l21-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸常提醒我，生活上不要过于（　）享受。",
+  "options": [
+   "公开",
+   "佩服",
+   "追求",
+   "收集",
+   "抓紧"
+  ],
+  "correct_answer": "追求",
+  "explanation": "追求享受 = таашаал хөөцөлдөх. 佩服 — биширэх; 公开 — олонд ил болгох; 收集 — цуглуулах; 抓紧 — хугацаа алдалгүй хөөцөлдөх.",
+  "order_index": 10,
+  "id": "hsk5-l21-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l21-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "明明是他自己忘了，他却（　）说是我没通知他。",
+  "options": [
+   "硬",
+   "开放",
+   "尽快",
+   "偶然",
+   "最初"
+  ],
+  "correct_answer": "硬",
+  "explanation": "硬说 = зөрүүдлэн хэлэх (硬 + V). 尽快 — аль болох түргэн; 偶然 — санамсаргүй; 最初 — анх; 开放 — олонд нээх.",
+  "order_index": 11,
+  "id": "hsk5-l21-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "时间很紧，请你（　）把报告交给我。",
+  "options": [
+   "尽快",
+   "最初",
+   "硬",
+   "偶尔",
+   "开放"
+  ],
+  "correct_answer": "尽快",
+  "explanation": "请你尽快把……: хүсэлт + 尽快 + 把. 偶尔 — хааяа; 硬 — зөрүүдлэн; 最初 — анх; 开放 — нээх.",
+  "order_index": 12,
+  "id": "hsk5-l21-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这次见面纯属（　），我们事先谁也没想到。",
+  "options": [
+   "尽快",
+   "硬",
+   "偶尔",
+   "偶然",
+   "最初"
+  ],
+  "correct_answer": "偶然",
+  "explanation": "纯属偶然 = цэвэр санамсаргүй тохиолдол (偶然 өгүүлэхүүн болно). 偶尔 нь өгүүлэхүүн болдоггүй.",
+  "order_index": 13,
+  "id": "hsk5-l21-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我平时很少加班，月底（　）有一两天。",
+  "options": [
+   "开放",
+   "尽快",
+   "偶尔",
+   "最初",
+   "硬"
+  ],
+  "correct_answer": "偶尔",
+  "explanation": "偶尔 = хааяа (тоо цөөнийг онцолно, 经常-ийн эсрэг). 硬 — зөрүүдлэн; 尽快 — түргэн; 最初 — анх; 开放 — нээх.",
+  "order_index": 14,
+  "id": "hsk5-l21-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "虽然中药汤有点儿苦，但为了治病，他还是（　）把它喝下去了。",
+  "options": [
+   "硬",
+   "偶尔",
+   "最初",
+   "偶然",
+   "开放"
+  ],
+  "correct_answer": "硬",
+  "explanation": "硬把它喝下去 = хүчээр уух (чадал хүрэхгүй ч зүтгэх). 偶然/偶尔 — санамсаргүй/хааяа; 最初 — анх; 开放 — нээх.",
+  "order_index": 15,
+  "id": "hsk5-l21-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪一个句子里的“偶然”不能换成“偶尔”？",
+  "options": [
+   "她们多半会到丽丽家玩儿，偶然也会去吃饭看电影。",
+   "在校园里，我偶然也会碰到李艳。",
+   "我平时很少出门，偶然会去公园走走。",
+   "李阳喜欢画画儿并非偶然。"
+  ],
+  "correct_answer": "李阳喜欢画画儿并非偶然。",
+  "explanation": "“并非偶然” нь өгүүлэхүүн; 偶尔 өгүүлэхүүн болдоггүй тул солих боломжгүй. Бусад өгүүлбэрт «хааяа» гэсэн дайвар үг тул 偶尔-оор солигдоно.",
+  "order_index": 16,
+  "id": "hsk5-l21-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "理查德为什么觉得学汉字很难？",
+  "options": [
+   "他觉得汉字的一笔一画没有任何逻辑，只能死记硬背",
+   "汉字的读音太难了",
+   "他找不到汉字字典",
+   "他的老师教得不好"
+  ],
+  "correct_answer": "他觉得汉字的一笔一画没有任何逻辑，只能死记硬背",
+  "explanation": "1-р өгүүлбэр: 汉字的一笔一画没有任何逻辑，只能死记硬背.",
+  "order_index": 17,
+  "id": "hsk5-l21-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "理查德是怎么发现学汉字的好办法的？",
+  "options": [
+   "朋友把汉字书送给了他",
+   "一个偶然的机会，他发现了解汉字的来源和演变就容易了",
+   "老师告诉他要多写",
+   "医生建议他用电脑学习"
+  ],
+  "correct_answer": "一个偶然的机会，他发现了解汉字的来源和演变就容易了",
+  "explanation": "2-р өгүүлбэр: 一个偶然的机会，他发现如果了解汉字的来源和演变过程，再学习它就变得轻松、容易.",
+  "order_index": 18,
+  "id": "hsk5-l21-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "1994年理查德发生了什么事？",
+  "options": [
+   "他创办了网站",
+   "他得了心脏病",
+   "他去了北京师范大学",
+   "他开始学习汉语"
+  ],
+  "correct_answer": "他得了心脏病",
+  "explanation": "4-р өгүүлбэр: 1994年，理查德得了心脏病.",
+  "order_index": 19,
+  "id": "hsk5-l21-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "理查德说，如果只能活24小时，他会做什么？",
+  "options": [
+   "去北京师范大学教书",
+   "把《说文解字》电脑化",
+   "打电话和朋友们说再见",
+   "把网站公开"
+  ],
+  "correct_answer": "打电话和朋友们说再见",
+  "explanation": "5-р өгүүлбэр: 如果只能活24小时，我会打电话和朋友们说再见. 《说文解字》电脑化 нь «нэг жил амьдарвал» гэсэн хувилбар.",
+  "order_index": 20,
+  "id": "hsk5-l21-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "复印、整理和把资料输入电脑用了多长时间？",
+  "options": [
+   "22年",
+   "8年",
+   "1年",
+   "10年"
+  ],
+  "correct_answer": "8年",
+  "explanation": "6-р өгүүлбэр: 仅仅复印、整理和把这些资料输入电脑就用了8年.",
+  "order_index": 21,
+  "id": "hsk5-l21-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "理查德为什么决定把网站公开？",
+  "options": [
+   "因为他想赚很多钱",
+   "让更多的人学汉字时不再那么痛苦",
+   "因为医生要求他这样做",
+   "因为他要退休了"
+  ],
+  "correct_answer": "让更多的人学汉字时不再那么痛苦",
+  "explanation": "7-р өгүүлбэр: 让更多喜欢中文的人在学习汉字时，不再像他最初那样学得那么痛苦.",
+  "order_index": 22,
+  "id": "hsk5-l21-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "更让人佩服的是，汉字叔叔做了什么？",
+  "options": [
+   "花光了自己的积蓄",
+   "把网站上的内容全部开放给网友免费下载",
+   "去很多单位工作",
+   "把网站卖给了大学"
+  ],
+  "correct_answer": "把网站上的内容全部开放给网友免费下载",
+  "explanation": "10-р өгүүлбэр: 将网站上的内容全部开放给网友免费下载.",
+  "order_index": 23,
+  "id": "hsk5-l21-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "汉字叔叔对退休的态度是什么？",
+  "options": [
+   "他想把网站交给别人",
+   "他已经退休了",
+   "他打算回美国生活",
+   "他不会退休，还要继续追求自己的梦想"
+  ],
+  "correct_answer": "他不会退休，还要继续追求自己的梦想",
+  "explanation": "15-р өгүүлбэр: 我不会退休，我还要继续追求我的梦想.",
+  "order_index": 24,
+  "id": "hsk5-l21-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小林最大的爱好是收集旧报纸，他的房间里已经有两千多份了。朋友们都很佩服他，因为他每天都抓紧时间整理这些报纸，还把有意思的内容输入电脑，放到网上公开，让大家免费下载。\n问：朋友们为什么佩服小林？",
+  "options": [
+   "他在报社工作",
+   "他把旧报纸卖了很多钱",
+   "他有两千多个朋友",
+   "他抓紧时间整理报纸，还把内容免费公开"
+  ],
+  "correct_answer": "他抓紧时间整理报纸，还把内容免费公开",
+  "explanation": "抓紧时间整理 + 输入电脑 + 公开免费下载 = цагийг барьж эмхэлж, компьютерт оруулаад үнэгүй нээсэн нь биширмээр.",
+  "order_index": 25,
+  "id": "hsk5-l21-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n我最初学汉语的时候，觉得汉字非常难写，常常只能死记硬背。后来老师告诉我，每个汉字都有自己的故事，了解它的来源以后，记起来就容易多了。现在我对汉字越来越感兴趣。\n问：后来“我”为什么觉得汉字容易记了？",
+  "options": [
+   "老师不让写汉字",
+   "用电脑输入汉字",
+   "每天写一百遍",
+   "了解了汉字的来源"
+  ],
+  "correct_answer": "了解了汉字的来源",
+  "explanation": "了解它的来源以后，记起来就容易多了 = гарал үүслийг нь ойлгосны дараа цээжлэхэд амар болсон.",
+  "order_index": 26,
+  "id": "hsk5-l21-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n王老师今年六十五岁，早就到了退休的年纪。可是他说：“我还有一个梦想，想把家乡的方言整理成一本书，让年轻人也能听懂爷爷奶奶的话。”所以，他每天的日程都排得很满，白天去村子里收集资料，晚上整理到很晚。\n问：王老师的日程为什么排得很满？",
+  "options": [
+   "他在准备出国旅游",
+   "他的单位不让他休息",
+   "他要为整理家乡方言的梦想收集资料",
+   "他还在大学教物理"
+  ],
+  "correct_answer": "他要为整理家乡方言的梦想收集资料",
+  "explanation": "梦想 = нутгийн аялгууг ном болгох; 收集资料 + 整理 тул хуваарь дүүрэн.",
+  "order_index": 27,
+  "id": "hsk5-l21-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n朋友问我：“你是怎么认识小周的？”我说：“那是一个偶然的机会。有一天我在书店找一本旧书，没想到小周也想买同一本，我们就聊了起来。后来我们偶尔见面，慢慢成了好朋友。”\n问：下面哪一项正确？",
+  "options": [
+   "小周是书店的老板",
+   "他们每天都见面",
+   "他们是大学同学",
+   "他们是在书店偶然认识的"
+  ],
+  "correct_answer": "他们是在书店偶然认识的",
+  "explanation": "一个偶然的机会 + 在书店 = санамсаргүй танилцсан; 偶尔见面 = хааяа уулзсан (өдөр бүр биш).",
+  "order_index": 28,
+  "id": "hsk5-l21-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 硬 / 说 / 是我没通知他",
+  "options": [
+   "硬他说是我没通知他。",
+   "他说硬是我没通知他。",
+   "他硬说是我没通知他。"
+  ],
+  "correct_answer": "他硬说是我没通知他。",
+  "explanation": "硬 нь үйл үг 说-ийн ӨМНӨ орно: 他硬说…; сэдэв (他) эхэнд. 硬说 = зөрүүдлэн хэлэх.",
+  "order_index": 29,
+  "id": "hsk5-l21-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我 / 要 / 尽快 / 把方案 / 做出来",
+  "options": [
+   "我把方案要做出来尽快。",
+   "要我尽快做出来把方案。",
+   "我要尽快把方案做出来。"
+  ],
+  "correct_answer": "我要尽快把方案做出来。",
+  "explanation": "Дараалал: сэдэв (我) + 要 + 尽快 + 把-бүтэц (把方案) + үйл үг (做出来). 尽快 нь 把-гийн өмнө.",
+  "order_index": 30,
+  "id": "hsk5-l21-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 在旧书摊上 / 偶然 / 发现了 / 这本书",
+  "options": [
+   "他偶然发现在旧书摊上了这本书。",
+   "他在旧书摊上偶然发现了这本书。",
+   "在旧书摊上他发现偶然了这本书。"
+  ],
+  "correct_answer": "他在旧书摊上偶然发现了这本书。",
+  "explanation": "Байрлалын нөхцөл (在旧书摊上) + 偶然 + үйл үг (发现了) + тусагдахуун. 偶然 нь үйл үгийн өмнө.",
+  "order_index": 31,
+  "id": "hsk5-l21-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 汉字叔叔 / 把网站 / 开放给 / 网友 / 免费下载",
+  "options": [
+   "汉字叔叔把网站开放给网友免费下载。",
+   "免费下载汉字叔叔把网站开放给网友。",
+   "汉字叔叔开放给把网站网友免费下载。"
+  ],
+  "correct_answer": "汉字叔叔把网站开放给网友免费下载。",
+  "explanation": "把-бүтэц: сэдэв (汉字叔叔) + 把网站 + 开放给 + 网友 + 免费下载 (зорилго). 开放给 = …-д нээлттэй өгөх.",
+  "order_index": 32,
+  "id": "hsk5-l21-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我平时加班不多 / 月底 / 偶尔 / 有一两天",
+  "options": [
+   "我平时加班不多，有一两天偶尔月底。",
+   "月底我平时加班不多，有一两天偶尔。",
+   "我平时加班不多，月底偶尔有一两天。"
+  ],
+  "correct_answer": "我平时加班不多，月底偶尔有一两天。",
+  "explanation": "Эхлээд нөхцөл (我平时加班不多), дараа нь цаг (月底) + 偶尔 + 有一两天. 偶尔 = хааяа.",
+  "order_index": 33,
+  "id": "hsk5-l21-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 选择了 / 去 / 北京师范大学 / 教书",
+  "options": [
+   "他选择了去北京师范大学教书。",
+   "他北京师范大学选择了教书去。",
+   "他去选择了教书北京师范大学。"
+  ],
+  "correct_answer": "他选择了去北京师范大学教书。",
+  "explanation": "选择了 + 去 + газар + үйлдэл: 他选择了去北京师范大学教书 = тэр Бээжингийн Багшийн Их Сургуульд багшлахыг сонгосон.",
+  "order_index": 34,
+  "id": "hsk5-l21-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
