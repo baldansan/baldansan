@@ -109,29 +109,6 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
       setStatus(wordStatus);
       setLoading(false);
 
-      // Мэдэхгүй үг дээр дарсан = цээжлэх үг → шууд давталтад нэмнэ (товч дарахгүй).
-      const alreadySaved = Boolean(wordStatus?.saved || wordStatus?.inSrs);
-      if (userId && !alreadySaved && !display?.is_function_word) {
-        setSaving(true);
-        const result = await saveWordFromLesson({
-          zh: word.zh,
-          pinyin: display?.pinyin || word.pinyin || undefined,
-          mn: display?.meaning_mn?.trim() || word.lessonMn?.trim() || undefined,
-        });
-        if (cancelled) return;
-        setSaving(false);
-        if (result.ok) {
-          setToast(
-            result.inCatalog === false
-              ? "Тольд алга — миний үгсэд хадгаллаа ✓"
-              : "Цээжлэх үгсэд нэмэгдлээ ✓"
-          );
-          setStatus(await getBichlegWordStatus(word.zh));
-          onSaved?.();
-        } else if (result.error) {
-          setToast(result.error);
-        }
-      }
     })();
 
     return () => {
@@ -167,12 +144,10 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
     if (result.ok) {
       if (result.isFunctionWord) {
         setToast("Дүрмийн үг тул давталтад оруулахгүй");
-      } else if (result.alreadyInSrs || result.linkedToSrs) {
-        setToast("Давталтад нэмэгдлээ ✓");
       } else if (result.inCatalog === false) {
-        setToast("Тольд алга — зөвхөн миний үгсэд хадгаллаа");
+        setToast("Тольд алга — зөвхөн миний үгсэд хадгаллаа ✓");
       } else {
-        setToast("Хадгаллаа ✓");
+        setToast("Цээжлэх үгсэд нэмэгдлээ ✓");
       }
       const nextStatus = await getBichlegWordStatus(word.zh);
       setStatus(nextStatus);
@@ -259,7 +234,7 @@ export function WordTapSheet({ word, anchor, onClose, onSaved }: Props) {
               className="bs-bichleg-sheet-btn bs-bichleg-sheet-btn--primary"
               onClick={() => void handleSave()}
             >
-              Цээжлэх
+              ＋ Цээжлэх үгсэд
             </button>
           )}
         </div>
