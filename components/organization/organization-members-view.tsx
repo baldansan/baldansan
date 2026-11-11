@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { MemberManagement } from "@/components/organization/member-management";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import type { OrganizationMember } from "@/lib/b2b/types";
 import { canManageOrganization } from "@/lib/supabase/organization-permissions";
 import {
@@ -39,14 +39,14 @@ export function OrganizationMembersView({ organizationId }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Loading members…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/organization/${organizationId}`}
@@ -89,6 +89,6 @@ export function OrganizationMembersView({ organizationId }: Props) {
         canManage={canManage}
         onChanged={() => void load()}
       />
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { DirectorDashboard } from "@/components/organization/director/director-dashboard";
 import { checkDashboardAccess } from "@/lib/organization/dashboard-access";
 import { loadOrganizationDashboard } from "@/lib/organization/dashboard-data";
@@ -20,7 +20,7 @@ export default async function OrganizationDirectorDashboardPage({ params }: Prop
 
   if (access !== "ok") {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl border border-slate-200 bg-white p-6">
           <h1 className="text-xl font-bold text-slate-900">Захирлын самбар</h1>
           <p className="mt-2 text-sm text-slate-600">
@@ -34,14 +34,14 @@ export default async function OrganizationDirectorDashboardPage({ params }: Prop
             {access === "login" ? "Нэвтрэх" : "Буцах"}
           </Link>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   const data = await loadOrganizationDashboard(organizationId);
   return (
-    <PublicPageShell active="help" showBottomNav={false} mainClassName="max-w-[1200px]!">
+    <TeacherShell active="help" showBottomNav={false} mainClassName="max-w-[1200px]!">
       <DirectorDashboard organizationId={organizationId} data={data} />
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

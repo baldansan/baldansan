@@ -27,7 +27,7 @@ function ensureStarted() {
   if (started || typeof window === "undefined") return;
   started = true;
   try {
-    const cached = window.sessionStorage.getItem("bs.workspace.role");
+    const cached = window.localStorage.getItem("bs.workspace.role");
     if (cached === "admin" || cached === "teacher") adminState = cached;
   } catch {
     /* storage unavailable */
@@ -37,7 +37,7 @@ function ensureStarted() {
     .then((j: { isAdmin?: boolean }) => {
       adminState = j.isAdmin === true ? "admin" : "teacher";
       try {
-        window.sessionStorage.setItem("bs.workspace.role", adminState);
+        window.localStorage.setItem("bs.workspace.role", adminState);
       } catch {
         /* ignore */
       }

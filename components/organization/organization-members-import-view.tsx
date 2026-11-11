@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { CsvImportCard } from "@/components/import/csv-import-card";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import type { BulkImportResult, OrganizationMemberImportRow } from "@/lib/import/csv-import";
 import { ORG_MEMBER_EXAMPLE_CSV } from "@/lib/import/csv-import";
 import type { OrganizationMemberRole, OrganizationMemberStatus } from "@/lib/b2b/types";
@@ -82,14 +82,14 @@ export function OrganizationMembersImportView({ organizationId }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Loading…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/organization/${organizationId}/members`}
@@ -139,6 +139,6 @@ export function OrganizationMembersImportView({ organizationId }: Props) {
         </Link>
         .
       </p>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

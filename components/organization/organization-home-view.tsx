@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { OrganizationCard } from "@/components/organization/organization-card";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
 import type { MyOrganization, OrganizationPilotSummary } from "@/lib/b2b/types";
 import { getMyOrganizationsWithRole } from "@/lib/supabase/organizations";
@@ -48,15 +48,15 @@ export function OrganizationHomeView() {
 
   if (loggedIn === null || loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Loading…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!loggedIn) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           <h1 className="text-2xl font-bold">Organization</h1>
           <p className="mt-2 text-sm text-slate-600">Нэвтэрсний дараа байгууллага харагдана.</p>
@@ -67,12 +67,12 @@ export function OrganizationHomeView() {
             Login
           </Link>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <h1 className="text-3xl font-bold tracking-tight">Organization</h1>
         <p className="mt-2 text-sm text-slate-600">
@@ -115,6 +115,6 @@ export function OrganizationHomeView() {
           ))}
         </div>
       )}
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

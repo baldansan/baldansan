@@ -6,7 +6,11 @@ import { AdminTopbar } from "@/components/admin/admin-topbar";
 import { PageHelpStrip } from "@/components/workspace/page-help-strip";
 import { ScheduleRunner } from "@/components/workspace/schedule-runner";
 import { WorkspaceBottomNav } from "@/components/workspace/workspace-bottom-nav";
-import { WorkspaceContext } from "@/components/workspace/workspace-context";
+import { TeacherPortalChrome } from "@/components/workspace/teacher-portal-chrome";
+import {
+  useWorkspaceRole,
+  WorkspaceContext,
+} from "@/components/workspace/workspace-context";
 
 /**
  * Ажлын талбарын хүрээ: зүүн цэс + дээд мөр + «Энэ хуудсанд» тайлбар.
@@ -27,6 +31,27 @@ export function AdminLayoutShell({
       {children}
     </>
   );
+  const role = useWorkspaceRole();
+  // Багш / сургалтын төвийн хүн (админ биш) бол тусдаа, цайвар «Багшийн самбар»
+  // хүрээгээр харуулна — зөвхөн өөрт нь хамаатай зүйлс. Админ өөрийн хүрээг харна.
+  if (!guard && role === "unknown") {
+    // Эрх тодорхой болтол аль ч хүрээг гаргахгүй — багшид админы харагдац,
+    // админд багшийн харагдац хоромхон ч анивчихгүй.
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-slate-50 text-sm text-slate-500">
+        Ачаалж байна…
+      </div>
+    );
+  }
+  if (!guard && role !== "admin") {
+    return (
+      <WorkspaceContext.Provider value={true}>
+        <TeacherPortalChrome>{body}</TeacherPortalChrome>
+        <WorkspaceBottomNav />
+      </WorkspaceContext.Provider>
+    );
+  }
+
   return (
     <WorkspaceContext.Provider value={true}>
       <div className="admin-layout flex min-h-screen">

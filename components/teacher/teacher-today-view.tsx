@@ -432,7 +432,7 @@ export function TeacherTodayView() {
             Анги, сурагч, даалгавраа удирдахын тулд эхлээд нэвтэрнэ үү.
           </p>
           <Link
-            href="/login"
+            href="/login?next=/teacher/today"
             className="mt-4 inline-flex rounded-full bg-emerald-600 px-5 py-2 text-sm font-semibold text-white"
           >
             Нэвтрэх

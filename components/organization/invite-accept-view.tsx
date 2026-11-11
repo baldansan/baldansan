@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { getCurrentUser } from "@/lib/supabase/auth";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
 import type { InvitationLookup } from "@/lib/b2b/types";
 import { buildInviteUrl } from "@/lib/organization/invite-url";
@@ -64,16 +64,16 @@ export function InviteAcceptView({ token }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Урилга ачааллаж байна…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (accepted) {
     const isStudent = accepted.kind === "classroom_student";
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-emerald-50 p-6 ring-1 ring-emerald-200">
           <h1 className="text-2xl font-bold text-emerald-900">Урилга амжилттай</h1>
           <p className="mt-2 text-sm text-emerald-800">
@@ -94,13 +94,13 @@ export function InviteAcceptView({ token }: Props) {
             {isStudent ? "Миний даалгавар →" : "Organization →"}
           </Link>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!invite) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           <h1 className="text-2xl font-bold">Урилга олдсонгүй</h1>
           <p className="mt-2 text-sm text-slate-600">
@@ -111,7 +111,7 @@ export function InviteAcceptView({ token }: Props) {
             Organization →
           </Link>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
@@ -119,7 +119,7 @@ export function InviteAcceptView({ token }: Props) {
   const nextPath = `/invite/${encodeURIComponent(token)}`;
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
         <h1 className="text-2xl font-bold text-slate-900">
           Таныг Бөөндөө Сурцгаая platform-д урьсан байна
@@ -195,6 +195,6 @@ export function InviteAcceptView({ token }: Props) {
           <p className="mt-3 rounded-lg bg-red-50 px-3 py-2 text-sm text-red-800">{error}</p>
         ) : null}
       </section>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { OrganizationClassroomList } from "@/components/organization/organization-classroom-list";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import type { Classroom } from "@/lib/classroom/types";
 import { canManageClassrooms } from "@/lib/supabase/organization-permissions";
 import {
@@ -38,14 +38,14 @@ export function OrganizationClassroomsPageView({ organizationId }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Loading…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/organization/${organizationId}`}
@@ -73,6 +73,6 @@ export function OrganizationClassroomsPageView({ organizationId }: Props) {
         organizationId={organizationId}
         canManage={canCreate}
       />
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

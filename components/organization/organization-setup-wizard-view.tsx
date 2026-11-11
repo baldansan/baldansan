@@ -5,7 +5,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { OnboardingTaskList } from "@/components/organization/onboarding-task-list";
 import { OrganizationRoleBadge } from "@/components/organization/organization-role-badge";
 import { PilotReadinessCard } from "@/components/organization/pilot-readiness-card";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { ReportExportCard } from "@/components/teacher/report-export-card";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
 import type { OnboardingTaskStatus, OrganizationDashboardData } from "@/lib/b2b/types";
@@ -166,15 +166,15 @@ export function OrganizationSetupWizardView({ organizationId }: Props) {
 
   if (loggedIn === null || loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Loading setup wizard…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!loggedIn) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           <h1 className="text-2xl font-bold">Organization setup wizard</h1>
           <p className="mt-2 text-sm text-slate-600">Sign in to continue.</p>
@@ -185,15 +185,15 @@ export function OrganizationSetupWizardView({ organizationId }: Props) {
             Login
           </Link>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!dash || !pilot) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">{error ?? "Organization not found."}</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
@@ -206,7 +206,7 @@ export function OrganizationSetupWizardView({ organizationId }: Props) {
   const pendingInvites = dash.members.filter((m) => m.status === "invited");
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/organization/${organizationId}`}
@@ -466,6 +466,6 @@ export function OrganizationSetupWizardView({ organizationId }: Props) {
           </button>
         </div>
       </section>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

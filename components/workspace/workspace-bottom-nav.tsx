@@ -19,6 +19,8 @@ const ITEMS = [
 /** Утсан дээр багшийн өдөр тутмын 5 үйлдэл эрхий хурууны доор. Компьютер дээр нуугдана. */
 export function WorkspaceBottomNav() {
   const pathname = usePathname();
+  // Нэвтрэх хуудсан дээр цэс хэрэггүй.
+  if (pathname === "/teacher") return null;
   return (
     <nav
       aria-label="Багшийн үндсэн цэс"

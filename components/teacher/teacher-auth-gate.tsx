@@ -52,7 +52,7 @@ export function TeacherAuthGate({
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Link
-                href="/login"
+                href="/login?next=/teacher/today"
                 className="rounded-full bg-emerald-500 px-5 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
               >
                 Нэвтрэх

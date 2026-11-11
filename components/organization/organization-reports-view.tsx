@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { OrganizationRoleBadge } from "@/components/organization/organization-role-badge";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { NeedsAttentionCard } from "@/components/teacher/needs-attention-card";
 import { ReportExportCard } from "@/components/teacher/report-export-card";
 import { TeacherMetricCard } from "@/components/teacher/teacher-metric-card";
@@ -70,15 +70,15 @@ export function OrganizationReportsView({ organizationId }: Props) {
 
   if (loggedIn === null || loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Loading organization reports…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!loggedIn) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           <h1 className="text-2xl font-bold">Organization reports</h1>
           <p className="mt-2 text-sm text-slate-600">Sign in to view school reports.</p>
@@ -89,13 +89,13 @@ export function OrganizationReportsView({ organizationId }: Props) {
             Login
           </Link>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!canAccess) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <section className="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
           <h1 className="text-2xl font-bold">Access denied</h1>
           <p className="mt-2 text-sm text-slate-600">
@@ -108,13 +108,13 @@ export function OrganizationReportsView({ organizationId }: Props) {
             ← Organization dashboard
           </Link>
         </section>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!data) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">{error ?? "Reports unavailable."}</p>
         <Link
           href={`/organization/${organizationId}`}
@@ -122,7 +122,7 @@ export function OrganizationReportsView({ organizationId }: Props) {
         >
           ← Organization dashboard
         </Link>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
@@ -134,7 +134,7 @@ export function OrganizationReportsView({ organizationId }: Props) {
   }));
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link
           href={`/organization/${organizationId}`}
@@ -352,6 +352,6 @@ export function OrganizationReportsView({ organizationId }: Props) {
           </ul>
         )}
       </section>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }

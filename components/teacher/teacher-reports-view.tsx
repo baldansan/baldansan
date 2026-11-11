@@ -237,7 +237,7 @@ export function TeacherReportsView() {
           <h1 className="text-2xl font-bold">Тайлан</h1>
           <p className="mt-2 text-sm text-slate-600">Тайлан харахын тулд нэвтэрнэ үү.</p>
           <Link
-            href="/login"
+            href="/login?next=/teacher/today"
             className="mt-4 inline-flex rounded-full bg-emerald-600 px-5 py-2 text-sm font-semibold text-white"
           >
             Нэвтрэх

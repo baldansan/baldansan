@@ -27,7 +27,7 @@ export function FloatingLocaleToggle() {
   const pathname = usePathname() ?? "";
   // Админ topbar өөрийн солигчтой; бичлэг тоглуулагч бүтэн дэлгэц
   // Хүүхдийн тоглуулагч: дээд мөрөнд од/алхам байдаг тул давхцуулахгүй
-  if (pathname.startsWith("/admin") || pathname.startsWith("/teacher/") || /^\/bichleg\/[^/]+/.test(pathname) || /^\/(kids\/(lesson|review)|courses\/yct-\d)(\/|$)/.test(pathname)) return null;
+  if (pathname.startsWith("/admin") || pathname === "/teacher" || pathname.startsWith("/teacher/") || pathname.startsWith("/organization") || /^\/bichleg\/[^/]+/.test(pathname) || /^\/(kids\/(lesson|review)|courses\/yct-\d)(\/|$)/.test(pathname)) return null;
   return (
     <div className="bs-desk-hide pointer-events-none fixed inset-x-0 top-0 z-[60] flex justify-end px-3 pt-[max(0.5rem,env(safe-area-inset-top))] print:hidden">
       <LocaleToggle className="pointer-events-auto" />

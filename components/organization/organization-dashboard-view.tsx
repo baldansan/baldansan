@@ -8,7 +8,7 @@ import { OrganizationDashboardCard } from "@/components/organization/organizatio
 import { OrganizationPermissionNote } from "@/components/organization/organization-permission-note";
 import { OrganizationRoleBadge } from "@/components/organization/organization-role-badge";
 import { PilotReadinessCard } from "@/components/organization/pilot-readiness-card";
-import { PublicPageShell } from "@/components/public-page-shell";
+import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { NeedsAttentionCard } from "@/components/teacher/needs-attention-card";
 import { TeacherMetricCard } from "@/components/teacher/teacher-metric-card";
 import type { OrganizationDashboardData } from "@/lib/b2b/types";
@@ -54,20 +54,20 @@ export function OrganizationDashboardView({ organizationId }: Props) {
 
   if (loading) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">Loading organization…</p>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
   if (!data) {
     return (
-      <PublicPageShell active="help" showBottomNav={false}>
+      <TeacherShell active="help" showBottomNav={false}>
         <p className="text-sm text-slate-600">{error ?? "Organization not found."}</p>
         <Link href="/organization" className="mt-2 text-sm text-emerald-600">
           ← Organizations
         </Link>
-      </PublicPageShell>
+      </TeacherShell>
     );
   }
 
@@ -79,7 +79,7 @@ export function OrganizationDashboardView({ organizationId }: Props) {
   const viewReports = canViewReports({ role });
 
   return (
-    <PublicPageShell active="help" showBottomNav={false}>
+    <TeacherShell active="help" showBottomNav={false}>
       <section>
         <Link href="/organization" className="text-sm text-slate-600 hover:text-emerald-600">
           ← Organizations
@@ -277,6 +277,6 @@ export function OrganizationDashboardView({ organizationId }: Props) {
           </Link>
         ) : null}
       </section>
-    </PublicPageShell>
+    </TeacherShell>
   );
 }
