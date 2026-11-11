@@ -32,7 +32,10 @@ export type KidsDialogue = {
   lines: { speaker: string; zh: string; pinyin: string; mn: string }[];
 };
 
+export type KidsSongKind = "song" | "chant" | "story" | "read";
+
 export type KidsSong = {
+  kind: KidsSongKind;
   title: string;
   audioUrl: string | null;
   imageUrl: string | null;
@@ -99,6 +102,8 @@ export type KidsLessonData = {
     choice: KidsChoiceItem[];
   };
   culture: { title: string; text: string; imageUrl: string | null } | null;
+  /** Хуруугаар бичиж сурах ханзууд (эхний шинэ үгсээс, 4 хүртэл). */
+  writeChars: { char: string; pinyin: string; mn: string }[];
 };
 
 type Rec = Record<string, unknown>;
@@ -214,7 +219,16 @@ export function buildKidsLessonData(
     const songLines = (dialogues.length ? sentences.filter((s) => (Number(s.paragraph) || 1) === lastPara) : sentences).map(
       (s) => ({ zh: str(s.zh), pinyin: str(s.pinyin), mn: str(s.mn) })
     );
+    const label = `${str(main.title_mn)} ${str(main.mongolianTitle)}`.toLowerCase();
+    const kind: KidsSongKind = /sing|дуу/.test(label)
+      ? "song"
+      : /chant|шүлэг|rhyme/.test(label)
+        ? "chant"
+        : /story|үлгэр/.test(label)
+          ? "story"
+          : "read";
     song = {
+      kind,
       title: str(main.mongolianTitle) || str(main.title) || "Дуу",
       audioUrl: audio(main.audioFile ?? main.audio),
       imageUrl: byId.get("sing") ?? byId.get("song") ?? bySection.get("song") ?? null,
@@ -314,6 +328,20 @@ export function buildKidsLessonData(
 
   const intro: Rec = isRec(texts.lessonIntro) ? texts.lessonIntro : {};
 
+  // ---- бичих ханз: эхлээд нэг ханзтай үгс, дараа нь олон ханзтай үгийн эхний ханз
+  const writeChars: KidsLessonData["writeChars"] = [];
+  const seenChars = new Set<string>();
+  const pushChar = (char: string, pinyin: string, mn: string) => {
+    if (writeChars.length >= 4 || seenChars.has(char) || !/^[\u4e00-\u9fff]$/.test(char)) return;
+    seenChars.add(char);
+    writeChars.push({ char, pinyin, mn });
+  };
+  for (const w of [...words, ...numbers]) if ([...w.zh].length === 1) pushChar(w.zh, w.pinyin, w.mn);
+  for (const w of words) {
+    const chars = [...w.zh];
+    if (chars.length > 1) pushChar(chars[0], "", w.mn ? `«${w.zh}» (${w.mn}) үгийн ханз` : "");
+  }
+
   return {
     lessonId: lesson.id,
     courseId: lesson.courseId,
@@ -330,5 +358,6 @@ export function buildKidsLessonData(
     keySentences,
     test: { audioUrl: testAudio, listening, judge, choice },
     culture,
+    writeChars,
   };
 }

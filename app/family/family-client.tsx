@@ -6,6 +6,7 @@ import { KidCreateForm } from "@/components/kids/kid-create-form";
 import { KidCurriculumProgress } from "@/components/kids/kid-curriculum-progress";
 import { KidEditForm } from "@/components/kids/kid-edit-form";
 import { KidPathFamilyCard } from "@/components/kids/kid-path-family-card";
+import { KidStarsReport } from "@/components/kids/kid-stars-report";
 import { KidPinPad } from "@/components/kids/kid-pin-pad";
 import { KidsServiceRoleNotice } from "@/components/kids/kids-service-role-notice";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -167,6 +168,7 @@ export function FamilyClient() {
                           <KidCurriculumProgress childUserId={kid.childUserId} classroomId={kid.classroomId} />
                         ) : null}
                         <KidPathFamilyCard childUserId={kid.childUserId} />
+                        <KidStarsReport childUserId={kid.childUserId} />
                       </div>
                     </div>
 

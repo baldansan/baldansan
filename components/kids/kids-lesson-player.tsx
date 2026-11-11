@@ -2,59 +2,38 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import type { KidsLessonData, KidsWord } from "@/lib/kids/lesson-data";
+import type { KidsDialogue, KidsLessonData, KidsWord } from "@/lib/kids/lesson-data";
 import { playAudioUrl, speakWithSavedSettings, stopPronunciation } from "@/lib/tts/play-pronunciation";
 import { markLessonCompletedSmart, markLessonStartedSmart, saveQuizResultSmart } from "@/lib/progress";
-import { addKidStars, getKidStars } from "@/lib/kids/stars";
+import { addKidStars, getKidStars, markKidLessonDone, stickerForLesson, syncKidStars } from "@/lib/kids/stars";
+import {
+  BigAudioButton,
+  C,
+  type GameResult,
+  type KidsSentence,
+  ListenPickGame,
+  ListenWordGame,
+  MatchGame,
+  MeaningGame,
+  MemoryGame,
+  NumberGame,
+  SentenceGame,
+  SpeedGame,
+  pickBuildableSentences,
+  say,
+} from "@/components/kids/kids-games";
+import { WritingPad } from "@/components/writing/writing-pad";
+import "@/components/writing/writing.css";
 
 /* ───────────────────────── helpers ───────────────────────── */
 
-type StepId = "start" | "video" | "words" | "numbers" | "talk" | "sing" | "play" | "test" | "done";
-
-function hashShuffle<T>(items: T[], seed: string): T[] {
-  let h = 2166136261;
-  for (const ch of seed) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0;
-  const out = [...items];
-  for (let i = out.length - 1; i > 0; i--) {
-    h = (Math.imul(h, 1103515245) + 12345) >>> 0;
-    const j = h % (i + 1);
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
-}
-
-async function say(word: { zh: string; audioUrl?: string | null }) {
-  stopPronunciation();
-  if (word.audioUrl) {
-    const r = await playAudioUrl(word.audioUrl);
-    if (r.ok) return;
-  }
-  await speakWithSavedSettings(word.zh, "zh-CN");
-}
-
-const C = {
-  bg: "bg-[#FFF7E6]",
-  card: "rounded-[28px] bg-white shadow-[0_10px_30px_rgba(120,80,0,0.10)] ring-1 ring-amber-100",
-  btn: "inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-lg font-extrabold shadow-md transition active:scale-95",
-  primary: "bg-orange-500 text-white hover:bg-orange-600",
-  soft: "bg-amber-100 text-amber-900 hover:bg-amber-200",
-  ok: "bg-emerald-500 text-white",
-  bad: "bg-rose-500 text-white",
-};
+type StepId = "start" | "video" | "words" | "numbers" | "talk" | "sing" | "write" | "play" | "test" | "done";
 
 function Stars({ n }: { n: number }) {
   return (
-    <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-3 py-1 text-sm font-extrabold text-amber-900">
+    <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-amber-100 px-3 py-1 text-sm font-extrabold text-amber-900">
       ⭐ {n}
     </span>
-  );
-}
-
-function BigAudioButton({ label, onClick, playing }: { label: string; onClick: () => void; playing?: boolean }) {
-  return (
-    <button type="button" onClick={onClick} className={`${C.btn} ${C.primary}`}>
-      <span className="text-2xl">{playing ? "⏸" : "🔊"}</span> {label}
-    </button>
   );
 }
 
@@ -79,6 +58,67 @@ function Confetti() {
   );
 }
 
+/* ───────────────────────── дүрүүд ───────────────────────── */
+
+const BOYS = new Set(["小明", "大卫", "男孩", "哥哥", "弟弟", "明明", "小力", "A", "儿子"]);
+const GIRLS = new Set(["小红", "玛丽", "月月", "女孩", "姐姐", "妹妹", "小丽", "B", "女儿"]);
+const SPEAKER_EMOJI: Record<string, string> = {
+  妈妈: "👩",
+  爸爸: "👨",
+  奶奶: "👵",
+  爷爷: "👴",
+  医生: "🧑‍⚕️",
+  护士: "👩‍⚕️",
+  服务员: "🧑‍🍳",
+  店员: "🧑‍💼",
+  客人: "🧑",
+  阿姨: "👩",
+  白阿姨: "👩",
+  叔叔: "👨",
+  熊猫: "🐼",
+  兔子: "🐰",
+  乌龟: "🐢",
+  狮子: "🦁",
+  猴子: "🐵",
+  小猫: "🐱",
+  小鸭: "🦆",
+  鸭妈妈: "🦆",
+  蝌蚪们: "🐸",
+  机器人: "🤖",
+  白雪公主: "👸",
+  星星: "⭐",
+};
+const FALLBACK_AVATARS = ["/kids/botgo-huu.jpg", "/kids/botgo-ohin.jpg", "/kids/botgo-bor.jpg"];
+
+type Avatar = { img?: string; emoji?: string };
+
+function avatarsFor(d: KidsDialogue): Avatar[] {
+  const used = new Set<string>();
+  const bySpeaker = new Map<string, Avatar>();
+  // Нэг ярианд хоёр дүр ижил зурагтай болохоос сэргийлж, давхцвал дараагийн сул ботгыг өгнө.
+  const free = (preferred?: string): string => {
+    if (preferred && !used.has(preferred)) return preferred;
+    return FALLBACK_AVATARS.find((a) => !used.has(a)) ?? preferred ?? FALLBACK_AVATARS[0];
+  };
+  return d.lines.map((l, i) => {
+    const key = l.speaker || `#${i % 2}`;
+    const hit = bySpeaker.get(key);
+    if (hit) return hit;
+    let av: Avatar;
+    if (/老师/.test(key)) av = { img: "/kids/temee.jpg" };
+    else if (SPEAKER_EMOJI[key]) av = { emoji: SPEAKER_EMOJI[key] };
+    else av = { img: free(BOYS.has(key) ? "/kids/botgo-huu.jpg" : GIRLS.has(key) ? "/kids/botgo-ohin.jpg" : undefined) };
+    if (av.img) used.add(av.img);
+    bySpeaker.set(key, av);
+    return av;
+  });
+}
+
+function AvatarBubble({ av, size = "h-12 w-12" }: { av: Avatar; size?: string }) {
+  if (av.img) return <img src={av.img} alt="" className={`${size} shrink-0 rounded-full object-cover ring-2 ring-white`} />;
+  return <span className={`${size} flex shrink-0 items-center justify-center rounded-full bg-white text-2xl ring-2 ring-amber-100`}>{av.emoji}</span>;
+}
+
 /* ───────────────────────── word card ───────────────────────── */
 
 function WordCard({ w, big }: { w: KidsWord; big?: boolean }) {
@@ -97,7 +137,7 @@ function WordCard({ w, big }: { w: KidsWord; big?: boolean }) {
       {w.imageUrl ? (
         <img src={w.imageUrl} alt={w.zh} className={`${big ? "h-44" : "h-28"} w-auto max-w-full rounded-2xl object-contain`} />
       ) : (
-        <div className={`${big ? "h-44" : "h-28"} flex w-full items-center justify-center rounded-2xl bg-amber-50 text-6xl`}>🀄</div>
+        <div className={`${big ? "h-32" : "h-24"} flex w-full items-center justify-center rounded-2xl bg-amber-50 text-6xl`}>🀄</div>
       )}
       <div className="text-sm font-semibold text-orange-500">{w.pinyin}</div>
       <div className={`${big ? "text-6xl" : "text-4xl"} font-extrabold leading-none text-[#2b1a05]`} lang="zh-CN">
@@ -109,200 +149,30 @@ function WordCard({ w, big }: { w: KidsWord; big?: boolean }) {
   );
 }
 
-/* ───────────────────────── games ───────────────────────── */
-
-type GameResult = { correct: number; total: number };
-
-/** Сонсоод зураг сонгох — үгийн аудио → 3 зургаас зөвийг */
-function ListenPickGame({ words, onDone }: { words: KidsWord[]; onDone: (r: GameResult) => void }) {
-  const pool = words.filter((w) => w.imageUrl);
-  const rounds = useMemo(() => hashShuffle(pool, "listen").slice(0, 6), [pool]);
-  const [i, setI] = useState(0);
-  const [picked, setPicked] = useState<string | null>(null);
-  const [correct, setCorrect] = useState(0);
-  const cur = rounds[i];
-  const options = useMemo(() => {
-    if (!cur) return [];
-    const others = hashShuffle(pool.filter((w) => w.zh !== cur.zh), `o${i}`).slice(0, 2);
-    return hashShuffle([cur, ...others], `s${i}${cur.zh}`);
-  }, [cur, i, pool]);
-  useEffect(() => {
-    if (cur) void say(cur);
-  }, [cur]);
-  if (pool.length < 3) return <p className="text-center text-amber-800">Энэ тоглоомд зурагтай үг хүрэлцэхгүй байна.</p>;
-  if (!cur) return null;
-  const pick = (zh: string) => {
-    if (picked) return;
-    setPicked(zh);
-    const ok = zh === cur.zh;
-    if (ok) setCorrect((c) => c + 1);
-    void speakWithSavedSettings(ok ? "对！" : cur.zh, "zh-CN");
-    setTimeout(() => {
-      if (i + 1 >= rounds.length) onDone({ correct: correct + (ok ? 1 : 0), total: rounds.length });
-      else {
-        setI(i + 1);
-        setPicked(null);
-      }
-    }, 1100);
-  };
-  return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="text-sm font-bold text-amber-800">
-        {i + 1} / {rounds.length}
-      </div>
-      <BigAudioButton label="Сонс" onClick={() => void say(cur)} />
-      <div className="grid w-full grid-cols-3 gap-3">
-        {options.map((o) => {
-          const state = !picked ? "" : o.zh === cur.zh ? "ring-4 ring-emerald-400" : o.zh === picked ? "ring-4 ring-rose-400 opacity-70" : "opacity-50";
-          return (
-            <button key={o.zh} type="button" onClick={() => pick(o.zh)} className={`${C.card} flex aspect-square items-center justify-center p-2 ${state}`}>
-              <img src={o.imageUrl ?? ""} alt="" className="max-h-full max-w-full object-contain" />
-            </button>
-          );
-        })}
-      </div>
-      {picked ? (
-        <div className={`text-2xl font-extrabold ${picked === cur.zh ? "text-emerald-600" : "text-rose-600"}`}>
-          {picked === cur.zh ? "Зөв! 🎉" : `Зөв нь: ${cur.zh} (${cur.mn})`}
-        </div>
-      ) : null}
-    </div>
-  );
-}
-
-/** Тооны тоглоом — тооны зураг → ханз сонгох / ханз → монгол */
-function NumberGame({ numbers, onDone }: { numbers: KidsWord[]; onDone: (r: GameResult) => void }) {
-  const rounds = useMemo(() => hashShuffle(numbers, "num").slice(0, 8), [numbers]);
-  const [i, setI] = useState(0);
-  const [picked, setPicked] = useState<string | null>(null);
-  const [correct, setCorrect] = useState(0);
-  const cur = rounds[i];
-  const mode = i % 2 === 0 ? "pic→zh" : "zh→mn";
-  const options = useMemo(() => {
-    if (!cur) return [];
-    const others = hashShuffle(numbers.filter((w) => w.zh !== cur.zh), `n${i}`).slice(0, 3);
-    return hashShuffle([cur, ...others], `ns${i}`);
-  }, [cur, i, numbers]);
-  if (numbers.length < 4) return null;
-  if (!cur) return null;
-  const pick = (zh: string) => {
-    if (picked) return;
-    setPicked(zh);
-    const ok = zh === cur.zh;
-    if (ok) setCorrect((c) => c + 1);
-    void say(cur);
-    setTimeout(() => {
-      if (i + 1 >= rounds.length) onDone({ correct: correct + (ok ? 1 : 0), total: rounds.length });
-      else {
-        setI(i + 1);
-        setPicked(null);
-      }
-    }, 1000);
-  };
-  return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="text-sm font-bold text-amber-800">
-        {i + 1} / {rounds.length}
-      </div>
-      <div className={`${C.card} flex h-44 w-44 items-center justify-center p-3`}>
-        {mode === "pic→zh" && cur.imageUrl ? (
-          <img src={cur.imageUrl} alt="" className="max-h-full max-w-full object-contain" />
-        ) : (
-          <span className="text-7xl font-extrabold text-[#2b1a05]" lang="zh-CN">
-            {cur.zh}
-          </span>
-        )}
-      </div>
-      <div className="text-lg font-bold text-[#6b3f1d]">{mode === "pic→zh" ? "Энэ хэд вэ? Ханзыг нь ол!" : "Монголоор хэд вэ?"}</div>
-      <div className="grid w-full grid-cols-2 gap-3">
-        {options.map((o) => {
-          const state = !picked ? "" : o.zh === cur.zh ? "bg-emerald-100 ring-4 ring-emerald-400" : o.zh === picked ? "bg-rose-100 ring-4 ring-rose-400" : "opacity-50";
-          return (
-            <button key={o.zh} type="button" onClick={() => pick(o.zh)} className={`${C.card} py-5 text-3xl font-extrabold text-[#2b1a05] ${state}`} lang={mode === "pic→zh" ? "zh-CN" : undefined}>
-              {mode === "pic→zh" ? o.zh : o.mn}
-            </button>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
-/** Холбох — ханз ↔ монгол */
-function MatchGame({ words, onDone }: { words: KidsWord[]; onDone: (r: GameResult) => void }) {
-  const set = useMemo(() => hashShuffle(words, "match").slice(0, 5), [words]);
-  const left = set;
-  const right = useMemo(() => hashShuffle(set, "match-r"), [set]);
-  const [sel, setSel] = useState<string | null>(null);
-  const [done, setDone] = useState<Set<string>>(new Set());
-  const [wrong, setWrong] = useState(0);
-  const [flash, setFlash] = useState<string | null>(null);
-  const tap = (side: "l" | "r", zh: string) => {
-    if (done.has(zh)) return;
-    if (side === "l") {
-      setSel(zh);
-      void say(set.find((w) => w.zh === zh)!);
-      return;
-    }
-    if (!sel) return;
-    if (sel === zh) {
-      const d = new Set(done);
-      d.add(zh);
-      setDone(d);
-      setSel(null);
-      if (d.size === set.length) setTimeout(() => onDone({ correct: set.length, total: set.length + wrong }), 600);
-    } else {
-      setWrong((w) => w + 1);
-      setFlash(zh);
-      setTimeout(() => setFlash(null), 500);
-    }
-  };
-  return (
-    <div className="grid grid-cols-2 gap-3">
-      <div className="flex flex-col gap-3">
-        {left.map((w) => (
-          <button
-            key={w.zh}
-            type="button"
-            onClick={() => tap("l", w.zh)}
-            className={`${C.card} py-4 text-3xl font-extrabold ${done.has(w.zh) ? "bg-emerald-100 opacity-60" : sel === w.zh ? "ring-4 ring-orange-400" : ""}`}
-            lang="zh-CN"
-          >
-            {w.zh}
-          </button>
-        ))}
-      </div>
-      <div className="flex flex-col gap-3">
-        {right.map((w) => (
-          <button
-            key={w.zh}
-            type="button"
-            onClick={() => tap("r", w.zh)}
-            className={`${C.card} py-4 text-lg font-bold text-[#6b3f1d] ${done.has(w.zh) ? "bg-emerald-100 opacity-60" : flash === w.zh ? "bg-rose-100 ring-4 ring-rose-400" : ""}`}
-          >
-            {w.mn}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 /* ───────────────────────── main player ───────────────────────── */
 
+const READ_LABEL: Record<NonNullable<KidsLessonData["song"]>["kind"], { label: string; emoji: string; done: string; hint: string; title: string }> = {
+  song: { label: "Дуу", emoji: "🎵", done: "Дууллаа! ⭐ ➜", hint: "Бичлэгийг асаагаад хамт дуулаарай!", title: "Хамтдаа дуулъя" },
+  chant: { label: "Шүлэг", emoji: "🥁", done: "Хэллээ! ⭐ ➜", hint: "Хэмнэлээр нь алга ташиж хамт хэлээрэй!", title: "Хэмнэлтэй шүлэг" },
+  story: { label: "Үлгэр", emoji: "📖", done: "Уншлаа! ⭐ ➜", hint: "Мөр бүр дээр дарж сонсоод, дагаж унш!", title: "Жижиг үлгэр" },
+  read: { label: "Унших", emoji: "📖", done: "Уншлаа! ⭐ ➜", hint: "Мөр бүр дээр дарж сонсоод, дагаж унш!", title: "Богино уншлага" },
+};
+
 export function KidsLessonPlayer({ data, backHref, adminPreview }: { data: KidsLessonData; backHref: string; adminPreview?: boolean }) {
+  const read = data.song ? READ_LABEL[data.song.kind] : null;
   const steps = useMemo<{ id: StepId; label: string; emoji: string }[]>(() => {
     const s: { id: StepId; label: string; emoji: string }[] = [{ id: "start", label: "Эхлэл", emoji: "👋" }];
     if (data.videoUrl) s.push({ id: "video", label: "Видео", emoji: "📺" });
     if (data.words.length) s.push({ id: "words", label: "Үг", emoji: "🀄" });
     if (data.numbers.length) s.push({ id: "numbers", label: "Тоо", emoji: "🔢" });
     if (data.dialogues.length) s.push({ id: "talk", label: "Яриа", emoji: "💬" });
-    if (data.song) s.push({ id: "sing", label: "Дуу", emoji: "🎵" });
+    if (data.song && read) s.push({ id: "sing", label: read.label, emoji: read.emoji });
+    if (data.writeChars.length) s.push({ id: "write", label: "Бичих", emoji: "✍️" });
     s.push({ id: "play", label: "Тоглоом", emoji: "🎮" });
     if (data.test.listening.length || data.test.judge.length || data.test.choice.length) s.push({ id: "test", label: "Шалгалт", emoji: "🏁" });
     s.push({ id: "done", label: "Од", emoji: "⭐" });
     return s;
-  }, [data]);
+  }, [data, read]);
 
   const [idx, setIdx] = useState(0);
   const step = steps[idx].id;
@@ -310,12 +180,25 @@ export function KidsLessonPlayer({ data, backHref, adminPreview }: { data: KidsL
   const [totalStars, setTotalStars] = useState(0);
   const [confetti, setConfetti] = useState(false);
   const topRef = useRef<HTMLDivElement>(null);
+  const stepBarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let alive = true;
     const raf = requestAnimationFrame(() => setTotalStars(getKidStars()));
     void markLessonStartedSmart(data.lessonId);
-    return () => cancelAnimationFrame(raf);
+    void syncKidStars().then((n) => {
+      if (alive) setTotalStars(n);
+    });
+    return () => {
+      alive = false;
+      cancelAnimationFrame(raf);
+    };
   }, [data.lessonId]);
+
+  useEffect(() => {
+    const el = stepBarRef.current?.querySelector<HTMLElement>(`[data-step="${idx}"]`);
+    el?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  }, [idx]);
 
   const earn = useCallback(
     (n: number) => {
@@ -336,64 +219,43 @@ export function KidsLessonPlayer({ data, backHref, adminPreview }: { data: KidsL
 
   return (
     <div className={`${C.bg} min-h-screen pb-28`}>
-      <style>{`@keyframes kids-fall{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(120vh) rotate(540deg)}}`}</style>
+      <style>{`@keyframes kids-fall{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(120vh) rotate(540deg)}}@keyframes kids-pop{0%{transform:scale(.3) rotate(-20deg);opacity:0}70%{transform:scale(1.15) rotate(6deg);opacity:1}100%{transform:scale(1) rotate(0)}}@keyframes kids-in{0%{transform:translateY(10px);opacity:0}100%{transform:translateY(0);opacity:1}}`}</style>
       {confetti ? <Confetti /> : null}
       {/* top bar */}
       <div ref={topRef} className="sticky top-0 z-20 border-b border-amber-100 bg-[#FFF7E6]/95 backdrop-blur">
-        <div className="mx-auto flex max-w-xl items-center justify-between gap-2 px-4 py-2">
+        <div className="mx-auto flex max-w-xl items-center justify-between gap-2 px-4 pt-2">
           <Link href={backHref} className="rounded-full bg-white px-3 py-1.5 text-sm font-bold text-amber-900 ring-1 ring-amber-200">
             ← Гарах
           </Link>
-          <div className="flex items-center gap-1 overflow-x-auto">
-            {steps.map((s, i) => (
-              <button
-                key={s.id}
-                type="button"
-                onClick={() => {
-                  stopPronunciation();
-                  setIdx(i);
-                }}
-                className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-lg ${i === idx ? "bg-orange-500 shadow" : i < idx ? "bg-emerald-200" : "bg-white ring-1 ring-amber-200"}`}
-                title={s.label}
-              >
-                {s.emoji}
-              </button>
-            ))}
-          </div>
           <Stars n={totalStars} />
+        </div>
+        <div ref={stepBarRef} className="mx-auto flex max-w-xl items-center gap-1.5 overflow-x-auto px-4 py-2">
+          {steps.map((s, i) => (
+            <button
+              key={s.id}
+              type="button"
+              data-step={i}
+              onClick={() => {
+                stopPronunciation();
+                setIdx(i);
+              }}
+              className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-xl ${i === idx ? "bg-orange-500 shadow" : i < idx ? "bg-emerald-200" : "bg-white ring-1 ring-amber-200"}`}
+              title={s.label}
+              aria-label={s.label}
+            >
+              {s.emoji}
+            </button>
+          ))}
         </div>
       </div>
       {adminPreview ? <div className="bg-amber-200 px-4 py-1 text-center text-xs font-bold text-amber-900">Admin preview — ноорог хичээл</div> : null}
 
       <div className="mx-auto max-w-xl px-4 pt-5">
-        <h1 className="mb-1 text-center text-sm font-bold uppercase tracking-wide text-orange-500">{steps[idx].emoji} {steps[idx].label}</h1>
+        <h1 className="mb-3 text-center text-sm font-bold uppercase tracking-wide text-orange-500">
+          {steps[idx].emoji} {steps[idx].label}
+        </h1>
 
-        {/* ── START ── */}
-        {step === "start" ? (
-          <div className="flex flex-col items-center gap-5 text-center">
-            {data.heroUrl ? <img src={data.heroUrl} alt="" className="w-full rounded-[28px] shadow-lg" /> : null}
-            <div className="text-6xl font-extrabold text-[#2b1a05]" lang="zh-CN">
-              {data.titleZh}
-            </div>
-            <div className="text-2xl font-bold text-[#6b3f1d]">{data.title.replace(/^.*—\s*/, "")}</div>
-            {data.teacherIntro ? (
-              <div className={`${C.card} p-5 text-left text-base leading-7 text-[#3b2410]`}>
-                <div className="mb-2 text-2xl">🐫 Тэмээ багш:</div>
-                {data.teacherIntro}
-              </div>
-            ) : null}
-            <button type="button" onClick={next} className={`${C.btn} ${C.primary} text-2xl`}>
-              Эхэлье! 🚀
-            </button>
-            <Link href="/kids/pinyin" className={`${C.card} flex w-full items-center gap-3 p-4 text-left`}>
-              <span className="text-4xl">🔤</span>
-              <span>
-                <span className="block text-lg font-extrabold text-[#2b1a05]">Дуудлагын суурь</span>
-                <span className="block text-sm text-[#6b3f1d]">a o e · bo po mo fo · 4 аялгуу — сонсоод дагаж хэл</span>
-              </span>
-            </Link>
-          </div>
-        ) : null}
+        {step === "start" ? <StartStep data={data} onNext={next} /> : null}
 
         {/* ── VIDEO ── */}
         {step === "video" && data.videoUrl ? (
@@ -406,62 +268,21 @@ export function KidsLessonPlayer({ data, backHref, adminPreview }: { data: KidsL
           </div>
         ) : null}
 
-        {/* ── WORDS ── */}
         {step === "words" ? <WordsStep words={data.words} onNext={next} onEarn={earn} /> : null}
         {step === "numbers" ? <WordsStep words={data.numbers} onNext={next} onEarn={earn} grid /> : null}
 
-        {/* ── TALK ── */}
-        {step === "talk" ? (
-          <div className="flex flex-col gap-5">
-            {data.dialogues.map((d) => (
-              <div key={d.id} className={`${C.card} overflow-hidden`}>
-                {d.imageUrl ? <img src={d.imageUrl} alt="" className="w-full object-cover" /> : null}
-                <div className="p-5">
-                  <div className="mb-1 text-lg font-extrabold text-[#2b1a05]">{d.title}</div>
-                  {d.scene ? <div className="mb-3 text-sm text-amber-800">{d.scene}</div> : null}
-                  <div className="flex flex-col gap-2">
-                    {d.lines.map((l, i) => (
-                      <button
-                        key={i}
-                        type="button"
-                        onClick={() => void speakWithSavedSettings(l.zh, "zh-CN")}
-                        className={`flex items-start gap-3 rounded-2xl p-3 text-left ${i % 2 ? "bg-sky-50" : "bg-amber-50"}`}
-                      >
-                        <span className="text-2xl">{i % 2 ? "👧" : "👦"}</span>
-                        <span>
-                          <span className="block text-xs font-semibold text-orange-500">{l.pinyin}</span>
-                          <span className="block text-3xl font-extrabold text-[#2b1a05]" lang="zh-CN">
-                            {l.zh}
-                          </span>
-                          <span className="block text-base font-bold text-[#6b3f1d]">{l.mn}</span>
-                        </span>
-                      </button>
-                    ))}
-                  </div>
-                  {d.audioUrl ? (
-                    <div className="mt-3">
-                      <audio src={d.audioUrl} controls preload="none" className="w-full" />
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            ))}
-            <p className="text-center text-sm text-amber-800">Мөр бүр дээр дарж сонсоод, чангаар давт!</p>
-            <button type="button" onClick={() => { earn(1); next(); }} className={`${C.btn} ${C.primary} self-center`}>
-              Давтлаа! ⭐ ➜
-            </button>
-          </div>
-        ) : null}
+        {step === "talk" ? <TalkStep dialogues={data.dialogues} onDone={() => { earn(1); next(); }} /> : null}
 
-        {/* ── SING ── */}
-        {step === "sing" && data.song ? (
+        {/* ── SING / READ ── */}
+        {step === "sing" && data.song && read ? (
           <div className="flex flex-col items-center gap-4">
-            {data.song.imageUrl ? <img src={data.song.imageUrl} alt="" className="h-40 rounded-2xl" /> : <div className="text-7xl">🎤</div>}
-            <div className="text-2xl font-extrabold text-[#2b1a05]">{data.song.title}</div>
+            {data.song.imageUrl ? <img src={data.song.imageUrl} alt="" className="h-40 rounded-2xl" /> : <div className="text-7xl">{data.song.kind === "song" ? "🎤" : read.emoji}</div>}
+            <div className="text-center text-2xl font-extrabold text-[#2b1a05]">{read.title}</div>
+            <p className="text-center text-sm font-bold text-amber-800">{read.hint}</p>
             {data.song.audioUrl ? <audio src={data.song.audioUrl} controls preload="none" className="w-full" /> : null}
-            <div className={`${C.card} w-full p-5`}>
+            <div className={`${C.card} w-full p-4`}>
               {data.song.lines.map((l, i) => (
-                <button key={i} type="button" onClick={() => void speakWithSavedSettings(l.zh, "zh-CN")} className="mb-3 block w-full rounded-2xl p-2 text-left hover:bg-amber-50">
+                <button key={i} type="button" onClick={() => void speakWithSavedSettings(l.zh, "zh-CN")} className="mb-2 block w-full rounded-2xl p-2 text-left active:bg-amber-50">
                   <span className="block text-xs font-semibold text-orange-500">{l.pinyin}</span>
                   <span className="block text-2xl font-extrabold text-[#2b1a05]" lang="zh-CN">
                     {l.zh}
@@ -471,12 +292,13 @@ export function KidsLessonPlayer({ data, backHref, adminPreview }: { data: KidsL
               ))}
             </div>
             <button type="button" onClick={() => { earn(1); next(); }} className={`${C.btn} ${C.primary}`}>
-              Дуулсан! ⭐ ➜
+              {read.done}
             </button>
           </div>
         ) : null}
 
-        {/* ── PLAY ── */}
+        {step === "write" ? <WriteStep chars={data.writeChars} onEarn={earn} onNext={next} /> : null}
+
         {step === "play" ? <PlayStep data={data} onEarn={earn} onNext={next} /> : null}
 
         {/* ── TEST ── */}
@@ -525,6 +347,68 @@ export function KidsLessonPlayer({ data, backHref, adminPreview }: { data: KidsL
   );
 }
 
+/* ───────────────────────── START ───────────────────────── */
+
+/** Урт танилцуулгыг богино өгүүлбэрүүдэд хуваана. */
+function splitIntro(text: string): string[] {
+  const parts = text
+    .split(/(?<=[.!?…])\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  // Маш богино хэсгийг («Бэлэн үү?») өмнөхтэй нь нийлүүлнэ.
+  const out: string[] = [];
+  for (const p of parts) {
+    if (out.length && (p.length < 18 || out[out.length - 1].length < 18)) out[out.length - 1] += " " + p;
+    else out.push(p);
+  }
+  return out;
+}
+
+function StartStep({ data, onNext }: { data: KidsLessonData; onNext: () => void }) {
+  const bubbles = useMemo(() => splitIntro(data.teacherIntro), [data.teacherIntro]);
+  const [shown, setShown] = useState(2);
+  const visible = bubbles.slice(0, shown);
+  const more = shown < bubbles.length;
+  return (
+    <div className="flex flex-col items-center gap-5 text-center">
+      {data.heroUrl ? <img src={data.heroUrl} alt="" className="w-full rounded-[28px] shadow-lg" /> : null}
+      <div className="text-5xl font-extrabold text-[#2b1a05]" lang="zh-CN">
+        {data.titleZh}
+      </div>
+      <div className="text-2xl font-bold text-[#6b3f1d]">{data.title.replace(/^.*—\s*/, "")}</div>
+      {visible.length ? (
+        <div className="flex w-full items-start gap-3 text-left">
+          <img src="/kids/temee.jpg" alt="Тэмээ багш" className="h-16 w-16 shrink-0 rounded-full object-cover ring-4 ring-white shadow" />
+          <div className="flex flex-1 flex-col gap-2">
+            {visible.map((b, i) => (
+              <div key={i} className="rounded-[22px] rounded-tl-md bg-white px-4 py-3 text-lg font-semibold leading-7 text-[#3b2410] shadow-sm ring-1 ring-amber-100" style={{ animation: "kids-in .35s ease-out" }}>
+                {b}
+              </div>
+            ))}
+            {more ? (
+              <button type="button" onClick={() => setShown((n) => n + 1)} className="self-start rounded-full bg-amber-100 px-4 py-2 text-base font-extrabold text-amber-900 active:scale-95">
+                Цааш сонсъё ▸
+              </button>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
+      <button type="button" onClick={onNext} className={`${C.btn} ${C.primary} text-2xl`}>
+        Эхэлье! 🚀
+      </button>
+      <Link href="/kids/pinyin" className={`${C.card} flex w-full items-center gap-3 p-4 text-left`}>
+        <span className="text-4xl">🔤</span>
+        <span>
+          <span className="block text-lg font-extrabold text-[#2b1a05]">Дуудлагын суурь</span>
+          <span className="block text-sm text-[#6b3f1d]">a o e · bo po mo fo · 4 аялгуу — сонсоод дагаж хэл</span>
+        </span>
+      </Link>
+    </div>
+  );
+}
+
+/* ───────────────────────── WORDS ───────────────────────── */
+
 function WordsStep({ words, onNext, onEarn, grid }: { words: KidsWord[]; onNext: () => void; onEarn: (n: number) => void; grid?: boolean }) {
   const [i, setI] = useState(0);
   const heard = useRef<Set<string>>(new Set());
@@ -553,8 +437,13 @@ function WordsStep({ words, onNext, onEarn, grid }: { words: KidsWord[]; onNext:
   if (!w) return null;
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className="text-sm font-bold text-amber-800">
-        {i + 1} / {words.length}
+      <div className="flex w-full items-center gap-2">
+        <div className="h-3 flex-1 overflow-hidden rounded-full bg-amber-100">
+          <div className="h-full rounded-full bg-orange-400 transition-all" style={{ width: `${(100 * (i + 1)) / words.length}%` }} />
+        </div>
+        <span className="text-sm font-bold text-amber-800">
+          {i + 1} / {words.length}
+        </span>
       </div>
       <WordCard w={w} big />
       {w.exampleZh ? (
@@ -584,44 +473,268 @@ function WordsStep({ words, onNext, onEarn, grid }: { words: KidsWord[]; onNext:
   );
 }
 
-function PlayStep({ data, onEarn, onNext }: { data: KidsLessonData; onEarn: (n: number) => void; onNext: () => void }) {
-  const games = useMemo(() => {
-    const g: { id: string; label: string; emoji: string; ok: boolean }[] = [
-      { id: "listen", label: "Сонсоод зураг ол", emoji: "👂", ok: [...data.words, ...data.numbers].filter((w) => w.imageUrl).length >= 3 },
-      { id: "numbers", label: "Тооны тоглоом", emoji: "🖐", ok: data.numbers.length >= 4 },
-      { id: "match", label: "Холбох", emoji: "🔗", ok: [...data.words, ...data.numbers].length >= 4 },
-    ];
-    return g.filter((x) => x.ok);
-  }, [data]);
-  const [active, setActive] = useState<string | null>(null);
-  const [results, setResults] = useState<Record<string, GameResult>>({});
-  const finish = (id: string, r: GameResult) => {
-    setResults((p) => ({ ...p, [id]: r }));
-    const s = r.total ? Math.max(1, Math.round((3 * r.correct) / r.total)) : 1;
-    onEarn(s);
-    setActive(null);
+/* ───────────────────────── TALK (зурагт ном) ───────────────────────── */
+
+function TalkStep({ dialogues, onDone }: { dialogues: KidsDialogue[]; onDone: () => void }) {
+  const [di, setDi] = useState(0);
+  const [shown, setShown] = useState(1);
+  const [playing, setPlaying] = useState(false);
+  const d = dialogues[di];
+  const avatars = useMemo(() => (d ? avatarsFor(d) : []), [d]);
+  const lastRef = useRef<HTMLButtonElement>(null);
+  const line = d?.lines[shown - 1];
+  useEffect(() => {
+    if (line) void speakWithSavedSettings(line.zh, "zh-CN");
+    lastRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [line]);
+  if (!d) return null;
+  const allShown = shown >= d.lines.length;
+  const lastDialogue = di + 1 >= dialogues.length;
+  const playWhole = async () => {
+    if (!d.audioUrl) return;
+    stopPronunciation();
+    setPlaying(true);
+    await playAudioUrl(d.audioUrl);
+    setPlaying(false);
   };
-  if (active === "listen") return <ListenPickGame words={[...data.words, ...data.numbers]} onDone={(r) => finish("listen", r)} />;
-  if (active === "numbers") return <NumberGame numbers={data.numbers} onDone={(r) => finish("numbers", r)} />;
-  if (active === "match") return <MatchGame words={[...data.words, ...data.numbers]} onDone={(r) => finish("match", r)} />;
+  const nextDialogue = () => {
+    stopPronunciation();
+    setDi(di + 1);
+    setShown(1);
+  };
   return (
     <div className="flex flex-col gap-4">
-      <p className="text-center text-base font-bold text-[#6b3f1d]">Тоглоом бүр ⭐ өгнө!</p>
-      {games.map((g) => (
-        <button key={g.id} type="button" onClick={() => setActive(g.id)} className={`${C.card} flex items-center gap-4 p-5 text-left`}>
-          <span className="text-5xl">{g.emoji}</span>
-          <span className="flex-1">
-            <span className="block text-xl font-extrabold text-[#2b1a05]">{g.label}</span>
+      {dialogues.length > 1 ? (
+        <div className="flex justify-center gap-2">
+          {dialogues.map((x, k) => (
+            <span key={x.id} className={`h-2.5 rounded-full transition-all ${k === di ? "w-8 bg-orange-500" : k < di ? "w-2.5 bg-emerald-300" : "w-2.5 bg-amber-200"}`} />
+          ))}
+        </div>
+      ) : null}
+      <div className={`${C.card} overflow-hidden`}>
+        {d.imageUrl ? <img src={d.imageUrl} alt="" className="w-full object-cover" /> : null}
+        <div className="p-4">
+          <div className="text-lg font-extrabold text-[#2b1a05]">{d.title}</div>
+          {d.scene ? <div className="mt-1 text-sm leading-6 text-amber-800">{d.scene}</div> : null}
+        </div>
+      </div>
+      <div className="flex flex-col gap-3">
+        {d.lines.slice(0, shown).map((l, i) => {
+          const right = i % 2 === 1;
+          return (
+            <button
+              key={i}
+              ref={i === shown - 1 ? lastRef : undefined}
+              type="button"
+              onClick={() => void speakWithSavedSettings(l.zh, "zh-CN")}
+              className={`flex items-end gap-2 text-left ${right ? "flex-row-reverse" : ""}`}
+              style={{ animation: "kids-in .35s ease-out" }}
+            >
+              <span className="flex flex-col items-center gap-0.5">
+                <AvatarBubble av={avatars[i]} />
+                {l.speaker ? (
+                  <span className="text-[10px] font-bold text-amber-700" lang="zh-CN">
+                    {l.speaker}
+                  </span>
+                ) : null}
+              </span>
+              <span className={`max-w-[80%] rounded-[22px] px-4 py-3 shadow-sm ring-1 ${right ? "rounded-br-md bg-sky-50 ring-sky-100" : "rounded-bl-md bg-white ring-amber-100"}`}>
+                <span className="block text-xs font-semibold text-orange-500">{l.pinyin}</span>
+                <span className="block text-2xl font-extrabold leading-snug text-[#2b1a05]" lang="zh-CN">
+                  {l.zh}
+                </span>
+                <span className="block text-base font-bold text-[#6b3f1d]">{l.mn}</span>
+              </span>
+            </button>
+          );
+        })}
+      </div>
+      <div className="flex flex-col items-center gap-3 pt-1">
+        {!allShown ? (
+          <button type="button" onClick={() => setShown(shown + 1)} className={`${C.btn} ${C.primary}`}>
+            Дараагийнх ▸
+          </button>
+        ) : (
+          <>
+            <p className="text-center text-sm font-bold text-amber-800">Мөр бүр дээр дарж сонсоод, чангаар давт!</p>
+            {d.audioUrl ? (
+              <button type="button" onClick={() => void playWhole()} className={`${C.btn} ${C.soft}`}>
+                <span className="text-2xl">{playing ? "🎧" : "▶️"}</span> Бүтнээр нь сонсъё
+              </button>
+            ) : null}
+            {lastDialogue ? (
+              <button type="button" onClick={onDone} className={`${C.btn} ${C.primary}`}>
+                Давтлаа! ⭐ ➜
+              </button>
+            ) : (
+              <button type="button" onClick={nextDialogue} className={`${C.btn} ${C.primary}`}>
+                Дараагийн яриа ➜
+              </button>
+            )}
+          </>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ───────────────────────── WRITE ───────────────────────── */
+
+function WriteStep({ chars, onEarn, onNext }: { chars: KidsLessonData["writeChars"]; onEarn: (n: number) => void; onNext: () => void }) {
+  const [i, setI] = useState(0);
+  const [phase, setPhase] = useState<"watch" | "trace">("watch");
+  const [finished, setFinished] = useState(false);
+  const cur = chars[i];
+  if (!cur) return null;
+  const onPadDone = () => {
+    if (phase === "watch") {
+      setTimeout(() => setPhase("trace"), 500);
+      return;
+    }
+    setFinished(true);
+    onEarn(1);
+    void speakWithSavedSettings(cur.char, "zh-CN");
+  };
+  const advance = () => {
+    if (i + 1 >= chars.length) {
+      onNext();
+      return;
+    }
+    setI(i + 1);
+    setPhase("watch");
+    setFinished(false);
+  };
+  return (
+    <div className="flex flex-col items-center gap-4">
+      <div className="flex gap-2">
+        {chars.map((c, k) => (
+          <span
+            key={c.char}
+            className={`flex h-11 w-11 items-center justify-center rounded-2xl text-2xl font-extrabold ${k === i ? "bg-orange-500 text-white" : k < i ? "bg-emerald-200 text-emerald-900" : "bg-white text-amber-300 ring-1 ring-amber-200"}`}
+            lang="zh-CN"
+          >
+            {c.char}
+          </span>
+        ))}
+      </div>
+      <button type="button" onClick={() => void speakWithSavedSettings(cur.char, "zh-CN")} className="text-center">
+        {cur.pinyin ? <span className="block text-sm font-semibold text-orange-500">{cur.pinyin}</span> : null}
+        <span className="block text-lg font-extrabold text-[#6b3f1d]">{cur.mn}</span>
+      </button>
+      <p className="text-center text-base font-bold text-[#6b3f1d]">
+        {finished ? "Гоё бичлээ! 🎉" : phase === "watch" ? "👀 Эхлээд хэрхэн бичихийг хар" : "✍️ Одоо хуруугаараа дагаж бич"}
+      </p>
+      <div className="flex w-full justify-center">
+        <div className="w-full max-w-[300px]">
+          <WritingPad key={`${cur.char}-${phase}`} char={cur.char} phase={phase} onDone={onPadDone} maxSize={300} />
+        </div>
+      </div>
+      {finished ? (
+        <button type="button" onClick={advance} className={`${C.btn} ${C.primary}`}>
+          {i + 1 >= chars.length ? "Бичиж чадлаа! ➜" : "Дараагийн ханз ➜"}
+        </button>
+      ) : phase === "watch" ? (
+        <button type="button" onClick={() => setPhase("trace")} className={`${C.btn} ${C.soft}`}>
+          Би бичье ✍️
+        </button>
+      ) : null}
+    </div>
+  );
+}
+
+/* ───────────────────────── PLAY ───────────────────────── */
+
+type GameId = "listen" | "listenWord" | "meaning" | "match" | "memory" | "sentence" | "speed" | "numbers";
+
+function PlayStep({ data, onEarn, onNext }: { data: KidsLessonData; onEarn: (n: number) => void; onNext: () => void }) {
+  const all = useMemo(() => [...data.words, ...data.numbers], [data]);
+  const sentences = useMemo<KidsSentence[]>(
+    () => [
+      ...data.dialogues.flatMap((d) => d.lines.map((l) => ({ zh: l.zh, pinyin: l.pinyin, mn: l.mn }))),
+      ...(data.song?.lines ?? []),
+      ...data.words.filter((w) => w.exampleZh && w.exampleMn).map((w) => ({ zh: w.exampleZh!, pinyin: "", mn: w.exampleMn! })),
+    ],
+    [data]
+  );
+  const games = useMemo(() => {
+    const g: { id: GameId; label: string; hint: string; emoji: string; ok: boolean }[] = [
+      { id: "listen", label: "Сонсоод зураг ол", hint: "Үгийг сонсоод зөв зургийг дар", emoji: "👂", ok: all.filter((w) => w.imageUrl).length >= 3 },
+      { id: "listenWord", label: "Сонсоод ханз ол", hint: "Үгийг сонсоод зөв ханзыг дар", emoji: "🎧", ok: all.length >= 4 },
+      { id: "meaning", label: "Утгыг ол", hint: "Ханз юу гэсэн үг вэ?", emoji: "💡", ok: all.length >= 4 },
+      { id: "numbers", label: "Тооны тоглоом", hint: "Тоог ханзаар нь ол", emoji: "🖐", ok: data.numbers.length >= 4 },
+      { id: "match", label: "Холбох", hint: "Ханзыг утгатай нь холбо", emoji: "🔗", ok: all.length >= 4 },
+      { id: "memory", label: "Санах ой", hint: "Хөзөр эргүүлж хосыг ол", emoji: "🧠", ok: all.length >= 4 },
+      { id: "sentence", label: "Өгүүлбэр эвлүүл", hint: "Үгсийг зөв дараалалд оруул", emoji: "🧩", ok: pickBuildableSentences(sentences).length >= 2 },
+      { id: "speed", label: "Хурдан!", hint: "40 секундэд хэдийг чадах вэ?", emoji: "⚡", ok: all.length >= 4 },
+    ];
+    return g.filter((x) => x.ok);
+  }, [all, data.numbers.length, sentences]);
+  const [active, setActive] = useState<{ id: GameId; seed: string } | null>(null);
+  const [results, setResults] = useState<Record<string, GameResult>>({});
+  const [lastStars, setLastStars] = useState<number | null>(null);
+  const finish = (id: GameId, r: GameResult) => {
+    const firstTime = !results[id];
+    setResults((p) => ({ ...p, [id]: r }));
+    const s = r.total ? Math.max(1, Math.round((3 * r.correct) / r.total)) : 1;
+    // Дахин тоглоход од давхар өгөхгүй (эхний удаа л).
+    if (firstTime) onEarn(s);
+    setLastStars(firstTime ? s : 0);
+    setActive(null);
+  };
+  if (active) {
+    const done = (r: GameResult) => finish(active.id, r);
+    const seed = active.seed;
+    return (
+      <div className="flex flex-col gap-4">
+        <button type="button" onClick={() => setActive(null)} className="self-start rounded-full bg-white px-3 py-1.5 text-sm font-bold text-amber-900 ring-1 ring-amber-200">
+          ← Тоглоомууд
+        </button>
+        {active.id === "listen" ? <ListenPickGame words={all} seed={seed} onDone={done} /> : null}
+        {active.id === "listenWord" ? <ListenWordGame words={all} seed={seed} onDone={done} /> : null}
+        {active.id === "meaning" ? <MeaningGame words={all} seed={seed} onDone={done} /> : null}
+        {active.id === "numbers" ? <NumberGame numbers={data.numbers} seed={seed} onDone={done} /> : null}
+        {active.id === "match" ? <MatchGame words={all} seed={seed} onDone={done} /> : null}
+        {active.id === "memory" ? <MemoryGame words={all} seed={seed} onDone={done} /> : null}
+        {active.id === "sentence" ? <SentenceGame sentences={sentences} seed={seed} onDone={done} /> : null}
+        {active.id === "speed" ? <SpeedGame words={all} seed={seed} onDone={done} /> : null}
+      </div>
+    );
+  }
+  const played = Object.keys(results).length;
+  return (
+    <div className="flex flex-col gap-4">
+      <p className="text-center text-base font-bold text-[#6b3f1d]">
+        Тоглоом бүр ⭐ өгнө! ({played}/{games.length})
+      </p>
+      {lastStars != null ? (
+        <div className="rounded-2xl bg-emerald-50 py-2 text-center text-lg font-extrabold text-emerald-700" style={{ animation: "kids-in .35s ease-out" }}>
+          {lastStars > 0 ? `Сайн байна! +${lastStars} ⭐` : "Сайн байна! Дахиад тоглосон чинь мундаг 💪"}
+        </div>
+      ) : null}
+      <div className="grid grid-cols-2 gap-3">
+        {games.map((g) => (
+          <button
+            key={g.id}
+            type="button"
+            onClick={() => {
+              stopPronunciation();
+              setLastStars(null);
+              setActive({ id: g.id, seed: String(Date.now()) });
+            }}
+            className={`${C.card} relative flex flex-col items-center gap-1 p-4 text-center active:scale-95 ${results[g.id] ? "ring-2 ring-emerald-300" : ""}`}
+          >
+            <span className="text-5xl">{g.emoji}</span>
+            <span className="text-base font-extrabold leading-tight text-[#2b1a05]">{g.label}</span>
             {results[g.id] ? (
-              <span className="block text-sm font-bold text-emerald-600">
-                ✅ {results[g.id].correct}/{results[g.id].total} — дахин тоглох
+              <span className="text-xs font-bold text-emerald-600">
+                ✅ {results[g.id].correct}/{results[g.id].total}
               </span>
             ) : (
-              <span className="block text-sm text-amber-800">Дарж тогло</span>
+              <span className="text-xs leading-tight text-amber-800">{g.hint}</span>
             )}
-          </span>
-        </button>
-      ))}
+          </button>
+        ))}
+      </div>
       {data.culture?.imageUrl ? (
         <div className={`${C.card} p-4`}>
           <div className="mb-2 text-lg font-extrabold text-[#2b1a05]">🖐 {data.culture.title}</div>
@@ -635,6 +748,8 @@ function PlayStep({ data, onEarn, onNext }: { data: KidsLessonData; onEarn: (n: 
     </div>
   );
 }
+
+/* ───────────────────────── TEST ───────────────────────── */
 
 type TestItem =
   | { kind: "listen"; it: KidsLessonData["test"]["listening"][number] }
@@ -683,20 +798,25 @@ function TestStep({ data, onDone }: { data: KidsLessonData; onDone: (r: GameResu
     setPicked(v);
     const ok = check(v);
     if (ok) setCorrect((c) => c + 1);
-    setTimeout(() => {
-      if (i + 1 >= items.length) onDone({ correct: correct + (ok ? 1 : 0), total: items.length });
-      else {
-        setI(i + 1);
-        setPicked(null);
-      }
-    }, 1800);
+  };
+  const advance = () => {
+    if (i + 1 >= items.length) onDone({ correct, total: items.length });
+    else {
+      setI(i + 1);
+      setPicked(null);
+    }
   };
   const isOk = picked != null && check(picked);
   const optionState = (o: string) => (!picked ? "" : check(o) ? "ring-4 ring-emerald-400" : o === picked ? "ring-4 ring-rose-400 opacity-70" : "opacity-50");
   return (
     <div className="flex flex-col items-center gap-4">
-      <div className="text-sm font-bold text-amber-800">
-        Асуулт {i + 1} / {items.length}
+      <div className="flex w-full items-center gap-2">
+        <div className="h-3 flex-1 overflow-hidden rounded-full bg-amber-100">
+          <div className="h-full rounded-full bg-orange-400 transition-all" style={{ width: `${(100 * i) / items.length}%` }} />
+        </div>
+        <span className="text-sm font-bold text-amber-800">
+          {i + 1} / {items.length}
+        </span>
       </div>
       {cur.kind === "listen" ? (
         <>
@@ -744,7 +864,7 @@ function TestStep({ data, onDone }: { data: KidsLessonData; onDone: (r: GameResu
             </button>
           </div>
           {picked && cur.it.scriptZh ? (
-            <div className="text-2xl font-extrabold text-[#2b1a05]" lang="zh-CN">
+            <div className="text-center text-2xl font-extrabold text-[#2b1a05]" lang="zh-CN">
               {cur.it.scriptZh}
             </div>
           ) : null}
@@ -772,30 +892,47 @@ function TestStep({ data, onDone }: { data: KidsLessonData; onDone: (r: GameResu
         </>
       )}
       {picked ? (
-        <div className={`${C.card} w-full p-4 text-center`}>
-          <div className={`text-2xl font-extrabold ${isOk ? "text-emerald-600" : "text-rose-600"}`}>{isOk ? "Зөв! 🎉" : "Дахиад бодоорой 🙂"}</div>
-          <p className="mt-1 text-sm text-[#3b2410]">{cur.it.explanation}</p>
+        <div className={`${C.card} flex w-full flex-col items-center gap-2 p-4 text-center`} style={{ animation: "kids-in .3s ease-out" }}>
+          <div className={`text-2xl font-extrabold ${isOk ? "text-emerald-600" : "text-rose-600"}`}>{isOk ? "Зөв! 🎉" : "Зүгээр ээ, дараа чадна 🙂"}</div>
+          {cur.it.explanation ? <p className="text-sm leading-6 text-[#3b2410]">{cur.it.explanation}</p> : null}
+          <button type="button" onClick={advance} className={`${C.btn} ${C.primary} mt-1`}>
+            {i + 1 >= items.length ? "Дуусгах ➜" : "Дараагийнх ➜"}
+          </button>
         </div>
       ) : null}
     </div>
   );
 }
 
+/* ───────────────────────── DONE ───────────────────────── */
+
 function DoneStep({ stars, lessonId, backHref, onCelebrate }: { stars: number; lessonId: string; backHref: string; onCelebrate: () => void }) {
   const fired = useRef(false);
+  const sticker = stickerForLesson(lessonId);
   useEffect(() => {
     if (fired.current) return;
     fired.current = true;
     onCelebrate();
+    markKidLessonDone(lessonId);
     void markLessonCompletedSmart(lessonId);
     void speakWithSavedSettings("太棒了！", "zh-CN");
   }, [lessonId, onCelebrate]);
   return (
     <div className="flex flex-col items-center gap-5 text-center">
-      <div className="text-8xl">🏆</div>
       <div className="text-3xl font-extrabold text-[#2b1a05]">Маш сайн! 太棒了!</div>
+      <div className={`${C.card} flex w-full flex-col items-center gap-2 p-6`}>
+        <div className="text-sm font-extrabold uppercase tracking-wide text-orange-500">Шинэ наалт!</div>
+        <div className="text-[110px] leading-none" style={{ animation: "kids-pop .7s ease-out" }}>
+          {sticker}
+        </div>
+        <div className="text-sm font-bold text-[#6b3f1d]">Наалтын цомогт чинь нэмэгдлээ</div>
+      </div>
       <div className="text-xl font-bold text-[#6b3f1d]">Энэ хичээлээс {stars} ⭐ цуглууллаа</div>
-      <div className="flex flex-wrap justify-center gap-1 text-3xl">{Array.from({ length: Math.min(stars, 20) }, (_, i) => <span key={i}>⭐</span>)}</div>
+      <div className="flex flex-wrap justify-center gap-1 text-3xl">
+        {Array.from({ length: Math.min(stars, 20) }, (_, i) => (
+          <span key={i}>⭐</span>
+        ))}
+      </div>
       <Link href={backHref} className={`${C.btn} ${C.primary}`}>
         Дараагийн хичээл ➜
       </Link>
