@@ -9,6 +9,7 @@ import { isCustomAssignment } from "@/lib/classroom/types";
 import type { AssignmentAnalytics } from "@/lib/teacher/analytics-types";
 import { buildAssignmentReportMarkdown } from "@/lib/teacher/report-builder";
 import { getAssignmentAnalytics } from "@/lib/supabase/teacher-analytics";
+import { remindResultText, sendClassPush } from "@/lib/supabase/teacher-extras";
 
 const TYPE_LABELS: Record<string, string> = {
   full_lesson: "Бүтэн хичээл",
@@ -52,6 +53,8 @@ export function AssignmentDetailView({ assignmentId }: Props) {
   }, [analytics]);
 
   const [copied, setCopied] = useState(false);
+  const [pushNote, setPushNote] = useState<string | null>(null);
+  const [pushing, setPushing] = useState(false);
 
   if (loading) {
     return (
@@ -90,6 +93,23 @@ export function AssignmentDetailView({ assignmentId }: Props) {
   const pct = total > 0 ? Math.round((done.length / total) * 100) : 0;
   const scored = done.filter((r) => r.quizPercentage != null);
   const lowScore = scored.filter((r) => (r.quizPercentage as number) < 60);
+
+  async function pushReminder() {
+    const ids = [...notStarted, ...working]
+      .map((r) => r.studentUserId)
+      .filter((x): x is string => Boolean(x));
+    if (ids.length === 0) return;
+    setPushing(true);
+    const r = await sendClassPush({
+      classroomId: assignment.classroomId,
+      userIds: ids,
+      title: "⏰ Багшийн сануулга",
+      body: `«${assignment.title}» даалгавраа хийгээрэй.`,
+      url: "/home",
+    });
+    setPushing(false);
+    setPushNote(remindResultText(r));
+  }
 
   async function copyReminder() {
     const names = [...notStarted, ...working].map((r) => r.displayName).join(", ");
@@ -192,15 +212,30 @@ export function AssignmentDetailView({ assignmentId }: Props) {
               </span>
             </h2>
             {notStarted.length + working.length > 0 ? (
-              <button
-                type="button"
-                onClick={() => void copyReminder()}
-                className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-red-800 ring-1 ring-red-200 hover:bg-red-100"
-              >
-                {copied ? "Хууллаа ✓ — чатдаа буулгана уу" : "Сануулах бичвэр хуулах"}
-              </button>
+              <span className="flex flex-wrap gap-1.5">
+                <button
+                  type="button"
+                  disabled={pushing}
+                  onClick={() => void pushReminder()}
+                  className="rounded-full bg-red-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-red-700 disabled:opacity-60"
+                >
+                  {pushing ? "Илгээж байна…" : "🔔 Утсанд нь сануулга илгээх"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => void copyReminder()}
+                  className="rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-red-800 ring-1 ring-red-200 hover:bg-red-100"
+                >
+                  {copied ? "Хууллаа ✓ — чатдаа буулгана уу" : "Бичвэр хуулах"}
+                </button>
+              </span>
             ) : null}
           </div>
+          {pushNote ? (
+            <p className="mt-2 rounded-lg bg-white px-3 py-2 text-xs text-slate-700 ring-1 ring-red-100">
+              {pushNote}
+            </p>
+          ) : null}
           {notStarted.length + working.length === 0 ? (
             <p className="mt-2 text-sm text-slate-600">Хийгээгүй сурагч алга.</p>
           ) : (

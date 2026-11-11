@@ -8,6 +8,8 @@ import type { UiLocale } from "@/lib/i18n/locale-types";
  * `const locale = useUiLocale()` + `tr(locale, "...")` хэрэглэнэ.
  */
 export const ZH_UI: Record<string, string> = {
+  "Мэдэгдэл аслаа": "通知已开启",
+  "Багш даалгавар өгөхөд утсандаа мэдэгдэл авах": "老师布置作业时在手机上接收通知",
   "Заавал": "必做",
   "Одоо хийх": "现在做",
   "Бас": "还有",

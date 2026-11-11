@@ -7,8 +7,10 @@ import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { useTeacherAuth } from "@/components/teacher/teacher-auth-gate";
 import { WeeklyReportToggle } from "@/components/teacher/weekly-report-toggle";
 import { useWorkspaceRole } from "@/components/workspace/workspace-context";
-import type { Classroom } from "@/lib/classroom/types";
+import type { Classroom, CurriculumProgressRow } from "@/lib/classroom/types";
 import { getTeacherClassrooms } from "@/lib/supabase/classrooms";
+import { getClassroomCurriculumProgress } from "@/lib/supabase/curriculum";
+import { getOrCreateReportLink } from "@/lib/supabase/teacher-extras";
 import {
   getClassroomProgressAnalytics,
   getClassroomStudentProgress,
@@ -147,6 +149,13 @@ export function TeacherReportsView() {
   const [students, setStudents] = useState<StudentProgressRow[]>([]);
   const [studentRowId, setStudentRowId] = useState("");
   const [loadingClass, setLoadingClass] = useState(false);
+  const [curriculum, setCurriculum] = useState<CurriculumProgressRow[] | null>(null);
+  const [linkState, setLinkState] = useState<{
+    forRow: string;
+    url: string | null;
+    note: string | null;
+    busy: boolean;
+  }>({ forRow: "", url: null, note: null, busy: false });
 
   useEffect(() => {
     if (!loggedIn) return;
@@ -167,11 +176,13 @@ export function TeacherReportsView() {
     let alive = true;
     void (async () => {
       setLoadingClass(true);
-      const [a, p] = await Promise.all([
+      const [a, p, cur] = await Promise.all([
         getClassroomProgressAnalytics(classId),
         getClassroomStudentProgress(classId),
+        getClassroomCurriculumProgress(classId),
       ]);
       if (!alive) return;
+      setCurriculum(cur.data ?? []);
       setAnalytics(a.data);
       setStudents(p.data ?? []);
       setStudentRowId((p.data ?? [])[0]?.studentRowId ?? "");
@@ -193,6 +204,23 @@ export function TeacherReportsView() {
   const student = students.find((s) => s.studentRowId === studentRowId) ?? null;
   const parentText =
     selectedClass && student ? parentMessage(selectedClass.name, student) : "";
+
+  async function makeParentLink() {
+    if (!selectedClass || !student?.studentUserId) return;
+    setLinkState({ forRow: student.studentRowId, url: null, note: null, busy: true });
+    const res = await getOrCreateReportLink(selectedClass.id, student.studentUserId);
+    setLinkState({
+      forRow: student.studentRowId,
+      url: res.token ? `${window.location.origin}/r/${res.token}` : null,
+      note: res.token
+        ? null
+        : res.missing
+          ? "Энэ боломж 091 SQL файлыг ажиллуулсны дараа нээгдэнэ."
+          : (res.error ?? "Холбоос үүсгэж чадсангүй."),
+      busy: false,
+    });
+  }
+  const linkForStudent = student && linkState.forRow === student.studentRowId ? linkState : null;
 
   if (loggedIn === null || (loggedIn && classes === null)) {
     return (
@@ -463,6 +491,49 @@ export function TeacherReportsView() {
                 <div className="mt-3">
                   <CopyButton text={parentText} />
                 </div>
+
+                <div className="mt-5 border-t border-slate-100 pt-4">
+                  <h3 className="text-sm font-bold text-slate-900">
+                    🔗 Эцэг эхийн байнгын холбоос
+                  </h3>
+                  <p className="mt-1 text-xs leading-5 text-slate-500">
+                    Нэг удаа илгээхэд хангалттай. Эцэг эх холбоосоо хүссэн үедээ нээж хүүхдийнхээ
+                    даалгавар, идэвхийг шууд харна — нэвтрэх, апп татах шаардлагагүй. Зөвхөн энэ нэг
+                    сурагчийн мэдээлэл харагдана.
+                  </p>
+                  {!student.studentUserId ? (
+                    <p className="mt-2 text-xs text-amber-800">
+                      Энэ сурагч апп-д нэвтрээгүй тул холбоос үүсгэх боломжгүй.
+                    </p>
+                  ) : linkForStudent?.url ? (
+                    <div className="mt-2 flex flex-wrap items-center gap-2">
+                      <code className="min-w-0 flex-1 truncate rounded-lg bg-slate-100 px-3 py-2 text-xs">
+                        {linkForStudent.url}
+                      </code>
+                      <CopyButton text={linkForStudent.url} label="Холбоос хуулах" />
+                      <a
+                        href={linkForStudent.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-800 ring-1 ring-slate-200 hover:bg-slate-50"
+                      >
+                        Нээж үзэх ↗
+                      </a>
+                    </div>
+                  ) : (
+                    <button
+                      type="button"
+                      disabled={linkState.busy}
+                      onClick={() => void makeParentLink()}
+                      className="mt-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-semibold text-white disabled:opacity-60"
+                    >
+                      {linkState.busy ? "Үүсгэж байна…" : "Холбоос үүсгэх"}
+                    </button>
+                  )}
+                  {linkForStudent?.note ? (
+                    <p className="mt-2 text-xs text-amber-800">{linkForStudent.note}</p>
+                  ) : null}
+                </div>
               </section>
             )}
           </>
@@ -474,15 +545,67 @@ export function TeacherReportsView() {
         <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <h2 className="text-base font-bold text-slate-900">🎖 Гэрчилгээ</h2>
           <p className="mt-1 text-sm text-slate-600">
-            Курсээ дүүргэсэн сурагчид нэр, курс, огноотой гэрчилгээ хэвлэж өгнө.
+            Ангийн заавал хөтөлбөрийг 100% дүүргэсэн сурагчид нэр, курс, огноотой бичиг хэвлэж өгнө.
           </p>
+          {!selectedClass ? (
+            <p className="mt-3 text-sm text-slate-600">Эхлээд анги үүсгэнэ үү.</p>
+          ) : (
+            <div className="mt-4 flex flex-col gap-3">
+              {classPicker}
+              {curriculum === null || loadingClass ? (
+                <p className="text-sm text-slate-600">Ачаалж байна…</p>
+              ) : curriculum.length === 0 ? (
+                <p className="rounded-xl bg-amber-50 px-3 py-2 text-sm text-amber-900">
+                  Энэ ангид «заавал хөтөлбөр» тохируулаагүй байна. Гэрчилгээ нь хөтөлбөрөө 100%
+                  дүүргэсэн сурагчид гарна.{" "}
+                  <Link
+                    href={`/teacher/classes/${selectedClass.id}?tab=tools`}
+                    className="font-semibold underline"
+                  >
+                    Хөтөлбөр тохируулах →
+                  </Link>
+                </p>
+              ) : (
+                <ul className="flex flex-col gap-1.5">
+                  {curriculum.map((c) => {
+                    const done = c.total > 0 && c.completed >= c.total;
+                    return (
+                      <li
+                        key={c.studentUserId}
+                        className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-slate-50 px-3 py-2 text-sm"
+                      >
+                        <span className="font-semibold text-slate-900" translate="no">
+                          {c.displayName}
+                        </span>
+                        <span className="flex items-center gap-3">
+                          <span className="tabular-nums text-slate-600">
+                            {c.completed}/{c.total} хичээл
+                          </span>
+                          {done ? (
+                            <Link
+                              href={`/teacher/certificate?class=${selectedClass.id}&student=${c.studentUserId}`}
+                              className="rounded-full bg-emerald-600 px-3 py-1 text-xs font-semibold text-white hover:bg-emerald-700"
+                            >
+                              🎖 Гэрчилгээ хэвлэх
+                            </Link>
+                          ) : (
+                            <span className="text-xs text-slate-400">дуусаагүй</span>
+                          )}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
+            </div>
+          )}
           {role === "admin" ? (
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-4 flex flex-wrap gap-2 border-t border-slate-100 pt-4">
               <Link
                 href="/admin/center/certificate"
-                className="rounded-full bg-emerald-600 px-5 py-2 text-sm font-semibold text-white hover:bg-emerald-700"
+                className="rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-800 ring-1 ring-slate-200 hover:bg-slate-50"
               >
-                Гэрчилгээ хэвлэх →
+                Ангид ороогүй суралцагчид гэрчилгээ (админ) →
               </Link>
               <Link
                 href="/admin/center/report"
@@ -491,11 +614,7 @@ export function TeacherReportsView() {
                 Төвийн нэгдсэн тайлан (хэвлэх)
               </Link>
             </div>
-          ) : (
-            <p className="mt-3 rounded-xl bg-slate-50 px-3 py-2 text-sm text-slate-600">
-              Гэрчилгээг одоогоор сургалтын төвийн админ хэвлэнэ. Админдаа хандана уу.
-            </p>
-          )}
+          ) : null}
         </section>
       ) : null}
 

@@ -15,6 +15,7 @@ import { WEAK_SPOT_AREA_LABELS } from "@/lib/analytics/weak-spots";
 import type { Classroom } from "@/lib/classroom/types";
 import type { LearnerGradeBucket } from "@/lib/learner-grade";
 import { getTeacherClassrooms } from "@/lib/supabase/classrooms";
+import { remindResultText, sendClassPush } from "@/lib/supabase/teacher-extras";
 import {
   getClassroomProgressAnalytics,
   getClassroomStudentProgress,
@@ -280,6 +281,8 @@ export function TeacherTodayView() {
 
   const [filter, setFilter] = useState<StudentStatus | "all">("all");
   const [copied, setCopied] = useState(false);
+  const [pushNote, setPushNote] = useState<string | null>(null);
+  const [pushing, setPushing] = useState(false);
   const [allLearners, setAllLearners] = useState<AllLearner[] | null>(null);
 
   /* --- ангиуд --- */
@@ -383,6 +386,20 @@ export function TeacherTodayView() {
   const assignments = (analytics?.assignmentSummaries ?? []).filter(
     (a) => !a.isCurriculum
   );
+
+  async function pushInactive() {
+    if (!selectedId || byStatus.inactive.length === 0) return;
+    setPushing(true);
+    const r = await sendClassPush({
+      classroomId: selectedId,
+      userIds: byStatus.inactive.map((s) => s.userId),
+      title: "👋 Багш чинь хүлээж байна",
+      body: "Сүүлийн 7 хоногт апп-даа ороогүй байна. Өнөөдөр 10 минут хичээлээ хийгээрэй!",
+      url: "/home",
+    });
+    setPushing(false);
+    setPushNote(remindResultText(r));
+  }
 
   async function copyReminder() {
     const names = byStatus.inactive.map((s) => s.name).join(", ");
@@ -688,13 +705,28 @@ export function TeacherTodayView() {
                         {byStatus.inactive.length > 4 ? "…" : ""}
                       </span>
                       <br />
-                      <button
-                        type="button"
-                        onClick={() => void copyReminder()}
-                        className="mt-1 rounded-full bg-white px-3 py-1 text-xs font-semibold text-amber-900 ring-1 ring-amber-300 hover:bg-amber-100"
-                      >
-                        {copied ? "Хууллаа ✓ — чатдаа буулгана уу" : "Сануулах бичвэр хуулах"}
-                      </button>
+                      <span className="mt-1 flex flex-wrap gap-1.5">
+                        <button
+                          type="button"
+                          disabled={pushing}
+                          onClick={() => void pushInactive()}
+                          className="rounded-full bg-amber-500 px-3 py-1 text-xs font-semibold text-white hover:bg-amber-600 disabled:opacity-60"
+                        >
+                          {pushing ? "Илгээж байна…" : "🔔 Утсанд нь сануулга илгээх"}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => void copyReminder()}
+                          className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-amber-900 ring-1 ring-amber-300 hover:bg-amber-100"
+                        >
+                          {copied ? "Хууллаа ✓" : "Бичвэр хуулах"}
+                        </button>
+                      </span>
+                      {pushNote ? (
+                        <span className="mt-1 block rounded-lg bg-white px-2 py-1 text-xs text-slate-700">
+                          {pushNote}
+                        </span>
+                      ) : null}
                     </li>
                   ) : null}
                   {insights && byStatus.behind.length > 0 ? (

@@ -4,6 +4,7 @@ import { AdminGuard } from "@/components/admin/admin-guard";
 import { AdminSidebar } from "@/components/admin/admin-sidebar";
 import { AdminTopbar } from "@/components/admin/admin-topbar";
 import { PageHelpStrip } from "@/components/workspace/page-help-strip";
+import { ScheduleRunner } from "@/components/workspace/schedule-runner";
 import { WorkspaceContext } from "@/components/workspace/workspace-context";
 
 /**
@@ -21,6 +22,7 @@ export function AdminLayoutShell({
   const body = (
     <>
       <PageHelpStrip />
+      <ScheduleRunner />
       {children}
     </>
   );

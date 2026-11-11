@@ -13,6 +13,11 @@ import {
 } from "@/lib/supabase/classrooms";
 import { courseSortKey, prettyCourseTitle } from "@/lib/classroom/course-label";
 import {
+  createAssignmentSchedule,
+  remindResultText,
+  sendClassPush,
+} from "@/lib/supabase/teacher-extras";
+import {
   getSupabaseAssignableLessons,
   type AssignableLesson,
 } from "@/lib/supabase/content";
@@ -145,6 +150,11 @@ export function AssignmentWizard() {
 
   const [classes, setClasses] = useState<Classroom[] | null>(null);
   const [classroomId, setClassroomId] = useState(preClass);
+  // «Бүх анги» горимд нэмж сонгосон бусад ангиуд — нэг даалгаврыг олон ангид нэг дор.
+  const [extraClassIds, setExtraClassIds] = useState<string[]>([]);
+  // 0 = давтахгүй. N = дараагийн N хичээлийг долоо хоног бүр автоматаар өгнө.
+  const [repeatWeeks, setRepeatWeeks] = useState(0);
+  const [afterNote, setAfterNote] = useState<string | null>(null);
   const [students, setStudents] = useState<ClassroomStudent[]>([]);
   const [everyone, setEveryone] = useState(!preStudent);
   const [targetIds, setTargetIds] = useState<string[]>(preStudent ? [preStudent] : []);
@@ -249,7 +259,12 @@ export function AssignmentWizard() {
 
   const whoLabel = useMemo(() => {
     if (!selectedClass) return "";
-    if (everyone || targetIds.length === 0) return `«${selectedClass.name}» — бүх сурагч`;
+    if (everyone || targetIds.length === 0) {
+      const others = (classes ?? []).filter((c) => extraClassIds.includes(c.id));
+      return others.length > 0
+        ? `${[selectedClass, ...others].map((c) => `«${c.name}»`).join(", ")} — бүх сурагч`
+        : `«${selectedClass.name}» — бүх сурагч`;
+    }
     const names = targetIds.map((id) => {
       const s = students.find((x) => x.studentUserId === id);
       return s?.displayName ?? s?.email ?? "сурагч";
@@ -259,7 +274,7 @@ export function AssignmentWizard() {
         ? names.join(", ")
         : `${names.slice(0, 3).join(", ")} +${names.length - 3}`;
     return `«${selectedClass.name}» — ${shown}`;
-  }, [selectedClass, everyone, targetIds, students]);
+  }, [selectedClass, everyone, targetIds, students, classes, extraClassIds]);
 
   const title =
     kind === "custom"
@@ -281,46 +296,108 @@ export function AssignmentWizard() {
     );
   }
 
+  // Давтахад өгөх дараагийн хичээлүүд (сонгосон хичээлийн дараахаас).
+  const lessonIndex = lesson ? courseLessons.findIndex((l) => l.id === lesson.id) : -1;
+  const upcoming =
+    lessonIndex >= 0 ? courseLessons.slice(lessonIndex + 1, lessonIndex + 1 + repeatWeeks) : [];
+  const canRepeat = kind !== "custom" && everyone && lessonIndex >= 0 &&
+    lessonIndex < courseLessons.length - 1;
+
   async function submit() {
     if (!step1Ok || !step2Ok || !title) return;
     setSaving(true);
     setError(null);
-    const recipients: (string | null)[] =
-      everyone || targetIds.length === 0 ? [null] : targetIds;
+    setAfterNote(null);
+    const wholeClass = everyone || targetIds.length === 0;
+    const classIds = wholeClass ? [classroomId, ...extraClassIds] : [classroomId];
+    const recipients: (string | null)[] = wholeClass ? [null] : targetIds;
     let firstId: string | null = null;
     let created = 0;
     let failure: string | null = null;
     // Сонгосон сурагч бүрт тусдаа мөр — ангийн бусад сурагчид харагдахгүй.
-    for (const target of recipients) {
-      const { data, error: createError } = await createAssignment({
-        classroomId,
-        lessonId: kind === "custom" ? null : (lesson?.id ?? lessonId),
-        assignmentType: kind === "custom" ? "review" : kind,
-        title,
-        instructions,
-        dueDate: dueDate || undefined,
-        targetStudentUserId: target,
-        attachment: kind === "custom" ? attachment : null,
-      });
-      if (!data) {
-        failure = createError ?? "Даалгавар үүсгэж чадсангүй.";
-        break;
+    outer: for (const cid of classIds) {
+      for (const target of recipients) {
+        const { data, error: createError } = await createAssignment({
+          classroomId: cid,
+          lessonId: kind === "custom" ? null : (lesson?.id ?? lessonId),
+          assignmentType: kind === "custom" ? "review" : kind,
+          title,
+          instructions,
+          dueDate: dueDate || undefined,
+          targetStudentUserId: target,
+          attachment: kind === "custom" ? attachment : null,
+        });
+        if (!data) {
+          failure = createError ?? "Даалгавар үүсгэж чадсангүй.";
+          break outer;
+        }
+        created += 1;
+        firstId = firstId ?? data.id;
       }
-      created += 1;
-      firstId = firstId ?? data.id;
     }
-    setSaving(false);
     if (created === 0 || !firstId) {
+      setSaving(false);
       setError(failure ?? "Даалгавар үүсгэж чадсангүй.");
       return;
     }
-    if (failure) setError(`${created} сурагчид өгсөн ч үлдсэнд алдаа гарлаа: ${failure}`);
+    if (failure) setError(`${created} даалгавар өгсөн ч үлдсэнд алдаа гарлаа: ${failure}`);
+
+    const notes: string[] = [];
+    // Долоо хоног бүрийн автомат даалгавар.
+    if (canRepeat && upcoming.length > 0) {
+      let scheduled = 0;
+      let missing = false;
+      for (const cid of classIds) {
+        const res = await createAssignmentSchedule({
+          classroomId: cid,
+          lessonIds: upcoming.map((l) => l.id),
+          lessonTitles: upcoming.map((l) => l.title),
+          assignmentType: kind,
+          instructions,
+          firstInDays: 7,
+          intervalDays: 7,
+          dueDays: 7,
+        });
+        if (res.ok) scheduled += 1;
+        if (res.missing) missing = true;
+      }
+      notes.push(
+        scheduled > 0
+          ? `🔁 Дараагийн ${upcoming.length} хичээл долоо хоног бүр автоматаар өгөгдөнө.`
+          : missing
+            ? "🔁 Автомат давталт асаагүй — 091 SQL файлыг ажиллуулсны дараа боломжтой болно."
+            : "🔁 Автомат давталтыг тохируулж чадсангүй."
+      );
+    }
+    // Сурагчдын утас руу мэдэгдэл.
+    let reached = 0;
+    let targets = 0;
+    let configured = true;
+    for (const cid of classIds) {
+      const r = await sendClassPush({
+        classroomId: cid,
+        userIds: wholeClass ? undefined : targetIds,
+        title: "📌 Багшийн шинэ даалгавар",
+        body: title,
+        url: "/home",
+      });
+      reached += r.reached;
+      targets += r.targets;
+      configured = configured && r.configured;
+    }
+    notes.push(
+      `🔔 ${remindResultText({ ok: true, configured, targets, reached })}`
+    );
+    setAfterNote(notes.join("\n"));
+    setSaving(false);
     setDoneInfo({ id: firstId, title, who: whoLabel });
   }
 
   function reset() {
     setDoneInfo(null);
     setError(null);
+    setAfterNote(null);
+    setRepeatWeeks(0);
     setCustomTitle("");
     setInstructions("");
     setAttachment(null);
@@ -375,6 +452,11 @@ export function AssignmentWizard() {
             Сурагчийн нүүр хуудасны хамгийн дээр «БАГШИЙН ДААЛГАВАР · ЗААВАЛ» гэж
             гарсан. Хийж дуустал тэндээ байна.
           </p>
+          {afterNote ? (
+            <p className="mt-3 whitespace-pre-line rounded-lg bg-white px-3 py-2 text-left text-[13px] leading-6 text-slate-700 ring-1 ring-emerald-200">
+              {afterNote}
+            </p>
+          ) : null}
           {error ? (
             <p className="mt-3 rounded-lg bg-amber-100 px-3 py-2 text-sm text-amber-900">
               {error}
@@ -434,17 +516,26 @@ export function AssignmentWizard() {
                       key={c.id}
                       type="button"
                       onClick={() => {
+                        if (c.id === classroomId) return;
+                        if (everyone && classroomId) {
+                          // «Бүх анги» горимд дарах бүрд нэмж/хасна — олон ангид нэг дор.
+                          setExtraClassIds((prev) =>
+                            prev.includes(c.id) ? prev.filter((x) => x !== c.id) : [...prev, c.id]
+                          );
+                          return;
+                        }
                         setClassroomId(c.id);
+                        setExtraClassIds([]);
                         setTargetIds([]);
-                        setEveryone(true);
                       }}
-                      aria-pressed={c.id === classroomId}
+                      aria-pressed={c.id === classroomId || extraClassIds.includes(c.id)}
                       className={`rounded-xl px-4 py-2.5 text-left text-sm ring-1 transition ${
-                        c.id === classroomId
+                        c.id === classroomId || extraClassIds.includes(c.id)
                           ? "bg-emerald-50 font-semibold text-emerald-900 ring-2 ring-emerald-500"
                           : "bg-white text-slate-700 ring-slate-200 hover:bg-slate-50"
                       }`}
                     >
+                      {c.id === classroomId || extraClassIds.includes(c.id) ? "✓ " : ""}
                       <span translate="no">{c.name}</span>
                       <span className="ml-2 text-xs text-slate-500">
                         {c.studentCount ?? 0} сурагч
@@ -455,6 +546,21 @@ export function AssignmentWizard() {
               </div>
 
               <div>
+                {classes.length > 1 ? (
+                  <p className="-mt-2 mb-3 text-xs text-slate-500">
+                    Нэг даалгаврыг хэд хэдэн ангид нэг дор өгөх бол ангиудаа дараалан дарж
+                    сонгоно.{" "}
+                    {extraClassIds.length > 0 ? (
+                      <button
+                        type="button"
+                        onClick={() => setExtraClassIds([])}
+                        className="font-semibold text-emerald-700 hover:underline"
+                      >
+                        Зөвхөн нэг анги болгох
+                      </button>
+                    ) : null}
+                  </p>
+                ) : null}
                 <p className="text-sm font-semibold text-slate-700">Хэн хийх вэ?</p>
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">
                   <button
@@ -472,7 +578,10 @@ export function AssignmentWizard() {
                   </button>
                   <button
                     type="button"
-                    onClick={() => setEveryone(false)}
+                    onClick={() => {
+                      setEveryone(false);
+                      setExtraClassIds([]);
+                    }}
                     aria-pressed={!everyone}
                     className={`rounded-xl p-3 text-left ring-1 ${
                       !everyone
@@ -726,6 +835,35 @@ export function AssignmentWizard() {
                   className="rounded-xl border border-slate-300 px-3 py-2 text-sm"
                 />
               </div>
+
+              {canRepeat ? (
+                <div className="rounded-xl bg-slate-50 p-3">
+                  <label className="flex flex-wrap items-center gap-2 text-sm">
+                    <span className="font-semibold text-slate-700">
+                      🔁 Дараагийн хичээлүүдийг долоо хоног бүр автоматаар өгөх:
+                    </span>
+                    <select
+                      value={repeatWeeks}
+                      onChange={(e) => setRepeatWeeks(Number(e.target.value))}
+                      className="rounded-xl border border-slate-300 bg-white px-3 py-2"
+                    >
+                      <option value={0}>Үгүй, зөвхөн энэ удаа</option>
+                      {[2, 4, 6, 8, 12].map((n) => (
+                        <option key={n} value={n}>
+                          Тийм — дараагийн {n} хичээл
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  {repeatWeeks > 0 ? (
+                    <p className="mt-2 text-xs leading-5 text-slate-600" translate="no">
+                      7 хоног тутам нэг хичээл: {upcoming.map((l) => l.title).join(" → ")}
+                      {upcoming.length < repeatWeeks ? " (энэ номын хичээл дууслаа)" : ""}. Хүссэн
+                      үедээ «Даалгавар» хуудаснаас зогсооно.
+                    </p>
+                  ) : null}
+                </div>
+              ) : null}
 
               <label className="flex flex-col gap-1 text-sm">
                 <span className="font-semibold text-slate-700">

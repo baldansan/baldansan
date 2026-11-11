@@ -1,6 +1,12 @@
 import "server-only";
 
 import {
+  getLearnerNameMap,
+  learnerDisplayLabel,
+  type LearnerNameMap,
+} from "@/lib/supabase/admin-learner-grades";
+
+import {
   MIN_QUIZ_FOR_PUBLISH,
   MIN_VOCABULARY_FOR_PUBLISH,
 } from "@/lib/admin/import-qa";
@@ -837,6 +843,23 @@ type ProgressSnapshot = {
   limitedByRls: boolean;
 };
 
+/** Нэр → имэйл → «Нэргүй суралцагч»; нэрийн жагсаалт байхгүй бол богино код. */
+function userLabel(
+  userId: string | null | undefined,
+  names: LearnerNameMap
+): string {
+  if (!userId) return "—";
+  return learnerDisplayLabel(userId, names[userId]?.displayName, names[userId]?.email);
+}
+
+async function safeNames(): Promise<LearnerNameMap> {
+  try {
+    return await getLearnerNameMap();
+  } catch {
+    return {};
+  }
+}
+
 function shortenUserId(userId: string | null | undefined): string {
   if (!userId) return "—";
   if (userId.length <= 10) return userId;
@@ -1037,6 +1060,7 @@ export async function getLessonQuizAnalytics(
   lessonId: string,
   snapshot?: ProgressSnapshot
 ): Promise<LessonQuizAnalytics & { warnings: string[] }> {
+  const names = await safeNames();
   const snap = snapshot ?? (await fetchProgressSnapshot());
   const normalizedId = canonicalLessonId(lessonId);
   const quizRows = rowsForLesson(snap.quizAttempts, normalizedId);
@@ -1064,7 +1088,7 @@ export async function getLessonQuizAnalytics(
       total: row.total ?? 0,
       percentage: row.percentage ?? 0,
       createdAt: row.created_at ?? "",
-      userIdShort: shortenUserId(row.user_id),
+      userIdShort: userLabel(row.user_id, names),
     })),
     warnings: snap.warnings,
   };
@@ -1101,6 +1125,7 @@ export async function getLessonProgressAnalytics(
   lessonId: string,
   snapshot?: ProgressSnapshot
 ): Promise<LessonProgressAnalytics> {
+  const names = await safeNames();
   const snap = snapshot ?? (await fetchProgressSnapshot());
   const normalizedId = canonicalLessonId(lessonId);
   const progressRows = rowsForLesson(snap.lessonProgress, normalizedId);
@@ -1128,7 +1153,7 @@ export async function getLessonProgressAnalytics(
       status: String(row.status ?? "unknown"),
       progressPercent: row.progress_percent ?? 0,
       updatedAt: row.updated_at ?? "",
-      userId: shortenUserId(row.user_id),
+      userId: userLabel(row.user_id, names),
     }));
 
   return {

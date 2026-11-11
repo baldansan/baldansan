@@ -6,6 +6,11 @@ import { TeacherShell } from "@/components/teacher/teacher-shell";
 import { isCustomAssignment, type Assignment } from "@/lib/classroom/types";
 import { getTeacherAssignments } from "@/lib/supabase/classrooms";
 import { getTeacherAssignmentSummary } from "@/lib/supabase/teacher-analytics";
+import {
+  listAssignmentSchedules,
+  stopAssignmentSchedule,
+  type AssignmentSchedule,
+} from "@/lib/supabase/teacher-extras";
 import type { TeacherAssignmentSummaryItem } from "@/lib/teacher/analytics-types";
 
 const TYPE_LABELS: Record<string, string> = {
@@ -37,6 +42,7 @@ export function TeacherAssignmentsList() {
   );
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("open");
+  const [schedules, setSchedules] = useState<AssignmentSchedule[]>([]);
 
   useEffect(() => {
     let alive = true;
@@ -48,6 +54,9 @@ export function TeacherAssignmentsList() {
         setSummary(new Map((sum.data ?? []).map((s) => [s.assignmentId, s])));
       }
     );
+    void listAssignmentSchedules().then((list) => {
+      if (alive) setSchedules(list);
+    });
     return () => {
       alive = false;
     };
@@ -99,6 +108,45 @@ export function TeacherAssignmentsList() {
           📝 Даалгавар өгөх
         </Link>
       </header>
+
+      {schedules.length > 0 ? (
+        <section className="rounded-2xl border border-sky-200 bg-sky-50/70 p-4">
+          <h2 className="text-sm font-bold text-slate-900">
+            🔁 Долоо хоног бүр автоматаар өгөгдөх даалгавар
+          </h2>
+          <ul className="mt-2 flex flex-col gap-2">
+            {schedules.map((s) => {
+              const left = s.lessonIds.length - s.nextIndex;
+              const [, m, d] = s.nextRunOn.split("-").map(Number);
+              return (
+                <li
+                  key={s.id}
+                  className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-white px-3 py-2 text-sm ring-1 ring-sky-100"
+                >
+                  <span className="min-w-0" translate="no">
+                    <b>{s.classroomName ?? "Анги"}</b> · дараагийнх:{" "}
+                    {s.lessonTitles[s.nextIndex] ?? s.lessonIds[s.nextIndex]}{" "}
+                    <span className="text-slate-500">
+                      ({m}-р сарын {d}-нд · үлдсэн {left})
+                    </span>
+                  </span>
+                  <button
+                    type="button"
+                    onClick={async () => {
+                      if (await stopAssignmentSchedule(s.id)) {
+                        setSchedules((prev) => prev.filter((x) => x.id !== s.id));
+                      }
+                    }}
+                    className="rounded-full px-3 py-1 text-xs font-semibold text-red-700 ring-1 ring-red-200 hover:bg-red-50"
+                  >
+                    Зогсоох
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ) : null}
 
       <div className="flex flex-wrap gap-2" role="tablist">
         {tabs.map((t) => (

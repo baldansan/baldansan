@@ -324,6 +324,14 @@ export const ADMIN_NAV_OTHER: AdminNavItem[] = [
     adminOnly: true,
   },
   {
+    href: "/admin/teachers",
+    label: "Багш нар",
+    icon: "🧑‍🏫",
+    hint: "Анги үүсгэсэн бүх хүн; шаардлагатай бол хаана.",
+    match: (p) => p.startsWith("/admin/teachers"),
+    adminOnly: true,
+  },
+  {
     href: "/admin/b2b",
     label: "Сургууль, байгууллага",
     icon: "🏫",

@@ -44,6 +44,9 @@ function hrefFor(a: StudentAssignment): string {
 export function TeacherAssignmentBanner({ loggedIn }: { loggedIn: boolean }) {
   const locale = useUiLocale();
   const [pending, setPending] = useState<StudentAssignment[]>([]);
+  // Ангид харьяалагддаг, мэдэгдэл асаагаагүй сурагчид «мэдэгдэл авах» товч санал болгоно.
+  const [askPush, setAskPush] = useState(false);
+  const [pushState, setPushState] = useState<"idle" | "busy" | "on" | "denied">("idle");
 
   useEffect(() => {
     if (!loggedIn) return;
@@ -52,6 +55,17 @@ export function TeacherAssignmentBanner({ loggedIn }: { loggedIn: boolean }) {
       try {
         const { getStudentAssignments } = await import("@/lib/supabase/classrooms");
         const { data } = await getStudentAssignments();
+        if (!alive) return;
+        if ((data ?? []).length > 0) {
+          const push = await import("@/lib/push/push-client");
+          if (
+            alive &&
+            push.getPushAvailability() === "ready" &&
+            (await push.getNotificationPermissionState()) === "default"
+          ) {
+            setAskPush(true);
+          }
+        }
         if (!alive) return;
         setPending(
           (data ?? []).filter(
@@ -70,7 +84,29 @@ export function TeacherAssignmentBanner({ loggedIn }: { loggedIn: boolean }) {
     };
   }, [loggedIn]);
 
-  if (!loggedIn || pending.length === 0) return null;
+  async function enablePush() {
+    setPushState("busy");
+    const push = await import("@/lib/push/push-client");
+    const res = await push.subscribeToPush();
+    setPushState(res.ok ? "on" : "denied");
+  }
+
+  const pushPrompt =
+    askPush && pushState !== "denied" ? (
+      <button
+        type="button"
+        disabled={pushState !== "idle"}
+        onClick={() => void enablePush()}
+        className="rounded-xl bg-white px-4 py-2 text-left text-sm font-semibold text-slate-700 ring-1 ring-slate-200"
+      >
+        {pushState === "on"
+          ? `✓ ${tr(locale, "Мэдэгдэл аслаа")}`
+          : `🔔 ${tr(locale, "Багш даалгавар өгөхөд утсандаа мэдэгдэл авах")}`}
+      </button>
+    ) : null;
+
+  if (!loggedIn) return null;
+  if (pending.length === 0) return pushPrompt;
 
   const shown = pending.slice(0, 2);
   const rest = pending.length - shown.length;
@@ -128,6 +164,7 @@ export function TeacherAssignmentBanner({ loggedIn }: { loggedIn: boolean }) {
           {tr(locale, "Бас")} {rest} {tr(locale, "даалгавар байна — бүгдийг харах")} →
         </Link>
       ) : null}
+      {pushPrompt}
     </section>
   );
 }
