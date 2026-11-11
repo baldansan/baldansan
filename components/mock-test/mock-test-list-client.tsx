@@ -1,9 +1,10 @@
 "use client";
 
 import { describeTestId } from "@/lib/mock-test/test-id-meta";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
+import { useActiveHskLevelOptional } from "@/components/providers/active-hsk-level-provider";
 import { SKILL_LABELS_MN, type MockTestRow } from "@/lib/mock-test/types";
 import type { MockTestLatestScore } from "@/lib/supabase/mock-tests-server";
 
@@ -87,22 +88,9 @@ function TablerIcon({ name }: { name: TablerIconName }) {
   );
 }
 
-function skillsForTest(test: MockTestRow): string[] {
-  const present = new Set(test.sections.map((s) => s.skill));
-  return SKILL_ORDER.filter((sk) => present.has(sk)).map(
-    (sk) => SKILL_LABELS_MN[sk] ?? sk
-  );
-}
-
 function skillKeysForTest(test: MockTestRow): string[] {
   const present = new Set(test.sections.map((s) => s.skill));
   return SKILL_ORDER.filter((sk) => present.has(sk));
-}
-
-function formatLatestScore(score: MockTestLatestScore): string {
-  const raw = Math.round(score.rawScore);
-  const max = Math.round(score.maxScore);
-  return `Сүүлд: ${raw}/${max}`;
 }
 
 export function MockTestListClient({
@@ -121,6 +109,15 @@ export function MockTestListClient({
     .map(Number)
     .sort((a, b) => a - b);
 
+  // Нэг л түвшин нээлттэй — анхдагч нь хэрэглэгчийн идэвхтэй HSK түвшин.
+  const active = useActiveHskLevelOptional();
+  // undefined = хэрэглэгч хараахан сонгоогүй → идэвхтэй түвшин нээлттэй.
+  const [chosen, setChosen] = useState<number | null | undefined>(undefined);
+  const defaultLevel =
+    active?.hydrated && typeof active.level === "number" && byLevel[active.level] ? active.level : null;
+  const openLevel = chosen === undefined ? defaultLevel : chosen;
+  const setOpenLevel = (v: number | null) => setChosen(v);
+
   const listBody = (
     <>
       {!embedded ? (
@@ -128,106 +125,88 @@ export function MockTestListClient({
           ← Тоглоом
         </Link>
       ) : null}
-        <h1 className={`bs-mt-title ${embedded ? "bs-mt-title--embedded" : "mt-3"}`}>
-          HSK загвар шалгалт
-        </h1>
-        {!embedded ? (
-          <p className="bs-mt-sub">
-            Албан ёсны загварын бүтэн шалгалт — таймер, аудио, автомат оноо
-          </p>
-        ) : null}
+      <h1 className={`bs-mt-title ${embedded ? "bs-mt-title--embedded" : "mt-3"}`}>
+        HSK жинхэнэ шалгалт
+      </h1>
+      <p className="bs-mt-sub">
+        Албан ёсны 真题 — таймер, аудио, автомат оноо, монгол тайлбар. Түвшнээ сонго.
+      </p>
 
       {tests.length === 0 ? (
         <div className="bs-mt-card mt-4">
           <p className="bs-mt-card-title">Тест олдсонгүй</p>
-          <p className="bs-mt-card-meta mt-2">
-            <code>data/tests/&lt;TID&gt;/</code> фолдер нэмээд{" "}
-            <code>npm run load:tests</code> ажиллуулна уу.
-          </p>
         </div>
       ) : (
-        levels.map((lvl) => {
-          const levelTests = [...byLevel[lvl]].sort((a, b) =>
-            a.id.localeCompare(b.id)
-          );
-          return (
-            <section key={lvl} className="bs-mt-level-section">
-              <h2 className="bs-mt-section-title">HSK {lvl} <span className="text-xs font-normal text-[var(--app-muted)]">· жинхэнэ шалгалтууд (HSK 2.0 бүтэц, 6 түвшин)</span></h2>
-              <div className="bs-mt-card-list">
-                {levelTests.map((test, index) => {
-                  const skillKeys = skillKeysForTest(test);
-                  const skillLabels = skillsForTest(test);
-                  const latest = latestScores[test.id];
-                  return (
-                    <div key={test.id} className="bs-mt-card bs-mt-card--row">
-                      <div className="bs-mt-card-body">
-                        <Link
-                          href={
-                            embedded
-                              ? `/test/${test.id}?from=review`
-                              : `/test/${test.id}?from=test`
-                          }
-                          className="block no-underline text-inherit"
-                        >
-                          <div className="bs-mt-card-head">
-                            <h3 className="bs-mt-card-title">
-                              {describeTestId(test.id)?.label ?? `Загвар ${index + 1}`}
-                            </h3>
-                            <span className="bs-mt-card-badge">{test.id}</span>
-                          </div>
-                          <div className="bs-mt-chip-row">
-                            <span className="bs-mt-chip bs-mt-chip--meta">
-                              <TablerIcon name="clock" />
-                              {test.time_limit_min} мин
+        <div className="bs-mt-levels">
+          {levels.map((lvl) => {
+            const levelTests = [...byLevel[lvl]].sort((a, b) => b.id.localeCompare(a.id));
+            const doneCount = levelTests.filter((t) => latestScores[t.id]).length;
+            const open = openLevel === lvl;
+            return (
+              <section key={lvl} className={`bs-mt-level${open ? " bs-mt-level--open" : ""}`}>
+                <button
+                  type="button"
+                  className="bs-mt-level-head"
+                  onClick={() => setOpenLevel(open ? null : lvl)}
+                  aria-expanded={open}
+                >
+                  <span className="bs-mt-level-badge">HSK {lvl}</span>
+                  <span className="bs-mt-level-meta">
+                    {levelTests.length} шалгалт
+                    {doneCount ? ` · ${doneCount} өгсөн` : ""}
+                  </span>
+                  <span className="bs-mt-level-chev" aria-hidden>{open ? "▾" : "▸"}</span>
+                </button>
+
+                {open ? (
+                  <div className="bs-mt-rows">
+                    {levelTests.map((test) => {
+                      const meta = describeTestId(test.id);
+                      const latest = latestScores[test.id];
+                      const skillKeys = skillKeysForTest(test);
+                      const href = embedded ? `/test/${test.id}?from=review` : `/test/${test.id}?from=test`;
+                      return (
+                        <div key={test.id} className="bs-mt-row">
+                          <Link href={href} className="bs-mt-row-main">
+                            <span className="bs-mt-row-title">
+                              {meta?.isSample
+                                ? "Албан загвар (样卷)"
+                                : meta
+                                  ? `${meta.year} он · №${meta.serial}${meta.variant ? ` ${meta.variant}` : ""}`
+                                  : test.id}
                             </span>
-                            <span className="bs-mt-chip bs-mt-chip--meta">
-                              <TablerIcon name="list-numbers" />
-                              {test.total_questions} асуулт
+                            <span className="bs-mt-row-meta">
+                              {test.time_limit_min} мин · {test.total_questions} асуулт ·{" "}
+                              {skillKeys.map((sk) => (
+                                <TablerIcon key={sk} name={SKILL_ICONS[sk] ?? "book"} />
+                              ))}
                             </span>
-                            {skillLabels.map((label, i) => {
-                              const sk = skillKeys[i] ?? "reading";
-                              const icon = SKILL_ICONS[sk] ?? "book";
-                              return (
-                                <span
-                                  key={`${test.id}-${sk}`}
-                                  className="bs-mt-chip bs-mt-chip--skill"
-                                >
-                                  <TablerIcon name={icon} />
-                                  {label}
-                                </span>
-                              );
-                            })}
-                          </div>
-                        </Link>
-                        {latest ? (
-                          <Link
-                            href={`/test/${test.id}/attempt/${latest.attemptId}`}
-                            className="bs-mt-last-score block no-underline"
-                          >
-                            {formatLatestScore(latest)}
                           </Link>
-                        ) : null}
-                      </div>
-                      <Link
-                        href={
-                          embedded
-                            ? `/test/${test.id}?from=review`
-                            : `/test/${test.id}?from=test`
-                        }
-                        className="bs-mt-play-btn"
-                        aria-label={`${test.id} эхлүүлэх`}
-                      >
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                          <path d="M9 7.5v9l7.5-4.5L9 7.5z" />
-                        </svg>
-                      </Link>
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
-          );
-        })
+                          {latest ? (
+                            <Link
+                              href={`/test/${test.id}/attempt/${latest.attemptId}`}
+                              className="bs-mt-row-score"
+                            >
+                              {Math.round(latest.rawScore)}/{Math.round(latest.maxScore)}
+                            </Link>
+                          ) : null}
+                          <Link href={`/review/practice/${test.id}`} className="bs-mt-row-practice" aria-label="Дасгал горим">
+                            Дасгал
+                          </Link>
+                          <Link href={href} className="bs-mt-play-btn" aria-label={`${test.id} эхлүүлэх`}>
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                              <path d="M9 7.5v9l7.5-4.5L9 7.5z" />
+                            </svg>
+                          </Link>
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : null}
+              </section>
+            );
+          })}
+        </div>
       )}
     </>
   );
