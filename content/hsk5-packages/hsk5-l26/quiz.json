@@ -1,0 +1,649 @@
+[
+ {
+  "type": "cloze",
+  "question": "他（　）了二十来个当地人为他带路和搬运行李。",
+  "options": [
+   "雇",
+   "投资",
+   "耽误",
+   "得罪",
+   "反省"
+  ],
+  "correct_answer": "雇",
+  "explanation": "雇 = хөлслөх: 雇了二十来个当地人 — нутгийн хорин орчим хүн хөлсөлсөн. 得罪 — гомдоох; 反省 — өөрийгөө эргэн харах; 投资 — хөрөнгө оруулах; 耽误 — саатуулах.",
+  "order_index": 1,
+  "id": "hsk5-l26-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一个人要时常（　）自己，才不会在错误的道路上走得太远。",
+  "options": [
+   "耽误",
+   "雇",
+   "冒险",
+   "提倡",
+   "反省"
+  ],
+  "correct_answer": "反省",
+  "explanation": "反省 = өөрийгөө эргэн харах: 时时反省、总结 — бичвэрийн гол санаа. 提倡 — уриалан дэмжих; 冒险 — адал явдал хийх; 耽误 — саатуулах; 雇 — хөлслөх.",
+  "order_index": 2,
+  "id": "hsk5-l26-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "当地人自古就有每走三天休息一天的（　）。",
+  "options": [
+   "文明",
+   "思想",
+   "步骤",
+   "效率",
+   "习俗"
+  ],
+  "correct_answer": "习俗",
+  "explanation": "习俗 = заншил, ёс заншил: 自古就有一种习俗. 思想 — бодол санаа; 文明 — соёл иргэншил; 步骤 — алхам, дараалал; 效率 — бүтээмж.",
+  "order_index": 3,
+  "id": "hsk5-l26-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这位老师的教学方法很好，学生的学习（　）很高。",
+  "options": [
+   "个性",
+   "步骤",
+   "哲理",
+   "效率",
+   "疲劳"
+  ],
+  "correct_answer": "效率",
+  "explanation": "效率 = бүтээмж, үр ашиг: 学习效率很高. 步骤 — алхам; 个性 — онцлог зан; 疲劳 — ядрах; 哲理 — гүн утга.",
+  "order_index": 4,
+  "id": "hsk5-l26-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "路上堵车，（　）了我们很长时间，会议没能按时开始。",
+  "options": [
+   "雇",
+   "耽误",
+   "反省",
+   "投资",
+   "得罪"
+  ],
+  "correct_answer": "耽误",
+  "explanation": "耽误 = саатуулах, цаг алдах: 耽误了很长时间. 得罪 — гомдоох; 反省 — өөрийгөө эргэн харах; 投资 — хөрөнгө оруулах; 雇 — хөлслөх.",
+  "order_index": 5,
+  "id": "hsk5-l26-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他说话太直，不小心（　）了老板。",
+  "options": [
+   "得罪",
+   "雇",
+   "提倡",
+   "耽误",
+   "反省"
+  ],
+  "correct_answer": "得罪",
+  "explanation": "得罪 = гомдоох, дургүйг нь хүргэх: 得罪了老板. 耽误 — саатуулах; 提倡 — уриалан дэмжих; 反省 — өөрийгөө эргэн харах; 雇 — хөлслөх.",
+  "order_index": 6,
+  "id": "hsk5-l26-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这家公司长期（　）教育行业，已经收回了大部分成本。",
+  "options": [
+   "提倡",
+   "雇",
+   "反省",
+   "冒险",
+   "投资"
+  ],
+  "correct_answer": "投资",
+  "explanation": "投资 = хөрөнгө оруулах: 长期投资教育行业. 冒险 — адал явдал хийх; 反省 — өөрийгөө эргэн харах; 提倡 — уриалан дэмжих; 雇 — хөлслөх.",
+  "order_index": 7,
+  "id": "hsk5-l26-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "开了一整天车，他觉得浑身都很（　），一躺下就睡着了。",
+  "options": [
+   "忙碌",
+   "寂寞",
+   "疲劳",
+   "被动",
+   "虚伪"
+  ],
+  "correct_answer": "疲劳",
+  "explanation": "疲劳 = ядрах, ядарсан: 浑身疲劳. 寂寞 — ганцаардмал; 虚伪 — дүр эсгэсэн; 被动 — идэвхгүй; 忙碌 — завгүй.",
+  "order_index": 8,
+  "id": "hsk5-l26-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "在这次比赛中，她的表现非常（　），拿到了第一名。",
+  "options": [
+   "寂寞",
+   "冒险",
+   "被动",
+   "出色",
+   "虚伪"
+  ],
+  "correct_answer": "出色",
+  "explanation": "出色 = гайхалтай сайн, онц: 表现出色. 虚伪 — дүр эсгэсэн; 被动 — идэвхгүй; 寂寞 — ганцаардмал; 冒险 — адал явдал хийх.",
+  "order_index": 9,
+  "id": "hsk5-l26-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这位老人的话很有（　），让我想了很久。",
+  "options": [
+   "习俗",
+   "步骤",
+   "效率",
+   "哲理",
+   "丛林"
+  ],
+  "correct_answer": "哲理",
+  "explanation": "哲理 = гүн утга, гүн ухааны санаа: 富有哲理的话. 步骤 — алхам; 习俗 — заншил; 丛林 — ширэнгэн ой; 效率 — бүтээмж.",
+  "order_index": 10,
+  "id": "hsk5-l26-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l26-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们班有二十（　）个学生，大家关系都很好。",
+  "options": [
+   "来",
+   "终于",
+   "一律",
+   "至于",
+   "总算"
+  ],
+  "correct_answer": "来",
+  "explanation": "来 = орчим: 二十来个 — хорин орчим. 至于 — харин ... тухайд; 总算 — эцэст нь; 终于 — эцэст нь; 一律 — ялгалгүй бүгдийг.",
+  "order_index": 11,
+  "id": "hsk5-l26-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "周末我不想出门，一（　）天气太冷，二来还有很多作业没写完。",
+  "options": [
+   "连",
+   "旦",
+   "切",
+   "律",
+   "来"
+  ],
+  "correct_answer": "来",
+  "explanation": "一来……，二来…… = нэгдүгээрт…, хоёрдугаарт… гэж шалтгаан жагсаах бүтэц. 一律 — ялгалгүй, 一连 — дараалан, 一旦 — нэгэнт, 一切 — бүх зүйл (бүтцэд тохирохгүй).",
+  "order_index": 12,
+  "id": "hsk5-l26-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我只知道他是医生，（　）他在哪家医院工作，我就不清楚了。",
+  "options": [
+   "一律",
+   "总算",
+   "来",
+   "至于",
+   "终于"
+  ],
+  "correct_answer": "至于",
+  "explanation": "至于 = харин ... тухайд: өмнөх зүйлээс өөр асуудал оруулна. 总算, 终于 — эцэст нь; 来 — орчим; 一律 — ялгалгүй.",
+  "order_index": 13,
+  "id": "hsk5-l26-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你只是丢了一支笔，（　）哭成这样吗？",
+  "options": [
+   "终于",
+   "至于",
+   "来",
+   "一律",
+   "总算"
+  ],
+  "correct_answer": "至于",
+  "explanation": "至于……吗？ — эсэргүүцсэн асуулт: «тийм болтлоо юу?». 总算, 终于 — эцэст нь; 来 — орчим; 一律 — ялгалгүй.",
+  "order_index": 14,
+  "id": "hsk5-l26-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "cloze",
+  "question": "等了三个小时，那趟火车（　）来了。",
+  "options": [
+   "来",
+   "一律",
+   "总算",
+   "至于",
+   "冒险"
+  ],
+  "correct_answer": "总算",
+  "explanation": "总算 = эцэст нь: удаан хүлээсэн хүсэл биелсэн. 至于 — харин ... тухайд; 来 — орчим; 一律 — ялгалгүй; 冒险 — адал явдал хийх.",
+  "order_index": 15,
+  "id": "hsk5-l26-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他多次想告诉她，但（　）没说出口。",
+  "options": [
+   "至于",
+   "一律",
+   "终于",
+   "来",
+   "总算"
+  ],
+  "correct_answer": "终于",
+  "explanation": "终于 нь хүсээгүй, сэтгэл дундуур үр дүнд ч хэрэглэгдэнэ: 终于没说出口 — эцэст нь хэлж чадсангүй. 总算 нь зөвхөн хүссэн үр дүнд; 至于 — харин ... тухайд; 来 — орчим; 一律 — ялгалгүй.",
+  "order_index": 16,
+  "id": "hsk5-l26-q16",
+  "skillTags": [
+   "grammar",
+   "nuance"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "文章把工作中的“忙”分成几种？",
+  "options": [
+   "两种",
+   "五种",
+   "四种",
+   "三种"
+  ],
+  "correct_answer": "三种",
+  "explanation": "1-р догол: 工作中的忙碌大概可以分为三种 — ажлын завгүй байдлыг гурав ангилсан.",
+  "order_index": 17,
+  "id": "hsk5-l26-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "第一种“忙”是什么样的？",
+  "options": [
+   "忙得有些虚伪，总想让自己忙",
+   "忙得很主动，人是工作的主人",
+   "忙得很被动，人几乎成了工作的奴隶",
+   "忙得很轻松，所以经常休息"
+  ],
+  "correct_answer": "忙得很被动，人几乎成了工作的奴隶",
+  "explanation": "Эхний төрөл: 忙得很被动 — ажилд хөөгдөж, ажлынхаа боол болсон шахуу. Хоёр дахь нь 主动, гурав дахь нь 虚伪.",
+  "order_index": 18,
+  "id": "hsk5-l26-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "大导演到南美丛林做什么？",
+  "options": [
+   "拍有关古代印加文明的纪录片",
+   "去做生意",
+   "参加一次体育比赛",
+   "寻找古代的宝藏"
+  ],
+  "correct_answer": "拍有关古代印加文明的纪录片",
+  "explanation": "3-р догол: 到南美丛林拍有关古代印加文明的纪录片 — Инкийн эртний соёл иргэншлийн баримтат кино хийхээр очсон.",
+  "order_index": 19,
+  "id": "hsk5-l26-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "前三天，当地人的表现怎么样？",
+  "options": [
+   "总是走得很慢",
+   "表现出色，脚力过人，健步如飞",
+   "拒绝带路",
+   "常常要求休息"
+  ],
+  "correct_answer": "表现出色，脚力过人，健步如飞",
+  "explanation": "这批当地人个个都表现出色 ... 健步如飞 — эхний гурван өдөр тэд хүнд ачаатай ч нисэх мэт хурдан алхсан.",
+  "order_index": 20,
+  "id": "hsk5-l26-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "第四天，大导演为什么非常着急？",
+  "options": [
+   "当地人要求更高的工资",
+   "他自己累得走不动了",
+   "耽误时间会让日程重新安排，费用增加还会让投资人不高兴",
+   "他不想继续拍纪录片了"
+  ],
+  "correct_answer": "耽误时间会让日程重新安排，费用增加还会让投资人不高兴",
+  "explanation": "9-р өгүүлбэр: 一来耽误了时间，日程就得重新安排；二来费用增加，投资人会不高兴 — цаг алдвал хуваарь өөрчлөгдөнө, зардал нэмэгдвэл хөрөнгө оруулагч дургүйцэнэ.",
+  "order_index": 21,
+  "id": "hsk5-l26-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "当地人为什么每走三天就要休息一天？",
+  "options": [
+   "因为路上有危险",
+   "因为他们不喜欢赶路",
+   "为了让灵魂追上疲劳的身体",
+   "因为导演给的钱不够"
+  ],
+  "correct_answer": "为了让灵魂追上疲劳的身体",
+  "explanation": "那是为了让我们的灵魂，能够追得上我们赶了三天路的疲劳的身体 — сүнс нь ядарсан биедээ гүйцэж очихын тулд.",
+  "order_index": 22,
+  "id": "hsk5-l26-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "比尔·盖茨“闭关”的时候怎么做？",
+  "options": [
+   "去丛林里拍纪录片",
+   "把自己关在房子里，任何人一律不见",
+   "继续参加日常会议",
+   "每天和家人一起旅行"
+  ],
+  "correct_answer": "把自己关在房子里，任何人一律不见",
+  "explanation": "15-р өгүүлбэр: 把自己关在一所房子里，任何人他都一律不见 — өөрийгөө байшинд түгжиж, хэнтэй ч уулзахгүй.",
+  "order_index": 23,
+  "id": "hsk5-l26-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "这篇文章最主要想告诉我们什么？",
+  "options": [
+   "工作越忙越成功",
+   "休息会让人变懒",
+   "忙碌的人要多给自己一点思考的时间",
+   "应该每年去丛林旅行"
+  ],
+  "correct_answer": "忙碌的人要多给自己一点思考的时间",
+  "explanation": "Сүүлийн өгүүлбэр: 忙碌的人们，请多给自己一点思考的时间吧 — завгүй хүмүүс өөртөө бодох цаг арай илүү өгөх хэрэгтэй.",
+  "order_index": 24,
+  "id": "hsk5-l26-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小王每天加班到很晚，总觉得时间不够用。后来他每周留出半天时间整理工作，发现做事的效率反而提高了。\n问：小王发现了什么？",
+  "options": [
+   "留出时间整理工作，效率反而提高了",
+   "每天休息半天，工作更忙",
+   "整理工作会耽误时间",
+   "加班越多，效率越高"
+  ],
+  "correct_answer": "留出时间整理工作，效率反而提高了",
+  "explanation": "留出半天整理工作 → 效率反而提高了: 思考、总结 нь ажлыг үр дүнтэй болгодог. Сонголтууд бусад нь текстийн утгатай зөрчилдөнө.",
+  "order_index": 25,
+  "id": "hsk5-l26-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n周末我决定不出门了，一来这几天实在太累，二来天气预报说会下大雨。我打算在家睡一觉，再看一本书。\n问：他为什么不出门？",
+  "options": [
+   "因为朋友不能来",
+   "因为很累，而且会下大雨",
+   "因为要去上班",
+   "因为没有钱"
+  ],
+  "correct_answer": "因为很累，而且会下大雨",
+  "explanation": "一来太累，二来下大雨 — хоёр шалтгаан: ядарсан, бороо орно гэсэн.",
+  "order_index": 26,
+  "id": "hsk5-l26-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小李准备了三个月，这次汉语考试总算通过了。他高兴得一晚上没睡着，第二天一早就给妈妈打了电话。\n问：关于小李，下面哪一项正确？",
+  "options": [
+   "他等了很久，考试终于通过了，很高兴",
+   "他没有通过考试，很难过",
+   "他给朋友发了短信",
+   "他没有准备考试"
+  ],
+  "correct_answer": "他等了很久，考试终于通过了，很高兴",
+  "explanation": "总算通过了 = удаан бэлтгэсний эцэст хүссэн үр дүн гарсан. 高兴得一晚上没睡着 — баярласандаа шөнөжин унтаж чадсангүй.",
+  "order_index": 27,
+  "id": "hsk5-l26-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n老师说：“大家一定要按时交作业，至于写什么内容，可以自己选。”\n问：老师对作业有什么要求？",
+  "options": [
+   "可以晚几天再交",
+   "内容必须由老师决定",
+   "不用写作业",
+   "必须按时交，内容可以自己选"
+  ],
+  "correct_answer": "必须按时交，内容可以自己选",
+  "explanation": "至于 нь өөр асуудал оруулдаг: 按时交 (заавал), 至于内容 (чөлөөтэй сонгоно).",
+  "order_index": 28,
+  "id": "hsk5-l26-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 二十来个 / 雇了 / 当地人",
+  "options": [
+   "二十来个他雇了当地人。",
+   "他雇了二十来个当地人。",
+   "他当地人雇了二十来个。"
+  ],
+  "correct_answer": "他雇了二十来个当地人。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (他) + үйл үг (雇了) + тоо (二十来个) + тусагдахуун (当地人). 来 = орчим, тооны ард орно.",
+  "order_index": 29,
+  "id": "hsk5-l26-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我们 / 总算 / 把 / 完成了 / 任务",
+  "options": [
+   "我们总算把任务完成了。",
+   "我们把总算任务完成了。",
+   "总算我们完成把任务了。"
+  ],
+  "correct_answer": "我们总算把任务完成了。",
+  "explanation": "Дараалал: өгүүлэгдэхүүн (我们) + дайвар (总算) + 把 + тусагдахуун (任务) + үйл үг (完成了). 总算 нь 把-ийн өмнө орно.",
+  "order_index": 30,
+  "id": "hsk5-l26-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 至于 / 他去哪儿 / 我 / 不清楚了 / 就",
+  "options": [
+   "他去哪儿至于，我就不清楚了。",
+   "至于我就不清楚了，他去哪儿。",
+   "至于他去哪儿，我就不清楚了。"
+  ],
+  "correct_answer": "至于他去哪儿，我就不清楚了。",
+  "explanation": "Бүтэц: 至于 + шинэ сэдэв (他去哪儿)，дараа нь тайлбар (我就不清楚了). 至于 өгүүлбэрийн эхэнд орно.",
+  "order_index": 31,
+  "id": "hsk5-l26-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 一连 / 下了 / 三天 / 大雨",
+  "options": [
+   "一连下了三天大雨。",
+   "下了一连三天大雨。",
+   "三天一连下了大雨。"
+  ],
+  "correct_answer": "一连下了三天大雨。",
+  "explanation": "一连 = дараалан, тасралтгүй — дайвар үг тул үйл үгийн өмнө орно: 一连下了三天大雨.",
+  "order_index": 32,
+  "id": "hsk5-l26-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 任何人 / 他 / 一律 / 不见 / 都",
+  "options": [
+   "他一律任何人都不见。",
+   "不见任何人他都一律。",
+   "任何人他都一律不见。"
+  ],
+  "correct_answer": "任何人他都一律不见。",
+  "explanation": "Дараалал: сэдэв (任何人) + өгүүлэгдэхүүн (他) + 都 + 一律 + үйл үг (不见). 一律 = ялгалгүй бүгдийг.",
+  "order_index": 33,
+  "id": "hsk5-l26-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我喜欢走路上班 / 一来 / 可以锻炼身体 / 二来 / 不用堵车",
+  "options": [
+   "我喜欢走路上班，二来可以锻炼身体，一来不用堵车。",
+   "我喜欢走路上班，一来可以锻炼身体，二来不用堵车。",
+   "一来我喜欢走路上班，可以锻炼身体，二来不用堵车。"
+  ],
+  "correct_answer": "我喜欢走路上班，一来可以锻炼身体，二来不用堵车。",
+  "explanation": "一来……，二来…… бүтцийг дарааллаар нь тавина: нэгдүгээрт, биеийг хөдөлгөнө; хоёрдугаарт, түгжрэлгүй.",
+  "order_index": 34,
+  "id": "hsk5-l26-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]

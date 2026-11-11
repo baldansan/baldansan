@@ -1,0 +1,657 @@
+[
+ {
+  "type": "cloze",
+  "question": "我父亲是一位象棋（　）。",
+  "options": [
+   "教练",
+   "原则",
+   "后果",
+   "运气",
+   "因素"
+  ],
+  "correct_answer": "教练",
+  "explanation": "教练 = дасгалжуулагч: 象棋教练 — шатрын дасгалжуулагч. 运气 — аз; 原则 — зарчим; 因素 — хүчин зүйл; 后果 — үр дагавар.",
+  "order_index": 1,
+  "id": "hsk5-l27-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "失败了没关系，关键是要从中吸取（　）。",
+  "options": [
+   "运气",
+   "心态",
+   "教训",
+   "期间",
+   "局"
+  ],
+  "correct_answer": "教训",
+  "explanation": "吸取教训 = сургамж авах (энэ бол тогтвортой хослол). 运气 — аз; 局 — тоглолт; 心态 — сэтгэлийн хандлага; 期间 — хугацаа.",
+  "order_index": 2,
+  "id": "hsk5-l27-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他做错了事，却一直（　）是自己做的。",
+  "options": [
+   "答应",
+   "珍惜",
+   "观察",
+   "责备",
+   "否认"
+  ],
+  "correct_answer": "否认",
+  "explanation": "否认 = үгүйсгэх, хүлээн зөвшөөрөхгүй байх. 观察 — ажиглах; 责备 — зэмлэх; 珍惜 — нандигах; 答应 — зөвшөөрөх.",
+  "order_index": 3,
+  "id": "hsk5-l27-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天比赛时他（　）得特别好，拿了第一名。",
+  "options": [
+   "损失",
+   "发挥",
+   "服气",
+   "吸取",
+   "失去"
+  ],
+  "correct_answer": "发挥",
+  "explanation": "发挥 = чадвараа гаргах: 发挥得好. 吸取 — сурч авах; 服气 — дийлдсэнээ хүлээн зөвшөөрөх; 损失 — алдагдах; 失去 — алдах.",
+  "order_index": 4,
+  "id": "hsk5-l27-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们要（　）和家人在一起的时间。",
+  "options": [
+   "责备",
+   "否认",
+   "犯",
+   "珍惜",
+   "答应"
+  ],
+  "correct_answer": "珍惜",
+  "explanation": "珍惜 = нандигах, үнэлж хайрлах: 珍惜时间. 责备 — зэмлэх; 否认 — үгүйсгэх; 犯 — алдаа гаргах; 答应 — амлах.",
+  "order_index": 5,
+  "id": "hsk5-l27-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他刚学汉语，（　）能听懂这么难的课。",
+  "options": [
+   "过于",
+   "未必",
+   "屡",
+   "必然",
+   "事先"
+  ],
+  "correct_answer": "未必",
+  "explanation": "未必 = заавал тийм биш: 未必能听懂 — тэр сайн ойлгохгүй байж магадгүй. 必然 — зайлшгүй; 过于 — хэтэрхий; 事先 — урьдчилан; 屡 — дахин дахин.",
+  "order_index": 6,
+  "id": "hsk5-l27-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你要来的话，请（　）告诉我一声，我好准备。",
+  "options": [
+   "原则",
+   "局",
+   "后果",
+   "事先",
+   "期间"
+  ],
+  "correct_answer": "事先",
+  "explanation": "事先 = урьдчилан, өмнө нь: 事先告诉我. 期间 — хугацаа; 后果 — үр дагавар; 原则 — зарчим; 局 — тоглолт.",
+  "order_index": 7,
+  "id": "hsk5-l27-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这几次考试都没考好，他有点儿（　）了。",
+  "options": [
+   "灰心",
+   "运气",
+   "次要",
+   "原则",
+   "因素"
+  ],
+  "correct_answer": "灰心",
+  "explanation": "灰心 = сэтгэл гутрах: 有点儿灰心. 运气 — аз; 原则 — зарчим; 因素 — хүчин зүйл; 次要 — хоёрдогч.",
+  "order_index": 8,
+  "id": "hsk5-l27-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他输了棋，心里很不（　）。",
+  "options": [
+   "灰心",
+   "观察",
+   "服气",
+   "珍惜",
+   "答应"
+  ],
+  "correct_answer": "服气",
+  "explanation": "服气 = дийлдсэнээ хүлээн зөвшөөрөх: 不服气 — дийлдсэнээ хүлээж ядах. 灰心 — сэтгэл гутрах; 答应 — зөвшөөрөх; 观察 — ажиглах; 珍惜 — нандигах.",
+  "order_index": 9,
+  "id": "hsk5-l27-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你这样做会造成很严重的（　）。",
+  "options": [
+   "原则",
+   "教练",
+   "运气",
+   "局",
+   "后果"
+  ],
+  "correct_answer": "后果",
+  "explanation": "后果 = үр дагавар (голдуу муу): 造成严重的后果. 运气 — аз; 局 — тоглолт; 教练 — дасгалжуулагч; 原则 — зарчим.",
+  "order_index": 10,
+  "id": "hsk5-l27-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l27-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "买了新衣服，我（　）穿，一直放在柜子里。",
+  "options": [
+   "过于",
+   "未必",
+   "舍不得",
+   "不假思索",
+   "眼睁睁"
+  ],
+  "correct_answer": "舍不得",
+  "explanation": "舍不得 + V = хийхийг харамлах: 舍不得穿. 未必 — заавал биш; 眼睁睁 — хараад суух; 不假思索 — бодолгүй; 过于 — хэтэрхий.",
+  "order_index": 11,
+  "id": "hsk5-l27-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "比赛的时间已经确定（　）了，不能再改。",
+  "options": [
+   "过来",
+   "出来",
+   "起来",
+   "下去",
+   "下来"
+  ],
+  "correct_answer": "下来",
+  "explanation": "确定下来 = шийдэж тогтоох: «动词＋下来» нь тогтох, дуусахыг заана. 起来 — эхлэх; 下去 — үргэлжлэх; 出来 — гарч ирэх; 过来 — ирэх.",
+  "order_index": 12,
+  "id": "hsk5-l27-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这场大雨给农民造成了很大的（　）。",
+  "options": [
+   "失去",
+   "损失",
+   "否认",
+   "教训",
+   "责备"
+  ],
+  "correct_answer": "损失",
+  "explanation": "损失 нэр үг болж «хохирол» гэсэн утгатай: 造成损失. 失去 нэр үг болж чадахгүй; 责备 — зэмлэх; 否认 — үгүйсгэх; 教训 — сургамж.",
+  "order_index": 13,
+  "id": "hsk5-l27-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子的用法是正确的？",
+  "options": [
+   "公司会赔偿我们的损失。",
+   "公司会赔偿我们失去了。",
+   "公司会损失赔偿我们。",
+   "公司会赔偿我们的失去。"
+  ],
+  "correct_answer": "公司会赔偿我们的损失。",
+  "explanation": "«赔偿……的损失» — нэр үг «损失»-ийг ашиглана; «失去» нэр үг болж чадахгүй.",
+  "order_index": 14,
+  "id": "hsk5-l27-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "哪个句子是对的？",
+  "options": [
+   "我想老师说的话把都录下来。",
+   "我想把老师说的话都录下去。",
+   "我想把老师说的话都录下来。",
+   "我想把老师说的话下来都录。"
+  ],
+  "correct_answer": "我想把老师说的话都录下来。",
+  "explanation": "«把 + O + V + 下来» — 录下来 нь бичлэг хийж авах. «录下去» (үргэлжлэх) болон бусад дараалал буруу.",
+  "order_index": 15,
+  "id": "hsk5-l27-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "A：这么好的工作，你怎么舍得辞职？B：（　）",
+  "options": [
+   "我很舍得，所以决定留下来。",
+   "没什么舍不得的，我相信还能找到更好的。",
+   "因为舍不得，所以我不辞职也不留下。",
+   "我舍不得，所以马上就辞职了。"
+  ],
+  "correct_answer": "没什么舍不得的，我相信还能找到更好的。",
+  "explanation": "«没什么舍不得的» — харамлах юм алга, илүү сайн ажил олно. Бусад хариулт өөрсдөө зөрчилдөнө.",
+  "order_index": 16,
+  "id": "hsk5-l27-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文里，“我”和父亲下了几局棋以后，结果怎么样？",
+  "options": [
+   "基本上每局不到10分钟就输了",
+   "“我”不想再下了",
+   "一半赢一半输",
+   "每一局都赢了",
+   "父亲故意让“我”赢"
+  ],
+  "correct_answer": "基本上每局不到10分钟就输了",
+  "explanation": "Бичвэрт: 几局下来，基本上都是不到10分钟我就败下阵来 — бараг тоглолт бүрд 10 минутаас бага хугацаанд ялагдсан.",
+  "order_index": 17,
+  "id": "hsk5-l27-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“我”的父亲是做什么的？",
+  "options": [
+   "记者",
+   "医生",
+   "象棋教练",
+   "厨师",
+   "老师"
+  ],
+  "correct_answer": "象棋教练",
+  "explanation": "Бичвэрт: 我父亲是一位象棋教练 — аав нь хятад шатрын дасгалжуулагч.",
+  "order_index": 18,
+  "id": "hsk5-l27-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“我”输了以后，一开始是怎么想的？",
+  "options": [
+   "觉得棋太难了",
+   "觉得很高兴",
+   "觉得父亲作弊",
+   "觉得自己不适合下棋",
+   "觉得运气不好、没发挥好"
+  ],
+  "correct_answer": "觉得运气不好、没发挥好",
+  "explanation": "Бичвэрт: 这次运气不好，再来！/ 这次没发挥好 — азгүй, чадвараа сайн гаргаж чадсангүй гэж бодсон.",
+  "order_index": 19,
+  "id": "hsk5-l27-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "“我”觉得自己输棋的原因是什么？",
+  "options": [
+   "心情太好了",
+   "技术不如父亲，经验也不足",
+   "棋盘不好",
+   "时间不够用",
+   "父亲年纪太大了"
+  ],
+  "correct_answer": "技术不如父亲，经验也不足",
+  "explanation": "Бичвэрт: 我技术没你好，经验也不足 — ур чадвар, туршлага дутсан гэж үзсэн.",
+  "order_index": 20,
+  "id": "hsk5-l27-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "父亲认为“我”输棋最重要的原因是什么？",
+  "options": [
+   "技术不好",
+   "经验不足",
+   "对手太强",
+   "运气不好",
+   "心态不对，不够珍惜棋子"
+  ],
+  "correct_answer": "心态不对，不够珍惜棋子",
+  "explanation": "Бичвэрт: 最重要的问题在于你心态不对。你不够珍惜你的棋子 — ур чадвар, туршлага нь хоёрдогч шалтгаан.",
+  "order_index": 21,
+  "id": "hsk5-l27-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "前三分之一的时间里，“我”是怎样下棋的？",
+  "options": [
+   "总是后悔",
+   "不假思索，拿起来就走，失去了也不觉得可惜",
+   "每一步都想很久",
+   "一直在看父亲",
+   "一个棋子也不想失去"
+  ],
+  "correct_answer": "不假思索，拿起来就走，失去了也不觉得可惜",
+  "explanation": "Бичвэрт: 下棋时不假思索，拿起来就走，失去了也不觉得可惜 — эхний гуравны нэг хугацаанд бодолгүй нүүдэг байсан.",
+  "order_index": 22,
+  "id": "hsk5-l27-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "后三分之二的时间里，“我”犯了什么错误？",
+  "options": [
+   "不看棋盘",
+   "不想赢",
+   "走得太快",
+   "过于谨慎，一个棋子也不想失去",
+   "一直和父亲说话"
+  ],
+  "correct_answer": "过于谨慎，一个棋子也不想失去",
+  "explanation": "Сүүлийн хугацаанд: 对棋子过于珍惜，每走一步都过于谨慎，一个棋子也不想失 — хэт болгоомжилж, нэг ч дүрсээ алдахыг хүсээгүй.",
+  "order_index": 23,
+  "id": "hsk5-l27-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "父亲认为，下棋的基本原则是什么？",
+  "options": [
+   "要考虑得失，想清楚愿意失去什么",
+   "一定要赢",
+   "棋子越多越好",
+   "不要跟别人下棋",
+   "走得越快越好"
+  ],
+  "correct_answer": "要考虑得失，想清楚愿意失去什么",
+  "explanation": "父亲说：赢是目的；至于原则，是要考虑得失 — ялах нь зорилго, зарчим нь алдах ба олохыг бодох явдал.",
+  "order_index": 24,
+  "id": "hsk5-l27-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n小王很喜欢踢足球。上个月比赛，他们队输了，队友们都很灰心。小王说：“这次输了没关系，我们找找原因，吸取教训，下次一定能赢。”\n问：小王是什么态度？",
+  "options": [
+   "觉得是运气不好",
+   "不想再踢球了",
+   "想找原因，继续努力",
+   "很灰心",
+   "责备队友"
+  ],
+  "correct_answer": "想找原因，继续努力",
+  "explanation": "吸取教训、下次一定能赢 = сургамж авч үргэлжлүүлэн хичээнэ. Бусад хүмүүс гутарсан боловч Ван гутраагүй.",
+  "order_index": 25,
+  "id": "hsk5-l27-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n张阿姨买了一条漂亮的裙子，三年了，一直舍不得穿。今年她拿出来试了试，发现裙子已经不流行了，穿着也有点儿小了。\n问：关于这条裙子，可以知道什么？",
+  "options": [
+   "现在穿起来不太合适",
+   "是别人送的",
+   "张阿姨每天都穿",
+   "张阿姨很快就穿坏了",
+   "特别便宜"
+  ],
+  "correct_answer": "现在穿起来不太合适",
+  "explanation": "舍不得穿 → 3 жил өмсөөгүй; одоо моодноос гарсан, жаахан жижиг болсон = одоо өмсөхөд тохиромж муутай.",
+  "order_index": 26,
+  "id": "hsk5-l27-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n公司事先没有做好计划，结果项目出了问题，损失了很多钱。经理说：“这次的教训很重要，以后做什么事，都要先想清楚后果。”\n问：经理的意思是什么？",
+  "options": [
+   "不要再做新项目",
+   "应该责备员工",
+   "做事之前要想清楚后果",
+   "运气不好没办法",
+   "这次没有损失"
+  ],
+  "correct_answer": "做事之前要想清楚后果",
+  "explanation": "先想清楚后果 = ажил хийхээс өмнө үр дагаврыг сайн бодох. Нөгөө гурав нь утгад таарахгүй.",
+  "order_index": 27,
+  "id": "hsk5-l27-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n爷爷下了一辈子象棋。他常对孙子说：“下棋和做人一样，每一步都要珍惜。”孙子听了以后，下棋不再不假思索，每走一步都认真考虑。\n问：孙子有什么变化？",
+  "options": [
+   "每局都赢爷爷",
+   "不再听爷爷的话",
+   "不喜欢下棋了",
+   "下棋时走得更快",
+   "下棋时每一步都认真考虑"
+  ],
+  "correct_answer": "下棋时每一步都认真考虑",
+  "explanation": "不再不假思索，每走一步都认真考虑 = нүүдэл болгонд сайн бодох болсон.",
+  "order_index": 28,
+  "id": "hsk5-l27-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 我 / 想 / 把 / 他们说的话 / 录下来",
+  "options": [
+   "我把想他们说的话录下来。",
+   "我想把他们说的话录下来。",
+   "我想他们说的话把录下来。"
+  ],
+  "correct_answer": "我想把他们说的话录下来。",
+  "explanation": "Дараалал: 我 (өгүүлэгдэхүүн) + 想 + 把 + тусагдахуун (他们说的话) + 录下来. «把» тусагдахуунаас өмнө, үйл үг сүүлд.",
+  "order_index": 29,
+  "id": "hsk5-l27-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 父亲 / 让 / 我 / 先 / 走三步",
+  "options": [
+   "父亲让我先走三步。",
+   "让父亲我先走三步。",
+   "父亲我让先走三步。"
+  ],
+  "correct_answer": "父亲让我先走三步。",
+  "explanation": "«A + 让 + B + V» — аав намайг түрүүлж нүүхийг зөвшөөрсөн: 父亲(A) + 让 + 我(B) + 先走三步.",
+  "order_index": 30,
+  "id": "hsk5-l27-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 最重要的问题 / 在于 / 你 / 心态 / 不对",
+  "options": [
+   "最重要的问题在于你心态不对。",
+   "在于最重要的问题你心态不对。",
+   "最重要的问题你在于心态不对。"
+  ],
+  "correct_answer": "最重要的问题在于你心态不对。",
+  "explanation": "«A 在于 B» — A нь B-д оршино: 最重要的问题 + 在于 + 你心态不对.",
+  "order_index": 31,
+  "id": "hsk5-l27-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 每走一步 / 你 / 都 / 应该 / 事先 / 想清楚",
+  "options": [
+   "每走一步，你想清楚都应该事先。",
+   "每走一步，应该你事先都想清楚。",
+   "每走一步，你都应该事先想清楚。"
+  ],
+  "correct_answer": "每走一步，你都应该事先想清楚。",
+  "explanation": "Дараалал: 你 + 都 + 应该 + 事先 + 想清楚. 事先 нь үйл үгийн өмнө орно.",
+  "order_index": 32,
+  "id": "hsk5-l27-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 他 / 舍不得 / 花钱 / 买 / 新衣服",
+  "options": [
+   "他花钱舍不得买新衣服。",
+   "他舍不得花钱买新衣服。",
+   "他舍不得新衣服买花钱。"
+  ],
+  "correct_answer": "他舍不得花钱买新衣服。",
+  "explanation": "«舍不得 + V» — 舍不得 нь үйл үгийн өмнө шууд орно: 他 + 舍不得 + 花钱 + 买新衣服.",
+  "order_index": 33,
+  "id": "hsk5-l27-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 不到三分钟 / 我的棋子 / 就 / 损失 / 大半",
+  "options": [
+   "不到三分钟，我的棋子就损失大半。",
+   "不到三分钟，大半损失我的棋子就。",
+   "我的棋子不到三分钟损失就大半。"
+  ],
+  "correct_answer": "不到三分钟，我的棋子就损失大半。",
+  "explanation": "Дараалал: цагийн үг (不到三分钟) + өгүүлэгдэхүүн (我的棋子) + 就 + 损失 + 大半. «损失大半» — олонхи нь алдагдсан.",
+  "order_index": 34,
+  "id": "hsk5-l27-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]

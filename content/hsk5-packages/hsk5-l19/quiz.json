@@ -1,0 +1,647 @@
+[
+ {
+  "type": "cloze",
+  "question": "做蛋糕的时候，要把鸡蛋和面粉（　）均匀。",
+  "options": [
+   "切",
+   "盖",
+   "搅拌",
+   "夸",
+   "预防"
+  ],
+  "correct_answer": "搅拌",
+  "explanation": "搅拌 = хутгаж холих: 搅拌均匀 (жигд хутгах). 切 — зүсэх; 盖 — таглах; 夸 — магтах; 预防 — урьдчилан сэргийлэх.",
+  "order_index": 1,
+  "id": "hsk5-l19-q01",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "天气变冷了，大家要注意（　）感冒。",
+  "options": [
+   "预防",
+   "怀念",
+   "夸",
+   "擀",
+   "闻"
+  ],
+  "correct_answer": "预防",
+  "explanation": "预防 = урьдчилан сэргийлэх: 预防感冒 (ханиад хүрэхээс сэргийлэх). 怀念 — санан дурсах; 夸 — магтах; 擀 — гурил элдэх; 闻 — үнэрлэх.",
+  "order_index": 2,
+  "id": "hsk5-l19-q02",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这家饭馆的（　）菜是烤鸭，很多游客专门来吃。",
+  "options": [
+   "色彩",
+   "原料",
+   "圈",
+   "平安",
+   "特色"
+  ],
+  "correct_answer": "特色",
+  "explanation": "特色 = онцлог: 特色菜 (онцлох хоол). 色彩 — өнгө; 原料 — түүхий эд; 圈 — тойрог; 平安 — амар тайван.",
+  "order_index": 3,
+  "id": "hsk5-l19-q03",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "生病的时候，最好吃得（　）一点儿，别吃太油腻的东西。",
+  "options": [
+   "均匀",
+   "清淡",
+   "透明",
+   "薄",
+   "焦"
+  ],
+  "correct_answer": "清淡",
+  "explanation": "清淡 = цайлган, тос давс багатай: 吃得清淡一点儿. 均匀 — жигд; 透明 — тунгалаг; 薄 — нимгэн; 焦 — шаравтар шатсан.",
+  "order_index": 4,
+  "id": "hsk5-l19-q04",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这杯水很干净，（　）得能看见杯底。",
+  "options": [
+   "均匀",
+   "清淡",
+   "嫩",
+   "透明",
+   "烫"
+  ],
+  "correct_answer": "透明",
+  "explanation": "透明 = тунгалаг: 透明得能看见杯底 (ёроолыг нь харагдтал тунгалаг). 均匀 — жигд; 清淡 — цайлган; 嫩 — зөөлөн; 烫 — халуун.",
+  "order_index": 5,
+  "id": "hsk5-l19-q05",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "小心，汤很（　），先吹一吹再喝。",
+  "options": [
+   "糊",
+   "焦",
+   "嫩",
+   "烫",
+   "薄"
+  ],
+  "correct_answer": "烫",
+  "explanation": "烫 = түлэм халуун. 糊 — ёроолдоо шатах; 焦 — шаравтар шатсан; 嫩 — зөөлөн; 薄 — нимгэн.",
+  "order_index": 6,
+  "id": "hsk5-l19-q06",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "祝你一路（　）！",
+  "options": [
+   "可口",
+   "平安",
+   "特色",
+   "想念",
+   "均匀"
+  ],
+  "correct_answer": "平安",
+  "explanation": "平安 = амар тайван, эсэн мэнд: 祝你一路平安 (замдаа аятайхан яваарай). 可口 — амттай; 特色 — онцлог; 想念 — санах.",
+  "order_index": 7,
+  "id": "hsk5-l19-q07",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "离开家乡二十年了，他还是常常（　）小时候的生活。",
+  "options": [
+   "怀念",
+   "夸",
+   "炒",
+   "盖",
+   "切"
+  ],
+  "correct_answer": "怀念",
+  "explanation": "怀念 = санан дурсах: 怀念小时候的生活 (өнгөрсөн амьдралаа дурсах). 夸 — магтах; 炒 — хуурах; 盖 — таглах; 切 — зүсэх.",
+  "order_index": 8,
+  "id": "hsk5-l19-q08",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈把肉（　）成细细的丝，准备做青椒肉丝。",
+  "options": [
+   "煮",
+   "擀",
+   "淋",
+   "闻",
+   "切"
+  ],
+  "correct_answer": "切",
+  "explanation": "切 = зүсэх: 切成丝 (нарийн утас шиг зүсэх). 煮 — чанах; 擀 — гурил элдэх; 淋 — цацах; 闻 — үнэрлэх.",
+  "order_index": 9,
+  "id": "hsk5-l19-q09",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这道菜的（　）太重了，我吃不惯。",
+  "options": [
+   "特色",
+   "原料",
+   "口味",
+   "圈",
+   "丝"
+  ],
+  "correct_answer": "口味",
+  "explanation": "口味 = амт: 口味重 (амт тод, давслаг). 特色 — онцлог; 原料 — түүхий эд; 圈 — тойрог; 丝 — нарийн зүсмэл.",
+  "order_index": 10,
+  "id": "hsk5-l19-q10",
+  "skillTags": [
+   "vocabulary",
+   "hsk5-l19-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她露出了阳光（　）的笑容。",
+  "options": [
+   "地",
+   "般",
+   "得",
+   "着",
+   "过"
+  ],
+  "correct_answer": "般",
+  "explanation": "般 = …шиг, …мэт: 阳光般的笑容 (нар шиг инээмсэглэл). Нэр үгийн ард 般 орно; 地, 得, 着, 过 энд тохирохгүй.",
+  "order_index": 11,
+  "id": "hsk5-l19-q11",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一进厨房，我就（　）到了一股香味。",
+  "options": [
+   "听",
+   "看",
+   "摸",
+   "闻",
+   "想"
+  ],
+  "correct_answer": "闻",
+  "explanation": "闻到 = үнэр мэдрэх: 闻到香味. 听 — чихээр сонсох; 看 — харах; 摸 — барьж үзэх; 想 — бодох.",
+  "order_index": 12,
+  "id": "hsk5-l19-q12",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "（　）天还没黑，我们赶紧把衣服收回来吧。",
+  "options": [
+   "等",
+   "虽然",
+   "即使",
+   "趁",
+   "除非"
+  ],
+  "correct_answer": "趁",
+  "explanation": "趁 = боломжийг ашиглан: 趁天还没黑 (харанхуй болоогүй байхад). 等 нь «…болоход» гэсэн цаг хугацааны нөхцөл; 虽然, 即使, 除非 утгын хувьд таарахгүй.",
+  "order_index": 13,
+  "id": "hsk5-l19-q13",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这件衣服颜色不错，穿（　）也很舒服。",
+  "options": [
+   "上来",
+   "下去",
+   "起来",
+   "出来",
+   "过来"
+  ],
+  "correct_answer": "起来",
+  "explanation": "穿起来 = өмсөхөд: V + 起来 нь аль нэг талаас дүгнэсэн үнэлгээ. 上来, 下去, 出来, 过来 нь чиглэл заасан өөр хэлбэр.",
+  "order_index": 14,
+  "id": "hsk5-l19-q14",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我和他只见过一面，算（　）朋友。",
+  "options": [
+   "不出",
+   "不起",
+   "不开",
+   "不着",
+   "不上"
+  ],
+  "correct_answer": "不上",
+  "explanation": "算不上 = …гэж тооцох хэмжээнд хүрээгүй: 算不上朋友. «V不上» нь жишиг, хэмжээнд хүрэхгүйг илтгэнэ; бусад хэлбэр энд утгагүй.",
+  "order_index": 15,
+  "id": "hsk5-l19-q15",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下面哪个句子的用法是正确的？",
+  "options": [
+   "他有一颗般金子的心。",
+   "他有一颗金子般的心。",
+   "他有一颗金子般一样的心。",
+   "他有一颗金子的般心。"
+  ],
+  "correct_answer": "他有一颗金子般的心。",
+  "explanation": "般 нь нэр үгийн ДАРАА орно: 金子般的心. «般一样» гэж давхардуулахгүй, 般-ийг нэр үгийн өмнө тавихгүй.",
+  "order_index": 16,
+  "id": "hsk5-l19-q16",
+  "skillTags": [
+   "grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "作者最怀念家乡的什么美食？",
+  "options": [
+   "橘子",
+   "葡萄",
+   "萝卜饼",
+   "萝卜汤"
+  ],
+  "correct_answer": "萝卜饼",
+  "explanation": "Эхний өгүүлбэр: 家乡的众多美食中，萝卜饼是最让我怀念的 — манжингийн боов хамгийн их санагддаг.",
+  "order_index": 17,
+  "id": "hsk5-l19-q17",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "家乡的萝卜有哪三种颜色？",
+  "options": [
+   "青、红、紫",
+   "红、黄、白",
+   "青、白、紫",
+   "红、绿、黄"
+  ],
+  "correct_answer": "青、红、紫",
+  "explanation": "家乡的萝卜有青、红、紫三种 — ногоон, улаан, ягаан гурван өнгө.",
+  "order_index": 18,
+  "id": "hsk5-l19-q18",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "青萝卜吃起来怎么样？",
+  "options": [
+   "辣中带着甜",
+   "像山泉般清淡可口",
+   "又苦又涩",
+   "甜中带点儿辣"
+  ],
+  "correct_answer": "甜中带点儿辣",
+  "explanation": "青的甜中带点儿辣 — ногоон нь чихэрлэг дундаа бага зэрэг хурц. 辣中带着甜 нь улаан манжин; 像山泉般清淡可口 нь ягаан манжин.",
+  "order_index": 19,
+  "id": "hsk5-l19-q19",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "做萝卜饼时，最关键的功夫是什么？",
+  "options": [
+   "切丝",
+   "擀面",
+   "搅拌",
+   "油炸"
+  ],
+  "correct_answer": "擀面",
+  "explanation": "最关键的功夫是擀面 — хамгийн чухал ур чадвар нь гурилаа элдэх. 切丝, 搅拌 нь бэлтгэлийн алхам; 油炸 хийх шаардлагагүй.",
+  "order_index": 20,
+  "id": "hsk5-l19-q20",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "饼熟之后，表皮有什么特点？",
+  "options": [
+   "是黑色的",
+   "是透明的，能看见萝卜丝儿",
+   "又硬又厚",
+   "带着很多油"
+  ],
+  "correct_answer": "是透明的，能看见萝卜丝儿",
+  "explanation": "要求饼熟之后表皮是透明的，能透过表皮看见萝卜丝儿 — боов болсны дараа гадаргуу нь тунгалаг, манжингийн утас харагдана.",
+  "order_index": 21,
+  "id": "hsk5-l19-q21",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "盖锅前为什么要放进一些温水？",
+  "options": [
+   "让饼更甜",
+   "让饼变薄",
+   "把萝卜洗净",
+   "预防糊底"
+  ],
+  "correct_answer": "预防糊底",
+  "explanation": "盖锅前须放进一些温水，预防糊底 — таглахаас өмнө бүлээн ус хийвэл ёроол нь шатахаас сэргийлнэ.",
+  "order_index": 22,
+  "id": "hsk5-l19-q22",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "萝卜饼应该怎么吃？",
+  "options": [
+   "趁热吃",
+   "放凉了再吃",
+   "必须加很多糖",
+   "用水煮着吃"
+  ],
+  "correct_answer": "趁热吃",
+  "explanation": "萝卜饼要趁热吃 — халуун байхад нь идэх хэрэгтэй. Хүсвэл бага зэрэг шар буурцгийн сүмс, цуу нэмж болно.",
+  "order_index": 23,
+  "id": "hsk5-l19-q23",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "作者为什么更加喜爱萝卜饼？",
+  "options": [
+   "因为价钱很便宜",
+   "因为做起来非常快",
+   "因为它具备色、香、味、形，还有养生的功能",
+   "因为是朋友送的"
+  ],
+  "correct_answer": "因为它具备色、香、味、形，还有养生的功能",
+  "explanation": "Сүүлийн өгүүлбэр: 完全具备这几个方面的条件 (色, 香, 味, 形), 养生的功能，让我更加喜爱它了.",
+  "order_index": 24,
+  "id": "hsk5-l19-q24",
+  "skillTags": [
+   "reading",
+   "comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n我在国外学习已经三年了，常常想念家乡。每次打电话，妈妈都说：“趁年轻，多出去看看，家里一切平安，不用担心。”\n问：妈妈希望“我”怎么样？",
+  "options": [
+   "马上回家",
+   "趁年轻多出去看看",
+   "少给家里打电话",
+   "不要出国学习"
+  ],
+  "correct_answer": "趁年轻多出去看看",
+  "explanation": "妈妈说 趁年轻，多出去看看 — залуу байхдаа дэлхийг үзээрэй гэж хүсч байна. 一切平安 — гэрт бүх зүйл амар тайван.",
+  "order_index": 25,
+  "id": "hsk5-l19-q25",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n奶奶做的面条很有特色。她把面擀得薄薄的，切成细丝，煮熟以后只放少许酱油和醋，吃起来清淡可口。离开家乡以后，我最怀念的就是这碗面。\n问：奶奶做的面条有什么特点？",
+  "options": [
+   "面很厚，口味很重",
+   "要用油炸",
+   "加了很多辣椒",
+   "面薄薄的，味道清淡"
+  ],
+  "correct_answer": "面薄薄的，味道清淡",
+  "explanation": "面擀得薄薄的 + 只放少许酱油和醋 + 清淡可口 — гурил нимгэн, амт нь цайлган. 口味重, 油炸, 辣椒 гэсэн зүйл өгүүлэлд алга.",
+  "order_index": 26,
+  "id": "hsk5-l19-q26",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n做菜的时候，火不能太大，要用文火。如果火太大，锅底就会糊，菜也会变焦，吃起来有苦味。所以盖上锅以后，别忘了常常看一看。\n问：火太大会怎么样？",
+  "options": [
+   "锅底会糊，菜会变焦",
+   "菜会变得更嫩",
+   "菜会变得更清淡",
+   "菜熟得更均匀"
+  ],
+  "correct_answer": "锅底会糊，菜会变焦",
+  "explanation": "火太大，锅底就会糊，菜也会变焦 — гал хүчтэй бол ёроол шатаж, хоол шаравтар хатуурна. 嫩, 清淡, 均匀 нь эсрэг үр дүн.",
+  "order_index": 27,
+  "id": "hsk5-l19-q27",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "阅读短文，回答问题：\n老李在中国生活了二十年，口味慢慢变了。以前他喜欢吃辣的，现在觉得清淡的菜更好。医生也说，吃得清淡一点儿，可以预防很多疾病。\n问：老李为什么现在喜欢清淡的菜？",
+  "options": [
+   "因为买不到辣椒",
+   "因为他不会做辣的菜",
+   "他觉得清淡的菜更好，而且对身体有好处",
+   "因为医生不让他吃饭"
+  ],
+  "correct_answer": "他觉得清淡的菜更好，而且对身体有好处",
+  "explanation": "现在觉得清淡的菜更好 + 医生说清淡可以预防疾病 — амт нь өөрчлөгдсөн, цайлган хоол эрүүл мэндэд ч сайн.",
+  "order_index": 28,
+  "id": "hsk5-l19-q28",
+  "skillTags": [
+   "reading"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 洗净 / 先把 / 萝卜 / 切丝",
+  "options": [
+   "萝卜先把洗净切丝。",
+   "先把萝卜洗净切丝。",
+   "先把洗净萝卜切丝。"
+  ],
+  "correct_answer": "先把萝卜洗净切丝。",
+  "explanation": "先把 + N + V1 + V2: 先把萝卜洗净切丝 (эхлээд манжинг угааж, зүсэн утас болго). 把-ийн дараа тусагдахуун (萝卜), дараа нь үйлдэл.",
+  "order_index": 29,
+  "id": "hsk5-l19-q29",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 吃 / 要 / 趁热 / 萝卜饼",
+  "options": [
+   "萝卜饼要趁热吃。",
+   "趁热萝卜饼吃要。",
+   "要萝卜饼吃趁热。"
+  ],
+  "correct_answer": "萝卜饼要趁热吃。",
+  "explanation": "Өгүүлэгдэхүүн (萝卜饼) + 要 + 趁热 + V (吃): 趁热 нь үйл үгийн өмнө орно. 趁热吃 = халуун байхад нь идэх.",
+  "order_index": 30,
+  "id": "hsk5-l19-q30",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 山泉 / 紫的 / 般 / 清淡可口 / 像",
+  "options": [
+   "紫的山泉像般清淡可口。",
+   "山泉紫的像清淡可口般。",
+   "紫的像山泉般清淡可口。"
+  ],
+  "correct_answer": "紫的像山泉般清淡可口。",
+  "explanation": "S + 像 + N + 般 + тэмдэг нэр: 紫的像山泉般清淡可口. 般 нь 山泉-ийн ард, тэмдэг нэр 清淡可口-ийн өмнө.",
+  "order_index": 31,
+  "id": "hsk5-l19-q31",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 擀得 / 面 / 他把 / 薄如白纸",
+  "options": [
+   "他面把擀得薄如白纸。",
+   "他把薄如白纸擀得面。",
+   "他把面擀得薄如白纸。"
+  ],
+  "correct_answer": "他把面擀得薄如白纸。",
+  "explanation": "S + 把 + N + V得 + үр дүн: 他把面擀得薄如白纸 (гурилыг цаас шиг нимгэн болтол элдсэн). 把-ийн ард 面, дараа нь 擀得, эцэст нь үр дүн.",
+  "order_index": 32,
+  "id": "hsk5-l19-q32",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 便可开锅了 / 等 / 能闻到香味时",
+  "options": [
+   "能闻到香味时等，便可开锅了。",
+   "等能闻到香味时，便可开锅了。",
+   "等便可开锅了，能闻到香味时。"
+  ],
+  "correct_answer": "等能闻到香味时，便可开锅了。",
+  "explanation": "等 + нөхцөл，便 + үр дүн: 等能闻到香味时，便可开锅了 (сайхан үнэр үнэртэхэд тагийг нээж болно).",
+  "order_index": 33,
+  "id": "hsk5-l19-q33",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "sentence_order",
+  "question": "Үгсийг эвлүүлж зөв өгүүлбэр болго: 多学一些东西 / 趁年轻 / 我们应该",
+  "options": [
+   "我们应该趁年轻多学一些东西。",
+   "趁年轻多学一些东西我们应该。",
+   "多学一些东西我们应该趁年轻。"
+  ],
+  "correct_answer": "我们应该趁年轻多学一些东西。",
+  "explanation": "S + 应该 + 趁… + V: 我们应该趁年轻多学一些东西 (залуу байхдаа илүү их юм сурах хэрэгтэй). 趁年轻 нь үйл үгийн өмнө орно.",
+  "order_index": 34,
+  "id": "hsk5-l19-q34",
+  "skillTags": [
+   "writing",
+   "sentence_order"
+  ],
+  "difficulty": "hard"
+ }
+]
