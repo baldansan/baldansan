@@ -46,7 +46,7 @@ export const ADMIN_GUIDE_TOPICS: GuideTopic[] = [
           "Сүүлийн 7 / 30 / 90 хоног гэсэн сонголт нь суралцах хугацаа, идэвхтэй суралцагчийн тоог тухайн хүрээгээр харуулна.",
       },
     ],
-    links: [{ href: "/admin", label: "Хяналтын самбар нээх" }],
+    links: [{ href: "/admin/overview", label: "Контентын самбар нээх" }],
   },
   {
     id: "hicheel-nemeh",

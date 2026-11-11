@@ -38,7 +38,7 @@ export function AdminTopbar() {
           <p className="truncate text-sm font-bold text-slate-900 lg:text-base">
             {title}
           </p>
-          <p className="text-[10px] font-medium uppercase tracking-wider text-slate-500">
+          <p className="hidden text-[10px] font-medium uppercase tracking-wider text-slate-500 sm:block">
             Бөөндөө Сурцгаая · Багшийн ажлын талбар
           </p>
         </div>
