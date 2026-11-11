@@ -174,7 +174,7 @@ export function DailyListeningClient({
             <Link href={`/listen/daily?level=${level}&r=${nextSalt}`} className="bs-mtp-primary">
               Дахин 10 шинэ асуулт
             </Link>
-            <Link href="/review/mistakes" className="bs-mtp-secondary">
+            <Link href="/review/mistakes/zhenti" className="bs-mtp-secondary">
               Алдааны дэвтэр →
             </Link>
             <Link href="/home" className="bs-mtp-secondary">

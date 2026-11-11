@@ -9,6 +9,8 @@ import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import {
   fetchMistakes,
+  isDue,
+  isMockMistake,
   practicableMistakes,
   type MistakeEntry,
 } from "@/lib/supabase/mistake-book";
@@ -113,6 +115,8 @@ export function MistakeBookClient() {
   const [authChecked, setAuthChecked] = useState(false);
   const [userId, setUserId] = useState<string | null>(null);
   const [mistakes, setMistakes] = useState<MistakeEntry[]>([]);
+  // Жинхэнэ шалгалтын (mock:) алдаа тусдаа дэвтэрт — энд зөвхөн тоог харуулна.
+  const [zhenti, setZhenti] = useState<{ total: number; due: number }>({ total: 0, due: 0 });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -132,7 +136,9 @@ export function MistakeBookClient() {
     setError(null);
     const { mistakes: rows, error: err } = await fetchMistakes(uid);
     if (err) setError(err);
-    setMistakes(rows);
+    const mock = rows.filter(isMockMistake);
+    setZhenti({ total: mock.length, due: mock.filter((m) => isDue(m)).length });
+    setMistakes(rows.filter((m) => !isMockMistake(m)));
     setLoading(false);
   }, []);
 
@@ -222,8 +228,9 @@ export function MistakeBookClient() {
       if (userId) {
         // Дэвтэрт хэдэн алдаа үлдсэнийг шинээр тооцно.
         const { mistakes: fresh } = await fetchMistakes(userId);
-        setMistakes(fresh);
-        setRemainingAfter(fresh.length);
+        const words = fresh.filter((m) => !isMockMistake(m));
+        setMistakes(words);
+        setRemainingAfter(words.length);
       }
       return;
     }
@@ -408,6 +415,24 @@ export function MistakeBookClient() {
         ❌ {tr(locale, "Миний алдаанууд")}
         {mistakes.length > 0 ? ` · ${mistakes.length}` : ""}
       </h2>
+
+      <Link href="/review/mistakes/zhenti" className="bs-tm-card mt-3">
+        <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
+          📕
+        </span>
+        <span className="bs-tm-card-body">
+          <span className="bs-tm-card-title">
+            {tr(locale, "Жинхэнэ шалгалтын алдаа")}
+            {zhenti.total > 0 ? ` · ${zhenti.total}` : ""}
+          </span>
+          <span className="bs-tm-card-sub">
+            {zhenti.due > 0
+              ? `${tr(locale, "Өнөөдөр давтах")}: ${zhenti.due} · 1·3·7 ${tr(locale, "хоног")}`
+              : tr(locale, "Шалгалт, сонсголоос алдсан асуултууд — 1·3·7 хоногийн давталт")}
+          </span>
+        </span>
+        <span className="bs-tm-card-chev" aria-hidden>›</span>
+      </Link>
 
       <Link href="/review/weak-spots" className="bs-tm-card mt-3">
         <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
