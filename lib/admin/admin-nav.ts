@@ -170,13 +170,6 @@ export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
     match: (p) => p.startsWith("/admin/system-check"),
   },
   {
-    href: "/admin/production-qa",
-    label: "Production QA",
-    icon: "🧪",
-    hint: "Гаргалтын өмнөх шалгах хуудас.",
-    match: (p) => p.startsWith("/admin/production-qa"),
-  },
-  {
     href: "/admin/prompts",
     label: "Prompt сан",
     icon: "💬",
@@ -191,39 +184,11 @@ export const ADMIN_NAV_ADVANCED: AdminNavItem[] = [
     match: (p) => p.startsWith("/admin/lesson-builder"),
   },
   {
-    href: "/admin/final-audit",
-    label: "Эцсийн шалгалт",
-    icon: "📝",
-    hint: "Бүтээгдэхүүний нэгдсэн үзлэг.",
-    match: (p) => p.startsWith("/admin/final-audit"),
-  },
-  {
     href: "/admin/chat",
     label: "Чатын мэдээлэл",
     icon: "💬",
     hint: "Мэдээлсэн мессеж, түгжих.",
     match: (p) => p.startsWith("/admin/chat"),
-  },
-  {
-    href: "/admin/security-audit",
-    label: "Аюулгүй байдал",
-    icon: "🔒",
-    hint: "RLS болон эрхийн шалгалт.",
-    match: (p) => p.startsWith("/admin/security-audit"),
-  },
-  {
-    href: "/admin/launch-candidate",
-    label: "Хувилбарын бэлэн байдал",
-    icon: "🚀",
-    hint: "Гаргахад бэлэн эсэх.",
-    match: (p) => p.startsWith("/admin/launch-candidate"),
-  },
-  {
-    href: "/admin/launch-signoff",
-    label: "Гаргалтын баталгаа",
-    icon: "✍️",
-    hint: "Эцсийн зөвшөөрөл.",
-    match: (p) => p.startsWith("/admin/launch-signoff"),
   },
 ];
 

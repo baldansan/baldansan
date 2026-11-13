@@ -46,6 +46,7 @@ import {
 } from "@/lib/points/rank";
 import { HomeTodaySection } from "@/components/home/home-today-section";
 import { TeacherAssignmentBanner } from "@/components/home/teacher-assignment-banner";
+import { ExamGoalCard } from "@/components/engagement/exam-goal-card";
 import { HomeQuickSearch } from "@/components/home/home-quick-search";
 import { QuickStartCard } from "@/components/home/quick-start-card";
 import type { BichlegSuggestion } from "@/lib/mobile-home-data";
@@ -627,6 +628,9 @@ export function HomeAppView({
 
       {/* Багшийн даалгавар — ЗААВАЛ; хийж дуустал хамгийн дээр байна */}
       <TeacherAssignmentBanner loggedIn={loggedIn} />
+
+      {/* Шалгалтын зорилго тавьсан бол — хэдэн өдөр үлдсэн, хурд */}
+      <ExamGoalCard variant="compact" />
 
       {/* Өнөөдөр: даалгавар · давтах · бичлэг */}
       <HomeTodaySection

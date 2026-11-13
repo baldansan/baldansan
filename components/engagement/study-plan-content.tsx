@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ExamGoalCard } from "@/components/engagement/exam-goal-card";
 import { StudyPlanCircularProgress } from "@/components/engagement/study-plan-circular-progress";
 import { StudyPlanTablerIcon } from "@/components/engagement/study-plan-tabler-icon";
 import { TemeeEmojiIcon } from "@/components/temee/temee-emoji-icon";
@@ -60,6 +61,8 @@ export function StudyPlanContent({ data }: Props) {
         <h1 className="bs-study-plan-title">Сургалтын төлөвлөгөө</h1>
         <p className="bs-study-plan-sub">{data.levelLabel}</p>
       </header>
+
+      <ExamGoalCard />
 
       {goal ? (
         <section className="bs-study-plan-goal-card">

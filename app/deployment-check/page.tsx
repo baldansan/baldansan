@@ -1,24 +1,6 @@
-import { DeploymentCheckView } from "@/components/deployment-check-view";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export const metadata = {
-  title: "Deployment check",
-};
-
+// Хуучин нийтэд нээлттэй шалгах хуудас — одоо зөвхөн админы «Системийн шалгалт»-аар харна.
 export default function DeploymentCheckPage() {
-  return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 py-8 sm:px-6">
-      <section>
-        <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Deployment check
-        </h1>
-        <p className="mt-2 text-sm text-slate-600">
-          Public-safe smoke test for Vercel deployments. Confirms the app loads
-          and can reach Supabase for public content reads. No secrets shown.
-        </p>
-      </section>
-      <DeploymentCheckView />
-    </div>
-  );
+  redirect("/admin/system-check");
 }
