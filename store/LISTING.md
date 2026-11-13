@@ -18,7 +18,7 @@
 • Номын хичээл: үг, ханз, дүрэм, текст, дасгал — багшийн монгол тайлбартай
 • Дуудлага: пиньинь самбар, аялгуу, сонсоод дагаж хэлэх
 • Давталт: ухаалаг давтлын хуваарь (SRS) — сурсан үгээ мартахгүй
-• Тоглоом: хурдны тэмцээн, холбох, диктант, ханзны зурлага
+• Тоглож сурах: нэг тоглоомд 8 төрлийн дасгал (сонгох, холбох, диктант, сонсгол, хурд) — өөрөө холиод тохируулна
 • HSK загвар шалгалт: сонсгол, унших, бичих — таймертай
 • Ахиц, streak, оноо: өдрийн зорилго, дэвшил харагдана
 • Офлайн: хичээлээ татаж аваад интернэтгүй үед сурна
@@ -35,7 +35,7 @@ Buunduu Surtsgaay helps Mongolian speakers learn Chinese a little every day, wit
 • Textbook lessons: vocabulary, characters, grammar, texts and exercises with a teacher's notes in Mongolian
 • Pronunciation: pinyin chart, tones, listen-and-repeat
 • Spaced repetition review keeps learned words fresh
-• Games: speed quiz, matching, dictation, stroke order
+• Learn-by-playing: one game with 8 exercise types (choice, matching, dictation, listening, speed) you can mix yourself
 • HSK mock tests with timer (listening, reading, writing)
 • Progress, streaks and points
 • Offline lessons: download and study without internet
