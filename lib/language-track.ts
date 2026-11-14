@@ -19,6 +19,27 @@ export const LEARNER_COURSE_PROBE_IDS = [
   "korean-survival",
 ] as const;
 
+/**
+ * Админы жагсаалт, шинжилгээнд харуулах БҮХ курс. Өмнө нь админ зөвхөн
+ * LEARNER_COURSE_PROBE_IDS (HSK + Солонгос)-ийг уншдаг байсан тул YCT, 发展汉语-ийн
+ * 187 хичээл админаас харагдахгүй байсан.
+ */
+export const ADMIN_COURSE_IDS = [
+  ...LEARNER_COURSE_PROBE_IDS,
+  "yct-1",
+  "yct-2",
+  "yct-3",
+  "yct-4",
+  "yct-5",
+  "yct-6",
+  "fazhan-chuji1",
+  "fazhan-chuji2",
+  "fazhan-zhongji1",
+  "fazhan-zhongji2",
+  "fazhan-gaoji1",
+  "fazhan-gaoji2",
+] as const;
+
 export function inferLanguageFromCourseId(
   courseId: string
 ): SelectedLanguage | null {

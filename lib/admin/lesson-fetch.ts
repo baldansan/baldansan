@@ -3,7 +3,7 @@ import "server-only";
 import { cache } from "react";
 
 import { analyzeLessonQa, type LessonQaReport } from "@/lib/admin/lesson-qa";
-import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
+import { ADMIN_COURSE_IDS } from "@/lib/language-track";
 import {
   canonicalLessonId,
   lessonIdQueryCandidates,
@@ -395,11 +395,11 @@ export const getAllAdminLessonsWithQa = cache(
   async function getAllAdminLessonsWithQa(): Promise<LessonQaReport[]> {
     const [courseLists, countLists] = await Promise.all([
       Promise.all(
-        LEARNER_COURSE_PROBE_IDS.map((courseId) =>
+        ADMIN_COURSE_IDS.map((courseId) =>
           getAdminLessonsByCourseId(courseId)
         )
       ),
-      Promise.all(LEARNER_COURSE_PROBE_IDS.map(fetchLessonChildCounts)),
+      Promise.all(ADMIN_COURSE_IDS.map(fetchLessonChildCounts)),
     ]);
 
     const seen = new Set<string>();

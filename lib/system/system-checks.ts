@@ -355,7 +355,9 @@ export async function checkSupabaseReadiness(): Promise<SystemCheckItem[]> {
         "supabase",
         id,
         label,
-        await canReadTable(table, "id"),
+        // Зарим хүснэгт (user_daily_goals, user_streaks) `id` баганагүй — "*"-оор уншина,
+        // эс бөгөөс «хүснэгт алга» гэж худал дохио өгдөг байсан.
+        await canReadTable(table, "*"),
         "warn"
       )
     );

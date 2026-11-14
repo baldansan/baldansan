@@ -28,11 +28,11 @@ function formatDate(value: string | null): string {
   if (!value) return "—";
   const parsed = new Date(value);
   if (Number.isNaN(parsed.getTime())) return "—";
-  return parsed.toLocaleDateString("mn-MN", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  });
+  // Хөтөч монгол сарын товчлолыг мэддэггүй тул «Nov 13, 2026» гэж англиар гардаг байсан.
+  const y = parsed.getFullYear();
+  const m = String(parsed.getMonth() + 1).padStart(2, "0");
+  const d = String(parsed.getDate()).padStart(2, "0");
+  return `${y}.${m}.${d}`;
 }
 
 function learnerLabel(

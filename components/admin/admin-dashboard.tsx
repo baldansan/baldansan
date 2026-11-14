@@ -51,7 +51,10 @@ function formatDateTime(value: string): string {
 
 function percentChange(current: number, previous: number): number | null {
   if (previous <= 0) return null;
-  return ((current - previous) / previous) * 100;
+  const change = ((current - previous) / previous) * 100;
+  // Өмнөх үе бараг хоосон байвал (апп шинэ) «▲15280%» гэх мэт утгагүй тоо гарна — харуулахгүй.
+  if (Math.abs(change) > 999) return null;
+  return change;
 }
 
 /**
@@ -63,8 +66,17 @@ function splitActivityWindow(
   windowDays: number
 ) {
   const days = [...activity.days].sort((a, b) => a.day.localeCompare(b.day));
-  const current = days.slice(-windowDays);
-  const previous = days.slice(-windowDays * 2, -windowDays);
+  // `days` нь зөвхөн идэвхтэй байсан өдрүүдийн мөр. Тиймээс мөрийн тоогоор биш,
+  // хуанлийн өдрөөр хуваана — эс бөгөөс «сүүлийн 30 хоног»-т 50 хоногийн өгөгдөл ордог байсан.
+  const dayKey = (offsetDays: number) => {
+    const d = new Date();
+    d.setUTCDate(d.getUTCDate() - offsetDays);
+    return d.toISOString().slice(0, 10);
+  };
+  const currentFrom = dayKey(windowDays - 1);
+  const previousFrom = dayKey(windowDays * 2 - 1);
+  const current = days.filter((row) => row.day >= currentFrom);
+  const previous = days.filter((row) => row.day >= previousFrom && row.day < currentFrom);
 
   const sumMinutes = (rows: typeof days) =>
     rows.reduce((total, row) => total + row.totalMinutes, 0);

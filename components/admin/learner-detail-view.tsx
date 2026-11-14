@@ -20,12 +20,10 @@ function formatTime(ms: number | null): string {
 
 function formatDate(iso: string): string {
   try {
-    return new Date(iso).toLocaleString("mn-MN", {
-      month: "short",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    });
+    const dt = new Date(iso);
+    if (Number.isNaN(dt.getTime())) return iso;
+    const pad = (n: number) => String(n).padStart(2, "0");
+    return `${dt.getMonth() + 1}-р сарын ${dt.getDate()}, ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
   } catch {
     return iso;
   }

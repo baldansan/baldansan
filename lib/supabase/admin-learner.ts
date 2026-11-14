@@ -190,7 +190,7 @@ export async function getLearnerDetail(
         .eq("user_id", userId),
       client
         .from("user_test_attempts")
-        .select("id, test_id, score, max_score, finished_at")
+        .select("id, test_id, raw_score, max_score, finished_at")
         .eq("user_id", userId)
         .order("finished_at", { ascending: false })
         .limit(10),
@@ -389,7 +389,7 @@ export async function getLearnerDetail(
     mockAttempts: (mockRes.data ?? []).map((r) => ({
       id: String(r.id),
       testId: String(r.test_id),
-      score: r.score != null ? Number(r.score) : null,
+      score: r.raw_score != null ? Number(r.raw_score) : null,
       maxScore: r.max_score != null ? Number(r.max_score) : null,
       finishedAt: r.finished_at ? String(r.finished_at) : null,
     })),

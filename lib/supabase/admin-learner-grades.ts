@@ -155,7 +155,7 @@ export async function getLearnerGradeBoard(
     readAll(
       client,
       "user_test_attempts",
-      "user_id, score, max_score, finished_at",
+      "user_id, raw_score, max_score, finished_at",
       warnings
     ),
     readAll(
@@ -214,7 +214,7 @@ export async function getLearnerGradeBoard(
     if (maxScore <= 0) continue;
     const acc = ensure(userId);
     acc.mockAttempts += 1;
-    acc.mockTotalPercent += (toNumber(row.score) / maxScore) * 100;
+    acc.mockTotalPercent += (toNumber(row.raw_score) / maxScore) * 100;
     touchLastActive(acc, row.finished_at);
   }
 

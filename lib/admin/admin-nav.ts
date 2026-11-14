@@ -27,7 +27,7 @@ export const ADMIN_NAV_PRIMARY: AdminNavItem[] = [
   },
   {
     href: "/admin/lessons",
-    label: "Хичээлүүд",
+    label: "Хичээл засах",
     icon: "📚",
     hint: "Бүх курсын хичээл: жагсаалт, засвар, нийтлэх, шинэ хичээл нэмэх.",
     match: (p) =>

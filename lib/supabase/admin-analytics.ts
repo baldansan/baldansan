@@ -15,7 +15,7 @@ import {
   getHsk5LessonsWithQa,
   getAdminLessonsByCourseId,
 } from "@/lib/admin/lesson-fetch";
-import { LEARNER_COURSE_PROBE_IDS } from "@/lib/language-track";
+import { ADMIN_COURSE_IDS } from "@/lib/language-track";
 import type { LessonContent } from "@/types/lesson-content";
 import { getAdminPublishStatus } from "@/lib/admin/lesson-status";
 import {
@@ -241,7 +241,7 @@ function buildAttentionList(reports: LessonQaReport[]): AttentionLesson[] {
  */
 async function getAllAdminLessonSummaries(): Promise<LessonContent[]> {
   const lists = await Promise.all(
-    LEARNER_COURSE_PROBE_IDS.map((courseId) =>
+    ADMIN_COURSE_IDS.map((courseId) =>
       getAdminLessonsByCourseId(courseId)
     )
   );

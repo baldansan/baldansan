@@ -26,7 +26,11 @@ function mapSeries(raw: Record<string, unknown>): VideoSeriesInfo {
     description_mn: raw.description_mn ? String(raw.description_mn) : null,
     cover_url: raw.cover_url ? String(raw.cover_url) : null,
     thumbnail_url: normalizeSeriesCoverUrl(
-      raw.thumbnail_url ? String(raw.thumbnail_url) : null
+      raw.thumbnail_url
+        ? String(raw.thumbnail_url)
+        : raw.cover_url
+          ? String(raw.cover_url)
+          : null
     ),
     hsk_level: raw.hsk_level != null ? Number(raw.hsk_level) : null,
   };
@@ -40,7 +44,9 @@ export async function fetchAdminSeriesList(): Promise<AdminSeriesRow[]> {
   const { data, error } = await client
     .from("video_series")
     .select(
-      "id, title_zh, title_mn, description_mn, hsk_level, thumbnail_url, videos(count)"
+      // "*" — `thumbnail_url` багана зарим санд байхгүй (зөвхөн `cover_url`). Нэрээр нь асуувал
+      // асуулга бүхлээрээ унаж, хуудас «Цуврал байхгүй» гэж харуулдаг байсан.
+      "*, videos(count)"
     )
     .order("title_mn", { ascending: true });
 
@@ -68,7 +74,7 @@ export async function fetchAdminSeriesEpisodes(
   const [{ data: seriesData }, { data: videoData }] = await Promise.all([
     client
       .from("video_series")
-      .select("id, title_zh, title_mn, description_mn, hsk_level, thumbnail_url")
+      .select("*")
       .eq("id", seriesId)
       .maybeSingle(),
     client
