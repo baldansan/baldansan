@@ -4,6 +4,7 @@ import {
   type TemeeEmojiVariant,
 } from "@/lib/temee/emoji-icons";
 import type { TemeeAssetKey } from "@/lib/temee/assets";
+import { temeePoseSrc } from "@/lib/temee/poses";
 
 type Props = {
   variant: TemeeEmojiVariant | TemeeAssetKey;
@@ -24,7 +25,7 @@ export function TemeeEmojiIcon({
   const resolved = resolveTemeeEmojiVariant(variant);
   const config = TEMEE_EMOJI_CONFIG[resolved];
   const h = height ?? width;
-  const fontSize = Math.round(Math.min(width, h) * emojiScale);
+  void emojiScale; // хуучин эможи хэмжээний тохиргоо — зурагт хэрэггүй, API-г эвдэхгүйн тулд үлдээв
 
   return (
     <span
@@ -34,11 +35,18 @@ export function TemeeEmojiIcon({
         height: h,
         background: config.gradient,
         boxShadow: config.shadow,
-        fontSize,
       }}
       aria-hidden
     >
-      {config.emoji}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={temeePoseSrc(config.pose, Math.max(width, h) > 110 ? "lg" : "sm")}
+        alt=""
+        className="bs-tm-emoji-icon-img"
+        loading="lazy"
+        decoding="async"
+        draggable={false}
+      />
     </span>
   );
 }

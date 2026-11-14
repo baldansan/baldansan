@@ -78,7 +78,7 @@ export function GameResultCard({
   const R = 56;
   const C = 2 * Math.PI * R;
   const dash = C * (1 - (ringOn ? Math.min(100, accuracy) : 0) / 100);
-  const temee = great ? "/temee/temee-thumbsup.png" : accuracy >= 50 ? "/temee/temee-point.png" : "/temee/temee-think.png";
+  const temee = great ? "/temee/v2/celebrate.webp" : accuracy >= 50 ? "/temee/v2/thumbsup.webp" : "/temee/v2/encourage.webp";
   const headline = isNewBest
     ? tr(locale, "Шинэ дээд оноо!")
     : great

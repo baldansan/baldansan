@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { getLocalRetentionSummary } from "@/lib/retention/daily-activity";
+import { temeePoseSrc, type TemeePose } from "@/lib/temee/poses";
 import "./temee-mascot.css";
 
 export type TemeeMood = "happy" | "normal" | "sad" | "sleepy";
@@ -46,6 +47,14 @@ const LINES: Record<TemeeMood, string[]> = {
     "Унтахын өмнө 3 ханз сур — шөнө тархи чинь өөрөө давтана.",
     "Шөнөөр хичээллэдэг юм уу? Нүдээ амраахаа бүү мартаарай.",
   ],
+};
+
+/** Сэтгэл санаа бүрт тохирох зураг. */
+const MOOD_POSE: Record<TemeeMood, TemeePose> = {
+  happy: "celebrate",
+  normal: "wave",
+  sad: "encourage",
+  sleepy: "sleep",
 };
 
 export function recordTemeeActive(): void {
@@ -123,7 +132,7 @@ type Props = {
 };
 
 /**
- * Тэмээ багш — emoji + CSS анимейшнтэй дүр (зураг хэрэггүй).
+ * Тэмээ багш — зурагтай дүр + CSS анимейшн (сэтгэл санаа бүрт өөр зураг).
  * Нүүр, хичээлийн дүгнэлт, давтах хуудсанд хэрэглэнэ.
  * state: happy (bounce+wave), normal (float+blink), sad (droop), sleepy (zzz).
  */
@@ -176,9 +185,9 @@ export function TemeeMascot({
         title="Тэмээ"
       >
         <span className="bs-mascot-body" aria-hidden>
-          🐫
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={temeePoseSrc(MOOD_POSE[resolved], size === "lg" ? "lg" : "sm")} alt="" draggable={false} />
         </span>
-        <span className="bs-mascot-eyes" aria-hidden />
         <span className="bs-mascot-badge" aria-hidden>
           {badge}
         </span>

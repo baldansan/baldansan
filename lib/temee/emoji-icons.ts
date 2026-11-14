@@ -1,6 +1,7 @@
 /** Emoji circle presets (replaces Temee PNG assets temporarily). */
 
 import type { TemeeAssetKey } from "@/lib/temee/assets";
+import type { TemeePose } from "@/lib/temee/poses";
 
 export type TemeeEmojiVariant =
   | "greet"
@@ -14,6 +15,8 @@ export type TemeeEmojiVariant =
   | "avatar";
 
 export type TemeeEmojiConfig = {
+  /** Тэмээ багшийн аль зургийг харуулах. */
+  pose: TemeePose;
   emoji: string;
   gradient: string;
   shadow: string;
@@ -21,46 +24,55 @@ export type TemeeEmojiConfig = {
 
 export const TEMEE_EMOJI_CONFIG: Record<TemeeEmojiVariant, TemeeEmojiConfig> = {
   greet: {
+    pose: "wave",
     emoji: "👋",
     gradient: "linear-gradient(145deg, #e3f7eb 0%, #1fb85a 100%)",
     shadow: "0 4px 12px rgba(31, 184, 90, 0.35)",
   },
   celebrate: {
+    pose: "celebrate",
     emoji: "🎉",
     gradient: "linear-gradient(145deg, #fff4e0 0%, #ffd89b 100%)",
     shadow: "0 4px 12px rgba(255, 184, 90, 0.35)",
   },
   featured: {
+    pose: "wow",
     emoji: "🔥",
     gradient: "linear-gradient(145deg, #fff4e0 0%, #ff8a3d 100%)",
     shadow: "0 4px 12px rgba(255, 138, 61, 0.35)",
   },
   teach: {
+    pose: "teach",
     emoji: "📖",
     gradient: "linear-gradient(145deg, #e3f7eb 0%, #1fb85a 100%)",
     shadow: "0 4px 14px rgba(31, 184, 90, 0.3)",
   },
   think: {
+    pose: "think",
     emoji: "💡",
     gradient: "linear-gradient(145deg, #e3f7eb 0%, #1fb85a 100%)",
     shadow: "0 4px 12px rgba(31, 184, 90, 0.28)",
   },
   bichleg: {
+    pose: "listen",
     emoji: "📺",
     gradient: "linear-gradient(145deg, #dbeafe 0%, #4d9fff 100%)",
     shadow: "0 4px 12px rgba(77, 159, 255, 0.35)",
   },
   games: {
+    pose: "thumbsup",
     emoji: "🏆",
     gradient: "linear-gradient(145deg, #efe6ff 0%, #9b6bff 100%)",
     shadow: "0 4px 12px rgba(109, 40, 217, 0.32)",
   },
   grammar: {
+    pose: "read",
     emoji: "📚",
     gradient: "linear-gradient(145deg, #ffe4e4 0%, #ff8a8a 100%)",
     shadow: "0 4px 12px rgba(255, 107, 107, 0.28)",
   },
   avatar: {
+    pose: "wave",
     emoji: "🐫",
     gradient: "linear-gradient(145deg, #ffffff 0%, #e3f7eb 100%)",
     shadow: "0 4px 12px rgba(31, 184, 90, 0.2)",
