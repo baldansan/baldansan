@@ -67,7 +67,7 @@ export function AddStudentForm({ classroomId, onAdded }: Props) {
       </label>
       <label className="flex flex-col gap-1 text-sm">
         <span className="font-medium text-slate-700">
-          Student user ID (optional — links active account)
+          Хэрэглэгчийн ID (заавал биш — апп дахь бүртгэлтэй нь холбоно)
         </span>
         <input
           value={studentUserId}

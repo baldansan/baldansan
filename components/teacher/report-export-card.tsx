@@ -11,7 +11,7 @@ type Props = {
 export function ReportExportCard({
   markdown,
   filename,
-  label = "Copy report",
+  label = "Тайланг хуулах",
 }: Props) {
   const [copied, setCopied] = useState(false);
 
@@ -42,7 +42,7 @@ export function ReportExportCard({
         onClick={() => void handleCopy()}
         className="rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
       >
-        {copied ? "Copied!" : label}
+        {copied ? "Хуулагдлаа!" : label}
       </button>
       <button
         type="button"

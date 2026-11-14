@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { CreateClassForm } from "@/components/teacher/create-class-form";
 
 export const metadata = {
-  title: "Шинэ анги — Teacher",
+  title: "Шинэ анги — Багшийн ажлын талбар",
   description: "Create a new classroom.",
 };
 

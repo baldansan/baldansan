@@ -81,7 +81,7 @@ export function WeeklyReportView() {
           }}
           className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white"
         >
-          {copied ? "Copied!" : "Copy report"}
+          {copied ? "Хуулагдлаа!" : "Тайланг хуулах"}
         </button>
         <a
           href={`data:text/markdown;charset=utf-8,${encodeURIComponent(markdown)}`}

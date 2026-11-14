@@ -143,7 +143,7 @@ export function CreateClassForm() {
           >
             {CLASS_LEVELS.map((l) => (
               <option key={l} value={l}>
-                {l}
+                {l === "Mixed" ? "Холимог түвшин" : l === "Custom" ? "Бусад" : l}
               </option>
             ))}
           </select>
