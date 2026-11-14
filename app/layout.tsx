@@ -144,6 +144,9 @@ export default async function RootLayout({
   return (
     <html
       lang={locale === "zh" ? "zh-CN" : "mn"}
+      // Доорх скриптүүд зурагдахаас өмнө data-theme / ханзны фонтыг <html> дээр тавьдаг тул
+      // сервер, клиентийн атрибут зориуд зөрнө — анхааруулгыг дарна.
+      suppressHydrationWarning
       className={`${nunito.variable} ${notoSansSc.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
