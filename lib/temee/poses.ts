@@ -14,7 +14,15 @@ export type TemeePose =
   | "sleep"
   | "read"
   | "listen"
-  | "write";
+  | "write"
+  | "welcome"
+  | "lost"
+  | "offline"
+  | "empty"
+  | "relax"
+  | "play"
+  | "goal"
+  | "trophy";
 
 export function temeePoseSrc(pose: TemeePose, size: "sm" | "lg" = "sm"): string {
   return `/temee/v2/${pose}${size === "sm" ? "-sm" : ""}.webp`;

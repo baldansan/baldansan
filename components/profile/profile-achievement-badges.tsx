@@ -61,7 +61,8 @@ export function ProfileAchievementBadges({
               className={`bs-tm-bdg${on ? " bs-tm-bdg--on" : " bs-tm-bdg--off"}`}
               style={on && badge.bgOn ? { background: badge.bgOn } : undefined}
             >
-              <span aria-hidden>{badge.emoji}</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={badge.image} alt="" className="bs-tm-bdg-img" loading="lazy" decoding="async" draggable={false} />
               <span>{tr(locale, badge.label)}</span>
             </div>
           );

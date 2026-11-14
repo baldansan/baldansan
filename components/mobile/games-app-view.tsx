@@ -315,11 +315,19 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
         <>
           {/* Гол тоглоом: нэг тоглоом — олон төрөл. Бусад нь үүний горим. */}
           <section className="bs-page-in overflow-hidden rounded-3xl bg-[linear-gradient(135deg,#059669,#10b981_55%,#34d399)] p-5 text-white shadow-[0_10px_28px_rgba(5,150,105,0.35)]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/temee/v2/play.webp"
+              alt=""
+              width={112}
+              height={112}
+              className="pointer-events-none float-right -mr-2 -mt-3 ml-2 h-28 w-28 select-none object-contain drop-shadow-[0_6px_12px_rgba(0,0,0,0.2)]"
+            />
             <p className="text-[11px] font-extrabold uppercase tracking-widest text-emerald-100">
               {tr(locale, "Нэг тоглоом · 8 төрөл")}
             </p>
             <h2 className="mt-1 text-2xl font-extrabold leading-tight">
-              🎮 {tr(locale, "Тоглож сурах")}
+              {tr(locale, "Тоглож сурах")}
             </h2>
             <p className="mt-1 text-sm leading-5 text-emerald-50">
               {tr(

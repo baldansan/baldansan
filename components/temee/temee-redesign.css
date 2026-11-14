@@ -511,6 +511,14 @@
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
 }
 
+.bs-tm-bdg-img {
+  width: 62%;
+  height: 62%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.14));
+  pointer-events: none;
+}
+
 .bs-tm-bdg span:last-child {
   font-size: 9px;
   font-weight: 700;

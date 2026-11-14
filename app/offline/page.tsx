@@ -10,6 +10,8 @@ export default function OfflinePage() {
   return (
     <main className="mx-auto flex min-h-screen max-w-lg flex-col justify-center px-4 py-10">
       <section className="rounded-3xl bg-white p-8 text-center shadow-sm ring-1 ring-slate-200 sm:p-10">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/temee/v2/offline.webp" alt="" width={176} height={176} className="mx-auto mb-3 h-44 w-44 object-contain" />
         <h1 className="text-2xl font-bold text-slate-900">
           Интернэт холболтгүй байна
         </h1>

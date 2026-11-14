@@ -121,6 +121,8 @@ export function ReviewSrsClient({ embedded = false }: Props) {
   if (queue.length === 0) {
     return wrap(
       <div className="bs-srs-done">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/temee/v2/relax.webp" alt="" width={160} height={160} className="mx-auto mb-2 h-40 w-40 object-contain" />
         <h2 className="text-xl font-bold text-[var(--app-text)]">
           Өнөөдөр давтах зүйл алга
         </h2>
