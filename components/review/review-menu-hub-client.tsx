@@ -202,12 +202,19 @@ export function ReviewMenuHubClient({
   const dailyGoalDone =
     !loading && stats.dailyDone >= stats.dailyGoal && stats.dailyGoal > 0;
 
+  // Давтах карт огт байхгүй үед «давталтаа хийе!» гэвэл доорх «давтах зүйл алга»-тай зөрчилдөнө.
+  const nothingDue = !loading && stats.dueCards === 0 && writingDue === 0;
+
   const greetTitle = dailyGoalDone
     ? tr(locale, "Өдрийн зорилт дууслаа! 🎉")
-    : tr(locale, "Өнөөдрийн давталтаа хийе!");
+    : nothingDue
+      ? tr(locale, "Өнөөдөр давтах карт алга")
+      : tr(locale, "Өнөөдрийн давталтаа хийе!");
   const greetSub = dailyGoalDone
     ? `${tr(locale, "Гайхалтай,")} ${shownName}! ${tr(locale, "Үргэлжлүүлээрэй")}`
-    : `${stats.dailyDone}/${stats.dailyGoal} ${tr(locale, "карт")} · ${shownName}`;
+    : nothingDue
+      ? tr(locale, "Шинэ хичээл үзэх тусам үгс энд нэмэгдэнэ")
+      : `${stats.dailyDone}/${stats.dailyGoal} ${tr(locale, "карт")} · ${shownName}`;
 
   const memorizeStatus = tr(locale, "Бүх түвшний үгийн сан");
 
@@ -272,7 +279,7 @@ export function ReviewMenuHubClient({
         <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>📖</span>
         <span className="bs-tm-card-body">
           <span className="bs-tm-card-title">{tr(locale, "Ном сонгох")}</span>
-          <span className="bs-tm-card-sub">{tr(locale, "HSK标准教程 · 146 хичээл · YCT, бусад ном удахгүй")}</span>
+          <span className="bs-tm-card-sub">{tr(locale, "HSK 1–6 · YCT 1–6 · 发展汉语 — бүх ном")}</span>
         </span>
         <span className="bs-tm-card-chev" aria-hidden>›</span>
       </PrefetchLink>
@@ -516,7 +523,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Ном сонгох")}</span>
             <span className="bs-tm-card-sub">
-              {tr(locale, "HSK标准教程 · 146 хичээл · YCT, бусад ном удахгүй")}
+              {tr(locale, "HSK 1–6 · YCT 1–6 · 发展汉语 — бүх ном")}
             </span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>

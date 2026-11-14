@@ -1399,6 +1399,13 @@
   gap: 9px;
 }
 
+/* Утсан дээр сондгой тооны карт байвал сүүлчийнх нь ганцаараа хагас өргөнд үлдэхгүй — бүтэн мөр эзэлнэ. */
+@media (max-width: 560px) {
+  .bs-home-today > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
 .bs-home-today-card {
   display: flex;
   flex-direction: column;
