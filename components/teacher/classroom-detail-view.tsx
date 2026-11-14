@@ -10,6 +10,7 @@ import { StudentWeakSpotsSection } from "@/components/teacher/student-weak-spots
 import { NeedsAttentionCard } from "@/components/teacher/needs-attention-card";
 import { ReportExportCard } from "@/components/teacher/report-export-card";
 import { ClassJoinCodeCard } from "@/components/teacher/class-join-code-card";
+import { DeleteClassCard } from "@/components/teacher/delete-class-card";
 import { ClassCurriculumEditor } from "@/components/teacher/class-curriculum-editor";
 import { ClassKidsSection } from "@/components/teacher/class-kids-section";
 import { ClassWritingHomework } from "@/components/teacher/class-writing-homework";
@@ -471,6 +472,11 @@ export function ClassroomDetailView({ classroomId }: Props) {
               <ClassKidsSection classroomId={classroomId} onChanged={() => void load()} />
             </div>
           </div>
+          <DeleteClassCard
+            classroomId={classroomId}
+            className={classroom.name}
+            studentCount={students.length}
+          />
         </section>
       ) : null}
     </TeacherShell>
