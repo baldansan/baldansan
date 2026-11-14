@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { prettyLessonLabel } from "@/lib/classroom/course-label";
 import { AdminActivityChart } from "@/components/admin/admin-activity-chart";
 import {
   AdminAttentionPanel,
@@ -433,7 +434,7 @@ export function AdminDashboard({
                 >
                   <div className="min-w-0">
                     <p className="truncate text-sm font-medium text-slate-800">
-                      Хичээл {attempt.lessonId}
+                      {prettyLessonLabel(attempt.lessonId)}
                     </p>
                     <p className="text-xs text-slate-500">
                       {formatDateTime(attempt.createdAt)}

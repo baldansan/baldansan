@@ -108,6 +108,28 @@ function learnerName(l: AllLearner): string {
 
 const CLASS_KEY = "bs.teacher.today.class";
 
+const CLASSES_CACHE_KEY = "bs.teacher.classes.cache.v1";
+
+/** Сүүлд харсан ангиуд — хуудсыг шууд харуулахын тулд (ар талд нь шинэчилнэ). */
+function readCachedClasses(): Classroom[] | null {
+  try {
+    const raw = window.localStorage.getItem(CLASSES_CACHE_KEY);
+    if (!raw) return null;
+    const parsed: unknown = JSON.parse(raw);
+    return Array.isArray(parsed) ? (parsed as Classroom[]) : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeCachedClasses(list: Classroom[]): void {
+  try {
+    window.localStorage.setItem(CLASSES_CACHE_KEY, JSON.stringify(list));
+  } catch {
+    /* хадгалах боломжгүй бол зүгээр */
+  }
+}
+
 function rememberedClass(): string | null {
   try {
     return window.localStorage.getItem(CLASS_KEY);
@@ -289,15 +311,25 @@ export function TeacherTodayView() {
   useEffect(() => {
     if (!loggedIn) return;
     let alive = true;
+    // Өмнө нь харсан ангиудыг шууд харуулна — «Ачаалж байна…» дээр 5–10 секунд зогсохгүй.
+    const cached = readCachedClasses();
+    if (cached && cached.length > 0) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- кэшээс анхны утга
+      setClasses(cached);
+      const rememberedCached = rememberedClass();
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- кэшээс анхны утга
+      setSelectedId(cached.find((c) => c.id === rememberedCached)?.id ?? cached[0]?.id ?? null);
+    }
     void getTeacherClassrooms().then(({ data, error }) => {
       if (!alive) return;
       const list = (data ?? []).filter((c) => c.status !== "archived");
       setClasses(list);
       setClassError(error);
+      if (!error) writeCachedClasses(list);
       const remembered = rememberedClass();
       const pick =
         list.find((c) => c.id === remembered)?.id ?? list[0]?.id ?? null;
-      setSelectedId(pick);
+      setSelectedId((prev) => (prev && list.some((c) => c.id === prev) ? prev : pick));
     });
     return () => {
       alive = false;

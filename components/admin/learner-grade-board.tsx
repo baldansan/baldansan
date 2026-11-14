@@ -241,7 +241,7 @@ export function LearnerGradeBoardView({ board }: Props) {
                               {DEMO_BADGE_LABEL}
                             </span>
                           ) : null}
-                          {row.email ? (
+                          {row.email && row.displayName?.trim() ? (
                             <span className="block text-xs text-slate-500">
                               {row.email}
                             </span>

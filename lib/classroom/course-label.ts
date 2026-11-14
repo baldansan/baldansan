@@ -36,3 +36,10 @@ export function courseSortKey(courseId: string): string {
   const level = id.includes("chuji") ? "1" : id.includes("zhongji") ? "2" : id.includes("gaoji") ? "3" : "0";
   return `${courseShelf(courseId).order}-${level}-${id}`;
 }
+
+/** Хичээлийн ID-г уншихад ойлгомжтой болгоно: «hsk1-l02» → «HSK 1 · 2-р хичээл». */
+export function prettyLessonLabel(lessonId: string): string {
+  const m = lessonId.match(/^(.*)-l(\d+)$/i);
+  if (!m) return lessonId;
+  return `${prettyCourseTitle(m[1])} · ${Number(m[2])}-р хичээл`;
+}

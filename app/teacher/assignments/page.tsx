@@ -1,7 +1,7 @@
 import { TeacherAssignmentsList } from "@/components/teacher/teacher-assignments-list";
 
 export const metadata = {
-  title: "Даалгаврууд — Багшийн dashboard",
+  title: "Даалгавар — Багшийн ажлын талбар",
   description: "Teacher assignment list.",
 };
 

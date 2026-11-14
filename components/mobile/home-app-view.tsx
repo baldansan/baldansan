@@ -629,6 +629,10 @@ export function HomeAppView({
       {/* Багшийн даалгавар — ЗААВАЛ; хийж дуустал хамгийн дээр байна */}
       <TeacherAssignmentBanner loggedIn={loggedIn} />
 
+      {/* 60 секундын онбординг — шинэ хэрэглэгчид. Гүйлгэлгүйгээр харагдахаар хамгийн дээр
+          (явцтай эсвэл дуусгасан хүнд өөрөө нуугдана). */}
+      <QuickStartCard loggedIn={loggedIn} hasProgress={totals.completed > 0 || streak > 0} />
+
       {/* Шалгалтын зорилго тавьсан бол — хэдэн өдөр үлдсэн, хурд */}
       <ExamGoalCard variant="compact" />
 
@@ -641,9 +645,6 @@ export function HomeAppView({
 
       {/* Хурдан хайлт (Pleco маяг) */}
       <HomeQuickSearch />
-
-      {/* 60 секундын онбординг — шинэ хэрэглэгчид */}
-      <QuickStartCard loggedIn={loggedIn} hasProgress={totals.completed > 0 || streak > 0} />
 
       {/* Хүүхдийн горим эсвэл зам эхэлсэн бол — хамгийн эхний карт */}
       <KidPathHomeCard />
