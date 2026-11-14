@@ -35,6 +35,8 @@ const GRID = "grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-6";
 export function BookPickerGrid({ entries, activeKey, onSelect }: Props) {
   const locale = useUiLocale();
   const [favorites, setFavorites] = useState<string[]>([]);
+  // Нүүр хуудсыг богино байлгана: сонгосон ном л харагдана, бусад нь «Ном солих» дотор.
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     setFavorites(readHomeFavorites());
@@ -82,7 +84,7 @@ export function BookPickerGrid({ entries, activeKey, onSelect }: Props) {
         key={entry.key}
         type="button"
         disabled={!entry.available}
-        onClick={() => entry.available && onSelect(entry)}
+        onClick={() => entry.available && selectAndClose(entry)}
         className={`group relative flex flex-col items-stretch text-left transition-transform ${
           entry.available ? "active:scale-[0.97]" : "opacity-45 saturate-50"
         }`}
@@ -184,8 +186,70 @@ export function BookPickerGrid({ entries, activeKey, onSelect }: Props) {
       </div>
     );
 
+  const active = entries.find((e) => e.key === activeKey) ?? null;
+
+  if (!open) {
+    const pct =
+      active && active.lessonCount > 0
+        ? Math.round((active.completedCount / active.lessonCount) * 100)
+        : 0;
+    return (
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        aria-expanded={false}
+        className="mb-3 flex w-full items-center gap-3 rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] p-3 text-left shadow-[var(--app-shadow)] active:scale-[0.99]"
+      >
+        {active ? (
+          <span
+            className="block w-12 shrink-0 overflow-hidden rounded-[10px] shadow-sm"
+            style={{ aspectRatio: "300 / 420" }}
+          >
+            <CourseCover
+              src={active.coverUrl ?? ""}
+              alt={active.title}
+              label={active.chipLabel}
+              className="h-full w-full object-cover"
+            />
+          </span>
+        ) : null}
+        <span className="min-w-0 flex-1">
+          <span className="block text-[11px] font-bold uppercase tracking-wide text-[var(--app-muted)]">
+            {tr(locale, "Миний ном")}
+          </span>
+          <span className="block truncate text-[15px] font-extrabold text-[var(--app-text)]" translate="no">
+            {active ? active.chipLabel : tr(locale, "Ном сонгох")}
+          </span>
+          {active ? (
+            <span className="block text-[12px] font-semibold text-[var(--app-muted)]">
+              {active.completedCount}/{active.lessonCount} {tr(locale, "хичээл")} · {pct}%
+            </span>
+          ) : null}
+        </span>
+        <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-2 text-[12px] font-extrabold text-emerald-700">
+          {tr(locale, "Ном солих")} · {entries.length}
+        </span>
+      </button>
+    );
+  }
+
+  const selectAndClose = (entry: BookPickerEntry) => {
+    onSelect(entry);
+    setOpen(false);
+  };
+
   return (
     <div className="mb-2">
+      <div className="mb-3 flex items-center justify-between px-0.5">
+        <p className="text-[15px] font-extrabold text-[var(--app-text)]">{tr(locale, "Ном сонгох")}</p>
+        <button
+          type="button"
+          onClick={() => setOpen(false)}
+          className="rounded-full border border-[var(--app-border)] bg-[var(--app-card)] px-3 py-1.5 text-[12px] font-bold text-[var(--app-text)]"
+        >
+          {tr(locale, "Хаах")} ✕
+        </button>
+      </div>
       <Section
         title={`⭐ ${tr(locale, "Таны номууд")}`}
         hint={tr(locale, "Од дарсан ном энд")}

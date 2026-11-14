@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { PrefetchLink } from "@/components/navigation/prefetch-link";
 import { lessonPath } from "@/lib/content";
 import { tr } from "@/lib/i18n/translate";
@@ -16,6 +17,8 @@ type Props = {
   totalCount: number;
   progressPercent: number;
   allLessonsHref?: string | null;
+  /** Нүүрт эхлээд хэдэн хичээл харуулах (дараагийн үзэх хичээлээс эхэлнэ). */
+  previewCount?: number;
 };
 
 export function HomeLessonList({
@@ -26,8 +29,10 @@ export function HomeLessonList({
   totalCount,
   progressPercent,
   allLessonsHref,
+  previewCount = 3,
 }: Props) {
   const locale = useUiLocale();
+  const [expanded, setExpanded] = useState(false);
   if (lessons.length === 0) {
     return (
       <p className="bs-tm-catalog-empty">
@@ -35,6 +40,18 @@ export function HomeLessonList({
       </p>
     );
   }
+
+  // Дараагийн үзэх хичээлээс эхлээд цөөн хэдийг л харуулна — нүүр богино байна.
+  const indexed = lessons.map((lesson, index) => ({ lesson, index }));
+  const firstOpen = indexed.findIndex(
+    ({ lesson }) => (statusByLesson[lesson.id] ?? "not_started") !== "completed"
+  );
+  const start =
+    firstOpen < 0
+      ? Math.max(0, lessons.length - previewCount)
+      : Math.min(firstOpen, Math.max(0, lessons.length - previewCount));
+  const visible = expanded ? indexed : indexed.slice(start, start + previewCount);
+  const hiddenCount = lessons.length - visible.length;
 
   return (
     <section className="bs-tm-lesson-catalog">
@@ -49,7 +66,7 @@ export function HomeLessonList({
       </header>
 
       <ol className="bs-tm-lesson-list bs-stagger">
-        {lessons.map((lesson, index) => {
+        {visible.map(({ lesson, index }) => {
           const status = statusByLesson[lesson.id] ?? "not_started";
           const completed = status === "completed";
           const lessonNo = index + 1;
@@ -97,7 +114,15 @@ export function HomeLessonList({
         })}
       </ol>
 
-      {allLessonsHref ? (
+      {hiddenCount > 0 ? (
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          className="bs-tm-lesson-catalog-all w-full"
+        >
+          {tr(locale, "Бүх хичээлийг харах")} ({lessons.length}) ▾
+        </button>
+      ) : allLessonsHref ? (
         <Link href={allLessonsHref} className="bs-tm-lesson-catalog-all">
           {tr(locale, "Бүх хичээл харах")} →
         </Link>

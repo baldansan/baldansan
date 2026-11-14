@@ -302,9 +302,9 @@ export function ProfileAppView() {
   }
 
   if (!user) {
-    const guestLevelLabel = hydrated
-      ? `${formatActiveHskLevel(activeLevel)} ${tr(locale, "суралцагч")}`
-      : tr(locale, "Суралцагч");
+    // Зочинд түвшин, «хамгаалалт» зэрэг бүртгэлтэй холбоотой тоог харуулахгүй;
+    // энэ төхөөрөмж дээр ахиц байвал л статистикийг үзүүлнэ.
+    const guestHasProgress = streak > 0 || completedLessons > 0;
 
     return (
       <MobileAppShell
@@ -315,15 +315,9 @@ export function ProfileAppView() {
         <div className="bs-tm-phead">
           <ProfileAvatar displayName={tr(locale, "Зочин")} guest />
           <h1 className="bs-tm-pname">{tr(locale, "Зочин хэрэглэгч")}</h1>
-          <p className="bs-tm-prank">{guestLevelLabel}</p>
+          <p className="bs-tm-prank">{tr(locale, "Нэвтрээгүй байна")}</p>
           {streak > 0 ? (
             <span className="bs-tm-plvlbadge">🔥 {streak} {tr(locale, "өдөр дараалан")}</span>
-          ) : null}
-          {streakFreeze ? (
-            <span className="bs-tm-plvlbadge">
-              {tr(locale, "🧊 Хамгаалалт:")} {streakFreeze.total - streakFreeze.usedThisMonth}/
-              {streakFreeze.total}
-            </span>
           ) : null}
         </div>
 
@@ -333,18 +327,12 @@ export function ProfileAppView() {
           </MobileCard>
         ) : null}
 
-        <ProfileSrsStats
-          userId={null}
-          streak={streak}
-          completedLessons={completedLessons}
-        />
-
         <MobileCard padding="sm" className="mb-5 text-center !p-4">
           <p className="text-sm font-bold text-[var(--app-text)]">
-            {tr(locale, "Бүх төхөөрөмж дээр хадгалах уу?")}
+            {tr(locale, "Ахицаа хадгалахын тулд нэвтэрнэ үү")}
           </p>
           <p className="mt-1 text-xs text-[var(--app-muted)]">
-            {tr(locale, "Нэвтэрвэл SRS, streak, тоглоомын оноо синк хийгдэнэ.")}
+            {tr(locale, "Нэвтэрвэл сурсан үг, өдрийн дараалал, оноо чинь утас солиход ч алдагдахгүй.")}
           </p>
           <Link
             href="/login"
@@ -359,6 +347,14 @@ export function ProfileAppView() {
             {tr(locale, "Бүртгүүлэх")}
           </Link>
         </MobileCard>
+
+        {guestHasProgress ? (
+          <ProfileSrsStats
+            userId={null}
+            streak={streak}
+            completedLessons={completedLessons}
+          />
+        ) : null}
       </MobileAppShell>
     );
   }

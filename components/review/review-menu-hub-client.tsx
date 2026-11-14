@@ -511,6 +511,11 @@ export function ReviewMenuHubClient({
         </PrefetchLink>
 
         </div>
+        <details className="group" style={{ gridColumn: "1 / -1" }}>
+        <summary className="mt-4 flex cursor-pointer list-none items-center justify-between rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] px-4 py-3 text-sm font-extrabold text-[var(--app-text)] shadow-[var(--app-shadow)] [&::-webkit-details-marker]:hidden">
+          <span>📚 {tr(locale, "Бусад: ном, уншлага, дүрэм")}</span>
+          <span className="text-[var(--app-muted)] transition-transform group-open:rotate-180" aria-hidden>▾</span>
+        </summary>
         <div className="bs-tm-col bs-desk-hide">
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>
           {tr(locale, "Материал")}
@@ -574,6 +579,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-badge-new">{tr(locale, "ШИНЭ")}</span>
         </PrefetchLink>
         </div>
+        </details>
         </div>
       </div>
     </MobileAppShell>
