@@ -651,3 +651,47 @@
     display: none;
   }
 }
+
+/* ── Харанхуй горим (компьютерийн дэлгэц) ──
+   Энэ файлд өмнө нь харанхуй горимын тохиргоо огт байгаагүй: дээд цэс, хажуугийн картууд
+   "#fff" гэж шууд бичигдсэн тул харанхуйд цагаан хэвээр үлдэж, бичвэр нь уншигдахгүй байв. */
+html[data-theme="dark"] .bs-desknav {
+  background: var(--bs-card);
+  border-bottom-color: var(--bs-line);
+}
+html[data-theme="dark"] .bs-desknav-brand {
+  color: var(--bs-ink);
+}
+html[data-theme="dark"] .bs-desknav-tab,
+html[data-theme="dark"] .bs-desknav-icon {
+  color: var(--bs-ink-2);
+}
+html[data-theme="dark"] .bs-desknav-tab:hover,
+html[data-theme="dark"] .bs-desknav-icon:hover,
+html[data-theme="dark"] .bs-home-rail-links a:hover,
+html[data-theme="dark"] .bs-mt-option:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.06);
+}
+html[data-theme="dark"] .bs-desknav-search:focus-within {
+  background: var(--bs-bg);
+}
+html[data-theme="dark"] .bs-desknav-seg button.bs-on {
+  background: var(--bs-green-100);
+  color: var(--bs-ink);
+}
+html[data-theme="dark"] .bs-home-rail-card,
+html[data-theme="dark"] .bs-dict-panel {
+  background: var(--bs-card);
+  box-shadow: 0 0 0 1px var(--bs-line);
+}
+html[data-theme="dark"] .bs-home-rail-big,
+html[data-theme="dark"] .bs-home-rail-links a {
+  color: var(--bs-ink);
+}
+html[data-theme="dark"] .bs-lib-card--on {
+  background: var(--bs-green-50);
+}
+html[data-theme="dark"] .bs-mt-answer-sheet-keys kbd {
+  background: var(--bs-bg);
+  color: var(--bs-ink);
+}

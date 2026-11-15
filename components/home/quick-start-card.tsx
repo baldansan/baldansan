@@ -82,8 +82,7 @@ export function QuickStartCard({ loggedIn, hasProgress }: Props) {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="bs-tm-continue w-full text-left"
-        style={{ borderColor: "#fde68a", background: "linear-gradient(135deg, #fffbeb, #fef3c7)" }}
+        className="bs-tm-continue bs-tm-continue--quick w-full text-left"
       >
         <span
           className="bs-tm-continue-ic"

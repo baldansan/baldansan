@@ -375,8 +375,8 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
             ))}
           </div>
 
-          <details className="mt-5 rounded-3xl bg-white/70 p-3 ring-1 ring-slate-200">
-            <summary className="cursor-pointer list-none px-2 py-1 text-sm font-bold text-slate-800 [&::-webkit-details-marker]:hidden">
+          <details className="mt-5 rounded-3xl bg-[var(--app-card)] p-3 ring-1 ring-[var(--app-border)]">
+            <summary className="cursor-pointer list-none px-2 py-1 text-sm font-bold text-[var(--app-text)] [&::-webkit-details-marker]:hidden">
               📘 {tr(locale, "Хичээлээр дасгал хийх")}{" "}
               <span className="font-medium text-slate-500">
                 — {lessonTitle ?? tr(locale, "одоогийн хичээл")} ▾

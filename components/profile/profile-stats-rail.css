@@ -113,3 +113,35 @@
 .bs-pr-score {
   color: #7c3aed;
 }
+
+/* ── Харанхуй горим: профайлын баруун талын картууд (өмнө нь "#fff" гэж шууд бичигдсэн байсан) ── */
+html[data-theme="dark"] .bs-pr-card {
+  background: var(--bs-card);
+  box-shadow: 0 0 0 1px var(--bs-line);
+}
+html[data-theme="dark"] .bs-pr-head,
+html[data-theme="dark"] .bs-pr-stats b,
+html[data-theme="dark"] .bs-pr-list li {
+  color: var(--bs-ink);
+}
+html[data-theme="dark"] .bs-pr-muted,
+html[data-theme="dark"] .bs-pr-bar-label,
+html[data-theme="dark"] .bs-pr-stats span,
+html[data-theme="dark"] .bs-pr-done {
+  color: var(--bs-muted);
+}
+html[data-theme="dark"] .bs-pr-link {
+  color: var(--bs-green-700);
+}
+html[data-theme="dark"] .bs-pr-bar {
+  background: var(--bs-line);
+}
+html[data-theme="dark"] .bs-pr-bar--on {
+  background: var(--bs-green);
+}
+html[data-theme="dark"] .bs-pr-stats div {
+  background: #1f2a22;
+}
+html[data-theme="dark"] .bs-pr-score {
+  color: #b79cff;
+}

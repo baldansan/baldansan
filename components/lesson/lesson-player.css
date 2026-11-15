@@ -23,6 +23,16 @@
   padding:8px 12px 28px;
   line-height:1.5;
 }
+/* Харанхуй горим: дээрх .bs-root нь өнгийг ҮРГЭЛЖ цайвар гэж дахин тодорхойлдог байсан тул
+   хичээл дотор картууд цагаан хэвээр, бичвэр нь цайвар болж уншигдахгүй байв.
+   Утгууд нь app/globals.css-ийн html[data-theme="dark"] блоктой ижил. */
+html[data-theme="dark"] .bs-root{
+  --bs-green:#2ecc6a; --bs-green-700:#4fd98a; --bs-green-50:#16311f; --bs-green-100:#1e4229;
+  --bs-amber:#f2a93b; --bs-amber-50:#332816; --bs-amber-100:#4a391c;
+  --bs-ink:#e8efea; --bs-ink-2:#c3cec6; --bs-muted:#93a398; --bs-line:#273229;
+  --bs-bg:#0f1512; --bs-card:#182019;
+  --bs-shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+}
 .bs-root *{box-sizing:border-box}
 
 /* top bar + progress */
