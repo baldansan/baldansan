@@ -69,6 +69,20 @@ type ShellOptions = {
   hideSidebar?: boolean;
 };
 
+/** Асуултын төрлөөр хугацааг хуваарилах жин (1 = дундаж). */
+const PACE_WEIGHT: Record<string, number> = {
+  judge: 0.6,
+  match: 0.7,
+  fill_word: 0.8,
+  choice: 1.6,
+  order: 1.2,
+  fill_char: 1,
+  complete: 1.5,
+  picture_sentence: 3,
+  essay: 8,
+  essay_picture: 8,
+};
+
 function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
@@ -715,11 +729,24 @@ export function MockTestExamClient({
   // Унших / бичих: нэг асуултад ногдох хугацаа ба төлөвлөгөөт хурд.
   const paceInfo = (() => {
     if (!isRealMode || skill === "listening" || !skillQuestions.length || sectionTotalSeconds <= 0) return null;
-    const perQ = sectionTotalSeconds / skillQuestions.length;
+    // Төрөл бүр өөр хугацаа авна: тааруулах/нөхөх хурдан, эх унших/өгүүлбэр бичих удаан.
+    const weights = skillQuestions.map((q) => PACE_WEIGHT[q.q_type] ?? 1);
+    const totalWeight = weights.reduce((sum, w) => sum + w, 0);
+    const budgets = weights.map((w) => (sectionTotalSeconds * w) / totalWeight);
     const elapsed = Math.max(0, sectionTotalSeconds - secondsLeft);
-    const expectedIdx = Math.min(skillQuestions.length - 1, Math.floor(elapsed / perQ));
+    let expectedIdx = 0;
+    let acc = 0;
+    for (let i = 0; i < budgets.length; i++) {
+      acc += budgets[i];
+      if (elapsed < acc) {
+        expectedIdx = i;
+        break;
+      }
+      expectedIdx = i;
+    }
     const answered = skillQuestions.filter((q) => (answers[String(q.q_no)] ?? "").trim()).length;
     const behind = answered < expectedIdx;
+    const perQ = budgets[Math.max(0, currentQuestionIndex)] ?? budgets[0];
     return { perQ, expectedQNo: skillQuestions[expectedIdx].q_no, behind };
   })();
   const canGoPrev = currentQuestionIndex > 0;
@@ -753,7 +780,7 @@ export function MockTestExamClient({
           {unansweredCount > 0 ? ` · ${unansweredCount} хариулаагүй` : ""}
           {paceInfo ? (
             <span className={`bs-mt-pace ${paceInfo.behind ? "bs-mt-pace--behind" : ""}`}>
-              Нэг асуултад ≈ {formatTime(Math.round(paceInfo.perQ))} ·{" "}
+              Энэ асуултад ≈ {formatTime(Math.round(paceInfo.perQ / 5) * 5)} ·{" "}
               {paceInfo.behind
                 ? `хоцорч байна — одоо ${paceInfo.expectedQNo}-р асуулт дээр байх ёстой`
                 : "хурд хэвийн"}

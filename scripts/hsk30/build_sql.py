@@ -51,7 +51,7 @@ sections=[
    {'desc':'Яриа ↔ зураг','part':1,'range':[1,10],'q_type':'match'},
    {'desc':'Яриа сонсоод асуултад хариулах','part':2,'range':[11,20],'q_type':'choice'},
    {'desc':'Богино өгүүлэл сонсоод асуултад хариулах','part':3,'range':[21,30],'q_type':'choice'}]},
- {'skill':'reading','audio_url':None,'time_min':45,'parts':[
+ {'skill':'reading','audio_url':None,'time_min':30,'parts':[
    {'desc':'Өгүүлбэр ↔ хариу тааруулах','part':1,'range':[31,40],'q_type':'match'},
    {'desc':'选词填空 — өгөгдсөн үгнээс нөхөх','part':2,'range':[41,50],'q_type':'fill_word'},
    {'desc':'Унших → асуултын хариу','part':3,'range':[51,60],'q_type':'choice'}]},
@@ -72,7 +72,7 @@ out.append("""-- 098: HSK 3 · шинэ хэлбэр (HSK 3.0) · Загвар �
 begin;
 """)
 out.append(f"""insert into public.mock_tests (id, hsk_level, title, total_questions, time_limit_min, has_writing, sections, is_active)
-values ({S(n.TEST_ID)}, 3, {S(n.TITLE)}, 70, 83, true, {J(sections)}, true)
+values ({S(n.TEST_ID)}, 3, {S(n.TITLE)}, 70, 70, true, {J(sections)}, true)
 on conflict (id) do update set hsk_level=excluded.hsk_level, title=excluded.title, total_questions=excluded.total_questions,
   time_limit_min=excluded.time_limit_min, has_writing=excluded.has_writing, sections=excluded.sections, is_active=excluded.is_active;
 
@@ -92,5 +92,5 @@ on conflict (test_id, q_no) do update set skill=excluded.skill, part=excluded.pa
 commit;
 ''')
 open(f'{REPO}/supabase/migrations/098_hsk3_new_format_mock_n3_01.sql','w').write('\n'.join(out))
-json.dump({'test':{'id':n.TEST_ID,'hsk_level':3,'title':n.TITLE,'total_questions':70,'time_limit_min':83,'has_writing':True,'sections':sections,'is_active':True},'questions':rows},open('n3_01_rows.json','w'),ensure_ascii=False)
+json.dump({'test':{'id':n.TEST_ID,'hsk_level':3,'title':n.TITLE,'total_questions':70,'time_limit_min':70,'has_writing':True,'sections':sections,'is_active':True},'questions':rows},open('n3_01_rows.json','w'),ensure_ascii=False)
 print('ok',len(rows))
