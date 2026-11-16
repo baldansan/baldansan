@@ -173,7 +173,7 @@ export function MockTestListClient({
                                 ? "Албан загвар (样卷)"
                                 : meta
                                   ? `${meta.year} он · №${meta.serial}${meta.variant ? ` ${meta.variant}` : ""}`
-                                  : test.id}
+                                  : test.title.replace(/^HSK \d\s*·\s*/, "") || test.id}
                             </span>
                             <span className="bs-mt-row-meta">
                               {test.time_limit_min} мин · {test.total_questions} асуулт ·{" "}
