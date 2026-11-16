@@ -705,6 +705,23 @@ export function MockTestExamClient({
     !isRealMode && skill === "listening" && sectionMeta?.audio_url;
 
   const showSingleQuestion = isRealMode;
+
+  // Сонсгол: асуулт бүрийн аудио цаг байвал дэлгэц аудиог дагаж шилжинэ.
+  const listeningCues =
+    showSectionAudio && skillQuestions.every((q) => typeof q.audio_start_sec === "number")
+      ? skillQuestions.map((q) => ({ qNo: q.q_no, start: q.audio_start_sec as number }))
+      : undefined;
+
+  // Унших / бичих: нэг асуултад ногдох хугацаа ба төлөвлөгөөт хурд.
+  const paceInfo = (() => {
+    if (!isRealMode || skill === "listening" || !skillQuestions.length || sectionTotalSeconds <= 0) return null;
+    const perQ = sectionTotalSeconds / skillQuestions.length;
+    const elapsed = Math.max(0, sectionTotalSeconds - secondsLeft);
+    const expectedIdx = Math.min(skillQuestions.length - 1, Math.floor(elapsed / perQ));
+    const answered = skillQuestions.filter((q) => (answers[String(q.q_no)] ?? "").trim()).length;
+    const behind = answered < expectedIdx;
+    return { perQ, expectedQNo: skillQuestions[expectedIdx].q_no, behind };
+  })();
   const canGoPrev = currentQuestionIndex > 0;
   const canGoNext = currentQuestionIndex < skillQuestions.length - 1;
 
@@ -734,6 +751,14 @@ export function MockTestExamClient({
         <p className="bs-mt-real-progress">
           {sectionIndex + 1}/{skills.length} хэсэг · {SKILL_LABELS_MN[skill] ?? skill}
           {unansweredCount > 0 ? ` · ${unansweredCount} хариулаагүй` : ""}
+          {paceInfo ? (
+            <span className={`bs-mt-pace ${paceInfo.behind ? "bs-mt-pace--behind" : ""}`}>
+              Нэг асуултад ≈ {formatTime(Math.round(paceInfo.perQ))} ·{" "}
+              {paceInfo.behind
+                ? `хоцорч байна — одоо ${paceInfo.expectedQNo}-р асуулт дээр байх ёстой`
+                : "хурд хэвийн"}
+            </span>
+          ) : null}
         </p>
       ) : (
         <div className="bs-mt-section-nav">
@@ -756,6 +781,8 @@ export function MockTestExamClient({
           <MockTestListeningAudioOnce
             url={sectionMeta!.audio_url!}
             playKey={listeningAudioKey}
+            cues={listeningCues}
+            onQuestionChange={setCurrentQNo}
           />
         </div>
       ) : null}

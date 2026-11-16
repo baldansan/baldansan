@@ -839,6 +839,10 @@ html.bs-bichleg-fs-root,html.bs-bichleg-fs-root body{overflow:hidden}
 .bs-mt-audio-once-msg{margin:0;font-size:13px;font-weight:700;color:var(--bs-green-700)}
 .bs-mt-audio-once-msg--done{color:var(--bs-muted)}
 .bs-mt-audio-once-msg--warn{color:#b45309}
+.bs-mt-audio-cue{margin:0;font-size:14px;font-weight:700;color:var(--bs-green-700)}
+.bs-mt-audio-cue span{font-weight:600;opacity:.8}
+.bs-mt-pace{display:block;margin-top:2px;font-weight:600;opacity:.85}
+.bs-mt-pace--behind{color:#b45309;opacity:1}
 .bs-mt-unanswered-prompt{margin-top:14px;padding:14px;border-radius:16px;background:#fff7ed;border:1px solid #fed7aa}
 .bs-mt-unanswered-title{margin:0;font-size:14px;font-weight:800;color:#9a3412}
 .bs-mt-unanswered-text{margin:6px 0 0;font-size:12px;color:#7c2d12;line-height:1.45}
