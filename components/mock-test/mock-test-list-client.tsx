@@ -150,7 +150,7 @@ export function MockTestListClient({
                   onClick={() => setOpenLevel(open ? null : lvl)}
                   aria-expanded={open}
                 >
-                  <span className="bs-mt-level-badge">HSK {lvl}</span>
+                  <span className="bs-mt-level-badge">{lvl >= 7 ? "HSK 7–9" : `HSK ${lvl}`}</span>
                   <span className="bs-mt-level-meta">
                     {levelTests.length} шалгалт
                     {doneCount ? ` · ${doneCount} өгсөн` : ""}
@@ -173,7 +173,7 @@ export function MockTestListClient({
                                 ? "Албан загвар (样卷)"
                                 : meta
                                   ? `${meta.year} он · №${meta.serial}${meta.variant ? ` ${meta.variant}` : ""}`
-                                  : test.title.replace(/^HSK \d\s*·\s*/, "") || test.id}
+                                  : test.title.replace(/^HSK \d(?:[–-]\d)?\s*·\s*/, "") || test.id}
                             </span>
                             <span className="bs-mt-row-meta">
                               {test.time_limit_min} мин · {test.total_questions} асуулт ·{" "}

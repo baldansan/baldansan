@@ -11,7 +11,7 @@ type Props = {
 };
 
 function levelLabel(level: number): string {
-  return `HSK ${level}`;
+  return level >= 7 ? "HSK 7–9" : `HSK ${level}`;
 }
 
 export function MockTestPracticeListClient({ tests, tutorCounts = {} }: Props) {

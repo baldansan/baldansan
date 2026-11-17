@@ -563,7 +563,7 @@ export function MockTestExamClient({
         </Link>
         <h1 className="bs-mt-title mt-3">{test.title}</h1>
         <p className="bs-mt-sub">
-          HSK {test.hsk_level} · {test.id}
+          {test.hsk_level >= 7 ? "HSK 7–9" : `HSK ${test.hsk_level}`} · {test.id}
         </p>
         <div className="bs-mock-info-card mt-4">
           <p className="bs-mock-info-row">

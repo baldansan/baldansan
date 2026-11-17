@@ -26,7 +26,7 @@ function rateLimited(userId: string): boolean {
 }
 
 const MAX_ANSWER_CHARS = 1200;
-const MAX_STEM_CHARS = 2500;
+const MAX_STEM_CHARS = 4000;
 
 type QRow = {
   id: string;
@@ -36,6 +36,7 @@ type QRow = {
   stem: string | null;
   correct_answer: string | null;
   image_url: string | null;
+  tags: string[] | null;
   mock_tests: { hsk_level: number } | { hsk_level: number }[] | null;
 };
 
@@ -45,7 +46,39 @@ type TaskSpec = {
   criteria: [string, string, string, string];
 };
 
-function taskSpec(qType: string, level: number): TaskSpec {
+function taskSpec(qType: string, level: number, tags: string[] = []): TaskSpec {
+  const lv = level >= 7 ? "HSK7-9" : `HSK${level}`;
+  if (tags.includes("sk.reading.short_answer")) {
+    return {
+      name_zh: `${lv} 阅读：简答题`,
+      requirement_zh:
+        "学生读了一篇文章后，用不超过十个字简要回答问题。只看答案是否准确回答了问题（意思与参考答案一致即可，不要求字面相同），不要因为答案短而扣分。答案意思正确 score 应在 85 以上，部分正确 50–70，错误 30 以下。",
+      criteria: ["Хариулт зөв эсэх", "Товч, оновчтой", "Дүрэм/ханз", "Асуултад тохирсон"],
+    };
+  }
+  if (tags.includes("sk.translation.mn_zh")) {
+    return {
+      name_zh: `${lv} 翻译：蒙古语译成汉语`,
+      requirement_zh:
+        "题目中给出一段蒙古语原文，学生把它翻译成汉语。按译文是否忠实、完整、通顺、用词得体来评分；参考译文只是一种译法，不要求一致。漏译、错译要重扣。",
+      criteria: ["Утга үнэн зөв", "Бүрэн (орхигдолгүй)", "Найруулга жигд", "Үг сонголт, дүрэм"],
+    };
+  }
+  if (tags.includes("sk.writing.chart")) {
+    return {
+      name_zh: `${lv} 写作：图表作文`,
+      requirement_zh:
+        "学生根据一张图表写一篇200字左右的文章，要描述图表中的主要数据和变化趋势，并作简要分析。图表数据见参考答案。",
+      criteria: ["Графикийн тоо баримтыг зөв тайлбарласан", "Дүн шинжилгээ", "Үгийн сан, дүрэм", "Бүтэц (200 орчим ханз)"],
+    };
+  }
+  if (qType === "essay" && level >= 6) {
+    return {
+      name_zh: `${lv} 写作：命题作文`,
+      requirement_zh: "按照题目中的要求（话题、文体、字数）写一篇文章。字数、观点是否明确、论证是否充分、语言是否得体都要评。",
+      criteria: ["Сэдэв, үзэл бодол тодорхой", "Үгийн сан", "Дүрэм/өгүүлбэр", "Бүтэц ба уялдаа (шаардсан урт)"],
+    };
+  }
   if (qType === "summary") {
     return {
       name_zh: "HSK6 书写：缩写",
@@ -116,7 +149,7 @@ export async function POST(request: Request) {
 
   const { data: q, error } = await client
     .from("mock_test_questions")
-    .select("id, test_id, q_no, q_type, stem, correct_answer, image_url, mock_tests(hsk_level)")
+    .select("id, test_id, q_no, q_type, stem, correct_answer, image_url, tags, mock_tests(hsk_level)")
     .eq("id", questionId)
     .maybeSingle<QRow>();
   if (error || !q) {
@@ -124,7 +157,7 @@ export async function POST(request: Request) {
   }
   const mt = Array.isArray(q.mock_tests) ? q.mock_tests[0] : q.mock_tests;
   const level = Number(mt?.hsk_level ?? 5);
-  const spec = taskSpec(q.q_type, level);
+  const spec = taskSpec(q.q_type, level, Array.isArray(q.tags) ? q.tags : []);
 
   const system = [
     "你是一位经验丰富的 HSK 书写阅卷老师，同时精通蒙古语（西里尔文）。你要给一位蒙古学生的作文打分并用蒙古语讲评。",
@@ -144,7 +177,7 @@ export async function POST(request: Request) {
   if (q.correct_answer && q.q_type === "summary") {
     userParts.push(`【参考缩写（仅供对照要点，不要求学生一致）】\n${q.correct_answer.slice(0, 900)}`);
   } else if (q.correct_answer) {
-    userParts.push(`【参考答案】\n${q.correct_answer.slice(0, 400)}`);
+    userParts.push(`【参考答案】\n${q.correct_answer.slice(0, 900)}`);
   }
   userParts.push(`【学生作文】\n${answer}`);
 
