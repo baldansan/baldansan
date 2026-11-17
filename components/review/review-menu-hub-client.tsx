@@ -236,20 +236,25 @@ export function ReviewMenuHubClient({
     </PrefetchLink>
   );
 
-  const bichlegCard = bichlegContinue ? (
-    <PrefetchLink href={bichlegContinue.href} className="bs-tm-card">
+  // Дуу · Бичлэг — доод цэснээс «Давтах» руу нүүсэн тул үргэлж харагдана.
+  const bichlegCard = (
+    <PrefetchLink href={bichlegContinue?.href ?? "/bichleg"} className="bs-tm-card">
       <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
         📺
       </span>
       <span className="bs-tm-card-body">
-        <span className="bs-tm-card-title">{tr(locale, "Бичлэг үргэлжлүүлэх")}</span>
+        <span className="bs-tm-card-title">
+          {bichlegContinue ? tr(locale, "Бичлэг үргэлжлүүлэх") : tr(locale, "Дуу · Бичлэг")}
+        </span>
         <span className="bs-tm-card-sub">
-          {bichlegContinue.title} · {bichlegContinue.subtitle}
+          {bichlegContinue
+            ? `${bichlegContinue.title} · ${bichlegContinue.subtitle}`
+            : tr(locale, "Хадмалтай кино, дуугаар сонсголоо сайжруул")}
         </span>
       </span>
       <span className="bs-tm-card-chev" aria-hidden>›</span>
     </PrefetchLink>
-  ) : null;
+  );
 
   /* PC (≥920px) баруун самбар — утсан дээр нуугдана (AppShell). */
   const rightRail = (
@@ -381,6 +386,16 @@ export function ReviewMenuHubClient({
 
         <div className="bs-desk-hide">
           {studyPlanCard}
+          <PrefetchLink href={`/listen/daily?level=${activeLevel}`} className="bs-tm-card">
+            <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
+              🎧
+            </span>
+            <span className="bs-tm-card-body">
+              <span className="bs-tm-card-title">{tr(locale, "Өнөөдрийн сонсгол")}</span>
+              <span className="bs-tm-card-sub">{tr(locale, "10 асуулт · 5 минут")}</span>
+            </span>
+            <span className="bs-tm-card-chev" aria-hidden>›</span>
+          </PrefetchLink>
           {bichlegCard}
         </div>
 

@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Хичээлүүд — Бөөндөө Сурцгаая",
-  description: "Сурах чиглэлээ сонго — HSK4, HSK5, Korean.",
+  description: "Сурах түвшнээ сонго — HSK 1–6.",
 };
 
 /**
@@ -106,7 +106,7 @@ export default async function CoursesPage() {
   );
   const [hskSources, koreanSources] = await Promise.all([
     Promise.all(HSK_CATALOG_LEVELS.map(loadCourseSource)),
-    Promise.all(KOREAN_CATALOG_IDS.map(loadCourseSource)),
+    Promise.resolve([] as CourseSource[]),
   ]);
 
   for (const source of hskSources) {

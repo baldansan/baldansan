@@ -94,65 +94,50 @@ export function HomeTodaySection({ loggedIn, bichlegContinue, bichlegSuggestion 
     ? tr(locale, "Бичлэг үргэлжлүүлэх")
     : tr(locale, "Өнөөдрийн бичлэг");
 
-  return (
-    <section className="mb-4" aria-label={tr(locale, "Өнөөдөр")}>
-      <p className="bs-tm-sec">{tr(locale, "Өнөөдөр")}</p>
-      <div className="bs-home-today">
-        {loggedIn && assignments ? (
-          <Link href="/my-assignments" className="bs-home-today-card bs-home-today-card--amber">
-            <span className="bs-home-today-ic" aria-hidden>
-              📌
-            </span>
-            <span className="bs-home-today-n">
-              {assignments.pending > 0 ? assignments.pending : "✓"}
-            </span>
-            <span className="bs-home-today-l">
-              {assignments.pending > 0
-                ? tr(locale, "Багшийн даалгавар")
-                : tr(locale, "Даалгавар бүгд дууссан")}
-            </span>
-          </Link>
-        ) : null}
+  // Нүүр хуудсыг энгийн байлгана: өмнө нь энд 4 өнгөт хавтан («Давтах» хуудастай бараг ижил) байсан нь
+  // хүмүүсийг төөрөгдүүлж байв. Одоо зөвхөн хийх зүйл байвал нэг мөр гарна; бусад нь «Давтах» таб дотор.
+  void listenDone;
+  void bichlegHref;
+  void bichlegTitle;
+  void bichlegKicker;
+  const hasAssignments = loggedIn && assignments != null && assignments.pending > 0;
+  const hasDue = dueCards != null && dueCards > 0;
+  if (!hasAssignments && !hasDue) return null;
 
-        <Link href="/review/daily" className="bs-home-today-card bs-home-today-card--green">
-          <span className="bs-home-today-ic" aria-hidden>
+  return (
+    <section className="mb-3" aria-label={tr(locale, "Өнөөдөр")}>
+      {hasAssignments ? (
+        <Link href="/my-assignments" className="bs-home-chat">
+          <span className="bs-mss-prompt-ico" aria-hidden>
+            📌
+          </span>
+          <span className="bs-mss-prompt-body">
+            <span className="bs-home-chat-title">
+              {tr(locale, "Багшийн даалгавар")} · {assignments?.pending}
+            </span>
+            <span className="bs-mss-prompt-sub">{tr(locale, "Хийж дуусгаагүй даалгавар байна")}</span>
+          </span>
+          <span aria-hidden className="bs-mss-prompt-arrow">
+            ›
+          </span>
+        </Link>
+      ) : null}
+      {hasDue ? (
+        <Link href="/review/daily" className="bs-home-chat">
+          <span className="bs-mss-prompt-ico" aria-hidden>
             🔁
           </span>
-          <span className="bs-home-today-n">
-            {dueCards == null ? "…" : dueCards}
+          <span className="bs-mss-prompt-body">
+            <span className="bs-home-chat-title">
+              {tr(locale, "Өнөөдөр давтах")} {dueCards} {tr(locale, "үг байна")}
+            </span>
+            <span className="bs-mss-prompt-sub">{tr(locale, "Мартахаас өмнө 2–3 минут давтчих")}</span>
           </span>
-          <span className="bs-home-today-l">
-            {dueCards === 0 ? tr(locale, "Давтах карт алга") : tr(locale, "Давтах карт")}
-          </span>
-        </Link>
-
-        <Link
-          href={`/listen/daily?level=${activeLevel}`}
-          className="bs-home-today-card bs-home-today-card--violet"
-        >
-          <span className="bs-home-today-ic" aria-hidden>
-            🎧
-          </span>
-          <span className="bs-home-today-n">
-            {listenDone ? `${listenDone.correct}/${listenDone.total}` : "10"}
-          </span>
-          <span className="bs-home-today-l">
-            {listenDone
-              ? tr(locale, "Сонсгол хийсэн ✓")
-              : tr(locale, "Өнөөдрийн сонсгол")}
+          <span aria-hidden className="bs-mss-prompt-arrow">
+            ›
           </span>
         </Link>
-
-        <Link href={bichlegHref} className="bs-home-today-card bs-home-today-card--blue">
-          <span className="bs-home-today-ic" aria-hidden>
-            📺
-          </span>
-          <span className="bs-home-today-t" translate="no">
-            {bichlegTitle ?? tr(locale, "Бичлэг үзэх")}
-          </span>
-          <span className="bs-home-today-l">{bichlegKicker}</span>
-        </Link>
-      </div>
+      ) : null}
     </section>
   );
 }

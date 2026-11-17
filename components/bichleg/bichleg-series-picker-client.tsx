@@ -63,7 +63,7 @@ export function BichlegSeriesPickerClient({
   const continueThumb = continueTarget ? youtubeThumbUrl(continueTarget.youtube_id) : null;
 
   return (
-    <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
+    <MobileAppShell activeTab="review" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
       <h1 className="bs-tm-page-title bs-page-in">{tr(locale, "Дуу ба бичлэг")}</h1>
       <MediaTabs active="videos" />
 

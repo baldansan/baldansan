@@ -558,10 +558,10 @@ export function HomeAppView({
               </span>
             </p>
             <p className="mt-1.5 text-[22px] font-black leading-[1.15] sm:text-2xl">
-              {tr(locale, "Бүх номын бүх дасгал — үнэгүй")}
+              {tr(locale, "Хятад хэл сурах апп — бүгд үнэгүй")}
             </p>
             <p className="mt-1.5 text-[13px] font-medium leading-5 text-emerald-50">
-              {tr(locale, "Номоо сонгоод л эхэл.")}{" "}
+              {tr(locale, "HSK шалгалтад бэлд. Номоо сонгоод л эхэл.")}{" "}
               {totals.books > 0 ? (
                 <span className="font-bold text-white">
                   {totals.books} {tr(locale, "ном")} · {totals.lessons}{" "}

@@ -404,7 +404,7 @@ export function SongKaraokeClient({
       : null;
 
   return (
-    <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
+    <MobileAppShell activeTab="review" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
       <div className={`bs-song ${kidMode ? "bs-song--kid" : ""}`}>
         <Link href={backHref} className="bs-song-back">
           {tr(locale, "← Дуу")}

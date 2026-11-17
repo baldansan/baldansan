@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export type AppNavTab = "home" | "review" | "clips" | "games" | "profile";
+export type AppNavTab = "home" | "books" | "review" | "games" | "profile";
 
 export type AppNavItem = {
   key: AppNavTab;
@@ -9,7 +9,7 @@ export type AppNavItem = {
   icon: ReactNode;
 };
 
-/** Нүүр · Давтах · Бичлэг · Тоглоом · Профайл — bottom nav болон sidebar нэг эх сурвалж. */
+/** Нүүр · Ном · Давтах · Тоглоом · Профайл (Дуу·Бичлэг нь «Давтах» дотор) — bottom nav болон sidebar нэг эх сурвалж. */
 export const APP_NAV_ITEMS: AppNavItem[] = [
   {
     key: "home",
@@ -42,6 +42,29 @@ export const APP_NAV_ITEMS: AppNavItem[] = [
     ),
   },
   {
+    key: "books",
+    label: "Ном",
+    href: "/nom",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden>
+        <path
+          d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M4 20.5A2.5 2.5 0 0 0 6.5 21H20v-3"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path d="M9 8h7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
     key: "review",
     label: "Давтах",
     href: "/review",
@@ -61,25 +84,6 @@ export const APP_NAV_ITEMS: AppNavItem[] = [
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-      </svg>
-    ),
-  },
-  {
-    key: "clips",
-    label: "Дуу·Бичлэг",
-    href: "/bichleg",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" aria-hidden>
-        <rect
-          x="3"
-          y="5"
-          width="18"
-          height="14"
-          rx="3"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <path d="m10 9.5 5 2.5-5 2.5z" fill="currentColor" />
       </svg>
     ),
   },

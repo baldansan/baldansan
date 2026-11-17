@@ -156,7 +156,7 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
   const [hskLevels, korean, fazhanLevels, yctLevels, libraryPreview, bichlegSuggestion] =
     await Promise.all([
       Promise.all(HSK_LEVEL_IDS.map((id) => loadHskLevelForHome(id))),
-      loadKoreanCourseForHome(),
+      Promise.resolve(null as Awaited<ReturnType<typeof loadKoreanCourseForHome>>),
       Promise.all(
         FAZHAN_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
       ),

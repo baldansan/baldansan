@@ -1153,7 +1153,7 @@ export function BichlegFeedClient({
 
   if (!videos.length) {
     return (
-      <AppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW}>
+      <AppShell activeTab="review" mainClassName={SHELL_MAIN_NARROW}>
         <Link
           href={backHref}
           className="mb-4 inline-flex text-sm font-bold text-[var(--app-muted)] hover:text-emerald-600"
@@ -1302,7 +1302,7 @@ export function BichlegFeedClient({
   }
 
   return (
-    <AppShell activeTab="clips" showBottomNav={false} immersive>
+    <AppShell activeTab="review" showBottomNav={false} immersive>
       <div
         className={`bs-bichleg-shell${isFs ? " bs-bichleg-shell--fs" : ""}${
           chromeHidden && isPlaying ? " bs-bichleg-shell--idle" : ""

@@ -14,10 +14,10 @@ export const LEARNER_COURSE_PROBE_IDS = [
   "hsk2",
   "hsk1",
   "hsk",
-  "korean-level-1",
-  "korean-1",
-  "korean-survival",
 ] as const;
+
+/** Солонгос хэлний курс — суралцагчид харагдахгүй (хассан), админд л үлдсэн. */
+export const KOREAN_COURSE_IDS = ["korean-level-1", "korean-1", "korean-survival"] as const;
 
 /**
  * Админы жагсаалт, шинжилгээнд харуулах БҮХ курс. Өмнө нь админ зөвхөн
@@ -26,6 +26,7 @@ export const LEARNER_COURSE_PROBE_IDS = [
  */
 export const ADMIN_COURSE_IDS = [
   ...LEARNER_COURSE_PROBE_IDS,
+  ...KOREAN_COURSE_IDS,
   "yct-1",
   "yct-2",
   "yct-3",
@@ -143,12 +144,6 @@ export const LANGUAGE_SELECTION_OPTIONS: {
   label: string;
   courseId: string;
 }[] = [
-  {
-    lang: "ko",
-    emoji: "🇰🇷",
-    label: "Солонгос хэл",
-    courseId: "korean-level-1",
-  },
   {
     lang: "zh",
     emoji: "🇨🇳",

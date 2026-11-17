@@ -19,7 +19,6 @@ type LanguageTab = "ko-KR" | "zh-CN";
 
 const LANGUAGE_TABS: { id: LanguageTab; label: string; settingsKey: TtsLangKey }[] =
   [
-    { id: "ko-KR", label: "Солонгос (ko-KR)", settingsKey: "koKR" },
     { id: "zh-CN", label: "Хятад (zh-CN)", settingsKey: "zhCN" },
   ];
 

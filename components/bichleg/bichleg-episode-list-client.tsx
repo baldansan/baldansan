@@ -115,7 +115,7 @@ export function BichlegEpisodeListClient({
       : null;
 
   return (
-    <MobileAppShell activeTab="clips" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
+    <MobileAppShell activeTab="review" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
       <Link href="/bichleg" className="bs-mem-back">
         {tr(locale, "← Цуврал сонгох")}
       </Link>

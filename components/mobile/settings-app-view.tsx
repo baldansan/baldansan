@@ -133,39 +133,6 @@ export function SettingsAppView() {
         ) : null}
       </MobileCard>
 
-      <MobileCard padding="lg" className="mb-4">
-        <h2 className="text-sm font-bold text-[var(--app-text)]">Сурах хэл</h2>
-        <p className="mt-1 text-xs text-[var(--app-muted)]">
-          Зөвхөн сонгосон хэлний хичээлүүд харагдана.
-        </p>
-        <div className="mt-3 flex flex-col gap-2">
-          {LANGUAGE_SELECTION_OPTIONS.map((option) => (
-            <label
-              key={option.lang}
-              className={`flex cursor-pointer items-center gap-3 rounded-[14px] border px-3 py-2.5 text-sm ${
-                language === option.lang
-                  ? "border-emerald-300 bg-emerald-50 font-semibold text-emerald-900"
-                  : "border-[var(--app-border)] bg-white text-[var(--app-text)]"
-              }`}
-            >
-              <input
-                type="radio"
-                name="learner-language"
-                className="accent-emerald-600"
-                checked={language === option.lang}
-                onChange={() => handleLanguageChange(option.lang, option.courseId)}
-              />
-              <span aria-hidden>{option.emoji}</span>
-              {option.label}
-            </label>
-          ))}
-        </div>
-        {language ? (
-          <p className="mt-3 text-xs text-[var(--app-muted)]">
-            Идэвхтэй: {languageTrackLabel(language)}
-          </p>
-        ) : null}
-      </MobileCard>
 
       {/* Хүүхдийн бүртгэлийг зөвхөн эцэг эх /family-оос устгана */}
       {email && !isKidEmail(email) ? <div className="mt-4"><DeleteAccountCard /></div> : null}

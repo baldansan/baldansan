@@ -115,7 +115,17 @@ export function setQuickStartCompleted(completed: boolean): void {
   }
 }
 
+/**
+ * Апп одоо зөвхөн хятад хэлд төвлөрдөг (Солонгос хэлийг 2026-11-18-нд хассан — хүмүүс төөрч байсан).
+ * Тиймээс хэл сонгох дэлгэц гарахгүй, урьд нь «ko» сонгосон хүн ч хятад хэл рүү орно.
+ */
 export function getSelectedLanguage(): SelectedLanguage | null {
+  if (!isBrowser()) return null;
+  return "zh";
+}
+
+/** Хуучин логик (хэл сонголт буцаж орвол ашиглана). */
+export function getStoredLanguageLegacy(): SelectedLanguage | null {
   if (!isBrowser()) return null;
   try {
     const raw = localStorage.getItem(SELECTED_LANGUAGE_KEY);

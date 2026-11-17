@@ -17,10 +17,6 @@ import { LANGUAGE_SELECTION_OPTIONS } from "@/lib/language-track";
 
 const guideSteps = [
   {
-    title: "Хэл сонго",
-    body: "Сурах хэлээ сонгоно. Сонгосон хэлний хичээлүүд харагдана.",
-  },
-  {
     title: "Хичээл үзэх",
     body: "Богино бичлэг, хадмал, romanization, Монгол орчуулгатай үзнэ.",
   },
@@ -121,13 +117,6 @@ export function OnboardingAppView() {
                     ?.label ?? ""
                 )}
               </p>
-              <button
-                type="button"
-                className="mt-2 text-xs font-semibold text-emerald-700 underline"
-                onClick={() => setPhase("pick")}
-              >
-                {tr(locale, "Хэл солих")}
-              </button>
             </MobileCard>
           ) : null}
 

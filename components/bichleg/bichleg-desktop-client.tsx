@@ -731,7 +731,7 @@ export function BichlegDesktopClient({
 
   if (!activeVideo) {
     return (
-      <AppShell activeTab="clips" desktopWidth="narrow">
+      <AppShell activeTab="review" desktopWidth="narrow">
         <Link href={backHref} className="mb-4 inline-flex text-sm font-bold text-[var(--app-muted)]">
           {tr(locale, "← Буцах")}
         </Link>
@@ -750,7 +750,7 @@ export function BichlegDesktopClient({
   };
 
   return (
-    <AppShell activeTab="clips" showBottomNav={false} immersive>
+    <AppShell activeTab="review" showBottomNav={false} immersive>
       <div className="bs-bd">
         <div className="bs-bd-main">
           {/* Толгой: буцах · цуврал · ангиуд */}

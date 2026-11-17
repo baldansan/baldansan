@@ -9,12 +9,13 @@ export function resolveBottomNavTab(
   if (
     tab === "home" ||
     tab === "review" ||
-    tab === "clips" ||
+    tab === "books" ||
     tab === "games" ||
     tab === "profile"
   ) {
     return tab;
   }
+  // Дуу·Бичлэг одоо «Давтах» дотор байрлана.
   if (tab === "study" || tab === "kanji") return "review";
   return "home";
 }

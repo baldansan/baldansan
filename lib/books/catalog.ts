@@ -100,19 +100,6 @@ export const BOOKS: BookEntry[] = [
     audience: "adult",
     emoji: "📕",
   },
-  {
-    id: "korean",
-    titleZh: "韩国语课程",
-    titleMn: "Солонгос хэлний курс",
-    publisherZh: "Бөөндөө Сурцгаая",
-    descriptionZh: "韩文字母、基础词汇、工作生活用语。",
-    descriptionMn: "Солонгос үсэг, үндсэн үг, ажил амьдралд хэрэгтэй хэллэг.",
-    status: "open",
-    href: "/courses/korean-1",
-    volumesZh: "Book 1 · Survival",
-    audience: "korean",
-    emoji: "🇰🇷",
-  },
 ];
 
 export const HSK_LEVELS = ["hsk1", "hsk2", "hsk3", "hsk4", "hsk5", "hsk6"] as const;

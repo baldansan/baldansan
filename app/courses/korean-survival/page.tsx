@@ -1,33 +1,6 @@
-import { notFound } from "next/navigation";
-import { CourseDetailAppView } from "@/components/mobile/course-detail-app-view";
-import { getCourseContentById, getPublicLessonSummariesByCourseId } from "@/lib/content";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export const metadata = {
-  title: "Korean Survival — Бөөндөө Сурцгаая",
-  description: "Солонгос хэл — ажил амьдралд хэрэгтэй хичээлүүд.",
-};
-
-export default async function KoreanSurvivalCoursePage() {
-  const [course, lessons] = await Promise.all([
-    getCourseContentById("korean-survival"),
-    getPublicLessonSummariesByCourseId("korean-survival"),
-  ]);
-
-  if (!course && lessons.length === 0) {
-    notFound();
-  }
-
-  return (
-    <CourseDetailAppView
-      courseId="korean-survival"
-      title={course?.title ?? "Ажилд явах Korean"}
-      subtitle={
-        course?.subtitle ??
-        "Ажил амьдралд хэрэгтэй Солонгос хэллэг, үг, өгүүлбэр"
-      }
-      lessons={lessons}
-    />
-  );
+/** Солонгос хэлний курсийг хассан (2026-11-18) — апп зөвхөн хятад хэлд төвлөрнө. */
+export default function KoreanCourseRemovedPage() {
+  redirect("/home");
 }
