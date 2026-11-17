@@ -42,7 +42,7 @@ w=wave.open('n4/listening.wav','wb'); w.setnchannels(1); w.setsampwidth(2); w.se
 subprocess.run(['ffmpeg','-v','error','-y','-i','n4/listening.wav','-ac','1','-b:a','56k','n4/listening.mp3'])
 print('audio %.1f min'%(t/60))
 
-REPO='/home/claude/baldansan'; BASE='/mock-tests/n4-01'; AUDIO=f'{BASE}/listening.mp3'
+REPO='/home/claude/baldansan'; BASE='/mock-tests/n4-01'; AUDIO=f'{BASE}/listening.mp3?v=2'
 os.makedirs(f'{REPO}/public{BASE}',exist_ok=True); subprocess.run(['cp','n4/listening.mp3',f'{REPO}/public{BASE}/listening.mp3'])
 rows=[]
 def q(skill,part,no,qt,stem,options,ans,expl,tags,autograde='auto',**kw):

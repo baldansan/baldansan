@@ -7,7 +7,7 @@ for f in os.listdir('img'):
     if f.endswith('.png') :
         im=Image.open(f'img/{f}').convert('RGB'); im.thumbnail((720,720)); im.save(f'{REPO}/public{BASE}/img/{f[:-4]}.webp','WEBP',quality=80)
 subprocess.run(['cp','listening.mp3',f'{REPO}/public{BASE}/listening.mp3'])
-AUDIO=f'{BASE}/listening.mp3'
+AUDIO=f'{BASE}/listening.mp3?v=2'
 times={int(k):v for k,v in json.load(open('times.json')).items()}
 LMIN=int(max(v[1] for v in times.values())/60)+2
 rows=[]

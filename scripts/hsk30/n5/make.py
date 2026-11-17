@@ -44,7 +44,7 @@ w=wave.open('n5/listening.wav','wb'); w.setnchannels(1); w.setsampwidth(2); w.se
 subprocess.run(['ffmpeg','-v','error','-y','-i','n5/listening.wav','-ac','1','-b:a','56k','n5/listening.mp3'])
 print('audio %.1f min'%(t/60))
 
-REPO='/home/claude/baldansan'; BASE='/mock-tests/n5-01'; AUDIO=f'{BASE}/listening.mp3'
+REPO='/home/claude/baldansan'; BASE='/mock-tests/n5-01'; AUDIO=f'{BASE}/listening.mp3?v=2'
 os.makedirs(f'{REPO}/public{BASE}',exist_ok=True); subprocess.run(['cp','n5/listening.mp3',f'{REPO}/public{BASE}/listening.mp3'])
 from PIL import Image
 im=Image.open('n5/w1.png').convert('RGB'); im.thumbnail((900,900)); im.save(f'{REPO}/public{BASE}/w1.webp','WEBP',quality=82)
