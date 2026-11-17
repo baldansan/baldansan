@@ -3,6 +3,7 @@
  * Дүгнэлт, оноо өгөлт бүгд серверийн RPC (submit_class_quiz)-д хийгдэнэ.
  */
 
+import { knownNoClassroom } from "@/lib/supabase/dedupe-fetch";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 
@@ -471,6 +472,8 @@ export async function getMyOpenClassQuizzes(): Promise<OpenClassQuiz[]> {
   if (!hasSupabaseConfig || !supabase) return [];
   const { userId } = await getAuthenticatedUserId();
   if (!userId) return [];
+  // Ангид ороогүй сурагчид нээлттэй сорил байх боломжгүй — сан руу очихгүй.
+  if (knownNoClassroom(userId)) return [];
   const { data, error } = await supabase.rpc("my_open_class_quizzes");
   if (error) return [];
   return ((data ?? []) as Record<string, unknown>[]).map((r) => ({

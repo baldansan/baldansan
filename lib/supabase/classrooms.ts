@@ -1160,7 +1160,8 @@ export async function getStudentAssignments(): Promise<
 
   const { data: enrollments, error: enrollError } = await supabase
     .from("classroom_students")
-    .select("classroom_id")
+    // curriculum.ts-тэй яг ижил select — нэг хүсэлт болж нэгтгэгдэнэ (dedupe-fetch).
+    .select("classroom_id, status")
     .eq("student_user_id", userId);
 
   if (enrollError) return { data: null, error: toError(enrollError) };
