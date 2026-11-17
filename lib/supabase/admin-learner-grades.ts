@@ -110,6 +110,9 @@ function toNumber(value: unknown): number {
   return Number.isFinite(parsed) ? parsed : 0;
 }
 
+const BOARD_MEMO_MS = 5 * 60_000;
+const boardMemo = new Map<string, { at: number; board: LearnerGradeBoard }>();
+
 /**
  * Grades for every learner with any recorded activity.
  *
@@ -141,6 +144,29 @@ export async function getLearnerGradeBoard(
   }
 
   const windowDays = options.activityWindowDays ?? 90;
+
+  // Энэ самбар 5 хүснэгтийг бүтнээр уншдаг хүнд ажил. Нэг админ 5 минутын дотор дахин
+  // нээхэд (эсвэл /admin/overview → /admin/learners) санах ойноос өгнө. Түлхүүр нь
+  // хэрэглэгчийн id — RLS-ээр тухайн хүнд харагдсан өгөгдөл өөр хүнд очихгүй.
+  let memoKey: string | null = null;
+  try {
+    const { data: auth } = await client.auth.getUser();
+    if (auth.user?.id) memoKey = `${auth.user.id}:${windowDays}`;
+  } catch {
+    memoKey = null;
+  }
+  if (memoKey) {
+    const hit = boardMemo.get(memoKey);
+    if (hit && Date.now() - hit.at < BOARD_MEMO_MS) return hit.board;
+  }
+  const remember = (board: LearnerGradeBoard): LearnerGradeBoard => {
+    if (memoKey) {
+      if (boardMemo.size > 20) boardMemo.clear();
+      boardMemo.set(memoKey, { at: Date.now(), board });
+    }
+    return board;
+  };
+
   const since = new Date();
   since.setUTCDate(since.getUTCDate() - (windowDays - 1));
   const sinceDay = since.toISOString().slice(0, 10);
@@ -303,7 +329,7 @@ export async function getLearnerGradeBoard(
     counts.set(row.score.grade, (counts.get(row.score.grade) ?? 0) + 1);
   }
 
-  return {
+  return remember({
     rows,
     demoCount: rows.filter((row) => row.isDemo).length,
     distribution: (["A", "B", "C", "D", "F", "unrated"] as const).map(
@@ -312,7 +338,7 @@ export async function getLearnerGradeBoard(
     ratedCount: rated.length,
     averageScore,
     warnings,
-  };
+  });
 }
 
 /** Харуулах нэр: нэр → имэйл → «Нэргүй суралцагч · код». Хэзээ ч зөвхөн код биш. */
