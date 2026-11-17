@@ -8,8 +8,10 @@ def path(cid):
     if cid in idx: return f"n5/clips/{idx[cid]}.wav"
     k=int(cid[1:]); assert cid.startswith('n') and 1<=k<=32
     return f"clips/{k+2}.wav" if k<=30 else f"n4/clips/{k-29}.wav"   # N3-ын «第N题» клипүүд
+TEMPO={'m':0.79,'f':0.71,'n':0.68}
 def load(cid):
-    raw=subprocess.run(['ffmpeg','-v','error','-i',path(cid),'-ac','1','-ar',str(SR),'-f','s16le','-'],capture_output=True).stdout
+    v=clips[idx[cid]]['v'] if cid in idx else 'n'
+    raw=subprocess.run(['ffmpeg','-v','error','-i',path(cid),'-ac','1','-ar',str(SR),'-af',f"rubberband=tempo={TEMPO[v]}:formant=preserved",'-f','s16le','-'],capture_output=True).stdout
     x=np.frombuffer(raw,dtype=np.int16).astype(np.float32)
     nz=np.where(np.abs(x)>300)[0]
     if len(nz): x=x[max(0,nz[0]-int(.05*SR)):nz[-1]+int(.12*SR)]
@@ -20,7 +22,7 @@ def sil(s):
     global t; buf.append(np.zeros(int(s*SR),np.float32)); t+=int(s*SR)/SR
 def play(cid):
     global t; x=load(cid); buf.append(x); t+=len(x)/SR
-times={}; GAP=11
+times={}; GAP=15
 sil(1); play('p1'); sil(1.5)
 for q,turns,*r in n.L1A:
     st=t; play(f'n{q}'); sil(.6)

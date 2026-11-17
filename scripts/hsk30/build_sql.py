@@ -9,6 +9,7 @@ for f in os.listdir('img'):
 subprocess.run(['cp','listening.mp3',f'{REPO}/public{BASE}/listening.mp3'])
 AUDIO=f'{BASE}/listening.mp3'
 times={int(k):v for k,v in json.load(open('times.json')).items()}
+LMIN=int(max(v[1] for v in times.values())/60)+2
 rows=[]
 def q(skill,part,no,qt,stem,options,ans,expl,tags,autograde='auto',**kw):
     r=dict(skill=skill,part=part,q_no=no,q_type=qt,stem=stem,options=options,correct_answer=ans,autograde=autograde,points=1,
@@ -47,7 +48,7 @@ assert [r['q_no'] for r in rows]==list(range(1,71)),[r['q_no'] for r in rows]
 for r in rows:
     if r['options'] and r['q_type']!='picture_sentence': assert r['correct_answer'] in [o['key'] for o in r['options']],r['q_no']
 sections=[
- {'skill':'listening','audio_url':AUDIO,'time_min':18,'parts':[
+ {'skill':'listening','audio_url':AUDIO,'time_min':LMIN,'parts':[
    {'desc':'Яриа ↔ зураг','part':1,'range':[1,10],'q_type':'match'},
    {'desc':'Яриа сонсоод асуултад хариулах','part':2,'range':[11,20],'q_type':'choice'},
    {'desc':'Богино өгүүлэл сонсоод асуултад хариулах','part':3,'range':[21,30],'q_type':'choice'}]},
@@ -72,7 +73,7 @@ out.append("""-- 098: HSK 3 · шинэ хэлбэр (HSK 3.0) · Загвар �
 begin;
 """)
 out.append(f"""insert into public.mock_tests (id, hsk_level, title, total_questions, time_limit_min, has_writing, sections, is_active)
-values ({S(n.TEST_ID)}, 3, {S(n.TITLE)}, 70, 70, true, {J(sections)}, true)
+values ({S(n.TEST_ID)}, 3, {S(n.TITLE)}, 70, {LMIN+50}, true, {J(sections)}, true)
 on conflict (id) do update set hsk_level=excluded.hsk_level, title=excluded.title, total_questions=excluded.total_questions,
   time_limit_min=excluded.time_limit_min, has_writing=excluded.has_writing, sections=excluded.sections, is_active=excluded.is_active;
 
@@ -92,5 +93,5 @@ on conflict (test_id, q_no) do update set skill=excluded.skill, part=excluded.pa
 commit;
 ''')
 open(f'{REPO}/supabase/migrations/098_hsk3_new_format_mock_n3_01.sql','w').write('\n'.join(out))
-json.dump({'test':{'id':n.TEST_ID,'hsk_level':3,'title':n.TITLE,'total_questions':70,'time_limit_min':70,'has_writing':True,'sections':sections,'is_active':True},'questions':rows},open('n3_01_rows.json','w'),ensure_ascii=False)
+json.dump({'test':{'id':n.TEST_ID,'hsk_level':3,'title':n.TITLE,'total_questions':70,'time_limit_min':LMIN+50,'has_writing':True,'sections':sections,'is_active':True},'questions':rows},open('n3_01_rows.json','w'),ensure_ascii=False)
 print('ok',len(rows))
