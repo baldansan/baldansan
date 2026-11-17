@@ -1,5 +1,6 @@
 "use client";
 
+import { markRoomSeen } from "@/lib/social/unread";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -112,6 +113,11 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
   );
   // Хөтлөгч (өрөөний эзэн / 105 SQL-ээр тавьсан админ) — санал асуулга явуулж чадна.
   const amHost = isOwner || members.some((m) => m.user_id === userId && m.role === "owner");
+
+  // Энэ өрөөний мессежүүдийг «уншсан» гэж тэмдэглэнэ (уншаагүй тоонд хэрэглэнэ).
+  useEffect(() => {
+    if (messages.length > 0) markRoomSeen(roomId, messages[messages.length - 1].id);
+  }, [messages, roomId]);
 
   const pollIds = useMemo(
     () => messages.filter((m) => parsePoll(m.body)).map((m) => m.id),

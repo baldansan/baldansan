@@ -1,5 +1,6 @@
 "use client";
 
+import { fetchUnreadCounts, formatUnread } from "@/lib/social/unread";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -32,6 +33,10 @@ import { ChatGate } from "./chat-gate";
 
 type TabKey = "level" | "mine" | "open" | "teams" | "age";
 
+function unreadSuffix(n: number): string {
+  return n > 0 ? ` (${formatUnread(n)})` : "";
+}
+
 function readMyLevel(): string | null {
   try {
     const goal = JSON.parse(window.localStorage.getItem("bs.study.examGoal") ?? "null") as { level?: number } | null;
@@ -54,6 +59,7 @@ function ChatHomeInner({ userId }: { userId: string }) {
   const [tab, setTab] = useState<TabKey>("level");
   const [levelRooms, setLevelRooms] = useState<ChatRoom[]>([]);
   const [myLevel, setMyLevel] = useState<string | null>(null);
+  const [unread, setUnread] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [mine, setMine] = useState<ChatRoom[]>([]);
@@ -84,6 +90,10 @@ function ChatHomeInner({ userId }: { userId: string }) {
     setTeams(tm.data ?? []);
     setAgeRooms(a.data ?? []);
     setProfile(p.data);
+    void fetchUnreadCounts(
+      myRooms.map((r) => r.id),
+      userId
+    ).then(setUnread);
     const dmIds = myRooms.filter((r) => r.kind === "dm").map((r) => r.id);
     if (dmIds.length > 0) {
       const members = await listMembersForRooms(dmIds);
@@ -137,8 +147,8 @@ function ChatHomeInner({ userId }: { userId: string }) {
   }
 
   const tabs: { key: TabKey; label: string }[] = [
-    { key: "level", label: t("Түвшний чат") },
-    { key: "mine", label: t("Миний өрөөнүүд") },
+    { key: "level", label: t("Түвшний чат") + unreadSuffix(levelRooms.reduce((a, r) => a + (unread[r.id] ?? 0), 0)) },
+    { key: "mine", label: t("Миний өрөөнүүд") + unreadSuffix(Object.values(unread).reduce((a, b) => a + b, 0)) },
     { key: "open", label: t("Нээлттэй өрөөнүүд") },
     { key: "teams", label: t("Багууд") },
     { key: "age", label: t("Хятадаар ярилцъя") },
@@ -201,6 +211,7 @@ function ChatHomeInner({ userId }: { userId: string }) {
             empty="Та одоогоор ямар ч өрөөнд ороогүй байна. «Нээлттэй өрөөнүүд» хэсгээс нэгдээрэй."
             render={(room) => (
               <RoomCard
+                unread={unread[room.id]}
                 key={room.id}
                 room={room}
                 title={roomTitle(room)}
@@ -231,6 +242,7 @@ function ChatHomeInner({ userId }: { userId: string }) {
             empty="Нээлттэй өрөө алга. Эхний өрөөг та нээгээрэй!"
             render={(room) => (
               <RoomCard
+                unread={unread[room.id]}
                 key={room.id}
                 room={room}
                 title={room.title}
@@ -265,6 +277,7 @@ function ChatHomeInner({ userId }: { userId: string }) {
               const full = room.member_count >= max;
               return (
                 <RoomCard
+                unread={unread[room.id]}
                   key={room.id}
                   room={room}
                   title={room.title}
@@ -308,6 +321,7 @@ function ChatHomeInner({ userId }: { userId: string }) {
               .sort((a, b) => Number(b.topic === myLevel) - Number(a.topic === myLevel))
               .map((room) => (
                 <RoomCard
+                unread={unread[room.id]}
                   key={room.id}
                   room={room}
                   title={room.title}
@@ -359,6 +373,7 @@ function ChatHomeInner({ userId }: { userId: string }) {
               const mismatch = profile?.age_band && room.age_band !== profile.age_band;
               return (
                 <RoomCard
+                unread={unread[room.id]}
                   key={room.id}
                   room={room}
                   title={room.title}
@@ -436,18 +451,23 @@ function RoomCard({
   title,
   badge,
   action,
+  unread,
 }: {
   room: ChatRoom;
   title: string;
   badge?: string;
   action: React.ReactNode;
+  unread?: number;
 }) {
   const locale = useUiLocale();
   return (
     <div className="app-card flex items-center gap-3 p-3">
       <SocialAvatar name={title} avatar={room.kind === "age" ? "🗣️" : room.kind === "level" ? "📚" : room.owner_avatar} size={44} />
       <div className="min-w-0 flex-1">
-        <p className="truncate text-sm font-bold text-[var(--app-text)]">{title || "—"}</p>
+        <p className="flex items-center gap-2 text-sm font-bold text-[var(--app-text)]">
+          <span className="truncate">{title || "—"}</span>
+          {unread ? <span className="bs-unread">{formatUnread(unread)}</span> : null}
+        </p>
         <p className="truncate text-xs text-[var(--app-muted)]">
           {badge ? `${badge} · ` : ""}
           {room.member_count} {ts(locale, "гишүүн")}

@@ -1848,3 +1848,5 @@ html[data-theme="dark"] .bs-home-level--more{color:#7fe3a8}
 .bs-poll-label,.bs-poll-n{position:relative}
 .bs-poll-n{flex:none;font-size:11px;font-weight:800;opacity:.75}
 html[data-theme="dark"] .bs-poll-opt{background:rgba(0,0,0,.25);color:#e8efea;border-color:rgba(127,227,168,.3)}
+
+.bs-unread{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 6px;border-radius:999px;background:#E5484D;color:#fff;font-size:11px;font-weight:800;line-height:1}

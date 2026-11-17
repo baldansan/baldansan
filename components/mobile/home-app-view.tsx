@@ -49,6 +49,7 @@ import { TeacherAssignmentBanner } from "@/components/home/teacher-assignment-ba
 import { ExamGoalCard } from "@/components/engagement/exam-goal-card";
 import { MyStudySystem } from "@/components/engagement/my-study-system";
 import { InstallAppGuide } from "@/components/intro/install-app-guide";
+import { HomeChatBadge } from "@/components/social/home-chat-badge";
 import { HomeQuickSearch } from "@/components/home/home-quick-search";
 import { QuickStartCard } from "@/components/home/quick-start-card";
 import type { BichlegSuggestion } from "@/lib/mobile-home-data";
@@ -681,6 +682,7 @@ export function HomeAppView({
             </span>
             <span className="bs-mss-prompt-sub">{tr(locale, "Нэг түвшнийхэнтэйгээ асууж, хамт суралц")}</span>
           </span>
+          <HomeChatBadge />
           <span aria-hidden className="bs-mss-prompt-arrow">
             ›
           </span>
