@@ -1717,3 +1717,21 @@ html[data-theme="dark"] .bs-tn--ok{border-color:rgba(34,197,94,.4)}
 html[data-theme="dark"] .bs-tn--bad{border-color:rgba(239,68,68,.4)}
 html[data-theme="dark"] .bs-tn--ok .bs-tn-verdict-title{color:#86efac}
 html[data-theme="dark"] .bs-tn--pending .bs-tn-verdict-title{color:#fbbf24}
+
+/* Цээжлэх бүлгүүд: зигзаг зам биш, бүгд нэг дор харагдах нягт сүлжээ */
+.bs-mem-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:10px 0 24px}
+.bs-mem-map-node,.bs-mem-map-node[data-pos]{height:auto;padding:0;justify-content:stretch}
+.bs-mem-map-node::before{display:none}
+.bs-mem-map-btn{width:100%;height:100%;padding:12px 6px 10px;border:1px solid var(--bs-line);border-radius:16px;background:var(--bs-card)}
+.bs-mem-map-ring{width:58px;height:58px;box-shadow:none}
+.bs-mem-map-circle{font-size:24px}
+.bs-mem-map-circle--char{font-size:26px}
+.bs-mem-map-title{max-width:100%;font-size:12px}
+.bs-mem-map-current .bs-mem-map-btn{border-color:var(--bs-green);box-shadow:0 0 0 2px color-mix(in srgb,var(--bs-green) 25%,transparent)}
+.bs-mem-map-current .bs-mem-map-ring{animation:none}
+.bs-mem-map-done .bs-mem-map-btn{opacity:.75}
+.bs-mem-map-here{position:static;transform:none;animation:none;order:-1;padding:2px 8px;font-size:9px;box-shadow:none}
+.bs-mem-map-here::after{display:none}
+.bs-mem-all-link{display:block;margin:0 0 12px;padding:10px 14px;border:1px dashed var(--bs-green);border-radius:14px;background:var(--bs-card);font-size:13px;font-weight:800;color:var(--bs-green-700);text-decoration:none}
+@media (min-width:700px){.bs-mem-map{grid-template-columns:repeat(5,minmax(0,1fr))}}
+html[data-theme="dark"] .bs-mem-map-todo .bs-mem-map-circle{background:rgba(255,255,255,.06)}

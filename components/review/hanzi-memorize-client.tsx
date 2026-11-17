@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { WordSrsStudySession } from "@/components/review/word-srs-study-session";
 import {
@@ -411,6 +412,12 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
             ? tr(locale, "сэдвээр бүлэглэсэн")
             : tr(locale, "пиньинь дарааллаар")}
         </p>
+
+        {/^[1-6]$/.test(String(toCatalogLevel(level))) ? (
+          <Link href={`/dictionary/levels?level=${toCatalogLevel(level)}`} className="bs-mem-all-link">
+            📋 {tr(locale, "Бүх үгийг нэг жагсаалтаар харж, ♥ дарж сонгох")} →
+          </Link>
+        ) : null}
 
         {hasFamilies ? (
           <>
