@@ -295,6 +295,7 @@ export function HomeAppView({
   }, [standardCatalog, fazhanCatalog, yctCatalog, selectedLang, statusByLesson]);
 
   const activePickerKey = `${activeSeries}:${activeChip}`;
+  const levelChips = pickerEntries.filter((e) => e.series === "standard" && e.available);
 
   /** Every published lesson on the page — progress is loaded once for all books. */
   const allLessonIds = useMemo(
@@ -627,6 +628,35 @@ export function HomeAppView({
         ) : null}
       </ul>
 
+      {/* Түвшин хурдан солих — шинэ хүн «Ном солих»-ыг олохгүй байсан тул хамгийн дээр */}
+      {levelChips.length > 1 ? (
+        <div className="bs-home-levels">
+          <p className="bs-home-levels-label">{tr(locale, "Түвшнээ сонго")}</p>
+          <div className="bs-home-levels-row">
+            {levelChips.map((entry) => (
+              <button
+                key={entry.key}
+                type="button"
+                aria-pressed={entry.key === activePickerKey}
+                className={`bs-home-level${entry.key === activePickerKey ? " bs-home-level--on" : ""}`}
+                onClick={() => pickBook(entry)}
+              >
+                {entry.chipLabel}
+              </button>
+            ))}
+            <button
+              type="button"
+              className="bs-home-level bs-home-level--more"
+              onClick={() =>
+                document.getElementById("home-book-picker")?.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
+            >
+              {tr(locale, "Бусад ном")} ›
+            </button>
+          </div>
+        </div>
+      ) : null}
+
       {/* Багшийн даалгавар — ЗААВАЛ; хийж дуустал хамгийн дээр байна */}
       <TeacherAssignmentBanner loggedIn={loggedIn} />
 
@@ -698,11 +728,13 @@ export function HomeAppView({
       ) : null}
 
       {pickerEntries.length > 1 ? (
-        <BookPickerGrid
-          entries={pickerEntries}
-          activeKey={activePickerKey}
-          onSelect={pickBook}
-        />
+        <div id="home-book-picker">
+          <BookPickerGrid
+            entries={pickerEntries}
+            activeKey={activePickerKey}
+            onSelect={pickBook}
+          />
+        </div>
       ) : null}
 
       {activeCourse && !activeCourse.available ? (

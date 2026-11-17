@@ -1808,3 +1808,13 @@ html[data-theme="dark"] .bs-mss-calc{background:#14301f;color:#9be8bb}
 html[data-theme="dark"] .bs-mss-calc--warn{background:#3a2a10;color:#ffd08a}
 html[data-theme="dark"] .bs-mss-prompt{background:#11241a}
 html[data-theme="dark"] .bs-mss-prompt-title{color:#7fe3a8}
+
+/* Нүүр: түвшин хурдан солих */
+.bs-home-levels{margin:0 0 14px}
+.bs-home-levels-label{margin:0 2px 6px;font-size:12px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;color:var(--bs-muted)}
+.bs-home-levels-row{display:flex;flex-wrap:wrap;gap:8px}
+.bs-home-levels-row::-webkit-scrollbar{display:none}
+.bs-home-level{flex:none;min-height:40px;padding:0 13px;border-radius:999px;border:1.5px solid var(--bs-line);background:var(--bs-card);font-size:14px;font-weight:800;color:var(--bs-ink);white-space:nowrap;cursor:pointer}
+.bs-home-level--on{border-color:var(--bs-green);background:var(--bs-green);color:#fff}
+.bs-home-level--more{border-style:dashed;color:var(--bs-green-700)}
+html[data-theme="dark"] .bs-home-level--more{color:#7fe3a8}

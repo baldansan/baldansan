@@ -227,7 +227,7 @@ export function BookPickerGrid({ entries, activeKey, onSelect }: Props) {
           ) : null}
         </span>
         <span className="shrink-0 rounded-full bg-emerald-50 px-3 py-2 text-[12px] font-extrabold text-emerald-700">
-          {tr(locale, "Ном солих")} · {entries.length}
+          {tr(locale, "Түвшин / ном солих")} · {entries.length}
         </span>
       </button>
     );
