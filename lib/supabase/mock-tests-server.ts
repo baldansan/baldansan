@@ -115,15 +115,31 @@ export async function fetchMockTests(
  * Нийтийн mock test жагсаалт — anon клиент, Data Cache 120с (tag: catalog:mock-tests).
  * /review зэрэг нийтийн хуудсанд; admin/хэрэглэгчийн үр дүнд fetchMockTests-ийг хэвээр хэрэглэ.
  */
-export const fetchMockTestsCached = unstable_cache(
+const fetchMockTestsCachedInner = unstable_cache(
   async (hskLevel?: number): Promise<MockTestRow[]> => {
     const client = createAnonServerSupabaseClient();
-    if (!client) return [];
-    return fetchMockTestsWith(client, hskLevel);
+    if (!client) throw new Error("no supabase client");
+    const rows = await fetchMockTestsWith(client, hskLevel);
+    // Хоосон үр дүнг кэшлэхгүй (DB түр алдааны үед «тест алга» гэж үлддэг байсан).
+    if (rows.length === 0) throw new Error("empty mock test list — not caching");
+    return rows;
   },
-  ["public-mock-tests"],
+  ["public-mock-tests-v2"],
   { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.mockTests] }
 );
+
+export async function fetchMockTestsCached(hskLevel?: number): Promise<MockTestRow[]> {
+  if (!hasServerSupabaseConfig) return [];
+  try {
+    const cached = await fetchMockTestsCachedInner(hskLevel);
+    if (cached.length > 0) return cached;
+  } catch {
+    // кэш хоосон/алдаатай — шууд уншина
+  }
+  const client = createAnonServerSupabaseClient();
+  if (!client) return [];
+  return fetchMockTestsWith(client, hskLevel);
+}
 
 async function fetchMockTestByIdWith(
   client: SupabaseClient,

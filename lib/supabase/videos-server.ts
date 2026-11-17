@@ -109,16 +109,35 @@ export async function fetchVideoSeriesCatalog(): Promise<VideoSeriesCard[]> {
   return fetchVideoSeriesCatalogWith(client);
 }
 
-/** Нийтийн цувралын каталог — anon клиент, Data Cache 120с (tag: catalog:videos). */
-export const fetchVideoSeriesCatalogCached = unstable_cache(
+/**
+ * Нийтийн цувралын каталог — anon клиент, Data Cache (tag: catalog:videos).
+ * ХООСОН үр дүнг хэзээ ч кэшлэхгүй: DB түр алдаа өгөхөд «бичлэг алга» гэсэн хариу
+ * кэшид үлдэж хэсэг бүхэлдээ алга болдог байсан. Хоосон/алдаа бол шууд (кэшгүй) уншина.
+ */
+const fetchVideoSeriesCatalogCachedInner = unstable_cache(
   async (): Promise<VideoSeriesCard[]> => {
     const client = createAnonServerSupabaseClient();
-    if (!client) return [];
-    return fetchVideoSeriesCatalogWith(client);
+    if (!client) throw new Error("no supabase client");
+    const rows = await fetchVideoSeriesCatalogWith(client);
+    if (rows.length === 0) throw new Error("empty video series catalog — not caching");
+    return rows;
   },
-  ["public-video-series-catalog"],
+  ["public-video-series-catalog-v2"],
   { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.videos] }
 );
+
+export async function fetchVideoSeriesCatalogCached(): Promise<VideoSeriesCard[]> {
+  if (!hasServerSupabaseConfig) return [];
+  try {
+    const cached = await fetchVideoSeriesCatalogCachedInner();
+    if (cached.length > 0) return cached;
+  } catch {
+    // кэш хоосон/алдаатай — шууд уншина
+  }
+  const client = createAnonServerSupabaseClient();
+  if (!client) return [];
+  return fetchVideoSeriesCatalogWith(client);
+}
 
 async function fetchVideoSeriesCatalogWith(
   client: SupabaseClient
