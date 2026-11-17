@@ -266,6 +266,21 @@ export async function getLearnerGradeBoard(
     ensure(userId).activeSeconds += toNumber(row.seconds);
   }
 
+  // Тоглоом / давталтаар цээжилсэн үг (user_word_srs) — RLS-ээр админд шууд харагдахгүй тул
+  // 108_admin_word_srs_counts.sql-ийн RPC-ээр нэгтгэсэн тоог авна. RPC байхгүй бол алгасна.
+  {
+    const { data, error } = await client.rpc("admin_word_srs_counts");
+    if (!error && Array.isArray(data)) {
+      for (const row of data as Record<string, unknown>[]) {
+        const userId = row.user_id ? String(row.user_id) : "";
+        if (!userId) continue;
+        const acc = ensure(userId);
+        acc.learnedWords = Math.max(acc.learnedWords, toNumber(row.known));
+        touchLastActive(acc, row.last_at);
+      }
+    }
+  }
+
   const names = await readRosterNames(client);
 
   const rows: LearnerGradeRow[] = [...byUser.entries()].map(

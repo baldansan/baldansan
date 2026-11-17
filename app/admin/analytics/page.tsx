@@ -10,6 +10,8 @@ import {
 } from "@/lib/supabase/admin-analytics";
 import { getQuestionAttemptsAnalytics } from "@/lib/supabase/question-attempts-analytics";
 import { getActivityTimeOverview } from "@/lib/supabase/activity-time-analytics";
+import { getLessonStageFunnel } from "@/lib/supabase/lesson-stage-funnel";
+import { LessonStageFunnelSection } from "@/components/admin/lesson-stage-funnel-section";
 import { getClassroomAdminSummary } from "@/lib/supabase/admin-classroom-stats";
 
 export const dynamic = "force-dynamic";
@@ -25,12 +27,14 @@ export default async function AdminAnalyticsPage() {
     classroomSummary,
     attemptAnalytics,
     activityTime,
+    stageFunnel,
   ] = await Promise.all([
     getLessonAnalyticsOverview(),
     getAnalyticsQuickSummary(),
     getClassroomAdminSummary(),
     getQuestionAttemptsAnalytics(),
     getActivityTimeOverview(14),
+    getLessonStageFunnel(),
   ]);
 
   const avgScore =
@@ -118,6 +122,8 @@ export default async function AdminAnalyticsPage() {
       </section>
 
       <ActivityTimeSection data={activityTime} />
+
+      <LessonStageFunnelSection data={stageFunnel} />
 
       <QuestionAttemptsAnalyticsSection
         totalAttempts={attemptAnalytics.totalAttempts}
