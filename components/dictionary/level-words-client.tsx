@@ -239,19 +239,6 @@ export function LevelWordsClient() {
           {note}
         </p>
       ) : null}
-      {counts.learning > 0 ? (
-        <p className="bs-lvw-note">
-          Энэ түвшнээс {counts.learning} үг цээжилж байна.{" "}
-          <Link href="/games/learn" className="underline">
-            Тоглож цээжлэх →
-          </Link>{" "}
-          ·{" "}
-          <Link href="/review/words" className="underline">
-            Миний үгс
-          </Link>
-        </p>
-      ) : null}
-
       {words == null ? (
         <p className="py-10 text-center text-sm text-[var(--app-muted)]">Ачааллаж байна…</p>
       ) : visible.length === 0 ? (
@@ -305,6 +292,20 @@ export function LevelWordsClient() {
           ) : null}
         </>
       )}
+      {counts.learning > 0 ? (
+        <div className="bs-lvw-play">
+          <span className="bs-lvw-play-count">
+            ♥ {counts.learning} үг сонгосон
+          </span>
+          {counts.learning >= 2 ? (
+            <Link href={`/games/learn?mylevel=${level}`} className="bs-lvw-play-btn">
+              ▶ Тоглож цээжлэх
+            </Link>
+          ) : (
+            <span className="bs-lvw-play-hint">Тоглохын тулд 2+ үг сонго</span>
+          )}
+        </div>
+      ) : null}
     </MobileAppShell>
   );
 }

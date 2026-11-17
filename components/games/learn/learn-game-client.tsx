@@ -105,7 +105,7 @@ export function LearnGameClient() {
       if (!alive) return;
       setLoggedIn(res.loggedIn);
       setMyWords(res.words);
-      if (res.words.length >= 4) setSource("mine");
+      if (res.words.length >= 4 || params.get("mylevel")) setSource("mine");
     });
     return () => {
       alive = false;
@@ -127,9 +127,16 @@ export function LearnGameClient() {
     return c;
   }, [myWords]);
 
+  // ?mylevel=5 — «HSK түвшний үгс» хуудаснаас: зөвхөн тэр түвшний зүрхэлсэн үгсээр тоглоно.
+  const myLevel = params.get("mylevel");
   const mineSelected = useMemo(
-    () => (myWords ?? []).filter((w) => origins.includes(w.origin) && (!onlyDue || w.due)),
-    [myWords, origins, onlyDue]
+    () => {
+        const all = myWords ?? [];
+        const byLevel = myLevel ? all.filter((w) => String(w.hsk_level ?? "") === myLevel) : [];
+        if (byLevel.length >= 2) return byLevel;
+        return all.filter((w) => origins.includes(w.origin) && (!onlyDue || w.due));
+      },
+    [myWords, origins, onlyDue, myLevel]
   );
 
   /* ---------- тоглолт эхлүүлэх ---------- */

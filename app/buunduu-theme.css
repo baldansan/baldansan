@@ -1735,3 +1735,38 @@ html[data-theme="dark"] .bs-tn--pending .bs-tn-verdict-title{color:#fbbf24}
 .bs-mem-all-link{display:block;margin:0 0 12px;padding:10px 14px;border:1px dashed var(--bs-green);border-radius:14px;background:var(--bs-card);font-size:13px;font-weight:800;color:var(--bs-green-700);text-decoration:none}
 @media (min-width:700px){.bs-mem-map{grid-template-columns:repeat(5,minmax(0,1fr))}}
 html[data-theme="dark"] .bs-mem-map-todo .bs-mem-map-circle{background:rgba(255,255,255,.06)}
+
+.bs-mem-chip-link{display:flex;align-items:center;justify-content:center;text-decoration:none;border-color:var(--bs-green)!important;color:var(--bs-green-700)!important}
+.bs-lvw-list{padding-bottom:130px}
+.bs-lvw-play{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(146px + env(safe-area-inset-bottom,0px));z-index:40;display:flex;align-items:center;gap:12px;width:min(560px,calc(100vw - 24px));padding:10px 12px 10px 16px;border-radius:18px;background:var(--bs-card);border:1px solid var(--bs-green);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.bs-lvw-play-count{flex:1;min-width:0;font-size:13px;font-weight:800;color:var(--bs-ink)}
+.bs-lvw-play-list{margin-left:8px;font-size:11px;font-weight:700;color:var(--bs-muted);text-decoration:underline}
+.bs-lvw-play-btn{flex-shrink:0;white-space:nowrap;display:inline-flex;align-items:center;min-height:42px;padding:0 16px;border-radius:999px;background:var(--bs-green);color:#fff;font-size:14px;font-weight:800;text-decoration:none}
+.bs-lvw-play-hint{font-size:11px;font-weight:700;color:var(--bs-muted)}
+@media (min-width:1024px){.bs-lvw-play{bottom:24px}}
+
+/* Танилцуулга (/tanilts + анхны удаагийн цонх) */
+.bs-intro{display:flex;flex-direction:column;gap:14px;max-width:560px;margin:0 auto}
+.bs-intro-hero{text-align:center}
+.bs-intro-img{display:block;width:100%;height:auto;border-radius:16px;background:#d8f5e2}
+.bs-intro-h1{margin:14px 0 6px;font-size:24px;font-weight:800;color:var(--bs-ink)}
+.bs-intro-lead{margin:0;font-size:15px;line-height:1.5;color:var(--bs-ink)}
+.bs-intro-free{display:inline-block;margin:12px 0 0;padding:8px 16px;border-radius:999px;background:var(--bs-green);color:#fff;font-size:15px;font-weight:800}
+.bs-intro-sub{margin:14px 0 0;font-size:14px;font-weight:800;color:var(--bs-muted)}
+.bs-intro-card{padding:12px;border-radius:20px;background:var(--bs-card);border:1px solid var(--bs-green-100)}
+.bs-intro-h2{margin:12px 4px 4px;font-size:18px;font-weight:800;color:var(--bs-ink)}
+.bs-intro-text{margin:0 4px;font-size:14.5px;line-height:1.55;color:var(--bs-ink)}
+.bs-intro-link{display:inline-flex;align-items:center;min-height:40px;margin:10px 4px 2px;padding:0 14px;border-radius:999px;border:1.5px solid var(--bs-green);color:var(--bs-green-700);font-size:14px;font-weight:800;text-decoration:none}
+.bs-intro-card--thanks{border-color:var(--bs-green);border-width:2px}
+.bs-intro-final{margin:12px 4px 4px;font-size:17px;font-weight:800;color:var(--bs-green-700)}
+.bs-intro-page{min-height:100vh;padding:20px 16px 40px;background:var(--bs-bg,#f4fbf6)}
+.bs-intro-start{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;border:0;border-radius:16px;background:var(--bs-green);color:#fff;font-size:17px;font-weight:800;cursor:pointer;text-decoration:none}
+.bs-intro-start--page{max-width:560px;margin:18px auto 0}
+.bs-intro-overlay{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.55)}
+.bs-intro-sheet{position:relative;display:flex;flex-direction:column;width:100%;height:100%;max-width:600px;background:var(--bs-bg,#f4fbf6)}
+@media (min-width:640px){.bs-intro-sheet{height:min(92vh,900px);border-radius:24px;overflow:hidden}}
+.bs-intro-scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:calc(16px + env(safe-area-inset-top,0px)) 16px 16px}
+.bs-intro-foot{padding:10px 16px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--bs-green-100);background:var(--bs-card)}
+.bs-intro-x{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:10px;z-index:2;width:38px;height:38px;border:0;border-radius:999px;background:rgba(0,0,0,.45);color:#fff;font-size:16px;font-weight:800;cursor:pointer}
+html[data-theme="dark"] .bs-intro-page,html[data-theme="dark"] .bs-intro-sheet{background:#0f1512}
+html[data-theme="dark"] .bs-intro-link,html[data-theme="dark"] .bs-intro-final{color:#5fdc93}

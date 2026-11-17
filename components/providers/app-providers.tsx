@@ -10,6 +10,7 @@ import { UiTranslator } from "@/components/i18n/ui-translator";
 import { PendingClassJoin } from "@/components/classroom/pending-class-join";
 import { ThemeController } from "@/components/theme/theme-controller";
 import { HanziFontLoader } from "@/components/theme/hanzi-font-loader";
+import { FirstVisitIntro } from "@/components/intro/first-visit-intro";
 import { CelebrationLayer } from "@/components/celebrate/celebration-layer";
 
 export function AppProviders({ children }: { children: ReactNode }) {
@@ -24,6 +25,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
         <ReportIssueLink />
         <UiTranslator />
         <PendingClassJoin />
+        <FirstVisitIntro />
         <FloatingLocaleToggle />
       </GlobalAudioProvider>
     </ActiveHskLevelProvider>
