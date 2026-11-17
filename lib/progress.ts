@@ -410,18 +410,50 @@ export function countStartedFromStatusMap(
     .length;
 }
 
+/** Хичээлийн замын нийт үе (зорилго · үг · эх · дүрэм · дасгал · сорил · дүгнэлт). */
+const LESSON_PATH_STAGE_TOTAL = 7;
+
+function stagePercent(stageCount: number, status: LessonStatus): number {
+  if (status === "completed") return 100;
+  if (stageCount <= 0) return 0;
+  return Math.min(95, Math.round((stageCount / LESSON_PATH_STAGE_TOTAL) * 100));
+}
+
+function localStageCount(lessonId: string): number {
+  if (typeof window === "undefined") return 0;
+  try {
+    const raw = window.localStorage.getItem(`bs:lesson-path:${lessonId}`);
+    if (!raw) return 0;
+    const parsed = JSON.parse(raw) as { completedStageIds?: unknown };
+    return Array.isArray(parsed.completedStageIds) ? parsed.completedStageIds.length : 0;
+  } catch {
+    return 0;
+  }
+}
+
 export async function getLessonProgressMapSmart(
   lessonIds: string[]
 ): Promise<{
   byLesson: Record<string, LessonStatus>;
+  /** Хичээл бүрийн үзсэн хувь (0–100) — дууссан үеийн тоогоор. */
+  percentByLesson: Record<string, number>;
   source: LessonProgressSource;
 }> {
   const byLesson = buildLocalLessonStatusMap(lessonIds);
+  const stageCounts: Record<string, number> = {};
+  for (const id of lessonIds) stageCounts[id] = localStageCount(id);
+  const percents = (statusMap: Record<string, LessonStatus>) => {
+    const out: Record<string, number> = {};
+    for (const id of lessonIds) {
+      out[id] = stagePercent(stageCounts[id] ?? 0, statusMap[id] ?? "not_started");
+    }
+    return out;
+  };
 
   const { getCurrentUser } = await import("@/lib/supabase/auth");
   const { data: user } = await getCurrentUser();
   if (!user?.id) {
-    return { byLesson, source: "local" };
+    return { byLesson, percentByLesson: percents(byLesson), source: "local" };
   }
 
   const { getUserLessonProgress, normalizeLessonStatus } = await import(
@@ -433,20 +465,25 @@ export async function getLessonProgressMapSmart(
       "[progress] Supabase lesson progress fetch failed; using local.",
       error
     );
-    return { byLesson, source: "local" };
+    return { byLesson, percentByLesson: percents(byLesson), source: "local" };
   }
 
   if (!data?.length) {
-    return { byLesson, source: "local" };
+    return { byLesson, percentByLesson: percents(byLesson), source: "local" };
   }
 
+  const wanted = new Set(lessonIds);
   const merged = { ...byLesson };
   for (const row of data) {
-    if (lessonIds.includes(row.lesson_id)) {
+    if (wanted.has(row.lesson_id)) {
       merged[row.lesson_id] = normalizeLessonStatus(row.status);
+      stageCounts[row.lesson_id] = Math.max(
+        stageCounts[row.lesson_id] ?? 0,
+        row.completed_stages?.length ?? 0
+      );
     }
   }
-  return { byLesson: merged, source: "supabase" };
+  return { byLesson: merged, percentByLesson: percents(merged), source: "supabase" };
 }
 
 export async function getLessonStatusSmart(
