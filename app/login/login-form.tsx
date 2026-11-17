@@ -1,5 +1,6 @@
 "use client";
 
+import { features } from "@/lib/features";
 import Link from "next/link";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
@@ -221,12 +222,14 @@ export function LoginForm() {
               </Link>
             </p>
 
+{features.kidsYct ? (
             <Link
               href="/kids"
               className="flex min-h-[44px] w-full items-center justify-center rounded-full border border-amber-200 bg-amber-50 px-6 py-3 text-sm font-semibold text-amber-900"
             >
               🧒 {tr(locale, "Хүүхэд нэвтрэх")}
             </Link>
+            ) : null}
           </form>
         </MobileCard>
       )}

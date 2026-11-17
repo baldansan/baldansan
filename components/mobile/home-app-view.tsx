@@ -208,7 +208,9 @@ export function HomeAppView({
     try {
       const savedSeries = window.localStorage.getItem("bs:homeSeries");
       const series: BookSeries =
-        savedSeries === "fazhan" || savedSeries === "yct" ? savedSeries : "standard";
+        savedSeries === "fazhan" || (savedSeries === "yct" && yctCatalog.length > 0)
+          ? savedSeries
+          : "standard";
       const savedCatalog =
         series === "fazhan" ? fazhanCatalog : series === "yct" ? yctCatalog : catalog;
       setActiveSeries(series);

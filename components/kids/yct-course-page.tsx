@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+import { features } from "@/lib/features";
 import { FazhanCoursePage } from "@/components/courses/fazhan-course-page";
 import { KidsCourseHome } from "@/components/kids/kids-course-home";
 import { getCourseContentById, getPublicLessonSummariesByCourseId } from "@/lib/content";
@@ -10,6 +12,7 @@ type Props = { courseId: string; searchParams: Promise<{ view?: string }> };
  * `?view=list` бол багш/эцэг эхийн ердийн жагсаалт.
  */
 export async function YctCoursePage({ courseId, searchParams }: Props) {
+  if (!features.kidsYct) redirect("/nom");
   const { view } = await searchParams;
   if (view === "list") return <FazhanCoursePage courseId={courseId} />;
 

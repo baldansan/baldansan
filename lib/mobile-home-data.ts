@@ -1,3 +1,4 @@
+import { features } from "@/lib/features";
 import {
   buildFazhanCourseCatalog,
   buildYctCourseCatalog,
@@ -160,9 +161,11 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
       Promise.all(
         FAZHAN_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
       ),
-      Promise.all(
-        YCT_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
-      ),
+      features.kidsYct
+        ? Promise.all(
+            YCT_HOME_LEVELS.map((level) => loadFazhanCourseForHome(level.courseId))
+          )
+        : Promise.resolve([] as Awaited<ReturnType<typeof loadFazhanCourseForHome>>[]),
       loadLibraryPreviewForHome(),
       loadBichlegSuggestionForHome(),
     ]);
@@ -200,7 +203,7 @@ export async function loadMobileHomeData(): Promise<MobileHomeData> {
   for (let i = 0; i < YCT_HOME_LEVELS.length; i++) {
     yctByCourseId[YCT_HOME_LEVELS[i]!.courseId] = yctLevels[i];
   }
-  const yctCatalog = buildYctCourseCatalog(yctByCourseId);
+  const yctCatalog = features.kidsYct ? buildYctCourseCatalog(yctByCourseId) : [];
 
   return {
     catalog,

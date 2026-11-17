@@ -21,6 +21,7 @@ import { ProfileStatsRail } from "@/components/profile/profile-stats-rail";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
+import { features } from "@/lib/features";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import { hasSupabaseConfig, signOut } from "@/lib/supabase/auth";
 import { ProfileSrsStats } from "@/components/profile/profile-srs-stats";
@@ -455,7 +456,9 @@ export function ProfileAppView() {
       <p className="bs-tm-sec mt-5">{tr(locale, "Тохиргоо")}</p>
       <ReminderQuickRow />
       <LinkRow href="/join" icon="🏫" title={tr(locale, "Ангид орох")} />
-      <LinkRow href="/family" icon="👨‍👩‍👧" title={tr(locale, "Хүүхдийн бүртгэл")} />
+      {features.kidsYct ? (
+        <LinkRow href="/family" icon="👨‍👩‍👧" title={tr(locale, "Хүүхдийн бүртгэл")} />
+      ) : null}
       <details className="bs-tm-card mt-2" style={{ display: "block" }}>
         <summary className="flex cursor-pointer list-none items-center gap-3 [&::-webkit-details-marker]:hidden">
           <span className="bs-tm-card-ic" aria-hidden>✏️</span>
