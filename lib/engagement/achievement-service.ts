@@ -129,8 +129,8 @@ export async function checkDueRemindersAndNotify(): Promise<number> {
     addLocalNotification({
       notificationType: "reminder",
       title: reminder.title,
-      message: "In-app study reminder — цаг боллоо.",
-      actionHref: "/courses/hsk5",
+      message: "Сурах цаг боллоо — өнөөдрийн үгээ цээжилье.",
+      actionHref: "/study-plan",
     });
 
     if (hasSupabaseConfig) {
@@ -139,8 +139,8 @@ export async function checkDueRemindersAndNotify(): Promise<number> {
         await createUserNotification({
           notificationType: "reminder",
           title: reminder.title,
-          message: "In-app study reminder — цаг боллоо.",
-          actionHref: "/courses/hsk5",
+          message: "Сурах цаг боллоо — өнөөдрийн үгээ цээжилье.",
+          actionHref: "/study-plan",
         });
       }
     }

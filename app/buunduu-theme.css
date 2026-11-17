@@ -1770,3 +1770,41 @@ html[data-theme="dark"] .bs-mem-map-todo .bs-mem-map-circle{background:rgba(255,
 .bs-intro-x{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:10px;z-index:2;width:38px;height:38px;border:0;border-radius:999px;background:rgba(0,0,0,.45);color:#fff;font-size:16px;font-weight:800;cursor:pointer}
 html[data-theme="dark"] .bs-intro-page,html[data-theme="dark"] .bs-intro-sheet{background:#0f1512}
 html[data-theme="dark"] .bs-intro-link,html[data-theme="dark"] .bs-intro-final{color:#5fdc93}
+
+/* Миний сурах систем */
+.bs-mss-img{float:right;width:88px;height:88px;object-fit:contain;margin:-4px -4px 0 8px}
+.bs-mss-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.bs-mss-edit{border:1px solid var(--bs-line);border-radius:999px;background:var(--bs-card);padding:6px 12px;font-size:12px;font-weight:800;color:var(--bs-ink);cursor:pointer}
+.bs-mss-rows{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.bs-mss-rows li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:var(--bs-ink)}
+.bs-mss-q{margin:18px 0 8px;font-size:14px;font-weight:800;color:var(--bs-ink)}
+.bs-mss-levels{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.bs-mss-chips,.bs-mss-days{display:flex;flex-wrap:wrap;gap:8px}
+.bs-mss-chip,.bs-mss-day{min-height:42px;padding:0 14px;border-radius:12px;border:1.5px solid var(--bs-line);background:var(--bs-card);font-size:14px;font-weight:800;color:var(--bs-ink);cursor:pointer}
+.bs-mss-day{padding:0;width:42px}
+.bs-mss-days{margin-top:8px}
+.bs-mss-chip--on{border-color:var(--bs-green);background:var(--bs-green-50);color:var(--bs-green-800)}
+.bs-mss-input{display:block;width:100%;margin-top:8px;min-height:46px;padding:0 12px;border-radius:12px;border:1.5px solid var(--bs-line);background:var(--bs-card);font-size:16px;font-weight:700;color:var(--bs-ink)}
+.bs-mss-num{width:76px;min-height:42px;padding:0 10px;border-radius:12px;border:1.5px solid var(--bs-line);background:var(--bs-card);font-size:16px;font-weight:800;color:var(--bs-ink)}
+.bs-mss-calc{margin:12px 0 0;padding:10px 12px;border-radius:12px;background:var(--bs-green-50);font-size:13px;line-height:1.5;font-weight:600;color:var(--bs-green-800)}
+.bs-mss-calc--warn{background:#FFF4E0;color:#8A5300}
+.bs-mss-fix{border:0;background:none;padding:0;font:inherit;font-weight:800;text-decoration:underline;color:inherit;cursor:pointer}
+.bs-mss-note{margin:10px 0 0;font-size:12px;font-weight:700;color:var(--bs-muted)}
+.bs-mss-toggle{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700;color:var(--bs-ink)}
+.bs-mss-toggle input{width:20px;height:20px;accent-color:var(--bs-green)}
+.bs-mss-actions{display:flex;gap:8px;margin-top:20px}
+.bs-mss-save{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;border:0;border-radius:16px;background:var(--bs-green);color:#fff;font-size:15px;font-weight:800;text-decoration:none;cursor:pointer}
+.bs-mss-save:disabled{opacity:.5}
+.bs-mss-save--full{width:100%;margin-top:14px}
+.bs-mss-cancel{min-height:48px;padding:0 16px;border-radius:16px;border:1px solid var(--bs-line);background:var(--bs-card);font-size:14px;font-weight:700;color:var(--bs-ink);cursor:pointer}
+.bs-mss-prompt{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding:12px;border-radius:18px;border:1.5px dashed var(--bs-green);background:var(--bs-green-50);text-decoration:none}
+.bs-mss-prompt-ico{font-size:26px}
+.bs-mss-prompt-body{flex:1;min-width:0;display:flex;flex-direction:column}
+.bs-mss-prompt-title{font-size:14px;font-weight:800;color:var(--bs-green-800)}
+.bs-mss-prompt-sub{font-size:12px;font-weight:600;color:var(--bs-muted)}
+.bs-mss-prompt-arrow{font-size:20px;color:var(--bs-green-700)}
+html[data-theme="dark"] .bs-mss-chip--on{background:#14301f;color:#7fe3a8}
+html[data-theme="dark"] .bs-mss-calc{background:#14301f;color:#9be8bb}
+html[data-theme="dark"] .bs-mss-calc--warn{background:#3a2a10;color:#ffd08a}
+html[data-theme="dark"] .bs-mss-prompt{background:#11241a}
+html[data-theme="dark"] .bs-mss-prompt-title{color:#7fe3a8}

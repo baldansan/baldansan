@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MyStudySystem } from "@/components/engagement/my-study-system";
 import { ExamGoalCard } from "@/components/engagement/exam-goal-card";
 import { StudyPlanCircularProgress } from "@/components/engagement/study-plan-circular-progress";
 import { StudyPlanTablerIcon } from "@/components/engagement/study-plan-tabler-icon";
@@ -17,6 +18,7 @@ export function StudyPlanContent({ data }: Props) {
         <p className="bs-study-plan-sub">
           Нэвтэрсний дараа өнөөдрийн хичээл, давталт, бичлэгийг эндээс харна.
         </p>
+        <MyStudySystem />
         <Link href="/login" className="bs-study-plan-login-btn">
           Нэвтрэх
         </Link>
@@ -62,7 +64,9 @@ export function StudyPlanContent({ data }: Props) {
         <p className="bs-study-plan-sub">{data.levelLabel}</p>
       </header>
 
-      <ExamGoalCard />
+      <MyStudySystem />
+
+      <ExamGoalCard hideWhenUnset />
 
       {goal ? (
         <section className="bs-study-plan-goal-card">

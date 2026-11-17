@@ -47,6 +47,7 @@ import {
 import { HomeTodaySection } from "@/components/home/home-today-section";
 import { TeacherAssignmentBanner } from "@/components/home/teacher-assignment-banner";
 import { ExamGoalCard } from "@/components/engagement/exam-goal-card";
+import { MyStudySystem } from "@/components/engagement/my-study-system";
 import { HomeQuickSearch } from "@/components/home/home-quick-search";
 import { QuickStartCard } from "@/components/home/quick-start-card";
 import type { BichlegSuggestion } from "@/lib/mobile-home-data";
@@ -635,6 +636,7 @@ export function HomeAppView({
 
       {/* Шалгалтын зорилго тавьсан бол — хэдэн өдөр үлдсэн, хурд */}
       <ExamGoalCard variant="compact" />
+      <MyStudySystem variant="prompt" />
 
       {/* Өнөөдөр: даалгавар · давтах · бичлэг */}
       <HomeTodaySection

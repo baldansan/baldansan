@@ -1,9 +1,6 @@
-import { RemindersView } from "@/components/engagement/reminders-view";
+import { redirect } from "next/navigation";
 
-export const metadata = {
-  title: "Study reminders — Бөөндөө Сурцгаая",
-};
-
+/** Сануулгын тохиргоо «Миний сурах систем» (/study-plan) рүү нэгдсэн. */
 export default function RemindersPage() {
-  return <RemindersView />;
+  redirect("/study-plan");
 }

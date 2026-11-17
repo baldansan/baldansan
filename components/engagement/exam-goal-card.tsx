@@ -20,6 +20,7 @@ import {
 type Props = {
   /** "full" — төлөвлөгөөний хуудас (зорилго тавих маягттай); "compact" — нүүрт, зорилготой үед л. */
   variant?: "full" | "compact";
+  hideWhenUnset?: boolean;
 };
 
 type Loaded = { goal: ExamGoal; plan: ExamPlan } | null;
@@ -46,7 +47,7 @@ async function buildPlan(goal: ExamGoal): Promise<ExamPlan> {
   return computeExamPlan(goal, ids, done);
 }
 
-export function ExamGoalCard({ variant = "full" }: Props) {
+export function ExamGoalCard({ variant = "full", hideWhenUnset = false }: Props) {
   const [state, setState] = useState<Loaded>(null);
   const [ready, setReady] = useState(false);
   const [editing, setEditing] = useState(false);
@@ -149,6 +150,8 @@ export function ExamGoalCard({ variant = "full" }: Props) {
 
   if (editing || !state) {
     if (!editing) {
+      // /study-plan дээр «Миний сурах систем» зорилгыг тавьдаг — давхар урилга гаргахгүй.
+      if (hideWhenUnset) return null;
       return (
         <section className="bs-study-plan-goal-card">
           {/* eslint-disable-next-line @next/next/no-img-element */}
