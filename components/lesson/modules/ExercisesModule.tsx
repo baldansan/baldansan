@@ -2,6 +2,7 @@
 // components/lesson/modules/ExercisesModule.tsx
 // "exercises_textbook" / "exercises_workbook" модуль — интерактив дасгал.
 
+import { useAutoAdvance } from "@/lib/hooks/use-auto-advance";
 import {
   resolveExerciseImageUrl,
   type LessonPathImage,
@@ -652,7 +653,7 @@ export default function ExercisesModule({
     const isLast = qi >= totalSteps - 1;
     register({
       visible: true,
-      label: isLast ? "Дүн харах →" : "Дараагийн дасгал →",
+      label: isLast ? "Дүн харах →" : checked && correct && q?.kind !== "listening_group" ? "Зөв ✓ дараагийнх руу…" : "Дараагийн дасгал →",
       disabled: !canAdvanceCurrentStep,
       action: "next-exercise",
       onAction: () => {
@@ -672,6 +673,7 @@ export default function ExercisesModule({
     q,
     canAdvanceCurrentStep,
     checked,
+    correct,
     groupAllChecked,
   ]);
 
@@ -681,6 +683,19 @@ export default function ExercisesModule({
       : source === "textbook"
         ? "Дасгал"
         : "Дасгал (ном)";
+
+  // Зөв хариулбал «Дараагийн дасгал» дарахгүйгээр өөрөө шилжинэ; алдсан бол тайлбараа уншихаар зогсоно.
+  const autoNext =
+    totalSteps > 0 &&
+    phase === "active" &&
+    !showScrambleGate &&
+    !done &&
+    q != null &&
+    q.kind !== "listening_group" &&
+    checked &&
+    correct &&
+    qi < totalSteps - 1;
+  useAutoAdvance(autoNext, qi, advanceSingle);
 
   if (totalSteps === 0) {
     return (

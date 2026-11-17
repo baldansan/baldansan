@@ -1,5 +1,6 @@
 "use client";
 
+import { useAutoAdvance } from "@/lib/hooks/use-auto-advance";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { LessonQuizSentenceOrder } from "@/components/lesson/lesson-quiz-sentence-order";
 import { LessonStepQuiz } from "@/components/lesson-player/lesson-step-quiz";
@@ -289,6 +290,12 @@ export function LessonPathQuizStage({
     );
   }
 
+  // Зөв хариулбал өөрөө дараагийн асуулт руу шилжинэ (сүүлийн асуултаас бусад).
+  const autoNext =
+    hydrated && revealed && !finished && Boolean(current) && currentIndex < total - 1 &&
+    isAnswerCorrect(current!, selected);
+  useAutoAdvance(autoNext, currentIndex, handleNextQuestion);
+
   if (!hydrated) {
     return (
       <p className="py-8 text-center text-sm text-[var(--bs-muted)]">
@@ -436,7 +443,7 @@ export function LessonPathQuizStage({
             onClick={handleNextQuestion}
             style={{ marginTop: 8 }}
           >
-            {currentIndex >= total - 1 ? "Сорил дуусгах" : "Дараагийн асуулт →"}
+            {currentIndex >= total - 1 ? "Сорил дуусгах" : autoNext ? "Зөв ✓ дараагийнх руу…" : "Дараагийн асуулт →"}
           </button>
         </>
       ) : null}

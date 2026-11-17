@@ -1,5 +1,6 @@
 "use client";
 
+import { useAutoAdvance } from "@/lib/hooks/use-auto-advance";
 import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -240,6 +241,11 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
   }, [question, revealed, record]);
 
   // ---------------------------------------------------------------- pick ---
+  // Зөв хариулбал «Дараагийн асуулт» дарахгүйгээр өөрөө шилжинэ; алдсан бол тайлбараа уншихаар зогсоно.
+  const autoNext =
+    phase === "run" && revealed && feedback?.isCorrect === true && index + 1 < activeQuestions.length;
+  useAutoAdvance(autoNext, index, goNext);
+
   if (phase === "pick" || !activeGroup || !question) {
     return (
       <MobileAppShell activeTab="study" showBottomNav desktopWidth="wide">
@@ -467,7 +473,9 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
             >
               {index + 1 >= activeQuestions.length
                 ? "Дүнг харах"
-                : "Дараагийн асуулт →"}
+                : autoNext
+                  ? "Зөв ✓ дараагийнх руу…"
+                  : "Дараагийн асуулт →"}
             </button>
           )}
         </div>
