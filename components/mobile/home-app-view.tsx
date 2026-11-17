@@ -662,13 +662,32 @@ export function HomeAppView({
       {/* Багшийн даалгавар — ЗААВАЛ; хийж дуустал хамгийн дээр байна */}
       <TeacherAssignmentBanner loggedIn={loggedIn} />
 
+      {/* Гол үйлдэл: хичээлээ эхлэх / үргэлжлүүлэх — гүйлгэхгүйгээр харагдана
+          (өмнө нь 6 картын доор байсан тул шинэ хүн хаанаас эхлэхээ олохгүй гарч байв). */}
+      {activeCourse?.available && lessonIds.length > 0 ? (
+        <PrefetchLink href={continueHref} eager={continueResolved} className="bs-tm-continue bs-tm-continue--main">
+          <span className="bs-tm-continue-ic" aria-hidden>
+            ▶
+          </span>
+          <span className="min-w-0 flex-1">
+            <p className="bs-tm-continue-kicker">
+              {totals.completed > 0 || streak > 0 ? tr(locale, "Үргэлжлүүлэх") : tr(locale, "Эндээс эхэл")}
+            </p>
+            <p className="bs-tm-continue-title">{continueTitle}</p>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>
+            ›
+          </span>
+        </PrefetchLink>
+      ) : null}
+
+
       {/* 60 секундын онбординг — шинэ хэрэглэгчид. Гүйлгэлгүйгээр харагдахаар хамгийн дээр
           (явцтай эсвэл дуусгасан хүнд өөрөө нуугдана). */}
       <QuickStartCard loggedIn={loggedIn} hasProgress={totals.completed > 0 || streak > 0} />
 
       {/* Шалгалтын зорилго тавьсан бол — хэдэн өдөр үлдсэн, хурд */}
       <ExamGoalCard variant="compact" />
-      <InstallAppGuide />
       <MyStudySystem variant="prompt" />
       {selectedLang !== "ko" ? (
         <Link href="/chat" className="bs-home-chat">
@@ -698,6 +717,8 @@ export function HomeAppView({
 
       {/* Хурдан хайлт (Pleco маяг) */}
       <HomeQuickSearch />
+
+      <InstallAppGuide />
 
       {/* Хүүхдийн горим эсвэл зам эхэлсэн бол — хамгийн эхний карт */}
       <KidPathHomeCard />
@@ -732,21 +753,6 @@ export function HomeAppView({
       ) : null}
 
       <OpenClassQuizBanner />
-
-      {activeCourse?.available && lessonIds.length > 0 ? (
-        <PrefetchLink href={continueHref} eager={continueResolved} className="bs-tm-continue">
-          <span className="bs-tm-continue-ic" aria-hidden>
-            ▶
-          </span>
-          <span className="min-w-0 flex-1">
-            <p className="bs-tm-continue-kicker">{tr(locale, "Үргэлжлүүлэх")}</p>
-            <p className="bs-tm-continue-title">{continueTitle}</p>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>
-            ›
-          </span>
-        </PrefetchLink>
-      ) : null}
 
       {pickerEntries.length > 1 ? (
         <div id="home-book-picker">

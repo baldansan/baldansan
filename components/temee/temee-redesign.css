@@ -1734,3 +1734,16 @@ html[data-theme="dark"] .bs-tm-continue--quick {
 html[data-theme="dark"] .bs-tm-bdg--on {
   background: #1e4229 !important;
 }
+
+/* Нүүрний гол үйлдэл — хичээлээ эхлэх / үргэлжлүүлэх (бусад картаас тод) */
+.bs-tm-continue--main {
+  background: linear-gradient(135deg, #16a34a, #059669) !important;
+  border-color: transparent !important;
+  box-shadow: 0 10px 24px -12px rgba(5, 150, 105, 0.75);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.bs-tm-continue--main .bs-tm-continue-kicker { color: rgba(255, 255, 255, 0.85) !important; }
+.bs-tm-continue--main .bs-tm-continue-title { color: #fff !important; font-size: 1.02rem; }
+.bs-tm-continue--main .bs-tm-continue-ic { background: rgba(255, 255, 255, 0.22) !important; color: #fff; }
+.bs-tm-continue--main .bs-tm-card-chev { color: #fff !important; }
