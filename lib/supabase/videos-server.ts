@@ -171,12 +171,10 @@ async function fetchVideoSeriesCatalogWith(
   });
 }
 
-export async function fetchVideoSeriesById(
+async function fetchVideoSeriesByIdWith(
+  client: SupabaseClient,
   seriesId: string
 ): Promise<VideoSeriesInfo | null> {
-  if (!hasServerSupabaseConfig) return null;
-  const client = await createServerSupabaseClient();
-  if (!client) return null;
 
   const primary = await client
     .from("video_series")
@@ -199,6 +197,30 @@ export async function fetchVideoSeriesById(
 
   if (error || !row) return null;
   return mapSeries(row);
+}
+
+/** Нийтийн агуулга — anon клиент, Data Cache (tag: catalog:videos); хоосон бол хэрэглэгчийн клиентээр. */
+const fetchVideoSeriesByIdCached = unstable_cache(
+  async (seriesId: string): Promise<VideoSeriesInfo | null> => {
+    const client = createAnonServerSupabaseClient();
+    if (!client) return null;
+    return fetchVideoSeriesByIdWith(client, seriesId);
+  },
+  ["public-fetchVideoSeriesById"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.videos] }
+);
+
+export async function fetchVideoSeriesById(seriesId: string): Promise<VideoSeriesInfo | null> {
+  if (!hasServerSupabaseConfig) return null;
+  try {
+    const cached = await fetchVideoSeriesByIdCached(seriesId);
+    if (cached) return cached;
+  } catch {
+    // кэш ажиллахгүй бол шууд уншина
+  }
+  const client = await createServerSupabaseClient();
+  if (!client) return null;
+  return fetchVideoSeriesByIdWith(client, seriesId);
 }
 
 async function countOrphanVideosWith(client: SupabaseClient): Promise<number> {
@@ -229,12 +251,10 @@ export const countOrphanVideosCached = unstable_cache(
   { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.videos] }
 );
 
-export async function fetchSeriesEpisodes(
+async function fetchSeriesEpisodesWith(
+  client: SupabaseClient,
   seriesId: string
 ): Promise<VideoEpisodeItem[]> {
-  if (!hasServerSupabaseConfig) return [];
-  const client = await createServerSupabaseClient();
-  if (!client) return [];
 
   const primary = await client
     .from("videos")
@@ -267,6 +287,30 @@ export async function fetchSeriesEpisodes(
   if (!rows) return [];
 
   return rows.map((row) => mapVideoEpisode(row));
+}
+
+/** Нийтийн агуулга — anon клиент, Data Cache (tag: catalog:videos); хоосон бол хэрэглэгчийн клиентээр. */
+const fetchSeriesEpisodesCached = unstable_cache(
+  async (seriesId: string): Promise<VideoEpisodeItem[]> => {
+    const client = createAnonServerSupabaseClient();
+    if (!client) return [];
+    return fetchSeriesEpisodesWith(client, seriesId);
+  },
+  ["public-fetchSeriesEpisodes"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.videos] }
+);
+
+export async function fetchSeriesEpisodes(seriesId: string): Promise<VideoEpisodeItem[]> {
+  if (!hasServerSupabaseConfig) return [];
+  try {
+    const cached = await fetchSeriesEpisodesCached(seriesId);
+    if (cached.length > 0) return cached;
+  } catch {
+    // кэш ажиллахгүй бол шууд уншина
+  }
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+  return fetchSeriesEpisodesWith(client, seriesId);
 }
 
 export async function fetchOrphanEpisodes(): Promise<VideoEpisodeItem[]> {
@@ -302,12 +346,10 @@ export async function fetchOrphanEpisodes(): Promise<VideoEpisodeItem[]> {
   return rows.map((row) => mapVideoEpisode(row));
 }
 
-export async function fetchVideosBySeriesId(
+async function fetchVideosBySeriesIdWith(
+  client: SupabaseClient,
   seriesId: string
 ): Promise<VideoRow[]> {
-  if (!hasServerSupabaseConfig) return [];
-  const client = await createServerSupabaseClient();
-  if (!client) return [];
 
   const primary = await client
     .from("videos")
@@ -332,6 +374,30 @@ export async function fetchVideosBySeriesId(
 
   if (error || !rows) return [];
   return rows.map((row) => mapVideo(row));
+}
+
+/** Нийтийн агуулга — anon клиент, Data Cache (tag: catalog:videos); хоосон бол хэрэглэгчийн клиентээр. */
+const fetchVideosBySeriesIdCached = unstable_cache(
+  async (seriesId: string): Promise<VideoRow[]> => {
+    const client = createAnonServerSupabaseClient();
+    if (!client) return [];
+    return fetchVideosBySeriesIdWith(client, seriesId);
+  },
+  ["public-fetchVideosBySeriesId"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.videos] }
+);
+
+export async function fetchVideosBySeriesId(seriesId: string): Promise<VideoRow[]> {
+  if (!hasServerSupabaseConfig) return [];
+  try {
+    const cached = await fetchVideosBySeriesIdCached(seriesId);
+    if (cached.length > 0) return cached;
+  } catch {
+    // кэш ажиллахгүй бол шууд уншина
+  }
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+  return fetchVideosBySeriesIdWith(client, seriesId);
 }
 
 export async function fetchOrphanVideos(): Promise<VideoRow[]> {
@@ -416,12 +482,10 @@ export async function getNextVideoInSeries(
   return list[idx + 1] ?? null;
 }
 
-export async function fetchVideoSubtitles(
+async function fetchVideoSubtitlesWith(
+  client: SupabaseClient,
   videoId: string
 ): Promise<VideoSubtitleRow[]> {
-  if (!hasServerSupabaseConfig) return [];
-  const client = await createServerSupabaseClient();
-  if (!client) return [];
 
   const { data, error } = await client
     .from("video_subtitles")
@@ -431,4 +495,28 @@ export async function fetchVideoSubtitles(
 
   if (error || !data) return [];
   return data.map((row) => mapVideoSubtitleRow(row as Record<string, unknown>));
+}
+
+/** Нийтийн агуулга — anon клиент, Data Cache (tag: catalog:videos); хоосон бол хэрэглэгчийн клиентээр. */
+const fetchVideoSubtitlesCached = unstable_cache(
+  async (videoId: string): Promise<VideoSubtitleRow[]> => {
+    const client = createAnonServerSupabaseClient();
+    if (!client) return [];
+    return fetchVideoSubtitlesWith(client, videoId);
+  },
+  ["public-fetchVideoSubtitles"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.videos] }
+);
+
+export async function fetchVideoSubtitles(videoId: string): Promise<VideoSubtitleRow[]> {
+  if (!hasServerSupabaseConfig) return [];
+  try {
+    const cached = await fetchVideoSubtitlesCached(videoId);
+    if (cached.length > 0) return cached;
+  } catch {
+    // кэш ажиллахгүй бол шууд уншина
+  }
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+  return fetchVideoSubtitlesWith(client, videoId);
 }

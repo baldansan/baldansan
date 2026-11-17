@@ -20,6 +20,7 @@ import {
   fetchLevelLessonIds,
   formatMnDate,
   loadExamGoal,
+  readExamGoal,
   saveExamGoal,
   todayYmd,
   type ExamGoal,
@@ -143,6 +144,12 @@ export function MyStudySystem({ variant = "full" }: Props) {
   const [pushNote, setPushNote] = useState<string | null>(null);
 
   const refresh = useCallback(async () => {
+    if (variant === "prompt") {
+      // Нүүр хуудасны урилга — сүлжээний хүсэлтгүй, зөвхөн төхөөрөмж дээрхийг харна.
+      setIsSet(isStudySystemSet() || Boolean(readExamGoal()));
+      setReady(true);
+      return;
+    }
     const [g, d, rs] = await Promise.all([
       loadExamGoal().catch(() => null),
       getDailyGoalUnified().catch(() => null),
@@ -153,7 +160,7 @@ export function MyStudySystem({ variant = "full" }: Props) {
     setReminder(rs.find((r) => r.reminderType === REMINDER_TYPE && r.enabled) ?? null);
     setIsSet(isStudySystemSet() || Boolean(g));
     setReady(true);
-  }, []);
+  }, [variant]);
 
   useEffect(() => {
     const run = () => void refresh();

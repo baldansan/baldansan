@@ -15,7 +15,7 @@ export const CATALOG_TAG = {
   videos: "catalog:videos",
 } as const;
 
-export const CATALOG_REVALIDATE_SECONDS = 120;
+export const CATALOG_REVALIDATE_SECONDS = 300;
 
 /** Нэг хичээлийн Data Cache tag (`getPublicLessonById`) — admin засварт зөвхөн тэр хичээлийг хуучруулна. */
 export function lessonCacheTag(lessonId: string) {

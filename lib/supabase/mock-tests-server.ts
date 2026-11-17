@@ -125,12 +125,10 @@ export const fetchMockTestsCached = unstable_cache(
   { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.mockTests] }
 );
 
-export async function fetchMockTestById(
+async function fetchMockTestByIdWith(
+  client: SupabaseClient,
   testId: string
 ): Promise<MockTestRow | null> {
-  if (!hasServerSupabaseConfig) return null;
-  const client = await createServerSupabaseClient();
-  if (!client) return null;
 
   const { data, error } = await client
     .from("mock_tests")
@@ -142,12 +140,34 @@ export async function fetchMockTestById(
   return mapTest(data as Record<string, unknown>);
 }
 
-export async function fetchMockTestQuestions(
+/** Нийтийн агуулга — anon клиент, Data Cache (tag: catalog:mockTests); хоосон бол хэрэглэгчийн клиентээр. */
+const fetchMockTestByIdCached = unstable_cache(
+  async (testId: string): Promise<MockTestRow | null> => {
+    const client = createAnonServerSupabaseClient();
+    if (!client) return null;
+    return fetchMockTestByIdWith(client, testId);
+  },
+  ["public-fetchMockTestById"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.mockTests] }
+);
+
+export async function fetchMockTestById(testId: string): Promise<MockTestRow | null> {
+  if (!hasServerSupabaseConfig) return null;
+  try {
+    const cached = await fetchMockTestByIdCached(testId);
+    if (cached) return cached;
+  } catch {
+    // кэш ажиллахгүй бол шууд уншина
+  }
+  const client = await createServerSupabaseClient();
+  if (!client) return null;
+  return fetchMockTestByIdWith(client, testId);
+}
+
+async function fetchMockTestQuestionsWith(
+  client: SupabaseClient,
   testId: string
 ): Promise<MockTestQuestionRow[]> {
-  if (!hasServerSupabaseConfig) return [];
-  const client = await createServerSupabaseClient();
-  if (!client) return [];
 
   const { data, error } = await client
     .from("mock_test_questions")
@@ -157,6 +177,30 @@ export async function fetchMockTestQuestions(
 
   if (error || !data) return [];
   return data.map((row) => mapQuestion(row as Record<string, unknown>));
+}
+
+/** Нийтийн агуулга — anon клиент, Data Cache (tag: catalog:mockTests); хоосон бол хэрэглэгчийн клиентээр. */
+const fetchMockTestQuestionsCached = unstable_cache(
+  async (testId: string): Promise<MockTestQuestionRow[]> => {
+    const client = createAnonServerSupabaseClient();
+    if (!client) return [];
+    return fetchMockTestQuestionsWith(client, testId);
+  },
+  ["public-fetchMockTestQuestions"],
+  { revalidate: CATALOG_REVALIDATE_SECONDS, tags: [CATALOG_TAG.mockTests] }
+);
+
+export async function fetchMockTestQuestions(testId: string): Promise<MockTestQuestionRow[]> {
+  if (!hasServerSupabaseConfig) return [];
+  try {
+    const cached = await fetchMockTestQuestionsCached(testId);
+    if (cached.length > 0) return cached;
+  } catch {
+    // кэш ажиллахгүй бол шууд уншина
+  }
+  const client = await createServerSupabaseClient();
+  if (!client) return [];
+  return fetchMockTestQuestionsWith(client, testId);
 }
 
 /** Олон тестээс сонгосон асуултуудыг id-ээр татна (өдрийн сонсгол, алдааны дэвтэр). */
