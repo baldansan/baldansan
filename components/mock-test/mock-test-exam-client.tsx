@@ -723,7 +723,13 @@ export function MockTestExamClient({
   // Сонсгол: асуулт бүрийн аудио цаг байвал дэлгэц аудиог дагаж шилжинэ.
   const listeningCues =
     showSectionAudio && skillQuestions.every((q) => typeof q.audio_start_sec === "number")
-      ? skillQuestions.map((q) => ({ qNo: q.q_no, start: q.audio_start_sec as number }))
+      ? skillQuestions.map((q, i) => {
+          // Нэг яриан дээр хэд хэдэн асуулт байвал (эхлэх цаг ижил) дараагийнх нь өмнөх асуулт дуусмагц эхэлнэ.
+          const prev = skillQuestions[i - 1];
+          const shared =
+            prev && prev.audio_start_sec === q.audio_start_sec && typeof prev.audio_end_sec === "number";
+          return { qNo: q.q_no, start: shared ? (prev.audio_end_sec as number) : (q.audio_start_sec as number) };
+        })
       : undefined;
 
   // Унших / бичих: нэг асуултад ногдох хугацаа ба төлөвлөгөөт хурд.
