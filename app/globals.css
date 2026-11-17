@@ -1837,3 +1837,17 @@ html[data-theme="dark"] .app-lesson-media-placeholder { background: #212b23 !imp
 html[data-theme="dark"] .bs-tm-avatar-initial { background: linear-gradient(135deg, #16311f, #1e4229) !important; color: #7ee3a8 !important; }
 
 }
+
+/* Групп чатын 7 хоногийн сорилт */
+.bs-chal{padding:14px 16px;border-radius:20px;background:linear-gradient(135deg,#fff7e0,#ffe9b8);border:2px solid #f6c453;color:#3b2a06}
+.bs-chal-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.bs-chal-kicker{font-size:11px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:#b45309}
+.bs-chal-left{font-size:11.5px;font-weight:800;color:#b45309}
+.bs-chal-title{margin:4px 0 0;font-size:17px;font-weight:900;line-height:1.25}
+.bs-chal-bar{margin-top:10px;height:14px;border-radius:10px;background:#fff;overflow:hidden}
+.bs-chal-bar span{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,#f59e0b,#f97316);transition:width .4s}
+.bs-chal-nums{display:flex;justify-content:space-between;margin-top:6px;font-size:13.5px;font-weight:900}
+.bs-chal-mine{color:#b45309}
+.bs-chal-top3{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;font-size:12px;font-weight:800}
+.bs-chal-top3 span{background:#fff;padding:4px 9px;border-radius:999px}
+.bs-chal-btn{display:block;margin-top:12px;padding:11px;border-radius:14px;background:#f59e0b;color:#fff;text-align:center;font-size:14.5px;font-weight:900;text-decoration:none}

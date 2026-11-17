@@ -39,6 +39,7 @@ import {
   type PollTally,
 } from "@/lib/social/polls";
 import { listLevelRooms } from "@/lib/social/rooms";
+import { createChallenge, fetchChallengeStatus, type ChallengeStatus } from "@/lib/social/challenges";
 import { SocialAvatar } from "./avatar";
 import { ChatGate } from "./chat-gate";
 
@@ -88,6 +89,20 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
   const [pollQ, setPollQ] = useState("");
   const [pollOpts, setPollOpts] = useState("");
   const [pollAll, setPollAll] = useState(false);
+  // 7 хоногийн сорилт (112 SQL)
+  const [challenge, setChallenge] = useState<ChallengeStatus | null>(null);
+  const [chOpen, setChOpen] = useState(false);
+  const [chTitle, setChTitle] = useState("Бүгдээрээ 500 үг цээжилье!");
+  const [chTarget, setChTarget] = useState("500");
+  const [chAll, setChAll] = useState(false);
+  const refreshChallenge = useCallback(async () => {
+    setChallenge(await fetchChallengeStatus(roomId));
+  }, [roomId]);
+  useEffect(() => {
+    void refreshChallenge();
+    const timer = window.setInterval(() => void refreshChallenge(), 120_000);
+    return () => window.clearInterval(timer);
+  }, [refreshChallenge]);
 
   const listRef = useRef<HTMLDivElement>(null);
   const stickRef = useRef(true);
@@ -154,6 +169,28 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
     const err = await votePoll(messageId, userId, idx);
     if (err) setError(err);
     void refreshTallies();
+  }
+
+  async function handleCreateChallenge() {
+    const target = Math.round(Number(chTarget));
+    if (!chTitle.trim() || !Number.isFinite(target) || target < 10 || sending) return;
+    setSending(true);
+    setError(null);
+    let targets = [roomId];
+    if (chAll) {
+      const lv = await listLevelRooms();
+      const ids = (lv.data ?? []).filter((r) => r.is_member).map((r) => r.id);
+      if (ids.length) targets = Array.from(new Set([roomId, ...ids]));
+    }
+    const err = await createChallenge(targets, userId, chTitle, target, 7);
+    setSending(false);
+    if (err) {
+      setError(err);
+      return;
+    }
+    setChOpen(false);
+    setNotice(targets.length > 1 ? `${targets.length} ${t("чатад сорилт зарлалаа.")}` : t("Сорилт зарлалаа."));
+    void refreshChallenge();
   }
 
   async function handleSendPoll() {
@@ -452,6 +489,44 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
           <p className="rounded-xl bg-emerald-50 px-3 py-2 text-xs text-emerald-800">{notice}</p>
         ) : null}
 
+        {isMember && challenge ? (
+          <div className="bs-chal">
+            <div className="bs-chal-top">
+              <span className="bs-chal-kicker">🏆 {t("Энэ 7 хоногийн сорилт")}</span>
+              <span className="bs-chal-left">
+                {Math.max(0, Math.ceil((new Date(challenge.endsAt).getTime() - Date.now()) / 86_400_000))} {t("өдөр үлдсэн")}
+              </span>
+            </div>
+            <p className="bs-chal-title">{challenge.title}</p>
+            <div className="bs-chal-bar" aria-hidden>
+              <span style={{ width: `${Math.min(100, (challenge.total / Math.max(1, challenge.target)) * 100)}%` }} />
+            </div>
+            <div className="bs-chal-nums">
+              <span>
+                {challenge.total} / {challenge.target} {t("үг")}
+              </span>
+              <span className="bs-chal-mine">
+                {t("Чи")}: {challenge.mine} {t("үг")}
+              </span>
+            </div>
+            {challenge.top.length > 0 ? (
+              <div className="bs-chal-top3">
+                {challenge.top.map((row, i) => (
+                  <span key={`${row.name}-${i}`}>
+                    {["🥇", "🥈", "🥉"][i]} {row.name} {row.n}
+                  </span>
+                ))}
+              </div>
+            ) : null}
+            <Link
+              href={`/games/learn?mylevel=${/(\d)/.exec(room.title ?? "")?.[1] ?? "1"}`}
+              className="bs-chal-btn"
+            >
+              {challenge.total >= challenge.target ? t("Зорилгодоо хүрлээ! Дахиад нэмэх") : t("Одоо 10 үг нэмэх")} →
+            </Link>
+          </div>
+        ) : null}
+
         {!isMember ? (
           <div className="app-card p-5 text-center">
             <p className="text-sm text-[var(--app-muted)]">
@@ -614,6 +689,17 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
                     📊
                   </button>
                 ) : null}
+                {amHost ? (
+                  <button
+                    type="button"
+                    aria-label={t("7 хоногийн сорилт")}
+                    title={t("7 хоногийн сорилт")}
+                    onClick={() => setChOpen(true)}
+                    className="app-btn-secondary !min-h-[44px] !px-3"
+                  >
+                    🏆
+                  </button>
+                ) : null}
                 <div className="flex-1">
                   <textarea
                     value={draft}
@@ -665,6 +751,46 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
             className="mt-2 inline-flex min-h-[44px] w-full items-center justify-center rounded-full border border-red-200 bg-red-50 text-sm font-semibold text-red-700"
           >
             🚫 {t("Хориглох")}
+          </button>
+        </Sheet>
+      ) : null}
+
+      {chOpen ? (
+        <Sheet onClose={() => setChOpen(false)}>
+          <h2 className="mb-3 text-sm font-bold">🏆 {t("7 хоногийн сорилт зарлах")}</h2>
+          <label className="block text-xs font-semibold text-[var(--app-muted)]">
+            {t("Сорилтын нэр")}
+            <input
+              value={chTitle}
+              onChange={(e) => setChTitle(e.target.value.slice(0, 120))}
+              className="mt-1 w-full rounded-xl border border-[var(--app-border)] bg-white px-3 py-2.5 text-sm text-[var(--app-text)]"
+            />
+          </label>
+          <label className="mt-3 block text-xs font-semibold text-[var(--app-muted)]">
+            {t("Зорилго — бүгд нийлээд хэдэн үг (7 хоногт)")}
+            <input
+              value={chTarget}
+              inputMode="numeric"
+              onChange={(e) => setChTarget(e.target.value.replace(/[^0-9]/g, "").slice(0, 6))}
+              className="mt-1 w-full rounded-xl border border-[var(--app-border)] bg-white px-3 py-2.5 text-sm text-[var(--app-text)]"
+            />
+          </label>
+          <p className="mt-2 text-xs text-[var(--app-muted)]">
+            {t("Гишүүдийн «Үг цээжлэх», «Давтах» дээр «мэднэ» гэж тэмдэглэсэн үг автоматаар тоологдоно.")}
+          </p>
+          {room.kind === "level" ? (
+            <label className="mt-3 flex items-center gap-2 text-sm font-semibold">
+              <input type="checkbox" checked={chAll} onChange={(e) => setChAll(e.target.checked)} />
+              {t("Түвшний бүх чатад зэрэг зарлах")}
+            </label>
+          ) : null}
+          <button
+            type="button"
+            disabled={sending || !chTitle.trim() || Number(chTarget) < 10}
+            onClick={() => void handleCreateChallenge()}
+            className="app-btn-primary mt-4 w-full disabled:opacity-50"
+          >
+            {t("Зарлах")}
           </button>
         </Sheet>
       ) : null}
