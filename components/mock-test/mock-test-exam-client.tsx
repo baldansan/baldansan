@@ -580,19 +580,14 @@ export function MockTestExamClient({
 
         <p className="bs-mt-mode-label mt-5">Горим сонгох</p>
         <div className="bs-mt-mode-grid">
-          <button
-            type="button"
-            className="bs-mt-mode-card"
-            onClick={() => beginExam("real")}
-          >
-            <span className="bs-mt-mode-card-title">Жинхэнэ горим</span>
-            <span className="bs-mt-mode-card-meta">
-              ~{realTotalMinutes} мин · хэсэг тус бүр өөрийн цагтай
-            </span>
+          <Link href={`/review/practice/${test.id}`} className="bs-mt-mode-card">
+            <span className="bs-mt-mode-card-title">Сурах горим · эндээс эхэл</span>
+            <span className="bs-mt-mode-card-meta">Цаг хэмжихгүй · хэсэг хэсгээр, хүссэн үедээ зогсоно</span>
             <span className="bs-mt-mode-card-desc">
-              Сонсгол → Унших → Бичих дарааллаар. Аудио нэг удаа. Буцах боломжгүй.
+              Хариулсан даруйд зөв хариулт, яагаад тэр болсон тайлбар шууд
+              гарна. Анх удаа үзэж байгаа бол үүнийг сонго.
             </span>
-          </button>
+          </Link>
           <button
             type="button"
             className="bs-mt-mode-card bs-mt-mode-card--practice"
@@ -606,17 +601,19 @@ export function MockTestExamClient({
               Табаар чөлөөтэй шилжинэ. Аудио дахин сонсоно.
             </span>
           </button>
-          <Link
-            href={`/review/practice/${test.id}`}
+          <button
+            type="button"
             className="bs-mt-mode-card bs-mt-mode-card--practice"
+            onClick={() => beginExam("real")}
           >
-            <span className="bs-mt-mode-card-title">Сурах горим</span>
-            <span className="bs-mt-mode-card-meta">Цаг хэмжихгүй</span>
-            <span className="bs-mt-mode-card-desc">
-              Хариулсан даруйд зөв хариулт, яагаад тэр болсон тайлбар шууд
-              гарна. Хэсэг хэсгээр нь дасгал хийнэ.
+            <span className="bs-mt-mode-card-title">Жинхэнэ горим</span>
+            <span className="bs-mt-mode-card-meta">
+              ~{realTotalMinutes} мин · хэсэг тус бүр өөрийн цагтай
             </span>
-          </Link>
+            <span className="bs-mt-mode-card-desc">
+              Жинхэнэ шалгалттай адил: тасралтгүй суух цаг гаргасан үедээ. Аудио нэг удаа, буцах боломжгүй.
+            </span>
+          </button>
         </div>
 
         {showDevTools ? (

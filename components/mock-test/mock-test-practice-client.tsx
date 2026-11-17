@@ -2,7 +2,7 @@
 
 import { useAutoAdvance } from "@/lib/hooks/use-auto-advance";
 import Link from "next/link";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import {
   MockTestPracticeQuestion,
@@ -96,6 +96,17 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
   const [revealed, setRevealed] = useState(false);
   const [feedback, setFeedback] = useState<PracticeFeedback | null>(null);
   const [answered, setAnswered] = useState<Answered[]>([]);
+  /** Дуусгасан хэсгүүд (энэ төхөөрөмж дээр) — жагсаалтад ✓ тэмдэг, ахиц харуулна. */
+  const doneKey = `bs.mtp.done.v1:${test.id}`;
+  const [doneGroups, setDoneGroups] = useState<Record<string, number>>({});
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(doneKey);
+      if (raw) setDoneGroups(JSON.parse(raw) as Record<string, number>);
+    } catch {
+      /* ignore */
+    }
+  }, [doneKey]);
 
   const activeGroup = groups.find((group) => group.key === groupKey) ?? null;
   const activeQuestions = useMemo(
@@ -208,6 +219,17 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
 
   const goNext = useCallback(() => {
     if (index + 1 >= activeQuestions.length) {
+      if (groupKey) {
+        setDoneGroups((prev) => {
+          const next = { ...prev, [groupKey]: Date.now() };
+          try {
+            localStorage.setItem(doneKey, JSON.stringify(next));
+          } catch {
+            /* ignore */
+          }
+          return next;
+        });
+      }
       setPhase("done");
       return;
     }
@@ -215,7 +237,7 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
     setAnswer(null);
     setRevealed(false);
     setFeedback(null);
-  }, [index, activeQuestions.length]);
+  }, [index, activeQuestions.length, groupKey, doneKey]);
 
   // «Мэдэхгүй» гэдэг нь бодит мэдээлэл — алдаатай адилаар бүртгэнэ, ингэснээр
   // алдааны дэвтэр, сул талын задаргаанд нь орно.
@@ -263,7 +285,12 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
             харуулна. Сонсголын аудиог хэдэн ч удаа сонсож болно.
           </div>
 
-          <p className="bs-mtp-sec">Аль хэсгээс эхлэх вэ?</p>
+          <p className="bs-mtp-sec">
+            Аль хэсгээс эхлэх вэ?
+            {Object.keys(doneGroups).length > 0
+              ? ` · ${groups.filter((g) => doneGroups[g.key]).length}/${groups.length} хэсэг хийсэн`
+              : ""}
+          </p>
           <div className="bs-mtp-group-list">
             {groups.map((group) => (
               <button
@@ -273,6 +300,7 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
                 onClick={() => startGroup(group.key)}
               >
                 <span className="bs-mtp-group-skill">
+                  {doneGroups[group.key] ? "✓ " : ""}
                   {SKILL_LABELS_MN[group.skill] ?? group.skill}
                 </span>
                 <span className="bs-mtp-group-desc">{group.desc}</span>
