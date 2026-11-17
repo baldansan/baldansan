@@ -1840,3 +1840,11 @@ html[data-theme="dark"] .bs-home-level--more{color:#7fe3a8}
 .bs-inst-more{margin-top:10px;font-size:13px;font-weight:700;color:var(--bs-green-700)}
 .bs-inst-more img{display:block;width:100%;height:auto;margin-top:8px;border-radius:12px}
 .bs-inst-hide{display:block;margin:12px auto 0;border:0;background:none;font-size:12px;font-weight:700;color:var(--bs-muted);text-decoration:underline;cursor:pointer}
+
+/* Чатын санал асуулга */
+.bs-poll-opt{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:38px;padding:6px 10px;border-radius:10px;border:1.5px solid rgba(15,115,56,.25);background:rgba(255,255,255,.75);color:#12251A;font-size:13px;font-weight:700;text-align:left;overflow:hidden;cursor:pointer}
+.bs-poll-opt--on{border-color:#1FB85A}
+.bs-poll-bar{position:absolute;left:0;top:0;bottom:0;background:rgba(31,184,90,.22);transition:width .3s}
+.bs-poll-label,.bs-poll-n{position:relative}
+.bs-poll-n{flex:none;font-size:11px;font-weight:800;opacity:.75}
+html[data-theme="dark"] .bs-poll-opt{background:rgba(0,0,0,.25);color:#e8efea;border-color:rgba(127,227,168,.3)}

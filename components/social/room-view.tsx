@@ -30,6 +30,14 @@ import {
   type ChatMessage,
   type ChatRoom,
 } from "@/lib/social/types";
+import {
+  buildPollBody,
+  fetchPollTallies,
+  parsePoll,
+  votePoll,
+  type PollTally,
+} from "@/lib/social/polls";
+import { listLevelRooms } from "@/lib/social/rooms";
 import { SocialAvatar } from "./avatar";
 import { ChatGate } from "./chat-gate";
 
@@ -74,6 +82,11 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
   const [drawer, setDrawer] = useState(false);
   const [actionMsg, setActionMsg] = useState<ChatMessage | null>(null);
   const [hasMore, setHasMore] = useState(false);
+  const [tallies, setTallies] = useState<Record<number, PollTally>>({});
+  const [pollOpen, setPollOpen] = useState(false);
+  const [pollQ, setPollQ] = useState("");
+  const [pollOpts, setPollOpts] = useState("");
+  const [pollAll, setPollAll] = useState(false);
 
   const listRef = useRef<HTMLDivElement>(null);
   const stickRef = useRef(true);
@@ -89,10 +102,81 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
   const nameOf = useCallback(
     (uid: string) => {
       const m = members.find((x) => x.user_id === uid);
-      return { name: m?.display_name || "—", avatar: m?.avatar ?? null };
+      return {
+        name: m?.display_name || t("Сурагч"),
+        avatar: m?.avatar ?? null,
+        host: m?.role === "owner",
+      };
     },
-    [members]
+    [members, t]
   );
+  // Хөтлөгч (өрөөний эзэн / 105 SQL-ээр тавьсан админ) — санал асуулга явуулж чадна.
+  const amHost = isOwner || members.some((m) => m.user_id === userId && m.role === "owner");
+
+  const pollIds = useMemo(
+    () => messages.filter((m) => parsePoll(m.body)).map((m) => m.id),
+    [messages]
+  );
+  const pollKey = pollIds.join(",");
+  const refreshTallies = useCallback(async () => {
+    if (!pollKey) return;
+    const ids = pollKey.split(",").map(Number);
+    const counts: Record<number, number> = {};
+    for (const m of messages) {
+      const p = parsePoll(m.body);
+      if (p) counts[m.id] = p.options.length;
+    }
+    setTallies(await fetchPollTallies(ids, userId, counts));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pollKey, userId]);
+  useEffect(() => {
+    if (!pollKey) return;
+    void refreshTallies();
+    const timer = window.setInterval(() => void refreshTallies(), 20_000);
+    return () => window.clearInterval(timer);
+  }, [pollKey, refreshTallies]);
+
+  async function handleVote(messageId: number, idx: number) {
+    setTallies((prev) => {
+      const cur = prev[messageId];
+      if (!cur) return prev;
+      const counts = [...cur.counts];
+      if (cur.mine != null && counts[cur.mine] > 0) counts[cur.mine] -= 1;
+      counts[idx] = (counts[idx] ?? 0) + 1;
+      return { ...prev, [messageId]: { counts, total: cur.total + (cur.mine == null ? 1 : 0), mine: idx } };
+    });
+    const err = await votePoll(messageId, userId, idx);
+    if (err) setError(err);
+    void refreshTallies();
+  }
+
+  async function handleSendPoll() {
+    const options = pollOpts.split("\n").map((o) => o.trim()).filter(Boolean).slice(0, 6);
+    if (!pollQ.trim() || options.length < 2 || sending) return;
+    const body = buildPollBody(pollQ, options);
+    setSending(true);
+    setError(null);
+    let targets = [roomId];
+    if (pollAll) {
+      const lv = await listLevelRooms();
+      const ids = (lv.data ?? []).filter((r) => r.is_member).map((r) => r.id);
+      if (ids.length) targets = Array.from(new Set([roomId, ...ids]));
+    }
+    for (const rid of targets) {
+      const res = await sendMessage(rid, userId, body);
+      if (res.error) setError(res.error);
+      else if (rid === roomId && res.data) {
+        const sent = res.data;
+        stickRef.current = true;
+        setMessages((prev) => (prev.some((p) => p.id === sent.id) ? prev : [...prev, sent]));
+      }
+    }
+    setSending(false);
+    setPollOpen(false);
+    setPollQ("");
+    setPollOpts("");
+    if (targets.length > 1) setNotice(`${targets.length} ${t("чатад явууллаа.")}`);
+  }
 
   const title = useMemo(() => {
     if (!room) return "";
@@ -438,9 +522,53 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
                         }}
                       >
                         {showName ? (
-                          <p className="mb-0.5 text-[11px] font-bold text-emerald-700">{who.name}</p>
+                          <p className="mb-0.5 text-[11px] font-bold text-emerald-700">
+                            {who.name}
+                            {who.host ? (
+                              <span className="ml-1 rounded-full bg-emerald-600 px-1.5 py-[1px] text-[9px] font-bold text-white">
+                                {t("Админ")}
+                              </span>
+                            ) : null}
+                          </p>
                         ) : null}
-                        <p className="whitespace-pre-wrap break-words">{msg.body}</p>
+                        {(() => {
+                          const poll = parsePoll(msg.body);
+                          if (!poll) return <p className="whitespace-pre-wrap break-words">{msg.body}</p>;
+                          const tally = tallies[msg.id];
+                          return (
+                            <div className="min-w-[210px]">
+                              <p className="mb-2 text-sm font-bold">📊 {poll.question}</p>
+                              <div className="flex flex-col gap-1.5">
+                                {poll.options.map((opt, idx) => {
+                                  const n = tally?.counts[idx] ?? 0;
+                                  const pct = tally && tally.total > 0 ? Math.round((n / tally.total) * 100) : 0;
+                                  const picked = tally?.mine === idx;
+                                  return (
+                                    <button
+                                      key={idx}
+                                      type="button"
+                                      disabled={!isMember}
+                                      onClick={() => void handleVote(msg.id, idx)}
+                                      className={`bs-poll-opt${picked ? " bs-poll-opt--on" : ""}`}
+                                    >
+                                      <span className="bs-poll-bar" style={{ width: `${pct}%` }} />
+                                      <span className="bs-poll-label">
+                                        {picked ? "✓ " : ""}
+                                        {opt}
+                                      </span>
+                                      <span className="bs-poll-n">
+                                        {n} · {pct}%
+                                      </span>
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                              <p className="mt-1.5 text-[10px] opacity-80">
+                                {tally?.total ?? 0} {t("хүн санал өгсөн")}
+                              </p>
+                            </div>
+                          );
+                        })()}
                         <div className="mt-0.5 flex items-center justify-end gap-2">
                           <span className={`text-[10px] ${mine ? "text-white/80" : "text-[var(--app-muted)]"}`}>
                             {formatTime(msg.created_at)}
@@ -469,6 +597,17 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
               </p>
             ) : (
               <div className="flex items-end gap-2">
+                {amHost ? (
+                  <button
+                    type="button"
+                    aria-label={t("Санал асуулга")}
+                    title={t("Санал асуулга")}
+                    onClick={() => setPollOpen(true)}
+                    className="app-btn-secondary !min-h-[44px] !px-3"
+                  >
+                    📊
+                  </button>
+                ) : null}
                 <div className="flex-1">
                   <textarea
                     value={draft}
@@ -524,6 +663,45 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
         </Sheet>
       ) : null}
 
+      {pollOpen ? (
+        <Sheet onClose={() => setPollOpen(false)}>
+          <h2 className="mb-3 text-sm font-bold">📊 {t("Санал асуулга")}</h2>
+          <label className="block text-xs font-semibold text-[var(--app-muted)]">
+            {t("Асуулт")}
+            <input
+              value={pollQ}
+              onChange={(e) => setPollQ(e.target.value.slice(0, 200))}
+              className="mt-1 w-full rounded-xl border border-[var(--app-border)] bg-white px-3 py-2.5 text-sm text-[var(--app-text)]"
+              placeholder={t("Жишээ: Аль хэсэг хамгийн хэрэгтэй байна?")}
+            />
+          </label>
+          <label className="mt-3 block text-xs font-semibold text-[var(--app-muted)]">
+            {t("Сонголтууд — мөр бүрд нэг (2–6)")}
+            <textarea
+              value={pollOpts}
+              onChange={(e) => setPollOpts(e.target.value.slice(0, 600))}
+              rows={5}
+              className="mt-1 w-full rounded-xl border border-[var(--app-border)] bg-white px-3 py-2.5 text-sm text-[var(--app-text)]"
+              placeholder={"Хичээл\nҮг цээжлэх\nШалгалт\nБичлэг"}
+            />
+          </label>
+          {room.kind === "level" ? (
+            <label className="mt-3 flex items-center gap-2 text-sm font-semibold">
+              <input type="checkbox" checked={pollAll} onChange={(e) => setPollAll(e.target.checked)} />
+              {t("Түвшний бүх чатад зэрэг явуулах")}
+            </label>
+          ) : null}
+          <button
+            type="button"
+            disabled={sending || !pollQ.trim() || pollOpts.split("\n").filter((o) => o.trim()).length < 2}
+            onClick={() => void handleSendPoll()}
+            className="app-btn-primary mt-4 w-full disabled:opacity-50"
+          >
+            {t("Явуулах")}
+          </button>
+        </Sheet>
+      ) : null}
+
       {drawer ? (
         <Sheet onClose={() => setDrawer(false)}>
           <h2 className="mb-2 text-sm font-bold">
@@ -539,7 +717,7 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
                 >
                   <SocialAvatar name={m.display_name} avatar={m.avatar} size={36} />
                   <span className="truncate text-sm font-semibold">
-                    {m.display_name || "—"}
+                    {m.display_name || t("Сурагч")}
                     {m.user_id === userId ? ` (${t("Та")})` : ""}
                   </span>
                   {m.role === "owner" ? (
