@@ -763,6 +763,8 @@ html.bs-bichleg-fs-root,html.bs-bichleg-fs-root body{overflow:hidden}
 .bs-mt-q-ok{color:var(--bs-green-700)}
 .bs-mt-q-bad{color:#dc2626}
 .bs-mt-q-text{margin:8px 0 0;font-size:15px;font-weight:700;line-height:1.5;color:var(--bs-ink)}
+.bs-mt-q-text,.bs-mtp-stem{white-space:pre-line}
+.bs-mt-q-text--long{font-weight:500!important;line-height:1.8!important}
 .bs-mt-passage{margin:8px 0 0;padding:10px;border-radius:12px;background:#f8faf9;font-size:14px;line-height:1.6;color:var(--bs-ink-2)}
 .bs-mt-q-image{margin-top:10px;max-width:100%;border-radius:12px}
 .bs-mt-option-grid{display:grid;gap:8px;margin-top:10px}

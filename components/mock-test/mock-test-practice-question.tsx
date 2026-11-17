@@ -220,7 +220,7 @@ function Stem({ question }: { question: MockTestQuestionRow }) {
         <img src={question.image_url} alt="" className="bs-mtp-image" />
       ) : null}
       {question.stem ? (
-        <p className="bs-mtp-stem hanzi" translate="no">{question.stem}</p>
+        <p className={`bs-mtp-stem hanzi${question.stem.length > 120 ? " bs-mt-q-text--long" : ""}`} translate="no">{question.stem}</p>
       ) : null}
     </>
   );

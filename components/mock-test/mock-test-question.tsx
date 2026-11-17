@@ -139,7 +139,7 @@ function StemBlock({ question }: { question: MockTestQuestionRow }) {
         <img src={question.image_url} alt="" className="bs-mt-q-image" />
       ) : null}
       {question.stem ? (
-        <p className="bs-mt-q-text hanzi" translate="no">{question.stem}</p>
+        <p className={`bs-mt-q-text hanzi${question.stem.length > 120 ? " bs-mt-q-text--long" : ""}`} translate="no">{question.stem}</p>
       ) : null}
     </>
   );

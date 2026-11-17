@@ -13,7 +13,7 @@ for seq,lv,w,rest in off:
 # задлагчийн мэдэгдэж буй алдаа (ижил бичлэгтэй үгийн дугаарлалт) +儿-тэй хэлбэр
 lvl.update({'好':1,'像':3,'没':1,'话':2,'点儿':1,'玩儿':1,'画画儿':2,'有点儿':2,'一点儿':1,'早点儿':2,'分钟':1,'小时候':2,'什么样':2,'服务员':2,'穿着':1,'好点儿':2,'快一点儿':1,'简单点儿':3})
 maxlen=max(len(w) for w in lvl)
-NAMES={'小王','小李','小明','小白','小张','小林','上海','北京','云南','张老师','张教授','王阿姨','王老师'}
+NAMES={'小陈','小周','小宇','李娜','老张','西安','刘先生','王先生','小林','小王','小李','小明','小白','小张','小林','上海','北京','云南','张老师','张教授','王阿姨','王老师'}
 texts=[]
 def walk(o,q=0):
     if isinstance(o,str):
@@ -24,7 +24,7 @@ def walk(o,q=0):
         qq=o[0] if o and isinstance(o[0],int) else q
         for v in o: walk(v,qq)
 for k in dir(t):
-    if k.startswith('_') or k in ('TITLE','TEST_ID'): continue
+    if k.startswith('_') or k in ('TITLE','TEST_ID','W1_IMAGE_PROMPT'): continue
     walk(getattr(t,k))
 def seg(s):
     out=[]; i=0
