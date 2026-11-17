@@ -214,6 +214,7 @@ export function HomeAppView({
       setActiveSeries(series);
 
       const saved = window.localStorage.getItem("bs:homeChip");
+      if (!saved) setLevelPicked(false);
       if (
         saved &&
         savedCatalog.some((entry) => entry.chipId === saved && entry.available)
@@ -232,6 +233,7 @@ export function HomeAppView({
    * underneath (which is filtered by that level) actually shows the book.
    */
   const pickBook = (entry: BookPickerEntry) => {
+    setLevelPicked(true);
     setActiveSeries(entry.series);
     setActiveChip(entry.chipId);
     if (entry.reviewLevel != null) {
@@ -296,6 +298,8 @@ export function HomeAppView({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [standardCatalog, fazhanCatalog, yctCatalog, selectedLang, statusByLesson]);
 
+  /** Түвшнээ нэг сонгосон хүнд «Түвшнээ сонго» мөр дахин гарахгүй (солих бол «Ном» таб). */
+  const [levelPicked, setLevelPicked] = useState(true);
   const activePickerKey = `${activeSeries}:${activeChip}`;
   const levelChips = pickerEntries.filter((e) => e.series === "standard" && e.available);
 
@@ -540,62 +544,67 @@ export function HomeAppView({
       desktopWidth="wide"
       rightRail={rightRail}
     >
-      <section className="bs-page-in relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#1FB85A] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(31,184,90,0.28)]">
-        <div
-          aria-hidden
-          className="absolute -right-10 -top-12 h-40 w-40 rounded-full bg-white/10"
-        />
-        <div
-          aria-hidden
-          className="absolute -bottom-14 -left-10 h-36 w-36 rounded-full bg-white/10"
-        />
-        <div className="relative z-10 flex items-center gap-3">
-          <div className="min-w-0 flex-1">
-            <p className="text-xs font-semibold text-emerald-50">
-              {tr(locale, "Сайн уу")} 👋{" "}
-              <span className="font-extrabold">
-                {displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName}
-              </span>
-            </p>
-            <p className="mt-1.5 text-[22px] font-black leading-[1.15] sm:text-2xl">
-              {tr(locale, "Хятад хэл сурах апп — бүгд үнэгүй")}
-            </p>
-            <p className="mt-1.5 text-[13px] font-medium leading-5 text-emerald-50">
-              {tr(locale, "HSK шалгалтад бэлд. Номоо сонгоод л эхэл.")}{" "}
-              {totals.books > 0 ? (
-                <span className="font-bold text-white">
-                  {totals.books} {tr(locale, "ном")} · {totals.lessons}{" "}
-                  {tr(locale, "хичээл нээлттэй")}
-                  {totals.completed > 0
-                    ? ` · ${totals.completed} ${tr(locale, "дууссан")}`
-                    : ""}
-                </span>
-              ) : null}
-            </p>
-            <div className="mt-3 flex flex-wrap items-center gap-2 empty:hidden">
-              {!loggedIn ? (
-                <Link
-                  href="/login"
-                  className="inline-flex items-center rounded-full bg-white px-4 py-1.5 text-xs font-extrabold text-emerald-700 shadow-sm active:bg-emerald-50"
-                >
-                  {tr(locale, "Нэвтрэх")} →
-                </Link>
-              ) : null}
-            </div>
-          </div>
-          <Image
-            src="/temee/v2/wave.webp"
-            alt=""
-            width={104}
-            height={104}
-            priority
-            className="pointer-events-none -mb-8 -mr-1 h-[104px] w-[104px] shrink-0 select-none object-contain drop-shadow-[0_6px_12px_rgba(0,0,0,0.18)]"
+      {/* Том танилцуулга — зөвхөн шинэ / нэвтрээгүй хүнд. Явцтай хүнд богино мэндчилгээ. */}
+      {!loggedIn || !(totals.completed > 0 || streak > 0) ? (
+        <section className="bs-page-in relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#1FB85A] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(31,184,90,0.28)]">
+          <div
+            aria-hidden
+            className="absolute -right-10 -top-12 h-40 w-40 rounded-full bg-white/10"
           />
-        </div>
-      </section>
-
-      {/* Тэмээ багш — баяртай / ердийн / гунигтай / унтаж буй (components/temee/temee-mascot) */}
-      <TemeeMascot streak={streak} size="sm" className="mb-3" />
+          <div
+            aria-hidden
+            className="absolute -bottom-14 -left-10 h-36 w-36 rounded-full bg-white/10"
+          />
+          <div className="relative z-10 flex items-center gap-3">
+            <div className="min-w-0 flex-1">
+              <p className="text-xs font-semibold text-emerald-50">
+                {tr(locale, "Сайн уу")} 👋{" "}
+                <span className="font-extrabold">
+                  {displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName}
+                </span>
+              </p>
+              <p className="mt-1.5 text-[22px] font-black leading-[1.15] sm:text-2xl">
+                {tr(locale, "Хятад хэл сурах апп — бүгд үнэгүй")}
+              </p>
+              <p className="mt-1.5 text-[13px] font-medium leading-5 text-emerald-50">
+                {tr(locale, "HSK шалгалтад бэлд. Номоо сонгоод л эхэл.")}{" "}
+                {totals.books > 0 ? (
+                  <span className="font-bold text-white">
+                    {totals.books} {tr(locale, "ном")} · {totals.lessons}{" "}
+                    {tr(locale, "хичээл нээлттэй")}
+                    {totals.completed > 0
+                      ? ` · ${totals.completed} ${tr(locale, "дууссан")}`
+                      : ""}
+                  </span>
+                ) : null}
+              </p>
+              <div className="mt-3 flex flex-wrap items-center gap-2 empty:hidden">
+                {!loggedIn ? (
+                  <Link
+                    href="/login"
+                    className="inline-flex items-center rounded-full bg-white px-4 py-1.5 text-xs font-extrabold text-emerald-700 shadow-sm active:bg-emerald-50"
+                  >
+                    {tr(locale, "Нэвтрэх")} →
+                  </Link>
+                ) : null}
+              </div>
+            </div>
+            <Image
+              src="/temee/v2/wave.webp"
+              alt=""
+              width={104}
+              height={104}
+              priority
+              className="pointer-events-none -mb-8 -mr-1 h-[104px] w-[104px] shrink-0 select-none object-contain drop-shadow-[0_6px_12px_rgba(0,0,0,0.18)]"
+            />
+          </div>
+        </section>
+      ) : (
+        <p className="bs-home-hello">
+          {tr(locale, "Сайн уу")} 👋{" "}
+          <strong>{displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName}</strong>
+        </p>
+      )}
 
       {/* Статус мөр: streak · өнөөдрийн оноо · ангийн байр */}
       <ul className="bs-home-status" aria-label={tr(locale, "Миний статус")}>
@@ -631,7 +640,7 @@ export function HomeAppView({
       </ul>
 
       {/* Түвшин хурдан солих — шинэ хүн «Ном солих»-ыг олохгүй байсан тул хамгийн дээр */}
-      {levelChips.length > 1 ? (
+      {levelChips.length > 1 && !levelPicked ? (
         <div className="bs-home-levels">
           <p className="bs-home-levels-label">{tr(locale, "Түвшнээ сонго")}</p>
           <div className="bs-home-levels-row">
@@ -682,44 +691,6 @@ export function HomeAppView({
       ) : null}
 
 
-      {/* 60 секундын онбординг — шинэ хэрэглэгчид. Гүйлгэлгүйгээр харагдахаар хамгийн дээр
-          (явцтай эсвэл дуусгасан хүнд өөрөө нуугдана). */}
-      <QuickStartCard loggedIn={loggedIn} hasProgress={totals.completed > 0 || streak > 0} />
-
-      {/* Шалгалтын зорилго тавьсан бол — хэдэн өдөр үлдсэн, хурд */}
-      <ExamGoalCard variant="compact" />
-      <MyStudySystem variant="prompt" />
-      {selectedLang !== "ko" ? (
-        <Link href="/chat" className="bs-home-chat">
-          <span className="bs-mss-prompt-ico" aria-hidden>
-            💬
-          </span>
-          <span className="bs-mss-prompt-body">
-            <span className="bs-home-chat-title">
-              {typeof activeHskLevel === "number" ? `HSK ${activeHskLevel}` : "HSK"}
-              {tr(locale, "-ийн групп чат")}
-            </span>
-            <span className="bs-mss-prompt-sub">{tr(locale, "Нэг түвшнийхэнтэйгээ асууж, хамт суралц")}</span>
-          </span>
-          <HomeChatBadge />
-          <span aria-hidden className="bs-mss-prompt-arrow">
-            ›
-          </span>
-        </Link>
-      ) : null}
-
-      {/* Өнөөдөр: даалгавар · давтах · бичлэг */}
-      <HomeTodaySection
-        loggedIn={loggedIn}
-        bichlegContinue={bichlegContinue}
-        bichlegSuggestion={bichlegSuggestion}
-      />
-
-      {/* Хурдан хайлт (Pleco маяг) */}
-      <HomeQuickSearch />
-
-      <InstallAppGuide />
-
       {/* Хүүхдийн горим эсвэл зам эхэлсэн бол — хамгийн эхний карт */}
       <KidPathHomeCard />
 
@@ -753,6 +724,13 @@ export function HomeAppView({
       ) : null}
 
       <OpenClassQuizBanner />
+
+      {/* Өнөөдөр: даалгавар · давтах · бичлэг */}
+      <HomeTodaySection
+        loggedIn={loggedIn}
+        bichlegContinue={bichlegContinue}
+        bichlegSuggestion={bichlegSuggestion}
+      />
 
       {pickerEntries.length > 1 ? (
         <div id="home-book-picker">
@@ -795,61 +773,21 @@ export function HomeAppView({
         />
       ) : null}
 
-      {/* Нэмэлт — эвхээстэй: нүүр нь ном + хичээл л байг */}
-      <details className="group mt-2 mb-3 rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] shadow-[var(--app-shadow)]">
-        <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-extrabold text-[var(--app-text)] [&::-webkit-details-marker]:hidden">
-          <span>📚 {tr(locale, "Нэмэлт: уншлага, дуудлага, хэлзүй")}</span>
-          <span className="text-[var(--app-muted)] transition-transform group-open:rotate-180" aria-hidden>
-            ▾
-          </span>
-        </summary>
-        <div className="px-3 pb-3 pt-1">
-          <LibraryPreviewRow items={libraryPreview} />
-          <DailyToneHomeCard />
-          {selectedLang !== "ko" ? <HelzuiHomeCard summary={helzuiSummary} /> : null}
-        </div>
-      </details>
+      {/* 60 секундын онбординг — шинэ хэрэглэгчид. Гүйлгэлгүйгээр харагдахаар хамгийн дээр
+          (явцтай эсвэл дуусгасан хүнд өөрөө нуугдана). */}
+      <QuickStartCard loggedIn={loggedIn} hasProgress={totals.completed > 0 || streak > 0} />
 
-      {/* Ярилцах — AI ролийн яриа (нэг жижиг блок) */}
-      <Link href="/talk" className="bs-tm-continue mb-3">
-        <span
-          className="bs-tm-continue-ic"
-          style={{ background: "linear-gradient(135deg, #34d399, #059669)" }}
-          aria-hidden
-        >
-          💬
-        </span>
-        <span className="min-w-0 flex-1">
-          <p className="bs-tm-continue-kicker">{tr(locale, "Ярилцах")}</p>
-          <p className="bs-tm-continue-title">{tr(locale, "Дэлгүүр, гуанз, такси — хятадаар ярьж үз")}</p>
-        </span>
-        <span className="bs-tm-card-chev" aria-hidden>
-          ›
-        </span>
-      </Link>
+      {/* Шалгалтын зорилго тавьсан бол — хэдэн өдөр үлдсэн, хурд */}
+      <ExamGoalCard variant="compact" />
+      <MyStudySystem variant="prompt" />
+      {/* Тэмээ багш — баяртай / ердийн / гунигтай / унтаж буй (components/temee/temee-mascot) */}
+      <TemeeMascot streak={streak} size="sm" className="mb-3" />
 
-      {bichlegContinue ? (
-        <PrefetchLink href={bichlegContinue.href} className="bs-tm-continue bs-desk-hide">
-          <span
-            className="bs-tm-continue-ic"
-            style={{
-              background: "linear-gradient(135deg, #4d9fff, #2563eb)",
-            }}
-            aria-hidden
-          >
-            📺
-          </span>
-          <span className="min-w-0 flex-1">
-            <p className="bs-tm-continue-kicker">
-              {tr(locale, "Бичлэг үргэлжлүүлэх")}
-            </p>
-            <p className="bs-tm-continue-title" translate="no">{bichlegContinue.title}</p>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>
-            ›
-          </span>
-        </PrefetchLink>
-      ) : null}
+      {/* Хурдан хайлт (Pleco маяг) */}
+      <HomeQuickSearch />
+
+      <InstallAppGuide />
+
     </MobileAppShell>
   );
 }

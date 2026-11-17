@@ -1747,3 +1747,12 @@ html[data-theme="dark"] .bs-tm-bdg--on {
 .bs-tm-continue--main .bs-tm-continue-title { color: #fff !important; font-size: 1.02rem; }
 .bs-tm-continue--main .bs-tm-continue-ic { background: rgba(255, 255, 255, 0.22) !important; color: #fff; }
 .bs-tm-continue--main .bs-tm-card-chev { color: #fff !important; }
+
+/* Нүүр — явцтай хэрэглэгчийн богино мэндчилгээ (том hero-гийн оронд) */
+.bs-home-hello {
+  margin: 2px 2px 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--bs-tm-ink, var(--app-text));
+}
+.bs-home-hello strong { font-weight: 900; }

@@ -31,6 +31,7 @@ import { exitKidMode } from "@/lib/kids/client";
 import { isKidEmail } from "@/lib/kids/types";
 import { useKidMode } from "@/lib/kids/use-kid-mode";
 import { ChatProfileSettings } from "@/components/social/chat-profile-settings";
+import { HomeChatBadge } from "@/components/social/home-chat-badge";
 import { ts } from "@/lib/social/i18n";
 import { getOwnProfile } from "@/lib/social/profile";
 
@@ -445,6 +446,21 @@ export function ProfileAppView() {
         </MobileCard>
       ) : null}
 
+      {/* Групп чат — нүүрнээс энд нүүсэн; уншаагүй мессежийн тоотой */}
+      <Link href="/chat" className="bs-tm-card mb-3">
+        <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
+          💬
+        </span>
+        <span className="flex-1">
+          <span className="bs-tm-card-title">{tr(locale, "Групп чат")}</span>
+          <span className="block text-xs text-[var(--app-muted)]">
+            {tr(locale, "Нэг түвшнийхэнтэйгээ асууж, хамт суралц")}
+          </span>
+        </span>
+        <HomeChatBadge />
+        <span className="bs-tm-card-chev" aria-hidden>›</span>
+      </Link>
+
       <ProfileSrsStats
         userId={user.id}
         streak={streak}
@@ -458,7 +474,6 @@ export function ProfileAppView() {
       <LinkRow href="/reminders" icon="⏰" title={tr(locale, "Сурах сануулга")} sub={tr(locale, "Өдөр бүр ямар цагт сануулах")} />
 
       <p className="bs-tm-sec mt-5">{tr(locale, "👥 Бусадтай хамт")}</p>
-      <LinkRow href="/chat" icon="💬" title={`${ts(locale, "Чат")} · 聊天`} sub={ts(locale, "Хятадаар ярилцъя")} />
       <LinkRow href="/join" icon="🏫" title={tr(locale, "Ангид орох")} sub={tr(locale, "Багшийн өгсөн 6 оронтой кодоор")} />
       <LinkRow href="/family" icon="👨‍👩‍👧" title={tr(locale, "Хүүхдийн бүртгэл")} sub={tr(locale, "Хүүхдэдээ тусдаа бүртгэл нээх (PIN-тэй)")} />
 

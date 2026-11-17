@@ -100,7 +100,8 @@ export function HomeTodaySection({ loggedIn, bichlegContinue, bichlegSuggestion 
   void bichlegHref;
   void bichlegTitle;
   void bichlegKicker;
-  const hasAssignments = loggedIn && assignments != null && assignments.pending > 0;
+  // Багшийн даалгаврыг дээд талын TeacherAssignmentBanner харуулдаг тул энд давтахгүй.
+  const hasAssignments = false;
   const hasDue = dueCards != null && dueCards > 0;
   if (!hasAssignments && !hasDue) return null;
 

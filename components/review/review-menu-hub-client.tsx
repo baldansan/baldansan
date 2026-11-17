@@ -280,7 +280,7 @@ export function ReviewMenuHubClient({
       {studyPlanCard}
       {bichlegCard}
       <p className="bs-tm-sec">{tr(locale, "Материал")}</p>
-      <PrefetchLink href="/books" className="bs-tm-card">
+      <PrefetchLink href="/nom" className="bs-tm-card">
         <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>📖</span>
         <span className="bs-tm-card-body">
           <span className="bs-tm-card-title">{tr(locale, "Ном сонгох")}</span>
@@ -397,6 +397,16 @@ export function ReviewMenuHubClient({
             <span className="bs-tm-card-chev" aria-hidden>›</span>
           </PrefetchLink>
           {bichlegCard}
+          <PrefetchLink href="/talk" className="bs-tm-card">
+            <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
+              🗣️
+            </span>
+            <span className="bs-tm-card-body">
+              <span className="bs-tm-card-title">{tr(locale, "Ярилцах дадлага")}</span>
+              <span className="bs-tm-card-sub">{tr(locale, "Дэлгүүр, гуанз, такси — хятадаар ярьж үз")}</span>
+            </span>
+            <span className="bs-tm-card-chev" aria-hidden>›</span>
+          </PrefetchLink>
         </div>
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>
@@ -536,7 +546,7 @@ export function ReviewMenuHubClient({
           {tr(locale, "Материал")}
         </p>
 
-        <PrefetchLink href="/books" className="bs-tm-card">
+        <PrefetchLink href="/nom" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
             📖
           </span>
