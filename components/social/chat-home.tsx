@@ -12,6 +12,7 @@ import {
   getMyTopicRoom,
   joinRoom,
   listAgeRooms,
+  listLevelRooms,
   listMembersForRooms,
   listMyRooms,
   listOpenTopicRooms,
@@ -29,7 +30,17 @@ import {
 import { SocialAvatar } from "./avatar";
 import { ChatGate } from "./chat-gate";
 
-type TabKey = "mine" | "open" | "teams" | "age";
+type TabKey = "level" | "mine" | "open" | "teams" | "age";
+
+function readMyLevel(): string | null {
+  try {
+    const goal = JSON.parse(window.localStorage.getItem("bs.study.examGoal") ?? "null") as { level?: number } | null;
+    const n = goal?.level ?? Number(window.localStorage.getItem("activeHskLevel"));
+    return Number.isInteger(n) && n >= 1 && n <= 6 ? `HSK ${n}` : null;
+  } catch {
+    return null;
+  }
+}
 
 export function ChatHome() {
   return <ChatGate>{(userId) => <ChatHomeInner userId={userId} />}</ChatGate>;
@@ -40,7 +51,9 @@ function ChatHomeInner({ userId }: { userId: string }) {
   const router = useRouter();
   const t = useCallback((s: string) => ts(locale, s), [locale]);
 
-  const [tab, setTab] = useState<TabKey>("mine");
+  const [tab, setTab] = useState<TabKey>("level");
+  const [levelRooms, setLevelRooms] = useState<ChatRoom[]>([]);
+  const [myLevel, setMyLevel] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [mine, setMine] = useState<ChatRoom[]>([]);
@@ -54,6 +67,8 @@ function ChatHomeInner({ userId }: { userId: string }) {
 
   const load = useCallback(async () => {
     setError(null);
+    setMyLevel(readMyLevel());
+    void listLevelRooms().then((lv) => setLevelRooms(lv.data ?? []));
     const [m, o, tm, a, p] = await Promise.all([
       listMyRooms(),
       listOpenTopicRooms(),
@@ -122,6 +137,7 @@ function ChatHomeInner({ userId }: { userId: string }) {
   }
 
   const tabs: { key: TabKey; label: string }[] = [
+    { key: "level", label: t("Түвшний чат") },
     { key: "mine", label: t("Миний өрөөнүүд") },
     { key: "open", label: t("Нээлттэй өрөөнүүд") },
     { key: "teams", label: t("Багууд") },
@@ -279,6 +295,44 @@ function ChatHomeInner({ userId }: { userId: string }) {
           />
         ) : null}
 
+        {!loading && tab === "level" ? (
+          <div className="flex flex-col gap-3">
+            <p className="text-xs leading-5 text-[var(--app-muted)]">
+              {t("Өөрийн түвшний хүмүүстэй нэг чатад орж, асуултаа асууж, хамт суралцаарай.")}
+            </p>
+            {levelRooms.length === 0 ? (
+              <p className="app-card p-4 text-sm text-[var(--app-muted)]">{t("Түвшний чат удахгүй нээгдэнэ.")}</p>
+            ) : null}
+            {levelRooms
+              .slice()
+              .sort((a, b) => Number(b.topic === myLevel) - Number(a.topic === myLevel))
+              .map((room) => (
+                <RoomCard
+                  key={room.id}
+                  room={room}
+                  title={room.title}
+                  badge={room.topic === myLevel ? t("Таны түвшин") : undefined}
+                  action={
+                    room.is_member ? (
+                      <Link href={`/chat/${room.id}`} className="app-btn-secondary !min-h-[36px] !px-4 !py-1.5 !text-xs">
+                        {t("Нээх")}
+                      </Link>
+                    ) : (
+                      <button
+                        type="button"
+                        disabled={busyId === room.id}
+                        onClick={() => void handleJoin(room)}
+                        className="app-btn-primary !min-h-[36px] !px-4 !py-1.5 !text-xs disabled:opacity-60"
+                      >
+                        {t("Нэгдэх")}
+                      </button>
+                    )
+                  }
+                />
+              ))}
+          </div>
+        ) : null}
+
         {!loading && tab === "age" ? (
           <div className="flex flex-col gap-3">
             {!profile?.age_band ? (
@@ -391,7 +445,7 @@ function RoomCard({
   const locale = useUiLocale();
   return (
     <div className="app-card flex items-center gap-3 p-3">
-      <SocialAvatar name={title} avatar={room.kind === "age" ? "🗣️" : room.owner_avatar} size={44} />
+      <SocialAvatar name={title} avatar={room.kind === "age" ? "🗣️" : room.kind === "level" ? "📚" : room.owner_avatar} size={44} />
       <div className="min-w-0 flex-1">
         <p className="truncate text-sm font-bold text-[var(--app-text)]">{title || "—"}</p>
         <p className="truncate text-xs text-[var(--app-muted)]">

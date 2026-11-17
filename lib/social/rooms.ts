@@ -63,6 +63,16 @@ export function listAgeRooms(): Promise<SocialResult<ChatRoom[]>> {
   );
 }
 
+/** Түвшний групп чат — HSK 1–6 (103 SQL). */
+export function listLevelRooms(): Promise<SocialResult<ChatRoom[]>> {
+  return listRooms((t) =>
+    (t as ReturnType<NonNullable<typeof supabase>["from"]>)
+      .select(ROOM_COLUMNS)
+      .eq("kind", "level")
+      .order("topic", { ascending: true })
+  );
+}
+
 /** Миний гишүүн болсон өрөөнүүд (анги, сэдэв, баг, dm). */
 export function listMyRooms(): Promise<SocialResult<ChatRoom[]>> {
   return listRooms((t) =>

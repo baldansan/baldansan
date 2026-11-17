@@ -667,6 +667,23 @@ export function HomeAppView({
       {/* Шалгалтын зорилго тавьсан бол — хэдэн өдөр үлдсэн, хурд */}
       <ExamGoalCard variant="compact" />
       <MyStudySystem variant="prompt" />
+      {selectedLang !== "ko" ? (
+        <Link href="/chat" className="bs-home-chat">
+          <span className="bs-mss-prompt-ico" aria-hidden>
+            💬
+          </span>
+          <span className="bs-mss-prompt-body">
+            <span className="bs-home-chat-title">
+              {typeof activeHskLevel === "number" ? `HSK ${activeHskLevel}` : "HSK"}
+              {tr(locale, "-ийн групп чат")}
+            </span>
+            <span className="bs-mss-prompt-sub">{tr(locale, "Нэг түвшнийхэнтэйгээ асууж, хамт суралц")}</span>
+          </span>
+          <span aria-hidden className="bs-mss-prompt-arrow">
+            ›
+          </span>
+        </Link>
+      ) : null}
 
       {/* Өнөөдөр: даалгавар · давтах · бичлэг */}
       <HomeTodaySection

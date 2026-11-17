@@ -1818,3 +1818,6 @@ html[data-theme="dark"] .bs-mss-prompt-title{color:#7fe3a8}
 .bs-home-level--on{border-color:var(--bs-green);background:var(--bs-green);color:#fff}
 .bs-home-level--more{border-style:dashed;color:var(--bs-green-700)}
 html[data-theme="dark"] .bs-home-level--more{color:#7fe3a8}
+
+.bs-home-chat{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding:12px;border-radius:18px;border:1px solid var(--bs-line);background:var(--bs-card);text-decoration:none}
+.bs-home-chat-title{font-size:14px;font-weight:800;color:var(--bs-ink)}

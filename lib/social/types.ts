@@ -1,4 +1,4 @@
-export type ChatKind = "class" | "topic" | "team" | "age" | "dm";
+export type ChatKind = "class" | "topic" | "team" | "age" | "dm" | "level";
 
 export type AgeBand = "13-17" | "18-24" | "25-34" | "35+";
 
