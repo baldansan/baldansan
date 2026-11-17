@@ -1,5 +1,6 @@
 "use client";
 
+import { markTodayStepDone } from "@/lib/today/today-path";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -215,6 +216,7 @@ export function LearnGameClient() {
       if (accuracy >= 80) fireConfetti();
       setLearn(final);
       setQuestion(null);
+      markTodayStepDone("words");
       setPhase("result");
     },
     [juice.bestCombo]

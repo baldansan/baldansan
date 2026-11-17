@@ -463,3 +463,19 @@
     padding: 9px 10px;
   }
 }
+
+/* Үе дууссаны дараах «жижиг ялалт» дэлгэц */
+.bs-stage-done{display:flex;flex-direction:column;align-items:center;text-align:center;padding:28px 18px 40px;max-width:480px;margin:0 auto}
+.bs-stage-done-img{width:170px;height:170px;object-fit:contain}
+.bs-stage-done-kicker{margin:8px 0 0;font-size:12px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--bs-green-700,#149247)}
+.bs-stage-done-title{margin:4px 0 0;font-size:24px;font-weight:900;line-height:1.25;color:var(--bs-ink)}
+.bs-stage-done-card{width:100%;margin-top:18px;padding:16px;border-radius:20px;background:var(--bs-card);box-shadow:var(--bs-shadow)}
+.bs-stage-done-bar{display:flex;gap:6px}
+.bs-stage-done-bar span{flex:1;height:10px;border-radius:8px;background:var(--bs-line,#dfe7e2)}
+.bs-stage-done-bar span.on{background:var(--bs-green,#1fb85a)}
+.bs-stage-done-meta{margin:10px 0 0;font-size:14px;color:var(--bs-ink-2)}
+.bs-stage-done-meta b{color:var(--bs-ink)}
+.bs-stage-done-next{width:100%;margin-top:18px;padding:16px;border:none;border-radius:20px;background:var(--bs-green,#1fb85a);color:#fff;font-family:inherit;font-size:16px;font-weight:900;cursor:pointer;box-shadow:0 5px 0 #0f7338}
+.bs-stage-done-next:active{transform:translateY(3px);box-shadow:0 2px 0 #0f7338}
+.bs-stage-done-later{width:100%;margin-top:14px;padding:14px;border:2px solid var(--bs-green-100,#cfe9da);border-radius:20px;background:var(--bs-card);color:var(--bs-green-700,#0f7338);font-family:inherit;font-size:14.5px;font-weight:900;cursor:pointer}
+.bs-stage-done-note{margin:12px 0 0;font-size:12px;color:var(--bs-muted)}

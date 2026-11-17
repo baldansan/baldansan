@@ -21,6 +21,7 @@ import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
+import { markTodayStepDone } from "@/lib/today/today-path";
 import { LessonPathHub } from "./lesson-path-hub";
 import { LessonPathWarmupStage } from "./lesson-path-warmup-stage";
 import { LessonPathQuizStage } from "./lesson-path-quiz-stage";
@@ -84,6 +85,8 @@ export default function LessonPathPlayer({
   const [skipWarning, setSkipWarning] = useState<string | null>(null);
   const [justCompleted, setJustCompleted] = useState(false);
   const [showCelebration, setShowCelebration] = useState(false);
+  /** Үе дууссаны дараах «жижиг ялалт» дэлгэц: юу хийсэн, хэд үлдсэн, үргэлжлүүлэх эсэх. */
+  const [doneStage, setDoneStage] = useState<LessonPathStage | null>(null);
   const [practiceFooter, setPracticeFooter] = useState<PathExerciseFooterMeta | null>(
     null
   );
@@ -158,6 +161,7 @@ export default function LessonPathPlayer({
       );
       setProgress(next);
       setJustCompleted(true);
+      markTodayStepDone("lesson");
 
       const allDone = allLessonPathStagesCompleted(next, allStageIds);
       if (allDone) {
@@ -168,6 +172,14 @@ export default function LessonPathPlayer({
 
       const stageIdx = plan.stages.findIndex((s) => s.id === stage.id);
       const nextStage = plan.stages[stageIdx + 1];
+
+      // Дунд үеүүдийн төгсгөлд шууд дараагийн үе рүү үсрэхгүй — завсарлагын дэлгэц гаргана.
+      // (Халаалт, сорил → дүгнэлт, сүүлийн үе дээр хуучнаараа шууд шилжинэ.)
+      if (nextStage && !allDone && stage.id !== "goal_warmup" && stage.id !== "quiz" && stage.id !== "summary") {
+        setJustCompleted(false);
+        setDoneStage(stage);
+        return;
+      }
 
       window.setTimeout(() => {
         setJustCompleted(false);
@@ -452,6 +464,62 @@ export default function LessonPathPlayer({
           onStart={handleIntroStart}
           images={pathImages}
         />
+      </div>
+    );
+  }
+
+  if (doneStage) {
+    const doneIdx = plan.stages.findIndex((st) => st.id === doneStage.id);
+    const nextStage = plan.stages[doneIdx + 1] ?? null;
+    const completedCount = progress.completedStageIds.length;
+    const minutesLeft = plan.stages
+      .filter((st) => !progress.completedStageIds.includes(st.id))
+      .reduce((sum, st) => sum + st.minutes, 0);
+    return withDesk(
+      <div className="bs-root">
+        <div className="bs-stage-done">
+          {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
+          <img src="/temee/v2/celebrate.webp" alt="" className="bs-stage-done-img" />
+          <p className="bs-stage-done-kicker">{doneStage.number}-р үе дууслаа</p>
+          <h2 className="bs-stage-done-title">«{doneStage.label}» хийчихлээ! 🎉</h2>
+          <div className="bs-stage-done-card">
+            <div className="bs-stage-done-bar" aria-hidden>
+              {plan.stages.map((st) => (
+                <span key={st.id} className={progress.completedStageIds.includes(st.id) ? "on" : ""} />
+              ))}
+            </div>
+            <p className="bs-stage-done-meta">
+              <b>
+                {plan.stages.length} үеийн {completedCount}-г
+              </b>{" "}
+              хийлээ · үлдсэн ~{minutesLeft} минут
+            </p>
+          </div>
+          {nextStage ? (
+            <button
+              type="button"
+              className="bs-stage-done-next"
+              onClick={() => {
+                setDoneStage(null);
+                openStage(nextStage, false);
+              }}
+            >
+              Дараагийн үе: {nextStage.label} · {nextStage.minutes} мин →
+            </button>
+          ) : null}
+          <button
+            type="button"
+            className="bs-stage-done-later"
+            onClick={() => {
+              setDoneStage(null);
+              if (onExit) onExit();
+              else goToHub();
+            }}
+          >
+            Одоо болъё — дараа үргэлжлүүлнэ
+          </button>
+          <p className="bs-stage-done-note">Хаана зогссон чинь хадгалагдсан. Нүүр хуудаснаас шууд үргэлжлүүлнэ.</p>
+        </div>
       </div>
     );
   }
