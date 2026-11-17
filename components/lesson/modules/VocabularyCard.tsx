@@ -38,6 +38,9 @@ function formatHskBadge(hskOld?: string[]): string | null {
   return digits ? `HSK${digits}` : raw;
 }
 
+/** Нэг амьсгаагаар үзэх үгийн тоо — үүний дараа завсарлагын дэлгэц гарна. */
+const VOCAB_CHUNK = 8;
+
 function isCommonFrequency(frequency?: number): boolean {
   return typeof frequency === "number" && frequency > 0 && frequency <= COMMON_FREQUENCY_MAX;
 }
@@ -62,6 +65,8 @@ export default function VocabularyCard({
   const [known, setKnown] = useState<Set<number>>(new Set());
   /** 3D flip: эхлээд ханз (урд тал), дарахад утга (ар тал). Үг солигдоход буцна. */
   const [flipped, setFlipped] = useState(false);
+  /** 8 үг тутамд завсарлага: «үргэлжлүүлэх» эсвэл «дараагийн үе рүү» сонгоно (үгс олон үед хүн дундаас нь хаядаг байсан). */
+  const [checkpoint, setCheckpoint] = useState(false);
   const hydrateDoneRef = useRef(false);
   const persistReadyRef = useRef(false);
 
@@ -165,8 +170,11 @@ export default function VocabularyCard({
 
   function goNext() {
     setFlipped(false);
-    if (i < total - 1) setI(i + 1);
-    else {
+    if (i < total - 1) {
+      const nextIndex = i + 1;
+      setI(nextIndex);
+      if (nextIndex % VOCAB_CHUNK === 0 && total - nextIndex >= 3) setCheckpoint(true);
+    } else {
       markBsModuleCompleted(lessonId, "vocabulary");
       onDone();
     }
@@ -191,6 +199,46 @@ export default function VocabularyCard({
   }
 
   const allDone = i >= total - 1 && known.size > 0;
+
+  if (checkpoint) {
+    const remaining = total - i;
+    return (
+      <div className="bs-card">
+        <div className="bs-vtop">
+          <div className="bs-label" style={{ margin: 0 }}>
+            <span className="bs-dot" />
+            Үгийн сан
+          </div>
+          <span className="bs-counter">
+            {i} / {total}
+          </span>
+        </div>
+        <div className="bs-vcheck">
+          <div className="bs-vcheck-emoji" aria-hidden>🎉</div>
+          <p className="bs-vcheck-title">{i} үг үзлээ!</p>
+          <p className="bs-vcheck-sub">
+            Үлдсэн {remaining} үгийг одоо үргэлжлүүлж болно, эсвэл дараагийн үе рүү шилжээд дараа нь буцаж ирж болно.
+            Хаана зогссон чинь хадгалагдана.
+          </p>
+          <button type="button" className="bs-vbtn bs-know" style={{ width: "100%" }} onClick={() => setCheckpoint(false)}>
+            Дараагийн {Math.min(VOCAB_CHUNK, remaining)} үг →
+          </button>
+          <button
+            type="button"
+            className="bs-navbtn"
+            style={{ width: "100%", marginTop: 9 }}
+            onClick={() => {
+              setCheckpoint(false);
+              markBsModuleCompleted(lessonId, "vocabulary");
+              onDone();
+            }}
+          >
+            Дараагийн үе рүү шилжих
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="bs-card">

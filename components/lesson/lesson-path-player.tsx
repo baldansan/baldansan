@@ -181,6 +181,22 @@ export default function LessonPathPlayer({
     [lessonId, allStageIds, plan.stages, openStage, goToHub]
   );
 
+  // «Дүгнэлт» бол үр дүнгийн дэлгэц — нээгдмэгц дууссанд тооцно. Өмнө нь энэ үеийг дуусгах
+  // товч байхгүй тул 7 үеийг бүгдийг хийсэн хүний хичээл «дууссан» болдоггүй байв.
+  const summaryMarkedRef = useRef(false);
+  useEffect(() => {
+    if (view !== "stage" || activeStage?.id !== "summary") return;
+    if (summaryMarkedRef.current || progress.completedStageIds.includes("summary")) return;
+    summaryMarkedRef.current = true;
+    void (async () => {
+      const next = await markLessonPathStageCompletedSmart(lessonId, "summary", allStageIds);
+      setProgress(next);
+      if (allLessonPathStagesCompleted(next, allStageIds)) {
+        await markLessonCompletedSmart(lessonId);
+      }
+    })();
+  }, [view, activeStage?.id, progress.completedStageIds, lessonId, allStageIds]);
+
   const handleFinishStage = useCallback(() => {
     if (!activeStage) return;
     if (activeStage.id === "quiz") return;

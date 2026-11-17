@@ -143,6 +143,11 @@ html[data-theme="dark"] .bs-root{
 .bs-vbtn.bs-know{background:var(--bs-green);color:#fff;border-color:var(--bs-green)}
 .bs-vbtn.bs-again{color:#B9791B;background:var(--bs-amber-50);border-color:var(--bs-amber-100)}
 
+.bs-vcheck{text-align:center;padding:18px 6px 6px}
+.bs-vcheck-emoji{font-size:44px;line-height:1}
+.bs-vcheck-title{font-family:var(--bs-ui);font-weight:800;font-size:20px;color:var(--bs-ink);margin:10px 0 6px}
+.bs-vcheck-sub{font-size:14px;line-height:1.5;color:var(--bs-ink-2);margin:0 0 16px}
+
 /* nav row (prev/next within a module/player) */
 .bs-navrow{display:flex;gap:9px;margin:6px 4px 0}
 .bs-navbtn{flex:1;border:1px solid var(--bs-line);background:var(--bs-card);border-radius:14px;padding:13px;
