@@ -22,6 +22,7 @@ import {
 } from "@/lib/mock-test/sentence-order";
 import type { MockOption, MockTestQuestionRow } from "@/lib/mock-test/types";
 import { TutorNoteCard } from "@/components/mock-test/tutor-note-card";
+import { WritingScoreGuide } from "@/components/mock-test/writing-score-guide";
 
 type Props = {
   question: MockTestQuestionRow;
@@ -585,6 +586,7 @@ export function MockTestPracticeQuestion({
         />
       ) : null}
       <Stem question={question} />
+      <WritingScoreGuide question={question} />
       {body}
       {/* Багшийн тайлбар өөрийн бичвэртэй бол автомат бичвэрийг давхардуулахгүй. */}
       {revealed &&

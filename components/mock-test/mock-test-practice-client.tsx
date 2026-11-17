@@ -269,49 +269,89 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
   useAutoAdvance(autoNext, index, goNext);
 
   if (phase === "pick" || !activeGroup || !question) {
+    const doneCount = groups.filter((g) => doneGroups[g.key]).length;
+    const nextGroup = groups.find((g) => !doneGroups[g.key]) ?? groups[0];
+    const totalQuestions = groups.reduce((sum, g) => sum + g.questions.length, 0);
+    const SKILL_META: Record<string, { icon: string; tone: string }> = {
+      listening: { icon: "🎧", tone: "violet" },
+      reading: { icon: "📖", tone: "blue" },
+      writing: { icon: "✍️", tone: "amber" },
+    };
+    const skillOrder = ["listening", "reading", "writing"].filter((sk) =>
+      groups.some((g) => g.skill === sk)
+    );
+    /** Хэсгийг хийхэд ойролцоогоор хэдэн минут (сонсгол/унших ~35с, бичих ~3 мин нэг асуулт). */
+    const minutes = (g: (typeof groups)[number]) =>
+      Math.max(1, Math.round((g.questions.length * (g.skill === "writing" ? 180 : 35)) / 60));
+
     return (
-      <MobileAppShell activeTab="study" showBottomNav desktopWidth="wide">
-        <div className="bs-mtp-wrap">
+      <MobileAppShell activeTab="study" showBottomNav>
+        <div className="bs-mtp-wrap bs-mtp-pick">
           <Link href="/review/practice" className="bs-mtp-back">
             ← Дасгалын жагсаалт
           </Link>
-          <h1 className="bs-mtp-title">{test.title}</h1>
-          <p className="bs-mtp-sub">
-            Сурах горим · цаг хэмжихгүй · алдсан бүрд тайлбар гарна
-          </p>
 
-          <div className="bs-mtp-note">
-            Энэ бол шалгалт биш. Хариулт сонгонгуут зөв нь ямар байсныг шууд
-            харуулна. Сонсголын аудиог хэдэн ч удаа сонсож болно.
+          <div className="bs-mtp-hero">
+            <p className="bs-mtp-hero-kicker">Сурах горим · цаг хэмжихгүй</p>
+            <h1 className="bs-mtp-hero-title">{test.title}</h1>
+            <p className="bs-mtp-hero-sub">
+              {totalQuestions} асуулт · {groups.length} богино хэсэг. Хариулт сонгонгуут зөв нь, яагаад гэдэг
+              тайлбар шууд гарна.
+            </p>
+            <div className="bs-mtp-hero-bar" aria-hidden>
+              <span style={{ width: `${groups.length ? (doneCount / groups.length) * 100 : 0}%` }} />
+            </div>
+            <div className="bs-mtp-hero-foot">
+              <span>
+                {doneCount}/{groups.length} хэсэг хийсэн
+              </span>
+              {nextGroup ? (
+                <button type="button" className="bs-mtp-hero-btn" onClick={() => startGroup(nextGroup.key)}>
+                  {doneCount === 0 ? "Эхлэх" : doneCount >= groups.length ? "Дахин хийх" : "Үргэлжлүүлэх"} →
+                </button>
+              ) : null}
+            </div>
           </div>
 
-          <p className="bs-mtp-sec">
-            Аль хэсгээс эхлэх вэ?
-            {Object.keys(doneGroups).length > 0
-              ? ` · ${groups.filter((g) => doneGroups[g.key]).length}/${groups.length} хэсэг хийсэн`
-              : ""}
-          </p>
-          <div className="bs-mtp-group-list">
-            {groups.map((group) => (
-              <button
-                key={group.key}
-                type="button"
-                className="bs-mtp-group"
-                onClick={() => startGroup(group.key)}
-              >
-                <span className="bs-mtp-group-skill">
-                  {doneGroups[group.key] ? "✓ " : ""}
-                  {SKILL_LABELS_MN[group.skill] ?? group.skill}
-                </span>
-                <span className="bs-mtp-group-desc">{group.desc}</span>
-                <span className="bs-mtp-group-meta">
-                  {group.questions.length} асуулт ·{" "}
-                  {group.questions[0]?.q_no}–
-                  {group.questions[group.questions.length - 1]?.q_no}
-                </span>
-              </button>
-            ))}
-          </div>
+          {skillOrder.map((skill) => {
+            const meta = SKILL_META[skill] ?? { icon: "📝", tone: "blue" };
+            return (
+              <section key={skill} className="bs-mtp-skill">
+                <h2 className="bs-mtp-skill-head">
+                  <span aria-hidden>{meta.icon}</span> {SKILL_LABELS_MN[skill] ?? skill}
+                </h2>
+                <div className="bs-mtp-rows">
+                  {groups
+                    .filter((g) => g.skill === skill)
+                    .map((group) => {
+                      const done = Boolean(doneGroups[group.key]);
+                      return (
+                        <button
+                          key={group.key}
+                          type="button"
+                          className={`bs-mtp-row${done ? " bs-mtp-row--done" : ""}`}
+                          onClick={() => startGroup(group.key)}
+                        >
+                          <span className={`bs-mtp-row-badge bs-mtp-row-badge--${meta.tone}`} aria-hidden>
+                            {done ? "✓" : group.part}
+                          </span>
+                          <span className="bs-mtp-row-body">
+                            <span className="bs-mtp-row-title">{group.desc}</span>
+                            <span className="bs-mtp-row-meta">
+                              {group.questions.length} асуулт · ~{minutes(group)} мин
+                              {done ? " · хийсэн" : ""}
+                            </span>
+                          </span>
+                          <span className="bs-mtp-row-go" aria-hidden>
+                            ›
+                          </span>
+                        </button>
+                      );
+                    })}
+                </div>
+              </section>
+            );
+          })}
         </div>
       </MobileAppShell>
     );

@@ -132,6 +132,15 @@ export function MockTestListClient({
         Албан ёсны 真题 — таймер, аудио, автомат оноо, монгол тайлбар. Түвшнээ сонго.
       </p>
 
+      <div className="bs-mt-soon">
+        <span className="bs-mt-soon-badge">Тун удахгүй</span>
+        <p className="bs-mt-soon-title">HSK 3.0 — шинэ хэлбэрийн загвар шалгалт</p>
+        <p className="bs-mt-soon-sub">
+          2026 оноос мөрдөх шинэ хэлбэрийн шалгалтыг бэлдэж байна. Одоохондоо доорх жинхэнэ HSK
+          шалгалтуудаар бэлдээрэй.
+        </p>
+      </div>
+
       {tests.length === 0 ? (
         <div className="bs-mt-card mt-4">
           <p className="bs-mt-card-title">Тест олдсонгүй</p>

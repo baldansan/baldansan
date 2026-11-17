@@ -98,7 +98,15 @@ async function fetchMockTestsWith(
     return fetchMockTestsWith(client, hskLevel, { includeInactive: true });
   }
   if (error || !data) return [];
-  return data.map((row) => mapTest(row as Record<string, unknown>));
+  const tests = data.map((row) => mapTest(row as Record<string, unknown>));
+  // Шинэ HSK 3.0 хэлбэрийн өөрсдийн загварууд (N3-01, N4-02 …) «тун удахгүй» төлөвт —
+  // суралцагчийн жагсаалтад гарахгүй (2026-11-18-ны шийдвэр). Админ бүгдийг харна.
+  return opts.includeInactive ? tests : tests.filter((t) => !isHsk30DraftTestId(t.id));
+}
+
+/** Өөрсдийн зохиосон HSK 3.0 загвар шалгалтын id: N + түвшин + дугаар (N4-01). */
+export function isHsk30DraftTestId(id: string): boolean {
+  return /^N\d-\d+$/.test(id);
 }
 
 export async function fetchMockTests(
