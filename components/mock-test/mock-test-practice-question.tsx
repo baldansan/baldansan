@@ -78,6 +78,26 @@ function OptionMark({ state }: { state: OptionState }) {
  * солигдоход файл дахин татагдахгүй; автомат тоглуулалт асаалттай бол
  * дараагийн асуулт руу шилжмэгц тэр хэсэг нь шууд эхэлнэ.
  */
+const PRACTICE_SPEEDS = [1, 1.25, 0.75];
+const PRACTICE_SPEED_KEY = "bs.mtp.speed.v1";
+
+function readPracticeSpeed(): number {
+  try {
+    const v = Number(window.localStorage.getItem(PRACTICE_SPEED_KEY));
+    return PRACTICE_SPEEDS.includes(v) ? v : 1;
+  } catch {
+    return 1;
+  }
+}
+
+function writePracticeSpeed(v: number) {
+  try {
+    window.localStorage.setItem(PRACTICE_SPEED_KEY, String(v));
+  } catch {
+    /* ignore */
+  }
+}
+
 export function PracticeAudio({
   url,
   startSec = null,
@@ -96,6 +116,8 @@ export function PracticeAudio({
   const [progress, setProgress] = useState(0);
   const [autoplay, setAutoplay] = useState(true);
   const elRef = useRef<HTMLAudioElement | null>(null);
+  /** Тоглуулах хурд — 1× нь хэвийн яриа; удаан/хурдан сонголт төхөөрөмж дээр хадгалагдана. */
+  const [speed, setSpeed] = useState(1);
 
   useEffect(() => {
     const el = getPracticeAudio(url);
@@ -103,6 +125,9 @@ export function PracticeAudio({
     pauseOtherPracticeAudio(el);
     const auto = readPracticeAutoplay();
     setAutoplay(auto);
+    const savedSpeed = readPracticeSpeed();
+    setSpeed(savedSpeed);
+    el.playbackRate = savedSpeed;
     setProgress(0);
 
     const seekStart = () => {
@@ -204,6 +229,19 @@ export function PracticeAudio({
         }}
       >
         {autoplay ? "🔁 Автомат: асаалттай" : "🔁 Автомат: унтраалттай"}
+      </button>
+      <button
+        type="button"
+        className="bs-mtp-audio-again"
+        title="Аудионы хурд"
+        onClick={() => {
+          const next = PRACTICE_SPEEDS[(PRACTICE_SPEEDS.indexOf(speed) + 1) % PRACTICE_SPEEDS.length] ?? 1;
+          setSpeed(next);
+          writePracticeSpeed(next);
+          if (elRef.current) elRef.current.playbackRate = next;
+        }}
+      >
+        {speed === 1 ? "Хурд: 1×" : speed < 1 ? `🐢 Хурд: ${speed}×` : `⚡ Хурд: ${speed}×`}
       </button>
       <div className="bs-mtp-audio-bar" aria-hidden>
         <span style={{ width: `${Math.round(progress * 100)}%` }} />
