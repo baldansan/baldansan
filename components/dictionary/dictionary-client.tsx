@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { tr } from "@/lib/i18n/translate";
@@ -294,6 +295,11 @@ export function DictionaryClient() {
           ✍️
         </button>
       </div>
+
+      <Link href="/dictionary/levels" className="bs-lvw-entry">
+        <span>📚 HSK 1–6 түвшний бүх үг</span>
+        <span className="bs-lvw-entry-sub">♥ дарж цээжлэх жагсаалтаа үүсгэ →</span>
+      </Link>
 
       <DrawInputSheet
         open={drawOpen}

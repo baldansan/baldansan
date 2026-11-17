@@ -465,3 +465,76 @@ export async function getUserWordSrsCounts(
   }
   return { total: data.length, due };
 }
+
+/** Энэ хоногоос урт завсартай үг = «Цээжилсэн» (идэвхтэй жагсаалтаас гарна, сарын дараа нэг шалгана). */
+export const MASTERED_INTERVAL_DAYS = 21;
+
+export function isMasteredSrs(row: { interval_days: number | null | undefined }): boolean {
+  return Number(row.interval_days ?? 0) >= MASTERED_INTERVAL_DAYS;
+}
+
+/** Үгийг «Цээжилсэн» болгоно: 30 хоногийн дараа нэг удаа шалгахаар хойшлуулна. */
+export async function markWordMastered(
+  userId: string,
+  wordId: number
+): Promise<{ data: WordSrsRow | null; error: string | null }> {
+  if (!supabase || !hasSupabaseConfig) return { data: null, error: "Supabase тохиргоо байхгүй." };
+  const due = new Date(Date.now() + 30 * 86_400_000);
+  const { data, error } = await supabase
+    .from("user_word_srs")
+    .upsert(
+      {
+        user_id: userId,
+        word_id: wordId,
+        reps: 5,
+        ease: 2.5,
+        interval_days: 30,
+        due_at: due.toISOString(),
+        last_rating: "known",
+      },
+      { onConflict: "user_id,word_id" }
+    )
+    .select()
+    .single();
+  if (error) return { data: null, error: error.message };
+  return { data: data as WordSrsRow, error: null };
+}
+
+/** «Цээжилсэн»-ээс буцааж идэвхтэй давталтад оруулна (өнөөдрөөс). */
+export async function unmarkWordMastered(
+  userId: string,
+  wordId: number
+): Promise<{ data: WordSrsRow | null; error: string | null }> {
+  if (!supabase || !hasSupabaseConfig) return { data: null, error: "Supabase тохиргоо байхгүй." };
+  const { data, error } = await supabase
+    .from("user_word_srs")
+    .update({ reps: 1, interval_days: 1, due_at: new Date().toISOString(), last_rating: "hard" })
+    .eq("user_id", userId)
+    .eq("word_id", wordId)
+    .select()
+    .single();
+  if (error) return { data: null, error: error.message };
+  return { data: data as WordSrsRow, error: null };
+}
+
+export type WordStudyState = "learning" | "mastered";
+
+/** Хэрэглэгчийн сурч буй бүх үгийн төлөв (үгийн id → learning | mastered). */
+export async function getUserWordStudyStates(userId: string): Promise<Map<number, WordStudyState>> {
+  const map = new Map<number, WordStudyState>();
+  if (!supabase || !hasSupabaseConfig) return map;
+  for (let from = 0; from < 12000; from += 1000) {
+    const { data, error } = await supabase
+      .from("user_word_srs")
+      .select("word_id, interval_days")
+      .eq("user_id", userId)
+      .order("word_id", { ascending: true })
+      .range(from, from + 999);
+    if (error || !data?.length) break;
+    for (const row of data as { word_id: number; interval_days: number | null }[]) {
+      map.set(row.word_id, isMasteredSrs(row) ? "mastered" : "learning");
+    }
+    if (data.length < 1000) break;
+  }
+  return map;
+}

@@ -37,9 +37,9 @@ export async function loadMyWords(): Promise<MyWordsResult> {
   const [srsRes, savedRes] = await Promise.all([
     supabase
       .from("user_word_srs")
-      .select("hsk_word_id, due_at")
+      .select("word_id, due_at, interval_days")
       .eq("user_id", userId)
-      .limit(3000),
+      .limit(5000),
     supabase
       .from("user_saved_words")
       .select("hsk_word_id, source_video_id")
@@ -51,16 +51,26 @@ export async function loadMyWords(): Promise<MyWordsResult> {
   const origin = new Map<number, WordOrigin>();
   const due = new Set<number>();
   const now = Date.now();
-  for (const row of (srsRes.data ?? []) as { hsk_word_id: number | null; due_at: string | null }[]) {
-    if (row.hsk_word_id == null) continue;
-    origin.set(row.hsk_word_id, "hsk");
-    if (!row.due_at || new Date(row.due_at).getTime() <= now) due.add(row.hsk_word_id);
+  // «Цээжилсэн» (урт завсартай) үг тоглоомд орохгүй.
+  const mastered = new Set<number>();
+  for (const row of (srsRes.data ?? []) as {
+    word_id: number | null;
+    due_at: string | null;
+    interval_days: number | null;
+  }[]) {
+    if (row.word_id == null) continue;
+    if (Number(row.interval_days ?? 0) >= 21) {
+      mastered.add(row.word_id);
+      continue;
+    }
+    origin.set(row.word_id, "hsk");
+    if (!row.due_at || new Date(row.due_at).getTime() <= now) due.add(row.word_id);
   }
   for (const row of (savedRes.data ?? []) as {
     hsk_word_id: number | null;
     source_video_id: string | null;
   }[]) {
-    if (row.hsk_word_id == null) continue;
+    if (row.hsk_word_id == null || mastered.has(row.hsk_word_id)) continue;
     // Бичлэгээс хадгалсан нь хамгийн тодорхой эх үүсвэр тул түүнийг эрхэмлэнэ.
     if (row.source_video_id) origin.set(row.hsk_word_id, "video");
     else if (origin.get(row.hsk_word_id) !== "video") origin.set(row.hsk_word_id, "lesson");

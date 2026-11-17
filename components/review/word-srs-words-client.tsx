@@ -11,11 +11,15 @@ import {
 } from "@/lib/supabase/saved-words";
 import {
   getUserSrsWordList,
+  isMasteredSrs,
+  markWordMastered,
+  unmarkWordMastered,
   type SrsWordListItem,
 } from "@/lib/supabase/user-word-srs";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Filter = "all" | "bichleg";
+type Tab = "active" | "mastered";
 
 function formatDueLabel(dueAt: string, reps: number): string {
   if (reps === 0) return "Шинэ";
@@ -34,6 +38,8 @@ export function WordSrsWordsClient() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
+  const [tab, setTab] = useState<Tab>("active");
+  const [busyWordId, setBusyWordId] = useState<number | null>(null);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -85,6 +91,24 @@ export function WordSrsWordsClient() {
     }
   }
 
+  async function handleMastered(wordId: number, mastered: boolean) {
+    const { userId } = await getAuthenticatedUserId();
+    if (!userId) return;
+    setBusyWordId(wordId);
+    const res = mastered ? await markWordMastered(userId, wordId) : await unmarkWordMastered(userId, wordId);
+    setBusyWordId(null);
+    if (res.error || !res.data) {
+      setError(res.error ?? "Хадгалж чадсангүй.");
+      return;
+    }
+    const updated = res.data;
+    setItems((prev) => prev.map((it) => (it.srs.word_id === wordId ? { ...it, srs: updated } : it)));
+  }
+
+  const activeItems = items.filter((it) => !isMasteredSrs(it.srs));
+  const masteredItems = items.filter((it) => isMasteredSrs(it.srs));
+  const shownItems = tab === "active" ? activeItems : masteredItems;
+
   if (loading) {
     return (
       <p className="py-12 text-center text-sm text-[var(--app-muted)]">
@@ -102,13 +126,13 @@ export function WordSrsWordsClient() {
       {items.length > 0 ? (
         <div className="bs-srs-words-stats">
           <span className="bs-srs-words-stat">
-            <b>{items.length}</b> үг цээжлэхээр
+            <b>{activeItems.length}</b> үг цээжилж буй
           </span>
           <span className="bs-srs-words-stat">
-            <b>{items.filter((it) => new Date(it.srs.due_at).getTime() <= Date.now()).length}</b> өнөөдөр давтах
+            <b>{activeItems.filter((it) => new Date(it.srs.due_at).getTime() <= Date.now()).length}</b> өнөөдөр давтах
           </span>
           <span className="bs-srs-words-stat">
-            <b>{items.filter((it) => it.srs.last_rating === "known").length}</b> мэддэг болсон
+            <b>{masteredItems.length}</b> цээжилсэн
           </span>
           <Link href="/review/daily" className="bs-srs-words-start">
             Давтаж эхлэх →
@@ -116,6 +140,25 @@ export function WordSrsWordsClient() {
         </div>
       ) : null}
 
+      <div className="bs-srs-words-filters">
+        <button
+          type="button"
+          className={`bs-srs-words-filter ${tab === "active" ? "bs-srs-words-filter--on" : ""}`}
+          onClick={() => setTab("active")}
+        >
+          Цээжилж буй {activeItems.length}
+        </button>
+        <button
+          type="button"
+          className={`bs-srs-words-filter ${tab === "mastered" ? "bs-srs-words-filter--on" : ""}`}
+          onClick={() => setTab("mastered")}
+        >
+          ✓ Цээжилсэн {masteredItems.length}
+        </button>
+        <Link href="/dictionary/levels" className="bs-srs-words-filter bs-srs-words-add">
+          + HSK үгсээс нэмэх
+        </Link>
+      </div>
       <div className="bs-srs-words-filters">
         <button
           type="button"
@@ -137,15 +180,23 @@ export function WordSrsWordsClient() {
         <p className="bs-srs-words-error">{error}</p>
       ) : null}
 
-      {items.length === 0 && !error ? (
+      {tab === "mastered" && masteredItems.length > 0 ? (
+        <p className="bs-srs-words-sub">
+          Цээжилсэн үг идэвхтэй жагсаалт, тоглоомоос гарна. Мартсан эсэхийг шалгахаар сарын дараа нэг удаа асууна.
+        </p>
+      ) : null}
+
+      {shownItems.length === 0 && !error ? (
         <p className="bs-srs-words-empty">
-          {filter === "bichleg"
-            ? "Бичлэгээс нэмсэн SRS үг алга."
-            : "Одоогоор SRS-д үг бүртгэгдээгүй байна."}
+          {tab === "mastered"
+            ? "Цээжилсэн үг хараахан алга. Сайн мэддэг үгэн дээрээ «Цээжилсэн ✓» дараарай."
+            : filter === "bichleg"
+              ? "Бичлэгээс нэмсэн үг алга."
+              : "Цээжилж буй үг алга. «+ HSK үгсээс нэмэх» дээр дарж үгээ сонгоорой."}
         </p>
       ) : (
         <ul className="bs-srs-words-list">
-          {items.map(({ srs, word, fromBichleg }) => {
+          {shownItems.map(({ srs, word, fromBichleg }) => {
             const posLabel = getPrimaryPosLabelMn(word.pos);
             return (
               <li key={srs.id} className="bs-srs-words-item">
@@ -178,6 +229,14 @@ export function WordSrsWordsClient() {
                       {srs.reps} удаа сурсан
                     </span>
                   ) : null}
+                  <button
+                    type="button"
+                    className="bs-srs-words-master"
+                    disabled={busyWordId === srs.word_id}
+                    onClick={() => void handleMastered(srs.word_id, tab === "active")}
+                  >
+                    {busyWordId === srs.word_id ? "…" : tab === "active" ? "Цээжилсэн ✓" : "↩ Буцааж давтах"}
+                  </button>
                 </div>
               </li>
             );
