@@ -31,6 +31,8 @@ export function SignupForm() {
     (searchParams.get("code") ?? "").replace(/\D/g, "").slice(0, 6)
   );
   const [classCodeValid, setClassCodeValid] = useState(false);
+  // ?code=… линкээр ирсэн бол код талбар нээлттэй; бусдад нуусан.
+  const [showClassCode, setShowClassCode] = useState(() => classCode.length > 0);
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
@@ -159,19 +161,34 @@ export function SignupForm() {
               />
             </label>
 
-            <div className="rounded-2xl bg-slate-50 p-3 ring-1 ring-slate-200">
-              <JoinClassForm
-                initialCode={classCode}
-                mode="peek"
-                onCodeChange={(c, name) => {
-                  setClassCode(c);
-                  setClassCodeValid(Boolean(name));
-                }}
-              />
-              <p className="mt-1 text-xs text-[var(--app-muted)]">
-                {tr(locale, "Сургууль/ангийн сурагч биш бол хоосон орхино.")}
+            {/* Ангийн код — зөвхөн сургуулийн сурагчид. Ихэнх хүнд хэрэггүй тул анхнаасаа нуусан:
+                «код заавал хэрэгтэй» гэж ойлгоод бүртгүүлж чадахгүй байсан хүмүүс гарсан. */}
+            {showClassCode ? (
+              <div className="rounded-2xl bg-slate-50 p-3 ring-1 ring-slate-200">
+                <JoinClassForm
+                  initialCode={classCode}
+                  mode="peek"
+                  onCodeChange={(c, name) => {
+                    setClassCode(c);
+                    setClassCodeValid(Boolean(name));
+                  }}
+                />
+                <p className="mt-1 text-xs text-[var(--app-muted)]">
+                  {tr(locale, "Заавал биш. Багш код өгөөгүй бол хоосон орхиод шууд бүртгүүлнэ.")}
+                </p>
+              </div>
+            ) : (
+              <p className="rounded-xl bg-emerald-50 px-4 py-3 text-xs leading-5 text-[var(--app-text)] ring-1 ring-emerald-100">
+                ✅ {tr(locale, "Код хэрэггүй — имэйл, нууц үгээ бичээд шууд бүртгүүлнэ. Үнэгүй.")}{" "}
+                <button
+                  type="button"
+                  onClick={() => setShowClassCode(true)}
+                  className="font-semibold text-emerald-700 underline"
+                >
+                  {tr(locale, "Багш ангийн код өгсөн бол энд дар")}
+                </button>
               </p>
-            </div>
+            )}
 
             {error ? (
               <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-800 ring-1 ring-red-200">
