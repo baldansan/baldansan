@@ -24,6 +24,8 @@ import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 import { isCurrentUserAdmin } from "@/lib/supabase/admin";
 import { hasSupabaseConfig, signOut } from "@/lib/supabase/auth";
 import { ProfileSrsStats } from "@/components/profile/profile-srs-stats";
+import { ProfileSummary } from "@/components/profile/profile-summary";
+import { ReminderQuickRow } from "@/components/profile/reminder-quick-row";
 import { countCompletedLessonsAll } from "@/lib/progress";
 import { getStreakUnified } from "@/lib/retention/retention-service";
 import type { AuthUser } from "@/types/auth";
@@ -350,11 +352,7 @@ export function ProfileAppView() {
         </MobileCard>
 
         {guestHasProgress ? (
-          <ProfileSrsStats
-            userId={null}
-            streak={streak}
-            completedLessons={completedLessons}
-          />
+          <ProfileSummary userId={null} streak={streak} completedLessons={completedLessons} />
         ) : null}
       </MobileAppShell>
     );
@@ -425,19 +423,10 @@ export function ProfileAppView() {
         <ProfileAvatar displayName={displayName} emoji={ownProfile.avatar} />
         <h1 className="bs-tm-pname" translate="no">{displayName}</h1>
         <p className="bs-tm-prank">
-          {hydrated
-            ? `${formatActiveHskLevel(activeLevel)} ${tr(locale, "суралцагч")}`
-            : tr(locale, "Суралцагч")}
-          {user.email ? <span className="block text-xs opacity-70">{user.email}</span> : null}
+          {hydrated ? formatActiveHskLevel(activeLevel) : tr(locale, "Суралцагч")}
+          {streak > 0 ? ` · 🔥 ${streak} ${tr(locale, "өдөр")}` : ""}
+          {streakFreeze && freezeLeft > 0 ? ` · 🧊 ${freezeLeft}` : ""}
         </p>
-        {streak > 0 ? (
-          <span className="bs-tm-plvlbadge">🔥 {streak} {tr(locale, "өдөр дараалан")}</span>
-        ) : null}
-        {streakFreeze && freezeLeft > 0 ? (
-          <span className="bs-tm-plvlbadge" title={tr(locale, "Нэг өдөр алгасвал streak тасрахгүй")}>
-            🧊 {tr(locale, "Streak хамгаалалт")} {freezeLeft}/{streakFreeze.total}
-          </span>
-        ) : null}
       </div>
 
       {profileError ? (
@@ -446,44 +435,32 @@ export function ProfileAppView() {
         </MobileCard>
       ) : null}
 
-      {/* Групп чат — нүүрнээс энд нүүсэн; уншаагүй мессежийн тоотой */}
-      <Link href="/chat" className="bs-tm-card mb-3">
-        <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
-          💬
-        </span>
-        <span className="flex-1">
-          <span className="bs-tm-card-title">{tr(locale, "Групп чат")}</span>
-          <span className="block text-xs text-[var(--app-muted)]">
-            {tr(locale, "Нэг түвшнийхэнтэйгээ асууж, хамт суралц")}
+      <ProfileSummary userId={user.id} streak={streak} completedLessons={completedLessons}>
+        {/* Групп чат — уншаагүй мессежийн тоотой */}
+        <Link href="/chat" className="bs-tm-card mt-2">
+          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
+            💬
           </span>
-        </span>
-        <HomeChatBadge />
-        <span className="bs-tm-card-chev" aria-hidden>›</span>
-      </Link>
+          <span className="flex-1">
+            <span className="bs-tm-card-title">{tr(locale, "Групп чат")}</span>
+            <span className="block text-xs text-[var(--app-muted)]">
+              {tr(locale, "Нэг түвшнийхэнтэйгээ асууж, хамт суралц")}
+            </span>
+          </span>
+          <HomeChatBadge />
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </Link>
+      </ProfileSummary>
 
-      <ProfileSrsStats
-        userId={user.id}
-        streak={streak}
-        completedLessons={completedLessons}
-      />
-
-      <p className="bs-tm-sec">{tr(locale, "📚 Миний суралцалт")}</p>
-      <LinkRow href="/progress" icon="📈" title={tr(locale, "Ахиц")} sub={tr(locale, "Хичээл, үг, шалгалтын явц")} iconClass="bs-tm-card-ic--green" />
-      <LinkRow href="/points" icon="⭐" title={tr(locale, "Оноо, зэрэглэл")} sub={tr(locale, "Миний оноо, бусадтай харьцуулах")} />
-      <LinkRow href="/weekly-report" icon="🗓" title={tr(locale, "Долоо хоногийн тайлан")} sub={tr(locale, "Энэ долоо хоногт хэр суралцсан бэ")} />
-      <LinkRow href="/reminders" icon="⏰" title={tr(locale, "Сурах сануулга")} sub={tr(locale, "Өдөр бүр ямар цагт сануулах")} />
-
-      <p className="bs-tm-sec mt-5">{tr(locale, "👥 Бусадтай хамт")}</p>
-      <LinkRow href="/join" icon="🏫" title={tr(locale, "Ангид орох")} sub={tr(locale, "Багшийн өгсөн 6 оронтой кодоор")} />
-      <LinkRow href="/family" icon="👨‍👩‍👧" title={tr(locale, "Хүүхдийн бүртгэл")} sub={tr(locale, "Хүүхдэдээ тусдаа бүртгэл нээх (PIN-тэй)")} />
-
-      <p className="bs-tm-sec mt-5">{tr(locale, "⚙️ Бүртгэл")}</p>
-      <details className="bs-tm-card mt-2 block">
+      <p className="bs-tm-sec mt-5">{tr(locale, "Тохиргоо")}</p>
+      <ReminderQuickRow />
+      <LinkRow href="/join" icon="🏫" title={tr(locale, "Ангид орох")} />
+      <LinkRow href="/family" icon="👨‍👩‍👧" title={tr(locale, "Хүүхдийн бүртгэл")} />
+      <details className="bs-tm-card mt-2" style={{ display: "block" }}>
         <summary className="flex cursor-pointer list-none items-center gap-3 [&::-webkit-details-marker]:hidden">
           <span className="bs-tm-card-ic" aria-hidden>✏️</span>
           <span className="flex-1">
             <span className="bs-tm-card-title">{tr(locale, "Нэр, зураг засах")}</span>
-            <span className="block text-xs text-[var(--app-muted)]">{tr(locale, "Чат болон зэрэглэлд харагдах нэр")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>▾</span>
         </summary>
@@ -491,8 +468,7 @@ export function ProfileAppView() {
           <ChatProfileSettings userId={user.id} defaultName={emailName} />
         </div>
       </details>
-      <LinkRow href="/notifications" icon="🔔" title={tr(locale, "Мэдэгдэл")} />
-      <LinkRow href="/settings" icon="⚙️" title={tr(locale, "Тохиргоо")} sub={tr(locale, "Хэл, түвшин, дуу, бусад")} />
+      <LinkRow href="/settings" icon="⚙️" title={tr(locale, "Тохиргоо")} />
       {isAdmin ? (
         <LinkRow href="/admin" icon="🛠" title={tr(locale, "Админ самбар")} iconClass="bs-tm-card-ic--purple" />
       ) : null}

@@ -66,7 +66,7 @@ export async function GET() {
     const res = await sendPushToUsers(service, [r.user_id], {
       title: "⏰ Сурах цаг боллоо",
       body: r.title?.trim() || "Өнөөдрийн үгээ цээжилье!",
-      url: "/study-plan",
+      url: "/home",
     });
     configured = res.configured;
     if (!res.configured) break;

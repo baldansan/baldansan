@@ -1,9 +1,6 @@
-import { WeeklyReportView } from "@/components/engagement/weekly-report-view";
+import { redirect } from "next/navigation";
 
-export const metadata = {
-  title: "Weekly report — Бөөндөө Сурцгаая",
-};
-
-export default function WeeklyReportPage() {
-  return <WeeklyReportView />;
+/** 7 хоногийн тайлан «Миний ахиц» (/progress) рүү нэгдсэн. */
+export default function Page() {
+  redirect("/progress");
 }

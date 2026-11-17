@@ -1794,3 +1794,71 @@ html[data-theme="dark"] .bs-tm-bdg--on {
 .bs-today-step-meta { display: block; font-size: 12px; font-weight: 600; color: var(--app-muted, #7b897f); }
 .bs-today-go { flex-shrink: 0; padding: 8px 14px; border-radius: 999px; background: #1fb85a; color: #fff; font-size: 13px; font-weight: 900; }
 .bs-today-chev { flex-shrink: 0; font-size: 20px; color: var(--app-muted, #b9c4bd); }
+
+/* ── Миний ахиц (нэг дэлгэц) ─────────────────────────────── */
+.bs-mp-card { background: var(--app-surface, #fff); border: 1px solid var(--app-border, #e6ece8); border-radius: 22px; padding: 16px; margin-bottom: 12px; }
+.bs-mp-k { font-size: 12px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--app-muted); }
+.bs-mp-bars { display: flex; gap: 8px; align-items: flex-end; margin-top: 10px; }
+.bs-mp-bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.bs-mp-bar-track { height: 92px; width: 100%; display: flex; align-items: flex-end; }
+.bs-mp-bar { display: block; width: 100%; border-radius: 9px; background: color-mix(in srgb, var(--app-muted) 22%, transparent); }
+.bs-mp-bar--on { background: #1fb85a; }
+.bs-mp-bar-l { font-size: 12px; font-weight: 800; color: var(--app-muted); }
+.bs-mp-bar-l--today { color: #149247; }
+.bs-mp-sum { margin-top: 10px; font-size: 14px; line-height: 1.45; color: var(--app-text); }
+.bs-mp-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
+.bs-mp-stats > div { background: var(--app-surface, #fff); border: 1px solid var(--app-border, #e6ece8); border-radius: 18px; padding: 12px 4px; text-align: center; }
+.bs-mp-stats b { display: block; font-size: 20px; font-weight: 900; color: var(--app-text); line-height: 1.15; }
+.bs-mp-stats span { font-size: 11.5px; font-weight: 700; color: var(--app-muted); }
+.bs-mp-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 15px; color: var(--app-text); }
+.bs-mp-row span { font-size: 13px; font-weight: 700; color: var(--app-muted); }
+.bs-mp-prog { height: 12px; border-radius: 9px; background: color-mix(in srgb, var(--app-muted) 18%, transparent); margin-top: 10px; overflow: hidden; }
+.bs-mp-prog i { display: block; height: 100%; border-radius: 9px; background: #1fb85a; }
+.bs-mp-hint { margin-top: 8px; font-size: 13px; font-weight: 600; color: var(--app-muted); }
+.bs-mp-login { display: block; text-align: center; margin-bottom: 12px; padding: 13px; border-radius: 18px; background: #149247; color: #fff; font-weight: 800; font-size: 15px; }
+.bs-mp-list { padding: 4px 16px; }
+.bs-mp-li { display: flex; align-items: center; gap: 12px; padding: 13px 0; cursor: pointer; list-style: none; }
+.bs-mp-li::-webkit-details-marker { display: none; }
+.bs-mp-list > * + * { border-top: 1px solid var(--app-border, #eef2ef); }
+.bs-mp-ic { width: 40px; height: 40px; border-radius: 13px; display: grid; place-items: center; font-size: 20px; background: color-mix(in srgb, #1fb85a 12%, transparent); flex-shrink: 0; }
+.bs-mp-li-body { flex: 1; min-width: 0; }
+.bs-mp-li-body b { display: block; font-size: 15.5px; color: var(--app-text); }
+.bs-mp-li-body span { display: block; font-size: 12.5px; font-weight: 600; color: var(--app-muted); }
+.bs-mp-chev { color: var(--app-muted); font-size: 20px; opacity: .6; }
+.bs-mp-chev--down { font-size: 15px; transition: transform .2s; }
+.bs-mp-hist[open] .bs-mp-chev--down { transform: rotate(180deg); }
+.bs-mp-hist-empty { padding-bottom: 14px; }
+.bs-mp-days { padding-bottom: 10px; }
+.bs-mp-day { border-top: 1px dashed var(--app-border, #e6ece8); }
+.bs-mp-day summary { display: flex; justify-content: space-between; gap: 10px; padding: 10px 0; cursor: pointer; list-style: none; font-size: 14px; color: var(--app-text); }
+.bs-mp-day summary::-webkit-details-marker { display: none; }
+.bs-mp-day summary span { font-size: 12.5px; color: var(--app-muted); }
+.bs-mp-day em, .bs-mp-day summary em { font-style: normal; font-weight: 800; color: #149247; }
+.bs-mp-day ul { margin: 0 0 10px; padding-left: 10px; border-left: 2px solid color-mix(in srgb, #1fb85a 25%, transparent); display: grid; gap: 7px; }
+.bs-mp-day li { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; color: var(--app-text); }
+.bs-mp-day li small { font-size: 11.5px; color: var(--app-muted); }
+.bs-mp-time { width: 40px; flex-shrink: 0; font-size: 11.5px; font-variant-numeric: tabular-nums; color: var(--app-muted); padding-top: 2px; }
+.bs-mp-entry { flex: 1; min-width: 0; }
+.bs-mp-entry small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── Профайл: «Миний ахиц» карт, сануулга ─────────────────── */
+.bs-pp-card { display: block; border-radius: 24px; padding: 16px; margin-bottom: 12px; color: #fff; background: linear-gradient(135deg, #1fb85a, #047857); box-shadow: 0 10px 24px -14px rgba(4, 120, 87, .7); }
+.bs-pp-card-head { display: flex; justify-content: space-between; align-items: center; font-size: 17px; font-weight: 900; }
+.bs-pp-card-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
+.bs-pp-st { display: block; background: rgba(255, 255, 255, .18); border-radius: 16px; padding: 10px 4px; text-align: center; }
+.bs-pp-st b { display: block; font-size: 22px; font-weight: 900; line-height: 1.15; }
+.bs-pp-st i { font-style: normal; font-size: 12px; font-weight: 700; opacity: .92; }
+.bs-pp-rem-val { font-size: 13px; font-weight: 700; color: var(--app-muted); }
+.bs-pp-rem-val--on { color: #149247; }
+.bs-pp-rem-body { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--app-border, #e6ece8); display: grid; gap: 12px; }
+.bs-pp-rem-line { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 15px; font-weight: 700; color: var(--app-text); }
+.bs-pp-rem-line input[type="time"] { border: 1px solid var(--app-border, #d7e0da); border-radius: 12px; padding: 8px 10px; font-size: 16px; font-weight: 800; background: var(--app-surface, #fff); color: var(--app-text); }
+.bs-pp-switch { position: relative; width: 52px; height: 30px; border-radius: 999px; background: color-mix(in srgb, var(--app-muted) 35%, transparent); transition: background .2s; flex-shrink: 0; }
+.bs-pp-switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .3); transition: transform .2s; }
+.bs-pp-switch[aria-checked="true"] { background: #1fb85a; }
+.bs-pp-switch[aria-checked="true"]::after { transform: translateX(22px); }
+.bs-pp-rem-note { font-size: 12.5px; font-weight: 600; color: var(--app-muted); line-height: 1.4; }
+
+/* ── Давтах: гарчиг, «Эхлэх» ─────────────────────────────── */
+.bs-rv-title { font-size: 24px; font-weight: 900; letter-spacing: -.3px; color: var(--app-text); margin: 2px 2px 12px; }
+.bs-rv-go { flex-shrink: 0; align-self: center; background: #fff; color: #ea580c; font-weight: 900; font-size: 14px; padding: 9px 15px; border-radius: 999px; }

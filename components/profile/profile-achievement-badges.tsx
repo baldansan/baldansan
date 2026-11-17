@@ -18,6 +18,7 @@ type Props = {
   completedLessons: number;
   accuracyPct: number;
   activeLevel: ActiveHskLevel;
+  hideTitle?: boolean;
 };
 
 export function ProfileAchievementBadges({
@@ -26,6 +27,7 @@ export function ProfileAchievementBadges({
   completedLessons,
   accuracyPct,
   activeLevel,
+  hideTitle = false,
 }: Props) {
   const locale = useUiLocale();
   const [earnedKeys, setEarnedKeys] = useState<Set<string>>(new Set());
@@ -51,7 +53,7 @@ export function ProfileAchievementBadges({
 
   return (
     <>
-      <p className="bs-tm-sec">{tr(locale, "🏆 Амжилтын тэмдэг")}</p>
+      {hideTitle ? null : <p className="bs-tm-sec">{tr(locale, "🏆 Амжилтын тэмдэг")}</p>}
       <div className="bs-tm-badges">
         {PROFILE_BADGE_DEFS.map((badge) => {
           const on = badge.isEarned(ctx);

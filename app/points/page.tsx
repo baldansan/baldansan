@@ -1,9 +1,6 @@
-import { PointsView } from "@/components/points/points-view";
+import { redirect } from "next/navigation";
 
-export const metadata = {
-  title: "Миний оноо — Бөөндөө Сурцгаая",
-};
-
-export default function PointsPage() {
-  return <PointsView />;
+/** Оноо «Миний ахиц» (/progress) рүү нэгдсэн. */
+export default function Page() {
+  redirect("/progress");
 }

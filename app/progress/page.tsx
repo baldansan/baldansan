@@ -1,15 +1,10 @@
-import { LanguageFilteredProgressView } from "@/components/mobile/language-filtered-progress-view";
-import { getAllPublicLessonSummariesProbe } from "@/lib/content";
-
-export const revalidate = 120;
+import { MyProgressView } from "@/components/progress/my-progress-view";
 
 export const metadata = {
-  title: "Миний явц — Бөөндөө Сурцгаая",
-  description: "Миний ахиц, quiz болон vocabulary статистик.",
+  title: "Миний ахиц — Бөөндөө Сурцгаая",
+  description: "Энэ 7 хоног, сурсан үг, хичээл, оноо — нэг дэлгэцэд.",
 };
 
-/** Progress hub — filtered by selected language track. */
-export default async function ProgressPage() {
-  const allLessons = await getAllPublicLessonSummariesProbe();
-  return <LanguageFilteredProgressView allLessons={allLessons} />;
+export default function ProgressPage() {
+  return <MyProgressView />;
 }

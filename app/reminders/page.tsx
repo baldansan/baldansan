@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Сануулгын тохиргоо «Миний сурах систем» (/study-plan) рүү нэгдсэн. */
+/** Сануулга одоо Профайл дээрх ганц мөр тохиргоо. */
 export default function RemindersPage() {
-  redirect("/study-plan");
+  redirect("/profile#reminder");
 }

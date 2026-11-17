@@ -6,15 +6,15 @@ import { loadStudyPlanData } from "@/lib/study-plan/study-plan-server";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Сургалтын төлөвлөгөө — Бөөндөө Сурцгаая",
-  description: "Өдрийн зорилго, долоо хоногийн төлөвлөгөө — нэг дэлгэцэд.",
+  title: "Миний зорилго — Бөөндөө Сурцгаая",
+  description: "Зорилго, өдрийн үг, сануулга.",
 };
 
 export default async function StudyPlanPage() {
   const data = await loadStudyPlanData();
 
   return (
-    <MobileAppShell activeTab="home" mainClassName={SHELL_MAIN_NARROW}>
+    <MobileAppShell activeTab="profile" mainClassName={SHELL_MAIN_NARROW}>
       <StudyPlanContent data={data} />
     </MobileAppShell>
   );

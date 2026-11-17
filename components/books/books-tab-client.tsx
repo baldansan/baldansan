@@ -7,6 +7,7 @@ import { readLocalSnapshot } from "@/lib/cache/local-snapshot";
 import { CourseCover } from "@/components/courses/course-cover";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
+import { getLessonProgressMapSmart } from "@/lib/progress";
 
 export type BooksTabEntry = {
   key: string;
@@ -17,6 +18,7 @@ export type BooksTabEntry = {
   coverUrl: string | null;
   available: boolean;
   lessonCount: number;
+  lessonIds: string[];
   href: string;
 };
 
@@ -52,6 +54,27 @@ export function BooksTabClient(props: Props) {
     }
   }, []);
   const all = [...props.standard, ...props.fazhan, ...props.yct];
+  // Ном бүрийн дууссан хичээлийн тоо — хавтасны доорх ахицын зураас.
+  const [doneByBook, setDoneByBook] = useState<Record<string, number>>({});
+  useEffect(() => {
+    let alive = true;
+    const books = [...props.standard, ...props.fazhan, ...props.yct].filter((b) => b.available);
+    const ids = Array.from(new Set(books.flatMap((b) => b.lessonIds)));
+    if (ids.length === 0) return;
+    void getLessonProgressMapSmart(ids)
+      .then(({ byLesson }) => {
+        if (!alive) return;
+        const next: Record<string, number> = {};
+        for (const b of books) {
+          next[b.key] = b.lessonIds.filter((id) => byLesson[id] === "completed").length;
+        }
+        setDoneByBook(next);
+      })
+      .catch(() => undefined);
+    return () => {
+      alive = false;
+    };
+  }, [props.standard, props.fazhan, props.yct]);
   const currentBook = current ? all.find((entry) => entry.key === current.key) : null;
 
   const open = (entry: BooksTabEntry) => {
@@ -68,7 +91,7 @@ export function BooksTabClient(props: Props) {
 
   return (
     <MobileAppShell activeTab="books" desktopWidth="wide">
-      <MobilePageHeader title="Ном" subtitle="Сурах номоо сонго. Бүх ном, бүх хичээл үнэгүй." />
+      <MobilePageHeader title="Ном" subtitle="Сурах номоо сонго." />
       {currentBook && current?.href ? (
         <Link href={current.href} className="bs-tm-continue bs-tm-continue--main">
           <span className="bs-tm-continue-ic" aria-hidden>
@@ -131,8 +154,20 @@ export function BooksTabClient(props: Props) {
                   >
                     {entry.label}
                   </span>
-                  <span className="px-0.5 text-[11px] font-semibold text-[var(--app-muted)]">
-                    {entry.available ? `${entry.lessonCount} хичээл` : "Удахгүй"}
+                  {entry.available && (doneByBook[entry.key] ?? 0) > 0 ? (
+                    <span className="mx-0.5 mt-1 block h-1.5 overflow-hidden rounded-full bg-[color-mix(in_srgb,var(--app-muted)_22%,transparent)]">
+                      <i
+                        className="block h-full rounded-full bg-emerald-500"
+                        style={{ width: `${Math.max(6, Math.round((doneByBook[entry.key] / Math.max(1, entry.lessonCount)) * 100))}%` }}
+                      />
+                    </span>
+                  ) : null}
+                  <span className="px-0.5 pt-0.5 text-[11px] font-semibold text-[var(--app-muted)]">
+                    {!entry.available
+                      ? "Удахгүй"
+                      : (doneByBook[entry.key] ?? 0) > 0
+                        ? `${doneByBook[entry.key]}/${entry.lessonCount} хичээл`
+                        : `${entry.lessonCount} хичээл`}
                   </span>
                 </button>
               ))}

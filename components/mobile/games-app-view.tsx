@@ -3,14 +3,13 @@
 import Link from "next/link";
 import { PrefetchLink } from "@/components/navigation/prefetch-link";
 import { useEffect, useMemo, useState } from "react";
+import { GamesChallengeCard } from "@/components/games/games-challenge-card";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
 import {
   isPrelessonLessonId,
   resolveGameLabels,
 } from "@/lib/games/game-lesson-meta";
-import { getGameStats } from "@/lib/games/game-progress";
-import { getDailyMissions, type DailyMission } from "@/lib/games/game-fx";
 import {
   LEVEL_GAMES,
   TOTAL_LEVELS,
@@ -193,18 +192,11 @@ function GameTile({
 export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   const locale = useUiLocale();
   const [lang, setLang] = useState<SelectedLanguage | null>(null);
-  const [played, setPlayed] = useState(0);
-  const [bestScore, setBestScore] = useState(0);
-  const [avgAccuracy, setAvgAccuracy] = useState(0);
   const [currentLessonId, setCurrentLessonId] = useState("1");
   const [lessonTitle, setLessonTitle] = useState<string | null>(null);
   const [levelInfo, setLevelInfo] = useState<Partial<Record<LevelGame, LevelInfo>>>({});
   const [campaignStars, setCampaignStars] = useState(0);
   const [campaignGame, setCampaignGame] = useState<LevelGame>("arrange");
-  const [missions, setMissions] = useState<DailyMission[]>([]);
-  useEffect(() => {
-    setMissions(getDailyMissions());
-  }, []);
 
   const isPrelesson = isPrelessonLessonId(currentLessonId);
   const games = useMemo(
@@ -217,11 +209,6 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
   }, []);
 
   useEffect(() => {
-    const stats = getGameStats();
-    setPlayed(stats.played);
-    setBestScore(stats.bestScore);
-    setAvgAccuracy(stats.avgAccuracy);
-
     const fallbackId = lessonIds[0] ?? "1";
     setCurrentLessonId(fallbackId);
     setLessonTitle(lessonTitles[fallbackId] ?? null);
@@ -244,10 +231,6 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
     refreshLevels();
 
     const refresh = () => {
-      const s = getGameStats();
-      setPlayed(s.played);
-      setBestScore(s.bestScore);
-      setAvgAccuracy(s.avgAccuracy);
       refreshLevels();
     };
     window.addEventListener("focus", refresh);
@@ -262,54 +245,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
 
   return (
     <MobileAppShell activeTab="games" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
-      <h1 className="bs-tm-page-title bs-page-in">{tr(locale, "Тоглоом")} 🎮</h1>
-
-      <div className="bs-tm-stat-row bs-page-in">
-        <div className="bs-tm-stat">
-          <div className="bs-tm-stat-ic" aria-hidden>
-            🎮
-          </div>
-          <div className="bs-tm-stat-n">{played}</div>
-          <div className="bs-tm-stat-l">{tr(locale, "Тоглосон")}</div>
-        </div>
-        <div className="bs-tm-stat">
-          <div className="bs-tm-stat-ic" aria-hidden>
-            🏆
-          </div>
-          <div className="bs-tm-stat-n">{bestScore}</div>
-          <div className="bs-tm-stat-l">{tr(locale, "Дээд оноо")}</div>
-        </div>
-        <div className="bs-tm-stat">
-          <div className="bs-tm-stat-ic" aria-hidden>
-            🎯
-          </div>
-          <div className="bs-tm-stat-n">{avgAccuracy}%</div>
-          <div className="bs-tm-stat-l">{tr(locale, "Нарийвчлал")}</div>
-        </div>
-      </div>
-
-      {missions.length > 0 ? (
-        <div className="bs-tm-missions">
-          <div className="bs-tm-missions-head">
-            <span>🎯 {tr(locale, "Өдрийн даалгавар")}</span>
-            <span className="bs-tm-missions-count">
-              {missions.every((m) => m.done)
-                ? tr(locale, "Бүгд биелэв!")
-                : `${missions.filter((m) => m.done).length}/${missions.length}`}
-            </span>
-          </div>
-          <ul className="bs-tm-missions-list">
-            {missions.map((m) => (
-              <li key={m.id} className={m.done ? "bs-tm-mission bs-tm-mission--done" : "bs-tm-mission"}>
-                <span className="bs-tm-mission-check" aria-hidden>{m.done ? "✓" : ""}</span>
-                <span className="bs-tm-mission-label">{tr(locale, m.label)}</span>
-                <span className="bs-tm-mission-bar"><i style={{ width: `${Math.round((m.current / m.target) * 100)}%` }} /></span>
-                <span className="bs-tm-mission-num">{m.current}/{m.target}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
+      <h1 className="bs-tm-page-title bs-page-in">{tr(locale, "Тоглоом")}</h1>
 
       {lang === "zh" ? (
         <>
@@ -323,17 +259,11 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
               height={112}
               className="pointer-events-none float-right -mr-2 -mt-3 ml-2 h-28 w-28 select-none object-contain drop-shadow-[0_6px_12px_rgba(0,0,0,0.2)]"
             />
-            <p className="text-[11px] font-extrabold uppercase tracking-widest text-emerald-100">
-              {tr(locale, "Нэг тоглоом · 8 төрөл")}
-            </p>
             <h2 className="mt-1 text-2xl font-extrabold leading-tight">
               {tr(locale, "Тоглож сурах")}
             </h2>
             <p className="mt-1 text-sm leading-5 text-emerald-50">
-              {tr(
-                locale,
-                "Өөрийн үгс эсвэл HSK үгсээр тоглоно. Утга, ханз, пиньинь, сонсох, диктант, холбох — аль алийг нь холихоо ⚙ дээрээс сонгоно."
-              )}
+              {tr(locale, "Өөрийн үгс эсвэл HSK үгсээр · 3 минут")}
             </p>
             <PrefetchLink
               href="/games/learn"
@@ -342,10 +272,10 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
             >
               ▶ {tr(locale, "Эхлэх")}
             </PrefetchLink>
-            <p className="mt-4 text-[11px] font-bold uppercase tracking-wider text-emerald-100">
-              {tr(locale, "Бэлэн горимууд")}
-            </p>
-            <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+          </section>
+
+          <p className="bs-tm-sec">{tr(locale, "Өөр горим")}</p>
+            <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
               {[
                 { preset: "marathon", icon: "🏃", label: "Марафон", hint: "Давтах бүх үгээ" },
                 { preset: "speed", icon: "⚡", label: "Хурдны горим", hint: "6 секундэд хариул" },
@@ -355,31 +285,22 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
                 <PrefetchLink
                   key={p.preset}
                   href={`/games/learn?preset=${p.preset}`}
-                  className="rounded-2xl bg-white/15 px-3 py-2.5 ring-1 ring-white/25 backdrop-blur transition hover:bg-white/25 active:scale-[0.98]"
+                  className="rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] px-3.5 py-3 shadow-[var(--app-shadow)] transition active:scale-[0.98]"
                 >
-                  <p className="text-sm font-extrabold">
-                    {p.icon} {tr(locale, p.label)}
-                  </p>
-                  <p className="text-[11px] text-emerald-50">{tr(locale, p.hint)}</p>
+                  <p className="text-2xl" aria-hidden>{p.icon}</p>
+                  <p className="mt-1 text-[15px] font-extrabold text-[var(--app-text)]">{tr(locale, p.label)}</p>
+                  <p className="text-xs text-[var(--app-muted)]">{tr(locale, p.hint)}</p>
                 </PrefetchLink>
               ))}
             </div>
-          </section>
 
-          <p className="bs-tm-sec">{tr(locale, "Шалгалт")}</p>
-          <div className="bs-tm-game-grid bs-stagger">
-            {CHINESE_HSK_GAMES.filter(
-              (g) => g.slug !== "hsk-vocab-quiz" && g.slug !== "dictation"
-            ).map((game) => (
-              <GameTile key={game.id} game={game} href={`/games/${game.slug}`} />
-            ))}
-          </div>
+          <GamesChallengeCard />
 
           <details className="mt-5 rounded-3xl bg-[var(--app-card)] p-3 ring-1 ring-[var(--app-border)]">
             <summary className="cursor-pointer list-none px-2 py-1 text-sm font-bold text-[var(--app-text)] [&::-webkit-details-marker]:hidden">
-              📘 {tr(locale, "Хичээлээр дасгал хийх")}{" "}
+              {tr(locale, "Бусад тоглоом")}{" "}
               <span className="font-medium text-slate-500">
-                — {lessonTitle ?? tr(locale, "одоогийн хичээл")} ▾
+                — {tr(locale, "өдрийн сорил, үе давах, хичээлийн дасгал")} ▾
               </span>
             </summary>
             <div className="mt-3 flex flex-col gap-3">
@@ -407,6 +328,9 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
       ) : null}
 
       <div className="bs-tm-game-grid bs-stagger">
+        {CHINESE_HSK_GAMES.filter((g) => g.slug === "daily-challenge").map((game) => (
+          <GameTile key={game.id} game={game} href={`/games/${game.slug}`} />
+        ))}
         {games.map((game) => {
           const href = game.global
             ? `/games/${game.slug}`

@@ -22,6 +22,7 @@ function slim(
     coverUrl: entry.coverUrl ?? null,
     available: entry.available,
     lessonCount: entry.lessons.length,
+    lessonIds: entry.lessons.map((lesson) => String(lesson.id)),
     href: entry.allLessonsHref ?? `/courses/${entry.courseId}`,
   }));
 }

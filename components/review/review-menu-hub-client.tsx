@@ -182,11 +182,6 @@ export function ReviewMenuHubClient({
     setWritingDue(countDueLocalWriting());
   }, []);
 
-  const progressPct =
-    stats.dailyGoal > 0
-      ? Math.min(100, Math.round((stats.dailyDone / stats.dailyGoal) * 100))
-      : 0;
-
   const shownName =
     displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName;
 
@@ -199,42 +194,10 @@ export function ReviewMenuHubClient({
           ? `${writingDue} ${tr(locale, "бичих карт хүлээж байна")}`
           : tr(locale, "Өнөөдөр давтах зүйл алга");
 
-  const dailyGoalDone =
-    !loading && stats.dailyDone >= stats.dailyGoal && stats.dailyGoal > 0;
-
-  // Давтах карт огт байхгүй үед «давталтаа хийе!» гэвэл доорх «давтах зүйл алга»-тай зөрчилдөнө.
-  const nothingDue = !loading && stats.dueCards === 0 && writingDue === 0;
-
-  const greetTitle = dailyGoalDone
-    ? tr(locale, "Өдрийн зорилт дууслаа! 🎉")
-    : nothingDue
-      ? tr(locale, "Өнөөдөр давтах карт алга")
-      : tr(locale, "Өнөөдрийн давталтаа хийе!");
-  const greetSub = dailyGoalDone
-    ? `${tr(locale, "Гайхалтай,")} ${shownName}! ${tr(locale, "Үргэлжлүүлээрэй")}`
-    : nothingDue
-      ? tr(locale, "Шинэ хичээл үзэх тусам үгс энд нэмэгдэнэ")
-      : `${stats.dailyDone}/${stats.dailyGoal} ${tr(locale, "карт")} · ${shownName}`;
-
-  const memorizeStatus = tr(locale, "Бүх түвшний үгийн сан");
-
   const testStatus =
     testCount > 0
       ? `${testCount} ${tr(locale, "шалгалт бэлэн")}`
       : tr(locale, "Тест оруулаагүй байна");
-
-  const studyPlanCard = (
-    <PrefetchLink href="/study-plan" className="bs-tm-card">
-      <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
-        📅
-      </span>
-      <span className="bs-tm-card-body">
-        <span className="bs-tm-card-title">{tr(locale, "Сурах төлөвлөгөө")}</span>
-        <span className="bs-tm-card-sub">{tr(locale, "Хичээл, давталт, бичлэг")}</span>
-      </span>
-      <span className="bs-tm-card-chev" aria-hidden>›</span>
-    </PrefetchLink>
-  );
 
   // Дуу · Бичлэг — доод цэснээс «Давтах» руу нүүсэн тул үргэлж харагдана.
   const bichlegCard = (
@@ -277,8 +240,6 @@ export function ReviewMenuHubClient({
           <div className="bs-tm-stat-l">{tr(locale, "бичих")}</div>
         </div>
       </div>
-      {studyPlanCard}
-      {bichlegCard}
       <p className="bs-tm-sec">{tr(locale, "Материал")}</p>
       <PrefetchLink href="/nom" className="bs-tm-card">
         <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>📖</span>
@@ -308,304 +269,124 @@ export function ReviewMenuHubClient({
       rightRail={rightRail}
     >
       <div className="bs-review-hub">
-        <div className="bs-tm-topbar bs-page-in">
-          <div className="bs-tm-hello">
-            {tr(locale, "Сайн уу 👋")}
-            <b>{shownName}</b>
-          </div>
-          <div className="bs-tm-streak-pill">
-            <span aria-hidden>🔥</span>
-            <div>
-              <b>{stats.streak}</b>
-              <span>{tr(locale, "өдөр")}</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="bs-tm-greet">
-          <TemeeMascot streak={stats.streak} hideLine size="md" className="bs-tm-greet-img bs-tm-greet-mascot" />
-          <div className="bs-tm-bubble">
-            <p className="bs-tm-bubble-title">
-              {loading ? tr(locale, "Ачааллаж байна…") : greetTitle}
-            </p>
-            <p className="bs-tm-bubble-sub">
-              {loading ? tr(locale, "Түр хүлээнэ үү") : greetSub}
-            </p>
-          </div>
-        </div>
-
-        <div className="bs-tm-stat-row">
-          <div className="bs-tm-stat">
-            <div className="bs-tm-stat-ic" aria-hidden>
-              📚
-            </div>
-            <div className="bs-tm-stat-n">
-              {loading ? "—" : stats.studiedCount}
-            </div>
-            <div className="bs-tm-stat-l">{tr(locale, "Сурсан үг")}</div>
-          </div>
-          <div className="bs-tm-stat">
-            <div className="bs-tm-stat-ic" aria-hidden>
-              🎯
-            </div>
-            <div className="bs-tm-stat-n">
-              {loading ? "—" : `${stats.accuracyPct}%`}
-            </div>
-            <div className="bs-tm-stat-l">{tr(locale, "Нарийвчлал")}</div>
-          </div>
-          <div className="bs-tm-stat">
-            <div className="bs-tm-stat-ic" aria-hidden>
-              ⚡
-            </div>
-            <div className="bs-tm-stat-n">
-              {loading ? "—" : stats.dailyDone}
-            </div>
-            <div className="bs-tm-stat-l">{tr(locale, "Өнөөдөр")}</div>
-          </div>
-        </div>
-
-        <p className="bs-tm-sec">{tr(locale, "Өнөөдөр юу хийх вэ?")}</p>
+        <h1 className="bs-rv-title bs-page-in">{tr(locale, "Давтах")}</h1>
 
         <PrefetchLink href="/review/daily" className="bs-tm-feat">
-          <TemeeEmojiIcon
-            variant="featured"
-            className="bs-tm-feat-img"
-            width={70}
-            height={70}
-          />
+          <TemeeEmojiIcon variant="featured" className="bs-tm-feat-img" width={70} height={70} />
           <div className="flex-1 min-w-0">
             <p className="bs-tm-feat-title">{tr(locale, "Өнөөдрийн давталт 🔥")}</p>
-            <p className="bs-tm-feat-sub">
-              {loading ? tr(locale, "Ачааллаж байна…") : dueLabel}
-            </p>
-            <div className="bs-tm-feat-bar">
-              <i style={{ width: `${loading ? 0 : progressPct}%` }} />
-            </div>
+            <p className="bs-tm-feat-sub">{loading ? tr(locale, "Ачааллаж байна…") : dueLabel}</p>
           </div>
+          <span className="bs-rv-go">{tr(locale, "Эхлэх")}</span>
         </PrefetchLink>
 
-        <div className="bs-desk-hide">
-          {studyPlanCard}
-          <PrefetchLink href={`/listen/daily?level=${activeLevel}`} className="bs-tm-card">
-            <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
-              🎧
-            </span>
-            <span className="bs-tm-card-body">
-              <span className="bs-tm-card-title">{tr(locale, "Өнөөдрийн сонсгол")}</span>
-              <span className="bs-tm-card-sub">{tr(locale, "10 асуулт · 5 минут")}</span>
-            </span>
-            <span className="bs-tm-card-chev" aria-hidden>›</span>
-          </PrefetchLink>
-          {bichlegCard}
-          <PrefetchLink href="/talk" className="bs-tm-card">
-            <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
-              🗣️
-            </span>
-            <span className="bs-tm-card-body">
-              <span className="bs-tm-card-title">{tr(locale, "Ярилцах дадлага")}</span>
-              <span className="bs-tm-card-sub">{tr(locale, "Дэлгүүр, гуанз, такси — хятадаар ярьж үз")}</span>
-            </span>
-            <span className="bs-tm-card-chev" aria-hidden>›</span>
-          </PrefetchLink>
-        </div>
-
-        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
-          {tr(locale, "Үг, ханзаа давтах")}
-        </p>
-        <div className="bs-tm-grid bs-stagger">
+        <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Үг")}</p>
         <PrefetchLink href="/review/words" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
-            📌
-          </span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>📌</span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">
-              {tr(locale, "Миний үгс")}
-              {savedWords && savedWords.total > 0 ? ` · ${savedWords.total}` : ""}
-            </span>
-            <span className="bs-tm-card-sub">
-              {savedWords && savedWords.total > 0
+            <span className="bs-tm-card-title">{tr(locale, "Миний үгс")}</span>
+            <span className="bs-tm-card-sub">{savedWords && savedWords.total > 0
                 ? savedWords.due > 0
-                  ? `${tr(locale, "Цээжлэх")} ${savedWords.total} ${tr(locale, "үг")} · ${savedWords.due} ${tr(locale, "өнөөдөр давтах")}`
-                  : `${tr(locale, "Цээжлэх")} ${savedWords.total} ${tr(locale, "үг")} · ${tr(locale, "өнөөдөр бүгд давтагдсан")}`
-                : tr(locale, "Хичээлээс хадгалсан үгс чинь энд цугларна")}
-            </span>
+                  ? `${savedWords.total} ${tr(locale, "үг")} · ${savedWords.due} ${tr(locale, "өнөөдөр давтах")}`
+                  : `${savedWords.total} ${tr(locale, "үг")}`
+                : tr(locale, "Хичээлээс хадгалсан үгс чинь энд цугларна")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
-
         <PrefetchLink href="/review/memorize" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
-            💡
-          </span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>💡</span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Бүх HSK үг")}</span>
-            <span className="bs-tm-card-sub">{memorizeStatus}</span>
+            <span className="bs-tm-card-sub">{tr(locale, "Түвшин түвшнээр цээжлэх")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
 
-        <PrefetchLink href="/review/writing" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
-            ✍️
-          </span>
+        <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Сонсох · Ярих")}</p>
+        <PrefetchLink href={`/listen/daily?level=${activeLevel}`} className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>🎧</span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">
-              {tr(locale, "Бичих давталт")}
-              {writingDue > 0 ? ` · ${writingDue}` : ""}
-            </span>
-            <span className="bs-tm-card-sub">
-              {writingDue > 0
-                ? `${writingDue} ${tr(locale, "ханз бичихээр хүлээж байна")}`
-                : tr(locale, "Бичсэн ханзууд чинь энд давтагдана")}
-            </span>
+            <span className="bs-tm-card-title">{tr(locale, "Сонсголын сорил")}</span>
+            <span className="bs-tm-card-sub">{tr(locale, "10 асуулт · 5 минут")}</span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </PrefetchLink>
+        {bichlegCard}
+        <PrefetchLink href="/talk" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>🗣️</span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">{tr(locale, "Ярилцах дадлага")}</span>
+            <span className="bs-tm-card-sub">{tr(locale, "Дэлгүүр, гуанз, такси — хятадаар ярьж үз")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
 
-        <PrefetchLink href="/review/sentences" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
-            🔖
-          </span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">
-              {tr(locale, "Өгүүлбэрийн карт")}
-              {sentenceCards.due > 0 ? ` · ${sentenceCards.due}` : ""}
-            </span>
-            <span className="bs-tm-card-sub">
-              {sentenceCards.total === 0
-                ? tr(locale, "Бичлэгээс хадгалсан өгүүлбэрүүд энд давтагдана")
-                : sentenceCards.due > 0
-                  ? `${sentenceCards.due} ${tr(locale, "өгүүлбэр давтахаар хүлээж байна")}`
-                  : `${sentenceCards.total} ${tr(locale, "өгүүлбэр хадгалсан")}`}
-            </span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </PrefetchLink>
-
-        </div>
-        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
-          {tr(locale, "Шалгалтад бэлдэх")}
-        </p>
-        <div className="bs-tm-grid bs-stagger">
-        <PrefetchLink href="/review/practice" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
-            🎯
-          </span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">
-              {tr(locale, "Шалгалтын дасгал")}
-            </span>
-            <span className="bs-tm-card-sub">
-              {tr(locale, "Цаггүй · алдсан бүрд тайлбар шууд гарна")}
-            </span>
-          </span>
-          <span className="bs-tm-badge-new">{tr(locale, "ШИНЭ")}</span>
-        </PrefetchLink>
-
+        <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Шалгалт")}</p>
         <PrefetchLink href="/review/tests" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>
-            📝
-          </span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>📝</span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "HSK бэлтгэл")}</span>
-            <span className="bs-tm-card-sub">{testStatus}</span>
+            <span className="bs-tm-card-title">{tr(locale, "HSK шалгалт")}</span>
+            <span className="bs-tm-card-sub">{testCount > 0 ? `${testCount} ${tr(locale, "шалгалт")} · ${tr(locale, "сурах горим, жинхэнэ горим")}` : testStatus}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
-        </div>
 
-        <div className="bs-tm-cols">
-        <div className="bs-tm-col">
-        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
-          {tr(locale, "Ханз · Дуудлага")}
-        </p>
-
+        <details className="group">
+          <summary className="mt-4 flex cursor-pointer list-none items-center justify-between rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] px-4 py-3 text-sm font-extrabold text-[var(--app-text)] shadow-[var(--app-shadow)] [&::-webkit-details-marker]:hidden">
+            <span>
+              {tr(locale, "Бусад: бичих, ханз, дүрэм, өгүүлбэр")}
+              {writingDue + sentenceCards.due > 0 ? ` · ${writingDue + sentenceCards.due}` : ""}
+            </span>
+            <span className="text-[var(--app-muted)] transition-transform group-open:rotate-180" aria-hidden>▾</span>
+          </summary>
+          <div className="mt-3">
+        <PrefetchLink href="/review/writing" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>✍️</span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">{tr(locale, "Бичих давталт")}{writingDue > 0 ? ` · ${writingDue}` : ""}</span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </PrefetchLink>
+        <PrefetchLink href="/review/sentences" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>🔖</span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">{tr(locale, "Өгүүлбэрийн карт")}{sentenceCards.due > 0 ? ` · ${sentenceCards.due}` : ""}</span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </PrefetchLink>
         <PrefetchLink href="/kanji" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
-            🈴
-          </span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>🈴</span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">
-              {tr(locale, "Ханз, дуудлага, бичих дэвтэр")}
-            </span>
-            <span className="bs-tm-card-sub">
-              {tr(locale, "Толь бичиг, бичих дадлага, дэвтэр, дуудлага")}
-            </span>
+            <span className="bs-tm-card-title">{tr(locale, "Ханз, дуудлага, бичих дэвтэр")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
-
-        </div>
-        <details className="group" style={{ gridColumn: "1 / -1" }}>
-        <summary className="mt-4 flex cursor-pointer list-none items-center justify-between rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] px-4 py-3 text-sm font-extrabold text-[var(--app-text)] shadow-[var(--app-shadow)] [&::-webkit-details-marker]:hidden">
-          <span>📚 {tr(locale, "Бусад: ном, уншлага, дүрэм")}</span>
-          <span className="text-[var(--app-muted)] transition-transform group-open:rotate-180" aria-hidden>▾</span>
-        </summary>
-        <div className="bs-tm-col bs-desk-hide">
-        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
-          {tr(locale, "Материал")}
-        </p>
-
-        <PrefetchLink href="/nom" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
-            📖
-          </span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Ном сонгох")}</span>
-            <span className="bs-tm-card-sub">
-              {tr(locale, "HSK 1–6 · YCT 1–6 · 发展汉语 — бүх ном")}
-            </span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </PrefetchLink>
-
-        <PrefetchLink href="/library" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
-            📚
-          </span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Уншлагын сан")}</span>
-            <span className="bs-tm-card-sub">
-              {tr(locale, "Зурагт ном, хэлц·зүйр цэцэн үг")}
-            </span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </PrefetchLink>
-
-        </div>
-        <div className="bs-tm-col">
-        <p className="bs-tm-sec" style={{ marginTop: 18 }}>
-          {tr(locale, "Дүрэм")}
-        </p>
-
         <PrefetchLink href="/review/grammar/structure" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>
-            🧩
-          </span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>🧩</span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Өгүүлбэрийн бүтэц")}</span>
-            <span className="bs-tm-card-sub">
-              {helzuiModuleCount} {tr(locale, "модуль")} · {tr(locale, "суурь")}
-            </span>
+            <span className="bs-tm-card-sub">{helzuiModuleCount} {tr(locale, "модуль")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
-
         <PrefetchLink href="/review/grammar/hsk30" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>
-            📚
-          </span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>📚</span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "HSK 3.0 дүрэм")}</span>
-            <span className="bs-tm-card-sub">
-              {hsk30LevelCount} {tr(locale, "түвшин")} · {hsk30PointCount} {tr(locale, "цэг")}
-            </span>
+            <span className="bs-tm-card-title">{tr(locale, "HSK дүрэм")}</span>
+            <span className="bs-tm-card-sub">{hsk30LevelCount} {tr(locale, "түвшин")} · {hsk30PointCount} {tr(locale, "цэг")}</span>
           </span>
-          <span className="bs-tm-badge-new">{tr(locale, "ШИНЭ")}</span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
-        </div>
+        <PrefetchLink href="/library" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>📖</span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">{tr(locale, "Уншлагын сан")}</span>
+            <span className="bs-tm-card-sub">{tr(locale, "Зурагт ном, хэлц·зүйр цэцэн үг")}</span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </PrefetchLink>
+          </div>
         </details>
-        </div>
       </div>
     </MobileAppShell>
   );

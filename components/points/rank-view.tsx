@@ -154,8 +154,8 @@ export function RankView() {
         title="Зэрэглэл"
         subtitle="Оноогоороо хэн нь тэргүүлж байна?"
         action={
-          <Link href="/points" className="shrink-0 rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-bold text-emerald-700 ring-1 ring-emerald-200">
-            ⭐ Миний оноо
+          <Link href="/progress" className="shrink-0 rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-bold text-emerald-700 ring-1 ring-emerald-200">
+            Миний ахиц
           </Link>
         }
       />

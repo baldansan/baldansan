@@ -614,7 +614,7 @@ export function HomeAppView({
           <span className="bs-home-status-sub">{tr(locale, "өдөр дараалан")}</span>
         </li>
         {loggedIn ? (
-          <Link href="/points">
+          <Link href="/progress">
             <span aria-hidden>⭐</span>
             {pointsToday ?? 0}
             <span className="bs-home-status-sub">
