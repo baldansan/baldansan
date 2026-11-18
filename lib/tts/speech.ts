@@ -142,7 +142,11 @@ export async function speakText(
   // (cancel()-ийн яг дараа speak() дуудвал Safari алгасдаг тул busy үед setTimeout.)
   if (voicesCache.length === 0 && synth.getVoices().length > 0) voicesCache = synth.getVoices();
   const voicesReady = voicesCache.length > 0 && !wasBusy;
-  if (voicesCache.length === 0) await loadVoices();
+  if (voicesCache.length === 0) {
+    // Дуу хоолой ачаалахыг хүлээх зуур gesture дуусна — түгжээг одоо тайлна.
+    primeSpeech();
+    await loadVoices();
+  }
 
   return new Promise((resolve) => {
     try {
@@ -182,4 +186,27 @@ export async function speakText(
       resolve({ ok: false, error: TTS_UNAVAILABLE_MESSAGE });
     }
   });
+}
+
+let speechPrimed = false;
+
+/**
+ * iOS/Safari: speechSynthesis.speak() эхний удаа заавал хэрэглэгчийн дарсан
+ * gesture дотор дуудагдах ёстой. Бичлэг (mp3) эхэлж оролдоод, олдоогүй үед
+ * TTS рүү шилжихэд gesture аль хэдийн дууссан байдаг тул дуу гардаггүй байв.
+ * Дарсан агшинд чимээгүй нэг utterance уншуулж «түгжээг тайлна» — нэг л удаа.
+ */
+export function primeSpeech(): void {
+  if (speechPrimed) return;
+  const synth = getSynth();
+  if (!synth) return;
+  try {
+    const silent = new SpeechSynthesisUtterance(" ");
+    silent.volume = 0;
+    silent.rate = 2;
+    synth.speak(silent);
+    speechPrimed = true;
+  } catch {
+    // дэмжихгүй хөтөч — алгасна
+  }
 }
