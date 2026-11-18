@@ -5,12 +5,15 @@
  * сонгоно. Үг бүрийг ЗӨВ хариултал дахин асууна; буруу хариулсан үг хэсэг хугацааны
  * дараа өөр төрлөөр эргэж ирнэ. Энд зөвхөн цэвэр логик (I/O-гүй) байна.
  */
+import { splitPinyinSyllables, toneOfSyllable } from "@/lib/pinyin/tone";
+import { stripToneMark, toneMark } from "@/lib/pronunciation/pinyin-mark";
 import type { HskWordRow } from "@/lib/supabase/hsk-words";
 
 export type LearnMode =
   | "meaning" // ханз → монгол утга сонгох
   | "recall" // монгол утга → ханз сонгох
   | "pinyin" // ханз → пиньинь сонгох
+  | "tone" // сонсоод → зөв хөгийг сонгох (үсэг ижил, хөг өөр)
   | "listen" // сонсоод → ханз сонгох
   | "dictation" // сонсоод → ханзаар угсрах
   | "cloze" // жишээ өгүүлбэрийн хоосон зай
@@ -21,6 +24,7 @@ export const LEARN_MODES: { id: LearnMode; icon: string; label: string; hint: st
   { id: "meaning", icon: "🎯", label: "Утга сонгох", hint: "Ханз харж монгол утгыг ол" },
   { id: "recall", icon: "🀄", label: "Ханз сонгох", hint: "Монгол утга харж ханзыг ол" },
   { id: "pinyin", icon: "🔤", label: "Пиньинь", hint: "Ханзны зөв дуудлагыг сонго" },
+  { id: "tone", icon: "🎵", label: "Хөг", hint: "Сонсоод зөв хөгийг сонго" },
   { id: "listen", icon: "🎧", label: "Сонсох", hint: "Сонсоод зөв үгийг сонго" },
   { id: "dictation", icon: "👂", label: "Диктант", hint: "Сонсоод ханзаар нь угсар" },
   { id: "match", icon: "🔗", label: "Холбох", hint: "5 үгийг утгатай нь хослуул" },
@@ -39,7 +43,7 @@ export type LearnSettings = {
 };
 
 export const DEFAULT_LEARN_SETTINGS: LearnSettings = {
-  modes: ["meaning", "recall", "pinyin", "listen", "dictation", "match"],
+  modes: ["meaning", "recall", "pinyin", "tone", "listen", "dictation", "match"],
   size: 10,
   timer: 0,
   autoAudio: true,
@@ -55,6 +59,7 @@ export const LEARN_PRESETS: Record<string, Partial<LearnSettings>> = {
 };
 
 const SETTINGS_KEY = "bs.games.learn.settings";
+const TONE_MODE_SEEN_KEY = "bs.games.learn.tone-mode-seen";
 
 export function readLearnSettings(): LearnSettings {
   try {
@@ -62,7 +67,15 @@ export function readLearnSettings(): LearnSettings {
     if (!raw) return DEFAULT_LEARN_SETTINGS;
     const parsed = JSON.parse(raw) as Partial<LearnSettings>;
     const valid = new Set(LEARN_MODES.map((m) => m.id));
-    const modes = (parsed.modes ?? []).filter((m) => valid.has(m));
+    let modes = (parsed.modes ?? []).filter((m) => valid.has(m));
+    // «Хөг» горим шинээр нэмэгдсэн — хуучин хадгалсан тохиргоонд нэг удаа асаана.
+    if (window.localStorage.getItem(TONE_MODE_SEEN_KEY) !== "1") {
+      window.localStorage.setItem(TONE_MODE_SEEN_KEY, "1");
+      if (modes.includes("pinyin") && !modes.includes("tone")) {
+        modes = [...modes, "tone"];
+        window.localStorage.setItem(SETTINGS_KEY, JSON.stringify({ ...parsed, modes }));
+      }
+    }
     return {
       ...DEFAULT_LEARN_SETTINGS,
       ...parsed,
@@ -100,6 +113,8 @@ export type ChoiceQuestion = {
   correct: string;
   /** Сонголтууд ханз эсэх (том үсгээр харуулна). */
   hanziOptions: boolean;
+  /** Сонголтууд хөгөөр ялгаатай пиньинь (үе бүрийг хөгийн өнгөөр харуулна). */
+  toneOptions?: boolean;
   audio?: string;
 };
 
@@ -144,6 +159,51 @@ function pickOptions(
   return shuffle([correct, ...shuffle(pool).slice(0, count - 1)]);
 }
 
+/** Пиньинийг үе + хөг болгон задална. Задлах боломжгүй бол null. */
+function toneParts(pinyin: string | null | undefined): { base: string; tone: number }[] | null {
+  const syls = splitPinyinSyllables((pinyin ?? "").trim());
+  if (!syls || syls.length === 0 || syls.length > 3) return null;
+  return syls.map((s) => ({ base: stripToneMark(s), tone: toneOfSyllable(s) }));
+}
+
+function joinTones(parts: { base: string; tone: number }[]): string {
+  return parts.map((p) => toneMark(p.base, p.tone)).join(" ");
+}
+
+/** Зөв хөг + үсэг нь ижил, хөг нь өөр 3 хувилбар. */
+function toneOptionsFor(parts: { base: string; tone: number }[]): string[] | null {
+  const correct = joinTones(parts);
+  const tonal = parts.map((p, i) => (p.tone >= 1 && p.tone <= 4 ? i : -1)).filter((i) => i >= 0);
+  if (tonal.length === 0) return null;
+  const variants = new Set<string>();
+  // Нэг үеийн хөгийг солих (хамгийн төөрөгдүүлдэг), дараа нь хоёр үеийг зэрэг.
+  for (const i of shuffle(tonal)) {
+    for (const t of shuffle([1, 2, 3, 4])) {
+      if (t === parts[i].tone) continue;
+      variants.add(joinTones(parts.map((p, k) => (k === i ? { ...p, tone: t } : p))));
+    }
+  }
+  if (tonal.length >= 2) {
+    for (let n = 0; n < 6; n += 1) {
+      variants.add(
+        joinTones(
+          parts.map((p, k) =>
+            tonal.includes(k) ? { ...p, tone: 1 + Math.floor(Math.random() * 4) } : p
+          )
+        )
+      );
+    }
+  }
+  variants.delete(correct);
+  const wrong = shuffle([...variants]).slice(0, 3);
+  if (wrong.length < 3) return null;
+  // Нэг үетэй үгэнд 1→4-р хөгийн дарааллаар (mā má mǎ mà) — харьцуулахад амар.
+  if (parts.length === 1) {
+    return [1, 2, 3, 4].map((t) => toneMark(parts[0].base, t));
+  }
+  return shuffle([correct, ...wrong]);
+}
+
 /** Энэ үгэнд тухайн төрлийн асуулт зохиож болох эсэх. */
 export function modeFits(mode: LearnMode, w: LearnWord): boolean {
   const zh = w.simplified ?? "";
@@ -153,6 +213,10 @@ export function modeFits(mode: LearnMode, w: LearnWord): boolean {
       return Boolean(meaningOf(w));
     case "pinyin":
       return Boolean(w.pinyin?.trim());
+    case "tone": {
+      const parts = toneParts(w.pinyin);
+      return zh.length > 0 && zh.length <= 3 && Boolean(parts && parts.some((p) => p.tone >= 1));
+    }
     case "listen":
     case "dictation":
       return zh.length > 0 && zh.length <= 4;
@@ -229,6 +293,24 @@ export function buildQuestion(
       options,
       correct,
       hanziOptions: false,
+    };
+  }
+  if (mode === "tone") {
+    const parts = toneParts(word.pinyin);
+    const options = parts ? toneOptionsFor(parts) : null;
+    if (!parts || !options) return null;
+    return {
+      type: "choice",
+      mode,
+      word,
+      label: "Зөв хөг нь аль вэ?",
+      display: zh,
+      sub: meaningOf(word) || null,
+      options,
+      correct: joinTones(parts),
+      hanziOptions: false,
+      toneOptions: true,
+      audio: zh,
     };
   }
   if (mode === "listen") {

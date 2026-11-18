@@ -1,5 +1,7 @@
 "use client";
 
+import { ToneLegend } from "@/components/hanzi/ToneHanzi";
+import { toneOfSyllable } from "@/lib/pinyin/tone";
 import { markTodayStepDone } from "@/lib/today/today-path";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -191,7 +193,7 @@ export function LearnGameClient() {
   useEffect(() => {
     if (phase !== "play" || !question || question.type === "match") return;
     const needsAudio = question.type === "dictation" || question.mode === "listen";
-    if (needsAudio || (settings.autoAudio && question.mode === "meaning")) {
+    if (needsAudio || question.mode === "tone" || (settings.autoAudio && question.mode === "meaning")) {
       void playChineseWordAudio(question.word.simplified ?? "");
     }
     // Зөвхөн шинэ асуулт гарахад тоглуулна.
@@ -777,11 +779,27 @@ export function LearnGameClient() {
                       question.hanziOptions ? "text-2xl" : "text-[15px] leading-snug"
                     }`}
                   >
-                    {opt}
+                    {question.toneOptions ? (
+                      <span className="text-xl font-extrabold tracking-wide">
+                        {opt.split(" ").map((syl, si) => (
+                          <span
+                            key={`${syl}-${si}`}
+                            className={
+                              reveal && (isCorrect || isPicked) ? "" : `bs-tone-${toneOfSyllable(syl)}`
+                            }
+                          >
+                            {syl}
+                          </span>
+                        ))}
+                      </span>
+                    ) : (
+                      opt
+                    )}
                   </button>
                 );
               })}
             </div>
+            {question.toneOptions ? <ToneLegend className="mt-3 justify-center" /> : null}
             {reveal && picked !== question.correct ? (
               <p className="mt-3 rounded-xl bg-red-50 px-3 py-2 text-center text-sm text-red-900" translate="no">
                 <b>{question.word.simplified}</b> {question.word.pinyin} — {meaning(question.word)}

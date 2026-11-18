@@ -1387,7 +1387,7 @@ html.bs-bichleg-fs-root,html.bs-bichleg-fs-root body{overflow:hidden}
 :root{
   --tone-1:#e5484d; /* 1-р хөг: улаан */
   --tone-2:#d9890a; /* 2-р хөг: шар/улбар */
-  --tone-3:#4D1F9D; /* 3-р хөг: ногоон */
+  --tone-3:#1f9d55; /* 3-р хөг: ногоон */
   --tone-4:#2f6fe0; /* 4-р хөг: цэнхэр */
   --tone-0:#8a949e; /* хөггүй: саарал */
 }
