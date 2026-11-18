@@ -53,6 +53,8 @@ export const DEFAULT_LEARN_SETTINGS: LearnSettings = {
 /** Нүүр хуудасны бэлэн тохиргоонууд — тусдаа тоглоом биш, нэг тоглоомын горим. */
 export const LEARN_PRESETS: Record<string, Partial<LearnSettings>> = {
   tone: { modes: ["tone"], timer: 0, size: 10 },
+  /** Хөгөөр утга нь өөрчлөгддөг хос үгс (lib/games/tone-pairs.ts) — шууд эхэлнэ. */
+  tonepairs: { modes: ["tone"], timer: 0, size: 10 },
   speed: { modes: ["meaning", "recall", "pinyin"], timer: 6, size: 20 },
   dictation: { modes: ["dictation", "listen"], timer: 0, size: 10 },
   marathon: { size: 0, timer: 0 },
@@ -99,7 +101,11 @@ export function writeLearnSettings(s: LearnSettings): void {
 /* Асуулт                                                               */
 /* ------------------------------------------------------------------ */
 
-export type LearnWord = HskWordRow & { id: number };
+export type LearnWord = HskWordRow & {
+  id: number;
+  /** Зөвхөн хөгөөр ялгардаг «андуурагддаг» үг (lib/games/tone-pairs.ts). */
+  confusable?: { zh: string; pinyin: string; meaning: string };
+};
 
 export type ChoiceQuestion = {
   type: "choice";
@@ -116,6 +122,8 @@ export type ChoiceQuestion = {
   hanziOptions: boolean;
   /** Сонголтууд хөгөөр ялгаатай пиньинь (үе бүрийг хөгийн өнгөөр харуулна). */
   toneOptions?: boolean;
+  /** Буруу хөгөөр хэлбэл гарах өөр үг — хариулсны дараа тайлбарлана. */
+  trap?: { option: string; zh: string; meaning: string };
   audio?: string;
 };
 
@@ -298,8 +306,23 @@ export function buildQuestion(
   }
   if (mode === "tone") {
     const parts = toneParts(word.pinyin);
-    const options = parts ? toneOptionsFor(parts) : null;
+    let options = parts ? toneOptionsFor(parts) : null;
     if (!parts || !options) return null;
+    let trap: ChoiceQuestion["trap"];
+    const trapParts = word.confusable ? toneParts(word.confusable.pinyin) : null;
+    if (word.confusable && trapParts) {
+      const correctText = joinTones(parts);
+      const trapText = joinTones(trapParts);
+      if (trapText !== correctText) {
+        // Андуурагддаг үгийн дуудлага заавал сонголтод орно.
+        if (!options.includes(trapText)) {
+          const wrongIdx = options.findIndex((o) => o !== correctText);
+          options = options.map((o, i) => (i === wrongIdx ? trapText : o));
+          if (parts.length === 1) options = [...options].sort((x, y) => toneOfSyllable(x) - toneOfSyllable(y));
+        }
+        trap = { option: trapText, zh: word.confusable.zh, meaning: word.confusable.meaning };
+      }
+    }
     return {
       type: "choice",
       mode,
@@ -311,6 +334,7 @@ export function buildQuestion(
       correct: joinTones(parts),
       hanziOptions: false,
       toneOptions: true,
+      trap,
       audio: zh,
     };
   }
@@ -394,8 +418,9 @@ export type LearnState = {
   total: number;
 };
 
-export function startLearn(words: LearnWord[], size: number): LearnState {
-  const picked = size > 0 ? shuffle(words).slice(0, size) : shuffle(words);
+export function startLearn(words: LearnWord[], size: number, keepOrder = false): LearnState {
+  const ordered = keepOrder ? words : shuffle(words);
+  const picked = size > 0 ? ordered.slice(0, size) : ordered;
   return {
     queue: picked.map((w) => w.id),
     asked: {},

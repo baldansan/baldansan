@@ -277,7 +277,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           <p className="bs-tm-sec">{tr(locale, "Өөр горим")}</p>
             <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
               {[
-                { preset: "tone", icon: "🎵", label: "Хөг ялгах", hint: "Сонсоод зөв хөгийг ол" },
+                { preset: "tonepairs", icon: "🎵", label: "Хөг ялгах", hint: "Хөг буруу бол утга өөр" },
                 { preset: "marathon", icon: "🏃", label: "Марафон", hint: "Давтах бүх үгээ" },
                 { preset: "speed", icon: "⚡", label: "Хурдны горим", hint: "6 секундэд хариул" },
                 { preset: "dictation", icon: "👂", label: "Диктант", hint: "Сонсоод угсар" },

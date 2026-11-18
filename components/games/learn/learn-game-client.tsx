@@ -1,5 +1,6 @@
 "use client";
 
+import { pickTonePairSession } from "@/lib/games/tone-pairs";
 import { ToneLegend } from "@/components/hanzi/ToneHanzi";
 import { toneOfSyllable } from "@/lib/pinyin/tone";
 import { markTodayStepDone } from "@/lib/today/today-path";
@@ -144,7 +145,10 @@ export function LearnGameClient() {
 
   /* ---------- тоглолт эхлүүлэх ---------- */
   const begin = useCallback(
-    async (onlyWords?: LearnWord[]) => {
+    async (wordsArg?: LearnWord[]) => {
+      // «Хөг ялгах» (хос үгс): DB-ээс биш, бэлтгэсэн хосуудаас.
+      const onlyWords =
+        wordsArg ?? (preset === "tonepairs" ? pickTonePairSession(10, params.get("words")) : undefined);
       setPhase("loading");
       setSetupError(null);
       let session: LearnWord[] = onlyWords ?? [];
@@ -170,7 +174,11 @@ export function LearnGameClient() {
       const merged = new Map<number, LearnWord>();
       for (const w of [...session, ...distractors]) merged.set(w.id, w);
       const allWords = [...merged.values()];
-      const state = startLearn(session, onlyWords ? 0 : settings.size);
+      const state = startLearn(
+        session,
+        onlyWords ? 0 : settings.size,
+        preset === "tonepairs" && Boolean(params.get("words"))
+      );
       const map = new Map(allWords.map((w) => [w.id, w]));
       const first = nextQuestion(state, map, allWords, settings, 0);
       setPool(allWords);
@@ -186,8 +194,17 @@ export function LearnGameClient() {
       juice.reset();
       setPhase("play");
     },
-    [source, mineSelected, level, settings, pool, juice]
+    [source, mineSelected, level, settings, pool, juice, preset, params]
   );
+
+  // «Хөг ялгах» картаас орвол тохиргооны дэлгэцгүй шууд эхэлнэ.
+  const autoStarted = useRef(false);
+  useEffect(() => {
+    if (preset !== "tonepairs" || autoStarted.current || phase !== "setup") return;
+    if (settings.modes.length !== 1 || settings.modes[0] !== "tone") return;
+    autoStarted.current = true;
+    void begin();
+  }, [preset, phase, settings, begin]);
 
   /* ---------- дуу автоматаар ---------- */
   useEffect(() => {
@@ -233,7 +250,7 @@ export function LearnGameClient() {
       let right = 0;
       for (const r of results) {
         // SRS-д зөвхөн тухайн үгийн ЭХНИЙ хариулт тооцогдоно.
-        if ((state.asked[r.word.id] ?? 0) === 0) rateGameWord(r.word.id, r.correct);
+        if (r.word.id > 0 && (state.asked[r.word.id] ?? 0) === 0) rateGameWord(r.word.id, r.correct);
         const outcome = juice.answer(r.correct);
         gained += outcome.points;
         if (r.correct) right += 1;
@@ -270,7 +287,7 @@ export function LearnGameClient() {
     if (locked || !question || question.type !== "choice") return;
     const correct = option === question.correct;
     setPicked(option);
-    recordQuestionAttempt({
+    if (question.word.id > 0) recordQuestionAttempt({
       lessonId: `hsk${level}`,
       stage: "word_practice",
       questionId: `word:${question.word.id}`,
@@ -283,7 +300,9 @@ export function LearnGameClient() {
     if (question.mode !== "listen" && question.word.simplified) {
       void playChineseWordAudio(question.word.simplified);
     }
-    settle([{ word: question.word, correct }], correct ? 750 : 1900);
+    // Хос үгийн тайлбарыг унших зай үлдээнэ.
+    const delay = question.trap ? (correct ? 2600 : 3600) : correct ? 750 : 1900;
+    settle([{ word: question.word, correct }], delay);
   }
 
   function checkDictation() {
@@ -799,6 +818,16 @@ export function LearnGameClient() {
                 );
               })}
             </div>
+            {reveal && question.trap ? (
+              <p
+                className="mt-3 rounded-xl bg-[var(--bs-pink-50)] px-3 py-2.5 text-center text-sm font-bold text-[var(--bs-pink-800)]"
+                translate="no"
+              >
+                {tr(locale, "Хөгийг андуурвал")}:{" "}
+                <span className="text-base font-extrabold">{question.trap.option.replace(/ /g, "")}</span>{" "}
+                = <span className="hanzi text-lg">{question.trap.zh}</span> «{question.trap.meaning}»
+              </p>
+            ) : null}
             {question.toneOptions ? <ToneLegend className="mt-3 justify-center" /> : null}
             {reveal && picked !== question.correct ? (
               <p className="mt-3 rounded-xl bg-red-50 px-3 py-2 text-center text-sm text-red-900" translate="no">
