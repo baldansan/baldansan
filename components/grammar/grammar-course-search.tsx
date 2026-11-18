@@ -66,10 +66,10 @@ export function GrammarCourseSearch({
                   <MobileCard className="hz-grammar-search-card active:bg-slate-50">
                     <div className="flex items-start justify-between gap-3">
                       <div className="min-w-0">
-                        <p className="zh text-lg font-bold text-[#13241b]">
+                        <p className="zh text-lg font-bold text-[#191324]">
                           {entry.zh}
                         </p>
-                        <p className="text-xs font-semibold text-[#1FB85A]">
+                        <p className="text-xs font-semibold text-[#7C4DDB]">
                           {entry.pin}
                         </p>
                         <p className="mt-1 text-sm font-medium text-[var(--app-muted)] line-clamp-2" translate="no">

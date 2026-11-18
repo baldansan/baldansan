@@ -120,7 +120,7 @@ export function BichlegEpisodeListClient({
         {tr(locale, "← Цуврал сонгох")}
       </Link>
       <h1 className="bs-tm-page-title" translate="no">{titleMn}</h1>
-      <p className="mb-4 text-sm font-semibold text-[#7a8c82]">
+      <p className="mb-4 text-sm font-semibold text-[#6F6787]">
         {headerMeta}
         {showProgress && episodes.length > 0
           ? ` · ${watchedCount}/${episodes.length} ${tr(locale, "анги үзсэн")}`

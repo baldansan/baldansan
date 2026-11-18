@@ -107,7 +107,7 @@ export function GameResultCard({
             r={R}
             strokeDasharray={C}
             strokeDashoffset={dash}
-            style={{ stroke: great ? "#1fb85a" : accuracy >= 50 ? "#f2a93b" : "#ef4444" }}
+            style={{ stroke: great ? "#7C4DDB" : accuracy >= 50 ? "#f2a93b" : "#ef4444" }}
           />
         </svg>
         <div className="bs-gj-ring-txt">

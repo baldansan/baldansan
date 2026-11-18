@@ -90,7 +90,7 @@ export function WordPracticeRecallView({
         <button
           type="button"
           onClick={onBackToSummary}
-          className="mt-4 min-h-[44px] w-full rounded-[14px] bg-[#eaf0ed] text-sm font-extrabold text-[#3b473f]"
+          className="mt-4 min-h-[44px] w-full rounded-[14px] bg-[#EEE7FB] text-sm font-extrabold text-[#4A4063]"
         >
           {tr(locale, "Дүгнэлт рүү буцах")}
         </button>

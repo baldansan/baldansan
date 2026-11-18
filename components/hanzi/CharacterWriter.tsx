@@ -197,10 +197,10 @@ export function CharacterWriter({ character, mode, onComplete, onResult }: Props
       showOutline: mode !== "recall",
       strokeAnimationSpeed: 1,
       delayBetweenStrokes: 350,
-      drawingColor: "#059669",
+      drawingColor: "#7C4DDB",
       drawingWidth: 10,
       outlineColor: "#9ca3af",
-      highlightColor: "#10b981",
+      highlightColor: "#8B5FE3",
       charDataLoader: localHanziCharDataLoader,
       onLoadCharDataSuccess: (data: unknown) => {
         if (cancelled) return;

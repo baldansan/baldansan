@@ -33,7 +33,7 @@ export function ProgressBarLite({
   value,
   className = "",
   trackClassName = "h-2 overflow-hidden rounded-full bg-slate-100",
-  fillClassName = "h-full rounded-full bg-[var(--app-primary,#1FB85A)]",
+  fillClassName = "h-full rounded-full bg-[var(--app-primary,#7C4DDB)]",
 }: BarProps) {
   const clamped = Math.min(100, Math.max(0, value));
   return (

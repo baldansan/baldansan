@@ -8,8 +8,8 @@ import { LEARNER_GRADE_LABELS, type LearnerGradeBucket } from "@/lib/learner-gra
 import type { DashClass } from "@/lib/organization/dashboard-types";
 
 export const GRADE_COLORS: Record<LearnerGradeBucket, string> = {
-  A: "#047857",
-  B: "#34d399",
+  A: "#6537C2",
+  B: "#A383F0",
   C: "#fbbf24",
   D: "#f97316",
   F: "#dc2626",

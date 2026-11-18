@@ -273,7 +273,7 @@ export function SpeedChallengeClient() {
 
       <div className="mb-4 h-3 overflow-hidden rounded-full bg-[#e1ebe5]">
         <div
-          className="h-full rounded-full bg-[#1FB85A] transition-all duration-1000 linear"
+          className="h-full rounded-full bg-[#7C4DDB] transition-all duration-1000 linear"
           style={{ width: `${timerPct}%` }}
         />
       </div>

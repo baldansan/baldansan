@@ -48,7 +48,7 @@ export default async function ReviewGrammarHsk30PointPage({ params }: Props) {
     <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_REVIEW}>
       <Link
         href={hsk30LevelHref(levelId)}
-        className="mb-3 inline-flex text-xs font-bold text-[#1FB85A]"
+        className="mb-3 inline-flex text-xs font-bold text-[#7C4DDB]"
       >
         ← {level.title}
       </Link>

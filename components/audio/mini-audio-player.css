@@ -29,14 +29,14 @@
 
 .bs-mini-bar {
   height: 4px;
-  background: #e3ede7;
+  background: #E7E3ED;
   cursor: pointer;
 }
 
 .bs-mini-bar > i {
   display: block;
   height: 100%;
-  background: var(--app-primary, #1fb85a);
+  background: var(--app-primary, #7C4DDB);
   transition: width 0.25s linear;
 }
 
@@ -56,7 +56,7 @@
   border: 0;
   border-radius: 999px;
   background: transparent;
-  color: var(--app-text, #0f1b14);
+  color: var(--app-text, #2A1F45);
   cursor: pointer;
   transition: transform var(--bs-dur-fast, 150ms) var(--bs-ease, cubic-bezier(0.2, 0, 0, 1)),
     background-color var(--bs-dur-fast, 150ms) var(--bs-ease, cubic-bezier(0.2, 0, 0, 1));
@@ -67,9 +67,9 @@
 }
 
 .bs-mini-btn--play {
-  background: var(--app-primary, #1fb85a);
+  background: var(--app-primary, #7C4DDB);
   color: #fff;
-  box-shadow: 0 4px 12px rgba(31, 184, 90, 0.35);
+  box-shadow: 0 4px 12px rgba(124,77,219, 0.35);
 }
 
 .bs-mini-btn--play svg {
@@ -81,7 +81,7 @@
 .bs-mini-btn--close {
   width: 34px;
   height: 34px;
-  color: var(--app-muted, #7e8b83);
+  color: var(--app-muted, #6F6787);
 }
 
 .bs-mini-btn--close:hover {
@@ -128,7 +128,7 @@
   text-overflow: ellipsis;
   font-size: 13px;
   font-weight: 800;
-  color: var(--app-text, #0f1b14);
+  color: var(--app-text, #2A1F45);
 }
 
 .bs-mini-sub {
@@ -137,7 +137,7 @@
   text-overflow: ellipsis;
   font-size: 11px;
   font-weight: 600;
-  color: var(--app-muted, #7e8b83);
+  color: var(--app-muted, #6F6787);
 }
 
 .bs-mini-time {
@@ -145,7 +145,7 @@
   font-size: 11px;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: var(--app-muted, #7e8b83);
+  color: var(--app-muted, #6F6787);
 }
 
 .bs-mini-rate {
@@ -153,10 +153,10 @@
   border: 0;
   border-radius: 999px;
   padding: 4px 8px;
-  background: #eef5f0;
+  background: #F1EEF5;
   font-size: 11px;
   font-weight: 800;
-  color: var(--app-primary-dark, #149247);
+  color: var(--app-primary-dark, #6537C2);
   cursor: pointer;
 }
 

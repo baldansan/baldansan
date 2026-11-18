@@ -218,7 +218,7 @@ export function DirectorDashboard({ organizationId, data }: { organizationId: st
               <div key={c.classroomId} className="print-box grid grid-cols-[120px_1fr_48px] items-center gap-3 text-sm">
                 <span className="truncate text-slate-700">{c.name}</span>
                 <DistributionBar height={12} ariaLabel={`${c.name} ирц`} segments={[
-                  { label: "Ирсэн", value: c.attendance.present, color: "#047857" },
+                  { label: "Ирсэн", value: c.attendance.present, color: "#6537C2" },
                   { label: "Хоцорсон", value: c.attendance.late, color: "#fbbf24" },
                   { label: "Тасалсан", value: c.attendance.absent, color: "#dc2626" },
                   { label: "Чөлөөтэй", value: c.attendance.excused, color: "#94a3b8" },
@@ -227,7 +227,7 @@ export function DirectorDashboard({ organizationId, data }: { organizationId: st
               </div>
             ))}
             <p className="flex flex-wrap gap-x-4 text-xs text-slate-600">
-              {[["Ирсэн", "#047857"], ["Хоцорсон", "#fbbf24"], ["Тасалсан", "#dc2626"], ["Чөлөөтэй", "#94a3b8"]].map(([l, c]) => (
+              {[["Ирсэн", "#6537C2"], ["Хоцорсон", "#fbbf24"], ["Тасалсан", "#dc2626"], ["Чөлөөтэй", "#94a3b8"]].map(([l, c]) => (
                 <span key={l} className="inline-flex items-center gap-1.5"><span className="inline-block h-2.5 w-2.5 rounded-sm" style={{ background: c }} />{l}</span>
               ))}
             </p>

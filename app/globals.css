@@ -10,17 +10,17 @@
   --background: #ffffff;
   --foreground: #171717;
   --learner-max-width: 960px;
-  --app-outer: #eef2ef;
-  --app-bg: #eef2ef;
+  --app-outer: #F6F1FF;
+  --app-bg: #F6F1FF;
   --app-card: #ffffff;
-  --app-primary: #1fb85a;
-  --app-primary-dark: #149247;
-  --app-primary-light: #eaf8f0;
-  --app-text: #0f1b14;
-  --app-muted: #7e8b83;
-  --app-border: #e7ece8;
+  --app-primary: #7C4DDB;
+  --app-primary-dark: #6537C2;
+  --app-primary-light: #F3ECFF;
+  --app-text: #2A1F45;
+  --app-muted: #6F6787;
+  --app-border: #E8E0F5;
   --app-radius: 20px;
-  /* Legacy aliases — orange brand replaced by green (#1FB85A) */
+  /* Legacy aliases — orange brand replaced by green (#7C4DDB) */
   --app-orange: var(--app-primary);
   --app-orange-dark: var(--app-primary-dark);
   --app-purple: #8b5cf6;
@@ -30,6 +30,23 @@
   --app-red: #ef4444;
   --app-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
   --app-shadow-lg: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+/* Брэндийн өнгө: пастел ягаан. Tailwind-ийн emerald-ийг бүхэлд нь ягаан шат руу
+   заасан — олон зуун bg-emerald, text-emerald класс нэг дор шинэ өнгөтэй болно.
+   «Зөв» гэсэн ногоон нь green-* класс, тусгай hex-ээр хэвээр. */
+@theme {
+  --color-emerald-50: #f6f1ff;
+  --color-emerald-100: #ebe1ff;
+  --color-emerald-200: #d9c8ff;
+  --color-emerald-300: #c2a8fa;
+  --color-emerald-400: #a383f0;
+  --color-emerald-500: #8b5fe3;
+  --color-emerald-600: #7c4ddb;
+  --color-emerald-700: #6537c2;
+  --color-emerald-800: #4b2a99;
+  --color-emerald-900: #3f2485;
+  --color-emerald-950: #2a1f45;
 }
 
 @theme inline {
@@ -118,11 +135,11 @@ body {
 }
 
 .app-course-card {
-  @apply rounded-[20px] border border-emerald-400 bg-gradient-to-br from-[#1FB85A] via-emerald-500 to-emerald-700 text-white shadow-[var(--app-shadow)];
+  @apply rounded-[20px] border border-emerald-400 bg-gradient-to-br from-[#7C4DDB] via-emerald-500 to-emerald-700 text-white shadow-[var(--app-shadow)];
 }
 
 .app-course-card-premium {
-  @apply shadow-[0_8px_24px_rgba(31,184,90,0.25)];
+  @apply shadow-[0_8px_24px_rgba(124,77,219,0.25)];
 }
 
 .app-course-card-korean {
@@ -453,57 +470,61 @@ html.ui-zh-pending body { visibility: hidden; }
    ============================================================ */
 html[data-theme="dark"] {
   color-scheme: dark;
-  --background: #0f1512;
-  --foreground: #e8efea;
+  --background: #14111D;
+  --foreground: #EDE9F6;
 
   /* --app-* (mobile shell) */
-  --app-outer: #0b100d;
-  --app-bg: #0f1512;
-  --app-card: #182019;
-  --app-primary: #2ecc6a;
-  --app-primary-dark: #1fb85a;
-  --app-primary-light: #16311f;
-  --app-text: #e8efea;
-  --app-muted: #93a398;
-  --app-border: #273229;
+  --app-outer: #0E0C15;
+  --app-bg: #14111D;
+  --app-card: #1E1A2B;
+  --app-primary: #8F6BE8;
+  --app-primary-dark: #7C4DDB;
+  --app-primary-light: #2A2045;
+  --app-text: #EDE9F6;
+  --app-muted: #A198B8;
+  --app-border: #332C47;
   --app-purple-light: #2a1f45;
   --app-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
   --app-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.45);
 
   /* --bs-* (дизайн систем, app/buunduu-theme.css) */
-  --bs-green: #2ecc6a;
-  --bs-green-700: #4fd98a;
-  --bs-green-800: #7ee3a8;
-  --bs-green-50: #16311f;
-  --bs-green-100: #1e4229;
+  --bs-green: #8F6BE8;
+  --bs-green-700: #B9A2F5;
+  --bs-green-800: #D3C4FA;
+  --bs-green-50: #2A2045;
+  --bs-green-100: #372A5C;
+  --bs-pink: #f47ba5;
+  --bs-pink-800: #ffc9dc;
+  --bs-pink-50: #3a1626;
+  --bs-pink-100: #5a2038;
   --bs-amber: #f2a93b;
   --bs-amber-50: #332816;
   --bs-amber-100: #4a391c;
-  --bs-ink: #e8efea;
-  --bs-ink-2: #c3cec6;
-  --bs-muted: #93a398;
-  --bs-line: #273229;
-  --bs-bg: #0f1512;
-  --bs-card: #182019;
+  --bs-ink: #EDE9F6;
+  --bs-ink-2: #C9C2DA;
+  --bs-muted: #A198B8;
+  --bs-line: #332C47;
+  --bs-bg: #14111D;
+  --bs-card: #1E1A2B;
   --bs-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
   --bs-shadow-lg: 0 2px 6px rgba(0, 0, 0, 0.35), 0 18px 50px rgba(0, 0, 0, 0.5);
 
   /* Temee redesign (components/temee/temee-redesign.css) */
-  --bs-tm-ink: #e8efea;
-  --bs-tm-muted: #93a398;
-  --bs-tm-soft: #212b23;
+  --bs-tm-ink: #EDE9F6;
+  --bs-tm-muted: #A198B8;
+  --bs-tm-soft: #272138;
 
   /* Хөгийн өнгө — харанхуй дэвсгэр дээр ч тод уншигдах */
   --tone-1: #ff7b7f;
   --tone-2: #ffb547;
-  --tone-3: #4fd98a;
+  --tone-3: #B9A2F5;
   --tone-4: #7aa7ff;
   --tone-0: #a4adb6;
 }
 
 html[data-theme="dark"] body {
   background:
-    radial-gradient(900px 500px at 50% -10%, #1a2a1f 0%, rgba(26, 42, 31, 0) 60%),
+    radial-gradient(900px 500px at 50% -10%, #201A2A 0%, rgba(26, 42, 31, 0) 60%),
     var(--bs-bg);
   color: var(--bs-ink);
 }
@@ -688,7 +709,7 @@ html[data-theme="dark"] [class*="bg-lime-50/"],
 html[data-theme="dark"] [class~="bg-lime-100"],
 html[data-theme="dark"] [class~="!bg-lime-100"],
 html[data-theme="dark"] [class*="bg-lime-100/"] {
-  background-color: #16311f !important;
+  background-color: #2A2045 !important;
 }
 html[data-theme="dark"] [class~="from-emerald-50"],
 html[data-theme="dark"] [class~="!from-emerald-50"],
@@ -714,7 +735,7 @@ html[data-theme="dark"] [class*="from-lime-50/"],
 html[data-theme="dark"] [class~="from-lime-100"],
 html[data-theme="dark"] [class~="!from-lime-100"],
 html[data-theme="dark"] [class*="from-lime-100/"] {
-  --tw-gradient-from: #16311f !important;
+  --tw-gradient-from: #2A2045 !important;
 }
 html[data-theme="dark"] [class~="via-emerald-50"],
 html[data-theme="dark"] [class~="!via-emerald-50"],
@@ -740,7 +761,7 @@ html[data-theme="dark"] [class*="via-lime-50/"],
 html[data-theme="dark"] [class~="via-lime-100"],
 html[data-theme="dark"] [class~="!via-lime-100"],
 html[data-theme="dark"] [class*="via-lime-100/"] {
-  --tw-gradient-via: #16311f !important;
+  --tw-gradient-via: #2A2045 !important;
 }
 html[data-theme="dark"] [class~="to-emerald-50"],
 html[data-theme="dark"] [class~="!to-emerald-50"],
@@ -766,7 +787,7 @@ html[data-theme="dark"] [class*="to-lime-50/"],
 html[data-theme="dark"] [class~="to-lime-100"],
 html[data-theme="dark"] [class~="!to-lime-100"],
 html[data-theme="dark"] [class*="to-lime-100/"] {
-  --tw-gradient-to: #16311f !important;
+  --tw-gradient-to: #2A2045 !important;
 }
 html[data-theme="dark"] [class~="border-emerald-100"],
 html[data-theme="dark"] [class~="!border-emerald-100"],
@@ -804,7 +825,7 @@ html[data-theme="dark"] [class*="border-lime-200/"],
 html[data-theme="dark"] [class~="border-lime-300"],
 html[data-theme="dark"] [class~="!border-lime-300"],
 html[data-theme="dark"] [class*="border-lime-300/"] {
-  border-color: #1e4229 !important;
+  border-color: #372A5C !important;
 }
 html[data-theme="dark"] [class~="ring-emerald-100"],
 html[data-theme="dark"] [class~="!ring-emerald-100"],
@@ -842,7 +863,7 @@ html[data-theme="dark"] [class*="ring-lime-200/"],
 html[data-theme="dark"] [class~="ring-lime-300"],
 html[data-theme="dark"] [class~="!ring-lime-300"],
 html[data-theme="dark"] [class*="ring-lime-300/"] {
-  --tw-ring-color: #1e4229 !important;
+  --tw-ring-color: #372A5C !important;
 }
 html[data-theme="dark"] [class*="text-emerald-700"],
 html[data-theme="dark"] [class*="text-emerald-800"],
@@ -860,7 +881,7 @@ html[data-theme="dark"] [class*="text-lime-700"],
 html[data-theme="dark"] [class*="text-lime-800"],
 html[data-theme="dark"] [class*="text-lime-900"],
 html[data-theme="dark"] [class*="text-lime-950"] {
-  color: #7ee3a8 !important;
+  color: #D3C4FA !important;
 }
 html[data-theme="dark"] [class~="bg-amber-50"],
 html[data-theme="dark"] [class~="!bg-amber-50"],
@@ -1561,7 +1582,7 @@ html[data-theme="dark"] [class*="bg-stone-100/"],
 html[data-theme="dark"] [class~="bg-stone-200"],
 html[data-theme="dark"] [class~="!bg-stone-200"],
 html[data-theme="dark"] [class*="bg-stone-200/"] {
-  background-color: #1c241e !important;
+  background-color: #221D30 !important;
 }
 html[data-theme="dark"] [class~="from-slate-50"],
 html[data-theme="dark"] [class~="!from-slate-50"],
@@ -1593,7 +1614,7 @@ html[data-theme="dark"] [class*="from-stone-50/"],
 html[data-theme="dark"] [class~="from-stone-100"],
 html[data-theme="dark"] [class~="!from-stone-100"],
 html[data-theme="dark"] [class*="from-stone-100/"] {
-  --tw-gradient-from: #1c241e !important;
+  --tw-gradient-from: #221D30 !important;
 }
 html[data-theme="dark"] [class~="via-slate-50"],
 html[data-theme="dark"] [class~="!via-slate-50"],
@@ -1625,7 +1646,7 @@ html[data-theme="dark"] [class*="via-stone-50/"],
 html[data-theme="dark"] [class~="via-stone-100"],
 html[data-theme="dark"] [class~="!via-stone-100"],
 html[data-theme="dark"] [class*="via-stone-100/"] {
-  --tw-gradient-via: #1c241e !important;
+  --tw-gradient-via: #221D30 !important;
 }
 html[data-theme="dark"] [class~="to-slate-50"],
 html[data-theme="dark"] [class~="!to-slate-50"],
@@ -1657,7 +1678,7 @@ html[data-theme="dark"] [class*="to-stone-50/"],
 html[data-theme="dark"] [class~="to-stone-100"],
 html[data-theme="dark"] [class~="!to-stone-100"],
 html[data-theme="dark"] [class*="to-stone-100/"] {
-  --tw-gradient-to: #1c241e !important;
+  --tw-gradient-to: #221D30 !important;
 }
 html[data-theme="dark"] [class~="border-slate-100"],
 html[data-theme="dark"] [class~="!border-slate-100"],
@@ -1704,7 +1725,7 @@ html[data-theme="dark"] [class*="border-stone-200/"],
 html[data-theme="dark"] [class~="border-stone-300"],
 html[data-theme="dark"] [class~="!border-stone-300"],
 html[data-theme="dark"] [class*="border-stone-300/"] {
-  border-color: #273229 !important;
+  border-color: #332C47 !important;
 }
 html[data-theme="dark"] [class~="ring-slate-100"],
 html[data-theme="dark"] [class~="!ring-slate-100"],
@@ -1751,7 +1772,7 @@ html[data-theme="dark"] [class*="ring-stone-200/"],
 html[data-theme="dark"] [class~="ring-stone-300"],
 html[data-theme="dark"] [class~="!ring-stone-300"],
 html[data-theme="dark"] [class*="ring-stone-300/"] {
-  --tw-ring-color: #273229 !important;
+  --tw-ring-color: #332C47 !important;
 }
 html[data-theme="dark"] [class*="text-slate-900"],
 html[data-theme="dark"] [class*="text-slate-800"],
@@ -1768,7 +1789,7 @@ html[data-theme="dark"] [class*="text-neutral-950"],
 html[data-theme="dark"] [class*="text-stone-900"],
 html[data-theme="dark"] [class*="text-stone-800"],
 html[data-theme="dark"] [class*="text-stone-950"] {
-  color: #e8efea !important;
+  color: #EDE9F6 !important;
 }
 html[data-theme="dark"] [class*="text-slate-700"],
 html[data-theme="dark"] [class*="text-slate-600"],
@@ -1780,7 +1801,7 @@ html[data-theme="dark"] [class*="text-neutral-700"],
 html[data-theme="dark"] [class*="text-neutral-600"],
 html[data-theme="dark"] [class*="text-stone-700"],
 html[data-theme="dark"] [class*="text-stone-600"] {
-  color: #c3cec6 !important;
+  color: #C9C2DA !important;
 }
 html[data-theme="dark"] [class*="text-slate-500"],
 html[data-theme="dark"] [class*="text-slate-400"],
@@ -1792,7 +1813,7 @@ html[data-theme="dark"] [class*="text-neutral-500"],
 html[data-theme="dark"] [class*="text-neutral-400"],
 html[data-theme="dark"] [class*="text-stone-500"],
 html[data-theme="dark"] [class*="text-stone-400"] {
-  color: #93a398 !important;
+  color: #A198B8 !important;
 }
 html[data-theme="dark"] [class~="bg-white"],
 html[data-theme="dark"] [class~="!bg-white"],
@@ -1800,22 +1821,22 @@ html[data-theme="dark"] [class*="bg-white/9"],
 html[data-theme="dark"] [class*="bg-white/8"],
 html[data-theme="dark"] [class*="bg-white/7"],
 html[data-theme="dark"] [class*="bg-white/6"] {
-  background-color: #182019 !important;
+  background-color: #1E1A2B !important;
 }
-html[data-theme="dark"] [class~="from-white"], html[data-theme="dark"] [class~="!from-white"] { --tw-gradient-from: #182019 !important; }
-html[data-theme="dark"] [class~="via-white"], html[data-theme="dark"] [class~="!via-white"] { --tw-gradient-via: #182019 !important; }
-html[data-theme="dark"] [class~="to-white"], html[data-theme="dark"] [class~="!to-white"] { --tw-gradient-to: #182019 !important; }
-html[data-theme="dark"] [class~="border-white"] { border-color: #273229 !important; }
-html[data-theme="dark"] [class~="text-black"] { color: #e8efea !important; }
+html[data-theme="dark"] [class~="from-white"], html[data-theme="dark"] [class~="!from-white"] { --tw-gradient-from: #1E1A2B !important; }
+html[data-theme="dark"] [class~="via-white"], html[data-theme="dark"] [class~="!via-white"] { --tw-gradient-via: #1E1A2B !important; }
+html[data-theme="dark"] [class~="to-white"], html[data-theme="dark"] [class~="!to-white"] { --tw-gradient-to: #1E1A2B !important; }
+html[data-theme="dark"] [class~="border-white"] { border-color: #332C47 !important; }
+html[data-theme="dark"] [class~="text-black"] { color: #EDE9F6 !important; }
 /* --- Tailwind биш өөрийн ангиуд (аудитаар олдсон) --- */
-html[data-theme="dark"] .app-lesson-step-card { background: #1c241e !important; border-color: #273229 !important; }
-html[data-theme="dark"] .app-lesson-step-card-active { background: #16311f !important; border-color: #1e4229 !important; }
-html[data-theme="dark"] .hz-home-card-inner { background: linear-gradient(135deg, #16311f, #182019) !important; }
-html[data-theme="dark"] [class*="bg-[#eaf0ed]"], html[data-theme="dark"] [class*="bg-[#f8"], html[data-theme="dark"] [class*="bg-[#f9fafb"], html[data-theme="dark"] [class*="bg-[#fafafa"], html[data-theme="dark"] [class*="bg-[#fff"] { background-color: #1c241e !important; }
+html[data-theme="dark"] .app-lesson-step-card { background: #221D30 !important; border-color: #332C47 !important; }
+html[data-theme="dark"] .app-lesson-step-card-active { background: #2A2045 !important; border-color: #372A5C !important; }
+html[data-theme="dark"] .hz-home-card-inner { background: linear-gradient(135deg, #2A2045, #1E1A2B) !important; }
+html[data-theme="dark"] [class*="bg-[#EEE7FB]"], html[data-theme="dark"] [class*="bg-[#f8"], html[data-theme="dark"] [class*="bg-[#f9fafb"], html[data-theme="dark"] [class*="bg-[#fafafa"], html[data-theme="dark"] [class*="bg-[#fff"] { background-color: #221D30 !important; }
 html[data-theme="dark"] [class*="text-[#6d28d9]"] { color: #c4b0ff !important; }
 html[data-theme="dark"] [class*="bg-[#efe6ff]"] { background-color: #2a1f45 !important; }
-html[data-theme="dark"] [class*="bg-[#eaf0ed]"] { color: #e8efea !important; }
-html[data-theme="dark"] .bs-talk-card-ic { background: #16311f !important; }
+html[data-theme="dark"] [class*="bg-[#EEE7FB]"] { color: #EDE9F6 !important; }
+html[data-theme="dark"] .bs-talk-card-ic { background: #2A2045 !important; }
 html[data-theme="dark"] .bs-tm-goal-ic { background: #16283a !important; }
 
 html[data-theme="dark"] .app-chip:not(.app-chip-active),
@@ -1824,17 +1845,17 @@ html[data-theme="dark"] .app-game-stat,
 html[data-theme="dark"] .app-game-option:not(.app-game-option-correct):not(.app-game-option-wrong):not(.app-game-option-selected),
 html[data-theme="dark"] .app-kanji-cell:not(.app-kanji-cell-learned),
 html[data-theme="dark"] .app-game-header-close,
-html[data-theme="dark"] .app-game-score-pill { background-color: #182019 !important; border-color: #273229 !important; --tw-ring-color: #273229 !important; }
+html[data-theme="dark"] .app-game-score-pill { background-color: #1E1A2B !important; border-color: #332C47 !important; --tw-ring-color: #332C47 !important; }
 html[data-theme="dark"] .app-stat-pill-accent,
 html[data-theme="dark"] .app-btn-secondary,
 html[data-theme="dark"] .app-btn-outline-green,
 html[data-theme="dark"] .app-game-option-correct,
 html[data-theme="dark"] .app-game-option-selected,
-html[data-theme="dark"] .app-kanji-cell-learned { background-color: #16311f !important; border-color: #1e4229 !important; color: #7ee3a8 !important; --tw-ring-color: #1e4229 !important; }
+html[data-theme="dark"] .app-kanji-cell-learned { background-color: #2A2045 !important; border-color: #372A5C !important; color: #D3C4FA !important; --tw-ring-color: #372A5C !important; }
 html[data-theme="dark"] .app-game-option-wrong { background-color: #3a1c1e !important; border-color: #5a2a2e !important; color: #ff9aa2 !important; --tw-ring-color: #5a2a2e !important; }
-html[data-theme="dark"] .app-timeline-node-locked, html[data-theme="dark"] .app-game-progress-track { background-color: #212b23 !important; }
-html[data-theme="dark"] .app-lesson-media-placeholder { background: #212b23 !important; }
-html[data-theme="dark"] .bs-tm-avatar-initial { background: linear-gradient(135deg, #16311f, #1e4229) !important; color: #7ee3a8 !important; }
+html[data-theme="dark"] .app-timeline-node-locked, html[data-theme="dark"] .app-game-progress-track { background-color: #272138 !important; }
+html[data-theme="dark"] .app-lesson-media-placeholder { background: #272138 !important; }
+html[data-theme="dark"] .bs-tm-avatar-initial { background: linear-gradient(135deg, #2A2045, #372A5C) !important; color: #D3C4FA !important; }
 
 }
 

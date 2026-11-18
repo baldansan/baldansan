@@ -32,7 +32,7 @@ export function BichlegPlayerSwitch(props: Props) {
   }, []);
 
   if (desktop === null) {
-    return <div style={{ minHeight: "100vh", background: "#0a0f0c" }} aria-busy="true" />;
+    return <div style={{ minHeight: "100vh", background: "#0D0B13" }} aria-busy="true" />;
   }
   return desktop ? <BichlegDesktopClient {...props} /> : <BichlegFeedClient {...props} />;
 }

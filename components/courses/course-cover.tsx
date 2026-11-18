@@ -16,7 +16,7 @@ type Props = {
  * back to a drawn spine in the same shape, tinted per level.
  */
 const FALLBACK_GRADIENTS: Record<string, string> = {
-  "1": "linear-gradient(150deg, #34d399, #0f766e)",
+  "1": "linear-gradient(150deg, #A383F0, #361372)",
   "2": "linear-gradient(150deg, #60a5fa, #1e40af)",
   "3": "linear-gradient(150deg, #f59e0b, #b45309)",
   "4": "linear-gradient(150deg, #a78bfa, #5b21b6)",

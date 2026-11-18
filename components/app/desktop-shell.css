@@ -32,7 +32,7 @@
     height: 64px;
     padding: 0 28px;
     background: #fff;
-    border-bottom: 1px solid var(--app-border, #e7ece8);
+    border-bottom: 1px solid var(--app-border, #E8E0F5);
   }
   .bs-desknav-brand {
     display: flex;
@@ -40,7 +40,7 @@
     gap: 10px;
     margin-right: 22px;
     text-decoration: none;
-    color: var(--app-text, #0f1b14);
+    color: var(--app-text, #2A1F45);
   }
   .bs-desknav-logo {
     display: flex;
@@ -49,7 +49,7 @@
     width: 36px;
     height: 36px;
     border-radius: 10px;
-    background: #1fb85a;
+    background: #7C4DDB;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
@@ -72,14 +72,14 @@
     padding: 0 16px;
     font-size: 15px;
     font-weight: 700;
-    color: #3c4a41;
+    color: #4A4063;
     text-decoration: none;
     border-bottom: 3px solid transparent;
     box-sizing: border-box;
     transition: color 0.15s ease, background 0.15s ease;
   }
   .bs-desknav-tab:hover {
-    color: var(--app-text, #0f1b14);
+    color: var(--app-text, #2A1F45);
     background: #f6f8f6;
   }
   .bs-desknav-tab svg {
@@ -88,8 +88,8 @@
     flex: none;
   }
   .bs-desknav-tab.bs-on {
-    color: #149247;
-    border-bottom-color: #1fb85a;
+    color: #6537C2;
+    border-bottom-color: #7C4DDB;
   }
   .bs-desknav-spacer {
     flex: 1 1 auto;
@@ -103,12 +103,12 @@
     padding: 0 12px;
     box-sizing: border-box;
     border-radius: 12px;
-    background: var(--app-bg, #eef2ef);
+    background: var(--app-bg, #F6F1FF);
     border: 1px solid transparent;
     margin-right: 10px;
   }
   .bs-desknav-search:focus-within {
-    border-color: #1fb85a;
+    border-color: #7C4DDB;
     background: #fff;
   }
   .bs-desknav-search svg {
@@ -124,11 +124,11 @@
     background: transparent;
     font: inherit;
     font-size: 14px;
-    color: var(--app-text, #0f1b14);
+    color: var(--app-text, #2A1F45);
     outline: none;
   }
   .bs-desknav-search input::placeholder {
-    color: #7e8b83;
+    color: #6F6787;
   }
   .bs-desknav-seg {
     display: inline-flex;
@@ -136,7 +136,7 @@
     height: 32px;
     padding: 2px;
     border-radius: 999px;
-    background: var(--app-bg, #eef2ef);
+    background: var(--app-bg, #F6F1FF);
     margin: 0 4px;
   }
   .bs-desknav-seg button {
@@ -153,7 +153,7 @@
   }
   .bs-desknav-seg button.bs-on {
     background: #fff;
-    color: #149247;
+    color: #6537C2;
     box-shadow: 0 1px 2px rgba(15, 27, 20, 0.08);
   }
   .bs-desknav-icon {
@@ -163,7 +163,7 @@
     width: 40px;
     height: 40px;
     border-radius: 12px;
-    color: #3c4a41;
+    color: #4A4063;
     text-decoration: none;
   }
   .bs-desknav-icon:hover {
@@ -266,13 +266,13 @@
   font-size: 32px;
   font-weight: 900;
   line-height: 1;
-  color: #1a2e22;
+  color: #2A1F45;
 }
 .bs-home-rail-sub {
   margin: 4px 0 10px;
   font-size: 12px;
   font-weight: 600;
-  color: #7a8c82;
+  color: #6F6787;
 }
 .bs-home-rail-links {
   display: flex;
@@ -288,7 +288,7 @@
   border-radius: 12px;
   font-size: 14px;
   font-weight: 700;
-  color: #1a2e22;
+  color: #2A1F45;
   text-decoration: none;
 }
 .bs-home-rail-links a:hover {
@@ -328,12 +328,12 @@
     width: 26px;
     height: 26px;
     border-radius: 7px;
-    background: #0f1b14;
+    background: #2A1F45;
     color: #fff;
     font: 800 12px/1 var(--bs-ui, system-ui, sans-serif);
   }
   .app-game-option-correct .app-game-hotkey {
-    background: #1fb85a;
+    background: #7C4DDB;
   }
   .app-game-option-wrong .app-game-hotkey {
     background: #ef4444;
@@ -382,8 +382,8 @@
     display: none;
   }
   .bs-lib-card--on {
-    outline: 2px solid #1fb85a;
-    background: #eaf8f0;
+    outline: 2px solid #7C4DDB;
+    background: #F3ECFF;
   }
   .bs-lib-two--detail .bs-lib-detail nav[aria-label="breadcrumb"] {
     display: none;
@@ -557,7 +557,7 @@
   }
   .bs-mt-option:hover:not(:disabled) {
     border-color: var(--bs-green);
-    background: #f4faf6;
+    background: #F6F4FA;
   }
   .bs-mt-finish-btn {
     max-width: 420px;

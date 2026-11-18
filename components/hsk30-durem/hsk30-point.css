@@ -2,7 +2,7 @@
 
 .hsk30-pt {
   font-family: var(--bs-ui, "Nunito"), system-ui, sans-serif;
-  color: #13241b;
+  color: #191324;
   line-height: 1.55;
 }
 
@@ -22,7 +22,7 @@
   font-size: 13px;
   font-weight: 800;
   color: #fff;
-  background: #1fb85a;
+  background: #7C4DDB;
   width: 26px;
   height: 26px;
   border-radius: 8px;
@@ -34,7 +34,7 @@
 .hsk30-pt .p-zh {
   font-size: 28px;
   font-weight: 700;
-  color: #018242;
+  color: #351271;
 }
 
 .hsk30-pt .p-pin {
@@ -72,8 +72,8 @@
 }
 
 .hsk30-pt .struct {
-  background: #0f5230;
-  color: #eafff2;
+  background: #280F52;
+  color: #F2EDFC;
   border-radius: 12px;
   padding: 12px 15px;
   margin-bottom: 12px;
@@ -85,7 +85,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #7dffb0;
+  color: #B28FED;
   margin-bottom: 5px;
 }
 
@@ -100,7 +100,7 @@
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #018242;
+  color: #351271;
   margin: 16px 0 9px;
 }
 
@@ -158,8 +158,8 @@
 }
 
 .hsk30-pt .mcard.good {
-  background: #eafaf0;
-  border-color: #bfe9cf;
+  background: #F0EAFA;
+  border-color: #CEBFE9;
 }
 
 .hsk30-pt .mcard .tag {
@@ -174,7 +174,7 @@
 }
 
 .hsk30-pt .mcard.good .tag {
-  color: #018242;
+  color: #351271;
 }
 
 .hsk30-pt .mcard .s {
@@ -185,14 +185,14 @@
 .hsk30-pt .why {
   font-size: 13px;
   color: #5e6f66;
-  background: #f6faf7;
+  background: #F7F6FA;
   border-radius: 9px;
   padding: 8px 11px;
   margin-bottom: 8px;
 }
 
 .hsk30-pt .why b {
-  color: #13241b;
+  color: #191324;
 }
 
 .hsk30-pt .note {
@@ -253,7 +253,7 @@
   font-size: 15px;
   cursor: pointer;
   transition: 0.12s;
-  color: #13241b;
+  color: #191324;
 }
 
 .hsk30-pt .opt .zh {
@@ -261,8 +261,8 @@
 }
 
 .hsk30-pt .opt:hover:not(:disabled) {
-  border-color: #1fb85a;
-  background: #f3fbf6;
+  border-color: #7C4DDB;
+  background: #F6F3FB;
 }
 
 .hsk30-pt .opt:disabled {
@@ -270,8 +270,8 @@
 }
 
 .hsk30-pt .opt.correct {
-  background: #eafaf0;
-  border-color: #1fb85a;
+  background: #F0EAFA;
+  border-color: #7C4DDB;
 }
 
 .hsk30-pt .opt.wrong {
@@ -285,7 +285,7 @@
 }
 
 .hsk30-pt .opt.correct .mk {
-  color: #018242;
+  color: #351271;
 }
 
 .hsk30-pt .opt.wrong .mk {
@@ -300,8 +300,8 @@
 }
 
 .hsk30-pt .fb.ok {
-  background: #eafaf0;
-  color: #0e6b39;
+  background: #F0EAFA;
+  color: #311168;
 }
 
 .hsk30-pt .fb.no {

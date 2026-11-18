@@ -227,7 +227,7 @@ export function ReviewMenuHubClient({
       </div>
       <p className="bs-tm-sec">{tr(locale, "Материал")}</p>
       <PrefetchLink href="/nom" className="bs-tm-card">
-        <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>📖</span>
+        <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/book.webp" alt="" width={44} height={44} /></span>
         <span className="bs-tm-card-body">
           <span className="bs-tm-card-title">{tr(locale, "Ном сонгох")}</span>
           <span className="bs-tm-card-sub">{tr(locale, "HSK 1–6 · YCT 1–6 · 发展汉语 — бүх ном")}</span>
@@ -267,7 +267,7 @@ export function ReviewMenuHubClient({
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Үг")}</p>
         <PrefetchLink href="/review/words" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>📌</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/heart.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Миний үгс")}</span>
             <span className="bs-tm-card-sub">{savedWords && savedWords.total > 0
@@ -277,7 +277,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
         <PrefetchLink href="/review/memorize" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>➕</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/cards.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Үг нэмэх")}</span>
             <span className="bs-tm-card-sub">{tr(locale, "HSK түвшний үгсээс сонгох")}</span>
@@ -286,7 +286,7 @@ export function ReviewMenuHubClient({
         </PrefetchLink>
 
         <PrefetchLink href="/review/writing" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>✍️</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/pencil.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Бичих")}</span>
             <span className="bs-tm-card-sub">{tr(locale, "Цээжилж буй үгсээ гараар бичиж цээжил")}</span>
@@ -296,7 +296,7 @@ export function ReviewMenuHubClient({
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Сонсох · Ярих")}</p>
         <PrefetchLink href={`/listen/daily?level=${activeLevel}`} className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>🎧</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/head.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Сонсголын сорил")}</span>
             <span className="bs-tm-card-sub">{tr(locale, "10 асуулт · 5 минут")}</span>
@@ -305,7 +305,7 @@ export function ReviewMenuHubClient({
         </PrefetchLink>
         {bichlegCard}
         <PrefetchLink href="/talk" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>🗣️</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/chat.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Ярилцах дадлага")}</span>
             <span className="bs-tm-card-sub">{tr(locale, "Дэлгүүр, гуанз, такси — хятадаар ярьж үз")}</span>
@@ -315,7 +315,7 @@ export function ReviewMenuHubClient({
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Шалгалт")}</p>
         <PrefetchLink href="/review/tests" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>📝</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/trophy.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "HSK шалгалт")}</span>
             <span className="bs-tm-card-sub">{testCount > 0 ? `${testCount} ${tr(locale, "шалгалт")} · ${tr(locale, "сурах горим, жинхэнэ горим")}` : testStatus}</span>

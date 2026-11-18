@@ -73,7 +73,7 @@ export function PinyinCourseMap() {
                 {isCurrent ? (
                   <span className="bs-mem-map-here">{anyStarted ? `▶ ${tr(locale, "Үргэлжлүүлэх")}` : `▶ ${tr(locale, "Эхлэх")}`}</span>
                 ) : null}
-                <span className="bs-mem-map-ring" style={{ background: `conic-gradient(#10b981 ${pct}%, #e2e8f0 0)` }}>
+                <span className="bs-mem-map-ring" style={{ background: `conic-gradient(#8B5FE3 ${pct}%, #e2e8f0 0)` }}>
                   <span className="bs-mem-map-circle" aria-hidden>
                     {isDone ? "⭐" : u.emoji}
                   </span>

@@ -28,7 +28,7 @@ export function StudyPlanCircularProgress({
             cy={center}
             r={radius}
             fill="none"
-            stroke="#e7f0ea"
+            stroke="#EEE7FB"
             strokeWidth={stroke}
           />
           <circle
@@ -36,7 +36,7 @@ export function StudyPlanCircularProgress({
             cy={center}
             r={radius}
             fill="none"
-            stroke="#1FB85A"
+            stroke="#7C4DDB"
             strokeWidth={stroke}
             strokeLinecap="round"
             strokeDasharray={circumference}

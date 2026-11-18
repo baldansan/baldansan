@@ -150,7 +150,7 @@ export function fireConfetti(durationMs = 1800): void {
     return;
   }
   g.scale(dpr, dpr);
-  const colors = ["#1fb85a", "#f2a93b", "#8b5cf6", "#3b82f6", "#ef4444", "#facc15"];
+  const colors = ["#7C4DDB", "#f2a93b", "#8b5cf6", "#3b82f6", "#ef4444", "#facc15"];
   const W = window.innerWidth;
   const H = window.innerHeight;
   const parts = Array.from({ length: 140 }, () => ({

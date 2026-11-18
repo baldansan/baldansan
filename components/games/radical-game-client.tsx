@@ -172,7 +172,7 @@ export function RadicalGameClient({
 
   if (entries.length === 0) {
     return (
-      <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6">
+      <GameShell mainClassName=" bg-[#F3F1F6] px-5 pt-6">
         <div className="rounded-[24px] bg-white p-8 text-center shadow-[0_12px_30px_rgba(25,40,30,0.10)]">
           <p className="text-sm font-bold text-[var(--app-text)]">
             {tr(
@@ -197,7 +197,7 @@ export function RadicalGameClient({
 
   if (finished) {
     return (
-      <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6">
+      <GameShell mainClassName=" bg-[#F3F1F6] px-5 pt-6">
         <RadicalGameTop
           title={tr(locale, labels.radicalTitle)}
           counter={`${total} / ${total}`}
@@ -227,14 +227,14 @@ export function RadicalGameClient({
             <button
               type="button"
               onClick={onReturnToSummary}
-              className="mt-3 inline-flex min-h-[48px] w-full max-w-[200px] items-center justify-center rounded-[15px] bg-[#eaf0ed] px-5 py-3 text-[15px] font-extrabold text-[#3b473f]"
+              className="mt-3 inline-flex min-h-[48px] w-full max-w-[200px] items-center justify-center rounded-[15px] bg-[#EEE7FB] px-5 py-3 text-[15px] font-extrabold text-[#4A4063]"
             >
               {tr(locale, "Дүгнэлт рүү буцах")}
             </button>
           ) : returnHref ? (
             <Link
               href={returnHref}
-              className="mt-3 inline-flex min-h-[48px] w-full max-w-[200px] items-center justify-center rounded-[15px] bg-[#eaf0ed] px-5 py-3 text-[15px] font-extrabold text-[#3b473f]"
+              className="mt-3 inline-flex min-h-[48px] w-full max-w-[200px] items-center justify-center rounded-[15px] bg-[#EEE7FB] px-5 py-3 text-[15px] font-extrabold text-[#4A4063]"
             >
               {tr(locale, "Багц руу буцах")}
             </Link>
@@ -249,7 +249,7 @@ export function RadicalGameClient({
   const hanziRevealed = checkResult === "ok";
 
   return (
-    <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6 pb-8">
+    <GameShell mainClassName=" bg-[#F3F1F6] px-5 pt-6 pb-8">
       <RadicalGameTop
         title={tr(locale, labels.radicalTitle)}
         counter={`${index + 1} / ${total}`}
@@ -288,7 +288,7 @@ export function RadicalGameClient({
           {tr(locale, "Бүрдэл хэсгүүдийг зөв дарааллаар нь сонго")}
         </p>
 
-        <div className="flex min-h-[78px] flex-wrap items-center justify-center gap-2 rounded-[18px] border-2 border-dashed border-[#c6d4cc] bg-[#fbfffd] px-3 py-3">
+        <div className="flex min-h-[78px] flex-wrap items-center justify-center gap-2 rounded-[18px] border-2 border-dashed border-[#c6d4cc] bg-[#FDFCFE] px-3 py-3">
           {selected.length === 0 ? (
             <span className="text-[13px] font-extrabold text-[#9fb0a7]">
               {tr(locale, "Бүрдлүүдийг энд дараалуулна")}
@@ -300,7 +300,7 @@ export function RadicalGameClient({
                   type="button"
                   onClick={() => unpickSlot(slotIndex)}
                   disabled={locked}
-                  className="min-w-[52px] rounded-[14px] border border-[#d6eadf] bg-[var(--app-primary-light)] px-[11px] py-2 text-[26px] font-black text-[var(--app-text)] disabled:opacity-60"
+                  className="min-w-[52px] rounded-[14px] border border-[#DDD6EA] bg-[var(--app-primary-light)] px-[11px] py-2 text-[26px] font-black text-[var(--app-text)] disabled:opacity-60"
                 >
                   {slot.c}
                 </button>
@@ -344,7 +344,7 @@ export function RadicalGameClient({
             type="button"
             onClick={resetSelection}
             disabled={locked}
-            className="min-h-[48px] flex-1 rounded-[15px] bg-[#eaf0ed] px-4 py-3 text-[15px] font-extrabold text-[#3b473f] disabled:opacity-50"
+            className="min-h-[48px] flex-1 rounded-[15px] bg-[#EEE7FB] px-4 py-3 text-[15px] font-extrabold text-[#4A4063] disabled:opacity-50"
           >
             {tr(locale, "Цэвэрлэх")}
           </button>
@@ -359,7 +359,7 @@ export function RadicalGameClient({
         </div>
 
         {checkResult === "ok" ? (
-          <div className="mt-3.5 rounded-[18px] border border-[#b6e6c8] bg-[var(--app-primary-light)] p-[15px] leading-relaxed">
+          <div className="mt-3.5 rounded-[18px] border border-[#C8B6E6] bg-[var(--app-primary-light)] p-[15px] leading-relaxed">
             <h3 className="text-base font-bold text-[var(--app-text)]">
               {tr(locale, "✅ Зөв!")} +{lastGain} {tr(locale, "оноо")}
             </h3>

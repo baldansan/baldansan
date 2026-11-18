@@ -26,8 +26,8 @@ export const TEMEE_EMOJI_CONFIG: Record<TemeeEmojiVariant, TemeeEmojiConfig> = {
   greet: {
     pose: "wave",
     emoji: "👋",
-    gradient: "linear-gradient(145deg, #e3f7eb 0%, #1fb85a 100%)",
-    shadow: "0 4px 12px rgba(31, 184, 90, 0.35)",
+    gradient: "linear-gradient(145deg, #e3f7eb 0%, #7C4DDB 100%)",
+    shadow: "0 4px 12px rgba(124,77,219, 0.35)",
   },
   celebrate: {
     pose: "celebrate",
@@ -44,14 +44,14 @@ export const TEMEE_EMOJI_CONFIG: Record<TemeeEmojiVariant, TemeeEmojiConfig> = {
   teach: {
     pose: "teach",
     emoji: "📖",
-    gradient: "linear-gradient(145deg, #e3f7eb 0%, #1fb85a 100%)",
-    shadow: "0 4px 14px rgba(31, 184, 90, 0.3)",
+    gradient: "linear-gradient(145deg, #e3f7eb 0%, #7C4DDB 100%)",
+    shadow: "0 4px 14px rgba(124,77,219, 0.3)",
   },
   think: {
     pose: "think",
     emoji: "💡",
-    gradient: "linear-gradient(145deg, #e3f7eb 0%, #1fb85a 100%)",
-    shadow: "0 4px 12px rgba(31, 184, 90, 0.28)",
+    gradient: "linear-gradient(145deg, #e3f7eb 0%, #7C4DDB 100%)",
+    shadow: "0 4px 12px rgba(124,77,219, 0.28)",
   },
   bichleg: {
     pose: "listen",
@@ -75,7 +75,7 @@ export const TEMEE_EMOJI_CONFIG: Record<TemeeEmojiVariant, TemeeEmojiConfig> = {
     pose: "wave",
     emoji: "🐫",
     gradient: "linear-gradient(145deg, #ffffff 0%, #e3f7eb 100%)",
-    shadow: "0 4px 12px rgba(31, 184, 90, 0.2)",
+    shadow: "0 4px 12px rgba(124,77,219, 0.2)",
   },
 };
 

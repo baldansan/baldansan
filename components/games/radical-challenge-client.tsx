@@ -295,7 +295,7 @@ export function RadicalChallengeClient({
 
   if (entries.length === 0) {
     return (
-      <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6">
+      <GameShell mainClassName=" bg-[#F3F1F6] px-5 pt-6">
         <p className="py-16 text-center text-sm text-[var(--app-muted)]">
           {formatActiveHskLevel(hskLevel)}{" "}
           {tr(locale, "түвшинд сорилтын ханз олдсонгүй.")}
@@ -313,7 +313,7 @@ export function RadicalChallengeClient({
   if (finished) {
     const won = finished === "win";
     return (
-      <GameShell mainClassName=" bg-[#f1f6f3] px-5 pt-6 pb-8">
+      <GameShell mainClassName=" bg-[#F3F1F6] px-5 pt-6 pb-8">
         <ChallengeHeader
           lives={lives}
           title={tr(locale, labels.radicalTitle)}
@@ -355,7 +355,7 @@ export function RadicalChallengeClient({
   const hanziRevealed = roundResult === "ok" || roundResult === "timeout";
 
   return (
-    <GameShell mainClassName=" bg-[#f1f6f3] px-[18px] pt-5 pb-8">
+    <GameShell mainClassName=" bg-[#F3F1F6] px-[18px] pt-5 pb-8">
       <ChallengeHeader
         lives={lives}
         title={tr(locale, labels.radicalTitle)}
@@ -405,7 +405,7 @@ export function RadicalChallengeClient({
           {tr(locale, "Бүрдэл хэсгүүдийг зөв дарааллаар нь сонго")}
         </p>
 
-        <div className="flex min-h-[66px] flex-wrap items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-[#c6d4cc] bg-[#fbfffd] px-2.5 py-2.5">
+        <div className="flex min-h-[66px] flex-wrap items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-[#c6d4cc] bg-[#FDFCFE] px-2.5 py-2.5">
           {selected.length === 0 ? (
             <span className="text-xs font-extrabold text-[#9fb0a7]">
               {tr(locale, "Бүрдлүүдийг энд дараалуулна")}
@@ -471,7 +471,7 @@ export function RadicalChallengeClient({
             type="button"
             onClick={resetSelection}
             disabled={locked}
-            className="min-h-[46px] flex-1 rounded-[14px] bg-[#eaf0ed] text-sm font-extrabold text-[#3b473f] disabled:opacity-50"
+            className="min-h-[46px] flex-1 rounded-[14px] bg-[#EEE7FB] text-sm font-extrabold text-[#4A4063] disabled:opacity-50"
           >
             {tr(locale, "Цэвэр")}
           </button>
@@ -486,7 +486,7 @@ export function RadicalChallengeClient({
         </div>
 
         {roundResult === "ok" ? (
-          <div className="mt-3 rounded-2xl border border-[#b6e6c8] bg-[var(--app-primary-light)] p-3 leading-relaxed">
+          <div className="mt-3 rounded-2xl border border-[#C8B6E6] bg-[var(--app-primary-light)] p-3 leading-relaxed">
             <h3 className="text-[15px] font-bold">
               {tr(locale, "✅ Зөв!")} +{lastGain.total}{" "}
               <span className="font-semibold text-[var(--app-muted)]">

@@ -243,7 +243,7 @@ function drawToneChart(canvas: HTMLCanvasElement, columns: Column[], live?: Chao
       ctx.setLineDash([]);
     }
     drawLine(ctx, c.ref, x0, x1, chaoY, { color: "#94a3b8", width: 2 });
-    if (c.user) drawLine(ctx, c.user, x0, x1, chaoY, { color: "#059669", width: 3.5 });
+    if (c.user) drawLine(ctx, c.user, x0, x1, chaoY, { color: "#7C4DDB", width: 3.5 });
     ctx.fillStyle = c.bad ? "#b45309" : "#475569";
     ctx.fillText(c.label, PAD_L + colW * i + colW / 2, cssH - 4);
   });
@@ -253,7 +253,7 @@ function drawToneChart(canvas: HTMLCanvasElement, columns: Column[], live?: Chao
     const t0 = live[0].t;
     const tLast = live[live.length - 1].t;
     const span = Math.max(tLast - t0, 1.2);
-    ctx.strokeStyle = "#059669";
+    ctx.strokeStyle = "#7C4DDB";
     ctx.lineWidth = 3.5;
     ctx.lineJoin = "round";
     ctx.beginPath();

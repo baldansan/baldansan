@@ -64,7 +64,7 @@
 .bs-gj-pop-points {
   font-size: 26px;
   font-weight: 900;
-  color: #149247;
+  color: #6537C2;
   text-shadow: 0 1px 0 #fff;
 }
 .bs-gj-pop-mult {
@@ -112,11 +112,11 @@
   box-shadow: 0 4px 12px rgba(15, 27, 20, 0.12);
   font-size: 12px;
   font-weight: 800;
-  color: #0f1b14;
+  color: #2A1F45;
   white-space: nowrap;
 }
 .bs-gj-temee--correct .bs-gj-temee-bubble {
-  color: #149247;
+  color: #6537C2;
 }
 .bs-gj-temee--combo .bs-gj-temee-bubble {
   color: #9a5b0b;
@@ -130,7 +130,7 @@
 .bs-gj-sfx {
   width: 32px;
   height: 32px;
-  border: 1px solid var(--app-border, #e7ece8);
+  border: 1px solid var(--app-border, #E8E0F5);
   border-radius: 999px;
   background:var(--bs-card);
   font-size: 14px;
@@ -156,10 +156,10 @@
   stroke-linecap: round;
 }
 .bs-gj-ring .bs-gj-ring-bg {
-  stroke: #eef2ef;
+  stroke: #F6F1FF;
 }
 .bs-gj-ring .bs-gj-ring-fg {
-  stroke: #1fb85a;
+  stroke: #7C4DDB;
   transition: stroke-dashoffset 1.1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .bs-gj-ring-txt {
@@ -174,12 +174,12 @@
   font-size: 30px;
   font-weight: 900;
   line-height: 1;
-  color: #0f1b14;
+  color: #2A1F45;
 }
 .bs-gj-ring-txt small {
   font-size: 11px;
   font-weight: 700;
-  color: #7e8b83;
+  color: #6F6787;
 }
 .bs-gj-newbest {
   display: inline-flex;
@@ -209,19 +209,19 @@
   display: block;
   font-size: 18px;
   font-weight: 900;
-  color: #0f1b14;
+  color: #2A1F45;
 }
 .bs-gj-stat span {
   font-size: 10px;
   font-weight: 700;
-  color: #7e8b83;
+  color: #6F6787;
 }
 .bs-gj-mission {
   margin-top: 12px;
   padding: 8px 12px;
   border-radius: 12px;
-  background: #eaf8f0;
-  color: #0f7338;
+  background: #F3ECFF;
+  color: #3F2485;
   font-size: 12px;
   font-weight: 800;
   animation: bs-gj-pop-in 0.5s 0.4s cubic-bezier(0.2, 1.6, 0.4, 1) both;

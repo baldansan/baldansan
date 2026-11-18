@@ -49,7 +49,7 @@ export default async function ReviewGrammarStructureModulePage({
     <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_REVIEW}>
       <Link
         href={HELZUI_REVIEW_BASE}
-        className="mb-3 inline-flex text-xs font-bold text-[#1FB85A]"
+        className="mb-3 inline-flex text-xs font-bold text-[#7C4DDB]"
       >
         ← Модулууд
       </Link>

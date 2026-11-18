@@ -178,7 +178,7 @@ export function WritingReviewClient() {
         </button>
         <Link
           href="/review"
-          className="mt-3 block min-h-[48px] w-full rounded-[14px] bg-[#eaf0ed] py-3.5 text-center text-sm font-extrabold text-[#3b473f]"
+          className="mt-3 block min-h-[48px] w-full rounded-[14px] bg-[#EEE7FB] py-3.5 text-center text-sm font-extrabold text-[#4A4063]"
         >
           {tr(locale, "Давтах цэс рүү")}
         </Link>

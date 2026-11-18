@@ -503,7 +503,7 @@ export function HanziMemorizeClient({ restoreLevel }: Props = {}) {
                   <span
                     className="bs-mem-map-ring"
                     style={{
-                      background: `conic-gradient(#10b981 ${pct}%, #e2e8f0 0)`,
+                      background: `conic-gradient(#8B5FE3 ${pct}%, #e2e8f0 0)`,
                     }}
                   >
                     {b.kind === "family" && b.char && !isDone ? (

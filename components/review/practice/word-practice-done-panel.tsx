@@ -44,7 +44,7 @@ export function WordPracticeDonePanel({
       <button
         type="button"
         onClick={onBackToSummary}
-        className="mt-3 min-h-[48px] w-full rounded-[14px] bg-[#eaf0ed] text-sm font-extrabold text-[#3b473f]"
+        className="mt-3 min-h-[48px] w-full rounded-[14px] bg-[#EEE7FB] text-sm font-extrabold text-[#4A4063]"
       >
         {tr(locale, "Дүгнэлт рүү буцах")}
       </button>

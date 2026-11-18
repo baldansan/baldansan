@@ -59,10 +59,10 @@ export function HanziWriterPractice({
           padding: 20,
           showOutline: true,
           strokeAnimationSpeed: 1,
-          drawingColor: "#059669",
+          drawingColor: "#7C4DDB",
           drawingWidth: 10,
           outlineColor: "#d1d5db",
-          highlightColor: "#10b981",
+          highlightColor: "#8B5FE3",
           charDataLoader: localHanziCharDataLoader,
         });
 

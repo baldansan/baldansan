@@ -104,7 +104,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#1FB85A",
+  themeColor: "#7C4DDB",
   /**
    * Chrome-ийн auto dark mode-оос хамгаална; жинхэнэ харанхуй горимыг
    * globals.css дэх html[data-theme="dark"]{color-scheme:dark} удирдана.
@@ -131,7 +131,7 @@ const PENDING_SCRIPT = `(function(){try{var m=document.cookie.match(/(?:^|;\s*)b
  * CSS зурагдахаас өмнө <html data-theme> тавина (flash гарахгүй).
  * Admin/багш/байгууллагын зам үргэлж light.
  */
-const THEME_SCRIPT = `(function(){try{var p=location.pathname;var forced=/^\\/(admin|teachers?|teacher-dashboard|organization)(\\/|$)/.test(p);var t=localStorage.getItem('buunduu-theme-v1');var d=t==='dark'||((t!=='light')&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);var th=forced||!d?'light':'dark';document.documentElement.setAttribute('data-theme',th);if(th==='dark'){var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content','#0f1512')}}catch(e){}})()`;
+const THEME_SCRIPT = `(function(){try{var p=location.pathname;var forced=/^\\/(admin|teachers?|teacher-dashboard|organization)(\\/|$)/.test(p);var t=localStorage.getItem('buunduu-theme-v1');var d=t==='dark'||((t!=='light')&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);var th=forced||!d?'light':'dark';document.documentElement.setAttribute('data-theme',th);if(th==='dark'){var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content','#14111D')}}catch(e){}})()`;
 
 const HANZI_FONT_SCRIPT = `(function(){try{var f=localStorage.getItem('buunduu-hanzi-font-v1');if(f==='serif'||f==='brush'){document.documentElement.setAttribute('data-hanzi-font',f)}}catch(e){}})()`;
 

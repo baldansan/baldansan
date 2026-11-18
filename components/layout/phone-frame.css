@@ -22,5 +22,5 @@
   min-height: 100dvh;
   flex-direction: column;
   width: 100%;
-  background: var(--app-bg, #eef2ef);
+  background: var(--app-bg, #F6F1FF);
 }

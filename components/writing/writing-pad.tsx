@@ -139,10 +139,10 @@ export function WritingPad({ char, phase, onDone, maxSize = 340, onStroke }: Pro
       showOutline: phase !== "memory",
       strokeAnimationSpeed: 1,
       delayBetweenStrokes: 350,
-      drawingColor: "#059669",
+      drawingColor: "#7C4DDB",
       drawingWidth: 10,
       outlineColor: "#9ca3af",
-      highlightColor: "#10b981",
+      highlightColor: "#8B5FE3",
       charDataLoader: localHanziCharDataLoader,
       onLoadCharDataSuccess: (data: unknown) => {
         if (cancelled) return;

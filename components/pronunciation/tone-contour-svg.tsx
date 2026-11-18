@@ -32,7 +32,7 @@ export function ToneContourSvg({
   durationMs = 600,
   width = 72,
   height = 40,
-  stroke = "#059669",
+  stroke = "#7C4DDB",
   className,
 }: Props) {
   const pathRef = useRef<SVGPathElement | null>(null);
@@ -88,7 +88,7 @@ export function TonePairIcon({
   inverted?: boolean;
 }) {
   const half = width / 2;
-  const c1 = inverted ? "#ffffff" : "#059669";
+  const c1 = inverted ? "#ffffff" : "#7C4DDB";
   const c2 = inverted ? "rgba(255,255,255,0.75)" : t2 === 0 ? "#94a3b8" : "#0ea5e9";
   return (
     <svg viewBox={`0 0 ${width} ${height}`} width={width} height={height} aria-hidden>

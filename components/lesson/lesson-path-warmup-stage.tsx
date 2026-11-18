@@ -101,7 +101,7 @@ export function LessonPathWarmupStage({
   if (dialogueN > 0 || plan.warmupExtras.includes("dialogues")) {
     goals.push({
       icon: "🗣️",
-      bg: "#e3f7eb",
+      bg: "#F3ECFF",
       title: `${dialogueN || 1} яриа`,
       sub: "Subtitle ба shadowing",
     });
@@ -137,7 +137,7 @@ export function LessonPathWarmupStage({
       <div className="bs-tm-intro-bubble">
         <p className="bs-tm-intro-bubble-title">
           Сайн уу! Өнөөдөр бид{" "}
-          <span className="font-[family-name:var(--font-noto-sc)] text-[#018242]">
+          <span className="font-[family-name:var(--font-noto-sc)] text-[#351271]">
             {lesson.title.zh}
           </span>{" "}
           сурна 🌸

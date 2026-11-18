@@ -2,7 +2,7 @@
 .bs-pc{margin-top:10px;font-size:14px;color:var(--app-text,#1e293b)}
 .bs-pc--compact{margin-top:6px}
 .bs-pc-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.bs-pc-btn{display:inline-flex;align-items:center;gap:7px;border:1px solid #c7f0d8;background:#f0fdf4;color:#166534;
+.bs-pc-btn{display:inline-flex;align-items:center;gap:7px;border:1px solid #D6C7F0;background:#f0fdf4;color:#166534;
   border-radius:999px;padding:8px 14px;font-weight:700;font-size:13px;cursor:pointer;transition:background .15s,transform .1s}
 .bs-pc--compact .bs-pc-btn{padding:5px 10px;font-size:12px}
 .bs-pc-btn:active{transform:scale(.97)}

@@ -69,11 +69,11 @@ export function buildWeeklyTeacherReportEmail(data: WeeklyTeacherReportData): {
 
   const html = `
   <div style="font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:640px;margin:0 auto;color:#111827;">
-    <h2 style="color:#047857;margin-bottom:4px;">📊 Долоо хоногийн тайлан</h2>
+    <h2 style="color:#6537C2;margin-bottom:4px;">📊 Долоо хоногийн тайлан</h2>
     <p style="margin-top:0;color:#6b7280;">Бөөндөө Сурцгаая — ${escapeHtml(data.teacherName)}</p>
     <p>Энэ долоо хоногт нийт <strong>${data.weeklyCompletedCount}</strong> даалгавар дуусгасан байна.</p>
     <table style="width:100%;border-collapse:collapse;margin-top:12px;font-size:13px;">
-      <tr style="background:#ecfdf5;text-align:left;">
+      <tr style="background:#F6F1FF;text-align:left;">
         <th style="padding:8px 10px;">Анги</th>
         <th style="padding:8px 10px;">Сурагч</th>
         <th style="padding:8px 10px;">Гүйцэтгэл</th>

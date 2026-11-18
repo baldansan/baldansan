@@ -85,7 +85,7 @@ export function applyThemeToDocument(theme: ResolvedTheme): void {
   }
   // PWA статус мөр / address bar-ын өнгө
   const meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
-  if (meta) meta.setAttribute("content", theme === "dark" ? "#0f1512" : "#1FB85A");
+  if (meta) meta.setAttribute("content", theme === "dark" ? "#14111D" : "#7C4DDB");
 }
 
 /** Одоогийн <html data-theme> утга (эхний рендерийн script тавьсан). */

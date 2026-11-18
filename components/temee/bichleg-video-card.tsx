@@ -7,7 +7,7 @@ const THUMB_GRADS = [
   "linear-gradient(145deg, #4d9fff 0%, #2563eb 100%)",
   "linear-gradient(145deg, #ff8a3d 0%, #e65c2e 100%)",
   "linear-gradient(145deg, #9b6bff 0%, #6d28d9 100%)",
-  "linear-gradient(145deg, #1fb85a 0%, #0e9c47 100%)",
+  "linear-gradient(145deg, #7C4DDB 0%, #451892 100%)",
   "linear-gradient(145deg, #ff6b9d 0%, #db2777 100%)",
 ];
 

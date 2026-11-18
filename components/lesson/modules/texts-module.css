@@ -114,8 +114,8 @@
 
 .bs-txt-word:hover,
 .bs-txt-word:active {
-  color: var(--bs-green-800, #0f7338);
-  border-bottom-color: var(--bs-green, #10b981);
+  color: var(--bs-green-800, #3F2485);
+  border-bottom-color: var(--bs-green, #511CAD);
 }
 
 .bs-word-tap-backdrop {
@@ -176,9 +176,9 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  border: 1px solid color-mix(in srgb, var(--bs-green, #1FB85A) 40%, transparent);
-  background: color-mix(in srgb, var(--bs-green, #1FB85A) 10%, #fff);
-  color: var(--bs-green-dark, #0f7a3a);
+  border: 1px solid color-mix(in srgb, var(--bs-green, #7C4DDB) 40%, transparent);
+  background: color-mix(in srgb, var(--bs-green, #7C4DDB) 10%, #fff);
+  color: var(--bs-green-dark, #371376);
   border-radius: 999px;
   padding: 4px 10px;
   font-size: 12px;
@@ -191,8 +191,8 @@
 
 /* 课文 сонсох үед subtitle-тэй тулгаж идэвхтэй өгүүлбэрийг тодруулна */
 .bs-txt-sentence--active {
-  background: color-mix(in srgb, var(--bs-green, #1FB85A) 12%, transparent);
-  box-shadow: inset 3px 0 0 var(--bs-green, #1FB85A);
+  background: color-mix(in srgb, var(--bs-green, #7C4DDB) 12%, transparent);
+  box-shadow: inset 3px 0 0 var(--bs-green, #7C4DDB);
 }
 
 .bs-txt-ruby-line {
@@ -235,7 +235,7 @@
   font-family: var(--bs-zh);
   font-size: 21px;
   font-weight: 600;
-  color: var(--bs-green-800, #0f7338);
+  color: var(--bs-green-800, #3F2485);
   background: var(--bs-green-50);
   border: none;
   border-bottom: 2px solid var(--bs-green);
@@ -319,7 +319,7 @@
 }
 .bs-pop-mn {
   font-size: 14px;
-  color: var(--bs-green-800, #0f7338);
+  color: var(--bs-green-800, #3F2485);
   font-weight: 600;
   margin-top: 4px;
 }

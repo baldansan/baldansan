@@ -56,8 +56,8 @@ function SkillBars({ summary }: { summary: PointsSummary }) {
               {r.icon} {r.label}
             </text>
             <rect x="110" y={y} width="190" height="20" rx="10" fill="#e2e8f0" />
-            {w > 0 ? <rect x="110" y={y} width={w} height="20" rx="10" fill="#10b981" /> : null}
-            <text x="308" y={y + 15} fontSize="13" fontWeight="700" fill="#047857">
+            {w > 0 ? <rect x="110" y={y} width={w} height="20" rx="10" fill="#8B5FE3" /> : null}
+            <text x="308" y={y + 15} fontSize="13" fontWeight="700" fill="#6537C2">
               {r.value}
             </text>
           </g>

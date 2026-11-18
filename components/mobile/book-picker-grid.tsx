@@ -92,7 +92,7 @@ export function BookPickerGrid({ entries, activeKey, onSelect }: Props) {
         <span
           className={`relative block w-full overflow-hidden rounded-[14px] shadow-[0_6px_16px_rgba(15,27,20,0.14)] ring-2 transition-shadow ${
             isActive
-              ? "ring-emerald-500 shadow-[0_8px_22px_rgba(31,184,90,0.35)]"
+              ? "ring-emerald-500 shadow-[0_8px_22px_rgba(124,77,219,0.35)]"
               : "ring-transparent"
           }`}
           style={{ aspectRatio: "300 / 420" }}

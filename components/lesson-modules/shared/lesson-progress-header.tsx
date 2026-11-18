@@ -71,7 +71,7 @@ export function LessonProgressHeader({
         <AnimatedProgressBar
           value={progress}
           trackClassName="h-1 overflow-hidden rounded-full bg-neutral-100"
-          fillClassName="h-full rounded-full bg-[#1FB85A]"
+          fillClassName="h-full rounded-full bg-[#7C4DDB]"
         />
         <p
           className="mt-1.5 text-center text-[10px] font-medium tracking-wide"

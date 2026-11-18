@@ -26,7 +26,7 @@ function fills(data: BarDatum[], highlight: boolean, higher: boolean): string[] 
         ? C.good
         : d.value === worst
           ? C.bad
-          : "#6ee7b7"
+          : "#C2A8FA"
   );
 }
 

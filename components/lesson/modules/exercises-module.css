@@ -57,7 +57,7 @@
 .bs-ex-nav-btn.bs-done-ok {
   background: var(--bs-green-50);
   border-color: var(--bs-green-100);
-  color: var(--bs-green-800, #0f7338);
+  color: var(--bs-green-800, #3F2485);
 }
 .bs-ex-nav-btn.bs-done-no {
   background: #fdecec;
@@ -225,7 +225,7 @@
 .bs-ex-opt.bs-correct {
   background: var(--bs-green-50);
   border-color: var(--bs-green);
-  color: var(--bs-green-800, #0f7338);
+  color: var(--bs-green-800, #3F2485);
   font-weight: 700;
 }
 .bs-ex-opt.bs-wrong {
@@ -277,7 +277,7 @@
 .bs-ex-tok.bs-built {
   background: var(--bs-green-50);
   border-color: var(--bs-green-100);
-  color: var(--bs-green-800, #0f7338);
+  color: var(--bs-green-800, #3F2485);
 }
 
 /* Шалгах товч */
@@ -318,7 +318,7 @@
 }
 .bs-ex-fb.bs-ok {
   background: var(--bs-green-50);
-  color: var(--bs-green-800, #0f7338);
+  color: var(--bs-green-800, #3F2485);
   border: 1px solid var(--bs-green-100);
 }
 .bs-ex-fb.bs-no {

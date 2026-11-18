@@ -18,7 +18,7 @@ type Particle = {
   shape: 0 | 1;
 };
 
-const COLORS = ["#1FB85A", "#F2A93B", "#ff6b6b", "#4d9fff", "#9b6bff", "#ffd93d", "#46d07c"];
+const COLORS = ["#7C4DDB", "#F2A93B", "#ff6b6b", "#4d9fff", "#9b6bff", "#ffd93d", "#46d07c"];
 
 let canvas: HTMLCanvasElement | null = null;
 let ctx: CanvasRenderingContext2D | null = null;

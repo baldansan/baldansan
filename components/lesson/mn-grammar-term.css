@@ -7,7 +7,7 @@
   border: none;
   background: none;
   font: inherit;
-  color: var(--bs-green-700, #0f7338);
+  color: var(--bs-green-700, #3F2485);
   text-decoration: underline dotted 1.5px;
   text-underline-offset: 3px;
   cursor: pointer;
@@ -15,8 +15,8 @@
 }
 .bs-mn-term:hover,
 .bs-mn-term:focus-visible {
-  color: var(--bs-green-800, #0b5c2d);
-  background: var(--bs-green-50, #ecfdf3);
+  color: var(--bs-green-800, #2A0E59);
+  background: var(--bs-green-50, #F2EDFC);
   outline: none;
 }
 

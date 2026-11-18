@@ -49,7 +49,7 @@ const CHINESE_HSK_GAMES: GameCard[] = [
     title: "Үгийн сорил",
     desc: "Давтах үгээ 6 төрлөөр шалгана · SRS-тэй",
     icon: "🎯",
-    gradient: "linear-gradient(145deg, #14b8a6, #0d9488)",
+    gradient: "linear-gradient(145deg, #521DAF, #41178A)",
     badge: "Quiz",
     global: true,
   },
@@ -109,7 +109,7 @@ function gamesForLanguage(
       title: labels.arrangeTitle,
       desc: labels.arrangeDesc,
       icon: "🔢",
-      gradient: "linear-gradient(145deg, #1fb85a, #0e9c47)",
+      gradient: "linear-gradient(145deg, #7C4DDB, #451892)",
       badge: "Дараалал",
     },
     {
@@ -250,7 +250,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
       {lang === "zh" ? (
         <>
           {/* Гол тоглоом: нэг тоглоом — олон төрөл. Бусад нь үүний горим. */}
-          <section className="bs-page-in overflow-hidden rounded-3xl bg-[linear-gradient(135deg,#059669,#10b981_55%,#34d399)] p-5 text-white shadow-[0_10px_28px_rgba(5,150,105,0.35)]">
+          <section className="bs-page-in overflow-hidden rounded-3xl bg-[linear-gradient(135deg,#7C4DDB,#511CAD_55%,#A383F0)] p-5 text-white shadow-[0_10px_28px_rgba(124,77,219,0.35)]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/temee/v2/play.webp"

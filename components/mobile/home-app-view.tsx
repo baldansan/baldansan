@@ -548,7 +548,7 @@ export function HomeAppView({
     >
       {/* Том танилцуулга — зөвхөн шинэ / нэвтрээгүй хүнд. Явцтай хүнд богино мэндчилгээ. */}
       {!loggedIn || !(totals.completed > 0 || streak > 0) ? (
-        <section className="bs-page-in relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#1FB85A] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(31,184,90,0.28)]">
+        <section className="bs-page-in relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#7C4DDB] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(124,77,219,0.28)]">
           <div
             aria-hidden
             className="absolute -right-10 -top-12 h-40 w-40 rounded-full bg-white/10"

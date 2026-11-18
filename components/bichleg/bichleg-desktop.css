@@ -3,8 +3,8 @@
    Утас энэ компонентыг хэзээ ч зурдаггүй (BichlegPlayerSwitch). */
 
 .bs-bd {
-  --bd-bg: #0f1512;
-  --bd-panel: #182019;
+  --bd-bg: #14111D;
+  --bd-panel: #1E1A2B;
   --bd-panel-2: #1f2924;
   --bd-line: #2c3a32;
   --bd-text: #f2f5f3;
@@ -96,12 +96,12 @@
   flex: none;
 }
 .bs-bd-ep--done {
-  border-color: #2f6b45;
+  border-color: #452F6B;
 }
 .bs-bd-ep--on {
   background: var(--bd-green);
   border-color: var(--bd-green);
-  color: #0b1a10;
+  color: #100B1A;
 }
 
 .bs-bd-player {
@@ -183,11 +183,11 @@
   gap: 8px;
   padding: 10px 14px;
   background: var(--bd-green);
-  color: #0b1a10;
+  color: #100B1A;
 }
 .bs-bd-paused kbd {
   background: rgba(0, 0, 0, 0.25);
-  color: #0b1a10;
+  color: #100B1A;
 }
 .bs-bd-repeat-badge {
   top: 14px;
@@ -221,7 +221,7 @@
   border: 0;
   border-radius: 999px;
   background: var(--bd-green);
-  color: #0b1a10;
+  color: #100B1A;
   font: 800 12px/1 var(--bs-ui, system-ui, sans-serif);
   cursor: pointer;
 }
@@ -323,10 +323,10 @@
   height: 44px;
   background: var(--bd-green);
   border-color: var(--bd-green);
-  color: #0b1a10;
+  color: #100B1A;
 }
 .bs-bd-btn--on {
-  background: #163a25;
+  background: #23163A;
   border-color: var(--bd-green);
   color: #86efac;
 }
@@ -509,7 +509,7 @@
 }
 .bs-bd-seg button.bs-on {
   background: var(--bd-green);
-  color: #0b1a10;
+  color: #100B1A;
 }
 .bs-bd-card {
   background: var(--bd-panel);
@@ -520,8 +520,8 @@
   gap: 8px;
 }
 .bs-bd-card--word {
-  background: #163a25;
-  border: 1px solid #2f6b45;
+  background: #23163A;
+  border: 1px solid #452F6B;
 }
 .bs-bd-card-top {
   display: flex;
@@ -626,7 +626,7 @@
   border-color: #3e5046;
 }
 .bs-bd-chip--on {
-  background: #163a25;
+  background: #23163A;
   border-color: var(--bd-green);
   color: #86efac;
 }
@@ -650,7 +650,7 @@
   border: 0;
   border-radius: 12px;
   background: var(--bd-green);
-  color: #0b1a10;
+  color: #100B1A;
   font: 800 14px/1 var(--bs-ui, system-ui, sans-serif);
   cursor: pointer;
 }
@@ -659,7 +659,7 @@
   cursor: default;
 }
 .bs-bd-primary--done {
-  background: #2f6b45;
+  background: #452F6B;
   color: #dcfce7;
 }
 .bs-bd-word-head {
@@ -674,7 +674,7 @@
 }
 .bs-bd-word-py {
   font-size: 15px;
-  color: #bfe8cc;
+  color: #CEBFE8;
 }
 .bs-bd-word-mn {
   margin: 0;
@@ -790,7 +790,7 @@
   padding: 10px 16px;
   border-radius: 999px;
   background: #e8eeea;
-  color: #0f1512;
+  color: #14111D;
   font: 800 13px/1 var(--bs-ui, system-ui, sans-serif);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
@@ -832,7 +832,7 @@
 
 /* ---- ангийн шалгалт ---- */
 .bs-bd-quiz {
-  border: 1px solid #2f6b45;
+  border: 1px solid #452F6B;
 }
 .bs-bd-quiz-q {
   display: flex;
@@ -872,7 +872,7 @@
   cursor: default;
 }
 .bs-bd-quiz-opt--ok {
-  background: #163a25;
+  background: #23163A;
   border-color: var(--bd-green);
   color: #86efac;
 }
@@ -895,14 +895,14 @@
   margin: 4px 16px 14px;
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(31, 184, 90, 0.14);
+  background: rgba(124,77,219, 0.14);
   color: var(--bd-green-2);
   font-size: 12px;
   font-weight: 800;
   text-decoration: none;
 }
 .bs-bd-sent-link:hover {
-  background: rgba(31, 184, 90, 0.24);
+  background: rgba(124,77,219, 0.24);
 }
 
 /* Хадмалын дэвсгэр (Битүү / Хагас тунгалаг / Дэвсгэргүй) */

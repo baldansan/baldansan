@@ -9,7 +9,7 @@ import {
   type ActiveHskLevel,
 } from "@/lib/hsk/active-hsk-level";
 
-const BRAND_GREEN = "#1FB85A";
+const BRAND_GREEN = "#7C4DDB";
 
 type Props = {
   className?: string;

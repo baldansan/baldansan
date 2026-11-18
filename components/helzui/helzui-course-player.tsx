@@ -49,7 +49,7 @@ export function HelzuiCoursePlayer({
       {backHref ? (
         <Link
           href={backHref}
-          className="mb-3 inline-flex text-xs font-bold text-[#1FB85A]"
+          className="mb-3 inline-flex text-xs font-bold text-[#7C4DDB]"
         >
           ← Давтах
         </Link>

@@ -164,7 +164,7 @@ export function ExamGoalCard({ variant = "full", hideWhenUnset = false }: Props)
           <button
             type="button"
             onClick={openEditor}
-            className="mt-3 w-full rounded-2xl bg-[#1FB85A] px-4 py-3 text-sm font-extrabold text-white active:scale-[0.99]"
+            className="mt-3 w-full rounded-2xl bg-[#7C4DDB] px-4 py-3 text-sm font-extrabold text-white active:scale-[0.99]"
           >
             Зорилго тавих
           </button>
@@ -184,7 +184,7 @@ export function ExamGoalCard({ variant = "full", hideWhenUnset = false }: Props)
               aria-pressed={level === n}
               className={`rounded-xl border py-2 text-sm font-extrabold ${
                 level === n
-                  ? "border-[#1FB85A] bg-emerald-50 text-emerald-800"
+                  ? "border-[#7C4DDB] bg-emerald-50 text-emerald-800"
                   : "border-[var(--bs-line)] bg-[var(--bs-card)] text-[var(--bs-ink)]"
               }`}
             >
@@ -208,7 +208,7 @@ export function ExamGoalCard({ variant = "full", hideWhenUnset = false }: Props)
             type="button"
             onClick={() => void submit()}
             disabled={!date || busy}
-            className="flex-1 rounded-2xl bg-[#1FB85A] px-4 py-3 text-sm font-extrabold text-white disabled:opacity-50"
+            className="flex-1 rounded-2xl bg-[#7C4DDB] px-4 py-3 text-sm font-extrabold text-white disabled:opacity-50"
           >
             {busy ? "Хадгалж байна…" : "Хадгалах"}
           </button>
@@ -279,7 +279,7 @@ export function ExamGoalCard({ variant = "full", hideWhenUnset = false }: Props)
 
       <div className="mt-4">
         <div className="relative h-3 overflow-hidden rounded-full bg-slate-100">
-          <div className="h-full rounded-full bg-[#1FB85A]" style={{ width: `${pct}%` }} />
+          <div className="h-full rounded-full bg-[#7C4DDB]" style={{ width: `${pct}%` }} />
           {plan.status !== "done" && plan.status !== "past" ? (
             <span
               className="absolute top-0 h-full w-0.5 bg-slate-500"
@@ -299,14 +299,14 @@ export function ExamGoalCard({ variant = "full", hideWhenUnset = false }: Props)
         {plan.phase === "study" && plan.nextLessonId ? (
           <Link
             href={lessonPath(plan.nextLessonId)}
-            className="flex-1 rounded-2xl bg-[#1FB85A] px-4 py-3 text-center text-sm font-extrabold text-white"
+            className="flex-1 rounded-2xl bg-[#7C4DDB] px-4 py-3 text-center text-sm font-extrabold text-white"
           >
             Дараагийн хичээл
           </Link>
         ) : (
           <Link
             href="/review/tests"
-            className="flex-1 rounded-2xl bg-[#1FB85A] px-4 py-3 text-center text-sm font-extrabold text-white"
+            className="flex-1 rounded-2xl bg-[#7C4DDB] px-4 py-3 text-center text-sm font-extrabold text-white"
           >
             Загвар шалгалт өгөх
           </Link>

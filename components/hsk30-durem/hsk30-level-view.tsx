@@ -16,7 +16,7 @@ export function Hsk30LevelView({ level }: Props) {
     <MobileAppShell activeTab="study" mainClassName={SHELL_MAIN_REVIEW}>
       <Link
         href={HSK30_REVIEW_BASE}
-        className="mb-3 inline-flex text-xs font-bold text-[#1FB85A]"
+        className="mb-3 inline-flex text-xs font-bold text-[#7C4DDB]"
       >
         ← Түвшнүүд
       </Link>
@@ -41,10 +41,10 @@ export function Hsk30LevelView({ level }: Props) {
             <MobileCard className="hz-module-card active:bg-slate-50">
               <div className="flex items-baseline justify-between gap-3">
                 <div className="min-w-0">
-                  <p className="zh text-lg font-bold text-[#13241b]">
+                  <p className="zh text-lg font-bold text-[#191324]">
                     {point.zh}
                   </p>
-                  <p className="text-xs font-semibold text-[#1FB85A]">
+                  <p className="text-xs font-semibold text-[#7C4DDB]">
                     {point.pin}
                   </p>
                   <p className="mt-1 text-sm font-medium text-[var(--app-muted)] line-clamp-2" translate="no">

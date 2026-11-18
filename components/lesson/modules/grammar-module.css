@@ -8,7 +8,7 @@
   font-family: var(--bs-zh);
   font-size: 22px;
   font-weight: 700;
-  color: var(--bs-green-800, #0f7338);
+  color: var(--bs-green-800, #3F2485);
   background: var(--bs-green-50);
   border: 1px solid var(--bs-green-100);
   border-radius: var(--bs-radius-sm, 14px);
@@ -158,7 +158,7 @@
   font-family: var(--bs-zh);
   font-size: 17px;
   font-weight: 700;
-  color: var(--bs-green-800, #0f7338);
+  color: var(--bs-green-800, #3F2485);
 }
 .bs-collocation-mn-preview {
   font-size: 12px;
@@ -313,7 +313,7 @@
   font-family: var(--font-noto-sc, var(--bs-zh)), "Noto Sans SC", sans-serif;
   font-size: 32px;
   font-weight: 800;
-  color: #1FB85A;
+  color: #7C4DDB;
   margin: 0;
   line-height: 1.25;
 }
@@ -326,7 +326,7 @@
   margin: 6px 0 0;
   font-size: 15px;
   font-weight: 600;
-  color: #1FB85A;
+  color: #7C4DDB;
   letter-spacing: 0.02em;
 }
 
@@ -343,7 +343,7 @@
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #018242;
+  color: #351271;
   margin: 0 0 8px;
 }
 
@@ -361,7 +361,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #eaf7ef;
+  background: #EFEAF7;
   display: grid;
   place-items: center;
   font-size: 18px;
@@ -371,7 +371,7 @@
 .bs-gr2-teacher-name {
   font-size: 11px;
   font-weight: 800;
-  color: #018242;
+  color: #351271;
   margin: 0 0 4px;
 }
 
@@ -383,8 +383,8 @@
 }
 
 .bs-gr2-formula {
-  background: #eaf7ef;
-  border: 1.5px solid #1FB85A;
+  background: #EFEAF7;
+  border: 1.5px solid #7C4DDB;
   border-radius: 14px;
   padding: 14px 16px;
 }
@@ -393,7 +393,7 @@
   display: block;
   font-size: 11px;
   font-weight: 800;
-  color: #018242;
+  color: #351271;
   margin-bottom: 6px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -404,7 +404,7 @@
   font-family: var(--font-noto-sc, var(--bs-zh)), "Noto Sans SC", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  color: #0f7338;
+  color: #3F2485;
   line-height: 1.45;
   white-space: pre-wrap;
 }
@@ -435,7 +435,7 @@
   font-family: var(--font-noto-sc, var(--bs-zh)), "Noto Sans SC", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  color: #13241b;
+  color: #191324;
   line-height: 1.4;
 }
 
@@ -444,7 +444,7 @@
   background: transparent;
   padding: 0 1px;
   cursor: pointer;
-  border-bottom: 2px dotted #b8e6cc;
+  border-bottom: 2px dotted #C9B8E6;
 }
 
 .bs-gr2-example-py {
@@ -458,7 +458,7 @@
   width: 100%;
   margin-top: 10px;
   border: none;
-  background: #f6faf7;
+  background: #F7F6FA;
   border-radius: 10px;
   padding: 10px 12px;
   cursor: pointer;
@@ -484,7 +484,7 @@
   margin-top: 6px;
   font-size: 11px;
   font-weight: 700;
-  color: #018242;
+  color: #351271;
 }
 
 .bs-gr2-mistakes-list {
@@ -516,9 +516,9 @@
 }
 
 .bs-gr2-mistake-card--ok {
-  background: #eaf7ef;
-  border: 1.5px solid #b8e6cc;
-  color: #018242;
+  background: #EFEAF7;
+  border: 1.5px solid #C9B8E6;
+  color: #351271;
 }
 
 .bs-gr2-mistake-tag {
@@ -533,7 +533,7 @@
   color: #5e6f66;
   line-height: 1.55;
   padding: 8px 10px;
-  background: #f6faf7;
+  background: #F7F6FA;
   border-radius: 10px;
 }
 
@@ -585,7 +585,7 @@
   font-family: inherit;
   font-size: 15px;
   font-weight: 600;
-  color: #13241b;
+  color: #191324;
   cursor: pointer;
   text-align: left;
   transition: background 0.15s ease, border-color 0.15s ease;
@@ -598,9 +598,9 @@
 
 .bs-gr2-quiz-opt--ok,
 .bs-gr2-judge-btn--ok {
-  background: #eaf7ef;
-  border-color: #1FB85A;
-  color: #018242;
+  background: #EFEAF7;
+  border-color: #7C4DDB;
+  color: #351271;
 }
 
 .bs-gr2-quiz-opt--bad,
@@ -611,9 +611,9 @@
 }
 
 .bs-gr2-quiz-opt--reveal {
-  background: #f6faf7;
-  border-color: #b8e6cc;
-  color: #018242;
+  background: #F7F6FA;
+  border-color: #C9B8E6;
+  color: #351271;
 }
 
 .bs-gr2-quiz-mark {
@@ -623,7 +623,7 @@
 }
 
 .bs-gr2-quiz-mark--ok {
-  color: #1FB85A;
+  color: #7C4DDB;
 }
 
 .bs-gr2-judge-row {
@@ -640,7 +640,7 @@
 }
 
 .bs-gr2-quiz-feedback--ok {
-  color: #018242;
+  color: #351271;
 }
 
 .bs-gr2-quiz-feedback--bad {
@@ -651,7 +651,7 @@
 .bs-gr2-exercise-q {
   font-size: 15px;
   font-weight: 700;
-  color: #13241b;
+  color: #191324;
   line-height: 1.55;
   margin: 0 0 12px;
 }
@@ -662,9 +662,9 @@
   color: #3d4f46;
   margin: 0;
   padding: 12px 14px;
-  background: #eaf7ef;
+  background: #EFEAF7;
   border-radius: 12px;
-  border: 1px solid #b8e6cc;
+  border: 1px solid #C9B8E6;
 }
 
 .bs-gr2-exercise-expl--wrong {
