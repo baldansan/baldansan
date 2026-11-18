@@ -1,6 +1,6 @@
 "use client";
 
-import { pickTonePairSession } from "@/lib/games/tone-pairs";
+import { loadTonePairSession } from "@/lib/games/tone-pairs";
 import { ToneLegend } from "@/components/hanzi/ToneHanzi";
 import { toneOfSyllable } from "@/lib/pinyin/tone";
 import { markTodayStepDone } from "@/lib/today/today-path";
@@ -147,9 +147,12 @@ export function LearnGameClient() {
   const begin = useCallback(
     async (wordsArg?: LearnWord[]) => {
       // «Хөг ялгах» (хос үгс): DB-ээс биш, бэлтгэсэн хосуудаас.
-      const onlyWords =
-        wordsArg ?? (preset === "tonepairs" ? pickTonePairSession(10, params.get("words")) : undefined);
       setPhase("loading");
+      const onlyWords =
+        wordsArg ??
+        (preset === "tonepairs"
+          ? await loadTonePairSession(level === "7-9" ? 8 : level, 10, params.get("words"))
+          : undefined);
       setSetupError(null);
       let session: LearnWord[] = onlyWords ?? [];
       let distractors: LearnWord[] = [];

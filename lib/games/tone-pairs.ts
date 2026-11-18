@@ -72,3 +72,68 @@ export function pickTonePairSession(size = 10, firstWords?: string | null): Lear
   }
   return picked.slice(0, size);
 }
+
+/* ------------------------------------------------------------------ */
+/* Том сан: аппын үгийн сангаас түүсэн 1700+ хос                        */
+/* ------------------------------------------------------------------ */
+
+/** [түвшин (7–9 = 8), zh, pinyin, mn, zh, pinyin, mn] — scripts/tone-pairs/build.ts үүсгэнэ. */
+type PairRow = [number, string, string, string, string, string, string];
+
+let allPairs: Promise<PairRow[]> | null = null;
+
+function loadAllPairs(): Promise<PairRow[]> {
+  if (!allPairs) {
+    allPairs = fetch("/data/tone-pairs.json")
+      .then((r) => (r.ok ? (r.json() as Promise<PairRow[]>) : []))
+      .catch(() => []);
+  }
+  return allPairs;
+}
+
+function shuffled<T>(items: T[]): T[] {
+  const a = [...items];
+  for (let i = a.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/**
+ * Нэг тоглолтын үгс: тухайн HSK түвшин хүртэлх хосуудаас санамсаргүй, дээр нь
+ * онцлох (гараар сонгосон) хосоос 2-ыг холино. Сан ачаалагдахгүй бол онцлох хосоор.
+ */
+export async function loadTonePairSession(
+  level: number,
+  size = 10,
+  firstWords?: string | null
+): Promise<LearnWord[]> {
+  if ((firstWords ?? "").trim()) return pickTonePairSession(size, firstWords);
+  const rows = await loadAllPairs();
+  const cap = level >= 7 ? 8 : level;
+  let pool = rows.map((r, i) => ({ r, i })).filter((x) => x.r[0] <= cap);
+  if (pool.length < 12) pool = rows.map((r, i) => ({ r, i })).filter((x) => x.r[0] <= cap + 1);
+  if (pool.length < 4) return pickTonePairSession(size);
+
+  const featured = pickTonePairSession(2);
+  const taken = new Set(featured.flatMap((w) => [w.simplified, w.confusable?.zh]));
+  const fromPool: LearnWord[] = [];
+  for (const { r, i } of shuffled(pool)) {
+    if (fromPool.length >= size - featured.length) break;
+    if (taken.has(r[1]) || taken.has(r[4])) continue;
+    const flip = Math.random() < 0.5;
+    const self = flip ? [r[4], r[5], r[6]] : [r[1], r[2], r[3]];
+    const other = flip ? [r[1], r[2], r[3]] : [r[4], r[5], r[6]];
+    taken.add(r[1]);
+    taken.add(r[4]);
+    fromPool.push({
+      id: -(1000 + i * 2 + (flip ? 1 : 0)),
+      simplified: self[0],
+      pinyin: self[1],
+      meaning_mn: self[2],
+      confusable: { zh: other[0], pinyin: other[1], meaning: other[2] },
+    } as LearnWord);
+  }
+  return shuffled([...featured, ...fromPool]);
+}
