@@ -74,38 +74,58 @@ export type UserWordSrsStats = {
   hskProgress: { level: number; studied: number; total: number }[];
 };
 
+/** Энэ хоногоос урт завсартай үг = «Цээжилсэн» (давтах жагсаалтаас хасагдана). */
+export const MASTERED_INTERVAL_DAYS = 21;
+
+export function isMasteredSrs(row: { interval_days: number | null | undefined }): boolean {
+  return Number(row.interval_days ?? 0) >= MASTERED_INTERVAL_DAYS;
+}
+
+export type WordQueueOptions = {
+  /**
+   * "learning" (анхдагч): хэрэглэгчийн өөрөө цуглуулсан, хараахан цээжлээгүй үгс —
+   * давтах өдөр нь болсон нь эхэнд, бусад нь араас нь (өдөр хүлээлгэхгүй).
+   * "mastered": цээжилсэн үгсээ «шалгаж үзэх» — санамсаргүй дарааллаар.
+   */
+  mode?: "learning" | "mastered";
+  /** Жагсаалт дутвал каталогоос шинэ үгээр нөхөх (зөвхөн тоглоомын үгийн сан). */
+  fillWithNew?: boolean;
+};
+
 export async function getDueWordQueue(
   userId: string,
   activeLevel: ActiveHskLevel,
-  dailyGoal = DAILY_SRS_GOAL
+  dailyGoal = DAILY_SRS_GOAL,
+  options: WordQueueOptions = {}
 ): Promise<{ items: WordSrsQueueItem[]; error: string | null }> {
   if (!supabase || !hasSupabaseConfig) {
     return { items: [], error: "Supabase тохиргоо байхгүй." };
   }
-
-  const nowIso = new Date().toISOString();
+  const mode = options.mode ?? "learning";
   const catalogLevel = activeLevelToCatalogLevel(activeLevel);
 
-  const { data: dueRows, error: dueError } = await supabase
-    .from("user_word_srs")
-    .select("*")
-    .eq("user_id", userId)
-    .lte("due_at", nowIso)
+  let rowsQuery = supabase.from("user_word_srs").select("*").eq("user_id", userId);
+  rowsQuery =
+    mode === "mastered"
+      ? rowsQuery.gte("interval_days", MASTERED_INTERVAL_DAYS)
+      : rowsQuery.lt("interval_days", MASTERED_INTERVAL_DAYS);
+  const { data: dueRows, error: dueError } = await rowsQuery
     .order("due_at", { ascending: true })
-    .limit(dailyGoal * 15);
+    .limit(mode === "mastered" ? 500 : dailyGoal * 3);
 
   if (dueError) {
     return { items: [], error: dueError.message };
   }
 
-  const srsRows = (dueRows ?? []) as WordSrsRow[];
+  let srsRows = (dueRows ?? []) as WordSrsRow[];
+  if (mode === "mastered") {
+    srsRows = [...srsRows].sort(() => Math.random() - 0.5).slice(0, dailyGoal * 2);
+  }
   let wordMap: Map<number, HskWordRow>;
 
   try {
-    wordMap = await fetchWordsByIds(srsRows.map((r) => r.word_id), {
-      catalogLevel,
-      srsEligibleOnly: true,
-    });
+    // Хэрэглэгчийн өөрийн жагсаалт — түвшнээр шүүхгүй (аль ч номын үг байж болно).
+    wordMap = await fetchWordsByIds(srsRows.map((r) => r.word_id));
   } catch (err) {
     const message = err instanceof Error ? err.message : "Үг татахад алдаа";
     return { items: [], error: message };
@@ -124,7 +144,7 @@ export async function getDueWordQueue(
   }
 
   const remaining = Math.max(0, dailyGoal - dueItems.length);
-  if (remaining === 0) {
+  if (remaining === 0 || !options.fillWithNew || mode === "mastered") {
     return { items: dueItems, error: null };
   }
 
@@ -370,7 +390,7 @@ export async function getUserWordSrsStats(
 
   const { data: srsRows, error: srsError } = await supabase
     .from("user_word_srs")
-    .select("reps, due_at, last_rating, word_id, updated_at")
+    .select("reps, due_at, last_rating, word_id, updated_at, interval_days")
     .eq("user_id", userId)
     .limit(5000);
 
@@ -380,8 +400,9 @@ export async function getUserWordSrsStats(
 
   const rows = srsRows ?? [];
   const studiedCount = rows.filter((r) => (r.reps as number) > 0).length;
+  // «Давтах үг» = өөрийн жагсаалтад байгаа, хараахан цээжлээгүй бүх үг.
   const dueToday = rows.filter(
-    (r) => new Date(r.due_at as string) <= new Date()
+    (r) => !isMasteredSrs(r as { interval_days: number | null })
   ).length;
 
   const ratedToday = rows.filter((r) => {
@@ -449,28 +470,27 @@ export async function getUserWordSrsStats(
 /** Хадгалсан (SRS-д орсон) үгсийн тоо: нийт + өнөөдөр давтах. Hub карт, toast-д. */
 export async function getUserWordSrsCounts(
   userId: string
-): Promise<{ total: number; due: number }> {
-  if (!supabase || !hasSupabaseConfig) return { total: 0, due: 0 };
+): Promise<{ total: number; due: number; learning: number; mastered: number }> {
+  const empty = { total: 0, due: 0, learning: 0, mastered: 0 };
+  if (!supabase || !hasSupabaseConfig) return empty;
   const { data, error } = await supabase
     .from("user_word_srs")
-    .select("due_at")
+    .select("due_at, interval_days")
     .eq("user_id", userId)
     .limit(5000);
-  if (error || !data) return { total: 0, due: 0 };
+  if (error || !data) return empty;
   const now = Date.now();
   let due = 0;
+  let mastered = 0;
   for (const r of data) {
+    if (isMasteredSrs(r as { interval_days: number | null })) {
+      mastered += 1;
+      continue;
+    }
     const d = r.due_at ? new Date(r.due_at as string).getTime() : 0;
     if (d <= now) due += 1;
   }
-  return { total: data.length, due };
-}
-
-/** Энэ хоногоос урт завсартай үг = «Цээжилсэн» (идэвхтэй жагсаалтаас гарна, сарын дараа нэг шалгана). */
-export const MASTERED_INTERVAL_DAYS = 21;
-
-export function isMasteredSrs(row: { interval_days: number | null | undefined }): boolean {
-  return Number(row.interval_days ?? 0) >= MASTERED_INTERVAL_DAYS;
+  return { total: data.length, due, learning: data.length - mastered, mastered };
 }
 
 /** Үгийг «Цээжилсэн» болгоно: 30 хоногийн дараа нэг удаа шалгахаар хойшлуулна. */

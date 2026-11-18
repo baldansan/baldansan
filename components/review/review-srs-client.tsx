@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useState, type ReactNode } from "react";
 import { HskLevelSelector } from "@/components/hsk/hsk-level-selector";
 import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provider";
@@ -27,6 +29,8 @@ type Props = {
 
 export function ReviewSrsClient({ embedded = false }: Props) {
   const locale = useUiLocale();
+  // ?check=1 — цээжилсэн үгсээ шалгаж үзэх горим.
+  const checkMastered = useSearchParams()?.get("check") === "1";
   const [writingDue, setWritingDue] = useState(0);
   useEffect(() => {
     setWritingDue(countDueLocalWriting());
@@ -50,7 +54,9 @@ export function ReviewSrsClient({ embedded = false }: Props) {
         setUserId(uid);
         const { items, error: queueError } = await getDueWordQueue(
           uid,
-          activeLevel
+          activeLevel,
+          DAILY_SRS_GOAL,
+          { mode: checkMastered ? "mastered" : "learning" }
         );
         if (queueError) {
           setError(queueError);
@@ -76,7 +82,7 @@ export function ReviewSrsClient({ embedded = false }: Props) {
 
     setQueue(buildLocalQueue(words, activeLevel));
     setLoadState("ready");
-  }, [activeLevel, hydrated]);
+  }, [activeLevel, hydrated, checkMastered]);
 
   useEffect(() => {
     void loadQueue();
@@ -124,35 +130,49 @@ export function ReviewSrsClient({ embedded = false }: Props) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/temee/v2/relax.webp" alt="" width={160} height={160} className="mx-auto mb-2 h-40 w-40 object-contain" />
         <h2 className="text-xl font-bold text-[var(--app-text)]">
-          Өнөөдөр давтах зүйл алга
+          {checkMastered ? "Цээжилсэн үг хараахан алга" : "Давтах үг алга"}
         </h2>
         <p className="mt-2 text-sm text-[var(--app-muted)]">
-          {formatActiveHskLevel(activeLevel)} түвшинд шинэ эсвэл due карт байхгүй.
+          {checkMastered
+            ? "Үгээ давтаад цээжилсний дараа энд шалгаж үзэж болно."
+            : "Давтах жагсаалтаа өөрөө бүрдүүлнэ: номын хичээл эсвэл HSK үгсээс цээжлэх үгээ сонгоорой."}
         </p>
-        <button
-          type="button"
-          onClick={() => void loadQueue()}
-          className="mt-5 min-h-[48px] w-full rounded-[14px] bg-[var(--app-primary)] text-sm font-extrabold text-white"
+        <Link
+          href="/dictionary/levels"
+          className="mt-5 flex min-h-[48px] w-full items-center justify-center rounded-[14px] bg-[var(--app-primary)] text-sm font-extrabold text-white"
         >
-          Дахин ачаалах
-        </button>
+          + HSK үгсээс нэмэх
+        </Link>
+        <Link
+          href="/nom"
+          className="mt-2 flex min-h-[48px] w-full items-center justify-center rounded-[14px] border border-[var(--app-border)] bg-[var(--app-card)] text-sm font-extrabold text-[var(--app-text)]"
+        >
+          Номын хичээлээс нэмэх
+        </Link>
       </div>
     );
   }
 
   return wrap(
     <>
-      <div className="flex items-start justify-between gap-2 mb-2">
-        <div className="min-w-0 flex-1" aria-hidden />
-        <HskLevelSelector className="shrink-0" />
-      </div>
+      {!userId ? (
+        <div className="flex items-start justify-between gap-2 mb-2">
+          <div className="min-w-0 flex-1" aria-hidden />
+          <HskLevelSelector className="shrink-0" />
+        </div>
+      ) : null}
+      {userId && !checkMastered && queue.length < 5 ? (
+        <Link href="/dictionary/levels" className="bs-srs-fewnote">
+          Давтах үг ердөө {queue.length} байна. <b>+ Үг нэмэх</b>
+        </Link>
+      ) : null}
       <WordSrsStudySession
         queue={queue}
         userId={userId}
-        title="Өнөөдрийн давталт"
+        title={checkMastered ? "Цээжилсэн үгээ шалгах" : "Өнөөдрийн давталт"}
         subtitle={
           <>
-            {formatActiveHskLevel(activeLevel)}
+            {userId ? (checkMastered ? "Мартсан үг давтах жагсаалтад буцна" : "Миний үгс") : formatActiveHskLevel(activeLevel)}
             {streak > 0 ? (
               <span className="bs-srs-streak"> · 🔥 {streak}</span>
             ) : null}

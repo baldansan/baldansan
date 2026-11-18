@@ -90,15 +90,15 @@ export function HomeTodayPath({ lessonHref, lessonTitle, bookLevel = null }: Pro
           id: "words",
           tone: "green",
           title: `${Math.min(dueCards ?? 0, 20)} ${tr(locale, "үг давтах")}`,
-          meta: tr(locale, "Мартахаас өмнө · 2 мин"),
+          meta: tr(locale, "Миний үгс · 2 мин"),
           href: "/review/daily",
         }
       : {
           id: "words",
           tone: "green",
-          title: tr(locale, "Шинэ үг цээжлэх"),
-          meta: `HSK ${activeLevel} · ${tr(locale, "3 мин")}`,
-          href: `/games/learn?mylevel=${activeLevel}`,
+          title: tr(locale, "Цээжлэх үгээ сонгох"),
+          meta: `HSK ${activeLevel} · ${tr(locale, "♥ дарж нэмнэ")}`,
+          href: `/dictionary/levels?level=${activeLevel}`,
         },
     ...(lessonHref
       ? [

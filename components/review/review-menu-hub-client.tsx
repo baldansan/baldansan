@@ -80,7 +80,7 @@ export function ReviewMenuHubClient({
     useState<BichlegContinueTarget | null>(null);
   const [freshMistakes, setMistakeCount] = useState<number | null>(null);
   const [writingDue, setWritingDue] = useState(0);
-  const [savedWords, setSavedWords] = useState<{ total: number; due: number } | null>(null);
+  const [savedWords, setSavedWords] = useState<{ total: number; due: number; learning: number; mastered: number } | null>(null);
   const [sentenceCards, setSentenceCards] = useState({ total: 0, due: 0 });
   const [freshLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -187,12 +187,12 @@ export function ReviewMenuHubClient({
 
   const dueLabel =
     stats.dueCards > 0 && writingDue > 0
-      ? `${stats.dueCards} ${tr(locale, "унших")} · ${writingDue} ${tr(locale, "бичих карт хүлээж байна")}`
+      ? `${stats.dueCards} ${tr(locale, "үг")} · ${writingDue} ${tr(locale, "бичих карт")}`
       : stats.dueCards > 0
-        ? `${stats.dueCards} ${tr(locale, "карт хүлээж байна")}`
+        ? `${stats.dueCards} ${tr(locale, "үг цээжилж байна")}`
         : writingDue > 0
           ? `${writingDue} ${tr(locale, "бичих карт хүлээж байна")}`
-          : tr(locale, "Өнөөдөр давтах зүйл алга");
+          : tr(locale, "Давтах үг алга — үгээ нэмээрэй");
 
   const testStatus =
     testCount > 0
@@ -286,18 +286,16 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Миний үгс")}</span>
             <span className="bs-tm-card-sub">{savedWords && savedWords.total > 0
-                ? savedWords.due > 0
-                  ? `${savedWords.total} ${tr(locale, "үг")} · ${savedWords.due} ${tr(locale, "өнөөдөр давтах")}`
-                  : `${savedWords.total} ${tr(locale, "үг")}`
-                : tr(locale, "Хичээлээс хадгалсан үгс чинь энд цугларна")}</span>
+                ? `${savedWords.learning} ${tr(locale, "цээжилж буй")} · ${savedWords.mastered} ${tr(locale, "цээжилсэн")}`
+                : tr(locale, "Цээжлэх үгээ өөрөө сонгож цуглуулна")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
         <PrefetchLink href="/review/memorize" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>💡</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>➕</span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Бүх HSK үг")}</span>
-            <span className="bs-tm-card-sub">{tr(locale, "Түвшин түвшнээр цээжлэх")}</span>
+            <span className="bs-tm-card-title">{tr(locale, "Үг нэмэх")}</span>
+            <span className="bs-tm-card-sub">{tr(locale, "HSK түвшний үгсээс сонгох")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>

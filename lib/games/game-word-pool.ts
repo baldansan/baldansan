@@ -112,7 +112,7 @@ export async function buildGameWordPool(
     const { userId } = await getAuthenticatedUserId();
     if (userId) {
       const [{ items }, failed] = await Promise.all([
-        getDueWordQueue(userId, activeLevel, 30),
+        getDueWordQueue(userId, activeLevel, 30, { fillWithNew: true }),
         fetchFailedSrsWordIds(userId, catalogLevel),
       ]);
       const merged = [...items.map((i) => i.word.id!).filter(Boolean), ...failed];

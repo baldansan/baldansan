@@ -121,15 +121,12 @@ export function WordSrsWordsClient() {
     <div className="bs-srs-words">
       <h1 className="bs-srs-words-title">Миний үгс</h1>
       <p className="bs-srs-words-sub">
-        Хичээл, бичлэг, тольноос хадгалсан үгс чинь энд цугларч, давталтын системээр (SRS) цээжлэгдэнэ.
+        Хичээл, бичлэг, тольноос өөрөө сонгосон үгс чинь энд цугларна. Давтаад цээжилсэн үг жагсаалтаас хасагдана.
       </p>
       {items.length > 0 ? (
         <div className="bs-srs-words-stats">
           <span className="bs-srs-words-stat">
             <b>{activeItems.length}</b> үг цээжилж буй
-          </span>
-          <span className="bs-srs-words-stat">
-            <b>{activeItems.filter((it) => new Date(it.srs.due_at).getTime() <= Date.now()).length}</b> өнөөдөр давтах
           </span>
           <span className="bs-srs-words-stat">
             <b>{masteredItems.length}</b> цээжилсэн
@@ -182,7 +179,10 @@ export function WordSrsWordsClient() {
 
       {tab === "mastered" && masteredItems.length > 0 ? (
         <p className="bs-srs-words-sub">
-          Цээжилсэн үг идэвхтэй жагсаалт, тоглоомоос гарна. Мартсан эсэхийг шалгахаар сарын дараа нэг удаа асууна.
+          Цээжилсэн үг давтах жагсаалтаас хасагдана. Мартаагүй эсэхээ хүссэн үедээ шалгаж болно.{" "}
+          <Link href="/review/daily?check=1" className="font-extrabold text-[var(--app-primary)] underline">
+            Цээжилсэн үгээ шалгаж үзэх →
+          </Link>
         </p>
       ) : null}
 
@@ -207,9 +207,11 @@ export function WordSrsWordsClient() {
                       ▶
                     </span>
                   ) : null}
-                  <span className="bs-srs-words-due">
-                    {formatDueLabel(srs.due_at, srs.reps)}
-                  </span>
+                  {!isMasteredSrs(srs) ? (
+                    <span className="bs-srs-words-due">
+                      {srs.reps > 0 ? `${Math.min(srs.reps, 3)}/3 мэдсэн` : "шинэ"}
+                    </span>
+                  ) : null}
                 </div>
                 {word.pinyin ? (
                   <p className="bs-srs-words-pinyin">{word.pinyin}</p>
