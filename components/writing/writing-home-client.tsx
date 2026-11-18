@@ -7,7 +7,6 @@ import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
-import { countDueLocalWriting } from "@/lib/srs/writing-srs";
 import { listAssignmentLists, listLists } from "@/lib/writing/store";
 import type { WritingListSummary } from "@/lib/writing/types";
 import "@/components/writing/writing.css";
@@ -57,14 +56,12 @@ export function WritingHomeClient() {
   const locale = useUiLocale();
   const [own, setOwn] = useState<WritingListSummary[] | null>(null);
   const [assigned, setAssigned] = useState<WritingListSummary[]>([]);
-  const [due, setDue] = useState(0);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let alive = true;
     void Promise.all([listLists(), listAssignmentLists()]).then(([ownRes, asgRes]) => {
       if (!alive) return;
-      setDue(countDueLocalWriting());
       if (ownRes.error) setError(ownRes.error);
       setOwn(ownRes.data ?? []);
       setAssigned(asgRes.data ?? []);
@@ -89,20 +86,14 @@ export function WritingHomeClient() {
       />
 
       <div className="app-course-card mb-5 p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-white/70">
-          {tr(locale, "Өнөөдөр давтах ханз")}
-        </p>
-        <p className="mt-1 text-2xl font-bold">{due}</p>
         <p className="text-sm text-white/90">
-          {due > 0
-            ? tr(locale, "Алдсан ханзууд бичих давталтад хүлээж байна.")
-            : tr(locale, "Давтах ханз алга — шинэ дэвтэр нээгээд бичээрэй.")}
+          {tr(locale, "Цээжилж буй үгсээ гараар бичиж цээжлээрэй.")}
         </p>
         <Link
           href="/review/writing"
           className="mt-3 inline-flex rounded-full bg-white px-4 py-1.5 text-xs font-bold text-emerald-700"
         >
-          {tr(locale, "Давтах")} →
+          {tr(locale, "Бичих")} →
         </Link>
       </div>
 

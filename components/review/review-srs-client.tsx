@@ -8,7 +8,6 @@ import { useActiveHskLevel } from "@/components/providers/active-hsk-level-provi
 import { WordSrsStudySession } from "@/components/review/word-srs-study-session";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
-import { countDueLocalWriting } from "@/lib/srs/writing-srs";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_REVIEW } from "@/lib/app-shell-classes";
 import { formatActiveHskLevel } from "@/lib/hsk/active-hsk-level";
@@ -31,10 +30,6 @@ export function ReviewSrsClient({ embedded = false }: Props) {
   const locale = useUiLocale();
   // ?check=1 — цээжилсэн үгсээ шалгаж үзэх горим.
   const checkMastered = useSearchParams()?.get("check") === "1";
-  const [writingDue, setWritingDue] = useState(0);
-  useEffect(() => {
-    setWritingDue(countDueLocalWriting());
-  }, []);
   useActivityTracker("review", "daily");
   const { level: activeLevel, hydrated } = useActiveHskLevel();
   const [loadState, setLoadState] = useState<LoadState>("loading");
@@ -184,18 +179,10 @@ export function ReviewSrsClient({ embedded = false }: Props) {
         onRestart={() => void loadQueue()}
         completeTitle="✅ Өнөөдрийн давталт дууслаа!"
         completeMessage="Өнөөдрийн карт дууслаа."
-        onNextBatch={
-          writingDue > 0
-            ? () => {
-                window.location.href = "/review/writing";
-              }
-            : undefined
-        }
-        nextBatchLabel={
-          writingDue > 0
-            ? `✍️ ${tr(locale, "Одоо бичих давталт")} (${writingDue}) →`
-            : undefined
-        }
+        onNextBatch={() => {
+          window.location.href = "/review/writing";
+        }}
+        nextBatchLabel={`✍️ ${tr(locale, "Одоо гараар бичих")} →`}
       />
     </>
   );

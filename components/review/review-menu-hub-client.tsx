@@ -27,7 +27,6 @@ import { countSentenceCards } from "@/lib/bichleg/sentence-cards";
 import { getUserWordSrsCounts } from "@/lib/supabase/user-word-srs";
 import { fetchBichlegContinueTargetClient } from "@/lib/supabase/video-progress-client";
 import { fetchMistakes } from "@/lib/supabase/mistake-book";
-import { countDueLocalWriting } from "@/lib/srs/writing-srs";
 
 type Props = {
   testCount: number;
@@ -79,7 +78,6 @@ export function ReviewMenuHubClient({
   const [freshBichleg, setBichlegContinue] =
     useState<BichlegContinueTarget | null>(null);
   const [freshMistakes, setMistakeCount] = useState<number | null>(null);
-  const [writingDue, setWritingDue] = useState(0);
   const [savedWords, setSavedWords] = useState<{ total: number; due: number; learning: number; mastered: number } | null>(null);
   const [sentenceCards, setSentenceCards] = useState({ total: 0, due: 0 });
   const [freshLoggedIn, setIsLoggedIn] = useState(false);
@@ -178,21 +176,13 @@ export function ReviewMenuHubClient({
     void loadStats();
   }, [loadStats]);
 
-  useEffect(() => {
-    setWritingDue(countDueLocalWriting());
-  }, []);
-
   const shownName =
     displayName === "Суралцагч" ? tr(locale, "Суралцагч") : displayName;
 
   const dueLabel =
-    stats.dueCards > 0 && writingDue > 0
-      ? `${stats.dueCards} ${tr(locale, "үг")} · ${writingDue} ${tr(locale, "бичих карт")}`
-      : stats.dueCards > 0
-        ? `${stats.dueCards} ${tr(locale, "үг цээжилж байна")}`
-        : writingDue > 0
-          ? `${writingDue} ${tr(locale, "бичих карт хүлээж байна")}`
-          : tr(locale, "Давтах үг алга — үгээ нэмээрэй");
+    stats.dueCards > 0
+      ? `${stats.dueCards} ${tr(locale, "үг цээжилж байна")}`
+      : tr(locale, "Давтах үг алга — үгээ нэмээрэй");
 
   const testStatus =
     testCount > 0
@@ -233,11 +223,6 @@ export function ReviewMenuHubClient({
           <div className="bs-tm-stat-ic" aria-hidden>⚡</div>
           <div className="bs-tm-stat-n">{loading ? "—" : `${stats.dailyDone}/${stats.dailyGoal}`}</div>
           <div className="bs-tm-stat-l">{tr(locale, "карт")}</div>
-        </div>
-        <div className="bs-tm-stat">
-          <div className="bs-tm-stat-ic" aria-hidden>✍️</div>
-          <div className="bs-tm-stat-n">{writingDue}</div>
-          <div className="bs-tm-stat-l">{tr(locale, "бичих")}</div>
         </div>
       </div>
       <p className="bs-tm-sec">{tr(locale, "Материал")}</p>
@@ -300,6 +285,15 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
 
+        <PrefetchLink href="/review/writing" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>✍️</span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">{tr(locale, "Бичих")}</span>
+            <span className="bs-tm-card-sub">{tr(locale, "Цээжилж буй үгсээ гараар бичиж цээжил")}</span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </PrefetchLink>
+
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Сонсох · Ярих")}</p>
         <PrefetchLink href={`/listen/daily?level=${activeLevel}`} className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--purple" aria-hidden>🎧</span>
@@ -332,19 +326,12 @@ export function ReviewMenuHubClient({
         <details className="group">
           <summary className="mt-4 flex cursor-pointer list-none items-center justify-between rounded-[20px] border border-[var(--app-border)] bg-[var(--app-card)] px-4 py-3 text-sm font-extrabold text-[var(--app-text)] shadow-[var(--app-shadow)] [&::-webkit-details-marker]:hidden">
             <span>
-              {tr(locale, "Бусад: бичих, ханз, дүрэм, өгүүлбэр")}
-              {writingDue + sentenceCards.due > 0 ? ` · ${writingDue + sentenceCards.due}` : ""}
+              {tr(locale, "Бусад: өгүүлбэр, ханз, дүрэм")}
+              {sentenceCards.due > 0 ? ` · ${sentenceCards.due}` : ""}
             </span>
             <span className="text-[var(--app-muted)] transition-transform group-open:rotate-180" aria-hidden>▾</span>
           </summary>
           <div className="mt-3">
-        <PrefetchLink href="/review/writing" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>✍️</span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Бичих давталт")}{writingDue > 0 ? ` · ${writingDue}` : ""}</span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </PrefetchLink>
         <PrefetchLink href="/review/sentences" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>🔖</span>
           <span className="bs-tm-card-body">
@@ -355,7 +342,7 @@ export function ReviewMenuHubClient({
         <PrefetchLink href="/kanji" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>🈴</span>
           <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Ханз, дуудлага, бичих дэвтэр")}</span>
+            <span className="bs-tm-card-title">{tr(locale, "Ханз, дуудлага")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>

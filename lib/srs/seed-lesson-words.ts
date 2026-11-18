@@ -1,7 +1,6 @@
 "use client";
 
 import { seedLocalNewWords } from "@/lib/srs/local-word-srs";
-import { seedLocalWritingSrs } from "@/lib/srs/writing-srs";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import type { VocabularyWord } from "@/types/lesson";
@@ -111,17 +110,8 @@ export async function seedLessonWordsIntoSrs(
 ): Promise<SeedLessonWordsResult> {
   void lessonId;
   try {
-    // Бичих SRS: хичээлийн ханзтай үгсийг «маргааш бичих» болгож нэмнэ
-    // (байгааг өөрчлөхгүй, локал — эхний бичилтээр серверт синклэгдэнэ).
-    for (const w of vocabulary ?? []) {
-      const zh = (w.chinese ?? "").trim();
-      if (!zh || !/[㐀-鿿]/.test(zh)) continue;
-      seedLocalWritingSrs({
-        key: zh,
-        pinyin: w.pinyin?.trim() || null,
-        meaning: w.mongolian?.trim() || null,
-      });
-    }
+    // Бичих жагсаалтад автоматаар нэмэхгүй — бичих үг нь «Миний үгс»-ээс
+    // ирнэ (lib/srs/writing-queue.ts).
 
     if (!hasSupabaseConfig || !supabase) return EMPTY_RESULT;
 
