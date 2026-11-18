@@ -2,6 +2,7 @@
 
 
 
+import { displayTestTitle } from "@/lib/mock-test/test-id-meta";
 import Link from "next/link";
 
 import { useMemo, useState } from "react";
@@ -115,7 +116,7 @@ export function MockTestResultView({
 
       <h1 className="bs-mt-title">Дууслаа</h1>
 
-      <p className="bs-mock-result-badge mt-2">{test.title}</p>
+      <p className="bs-mock-result-badge mt-2">{displayTestTitle(test.id, test.title)}</p>
 
 
 

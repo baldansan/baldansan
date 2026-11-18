@@ -1,5 +1,6 @@
 "use client";
 
+import { displayTestTitle } from "@/lib/mock-test/test-id-meta";
 import { useMemo, useState } from "react";
 import "@/components/lesson/modules/exercises-module.css";
 import { countMockExamAnswered } from "@/lib/mock-test/exam-progress";
@@ -66,7 +67,7 @@ export function MockTestExamOverview({
     <div className="bs-mt-overview px-4">
       <h2 className="bs-mt-overview-title">Сорилын тойм</h2>
       <p className="bs-mt-overview-sub">
-        {examMode === "real" ? "Жинхэнэ горим" : "Дадлагын горим"} · {test.title}
+        {examMode === "real" ? "Жинхэнэ горим" : "Дадлагын горим"} · {displayTestTitle(test.id, test.title)}
       </p>
       <p className="bs-ex-overview-hint">
         Ногоон — хариулсан, саарал — хийгээгүй. Хэсэг эсвэл асуулт дээр дарж тэндээс эхлэх боломжтой.

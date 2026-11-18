@@ -1,6 +1,6 @@
 "use client";
 
-import { describeTestId } from "@/lib/mock-test/test-id-meta";
+import { describeTestId, displayTestTitle } from "@/lib/mock-test/test-id-meta";
 import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -181,8 +181,8 @@ export function MockTestListClient({
                               {meta?.isSample
                                 ? "Албан загвар (样卷)"
                                 : meta
-                                  ? `${meta.year} он · №${meta.serial}${meta.variant ? ` ${meta.variant}` : ""}`
-                                  : test.title.replace(/^HSK \d(?:[–-]\d)?\s*·\s*/, "") || test.id}
+                                  ? meta.label
+                                  : displayTestTitle(test.id, test.title).replace(/^HSK \d(?:[–-]\d)?\s*·\s*/, "") || test.id}
                             </span>
                             <span className="bs-mt-row-meta">
                               {test.time_limit_min} мин · {test.total_questions} асуулт ·{" "}

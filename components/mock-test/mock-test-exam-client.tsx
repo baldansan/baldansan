@@ -1,5 +1,6 @@
 "use client";
 
+import { displayTestTitle } from "@/lib/mock-test/test-id-meta";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
@@ -543,7 +544,7 @@ export function MockTestExamClient({
         >
           Гарах
         </button>
-        <span className="bs-mt-exam-topbar-title">{test.title}</span>
+        <span className="bs-mt-exam-topbar-title">{displayTestTitle(test.id, test.title)}</span>
       </div>
       <div className="bs-mt-exam-page">{children}</div>
       {showExitDialog ? (
@@ -561,7 +562,7 @@ export function MockTestExamClient({
         <Link href={returnTo} className="bs-mem-back">
           {backLabel}
         </Link>
-        <h1 className="bs-mt-title mt-3">{test.title}</h1>
+        <h1 className="bs-mt-title mt-3">{displayTestTitle(test.id, test.title)}</h1>
         <p className="bs-mt-sub">
           {test.hsk_level >= 7 ? "HSK 7–9" : `HSK ${test.hsk_level}`} · {test.id}
         </p>

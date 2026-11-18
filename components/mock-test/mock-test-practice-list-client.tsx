@@ -1,5 +1,6 @@
 "use client";
 
+import { displayTestTitle } from "@/lib/mock-test/test-id-meta";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { SKILL_LABELS_MN, type MockTestRow } from "@/lib/mock-test/types";
@@ -69,7 +70,7 @@ export function MockTestPracticeListClient({ tests, tutorCounts = {} }: Props) {
           >
             <span className="bs-mtp-hub-level">{levelLabel(test.hsk_level)}</span>
             <span className="bs-mtp-hub-body">
-              <span className="bs-mtp-hub-title">{test.title}</span>
+              <span className="bs-mtp-hub-title">{displayTestTitle(test.id, test.title)}</span>
               <span className="bs-mtp-hub-meta">
                 {test.total_questions} асуулт ·{" "}
                 {test.sections

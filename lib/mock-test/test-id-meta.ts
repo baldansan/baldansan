@@ -9,7 +9,7 @@ export type TestIdMeta = {
   variant: string | null;
   isSample: boolean;
   standard: "HSK 2.0";
-  /** Жишээ: «2013 оны жинхэнэ шалгалт · №29» */
+  /** Жишээ: «Жинхэнэ шалгалт · №1329» — оныг хэрэглэгчид харуулахгүй (хуучин гэж бодуулдаг). */
   label: string;
 };
 
@@ -24,6 +24,18 @@ export function describeTestId(id: string): TestIdMeta | null {
   const year = isSample ? null : 2000 + yy;
   const label = isSample
     ? "Албан загвар шалгалт (样卷)"
-    : `${year} оны жинхэнэ шалгалт · №${serial}${variant ? ` ${variant}` : ""}`;
+    : `Жинхэнэ шалгалт · №${m[2]}${m[3]}${variant ? ` ${variant}` : ""}`;
   return { level, year, serial: isSample ? null : serial, variant, isSample, standard: "HSK 2.0", label };
+}
+
+/** Хэрэглэгчид харуулах шалгалтын нэр: оныг хэзээ ч харуулахгүй. */
+export function displayTestTitle(id: string, title?: string | null): string {
+  const meta = describeTestId(id);
+  if (meta) return `HSK ${meta.level} · ${meta.label}`;
+  const cleaned = (title ?? "")
+    .replace(/(19|20)\d{2}\s*(оны|онд|он|年)?/g, "")
+    .replace(/\s*·\s*·\s*/g, " · ")
+    .replace(/\s{2,}/g, " ")
+    .replace(/^[\s·–-]+|[\s·–-]+$/g, "");
+  return cleaned || id;
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { displayTestTitle } from "@/lib/mock-test/test-id-meta";
 import { useAutoAdvance } from "@/lib/hooks/use-auto-advance";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
@@ -293,7 +294,7 @@ export function MockTestPracticeClient({ test, questions, lessonTitles }: Props)
 
           <div className="bs-mtp-hero">
             <p className="bs-mtp-hero-kicker">Сурах горим · цаг хэмжихгүй</p>
-            <h1 className="bs-mtp-hero-title">{test.title}</h1>
+            <h1 className="bs-mtp-hero-title">{displayTestTitle(test.id, test.title)}</h1>
             <p className="bs-mtp-hero-sub">
               {totalQuestions} асуулт · {groups.length} богино хэсэг. Хариулт сонгонгуут зөв нь, яагаад гэдэг
               тайлбар шууд гарна.
