@@ -302,9 +302,17 @@ export function LevelWordsClient() {
             ♥ {counts.learning} үг
           </span>
           {counts.learning >= 2 ? (
-            <Link href={`/games/learn?mylevel=${level}`} className="bs-lvw-play-btn">
-              ▶ Тоглож цээжлэх
-            </Link>
+            <>
+              <Link
+                href={`/games/learn?mylevel=${level}&preset=tone`}
+                className="bs-lvw-play-btn bs-lvw-play-btn--tone"
+              >
+                🎵 Хөг
+              </Link>
+              <Link href={`/games/learn?mylevel=${level}`} className="bs-lvw-play-btn">
+                ▶ Тоглох
+              </Link>
+            </>
           ) : (
             <span className="bs-lvw-play-hint">Тоглохын тулд 2+ үг сонго</span>
           )}

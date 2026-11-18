@@ -52,6 +52,7 @@ export const DEFAULT_LEARN_SETTINGS: LearnSettings = {
 
 /** Нүүр хуудасны бэлэн тохиргоонууд — тусдаа тоглоом биш, нэг тоглоомын горим. */
 export const LEARN_PRESETS: Record<string, Partial<LearnSettings>> = {
+  tone: { modes: ["tone"], timer: 0, size: 10 },
   speed: { modes: ["meaning", "recall", "pinyin"], timer: 6, size: 20 },
   dictation: { modes: ["dictation", "listen"], timer: 0, size: 10 },
   marathon: { size: 0, timer: 0 },

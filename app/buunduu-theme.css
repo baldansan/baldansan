@@ -1916,3 +1916,4 @@ html[data-theme="dark"] .bs-poll-opt{background:rgba(0,0,0,.25);color:#EDE9F6;bo
 /* === 3D икон (Higgsfield) === */
 .bs-tm-card-ic--3d{background:transparent!important;padding:0}
 .bs-tm-card-ic--3d img{width:100%;height:100%;object-fit:contain;display:block}
+.bs-lvw-play-btn--tone{background:var(--bs-green-50);color:var(--bs-green-700);padding:0 12px}
