@@ -269,7 +269,8 @@ export function LevelWordsClient() {
                     disabled={busy.has(w.id) || s === "mastered"}
                     onClick={() => void markKnown(w)}
                   >
-                    ✓
+                    <span aria-hidden>✓</span>
+                    <small>Мэднэ</small>
                   </button>
                   <button
                     type="button"
@@ -279,7 +280,8 @@ export function LevelWordsClient() {
                     disabled={busy.has(w.id)}
                     onClick={() => void toggleHeart(w)}
                   >
-                    {s === "learning" ? "♥" : "♡"}
+                    <span aria-hidden>{s === "learning" ? "♥" : "♡"}</span>
+                    <small>Цээжлэх</small>
                   </button>
                 </li>
               );
@@ -290,12 +292,14 @@ export function LevelWordsClient() {
               Цааш үзэх ({visible.length - shown} үг үлдсэн)
             </button>
           ) : null}
+          {/* Доор хөвөх «Тоглож цээжлэх» мөр сүүлийн үг, товчийг халхлахгүй байх зай. */}
+          {counts.learning > 0 ? <div className="bs-lvw-spacer" aria-hidden /> : null}
         </>
       )}
       {counts.learning > 0 ? (
         <div className="bs-lvw-play">
           <span className="bs-lvw-play-count">
-            ♥ {counts.learning} үг сонгосон
+            ♥ {counts.learning} үг
           </span>
           {counts.learning >= 2 ? (
             <Link href={`/games/learn?mylevel=${level}`} className="bs-lvw-play-btn">
