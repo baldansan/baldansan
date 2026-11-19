@@ -10,7 +10,14 @@ export const maxDuration = 120;
  * HSK жагсаалтад байхгүй үгийг ханзаар нь задалж үзнэ; тэгээд ч олдохгүй бол «түвшнээс дээш» гэж тоолно.
  * body: { seriesIds: string[], scale?: "old" | "new", threshold?: number, apply?: boolean }
  */
-type Body = { seriesIds?: string[]; scale?: "old" | "new"; threshold?: number; apply?: boolean };
+type Body = {
+  seriesIds?: string[];
+  scale?: "old" | "new";
+  threshold?: number;
+  apply?: boolean;
+  /** Гараар тогтоох: { "<videoId>": түвшин } — тооцоолол хийхгүй, шууд хадгална. */
+  set?: Record<string, number>;
+};
 
 const CJK = /[一-鿿]/;
 
@@ -27,6 +34,17 @@ export async function POST(request: Request) {
   } catch {
     return NextResponse.json({ ok: false, error: "JSON бие буруу байна." }, { status: 400 });
   }
+  if (body.set && Object.keys(body.set).length) {
+    const done: string[] = [];
+    for (const [id, lv] of Object.entries(body.set).slice(0, 200)) {
+      const level = Math.min(9, Math.max(1, Math.round(Number(lv))));
+      const { error } = await client.from("videos").update({ hsk_level: level }).eq("id", id);
+      if (!error) done.push(`${id}:${level}`);
+    }
+    revalidateCatalog(["videos"]);
+    return NextResponse.json({ ok: true, set: done });
+  }
+
   const seriesIds = (body.seriesIds ?? []).slice(0, 20);
   const scale = body.scale === "new" ? "new" : "old";
   const threshold = Math.min(0.99, Math.max(0.5, body.threshold ?? 0.9));
