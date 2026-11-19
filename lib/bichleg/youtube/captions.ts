@@ -39,10 +39,24 @@ function cleanText(raw: string): string {
     .trim();
 }
 
+/**
+ * Зарим суваг хадмалдаа пиньинь + ханзыг хамт бичдэг («wǒ men 我们»).
+ * Латин үсэг ханзнаасаа олон байвал жижиг үсгээр бичсэн латин үгсийг (пиньинь) хасна.
+ */
+function stripInlinePinyin(text: string): string {
+  const cjk = (text.match(/[\u4e00-\u9fff]/g) ?? []).length;
+  const latin = (text.match(/[a-zA-Z\u00c0-\u024f\u01cd-\u01dc]/g) ?? []).length;
+  if (!cjk || latin <= cjk) return text;
+  return text
+    .replace(/(?<![A-Za-z0-9])[a-z\u00e0-\u024f\u01ce-\u01dc]+(?![A-Za-z0-9])/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 /** Давхцлыг арилгаж, хятад үсэггүй мөрийг хасна. */
 export function tidyLines(input: CaptionLine[]): CaptionLine[] {
   const rows = input
-    .map((l) => ({ start: l.start, end: l.end, zh: cleanText(l.zh) }))
+    .map((l) => ({ start: l.start, end: l.end, zh: stripInlinePinyin(cleanText(l.zh)) }))
     .filter((l) => l.zh && CJK.test(l.zh) && Number.isFinite(l.start))
     .sort((a, b) => a.start - b.start);
 
