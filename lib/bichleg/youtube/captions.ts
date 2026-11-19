@@ -94,24 +94,11 @@ function parseClock(s: string): number {
  * Суралцагчид мөр богино байх хэрэгтэй тул өгүүлбэрээр хувааж, цагийг тэмдэгтийн тоогоор хуваарилна.
  */
 function splitSentences(line: CaptionLine): CaptionLine[] {
-  const cjkLen = (t: string) => (t.match(/[\u4e00-\u9fff]/g) ?? []).length;
-  const parts: string[] = [];
-  for (const sentence of line.zh.match(/[^。！？!?]+[。！？!?…]*/g) ?? [line.zh]) {
-    // Цэг таслалгүй хадмалд YouTube хэд хэдэн мөрийг зайгаар нийлүүлдэг — зайгаар нь буцааж салгана.
-    let buf = "";
-    for (const piece of sentence.trim().split(/\s+/)) {
-      if (!piece) continue;
-      buf = buf ? `${buf} ${piece}` : piece;
-      if (cjkLen(buf) >= 5) {
-        parts.push(buf);
-        buf = "";
-      }
-    }
-    if (buf) {
-      if (parts.length && cjkLen(buf) < 3) parts[parts.length - 1] += ` ${buf}`;
-      else parts.push(buf);
-    }
-  }
+  // Зөвхөн өгүүлбэрийн төгсгөлийн тэмдгээр (。！？) хуваана. Цэг таслалгүй хадмалыг (vlog)
+  // YouTube-ийн өгсөн урт хэсгээр нь үлдээнэ — жижиглэвэл уншихад ойлгомжгүй болдог (хэрэглэгчийн шийдвэр, 2026-11-19).
+  const parts = (line.zh.match(/[^。！？!?]+[。！？!?…]*/g) ?? [line.zh])
+    .map((p) => p.trim())
+    .filter(Boolean);
   // Хэт богино хэсгийг («对。», «哦。») дараагийнхтайгаа нийлүүлнэ.
   const merged: string[] = [];
   for (const part of parts) {
