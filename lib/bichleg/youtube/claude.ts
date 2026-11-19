@@ -10,32 +10,36 @@ export const TRANSLATE_KEY_HINT =
 export async function callClaude(system: string, user: string, maxTokens = 8000): Promise<string> {
   const key = process.env.ANTHROPIC_API_KEY;
   if (!key) throw new Error(TRANSLATE_KEY_HINT);
-  const model = process.env.BICHLEG_TRANSLATE_MODEL || "claude-sonnet-4-5";
+  // Монгол орчуулгын чанарт хамгийн сайн загвар; танигдахгүй бол хуучин загвар руу шилжинэ.
+  const models = [process.env.BICHLEG_TRANSLATE_MODEL || "claude-opus-5-5", "claude-sonnet-4-5"];
 
   let lastError = "";
-  for (let attempt = 0; attempt < 2; attempt += 1) {
-    const res = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      cache: "no-store",
-      headers: {
-        "content-type": "application/json",
-        "x-api-key": key,
-        "anthropic-version": "2023-06-01",
-      },
-      body: JSON.stringify({
-        model,
-        max_tokens: maxTokens,
-        system,
-        messages: [{ role: "user", content: user }],
-      }),
-    });
-    if (res.ok) {
-      const data = (await res.json()) as { content?: { type: string; text?: string }[] };
-      return (data.content ?? []).map((c) => c.text ?? "").join("");
+  for (const model of models) {
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      const res = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        cache: "no-store",
+        headers: {
+          "content-type": "application/json",
+          "x-api-key": key,
+          "anthropic-version": "2023-06-01",
+        },
+        body: JSON.stringify({
+          model,
+          max_tokens: maxTokens,
+          system,
+          messages: [{ role: "user", content: user }],
+        }),
+      });
+      if (res.ok) {
+        const data = (await res.json()) as { content?: { type: string; text?: string }[] };
+        return (data.content ?? []).map((c) => c.text ?? "").join("");
+      }
+      lastError = `Орчуулгын API алдаа (${res.status}): ${(await res.text()).slice(0, 200)}`;
+      if (res.status === 404 || res.status === 400) break; // загвар танигдсангүй → дараагийнх
+      if (res.status !== 429 && res.status < 500) throw new Error(lastError);
+      await new Promise((r) => setTimeout(r, 2500));
     }
-    lastError = `Орчуулгын API алдаа (${res.status}): ${(await res.text()).slice(0, 200)}`;
-    if (res.status !== 429 && res.status < 500) break;
-    await new Promise((r) => setTimeout(r, 2500));
   }
   throw new Error(lastError);
 }
