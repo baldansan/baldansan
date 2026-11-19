@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   AdminAlert,
   AdminEditorSection,
@@ -78,6 +78,22 @@ export function BichlegYoutubeClient({ seriesOptions }: { seriesOptions: SeriesO
   const [rows, setRows] = useState<Row[]>([]);
   const [saveErrors, setSaveErrors] = useState<string[]>([]);
   const runRef = useRef(0);
+
+  // YouTube хуудаснаас шууд дамжуулсан өгөгдөл: /admin/bichleg/youtube#yt=<JSON {id, tr}>
+  useEffect(() => {
+    if (!window.location.hash.startsWith("#yt=")) return;
+    try {
+      const data = JSON.parse(decodeURIComponent(window.location.hash.slice(4))) as {
+        id?: string;
+        tr?: string;
+      };
+      if (data.id) setUrl(`https://www.youtube.com/watch?v=${data.id}`);
+      if (data.tr) setPasted(data.tr);
+    } catch {
+      // буруу өгөгдөл — тоохгүй
+    }
+    window.history.replaceState(null, "", window.location.pathname);
+  }, []);
 
   const reset = useCallback(() => {
     runRef.current += 1;
