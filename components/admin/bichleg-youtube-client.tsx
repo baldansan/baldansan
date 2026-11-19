@@ -37,6 +37,15 @@ type FetchResponse = {
   hasTranslateKey?: boolean;
 };
 
+type AutoConfig = {
+  auto?: boolean;
+  series?: string;
+  ep?: number;
+  title?: string;
+  hsk?: number;
+};
+type AutoStage = "idle" | "start" | "running" | "fill" | "save" | "saving" | "done" | "error";
+
 const TRANSLATE_CHUNK = 25;
 const BUILD_CHUNK = 60;
 const MAX_LINES = 900;
@@ -82,17 +91,28 @@ export function BichlegYoutubeClient({ seriesOptions }: { seriesOptions: SeriesO
   const [rows, setRows] = useState<Row[]>([]);
   const [saveErrors, setSaveErrors] = useState<string[]>([]);
   const runRef = useRef(0);
+  const autoRef = useRef<AutoConfig | null>(null);
+  const [autoStage, setAutoStage] = useState<AutoStage>("idle");
 
-  // YouTube хуудаснаас шууд дамжуулсан өгөгдөл: /admin/bichleg/youtube#yt=<JSON {id, tr}>
+  // YouTube хуудаснаас шууд дамжуулсан өгөгдөл:
+  // /admin/bichleg/youtube#yt=<JSON {id, tr, auto?, series?, ep?, title?, hsk?}>
+  // auto=true бол орчуулаад, шалгалт давбал шууд хадгална (олноор оруулах үед).
   useEffect(() => {
     if (!window.location.hash.startsWith("#yt=")) return;
     const raw = window.location.hash.slice(4);
     window.history.replaceState(null, "", window.location.pathname);
     const timer = window.setTimeout(() => {
       try {
-        const data = JSON.parse(decodeURIComponent(raw)) as { id?: string; tr?: string };
+        const data = JSON.parse(decodeURIComponent(raw)) as AutoConfig & {
+          id?: string;
+          tr?: string;
+        };
         if (data.id) setUrl(`https://www.youtube.com/watch?v=${data.id}`);
         if (data.tr) setPasted(data.tr);
+        if (data.auto && data.id && data.tr) {
+          autoRef.current = data;
+          setAutoStage("start");
+        }
       } catch {
         // буруу өгөгдөл — тоохгүй
       }
@@ -280,6 +300,43 @@ export function BichlegYoutubeClient({ seriesOptions }: { seriesOptions: SeriesO
       setBusy(null);
     }
   }, [episodeNo, hskLevel, rows, seriesId, titleMn, titleZh, youtubeId]);
+
+  // Автомат горимын дараалал: start → running → fill → save → saving → done/error
+  useEffect(() => {
+    if (autoStage === "idle") return;
+    document.title =
+      autoStage === "error"
+        ? `AUTO:error ${error ?? saveErrors.join(" · ")}`
+        : autoStage === "done"
+          ? `AUTO:done ${saved?.count ?? ""}`
+          : `AUTO:${autoStage}`;
+    const timer = window.setTimeout(() => {
+      const cfg = autoRef.current;
+      if (autoStage === "start" && url && pasted) {
+        setAutoStage("running");
+        void start().then(() => setAutoStage("fill"));
+      } else if (autoStage === "fill") {
+        if (error || rows.length === 0) {
+          setAutoStage("error");
+          return;
+        }
+        if (cfg?.series) {
+          setSeriesId(cfg.series);
+          setEpisodeNo(String(cfg.ep ?? 1));
+        }
+        if (cfg?.title) setTitleMn(cfg.title);
+        if (cfg?.hsk) setHskLevel(String(cfg.hsk));
+        setAutoStage("save");
+      } else if (autoStage === "save") {
+        setAutoStage("saving");
+        void save();
+      } else if (autoStage === "saving" && !busy) {
+        if (saved) setAutoStage("done");
+        else if (saveErrors.length || error) setAutoStage("error");
+      }
+    }, 300);
+    return () => window.clearTimeout(timer);
+  }, [autoStage, url, pasted, start, save, error, rows.length, busy, saved, saveErrors]);
 
   const ready = rows.length > 0 && !busy && rows.every((r) => r.words.length > 0);
   const working = Boolean(busy);
