@@ -74,6 +74,9 @@ export function ImportHub() {
             Богино бичлэгийн JSON хадмал (video_id, youtube_id, subtitles, words).
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
+            <Link href="/admin/bichleg/youtube" className={btnPrimary}>
+              YouTube холбоос наах
+            </Link>
             <Link href="/admin/import/bichleg" className={btnPrimary}>
               Импортлох
             </Link>

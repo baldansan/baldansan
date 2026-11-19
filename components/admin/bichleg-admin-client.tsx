@@ -293,7 +293,10 @@ export function BichlegAdminClient({ initialSeries }: Props) {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <Link href="/admin/import/bichleg" className={btnPrimary}>
+          <Link href="/admin/bichleg/youtube" className={btnPrimary}>
+            + YouTube холбоосоор нэмэх
+          </Link>
+          <Link href="/admin/import/bichleg" className={btnGhost}>
             Импортлох
           </Link>
           <Link href="/bichleg" className={btnGhost}>
