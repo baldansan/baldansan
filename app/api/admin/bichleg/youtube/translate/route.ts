@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getAdminServiceRoleSupabaseClient } from "@/lib/supabase/admin-service-role-client";
 import { callClaude, parseNumbered, SUBTITLE_RULES } from "@/lib/bichleg/youtube/claude";
 
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 type Body = {
   titleZh?: string;

@@ -37,8 +37,8 @@ type FetchResponse = {
   hasTranslateKey?: boolean;
 };
 
-const TRANSLATE_CHUNK = 40;
-const BUILD_CHUNK = 200;
+const TRANSLATE_CHUNK = 25;
+const BUILD_CHUNK = 60;
 const MAX_LINES = 900;
 
 function clock(sec: number): string {
@@ -48,16 +48,20 @@ function clock(sec: number): string {
 }
 
 async function postJson<T>(url: string, body: unknown): Promise<T> {
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  });
-  const text = await res.text();
-  try {
-    return JSON.parse(text) as T;
-  } catch {
-    throw new Error(`Серверийн алдаа (${res.status}). Дахин оролдоно уу.`);
+  // Сервер түр саатвал (502/504) нэг удаа дахин оролдоно.
+  for (let attempt = 0; ; attempt += 1) {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    const text = await res.text();
+    try {
+      return JSON.parse(text) as T;
+    } catch {
+      if (attempt < 1 && res.status >= 502) continue;
+      throw new Error(`Серверийн алдаа (${res.status}). Дахин оролдоно уу.`);
+    }
   }
 }
 
@@ -82,17 +86,18 @@ export function BichlegYoutubeClient({ seriesOptions }: { seriesOptions: SeriesO
   // YouTube хуудаснаас шууд дамжуулсан өгөгдөл: /admin/bichleg/youtube#yt=<JSON {id, tr}>
   useEffect(() => {
     if (!window.location.hash.startsWith("#yt=")) return;
-    try {
-      const data = JSON.parse(decodeURIComponent(window.location.hash.slice(4))) as {
-        id?: string;
-        tr?: string;
-      };
-      if (data.id) setUrl(`https://www.youtube.com/watch?v=${data.id}`);
-      if (data.tr) setPasted(data.tr);
-    } catch {
-      // буруу өгөгдөл — тоохгүй
-    }
+    const raw = window.location.hash.slice(4);
     window.history.replaceState(null, "", window.location.pathname);
+    const timer = window.setTimeout(() => {
+      try {
+        const data = JSON.parse(decodeURIComponent(raw)) as { id?: string; tr?: string };
+        if (data.id) setUrl(`https://www.youtube.com/watch?v=${data.id}`);
+        if (data.tr) setPasted(data.tr);
+      } catch {
+        // буруу өгөгдөл — тоохгүй
+      }
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, []);
 
   const reset = useCallback(() => {

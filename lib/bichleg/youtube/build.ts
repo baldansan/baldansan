@@ -75,11 +75,11 @@ export async function buildRows(
   const missing = need.filter((w) => !hsk.has(w));
   const ai = new Map<string, string>();
   const chunks: string[][] = [];
-  for (let i = 0; i < missing.length; i += 150) chunks.push(missing.slice(i, i + 150));
+  for (let i = 0; i < missing.length; i += 80) chunks.push(missing.slice(i, i + 80));
   await Promise.all(
     chunks.map(async (chunk) => {
       const answer = parseNumbered(
-        await callClaude(GLOSS_RULES, chunk.map((w, i) => `${i + 1}|${w}`).join("\n"), 6000)
+        await callClaude(GLOSS_RULES, chunk.map((w, i) => `${i + 1}|${w}`).join("\n"), 4000, "fast")
       );
       chunk.forEach((w, i) => {
         if (answer[i + 1]) ai.set(w, answer[i + 1]);

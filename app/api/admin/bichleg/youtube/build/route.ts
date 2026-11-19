@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getAdminServiceRoleSupabaseClient } from "@/lib/supabase/admin-service-role-client";
 import { buildRows } from "@/lib/bichleg/youtube/build";
 
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 /** Хятад мөрүүд → үгээр задалсан, пиньинь + үгийн утгатай мөрүүд. */
 export async function POST(request: Request) {

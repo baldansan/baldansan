@@ -7,11 +7,20 @@ export const hasTranslateKey = Boolean(process.env.ANTHROPIC_API_KEY);
 export const TRANSLATE_KEY_HINT =
   "Орчуулгын түлхүүр тохируулаагүй байна: Vercel → Settings → Environment Variables дээр ANTHROPIC_API_KEY нэмээд дахин deploy хийнэ үү.";
 
-export async function callClaude(system: string, user: string, maxTokens = 8000): Promise<string> {
+export async function callClaude(
+  system: string,
+  user: string,
+  maxTokens = 8000,
+  /** fast = үгийн толь зэрэг энгийн ажилд хурдан загвар */
+  speed: "best" | "fast" = "best"
+): Promise<string> {
   const key = process.env.ANTHROPIC_API_KEY;
   if (!key) throw new Error(TRANSLATE_KEY_HINT);
   // Монгол орчуулгын чанарт хамгийн сайн загвар; танигдахгүй бол хуучин загвар руу шилжинэ.
-  const models = [process.env.BICHLEG_TRANSLATE_MODEL || "claude-opus-5-5", "claude-sonnet-4-5"];
+  const models =
+    speed === "fast"
+      ? ["claude-sonnet-4-5"]
+      : [process.env.BICHLEG_TRANSLATE_MODEL || "claude-opus-5-5", "claude-sonnet-4-5"];
 
   let lastError = "";
   for (const model of models) {
