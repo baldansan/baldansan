@@ -47,9 +47,12 @@ function stripInlinePinyin(text: string): string {
   const cjk = (text.match(/[\u4e00-\u9fff]/g) ?? []).length;
   const latin = (text.match(/[a-zA-Z\u00c0-\u024f\u01cd-\u01dc]/g) ?? []).length;
   if (!cjk || latin <= cjk) return text;
+  // Ханз агуулаагүй, зайгаар тусгаарлагдсан хэсгүүд нь пиньинь (том үсгээр эхэлсэн ч) — хасна.
+  // Ханзтай наалдсан латин үг («我用WeChat支付») үлдэнэ.
   return text
-    .replace(/(?<![A-Za-z0-9])[a-z\u00e0-\u024f\u01ce-\u01dc]+(?![A-Za-z0-9])/g, " ")
-    .replace(/\s+/g, " ")
+    .split(/\s+/)
+    .filter((token) => /[\u4e00-\u9fff]/.test(token))
+    .join(" ")
     .trim();
 }
 
