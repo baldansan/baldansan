@@ -76,6 +76,38 @@ function parseClock(s: string): number {
 }
 
 /**
+ * YouTube-ийн транскрипт хэд хэдэн өгүүлбэрийг нэг мөрөнд нийлүүлдэг (асуулт, хариулт хамт).
+ * Суралцагчид мөр богино байх хэрэгтэй тул өгүүлбэрээр хувааж, цагийг тэмдэгтийн тоогоор хуваарилна.
+ */
+function splitSentences(line: CaptionLine): CaptionLine[] {
+  const parts = (line.zh.match(/[^。！？!?]+[。！？!?…]*/g) ?? [line.zh])
+    .map((p) => p.trim())
+    .filter(Boolean);
+  // Хэт богино хэсгийг («对。», «哦。») дараагийнхтайгаа нийлүүлнэ.
+  const merged: string[] = [];
+  for (const part of parts) {
+    const last = merged[merged.length - 1];
+    if (last !== undefined && [...last.replace(/[^\u4e00-\u9fff]/g, "")].length < 3) {
+      merged[merged.length - 1] = `${last} ${part}`;
+    } else {
+      merged.push(part);
+    }
+  }
+  if (merged.length < 2 || !Number.isFinite(line.end)) return [line];
+  const weights = merged.map((p) => Math.max(2, [...p].length));
+  const total = weights.reduce((a, b) => a + b, 0);
+  const span = line.end - line.start;
+  const out: CaptionLine[] = [];
+  let at = line.start;
+  merged.forEach((zh, i) => {
+    const dur = (span * weights[i]) / total;
+    out.push({ start: at, end: at + dur, zh });
+    at += dur;
+  });
+  return out;
+}
+
+/**
  * Гараар наасан хадмал: SRT / VTT, эсвэл YouTube-ийн «Транскрипт» цонхноос
  * хуулсан («0:05» мөр, дараа нь текст) хэлбэр.
  */
@@ -108,13 +140,15 @@ export function parsePastedSubtitles(text: string): CaptionLine[] {
     }
   }
   flush();
+  const timed: CaptionLine[] = [];
   for (let i = 0; i < lines.length; i += 1) {
     const next = lines[i + 1];
     // Транскриптэд төгсгөлийн цаг байхгүй: дараагийн мөр хүртэл, гэхдээ 10 секундээс хэтрүүлэхгүй.
     const cap = lines[i].start + 10;
     lines[i].end = next ? Math.min(next.start, cap) : lines[i].start + 4;
+    timed.push(...splitSentences(lines[i]));
   }
-  return tidyLines(lines);
+  return tidyLines(timed);
 }
 
 export async function fetchYoutubeTitle(youtubeId: string): Promise<string> {
