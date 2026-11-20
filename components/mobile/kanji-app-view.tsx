@@ -150,7 +150,7 @@ export function KanjiAppView({ entries, lessonVocab, lang = null }: Props) {
           </span>
           <span className="min-w-0 flex-1">
             <span className="block text-sm font-bold text-[var(--app-text)]">
-              {tr(locale, "Бичих дэвтэр")}
+              {tr(locale, "Ханзны дэвтэр")}
             </span>
             <span className="block text-xs text-[var(--app-muted)]">
               {tr(locale, "Даалгаврын ханзаа оруулаад бичиж сур")}

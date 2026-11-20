@@ -128,7 +128,7 @@ export function StudyAppView({ allLessons }: Props) {
         <MobileCard className="flex items-center justify-between gap-3">
           <div>
             <p className="font-semibold text-[var(--app-text)]">
-              ✍️ {tr(locale, "Бичих дэвтэр")}
+              ✍️ {tr(locale, "Ханзны дэвтэр")}
             </p>
             <p className="mt-0.5 text-xs text-[var(--app-muted)]">
               {tr(locale, "Даалгаврын ханзаа оруулаад бичиж сур")}

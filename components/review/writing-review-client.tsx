@@ -151,7 +151,7 @@ export function WritingReviewClient() {
             <span aria-hidden>›</span>
           </Link>
           <Link href="/writing" className={ROW_CLASS}>
-            <span>{tr(locale, "Бичих дэвтэр, хэвлэх")}</span>
+            <span>{tr(locale, "Ханзны дэвтэр, хэвлэх")}</span>
             <span aria-hidden>›</span>
           </Link>
         </div>

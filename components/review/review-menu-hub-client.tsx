@@ -265,6 +265,18 @@ export function ReviewMenuHubClient({
           <span className="bs-rv-go">{tr(locale, "Эхлэх")}</span>
         </PrefetchLink>
 
+        {/* Ханзны дэвтэр — өдрийн давталтын дараах хоёр дахь гол хаалга */}
+        <PrefetchLink href="/writing" className="bs-hz-book">
+          <span className="bs-hz-book-grid" aria-hidden translate="no">字</span>
+          <span className="min-w-0 flex-1">
+            <span className="bs-hz-book-title">✍️ {tr(locale, "Ханзны дэвтэр")}</span>
+            <span className="bs-hz-book-sub">
+              {tr(locale, "Харна → дагаж бичнэ → санаж бичнэ. Үгээ, тоогоо өөрөө сонгоно.")}
+            </span>
+          </span>
+          <span className="bs-rv-go">{tr(locale, "Бичих")}</span>
+        </PrefetchLink>
+
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Үг")}</p>
         <PrefetchLink href="/review/words" className="bs-tm-card">
           <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/heart.webp" alt="" width={44} height={44} /></span>
@@ -285,14 +297,6 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
 
-        <PrefetchLink href="/review/writing" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/pencil.webp" alt="" width={44} height={44} /></span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Бичих")}</span>
-            <span className="bs-tm-card-sub">{tr(locale, "Цээжилж буй үгсээ гараар бичиж цээжил")}</span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </PrefetchLink>
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Сонсох · Ярих")}</p>
         <PrefetchLink href={`/listen/daily?level=${activeLevel}`} className="bs-tm-card">

@@ -1958,3 +1958,19 @@ html[data-theme="dark"] .bs-hz-role--pho{background:#232a52;color:#a9b6ff;border
 .bs-write-grid::after{top:50%;left:0;right:0;border-top-width:1.5px}
 .bs-write-grid-canvas{position:relative;z-index:1;width:260px;height:260px}
 .bs-write-grid--ok{border-color:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.18)}
+
+/* Давтах цэс: «Ханзны дэвтэр» хаалга */
+.bs-hz-book{display:flex;align-items:center;gap:12px;margin-top:12px;padding:14px;border-radius:22px;border:1.5px solid var(--app-border);background:var(--app-card);box-shadow:var(--app-shadow);text-decoration:none;transition:transform .12s}
+.bs-hz-book:active{transform:scale(.985)}
+.bs-hz-book-grid{position:relative;flex:none;width:58px;height:58px;border-radius:14px;border:2px solid var(--app-primary);background:#fff;color:#4A2A9E;display:flex;align-items:center;justify-content:center;font-size:36px;line-height:1;font-family:var(--bs-hanzi,inherit)}
+.bs-hz-book-grid::before,.bs-hz-book-grid::after{content:"";position:absolute;border:0 dashed #d9c8fa;pointer-events:none}
+.bs-hz-book-grid::before{left:50%;top:3px;bottom:3px;border-left-width:1.5px}
+.bs-hz-book-grid::after{top:50%;left:3px;right:3px;border-top-width:1.5px}
+.bs-hz-book-title{display:block;font-size:17px;font-weight:900;color:var(--app-text)}
+.bs-hz-book-sub{display:block;margin-top:2px;font-size:12.5px;line-height:1.35;color:var(--app-muted)}
+/* Ханзны дэвтрийн нүүр: эх сурвалжийн хавтангууд */
+.bs-hz-src{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.bs-hz-src a{display:block;border-radius:20px;border:1.5px solid var(--app-border);background:var(--app-card);box-shadow:var(--app-shadow);padding:12px 13px;text-decoration:none}
+.bs-hz-src a:active{transform:scale(.985)}
+.bs-hz-src b{display:block;margin-top:4px;font-size:15px;font-weight:900;color:var(--app-text)}
+.bs-hz-src small{display:block;font-size:12px;line-height:1.35;color:var(--app-muted)}

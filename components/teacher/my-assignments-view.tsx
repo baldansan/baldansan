@@ -32,7 +32,7 @@ const ASSIGNMENT_TYPE_LABELS: Record<string, string> = {
   vocabulary: "Үгсийн сан",
   quiz: "Дасгал",
   review: "Давталт",
-  writing: "Бичих дэвтэр",
+  writing: "Ханзны дэвтэр",
 };
 
 function isCompleted(status: string | null): boolean {
@@ -153,7 +153,7 @@ export function MyAssignmentsView() {
                   {a.classroomName}
                   {a.organizationName ? ` · ${a.organizationName}` : ""} ·{" "}
                   {writingListId
-                    ? tr(locale, "Бичих дэвтэр")
+                    ? tr(locale, "Ханзны дэвтэр")
                     : custom
                       ? "Багшийн даалгавар"
                       : `${a.lessonId} хичээл`}{" "}

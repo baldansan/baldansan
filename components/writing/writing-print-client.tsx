@@ -112,7 +112,7 @@ export function WritingPrintClient({ listId }: { listId: string }) {
                   ✍️ {list.title}
                 </h1>
                 <p className="text-xs text-slate-600">
-                  {tr(locale, "Бичих дэвтэр")} · {list.items.length} {tr(locale, "ханз")} · {today}
+                  {tr(locale, "Ханзны дэвтэр")} · {list.items.length} {tr(locale, "ханз")} · {today}
                 </p>
               </div>
               <p className="text-xs text-slate-700">

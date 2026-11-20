@@ -362,7 +362,7 @@ export function ClassroomDetailView({ classroomId }: Props) {
                     </Link>
                     <p className="text-xs text-slate-500">
                       {writingListIdFromLessonId(a.lessonId)
-                        ? `✍️ ${tr(locale, "Бичих дэвтэр")}`
+                        ? `✍️ ${tr(locale, "Ханзны дэвтэр")}`
                         : isCustomAssignment(a.lessonId)
                           ? "Хичээл хавсаргаагүй"
                           : `Хичээл ${a.lessonId}`}

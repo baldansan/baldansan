@@ -74,26 +74,81 @@ export function WritingHomeClient() {
   return (
     <MobileAppShell activeTab="study">
       <Link
-        href="/study"
+        href="/review"
         className="mb-3 inline-flex items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"
       >
         {tr(locale, "← Давтах руу буцах")}
       </Link>
 
       <MobilePageHeader
-        title={`✍️ ${tr(locale, "Бичих дэвтэр")}`}
-        subtitle={tr(locale, "Даалгаврын ханзаа оруулаад бичиж сур")}
+        title={`✍️ ${tr(locale, "Ханзны дэвтэр")}`}
+        subtitle={tr(locale, "Ханзаа харж, дагаж, санаж бичээд цээжил")}
       />
 
-      <div className="app-course-card mb-5 p-4">
-        <p className="text-sm text-white/90">
-          {tr(locale, "Цээжилж буй үгсээ гараар бичиж цээжлээрэй.")}
-        </p>
-        <Link
-          href="/review/writing"
-          className="mt-3 inline-flex rounded-full bg-white px-4 py-1.5 text-xs font-bold text-emerald-700"
-        >
-          {tr(locale, "Бичих")} →
+      {/* Үргэлжлүүлэх: дуусаагүй хамгийн сүүлийн дэвтэр */}
+      {(() => {
+        const unfinished = [...assigned, ...(own ?? [])].find(
+          (l) => l.cellsTotal > 0 && l.cellsDone < l.cellsTotal
+        );
+        return (
+          <div className="app-course-card mb-4 p-4">
+            {unfinished ? (
+              <>
+                <p className="text-[11px] font-extrabold uppercase tracking-wide text-white/85">
+                  {tr(locale, "Үргэлжлүүлэх")}
+                </p>
+                <p className="mt-0.5 truncate text-lg font-black text-white" translate="no">
+                  {unfinished.title}
+                </p>
+                <p className="text-xs font-semibold text-white/90">
+                  {unfinished.charsDone}/{unfinished.charsTotal} {tr(locale, "ханз")} · {unfinished.percent}%
+                </p>
+                <Link
+                  href={`/writing/${unfinished.id}/practice`}
+                  className="mt-3 inline-flex rounded-full bg-white px-5 py-2 text-sm font-extrabold text-emerald-700"
+                >
+                  ▶ {tr(locale, "Бичиж үргэлжлүүлэх")}
+                </Link>
+              </>
+            ) : (
+              <>
+                <p className="text-lg font-black text-white">{tr(locale, "Өнөөдөр хэдэн ханз бичих вэ?")}</p>
+                <p className="mt-0.5 text-xs font-semibold text-white/90">
+                  {tr(locale, "Ханзаа, хэдэн удаа бичихээ өөрөө сонгоно. 👀 Харна → ✍️ дагана → 🧠 санана.")}
+                </p>
+                <Link
+                  href="/writing/new"
+                  className="mt-3 inline-flex rounded-full bg-white px-5 py-2 text-sm font-extrabold text-emerald-700"
+                >
+                  + {tr(locale, "Шинэ дэвтэр эхлэх")}
+                </Link>
+              </>
+            )}
+          </div>
+        );
+      })()}
+
+      <p className="mb-2 text-sm font-bold text-[var(--app-text)]">{tr(locale, "Ханзаа хаанаас авах вэ?")}</p>
+      <div className="bs-hz-src mb-5">
+        <Link href="/review/writing">
+          <span className="text-2xl" aria-hidden>⭐</span>
+          <b>{tr(locale, "Миний үгс")}</b>
+          <small>{tr(locale, "Цээжилж буй үгсээ бичнэ")}</small>
+        </Link>
+        <Link href="/writing/new?source=lesson">
+          <span className="text-2xl" aria-hidden>📖</span>
+          <b>{tr(locale, "Хичээлээс")}</b>
+          <small>{tr(locale, "Үзсэн хичээлийнхээ ханзыг")}</small>
+        </Link>
+        <Link href="/writing/new?source=hsk">
+          <span className="text-2xl" aria-hidden>🀄</span>
+          <b>{tr(locale, "HSK түвшнээс")}</b>
+          <small>{tr(locale, "Түвшний ханзаас сонгоно")}</small>
+        </Link>
+        <Link href="/writing/new?source=own">
+          <span className="text-2xl" aria-hidden>✏️</span>
+          <b>{tr(locale, "Өөрөө оруулах")}</b>
+          <small>{tr(locale, "Багшийн өгсөн ханз, үг")}</small>
         </Link>
       </div>
 

@@ -1,7 +1,7 @@
 import { WritingPrintClient } from "@/components/writing/writing-print-client";
 
 export const metadata = {
-  title: "Хэвлэх — Бичих дэвтэр",
+  title: "Хэвлэх — Ханзны дэвтэр",
 };
 
 /** Хэвлэх хуудас — дэвтэр локал (localStorage) байж болох тул уншилт клиент талд. */

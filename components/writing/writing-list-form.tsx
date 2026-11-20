@@ -125,6 +125,16 @@ export function WritingListForm(props: Props) {
   const [repsMemory, setRepsMemory] = useState(REPS_MEMORY_DEFAULT);
   const [source, setSource] = useState<Source>("own");
   const [loading, setLoading] = useState(editing);
+
+  // Ханзны дэвтрийн нүүрээс «Хичээлээс» / «HSK» хавтангаар орвол тэр табыг шууд нээнэ (?source=).
+  useEffect(() => {
+    try {
+      const wanted = new URLSearchParams(window.location.search).get("source");
+      if (wanted === "lesson" || wanted === "hsk" || wanted === "own") setSource(wanted);
+    } catch {
+      // ignore
+    }
+  }, []);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);

@@ -144,6 +144,26 @@ export function LessonPathSummaryStage({
         ) : null}
       </div>
 
+      {summary.vocabCount > 0 ? (
+        <div className="bs-card">
+          <div className="bs-label">
+            <span className="bs-dot" />
+            Ханзны дэвтэр
+          </div>
+          <p className="bs-path-summary-lead">Одоо энэ хичээлийн ханзаа бичиж цээжил</p>
+          <p className="text-sm text-[var(--bs-muted)]">
+            👀 Харна → ✍️ дагаж бичнэ → 🧠 санаж бичнэ. Хэдэн удаа бичихээ дэвтэр дотроо өөрөө тохируулна.
+          </p>
+          <a
+            href={`/writing/lesson/${encodeURIComponent(lessonId)}`}
+            className="bs-cta bs-path-visible-cta bs-path-summary-save-all"
+            style={{ display: "block", textAlign: "center", textDecoration: "none" }}
+          >
+            ✍️ Ханзаа бичиж эхлэх
+          </a>
+        </div>
+      ) : null}
+
       {summary.structureChips.length > 0 ? (
         <div className="bs-card">
           <div className="bs-label">

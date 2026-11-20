@@ -1,7 +1,7 @@
 import { WritingHomeClient } from "@/components/writing/writing-home-client";
 
 export const metadata = {
-  title: "Бичих дэвтэр — Бөөндөө Сурцгаая",
+  title: "Ханзны дэвтэр — Бөөндөө Сурцгаая",
 };
 
 export default function WritingPage() {

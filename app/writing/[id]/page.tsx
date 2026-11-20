@@ -1,7 +1,7 @@
 import { WritingNotebookClient } from "@/components/writing/writing-notebook-client";
 
 export const metadata = {
-  title: "Бичих дэвтэр — Бөөндөө Сурцгаая",
+  title: "Ханзны дэвтэр — Бөөндөө Сурцгаая",
 };
 
 export default async function WritingListPage({

@@ -75,7 +75,7 @@ export function WritingNotebookClient({ listId }: Props) {
         href="/writing"
         className="mb-3 inline-flex items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"
       >
-        {tr(locale, "← Бичих дэвтэр")}
+        {tr(locale, "← Ханзны дэвтэр")}
       </Link>
 
       {loading ? (
