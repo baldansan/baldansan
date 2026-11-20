@@ -250,6 +250,32 @@ export function HomeAppView({
     }
   };
 
+  /**
+   * Ангид элссэн сурагч: «Миний ном»-ыг ангийн түвшний HSK ном руу НЭГ удаа шилжүүлнэ
+   * (өмнө нь сонгосон өөр түвшний ном үлдээд ангитайгаа зөрдөг байсан).
+   * Дараа нь сурагч өөрөө сольж болно — анги бүрд нэг л удаа тааруулна.
+   */
+  const syncBookToClassroom = (classroom: { id: string; hskLevel: number | null }) => {
+    const level = classroom.hskLevel;
+    if (level == null) return;
+    try {
+      if (window.localStorage.getItem("bs:homeClassSynced") === classroom.id) return;
+      const entry = catalog.find(
+        (item) => item.courseId === `hsk${level}` && item.available
+      );
+      if (!entry) return;
+      window.localStorage.setItem("bs:homeClassSynced", classroom.id);
+      setLevelPicked(true);
+      setActiveSeries("standard");
+      setActiveChip(entry.chipId);
+      setActiveHskLevel(level as 1 | 2 | 3 | 4 | 5 | 6);
+      window.localStorage.setItem("bs:homeSeries", "standard");
+      window.localStorage.setItem("bs:homeChip", entry.chipId);
+    } catch {
+      // ignore
+    }
+  };
+
   // The grid always shows both series, whichever one the selected book is in.
   const countCompleted = (entry: MobileCourseCatalogEntry) =>
     entry.lessons.filter(
@@ -548,7 +574,12 @@ export function HomeAppView({
       rightRail={rightRail}
     >
       {/* Ангид элссэн сурагчид: ангийнх нь түвшинд түгжигдсэн даалгаврууд. Ангигүй бол харагдахгүй. */}
-      <ClassHomeCard loggedIn={loggedIn} catalog={catalog} fazhanCatalog={fazhanCatalog} />
+      <ClassHomeCard
+        loggedIn={loggedIn}
+        catalog={catalog}
+        fazhanCatalog={fazhanCatalog}
+        onClassroom={syncBookToClassroom}
+      />
       {/* Том танилцуулга — зөвхөн шинэ / нэвтрээгүй хүнд. Явцтай хүнд богино мэндчилгээ. */}
       {!loggedIn || !(totals.completed > 0 || streak > 0) ? (
         <section className="bs-page-in relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#7C4DDB] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(124,77,219,0.28)]">

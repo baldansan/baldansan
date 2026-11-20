@@ -23,6 +23,8 @@ type Props = {
   loggedIn: boolean;
   catalog: MobileCourseCatalogEntry[];
   fazhanCatalog: MobileCourseCatalogEntry[];
+  /** Анги олдмогц дуудна — Нүүрийн «Миний ном»-ыг ангийн түвшинд тааруулахад. */
+  onClassroom?: (classroom: MyClassroomSummary) => void;
 };
 
 type BookState = {
@@ -39,7 +41,7 @@ type BookState = {
  * Ангид элссэн сурагчийн Нүүрийн дээд хэсэг: бүх зүйл ангийнх нь HSK түвшинд түгжигдэнэ.
  * Ангигүй хүнд юу ч харагдахгүй.
  */
-export function ClassHomeCard({ loggedIn, catalog, fazhanCatalog }: Props) {
+export function ClassHomeCard({ loggedIn, catalog, fazhanCatalog, onClassroom }: Props) {
   const locale = useUiLocale();
   const [classroom, setClassroom] = useState<MyClassroomSummary | null>(null);
   const [status, setStatus] = useState<Record<string, LessonStatus>>({});
@@ -51,7 +53,10 @@ export function ClassHomeCard({ loggedIn, catalog, fazhanCatalog }: Props) {
       try {
         const { getMyClassroomSummary } = await import("@/lib/supabase/classrooms");
         const mine = await getMyClassroomSummary();
-        if (alive) setClassroom(mine);
+        if (alive) {
+          setClassroom(mine);
+          if (mine) onClassroom?.(mine);
+        }
       } catch {
         // Алдаа гарвал хэсгийг чимээгүй нууна.
       }
@@ -59,6 +64,7 @@ export function ClassHomeCard({ loggedIn, catalog, fazhanCatalog }: Props) {
     return () => {
       alive = false;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loggedIn]);
 
   const level = classroom?.hskLevel ?? null;
