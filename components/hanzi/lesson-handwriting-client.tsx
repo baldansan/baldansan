@@ -22,7 +22,15 @@ const PROGRESS_KEY = "buunduu-handwriting-progress-v1";
 const OPEN_KEY = "buunduu-huh-hot-open-v1";
 
 type LessonWord = { w: string; py: string; mn: string };
-type Lesson = { n: number; topic: string; words: LessonWord[]; chars: string[] };
+type Lesson = {
+  n: number;
+  topic: string;
+  /** Номын хичээлийн гарчиг ба монгол орчуулга. */
+  zh?: string;
+  mn?: string;
+  words: LessonWord[];
+  chars: string[];
+};
 type StoriesData = Record<string, { m: string; story: string }>;
 type RecallItem = { char: string; word: LessonWord; masked: string };
 
@@ -216,9 +224,13 @@ export function LessonHandwritingClient() {
                   className="flex w-full items-center justify-between gap-2 px-4 py-3 text-left"
                 >
                   <span className="min-w-0">
-                    <span className="block truncate text-sm font-bold text-[var(--app-text)]">
-                      {lesson.n}-{tr(locale, "р хичээл")} · {lesson.topic}
+                    <span className="block text-sm font-bold text-[var(--app-text)]">
+                      {lesson.n}-{tr(locale, "р хичээл")} ·{" "}
+                      <span translate="no">{lesson.zh ?? lesson.topic}</span>
                     </span>
+                    {lesson.zh ? (
+                      <span className="block text-xs text-[var(--app-muted)]">{lesson.mn ?? lesson.topic}</span>
+                    ) : null}
                     <span
                       className={`block text-xs font-semibold ${
                         complete ? "text-emerald-600" : "text-[var(--app-muted)]"
