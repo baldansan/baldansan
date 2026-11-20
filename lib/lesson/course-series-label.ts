@@ -51,9 +51,9 @@ const FAZHAN_SERIES: Record<string, CourseSeriesMeta> = {
   },
   // 新HSK教程 (外研社, HSK 3.0 шинэ стандарт) — 发展汉语-тай ижил «сурах бичгийн» курс.
   xinhsk3: {
-    label: "新HSK教程 3",
-    title: "新HSK教程 3 · HSK 3.0 шинэ сурах бичиг",
-    subtitle: "New HSK Course 3 (外研社) — HSK 3.0 3-р түвшин, 18 хичээл, 490 үг",
+    label: "HSK 3.0 · HSK3",
+    title: "HSK 3.0 · HSK3 (新HSK教程 3)",
+    subtitle: "Шинэ HSK 3.0 стандартын 3-р түвшний сурах бичиг (外研社) — 18 хичээл, 490 үг",
     hskLevel: 3,
   },
 };

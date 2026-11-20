@@ -198,7 +198,7 @@ export const FAZHAN_HOME_LEVELS = [
   },
   {
     chipId: "xinhsk3",
-    chipLabel: "新HSK教程 3",
+    chipLabel: "HSK 3.0 · HSK3",
     courseId: "xinhsk3",
     hskEquivalent: "HSK 3.0 · 3-р түвшин",
   },
