@@ -107,7 +107,7 @@ export function SentenceStructureGate({ onPassed }: Props) {
           <p className="bs-tov-check-feedback bs-tov-check-feedback--ok">Зөв!</p>
         ) : null}
         {answered ? (
-          <button type="button" className="bs-cta" onClick={continueAfterAnswer}>
+          <button type="button" className="bs-cta bs-path-visible-cta" onClick={continueAfterAnswer}>
             {allCorrectSoFar ? "Дасгал руу орох →" : qi < total - 1 ? "Дараагийнх →" : "Дахин оролдох"}
           </button>
         ) : null}
