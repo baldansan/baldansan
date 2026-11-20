@@ -84,6 +84,9 @@ main = texts[0]
 main["writingSample"] = {"title_mn": src.WRITING["title"], "zh": src.WRITING["zh"], "pinyin": src.WRITING["py"], "mn": src.WRITING["mn"]}
 main["writingPrompt_mn"] = src.WRITING["prompt"]
 
+AS = "authored (өөрсдийн зохиосон дасгал)"
+S_ = src.SAYING
+SAY = {"zh": S_["zh"], "pinyin": S_["pinyin"], "en": S_["en"], "meaning_mn": S_["meaning"], "usage_mn": S_["usage"], "example": {"zh": S_["ex"][0], "pinyin": S_["ex"][1], "mn": S_["ex"][2]}}
 n = 0
 banks = []
 sections = []
@@ -113,6 +116,29 @@ dump("texts.json", {
                         for w, g, e, ex in src.WORD_EXPL],
     "collocations": colloc_texts,
     "textExercises": {"selectWord": {"banks": banks}},
+    "grammarNotes": [{"point": g["point"], "gloss": g["mongolian"], "explanation": g["explanation"], "structure": g["structure"],
+                      "examples": [{"chinese": x, "pinyin": y, "mongolian": z} for x, y, z in g["examples"]]} for g in src.GRAMMAR],
+    "commonSaying": SAY,
+    "culture": {"title": src.CULTURE["title"], "title_mn": src.CULTURE["title_mn"], "text_mn": src.CULTURE["text"], "note_mn": src.CULTURE["note"]},
+    "workbookListening": {"answer_source": AS, "parts": [], "audio_note_mn": "Энэ хичээлд сонсголын дасгал хараахан ороогүй."},
+    "workbookReading": {"answer_source": AS, "parts": [{"part": 1, "type": "match", "instruction_mn": "选择合适的问答 (Ярианы хоёр хэсгийг тааруул). Сан A–F.",
+        "bank": src.WB_MATCH_BANK, "items": [{"n": i + 1, "q_zh": q, "answer": a} for i, (q, a, e) in enumerate(src.WB_MATCH[:5])]}]},
+    "workbookWriting": {"answer_source": AS, "parts": [
+        {"part": 1, "type": "make_sentence", "instruction_mn": "连词成句 (Үгсийг эвлүүлж өгүүлбэр болго).",
+         "items": [{"n": 6 + i, "words": w, "answer": a} for i, (w, a, e) in enumerate(src.WB_SENT)]},
+        {"part": 2, "type": "pinyin_to_char", "instruction_mn": "看拼音，写汉字 (Пиньинийг хараад ханзыг бич).",
+         "items": [{"n": 11 + i, "q_zh": q, "answer": a} for i, (q, a, e) in enumerate(src.WB_PINYIN)]}]},
+    "workbookReview": {"answer_source": AS, "type": "text_cloze", "instruction_mn": "根据课文内容填空 (Эх бичвэрийн дагуу хоосон зайг нөх).",
+        "items": [{"n": i + 1, "q_zh": q, "answers": a} for i, (q, a, e) in enumerate(src.WB_REVIEW)]},
+})
+dump("workbook.json", {
+    "listening": {"audio_available": False, "parts": [], "audio_note_mn": "Энэ хичээлд сонсголын дасгал хараахан ороогүй."},
+    "reading": {"parts": [{"part": 1, "type": "mc", "instruction_mn": "选择合适的问答 (Ярианы хоёр хэсгийг тааруул). Сан A–F.",
+        "items": [{"n": i + 1, "options": src.WB_MATCH_BANK, "answer": a, "question_zh": q, "explanation_mn": e} for i, (q, a, e) in enumerate(src.WB_MATCH[:5])]}]},
+    "writing": {"items": [{"n": 6 + i, "prompt_mn": "连词成句 — Үгсийг эвлүүлж өгүүлбэр болго", "words": w, "answer": a, "explanation_mn": e} for i, (w, a, e) in enumerate(src.WB_SENT)]
+        + [{"n": 11 + i, "prompt_mn": "看拼音，写汉字 — Пиньинийг хараад ханзыг бич", "question_zh": q, "answer": a, "explanation_mn": e} for i, (q, a, e) in enumerate(src.WB_PINYIN)]},
+    "review": {"items": [{"n": i + 1, "prompt_mn": "根据课文内容填空 (Эх бичвэрийн дагуу хоосон зайг нөх).", "question_zh": q, "answer": " / ".join(a), "explanation_mn": e} for i, (q, a, e) in enumerate(src.WB_REVIEW)]},
+    "answerSource": AS,
 })
 
 dump("vocabulary.json", [{"chinese": zh, "pinyin": py, "mongolian": mn, "hskLevel": "HSK3",
@@ -159,6 +185,7 @@ dump("lesson.json", {
     "exercises_textbook": {"sections": sections},
     "collocations": colloc_lesson,
     "recap": {"teacher_mn": src.RECAP},
+    "commonSaying": SAY,
 })
 
 dump("manifest.json", {
