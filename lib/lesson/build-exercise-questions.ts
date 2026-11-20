@@ -523,11 +523,39 @@ export function exerciseSourceHasPlayerContent(
 export type ExercisePracticeSource = "textbook" | "workbook" | "both";
 
 /** Textbook + workbook steps for lesson-path practice (listening + шалгалтын дасгал). */
+function collectQuestionNumbers(questions: ExerciseQuestion[]): number[] {
+  const out: number[] = [];
+  for (const q of questions) {
+    if (q.kind === "listening_group") {
+      for (const item of q.items) if (item.n != null) out.push(item.n);
+    } else if ("n" in q && q.n != null) {
+      out.push(q.n);
+    }
+  }
+  return out;
+}
+
 export function buildMergedExerciseQuestions(lesson: HskLessonPackage): ExerciseQuestion[] {
-  return [
-    ...buildExerciseQuestions(lesson, "textbook"),
-    ...buildExerciseQuestions(lesson, "workbook"),
-  ];
+  const textbook = buildExerciseQuestions(lesson, "textbook");
+  const workbook = buildExerciseQuestions(lesson, "workbook");
+  // Сурах бичиг, дасгалын дэвтэр хоёул 1-ээс дугаарлагддаг → нэгтгэхэд дугаар давхцаж,
+  // нэг асуултын хариу нөгөөгийн дугаарыг будаж байсан. Давхцвал дэвтрийнхийг үргэлжлүүлж дугаарлана.
+  const textbookNs = collectQuestionNumbers(textbook);
+  const taken = new Set(textbookNs);
+  const collides = collectQuestionNumbers(workbook).some((n) => taken.has(n));
+  if (!collides) return [...textbook, ...workbook];
+  const offset = Math.max(...textbookNs);
+  const shifted = workbook.map((q): ExerciseQuestion => {
+    if (q.kind === "listening_group") {
+      return {
+        ...q,
+        items: q.items.map((item) => (item.n != null ? { ...item, n: item.n + offset } : item)),
+      };
+    }
+    if ("n" in q && q.n != null) return { ...q, n: q.n + offset };
+    return q;
+  });
+  return [...textbook, ...shifted];
 }
 
 export function resolveExercisePracticeSource(
