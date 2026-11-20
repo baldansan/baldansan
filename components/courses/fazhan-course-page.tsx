@@ -17,8 +17,8 @@ export async function FazhanCoursePage({ courseId }: { courseId: string }) {
   return (
     <CourseDetailAppView
       courseId={courseId}
-      title={course?.title ?? meta?.title ?? courseId}
-      subtitle={course?.subtitle ?? meta?.subtitle ?? ""}
+      title={meta?.title ?? course?.title ?? courseId}
+      subtitle={meta?.subtitle ?? course?.subtitle ?? ""}
       lessons={lessons}
     />
   );
