@@ -45,6 +45,10 @@ export function WriteRound({ word, meaning, onDone }: Props) {
   const hintsRef = useRef(0);
   const shownRef = useRef(false);
   const finishedRef = useRef(false);
+  /** Ханз солигдох бүрт нэмэгдэнэ — хуучин ханзны хоцорсон callback-ийг үл тооно. */
+  const tokenRef = useRef(0);
+  const totalRef = useRef(0);
+  const [retrying, setRetrying] = useState(false);
 
   const finish = () => {
     if (finishedRef.current) return;
@@ -69,6 +73,8 @@ export function WriteRound({ word, meaning, onDone }: Props) {
     let cancelled = false;
     const char = chars[index];
     writerRef.current = null;
+    tokenRef.current += 1;
+    setRetrying(false);
     setState("loading");
     setStrokes({ done: 0, total: 0 });
 
@@ -102,6 +108,7 @@ export function WriteRound({ word, meaning, onDone }: Props) {
         charDataLoader: localHanziCharDataLoader,
       });
       writerRef.current = writer;
+      totalRef.current = total;
       setStrokes({ done: 0, total });
       setState("draw");
       void writer.quiz({
@@ -145,10 +152,37 @@ export function WriteRound({ word, meaning, onDone }: Props) {
     void writer.animateCharacter();
   }
 
+  /** «Харуулсны» дараа: ханзыг нууж, сурагч өөрөө нэг удаа зурж үзнэ (үг дараа дахин ирсээр байна). */
+  async function retryAfterShown() {
+    const writer = writerRef.current;
+    if (!writer || state !== "shown") return;
+    const token = tokenRef.current;
+    const total = totalRef.current;
+    await writer.hideCharacter({ duration: 150 });
+    if (token !== tokenRef.current) return;
+    setRetrying(true);
+    setStrokes({ done: 0, total });
+    setState("draw");
+    void writer.quiz({
+      leniency: 1.25,
+      showHintAfterMisses: 2,
+      markStrokeCorrectAfterMisses: 6,
+      highlightOnComplete: true,
+      onCorrectStroke: (data: { strokeNum: number }) => {
+        setStrokes({ done: data.strokeNum + 1, total });
+      },
+      onComplete: () => {
+        window.setTimeout(() => {
+          if (token === tokenRef.current) advance();
+        }, 650);
+      },
+    });
+  }
+
   return (
     <section className="rounded-3xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
       <p className="text-center text-xs font-semibold text-slate-500">
-        {tr(locale, "Утгыг хараад ханзыг санаж зур")}
+        {retrying ? tr(locale, "Сая харснаа одоо өөрөө зур") : tr(locale, "Утгыг хараад ханзыг санаж зур")}
       </p>
       <p className="mt-2 text-center text-xl font-extrabold text-slate-900" translate="no">
         {meaning}
@@ -226,10 +260,10 @@ export function WriteRound({ word, meaning, onDone }: Props) {
       {state === "done" ? null : state === "shown" ? (
         <button
           type="button"
-          onClick={advance}
+          onClick={() => void retryAfterShown()}
           className="mt-3 w-full rounded-full bg-emerald-600 py-3.5 text-base font-extrabold text-white"
         >
-          {tr(locale, "Үргэлжлүүлэх")}
+          ✍️ {tr(locale, "Одоо өөрөө зураад үз")}
         </button>
       ) : (
         <button
@@ -238,7 +272,7 @@ export function WriteRound({ word, meaning, onDone }: Props) {
           onClick={showAnswer}
           className="mt-3 w-full rounded-full bg-slate-100 py-3 text-sm font-bold text-slate-600 disabled:opacity-40"
         >
-          {tr(locale, "Санахгүй байна — харуулах")}
+          {retrying ? tr(locale, "Дахин харах") : tr(locale, "Санахгүй байна — харуулах")}
         </button>
       )}
     </section>
