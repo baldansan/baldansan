@@ -503,6 +503,7 @@
     "explanation_wrong_mn": "Шалтгаан нь менежер өнөөдөр байхгүй."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Манай оффис» (我们的办公室)",
    "zh": "我在一家公司工作，经理是一个很年轻的人。今天他不在，看来会议后天才能开。我把会议地点写好，发给了每一位同事。小张请假了，我怕工作做不完，就请别人帮忙。对我来说，工作很重要，但是家人更重要。",
@@ -1017,7 +1018,8 @@
      "explanation_correct_mn": "Зөв. «声音有点儿小，听不清楚» — дуу намуу, тод биш.",
      "explanation_wrong_mn": "Дуу сонсогдсон ч намуу байсан."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/text2.mp3"
   },
   {
    "id": 3,
@@ -1649,7 +1651,8 @@
      "explanation_correct_mn": "Зөв. «经理还没回来呢，下周才能开会» — маргааш хурал болохгүй.",
      "explanation_wrong_mn": "Менежер ирээгүй тул ирэх долоо хоногт хуралдана."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/text3.mp3"
   },
   {
    "id": 4,
@@ -2166,7 +2169,8 @@
      "explanation_correct_mn": "Зөв. «对我来说，生活也很重要» — амьдрал, гэр бүл нь тэр чухал.",
      "explanation_wrong_mn": "Исюэ амьдралыг (гэр бүлийг) чухалчилдаг."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2601,7 +2605,8 @@
        "E": "зураг: хүн ширээний ард и-мэйл бичиж байна",
        "F": "зураг: хүн ажлаас гарч байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb01.mp3"
      },
      {
       "n": 2,
@@ -2615,7 +2620,8 @@
        "E": "зураг: хүн ширээний ард и-мэйл бичиж байна",
        "F": "зураг: хүн ажлаас гарч байна"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb02.mp3"
      },
      {
       "n": 3,
@@ -2629,7 +2635,8 @@
        "E": "зураг: хүн ширээний ард и-мэйл бичиж байна",
        "F": "зураг: хүн ажлаас гарч байна"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb03.mp3"
      }
     ]
    },
@@ -2647,7 +2654,8 @@
        "B": "听音乐会",
        "C": "问别人事情"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb04.mp3"
      },
      {
       "n": 5,
@@ -2658,7 +2666,8 @@
        "B": "她今天结婚",
        "C": "她姐姐结婚"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb05.mp3"
      },
      {
       "n": 6,
@@ -2669,7 +2678,8 @@
        "B": "买电脑",
        "C": "买手机"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb06.mp3"
      }
     ]
    },
@@ -2687,7 +2697,8 @@
        "B": "非常想结婚",
        "C": "对自己不满意"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb07.mp3"
      },
      {
       "n": 8,
@@ -2698,7 +2709,8 @@
        "B": "参加会议",
        "C": "跟朋友喝茶"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb08.mp3"
      },
      {
       "n": 9,
@@ -2709,7 +2721,8 @@
        "B": "每天很早睡觉",
        "C": "觉得上网挺累的"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb09.mp3"
      },
      {
       "n": 10,
@@ -2720,12 +2733,12 @@
        "B": "要去医院",
        "C": "想去看电影"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

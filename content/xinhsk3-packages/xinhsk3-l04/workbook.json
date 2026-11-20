@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -20,7 +20,8 @@
        "F": "зураг: оройн хоол иж буй гэр бүл"
       },
       "answer": "B",
-      "explanation_mn": "Онгоц хоёр цаг хоцорсон тул онгоцны буудалд хүлээнэ, зураг B."
+      "explanation_mn": "Онгоц хоёр цаг хоцорсон тул онгоцны буудалд хүлээнэ, зураг B.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb01.mp3"
      },
      {
       "n": 2,
@@ -35,7 +36,8 @@
        "F": "зураг: оройн хоол иж буй гэр бүл"
       },
       "answer": "C",
-      "explanation_mn": "Зочид буудал, далайд ойр, өрөө том цэвэрхэн, зураг C."
+      "explanation_mn": "Зочид буудал, далайд ойр, өрөө том цэвэрхэн, зураг C.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb02.mp3"
      },
      {
       "n": 3,
@@ -50,7 +52,8 @@
        "F": "зураг: оройн хоол иж буй гэр бүл"
       },
       "answer": "A",
-      "explanation_mn": "Тал нутагт морь унасан, зураг A."
+      "explanation_mn": "Тал нутагт морь унасан, зураг A.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb03.mp3"
      }
     ]
    },
@@ -69,7 +72,8 @@
        "C": "第三次"
       },
       "answer": "A",
-      "explanation_mn": "«除了我以外，别的人都是第一次» — ярьж буй хүнээс бусад бүгд анх удаа очсон."
+      "explanation_mn": "«除了我以外，别的人都是第一次» — ярьж буй хүнээс бусад бүгд анх удаа очсон.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb04.mp3"
      },
      {
       "n": 5,
@@ -81,7 +85,8 @@
        "C": "五点一刻"
       },
       "answer": "C",
-      "explanation_mn": "«五点一刻才能起飞» — 5:15-д л хөөрнө."
+      "explanation_mn": "«五点一刻才能起飞» — 5:15-д л хөөрнө.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb05.mp3"
      },
      {
       "n": 6,
@@ -93,7 +98,8 @@
        "C": "不太干净"
       },
       "answer": "A",
-      "explanation_mn": "«床也很舒服»; өрөө том, цэвэрхэн, хариулт A."
+      "explanation_mn": "«床也很舒服»; өрөө том, цэвэрхэн, хариулт A.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb06.mp3"
      }
     ]
    },
@@ -112,7 +118,8 @@
        "C": "看月亮"
       },
       "answer": "C",
-      "explanation_mn": "Хэлэгч тал нутагт морь унаж, сар харахаар төлөвлөжээ."
+      "explanation_mn": "Хэлэгч тал нутагт морь унаж, сар харахаар төлөвлөжээ.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb07.mp3"
      },
      {
       "n": 8,
@@ -124,7 +131,8 @@
        "C": "飞机晚点了"
       },
       "answer": "A",
-      "explanation_mn": "«我们的车路上坏了» — машин замдаа эвдэрсэн тул онгоцонд амжаагүй."
+      "explanation_mn": "«我们的车路上坏了» — машин замдаа эвдэрсэн тул онгоцонд амжаагүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb08.mp3"
      },
      {
       "n": 9,
@@ -136,7 +144,8 @@
        "C": "拍了很多照片"
       },
       "answer": "B",
-      "explanation_mn": "Сяо Ли тал нутагт өссөн, өчигдөр анх удаа далай харсан тул баярласан."
+      "explanation_mn": "Сяо Ли тал нутагт өссөн, өчигдөр анх удаа далай харсан тул баярласан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb09.mp3"
      },
      {
       "n": 10,
@@ -148,12 +157,12 @@
        "C": "相机不见了"
       },
       "answer": "C",
-      "explanation_mn": "«发现相机不见了» — камер алга болсныг анзаарсан."
+      "explanation_mn": "«发现相机不见了» — камер алга болсныг анзаарсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

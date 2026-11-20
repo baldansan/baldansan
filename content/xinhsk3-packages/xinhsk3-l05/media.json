@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-hero.webp",
+   "title": "5-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l05-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w1.webp",
+   "title": "太阳 tàiyáng — нар",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w2.webp",
+   "title": "爬山 pá shān — ууланд авирах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w3.webp",
+   "title": "鞋 xié — гутал",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w4.webp",
+   "title": "拍照 pāizhào — зураг авах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w5.webp",
+   "title": "音乐 yīnyuè — хөгжим",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l05/l05-w6.webp",
+   "title": "树 shù — мод",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

@@ -527,6 +527,7 @@
     "explanation_wrong_mn": "Яриан дээр «让她试一下» гэсэн: дугуйг нь туршуулахын тулд."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Дэлгүүр хэсэх өдөр» (逛商场的一天)",
    "zh": "今天我和妈妈去商场买东西。我想买一条裙子，黄色的短裤也很好看，但是裙子比短裤更好看，大小也合适。裙子比短裤贵一点儿，可是我很喜欢，就决定买裙子了。后来我们又买了西瓜，西瓜不但新鲜，而且甜极了。我们走着回家，高兴极了。",
@@ -994,7 +995,8 @@
      "explanation_correct_mn": "Зөв. 480 - 400 = 80, банзал 80 юанийн илүү үнэтэй.",
      "explanation_wrong_mn": "480-аас 400-ыг хасвал 80."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/text2.mp3"
   },
   {
    "id": 3,
@@ -1518,7 +1520,8 @@
      "explanation_correct_mn": "Зөв. 58.5 - 55 = 3.5, тиймээс 3.5 юань хямдруулсан.",
      "explanation_wrong_mn": "58.5-аас 55 хасвал 3.5."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/text3.mp3"
   },
   {
    "id": 4,
@@ -2006,7 +2009,8 @@
      "explanation_correct_mn": "Зөв. «这个电视是我们结婚时买的».",
      "explanation_wrong_mn": "Текстэд «结婚时买的» гэж бичсэн."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2438,7 +2442,8 @@
        "B": "зураг: хоёр хүн ширээ сонгож байна",
        "C": "зураг: хоёр хүн дугуй үзэж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb01.mp3"
      },
      {
       "n": 2,
@@ -2449,7 +2454,8 @@
        "B": "зураг: хоёр хүн ширээ сонгож байна",
        "C": "зураг: хоёр хүн дугуй үзэж байна"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb02.mp3"
      },
      {
       "n": 3,
@@ -2460,7 +2466,8 @@
        "B": "зураг: хоёр хүн ширээ сонгож байна",
        "C": "зураг: хоёр хүн дугуй үзэж байна"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb03.mp3"
      }
     ]
    },
@@ -2478,7 +2485,8 @@
        "B": "不太新鲜",
        "C": "昨天买的"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb04.mp3"
      },
      {
       "n": 5,
@@ -2489,7 +2497,8 @@
        "B": "颜色好看",
        "C": "大小不合适"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb05.mp3"
      },
      {
       "n": 6,
@@ -2500,7 +2509,8 @@
        "B": "选空调",
        "C": "办信用卡"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb06.mp3"
      }
     ]
    },
@@ -2518,7 +2528,8 @@
        "B": "不太甜",
        "C": "不便宜"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb07.mp3"
      },
      {
       "n": 8,
@@ -2529,7 +2540,8 @@
        "B": "二十五块七毛",
        "C": "三十五块七毛"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb08.mp3"
      },
      {
       "n": 9,
@@ -2540,7 +2552,8 @@
        "B": "人很多",
        "C": "水果很多"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb09.mp3"
      },
      {
       "n": 10,
@@ -2551,12 +2564,12 @@
        "B": "去找手机了",
        "C": "去买水果了"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

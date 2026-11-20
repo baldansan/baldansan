@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -17,7 +17,8 @@
        "C": "зураг: хүн эмийн хайрцаг барьж байна"
       },
       "answer": "A",
-      "explanation_mn": "«体育馆», «打球» — спорт заалны тухай."
+      "explanation_mn": "«体育馆», «打球» — спорт заалны тухай.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb01.mp3"
      },
      {
       "n": 2,
@@ -29,7 +30,8 @@
        "C": "зураг: хүн эмийн хайрцаг барьж байна"
       },
       "answer": "B",
-      "explanation_mn": "«腿一直很疼», «我给你检查一下» — эмч хөлийг шалгаж байна."
+      "explanation_mn": "«腿一直很疼», «我给你检查一下» — эмч хөлийг шалгаж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb02.mp3"
      },
      {
       "n": 3,
@@ -41,7 +43,8 @@
        "C": "зураг: хүн эмийн хайрцаг барьж байна"
       },
       "answer": "C",
-      "explanation_mn": "«开的几种药» — эмийн тухай."
+      "explanation_mn": "«开的几种药» — эмийн тухай.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb03.mp3"
      }
     ]
    },
@@ -60,7 +63,8 @@
        "C": "看病"
       },
       "answer": "B",
-      "explanation_mn": "«医生让你明天出院» — маргааш эмнэлгээс гарна."
+      "explanation_mn": "«医生让你明天出院» — маргааш эмнэлгээс гарна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb04.mp3"
      },
      {
       "n": 5,
@@ -72,7 +76,8 @@
        "C": "去医院了"
       },
       "answer": "A",
-      "explanation_mn": "Эр «还可以» гэж хариулсан; өвдсөн нь өнгөрсөн сард."
+      "explanation_mn": "Эр «还可以» гэж хариулсан; өвдсөн нь өнгөрсөн сард.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb05.mp3"
      },
      {
       "n": 6,
@@ -84,7 +89,8 @@
        "C": "在家休息一周"
       },
       "answer": "C",
-      "explanation_mn": "«出院以后还得在家休息一周»."
+      "explanation_mn": "«出院以后还得在家休息一周».",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb06.mp3"
      }
     ]
    },
@@ -103,7 +109,8 @@
        "C": "现在会跑步和游泳"
       },
       "answer": "C",
-      "explanation_mn": "Ах бөхийн тухай: тарган болоод гүйж, сэлж сурсан."
+      "explanation_mn": "Ах бөхийн тухай: тарган болоод гүйж, сэлж сурсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb07.mp3"
      },
      {
       "n": 8,
@@ -115,7 +122,8 @@
        "C": "回学校了"
       },
       "answer": "C",
-      "explanation_mn": "Багш нэг долоо хоног гаруй амраад сургуульд буцаж ирсэн."
+      "explanation_mn": "Багш нэг долоо хоног гаруй амраад сургуульд буцаж ирсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb08.mp3"
      },
      {
       "n": 9,
@@ -127,7 +135,8 @@
        "C": "晚上睡得不好"
       },
       "answer": "B",
-      "explanation_mn": "«不但耳朵疼，而且头也开始疼了»."
+      "explanation_mn": "«不但耳朵疼，而且头也开始疼了».",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb09.mp3"
      },
      {
       "n": 10,
@@ -139,12 +148,12 @@
        "C": "不要自己吃药"
       },
       "answer": "C",
-      "explanation_mn": "«不要自己在家吃药» — өөрөө эм бүү уу."
+      "explanation_mn": "«不要自己在家吃药» — өөрөө эм бүү уу.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

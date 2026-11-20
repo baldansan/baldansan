@@ -13,8 +13,8 @@
  "title": "我是半个南京人",
  "mongolianTitle": "Би хагас нанкинчуул",
  "source": "新HSK教程3 (外研社, HSK 3.0) — 15-р хичээл: үг, 课文, дүрэм, дасгал сурах бичиг + 学练手册 + PPT-ээс; монгол орчуулга, тайлбар «Бөөндөө Сурцгаая»",
- "hasAudio": false,
- "hasImages": false,
+ "hasAudio": true,
+ "hasImages": true,
  "verification": {
   "answerStatus": "textbook+ppt (OCR; хүн шалгаагүй)",
   "textStatus": "textbook (新HSK教程3 课文, OCR)"

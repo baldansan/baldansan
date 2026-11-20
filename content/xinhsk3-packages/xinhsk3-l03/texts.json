@@ -476,6 +476,7 @@
     "explanation_wrong_mn": "Лю Мин «带一个小花园» гэж шалтгаанаа хэлсэн."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Миний нүүсэн өдөр» (我搬家的那天)",
    "zh": "我们上个月搬家了。新家的小区环境挺好的，还有一个小花园。搬家前，我们买了很多纸箱，准备了一个星期。搬家那天，朋友们来帮忙，一天就搬完了。我累坏了，可是很高兴。新家的灯、空调和冰箱都是新的，只是卫生间没打扫好，我们打扫了很久才好。",
@@ -987,7 +988,8 @@
      "explanation_correct_mn": "Зөв. «卫生间没打扫好，还不能洗衣服» гэж хэлсэн.",
      "explanation_wrong_mn": "Угаалгын машин «没坏». Шалтгаан нь жорлон цэвэрлэгдээгүй."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/text2.mp3"
   },
   {
    "id": 3,
@@ -1526,7 +1528,8 @@
      "explanation_correct_mn": "Зөв. «我下午要去医院，很晚才能回来» — эмнэлэг явна.",
      "explanation_wrong_mn": "Лю Мин «我下午要去医院» гэж шалтгаанаа хэлсэн."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/text3.mp3"
   },
   {
    "id": 4,
@@ -2036,7 +2039,8 @@
      "explanation_correct_mn": "Зөв. Лю Мин найзуудаа урина, Исюэ нүүлгэн шилжүүлэх компани олохыг хүснэ.",
      "explanation_wrong_mn": "Лю Мин «请几位朋友», Исюэ «找一家搬家公司» гэсэн."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2440,7 +2444,8 @@
        "B": "зураг: хүн хаалга түлхэж байна",
        "C": "зураг: хүн ширээний ард хоол идэж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb01.mp3"
      },
      {
       "n": 2,
@@ -2451,7 +2456,8 @@
        "B": "зураг: хүн ном уншиж байна",
        "C": "зураг: хоёр хүн цонх нээж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb02.mp3"
      },
      {
       "n": 3,
@@ -2462,7 +2468,8 @@
        "B": "зураг: хүн ном уншиж байна",
        "C": "зураг: хоёр хүн тэмдэглэл бичиж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb03.mp3"
      }
     ]
    },
@@ -2480,7 +2487,8 @@
        "B": "买手机",
        "C": "办信用卡"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb04.mp3"
      },
      {
       "n": 5,
@@ -2491,7 +2499,8 @@
        "B": "还能用",
        "C": "是新买的"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb05.mp3"
      },
      {
       "n": 6,
@@ -2502,7 +2511,8 @@
        "B": "现在没人住",
        "C": "能马上搬进去"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb06.mp3"
      }
     ]
    },
@@ -2520,7 +2530,8 @@
        "B": "孩子上高中了",
        "C": "家离商场太近"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb07.mp3"
      },
      {
       "n": 8,
@@ -2531,7 +2542,8 @@
        "B": "休息",
        "C": "准备搬家的东西"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb08.mp3"
      },
      {
       "n": 9,
@@ -2542,7 +2554,8 @@
        "B": "买东西能便宜点儿",
        "C": "想在手机上买东西"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb09.mp3"
      },
      {
       "n": 10,
@@ -2553,12 +2566,12 @@
        "B": "每个月都要还钱",
        "C": "银行离家挺远的"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

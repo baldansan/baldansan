@@ -500,6 +500,7 @@
     "explanation_wrong_mn": "Далайд дургүй биш, одоо хүйтэн тул явмааргүй байсан."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Миний амралтын төлөвлөгөө» (我的假期计划)",
    "zh": "这个假期我想和朋友去草原玩。我们坐飞机去，星期六上午十点一刻起飞。草原上的宾馆很特别，跟别的都不一样，一出门就能看见牛和羊。除了骑马以外，我们还要吃羊肉、看月亮。这个主意朋友们都很满意，我一定要带上相机，拍很多照片。",
@@ -1056,7 +1057,8 @@
      "explanation_correct_mn": "Зөв. «星期六上午十点一刻起飞» — бямба гарагийн 10:15.",
      "explanation_wrong_mn": "Яриаг дахин уншаарай: бямба гарагийн өглөө 10:15-д хөөрнө."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/text2.mp3"
   },
   {
    "id": 3,
@@ -1640,7 +1642,8 @@
      "explanation_correct_mn": "Зөв. Сяо Ли «不远，三十分钟就能到» гэсэн.",
      "explanation_wrong_mn": "Хол биш: гучин минутаар хүрнэ."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/text3.mp3"
   },
   {
    "id": 4,
@@ -2073,7 +2076,8 @@
      "explanation_correct_mn": "Зөв. «又大又干净，我非常满意» — том, цэвэрхэн.",
      "explanation_wrong_mn": "Өрөө том бөгөөд цэвэрхэн, Ван Ифэй маш сэтгэл хангалуун."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2480,7 +2484,8 @@
        "E": "зураг: машинд сууж яваа жолооч",
        "F": "зураг: оройн хоол иж буй гэр бүл"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb01.mp3"
      },
      {
       "n": 2,
@@ -2494,7 +2499,8 @@
        "E": "зураг: машинд сууж яваа жолооч",
        "F": "зураг: оройн хоол иж буй гэр бүл"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb02.mp3"
      },
      {
       "n": 3,
@@ -2508,7 +2514,8 @@
        "E": "зураг: машинд сууж яваа жолооч",
        "F": "зураг: оройн хоол иж буй гэр бүл"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb03.mp3"
      }
     ]
    },
@@ -2526,7 +2533,8 @@
        "B": "第二次",
        "C": "第三次"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb04.mp3"
      },
      {
       "n": 5,
@@ -2537,7 +2545,8 @@
        "B": "四点",
        "C": "五点一刻"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb05.mp3"
      },
      {
       "n": 6,
@@ -2548,7 +2557,8 @@
        "B": "房间不大",
        "C": "不太干净"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb06.mp3"
      }
     ]
    },
@@ -2566,7 +2576,8 @@
        "B": "去海边",
        "C": "看月亮"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb07.mp3"
      },
      {
       "n": 8,
@@ -2577,7 +2588,8 @@
        "B": "走错路了",
        "C": "飞机晚点了"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb08.mp3"
      },
      {
       "n": 9,
@@ -2588,7 +2600,8 @@
        "B": "看见大海了",
        "C": "拍了很多照片"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb09.mp3"
      },
      {
       "n": 10,
@@ -2599,12 +2612,12 @@
        "B": "照片不好看",
        "C": "相机不见了"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l04/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -17,7 +17,8 @@
        "C": "зураг: хоёр хүн дугуй үзэж байна"
       },
       "answer": "A",
-      "explanation_mn": "Яриа банзлын өнгө, үнийн тухай. Тиймээс банзал сонгож байгаа зураг."
+      "explanation_mn": "Яриа банзлын өнгө, үнийн тухай. Тиймээс банзал сонгож байгаа зураг.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb01.mp3"
      },
      {
       "n": 2,
@@ -29,7 +30,8 @@
        "C": "зураг: хоёр хүн дугуй үзэж байна"
       },
       "answer": "B",
-      "explanation_mn": "Яриа ширээний хэмжээ, өндрийн тухай (张桌子). Ширээ сонгож байна."
+      "explanation_mn": "Яриа ширээний хэмжээ, өндрийн тухай (张桌子). Ширээ сонгож байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb02.mp3"
      },
      {
       "n": 3,
@@ -41,7 +43,8 @@
        "C": "зураг: хоёр хүн дугуй үзэж байна"
       },
       "answer": "C",
-      "explanation_mn": "«Энэ дугуй сайн, хуучин дугуйнаас бүр сайхан» — дугуй үзэж байна."
+      "explanation_mn": "«Энэ дугуй сайн, хуучин дугуйнаас бүр сайхан» — дугуй үзэж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb03.mp3"
      }
     ]
    },
@@ -60,7 +63,8 @@
        "C": "昨天买的"
       },
       "answer": "A",
-      "explanation_mn": "«甜极了» — маш чихэрлэг. Шинэхэн, өнөөдөр үдээс хойш авсан."
+      "explanation_mn": "«甜极了» — маш чихэрлэг. Шинэхэн, өнөөдөр үдээс хойш авсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb04.mp3"
      },
      {
       "n": 5,
@@ -72,7 +76,8 @@
        "C": "大小不合适"
       },
       "answer": "A",
-      "explanation_mn": "Эр «这条穿着不舒服» гэсэн: өмсөхөд эвгүй."
+      "explanation_mn": "Эр «这条穿着不舒服» гэсэн: өмсөхөд эвгүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb05.mp3"
      },
      {
       "n": 6,
@@ -84,7 +89,8 @@
        "C": "办信用卡"
       },
       "answer": "B",
-      "explanation_mn": "Хоёр кондиционерээс нэгийг сонгож байна."
+      "explanation_mn": "Хоёр кондиционерээс нэгийг сонгож байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb06.mp3"
      }
     ]
    },
@@ -103,7 +109,8 @@
        "C": "不便宜"
       },
       "answer": "A",
-      "explanation_mn": "«不但新鲜，而且比昨天更便宜» — шинэхэн бөгөөд хямд."
+      "explanation_mn": "«不但新鲜，而且比昨天更便宜» — шинэхэн бөгөөд хямд.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb07.mp3"
      },
      {
       "n": 8,
@@ -115,7 +122,8 @@
        "C": "三十五块七毛"
       },
       "answer": "C",
-      "explanation_mn": "10 + 25.7 = 35.7 юань."
+      "explanation_mn": "10 + 25.7 = 35.7 юань.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb08.mp3"
      },
      {
       "n": 9,
@@ -127,7 +135,8 @@
        "C": "水果很多"
       },
       "answer": "B",
-      "explanation_mn": "«不但大，而且人很多» — том бөгөөд хүн олонтой."
+      "explanation_mn": "«不但大，而且人很多» — том бөгөөд хүн олонтой.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb09.mp3"
      },
      {
       "n": 10,
@@ -139,12 +148,12 @@
        "C": "去买水果了"
       },
       "answer": "A",
-      "explanation_mn": "Найз нь өөр хүний араас дагаж, «他以为是我» — хүнээ андуурсан."
+      "explanation_mn": "Найз нь өөр хүний араас дагаж, «他以为是我» — хүнээ андуурсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l07/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

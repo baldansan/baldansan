@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -20,7 +20,8 @@
        "F": "зураг: оффист утсаар ярьж байна"
       },
       "answer": "B",
-      "explanation_mn": "Камер эвдэрсэн тул гунигтай, зураг B."
+      "explanation_mn": "Камер эвдэрсэн тул гунигтай, зураг B.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb01.mp3"
      },
      {
       "n": 2,
@@ -35,7 +36,8 @@
        "F": "зураг: оффист утсаар ярьж байна"
       },
       "answer": "A",
-      "explanation_mn": "Нар гарсан, цэлмэг өдөр гадаа алхана, зураг A."
+      "explanation_mn": "Нар гарсан, цэлмэг өдөр гадаа алхана, зураг A.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb02.mp3"
      },
      {
       "n": 3,
@@ -50,7 +52,8 @@
        "F": "зураг: оффист утсаар ярьж байна"
       },
       "answer": "C",
-      "explanation_mn": "Гутал авах гэж байна, гутлын дэлгүүр, зураг C."
+      "explanation_mn": "Гутал авах гэж байна, гутлын дэлгүүр, зураг C.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb03.mp3"
      }
     ]
    },
@@ -69,7 +72,8 @@
        "C": "比较个子"
       },
       "answer": "A",
-      "explanation_mn": "Тэд Сяо Лиг хүлээж байна, ирж буй хүн мөн эсэхийг шалгана."
+      "explanation_mn": "Тэд Сяо Лиг хүлээж байна, ирж буй хүн мөн эсэхийг шалгана.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb04.mp3"
      },
      {
       "n": 5,
@@ -81,7 +85,8 @@
        "C": "看电影"
       },
       "answer": "B",
-      "explanation_mn": "Кино дууссан, «我请你吃饭» — хоол идэхээр явна."
+      "explanation_mn": "Кино дууссан, «我请你吃饭» — хоол идэхээр явна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb05.mp3"
      },
      {
       "n": 6,
@@ -93,7 +98,8 @@
        "C": "他照相水平很高"
       },
       "answer": "C",
-      "explanation_mn": "«他的照相水平很高» — түвшин өндөр тул. Камер нь түүний биш, эмэгтэйнх."
+      "explanation_mn": "«他的照相水平很高» — түвшин өндөр тул. Камер нь түүний биш, эмэгтэйнх.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb06.mp3"
      }
     ]
    },
@@ -112,7 +118,8 @@
        "C": "没给她写邮件"
       },
       "answer": "A",
-      "explanation_mn": "«我的电脑坏了» — компьютер эвдэрсэн."
+      "explanation_mn": "«我的电脑坏了» — компьютер эвдэрсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb07.mp3"
      },
      {
       "n": 8,
@@ -124,7 +131,8 @@
        "C": "买大衣"
       },
       "answer": "B",
-      "explanation_mn": "«你们去爬山的时候» — тэд уул авирна."
+      "explanation_mn": "«你们去爬山的时候» — тэд уул авирна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb08.mp3"
      },
      {
       "n": 9,
@@ -136,7 +144,8 @@
        "C": "照片里的人太少"
       },
       "answer": "A",
-      "explanation_mn": "Хэлэгч зургуудад сэтгэл дундуур: «照得不太好», «难看得很»."
+      "explanation_mn": "Хэлэгч зургуудад сэтгэл дундуур: «照得不太好», «难看得很».",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb09.mp3"
      },
      {
       "n": 10,
@@ -148,12 +157,12 @@
        "C": "先告诉自己一下"
       },
       "answer": "C",
-      "explanation_mn": "«下次拍照前，你跟我说一下» — зураг авахаасаа өмнө хэлээрэй."
+      "explanation_mn": "«下次拍照前，你跟我说一下» — зураг авахаасаа өмнө хэлээрэй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l05/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

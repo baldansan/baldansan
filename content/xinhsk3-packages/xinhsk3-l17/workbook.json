@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -17,7 +17,8 @@
        "C": "зураг: хүн оффист ажиллаж байна"
       },
       "answer": "A",
-      "explanation_mn": "Яриа «утас унтарсан, цэнэггүй» тул утсаа харж буй зураг."
+      "explanation_mn": "Яриа «утас унтарсан, цэнэггүй» тул утсаа харж буй зураг.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb01.mp3"
      },
      {
       "n": 2,
@@ -29,7 +30,8 @@
        "C": "зураг: хүн хоол хийж байна"
       },
       "answer": "B",
-      "explanation_mn": "«屋子里还没打扫好» — өрөө цэвэрлэгдээгүй, цэвэрлэж байна."
+      "explanation_mn": "«屋子里还没打扫好» — өрөө цэвэрлэгдээгүй, цэвэрлэж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb02.mp3"
      },
      {
       "n": 3,
@@ -41,7 +43,8 @@
        "C": "зураг: хүн давж гарч байна"
       },
       "answer": "A",
-      "explanation_mn": "«很害怕，不想看这个电影» — киноноос айж буй хүн."
+      "explanation_mn": "«很害怕，不想看这个电影» — киноноос айж буй хүн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb03.mp3"
      }
     ]
    },
@@ -60,7 +63,8 @@
        "C": "客人不会满意"
       },
       "answer": "C",
-      "explanation_mn": "Эмэгтэй «客人是不会满意的» гэсэн — зочид сэтгэл ханахгүй."
+      "explanation_mn": "Эмэгтэй «客人是不会满意的» гэсэн — зочид сэтгэл ханахгүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb04.mp3"
      },
      {
       "n": 5,
@@ -72,7 +76,8 @@
        "C": "经理都同意了"
       },
       "answer": "C",
-      "explanation_mn": "«经理都同意了» гэж шууд хэлсэн."
+      "explanation_mn": "«经理都同意了» гэж шууд хэлсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb05.mp3"
      },
      {
       "n": 6,
@@ -84,7 +89,8 @@
        "C": "对工作不满意"
       },
       "answer": "A",
-      "explanation_mn": "«他就是牙有点疼» — шүд өвдөж байна."
+      "explanation_mn": "«他就是牙有点疼» — шүд өвдөж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb06.mp3"
      }
     ]
    },
@@ -103,7 +109,8 @@
        "C": "快点儿回答"
       },
       "answer": "A",
-      "explanation_mn": "«你别害怕» — битгий ай."
+      "explanation_mn": "«你别害怕» — битгий ай.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb07.mp3"
      },
      {
       "n": 8,
@@ -115,7 +122,8 @@
        "C": "拿很多东西时"
       },
       "answer": "C",
-      "explanation_mn": "«只有拿很多东西时，才会坐电梯» — зөвхөн их юм барьсан үед."
+      "explanation_mn": "«只有拿很多东西时，才会坐电梯» — зөвхөн их юм барьсан үед.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb08.mp3"
      },
      {
       "n": 9,
@@ -127,7 +135,8 @@
        "C": "饺子"
       },
       "answer": "B",
-      "explanation_mn": "«会准备一些面包和饮料，还有冰激凌» — талх, ундаа."
+      "explanation_mn": "«会准备一些面包和饮料，还有冰激凌» — талх, ундаа.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb09.mp3"
      },
      {
       "n": 10,
@@ -139,12 +148,12 @@
        "C": "只有朋友才能一起玩"
       },
       "answer": "B",
-      "explanation_mn": "«打球打累了…再吃个冰激凌» — ядарвал зайрмаг идэж болно. Тэмцээн «经常» (байнга), «每天» биш."
+      "explanation_mn": "«打球打累了…再吃个冰激凌» — ядарвал зайрмаг идэж болно. Тэмцээн «经常» (байнга), «每天» биш.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l17/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

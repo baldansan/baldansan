@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -20,7 +20,8 @@
        "F": "зураг: хүмүүс ресторанд хооллож байна"
       },
       "answer": "A",
-      "explanation_mn": "«在房间里做游戏» — өрөөнд тоглоом тоглож байна. Хариу A."
+      "explanation_mn": "«在房间里做游戏» — өрөөнд тоглоом тоглож байна. Хариу A.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb01.mp3"
      },
      {
       "n": 2,
@@ -35,7 +36,8 @@
        "F": "зураг: хүмүүс ресторанд хооллож байна"
       },
       "answer": "B",
-      "explanation_mn": "«景点», «外地游客», «照几张照片» — үзмэр газар жуулчид зураг авч байна. Хариу B."
+      "explanation_mn": "«景点», «外地游客», «照几张照片» — үзмэр газар жуулчид зураг авч байна. Хариу B.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb02.mp3"
      },
      {
       "n": 3,
@@ -50,7 +52,8 @@
        "F": "зураг: хүмүүс ресторанд хооллож байна"
       },
       "answer": "C",
-      "explanation_mn": "«在草地上教孩子们画画» — зүлэг дээр хүүхдэд зураг зурж заана. Хариу C."
+      "explanation_mn": "«在草地上教孩子们画画» — зүлэг дээр хүүхдэд зураг зурж заана. Хариу C.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb03.mp3"
      }
     ]
    },
@@ -69,7 +72,8 @@
        "C": "鸡蛋面"
       },
       "answer": "C",
-      "explanation_mn": "«这家饭馆的鸡蛋面很有名» — өндөгтэй гоймон алдартай."
+      "explanation_mn": "«这家饭馆的鸡蛋面很有名» — өндөгтэй гоймон алдартай.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb04.mp3"
      },
      {
       "n": 5,
@@ -81,7 +85,8 @@
        "C": "在南方上的大学"
       },
       "answer": "C",
-      "explanation_mn": "«我以前在南方上大学» — өмнөд нутагт их сургуульд сурсан. Тэр баруун хойд хүн, саяхан нүүж ирсэн."
+      "explanation_mn": "«我以前在南方上大学» — өмнөд нутагт их сургуульд сурсан. Тэр баруун хойд хүн, саяхан нүүж ирсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb05.mp3"
      },
      {
       "n": 6,
@@ -93,7 +98,8 @@
        "C": "睡觉睡多了"
       },
       "answer": "B",
-      "explanation_mn": "«现在觉得有点累» — жаахан ядарсан. Өвдөөгүй."
+      "explanation_mn": "«现在觉得有点累» — жаахан ядарсан. Өвдөөгүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb06.mp3"
      }
     ]
    },
@@ -112,7 +118,8 @@
        "C": "红茶"
       },
       "answer": "B",
-      "explanation_mn": "«夏天最好喝绿茶» — зуны шилдэг нь ногоон цай."
+      "explanation_mn": "«夏天最好喝绿茶» — зуны шилдэг нь ногоон цай.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb07.mp3"
      },
      {
       "n": 8,
@@ -124,7 +131,8 @@
        "C": "有很多游客"
       },
       "answer": "C",
-      "explanation_mn": "«很多游客会去那里旅游» — жуулчин олон. Уул байхгүй, загас нь шар."
+      "explanation_mn": "«很多游客会去那里旅游» — жуулчин олон. Уул байхгүй, загас нь шар.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb08.mp3"
      },
      {
       "n": 9,
@@ -136,7 +144,8 @@
        "C": "对身体好"
       },
       "answer": "A",
-      "explanation_mn": "«这会给他们带来很多快乐» — хөгжилтэй байдаг тул. Сурахад ч, биед ч сайнгүй."
+      "explanation_mn": "«这会给他们带来很多快乐» — хөгжилтэй байдаг тул. Сурахад ч, биед ч сайнгүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb09.mp3"
      },
      {
       "n": 10,
@@ -148,12 +157,12 @@
        "C": "玩电脑游戏"
       },
       "answer": "B",
-      "explanation_mn": "«和其他孩子在外面玩游戏…好多了» — гадаа тоглох нь дээр."
+      "explanation_mn": "«和其他孩子在外面玩游戏…好多了» — гадаа тоглох нь дээр.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

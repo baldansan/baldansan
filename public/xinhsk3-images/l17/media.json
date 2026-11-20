@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-hero.webp",
+   "title": "17-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l17-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w1.webp",
+   "title": "生气 shēngqì — уурлах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l17-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w2.webp",
+   "title": "害怕 hàipà — айх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l17-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w3.webp",
+   "title": "开心 kāixīn — баяртай",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l17-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w4.webp",
+   "title": "紧张 jǐnzhāng — сандрах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l17-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w5.webp",
+   "title": "容易 róngyì — амархан",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l17-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l17/l17-w6.webp",
+   "title": "选择 xuǎnzé — сонгох",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

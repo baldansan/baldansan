@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -20,7 +20,8 @@
        "F": "зураг: хүн ажлаас гарч байна"
       },
       "answer": "A",
-      "explanation_mn": "Аннийг Хятадаас хэзээ явсныг асууж байна, зөв зураг нь нисэх онгоц, нисэх буудал."
+      "explanation_mn": "Аннийг Хятадаас хэзээ явсныг асууж байна, зөв зураг нь нисэх онгоц, нисэх буудал.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb01.mp3"
      },
      {
       "n": 2,
@@ -35,7 +36,8 @@
        "F": "зураг: хүн ажлаас гарч байна"
       },
       "answer": "B",
-      "explanation_mn": "Шинэ зөөврийн компьютерийн тухай ярьж байна."
+      "explanation_mn": "Шинэ зөөврийн компьютерийн тухай ярьж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb02.mp3"
      },
      {
       "n": 3,
@@ -50,7 +52,8 @@
        "F": "зураг: хүн ажлаас гарч байна"
       },
       "answer": "C",
-      "explanation_mn": "Менежер хурлын танхимд хурал хийж байгаа."
+      "explanation_mn": "Менежер хурлын танхимд хурал хийж байгаа.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb03.mp3"
      }
     ]
    },
@@ -69,7 +72,8 @@
        "C": "问别人事情"
       },
       "answer": "A",
-      "explanation_mn": "Эмэгтэй «我明晚要参加一个比赛» гэсэн, концертод явахгүй."
+      "explanation_mn": "Эмэгтэй «我明晚要参加一个比赛» гэсэн, концертод явахгүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb04.mp3"
      },
      {
       "n": 5,
@@ -81,7 +85,8 @@
        "C": "她姐姐结婚"
       },
       "answer": "C",
-      "explanation_mn": "«今天她姐姐结婚» — эгчийнх нь хурим болдог."
+      "explanation_mn": "«今天她姐姐结婚» — эгчийнх нь хурим болдог.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb05.mp3"
      },
      {
       "n": 6,
@@ -93,7 +98,8 @@
        "C": "买手机"
       },
       "answer": "A",
-      "explanation_mn": "Дэлгүүр түүнд шинэ утас сольж өгөхөөр болсон, тэр үдээс хойш аваад ирнэ — утас солих."
+      "explanation_mn": "Дэлгүүр түүнд шинэ утас сольж өгөхөөр болсон, тэр үдээс хойш аваад ирнэ — утас солих.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb06.mp3"
      }
     ]
    },
@@ -112,7 +118,8 @@
        "C": "对自己不满意"
       },
       "answer": "A",
-      "explanation_mn": "Эхний өгүүлбэр «我妹妹还没结婚»."
+      "explanation_mn": "Эхний өгүүлбэр «我妹妹还没结婚».",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb07.mp3"
      },
      {
       "n": 8,
@@ -124,7 +131,8 @@
        "C": "跟朋友喝茶"
       },
       "answer": "B",
-      "explanation_mn": "Үдээс хойш чухал хурал байгаа, заавал оролцох ёстой."
+      "explanation_mn": "Үдээс хойш чухал хурал байгаа, заавал оролцох ёстой.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb08.mp3"
      },
      {
       "n": 9,
@@ -136,7 +144,8 @@
        "C": "觉得上网挺累的"
       },
       "answer": "A",
-      "explanation_mn": "Тэр унтахаасаа өмнө компьютер дээр кино үздэг."
+      "explanation_mn": "Тэр унтахаасаа өмнө компьютер дээр кино үздэг.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb09.mp3"
      },
      {
       "n": 10,
@@ -148,12 +157,12 @@
        "C": "想去看电影"
       },
       "answer": "A",
-      "explanation_mn": "«只能给经理发一封邮件请假» — чөлөө авахын тулд."
+      "explanation_mn": "«只能给经理发一封邮件请假» — чөлөө авахын тулд.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l11/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

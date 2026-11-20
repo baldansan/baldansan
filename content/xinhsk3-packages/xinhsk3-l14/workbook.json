@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -20,7 +20,8 @@
        "F": "зураг: хүн сонин уншиж байна"
       },
       "answer": "A",
-      "explanation_mn": "«词典», «图书馆借的» — толь бичиг, номын сан. Хариу A."
+      "explanation_mn": "«词典», «图书馆借的» — толь бичиг, номын сан. Хариу A.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb01.mp3"
      },
      {
       "n": 2,
@@ -35,7 +36,8 @@
        "F": "зураг: хүн сонин уншиж байна"
       },
       "answer": "B",
-      "explanation_mn": "«表演节目», «唱中文歌» — тайзан дээр дуулна. Хариу B."
+      "explanation_mn": "«表演节目», «唱中文歌» — тайзан дээр дуулна. Хариу B.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb02.mp3"
      },
      {
       "n": 3,
@@ -50,7 +52,8 @@
        "F": "зураг: хүн сонин уншиж байна"
       },
       "answer": "C",
-      "explanation_mn": "«得了第一名» — нэгдүгээр байр, шагнал авсан. Хариу C."
+      "explanation_mn": "«得了第一名» — нэгдүгээр байр, шагнал авсан. Хариу C.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb03.mp3"
      }
     ]
    },
@@ -69,7 +72,8 @@
        "C": "历史故事"
       },
       "answer": "C",
-      "explanation_mn": "Тэд «不同地方的历史故事» тоглосон — дуу биш."
+      "explanation_mn": "Тэд «不同地方的历史故事» тоглосон — дуу биш.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb04.mp3"
      },
      {
       "n": 5,
@@ -81,7 +85,8 @@
        "C": "去图书馆借书"
       },
       "answer": "A",
-      "explanation_mn": "«我现在都是用手机听书，或者看电子书» — утсаар ном сонсдог. Номын дэлгүүр рүү эрт очоогүй."
+      "explanation_mn": "«我现在都是用手机听书，或者看电子书» — утсаар ном сонсдог. Номын дэлгүүр рүү эрт очоогүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb05.mp3"
      },
      {
       "n": 6,
@@ -93,7 +98,8 @@
        "C": "参加考试"
       },
       "answer": "A",
-      "explanation_mn": "Тэр үгсийн сан хэрхэн ашиглахыг заана (хуудасны дугаараар хайх)."
+      "explanation_mn": "Тэр үгсийн сан хэрхэн ашиглахыг заана (хуудасны дугаараар хайх).",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb06.mp3"
      }
     ]
    },
@@ -112,7 +118,8 @@
        "C": "找人帮助她"
       },
       "answer": "B",
-      "explanation_mn": "«我喜欢听外语故事» — гадаад хэлний түүх сонсож сурна. Ном хааяа л уншина."
+      "explanation_mn": "«我喜欢听外语故事» — гадаад хэлний түүх сонсож сурна. Ном хааяа л уншина.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb07.mp3"
      },
      {
       "n": 8,
@@ -124,7 +131,8 @@
        "C": "被别人借走了"
       },
       "answer": "C",
-      "explanation_mn": "«都被别的班级的留学生借走了» — өөр ангийн гадаад оюутнууд зээлээд авчихсан."
+      "explanation_mn": "«都被别的班级的留学生借走了» — өөр ангийн гадаад оюутнууд зээлээд авчихсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb08.mp3"
      },
      {
       "n": 9,
@@ -136,7 +144,8 @@
        "C": "在教室里学习"
       },
       "answer": "B",
-      "explanation_mn": "«他们更喜欢在网上学习» — интернэтээр суралцахыг илүүд үздэг."
+      "explanation_mn": "«他们更喜欢在网上学习» — интернэтээр суралцахыг илүүд үздэг.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb09.mp3"
      },
      {
       "n": 10,
@@ -148,12 +157,12 @@
        "C": "让人不开心"
       },
       "answer": "A",
-      "explanation_mn": "«这样学习不但特别方便，而且也更有意思» — тохиромжтой, бас сонирхолтой."
+      "explanation_mn": "«这样学习不但特别方便，而且也更有意思» — тохиромжтой, бас сонирхолтой.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

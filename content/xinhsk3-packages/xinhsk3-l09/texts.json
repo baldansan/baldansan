@@ -512,6 +512,7 @@
     "explanation_wrong_mn": "Цзяюэ теннисний тэмцээнд оролцмоор байгаа."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Миний спорт» (我的运动)",
    "zh": "我很喜欢打网球。为了参加学校的运动会，我最近每天下课以后都去球场练习。我打得不太好，有时候球接不住，但是我越练越开心。我的朋友也常来看我，他们说我几乎每天都在进步。虽然成绩不是最重要的，但是我想得到好成绩。",
@@ -1063,7 +1064,8 @@
      "explanation_correct_mn": "Зөв. «我先自己练练吧».",
      "explanation_wrong_mn": "Цзяюэ эхлээд өөрөө дасгалжих гэж байна."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/text2.mp3"
   },
   {
    "id": 3,
@@ -1584,7 +1586,8 @@
      "explanation_correct_mn": "Зөв. «冰箱里有啤酒和饮料，我去拿一下».",
      "explanation_wrong_mn": "Вэнь шар айраг, ундаа авахаар явна."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/text3.mp3"
   },
   {
    "id": 4,
@@ -2009,7 +2012,8 @@
      "explanation_correct_mn": "Зөв. «他让世界认识了中国».",
      "explanation_wrong_mn": "Тэр амжилт гаргаагүй ч дэлхийд Хятадыг таниулсан."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2413,7 +2417,8 @@
        "B": "зураг: хөвгүүд талбай дээр бөмбөг тоглож байна",
        "C": "зураг: тамирчинтай хамт зураг авахуулах гэж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb01.mp3"
      },
      {
       "n": 2,
@@ -2424,7 +2429,8 @@
        "B": "зураг: хөвгүүд талбай дээр бөмбөг тоглож байна",
        "C": "зураг: тамирчинтай хамт зураг авахуулах гэж байна"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb02.mp3"
      },
      {
       "n": 3,
@@ -2435,7 +2441,8 @@
        "B": "зураг: хөвгүүд талбай дээр бөмбөг тоглож байна",
        "C": "зураг: тамирчинтай хамт зураг авахуулах гэж байна"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb03.mp3"
      }
     ]
    },
@@ -2453,7 +2460,8 @@
        "B": "没看完比赛",
        "C": "现在很着急"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb04.mp3"
      },
      {
       "n": 5,
@@ -2464,7 +2472,8 @@
        "B": "在公司工作",
        "C": "出国比赛了"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb05.mp3"
      },
      {
       "n": 6,
@@ -2475,7 +2484,8 @@
        "B": "别去比赛了",
        "C": "现在多练习"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb06.mp3"
      }
     ]
    },
@@ -2493,7 +2503,8 @@
        "B": "参加比赛",
        "C": "看奥运会"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb07.mp3"
      },
      {
       "n": 8,
@@ -2504,7 +2515,8 @@
        "B": "打网球",
        "C": "参加唱歌比赛"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb08.mp3"
      },
      {
       "n": 9,
@@ -2515,7 +2527,8 @@
        "B": "去商场",
        "C": "参加比赛"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb09.mp3"
      },
      {
       "n": 10,
@@ -2526,12 +2539,12 @@
        "B": "不喜欢运动",
        "C": "喜欢参加比赛"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

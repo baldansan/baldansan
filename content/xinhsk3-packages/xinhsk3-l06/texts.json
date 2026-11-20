@@ -556,6 +556,7 @@
     "explanation_wrong_mn": "Ли Вэнь утасны аппаар, паспортоор авч өгнө."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Өндөр хурдны галт тэргээр аялсан нь» (坐高铁去上海)",
    "zh": "这次放假，我和朋友坐高铁去了上海。我们打算早点儿出门，因为路上的车越来越多，如果迟到就不能上车了。到了高铁站，我们先检查了护照，再刷护照检票进站。高铁上又安静又舒服，坐累了就站一会儿，饿了就点外卖。",
@@ -1152,7 +1153,8 @@
      "explanation_correct_mn": "Зөв. «我一急就走错了» — сандраад буруу замаар явсан.",
      "explanation_wrong_mn": "Тэр замыг мэддэг, сандраад л буруу явсан."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/text2.mp3"
   },
   {
    "id": 3,
@@ -1716,7 +1718,8 @@
      "explanation_correct_mn": "Зөв. «刷护照就能检票进站» — паспортоо уншуулна.",
      "explanation_wrong_mn": "Тасалбар барих шаардлагагүй, паспортоо уншуулна."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/text3.mp3"
   },
   {
    "id": 4,
@@ -2310,7 +2313,8 @@
      "explanation_correct_mn": "Зөв. «我爸妈来中国旅游的时候，必须带他们也坐一次高铁» — аав, ээжийг.",
      "explanation_wrong_mn": "Тэр аав, ээжээ (爸妈) явуулахыг хүсч байна."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2717,7 +2721,8 @@
        "E": "зураг: галт тэрэгний буудал",
        "F": "зураг: уулзвар дээрх гэрлэн дохио"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb01.mp3"
      },
      {
       "n": 2,
@@ -2731,7 +2736,8 @@
        "E": "зураг: галт тэрэгний буудал",
        "F": "зураг: уулзвар дээрх гэрлэн дохио"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb02.mp3"
      },
      {
       "n": 3,
@@ -2745,7 +2751,8 @@
        "E": "зураг: галт тэрэгний буудал",
        "F": "зураг: уулзвар дээрх гэрлэн дохио"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb03.mp3"
      }
     ]
    },
@@ -2763,7 +2770,8 @@
        "B": "检票",
        "C": "买票"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb04.mp3"
      },
      {
       "n": 5,
@@ -2774,7 +2782,8 @@
        "B": "去花园",
        "C": "再玩一会儿"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb05.mp3"
      },
      {
       "n": 6,
@@ -2785,7 +2794,8 @@
        "B": "起飞时间太晚了",
        "C": "坐高铁比坐飞机快"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb06.mp3"
      }
     ]
    },
@@ -2803,7 +2813,8 @@
        "B": "路口的东边",
        "C": "路口的西边"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb07.mp3"
      },
      {
       "n": 8,
@@ -2814,7 +2825,8 @@
        "B": "要出国上学了",
        "C": "是他初中时认识的"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb08.mp3"
      },
      {
       "n": 9,
@@ -2825,7 +2837,8 @@
        "B": "两次",
        "C": "三次"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb09.mp3"
      },
      {
       "n": 10,
@@ -2836,12 +2849,12 @@
        "B": "跑步",
        "C": "坐公交车"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

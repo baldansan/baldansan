@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -20,7 +20,8 @@
        "F": "зураг: уулзвар дээрх гэрлэн дохио"
       },
       "answer": "A",
-      "explanation_mn": "Лифт хүлээх, яриа лифтийн тухай, зураг A."
+      "explanation_mn": "Лифт хүлээх, яриа лифтийн тухай, зураг A.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb01.mp3"
      },
      {
       "n": 2,
@@ -35,7 +36,8 @@
        "F": "зураг: уулзвар дээрх гэрлэн дохио"
       },
       "answer": "B",
-      "explanation_mn": "Гэртээ буйдан дээр кино үзсэн, зураг B."
+      "explanation_mn": "Гэртээ буйдан дээр кино үзсэн, зураг B.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb02.mp3"
      },
      {
       "n": 3,
@@ -50,7 +52,8 @@
        "F": "зураг: уулзвар дээрх гэрлэн дохио"
       },
       "answer": "C",
-      "explanation_mn": "Ширээн дээрх чихэвчийн тухай, зураг C."
+      "explanation_mn": "Ширээн дээрх чихэвчийн тухай, зураг C.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb03.mp3"
      }
     ]
    },
@@ -69,7 +72,8 @@
        "C": "买票"
       },
       "answer": "C",
-      "explanation_mn": "«我买一张…地铁票» — эрэгтэй метроны тийз авч байна."
+      "explanation_mn": "«我买一张…地铁票» — эрэгтэй метроны тийз авч байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb04.mp3"
      },
      {
       "n": 5,
@@ -81,7 +85,8 @@
        "C": "再玩一会儿"
       },
       "answer": "C",
-      "explanation_mn": "«再玩一会儿吧» — дахин жаахан тоглохыг хүсч байна."
+      "explanation_mn": "«再玩一会儿吧» — дахин жаахан тоглохыг хүсч байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb05.mp3"
      },
      {
       "n": 6,
@@ -93,7 +98,8 @@
        "C": "坐高铁比坐飞机快"
       },
       "answer": "A",
-      "explanation_mn": "«现在机票都两千多了» — онгоцны тийз хэт үнэтэй болсон."
+      "explanation_mn": "«现在机票都两千多了» — онгоцны тийз хэт үнэтэй болсон.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb06.mp3"
      }
     ]
    },
@@ -112,7 +118,8 @@
        "C": "路口的西边"
       },
       "answer": "C",
-      "explanation_mn": "Уулзвараас баруун тийш 100 м явахад цагаан барилга — банк нь уулзварын баруун талд."
+      "explanation_mn": "Уулзвараас баруун тийш 100 м явахад цагаан барилга — банк нь уулзварын баруун талд.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb07.mp3"
      },
      {
       "n": 8,
@@ -124,7 +131,8 @@
        "C": "是他初中时认识的"
       },
       "answer": "B",
-      "explanation_mn": "«他今年就要出国上学了» — Сяо Ян энэ жил гадаадад сурахаар явна. Гунигтай нь хэлэгч, найзууд бага наснаасаа танил."
+      "explanation_mn": "«他今年就要出国上学了» — Сяо Ян энэ жил гадаадад сурахаар явна. Гунигтай нь хэлэгч, найзууд бага наснаасаа танил.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb08.mp3"
      },
      {
       "n": 9,
@@ -136,7 +144,8 @@
        "C": "三次"
       },
       "answer": "C",
-      "explanation_mn": "Гурван удаа: утас, камер, түрийвч."
+      "explanation_mn": "Гурван удаа: утас, камер, түрийвч.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb09.mp3"
      },
      {
       "n": 10,
@@ -148,12 +157,12 @@
        "C": "坐公交车"
       },
       "answer": "C",
-      "explanation_mn": "«我要坐的公交车，应该马上就到了» — автобусаар ирж байна."
+      "explanation_mn": "«我要坐的公交车，应该马上就到了» — автобусаар ирж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l06/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

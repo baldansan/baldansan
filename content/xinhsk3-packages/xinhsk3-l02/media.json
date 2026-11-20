@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-hero.webp",
+   "title": "2-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l02-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w1.webp",
+   "title": "菜单 càidān — хоолны цэс",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w2.webp",
+   "title": "饮料 yǐnliào — ундаа",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w3.webp",
+   "title": "绿茶 lǜchá — ногоон цай",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w4.webp",
+   "title": "蛋糕 dàngāo — бялуу",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l02/l02-w5.webp",
+   "title": "鸡肉 jīròu — тахианы мах",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

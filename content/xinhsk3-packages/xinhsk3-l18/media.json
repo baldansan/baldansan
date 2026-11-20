@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-hero.webp",
+   "title": "18-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l18-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w1.webp",
+   "title": "包饺子 bāo jiǎozi — банш чимхэх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l18-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w2.webp",
+   "title": "给红包 gěi hóngbāo — улаан дугтуй өгөх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l18-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w3.webp",
+   "title": "说“过年好” shuō guònián hǎo — «Сар шинэдээ сайхан шинэлээрэй» гэж хэлэх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l18-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w4.webp",
+   "title": "吃年夜饭 chī niányèfàn — шинэ жилийн оройн зоог идэх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l18-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w5.webp",
+   "title": "打扫房子 dǎsǎo fángzi — гэрээ цэвэрлэх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l18-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l18/l18-w6.webp",
+   "title": "看春节联欢晚会 kàn Chūnjié liánhuān wǎnhuì — Хаврын баярын тоглолт үзэх",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

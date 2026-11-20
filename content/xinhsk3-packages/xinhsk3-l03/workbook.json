@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -17,7 +17,8 @@
        "C": "зураг: хүн ширээний ард хоол идэж байна"
       },
       "answer": "A",
-      "explanation_mn": "Хөргөгчийн хаалга нээлттэй, хаахаа мартсан."
+      "explanation_mn": "Хөргөгчийн хаалга нээлттэй, хаахаа мартсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb01.mp3"
      },
      {
       "n": 2,
@@ -29,7 +30,8 @@
        "C": "зураг: хоёр хүн цонх нээж байна"
       },
       "answer": "A",
-      "explanation_mn": "Агааржуулагч асааж, хаалга хаана."
+      "explanation_mn": "Агааржуулагч асааж, хаалга хаана.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb02.mp3"
      },
      {
       "n": 3,
@@ -41,7 +43,8 @@
        "C": "зураг: хоёр хүн тэмдэглэл бичиж байна"
       },
       "answer": "A",
-      "explanation_mn": "Ном зөөхөд тусалж байна."
+      "explanation_mn": "Ном зөөхөд тусалж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb03.mp3"
      }
     ]
    },
@@ -60,7 +63,8 @@
        "C": "办信用卡"
       },
       "answer": "C",
-      "explanation_mn": "«我要去办张信用卡» — кредит карт нээлгэнэ."
+      "explanation_mn": "«我要去办张信用卡» — кредит карт нээлгэнэ.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb04.mp3"
      },
      {
       "n": 5,
@@ -72,7 +76,8 @@
        "C": "是新买的"
       },
       "answer": "A",
-      "explanation_mn": "«上个星期就不能用了» — эвдэрсэн."
+      "explanation_mn": "«上个星期就不能用了» — эвдэрсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb05.mp3"
      },
      {
       "n": 6,
@@ -84,7 +89,8 @@
        "C": "能马上搬进去"
       },
       "answer": "A",
-      "explanation_mn": "«我喜欢那个带花园的» — цэцэрлэгтэй. Одоо хүн амьдарч байгаа, ирэх сард л нүүх боломжтой."
+      "explanation_mn": "«我喜欢那个带花园的» — цэцэрлэгтэй. Одоо хүн амьдарч байгаа, ирэх сард л нүүх боломжтой.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb06.mp3"
      }
     ]
    },
@@ -103,7 +109,8 @@
        "C": "家离商场太近"
       },
       "answer": "A",
-      "explanation_mn": "«咱们家离学校挺远的» — гэр сургуулиасаа хол."
+      "explanation_mn": "«咱们家离学校挺远的» — гэр сургуулиасаа хол.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb07.mp3"
      },
      {
       "n": 8,
@@ -115,7 +122,8 @@
        "C": "准备搬家的东西"
       },
       "answer": "B",
-      "explanation_mn": "«明天我要休息一下» — маргааш амарна."
+      "explanation_mn": "«明天我要休息一下» — маргааш амарна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb08.mp3"
      },
      {
       "n": 9,
@@ -127,7 +135,8 @@
        "C": "想在手机上买东西"
       },
       "answer": "C",
-      "explanation_mn": "«我没有银行卡，不能在手机上买东西» — утсаараа худалдан авахыг хүссэн."
+      "explanation_mn": "«我没有银行卡，不能在手机上买东西» — утсаараа худалдан авахыг хүссэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb09.mp3"
      },
      {
       "n": 10,
@@ -139,12 +148,12 @@
        "C": "银行离家挺远的"
       },
       "answer": "A",
-      "explanation_mn": "«花的钱太多了» — мөнгө хэт их зарсан."
+      "explanation_mn": "«花的钱太多了» — мөнгө хэт их зарсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l03/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

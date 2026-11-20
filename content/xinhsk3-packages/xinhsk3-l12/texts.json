@@ -619,6 +619,7 @@
     "explanation_wrong_mn": "Тэд өөр өдөр: маргааш юм уу нөгөөдөр явна."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Миний хамгийн дуртай улирал» (我最喜欢的季节)",
    "zh": "我最喜欢的季节是秋天。秋天不冷不热，天气很凉快，树上的叶子变成了红色、黄色，非常漂亮。我常常和朋友去公园走走。春天，树都开花了，也很舒服。夏天白天很热，但是晚上比较凉快。冬天风很大，今年就下了一次雪。你最喜欢哪个季节？",
@@ -1139,7 +1140,8 @@
      "explanation_correct_mn": "Зөв. Ифэй «我车里有一把伞和一件雨衣» гэсэн.",
      "explanation_wrong_mn": "Машинд нь шүхэр, борооны цув байгаа."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/text2.mp3"
   },
   {
    "id": 3,
@@ -1702,7 +1704,8 @@
      "explanation_correct_mn": "Зөв. Ифэй «就是天气我还不太习惯» гэсэн.",
      "explanation_wrong_mn": "Бусад бүхэнд дассан, зөвхөн цаг агаарт л дасаагүй."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/text3.mp3"
   },
   {
    "id": 4,
@@ -2206,7 +2209,8 @@
      "explanation_correct_mn": "Зөв. «冬天不但冷，而且风很大» — хүйтэн, салхи ихтэй.",
      "explanation_wrong_mn": "Ифэйн өвлийг дургүйцэх шалтгаан нь хүйтэн, салхи."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2641,7 +2645,8 @@
        "E": "зураг: хүүхдүүд талбайд бөмбөг тоглож байна",
        "F": "зураг: салхи дор модны навч унаж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb01.mp3"
      },
      {
       "n": 2,
@@ -2655,7 +2660,8 @@
        "E": "зураг: хүүхдүүд талбайд бөмбөг тоглож байна",
        "F": "зураг: салхи дор модны навч унаж байна"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb02.mp3"
      },
      {
       "n": 3,
@@ -2669,7 +2675,8 @@
        "E": "зураг: хүүхдүүд талбайд бөмбөг тоглож байна",
        "F": "зураг: салхи дор модны навч унаж байна"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb03.mp3"
      }
     ]
    },
@@ -2687,7 +2694,8 @@
        "B": "她想工作日去",
        "C": "今天天气不好"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb04.mp3"
      },
      {
       "n": 5,
@@ -2698,7 +2706,8 @@
        "B": "每天都是夏天",
        "C": "一年有两个季节"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb05.mp3"
      },
      {
       "n": 6,
@@ -2709,7 +2718,8 @@
        "B": "让她早点儿回家",
        "C": "告诉她已经下雨了"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb06.mp3"
      }
     ]
    },
@@ -2727,7 +2737,8 @@
        "B": "太阳很早下山",
        "C": "很多人出去吃饭"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb07.mp3"
      },
      {
       "n": 8,
@@ -2738,7 +2749,8 @@
        "B": "刮大风",
        "C": "一直阴天"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb08.mp3"
      },
      {
       "n": 9,
@@ -2749,7 +2761,8 @@
        "B": "不冷也不热",
        "C": "每天都很冷"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb09.mp3"
      },
      {
       "n": 10,
@@ -2760,12 +2773,12 @@
        "B": "每天都很热",
        "C": "王老师还不习惯"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

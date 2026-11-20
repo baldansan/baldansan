@@ -81,7 +81,23 @@ def dump(name, obj):
     json.dump(obj, open(os.path.join(OUT, name), "w"), ensure_ascii=False, indent=1)
 
 
+AUDIO_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "public", "xinhsk3-audio", "l%02d" % src.N)
+AUDIO_BASE = "https://surtsgaay.buunduu.mn/xinhsk3-audio/l%02d/" % src.N
+HAS_AUDIO = os.path.isdir(AUDIO_DIR)
+IMG_MANIFEST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "public", "xinhsk3-images", "l%02d" % src.N, "media.json")
+HAS_IMAGES = os.path.exists(IMG_MANIFEST)
+MEDIA = json.load(open(IMG_MANIFEST)) if HAS_IMAGES else None
+
+
+def audio_url(name):
+    return AUDIO_BASE + name if HAS_AUDIO and os.path.exists(os.path.join(AUDIO_DIR, name)) else None
+
+
 texts = [build_text(i + 1, T) for i, T in enumerate(src.TEXTS)]
+for i, t in enumerate(texts, 1):
+    u = audio_url("text%d.mp3" % i)
+    if u:
+        t["audioFile"] = u
 main = texts[0]
 main["writingSample"] = {"title_mn": src.WRITING["title"], "zh": src.WRITING["zh"], "pinyin": src.WRITING["py"], "mn": src.WRITING["mn"]}
 main["writingPrompt_mn"] = src.WRITING["prompt"]
@@ -137,8 +153,8 @@ dump("texts.json", {
     "culture": {"title": src.CULTURE["title"], "title_mn": src.CULTURE["title_mn"], "text_mn": src.CULTURE["text"], "note_mn": src.CULTURE["note"]},
     "workbookListening": {"answer_source": AS, "parts": [
         {"part": p["part"], "type": p["type"], "instruction_mn": p["instruction"],
-         "items": [{"n": it["n"], "q_zh": it.get("q", ""), "transcript_zh": it["transcript"], "options": it["options"], "answer": it["answer"]} for it in p["items"]]}
-        for p in WB_LISTEN], "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."},
+         "items": [{"n": it["n"], "q_zh": it.get("q", ""), "transcript_zh": it["transcript"], "options": it["options"], "answer": it["answer"], **({"audio": audio_url("wb%02d.mp3" % it["n"])} if audio_url("wb%02d.mp3" % it["n"]) else {})} for it in p["items"]]}
+        for p in WB_LISTEN], **({} if HAS_AUDIO else {"audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."})},
     "workbookReading": {"answer_source": AS, "parts": [
         {"part": p["part"], "type": p["type"], "instruction_mn": p["instruction"], **({"bank": p["bank"]} if p.get("bank") else {}),
          "items": [{"n": it["n"], "q_zh": it["q"], **({"passage_zh": it["passage"]} if it.get("passage") else {}),
@@ -152,10 +168,10 @@ dump("texts.json", {
         "items": [{"n": i + 1, "q_zh": q, "answers": a} for i, (q, a, e) in enumerate(src.WB_REVIEW)]},
 })
 dump("workbook.json", {
-    "listening": {"audio_available": False, "parts": [
+    "listening": {"audio_available": HAS_AUDIO, "parts": [
         {"part": p["part"], "type": "mc", "instruction_mn": p["instruction"],
-         "items": [{"n": it["n"], "question_zh": it.get("q", ""), "transcript_zh": it["transcript"], "options": it["options"], "answer": it["answer"], "explanation_mn": it["expl"]} for it in p["items"]]}
-        for p in WB_LISTEN], "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."},
+         "items": [{"n": it["n"], "question_zh": it.get("q", ""), "transcript_zh": it["transcript"], "options": it["options"], "answer": it["answer"], "explanation_mn": it["expl"], **({"audio": audio_url("wb%02d.mp3" % it["n"])} if audio_url("wb%02d.mp3" % it["n"]) else {})} for it in p["items"]]}
+        for p in WB_LISTEN], **({} if HAS_AUDIO else {"audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."})},
     "reading": {"parts": [
         {"part": p["part"], "type": "mc", "instruction_mn": p["instruction"],
          "items": [{"n": it["n"], "question_zh": it["q"], **({"passage_zh": it["passage"]} if it.get("passage") else {}),
@@ -215,13 +231,16 @@ dump("lesson.json", {
     "commonSaying": SAY,
 })
 
+if MEDIA:
+    dump("media.json", MEDIA)
+
 dump("manifest.json", {
     "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1", "courseType": "chinese-hsk",
     "courseId": src.COURSE_ID, "lessonId": src.LESSON_ID, "hskLevel": 3, "lessonNumber": src.N,
     "lessonProfile": "hsk3-dialogue-reading-writing-review", "lessonType": "hsk3-dialogue-reading-writing-review",
     "language": "zh-MN", "targetLanguage": "zh", "uiLanguage": "mn",
     "title": src.TITLE_ZH, "mongolianTitle": src.TITLE_MN, "source": SRC_NOTE,
-    "hasAudio": False, "hasImages": False,
+    "hasAudio": HAS_AUDIO, "hasImages": HAS_IMAGES,
     "verification": {"answerStatus": "textbook+ppt (OCR; хүн шалгаагүй)", "textStatus": "textbook (新HSK教程3 课文, OCR)"},
 })
 

@@ -567,6 +567,7 @@
     "explanation_wrong_mn": "Ли Вэнь хэд хэд очсон ч ном нь өөр хүнд зээлэгдчихсэн байсан."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Миний хамгийн золгүй өдөр» (最倒霉的一天)",
    "zh": "昨天是我最倒霉的一天。早上我的词典被同学借走了，我没带校园卡，进不去图书馆。下课以后，我先去买了一杯咖啡，然后想回家，可是咖啡被我忘在教室里了。最后，我的自行车也被别人骑走了。我有些难过，朋友说：“难过什么啊，明天一定会更好！”我相信他说的话。",
@@ -1185,7 +1186,8 @@
      "explanation_correct_mn": "Зөв. «可能被我放在家里了» — гэртээ орхисон байж магадгүй.",
      "explanation_wrong_mn": "Бай Цзяюэ гэртээ тавьсан байх гэж боддог."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/text2.mp3"
   },
   {
    "id": 3,
@@ -1713,7 +1715,8 @@
      "explanation_correct_mn": "Зөв. «一想到要在校长、老师和那么多同学面前表演，我就有些紧张».",
      "explanation_wrong_mn": "Яриагаар олон хүний өмнө тоглох нь түүнийг сандаргадаг."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/text3.mp3"
   },
   {
    "id": 4,
@@ -2191,7 +2194,8 @@
      "explanation_correct_mn": "Зөв. «我最喜欢的节目是留学生们跳舞».",
      "explanation_wrong_mn": "Хамгийн дуртай нь гадаад оюутнуудын бүжиг."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2598,7 +2602,8 @@
        "E": "зураг: хүн усанд сэлж байна",
        "F": "зураг: хүн сонин уншиж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb01.mp3"
      },
      {
       "n": 2,
@@ -2612,7 +2617,8 @@
        "E": "зураг: хүн усанд сэлж байна",
        "F": "зураг: хүн сонин уншиж байна"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb02.mp3"
      },
      {
       "n": 3,
@@ -2626,7 +2632,8 @@
        "E": "зураг: хүн усанд сэлж байна",
        "F": "зураг: хүн сонин уншиж байна"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb03.mp3"
      }
     ]
    },
@@ -2644,7 +2651,8 @@
        "B": "唱外语歌",
        "C": "历史故事"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb04.mp3"
      },
      {
       "n": 5,
@@ -2655,7 +2663,8 @@
        "B": "去书店买书",
        "C": "去图书馆借书"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb05.mp3"
      },
      {
       "n": 6,
@@ -2666,7 +2675,8 @@
        "B": "选字典",
        "C": "参加考试"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb06.mp3"
      }
     ]
    },
@@ -2684,7 +2694,8 @@
        "B": "听外语故事",
        "C": "找人帮助她"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb07.mp3"
      },
      {
       "n": 8,
@@ -2695,7 +2706,8 @@
        "B": "在图书馆里",
        "C": "被别人借走了"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb08.mp3"
      },
      {
       "n": 9,
@@ -2706,7 +2718,8 @@
        "B": "在网上学习",
        "C": "在教室里学习"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb09.mp3"
      },
      {
       "n": 10,
@@ -2717,12 +2730,12 @@
        "B": "没意思",
        "C": "让人不开心"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l14/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

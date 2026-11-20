@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-hero.webp",
+   "title": "16-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l16-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w1.webp",
+   "title": "脸 liǎn — нүүр",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l16-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w2.webp",
+   "title": "嘴 zuǐ — ам",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l16-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w3.webp",
+   "title": "眼睛 yǎnjing — нүд",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l16-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w4.webp",
+   "title": "耳朵 ěrduo — чих",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l16-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l16/l16-w5.webp",
+   "title": "脚 jiǎo — хөлийн тавхай",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

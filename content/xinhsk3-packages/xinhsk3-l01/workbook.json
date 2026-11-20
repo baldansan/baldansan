@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -17,7 +17,8 @@
        "C": "зураг: нэг хүн утсаар ярьж байна"
       },
       "answer": "A",
-      "explanation_mn": "Паспорт хайж байна, «书包里» — цүнхэн дотроос хайж байгаа зураг."
+      "explanation_mn": "Паспорт хайж байна, «书包里» — цүнхэн дотроос хайж байгаа зураг.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb01.mp3"
      },
      {
       "n": 2,
@@ -29,7 +30,8 @@
        "C": "зураг: хүн хоол хийж байна"
       },
       "answer": "A",
-      "explanation_mn": "Яриа чемоданы тухай, аялахдаа үргэлж авч явдаг — чемодан татаж яваа зураг."
+      "explanation_mn": "Яриа чемоданы тухай, аялахдаа үргэлж авч явдаг — чемодан татаж яваа зураг.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb02.mp3"
      },
      {
       "n": 3,
@@ -41,7 +43,8 @@
        "C": "зураг: хүүхэд тоглож байна"
       },
       "answer": "A",
-      "explanation_mn": "Шинэ багш гучин нас гарсан ч оюутан шиг залуу харагдана."
+      "explanation_mn": "Шинэ багш гучин нас гарсан ч оюутан шиг залуу харагдана.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb03.mp3"
      }
     ]
    },
@@ -60,7 +63,8 @@
        "C": "拿箱子"
       },
       "answer": "C",
-      "explanation_mn": "«我帮你拿» — тэр чемоданыг бариад өгнө."
+      "explanation_mn": "«我帮你拿» — тэр чемоданыг бариад өгнө.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb04.mp3"
      },
      {
       "n": 5,
@@ -72,7 +76,8 @@
        "C": "最高的人"
       },
       "answer": "B",
-      "explanation_mn": "Эрэгтэй «还是女孩站在中间吧» гэж хэлсэн — охин дунд нь зогсоно."
+      "explanation_mn": "Эрэгтэй «还是女孩站在中间吧» гэж хэлсэн — охин дунд нь зогсоно.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb05.mp3"
      },
      {
       "n": 6,
@@ -84,7 +89,8 @@
        "C": "等行李"
       },
       "answer": "A",
-      "explanation_mn": "Тэд онгоц буусан хүнээ хүлээж, тосож байна."
+      "explanation_mn": "Тэд онгоц буусан хүнээ хүлээж, тосож байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb06.mp3"
      }
     ]
    },
@@ -103,7 +109,8 @@
        "C": "接朋友"
       },
       "answer": "C",
-      "explanation_mn": "«我想去机场接他» — найзаа тосохоор очно."
+      "explanation_mn": "«我想去机场接他» — найзаа тосохоор очно.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb07.mp3"
      },
      {
       "n": 8,
@@ -115,7 +122,8 @@
        "C": "三个"
       },
       "answer": "C",
-      "explanation_mn": "Эхнэр хоёр чемодан, нөхөр дахин нэг чемодан — нийт гурав."
+      "explanation_mn": "Эхнэр хоёр чемодан, нөхөр дахин нэг чемодан — нийт гурав.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb08.mp3"
      },
      {
       "n": 9,
@@ -127,7 +135,8 @@
        "C": "接新老师"
       },
       "answer": "C",
-      "explanation_mn": "«我在学校门口接新来的王老师» — шинэ багшийг тосож байна."
+      "explanation_mn": "«我在学校门口接新来的王老师» — шинэ багшийг тосож байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb09.mp3"
      },
      {
       "n": 10,
@@ -139,12 +148,12 @@
        "C": "头发比照片上短"
       },
       "answer": "B",
-      "explanation_mn": "«她看起来比照片上年轻很多» — зураг дээрхээсээ залуу; үс нь урт."
+      "explanation_mn": "«她看起来比照片上年轻很多» — зураг дээрхээсээ залуу; үс нь урт.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

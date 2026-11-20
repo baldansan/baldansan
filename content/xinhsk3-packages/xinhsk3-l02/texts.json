@@ -504,6 +504,7 @@
     "explanation_wrong_mn": "Цзяюэ «又饿又渴» гэж хэлсэн."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Миний дуртай зоогийн газар» (我喜欢的饭馆)",
    "zh": "我喜欢去一家离学校不远的饭馆吃饭，那里的菜又好吃又便宜，服务员也很热情。昨天我和朋友去那儿，我们看了菜单，什么都想尝一尝。我点了鸡肉饭，朋友点了饺子。服务员马上给我们拿来了筷子和碗。点外卖也很方便。",
@@ -1101,7 +1102,8 @@
      "explanation_correct_mn": "Зөв. «您经常来吃饭，今天送您一些水果» — байнга ирдэг тул.",
      "explanation_wrong_mn": "Үйлчлэгч «您经常来吃饭» гэж шалтгаанаа хэлсэн."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/text2.mp3"
   },
   {
    "id": 3,
@@ -1577,7 +1579,8 @@
      "explanation_correct_mn": "Зөв. «那真是太方便了！» гэж хэлсэн.",
      "explanation_wrong_mn": "Цзяюэ хоол хүргэлтийг тохиромжтой (方便) гэсэн."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/text3.mp3"
   },
   {
    "id": 4,
@@ -2137,7 +2140,8 @@
      "explanation_correct_mn": "Зөв. «我很少自己做饭» — ховор хийдэг.",
      "explanation_wrong_mn": "Эхний өгүүлбэр: «我很少自己做饭»."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2541,7 +2545,8 @@
        "B": "зураг: хүн хоол хийж, олон хоол ширээнд тавьсан",
        "C": "зураг: хүн зоогийн газарт хооллож байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb01.mp3"
      },
      {
       "n": 2,
@@ -2552,7 +2557,8 @@
        "B": "зураг: халбага, аяга",
        "C": "зураг: хоёр хос савх"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb02.mp3"
      },
      {
       "n": 3,
@@ -2563,7 +2569,8 @@
        "B": "зураг: хүн зоогийн газарт хооллож байна",
        "C": "зураг: хүн гал тогоонд хоол хийж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb03.mp3"
      }
     ]
    },
@@ -2581,7 +2588,8 @@
        "B": "男的喜欢吃鸡肉",
        "C": "男的请女的去他家"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb04.mp3"
      },
      {
       "n": 5,
@@ -2592,7 +2600,8 @@
        "B": "人不多",
        "C": "菜好吃还便宜"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb05.mp3"
      },
      {
       "n": 6,
@@ -2603,7 +2612,8 @@
        "B": "她不会点外卖",
        "C": "她不喜欢吃外卖"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb06.mp3"
      }
     ]
    },
@@ -2621,7 +2631,8 @@
        "B": "中午",
        "C": "晚上"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb07.mp3"
      },
      {
       "n": 8,
@@ -2632,7 +2643,8 @@
        "B": "很热情",
        "C": "很着急"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb08.mp3"
      },
      {
       "n": 9,
@@ -2643,7 +2655,8 @@
        "B": "朋友来了",
        "C": "什么都想尝尝"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb09.mp3"
      },
      {
       "n": 10,
@@ -2654,12 +2667,12 @@
        "B": "两个包子",
        "C": "两碗面条儿"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

@@ -639,6 +639,7 @@
     "explanation_wrong_mn": "Ван Исюэ «很方便» гэж хэлсэн."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Миний хороолол» (我家附近)",
    "zh": "我家住在一个很有名的小区，小区附近有一条小河。平时放学以后，我和朋友们常常在河边的草地上玩游戏。在我看来，这里的环境非常好，买东西也很方便，过马路就是超市。我爷爷喜欢在河边养花，不一会儿，他就会遇见很多老朋友，一起聊天儿。",
@@ -1331,7 +1332,8 @@
      "explanation_correct_mn": "Зөв. «我是在南京上的大学» — Нанкинд сурсан.",
      "explanation_wrong_mn": "Тэр Нанкины хүн биш («不是南京人»). Нанкинд сурсан."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/text2.mp3"
   },
   {
    "id": 3,
@@ -1990,7 +1992,8 @@
      "explanation_correct_mn": "Зөв. «黄河虽然不是最长的河» — хамгийн урт гол биш.",
      "explanation_wrong_mn": "Яриаг дахин уншаарай: «不是»."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/text3.mp3"
   },
   {
    "id": 4,
@@ -2550,7 +2553,8 @@
      "explanation_correct_mn": "Зөв. «一到夏天我就去河里游泳».",
      "explanation_wrong_mn": "Тэр зун болмогц голд сэлдэг байсан."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2985,7 +2989,8 @@
        "E": "зураг: гол дээр завь байна",
        "F": "зураг: хүмүүс ресторанд хооллож байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb01.mp3"
      },
      {
       "n": 2,
@@ -2999,7 +3004,8 @@
        "E": "зураг: гол дээр завь байна",
        "F": "зураг: хүмүүс ресторанд хооллож байна"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb02.mp3"
      },
      {
       "n": 3,
@@ -3013,7 +3019,8 @@
        "E": "зураг: гол дээр завь байна",
        "F": "зураг: хүмүүс ресторанд хооллож байна"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb03.mp3"
      }
     ]
    },
@@ -3031,7 +3038,8 @@
        "B": "鸡肉",
        "C": "鸡蛋面"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb04.mp3"
      },
      {
       "n": 5,
@@ -3042,7 +3050,8 @@
        "B": "来这儿很久了",
        "C": "在南方上的大学"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb05.mp3"
      },
      {
       "n": 6,
@@ -3053,7 +3062,8 @@
        "B": "有点儿累",
        "C": "睡觉睡多了"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb06.mp3"
      }
     ]
    },
@@ -3071,7 +3081,8 @@
        "B": "绿茶",
        "C": "红茶"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb07.mp3"
      },
      {
       "n": 8,
@@ -3082,7 +3093,8 @@
        "B": "有蓝色的鱼",
        "C": "有很多游客"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb08.mp3"
      },
      {
       "n": 9,
@@ -3093,7 +3105,8 @@
        "B": "对学习好",
        "C": "对身体好"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb09.mp3"
      },
      {
       "n": 10,
@@ -3104,12 +3117,12 @@
        "B": "在外面玩",
        "C": "玩电脑游戏"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l15/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

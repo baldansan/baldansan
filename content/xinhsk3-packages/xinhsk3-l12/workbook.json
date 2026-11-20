@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -20,7 +20,8 @@
        "F": "зураг: салхи дор модны навч унаж байна"
       },
       "answer": "A",
-      "explanation_mn": "Бороо орох гэж байгаа, шүхэр аваагүй тул дэлгүүрт шүхэр худалдаж авна."
+      "explanation_mn": "Бороо орох гэж байгаа, шүхэр аваагүй тул дэлгүүрт шүхэр худалдаж авна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb01.mp3"
      },
      {
       "n": 2,
@@ -35,7 +36,8 @@
        "F": "зураг: салхи дор модны навч унаж байна"
       },
       "answer": "B",
-      "explanation_mn": "Эмэгтэй хаврыг дуртай: хүйтэн ч, халуун ч биш, цэцэг дэлгэрсэн."
+      "explanation_mn": "Эмэгтэй хаврыг дуртай: хүйтэн ч, халуун ч биш, цэцэг дэлгэрсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb02.mp3"
      },
      {
       "n": 3,
@@ -50,7 +52,8 @@
        "F": "зураг: салхи дор модны навч унаж байна"
       },
       "answer": "C",
-      "explanation_mn": "Нар халуун, өнөөдөр хамгийн халуун өдөр тул гадаа бөмбөг тоглохгүй."
+      "explanation_mn": "Нар халуун, өнөөдөр хамгийн халуун өдөр тул гадаа бөмбөг тоглохгүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb03.mp3"
      }
     ]
    },
@@ -69,7 +72,8 @@
        "C": "今天天气不好"
       },
       "answer": "C",
-      "explanation_mn": "Салхи улам ихсэж байгаа тул цаг агаар муу. Тэр цаг солих гэж байна."
+      "explanation_mn": "Салхи улам ихсэж байгаа тул цаг агаар муу. Тэр цаг солих гэж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb04.mp3"
      },
      {
       "n": 5,
@@ -81,7 +85,8 @@
        "C": "一年有两个季节"
       },
       "answer": "A",
-      "explanation_mn": "Эмэгтэй «一年的每个季节都不一样» гэсэн."
+      "explanation_mn": "Эмэгтэй «一年的每个季节都不一样» гэсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb05.mp3"
      },
      {
       "n": 6,
@@ -93,7 +98,8 @@
        "C": "告诉她已经下雨了"
       },
       "answer": "B",
-      "explanation_mn": "Тэр «你没带雨伞，早点回家» гэж хэлсэн: эрт гэртээ харихыг хэлэхээр залгасан."
+      "explanation_mn": "Тэр «你没带雨伞，早点回家» гэж хэлсэн: эрт гэртээ харихыг хэлэхээр залгасан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb06.mp3"
      }
     ]
    },
@@ -112,7 +118,8 @@
        "C": "很多人出去吃饭"
       },
       "answer": "A",
-      "explanation_mn": "Эхний өгүүлбэр «天气越来越热»."
+      "explanation_mn": "Эхний өгүүлбэр «天气越来越热».",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb07.mp3"
      },
      {
       "n": 8,
@@ -124,7 +131,8 @@
        "C": "一直阴天"
       },
       "answer": "B",
-      "explanation_mn": "«刮起大风来了» — гэнэт хүчтэй салхи гарсан. Бороо орсонгүй."
+      "explanation_mn": "«刮起大风来了» — гэнэт хүчтэй салхи гарсан. Бороо орсонгүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb08.mp3"
      },
      {
       "n": 9,
@@ -136,7 +144,8 @@
        "C": "每天都很冷"
       },
       "answer": "B",
-      "explanation_mn": "«每天不冷也不热» — өмнөх газрынх."
+      "explanation_mn": "«每天不冷也不热» — өмнөх газрынх.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb09.mp3"
      },
      {
       "n": 10,
@@ -148,12 +157,12 @@
        "C": "王老师还不习惯"
       },
       "answer": "C",
-      "explanation_mn": "«他觉得不太习惯» — Ван багш цаг агаарт дасаагүй."
+      "explanation_mn": "«他觉得不太习惯» — Ван багш цаг агаарт дасаагүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l12/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

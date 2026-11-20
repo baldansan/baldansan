@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-hero.webp",
+   "title": "1-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l01-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w1.webp",
+   "title": "照片 zhàopiàn — гэрэл зураг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w2.webp",
+   "title": "行李箱 xínglixiāng — чемодан",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w3.webp",
+   "title": "头发 tóufa — үс",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w4.webp",
+   "title": "身高 shēngāo — биеийн өндөр",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w5.webp",
+   "title": "护照 hùzhào — гадаад паспорт",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l01/l01-w6.webp",
+   "title": "接人 jiē rén — хүн тосох",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

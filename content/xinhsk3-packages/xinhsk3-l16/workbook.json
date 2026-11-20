@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -17,7 +17,8 @@
        "C": "зураг: хүмүүс тасалбар авахаар дараалж байна"
       },
       "answer": "B",
-      "explanation_mn": "Яриа «панда нэг авирч гарч, нэг үсэрч бууна, зураг авсан» гэсэн тул панда болон зураг авч буй хүн."
+      "explanation_mn": "Яриа «панда нэг авирч гарч, нэг үсэрч бууна, зураг авсан» гэсэн тул панда болон зураг авч буй хүн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb01.mp3"
      },
      {
       "n": 2,
@@ -29,7 +30,8 @@
        "C": "зураг: хүмүүс усанд сэлж байна"
       },
       "answer": "A",
-      "explanation_mn": "Яриа нохой тэжээх тухай, тиймээс хүүхэд нохойтой."
+      "explanation_mn": "Яриа нохой тэжээх тухай, тиймээс хүүхэд нохойтой.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb02.mp3"
      },
      {
       "n": 3,
@@ -41,7 +43,8 @@
        "C": "зураг: хүмүүс касс дээр дараалж байна"
       },
       "answer": "C",
-      "explanation_mn": "Тасалбар авах, «урд нь хэд хэдэн хүн байна» — дараалал."
+      "explanation_mn": "Тасалбар авах, «урд нь хэд хэдэн хүн байна» — дараалал.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb03.mp3"
      }
     ]
    },
@@ -60,7 +63,8 @@
        "C": "大学"
       },
       "answer": "C",
-      "explanation_mn": "Ээж «上大学再养» гэсэн: их сургуульд орсны дараа."
+      "explanation_mn": "Ээж «上大学再养» гэсэн: их сургуульд орсны дараа.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb04.mp3"
      },
      {
       "n": 5,
@@ -72,7 +76,8 @@
        "C": "她在小猫咖啡馆工作"
       },
       "answer": "B",
-      "explanation_mn": "Эмэгтэй «工作太忙了，没时间照顾它们» гэсэн."
+      "explanation_mn": "Эмэгтэй «工作太忙了，没时间照顾它们» гэсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb05.mp3"
      },
      {
       "n": 6,
@@ -84,7 +89,8 @@
        "C": "动物太少"
       },
       "answer": "A",
-      "explanation_mn": "«动物会不会突然跑过来» — амьтан гэнэт ойртоно гэж айсан, өөрөөр хэлбэл аюулгүй эсэхэд санаа зовсон."
+      "explanation_mn": "«动物会不会突然跑过来» — амьтан гэнэт ойртоно гэж айсан, өөрөөр хэлбэл аюулгүй эсэхэд санаа зовсон.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb06.mp3"
      }
     ]
    },
@@ -103,7 +109,8 @@
        "C": "在动物园工作"
       },
       "answer": "B",
-      "explanation_mn": "Лили амьтанд дуртай, нохой муур тэжээдэг; «амьтны асуудлыг түүнээс асууж болно» — амьтныг сайн мэднэ."
+      "explanation_mn": "Лили амьтанд дуртай, нохой муур тэжээдэг; «амьтны асуудлыг түүнээс асууж болно» — амьтныг сайн мэднэ.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb07.mp3"
      },
      {
       "n": 8,
@@ -115,7 +122,8 @@
        "C": "不喜欢爬树"
       },
       "answer": "A",
-      "explanation_mn": "«可爱极了» — маш хөөрхөн."
+      "explanation_mn": "«可爱极了» — маш хөөрхөн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb08.mp3"
      },
      {
       "n": 9,
@@ -127,7 +135,8 @@
        "C": "喜欢它的人不多"
       },
       "answer": "B",
-      "explanation_mn": "«去过很多地方» гэж шууд хэлсэн."
+      "explanation_mn": "«去过很多地方» гэж шууд хэлсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb09.mp3"
      },
      {
       "n": 10,
@@ -139,12 +148,12 @@
        "C": "二十年"
       },
       "answer": "B",
-      "explanation_mn": "«一般会在国外生活十多年» — арав гаруй жил."
+      "explanation_mn": "«一般会在国外生活十多年» — арав гаруй жил.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

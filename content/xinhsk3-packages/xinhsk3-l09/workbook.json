@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -17,7 +17,8 @@
        "C": "зураг: тамирчинтай хамт зураг авахуулах гэж байна"
       },
       "answer": "A",
-      "explanation_mn": "«考试的成绩» — шалгалтын дүнгийн тухай."
+      "explanation_mn": "«考试的成绩» — шалгалтын дүнгийн тухай.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb01.mp3"
      },
      {
       "n": 2,
@@ -29,7 +30,8 @@
        "C": "зураг: тамирчинтай хамт зураг авахуулах гэж байна"
       },
       "answer": "B",
-      "explanation_mn": "«都在球场踢球呢» — талбай дээр бөмбөг тоглож байна."
+      "explanation_mn": "«都在球场踢球呢» — талбай дээр бөмбөг тоглож байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb02.mp3"
      },
      {
       "n": 3,
@@ -41,7 +43,8 @@
        "C": "зураг: тамирчинтай хамт зураг авахуулах гэж байна"
       },
       "answer": "C",
-      "explanation_mn": "«最喜欢的运动员», «拍张照» — тамирчинтай зураг авахуулна."
+      "explanation_mn": "«最喜欢的运动员», «拍张照» — тамирчинтай зураг авахуулна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb03.mp3"
      }
     ]
    },
@@ -60,7 +63,8 @@
        "C": "现在很着急"
       },
       "answer": "B",
-      "explanation_mn": "«看了一半就没看了» — тоглолтыг дуустал үзээгүй."
+      "explanation_mn": "«看了一半就没看了» — тоглолтыг дуустал үзээгүй.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb04.mp3"
      },
      {
       "n": 5,
@@ -72,7 +76,8 @@
        "C": "出国比赛了"
       },
       "answer": "C",
-      "explanation_mn": "«我出国比赛了» — гадаадад тэмцээнд явсан."
+      "explanation_mn": "«我出国比赛了» — гадаадад тэмцээнд явсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb05.mp3"
      },
      {
       "n": 6,
@@ -84,7 +89,8 @@
        "C": "现在多练习"
       },
       "answer": "A",
-      "explanation_mn": "«注意打好每一个球» — бөмбөг бүрийг сайн тоглохд анхаар."
+      "explanation_mn": "«注意打好每一个球» — бөмбөг бүрийг сайн тоглохд анхаар.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb06.mp3"
      }
     ]
    },
@@ -103,7 +109,8 @@
        "C": "看奥运会"
       },
       "answer": "C",
-      "explanation_mn": "«我昨天看了奥运会一百米短跑比赛» — олимпийн тэмцээн үзсэн."
+      "explanation_mn": "«我昨天看了奥运会一百米短跑比赛» — олимпийн тэмцээн үзсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb07.mp3"
      },
      {
       "n": 8,
@@ -115,7 +122,8 @@
        "C": "参加唱歌比赛"
       },
       "answer": "A",
-      "explanation_mn": "Бямба гарагт дуулах дасгал хийнэ."
+      "explanation_mn": "Бямба гарагт дуулах дасгал хийнэ.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb08.mp3"
      },
      {
       "n": 9,
@@ -127,7 +135,8 @@
        "C": "参加比赛"
       },
       "answer": "A",
-      "explanation_mn": "«每天下课以后，她都要去体育馆运动一会儿»."
+      "explanation_mn": "«每天下课以后，她都要去体育馆运动一会儿».",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb09.mp3"
      },
      {
       "n": 10,
@@ -139,12 +148,12 @@
        "C": "喜欢参加比赛"
       },
       "answer": "C",
-      "explanation_mn": "«她还很喜欢参加比赛» — тэмцээнд оролцох дуртай."
+      "explanation_mn": "«她还很喜欢参加比赛» — тэмцээнд оролцох дуртай.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l09/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

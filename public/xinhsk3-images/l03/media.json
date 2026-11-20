@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-hero.webp",
+   "title": "3-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l03-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w1.webp",
+   "title": "卫生间 wèishēngjiān — ариун цэврийн өрөө",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w2.webp",
+   "title": "空调 kōngtiáo — агааржуулагч",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w3.webp",
+   "title": "冰箱 bīngxiāng — хөргөгч",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w4.webp",
+   "title": "洗衣机 xǐyījī — угаалгын машин",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w5.webp",
+   "title": "灯 dēng — гэрэл",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l03/l03-w6.webp",
+   "title": "花园 huāyuán — цэцэрлэг",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -17,7 +17,8 @@
        "C": "зураг: хүн зоогийн газарт хооллож байна"
       },
       "answer": "A",
-      "explanation_mn": "«只会做方便面» — зөвхөн шууд лапша хийж чадна."
+      "explanation_mn": "«只会做方便面» — зөвхөн шууд лапша хийж чадна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb01.mp3"
      },
      {
       "n": 2,
@@ -29,7 +30,8 @@
        "C": "зураг: хоёр хос савх"
       },
       "answer": "A",
-      "explanation_mn": "Нэг хос савх, нэг аяга хүссэн."
+      "explanation_mn": "Нэг хос савх, нэг аяга хүссэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb02.mp3"
      },
      {
       "n": 3,
@@ -41,7 +43,8 @@
        "C": "зураг: хүн гал тогоонд хоол хийж байна"
       },
       "answer": "A",
-      "explanation_mn": "Хоол хүргүүлж захиалаад хүлээж байна."
+      "explanation_mn": "Хоол хүргүүлж захиалаад хүлээж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb03.mp3"
      }
     ]
    },
@@ -60,7 +63,8 @@
        "C": "男的请女的去他家"
       },
       "answer": "B",
-      "explanation_mn": "Эрэгтэй «我最喜欢吃这个鸡肉» гэсэн. Эмэгтэй хоол хийсэн, түүнийг гэртээ урьсан."
+      "explanation_mn": "Эрэгтэй «我最喜欢吃这个鸡肉» гэсэн. Эмэгтэй хоол хийсэн, түүнийг гэртээ урьсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb04.mp3"
      },
      {
       "n": 5,
@@ -72,7 +76,8 @@
        "C": "菜好吃还便宜"
       },
       "answer": "C",
-      "explanation_mn": "«菜又好吃又便宜» — хоол амттай бас хямд."
+      "explanation_mn": "«菜又好吃又便宜» — хоол амттай бас хямд.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb05.mp3"
      },
      {
       "n": 6,
@@ -84,7 +89,8 @@
        "C": "她不喜欢吃外卖"
       },
       "answer": "A",
-      "explanation_mn": "«我今天不太饿» — тэр төдийлөн өлсөөгүй тул нөгөөд нь сонгуулж байна."
+      "explanation_mn": "«我今天不太饿» — тэр төдийлөн өлсөөгүй тул нөгөөд нь сонгуулж байна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb06.mp3"
      }
     ]
    },
@@ -103,7 +109,8 @@
        "C": "晚上"
       },
       "answer": "C",
-      "explanation_mn": "«晚上五点到九点不能送外卖» — орой."
+      "explanation_mn": "«晚上五点到九点不能送外卖» — орой.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb07.mp3"
      },
      {
       "n": 8,
@@ -115,7 +122,8 @@
        "C": "很着急"
       },
       "answer": "B",
-      "explanation_mn": "«服务员很热情» — халуун дотно."
+      "explanation_mn": "«服务员很热情» — халуун дотно.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb08.mp3"
      },
      {
       "n": 9,
@@ -127,7 +135,8 @@
        "C": "什么都想尝尝"
       },
       "answer": "C",
-      "explanation_mn": "«我什么都想尝一尝» — бүгдийг амсаж үзмээр байсан."
+      "explanation_mn": "«我什么都想尝一尝» — бүгдийг амсаж үзмээр байсан.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb09.mp3"
      },
      {
       "n": 10,
@@ -139,12 +148,12 @@
        "C": "两碗面条儿"
       },
       "answer": "A",
-      "explanation_mn": "«马上给我拿来了两个碗和两双筷子» — хоёр аяга, хоёр хос савх. Сонголтоос зөвхөн савх зөв."
+      "explanation_mn": "«马上给我拿来了两个碗和两双筷子» — хоёр аяга, хоёр хос савх. Сонголтоос зөвхөн савх зөв.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l02/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [

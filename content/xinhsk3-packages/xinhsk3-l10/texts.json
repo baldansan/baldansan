@@ -607,6 +607,7 @@
     "explanation_wrong_mn": "Сяосюэ даалгавар бичихээс өмнө тэмдэглэлээ нэг удаа уншдаг."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Миний сурах арга» (我的学习方法)",
    "zh": "我现在上初中二年级，学习很努力。上课的时候，我认真听课，认真记笔记。老师写在黑板上的题，我都会把它们记在本子上。每天写作业以前，我还要把笔记看一遍。在老师的帮助下，我的成绩提高了很多。后年我想考一个好高中。",
@@ -1223,7 +1224,8 @@
      "explanation_correct_mn": "Зөв. Сяосюэ «明天还有考试，先复习外语吧» гэсэн: маргааш гадаад хэлний шалгалт.",
      "explanation_wrong_mn": "«先复习外语» — эхлээд гадаад хэлээ давтъя гэсэн тул маргаашийн шалгалт гадаад хэл."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/text2.mp3"
   },
   {
    "id": 3,
@@ -1873,7 +1875,8 @@
      "explanation_correct_mn": "Зөв. Багш «你们回家也做一做» гэсэн: гэртээ дасгал хийлгэхээр ном өгсөн.",
      "explanation_wrong_mn": "Номонд дасгал байгаа бөгөөд багш гэртээ хийхийг хүссэн."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/text3.mp3"
   },
   {
    "id": 4,
@@ -2472,7 +2475,8 @@
      "explanation_correct_mn": "Зөв. «小学六年, 初中三年, 高中三年» — бага сургууль 6 жил.",
      "explanation_wrong_mn": "Текстэд «小学六年» гэж бичсэн."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2879,7 +2883,8 @@
        "E": "зураг: багш самбар дээр бичиж байна",
        "F": "зураг: сурагч ном уншиж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb01.mp3"
      },
      {
       "n": 2,
@@ -2893,7 +2898,8 @@
        "E": "зураг: багш самбар дээр бичиж байна",
        "F": "зураг: сурагч ном уншиж байна"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb02.mp3"
      },
      {
       "n": 3,
@@ -2907,7 +2913,8 @@
        "E": "зураг: багш самбар дээр бичиж байна",
        "F": "зураг: сурагч ном уншиж байна"
       },
-      "answer": "D"
+      "answer": "D",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb03.mp3"
      }
     ]
    },
@@ -2925,7 +2932,8 @@
        "B": "上课认真听课",
        "C": "看同学的笔记"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb04.mp3"
      },
      {
       "n": 5,
@@ -2936,7 +2944,8 @@
        "B": "女的做对了",
        "C": "男的觉得不太难"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb05.mp3"
      },
      {
       "n": 6,
@@ -2947,7 +2956,8 @@
        "B": "没准备考试",
        "C": "每天都复习"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb06.mp3"
      }
     ]
    },
@@ -2965,7 +2975,8 @@
        "B": "不常写作业",
        "C": "让妈妈检查作业"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb07.mp3"
      },
      {
       "n": 8,
@@ -2976,7 +2987,8 @@
        "B": "中文歌",
        "C": "中国电影"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb08.mp3"
      },
      {
       "n": 9,
@@ -2987,7 +2999,8 @@
        "B": "学习认真",
        "C": "每天很早回家"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb09.mp3"
      },
      {
       "n": 10,
@@ -2998,12 +3011,12 @@
        "B": "姐姐影响了他",
        "C": "考试成绩不好"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l10/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

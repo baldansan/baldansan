@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-hero.webp",
+   "title": "8-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l08-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w1.webp",
+   "title": "耳朵 ěrduo — чих",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w2.webp",
+   "title": "腿 tuǐ — хөл",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w3.webp",
+   "title": "发烧 fāshāo — халуурах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w4.webp",
+   "title": "病人 bìngrén — өвчтөн",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w5.webp",
+   "title": "感冒 gǎnmào — ханиад",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l08/l08-w6.webp",
+   "title": "胖 pàng — тарган",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

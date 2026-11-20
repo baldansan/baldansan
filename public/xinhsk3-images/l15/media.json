@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-hero.webp",
+   "title": "15-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l15-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w1.webp",
+   "title": "河 hé — гол",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l15-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w2.webp",
+   "title": "老人 lǎorén — ахмад настан",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l15-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w3.webp",
+   "title": "草地 cǎodì — зүлэг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l15-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w4.webp",
+   "title": "蓝天 lántiān — цэнхэр тэнгэр",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l15-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w5.webp",
+   "title": "马路 mǎlù — зам",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l15-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l15/l15-w6.webp",
+   "title": "游戏 yóuxì — тоглоом",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

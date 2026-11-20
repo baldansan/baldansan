@@ -548,6 +548,7 @@
     "explanation_wrong_mn": "Яриаг дахин уншаарай: Ли Вэнь Тунлэгээс өндөр, туранхай."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Онгоцны буудал дээр найзаа тосов» (去机场接朋友)",
    "zh": "今天下午我去机场接朋友。他身高一米七，头发很短，看起来很年轻。我还以为他会穿黑衣服，可是他穿着白衣服，站在中间。他好像有点儿着急，因为他的行李箱不见了。我带他去服务台，那里的人帮助他找到了行李箱。护照也很重要，他应该放在包里。",
@@ -1047,7 +1048,8 @@
      "explanation_correct_mn": "Зөв. «我们拿着护照和机票，去服务台问问吧» гэж хэлсэн.",
      "explanation_wrong_mn": "Ли Вэнь лавлах руу очихыг санал болгосон."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/text2.mp3"
   },
   {
    "id": 3,
@@ -1511,7 +1513,8 @@
      "explanation_correct_mn": "Зөв. «穿着黑衣服的短头发的年轻人» — хар хувцастай, богино үстэй.",
      "explanation_wrong_mn": "Яриаг дахин уншаарай: хар хувцас, богино үс."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/text3.mp3"
   },
   {
    "id": 4,
@@ -2007,7 +2010,8 @@
      "explanation_correct_mn": "Зөв. «家月发现行李箱不见了» — чемодан нь алга болсон.",
      "explanation_wrong_mn": "Алга болсон нь чемодан (行李箱)."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2411,7 +2415,8 @@
        "B": "зураг: хоёр хүн чемодан татаж байна",
        "C": "зураг: нэг хүн утсаар ярьж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb01.mp3"
      },
      {
       "n": 2,
@@ -2422,7 +2427,8 @@
        "B": "зураг: хүн ном уншиж байна",
        "C": "зураг: хүн хоол хийж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb02.mp3"
      },
      {
       "n": 3,
@@ -2433,7 +2439,8 @@
        "B": "зураг: өндөр настай багш сууж байна",
        "C": "зураг: хүүхэд тоглож байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb03.mp3"
      }
     ]
    },
@@ -2451,7 +2458,8 @@
        "B": "找箱子",
        "C": "拿箱子"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb04.mp3"
      },
      {
       "n": 5,
@@ -2462,7 +2470,8 @@
        "B": "女孩儿",
        "C": "最高的人"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb05.mp3"
      },
      {
       "n": 6,
@@ -2473,7 +2482,8 @@
        "B": "画画",
        "C": "等行李"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb06.mp3"
      }
     ]
    },
@@ -2491,7 +2501,8 @@
        "B": "去国外",
        "C": "接朋友"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb07.mp3"
      },
      {
       "n": 8,
@@ -2502,7 +2513,8 @@
        "B": "两个",
        "C": "三个"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb08.mp3"
      },
      {
       "n": 9,
@@ -2513,7 +2525,8 @@
        "B": "坐公交车",
        "C": "接新老师"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb09.mp3"
      },
      {
       "n": 10,
@@ -2524,12 +2537,12 @@
        "B": "比照片上年轻",
        "C": "头发比照片上短"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l01/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

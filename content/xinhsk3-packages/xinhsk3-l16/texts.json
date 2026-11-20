@@ -659,6 +659,7 @@
     "explanation_wrong_mn": "Тэр муур тэжээхгүй гэж шийдэж, оронд нь амьтны хүрээлэн явна."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Амьтны хүрээлэнд» (在动物园)",
    "zh": "上个周末我去了动物园。动物园里有很多可爱的动物，大家最喜爱的是大熊猫。一般来说，它们每天要吃很长时间。有一只大熊猫张着嘴找吃的，好像还没吃饱，它身边的那只半天没动，可能在睡觉。冬天动物园比夏天早关门一个小时，所以我们去得很早。",
@@ -1326,7 +1327,8 @@
      "explanation_correct_mn": "Зөв. «全世界只有中国有野生大熊猫» — зэрлэг панда зөвхөн Хятадад.",
      "explanation_wrong_mn": "Ээж нь «зөвхөн Хятадад зэрлэг панда бий» гэж хариулсан."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/text2.mp3"
   },
   {
    "id": 3,
@@ -1907,7 +1909,8 @@
      "explanation_correct_mn": "Зөв. «站起来张着嘴找吃的» — босоод ам ангайж хоол хайж байна.",
      "explanation_wrong_mn": "Ээж нь пандаг ам ангайж хоол хайж байгааг хараад ингэж бодсон."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/text3.mp3"
   },
   {
    "id": 4,
@@ -2426,7 +2429,8 @@
      "explanation_correct_mn": "Зөв. «冬天比夏天游客少，所以也比平时早关门一个小时».",
      "explanation_wrong_mn": "Шалтгаан нь жуулчин цөөн байдаг."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2858,7 +2862,8 @@
        "B": "зураг: панда авирч, хүн зураг авч байна",
        "C": "зураг: хүмүүс тасалбар авахаар дараалж байна"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb01.mp3"
      },
      {
       "n": 2,
@@ -2869,7 +2874,8 @@
        "B": "зураг: хүн оффист ажиллаж байна",
        "C": "зураг: хүмүүс усанд сэлж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb02.mp3"
      },
      {
       "n": 3,
@@ -2880,7 +2886,8 @@
        "B": "зураг: хоёр хүн хоол идэж байна",
        "C": "зураг: хүмүүс касс дээр дараалж байна"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb03.mp3"
      }
     ]
    },
@@ -2898,7 +2905,8 @@
        "B": "高中",
        "C": "大学"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb04.mp3"
      },
      {
       "n": 5,
@@ -2909,7 +2917,8 @@
        "B": "没时间照顾它们",
        "C": "她在小猫咖啡馆工作"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb05.mp3"
      },
      {
       "n": 6,
@@ -2920,7 +2929,8 @@
        "B": "天气不好",
        "C": "动物太少"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb06.mp3"
      }
     ]
    },
@@ -2938,7 +2948,8 @@
        "B": "对动物很了解",
        "C": "在动物园工作"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb07.mp3"
      },
      {
       "n": 8,
@@ -2949,7 +2960,8 @@
        "B": "吃得很少",
        "C": "不喜欢爬树"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb08.mp3"
      },
      {
       "n": 9,
@@ -2960,7 +2972,8 @@
        "B": "去过很多地方",
        "C": "喜欢它的人不多"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb09.mp3"
      },
      {
       "n": 10,
@@ -2971,12 +2984,12 @@
        "B": "十多年",
        "C": "二十年"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l16/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

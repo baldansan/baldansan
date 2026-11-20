@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+"""Хичээл бүрийн зургийн төлөвлөгөө: hero (1) + 热身 үгс. Higgsfield gpt_image_2_6 prompt."""
+STYLE = "Simple clean flat vector illustration, soft warm pastel colors, plain white background, no text, no letters, no watermark, friendly educational flashcard style. "
+HERO_STYLE = "Warm flat illustration in a modern children's textbook style, soft colors, gentle lighting, no text, no letters. Scene: "
+
+HERO = {
+ 1: "a young Chinese couple at an airport arrivals hall looking at a phone photo while a French student with a red suitcase walks out of the gate",
+ 2: "four friends ordering food at a cozy Chinese restaurant, waiter bringing dumplings, green tea and chopsticks",
+ 3: "a family looking at a bright new apartment with a small garden on the first floor, moving boxes, refrigerator and air conditioner",
+ 4: "two friends planning a holiday trip to the grasslands, horses and sheep under a big moon, a small guesthouse",
+ 5: "a sunny day on a mountain trail, friends taking photos with a phone, a bird flying by, tall trees",
+ 6: "a modern Chinese high-speed train interior, passenger ordering food delivery on a phone, comfortable seats",
+ 7: "a mother and daughter shopping at a mall, trying a yellow skirt and shorts, a new bicycle, watermelons at a fruit stall",
+ 8: "a patient leaving a hospital with a friend, doctor explaining medicine, badminton rackets in a sports hall",
+ 9: "university students playing tennis and badminton on a campus sports field, a football match on TV",
+ 10: "a middle school student taking notes in math class, blackboard, teacher lending a book in the office",
+ 11: "an office meeting room with a laptop and a projector that will not show the picture, coworkers talking",
+ 12: "a spring street in Beijing with blooming trees, sudden wind and rain, a person sharing an umbrella",
+ 13: "a birthday party at home with British neighbours, gifts, a world map with red dots, friends eating and chatting",
+ 14: "a university library with students returning a dictionary and borrowing books, a stage with students singing at a new year party",
+ 15: "a quiet residential neighbourhood by a river with tall trees, elderly people chatting, children playing, blue sky",
+ 16: "giant pandas eating bamboo and climbing a tree at a zoo, a mother with two kids watching",
+ 17: "a graduating student thinking about the future, a path with signposts, a library and a university campus",
+ 18: "a family making dumplings together for Chinese Spring Festival, red lanterns, red envelopes, TV gala in the background",
+}
+
+# (ханз, пиньинь, монгол, англи prompt)
+WORDS = {
+ 1: [("照片","zhàopiàn","гэрэл зураг","a printed photograph of a smiling family"),("行李箱","xínglixiāng","чемодан","a red rolling suitcase"),("头发","tóufa","үс","a woman's long black hair, close-up of head"),("身高","shēngāo","биеийн өндөр","a boy standing next to a height measuring ruler on a wall"),("护照","hùzhào","гадаад паспорт","a passport booklet"),("接人","jiē rén","хүн тосох","a person holding a welcome sign at an airport arrivals gate")],
+ 2: [("菜单","càidān","хоолны цэс","a restaurant menu card"),("饮料","yǐnliào","ундаа","a glass of soft drink with ice and a straw"),("绿茶","lǜchá","ногоон цай","a cup of green tea with leaves"),("蛋糕","dàngāo","бялуу","a slice of cake with strawberries"),("鸡肉","jīròu","тахианы мах","a plate of cooked chicken pieces")],
+ 3: [("卫生间","wèishēngjiān","ариун цэврийн өрөө","a clean bathroom with a toilet and sink"),("空调","kōngtiáo","агааржуулагч","a wall air conditioner unit"),("冰箱","bīngxiāng","хөргөгч","a refrigerator with the door slightly open"),("洗衣机","xǐyījī","угаалгын машин","a front-loading washing machine"),("灯","dēng","гэрэл","a table lamp switched on"),("花园","huāyuán","цэцэрлэг","a small garden with flowers in front of a house")],
+ 4: [("相机","xiàngjī","зургийн аппарат","a digital camera"),("月亮","yuèliang","сар","a full moon in the night sky"),("宾馆","bīnguǎn","зочид буудал","a small hotel building with a sign"),("骑马","qí mǎ","морь унах","a person riding a horse on the grassland"),("海","hǎi","далай","the sea with waves and a beach"),("羊","yáng","хонь","a white sheep standing on grass")],
+ 5: [("太阳","tàiyáng","нар","a bright sun in a blue sky"),("爬山","pá shān","ууланд авирах","a hiker climbing a mountain trail"),("鞋","xié","гутал","a pair of sneakers"),("拍照","pāizhào","зураг авах","a person taking a photo with a smartphone"),("音乐","yīnyuè","хөгжим","headphones with musical notes"),("树","shù","мод","a big green tree")],
+ 6: [("高铁","gāotiě","хурдны галт тэрэг","a white Chinese high-speed train at a station"),("检票","jiǎnpiào","тийз шалгах","a ticket gate at a train station with a person scanning a ticket"),("耳机","ěrjī","чихэвч","wireless earphones"),("路口","lùkǒu","уулзвар","a street crossroads seen from above"),("红绿灯","hónglǜdēng","гэрлэн дохио","a traffic light with red, yellow and green"),("沙发","shāfā","буйдан","a comfortable sofa")],
+ 7: [("西瓜","xīguā","тарвас","a watermelon with a cut slice"),("香蕉","xiāngjiāo","гадил","a bunch of bananas"),("自行车","zìxíngchē","унадаг дугуй","a bicycle"),("裙子","qúnzi","юбка","a yellow skirt on a hanger"),("短裤","duǎnkù","шорт","a pair of shorts")],
+ 8: [("耳朵","ěrduo","чих","a human ear, close-up"),("腿","tuǐ","хөл","a person's legs, one leg bandaged"),("发烧","fāshāo","халуурах","a person in bed with a thermometer and a red face"),("病人","bìngrén","өвчтөн","a patient lying in a hospital bed"),("感冒","gǎnmào","ханиад","a person sneezing with a tissue and a scarf"),("胖","pàng","тарган","a plump cheerful man")],
+ 9: [("球场","qiúchǎng","тоглоомын талбай","an outdoor sports field with goals"),("得分","défēn","оноо авах","a scoreboard showing points"),("羽毛球","yǔmáoqiú","бадминтон","a badminton racket and shuttlecock"),("网球","wǎngqiú","теннис","a tennis racket and ball"),("足球","zúqiú","хөлбөмбөг","a football"),("篮球","lánqiú","сагсан бөмбөг","a basketball and hoop")],
+ 10: [("办公室","bàngōngshì","албан өрөө","a teacher's office with a desk and books"),("黑板","hēibǎn","самбар","a classroom blackboard with chalk"),("数学","shùxué","математик","a math notebook with numbers and geometric shapes"),("考试","kǎoshì","шалгалт","students taking an exam at desks"),("历史","lìshǐ","түүх","an old history book and a scroll"),("成绩","chéngjì","дүн","a graded test paper with a high score")],
+ 11: [("会议室","huìyìshì","хурлын өрөө","a meeting room with a long table and chairs"),("开会","kāihuì","хуралдах","people in a business meeting"),("休假","xiūjià","амралт авах","a person relaxing on a beach chair with a suitcase"),("笔记本电脑","bǐjìběn diànnǎo","зөөврийн компьютер","a laptop computer"),("发邮件","fā yóujiàn","имэйл илгээх","an envelope icon flying out of a laptop screen"),("经理","jīnglǐ","менежер","a manager in a suit standing in an office")],
+ 12: [("冬天","dōngtiān","өвөл","a snowy winter landscape with a snowman"),("雨衣","yǔyī","борооны цув","a yellow raincoat"),("船","chuán","завь","a small boat on a lake"),("雨伞","yǔsǎn","шүхэр","an open umbrella in the rain"),("公园","gōngyuán","цэцэрлэгт хүрээлэн","a city park with trees and a bench"),("街","jiē","гудамж","a city street with shops")],
+ 13: [("夫妻","fūqī","эхнэр нөхөр","a husband and wife standing together"),("红茶","hóngchá","хар цай","a cup of black tea"),("盘子","pánzi","таваг","an empty white plate"),("礼物","lǐwù","бэлэг","a gift box with a ribbon"),("邻居","línjū","хөрш","two neighbours greeting each other over a fence"),("画家","huàjiā","зураач","a painter with an easel and brush")],
+ 14: [("词典","cídiǎn","толь бичиг","a thick dictionary book"),("报纸","bàozhǐ","сонин","a folded newspaper"),("图书馆","túshūguǎn","номын сан","a library interior with bookshelves"),("电子书","diànzǐshū","цахим ном","an e-book reader tablet"),("班级","bānjí","анги","a class of students in a classroom"),("校长","xiàozhǎng","захирал","a school principal standing in front of a school")],
+ 15: [("河","hé","гол","a river flowing through a green landscape"),("老人","lǎorén","ахмад настан","an elderly man sitting on a bench"),("草地","cǎodì","зүлэг","a green grass lawn"),("蓝天","lántiān","цэнхэр тэнгэр","a clear blue sky with small clouds"),("马路","mǎlù","зам","a city road with cars"),("游戏","yóuxì","тоглоом","children playing a game together")],
+ 16: [("脸","liǎn","нүүр","a child's face, close-up"),("嘴","zuǐ","ам","a mouth, close-up"),("眼睛","yǎnjing","нүд","a pair of eyes, close-up"),("耳朵","ěrduo","чих","a human ear, close-up"),("脚","jiǎo","хөлийн тавхай","a pair of bare feet")],
+ 17: [("生气","shēngqì","уурлах","an angry person with crossed arms"),("害怕","hàipà","айх","a scared person hiding behind a pillow"),("开心","kāixīn","баяртай","a happy jumping person"),("紧张","jǐnzhāng","сандрах","a nervous student sweating before an exam"),("容易","róngyì","амархан","a child easily solving a simple puzzle with a thumbs up"),("选择","xuǎnzé","сонгох","a person choosing between two doors")],
+ 18: [("包饺子","bāo jiǎozi","банш чимхэх","hands making dumplings on a table with dough"),("给红包","gěi hóngbāo","улаан дугтуй өгөх","a grandmother giving a red envelope to a child"),("说“过年好”","shuō guònián hǎo","«Сар шинэдээ сайхан шинэлээрэй» гэж хэлэх","two people bowing and greeting each other with red lanterns"),("吃年夜饭","chī niányèfàn","шинэ жилийн оройн зоог идэх","a family having a big festive dinner at a round table"),("打扫房子","dǎsǎo fángzi","гэрээ цэвэрлэх","a person sweeping and cleaning a house"),("看春节联欢晚会","kàn Chūnjié liánhuān wǎnhuì","Хаврын баярын тоглолт үзэх","a family watching a festive gala show on TV")],
+}

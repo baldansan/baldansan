@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-hero.webp",
+   "title": "10-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l10-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w1.webp",
+   "title": "办公室 bàngōngshì — албан өрөө",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w2.webp",
+   "title": "黑板 hēibǎn — самбар",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w3.webp",
+   "title": "数学 shùxué — математик",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w4.webp",
+   "title": "考试 kǎoshì — шалгалт",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w5.webp",
+   "title": "历史 lìshǐ — түүх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l10/l10-w6.webp",
+   "title": "成绩 chéngjì — дүн",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

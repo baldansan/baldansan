@@ -512,6 +512,7 @@
     "explanation_wrong_mn": "«不怎么样» — тийм ч сайн биш."
    }
   ],
+  "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/text1.mp3",
   "writingSample": {
    "title_mn": "Бичих · Загвар бичлэг — «Миний эрүүл дадал» (我的健康习惯)",
    "zh": "最近我胖了五斤，所以决定每天下课以后去体育馆运动。我常打羽毛球，也跑一个小时步。以前我不太注意身体，现在我已经运动了两个月了。这个习惯真不错，我觉得自己健康多了，也开心多了。我要一直运动下去，不想再胖下去了。",
@@ -1035,7 +1036,8 @@
      "explanation_correct_mn": "Зөв. «我先回去睡一觉» — эхлээд буцаж нэг унтана.",
      "explanation_wrong_mn": "Тяньчжун буцаж унтах гэж байна."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/text2.mp3"
   },
   {
    "id": 3,
@@ -1696,7 +1698,8 @@
      "explanation_correct_mn": "Зөв. Анни «是不是运动太多了？» гэж таамагласан.",
      "explanation_wrong_mn": "Анни хэт их дасгал хөдөлгөөн гэж боддог."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/text3.mp3"
   },
   {
    "id": 4,
@@ -2151,7 +2154,8 @@
      "explanation_correct_mn": "Зөв. Нэг эм унтахын өмнө, бусад нь хоолны дараа.",
      "explanation_wrong_mn": "Эмч эмийн уух цагийг хоёр янзаар хэлсэн."
     }
-   ]
+   ],
+   "audioFile": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/text4.mp3"
   }
  ],
  "wordExplanation": [
@@ -2583,7 +2587,8 @@
        "B": "зураг: эмч өвчтөний хөлийг шалгаж байна",
        "C": "зураг: хүн эмийн хайрцаг барьж байна"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb01.mp3"
      },
      {
       "n": 2,
@@ -2594,7 +2599,8 @@
        "B": "зураг: эмч өвчтөний хөлийг шалгаж байна",
        "C": "зураг: хүн эмийн хайрцаг барьж байна"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb02.mp3"
      },
      {
       "n": 3,
@@ -2605,7 +2611,8 @@
        "B": "зураг: эмч өвчтөний хөлийг шалгаж байна",
        "C": "зураг: хүн эмийн хайрцаг барьж байна"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb03.mp3"
      }
     ]
    },
@@ -2623,7 +2630,8 @@
        "B": "出院",
        "C": "看病"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb04.mp3"
      },
      {
       "n": 5,
@@ -2634,7 +2642,8 @@
        "B": "生病了",
        "C": "去医院了"
       },
-      "answer": "A"
+      "answer": "A",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb05.mp3"
      },
      {
       "n": 6,
@@ -2645,7 +2654,8 @@
        "B": "给同学们写信",
        "C": "在家休息一周"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb06.mp3"
      }
     ]
    },
@@ -2663,7 +2673,8 @@
        "B": "一直喜欢运动",
        "C": "现在会跑步和游泳"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb07.mp3"
      },
      {
       "n": 8,
@@ -2674,7 +2685,8 @@
        "B": "发高烧",
        "C": "回学校了"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb08.mp3"
      },
      {
       "n": 9,
@@ -2685,7 +2697,8 @@
        "B": "头也开始疼了",
        "C": "晚上睡得不好"
       },
-      "answer": "B"
+      "answer": "B",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb09.mp3"
      },
      {
       "n": 10,
@@ -2696,12 +2709,12 @@
        "B": "不用做检查",
        "C": "不要自己吃药"
       },
-      "answer": "C"
+      "answer": "C",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l08/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "workbookReading": {
   "answer_source": "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)",

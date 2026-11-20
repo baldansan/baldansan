@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-hero.webp",
+   "title": "6-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l06-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w1.webp",
+   "title": "高铁 gāotiě — хурдны галт тэрэг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w2.webp",
+   "title": "检票 jiǎnpiào — тийз шалгах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w3.webp",
+   "title": "耳机 ěrjī — чихэвч",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w4.webp",
+   "title": "路口 lùkǒu — уулзвар",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w5.webp",
+   "title": "红绿灯 hónglǜdēng — гэрлэн дохио",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk3-images/l06/l06-w6.webp",
+   "title": "沙发 shāfā — буйдан",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

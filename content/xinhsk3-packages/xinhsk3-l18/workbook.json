@@ -1,6 +1,6 @@
 {
  "listening": {
-  "audio_available": false,
+  "audio_available": true,
   "parts": [
    {
     "part": 1,
@@ -17,7 +17,8 @@
        "C": "зураг: хүн ус худалдаж авч байна"
       },
       "answer": "A",
-      "explanation_mn": "«照相的时候我才出生一个月» — нярай үеийн зураг."
+      "explanation_mn": "«照相的时候我才出生一个月» — нярай үеийн зураг.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb01.mp3"
      },
      {
       "n": 2,
@@ -29,7 +30,8 @@
        "C": "зураг: хүн ном уншиж байна"
       },
       "answer": "A",
-      "explanation_mn": "«一起包饺子» — хамт бууз боох."
+      "explanation_mn": "«一起包饺子» — хамт бууз боох.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb02.mp3"
      },
      {
       "n": 3,
@@ -41,7 +43,8 @@
        "C": "зураг: хүн утсаар ярьж байна"
       },
       "answer": "A",
-      "explanation_mn": "«去买瓶矿泉水» — ус худалдан авна."
+      "explanation_mn": "«去买瓶矿泉水» — ус худалдан авна.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb03.mp3"
      }
     ]
    },
@@ -60,7 +63,8 @@
        "C": "爱旅游"
       },
       "answer": "B",
-      "explanation_mn": "Эмэгтэй «是因为我看的书多» гэж хариулсан — ном их уншдаг."
+      "explanation_mn": "Эмэгтэй «是因为我看的书多» гэж хариулсан — ном их уншдаг.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb04.mp3"
      },
      {
       "n": 5,
@@ -72,7 +76,8 @@
        "C": "国家图书馆"
       },
       "answer": "B",
-      "explanation_mn": "Жолооч «хэр удаан явах вэ?» гэсэнд хариулж, «ойртоход дуудна» гэсэн — таксид."
+      "explanation_mn": "Жолооч «хэр удаан явах вэ?» гэсэнд хариулж, «ойртоход дуудна» гэсэн — таксид.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb05.mp3"
      },
      {
       "n": 6,
@@ -84,7 +89,8 @@
        "C": "昨天去爬山了"
       },
       "answer": "B",
-      "explanation_mn": "«你是从昨天起才开始跑步的吧» — өчигдөр л гүйж эхэлсэн."
+      "explanation_mn": "«你是从昨天起才开始跑步的吧» — өчигдөр л гүйж эхэлсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb06.mp3"
      }
     ]
    },
@@ -103,7 +109,8 @@
        "C": "去爬山"
       },
       "answer": "A",
-      "explanation_mn": "«早点睡吧» — эрт унт гэсэн."
+      "explanation_mn": "«早点睡吧» — эрт унт гэсэн.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb07.mp3"
      },
      {
       "n": 8,
@@ -115,7 +122,8 @@
        "C": "自己的男朋友"
       },
       "answer": "B",
-      "explanation_mn": "«是我爱人的弟弟» — нөхрийн/эхнэрийн дүү."
+      "explanation_mn": "«是我爱人的弟弟» — нөхрийн/эхнэрийн дүү.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb08.mp3"
      },
      {
       "n": 9,
@@ -127,7 +135,8 @@
        "C": "在家里吃饭"
       },
       "answer": "C",
-      "explanation_mn": "«过去春节那天，老人和孩子们都在家里吃饭» — гэртээ хоол идэж."
+      "explanation_mn": "«过去春节那天，老人和孩子们都在家里吃饭» — гэртээ хоол идэж.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb09.mp3"
      },
      {
       "n": 10,
@@ -139,12 +148,12 @@
        "C": "去饭馆吃饭"
       },
       "answer": "C",
-      "explanation_mn": "«很多人更愿意去饭馆吃饭» — зоогийн газар хооллох."
+      "explanation_mn": "«很多人更愿意去饭馆吃饭» — зоогийн газар хооллох.",
+      "audio": "https://surtsgaay.buunduu.mn/xinhsk3-audio/l18/wb10.mp3"
      }
     ]
    }
-  ],
-  "audio_note_mn": "Аудио хараахан ороогүй — бичвэрийг нь уншуулж сонсоно."
+  ]
  },
  "reading": {
   "parts": [
