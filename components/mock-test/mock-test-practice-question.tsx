@@ -292,7 +292,7 @@ function TextOptionList({
             >
               <span className="bs-mtp-option-key">{opt.key}</span>
               <span className="bs-mtp-option-text hanzi" translate="no">
-                <TapZh text={opt.text} />
+                <TapZh text={opt.text ?? ""} />
               </span>
               <OptionMark state={state} />
             </div>
