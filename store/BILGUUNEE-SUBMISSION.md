@@ -2,6 +2,8 @@
 
 Апп нь Capacitor wrapper: утсан дээрх апп **https://surtsgaay.buunduu.mn** вэбийг нээнэ. Бүх код, icon, splash, screenshot, текст бэлэн — чи зөвхөн build хийж, store-д оруулна. Package / Bundle ID: `mn.buunduu.surtsgaay`. Хувилбар: `1.0.0 (1)`.
 
+> **2026-11-20 шинэчлэл:** апп ягаан (#7C4DDB) өнгөтэй болсон. Splash (Android/iOS), feature graphic, бүх screenshot (3 хэмжээ × 8) шинэ төрхөөр солигдсон. Өмнө татсан бол `git pull` хийгээд `npx cap sync` дахин ажиллуул. Icon өөрчлөгдөөгүй.
+
 Хэрэглэх материал бүгд репо-гийн `store/` хавтаст: `LISTING.md` (бүх текст, Data safety хариулт), `graphics/`, `screenshots/`.
 
 ---
@@ -20,7 +22,9 @@ buunduu.mn-ийн DNS (dns.mn) дээр нэмнэ:
 # Xcode (App Store), Android Studio, Homebrew суусан байх
 brew install node cocoapods
 brew install --cask temurin@17
-git clone https://github.com/baldansan/baldansan.git && cd baldansan
+# Бүтэн репо 6 GB орчим (номын аудио, түүх). Store-д зөвхөн доорх хэсэг л хэрэгтэй (~60 MB):
+git clone --depth 1 --filter=blob:none --sparse https://github.com/baldansan/baldansan.git && cd baldansan
+git sparse-checkout set android ios mobile-www assets store
 npm install
 npx cap sync
 ```

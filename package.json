@@ -12,7 +12,7 @@
     "cap:sync": "cap sync",
     "cap:android": "cap open android",
     "cap:ios": "cap open ios",
-    "mobile:assets": "capacitor-assets generate --iconBackgroundColor '#ffffff' --splashBackgroundColor '#1FB85A'",
+    "mobile:assets": "capacitor-assets generate --iconBackgroundColor '#ffffff' --splashBackgroundColor '#7C4DDB' --splashBackgroundColorDark '#14111D'",
     "lint": "eslint",
     "hsk1:audit:generate": "tsx scripts/hsk1-generate-source-audit.ts",
     "hsk1:audit:validate": "tsx scripts/hsk1-validate-source-audit.ts",
