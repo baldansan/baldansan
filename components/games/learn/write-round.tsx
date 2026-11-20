@@ -105,7 +105,7 @@ export function WriteRound({ word, meaning, onDone }: Props) {
       setStrokes({ done: 0, total });
       setState("draw");
       void writer.quiz({
-        leniency: 1.6,
+        leniency: 1.25,
         showHintAfterMisses: HINT_AFTER_MISSES,
         markStrokeCorrectAfterMisses: 6,
         highlightOnComplete: true,
