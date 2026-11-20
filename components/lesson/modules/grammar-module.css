@@ -687,3 +687,45 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Харанхуй горим: дүрмийн үе (цагаан картууд харанхуй дэвсгэр дээр тасарч харагдаж байсан) ── */
+html[data-theme="dark"] .bs-gr2-teacher,
+html[data-theme="dark"] .bs-gr2-example,
+html[data-theme="dark"] .bs-gr2-judge-btn,
+html[data-theme="dark"] .bs-gr2-quiz-opt { background: var(--bs-card); border-color: var(--bs-line); color: var(--bs-ink); }
+html[data-theme="dark"] .bs-gr2-teacher-ava,
+html[data-theme="dark"] .bs-gr2-formula,
+html[data-theme="dark"] .bs-gr2-mistake-card--ok,
+html[data-theme="dark"] .bs-gr2-judge-btn--ok,
+html[data-theme="dark"] .bs-gr2-exercise-expl { background: var(--bs-green-50); border-color: var(--bs-green-100); }
+html[data-theme="dark"] .bs-gr2-mn-reveal,
+html[data-theme="dark"] .bs-gr2-mistake-why,
+html[data-theme="dark"] .bs-gr2-quiz-opt--reveal { background: #241F33; border-color: var(--bs-line); }
+html[data-theme="dark"] .bs-gr2-mistake-card--bad,
+html[data-theme="dark"] .bs-gr2-judge-btn--bad { background: #3a1a1e; border-color: #6b2a30; color: #ff8a8a; }
+html[data-theme="dark"] .bs-gr2-warn,
+html[data-theme="dark"] .bs-gr2-exercise-expl--wrong { background: var(--bs-amber-50); border-color: var(--bs-amber-100); }
+html[data-theme="dark"] .bs-gr2-warn-title { color: #f5c877; }
+html[data-theme="dark"] .bs-gr2-warn-body,
+html[data-theme="dark"] .bs-gr2-point-mn,
+html[data-theme="dark"] .bs-gr2-teacher-txt,
+html[data-theme="dark"] .bs-gr2-mn-text,
+html[data-theme="dark"] .bs-gr2-exercise-expl { color: var(--bs-ink-2); }
+html[data-theme="dark"] .bs-gr2-point-num,
+html[data-theme="dark"] .bs-gr2-example-py,
+html[data-theme="dark"] .bs-gr2-mistake-why { color: var(--bs-muted); }
+html[data-theme="dark"] .bs-gr2-point-zh,
+html[data-theme="dark"] .bs-gr2-point-py,
+html[data-theme="dark"] .bs-gr2-section-label,
+html[data-theme="dark"] .bs-gr2-teacher-name,
+html[data-theme="dark"] .bs-gr2-formula-label,
+html[data-theme="dark"] .bs-gr2-formula-code,
+html[data-theme="dark"] .bs-gr2-mn-hint,
+html[data-theme="dark"] .bs-gr2-mistake-card--ok,
+html[data-theme="dark"] .bs-gr2-judge-btn--ok,
+html[data-theme="dark"] .bs-gr2-quiz-opt--reveal,
+html[data-theme="dark"] .bs-gr2-quiz-mark--ok,
+html[data-theme="dark"] .bs-gr2-quiz-feedback--ok { color: var(--bs-green-700); }
+html[data-theme="dark"] .bs-gr2-word-plain,
+html[data-theme="dark"] .bs-gr2-exercise-q { color: var(--bs-ink); }
+html[data-theme="dark"] .bs-gr2-quiz-feedback--bad { color: #ff8a8a; }
