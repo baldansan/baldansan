@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "会议",
+  "pinyin": "huìyì",
+  "mongolian": "хурал, чуулган",
+  "hskLevel": "HSK3",
+  "exampleChinese": "下午的会议，我不能去参加了。",
+  "exampleMongolian": "Үдээс хойших хуралд би оролцож чадахгүй боллоо.",
+  "pos": "нэр үг",
+  "collocations_zh": "参加会议 / 重要的会议"
+ },
+ {
+  "chinese": "经理",
+  "pinyin": "jīnglǐ",
+  "mongolian": "менежер, захирал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她是公司里最年轻的经理。",
+  "exampleMongolian": "Тэр компанийн хамгийн залуу менежер.",
+  "pos": "нэр үг",
+  "collocations_zh": "一位经理 / 年轻的经理"
+ },
+ {
+  "chinese": "开会",
+  "pinyin": "kāihuì",
+  "mongolian": "хурал хийх, хуралдах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "明天下午我们要开会。",
+  "exampleMongolian": "Маргааш үдээс хойш бид хуралдана.",
+  "pos": "үйл үг",
+  "collocations_zh": "开会的时候 / 开完会"
+ },
+ {
+  "chinese": "后天",
+  "pinyin": "hòutiān",
+  "mongolian": "нөгөөдөр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "后天是星期一。",
+  "exampleMongolian": "Нөгөөдөр бол даваа гараг.",
+  "pos": "нэр үг",
+  "collocations_zh": "后天上午 / 大后天"
+ },
+ {
+  "chinese": "地点",
+  "pinyin": "dìdiǎn",
+  "mongolian": "газар, байршил",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请在纸上写下时间和地点。",
+  "exampleMongolian": "Цаг, газрыг цаасан дээр бичнэ үү.",
+  "pos": "нэр үг",
+  "collocations_zh": "开会地点 / 上课地点"
+ },
+ {
+  "chinese": "室",
+  "pinyin": "shì",
+  "mongolian": "өрөө",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你可以去休息室休息一下。",
+  "exampleMongolian": "Чи амрах өрөөнд очиж жаахан амарч болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "会议室 / 休息室"
+ },
+ {
+  "chinese": "发",
+  "pinyin": "fā",
+  "mongolian": "илгээх; тарааж өгөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我昨天给你发了工作邮件。",
+  "exampleMongolian": "Би өчигдөр чамд ажлын и-мэйл илгээсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "发邮件 / 发给大家"
+ },
+ {
+  "chinese": "或者",
+  "pinyin": "huòzhě",
+  "mongolian": "эсвэл (хүүрнэх өгүүлбэрт)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你可以给我写信，或者打电话。",
+  "exampleMongolian": "Чи надад захиа бичиж, эсвэл утсаар залгаж болно.",
+  "pos": "холбоос үг",
+  "collocations_zh": "A或者B / 或者…或者…"
+ },
+ {
+  "chinese": "声音",
+  "pinyin": "shēngyīn",
+  "mongolian": "дуу чимээ, хоолой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她的声音是我听过最好听的声音。",
+  "exampleMongolian": "Түүний хоолой миний сонссон хамгийн сайхан хоолой.",
+  "pos": "нэр үг",
+  "collocations_zh": "好听的声音 / 听声音"
+ },
+ {
+  "chinese": "看来",
+  "pinyin": "kànlái",
+  "mongolian": "харахад … бололтой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "看来今天不下雨。",
+  "exampleMongolian": "Харахад өнөөдөр бороо орохгүй бололтой.",
+  "pos": "үйл үг",
+  "collocations_zh": "看来…"
+ },
+ {
+  "chinese": "办法",
+  "pinyin": "bànfǎ",
+  "mongolian": "арга, шийдэл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我有一个办法，你听听。",
+  "exampleMongolian": "Надад нэг арга бий, сонсооч.",
+  "pos": "нэр үг",
+  "collocations_zh": "好办法 / 想办法 / 没办法"
+ },
+ {
+  "chinese": "解决",
+  "pinyin": "jiějué",
+  "mongolian": "шийдвэрлэх, шийдэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "谢谢你帮我解决了这个问题。",
+  "exampleMongolian": "Энэ асуудлыг шийдэхэд тусалсанд баярлалаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "解决问题 / 解决办法"
+ },
+ {
+  "chinese": "只能",
+  "pinyin": "zhǐnéng",
+  "mongolian": "зөвхөн … л болох, өөр аргагүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "没有车，我们只能走路。",
+  "exampleMongolian": "Машин байхгүй болохоор бид алхахаас өөр аргагүй.",
+  "pos": "туслах үйл үг",
+  "collocations_zh": "只能走路 / 只能这样"
+ },
+ {
+  "chinese": "别人",
+  "pinyin": "biérén",
+  "mongolian": "бусад хүн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是别人的事，和你没关系。",
+  "exampleMongolian": "Энэ бол бусдын хэрэг, чамд хамаагүй.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "别人的事 / 找别人"
+ },
+ {
+  "chinese": "请假",
+  "pinyin": "qǐngjià",
+  "mongolian": "чөлөө авах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我身体不太舒服，想请一天假。",
+  "exampleMongolian": "Би бие муутай тул нэг өдөр чөлөө авмаар байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "请一天假 / 请病假"
+ },
+ {
+  "chinese": "同事",
+  "pinyin": "tóngshì",
+  "mongolian": "хамт ажиллагч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "介绍一下，这是我们的新同事。",
+  "exampleMongolian": "Танилцуулъя, энэ бол манай шинэ хамт ажиллагч.",
+  "pos": "нэр үг",
+  "collocations_zh": "新同事 / 公司同事"
+ },
+ {
+  "chinese": "休假",
+  "pinyin": "xiūjià",
+  "mongolian": "амралт авах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我下周开始休假。",
+  "exampleMongolian": "Би ирэх долоо хоногоос амралт авна.",
+  "pos": "үйл үг",
+  "collocations_zh": "休三天假 / 休假一天"
+ },
+ {
+  "chinese": "怕",
+  "pinyin": "pà",
+  "mongolian": "айх; болгоомжлох, … байх вий гэж санаа зовох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她不怕累，一直努力学习。",
+  "exampleMongolian": "Тэр ядрахаас айхгүй, байнга хичээж суралцдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "怕热 / 不怕"
+ },
+ {
+  "chinese": "邮箱",
+  "pinyin": "yóuxiāng",
+  "mongolian": "и-мэйл хаяг, шуудангийн хайрцаг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我每天都看邮箱。",
+  "exampleMongolian": "Би өдөр бүр и-мэйлээ шалгадаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "发到邮箱 / 看邮箱"
+ },
+ {
+  "chinese": "老张",
+  "pinyin": "Lǎo Zhāng",
+  "mongolian": "Лао Жан (нас ахтай, дотно Жан гуай)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "老张没来，他说家里有点儿事。",
+  "exampleMongolian": "Лао Жан ирээгүй, гэртээ жаахан хэрэг гарсан гэсэн.",
+  "pos": "онцгой нэр",
+  "collocations_zh": "老 + овог"
+ },
+ {
+  "chinese": "愿意",
+  "pinyin": "yuànyì",
+  "mongolian": "хүсэх, сайн дураараа дургүйцэхгүй байх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "如果有需要，我非常愿意帮忙。",
+  "exampleMongolian": "Хэрэгтэй бол би маш дуртайяа тусална.",
+  "pos": "туслах үйл үг",
+  "collocations_zh": "非常愿意 / 愿意去"
+ },
+ {
+  "chinese": "城市",
+  "pinyin": "chéngshì",
+  "mongolian": "хот",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢北京这个城市。",
+  "exampleMongolian": "Би Бээжин хотод дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "大城市 / 一个城市"
+ },
+ {
+  "chinese": "离开",
+  "pinyin": "líkāi",
+  "mongolian": "орхих, холдох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她是下午五点离开书店的。",
+  "exampleMongolian": "Тэр үдээс хойш таван цагт номын дэлгүүрээс гарсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "离开家 / 离开公司"
+ },
+ {
+  "chinese": "机会",
+  "pinyin": "jīhuì",
+  "mongolian": "боломж, завшаан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是一个很好的机会。",
+  "exampleMongolian": "Энэ бол их сайн боломж.",
+  "pos": "нэр үг",
+  "collocations_zh": "好机会 / 工作机会"
+ },
+ {
+  "chinese": "生活",
+  "pinyin": "shēnghuó",
+  "mongolian": "амьдрал; амьдрах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们要好好生活，天天开心。",
+  "exampleMongolian": "Бид сайн амьдарч, өдөр бүр баяртай байх хэрэгтэй.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "生活习惯 / 好好生活"
+ },
+ {
+  "chinese": "为",
+  "pinyin": "wèi",
+  "mongolian": "-ийн төлөө, -д зориулж",
+  "hskLevel": "HSK3",
+  "exampleChinese": "大家都为你高兴。",
+  "exampleMongolian": "Бүгд чамайг баярлаж байна.",
+  "pos": "угтвар үг",
+  "collocations_zh": "为…高兴 / 为…准备"
+ },
+ {
+  "chinese": "或",
+  "pinyin": "huò",
+  "mongolian": "эсвэл (бичгийн хэлний холбоос)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我不愿意为工作或学习离开家人。",
+  "exampleMongolian": "Би ажил, эсвэл сурлагын төлөө гэр бүлээ орхихыг хүсэхгүй.",
+  "pos": "холбоос үг",
+  "collocations_zh": "A或B"
+ }
+]

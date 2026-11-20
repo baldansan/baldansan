@@ -1,0 +1,262 @@
+[
+ {
+  "chinese": "初中",
+  "pinyin": "chūzhōng",
+  "mongolian": "бага дунд сургууль (7–9-р анги)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我哥哥在上初中。",
+  "exampleMongolian": "Миний ах бага дунд сургуульд сурч байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "上初中 / 初中学生"
+ },
+ {
+  "chinese": "咱们",
+  "pinyin": "zánmen",
+  "mongolian": "бид (сонсогчийг оруулсан)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "咱们一起去学校吧！",
+  "exampleMongolian": "Бид хамт сургууль руу явъя!",
+  "pos": "төлөөний үг",
+  "collocations_zh": "咱们一起"
+ },
+ {
+  "chinese": "换",
+  "pinyin": "huàn",
+  "mongolian": "солих",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天我们换个饭店吃饭。",
+  "exampleMongolian": "Өнөөдөр бид өөр зоогийн газар хооллоё.",
+  "pos": "үйл үг",
+  "collocations_zh": "换鞋 / 换学校 / 换房子"
+ },
+ {
+  "chinese": "房子",
+  "pinyin": "fángzi",
+  "mongolian": "байшин, байр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她的房子很大，也很漂亮。",
+  "exampleMongolian": "Түүний байшин том бас үзэсгэлэнтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "买房子 / 新房子"
+ },
+ {
+  "chinese": "小区",
+  "pinyin": "xiǎoqū",
+  "mongolian": "орон сууцны хороолол",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我住在这个小区里。",
+  "exampleMongolian": "Би энэ хороололд амьдардаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "新小区 / 小区环境"
+ },
+ {
+  "chinese": "环境",
+  "pinyin": "huánjìng",
+  "mongolian": "орчин, байгаль орчин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢这个小区，这里的环境很好。",
+  "exampleMongolian": "Би энэ хороололд дуртай, энд орчин сайхан.",
+  "pos": "нэр үг",
+  "collocations_zh": "环境好 / 小区环境"
+ },
+ {
+  "chinese": "挺",
+  "pinyin": "tǐng",
+  "mongolian": "нэлээн, харьцангуй (挺…的)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天天气挺好，我们去外面玩吧。",
+  "exampleMongolian": "Өнөөдөр цаг агаар нэлээн сайхан байна, гадаа зугаалъя.",
+  "pos": "дайвар үг",
+  "collocations_zh": "挺好 / 挺喜欢"
+ },
+ {
+  "chinese": "空调",
+  "pinyin": "kōngtiáo",
+  "mongolian": "агааржуулагч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天这么冷，别开空调了。",
+  "exampleMongolian": "Өнөөдөр ийм хүйтэн байхад агааржуулагч асаалгүй орхи.",
+  "pos": "нэр үг",
+  "collocations_zh": "买空调 / 开空调"
+ },
+ {
+  "chinese": "洗衣机",
+  "pinyin": "xǐyījī",
+  "mongolian": "угаалгын машин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "妈妈用洗衣机洗衣服。",
+  "exampleMongolian": "Ээж угаалгын машинаар хувцас угаана.",
+  "pos": "нэр үг",
+  "collocations_zh": "新洗衣机"
+ },
+ {
+  "chinese": "层",
+  "pinyin": "céng",
+  "mongolian": "давхар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你家住在几层？",
+  "exampleMongolian": "Чи хэддүгээр давхарт амьдардаг вэ?",
+  "pos": "хэмжих үг",
+  "collocations_zh": "第二层 / 八层"
+ },
+ {
+  "chinese": "花园",
+  "pinyin": "huāyuán",
+  "mongolian": "цэцэрлэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢在花园里休息。",
+  "exampleMongolian": "Би цэцэрлэгт амрах дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "小花园 / 在花园玩"
+ },
+ {
+  "chinese": "灯",
+  "pinyin": "dēng",
+  "mongolian": "чийдэн, гэрэл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "出门前记得关灯。",
+  "exampleMongolian": "Гарахаасаа өмнө гэрлээ унтраахаа бүү март.",
+  "pos": "нэр үг",
+  "collocations_zh": "开灯 / 关灯"
+ },
+ {
+  "chinese": "关",
+  "pinyin": "guān",
+  "mongolian": "хаах, унтраах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "关灯吧，我要睡觉了。",
+  "exampleMongolian": "Гэрлээ унтрааж өгөөч, би унтах гэж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "关门 / 关灯"
+ },
+ {
+  "chinese": "冰箱",
+  "pinyin": "bīngxiāng",
+  "mongolian": "хөргөгч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我买了一个新冰箱。",
+  "exampleMongolian": "Би шинэ хөргөгч авлаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "买冰箱 / 新冰箱"
+ },
+ {
+  "chinese": "卫生间",
+  "pinyin": "wèishēngjiān",
+  "mongolian": "жорлон, ариун цэврийн өрөө",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请问卫生间在哪里？",
+  "exampleMongolian": "Уучлаарай, жорлон хаана байна вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "去卫生间"
+ },
+ {
+  "chinese": "打扫",
+  "pinyin": "dǎsǎo",
+  "mongolian": "цэвэрлэх, цэвэрлэгээ хийх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你去打扫一下教室吧。",
+  "exampleMongolian": "Чи ангиа жаахан цэвэрлээд ир.",
+  "pos": "үйл үг",
+  "collocations_zh": "打扫房间 / 打扫教室"
+ },
+ {
+  "chinese": "搬家",
+  "pinyin": "bānjiā",
+  "mongolian": "нүүх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我下个月要搬家，你能帮我一下吗？",
+  "exampleMongolian": "Би ирэх сард нүүх гэж байна, надад тусалж чадах уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "搬新家 / 搬家公司"
+ },
+ {
+  "chinese": "办",
+  "pinyin": "bàn",
+  "mongolian": "хийх, зохион байгуулах, бүрдүүлэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这件事我已经办好了。",
+  "exampleMongolian": "Энэ хэргийг би аль хэдийн шийдвэрлэчихсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "办信用卡 / 办护照"
+ },
+ {
+  "chinese": "信用卡",
+  "pinyin": "xìnyòngkǎ",
+  "mongolian": "кредит карт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我昨天办了一张信用卡。",
+  "exampleMongolian": "Би өчигдөр нэг кредит карт нээлгэсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "一张信用卡 / 还信用卡"
+ },
+ {
+  "chinese": "还",
+  "pinyin": "huán",
+  "mongolian": "буцааж өгөх, төлөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你什么时候去学校还书？",
+  "exampleMongolian": "Чи хэзээ сургууль дээр ном буцааж өгөх вэ?",
+  "pos": "үйл үг",
+  "collocations_zh": "还书 / 还钱"
+ },
+ {
+  "chinese": "听说",
+  "pinyin": "tīngshuō",
+  "mongolian": "сонссоноор, … гэсэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "听说这个小区的环境很好。",
+  "exampleMongolian": "Энэ хороолол орчин сайхан гэж сонссон.",
+  "pos": "үйл үг",
+  "collocations_zh": "我听说"
+ },
+ {
+  "chinese": "银行",
+  "pinyin": "yínháng",
+  "mongolian": "банк",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请问中国银行在哪儿？",
+  "exampleMongolian": "Уучлаарай, Хятадын банк хаана байна вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "去银行 / 一家银行"
+ },
+ {
+  "chinese": "才",
+  "pinyin": "cái",
+  "mongolian": "… л (удаан, хожуу гэсэн утгаар)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他昨天晚上十二点才睡觉。",
+  "exampleMongolian": "Тэр өчигдөр орой арван хоёр цагт л унтсан.",
+  "pos": "дайвар үг",
+  "collocations_zh": "才能 / 才知道"
+ },
+ {
+  "chinese": "纸",
+  "pinyin": "zhǐ",
+  "mongolian": "цаас",
+  "hskLevel": "HSK3",
+  "exampleChinese": "桌上有三张白纸。",
+  "exampleMongolian": "Ширээн дээр гурван цагаан цаас байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "一张纸 / 白纸"
+ },
+ {
+  "chinese": "搬",
+  "pinyin": "bān",
+  "mongolian": "зөөх, нүүлгэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这张桌子要搬去哪儿？",
+  "exampleMongolian": "Энэ ширээг хаашаа зөөх вэ?",
+  "pos": "үйл үг",
+  "collocations_zh": "搬东西"
+ },
+ {
+  "chinese": "需要",
+  "pinyin": "xūyào",
+  "mongolian": "хэрэгтэй байх; хэрэгцээ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "您还有别的需要吗？",
+  "exampleMongolian": "Танд өөр хэрэгтэй зүйл байна уу?",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "不需要 / 需要帮助"
+ }
+]

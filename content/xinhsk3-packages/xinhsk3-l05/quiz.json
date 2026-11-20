@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "这个星期________下雨，我们没有出去玩。",
+  "options": [
+   "终于",
+   "结束",
+   "比较",
+   "总是"
+  ],
+  "correct_answer": "总是",
+  "explanation": "«Энэ долоо хоногт үргэлж бороо орсон» — 总是 нь давтагдсан байдал.",
+  "order_index": 1,
+  "id": "xinhsk3-l05-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "走了很久，我们________到山顶了。",
+  "options": [
+   "比较",
+   "干",
+   "终于",
+   "总是"
+  ],
+  "correct_answer": "终于",
+  "explanation": "«Удаан алхаад эцэст нь оргилд хүрлээ» — 终于.",
+  "order_index": 2,
+  "id": "xinhsk3-l05-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "周末我们去________山吧。",
+  "options": [
+   "收",
+   "爬",
+   "照",
+   "拍"
+  ],
+  "correct_answer": "爬",
+  "explanation": "«Уул авирах» — 爬山.",
+  "order_index": 3,
+  "id": "xinhsk3-l05-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他每天早上都去________身体。",
+  "options": [
+   "锻炼",
+   "比较",
+   "结束",
+   "难过"
+  ],
+  "correct_answer": "锻炼",
+  "explanation": "«Биеийн тамир хийх» — 锻炼身体.",
+  "order_index": 4,
+  "id": "xinhsk3-l05-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这些照片张张都很好看，你的拍照________真高。",
+  "options": [
+   "兴趣",
+   "音乐",
+   "太阳",
+   "水平"
+  ],
+  "correct_answer": "水平",
+  "explanation": "«Зураг авах түвшин» — 水平高.",
+  "order_index": 5,
+  "id": "xinhsk3-l05-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我对音乐非常________。",
+  "options": [
+   "难过",
+   "结束",
+   "感兴趣",
+   "难看"
+  ],
+  "correct_answer": "感兴趣",
+  "explanation": "«Хөгжимд маш сонирхолтой» — 对…感兴趣.",
+  "order_index": 6,
+  "id": "xinhsk3-l05-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我收到了你的一________邮件。",
+  "options": [
+   "个",
+   "封",
+   "张",
+   "件"
+  ],
+  "correct_answer": "封",
+  "explanation": "Имэйл, захидлын хэмжих үг — 封.",
+  "order_index": 7,
+  "id": "xinhsk3-l05-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "山上有很多________，树上飞来了几只鸟。",
+  "options": [
+   "树",
+   "鞋",
+   "电",
+   "会"
+  ],
+  "correct_answer": "树",
+  "explanation": "«Ууланд олон мод байна» — 树.",
+  "order_index": 8,
+  "id": "xinhsk3-l05-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "手机没________了，不能拍照了。",
+  "options": [
+   "树",
+   "会",
+   "鞋",
+   "电"
+  ],
+  "correct_answer": "电",
+  "explanation": "«Утас цэнэггүй болсон» — 没电了.",
+  "order_index": 9,
+  "id": "xinhsk3-l05-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这部电影太________了，我不想看。",
+  "options": [
+   "感兴趣",
+   "比较",
+   "难看",
+   "难过"
+  ],
+  "correct_answer": "难看",
+  "explanation": "«Энэ кино муу байна» — 难看.",
+  "order_index": 10,
+  "id": "xinhsk3-l05-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«天气好得很» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Цаг агаар сайхан болох гэж байна.",
+   "Цаг агаар маш сайхан байна.",
+   "Цаг агаар жаахан сайхан.",
+   "Цаг агаар сайхан биш."
+  ],
+  "correct_answer": "Цаг агаар маш сайхан байна.",
+  "explanation": "тэмдэг нэр + 得很 — «маш …».",
+  "order_index": 11,
+  "id": "xinhsk3-l05-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l05-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "我觉得爬山累得很。",
+   "我觉得爬山得很累。",
+   "我觉得爬山很得累。",
+   "我觉得爬山累很得。"
+  ],
+  "correct_answer": "我觉得爬山累得很。",
+  "explanation": "得很 нь тэмдэг нэрийн ард орно.",
+  "order_index": 12,
+  "id": "xinhsk3-l05-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр БУРУУ вэ?",
+  "options": [
+   "他忙得很。",
+   "房间热得很。",
+   "天气好得很。",
+   "他很忙得很。"
+  ],
+  "correct_answer": "他很忙得很。",
+  "explanation": "得很-ийг 很-тэй давхар хэрэглэхгүй.",
+  "order_index": 13,
+  "id": "xinhsk3-l05-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l05-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这些照片张张都很好看» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Эдгээр зураг гоё биш.",
+   "Нэг зураг гоё.",
+   "Эдгээр зураг нэг бүр нь гоё.",
+   "Эдгээр зургийн зөвхөн нэг нь гоё."
+  ],
+  "correct_answer": "Эдгээр зураг нэг бүр нь гоё.",
+  "explanation": "张张都 — «хуудас бүр», давтсан хэмжих үг + 都.",
+  "order_index": 14,
+  "id": "xinhsk3-l05-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Жил бүр Бээжинд буцаж ирнэ» — аль нь зөв вэ?",
+  "options": [
+   "都年年回北京。",
+   "年年都回北京。",
+   "年都年回北京。",
+   "每年年都回北京。"
+  ],
+  "correct_answer": "年年都回北京。",
+  "explanation": "年年都 — «жил бүр».",
+  "order_index": 15,
+  "id": "xinhsk3-l05-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ард хоёр хүн алхаж өнгөрлөө» — аль нь зөв вэ?",
+  "options": [
+   "后边走过去两个人。",
+   "两个人后边走过去。",
+   "后边两个人走过去了。",
+   "走过去后边两个人。"
+  ],
+  "correct_answer": "后边走过去两个人。",
+  "explanation": "Газар + үйл үг + чиглэл + тоо + хүн.",
+  "order_index": 16,
+  "id": "xinhsk3-l05-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хичээл тарсны дараа шууд гэртээ харьсан» — аль нь зөв вэ?",
+  "options": [
+   "下课了就回家。",
+   "下了课回家就了。",
+   "下了就课回家了。",
+   "下了课就回家了。"
+  ],
+  "correct_answer": "下了课就回家了。",
+  "explanation": "V1+了…就+V2+了.",
+  "order_index": 17,
+  "id": "xinhsk3-l05-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l05-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你听完了音乐会就来我家吃饭» — энэ өгүүлбэр юу хэлж байна вэ?",
+  "options": [
+   "Хоол идсэний дараа концерт сонсоорой.",
+   "Концертод хэзээ нэг өдөр ирээрэй.",
+   "Концертыг сонсчихоод шууд манайд хоол идэхээр ир.",
+   "Концерт сонсохгүйгээр хоол идэхээр ир."
+  ],
+  "correct_answer": "Концертыг сонсчихоод шууд манайд хоол идэхээр ир.",
+  "explanation": "…了…就… — «…-аад шууд …».",
+  "order_index": 18,
+  "id": "xinhsk3-l05-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：今天天气怎么样？",
+  "options": [
+   "很冷",
+   "晴天",
+   "阴天",
+   "下雨"
+  ],
+  "correct_answer": "晴天",
+  "explanation": "«今天终于晴了» — өнөөдөр цэлмэглэсэн.",
+  "order_index": 19,
+  "id": "xinhsk3-l05-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月回去要做什么？",
+  "options": [
+   "穿运动鞋，拿大衣",
+   "买水",
+   "照相",
+   "吃饭"
+  ],
+  "correct_answer": "穿运动鞋，拿大衣",
+  "explanation": "«我回去穿上运动鞋，拿上大衣» — гутал өмсөж, хүрмээ авна.",
+  "order_index": 20,
+  "id": "xinhsk3-l05-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：这些照片是谁给王一雪照的？",
+  "options": [
+   "王一雪",
+   "白家月",
+   "李文",
+   "王一飞"
+  ],
+  "correct_answer": "王一飞",
+  "explanation": "«一飞…经常给我照相» — Ифэй авсан.",
+  "order_index": 21,
+  "id": "xinhsk3-l05-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪不喜欢哪张照片？",
+  "options": [
+   "她在家的那张",
+   "她吃饭的那张",
+   "她大笑的那张",
+   "她爬山的那张"
+  ],
+  "correct_answer": "她大笑的那张",
+  "explanation": "Тэр «这张有点儿难看» гэсэн — чанга инээж буй зургийг дургүйцсэн.",
+  "order_index": 22,
+  "id": "xinhsk3-l05-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：白家月为什么要等一下再照？",
+  "options": [
+   "她不想照",
+   "后边走过去两个人",
+   "手机没电",
+   "天太黑"
+  ],
+  "correct_answer": "后边走过去两个人",
+  "explanation": "«等一下，后边走过去两个人» — ард хүмүүс өнгөрсөн тул.",
+  "order_index": 23,
+  "id": "xinhsk3-l05-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：白家月的手机怎么了？",
+  "options": [
+   "没电了",
+   "丢了",
+   "坏了",
+   "不见了"
+  ],
+  "correct_answer": "没电了",
+  "explanation": "«手机没电了» — утас цэнэггүй болсон.",
+  "order_index": 24,
+  "id": "xinhsk3-l05-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：音乐会几点结束？",
+  "options": [
+   "五点",
+   "八点半",
+   "十点",
+   "七点多"
+  ],
+  "correct_answer": "七点多",
+  "explanation": "«音乐会七点多结束» — долоон цагаас хойш.",
+  "order_index": 25,
+  "id": "xinhsk3-l05-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "我搬到北京一________时间了。",
+  "options": [
+   "节",
+   "个",
+   "点",
+   "段"
+  ],
+  "correct_answer": "段",
+  "explanation": "«Нэг хэсэг хугацаа» — 一段时间.",
+  "order_index": 1,
+  "id": "xinhsk3-l15-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请问________有超市吗？",
+  "options": [
+   "最后",
+   "以上",
+   "附近",
+   "面前"
+  ],
+  "correct_answer": "附近",
+  "explanation": "«Ойролцоо дэлгүүр байна уу?» — 附近.",
+  "order_index": 2,
+  "id": "xinhsk3-l15-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________七点起床。",
+  "options": [
+   "遇见",
+   "平时",
+   "根据",
+   "可是"
+  ],
+  "correct_answer": "平时",
+  "explanation": "«Ердийн өдрүүдэд долоон цагт босно» — 平时.",
+  "order_index": 3,
+  "id": "xinhsk3-l15-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师让我们________要求写句子。",
+  "options": [
+   "根据",
+   "可是",
+   "经过",
+   "了解"
+  ],
+  "correct_answer": "根据",
+  "explanation": "«Шаардлагын дагуу өгүүлбэр бичих» — 根据要求.",
+  "order_index": 4,
+  "id": "xinhsk3-l15-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不________北京的历史，可以给我介绍一下吗？",
+  "options": [
+   "遇见",
+   "养",
+   "经过",
+   "了解"
+  ],
+  "correct_answer": "了解",
+  "explanation": "«Бээжингийн түүхийг сайн мэдэхгүй» — 不了解.",
+  "order_index": 5,
+  "id": "xinhsk3-l15-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我想去公园玩，________外面下雨了。",
+  "options": [
+   "根据",
+   "平时",
+   "可是",
+   "以上"
+  ],
+  "correct_answer": "可是",
+  "explanation": "«Гэвч бороо орчихлоо» — 可是.",
+  "order_index": 6,
+  "id": "xinhsk3-l15-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "南京每年都有很多________来旅游。",
+  "options": [
+   "马路",
+   "游客",
+   "老人",
+   "外地"
+  ],
+  "correct_answer": "游客",
+  "explanation": "«Жуулчин олон» — 游客.",
+  "order_index": 7,
+  "id": "xinhsk3-l15-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "爷爷喜欢________花养鱼。",
+  "options": [
+   "养",
+   "遇见",
+   "聊",
+   "放学"
+  ],
+  "correct_answer": "养",
+  "explanation": "«Цэцэг, загас тэжээх» — 养花养鱼.",
+  "order_index": 8,
+  "id": "xinhsk3-l15-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我在公园________了老同学。",
+  "options": [
+   "经过",
+   "根据",
+   "养",
+   "遇见"
+  ],
+  "correct_answer": "遇见",
+  "explanation": "«Хуучин ангийнхантайгаа таарсан» — 遇见.",
+  "order_index": 9,
+  "id": "xinhsk3-l15-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他从我家门口________。",
+  "options": [
+   "了解",
+   "放学",
+   "经过",
+   "遇见"
+  ],
+  "correct_answer": "经过",
+  "explanation": "«Манай үүдээр дайран өнгөрсөн» — 经过.",
+  "order_index": 10,
+  "id": "xinhsk3-l15-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "我们必须参加根据要求明天的会议。",
+   "根据要求，我们必须参加明天的会议。",
+   "要求根据，我们必须参加明天的会议。",
+   "根据，要求我们必须参加明天的会议。"
+  ],
+  "correct_answer": "根据要求，我们必须参加明天的会议。",
+  "explanation": "根据 + үндэслэл + үйлдэл.",
+  "order_index": 11,
+  "id": "xinhsk3-l15-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«根据» ямар үүрэгтэй вэ?",
+  "options": [
+   "Үндэслэл, шалтгааныг оруулна",
+   "Үйлдэл зэрэг хийгдэхийг заана",
+   "Асуулт үүсгэнэ",
+   "Дарааллыг заана"
+  ],
+  "correct_answer": "Үндэслэл, шалтгааныг оруулна",
+  "explanation": "根据 нь «-ын дагуу» гэсэн утгатай угтвар үг.",
+  "order_index": 12,
+  "id": "xinhsk3-l15-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l15-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我得一点儿一点儿给您讲。» — 一点儿一点儿 юу гэсэн үг вэ?",
+  "options": [
+   "Нэг л удаа",
+   "Бүгдийг нэг дор",
+   "Огт биш",
+   "Жаахан жаахнаар"
+  ],
+  "correct_answer": "Жаахан жаахнаар",
+  "explanation": "Тоо + хэмжих үгийн давталт нь үйлдлийг нэг нэгээр хийхийг заана.",
+  "order_index": 13,
+  "id": "xinhsk3-l15-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "他们地两个两个走进去了。",
+   "他们两个走进去两个了。",
+   "他们两个两个地走进去了。",
+   "他们两个地两个走进去了。"
+  ],
+  "correct_answer": "他们两个两个地走进去了。",
+  "explanation": "Давталт нь үйл үгийн өмнө, ард нь 地.",
+  "order_index": 14,
+  "id": "xinhsk3-l15-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "看来我在，每天读书是一种很好的习惯。",
+   "在我看来，每天读书是一种很好的习惯。",
+   "我看来在，每天读书是一种很好的习惯。",
+   "在看来我，每天读书是一种很好的习惯。"
+  ],
+  "correct_answer": "在我看来，每天读书是一种很好的习惯。",
+  "explanation": "在 + хэн + 看来.",
+  "order_index": 15,
+  "id": "xinhsk3-l15-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«在同事们看来，她工作非常认真。» — «在…看来» юуг илэрхийлэх вэ?",
+  "options": [
+   "Хувь хүн, бүлгийн үзэл бодол",
+   "Цаг хугацаа",
+   "Газар байршил",
+   "Шалтгаан"
+  ],
+  "correct_answer": "Хувь хүн, бүлгийн үзэл бодол",
+  "explanation": "在…看来 — «…-ын нүдээр, … үзэж байгаагаар».",
+  "order_index": 16,
+  "id": "xinhsk3-l15-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l15-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "难过的事情一会儿不就忘了。",
+   "难过的事情就不一会儿忘了。",
+   "不难过的事情一会儿忘了。",
+   "难过的事情不一会儿就忘了。"
+  ],
+  "correct_answer": "难过的事情不一会儿就忘了。",
+  "explanation": "不一会儿 + 就 + үйлдэл.",
+  "order_index": 17,
+  "id": "xinhsk3-l15-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Санал, ирээдүйн төлөвлөгөөнд аль нь тохирох вэ?",
+  "options": [
+   "不一会儿我们去吃饭吧。",
+   "我们去吃饭不一会儿吧。",
+   "我们一会儿去吃饭吧。",
+   "我们不一会儿去吃饭吧。"
+  ],
+  "correct_answer": "我们一会儿去吃饭吧。",
+  "explanation": "Ирээдүйд 一会儿, 不一会儿 нь болсон явдалд.",
+  "order_index": 18,
+  "id": "xinhsk3-l15-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l15-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：蓝天小区附近买东西方便吗？",
+  "options": [
+   "没有超市",
+   "方便，过马路就是超市",
+   "不方便",
+   "要坐车去"
+  ],
+  "correct_answer": "方便，过马路就是超市",
+  "explanation": "«附近买东西也很方便，过马路就是超市».",
+  "order_index": 19,
+  "id": "xinhsk3-l15-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：孩子们放学后在哪儿玩？",
+  "options": [
+   "在树下做游戏",
+   "在马路上",
+   "在家里",
+   "在超市"
+  ],
+  "correct_answer": "在树下做游戏",
+  "explanation": "«孩子们放学后就在树下做游戏».",
+  "order_index": 20,
+  "id": "xinhsk3-l15-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐为什么了解南京？",
+  "options": [
+   "他是南京人",
+   "他在南京工作",
+   "他常去旅游",
+   "他在南京上的大学"
+  ],
+  "correct_answer": "他在南京上的大学",
+  "explanation": "«我是在南京上的大学».",
+  "order_index": 21,
+  "id": "xinhsk3-l15-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪为什么请杨同乐吃晚饭？",
+  "options": [
+   "他帮她搬家",
+   "想去蓝天小区",
+   "想让他给她介绍南京",
+   "他过生日"
+  ],
+  "correct_answer": "想让他给她介绍南京",
+  "explanation": "Ян Тунлэ Нанкиныг ярьж өгөхөөр, «咱们边吃边聊».",
+  "order_index": 22,
+  "id": "xinhsk3-l15-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：黄河的名字为什么跟颜色有关系？",
+  "options": [
+   "河里有黄鱼",
+   "河水看起来是黄色的",
+   "河边有黄花",
+   "河很长"
+  ],
+  "correct_answer": "河水看起来是黄色的",
+  "explanation": "«因为河水看起来是黄色的，所以叫这个名字».",
+  "order_index": 23,
+  "id": "xinhsk3-l15-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：在中国人看来，黄河像什么？",
+  "options": [
+   "妈妈",
+   "老师",
+   "朋友",
+   "哥哥"
+  ],
+  "correct_answer": "妈妈",
+  "explanation": "«黄河像妈妈一样，养了我们几千年».",
+  "order_index": 24,
+  "id": "xinhsk3-l15-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：王一雪小时候家在哪儿？",
+  "options": [
+   "山上",
+   "海边",
+   "大城市里",
+   "河边"
+  ],
+  "correct_answer": "河边",
+  "explanation": "«我家就住在河边».",
+  "order_index": 25,
+  "id": "xinhsk3-l15-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

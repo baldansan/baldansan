@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "辆",
+  "pinyin": "liàng",
+  "mongolian": "(машин, дугуй зэрэг тээврийн хэрэгслийн) хэмжих үг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这辆车是你的吗？",
+  "exampleMongolian": "Энэ машин чинийх үү?",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一辆车 / 一辆公交车"
+ },
+ {
+  "chinese": "自行车",
+  "pinyin": "zìxíngchē",
+  "mongolian": "дугуй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我买了一辆自行车。",
+  "exampleMongolian": "Би нэг дугуй авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "一辆自行车 / 骑自行车"
+ },
+ {
+  "chinese": "旧",
+  "pinyin": "jiù",
+  "mongolian": "хуучин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这件衣服很旧了，别穿了。",
+  "exampleMongolian": "Энэ хувцас маш хуучирсан, битгий өмс.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很旧 / 旧衣服"
+ },
+ {
+  "chinese": "矮",
+  "pinyin": "ǎi",
+  "mongolian": "намхан, набархан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她比我矮。",
+  "exampleMongolian": "Тэр надаас намхан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很矮 / 有点儿矮 / 不矮"
+ },
+ {
+  "chinese": "试",
+  "pinyin": "shì",
+  "mongolian": "туршиж үзэх, оролдох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我可以试一下这条裙子吗？",
+  "exampleMongolian": "Би энэ банзлыг өмсөж үзэж болох уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "试一下 / 试衣服 / 试吃"
+ },
+ {
+  "chinese": "黄色",
+  "pinyin": "huángsè",
+  "mongolian": "шар өнгө",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢这件黄色的衣服。",
+  "exampleMongolian": "Надад энэ шар хувцас таалагдаж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "黄色的衣服 / 黄色的花"
+ },
+ {
+  "chinese": "短裤",
+  "pinyin": "duǎnkù",
+  "mongolian": "богино өмд, шорт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是一条蓝色的短裤。",
+  "exampleMongolian": "Энэ бол цэнхэр шорт.",
+  "pos": "нэр үг",
+  "collocations_zh": "一条短裤 / 穿短裤"
+ },
+ {
+  "chinese": "大小",
+  "pinyin": "dàxiǎo",
+  "mongolian": "хэмжээ, размер",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这件衣服大小合适。",
+  "exampleMongolian": "Энэ хувцасны хэмжээ таарч байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "大小合适 / 衣服的大小"
+ },
+ {
+  "chinese": "合适",
+  "pinyin": "héshì",
+  "mongolian": "тохиромжтой, таарах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这条裙子大小很合适。",
+  "exampleMongolian": "Энэ банзлын хэмжээ яг таарч байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很合适 / 不合适"
+ },
+ {
+  "chinese": "裙子",
+  "pinyin": "qúnzi",
+  "mongolian": "банзал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "姐姐今天穿了一条新裙子。",
+  "exampleMongolian": "Эгч өнөөдөр шинэ банзал өмссөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "一条裙子 / 黄裙子"
+ },
+ {
+  "chinese": "更",
+  "pinyin": "gèng",
+  "mongolian": "бүр илүү, улам",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我觉得这件衣服更好看。",
+  "exampleMongolian": "Миний бодлоор энэ хувцас бүр илүү сайхан.",
+  "pos": "дайвар үг",
+  "collocations_zh": "更好 / 更漂亮"
+ },
+ {
+  "chinese": "决定",
+  "pinyin": "juédìng",
+  "mongolian": "шийдэх; шийдвэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们决定买一辆新车。",
+  "exampleMongolian": "Бид шинэ машин авахаар шийдлээ.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "做决定 / 一个决定"
+ },
+ {
+  "chinese": "西瓜",
+  "pinyin": "xīguā",
+  "mongolian": "тарвас",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个西瓜又大又甜。",
+  "exampleMongolian": "Энэ тарвас том бас чихэрлэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃西瓜 / 一个西瓜"
+ },
+ {
+  "chinese": "新鲜",
+  "pinyin": "xīnxiān",
+  "mongolian": "шинэхэн, шинэ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们去超市买点儿新鲜的水果。",
+  "exampleMongolian": "Бид супермаркетад очоод шинэхэн жимс авъя.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "新鲜的水果 / 很新鲜"
+ },
+ {
+  "chinese": "甜",
+  "pinyin": "tián",
+  "mongolian": "чихэрлэг, амттай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个西瓜甜不甜？",
+  "exampleMongolian": "Энэ тарвас чихэрлэг үү?",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很甜 / 甜不甜"
+ },
+ {
+  "chinese": "公斤",
+  "pinyin": "gōngjīn",
+  "mongolian": "килограмм",
+  "hskLevel": "HSK3",
+  "exampleChinese": "苹果一公斤多少钱？",
+  "exampleMongolian": "Алим нэг кг хэд вэ?",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一公斤 / 几公斤"
+ },
+ {
+  "chinese": "冰",
+  "pinyin": "bīng",
+  "mongolian": "мөс; хөлдөөх, хүйтэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢喝冰饮料。",
+  "exampleMongolian": "Би хүйтэн ундаа уух дуртай.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "冰水 / 冰西瓜"
+ },
+ {
+  "chinese": "极",
+  "pinyin": "jí",
+  "mongolian": "маш, туйлын",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个主意好极了！",
+  "exampleMongolian": "Энэ санаа маш сайн байна!",
+  "pos": "дайвар үг",
+  "collocations_zh": "好极了 / 害怕极了"
+ },
+ {
+  "chinese": "斤",
+  "pinyin": "jīn",
+  "mongolian": "жин (500 грамм)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我买了两斤肉。",
+  "exampleMongolian": "Би хоёр жин мах авсан.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一斤 / 多少斤"
+ },
+ {
+  "chinese": "香蕉",
+  "pinyin": "xiāngjiāo",
+  "mongolian": "гадил",
+  "hskLevel": "HSK3",
+  "exampleChinese": "香蕉是我最喜欢的水果。",
+  "exampleMongolian": "Гадил бол миний хамгийн дуртай жимс.",
+  "pos": "нэр үг",
+  "collocations_zh": "五斤香蕉 / 买香蕉"
+ },
+ {
+  "chinese": "一共",
+  "pinyin": "yígòng",
+  "mongolian": "нийтдээ, бүгд дүнгээрээ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这些苹果一共二十元。",
+  "exampleMongolian": "Эдгээр алим нийтдээ хорин юань.",
+  "pos": "дайвар үг",
+  "collocations_zh": "一共多少钱 / 一共三件"
+ },
+ {
+  "chinese": "毛",
+  "pinyin": "máo",
+  "mongolian": "мао (1 юанийн аравны нэг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "香蕉三块五毛一斤。",
+  "exampleMongolian": "Гадил нэг жин нь гурван юань тавин мао.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "五毛 / 一块五毛"
+ },
+ {
+  "chinese": "结婚",
+  "pinyin": "jiéhūn",
+  "mongolian": "гэрлэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "姐姐和她的男朋友下个月结婚。",
+  "exampleMongolian": "Эгч найз залуутайгаа ирэх сард гэрлэнэ.",
+  "pos": "үйл үг",
+  "collocations_zh": "和……结婚 / 结婚了"
+ },
+ {
+  "chinese": "不但",
+  "pinyin": "búdàn",
+  "mongolian": "зөвхөн … биш",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他不但会唱歌，而且会跳舞。",
+  "exampleMongolian": "Тэр дуулдаг төдийгүй бас бүжиглэдэг.",
+  "pos": "холбоос",
+  "collocations_zh": "不但……而且……"
+ },
+ {
+  "chinese": "而且",
+  "pinyin": "érqiě",
+  "mongolian": "бас, түүнчлэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "妈妈做的菜不但好吃，而且好看。",
+  "exampleMongolian": "Ээжийн хийсэн хоол амттай төдийгүй бас сайхан харагддаг.",
+  "pos": "холбоос",
+  "collocations_zh": "不但……而且……"
+ },
+ {
+  "chinese": "声",
+  "pinyin": "shēng",
+  "mongolian": "дуу; (дуу чимээний) удаа",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我听见一声鸟叫。",
+  "exampleMongolian": "Би шувууны нэг дуу сонссон.",
+  "pos": "хэмжих үг / нэр үг",
+  "collocations_zh": "一声 / 大声"
+ },
+ {
+  "chinese": "开机",
+  "pinyin": "kāijī",
+  "mongolian": "асаах (төхөөрөмж)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的电脑太旧了，开机总是很慢。",
+  "exampleMongolian": "Миний компьютер хэтэрхий хуучин, асахдаа үргэлж удаан.",
+  "pos": "үйл үг",
+  "collocations_zh": "开机 / 不能开机"
+ }
+]

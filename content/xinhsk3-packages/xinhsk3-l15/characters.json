@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "蓝",
+   "pinyin": [
+    "lán"
+   ],
+   "strokeCount": 13,
+   "radical": "艹",
+   "practice": "write",
+   "meaningMn": "цэнхэр",
+   "etymology_mn": "艹 (өвс) + 监: цэнхэр өнгийн ургамлын (индигогийн) будаг",
+   "exampleWords": [
+    "蓝天",
+    "蓝色"
+   ]
+  },
+  {
+   "hanzi": "附",
+   "pinyin": [
+    "fù"
+   ],
+   "strokeCount": 8,
+   "radical": "阝",
+   "practice": "write",
+   "meaningMn": "ойрхон, залгах",
+   "etymology_mn": "阝 (толгод) + 付: толгойн дэргэд наалдсан — ойрхон",
+   "exampleWords": [
+    "附近",
+    "附近的超市"
+   ]
+  },
+  {
+   "hanzi": "游",
+   "pinyin": [
+    "yóu"
+   ],
+   "strokeCount": 12,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "сэлэх, аялах",
+   "etymology_mn": "氵 (ус) + 斿: усанд хөвж, аялах",
+   "exampleWords": [
+    "游泳",
+    "旅游"
+   ]
+  },
+  {
+   "hanzi": "戏",
+   "pinyin": [
+    "xì"
+   ],
+   "strokeCount": 6,
+   "radical": "戈",
+   "practice": "write",
+   "meaningMn": "тоглоом, жүжиг",
+   "etymology_mn": "又 + 戈 (зэвсэг): зэвсэгтэй тоглоом, үзүүлбэр",
+   "exampleWords": [
+    "游戏",
+    "玩游戏"
+   ]
+  },
+  {
+   "hanzi": "根",
+   "pinyin": [
+    "gēn"
+   ],
+   "strokeCount": 10,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "үндэс",
+   "etymology_mn": "木 (мод) + 艮: модны үндэс — дэмжлэг, үндэслэл",
+   "exampleWords": [
+    "根据",
+    "树根"
+   ]
+  },
+  {
+   "hanzi": "河",
+   "pinyin": [
+    "hé"
+   ],
+   "strokeCount": 8,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "гол",
+   "etymology_mn": "氵 (ус) + 可: усны урсгал, гол",
+   "exampleWords": [
+    "小河",
+    "黄河"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "怕",
+   "b": "拍",
+   "word_a": "不怕",
+   "word_b": "拍照",
+   "mn": "怕 — айх; 拍 — цохих, зураг авах",
+   "tip_mn": "怕-д 忄 (зүрх) байгаа тул айх сэтгэл. 拍-д 扌 (гар) байгаа тул гараар цохих, зураг авах."
+  },
+  {
+   "a": "河",
+   "b": "何",
+   "word_a": "小河",
+   "word_b": "何时",
+   "mn": "河 — гол; 何 — юу, хэн (бичгийн)",
+   "tip_mn": "河-д 氵 (ус) байгаа тул гол. 何-д 亻 (хүн) байгаа."
+  },
+  {
+   "a": "蓝",
+   "b": "篮",
+   "word_a": "蓝天",
+   "word_b": "篮球",
+   "mn": "蓝 — цэнхэр; 篮 — сагс",
+   "tip_mn": "蓝-д 艹 (өвс), 篮-д 竹 (хулс) байна: сагсыг хулсаар сүлж хийдэг."
+  },
+  {
+   "a": "养",
+   "b": "羊",
+   "word_a": "养花",
+   "word_b": "一只羊",
+   "mn": "养 — тэжээх; 羊 — хонь",
+   "tip_mn": "养-ийн дээд талд 羊 байгаа нь хонь тэжээх санаатай холбоотой. Гэхдээ дуудлага нь өөр: yǎng / yáng."
+  }
+ ]
+}

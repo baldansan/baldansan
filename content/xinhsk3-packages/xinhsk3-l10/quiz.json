@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "请大家________听，我再说一遍。",
+  "options": [
+   "清楚",
+   "当然",
+   "一般",
+   "认真"
+  ],
+  "correct_answer": "认真",
+  "explanation": "«Бүгдээрээ нухацтай сонс, дахин нэг удаа хэлье» — 认真听.",
+  "order_index": 1,
+  "id": "xinhsk3-l10-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师把今天的生词写在________上了。",
+  "options": [
+   "作业",
+   "办公室",
+   "黑板",
+   "笔记"
+  ],
+  "correct_answer": "黑板",
+  "explanation": "«Багш өнөөдрийн шинэ үгийг самбар дээр бичсэн» — 黑板上.",
+  "order_index": 2,
+  "id": "xinhsk3-l10-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "写完________以前，不能出去玩。",
+  "options": [
+   "年级",
+   "作业",
+   "历史",
+   "外语"
+  ],
+  "correct_answer": "作业",
+  "explanation": "«Даалгавраа бичиж дуустал гарч тоглож болохгүй» — 写作业.",
+  "order_index": 3,
+  "id": "xinhsk3-l10-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个题太________了，我不会做。",
+  "options": [
+   "难",
+   "差",
+   "努力",
+   "一般"
+  ],
+  "correct_answer": "难",
+  "explanation": "«Энэ бодлого хэтэрхий хэцүү, би хийж чадахгүй» — 太难了.",
+  "order_index": 4,
+  "id": "xinhsk3-l10-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "明天有考试，我今晚要________数学。",
+  "options": [
+   "对话",
+   "遇到",
+   "讲",
+   "复习"
+  ],
+  "correct_answer": "复习",
+  "explanation": "«Маргааш шалгалттай тул өнөө орой математикаа давтана» — 复习数学.",
+  "order_index": 5,
+  "id": "xinhsk3-l10-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这几________话我没听明白。",
+  "options": [
+   "遍",
+   "年级",
+   "句",
+   "页"
+  ],
+  "correct_answer": "句",
+  "explanation": "«Эдгээр хэдэн өгүүлбэрийг ойлгосонгүй» — 几句话.",
+  "order_index": 6,
+  "id": "xinhsk3-l10-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我在路上________了以前的老师。",
+  "options": [
+   "明白",
+   "遇到",
+   "提高",
+   "要求"
+  ],
+  "correct_answer": "遇到",
+  "explanation": "«Замд хуучин багштайгаа таарлаа» — 遇到.",
+  "order_index": 7,
+  "id": "xinhsk3-l10-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "多听多说，能________你的外语水平。",
+  "options": [
+   "提高",
+   "遇到",
+   "讲",
+   "要求"
+  ],
+  "correct_answer": "提高",
+  "explanation": "«Их сонсож, их ярьвал гадаад хэлний түвшин дээшилнэ» — 提高水平.",
+  "order_index": 8,
+  "id": "xinhsk3-l10-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你的汉字写得很________，要多练习。",
+  "options": [
+   "难",
+   "清楚",
+   "明白",
+   "差"
+  ],
+  "correct_answer": "差",
+  "explanation": "«Ханз чинь их муу, их дадлага хийх хэрэгтэй» — 写得很差.",
+  "order_index": 9,
+  "id": "xinhsk3-l10-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她的成绩提高得很快，因为她学习很________。",
+  "options": [
+   "一般",
+   "后年",
+   "努力",
+   "当然"
+  ],
+  "correct_answer": "努力",
+  "explanation": "«Түүний дүн хурдан дээшилсэн, учир нь сурахдаа маш хичээнгүй» — 学习很努力.",
+  "order_index": 10,
+  "id": "xinhsk3-l10-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би номоо цүнхэндээ хийчихлээ» — аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我书把放在包里了。",
+   "我把书放在包里了。",
+   "我把书放包里在了。",
+   "我放把书在包里了。"
+  ],
+  "correct_answer": "我把书放在包里了。",
+  "explanation": "把 + юу + үйл үг + 在 + газар.",
+  "order_index": 11,
+  "id": "xinhsk3-l10-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我不能把名字写在这里。",
+   "我把名字不能写在这里。",
+   "我能不把名字写在这里。",
+   "我把名字写不能在这里。"
+  ],
+  "correct_answer": "我不能把名字写在这里。",
+  "explanation": "不能 нь 把-ийн өмнө орно.",
+  "order_index": 12,
+  "id": "xinhsk3-l10-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«在老师的帮助下，我的成绩提高很快。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Багш миний дүнг буруу тавьсан.",
+   "Би багшид тусалж дүнгээ дээшлүүлсэн.",
+   "Багш хурдан ярьдаг.",
+   "Багшийн тусламжтайгаар миний дүн хурдан дээшилсэн."
+  ],
+  "correct_answer": "Багшийн тусламжтайгаар миний дүн хурдан дээшилсэн.",
+  "explanation": "在…的帮助下 — «… -ын тусламжтайгаар».",
+  "order_index": 13,
+  "id": "xinhsk3-l10-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Сурлагын хувьд» гэж хэлэхэд аль нь тохирох вэ?",
+  "options": [
+   "在学习下",
+   "在学习里",
+   "在学习上",
+   "在学习中"
+  ],
+  "correct_answer": "在学习上",
+  "explanation": "Хүрээ, талыг 在…上 бүтцээр хэлнэ.",
+  "order_index": 14,
+  "id": "xinhsk3-l10-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэмцээний үеэр тэр хамгийн их оноо авсан» — аль нь зөв бэ?",
+  "options": [
+   "在中比赛，他得分最高。",
+   "在比赛中，他得分最高。",
+   "在比赛下，他得分最高。",
+   "比赛在中，他得分最高。"
+  ],
+  "correct_answer": "在比赛中，他得分最高。",
+  "explanation": "Цаг, орчинг 在…中 бүтцээр хэлнэ.",
+  "order_index": 15,
+  "id": "xinhsk3-l10-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи маргааш номыг надад буцааж өгөөрэй» — аль нь зөв бэ?",
+  "options": [
+   "你明天再把书还给我。",
+   "你明天再还把书给我。",
+   "你明天再把还书给我。",
+   "你明天再书把还给我。"
+  ],
+  "correct_answer": "你明天再把书还给我。",
+  "explanation": "把 + юу + 还 + 给 + хүн.",
+  "order_index": 16,
+  "id": "xinhsk3-l10-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт 给 зөв хэрэглэсэн бэ?",
+  "options": [
+   "我把礼物给送她了。",
+   "我送把礼物给她了。",
+   "我把送礼物给她了。",
+   "我把礼物送给她了。"
+  ],
+  "correct_answer": "我把礼物送给她了。",
+  "explanation": "送给她 — үйл үгийн ард 给 + хүн.",
+  "order_index": 17,
+  "id": "xinhsk3-l10-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр БУРУУ вэ?",
+  "options": [
+   "我不想把书放在桌子上。",
+   "我会把书放在桌子上。",
+   "我把没书放在桌子上。",
+   "我没把书放在桌子上。"
+  ],
+  "correct_answer": "我把没书放在桌子上。",
+  "explanation": "没 нь 把-ийн өмнө орно: 我没把书放在桌子上.",
+  "order_index": 18,
+  "id": "xinhsk3-l10-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l10-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：同学想让刘小雪做什么？",
+  "options": [
+   "问老师",
+   "介绍学习方法",
+   "借笔记",
+   "写作业"
+  ],
+  "correct_answer": "介绍学习方法",
+  "explanation": "«能不能介绍一下学习方法» — сурах аргаа танилцуулахыг хүссэн.",
+  "order_index": 19,
+  "id": "xinhsk3-l10-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：刘小雪每天写作业以前做什么？",
+  "options": [
+   "看一遍笔记",
+   "去办公室",
+   "读历史书",
+   "问同学"
+  ],
+  "correct_answer": "看一遍笔记",
+  "explanation": "«写作业以前，都要看一遍» — тэмдэглэлээ нэг удаа уншдаг.",
+  "order_index": 20,
+  "id": "xinhsk3-l10-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：刘小雪觉得昨天的考试怎么样？",
+  "options": [
+   "数学很难",
+   "外语很好",
+   "都很差",
+   "历史有点儿难"
+  ],
+  "correct_answer": "历史有点儿难",
+  "explanation": "«我觉得历史有点儿难».",
+  "order_index": 21,
+  "id": "xinhsk3-l10-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：他们为什么一起去办公室？",
+  "options": [
+   "要考试",
+   "要还书",
+   "几个外语题他们都不会",
+   "要交作业"
+  ],
+  "correct_answer": "几个外语题他们都不会",
+  "explanation": "«这几个题我也不会，咱们还是一起去办公室问问李老师吧».",
+  "order_index": 22,
+  "id": "xinhsk3-l10-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：他们的问题在书上第几页？",
+  "options": [
+   "第二页",
+   "第五页",
+   "第七页",
+   "第十五页"
+  ],
+  "correct_answer": "第五页",
+  "explanation": "«书上第五页的这个对话».",
+  "order_index": 23,
+  "id": "xinhsk3-l10-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：刘小雪现在读几年级？",
+  "options": [
+   "初中二年级",
+   "小学六年级",
+   "高中一年级",
+   "初中三年级"
+  ],
+  "correct_answer": "初中二年级",
+  "explanation": "«我现在上初中二年级».",
+  "order_index": 24,
+  "id": "xinhsk3-l10-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：中国的学校一般小学上几年？",
+  "options": [
+   "三年",
+   "九年",
+   "四年",
+   "六年"
+  ],
+  "correct_answer": "六年",
+  "explanation": "«小学六年，初中三年，高中三年».",
+  "order_index": 25,
+  "id": "xinhsk3-l10-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

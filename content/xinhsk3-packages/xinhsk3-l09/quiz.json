@@ -1,0 +1,496 @@
+[
+ {
+  "type": "cloze",
+  "question": "我的________里没钱了，要去充钱。",
+  "options": [
+   "球场",
+   "啤酒",
+   "世界",
+   "卡"
+  ],
+  "correct_answer": "卡",
+  "explanation": "«Картанд маань мөнгө дууссан» — 公交卡.",
+  "order_index": 1,
+  "id": "xinhsk3-l09-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "下课以后我们去________踢足球吧。",
+  "options": [
+   "体育",
+   "卡",
+   "球场",
+   "男生"
+  ],
+  "correct_answer": "球场",
+  "explanation": "«Талбай руу очоод хөл бөмбөг тоглоё» — 球场.",
+  "order_index": 2,
+  "id": "xinhsk3-l09-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你打算________这次运动会吗？",
+  "options": [
+   "练",
+   "参加",
+   "影响",
+   "得分"
+  ],
+  "correct_answer": "参加",
+  "explanation": "«Энэ спортын наадамд оролцохоор төлөвлөж байна уу?» — 参加.",
+  "order_index": 3,
+  "id": "xinhsk3-l09-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这次考试你的________怎么样？",
+  "options": [
+   "成绩",
+   "世界",
+   "运动员",
+   "啤酒"
+  ],
+  "correct_answer": "成绩",
+  "explanation": "«Энэ шалгалтад дүн чинь ямар вэ?» — 成绩.",
+  "order_index": 4,
+  "id": "xinhsk3-l09-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "比赛快开始了，运动员们都有点儿________。",
+  "options": [
+   "主要",
+   "好多",
+   "受到",
+   "紧张"
+  ],
+  "correct_answer": "紧张",
+  "explanation": "«Тэмцээн удахгүй эхэлнэ, тамирчид бүгд сандарч байна» — 紧张.",
+  "order_index": 5,
+  "id": "xinhsk3-l09-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这件事情对我的________不大。",
+  "options": [
+   "练习",
+   "得分",
+   "影响",
+   "成绩"
+  ],
+  "correct_answer": "影响",
+  "explanation": "«Энэ хэрэг надад нөлөө багатай» — 影响.",
+  "order_index": 6,
+  "id": "xinhsk3-l09-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她________了大家的热情欢迎。",
+  "options": [
+   "练习",
+   "受到",
+   "得到",
+   "参加"
+  ],
+  "correct_answer": "受到",
+  "explanation": "«Түүнийг бүгд халуун угтсан» — 受到欢迎.",
+  "order_index": 7,
+  "id": "xinhsk3-l09-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他在比赛中________了第一名。",
+  "options": [
+   "得到",
+   "受到",
+   "练习",
+   "影响"
+  ],
+  "correct_answer": "得到",
+  "explanation": "«Тэмцээнд нэгдүгээр байр авсан» — 得到第一名.",
+  "order_index": 8,
+  "id": "xinhsk3-l09-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我________问问，你别担心。",
+  "options": [
+   "几乎",
+   "主要",
+   "好多",
+   "只是"
+  ],
+  "correct_answer": "只是",
+  "explanation": "«Би зүгээр л асууж байна» — 只是.",
+  "order_index": 9,
+  "id": "xinhsk3-l09-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个球场上，________都是男生在踢球。",
+  "options": [
+   "世界",
+   "主要",
+   "几乎",
+   "只是"
+  ],
+  "correct_answer": "几乎",
+  "explanation": "«Бараг бүгд хөвгүүд бөмбөг тоглож байна» — 几乎.",
+  "order_index": 10,
+  "id": "xinhsk3-l09-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«为了准备运动会，他们每天练球。» — 为了 юу илэрхийлж байна вэ?",
+  "options": [
+   "асуулт",
+   "зорилго",
+   "шалтгаан",
+   "өнгөрсөн цаг"
+  ],
+  "correct_answer": "зорилго",
+  "explanation": "为了 нь зорилгыг заана: «… бэлдэхийн тулд».",
+  "order_index": 11,
+  "id": "xinhsk3-l09-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "为了得到好成绩，他每天练习。",
+   "因为得到好成绩，他每天练习。",
+   "为了他每天练习，得到好成绩。",
+   "得到好成绩为了，他每天练习。"
+  ],
+  "correct_answer": "为了得到好成绩，他每天练习。",
+  "explanation": "为了 + зорилго，+ үйлдэл.",
+  "order_index": 12,
+  "id": "xinhsk3-l09-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这本书我看不懂» — 看不懂 юу гэсэн үг вэ?",
+  "options": [
+   "хараагүй",
+   "харах хэрэггүй",
+   "харахыг хориглоно",
+   "хараад ойлгож чадахгүй"
+  ],
+  "correct_answer": "хараад ойлгож чадахгүй",
+  "explanation": "V+不+нөхөлт — «чадахгүй».",
+  "order_index": 13,
+  "id": "xinhsk3-l09-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Сонсогдож байна» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我听不得见。",
+   "我得听见。",
+   "我听得见。",
+   "我听见了不。"
+  ],
+  "correct_answer": "我听得见。",
+  "explanation": "V+得+нөхөлт — «чадна».",
+  "order_index": 14,
+  "id": "xinhsk3-l09-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«球总是踢不进去» — 踢不进去 юу гэсэн үг вэ?",
+  "options": [
+   "өшиглөхгүй",
+   "өшиглөөд оруулж чадахгүй",
+   "өшиглөөд оруулсан",
+   "өшиглөөд орж болно"
+  ],
+  "correct_answer": "өшиглөөд оруулж чадахгүй",
+  "explanation": "不 нь «чадахгүй» гэсэн утга өгнө.",
+  "order_index": 15,
+  "id": "xinhsk3-l09-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«越看越着急» — юу гэсэн үг вэ?",
+  "options": [
+   "үзэх тусам улам сандарна",
+   "үзээгүй, сандарна",
+   "үзсэний дараа тайвширна",
+   "үзэх хэрэггүй"
+  ],
+  "correct_answer": "үзэх тусам улам сандарна",
+  "explanation": "越A越B — «A хийх тусам B».",
+  "order_index": 16,
+  "id": "xinhsk3-l09-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "这个电影越看有意思。",
+   "这个电影看越有意思。",
+   "这个电影越很看越有意思。",
+   "这个电影越看越有意思。"
+  ],
+  "correct_answer": "这个电影越看越有意思。",
+  "explanation": "Хоёр хэсэг хоёулаа 越-тэй байна, 很 тавихгүй.",
+  "order_index": 17,
+  "id": "xinhsk3-l09-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«越多越好» нь юу гэсэн үг вэ?",
+  "options": [
+   "хамгийн цөөн нь сайн",
+   "олон ч, цөөн ч биш",
+   "олон байх тусам сайн",
+   "олон байж болохгүй"
+  ],
+  "correct_answer": "олон байх тусам сайн",
+  "explanation": "越A越B-ийн богино хэлбэр.",
+  "order_index": 18,
+  "id": "xinhsk3-l09-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«几» ханз «几乎» дотор яаж уншигдах вэ?",
+  "options": [
+   "jí",
+   "jī",
+   "jǐ",
+   "jì"
+  ],
+  "correct_answer": "jī",
+  "explanation": "几乎 jīhū, 几个 jǐ gè. Хоёр уншлагатай ханз.",
+  "order_index": 19,
+  "id": "xinhsk3-l09-q19",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l09-words"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文为什么这么快就过来了？",
+  "options": [
+   "接了电话就跑过来了",
+   "坐公交车来的",
+   "在白家月家",
+   "没有来"
+  ],
+  "correct_answer": "接了电话就跑过来了",
+  "explanation": "«接了你的电话就跑过来了» — утсыг авчхаад шууд гүйж ирсэн.",
+  "order_index": 20,
+  "id": "xinhsk3-l09-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月为什么不想一起打羽毛球？",
+  "options": [
+   "没时间",
+   "不喜欢运动",
+   "生病了",
+   "几乎忘了怎么打"
+  ],
+  "correct_answer": "几乎忘了怎么打",
+  "explanation": "«我好多年没打羽毛球了，几乎忘了怎么打了».",
+  "order_index": 21,
+  "id": "xinhsk3-l09-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文说大家打球是为了什么？",
+  "options": [
+   "得第一",
+   "认识朋友",
+   "锻炼身体",
+   "比赛"
+  ],
+  "correct_answer": "锻炼身体",
+  "explanation": "«只是为了锻炼身体».",
+  "order_index": 22,
+  "id": "xinhsk3-l09-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：足球比赛为什么踢得不好？",
+  "options": [
+   "没有观众",
+   "几个老球员生病了",
+   "天气不好",
+   "球场太小"
+  ],
+  "correct_answer": "几个老球员生病了",
+  "explanation": "«几个老球员生病了，新球员…太紧张了».",
+  "order_index": 23,
+  "id": "xinhsk3-l09-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：白家月最后说什么？",
+  "options": [
+   "我不看了，你们告诉我得分吧",
+   "我要回家",
+   "再来一杯啤酒",
+   "我们一起踢球"
+  ],
+  "correct_answer": "我不看了，你们告诉我得分吧",
+  "explanation": "«越看越着急。我不看了».",
+  "order_index": 24,
+  "id": "xinhsk3-l09-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：第一位参加奥运会的中国运动员是谁？",
+  "options": [
+   "李文",
+   "陈天中",
+   "白家月",
+   "刘长春"
+  ],
+  "correct_answer": "刘长春",
+  "explanation": "«第一位参加奥运会的中国运动员是刘长春».",
+  "order_index": 25,
+  "id": "xinhsk3-l09-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：刘长春1932年参加了什么比赛？",
+  "options": [
+   "200米游泳",
+   "篮球",
+   "100米和200米短跑",
+   "5000米长跑"
+  ],
+  "correct_answer": "100米和200米短跑",
+  "explanation": "«他1932年参加了100米和200米短跑比赛».",
+  "order_index": 26,
+  "id": "xinhsk3-l09-q26",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

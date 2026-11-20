@@ -1,0 +1,282 @@
+[
+ {
+  "chinese": "最近",
+  "pinyin": "zuìjìn",
+  "mongolian": "сүүлийн үед, саяхан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我最近在上海，不在北京。",
+  "exampleMongolian": "Би сүүлийн үед Шанхайд байгаа, Бээжинд биш.",
+  "pos": "цаг заасан нэр үг",
+  "collocations_zh": "最近很忙 / 最近有个电影"
+ },
+ {
+  "chinese": "常",
+  "pinyin": "cháng",
+  "mongolian": "байнга, тогтмол",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们常一起学习。",
+  "exampleMongolian": "Бид байнга хамт хичээллэдэг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "常来 / 常去"
+ },
+ {
+  "chinese": "体育馆",
+  "pinyin": "tǐyùguǎn",
+  "mongolian": "спорт заал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他正在体育馆打篮球呢。",
+  "exampleMongolian": "Тэр спорт заалнд сагс тоглож байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "去体育馆 / 在体育馆"
+ },
+ {
+  "chinese": "习惯",
+  "pinyin": "xíguàn",
+  "mongolian": "дадал; дасах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "早上起床喝杯水，是个好习惯。",
+  "exampleMongolian": "Өглөө босоод аяга ус уух бол сайн дадал.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "好习惯 / 坏习惯 / 慢慢习惯"
+ },
+ {
+  "chinese": "胖",
+  "pinyin": "pàng",
+  "mongolian": "таргалсан, тарган",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你比以前胖了。",
+  "exampleMongolian": "Чи урьдынхаас таргалсан байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很胖 / 长胖 / 胖了好几斤"
+ },
+ {
+  "chinese": "健康",
+  "pinyin": "jiànkāng",
+  "mongolian": "эрүүл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "爷爷九十岁了，身体还很健康。",
+  "exampleMongolian": "Өвөө ерэн настай ч бие нь эрүүл хэвээр.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "身体健康 / 很健康"
+ },
+ {
+  "chinese": "以后",
+  "pinyin": "yǐhòu",
+  "mongolian": "дараа, хойно",
+  "hskLevel": "HSK3",
+  "exampleChinese": "下课以后，我们一起去体育馆。",
+  "exampleMongolian": "Хичээл тарсны дараа бид хамт спорт заал руу явна.",
+  "pos": "цаг заасан нэр үг",
+  "collocations_zh": "下课以后 / 以后再说"
+ },
+ {
+  "chinese": "羽毛球",
+  "pinyin": "yǔmáoqiú",
+  "mongolian": "бадминтон",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们去体育馆打羽毛球。",
+  "exampleMongolian": "Бид спорт заалнд бадминтон тоглохоор явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "打羽毛球"
+ },
+ {
+  "chinese": "耳朵",
+  "pinyin": "ěrduo",
+  "mongolian": "чих",
+  "hskLevel": "HSK3",
+  "exampleChinese": "小兔子有两只长长的耳朵。",
+  "exampleMongolian": "Туулай хоёр урт чихтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "两只耳朵 / 耳朵疼"
+ },
+ {
+  "chinese": "感冒",
+  "pinyin": "gǎnmào",
+  "mongolian": "ханиад хүрэх; ханиад",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他这几天感冒了，没有去上课。",
+  "exampleMongolian": "Тэр сүүлийн хэд хоног ханиад хүрээд хичээлд яваагүй.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "感冒药 / 感冒了"
+ },
+ {
+  "chinese": "发烧",
+  "pinyin": "fāshāo",
+  "mongolian": "халуурах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你发烧了，快去看医生吧。",
+  "exampleMongolian": "Чи халуурч байна, түргэн эмчид үзүүл.",
+  "pos": "үйл үг",
+  "collocations_zh": "发高烧 / 发低烧"
+ },
+ {
+  "chinese": "低",
+  "pinyin": "dī",
+  "mongolian": "нам, намхан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "小鸟飞得很低。",
+  "exampleMongolian": "Жижиг шувуу намхан нисч байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很低 / 低一点儿 / 发低烧"
+ },
+ {
+  "chinese": "关心",
+  "pinyin": "guānxīn",
+  "mongolian": "халамжлах, санаа тавих",
+  "hskLevel": "HSK3",
+  "exampleChinese": "妈妈很关心我的学习。",
+  "exampleMongolian": "Ээж миний сурлагад их санаа тавьдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "关心朋友 / 谢谢关心"
+ },
+ {
+  "chinese": "注意",
+  "pinyin": "zhùyì",
+  "mongolian": "анхаарах, болгоомжлох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个问题，需要好好注意。",
+  "exampleMongolian": "Энэ асуудалд сайн анхаарах хэрэгтэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "多注意 / 请注意"
+ },
+ {
+  "chinese": "突然",
+  "pinyin": "tūrán",
+  "mongolian": "гэнэт, гэнэтийн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "外面突然下雨了。",
+  "exampleMongolian": "Гадаа гэнэт бороо орлоо.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很突然 / 突然住院"
+ },
+ {
+  "chinese": "住院",
+  "pinyin": "zhùyuàn",
+  "mongolian": "эмнэлэгт хэвтэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "妈妈生病了，需要住院。",
+  "exampleMongolian": "Ээж өвдөж, эмнэлэгт хэвтэх хэрэгтэй болсон.",
+  "pos": "үйл үг",
+  "collocations_zh": "住院检查 / 生病住院"
+ },
+ {
+  "chinese": "担心",
+  "pinyin": "dānxīn",
+  "mongolian": "санаа зовох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你不接电话，我很担心你。",
+  "exampleMongolian": "Чи утас авахгүй байна, би чамайг санаа зовж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "别担心 / 很担心"
+ },
+ {
+  "chinese": "腿",
+  "pinyin": "tuǐ",
+  "mongolian": "хөл (гуя, шилбэ)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的腿疼了几个星期了。",
+  "exampleMongolian": "Миний хөл хэд хэдэн долоо хоног өвдөж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "小腿 / 右腿 / 腿疼"
+ },
+ {
+  "chinese": "病人",
+  "pinyin": "bìngrén",
+  "mongolian": "өвчтөн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这位病人需要好好休息。",
+  "exampleMongolian": "Энэ өвчтөн сайн амрах хэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "关心病人 / 一个病人"
+ },
+ {
+  "chinese": "差不多",
+  "pinyin": "chàbuduō",
+  "mongolian": "бараг, ойролцоо",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这两个苹果差不多大。",
+  "exampleMongolian": "Энэ хоёр алим бараг адил том.",
+  "pos": "дайвар үг / тэмдэг нэр",
+  "collocations_zh": "差不多高 / 差不多一个月"
+ },
+ {
+  "chinese": "得",
+  "pinyin": "děi",
+  "mongolian": "хэрэгтэй, ёстой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "明天要上课，我得早点儿睡觉。",
+  "exampleMongolian": "Маргааш хичээлтэй, би эрт унтах ёстой.",
+  "pos": "туслах үйл үг",
+  "collocations_zh": "得回家 / 得做完"
+ },
+ {
+  "chinese": "开心",
+  "pinyin": "kāixīn",
+  "mongolian": "баяртай, цэнгэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天天气很好，大家都很开心。",
+  "exampleMongolian": "Өнөөдөр цаг агаар сайхан, бүгд баярлаж байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很开心 / 开心多了"
+ },
+ {
+  "chinese": "出院",
+  "pinyin": "chūyuàn",
+  "mongolian": "(өвчтөн) эмнэлгээс гарах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他病好了，今天出院了。",
+  "exampleMongolian": "Тэр эдгэрч, өнөөдөр эмнэлгээс гарлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "出院以后 / 明天出院"
+ },
+ {
+  "chinese": "开",
+  "pinyin": "kāi",
+  "mongolian": "(эм) бичиж өгөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "医生给我开了一些感冒药。",
+  "exampleMongolian": "Эмч надад ханиадны эм бичиж өгсөн.",
+  "pos": "үйл үг",
+  "collocations_zh": "开药 / 开点儿药"
+ },
+ {
+  "chinese": "种",
+  "pinyin": "zhǒng",
+  "mongolian": "төрөл, зүйл (хэмжих үг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我店里有三种蛋糕，你要哪种？",
+  "exampleMongolian": "Манай дэлгүүрт гурван төрлийн бялуу бий, чи аль нь авах вэ?",
+  "pos": "хэмжих үг",
+  "collocations_zh": "几种药 / 这种方法"
+ },
+ {
+  "chinese": "方法",
+  "pinyin": "fāngfǎ",
+  "mongolian": "арга, арга зам",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们要找到学习的好方法。",
+  "exampleMongolian": "Бид сурах сайн арга олох хэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "好方法 / 吃药的方法"
+ },
+ {
+  "chinese": "其他",
+  "pinyin": "qítā",
+  "mongolian": "бусад",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你还有其他问题吗？",
+  "exampleMongolian": "Чамд өөр асуулт байна уу?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "其他人 / 其他东西"
+ },
+ {
+  "chinese": "心里",
+  "pinyin": "xīnlǐ",
+  "mongolian": "сэтгэл, зүрх сэтгэлд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我帮助别人，心里很开心。",
+  "exampleMongolian": "Би бусдад тусалбал сэтгэл дундаа баярладаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "记在心里 / 心里难过"
+ }
+]

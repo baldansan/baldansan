@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "饿",
+   "pinyin": [
+    "è"
+   ],
+   "strokeCount": 10,
+   "radical": "饣",
+   "practice": "write",
+   "meaningMn": "өлсөх",
+   "etymology_mn": "饣 (хоол) + 我: хоолоор дутсан байдал",
+   "exampleWords": [
+    "很饿",
+    "不饿"
+   ]
+  },
+  {
+   "hanzi": "渴",
+   "pinyin": [
+    "kě"
+   ],
+   "strokeCount": 11,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "цангах",
+   "etymology_mn": "氵 (ус) + 曷 (дуудлага): усаар дутсан байдал",
+   "exampleWords": [
+    "很渴",
+    "口渴"
+   ]
+  },
+  {
+   "hanzi": "碗",
+   "pinyin": [
+    "wǎn"
+   ],
+   "strokeCount": 13,
+   "radical": "石",
+   "practice": "write",
+   "meaningMn": "аяга",
+   "etymology_mn": "石 (чулуу) + 宛 (дуудлага): эртний аяга чулуу, шавраар хийгддэг байсан",
+   "exampleWords": [
+    "一碗米饭",
+    "小碗"
+   ]
+  },
+  {
+   "hanzi": "筷",
+   "pinyin": [
+    "kuài"
+   ],
+   "strokeCount": 13,
+   "radical": "竹",
+   "practice": "write",
+   "meaningMn": "савх",
+   "etymology_mn": "竹 (хулс) + 快 (дуудлага): хулсаар хийсэн савх",
+   "exampleWords": [
+    "筷子",
+    "用筷子"
+   ]
+  },
+  {
+   "hanzi": "蛋",
+   "pinyin": [
+    "dàn"
+   ],
+   "strokeCount": 11,
+   "radical": "虫",
+   "practice": "write",
+   "meaningMn": "өндөг",
+   "etymology_mn": "疋 + 虫: өндөг нь шавьж, шувууны өндөг",
+   "exampleWords": [
+    "蛋糕",
+    "鸡蛋"
+   ]
+  },
+  {
+   "hanzi": "糕",
+   "pinyin": [
+    "gāo"
+   ],
+   "strokeCount": 16,
+   "radical": "米",
+   "practice": "write",
+   "meaningMn": "бялуу",
+   "etymology_mn": "米 (будаа) + 羔 (дуудлага): будааны гурилаар хийсэн гурилан бүтээгдэхүүн",
+   "exampleWords": [
+    "蛋糕",
+    "年糕"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "喝",
+   "b": "渴",
+   "word_a": "喝茶",
+   "word_b": "口渴",
+   "mn": "喝 — уух; 渴 — цангах",
+   "tip_mn": "喝 нь 口 (ам)-тай, амаараа уухыг хэлнэ. 渴 нь 氵 (ус)-тай, усны хэрэгцээ."
+  },
+  {
+   "a": "筷",
+   "b": "快",
+   "word_a": "筷子",
+   "word_b": "快乐",
+   "mn": "筷 — савх; 快 — хурдан, баяр",
+   "tip_mn": "筷 дээр 竹 (хулс) нэмэгдсэн: хулсан савх. 快 нь хурдан, баяр."
+  },
+  {
+   "a": "又",
+   "b": "双",
+   "word_a": "又高又漂亮",
+   "word_b": "一双筷子",
+   "mn": "又 — бас; 双 — хос",
+   "tip_mn": "双 нь хоёр 又 тул «хос». Хос савхыг 双 гэнэ."
+  },
+  {
+   "a": "饿",
+   "b": "我",
+   "word_a": "很饿",
+   "word_b": "我们",
+   "mn": "饿 — өлсөх; 我 — би",
+   "tip_mn": "饿 нь 饣 (хоол)-той, хоолны хэрэгцээ. 我 нь «би»."
+  }
+ ]
+}

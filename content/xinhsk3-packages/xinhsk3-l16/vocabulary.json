@@ -1,0 +1,262 @@
+[
+ {
+  "chinese": "脏",
+  "pinyin": "zāng",
+  "mongolian": "бохир",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这张桌子有点儿脏。",
+  "exampleMongolian": "Энэ ширээ жаахан бохир байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很脏 / 脏衣服"
+ },
+ {
+  "chinese": "可爱",
+  "pinyin": "kě'ài",
+  "mongolian": "хөөрхөн, өхөөрдөм",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个孩子很可爱。",
+  "exampleMongolian": "Энэ хүүхэд их хөөрхөн.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很可爱 / 可爱的小猫"
+ },
+ {
+  "chinese": "一会儿",
+  "pinyin": "yíhuìr",
+  "mongolian": "жаахан хугацаа; нэг … нэг …",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她还没来，我们等一会儿吧。",
+  "exampleMongolian": "Тэр хараахан ирээгүй, жаахан хүлээе.",
+  "pos": "дайвар үг",
+  "collocations_zh": "等一会儿 / 过一会儿"
+ },
+ {
+  "chinese": "脚",
+  "pinyin": "jiǎo",
+  "mongolian": "хөл (шагайгаас доош)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天走了好多路，脚真疼！",
+  "exampleMongolian": "Өнөөдөр маш их алхсан болохоор хөл минь үнэхээр өвдөж байна!",
+  "pos": "нэр үг",
+  "collocations_zh": "一只脚 / 右脚"
+ },
+ {
+  "chinese": "照顾",
+  "pinyin": "zhàogù",
+  "mongolian": "арчлах, асрах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她每天都去医院照顾爷爷。",
+  "exampleMongolian": "Тэр өдөр бүр эмнэлэгт өвөөгөө асрахаар очдог.",
+  "pos": "үйл үг",
+  "collocations_zh": "照顾孩子 / 照顾得很好"
+ },
+ {
+  "chinese": "好像",
+  "pinyin": "hǎoxiàng",
+  "mongolian": "… шиг; … бололтой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他好像还没有来上课。",
+  "exampleMongolian": "Тэр хичээлдээ хараахан ирээгүй бололтой.",
+  "pos": "үйл үг",
+  "collocations_zh": "好像…一样 / 好像还没…"
+ },
+ {
+  "chinese": "认得",
+  "pinyin": "rènde",
+  "mongolian": "таних, мэдэх (хүн, юмыг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你认不认得这位老师？",
+  "exampleMongolian": "Чи энэ багшийг таних уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "认不认得 / 不认得"
+ },
+ {
+  "chinese": "周末",
+  "pinyin": "zhōumò",
+  "mongolian": "амралтын өдөр (бямба, ням)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我每个周末都要去游泳。",
+  "exampleMongolian": "Би амралтын өдөр бүр усанд сэлдэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "这个周末 / 每个周末"
+ },
+ {
+  "chinese": "动物园",
+  "pinyin": "dòngwùyuán",
+  "mongolian": "амьтны хүрээлэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "动物园里有很多可爱的动物。",
+  "exampleMongolian": "Амьтны хүрээлэнд олон хөөрхөн амьтан бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "去动物园 / 动物园里"
+ },
+ {
+  "chinese": "动物",
+  "pinyin": "dòngwù",
+  "mongolian": "амьтан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我最喜欢的动物是大熊猫。",
+  "exampleMongolian": "Миний хамгийн дуртай амьтан бол аварга панда.",
+  "pos": "нэр үг",
+  "collocations_zh": "小动物 / 野生动物"
+ },
+ {
+  "chinese": "大熊猫",
+  "pinyin": "dàxióngmāo",
+  "mongolian": "аварга панда",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这只大熊猫在睡觉。",
+  "exampleMongolian": "Энэ панда унтаж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "一只大熊猫 / 可爱的大熊猫"
+ },
+ {
+  "chinese": "奇怪",
+  "pinyin": "qíguài",
+  "mongolian": "сонин, хачин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个声音很奇怪。",
+  "exampleMongolian": "Энэ дуу чимээ их сонин байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很奇怪 / 觉得奇怪"
+ },
+ {
+  "chinese": "其实",
+  "pinyin": "qíshí",
+  "mongolian": "үнэндээ, үнэн хэрэгтээ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我以为他很忙，其实他有很多时间。",
+  "exampleMongolian": "Би түүнийг завгүй гэж бодсон, гэтэл үнэндээ тэр цаг их байсан.",
+  "pos": "дайвар үг",
+  "collocations_zh": "其实…"
+ },
+ {
+  "chinese": "竹子",
+  "pinyin": "zhúzi",
+  "mongolian": "хулс",
+  "hskLevel": "HSK3",
+  "exampleChinese": "大熊猫最喜欢吃竹子。",
+  "exampleMongolian": "Панда хамгийн их хулс идэх дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃竹子 / 竹子做的"
+ },
+ {
+  "chinese": "国宝",
+  "pinyin": "guóbǎo",
+  "mongolian": "үндэсний эрдэнэ, үндэсний үнэт өв",
+  "hskLevel": "HSK3",
+  "exampleChinese": "大熊猫是中国的国宝。",
+  "exampleMongolian": "Панда бол Хятадын үндэсний эрдэнэ.",
+  "pos": "нэр үг",
+  "collocations_zh": "中国国宝 / 国宝大熊猫"
+ },
+ {
+  "chinese": "全",
+  "pinyin": "quán",
+  "mongolian": "бүх, бүтэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们全家都喜欢旅游。",
+  "exampleMongolian": "Манай бүх гэр бүл аялах дуртай.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "全校 / 全家"
+ },
+ {
+  "chinese": "野生",
+  "pinyin": "yěshēng",
+  "mongolian": "зэрлэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这里有很多野生的小动物。",
+  "exampleMongolian": "Энд олон зэрлэг амьтан бий.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "野生动物"
+ },
+ {
+  "chinese": "关于",
+  "pinyin": "guānyú",
+  "mongolian": "-ийн тухай, -тай холбоотой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我想买一本关于旅游的书。",
+  "exampleMongolian": "Би аяллын тухай нэг ном авмаар байна.",
+  "pos": "угтвар үг",
+  "collocations_zh": "关于…的书 / 关于这个问题"
+ },
+ {
+  "chinese": "饱",
+  "pinyin": "bǎo",
+  "mongolian": "цатгалан, цадсан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我已经饱了，不能再吃了。",
+  "exampleMongolian": "Би аль хэдийн цадлаа, дахиж идэхгүй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "吃饱 / 吃不饱"
+ },
+ {
+  "chinese": "张",
+  "pinyin": "zhāng",
+  "mongolian": "(ам) ангайх, (гар) дэлгэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这只小鸟张着嘴，好像饿了。",
+  "exampleMongolian": "Энэ шувуу ам ангайчихсан, өлссөн бололтой.",
+  "pos": "үйл үг",
+  "collocations_zh": "张开 / 张嘴"
+ },
+ {
+  "chinese": "嘴",
+  "pinyin": "zuǐ",
+  "mongolian": "ам",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请张开嘴。",
+  "exampleMongolian": "Аманд ангайна уу.",
+  "pos": "нэр үг",
+  "collocations_zh": "张开嘴 / 一张嘴"
+ },
+ {
+  "chinese": "身边",
+  "pinyin": "shēnbiān",
+  "mongolian": "дэргэд, хажууд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "家人一直都在我的身边。",
+  "exampleMongolian": "Гэр бүлийнхэн минь үргэлж миний дэргэд байдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "我的身边 / 身边的朋友"
+ },
+ {
+  "chinese": "半天",
+  "pinyin": "bàntiān",
+  "mongolian": "нэлээн удаан, хэсэг хугацаа",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我在门口等了你半天。",
+  "exampleMongolian": "Би үүдэнд чамайг нэлээн удаан хүлээлээ.",
+  "pos": "тоо-хэмжих үг",
+  "collocations_zh": "等了半天 / 说了半天"
+ },
+ {
+  "chinese": "脸",
+  "pinyin": "liǎn",
+  "mongolian": "нүүр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她的脸很红，好像发烧了。",
+  "exampleMongolian": "Түүний нүүр их улаан, халуураад байгаа бололтой.",
+  "pos": "нэр үг",
+  "collocations_zh": "洗脸 / 脸上"
+ },
+ {
+  "chinese": "大人",
+  "pinyin": "dàrén",
+  "mongolian": "насанд хүрсэн хүн, том хүн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我家里有四个大人：爸爸、妈妈、爷爷、奶奶。",
+  "exampleMongolian": "Манай гэрт дөрвөн том хүн бий: аав, ээж, өвөө, эмээ.",
+  "pos": "нэр үг",
+  "collocations_zh": "大人和孩子"
+ },
+ {
+  "chinese": "喜爱",
+  "pinyin": "xǐ'ài",
+  "mongolian": "хайрлах, дурлан таашаах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她特别喜爱画画。",
+  "exampleMongolian": "Тэр зураг зурах дуртай, их хайртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "特别喜爱 / 最喜爱"
+ }
+]

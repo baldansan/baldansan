@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "街",
+  "pinyin": "jiē",
+  "mongolian": "гудамж",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这条街上有很多商店。",
+  "exampleMongolian": "Энэ гудамжинд олон дэлгүүр бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "一条街 / 街上"
+ },
+ {
+  "chinese": "开花",
+  "pinyin": "kāihuā",
+  "mongolian": "цэцэглэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "学校里的树开花了，很漂亮。",
+  "exampleMongolian": "Сургуулийн модод цэцэглэж, их сайхан болжээ.",
+  "pos": "үйл үг",
+  "collocations_zh": "树开花了 / 花开了"
+ },
+ {
+  "chinese": "公园",
+  "pinyin": "gōngyuán",
+  "mongolian": "цэцэрлэгт хүрээлэн, цэцэрлэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "超市旁边有一个公园。",
+  "exampleMongolian": "Супермаркетийн хажууд нэг цэцэрлэгт хүрээлэн бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "去公园 / 一个公园"
+ },
+ {
+  "chinese": "船",
+  "pinyin": "chuán",
+  "mongolian": "завь, хөлөг онгоц",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她是坐船去旅游的。",
+  "exampleMongolian": "Тэр завиар аялахаар явсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "坐船 / 上船"
+ },
+ {
+  "chinese": "工作日",
+  "pinyin": "gōngzuòrì",
+  "mongolian": "ажлын өдөр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他工作日很忙，周末才有时间休息。",
+  "exampleMongolian": "Тэр ажлын өдрүүдэд завгүй, амралтын өдөр л амарна.",
+  "pos": "нэр үг",
+  "collocations_zh": "工作日 / 周末"
+ },
+ {
+  "chinese": "地方",
+  "pinyin": "dìfang",
+  "mongolian": "газар, орон",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个地方我还没来过呢。",
+  "exampleMongolian": "Энэ газарт би хараахан ирж үзээгүй байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "什么地方 / 这个地方"
+ },
+ {
+  "chinese": "刚才",
+  "pinyin": "gāngcái",
+  "mongolian": "дөнгөж сая",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你刚才去哪儿了？有人找你。",
+  "exampleMongolian": "Чи дөнгөж сая хаашаа явсан бэ? Чамайг хүн хайсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "刚才还… / 刚才有人"
+ },
+ {
+  "chinese": "刮",
+  "pinyin": "guā",
+  "mongolian": "(салхи) салхилах, үлээх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天刮风，有点儿冷。",
+  "exampleMongolian": "Өнөөдөр салхитай, жаахан хүйтэн байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "刮风 / 刮大风"
+ },
+ {
+  "chinese": "风",
+  "pinyin": "fēng",
+  "mongolian": "салхи",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天风很大，你要多穿衣服。",
+  "exampleMongolian": "Өнөөдөр салхи их, чи дулаан хувцасла.",
+  "pos": "нэр үг",
+  "collocations_zh": "大风 / 冷风"
+ },
+ {
+  "chinese": "新闻",
+  "pinyin": "xīnwén",
+  "mongolian": "мэдээ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "每天七点，我都准时打开电视看新闻。",
+  "exampleMongolian": "Би өдөр бүр долоон цагт заавал телевиз асааж мэдээ үздэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "看新闻 / 一条新闻"
+ },
+ {
+  "chinese": "伞",
+  "pinyin": "sǎn",
+  "mongolian": "шүхэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这把伞是你的吗？",
+  "exampleMongolian": "Энэ шүхэр чинийх үү?",
+  "pos": "нэр үг",
+  "collocations_zh": "一把伞 / 雨伞"
+ },
+ {
+  "chinese": "借",
+  "pinyin": "jiè",
+  "mongolian": "зээлүүлэх; зээлэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "前天，我找小张借了一百块钱。",
+  "exampleMongolian": "Уржигдар би Сяо Жангаас зуун юань зээлсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "借书 / 借钱 / 借给你"
+ },
+ {
+  "chinese": "把",
+  "pinyin": "bǎ",
+  "mongolian": "бариултай, түшлэгтэй зэрэг юмны хэмжих үг (шүхэр, сандал)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "外面下雨了，我带一把伞。",
+  "exampleMongolian": "Гадаа бороо орж байна, би нэг шүхэр авч явна.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一把伞 / 一把椅子"
+ },
+ {
+  "chinese": "雨衣",
+  "pinyin": "yǔyī",
+  "mongolian": "борооны цув",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我有一件黄色的雨衣。",
+  "exampleMongolian": "Надад шар өнгийн борооны цув бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "穿雨衣 / 一件雨衣"
+ },
+ {
+  "chinese": "变",
+  "pinyin": "biàn",
+  "mongolian": "өөрчлөгдөх, болох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "天气慢慢变冷了。",
+  "exampleMongolian": "Цаг агаар аажим аажмаар хүйтэрлээ.",
+  "pos": "үйл үг",
+  "collocations_zh": "变冷 / 变好"
+ },
+ {
+  "chinese": "季节",
+  "pinyin": "jìjié",
+  "mongolian": "улирал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "一年有四个季节。",
+  "exampleMongolian": "Жилд дөрвөн улирал бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "这个季节 / 四个季节"
+ },
+ {
+  "chinese": "变化",
+  "pinyin": "biànhuà",
+  "mongolian": "өөрчлөлт; өөрчлөгдөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "两年不见，她变化太大了。",
+  "exampleMongolian": "Хоёр жил уулзаагүй, тэр маш их өөрчлөгдсөн байна.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "发生变化 / 没有变化"
+ },
+ {
+  "chinese": "冬天",
+  "pinyin": "dōngtiān",
+  "mongolian": "өвөл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这里的冬天特别冷，但是很美。",
+  "exampleMongolian": "Энд өвөл маш хүйтэн ч гэсэн үзэсгэлэнтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "冬天 / 过冬天"
+ },
+ {
+  "chinese": "常常",
+  "pinyin": "chángcháng",
+  "mongolian": "байнга, ихэвчлэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我常常和朋友一起去图书馆。",
+  "exampleMongolian": "Би найзуудтайгаа байнга номын сан руу явдаг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "常常去 / 常常下雪"
+ },
+ {
+  "chinese": "关注",
+  "pinyin": "guānzhù",
+  "mongolian": "анхаарал тавих, ажиглах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我每天都关注第二天的天气。",
+  "exampleMongolian": "Би маргаашийн цаг агаарыг өдөр бүр ажигладаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "很关注 / 关注天气"
+ },
+ {
+  "chinese": "四季",
+  "pinyin": "sìjì",
+  "mongolian": "дөрвөн улирал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "北京一年四季的天气都不一样。",
+  "exampleMongolian": "Бээжинд дөрвөн улирал бүрийн цаг агаар өөр өөр.",
+  "pos": "нэр үг",
+  "collocations_zh": "一年四季"
+ },
+ {
+  "chinese": "春天",
+  "pinyin": "chūntiān",
+  "mongolian": "хавар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "春天来了，树都开花了。",
+  "exampleMongolian": "Хавар ирлээ, мод бүгд цэцэглэжээ.",
+  "pos": "нэр үг",
+  "collocations_zh": "春天来了 / 春天的花"
+ },
+ {
+  "chinese": "夏天",
+  "pinyin": "xiàtiān",
+  "mongolian": "зун",
+  "hskLevel": "HSK3",
+  "exampleChinese": "夏天到了，你一定要多喝水。",
+  "exampleMongolian": "Зун болжээ, чи заавал их ус уугаарай.",
+  "pos": "нэр үг",
+  "collocations_zh": "夏天到了 / 夏天很热"
+ },
+ {
+  "chinese": "凉快",
+  "pinyin": "liángkuai",
+  "mongolian": "сэрүүн, тааламжтай сэрүүн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "下雨以后，外面变凉快了。",
+  "exampleMongolian": "Бороо орсны дараа гадаа сэрүүн болжээ.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很凉快 / 变凉快"
+ },
+ {
+  "chinese": "秋天",
+  "pinyin": "qiūtiān",
+  "mongolian": "намар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我最喜欢秋天，不冷也不热。",
+  "exampleMongolian": "Би намрыг хамгийн их хайрладаг, хүйтэн ч биш, халуун ч биш.",
+  "pos": "нэр үг",
+  "collocations_zh": "秋天的叶子"
+ },
+ {
+  "chinese": "叶子",
+  "pinyin": "yèzi",
+  "mongolian": "навч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "秋天，树上的叶子变黄了。",
+  "exampleMongolian": "Намар модны навч шарласан.",
+  "pos": "нэр үг",
+  "collocations_zh": "树叶子 / 黄叶子"
+ },
+ {
+  "chinese": "变成",
+  "pinyin": "biànchéng",
+  "mongolian": "болон хувирах, … болох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "下雪后，外面变成了白色。",
+  "exampleMongolian": "Цас орсны дараа гадаа цагаан өнгөтэй болжээ.",
+  "pos": "үйл үг",
+  "collocations_zh": "变成红色 / 变成朋友"
+ }
+]

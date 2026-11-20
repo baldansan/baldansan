@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "向",
+  "pinyin": "xiàng",
+  "mongolian": "-руу, -тай чиглэн; -аас (суралцах)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你向前走就能看到那家超市。",
+  "exampleMongolian": "Чи урагш явбал тэр дэлгүүр харагдана.",
+  "pos": "угтвар үг",
+  "collocations_zh": "向前走 / 向左看"
+ },
+ {
+  "chinese": "楼梯",
+  "pinyin": "lóutī",
+  "mongolian": "шат (барилгын)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "上下楼梯要慢慢走。",
+  "exampleMongolian": "Шатаар өгсөж, уруудахдаа аажуухан яв.",
+  "pos": "нэр үг",
+  "collocations_zh": "上楼梯 / 爬楼梯"
+ },
+ {
+  "chinese": "害怕",
+  "pinyin": "hàipà",
+  "mongolian": "айх, цочих",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我害怕一个人在家。",
+  "exampleMongolian": "Би ганцаараа гэртээ байхаас айдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "很害怕 / 感到害怕"
+ },
+ {
+  "chinese": "生气",
+  "pinyin": "shēngqì",
+  "mongolian": "уурлах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你放心，我一点儿也不生气。",
+  "exampleMongolian": "Санаа зоволтгүй, би огт уурлаагүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "很生气 / 生气极了"
+ },
+ {
+  "chinese": "常见",
+  "pinyin": "chángjiàn",
+  "mongolian": "түгээмэл, байнга тохиолддог",
+  "hskLevel": "HSK3",
+  "exampleChinese": "感冒是一种常见病。",
+  "exampleMongolian": "Ханиад бол түгээмэл өвчин.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很常见 / 常见问题"
+ },
+ {
+  "chinese": "聪明",
+  "pinyin": "cōngmíng",
+  "mongolian": "ухаалаг, гярхай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他很聪明，但是学习不努力。",
+  "exampleMongolian": "Тэр ухаалаг ч сурлагад хичээдэггүй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "聪明的人 / 很聪明"
+ },
+ {
+  "chinese": "错",
+  "pinyin": "cuò",
+  "mongolian": "алдаа; буруу",
+  "hskLevel": "HSK3",
+  "exampleChinese": "对不起，这是我的错。",
+  "exampleMongolian": "Уучлаарай, энэ миний буруу.",
+  "pos": "нэр үг",
+  "collocations_zh": "出错 / 做错"
+ },
+ {
+  "chinese": "认为",
+  "pinyin": "rènwéi",
+  "mongolian": "гэж үзэх, гэж бодох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们都认为她很聪明。",
+  "exampleMongolian": "Бид бүгд түүнийг ухаалаг гэж бодож байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "我认为…"
+ },
+ {
+  "chinese": "到处",
+  "pinyin": "dàochù",
+  "mongolian": "хаа сайгүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "小朋友在草地上到处跑。",
+  "exampleMongolian": "Хүүхдүүд талбай дээр хаа сайгүй гүйж байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "到处跑 / 到处看"
+ },
+ {
+  "chinese": "继续",
+  "pinyin": "jìxù",
+  "mongolian": "үргэлжлүүлэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们休息一下再继续走。",
+  "exampleMongolian": "Жаахан амраад дахин үргэлжлүүлж явъя.",
+  "pos": "үйл үг",
+  "collocations_zh": "继续学习 / 继续努力"
+ },
+ {
+  "chinese": "同意",
+  "pinyin": "tóngyì",
+  "mongolian": "зөвшөөрөх, санал нийлэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "对不起，我不同意你说的。",
+  "exampleMongolian": "Уучлаарай, би чиний хэлснийг зөвшөөрөхгүй байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "不同意 / 非常同意"
+ },
+ {
+  "chinese": "可",
+  "pinyin": "kě",
+  "mongolian": "гэвч, гэтэл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我想去看电影，可我没有时间。",
+  "exampleMongolian": "Би кино үзмээр байна, гэвч цаг алга.",
+  "pos": "холбоо үг",
+  "collocations_zh": "…，可…"
+ },
+ {
+  "chinese": "屋子",
+  "pinyin": "wūzi",
+  "mongolian": "өрөө, байр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这间屋子非常干净。",
+  "exampleMongolian": "Энэ өрөө маш цэвэрхэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "一间屋子 / 屋子里"
+ },
+ {
+  "chinese": "有关",
+  "pinyin": "yǒuguān",
+  "mongolian": "хамаатай; -ийн тухай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是一个有关大熊猫的故事。",
+  "exampleMongolian": "Энэ бол пандагийн тухай түүх.",
+  "pos": "үйл үг/угтвар үг",
+  "collocations_zh": "和…有关 / 有关…的"
+ },
+ {
+  "chinese": "关机",
+  "pinyin": "guānjī",
+  "mongolian": "утсаа унтраах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "睡觉前我会把手机关机。",
+  "exampleMongolian": "Унтахынхаа өмнө би утсаа унтраадаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "手机关机 / 关机了"
+ },
+ {
+  "chinese": "前天",
+  "pinyin": "qiántiān",
+  "mongolian": "уржигдар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我前天去了动物园。",
+  "exampleMongolian": "Би уржигдар амьтны хүрээлэнд очсон.",
+  "pos": "нэр үг",
+  "collocations_zh": "前天晚上"
+ },
+ {
+  "chinese": "留学",
+  "pinyin": "liúxué",
+  "mongolian": "гадаадад сурах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他明年就要去中国留学了。",
+  "exampleMongolian": "Тэр ирэх жил Хятадад сурахаар явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "出国留学 / 去中国留学"
+ },
+ {
+  "chinese": "国家",
+  "pinyin": "guójiā",
+  "mongolian": "улс, орон",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个国家有很多种动物。",
+  "exampleMongolian": "Энэ улсад олон төрлийн амьтан бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个国家 / 哪个国家"
+ },
+ {
+  "chinese": "比如",
+  "pinyin": "bǐrú",
+  "mongolian": "жишээлбэл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢运动，比如跑步、打篮球。",
+  "exampleMongolian": "Би спортод дуртай, жишээлбэл гүйлт, сагсан бөмбөг.",
+  "pos": "үйл үг",
+  "collocations_zh": "比如…"
+ },
+ {
+  "chinese": "查",
+  "pinyin": "chá",
+  "mongolian": "шалгах, хайх (толь, интернэт)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "遇到不认识的字就查字典。",
+  "exampleMongolian": "Мэдэхгүй үсэг таарвал толь хар.",
+  "pos": "үйл үг",
+  "collocations_zh": "查字典 / 上网查"
+ },
+ {
+  "chinese": "有用",
+  "pinyin": "yǒuyòng",
+  "mongolian": "хэрэгтэй, ашигтай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "多听多说，对学中文很有用。",
+  "exampleMongolian": "Их сонсож, их ярих нь хятад сурахад их хэрэгтэй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很有用 / 没有用"
+ },
+ {
+  "chinese": "容易",
+  "pinyin": "róngyì",
+  "mongolian": "амархан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "刚开始都不容易，慢慢来。",
+  "exampleMongolian": "Эхэндээ бүгд амаргүй, аажмаар яв.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很容易 / 不容易"
+ },
+ {
+  "chinese": "回答",
+  "pinyin": "huídá",
+  "mongolian": "хариулах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请你回答我的问题。",
+  "exampleMongolian": "Миний асуултад хариулна уу.",
+  "pos": "үйл үг",
+  "collocations_zh": "回答问题 / 认真回答"
+ },
+ {
+  "chinese": "方向",
+  "pinyin": "fāngxiàng",
+  "mongolian": "чиглэл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们走的这个方向对吗？",
+  "exampleMongolian": "Бидний явж буй энэ чиглэл зөв үү?",
+  "pos": "нэр үг",
+  "collocations_zh": "一个方向 / 没有方向"
+ },
+ {
+  "chinese": "只有",
+  "pinyin": "zhǐyǒu",
+  "mongolian": "зөвхөн … л",
+  "hskLevel": "HSK3",
+  "exampleChinese": "只有努力，才能有好成绩。",
+  "exampleMongolian": "Зөвхөн хичээвэл л сайн дүн авна.",
+  "pos": "холбоо үг",
+  "collocations_zh": "只有…才…"
+ },
+ {
+  "chinese": "真正",
+  "pinyin": "zhēnzhèng",
+  "mongolian": "үнэхээр, жинхэнэ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "只有生病的时候，我才真正明白健康很重要。",
+  "exampleMongolian": "Өвдөж байж л би эрүүл мэнд чухал гэдгийг үнэхээр ойлгосон.",
+  "pos": "дайвар үг",
+  "collocations_zh": "真正了解 / 真正喜欢"
+ },
+ {
+  "chinese": "难题",
+  "pinyin": "nántí",
+  "mongolian": "хүнд бодлого, төвөгтэй асуудал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "学习中常常会遇到难题。",
+  "exampleMongolian": "Сурахад ихэвчлэн хэцүү асуудал тааралддаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "解决难题 / 遇到难题"
+ }
+]

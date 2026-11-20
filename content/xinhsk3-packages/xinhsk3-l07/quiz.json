@@ -1,0 +1,515 @@
+[
+ {
+  "type": "cloze",
+  "question": "我想给女儿买一________新自行车。",
+  "options": [
+   "斤",
+   "条",
+   "声",
+   "辆"
+  ],
+  "correct_answer": "辆",
+  "explanation": "«Нэг шинэ дугуй» — дугуйн хэмжих үг 辆.",
+  "order_index": 1,
+  "id": "xinhsk3-l07-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个手机太________了，该换新的了。",
+  "options": [
+   "甜",
+   "冰",
+   "旧",
+   "矮"
+  ],
+  "correct_answer": "旧",
+  "explanation": "«Хэтэрхий хуучин» — 旧.",
+  "order_index": 2,
+  "id": "xinhsk3-l07-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我弟弟比我________，才一米五。",
+  "options": [
+   "试",
+   "矮",
+   "旧",
+   "更"
+  ],
+  "correct_answer": "矮",
+  "explanation": "«Надаас намхан» — 矮.",
+  "order_index": 3,
+  "id": "xinhsk3-l07-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这条裙子你可以________一下。",
+  "options": [
+   "试",
+   "决定",
+   "结婚",
+   "开机"
+  ],
+  "correct_answer": "试",
+  "explanation": "«Туршиж үзэж болно» — 试一下.",
+  "order_index": 4,
+  "id": "xinhsk3-l07-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这双鞋大小很________，我买了。",
+  "options": [
+   "新鲜",
+   "一共",
+   "黄色",
+   "合适"
+  ],
+  "correct_answer": "合适",
+  "explanation": "«Хэмжээ нь яг таарч байна» — 合适.",
+  "order_index": 5,
+  "id": "xinhsk3-l07-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "苹果三块，香蕉五块，________八块。",
+  "options": [
+   "极",
+   "而且",
+   "一共",
+   "更"
+  ],
+  "correct_answer": "一共",
+  "explanation": "«Нийтдээ найман юань» — 一共.",
+  "order_index": 6,
+  "id": "xinhsk3-l07-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们________下个月去北京旅游。",
+  "options": [
+   "矮",
+   "决定",
+   "开机",
+   "试"
+  ],
+  "correct_answer": "决定",
+  "explanation": "«Ирэх сард Бээжин рүү аялахаар шийдлээ» — 决定.",
+  "order_index": 7,
+  "id": "xinhsk3-l07-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这些水果很________，刚买来的。",
+  "options": [
+   "新鲜",
+   "旧",
+   "矮",
+   "短裤"
+  ],
+  "correct_answer": "新鲜",
+  "explanation": "«Эдгээр жимс шинэхэн» — 新鲜.",
+  "order_index": 8,
+  "id": "xinhsk3-l07-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一________等于两斤。",
+  "options": [
+   "辆",
+   "毛",
+   "声",
+   "公斤"
+  ],
+  "correct_answer": "公斤",
+  "explanation": "«Нэг кг нь хоёр жинтэй тэнцэнэ» — 公斤.",
+  "order_index": 9,
+  "id": "xinhsk3-l07-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我姐姐明年要________。",
+  "options": [
+   "决定",
+   "试",
+   "结婚",
+   "开机"
+  ],
+  "correct_answer": "结婚",
+  "explanation": "«Эгч маань ирэх жил гэрлэнэ» — 结婚.",
+  "order_index": 10,
+  "id": "xinhsk3-l07-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«咱们可以走着去。» — 走着 юу илэрхийлж байна вэ?",
+  "options": [
+   "асуулт",
+   "очих арга (алхаж)",
+   "өнгөрсөн үйлдэл",
+   "хүсэл"
+  ],
+  "correct_answer": "очих арга (алхаж)",
+  "explanation": "着 нь 走-ийн ард орж, очих аргыг заана.",
+  "order_index": 11,
+  "id": "xinhsk3-l07-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l07-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "他们坐着看电视。",
+   "他们看电视坐着。",
+   "他们坐了着看电视。",
+   "他们着坐看电视。"
+  ],
+  "correct_answer": "他们坐着看电视。",
+  "explanation": "V1+着+V2: байдлын үйл үг эхэнд, гол үйлдэл ард.",
+  "order_index": 12,
+  "id": "xinhsk3-l07-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«裙子不比短裤贵多少。» — утга юу вэ?",
+  "options": [
+   "Банзал шортоос хамаагүй үнэтэй.",
+   "Шорт банзлаас үнэтэй.",
+   "Хоёулаа үнэгүй.",
+   "Банзал шортоос тийм ч их үнэтэй биш."
+  ],
+  "correct_answer": "Банзал шортоос тийм ч их үнэтэй биш.",
+  "explanation": "A不比B+adj + 多少: зөрүү бага.",
+  "order_index": 13,
+  "id": "xinhsk3-l07-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "这个不比那个很贵。",
+   "这个比那个不贵很。",
+   "这个不比那个贵。",
+   "这个比不那个贵。"
+  ],
+  "correct_answer": "这个不比那个贵。",
+  "explanation": "不 нь 比-ийн өмнө, тэмдэг нэрийн өмнө 很 хэрэглэхгүй.",
+  "order_index": 14,
+  "id": "xinhsk3-l07-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这块冰西瓜甜极了» — 极了 юу илэрхийлж байна вэ?",
+  "options": [
+   "хойшлуулалт",
+   "маш өндөр түвшин",
+   "жаахан",
+   "хэзээ нэгэн цагт"
+  ],
+  "correct_answer": "маш өндөр түвшин",
+  "explanation": "极了 — «маш, үнэхээр» гэсэн шинж туйлдаа хүрсэн утга.",
+  "order_index": 15,
+  "id": "xinhsk3-l07-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l07-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "这本书我喜欢极了。",
+   "这本书我极了喜欢。",
+   "这本书我很喜欢极了。",
+   "这本书极了我喜欢。"
+  ],
+  "correct_answer": "这本书我喜欢极了。",
+  "explanation": "喜欢 + 极了: сэтгэлийн үйл үгийн ард 极了.",
+  "order_index": 16,
+  "id": "xinhsk3-l07-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Хоёр өгүүлэгдэхүүн нэг: аль нь зөв бэ?",
+  "options": [
+   "不但电视便宜，而且好用。",
+   "电视便宜不但，而且好用。",
+   "电视不但而且便宜好用。",
+   "电视不但便宜，而且好用。"
+  ],
+  "correct_answer": "电视不但便宜，而且好用。",
+  "explanation": "Өгүүлэгдэхүүн нэг бол 不但 нь өгүүлэгдэхүүний ард орно.",
+  "order_index": 17,
+  "id": "xinhsk3-l07-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l07-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Хоёр өгүүлэгдэхүүн өөр: аль нь зөв бэ?",
+  "options": [
+   "家月会说汉语，不但天中也会。",
+   "家月不但天中会说汉语。",
+   "不但家月会说汉语，而且天中也会说汉语。",
+   "家月不但会说汉语，而且天中也会说汉语。"
+  ],
+  "correct_answer": "不但家月会说汉语，而且天中也会说汉语。",
+  "explanation": "Өөр өгүүлэгдэхүүн бол 不但 нь эхний өгүүлэгдэхүүний өмнө.",
+  "order_index": 18,
+  "id": "xinhsk3-l07-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l07-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«五十八块五毛» нь хэд вэ?",
+  "options": [
+   "580.5 юань",
+   "58.50 юань",
+   "58.05 юань",
+   "5.85 юань"
+  ],
+  "correct_answer": "58.50 юань",
+  "explanation": "块 = юань, 毛 = юанийн аравны нэг: 58 юань 5 мао = 58.50.",
+  "order_index": 19,
+  "id": "xinhsk3-l07-q19",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "1公斤 нь хэдэн 斤 вэ?",
+  "options": [
+   "2斤",
+   "1斤",
+   "5斤",
+   "10斤"
+  ],
+  "correct_answer": "2斤",
+  "explanation": "1 кг = 2 жин (斤 = 500 гр).",
+  "order_index": 20,
+  "id": "xinhsk3-l07-q20",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：他们怎么去商场？",
+  "options": [
+   "打车去",
+   "骑自行车去",
+   "坐公交车去",
+   "走着去"
+  ],
+  "correct_answer": "走着去",
+  "explanation": "«咱们可以走着去» — алхаж очино.",
+  "order_index": 21,
+  "id": "xinhsk3-l07-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：裙子比短裤贵多少？",
+  "options": [
+   "四百八十块",
+   "二十块",
+   "八十块",
+   "四百块"
+  ],
+  "correct_answer": "八十块",
+  "explanation": "480 - 400 = 80.",
+  "order_index": 22,
+  "id": "xinhsk3-l07-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪后来怎么决定的？",
+  "options": [
+   "不买",
+   "多看看再决定",
+   "买裙子",
+   "买短裤"
+  ],
+  "correct_answer": "多看看再决定",
+  "explanation": "«我多看看再决定» — арай олон үзчихээд шийднэ.",
+  "order_index": 23,
+  "id": "xinhsk3-l07-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪买了什么？",
+  "options": [
+   "西瓜和香蕉",
+   "苹果和牛奶",
+   "西瓜和苹果",
+   "香蕉和牛奶"
+  ],
+  "correct_answer": "西瓜和香蕉",
+  "explanation": "Тарвас, хоёр жин гадил авсан.",
+  "order_index": 24,
+  "id": "xinhsk3-l07-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：店员最后让王一雪给多少钱？",
+  "options": [
+   "五十八块",
+   "五十八块五毛",
+   "五十块",
+   "五十五块"
+  ],
+  "correct_answer": "五十五块",
+  "explanation": "«您给我五十五吧».",
+  "order_index": 25,
+  "id": "xinhsk3-l07-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：刘明为什么觉得电视有点儿小？",
+  "options": [
+   "电视坏了",
+   "电视不便宜",
+   "房子大了",
+   "电视旧了"
+  ],
+  "correct_answer": "房子大了",
+  "explanation": "«房子大了，电视看起来就有点儿小».",
+  "order_index": 26,
+  "id": "xinhsk3-l07-q26",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：刘明想在哪儿选电视？",
+  "options": [
+   "在学校",
+   "在网上",
+   "在商场",
+   "在朋友家"
+  ],
+  "correct_answer": "在网上",
+  "explanation": "«今天我一直在网上选电视».",
+  "order_index": 27,
+  "id": "xinhsk3-l07-q27",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

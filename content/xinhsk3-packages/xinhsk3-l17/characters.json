@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "向",
+   "pinyin": [
+    "xiàng"
+   ],
+   "strokeCount": 6,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "чиглэх; -руу",
+   "etymology_mn": "冂 (хаалга) дотор 口: айлын цонх руу харсан чиглэл",
+   "exampleWords": [
+    "向前",
+    "向左"
+   ]
+  },
+  {
+   "hanzi": "错",
+   "pinyin": [
+    "cuò"
+   ],
+   "strokeCount": 13,
+   "radical": "钅",
+   "practice": "write",
+   "meaningMn": "алдаа",
+   "etymology_mn": "钅 (металл) + 昔: эртний металл эдлэл буруу чиглэх",
+   "exampleWords": [
+    "做错",
+    "出错"
+   ]
+  },
+  {
+   "hanzi": "查",
+   "pinyin": [
+    "chá"
+   ],
+   "strokeCount": 9,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "шалгах",
+   "etymology_mn": "木 (мод) + 且: эртний хүн модон тэмдэглэлийг шалгадаг байсан",
+   "exampleWords": [
+    "查字典",
+    "上网查"
+   ]
+  },
+  {
+   "hanzi": "容",
+   "pinyin": [
+    "róng"
+   ],
+   "strokeCount": 10,
+   "radical": "宀",
+   "practice": "write",
+   "meaningMn": "багтаах; амархан",
+   "etymology_mn": "宀 (дээвэр) + 谷 (хөндий): доторх зай багтаах",
+   "exampleWords": [
+    "容易",
+    "笑容"
+   ]
+  },
+  {
+   "hanzi": "答",
+   "pinyin": [
+    "dá"
+   ],
+   "strokeCount": 12,
+   "radical": "竹",
+   "practice": "write",
+   "meaningMn": "хариулах",
+   "etymology_mn": "竹 (хулс) + 合: эртний хариуг хулсан хуудсанд бичдэг байсан",
+   "exampleWords": [
+    "回答",
+    "答案"
+   ]
+  },
+  {
+   "hanzi": "屋",
+   "pinyin": [
+    "wū"
+   ],
+   "strokeCount": 9,
+   "radical": "尸",
+   "practice": "write",
+   "meaningMn": "өрөө, байшин",
+   "etymology_mn": "尸 (дээвэр, байр) + 至: хүрч очих газар",
+   "exampleWords": [
+    "屋子",
+    "房屋"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "外",
+   "b": "处",
+   "word_a": "外卖",
+   "word_b": "到处",
+   "mn": "外 — гадна; 处 — газар, хаа сайгүй",
+   "tip_mn": "外 нь 夕 + 卜; 处 нь 夂 + 卜 — зүүн дээд хэсгийг ялгаж үз. «外卖» гадна авч явах, «到处» хаа сайгүй."
+  },
+  {
+   "a": "向",
+   "b": "问",
+   "word_a": "向前",
+   "word_b": "问题",
+   "mn": "向 — чиглэх; 问 — асуух",
+   "tip_mn": "Хаалга (门) дотор 口 бол асуух 问, 冂 дотор 口 бол чиглэх 向."
+  },
+  {
+   "a": "错",
+   "b": "借",
+   "word_a": "做错",
+   "word_b": "借书",
+   "mn": "错 — алдаа; 借 — зээлэх",
+   "tip_mn": "错-д металл 钅, 借-д хүн 亻: хүнтэй холбоотой зээл."
+  },
+  {
+   "a": "难",
+   "b": "谁",
+   "word_a": "难题",
+   "word_b": "谁",
+   "mn": "难 — хэцүү; 谁 — хэн",
+   "tip_mn": "难-ийн зүүн тал 又, 谁-ийн зүүн тал 讠 (үг, асуулт)."
+  }
+ ]
+}

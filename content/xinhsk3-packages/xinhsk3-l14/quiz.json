@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "学习中文，你需要一本中文________。",
+  "options": [
+   "故事",
+   "节目",
+   "网站",
+   "词典"
+  ],
+  "correct_answer": "词典",
+  "explanation": "«Хятад толь бичиг» — 词典.",
+  "order_index": 1,
+  "id": "xinhsk3-l14-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "外面冷，你________多穿衣服。",
+  "options": [
+   "然后",
+   "面前",
+   "最好",
+   "最后"
+  ],
+  "correct_answer": "最好",
+  "explanation": "«Илүү ихийг өмссөн нь дээр» — 最好.",
+  "order_index": 2,
+  "id": "xinhsk3-l14-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "周一我有三________课。",
+  "options": [
+   "张",
+   "节",
+   "个",
+   "本"
+  ],
+  "correct_answer": "节",
+  "explanation": "«Гурван цагийн хичээл» — 三节课.",
+  "order_index": 3,
+  "id": "xinhsk3-l14-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "桌子上有几张________。",
+  "options": [
+   "报纸",
+   "故事",
+   "节目",
+   "班级"
+  ],
+  "correct_answer": "报纸",
+  "explanation": "«Хэдэн сонин» — 报纸 (хэмжих үг 张).",
+  "order_index": 4,
+  "id": "xinhsk3-l14-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈常常给我讲________。",
+  "options": [
+   "节目",
+   "网站",
+   "词典",
+   "故事"
+  ],
+  "correct_answer": "故事",
+  "explanation": "«Үлгэр ярьж өгөх» — 讲故事.",
+  "order_index": 5,
+  "id": "xinhsk3-l14-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他________了我的名字，真不好意思。",
+  "options": [
+   "表演",
+   "跳",
+   "忘记",
+   "相信"
+  ],
+  "correct_answer": "忘记",
+  "explanation": "«Нэрийг минь мартчихжээ» — 忘记.",
+  "order_index": 6,
+  "id": "xinhsk3-l14-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我准备表演一个________。",
+  "options": [
+   "面前",
+   "节目",
+   "故事",
+   "视频"
+  ],
+  "correct_answer": "节目",
+  "explanation": "«Нэг дугаар тоглоно» — 表演节目.",
+  "order_index": 7,
+  "id": "xinhsk3-l14-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸妈妈一直________我。",
+  "options": [
+   "相信",
+   "忘记",
+   "表演",
+   "一块儿"
+  ],
+  "correct_answer": "相信",
+  "explanation": "«Намайг үргэлж итгэдэг» — 相信.",
+  "order_index": 8,
+  "id": "xinhsk3-l14-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他是一名________，从英国来中国学汉语。",
+  "options": [
+   "校长",
+   "女生",
+   "名人",
+   "留学生"
+  ],
+  "correct_answer": "留学生",
+  "explanation": "«Англиас хятад хэл сурахаар ирсэн гадаад оюутан» — 留学生.",
+  "order_index": 9,
+  "id": "xinhsk3-l14-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这是________一节课了，下课以后我们去图书馆。",
+  "options": [
+   "最好",
+   "面前",
+   "最后",
+   "然后"
+  ],
+  "correct_answer": "最后",
+  "explanation": "«Сүүлчийн цаг» — 最后一节课.",
+  "order_index": 10,
+  "id": "xinhsk3-l14-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "被这本书别人借走了。",
+   "这本书被别人借走了。",
+   "这本书别人被借走了。",
+   "这本书被借别人走了。"
+  ],
+  "correct_answer": "这本书被别人借走了。",
+  "explanation": "юм + 被 + хэн + үйл үг + нөхөлт.",
+  "order_index": 11,
+  "id": "xinhsk3-l14-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "水果可能被弟弟吃了。",
+   "水果被弟弟可能吃了。",
+   "可能水果弟弟被吃了。",
+   "水果被可能弟弟吃了。"
+  ],
+  "correct_answer": "水果可能被弟弟吃了。",
+  "explanation": "Туслах үг 可能 нь 被-ийн өмнө орно.",
+  "order_index": 12,
+  "id": "xinhsk3-l14-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l14-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "被-тэй өгүүлбэр ихэвчлэн ямар өнгө аястай вэ?",
+  "options": [
+   "Үргэлж баяртай",
+   "Асуулт",
+   "Тушаал",
+   "Сөрөг, арга ядсан"
+  ],
+  "correct_answer": "Сөрөг, арга ядсан",
+  "explanation": "被 нь ихэвчлэн харамсалтай, арга ядсан утга илэрхийлнэ.",
+  "order_index": 13,
+  "id": "xinhsk3-l14-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "我要先去图书馆借书，先去游泳。",
+   "我要去图书馆借书先，然后去游泳。",
+   "我要先去图书馆借书，然后去游泳。",
+   "我要然后去图书馆借书，先去游泳。"
+  ],
+  "correct_answer": "我要先去图书馆借书，然后去游泳。",
+  "explanation": "先 эхний үйлдлийн өмнө, 然后 хоёр дахь үйлдлийн өмнө.",
+  "order_index": 14,
+  "id": "xinhsk3-l14-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Эхлээд хоол ид, дараа нь суралц» гэхэд аль нь зөв бэ?",
+  "options": [
+   "你先吃饭，先学习。",
+   "你先吃饭，再学习。",
+   "你再吃饭，先学习。",
+   "你然后吃饭，先学习。"
+  ],
+  "correct_answer": "你先吃饭，再学习。",
+  "explanation": "先 + үйлдэл1, 再 + үйлдэл2.",
+  "order_index": 15,
+  "id": "xinhsk3-l14-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "A：我好紧张。 B：________，我们都相信你。",
+  "options": [
+   "紧张什么啊",
+   "不紧张什么啊",
+   "什么紧张啊",
+   "紧张吗啊"
+  ],
+  "correct_answer": "紧张什么啊",
+  "explanation": "×什么啊 — нөгөөгийн үгийг давтаж тайвшруулна.",
+  "order_index": 16,
+  "id": "xinhsk3-l14-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«急什么啊» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи юу яаралтай хэрэгтэй вэ?",
+   "Эелдэг хүсэлт",
+   "Баяр хүргэлт",
+   "Юунд яарах вэ, тайвшир"
+  ],
+  "correct_answer": "Юунд яарах вэ, тайвшир",
+  "explanation": "×什么啊 нь няцаах, тайвшруулах өнгө аястай.",
+  "order_index": 17,
+  "id": "xinhsk3-l14-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "我刚买的咖啡同事被喝了。",
+   "被我刚买的咖啡同事喝了。",
+   "我刚买的咖啡被同事喝了。",
+   "我刚买的咖啡被同事喝。"
+  ],
+  "correct_answer": "我刚买的咖啡被同事喝了。",
+  "explanation": "юм + 被 + хэн + үйл үг + 了.",
+  "order_index": 18,
+  "id": "xinhsk3-l14-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文为什么没借到那本书？",
+  "options": [
+   "他没带卡",
+   "书被别人借走了",
+   "书太贵了",
+   "图书馆关门了"
+  ],
+  "correct_answer": "书被别人借走了",
+  "explanation": "«这本书都被别人借走了».",
+  "order_index": 19,
+  "id": "xinhsk3-l14-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月下午要帮李文做什么？",
+  "options": [
+   "还书、借书",
+   "买词典",
+   "写名字",
+   "找校长"
+  ],
+  "correct_answer": "还书、借书",
+  "explanation": "Тэр ном буцаалцаж, шинэ ном зээлж өгнө.",
+  "order_index": 20,
+  "id": "xinhsk3-l14-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月下课后要做什么？",
+  "options": [
+   "去看报纸",
+   "回家",
+   "去上网",
+   "先借书，然后去游泳"
+  ],
+  "correct_answer": "先借书，然后去游泳",
+  "explanation": "«要先去图书馆借书，然后去游泳».",
+  "order_index": 21,
+  "id": "xinhsk3-l14-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月的校园卡可能在哪儿？",
+  "options": [
+   "在安妮那儿",
+   "在教室里",
+   "在家里",
+   "在图书馆"
+  ],
+  "correct_answer": "在家里",
+  "explanation": "«可能被我放在家里了».",
+  "order_index": 22,
+  "id": "xinhsk3-l14-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：李文为什么紧张？",
+  "options": [
+   "忘记了歌词",
+   "要在校长、老师和同学面前表演",
+   "没有练习",
+   "没有朋友"
+  ],
+  "correct_answer": "要在校长、老师和同学面前表演",
+  "explanation": "«一想到要在校长、老师和那么多同学面前表演，我就有些紧张».",
+  "order_index": 23,
+  "id": "xinhsk3-l14-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：晚会是什么时候开始的？",
+  "options": [
+   "八点",
+   "七点",
+   "九点",
+   "十二点"
+  ],
+  "correct_answer": "八点",
+  "explanation": "«晚会是八点开始的».",
+  "order_index": 24,
+  "id": "xinhsk3-l14-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：白家月最喜欢哪个节目？",
+  "options": [
+   "老师唱歌",
+   "校长讲话",
+   "班级合唱",
+   "留学生们跳舞"
+  ],
+  "correct_answer": "留学生们跳舞",
+  "explanation": "«我最喜欢的节目是留学生们跳舞».",
+  "order_index": 25,
+  "id": "xinhsk3-l14-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

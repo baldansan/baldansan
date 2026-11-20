@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "总是",
+  "pinyin": "zǒngshì",
+  "mongolian": "үргэлж, байнга",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他总是很早来上课。",
+  "exampleMongolian": "Тэр үргэлж эрт хичээлдээ ирдэг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "总是迟到 / 总是下雨"
+ },
+ {
+  "chinese": "终于",
+  "pinyin": "zhōngyú",
+  "mongolian": "эцэст нь, нэг л мэдэхэд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "走了这么久，终于到车站了。",
+  "exampleMongolian": "Удаан алхаад эцэст нь буудал дээр хүрлээ.",
+  "pos": "дайвар үг",
+  "collocations_zh": "终于到了"
+ },
+ {
+  "chinese": "爬",
+  "pinyin": "pá",
+  "mongolian": "авирах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们周末一起去爬山吧！",
+  "exampleMongolian": "Бид амралтын өдөр хамт уул авирцгаая!",
+  "pos": "үйл үг",
+  "collocations_zh": "爬山 / 爬树"
+ },
+ {
+  "chinese": "山",
+  "pinyin": "shān",
+  "mongolian": "уул",
+  "hskLevel": "HSK3",
+  "exampleChinese": "山上有很多树。",
+  "exampleMongolian": "Ууланд олон мод байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "上山 / 下山 / 山上"
+ },
+ {
+  "chinese": "锻炼",
+  "pinyin": "duànliàn",
+  "mongolian": "биеийн тамир хийх, дасгалжих",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我每天锻炼半个小时。",
+  "exampleMongolian": "Би өдөр бүр хагас цаг дасгал хийдэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "锻炼身体"
+ },
+ {
+  "chinese": "照",
+  "pinyin": "zhào",
+  "mongolian": "зураг авах; гэрэлтэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请帮我和老师照一张相吧。",
+  "exampleMongolian": "Надад багштай хамт нэг зураг авч өгөөч.",
+  "pos": "үйл үг",
+  "collocations_zh": "照相 / 照片"
+ },
+ {
+  "chinese": "鞋",
+  "pinyin": "xié",
+  "mongolian": "гутал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这双鞋很舒服。",
+  "exampleMongolian": "Энэ гутал их эвтэйхэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "一双鞋 / 穿鞋"
+ },
+ {
+  "chinese": "大衣",
+  "pinyin": "dàyī",
+  "mongolian": "урт хүрэм, зузаан дээд хувцас",
+  "hskLevel": "HSK3",
+  "exampleChinese": "冬天我喜欢穿大衣。",
+  "exampleMongolian": "Өвөл би урт хүрэм өмсөх дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "穿大衣 / 一件大衣"
+ },
+ {
+  "chinese": "拍照",
+  "pinyin": "pāizhào",
+  "mongolian": "зураг авах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢用手机拍照。",
+  "exampleMongolian": "Би утсаараа зураг авах дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "拍几张照"
+ },
+ {
+  "chinese": "感兴趣",
+  "pinyin": "gǎn xìngqù",
+  "mongolian": "сонирхох, сонирхолтой байх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他对足球很感兴趣。",
+  "exampleMongolian": "Тэр хөлбөмбөгт маш их дуртай (сонирхдог).",
+  "pos": "хэллэг",
+  "collocations_zh": "对……感兴趣 / 很感兴趣"
+ },
+ {
+  "chinese": "照相",
+  "pinyin": "zhàoxiàng",
+  "mongolian": "зураг авах, фото авах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们一起去照相馆照相。",
+  "exampleMongolian": "Бид хамт зургийн студид зураг авахуулах гэж явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "照相馆 / 照一张相"
+ },
+ {
+  "chinese": "难看",
+  "pinyin": "nánkàn",
+  "mongolian": "муухай, муухай харагдах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "昨天的电影很难看。",
+  "exampleMongolian": "Өчигдрийн кино муу байсан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很难看 / 有点儿难看"
+ },
+ {
+  "chinese": "比较",
+  "pinyin": "bǐjiào",
+  "mongolian": "харьцуулах; харьцангуй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请比较一下这两个汉字。",
+  "exampleMongolian": "Энэ хоёр ханзыг харьцуулж үзээрэй.",
+  "pos": "үйл үг / дайвар үг",
+  "collocations_zh": "比较一下"
+ },
+ {
+  "chinese": "水平",
+  "pinyin": "shuǐpíng",
+  "mongolian": "түвшин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她画画的水平很高。",
+  "exampleMongolian": "Тэр зураг зурах түвшин нь өндөр.",
+  "pos": "нэр үг",
+  "collocations_zh": "水平高 / 提高水平"
+ },
+ {
+  "chinese": "太阳",
+  "pinyin": "tàiyáng",
+  "mongolian": "нар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "不下雨了，太阳出来了。",
+  "exampleMongolian": "Бороо зогслоо, нар гарлаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "太阳出来了 / 太阳下"
+ },
+ {
+  "chinese": "树",
+  "pinyin": "shù",
+  "mongolian": "мод",
+  "hskLevel": "HSK3",
+  "exampleChinese": "小鸟在树上唱歌。",
+  "exampleMongolian": "Жижиг шувуу мод дээр дуулж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "树上 / 树下 / 苹果树"
+ },
+ {
+  "chinese": "干",
+  "pinyin": "gàn",
+  "mongolian": "хийх, ажиллах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你在干什么？",
+  "exampleMongolian": "Чи юу хийж байна?",
+  "pos": "үйл үг",
+  "collocations_zh": "干什么 / 干工作"
+ },
+ {
+  "chinese": "电",
+  "pinyin": "diàn",
+  "mongolian": "цахилгаан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "小心有电！",
+  "exampleMongolian": "Анхаар, цахилгаан байна!",
+  "pos": "нэр үг",
+  "collocations_zh": "用电 / 没电了"
+ },
+ {
+  "chinese": "收到",
+  "pinyin": "shōudào",
+  "mongolian": "хүлээн авах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我收到老师的邮件了。",
+  "exampleMongolian": "Би багшийн имэйлийг хүлээн авлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "收到邮件 / 收到礼物"
+ },
+ {
+  "chinese": "封",
+  "pinyin": "fēng",
+  "mongolian": "захидал, имэйлийн хэмжих үг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我昨天写了一封信。",
+  "exampleMongolian": "Би өчигдөр нэг захидал бичсэн.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一封信 / 一封邮件"
+ },
+ {
+  "chinese": "邮件",
+  "pinyin": "yóujiàn",
+  "mongolian": "имэйл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我收到了学校发来的邮件。",
+  "exampleMongolian": "Би сургуулиас ирсэн имэйл хүлээн авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "发邮件 / 收邮件"
+ },
+ {
+  "chinese": "难过",
+  "pinyin": "nánguò",
+  "mongolian": "гунигтай, зовлонтой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "听完这个故事，我觉得很难过。",
+  "exampleMongolian": "Энэ түүхийг сонсоод би маш гунигтай болсон.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "觉得难过 / 很难过"
+ },
+ {
+  "chinese": "哈哈",
+  "pinyin": "hāhā",
+  "mongolian": "ха-ха (инээх дуу)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "哈哈，这个电影太有意思了！",
+  "exampleMongolian": "Ха-ха, энэ кино үнэхээр сонин юм!",
+  "pos": "хоолойн үг",
+  "collocations_zh": "哈哈大笑"
+ },
+ {
+  "chinese": "音乐",
+  "pinyin": "yīnyuè",
+  "mongolian": "хөгжим",
+  "hskLevel": "HSK3",
+  "exampleChinese": "姐姐很喜欢听音乐。",
+  "exampleMongolian": "Эгч хөгжим сонсох их дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "听音乐 / 音乐会"
+ },
+ {
+  "chinese": "兴趣",
+  "pinyin": "xìngqù",
+  "mongolian": "сонирхол",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他对学习汉语很有兴趣。",
+  "exampleMongolian": "Тэр хятад хэл сурахыг их сонирхдог.",
+  "pos": "нэр үг",
+  "collocations_zh": "有兴趣 / 感兴趣"
+ },
+ {
+  "chinese": "会",
+  "pinyin": "huì",
+  "mongolian": "цугларалт, уулзалт, үдэшлэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "晚上有一个音乐会，你来吗？",
+  "exampleMongolian": "Орой нэг концерт болно, чи ирэх үү?",
+  "pos": "нэр үг",
+  "collocations_zh": "开会 / 音乐会"
+ },
+ {
+  "chinese": "结束",
+  "pinyin": "jiéshù",
+  "mongolian": "дуусах, төгсөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "比赛八点开始，十点结束。",
+  "exampleMongolian": "Тэмцээн найман цагт эхэлж, арван цагт дуусна.",
+  "pos": "үйл үг",
+  "collocations_zh": "游戏结束 / 结束比赛"
+ }
+]

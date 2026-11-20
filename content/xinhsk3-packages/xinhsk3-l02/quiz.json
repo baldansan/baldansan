@@ -1,0 +1,496 @@
+[
+ {
+  "type": "cloze",
+  "question": "________了，中午我们去哪儿吃饭？",
+  "options": [
+   "渴",
+   "方便",
+   "简单",
+   "饿"
+  ],
+  "correct_answer": "饿",
+  "explanation": "«Өлслөө, өдөр хаана хооллох вэ?» — 饿.",
+  "order_index": 1,
+  "id": "xinhsk3-l02-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "运动后大家都很________。",
+  "options": [
+   "热情",
+   "方便",
+   "渴",
+   "简单"
+  ],
+  "correct_answer": "渴",
+  "explanation": "«Спортын дараа бүгд их цангана» — 渴.",
+  "order_index": 2,
+  "id": "xinhsk3-l02-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "别________，请坐。",
+  "options": [
+   "简单",
+   "客气",
+   "热情",
+   "方便"
+  ],
+  "correct_answer": "客气",
+  "explanation": "«Битгий эвгүйрхээрэй, суугаарай» — 别客气.",
+  "order_index": 3,
+  "id": "xinhsk3-l02-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这种________很好喝。",
+  "options": [
+   "饮料",
+   "菜单",
+   "蛋糕",
+   "筷子"
+  ],
+  "correct_answer": "饮料",
+  "explanation": "«Энэ ундаа их амттай» — 饮料.",
+  "order_index": 4,
+  "id": "xinhsk3-l02-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他________没来学校了。",
+  "options": [
+   "马上",
+   "只",
+   "不用",
+   "好久"
+  ],
+  "correct_answer": "好久",
+  "explanation": "«Тэр сургуульд ирээгүй удлаа» — 好久没…了.",
+  "order_index": 5,
+  "id": "xinhsk3-l02-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "服务员，请再给我一________筷子。",
+  "options": [
+   "碗",
+   "勺子",
+   "双",
+   "张"
+  ],
+  "correct_answer": "双",
+  "explanation": "Савх хос тул хэмжих үг нь 双.",
+  "order_index": 6,
+  "id": "xinhsk3-l02-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请你________住这个电话号码。",
+  "options": [
+   "用",
+   "记",
+   "选",
+   "尝"
+  ],
+  "correct_answer": "记",
+  "explanation": "«Энэ утасны дугаарыг санаарай» — 记住.",
+  "order_index": 7,
+  "id": "xinhsk3-l02-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想________一下你做的菜。",
+  "options": [
+   "尝",
+   "选",
+   "记",
+   "方便"
+  ],
+  "correct_answer": "尝",
+  "explanation": "«Чиний хийсэн хоолыг амсаж үзмээр байна» — 尝一下.",
+  "order_index": 8,
+  "id": "xinhsk3-l02-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "书包里________有一本书。",
+  "options": [
+   "又",
+   "马上",
+   "不用",
+   "只"
+  ],
+  "correct_answer": "只",
+  "explanation": "«Цүнхэнд ганц ном байна» — зөвхөн гэсэн утга 只.",
+  "order_index": 9,
+  "id": "xinhsk3-l02-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "还有很多时间，________打车。",
+  "options": [
+   "好久",
+   "只",
+   "不用",
+   "马上"
+  ],
+  "correct_answer": "不用",
+  "explanation": "«Цаг их байна, такси барих хэрэггүй» — 不用.",
+  "order_index": 10,
+  "id": "xinhsk3-l02-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«那个女孩儿又高又漂亮。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэр охин дахиад ирнэ.",
+   "Тэр охин өндөр бас царайлаг.",
+   "Тэр охин өндөр биш.",
+   "Тэр охин хоёр удаа ирсэн."
+  ],
+  "correct_answer": "Тэр охин өндөр бас царайлаг.",
+  "explanation": "又+тэмдэг нэр+又+тэмдэг нэр — хоёр шинж зэрэг.",
+  "order_index": 11,
+  "id": "xinhsk3-l02-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l02-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这个饭馆的菜又便宜又好吃。",
+   "这个饭馆的菜便宜又好吃。",
+   "这个饭馆的菜又很便宜又很好吃。",
+   "这个饭馆的菜又便宜好吃。"
+  ],
+  "correct_answer": "这个饭馆的菜又便宜又好吃。",
+  "explanation": "又…又… дотор 很 нэмэхгүй, 又 хоёулаа байна.",
+  "order_index": 12,
+  "id": "xinhsk3-l02-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«哪个菜都好吃。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Аль хоол амттай вэ?",
+   "Хоол бүгд гэмтсэн.",
+   "Аль нь ч амтгүй.",
+   "Ямар хоол ч амттай."
+  ],
+  "correct_answer": "Ямар хоол ч амттай.",
+  "explanation": "哪个 + 都 = «ямар ч».",
+  "order_index": 13,
+  "id": "xinhsk3-l02-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这次旅游，我去哪儿都可以。» — 哪儿都 ямар утгатай вэ?",
+  "options": [
+   "хаа нэгтээ",
+   "хаашаа ч болохгүй",
+   "хаашаа ч",
+   "хаана вэ"
+  ],
+  "correct_answer": "хаашаа ч",
+  "explanation": "哪儿 + 都 = «хаана ч, хаашаа ч».",
+  "order_index": 14,
+  "id": "xinhsk3-l02-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你们想吃什么就点什么。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Та нар хэзээ идэх вэ?",
+   "Та нар юу идмээр байна тэрийгээ захиалаарай.",
+   "Та нар юу идэх вэ?",
+   "Та нар юу ч идэхгүй."
+  ],
+  "correct_answer": "Та нар юу идмээр байна тэрийгээ захиалаарай.",
+  "explanation": "Хоёр ижил асуух үг 什么 … 什么, 就-аар холбосон.",
+  "order_index": 15,
+  "id": "xinhsk3-l02-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи аль нь сайхан санагдаж байна тэрийг ав» гэхэд аль нь зөв бэ?",
+  "options": [
+   "你觉得哪个好看就买哪个。",
+   "你觉得哪个好看买哪个。",
+   "你觉得哪个好看就买什么。",
+   "你觉得好看就哪个买。"
+  ],
+  "correct_answer": "你觉得哪个好看就买哪个。",
+  "explanation": "Хоёр ижил 哪个 + 就.",
+  "order_index": 16,
+  "id": "xinhsk3-l02-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l02-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хэн ч түүний хоолонд дуртай» — аль нь зөв бэ?",
+  "options": [
+   "都谁喜欢吃他做的饭。",
+   "谁喜欢都吃他做的饭。",
+   "他做的饭谁都吃喜欢。",
+   "谁都喜欢吃他做的饭。"
+  ],
+  "correct_answer": "谁都喜欢吃他做的饭。",
+  "explanation": "谁 + 都 + үйл үг.",
+  "order_index": 17,
+  "id": "xinhsk3-l02-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«下个星期» гэдэг нь юу вэ?",
+  "options": [
+   "энэ долоо хоног",
+   "өчигдөр",
+   "ирэх долоо хоног",
+   "өнгөрсөн долоо хоног"
+  ],
+  "correct_answer": "ирэх долоо хоног",
+  "explanation": "下 нь ирээдүй, 上 нь өнгөрсөн.",
+  "order_index": 18,
+  "id": "xinhsk3-l02-q18",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "只 ханз «一只鸡» дотор яаж уншигдах вэ?",
+  "options": [
+   "shǐ",
+   "zhī",
+   "zhǐ",
+   "zhì"
+  ],
+  "correct_answer": "zhī",
+  "explanation": "Амьтны хэмжих үг нь zhī, «зөвхөн» нь zhǐ.",
+  "order_index": 19,
+  "id": "xinhsk3-l02-q19",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l02-words"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月想喝什么？",
+  "options": [
+   "绿茶",
+   "红茶",
+   "咖啡",
+   "奶茶"
+  ],
+  "correct_answer": "绿茶",
+  "explanation": "«我想喝绿茶、吃饺子» — ногоон цай.",
+  "order_index": 20,
+  "id": "xinhsk3-l02-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月现在觉得怎么样？",
+  "options": [
+   "很累",
+   "不饿",
+   "很冷",
+   "又饿又渴"
+  ],
+  "correct_answer": "又饿又渴",
+  "explanation": "«现在还真是又饿又渴» — өлссөн бас цангасан.",
+  "order_index": 21,
+  "id": "xinhsk3-l02-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪让服务员拿什么？",
+  "options": [
+   "勺子和筷子",
+   "菜单",
+   "筷子、勺子和碗",
+   "筷子和碗"
+  ],
+  "correct_answer": "筷子、勺子和碗",
+  "explanation": "«一双筷子、一个勺子和一个碗» — гурвуулыг нь.",
+  "order_index": 22,
+  "id": "xinhsk3-l02-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：服务员为什么送了一些水果？",
+  "options": [
+   "没有菜了",
+   "王一雪经常来吃饭",
+   "今天是生日",
+   "菜做错了"
+  ],
+  "correct_answer": "王一雪经常来吃饭",
+  "explanation": "«您经常来吃饭，今天送您一些水果».",
+  "order_index": 23,
+  "id": "xinhsk3-l02-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪为什么说“不用拿菜单”？",
+  "options": [
+   "手机上可以看菜单",
+   "她有菜单",
+   "她不想再来",
+   "菜单很贵"
+  ],
+  "correct_answer": "手机上可以看菜单",
+  "explanation": "«在手机上就能看到» — утсан дээрээс харж болно.",
+  "order_index": 24,
+  "id": "xinhsk3-l02-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：李文为什么好几天只吃方便面？",
+  "options": [
+   "他喜欢方便面",
+   "妈妈不做饭",
+   "饭馆很远",
+   "又忙又累，家里没有吃的"
+  ],
+  "correct_answer": "又忙又累，家里没有吃的",
+  "explanation": "«快要考试的时候又忙又累…家里又什么吃的都没有».",
+  "order_index": 25,
+  "id": "xinhsk3-l02-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：回到中国后，什么事让李文非常高兴？",
+  "options": [
+   "吃方便面",
+   "出国",
+   "每天能吃到妈妈做的饭",
+   "每天去饭馆"
+  ],
+  "correct_answer": "每天能吃到妈妈做的饭",
+  "explanation": "«每天能吃到妈妈做的饭，我真是太高兴了».",
+  "order_index": 26,
+  "id": "xinhsk3-l02-q26",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

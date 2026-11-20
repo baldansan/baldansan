@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "今天下午经理不在，所以不________了。",
+  "options": [
+   "请假",
+   "离开",
+   "解决",
+   "开会"
+  ],
+  "correct_answer": "开会",
+  "explanation": "«Менежер байхгүй тул хурал хийхгүй» — 不开会了.",
+  "order_index": 1,
+  "id": "xinhsk3-l11-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "会议地点换到第一________了。",
+  "options": [
+   "机会",
+   "声音",
+   "会议室",
+   "邮箱"
+  ],
+  "correct_answer": "会议室",
+  "explanation": "«Хурал нэгдүгээр хурлын танхимд болно» — 第一会议室.",
+  "order_index": 2,
+  "id": "xinhsk3-l11-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的________里有我发的邮件吗？",
+  "options": [
+   "城市",
+   "邮箱",
+   "经理",
+   "办法"
+  ],
+  "correct_answer": "邮箱",
+  "explanation": "«Таны и-мэйл хаяганд миний илгээсэн захидал байна уу?» — 邮箱.",
+  "order_index": 3,
+  "id": "xinhsk3-l11-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我今天不舒服，想给经理________。",
+  "options": [
+   "请假",
+   "解决",
+   "地点",
+   "同事"
+  ],
+  "correct_answer": "请假",
+  "explanation": "«Бие муу байна, менежерээс чөлөө авмаар байна» — 请假.",
+  "order_index": 4,
+  "id": "xinhsk3-l11-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个问题太难了，我没________解决。",
+  "options": [
+   "机会",
+   "声音",
+   "地点",
+   "办法"
+  ],
+  "correct_answer": "办法",
+  "explanation": "«Энэ асуудал хэтэрхий хэцүү, шийдэх арга алга» — 没办法.",
+  "order_index": 5,
+  "id": "xinhsk3-l11-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "电脑能看见，但是听不到________。",
+  "options": [
+   "同事",
+   "别人",
+   "声音",
+   "城市"
+  ],
+  "correct_answer": "声音",
+  "explanation": "«Дүрс харагдаж байна, гэвч дуу сонсогдохгүй» — 听不到声音.",
+  "order_index": 6,
+  "id": "xinhsk3-l11-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我下周开始________，打算去北京旅游。",
+  "options": [
+   "离开",
+   "休假",
+   "开会",
+   "解决"
+  ],
+  "correct_answer": "休假",
+  "explanation": "«Ирэх долоо хоногоос амралт авна, Бээжинд аялна» — 休假.",
+  "order_index": 7,
+  "id": "xinhsk3-l11-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "上海是一个很大的________。",
+  "options": [
+   "城市",
+   "邮箱",
+   "会议",
+   "地点"
+  ],
+  "correct_answer": "城市",
+  "explanation": "«Шанхай бол маш том хот» — 城市.",
+  "order_index": 8,
+  "id": "xinhsk3-l11-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这么多工作，我________干不完。",
+  "options": [
+   "为",
+   "或",
+   "发",
+   "怕"
+  ],
+  "correct_answer": "怕",
+  "explanation": "«Ийм их ажлыг дуусгаж чадахгүй вий гэж айж байна» — 我怕干不完.",
+  "order_index": 9,
+  "id": "xinhsk3-l11-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "没有车，我们________走路。",
+  "options": [
+   "或者",
+   "别人",
+   "只能",
+   "愿意"
+  ],
+  "correct_answer": "只能",
+  "explanation": "«Машин байхгүй, алхахаас өөр аргагүй» — 只能走路.",
+  "order_index": 10,
+  "id": "xinhsk3-l11-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи метроогоор эсвэл таксиар явж болно» — аль нь зөв бэ?",
+  "options": [
+   "你可以或者坐地铁打车去。",
+   "你可以坐地铁或者打车去。",
+   "你可以坐地铁还是打车去。",
+   "你可以坐地铁或者打车去吗？"
+  ],
+  "correct_answer": "你可以坐地铁或者打车去。",
+  "explanation": "Хүүрнэх өгүүлбэрт «аль нь ч болно» гэхдээ 或者 хэрэглэнэ.",
+  "order_index": 11,
+  "id": "xinhsk3-l11-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи цай уух уу, кофе уух уу?» — аль нь зөв бэ?",
+  "options": [
+   "你喝茶还是咖啡？",
+   "你喝茶或者咖啡？",
+   "你喝或者茶咖啡？",
+   "你喝茶咖啡还是？"
+  ],
+  "correct_answer": "你喝茶还是咖啡？",
+  "explanation": "Асуултад хоёр сонголтыг 还是-оор холбоно.",
+  "order_index": 12,
+  "id": "xinhsk3-l11-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«现在外面天阴得很，看来要下雨了。» гэдэгт 看来 ямар утгатай вэ?",
+  "options": [
+   "Би хүсэж байна",
+   "Тэгэхгүй бол",
+   "Хэзээ ч",
+   "Харахад … бололтой"
+  ],
+  "correct_answer": "Харахад … бололтой",
+  "explanation": "看来 нь ажиглалтаас гарсан дүгнэлт, таамаглал.",
+  "order_index": 13,
+  "id": "xinhsk3-l11-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l11-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ийм оройтсон болохоор тэр өнөөдөр ирэхгүй бололтой» — аль нь зөв бэ?",
+  "options": [
+   "看来这么晚了他今天了不会来。",
+   "这么晚了，他看来来不会今天了。",
+   "这么晚了，看来他今天不会来了。",
+   "这么晚了，他今天不会来了看来。"
+  ],
+  "correct_answer": "这么晚了，看来他今天不会来了。",
+  "explanation": "看来 + дүгнэлт: өгүүлбэрийн эхэнд.",
+  "order_index": 14,
+  "id": "xinhsk3-l11-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би тантай хамт эдгээр ажлыг дуусгая» — аль нь зөв бэ?",
+  "options": [
+   "我跟您一起做完把这些工作。",
+   "我跟您一起把这些工作做完。",
+   "我跟您一起这些工作把做完。",
+   "我把跟您一起这些工作做完。"
+  ],
+  "correct_answer": "我跟您一起把这些工作做完。",
+  "explanation": "把 + юу + үйл үг + 完 (үр дүн).",
+  "order_index": 15,
+  "id": "xinhsk3-l11-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ээж хувцсыг цэвэр угаасан» — аль нь зөв бэ?",
+  "options": [
+   "妈妈把衣服洗干净了。",
+   "妈妈洗把衣服干净了。",
+   "妈妈把洗衣服干净了。",
+   "妈妈衣服把洗干净了。"
+  ],
+  "correct_answer": "妈妈把衣服洗干净了。",
+  "explanation": "把 + юу + 洗 + 干净.",
+  "order_index": 16,
+  "id": "xinhsk3-l11-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l11-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр БУРУУ вэ?",
+  "options": [
+   "他还没把笔记本电脑接好。",
+   "我把这封邮件发完了。",
+   "妈妈把饭做好了。",
+   "他把还没笔记本电脑接好。"
+  ],
+  "correct_answer": "他把还没笔记本电脑接好。",
+  "explanation": "还没 нь 把-ийн өмнө орно: 他还没把…接好.",
+  "order_index": 17,
+  "id": "xinhsk3-l11-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l11-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Миний хувьд гэр бүл ажлаасаа чухал» — аль нь зөв бэ?",
+  "options": [
+   "我对来说，家人比工作更重要。",
+   "来说对我，家人比工作更重要。",
+   "对我来说，家人比工作更重要。",
+   "对来说我，家人比工作更重要。"
+  ],
+  "correct_answer": "对我来说，家人比工作更重要。",
+  "explanation": "对 + хүн + 来说.",
+  "order_index": 18,
+  "id": "xinhsk3-l11-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：今天为什么不开会了？",
+  "options": [
+   "没有电脑",
+   "经理不在",
+   "会议室坏了",
+   "同事请假"
+  ],
+  "correct_answer": "经理不在",
+  "explanation": "«今天下午经理不在，不开会了».",
+  "order_index": 19,
+  "id": "xinhsk3-l11-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：会议地点换到哪儿了？",
+  "options": [
+   "第一会议室",
+   "经理的办公室",
+   "第二会议室",
+   "杨同乐家"
+  ],
+  "correct_answer": "第一会议室",
+  "explanation": "«会议地点换到第一会议室».",
+  "order_index": 20,
+  "id": "xinhsk3-l11-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐最后为什么要找别人帮忙？",
+  "options": [
+   "他不想做",
+   "他要去吃饭",
+   "他没有电脑",
+   "他没办法解决电脑的问题"
+  ],
+  "correct_answer": "他没办法解决电脑的问题",
+  "explanation": "«看来我没办法解决这个问题，只能找别人来帮帮忙了».",
+  "order_index": 21,
+  "id": "xinhsk3-l11-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：老张今天为什么没来？",
+  "options": [
+   "休假了",
+   "去上海了",
+   "家里有点儿事，请假了",
+   "生病了"
+  ],
+  "correct_answer": "家里有点儿事，请假了",
+  "explanation": "«他说家里有点儿事，所以请假了».",
+  "order_index": 22,
+  "id": "xinhsk3-l11-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：明天为什么不开会？",
+  "options": [
+   "老张请假了",
+   "经理还没回来",
+   "同事都休假了",
+   "会议室坏了"
+  ],
+  "correct_answer": "经理还没回来",
+  "explanation": "«经理还没回来呢，下周才能开会».",
+  "order_index": 23,
+  "id": "xinhsk3-l11-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：王一雪愿意去上海工作吗？",
+  "options": [
+   "不愿意，因为不想离开家人",
+   "愿意",
+   "不知道上海的机会",
+   "因为工作太忙"
+  ],
+  "correct_answer": "不愿意，因为不想离开家人",
+  "explanation": "«我不愿意为工作或学习离开家人».",
+  "order_index": 24,
+  "id": "xinhsk3-l11-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：对王一雪来说，什么也很重要？",
+  "options": [
+   "工资",
+   "上海",
+   "老同事",
+   "生活"
+  ],
+  "correct_answer": "生活",
+  "explanation": "«对我来说，生活也很重要».",
+  "order_index": 25,
+  "id": "xinhsk3-l11-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

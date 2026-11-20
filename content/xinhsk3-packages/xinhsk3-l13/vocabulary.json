@@ -1,0 +1,282 @@
+[
+ {
+  "chinese": "请客",
+  "pinyin": "qǐngkè",
+  "mongolian": "хоол дайлах, зочлох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "昨天你请客，今天我请客。",
+  "exampleMongolian": "Өчигдөр чи дайлсан, өнөөдөр би дайлна.",
+  "pos": "үйл үг",
+  "collocations_zh": "请客吃饭 / 我请客"
+ },
+ {
+  "chinese": "南方",
+  "pinyin": "nánfāng",
+  "mongolian": "өмнөд хэсэг, өмнөд нутаг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "南方的冬天很少下雪。",
+  "exampleMongolian": "Өмнөд нутгийн өвөл цас бага ордог.",
+  "pos": "нэр үг",
+  "collocations_zh": "南方人 / 南方菜"
+ },
+ {
+  "chinese": "北方",
+  "pinyin": "běifāng",
+  "mongolian": "умард хэсэг, умард нутаг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "中国北方的冬天很冷。",
+  "exampleMongolian": "Хятадын умард нутгийн өвөл хүйтэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "北方人 / 北方菜"
+ },
+ {
+  "chinese": "做法",
+  "pinyin": "zuòfǎ",
+  "mongolian": "хийх арга, жор",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你能告诉我这个菜的做法吗？",
+  "exampleMongolian": "Чи надад энэ хоолны жорыг хэлж өгч чадах уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "菜的做法 / 饺子的做法"
+ },
+ {
+  "chinese": "不同",
+  "pinyin": "bù tóng",
+  "mongolian": "өөр, адилгүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "南方和北方的天气不同。",
+  "exampleMongolian": "Өмнөд, умардын цаг агаар өөр өөр.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "不同的地方 / 身高不同"
+ },
+ {
+  "chinese": "加",
+  "pinyin": "jiā",
+  "mongolian": "нэмэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请你帮我加一点儿水。",
+  "exampleMongolian": "Надад жаахан ус нэмж өгөөч.",
+  "pos": "үйл үг",
+  "collocations_zh": "加水 / 加糖"
+ },
+ {
+  "chinese": "的话",
+  "pinyin": "dehuà",
+  "mongolian": "… бол (нөхцөл заана)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你饿的话，就点外卖吧。",
+  "exampleMongolian": "Чи өлссөн бол хоол захиалчих.",
+  "pos": "туслах үг",
+  "collocations_zh": "如果…的话"
+ },
+ {
+  "chinese": "做客",
+  "pinyin": "zuòkè",
+  "mongolian": "зочлох, зочноор очих",
+  "hskLevel": "HSK3",
+  "exampleChinese": "周末我要去朋友家做客。",
+  "exampleMongolian": "Амралтаар найзынхаа гэрт зочлохоор явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "去朋友家做客 / 欢迎来做客"
+ },
+ {
+  "chinese": "邻居",
+  "pinyin": "línjū",
+  "mongolian": "хөрш",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们刚搬到这里，邻居都很热情。",
+  "exampleMongolian": "Бид саяхан энд нүүж ирсэн, хөршүүд маш найрсаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "老邻居 / 新邻居"
+ },
+ {
+  "chinese": "放心",
+  "pinyin": "fàngxīn",
+  "mongolian": "санаа амрах, санаа зоволтгүй байх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "您放心，我到了北京就给您打电话。",
+  "exampleMongolian": "Санаа амар, би Бээжинд очмогц тантай утсаар холбогдоно.",
+  "pos": "үйл үг",
+  "collocations_zh": "放心吧 / 不放心"
+ },
+ {
+  "chinese": "酒",
+  "pinyin": "jiǔ",
+  "mongolian": "архи, дарс",
+  "hskLevel": "HSK3",
+  "exampleChinese": "爸爸吃饭的时候会喝酒。",
+  "exampleMongolian": "Аав хоол идэхдээ архи уудаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "喝酒 / 一杯酒"
+ },
+ {
+  "chinese": "放",
+  "pinyin": "fàng",
+  "mongolian": "тавих, хийх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请把书放在桌子上。",
+  "exampleMongolian": "Номоо ширээн дээр тавиарай.",
+  "pos": "үйл үг",
+  "collocations_zh": "放在桌子上 / 放进冰箱"
+ },
+ {
+  "chinese": "客人",
+  "pinyin": "kèrén",
+  "mongolian": "зочин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我要去机场接一位重要的客人。",
+  "exampleMongolian": "Би онгоцны буудал руу чухал зочин тосохоор явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "一位客人 / 重要的客人"
+ },
+ {
+  "chinese": "晚会",
+  "pinyin": "wǎnhuì",
+  "mongolian": "үдэшлэг, үдшийн тоглолт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "明天学校有新年晚会。",
+  "exampleMongolian": "Маргааш сургууль дээр шинэ жилийн үдэшлэг болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "看晚会 / 生日晚会"
+ },
+ {
+  "chinese": "礼物",
+  "pinyin": "lǐwù",
+  "mongolian": "бэлэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "谢谢你送我的生日礼物。",
+  "exampleMongolian": "Төрсөн өдрийн бэлэг өгсөнд баярлалаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "生日礼物 / 送礼物"
+ },
+ {
+  "chinese": "画家",
+  "pinyin": "huàjiā",
+  "mongolian": "зураач",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的妈妈是一位画家。",
+  "exampleMongolian": "Миний ээж зураач.",
+  "pos": "нэр үг",
+  "collocations_zh": "一位画家"
+ },
+ {
+  "chinese": "盘子",
+  "pinyin": "pánzi",
+  "mongolian": "таваг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "吃完饭以后，我来洗盘子。",
+  "exampleMongolian": "Хоолоо идсэний дараа би таваг угаана.",
+  "pos": "нэр үг",
+  "collocations_zh": "三个盘子 / 洗盘子"
+ },
+ {
+  "chinese": "一边",
+  "pinyin": "yìbiān",
+  "mongolian": "нэг талаас … нөгөө талаас (зэрэг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "哥哥一边上网，一边和我说话。",
+  "exampleMongolian": "Ах интернет үзсээр надтай ярьж байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "一边…一边…"
+ },
+ {
+  "chinese": "聊天儿",
+  "pinyin": "liáotiānr",
+  "mongolian": "хөөрөлдөх, дэмбэрэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她很喜欢和别人聊天儿。",
+  "exampleMongolian": "Тэр бусадтай хөөрөлдөх их дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "和朋友聊天儿"
+ },
+ {
+  "chinese": "来自",
+  "pinyin": "láizì",
+  "mongolian": "… -аас ирсэн, … гаралтай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这位画家来自南方。",
+  "exampleMongolian": "Энэ зураач өмнөд нутгаас ирсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "来自中国 / 来自英国"
+ },
+ {
+  "chinese": "夫妻",
+  "pinyin": "fūqī",
+  "mongolian": "нөхөр эхнэр, ханилсан хосууд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他们是夫妻，去年刚结婚。",
+  "exampleMongolian": "Тэд нөхөр эхнэр, өнгөрсөн жил гэрлэсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "老夫老妻 / 一对夫妻"
+ },
+ {
+  "chinese": "直到",
+  "pinyin": "zhídào",
+  "mongolian": "… хүртэл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她今天工作很忙，直到晚上才回家。",
+  "exampleMongolian": "Тэр өнөөдөр ажил ихтэй байсан, орой болтол гэртээ харьсангүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "直到…才…"
+ },
+ {
+  "chinese": "地图",
+  "pinyin": "dìtú",
+  "mongolian": "газрын зураг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我想买一张北京地图。",
+  "exampleMongolian": "Би Бээжингийн газрын зураг авмаар байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "中国地图 / 一张地图"
+ },
+ {
+  "chinese": "点",
+  "pinyin": "diǎn",
+  "mongolian": "цэг, толбо",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我在本子上画了一个红色的点。",
+  "exampleMongolian": "Би дэвтэр дээр нэг улаан цэг зурлаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "红点 / 一点儿"
+ },
+ {
+  "chinese": "感到",
+  "pinyin": "gǎndào",
+  "mongolian": "мэдрэх, санагдах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "认识你，我感到很高兴。",
+  "exampleMongolian": "Тантай танилцсандаа би их баяртай байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "感到高兴 / 感到难过"
+ },
+ {
+  "chinese": "东方",
+  "pinyin": "dōngfāng",
+  "mongolian": "дорно, дорно дахин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我对东方的文化很感兴趣。",
+  "exampleMongolian": "Би дорно дахины соёлд их сонирхолтой.",
+  "pos": "нэр үг",
+  "collocations_zh": "东方文化 / 东方人"
+ },
+ {
+  "chinese": "文化",
+  "pinyin": "wénhuà",
+  "mongolian": "соёл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我很喜欢中国文化。",
+  "exampleMongolian": "Би Хятадын соёлд их дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "中国文化 / 学习文化"
+ },
+ {
+  "chinese": "英国",
+  "pinyin": "Yīngguó",
+  "mongolian": "Их Британи, Англи",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我想假期去英国旅游。",
+  "exampleMongolian": "Би амралтаараа Англид аялмаар байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "英国人 / 来自英国"
+ }
+]

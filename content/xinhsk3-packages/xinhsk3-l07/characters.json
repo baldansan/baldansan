@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "辆",
+   "pinyin": [
+    "liàng"
+   ],
+   "strokeCount": 11,
+   "radical": "车",
+   "practice": "write",
+   "meaningMn": "дугуй, машины хэмжих үг",
+   "etymology_mn": "车 (тэрэг) + 两 (хоёр): хоёр дугуйтай тэрэгний хэмжих үг гэж санаж болно",
+   "exampleWords": [
+    "一辆车",
+    "两辆自行车"
+   ]
+  },
+  {
+   "hanzi": "矮",
+   "pinyin": [
+    "ǎi"
+   ],
+   "strokeCount": 13,
+   "radical": "矢",
+   "practice": "write",
+   "meaningMn": "намхан",
+   "etymology_mn": "矢 (сум) байгаа нь: сумны уртаас ч намхан гэж санаарай",
+   "exampleWords": [
+    "很矮",
+    "有点儿矮"
+   ]
+  },
+  {
+   "hanzi": "裙",
+   "pinyin": [
+    "qún"
+   ],
+   "strokeCount": 12,
+   "radical": "衤",
+   "practice": "write",
+   "meaningMn": "банзал",
+   "etymology_mn": "衤 (хувцас) + 君: хувцасны нэг төрөл",
+   "exampleWords": [
+    "裙子",
+    "黄裙子"
+   ]
+  },
+  {
+   "hanzi": "甜",
+   "pinyin": [
+    "tián"
+   ],
+   "strokeCount": 11,
+   "radical": "甘",
+   "practice": "write",
+   "meaningMn": "чихэрлэг",
+   "etymology_mn": "甘 (амттай) + 舌 (хэл): хэлэнд амттай",
+   "exampleWords": [
+    "很甜",
+    "甜极了"
+   ]
+  },
+  {
+   "hanzi": "极",
+   "pinyin": [
+    "jí"
+   ],
+   "strokeCount": 7,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "маш, туйлын",
+   "etymology_mn": "木 (мод) + 及: туйл хүртэл гэсэн санаа",
+   "exampleWords": [
+    "好极了",
+    "热极了"
+   ]
+  },
+  {
+   "hanzi": "冰",
+   "pinyin": [
+    "bīng"
+   ],
+   "strokeCount": 6,
+   "radical": "冫",
+   "practice": "write",
+   "meaningMn": "мөс",
+   "etymology_mn": "冫 (мөсний тэмдэг) + 水 (ус): ус хөлдсөн нь мөс",
+   "exampleWords": [
+    "冰水",
+    "冰西瓜"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "我",
+   "b": "找",
+   "word_a": "我们",
+   "word_b": "找人",
+   "mn": "我 — би; 找 — хайх",
+   "tip_mn": "找-д 扌 (гар) байна: гараараа хайна. 我-д гар байхгүй."
+  },
+  {
+   "a": "辆",
+   "b": "两",
+   "word_a": "一辆车",
+   "word_b": "两斤",
+   "mn": "辆 — тээврийн хэрэгслийн хэмжих үг; 两 — хоёр",
+   "tip_mn": "辆-д 车 (тэрэг) байгаа тул машин, дугуйтай холбоотой."
+  },
+  {
+   "a": "裙",
+   "b": "群",
+   "word_a": "裙子",
+   "word_b": "人群",
+   "mn": "裙 — банзал; 群 — бүлэг",
+   "tip_mn": "裙-д 衤 (хувцас) байна: хувцас. 群-д 羊 (хонь) байна: сүрэг."
+  },
+  {
+   "a": "买",
+   "b": "卖",
+   "word_a": "买东西",
+   "word_b": "卖西瓜",
+   "mn": "买 — авах; 卖 — зарах",
+   "tip_mn": "卖-ийн дээр 十 нэмэгдсэн. Зарвал мөнгө авдаг гэж санаарай."
+  }
+ ]
+}

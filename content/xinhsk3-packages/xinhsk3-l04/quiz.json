@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "这个________我想去草原骑马。",
+  "options": [
+   "主意",
+   "相机",
+   "宾馆",
+   "假期"
+  ],
+  "correct_answer": "假期",
+  "explanation": "«Энэ амралтаар тал нутагт морь унамаар байна» — 假期.",
+  "order_index": 1,
+  "id": "xinhsk3-l04-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们去草原________马吧，一定很有意思。",
+  "options": [
+   "丢",
+   "站",
+   "骑",
+   "接"
+  ],
+  "correct_answer": "骑",
+  "explanation": "«Морь унах» — 骑马.",
+  "order_index": 2,
+  "id": "xinhsk3-l04-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的________真好！我们就去海边吧。",
+  "options": [
+   "号码",
+   "主意",
+   "行李",
+   "照片"
+  ],
+  "correct_answer": "主意",
+  "explanation": "«Сайн санаа» — 好主意.",
+  "order_index": 3,
+  "id": "xinhsk3-l04-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "飞机三点一________起飞。",
+  "options": [
+   "刻",
+   "久",
+   "别",
+   "先"
+  ],
+  "correct_answer": "刻",
+  "explanation": "«3:15-д хөөрнө» — 三点一刻.",
+  "order_index": 4,
+  "id": "xinhsk3-l04-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这家宾馆很________，跟别的都不一样。",
+  "options": [
+   "晚点",
+   "一直",
+   "以外",
+   "特别"
+  ],
+  "correct_answer": "特别",
+  "explanation": "«Онцгой» — 很特别.",
+  "order_index": 5,
+  "id": "xinhsk3-l04-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我不喜欢这个，还有________的吗？",
+  "options": [
+   "特别",
+   "先",
+   "别的",
+   "一样"
+  ],
+  "correct_answer": "别的",
+  "explanation": "«Өөр (бусад) юм байна уу» — 别的.",
+  "order_index": 6,
+  "id": "xinhsk3-l04-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的手机跟你的________，都是白色的。",
+  "options": [
+   "一定",
+   "一样",
+   "特别",
+   "别的"
+  ],
+  "correct_answer": "一样",
+  "explanation": "«Минийх чинийхтэй адилхан» — 跟…一样.",
+  "order_index": 7,
+  "id": "xinhsk3-l04-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "因为飞机________了，我们在机场等了很久。",
+  "options": [
+   "晚点",
+   "起飞",
+   "欢迎",
+   "满意"
+  ],
+  "correct_answer": "晚点",
+  "explanation": "«Онгоц хоцорсон» — 晚点.",
+  "order_index": 8,
+  "id": "xinhsk3-l04-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个房间又大又________，我很满意。",
+  "options": [
+   "特别",
+   "久",
+   "先",
+   "干净"
+  ],
+  "correct_answer": "干净",
+  "explanation": "«Том бас цэвэрхэн» — 又大又干净.",
+  "order_index": 9,
+  "id": "xinhsk3-l04-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "明天我________去你家，你别忘了等我。",
+  "options": [
+   "一样",
+   "已经",
+   "一定",
+   "一直"
+  ],
+  "correct_answer": "一定",
+  "explanation": "«Маргааш би заавал очно» — 一定.",
+  "order_index": 10,
+  "id": "xinhsk3-l04-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l04-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我一点儿也不累。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би ядрах гэж байна.",
+   "Би огт ядраагүй.",
+   "Би жаахан ядарсан.",
+   "Би их ядарсан."
+  ],
+  "correct_answer": "Би огт ядраагүй.",
+  "explanation": "一点儿也不 + тэмдэг нэр — бүрэн үгүйсгэл: «жаахан ч … биш».",
+  "order_index": 11,
+  "id": "xinhsk3-l04-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l04-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "我一个中国朋友也没有。",
+   "我一个中国朋友也有。",
+   "我没一个中国朋友也。",
+   "我也一个中国朋友没有。"
+  ],
+  "correct_answer": "我一个中国朋友也没有。",
+  "explanation": "一个 + нэр үг + 也没有 — «нэг ч … байхгүй».",
+  "order_index": 12,
+  "id": "xinhsk3-l04-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 他一点儿水________想喝。",
+  "options": [
+   "也很",
+   "都会",
+   "才不",
+   "也不"
+  ],
+  "correct_answer": "也不",
+  "explanation": "一点儿 + нэр үг + 也不 + үйл үг: «жаахан ч ус уумааргүй».",
+  "order_index": 13,
+  "id": "xinhsk3-l04-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Энэ өрөө тэр өрөөтэй адил том» — аль нь зөв вэ?",
+  "options": [
+   "这个房间跟那个房间大一样。",
+   "这个房间跟一样那个房间大。",
+   "这个房间跟那个房间一样大。",
+   "这个房间一样大跟那个房间。"
+  ],
+  "correct_answer": "这个房间跟那个房间一样大。",
+  "explanation": "A跟B一样 + тэмдэг нэр. 一样 нь тэмдэг нэрийн өмнө орно.",
+  "order_index": 14,
+  "id": "xinhsk3-l04-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我的杯子跟你的不一样» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Миний аяга байхгүй.",
+   "Миний аяга чинийхээс өөр.",
+   "Миний аяга чинийхтэй адилхан.",
+   "Миний аяга чинийхээс том."
+  ],
+  "correct_answer": "Миний аяга чинийхээс өөр.",
+  "explanation": "不一样 — «адилгүй, өөр».",
+  "order_index": 15,
+  "id": "xinhsk3-l04-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l04-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ваныг эс тооцвол бүгд ирсэн» — аль нь зөв вэ?",
+  "options": [
+   "除了小王以外，大家都来了。",
+   "除了小王以外，大家还来了。",
+   "小王除了大家都来了。",
+   "大家除了都小王来了。"
+  ],
+  "correct_answer": "除了小王以外，大家都来了。",
+  "explanation": "Хасаад бусад нь бүгд — 除了…都….",
+  "order_index": 16,
+  "id": "xinhsk3-l04-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«除了唱歌以外，他也喜欢跳舞» — энэ өгүүлбэр юу хэлж байна вэ?",
+  "options": [
+   "Дуулах дургүй, зөвхөн бүжиглэнэ.",
+   "Дуулахыг эс тооцвол бүгдийг хийнэ.",
+   "Дуулаад дараа нь бүжиглэнэ.",
+   "Дуулахаас гадна бас бүжиглэх дуртай."
+  ],
+  "correct_answer": "Дуулахаас гадна бас бүжиглэх дуртай.",
+  "explanation": "除了…也… — «…-аас гадна бас …», нэмэх утгатай.",
+  "order_index": 17,
+  "id": "xinhsk3-l04-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l04-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи чемоданаас гадна өөр юм авсан уу?» гэхэд аль нь тохирох вэ?",
+  "options": [
+   "行李箱除了你还带东西吗？",
+   "你除了以外行李箱还带吗？",
+   "除了行李箱以外，你还带别的东西吗？",
+   "除了行李箱以外，你都带别的东西吗？"
+  ],
+  "correct_answer": "除了行李箱以外，你还带别的东西吗？",
+  "explanation": "Нэмж асуух бол 除了…以外，还….",
+  "order_index": 18,
+  "id": "xinhsk3-l04-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一飞为什么不想去海边？",
+  "options": [
+   "海边太远",
+   "现在去海边有点儿冷",
+   "不喜欢海",
+   "没有时间"
+  ],
+  "correct_answer": "现在去海边有点儿冷",
+  "explanation": "«现在去海边有点儿冷» — одоо далайн эрэг хүйтэн.",
+  "order_index": 19,
+  "id": "xinhsk3-l04-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：他们最后决定去哪儿？",
+  "options": [
+   "草原",
+   "海边",
+   "上海",
+   "北京"
+  ],
+  "correct_answer": "草原",
+  "explanation": "«那去草原吧？» — «这个主意好！» гэж тал нутгийг сонгосон.",
+  "order_index": 20,
+  "id": "xinhsk3-l04-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：飞机什么时候起飞？",
+  "options": [
+   "星期六下午十点",
+   "星期日上午十点",
+   "星期五上午十点一刻",
+   "星期六上午十点一刻"
+  ],
+  "correct_answer": "星期六上午十点一刻",
+  "explanation": "«星期六上午十点一刻起飞» — бямба гарагийн өглөө 10:15.",
+  "order_index": 21,
+  "id": "xinhsk3-l04-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：这家宾馆有什么特别的？",
+  "options": [
+   "里面有马",
+   "离机场很近",
+   "一出门就能看见牛和羊",
+   "一出门就是海"
+  ],
+  "correct_answer": "一出门就能看见牛和羊",
+  "explanation": "«一出门就能看见牛和羊！» — гараад ирмэгц үхэр, хонь харагдана.",
+  "order_index": 22,
+  "id": "xinhsk3-l04-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：司机姓什么？",
+  "options": [
+   "刘",
+   "李",
+   "王",
+   "杨"
+  ],
+  "correct_answer": "李",
+  "explanation": "«我姓李，叫我小李就可以» — овог нь Ли.",
+  "order_index": 23,
+  "id": "xinhsk3-l04-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：天黑的时候，小李在做什么？",
+  "options": [
+   "一直在机场等",
+   "在宾馆睡觉",
+   "去买水果了",
+   "在家休息"
+  ],
+  "correct_answer": "一直在机场等",
+  "explanation": "«司机小李一直在机场等我们» — онгоцны буудал дээр хүлээсэн.",
+  "order_index": 24,
+  "id": "xinhsk3-l04-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：宾馆的房间怎么样？",
+  "options": [
+   "很小但是干净",
+   "很大但是不干净",
+   "很特别但是很小",
+   "又大又干净"
+  ],
+  "correct_answer": "又大又干净",
+  "explanation": "«又大又干净，我非常满意» — том, цэвэрхэн.",
+  "order_index": 25,
+  "id": "xinhsk3-l04-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

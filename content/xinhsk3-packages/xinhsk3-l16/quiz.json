@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "小猫刚来的时候又________又小，现在变得很干净。",
+  "options": [
+   "饱",
+   "奇怪",
+   "可爱",
+   "脏"
+  ],
+  "correct_answer": "脏",
+  "explanation": "«Бохир, жижигхэн байсан» — 又脏又小.",
+  "order_index": 1,
+  "id": "xinhsk3-l16-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个孩子很________，大家都喜欢他。",
+  "options": [
+   "脏",
+   "饱",
+   "可爱",
+   "奇怪"
+  ],
+  "correct_answer": "可爱",
+  "explanation": "«Энэ хүүхэд хөөрхөн, бүгд дуртай» — 可爱.",
+  "order_index": 2,
+  "id": "xinhsk3-l16-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我每天早上都要________我家的小狗。",
+  "options": [
+   "张",
+   "照顾",
+   "认得",
+   "关于"
+  ],
+  "correct_answer": "照顾",
+  "explanation": "«Нохойгоо арчилдаг» — 照顾.",
+  "order_index": 3,
+  "id": "xinhsk3-l16-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "吃了三碗面，我已经________了。",
+  "options": [
+   "饱",
+   "脏",
+   "全",
+   "脚"
+  ],
+  "correct_answer": "饱",
+  "explanation": "«Цадсан» — 吃饱 / 饱了.",
+  "order_index": 4,
+  "id": "xinhsk3-l16-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个周末我们一起去________看大熊猫吧。",
+  "options": [
+   "周末",
+   "竹子",
+   "国宝",
+   "动物园"
+  ],
+  "correct_answer": "动物园",
+  "explanation": "«Амьтны хүрээлэнд пандаг үзэхээр явъя» — 动物园.",
+  "order_index": 5,
+  "id": "xinhsk3-l16-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "大熊猫是中国的________。",
+  "options": [
+   "动物",
+   "脚",
+   "国宝",
+   "竹子"
+  ],
+  "correct_answer": "国宝",
+  "explanation": "«Панда бол Хятадын үндэсний эрдэнэ» — 国宝.",
+  "order_index": 6,
+  "id": "xinhsk3-l16-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________这个问题，我明天告诉你。",
+  "options": [
+   "一般",
+   "关于",
+   "其实",
+   "好像"
+  ],
+  "correct_answer": "关于",
+  "explanation": "«Энэ асуултын тухай маргааш хэлнэ» — 关于.",
+  "order_index": 7,
+  "id": "xinhsk3-l16-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我在门口等了你________，你怎么才来？",
+  "options": [
+   "半天",
+   "周末",
+   "一会儿",
+   "身边"
+  ],
+  "correct_answer": "半天",
+  "explanation": "«Нэлээн удаан хүлээлээ» — 等了半天.",
+  "order_index": 8,
+  "id": "xinhsk3-l16-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "大熊猫最喜欢吃________，也吃一点儿别的东西。",
+  "options": [
+   "嘴",
+   "脸",
+   "动物",
+   "竹子"
+  ],
+  "correct_answer": "竹子",
+  "explanation": "«Панда хулс идэх дуртай» — 竹子.",
+  "order_index": 9,
+  "id": "xinhsk3-l16-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小鸟一直________着嘴，等着吃东西。",
+  "options": [
+   "接",
+   "站",
+   "张",
+   "照"
+  ],
+  "correct_answer": "张",
+  "explanation": "«Ам ангайгаад хоол хүлээнэ» — 张着嘴.",
+  "order_index": 10,
+  "id": "xinhsk3-l16-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l16-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«最近天气一会儿冷，一会儿热。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Ямар ч өөрчлөлтгүй.",
+   "Цаг агаар нэг хүйтэн, нэг халуун болоод байна.",
+   "Цаг агаар жаахан хүйтэн.",
+   "Цаг агаар үргэлж халуун."
+  ],
+  "correct_answer": "Цаг агаар нэг хүйтэн, нэг халуун болоод байна.",
+  "explanation": "一会儿…，一会儿… — нэг нь нөгөөгөөр солигдох.",
+  "order_index": 11,
+  "id": "xinhsk3-l16-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l16-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "他一会儿进来，一会儿出去。",
+   "他一会儿进来，出去一会儿。",
+   "他一会儿进来，然后出去。",
+   "他进来一会儿，一会儿出去。"
+  ],
+  "correct_answer": "他一会儿进来，一会儿出去。",
+  "explanation": "Хоёр 一会儿 үйл үгийн өмнө.",
+  "order_index": 12,
+  "id": "xinhsk3-l16-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l16-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Энэ асуудлын тухай би дараа ярья» гэхэд аль нь зөв бэ?",
+  "options": [
+   "这个问题关于，我以后再说。",
+   "我关于以后再说这个问题。",
+   "这个关于问题，以后我再说。",
+   "关于这个问题，我以后再说。"
+  ],
+  "correct_answer": "关于这个问题，我以后再说。",
+  "explanation": "关于 + сэдэв, өгүүлбэрийн эхэнд.",
+  "order_index": 13,
+  "id": "xinhsk3-l16-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l16-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "我想买关于一本动物书。",
+   "我想买一本的关于动物书。",
+   "我想买一本关于动物的书。",
+   "我想买一本动物关于的书。"
+  ],
+  "correct_answer": "我想买一本关于动物的书。",
+  "explanation": "关于动物 + 的 + 书.",
+  "order_index": 14,
+  "id": "xinhsk3-l16-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l16-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "一般来说 ямар өгүүлбэрт тохирох вэ?",
+  "options": [
+   "Зөвшөөрөх үг",
+   "Ерөнхий зүй тогтлыг хэлэх өгүүлбэр",
+   "Өчигдөр болсон нэг явдал",
+   "Асуулт"
+  ],
+  "correct_answer": "Ерөнхий зүй тогтлыг хэлэх өгүүлбэр",
+  "explanation": "一般来说 — ерөнхий дүгнэлт, өгүүлбэрийн эхэнд.",
+  "order_index": 15,
+  "id": "xinhsk3-l16-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l16-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "冬天比夏天早关门一个小时。",
+   "冬天比夏天关门早一个小时。",
+   "冬天早比夏天关门一个小时。",
+   "冬天比夏天早一个小时关门。"
+  ],
+  "correct_answer": "冬天比夏天早关门一个小时。",
+  "explanation": "比 + B + 早 + үйл үг + хугацаа.",
+  "order_index": 16,
+  "id": "xinhsk3-l16-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l16-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«哥哥比弟弟多吃了三个饺子。» — хэн илүү идсэн бэ?",
+  "options": [
+   "Дүү",
+   "Хоёулаа адил",
+   "Мэдэгдэхгүй",
+   "Ах"
+  ],
+  "correct_answer": "Ах",
+  "explanation": "多吃 = илүү идсэн, 三个 = гурав.",
+  "order_index": 17,
+  "id": "xinhsk3-l16-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l16-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我比他晚到了十分钟。» — хэн түрүүлж ирсэн бэ?",
+  "options": [
+   "Хамт ирсэн",
+   "Мэдэгдэхгүй",
+   "Тэр",
+   "Би"
+  ],
+  "correct_answer": "Тэр",
+  "explanation": "我比他晚 — би түүнээс арван минут оройтсон.",
+  "order_index": 18,
+  "id": "xinhsk3-l16-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l16-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小猫第一天看起来怎么样？",
+  "options": [
+   "很干净",
+   "又脏又小",
+   "又大又白",
+   "很可爱"
+  ],
+  "correct_answer": "又脏又小",
+  "explanation": "«第一天看见它的时候，它又脏又小».",
+  "order_index": 19,
+  "id": "xinhsk3-l16-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一雪周末打算带孩子们去哪儿？",
+  "options": [
+   "北京动物园",
+   "领养店",
+   "公园",
+   "学校"
+  ],
+  "correct_answer": "北京动物园",
+  "explanation": "«我周末带你们去北京动物园看动物吧».",
+  "order_index": 20,
+  "id": "xinhsk3-l16-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：大熊猫的名字其实应该叫什么？",
+  "options": [
+   "小熊猫",
+   "大熊",
+   "大猫",
+   "大猫熊"
+  ],
+  "correct_answer": "大猫熊",
+  "explanation": "«其实应该叫大猫熊».",
+  "order_index": 21,
+  "id": "xinhsk3-l16-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：为什么说中国是大熊猫的家？",
+  "options": [
+   "中国的竹子最多",
+   "大熊猫不去国外",
+   "全世界只有中国有野生大熊猫",
+   "大熊猫喜欢中国人"
+  ],
+  "correct_answer": "全世界只有中国有野生大熊猫",
+  "explanation": "Зэрлэг панда зөвхөн Хятадад байдаг.",
+  "order_index": 22,
+  "id": "xinhsk3-l16-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪为什么觉得那只大熊猫没吃饱？",
+  "options": [
+   "它爬上去了",
+   "它张着嘴找吃的",
+   "它一直在睡觉",
+   "它不吃竹子"
+  ],
+  "correct_answer": "它张着嘴找吃的",
+  "explanation": "«站起来张着嘴找吃的».",
+  "order_index": 23,
+  "id": "xinhsk3-l16-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：北京动物园早上几点开门？",
+  "options": [
+   "七点半",
+   "六点",
+   "七点",
+   "八点"
+  ],
+  "correct_answer": "七点半",
+  "explanation": "«早上七点半开门».",
+  "order_index": 24,
+  "id": "xinhsk3-l16-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：冬天动物园为什么比平时早关门？",
+  "options": [
+   "冬天太冷",
+   "动物太累",
+   "天黑得晚",
+   "冬天游客少"
+  ],
+  "correct_answer": "冬天游客少",
+  "explanation": "«冬天比夏天游客少，所以也比平时早关门一个小时».",
+  "order_index": 25,
+  "id": "xinhsk3-l16-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

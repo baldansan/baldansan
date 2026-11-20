@@ -1,0 +1,282 @@
+[
+ {
+  "chinese": "校园",
+  "pinyin": "xiàoyuán",
+  "mongolian": "сургуулийн хашаа, кампус",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们的校园很美丽。",
+  "exampleMongolian": "Манай сургуулийн хашаа үзэсгэлэнтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "校园里 / 美丽的校园"
+ },
+ {
+  "chinese": "卡",
+  "pinyin": "kǎ",
+  "mongolian": "карт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的公交卡里没钱了。",
+  "exampleMongolian": "Миний автобусны картанд мөнгө дууссан.",
+  "pos": "нэр үг",
+  "collocations_zh": "银行卡 / 公交卡 / 校园卡"
+ },
+ {
+  "chinese": "球场",
+  "pinyin": "qiúchǎng",
+  "mongolian": "бөмбөгийн талбай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们下午去球场踢足球吧。",
+  "exampleMongolian": "Бид үдээс хойш талбай дээр хөл бөмбөг тоглоё.",
+  "pos": "нэр үг",
+  "collocations_zh": "在球场 / 网球场"
+ },
+ {
+  "chinese": "为了",
+  "pinyin": "wèile",
+  "mongolian": "… гэж, … зорилгоор",
+  "hskLevel": "HSK3",
+  "exampleChinese": "为了考上好大学，我一定好好学习。",
+  "exampleMongolian": "Сайн их сургуульд орохын тулд би сайн сурна.",
+  "pos": "угтвар үг",
+  "collocations_zh": "为了…，…"
+ },
+ {
+  "chinese": "运动会",
+  "pinyin": "yùndònghuì",
+  "mongolian": "спортын наадам",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们学校每年秋天开运动会。",
+  "exampleMongolian": "Манай сургууль жил бүрийн намар спортын наадам зохион байгуулдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "开运动会 / 参加运动会"
+ },
+ {
+  "chinese": "男生",
+  "pinyin": "nánshēng",
+  "mongolian": "эрэгтэй сурагч, хөвгүүд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们班有十五个男生。",
+  "exampleMongolian": "Манай ангид арван таван хөвгүүн бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个男生 / 男生女生"
+ },
+ {
+  "chinese": "练",
+  "pinyin": "liàn",
+  "mongolian": "дадлагажих, давтан хийх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我每天都要练字。",
+  "exampleMongolian": "Би өдөр бүр бичгийн дасгал хийдэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "练字 / 练球"
+ },
+ {
+  "chinese": "参加",
+  "pinyin": "cānjiā",
+  "mongolian": "оролцох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你要参加明天的考试吗？",
+  "exampleMongolian": "Чи маргаашийн шалгалтад орох уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "参加运动会 / 参加比赛"
+ },
+ {
+  "chinese": "网球",
+  "pinyin": "wǎngqiú",
+  "mongolian": "теннис",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他喜欢打网球，每周都去打。",
+  "exampleMongolian": "Тэр теннис тоглох дуртай, долоо хоног бүр тоглодог.",
+  "pos": "нэр үг",
+  "collocations_zh": "打网球 / 网球场"
+ },
+ {
+  "chinese": "比赛",
+  "pinyin": "bǐsài",
+  "mongolian": "тэмцээн; тэмцээнд оролцох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "明天就要开始篮球比赛了。",
+  "exampleMongolian": "Маргааш сагсан бөмбөгийн тэмцээн эхэлнэ.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "足球比赛 / 参加比赛"
+ },
+ {
+  "chinese": "练习",
+  "pinyin": "liànxí",
+  "mongolian": "дасгал хийх; дасгал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "下周就要比赛了，我每天都在练习。",
+  "exampleMongolian": "Дараа долоо хоногт тэмцээн болно, би өдөр бүр дасгал хийж байна.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "练习写字 / 做练习"
+ },
+ {
+  "chinese": "好多",
+  "pinyin": "hǎoduō",
+  "mongolian": "маш олон",
+  "hskLevel": "HSK3",
+  "exampleChinese": "火车站里有好多人。",
+  "exampleMongolian": "Галт тэрэгний буудалд маш олон хүн байна.",
+  "pos": "тооны үг",
+  "collocations_zh": "好多人 / 好多东西"
+ },
+ {
+  "chinese": "几乎",
+  "pinyin": "jīhū",
+  "mongolian": "бараг, бараг л",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这儿很安静，几乎没有人说话。",
+  "exampleMongolian": "Энд их нам гүм, бараг хэн ч ярихгүй байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "几乎都 / 几乎没有"
+ },
+ {
+  "chinese": "只是",
+  "pinyin": "zhǐshì",
+  "mongolian": "зүгээр л, ердөө; гэхдээ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我只是问问，你别担心。",
+  "exampleMongolian": "Би зүгээр л асууж байна, санаа зовоод байх хэрэггүй.",
+  "pos": "дайвар үг / холбоос",
+  "collocations_zh": "只是为了… / 只是…"
+ },
+ {
+  "chinese": "啤酒",
+  "pinyin": "píjiǔ",
+  "mongolian": "шар айраг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "服务员，我们要两杯啤酒。",
+  "exampleMongolian": "Үйлчлэгч ээ, бидэнд хоёр хундага шар айраг өгөөч.",
+  "pos": "нэр үг",
+  "collocations_zh": "一杯啤酒 / 喝啤酒"
+ },
+ {
+  "chinese": "回",
+  "pinyin": "huí",
+  "mongolian": "(явдал, хэрэг)-ийн хэмжих үг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我不知道是怎么回事。",
+  "exampleMongolian": "Би юу болсныг мэдэхгүй байна.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "怎么回事 / 两回事"
+ },
+ {
+  "chinese": "紧张",
+  "pinyin": "jǐnzhāng",
+  "mongolian": "сандарсан, догдолсон, хурцадмал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "比赛快开始了，运动员们都有点儿紧张。",
+  "exampleMongolian": "Тэмцээн удахгүй эхэлнэ, тамирчид бүгд жаахан догдолж байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很紧张 / 不紧张"
+ },
+ {
+  "chinese": "主要",
+  "pinyin": "zhǔyào",
+  "mongolian": "гол, голлох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你现在最主要的事情是好好练习。",
+  "exampleMongolian": "Чиний одоо хамгийн гол зүйл бол сайн дасгал хийх.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "主要问题 / 最主要"
+ },
+ {
+  "chinese": "受到",
+  "pinyin": "shòudào",
+  "mongolian": "(нөлөө, хүндлэл) хүртэх, өртөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她受到了大家的热情欢迎。",
+  "exampleMongolian": "Түүнийг бүгд халуун дотноор угтан авлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "受到帮助 / 受到欢迎"
+ },
+ {
+  "chinese": "影响",
+  "pinyin": "yǐngxiǎng",
+  "mongolian": "нөлөө; нөлөөлөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "坏天气会影响我的心情。",
+  "exampleMongolian": "Муу цаг агаар миний сэтгэл санаанд нөлөөлнө.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "受到影响 / 影响不大"
+ },
+ {
+  "chinese": "得分",
+  "pinyin": "défēn",
+  "mongolian": "оноо авах; авсан оноо",
+  "hskLevel": "HSK3",
+  "exampleChinese": "大家都想在比赛中得分。",
+  "exampleMongolian": "Бүгд тэмцээнд оноо авахыг хүсдэг.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "得分高 / 得分是多少"
+ },
+ {
+  "chinese": "体育",
+  "pinyin": "tǐyù",
+  "mongolian": "биеийн тамир, спорт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我最喜欢的体育运动是打篮球。",
+  "exampleMongolian": "Миний хамгийн дуртай спорт бол сагсан бөмбөг.",
+  "pos": "нэр үг",
+  "collocations_zh": "体育老师 / 体育成绩"
+ },
+ {
+  "chinese": "世界",
+  "pinyin": "shìjiè",
+  "mongolian": "дэлхий",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个世界很大，我想去看看。",
+  "exampleMongolian": "Энэ дэлхий маш том, би очиж үзмээр байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "世界上 / 全世界"
+ },
+ {
+  "chinese": "运动员",
+  "pinyin": "yùndòngyuán",
+  "mongolian": "тамирчин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他是一位网球运动员。",
+  "exampleMongolian": "Тэр бол теннисний тамирчин.",
+  "pos": "нэр үг",
+  "collocations_zh": "一名运动员 / 足球运动员"
+ },
+ {
+  "chinese": "得到",
+  "pinyin": "dédào",
+  "mongolian": "авах, олж авах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他在比赛中得到了第一名。",
+  "exampleMongolian": "Тэр тэмцээнд нэгдүгээр байр авсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "得到帮助 / 得到成绩"
+ },
+ {
+  "chinese": "成绩",
+  "pinyin": "chéngjì",
+  "mongolian": "үр дүн, амжилт, дүн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "为了在比赛中得到好成绩，我每天都练习。",
+  "exampleMongolian": "Тэмцээнд сайн амжилт гаргахын тулд би өдөр бүр дасгал хийдэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "好成绩 / 考试成绩"
+ },
+ {
+  "chinese": "奥运会",
+  "pinyin": "Àoyùnhuì",
+  "mongolian": "Олимпийн наадам",
+  "hskLevel": "HSK3",
+  "exampleChinese": "奥运会是世界上影响最大的体育比赛。",
+  "exampleMongolian": "Олимпийн наадам бол дэлхийн хамгийн нөлөө ихтэй спортын тэмцээн.",
+  "pos": "тусгай нэр",
+  "collocations_zh": "看奥运会 / 参加奥运会"
+ },
+ {
+  "chinese": "刘长春",
+  "pinyin": "Liú Chángchūn",
+  "mongolian": "Лю Чанчүнь (Хятадын анхны олимпийн тамирчин)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "刘长春是中国第一位参加奥运会的运动员。",
+  "exampleMongolian": "Лю Чанчүнь бол олимпод оролцсон Хятадын анхны тамирчин.",
+  "pos": "тусгай нэр",
+  "collocations_zh": "第一位运动员"
+ }
+]

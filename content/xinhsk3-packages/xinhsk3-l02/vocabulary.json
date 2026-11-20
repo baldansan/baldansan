@@ -1,0 +1,282 @@
+[
+ {
+  "chinese": "菜单",
+  "pinyin": "càidān",
+  "mongolian": "хоолны цэс",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你看一下菜单，想吃点儿什么？",
+  "exampleMongolian": "Цэсээ нэг хараад, юу идмээр байна?",
+  "pos": "нэр үг",
+  "collocations_zh": "看菜单"
+ },
+ {
+  "chinese": "又",
+  "pinyin": "yòu",
+  "mongolian": "бас; дахин (又…又… — «…ч …ч»)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我又学了一个新词。",
+  "exampleMongolian": "Би дахиад нэг шинэ үг сурлаа.",
+  "pos": "дайвар үг",
+  "collocations_zh": "又…又…"
+ },
+ {
+  "chinese": "饿",
+  "pinyin": "è",
+  "mongolian": "өлсөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我饿了，中午我们去哪儿吃饭？",
+  "exampleMongolian": "Би өлслөө, өдөр бид хаана хооллох вэ?",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很饿 / 不饿"
+ },
+ {
+  "chinese": "渴",
+  "pinyin": "kě",
+  "mongolian": "цангах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "运动后大家都很渴。",
+  "exampleMongolian": "Спорт хийсний дараа бүгд их цангана.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "口渴 / 很渴"
+ },
+ {
+  "chinese": "客气",
+  "pinyin": "kèqi",
+  "mongolian": "эелдэг байх; хэтэрхий эвгүйрхэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "别客气，请坐。",
+  "exampleMongolian": "Битгий эвгүйрхээрэй, суугаарай.",
+  "pos": "үйл үг / тэмдэг нэр",
+  "collocations_zh": "别客气 / 很客气"
+ },
+ {
+  "chinese": "饮料",
+  "pinyin": "yǐnliào",
+  "mongolian": "ундаа",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这种饮料很好喝。",
+  "exampleMongolian": "Энэ ундаа их амттай.",
+  "pos": "нэр үг",
+  "collocations_zh": "喝饮料"
+ },
+ {
+  "chinese": "好久",
+  "pinyin": "hǎojiǔ",
+  "mongolian": "удаан хугацаа",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他好久没来学校了。",
+  "exampleMongolian": "Тэр сургуульд ирэхээ больсоор удлаа.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "好久不见 / 好久没…"
+ },
+ {
+  "chinese": "服务",
+  "pinyin": "fúwù",
+  "mongolian": "үйлчлэх; үйлчилгээ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个饭店的服务很好。",
+  "exampleMongolian": "Энэ зоогийн газрын үйлчилгээ сайн.",
+  "pos": "үйл үг",
+  "collocations_zh": "热情服务"
+ },
+ {
+  "chinese": "员",
+  "pinyin": "yuán",
+  "mongolian": "хүн, ажилтан (нэр, үйл үгийн ард орох дагавар)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他是这家饭店的服务员。",
+  "exampleMongolian": "Тэр энэ зоогийн газрын үйлчлэгч.",
+  "pos": "дагавар",
+  "collocations_zh": "服务员 / 运动员"
+ },
+ {
+  "chinese": "双",
+  "pinyin": "shuāng",
+  "mongolian": "хос (хэмжих үг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "朋友送了我一双非常漂亮的筷子。",
+  "exampleMongolian": "Найз надад маш үзэсгэлэнтэй савхны хос бэлэглэсэн.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一双筷子 / 一双鞋"
+ },
+ {
+  "chinese": "筷子",
+  "pinyin": "kuàizi",
+  "mongolian": "савх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "服务员，请再给我一双筷子。",
+  "exampleMongolian": "Үйлчлэгч ээ, надад дахиад нэг хос савх өгөөч.",
+  "pos": "нэр үг",
+  "collocations_zh": "用筷子 / 买筷子"
+ },
+ {
+  "chinese": "勺子",
+  "pinyin": "sháozi",
+  "mongolian": "халбага",
+  "hskLevel": "HSK3",
+  "exampleChinese": "服务员，请给我一个勺子。",
+  "exampleMongolian": "Үйлчлэгч ээ, надад нэг халбага өгөөч.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个勺子"
+ },
+ {
+  "chinese": "碗",
+  "pinyin": "wǎn",
+  "mongolian": "аяга, шүүр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我很饿，吃了两碗米饭。",
+  "exampleMongolian": "Би их өлсөөд хоёр аяга будаа идлээ.",
+  "pos": "нэр үг",
+  "collocations_zh": "一碗米饭 / 大碗"
+ },
+ {
+  "chinese": "马上",
+  "pinyin": "mǎshàng",
+  "mongolian": "яг одоо, тэр дор нь",
+  "hskLevel": "HSK3",
+  "exampleChinese": "快进去吧，电影马上开始了。",
+  "exampleMongolian": "Хурдан ор, кино удахгүй эхэлнэ.",
+  "pos": "дайвар үг",
+  "collocations_zh": "马上就到"
+ },
+ {
+  "chinese": "热情",
+  "pinyin": "rèqíng",
+  "mongolian": "халуун дотно, эелдэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这里的人非常热情。",
+  "exampleMongolian": "Энд хүмүүс маш халуун дотно.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "热情服务 / 很热情"
+ },
+ {
+  "chinese": "尝",
+  "pinyin": "cháng",
+  "mongolian": "амсах, үзэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我想尝尝你做的菜。",
+  "exampleMongolian": "Би чиний хийсэн хоолыг амсаж үзмээр байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "尝一尝"
+ },
+ {
+  "chinese": "记",
+  "pinyin": "jì",
+  "mongolian": "санах, цээжлэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请你记住这个电话号码。",
+  "exampleMongolian": "Энэ утасны дугаарыг санаарай.",
+  "pos": "үйл үг",
+  "collocations_zh": "记住 / 记号码"
+ },
+ {
+  "chinese": "用",
+  "pinyin": "yòng",
+  "mongolian": "хэрэглэх; (эелдгээр) идэх, уух",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请用茶。",
+  "exampleMongolian": "Цай уугаарай.",
+  "pos": "үйл үг",
+  "collocations_zh": "用筷子 / 请用"
+ },
+ {
+  "chinese": "鸡",
+  "pinyin": "jī",
+  "mongolian": "тахиа",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢吃鸡肉，也喜欢吃鱼肉。",
+  "exampleMongolian": "Би тахианы мах ч, загасны мах ч дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "鸡肉 / 一只鸡"
+ },
+ {
+  "chinese": "张",
+  "pinyin": "zhāng",
+  "mongolian": "хуудас, ширхэг (цаас, зураг, ширээний хэмжих үг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请给我一张纸。",
+  "exampleMongolian": "Надад нэг цаас өгөөч.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一张纸 / 一张桌子"
+ },
+ {
+  "chinese": "不用",
+  "pinyin": "búyòng",
+  "mongolian": "хэрэггүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "还有很多时间，不用打车。",
+  "exampleMongolian": "Цаг их байна, такси барих хэрэггүй.",
+  "pos": "дайвар үг",
+  "collocations_zh": "不用谢 / 不用跑"
+ },
+ {
+  "chinese": "选",
+  "pinyin": "xuǎn",
+  "mongolian": "сонгох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "选一个你喜欢的颜色。",
+  "exampleMongolian": "Өөрт таалагдах нэг өнгийг сонго.",
+  "pos": "үйл үг",
+  "collocations_zh": "选好了"
+ },
+ {
+  "chinese": "外卖",
+  "pinyin": "wàimài",
+  "mongolian": "хоол хүргэлт, гадуур авч явах хоол",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我饿了，在手机上点了外卖。",
+  "exampleMongolian": "Би өлсөөд утсаараа хоол хүргүүлэхээр захиаллаа.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "点外卖 / 送外卖"
+ },
+ {
+  "chinese": "方便",
+  "pinyin": "fāngbiàn",
+  "mongolian": "тохиромжтой, хялбар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这里有地铁站，非常方便。",
+  "exampleMongolian": "Энд метроны буудал байгаа тул маш тохиромжтой.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很方便 / 不方便"
+ },
+ {
+  "chinese": "蛋糕",
+  "pinyin": "dàngāo",
+  "mongolian": "бялуу",
+  "hskLevel": "HSK3",
+  "exampleChinese": "生日那天，朋友给我买了一个大大的蛋糕。",
+  "exampleMongolian": "Төрсөн өдрөөр найз надад том бялуу авч өгсөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "一块蛋糕 / 生日蛋糕"
+ },
+ {
+  "chinese": "只",
+  "pinyin": "zhǐ",
+  "mongolian": "зөвхөн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "书包里只有一本书。",
+  "exampleMongolian": "Цүнхэнд ганц ном байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "只有 / 只喜欢"
+ },
+ {
+  "chinese": "方便面",
+  "pinyin": "fāngbiànmiàn",
+  "mongolian": "амархан бэлддэг лапша",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我很喜欢吃方便面。",
+  "exampleMongolian": "Би шууд лапшанд их дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃方便面 / 一包方便面"
+ },
+ {
+  "chinese": "简单",
+  "pinyin": "jiǎndān",
+  "mongolian": "энгийн, амархан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个题看起来很简单。",
+  "exampleMongolian": "Энэ бодлого амархан харагдаж байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "简单的问题 / 非常简单"
+ }
+]

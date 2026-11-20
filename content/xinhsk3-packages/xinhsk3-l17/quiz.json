@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "我很________一个人在家，晚上都不敢关灯。",
+  "options": [
+   "生气",
+   "聪明",
+   "同意",
+   "害怕"
+  ],
+  "correct_answer": "害怕",
+  "explanation": "«Ганцаараа гэртээ байхаас айдаг» — 害怕.",
+  "order_index": 1,
+  "id": "xinhsk3-l17-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你放心，我一点儿也不________，这不是你的错。",
+  "options": [
+   "容易",
+   "继续",
+   "生气",
+   "害怕"
+  ],
+  "correct_answer": "生气",
+  "explanation": "«Би огт уурлаагүй» — 不生气.",
+  "order_index": 2,
+  "id": "xinhsk3-l17-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个孩子又________又认真，老师都很喜欢他。",
+  "options": [
+   "方向",
+   "聪明",
+   "同意",
+   "常见"
+  ],
+  "correct_answer": "聪明",
+  "explanation": "«Ухаалаг бас хичээнгүй» — 聪明.",
+  "order_index": 3,
+  "id": "xinhsk3-l17-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________这个办法很有用，你可以试试。",
+  "options": [
+   "认为",
+   "同意",
+   "继续",
+   "回答"
+  ],
+  "correct_answer": "认为",
+  "explanation": "«Энэ аргыг хэрэгтэй гэж үзэж байна» — 我认为.",
+  "order_index": 4,
+  "id": "xinhsk3-l17-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们休息一下再________学习，好不好？",
+  "options": [
+   "害怕",
+   "回答",
+   "查",
+   "继续"
+  ],
+  "correct_answer": "继续",
+  "explanation": "«Жаахан амраад үргэлжлүүлэн сурья» — 继续.",
+  "order_index": 5,
+  "id": "xinhsk3-l17-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "爸妈不________我一个人去国外，他们很担心。",
+  "options": [
+   "认为",
+   "比如",
+   "同意",
+   "继续"
+  ],
+  "correct_answer": "同意",
+  "explanation": "«Аав ээж намайг ганцаараа гадаад явахыг зөвшөөрөхгүй» — 不同意.",
+  "order_index": 6,
+  "id": "xinhsk3-l17-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "春天，公园里________都是漂亮的花。",
+  "options": [
+   "屋子",
+   "到处",
+   "方向",
+   "国家"
+  ],
+  "correct_answer": "到处",
+  "explanation": "«Хаа сайгүй цэцэг» — 到处.",
+  "order_index": 7,
+  "id": "xinhsk3-l17-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "请你认真________老师的问题。",
+  "options": [
+   "回答",
+   "关机",
+   "查",
+   "留学"
+  ],
+  "correct_answer": "回答",
+  "explanation": "«Багшийн асуултад хариул» — 回答问题.",
+  "order_index": 8,
+  "id": "xinhsk3-l17-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "遇到不认识的字，你可以________字典。",
+  "options": [
+   "接",
+   "带",
+   "站",
+   "查"
+  ],
+  "correct_answer": "查",
+  "explanation": "«Мэдэхгүй үсэг таарвал толь хар» — 查字典.",
+  "order_index": 9,
+  "id": "xinhsk3-l17-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这道题太难了，对我来说是一个________。",
+  "options": [
+   "国家",
+   "屋子",
+   "难题",
+   "方向"
+  ],
+  "correct_answer": "难题",
+  "explanation": "«Надад хэцүү асуудал» — 难题.",
+  "order_index": 10,
+  "id": "xinhsk3-l17-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l17-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他们向老师学习汉字。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэд хятад үсэг бичдэггүй.",
+   "Тэд багшаас хятад үсэг сурч байна.",
+   "Тэд багшид хятад үсэг заана.",
+   "Тэд багш руу явна."
+  ],
+  "correct_answer": "Тэд багшаас хятад үсэг сурч байна.",
+  "explanation": "向老师学习 — «багшаас суралцах».",
+  "order_index": 11,
+  "id": "xinhsk3-l17-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l17-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "别再向前走了。",
+   "别再前向走了。",
+   "向别再前走了。",
+   "别再走向前了。"
+  ],
+  "correct_answer": "别再向前走了。",
+  "explanation": "向 + чиглэл + үйл үг.",
+  "order_index": 12,
+  "id": "xinhsk3-l17-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l17-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你不是喜欢玩电脑吗？» хэлэгч юуг бодож байна?",
+  "options": [
+   "Чи компьютер тоглохгүй",
+   "Би компьютер тоглох дуртай",
+   "Мэдэхгүй",
+   "Чи компьютер тоглох дуртай шүү дээ"
+  ],
+  "correct_answer": "Чи компьютер тоглох дуртай шүү дээ",
+  "explanation": "不是…吗 нь батлах утгатай, сануулж байна.",
+  "order_index": 13,
+  "id": "xinhsk3-l17-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l17-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "你是不说今天有事吗？",
+   "你不是说今天吗有事？",
+   "你不是说今天有事吗？",
+   "你不是说今天有事？"
+  ],
+  "correct_answer": "你不是说今天有事吗？",
+  "explanation": "不是…吗 — төгсгөл нь 吗.",
+  "order_index": 14,
+  "id": "xinhsk3-l17-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l17-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我还没想好学什么，更没想好去哪个国家。» -д 更 юу заана вэ?",
+  "options": [
+   "Үгүйсгэл",
+   "Хоёр дахь хэсэг түвшин гүнзгийрүүлж байна",
+   "Хоёр хэсэг ижил",
+   "Хугацааны дараалал"
+  ],
+  "correct_answer": "Хоёр дахь хэсэг түвшин гүнзгийрүүлж байна",
+  "explanation": "…，更… — «бүр ч».",
+  "order_index": 15,
+  "id": "xinhsk3-l17-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l17-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "只有每天练习，才能进步。",
+   "只有每天练习，就能进步。",
+   "只有每天练习才，能进步。",
+   "只有每天练习，进步才能。"
+  ],
+  "correct_answer": "只有每天练习，才能进步。",
+  "explanation": "只有…，才… — 才 үйл үгийн өмнө.",
+  "order_index": 16,
+  "id": "xinhsk3-l17-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l17-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«只有你同意，我才去。» юу гэсэн үг вэ?",
+  "options": [
+   "Чи зөвшөөрөхгүй ч би явна",
+   "Би явахгүй",
+   "Бид хамт явна",
+   "Чи зөвшөөрвөл л би явна"
+  ],
+  "correct_answer": "Чи зөвшөөрвөл л би явна",
+  "explanation": "зөвхөн цорын ганц нөхцөл: чиний зөвшөөрөл.",
+  "order_index": 17,
+  "id": "xinhsk3-l17-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l17-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小雪的同学为什么害怕见李老师？",
+  "options": [
+   "他没带书",
+   "他迟到了",
+   "他做错了好几件事",
+   "他不喜欢李老师"
+  ],
+  "correct_answer": "他做错了好几件事",
+  "explanation": "«最近我做错了好几件事，我怕李老师生气».",
+  "order_index": 18,
+  "id": "xinhsk3-l17-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小雪认为为什么有的聪明人会在简单的事情上出错？",
+  "options": [
+   "老师不好",
+   "他们认为事情简单，就不认真",
+   "他们不聪明",
+   "他们太忙"
+  ],
+  "correct_answer": "他们认为事情简单，就不认真",
+  "explanation": "«因为他们认为事情简单，就不会认真去做了».",
+  "order_index": 19,
+  "id": "xinhsk3-l17-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：陈天中为什么还来图书馆学习？",
+  "options": [
+   "他想继续学习，还没想好学什么",
+   "他在找工作",
+   "他想玩电脑",
+   "他在等朋友"
+  ],
+  "correct_answer": "他想继续学习，还没想好学什么",
+  "explanation": "«还想继续学习…还没想好学什么，所以来图书馆看看».",
+  "order_index": 20,
+  "id": "xinhsk3-l17-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：李文建议陈天中去哪儿学中文？",
+  "options": [
+   "他自己的国家",
+   "小城市",
+   "没有建议",
+   "北京、上海这样的大城市"
+  ],
+  "correct_answer": "北京、上海这样的大城市",
+  "explanation": "«比如可以去北京、上海这样的大城市».",
+  "order_index": 21,
+  "id": "xinhsk3-l17-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：陈天中的手机怎么了？",
+  "options": [
+   "坏了",
+   "借给别人了",
+   "没电了，关机了",
+   "丢了"
+  ],
+  "correct_answer": "没电了，关机了",
+  "explanation": "«我的手机没电了».",
+  "order_index": 22,
+  "id": "xinhsk3-l17-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：同学们的选择有哪些？",
+  "options": [
+   "只有结婚",
+   "继续学习、出国留学、先找工作",
+   "只有工作",
+   "只有旅游"
+  ],
+  "correct_answer": "继续学习、出国留学、先找工作",
+  "explanation": "Гурван сонголт дурдсан.",
+  "order_index": 23,
+  "id": "xinhsk3-l17-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：陈天中认为怎么才能做出最合适的选择？",
+  "options": [
+   "想清楚自己真正喜欢什么",
+   "听别人的",
+   "多问老师",
+   "多找工作"
+  ],
+  "correct_answer": "想清楚自己真正喜欢什么",
+  "explanation": "«只有想清楚自己真正喜欢什么，才能做出最合适的选择».",
+  "order_index": 24,
+  "id": "xinhsk3-l17-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

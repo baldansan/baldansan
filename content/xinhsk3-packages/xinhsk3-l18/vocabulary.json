@@ -1,0 +1,292 @@
+[
+ {
+  "chinese": "怎样",
+  "pinyin": "zěnyàng",
+  "mongolian": "яаж, ямар байдлаар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请告诉我怎样去车站。",
+  "exampleMongolian": "Буудал руу яаж явахыг надад хэлээч.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "怎样去 / 怎样做"
+ },
+ {
+  "chinese": "过节",
+  "pinyin": "guòjié",
+  "mongolian": "баяр тэмдэглэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "春节到了，我们全家一起过节。",
+  "exampleMongolian": "Цагаан сар болж, бид бүх гэр бүлээрээ баяр тэмдэглэнэ.",
+  "pos": "үйл үг",
+  "collocations_zh": "回家过节 / 一起过节"
+ },
+ {
+  "chinese": "节",
+  "pinyin": "jié",
+  "mongolian": "баяр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "街上有很多人，好像在过节。",
+  "exampleMongolian": "Гудамжинд олон хүн байна, баяр тэмдэглэж байгаа юм шиг.",
+  "pos": "нэр үг",
+  "collocations_zh": "过节 / 春节"
+ },
+ {
+  "chinese": "节日",
+  "pinyin": "jiérì",
+  "mongolian": "баярын өдөр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "每个国家都有自己特别的节日。",
+  "exampleMongolian": "Улс бүр өөрийн онцгой баяртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个节日 / 重要节日"
+ },
+ {
+  "chinese": "联欢",
+  "pinyin": "liánhuān",
+  "mongolian": "хамтдаа хөгжилдөх, цуглаж найрлах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "过春节的时候，大家会一起看春节联欢晚会。",
+  "exampleMongolian": "Цагаан сарын үеэр бүгд хамтдаа Цагаан сарын цэнгээний үдшийг үздэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "联欢会 / 春节联欢晚会"
+ },
+ {
+  "chinese": "大概",
+  "pinyin": "dàgài",
+  "mongolian": "магадгүй; ойролцоогоор",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他看起来大概七八岁。",
+  "exampleMongolian": "Тэр долоо найман настай юм шиг харагдаж байна.",
+  "pos": "дайвар үг/тэмдэг нэр",
+  "collocations_zh": "大概七八天"
+ },
+ {
+  "chinese": "春节",
+  "pinyin": "Chūnjié",
+  "mongolian": "Хятадын шинэ жил (Цагаан сар)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "春节是中国最重要的节日。",
+  "exampleMongolian": "Цагаан сар бол Хятадын хамгийн чухал баяр.",
+  "pos": "өмчийн нэр",
+  "collocations_zh": "过春节 / 春节快乐"
+ },
+ {
+  "chinese": "阿姨",
+  "pinyin": "āyí",
+  "mongolian": "авга эгч (ээжийн насны эмэгтэй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "李阿姨是医生，在医院工作。",
+  "exampleMongolian": "Ли авга эгч эмч, эмнэлэгт ажилладаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "李阿姨 / 这位阿姨"
+ },
+ {
+  "chinese": "叔叔",
+  "pinyin": "shūshu",
+  "mongolian": "авга ах (аавын насны эрэгтэй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的叔叔是一名医生。",
+  "exampleMongolian": "Миний авга ах эмч.",
+  "pos": "нэр үг",
+  "collocations_zh": "李叔叔 / 叔叔阿姨"
+ },
+ {
+  "chinese": "收",
+  "pinyin": "shōu",
+  "mongolian": "хүлээн авах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我今天收到了一封信。",
+  "exampleMongolian": "Би өнөөдөр нэг захидал хүлээн авлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "收到 / 收礼物 / 收下"
+ },
+ {
+  "chinese": "总",
+  "pinyin": "zǒng",
+  "mongolian": "байнга, үргэлж",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我总忘记带伞。",
+  "exampleMongolian": "Би үргэлж шүхрээ мартдаг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "总是 / 总听…说起"
+ },
+ {
+  "chinese": "起",
+  "pinyin": "qǐ",
+  "mongolian": "(үйл үгийн ард) -ийн тухай, дурдах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "说起中国菜，我最喜欢饺子。",
+  "exampleMongolian": "Хятад хоолны тухай ярихад би бууз хамгийн их дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "说起 / 想起 / 记起"
+ },
+ {
+  "chinese": "见面",
+  "pinyin": "jiànmiàn",
+  "mongolian": "уулзах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个周末我要跟好朋友见面。",
+  "exampleMongolian": "Энэ амралтаар би сайн найзтайгаа уулзана.",
+  "pos": "үйл үг",
+  "collocations_zh": "跟…见面 / 见面时间"
+ },
+ {
+  "chinese": "矿泉水",
+  "pinyin": "kuàngquánshuǐ",
+  "mongolian": "эрдэст ус",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请给我一瓶矿泉水。",
+  "exampleMongolian": "Надад нэг лонх эрдэст ус өгнө үү.",
+  "pos": "нэр үг",
+  "collocations_zh": "一瓶矿泉水 / 喝矿泉水"
+ },
+ {
+  "chinese": "刚刚",
+  "pinyin": "gānggāng",
+  "mongolian": "дөнгөж сая",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我刚刚吃完饭，你吃了吗？",
+  "exampleMongolian": "Би дөнгөж хоолоо идэж дууслаа, чи идсэн үү?",
+  "pos": "дайвар үг",
+  "collocations_zh": "刚刚来 / 刚刚学会"
+ },
+ {
+  "chinese": "出发",
+  "pinyin": "chūfā",
+  "mongolian": "хөдлөх, мордох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们明天出发去北京。",
+  "exampleMongolian": "Бид маргааш Бээжин рүү хөдөлнө.",
+  "pos": "үйл үг",
+  "collocations_zh": "马上出发 / 从…出发"
+ },
+ {
+  "chinese": "不久",
+  "pinyin": "bùjiǔ",
+  "mongolian": "удалгүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的朋友要回来了，我们不久就要见面了。",
+  "exampleMongolian": "Найз маань ирэх гэж байна, удахгүй уулзана.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "不久前 / 不久就…"
+ },
+ {
+  "chinese": "发生",
+  "pinyin": "fāshēng",
+  "mongolian": "болох, тохиолдох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这里发生了什么事？",
+  "exampleMongolian": "Энд юу болсон бэ?",
+  "pos": "үйл үг",
+  "collocations_zh": "发生事情 / 发生变化"
+ },
+ {
+  "chinese": "刚",
+  "pinyin": "gāng",
+  "mongolian": "дөнгөж",
+  "hskLevel": "HSK3",
+  "exampleChinese": "飞机刚出发。",
+  "exampleMongolian": "Онгоц дөнгөж хөдөллөө.",
+  "pos": "дайвар үг",
+  "collocations_zh": "刚到 / 刚走"
+ },
+ {
+  "chinese": "只要",
+  "pinyin": "zhǐyào",
+  "mongolian": "зөвхөн … л бол",
+  "hskLevel": "HSK3",
+  "exampleChinese": "只要明天不下雨，我们就去公园。",
+  "exampleMongolian": "Маргааш бороо ороогүй л бол бид паркт явна.",
+  "pos": "холбоо үг",
+  "collocations_zh": "只要…就…"
+ },
+ {
+  "chinese": "学期",
+  "pinyin": "xuéqī",
+  "mongolian": "улирал (хичээлийн)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个学期有很多中文课。",
+  "exampleMongolian": "Энэ улиралд хятад хэлний хичээл олон.",
+  "pos": "нэр үг",
+  "collocations_zh": "新学期 / 一个学期"
+ },
+ {
+  "chinese": "毕业",
+  "pinyin": "bìyè",
+  "mongolian": "төгсөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他是从北京大学毕业的。",
+  "exampleMongolian": "Тэр Бээжингийн их сургуулийг төгссөн.",
+  "pos": "үйл үг",
+  "collocations_zh": "大学毕业 / 马上毕业"
+ },
+ {
+  "chinese": "出生",
+  "pinyin": "chūshēng",
+  "mongolian": "төрөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你是什么时候出生的？",
+  "exampleMongolian": "Чи хэзээ төрсөн бэ?",
+  "pos": "үйл үг",
+  "collocations_zh": "出生在 / 出生于"
+ },
+ {
+  "chinese": "过去",
+  "pinyin": "guòqù",
+  "mongolian": "өнгөрсөн, өмнө нь",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是过去的事情了，不要难过。",
+  "exampleMongolian": "Энэ өнгөрсөн явдал, битгий гуниглаарай.",
+  "pos": "нэр үг",
+  "collocations_zh": "过去的故事"
+ },
+ {
+  "chinese": "懂得",
+  "pinyin": "dǒngde",
+  "mongolian": "ойлгох, мэдэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我懂得你的意思。",
+  "exampleMongolian": "Би чиний санааг ойлгож байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "懂得道理 / 懂得关心"
+ },
+ {
+  "chinese": "坚持",
+  "pinyin": "jiānchí",
+  "mongolian": "тууштай үргэлжлүүлэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我每天坚持练习中文。",
+  "exampleMongolian": "Би өдөр бүр хятад хэлээ тууштай дадлагажуулдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "坚持学习 / 坚持锻炼"
+ },
+ {
+  "chinese": "完成",
+  "pinyin": "wánchéng",
+  "mongolian": "биелүүлэх, дуусгах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "弟弟认真地完成了作业。",
+  "exampleMongolian": "Дүү даалгавраа анхааралтай дуусгав.",
+  "pos": "үйл үг",
+  "collocations_zh": "完成作业 / 完成目标"
+ },
+ {
+  "chinese": "目标",
+  "pinyin": "mùbiāo",
+  "mongolian": "зорилго",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的目标是学好中文。",
+  "exampleMongolian": "Миний зорилго хятад хэлийг сайн сурах.",
+  "pos": "нэр үг",
+  "collocations_zh": "学习目标 / 完成目标"
+ },
+ {
+  "chinese": "发展",
+  "pinyin": "fāzhǎn",
+  "mongolian": "хөгжих, хөгжүүлэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "中国发展得很快。",
+  "exampleMongolian": "Хятад хурдан хөгжиж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "发展得快 / 去大城市发展"
+ }
+]

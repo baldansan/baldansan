@@ -1,0 +1,262 @@
+[
+ {
+  "chinese": "蓝",
+  "pinyin": "lán",
+  "mongolian": "цэнхэр, хөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天天真蓝，我们一起出去玩吧！",
+  "exampleMongolian": "Өнөөдөр тэнгэр маш цэлмэг, хамт гадаа гарч тоглоё!",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "蓝色 / 蓝天"
+ },
+ {
+  "chinese": "段",
+  "pinyin": "duàn",
+  "mongolian": "хэсэг, мөч (цаг хугацаа, зам)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我搬到北京一段时间了。",
+  "exampleMongolian": "Би Бээжинд нүүж ирээд хэсэг хугацаа болж байна.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一段时间 / 一段路"
+ },
+ {
+  "chinese": "附近",
+  "pinyin": "fùjìn",
+  "mongolian": "ойр хавьд, ойролцоо",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们公司附近有一个小公园。",
+  "exampleMongolian": "Манай компанийн ойролцоо жижиг цэцэрлэгт хүрээлэн бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "小区附近"
+ },
+ {
+  "chinese": "马路",
+  "pinyin": "mǎlù",
+  "mongolian": "зам, гудамж",
+  "hskLevel": "HSK3",
+  "exampleChinese": "马路上有很多车。",
+  "exampleMongolian": "Замд олон машин байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "过马路 / 马路上"
+ },
+ {
+  "chinese": "平时",
+  "pinyin": "píngshí",
+  "mongolian": "ердийн үед, байнга",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我平时七点起床。",
+  "exampleMongolian": "Би ердийн өдрүүдэд долоон цагт босдог.",
+  "pos": "нэр үг",
+  "collocations_zh": "你平时…"
+ },
+ {
+  "chinese": "放学",
+  "pinyin": "fàngxué",
+  "mongolian": "хичээл тарах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "放学后我要回家写作业。",
+  "exampleMongolian": "Хичээл тарсны дараа би гэртээ харьж даалгавар хийнэ.",
+  "pos": "үйл үг",
+  "collocations_zh": "放学后 / 什么时候放学"
+ },
+ {
+  "chinese": "游戏",
+  "pinyin": "yóuxì",
+  "mongolian": "тоглоом",
+  "hskLevel": "HSK3",
+  "exampleChinese": "弟弟很喜欢玩电脑游戏。",
+  "exampleMongolian": "Дүү компьютер тоглоом тоглох их дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "玩游戏 / 电脑游戏"
+ },
+ {
+  "chinese": "老人",
+  "pinyin": "lǎorén",
+  "mongolian": "настай хүн, өвгөд хөгшид",
+  "hskLevel": "HSK3",
+  "exampleChinese": "很多老人喜欢早上去公园散步。",
+  "exampleMongolian": "Олон настай хүмүүс өглөө цэцэрлэгт хүрээлэнд алхах дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "一位老人 / 帮助老人"
+ },
+ {
+  "chinese": "根据",
+  "pinyin": "gēnjù",
+  "mongolian": "-ын дагуу, … дээр үндэслэн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "根据经理的要求，我们完成了工作。",
+  "exampleMongolian": "Менежерийн шаардлагын дагуу бид ажлаа дуусгасан.",
+  "pos": "угтвар үг",
+  "collocations_zh": "根据要求"
+ },
+ {
+  "chinese": "了解",
+  "pinyin": "liǎojiě",
+  "mongolian": "сайн мэдэх, ойлгох, судлах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我不了解北京的历史，可以给我介绍一下吗？",
+  "exampleMongolian": "Би Бээжингийн түүхийг сайн мэдэхгүй, надад танилцуулж өгч болох уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "非常了解 / 不了解"
+ },
+ {
+  "chinese": "可是",
+  "pinyin": "kěshì",
+  "mongolian": "гэвч, харин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我想去公园玩，可是外面下雨了。",
+  "exampleMongolian": "Би цэцэрлэгт хүрээлэн явж тоглохыг хүсэж байсан ч гадаа бороо орчихлоо.",
+  "pos": "холбоо үг",
+  "collocations_zh": "虽然…可是…"
+ },
+ {
+  "chinese": "以上",
+  "pinyin": "yǐshàng",
+  "mongolian": "түүнээс дээш",
+  "hskLevel": "HSK3",
+  "exampleChinese": "身高一米七以上的同学请站后面。",
+  "exampleMongolian": "Өндөр нь 1.70 болон түүнээс дээш сурагчид ард зогсоорой.",
+  "pos": "нэр үг",
+  "collocations_zh": "两千年以上 / 十个以上"
+ },
+ {
+  "chinese": "有名",
+  "pinyin": "yǒumíng",
+  "mongolian": "алдартай, нэртэй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她写了很多书，非常有名。",
+  "exampleMongolian": "Тэр олон ном бичсэн, маш алдартай.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很有名 / 有名的景点"
+ },
+ {
+  "chinese": "景点",
+  "pinyin": "jǐngdiǎn",
+  "mongolian": "үзмэр газар, жуулчны газар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "北京有很多有名的景点，比如长城。",
+  "exampleMongolian": "Бээжинд алдартай үзмэр газар олон, жишээ нь Их хэрэм.",
+  "pos": "нэр үг",
+  "collocations_zh": "旅游景点 / 有名的景点"
+ },
+ {
+  "chinese": "游客",
+  "pinyin": "yóukè",
+  "mongolian": "жуулчин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "南京每年都有很多游客来旅游。",
+  "exampleMongolian": "Нанкинд жил бүр олон жуулчин аялахаар ирдэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "很多游客 / 外国游客"
+ },
+ {
+  "chinese": "外地",
+  "pinyin": "wàidì",
+  "mongolian": "өөр хот, өөр нутаг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我是从外地来北京上学的。",
+  "exampleMongolian": "Би өөр хотоос Бээжинд сурахаар ирсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "外地人 / 去外地"
+ },
+ {
+  "chinese": "聊",
+  "pinyin": "liáo",
+  "mongolian": "хөөрөлдөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我想和你聊一聊。",
+  "exampleMongolian": "Би чамтай жаахан ярилцмаар байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "聊天儿 / 聊一聊"
+ },
+ {
+  "chinese": "南京",
+  "pinyin": "Nánjīng",
+  "mongolian": "Нанкин (хот)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我是在南京上的大学。",
+  "exampleMongolian": "Би Нанкинд их сургуульд сурсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "去南京 / 南京人"
+ },
+ {
+  "chinese": "河",
+  "pinyin": "hé",
+  "mongolian": "гол",
+  "hskLevel": "HSK3",
+  "exampleChinese": "公园附近有一条河。",
+  "exampleMongolian": "Цэцэрлэгт хүрээлэнгийн ойролцоо нэг гол байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "小河 / 河边 / 一条河"
+ },
+ {
+  "chinese": "关系",
+  "pinyin": "guānxì",
+  "mongolian": "харилцаа, холбоо",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她们的关系很好。",
+  "exampleMongolian": "Тэдний харилцаа сайн.",
+  "pos": "нэр үг",
+  "collocations_zh": "有关系 / 关系好"
+ },
+ {
+  "chinese": "养",
+  "pinyin": "yǎng",
+  "mongolian": "тэжээх, ургуулах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "爷爷喜欢养花养鱼。",
+  "exampleMongolian": "Өвөө цэцэг, загас тэжээх дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "养花 / 养动物"
+ },
+ {
+  "chinese": "黄河",
+  "pinyin": "Huáng Hé",
+  "mongolian": "Шар мөрөн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "黄河是中国一条很有名的大河。",
+  "exampleMongolian": "Шар мөрөн бол Хятадын нэг маш алдартай том гол.",
+  "pos": "нэр үг",
+  "collocations_zh": "黄河边"
+ },
+ {
+  "chinese": "西北",
+  "pinyin": "xīběi",
+  "mongolian": "баруун хойд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我家在中国的西北边。",
+  "exampleMongolian": "Манай гэр Хятадын баруун хойд хэсэгт.",
+  "pos": "нэр үг",
+  "collocations_zh": "西北边 / 西北风"
+ },
+ {
+  "chinese": "经过",
+  "pinyin": "jīngguò",
+  "mongolian": "дайран өнгөрөх; явц",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他从我家门口经过。",
+  "exampleMongolian": "Тэр манай гэрийн үүдээр өнгөрсөн.",
+  "pos": "үйл үг",
+  "collocations_zh": "经过超市 / 事情的经过"
+ },
+ {
+  "chinese": "草地",
+  "pinyin": "cǎodì",
+  "mongolian": "зүлэг, ногоон хээр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们坐在草地上聊天儿。",
+  "exampleMongolian": "Бид зүлэг дээр суугаад хөөрөлдөж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "草地上 / 一片草地"
+ },
+ {
+  "chinese": "遇见",
+  "pinyin": "yùjiàn",
+  "mongolian": "таарах, тохиолдох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我在公园遇见了老同学。",
+  "exampleMongolian": "Би цэцэрлэгт хүрээлэнд хуучин ангийнхантайгаа таарлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "遇见朋友"
+ }
+]

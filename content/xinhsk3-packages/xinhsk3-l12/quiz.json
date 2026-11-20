@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "突然________起风来了，可能会下雨。",
+  "options": [
+   "借",
+   "变",
+   "关注",
+   "刮"
+  ],
+  "correct_answer": "刮",
+  "explanation": "«Гэнэт салхилж эхэллээ» — 刮起风来.",
+  "order_index": 1,
+  "id": "xinhsk3-l12-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这________雨伞不大不小，可以放在书包里。",
+  "options": [
+   "件",
+   "块",
+   "把",
+   "条"
+  ],
+  "correct_answer": "把",
+  "explanation": "«Энэ шүхэр» — шүхрийн хэмжих үг 把.",
+  "order_index": 2,
+  "id": "xinhsk3-l12-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他每天都看新闻，很________天气的变化。",
+  "options": [
+   "变成",
+   "关注",
+   "借",
+   "刮"
+  ],
+  "correct_answer": "关注",
+  "explanation": "«Цаг агаарын өөрчлөлтийг анхаарч ажигладаг» — 关注.",
+  "order_index": 3,
+  "id": "xinhsk3-l12-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "秋天树上的叶子________了红色。",
+  "options": [
+   "变成",
+   "变化",
+   "刚才",
+   "季节"
+  ],
+  "correct_answer": "变成",
+  "explanation": "«Навч улаан болсон» — 变成了红色.",
+  "order_index": 4,
+  "id": "xinhsk3-l12-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "________还是晴天，怎么就下雨了？",
+  "options": [
+   "常常",
+   "四季",
+   "地方",
+   "刚才"
+  ],
+  "correct_answer": "刚才",
+  "explanation": "«Дөнгөж сая цэлмэг байсан» — 刚才.",
+  "order_index": 5,
+  "id": "xinhsk3-l12-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "一年有四个________：春、夏、秋、冬。",
+  "options": [
+   "新闻",
+   "工作日",
+   "季节",
+   "地方"
+  ],
+  "correct_answer": "季节",
+  "explanation": "«Жилд дөрвөн улирал» — 四个季节.",
+  "order_index": 6,
+  "id": "xinhsk3-l12-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我带了伞，可以________你一把。",
+  "options": [
+   "关注",
+   "借给",
+   "刮",
+   "变"
+  ],
+  "correct_answer": "借给",
+  "explanation": "«Чамд нэг шүхэр зээлүүлж болно» — 借给你.",
+  "order_index": 7,
+  "id": "xinhsk3-l12-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天是________，公园里人不多。",
+  "options": [
+   "工作日",
+   "季节",
+   "地方",
+   "四季"
+  ],
+  "correct_answer": "工作日",
+  "explanation": "«Өнөөдөр ажлын өдөр, хүн цөөн» — 工作日.",
+  "order_index": 8,
+  "id": "xinhsk3-l12-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "夏天白天很热，晚上比较________。",
+  "options": [
+   "变化",
+   "新闻",
+   "公园",
+   "凉快"
+  ],
+  "correct_answer": "凉快",
+  "explanation": "«Орой нэлээд сэрүүн» — 凉快.",
+  "order_index": 9,
+  "id": "xinhsk3-l12-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________和朋友一起去公园。",
+  "options": [
+   "变成",
+   "借",
+   "常常",
+   "刚才"
+  ],
+  "correct_answer": "常常",
+  "explanation": "«Найзуудтайгаа байнга цэцэрлэгт хүрээлэн явдаг» — 常常.",
+  "order_index": 10,
+  "id": "xinhsk3-l12-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Маргааш явна, эсвэл нөгөөдөр явна» — аль нь зөв бэ?",
+  "options": [
+   "还是明天去，还是后天去。",
+   "或者明天去，或者后天去。",
+   "或者明天去，后天去。",
+   "明天去或者，后天去或者。"
+  ],
+  "correct_answer": "或者明天去，或者后天去。",
+  "explanation": "或者 + A，或者 + B.",
+  "order_index": 11,
+  "id": "xinhsk3-l12-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«晚饭你自己选，________吃中国菜，________吃日本菜。» — хоосон зайд аль нь тохирох вэ?",
+  "options": [
+   "或者 … 或者",
+   "因为 … 所以",
+   "虽然 … 但是",
+   "不但 … 而且"
+  ],
+  "correct_answer": "或者 … 或者",
+  "explanation": "«Эсвэл … эсвэл …» — сонголтыг заана.",
+  "order_index": 12,
+  "id": "xinhsk3-l12-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бороо орж эхэллээ» — аль нь зөв бэ?",
+  "options": [
+   "雨起来下了。",
+   "雨下了起来。",
+   "下雨起来了。",
+   "雨下起来了。"
+  ],
+  "correct_answer": "雨下起来了。",
+  "explanation": "V + 起来 + 了: үйлдэл эхэлснийг заана.",
+  "order_index": 13,
+  "id": "xinhsk3-l12-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l12-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Яагаад гэнэт салхилж эхэлсэн юм бэ?» — аль нь зөв бэ?",
+  "options": [
+   "怎么突然刮起来风了？",
+   "怎么突然起来刮风了？",
+   "怎么突然刮起风来了？",
+   "怎么突然刮风起来了？"
+  ],
+  "correct_answer": "怎么突然刮起风来了？",
+  "explanation": "Объект (风) нь 起 ба 来-ийн дунд орно.",
+  "order_index": 14,
+  "id": "xinhsk3-l12-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l12-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр өчигдөр ердөө арван минут ном уншсан» — аль нь зөв бэ?",
+  "options": [
+   "就他昨天看了十分钟书。",
+   "他昨天就看了十分钟书。",
+   "他昨天看了就十分钟书。",
+   "他昨天看了十分钟就书。"
+  ],
+  "correct_answer": "他昨天就看了十分钟书。",
+  "explanation": "就 + V + тоо хэмжээ: цөөн гэж онцолно.",
+  "order_index": 15,
+  "id": "xinhsk3-l12-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би өдөр бүр шүхэр авч явдаг, зөвхөн өнөөдөр аваагүй» — аль нь зөв бэ?",
+  "options": [
+   "我每天都带伞，就今天没带。",
+   "我每天都带伞，今天不就带。",
+   "我每天就都带伞，今天没带。",
+   "就我每天都带伞，今天没带。"
+  ],
+  "correct_answer": "我每天都带伞，就今天没带。",
+  "explanation": "Онцгой тохиолдлыг заах 就 нь тэр нэр үгийн өмнө орно.",
+  "order_index": 16,
+  "id": "xinhsk3-l12-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这一年多住下来» гэдэгт 下来 юу илэрхийлэх вэ?",
+  "options": [
+   "Доош буух",
+   "Бороо орох",
+   "Эхлэх",
+   "Нэлээд хугацаа амьдарч үзсэний дараа"
+  ],
+  "correct_answer": "Нэлээд хугацаа амьдарч үзсэний дараа",
+  "explanation": "下来 нь хугацаа, хүч шаардсан үйлдлийг давж гарахыг заана.",
+  "order_index": 17,
+  "id": "xinhsk3-l12-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l12-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：这条街上的树怎么样？",
+  "options": [
+   "都黄了",
+   "都被风刮倒了",
+   "都开花了",
+   "很少"
+  ],
+  "correct_answer": "都开花了",
+  "explanation": "«这条街上的树都开花了».",
+  "order_index": 18,
+  "id": "xinhsk3-l12-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：她们今天为什么不去公园？",
+  "options": [
+   "公园太远",
+   "王老师下午有课",
+   "今天是休息日",
+   "下雨了"
+  ],
+  "correct_answer": "王老师下午有课",
+  "explanation": "«我今天下午有课，不能去太远的地方».",
+  "order_index": 19,
+  "id": "xinhsk3-l12-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一飞可以借给白家月什么？",
+  "options": [
+   "一把伞和一件雨衣",
+   "一本书",
+   "一辆车",
+   "一件大衣"
+  ],
+  "correct_answer": "一把伞和一件雨衣",
+  "explanation": "«我车里有一把伞和一件雨衣».",
+  "order_index": 20,
+  "id": "xinhsk3-l12-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一飞对什么还不太习惯？",
+  "options": [
+   "食物",
+   "工作",
+   "朋友",
+   "天气"
+  ],
+  "correct_answer": "天气",
+  "explanation": "«就是天气我还不太习惯».",
+  "order_index": 21,
+  "id": "xinhsk3-l12-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：白家月为什么喜欢冬天？",
+  "options": [
+   "有雨",
+   "放假",
+   "下雪的时候特别漂亮",
+   "不冷"
+  ],
+  "correct_answer": "下雪的时候特别漂亮",
+  "explanation": "«冬天虽然冷，但是下雪的时候特别漂亮».",
+  "order_index": 22,
+  "id": "xinhsk3-l12-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：王一飞觉得北京哪个季节最舒服？",
+  "options": [
+   "冬天",
+   "春天",
+   "夏天",
+   "秋天"
+  ],
+  "correct_answer": "春天",
+  "explanation": "«北京的春天最舒服，天气不冷不热».",
+  "order_index": 23,
+  "id": "xinhsk3-l12-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：王一飞为什么最不喜欢冬天？",
+  "options": [
+   "不但冷，而且风很大",
+   "没有雪",
+   "太短",
+   "太热"
+  ],
+  "correct_answer": "不但冷，而且风很大",
+  "explanation": "«冬天不但冷，而且风很大».",
+  "order_index": 24,
+  "id": "xinhsk3-l12-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

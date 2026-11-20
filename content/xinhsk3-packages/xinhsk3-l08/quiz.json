@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "你每天都来跑步，这个运动________真不错。",
+  "options": [
+   "方法",
+   "心里",
+   "病人",
+   "习惯"
+  ],
+  "correct_answer": "习惯",
+  "explanation": "«Дасгалын дадал үнэхээр сайн» — 习惯.",
+  "order_index": 1,
+  "id": "xinhsk3-l08-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我今年________了十多斤，不能再胖下去了。",
+  "options": [
+   "开",
+   "常",
+   "胖",
+   "低"
+  ],
+  "correct_answer": "胖",
+  "explanation": "«Арав гаруй жин таргалсан» — 胖了.",
+  "order_index": 2,
+  "id": "xinhsk3-l08-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的身体很________，不用担心。",
+  "options": [
+   "开心",
+   "健康",
+   "突然",
+   "其他"
+  ],
+  "correct_answer": "健康",
+  "explanation": "«Бие чинь маш эрүүл, санаа зовох хэрэггүй» — 健康.",
+  "order_index": 3,
+  "id": "xinhsk3-l08-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他今天________了，不能来上课。",
+  "options": [
+   "发烧",
+   "注意",
+   "出院",
+   "担心"
+  ],
+  "correct_answer": "发烧",
+  "explanation": "«Тэр өнөөдөр халуураад хичээлд ирж чадахгүй» — 发烧.",
+  "order_index": 4,
+  "id": "xinhsk3-l08-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你不接电话，我很________你。",
+  "options": [
+   "关心",
+   "习惯",
+   "注意",
+   "担心"
+  ],
+  "correct_answer": "担心",
+  "explanation": "«Чи утсаа авахгүй байна, би санаа зовж байна» — 担心.",
+  "order_index": 5,
+  "id": "xinhsk3-l08-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "外面________下雨了，我们回去吧。",
+  "options": [
+   "以后",
+   "心里",
+   "突然",
+   "最近"
+  ],
+  "correct_answer": "突然",
+  "explanation": "«Гадаа гэнэт бороо орлоо» — 突然.",
+  "order_index": 6,
+  "id": "xinhsk3-l08-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "医生给我________了几种药。",
+  "options": [
+   "常",
+   "开",
+   "种",
+   "得"
+  ],
+  "correct_answer": "开",
+  "explanation": "«Эмч надад хэдэн төрлийн эм бичиж өгсөн» — 开药.",
+  "order_index": 7,
+  "id": "xinhsk3-l08-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他的病好了，今天可以________回家了。",
+  "options": [
+   "出院",
+   "住院",
+   "发烧",
+   "感冒"
+  ],
+  "correct_answer": "出院",
+  "explanation": "«Өвчин нь эдгэрсэн тул өнөөдөр эмнэлгээс гарна» — 出院.",
+  "order_index": 8,
+  "id": "xinhsk3-l08-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们要找到学习的好________。",
+  "options": [
+   "病人",
+   "耳朵",
+   "体育馆",
+   "方法"
+  ],
+  "correct_answer": "方法",
+  "explanation": "«Сурах сайн арга» — 好方法.",
+  "order_index": 9,
+  "id": "xinhsk3-l08-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你还有________问题吗？",
+  "options": [
+   "其中",
+   "别人的",
+   "其他",
+   "其他们"
+  ],
+  "correct_answer": "其他",
+  "explanation": "«Өөр асуулт байна уу?» — 其他问题.",
+  "order_index": 10,
+  "id": "xinhsk3-l08-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«不能再胖下去了» — 下去 юуг илэрхийлж байна вэ?",
+  "options": [
+   "доош явна",
+   "таргалж байгаа байдал цааш үргэлжилнэ",
+   "таргалж эхэлнэ",
+   "таргалсан байдал дууссан"
+  ],
+  "correct_answer": "таргалж байгаа байдал цааш үргэлжилнэ",
+  "explanation": "V + 下去 нь эхэлсэн байдлын үргэлжлэлийг заана.",
+  "order_index": 11,
+  "id": "xinhsk3-l08-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "我想一直读下去。",
+   "我想一直下去读。",
+   "我想一直读了下去。",
+   "我想下去一直读。"
+  ],
+  "correct_answer": "我想一直读下去。",
+  "explanation": "下去 нь үйл үгийн шууд ард орно.",
+  "order_index": 12,
+  "id": "xinhsk3-l08-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Сэлж дууссаны дараа» — аль нь зөв бэ?",
+  "options": [
+   "游泳完以后",
+   "完游泳以后",
+   "游泳以后完",
+   "游完泳以后"
+  ],
+  "correct_answer": "游完泳以后",
+  "explanation": "Салдаг үг: нөхөлт 完 нь 游 ба 泳-ийн завсарт.",
+  "order_index": 13,
+  "id": "xinhsk3-l08-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь буруу вэ?",
+  "options": [
+   "小张结婚了。",
+   "小张结了婚。",
+   "小张结婚他女朋友。",
+   "小张跟他女朋友结婚。"
+  ],
+  "correct_answer": "小张结婚他女朋友。",
+  "explanation": "结婚 нь объектыг шууд авахгүй, 跟…结婚.",
+  "order_index": 14,
+  "id": "xinhsk3-l08-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l08-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«她回家两个月了» — юу гэсэн үг вэ?",
+  "options": [
+   "Тэр хоёр сар гэртээ байгаагүй.",
+   "Тэр гэртээ харьсан хойно хоёр сар болсон.",
+   "Тэр хоёр сар гэртээ байх болно.",
+   "Тэр хоёр сарын дараа гэртээ харина."
+  ],
+  "correct_answer": "Тэр гэртээ харьсан хойно хоёр сар болсон.",
+  "explanation": "回家 нь үргэлжилдэггүй үйл үг тул хугацаа нь хойших хугацааг хэлнэ.",
+  "order_index": 15,
+  "id": "xinhsk3-l08-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l08-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хоёр жилийн өмнө» гэж хэлэх үед аль нь зөв бэ?",
+  "options": [
+   "我来中国两年了。",
+   "我两年来中国了。",
+   "我来了两年中国。",
+   "我来中国了两年。"
+  ],
+  "correct_answer": "我来中国两年了。",
+  "explanation": "V + O + хугацаа + 了.",
+  "order_index": 16,
+  "id": "xinhsk3-l08-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«饭后» нь юу гэсэн үг вэ?",
+  "options": [
+   "хоолны өмнө",
+   "хооллох үед",
+   "хоолны газар",
+   "хоолны дараа"
+  ],
+  "correct_answer": "хоолны дараа",
+  "explanation": "后 = «дараа».",
+  "order_index": 17,
+  "id": "xinhsk3-l08-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Нэг эмийг унтахын өмнө уу» — аль нь зөв бэ?",
+  "options": [
+   "睡觉吃前一次",
+   "一次前睡吃",
+   "睡前吃一次",
+   "前睡吃一次"
+  ],
+  "correct_answer": "睡前吃一次",
+  "explanation": "睡前 — үйл явдал + 前.",
+  "order_index": 18,
+  "id": "xinhsk3-l08-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：陈天中每天下午在体育馆做什么？",
+  "options": [
+   "看比赛",
+   "跑一个小时步",
+   "打羽毛球",
+   "游泳"
+  ],
+  "correct_answer": "跑一个小时步",
+  "explanation": "«我每天下午都来跑一个小时步».",
+  "order_index": 19,
+  "id": "xinhsk3-l08-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：陈天中的耳朵为什么疼？",
+  "options": [
+   "游完泳以后",
+   "打球以后",
+   "睡觉以后",
+   "吃药以后"
+  ],
+  "correct_answer": "游完泳以后",
+  "explanation": "«昨天游完泳以后，耳朵一直有点儿疼».",
+  "order_index": 20,
+  "id": "xinhsk3-l08-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：如果下午还发烧，应该怎么办？",
+  "options": [
+   "回家休息",
+   "吃点儿药",
+   "打羽毛球",
+   "去看医生"
+  ],
+  "correct_answer": "去看医生",
+  "explanation": "«就一定要去看医生».",
+  "order_index": 21,
+  "id": "xinhsk3-l08-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：陈天中为什么住院？",
+  "options": [
+   "发高烧",
+   "胖了十多斤",
+   "腿疼了几个星期了",
+   "耳朵疼"
+  ],
+  "correct_answer": "腿疼了几个星期了",
+  "explanation": "«我的腿疼了几个星期了，医生说需要住院做检查».",
+  "order_index": 22,
+  "id": "xinhsk3-l08-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：陈天中上次来医院是什么时候？",
+  "options": [
+   "去年",
+   "差不多两年前",
+   "一个月前",
+   "几个星期前"
+  ],
+  "correct_answer": "差不多两年前",
+  "explanation": "«过去差不多两年了».",
+  "order_index": 23,
+  "id": "xinhsk3-l08-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：医生说什么最重要？",
+  "options": [
+   "多休息",
+   "多走路",
+   "多吃药",
+   "多运动"
+  ],
+  "correct_answer": "多休息",
+  "explanation": "«最重要的是多休息».",
+  "order_index": 24,
+  "id": "xinhsk3-l08-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：有一种药应该什么时候吃？",
+  "options": [
+   "饭后吃三次",
+   "早上吃",
+   "不用吃",
+   "睡前吃一次"
+  ],
+  "correct_answer": "睡前吃一次",
+  "explanation": "«有一种药需要每天睡前吃一次».",
+  "order_index": 25,
+  "id": "xinhsk3-l08-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "词典",
+  "pinyin": "cídiǎn",
+  "mongolian": "толь бичиг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "学习中文，你需要一本中文词典。",
+  "exampleMongolian": "Хятад хэл сурахад чамд хятад толь бичиг хэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "一本词典 / 电子词典"
+ },
+ {
+  "chinese": "最好",
+  "pinyin": "zuìhǎo",
+  "mongolian": "… нь хамгийн дээр, … хийсэн нь дээр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "外面冷，你最好多穿衣服。",
+  "exampleMongolian": "Гадаа хүйтэн, чи илүү ихийг өмссөн нь дээр.",
+  "pos": "дайвар үг",
+  "collocations_zh": "你最好…"
+ },
+ {
+  "chinese": "节",
+  "pinyin": "jié",
+  "mongolian": "хичээлийн цаг (хэмжих үг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "周一我有三节课。",
+  "exampleMongolian": "Даваа гарагт надад гурван цагийн хичээл бий.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一节课 / 一节历史课"
+ },
+ {
+  "chinese": "图书馆",
+  "pinyin": "túshūguǎn",
+  "mongolian": "номын сан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这本书是我在图书馆借的。",
+  "exampleMongolian": "Энэ номыг би номын сангаас зээлсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "去图书馆 / 图书馆网站"
+ },
+ {
+  "chinese": "被",
+  "pinyin": "bèi",
+  "mongolian": "-гд- (үйлдэгдэх хэлбэр)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我昨天买的西瓜被他们吃了。",
+  "exampleMongolian": "Миний өчигдөр авсан тарвасыг тэд идчихжээ.",
+  "pos": "угтвар үг",
+  "collocations_zh": "被别人借走了"
+ },
+ {
+  "chinese": "名人",
+  "pinyin": "míngrén",
+  "mongolian": "алдартай хүн",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢读名人的故事。",
+  "exampleMongolian": "Би алдартай хүмүүсийн түүх унших дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "一位名人 / 名人故事"
+ },
+ {
+  "chinese": "故事",
+  "pinyin": "gùshi",
+  "mongolian": "үлгэр, түүх, явдал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "妈妈常常给我讲故事。",
+  "exampleMongolian": "Ээж надад байнга үлгэр ярьж өгдөг.",
+  "pos": "нэр үг",
+  "collocations_zh": "讲故事 / 听故事"
+ },
+ {
+  "chinese": "然后",
+  "pinyin": "ránhòu",
+  "mongolian": "дараа нь, тэгээд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "下班以后，她先去了超市，然后去了公园。",
+  "exampleMongolian": "Ажлаас тарсны дараа тэр эхлээд дэлгүүр, дараа нь цэцэрлэгт хүрээлэн явсан.",
+  "pos": "холбоо үг",
+  "collocations_zh": "先…然后…"
+ },
+ {
+  "chinese": "报纸",
+  "pinyin": "bàozhǐ",
+  "mongolian": "сонин",
+  "hskLevel": "HSK3",
+  "exampleChinese": "爷爷喜欢看报纸。",
+  "exampleMongolian": "Өвөө сонин унших дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "看报纸 / 一张报纸"
+ },
+ {
+  "chinese": "忘记",
+  "pinyin": "wàngjì",
+  "mongolian": "мартах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他忘记了我的名字。",
+  "exampleMongolian": "Тэр миний нэрийг мартчихжээ.",
+  "pos": "үйл үг",
+  "collocations_zh": "忘记名字 / 别忘记"
+ },
+ {
+  "chinese": "电子书",
+  "pinyin": "diànzǐshū",
+  "mongolian": "цахим ном",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他用手机读电子书。",
+  "exampleMongolian": "Тэр утсаараа цахим ном уншдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "看电子书 / 一本电子书"
+ },
+ {
+  "chinese": "女生",
+  "pinyin": "nǚshēng",
+  "mongolian": "охин сурагч, охид",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们班有十五个女生。",
+  "exampleMongolian": "Манай ангид арван таван охин бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个女生 / 几个女生"
+ },
+ {
+  "chinese": "表演",
+  "pinyin": "biǎoyǎn",
+  "mongolian": "тоглох, тоглолт хийх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她在晚会上表演跳舞。",
+  "exampleMongolian": "Тэр үдэшлэг дээр бүжиг толгойлсон.",
+  "pos": "үйл үг",
+  "collocations_zh": "表演节目 / 看表演"
+ },
+ {
+  "chinese": "节目",
+  "pinyin": "jiémù",
+  "mongolian": "нэвтрүүлэг, тоглолтын дугаар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我准备表演一个节目。",
+  "exampleMongolian": "Би нэг дугаар тоглохоор бэлдсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个节目 / 电视节目"
+ },
+ {
+  "chinese": "怎么办",
+  "pinyin": "zěnme bàn",
+  "mongolian": "яах вэ, яавал дээр вэ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "下雨了我没带伞，怎么办？",
+  "exampleMongolian": "Бороо орчихлоо, би шүхэргүй, яах вэ?",
+  "pos": "хэллэг",
+  "collocations_zh": "怎么办？"
+ },
+ {
+  "chinese": "校长",
+  "pinyin": "xiàozhǎng",
+  "mongolian": "сургуулийн захирал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "校长对我们很好。",
+  "exampleMongolian": "Захирал бидэнд маш сайн.",
+  "pos": "нэр үг",
+  "collocations_zh": "一位校长 / 老校长"
+ },
+ {
+  "chinese": "面前",
+  "pinyin": "miànqián",
+  "mongolian": "өмнө, нүдэн дээр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "老师站在我们面前。",
+  "exampleMongolian": "Багш бидний өмнө зогсож байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "在…面前"
+ },
+ {
+  "chinese": "有些",
+  "pinyin": "yǒuxiē",
+  "mongolian": "жаахан, зарим талаар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她看起来有些不开心。",
+  "exampleMongolian": "Тэр жаахан баргар харагдаж байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "有些累 / 有些不开心"
+ },
+ {
+  "chinese": "相信",
+  "pinyin": "xiāngxìn",
+  "mongolian": "итгэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "爸爸妈妈一直相信我。",
+  "exampleMongolian": "Аав ээж намайг үргэлж итгэдэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "相信自己 / 不相信"
+ },
+ {
+  "chinese": "新年",
+  "pinyin": "xīnnián",
+  "mongolian": "шинэ жил",
+  "hskLevel": "HSK3",
+  "exampleChinese": "祝大家新年快乐。",
+  "exampleMongolian": "Бүгдэд шинэ жилийн мэнд хүргэе.",
+  "pos": "нэр үг",
+  "collocations_zh": "新年快乐 / 过新年"
+ },
+ {
+  "chinese": "班级",
+  "pinyin": "bānjí",
+  "mongolian": "анги, бүлэг (сургуулийн)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们班级有十五个女生。",
+  "exampleMongolian": "Манай ангид арван таван охин бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个班级"
+ },
+ {
+  "chinese": "跳",
+  "pinyin": "tiào",
+  "mongolian": "үсрэх; бүжиглэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她跳得很高。",
+  "exampleMongolian": "Тэр өндөр үсэрнэ.",
+  "pos": "үйл үг",
+  "collocations_zh": "跳起来 / 跳舞"
+ },
+ {
+  "chinese": "留学生",
+  "pinyin": "liúxuéshēng",
+  "mongolian": "гадаад оюутан, суралцагч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们学校有很多留学生。",
+  "exampleMongolian": "Манай сургуульд гадаад оюутан их.",
+  "pos": "нэр үг",
+  "collocations_zh": "一名留学生"
+ },
+ {
+  "chinese": "最后",
+  "pinyin": "zuìhòu",
+  "mongolian": "хамгийн сүүлд, эцэст нь",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是最后一节课了。",
+  "exampleMongolian": "Энэ бол сүүлчийн цаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "最后一个"
+ },
+ {
+  "chinese": "一块儿",
+  "pinyin": "yíkuàir",
+  "mongolian": "хамт, нэг дор",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们一块儿去学校。",
+  "exampleMongolian": "Бид хамт сургууль руу явна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "一块儿去 / 一块儿玩儿"
+ },
+ {
+  "chinese": "网站",
+  "pinyin": "wǎngzhàn",
+  "mongolian": "вэб сайт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是一个中文学习网站。",
+  "exampleMongolian": "Энэ бол хятад хэл сурах вэб сайт.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个网站 / 视频网站"
+ },
+ {
+  "chinese": "视频",
+  "pinyin": "shìpín",
+  "mongolian": "видео",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她喜欢用手机看视频。",
+  "exampleMongolian": "Тэр утсаараа видео үзэх дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "看视频 / 一段视频"
+ }
+]

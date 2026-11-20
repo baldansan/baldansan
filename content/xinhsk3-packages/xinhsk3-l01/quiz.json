@@ -1,15 +1,15 @@
 [
  {
   "type": "cloze",
-  "question": "我________今天不上课，所以没来。",
+  "question": "我________今天会下雨，所以带了伞。",
   "options": [
-   "觉得",
+   "发现",
    "应该",
    "帮助",
    "以为"
   ],
   "correct_answer": "以为",
-  "explanation": "«Өнөөдөр хичээлгүй гэж бодсон (гэтэл хичээлтэй байж)» — буруу гарсан бодол тул 以为.",
+  "explanation": "«Бороо орно гэж бодоод шүхэр авсан» — бодол тул 以为.",
   "order_index": 1,
   "id": "xinhsk3-l01-q01",
   "skillTags": [
@@ -20,15 +20,15 @@
  },
  {
   "type": "cloze",
-  "question": "你的________多吗？我帮你拿。",
+  "question": "她长得很________她妈妈。",
   "options": [
-   "头发",
-   "号码",
-   "行李",
-   "照片"
+   "瘦",
+   "短",
+   "像",
+   "接"
   ],
-  "correct_answer": "行李",
-  "explanation": "«Ачаа чинь их үү? Би бариад өгье» — 行李.",
+  "correct_answer": "像",
+  "explanation": "«Тэр ээжтэйгээ их төстэй» — 长得像.",
   "order_index": 2,
   "id": "xinhsk3-l01-q02",
   "skillTags": [
@@ -39,15 +39,15 @@
  },
  {
   "type": "cloze",
-  "question": "别________，我们还有时间。",
+  "question": "往前走300________，你就能看见火车站。",
   "options": [
-   "发现",
-   "着急",
-   "重要",
-   "年轻"
+   "行李",
+   "米",
+   "身高",
+   "站"
   ],
-  "correct_answer": "着急",
-  "explanation": "«Битгий сандар, цаг байна» — 别着急.",
+  "correct_answer": "米",
+  "explanation": "«300 метр урагшаа яв» — хэмжих үг 米.",
   "order_index": 3,
   "id": "xinhsk3-l01-q03",
   "skillTags": [
@@ -58,15 +58,15 @@
  },
  {
   "type": "cloze",
-  "question": "出国的时候一定要带________。",
+  "question": "你太________了，要多吃点儿。",
   "options": [
-   "护照",
-   "箱子",
-   "服务台",
-   "中间"
+   "瘦",
+   "短",
+   "重要",
+   "年轻"
   ],
-  "correct_answer": "护照",
-  "explanation": "«Гадаадад гарахдаа паспортоо заавал авч яв» — 护照.",
+  "correct_answer": "瘦",
+  "explanation": "«Чи хэтэрхий туранхай байна, ахиу ид» — 瘦.",
   "order_index": 4,
   "id": "xinhsk3-l01-q04",
   "skillTags": [
@@ -77,15 +77,15 @@
  },
  {
   "type": "cloze",
-  "question": "她的________又黑又长，很漂亮。",
+  "question": "下午四点，我要去机场________我朋友。",
   "options": [
-   "身高",
-   "照片",
-   "行李",
-   "头发"
+   "丢",
+   "像",
+   "发现",
+   "接"
   ],
-  "correct_answer": "头发",
-  "explanation": "«Үс нь хар, урт» — 头发.",
+  "correct_answer": "接",
+  "explanation": "«Онгоцны буудал руу найзаа тосохоор явна» — 接.",
   "order_index": 5,
   "id": "xinhsk3-l01-q05",
   "skillTags": [
@@ -96,34 +96,34 @@
  },
  {
   "type": "cloze",
-  "question": "我________我的手机不见了。",
+  "question": "我的笔________了，你看见了吗？",
   "options": [
-   "接",
    "站",
-   "发现",
-   "帮助"
+   "像",
+   "丢",
+   "带"
   ],
-  "correct_answer": "发现",
-  "explanation": "«Утас маань алга болсныг анзаарлаа» — 发现.",
+  "correct_answer": "丢",
+  "explanation": "«Миний үзэг гээгдчихлээ» — 丢了.",
   "order_index": 6,
   "id": "xinhsk3-l01-q06",
   "skillTags": [
    "vocabulary",
    "xinhsk3-l01-words"
   ],
-  "difficulty": "medium"
+  "difficulty": "easy"
  },
  {
   "type": "cloze",
-  "question": "明天上午我去机场________你。",
+  "question": "我知道姐姐的电话________。",
   "options": [
-   "像",
-   "接",
-   "带",
-   "丢"
+   "箱子",
+   "号码",
+   "护照",
+   "行李"
   ],
-  "correct_answer": "接",
-  "explanation": "«Маргааш өглөө буудлаас чамайг тосно» — 接.",
+  "correct_answer": "号码",
+  "explanation": "«Эгчийн утасны дугаарыг мэднэ» — 电话号码.",
   "order_index": 7,
   "id": "xinhsk3-l01-q07",
   "skillTags": [
@@ -134,15 +134,15 @@
  },
  {
   "type": "cloze",
-  "question": "这件事非常________，你别忘了。",
+  "question": "手表不见了，弟弟很________。",
   "options": [
-   "重要",
    "着急",
-   "短",
-   "瘦"
+   "重要",
+   "年轻",
+   "应该"
   ],
-  "correct_answer": "重要",
-  "explanation": "«Энэ хэрэг маш чухал, битгий мартаарай» — 重要.",
+  "correct_answer": "着急",
+  "explanation": "«Бугуйн цаг алга болоод дүү сандарч байна» — 着急.",
   "order_index": 8,
   "id": "xinhsk3-l01-q08",
   "skillTags": [
@@ -153,34 +153,34 @@
  },
  {
   "type": "cloze",
-  "question": "请大家________在中间，我们照一张照片。",
+  "question": "他站在同学们________。",
   "options": [
-   "带",
-   "接",
-   "丢",
-   "站"
+   "服务台",
+   "身高",
+   "头发",
+   "中间"
   ],
-  "correct_answer": "站",
-  "explanation": "«Бүгд дунд нь зогсоорой» — 站在中间.",
+  "correct_answer": "中间",
+  "explanation": "«Тэр ангийнхаа дунд зогсож байна» — 中间.",
   "order_index": 9,
   "id": "xinhsk3-l01-q09",
   "skillTags": [
    "vocabulary",
    "xinhsk3-l01-words"
   ],
-  "difficulty": "medium"
+  "difficulty": "easy"
  },
  {
   "type": "cloze",
-  "question": "谢谢你的________，我的箱子找到了。",
+  "question": "谢谢你________我。",
   "options": [
    "以为",
-   "号码",
+   "应该",
    "帮助",
    "发现"
   ],
   "correct_answer": "帮助",
-  "explanation": "«Тусалсанд баярлалаа» — 你的帮助.",
+  "explanation": "«Надад тусалсанд баярлалаа» — 帮助我.",
   "order_index": 10,
   "id": "xinhsk3-l01-q10",
   "skillTags": [
@@ -191,14 +191,14 @@
  },
  {
   "type": "multiple_choice",
-  "question": "«你看起来很累。» гэдэг юу гэсэн үг вэ?",
+  "question": "«这些菜看起来都很好吃。» гэдэг юу гэсэн үг вэ?",
   "options": [
-   "Чи ядрах хэрэггүй.",
-   "Чи ядарсан харагдаж байна.",
-   "Чи их ядарсан уу?",
-   "Чи намайг харж байна уу?"
+   "Эдгээр хоолыг хэн хийсэн бэ?",
+   "Эдгээр хоол бүгд амттай харагдаж байна.",
+   "Эдгээр хоолыг би бүгдийг идсэн.",
+   "Эдгээр хоол хэт халуун байна."
   ],
-  "correct_answer": "Чи ядарсан харагдаж байна.",
+  "correct_answer": "Эдгээр хоол бүгд амттай харагдаж байна.",
   "explanation": "看起来 — хараад төрсөн сэтгэгдэл: «… харагдаж байна».",
   "order_index": 11,
   "id": "xinhsk3-l01-q11",
@@ -212,13 +212,13 @@
   "type": "multiple_choice",
   "question": "Аль өгүүлбэр зөв бэ?",
   "options": [
-   "这个箱子看上去很新。",
-   "这个箱子很新看上去。",
-   "这个看上去箱子很新。",
-   "看箱子这个上去很新。"
+   "那个新来的老师看上去很年轻。",
+   "那个新来的老师很年轻看上去。",
+   "那个新来的老师看很年轻上去。",
+   "看上去那个新来的老师年轻很。"
   ],
-  "correct_answer": "这个箱子看上去很新。",
-  "explanation": "Юм + 看上去 + ямар. 看上去 нь тэмдэг нэрийн өмнө орно.",
+  "correct_answer": "那个新来的老师看上去很年轻。",
+  "explanation": "Хэн + 看上去 + ямар. 看上去 нь тэмдэг нэрийн өмнө орно.",
   "order_index": 12,
   "id": "xinhsk3-l01-q12",
   "skillTags": [
@@ -229,7 +229,7 @@
  },
  {
   "type": "multiple_choice",
-  "question": "«我好像在哪儿见过他。» — 哪儿 ямар утгатай вэ?",
+  "question": "«我好像在哪儿看到过这个箱子。» — 哪儿 ямар утгатай вэ?",
   "options": [
    "хаана вэ?",
    "энд",
@@ -248,15 +248,15 @@
  },
  {
   "type": "multiple_choice",
-  "question": "Аль нь асуулт БИШ вэ?",
+  "question": "«你吃点儿什么再走吧。» — 什么 ямар утгатай вэ?",
   "options": [
-   "他是谁？",
-   "你去哪儿？",
-   "我想吃点儿什么。",
-   "你想吃什么？"
+   "хэзээ",
+   "хаана",
+   "ямар нэг юм",
+   "юу вэ?"
   ],
-  "correct_answer": "我想吃点儿什么。",
-  "explanation": "«Би юм идмээр байна» — 点儿-тэй, асуултын тэмдэггүй хүүрнэх өгүүлбэр.",
+  "correct_answer": "ямар нэг юм",
+  "explanation": "Хүүрнэх өгүүлбэрт 什么 «ямар нэг юм» гэсэн тодорхойгүй утгатай.",
   "order_index": 14,
   "id": "xinhsk3-l01-q14",
   "skillTags": [
@@ -267,14 +267,14 @@
  },
  {
   "type": "multiple_choice",
-  "question": "«Хэзээ нэг өдөр хамт кино үзье» гэхэд аль нь тохирох вэ?",
+  "question": "«Хэзээ нэг өдөр хамт хөл бөмбөг тоглоцгооё» гэхэд аль нь тохирох вэ?",
   "options": [
-   "一起哪天看电影呢？",
-   "哪天一起看电影吧。",
-   "哪天一起看电影吗？",
-   "什么天一起看电影吧。"
+   "一起我们哪天去踢足球呢？",
+   "我们哪天一起去踢足球吧。",
+   "我们哪天一起去踢足球吗？",
+   "我们什么天一起去踢足球吧。"
   ],
-  "correct_answer": "哪天一起看电影吧。",
+  "correct_answer": "我们哪天一起去踢足球吧。",
   "explanation": "哪天 — «хэзээ нэг өдөр»; санал болгож байгаа тул 吧.",
   "order_index": 15,
   "id": "xinhsk3-l01-q15",
@@ -343,15 +343,15 @@
  },
  {
   "type": "multiple_choice",
-  "question": "«一米七» гэдэг нь хэд вэ?",
+  "question": "«一米八» гэдэг нь хэд вэ?",
   "options": [
-   "7.1 м",
-   "1.70 м",
-   "1.07 м",
-   "17 м"
+   "8.1 м",
+   "1.80 м",
+   "1.08 м",
+   "18 м"
   ],
-  "correct_answer": "1.70 м",
-  "explanation": "Өндрийг хэлэхдээ сүүлийн «十»-г орхидог: 一米七 = 1.70 м.",
+  "correct_answer": "1.80 м",
+  "explanation": "Өндрийг хэлэхдээ сүүлийн «十»-г орхидог: 一米八 = 1.80 м.",
   "order_index": 19,
   "id": "xinhsk3-l01-q19",
   "skillTags": [
@@ -381,15 +381,15 @@
  },
  {
   "type": "multiple_choice",
-  "question": "课文1：小林以为手机上的人是谁？",
+  "question": "课文1：刘明为什么以为李文是杨同乐？",
   "options": [
-   "巴图的老师",
-   "巴图的同学",
-   "巴图的妈妈",
-   "巴图的哥哥"
+   "他们是同学",
+   "他们的衣服一样",
+   "他们都很高",
+   "他们看上去有点儿像"
   ],
-  "correct_answer": "巴图的哥哥",
-  "explanation": "«我还以为是你哥哥呢» — ах нь гэж андуурсан.",
+  "correct_answer": "他们看上去有点儿像",
+  "explanation": "«我还以为是同乐呢，他们看上去有点儿像» — харахад төстэй тул андуурсан.",
   "order_index": 21,
   "id": "xinhsk3-l01-q21",
   "skillTags": [
@@ -400,15 +400,15 @@
  },
  {
   "type": "multiple_choice",
-  "question": "课文2：苏和的箱子是什么颜色的？",
+  "question": "课文1：李文的身高是多少？",
   "options": [
-   "白色",
-   "黄色",
-   "红色",
-   "黑色"
+   "一米六",
+   "一米九",
+   "一米八",
+   "一米七"
   ],
-  "correct_answer": "红色",
-  "explanation": "«一个红色的大箱子» — улаан өнгийн том чемодан.",
+  "correct_answer": "一米八",
+  "explanation": "«身高有一米八» — нэг метр наян.",
   "order_index": 22,
   "id": "xinhsk3-l01-q22",
   "skillTags": [
@@ -419,15 +419,15 @@
  },
  {
   "type": "multiple_choice",
-  "question": "课文2：苏和的护照在哪儿？",
+  "question": "课文2：白家月的箱子是什么颜色的？",
   "options": [
-   "在飞机上",
-   "在他的包里",
-   "在箱子里",
-   "在服务台"
+   "黄色",
+   "黑色",
+   "红色",
+   "白色"
   ],
-  "correct_answer": "在他的包里",
-  "explanation": "«护照在我的包里» — цүнхэнд нь.",
+  "correct_answer": "黑色",
+  "explanation": "«是一个黑色的箱子» — хар өнгийн чемодан.",
   "order_index": 23,
   "id": "xinhsk3-l01-q23",
   "skillTags": [
@@ -438,17 +438,55 @@
  },
  {
   "type": "multiple_choice",
-  "question": "课文3：苏和的头发怎么样？",
+  "question": "课文2：他们拿着什么去服务台？",
   "options": [
-   "很短",
-   "很长",
-   "很白",
-   "很多"
+   "护照和机票",
+   "行李箱和手机",
+   "照片和名字",
+   "电话号码"
   ],
-  "correct_answer": "很短",
-  "explanation": "«苏和的头发很短» — үс нь богино.",
+  "correct_answer": "护照和机票",
+  "explanation": "«我们拿着护照和机票，去服务台问问吧».",
   "order_index": 24,
   "id": "xinhsk3-l01-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：刘明为什么要站到中间？",
+  "options": [
+   "他想看飞机",
+   "旁边人太多了",
+   "他累了",
+   "这样他们好找一些"
+  ],
+  "correct_answer": "这样他们好找一些",
+  "explanation": "«我们站到中间去吧，这样他们好找一些» — олоход хялбар болгохын тулд.",
+  "order_index": 25,
+  "id": "xinhsk3-l01-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：李文穿着什么颜色的衣服？",
+  "options": [
+   "红色",
+   "黄色",
+   "黑色",
+   "白色"
+  ],
+  "correct_answer": "黑色",
+  "explanation": "«穿着黑衣服的短头发的年轻人» — хар хувцас.",
+  "order_index": 26,
+  "id": "xinhsk3-l01-q26",
   "skillTags": [
    "reading",
    "text-comprehension"
@@ -457,17 +495,17 @@
  },
  {
   "type": "multiple_choice",
-  "question": "课文4：谁帮助苏和找到了箱子？",
+  "question": "课文4：李文回北京的路上花了多长时间？",
   "options": [
-   "巴图",
-   "小林",
-   "他妈妈",
-   "服务台的人"
+   "一天",
+   "十几个小时",
+   "几个小时",
+   "几十个小时"
   ],
-  "correct_answer": "服务台的人",
-  "explanation": "«服务台的人帮助我找了半个小时» — лавлахын хүмүүс.",
-  "order_index": 25,
-  "id": "xinhsk3-l01-q25",
+  "correct_answer": "十几个小时",
+  "explanation": "«路上花了十几个小时» — арав гаруй цаг.",
+  "order_index": 27,
+  "id": "xinhsk3-l01-q27",
   "skillTags": [
    "reading",
    "text-comprehension"

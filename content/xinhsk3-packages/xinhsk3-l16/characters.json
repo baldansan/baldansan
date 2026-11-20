@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "脚",
+   "pinyin": [
+    "jiǎo"
+   ],
+   "strokeCount": 11,
+   "radical": "月",
+   "practice": "write",
+   "meaningMn": "хөл",
+   "etymology_mn": "月 (мах, бие) + 却: биеийн доод хэсэг",
+   "exampleWords": [
+    "一只脚",
+    "右脚"
+   ]
+  },
+  {
+   "hanzi": "脸",
+   "pinyin": [
+    "liǎn"
+   ],
+   "strokeCount": 11,
+   "radical": "月",
+   "practice": "write",
+   "meaningMn": "нүүр",
+   "etymology_mn": "月 (бие) + 佥: биеийн нүүр царайны хэсэг",
+   "exampleWords": [
+    "洗脸",
+    "脸上"
+   ]
+  },
+  {
+   "hanzi": "嘴",
+   "pinyin": [
+    "zuǐ"
+   ],
+   "strokeCount": 15,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "ам",
+   "etymology_mn": "口 (ам) + 觜: шувууны хошуунаас ам болсон",
+   "exampleWords": [
+    "张嘴",
+    "嘴巴"
+   ]
+  },
+  {
+   "hanzi": "饱",
+   "pinyin": [
+    "bǎo"
+   ],
+   "strokeCount": 8,
+   "radical": "饣",
+   "practice": "write",
+   "meaningMn": "цатгалан",
+   "etymology_mn": "饣 (хоол) + 包: хоолоор дүүрсэн",
+   "exampleWords": [
+    "吃饱",
+    "饱了"
+   ]
+  },
+  {
+   "hanzi": "张",
+   "pinyin": [
+    "zhāng"
+   ],
+   "strokeCount": 7,
+   "radical": "弓",
+   "practice": "write",
+   "meaningMn": "ангайх; хэмжих үг",
+   "etymology_mn": "弓 (нум) + 长: нум татаж дэлгэх",
+   "exampleWords": [
+    "张嘴",
+    "一张照片"
+   ]
+  },
+  {
+   "hanzi": "熊",
+   "pinyin": [
+    "xióng"
+   ],
+   "strokeCount": 14,
+   "radical": "灬",
+   "practice": "write",
+   "meaningMn": "баавгай",
+   "etymology_mn": "能 (чадвар) + 灬 (дөрвөн цэг): 熊 нь 能-ээс дөрвөн цэгээр ялгагдана",
+   "exampleWords": [
+    "大熊猫",
+    "熊猫"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "能",
+   "b": "熊",
+   "word_a": "只能",
+   "word_b": "大熊猫",
+   "mn": "能 — чадах; 熊 — баавгай",
+   "tip_mn": "熊 нь 能-ийн доор дөрвөн цэг (灬) нэмсэн. «Дөрвөн цэгтэй нь баавгай (熊)» гэж санаарай."
+  },
+  {
+   "a": "饱",
+   "b": "包",
+   "word_a": "吃饱",
+   "word_b": "书包",
+   "mn": "饱 — цатгалан; 包 — боох, цүнх",
+   "tip_mn": "Хоолтой холбоотой бол 饣 (хоолны радикал) нэмсэн 饱. 包 ганцаараа бол цүнх, боов."
+  },
+  {
+   "a": "张",
+   "b": "长",
+   "word_a": "一张照片",
+   "word_b": "校长",
+   "mn": "张 — ангайх, хэмжих үг; 长 — өсөх, ахлагч",
+   "tip_mn": "张 нь 弓 (нум) нэмсэн: ангайх, дэлгэх. 长 (zhǎng) нь 校长, 长大-д орно; 很长-д cháng гэж уншдаг."
+  },
+  {
+   "a": "园",
+   "b": "圆",
+   "word_a": "动物园",
+   "word_b": "圆圈",
+   "mn": "园 — цэцэрлэг, хүрээлэн; 圆 — дугуй",
+   "tip_mn": "Хоёулаа 囗 хашаатай. 园 дотор 元, 圆 дотор 员. 动物园 «хүрээлэн» гэсэн утгаар."
+  }
+ ]
+}

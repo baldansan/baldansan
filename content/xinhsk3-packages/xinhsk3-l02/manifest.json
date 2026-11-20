@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "xinhsk3",
+ "lessonId": "xinhsk3-l02",
+ "hskLevel": 3,
+ "lessonNumber": 2,
+ "lessonProfile": "hsk3-dialogue-reading-writing-review",
+ "lessonType": "hsk3-dialogue-reading-writing-review",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "你们想吃什么就点什么",
+ "mongolianTitle": "Юу идмээр байна тэрийгээ захиал",
+ "source": "新HSK教程3 (外研社, HSK 3.0) — 2-р хичээл: үг, 课文, дүрэм, дасгал сурах бичиг + 学练手册 + PPT-ээс; монгол орчуулга, тайлбар «Бөөндөө Сурцгаая»",
+ "hasAudio": false,
+ "hasImages": false,
+ "verification": {
+  "answerStatus": "textbook+ppt (OCR; хүн шалгаагүй)",
+  "textStatus": "textbook (新HSK教程3 课文, OCR)"
+ }
+}

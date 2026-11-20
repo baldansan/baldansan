@@ -1,0 +1,496 @@
+[
+ {
+  "type": "cloze",
+  "question": "我哥哥在上________。",
+  "options": [
+   "银行",
+   "花园",
+   "冰箱",
+   "初中"
+  ],
+  "correct_answer": "初中",
+  "explanation": "«Миний ах дунд сургуульд сурч байна» — 上初中.",
+  "order_index": 1,
+  "id": "xinhsk3-l03-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天我们________个饭店吃饭。",
+  "options": [
+   "办",
+   "关",
+   "换",
+   "搬"
+  ],
+  "correct_answer": "换",
+  "explanation": "«Өөр зоогийн газар хооллоё» — 换个饭店.",
+  "order_index": 2,
+  "id": "xinhsk3-l03-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请问________在哪里？",
+  "options": [
+   "空调",
+   "卫生间",
+   "冰箱",
+   "灯"
+  ],
+  "correct_answer": "卫生间",
+  "explanation": "«Жорлон хаана байна вэ?» — 卫生间.",
+  "order_index": 3,
+  "id": "xinhsk3-l03-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "出门前记得________灯。",
+  "options": [
+   "关",
+   "办",
+   "换",
+   "搬"
+  ],
+  "correct_answer": "关",
+  "explanation": "«Гарахаасаа өмнө гэрлээ унтраа» — 关灯.",
+  "order_index": 4,
+  "id": "xinhsk3-l03-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你去________一下教室吧。",
+  "options": [
+   "搬家",
+   "需要",
+   "听说",
+   "打扫"
+  ],
+  "correct_answer": "打扫",
+  "explanation": "«Ангиа цэвэрлэж ир» — 打扫.",
+  "order_index": 5,
+  "id": "xinhsk3-l03-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我昨天________了一张信用卡。",
+  "options": [
+   "换",
+   "关",
+   "办",
+   "还"
+  ],
+  "correct_answer": "办",
+  "explanation": "«Өчигдөр кредит карт нээлгэсэн» — 办信用卡.",
+  "order_index": 6,
+  "id": "xinhsk3-l03-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你什么时候去学校________书？",
+  "options": [
+   "关",
+   "还",
+   "才",
+   "办"
+  ],
+  "correct_answer": "还",
+  "explanation": "«Хэзээ ном буцааж өгөх вэ?» — 还书 (huán).",
+  "order_index": 7,
+  "id": "xinhsk3-l03-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他昨天晚上十二点________睡觉。",
+  "options": [
+   "才",
+   "就",
+   "挺",
+   "还"
+  ],
+  "correct_answer": "才",
+  "explanation": "«Арван хоёр цагт л унтсан» — хожуу тул 才.",
+  "order_index": 8,
+  "id": "xinhsk3-l03-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "桌上有三张白________。",
+  "options": [
+   "灯",
+   "层",
+   "卡",
+   "纸"
+  ],
+  "correct_answer": "纸",
+  "explanation": "«Ширээн дээр гурван цагаан цаас байна» — 白纸.",
+  "order_index": 9,
+  "id": "xinhsk3-l03-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天天气________好，我们去外面玩吧。",
+  "options": [
+   "就",
+   "还",
+   "挺",
+   "才"
+  ],
+  "correct_answer": "挺",
+  "explanation": "«Өнөөдөр цаг агаар нэлээн сайхан» — 挺好.",
+  "order_index": 10,
+  "id": "xinhsk3-l03-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这个小区环境挺好的。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Энэ хороолол шинэ.",
+   "Энэ хороолол орчин нэлээн сайхан.",
+   "Энэ хороолол орчин муу.",
+   "Энэ хороолол холгүй."
+  ],
+  "correct_answer": "Энэ хороолол орчин нэлээн сайхан.",
+  "explanation": "挺…的 — «нэлээн …».",
+  "order_index": 11,
+  "id": "xinhsk3-l03-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这家饭馆的菜挺好吃的。",
+   "这家饭馆的菜好吃挺的。",
+   "这家饭馆的菜挺的好吃。",
+   "这家饭馆挺的菜好吃。"
+  ],
+  "correct_answer": "这家饭馆的菜挺好吃的。",
+  "explanation": "挺 + тэмдэг нэр + 的.",
+  "order_index": 12,
+  "id": "xinhsk3-l03-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我渴坏了。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би ундаа авсан.",
+   "Миний аяга эвдэрсэн.",
+   "Би цангахгүй байна.",
+   "Би цангаж үхлээ."
+  ],
+  "correct_answer": "Би цангаж үхлээ.",
+  "explanation": "Тэмдэг нэр + 坏了 — хэтрүүлсэн зэрэг.",
+  "order_index": 13,
+  "id": "xinhsk3-l03-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "今天搬家，我们都累很坏。",
+   "今天搬家，我们都累了坏。",
+   "今天搬家，我们都累坏了。",
+   "今天搬家，我们都坏累了。"
+  ],
+  "correct_answer": "今天搬家，我们都累坏了。",
+  "explanation": "累 + 坏了.",
+  "order_index": 14,
+  "id": "xinhsk3-l03-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我早上五点就起床了。» — 就 ямар утгатай вэ?",
+  "options": [
+   "зөвхөн",
+   "аль хэдийн, эрт",
+   "хожуу л",
+   "дахин"
+  ],
+  "correct_answer": "аль хэдийн, эрт",
+  "explanation": "就 нь үйлдэл эрт болсныг заана.",
+  "order_index": 15,
+  "id": "xinhsk3-l03-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«坐火车去北京，五个小时才能到。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Таван цагийн дараа л очно (удаан).",
+   "Таван цагт аль хэдийн очно.",
+   "Таван цагт явна.",
+   "Таван цагт очихгүй."
+  ],
+  "correct_answer": "Таван цагийн дараа л очно (удаан).",
+  "explanation": "才 нь удаан, хожуу гэсэн утга.",
+  "order_index": 16,
+  "id": "xinhsk3-l03-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь тохирох вэ? 走路几分钟________能到。",
+  "options": [
+   "才",
+   "挺",
+   "还",
+   "就"
+  ],
+  "correct_answer": "就",
+  "explanation": "Хэдхэн минут — хурдан гэж үзсэн тул 就.",
+  "order_index": 17,
+  "id": "xinhsk3-l03-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "还 ханз «还书» дотор яаж уншигдах вэ?",
+  "options": [
+   "huàn",
+   "hǎi",
+   "huán",
+   "hái"
+  ],
+  "correct_answer": "huán",
+  "explanation": "Буцааж өгөх утгатай үед huán.",
+  "order_index": 18,
+  "id": "xinhsk3-l03-q18",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "行 ханз «银行» дотор яаж уншигдах вэ?",
+  "options": [
+   "xìng",
+   "háng",
+   "xíng",
+   "hàng"
+  ],
+  "correct_answer": "háng",
+  "explanation": "银行 — yínháng; 行李 — xíngli.",
+  "order_index": 19,
+  "id": "xinhsk3-l03-q19",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l03-words"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：他们为什么要换房子？",
+  "options": [
+   "小雪的初中离家有点儿远",
+   "房子太小",
+   "房子太贵",
+   "小区环境不好"
+  ],
+  "correct_answer": "小雪的初中离家有点儿远",
+  "explanation": "«小雪的初中离家有点儿远，咱们换一个近点儿的房子吧».",
+  "order_index": 20,
+  "id": "xinhsk3-l03-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一雪不喜欢这个房子什么？",
+  "options": [
+   "房子里没有空调",
+   "小区太吵",
+   "离地铁站太远",
+   "她不喜欢住一层"
+  ],
+  "correct_answer": "她不喜欢住一层",
+  "explanation": "«我不喜欢住一层».",
+  "order_index": 21,
+  "id": "xinhsk3-l03-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：灯为什么开着？",
+  "options": [
+   "王一雪打开的",
+   "没有电",
+   "刘明走的时候忘关了",
+   "灯坏了"
+  ],
+  "correct_answer": "刘明走的时候忘关了",
+  "explanation": "«可能走的时候忘关了».",
+  "order_index": 22,
+  "id": "xinhsk3-l03-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：为什么不能洗衣服？",
+  "options": [
+   "没有时间",
+   "卫生间没打扫好",
+   "洗衣机坏了",
+   "没有水"
+  ],
+  "correct_answer": "卫生间没打扫好",
+  "explanation": "«卫生间没打扫好，还不能洗衣服».",
+  "order_index": 23,
+  "id": "xinhsk3-l03-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：刘明为什么今天不能去银行？",
+  "options": [
+   "他下午要去医院",
+   "他不喜欢银行",
+   "银行很远",
+   "他没有信用卡"
+  ],
+  "correct_answer": "他下午要去医院",
+  "explanation": "«我下午要去医院，很晚才能回来».",
+  "order_index": 24,
+  "id": "xinhsk3-l03-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：王一雪想什么时候搬家？",
+  "options": [
+   "这个星期",
+   "明天",
+   "下周",
+   "下个月"
+  ],
+  "correct_answer": "下个月",
+  "explanation": "«我觉得下个月才能搬家».",
+  "order_index": 25,
+  "id": "xinhsk3-l03-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：王一雪打算找谁搬家？",
+  "options": [
+   "同学",
+   "家人",
+   "搬家公司",
+   "朋友"
+  ],
+  "correct_answer": "搬家公司",
+  "explanation": "«我们应该找一家搬家公司».",
+  "order_index": 26,
+  "id": "xinhsk3-l03-q26",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

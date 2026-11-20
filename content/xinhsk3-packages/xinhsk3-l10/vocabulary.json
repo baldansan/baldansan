@@ -1,0 +1,282 @@
+[
+ {
+  "chinese": "数学",
+  "pinyin": "shùxué",
+  "mongolian": "математик",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天的数学作业我还没有做。",
+  "exampleMongolian": "Өнөөдрийн математикийн даалгаврыг би хараахан хийгээгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "数学书 / 学数学"
+ },
+ {
+  "chinese": "认真",
+  "pinyin": "rènzhēn",
+  "mongolian": "нухацтай, анхааралтай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "妹妹做事情很认真。",
+  "exampleMongolian": "Манай дүү юманд их нухацтай ханддаг.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很认真 / 认真看书"
+ },
+ {
+  "chinese": "笔记",
+  "pinyin": "bǐjì",
+  "mongolian": "хичээлийн тэмдэглэл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她正在认真地记笔记。",
+  "exampleMongolian": "Тэр анхааралтай тэмдэглэл хөтөлж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "记笔记 / 笔记本"
+ },
+ {
+  "chinese": "清楚",
+  "pinyin": "qīngchu",
+  "mongolian": "тодорхой; сайн мэдэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我看不清楚黑板上的字。",
+  "exampleMongolian": "Би самбар дээрх үсгийг тод харахгүй байна.",
+  "pos": "тэмдэг нэр / үйл үг",
+  "collocations_zh": "看清楚 / 看得清楚"
+ },
+ {
+  "chinese": "黑板",
+  "pinyin": "hēibǎn",
+  "mongolian": "самбар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "老师把生词写在黑板上了。",
+  "exampleMongolian": "Багш шинэ үгийг самбар дээр бичлээ.",
+  "pos": "нэр үг",
+  "collocations_zh": "一块黑板 / 黑板上"
+ },
+ {
+  "chinese": "把",
+  "pinyin": "bǎ",
+  "mongolian": "-ыг (үйлдлийн объектыг үйл үгийн өмнө гаргадаг угтвар үг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我把手机放在包里了。",
+  "exampleMongolian": "Би утсаа цүнхэндээ хийчихлээ.",
+  "pos": "угтвар үг",
+  "collocations_zh": "把…放在… / 把…还给…"
+ },
+ {
+  "chinese": "作业",
+  "pinyin": "zuòyè",
+  "mongolian": "гэрийн даалгавар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "昨天的作业你写完了吗？",
+  "exampleMongolian": "Өчигдрийн даалгавраа бичиж дуусгасан уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "写作业 / 数学作业"
+ },
+ {
+  "chinese": "遍",
+  "pinyin": "biàn",
+  "mongolian": "удаа (үйлдлийг эхнээс нь дуустал нэг дамжих)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请你读一遍课文。",
+  "exampleMongolian": "Хичээлийн текстийг нэг удаа уншаарай.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "读一遍 / 看一遍"
+ },
+ {
+  "chinese": "提高",
+  "pinyin": "tígāo",
+  "mongolian": "дээшлүүлэх, сайжруулах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "认真学习能提高成绩。",
+  "exampleMongolian": "Нухацтай сурвал дүн сайжирна.",
+  "pos": "үйл үг",
+  "collocations_zh": "提高成绩 / 努力提高"
+ },
+ {
+  "chinese": "历史",
+  "pinyin": "lìshǐ",
+  "mongolian": "түүх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "书里讲了很多中国的历史。",
+  "exampleMongolian": "Номд Хятадын түүхийг их ярьсан байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "中国历史 / 历史课"
+ },
+ {
+  "chinese": "难",
+  "pinyin": "nán",
+  "mongolian": "хэцүү",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个问题很难，我不会。",
+  "exampleMongolian": "Энэ асуулт их хэцүү, би мэдэхгүй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很难 / 不难"
+ },
+ {
+  "chinese": "要求",
+  "pinyin": "yāoqiú",
+  "mongolian": "шаардлага; шаардах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "老师要求今天下午交作业，我还没做完。",
+  "exampleMongolian": "Багш өнөөдөр үдээс хойш даалгавраа өгөхийг шаардсан, би дуусгаагүй байна.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "特别的要求 / 要求我们…"
+ },
+ {
+  "chinese": "差",
+  "pinyin": "chà",
+  "mongolian": "муу; дутах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的成绩很差。",
+  "exampleMongolian": "Миний дүн их муу.",
+  "pos": "тэмдэг нэр / үйл үг",
+  "collocations_zh": "很差 / 差五分十一点"
+ },
+ {
+  "chinese": "复习",
+  "pinyin": "fùxí",
+  "mongolian": "давтах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "回家后我要复习今天学习的内容。",
+  "exampleMongolian": "Гэртээ ирээд өнөөдөр сурсан зүйлээ давтана.",
+  "pos": "үйл үг",
+  "collocations_zh": "复习数学 / 认真复习"
+ },
+ {
+  "chinese": "外语",
+  "pinyin": "wàiyǔ",
+  "mongolian": "гадаад хэл",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他会说两种外语。",
+  "exampleMongolian": "Тэр хоёр гадаад хэлээр ярьдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "学外语 / 说外语"
+ },
+ {
+  "chinese": "当然",
+  "pinyin": "dāngrán",
+  "mongolian": "мэдээж",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我妈妈是中国人，我当然会说汉语。",
+  "exampleMongolian": "Ээж маань хятад хүн болохоор би мэдээж хятадаар ярьдаг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "当然可以 / 当然是"
+ },
+ {
+  "chinese": "遇到",
+  "pinyin": "yùdào",
+  "mongolian": "тааралдах, учрах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我在花园遇到了同学。",
+  "exampleMongolian": "Би цэцэрлэгт ангийнхаа хүүхэдтэй таарлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "遇到问题 / 遇到朋友"
+ },
+ {
+  "chinese": "办公室",
+  "pinyin": "bàngōngshì",
+  "mongolian": "ажлын өрөө, багшийн өрөө",
+  "hskLevel": "HSK3",
+  "exampleChinese": "老师不在办公室，他去上课了。",
+  "exampleMongolian": "Багш өрөөндөө алга, хичээл орохоор явсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "一间办公室 / 去办公室"
+ },
+ {
+  "chinese": "页",
+  "pinyin": "yè",
+  "mongolian": "хуудас",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请打开数学书第一页。",
+  "exampleMongolian": "Математикийн номынхоо эхний хуудсыг нээгээрэй.",
+  "pos": "хэмжих үг / нэр үг",
+  "collocations_zh": "第五页 / 每页"
+ },
+ {
+  "chinese": "对话",
+  "pinyin": "duìhuà",
+  "mongolian": "харилцан ярих; яриа",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们用中文对话。",
+  "exampleMongolian": "Бид хятадаар ярилцаж байна.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "用中文对话 / 一段对话"
+ },
+ {
+  "chinese": "明白",
+  "pinyin": "míngbai",
+  "mongolian": "ойлгох; ойлгомжтой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这件事我终于明白了。",
+  "exampleMongolian": "Энэ хэргийг би эцэст нь ойлголоо.",
+  "pos": "үйл үг / тэмдэг нэр",
+  "collocations_zh": "听明白 / 不明白"
+ },
+ {
+  "chinese": "讲",
+  "pinyin": "jiǎng",
+  "mongolian": "тайлбарлах, ярьж өгөх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我每天都会给妈妈讲学校里的事。",
+  "exampleMongolian": "Би өдөр бүр ээждээ сургуулийн явдлаа ярьж өгдөг.",
+  "pos": "үйл үг",
+  "collocations_zh": "讲一遍 / 讲题"
+ },
+ {
+  "chinese": "句",
+  "pinyin": "jù",
+  "mongolian": "өгүүлбэр, үгийн хэмжих үг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我会说几句中文。",
+  "exampleMongolian": "Би хэдэн өгүүлбэр хятадаар ярьж чадна.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一句话 / 每句"
+ },
+ {
+  "chinese": "句子",
+  "pinyin": "jùzi",
+  "mongolian": "өгүүлбэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个句子是什么意思？",
+  "exampleMongolian": "Энэ өгүүлбэр ямар утгатай вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "一个句子 / 很长的句子"
+ },
+ {
+  "chinese": "年级",
+  "pinyin": "niánjí",
+  "mongolian": "анги (түвшин)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你姐姐今年是高中几年级？",
+  "exampleMongolian": "Чиний эгч энэ жил ахлах сургуулийн хэддүгээр ангид вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "五年级 / 几年级"
+ },
+ {
+  "chinese": "后年",
+  "pinyin": "hòunián",
+  "mongolian": "нөгөөдүгээр жил",
+  "hskLevel": "HSK3",
+  "exampleChinese": "后年我想去中国。",
+  "exampleMongolian": "Нөгөөдүгээр жил би Хятад руу явмаар байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "后年上大学"
+ },
+ {
+  "chinese": "一般",
+  "pinyin": "yìbān",
+  "mongolian": "ихэвчлэн, ерөнхийдөө",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我晚饭一般不在家里吃。",
+  "exampleMongolian": "Би оройн хоолоо ихэвчлэн гэртээ иддэггүй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "一般来说 / 一般六点"
+ },
+ {
+  "chinese": "努力",
+  "pinyin": "nǔlì",
+  "mongolian": "хичээнгүй; хичээх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她是一个很努力的人。",
+  "exampleMongolian": "Тэр их хичээнгүй хүн.",
+  "pos": "тэмдэг нэр / үйл үг",
+  "collocations_zh": "努力学习 / 很努力"
+ }
+]

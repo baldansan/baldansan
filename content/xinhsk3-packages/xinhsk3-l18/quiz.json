@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "春节是中国最重要的________。",
+  "options": [
+   "学期",
+   "目标",
+   "过去",
+   "节日"
+  ],
+  "correct_answer": "节日",
+  "explanation": "«Цагаан сар бол Хятадын хамгийн чухал баяр» — 节日.",
+  "order_index": 1,
+  "id": "xinhsk3-l18-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "过年的时候，小孩子________会收到红包。",
+  "options": [
+   "起",
+   "收",
+   "总",
+   "刚"
+  ],
+  "correct_answer": "总",
+  "explanation": "«Хүүхдүүд үргэлж улаан дугтуй авдаг» — 总会.",
+  "order_index": 2,
+  "id": "xinhsk3-l18-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这是我给您准备的礼物，请您________下。",
+  "options": [
+   "总",
+   "收",
+   "起",
+   "刚"
+  ],
+  "correct_answer": "收",
+  "explanation": "«Хүлээн авна уу» — 收下.",
+  "order_index": 3,
+  "id": "xinhsk3-l18-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________来中国一个月，还不太习惯。",
+  "options": [
+   "刚",
+   "总",
+   "起",
+   "收"
+  ],
+  "correct_answer": "刚",
+  "explanation": "«Хятадад дөнгөж нэг сар болсон» — 刚来.",
+  "order_index": 4,
+  "id": "xinhsk3-l18-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个周末我要和好朋友________。",
+  "options": [
+   "出发",
+   "发生",
+   "坚持",
+   "见面"
+  ],
+  "correct_answer": "见面",
+  "explanation": "«Найзтайгаа уулзана» — 跟…见面.",
+  "order_index": 5,
+  "id": "xinhsk3-l18-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "明天早上六点，我们就要________去机场。",
+  "options": [
+   "出生",
+   "毕业",
+   "出发",
+   "发展"
+  ],
+  "correct_answer": "出发",
+  "explanation": "«Өглөө зургаан цагт нисэх буудал руу хөдөлнө» — 出发.",
+  "order_index": 6,
+  "id": "xinhsk3-l18-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这里________了什么事？大家都在看。",
+  "options": [
+   "完成",
+   "发生",
+   "发展",
+   "出生"
+  ],
+  "correct_answer": "发生",
+  "explanation": "«Энд юу болов?» — 发生.",
+  "order_index": 7,
+  "id": "xinhsk3-l18-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我每天________练习写汉字，现在写得越来越好了。",
+  "options": [
+   "坚持",
+   "完成",
+   "毕业",
+   "出发"
+  ],
+  "correct_answer": "坚持",
+  "explanation": "«Өдөр бүр тууштай бичдэг» — 坚持.",
+  "order_index": 8,
+  "id": "xinhsk3-l18-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的学习________是学好中文，然后去中国留学。",
+  "options": [
+   "节日",
+   "学期",
+   "过去",
+   "目标"
+  ],
+  "correct_answer": "目标",
+  "explanation": "«Миний зорилго» — 学习目标.",
+  "order_index": 9,
+  "id": "xinhsk3-l18-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她马上就要________了，想去北京工作。",
+  "options": [
+   "发展",
+   "过节",
+   "毕业",
+   "出生"
+  ],
+  "correct_answer": "毕业",
+  "explanation": "«Удахгүй төгсөх» — 毕业.",
+  "order_index": 10,
+  "id": "xinhsk3-l18-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l18-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«春节大概放七八天假。» -д «七八天» юу гэсэн үг вэ?",
+  "options": [
+   "Далан найман өдөр",
+   "Ойролцоогоор долоо найман өдөр",
+   "Долоон өдөр",
+   "Найман өдөр"
+  ],
+  "correct_answer": "Ойролцоогоор долоо найман өдөр",
+  "explanation": "Зэргэлдээ хоёр тоо — ойролцоо хэмжээ.",
+  "order_index": 11,
+  "id": "xinhsk3-l18-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l18-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "教室里来了五六个学生。",
+   "教室里来了六五个学生。",
+   "教室里来了五个六个学生。",
+   "教室里来了五六学生个。"
+  ],
+  "correct_answer": "教室里来了五六个学生。",
+  "explanation": "Жижиг тоо урд, хэмжих үг нэг л удаа.",
+  "order_index": 12,
+  "id": "xinhsk3-l18-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«请你再说一遍____的问题。» аль нь тохирох вэ?",
+  "options": [
+   "刚刚",
+   "刚",
+   "总",
+   "刚才"
+  ],
+  "correct_answer": "刚才",
+  "explanation": "的-ээр тодотгол болохоор 刚才.",
+  "order_index": 13,
+  "id": "xinhsk3-l18-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他____来北京两个月。» аль нь тохирох вэ?",
+  "options": [
+   "刚才的",
+   "总",
+   "刚刚",
+   "刚才"
+  ],
+  "correct_answer": "刚刚",
+  "explanation": "«Хоёр сар» нь хэдэн минут биш, 刚刚 тохирно.",
+  "order_index": 14,
+  "id": "xinhsk3-l18-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«只要你同意，我们就这么决定了。» -д «只要» ямар нөхцөл вэ?",
+  "options": [
+   "Хугацаа",
+   "Хангалттай нөхцөл",
+   "Цорын ганц нөхцөл",
+   "Үгүйсгэл"
+  ],
+  "correct_answer": "Хангалттай нөхцөл",
+  "explanation": "只要…就… — энэ нөхцөл л байхад хангалттай.",
+  "order_index": 15,
+  "id": "xinhsk3-l18-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "只要努力，就能成功。",
+   "只要努力，才能成功。",
+   "只要努力，成功才能。",
+   "就要努力，只能成功。"
+  ],
+  "correct_answer": "只要努力，就能成功。",
+  "explanation": "只要-тэй 就.",
+  "order_index": 16,
+  "id": "xinhsk3-l18-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«从明天起，我要早起。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Маргааш би эрт босно",
+   "Өчигдрөөс хойш би эрт босдог",
+   "Би эрт босдоггүй",
+   "Маргаашаас эхлэн би эрт босно"
+  ],
+  "correct_answer": "Маргаашаас эхлэн би эрт босно",
+  "explanation": "从…起 — «…-аас эхлэн».",
+  "order_index": 17,
+  "id": "xinhsk3-l18-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l18-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "从起那时，他努力学习。",
+   "起从那时，他努力学习。",
+   "从那时起，他就努力学习。",
+   "他从那时，起努力学习。"
+  ],
+  "correct_answer": "从那时起，他就努力学习。",
+  "explanation": "从 + цаг + 起，…",
+  "order_index": 18,
+  "id": "xinhsk3-l18-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l18-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：春节中国人一般怎么过？",
+  "options": [
+   "一个人过",
+   "回家，跟家人一起过",
+   "出去旅游",
+   "去朋友家"
+  ],
+  "correct_answer": "回家，跟家人一起过",
+  "explanation": "«我们一般会回家，跟家人一起过».",
+  "order_index": 19,
+  "id": "xinhsk3-l18-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：春节大概放几天假？",
+  "options": [
+   "七八天",
+   "三四天",
+   "一个月",
+   "两天"
+  ],
+  "correct_answer": "七八天",
+  "explanation": "«大概七八天».",
+  "order_index": 20,
+  "id": "xinhsk3-l18-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文家今天晚上吃什么？",
+  "options": [
+   "包子",
+   "面条儿",
+   "米饭",
+   "饺子"
+  ],
+  "correct_answer": "饺子",
+  "explanation": "«饺子很快就包好了».",
+  "order_index": 21,
+  "id": "xinhsk3-l18-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：白家月和李文妈妈在做什么？",
+  "options": [
+   "做饭",
+   "打电话",
+   "看李文的照片",
+   "看电视"
+  ],
+  "correct_answer": "看李文的照片",
+  "explanation": "Тэд зураг харж ярилцаж байна.",
+  "order_index": 22,
+  "id": "xinhsk3-l18-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：李文什么时候毕业？",
+  "options": [
+   "明年",
+   "一个学期以后",
+   "一个月以后",
+   "三四年以后"
+  ],
+  "correct_answer": "一个学期以后",
+  "explanation": "«还有最后一个学期就要毕业了».",
+  "order_index": 23,
+  "id": "xinhsk3-l18-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：李文为什么能得到出国留学的机会？",
+  "options": [
+   "成绩特别好",
+   "他有很多钱",
+   "他想学医",
+   "他是外国人"
+  ],
+  "correct_answer": "成绩特别好",
+  "explanation": "«因为成绩特别好，他得到了出国留学的机会».",
+  "order_index": 24,
+  "id": "xinhsk3-l18-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：白家月在李文身上学到什么了？",
+  "options": [
+   "要多吃饺子",
+   "要早点睡觉",
+   "要多旅游",
+   "只要坚持，就能完成目标"
+  ],
+  "correct_answer": "只要坚持，就能完成目标",
+  "explanation": "«只要一直坚持，就能完成自己的目标».",
+  "order_index": 25,
+  "id": "xinhsk3-l18-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

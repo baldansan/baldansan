@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "铁",
+   "pinyin": [
+    "tiě"
+   ],
+   "strokeCount": 10,
+   "radical": "钅",
+   "practice": "write",
+   "meaningMn": "төмөр",
+   "etymology_mn": "钅 (металл) + 失: төмөр. 高铁 — төмөр замын өндөр хурдны шугам",
+   "exampleWords": [
+    "高铁",
+    "地铁"
+   ]
+  },
+  {
+   "hanzi": "梯",
+   "pinyin": [
+    "tī"
+   ],
+   "strokeCount": 11,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "шат",
+   "etymology_mn": "木 (мод) + 弟: модон шат",
+   "exampleWords": [
+    "电梯",
+    "楼梯"
+   ]
+  },
+  {
+   "hanzi": "刷",
+   "pinyin": [
+    "shuā"
+   ],
+   "strokeCount": 8,
+   "radical": "刂",
+   "practice": "write",
+   "meaningMn": "сойз; уншуулах",
+   "etymology_mn": "刂 (хутга) + 尸...: хусах, сойздох хөдөлгөөн",
+   "exampleWords": [
+    "刷卡",
+    "刷护照"
+   ]
+  },
+  {
+   "hanzi": "急",
+   "pinyin": [
+    "jí"
+   ],
+   "strokeCount": 9,
+   "radical": "心",
+   "practice": "write",
+   "meaningMn": "сандрах",
+   "etymology_mn": "刍 + 心 (зүрх): зүрх хурдан цохилох — сандрах",
+   "exampleWords": [
+    "着急",
+    "别急"
+   ]
+  },
+  {
+   "hanzi": "越",
+   "pinyin": [
+    "yuè"
+   ],
+   "strokeCount": 12,
+   "radical": "走",
+   "practice": "write",
+   "meaningMn": "улам; давах",
+   "etymology_mn": "走 (алхах) + 戉: давж алхах — улам",
+   "exampleWords": [
+    "越来越",
+    "越过"
+   ]
+  },
+  {
+   "hanzi": "安",
+   "pinyin": [
+    "ān"
+   ],
+   "strokeCount": 6,
+   "radical": "宀",
+   "practice": "write",
+   "meaningMn": "тайван",
+   "etymology_mn": "宀 (дээвэр) + 女: гэрт эмэгтэй байвал тайван",
+   "exampleWords": [
+    "安静",
+    "平安"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "心",
+   "b": "必",
+   "word_a": "小心",
+   "word_b": "必须",
+   "mn": "心 — зүрх, сэтгэл; 必 — заавал",
+   "tip_mn": "心 нь 小心-д «зүрх» гэсэн утгатай, 必 дээр нэг зураас нэмэгдсэн: 必须 — «заавал»."
+  },
+  {
+   "a": "电",
+   "b": "由",
+   "word_a": "电梯",
+   "word_b": "自由",
+   "mn": "电 — цахилгаан; 由 — -аас, шалтгаан",
+   "tip_mn": "电-д доод талд бэхэлсэн дэгээ (乚) бий, 由-д үгүй."
+  },
+  {
+   "a": "梯",
+   "b": "弟",
+   "word_a": "电梯",
+   "word_b": "弟弟",
+   "mn": "梯 — шат; 弟 — дүү",
+   "tip_mn": "梯-д 木 (мод) нэмэгдсэн: модон шат. 弟 нь «дүү»."
+  },
+  {
+   "a": "安",
+   "b": "按",
+   "word_a": "安静",
+   "word_b": "按键",
+   "mn": "安 — тайван; 按 — дарах",
+   "tip_mn": "按-д 扌 (гар) байна: гараар дарах. 安-д 宀 (дээвэр)."
+  }
+ ]
+}

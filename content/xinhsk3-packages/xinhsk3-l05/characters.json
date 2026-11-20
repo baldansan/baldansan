@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "照",
+   "pinyin": [
+    "zhào"
+   ],
+   "strokeCount": 13,
+   "radical": "灬",
+   "practice": "write",
+   "meaningMn": "гэрэлтэх; зураг авах",
+   "etymology_mn": "灬 (гал) + 昭 (гэрэлтэй): гэрэл тусгах, зураг авах",
+   "exampleWords": [
+    "照片",
+    "拍照"
+   ]
+  },
+  {
+   "hanzi": "鞋",
+   "pinyin": [
+    "xié"
+   ],
+   "strokeCount": 15,
+   "radical": "革",
+   "practice": "write",
+   "meaningMn": "гутал",
+   "etymology_mn": "革 (арьс) + 圭: арьсаар хийсэн гутал",
+   "exampleWords": [
+    "运动鞋",
+    "鞋子"
+   ]
+  },
+  {
+   "hanzi": "爬",
+   "pinyin": [
+    "pá"
+   ],
+   "strokeCount": 8,
+   "radical": "爪",
+   "practice": "write",
+   "meaningMn": "авирах",
+   "etymology_mn": "爪 (сарвуу, хумс) + 巴: сарвуугаараа зууран авирах",
+   "exampleWords": [
+    "爬山",
+    "爬树"
+   ]
+  },
+  {
+   "hanzi": "树",
+   "pinyin": [
+    "shù"
+   ],
+   "strokeCount": 9,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "мод",
+   "etymology_mn": "木 (мод) + 对: мод суулгана",
+   "exampleWords": [
+    "树上",
+    "苹果树"
+   ]
+  },
+  {
+   "hanzi": "山",
+   "pinyin": [
+    "shān"
+   ],
+   "strokeCount": 3,
+   "radical": "山",
+   "practice": "write",
+   "meaningMn": "уул",
+   "etymology_mn": "Гурван оргилтой уулын дүрсээс үүссэн",
+   "exampleWords": [
+    "爬山",
+    "山上"
+   ]
+  },
+  {
+   "hanzi": "邮",
+   "pinyin": [
+    "yóu"
+   ],
+   "strokeCount": 8,
+   "radical": "阝",
+   "practice": "write",
+   "meaningMn": "шуудан",
+   "etymology_mn": "由 + 阝 (хот, суурин): суурин хооронд захидал дамжуулах",
+   "exampleWords": [
+    "邮件",
+    "邮局"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "晴",
+   "b": "情",
+   "word_a": "晴天",
+   "word_b": "热情",
+   "mn": "晴 — цэлмэг; 情 — сэтгэл, мэдрэмж",
+   "tip_mn": "晴-д 日 (нар) байна: нартай цэлмэг өдөр. 情-д 忄 (сэтгэл) байна: сэтгэлийн хөдөлгөөн."
+  },
+  {
+   "a": "干",
+   "b": "千",
+   "word_a": "干什么",
+   "word_b": "一千",
+   "mn": "干 — хийх; 千 — мянга",
+   "tip_mn": "千-ийн дээд талд налуу зураас гарсан, 干 нь дээд талдаа шулуун хоёр зураастай."
+  },
+  {
+   "a": "太",
+   "b": "大",
+   "word_a": "太阳",
+   "word_b": "大衣",
+   "mn": "太 — хэт, нар; 大 — том",
+   "tip_mn": "太 нь 大-ийн доор нэг цэг нэмсэн: «хэт том»."
+  },
+  {
+   "a": "树",
+   "b": "对",
+   "word_a": "树上",
+   "word_b": "对不起",
+   "mn": "树 — мод; 对 — зөв, -д",
+   "tip_mn": "树-д 木 (мод) байна, 对-д 又 байна."
+  }
+ ]
+}

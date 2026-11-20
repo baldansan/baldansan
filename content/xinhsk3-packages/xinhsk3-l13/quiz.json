@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "今天我________，你们想吃什么就点什么。",
+  "options": [
+   "做客",
+   "放心",
+   "感到",
+   "请客"
+  ],
+  "correct_answer": "请客",
+  "explanation": "«Өнөөдөр би дайлна» — дайлж буй хүн 请客.",
+  "order_index": 1,
+  "id": "xinhsk3-l13-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "南方菜和北方菜的________不同。",
+  "options": [
+   "文化",
+   "邻居",
+   "做法",
+   "地图"
+  ],
+  "correct_answer": "做法",
+  "explanation": "«Хийх арга нь өөр» — 做法.",
+  "order_index": 2,
+  "id": "xinhsk3-l13-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请你帮我________一点儿水。",
+  "options": [
+   "来自",
+   "加",
+   "放心",
+   "直到"
+  ],
+  "correct_answer": "加",
+  "explanation": "«Жаахан ус нэм» — 加水.",
+  "order_index": 3,
+  "id": "xinhsk3-l13-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "周末我要去朋友家________。",
+  "options": [
+   "做客",
+   "请客",
+   "聊天儿",
+   "一边"
+  ],
+  "correct_answer": "做客",
+  "explanation": "«Найзынхаа гэрт зочлох» — 去朋友家做客.",
+  "order_index": 4,
+  "id": "xinhsk3-l13-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们刚搬到这里，________都很热情。",
+  "options": [
+   "夫妻",
+   "画家",
+   "盘子",
+   "邻居"
+  ],
+  "correct_answer": "邻居",
+  "explanation": "«Хөршүүд нь найрсаг» — 邻居.",
+  "order_index": 5,
+  "id": "xinhsk3-l13-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "您________，我到了北京就给您打电话。",
+  "options": [
+   "直到",
+   "放",
+   "放心",
+   "感到"
+  ],
+  "correct_answer": "放心",
+  "explanation": "«Санаа амар, би очмогцоо залгана» — 放心.",
+  "order_index": 6,
+  "id": "xinhsk3-l13-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他把包________在椅子上。",
+  "options": [
+   "来自",
+   "放",
+   "加",
+   "点"
+  ],
+  "correct_answer": "放",
+  "explanation": "«Цүнхээ сандал дээр тавьсан» — 放在椅子上.",
+  "order_index": 7,
+  "id": "xinhsk3-l13-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "谢谢你送我的生日________。",
+  "options": [
+   "礼物",
+   "晚会",
+   "盘子",
+   "地图"
+  ],
+  "correct_answer": "礼物",
+  "explanation": "«Төрсөн өдрийн бэлэг» — 生日礼物.",
+  "order_index": 8,
+  "id": "xinhsk3-l13-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我喜欢________跑步，一边听音乐。",
+  "options": [
+   "一起",
+   "一点",
+   "一样",
+   "一边"
+  ],
+  "correct_answer": "一边",
+  "explanation": "«Гүйсээр хөгжим сонсох» — 一边…一边….",
+  "order_index": 9,
+  "id": "xinhsk3-l13-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她今天工作很忙，________晚上才回家。",
+  "options": [
+   "感到",
+   "不同",
+   "直到",
+   "来自"
+  ],
+  "correct_answer": "直到",
+  "explanation": "«Орой болтол дөнгөж харьсан» — 直到…才….",
+  "order_index": 10,
+  "id": "xinhsk3-l13-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "明天你有空的话，我们才去看电影。",
+   "明天你有空的话，我们就去看电影。",
+   "明天你有空，的话我们就去看电影。",
+   "明天你的话有空，我们去就看电影。"
+  ],
+  "correct_answer": "明天你有空的话，我们就去看电影。",
+  "explanation": "的话 нөхцөлийн төгсгөлд, 就 үр дүнгийн хэсэгт.",
+  "order_index": 11,
+  "id": "xinhsk3-l13-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你饿的话，就点外卖吧。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи өлссөн бол хоол захиалчих.",
+   "Чи өлсөхгүй бол хоол захиална.",
+   "Чи хоол захиалсан тул өлссөн.",
+   "Хоол захиалахаа больё."
+  ],
+  "correct_answer": "Чи өлссөн бол хоол захиалчих.",
+  "explanation": "…的话，就… — «… бол тэгвэл …».",
+  "order_index": 12,
+  "id": "xinhsk3-l13-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l13-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "的话 өгүүлбэрийн хаана орох вэ?",
+  "options": [
+   "Үр дүнгийн хэсгийн төгсгөлд",
+   "Өгүүлбэрийн эхэнд",
+   "Асуултын төгсгөлд",
+   "Нөхцөлийн хэсгийн төгсгөлд"
+  ],
+  "correct_answer": "Нөхцөлийн хэсгийн төгсгөлд",
+  "explanation": "的话 нь нөхцөлийн хэсгийг дуусгана: 你有时间的话，就来.",
+  "order_index": 13,
+  "id": "xinhsk3-l13-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "你声音把开得太大了。",
+   "把你声音开得太大了。",
+   "你把声音开得太大了。",
+   "你把开声音得太大了。"
+  ],
+  "correct_answer": "你把声音开得太大了。",
+  "explanation": "хэн + 把 + юм + үйл үг + 得 + байдлын нөхөлт.",
+  "order_index": 14,
+  "id": "xinhsk3-l13-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他把球踢进去了。» — 进去 нь юу вэ?",
+  "options": [
+   "Хэмжээний нөхөлт",
+   "Чиглэлийн нөхөлт",
+   "Үр дүнгийн нөхөлт",
+   "Чадварын нөхөлт"
+  ],
+  "correct_answer": "Чиглэлийн нөхөлт",
+  "explanation": "进去 — «орох» чиглэл. 把字句(4) чиглэлийн нөхөлттэй.",
+  "order_index": 15,
+  "id": "xinhsk3-l13-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l13-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хоолыг хөргөгчид хийчих» гэхэд аль нь зөв бэ?",
+  "options": [
+   "把菜放进冰箱里。",
+   "把菜进冰箱里放。",
+   "菜把放进冰箱里。",
+   "放把菜进冰箱里。"
+  ],
+  "correct_answer": "把菜放进冰箱里。",
+  "explanation": "把 + юм + үйл үг + чиглэл (进) + газар.",
+  "order_index": 16,
+  "id": "xinhsk3-l13-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "我喜欢一边跑步，听音乐一边。",
+   "我喜欢跑步一边，一边听音乐。",
+   "我喜欢一边跑步，然后听音乐。",
+   "我喜欢一边跑步，一边听音乐。"
+  ],
+  "correct_answer": "我喜欢一边跑步，一边听音乐。",
+  "explanation": "Хоёр үйлдэл хоёулаа 一边-тэй, үйл үгийн өмнө.",
+  "order_index": 17,
+  "id": "xinhsk3-l13-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«边…边…» ба «一边…一边…» ялгаа юу вэ?",
+  "options": [
+   "边 нь өнгөрсөн цагт л",
+   "一边 нь бичгийн хэлэнд л",
+   "Утга нь адил, 边 нь ярианы товч хэлбэр",
+   "Эсрэг утгатай"
+  ],
+  "correct_answer": "Утга нь адил, 边 нь ярианы товч хэлбэр",
+  "explanation": "你不应该边开车边打电话 — 边…边… нь 一边…一边…-ийн товчлол.",
+  "order_index": 18,
+  "id": "xinhsk3-l13-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l13-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：谁请客？",
+  "options": [
+   "刘小明",
+   "杨同乐",
+   "王一雪",
+   "刘明"
+  ],
+  "correct_answer": "杨同乐",
+  "explanation": "«今天我请客» гэж хэлсэн нь Ян Тунлэ.",
+  "order_index": 19,
+  "id": "xinhsk3-l13-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：南方菜和北方菜有什么不同？",
+  "options": [
+   "做法不同",
+   "用的肉不同",
+   "吃的鱼不同",
+   "颜色不同"
+  ],
+  "correct_answer": "做法不同",
+  "explanation": "«南方菜跟你们北方菜的做法不同».",
+  "order_index": 20,
+  "id": "xinhsk3-l13-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪担心什么？",
+  "options": [
+   "音乐太大",
+   "客人不来",
+   "饮料不够",
+   "有什么没准备好"
+  ],
+  "correct_answer": "有什么没准备好",
+  "explanation": "«总是担心有什么没准备好».",
+  "order_index": 21,
+  "id": "xinhsk3-l13-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：饮料和酒放在哪儿了？",
+  "options": [
+   "房间里",
+   "厨房里",
+   "冰箱里",
+   "桌子上"
+  ],
+  "correct_answer": "冰箱里",
+  "explanation": "«都放进冰箱里了».",
+  "order_index": 22,
+  "id": "xinhsk3-l13-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：刘小明收到什么礼物？",
+  "options": [
+   "红茶",
+   "画板和画笔",
+   "蛋糕",
+   "地图"
+  ],
+  "correct_answer": "画板和画笔",
+  "explanation": "Сяомин «画板和画笔，这正是我需要的» гэсэн.",
+  "order_index": 23,
+  "id": "xinhsk3-l13-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：王一雪的新邻居是什么人？",
+  "options": [
+   "英国夫妻",
+   "中国人",
+   "老师",
+   "画家"
+  ],
+  "correct_answer": "英国夫妻",
+  "explanation": "«来自英国的夫妻».",
+  "order_index": 24,
+  "id": "xinhsk3-l13-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：邻居家世界地图上的红点是什么？",
+  "options": [
+   "他们想去的地方",
+   "朋友的家",
+   "饭馆",
+   "他们去过的地方"
+  ],
+  "correct_answer": "他们去过的地方",
+  "explanation": "«每一个红点都是他们去过的地方».",
+  "order_index": 25,
+  "id": "xinhsk3-l13-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

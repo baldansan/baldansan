@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "该",
+  "pinyin": "gāi",
+  "mongolian": "… -х цаг болсон, … -х ёстой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "时间不早了，我们该去学校了。",
+  "exampleMongolian": "Цаг оройтлоо, бид сургууль руу явах цаг боллоо.",
+  "pos": "туслах үйл үг",
+  "collocations_zh": "该…了"
+ },
+ {
+  "chinese": "打算",
+  "pinyin": "dǎsuàn",
+  "mongolian": "төлөвлөх; төлөвлөгөө",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她打算假期去北京玩。",
+  "exampleMongolian": "Тэр амралтаараа Бээжин явахаар төлөвлөж байна.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "打算做/去… / 有打算"
+ },
+ {
+  "chinese": "高铁",
+  "pinyin": "gāotiě",
+  "mongolian": "өндөр хурдны галт тэрэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们明天坐高铁去上海旅游。",
+  "exampleMongolian": "Бид маргааш өндөр хурдны галт тэргээр Шанхай аялахаар явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "坐高铁 / 高铁站"
+ },
+ {
+  "chinese": "行",
+  "pinyin": "xíng",
+  "mongolian": "болно, зүгээр; чадалтай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我还行，你呢？",
+  "exampleMongolian": "Би зүгээр, чи?",
+  "pos": "үйл үг / тэмдэг нэр",
+  "collocations_zh": "还行 / 不行"
+ },
+ {
+  "chinese": "路口",
+  "pinyin": "lùkǒu",
+  "mongolian": "уулзвар, замын уулзвар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我家就在那个路口旁边。",
+  "exampleMongolian": "Манай гэр яг тэр уулзварын хажууд.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个路口 / 前面的路口"
+ },
+ {
+  "chinese": "小心",
+  "pinyin": "xiǎoxīn",
+  "mongolian": "болгоомжлох; болгоомжтой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "外面很冷，小心感冒。",
+  "exampleMongolian": "Гадаа хүйтэн, ханиад хүрэхээс болгоомжил.",
+  "pos": "үйл үг / тэмдэг нэр",
+  "collocations_zh": "小心点儿"
+ },
+ {
+  "chinese": "迟到",
+  "pinyin": "chídào",
+  "mongolian": "хоцрох (хүн)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你怎么迟到了？",
+  "exampleMongolian": "Чи яагаад хоцорсон бэ?",
+  "pos": "үйл үг",
+  "collocations_zh": "迟到了十分钟"
+ },
+ {
+  "chinese": "红绿灯",
+  "pinyin": "hónglǜdēng",
+  "mongolian": "гэрлэн дохио",
+  "hskLevel": "HSK3",
+  "exampleChinese": "前面路口有红绿灯。",
+  "exampleMongolian": "Урд талын уулзварт гэрлэн дохио байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "等红灯 / 看红绿灯"
+ },
+ {
+  "chinese": "后来",
+  "pinyin": "hòulái",
+  "mongolian": "дараа нь, хожим",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他开始不想去，后来还是去了。",
+  "exampleMongolian": "Тэр эхлээд явмааргүй байсан ч дараа нь яасан ч явсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "后来再也不…"
+ },
+ {
+  "chinese": "急",
+  "pinyin": "jí",
+  "mongolian": "сандрах; яаралтай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "别急，慢慢来。",
+  "exampleMongolian": "Битгий сандар, аажуухан хий.",
+  "pos": "тэмдэг нэр / үйл үг",
+  "collocations_zh": "很急 / 别急 / 不急"
+ },
+ {
+  "chinese": "如果",
+  "pinyin": "rúguǒ",
+  "mongolian": "хэрэв",
+  "hskLevel": "HSK3",
+  "exampleChinese": "如果明天下雨，我就不去打篮球了。",
+  "exampleMongolian": "Маргааш бороо орвол би сагсан бөмбөг тоглохгүй.",
+  "pos": "залгах үг",
+  "collocations_zh": "如果…就…"
+ },
+ {
+  "chinese": "以前",
+  "pinyin": "yǐqián",
+  "mongolian": "өмнө, урьд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "以前这里没有地铁，只有公交车。",
+  "exampleMongolian": "Урьд нь энд метро байгаагүй, зөвхөн автобус байсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "两点以前 / 三天以前"
+ },
+ {
+  "chinese": "耳机",
+  "pinyin": "ěrjī",
+  "mongolian": "чихэвч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我可以借你的耳机用一下吗？",
+  "exampleMongolian": "Би чиний чихэвчийг түр ашиглаж болох уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "戴耳机 / 耳机没电了"
+ },
+ {
+  "chinese": "充电宝",
+  "pinyin": "chōngdiànbǎo",
+  "mongolian": "зөөврийн цэнэглэгч (пауэрбанк)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "出门时，我总是带着充电宝。",
+  "exampleMongolian": "Гадуур гарахдаа би үргэлж зөөврийн цэнэглэгчээ авч явдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "带充电宝"
+ },
+ {
+  "chinese": "常用",
+  "pinyin": "chángyòng",
+  "mongolian": "байнга хэрэглэдэг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "手机、耳机都是我常用的东西。",
+  "exampleMongolian": "Утас, чихэвч хоёулаа миний байнга хэрэглэдэг зүйлс.",
+  "pos": "хэллэг",
+  "collocations_zh": "常用的东西 / 很常用"
+ },
+ {
+  "chinese": "越",
+  "pinyin": "yuè",
+  "mongolian": "улам, улам … болох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的中文越来越好了。",
+  "exampleMongolian": "Миний хятад хэл улам сайжирч байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "越来越…"
+ },
+ {
+  "chinese": "分开",
+  "pinyin": "fēnkāi",
+  "mongolian": "салах, тусгаарлах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他们在路口分开了。",
+  "exampleMongolian": "Тэд уулзварт салсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "别分开 / 分开坐"
+ },
+ {
+  "chinese": "检查",
+  "pinyin": "jiǎnchá",
+  "mongolian": "шалгах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "老师每天都会检查作业。",
+  "exampleMongolian": "Багш өдөр бүр даалгавар шалгадаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "检查作业 / 检查身体"
+ },
+ {
+  "chinese": "刷",
+  "pinyin": "shuā",
+  "mongolian": "уншуулах, гүйлгэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "买东西可以刷信用卡。",
+  "exampleMongolian": "Юм авахдаа картаар төлж болно.",
+  "pos": "үйл үг",
+  "collocations_zh": "刷卡 / 刷护照"
+ },
+ {
+  "chinese": "检票",
+  "pinyin": "jiǎnpiào",
+  "mongolian": "тасалбар шалгах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请问检票口在哪儿？",
+  "exampleMongolian": "Тасалбар шалгах хаалга хаана байдаг вэ?",
+  "pos": "үйл үг",
+  "collocations_zh": "检票口"
+ },
+ {
+  "chinese": "电梯",
+  "pinyin": "diàntī",
+  "mongolian": "цахилгаан шат, лифт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们坐电梯上楼吧。",
+  "exampleMongolian": "Бид лифтээр дээш гарцгаая.",
+  "pos": "нэр үг",
+  "collocations_zh": "坐电梯"
+ },
+ {
+  "chinese": "放假",
+  "pinyin": "fàngjià",
+  "mongolian": "амрах, амралт болох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你们什么时候放假？",
+  "exampleMongolian": "Та нар хэзээ амрах вэ?",
+  "pos": "үйл үг",
+  "collocations_zh": "放假了 / 快放假了"
+ },
+ {
+  "chinese": "沙发",
+  "pinyin": "shāfā",
+  "mongolian": "буйдан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢坐在沙发上看书。",
+  "exampleMongolian": "Би буйдан дээр сууж ном уншихад дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "坐在沙发上"
+ },
+ {
+  "chinese": "安静",
+  "pinyin": "ānjìng",
+  "mongolian": "чимээгүй, нам гүм",
+  "hskLevel": "HSK3",
+  "exampleChinese": "图书馆里很安静。",
+  "exampleMongolian": "Номын санд чимээгүй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很安静 / 安静的人"
+ },
+ {
+  "chinese": "选择",
+  "pinyin": "xuǎnzé",
+  "mongolian": "сонгох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你可以选择自己喜欢的书。",
+  "exampleMongolian": "Чи өөрийн дуртай номоо сонгож болно.",
+  "pos": "үйл үг",
+  "collocations_zh": "选择…"
+ },
+ {
+  "chinese": "必须",
+  "pinyin": "bìxū",
+  "mongolian": "заавал, ёстой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "天气太冷了，必须多穿点。",
+  "exampleMongolian": "Цаг агаар хэт хүйтэн, заавал зузаан өмс.",
+  "pos": "дайвар үг",
+  "collocations_zh": "必须去 / 必须注意"
+ },
+ {
+  "chinese": "北京南站",
+  "pinyin": "Běijīng Nán Zhàn",
+  "mongolian": "Бээжин Өмнөд буудал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我是从北京南站坐高铁去上海的。",
+  "exampleMongolian": "Би Бээжин Өмнөд буудлаас өндөр хурдны галт тэргээр Шанхай явсан.",
+  "pos": "тусгай нэр",
+  "collocations_zh": "去北京南站"
+ }
+]

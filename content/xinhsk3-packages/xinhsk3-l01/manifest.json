@@ -12,11 +12,11 @@
  "uiLanguage": "mn",
  "title": "我们去机场接你们",
  "mongolianTitle": "Бид та нарыг онгоцны буудлаас тосно",
- "source": "新HSK 3 (HSK 3.0) — 1-р хичээл: үг, дүрмийн дараалал сурах бичгийнхээр; яриа, жишээ, дасгал «Бөөндөө Сурцгаая»-ын зохиосон",
+ "source": "新HSK教程3 (外研社, HSK 3.0) — 1-р хичээл: үг, 课文, дүрэм, дасгал сурах бичиг + 学练手册 + PPT-ээс; монгол орчуулга, тайлбар «Бөөндөө Сурцгаая»",
  "hasAudio": false,
  "hasImages": false,
  "verification": {
-  "answerStatus": "authored",
-  "textStatus": "authored (өөрсдийн зохиосон яриа)"
+  "answerStatus": "textbook+ppt (OCR; хүн шалгаагүй)",
+  "textStatus": "textbook (新HSK教程3 课文, OCR)"
  }
 }

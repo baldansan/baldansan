@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "假期",
+  "pinyin": "jiàqī",
+  "mongolian": "амралт, баярын амралт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个假期我想去旅行。",
+  "exampleMongolian": "Энэ амралтаар би аялмаар байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个假期"
+ },
+ {
+  "chinese": "海",
+  "pinyin": "hǎi",
+  "mongolian": "далай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我喜欢去海边玩。",
+  "exampleMongolian": "Би далайн эрэг дээр зугаалах дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "海边 / 大海"
+ },
+ {
+  "chinese": "草原",
+  "pinyin": "cǎoyuán",
+  "mongolian": "тал нутаг, хээр тал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "草原上有很多牛和羊。",
+  "exampleMongolian": "Тал нутагт олон үхэр, хонь бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "大草原 / 草原上"
+ },
+ {
+  "chinese": "主意",
+  "pinyin": "zhǔyi",
+  "mongolian": "санаа, санал, арга",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你别着急，我来帮你出个主意。",
+  "exampleMongolian": "Битгий сандар, би чамд санаа гаргаж өгье.",
+  "pos": "нэр үг",
+  "collocations_zh": "好主意 / 出主意 / 想主意"
+ },
+ {
+  "chinese": "骑",
+  "pinyin": "qí",
+  "mongolian": "унах (морь, дугуй)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你有没有骑过马？",
+  "exampleMongolian": "Чи морь унаж үзсэн үү?",
+  "pos": "үйл үг",
+  "collocations_zh": "骑马 / 骑自行车"
+ },
+ {
+  "chinese": "马",
+  "pinyin": "mǎ",
+  "mongolian": "морь",
+  "hskLevel": "HSK3",
+  "exampleChinese": "马跑得很快。",
+  "exampleMongolian": "Морь маш хурдан гүйдэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "马车 / 白马"
+ },
+ {
+  "chinese": "羊",
+  "pinyin": "yáng",
+  "mongolian": "хонь, ямаа",
+  "hskLevel": "HSK3",
+  "exampleChinese": "羊在草地上吃草。",
+  "exampleMongolian": "Хонь нуга талд бэлчиж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "小羊 / 一只羊"
+ },
+ {
+  "chinese": "月亮",
+  "pinyin": "yuèliang",
+  "mongolian": "сар (тэнгэрийн)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "看着月亮，我想家了。",
+  "exampleMongolian": "Сар харахаар би гэрээ санаж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "大大的月亮 / 看月亮"
+ },
+ {
+  "chinese": "一定",
+  "pinyin": "yídìng",
+  "mongolian": "заавал, нүүр буруулахгүй, мэдээж",
+  "hskLevel": "HSK3",
+  "exampleChinese": "明天我一定来帮你搬家。",
+  "exampleMongolian": "Маргааш би заавал ирж чамд нүүхэд тусална.",
+  "pos": "дайвар үг",
+  "collocations_zh": "不一定"
+ },
+ {
+  "chinese": "刻",
+  "pinyin": "kè",
+  "mongolian": "15 минут (цагийн дөрөвний нэг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "电影是下午三点一刻开始。",
+  "exampleMongolian": "Кино үдээс хойш 3:15-д эхэлнэ.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一刻钟 / 时刻"
+ },
+ {
+  "chinese": "起飞",
+  "pinyin": "qǐfēi",
+  "mongolian": "хөөрөх (онгоц)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "飞机还有半个小时就要起飞了。",
+  "exampleMongolian": "Онгоц хагас цагийн дараа хөөрнө.",
+  "pos": "үйл үг",
+  "collocations_zh": "飞机起飞"
+ },
+ {
+  "chinese": "宾馆",
+  "pinyin": "bīnguǎn",
+  "mongolian": "зочид буудал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这家宾馆离海边很近。",
+  "exampleMongolian": "Энэ зочид буудал далайн эргээс их ойрхон.",
+  "pos": "нэр үг",
+  "collocations_zh": "一家宾馆 / 订宾馆"
+ },
+ {
+  "chinese": "特别",
+  "pinyin": "tèbié",
+  "mongolian": "онцгой; маш, их",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这件衣服特别漂亮。",
+  "exampleMongolian": "Энэ хувцас маш гоё.",
+  "pos": "тэмдэг нэр / дайвар үг",
+  "collocations_zh": "很特别 / 特别漂亮"
+ },
+ {
+  "chinese": "别的",
+  "pinyin": "biéde",
+  "mongolian": "бусад, өөр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们去别的地方看看。",
+  "exampleMongolian": "Бид өөр газар үзэж харъя.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "别的东西 / 别的地方"
+ },
+ {
+  "chinese": "一样",
+  "pinyin": "yíyàng",
+  "mongolian": "адилхан, ижил",
+  "hskLevel": "HSK3",
+  "exampleChinese": "今天的天气和昨天一样好。",
+  "exampleMongolian": "Өнөөдрийн цаг агаар өчигдөртэй адил сайхан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "一样好 / 不一样"
+ },
+ {
+  "chinese": "牛",
+  "pinyin": "niú",
+  "mongolian": "үхэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "牛在草原上吃草。",
+  "exampleMongolian": "Үхэр тал нутагт бэлчиж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "一头牛"
+ },
+ {
+  "chinese": "相机",
+  "pinyin": "xiàngjī",
+  "mongolian": "фотоаппарат, камер",
+  "hskLevel": "HSK3",
+  "exampleChinese": "旅游时，请带上你的相机。",
+  "exampleMongolian": "Аялахдаа камераа авч яваарай.",
+  "pos": "нэр үг",
+  "collocations_zh": "新相机 / 带相机"
+ },
+ {
+  "chinese": "欢迎",
+  "pinyin": "huānyíng",
+  "mongolian": "угтах, тавтай морилох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "北京欢迎你！",
+  "exampleMongolian": "Бээжин таныг угтаж байна!",
+  "pos": "үйл үг",
+  "collocations_zh": "欢迎你 / 欢迎下次再来"
+ },
+ {
+  "chinese": "司机",
+  "pinyin": "sījī",
+  "mongolian": "жолооч",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这位司机开车很注意安全。",
+  "exampleMongolian": "Энэ жолооч машин жолоодохдоо аюулгүй байдлыг сайн анхаардаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "出租车司机 / 公交车司机"
+ },
+ {
+  "chinese": "晚点",
+  "pinyin": "wǎndiǎn",
+  "mongolian": "хоцрох (онгоц, галт тэрэг)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的飞机晚点了，所以我来晚了。",
+  "exampleMongolian": "Миний онгоц хоцорсон тул би орой ирлээ.",
+  "pos": "үйл үг",
+  "collocations_zh": "飞机晚点"
+ },
+ {
+  "chinese": "久",
+  "pinyin": "jiǔ",
+  "mongolian": "удаан",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们认识很久了。",
+  "exampleMongolian": "Бид танилцаад удаж байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很久 / 好久 / 不久"
+ },
+ {
+  "chinese": "除了",
+  "pinyin": "chúle",
+  "mongolian": "… -аас гадна, … -ыг эс тооцвол",
+  "hskLevel": "HSK3",
+  "exampleChinese": "除了下雨天，他每天都去跑步。",
+  "exampleMongolian": "Бороотой өдрөөс бусад өдөр тэр өдөр бүр гүйдэг.",
+  "pos": "угтвар үг",
+  "collocations_zh": "除了…以外"
+ },
+ {
+  "chinese": "以外",
+  "pinyin": "yǐwài",
+  "mongolian": "гадна, бусад",
+  "hskLevel": "HSK3",
+  "exampleChinese": "除了小雪以外，别的同学都来了。",
+  "exampleMongolian": "Сяосюэгээс бусад ангийнхан бүгд ирсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "除了…以外"
+ },
+ {
+  "chinese": "先",
+  "pinyin": "xiān",
+  "mongolian": "эхлээд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们先休息一下，再继续工作。",
+  "exampleMongolian": "Бид эхлээд жаахан амраад дараа нь үргэлжлүүлж ажиллая.",
+  "pos": "дайвар үг",
+  "collocations_zh": "先…再…"
+ },
+ {
+  "chinese": "一直",
+  "pinyin": "yìzhí",
+  "mongolian": "байнга, тасралтгүй",
+  "hskLevel": "HSK3",
+  "exampleChinese": "妈妈一直在学校门口等我。",
+  "exampleMongolian": "Ээж надаас сургуулийн үүдэнд байнга хүлээж байсан.",
+  "pos": "дайвар үг",
+  "collocations_zh": "一直在"
+ },
+ {
+  "chinese": "干净",
+  "pinyin": "gānjìng",
+  "mongolian": "цэвэрхэн, цэвэр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个房间已经打扫干净了。",
+  "exampleMongolian": "Энэ өрөөг цэвэрлэчихсэн.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很干净 / 打扫干净"
+ },
+ {
+  "chinese": "满意",
+  "pinyin": "mǎnyì",
+  "mongolian": "сэтгэл хангалуун байх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我对这次旅行很满意。",
+  "exampleMongolian": "Би энэ аяллаас сэтгэл хангалуун байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "很满意 / 不满意"
+ }
+]
