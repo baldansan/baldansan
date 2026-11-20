@@ -18,7 +18,8 @@ export type LearnMode =
   | "dictation" // сонсоод → ханзаар угсрах
   | "cloze" // жишээ өгүүлбэрийн хоосон зай
   | "radical" // ханзны язгуур
-  | "match"; // 5 хос холбох
+  | "match" // 5 хос холбох
+  | "write"; // утга харж ханзыг зурлагаар нь санаж зурах
 
 export const LEARN_MODES: { id: LearnMode; icon: string; label: string; hint: string }[] = [
   { id: "meaning", icon: "🎯", label: "Утга сонгох", hint: "Ханз харж монгол утгыг ол" },
@@ -30,6 +31,7 @@ export const LEARN_MODES: { id: LearnMode; icon: string; label: string; hint: st
   { id: "match", icon: "🔗", label: "Холбох", hint: "5 үгийг утгатай нь хослуул" },
   { id: "cloze", icon: "✏️", label: "Өгүүлбэр нөхөх", hint: "Жишээ өгүүлбэрийн дутуу үг" },
   { id: "radical", icon: "🧩", label: "Ханз задлах", hint: "Ханзны язгуурыг ол" },
+  { id: "write", icon: "✍️", label: "Ханз зурах", hint: "Утга харж ханзыг санаж зур" },
 ];
 
 export type LearnSettings = {
@@ -59,6 +61,8 @@ export const LEARN_PRESETS: Record<string, Partial<LearnSettings>> = {
   dictation: { modes: ["dictation", "listen"], timer: 0, size: 10 },
   marathon: { size: 0, timer: 0 },
   hanzi: { modes: ["radical", "recall", "dictation"], size: 10 },
+  /** Ханзыг загваргүйгээр зурж цээжилснээ батална. */
+  write: { modes: ["write"], timer: 0, size: 10 },
 };
 
 const SETTINGS_KEY = "bs.games.learn.settings";
@@ -109,7 +113,7 @@ export type LearnWord = HskWordRow & {
 
 export type ChoiceQuestion = {
   type: "choice";
-  mode: Exclude<LearnMode, "dictation" | "match">;
+  mode: Exclude<LearnMode, "dictation" | "match" | "write">;
   word: LearnWord;
   /** Дээд талын жижиг заавар. */
   label: string;
@@ -142,7 +146,14 @@ export type MatchQuestion = {
   words: LearnWord[];
 };
 
-export type LearnQuestion = ChoiceQuestion | DictationQuestion | MatchQuestion;
+/** Утга, пиньинийг хараад ханзыг зурлагын дарааллаар санаж зурна. */
+export type WriteQuestion = {
+  type: "write";
+  mode: "write";
+  word: LearnWord;
+};
+
+export type LearnQuestion = ChoiceQuestion | DictationQuestion | MatchQuestion | WriteQuestion;
 
 export function shuffle<T>(items: T[], rand: () => number = Math.random): T[] {
   const a = [...items];
@@ -235,6 +246,8 @@ export function modeFits(mode: LearnMode, w: LearnWord): boolean {
       return zh.length === 1 && Boolean(w.radical?.trim()) && w.radical !== zh;
     case "match":
       return Boolean(meaningOf(w));
+    case "write":
+      return zh.length > 0 && zh.length <= 4 && /^[\u3400-\u9fff]+$/.test(zh) && Boolean(meaningOf(w));
   }
 }
 
@@ -246,8 +259,9 @@ export function buildQuestion(
   mode: Exclude<LearnMode, "match">,
   word: LearnWord,
   pool: LearnWord[]
-): ChoiceQuestion | DictationQuestion | null {
+): ChoiceQuestion | DictationQuestion | WriteQuestion | null {
   if (!modeFits(mode, word)) return null;
+  if (mode === "write") return { type: "write", mode: "write", word };
   const zh = word.simplified ?? "";
   const others = pool.filter((p) => p.id !== word.id);
   // Ижил урттай үгс илүү «төөрөгдүүлдэг» тул эхэлж авна.

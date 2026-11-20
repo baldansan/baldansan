@@ -282,6 +282,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
                 { preset: "speed", icon: "⚡", label: "Хурдны горим", hint: "6 секундэд хариул" },
                 { preset: "dictation", icon: "👂", label: "Диктант", hint: "Сонсоод угсар" },
                 { preset: "hanzi", icon: "🧩", label: "Ханз задлах", hint: "Язгуур, бичлэг" },
+                { preset: "write", icon: "✍️", label: "Ханз зурах", hint: "Санаж зураад батал" },
               ].map((p) => (
                 <PrefetchLink
                   key={p.preset}

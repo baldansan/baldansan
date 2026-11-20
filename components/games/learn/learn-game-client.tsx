@@ -17,6 +17,7 @@ import {
 } from "@/components/games/game-juice";
 import { LearnSettingsSheet } from "@/components/games/learn/learn-settings-sheet";
 import { MatchRound } from "@/components/games/learn/match-round";
+import { WriteRound } from "@/components/games/learn/write-round";
 import { useActiveHskLevelOptional } from "@/components/providers/active-hsk-level-provider";
 import { recordQuestionAttempt } from "@/lib/analytics/record-question-attempt";
 import { fireConfetti, playSfx, recordDailyMissionProgress } from "@/lib/games/game-fx";
@@ -318,7 +319,14 @@ export function LearnGameClient() {
 
   /* ---------- цаг ---------- */
   useEffect(() => {
-    if (phase !== "play" || locked || settings.timer <= 0 || !question || question.type === "match") {
+    if (
+      phase !== "play" ||
+      locked ||
+      settings.timer <= 0 ||
+      !question ||
+      question.type === "match" ||
+      question.type === "write"
+    ) {
       return;
     }
     const t = window.setTimeout(() => {
@@ -918,6 +926,16 @@ export function LearnGameClient() {
               {tr(locale, "Шалгах")}
             </button>
           </section>
+        ) : null}
+
+        {/* ---------- Ханз зурах ---------- */}
+        {question.type === "write" ? (
+          <WriteRound
+            key={qNo}
+            word={question.word}
+            meaning={meaning(question.word)}
+            onDone={(correct) => settle([{ word: question.word, correct }], correct ? 900 : 1500)}
+          />
         ) : null}
 
         {/* ---------- Холбох ---------- */}

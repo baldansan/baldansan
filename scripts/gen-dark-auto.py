@@ -41,7 +41,7 @@ def bd_map(rgb):
     if 70<=h<170: return '#245a3a'
     if h>=330 or h<20: return '#6b2a30'
     return 'var(--bs-green-100)'
-SKIP=re.compile(r'dark|print|thumb|knob|::?-webkit|qr|certificate|poster|bs-admin|::selection|hanzi-writer|bs-wr-grid|tian')
+SKIP=re.compile(r'dark|print|thumb|knob|::?-webkit|qr|certificate|poster|bs-admin|::selection|hanzi-writer|bs-wr-grid|bs-write-grid|tian')
 def blocks(s):
     # yield (prelude, body, is_nested)
     i=0;n=len(s)
