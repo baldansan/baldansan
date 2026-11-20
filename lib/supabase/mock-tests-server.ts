@@ -396,9 +396,9 @@ function hskFromAttempt(
 ): HskScoreBreakdown {
   if (metadata?.section_scores) {
     return {
-      maxTotal: metadata.hsk_max ?? hskMaxTotal(test.hsk_level),
+      maxTotal: metadata.hsk_max ?? hskMaxTotal(test.hsk_level, test.sections.length),
       passThreshold:
-        metadata.pass_threshold ?? hskPassThreshold(test.hsk_level),
+        metadata.pass_threshold ?? hskPassThreshold(test.hsk_level, test.sections.length),
       totalScore: metadata.hsk_total ?? Number(rawScore ?? 0),
       passed: Boolean(metadata.passed),
       sectionScores: metadata.section_scores,

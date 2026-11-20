@@ -1,6 +1,6 @@
 "use client";
 
-import { describeTestId, displayTestTitle } from "@/lib/mock-test/test-id-meta";
+import { describeTestId, displayTestTitle, isHsk30TestId } from "@/lib/mock-test/test-id-meta";
 import { useState, type ReactNode } from "react";
 import Link from "next/link";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
@@ -98,7 +98,13 @@ export function MockTestListClient({
   latestScores = {},
   embedded = false,
 }: Props) {
-  const byLevel = tests.reduce<Record<number, MockTestRow[]>>((acc, t) => {
+  // HSK 3.0 (шинэ бүтэц, 2026-) / HSK 2.0 (хуучин 真题) — хоёр ангилал.
+  const has30 = tests.some((t) => isHsk30TestId(t.id));
+  const has20 = tests.some((t) => !isHsk30TestId(t.id));
+  const [standard, setStandard] = useState<"3.0" | "2.0">(has30 ? "3.0" : "2.0");
+  const shown = tests.filter((t) => (standard === "3.0") === isHsk30TestId(t.id));
+
+  const byLevel = shown.reduce<Record<number, MockTestRow[]>>((acc, t) => {
     const lvl = t.hsk_level;
     if (!acc[lvl]) acc[lvl] = [];
     acc[lvl].push(t);
@@ -126,22 +132,39 @@ export function MockTestListClient({
         </Link>
       ) : null}
       <h1 className={`bs-mt-title ${embedded ? "bs-mt-title--embedded" : "mt-3"}`}>
-        HSK жинхэнэ шалгалт
+        HSK загвар шалгалт
       </h1>
-      <p className="bs-mt-sub">
-        Албан ёсны 真题 — таймер, аудио, автомат оноо, монгол тайлбар. Түвшнээ сонго.
+      <p className="bs-mt-sub">Түвшнээ сонгоод шалгалтаа эхлүүл.</p>
+
+      {has30 && has20 ? (
+        <div className="bs-mt-std" role="tablist" aria-label="Шалгалтын бүтэц">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={standard === "3.0"}
+            className={`bs-mt-std-btn${standard === "3.0" ? " bs-mt-std-btn--on" : ""}`}
+            onClick={() => { setStandard("3.0"); setChosen(undefined); }}
+          >
+            HSK 3.0 <span className="bs-mt-std-tag">шинэ бүтэц</span>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={standard === "2.0"}
+            className={`bs-mt-std-btn${standard === "2.0" ? " bs-mt-std-btn--on" : ""}`}
+            onClick={() => { setStandard("2.0"); setChosen(undefined); }}
+          >
+            HSK 2.0 <span className="bs-mt-std-tag">хуучин 真题</span>
+          </button>
+        </div>
+      ) : null}
+      <p className="bs-mt-std-note">
+        {standard === "3.0"
+          ? "2026 оноос мөрдөх шинэ хэлбэрийн 全真模拟 загвар шалгалтууд — таймер, аудио, автомат оноо, монгол тайлбар."
+          : "Хуучин бүтцийн албан ёсны 真题 — бодит шалгалтын асуултууд, монгол тайлбартай."}
       </p>
 
-      <div className="bs-mt-soon">
-        <span className="bs-mt-soon-badge">Тун удахгүй</span>
-        <p className="bs-mt-soon-title">HSK 3.0 — шинэ хэлбэрийн загвар шалгалт</p>
-        <p className="bs-mt-soon-sub">
-          2026 оноос мөрдөх шинэ хэлбэрийн шалгалтыг бэлдэж байна. Одоохондоо доорх жинхэнэ HSK
-          шалгалтуудаар бэлдээрэй.
-        </p>
-      </div>
-
-      {tests.length === 0 ? (
+      {shown.length === 0 ? (
         <div className="bs-mt-card mt-4">
           <p className="bs-mt-card-title">Тест олдсонгүй</p>
         </div>
@@ -181,7 +204,9 @@ export function MockTestListClient({
                               {meta?.isSample
                                 ? "Албан загвар (样卷)"
                                 : meta
-                                  ? meta.label
+                                  ? meta.standard === "HSK 3.0"
+                                    ? `Загвар шалгалт №${meta.serial}`
+                                    : meta.label
                                   : displayTestTitle(test.id, test.title).replace(/^HSK \d(?:[–-]\d)?\s*·\s*/, "") || test.id}
                             </span>
                             <span className="bs-mt-row-meta">

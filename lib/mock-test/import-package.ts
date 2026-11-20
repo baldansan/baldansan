@@ -99,7 +99,7 @@ export function validateMockPackage(raw: unknown): { pkg: MockPackage | null; re
   const testId = typeof raw.test_id === "string" ? raw.test_id.trim() : "";
   if (!TEST_ID_RE.test(testId)) errors.push(`test_id буруу: «${testId}» (жишээ H41329).`);
   const hskLevel = Number(raw.hsk_level);
-  if (!Number.isInteger(hskLevel) || hskLevel < 1 || hskLevel > 6) errors.push("hsk_level 1–6 байх ёстой.");
+  if (!Number.isInteger(hskLevel) || hskLevel < 1 || hskLevel > 9) errors.push("hsk_level 1–9 байх ёстой.");
   const title = typeof raw.title === "string" && raw.title.trim() ? raw.title.trim() : `HSK ${hskLevel} — ${testId}`;
   const totalQuestions = Number(raw.total_questions);
   const timeLimit = Number(raw.time_limit_min);

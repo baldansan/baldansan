@@ -18,12 +18,14 @@ export type HskScoreBreakdown = {
   writingPending: boolean;
 };
 
-export function hskMaxTotal(hskLevel: number): number {
+/** Нийт дээд оноо = хэсэг бүр 100. HSK 2.0: 1–2 түвшин 2 хэсэг (200), 3+ 3 хэсэг (300). HSK 3.0-д 2-р түвшин ч бичихтэй — хэсгийн тоогоор. */
+export function hskMaxTotal(hskLevel: number, sectionCount?: number): number {
+  if (sectionCount && sectionCount > 0) return sectionCount * 100;
   return hskLevel <= 2 ? 200 : 300;
 }
 
-export function hskPassThreshold(hskLevel: number): number {
-  return hskLevel <= 2 ? 120 : 180;
+export function hskPassThreshold(hskLevel: number, sectionCount?: number): number {
+  return Math.round(hskMaxTotal(hskLevel, sectionCount) * 0.6);
 }
 
 function sectionRawTotals(
@@ -132,8 +134,8 @@ export function computeHskScoreBreakdown(
     (sum, skill) => sum + (sectionScores[skill] ?? 0),
     0
   );
-  const maxTotal = hskMaxTotal(test.hsk_level);
-  const passThreshold = hskPassThreshold(test.hsk_level);
+  const maxTotal = hskMaxTotal(test.hsk_level, skills.length);
+  const passThreshold = hskPassThreshold(test.hsk_level, skills.length);
   const countedTotal = writingPending
     ? scoredSections
         .filter((skill) => skill !== "writing")
