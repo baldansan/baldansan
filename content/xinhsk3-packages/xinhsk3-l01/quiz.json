@@ -381,15 +381,15 @@
  },
  {
   "type": "multiple_choice",
-  "question": "课文1：巴图为什么不能去机场接妹妹？",
+  "question": "课文1：小林以为手机上的人是谁？",
   "options": [
-   "他生病了",
-   "他要上班",
-   "他不想去",
-   "他有考试"
+   "巴图的老师",
+   "巴图的同学",
+   "巴图的妈妈",
+   "巴图的哥哥"
   ],
-  "correct_answer": "他有考试",
-  "explanation": "«那天我有考试» — тэр өдөр шалгалттай.",
+  "correct_answer": "巴图的哥哥",
+  "explanation": "«我还以为是你哥哥呢» — ах нь гэж андуурсан.",
   "order_index": 21,
   "id": "xinhsk3-l01-q21",
   "skillTags": [
@@ -400,15 +400,15 @@
  },
  {
   "type": "multiple_choice",
-  "question": "课文1：娜拉身高多少？",
+  "question": "课文2：苏和的箱子是什么颜色的？",
   "options": [
-   "一米七五",
-   "一米八",
-   "一米六五",
-   "一米五六"
+   "白色",
+   "黄色",
+   "红色",
+   "黑色"
   ],
-  "correct_answer": "一米六五",
-  "explanation": "«身高一米六五» — 1.65 метр.",
+  "correct_answer": "红色",
+  "explanation": "«一个红色的大箱子» — улаан өнгийн том чемодан.",
   "order_index": 22,
   "id": "xinhsk3-l01-q22",
   "skillTags": [
@@ -419,15 +419,15 @@
  },
  {
   "type": "multiple_choice",
-  "question": "课文2：娜拉在机场怎么了？",
+  "question": "课文2：苏和的护照在哪儿？",
   "options": [
-   "她找不到服务台",
-   "她拿错行李了",
-   "她的护照丢了",
-   "她的手机不见了"
+   "在飞机上",
+   "在他的包里",
+   "在箱子里",
+   "在服务台"
   ],
-  "correct_answer": "她拿错行李了",
-  "explanation": "«我好像拿错行李了» — ачаагаа андуурч авсан.",
+  "correct_answer": "在他的包里",
+  "explanation": "«护照在我的包里» — цүнхэнд нь.",
   "order_index": 23,
   "id": "xinhsk3-l01-q23",
   "skillTags": [
@@ -438,34 +438,34 @@
  },
  {
   "type": "multiple_choice",
-  "question": "课文3：小林是哪个人？",
+  "question": "课文3：苏和的头发怎么样？",
   "options": [
-   "拿着手机的、头发有点儿长的男孩儿",
-   "短头发的高个子",
-   "穿着白衣服的人",
-   "拿着箱子的人"
+   "很短",
+   "很长",
+   "很白",
+   "很多"
   ],
-  "correct_answer": "拿着手机的、头发有点儿长的男孩儿",
-  "explanation": "Богино үстэй өндөр хүн нь өөр хүн. Сяо Линь утас барьсан, үс нь жаахан урт.",
+  "correct_answer": "很短",
+  "explanation": "«苏和的头发很短» — үс нь богино.",
   "order_index": 24,
   "id": "xinhsk3-l01-q24",
   "skillTags": [
    "reading",
    "text-comprehension"
   ],
-  "difficulty": "medium"
+  "difficulty": "easy"
  },
  {
   "type": "multiple_choice",
-  "question": "课文4：这封信是谁写给谁的？",
+  "question": "课文4：谁帮助苏和找到了箱子？",
   "options": [
-   "娜拉写给巴图的",
-   "小林写给老师的",
-   "妈妈写给娜拉的",
-   "巴图写给妈妈的"
+   "巴图",
+   "小林",
+   "他妈妈",
+   "服务台的人"
   ],
-  "correct_answer": "巴图写给妈妈的",
-  "explanation": "Зурвас «妈妈：» гэж эхэлсэн, Бат ээждээ бичсэн.",
+  "correct_answer": "服务台的人",
+  "explanation": "«服务台的人帮助我找了半个小时» — лавлахын хүмүүс.",
   "order_index": 25,
   "id": "xinhsk3-l01-q25",
   "skillTags": [
