@@ -48,6 +48,7 @@ export function defaultCoverUrl(courseId: string): string | null {
   if (
     /^hsk[1-6]$/.test(courseId) ||
     /^fazhan-(chuji|zhongji|gaoji)[12]$/.test(courseId) ||
+    courseId === "xinhsk3" ||
     /^yct-[1-6]$/.test(courseId)
   ) {
     return `/covers/${courseId}.jpg`;
@@ -194,6 +195,12 @@ export const FAZHAN_HOME_LEVELS = [
     chipLabel: "高级综合 II",
     courseId: "fazhan-gaoji2",
     hskEquivalent: "HSK6 түвшин",
+  },
+  {
+    chipId: "xinhsk3",
+    chipLabel: "新HSK教程 3",
+    courseId: "xinhsk3",
+    hskEquivalent: "HSK 3.0 · 3-р түвшин",
   },
 ] as const;
 

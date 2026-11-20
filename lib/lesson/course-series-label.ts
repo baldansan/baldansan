@@ -49,6 +49,13 @@ const FAZHAN_SERIES: Record<string, CourseSeriesMeta> = {
     subtitle: "Developing Chinese 高级综合 II — ≈ HSK6, 15 хичээл",
     hskLevel: 6,
   },
+  // 新HSK教程 (外研社, HSK 3.0 шинэ стандарт) — 发展汉语-тай ижил «сурах бичгийн» курс.
+  xinhsk3: {
+    label: "新HSK教程 3",
+    title: "新HSK教程 3 · HSK 3.0 шинэ сурах бичиг",
+    subtitle: "New HSK Course 3 (外研社) — HSK 3.0 3-р түвшин, 18 хичээл, 490 үг",
+    hskLevel: 3,
+  },
 };
 
 const YCT_SERIES: Record<string, CourseSeriesMeta> = {
