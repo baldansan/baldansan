@@ -283,11 +283,25 @@ function TextOptionList({
     <div className="bs-mtp-options">
       {options.map((opt) => {
         const state = optionState(opt.key, answer, correctKey, revealed);
+        // Хариу гарсны дараа сонголтын үг дээр дарж утгыг нь харах, цээжлэх үгэнд нэмэх боломжтой.
+        if (revealed) {
+          return (
+            <div
+              key={opt.key}
+              className={`bs-mtp-option bs-mtp-option--done${OPTION_STATE_CLASS[state]}`}
+            >
+              <span className="bs-mtp-option-key">{opt.key}</span>
+              <span className="bs-mtp-option-text hanzi" translate="no">
+                <TapZh text={opt.text} />
+              </span>
+              <OptionMark state={state} />
+            </div>
+          );
+        }
         return (
           <button
             key={opt.key}
             type="button"
-            disabled={revealed}
             onClick={() => onPick(opt.key)}
             className={`bs-mtp-option${OPTION_STATE_CLASS[state]}`}
           >
