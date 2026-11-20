@@ -293,14 +293,6 @@ export function ReviewMenuHubClient({
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
-        <PrefetchLink href="/review/huh-hot" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>🏫</span>
-          <span className="bs-tm-card-body">
-            <span className="bs-tm-card-title">{tr(locale, "Хөх хотынхонд")}</span>
-            <span className="bs-tm-card-sub">{tr(locale, "HSK 3: хичээлийн өмнө ханзаа бичиж бэлд")}</span>
-          </span>
-          <span className="bs-tm-card-chev" aria-hidden>›</span>
-        </PrefetchLink>
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Сонсох · Ярих")}</p>
         <PrefetchLink href={`/listen/daily?level=${activeLevel}`} className="bs-tm-card">
