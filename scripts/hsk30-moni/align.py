@@ -88,7 +88,7 @@ for i, q in enumerate(ls):
         e = (ends[0] - 0.2) if ends else seg[-1]["e"]
     if caps[i] is not None and s < caps[i] < e: e = caps[i] - 0.3
     # cap absurdly long windows (e.g. missing next); listening items rarely exceed 4.5 min incl. two plays
-    if e - s > 300: e = s + 300
+    if e - s > 600: e = s + 600
     res[str(q["q_no"])] = [round(s, 2), round(e, 2)]
 # shared passage groups: identical script lines → same window (start of first, end of last)
 i = 0
