@@ -123,7 +123,9 @@ export function ClassHomeCard({ loggedIn, catalog, fazhanCatalog }: Props) {
           {tr(locale, "Миний анги")}
         </p>
         <p className="mt-0.5 text-xl font-black" translate="no">
-          HSK {level} · {classroom.name}
+          {new RegExp(`hsk\\s*-?\\s*${level}`, "i").test(classroom.name)
+            ? classroom.name
+            : `HSK ${level} · ${classroom.name}`}
         </p>
         <p className="mt-1 text-xs font-semibold opacity-95">
           {tr(locale, "Доорх бүх зүйл чиний ангийн түвшинд тохирсон.")}
