@@ -1940,3 +1940,7 @@ html[data-theme="dark"] .bs-hz-radical-tag{background:var(--bs-green);color:#fff
 html[data-theme="dark"] .bs-hz-type,
 html[data-theme="dark"] .bs-hz-pop-tag{color:#f5c877}
 html[data-theme="dark"] .bs-hz-role--pho{background:#232a52;color:#a9b6ff;border-color:#34407a}
+
+/* Үгийн цонх (WordTapSheet) — хичээлээс гадна (шалгалтын дасгал) ч ажиллахын тулд ерөнхий загварт */
+.bs-word-tap-backdrop{position:fixed;inset:0;z-index:10040;background:rgba(0,0,0,.12)}
+.bs-word-tap-popover.bs-bichleg-sheet{position:fixed;z-index:10050;width:auto;max-width:min(360px,calc(100vw - 16px));max-height:min(70vh,520px);overflow-y:auto;border-radius:14px;padding:16px;animation:none;box-shadow:var(--bs-shadow-lg,0 12px 40px rgba(0,0,0,.16));border:1px solid var(--bs-line,#e8e8e4)}
