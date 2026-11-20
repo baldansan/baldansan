@@ -873,7 +873,7 @@ export default function ExercisesModule({
       )}
 
       <div className="bs-ex-section" translate="no">{q.section}</div>
-      {q.instruction && <div className="bs-ex-instr" translate="no">{q.instruction}</div>}
+      {q.instruction && q.instruction.trim() !== (q.section ?? "").trim() && <div className="bs-ex-instr" translate="no">{q.instruction}</div>}
 
       {hasAudio && (
         <div className="bs-ex-audiobar">

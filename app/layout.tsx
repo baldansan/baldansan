@@ -7,6 +7,7 @@ import { AppProviders } from "@/components/providers/app-providers";
 import { UiLocaleProvider } from "@/components/i18n/ui-locale-provider";
 import { getServerUiLocale } from "@/lib/i18n/server-locale";
 import { PwaServiceWorkerRegister } from "@/components/pwa-service-worker-register";
+import "./dark-auto.css";
 import "./globals.css";
 import "./buunduu-theme.css";
 import "./motion.css";
