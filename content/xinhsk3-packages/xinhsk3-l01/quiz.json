@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "我________今天不上课，所以没来。",
+  "options": [
+   "觉得",
+   "应该",
+   "帮助",
+   "以为"
+  ],
+  "correct_answer": "以为",
+  "explanation": "«Өнөөдөр хичээлгүй гэж бодсон (гэтэл хичээлтэй байж)» — буруу гарсан бодол тул 以为.",
+  "order_index": 1,
+  "id": "xinhsk3-l01-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的________多吗？我帮你拿。",
+  "options": [
+   "头发",
+   "号码",
+   "行李",
+   "照片"
+  ],
+  "correct_answer": "行李",
+  "explanation": "«Ачаа чинь их үү? Би бариад өгье» — 行李.",
+  "order_index": 2,
+  "id": "xinhsk3-l01-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "别________，我们还有时间。",
+  "options": [
+   "发现",
+   "着急",
+   "重要",
+   "年轻"
+  ],
+  "correct_answer": "着急",
+  "explanation": "«Битгий сандар, цаг байна» — 别着急.",
+  "order_index": 3,
+  "id": "xinhsk3-l01-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "出国的时候一定要带________。",
+  "options": [
+   "护照",
+   "箱子",
+   "服务台",
+   "中间"
+  ],
+  "correct_answer": "护照",
+  "explanation": "«Гадаадад гарахдаа паспортоо заавал авч яв» — 护照.",
+  "order_index": 4,
+  "id": "xinhsk3-l01-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她的________又黑又长，很漂亮。",
+  "options": [
+   "身高",
+   "照片",
+   "行李",
+   "头发"
+  ],
+  "correct_answer": "头发",
+  "explanation": "«Үс нь хар, урт» — 头发.",
+  "order_index": 5,
+  "id": "xinhsk3-l01-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________我的手机不见了。",
+  "options": [
+   "接",
+   "站",
+   "发现",
+   "帮助"
+  ],
+  "correct_answer": "发现",
+  "explanation": "«Утас маань алга болсныг анзаарлаа» — 发现.",
+  "order_index": 6,
+  "id": "xinhsk3-l01-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "明天上午我去机场________你。",
+  "options": [
+   "像",
+   "接",
+   "带",
+   "丢"
+  ],
+  "correct_answer": "接",
+  "explanation": "«Маргааш өглөө буудлаас чамайг тосно» — 接.",
+  "order_index": 7,
+  "id": "xinhsk3-l01-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这件事非常________，你别忘了。",
+  "options": [
+   "重要",
+   "着急",
+   "短",
+   "瘦"
+  ],
+  "correct_answer": "重要",
+  "explanation": "«Энэ хэрэг маш чухал, битгий мартаарай» — 重要.",
+  "order_index": 8,
+  "id": "xinhsk3-l01-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请大家________在中间，我们照一张照片。",
+  "options": [
+   "带",
+   "接",
+   "丢",
+   "站"
+  ],
+  "correct_answer": "站",
+  "explanation": "«Бүгд дунд нь зогсоорой» — 站在中间.",
+  "order_index": 9,
+  "id": "xinhsk3-l01-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "谢谢你的________，我的箱子找到了。",
+  "options": [
+   "以为",
+   "号码",
+   "帮助",
+   "发现"
+  ],
+  "correct_answer": "帮助",
+  "explanation": "«Тусалсанд баярлалаа» — 你的帮助.",
+  "order_index": 10,
+  "id": "xinhsk3-l01-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你看起来很累。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи ядрах хэрэггүй.",
+   "Чи ядарсан харагдаж байна.",
+   "Чи их ядарсан уу?",
+   "Чи намайг харж байна уу?"
+  ],
+  "correct_answer": "Чи ядарсан харагдаж байна.",
+  "explanation": "看起来 — хараад төрсөн сэтгэгдэл: «… харагдаж байна».",
+  "order_index": 11,
+  "id": "xinhsk3-l01-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l01-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这个箱子看上去很新。",
+   "这个箱子很新看上去。",
+   "这个看上去箱子很新。",
+   "看箱子这个上去很新。"
+  ],
+  "correct_answer": "这个箱子看上去很新。",
+  "explanation": "Юм + 看上去 + ямар. 看上去 нь тэмдэг нэрийн өмнө орно.",
+  "order_index": 12,
+  "id": "xinhsk3-l01-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我好像在哪儿见过他。» — 哪儿 ямар утгатай вэ?",
+  "options": [
+   "хаана вэ?",
+   "энд",
+   "тэнд",
+   "хаа нэгтээ"
+  ],
+  "correct_answer": "хаа нэгтээ",
+  "explanation": "Хүүрнэх өгүүлбэрт 哪儿 «хаа нэгтээ» гэсэн тодорхойгүй утгатай.",
+  "order_index": 13,
+  "id": "xinhsk3-l01-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь асуулт БИШ вэ?",
+  "options": [
+   "他是谁？",
+   "你去哪儿？",
+   "我想吃点儿什么。",
+   "你想吃什么？"
+  ],
+  "correct_answer": "我想吃点儿什么。",
+  "explanation": "«Би юм идмээр байна» — 点儿-тэй, асуултын тэмдэггүй хүүрнэх өгүүлбэр.",
+  "order_index": 14,
+  "id": "xinhsk3-l01-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хэзээ нэг өдөр хамт кино үзье» гэхэд аль нь тохирох вэ?",
+  "options": [
+   "一起哪天看电影呢？",
+   "哪天一起看电影吧。",
+   "哪天一起看电影吗？",
+   "什么天一起看电影吧。"
+  ],
+  "correct_answer": "哪天一起看电影吧。",
+  "explanation": "哪天 — «хэзээ нэг өдөр»; санал болгож байгаа тул 吧.",
+  "order_index": 15,
+  "id": "xinhsk3-l01-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l01-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь зөв бэ?",
+  "options": [
+   "那个穿着黑衣服的人是我老师。",
+   "那个人穿着黑衣服的是我老师。",
+   "那个穿着黑衣服人是我老师。",
+   "穿着那个黑衣服的是人我老师。"
+  ],
+  "correct_answer": "那个穿着黑衣服的人是我老师。",
+  "explanation": "Тодотгол + 的 + нэр үг. Нэр үг (人) хамгийн сүүлд орно.",
+  "order_index": 16,
+  "id": "xinhsk3-l01-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«拿着红箱子的短头发的年轻人» гэж хэнийг хэлж байна вэ?",
+  "options": [
+   "Богино чемодантай улаан үстэй хүн",
+   "Залуу хүний улаан чемодан",
+   "Улаан үстэй хүний чемодан",
+   "Улаан чемодан барьсан, богино үстэй залуу хүн"
+  ],
+  "correct_answer": "Улаан чемодан барьсан, богино үстэй залуу хүн",
+  "explanation": "Хоёр тодотгол: 拿着红箱子的 + 短头发的 → 年轻人.",
+  "order_index": 17,
+  "id": "xinhsk3-l01-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "以为 ба 觉得-ийн ялгаа юу вэ?",
+  "options": [
+   "以为 — ирээдүй; 觉得 — өнгөрсөн",
+   "以为 — эелдэг; 觉得 — эелдэг бус",
+   "以为 — бодсон нь буруу гарсан; 觉得 — одоогийн бодол",
+   "Ялгаагүй"
+  ],
+  "correct_answer": "以为 — бодсон нь буруу гарсан; 觉得 — одоогийн бодол",
+  "explanation": "我以为他是老师 — «багш гэж бодсон чинь биш байж».",
+  "order_index": 18,
+  "id": "xinhsk3-l01-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk3-l01-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«一米七» гэдэг нь хэд вэ?",
+  "options": [
+   "7.1 м",
+   "1.70 м",
+   "1.07 м",
+   "17 м"
+  ],
+  "correct_answer": "1.70 м",
+  "explanation": "Өндрийг хэлэхдээ сүүлийн «十»-г орхидог: 一米七 = 1.70 м.",
+  "order_index": 19,
+  "id": "xinhsk3-l01-q19",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "长 гэдэг ханз «长得像» дотор яаж уншигдах вэ?",
+  "options": [
+   "zhǎng",
+   "cháng",
+   "zhāng",
+   "chǎng"
+  ],
+  "correct_answer": "zhǎng",
+  "explanation": "长得… — төрх байдал: zhǎng. «Урт» гэсэн утгаар cháng.",
+  "order_index": 20,
+  "id": "xinhsk3-l01-q20",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk3-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小林以为手机上的人是谁？",
+  "options": [
+   "巴图的老师",
+   "巴图的同学",
+   "巴图的妈妈",
+   "巴图的姐姐"
+  ],
+  "correct_answer": "巴图的姐姐",
+  "explanation": "«我还以为是你姐姐呢» — эгч нь гэж андуурсан.",
+  "order_index": 21,
+  "id": "xinhsk3-l01-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：娜拉的箱子是什么颜色的？",
+  "options": [
+   "白色",
+   "黄色",
+   "红色",
+   "黑色"
+  ],
+  "correct_answer": "红色",
+  "explanation": "«一个红色的大箱子» — улаан өнгийн том чемодан.",
+  "order_index": 22,
+  "id": "xinhsk3-l01-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：娜拉的护照在哪儿？",
+  "options": [
+   "在飞机上",
+   "在她的包里",
+   "在箱子里",
+   "在服务台"
+  ],
+  "correct_answer": "在她的包里",
+  "explanation": "«护照在我的包里» — цүнхэнд нь.",
+  "order_index": 23,
+  "id": "xinhsk3-l01-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：娜拉的头发怎么样？",
+  "options": [
+   "很短",
+   "很长",
+   "很白",
+   "很多"
+  ],
+  "correct_answer": "很短",
+  "explanation": "«娜拉的头发很短» — үс нь богино.",
+  "order_index": 24,
+  "id": "xinhsk3-l01-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：谁帮助娜拉找到了箱子？",
+  "options": [
+   "巴图",
+   "小林",
+   "她妈妈",
+   "服务台的人"
+  ],
+  "correct_answer": "服务台的人",
+  "explanation": "«服务台的人帮助我找了半个小时» — лавлахын хүмүүс.",
+  "order_index": 25,
+  "id": "xinhsk3-l01-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

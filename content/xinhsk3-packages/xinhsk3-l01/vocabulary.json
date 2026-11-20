@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "以为",
+  "pinyin": "yǐwéi",
+  "mongolian": "… гэж бодсон (гэтэл буруу байж)",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我以为今天是星期五。",
+  "exampleMongolian": "Би өнөөдрийг баасан гараг гэж бодсон юм.",
+  "pos": "үйл үг",
+  "collocations_zh": "我还以为…呢"
+ },
+ {
+  "chinese": "像",
+  "pinyin": "xiàng",
+  "mongolian": "адил, төстэй байх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他很像他爸爸。",
+  "exampleMongolian": "Тэр аавтайгаа их төстэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "长得像 / 很像"
+ },
+ {
+  "chinese": "长",
+  "pinyin": "zhǎng",
+  "mongolian": "өсөх; (төрх) … байх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她长得很漂亮。",
+  "exampleMongolian": "Тэр их хөөрхөн төрхтэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "长得高 / 长大"
+ },
+ {
+  "chinese": "身高",
+  "pinyin": "shēngāo",
+  "mongolian": "биеийн өндөр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你身高多少？",
+  "exampleMongolian": "Чи хэдэн сантиметр өндөр вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "身高一米七"
+ },
+ {
+  "chinese": "米",
+  "pinyin": "mǐ",
+  "mongolian": "метр",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我哥哥身高一米八。",
+  "exampleMongolian": "Манай ах нэг метр наян өндөр.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一米六 / 一百米"
+ },
+ {
+  "chinese": "瘦",
+  "pinyin": "shòu",
+  "mongolian": "туранхай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你太瘦了，多吃点儿。",
+  "exampleMongolian": "Чи хэтэрхий туранхай байна, жаахан ахиу ид.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "又高又瘦 / 瘦了"
+ },
+ {
+  "chinese": "接",
+  "pinyin": "jiē",
+  "mongolian": "тосох, угтаж авах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "明天我去车站接你。",
+  "exampleMongolian": "Маргааш би чамайг буудлаас тосно.",
+  "pos": "үйл үг",
+  "collocations_zh": "接人 / 接孩子"
+ },
+ {
+  "chinese": "行李",
+  "pinyin": "xíngli",
+  "mongolian": "ачаа тээш",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你的行李多不多？",
+  "exampleMongolian": "Чиний ачаа их үү?",
+  "pos": "нэр үг",
+  "collocations_zh": "拿行李 / 行李箱"
+ },
+ {
+  "chinese": "丢",
+  "pinyin": "diū",
+  "mongolian": "гээх, алга болгох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的手机丢了。",
+  "exampleMongolian": "Миний утас алга болчихлоо.",
+  "pos": "үйл үг",
+  "collocations_zh": "丢东西 / 丢了"
+ },
+ {
+  "chinese": "箱子",
+  "pinyin": "xiāngzi",
+  "mongolian": "чемодан, хайрцаг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这个箱子太重了。",
+  "exampleMongolian": "Энэ чемодан хэтэрхий хүнд байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "大箱子 / 一个箱子"
+ },
+ {
+  "chinese": "号码",
+  "pinyin": "hàomǎ",
+  "mongolian": "дугаар",
+  "hskLevel": "HSK3",
+  "exampleChinese": "你的电话号码是多少？",
+  "exampleMongolian": "Чиний утасны дугаар хэд вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "电话号码 / 房间号码"
+ },
+ {
+  "chinese": "好像",
+  "pinyin": "hǎoxiàng",
+  "mongolian": "… юм шиг, бололтой",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他好像不太高兴。",
+  "exampleMongolian": "Тэр нэг их баяртай биш бололтой.",
+  "pos": "дайвар үг",
+  "collocations_zh": "好像见过 / 好像要下雨"
+ },
+ {
+  "chinese": "重要",
+  "pinyin": "zhòngyào",
+  "mongolian": "чухал",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这件事很重要。",
+  "exampleMongolian": "Энэ хэрэг их чухал.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "重要的事 / 很重要"
+ },
+ {
+  "chinese": "着急",
+  "pinyin": "zháojí",
+  "mongolian": "сандрах, яарах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "别着急，慢慢说。",
+  "exampleMongolian": "Битгий сандар, аажуухан хэл.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "别着急 / 很着急"
+ },
+ {
+  "chinese": "护照",
+  "pinyin": "hùzhào",
+  "mongolian": "гадаад паспорт",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请给我看一下您的护照。",
+  "exampleMongolian": "Паспортоо үзүүлнэ үү.",
+  "pos": "нэр үг",
+  "collocations_zh": "带护照 / 护照号码"
+ },
+ {
+  "chinese": "服务台",
+  "pinyin": "fúwùtái",
+  "mongolian": "лавлах, үйлчилгээний ширээ",
+  "hskLevel": "HSK3",
+  "exampleChinese": "有问题可以去服务台问。",
+  "exampleMongolian": "Асуух зүйл байвал лавлах дээр очиж асууж болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "去服务台 / 服务台的人"
+ },
+ {
+  "chinese": "应该",
+  "pinyin": "yīnggāi",
+  "mongolian": "ёстой; … байх учиртай",
+  "hskLevel": "HSK3",
+  "exampleChinese": "他应该快到了。",
+  "exampleMongolian": "Тэр удахгүй ирэх ёстой.",
+  "pos": "туслах үйл үг",
+  "collocations_zh": "应该去 / 应该是"
+ },
+ {
+  "chinese": "站",
+  "pinyin": "zhàn",
+  "mongolian": "зогсох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "请站在这儿等我。",
+  "exampleMongolian": "Энд зогсоод намайг хүлээгээрэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "站着 / 站在门口"
+ },
+ {
+  "chinese": "中间",
+  "pinyin": "zhōngjiān",
+  "mongolian": "дунд",
+  "hskLevel": "HSK3",
+  "exampleChinese": "坐在中间的是我妈妈。",
+  "exampleMongolian": "Дунд нь сууж байгаа нь миний ээж.",
+  "pos": "нэр үг",
+  "collocations_zh": "站在中间 / 两个人中间"
+ },
+ {
+  "chinese": "短",
+  "pinyin": "duǎn",
+  "mongolian": "богино",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这条裤子有点儿短。",
+  "exampleMongolian": "Энэ өмд жаахан богино байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "短头发 / 时间短"
+ },
+ {
+  "chinese": "头发",
+  "pinyin": "tóufa",
+  "mongolian": "үс",
+  "hskLevel": "HSK3",
+  "exampleChinese": "她的头发又黑又长。",
+  "exampleMongolian": "Түүний үс хар бөгөөд урт.",
+  "pos": "нэр үг",
+  "collocations_zh": "长头发 / 洗头发"
+ },
+ {
+  "chinese": "年轻",
+  "pinyin": "niánqīng",
+  "mongolian": "залуу",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我们的老师很年轻。",
+  "exampleMongolian": "Манай багш их залуу.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "年轻人 / 看起来年轻"
+ },
+ {
+  "chinese": "发现",
+  "pinyin": "fāxiàn",
+  "mongolian": "анзаарах, олж мэдэх",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我发现他今天没来。",
+  "exampleMongolian": "Түүнийг өнөөдөр ирээгүйг би анзаарлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "发现问题 / 突然发现"
+ },
+ {
+  "chinese": "不见",
+  "pinyin": "bújiàn",
+  "mongolian": "алга болох",
+  "hskLevel": "HSK3",
+  "exampleChinese": "我的钱包不见了。",
+  "exampleMongolian": "Миний түрийвч алга болчихлоо.",
+  "pos": "үйл үг",
+  "collocations_zh": "不见了"
+ },
+ {
+  "chinese": "带",
+  "pinyin": "dài",
+  "mongolian": "авч явах; дагуулах",
+  "hskLevel": "HSK3",
+  "exampleChinese": "明天我带你去学校看看。",
+  "exampleMongolian": "Маргааш би чамайг сургууль руу дагуулж очно.",
+  "pos": "үйл үг",
+  "collocations_zh": "带朋友 / 带钱"
+ },
+ {
+  "chinese": "帮助",
+  "pinyin": "bāngzhù",
+  "mongolian": "туслах; тусламж",
+  "hskLevel": "HSK3",
+  "exampleChinese": "谢谢你的帮助。",
+  "exampleMongolian": "Тусалсанд баярлалаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "帮助别人 / 互相帮助"
+ },
+ {
+  "chinese": "照片",
+  "pinyin": "zhàopiàn",
+  "mongolian": "гэрэл зураг",
+  "hskLevel": "HSK3",
+  "exampleChinese": "这是我家人的照片。",
+  "exampleMongolian": "Энэ манай гэр бүлийн зураг.",
+  "pos": "нэр үг",
+  "collocations_zh": "一张照片 / 看照片"
+ }
+]
