@@ -445,7 +445,13 @@ export function startLearn(words: LearnWord[], size: number, keepOrder = false):
 }
 
 /** Хариултын дараах төлөв. Буруу бол үг 3 асуултын дараа эргэж ирнэ. */
-export function answerLearn(state: LearnState, wordId: number, correct: boolean): LearnState {
+/** `soft` — зөвд тооцсон ч бататгахаар дахин асууна; «алдсан үгс»-д оруулахгүй. */
+export function answerLearn(
+  state: LearnState,
+  wordId: number,
+  correct: boolean,
+  soft = false
+): LearnState {
   const rest = state.queue.filter((id) => id !== wordId);
   const asked = { ...state.asked, [wordId]: (state.asked[wordId] ?? 0) + 1 };
   if (correct) {
@@ -457,7 +463,7 @@ export function answerLearn(state: LearnState, wordId: number, correct: boolean)
     ...state,
     queue,
     asked,
-    missed: state.missed.includes(wordId) ? state.missed : [...state.missed, wordId],
+    missed: soft || state.missed.includes(wordId) ? state.missed : [...state.missed, wordId],
   };
 }
 

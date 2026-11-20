@@ -11,9 +11,19 @@ import type { LearnWord } from "@/lib/games/learn-session";
 type Props = {
   word: LearnWord;
   meaning: string;
-  /** Бүх ханзыг зурж дуусахад: тусламжгүй зурсан бол correct=true. */
-  onDone: (correct: boolean) => void;
+  /**
+   * Бүх ханзыг зурж дуусахад:
+   *  clean  — тусламжгүй зурсан (цээжилснээ баталсан)
+   *  helped — 1–2 зурлага дээр заавар авсан (зөвд тооцно, гэхдээ дараа дахин ирнэ)
+   *  failed — олон заавар авсан эсвэл «харуулах» дарсан
+   */
+  onDone: (result: WriteResult) => void;
 };
+
+export type WriteResult = "clean" | "helped" | "failed";
+
+/** Ийм хүртэл заавар авсан ч «болж байна» гэж тооцно. */
+const MAX_SOFT_HINTS = 2;
 
 /** Нэг зурлага дээр ийм олон алдвал заавар гарч, «цээжлээгүй» гэж тооцно. */
 const HINT_AFTER_MISSES = 3;
@@ -27,22 +37,31 @@ export function WriteRound({ word, meaning, onDone }: Props) {
   const mountId = useId().replace(/:/g, "");
   const chars = [...(word.simplified ?? "")];
   const [index, setIndex] = useState(0);
-  const [helped, setHelped] = useState(false);
+  const [hints, setHints] = useState(0);
+  const [result, setResult] = useState<WriteResult | null>(null);
   const [state, setState] = useState<"loading" | "draw" | "shown" | "done">("loading");
   const [strokes, setStrokes] = useState({ done: 0, total: 0 });
   const writerRef = useRef<HanziWriter | null>(null);
-  const helpedRef = useRef(false);
+  const hintsRef = useRef(0);
+  const shownRef = useRef(false);
   const finishedRef = useRef(false);
 
-  const finish = (ok: boolean) => {
+  const finish = () => {
     if (finishedRef.current) return;
     finishedRef.current = true;
+    const outcome: WriteResult =
+      shownRef.current || hintsRef.current > MAX_SOFT_HINTS
+        ? "failed"
+        : hintsRef.current > 0
+          ? "helped"
+          : "clean";
+    setResult(outcome);
     setState("done");
-    onDone(ok);
+    onDone(outcome);
   };
 
   const advance = () => {
-    if (index + 1 >= chars.length) finish(!helpedRef.current);
+    if (index + 1 >= chars.length) finish();
     else setIndex(index + 1);
   };
 
@@ -78,21 +97,23 @@ export function WriteRound({ word, meaning, onDone }: Props) {
         drawingColor: "#7C4DDB",
         drawingWidth: 12,
         strokeColor: "#4A2A9E",
-        highlightColor: "#F47BA5",
+        // Дуусахад НОГООН гэрэлтэнэ (ягаан/улаан нь «буруу» мэт харагддаг байсан).
+        highlightColor: "#22C55E",
         charDataLoader: localHanziCharDataLoader,
       });
       writerRef.current = writer;
       setStrokes({ done: 0, total });
       setState("draw");
       void writer.quiz({
-        leniency: 1.25,
+        leniency: 1.6,
         showHintAfterMisses: HINT_AFTER_MISSES,
         markStrokeCorrectAfterMisses: 6,
         highlightOnComplete: true,
         onMistake: (data: { mistakesOnStroke: number }) => {
-          if (data.mistakesOnStroke >= HINT_AFTER_MISSES && !helpedRef.current) {
-            helpedRef.current = true;
-            setHelped(true);
+          // Нэг зурлага дээр заавар гарах мөчид л нэг удаа тоолно.
+          if (data.mistakesOnStroke === HINT_AFTER_MISSES) {
+            hintsRef.current += 1;
+            setHints(hintsRef.current);
           }
         },
         onCorrectStroke: (data: { strokeNum: number }) => {
@@ -118,8 +139,7 @@ export function WriteRound({ word, meaning, onDone }: Props) {
   function showAnswer() {
     const writer = writerRef.current;
     if (!writer || state !== "draw") return;
-    helpedRef.current = true;
-    setHelped(true);
+    shownRef.current = true;
     writer.cancelQuiz();
     setState("shown");
     void writer.animateCharacter();
@@ -164,7 +184,11 @@ export function WriteRound({ word, meaning, onDone }: Props) {
         </div>
       ) : null}
 
-      <div className="bs-write-grid mx-auto mt-3">
+      <div
+        className={`bs-write-grid mx-auto mt-3${
+          result === "clean" || result === "helped" ? " bs-write-grid--ok" : ""
+        }`}
+      >
         <div id={mountId} className="bs-write-grid-canvas" />
       </div>
 
@@ -177,13 +201,29 @@ export function WriteRound({ word, meaning, onDone }: Props) {
               ? `${tr(locale, "Зурлага")} ${strokes.done}/${strokes.total}`
               : ""}
       </p>
-      {helped && state !== "done" ? (
-        <p className="mt-1 text-center text-xs font-semibold text-rose-600">
-          {tr(locale, "Тусламж авсан тул энэ үг дахин ирнэ.")}
+      {hints > 0 && state === "draw" ? (
+        <p className="mt-1 text-center text-xs font-semibold text-slate-500">
+          {tr(locale, "Заавар")}: {hints}/{MAX_SOFT_HINTS}
+        </p>
+      ) : null}
+      {result === "clean" ? (
+        <p className="mt-2 rounded-xl bg-emerald-50 px-3 py-2 text-center text-sm font-extrabold text-emerald-700">
+          ✓ {tr(locale, "Зөв! Цээжилснээ баталлаа")}
+        </p>
+      ) : null}
+      {result === "helped" ? (
+        <p className="mt-2 rounded-xl bg-emerald-50 px-3 py-2 text-center text-sm font-extrabold text-emerald-700">
+          👍 {tr(locale, "Болж байна!")}{" "}
+          <span className="font-semibold">{tr(locale, "Бататгахын тулд дараа дахин ирнэ.")}</span>
+        </p>
+      ) : null}
+      {result === "failed" ? (
+        <p className="mt-2 rounded-xl bg-slate-100 px-3 py-2 text-center text-sm font-bold text-slate-600">
+          {tr(locale, "Зүгээр ээ — энэ үг дахин ирнэ.")}
         </p>
       ) : null}
 
-      {state === "shown" ? (
+      {state === "done" ? null : state === "shown" ? (
         <button
           type="button"
           onClick={advance}

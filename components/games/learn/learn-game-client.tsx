@@ -247,18 +247,23 @@ export function LearnGameClient() {
 
   /** Нэг (эсвэл холбох үед хэд хэдэн) үгийн хариултыг бүртгээд дараагийн асуулт руу. */
   const settle = useCallback(
-    (results: { word: LearnWord; correct: boolean }[], delay: number) => {
+    (
+      results: { word: LearnWord; correct: boolean; /** Зөвд тооцно, гэхдээ дараа дахин асууна. */ requeue?: boolean }[],
+      delay: number
+    ) => {
       if (!learn) return;
       let state = learn;
       let gained = 0;
       let right = 0;
       for (const r of results) {
         // SRS-д зөвхөн тухайн үгийн ЭХНИЙ хариулт тооцогдоно.
-        if (r.word.id > 0 && (state.asked[r.word.id] ?? 0) === 0) rateGameWord(r.word.id, r.correct);
+        if (r.word.id > 0 && !r.requeue && (state.asked[r.word.id] ?? 0) === 0) {
+          rateGameWord(r.word.id, r.correct);
+        }
         const outcome = juice.answer(r.correct);
         gained += outcome.points;
         if (r.correct) right += 1;
-        state = answerLearn(state, r.word.id, r.correct);
+        state = answerLearn(state, r.word.id, r.correct && !r.requeue, Boolean(r.requeue));
       }
       const stats = {
         correct: answers.correct + right,
@@ -934,7 +939,18 @@ export function LearnGameClient() {
             key={qNo}
             word={question.word}
             meaning={meaning(question.word)}
-            onDone={(correct) => settle([{ word: question.word, correct }], correct ? 900 : 1500)}
+            onDone={(result) =>
+              settle(
+                [
+                  {
+                    word: question.word,
+                    correct: result !== "failed",
+                    requeue: result === "helped",
+                  },
+                ],
+                result === "clean" ? 1100 : 1900
+              )
+            }
           />
         ) : null}
 
