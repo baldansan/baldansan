@@ -1,0 +1,162 @@
+[
+ {
+  "chinese": "手表",
+  "pinyin": "shǒubiǎo",
+  "mongolian": "бугуйн цаг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "妈妈送了我一块手表。",
+  "exampleMongolian": "Ээж надад нэг бугуйн цаг бэлэглэсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "买手表 / 一块手表"
+ },
+ {
+  "chinese": "左边",
+  "pinyin": "zuǒbian",
+  "mongolian": "зүүн тал",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我觉得左边的手表更好看。",
+  "exampleMongolian": "Миний бодоход зүүн талын цаг илүү гоё.",
+  "pos": "нэр үг",
+  "collocations_zh": "左边的 / 坐在左边"
+ },
+ {
+  "chinese": "左",
+  "pinyin": "zuǒ",
+  "mongolian": "зүүн",
+  "hskLevel": "HSK2",
+  "exampleChinese": "出门往左走就到学校了。",
+  "exampleMongolian": "Гараад зүүн тийш явахад сургууль байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "往左 / 左手"
+ },
+ {
+  "chinese": "比",
+  "pinyin": "bǐ",
+  "mongolian": "-аас/-ээс (харьцуулах); харьцуулах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "姐姐比妹妹高。",
+  "exampleMongolian": "Эгч дүүгээсээ өндөр.",
+  "pos": "угтвар үг",
+  "collocations_zh": "A比B高 / 比…更…"
+ },
+ {
+  "chinese": "右边",
+  "pinyin": "yòubian",
+  "mongolian": "баруун тал",
+  "hskLevel": "HSK2",
+  "exampleChinese": "床的右边是桌子。",
+  "exampleMongolian": "Орны баруун талд ширээ байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "右边的 / 坐在右边"
+ },
+ {
+  "chinese": "右",
+  "pinyin": "yòu",
+  "mongolian": "баруун",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你右手里有什么？",
+  "exampleMongolian": "Чиний баруун гарт юу байна?",
+  "pos": "нэр үг",
+  "collocations_zh": "往右 / 右手"
+ },
+ {
+  "chinese": "记得",
+  "pinyin": "jìde",
+  "mongolian": "санаж байх, мартаагүй байх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我记得你的名字。",
+  "exampleMongolian": "Би чиний нэрийг санаж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "我记得… / 记得不记得"
+ },
+ {
+  "chinese": "爱情片",
+  "pinyin": "àiqíngpiàn",
+  "mongolian": "хайрын кино",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我喜欢看爱情片。",
+  "exampleMongolian": "Би хайрын кино үзэх дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "看爱情片"
+ },
+ {
+  "chinese": "有意思",
+  "pinyin": "yǒu yìsi",
+  "mongolian": "сонирхолтой",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这本书很有意思。",
+  "exampleMongolian": "Энэ ном их сонирхолтой.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很有意思 / 更有意思"
+ },
+ {
+  "chinese": "点",
+  "pinyin": "diǎn",
+  "mongolian": "захиалах (хоол)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我们点这几个菜，谢谢。",
+  "exampleMongolian": "Бид эдгээр хэдэн хоолыг захиалъя, баярлалаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "点菜"
+ },
+ {
+  "chinese": "虽然",
+  "pinyin": "suīrán",
+  "mongolian": "хэдийгээр, -сан ч",
+  "hskLevel": "HSK2",
+  "exampleChinese": "虽然下雨了，但是不太冷。",
+  "exampleMongolian": "Бороо орсон ч тийм хүйтэн биш.",
+  "pos": "холбоос",
+  "collocations_zh": "虽然……但是……"
+ },
+ {
+  "chinese": "但是",
+  "pinyin": "dànshì",
+  "mongolian": "гэхдээ, харин",
+  "hskLevel": "HSK2",
+  "exampleChinese": "虽然有点儿累，但是我很喜欢游泳。",
+  "exampleMongolian": "Жаахан ядарсан ч, би усанд сэлэх их дуртай.",
+  "pos": "холбоос",
+  "collocations_zh": "虽然……但是……"
+ },
+ {
+  "chinese": "花",
+  "pinyin": "huā",
+  "mongolian": "зарцуулах (мөнгө, цаг)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "妈妈买了很多东西，花了不少钱。",
+  "exampleMongolian": "Ээж олон юм авч, нэлээд мөнгө зарсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "花钱 / 花时间"
+ },
+ {
+  "chinese": "妻子",
+  "pinyin": "qīzi",
+  "mongolian": "эхнэр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这块手表是送给我妻子的。",
+  "exampleMongolian": "Энэ цагийг эхнэртээ бэлэглэх гэж байгаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "我的妻子"
+ },
+ {
+  "chinese": "丈夫",
+  "pinyin": "zhàngfu",
+  "mongolian": "нөхөр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "星期天，我和丈夫去看电影。",
+  "exampleMongolian": "Ням гарагт би нөхөртэйгээ кино үзэхээр явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "我丈夫"
+ },
+ {
+  "chinese": "饭馆",
+  "pinyin": "fànguǎn",
+  "mongolian": "зоогийн газар",
+  "hskLevel": "HSK2",
+  "exampleChinese": "明天我们要去饭馆吃饭。",
+  "exampleMongolian": "Маргааш бид зоогийн газар хоол идэхээр явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "去饭馆 / 饭馆的菜"
+ }
+]

@@ -1,0 +1,382 @@
+[
+ {
+  "type": "cloze",
+  "question": "我是中国________。",
+  "options": [
+   "国",
+   "吗",
+   "的",
+   "人"
+  ],
+  "correct_answer": "人",
+  "explanation": "«Би хятад хүн» — 中国人.",
+  "order_index": 1,
+  "id": "xinhsk1-l03-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你是________国人？",
+  "options": [
+   "吗",
+   "她",
+   "哪",
+   "谁"
+  ],
+  "correct_answer": "哪",
+  "explanation": "«Чи аль улсын хүн бэ?» — 哪国人.",
+  "order_index": 2,
+  "id": "xinhsk1-l03-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这是________？ 这是我女朋友。",
+  "options": [
+   "的",
+   "谁",
+   "哪",
+   "吗"
+  ],
+  "correct_answer": "谁",
+  "explanation": "«Энэ хэн бэ?» — 谁.",
+  "order_index": 3,
+  "id": "xinhsk1-l03-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你工作忙________？",
+  "options": [
+   "吗",
+   "哪",
+   "是",
+   "的"
+  ],
+  "correct_answer": "吗",
+  "explanation": "Тийм/үгүй асуулт — 吗.",
+  "order_index": 4,
+  "id": "xinhsk1-l03-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我很________你们。",
+  "options": [
+   "忙",
+   "是",
+   "对",
+   "想"
+  ],
+  "correct_answer": "想",
+  "explanation": "«Би та нарыг санаж байна» — 想.",
+  "order_index": 5,
+  "id": "xinhsk1-l03-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________是陈天中的女朋友。",
+  "options": [
+   "我们",
+   "这",
+   "她",
+   "你"
+  ],
+  "correct_answer": "她",
+  "explanation": "«Тэр бол Чэнь Тяньчжуны найз охин» — 她.",
+  "order_index": 6,
+  "id": "xinhsk1-l03-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他太________了，没有时间。",
+  "options": [
+   "人",
+   "忙",
+   "想",
+   "对"
+  ],
+  "correct_answer": "忙",
+  "explanation": "«Тэр дэндүү завгүй» — 太忙了.",
+  "order_index": 7,
+  "id": "xinhsk1-l03-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：你是中国人吗？B：________，我是中国人。",
+  "options": [
+   "对",
+   "国",
+   "谁",
+   "还"
+  ],
+  "correct_answer": "对",
+  "explanation": "«Тийм, би хятад хүн» — 对.",
+  "order_index": 8,
+  "id": "xinhsk1-l03-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我是法国人。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би хятад хүн.",
+   "Би тайланд хүн.",
+   "Би багш.",
+   "Би франц хүн."
+  ],
+  "correct_answer": "Би франц хүн.",
+  "explanation": "法国人 — франц хүн.",
+  "order_index": 9,
+  "id": "xinhsk1-l03-q09",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би хятад хүн биш» — аль нь зөв бэ?",
+  "options": [
+   "我不中国人。",
+   "我没是中国人。",
+   "我不是中国人。",
+   "我是不中国人。"
+  ],
+  "correct_answer": "我不是中国人。",
+  "explanation": "Үгүйсгэхэд 不是.",
+  "order_index": 10,
+  "id": "xinhsk1-l03-q10",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чиний нэр» — аль нь зөв бэ?",
+  "options": [
+   "名字你的",
+   "你的名字",
+   "你名字的",
+   "的你名字"
+  ],
+  "correct_answer": "你的名字",
+  "explanation": "Дараалал: эзэмшигч + 的 + нэр.",
+  "order_index": 11,
+  "id": "xinhsk1-l03-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт 的-г орхиж болох вэ?",
+  "options": [
+   "我（　）妈妈",
+   "我（　）名字",
+   "我（　）手机",
+   "我（　）书"
+  ],
+  "correct_answer": "我（　）妈妈",
+  "explanation": "Ойр хүн (ээж) дээр 的-г орхиж болно.",
+  "order_index": 12,
+  "id": "xinhsk1-l03-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи завгүй юу?» — аль нь зөв бэ?",
+  "options": [
+   "你吗忙？",
+   "你忙谁？",
+   "你忙哪？",
+   "你忙吗？"
+  ],
+  "correct_answer": "你忙吗？",
+  "explanation": "吗 төгсгөлд.",
+  "order_index": 13,
+  "id": "xinhsk1-l03-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт 吗 хэрэггүй вэ?",
+  "options": [
+   "你很忙吗？",
+   "你有姐姐吗？",
+   "你是哪国人？",
+   "你是学生吗？"
+  ],
+  "correct_answer": "你是哪国人？",
+  "explanation": "哪 асуух үгтэй өгүүлбэрт 吗 нэмэхгүй.",
+  "order_index": 14,
+  "id": "xinhsk1-l03-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l03-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月的中文老师是哪国人？",
+  "options": [
+   "日本人",
+   "中国人",
+   "法国人",
+   "泰国人"
+  ],
+  "correct_answer": "中国人",
+  "explanation": "«我的中文老师也是中国人».",
+  "order_index": 15,
+  "id": "xinhsk1-l03-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文是哪国人？",
+  "options": [
+   "中国人",
+   "法国人",
+   "泰国人",
+   "日本人"
+  ],
+  "correct_answer": "中国人",
+  "explanation": "«我是中国人».",
+  "order_index": 16,
+  "id": "xinhsk1-l03-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：陈天中的女朋友是哪国人？",
+  "options": [
+   "中国人",
+   "法国人",
+   "日本人",
+   "泰国人"
+  ],
+  "correct_answer": "泰国人",
+  "explanation": "«她也是泰国人».",
+  "order_index": 17,
+  "id": "xinhsk1-l03-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：安妮问什么？",
+  "options": [
+   "你是谁？",
+   "这是我的书。",
+   "你女朋友是哪国人？",
+   "你工作忙吗？"
+  ],
+  "correct_answer": "你女朋友是哪国人？",
+  "explanation": "Анни «你女朋友是哪国人？» гэж асуусан.",
+  "order_index": 18,
+  "id": "xinhsk1-l03-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一飞怎么叫王一雪？",
+  "options": [
+   "妈妈",
+   "姐姐",
+   "老师",
+   "同学"
+  ],
+  "correct_answer": "姐姐",
+  "explanation": "«姐姐！»",
+  "order_index": 19,
+  "id": "xinhsk1-l03-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：他们最后说什么？",
+  "options": [
+   "我想你／我想你们",
+   "再见",
+   "对不起",
+   "谢谢"
+  ],
+  "correct_answer": "我想你／我想你们",
+  "explanation": "«我们很想你», «我也想你们».",
+  "order_index": 20,
+  "id": "xinhsk1-l03-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

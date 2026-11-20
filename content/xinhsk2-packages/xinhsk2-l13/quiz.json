@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "________就要到了，我们给老师准备一个礼物吧。",
+  "options": [
+   "洗手间",
+   "笔",
+   "班",
+   "新年"
+  ],
+  "correct_answer": "新年",
+  "explanation": "«Шинэ жил удахгүй ирнэ» — 新年就要到了.",
+  "order_index": 1,
+  "id": "xinhsk2-l13-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "王老师________我们中文。",
+  "options": [
+   "希望",
+   "上网",
+   "教",
+   "告诉"
+  ],
+  "correct_answer": "教",
+  "explanation": "«Ван багш бидэнд хятад хэл заадаг» — 教我们中文.",
+  "order_index": 2,
+  "id": "xinhsk2-l13-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "王老师喜欢________，就送给她吧。",
+  "options": [
+   "里面",
+   "花",
+   "笔",
+   "班"
+  ],
+  "correct_answer": "花",
+  "explanation": "«Багш цэцэгт дуртай» — 喜欢花.",
+  "order_index": 3,
+  "id": "xinhsk2-l13-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________明天是个晴天。",
+  "options": [
+   "希望",
+   "可能",
+   "那样",
+   "告诉"
+  ],
+  "correct_answer": "希望",
+  "explanation": "«Маргааш цэлмэг өдөр болоосой» — 希望.",
+  "order_index": 4,
+  "id": "xinhsk2-l13-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "桌子________有一些苹果。",
+  "options": [
+   "洗手间",
+   "那样",
+   "上网",
+   "上面"
+  ],
+  "correct_answer": "上面",
+  "explanation": "«Ширээн дээр хэдэн алим байна» — 桌子上面.",
+  "order_index": 5,
+  "id": "xinhsk2-l13-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请问，________在哪儿？",
+  "options": [
+   "希望",
+   "班",
+   "洗手间",
+   "新年"
+  ],
+  "correct_answer": "洗手间",
+  "explanation": "«Жорлон хаана вэ?» — 洗手间.",
+  "order_index": 6,
+  "id": "xinhsk2-l13-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "教室________有桌子和椅子。",
+  "options": [
+   "可能",
+   "里面",
+   "上网",
+   "告诉"
+  ],
+  "correct_answer": "里面",
+  "explanation": "«Ангид ширээ, сандал байна» — 教室里面.",
+  "order_index": 7,
+  "id": "xinhsk2-l13-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "现在十一点多了，他________在睡觉。",
+  "options": [
+   "可能",
+   "那样",
+   "告诉",
+   "笔"
+  ],
+  "correct_answer": "可能",
+  "explanation": "«Тэр магадгүй унтаж байгаа» — 可能.",
+  "order_index": 8,
+  "id": "xinhsk2-l13-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "________买东西很方便，不用出门。",
+  "options": [
+   "洗手间",
+   "里面",
+   "笔",
+   "上网"
+  ],
+  "correct_answer": "上网",
+  "explanation": "«Интернэтээр бараа авах тохиромжтой» — 上网买东西.",
+  "order_index": 9,
+  "id": "xinhsk2-l13-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你________他，我在公园门口等他。",
+  "options": [
+   "希望",
+   "可能",
+   "告诉",
+   "教"
+  ],
+  "correct_answer": "告诉",
+  "explanation": "«Чи түүнд хэлээрэй» — 告诉他.",
+  "order_index": 10,
+  "id": "xinhsk2-l13-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«妈妈送给我一个新年礼物。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Ээж надад бэлэг зарсан.",
+   "Ээж надад Шинэ жилийн бэлэг өгсөн.",
+   "Би ээжид Шинэ жилийн бэлэг өгсөн.",
+   "Ээж Шинэ жилд бэлэг авсан."
+  ],
+  "correct_answer": "Ээж надад Шинэ жилийн бэлэг өгсөн.",
+  "explanation": "送给 + хүн + зүйл: ээж надад өгсөн.",
+  "order_index": 11,
+  "id": "xinhsk2-l13-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l13-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр надад нэг хятад ном зарсан» — аль нь зөв бэ?",
+  "options": [
+   "他卖给我一本中文书。",
+   "他卖一本中文书给我。",
+   "他卖我给一本中文书。",
+   "他给卖我一本中文书。"
+  ],
+  "correct_answer": "他卖给我一本中文书。",
+  "explanation": "卖给 + хүн + юм зүйл.",
+  "order_index": 12,
+  "id": "xinhsk2-l13-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«她拿给我一杯水。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би түүнд нэг аяга ус өгсөн.",
+   "Тэр нэг аяга ус уусан.",
+   "Тэр ус зарсан.",
+   "Тэр надад нэг аяга ус гардуулсан."
+  ],
+  "correct_answer": "Тэр надад нэг аяга ус гардуулсан.",
+  "explanation": "拿给 + хүн + юм зүйл.",
+  "order_index": 13,
+  "id": "xinhsk2-l13-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Эгч надаас гурван насаар ах» — аль нь зөв бэ?",
+  "options": [
+   "姐姐比我三岁大。",
+   "姐姐我比大三岁。",
+   "姐姐比我大三岁。",
+   "姐姐比我很大三岁。"
+  ],
+  "correct_answer": "姐姐比我大三岁。",
+  "explanation": "比 + тэмдэг нэр + тоо хэмжээ; 很 хэрэглэхгүй.",
+  "order_index": 14,
+  "id": "xinhsk2-l13-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«今天的词比昨天多了十个。» — ямар ялгаа вэ?",
+  "options": [
+   "Нэг ширхэг илүү",
+   "Арван ширхэг илүү",
+   "Арван ширхэг цөөн",
+   "Адил тоо"
+  ],
+  "correct_answer": "Арван ширхэг илүү",
+  "explanation": "多了十个 — арван ширхэг илүү.",
+  "order_index": 15,
+  "id": "xinhsk2-l13-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l13-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这个本子比那个贵一点儿。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Энэ дэвтэр тэр дэвтрээс арай үнэтэй.",
+   "Энэ дэвтэр тэр дэвтрээс хавьгүй үнэтэй.",
+   "Энэ дэвтэр тэр дэвтрээс хямд.",
+   "Энэ дэвтэр маш үнэтэй."
+  ],
+  "correct_answer": "Энэ дэвтэр тэр дэвтрээс арай үнэтэй.",
+  "explanation": "一点儿 — бага ялгаа.",
+  "order_index": 16,
+  "id": "xinhsk2-l13-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "那间教室比这间很大一些。",
+   "那间教室一些比这间大。",
+   "那间教室比这间一些大。",
+   "那间教室比这间大一些。"
+  ],
+  "correct_answer": "那间教室比这间大一些。",
+  "explanation": "比 + В + тэмдэг нэр + 一些; 很 хэрэглэхгүй.",
+  "order_index": 17,
+  "id": "xinhsk2-l13-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«间» ба «问» хоёрын ялгаа юу вэ?",
+  "options": [
+   "Хоёулаа адилхан",
+   "Зөвхөн дуудлагаараа ялгаатай",
+   "间-ийн дотор «日», 问-ийн дотор «口»",
+   "間-ийн дотор «口», 问-ийн дотор «日»"
+  ],
+  "correct_answer": "间-ийн дотор «日», 问-ийн дотор «口»",
+  "explanation": "日 нь 口-оос нэг зураас илүү.",
+  "order_index": 18,
+  "id": "xinhsk2-l13-q18",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：同学们想送给王老师什么？",
+  "options": [
+   "咖啡杯",
+   "花",
+   "衣服",
+   "中文书"
+  ],
+  "correct_answer": "花",
+  "explanation": "«王老师喜欢花，就送给她花吧».",
+  "order_index": 19,
+  "id": "xinhsk2-l13-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：同学们写错了哪个字？",
+  "options": [
+   "间",
+   "问",
+   "日",
+   "口"
+  ],
+  "correct_answer": "间",
+  "explanation": "«“洗手间”的“间”字写错了».",
+  "order_index": 20,
+  "id": "xinhsk2-l13-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：这个本子是在哪儿买的？",
+  "options": [
+   "商店",
+   "超市",
+   "学校",
+   "网上"
+  ],
+  "correct_answer": "网上",
+  "explanation": "«我是上网买的».",
+  "order_index": 21,
+  "id": "xinhsk2-l13-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：安妮让白家月送给她什么礼物？",
+  "options": [
+   "本子",
+   "花",
+   "咖啡杯",
+   "咖啡"
+  ],
+  "correct_answer": "咖啡杯",
+  "explanation": "«咖啡杯吧，我最喜欢喝咖啡了».",
+  "order_index": 22,
+  "id": "xinhsk2-l13-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：这个新本子贵不贵？",
+  "options": [
+   "一样贵",
+   "比白家月的本子贵一点儿",
+   "没有白家月的本子贵",
+   "比白家月的本子贵多了"
+  ],
+  "correct_answer": "比白家月的本子贵一点儿",
+  "explanation": "«比我的本子贵一点儿».",
+  "order_index": 23,
+  "id": "xinhsk2-l13-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：同学们为什么送王老师花？",
+  "options": [
+   "新年就要到了",
+   "她很漂亮",
+   "她要回国了",
+   "她过生日"
+  ],
+  "correct_answer": "新年就要到了",
+  "explanation": "«新年就要到了…送了王老师漂亮的花».",
+  "order_index": 24,
+  "id": "xinhsk2-l13-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

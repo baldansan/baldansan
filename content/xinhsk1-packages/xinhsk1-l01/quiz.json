@@ -1,0 +1,382 @@
+[
+ {
+  "type": "cloze",
+  "question": "王老师，你________！",
+  "options": [
+   "们",
+   "见",
+   "谢",
+   "好"
+  ],
+  "correct_answer": "好",
+  "explanation": "«Ван багш аа, сайн байна уу» — 你好.",
+  "order_index": 1,
+  "id": "xinhsk1-l01-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师，________好！",
+  "options": [
+   "再",
+   "不",
+   "您",
+   "们"
+  ],
+  "correct_answer": "您",
+  "explanation": "Багшид хүндэтгэлтэй мэндлэхэд 您好.",
+  "order_index": 2,
+  "id": "xinhsk1-l01-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "同学________，再见！",
+  "options": [
+   "老",
+   "们",
+   "好",
+   "您"
+  ],
+  "correct_answer": "们",
+  "explanation": "«Ангийнхан аа» — олон тоо 们: 同学们.",
+  "order_index": 3,
+  "id": "xinhsk1-l01-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "A：谢谢！B：不________！",
+  "options": [
+   "客气",
+   "谢谢",
+   "再见",
+   "同学"
+  ],
+  "correct_answer": "客气",
+  "explanation": "Баярлалаа-д 不客气 гэж хариулна.",
+  "order_index": 4,
+  "id": "xinhsk1-l01-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他是李老师的学________。",
+  "options": [
+   "师",
+   "们",
+   "见",
+   "生"
+  ],
+  "correct_answer": "生",
+  "explanation": "«Ли багшийн оюутан» — 学生.",
+  "order_index": 5,
+  "id": "xinhsk1-l01-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师，再________！",
+  "options": [
+   "们",
+   "家",
+   "见",
+   "好"
+  ],
+  "correct_answer": "见",
+  "explanation": "«Багш аа, баяртай» — 再见.",
+  "order_index": 6,
+  "id": "xinhsk1-l01-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "学生：老师，________！老师：不客气！",
+  "options": [
+   "你好",
+   "谢谢",
+   "再见",
+   "不客气"
+  ],
+  "correct_answer": "谢谢",
+  "explanation": "Багш «不客气» гэсэн тул оюутан 谢谢 гэж хэлсэн.",
+  "order_index": 7,
+  "id": "xinhsk1-l01-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "A：________！B：你好！",
+  "options": [
+   "你好",
+   "再见",
+   "不客气",
+   "谢谢"
+  ],
+  "correct_answer": "你好",
+  "explanation": "Хоёулаа «你好» гэж мэндэлж байна.",
+  "order_index": 8,
+  "id": "xinhsk1-l01-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«大家好！» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Багш аа, баяртай!",
+   "Баярлалаа!",
+   "Зүгээрээ!",
+   "Бүгдээрээ сайн уу!"
+  ],
+  "correct_answer": "Бүгдээрээ сайн уу!",
+  "explanation": "大家 = бүгд, 好 = сайн.",
+  "order_index": 9,
+  "id": "xinhsk1-l01-q09",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l01-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Багшдаа хүндэтгэлтэй мэндлэх аль нь вэ?",
+  "options": [
+   "老师，好您！",
+   "老师，你们好！",
+   "老师，您好！",
+   "老师，们好！"
+  ],
+  "correct_answer": "老师，您好！",
+  "explanation": "您 — хүндэтгэлтэй «та».",
+  "order_index": 10,
+  "id": "xinhsk1-l01-q10",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l01-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Та нар сайн уу!» (олон хүнд) — аль нь зөв бэ?",
+  "options": [
+   "好你们！",
+   "你们好！",
+   "您们好！",
+   "你好们！"
+  ],
+  "correct_answer": "你们好！",
+  "explanation": "你 + 们 + 好.",
+  "order_index": 11,
+  "id": "xinhsk1-l01-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«不客气» дахь 不 яаж уншигдах вэ?",
+  "options": [
+   "bú",
+   "bù",
+   "bǔ",
+   "bū"
+  ],
+  "correct_answer": "bú",
+  "explanation": "4-р аялгын өмнө 不 нь bú болдог.",
+  "order_index": 12,
+  "id": "xinhsk1-l01-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«好 hǎo» хэддүгээр аялга вэ?",
+  "options": [
+   "1-р аялга",
+   "2-р аялга",
+   "4-р аялга",
+   "3-р аялга"
+  ],
+  "correct_answer": "3-р аялга",
+  "explanation": "ǎ — 3-р аялга.",
+  "order_index": 13,
+  "id": "xinhsk1-l01-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l01-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Хятадад багшийг ихэвчлэн яаж дууддаг вэ?",
+  "options": [
+   "нэр + 们",
+   "你 + нэр",
+   "овог + 老师",
+   "нэр + 同学"
+  ],
+  "correct_answer": "овог + 老师",
+  "explanation": "Жишээ нь 王老师.",
+  "order_index": 14,
+  "id": "xinhsk1-l01-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l01-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一飞对小语说什么？",
+  "options": [
+   "AI小语，不客气！",
+   "AI小语，你好！",
+   "AI小语，再见！",
+   "AI小语，谢谢！"
+  ],
+  "correct_answer": "AI小语，你好！",
+  "explanation": "«AI小语，你好！»",
+  "order_index": 15,
+  "id": "xinhsk1-l01-q15",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小语怎么叫王一飞？",
+  "options": [
+   "王老师",
+   "王同学",
+   "大家",
+   "小语"
+  ],
+  "correct_answer": "王老师",
+  "explanation": "«王老师，你好！»",
+  "order_index": 16,
+  "id": "xinhsk1-l01-q16",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：学生们对老师说什么？",
+  "options": [
+   "老师，再见！",
+   "老师，谢谢！",
+   "老师，不客气！",
+   "老师，您好！"
+  ],
+  "correct_answer": "老师，您好！",
+  "explanation": "Оюутнууд 您 гэж хүндэтгэн мэндэлсэн.",
+  "order_index": 17,
+  "id": "xinhsk1-l01-q17",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：小语对学生们说什么？",
+  "options": [
+   "再见！",
+   "谢谢！",
+   "你们好！",
+   "您好！"
+  ],
+  "correct_answer": "你们好！",
+  "explanation": "Сяо Юй олон оюутанд 你们好 гэсэн.",
+  "order_index": 18,
+  "id": "xinhsk1-l01-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：学生们说“谢谢”，小语怎么说？",
+  "options": [
+   "谢谢！",
+   "不客气！",
+   "再见！",
+   "你好！"
+  ],
+  "correct_answer": "不客气！",
+  "explanation": "«不客气！» — зүгээрээ.",
+  "order_index": 19,
+  "id": "xinhsk1-l01-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一飞对同学们说什么？",
+  "options": [
+   "同学们，再见！",
+   "同学们，你好！",
+   "谢谢大家！",
+   "不客气！"
+  ],
+  "correct_answer": "同学们，再见！",
+  "explanation": "Хичээл дуусч багш баяртай гэсэн.",
+  "order_index": 20,
+  "id": "xinhsk1-l01-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

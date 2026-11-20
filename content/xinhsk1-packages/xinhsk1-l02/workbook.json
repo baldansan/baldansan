@@ -1,0 +1,286 @@
+{
+ "listening": {
+  "audio_available": true,
+  "parts": [
+   {
+    "part": 1,
+    "type": "mc",
+    "instruction_mn": "第一部分 · 听读练：Үе сонсоод 声母-г таних (j, q, x)",
+    "items": [
+     {
+      "n": 1,
+      "question_zh": "听到的声母是哪个？",
+      "transcript_zh": "qián",
+      "options": {
+       "A": "j",
+       "B": "q",
+       "C": "x"
+      },
+      "answer": "B",
+      "explanation_mn": "qián — 声母 q."
+     },
+     {
+      "n": 2,
+      "question_zh": "听到的声母是哪个？",
+      "transcript_zh": "jīn",
+      "options": {
+       "A": "j",
+       "B": "q",
+       "C": "x"
+      },
+      "answer": "A",
+      "explanation_mn": "jīn — 声母 j."
+     },
+     {
+      "n": 3,
+      "question_zh": "听到的声母是哪个？",
+      "transcript_zh": "xiè",
+      "options": {
+       "A": "j",
+       "B": "q",
+       "C": "x"
+      },
+      "answer": "C",
+      "explanation_mn": "xiè — 声母 x."
+     },
+     {
+      "n": 4,
+      "question_zh": "听到的声母是哪个？",
+      "transcript_zh": "qǐng",
+      "options": {
+       "A": "x",
+       "B": "j",
+       "C": "q"
+      },
+      "answer": "C",
+      "explanation_mn": "qǐng — 声母 q."
+     }
+    ]
+   },
+   {
+    "part": 2,
+    "type": "mc",
+    "instruction_mn": "第二部分 · 听读练：Аялгыг таних",
+    "items": [
+     {
+      "n": 5,
+      "question_zh": "听到的是哪个音节？",
+      "transcript_zh": "xué",
+      "options": {
+       "A": "xuē",
+       "B": "xué",
+       "C": "xuè"
+      },
+      "answer": "B",
+      "explanation_mn": "Сонссон үе: xué — 2-р аялга."
+     },
+     {
+      "n": 6,
+      "question_zh": "听到的是哪个音节？",
+      "transcript_zh": "jiǔ",
+      "options": {
+       "A": "jiǔ",
+       "B": "jiú",
+       "C": "jiù"
+      },
+      "answer": "A",
+      "explanation_mn": "Сонссон үе: jiǔ — 3-р аялга."
+     }
+    ]
+   },
+   {
+    "part": 3,
+    "type": "mc",
+    "instruction_mn": "第三部分 · 看图片，选择正确的对话 (зурагны оронд тайлбар бичсэн)",
+    "items": [
+     {
+      "n": 7,
+      "question_zh": "",
+      "transcript_zh": "A：对不起。B：没关系。",
+      "options": {
+       "A": "зураг: хоёр хүн мэндэлж байна",
+       "B": "зураг: нэг хүн уучлал гуйж, нөгөө нь уучилж байна",
+       "C": "зураг: хоёр хүн баяртай гэж салж байна"
+      },
+      "answer": "B",
+      "explanation_mn": "«对不起。没关系。» — уучлал гуйж, хариулж байна."
+     },
+     {
+      "n": 8,
+      "question_zh": "",
+      "transcript_zh": "A：很高兴认识你。B：认识你我也很高兴。",
+      "options": {
+       "A": "зураг: хоёр хүн анх танилцаж, баяртай байна",
+       "B": "зураг: хоёр хүн баяртай гэж салж байна",
+       "C": "зураг: нэг хүн нөгөөдөө талархаж байна"
+      },
+      "answer": "A",
+      "explanation_mn": "«很高兴认识你» — анх танилцаж буй яриа."
+     },
+     {
+      "n": 9,
+      "question_zh": "",
+      "transcript_zh": "A：大家好，我叫白家月。B：白家月，你好。",
+      "options": {
+       "A": "зураг: нэг хүн бүгдэд өөрийгөө танилцуулж, нэрээ хэлж байна",
+       "B": "зураг: хоёр хүн уучлал гуйж байна",
+       "C": "зураг: хоёр хүн баяртай гэж салж байна"
+      },
+      "answer": "A",
+      "explanation_mn": "«大家好，我叫白家月» — олонд өөрийгөө танилцуулж байна."
+     }
+    ]
+   }
+  ]
+ },
+ "reading": {
+  "parts": [
+   {
+    "part": 1,
+    "type": "mc",
+    "instruction_mn": "第一部分 · 小语讲堂·语音：Үсгийн дүрэм (拼写规则)",
+    "items": [
+     {
+      "n": 10,
+      "question_zh": "韵母 i 单独成音节时，写作：",
+      "options": {
+       "A": "yi",
+       "B": "wi",
+       "C": "ji"
+      },
+      "answer": "A",
+      "explanation_mn": "i дангаараа үе болбол yi гэж бичнэ."
+     },
+     {
+      "n": 11,
+      "question_zh": "韵母 u 单独成音节时，写作：",
+      "options": {
+       "A": "yu",
+       "B": "wu",
+       "C": "u"
+      },
+      "answer": "B",
+      "explanation_mn": "u дангаараа үе болбол wu гэж бичнэ."
+     },
+     {
+      "n": 12,
+      "question_zh": "韵母 ü 单独成音节时，写作：",
+      "options": {
+       "A": "wu",
+       "B": "yi",
+       "C": "yu"
+      },
+      "answer": "C",
+      "explanation_mn": "ü дангаараа үе болбол yu гэж бичнэ."
+     },
+     {
+      "n": 13,
+      "question_zh": "声母 j、q、x 和 ü 相拼时，ü 上的两点儿：",
+      "options": {
+       "A": "省略，写作 u",
+       "B": "保留",
+       "C": "改成 i"
+      },
+      "answer": "A",
+      "explanation_mn": "j q x + ü → ju qu xu: хоёр цэг хасагдана."
+     },
+     {
+      "n": 14,
+      "question_zh": "韵母 iou 单独成音节时，写作：",
+      "options": {
+       "A": "iu",
+       "B": "you",
+       "C": "yiu"
+      },
+      "answer": "B",
+      "explanation_mn": "iou дангаараа үе болбол you."
+     },
+     {
+      "n": 15,
+      "question_zh": "韵母 iou 和声母 j 相拼时，写作：",
+      "options": {
+       "A": "jiou",
+       "B": "jiu",
+       "C": "jou"
+      },
+      "answer": "B",
+      "explanation_mn": "声母-той нийлбэл iou нь iu болно: jiu."
+     }
+    ]
+   },
+   {
+    "part": 2,
+    "type": "mc",
+    "instruction_mn": "第二部分 · 汉字与拼音：Ханз, пиньиныг таних",
+    "items": [
+     {
+      "n": 16,
+      "question_zh": "“请问”的拼音是：",
+      "options": {
+       "A": "qǐngwèn",
+       "B": "jǐngwèn",
+       "C": "xǐngwèn"
+      },
+      "answer": "A",
+      "explanation_mn": "请问 — qǐngwèn, 声母 q."
+     },
+     {
+      "n": 17,
+      "question_zh": "“名字”的拼音是：",
+      "options": {
+       "A": "míngzi",
+       "B": "mǐngzi",
+       "C": "mìngzi"
+      },
+      "answer": "A",
+      "explanation_mn": "名字 — míngzi, 2-р аялга."
+     }
+    ]
+   }
+  ]
+ },
+ "writing": {
+  "items": [
+   {
+    "n": 18,
+    "prompt_mn": "（нэмэлт — номын 模拟测练-д бичих хэсэг байхгүй）Пиньинь-д тохирох ханзыг бич — （　）问，你叫什么名字？(qǐng — «гуйх»)",
+    "words": [],
+    "answer": "请",
+    "explanation_mn": "请问 qǐngwèn — уучлаарай, асууя."
+   },
+   {
+    "n": 19,
+    "prompt_mn": "（нэмэлт — номын 模拟测练-д бичих хэсэг байхгүй）Пиньинь-д тохирох ханзыг бич — 名（　）(zi — «нэр» дахь 2-р ханз)",
+    "words": [],
+    "answer": "字",
+    "explanation_mn": "名字 míngzi — нэр."
+   },
+   {
+    "n": 20,
+    "prompt_mn": "（нэмэлт — номын 模拟测练-д бичих хэсэг байхгүй）Пиньинь-д тохирох ханзыг бич — 很（　）兴认识你。(gāo — «баярлах» дахь эхний ханз)",
+    "words": [],
+    "answer": "高",
+    "explanation_mn": "高兴 gāoxìng — баярлах."
+   }
+  ]
+ },
+ "review": {
+  "items": [
+   {
+    "n": 1,
+    "prompt_mn": "根据课文内容填空 (Эх бичвэрийн дагуу хоосон зайг нөх).",
+    "question_zh": "请问，你（ ）什么（ ）？我（ ）陈天中。",
+    "answer": "叫 / 名字 / 叫",
+    "explanation_mn": "«Таны нэрийг хэн гэдэг вэ? — Намайг Чэнь Тяньчжун гэдэг» — 叫, 名字, 叫."
+   },
+   {
+    "n": 2,
+    "prompt_mn": "根据课文内容填空 (Эх бичвэрийн дагуу хоосон зайг нөх).",
+    "question_zh": "我（ ）是安妮，我（ ）白家月。（ ）！没关系！",
+    "answer": "不 / 是 / 对不起",
+    "explanation_mn": "«Би Анни биш, Бай Цзяюэ мөн» — 不, 是; уучлаарай — 对不起."
+   }
+  ]
+ },
+ "answerSource": "textbook (新HSK教程1 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)"
+}

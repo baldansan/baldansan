@@ -1,0 +1,132 @@
+[
+ {
+  "chinese": "坏",
+  "pinyin": "huài",
+  "mongolian": "муу; эвдэрсэн, гэмтсэн",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这个手机坏了。",
+  "exampleMongolian": "Энэ утас эвдэрчихсэн.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很坏 / 坏人 / 坏了"
+ },
+ {
+  "chinese": "旁边",
+  "pinyin": "pángbiān",
+  "mongolian": "хажуу, дэргэд",
+  "hskLevel": "HSK2",
+  "exampleChinese": "医院旁边有家超市。",
+  "exampleMongolian": "Эмнэлгийн хажууд нэг дэлгүүр бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "桌子旁边 / 他旁边"
+ },
+ {
+  "chinese": "男孩儿",
+  "pinyin": "nánháir",
+  "mongolian": "хөвгүүн, залуу хүү",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他是一个聪明的男孩儿。",
+  "exampleMongolian": "Тэр ухаалаг хөвгүүн.",
+  "pos": "нэр үг",
+  "collocations_zh": "聪明的男孩儿"
+ },
+ {
+  "chinese": "这样",
+  "pinyin": "zhèyàng",
+  "mongolian": "ийм, ингэж",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我喜欢这样的天气。",
+  "exampleMongolian": "Би ийм цаг агаарт дуртай.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "这样做 / 这样的"
+ },
+ {
+  "chinese": "个子",
+  "pinyin": "gèzi",
+  "mongolian": "биеийн өндөр, бие",
+  "hskLevel": "HSK2",
+  "exampleChinese": "爸爸的个子很高。",
+  "exampleMongolian": "Аавын бие өндөр.",
+  "pos": "нэр үг",
+  "collocations_zh": "个子高 / 个子很高"
+ },
+ {
+  "chinese": "那么",
+  "pinyin": "nàme",
+  "mongolian": "тийм (тийм их, тийм ч)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天没有昨天那么热。",
+  "exampleMongolian": "Өнөөдөр өчигдрийн шиг тийм халуун биш.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "那么高 / 那么热"
+ },
+ {
+  "chinese": "高",
+  "pinyin": "gāo",
+  "mongolian": "өндөр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他个子高，跑得也快。",
+  "exampleMongolian": "Тэр бие өндөр, гүйх нь ч хурдан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很高 / 高个子"
+ },
+ {
+  "chinese": "门口",
+  "pinyin": "ménkǒu",
+  "mongolian": "үүд, хаалганы дэргэд",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我们在门口见面吧。",
+  "exampleMongolian": "Бид үүдэнд уулзъя.",
+  "pos": "нэр үг",
+  "collocations_zh": "学校门口 / 在门口"
+ },
+ {
+  "chinese": "咖啡",
+  "pinyin": "kāfēi",
+  "mongolian": "кофе",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他喜欢每天早上喝一杯咖啡。",
+  "exampleMongolian": "Тэр өдөр бүр өглөө нэг аяга кофе уухдаа дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "喝咖啡 / 一杯咖啡"
+ },
+ {
+  "chinese": "离",
+  "pinyin": "lí",
+  "mongolian": "-аас (зай, хугацааны хувьд) хол/ойрхон байх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我们的教室离图书馆很近。",
+  "exampleMongolian": "Манай анги номын сангаас маш ойрхон.",
+  "pos": "үйл үг",
+  "collocations_zh": "离得远 / 离…近"
+ },
+ {
+  "chinese": "近",
+  "pinyin": "jìn",
+  "mongolian": "ойрхон",
+  "hskLevel": "HSK2",
+  "exampleChinese": "公司离我家很近。",
+  "exampleMongolian": "Компани манай гэрээс маш ойрхон.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很近 / 不太近"
+ },
+ {
+  "chinese": "走路",
+  "pinyin": "zǒulù",
+  "mongolian": "явганаар явах, алхах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "走路要半个小时，你坐车去吧。",
+  "exampleMongolian": "Алхвал хагас цаг болно, чи машинаар яв.",
+  "pos": "үйл үг",
+  "collocations_zh": "走路上学 / 走路去"
+ },
+ {
+  "chinese": "周",
+  "pinyin": "zhōu",
+  "mongolian": "долоо хоног",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他每周都学习中文。",
+  "exampleMongolian": "Тэр долоо хоног бүр хятад хэл сурдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "每周 / 周末"
+ }
+]

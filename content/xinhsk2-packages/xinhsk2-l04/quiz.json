@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "我想买一________红色的裤子。",
+  "options": [
+   "件",
+   "个",
+   "张",
+   "条"
+  ],
+  "correct_answer": "条",
+  "explanation": "Өмдний хэмжих үг 条: 一条裤子.",
+  "order_index": 1,
+  "id": "xinhsk2-l04-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈去________买了衣服。",
+  "options": [
+   "颜色",
+   "裤子",
+   "商场",
+   "书包"
+  ],
+  "correct_answer": "商场",
+  "explanation": "«Ээж худалдааны төвд очиж хувцас авсан» — 商场.",
+  "order_index": 2,
+  "id": "xinhsk2-l04-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这家商场是新开的，我们________看看吧。",
+  "options": [
+   "因为",
+   "进去",
+   "过",
+   "更"
+  ],
+  "correct_answer": "进去",
+  "explanation": "«Ороод үзье» — 进去看看.",
+  "order_index": 3,
+  "id": "xinhsk2-l04-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你有很多白色的衣服，为什么还买________的？",
+  "options": [
+   "白色",
+   "因为",
+   "所以",
+   "试试"
+  ],
+  "correct_answer": "白色",
+  "explanation": "«Цагаан хувцас олон байхад яагаад дахиад цагаан авах вэ» — 白色.",
+  "order_index": 4,
+  "id": "xinhsk2-l04-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想________这条红色的裤子。",
+  "options": [
+   "进去",
+   "过去",
+   "因为",
+   "试试"
+  ],
+  "correct_answer": "试试",
+  "explanation": "«Энэ улаан өмдийг өмсөж үзмээр байна» — 试试.",
+  "order_index": 5,
+  "id": "xinhsk2-l04-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天下雨，________我不去运动。",
+  "options": [
+   "更",
+   "过",
+   "所以",
+   "因为"
+  ],
+  "correct_answer": "所以",
+  "explanation": "Үр дүнгийн өмнө 所以.",
+  "order_index": 6,
+  "id": "xinhsk2-l04-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我没去学校，________我生病了。",
+  "options": [
+   "过",
+   "因为",
+   "所以",
+   "更"
+  ],
+  "correct_answer": "因为",
+  "explanation": "Шалтгааны өмнө 因为.",
+  "order_index": 7,
+  "id": "xinhsk2-l04-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想买个新________。",
+  "options": [
+   "书包",
+   "裤子",
+   "商场",
+   "颜色"
+  ],
+  "correct_answer": "书包",
+  "explanation": "«Шинэ цүнх авмаар байна» — 书包.",
+  "order_index": 8,
+  "id": "xinhsk2-l04-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我不喜欢这个________。",
+  "options": [
+   "商场",
+   "书包",
+   "裤子",
+   "颜色"
+  ],
+  "correct_answer": "颜色",
+  "explanation": "«Энэ өнгөнд дургүй» — 颜色.",
+  "order_index": 9,
+  "id": "xinhsk2-l04-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你觉得哪个________好看？",
+  "options": [
+   "所以",
+   "条",
+   "更",
+   "过"
+  ],
+  "correct_answer": "更",
+  "explanation": "«Аль нь илүү хөөрхөн?» — 更好看.",
+  "order_index": 10,
+  "id": "xinhsk2-l04-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l04-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«她没去过中国。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэр Хятадад очсон.",
+   "Тэр Хятадад очиж үзээгүй.",
+   "Тэр Хятадад очсонгүй.",
+   "Тэр Хятадад очихгүй."
+  ],
+  "correct_answer": "Тэр Хятадад очиж үзээгүй.",
+  "explanation": "没 + үйл үг + 过 — «… үзээгүй».",
+  "order_index": 11,
+  "id": "xinhsk2-l04-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l04-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我吃过饺子。",
+   "我吃饺子过。",
+   "我过吃饺子。",
+   "我吃了过饺子。"
+  ],
+  "correct_answer": "我吃过饺子。",
+  "explanation": "过 үйл үгийн шууд ард орно.",
+  "order_index": 12,
+  "id": "xinhsk2-l04-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l04-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи тэр киног үзэж үзсэн үү?» — аль нь зөв бэ?",
+  "options": [
+   "你看过没看那个电影？",
+   "你过看没看那个电影？",
+   "你没看看过那个电影？",
+   "你看没看过那个电影？"
+  ],
+  "correct_answer": "你看没看过那个电影？",
+  "explanation": "Үйл үг + 没 + үйл үг + 过 — асуух хэлбэр.",
+  "order_index": 13,
+  "id": "xinhsk2-l04-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«没去过» гэдгийн зөв сөрөг хэлбэр аль нь вэ?",
+  "options": [
+   "我没去了西安。",
+   "我去没过西安。",
+   "我没去过西安。",
+   "我不去过西安。"
+  ],
+  "correct_answer": "我没去过西安。",
+  "explanation": "没 + үйл үг + 过.",
+  "order_index": 14,
+  "id": "xinhsk2-l04-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«因为我生病了，今天没去上班。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би ажилдаа явж байна.",
+   "Би өвдсөн тул өнөөдөр ажилдаа яваагүй.",
+   "Би өвдсөн ч ажилдаа явсан.",
+   "Би ажилдаа явсан тул өвдсөн."
+  ],
+  "correct_answer": "Би өвдсөн тул өнөөдөр ажилдаа яваагүй.",
+  "explanation": "因为 — шалтгаан; үр дүн нь дараа.",
+  "order_index": 15,
+  "id": "xinhsk2-l04-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "因为下雨，所以我不去运动。",
+   "因为下雨，因为我不去运动。",
+   "所以下雨，因为我不去运动。",
+   "因为下雨，但是我不去运动。"
+  ],
+  "correct_answer": "因为下雨，所以我不去运动。",
+  "explanation": "因为 шалтгаан, 所以 үр дүн.",
+  "order_index": 16,
+  "id": "xinhsk2-l04-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这件衣服太贵了，还是买那件便宜的吧。» — 便宜的 нь юу вэ?",
+  "options": [
+   "хямд цүнх",
+   "хямд өмд",
+   "хямд талх",
+   "хямд хувцас"
+  ],
+  "correct_answer": "хямд хувцас",
+  "explanation": "便宜的 = 便宜的衣服.",
+  "order_index": 17,
+  "id": "xinhsk2-l04-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«妈妈买的在那儿。» — 妈妈买的 нь юу вэ?",
+  "options": [
+   "ээжийн цүнх",
+   "ээжийн ном",
+   "ээжийн авсан зүйл",
+   "ээжийн хийсэн хоол"
+  ],
+  "correct_answer": "ээжийн авсан зүйл",
+  "explanation": "买的 = 买的面包.",
+  "order_index": 18,
+  "id": "xinhsk2-l04-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l04-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：这家商场怎么样？",
+  "options": [
+   "很远",
+   "新开的",
+   "很旧",
+   "很小"
+  ],
+  "correct_answer": "新开的",
+  "explanation": "«这是新开的» — шинээр нээгдсэн.",
+  "order_index": 19,
+  "id": "xinhsk2-l04-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：刘小雪想买什么？",
+  "options": [
+   "一条裤子",
+   "一个书包",
+   "一件衣服",
+   "一条鱼"
+  ],
+  "correct_answer": "一条裤子",
+  "explanation": "«我想买条裤子».",
+  "order_index": 20,
+  "id": "xinhsk2-l04-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：刘小雪为什么想买白色的裤子？",
+  "options": [
+   "因为白色便宜",
+   "因为妈妈喜欢白色",
+   "因为没有红色的",
+   "因为她喜欢白色"
+  ],
+  "correct_answer": "因为她喜欢白色",
+  "explanation": "«因为我喜欢白色啊».",
+  "order_index": 21,
+  "id": "xinhsk2-l04-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪让刘小雪试试什么？",
+  "options": [
+   "绿色的书包",
+   "黑色的衣服",
+   "红色的裤子",
+   "白色的裤子"
+  ],
+  "correct_answer": "红色的裤子",
+  "explanation": "«你试试那条红色的吧».",
+  "order_index": 22,
+  "id": "xinhsk2-l04-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪和刘小雪觉得哪个书包更好看？",
+  "options": [
+   "白色的",
+   "绿色的",
+   "红色的",
+   "黑色的"
+  ],
+  "correct_answer": "绿色的",
+  "explanation": "«我也觉得绿色的更好看».",
+  "order_index": 23,
+  "id": "xinhsk2-l04-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：商场里的东西为什么很便宜？",
+  "options": [
+   "因为是新开的",
+   "因为是旧的",
+   "因为不好看",
+   "因为人很多"
+  ],
+  "correct_answer": "因为是新开的",
+  "explanation": "«因为是新开的，所以这几天东西很便宜».",
+  "order_index": 24,
+  "id": "xinhsk2-l04-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：刘小雪觉得穿红色的怎么样？",
+  "options": [
+   "不好看",
+   "很贵",
+   "太大",
+   "很好看"
+  ],
+  "correct_answer": "很好看",
+  "explanation": "«我觉得我穿红色的也很好看».",
+  "order_index": 25,
+  "id": "xinhsk2-l04-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

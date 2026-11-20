@@ -1,0 +1,20 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l03/l03-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l03/l03-hero.webp",
+   "title": "3-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l03-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l03/l03-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l03/l03-w1.webp",
+   "title": "手 shǒu — гар",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

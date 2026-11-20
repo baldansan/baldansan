@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-hero.webp",
+   "title": "4-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l04-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w1.webp",
+   "title": "商场 shāngchǎng — худалдааны төв",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w2.webp",
+   "title": "裤子 kùzi — өмд",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w3.webp",
+   "title": "书包 shūbāo — сургуулийн цүнх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w4.webp",
+   "title": "红色 hóngsè — улаан өнгө",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w5.webp",
+   "title": "颜色 yánsè — өнгө",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l04/l04-w6.webp",
+   "title": "白色 báisè — цагаан өнгө",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

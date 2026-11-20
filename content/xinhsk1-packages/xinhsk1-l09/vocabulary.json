@@ -1,0 +1,232 @@
+[
+ {
+  "chinese": "前边",
+  "pinyin": "qiánbian",
+  "mongolian": "урд, урд тал",
+  "hskLevel": "HSK1",
+  "exampleChinese": "超市前边是一家书店。",
+  "exampleMongolian": "Супермаркетийн урд ном дэлгүүр байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "超市前边"
+ },
+ {
+  "chinese": "边",
+  "pinyin": "biān",
+  "mongolian": "тал, зах (байрлал заах дагавар)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你后边是谁？",
+  "exampleMongolian": "Чиний ард хэн байна?",
+  "pos": "нэр үг",
+  "collocations_zh": "后边 / 里边"
+ },
+ {
+  "chinese": "家",
+  "pinyin": "jiā",
+  "mongolian": "дэлгүүр, компани, гэр бүлд хэрэглэх хэмжих үг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "那是一家新书店。",
+  "exampleMongolian": "Тэр бол шинэ ном дэлгүүр.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一家公司"
+ },
+ {
+  "chinese": "那个",
+  "pinyin": "nàge",
+  "mongolian": "тэр, цаадах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "那个人我认识。",
+  "exampleMongolian": "Тэр хүнийг би таньдаг.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "那个人"
+ },
+ {
+  "chinese": "外边",
+  "pinyin": "wàibian",
+  "mongolian": "гадна, гадна тал",
+  "hskLevel": "HSK1",
+  "exampleChinese": "外边在下雨。",
+  "exampleMongolian": "Гадаа бороо орж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "外边见"
+ },
+ {
+  "chinese": "椅子",
+  "pinyin": "yǐzi",
+  "mongolian": "сандал",
+  "hskLevel": "HSK1",
+  "exampleChinese": "小猫在椅子上睡觉。",
+  "exampleMongolian": "Муур сандал дээр унтаж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "椅子上"
+ },
+ {
+  "chinese": "上",
+  "pinyin": "shàng",
+  "mongolian": "дээр, дээд тал (нэрийн ард)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "桌子上面有什么？",
+  "exampleMongolian": "Ширээн дээр юу байна вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "桌子上"
+ },
+ {
+  "chinese": "本",
+  "pinyin": "běn",
+  "mongolian": "ном, дэвтэрт хэрэглэх хэмжих үг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢读这本书。",
+  "exampleMongolian": "Би энэ номыг уншихдаа дуртай.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一本书"
+ },
+ {
+  "chinese": "书",
+  "pinyin": "shū",
+  "mongolian": "ном",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我上午在家读书。",
+  "exampleMongolian": "Би өглөө гэртээ ном уншина.",
+  "pos": "нэр үг",
+  "collocations_zh": "看书"
+ },
+ {
+  "chinese": "那",
+  "pinyin": "nà",
+  "mongolian": "тэр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "那是什么？",
+  "exampleMongolian": "Тэр юу вэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "那是…"
+ },
+ {
+  "chinese": "第",
+  "pinyin": "dì",
+  "mongolian": "дугаар, дахь (дэс дарааллыг заана)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我是第一！",
+  "exampleMongolian": "Би нэгдүгээр!",
+  "pos": "угтвар үг",
+  "collocations_zh": "第一 / 第二个"
+ },
+ {
+  "chinese": "学习",
+  "pinyin": "xuéxí",
+  "mongolian": "суралцах, сурах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他想学习中文。",
+  "exampleMongolian": "Тэр хятад хэл сурмаар байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "学习中文"
+ },
+ {
+  "chinese": "做",
+  "pinyin": "zuò",
+  "mongolian": "хийх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "爸爸在做早饭。",
+  "exampleMongolian": "Аав өглөөний хоол хийж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "做饭"
+ },
+ {
+  "chinese": "白天",
+  "pinyin": "báitiān",
+  "mongolian": "өдөр, өдрийн цагаар",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天白天我都在家。",
+  "exampleMongolian": "Өнөөдөр өдөржин би гэртээ байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "白天 / 晚上"
+ },
+ {
+  "chinese": "读书",
+  "pinyin": "dúshū",
+  "mongolian": "ном унших",
+  "hskLevel": "HSK1",
+  "exampleChinese": "妹妹非常喜欢读书。",
+  "exampleMongolian": "Дүү охин ном унших их дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "在家读书"
+ },
+ {
+  "chinese": "和",
+  "pinyin": "hé",
+  "mongolian": "-тай хамт",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢和我家的小狗玩。",
+  "exampleMongolian": "Би манай гэрийн гөлөгтэй тоглох дуртай.",
+  "pos": "угтвар үг",
+  "collocations_zh": "和朋友"
+ },
+ {
+  "chinese": "朋友",
+  "pinyin": "péngyou",
+  "mongolian": "найз",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他的朋友很多。",
+  "exampleMongolian": "Түүний найз олон.",
+  "pos": "нэр үг",
+  "collocations_zh": "好朋友"
+ },
+ {
+  "chinese": "唱",
+  "pinyin": "chàng",
+  "mongolian": "дуулах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "王老师唱歌很好听。",
+  "exampleMongolian": "Ван багшийн дуулсан дуу сонсоход их сайхан.",
+  "pos": "үйл үг",
+  "collocations_zh": "唱歌"
+ },
+ {
+  "chinese": "歌",
+  "pinyin": "gē",
+  "mongolian": "дуу",
+  "hskLevel": "HSK1",
+  "exampleChinese": "妹妹喜欢唱歌。",
+  "exampleMongolian": "Дүү охин дуулах дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "唱歌 / 听歌"
+ },
+ {
+  "chinese": "好听",
+  "pinyin": "hǎotīng",
+  "mongolian": "сонсоход сайхан",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她说话真好听。",
+  "exampleMongolian": "Түүний хоолой үнэхээр сайхан сонсогдоно.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "唱得好听"
+ },
+ {
+  "chinese": "电视",
+  "pinyin": "diànshì",
+  "mongolian": "телевиз",
+  "hskLevel": "HSK1",
+  "exampleChinese": "妹妹要看电视。",
+  "exampleMongolian": "Дүү охин телевиз үзэх гэж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "看电视"
+ },
+ {
+  "chinese": "狗",
+  "pinyin": "gǒu",
+  "mongolian": "нохой",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我家有一只狗。",
+  "exampleMongolian": "Манай гэрт нэг нохой бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "小狗"
+ },
+ {
+  "chinese": "玩",
+  "pinyin": "wán",
+  "mongolian": "тоглох, зугаацах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢玩电脑。",
+  "exampleMongolian": "Би компьютер тоглох дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "玩手机"
+ }
+]

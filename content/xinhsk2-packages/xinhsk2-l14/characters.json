@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "站",
+   "pinyin": [
+    "zhàn"
+   ],
+   "strokeCount": 10,
+   "radical": "立",
+   "practice": "write",
+   "meaningMn": "зогсох",
+   "etymology_mn": "立 (зогсох) + 占 (дуудлага): босоо зогсох",
+   "exampleWords": [
+    "站着",
+    "火车站"
+   ]
+  },
+  {
+   "hanzi": "眼",
+   "pinyin": [
+    "yǎn"
+   ],
+   "strokeCount": 11,
+   "radical": "目",
+   "practice": "write",
+   "meaningMn": "нүд",
+   "etymology_mn": "目 (нүд) + 艮: нүдний гадаад хэлбэр",
+   "exampleWords": [
+    "眼睛",
+    "大眼睛"
+   ]
+  },
+  {
+   "hanzi": "睛",
+   "pinyin": [
+    "jīng"
+   ],
+   "strokeCount": 13,
+   "radical": "目",
+   "practice": "write",
+   "meaningMn": "нүдний хараа, нүдний нум",
+   "etymology_mn": "目 (нүд) + 青 (дуудлага): нүдний гол хэсэг",
+   "exampleWords": [
+    "眼睛",
+    "大眼睛"
+   ]
+  },
+  {
+   "hanzi": "跳",
+   "pinyin": [
+    "tiào"
+   ],
+   "strokeCount": 13,
+   "radical": "足",
+   "practice": "write",
+   "meaningMn": "үсрэх, бүжиглэх",
+   "etymology_mn": "足 (хөл) + 兆 (дуудлага): хөлөөрөө үсрэх",
+   "exampleWords": [
+    "跳舞",
+    "跳得好"
+   ]
+  },
+  {
+   "hanzi": "舞",
+   "pinyin": [
+    "wǔ"
+   ],
+   "strokeCount": 14,
+   "radical": "舛",
+   "practice": "write",
+   "meaningMn": "бүжиг",
+   "etymology_mn": "Эртний бүжигчний дүрээс үүссэн: хөдөлж бүжиглэх хүн",
+   "exampleWords": [
+    "跳舞",
+    "舞会"
+   ]
+  },
+  {
+   "hanzi": "孩",
+   "pinyin": [
+    "hái"
+   ],
+   "strokeCount": 9,
+   "radical": "子",
+   "practice": "write",
+   "meaningMn": "хүүхэд",
+   "etymology_mn": "子 (хүүхэд) + 亥 (дуудлага): бага насны хүүхэд",
+   "exampleWords": [
+    "小孩儿",
+    "女孩儿"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "前",
+   "b": "钱",
+   "word_a": "前面",
+   "word_b": "钱包",
+   "mn": "前 — урд; 钱 — мөнгө",
+   "tip_mn": "钱 нь 钅 (металл)-тай, эртний зоос металлаар хийгддэг байсан. 前 нь урд тал гэж санаарай."
+  },
+  {
+   "a": "睛",
+   "b": "请",
+   "word_a": "眼睛",
+   "word_b": "请问",
+   "mn": "睛 — нүд; 请 — гуйх, урих",
+   "tip_mn": "睛 нь 目 (нүд)-тэй, 请 нь 讠 (үг)-тэй. Хоёулаа 青-тэй ч радикал өөр."
+  },
+  {
+   "a": "包",
+   "b": "饱",
+   "word_a": "书包",
+   "word_b": "吃饱",
+   "mn": "包 — цүнх; 饱 — цатгалан",
+   "tip_mn": "饱 нь 饣 (хоол)-той, хоолны шалтгаантай. 包 дээр 饣 байхгүй."
+  },
+  {
+   "a": "姓",
+   "b": "性",
+   "word_a": "姓李",
+   "word_b": "男性",
+   "mn": "姓 — овог; 性 — хүйс, зан",
+   "tip_mn": "姓 нь 女-тэй (эртний эх барих овог), 性 нь 忄 (сэтгэл)-тэй."
+  }
+ ]
+}

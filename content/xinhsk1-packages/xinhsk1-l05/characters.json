@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "休",
+   "pinyin": [
+    "xiū"
+   ],
+   "strokeCount": 6,
+   "radical": "亻",
+   "practice": "write",
+   "meaningMn": "амрах",
+   "etymology_mn": "亻 (хүн) + 木 (мод): хүн модны дэргэд амарч байна",
+   "exampleWords": [
+    "休息",
+    "星期天休息"
+   ]
+  },
+  {
+   "hanzi": "做",
+   "pinyin": [
+    "zuò"
+   ],
+   "strokeCount": 11,
+   "radical": "亻",
+   "practice": "write",
+   "meaningMn": "хийх",
+   "etymology_mn": "亻 (хүн) + 故: хүн ажил хийж байна",
+   "exampleWords": [
+    "做饭",
+    "做菜"
+   ]
+  },
+  {
+   "hanzi": "新",
+   "pinyin": [
+    "xīn"
+   ],
+   "strokeCount": 13,
+   "radical": "斤",
+   "practice": "write",
+   "meaningMn": "шинэ",
+   "etymology_mn": "斤 (сүх) -ээр мод огтолсон шинэ ир",
+   "exampleWords": [
+    "新电脑",
+    "新"
+   ]
+  },
+  {
+   "hanzi": "脑",
+   "pinyin": [
+    "nǎo"
+   ],
+   "strokeCount": 10,
+   "radical": "月",
+   "practice": "write",
+   "meaningMn": "тархи",
+   "etymology_mn": "月 (махан бие) + 囟: тархи бол биеийн хэсэг",
+   "exampleWords": [
+    "电脑",
+    "新电脑"
+   ]
+  },
+  {
+   "hanzi": "喜",
+   "pinyin": [
+    "xǐ"
+   ],
+   "strokeCount": 12,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "баярлах",
+   "etymology_mn": "Дээр нь 士, доор нь 口: аманд баяр, дуу чимээ",
+   "exampleWords": [
+    "喜欢",
+    "很喜欢"
+   ]
+  },
+  {
+   "hanzi": "饺",
+   "pinyin": [
+    "jiǎo"
+   ],
+   "strokeCount": 9,
+   "radical": "饣",
+   "practice": "write",
+   "meaningMn": "бууз",
+   "etymology_mn": "饣 (хоол) + 交: хоол хийх зүйл",
+   "exampleWords": [
+    "饺子",
+    "吃饺子"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "日",
+   "b": "月",
+   "word_a": "星期日",
+   "word_b": "五月",
+   "mn": "日 — өдөр, нар; 月 — сар",
+   "tip_mn": "日 нь бүтэн нар, 月 нь сарны хэлбэртэй, дотор нь хоёр зураастай."
+  },
+  {
+   "a": "天",
+   "b": "大",
+   "word_a": "今天",
+   "word_b": "大小",
+   "mn": "天 — өдөр, тэнгэр; 大 — том",
+   "tip_mn": "天 нь 大 дээр нэг хөндлөн зураас нэмсэн: «тэнгэр том зүйлийн дээр»."
+  },
+  {
+   "a": "做",
+   "b": "作",
+   "word_a": "做饭",
+   "word_b": "工作",
+   "mn": "做 — хийх; 作 — ажил",
+   "tip_mn": "Хоёулаа zuò гэж дуудагдана. 做饭 дээр 做, 工作 дээр 作."
+  },
+  {
+   "a": "它",
+   "b": "他",
+   "word_a": "它喜欢吃鱼",
+   "word_b": "他很喜欢李老师",
+   "mn": "它 — амьтан, эд зүйл; 他 — эрэгтэй хүн",
+   "tip_mn": "它 нь 宀 (дээвэр) -тэй, 他 нь 亻 (хүн) -тэй."
+  }
+ ]
+}

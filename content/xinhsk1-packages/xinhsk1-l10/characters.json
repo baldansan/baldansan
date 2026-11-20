@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "钱",
+   "pinyin": [
+    "qián"
+   ],
+   "strokeCount": 10,
+   "radical": "钅",
+   "practice": "write",
+   "meaningMn": "мөнгө",
+   "etymology_mn": "钅 (металл) + 戋: эртний мөнгө металлаар хийгддэг байсан",
+   "exampleWords": [
+    "多少钱",
+    "五块钱"
+   ]
+  },
+  {
+   "hanzi": "贵",
+   "pinyin": [
+    "guì"
+   ],
+   "strokeCount": 9,
+   "radical": "贝",
+   "practice": "write",
+   "meaningMn": "үнэтэй",
+   "etymology_mn": "贝 (хясаа) нь эртний мөнгө. 贝 доор нь байгаа учир үнэт, үнэтэй",
+   "exampleWords": [
+    "很贵",
+    "不贵"
+   ]
+  },
+  {
+   "hanzi": "衣",
+   "pinyin": [
+    "yī"
+   ],
+   "strokeCount": 6,
+   "radical": "衣",
+   "practice": "write",
+   "meaningMn": "хувцас",
+   "etymology_mn": "Хувцасны хүзүү, ханцуйн дүрс",
+   "exampleWords": [
+    "衣服",
+    "买衣服"
+   ]
+  },
+  {
+   "hanzi": "穿",
+   "pinyin": [
+    "chuān"
+   ],
+   "strokeCount": 9,
+   "radical": "穴",
+   "practice": "write",
+   "meaningMn": "өмсөх",
+   "etymology_mn": "穴 (нүх) + 牙: нүхээр толгой, гараа оруулж өмсөх",
+   "exampleWords": [
+    "穿衣服",
+    "穿鞋"
+   ]
+  },
+  {
+   "hanzi": "少",
+   "pinyin": [
+    "shǎo"
+   ],
+   "strokeCount": 4,
+   "radical": "小",
+   "practice": "write",
+   "meaningMn": "цөөн",
+   "etymology_mn": "小 дээр нэг цохилт нэмэгдэж, бүр жижиг, цөөн болсон",
+   "exampleWords": [
+    "很少",
+    "不少"
+   ]
+  },
+  {
+   "hanzi": "男",
+   "pinyin": [
+    "nán"
+   ],
+   "strokeCount": 7,
+   "radical": "田",
+   "practice": "write",
+   "meaningMn": "эрэгтэй",
+   "etymology_mn": "田 (талбай) + 力 (хүч): талбайд хүчээр ажилладаг эр",
+   "exampleWords": [
+    "男孩子",
+    "男老师"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "少",
+   "b": "小",
+   "word_a": "很少",
+   "word_b": "很小",
+   "mn": "少 — цөөн; 小 — жижиг",
+   "tip_mn": "少 нь 小 дор нэг цохилт нэмэгдсэн. Дуудлага ч өөр: shǎo / xiǎo."
+  },
+  {
+   "a": "块",
+   "b": "快",
+   "word_a": "五块钱",
+   "word_b": "快乐",
+   "mn": "块 — юань; 快 — хурдан, баяр",
+   "tip_mn": "块 нь 土 (шороо)-тай, 快 нь 忄 (сэтгэл)-тэй. Хоёул kuài гэж уншигдана."
+  },
+  {
+   "a": "元",
+   "b": "无",
+   "word_a": "一百元",
+   "word_b": "无",
+   "mn": "元 — юань; 无 — үгүй",
+   "tip_mn": "元 нь 二 + 儿, 无 нь 一 дээр 尢. Дүрс ойролцоо ч өөр."
+  },
+  {
+   "a": "件",
+   "b": "什",
+   "word_a": "一件衣服",
+   "word_b": "什么",
+   "mn": "件 — хувцасны хэмжих үг; 什 — ямар",
+   "tip_mn": "件 нь 亻 + 牛, 什 нь 亻 + 十. Зүүн тал адил, баруун тал өөр."
+  }
+ ]
+}

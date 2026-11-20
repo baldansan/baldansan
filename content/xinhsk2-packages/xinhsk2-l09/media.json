@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-hero.webp",
+   "title": "9-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l09-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w1.webp",
+   "title": "咖啡 kāfēi — кофе",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l09-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w2.webp",
+   "title": "男孩儿 nánháir — хөвгүүн, залуу хүү",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l09-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w3.webp",
+   "title": "门口 ménkǒu — үүд, хаалганы дэргэд",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l09-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w4.webp",
+   "title": "周 zhōu — долоо хоног",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l09-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l09/l09-w5.webp",
+   "title": "个子 gèzi — биеийн өндөр, бие",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

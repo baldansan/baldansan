@@ -1,0 +1,132 @@
+[
+ {
+  "chinese": "新年",
+  "pinyin": "xīnnián",
+  "mongolian": "Шинэ жил",
+  "hskLevel": "HSK2",
+  "exampleChinese": "妈妈送给我一个新年礼物。",
+  "exampleMongolian": "Ээж надад Шинэ жилийн бэлэг өгсөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "新年快乐 / 新年礼物"
+ },
+ {
+  "chinese": "教",
+  "pinyin": "jiāo",
+  "mongolian": "заах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "老师教我们写汉字。",
+  "exampleMongolian": "Багш бидэнд ханз бичихийг зааж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "教书 / 教中文"
+ },
+ {
+  "chinese": "花",
+  "pinyin": "huā",
+  "mongolian": "цэцэг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "花园里的花真漂亮啊！",
+  "exampleMongolian": "Цэцэрлэгийн цэцэг үнэхээр үзэсгэлэнтэй юм аа!",
+  "pos": "нэр үг",
+  "collocations_zh": "一朵花 / 开花 / 花园"
+ },
+ {
+  "chinese": "希望",
+  "pinyin": "xīwàng",
+  "mongolian": "найдах, хүсэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "希望每个人都快乐。",
+  "exampleMongolian": "Хүн бүр баяртай байгаасай.",
+  "pos": "үйл үг",
+  "collocations_zh": "希望你…"
+ },
+ {
+  "chinese": "上面",
+  "pinyin": "shàngmiàn",
+  "mongolian": "дээд тал, дээр (юмны гадаргуу)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "桌子上面有一些苹果。",
+  "exampleMongolian": "Ширээн дээр хэдэн алим байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "桌子上面 / 椅子上面"
+ },
+ {
+  "chinese": "洗手间",
+  "pinyin": "xǐshǒujiān",
+  "mongolian": "жорлон, угаалгын өрөө",
+  "hskLevel": "HSK2",
+  "exampleChinese": "请问洗手间在哪儿？",
+  "exampleMongolian": "Уучлаарай, жорлон хаана байдаг вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "去洗手间"
+ },
+ {
+  "chinese": "里面",
+  "pinyin": "lǐmiàn",
+  "mongolian": "дотор, дотор тал",
+  "hskLevel": "HSK2",
+  "exampleChinese": "教室里面有桌子和椅子。",
+  "exampleMongolian": "Ангид ширээ, сандал байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "教室里面 / 书包里面"
+ },
+ {
+  "chinese": "笔",
+  "pinyin": "bǐ",
+  "mongolian": "зураас (ханзны зураасыг тоолох хэмжих үг)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "“大”比“人”多一笔。",
+  "exampleMongolian": "«大» нь «人»-аас нэг зураас илүү.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "笔画 / 一笔"
+ },
+ {
+  "chinese": "可能",
+  "pinyin": "kěnéng",
+  "mongolian": "магадгүй, байж магадгүй",
+  "hskLevel": "HSK2",
+  "exampleChinese": "现在十一点多了，他可能在睡觉。",
+  "exampleMongolian": "Арван нэг цаг өнгөрлөө, тэр магадгүй унтаж байгаа.",
+  "pos": "баймж үйл үг",
+  "collocations_zh": "可能会… / 不可能"
+ },
+ {
+  "chinese": "上网",
+  "pinyin": "shàngwǎng",
+  "mongolian": "интернэтэд орох",
+  "hskLevel": "HSK2",
+  "exampleChinese": "上网买东西很方便。",
+  "exampleMongolian": "Интернэтээр бараа авах тохиромжтой.",
+  "pos": "үйл үг",
+  "collocations_zh": "上网买东西 / 上网玩游戏"
+ },
+ {
+  "chinese": "那样",
+  "pinyin": "nàyàng",
+  "mongolian": "тийм, тэгж, тэр янзаар",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我也想要一个那样的本子。",
+  "exampleMongolian": "Би ч бас тийм дэвтэр авмаар байна.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "那样的 / 那样做"
+ },
+ {
+  "chinese": "告诉",
+  "pinyin": "gàosu",
+  "mongolian": "хэлэх, мэдэгдэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你告诉他我在公园门口等他。",
+  "exampleMongolian": "Чи түүнд би цэцэрлэгт хүрээлэнгийн үүдэнд хүлээж байгаа гэж хэлээрэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "告诉他 / 告诉我"
+ },
+ {
+  "chinese": "班",
+  "pinyin": "bān",
+  "mongolian": "анги (бүлэг)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我在一班，我的好朋友在二班。",
+  "exampleMongolian": "Би нэгдүгээр ангид, миний сайн найз хоёрдугаар ангид.",
+  "pos": "нэр үг",
+  "collocations_zh": "一班 / 三个班"
+ }
+]

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "房间外有一________小猫。",
+  "options": [
+   "个",
+   "口",
+   "岁",
+   "只"
+  ],
+  "correct_answer": "只",
+  "explanation": "«一只小猫» — муурны хэмжих үг 只.",
+  "order_index": 1,
+  "id": "xinhsk1-l08-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小猫在桌子________呢。",
+  "options": [
+   "里",
+   "大",
+   "下",
+   "外"
+  ],
+  "correct_answer": "下",
+  "explanation": "«桌子下» — ширээний доор.",
+  "order_index": 2,
+  "id": "xinhsk1-l08-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________看见小猫，它在哪儿呢？",
+  "options": [
+   "呢",
+   "没",
+   "不",
+   "和"
+  ],
+  "correct_answer": "没",
+  "explanation": "«没看见» — харсангүй.",
+  "order_index": 3,
+  "id": "xinhsk1-l08-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这只小猫真________！",
+  "options": [
+   "漂亮",
+   "工作",
+   "午饭",
+   "学校"
+  ],
+  "correct_answer": "漂亮",
+  "explanation": "«真漂亮» — үнэхээр хөөрхөн.",
+  "order_index": 4,
+  "id": "xinhsk1-l08-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们在学校书店________见吧。",
+  "options": [
+   "能",
+   "多",
+   "病人",
+   "前"
+  ],
+  "correct_answer": "前",
+  "explanation": "«书店前» — номын дэлгүүрийн урд.",
+  "order_index": 5,
+  "id": "xinhsk1-l08-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "下午两点你________到吗？",
+  "options": [
+   "没",
+   "多",
+   "能",
+   "在"
+  ],
+  "correct_answer": "能",
+  "explanation": "«能到吗» — ирж чадах уу.",
+  "order_index": 6,
+  "id": "xinhsk1-l08-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我在学校吃________。",
+  "options": [
+   "房间",
+   "午饭",
+   "桌子",
+   "漂亮"
+  ],
+  "correct_answer": "午饭",
+  "explanation": "«吃午饭» — өдрийн хоол идэх.",
+  "order_index": 7,
+  "id": "xinhsk1-l08-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "大医院里________很多。",
+  "options": [
+   "病人",
+   "午饭",
+   "房间",
+   "小猫"
+  ],
+  "correct_answer": "病人",
+  "explanation": "«病人很多» — өвчтөн олон.",
+  "order_index": 8,
+  "id": "xinhsk1-l08-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我爸爸在医院________，他是医生。",
+  "options": [
+   "午饭",
+   "漂亮",
+   "看见",
+   "工作"
+  ],
+  "correct_answer": "工作",
+  "explanation": "«在医院工作» — эмнэлэгт ажиллах.",
+  "order_index": 9,
+  "id": "xinhsk1-l08-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小胡，你还没吃________呢？",
+  "options": [
+   "猫",
+   "外",
+   "饭",
+   "桌"
+  ],
+  "correct_answer": "饭",
+  "explanation": "«吃饭» — хоол идэх.",
+  "order_index": 10,
+  "id": "xinhsk1-l08-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бяцхан муур ширээний доор байна» — аль нь зөв бэ?",
+  "options": [
+   "小猫下在桌子。",
+   "小猫在桌子下。",
+   "小猫在下桌子。",
+   "小猫桌子下在。"
+  ],
+  "correct_answer": "小猫在桌子下。",
+  "explanation": "Байрлалын үг нэрийн ДАРАА орно: 桌子下.",
+  "order_index": 11,
+  "id": "xinhsk1-l08-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би сургууль дээр хоол иднэ» — аль нь зөв бэ?",
+  "options": [
+   "我在学校吃饭。",
+   "我吃饭在学校。",
+   "我学校在吃饭。",
+   "在我学校吃饭。"
+  ],
+  "correct_answer": "我在学校吃饭。",
+  "explanation": "在 + газар + үйл үг.",
+  "order_index": 12,
+  "id": "xinhsk1-l08-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи ирж чадах уу?» — аль нь зөв бэ?",
+  "options": [
+   "你到能吗？",
+   "你吗能到？",
+   "你能吗到？",
+   "你能到吗？"
+  ],
+  "correct_answer": "你能到吗？",
+  "explanation": "能 үйл үгийн өмнө, 吗 төгсгөлд.",
+  "order_index": 13,
+  "id": "xinhsk1-l08-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би явж чадахгүй» — аль нь зөв бэ?",
+  "options": [
+   "我不去能。",
+   "我能去不。",
+   "我不能去。",
+   "我去不能。"
+  ],
+  "correct_answer": "我不能去。",
+  "explanation": "Үгүйсгэхдээ 不能 үйл үгийн өмнө.",
+  "order_index": 14,
+  "id": "xinhsk1-l08-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би дэлгүүрт хоол хүнс авдаг» — аль нь зөв бэ?",
+  "options": [
+   "我买商店在菜。",
+   "我在商店买菜。",
+   "我在买菜商店。",
+   "我商店买菜在。"
+  ],
+  "correct_answer": "我在商店买菜。",
+  "explanation": "在 + газар + үйл үг.",
+  "order_index": 15,
+  "id": "xinhsk1-l08-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Өрөөний гадна» — аль нь зөв бэ?",
+  "options": [
+   "房间外",
+   "外房间",
+   "房间外在",
+   "外在房间"
+  ],
+  "correct_answer": "房间外",
+  "explanation": "Нэр + байрлалын үг.",
+  "order_index": 16,
+  "id": "xinhsk1-l08-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我能到。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би ирсэн.",
+   "Би ирэхгүй.",
+   "Би хаана байгаа.",
+   "Би ирж чадна."
+  ],
+  "correct_answer": "Би ирж чадна.",
+  "explanation": "能 — «чадах».",
+  "order_index": 17,
+  "id": "xinhsk1-l08-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би муурыг харсангүй» — аль нь зөв бэ?",
+  "options": [
+   "我看见没小猫。",
+   "我没有看见在小猫。",
+   "我没看见小猫。",
+   "我不看见小猫。"
+  ],
+  "correct_answer": "我没看见小猫。",
+  "explanation": "Өнгөрсөн үйлийг үгүйсгэхдээ 没.",
+  "order_index": 18,
+  "id": "xinhsk1-l08-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：小猫在哪儿？",
+  "options": [
+   "学校里",
+   "桌子下",
+   "房间里",
+   "书店前"
+  ],
+  "correct_answer": "桌子下",
+  "explanation": "«它在桌子下呢».",
+  "order_index": 19,
+  "id": "xinhsk1-l08-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：陈天中觉得小猫怎么样？",
+  "options": [
+   "很漂亮",
+   "很忙",
+   "很大",
+   "很多"
+  ],
+  "correct_answer": "很漂亮",
+  "explanation": "«这只小猫真漂亮！»",
+  "order_index": 20,
+  "id": "xinhsk1-l08-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月和李文在哪儿见？",
+  "options": [
+   "家里",
+   "医院里",
+   "桌子下",
+   "书店前"
+  ],
+  "correct_answer": "书店前",
+  "explanation": "«在学校书店前见吧».",
+  "order_index": 21,
+  "id": "xinhsk1-l08-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文下午几点能到？",
+  "options": [
+   "两点半",
+   "四点",
+   "两点",
+   "三点"
+  ],
+  "correct_answer": "两点",
+  "explanation": "«下午两点你能到吗？ 我能到».",
+  "order_index": 22,
+  "id": "xinhsk1-l08-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文在哪儿吃午饭？",
+  "options": [
+   "医院",
+   "学校",
+   "家里",
+   "书店"
+  ],
+  "correct_answer": "学校",
+  "explanation": "«我在学校吃午饭».",
+  "order_index": 23,
+  "id": "xinhsk1-l08-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：大医院里怎么样？",
+  "options": [
+   "病人多",
+   "病人少",
+   "医生不忙",
+   "没有医生"
+  ],
+  "correct_answer": "病人多",
+  "explanation": "«大医院病人多，医生非常忙».",
+  "order_index": 24,
+  "id": "xinhsk1-l08-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：胡医生的爸爸在哪儿工作？",
+  "options": [
+   "学校",
+   "书店",
+   "房间",
+   "医院"
+  ],
+  "correct_answer": "医院",
+  "explanation": "«我爸爸也在医院工作».",
+  "order_index": 25,
+  "id": "xinhsk1-l08-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

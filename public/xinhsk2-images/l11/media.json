@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-hero.webp",
+   "title": "11-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l11-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w1.webp",
+   "title": "头 tóu — толгой",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l11-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w2.webp",
+   "title": "药 yào — эм",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l11-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w3.webp",
+   "title": "身体 shēntǐ — бие, эрүүл мэнд",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l11-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w4.webp",
+   "title": "药店 yàodiàn — эмийн сан",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l11-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l11/l11-w5.webp",
+   "title": "路上 lùshang — зам дээр, замдаа",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

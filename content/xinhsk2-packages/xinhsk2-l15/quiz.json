@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "他明年要________。",
+  "options": [
+   "姓名",
+   "机场",
+   "高中",
+   "出国"
+  ],
+  "correct_answer": "出国",
+  "explanation": "«Тэр ирэх жил гадаад руу явна» — 出国.",
+  "order_index": 1,
+  "id": "xinhsk2-l15-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请问你的________是什么？",
+  "options": [
+   "鸟",
+   "机票",
+   "姓名",
+   "路"
+  ],
+  "correct_answer": "姓名",
+  "explanation": "«Таны нэр юу вэ?» — 姓名.",
+  "order_index": 2,
+  "id": "xinhsk2-l15-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我买了一张去上海的________。",
+  "options": [
+   "飞",
+   "机票",
+   "姓名",
+   "高中"
+  ],
+  "correct_answer": "机票",
+  "explanation": "«Шанхай руу онгоцны тасалбар авсан» — 机票.",
+  "order_index": 3,
+  "id": "xinhsk2-l15-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "从这儿到学校，走________要十分钟。",
+  "options": [
+   "路",
+   "鸟",
+   "门票",
+   "好像"
+  ],
+  "correct_answer": "路",
+  "explanation": "«Явганаар арван минут» — 走路.",
+  "order_index": 4,
+  "id": "xinhsk2-l15-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我每天早上七点________上学。",
+  "options": [
+   "出国",
+   "姓名",
+   "机场",
+   "出门"
+  ],
+  "correct_answer": "出门",
+  "explanation": "«Гэрээсээ гарч сургуульдаа явна» — 出门.",
+  "order_index": 5,
+  "id": "xinhsk2-l15-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他已经在________等了一个小时了。",
+  "options": [
+   "高中",
+   "好像",
+   "机场",
+   "门票"
+  ],
+  "correct_answer": "机场",
+  "explanation": "«Нисэх буудал дээр нэг цаг хүлээж байна» — 机场.",
+  "order_index": 6,
+  "id": "xinhsk2-l15-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她________生病了。",
+  "options": [
+   "飞",
+   "好像",
+   "出门",
+   "姓名"
+  ],
+  "correct_answer": "好像",
+  "explanation": "«Тэр өвдсөн юм шиг» — 好像.",
+  "order_index": 7,
+  "id": "xinhsk2-l15-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小鸟在天上________。",
+  "options": [
+   "飞",
+   "出国",
+   "姓名",
+   "机场"
+  ],
+  "correct_answer": "飞",
+  "explanation": "«Шувуу тэнгэрт нисч байна» — 飞.",
+  "order_index": 8,
+  "id": "xinhsk2-l15-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的________同学在医院工作。",
+  "options": [
+   "机场",
+   "门票",
+   "姓名",
+   "高中"
+  ],
+  "correct_answer": "高中",
+  "explanation": "«Миний ахлах ангийн анд эмнэлэгт ажилладаг» — 高中同学.",
+  "order_index": 9,
+  "id": "xinhsk2-l15-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我买了两张公园________。",
+  "options": [
+   "姓名",
+   "路",
+   "门票",
+   "机票"
+  ],
+  "correct_answer": "门票",
+  "explanation": "«Хоёр ширхэг цэцэрлэгт хүрээлэнд орох тасалбар» — 门票.",
+  "order_index": 10,
+  "id": "xinhsk2-l15-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "安妮去一次过北京。",
+   "安妮去过一次北京。",
+   "安妮一次去过北京。",
+   "安妮去北京一次过。"
+  ],
+  "correct_answer": "安妮去过一次北京。",
+  "explanation": "数词+次 үйл үгийн ард, 过 үйл үгэнд шууд залгана.",
+  "order_index": 11,
+  "id": "xinhsk2-l15-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l15-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我想找他一次。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би түүнийг нэг удаа хайж очмоор байна.",
+   "Би түүнийг хайхгүй.",
+   "Тэр намайг нэг удаа хайсан.",
+   "Би түүнтэй хэзээ ч уулзаагүй."
+  ],
+  "correct_answer": "Би түүнийг нэг удаа хайж очмоор байна.",
+  "explanation": "Төлөөний үг 他 нь 一次-ийн өмнө.",
+  "order_index": 12,
+  "id": "xinhsk2-l15-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我想再吃一次烤鸭。» — 烤鸭 яагаад 一次-ийн ард орсон бэ?",
+  "options": [
+   "төлөөний үг тул",
+   "хүний нэр тул",
+   "өгүүлбэр богино тул",
+   "юмны нэр тул"
+  ],
+  "correct_answer": "юмны нэр тул",
+  "explanation": "Юмны нэр объект бол 数词+次-ийн ард орно.",
+  "order_index": 13,
+  "id": "xinhsk2-l15-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你有一年没回国了吧？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи жилд нэг удаа буцдаг уу?",
+   "Чи Хятадад буцахгүй юу?",
+   "Чи нэг жил Хятадад буцаагүй байх аа?",
+   "Чи нэг жил Хятадад байсан уу?"
+  ],
+  "correct_answer": "Чи нэг жил Хятадад буцаагүй байх аа?",
+  "explanation": "有 + хугацаа + 没 + үйл үг + 了: хугацаанд хүрсэн.",
+  "order_index": 14,
+  "id": "xinhsk2-l15-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我有没一个月给家里打电话了。",
+   "我有一个月没给家里打电话了。",
+   "我一个月有没给家里打电话了。",
+   "我没有一个月给家里打电话。"
+  ],
+  "correct_answer": "我有一个月没给家里打电话了。",
+  "explanation": "有 + хугацаа + 没 + үйл үг.",
+  "order_index": 15,
+  "id": "xinhsk2-l15-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你女儿今年有10岁了吗？» — 有 энд ямар утгатай вэ?",
+  "options": [
+   "10 настай болсон эсэхийг асууж байна",
+   "охин байгаа эсэхийг асууж байна",
+   "охин тус тусдаа гэж асууж байна",
+   "охин өвдсөн эсэхийг асууж байна"
+  ],
+  "correct_answer": "10 настай болсон эсэхийг асууж байна",
+  "explanation": "有 + тоо хэмжээ нь тодорхой хэмжээнд хүрсэн эсэхийг заана.",
+  "order_index": 16,
+  "id": "xinhsk2-l15-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l15-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«就要过年了» — 就要…了 ямар утгатай вэ?",
+  "options": [
+   "хэзээ ч",
+   "өнгөрсөн",
+   "заавал",
+   "удахгүй"
+  ],
+  "correct_answer": "удахгүй",
+  "explanation": "就要…了 — «удахгүй …».",
+  "order_index": 17,
+  "id": "xinhsk2-l15-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l15-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我们好像小鸟。» — 好像 ямар утгатай вэ?",
+  "options": [
+   "хэзээ ч",
+   "бас",
+   "яг л … шиг",
+   "заавал"
+  ],
+  "correct_answer": "яг л … шиг",
+  "explanation": "好像 — төстэй байдлыг, таамаглалыг заана.",
+  "order_index": 18,
+  "id": "xinhsk2-l15-q18",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一飞让同学们先做什么？",
+  "options": [
+   "读课文",
+   "写姓名",
+   "做题",
+   "出门"
+  ],
+  "correct_answer": "写姓名",
+  "explanation": "«请大家写上姓名» — нэрээ бичих.",
+  "order_index": 19,
+  "id": "xinhsk2-l15-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月在哪儿买的门票？",
+  "options": [
+   "在网上",
+   "在机场",
+   "在学校",
+   "在颐和园"
+  ],
+  "correct_answer": "在网上",
+  "explanation": "«我还在网上买好颐和园的门票了呢» — интернетээр.",
+  "order_index": 20,
+  "id": "xinhsk2-l15-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文的高中同学在哪儿上班？",
+  "options": [
+   "饭店",
+   "电影院",
+   "机场",
+   "颐和园"
+  ],
+  "correct_answer": "颐和园",
+  "explanation": "«我的高中同学就在颐和园上班».",
+  "order_index": 21,
+  "id": "xinhsk2-l15-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：李文多长时间没回国了？",
+  "options": [
+   "六个月",
+   "两年",
+   "不到一年",
+   "一年"
+  ],
+  "correct_answer": "不到一年",
+  "explanation": "«不到一年。我六月的时候回去了一次。»",
+  "order_index": 22,
+  "id": "xinhsk2-l15-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：白家月觉得这次的机票怎么样？",
+  "options": [
+   "不贵",
+   "有点儿贵",
+   "很便宜",
+   "很贵"
+  ],
+  "correct_answer": "有点儿贵",
+  "explanation": "«这次的机票虽然有点儿贵».",
+  "order_index": 23,
+  "id": "xinhsk2-l15-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：李文和白家月坐什么时候的飞机？",
+  "options": [
+   "星期五",
+   "星期六",
+   "星期天",
+   "星期一"
+  ],
+  "correct_answer": "星期五",
+  "explanation": "«我们都是星期五的飞机».",
+  "order_index": 24,
+  "id": "xinhsk2-l15-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：白家月说他们好像什么？",
+  "options": [
+   "飞机",
+   "朋友",
+   "同学",
+   "小鸟"
+  ],
+  "correct_answer": "小鸟",
+  "explanation": "«我们好像小鸟，一起飞到北京».",
+  "order_index": 25,
+  "id": "xinhsk2-l15-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

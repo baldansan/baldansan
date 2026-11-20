@@ -1,0 +1,122 @@
+[
+ {
+  "chinese": "姓名",
+  "pinyin": "xìngmíng",
+  "mongolian": "овог нэр, нэр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "请在纸上写下你的姓名。",
+  "exampleMongolian": "Цаасан дээр өөрийн нэрийг бичээрэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "写姓名 / 你的姓名"
+ },
+ {
+  "chinese": "出国",
+  "pinyin": "chūguó",
+  "mongolian": "гадаад руу явах, оронөөс гарах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他明年要出国。",
+  "exampleMongolian": "Тэр ирэх жил гадаадад явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "出国旅游 / 出国留学"
+ },
+ {
+  "chinese": "门票",
+  "pinyin": "ménpiào",
+  "mongolian": "нэвтрэх тасалбар, орох тасалбар",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我买了两张门票。",
+  "exampleMongolian": "Би хоёр ширхэг орох тасалбар авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "公园门票 / 买门票"
+ },
+ {
+  "chinese": "高中",
+  "pinyin": "gāozhōng",
+  "mongolian": "ахлах сургууль",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我的高中同学在医院工作。",
+  "exampleMongolian": "Миний ахлах ангийн анд эмнэлэгт ажилладаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "高中同学 / 上高中"
+ },
+ {
+  "chinese": "出门",
+  "pinyin": "chūmén",
+  "mongolian": "гэрээс гарах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我每天早上七点出门上学。",
+  "exampleMongolian": "Би өдөр бүр өглөө долоон цагт гэрээсээ гарч сургуульдаа явдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "出门旅游 / 什么时候出门"
+ },
+ {
+  "chinese": "路",
+  "pinyin": "lù",
+  "mongolian": "зам",
+  "hskLevel": "HSK2",
+  "exampleChinese": "从这儿到学校，走路要十分钟。",
+  "exampleMongolian": "Эндээс сургууль хүртэл явганаар арван минут.",
+  "pos": "нэр үг",
+  "collocations_zh": "走路 / 路上 / 路边"
+ },
+ {
+  "chinese": "颐和园",
+  "pinyin": "Yíhé Yuán",
+  "mongolian": "Ихэюань цэцэрлэгт хүрээлэн (Бээжин дэх Зуны ордон)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "颐和园在北京。",
+  "exampleMongolian": "Ихэюань Бээжинд байдаг.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "去颐和园 / 颐和园门票"
+ },
+ {
+  "chinese": "机场",
+  "pinyin": "jīchǎng",
+  "mongolian": "нисэх онгоцны буудал",
+  "hskLevel": "HSK2",
+  "exampleChinese": "明天我去机场送你。",
+  "exampleMongolian": "Маргааш би нисэх буудал дээр чамайг үдэх болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "去机场 / 在机场"
+ },
+ {
+  "chinese": "机票",
+  "pinyin": "jīpiào",
+  "mongolian": "нисэх онгоцны тасалбар",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我买了一张去上海的机票。",
+  "exampleMongolian": "Би Шанхай руу нэг ширхэг онгоцны тасалбар авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "买机票 / 一张机票"
+ },
+ {
+  "chinese": "飞",
+  "pinyin": "fēi",
+  "mongolian": "нисэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我想坐飞机飞去北京。",
+  "exampleMongolian": "Би онгоцоор Бээжин рүү нисэхийг хүсэж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "飞北京 / 飞回来"
+ },
+ {
+  "chinese": "好像",
+  "pinyin": "hǎoxiàng",
+  "mongolian": "яг л … шиг; … юм шиг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天好像要下雨。",
+  "exampleMongolian": "Өнөөдөр бороо орох шиг байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "好像要… / 好像生病了"
+ },
+ {
+  "chinese": "鸟",
+  "pinyin": "niǎo",
+  "mongolian": "шувуу",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我喜欢小鸟。",
+  "exampleMongolian": "Би бяцхан шувуунд дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "小鸟 / 一只鸟"
+ }
+]

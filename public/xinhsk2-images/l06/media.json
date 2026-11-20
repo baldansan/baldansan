@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-hero.webp",
+   "title": "6-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l06-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w1.webp",
+   "title": "蛋糕 dàngāo — бялуу",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w2.webp",
+   "title": "鱼 yú — загас",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w3.webp",
+   "title": "肉 ròu — мах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w4.webp",
+   "title": "床 chuáng — ор",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l06/l06-w5.webp",
+   "title": "画笔 huàbǐ — өнгөт үзэг, зургийн үзэг",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

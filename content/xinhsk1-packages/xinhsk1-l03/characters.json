@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "人",
+   "pinyin": [
+    "rén"
+   ],
+   "strokeCount": 2,
+   "radical": "人",
+   "practice": "write",
+   "meaningMn": "хүн",
+   "etymology_mn": "Хоёр хөл гишгэж яваа хүний дүрс",
+   "exampleWords": [
+    "中国人",
+    "法国人"
+   ]
+  },
+  {
+   "hanzi": "国",
+   "pinyin": [
+    "guó"
+   ],
+   "strokeCount": 8,
+   "radical": "囗",
+   "practice": "write",
+   "meaningMn": "улс",
+   "etymology_mn": "囗 (хашаа) дотор 玉 (эрдэнийн чулуу): хилээр хүрээлэгдсэн улс",
+   "exampleWords": [
+    "中国",
+    "哪国"
+   ]
+  },
+  {
+   "hanzi": "谁",
+   "pinyin": [
+    "shéi"
+   ],
+   "strokeCount": 10,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "хэн",
+   "etymology_mn": "讠 (хэл) + 隹: хэнд хэлж байна вэ гэсэн асуулт",
+   "exampleWords": [
+    "是谁",
+    "谁的"
+   ]
+  },
+  {
+   "hanzi": "想",
+   "pinyin": [
+    "xiǎng"
+   ],
+   "strokeCount": 13,
+   "radical": "心",
+   "practice": "write",
+   "meaningMn": "санах",
+   "etymology_mn": "相 + 心 (зүрх): зүрхээрээ санах",
+   "exampleWords": [
+    "想你",
+    "很想"
+   ]
+  },
+  {
+   "hanzi": "忙",
+   "pinyin": [
+    "máng"
+   ],
+   "strokeCount": 6,
+   "radical": "忄",
+   "practice": "write",
+   "meaningMn": "завгүй",
+   "etymology_mn": "忄 (зүрх) + 亡: сэтгэл завгүй байх",
+   "exampleWords": [
+    "很忙",
+    "不太忙"
+   ]
+  },
+  {
+   "hanzi": "她",
+   "pinyin": [
+    "tā"
+   ],
+   "strokeCount": 6,
+   "radical": "女",
+   "practice": "write",
+   "meaningMn": "тэр (эмэгтэй)",
+   "etymology_mn": "女 (эмэгтэй) + 也: эмэгтэй хүнийг заана",
+   "exampleWords": [
+    "她是",
+    "她的"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "她",
+   "b": "他",
+   "word_a": "她是",
+   "word_b": "他是",
+   "mn": "她 — тэр (эмэгтэй); 他 — тэр (эрэгтэй)",
+   "tip_mn": "她 дээр 女 (эмэгтэй), 他 дээр 亻 (хүн) байна. Дуудлага адил tā."
+  },
+  {
+   "a": "吗",
+   "b": "妈",
+   "word_a": "是吗",
+   "word_b": "妈妈",
+   "mn": "吗 — асуултын сул үг; 妈 — ээж",
+   "tip_mn": "吗 дээр 口 (ам), асуухад ашиглана. 妈 дээр 女 (эмэгтэй), ээж гэсэн утга."
+  },
+  {
+   "a": "人",
+   "b": "入",
+   "word_a": "中国人",
+   "word_b": "入口",
+   "mn": "人 — хүн; 入 — орох",
+   "tip_mn": "人 нь баруун тийш хөл гишгэсэн, 入 нь зүүн тийш. Хоёулаа ижил төстэй."
+  },
+  {
+   "a": "大",
+   "b": "太",
+   "word_a": "大家",
+   "word_b": "太好了",
+   "mn": "大 — том; 太 — хэтэрхий, тун",
+   "tip_mn": "太 нь 大-ийн доор нэг цэгтэй."
+  }
+ ]
+}

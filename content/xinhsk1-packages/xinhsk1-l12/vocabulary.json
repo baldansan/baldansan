@@ -1,0 +1,232 @@
+[
+ {
+  "chinese": "天气",
+  "pinyin": "tiānqì",
+  "mongolian": "цаг агаар",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天天气不太好。",
+  "exampleMongolian": "Өнөөдөр цаг агаар тийм ч сайн биш.",
+  "pos": "нэр үг",
+  "collocations_zh": "天气好 / 天气不好"
+ },
+ {
+  "chinese": "这里",
+  "pinyin": "zhèlǐ",
+  "mongolian": "энд",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你喜欢这里吗？",
+  "exampleMongolian": "Чи энд дуртай юу?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "在这里"
+ },
+ {
+  "chinese": "天",
+  "pinyin": "tiān",
+  "mongolian": "цаг агаар (1); өдөр (хэмжих үг, 几天) (2)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天的天不太好。",
+  "exampleMongolian": "Өнөөдөр цаг агаар тийм ч сайн биш.",
+  "pos": "нэр үг / хэмжих үг",
+  "collocations_zh": "好天 / 几天"
+ },
+ {
+  "chinese": "下雨",
+  "pinyin": "xià yǔ",
+  "mongolian": "бороо орох",
+  "hskLevel": "HSK1",
+  "exampleChinese": "昨天下雨了。",
+  "exampleMongolian": "Өчигдөр бороо орсон.",
+  "pos": "үйл үг",
+  "collocations_zh": "下大雨"
+ },
+ {
+  "chinese": "了",
+  "pinyin": "le",
+  "mongolian": "(өгүүлбэрийн төгсгөлд) шинэ нөхцөл, өөрчлөлтийг заана",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她去上海了。",
+  "exampleMongolian": "Тэр Шанхай руу явсан.",
+  "pos": "сул үг",
+  "collocations_zh": "下雨了"
+ },
+ {
+  "chinese": "雨",
+  "pinyin": "yǔ",
+  "mongolian": "бороо",
+  "hskLevel": "HSK1",
+  "exampleChinese": "外面下大雨呢。",
+  "exampleMongolian": "Гадаа хүчтэй бороо орж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "大雨 / 小雨"
+ },
+ {
+  "chinese": "有点儿",
+  "pinyin": "yǒudiǎnr",
+  "mongolian": "жаахан, арай (ихэвчлэн таагүй утгатай)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我有点儿冷。",
+  "exampleMongolian": "Би жаахан даарч байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "有点儿冷"
+ },
+ {
+  "chinese": "觉得",
+  "pinyin": "juéde",
+  "mongolian": "санагдах, гэж бодох",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你觉得我做的菜怎么样？",
+  "exampleMongolian": "Миний хийсэн хоол чамд ямар санагдаж байна?",
+  "pos": "үйл үг",
+  "collocations_zh": "我觉得"
+ },
+ {
+  "chinese": "冷",
+  "pinyin": "lěng",
+  "mongolian": "хүйтэн; даарах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "昨天下雪了，非常冷。",
+  "exampleMongolian": "Өчигдөр цас орж, маш хүйтэн байлаа.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很冷 / 太冷了"
+ },
+ {
+  "chinese": "下",
+  "pinyin": "xià",
+  "mongolian": "(бороо, цас) орох",
+  "hskLevel": "HSK1",
+  "exampleChinese": "明天下雪，你多穿点儿。",
+  "exampleMongolian": "Маргааш цас орно, чи арай зузаан хувцас өмс.",
+  "pos": "үйл үг",
+  "collocations_zh": "下雨 / 下雪"
+ },
+ {
+  "chinese": "雪",
+  "pinyin": "xuě",
+  "mongolian": "цас",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢下雪天。",
+  "exampleMongolian": "Би цас орсон өдрийг хайрладаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "下雪 / 大雪"
+ },
+ {
+  "chinese": "来",
+  "pinyin": "lái",
+  "mongolian": "ирэх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他来中国一年了。",
+  "exampleMongolian": "Тэр Хятадад ирээд нэг жил болж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "来公司"
+ },
+ {
+  "chinese": "公司",
+  "pinyin": "gōngsī",
+  "mongolian": "компани",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们公司不大。",
+  "exampleMongolian": "Манай компани жижиг.",
+  "pos": "нэр үг",
+  "collocations_zh": "一家公司"
+ },
+ {
+  "chinese": "生病",
+  "pinyin": "shēngbìng",
+  "mongolian": "өвдөх, өвчтэй болох",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我生病了，不能去北京了。",
+  "exampleMongolian": "Би өвдөөд Бээжин явж чадахгүй боллоо.",
+  "pos": "үйл үг",
+  "collocations_zh": "生病了"
+ },
+ {
+  "chinese": "看病",
+  "pinyin": "kànbìng",
+  "mongolian": "эмчид үзүүлэх (өвчтөн)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我下午去医院看病。",
+  "exampleMongolian": "Би үдээс хойш эмнэлэгт үзүүлэхээр явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "去医院看病"
+ },
+ {
+  "chinese": "病",
+  "pinyin": "bìng",
+  "mongolian": "өвчин; өвдөх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你病了吗？",
+  "exampleMongolian": "Чи өвдсөн юм уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "病了"
+ },
+ {
+  "chinese": "一点儿",
+  "pinyin": "yìdiǎnr",
+  "mongolian": "жаахан, бага зэрэг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你吃一点儿水果吧。",
+  "exampleMongolian": "Чи жаахан жимс идээрэй.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一点儿药"
+ },
+ {
+  "chinese": "药",
+  "pinyin": "yào",
+  "mongolian": "эм",
+  "hskLevel": "HSK1",
+  "exampleChinese": "弟弟病了，我去买点儿药。",
+  "exampleMongolian": "Дүү өвдсөн, би эм авахаар явлаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃药"
+ },
+ {
+  "chinese": "回",
+  "pinyin": "huí",
+  "mongolian": "буцах, эргэж очих",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他今年八月回国。",
+  "exampleMongolian": "Тэр энэ жилийн наймдугаар сард эх орондоо буцна.",
+  "pos": "үйл үг",
+  "collocations_zh": "回家 / 回国"
+ },
+ {
+  "chinese": "再",
+  "pinyin": "zài",
+  "mongolian": "дараа нь, … -сны дараа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你们吃了饭再回家吧。",
+  "exampleMongolian": "Та нар хоолоо идсэний дараа гэртээ харь.",
+  "pos": "дайвар үг",
+  "collocations_zh": "…了再…"
+ },
+ {
+  "chinese": "喝",
+  "pinyin": "hē",
+  "mongolian": "уух",
+  "hskLevel": "HSK1",
+  "exampleChinese": "天气太热了，多喝点儿水吧。",
+  "exampleMongolian": "Цаг агаар хэтэрхий халуун байна, арай их ус уугаарай.",
+  "pos": "үйл үг",
+  "collocations_zh": "喝水 / 喝茶"
+ },
+ {
+  "chinese": "热",
+  "pinyin": "rè",
+  "mongolian": "халуун, дулаан",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天天气不太热。",
+  "exampleMongolian": "Өнөөдөр цаг агаар тийм ч халуун биш.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很热 / 热水"
+ },
+ {
+  "chinese": "水",
+  "pinyin": "shuǐ",
+  "mongolian": "ус",
+  "hskLevel": "HSK1",
+  "exampleChinese": "请问，有热水吗？",
+  "exampleMongolian": "Уучлаарай, халуун ус байна уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "喝水 / 热水"
+ }
+]

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "你有什么________要告诉我吗？",
+  "options": [
+   "晴",
+   "楼",
+   "站",
+   "事情"
+  ],
+  "correct_answer": "事情",
+  "explanation": "«Чи надад хэлэх юм байна уу?» — 事情.",
+  "order_index": 1,
+  "id": "xinhsk2-l12-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "天________了，我们出去玩吧。",
+  "options": [
+   "正",
+   "好",
+   "晴",
+   "阴"
+  ],
+  "correct_answer": "晴",
+  "explanation": "«Цэлмэг болчихлоо, гадаа гарцгаая» — 天晴了.",
+  "order_index": 2,
+  "id": "xinhsk2-l12-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "爸爸________在睡觉，你们出去玩吧。",
+  "options": [
+   "站",
+   "正",
+   "好",
+   "从小"
+  ],
+  "correct_answer": "正",
+  "explanation": "«Аав яг одоо унтаж байна» — 正在睡觉.",
+  "order_index": 3,
+  "id": "xinhsk2-l12-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________下雨了，不要出去。",
+  "options": [
+   "外面",
+   "地铁",
+   "楼",
+   "站"
+  ],
+  "correct_answer": "外面",
+  "explanation": "«Гадаа бороо орж байна, битгий гар» — 外面.",
+  "order_index": 4,
+  "id": "xinhsk2-l12-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________就喜欢唱歌。",
+  "options": [
+   "小时候",
+   "正",
+   "好",
+   "从小"
+  ],
+  "correct_answer": "从小",
+  "explanation": "«Би багаасаа дуулах дуртай» — 从小就.",
+  "order_index": 5,
+  "id": "xinhsk2-l12-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "从这儿去天安门，坐________要二十分钟。",
+  "options": [
+   "晴",
+   "楼",
+   "地铁",
+   "事情"
+  ],
+  "correct_answer": "地铁",
+  "explanation": "«Метроор хорин минут болно» — 坐地铁.",
+  "order_index": 6,
+  "id": "xinhsk2-l12-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我在________下等你。",
+  "options": [
+   "事情",
+   "楼",
+   "站",
+   "外面"
+  ],
+  "correct_answer": "楼",
+  "explanation": "«Би байшингийн доор чамайг хүлээж байна» — 楼下.",
+  "order_index": 7,
+  "id": "xinhsk2-l12-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "从这里到学校要坐三________地铁。",
+  "options": [
+   "站",
+   "楼",
+   "晴",
+   "正"
+  ],
+  "correct_answer": "站",
+  "explanation": "«Метроор гурван буудал» — 三站.",
+  "order_index": 8,
+  "id": "xinhsk2-l12-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他________住在北京。",
+  "options": [
+   "从小",
+   "正",
+   "好",
+   "小时候"
+  ],
+  "correct_answer": "小时候",
+  "explanation": "«Тэр багадаа Бээжинд амьдарч байсан» — 小时候 нь цагийн нэр үг.",
+  "order_index": 9,
+  "id": "xinhsk2-l12-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个苹果________甜。",
+  "options": [
+   "从小",
+   "晴",
+   "好",
+   "正"
+  ],
+  "correct_answer": "好",
+  "explanation": "«Энэ алим ямар амттай юм бэ» — 好甜.",
+  "order_index": 10,
+  "id": "xinhsk2-l12-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这里比北京冷多了。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Бээжин энднээс хүйтэн.",
+   "Энд Бээжингээс хамаагүй хүйтэн.",
+   "Энд Бээжин шиг хүйтэн.",
+   "Энд Бээжингээс жаахан дулаан."
+  ],
+  "correct_answer": "Энд Бээжингээс хамаагүй хүйтэн.",
+  "explanation": "比 + B + тэмдэг нэр + 多了 — ялгаа том.",
+  "order_index": 11,
+  "id": "xinhsk2-l12-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l12-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«坐飞机比坐火车快得多。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Онгоцоор галт тэргээс хамаагүй хурдан.",
+   "Галт тэрэг онгоцоос хамаагүй хурдан.",
+   "Онгоц, галт тэрэг адил хурдтай.",
+   "Онгоцоор явах нь хэцүү."
+  ],
+  "correct_answer": "Онгоцоор галт тэргээс хамаагүй хурдан.",
+  "explanation": "快得多 — «хамаагүй хурдан».",
+  "order_index": 12,
+  "id": "xinhsk2-l12-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l12-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "昨天下比今天得大。",
+   "昨天比今天得下大。",
+   "昨天比下今天得大。",
+   "昨天比今天下得大。"
+  ],
+  "correct_answer": "昨天比今天下得大。",
+  "explanation": "比 нь B-гийн өмнө, 得 нь үйл үгийн ард.",
+  "order_index": 13,
+  "id": "xinhsk2-l12-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ээж надаас орой унтдаг» — аль нь зөв бэ?",
+  "options": [
+   "妈妈比睡我得晚。",
+   "妈妈睡得很比我晚。",
+   "妈妈比我睡得晚。",
+   "妈妈睡比我得晚。"
+  ],
+  "correct_answer": "妈妈比我睡得晚。",
+  "explanation": "比 + хүн + үйл үг + 得 + тэмдэг нэр.",
+  "order_index": 14,
+  "id": "xinhsk2-l12-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«李文跑得比白家月快。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Ли Вэнь гүйдэггүй.",
+   "Ли Вэнь Бай Цзяюэгээс хурдан гүйдэг.",
+   "Бай Цзяюэ Ли Вэньээс хурдан гүйдэг.",
+   "Тэд хоёр адил хурдтай."
+  ],
+  "correct_answer": "Ли Вэнь Бай Цзяюэгээс хурдан гүйдэг.",
+  "explanation": "跑得比白家月快 — Цзяюэгээс хурдан.",
+  "order_index": 15,
+  "id": "xinhsk2-l12-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи надаас хурдан гүйдэг» — аль нь зөв бэ?",
+  "options": [
+   "你跑步跑得比我快。",
+   "你跑步得比我快。",
+   "你比跑步我快。",
+   "你跑得步比我快。"
+  ],
+  "correct_answer": "你跑步跑得比我快。",
+  "explanation": "Объекттой үйл үгийг давтана: 跑步跑得.",
+  "order_index": 16,
+  "id": "xinhsk2-l12-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他踢足球比我踢得好。» — хоосон зайд: 他踢足球________我踢得好。",
+  "options": [
+   "得",
+   "又",
+   "正",
+   "比"
+  ],
+  "correct_answer": "比",
+  "explanation": "Харьцуулах үг 比 хоёр хүний хооронд орно.",
+  "order_index": 17,
+  "id": "xinhsk2-l12-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l12-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他觉得红茶比绿茶好喝得多。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэр хоёр цай адил гэж боддог.",
+   "Тэр цай уудаггүй.",
+   "Тэр хар цай ногоон цайнаас хамаагүй амттай гэж боддог.",
+   "Тэр ногоон цайг хар цайнаас илүү амттай гэж боддог."
+  ],
+  "correct_answer": "Тэр хар цай ногоон цайнаас хамаагүй амттай гэж боддог.",
+  "explanation": "红茶 — хар цай (улаан цай), 好喝得多 — хамаагүй амттай.",
+  "order_index": 18,
+  "id": "xinhsk2-l12-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：北京这几天天气怎么样？",
+  "options": [
+   "很热",
+   "晴天，有点儿冷",
+   "下雪",
+   "阴天"
+  ],
+  "correct_answer": "晴天，有点儿冷",
+  "explanation": "«虽然是晴天，但是有点儿冷».",
+  "order_index": 19,
+  "id": "xinhsk2-l12-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月今天什么时候有课？",
+  "options": [
+   "下午",
+   "上午",
+   "晚上",
+   "没有课"
+  ],
+  "correct_answer": "下午",
+  "explanation": "«下午有课».",
+  "order_index": 20,
+  "id": "xinhsk2-l12-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪为什么让王一飞多买点儿吃的？",
+  "options": [
+   "他很饿",
+   "她想吃",
+   "没有菜了",
+   "阴天下雪少出去"
+  ],
+  "correct_answer": "阴天下雪少出去",
+  "explanation": "«一次多买点儿，阴天下雪什么的就少出去吧».",
+  "order_index": 21,
+  "id": "xinhsk2-l12-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：李文怎么去找白家月？",
+  "options": [
+   "打车",
+   "开车",
+   "坐地铁",
+   "跑步"
+  ],
+  "correct_answer": "坐地铁",
+  "explanation": "«我现在坐地铁去找你».",
+  "order_index": 22,
+  "id": "xinhsk2-l12-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：他们在哪儿见面？",
+  "options": [
+   "饭馆",
+   "楼下",
+   "学校",
+   "地铁站"
+  ],
+  "correct_answer": "楼下",
+  "explanation": "«一会儿楼下见».",
+  "order_index": 23,
+  "id": "xinhsk2-l12-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：这几天白家月怎么去学校？",
+  "options": [
+   "坐地铁",
+   "走路",
+   "跑步",
+   "开车"
+  ],
+  "correct_answer": "坐地铁",
+  "explanation": "«每天坐两站地铁去学校».",
+  "order_index": 24,
+  "id": "xinhsk2-l12-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：李文让白家月跟他去做什么？",
+  "options": [
+   "坐地铁",
+   "等朋友",
+   "学习",
+   "跑步"
+  ],
+  "correct_answer": "跑步",
+  "explanation": "«李文让我跟他去外面跑步».",
+  "order_index": 25,
+  "id": "xinhsk2-l12-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

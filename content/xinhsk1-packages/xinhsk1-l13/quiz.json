@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "我可以再________您一个问题吗？",
+  "options": [
+   "给",
+   "卖",
+   "坐",
+   "问"
+  ],
+  "correct_answer": "问",
+  "explanation": "«问您一个问题» — «танаас нэг асуулт асуух».",
+  "order_index": 1,
+  "id": "xinhsk1-l13-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请________我一杯牛奶。",
+  "options": [
+   "卖",
+   "坐",
+   "给",
+   "问"
+  ],
+  "correct_answer": "给",
+  "explanation": "«请给我一杯牛奶» — «надад нэг аяга сүү өгөөч».",
+  "order_index": 2,
+  "id": "xinhsk1-l13-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你可以打电话问________。",
+  "options": [
+   "一个",
+   "一下",
+   "一半",
+   "一杯"
+  ],
+  "correct_answer": "一下",
+  "explanation": "«问一下» — «нэг асуух».",
+  "order_index": 3,
+  "id": "xinhsk1-l13-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________，请坐！您喝什么？",
+  "options": [
+   "女士",
+   "鸡蛋",
+   "面包",
+   "问题"
+  ],
+  "correct_answer": "女士",
+  "explanation": "«女士，请坐» — «хатагтай, суугаарай».",
+  "order_index": 4,
+  "id": "xinhsk1-l13-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我还没吃早饭，________要一个面包吧。",
+  "options": [
+   "给",
+   "卖",
+   "杯",
+   "再"
+  ],
+  "correct_answer": "再",
+  "explanation": "«再要» — «дахиад авах».",
+  "order_index": 5,
+  "id": "xinhsk1-l13-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请给我一________茶。",
+  "options": [
+   "岁",
+   "口",
+   "杯",
+   "个"
+  ],
+  "correct_answer": "杯",
+  "explanation": "«一杯茶» — ундааны хэмжих үг 杯.",
+  "order_index": 6,
+  "id": "xinhsk1-l13-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个苹果我们一人________吧。",
+  "options": [
+   "可以",
+   "一半",
+   "一下",
+   "一杯"
+  ],
+  "correct_answer": "一半",
+  "explanation": "«一人一半» — «хүн бүр хагасыг».",
+  "order_index": 7,
+  "id": "xinhsk1-l13-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "那个小店________不卖手机？",
+  "options": [
+   "卖",
+   "买",
+   "问",
+   "给"
+  ],
+  "correct_answer": "卖",
+  "explanation": "«卖不卖» — «зардаг уу, үгүй юу».",
+  "order_index": 8,
+  "id": "xinhsk1-l13-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我的早饭是一个面包和一个________。",
+  "options": [
+   "先生",
+   "女士",
+   "服务员",
+   "鸡蛋"
+  ],
+  "correct_answer": "鸡蛋",
+  "explanation": "«面包和鸡蛋» — талх, өндөг.",
+  "order_index": 9,
+  "id": "xinhsk1-l13-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________，请坐！您要什么？",
+  "options": [
+   "面包",
+   "问题",
+   "先生",
+   "鸡蛋"
+  ],
+  "correct_answer": "先生",
+  "explanation": "«先生，请坐» — «ноён, суугаарай».",
+  "order_index": 10,
+  "id": "xinhsk1-l13-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l13-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би энд суугаад болох уу?» — аль нь зөв бэ?",
+  "options": [
+   "可以我坐这儿吗？",
+   "我可以坐这儿吗？",
+   "我坐可以这儿吗？",
+   "我可以这儿坐吗？"
+  ],
+  "correct_answer": "我可以坐这儿吗？",
+  "explanation": "可以 нь үйл үгийн өмнө орно.",
+  "order_index": 11,
+  "id": "xinhsk1-l13-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l13-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи нэг хараарай» — аль нь зөв бэ?",
+  "options": [
+   "你看一下吧。",
+   "你一下看吧。",
+   "你看一个吧。",
+   "你看下一。"
+  ],
+  "correct_answer": "你看一下吧。",
+  "explanation": "Үйл үг + 一下.",
+  "order_index": 12,
+  "id": "xinhsk1-l13-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l13-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Надад нэг аяга сүү өгөөч» — аль нь зөв бэ?",
+  "options": [
+   "请我给一杯牛奶。",
+   "请给一杯牛奶我。",
+   "请给我牛奶一杯。",
+   "请给我一杯牛奶。"
+  ],
+  "correct_answer": "请给我一杯牛奶。",
+  "explanation": "给 + хүн + зүйл.",
+  "order_index": 13,
+  "id": "xinhsk1-l13-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l13-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би багшаас хоёр асуулт асууна» — аль нь зөв бэ?",
+  "options": [
+   "我老师问两个问题。",
+   "我问老师问题两个。",
+   "我问老师两个问题。",
+   "我问两个问题老师。"
+  ],
+  "correct_answer": "我问老师两个问题。",
+  "explanation": "问 + хүн + зүйл.",
+  "order_index": 14,
+  "id": "xinhsk1-l13-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "A：我可以坐吗？ B：________，请坐！",
+  "options": [
+   "没有",
+   "可以",
+   "不是",
+   "再见"
+  ],
+  "correct_answer": "可以",
+  "explanation": "Зөвшөөрөхдөө 可以 гэж хариулна.",
+  "order_index": 15,
+  "id": "xinhsk1-l13-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l13-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«看一下» дахь 一下 юу гэсэн утгатай вэ?",
+  "options": [
+   "нэг удаа, түр зуур",
+   "нэг цаг",
+   "нэг аяга",
+   "нэг хагас"
+  ],
+  "correct_answer": "нэг удаа, түр зуур",
+  "explanation": "V + 一下 — богино, оролдсон үйлдэл.",
+  "order_index": 16,
+  "id": "xinhsk1-l13-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр хоёр объекттой вэ?",
+  "options": [
+   "我喜欢苹果。",
+   "她很忙。",
+   "我是学生。",
+   "白家月给安妮一个苹果。"
+  ],
+  "correct_answer": "白家月给安妮一个苹果。",
+  "explanation": "给 + 安妮 + 一个苹果: хоёр объект.",
+  "order_index": 17,
+  "id": "xinhsk1-l13-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l13-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月想再问王老师几个问题？",
+  "options": [
+   "这个问题",
+   "三个问题",
+   "一个问题",
+   "两个问题"
+  ],
+  "correct_answer": "一个问题",
+  "explanation": "«一个问题».",
+  "order_index": 18,
+  "id": "xinhsk1-l13-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王老师知道那里卖不卖手机吗？",
+  "options": [
+   "卖",
+   "不知道",
+   "知道",
+   "也想知道"
+  ],
+  "correct_answer": "不知道",
+  "explanation": "«我不知道».",
+  "order_index": 19,
+  "id": "xinhsk1-l13-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王老师让白家月怎么办？",
+  "options": [
+   "打电话问一下",
+   "去小店买",
+   "明天再问",
+   "问同学"
+  ],
+  "correct_answer": "打电话问一下",
+  "explanation": "«你可以打电话问一下».",
+  "order_index": 20,
+  "id": "xinhsk1-l13-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪要喝什么？",
+  "options": [
+   "茶",
+   "水",
+   "咖啡",
+   "牛奶"
+  ],
+  "correct_answer": "牛奶",
+  "explanation": "«请给我一杯牛奶».",
+  "order_index": 21,
+  "id": "xinhsk1-l13-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪还想吃什么？",
+  "options": [
+   "面条儿",
+   "饺子",
+   "面包和鸡蛋",
+   "包子"
+  ],
+  "correct_answer": "面包和鸡蛋",
+  "explanation": "«再要这个面包和鸡蛋吧».",
+  "order_index": 22,
+  "id": "xinhsk1-l13-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：刘明最后要多少饺子？",
+  "options": [
+   "一百个",
+   "半斤",
+   "一斤",
+   "四十个"
+  ],
+  "correct_answer": "半斤",
+  "explanation": "Нэг жин 40 ширхэг тул олон гэж, хагасыг (半斤 = 20个) авсан.",
+  "order_index": 23,
+  "id": "xinhsk1-l13-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：刘明想喝什么？",
+  "options": [
+   "茶",
+   "水",
+   "牛奶",
+   "咖啡"
+  ],
+  "correct_answer": "茶",
+  "explanation": "«请给我一杯茶吧».",
+  "order_index": 24,
+  "id": "xinhsk1-l13-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

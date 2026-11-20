@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "明天是小雪的________，我们给她买蛋糕。",
+  "options": [
+   "画笔",
+   "快乐",
+   "肉",
+   "生日"
+  ],
+  "correct_answer": "生日",
+  "explanation": "«Маргааш Сяосюэгийн төрсөн өдөр» — 生日.",
+  "order_index": 1,
+  "id": "xinhsk2-l06-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你不说，我还真________了。",
+  "options": [
+   "过",
+   "画",
+   "忘",
+   "打"
+  ],
+  "correct_answer": "忘",
+  "explanation": "«Чи хэлээгүй бол үнэхээр март л байжээ» — 忘了.",
+  "order_index": 2,
+  "id": "xinhsk2-l06-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她喜欢画画，我们送她一个________吧。",
+  "options": [
+   "肉",
+   "画笔",
+   "床",
+   "鱼"
+  ],
+  "correct_answer": "画笔",
+  "explanation": "«Зурах дуртай, өнгөт үзэг бэлэглэе» — 画笔.",
+  "order_index": 3,
+  "id": "xinhsk2-l06-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我再给她买个大大的生日________。",
+  "options": [
+   "蛋糕",
+   "舒服",
+   "快乐",
+   "长"
+  ],
+  "correct_answer": "蛋糕",
+  "explanation": "«Том төрсөн өдрийн бялуу» — 生日蛋糕.",
+  "order_index": 4,
+  "id": "xinhsk2-l06-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小雪，生日________！",
+  "options": [
+   "舒服",
+   "长",
+   "地",
+   "快乐"
+  ],
+  "correct_answer": "快乐",
+  "explanation": "Төрсөн өдрийн мэнд — 生日快乐.",
+  "order_index": 5,
+  "id": "xinhsk2-l06-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你________看看，喜欢不喜欢。",
+  "options": [
+   "忘",
+   "地",
+   "打开",
+   "过"
+  ],
+  "correct_answer": "打开",
+  "explanation": "«Нээгээд хараарай» — 打开看看.",
+  "order_index": 6,
+  "id": "xinhsk2-l06-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这张床很________，我想睡觉。",
+  "options": [
+   "蛋糕",
+   "舒服",
+   "长",
+   "快乐"
+  ],
+  "correct_answer": "舒服",
+  "explanation": "«Энэ ор тухтай» — 很舒服.",
+  "order_index": 7,
+  "id": "xinhsk2-l06-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他每年都和家人一起________生日。",
+  "options": [
+   "过",
+   "忘",
+   "画",
+   "打开"
+  ],
+  "correct_answer": "过",
+  "explanation": "«Төрсөн өдрөө тэмдэглэх» — 过生日.",
+  "order_index": 8,
+  "id": "xinhsk2-l06-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l06-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我太累了，想舒舒服服________睡一觉。",
+  "options": [
+   "的",
+   "吗",
+   "吧",
+   "地"
+  ],
+  "correct_answer": "地",
+  "explanation": "Үйл үгийн өмнөх байдал тул 地.",
+  "order_index": 9,
+  "id": "xinhsk2-l06-q09",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈正在________上睡觉。",
+  "options": [
+   "肉",
+   "长",
+   "床",
+   "鱼"
+  ],
+  "correct_answer": "床",
+  "explanation": "«Ээж орон дээр унтаж байна» — 床上.",
+  "order_index": 10,
+  "id": "xinhsk2-l06-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«大大的蛋糕» гэдэг нь юу вэ?",
+  "options": [
+   "бялуу зурах",
+   "том том бялуу",
+   "жижиг бялуу",
+   "бялуу идэх"
+  ],
+  "correct_answer": "том том бялуу",
+  "explanation": "大 → 大大 + 的: «том том».",
+  "order_index": 11,
+  "id": "xinhsk2-l06-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l06-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "漂亮-ийн зөв давтсан хэлбэр аль нь вэ?",
+  "options": [
+   "漂漂亮亮",
+   "漂亮漂亮",
+   "漂亮亮亮",
+   "很漂漂亮亮"
+  ],
+  "correct_answer": "漂漂亮亮",
+  "explanation": "Хоёр үеийн AB → AABB.",
+  "order_index": 12,
+  "id": "xinhsk2-l06-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这只猫很小小的。",
+   "这只猫小的小。",
+   "这只猫小小。",
+   "这只猫小小的。"
+  ],
+  "correct_answer": "这只猫小小的。",
+  "explanation": "Давтсан хэлбэрийн өмнө 很 нэмэхгүй, ард 的.",
+  "order_index": 13,
+  "id": "xinhsk2-l06-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«鱼啊肉啊什么的» гэдэг нь юу гэсэн үг вэ?",
+  "options": [
+   "загас юу вэ",
+   "мах идэх",
+   "загас, мах гэх мэт",
+   "юу ч идэхгүй"
+  ],
+  "correct_answer": "загас, мах гэх мэт",
+  "explanation": "什么的 — «гэх мэт».",
+  "order_index": 14,
+  "id": "xinhsk2-l06-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l06-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "桌子上有电脑什么的杯子、书。",
+   "桌子上有电脑、杯子、书什么的。",
+   "桌子上什么的有电脑、杯子、书。",
+   "桌子上有什么的电脑、杯子。"
+  ],
+  "correct_answer": "桌子上有电脑、杯子、书什么的。",
+  "explanation": "什么的 жагсаалтын төгсгөлд орно.",
+  "order_index": 15,
+  "id": "xinhsk2-l06-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр баяртайгаар инээв» — аль нь зөв бэ?",
+  "options": [
+   "他高兴地笑了。",
+   "他高兴的笑了。",
+   "他高兴笑了。",
+   "他笑高兴了。"
+  ],
+  "correct_answer": "他高兴地笑了。",
+  "explanation": "Тэмдэг нэр + 地 + үйл үг.",
+  "order_index": 16,
+  "id": "xinhsk2-l06-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "老师早早________到了教室。 Хоосон газарт аль нь орох вэ?",
+  "options": [
+   "的",
+   "吗",
+   "呢",
+   "地"
+  ],
+  "correct_answer": "地",
+  "explanation": "早早 + 地 + 到 (үйл үг).",
+  "order_index": 17,
+  "id": "xinhsk2-l06-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l06-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«爸爸很快地吃完早饭» — 地 юуг холбож байна?",
+  "options": [
+   "хоёр өгүүлбэрийг",
+   "тоо ба хэмжих үгийг",
+   "тэмдэг нэр ба үйл үгийг",
+   "нэр үг ба нэр үгийг"
+  ],
+  "correct_answer": "тэмдэг нэр ба үйл үгийг",
+  "explanation": "地 нь 快 ба 吃-ийг холбож байдлыг заана.",
+  "order_index": 18,
+  "id": "xinhsk2-l06-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一雪什么时候去买礼物？",
+  "options": [
+   "今天上午",
+   "明天上午",
+   "明天早上",
+   "明天晚上"
+  ],
+  "correct_answer": "明天上午",
+  "explanation": "«我明天上午去买».",
+  "order_index": 19,
+  "id": "xinhsk2-l06-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：他们为什么选画笔？",
+  "options": [
+   "她喜欢画画",
+   "她喜欢吃蛋糕",
+   "她没有床",
+   "她爱看电影"
+  ],
+  "correct_answer": "她喜欢画画",
+  "explanation": "«她喜欢画画，你觉得画笔怎么样？».",
+  "order_index": 20,
+  "id": "xinhsk2-l06-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：刘小明想画什么？",
+  "options": [
+   "黑色的狗",
+   "白色的猫",
+   "爸爸",
+   "穿白色衣服的姐姐"
+  ],
+  "correct_answer": "穿白色衣服的姐姐",
+  "explanation": "«我要画一个穿白色衣服的姐姐».",
+  "order_index": 21,
+  "id": "xinhsk2-l06-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：吃完饭他们要做什么？",
+  "options": [
+   "买蛋糕",
+   "画画",
+   "出去玩",
+   "休息"
+  ],
+  "correct_answer": "出去玩",
+  "explanation": "«吃完饭我们还要出去玩呢».",
+  "order_index": 22,
+  "id": "xinhsk2-l06-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：今天的东西都是谁爱吃的？",
+  "options": [
+   "弟弟",
+   "小雪",
+   "爸爸",
+   "妈妈"
+  ],
+  "correct_answer": "小雪",
+  "explanation": "«都是你喜欢吃的» — Сяосюэд хэлсэн.",
+  "order_index": 23,
+  "id": "xinhsk2-l06-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：吃完晚饭，一家人做了什么？",
+  "options": [
+   "看了个电影",
+   "做了面条儿",
+   "去买画笔",
+   "去上班"
+  ],
+  "correct_answer": "看了个电影",
+  "explanation": "«吃完晚饭，一家人去看了个电影».",
+  "order_index": 24,
+  "id": "xinhsk2-l06-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：孩子们明天为什么要晚点儿起床？",
+  "options": [
+   "太累了",
+   "过生日",
+   "要看电影",
+   "不上学"
+  ],
+  "correct_answer": "不上学",
+  "explanation": "«明天不上学».",
+  "order_index": 25,
+  "id": "xinhsk2-l06-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

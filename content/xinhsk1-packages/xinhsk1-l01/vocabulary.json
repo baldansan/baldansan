@@ -1,0 +1,132 @@
+[
+ {
+  "chinese": "你好",
+  "pinyin": "nǐ hǎo",
+  "mongolian": "сайн уу",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你好，王老师！",
+  "exampleMongolian": "Сайн байна уу, Ван багш аа!",
+  "pos": "мэндчилгээний хэллэг",
+  "collocations_zh": "你好，王老师 / 同学，你好"
+ },
+ {
+  "chinese": "王老师",
+  "pinyin": "Wáng lǎoshī",
+  "mongolian": "Ван багш",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你好，王老师！",
+  "exampleMongolian": "Сайн байна уу, Ван багш аа!",
+  "pos": "оноосон нэр",
+  "collocations_zh": "王 + 老师"
+ },
+ {
+  "chinese": "大家",
+  "pinyin": "dàjiā",
+  "mongolian": "бүгд, хүн бүр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "谢谢大家！",
+  "exampleMongolian": "Бүгдэд баярлалаа!",
+  "pos": "төлөөний үг",
+  "collocations_zh": "大家好"
+ },
+ {
+  "chinese": "好",
+  "pinyin": "hǎo",
+  "mongolian": "сайн",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他学习很好。",
+  "exampleMongolian": "Тэр сайн сурдаг.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很好 / 不好"
+ },
+ {
+  "chinese": "学生",
+  "pinyin": "xuéshēng",
+  "mongolian": "сурагч, оюутан",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他是李老师的学生。",
+  "exampleMongolian": "Тэр бол Ли багшийн оюутан.",
+  "pos": "нэр үг",
+  "collocations_zh": "小学生 / 中学生 / 大学生"
+ },
+ {
+  "chinese": "们",
+  "pinyin": "men",
+  "mongolian": "олон тоог заах дагавар (-ууд, -нууд)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他们正在上课。",
+  "exampleMongolian": "Тэд хичээл дээр байна.",
+  "pos": "дагавар",
+  "collocations_zh": "你们 / 我们 / 他们 / 同学们"
+ },
+ {
+  "chinese": "老师",
+  "pinyin": "lǎoshī",
+  "mongolian": "багш",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她是我的中文老师。",
+  "exampleMongolian": "Тэр бол миний хятад хэлний багш.",
+  "pos": "нэр үг",
+  "collocations_zh": "我的老师 / 中文老师 / 王老师"
+ },
+ {
+  "chinese": "您",
+  "pinyin": "nín",
+  "mongolian": "та (хүндэтгэлтэй)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "老师，您好！",
+  "exampleMongolian": "Багш аа, сайн байна уу!",
+  "pos": "төлөөний үг",
+  "collocations_zh": "老师，您好 / 您好"
+ },
+ {
+  "chinese": "你们",
+  "pinyin": "nǐmen",
+  "mongolian": "та нар",
+  "hskLevel": "HSK1",
+  "exampleChinese": "谢谢你们。",
+  "exampleMongolian": "Та нарт баярлалаа.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "你们好"
+ },
+ {
+  "chinese": "谢谢",
+  "pinyin": "xièxie",
+  "mongolian": "баярлалаа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "谢谢你！",
+  "exampleMongolian": "Баярлалаа!",
+  "pos": "үйл үг",
+  "collocations_zh": "谢谢你 / 谢谢大家"
+ },
+ {
+  "chinese": "不客气",
+  "pinyin": "bú kèqi",
+  "mongolian": "зүгээрээ, зүгээр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "A：谢谢！B：不客气！",
+  "exampleMongolian": "— Баярлалаа! — Зүгээрээ!",
+  "pos": "мэндчилгээний хэллэг",
+  "collocations_zh": "不客气"
+ },
+ {
+  "chinese": "同学",
+  "pinyin": "tóngxué",
+  "mongolian": "ангийн найз, хамт сурагч",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我和他是同学。",
+  "exampleMongolian": "Би тэр хоёр ангийнхан.",
+  "pos": "нэр үг",
+  "collocations_zh": "同学们 / 同学，你好"
+ },
+ {
+  "chinese": "再见",
+  "pinyin": "zàijiàn",
+  "mongolian": "баяртай",
+  "hskLevel": "HSK1",
+  "exampleChinese": "再见，明天见！",
+  "exampleMongolian": "Баяртай, маргааш уулзъя!",
+  "pos": "үйл үг",
+  "collocations_zh": "再见 / 老师，再见"
+ }
+]

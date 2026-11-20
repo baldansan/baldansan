@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "明天就要________了，你们准备好了吗？",
+  "options": [
+   "考试",
+   "笑",
+   "帮",
+   "开学"
+  ],
+  "correct_answer": "开学",
+  "explanation": "«Маргааш хичээл эхэлнэ» — 开学.",
+  "order_index": 1,
+  "id": "xinhsk2-l10-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "书包在________后面。",
+  "options": [
+   "词",
+   "题",
+   "门",
+   "笔"
+  ],
+  "correct_answer": "门",
+  "explanation": "«Цүнх хаалганы ард» — 门后面.",
+  "order_index": 2,
+  "id": "xinhsk2-l10-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我有一支________。",
+  "options": [
+   "错",
+   "笔",
+   "门",
+   "笑"
+  ],
+  "correct_answer": "笔",
+  "explanation": "«Надад нэг үзэг бий» — 一支笔.",
+  "order_index": 3,
+  "id": "xinhsk2-l10-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你能________我拿一下书包吗？",
+  "options": [
+   "帮",
+   "笑",
+   "考",
+   "错"
+  ],
+  "correct_answer": "帮",
+  "explanation": "«Надад цүнх барьж өгч чадах уу?» — 帮我.",
+  "order_index": 4,
+  "id": "xinhsk2-l10-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个字写________了，你再看看书。",
+  "options": [
+   "笑",
+   "考",
+   "门",
+   "错"
+  ],
+  "correct_answer": "错",
+  "explanation": "«Энэ ханзыг буруу бичжээ» — 写错.",
+  "order_index": 5,
+  "id": "xinhsk2-l10-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这道________我做错了。",
+  "options": [
+   "笑",
+   "门",
+   "题",
+   "词"
+  ],
+  "correct_answer": "题",
+  "explanation": "«Энэ бодлогыг буруу бодсон» — 这道题.",
+  "order_index": 6,
+  "id": "xinhsk2-l10-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天我们________中文。",
+  "options": [
+   "笑",
+   "考",
+   "后面",
+   "还是"
+  ],
+  "correct_answer": "考",
+  "explanation": "«Өнөөдөр хятад хэлний шалгалт өгнө» — 考中文.",
+  "order_index": 7,
+  "id": "xinhsk2-l10-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我今天学了十个________。",
+  "options": [
+   "词",
+   "本子",
+   "门",
+   "题"
+  ],
+  "correct_answer": "词",
+  "explanation": "«Арван үг сурлаа» — 十个词.",
+  "order_index": 8,
+  "id": "xinhsk2-l10-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你喝茶________咖啡？",
+  "options": [
+   "和",
+   "也",
+   "吗",
+   "还是"
+  ],
+  "correct_answer": "还是",
+  "explanation": "Асуултад сонголт заахдаа 还是.",
+  "order_index": 9,
+  "id": "xinhsk2-l10-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他________了笑，没说什么就走了。",
+  "options": [
+   "帮",
+   "错",
+   "笑",
+   "考"
+  ],
+  "correct_answer": "笑",
+  "explanation": "«Тэр инээмсэглээд явчихлаа» — 笑了笑.",
+  "order_index": 10,
+  "id": "xinhsk2-l10-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我的书包你看见了吗？» — энэ ямар бүтэц вэ?",
+  "options": [
+   "是…的",
+   "主谓谓语句",
+   "选择问句",
+   "快要…了"
+  ],
+  "correct_answer": "主谓谓语句",
+  "explanation": "我的书包 нь сэдэв, 你看见了 нь тайлбар.",
+  "order_index": 11,
+  "id": "xinhsk2-l10-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Дүү гар нь жижиг» — аль нь зөв бэ?",
+  "options": [
+   "弟弟手很小。",
+   "弟弟很小手。",
+   "手弟弟很小。",
+   "弟弟小手很。"
+  ],
+  "correct_answer": "弟弟手很小。",
+  "explanation": "Сэдэв (弟弟) + 小сэдэв (手) + тэмдэг нэр.",
+  "order_index": 12,
+  "id": "xinhsk2-l10-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你喝茶还是咖啡？» — энэ юу гэсэн үг вэ?",
+  "options": [
+   "Чи цай ч, кофе ч уухгүй.",
+   "Чи цай, кофе уусан уу?",
+   "Чи цайгаа уусан уу?",
+   "Чи цай уух уу, кофе уух уу?"
+  ],
+  "correct_answer": "Чи цай уух уу, кофе уух уу?",
+  "explanation": "还是 — A уу, B уу гэж сонгуулна.",
+  "order_index": 13,
+  "id": "xinhsk2-l10-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "你想去或者不想去？",
+   "你想去还是吗？",
+   "你想去还是不想去？",
+   "你想去还是不想去吗？"
+  ],
+  "correct_answer": "你想去还是不想去？",
+  "explanation": "还是-ийн асуултад 吗 нэмэхгүй.",
+  "order_index": 14,
+  "id": "xinhsk2-l10-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бид дараа долоо хоногт шалгалт өгнө» — аль нь зөв бэ?",
+  "options": [
+   "我们下星期考试快了。",
+   "我们下星期就要考试了。",
+   "我们下星期快要考试了。",
+   "我们下星期要考试。"
+  ],
+  "correct_answer": "我们下星期就要考试了。",
+  "explanation": "Цагийн үгтэй бол 就要…了.",
+  "order_index": 15,
+  "id": "xinhsk2-l10-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«电影快要开始了。» — энэ юу гэсэн үг вэ?",
+  "options": [
+   "Кино удахгүй эхэлнэ.",
+   "Кино дууссан.",
+   "Кино эхэлж байна.",
+   "Кино их удаан."
+  ],
+  "correct_answer": "Кино удахгүй эхэлнэ.",
+  "explanation": "快要…了 — «удахгүй».",
+  "order_index": 16,
+  "id": "xinhsk2-l10-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«饭菜快要做好了。» — 快要 ямар утгатай вэ?",
+  "options": [
+   "аль хэдийн",
+   "заримдаа",
+   "бүх",
+   "удахгүй"
+  ],
+  "correct_answer": "удахгүй",
+  "explanation": "快要…了 нь ойрын ирээдүйг хэлнэ.",
+  "order_index": 17,
+  "id": "xinhsk2-l10-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：书在哪儿？",
+  "options": [
+   "门后面",
+   "书包里",
+   "床上",
+   "桌子上"
+  ],
+  "correct_answer": "床上",
+  "explanation": "«书在床上» — ном орон дээр.",
+  "order_index": 18,
+  "id": "xinhsk2-l10-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：刘小雪明天要做什么？",
+  "options": [
+   "去商店",
+   "考试",
+   "开学",
+   "买本子"
+  ],
+  "correct_answer": "考试",
+  "explanation": "«明天考试» — маргааш шалгалт.",
+  "order_index": 19,
+  "id": "xinhsk2-l10-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：做错的题在哪儿？",
+  "options": [
+   "本子上",
+   "书上",
+   "书包里",
+   "桌子上"
+  ],
+  "correct_answer": "本子上",
+  "explanation": "«本子上做错的题».",
+  "order_index": 20,
+  "id": "xinhsk2-l10-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪买了什么？",
+  "options": [
+   "咖啡",
+   "蛋糕",
+   "水果",
+   "奶茶"
+  ],
+  "correct_answer": "奶茶",
+  "explanation": "«我买了奶茶，就在桌子上».",
+  "order_index": 21,
+  "id": "xinhsk2-l10-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：刘小雪觉得考试考得怎么样？",
+  "options": [
+   "很不好",
+   "不知道",
+   "比上次好",
+   "没上次好"
+  ],
+  "correct_answer": "比上次好",
+  "explanation": "«我觉得比上次好».",
+  "order_index": 22,
+  "id": "xinhsk2-l10-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：爸爸为什么帮弟弟准备书包？",
+  "options": [
+   "快要下雨了",
+   "快要开学了",
+   "快要考试了",
+   "快要放假了"
+  ],
+  "correct_answer": "快要开学了",
+  "explanation": "«快要开学了，爸爸帮弟弟准备书包…».",
+  "order_index": 23,
+  "id": "xinhsk2-l10-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：爸爸、妈妈为什么笑了？",
+  "options": [
+   "孩子上学，他们比孩子还忙",
+   "孩子们考试考得很好",
+   "孩子们去上学了",
+   "孩子们没做作业"
+  ],
+  "correct_answer": "孩子上学，他们比孩子还忙",
+  "explanation": "Хүүхдүүд сургуульд явахад аав, ээж тэднээс ч илүү завгүй.",
+  "order_index": 24,
+  "id": "xinhsk2-l10-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "hard"
+ }
+]

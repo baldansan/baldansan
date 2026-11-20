@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-hero.webp",
+   "title": "10-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l10-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w1.webp",
+   "title": "门 mén — хаалга",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w2.webp",
+   "title": "笔 bǐ — үзэг, харандаа",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w3.webp",
+   "title": "本子 běnzi — дэвтэр",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w4.webp",
+   "title": "词 cí — үг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l10/l10-w5.webp",
+   "title": "题 tí — асуулт, бодлого",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

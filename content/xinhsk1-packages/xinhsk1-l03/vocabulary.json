@@ -1,0 +1,222 @@
+[
+ {
+  "chinese": "人",
+  "pinyin": "rén",
+  "mongolian": "хүн",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你认识这个人吗？",
+  "exampleMongolian": "Чи энэ хүнийг таних уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "人们 / 一个人"
+ },
+ {
+  "chinese": "的",
+  "pinyin": "de",
+  "mongolian": "-ийн, -ын (эзэмшил заадаг сул үг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "王老师是他的老师。",
+  "exampleMongolian": "Ван багш бол түүний багш.",
+  "pos": "сул үг",
+  "collocations_zh": "我的老师 / 你的名字"
+ },
+ {
+  "chinese": "中国",
+  "pinyin": "Zhōngguó",
+  "mongolian": "Хятад улс",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他在中国学习。",
+  "exampleMongolian": "Тэр Хятадад сурдаг.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "中国人 / 中国学生"
+ },
+ {
+  "chinese": "法国",
+  "pinyin": "Fǎguó",
+  "mongolian": "Франц улс",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我是法国学生。",
+  "exampleMongolian": "Би франц оюутан.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "法国人 / 法国学生"
+ },
+ {
+  "chinese": "中文",
+  "pinyin": "Zhōngwén",
+  "mongolian": "хятад хэл",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他中文很好。",
+  "exampleMongolian": "Түүний хятад хэл сайн.",
+  "pos": "нэр үг",
+  "collocations_zh": "中文老师 / 学中文 / 说中文"
+ },
+ {
+  "chinese": "这",
+  "pinyin": "zhè",
+  "mongolian": "энэ",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这个人是我的同学。",
+  "exampleMongolian": "Энэ хүн миний ангийн хүн.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "这个 / 这里"
+ },
+ {
+  "chinese": "谁",
+  "pinyin": "shéi / shuí",
+  "mongolian": "хэн",
+  "hskLevel": "HSK1",
+  "exampleChinese": "谁认识法国人？",
+  "exampleMongolian": "Хэн франц хүнийг таних вэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "是谁 / 谁的"
+ },
+ {
+  "chinese": "女朋友",
+  "pinyin": "nǚpéngyou",
+  "mongolian": "найз охин",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他的女朋友很漂亮。",
+  "exampleMongolian": "Түүний найз охин их царайлаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "他的女朋友"
+ },
+ {
+  "chinese": "哪",
+  "pinyin": "nǎ",
+  "mongolian": "аль",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他是哪国人？",
+  "exampleMongolian": "Тэр аль улсын хүн бэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "哪国 / 哪个"
+ },
+ {
+  "chinese": "国",
+  "pinyin": "guó",
+  "mongolian": "улс",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你是哪国人？",
+  "exampleMongolian": "Чи аль улсын хүн бэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "哪国 / 两国"
+ },
+ {
+  "chinese": "她",
+  "pinyin": "tā",
+  "mongolian": "тэр (эмэгтэй)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你认识她吗？",
+  "exampleMongolian": "Чи түүнийг таних уу?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "她们 / 她的"
+ },
+ {
+  "chinese": "泰国",
+  "pinyin": "Tàiguó",
+  "mongolian": "Тайланд улс",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我的女朋友是泰国人。",
+  "exampleMongolian": "Миний найз охин тайланд хүн.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "泰国人 / 泰国学生"
+ },
+ {
+  "chinese": "喂",
+  "pinyin": "wèi",
+  "mongolian": "алло, хөөе (утсаар, дуудахад)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "喂！你叫什么名字？",
+  "exampleMongolian": "Алло! Чамайг хэн гэдэг вэ?",
+  "pos": "сул үг",
+  "collocations_zh": "喂，你好"
+ },
+ {
+  "chinese": "姐姐",
+  "pinyin": "jiějie",
+  "mongolian": "эгч",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她姐姐是我同学。",
+  "exampleMongolian": "Түүний эгч миний ангийн хүн.",
+  "pos": "нэр үг",
+  "collocations_zh": "我姐姐 / 一个姐姐"
+ },
+ {
+  "chinese": "工作",
+  "pinyin": "gōngzuò",
+  "mongolian": "ажил",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她的工作很好。",
+  "exampleMongolian": "Түүний ажил сайн.",
+  "pos": "нэр үг",
+  "collocations_zh": "我的工作 / 有工作"
+ },
+ {
+  "chinese": "还",
+  "pinyin": "hái",
+  "mongolian": "хэвээр, одоо ч гэсэн",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你还忙吗？",
+  "exampleMongolian": "Чи одоо ч завгүй юу?",
+  "pos": "дайвар үг",
+  "collocations_zh": "还很忙 / 还在"
+ },
+ {
+  "chinese": "忙",
+  "pinyin": "máng",
+  "mongolian": "завгүй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我今天不忙。",
+  "exampleMongolian": "Би өнөөдөр завгүй биш.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很忙 / 不忙"
+ },
+ {
+  "chinese": "吗",
+  "pinyin": "ma",
+  "mongolian": "уу, юу (тийм/үгүй асуултын сул үг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你认识中国人吗？",
+  "exampleMongolian": "Чи хятад хүн таних уу?",
+  "pos": "сул үг",
+  "collocations_zh": "你忙吗"
+ },
+ {
+  "chinese": "对",
+  "pinyin": "duì",
+  "mongolian": "зөв, тийм",
+  "hskLevel": "HSK1",
+  "exampleChinese": "A：他是中国人吗？B：对，他是中国人。",
+  "exampleMongolian": "— Тэр хятад хүн үү? — Тийм, хятад хүн.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很对 / 不对"
+ },
+ {
+  "chinese": "太",
+  "pinyin": "tài",
+  "mongolian": "хэтэрхий, тун",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他太忙了。",
+  "exampleMongolian": "Тэр дэндүү завгүй.",
+  "pos": "дайвар үг",
+  "collocations_zh": "太好了 / 不太忙"
+ },
+ {
+  "chinese": "我们",
+  "pinyin": "wǒmen",
+  "mongolian": "бид",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们是同学。",
+  "exampleMongolian": "Бид ангийнхан.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "我们是同学"
+ },
+ {
+  "chinese": "想",
+  "pinyin": "xiǎng",
+  "mongolian": "санах (хүнийг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我想你了。",
+  "exampleMongolian": "Би чамайг санаж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "想你 / 很想"
+ }
+]

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "他的________很高，跑得也快。",
+  "options": [
+   "门口",
+   "男孩儿",
+   "旁边",
+   "个子"
+  ],
+  "correct_answer": "个子",
+  "explanation": "«Түүний бие өндөр» — 个子很高.",
+  "order_index": 1,
+  "id": "xinhsk2-l09-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个手机________了，我想买个新的。",
+  "options": [
+   "高",
+   "周",
+   "坏",
+   "近"
+  ],
+  "correct_answer": "坏",
+  "explanation": "«Энэ утас эвдэрсэн» — 坏了.",
+  "order_index": 2,
+  "id": "xinhsk2-l09-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "医院________有家超市。",
+  "options": [
+   "这样",
+   "旁边",
+   "咖啡",
+   "周"
+  ],
+  "correct_answer": "旁边",
+  "explanation": "«Эмнэлгийн хажууд» — 旁边.",
+  "order_index": 3,
+  "id": "xinhsk2-l09-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他是一个聪明的________。",
+  "options": [
+   "男孩儿",
+   "咖啡",
+   "门口",
+   "走路"
+  ],
+  "correct_answer": "男孩儿",
+  "explanation": "«Ухаалаг хөвгүүн» — 男孩儿.",
+  "order_index": 4,
+  "id": "xinhsk2-l09-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你________做不对。",
+  "options": [
+   "那么",
+   "个子",
+   "走路",
+   "这样"
+  ],
+  "correct_answer": "这样",
+  "explanation": "«Чи ингэж хийвэл буруу» — 这样.",
+  "order_index": 5,
+  "id": "xinhsk2-l09-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们在________见面吧。",
+  "options": [
+   "周",
+   "高",
+   "门口",
+   "咖啡"
+  ],
+  "correct_answer": "门口",
+  "explanation": "«Үүдэнд уулзъя» — 门口.",
+  "order_index": 6,
+  "id": "xinhsk2-l09-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他喜欢每天早上喝一杯________。",
+  "options": [
+   "走路",
+   "咖啡",
+   "个子",
+   "门口"
+  ],
+  "correct_answer": "咖啡",
+  "explanation": "«Нэг аяга кофе» — 咖啡.",
+  "order_index": 7,
+  "id": "xinhsk2-l09-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请问，学校________这儿远吗？",
+  "options": [
+   "离",
+   "近",
+   "高",
+   "坏"
+  ],
+  "correct_answer": "离",
+  "explanation": "«Сургууль эндээс хол уу?» — 离.",
+  "order_index": 8,
+  "id": "xinhsk2-l09-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "公司离我家很________。",
+  "options": [
+   "离",
+   "坏",
+   "周",
+   "近"
+  ],
+  "correct_answer": "近",
+  "explanation": "«Компани манай гэрээс маш ойрхон» — 很近.",
+  "order_index": 9,
+  "id": "xinhsk2-l09-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________要半个小时，你坐车去吧。",
+  "options": [
+   "个子",
+   "周",
+   "走路",
+   "咖啡"
+  ],
+  "correct_answer": "走路",
+  "explanation": "«Алхвал хагас цаг болно» — 走路.",
+  "order_index": 10,
+  "id": "xinhsk2-l09-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«儿子的个子没有他那么高。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Хүү өндөр биш.",
+   "Хүү түүн шиг өндөр биш.",
+   "Хүү түүнээс өндөр.",
+   "Хүү түүн шиг өндөр."
+  ],
+  "correct_answer": "Хүү түүн шиг өндөр биш.",
+  "explanation": "A没有B那么+тэмдэг нэр — «А нь В шиг тийм … биш».",
+  "order_index": 11,
+  "id": "xinhsk2-l09-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这块手表没有那块好看。",
+   "这块手表没有很那块好看。",
+   "这块手表没有比那块好看。",
+   "这块手表比没有那块好看。"
+  ],
+  "correct_answer": "这块手表没有那块好看。",
+  "explanation": "没有-тэй өгүүлбэрт 很, 比 орохгүй.",
+  "order_index": 12,
+  "id": "xinhsk2-l09-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«那件衣服有这件好看吗？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэр хувцас энэ хувцаснаас гоё биш.",
+   "Энэ хувцас тэрнээс гоё юу?",
+   "Тэр хувцсыг хэн авсан бэ?",
+   "Тэр хувцас энэ хувцас шиг гоё юу?"
+  ],
+  "correct_answer": "Тэр хувцас энэ хувцас шиг гоё юу?",
+  "explanation": "Асуулт хэлбэрт 没有-ийн эерэг хэлбэр 有 орно.",
+  "order_index": 13,
+  "id": "xinhsk2-l09-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«咖啡店离这儿有点儿远。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Кофены газар эндээс гарлаа.",
+   "Би кофены газраас ирлээ.",
+   "Кофены газар эндээс жаахан хол.",
+   "Кофены газар эндээс ойрхон."
+  ],
+  "correct_answer": "Кофены газар эндээс жаахан хол.",
+  "explanation": "A离B+远: А нь В-ээс хол.",
+  "order_index": 14,
+  "id": "xinhsk2-l09-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Манай гэр сургуулиас маш ойрхон» — аль нь зөв бэ?",
+  "options": [
+   "我家离很近学校。",
+   "我家离学校很近。",
+   "我家从学校很近。",
+   "我家学校离很近。"
+  ],
+  "correct_answer": "我家离学校很近。",
+  "explanation": "离 нь А, В хоёрын дунд, ард нь 近/远.",
+  "order_index": 15,
+  "id": "xinhsk2-l09-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他们学了两年。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэд хоёр жил сурсан.",
+   "Тэд хоёр удаа сурсан.",
+   "Тэд хоёр жилийн дараа сурна.",
+   "Тэд хоёр сурагч."
+  ],
+  "correct_answer": "Тэд хоёр жил сурсан.",
+  "explanation": "Үйл үг + хугацаа = 时量补语, хэр удсаныг хэлнэ.",
+  "order_index": 16,
+  "id": "xinhsk2-l09-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我等了一个小时他。",
+   "我等他了一个小时。",
+   "我一个小时等了他。",
+   "我等了他一个小时。"
+  ],
+  "correct_answer": "我等了他一个小时。",
+  "explanation": "Төлөөний үг тусагдахуун бол хугацааны өмнө орно.",
+  "order_index": 17,
+  "id": "xinhsk2-l09-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l09-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他写了半个小时汉字了。» — хоёр 了 ямар утга өгч байна вэ?",
+  "options": [
+   "Тэр бичихгүй.",
+   "Тэр бичиж эхлээгүй.",
+   "Тэр одоо ч бичсээр байна.",
+   "Тэр бичиж дууссан."
+  ],
+  "correct_answer": "Тэр одоо ч бичсээр байна.",
+  "explanation": "Үйл үгийн ард 了, төгсгөлд 了 хоёулаа байвал үйлдэл үргэлжилж байна.",
+  "order_index": 18,
+  "id": "xinhsk2-l09-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l09-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一雪为什么想给儿子买裤子？",
+  "options": [
+   "裤子很便宜",
+   "儿子的裤子坏了",
+   "儿子过生日",
+   "儿子喜欢新裤子"
+  ],
+  "correct_answer": "儿子的裤子坏了",
+  "explanation": "«儿子的裤子坏了» — хүүгийн өмд эвдэрсэн.",
+  "order_index": 19,
+  "id": "xinhsk2-l09-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：刘明觉得哪条裤子好看？",
+  "options": [
+   "上次买的",
+   "黑色的",
+   "白色的",
+   "旁边男孩儿穿的"
+  ],
+  "correct_answer": "上次买的",
+  "explanation": "«没有你上次买的那条好看».",
+  "order_index": 20,
+  "id": "xinhsk2-l09-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：刘明现在想去哪儿？",
+  "options": [
+   "奶茶店",
+   "家里",
+   "商场",
+   "咖啡店"
+  ],
+  "correct_answer": "咖啡店",
+  "explanation": "«还是去咖啡店吧».",
+  "order_index": 21,
+  "id": "xinhsk2-l09-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪为什么不想喝咖啡？",
+  "options": [
+   "咖啡店太小",
+   "她不喜欢咖啡店",
+   "喝了咖啡，晚上睡不着",
+   "咖啡太贵"
+  ],
+  "correct_answer": "喝了咖啡，晚上睡不着",
+  "explanation": "«喝了咖啡，晚上就别想睡觉了».",
+  "order_index": 22,
+  "id": "xinhsk2-l09-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：走路回家要多长时间？",
+  "options": [
+   "一个半小时",
+   "半个多小时",
+   "一个多小时",
+   "十分钟"
+  ],
+  "correct_answer": "半个多小时",
+  "explanation": "«走半个多小时就到了».",
+  "order_index": 23,
+  "id": "xinhsk2-l09-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：王一雪和刘明没有买到什么？",
+  "options": [
+   "喜欢的衣服",
+   "咖啡",
+   "水果",
+   "手表"
+  ],
+  "correct_answer": "喜欢的衣服",
+  "explanation": "«我们没有买到喜欢的衣服».",
+  "order_index": 24,
+  "id": "xinhsk2-l09-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：他们为什么走路回家？",
+  "options": [
+   "没有车",
+   "咖啡店很远",
+   "下雨了",
+   "想运动运动"
+  ],
+  "correct_answer": "想运动运动",
+  "explanation": "«因为想运动运动，所以…走回家了».",
+  "order_index": 25,
+  "id": "xinhsk2-l09-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

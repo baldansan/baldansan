@@ -1,0 +1,242 @@
+[
+ {
+  "chinese": "房间",
+  "pinyin": "fángjiān",
+  "mongolian": "өрөө",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我的房间很漂亮。",
+  "exampleMongolian": "Миний өрөө их хөөрхөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "大房间 / 房间里"
+ },
+ {
+  "chinese": "外",
+  "pinyin": "wài",
+  "mongolian": "гадна, гадаа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "学校外有一家商店。",
+  "exampleMongolian": "Сургуулийн гадна нэг дэлгүүр бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "校外 / 房间外"
+ },
+ {
+  "chinese": "只",
+  "pinyin": "zhī",
+  "mongolian": "амьтны хэмжих үг (нэг муур, нэг нохой)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我有一只猫。",
+  "exampleMongolian": "Надад нэг муур бий.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一只狗 / 几只"
+ },
+ {
+  "chinese": "小",
+  "pinyin": "xiǎo",
+  "mongolian": "жижиг, бяцхан",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我家有只小猫。",
+  "exampleMongolian": "Манай гэрт нэг бяцхан муур бий.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "小猫 / 小狗"
+ },
+ {
+  "chinese": "猫",
+  "pinyin": "māo",
+  "mongolian": "муур",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我很喜欢我的小猫。",
+  "exampleMongolian": "Би бяцхан муурандаа маш их дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "一只猫 / 小猫"
+ },
+ {
+  "chinese": "没",
+  "pinyin": "méi",
+  "mongolian": "үгүй, хараахан … үгүй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我还没吃饭呢。",
+  "exampleMongolian": "Би хараахан хоол идээгүй байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "还没 / 没吃"
+ },
+ {
+  "chinese": "看见",
+  "pinyin": "kànjiàn",
+  "mongolian": "харах, нүдэнд туссан",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我看见小猫了。",
+  "exampleMongolian": "Би бяцхан муурыг харлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "没看见"
+ },
+ {
+  "chinese": "桌子",
+  "pinyin": "zhuōzi",
+  "mongolian": "ширээ",
+  "hskLevel": "HSK1",
+  "exampleChinese": "小猫在桌子下睡觉。",
+  "exampleMongolian": "Бяцхан муур ширээний доор унтаж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "桌子上 / 桌子下"
+ },
+ {
+  "chinese": "下",
+  "pinyin": "xià",
+  "mongolian": "доор, доод тал",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你的书在桌子下呢。",
+  "exampleMongolian": "Таны ном ширээний доор байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "桌子下 / 车下"
+ },
+ {
+  "chinese": "漂亮",
+  "pinyin": "piàoliang",
+  "mongolian": "хөөрхөн, үзэсгэлэнтэй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我的小猫很漂亮。",
+  "exampleMongolian": "Миний бяцхан муур их хөөрхөн.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很漂亮"
+ },
+ {
+  "chinese": "在",
+  "pinyin": "zài",
+  "mongolian": "-д, -т (газар заах)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我在商店买衣服呢。",
+  "exampleMongolian": "Би дэлгүүрт хувцас авч байна.",
+  "pos": "угтвар үг",
+  "collocations_zh": "在哪儿 / 在学校"
+ },
+ {
+  "chinese": "学校",
+  "pinyin": "xuéxiào",
+  "mongolian": "сургууль",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我很喜欢我们学校。",
+  "exampleMongolian": "Би манай сургуульд их дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "学校里 / 我们学校"
+ },
+ {
+  "chinese": "书店",
+  "pinyin": "shūdiàn",
+  "mongolian": "номын дэлгүүр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "学校里有一家书店。",
+  "exampleMongolian": "Сургуулийн дотор нэг номын дэлгүүр бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "去书店 / 一家书店"
+ },
+ {
+  "chinese": "前",
+  "pinyin": "qián",
+  "mongolian": "урд",
+  "hskLevel": "HSK1",
+  "exampleChinese": "电脑前的手机是谁的？",
+  "exampleMongolian": "Компьютерийн урд байгаа утас хэнийх вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "书店前 / 前边"
+ },
+ {
+  "chinese": "能",
+  "pinyin": "néng",
+  "mongolian": "чадах, боломжтой",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我能做很多菜。",
+  "exampleMongolian": "Би олон хоол хийж чадна.",
+  "pos": "баймж үйл үг",
+  "collocations_zh": "不能 / 能不能"
+ },
+ {
+  "chinese": "到",
+  "pinyin": "dào",
+  "mongolian": "ирэх, хүрэх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你两点前能到公司吗？",
+  "exampleMongolian": "Чи хоёр цагаас өмнө компанид хүрч чадах уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "能到 / 到了"
+ },
+ {
+  "chinese": "午饭",
+  "pinyin": "wǔfàn",
+  "mongolian": "өдрийн хоол",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我在家里吃午饭。",
+  "exampleMongolian": "Би гэртээ өдрийн хоол иддэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃午饭"
+ },
+ {
+  "chinese": "饭",
+  "pinyin": "fàn",
+  "mongolian": "хоол, будаа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天你做饭，好吗？",
+  "exampleMongolian": "Өнөөдөр чи хоол хийгээч, за юу?",
+  "pos": "нэр үг",
+  "collocations_zh": "吃饭 / 做饭"
+ },
+ {
+  "chinese": "大",
+  "pinyin": "dà",
+  "mongolian": "том",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你的房间大不大？",
+  "exampleMongolian": "Таны өрөө том уу?",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "大医院 / 大房间"
+ },
+ {
+  "chinese": "病人",
+  "pinyin": "bìngrén",
+  "mongolian": "өвчтөн",
+  "hskLevel": "HSK1",
+  "exampleChinese": "医院里有很多病人。",
+  "exampleMongolian": "Эмнэлэгт олон өвчтөн байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "很多病人"
+ },
+ {
+  "chinese": "多",
+  "pinyin": "duō",
+  "mongolian": "олон",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她认识的朋友很多。",
+  "exampleMongolian": "Түүний танил найз олон.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很多 / 太多了"
+ },
+ {
+  "chinese": "医生",
+  "pinyin": "yīshēng",
+  "mongolian": "эмч",
+  "hskLevel": "HSK1",
+  "exampleChinese": "医生在医院看病。",
+  "exampleMongolian": "Эмч эмнэлэгт өвчтөн үздэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "看医生 / 问医生"
+ },
+ {
+  "chinese": "工作",
+  "pinyin": "gōngzuò",
+  "mongolian": "ажиллах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "老师在学校工作。",
+  "exampleMongolian": "Багш сургуульд ажилладаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "在医院工作"
+ },
+ {
+  "chinese": "胡医生",
+  "pinyin": "Hú yīshēng",
+  "mongolian": "эмч Ху",
+  "hskLevel": "HSK1",
+  "exampleChinese": "胡医生在医院工作。",
+  "exampleMongolian": "Эмч Ху эмнэлэгт ажилладаг.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "胡医生"
+ }
+]

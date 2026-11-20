@@ -1,0 +1,496 @@
+[
+ {
+  "type": "cloze",
+  "question": "老师________我们上课。",
+  "options": [
+   "接",
+   "次",
+   "懂",
+   "给"
+  ],
+  "correct_answer": "给",
+  "explanation": "«Багш бидэнд хичээл заана» — 给我们上课.",
+  "order_index": 1,
+  "id": "xinhsk2-l01-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "医生________我多休息。",
+  "options": [
+   "次",
+   "就",
+   "让",
+   "接"
+  ],
+  "correct_answer": "让",
+  "explanation": "«Эмч намайг их амар гэсэн» — 让我多休息.",
+  "order_index": 2,
+  "id": "xinhsk2-l01-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我要去机场________一个朋友。",
+  "options": [
+   "就",
+   "接",
+   "给",
+   "懂"
+  ],
+  "correct_answer": "接",
+  "explanation": "«Нисэх буудал руу найзаа очиж авна» — 接朋友.",
+  "order_index": 3,
+  "id": "xinhsk2-l01-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这是我第一________来中国。",
+  "options": [
+   "次",
+   "个",
+   "就",
+   "让"
+  ],
+  "correct_answer": "次",
+  "explanation": "«Анх удаа» — 第一次.",
+  "order_index": 4,
+  "id": "xinhsk2-l01-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你想去哪儿________？",
+  "options": [
+   "帮忙",
+   "介绍",
+   "意思",
+   "旅游"
+  ],
+  "correct_answer": "旅游",
+  "explanation": "«Хаашаа аялмаар байна?» — 去哪儿旅游.",
+  "order_index": 5,
+  "id": "xinhsk2-l01-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________，请让一下。",
+  "options": [
+   "有时",
+   "意思",
+   "不好意思",
+   "已经"
+  ],
+  "correct_answer": "不好意思",
+  "explanation": "«Уучлаарай, жаахан зай тавьж өгөөч» — 不好意思.",
+  "order_index": 6,
+  "id": "xinhsk2-l01-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他________去学校了。",
+  "options": [
+   "那",
+   "已经",
+   "有时",
+   "就"
+  ],
+  "correct_answer": "已经",
+  "explanation": "«Тэр аль хэдийн сургуульд явчихсан» — 已经…了.",
+  "order_index": 7,
+  "id": "xinhsk2-l01-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他听不________中文。",
+  "options": [
+   "懂",
+   "给",
+   "让",
+   "接"
+  ],
+  "correct_answer": "懂",
+  "explanation": "«Тэр хятад хэлийг сонсоод ойлгодоггүй» — 听不懂.",
+  "order_index": 8,
+  "id": "xinhsk2-l01-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不懂你的________。",
+  "options": [
+   "介绍",
+   "帮忙",
+   "旅游",
+   "意思"
+  ],
+  "correct_answer": "意思",
+  "explanation": "«Би чиний санааг ойлгохгүй байна» — 你的意思.",
+  "order_index": 9,
+  "id": "xinhsk2-l01-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我________开车上班，有时坐出租车上班。",
+  "options": [
+   "就",
+   "那",
+   "有时",
+   "已经"
+  ],
+  "correct_answer": "有时",
+  "explanation": "«Заримдаа машинаар, заримдаа таксигаар» — 有时…有时….",
+  "order_index": 10,
+  "id": "xinhsk2-l01-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你们就是她的学生吧？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Түүний сурагчид хаана байна?",
+   "Та нар түүний сурагчид байх аа?",
+   "Та нар түүний сурагчид уу?",
+   "Та нар түүний сурагч биш."
+  ],
+  "correct_answer": "Та нар түүний сурагчид байх аа?",
+  "explanation": "吧 нь тааж асуух, баталгаажуулах төлөв.",
+  "order_index": 11,
+  "id": "xinhsk2-l01-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l01-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэрт 吧 зөв хэрэглэгдсэн бэ?",
+  "options": [
+   "你是第一次来北京吧？",
+   "你是哪国人吧？",
+   "你想吃什么吧？",
+   "你是谁吧？"
+  ],
+  "correct_answer": "你是第一次来北京吧？",
+  "explanation": "Асуух үгтэй асуултад 吧 орохгүй.",
+  "order_index": 12,
+  "id": "xinhsk2-l01-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我们是来旅游的。» дахь 是…的 юуг онцолж байна вэ?",
+  "options": [
+   "Цаг",
+   "Газар",
+   "Хүн",
+   "Зорилго (аялахаар)"
+  ],
+  "correct_answer": "Зорилго (аялахаар)",
+  "explanation": "来旅游 — ирсэн зорилгыг онцолсон.",
+  "order_index": 13,
+  "id": "xinhsk2-l01-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бид таксигаар явсан биш» — аль нь зөв бэ?",
+  "options": [
+   "我们是不坐出租车去的。",
+   "我们坐出租车不去的。",
+   "我们不是坐出租车去的。",
+   "我们不坐出租车去的。"
+  ],
+  "correct_answer": "我们不是坐出租车去的。",
+  "explanation": "Сөрөг өгүүлбэрт 是-г орхиж болохгүй.",
+  "order_index": 14,
+  "id": "xinhsk2-l01-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你是什么时候到的？» асуулт юуг асууж байна вэ?",
+  "options": [
+   "Хэнтэй ирснийг",
+   "Ирсэн цагийг",
+   "Ирсэн газрыг",
+   "Яаж ирснийг"
+  ],
+  "correct_answer": "Ирсэн цагийг",
+  "explanation": "是…的: 什么时候 — цагийг онцолж асуусан.",
+  "order_index": 15,
+  "id": "xinhsk2-l01-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«王老师让我们说中文。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Ван багш биднийг хятадаар ярь гэж хэлсэн.",
+   "Ван багш хятад хэлээр ярьдаг.",
+   "Ван багш биднээс хятад хэл сурсан.",
+   "Ван багш хятад хэлийг үзэн яддаг."
+  ],
+  "correct_answer": "Ван багш биднийг хятадаар ярь гэж хэлсэн.",
+  "explanation": "让 + хүн + үйлдэл.",
+  "order_index": 16,
+  "id": "xinhsk2-l01-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l01-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би чамаас нэг юманд тусламж гуймаар байна» — аль нь зөв бэ?",
+  "options": [
+   "我想请帮你个忙。",
+   "我想你请帮个忙。",
+   "我想请个忙你帮。",
+   "我想请你帮个忙。"
+  ],
+  "correct_answer": "我想请你帮个忙。",
+  "explanation": "请 + хүн + үйлдэл: хүн (你) 请-ийн ард.",
+  "order_index": 17,
+  "id": "xinhsk2-l01-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Багш биднийг хятадаар ярихыг зөвшөөрдөггүй» — аль нь зөв бэ?",
+  "options": [
+   "老师我们不让说中文。",
+   "老师让不我们说中文。",
+   "老师不让我们说中文。",
+   "老师让我们不说中文。"
+  ],
+  "correct_answer": "老师不让我们说中文。",
+  "explanation": "Сөрөг 不 нь 让-ийн өмнө орно.",
+  "order_index": 18,
+  "id": "xinhsk2-l01-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l01-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«A：明天下雨。 B：________我们不出去了。» — хоосон зайд аль нь тохирох вэ?",
+  "options": [
+   "次",
+   "那",
+   "就",
+   "给"
+  ],
+  "correct_answer": "那",
+  "explanation": "那 — «тэгвэл», дүгнэлт эхлүүлнэ.",
+  "order_index": 19,
+  "id": "xinhsk2-l01-q19",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：谁来接白家月和安妮？",
+  "options": [
+   "王一雪",
+   "王一飞",
+   "陈天中",
+   "李文"
+  ],
+  "correct_answer": "王一雪",
+  "explanation": "«一飞给我打电话了，让我来接你们» — Ван Исюэ.",
+  "order_index": 20,
+  "id": "xinhsk2-l01-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月和安妮是来北京做什么的？",
+  "options": [
+   "学中文",
+   "工作",
+   "找王一雪",
+   "旅游"
+  ],
+  "correct_answer": "旅游",
+  "explanation": "Анни «我们是来旅游的» гэсэн.",
+  "order_index": 21,
+  "id": "xinhsk2-l01-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪这几天忙不忙？",
+  "options": [
+   "有点儿忙",
+   "不知道",
+   "不忙",
+   "很忙"
+  ],
+  "correct_answer": "不忙",
+  "explanation": "«我这几天都不忙».",
+  "order_index": 22,
+  "id": "xinhsk2-l01-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：陈天中为什么给白家月打电话？",
+  "options": [
+   "问她几点到",
+   "找她帮忙",
+   "请她吃饭",
+   "让她接朋友"
+  ],
+  "correct_answer": "找她帮忙",
+  "explanation": "«我想请你帮个忙».",
+  "order_index": 23,
+  "id": "xinhsk2-l01-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：白家月是什么时候到北京的？",
+  "options": [
+   "今天早上",
+   "昨天中午",
+   "昨天晚上",
+   "明天早上"
+  ],
+  "correct_answer": "今天早上",
+  "explanation": "«我是今天早上到的».",
+  "order_index": 24,
+  "id": "xinhsk2-l01-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：白家月让陈天中找谁帮忙？",
+  "options": [
+   "王一飞",
+   "安妮",
+   "王一雪",
+   "李文"
+  ],
+  "correct_answer": "李文",
+  "explanation": "«你有事可以叫李文帮忙».",
+  "order_index": 25,
+  "id": "xinhsk2-l01-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：王老师的姐姐请白家月吃什么了？",
+  "options": [
+   "饺子",
+   "面条儿",
+   "北京烤鸭",
+   "面包"
+  ],
+  "correct_answer": "北京烤鸭",
+  "explanation": "«她请我们吃了北京烤鸭».",
+  "order_index": 26,
+  "id": "xinhsk2-l01-q26",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

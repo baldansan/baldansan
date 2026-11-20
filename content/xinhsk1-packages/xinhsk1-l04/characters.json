@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "家",
+   "pinyin": [
+    "jiā"
+   ],
+   "strokeCount": 10,
+   "radical": "宀",
+   "practice": "write",
+   "meaningMn": "гэр, гэр бүл",
+   "etymology_mn": "宀 (дээвэр) дор 豕 (гахай) — эртний айлын гэр. «Дээвэр доорх гэр бүл» гэж санаарай",
+   "exampleWords": [
+    "我家",
+    "你家"
+   ]
+  },
+  {
+   "hanzi": "妈",
+   "pinyin": [
+    "mā"
+   ],
+   "strokeCount": 6,
+   "radical": "女",
+   "practice": "write",
+   "meaningMn": "ээж",
+   "etymology_mn": "女 (эмэгтэй) + 马 (дуудлага): ээж бол эмэгтэй хүн",
+   "exampleWords": [
+    "妈妈",
+    "我妈妈"
+   ]
+  },
+  {
+   "hanzi": "儿",
+   "pinyin": [
+    "ér"
+   ],
+   "strokeCount": 2,
+   "radical": "儿",
+   "practice": "write",
+   "meaningMn": "хүү, хүүхэд",
+   "etymology_mn": "Жижигхэн хүүхдийн дүр. Хоёр цохилттой хамгийн энгийн ханз",
+   "exampleWords": [
+    "儿子",
+    "女儿"
+   ]
+  },
+  {
+   "hanzi": "女",
+   "pinyin": [
+    "nǚ"
+   ],
+   "strokeCount": 3,
+   "radical": "女",
+   "practice": "write",
+   "meaningMn": "эмэгтэй, охин",
+   "etymology_mn": "Өвдөг шороолж суугаа эмэгтэйн дүрс",
+   "exampleWords": [
+    "女儿",
+    "女朋友"
+   ]
+  },
+  {
+   "hanzi": "岁",
+   "pinyin": [
+    "suì"
+   ],
+   "strokeCount": 6,
+   "radical": "山",
+   "practice": "write",
+   "meaningMn": "нас",
+   "etymology_mn": "山 дээр 夕 — жил жилээр нас нэмэгдэнэ гэж санаарай",
+   "exampleWords": [
+    "五岁",
+    "几岁"
+   ]
+  },
+  {
+   "hanzi": "哥",
+   "pinyin": [
+    "gē"
+   ],
+   "strokeCount": 10,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "ах",
+   "etymology_mn": "可 хоёр давхар: ахыг «ах аа» гэж дууддаг",
+   "exampleWords": [
+    "哥哥",
+    "我哥哥"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "妈",
+   "b": "吗",
+   "word_a": "妈妈",
+   "word_b": "你好吗",
+   "mn": "妈 — ээж; 吗 — асуух сул үг",
+   "tip_mn": "妈 нь 女 (эмэгтэй) тэй, ээж. 吗 нь 口 (ам)-тай, асуух үг."
+  },
+  {
+   "a": "儿",
+   "b": "几",
+   "word_a": "儿子",
+   "word_b": "几个",
+   "mn": "儿 — хүү; 几 — хэдэн",
+   "tip_mn": "儿 нь 2 цохилттой жижиг. 几 нь 几 хэлбэртэй, «хэдэн» гэж асуух."
+  },
+  {
+   "a": "大",
+   "b": "太",
+   "word_a": "大小",
+   "word_b": "太好了",
+   "mn": "大 — том, настай; 太 — хэтэрхий",
+   "tip_mn": "太 нь 大 дор нэг цэг нэмсэн: «хэтэрхий том» гэж санаарай."
+  },
+  {
+   "a": "他",
+   "b": "她",
+   "word_a": "他有哥哥",
+   "word_b": "她有姐姐",
+   "mn": "他 — тэр (эр); 她 — тэр (эм)",
+   "tip_mn": "他 нь 亻(хүн), 她 нь 女 (эмэгтэй). Дуудлага адил tā."
+  }
+ ]
+}

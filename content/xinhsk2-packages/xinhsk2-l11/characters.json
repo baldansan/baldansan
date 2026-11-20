@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "疼",
+   "pinyin": [
+    "téng"
+   ],
+   "strokeCount": 10,
+   "radical": "疒",
+   "practice": "write",
+   "meaningMn": "өвдөх",
+   "etymology_mn": "疒 (өвчин) + 冬 (дуудлага): өвчин, өвдөлт",
+   "exampleWords": [
+    "头疼",
+    "很疼"
+   ]
+  },
+  {
+   "hanzi": "慢",
+   "pinyin": [
+    "màn"
+   ],
+   "strokeCount": 14,
+   "radical": "忄",
+   "practice": "write",
+   "meaningMn": "удаан",
+   "etymology_mn": "忄 (сэтгэл) + 曼 (дуудлага): сэтгэл тайван, удаан",
+   "exampleWords": [
+    "开慢一点儿",
+    "走得慢"
+   ]
+  },
+  {
+   "hanzi": "进",
+   "pinyin": [
+    "jìn"
+   ],
+   "strokeCount": 7,
+   "radical": "辶",
+   "practice": "write",
+   "meaningMn": "орох",
+   "etymology_mn": "辶 (явах) + 井: урагш алхан орох",
+   "exampleWords": [
+    "进来",
+    "进去"
+   ]
+  },
+  {
+   "hanzi": "药",
+   "pinyin": [
+    "yào"
+   ],
+   "strokeCount": 9,
+   "radical": "艹",
+   "practice": "write",
+   "meaningMn": "эм",
+   "etymology_mn": "艹 (ургамал) + 约 (дуудлага): эмийг ургамлаар хийдэг",
+   "exampleWords": [
+    "吃药",
+    "药店"
+   ]
+  },
+  {
+   "hanzi": "最",
+   "pinyin": [
+    "zuì"
+   ],
+   "strokeCount": 12,
+   "radical": "曰",
+   "practice": "write",
+   "meaningMn": "хамгийн",
+   "etymology_mn": "曰 + 取: хамгийн ихийг авах",
+   "exampleWords": [
+    "最好",
+    "最喜欢"
+   ]
+  },
+  {
+   "hanzi": "动",
+   "pinyin": [
+    "dòng"
+   ],
+   "strokeCount": 6,
+   "radical": "力",
+   "practice": "write",
+   "meaningMn": "хөдлөх",
+   "etymology_mn": "云 + 力: хүч гарган хөдлөх",
+   "exampleWords": [
+    "不要动",
+    "一动就疼"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "他",
+   "b": "她",
+   "word_a": "他们",
+   "word_b": "她们",
+   "mn": "他 — тэр (эр); 她 — тэр (эм)",
+   "tip_mn": "他 нь 亻 (хүн), 她 нь 女 (эмэгтэй)-тэй: хүйсийг радикалаар ялгана."
+  },
+  {
+   "a": "体",
+   "b": "休",
+   "word_a": "身体",
+   "word_b": "休息",
+   "mn": "体 — бие; 休 — амрах",
+   "tip_mn": "体 нь 亻 + 本, 休 нь 亻 + 木. 休 нь «хүн мод налан амарч байна» гэж санаарай."
+  },
+  {
+   "a": "药",
+   "b": "约",
+   "word_a": "吃药",
+   "word_b": "约好",
+   "mn": "药 — эм; 约 — тохиролцох",
+   "tip_mn": "药 дээр 艹 (ургамал) байна, 约 нь 纟 (утас)-тай."
+  },
+  {
+   "a": "进",
+   "b": "近",
+   "word_a": "进来",
+   "word_b": "很近",
+   "mn": "进 — орох; 近 — ойр",
+   "tip_mn": "进 нь 井 + 辶, 近 нь 斤 + 辶. Хоёулаа 辶-тэй ч баруун талын хэсэг өөр."
+  }
+ ]
+}

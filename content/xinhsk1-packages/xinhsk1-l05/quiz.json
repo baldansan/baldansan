@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "今天9月8号，星期________。",
+  "options": [
+   "月",
+   "号",
+   "些",
+   "日"
+  ],
+  "correct_answer": "日",
+  "explanation": "«星期日» — ням гараг.",
+  "order_index": 1,
+  "id": "xinhsk1-l05-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天几________？",
+  "options": [
+   "新",
+   "它",
+   "号",
+   "会"
+  ],
+  "correct_answer": "号",
+  "explanation": "«几号» — хэдний өдөр гэж асуух.",
+  "order_index": 2,
+  "id": "xinhsk1-l05-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的新________真好看！",
+  "options": [
+   "饺子",
+   "电脑",
+   "休息",
+   "星期"
+  ],
+  "correct_answer": "电脑",
+  "explanation": "«新电脑» — шинэ компьютер.",
+  "order_index": 3,
+  "id": "xinhsk1-l05-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我很________它。",
+  "options": [
+   "喜欢",
+   "下班",
+   "做",
+   "日"
+  ],
+  "correct_answer": "喜欢",
+  "explanation": "«很喜欢它» — их дуртай.",
+  "order_index": 4,
+  "id": "xinhsk1-l05-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我妈妈________做饺子。",
+  "options": [
+   "新",
+   "真",
+   "月",
+   "会"
+  ],
+  "correct_answer": "会",
+  "explanation": "«会做饺子» — бууз хийж чадна.",
+  "order_index": 5,
+  "id": "xinhsk1-l05-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "星期天我________。",
+  "options": [
+   "真",
+   "它",
+   "休息",
+   "新"
+  ],
+  "correct_answer": "休息",
+  "explanation": "«星期天我休息» — ням гарагт би амарна.",
+  "order_index": 6,
+  "id": "xinhsk1-l05-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我六点________，现在可以休息了。",
+  "options": [
+   "电脑",
+   "下班",
+   "喜欢",
+   "面条儿"
+  ],
+  "correct_answer": "下班",
+  "explanation": "«六点下班» — зургаан цагт ажлаас тарсан.",
+  "order_index": 7,
+  "id": "xinhsk1-l05-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你会做什么________？",
+  "options": [
+   "菜",
+   "月",
+   "日",
+   "它"
+  ],
+  "correct_answer": "菜",
+  "explanation": "«会做什么菜» — ямар хоол хийж чадах вэ.",
+  "order_index": 8,
+  "id": "xinhsk1-l05-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个电脑________好看！",
+  "options": [
+   "会",
+   "一些",
+   "月",
+   "真"
+  ],
+  "correct_answer": "真",
+  "explanation": "«真好看» — үнэхээр сайхан.",
+  "order_index": 9,
+  "id": "xinhsk1-l05-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我会做________菜。",
+  "options": [
+   "星期",
+   "休息",
+   "一些",
+   "下班"
+  ],
+  "correct_answer": "一些",
+  "explanation": "«一些菜» — хэдэн хоол.",
+  "order_index": 10,
+  "id": "xinhsk1-l05-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«今天9月8号。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Өнөөдөр ням гараг.",
+   "Өнөөдөр 9-р сарын 8.",
+   "Өнөөдөр 8-р сарын 9.",
+   "Маргааш 9-р сарын 8."
+  ],
+  "correct_answer": "Өнөөдөр 9-р сарын 8.",
+  "explanation": "Сар нь өдрийн өмнө: 9月8号.",
+  "order_index": 11,
+  "id": "xinhsk1-l05-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l05-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би хоол хийж чадахгүй» — аль нь зөв бэ?",
+  "options": [
+   "我不会做饭。",
+   "我会不做饭。",
+   "我做不会饭。",
+   "我没会做饭。"
+  ],
+  "correct_answer": "我不会做饭。",
+  "explanation": "会-ийн өмнө 不: 不会.",
+  "order_index": 12,
+  "id": "xinhsk1-l05-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l05-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你会做饭吗？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи хоол идэх үү?",
+   "Чи хоол хийсэн үү?",
+   "Чи хоолонд дуртай юу?",
+   "Чи хоол хийж чадах уу?"
+  ],
+  "correct_answer": "Чи хоол хийж чадах уу?",
+  "explanation": "会 + үйл үг = чадах.",
+  "order_index": 13,
+  "id": "xinhsk1-l05-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l05-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«2025 оны 5-р сарын 22» — аль нь зөв бэ?",
+  "options": [
+   "5月22号2025年",
+   "2025年22号5月",
+   "2025年5月22号",
+   "22号5月2025年"
+  ],
+  "correct_answer": "2025年5月22号",
+  "explanation": "Жил → сар → өдөр.",
+  "order_index": 14,
+  "id": "xinhsk1-l05-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Миний дүү 12 настай» — аль нь зөв бэ?",
+  "options": [
+   "12岁我妹妹是。",
+   "我妹妹12岁。",
+   "我妹妹很12岁。",
+   "我妹妹12岁有。"
+  ],
+  "correct_answer": "我妹妹12岁。",
+  "explanation": "Нэр үгэн өгүүлэхүүнд 是, 很 хэрэггүй.",
+  "order_index": 15,
+  "id": "xinhsk1-l05-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би бууз хийж чадна» — аль нь зөв бэ?",
+  "options": [
+   "我会做饺子。",
+   "我做会饺子。",
+   "我会不做饺子。",
+   "我做饺子会。"
+  ],
+  "correct_answer": "我会做饺子。",
+  "explanation": "会 үйл үгийн өмнө орно.",
+  "order_index": 16,
+  "id": "xinhsk1-l05-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l05-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Өнөөдөр ням гараг» — аль нь зөв бэ?",
+  "options": [
+   "今天星期七。",
+   "今天日星期。",
+   "今天星期的日。",
+   "今天星期日。"
+  ],
+  "correct_answer": "今天星期日。",
+  "explanation": "Ням гарагийг 星期日 эсвэл 星期天 гэнэ.",
+  "order_index": 17,
+  "id": "xinhsk1-l05-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр хоол хийж чадах уу?» — аль нь зөв бэ?",
+  "options": [
+   "他做会饭吗？",
+   "他会吗做饭？",
+   "他会做饭吗？",
+   "他吗会做饭？"
+  ],
+  "correct_answer": "他会做饭吗？",
+  "explanation": "会 үйл үгийн өмнө, 吗 эцэст.",
+  "order_index": 18,
+  "id": "xinhsk1-l05-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：今天星期几？",
+  "options": [
+   "星期六",
+   "星期日",
+   "星期一",
+   "星期三"
+  ],
+  "correct_answer": "星期日",
+  "explanation": "«星期日。今天我休息。»",
+  "order_index": 19,
+  "id": "xinhsk1-l05-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：今天几号？",
+  "options": [
+   "9月8号",
+   "8月9号",
+   "9月18号",
+   "5月1号"
+  ],
+  "correct_answer": "9月8号",
+  "explanation": "«今天9月8号。»",
+  "order_index": 20,
+  "id": "xinhsk1-l05-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐会做什么？",
+  "options": [
+   "只会做饺子",
+   "不会做菜",
+   "只会做面条儿",
+   "面条儿、饺子和一些菜"
+  ],
+  "correct_answer": "面条儿、饺子和一些菜",
+  "explanation": "«我会做面条儿、饺子，也会做一些菜。»",
+  "order_index": 21,
+  "id": "xinhsk1-l05-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐什么时候也做饭？",
+  "options": [
+   "星期六",
+   "今天",
+   "星期天",
+   "星期三"
+  ],
+  "correct_answer": "星期天",
+  "explanation": "«星期天我也做饭。»",
+  "order_index": 22,
+  "id": "xinhsk1-l05-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：杨同乐有一个新什么？",
+  "options": [
+   "饺子",
+   "电脑",
+   "名字",
+   "工作"
+  ],
+  "correct_answer": "电脑",
+  "explanation": "«这是你的新电脑吗？是的。»",
+  "order_index": 23,
+  "id": "xinhsk1-l05-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪觉得杨同乐的新电脑怎么样？",
+  "options": [
+   "真好看",
+   "不好看",
+   "很贵",
+   "很大"
+  ],
+  "correct_answer": "真好看",
+  "explanation": "«真好看！»",
+  "order_index": 24,
+  "id": "xinhsk1-l05-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：杨同乐喜欢他的新电脑吗？",
+  "options": [
+   "不喜欢",
+   "不知道",
+   "不太喜欢",
+   "很喜欢"
+  ],
+  "correct_answer": "很喜欢",
+  "explanation": "«我也很喜欢它。»",
+  "order_index": 25,
+  "id": "xinhsk1-l05-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-hero.webp",
+   "title": "11-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l11-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w1.webp",
+   "title": "大学 dàxué — их сургууль",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l11-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w2.webp",
+   "title": "饭店 fàndiàn — зоогийн газар",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l11-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w3.webp",
+   "title": "车 chē — машин, тээврийн хэрэгсэл",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l11-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w4.webp",
+   "title": "大学生 dàxuéshēng — их сургуулийн оюутан",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l11-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l11/l11-w5.webp",
+   "title": "医 yī — анагаах ухаан",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "今天________这么晚啊！",
+  "options": [
+   "出去",
+   "送",
+   "洗",
+   "回来"
+  ],
+  "correct_answer": "回来",
+  "explanation": "«Өнөөдөр ийм оройтож ирэв үү» — 回来.",
+  "order_index": 1,
+  "id": "xinhsk2-l03-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天天气这么________，我们出去玩吧。",
+  "options": [
+   "完",
+   "每",
+   "不错",
+   "累"
+  ],
+  "correct_answer": "不错",
+  "explanation": "«Өнөөдөр цаг агаар ийм сайхан» — 不错.",
+  "order_index": 2,
+  "id": "xinhsk2-l03-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们看________电影了。",
+  "options": [
+   "自己",
+   "完",
+   "手",
+   "每"
+  ],
+  "correct_answer": "完",
+  "explanation": "«Бид киногоо үзэж дууслаа» — 看完.",
+  "order_index": 3,
+  "id": "xinhsk2-l03-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "明天我们________吃饭吧。",
+  "options": [
+   "一起",
+   "自己",
+   "这么",
+   "每"
+  ],
+  "correct_answer": "一起",
+  "explanation": "«Маргааш бид хамт хооллоцгооё» — 一起.",
+  "order_index": 4,
+  "id": "xinhsk2-l03-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "去________手吧，洗完手来吃饭。",
+  "options": [
+   "送",
+   "拿",
+   "累",
+   "洗"
+  ],
+  "correct_answer": "洗",
+  "explanation": "«Гараа угаагаад ирж хооллоорой» — 洗手.",
+  "order_index": 5,
+  "id": "xinhsk2-l03-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你自己________吧，就在桌子上。",
+  "options": [
+   "回去",
+   "不错",
+   "拿",
+   "送"
+  ],
+  "correct_answer": "拿",
+  "explanation": "«Өөрөө аваарай, ширээн дээр байгаа» — 拿.",
+  "order_index": 6,
+  "id": "xinhsk2-l03-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她昨天________没来？",
+  "options": [
+   "每",
+   "为什么",
+   "怎么样",
+   "这么"
+  ],
+  "correct_answer": "为什么",
+  "explanation": "«Тэр өчигдөр яагаад ирээгүй вэ?» — 为什么.",
+  "order_index": 7,
+  "id": "xinhsk2-l03-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "明天我开车________你去车站。",
+  "options": [
+   "送",
+   "洗",
+   "拿",
+   "回来"
+  ],
+  "correct_answer": "送",
+  "explanation": "«Маргааш машинаар чамайг буудал хүртэл хүргэж өгье» — 送.",
+  "order_index": 8,
+  "id": "xinhsk2-l03-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他________天都去游泳。",
+  "options": [
+   "自己",
+   "一起",
+   "这么",
+   "每"
+  ],
+  "correct_answer": "每",
+  "explanation": "«Тэр өдөр бүр усанд сэлдэг» — 每天.",
+  "order_index": 9,
+  "id": "xinhsk2-l03-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "走这么长时间，真有点儿________了。",
+  "options": [
+   "手",
+   "不错",
+   "累",
+   "完"
+  ],
+  "correct_answer": "累",
+  "explanation": "«Ийм удаан алхаад жаахан ядарлаа» — 累.",
+  "order_index": 10,
+  "id": "xinhsk2-l03-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«菜都做好了。» дахь 好 ямар үүрэгтэй вэ?",
+  "options": [
+   "тусгай нэр",
+   "үр дүнгийн нэмэлт",
+   "тэмдэг нэр",
+   "асуух үг"
+  ],
+  "correct_answer": "үр дүнгийн нэмэлт",
+  "explanation": "做好 — «хийж бэлэн болгох»; 好 нь үр дүнгийг хэлнэ.",
+  "order_index": 11,
+  "id": "xinhsk2-l03-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би хоолоо идэж дуусаагүй» — аль нь зөв бэ?",
+  "options": [
+   "我没吃完饭。",
+   "我没吃完了饭。",
+   "我不吃完饭。",
+   "我没吃饭完。"
+  ],
+  "correct_answer": "我没吃完饭。",
+  "explanation": "Сөрөг хэлбэрт 没 + үйл үг + үр дүн, 了-г хасна.",
+  "order_index": 12,
+  "id": "xinhsk2-l03-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你学没学会？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи сурахгүй юу?",
+   "Чи хэзээ сурах вэ?",
+   "Чи юу сурсан бэ?",
+   "Чи сурч амжсан уу?"
+  ],
+  "correct_answer": "Чи сурч амжсан уу?",
+  "explanation": "动词+没+动词+结果补语 — асуулт.",
+  "order_index": 13,
+  "id": "xinhsk2-l03-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би жаахан бодоод үзье» — аль нь зөв бэ?",
+  "options": [
+   "我想一想一想。",
+   "我想想了。",
+   "我想一想。",
+   "我想了一想。"
+  ],
+  "correct_answer": "我想一想。",
+  "explanation": "Нэг үетэй үйл үг A一A.",
+  "order_index": 14,
+  "id": "xinhsk2-l03-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Жаахан амаръя» гэдэг хоёр үетэй 休息-ийн давталт аль нь вэ?",
+  "options": [
+   "休了休息",
+   "休息休息",
+   "休休息息",
+   "休息一休息"
+  ],
+  "correct_answer": "休息休息",
+  "explanation": "Хоёр үетэй үйл үг ABAB.",
+  "order_index": 15,
+  "id": "xinhsk2-l03-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би интернэтээс танилцуулгыг нэг хараад үзсэн» — аль нь зөв бэ?",
+  "options": [
+   "我看了看网上的介绍。",
+   "我看看了网上的介绍。",
+   "我看了一看看网上的介绍。",
+   "我看了网上的介绍看。"
+  ],
+  "correct_answer": "我看了看网上的介绍。",
+  "explanation": "Өнгөрсөн цагт нэг үетэй үйл үг A了A.",
+  "order_index": 16,
+  "id": "xinhsk2-l03-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би жаахан амарсан» (хоёр үетэй үйл үг, өнгөрсөн) — аль нь зөв бэ?",
+  "options": [
+   "我休息了休息。",
+   "我休息休息了。",
+   "我休了息休息。",
+   "我休息了一下。"
+  ],
+  "correct_answer": "我休息了一下。",
+  "explanation": "Хоёр үетэй үйл үг өнгөрсөн цагт AB了一下.",
+  "order_index": 17,
+  "id": "xinhsk2-l03-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l03-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你能过来帮帮忙吗？» — 帮帮忙 ямар хэлбэр вэ?",
+  "options": [
+   "A了A",
+   "A一A",
+   "离合词 AAB",
+   "ABAB"
+  ],
+  "correct_answer": "离合词 AAB",
+  "explanation": "帮忙 — 离合词, 帮-г давтана: 帮帮忙.",
+  "order_index": 18,
+  "id": "xinhsk2-l03-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l03-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：刘明为什么回来晚了？",
+  "options": [
+   "路上堵车",
+   "没做完工作",
+   "去外边吃饭",
+   "在公司休息"
+  ],
+  "correct_answer": "没做完工作",
+  "explanation": "«下班的时候没做完».",
+  "order_index": 19,
+  "id": "xinhsk2-l03-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：刘明想找时间做什么？",
+  "options": [
+   "去旅游",
+   "去吃饭",
+   "买东西",
+   "看电影"
+  ],
+  "correct_answer": "去旅游",
+  "explanation": "«我们找个时间去旅游».",
+  "order_index": 20,
+  "id": "xinhsk2-l03-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：刘明让王一雪做什么？",
+  "options": [
+   "去买票",
+   "看一下时间",
+   "去吃饭",
+   "想想去哪儿玩"
+  ],
+  "correct_answer": "想想去哪儿玩",
+  "explanation": "«那你再想一想».",
+  "order_index": 21,
+  "id": "xinhsk2-l03-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：苹果在哪儿？",
+  "options": [
+   "桌子下",
+   "椅子上",
+   "桌子上",
+   "手里"
+  ],
+  "correct_answer": "桌子上",
+  "explanation": "«就在桌子上».",
+  "order_index": 22,
+  "id": "xinhsk2-l03-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪为什么想去西安旅游？",
+  "options": [
+   "她的朋友在西安",
+   "网上介绍说这个时候去很不错",
+   "她以前去过",
+   "刘明让她去"
+  ],
+  "correct_answer": "网上介绍说这个时候去很不错",
+  "explanation": "«我看了看网上的介绍，这个时候去西安很不错».",
+  "order_index": 23,
+  "id": "xinhsk2-l03-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：今天早上刘明是怎么送孩子的？",
+  "options": [
+   "开车",
+   "打车",
+   "坐公交车",
+   "走路"
+  ],
+  "correct_answer": "开车",
+  "explanation": "«刘明开车送孩子去学校».",
+  "order_index": 24,
+  "id": "xinhsk2-l03-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：医院来电话有什么事？",
+  "options": [
+   "让刘明休息",
+   "让刘明去开车",
+   "让刘明买票",
+   "让刘明回去上班"
+  ],
+  "correct_answer": "让刘明回去上班",
+  "explanation": "«让他回去上班».",
+  "order_index": 25,
+  "id": "xinhsk2-l03-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

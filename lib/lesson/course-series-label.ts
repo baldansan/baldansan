@@ -50,6 +50,18 @@ const FAZHAN_SERIES: Record<string, CourseSeriesMeta> = {
     hskLevel: 6,
   },
   // 新HSK教程 (外研社, HSK 3.0 шинэ стандарт) — 发展汉语-тай ижил «сурах бичгийн» курс.
+  xinhsk1: {
+    label: "HSK 3.0 · HSK1",
+    title: "HSK 3.0 · HSK1 (新HSK教程 1)",
+    subtitle: "Шинэ HSK 3.0 стандартын 1-р түвшний сурах бичиг (外研社) — 15 хичээл, 300 үг",
+    hskLevel: 1,
+  },
+  xinhsk2: {
+    label: "HSK 3.0 · HSK2",
+    title: "HSK 3.0 · HSK2 (新HSK教程 2)",
+    subtitle: "Шинэ HSK 3.0 стандартын 2-р түвшний сурах бичиг (外研社) — 15 хичээл, 300 үг",
+    hskLevel: 2,
+  },
   xinhsk3: {
     label: "HSK 3.0 · HSK3",
     title: "HSK 3.0 · HSK3 (新HSK教程 3)",

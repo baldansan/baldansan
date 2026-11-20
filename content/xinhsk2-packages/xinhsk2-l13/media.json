@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-hero.webp",
+   "title": "13-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l13-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w1.webp",
+   "title": "新年 xīnnián — Шинэ жил",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l13-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w2.webp",
+   "title": "花 huā — цэцэг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l13-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w3.webp",
+   "title": "洗手间 xǐshǒujiān — жорлон, угаалгын өрөө",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l13-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w4.webp",
+   "title": "班 bān — анги (бүлэг)",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l13-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l13/l13-w5.webp",
+   "title": "上面 shàngmiàn — дээд тал, дээр (юмны гадаргуу)",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

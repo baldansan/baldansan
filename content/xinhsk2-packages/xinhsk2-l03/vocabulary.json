@@ -1,0 +1,152 @@
+[
+ {
+  "chinese": "回来",
+  "pinyin": "huílái",
+  "mongolian": "буцаж ирэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我晚上不回来吃饭。",
+  "exampleMongolian": "Би орой гэртээ ирж хооллохгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "回来 / 明天回来"
+ },
+ {
+  "chinese": "这么",
+  "pinyin": "zhème",
+  "mongolian": "ийм, ингэтлээ",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天这么热！",
+  "exampleMongolian": "Өнөөдөр ийм халуун байна шүү!",
+  "pos": "төлөөний үг",
+  "collocations_zh": "这么 + тэмдэг нэр"
+ },
+ {
+  "chinese": "完",
+  "pinyin": "wán",
+  "mongolian": "дуусах, дуусгах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我们看完电影了。",
+  "exampleMongolian": "Бид киногоо үзэж дууслаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "做完 / 吃完 / 学完"
+ },
+ {
+  "chinese": "一起",
+  "pinyin": "yìqǐ",
+  "mongolian": "хамт",
+  "hskLevel": "HSK2",
+  "exampleChinese": "明天我们一起吃饭吧。",
+  "exampleMongolian": "Маргааш бид хамт хооллоцгооё.",
+  "pos": "дайвар үг",
+  "collocations_zh": "一起玩 / 一起吃饭"
+ },
+ {
+  "chinese": "出去",
+  "pinyin": "chūqù",
+  "mongolian": "гадагш гарах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我想出去旅游。",
+  "exampleMongolian": "Би гадагш гарч (аялж) явмаар байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "出去玩 / 出去走走"
+ },
+ {
+  "chinese": "洗",
+  "pinyin": "xǐ",
+  "mongolian": "угаах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "洗洗手再吃东西。",
+  "exampleMongolian": "Гараа угаагаад дараа нь идээрэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "洗手 / 洗水果"
+ },
+ {
+  "chinese": "自己",
+  "pinyin": "zìjǐ",
+  "mongolian": "өөрөө",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他每天自己走路上学。",
+  "exampleMongolian": "Тэр өдөр бүр өөрөө алхаж сургуульдаа явдаг.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "我自己 / 他自己"
+ },
+ {
+  "chinese": "拿",
+  "pinyin": "ná",
+  "mongolian": "барих, авах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "老师拿来一本书。",
+  "exampleMongolian": "Багш нэг ном авчирлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "拿来 / 拿出来"
+ },
+ {
+  "chinese": "手",
+  "pinyin": "shǒu",
+  "mongolian": "гар",
+  "hskLevel": "HSK2",
+  "exampleChinese": "弟弟的手很小。",
+  "exampleMongolian": "Дүүгийн гар маш жижиг.",
+  "pos": "нэр үг",
+  "collocations_zh": "洗手 / 手里"
+ },
+ {
+  "chinese": "为什么",
+  "pinyin": "wèi shénme",
+  "mongolian": "яагаад",
+  "hskLevel": "HSK2",
+  "exampleChinese": "她昨天为什么没来？",
+  "exampleMongolian": "Тэр өчигдөр яагаад ирээгүй вэ?",
+  "pos": "асуух үг",
+  "collocations_zh": "为什么 + үйл үг"
+ },
+ {
+  "chinese": "不错",
+  "pinyin": "búcuò",
+  "mongolian": "муугүй, сайн",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天天气不错，出去玩玩吧。",
+  "exampleMongolian": "Өнөөдөр цаг агаар сайхан байна, гараад жаахан тоглоцгооё.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很不错 / 不错的"
+ },
+ {
+  "chinese": "送",
+  "pinyin": "sòng",
+  "mongolian": "хүргэж өгөх, үдэх; бэлэглэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "明天我开车送你去车站。",
+  "exampleMongolian": "Маргааш би машинаар чамайг буудал хүртэл хүргэж өгье.",
+  "pos": "үйл үг",
+  "collocations_zh": "送人 / 送东西"
+ },
+ {
+  "chinese": "回去",
+  "pinyin": "huíqù",
+  "mongolian": "буцаж очих, буцах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "很晚了，你怎么还不回去？",
+  "exampleMongolian": "Оройтлоо, чи яагаад одоо болтол буцахгүй байна?",
+  "pos": "үйл үг",
+  "collocations_zh": "回去 / 回去上班"
+ },
+ {
+  "chinese": "每",
+  "pinyin": "měi",
+  "mongolian": "бүр, тус бүр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他每天都去游泳。",
+  "exampleMongolian": "Тэр өдөр бүр усанд сэлдэг.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "每天 / 每人"
+ },
+ {
+  "chinese": "累",
+  "pinyin": "lèi",
+  "mongolian": "ядрах, ядарсан",
+  "hskLevel": "HSK2",
+  "exampleChinese": "走这么长时间，真有点儿累了。",
+  "exampleMongolian": "Ийм удаан алхаад үнэхээр жаахан ядарлаа.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很累 / 太累了"
+ }
+]

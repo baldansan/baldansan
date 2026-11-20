@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "酒",
+   "pinyin": [
+    "jiǔ"
+   ],
+   "strokeCount": 10,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "дарс, архи",
+   "etymology_mn": "氵 (ус) + 酉 (дарсны сав): шингэн, дарс",
+   "exampleWords": [
+    "酒店",
+    "喝酒"
+   ]
+  },
+  {
+   "hanzi": "店",
+   "pinyin": [
+    "diàn"
+   ],
+   "strokeCount": 8,
+   "radical": "广",
+   "practice": "write",
+   "meaningMn": "дэлгүүр, газар",
+   "etymology_mn": "广 (байшин) + 占: худалдаа хийдэг байшин",
+   "exampleWords": [
+    "酒店",
+    "商店"
+   ]
+  },
+  {
+   "hanzi": "爷",
+   "pinyin": [
+    "yé"
+   ],
+   "strokeCount": 6,
+   "radical": "父",
+   "practice": "write",
+   "meaningMn": "өвөө",
+   "etymology_mn": "父 (аав) + 耶-ийн хэлбэр: аавын аав",
+   "exampleWords": [
+    "爷爷",
+    "刘爷爷"
+   ]
+  },
+  {
+   "hanzi": "奶",
+   "pinyin": [
+    "nǎi"
+   ],
+   "strokeCount": 5,
+   "radical": "女",
+   "practice": "write",
+   "meaningMn": "сүү; эмээ",
+   "etymology_mn": "女 (эмэгтэй) + 乃: эхээс хүүхдэд өгөх сүү",
+   "exampleWords": [
+    "奶茶",
+    "奶奶"
+   ]
+  },
+  {
+   "hanzi": "礼",
+   "pinyin": [
+    "lǐ"
+   ],
+   "strokeCount": 5,
+   "radical": "礻",
+   "practice": "write",
+   "meaningMn": "ёс; бэлэг",
+   "etymology_mn": "礻 (тахил, ёслол) + 乚: ёслол, хүндэтгэл",
+   "exampleWords": [
+    "礼物",
+    "生日礼物"
+   ]
+  },
+  {
+   "hanzi": "准",
+   "pinyin": [
+    "zhǔn"
+   ],
+   "strokeCount": 10,
+   "radical": "冫",
+   "practice": "write",
+   "meaningMn": "зөв, бэлтгэх",
+   "etymology_mn": "冫 (мөс) + 隹: нарийн, тодорхой",
+   "exampleWords": [
+    "准备",
+    "准备礼物"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "进",
+   "b": "近",
+   "word_a": "进来",
+   "word_b": "很近",
+   "mn": "进 — орох; 近 — ойрхон",
+   "tip_mn": "Хоёул jìn гэж уншигдана. 进 нь 辶-тэй, хөдөлгөөн, орох. 近 нь 斤-тэй, зай ойрхон."
+  },
+  {
+   "a": "跟",
+   "b": "根",
+   "word_a": "跟我去",
+   "word_b": "树根",
+   "mn": "跟 — -тай хамт; 根 — үндэс",
+   "tip_mn": "Хоёул gēn гэж уншигдана. 跟 нь 足 (хөл)-тэй, ард нь дагах. 根 нь 木 (мод)-той, үндэс."
+  },
+  {
+   "a": "奶",
+   "b": "妈",
+   "word_a": "奶茶",
+   "word_b": "妈妈",
+   "mn": "奶 — сүү; 妈 — ээж",
+   "tip_mn": "Хоёул 女 радикалтай. 奶 нь 乃-той, сүү, эмээ. 妈 нь 马-тай, ээж."
+  },
+  {
+   "a": "店",
+   "b": "站",
+   "word_a": "酒店",
+   "word_b": "公交站",
+   "mn": "店 — дэлгүүр; 站 — буудал",
+   "tip_mn": "店 нь 广 (байшин)-тай, худалдааны газар. 站 нь 立 (зогсох)-той, автобусны зогсоол."
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+[
+ {
+  "chinese": "从",
+  "pinyin": "cóng",
+  "mongolian": "-аас, -ээс (хаанаас, хэзээнээс)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他昨天从北京回来了。",
+  "exampleMongolian": "Тэр өчигдөр Бээжингээс буцаж ирсэн.",
+  "pos": "угтвар үг",
+  "collocations_zh": "从……到…… / 从北京回来"
+ },
+ {
+  "chinese": "往",
+  "pinyin": "wǎng",
+  "mongolian": "руу, зүг (чиглэл заана); явах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "往前走，学校就在前面。",
+  "exampleMongolian": "Урагш яв, сургууль яг урд байна.",
+  "pos": "угтвар үг / үйл үг",
+  "collocations_zh": "往前 / 往外"
+ },
+ {
+  "chinese": "跑",
+  "pinyin": "pǎo",
+  "mongolian": "гүйх; (хаа нэгтээ) гүйн явах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "别往外跑了，今天天气不好。",
+  "exampleMongolian": "Гадагш гүйгээд байхаа боль, өнөөдөр цаг агаар муу байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "往外跑 / 跑步"
+ },
+ {
+  "chinese": "打",
+  "pinyin": "dǎ",
+  "mongolian": "тоглох (бөмбөг гэх мэт); цохих",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你想和我一起打球吗？",
+  "exampleMongolian": "Чи надтай хамт бөмбөг тоглох уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "打篮球 / 打球"
+ },
+ {
+  "chinese": "篮球",
+  "pinyin": "lánqiú",
+  "mongolian": "сагсан бөмбөг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "走，一起去打篮球吧！",
+  "exampleMongolian": "Яв, хамт сагсан бөмбөг тоглоцгооё!",
+  "pos": "нэр үг",
+  "collocations_zh": "打篮球"
+ },
+ {
+  "chinese": "运动",
+  "pinyin": "yùndòng",
+  "mongolian": "спорт; дасгал хийх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你每天运动多长时间？",
+  "exampleMongolian": "Чи өдөрт хэр удаан спорт хийдэг вэ?",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "喜欢运动 / 去运动"
+ },
+ {
+  "chinese": "踢",
+  "pinyin": "tī",
+  "mongolian": "өшиглөх, (хөл бөмбөг) тоглох",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我喜欢踢足球。",
+  "exampleMongolian": "Би хөл бөмбөг тоглох дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "踢足球 / 踢球"
+ },
+ {
+  "chinese": "足球",
+  "pinyin": "zúqiú",
+  "mongolian": "хөл бөмбөг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "弟弟每个星期天都踢足球。",
+  "exampleMongolian": "Дүү маань ням гараг болгон хөл бөмбөг тоглодог.",
+  "pos": "нэр үг",
+  "collocations_zh": "踢足球"
+ },
+ {
+  "chinese": "球",
+  "pinyin": "qiú",
+  "mongolian": "бөмбөг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你喜欢踢足球还是打篮球？",
+  "exampleMongolian": "Чи хөл бөмбөг тоглох дуртай юу, сагсан бөмбөг тоглох дуртай юу?",
+  "pos": "нэр үг",
+  "collocations_zh": "踢球 / 打球"
+ },
+ {
+  "chinese": "得",
+  "pinyin": "de",
+  "mongolian": "«…аар» (үйл үгийн дараа орж үйлдлийн байдал, түвшинг хэлнэ)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "哥哥跑得很快。",
+  "exampleMongolian": "Ах гүйхдээ маш хурдан.",
+  "pos": "сул үг",
+  "collocations_zh": "跑得快 / 打得好"
+ },
+ {
+  "chinese": "跑步",
+  "pinyin": "pǎobù",
+  "mongolian": "гүйх, гүйлт хийх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "姐姐喜欢跑步。",
+  "exampleMongolian": "Эгч гүйх дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "去跑步 / 喜欢跑步"
+ },
+ {
+  "chinese": "游泳",
+  "pinyin": "yóuyǒng",
+  "mongolian": "сэлэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天很热，我想去游泳。",
+  "exampleMongolian": "Өнөөдөр халуун байна, би сэлэхээр явмаар байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "去游泳 / 游泳游得快"
+ },
+ {
+  "chinese": "游",
+  "pinyin": "yóu",
+  "mongolian": "сэлэх, усанд сэлэн явах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "小鱼在水里游。",
+  "exampleMongolian": "Жижиг загас усанд сэлж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "游泳 / 游得快"
+ },
+ {
+  "chinese": "爱好",
+  "pinyin": "àihào",
+  "mongolian": "хобби; дуртай байх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我的爱好是踢足球。",
+  "exampleMongolian": "Миний хобби бол хөл бөмбөг тоглох.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "我的爱好 / 爱好运动"
+ },
+ {
+  "chinese": "开始",
+  "pinyin": "kāishǐ",
+  "mongolian": "эхлэх; эхлэл",
+  "hskLevel": "HSK2",
+  "exampleChinese": "从今天开始，我要学游泳。",
+  "exampleMongolian": "Өнөөдрөөс эхлээд би сэлж сурна.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "开始工作 / 从……开始"
+ }
+]

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "他昨天________北京回来了。",
+  "options": [
+   "往",
+   "打",
+   "跑",
+   "从"
+  ],
+  "correct_answer": "从",
+  "explanation": "«Бээжингээс буцаж ирсэн» — 从.",
+  "order_index": 1,
+  "id": "xinhsk2-l07-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你________前走，那边有一个公交站。",
+  "options": [
+   "得",
+   "开始",
+   "往",
+   "从"
+  ],
+  "correct_answer": "往",
+  "explanation": "«Урагш яв» — 往前走.",
+  "order_index": 2,
+  "id": "xinhsk2-l07-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他每天早上六点起床去________。",
+  "options": [
+   "爱好",
+   "跑步",
+   "足球",
+   "篮球"
+  ],
+  "correct_answer": "跑步",
+  "explanation": "«Гүйхээр явдаг» — 跑步.",
+  "order_index": 3,
+  "id": "xinhsk2-l07-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我很喜欢________篮球。",
+  "options": [
+   "打",
+   "踢",
+   "跑",
+   "游"
+  ],
+  "correct_answer": "打",
+  "explanation": "Сагсан бөмбөг гараараа тоглодог — 打.",
+  "order_index": 4,
+  "id": "xinhsk2-l07-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "弟弟每个星期天都________足球。",
+  "options": [
+   "打",
+   "往",
+   "得",
+   "踢"
+  ],
+  "correct_answer": "踢",
+  "explanation": "Хөл бөмбөг хөлөөр тоглодог — 踢.",
+  "order_index": 5,
+  "id": "xinhsk2-l07-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你每天________多长时间？",
+  "options": [
+   "开始",
+   "足球",
+   "运动",
+   "爱好"
+  ],
+  "correct_answer": "运动",
+  "explanation": "«Өдөрт хэр удаан спорт хийдэг вэ?» — 运动.",
+  "order_index": 6,
+  "id": "xinhsk2-l07-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "哥哥跑________很快。",
+  "options": [
+   "了",
+   "得",
+   "的",
+   "地"
+  ],
+  "correct_answer": "得",
+  "explanation": "«Ах гүйхдээ хурдан» — 跑得很快.",
+  "order_index": 7,
+  "id": "xinhsk2-l07-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "今天很热，我想去________。",
+  "options": [
+   "游泳",
+   "跑步",
+   "开始",
+   "运动"
+  ],
+  "correct_answer": "游泳",
+  "explanation": "«Халуун байна, сэлэхээр явмаар байна» — 游泳.",
+  "order_index": 8,
+  "id": "xinhsk2-l07-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你的________是什么？",
+  "options": [
+   "运动",
+   "开始",
+   "篮球",
+   "爱好"
+  ],
+  "correct_answer": "爱好",
+  "explanation": "«Чиний хобби юу вэ?» — 爱好.",
+  "order_index": 9,
+  "id": "xinhsk2-l07-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他每天九点________工作。",
+  "options": [
+   "从",
+   "往",
+   "开始",
+   "爱好"
+  ],
+  "correct_answer": "开始",
+  "explanation": "«Өдөр бүр есөн цагт ажилдаа эхэлдэг» — 开始.",
+  "order_index": 10,
+  "id": "xinhsk2-l07-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你怎么一下课就往外跑？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Хичээл дууссан уу?",
+   "Чи яагаад хичээл тараад л гадагш гүйдэг юм бэ?",
+   "Чи хичээл тарахаас өмнө гарсан уу?",
+   "Чи хаашаа гүйх вэ?"
+  ],
+  "correct_answer": "Чи яагаад хичээл тараад л гадагш гүйдэг юм бэ?",
+  "explanation": "一…就… — нэг үйлдлийн дараа нөгөө нь шууд.",
+  "order_index": 11,
+  "id": "xinhsk2-l07-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我一到家，妈妈就打来电话了。",
+   "我到家一，妈妈就打来电话了。",
+   "我一到家，妈妈打来电话就了。",
+   "我到家，一妈妈就打来电话了。"
+  ],
+  "correct_answer": "我一到家，妈妈就打来电话了。",
+  "explanation": "一 + үйл үг, 就 + үйл үг.",
+  "order_index": 12,
+  "id": "xinhsk2-l07-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他们玩得很高兴。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэд өндөр.",
+   "Тэд тоглож чадахгүй.",
+   "Тэд хоёр удаа тоглосон.",
+   "Тэд маш хөгжилтэй тоглосон."
+  ],
+  "correct_answer": "Тэд маш хөгжилтэй тоглосон.",
+  "explanation": "玩得很高兴 — үйл үг + 得 + тэмдэг нэр.",
+  "order_index": 13,
+  "id": "xinhsk2-l07-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l07-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр хурдан гүйдэггүй» — аль нь зөв бэ?",
+  "options": [
+   "他跑不得快。",
+   "他得跑不快。",
+   "他跑得不快。",
+   "他不跑得快。"
+  ],
+  "correct_answer": "他跑得不快。",
+  "explanation": "Сөрөг: 得 + 不 + тэмдэг нэр.",
+  "order_index": 14,
+  "id": "xinhsk2-l07-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би сэлэхдээ хурдан биш» — аль нь зөв бэ?",
+  "options": [
+   "我游泳不快得。",
+   "我游泳游得不快。",
+   "我游泳得不快。",
+   "我游得泳不快。"
+  ],
+  "correct_answer": "我游泳游得不快。",
+  "explanation": "游泳 нь үйл үг + объект тул 游-г давтана.",
+  "order_index": 15,
+  "id": "xinhsk2-l07-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l07-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи сагсан бөмбөг хэр тоглодог вэ?» — аль нь зөв бэ?",
+  "options": [
+   "你篮球打得怎么样？",
+   "你打得篮球怎么样？",
+   "你篮球得打怎么样？",
+   "你怎么样打篮球得？"
+  ],
+  "correct_answer": "你篮球打得怎么样？",
+  "explanation": "Объект (篮球) өмнө, үйл үг + 得 + 怎么样.",
+  "order_index": 16,
+  "id": "xinhsk2-l07-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他来得早不早？» — энэ юу гэсэн асуулт вэ?",
+  "options": [
+   "Тэр хэзээ ирсэн бэ?",
+   "Тэр ирэх үү?",
+   "Тэр яагаад ирсэн бэ?",
+   "Тэр эрт ирсэн үү?"
+  ],
+  "correct_answer": "Тэр эрт ирсэн үү?",
+  "explanation": "Тэмдэг нэр + 不 + тэмдэг нэр хэлбэрийн асуулт.",
+  "order_index": 17,
+  "id": "xinhsk2-l07-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«白家月写汉字写得很好看。» — энэ өгүүлбэрт 写 хэд удаа орсон бэ, яагаад?",
+  "options": [
+   "Гурав, учир нь хоёр объекттой",
+   "Хоёр, учир нь цаг өөр",
+   "Хоёр, учир нь 写汉字 нь үйл үг + объект",
+   "Нэг, учир нь дараалсан"
+  ],
+  "correct_answer": "Хоёр, учир нь 写汉字 нь үйл үг + объект",
+  "explanation": "Объекттой үйл үг 状态补语-д давтагдана.",
+  "order_index": 18,
+  "id": "xinhsk2-l07-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l07-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：安妮是什么时候从北京回来的？",
+  "options": [
+   "今天下午",
+   "昨天下午",
+   "昨天上午",
+   "昨天早上"
+  ],
+  "correct_answer": "昨天下午",
+  "explanation": "«昨天下午» гэж хариулсан.",
+  "order_index": 19,
+  "id": "xinhsk2-l07-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：陈天中为什么一下课就往外跑？",
+  "options": [
+   "要跟同学去打篮球",
+   "要去北京",
+   "要回家",
+   "要吃饭"
+  ],
+  "correct_answer": "要跟同学去打篮球",
+  "explanation": "«我跟同学说好了，一起去打篮球».",
+  "order_index": 20,
+  "id": "xinhsk2-l07-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：星期天陈天中跟谁去踢球？",
+  "options": [
+   "李文",
+   "安妮",
+   "爸爸",
+   "朋友们"
+  ],
+  "correct_answer": "朋友们",
+  "explanation": "«跟朋友们去踢球».",
+  "order_index": 21,
+  "id": "xinhsk2-l07-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：陈天中踢足球踢得怎么样？",
+  "options": [
+   "不好",
+   "不太好",
+   "还可以",
+   "很好"
+  ],
+  "correct_answer": "还可以",
+  "explanation": "«我踢得还可以».",
+  "order_index": 22,
+  "id": "xinhsk2-l07-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：安妮跑得怎么样？",
+  "options": [
+   "不会跑",
+   "跑得不快",
+   "跑得很快",
+   "跑得很好"
+  ],
+  "correct_answer": "跑得不快",
+  "explanation": "«我跑得不快，也不太喜欢跑步».",
+  "order_index": 23,
+  "id": "xinhsk2-l07-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：安妮喜欢游泳吗？游得怎么样？",
+  "options": [
+   "喜欢，但游得不快",
+   "不喜欢",
+   "喜欢，游得很快",
+   "不会游泳"
+  ],
+  "correct_answer": "喜欢，但游得不快",
+  "explanation": "«喜欢，但我游泳游得不快».",
+  "order_index": 24,
+  "id": "xinhsk2-l07-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：陈天中从什么时候开始每天运动？",
+  "options": [
+   "从现在开始",
+   "从昨天开始",
+   "从星期天开始",
+   "从上小学开始"
+  ],
+  "correct_answer": "从上小学开始",
+  "explanation": "«从上小学开始，我每天都跟爸爸去运动».",
+  "order_index": 25,
+  "id": "xinhsk2-l07-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

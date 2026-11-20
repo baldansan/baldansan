@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "点",
+   "pinyin": [
+    "diǎn"
+   ],
+   "strokeCount": 9,
+   "radical": "灬",
+   "practice": "write",
+   "meaningMn": "цаг, цэг",
+   "etymology_mn": "占 доор 灬 (гал) — жижиг гал мэт «цэг», цагийн цэг",
+   "exampleWords": [
+    "几点",
+    "八点"
+   ]
+  },
+  {
+   "hanzi": "分",
+   "pinyin": [
+    "fēn"
+   ],
+   "strokeCount": 4,
+   "radical": "刀",
+   "practice": "write",
+   "meaningMn": "минут, хуваах",
+   "etymology_mn": "八 дор 刀 (хутга) — хутгаар хуваана. «Хуваах, минут»",
+   "exampleWords": [
+    "十分",
+    "分钟"
+   ]
+  },
+  {
+   "hanzi": "看",
+   "pinyin": [
+    "kàn"
+   ],
+   "strokeCount": 9,
+   "radical": "目",
+   "practice": "write",
+   "meaningMn": "харах",
+   "etymology_mn": "手 дор 目 (нүд): гараараа нүдээ сүүдэрлэж харж байна",
+   "exampleWords": [
+    "看电影",
+    "看书"
+   ]
+  },
+  {
+   "hanzi": "后",
+   "pinyin": [
+    "hòu"
+   ],
+   "strokeCount": 6,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "дараа",
+   "etymology_mn": "Ард нь амаараа дууддаг — «хойно, дараа» гэж санаарай",
+   "exampleWords": [
+    "十分钟后",
+    "下课后"
+   ]
+  },
+  {
+   "hanzi": "见",
+   "pinyin": [
+    "jiàn"
+   ],
+   "strokeCount": 4,
+   "radical": "见",
+   "practice": "write",
+   "meaningMn": "уулзах",
+   "etymology_mn": "目 (нүд) дор 儿 (хүн): нүд нүдээрээ уулзаж байна",
+   "exampleWords": [
+    "明天见",
+    "再见"
+   ]
+  },
+  {
+   "hanzi": "在",
+   "pinyin": [
+    "zài"
+   ],
+   "strokeCount": 6,
+   "radical": "土",
+   "practice": "write",
+   "meaningMn": "байх",
+   "etymology_mn": "土 (газар) дээр байна — «газарт байх»",
+   "exampleWords": [
+    "在家",
+    "在医院"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "午",
+   "b": "牛",
+   "word_a": "上午",
+   "word_b": "牛奶",
+   "mn": "午 — үд; 牛 — үхэр",
+   "tip_mn": "午 нь дээрээ гарахгүй хоёр шугамтай, 牛 нь дээр нь нэг босоо шугам гарсан."
+  },
+  {
+   "a": "在",
+   "b": "再",
+   "word_a": "在家",
+   "word_b": "再见",
+   "mn": "在 — байх; 再 — дахин",
+   "tip_mn": "在 нь 土 (газар)-тай — «газарт байх». 再 нь 一-ийн дор 冂 — «дахин»; дуудлага адил zài."
+  },
+  {
+   "a": "点",
+   "b": "店",
+   "word_a": "几点",
+   "word_b": "菜店",
+   "mn": "点 — цаг; 店 — дэлгүүр",
+   "tip_mn": "点 нь 灬-тай, 店 нь 广 (байшин)-тай — дэлгүүр байшинд байна."
+  },
+  {
+   "a": "吧",
+   "b": "吗",
+   "word_a": "走吧",
+   "word_b": "好吗",
+   "mn": "吧 — санал; 吗 — асуулт",
+   "tip_mn": "吧 нь 巴-тай (ba), 吗 нь 马-тай (ma). Санал бол 吧, асуулт бол 吗."
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "今天________怎么样？",
+  "options": [
+   "这里",
+   "公司",
+   "看病",
+   "天气"
+  ],
+  "correct_answer": "天气",
+  "explanation": "«今天天气怎么样？» — «Өнөөдөр цаг агаар ямар байна?»",
+  "order_index": 1,
+  "id": "xinhsk1-l12-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "昨天下________了，非常冷。",
+  "options": [
+   "水",
+   "公司",
+   "雪",
+   "药"
+  ],
+  "correct_answer": "雪",
+  "explanation": "«下雪» — «цас орох».",
+  "order_index": 2,
+  "id": "xinhsk1-l12-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我生病了，要去________。",
+  "options": [
+   "再",
+   "看病",
+   "下雨",
+   "回"
+  ],
+  "correct_answer": "看病",
+  "explanation": "«去看病» — «эмчид үзүүлэх».",
+  "order_index": 3,
+  "id": "xinhsk1-l12-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你________我做的菜怎么样？",
+  "options": [
+   "觉得",
+   "有点儿",
+   "一点儿",
+   "再"
+  ],
+  "correct_answer": "觉得",
+  "explanation": "«你觉得…怎么样？» — «Чамд … ямар санагдаж байна?»",
+  "order_index": 4,
+  "id": "xinhsk1-l12-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________冷，想多穿一件衣服。",
+  "options": [
+   "一点儿",
+   "再",
+   "回",
+   "有点儿"
+  ],
+  "correct_answer": "有点儿",
+  "explanation": "«有点儿冷» — «жаахан хүйтэн». 有点儿 тэмдэг нэрийн өмнө.",
+  "order_index": 5,
+  "id": "xinhsk1-l12-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "太贵了，便宜________吧。",
+  "options": [
+   "觉得",
+   "下",
+   "一点儿",
+   "有点儿"
+  ],
+  "correct_answer": "一点儿",
+  "explanation": "«便宜一点儿» — «жаахан хямдруул». 一点儿 тэмдэг нэрийн ард.",
+  "order_index": 6,
+  "id": "xinhsk1-l12-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你们吃了饭________回家吧。",
+  "options": [
+   "病",
+   "再",
+   "来",
+   "喝"
+  ],
+  "correct_answer": "再",
+  "explanation": "«吃了饭再回家» — «хоолоо идсэний дараа гэртээ харь».",
+  "order_index": 7,
+  "id": "xinhsk1-l12-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "弟弟病了，我去买点儿________。",
+  "options": [
+   "药",
+   "雨",
+   "雪",
+   "水"
+  ],
+  "correct_answer": "药",
+  "explanation": "«买药» — «эм авах».",
+  "order_index": 8,
+  "id": "xinhsk1-l12-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "天气太热了，多________点儿水吧。",
+  "options": [
+   "回",
+   "来",
+   "下",
+   "喝"
+  ],
+  "correct_answer": "喝",
+  "explanation": "«喝水» — «ус уух».",
+  "order_index": 9,
+  "id": "xinhsk1-l12-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他今年八月________国。",
+  "options": [
+   "下",
+   "喝",
+   "回",
+   "来"
+  ],
+  "correct_answer": "回",
+  "explanation": "«回国» — «эх оронд буцах».",
+  "order_index": 10,
+  "id": "xinhsk1-l12-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l12-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«下雨了。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Бороо орох уу?",
+   "Бороо орлоо.",
+   "Бороо орохгүй.",
+   "Бороо орсонгүй."
+  ],
+  "correct_answer": "Бороо орлоо.",
+  "explanation": "了 — шинэ нөхцөл гарсныг хэлнэ.",
+  "order_index": 11,
+  "id": "xinhsk1-l12-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l12-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Өчигдөр бороо орсонгүй» — аль нь зөв бэ?",
+  "options": [
+   "昨天没下雨。",
+   "昨天没下雨了。",
+   "昨天不下雨。",
+   "昨天下雨没。"
+  ],
+  "correct_answer": "昨天没下雨。",
+  "explanation": "Үгүйсгэхдээ 没 тавьж, төгсгөлийн 了-г хасна.",
+  "order_index": 12,
+  "id": "xinhsk1-l12-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "A：弟弟起床了吗？ B：________。",
+  "options": [
+   "没起床了。",
+   "不起床呢。",
+   "起床没了。",
+   "没起床呢。"
+  ],
+  "correct_answer": "没起床呢。",
+  "explanation": "没 + үйл үг (了 хасна).",
+  "order_index": 13,
+  "id": "xinhsk1-l12-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хэтэрхий хүйтэн байна!» — аль нь зөв бэ?",
+  "options": [
+   "太很冷了！",
+   "冷太了！",
+   "太冷了！",
+   "太冷！"
+  ],
+  "correct_answer": "太冷了！",
+  "explanation": "太 + тэмдэг нэр + 了.",
+  "order_index": 14,
+  "id": "xinhsk1-l12-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l12-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Энэ аяга хэтэрхий жижиг байна.» — аль нь зөв бэ?",
+  "options": [
+   "这个杯子小太了。",
+   "这个杯子太小了。",
+   "这个杯子很太小。",
+   "这个杯子太了小。"
+  ],
+  "correct_answer": "这个杯子太小了。",
+  "explanation": "太小了 — «хэтэрхий жижиг».",
+  "order_index": 15,
+  "id": "xinhsk1-l12-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«十二点了，吃午饭吧。» дахь 了 юу заадаг вэ?",
+  "options": [
+   "Шинэ нөхцөл: 12 цаг боллоо",
+   "Асуулт",
+   "Хэмжих үг",
+   "Үгүйсгэл"
+  ],
+  "correct_answer": "Шинэ нөхцөл: 12 цаг боллоо",
+  "explanation": "了 нь өөрчлөлт, шинэ нөхцөлийг заана.",
+  "order_index": 16,
+  "id": "xinhsk1-l12-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь өгүүлэгдэхүүнгүй өгүүлбэр (非主谓句) вэ?",
+  "options": [
+   "我是学生。",
+   "他很高兴。",
+   "我们去学校。",
+   "对不起！"
+  ],
+  "correct_answer": "对不起！",
+  "explanation": "Үг, хэллэгээр хэлсэн, өгүүлэгдэхүүнгүй өгүүлбэр.",
+  "order_index": 17,
+  "id": "xinhsk1-l12-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l12-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бид өнөөдөр үнэхээр баяртай байна!» — аль нь зөв бэ?",
+  "options": [
+   "我们太今天高兴了。",
+   "我们今天高兴太了！",
+   "我们今天太高兴了！",
+   "我们今天太很高兴！"
+  ],
+  "correct_answer": "我们今天太高兴了！",
+  "explanation": "太高兴了 — «үнэхээр баяртай».",
+  "order_index": 18,
+  "id": "xinhsk1-l12-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l12-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一飞那儿的天气怎么样？",
+  "options": [
+   "下雪了",
+   "不太好",
+   "很好",
+   "很热"
+  ],
+  "correct_answer": "不太好",
+  "explanation": "«这里的天不太好».",
+  "order_index": 19,
+  "id": "xinhsk1-l12-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一飞觉得怎么样？",
+  "options": [
+   "很冷",
+   "有点儿冷",
+   "不冷",
+   "很热"
+  ],
+  "correct_answer": "很冷",
+  "explanation": "«我觉得很冷».",
+  "order_index": 20,
+  "id": "xinhsk1-l12-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：昨天天气怎么样？",
+  "options": [
+   "下雨了",
+   "很热",
+   "很好",
+   "下雪了，太冷了"
+  ],
+  "correct_answer": "下雪了，太冷了",
+  "explanation": "«昨天下雪了», «太冷了».",
+  "order_index": 21,
+  "id": "xinhsk1-l12-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐昨天做什么了？",
+  "options": [
+   "在家休息了",
+   "下雪了",
+   "去医院看病了",
+   "去公司了"
+  ],
+  "correct_answer": "去医院看病了",
+  "explanation": "«我昨天去医院看病了».",
+  "order_index": 22,
+  "id": "xinhsk1-l12-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：医生让杨同乐今天做什么？",
+  "options": [
+   "下班",
+   "休息半天",
+   "上班",
+   "回国"
+  ],
+  "correct_answer": "休息半天",
+  "explanation": "«今天休息半天吧».",
+  "order_index": 23,
+  "id": "xinhsk1-l12-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：杨同乐回家后要做什么？",
+  "options": [
+   "喝热水",
+   "吃饭",
+   "上班",
+   "看病"
+  ],
+  "correct_answer": "喝热水",
+  "explanation": "«回家后再喝些热水».",
+  "order_index": 24,
+  "id": "xinhsk1-l12-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：杨同乐觉得怎么样？",
+  "options": [
+   "很热",
+   "不冷",
+   "有点儿热",
+   "很冷"
+  ],
+  "correct_answer": "很冷",
+  "explanation": "«我很冷».",
+  "order_index": 25,
+  "id": "xinhsk1-l12-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

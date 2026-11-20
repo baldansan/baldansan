@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "跑",
+   "pinyin": [
+    "pǎo"
+   ],
+   "strokeCount": 12,
+   "radical": "足",
+   "practice": "write",
+   "meaningMn": "гүйх",
+   "etymology_mn": "足 (хөл) + 包 (дуудлага): хөлөөрөө гүйх",
+   "exampleWords": [
+    "跑步",
+    "往外跑"
+   ]
+  },
+  {
+   "hanzi": "篮",
+   "pinyin": [
+    "lán"
+   ],
+   "strokeCount": 16,
+   "radical": "竹",
+   "practice": "write",
+   "meaningMn": "сагс",
+   "etymology_mn": "竹 (хулс) + 监 (дуудлага): хулсаар сүлжсэн сагс",
+   "exampleWords": [
+    "篮球",
+    "打篮球"
+   ]
+  },
+  {
+   "hanzi": "踢",
+   "pinyin": [
+    "tī"
+   ],
+   "strokeCount": 15,
+   "radical": "足",
+   "practice": "write",
+   "meaningMn": "өшиглөх",
+   "etymology_mn": "足 (хөл) + 易 (дуудлага): хөлөөр өшиглөх",
+   "exampleWords": [
+    "踢球",
+    "踢足球"
+   ]
+  },
+  {
+   "hanzi": "游",
+   "pinyin": [
+    "yóu"
+   ],
+   "strokeCount": 12,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "сэлэх",
+   "etymology_mn": "氵 (ус) + 斿 (дуудлага): усанд явах",
+   "exampleWords": [
+    "游泳",
+    "游得快"
+   ]
+  },
+  {
+   "hanzi": "球",
+   "pinyin": [
+    "qiú"
+   ],
+   "strokeCount": 11,
+   "radical": "王",
+   "practice": "write",
+   "meaningMn": "бөмбөг",
+   "etymology_mn": "王 (хэлбэр, яшм) + 求 (дуудлага): бөмбөрцөг хэлбэртэй зүйл",
+   "exampleWords": [
+    "足球",
+    "打球"
+   ]
+  },
+  {
+   "hanzi": "爱",
+   "pinyin": [
+    "ài"
+   ],
+   "strokeCount": 10,
+   "radical": "爫",
+   "practice": "write",
+   "meaningMn": "хайрлах, дуртай",
+   "etymology_mn": "爫 (гар) + 冖 + 友: гараараа нөхрөө тэвэрсэн хайр",
+   "exampleWords": [
+    "爱好",
+    "喜爱"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "往",
+   "b": "住",
+   "word_a": "往前走",
+   "word_b": "住在北京",
+   "mn": "往 — руу; 住 — оршин суух",
+   "tip_mn": "往 нь 彳 (алхах) + 主: чиглэл, алхах. 住 нь 亻 (хүн) + 主: хүн суух, оршин суух."
+  },
+  {
+   "a": "跑",
+   "b": "泡",
+   "word_a": "跑步",
+   "word_b": "泡茶",
+   "mn": "跑 — гүйх; 泡 — дэвтээх",
+   "tip_mn": "跑 нь 足 (хөл)-тэй, хөлөөр гүйх. 泡 нь 氵 (ус)-тай, усанд дэвтээх."
+  },
+  {
+   "a": "球",
+   "b": "求",
+   "word_a": "足球",
+   "word_b": "请求",
+   "mn": "球 — бөмбөг; 求 — гуйх",
+   "tip_mn": "球 нь 王-тэй, бөмбөгийн хэлбэр. 求 дангаараа «гуйх»."
+  },
+  {
+   "a": "游",
+   "b": "泳",
+   "word_a": "游泳",
+   "word_b": "游泳游得快",
+   "mn": "游 — сэлэх; 泳 — сэлэлт",
+   "tip_mn": "Хоёулаа 氵-тэй, 游泳 гэж хамт хэрэглэнэ; 状态补语-д 游-г давтана."
+  }
+ ]
+}

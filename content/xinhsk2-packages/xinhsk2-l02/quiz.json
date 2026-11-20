@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "今天下雨了，________不太冷。",
+  "options": [
+   "还是",
+   "别",
+   "万",
+   "但"
+  ],
+  "correct_answer": "但",
+  "explanation": "«Бороо орсон, гэхдээ тийм хүйтэн биш» — 但.",
+  "order_index": 1,
+  "id": "xinhsk2-l02-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他每天坐________上班。",
+  "options": [
+   "外国",
+   "车票",
+   "公交车",
+   "教室"
+  ],
+  "correct_answer": "公交车",
+  "explanation": "«Өдөр бүр автобусаар ажилдаа явдаг» — 公交车.",
+  "order_index": 2,
+  "id": "xinhsk2-l02-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "学校离我家很________。",
+  "options": [
+   "票",
+   "远",
+   "但",
+   "啊"
+  ],
+  "correct_answer": "远",
+  "explanation": "«Сургууль манай гэрээс маш хол» — 远.",
+  "order_index": 3,
+  "id": "xinhsk2-l02-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "车站太远了，我们________去吧。",
+  "options": [
+   "打车",
+   "过来",
+   "别",
+   "但"
+  ],
+  "correct_answer": "打车",
+  "explanation": "«Буудал хэтэрхий хол, такси барьж явъя» — 打车去.",
+  "order_index": 4,
+  "id": "xinhsk2-l02-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我走路到________坐公交车。",
+  "options": [
+   "教室",
+   "网上",
+   "外国",
+   "车站"
+  ],
+  "correct_answer": "车站",
+  "explanation": "«Алхаад буудал дээр очиж автобусанд сууна» — 车站.",
+  "order_index": 5,
+  "id": "xinhsk2-l02-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他在________里看书。",
+  "options": [
+   "网上",
+   "打车",
+   "教室",
+   "车站"
+  ],
+  "correct_answer": "教室",
+  "explanation": "«Ангид ном уншиж байна» — 教室里.",
+  "order_index": 6,
+  "id": "xinhsk2-l02-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈喜欢在________买东西。",
+  "options": [
+   "外国",
+   "网上",
+   "教室",
+   "车站"
+  ],
+  "correct_answer": "网上",
+  "explanation": "«Ээж интернетээр юм худалдан авах дуртай» — 在网上.",
+  "order_index": 7,
+  "id": "xinhsk2-l02-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "电影________多少钱？",
+  "options": [
+   "票",
+   "间",
+   "名",
+   "万"
+  ],
+  "correct_answer": "票",
+  "explanation": "«Киноны тасалбар хэд вэ?» — 电影票.",
+  "order_index": 8,
+  "id": "xinhsk2-l02-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她现在还是一________学生。",
+  "options": [
+   "间",
+   "万",
+   "啊",
+   "名"
+  ],
+  "correct_answer": "名",
+  "explanation": "Хүнийг тоолох үг 名: 一名学生.",
+  "order_index": 9,
+  "id": "xinhsk2-l02-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这________教室里有三个人。",
+  "options": [
+   "万",
+   "票",
+   "间",
+   "名"
+  ],
+  "correct_answer": "间",
+  "explanation": "Ангийн хэмжих үг 间: 一间教室.",
+  "order_index": 10,
+  "id": "xinhsk2-l02-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l02-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我们还是打车去吧。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Бид такси барьж ирнэ.",
+   "Бид такси барьж явсан нь дээр байх.",
+   "Бид такси барьж явахгүй.",
+   "Бид такси барьж явсан."
+  ],
+  "correct_answer": "Бид такси барьж явсан нь дээр байх.",
+  "explanation": "还是…吧 — «…сан нь дээр» гэсэн санал.",
+  "order_index": 11,
+  "id": "xinhsk2-l02-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l02-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "今天下雨了，还是明天去跑步吧。",
+   "今天下雨了，明天去还是跑步吧。",
+   "今天下雨了，还是吧明天去跑步。",
+   "今天下雨了，明天去跑步还是。"
+  ],
+  "correct_answer": "今天下雨了，还是明天去跑步吧。",
+  "explanation": "还是 үйл үгийн өмнө, 吧 төгсгөлд.",
+  "order_index": 12,
+  "id": "xinhsk2-l02-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ? (хорь гаруй оюутан)",
+  "options": [
+   "教室里有二十个多学生。",
+   "教室里有二个十多学生。",
+   "教室里有多二十个学生。",
+   "教室里有二十多个学生。"
+  ],
+  "correct_answer": "教室里有二十多个学生。",
+  "explanation": "20 нь 10-ын үржвэр тул 多 тооны шууд ард.",
+  "order_index": 13,
+  "id": "xinhsk2-l02-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ? (таван юань гаруй)",
+  "options": [
+   "这两个苹果多五块钱。",
+   "这两个苹果五块钱多。",
+   "这两个苹果五块多钱。",
+   "这两个苹果五多块钱。"
+  ],
+  "correct_answer": "这两个苹果五块多钱。",
+  "explanation": "5 нь 10-ын үржвэр биш тул 多 хэмжих үгийн ард орно.",
+  "order_index": 14,
+  "id": "xinhsk2-l02-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他们卖的电影票也很便宜。» — 卖的 юу гэсэн үг вэ?",
+  "options": [
+   "тэдний хямдруулсан",
+   "тэдний зардаг",
+   "тэдний авдаг",
+   "тэдний үздэг"
+  ],
+  "correct_answer": "тэдний зардаг",
+  "explanation": "卖的 нь 电影票-г тодорхойлно: «тэдний зардаг кино тасалбар».",
+  "order_index": 15,
+  "id": "xinhsk2-l02-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ? (одоо хятад хэл сурдаг оюутан олон)",
+  "options": [
+   "现在学中文的学生很多。",
+   "现在学中文学生的很多。",
+   "现在的学中文学生很多。",
+   "现在学中文学生很多的。"
+  ],
+  "correct_answer": "现在学中文的学生很多。",
+  "explanation": "Үйл үгийн хэсэг + 的 + нэр үг.",
+  "order_index": 16,
+  "id": "xinhsk2-l02-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«还是别看电影了。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Кино үзсэн нь дээр.",
+   "Кино үзэж байсан.",
+   "Кино үзэх дуртай.",
+   "Кино үзэхгүй байсан нь дээр."
+  ],
+  "correct_answer": "Кино үзэхгүй байсан нь дээр.",
+  "explanation": "还是别…了 — «…хиймээргүй байсан нь дээр».",
+  "order_index": 17,
+  "id": "xinhsk2-l02-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l02-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这是朋友给我的杯子。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Энэ бол миний аяга.",
+   "Энэ бол найзын аяга.",
+   "Энэ бол найзын надад өгсөн аяга.",
+   "Энэ бол миний найзад өгсөн аяга."
+  ],
+  "correct_answer": "Энэ бол найзын надад өгсөн аяга.",
+  "explanation": "朋友给我的 нь 杯子-г тодорхойлно.",
+  "order_index": 18,
+  "id": "xinhsk2-l02-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l02-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月和安妮怎么去北京大学？",
+  "options": [
+   "走路",
+   "打车",
+   "坐公交车",
+   "开车"
+  ],
+  "correct_answer": "打车",
+  "explanation": "«我们还是打车去吧» — такси барьж явна.",
+  "order_index": 19,
+  "id": "xinhsk2-l02-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：为什么不坐公交车？",
+  "options": [
+   "车站有点远",
+   "没有公交车",
+   "公交车很贵",
+   "他们不想去"
+  ],
+  "correct_answer": "车站有点远",
+  "explanation": "«有，但车站有点儿远» — буудал жаахан хол.",
+  "order_index": 20,
+  "id": "xinhsk2-l02-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：北京大学有多少名学生？",
+  "options": [
+   "三千多",
+   "十万多",
+   "两万多",
+   "四万多"
+  ],
+  "correct_answer": "四万多",
+  "explanation": "«北京大学有四万多名学生» — дөчин мянга гаруй.",
+  "order_index": 21,
+  "id": "xinhsk2-l02-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：安妮是怎么知道的？",
+  "options": [
+   "朋友说的",
+   "电视上说的",
+   "网上说的",
+   "老师说的"
+  ],
+  "correct_answer": "网上说的",
+  "explanation": "«是网上说的» — интернетээс.",
+  "order_index": 22,
+  "id": "xinhsk2-l02-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：有的电影票多少钱？",
+  "options": [
+   "一百块",
+   "不到二十块",
+   "三十多块",
+   "五十块"
+  ],
+  "correct_answer": "不到二十块",
+  "explanation": "«有的还不到二十块钱» — хорин юаньд хүрэхгүй.",
+  "order_index": 23,
+  "id": "xinhsk2-l02-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：白家月为什么不想看电影？",
+  "options": [
+   "北京大学就很好看",
+   "电影很贵",
+   "没有时间",
+   "电影院很小"
+  ],
+  "correct_answer": "北京大学就很好看",
+  "explanation": "«北京大学就很好看» гэж хэлсэн.",
+  "order_index": 24,
+  "id": "xinhsk2-l02-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：白家月和安妮有时间还想再来北京大学做什么？",
+  "options": [
+   "学中文",
+   "看学生",
+   "打车",
+   "看电影"
+  ],
+  "correct_answer": "看电影",
+  "explanation": "«还想再过来看个电影» — кино үзэхийг хүснэ.",
+  "order_index": 25,
+  "id": "xinhsk2-l02-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

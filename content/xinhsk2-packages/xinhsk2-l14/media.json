@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-hero.webp",
+   "title": "14-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l14-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w1.webp",
+   "title": "包 bāo — цүнх; боох; боодол",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l14-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w2.webp",
+   "title": "房子 fángzi — байшин, орон сууц",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l14-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w3.webp",
+   "title": "小孩儿 xiǎoháir — хүүхэд, жаал",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l14-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w4.webp",
+   "title": "女孩儿 nǚháir — охин, охид",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l14-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l14/l14-w5.webp",
+   "title": "眼睛 yǎnjing — нүд",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

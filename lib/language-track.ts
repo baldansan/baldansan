@@ -39,6 +39,8 @@ export const ADMIN_COURSE_IDS = [
   "fazhan-zhongji2",
   "fazhan-gaoji1",
   "fazhan-gaoji2",
+  "xinhsk1",
+  "xinhsk2",
   "xinhsk3",
 ] as const;
 

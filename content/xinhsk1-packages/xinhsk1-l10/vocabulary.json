@@ -1,0 +1,232 @@
+[
+ {
+  "chinese": "杯子",
+  "pinyin": "bēizi",
+  "mongolian": "аяга, цуурай",
+  "hskLevel": "HSK1",
+  "exampleChinese": "昨天我买了四个杯子。",
+  "exampleMongolian": "Өчигдөр би дөрвөн аяга авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个杯子"
+ },
+ {
+  "chinese": "售货员",
+  "pinyin": "shòuhuòyuán",
+  "mongolian": "худалдагч",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我是这个商店的售货员。",
+  "exampleMongolian": "Би энэ дэлгүүрийн худалдагч.",
+  "pos": "нэр үг",
+  "collocations_zh": "问售货员"
+ },
+ {
+  "chinese": "这边",
+  "pinyin": "zhèbiān",
+  "mongolian": "энд, энэ тал",
+  "hskLevel": "HSK1",
+  "exampleChinese": "来这边坐吧。",
+  "exampleMongolian": "Энд ирж суугаарай.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "在这边"
+ },
+ {
+  "chinese": "钱",
+  "pinyin": "qián",
+  "mongolian": "мөнгө",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这些苹果八块钱。",
+  "exampleMongolian": "Эдгээр алим найман юань.",
+  "pos": "нэр үг",
+  "collocations_zh": "多少钱"
+ },
+ {
+  "chinese": "这些",
+  "pinyin": "zhèxiē",
+  "mongolian": "эдгээр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这些人我都认识。",
+  "exampleMongolian": "Эдгээр хүмүүсийг би бүгдийг нь таньдаг.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "这些东西"
+ },
+ {
+  "chinese": "块",
+  "pinyin": "kuài",
+  "mongolian": "юань (ярианы хэлний мөнгөн нэгж)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这本书四十块钱。",
+  "exampleMongolian": "Энэ ном дөчин юань.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一块钱"
+ },
+ {
+  "chinese": "那些",
+  "pinyin": "nàxiē",
+  "mongolian": "тэдгээр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "那些书是我的。",
+  "exampleMongolian": "Тэдгээр ном минийх.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "那些人"
+ },
+ {
+  "chinese": "这儿",
+  "pinyin": "zhèr",
+  "mongolian": "энд",
+  "hskLevel": "HSK1",
+  "exampleChinese": "请问，这儿卖水果吗？",
+  "exampleMongolian": "Уучлаарай, энд жимс зардаг уу?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "这儿有"
+ },
+ {
+  "chinese": "水果",
+  "pinyin": "shuǐguǒ",
+  "mongolian": "жимс",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你喜欢吃什么水果？",
+  "exampleMongolian": "Чи ямар жимс идэх дуртай вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "吃水果"
+ },
+ {
+  "chinese": "少",
+  "pinyin": "shǎo",
+  "mongolian": "цөөн, бага",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她认识的中国朋友很少。",
+  "exampleMongolian": "Түүний мэддэг хятад найз цөөн.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "不少 / 很少"
+ },
+ {
+  "chinese": "斤",
+  "pinyin": "jīn",
+  "mongolian": "жин (хагас кг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我买了一斤苹果，很便宜。",
+  "exampleMongolian": "Би нэг жин алим авсан, их хямд байсан.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一斤苹果"
+ },
+ {
+  "chinese": "苹果",
+  "pinyin": "píngguǒ",
+  "mongolian": "алим",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我早上吃了一个苹果。",
+  "exampleMongolian": "Би өглөө нэг алим идсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "两个苹果"
+ },
+ {
+  "chinese": "便宜",
+  "pinyin": "piányi",
+  "mongolian": "хямд",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这件衣服不贵，很便宜。",
+  "exampleMongolian": "Энэ хувцас үнэтэй биш, их хямд.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很便宜"
+ },
+ {
+  "chinese": "商店",
+  "pinyin": "shāngdiàn",
+  "mongolian": "дэлгүүр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "妈妈去商店买了几件衣服。",
+  "exampleMongolian": "Ээж дэлгүүрт очоод хэдэн хувцас авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "去商店"
+ },
+ {
+  "chinese": "衣服",
+  "pinyin": "yīfu",
+  "mongolian": "хувцас",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我昨天买了三件衣服。",
+  "exampleMongolian": "Би өчигдөр гурван хувцас авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "买衣服"
+ },
+ {
+  "chinese": "件",
+  "pinyin": "jiàn",
+  "mongolian": "ширхэг (хувцас, хэргийн хэмжих үг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这件衣服是谁的？",
+  "exampleMongolian": "Энэ хувцас хэнийх вэ?",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一件衣服"
+ },
+ {
+  "chinese": "元",
+  "pinyin": "yuán",
+  "mongolian": "юань (бичгийн хэлний мөнгөн нэгж)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这件衣服一百元。",
+  "exampleMongolian": "Энэ хувцас зуун юань.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一百元"
+ },
+ {
+  "chinese": "怎么样",
+  "pinyin": "zěnmeyàng",
+  "mongolian": "яаж байна, ямар вэ",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这件衣服怎么样？",
+  "exampleMongolian": "Энэ хувцас ямар байна?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "……怎么样？"
+ },
+ {
+  "chinese": "贵",
+  "pinyin": "guì",
+  "mongolian": "үнэтэй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这个手机太贵了！",
+  "exampleMongolian": "Энэ утас хэтэрхий үнэтэй юм!",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "不贵 / 很贵"
+ },
+ {
+  "chinese": "穿",
+  "pinyin": "chuān",
+  "mongolian": "өмсөх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她今天穿的那件衣服很漂亮。",
+  "exampleMongolian": "Түүний өнөөдөр өмссөн тэр хувцас их гоё.",
+  "pos": "үйл үг",
+  "collocations_zh": "穿衣服"
+ },
+ {
+  "chinese": "女",
+  "pinyin": "nǚ",
+  "mongolian": "эмэгтэй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我不认识那个女老师。",
+  "exampleMongolian": "Би тэр эмэгтэй багшийг танихгүй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "女同学"
+ },
+ {
+  "chinese": "男",
+  "pinyin": "nán",
+  "mongolian": "эрэгтэй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "那个男同学是谁？",
+  "exampleMongolian": "Тэр эрэгтэй ангийн хүн хэн бэ?",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "男老师"
+ },
+ {
+  "chinese": "那儿",
+  "pinyin": "nàr",
+  "mongolian": "тэнд",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们去那儿玩吧。",
+  "exampleMongolian": "Тийшээ очиж тоглоцгооё.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "在那儿"
+ }
+]

@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "我",
+   "pinyin": [
+    "wǒ"
+   ],
+   "strokeCount": 7,
+   "radical": "戈",
+   "practice": "write",
+   "meaningMn": "би",
+   "etymology_mn": "戈 (жад, зэвсэг) бүхий дүрс: «би» өөрийгөө хамгаалж байна",
+   "exampleWords": [
+    "我叫",
+    "我是"
+   ]
+  },
+  {
+   "hanzi": "叫",
+   "pinyin": [
+    "jiào"
+   ],
+   "strokeCount": 5,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "дуудах, нэрлэх",
+   "etymology_mn": "口 (ам) + 丩: амаар дуудах",
+   "exampleWords": [
+    "我叫",
+    "叫什么"
+   ]
+  },
+  {
+   "hanzi": "名",
+   "pinyin": [
+    "míng"
+   ],
+   "strokeCount": 6,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "нэр",
+   "etymology_mn": "夕 (орой) + 口 (ам): харанхуйд хүн нэрээр нь дууддаг",
+   "exampleWords": [
+    "名字",
+    "什么名字"
+   ]
+  },
+  {
+   "hanzi": "是",
+   "pinyin": [
+    "shì"
+   ],
+   "strokeCount": 9,
+   "radical": "日",
+   "practice": "write",
+   "meaningMn": "байх, мөн",
+   "etymology_mn": "日 (нар) дор зөв байх: «мөн, зөв»",
+   "exampleWords": [
+    "我是",
+    "是不是"
+   ]
+  },
+  {
+   "hanzi": "不",
+   "pinyin": [
+    "bù"
+   ],
+   "strokeCount": 4,
+   "radical": "一",
+   "practice": "write",
+   "meaningMn": "биш",
+   "etymology_mn": "Дээрээсээ доошоо тоссон шугам: «үгүй, биш»",
+   "exampleWords": [
+    "不是",
+    "不好"
+   ]
+  },
+  {
+   "hanzi": "很",
+   "pinyin": [
+    "hěn"
+   ],
+   "strokeCount": 9,
+   "radical": "彳",
+   "practice": "write",
+   "meaningMn": "маш",
+   "etymology_mn": "彳 (алхах) + 艮: сайн хүч шаардахуйц алхах, «маш»",
+   "exampleWords": [
+    "很好",
+    "很高兴"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "我",
+   "b": "找",
+   "word_a": "我叫",
+   "word_b": "找人",
+   "mn": "我 — би; 找 — хайх",
+   "tip_mn": "我-д зүүн дээд хэсэг 手 ба 戈 бий; 找 нь 扌 (гар) + 戈 бөгөөд 戈-гийн цэг байхгүй."
+  },
+  {
+   "a": "也",
+   "b": "他",
+   "word_a": "也是",
+   "word_b": "他们",
+   "mn": "也 — бас; 他 — тэр",
+   "tip_mn": "他 нь 亻 (хүн)-тэй: тэр хүнийг заана. 也 нь ганцаараа."
+  },
+  {
+   "a": "很",
+   "b": "狠",
+   "word_a": "很好",
+   "word_b": "狠心",
+   "mn": "很 — маш; 狠 — хатуу, харгис",
+   "tip_mn": "很 нь 彳 (алхах), 狠 нь 犭 (хэрэм/амьтан) тул утга нь ялгаатай."
+  },
+  {
+   "a": "名",
+   "b": "各",
+   "word_a": "名字",
+   "word_b": "各国",
+   "mn": "名 — нэр; 各 — тус бүр",
+   "tip_mn": "名 дээр нь 夕, 各 дээр нь 夂 байгаагаар ялгарна."
+  }
+ ]
+}

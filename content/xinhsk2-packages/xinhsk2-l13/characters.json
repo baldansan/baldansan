@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "教",
+   "pinyin": [
+    "jiāo"
+   ],
+   "strokeCount": 11,
+   "radical": "攵",
+   "practice": "write",
+   "meaningMn": "заах",
+   "etymology_mn": "孝 + 攵 (гар савлан): гараар чиглүүлж заах",
+   "exampleWords": [
+    "教中文",
+    "教书"
+   ]
+  },
+  {
+   "hanzi": "希",
+   "pinyin": [
+    "xī"
+   ],
+   "strokeCount": 7,
+   "radical": "巾",
+   "practice": "write",
+   "meaningMn": "найдах",
+   "etymology_mn": "乂 + 巾 (алчуур): өндөр найдвар",
+   "exampleWords": [
+    "希望",
+    "希望你"
+   ]
+  },
+  {
+   "hanzi": "望",
+   "pinyin": [
+    "wàng"
+   ],
+   "strokeCount": 11,
+   "radical": "月",
+   "practice": "write",
+   "meaningMn": "найдах; харах",
+   "etymology_mn": "亡 + 月 + 王: сар өөд харж хүлээх",
+   "exampleWords": [
+    "希望",
+    "望着"
+   ]
+  },
+  {
+   "hanzi": "告",
+   "pinyin": [
+    "gào"
+   ],
+   "strokeCount": 7,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "хэлэх",
+   "etymology_mn": "牛 + 口 (ам): аманд мэдэгдэх",
+   "exampleWords": [
+    "告诉",
+    "告诉他"
+   ]
+  },
+  {
+   "hanzi": "班",
+   "pinyin": [
+    "bān"
+   ],
+   "strokeCount": 10,
+   "radical": "王",
+   "practice": "write",
+   "meaningMn": "анги",
+   "etymology_mn": "王 + 刂 + 王: хоёр хэсэг хуваасан бүлэг",
+   "exampleWords": [
+    "一班",
+    "班同学"
+   ]
+  },
+  {
+   "hanzi": "笔",
+   "pinyin": [
+    "bǐ"
+   ],
+   "strokeCount": 10,
+   "radical": "竹",
+   "practice": "write",
+   "meaningMn": "бийр; зураас",
+   "etymology_mn": "竹 (хулс) + 毛 (үс): хулсан бийр, зураас",
+   "exampleWords": [
+    "笔画",
+    "一笔"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "间",
+   "b": "问",
+   "word_a": "洗手间",
+   "word_b": "问题",
+   "mn": "间 — дунд, өрөө; 问 — асуух",
+   "tip_mn": "间 нь дотроо «日», 问 нь дотроо «口». 日 нь 口-оос нэг зураас илүү тул 间 нь 问-оос нэг зураас илүү."
+  },
+  {
+   "a": "日",
+   "b": "口",
+   "word_a": "日记",
+   "word_b": "人口",
+   "mn": "日 — нар, өдөр; 口 — ам",
+   "tip_mn": "日 нь дөрвөн зураастай, дунд нь хөндлөн зураастай. 口 нь гурван зураастай, дотроо хоосон."
+  },
+  {
+   "a": "花",
+   "b": "化",
+   "word_a": "花园",
+   "word_b": "变化",
+   "mn": "花 — цэцэг; 化 — өөрчлөгдөх",
+   "tip_mn": "花 дээрээ 艹 (өвс) байна, цэцэг ургамал. 化 нь 艹-гүй."
+  },
+  {
+   "a": "笔",
+   "b": "毛",
+   "word_a": "笔画",
+   "word_b": "毛巾",
+   "mn": "笔 — бийр, зураас; 毛 — үс",
+   "tip_mn": "笔 нь дээрээ 竹 (хулс) нэмсэн: 竹 + 毛 = 笔."
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+[
+ {
+  "chinese": "爱",
+  "pinyin": "ài",
+  "mongolian": "дуртай, хайрлах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "姐姐很爱学习。",
+  "exampleMongolian": "Эгч сурах дуртай, их хичээнгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "爱学习 / 爱看电影"
+ },
+ {
+  "chinese": "哪个",
+  "pinyin": "nǎge",
+  "mongolian": "аль нь, аль",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这两个手机，你想买哪个？",
+  "exampleMongolian": "Энэ хоёр утасны аль нь авмаар байна?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "哪个菜 / 哪个人"
+ },
+ {
+  "chinese": "去年",
+  "pinyin": "qùnián",
+  "mongolian": "өнгөрсөн жил",
+  "hskLevel": "HSK1",
+  "exampleChinese": "去年我还在上中学。",
+  "exampleMongolian": "Өнгөрсөн жил би дунд сургуульд сурч байсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "去年夏天"
+ },
+ {
+  "chinese": "男朋友",
+  "pinyin": "nánpéngyou",
+  "mongolian": "найз залуу",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她的男朋友是医生。",
+  "exampleMongolian": "Түүний найз залуу эмч.",
+  "pos": "нэр үг",
+  "collocations_zh": "我男朋友"
+ },
+ {
+  "chinese": "几",
+  "pinyin": "jǐ",
+  "mongolian": "хэдэн (цөөн тоо)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我想去书店买几本书。",
+  "exampleMongolian": "Би номын дэлгүүрт очиж хэдэн ном авмаар байна.",
+  "pos": "тоо",
+  "collocations_zh": "几天 / 十几岁"
+ },
+ {
+  "chinese": "年",
+  "pinyin": "nián",
+  "mongolian": "жил",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他学习中文两年了。",
+  "exampleMongolian": "Тэр хятад хэл сурсаар хоёр жил болж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "两年 / 几年"
+ },
+ {
+  "chinese": "好玩儿",
+  "pinyin": "hǎowánr",
+  "mongolian": "хөгжилтэй, сонирхолтой",
+  "hskLevel": "HSK1",
+  "exampleChinese": "北京好玩儿吗？",
+  "exampleMongolian": "Бээжин хөгжилтэй юу?",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很好玩儿"
+ },
+ {
+  "chinese": "西安",
+  "pinyin": "Xī’ān",
+  "mongolian": "Сиань хот",
+  "hskLevel": "HSK1",
+  "exampleChinese": "去年我和男朋友去了西安。",
+  "exampleMongolian": "Өнгөрсөн жил би найз залуутайгаа Сианьд очсон.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "去西安"
+ },
+ {
+  "chinese": "北京",
+  "pinyin": "Běijīng",
+  "mongolian": "Бээжин",
+  "hskLevel": "HSK1",
+  "exampleChinese": "北京非常漂亮。",
+  "exampleMongolian": "Бээжин маш үзэсгэлэнтэй.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "去北京 / 北京人"
+ },
+ {
+  "chinese": "飞机",
+  "pinyin": "fēijī",
+  "mongolian": "нисэх онгоц",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们坐飞机去北京吧。",
+  "exampleMongolian": "Бид нисэх онгоцоор Бээжин явъя.",
+  "pos": "нэр үг",
+  "collocations_zh": "坐飞机"
+ },
+ {
+  "chinese": "要",
+  "pinyin": "yào",
+  "mongolian": "шаардагдах, хэрэгтэй байх (цаг, мөнгө)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们开车去西安要六个小时。",
+  "exampleMongolian": "Бид машинаар Сианьд очихад зургаан цаг шаардагдана.",
+  "pos": "үйл үг",
+  "collocations_zh": "要几个小时"
+ },
+ {
+  "chinese": "小时",
+  "pinyin": "xiǎoshí",
+  "mongolian": "цаг (хугацааны нэгж)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我今天上了四个小时的课。",
+  "exampleMongolian": "Би өнөөдөр дөрвөн цаг хичээл орлоо.",
+  "pos": "нэр үг",
+  "collocations_zh": "两个小时 / 一个半小时"
+ },
+ {
+  "chinese": "家人",
+  "pinyin": "jiārén",
+  "mongolian": "гэр бүлийн гишүүн",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我爱我的家人。",
+  "exampleMongolian": "Би гэр бүлийнхнээ хайрладаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "我的家人"
+ },
+ {
+  "chinese": "时间",
+  "pinyin": "shíjiān",
+  "mongolian": "цаг хугацаа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我现在很忙，没有时间。",
+  "exampleMongolian": "Би одоо завгүй, цаг алга.",
+  "pos": "нэр үг",
+  "collocations_zh": "没有时间 / 很长时间"
+ },
+ {
+  "chinese": "机场",
+  "pinyin": "jīchǎng",
+  "mongolian": "нисэх онгоцны буудал",
+  "hskLevel": "HSK1",
+  "exampleChinese": "明天早上我要去机场接朋友。",
+  "exampleMongolian": "Маргааш өглөө би нисэх буудал руу найзаа тосохоор явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "去机场"
+ },
+ {
+  "chinese": "接",
+  "pinyin": "jiē",
+  "mongolian": "угтах, тосох",
+  "hskLevel": "HSK1",
+  "exampleChinese": "妈妈来学校接我回家。",
+  "exampleMongolian": "Ээж сургуульд намайг авахаар ирсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "接朋友 / 接孩子"
+ },
+ {
+  "chinese": "住",
+  "pinyin": "zhù",
+  "mongolian": "амьдрах, байрлах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你现在住在哪儿？",
+  "exampleMongolian": "Чи одоо хаана амьдарч байна?",
+  "pos": "үйл үг",
+  "collocations_zh": "住在这儿 / 住几天"
+ },
+ {
+  "chinese": "早",
+  "pinyin": "zǎo",
+  "mongolian": "эрт",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们早点儿去机场吧。",
+  "exampleMongolian": "Бид нисэх буудал руу арай эрт явъя.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很早 / 不早"
+ },
+ {
+  "chinese": "那",
+  "pinyin": "nà",
+  "mongolian": "тэгвэл",
+  "hskLevel": "HSK1",
+  "exampleChinese": "下雨了，那我们在家里玩。",
+  "exampleMongolian": "Бороо орлоо, тэгвэл бид гэртээ тоглоё.",
+  "pos": "холбоос",
+  "collocations_zh": "那我们…"
+ },
+ {
+  "chinese": "大兴机场",
+  "pinyin": "Dàxīng Jīchǎng",
+  "mongolian": "Дасин нисэх буудал (Бээжин)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们在大兴机场见。",
+  "exampleMongolian": "Бид Дасин нисэх буудал дээр уулзъя.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "去大兴机场"
+ }
+]

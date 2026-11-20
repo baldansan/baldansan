@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "你家有几________人？",
+  "options": [
+   "岁",
+   "和",
+   "呢",
+   "口"
+  ],
+  "correct_answer": "口",
+  "explanation": "«几口人» — гэр бүлийн гишүүдийн хэмжих үг 口.",
+  "order_index": 1,
+  "id": "xinhsk1-l04-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我有两个哥哥，你________？",
+  "options": [
+   "和",
+   "几",
+   "呢",
+   "吗"
+  ],
+  "correct_answer": "呢",
+  "explanation": "«你呢？» — «Харин чи?».",
+  "order_index": 2,
+  "id": "xinhsk1-l04-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________有哥哥，我有一个妹妹。",
+  "options": [
+   "多",
+   "没",
+   "不",
+   "和"
+  ],
+  "correct_answer": "没",
+  "explanation": "«没有哥哥» — 有-ийн үгүйсгэл 没有.",
+  "order_index": 3,
+  "id": "xinhsk1-l04-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "您儿子今年几________？",
+  "options": [
+   "岁",
+   "个",
+   "口",
+   "大"
+  ],
+  "correct_answer": "岁",
+  "explanation": "«几岁» — хүүхдийн насыг асуух.",
+  "order_index": 4,
+  "id": "xinhsk1-l04-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "您女儿今年多________？",
+  "options": [
+   "岁",
+   "几",
+   "和",
+   "大"
+  ],
+  "correct_answer": "大",
+  "explanation": "«多大» — том хүүхдийн насыг асуух.",
+  "order_index": 5,
+  "id": "xinhsk1-l04-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我爸爸、妈妈________我，我家有三口人。",
+  "options": [
+   "没",
+   "多",
+   "和",
+   "呢"
+  ],
+  "correct_answer": "和",
+  "explanation": "«爸爸、妈妈和我» — «ба, болон».",
+  "order_index": 6,
+  "id": "xinhsk1-l04-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我妈妈有两个孩子，一个是我，一个是我的________。",
+  "options": [
+   "今年",
+   "妹妹",
+   "爸爸",
+   "和"
+  ],
+  "correct_answer": "妹妹",
+  "explanation": "Хоёр хүүхдийн нэг нь би, нөгөө нь дүү охин (妹妹).",
+  "order_index": 7,
+  "id": "xinhsk1-l04-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "王老师有二十个________。",
+  "options": [
+   "学生",
+   "妈妈",
+   "爸爸",
+   "女儿"
+  ],
+  "correct_answer": "学生",
+  "explanation": "«二十个学生» — хорин оюутан.",
+  "order_index": 8,
+  "id": "xinhsk1-l04-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他________五岁。",
+  "options": [
+   "多少",
+   "没有",
+   "几",
+   "今年"
+  ],
+  "correct_answer": "今年",
+  "explanation": "«今年五岁» — энэ жил таван настай.",
+  "order_index": 9,
+  "id": "xinhsk1-l04-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你有________个姐姐？",
+  "options": [
+   "和",
+   "岁",
+   "几",
+   "多"
+  ],
+  "correct_answer": "几",
+  "explanation": "«几个姐姐» — хэдэн эгч.",
+  "order_index": 10,
+  "id": "xinhsk1-l04-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l04-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我有两个哥哥，你呢？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи хоёр ахтай юу?",
+   "Надад хоёр ах бий, харин чамд?",
+   "Миний ах хоёр настай.",
+   "Би хоёр ахтай биш."
+  ],
+  "correct_answer": "Надад хоёр ах бий, харин чамд?",
+  "explanation": "你呢？ — «Харин чи?».",
+  "order_index": 11,
+  "id": "xinhsk1-l04-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l04-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我没有哥哥。",
+   "我不有哥哥。",
+   "我有哥哥没。",
+   "我没哥哥有。"
+  ],
+  "correct_answer": "我没有哥哥。",
+  "explanation": "有-ийн үгүйсгэл 没有.",
+  "order_index": 12,
+  "id": "xinhsk1-l04-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l04-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хоёр оюутан» — аль нь зөв бэ?",
+  "options": [
+   "二个学生",
+   "两学生",
+   "学生两个",
+   "两个学生"
+  ],
+  "correct_answer": "两个学生",
+  "explanation": "Хэмжих үгийн өмнө 两, дараа нь 个.",
+  "order_index": 13,
+  "id": "xinhsk1-l04-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l04-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«208» — хэрхэн уншдаг вэ?",
+  "options": [
+   "二零八",
+   "二百十八",
+   "二百零八",
+   "二百八"
+  ],
+  "correct_answer": "二百零八",
+  "explanation": "Дунд орон хоосон бол 零 хэлнэ.",
+  "order_index": 14,
+  "id": "xinhsk1-l04-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Таван настай хүүхдийн насыг яаж асуух вэ?",
+  "options": [
+   "他几大？",
+   "他几岁？",
+   "他多少岁？",
+   "他多大岁？"
+  ],
+  "correct_answer": "他几岁？",
+  "explanation": "Арваас доош насанд 几岁 хэрэглэнэ.",
+  "order_index": 15,
+  "id": "xinhsk1-l04-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Арван хоёр настай охины насыг яаж асуух вэ?",
+  "options": [
+   "她多大？",
+   "她几岁大？",
+   "她几大？",
+   "她多少？"
+  ],
+  "correct_answer": "她多大？",
+  "explanation": "Арваас дээш насанд 多大 гэж асууна.",
+  "order_index": 16,
+  "id": "xinhsk1-l04-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«她有二十个学生。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэр хорин настай оюутан.",
+   "Түүнд хоёр оюутан бий.",
+   "Тэр хорин оюутан биш.",
+   "Түүнд хорин оюутан бий."
+  ],
+  "correct_answer": "Түүнд хорин оюутан бий.",
+  "explanation": "有 — «байх», 二十个学生 — хорин оюутан.",
+  "order_index": 17,
+  "id": "xinhsk1-l04-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l04-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我家有五口人。» дахь 口 юу гэсэн үг вэ?",
+  "options": [
+   "нас",
+   "хоол",
+   "гэр бүлийн гишүүний хэмжих үг",
+   "ам"
+  ],
+  "correct_answer": "гэр бүлийн гишүүний хэмжих үг",
+  "explanation": "四口人, 五口人 — гэр бүлийн тоо.",
+  "order_index": 18,
+  "id": "xinhsk1-l04-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l04-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一飞有多少个学生？",
+  "options": [
+   "二百个",
+   "二十个",
+   "十个",
+   "两个"
+  ],
+  "correct_answer": "二十个",
+  "explanation": "«她有二十个学生».",
+  "order_index": 19,
+  "id": "xinhsk1-l04-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一飞怎么样？",
+  "options": [
+   "很忙",
+   "不忙",
+   "很累",
+   "很高兴"
+  ],
+  "correct_answer": "很忙",
+  "explanation": "«她很忙» — тэр маш завгүй.",
+  "order_index": 20,
+  "id": "xinhsk1-l04-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐有哥哥吗？",
+  "options": [
+   "有一个",
+   "有两个",
+   "有三个",
+   "没有"
+  ],
+  "correct_answer": "没有",
+  "explanation": "«我没有哥哥».",
+  "order_index": 21,
+  "id": "xinhsk1-l04-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐家有几口人？",
+  "options": [
+   "五口人",
+   "两口人",
+   "四口人",
+   "三口人"
+  ],
+  "correct_answer": "四口人",
+  "explanation": "«我家有四口人».",
+  "order_index": 22,
+  "id": "xinhsk1-l04-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪有几个孩子？",
+  "options": [
+   "四个",
+   "两个",
+   "一个",
+   "三个"
+  ],
+  "correct_answer": "两个",
+  "explanation": "«我有两个孩子».",
+  "order_index": 23,
+  "id": "xinhsk1-l04-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪的儿子今年几岁？",
+  "options": [
+   "五岁",
+   "十二岁",
+   "二十岁",
+   "两岁"
+  ],
+  "correct_answer": "五岁",
+  "explanation": "«他今年五岁».",
+  "order_index": 24,
+  "id": "xinhsk1-l04-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪的女儿今年多大？",
+  "options": [
+   "五岁",
+   "二十岁",
+   "两岁",
+   "十二岁"
+  ],
+  "correct_answer": "十二岁",
+  "explanation": "«她今年十二».",
+  "order_index": 25,
+  "id": "xinhsk1-l04-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

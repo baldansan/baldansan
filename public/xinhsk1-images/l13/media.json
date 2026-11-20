@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-hero.webp",
+   "title": "13-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l13-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w1.webp",
+   "title": "茶 chá — цай",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l13-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w2.webp",
+   "title": "面包 miànbāo — талх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l13-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w3.webp",
+   "title": "鸡蛋 jīdàn — тахианы өндөг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l13-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w4.webp",
+   "title": "早饭 zǎofàn — өглөөний хоол",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l13-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l13/l13-w5.webp",
+   "title": "服务员 fúwùyuán — үйлчлэгч, зөөгч",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

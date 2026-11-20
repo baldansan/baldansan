@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-hero.webp",
+   "title": "4-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l04-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w1.webp",
+   "title": "爸爸 bàba — аав",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w2.webp",
+   "title": "妈妈 māma — ээж",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w3.webp",
+   "title": "哥哥 gēge — ах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w4.webp",
+   "title": "妹妹 mèimei — дүү охин",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w5.webp",
+   "title": "儿子 érzi — хүү",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l04/l04-w6.webp",
+   "title": "家 jiā — гэр, гэр бүл",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

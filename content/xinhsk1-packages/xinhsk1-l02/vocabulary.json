@@ -1,0 +1,152 @@
+[
+ {
+  "chinese": "请问",
+  "pinyin": "qǐngwèn",
+  "mongolian": "уучлаарай, асууя (эелдгээр асуух)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "请问，您是王老师吗？",
+  "exampleMongolian": "Уучлаарай, та Ван багш уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "请问，你……"
+ },
+ {
+  "chinese": "你",
+  "pinyin": "nǐ",
+  "mongolian": "чи",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你是谁？",
+  "exampleMongolian": "Чи хэн бэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "你好 / 你们"
+ },
+ {
+  "chinese": "叫",
+  "pinyin": "jiào",
+  "mongolian": "нэрлэгдэх, гэдэг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我的猫叫Coco。",
+  "exampleMongolian": "Миний муурыг Коко гэдэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "我叫…… / 叫什么"
+ },
+ {
+  "chinese": "什么",
+  "pinyin": "shénme",
+  "mongolian": "юу, ямар",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这是什么？",
+  "exampleMongolian": "Энэ юу вэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "什么名字"
+ },
+ {
+  "chinese": "名字",
+  "pinyin": "míngzi",
+  "mongolian": "нэр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这个名字真好。",
+  "exampleMongolian": "Энэ нэр үнэхээр сайхан.",
+  "pos": "нэр үг",
+  "collocations_zh": "你的名字 / 什么名字"
+ },
+ {
+  "chinese": "我",
+  "pinyin": "wǒ",
+  "mongolian": "би",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我是学生。",
+  "exampleMongolian": "Би сурагч.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "我叫…… / 我是……"
+ },
+ {
+  "chinese": "不",
+  "pinyin": "bù",
+  "mongolian": "биш, үгүй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我不是白家月。",
+  "exampleMongolian": "Би Бай Цзяюэ биш.",
+  "pos": "дайвар үг",
+  "collocations_zh": "不是 / 不好 / 不对 / 不能"
+ },
+ {
+  "chinese": "是",
+  "pinyin": "shì",
+  "mongolian": "байх, мөн, юм",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她是谁？",
+  "exampleMongolian": "Тэр хэн бэ?",
+  "pos": "баймж үйл үг",
+  "collocations_zh": "是…… / 不是"
+ },
+ {
+  "chinese": "对不起",
+  "pinyin": "duìbuqǐ",
+  "mongolian": "уучлаарай",
+  "hskLevel": "HSK1",
+  "exampleChinese": "A：对不起！B：没关系！",
+  "exampleMongolian": "— Уучлаарай! — Зүгээрээ!",
+  "pos": "үйл үг",
+  "collocations_zh": "对不起 / 说对不起"
+ },
+ {
+  "chinese": "没关系",
+  "pinyin": "méi guānxi",
+  "mongolian": "зүгээрээ, асуудалгүй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "A：对不起！B：没关系！",
+  "exampleMongolian": "— Уучлаарай! — Зүгээрээ!",
+  "pos": "хэллэг",
+  "collocations_zh": "没关系 / 没事"
+ },
+ {
+  "chinese": "没事",
+  "pinyin": "méishì",
+  "mongolian": "зүгээр, асуудалгүй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "A：对不起！B：没事！",
+  "exampleMongolian": "— Уучлаарай! — Зүгээр дээ!",
+  "pos": "үйл үг",
+  "collocations_zh": "没事 / 没关系"
+ },
+ {
+  "chinese": "很",
+  "pinyin": "hěn",
+  "mongolian": "маш",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我很好。",
+  "exampleMongolian": "Би сайн байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "很好 / 很高兴"
+ },
+ {
+  "chinese": "高兴",
+  "pinyin": "gāoxìng",
+  "mongolian": "баярлах, баяртай",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们很高兴。",
+  "exampleMongolian": "Бид маш баяртай байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很高兴 / 不高兴"
+ },
+ {
+  "chinese": "认识",
+  "pinyin": "rènshi",
+  "mongolian": "танилцах, мэдэх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "A：你认识他吗？B：我不认识他。",
+  "exampleMongolian": "— Чи түүнийг мэдэх үү? — Үгүй, мэдэхгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "认识他 / 不认识"
+ },
+ {
+  "chinese": "也",
+  "pinyin": "yě",
+  "mongolian": "бас, мөн",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我也很高兴。",
+  "exampleMongolian": "Би ч бас маш баяртай байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "也很高兴 / 我也……"
+ }
+]

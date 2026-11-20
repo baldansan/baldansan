@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "手",
+   "pinyin": [
+    "shǒu"
+   ],
+   "strokeCount": 4,
+   "radical": "手",
+   "practice": "write",
+   "meaningMn": "гар",
+   "etymology_mn": "Таван хуруутай гарын дүрс",
+   "exampleWords": [
+    "手机",
+    "手"
+   ]
+  },
+  {
+   "hanzi": "号",
+   "pinyin": [
+    "hào"
+   ],
+   "strokeCount": 5,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "дугаар",
+   "etymology_mn": "口 (ам) + 丂: дугаараа дуугаар хэлнэ",
+   "exampleWords": [
+    "手机号",
+    "号"
+   ]
+  },
+  {
+   "hanzi": "吃",
+   "pinyin": [
+    "chī"
+   ],
+   "strokeCount": 6,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "идэх",
+   "etymology_mn": "口 (ам) + 乞: амаараа иднэ",
+   "exampleWords": [
+    "吃饭",
+    "吃包子"
+   ]
+  },
+  {
+   "hanzi": "米",
+   "pinyin": [
+    "mǐ"
+   ],
+   "strokeCount": 6,
+   "radical": "米",
+   "practice": "write",
+   "meaningMn": "будаа",
+   "etymology_mn": "Будааны төмсөг сарнисан дүр",
+   "exampleWords": [
+    "米饭",
+    "吃米饭"
+   ]
+  },
+  {
+   "hanzi": "车",
+   "pinyin": [
+    "chē"
+   ],
+   "strokeCount": 4,
+   "radical": "车",
+   "practice": "write",
+   "meaningMn": "машин, тээвэр",
+   "etymology_mn": "Хуучин тэрэгний дугуйн дүрс",
+   "exampleWords": [
+    "出租车",
+    "坐车"
+   ]
+  },
+  {
+   "hanzi": "想",
+   "pinyin": [
+    "xiǎng"
+   ],
+   "strokeCount": 13,
+   "radical": "心",
+   "practice": "write",
+   "meaningMn": "хүсэх, бодох",
+   "etymology_mn": "相 + 心 (зүрх): зүрх сэтгэлээр бодож хүснэ",
+   "exampleWords": [
+    "想去",
+    "想吃"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "买",
+   "b": "卖",
+   "word_a": "买东西",
+   "word_b": "卖东西",
+   "mn": "买 — худалдан авах; 卖 — зарах",
+   "tip_mn": "卖 нь 买 дээр 十 нэмсэн. «Авах» нь 买, «зарах» нь 卖: дуудлага mǎi / mài."
+  },
+  {
+   "a": "吃",
+   "b": "喝",
+   "word_a": "吃饭",
+   "word_b": "喝水",
+   "mn": "吃 — идэх; 喝 — уух",
+   "tip_mn": "吃 нь 乞, 喝 нь 曷-тэй. Хоёулаа 口-тэй. Хоол идэх нь 吃, ундаа уух нь 喝."
+  },
+  {
+   "a": "午",
+   "b": "牛",
+   "word_a": "下午",
+   "word_b": "牛奶",
+   "mn": "午 — үд; 牛 — үхэр",
+   "tip_mn": "牛 нь дээр нь цохилт гарсан. 午 нь дээр нь гарахгүй. 牛奶 «үхрийн сүү»."
+  },
+  {
+   "a": "想",
+   "b": "相",
+   "word_a": "我想去",
+   "word_b": "相信",
+   "mn": "想 — хүсэх; 相 — харилцан",
+   "tip_mn": "想 нь 相 дор 心 нэмсэн. «Зүрхээр бодох» гэж санаарай."
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+[
+ {
+  "chinese": "过",
+  "pinyin": "guò",
+  "mongolian": "-ж байсан, -сан удаатай (өнгөрсөн туршлагын нөхцөл)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我去过北京。",
+  "exampleMongolian": "Би Бээжинд очиж үзсэн.",
+  "pos": "сул үг",
+  "collocations_zh": "去过 / 没去过"
+ },
+ {
+  "chinese": "商场",
+  "pinyin": "shāngchǎng",
+  "mongolian": "худалдааны төв",
+  "hskLevel": "HSK2",
+  "exampleChinese": "妈妈去商场买了衣服。",
+  "exampleMongolian": "Ээж худалдааны төвд очиж хувцас авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "去商场"
+ },
+ {
+  "chinese": "进去",
+  "pinyin": "jìnqù",
+  "mongolian": "орох, дотогш ороод очих",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我们进去吧。",
+  "exampleMongolian": "Бид ороод үзье.",
+  "pos": "үйл үг",
+  "collocations_zh": "走进去"
+ },
+ {
+  "chinese": "条",
+  "pinyin": "tiáo",
+  "mongolian": "ширхэг (өмд, загас зэрэг урт нарийн зүйлийн хэмжих үг)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这条裤子多少钱？",
+  "exampleMongolian": "Энэ өмд хэд вэ?",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一条裤子 / 两条鱼"
+ },
+ {
+  "chinese": "裤子",
+  "pinyin": "kùzi",
+  "mongolian": "өмд",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我喜欢这条裤子。",
+  "exampleMongolian": "Би энэ өмдөнд дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "穿裤子 / 一条裤子"
+ },
+ {
+  "chinese": "白色",
+  "pinyin": "báisè",
+  "mongolian": "цагаан өнгө",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你喜欢白色吗？",
+  "exampleMongolian": "Чи цагаан өнгөнд дуртай юу?",
+  "pos": "нэр үг",
+  "collocations_zh": "白色的裤子"
+ },
+ {
+  "chinese": "因为",
+  "pinyin": "yīnwèi",
+  "mongolian": "учир нь, …тул",
+  "hskLevel": "HSK2",
+  "exampleChinese": "她没去学校，因为她生病了。",
+  "exampleMongolian": "Тэр өвчтэй байсан учраас сургуульдаа яваагүй.",
+  "pos": "холбоос",
+  "collocations_zh": "因为……所以……"
+ },
+ {
+  "chinese": "试",
+  "pinyin": "shì",
+  "mongolian": "оролдох, өмсөж үзэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我想试试这条红色的裤子。",
+  "exampleMongolian": "Би энэ улаан өмдийг өмсөж үзмээр байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "试试 / 试衣服"
+ },
+ {
+  "chinese": "红色",
+  "pinyin": "hóngsè",
+  "mongolian": "улаан өнгө",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这件红色的衣服很漂亮。",
+  "exampleMongolian": "Энэ улаан хувцас их хөөрхөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "红色的"
+ },
+ {
+  "chinese": "所以",
+  "pinyin": "suǒyǐ",
+  "mongolian": "тиймээс, тэгэхээр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天下雨，所以我不去运动。",
+  "exampleMongolian": "Өнөөдөр бороо орж байгаа тул би спорт хийхгүй.",
+  "pos": "холбоос",
+  "collocations_zh": "因为……所以……"
+ },
+ {
+  "chinese": "书包",
+  "pinyin": "shūbāo",
+  "mongolian": "сургуулийн цүнх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我想买个新书包。",
+  "exampleMongolian": "Би шинэ цүнх авмаар байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个书包 / 新书包"
+ },
+ {
+  "chinese": "过去",
+  "pinyin": "guòqù",
+  "mongolian": "(тийш) очих, давж очих",
+  "hskLevel": "HSK2",
+  "exampleChinese": "那家商场是新开的，我们过去看看吧。",
+  "exampleMongolian": "Тэр худалдааны төв шинээр нээгдсэн, бид очоод үзье.",
+  "pos": "үйл үг",
+  "collocations_zh": "走过去 / 过去看看"
+ },
+ {
+  "chinese": "绿色",
+  "pinyin": "lǜsè",
+  "mongolian": "ногоон өнгө",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我最喜欢绿色。",
+  "exampleMongolian": "Би ногоон өнгөнд хамгийн их дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "绿色的书包"
+ },
+ {
+  "chinese": "黑色",
+  "pinyin": "hēisè",
+  "mongolian": "хар өнгө",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我喜欢这条黑色的裤子。",
+  "exampleMongolian": "Би энэ хар өмдөнд дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "黑色的"
+ },
+ {
+  "chinese": "更",
+  "pinyin": "gèng",
+  "mongolian": "улам, арай илүү",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你觉得哪个更好看？",
+  "exampleMongolian": "Чамд аль нь илүү хөөрхөн санагдаж байна?",
+  "pos": "дайвар үг",
+  "collocations_zh": "更好看 / 更喜欢"
+ },
+ {
+  "chinese": "颜色",
+  "pinyin": "yánsè",
+  "mongolian": "өнгө",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我不喜欢这个颜色。",
+  "exampleMongolian": "Би энэ өнгөнд дургүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "什么颜色 / 颜色很多"
+ }
+]

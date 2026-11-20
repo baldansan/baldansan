@@ -1,0 +1,36 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l01/l01-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l01/l01-hero.webp",
+   "title": "1-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l01-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l01/l01-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l01/l01-w1.webp",
+   "title": "老师 lǎoshī — багш",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l01/l01-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l01/l01-w2.webp",
+   "title": "学生 xuéshēng — сурагч, оюутан",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l01/l01-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l01/l01-w3.webp",
+   "title": "同学 tóngxué — ангийн найз, хамт сурагч",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

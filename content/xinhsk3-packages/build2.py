@@ -2,11 +2,15 @@
 """lNN_src.py → FLAT lesson package (hsk3-l01-тэй ижил бүтэц). v2: номын яриа/дасгал, дасгалын дэвтэр ерөнхий бүтэцтэй."""
 import json, os, sys, importlib, zipfile, re
 
+sys.path.insert(0, os.getcwd())
 src = importlib.import_module(sys.argv[1])
 OUT = sys.argv[2]
+LEVEL = int(src.COURSE_ID[-1])  # xinhsk1/2/3 → 1/2/3 (нэг build бүх 新HSK教程 түвшинд)
+BOOK = "新HSK教程%d" % LEVEL
+REPO = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 os.makedirs(OUT, exist_ok=True)
 PUNCT = set("，。？！：、；（）“”《》…—")
-SRC_NOTE = "新HSK教程3 (外研社, HSK 3.0) — %d-р хичээл: үг, 课文, дүрэм, дасгал сурах бичиг + 学练手册 + PPT-ээс; монгол орчуулга, тайлбар «Бөөндөө Сурцгаая»" % src.N
+SRC_NOTE = "%s (外研社, HSK 3.0) — %d-р хичээл: үг, 课文, дүрэм, дасгал сурах бичиг + 学练手册 + PPT-ээс; монгол орчуулга, тайлбар «Бөөндөө Сурцгаая»" % (BOOK, src.N)
 SPEAKERS = {"王一雪": "Ван Исюэ", "刘明": "Лю Мин", "刘小雪": "Лю Сяосюэ", "刘小明": "Лю Сяомин", "杨同乐": "Ян Тунлэ", "王一飞": "Ван Ифэй", "白家月": "Бай Цзяюэ", "李文": "Ли Вэнь", "陈天中": "Чэнь Тяньчжун", "安妮": "Анни", "小语": "Сяо Юй", "服务员": "Ажилтан", "医生": "Эмч", "售货员": "Худалдагч", "老师": "Багш"}
 SPEAKERS.update(getattr(src, "SPEAKERS", {}))
 
@@ -81,10 +85,10 @@ def dump(name, obj):
     json.dump(obj, open(os.path.join(OUT, name), "w"), ensure_ascii=False, indent=1)
 
 
-AUDIO_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "public", "xinhsk3-audio", "l%02d" % src.N)
-AUDIO_BASE = "https://surtsgaay.buunduu.mn/xinhsk3-audio/l%02d/" % src.N
+AUDIO_DIR = os.path.join(REPO, "public", "%s-audio" % src.COURSE_ID, "l%02d" % src.N)
+AUDIO_BASE = "https://surtsgaay.buunduu.mn/%s-audio/l%02d/" % (src.COURSE_ID, src.N)
 HAS_AUDIO = os.path.isdir(AUDIO_DIR)
-IMG_MANIFEST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "public", "xinhsk3-images", "l%02d" % src.N, "media.json")
+IMG_MANIFEST = os.path.join(REPO, "public", "%s-images" % src.COURSE_ID, "l%02d" % src.N, "media.json")
 HAS_IMAGES = os.path.exists(IMG_MANIFEST)
 MEDIA = json.load(open(IMG_MANIFEST)) if HAS_IMAGES else None
 
@@ -102,7 +106,7 @@ main = texts[0]
 main["writingSample"] = {"title_mn": src.WRITING["title"], "zh": src.WRITING["zh"], "pinyin": src.WRITING["py"], "mn": src.WRITING["mn"]}
 main["writingPrompt_mn"] = src.WRITING["prompt"]
 
-AS = "textbook (新HSK教程3 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)"
+AS = "textbook (%s 学练手册 · 模拟测练; хариу PPT/хариултын түлхүүр, сонсголын бичвэр аудионоос)" % BOOK
 S_ = src.SAYING
 SAY = {"zh": S_["zh"], "pinyin": S_["pinyin"], "en": S_["en"], "meaning_mn": S_["meaning"], "usage_mn": S_["usage"], "example": {"zh": S_["ex"][0], "pinyin": S_["ex"][1], "mn": S_["ex"][2]}}
 def _parts(lst, start_n):
@@ -184,7 +188,7 @@ dump("workbook.json", {
     "answerSource": AS,
 })
 
-dump("vocabulary.json", [{"chinese": zh, "pinyin": py, "mongolian": mn, "hskLevel": "HSK3",
+dump("vocabulary.json", [{"chinese": zh, "pinyin": py, "mongolian": mn, "hskLevel": "HSK%d" % LEVEL,
                           "exampleChinese": ez, "exampleMongolian": em, "pos": pos, "collocations_zh": col}
                          for zh, py, mn, pos, ez, em, col in src.VOCAB])
 
@@ -219,7 +223,7 @@ dump("characters.json", {
 gram_names = " / ".join(g["point"] for g in src.GRAMMAR)
 dump("lesson.json", {
     "courseId": src.COURSE_ID, "lessonId": src.LESSON_ID,
-    "title": "新HSK 3 · %d-р хичээл — %s" % (src.N, src.TITLE_MN),
+    "title": "新HSK %d · %d-р хичээл — %s" % (LEVEL, src.N, src.TITLE_MN),
     "chineseTitle": src.TITLE_ZH, "targetTitle": src.TITLE_ZH, "mongolianTitle": src.TITLE_MN,
     "subtitle": " · ".join(g["mongolian"].split(" — ")[0] for g in src.GRAMMAR),
     "description": "%d текст + %d шинэ үг + %d дүрэм (%s) + ханз + %d асуулттай сорил" % (len(src.TEXTS), len(src.VOCAB), len(src.GRAMMAR), gram_names, len(src.QUIZ)),
@@ -236,12 +240,12 @@ if MEDIA:
 
 dump("manifest.json", {
     "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1", "courseType": "chinese-hsk",
-    "courseId": src.COURSE_ID, "lessonId": src.LESSON_ID, "hskLevel": 3, "lessonNumber": src.N,
+    "courseId": src.COURSE_ID, "lessonId": src.LESSON_ID, "hskLevel": LEVEL, "lessonNumber": src.N,
     "lessonProfile": "hsk3-dialogue-reading-writing-review", "lessonType": "hsk3-dialogue-reading-writing-review",
     "language": "zh-MN", "targetLanguage": "zh", "uiLanguage": "mn",
     "title": src.TITLE_ZH, "mongolianTitle": src.TITLE_MN, "source": SRC_NOTE,
     "hasAudio": HAS_AUDIO, "hasImages": HAS_IMAGES,
-    "verification": {"answerStatus": "textbook+ppt (OCR; хүн шалгаагүй)", "textStatus": "textbook (新HSK教程3 课文, OCR)"},
+    "verification": {"answerStatus": "textbook+ppt (OCR; хүн шалгаагүй)", "textStatus": "textbook (%s 课文, OCR)" % BOOK},
 })
 
 # шалгалт: бүх шинэ үг яриануудад гарсан уу

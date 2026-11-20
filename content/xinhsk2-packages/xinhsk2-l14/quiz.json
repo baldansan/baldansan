@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "别________着了，快请坐。",
+  "options": [
+   "跳",
+   "姓",
+   "过",
+   "站"
+  ],
+  "correct_answer": "站",
+  "explanation": "«Зогсоод бүү бай, суу» — 别站着了.",
+  "order_index": 1,
+  "id": "xinhsk2-l14-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我把________放在桌子上了。",
+  "options": [
+   "眼睛",
+   "前面",
+   "包",
+   "站"
+  ],
+  "correct_answer": "包",
+  "explanation": "«Цүнхээ ширээн дээр тавьсан» — 包.",
+  "order_index": 2,
+  "id": "xinhsk2-l14-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "孩子们最喜欢________了。",
+  "options": [
+   "前面",
+   "过年",
+   "跳舞",
+   "没意思"
+  ],
+  "correct_answer": "过年",
+  "explanation": "«Хүүхдүүд шинэ жилд хамгийн их дуртай» — 过年.",
+  "order_index": 3,
+  "id": "xinhsk2-l14-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我觉得看电视________。",
+  "options": [
+   "没意思",
+   "过年",
+   "跳舞",
+   "前面"
+  ],
+  "correct_answer": "没意思",
+  "explanation": "«Зурагт үзэх уйтгартай» — 没意思.",
+  "order_index": 4,
+  "id": "xinhsk2-l14-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这________是我的中文老师。",
+  "options": [
+   "站",
+   "包",
+   "姓",
+   "位"
+  ],
+  "correct_answer": "位",
+  "explanation": "«Энэ хүн бол хятад хэлний багш» — 这位.",
+  "order_index": 5,
+  "id": "xinhsk2-l14-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "超市在学校________。",
+  "options": [
+   "跳舞",
+   "房子",
+   "前面",
+   "眼睛"
+  ],
+  "correct_answer": "前面",
+  "explanation": "«Супермаркет сургуулийн урд» — 在…前面.",
+  "order_index": 6,
+  "id": "xinhsk2-l14-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的老师________王。",
+  "options": [
+   "站",
+   "姓",
+   "叫",
+   "是"
+  ],
+  "correct_answer": "姓",
+  "explanation": "«Багшийн овог Ван» — 姓王.",
+  "order_index": 7,
+  "id": "xinhsk2-l14-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她的________很漂亮。",
+  "options": [
+   "眼睛",
+   "跳舞",
+   "房子",
+   "过年"
+  ],
+  "correct_answer": "眼睛",
+  "explanation": "«Түүний нүд үзэсгэлэнтэй» — 眼睛.",
+  "order_index": 8,
+  "id": "xinhsk2-l14-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我很喜欢________，但是跳得不好。",
+  "options": [
+   "过年",
+   "没意思",
+   "前面",
+   "跳舞"
+  ],
+  "correct_answer": "跳舞",
+  "explanation": "«Бүжиглэх их дуртай» — 喜欢跳舞.",
+  "order_index": 9,
+  "id": "xinhsk2-l14-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "公园里有很多________。",
+  "options": [
+   "眼睛",
+   "前面",
+   "小孩儿",
+   "房子"
+  ],
+  "correct_answer": "小孩儿",
+  "explanation": "«Цэцэрлэгт олон хүүхэд байна» — 小孩儿.",
+  "order_index": 10,
+  "id": "xinhsk2-l14-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你家楼下站着一个人。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Таны байранд хүн байхгүй.",
+   "Таны байрны доор нэг хүн зогсож байна.",
+   "Та нэг хүнийг байрны доор зогсоосон.",
+   "Таны байр нэг хүнд зогсож байна."
+  ],
+  "correct_answer": "Таны байрны доор нэг хүн зогсож байна.",
+  "explanation": "Газар + 站着 + хүн — 存现句.",
+  "order_index": 11,
+  "id": "xinhsk2-l14-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l14-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "教室里坐着很多学生。",
+   "教室里坐很多学生着。",
+   "教室坐着里很多学生。",
+   "着教室里坐很多学生。"
+  ],
+  "correct_answer": "教室里坐着很多学生。",
+  "explanation": "着 нь үйл үгийн шууд ард орно.",
+  "order_index": 12,
+  "id": "xinhsk2-l14-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ширээн дээр нэг ном тавьсан байна» — аль нь зөв бэ?",
+  "options": [
+   "一本书放着桌子上。",
+   "桌子上一本书放着。",
+   "放着桌子上一本书。",
+   "桌子上放着一本书。"
+  ],
+  "correct_answer": "桌子上放着一本书。",
+  "explanation": "Газар + 放着 + юм.",
+  "order_index": 13,
+  "id": "xinhsk2-l14-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你一个人在这儿多没意思啊！» — 多 ямар утгатай вэ?",
+  "options": [
+   "илүү",
+   "хэд",
+   "«ямар … юм бэ!» (ихэд онцлох)",
+   "олон"
+  ],
+  "correct_answer": "«ямар … юм бэ!» (ихэд онцлох)",
+  "explanation": "多 + тэмдэг нэр + 啊 — уянгын өгүүлбэр.",
+  "order_index": 14,
+  "id": "xinhsk2-l14-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«________啊！买这件吧。» — хоосон зайд аль нь тохирох вэ?",
+  "options": [
+   "多好看吗",
+   "多好看",
+   "很好看",
+   "好看多"
+  ],
+  "correct_answer": "多好看",
+  "explanation": "多 + тэмдэг нэр + 啊.",
+  "order_index": 15,
+  "id": "xinhsk2-l14-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«她经常跑上来找我玩。» дахь 上来 юуг хэлж байна вэ?",
+  "options": [
+   "Дээш, ярьж буй хүн рүү гүйж ирэх",
+   "Доош гүйж явах",
+   "Гадагш гарах",
+   "Буцаж ирэх"
+  ],
+  "correct_answer": "Дээш, ярьж буй хүн рүү гүйж ирэх",
+  "explanation": "上 = дээш, 来 = надруу ойртох.",
+  "order_index": 16,
+  "id": "xinhsk2-l14-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэд хичээлийн өрөөнөөс гарч явлаа» — аль нь зөв бэ?",
+  "options": [
+   "他们走出去教室了。",
+   "他们走教室出去了。",
+   "他们教室走出去了。",
+   "他们走出教室去了。"
+  ],
+  "correct_answer": "他们走出教室去了。",
+  "explanation": "Газрын нэр 来/去-ийн өмнө орно.",
+  "order_index": 17,
+  "id": "xinhsk2-l14-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l14-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ээж надад зарим хүнсний зүйлийг худалдаж ирэхийг хэлсэн» — аль нь зөв бэ?",
+  "options": [
+   "妈妈让我回买一些菜来。",
+   "妈妈让我买一些菜回来来。",
+   "妈妈让我买回一些菜来。",
+   "妈妈让我买回菜一些来。"
+  ],
+  "correct_answer": "妈妈让我买回一些菜来。",
+  "explanation": "Юмны нэр 来-ийн өмнө ч, ард ч орж болно.",
+  "order_index": 18,
+  "id": "xinhsk2-l14-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l14-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文看见哪儿有一个人？",
+  "options": [
+   "学校前面",
+   "王一飞家楼下",
+   "教室外面",
+   "王一飞家里"
+  ],
+  "correct_answer": "王一飞家楼下",
+  "explanation": "«你家楼下站着一个人».",
+  "order_index": 19,
+  "id": "xinhsk2-l14-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：那个人手里拿着什么？",
+  "options": [
+   "黑色的包",
+   "黑色的裤子",
+   "黑色的本子",
+   "咖啡"
+  ],
+  "correct_answer": "黑色的包",
+  "explanation": "«手里还拿着一个黑色的包».",
+  "order_index": 20,
+  "id": "xinhsk2-l14-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐为什么来找王一飞？",
+  "options": [
+   "来见她的朋友",
+   "送给她新年礼物",
+   "学中文",
+   "跟她一起过年"
+  ],
+  "correct_answer": "跟她一起过年",
+  "explanation": "«就要过年了…所以我就早早过来了».",
+  "order_index": 21,
+  "id": "xinhsk2-l14-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文住在哪儿？",
+  "options": [
+   "旁边那个楼",
+   "学校里",
+   "前面那个楼",
+   "这个楼"
+  ],
+  "correct_answer": "前面那个楼",
+  "explanation": "«我家就在前面那个楼».",
+  "order_index": 22,
+  "id": "xinhsk2-l14-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一飞的房子怎么样？",
+  "options": [
+   "太小",
+   "很不错",
+   "不太大",
+   "离学校不近"
+  ],
+  "correct_answer": "很不错",
+  "explanation": "«你住的房子真不错，很大，离学校也不远».",
+  "order_index": 23,
+  "id": "xinhsk2-l14-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一飞教楼下的小孩儿做什么？",
+  "options": [
+   "学中文",
+   "打篮球",
+   "做中国菜",
+   "跳舞"
+  ],
+  "correct_answer": "学中文",
+  "explanation": "«我也帮他们家的小孩儿学中文».",
+  "order_index": 24,
+  "id": "xinhsk2-l14-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：杨同乐跟谁一起工作？",
+  "options": [
+   "王一飞",
+   "王一飞的朋友",
+   "李文",
+   "王一飞的姐姐"
+  ],
+  "correct_answer": "王一飞的姐姐",
+  "explanation": "«他和我姐姐一起工作».",
+  "order_index": 25,
+  "id": "xinhsk2-l14-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

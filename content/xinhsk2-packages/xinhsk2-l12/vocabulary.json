@@ -1,0 +1,112 @@
+[
+ {
+  "chinese": "事情",
+  "pinyin": "shìqing",
+  "mongolian": "ажил хэрэг, юм явдал",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你有什么事情要告诉我吗？",
+  "exampleMongolian": "Чи надад хэлэх юм байна уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "一件事情 / 有事情"
+ },
+ {
+  "chinese": "晴",
+  "pinyin": "qíng",
+  "mongolian": "нарлаг, цэлмэг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "天晴了，我们出去玩吧。",
+  "exampleMongolian": "Цэлмэг болчихлоо, гадаа гарч тоглоцгооё.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "晴天 / 大晴天"
+ },
+ {
+  "chinese": "正",
+  "pinyin": "zhèng",
+  "mongolian": "яг одоо (үйлдэл өрнөж, байдал үргэлжилж буйг заана)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我正给他打电话呢。",
+  "exampleMongolian": "Би яг одоо түүнд залгаж байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "正在打电话 / 正下着雪"
+ },
+ {
+  "chinese": "外面",
+  "pinyin": "wàimiàn",
+  "mongolian": "гадаа",
+  "hskLevel": "HSK2",
+  "exampleChinese": "外面下雨了，不要出去。",
+  "exampleMongolian": "Гадаа бороо орж байна, битгий гар.",
+  "pos": "нэр үг",
+  "collocations_zh": "去外面 / 外面很冷"
+ },
+ {
+  "chinese": "阴",
+  "pinyin": "yīn",
+  "mongolian": "үүлэрхэг, бүрхэг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "外面很阴，没有太阳。",
+  "exampleMongolian": "Гадаа үүлэрхэг, нар байхгүй байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "阴天 / 很阴"
+ },
+ {
+  "chinese": "从小",
+  "pinyin": "cóngxiǎo",
+  "mongolian": "багаасаа",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他从小就很聪明。",
+  "exampleMongolian": "Тэр багаасаа маш ухаалаг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "从小就… / 从小喜欢"
+ },
+ {
+  "chinese": "地铁",
+  "pinyin": "dìtiě",
+  "mongolian": "метро",
+  "hskLevel": "HSK2",
+  "exampleChinese": "从这儿去天安门，坐地铁要二十分钟。",
+  "exampleMongolian": "Эндээс Тяньаньмэнь хүрэхэд метроор хорин минут болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "坐地铁 / 地铁站"
+ },
+ {
+  "chinese": "楼",
+  "pinyin": "lóu",
+  "mongolian": "барилга, байшин, давхар",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我在楼下等你。",
+  "exampleMongolian": "Би доор чамайг хүлээж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "高楼 / 楼下 / 下楼"
+ },
+ {
+  "chinese": "站",
+  "pinyin": "zhàn",
+  "mongolian": "буудал, зогсоол",
+  "hskLevel": "HSK2",
+  "exampleChinese": "从这里到学校要坐三站地铁。",
+  "exampleMongolian": "Эндээс сургууль хүртэл метроор гурван буудал явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "公交站 / 地铁站 / 三站"
+ },
+ {
+  "chinese": "小时候",
+  "pinyin": "xiǎoshíhou",
+  "mongolian": "багадаа, бага насандаа",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他小时候住在北京。",
+  "exampleMongolian": "Тэр багадаа Бээжинд амьдарч байсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "小时候 / 我小时候"
+ },
+ {
+  "chinese": "好",
+  "pinyin": "hǎo",
+  "mongolian": "маш, ямар их (сэтгэл хөдлөлийг илэрхийлж «маш» гэсэн утгатай)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我好喜欢中国菜。",
+  "exampleMongolian": "Би Хятад хоолонд маш их дуртай.",
+  "pos": "дайвар үг",
+  "collocations_zh": "好高兴 / 好甜"
+ }
+]

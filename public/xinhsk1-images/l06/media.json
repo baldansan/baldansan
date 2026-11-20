@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-hero.webp",
+   "title": "6-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l06-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w1.webp",
+   "title": "手机 shǒujī — гар утас",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w2.webp",
+   "title": "电话 diànhuà — утас; утасны дуудлага",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w3.webp",
+   "title": "超市 chāoshì — супермаркет, их дэлгүүр",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w4.webp",
+   "title": "东西 dōngxi — юм, зүйл, бараа",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l06-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l06/l06-w5.webp",
+   "title": "号 hào — дугаар",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+[
+ {
+  "chinese": "快",
+  "pinyin": "kuài",
+  "mongolian": "хурдан; хурдлаарай",
+  "hskLevel": "HSK2",
+  "exampleChinese": "不早了，快起床吧。",
+  "exampleMongolian": "Эртдэхгүй боллоо, хурдан бос.",
+  "pos": "дайвар үг / тэмдэг нэр",
+  "collocations_zh": "很快 / 不快"
+ },
+ {
+  "chinese": "下来",
+  "pinyin": "xiàlái",
+  "mongolian": "доош ирэх, буух",
+  "hskLevel": "HSK2",
+  "exampleChinese": "不早了，快下来吧。",
+  "exampleMongolian": "Эртдэхгүй боллоо, хурдан буу.",
+  "pos": "үйл үг",
+  "collocations_zh": "下来了 / 快下来"
+ },
+ {
+  "chinese": "上来",
+  "pinyin": "shànglái",
+  "mongolian": "дээш ирэх, гарч ирэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你可以上来帮个忙吗？",
+  "exampleMongolian": "Чи дээш гарч ирээд тусалж болох уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "上来一下 / 快上来"
+ },
+ {
+  "chinese": "上去",
+  "pinyin": "shàngqù",
+  "mongolian": "дээш явах, гарах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你快上去找他。",
+  "exampleMongolian": "Чи хурдан дээш гараад түүнийг ол.",
+  "pos": "үйл үг",
+  "collocations_zh": "马上上去 / 快上去"
+ },
+ {
+  "chinese": "下面",
+  "pinyin": "xiàmiàn",
+  "mongolian": "доор, доод тал",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我有点儿累，就在下面等你。",
+  "exampleMongolian": "Би жаахан ядарсан, доор чамайг хүлээе.",
+  "pos": "нэр үг",
+  "collocations_zh": "桌子下面 / 在下面"
+ },
+ {
+  "chinese": "面",
+  "pinyin": "miàn",
+  "mongolian": "тал, хэсэг (чиглэл заасан нэрийн дагавар)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "桌子上面有什么？",
+  "exampleMongolian": "Ширээн дээр юу байна?",
+  "pos": "дагавар",
+  "collocations_zh": "上面 / 下面"
+ },
+ {
+  "chinese": "等",
+  "pinyin": "děng",
+  "mongolian": "хүлээх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你在等谁？",
+  "exampleMongolian": "Чи хэнийг хүлээж байна?",
+  "pos": "үйл үг",
+  "collocations_zh": "等人 / 等车"
+ },
+ {
+  "chinese": "一会儿",
+  "pinyin": "yíhuìr",
+  "mongolian": "жаахан хугацаа; удахгүй",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我一会儿就回来。",
+  "exampleMongolian": "Би удахгүй буцаж ирнэ.",
+  "pos": "тоо-хэмжих үг",
+  "collocations_zh": "一会儿就 / 一会儿再"
+ },
+ {
+  "chinese": "下去",
+  "pinyin": "xiàqù",
+  "mongolian": "доош явах, буух",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你先下去，我马上就来。",
+  "exampleMongolian": "Чи түрүүлээд бууж байгаарай, би яг одоо очино.",
+  "pos": "үйл үг",
+  "collocations_zh": "走下去 / 下去看看"
+ },
+ {
+  "chinese": "进来",
+  "pinyin": "jìnlái",
+  "mongolian": "дотогш орж ирэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "不早了，快进来吧。",
+  "exampleMongolian": "Эртдэхгүй боллоо, хурдан орж ир.",
+  "pos": "үйл үг",
+  "collocations_zh": "请进来 / 快进来"
+ },
+ {
+  "chinese": "爷爷",
+  "pinyin": "yéye",
+  "mongolian": "өвөө (аавын аав)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我爷爷很高。",
+  "exampleMongolian": "Миний өвөө өндөр.",
+  "pos": "нэр үг",
+  "collocations_zh": "我爷爷 / 刘爷爷"
+ },
+ {
+  "chinese": "奶奶",
+  "pinyin": "nǎinai",
+  "mongolian": "эмээ (аавын ээж)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "奶奶喜欢红色的衣服。",
+  "exampleMongolian": "Эмээ улаан хувцсанд дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "我奶奶 / 爷爷奶奶"
+ },
+ {
+  "chinese": "礼物",
+  "pinyin": "lǐwù",
+  "mongolian": "бэлэг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我很喜欢你送我的礼物。",
+  "exampleMongolian": "Чиний надад өгсөн бэлэгт би их дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "送礼物 / 生日礼物"
+ },
+ {
+  "chinese": "准备",
+  "pinyin": "zhǔnbèi",
+  "mongolian": "бэлдэх, бэлтгэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你准备一下，我们九点走。",
+  "exampleMongolian": "Чи бэлдээрэй, бид есөн цагт гарна.",
+  "pos": "үйл үг",
+  "collocations_zh": "准备礼物 / 准备考试"
+ },
+ {
+  "chinese": "奶茶",
+  "pinyin": "nǎichá",
+  "mongolian": "сүүтэй цай",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我喜欢喝奶茶。",
+  "exampleMongolian": "Би сүүтэй цай уух дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "喝奶茶 / 一杯奶茶"
+ },
+ {
+  "chinese": "跟",
+  "pinyin": "gēn",
+  "mongolian": "-тай хамт; ба",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你跟她坐一起吧。",
+  "exampleMongolian": "Чи түүнтэй хамт суугаарай.",
+  "pos": "угтвар үг / холбоос",
+  "collocations_zh": "跟我去 / 跟他说"
+ },
+ {
+  "chinese": "走",
+  "pinyin": "zǒu",
+  "mongolian": "алхах; явах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "酒店很近，我们走回去吧。",
+  "exampleMongolian": "Зочид буудал ойрхон, бид алхаж буцъя.",
+  "pos": "үйл үг",
+  "collocations_zh": "走回去 / 快走"
+ },
+ {
+  "chinese": "酒店",
+  "pinyin": "jiǔdiàn",
+  "mongolian": "зочид буудал",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他住在酒店还是朋友家？",
+  "exampleMongolian": "Тэр зочид буудалд байгаа юу, найзынхаа гэрт байгаа юу?",
+  "pos": "нэр үг",
+  "collocations_zh": "住酒店 / 去酒店"
+ }
+]

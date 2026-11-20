@@ -1,0 +1,142 @@
+[
+ {
+  "chinese": "生日",
+  "pinyin": "shēngrì",
+  "mongolian": "төрсөн өдөр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "爸爸给小雪买了个生日蛋糕。",
+  "exampleMongolian": "Аав Сяосюэд төрсөн өдрийн бялуу авч өгсөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "生日蛋糕 / 生日快乐"
+ },
+ {
+  "chinese": "忘",
+  "pinyin": "wàng",
+  "mongolian": "март, мартах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "妈妈每年都不忘给我买生日礼物。",
+  "exampleMongolian": "Ээж жил бүр надад төрсөн өдрийн бэлэг авч өгөхөө мартдаггүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "忘了 / 不忘"
+ },
+ {
+  "chinese": "画",
+  "pinyin": "huà",
+  "mongolian": "зурах; зураг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我喜欢画画。",
+  "exampleMongolian": "Би зурах дуртай.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "画画"
+ },
+ {
+  "chinese": "画笔",
+  "pinyin": "huàbǐ",
+  "mongolian": "өнгөт үзэг, зургийн үзэг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我有很多画笔。",
+  "exampleMongolian": "Надад олон өнгөт үзэг бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "送画笔 / 一盒画笔"
+ },
+ {
+  "chinese": "蛋糕",
+  "pinyin": "dàngāo",
+  "mongolian": "бялуу",
+  "hskLevel": "HSK2",
+  "exampleChinese": "朋友给我买了一块蛋糕。我喜欢吃蛋糕。",
+  "exampleMongolian": "Найз надад нэг зүсэм бялуу авч өгсөн. Би бялуу идэх дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "一块蛋糕 / 生日蛋糕"
+ },
+ {
+  "chinese": "快乐",
+  "pinyin": "kuàilè",
+  "mongolian": "баяр хөөртэй, жаргалтай",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他每天都很快乐。",
+  "exampleMongolian": "Тэр өдөр бүр баяр хөөртэй байдаг.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很快乐 / 不快乐 / 生日快乐"
+ },
+ {
+  "chinese": "打开",
+  "pinyin": "dǎkāi",
+  "mongolian": "нээх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "打开看看，你喜欢这个礼物吗？",
+  "exampleMongolian": "Нээгээд хараач, энэ бэлэг чамд таалагдаж байна уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "打开礼物 / 打开看看"
+ },
+ {
+  "chinese": "长",
+  "pinyin": "cháng",
+  "mongolian": "урт",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我跑步的时间不长。",
+  "exampleMongolian": "Би гүйх хугацаа богино.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很长 / 时间长"
+ },
+ {
+  "chinese": "鱼",
+  "pinyin": "yú",
+  "mongolian": "загас",
+  "hskLevel": "HSK2",
+  "exampleChinese": "哥哥非常喜欢吃鱼。",
+  "exampleMongolian": "Ах загас идэх их дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "一条鱼 / 吃鱼"
+ },
+ {
+  "chinese": "肉",
+  "pinyin": "ròu",
+  "mongolian": "мах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天妈妈买了很多肉。",
+  "exampleMongolian": "Өнөөдөр ээж маш их мах авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃肉 / 鸡肉"
+ },
+ {
+  "chinese": "过",
+  "pinyin": "guò",
+  "mongolian": "(өдөр, баяр) тэмдэглэх, өнгөрөөх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "爸爸、妈妈和弟弟一起和我过生日。",
+  "exampleMongolian": "Аав, ээж, дүү хамт надтай төрсөн өдрөө тэмдэглэсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "过生日"
+ },
+ {
+  "chinese": "地",
+  "pinyin": "de",
+  "mongolian": "үйл үгийн өмнө байдал заадаг сул үг («-аар, -тай»)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "小朋友高兴地笑了。",
+  "exampleMongolian": "Хүүхэд баярлан инээв.",
+  "pos": "бүтцийн сул үг",
+  "collocations_zh": "高兴地笑 / 舒舒服服地睡"
+ },
+ {
+  "chinese": "床",
+  "pinyin": "chuáng",
+  "mongolian": "ор",
+  "hskLevel": "HSK2",
+  "exampleChinese": "妈妈正在床上睡觉。",
+  "exampleMongolian": "Ээж орон дээр унтаж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "床上 / 一张床"
+ },
+ {
+  "chinese": "舒服",
+  "pinyin": "shūfu",
+  "mongolian": "тухтай, эвтэйхэн",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我太累了，想舒舒服服睡一觉。",
+  "exampleMongolian": "Би маш ядарсан, тухтай нойртой болмоор байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "舒舒服服 / 很舒服"
+ }
+]

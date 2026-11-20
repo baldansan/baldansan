@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "他今天头________，所以没来上课。",
+  "options": [
+   "慢",
+   "药",
+   "最",
+   "疼"
+  ],
+  "correct_answer": "疼",
+  "explanation": "«Тэр толгой өвдөөд хичээлдээ ирсэнгүй» — 头疼.",
+  "order_index": 1,
+  "id": "xinhsk2-l11-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你不要________，我帮你拍照。",
+  "options": [
+   "疼",
+   "慢",
+   "动",
+   "进"
+  ],
+  "correct_answer": "动",
+  "explanation": "«Битгий хөдөлөөрэй, зургийг чинь авъя» — 不要动.",
+  "order_index": 2,
+  "id": "xinhsk2-l11-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们________一起去公园玩。",
+  "options": [
+   "慢",
+   "经常",
+   "最",
+   "时"
+  ],
+  "correct_answer": "经常",
+  "explanation": "«Бид байнга хамт хүрээлэнд тоглохоор явдаг» — 经常.",
+  "order_index": 3,
+  "id": "xinhsk2-l11-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你走得真________，火车要开了。",
+  "options": [
+   "慢",
+   "疼",
+   "药",
+   "进"
+  ],
+  "correct_answer": "慢",
+  "explanation": "«Чи үнэхээр удаан алхаж байна, галт тэрэг хөдлөх гэж байна» — 走得慢.",
+  "order_index": 4,
+  "id": "xinhsk2-l11-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请________来吧，门没关。",
+  "options": [
+   "动",
+   "最",
+   "时",
+   "进"
+  ],
+  "correct_answer": "进",
+  "explanation": "«Ороод ирээрэй, хаалга хаагаагүй» — 进来.",
+  "order_index": 5,
+  "id": "xinhsk2-l11-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你今天吃过________了吗？",
+  "options": [
+   "路",
+   "店",
+   "药",
+   "头"
+  ],
+  "correct_answer": "药",
+  "explanation": "«Чи өнөөдөр эм уусан уу?» — 吃药.",
+  "order_index": 6,
+  "id": "xinhsk2-l11-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你妈妈________怎么样了？",
+  "options": [
+   "时",
+   "身体",
+   "路上",
+   "药店"
+  ],
+  "correct_answer": "身体",
+  "explanation": "«Ээж чинь эрүүл мэнд нь ямар байна?» — 身体怎么样.",
+  "order_index": 7,
+  "id": "xinhsk2-l11-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "今天是今年________热的一天。",
+  "options": [
+   "最",
+   "时",
+   "慢",
+   "着"
+  ],
+  "correct_answer": "最",
+  "explanation": "«Энэ жилийн хамгийн халуун өдөр» — 最热.",
+  "order_index": 8,
+  "id": "xinhsk2-l11-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈让我去________买药。",
+  "options": [
+   "路上",
+   "身体",
+   "经常",
+   "药店"
+  ],
+  "correct_answer": "药店",
+  "explanation": "«Ээж намайг эмийн санд эм авахаар явуулсан» — 去药店买药.",
+  "order_index": 9,
+  "id": "xinhsk2-l11-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我回家________妈妈正在做饭。",
+  "options": [
+   "着",
+   "进",
+   "时",
+   "最"
+  ],
+  "correct_answer": "时",
+  "explanation": "«Би гэртээ ирэхэд ээж хоол хийж байсан» — 回家时.",
+  "order_index": 10,
+  "id": "xinhsk2-l11-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«教室的门开着。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Ангийн хаалга нээгдэхгүй.",
+   "Ангийн хаалга онгорхой байна.",
+   "Ангийн хаалга хаалттай.",
+   "Ангийн хаалгыг нээлээ."
+  ],
+  "correct_answer": "Ангийн хаалга онгорхой байна.",
+  "explanation": "开着 — онгорхой байх төлөв.",
+  "order_index": 11,
+  "id": "xinhsk2-l11-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l11-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "教室的门没开着。",
+   "教室的门不开着了。",
+   "教室的门没着开。",
+   "教室的门开没着。"
+  ],
+  "correct_answer": "教室的门没开着。",
+  "explanation": "Сөрөг нь 没 + үйл үг + 着.",
+  "order_index": 12,
+  "id": "xinhsk2-l11-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«现在路上车多，还下着雪。» дахь 着 юу илэрхийлж байна вэ?",
+  "options": [
+   "Үйлдэл дууссаныг",
+   "Ирээдүйн төлөвлөгөөг",
+   "Асуултыг",
+   "Үйлдэл үргэлжилж байгааг"
+  ],
+  "correct_answer": "Үйлдэл үргэлжилж байгааг",
+  "explanation": "着 нь үйлдэл үргэлжилж байгааг заана.",
+  "order_index": 13,
+  "id": "xinhsk2-l11-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l11-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр цагаан өмд өмссөн байна» — аль нь зөв бэ?",
+  "options": [
+   "她着穿白色的裤子。",
+   "她穿了着白色的裤子。",
+   "她穿着白色的裤子。",
+   "她穿白色的裤子着。"
+  ],
+  "correct_answer": "她穿着白色的裤子。",
+  "explanation": "Тусагдахуун 着-ийн ард орно.",
+  "order_index": 14,
+  "id": "xinhsk2-l11-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр утсаа барьж байна уу?» гэдгийг 动+没+动+着-аар асуувал:",
+  "options": [
+   "她拿手机没拿着？",
+   "她拿没拿着手机？",
+   "她没拿着拿手机？",
+   "她拿着没手机？"
+  ],
+  "correct_answer": "她拿没拿着手机？",
+  "explanation": "拿 + 没 + 拿着.",
+  "order_index": 15,
+  "id": "xinhsk2-l11-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l11-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你最喜欢吃中国菜。» дахь 最 ямар утгатай вэ?",
+  "options": [
+   "хамгийн",
+   "арай",
+   "дахин",
+   "бас"
+  ],
+  "correct_answer": "хамгийн",
+  "explanation": "最 нь дээд зэргийн дайвар үг.",
+  "order_index": 16,
+  "id": "xinhsk2-l11-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l11-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "在我们家，爸爸很最高。",
+   "在我们家，爸爸高最。",
+   "在我们家，最爸爸高。",
+   "在我们家，爸爸最高。"
+  ],
+  "correct_answer": "在我们家，爸爸最高。",
+  "explanation": "最 + тэмдэг нэр, 很-тэй хамт орохгүй.",
+  "order_index": 17,
+  "id": "xinhsk2-l11-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр миний хамгийн сайн найз» — аль нь зөв бэ?",
+  "options": [
+   "他是我好最的朋友。",
+   "他最是我好的朋友。",
+   "他是我最好的朋友。",
+   "他是我很最好的朋友。"
+  ],
+  "correct_answer": "他是我最好的朋友。",
+  "explanation": "最好 + 的 + нэр үг.",
+  "order_index": 18,
+  "id": "xinhsk2-l11-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月为什么没有回家？",
+  "options": [
+   "她要去药店",
+   "她头疼，不太舒服",
+   "她在等李文",
+   "她想学习"
+  ],
+  "correct_answer": "她头疼，不太舒服",
+  "explanation": "«我头疼，不太舒服».",
+  "order_index": 19,
+  "id": "xinhsk2-l11-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一飞去做什么？",
+  "options": [
+   "开车",
+   "回家",
+   "找医生",
+   "买药"
+  ],
+  "correct_answer": "开车",
+  "explanation": "«我去开车，一会儿送你去医院».",
+  "order_index": 20,
+  "id": "xinhsk2-l11-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：今天天气怎么样？",
+  "options": [
+   "下雨",
+   "很热",
+   "有风",
+   "下雪"
+  ],
+  "correct_answer": "下雪",
+  "explanation": "«还下着雪».",
+  "order_index": 21,
+  "id": "xinhsk2-l11-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：谁来电话了？",
+  "options": [
+   "安妮",
+   "王一雪",
+   "李文",
+   "陈天中"
+  ],
+  "correct_answer": "李文",
+  "explanation": "«李文来电话了».",
+  "order_index": 22,
+  "id": "xinhsk2-l11-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：医生给白家月开了什么？",
+  "options": [
+   "茶",
+   "药",
+   "菜",
+   "水果"
+  ],
+  "correct_answer": "药",
+  "explanation": "«医生开了一些药».",
+  "order_index": 23,
+  "id": "xinhsk2-l11-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一飞要做什么菜？",
+  "options": [
+   "中国菜",
+   "西红柿",
+   "面包",
+   "蛋糕"
+  ],
+  "correct_answer": "中国菜",
+  "explanation": "«你最喜欢吃中国菜，我做几个中国菜吧».",
+  "order_index": 24,
+  "id": "xinhsk2-l11-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：白家月是在哪儿买的药？",
+  "options": [
+   "医院",
+   "商店",
+   "学校",
+   "药店"
+  ],
+  "correct_answer": "药店",
+  "explanation": "«从药店买了点儿药».",
+  "order_index": 25,
+  "id": "xinhsk2-l11-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

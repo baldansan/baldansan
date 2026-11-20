@@ -1,0 +1,142 @@
+[
+ {
+  "chinese": "开学",
+  "pinyin": "kāixué",
+  "mongolian": "хичээл эхлэх, шинэ жил эхлэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我明天开学。",
+  "exampleMongolian": "Би маргааш хичээлээ эхэлнэ.",
+  "pos": "үйл үг",
+  "collocations_zh": "开学时间 / 就要开学了"
+ },
+ {
+  "chinese": "门",
+  "pinyin": "mén",
+  "mongolian": "хаалга",
+  "hskLevel": "HSK2",
+  "exampleChinese": "让我来开门吧！",
+  "exampleMongolian": "Би хаалгыг нээе!",
+  "pos": "нэр үг",
+  "collocations_zh": "开门 / 车门 / 出门"
+ },
+ {
+  "chinese": "后面",
+  "pinyin": "hòumiàn",
+  "mongolian": "хойд тал, ард",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我家后面有一家超市。",
+  "exampleMongolian": "Манай гэрийн ард нэг супермаркет бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "门后面 / 教室后面"
+ },
+ {
+  "chinese": "笔",
+  "pinyin": "bǐ",
+  "mongolian": "үзэг, харандаа",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他送给我一支笔。",
+  "exampleMongolian": "Тэр надад нэг үзэг бэлэглэсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "一支笔"
+ },
+ {
+  "chinese": "帮",
+  "pinyin": "bāng",
+  "mongolian": "туслах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你能帮我拿一下书包吗？",
+  "exampleMongolian": "Чи надад цүнхийг барьж өгч чадах уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "帮我 / 帮忙"
+ },
+ {
+  "chinese": "考试",
+  "pinyin": "kǎoshì",
+  "mongolian": "шалгалт өгөх; шалгалт",
+  "hskLevel": "HSK2",
+  "exampleChinese": "星期一要考试。",
+  "exampleMongolian": "Даваа гарагт шалгалт болно.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "中文考试 / 考试题"
+ },
+ {
+  "chinese": "词",
+  "pinyin": "cí",
+  "mongolian": "үг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我今天学了十个词。",
+  "exampleMongolian": "Би өнөөдөр арван үг сурлаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "词语 / 词汇"
+ },
+ {
+  "chinese": "本子",
+  "pinyin": "běnzi",
+  "mongolian": "дэвтэр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这是我的本子。",
+  "exampleMongolian": "Энэ бол миний дэвтэр.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个本子"
+ },
+ {
+  "chinese": "错",
+  "pinyin": "cuò",
+  "mongolian": "буруу, алдаатай",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这个字写错了，你再看看书。",
+  "exampleMongolian": "Энэ ханзыг буруу бичжээ, дахиад ном харж үз.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "写错 / 看错 / 错题"
+ },
+ {
+  "chinese": "题",
+  "pinyin": "tí",
+  "mongolian": "асуулт, бодлого",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这道题我做错了。",
+  "exampleMongolian": "Энэ бодлогыг би буруу бодсон.",
+  "pos": "нэр үг",
+  "collocations_zh": "一道题 / 第三题"
+ },
+ {
+  "chinese": "还是",
+  "pinyin": "háishi",
+  "mongolian": "эсвэл (асуултад сонголт заана)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你喝茶还是咖啡？",
+  "exampleMongolian": "Чи цай уух уу, кофе уух уу?",
+  "pos": "холбоос",
+  "collocations_zh": "A还是B"
+ },
+ {
+  "chinese": "考",
+  "pinyin": "kǎo",
+  "mongolian": "шалгалт өгөх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天我们考中文。",
+  "exampleMongolian": "Өнөөдөр бид хятад хэлний шалгалт өгнө.",
+  "pos": "үйл үг",
+  "collocations_zh": "考试 / 考得很好"
+ },
+ {
+  "chinese": "快要",
+  "pinyin": "kuàiyào",
+  "mongolian": "удахгүй, болох гэж байна",
+  "hskLevel": "HSK2",
+  "exampleChinese": "电影快要开始了。",
+  "exampleMongolian": "Кино удахгүй эхэлнэ.",
+  "pos": "дайвар үг",
+  "collocations_zh": "快要…了"
+ },
+ {
+  "chinese": "笑",
+  "pinyin": "xiào",
+  "mongolian": "инээх, инээмсэглэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他笑了笑，没说什么就走了。",
+  "exampleMongolian": "Тэр инээмсэглээд юу ч хэлэлгүй явчихлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "大笑 / 笑了笑"
+ }
+]

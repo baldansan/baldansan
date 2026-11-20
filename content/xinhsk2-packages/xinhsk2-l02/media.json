@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-hero.webp",
+   "title": "2-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l02-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w1.webp",
+   "title": "公交车 gōngjiāochē — автобус",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w2.webp",
+   "title": "车站 chēzhàn — буудал (автобус, галт тэрэгний)",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w3.webp",
+   "title": "票 piào — тасалбар",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w4.webp",
+   "title": "教室 jiàoshì — анги танхим",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l02/l02-w5.webp",
+   "title": "北京大学 Běijīng Dàxué — Бээжингийн их сургууль (Бэйда)",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

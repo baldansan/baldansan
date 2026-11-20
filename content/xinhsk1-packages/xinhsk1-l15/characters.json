@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "爱",
+   "pinyin": [
+    "ài"
+   ],
+   "strokeCount": 10,
+   "radical": "爫",
+   "practice": "write",
+   "meaningMn": "дуртай, хайрлах",
+   "etymology_mn": "爫 (гар) дор 冖, 友: найзыг гараар тэврэн хайрлах",
+   "exampleWords": [
+    "爱学习",
+    "爱吃"
+   ]
+  },
+  {
+   "hanzi": "机",
+   "pinyin": [
+    "jī"
+   ],
+   "strokeCount": 6,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "машин, онгоц",
+   "etymology_mn": "木 (мод) + 几: эртний модон машин",
+   "exampleWords": [
+    "飞机",
+    "机场"
+   ]
+  },
+  {
+   "hanzi": "场",
+   "pinyin": [
+    "chǎng"
+   ],
+   "strokeCount": 6,
+   "radical": "土",
+   "practice": "write",
+   "meaningMn": "талбай, буудал",
+   "etymology_mn": "土 (шороо) + 汤-ийн баруун тал: тэгш шороон талбай",
+   "exampleWords": [
+    "机场",
+    "大兴机场"
+   ]
+  },
+  {
+   "hanzi": "飞",
+   "pinyin": [
+    "fēi"
+   ],
+   "strokeCount": 3,
+   "radical": "飞",
+   "practice": "write",
+   "meaningMn": "нисэх",
+   "etymology_mn": "Далавар дэлгэн нисэх шувууны дүр",
+   "exampleWords": [
+    "飞机",
+    "坐飞机"
+   ]
+  },
+  {
+   "hanzi": "住",
+   "pinyin": [
+    "zhù"
+   ],
+   "strokeCount": 7,
+   "radical": "亻",
+   "practice": "write",
+   "meaningMn": "амьдрах",
+   "etymology_mn": "亻 (хүн) + 主 (эзэн): хүн гэртээ амьдарна",
+   "exampleWords": [
+    "住在这儿",
+    "住几天"
+   ]
+  },
+  {
+   "hanzi": "早",
+   "pinyin": [
+    "zǎo"
+   ],
+   "strokeCount": 6,
+   "radical": "日",
+   "practice": "write",
+   "meaningMn": "эрт",
+   "etymology_mn": "日 (нар) дээр 十: нар мандах үе эрт өглөө",
+   "exampleWords": [
+    "早上",
+    "早点儿"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "机",
+   "b": "几",
+   "word_a": "飞机",
+   "word_b": "几个",
+   "mn": "机 — машин, онгоц; 几 — хэдэн",
+   "tip_mn": "机 нь 木 (мод)-той, 几 нь ганцаараа. Дуудлага jī, jǐ."
+  },
+  {
+   "a": "那",
+   "b": "哪",
+   "word_a": "那个",
+   "word_b": "哪个",
+   "mn": "那 — тэр; 哪 — аль",
+   "tip_mn": "哪 нь зүүн талдаа 口 (ам) байгаа тул асуух үг. 那 нь заах үг."
+  },
+  {
+   "a": "年",
+   "b": "午",
+   "word_a": "去年",
+   "word_b": "中午",
+   "mn": "年 — жил; 午 — үд",
+   "tip_mn": "年 нь доор нь босоо зураастай урт, 午 нь бүр богино. Хоёр өөр үг."
+  },
+  {
+   "a": "玩",
+   "b": "完",
+   "word_a": "好玩儿",
+   "word_b": "做完",
+   "mn": "玩 — тоглох; 完 — дуусах",
+   "tip_mn": "玩 нь 王-тэй, 完 нь 宀-тэй. Дуудлага хоёулаа wán."
+  }
+ ]
+}

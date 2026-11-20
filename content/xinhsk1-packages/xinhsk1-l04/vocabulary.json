@@ -1,0 +1,212 @@
+[
+ {
+  "chinese": "有",
+  "pinyin": "yǒu",
+  "mongolian": "байх (эзэмшихийг илэрхийлнэ)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他有女朋友。",
+  "exampleMongolian": "Түүнд найз охин бий.",
+  "pos": "үйл үг",
+  "collocations_zh": "有哥哥"
+ },
+ {
+  "chinese": "多少",
+  "pinyin": "duōshao",
+  "mongolian": "хэд, хэдэн (тоо хэмжээ асуух)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你们学校有多少学生？",
+  "exampleMongolian": "Танай сургуульд хэдэн оюутан байдаг вэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "多少个"
+ },
+ {
+  "chinese": "个",
+  "pinyin": "gè",
+  "mongolian": "ширхэг (хүн, юмны нийтлэг хэмжих үг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我有一个姐姐。",
+  "exampleMongolian": "Надад нэг эгч бий.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一个 / 两个"
+ },
+ {
+  "chinese": "哥哥",
+  "pinyin": "gēge",
+  "mongolian": "ах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他是王老师的哥哥。",
+  "exampleMongolian": "Тэр Ван багшийн ах.",
+  "pos": "нэр үг",
+  "collocations_zh": "我哥哥"
+ },
+ {
+  "chinese": "呢",
+  "pinyin": "ne",
+  "mongolian": "харин …? (асуух сул үг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我叫陈天中，你呢？",
+  "exampleMongolian": "Намайг Чэнь Тяньчжун гэдэг, харин чи?",
+  "pos": "сул үг",
+  "collocations_zh": "你呢？"
+ },
+ {
+  "chinese": "没有",
+  "pinyin": "méiyǒu",
+  "mongolian": "байхгүй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我没有哥哥。",
+  "exampleMongolian": "Надад ах байхгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "没有哥哥"
+ },
+ {
+  "chinese": "家",
+  "pinyin": "jiā",
+  "mongolian": "гэр, гэр бүл",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我家有三口人。",
+  "exampleMongolian": "Манай гэр бүлд гурван хүн бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "我家 / 你家"
+ },
+ {
+  "chinese": "几",
+  "pinyin": "jǐ",
+  "mongolian": "хэд, хэдэн (арваас доош тоо асуух)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你家有几口人？",
+  "exampleMongolian": "Танай гэр бүлд хэдэн хүн бий вэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "几个 / 几口人"
+ },
+ {
+  "chinese": "口",
+  "pinyin": "kǒu",
+  "mongolian": "хүн (гэр бүлийн гишүүдийг тоолох хэмжих үг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我家有五口人。",
+  "exampleMongolian": "Манай гэр бүл таван хүнтэй.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "三口人"
+ },
+ {
+  "chinese": "爸爸",
+  "pinyin": "bàba",
+  "mongolian": "аав",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我爸爸的工作很忙。",
+  "exampleMongolian": "Миний аавын ажил их завгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "我爸爸"
+ },
+ {
+  "chinese": "妈妈",
+  "pinyin": "māma",
+  "mongolian": "ээж",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我很想妈妈。",
+  "exampleMongolian": "Би ээжийгээ их санаж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "我妈妈"
+ },
+ {
+  "chinese": "妹妹",
+  "pinyin": "mèimei",
+  "mongolian": "дүү охин",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她是我的妹妹。",
+  "exampleMongolian": "Тэр миний дүү охин.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个妹妹"
+ },
+ {
+  "chinese": "和",
+  "pinyin": "hé",
+  "mongolian": "ба, болон",
+  "hskLevel": "HSK1",
+  "exampleChinese": "哥哥和妹妹一起学中文。",
+  "exampleMongolian": "Ах дүү хоёр хамт хятад хэл сурч байна.",
+  "pos": "холбоос",
+  "collocations_zh": "我和你"
+ },
+ {
+  "chinese": "儿子",
+  "pinyin": "érzi",
+  "mongolian": "хүү",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他是李老师的儿子。",
+  "exampleMongolian": "Тэр Ли багшийн хүү.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个儿子"
+ },
+ {
+  "chinese": "孩子",
+  "pinyin": "háizi",
+  "mongolian": "хүүхэд",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他还是一个孩子。",
+  "exampleMongolian": "Тэр хүртэл хүүхэд хэвээрээ.",
+  "pos": "нэр үг",
+  "collocations_zh": "两个孩子"
+ },
+ {
+  "chinese": "女儿",
+  "pinyin": "nǚ’ér",
+  "mongolian": "охин (өөрийн хүүхэд)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我女儿今年十二岁。",
+  "exampleMongolian": "Миний охин энэ жил арван хоёр настай.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个女儿"
+ },
+ {
+  "chinese": "岁",
+  "pinyin": "suì",
+  "mongolian": "нас",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你几岁了？",
+  "exampleMongolian": "Чи хэдтэй вэ?",
+  "pos": "хэмжих үг",
+  "collocations_zh": "五岁 / 几岁"
+ },
+ {
+  "chinese": "他",
+  "pinyin": "tā",
+  "mongolian": "тэр (эрэгтэй)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他是我同学。",
+  "exampleMongolian": "Тэр миний ангийн хүн.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "他们"
+ },
+ {
+  "chinese": "今年",
+  "pinyin": "jīnnián",
+  "mongolian": "энэ жил",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今年他还在中国。",
+  "exampleMongolian": "Энэ жил тэр Хятадад байгаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "今年多大"
+ },
+ {
+  "chinese": "多",
+  "pinyin": "duō",
+  "mongolian": "хэр, ямар хэмжээний (хэмжээ асуух)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你儿子多大？",
+  "exampleMongolian": "Таны хүү хэдтэй вэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "多大"
+ },
+ {
+  "chinese": "大",
+  "pinyin": "dà",
+  "mongolian": "настай, том (насны хувьд)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她才两岁大。",
+  "exampleMongolian": "Тэр дөнгөж хоёр настай.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "多大"
+ }
+]

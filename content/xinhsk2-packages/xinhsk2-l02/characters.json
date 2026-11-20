@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "远",
+   "pinyin": [
+    "yuǎn"
+   ],
+   "strokeCount": 7,
+   "radical": "辶",
+   "practice": "write",
+   "meaningMn": "хол",
+   "etymology_mn": "辶 (алхах) + 元 (дуудлага): холын зам",
+   "exampleWords": [
+    "很远",
+    "远处"
+   ]
+  },
+  {
+   "hanzi": "站",
+   "pinyin": [
+    "zhàn"
+   ],
+   "strokeCount": 10,
+   "radical": "立",
+   "practice": "write",
+   "meaningMn": "буудал; зогсох",
+   "etymology_mn": "立 (зогсох) + 占 (дуудлага): зогсдог газар, буудал",
+   "exampleWords": [
+    "车站",
+    "公交站"
+   ]
+  },
+  {
+   "hanzi": "票",
+   "pinyin": [
+    "piào"
+   ],
+   "strokeCount": 11,
+   "radical": "示",
+   "practice": "write",
+   "meaningMn": "тасалбар",
+   "etymology_mn": "西 + 示: үнэ, баталгааны бичиг",
+   "exampleWords": [
+    "电影票",
+    "车票"
+   ]
+  },
+  {
+   "hanzi": "教",
+   "pinyin": [
+    "jiào"
+   ],
+   "strokeCount": 11,
+   "radical": "攵",
+   "practice": "write",
+   "meaningMn": "заах",
+   "etymology_mn": "孝 + 攵 (гар): гараар зааж өгөх",
+   "exampleWords": [
+    "教室",
+    "教书"
+   ]
+  },
+  {
+   "hanzi": "室",
+   "pinyin": [
+    "shì"
+   ],
+   "strokeCount": 9,
+   "radical": "宀",
+   "practice": "write",
+   "meaningMn": "өрөө",
+   "etymology_mn": "宀 (дээвэр) + 至 (хүрэх): дээвэр дор байх өрөө",
+   "exampleWords": [
+    "教室",
+    "室内"
+   ]
+  },
+  {
+   "hanzi": "网",
+   "pinyin": [
+    "wǎng"
+   ],
+   "strokeCount": 6,
+   "radical": "冂",
+   "practice": "write",
+   "meaningMn": "тор; интернет",
+   "etymology_mn": "Торны дүрс: сүлжмэл утас",
+   "exampleWords": [
+    "网上",
+    "网络"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "远",
+   "b": "完",
+   "word_a": "很远",
+   "word_b": "做完",
+   "mn": "远 — хол; 完 — дуусах",
+   "tip_mn": "Хоёулаа 元 агуулна. 远 дээр 辶 (зам) нэмэгдсэн — хол зам. 完 дээр 宀 нэмэгдсэн — дуусгах."
+  },
+  {
+   "a": "间",
+   "b": "问",
+   "word_a": "一间教室",
+   "word_b": "请问",
+   "mn": "间 — өрөө; 问 — асуух",
+   "tip_mn": "间 нь 门 дотор 日 (нар) — хаалганы завсраар нар тусах. 问 нь 门 дотор 口 (ам) — хаалга дэргэд асуух."
+  },
+  {
+   "a": "票",
+   "b": "漂",
+   "word_a": "电影票",
+   "word_b": "漂亮",
+   "mn": "票 — тасалбар; 漂 — үзэсгэлэнтэй",
+   "tip_mn": "漂 нь 氵 (ус)-тай: усан дээр хөвөх, үзэсгэлэнтэй. 票 нь тасалбар."
+  },
+  {
+   "a": "名",
+   "b": "多",
+   "word_a": "一名学生",
+   "word_b": "四万多",
+   "mn": "名 — хүнийг тоолох үг; 多 — олон",
+   "tip_mn": "名 нь 夕 + 口: шөнө нэрээ хэлэх. 多 нь 夕 хоёр: олон."
+  }
+ ]
+}

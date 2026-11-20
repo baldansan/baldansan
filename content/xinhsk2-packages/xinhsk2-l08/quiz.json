@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "这是我的________，妈妈送给我的。",
+  "options": [
+   "饭馆",
+   "妻子",
+   "爱情片",
+   "手表"
+  ],
+  "correct_answer": "手表",
+  "explanation": "«Энэ миний цаг, ээж бэлэглэсэн» — 手表.",
+  "order_index": 1,
+  "id": "xinhsk2-l08-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我的手表在桌子的________，不在左边。",
+  "options": [
+   "饭馆",
+   "手表",
+   "右边",
+   "左边"
+  ],
+  "correct_answer": "右边",
+  "explanation": "«Баруун талд, зүүн талд биш» — 右边.",
+  "order_index": 2,
+  "id": "xinhsk2-l08-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "姐姐________妹妹高。",
+  "options": [
+   "但是",
+   "比",
+   "点",
+   "花"
+  ],
+  "correct_answer": "比",
+  "explanation": "«Эгч дүүгээсээ өндөр» — A比B高.",
+  "order_index": 3,
+  "id": "xinhsk2-l08-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________你喜欢吃鱼，所以点了一条鱼。",
+  "options": [
+   "记得",
+   "花",
+   "点",
+   "虽然"
+  ],
+  "correct_answer": "记得",
+  "explanation": "«Чамайг загас дуртай гэж санаж байна» — 我记得.",
+  "order_index": 4,
+  "id": "xinhsk2-l08-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我喜欢看________，因为故事很好看。",
+  "options": [
+   "饭馆",
+   "手表",
+   "丈夫",
+   "爱情片"
+  ],
+  "correct_answer": "爱情片",
+  "explanation": "«Хайрын кино үзэх дуртай» — 看爱情片.",
+  "order_index": 5,
+  "id": "xinhsk2-l08-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这本书很________，你也看看吧。",
+  "options": [
+   "左边",
+   "但是",
+   "有意思",
+   "记得"
+  ],
+  "correct_answer": "有意思",
+  "explanation": "«Энэ ном их сонирхолтой» — 很有意思.",
+  "order_index": 6,
+  "id": "xinhsk2-l08-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "您好，现在________菜吗？",
+  "options": [
+   "记得",
+   "点",
+   "花",
+   "比"
+  ],
+  "correct_answer": "点",
+  "explanation": "«Одоо хоол захиалах уу?» — 点菜.",
+  "order_index": 7,
+  "id": "xinhsk2-l08-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈买了很多东西，________了不少钱。",
+  "options": [
+   "花",
+   "点",
+   "比",
+   "记得"
+  ],
+  "correct_answer": "花",
+  "explanation": "«Нэлээд мөнгө зарсан» — 花钱.",
+  "order_index": 8,
+  "id": "xinhsk2-l08-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "明天我们要去________吃饭。",
+  "options": [
+   "手表",
+   "妻子",
+   "左边",
+   "饭馆"
+  ],
+  "correct_answer": "饭馆",
+  "explanation": "«Зоогийн газар хоол идэхээр явна» — 去饭馆.",
+  "order_index": 9,
+  "id": "xinhsk2-l08-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这是我________，他在医院工作。",
+  "options": [
+   "饭馆",
+   "手表",
+   "丈夫",
+   "妻子"
+  ],
+  "correct_answer": "丈夫",
+  "explanation": "«Энэ миний нөхөр» — 他-гээр нөхөр гэдэг нь тодорхой.",
+  "order_index": 10,
+  "id": "xinhsk2-l08-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "姐姐妹妹比高。",
+   "姐姐比妹妹高。",
+   "姐姐比妹妹很高。",
+   "姐姐比高妹妹。"
+  ],
+  "correct_answer": "姐姐比妹妹高。",
+  "explanation": "A比B + тэмдэг нэр, 很 хэрэглэхгүй.",
+  "order_index": 11,
+  "id": "xinhsk2-l08-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Өнөөдөр өчигдрөөс хүйтэн» — аль нь зөв бэ?",
+  "options": [
+   "今天比昨天冷。",
+   "今天昨天比冷。",
+   "今天比昨天很冷。",
+   "今天很比昨天冷。"
+  ],
+  "correct_answer": "今天比昨天冷。",
+  "explanation": "比 нь хоёр зүйлийн дунд орно.",
+  "order_index": 12,
+  "id": "xinhsk2-l08-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Энэ кино тэр киногоос ч сонирхолтой» — аль нь зөв бэ?",
+  "options": [
+   "这个电影比那个电影很有意思。",
+   "这个电影很比那个电影有意思。",
+   "这个电影比更那个电影有意思。",
+   "这个电影比那个电影更有意思。"
+  ],
+  "correct_answer": "这个电影比那个电影更有意思。",
+  "explanation": "更 нь тэмдэг нэрийн өмнө, 很 орохгүй.",
+  "order_index": 13,
+  "id": "xinhsk2-l08-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр буруу вэ?",
+  "options": [
+   "他比我还高。",
+   "他比我高。",
+   "他比我很高。",
+   "他比我更高。"
+  ],
+  "correct_answer": "他比我很高。",
+  "explanation": "比 өгүүлбэрт 很 хэрэглэхгүй.",
+  "order_index": 14,
+  "id": "xinhsk2-l08-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бороо орсон ч тийм хүйтэн биш» — аль нь зөв бэ?",
+  "options": [
+   "但是下雨了，虽然不太冷。",
+   "虽然下雨了，但是不太冷。",
+   "因为下雨了，但是不太冷。",
+   "虽然下雨了，所以不太冷。"
+  ],
+  "correct_answer": "虽然下雨了，但是不太冷。",
+  "explanation": "虽然 эхэнд, 但是 хоёрдугаар хэсэгт.",
+  "order_index": 15,
+  "id": "xinhsk2-l08-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "________你忘了，但是我记得。",
+  "options": [
+   "虽然",
+   "因为",
+   "如果",
+   "所以"
+  ],
+  "correct_answer": "虽然",
+  "explanation": "但是-тэй хослох нь 虽然.",
+  "order_index": 16,
+  "id": "xinhsk2-l08-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Онлайнаар авах нь эндээс авахаас хямд» — аль нь зөв бэ?",
+  "options": [
+   "网上买在这里买比便宜。",
+   "网上买很比在这里买便宜。",
+   "比网上买在这里买便宜。",
+   "网上买比在这里买便宜。"
+  ],
+  "correct_answer": "网上买比在这里买便宜。",
+  "explanation": "比 нь хоёр үйлдлийн дунд орно.",
+  "order_index": 17,
+  "id": "xinhsk2-l08-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l08-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我觉得奶茶比牛奶________好喝。",
+  "options": [
+   "非常",
+   "太",
+   "还",
+   "很"
+  ],
+  "correct_answer": "还",
+  "explanation": "比 өгүүлбэрт 还/更 хэрэглэнэ.",
+  "order_index": 18,
+  "id": "xinhsk2-l08-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一雪和刘明在看什么？",
+  "options": [
+   "电影",
+   "手表",
+   "钱",
+   "裤子"
+  ],
+  "correct_answer": "手表",
+  "explanation": "«这两块手表怎么样？».",
+  "order_index": 19,
+  "id": "xinhsk2-l08-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：手表多少钱？",
+  "options": [
+   "8800元",
+   "5800元",
+   "6800元",
+   "88元"
+  ],
+  "correct_answer": "8800元",
+  "explanation": "«真不便宜！八千八百元！».",
+  "order_index": 20,
+  "id": "xinhsk2-l08-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪和刘明要去做什么？",
+  "options": [
+   "吃饭",
+   "买东西",
+   "买手表",
+   "看电影"
+  ],
+  "correct_answer": "看电影",
+  "explanation": "«我们看个电影吧».",
+  "order_index": 21,
+  "id": "xinhsk2-l08-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪为什么要在网上买票？",
+  "options": [
+   "电影院没有票",
+   "她不想去电影院",
+   "网上买比在这里买便宜",
+   "网上的电影更好看"
+  ],
+  "correct_answer": "网上买比在这里买便宜",
+  "explanation": "«网上买比在这里买便宜».",
+  "order_index": 22,
+  "id": "xinhsk2-l08-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：今天是几月几号？",
+  "options": [
+   "8月21号",
+   "8月27号",
+   "1月27号",
+   "1月21号"
+  ],
+  "correct_answer": "8月27号",
+  "explanation": "«八月二十七号».",
+  "order_index": 23,
+  "id": "xinhsk2-l08-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：刘明给王一雪买了什么礼物？",
+  "options": [
+   "手表",
+   "电影票",
+   "好吃的",
+   "饭"
+  ],
+  "correct_answer": "手表",
+  "explanation": "Исюэ «手表！» гэж хашгирсан.",
+  "order_index": 24,
+  "id": "xinhsk2-l08-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：丈夫没请妻子做什么？",
+  "options": [
+   "去吃饭",
+   "看电影",
+   "去饭馆",
+   "去唱歌"
+  ],
+  "correct_answer": "去唱歌",
+  "explanation": "Тексте хоол, кино дурдсан, дуулах дурдаагүй.",
+  "order_index": 25,
+  "id": "xinhsk2-l08-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "我看________一个电影。",
+  "options": [
+   "吗",
+   "呢",
+   "都",
+   "了"
+  ],
+  "correct_answer": "了",
+  "explanation": "«看了» — үйл үгийн ард 了: үйлдэл дууссан.",
+  "order_index": 1,
+  "id": "xinhsk1-l14-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "中午车________后，有些人睡觉了。",
+  "options": [
+   "写",
+   "听",
+   "开",
+   "上"
+  ],
+  "correct_answer": "开",
+  "explanation": "«车开» — галт тэрэг хөдөлнө.",
+  "order_index": 2,
+  "id": "xinhsk1-l14-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请大家不要________话！",
+  "options": [
+   "看",
+   "说",
+   "写",
+   "听"
+  ],
+  "correct_answer": "说",
+  "explanation": "«说话» — ярих.",
+  "order_index": 3,
+  "id": "xinhsk1-l14-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师，我________不见。",
+  "options": [
+   "听",
+   "写",
+   "说",
+   "上"
+  ],
+  "correct_answer": "听",
+  "explanation": "«听不见» — сонсогдохгүй.",
+  "order_index": 4,
+  "id": "xinhsk1-l14-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们________会写汉字了。",
+  "options": [
+   "了",
+   "不要",
+   "有些",
+   "都"
+  ],
+  "correct_answer": "都",
+  "explanation": "«都会写» — бүгдээрээ бичиж чадна.",
+  "order_index": 5,
+  "id": "xinhsk1-l14-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "弟弟明年上________学，现在是小学生。",
+  "options": [
+   "火",
+   "汉",
+   "中",
+   "小"
+  ],
+  "correct_answer": "中",
+  "explanation": "Одоо бага сургуулийн сурагч, ирэх жил дунд сургуульд (上中学).",
+  "order_index": 6,
+  "id": "xinhsk1-l14-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你们都会写哪________汉字了？",
+  "options": [
+   "口",
+   "些",
+   "个",
+   "岁"
+  ],
+  "correct_answer": "些",
+  "explanation": "«哪些» — аль (олон).",
+  "order_index": 7,
+  "id": "xinhsk1-l14-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们坐________去北京吧。",
+  "options": [
+   "火车",
+   "汉语",
+   "中午",
+   "明年"
+  ],
+  "correct_answer": "火车",
+  "explanation": "«坐火车» — галт тэргээр явах.",
+  "order_index": 8,
+  "id": "xinhsk1-l14-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "太________了，我们回家吧。",
+  "options": [
+   "开",
+   "字",
+   "听",
+   "晚"
+  ],
+  "correct_answer": "晚",
+  "explanation": "«太晚了» — хэтэрхий оройтсон.",
+  "order_index": 9,
+  "id": "xinhsk1-l14-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________学生在上课，有些在外面玩。",
+  "options": [
+   "不要",
+   "明年",
+   "有些",
+   "哪些"
+  ],
+  "correct_answer": "有些",
+  "explanation": "«有些…有些…» — зарим нь…, зарим нь…",
+  "order_index": 10,
+  "id": "xinhsk1-l14-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l14-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我看了一个电影。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би кино үзмээр байна.",
+   "Би нэг кино үзлээ.",
+   "Би кино үзэхгүй.",
+   "Би кино үзэх гэж байна."
+  ],
+  "correct_answer": "Би нэг кино үзлээ.",
+  "explanation": "Үйл үг + 了 — үйлдэл болсон.",
+  "order_index": 11,
+  "id": "xinhsk1-l14-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l14-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我昨天没去商店。",
+   "我昨天没去了商店。",
+   "我昨天不去了商店。",
+   "我昨天没了去商店。"
+  ],
+  "correct_answer": "我昨天没去商店。",
+  "explanation": "Үгүйсгэхдээ 没 + үйл үг, 了 хэрэггүй.",
+  "order_index": 12,
+  "id": "xinhsk1-l14-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би нэг шинэ компьютер авлаа» — аль нь зөв бэ?",
+  "options": [
+   "我买一个了新电脑。",
+   "我了买一个新电脑。",
+   "我买一个新了电脑。",
+   "我买了一个新电脑。"
+  ],
+  "correct_answer": "我买了一个新电脑。",
+  "explanation": "了 нь үйл үгийн шууд ард.",
+  "order_index": 13,
+  "id": "xinhsk1-l14-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«同学们都没听见。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Ангийнхан зарим нь сонссонгүй.",
+   "Ангийнхан сонсохыг хүсээгүй.",
+   "Ангийнхан бүгд сонссонгүй.",
+   "Ангийнхан бүгд сонссон."
+  ],
+  "correct_answer": "Ангийнхан бүгд сонссонгүй.",
+  "explanation": "都 + 没: бүгд … үгүй.",
+  "order_index": 14,
+  "id": "xinhsk1-l14-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бид бүгдээрээ бичиж чаддаг болсон» — аль нь зөв бэ?",
+  "options": [
+   "我们会写都了。",
+   "我们都会写了。",
+   "我们会都写了。",
+   "都我们会写了。"
+  ],
+  "correct_answer": "我们都会写了。",
+  "explanation": "都 нь бүлгийн ард, үйл үгийн өмнө.",
+  "order_index": 15,
+  "id": "xinhsk1-l14-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l14-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэд бүгд миний найзууд» — аль нь зөв бэ?",
+  "options": [
+   "他们都是我的朋友。",
+   "他们是都我的朋友。",
+   "都他们是我的朋友。",
+   "他们是我的朋友都。"
+  ],
+  "correct_answer": "他们都是我的朋友。",
+  "explanation": "他们 + 都 + 是.",
+  "order_index": 16,
+  "id": "xinhsk1-l14-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l14-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль нь салдаг үг вэ?",
+  "options": [
+   "汉字",
+   "火车",
+   "中午",
+   "睡觉"
+  ],
+  "correct_answer": "睡觉",
+  "explanation": "睡觉 = 睡 + 觉, дунд нь 了 орж болно.",
+  "order_index": 17,
+  "id": "xinhsk1-l14-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l14-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Тэр маш их юм ярьсан» — аль нь зөв бэ?",
+  "options": [
+   "他说很多话了了。",
+   "他了说很多话。",
+   "他说了很多话。",
+   "他说话了很多。"
+  ],
+  "correct_answer": "他说了很多话。",
+  "explanation": "说话 салахад: 说了很多话.",
+  "order_index": 18,
+  "id": "xinhsk1-l14-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l14-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«请大家不要说话。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Бүгд ярьсангүй.",
+   "Бүгдээрээ битгий ярь.",
+   "Бүгдээрээ ярь.",
+   "Бүгд ярьж чадахгүй."
+  ],
+  "correct_answer": "Бүгдээрээ битгий ярь.",
+  "explanation": "不要 — «битгий».",
+  "order_index": 19,
+  "id": "xinhsk1-l14-q19",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l14-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：陈天中在火车上做了什么？",
+  "options": [
+   "看了一个电影",
+   "读书",
+   "睡觉",
+   "找王老师"
+  ],
+  "correct_answer": "看了一个电影",
+  "explanation": "«我看了一个电影».",
+  "order_index": 20,
+  "id": "xinhsk1-l14-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：陈天中看见王老师了吗？",
+  "options": [
+   "看见了",
+   "正在看",
+   "不想看",
+   "没看见"
+  ],
+  "correct_answer": "没看见",
+  "explanation": "«没看见» — хараагүй.",
+  "order_index": 21,
+  "id": "xinhsk1-l14-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：陈天中听见王老师说什么了吗？",
+  "options": [
+   "不想听",
+   "都听见了",
+   "没听见",
+   "听见了"
+  ],
+  "correct_answer": "没听见",
+  "explanation": "«老师，我听不见».",
+  "order_index": 22,
+  "id": "xinhsk1-l14-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：同学们会写汉字了吗？",
+  "options": [
+   "不想写",
+   "都会写了",
+   "都不会写",
+   "有些会写"
+  ],
+  "correct_answer": "都会写了",
+  "explanation": "«我们都会写了».",
+  "order_index": 23,
+  "id": "xinhsk1-l14-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：明年刘明和王一雪的女儿上什么学？",
+  "options": [
+   "上中学",
+   "上小学",
+   "上大学",
+   "不上学"
+  ],
+  "correct_answer": "上中学",
+  "explanation": "«明年女儿上中学».",
+  "order_index": 24,
+  "id": "xinhsk1-l14-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：上学后，他们怎么样？",
+  "options": [
+   "不忙",
+   "很高兴",
+   "都睡觉了",
+   "都忙了"
+  ],
+  "correct_answer": "都忙了",
+  "explanation": "«上学后，他们都忙了».",
+  "order_index": 25,
+  "id": "xinhsk1-l14-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

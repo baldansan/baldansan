@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-hero.webp",
+   "title": "10-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l10-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w1.webp",
+   "title": "苹果 píngguǒ — алим",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w2.webp",
+   "title": "杯子 bēizi — аяга, цуурай",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w3.webp",
+   "title": "钱 qián — мөнгө",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w4.webp",
+   "title": "水果 shuǐguǒ — жимс",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w5.webp",
+   "title": "售货员 shòuhuòyuán — худалдагч",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l10/l10-w6.webp",
+   "title": "商店 shāngdiàn — дэлгүүр",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

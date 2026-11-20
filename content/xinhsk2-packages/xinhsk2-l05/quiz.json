@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "不早了，________起床吧。",
+  "options": [
+   "等",
+   "跟",
+   "走",
+   "快"
+  ],
+  "correct_answer": "快",
+  "explanation": "«Эртдэхгүй боллоо, хурдан бос» — 快起床.",
+  "order_index": 1,
+  "id": "xinhsk2-l05-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我不上去了，就在________等你。",
+  "options": [
+   "奶茶",
+   "礼物",
+   "下面",
+   "酒店"
+  ],
+  "correct_answer": "下面",
+  "explanation": "«Би дээш гарахгүй, доор чамайг хүлээе» — 下面.",
+  "order_index": 2,
+  "id": "xinhsk2-l05-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你在________谁？",
+  "options": [
+   "准备",
+   "等",
+   "跟",
+   "走"
+  ],
+  "correct_answer": "等",
+  "explanation": "«Чи хэнийг хүлээж байна?» — 等谁.",
+  "order_index": 3,
+  "id": "xinhsk2-l05-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________就回来。",
+  "options": [
+   "一会儿",
+   "奶茶",
+   "酒店",
+   "爷爷"
+  ],
+  "correct_answer": "一会儿",
+  "explanation": "«Би удахгүй буцаж ирнэ» — 一会儿就回来.",
+  "order_index": 4,
+  "id": "xinhsk2-l05-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我很喜欢你送我的________。",
+  "options": [
+   "酒店",
+   "奶茶",
+   "下面",
+   "礼物"
+  ],
+  "correct_answer": "礼物",
+  "explanation": "«Чиний өгсөн бэлэгт дуртай» — 礼物.",
+  "order_index": 5,
+  "id": "xinhsk2-l05-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你________一下，我们九点走。",
+  "options": [
+   "等",
+   "进来",
+   "准备",
+   "跟"
+  ],
+  "correct_answer": "准备",
+  "explanation": "«Чи бэлдээрэй, бид есөн цагт гарна» — 准备一下.",
+  "order_index": 6,
+  "id": "xinhsk2-l05-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我喜欢喝________。",
+  "options": [
+   "爷爷",
+   "奶茶",
+   "酒店",
+   "礼物"
+  ],
+  "correct_answer": "奶茶",
+  "explanation": "«Би сүүтэй цай уух дуртай» — 喝奶茶.",
+  "order_index": 7,
+  "id": "xinhsk2-l05-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你________她坐一起吧。",
+  "options": [
+   "跟",
+   "走",
+   "等",
+   "快"
+  ],
+  "correct_answer": "跟",
+  "explanation": "«Чи түүнтэй хамт суугаарай» — 跟她坐.",
+  "order_index": 8,
+  "id": "xinhsk2-l05-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "酒店很近，我们________回去吧。",
+  "options": [
+   "跟",
+   "快",
+   "等",
+   "走"
+  ],
+  "correct_answer": "走",
+  "explanation": "«Зочид буудал ойрхон, алхаж буцъя» — 走回去.",
+  "order_index": 9,
+  "id": "xinhsk2-l05-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我________很高，奶奶喜欢红色的衣服。",
+  "options": [
+   "奶茶",
+   "礼物",
+   "爷爷",
+   "酒店"
+  ],
+  "correct_answer": "爷爷",
+  "explanation": "«Миний өвөө өндөр» — 我爷爷.",
+  "order_index": 10,
+  "id": "xinhsk2-l05-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk2-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我不上去了，就在下面等你。» Хэн хаана байна вэ?",
+  "options": [
+   "Хоёул дээр байна",
+   "Яригч доор байна, нөгөөх нь дээр",
+   "Яригч дээр байна, нөгөөх нь доор",
+   "Хоёул доор байна"
+  ],
+  "correct_answer": "Яригч доор байна, нөгөөх нь дээр",
+  "explanation": "Яригч доор байгаа тул дээш «явах» нь 上去.",
+  "order_index": 11,
+  "id": "xinhsk2-l05-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Яригч гадаа, дотор байгаа хүнээс «гарч ир» гэх үед:",
+  "options": [
+   "你出来吧。",
+   "你出去吧。",
+   "你进来吧。",
+   "你回去吧。"
+  ],
+  "correct_answer": "你出来吧。",
+  "explanation": "Яригч гадаа байгаа тул яригч рүү гарч ирэх — 出来.",
+  "order_index": 12,
+  "id": "xinhsk2-l05-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хичээл эхэллээ, ангид хурдан ороод ир» — аль нь зөв бэ?",
+  "options": [
+   "上课了，你们快进来教室吧。",
+   "上课了，你们快教室进来吧。",
+   "上课了，你们进快教室来吧。",
+   "上课了，你们快进教室来吧。"
+  ],
+  "correct_answer": "上课了，你们快进教室来吧。",
+  "explanation": "Газар (教室) 来-ийн өмнө, 进-ийн ард.",
+  "order_index": 13,
+  "id": "xinhsk2-l05-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Аав өнөөдөр олон жимс худалдаж авчирсан» — аль нь зөв бэ?",
+  "options": [
+   "爸爸今天买很多水果回了。",
+   "爸爸今天回买了很多水果。",
+   "爸爸今天买回了很多水果。",
+   "爸爸今天买了回很多水果。"
+  ],
+  "correct_answer": "爸爸今天买回了很多水果。",
+  "explanation": "买回 нийлсэн, объект ард нь.",
+  "order_index": 14,
+  "id": "xinhsk2-l05-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«都十二点了，我们吃饭吧。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Бүгд арван хоёр цагт иддэг.",
+   "Арван хоёр цаг болчихлоо, хоолоо идье.",
+   "Арван хоёр цагт хамт идье.",
+   "Арван хоёр цаг болоогүй."
+  ],
+  "correct_answer": "Арван хоёр цаг болчихлоо, хоолоо идье.",
+  "explanation": "都…了 — «аль хэдийн … болчихлоо».",
+  "order_index": 15,
+  "id": "xinhsk2-l05-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我都去过北京了，不想再去了。",
+   "我都去过北京，不想再去了。",
+   "我去都过北京了，不想再去了。",
+   "我都去北京过了，不想再去了。"
+  ],
+  "correct_answer": "我都去过北京了，不想再去了。",
+  "explanation": "都…了 — «аль хэдийн». 了 төгсгөлд заавал.",
+  "order_index": 16,
+  "id": "xinhsk2-l05-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l05-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你可以跟我去看看。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи надад үзүүлж болно.",
+   "Чи надаас асууж болно.",
+   "Чи ганцаараа очиж болно.",
+   "Чи надтай хамт очиж үзэж болно."
+  ],
+  "correct_answer": "Чи надтай хамт очиж үзэж болно.",
+  "explanation": "跟 + хүн + 去 — «хэнтэй хамт явах».",
+  "order_index": 17,
+  "id": "xinhsk2-l05-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk2-l05-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一雪让她们什么时候到？",
+  "options": [
+   "1点前",
+   "12点前",
+   "11点前",
+   "10点前"
+  ],
+  "correct_answer": "11点前",
+  "explanation": "«十一点前到就可以».",
+  "order_index": 18,
+  "id": "xinhsk2-l05-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月要去哪儿？",
+  "options": [
+   "酒店",
+   "中国朋友家",
+   "安妮家",
+   "男朋友家"
+  ],
+  "correct_answer": "中国朋友家",
+  "explanation": "«第一次去中国朋友家».",
+  "order_index": 19,
+  "id": "xinhsk2-l05-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪给白家月和安妮介绍谁了？",
+  "options": [
+   "孩子们的爷爷奶奶",
+   "她的孩子们",
+   "孩子们的爸爸",
+   "白家月的朋友"
+  ],
+  "correct_answer": "孩子们的爷爷奶奶",
+  "explanation": "«这是孩子们的爷爷、奶奶».",
+  "order_index": 20,
+  "id": "xinhsk2-l05-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：今天的菜是谁做的？",
+  "options": [
+   "爷爷",
+   "奶奶",
+   "白家月",
+   "王一雪"
+  ],
+  "correct_answer": "王一雪",
+  "explanation": "«都是我自己做的».",
+  "order_index": 21,
+  "id": "xinhsk2-l05-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：爷爷买什么了？",
+  "options": [
+   "牛奶",
+   "水果",
+   "奶茶",
+   "绿茶"
+  ],
+  "correct_answer": "奶茶",
+  "explanation": "«奶茶是爷爷买的».",
+  "order_index": 22,
+  "id": "xinhsk2-l05-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：白家月和安妮是什么时候去的王一雪家？",
+  "options": [
+   "生日那天",
+   "回国前一天",
+   "买好礼物那天",
+   "到北京第一天"
+  ],
+  "correct_answer": "回国前一天",
+  "explanation": "«回国前一天，我们去一雪姐家了».",
+  "order_index": 23,
+  "id": "xinhsk2-l05-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：白家月和安妮为什么是走回酒店的？",
+  "options": [
+   "吃了太多东西",
+   "没有公交车",
+   "要去买奶茶",
+   "下雨了"
+  ],
+  "correct_answer": "吃了太多东西",
+  "explanation": "«因为吃了太多东西».",
+  "order_index": 24,
+  "id": "xinhsk2-l05-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

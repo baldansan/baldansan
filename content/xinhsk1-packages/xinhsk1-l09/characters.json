@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "本",
+   "pinyin": [
+    "běn"
+   ],
+   "strokeCount": 5,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "ном, боть",
+   "etymology_mn": "木 (мод)-ын үндсэн хэсэгт нэг зураас: «үндэс». Номын хэмжих үг ч болсон",
+   "exampleWords": [
+    "一本书",
+    "本子"
+   ]
+  },
+  {
+   "hanzi": "书",
+   "pinyin": [
+    "shū"
+   ],
+   "strokeCount": 4,
+   "radical": "乙",
+   "practice": "write",
+   "meaningMn": "ном",
+   "etymology_mn": "Дөрвөхөн цохилттой энгийн ханз. Бичиг, номын дүр",
+   "exampleWords": [
+    "看书",
+    "读书"
+   ]
+  },
+  {
+   "hanzi": "电",
+   "pinyin": [
+    "diàn"
+   ],
+   "strokeCount": 5,
+   "radical": "田",
+   "practice": "write",
+   "meaningMn": "цахилгаан",
+   "etymology_mn": "Эртний 電 нь бороо (雨) дор цахилгаан цахилахыг дүрсэлсэн",
+   "exampleWords": [
+    "电视",
+    "电影"
+   ]
+  },
+  {
+   "hanzi": "狗",
+   "pinyin": [
+    "gǒu"
+   ],
+   "strokeCount": 8,
+   "radical": "犭",
+   "practice": "write",
+   "meaningMn": "нохой",
+   "etymology_mn": "犭 (амьтан) + 句 (дуудлага): амьтны ястан",
+   "exampleWords": [
+    "小狗",
+    "一只狗"
+   ]
+  },
+  {
+   "hanzi": "唱",
+   "pinyin": [
+    "chàng"
+   ],
+   "strokeCount": 11,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "дуулах",
+   "etymology_mn": "口 (ам) + 昌: амаараа дуулна",
+   "exampleWords": [
+    "唱歌",
+    "唱得好"
+   ]
+  },
+  {
+   "hanzi": "读",
+   "pinyin": [
+    "dú"
+   ],
+   "strokeCount": 10,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "унших",
+   "etymology_mn": "讠 (яриа) + 卖 (дуудлага): чангаар уншина",
+   "exampleWords": [
+    "读书",
+    "读一读"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "那",
+   "b": "哪",
+   "word_a": "那个人",
+   "word_b": "哪儿",
+   "mn": "那 — тэр; 哪 — аль, хаана",
+   "tip_mn": "哪 нь 口 (ам)-тай: ам нээж «аль?» гэж асууна. 那 нь «тэр» гэж заана."
+  },
+  {
+   "a": "本",
+   "b": "木",
+   "word_a": "一本书",
+   "word_b": "木头",
+   "mn": "本 — ном (хэмжих үг); 木 — мод",
+   "tip_mn": "本 нь 木-ын доор нэг зураас нэмсэн."
+  },
+  {
+   "a": "白",
+   "b": "百",
+   "word_a": "白天",
+   "word_b": "一百",
+   "mn": "白 — цагаан, өдөр; 百 — зуу",
+   "tip_mn": "百 нь 白 дээр 一 нэмсэн: «нэг зуу»."
+  },
+  {
+   "a": "友",
+   "b": "有",
+   "word_a": "朋友",
+   "word_b": "我有",
+   "mn": "友 — найз; 有 — байх",
+   "tip_mn": "友 нь 又 (гар)-тай: найзууд гар барина. 有 нь 月-тай."
+  }
+ ]
+}

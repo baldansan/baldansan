@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "你",
+   "pinyin": [
+    "nǐ"
+   ],
+   "strokeCount": 7,
+   "radical": "亻",
+   "practice": "write",
+   "meaningMn": "чи",
+   "etymology_mn": "亻 (хүн) + 尔 (дуудлага): өөр хүнийг заасан «чи»",
+   "exampleWords": [
+    "你好",
+    "你们"
+   ]
+  },
+  {
+   "hanzi": "好",
+   "pinyin": [
+    "hǎo"
+   ],
+   "strokeCount": 6,
+   "radical": "女",
+   "practice": "write",
+   "meaningMn": "сайн",
+   "etymology_mn": "女 (эмэгтэй) + 子 (хүүхэд): эхчүүд хүүхэдтэйгээ байх нь сайн",
+   "exampleWords": [
+    "你好",
+    "很好"
+   ]
+  },
+  {
+   "hanzi": "大",
+   "pinyin": [
+    "dà"
+   ],
+   "strokeCount": 3,
+   "radical": "大",
+   "practice": "write",
+   "meaningMn": "том",
+   "etymology_mn": "Гараа сарниулсан хүний дүрс: том",
+   "exampleWords": [
+    "大家",
+    "大学生"
+   ]
+  },
+  {
+   "hanzi": "学",
+   "pinyin": [
+    "xué"
+   ],
+   "strokeCount": 8,
+   "radical": "子",
+   "practice": "write",
+   "meaningMn": "сурах",
+   "etymology_mn": "子 (хүүхэд) дээрээ дээвэртэй: хүүхэд сурч байна",
+   "exampleWords": [
+    "学生",
+    "同学"
+   ]
+  },
+  {
+   "hanzi": "谢",
+   "pinyin": [
+    "xiè"
+   ],
+   "strokeCount": 12,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "талархах",
+   "etymology_mn": "讠 (хэл) + 射 (дуудлага): үгээр талархах",
+   "exampleWords": [
+    "谢谢",
+    "不谢"
+   ]
+  },
+  {
+   "hanzi": "见",
+   "pinyin": [
+    "jiàn"
+   ],
+   "strokeCount": 4,
+   "radical": "见",
+   "practice": "write",
+   "meaningMn": "харах, уулзах",
+   "etymology_mn": "Хөлтэй том нүд: харах, уулзах",
+   "exampleWords": [
+    "再见",
+    "明天见"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "们",
+   "b": "门",
+   "word_a": "你们",
+   "word_b": "大门",
+   "mn": "们 — олон тооны дагавар; 门 — хаалга",
+   "tip_mn": "们 дээр 亻 (хүн) байна: хүн заасан үгийн олон тоо. 门 нь дөрвөлжин хаалгын дүрс."
+  },
+  {
+   "a": "老",
+   "b": "考",
+   "word_a": "老师",
+   "word_b": "考试",
+   "mn": "老 — настай, багш; 考 — шалгах",
+   "tip_mn": "考 нь 老-гийн доод хэсэгт нэг дэгдээ (丂) байгаагаараа ялгарна."
+  },
+  {
+   "a": "学",
+   "b": "字",
+   "word_a": "学生",
+   "word_b": "汉字",
+   "mn": "学 — сурах; 字 — үсэг",
+   "tip_mn": "学 дээр нь дээврийн дээд хэсэг (冖) бөгөөд нэмэлт цэгтэй. 字 нь 宀 дээвэртэй."
+  },
+  {
+   "a": "大",
+   "b": "太",
+   "word_a": "大家",
+   "word_b": "太好了",
+   "mn": "大 — том; 太 — хэтэрхий, их",
+   "tip_mn": "太 нь 大-ийн доор нэг цэгтэй."
+  }
+ ]
+}

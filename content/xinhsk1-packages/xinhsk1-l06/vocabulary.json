@@ -1,0 +1,232 @@
+[
+ {
+  "chinese": "手机",
+  "pinyin": "shǒujī",
+  "mongolian": "гар утас",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢我的新手机。",
+  "exampleMongolian": "Би шинэ гар утсандаа дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "买手机 / 手机号"
+ },
+ {
+  "chinese": "电话",
+  "pinyin": "diànhuà",
+  "mongolian": "утас; утасны дуудлага",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他正在打电话呢。",
+  "exampleMongolian": "Тэр утсаар ярьж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "打电话 / 电话号码"
+ },
+ {
+  "chinese": "号",
+  "pinyin": "hào",
+  "mongolian": "дугаар",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我的手机号是+86 135××××1160。",
+  "exampleMongolian": "Миний гар утасны дугаар +86 135××××1160.",
+  "pos": "нэр үг",
+  "collocations_zh": "手机号 / 电话号"
+ },
+ {
+  "chinese": "明天",
+  "pinyin": "míngtiān",
+  "mongolian": "маргааш",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你明天去哪儿？",
+  "exampleMongolian": "Чи маргааш хаашаа явах вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "明天见"
+ },
+ {
+  "chinese": "去",
+  "pinyin": "qù",
+  "mongolian": "явах, очих",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我去学校。",
+  "exampleMongolian": "Би сургууль руу явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "去学校 / 去哪儿"
+ },
+ {
+  "chinese": "哪儿",
+  "pinyin": "nǎr",
+  "mongolian": "хаана, хаашаа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你家在哪儿？",
+  "exampleMongolian": "Танай гэр хаана байдаг вэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "去哪儿"
+ },
+ {
+  "chinese": "想",
+  "pinyin": "xiǎng",
+  "mongolian": "хүсэх, … хийхээр бодох",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我想看电影。",
+  "exampleMongolian": "Би кино үзэхийг хүсэж байна.",
+  "pos": "баймж үйл үг",
+  "collocations_zh": "想去 / 想吃"
+ },
+ {
+  "chinese": "超市",
+  "pinyin": "chāoshì",
+  "mongolian": "супермаркет, их дэлгүүр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "妈妈去超市买菜。",
+  "exampleMongolian": "Ээж супермаркетад хүнсээ авахаар явав.",
+  "pos": "нэр үг",
+  "collocations_zh": "去超市 / 一家超市"
+ },
+ {
+  "chinese": "买",
+  "pinyin": "mǎi",
+  "mongolian": "худалдан авах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我买了一个新手机。",
+  "exampleMongolian": "Би шинэ гар утас авлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "买东西 / 买菜"
+ },
+ {
+  "chinese": "东西",
+  "pinyin": "dōngxi",
+  "mongolian": "юм, зүйл, бараа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我去超市买东西。",
+  "exampleMongolian": "Би супермаркетад юм авахаар явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "买东西 / 一些东西"
+ },
+ {
+  "chinese": "些",
+  "pinyin": "xiē",
+  "mongolian": "зарим, жаахан (тодорхойгүй тоо)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你吃些苹果吧。",
+  "exampleMongolian": "Чи алим жаахан идээрэй.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一些 / 买些"
+ },
+ {
+  "chinese": "牛奶",
+  "pinyin": "niúnǎi",
+  "mongolian": "үхрийн сүү",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我妹妹爱喝牛奶。",
+  "exampleMongolian": "Миний дүү охин сүү уух дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "喝牛奶 / 买牛奶"
+ },
+ {
+  "chinese": "吃",
+  "pinyin": "chī",
+  "mongolian": "идэх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢吃水果。",
+  "exampleMongolian": "Би жимс идэх дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "吃饭 / 吃东西"
+ },
+ {
+  "chinese": "晚饭",
+  "pinyin": "wǎnfàn",
+  "mongolian": "оройн хоол",
+  "hskLevel": "HSK1",
+  "exampleChinese": "晚饭你想吃什么？",
+  "exampleMongolian": "Оройн хоолондоо чи юу идмээр байна?",
+  "pos": "нэр үг",
+  "collocations_zh": "吃晚饭 / 做晚饭"
+ },
+ {
+  "chinese": "那边",
+  "pinyin": "nàbiān",
+  "mongolian": "тэнд, цаад тал",
+  "hskLevel": "HSK1",
+  "exampleChinese": "那边有很多人。",
+  "exampleMongolian": "Тэнд олон хүн байна.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "看那边"
+ },
+ {
+  "chinese": "包子",
+  "pinyin": "bāozi",
+  "mongolian": "баоцзы (уураар жигнэсэн бууз)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "早上我吃了两个包子。",
+  "exampleMongolian": "Өглөө би хоёр баоцзы идлээ.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃包子 / 一个包子"
+ },
+ {
+  "chinese": "非常",
+  "pinyin": "fēicháng",
+  "mongolian": "маш, үнэхээр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这本书非常好看。",
+  "exampleMongolian": "Энэ ном маш сайхан (сонирхолтой) юм.",
+  "pos": "дайвар үг",
+  "collocations_zh": "非常好 / 非常快"
+ },
+ {
+  "chinese": "好吃",
+  "pinyin": "hǎochī",
+  "mongolian": "амттай",
+  "hskLevel": "HSK1",
+  "exampleChinese": "法国菜很好吃。",
+  "exampleMongolian": "Францын хоол их амттай.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "真好吃 / 不好吃"
+ },
+ {
+  "chinese": "米饭",
+  "pinyin": "mǐfàn",
+  "mongolian": "болсон будаа, будаа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢吃米饭。",
+  "exampleMongolian": "Би будаа идэх дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃米饭 / 做米饭"
+ },
+ {
+  "chinese": "怎么",
+  "pinyin": "zěnme",
+  "mongolian": "яаж, хэрхэн (арга, байдал асуух)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "请问，怎么去这家电影院？",
+  "exampleMongolian": "Уучлаарай, энэ кино театр руу яаж явах вэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "怎么去 / 怎么做"
+ },
+ {
+  "chinese": "坐",
+  "pinyin": "zuò",
+  "mongolian": "(тээврийн хэрэгслээр) явах, сууж явах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我坐车去。",
+  "exampleMongolian": "Би машинаар (тээврээр) явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "坐车 / 坐飞机"
+ },
+ {
+  "chinese": "出租车",
+  "pinyin": "chūzūchē",
+  "mongolian": "такси",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我现在叫出租车。",
+  "exampleMongolian": "Би одоо такси дуудаж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "叫出租车 / 坐出租车"
+ },
+ {
+  "chinese": "西安饭店",
+  "pinyin": "Xī’ān Fàndiàn",
+  "mongolian": "Сианы зоогийн газар (нэр)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们去西安饭店吃晚饭。",
+  "exampleMongolian": "Бид Сианы зоогийн газарт оройн хоол идэхээр явна.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "西安饭店"
+ }
+]

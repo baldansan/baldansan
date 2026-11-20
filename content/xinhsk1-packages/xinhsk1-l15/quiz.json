@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "你们________吃哪个菜？",
+  "options": [
+   "要",
+   "住",
+   "接",
+   "爱"
+  ],
+  "correct_answer": "爱",
+  "explanation": "«你们爱吃哪个菜？» — 爱吃.",
+  "order_index": 1,
+  "id": "xinhsk1-l15-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这两个手机，你想买________？",
+  "options": [
+   "几个",
+   "一下",
+   "哪个",
+   "那个"
+  ],
+  "correct_answer": "哪个",
+  "explanation": "«Аль нь авмаар байна?» — 哪个.",
+  "order_index": 2,
+  "id": "xinhsk1-l15-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "________我和男朋友去了西安。",
+  "options": [
+   "现在",
+   "去年",
+   "今年",
+   "明天"
+  ],
+  "correct_answer": "去年",
+  "explanation": "«Өнгөрсөн жил» — 去年 нь өнгөрсөн.",
+  "order_index": 3,
+  "id": "xinhsk1-l15-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她的________是医生。",
+  "options": [
+   "男朋友",
+   "飞机",
+   "时间",
+   "机场"
+  ],
+  "correct_answer": "男朋友",
+  "explanation": "«Түүний найз залуу эмч» — 男朋友.",
+  "order_index": 4,
+  "id": "xinhsk1-l15-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "北京很漂亮，也很________。",
+  "options": [
+   "早",
+   "那",
+   "要",
+   "好玩儿"
+  ],
+  "correct_answer": "好玩儿",
+  "explanation": "«Бээжин хөгжилтэй» — 好玩儿.",
+  "order_index": 5,
+  "id": "xinhsk1-l15-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你们的飞机到北京________几个小时？",
+  "options": [
+   "爱",
+   "住",
+   "要",
+   "接"
+  ],
+  "correct_answer": "要",
+  "explanation": "«要几个小时» — хэдэн цаг шаардагдах.",
+  "order_index": 6,
+  "id": "xinhsk1-l15-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我们两个________后在学校书店见。",
+  "options": [
+   "年",
+   "小时",
+   "家人",
+   "机场"
+  ],
+  "correct_answer": "小时",
+  "explanation": "«Хоёр цагийн дараа» — 两个小时.",
+  "order_index": 7,
+  "id": "xinhsk1-l15-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我现在很忙，没有________。",
+  "options": [
+   "时间",
+   "飞机",
+   "家人",
+   "男朋友"
+  ],
+  "correct_answer": "时间",
+  "explanation": "«Цаг байхгүй» — 没有时间.",
+  "order_index": 8,
+  "id": "xinhsk1-l15-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "明天早上我要去机场________朋友。",
+  "options": [
+   "住",
+   "爱",
+   "要",
+   "接"
+  ],
+  "correct_answer": "接",
+  "explanation": "«Найзаа тосохоор» — 接朋友.",
+  "order_index": 9,
+  "id": "xinhsk1-l15-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "下雨了，________我们在家里玩。",
+  "options": [
+   "几",
+   "早",
+   "那",
+   "哪"
+  ],
+  "correct_answer": "那",
+  "explanation": "«Тэгвэл» — 那 холбоос.",
+  "order_index": 10,
+  "id": "xinhsk1-l15-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l15-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我喜欢这个，也喜欢那个。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би аль нь дуртайгаа мэдэхгүй.",
+   "Би үүнд ч дуртай, тэрэнд ч дуртай.",
+   "Би энэд дургүй.",
+   "Би тэрэнд дургүй."
+  ],
+  "correct_answer": "Би үүнд ч дуртай, тэрэнд ч дуртай.",
+  "explanation": "…，也… — «…ч, …ч».",
+  "order_index": 11,
+  "id": "xinhsk1-l15-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l15-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "我喜欢这个，也喜欢那个。",
+   "我喜欢这个，喜欢也那个。",
+   "我喜欢这个，喜欢那个也。",
+   "我喜欢这个也，喜欢那个。"
+  ],
+  "correct_answer": "我喜欢这个，也喜欢那个。",
+  "explanation": "也 нь үйл үгийн өмнө орно.",
+  "order_index": 12,
+  "id": "xinhsk1-l15-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l15-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "王老师是北京人，李文________是北京人。",
+  "options": [
+   "还",
+   "要",
+   "那",
+   "也"
+  ],
+  "correct_answer": "也",
+  "explanation": "Хоёр өөр хүн адил зүйл — 也.",
+  "order_index": 13,
+  "id": "xinhsk1-l15-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "我喜欢喝中国茶，________喜欢吃中国菜。",
+  "options": [
+   "住",
+   "接",
+   "还",
+   "要"
+  ],
+  "correct_answer": "还",
+  "explanation": "Нэг хүн өөр зүйл нэмж байна — 还.",
+  "order_index": 14,
+  "id": "xinhsk1-l15-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би хятад хоол идэх дуртай, бас хийх дуртай» гэхэд аль нь зөв бэ?",
+  "options": [
+   "我也爱吃中国菜，喜欢做也。",
+   "我爱吃中国菜，也喜欢做。",
+   "我爱吃中国菜，喜欢做。",
+   "我爱吃中国菜也，喜欢做。"
+  ],
+  "correct_answer": "我爱吃中国菜，也喜欢做。",
+  "explanation": "A，也 + үйл үг.",
+  "order_index": 15,
+  "id": "xinhsk1-l15-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«九个小时» гэдгийг «хэдэн цаг шаардах» гэж асуухад:",
+  "options": [
+   "要几个小时？",
+   "有几个小时？",
+   "是几个小时？",
+   "在几个小时？"
+  ],
+  "correct_answer": "要几个小时？",
+  "explanation": "要 + цаг — «… цаг шаардагдах».",
+  "order_index": 16,
+  "id": "xinhsk1-l15-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l15-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«去年» ямар цагийг хэлэх вэ?",
+  "options": [
+   "энэ жил",
+   "ирэх жил",
+   "өчигдөр",
+   "өнгөрсөн жил"
+  ],
+  "correct_answer": "өнгөрсөн жил",
+  "explanation": "去年 — өнгөрсөн жил.",
+  "order_index": 17,
+  "id": "xinhsk1-l15-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l15-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我们坐飞机去北京。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Бид такси барьж Бээжин явна.",
+   "Бид Бээжинд амьдардаг.",
+   "Бид нисэх онгоцоор Бээжин явна.",
+   "Бид галт тэргээр Бээжин явна."
+  ],
+  "correct_answer": "Бид нисэх онгоцоор Бээжин явна.",
+  "explanation": "坐飞机 — нисэх онгоцоор явах.",
+  "order_index": 18,
+  "id": "xinhsk1-l15-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l15-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文问大家什么？",
+  "options": [
+   "有几个哥哥",
+   "爱吃哪个菜",
+   "去哪儿",
+   "几岁"
+  ],
+  "correct_answer": "爱吃哪个菜",
+  "explanation": "«你们爱吃哪个菜？»",
+  "order_index": 19,
+  "id": "xinhsk1-l15-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文说什么？",
+  "options": [
+   "大家多吃点儿",
+   "大家少吃点儿",
+   "大家不要吃",
+   "大家别做饭"
+  ],
+  "correct_answer": "大家多吃点儿",
+  "explanation": "«大家多吃点儿» — ахиу идээрэй.",
+  "order_index": 20,
+  "id": "xinhsk1-l15-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：安妮去年去了哪儿？",
+  "options": [
+   "北京",
+   "学校",
+   "机场",
+   "西安"
+  ],
+  "correct_answer": "西安",
+  "explanation": "«去年我和男朋友去了西安».",
+  "order_index": 21,
+  "id": "xinhsk1-l15-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文是哪里人？",
+  "options": [
+   "法国人",
+   "泰国人",
+   "北京人",
+   "西安人"
+  ],
+  "correct_answer": "北京人",
+  "explanation": "«我和王老师都是北京人».",
+  "order_index": 22,
+  "id": "xinhsk1-l15-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：飞机到北京要几个小时？",
+  "options": [
+   "十个小时",
+   "九个小时",
+   "五个小时",
+   "三个小时"
+  ],
+  "correct_answer": "九个小时",
+  "explanation": "«九个小时».",
+  "order_index": 23,
+  "id": "xinhsk1-l15-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：谁可以去机场接白家月和安妮？",
+  "options": [
+   "王老师的姐姐",
+   "王老师的朋友",
+   "李文",
+   "陈天中"
+  ],
+  "correct_answer": "王老师的姐姐",
+  "explanation": "«我姐姐…可以去机场接你们».",
+  "order_index": 24,
+  "id": "xinhsk1-l15-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：他们星期天几点到大兴机场？",
+  "options": [
+   "早上六点",
+   "晚上八点",
+   "中午十二点",
+   "早上八点"
+  ],
+  "correct_answer": "早上八点",
+  "explanation": "«星期天早上八点到大兴机场».",
+  "order_index": 25,
+  "id": "xinhsk1-l15-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "机",
+   "pinyin": [
+    "jī"
+   ],
+   "strokeCount": 6,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "онгоц, машин, механизм",
+   "etymology_mn": "木 (мод) + 几 (дуудлага): мод хийцтэй хэрэгсэл",
+   "exampleWords": [
+    "机场",
+    "机票"
+   ]
+  },
+  {
+   "hanzi": "票",
+   "pinyin": [
+    "piào"
+   ],
+   "strokeCount": 11,
+   "radical": "示",
+   "practice": "write",
+   "meaningMn": "тасалбар",
+   "etymology_mn": "西 + 示: хуучин цаасан тасалбар",
+   "exampleWords": [
+    "机票",
+    "门票"
+   ]
+  },
+  {
+   "hanzi": "飞",
+   "pinyin": [
+    "fēi"
+   ],
+   "strokeCount": 3,
+   "radical": "飞",
+   "practice": "write",
+   "meaningMn": "нисэх",
+   "etymology_mn": "далавчаа дэлгэсэн шувууны дүрс",
+   "exampleWords": [
+    "飞机",
+    "飞北京"
+   ]
+  },
+  {
+   "hanzi": "鸟",
+   "pinyin": [
+    "niǎo"
+   ],
+   "strokeCount": 5,
+   "radical": "鸟",
+   "practice": "write",
+   "meaningMn": "шувуу",
+   "etymology_mn": "шувууны дүрээс гаралтай",
+   "exampleWords": [
+    "小鸟",
+    "一只鸟"
+   ]
+  },
+  {
+   "hanzi": "路",
+   "pinyin": [
+    "lù"
+   ],
+   "strokeCount": 13,
+   "radical": "足",
+   "practice": "write",
+   "meaningMn": "зам",
+   "etymology_mn": "足 (хөл) + 各: хөл гишгэж явдаг зам",
+   "exampleWords": [
+    "走路",
+    "路上"
+   ]
+  },
+  {
+   "hanzi": "姓",
+   "pinyin": [
+    "xìng"
+   ],
+   "strokeCount": 8,
+   "radical": "女",
+   "practice": "write",
+   "meaningMn": "овог",
+   "etymology_mn": "女 (эмэгтэй) + 生: эртний эх засаг нийгэмд эхээс уламжилдаг овог",
+   "exampleWords": [
+    "姓名",
+    "你姓什么"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "鸟",
+   "b": "乌",
+   "word_a": "小鸟",
+   "word_b": "乌云",
+   "mn": "鸟 — шувуу; 乌 — хар",
+   "tip_mn": "鸟 дээр шувууны нүд болох цэг бий, 乌 нь хар өнгөтэй тул нүд харагдахгүй гэдэг."
+  },
+  {
+   "a": "机",
+   "b": "几",
+   "word_a": "机场",
+   "word_b": "几个",
+   "mn": "机 — онгоц, механизм; 几 — хэдэн",
+   "tip_mn": "机 нь 木-тэй, 几 нь үндсэн дуудлага, «хэд» гэсэн утга."
+  },
+  {
+   "a": "门",
+   "b": "问",
+   "word_a": "出门",
+   "word_b": "问题",
+   "mn": "门 — хаалга; 问 — асуух",
+   "tip_mn": "问 нь 门 дотор 口 (ам) байна: хаалганы өмнө амаараа асууна."
+  },
+  {
+   "a": "票",
+   "b": "漂",
+   "word_a": "机票",
+   "word_b": "漂亮",
+   "mn": "票 — тасалбар; 漂 — гоё",
+   "tip_mn": "漂 дээр 氵 нэмэгдэж «漂亮 — үзэсгэлэнтэй»."
+  }
+ ]
+}

@@ -1,0 +1,222 @@
+[
+ {
+  "chinese": "今天",
+  "pinyin": "jīntiān",
+  "mongolian": "өнөөдөр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天他来找我。",
+  "exampleMongolian": "Өнөөдөр тэр над дээр ирсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "今天几号"
+ },
+ {
+  "chinese": "号",
+  "pinyin": "hào",
+  "mongolian": "өдөр (сарын хэддэх өдөр)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们3月1号上课。",
+  "exampleMongolian": "Бид 3-р сарын 1-нд хичээлтэй.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "几号 / 5月1号"
+ },
+ {
+  "chinese": "月",
+  "pinyin": "yuè",
+  "mongolian": "сар",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天是2026年3月6日。",
+  "exampleMongolian": "Өнөөдөр 2026 оны 3-р сарын 6.",
+  "pos": "нэр үг",
+  "collocations_zh": "九月 / 几月"
+ },
+ {
+  "chinese": "日",
+  "pinyin": "rì",
+  "mongolian": "өдөр (сарын хэддэх өдөр, бичгийн хэлэнд)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "明天是9月7日。",
+  "exampleMongolian": "Маргааш 9-р сарын 7.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "9月7日"
+ },
+ {
+  "chinese": "星期",
+  "pinyin": "xīngqī",
+  "mongolian": "долоо хоног, гараг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天星期几？",
+  "exampleMongolian": "Өнөөдөр ямар гараг вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "星期几 / 星期一"
+ },
+ {
+  "chinese": "星期日",
+  "pinyin": "xīngqīrì",
+  "mongolian": "ням гараг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "星期日我不上学。",
+  "exampleMongolian": "Ням гарагт би сургуульд явахгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "星期日休息"
+ },
+ {
+  "chinese": "星期天",
+  "pinyin": "xīngqītiān",
+  "mongolian": "ням гараг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "星期天我和妹妹在家里玩。",
+  "exampleMongolian": "Ням гарагт би дүүтэйгээ гэртээ тоглодог.",
+  "pos": "нэр үг",
+  "collocations_zh": "星期天休息"
+ },
+ {
+  "chinese": "休息",
+  "pinyin": "xiūxi",
+  "mongolian": "амрах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "星期天我休息。",
+  "exampleMongolian": "Ням гарагт би амарна.",
+  "pos": "үйл үг",
+  "collocations_zh": "好好休息"
+ },
+ {
+  "chinese": "会",
+  "pinyin": "huì",
+  "mongolian": "чадах (сурч эзэмшсэн чадвар)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我会说中文。",
+  "exampleMongolian": "Би хятадаар ярьж чадна.",
+  "pos": "баймж үйл үг",
+  "collocations_zh": "会说 / 不会做"
+ },
+ {
+  "chinese": "做饭",
+  "pinyin": "zuò fàn",
+  "mongolian": "хоол хийх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们都会做饭。",
+  "exampleMongolian": "Бид бүгд хоол хийж чадна.",
+  "pos": "үйл үг",
+  "collocations_zh": "会做饭"
+ },
+ {
+  "chinese": "做",
+  "pinyin": "zuò",
+  "mongolian": "хийх, бэлтгэх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我做了三个菜。",
+  "exampleMongolian": "Би гурван хоол хийлээ.",
+  "pos": "үйл үг",
+  "collocations_zh": "做菜 / 会做"
+ },
+ {
+  "chinese": "面条儿",
+  "pinyin": "miàntiáor",
+  "mongolian": "гоймон, лапша",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢吃面条儿。",
+  "exampleMongolian": "Би гоймонд дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃面条儿"
+ },
+ {
+  "chinese": "饺子",
+  "pinyin": "jiǎozi",
+  "mongolian": "бууз, хятад гэдэстэй бууз (饺子)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "很多中国人喜欢吃饺子。",
+  "exampleMongolian": "Олон хятад хүн бууз идэх дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃饺子 / 包饺子"
+ },
+ {
+  "chinese": "一些",
+  "pinyin": "yìxiē",
+  "mongolian": "зарим, хэдэн",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天做的一些菜我很喜欢吃。",
+  "exampleMongolian": "Өнөөдөр хийсэн хэдэн хоолонд би их дуртай.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一些菜"
+ },
+ {
+  "chinese": "菜",
+  "pinyin": "cài",
+  "mongolian": "хоол (хийсэн таваг хоол)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她想学做菜。",
+  "exampleMongolian": "Тэр хоол хийж сурмаар байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "做菜 / 一些菜"
+ },
+ {
+  "chinese": "下班",
+  "pinyin": "xiàbān",
+  "mongolian": "ажлаасаа тарах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她六点下班。",
+  "exampleMongolian": "Тэр зургаан цагт ажлаас тарна.",
+  "pos": "үйл үг",
+  "collocations_zh": "下班了"
+ },
+ {
+  "chinese": "新",
+  "pinyin": "xīn",
+  "mongolian": "шинэ",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我买了一件新衣服。",
+  "exampleMongolian": "Би шинэ хувцас авсан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "新电脑"
+ },
+ {
+  "chinese": "电脑",
+  "pinyin": "diànnǎo",
+  "mongolian": "компьютер",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我想要一个新电脑。",
+  "exampleMongolian": "Би шинэ компьютертэй болмоор байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "新电脑"
+ },
+ {
+  "chinese": "真",
+  "pinyin": "zhēn",
+  "mongolian": "үнэхээр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这个菜真好吃！",
+  "exampleMongolian": "Энэ хоол үнэхээр амттай!",
+  "pos": "дайвар үг",
+  "collocations_zh": "真好看"
+ },
+ {
+  "chinese": "好看",
+  "pinyin": "hǎokàn",
+  "mongolian": "сайхан, үзэмжтэй",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这本书很好看。",
+  "exampleMongolian": "Энэ ном сайхан юм.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "真好看"
+ },
+ {
+  "chinese": "喜欢",
+  "pinyin": "xǐhuan",
+  "mongolian": "дуртай, таалагдах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢玩电脑。",
+  "exampleMongolian": "Би компьютер тоглох дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "不喜欢"
+ },
+ {
+  "chinese": "它",
+  "pinyin": "tā",
+  "mongolian": "тэр (амьтан, эд зүйлийг заана)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "它喜欢吃鱼。",
+  "exampleMongolian": "Тэр (муур) загас идэх дуртай.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "它们"
+ }
+]

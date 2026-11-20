@@ -1,0 +1,122 @@
+[
+ {
+  "chinese": "站",
+  "pinyin": "zhàn",
+  "mongolian": "зогсох; (нэр үг) буудал",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你站在这儿等我一会儿。",
+  "exampleMongolian": "Чи энд зогсоод намайг түр хүлээ.",
+  "pos": "үйл үг",
+  "collocations_zh": "站着 / 站立"
+ },
+ {
+  "chinese": "包",
+  "pinyin": "bāo",
+  "mongolian": "цүнх; боох; боодол",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我把包放在桌子上了。",
+  "exampleMongolian": "Би цүнхээ ширээн дээр тавьчихлаа.",
+  "pos": "нэр үг, үйл үг, хэмжих үг",
+  "collocations_zh": "书包 / 钱包"
+ },
+ {
+  "chinese": "过年",
+  "pinyin": "guònián",
+  "mongolian": "шинэ жил (春节) тэмдэглэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "过年的时候，我要回北京。",
+  "exampleMongolian": "Шинэ жилийн үеэр би Бээжин рүү буцна.",
+  "pos": "үйл үг",
+  "collocations_zh": "过年的时候 / 回家过年"
+ },
+ {
+  "chinese": "没意思",
+  "pinyin": "méi yìsi",
+  "mongolian": "уйтгартай, сонирхолгүй",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我觉得看电视没意思。",
+  "exampleMongolian": "Би зурагт үзэх уйтгартай гэж боддог.",
+  "pos": "тогтсон хэллэг",
+  "collocations_zh": "真没意思 / 觉得没意思"
+ },
+ {
+  "chinese": "位",
+  "pinyin": "wèi",
+  "mongolian": "хүн (хүндэтгэн тоолох хэмжих үг)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这位是我的中文老师。",
+  "exampleMongolian": "Энэ хүн бол миний хятад хэлний багш.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "这位老师 / 您二位"
+ },
+ {
+  "chinese": "前面",
+  "pinyin": "qiánmiàn",
+  "mongolian": "урд, өмнө",
+  "hskLevel": "HSK2",
+  "exampleChinese": "超市在学校前面。",
+  "exampleMongolian": "Супермаркет сургуулийн урд байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "在前面 / 教室的前面"
+ },
+ {
+  "chinese": "房子",
+  "pinyin": "fángzi",
+  "mongolian": "байшин, орон сууц",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我家的房子很漂亮。",
+  "exampleMongolian": "Манай байшин маш сайхан.",
+  "pos": "нэр үг",
+  "collocations_zh": "新房子 / 大房子"
+ },
+ {
+  "chinese": "小孩儿",
+  "pinyin": "xiǎoháir",
+  "mongolian": "хүүхэд, жаал",
+  "hskLevel": "HSK2",
+  "exampleChinese": "公园里有很多小孩儿。",
+  "exampleMongolian": "Цэцэрлэгт хүрээлэнд олон хүүхэд байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "小孩儿们 / 教小孩儿"
+ },
+ {
+  "chinese": "女孩儿",
+  "pinyin": "nǚháir",
+  "mongolian": "охин, охид",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我不认识那个女孩儿。",
+  "exampleMongolian": "Би тэр охиныг танихгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "小女孩儿 / 漂亮的女孩儿"
+ },
+ {
+  "chinese": "姓",
+  "pinyin": "xìng",
+  "mongolian": "овогтой байх; овог",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我的老师姓王。",
+  "exampleMongolian": "Миний багшийн овог Ван.",
+  "pos": "үйл үг",
+  "collocations_zh": "你姓什么 / 姓李"
+ },
+ {
+  "chinese": "眼睛",
+  "pinyin": "yǎnjing",
+  "mongolian": "нүд",
+  "hskLevel": "HSK2",
+  "exampleChinese": "她的眼睛很漂亮。",
+  "exampleMongolian": "Түүний нүд маш үзэсгэлэнтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "大眼睛 / 眼睛很漂亮"
+ },
+ {
+  "chinese": "跳舞",
+  "pinyin": "tiàowǔ",
+  "mongolian": "бүжиглэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我很喜欢跳舞，但是跳得不好。",
+  "exampleMongolian": "Би бүжиглэх их дуртай ч сайн бүжиглэж чаддаггүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "喜欢跳舞 / 学跳舞"
+ }
+]

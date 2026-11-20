@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "现在",
+  "pinyin": "xiànzài",
+  "mongolian": "одоо",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你现在去学校吗？",
+  "exampleMongolian": "Чи одоо сургууль руу явах уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "现在几点"
+ },
+ {
+  "chinese": "点",
+  "pinyin": "diǎn",
+  "mongolian": "цаг (цагийн цэг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我家七点吃晚饭。",
+  "exampleMongolian": "Манай гэр долоон цагт оройн хоол иддэг.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "几点"
+ },
+ {
+  "chinese": "早上",
+  "pinyin": "zǎoshang",
+  "mongolian": "өглөө (эрт)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "早上好！",
+  "exampleMongolian": "Өглөөний мэнд!",
+  "pos": "нэр үг",
+  "collocations_zh": "早上好"
+ },
+ {
+  "chinese": "上午",
+  "pinyin": "shàngwǔ",
+  "mongolian": "үдээс өмнө, өглөө",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他上午打了一个电话。",
+  "exampleMongolian": "Тэр үдээс өмнө нэг утасдсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "上午十点"
+ },
+ {
+  "chinese": "分",
+  "pinyin": "fēn",
+  "mongolian": "минут",
+  "hskLevel": "HSK1",
+  "exampleChinese": "现在是3点10分。",
+  "exampleMongolian": "Одоо гурван цаг арван минут.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "三点十分"
+ },
+ {
+  "chinese": "课",
+  "pinyin": "kè",
+  "mongolian": "хичээл",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天我们学第三课。",
+  "exampleMongolian": "Өнөөдөр бид гуравдугаар хичээлийг үзнэ.",
+  "pos": "нэр үг",
+  "collocations_zh": "有课"
+ },
+ {
+  "chinese": "下午",
+  "pinyin": "xiàwǔ",
+  "mongolian": "үдээс хойш",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们今天下午不上课。",
+  "exampleMongolian": "Бид өнөөдөр үдээс хойш хичээлгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "下午两点"
+ },
+ {
+  "chinese": "见",
+  "pinyin": "jiàn",
+  "mongolian": "уулзах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "明天见！",
+  "exampleMongolian": "Маргааш уулзъя!",
+  "pos": "үйл үг",
+  "collocations_zh": "明天见"
+ },
+ {
+  "chinese": "吧",
+  "pinyin": "ba",
+  "mongolian": "…ъя, …аарай (санал, зөвлөгөө, хүсэлт)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们现在走吧。",
+  "exampleMongolian": "Одоо явъя.",
+  "pos": "сул үг",
+  "collocations_zh": "走吧"
+ },
+ {
+  "chinese": "电影院",
+  "pinyin": "diànyǐngyuàn",
+  "mongolian": "кино театр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我和妈妈去电影院看电影。",
+  "exampleMongolian": "Би ээжтэйгээ кино театрт кино үзэхээр явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "一家电影院"
+ },
+ {
+  "chinese": "看",
+  "pinyin": "kàn",
+  "mongolian": "харах, үзэх, унших",
+  "hskLevel": "HSK1",
+  "exampleChinese": "爸爸在看电视。",
+  "exampleMongolian": "Аав зурагт үзэж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "看书"
+ },
+ {
+  "chinese": "电影",
+  "pinyin": "diànyǐng",
+  "mongolian": "кино",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她喜欢看中国电影。",
+  "exampleMongolian": "Тэр хятад кино үзэх дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "看电影"
+ },
+ {
+  "chinese": "事",
+  "pinyin": "shì",
+  "mongolian": "ажил, хэрэг явдал",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他有很多事要忙。",
+  "exampleMongolian": "Түүнд хийх ажил их байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "有事"
+ },
+ {
+  "chinese": "上课",
+  "pinyin": "shàngkè",
+  "mongolian": "хичээлд орох, хичээл хийх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "同学们在上课。",
+  "exampleMongolian": "Ангийнхан хичээл хийж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "上课了"
+ },
+ {
+  "chinese": "呢",
+  "pinyin": "ne",
+  "mongolian": "…шүү (баримтыг баталгаажуулах сул үг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我在吃饭呢。",
+  "exampleMongolian": "Би хоол идэж байна шүү.",
+  "pos": "сул үг",
+  "collocations_zh": "在……呢"
+ },
+ {
+  "chinese": "半",
+  "pinyin": "bàn",
+  "mongolian": "хагас",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她半年没回家了。",
+  "exampleMongolian": "Тэр хагас жил гэртээ харьсангүй.",
+  "pos": "тоо",
+  "collocations_zh": "两点半"
+ },
+ {
+  "chinese": "下课",
+  "pinyin": "xiàkè",
+  "mongolian": "хичээл тарах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "下课了，我要去吃饭。",
+  "exampleMongolian": "Хичээл тарлаа, би хоол идэх гэж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "下课后"
+ },
+ {
+  "chinese": "在",
+  "pinyin": "zài",
+  "mongolian": "байх (байршил заана)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我的手机在房间里。",
+  "exampleMongolian": "Миний утас өрөөнд байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "在家"
+ },
+ {
+  "chinese": "家",
+  "pinyin": "jiā",
+  "mongolian": "гэр",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我星期五回家。",
+  "exampleMongolian": "Би пүрэв гаригт гэртээ харина.",
+  "pos": "нэр үг",
+  "collocations_zh": "回家"
+ },
+ {
+  "chinese": "里",
+  "pinyin": "li",
+  "mongolian": "дотор",
+  "hskLevel": "HSK1",
+  "exampleChinese": "学校里有很多学生。",
+  "exampleMongolian": "Сургуульд олон оюутан байдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "家里"
+ },
+ {
+  "chinese": "晚上",
+  "pinyin": "wǎnshang",
+  "mongolian": "орой",
+  "hskLevel": "HSK1",
+  "exampleChinese": "晚上大家都在家里看电视。",
+  "exampleMongolian": "Орой бүгд гэртээ зурагт үздэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "晚上好"
+ },
+ {
+  "chinese": "医院",
+  "pinyin": "yīyuàn",
+  "mongolian": "эмнэлэг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我爸爸在医院工作。",
+  "exampleMongolian": "Миний аав эмнэлэгт ажилладаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "去医院"
+ },
+ {
+  "chinese": "上班",
+  "pinyin": "shàngbān",
+  "mongolian": "ажилд явах, ажил хийх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "爸爸妈妈上班，我上学。",
+  "exampleMongolian": "Аав ээж ажилдаа явна, би сургуульдаа явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "去上班"
+ },
+ {
+  "chinese": "店",
+  "pinyin": "diàn",
+  "mongolian": "дэлгүүр, лангуу",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你去菜店买些菜吧。",
+  "exampleMongolian": "Чи ногооны дэлгүүрт очиж жаахан ногоо ав.",
+  "pos": "нэр үг",
+  "collocations_zh": "书店"
+ },
+ {
+  "chinese": "菜",
+  "pinyin": "cài",
+  "mongolian": "ногоо, хоол",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你吃点儿菜吧。",
+  "exampleMongolian": "Чи жаахан хоол идээрэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "买菜"
+ },
+ {
+  "chinese": "分钟",
+  "pinyin": "fēnzhōng",
+  "mongolian": "минут (хугацааны урт)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我还有十分钟能到。",
+  "exampleMongolian": "Надад арван минут л үлдсэн, ирнэ.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "十分钟"
+ },
+ {
+  "chinese": "后",
+  "pinyin": "hòu",
+  "mongolian": "дараа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我20分钟后到。",
+  "exampleMongolian": "Би 20 минутын дараа ирнэ.",
+  "pos": "нэр үг",
+  "collocations_zh": "十分钟后"
+ }
+]

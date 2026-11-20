@@ -1,0 +1,132 @@
+[
+ {
+  "chinese": "头",
+  "pinyin": "tóu",
+  "mongolian": "толгой",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他头疼，所以没来上课。",
+  "exampleMongolian": "Тэр толгой өвдөөд хичээлдээ ирсэнгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "头疼 / 低头"
+ },
+ {
+  "chinese": "疼",
+  "pinyin": "téng",
+  "mongolian": "өвдөх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你怎么了？是不是肚子疼？",
+  "exampleMongolian": "Чамд юу болов? Гэдэс өвдөөд байна уу?",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很疼 / 不疼"
+ },
+ {
+  "chinese": "经常",
+  "pinyin": "jīngcháng",
+  "mongolian": "байнга, ойр ойрхон",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我们经常一起去公园玩。",
+  "exampleMongolian": "Бид байнга хамт цэцэрлэгт хүрээлэнд тоглохоор явдаг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "经常头疼 / 经常下雨"
+ },
+ {
+  "chinese": "动",
+  "pinyin": "dòng",
+  "mongolian": "хөдлөх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你不要动，我帮你拍照。",
+  "exampleMongolian": "Чи битгий хөдөлөөрэй, би зургийг чинь авъя.",
+  "pos": "үйл үг",
+  "collocations_zh": "一动不动 / 不要动"
+ },
+ {
+  "chinese": "着",
+  "pinyin": "zhe",
+  "mongolian": "-ж байх, -ад байх (үйлдэл, төлөв үргэлжилж байгааг заана)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他唱着歌走进教室。",
+  "exampleMongolian": "Тэр дуу дуулсаар ангид орлоо.",
+  "pos": "сул үг",
+  "collocations_zh": "坐着 / 开着 / 下着雪"
+ },
+ {
+  "chinese": "路上",
+  "pinyin": "lùshang",
+  "mongolian": "зам дээр, замдаа",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我现在在路上，有事回家再说吧。",
+  "exampleMongolian": "Би одоо замдаа явж байна, хэрэг байвал гэртээ ирээд ярья.",
+  "pos": "нэр үг",
+  "collocations_zh": "在路上 / 路上车多"
+ },
+ {
+  "chinese": "慢",
+  "pinyin": "màn",
+  "mongolian": "удаан",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他开车很慢。",
+  "exampleMongolian": "Тэр машинаа удаан жолооддог.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "走得慢 / 开慢一点儿"
+ },
+ {
+  "chinese": "进",
+  "pinyin": "jìn",
+  "mongolian": "орох",
+  "hskLevel": "HSK2",
+  "exampleChinese": "进来吧，门没关。",
+  "exampleMongolian": "Ороод ирээрэй, хаалга хаагаагүй байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "进来 / 进去"
+ },
+ {
+  "chinese": "药",
+  "pinyin": "yào",
+  "mongolian": "эм",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你今天吃过药了吗？",
+  "exampleMongolian": "Чи өнөөдөр эм уусан уу?",
+  "pos": "нэр үг",
+  "collocations_zh": "吃药 / 买药"
+ },
+ {
+  "chinese": "身体",
+  "pinyin": "shēntǐ",
+  "mongolian": "бие, эрүүл мэнд",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你妈妈身体怎么样了？",
+  "exampleMongolian": "Ээж чинь эрүүл мэнд нь ямар байна?",
+  "pos": "нэр үг",
+  "collocations_zh": "身体很好 / 身体不舒服"
+ },
+ {
+  "chinese": "时",
+  "pinyin": "shí",
+  "mongolian": "үе, цаг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我回家时妈妈正在做饭。",
+  "exampleMongolian": "Би гэртээ ирэхэд ээж хоол хийж байсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "有时 / 同时"
+ },
+ {
+  "chinese": "最",
+  "pinyin": "zuì",
+  "mongolian": "хамгийн",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天是今年最热的一天。",
+  "exampleMongolian": "Өнөөдөр энэ жилийн хамгийн халуун өдөр боллоо.",
+  "pos": "дайвар үг",
+  "collocations_zh": "最好 / 最后 / 最高"
+ },
+ {
+  "chinese": "药店",
+  "pinyin": "yàodiàn",
+  "mongolian": "эмийн сан",
+  "hskLevel": "HSK2",
+  "exampleChinese": "药店在医院的左边。",
+  "exampleMongolian": "Эмийн сан эмнэлгийн зүүн талд байдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "去药店 / 一家药店"
+ }
+]

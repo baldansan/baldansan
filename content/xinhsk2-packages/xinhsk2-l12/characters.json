@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "晴",
+   "pinyin": [
+    "qíng"
+   ],
+   "strokeCount": 12,
+   "radical": "日",
+   "practice": "write",
+   "meaningMn": "нарлаг",
+   "etymology_mn": "日 (нар) + 青 (дуудлага): нар гарсан цэлмэг өдөр",
+   "exampleWords": [
+    "晴天",
+    "大晴天"
+   ]
+  },
+  {
+   "hanzi": "阴",
+   "pinyin": [
+    "yīn"
+   ],
+   "strokeCount": 7,
+   "radical": "阝",
+   "practice": "write",
+   "meaningMn": "үүлэрхэг",
+   "etymology_mn": "阝 + 月: үүлэрхэг, нар харагдахгүй байдал",
+   "exampleWords": [
+    "阴天",
+    "很阴"
+   ]
+  },
+  {
+   "hanzi": "楼",
+   "pinyin": [
+    "lóu"
+   ],
+   "strokeCount": 13,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "барилга",
+   "etymology_mn": "木 (мод) + 娄 (дуудлага): эртний модон барилга",
+   "exampleWords": [
+    "楼下",
+    "高楼"
+   ]
+  },
+  {
+   "hanzi": "铁",
+   "pinyin": [
+    "tiě"
+   ],
+   "strokeCount": 10,
+   "radical": "钅",
+   "practice": "write",
+   "meaningMn": "төмөр",
+   "etymology_mn": "钅 (металл) + 失 (дуудлага): төмөр",
+   "exampleWords": [
+    "地铁",
+    "铁路"
+   ]
+  },
+  {
+   "hanzi": "站",
+   "pinyin": [
+    "zhàn"
+   ],
+   "strokeCount": 10,
+   "radical": "立",
+   "practice": "write",
+   "meaningMn": "буудал",
+   "etymology_mn": "立 (зогсох) + 占: хүн зогсож хүлээх газар",
+   "exampleWords": [
+    "公交站",
+    "地铁站"
+   ]
+  },
+  {
+   "hanzi": "外",
+   "pinyin": [
+    "wài"
+   ],
+   "strokeCount": 5,
+   "radical": "夕",
+   "practice": "write",
+   "meaningMn": "гадна",
+   "etymology_mn": "夕 + 卜: гадна",
+   "exampleWords": [
+    "外面",
+    "外边"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "铁",
+   "b": "钱",
+   "word_a": "地铁",
+   "word_b": "我的钱",
+   "mn": "铁 — төмөр; 钱 — мөнгө",
+   "tip_mn": "Хоёулаа зүүн талдаа 钅 (металл) радикалтай. 铁 нь 失-тэй, 钱 нь 戋-тэй. 地铁 «метро», 钱 «мөнгө»."
+  },
+  {
+   "a": "阴",
+   "b": "院",
+   "word_a": "阴天",
+   "word_b": "医院",
+   "mn": "阴 — үүлэрхэг; 院 — хашаа, эмнэлэг",
+   "tip_mn": "Хоёулаа 阝 радикалтай. 阴 нь 月-тэй, 院 нь 完-тэй. 阴天 «үүлэрхэг өдөр», 医院 «эмнэлэг»."
+  },
+  {
+   "a": "晴",
+   "b": "请",
+   "word_a": "晴天",
+   "word_b": "请问",
+   "mn": "晴 — нарлаг; 请 — урих, гуйх",
+   "tip_mn": "晴 нь 日 (нар)-тай, 请 нь 讠 (үг)-тэй. Баруун тал нь 青 ижил байна."
+  },
+  {
+   "a": "地",
+   "b": "他",
+   "word_a": "地铁",
+   "word_b": "他们",
+   "mn": "地 — газар; 他 — тэр",
+   "tip_mn": "地 нь 土 (шороо)-той, 他 нь 亻 (хүн)-тэй. Баруун тал нь 也 ижил."
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "裤",
+   "pinyin": [
+    "kù"
+   ],
+   "strokeCount": 12,
+   "radical": "衤",
+   "practice": "write",
+   "meaningMn": "өмд",
+   "etymology_mn": "衤 (хувцас) + 库 (дуудлага): биеийн доод хувцас",
+   "exampleWords": [
+    "裤子",
+    "一条裤子"
+   ]
+  },
+  {
+   "hanzi": "红",
+   "pinyin": [
+    "hóng"
+   ],
+   "strokeCount": 6,
+   "radical": "纟",
+   "practice": "write",
+   "meaningMn": "улаан",
+   "etymology_mn": "纟 (торго) + 工 (дуудлага): улаан өнгийн торго",
+   "exampleWords": [
+    "红色",
+    "红色的"
+   ]
+  },
+  {
+   "hanzi": "绿",
+   "pinyin": [
+    "lǜ"
+   ],
+   "strokeCount": 11,
+   "radical": "纟",
+   "practice": "write",
+   "meaningMn": "ногоон",
+   "etymology_mn": "纟 (торго) + 录 (дуудлага): ногоон өнгийн торго",
+   "exampleWords": [
+    "绿色",
+    "绿色的书包"
+   ]
+  },
+  {
+   "hanzi": "试",
+   "pinyin": [
+    "shì"
+   ],
+   "strokeCount": 8,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "оролдох",
+   "etymology_mn": "讠 (яриа) + 式 (дуудлага): «оролдож үзэх»",
+   "exampleWords": [
+    "试试",
+    "试衣服"
+   ]
+  },
+  {
+   "hanzi": "包",
+   "pinyin": [
+    "bāo"
+   ],
+   "strokeCount": 5,
+   "radical": "勹",
+   "practice": "write",
+   "meaningMn": "боодол, цүнх",
+   "etymology_mn": "勹 (боох) дотор 巳: ямар нэгэн юм боож байгаа дүр",
+   "exampleWords": [
+    "书包",
+    "包子"
+   ]
+  },
+  {
+   "hanzi": "颜",
+   "pinyin": [
+    "yán"
+   ],
+   "strokeCount": 15,
+   "radical": "页",
+   "practice": "write",
+   "meaningMn": "өнгө",
+   "etymology_mn": "彦 (дуудлага) + 页 (толгой, нүүр): нүүрний өнгө, дараа нь «өнгө»",
+   "exampleWords": [
+    "颜色",
+    "什么颜色"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "裤",
+   "b": "库",
+   "word_a": "裤子",
+   "word_b": "车库",
+   "mn": "裤 — өмд; 库 — агуулах",
+   "tip_mn": "裤 дээр 衤 (хувцас) нэмэгдсэн: өмд. 库 нь агуулах, гараж."
+  },
+  {
+   "a": "场",
+   "b": "汤",
+   "word_a": "商场",
+   "word_b": "喝汤",
+   "mn": "场 — талбай, төв; 汤 — шөл",
+   "tip_mn": "场 нь 土 (газар)-тай, газар талбай. 汤 нь 氵 (ус)-тай, шингэн шөл."
+  },
+  {
+   "a": "红",
+   "b": "江",
+   "word_a": "红色",
+   "word_b": "长江",
+   "mn": "红 — улаан; 江 — гол",
+   "tip_mn": "红 нь 纟 (торго)-той, өнгөтэй холбоотой. 江 нь 氵 (ус)-тай, голыг хэлнэ."
+  },
+  {
+   "a": "试",
+   "b": "式",
+   "word_a": "试试",
+   "word_b": "老式",
+   "mn": "试 — оролдох; 式 — хэлбэр, маяг",
+   "tip_mn": "试 дээр 讠 (яриа) нэмэгдсэн: оролдох. 式 нь хэлбэр, маяг."
+  }
+ ]
+}

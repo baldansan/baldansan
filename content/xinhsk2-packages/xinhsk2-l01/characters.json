@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "请",
+   "pinyin": [
+    "qǐng"
+   ],
+   "strokeCount": 10,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "урих; гуйх",
+   "etymology_mn": "讠 (үг хэлэх) + 青 (дуудлага): үг хэлж гуйх, урих",
+   "exampleWords": [
+    "请问",
+    "请客"
+   ]
+  },
+  {
+   "hanzi": "让",
+   "pinyin": [
+    "ràng"
+   ],
+   "strokeCount": 5,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "хийлгэх; зөвшөөрөх",
+   "etymology_mn": "讠 (үг) + 上: үгээр зөвшөөрөх, хийлгэх",
+   "exampleWords": [
+    "让他来",
+    "让我休息"
+   ]
+  },
+  {
+   "hanzi": "接",
+   "pinyin": [
+    "jiē"
+   ],
+   "strokeCount": 11,
+   "radical": "扌",
+   "practice": "write",
+   "meaningMn": "угтан авах",
+   "etymology_mn": "扌 (гар) + 妾 (дуудлага): гараараа угтан авах",
+   "exampleWords": [
+    "接人",
+    "接孩子"
+   ]
+  },
+  {
+   "hanzi": "次",
+   "pinyin": [
+    "cì"
+   ],
+   "strokeCount": 6,
+   "radical": "冫",
+   "practice": "write",
+   "meaningMn": "удаа",
+   "etymology_mn": "冫 + 欠: үйлдлийн удаа",
+   "exampleWords": [
+    "第一次",
+    "每次"
+   ]
+  },
+  {
+   "hanzi": "懂",
+   "pinyin": [
+    "dǒng"
+   ],
+   "strokeCount": 15,
+   "radical": "忄",
+   "practice": "write",
+   "meaningMn": "ойлгох",
+   "etymology_mn": "忄 (сэтгэл) + 董 (дуудлага): сэтгэлээрээ ойлгох",
+   "exampleWords": [
+    "听懂",
+    "不懂"
+   ]
+  },
+  {
+   "hanzi": "忙",
+   "pinyin": [
+    "máng"
+   ],
+   "strokeCount": 6,
+   "radical": "忄",
+   "practice": "write",
+   "meaningMn": "завгүй",
+   "etymology_mn": "忄 (сэтгэл) + 亡: сэтгэл түгшиж завгүй байх",
+   "exampleWords": [
+    "很忙",
+    "不忙"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "请",
+   "b": "情",
+   "word_a": "请问",
+   "word_b": "事情",
+   "mn": "请 — урих, гуйх; 情 — мэдрэмж, хэрэг явдал",
+   "tip_mn": "请 нь 讠 (үг)-тэй: үгээр гуйх. 情 нь 忄 (сэтгэл)-тэй: мэдрэмж."
+  },
+  {
+   "a": "已",
+   "b": "己",
+   "word_a": "已经",
+   "word_b": "自己",
+   "mn": "已 — аль хэдийн; 己 — өөрөө",
+   "tip_mn": "已 нь хаалттай, 己 нь дээд талаараа онгорхой. 已经 болон 自己-г ялгаж санаарай."
+  },
+  {
+   "a": "让",
+   "b": "认",
+   "word_a": "让我来",
+   "word_b": "认识",
+   "mn": "让 — хийлгэх; 认 — таних",
+   "tip_mn": "让 нь 上-тэй, 认 нь 人-тэй. 认识 «танилцах» гэж 人-аар санаарай."
+  },
+  {
+   "a": "次",
+   "b": "欠",
+   "word_a": "第一次",
+   "word_b": "欠钱",
+   "mn": "次 — удаа; 欠 — өр, дутах",
+   "tip_mn": "次 нь 冫 + 欠 гэж бүтдэг, зүүн талд нэг тэмдэг нэмэгдсэн."
+  }
+ ]
+}

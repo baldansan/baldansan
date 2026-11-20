@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-hero.webp",
+   "title": "12-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l12-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w1.webp",
+   "title": "地铁 dìtiě — метро",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l12-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w2.webp",
+   "title": "楼 lóu — барилга, байшин, давхар",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l12-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w3.webp",
+   "title": "站 zhàn — буудал, зогсоол",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l12-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w4.webp",
+   "title": "外面 wàimiàn — гадаа",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l12-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk2-images/l12/l12-w5.webp",
+   "title": "事情 shìqing — ажил хэрэг, юм явдал",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

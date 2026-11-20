@@ -1,0 +1,272 @@
+[
+ {
+  "chinese": "上",
+  "pinyin": "shàng",
+  "mongolian": "(тээвэрт) суух; тогтсон цагт эхлэх (хичээл, сургууль)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们什么时候上飞机？",
+  "exampleMongolian": "Бид хэзээ онгоцонд суух вэ?",
+  "pos": "үйл үг",
+  "collocations_zh": "上车 / 上课 / 上小学"
+ },
+ {
+  "chinese": "火车",
+  "pinyin": "huǒchē",
+  "mongolian": "галт тэрэг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们坐火车去北京吧。",
+  "exampleMongolian": "Бид галт тэргээр Бээжин явъя.",
+  "pos": "нэр үг",
+  "collocations_zh": "坐火车 / 上火车"
+ },
+ {
+  "chinese": "中午",
+  "pinyin": "zhōngwǔ",
+  "mongolian": "үд дунд",
+  "hskLevel": "HSK1",
+  "exampleChinese": "今天中午真热！",
+  "exampleMongolian": "Өнөөдөр үд дунд үнэхээр халуун байна!",
+  "pos": "нэр үг",
+  "collocations_zh": "中午吃饭"
+ },
+ {
+  "chinese": "开",
+  "pinyin": "kāi",
+  "mongolian": "(тээвэр) хөдлөх, явах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "车什么时候开？",
+  "exampleMongolian": "Галт тэрэг хэзээ хөдлөх вэ?",
+  "pos": "үйл үг",
+  "collocations_zh": "车开了"
+ },
+ {
+  "chinese": "有些",
+  "pinyin": "yǒuxiē",
+  "mongolian": "зарим",
+  "hskLevel": "HSK1",
+  "exampleChinese": "有些学生在上课，有些在外面玩。",
+  "exampleMongolian": "Зарим оюутан хичээл орж, зарим нь гадаа тоглож байна.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "有些人"
+ },
+ {
+  "chinese": "有的",
+  "pinyin": "yǒude",
+  "mongolian": "зарим",
+  "hskLevel": "HSK1",
+  "exampleChinese": "有的人喜欢吃包子，有的人喜欢吃面条儿。",
+  "exampleMongolian": "Зарим хүн бууз, зарим хүн гоймон идэх дуртай.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "有的人"
+ },
+ {
+  "chinese": "了",
+  "pinyin": "le",
+  "mongolian": "(үйл үгийн ард) үйлдэл болж дууссаныг заана",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我买了一只小狗。",
+  "exampleMongolian": "Би нэг гөлөг авлаа.",
+  "pos": "сул үг",
+  "collocations_zh": "看了 / 买了"
+ },
+ {
+  "chinese": "写",
+  "pinyin": "xiě",
+  "mongolian": "бичих",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她会写一些汉字。",
+  "exampleMongolian": "Тэр зарим ханз бичиж чаддаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "写字 / 写汉字"
+ },
+ {
+  "chinese": "都",
+  "pinyin": "dōu",
+  "mongolian": "бүгд, хоёулаа",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他们都是我的朋友。",
+  "exampleMongolian": "Тэд бүгд миний найзууд.",
+  "pos": "дайвар үг",
+  "collocations_zh": "我们都 / 都没"
+ },
+ {
+  "chinese": "听见",
+  "pinyin": "tīngjiàn",
+  "mongolian": "сонсогдох, сонсож авах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我听不见老师说的话。",
+  "exampleMongolian": "Би багшийн хэлснийг сонсож чадахгүй байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "没听见 / 听不见"
+ },
+ {
+  "chinese": "不要",
+  "pinyin": "búyào",
+  "mongolian": "битгий",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你不要说了，我不想听。",
+  "exampleMongolian": "Чи битгий ярь, би сонсохыг хүсэхгүй байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "不要说话"
+ },
+ {
+  "chinese": "说话",
+  "pinyin": "shuōhuà",
+  "mongolian": "ярих",
+  "hskLevel": "HSK1",
+  "exampleChinese": "昨天他和我说了很多话。",
+  "exampleMongolian": "Өчигдөр тэр надтай их юм ярьсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "不要说话 / 说了话"
+ },
+ {
+  "chinese": "听",
+  "pinyin": "tīng",
+  "mongolian": "сонсох",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她很喜欢听中文歌。",
+  "exampleMongolian": "Тэр хятад дуу сонсох их дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "听歌 / 听课"
+ },
+ {
+  "chinese": "哪些",
+  "pinyin": "nǎxiē",
+  "mongolian": "аль (олон), ямар (олон)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "哪些书是你的？",
+  "exampleMongolian": "Аль номнууд чинийх вэ?",
+  "pos": "төлөөний үг",
+  "collocations_zh": "哪些字"
+ },
+ {
+  "chinese": "字",
+  "pinyin": "zì",
+  "mongolian": "үсэг, ханз",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我弟弟还不会写字。",
+  "exampleMongolian": "Миний дүү одоохондоо бичиж чадахгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "写字 / 一个字"
+ },
+ {
+  "chinese": "汉语",
+  "pinyin": "Hànyǔ",
+  "mongolian": "хятад хэл",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢学汉语。",
+  "exampleMongolian": "Би хятад хэл сурах дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "学汉语 / 汉语课"
+ },
+ {
+  "chinese": "汉字",
+  "pinyin": "Hànzì",
+  "mongolian": "ханз",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我想学习写汉字。",
+  "exampleMongolian": "Би ханз бичиж сурмаар байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "写汉字"
+ },
+ {
+  "chinese": "明年",
+  "pinyin": "míngnián",
+  "mongolian": "ирэх жил",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们明年要去北京玩。",
+  "exampleMongolian": "Бид ирэх жил Бээжин явж зугаалах гэж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "明年上学"
+ },
+ {
+  "chinese": "中学",
+  "pinyin": "zhōngxué",
+  "mongolian": "дунд сургууль",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这是我的中学。",
+  "exampleMongolian": "Энэ миний дунд сургууль.",
+  "pos": "нэр үг",
+  "collocations_zh": "上中学"
+ },
+ {
+  "chinese": "小学",
+  "pinyin": "xiǎoxué",
+  "mongolian": "бага сургууль",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我爸爸是小学老师。",
+  "exampleMongolian": "Миний аав бага сургуулийн багш.",
+  "pos": "нэр үг",
+  "collocations_zh": "上小学"
+ },
+ {
+  "chinese": "中学生",
+  "pinyin": "zhōngxuéshēng",
+  "mongolian": "дунд сургуулийн сурагч",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他儿子13岁，是中学生了。",
+  "exampleMongolian": "Түүний хүү арван гурван настай, дунд сургуулийн сурагч болсон.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个中学生"
+ },
+ {
+  "chinese": "小学生",
+  "pinyin": "xiǎoxuéshēng",
+  "mongolian": "бага сургуулийн сурагч",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他们都是小学生。",
+  "exampleMongolian": "Тэд бүгд бага сургуулийн сурагч.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个小学生"
+ },
+ {
+  "chinese": "上学",
+  "pinyin": "shàngxué",
+  "mongolian": "сургуульд орох; сургуульд явах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我今天生病了，不去上学。",
+  "exampleMongolian": "Би өнөөдөр өвдсөн тул сургуульд явахгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "上学后"
+ },
+ {
+  "chinese": "他们",
+  "pinyin": "tāmen",
+  "mongolian": "тэд",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我昨天看见他们了。",
+  "exampleMongolian": "Би өчигдөр тэднийг харсан.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "他们都"
+ },
+ {
+  "chinese": "她们",
+  "pinyin": "tāmen",
+  "mongolian": "тэд (эмэгтэйчүүд)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "她们三个人是好朋友。",
+  "exampleMongolian": "Тэр гурав сайн найзууд.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "她们都"
+ },
+ {
+  "chinese": "它们",
+  "pinyin": "tāmen",
+  "mongolian": "тэдгээр (амьтан, эд зүйл)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "它们都在椅子上睡觉呢。",
+  "exampleMongolian": "Тэд (амьтад) бүгд сандал дээр унтаж байна.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "它们都"
+ },
+ {
+  "chinese": "晚",
+  "pinyin": "wǎn",
+  "mongolian": "оройтсон, хоцорсон",
+  "hskLevel": "HSK1",
+  "exampleChinese": "对不起，我今天来晚了。",
+  "exampleMongolian": "Уучлаарай, би өнөөдөр хоцорч ирлээ.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "太晚了 / 来晚了"
+ }
+]

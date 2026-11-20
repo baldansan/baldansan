@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "鱼",
+   "pinyin": [
+    "yú"
+   ],
+   "strokeCount": 8,
+   "radical": "鱼",
+   "practice": "write",
+   "meaningMn": "загас",
+   "etymology_mn": "загасны дүрсээс үүссэн ханз",
+   "exampleWords": [
+    "一条鱼",
+    "吃鱼"
+   ]
+  },
+  {
+   "hanzi": "肉",
+   "pinyin": [
+    "ròu"
+   ],
+   "strokeCount": 6,
+   "radical": "肉",
+   "practice": "write",
+   "meaningMn": "мах",
+   "etymology_mn": "махны зүсмийн дүрсээс үүссэн",
+   "exampleWords": [
+    "吃肉",
+    "鸡肉"
+   ]
+  },
+  {
+   "hanzi": "床",
+   "pinyin": [
+    "chuáng"
+   ],
+   "strokeCount": 7,
+   "radical": "广",
+   "practice": "write",
+   "meaningMn": "ор",
+   "etymology_mn": "广 (байшин) + 木 (мод): байшинд байдаг модон ор",
+   "exampleWords": [
+    "床上",
+    "一张床"
+   ]
+  },
+  {
+   "hanzi": "笔",
+   "pinyin": [
+    "bǐ"
+   ],
+   "strokeCount": 10,
+   "radical": "竹",
+   "practice": "write",
+   "meaningMn": "үзэг",
+   "etymology_mn": "竹 (хулс) + 毛 (үс): хулсан иштэй үзэг",
+   "exampleWords": [
+    "画笔",
+    "铅笔"
+   ]
+  },
+  {
+   "hanzi": "糕",
+   "pinyin": [
+    "gāo"
+   ],
+   "strokeCount": 16,
+   "radical": "米",
+   "practice": "write",
+   "meaningMn": "жигнэмэг, бялуу",
+   "etymology_mn": "米 (будаа) + 羔 (дуудлага): будааны гурилаар хийсэн зүйл",
+   "exampleWords": [
+    "蛋糕",
+    "年糕"
+   ]
+  },
+  {
+   "hanzi": "忘",
+   "pinyin": [
+    "wàng"
+   ],
+   "strokeCount": 7,
+   "radical": "心",
+   "practice": "write",
+   "meaningMn": "мартах",
+   "etymology_mn": "亡 (алга болох) + 心: сэтгэлээс алга болох",
+   "exampleWords": [
+    "忘了",
+    "别忘"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "快",
+   "b": "块",
+   "word_a": "快乐",
+   "word_b": "一块蛋糕",
+   "mn": "快 — баяр, хурдан; 块 — зүсэм, хэсэг",
+   "tip_mn": "快 нь 忄 (сэтгэл), 块 нь 土-тэй хэмжих үг. Бялууны хэсгийг 一块 гэнэ."
+  },
+  {
+   "a": "忙",
+   "b": "忘",
+   "word_a": "很忙",
+   "word_b": "忘了",
+   "mn": "忙 — завгүй; 忘 — мартах",
+   "tip_mn": "忙 нь зүүн талдаа 忄, 忘 нь доороо 心 бичигддэг. Хоёулаа 亡-тай."
+  },
+  {
+   "a": "长",
+   "b": "张",
+   "word_a": "很长",
+   "word_b": "一张纸",
+   "mn": "长 — урт; 张 — хуудас (хэмжих үг)",
+   "tip_mn": "张 нь 弓-тэй, дотроо 长-тэй. Цаас, ширээний хэмжих үг 张."
+  },
+  {
+   "a": "画",
+   "b": "话",
+   "word_a": "画画",
+   "word_b": "电话",
+   "mn": "画 — зурах; 话 — яриа",
+   "tip_mn": "话 нь 讠 (яриа) радикалтай, 画 нь зурах зүйлтэй холбоотой."
+  }
+ ]
+}

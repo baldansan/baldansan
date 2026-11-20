@@ -1,0 +1,202 @@
+[
+ {
+  "chinese": "可以",
+  "pinyin": "kěyǐ",
+  "mongolian": "болох, зөвшөөрөгдөх; чадах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我可以坐这儿吗？",
+  "exampleMongolian": "Би энд суугаад болох уу?",
+  "pos": "баймж үйл үг",
+  "collocations_zh": "可以坐 / 不可以"
+ },
+ {
+  "chinese": "再",
+  "pinyin": "zài",
+  "mongolian": "дахин, дахиад",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我想再吃一个苹果。",
+  "exampleMongolian": "Би дахиад нэг алим идмээр байна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "再吃 / 再要"
+ },
+ {
+  "chinese": "问题",
+  "pinyin": "wèntí",
+  "mongolian": "асуулт; асуудал",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你有问题可以来问我。",
+  "exampleMongolian": "Асуулт байвал надаас асуугаарай.",
+  "pos": "нэр үг",
+  "collocations_zh": "有问题 / 问问题"
+ },
+ {
+  "chinese": "卖",
+  "pinyin": "mài",
+  "mongolian": "зарах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "他在一家商店卖水果。",
+  "exampleMongolian": "Тэр нэг дэлгүүрт жимс зардаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "卖东西 / 卖书"
+ },
+ {
+  "chinese": "打电话",
+  "pinyin": "dǎ diànhuà",
+  "mongolian": "утсаар залгах",
+  "hskLevel": "HSK1",
+  "exampleChinese": "昨天我给妈妈打了一个电话。",
+  "exampleMongolian": "Өчигдөр би ээж рүүгээ утсаар залгасан.",
+  "pos": "үйл үг",
+  "collocations_zh": "给……打电话"
+ },
+ {
+  "chinese": "一下",
+  "pinyin": "yíxià",
+  "mongolian": "нэг удаа, түр зуур (үйл үгийн ард орж «жаахан …» гэсэн утга өгнө)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你看一下时间，现在几点了？",
+  "exampleMongolian": "Цагаа нэг хараач, одоо хэд болж байна?",
+  "pos": "хэмжих үг",
+  "collocations_zh": "看一下 / 问一下"
+ },
+ {
+  "chinese": "服务员",
+  "pinyin": "fúwùyuán",
+  "mongolian": "үйлчлэгч, зөөгч",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我是这个饭馆的服务员。",
+  "exampleMongolian": "Би энэ зоогийн газрын үйлчлэгч.",
+  "pos": "нэр үг",
+  "collocations_zh": "找服务员"
+ },
+ {
+  "chinese": "女士",
+  "pinyin": "nǚshì",
+  "mongolian": "хатагтай",
+  "hskLevel": "HSK1",
+  "exampleChinese": "王女士是我的大学同学。",
+  "exampleMongolian": "Хатагтай Ван миний их сургуулийн ангийн хүн.",
+  "pos": "нэр үг",
+  "collocations_zh": "女士们、先生们"
+ },
+ {
+  "chinese": "请",
+  "pinyin": "qǐng",
+  "mongolian": "гуйх; (эелдгээр) …аарай",
+  "hskLevel": "HSK1",
+  "exampleChinese": "请给我一杯热水，谢谢。",
+  "exampleMongolian": "Надад нэг аяга халуун ус өгөөч, баярлалаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "请坐 / 请喝茶"
+ },
+ {
+  "chinese": "坐",
+  "pinyin": "zuò",
+  "mongolian": "суух",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我们坐在那边吧。",
+  "exampleMongolian": "Бид тэнд суъя.",
+  "pos": "үйл үг",
+  "collocations_zh": "请坐 / 坐在"
+ },
+ {
+  "chinese": "给",
+  "pinyin": "gěi",
+  "mongolian": "өгөх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "给你一个苹果。",
+  "exampleMongolian": "Чамд нэг алим өгье.",
+  "pos": "үйл үг",
+  "collocations_zh": "给我 / 给……打电话"
+ },
+ {
+  "chinese": "杯",
+  "pinyin": "bēi",
+  "mongolian": "аяга (ундааны хэмжих үг)",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我想要一杯茶。",
+  "exampleMongolian": "Би нэг аяга цай авмаар байна.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一杯茶 / 一杯牛奶"
+ },
+ {
+  "chinese": "要",
+  "pinyin": "yào",
+  "mongolian": "авах, захиалах, хүсэх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我要一杯热水，谢谢。",
+  "exampleMongolian": "Надад нэг аяга халуун ус өгөөч, баярлалаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "要茶 / 还要"
+ },
+ {
+  "chinese": "早饭",
+  "pinyin": "zǎofàn",
+  "mongolian": "өглөөний хоол",
+  "hskLevel": "HSK1",
+  "exampleChinese": "你吃早饭了吗？",
+  "exampleMongolian": "Чи өглөөний хоолоо идсэн үү?",
+  "pos": "нэр үг",
+  "collocations_zh": "吃早饭"
+ },
+ {
+  "chinese": "这个",
+  "pinyin": "zhège",
+  "mongolian": "энэ",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我喜欢这个杯子。",
+  "exampleMongolian": "Би энэ аяганд дуртай.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "这个面包"
+ },
+ {
+  "chinese": "面包",
+  "pinyin": "miànbāo",
+  "mongolian": "талх",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我想再吃一块面包。",
+  "exampleMongolian": "Би дахиад нэг зүсэм талх идмээр байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃面包 / 一块面包"
+ },
+ {
+  "chinese": "鸡蛋",
+  "pinyin": "jīdàn",
+  "mongolian": "тахианы өндөг",
+  "hskLevel": "HSK1",
+  "exampleChinese": "我昨天在超市买了三斤鸡蛋。",
+  "exampleMongolian": "Би өчигдөр дэлгүүрээс гурван жин өндөг авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "一个鸡蛋 / 买鸡蛋"
+ },
+ {
+  "chinese": "先生",
+  "pinyin": "xiānsheng",
+  "mongolian": "ноён, эрхэм",
+  "hskLevel": "HSK1",
+  "exampleChinese": "先生，请坐。",
+  "exampleMongolian": "Ноён, суугаарай.",
+  "pos": "нэр үг",
+  "collocations_zh": "先生们"
+ },
+ {
+  "chinese": "一半",
+  "pinyin": "yíbàn",
+  "mongolian": "хагас",
+  "hskLevel": "HSK1",
+  "exampleChinese": "这个苹果我们一人一半吧。",
+  "exampleMongolian": "Энэ алимыг бид хүн бүр хагасыг нь авъя.",
+  "pos": "тоо",
+  "collocations_zh": "吃了一半"
+ },
+ {
+  "chinese": "茶",
+  "pinyin": "chá",
+  "mongolian": "цай",
+  "hskLevel": "HSK1",
+  "exampleChinese": "很多中国人喜欢喝茶。",
+  "exampleMongolian": "Олон хятад хүн цай уух дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "喝茶 / 一杯茶"
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "chinese": "就",
+  "pinyin": "jiù",
+  "mongolian": "яг, тэр нь (баталгаажуулах); тэр дор нь",
+  "hskLevel": "HSK2",
+  "exampleChinese": "她就是我的姐姐。",
+  "exampleMongolian": "Тэр бол яг миний эгч.",
+  "pos": "дайвар үг",
+  "collocations_zh": "就是 / 就找我"
+ },
+ {
+  "chinese": "给",
+  "pinyin": "gěi",
+  "mongolian": "-д, -д зориулан (хүлээн авагчийг заана); өгөх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "老师给我们上课。",
+  "exampleMongolian": "Багш бидэнд хичээл заадаг.",
+  "pos": "угтвар үг",
+  "collocations_zh": "给我打电话 / 给他介绍"
+ },
+ {
+  "chinese": "让",
+  "pinyin": "ràng",
+  "mongolian": "хийлгэх, зөвшөөрөх, «…гэж хэлэх»",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你让他进来吧，外面太冷了。",
+  "exampleMongolian": "Түүнийг оруулаарай, гадаа хэтэрхий хүйтэн байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "让他来 / 让我休息"
+ },
+ {
+  "chinese": "接",
+  "pinyin": "jiē",
+  "mongolian": "угтан авах, очиж авах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我要去机场接一个朋友。",
+  "exampleMongolian": "Би нисэх буудал руу нэг найзаа очиж авах гэж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "接人 / 接孩子"
+ },
+ {
+  "chinese": "次",
+  "pinyin": "cì",
+  "mongolian": "удаа (хэмжих үг)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这是我第一次来中国。",
+  "exampleMongolian": "Энэ бол миний Хятадад анх удаа ирж байгаа нь.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "第一次 / 每次 / 几次"
+ },
+ {
+  "chinese": "旅游",
+  "pinyin": "lǚyóu",
+  "mongolian": "аялах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "你想去哪儿旅游？",
+  "exampleMongolian": "Чи хаашаа аялмаар байна?",
+  "pos": "үйл үг",
+  "collocations_zh": "去旅游 / 喜欢旅游"
+ },
+ {
+  "chinese": "帮忙",
+  "pinyin": "bāngmáng",
+  "mongolian": "тусалах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我想请你帮个忙。",
+  "exampleMongolian": "Би чамаас нэг юманд тусламж гуймаар байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "帮个忙 / 帮他的忙"
+ },
+ {
+  "chinese": "不好意思",
+  "pinyin": "bù hǎoyìsi",
+  "mongolian": "эвгүйрхэх; уучлаарай",
+  "hskLevel": "HSK2",
+  "exampleChinese": "不好意思，请让一下。",
+  "exampleMongolian": "Уучлаарай, жаахан зай тавьж өгөөч.",
+  "pos": "тогтсон хэллэг",
+  "collocations_zh": "不好意思，…"
+ },
+ {
+  "chinese": "已经",
+  "pinyin": "yǐjīng",
+  "mongolian": "аль хэдийн",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他已经去学校了。",
+  "exampleMongolian": "Тэр аль хэдийн сургуульд явчихсан.",
+  "pos": "дайвар үг",
+  "collocations_zh": "已经…了"
+ },
+ {
+  "chinese": "那",
+  "pinyin": "nà",
+  "mongolian": "тэгвэл",
+  "hskLevel": "HSK2",
+  "exampleChinese": "那我们明天再去吧。",
+  "exampleMongolian": "Тэгвэл бид маргааш дахин явъя.",
+  "pos": "холбоос",
+  "collocations_zh": "那我们… / 那你…"
+ },
+ {
+  "chinese": "介绍",
+  "pinyin": "jièshào",
+  "mongolian": "танилцуулах",
+  "hskLevel": "HSK2",
+  "exampleChinese": "她给我介绍了很多朋友。",
+  "exampleMongolian": "Тэр надад олон найз танилцуулсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "介绍朋友 / 介绍一下"
+ },
+ {
+  "chinese": "有时",
+  "pinyin": "yǒushí",
+  "mongolian": "заримдаа",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我有时开车上班，有时坐出租车上班。",
+  "exampleMongolian": "Би заримдаа машинаар, заримдаа таксигаар ажилдаа явдаг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "有时…有时…"
+ },
+ {
+  "chinese": "懂",
+  "pinyin": "dǒng",
+  "mongolian": "ойлгох",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他听不懂中文。",
+  "exampleMongolian": "Тэр хятад хэлийг сонсоод ойлгодоггүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "听懂 / 不懂"
+ },
+ {
+  "chinese": "意思",
+  "pinyin": "yìsi",
+  "mongolian": "утга, санаа",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这个词什么意思？",
+  "exampleMongolian": "Энэ үг ямар утгатай вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "什么意思 / 不懂意思"
+ },
+ {
+  "chinese": "北京烤鸭",
+  "pinyin": "Běijīng Kǎoyā",
+  "mongolian": "Бээжингийн шарсан нугас",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我喜欢吃北京烤鸭。",
+  "exampleMongolian": "Би Бээжингийн шарсан нугас идэх дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃北京烤鸭"
+ }
+]

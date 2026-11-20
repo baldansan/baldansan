@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "请问，这本书多少________？",
+  "options": [
+   "元",
+   "斤",
+   "件",
+   "钱"
+  ],
+  "correct_answer": "钱",
+  "explanation": "«多少钱» — үнэ асуух.",
+  "order_index": 1,
+  "id": "xinhsk1-l10-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这件________是谁的？",
+  "options": [
+   "杯子",
+   "水果",
+   "衣服",
+   "苹果"
+  ],
+  "correct_answer": "衣服",
+  "explanation": "«这件衣服» — 件-ийн хоёр дахь үг 衣服.",
+  "order_index": 2,
+  "id": "xinhsk1-l10-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我买了两________苹果。",
+  "options": [
+   "块钱",
+   "斤",
+   "件",
+   "个人"
+  ],
+  "correct_answer": "斤",
+  "explanation": "«两斤苹果» — жин.",
+  "order_index": 3,
+  "id": "xinhsk1-l10-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这儿的水果真不________。",
+  "options": [
+   "少",
+   "贵",
+   "男",
+   "钱"
+  ],
+  "correct_answer": "少",
+  "explanation": "«真不少» — үнэхээр олон.",
+  "order_index": 4,
+  "id": "xinhsk1-l10-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "苹果三块五一________。",
+  "options": [
+   "件",
+   "个",
+   "岁",
+   "斤"
+  ],
+  "correct_answer": "斤",
+  "explanation": "«三块五一斤» — нэг жин нь 3.5 юань.",
+  "order_index": 5,
+  "id": "xinhsk1-l10-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我很喜欢这个杯子，也不________。",
+  "options": [
+   "少",
+   "块",
+   "贵",
+   "男"
+  ],
+  "correct_answer": "贵",
+  "explanation": "«不贵» — үнэтэй биш.",
+  "order_index": 6,
+  "id": "xinhsk1-l10-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这家________的东西很便宜。",
+  "options": [
+   "水果",
+   "商店",
+   "衣服",
+   "杯子"
+  ],
+  "correct_answer": "商店",
+  "explanation": "«这家商店» — дэлгүүр.",
+  "order_index": 7,
+  "id": "xinhsk1-l10-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "小雪能________这件衣服。",
+  "options": [
+   "穿",
+   "买",
+   "件",
+   "那儿"
+  ],
+  "correct_answer": "穿",
+  "explanation": "«能穿» — өмсч болно.",
+  "order_index": 8,
+  "id": "xinhsk1-l10-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我去________买几个杯子。",
+  "options": [
+   "这些",
+   "女",
+   "钱",
+   "商店"
+  ],
+  "correct_answer": "商店",
+  "explanation": "«去商店» — дэлгүүрт явах.",
+  "order_index": 9,
+  "id": "xinhsk1-l10-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这些是________孩子穿的衣服。",
+  "options": [
+   "少",
+   "块",
+   "女",
+   "男的"
+  ],
+  "correct_answer": "女",
+  "explanation": "«女孩子» — охин.",
+  "order_index": 10,
+  "id": "xinhsk1-l10-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l10-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«三块五» — хэд юань вэ?",
+  "options": [
+   "3.05 юань",
+   "3.5 юань",
+   "35 юань",
+   "0.35 юань"
+  ],
+  "correct_answer": "3.5 юань",
+  "explanation": "块 = юань, 五 нь сүүлийн нэгж 毛 (орхигдсон).",
+  "order_index": 11,
+  "id": "xinhsk1-l10-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«100 юань» — ярианы хэлээр аль нь зөв бэ?",
+  "options": [
+   "一百块",
+   "一百毛",
+   "一百斤",
+   "一百件"
+  ],
+  "correct_answer": "一百块",
+  "explanation": "Ярианд 元 → 块.",
+  "order_index": 12,
+  "id": "xinhsk1-l10-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这个苹果是便宜。",
+   "这个苹果便宜很。",
+   "这个是苹果便宜。",
+   "这个苹果很便宜。"
+  ],
+  "correct_answer": "这个苹果很便宜。",
+  "explanation": "Тэмдэг нэр өгүүлэхүүн болохдоо 是 хэрэггүй.",
+  "order_index": 13,
+  "id": "xinhsk1-l10-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这件衣服是不贵。",
+   "这件衣服不是贵。",
+   "这件衣服不贵。",
+   "这件衣服没贵。"
+  ],
+  "correct_answer": "这件衣服不贵。",
+  "explanation": "不 + тэмдэг нэр.",
+  "order_index": 14,
+  "id": "xinhsk1-l10-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这件衣服怎么样？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Энэ хувцас хаана байна?",
+   "Энэ хувцас ямар вэ?",
+   "Энэ хувцас хэд вэ?",
+   "Энэ хувцас хэнийх вэ?"
+  ],
+  "correct_answer": "Энэ хувцас ямар вэ?",
+  "explanation": "怎么样 — «ямар байна?».",
+  "order_index": 15,
+  "id": "xinhsk1-l10-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这本书怎么样？",
+   "这本书怎么样吗？",
+   "这本书是怎么样？",
+   "怎么样这本书？"
+  ],
+  "correct_answer": "这本书怎么样？",
+  "explanation": "怎么样 асуух үг тул 吗 хэрэггүй.",
+  "order_index": 16,
+  "id": "xinhsk1-l10-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l10-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«这些苹果八块钱。» дахь 这些 юу гэсэн үг вэ?",
+  "options": [
+   "тэдгээр",
+   "энэ",
+   "тэнд",
+   "эдгээр"
+  ],
+  "correct_answer": "эдгээр",
+  "explanation": "这些 — «эдгээр», 那些 — «тэдгээр».",
+  "order_index": 17,
+  "id": "xinhsk1-l10-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l10-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：这些杯子多少钱一个？",
+  "options": [
+   "三块五",
+   "一百块",
+   "五块",
+   "十块"
+  ],
+  "correct_answer": "五块",
+  "explanation": "«这些五块钱一个».",
+  "order_index": 18,
+  "id": "xinhsk1-l10-q18",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一雪买了哪个杯子？",
+  "options": [
+   "没有买",
+   "五块钱的",
+   "十块钱的",
+   "一百元的"
+  ],
+  "correct_answer": "五块钱的",
+  "explanation": "«我买这个吧» — 这个 нь 这些 (5 юань)-ын нэг.",
+  "order_index": 19,
+  "id": "xinhsk1-l10-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪买了几斤苹果？",
+  "options": [
+   "两斤",
+   "一斤",
+   "三斤",
+   "五斤"
+  ],
+  "correct_answer": "两斤",
+  "explanation": "«我想买两斤苹果».",
+  "order_index": 20,
+  "id": "xinhsk1-l10-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：苹果一斤多少钱？",
+  "options": [
+   "七块二",
+   "三块",
+   "七块",
+   "三块五"
+  ],
+  "correct_answer": "三块五",
+  "explanation": "«苹果三块五一斤».",
+  "order_index": 21,
+  "id": "xinhsk1-l10-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：这件衣服多少钱？",
+  "options": [
+   "一百一十元",
+   "五块",
+   "一百元",
+   "二十元"
+  ],
+  "correct_answer": "一百元",
+  "explanation": "«这件一百元».",
+  "order_index": 22,
+  "id": "xinhsk1-l10-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：刘明觉得这件衣服怎么样？",
+  "options": [
+   "太小",
+   "好看，也不贵",
+   "很贵",
+   "不好看"
+  ],
+  "correct_answer": "好看，也不贵",
+  "explanation": "«好看，也不贵».",
+  "order_index": 23,
+  "id": "xinhsk1-l10-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：男孩子的衣服在哪儿？",
+  "options": [
+   "在那儿",
+   "在这边",
+   "在家",
+   "没有"
+  ],
+  "correct_answer": "在那儿",
+  "explanation": "«男孩子的衣服在那儿».",
+  "order_index": 24,
+  "id": "xinhsk1-l10-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

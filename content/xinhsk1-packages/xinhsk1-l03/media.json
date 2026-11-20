@@ -1,0 +1,52 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-hero.webp",
+   "title": "3-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l03-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w1.webp",
+   "title": "人 rén — хүн",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w2.webp",
+   "title": "姐姐 jiějie — эгч",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w3.webp",
+   "title": "女朋友 nǚpéngyou — найз охин",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w4.webp",
+   "title": "中文 Zhōngwén — хятад хэл",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk1-images/l03/l03-w5.webp",
+   "title": "工作 gōngzuò — ажил",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

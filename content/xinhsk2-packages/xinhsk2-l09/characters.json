@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "坏",
+   "pinyin": [
+    "huài"
+   ],
+   "strokeCount": 7,
+   "radical": "土",
+   "practice": "write",
+   "meaningMn": "муу, эвдэрсэн",
+   "etymology_mn": "土 (шороо) + 不: шороо шиг бүдүүн, муудсан",
+   "exampleWords": [
+    "坏了",
+    "坏人"
+   ]
+  },
+  {
+   "hanzi": "旁",
+   "pinyin": [
+    "páng"
+   ],
+   "strokeCount": 10,
+   "radical": "方",
+   "practice": "write",
+   "meaningMn": "хажуу",
+   "etymology_mn": "方 (чиглэл) + дээрх хэсэг: бүх чиглэлийн хажуу тал",
+   "exampleWords": [
+    "旁边",
+    "桌子旁边"
+   ]
+  },
+  {
+   "hanzi": "孩",
+   "pinyin": [
+    "hái"
+   ],
+   "strokeCount": 9,
+   "radical": "子",
+   "practice": "write",
+   "meaningMn": "хүүхэд",
+   "etymology_mn": "子 (хүүхэд) + 亥 (дуудлага): хүүхэд",
+   "exampleWords": [
+    "孩子",
+    "男孩儿"
+   ]
+  },
+  {
+   "hanzi": "咖",
+   "pinyin": [
+    "kā"
+   ],
+   "strokeCount": 8,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "кофе (咖啡)",
+   "etymology_mn": "口 (ам) + 加 (дуудлага): амаар уудаг уух зүйл",
+   "exampleWords": [
+    "咖啡",
+    "咖啡店"
+   ]
+  },
+  {
+   "hanzi": "离",
+   "pinyin": [
+    "lí"
+   ],
+   "strokeCount": 10,
+   "radical": "亠",
+   "practice": "write",
+   "meaningMn": "-аас хол/ойр",
+   "etymology_mn": "亠 + 凶 + 厶: хоёр юмны хоорондын зай",
+   "exampleWords": [
+    "离家",
+    "离学校"
+   ]
+  },
+  {
+   "hanzi": "样",
+   "pinyin": [
+    "yàng"
+   ],
+   "strokeCount": 10,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "янз, хэлбэр",
+   "etymology_mn": "木 (мод) + 羊 (дуудлага): хэлбэр, загвар",
+   "exampleWords": [
+    "这样",
+    "怎么样"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "样",
+   "b": "羊",
+   "word_a": "这样",
+   "word_b": "羊肉",
+   "mn": "样 — янз, ийм; 羊 — хонь",
+   "tip_mn": "样 нь 木 (мод)-той «хэлбэр, янз» гэсэн утгатай. 羊 нь зөвхөн «хонь»."
+  },
+  {
+   "a": "近",
+   "b": "进",
+   "word_a": "很近",
+   "word_b": "进来",
+   "mn": "近 — ойрхон; 进 — орох",
+   "tip_mn": "近 нь 斤-тэй, 进 нь 井-тэй. Ойрхон 近, орох 进."
+  },
+  {
+   "a": "喝",
+   "b": "渴",
+   "word_a": "喝咖啡",
+   "word_b": "口渴",
+   "mn": "喝 — уух; 渴 — цангах",
+   "tip_mn": "喝 нь 口 (ам)-тай, амаараа уухыг хэлнэ. 渴 нь 氵 (ус)-тай, усны хэрэгцээ."
+  },
+  {
+   "a": "坏",
+   "b": "怀",
+   "word_a": "坏了",
+   "word_b": "怀里",
+   "mn": "坏 — муу, эвдэрсэн; 怀 — тэврэлт, цээж",
+   "tip_mn": "坏 нь 土-тэй, 怀 нь 忄 (зүрх)-тэй."
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "你什么________能到饭店？",
+  "options": [
+   "知道",
+   "昨天",
+   "小朋友",
+   "时候"
+  ],
+  "correct_answer": "时候",
+  "explanation": "«什么时候» — «хэзээ».",
+  "order_index": 1,
+  "id": "xinhsk1-l11-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我还不________他去哪儿了。",
+  "options": [
+   "睡觉",
+   "哪里",
+   "知道",
+   "正在"
+  ],
+  "correct_answer": "知道",
+  "explanation": "«不知道» — мэдэхгүй.",
+  "order_index": 2,
+  "id": "xinhsk1-l11-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她哥哥是________，他学医。",
+  "options": [
+   "饭店",
+   "大学生",
+   "小朋友",
+   "弟弟"
+  ],
+  "correct_answer": "大学生",
+  "explanation": "«大学生» — их сургуулийн оюутан.",
+  "order_index": 3,
+  "id": "xinhsk1-l11-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我妹妹________读小学。",
+  "options": [
+   "正在",
+   "要",
+   "昨天",
+   "对"
+  ],
+  "correct_answer": "正在",
+  "explanation": "«正在读小学» — одоо бага сургуульд сурч байна.",
+  "order_index": 4,
+  "id": "xinhsk1-l11-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "老师有事________你。",
+  "options": [
+   "说",
+   "问",
+   "读",
+   "找"
+  ],
+  "correct_answer": "找",
+  "explanation": "«找你» — чамайг хайж байна.",
+  "order_index": 5,
+  "id": "xinhsk1-l11-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "弟弟没________，还在睡觉呢。",
+  "options": [
+   "知道",
+   "那里",
+   "起床",
+   "开车"
+  ],
+  "correct_answer": "起床",
+  "explanation": "«没起床» — хараахан босоогүй.",
+  "order_index": 6,
+  "id": "xinhsk1-l11-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我________问他，他对我说他不去。",
+  "options": [
+   "哪里",
+   "昨天",
+   "时候",
+   "正在"
+  ],
+  "correct_answer": "昨天",
+  "explanation": "«昨天问他» — өчигдөр түүнээс асуусан.",
+  "order_index": 7,
+  "id": "xinhsk1-l11-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你要去________？",
+  "options": [
+   "哪里",
+   "那里",
+   "时候",
+   "弟弟"
+  ],
+  "correct_answer": "哪里",
+  "explanation": "«去哪里？» — хаашаа явах вэ? 哪里 асуух үг.",
+  "order_index": 8,
+  "id": "xinhsk1-l11-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我有事________你说。",
+  "options": [
+   "问",
+   "找",
+   "在",
+   "对"
+  ],
+  "correct_answer": "对",
+  "explanation": "«对你说» — чамд хэлэх.",
+  "order_index": 9,
+  "id": "xinhsk1-l11-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我不会________，我坐车上班。",
+  "options": [
+   "起床",
+   "找人",
+   "开车",
+   "睡觉"
+  ],
+  "correct_answer": "开车",
+  "explanation": "«不会开车» — жолоодож чадахгүй, тиймээс 坐车.",
+  "order_index": 10,
+  "id": "xinhsk1-l11-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l11-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你去没去学校？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи сургуулиас ирсэн.",
+   "Чи сургууль руу явсан уу, үгүй юу?",
+   "Чи сургуульд явах уу?",
+   "Чи сургуульд яваагүй."
+  ],
+  "correct_answer": "Чи сургууль руу явсан уу, үгүй юу?",
+  "explanation": "去没去 — «явсан уу, үгүй юу?» гэсэн өнгөрсөн цагийн A没A асуулт.",
+  "order_index": 11,
+  "id": "xinhsk1-l11-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l11-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв бэ?",
+  "options": [
+   "这件衣服好看不好看？",
+   "这件衣服好看吗不好看？",
+   "这件衣服好看没好看？",
+   "这件衣服不好看好看？"
+  ],
+  "correct_answer": "这件衣服好看不好看？",
+  "explanation": "Тэмдэг нэр + 不 + тэмдэг нэр.",
+  "order_index": 12,
+  "id": "xinhsk1-l11-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Өчигдөр чи номын дэлгүүр явсан уу?» — аль нь зөв бэ?",
+  "options": [
+   "昨天你去不去书店？",
+   "昨天你没去去书店？",
+   "昨天你去书店没？",
+   "昨天你去没去书店？"
+  ],
+  "correct_answer": "昨天你去没去书店？",
+  "explanation": "Өнгөрсөн үйлд 没 хэрэглэнэ.",
+  "order_index": 13,
+  "id": "xinhsk1-l11-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«弟弟正在睡觉呢。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Дүү унтах гэж байна.",
+   "Дүү өчигдөр унтсан.",
+   "Дүү яг одоо унтаж байна.",
+   "Дүү унтаагүй."
+  ],
+  "correct_answer": "Дүү яг одоо унтаж байна.",
+  "explanation": "正在 + үйл үг + 呢 — «яг одоо … -ж байна».",
+  "order_index": 14,
+  "id": "xinhsk1-l11-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l11-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我们读书呢。» дахь 呢 юу хийж байна вэ?",
+  "options": [
+   "Үгүйсгэнэ",
+   "Одоо л хийж байгааг харуулна",
+   "Асуулт болгоно",
+   "Өнгөрсөн цагийг заана"
+  ],
+  "correct_answer": "Одоо л хийж байгааг харуулна",
+  "explanation": "Үйл үг + 呢 — үйлдэл явагдаж байгаа өнгө.",
+  "order_index": 15,
+  "id": "xinhsk1-l11-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "A：你在买菜吗？ B：我（　）买菜，买水果呢。",
+  "options": [
+   "没",
+   "不",
+   "吗",
+   "要"
+  ],
+  "correct_answer": "没",
+  "explanation": "Явагдаж буй үйлдлийг 没(有)-аар үгүйсгэнэ.",
+  "order_index": 16,
+  "id": "xinhsk1-l11-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«妈妈要去超市。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Ээж супермаркетад байна.",
+   "Ээж супермаркетаас ирсэн.",
+   "Ээж супермаркет явахгүй.",
+   "Ээж супермаркет явна."
+  ],
+  "correct_answer": "Ээж супермаркет явна.",
+  "explanation": "要 + үйл үг — «хийхээр төлөвлөж байна».",
+  "order_index": 17,
+  "id": "xinhsk1-l11-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l11-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би найзтайгаа дуулахаар явна» — аль нь зөв бэ?",
+  "options": [
+   "我去要和朋友唱歌。",
+   "我和朋友去唱歌要。",
+   "我要和朋友去唱歌。",
+   "我和要朋友去唱歌。"
+  ],
+  "correct_answer": "我要和朋友去唱歌。",
+  "explanation": "要 нь үйл үгийн өмнө орно.",
+  "order_index": 18,
+  "id": "xinhsk1-l11-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l11-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文正在做什么？",
+  "options": [
+   "睡觉",
+   "找饭店",
+   "开车",
+   "吃饭"
+  ],
+  "correct_answer": "找饭店",
+  "explanation": "«正在找呢» — зоогийн газар хайж байна.",
+  "order_index": 19,
+  "id": "xinhsk1-l11-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文开车了吗？",
+  "options": [
+   "没开，他坐车",
+   "开了",
+   "他不知道",
+   "他想开车"
+  ],
+  "correct_answer": "没开，他坐车",
+  "explanation": "«我没开车，坐车呢».",
+  "order_index": 20,
+  "id": "xinhsk1-l11-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文学什么？",
+  "options": [
+   "学中文",
+   "学唱歌",
+   "学开车",
+   "学医"
+  ],
+  "correct_answer": "学医",
+  "explanation": "«我学医» — анагаах ухаан.",
+  "order_index": 21,
+  "id": "xinhsk1-l11-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文为什么非常忙？",
+  "options": [
+   "不喜欢学习",
+   "工作很多",
+   "课很多",
+   "没有朋友"
+  ],
+  "correct_answer": "课很多",
+  "explanation": "«我们的课很多» — хичээл их.",
+  "order_index": 22,
+  "id": "xinhsk1-l11-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：弟弟现在在做什么？",
+  "options": [
+   "去超市",
+   "睡觉",
+   "起床",
+   "玩"
+  ],
+  "correct_answer": "睡觉",
+  "explanation": "«还在睡觉» — унтаж байна.",
+  "order_index": 23,
+  "id": "xinhsk1-l11-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：弟弟今天要做什么？",
+  "options": [
+   "和小朋友玩",
+   "去超市",
+   "学习",
+   "起床吃饭"
+  ],
+  "correct_answer": "和小朋友玩",
+  "explanation": "«他今天要和小朋友玩».",
+  "order_index": 24,
+  "id": "xinhsk1-l11-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：爸爸问姐姐什么？",
+  "options": [
+   "弟弟几岁",
+   "弟弟在哪里学习",
+   "弟弟想吃什么",
+   "弟弟今天去不去超市"
+  ],
+  "correct_answer": "弟弟今天去不去超市",
+  "explanation": "«他今天去不去那里？» — «那里» нь супермаркет.",
+  "order_index": 25,
+  "id": "xinhsk1-l11-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

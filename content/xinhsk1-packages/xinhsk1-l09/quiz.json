@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "学校前边________一家电影院。",
+  "options": [
+   "在",
+   "和",
+   "吧",
+   "有"
+  ],
+  "correct_answer": "有",
+  "explanation": "«前边有一家电影院» — байршил + 有 + юм.",
+  "order_index": 1,
+  "id": "xinhsk1-l09-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们七点在电影院________见。",
+  "options": [
+   "白天",
+   "第一",
+   "外边",
+   "椅子"
+  ],
+  "correct_answer": "外边",
+  "explanation": "«在电影院外边见» — кино театрын гадна уулзана.",
+  "order_index": 2,
+  "id": "xinhsk1-l09-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "椅子________有一本中文书。",
+  "options": [
+   "唱",
+   "上",
+   "和",
+   "第"
+  ],
+  "correct_answer": "上",
+  "explanation": "«椅子上» — сандал дээр. 上 нь нэрийн ард «дээр».",
+  "order_index": 3,
+  "id": "xinhsk1-l09-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这是我的________二本中文书。",
+  "options": [
+   "第",
+   "本",
+   "那",
+   "家"
+  ],
+  "correct_answer": "第",
+  "explanation": "«第二本» — хоёр дахь ном.",
+  "order_index": 4,
+  "id": "xinhsk1-l09-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "那是一________新书店。",
+  "options": [
+   "本",
+   "第",
+   "边",
+   "家"
+  ],
+  "correct_answer": "家",
+  "explanation": "«一家书店» — дэлгүүрийн хэмжих үг 家.",
+  "order_index": 5,
+  "id": "xinhsk1-l09-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我晚上________朋友们去唱歌。",
+  "options": [
+   "第",
+   "那",
+   "和",
+   "在"
+  ],
+  "correct_answer": "和",
+  "explanation": "«和朋友们» — найзуудтайгаа.",
+  "order_index": 6,
+  "id": "xinhsk1-l09-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你唱歌很________。",
+  "options": [
+   "朋友",
+   "好听",
+   "电视",
+   "白天"
+  ],
+  "correct_answer": "好听",
+  "explanation": "«唱歌很好听» — дуулах нь сонсоход сайхан.",
+  "order_index": 7,
+  "id": "xinhsk1-l09-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我白天在家里________，晚上看电视。",
+  "options": [
+   "读书",
+   "电视",
+   "朋友",
+   "好听"
+  ],
+  "correct_answer": "读书",
+  "explanation": "«在家里读书» — гэртээ ном уншина.",
+  "order_index": 8,
+  "id": "xinhsk1-l09-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我喜欢和小狗________。",
+  "options": [
+   "唱",
+   "第",
+   "家",
+   "玩"
+  ],
+  "correct_answer": "玩",
+  "explanation": "«和小狗玩» — гөлөгтэй тоглох.",
+  "order_index": 9,
+  "id": "xinhsk1-l09-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我家有一只小________。",
+  "options": [
+   "歌",
+   "椅子",
+   "狗",
+   "书"
+  ],
+  "correct_answer": "狗",
+  "explanation": "«一只小狗» — нэг гөлөг.",
+  "order_index": 10,
+  "id": "xinhsk1-l09-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«学校前边有一家电影院。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Сургуулийн урд кино театр байхгүй.",
+   "Сургуулийн урд талд нэг кино театр бий.",
+   "Сургууль кино театрын урд байна.",
+   "Сургуулийн ард кино театр бий."
+  ],
+  "correct_answer": "Сургуулийн урд талд нэг кино театр бий.",
+  "explanation": "Байршил + 有 + юм.",
+  "order_index": 11,
+  "id": "xinhsk1-l09-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Ширээн дээр муур байхгүй» — аль нь зөв бэ?",
+  "options": [
+   "桌子上没有小猫。",
+   "桌子上没有一只小猫。",
+   "桌子上不有小猫。",
+   "小猫没有桌子上。"
+  ],
+  "correct_answer": "桌子上没有小猫。",
+  "explanation": "Үгүйсгэхэд юмны өмнө тоо, хэмжих үг тавихгүй.",
+  "order_index": 12,
+  "id": "xinhsk1-l09-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бид долоон цагт кино театрын гадаа уулзана» — аль нь зөв бэ?",
+  "options": [
+   "我们在电影院外边七点见。",
+   "七点见我们在电影院外边。",
+   "在电影院外边我们见七点。",
+   "我们七点在电影院外边见。"
+  ],
+  "correct_answer": "我们七点在电影院外边见。",
+  "explanation": "Цаг → газар → үйл үг.",
+  "order_index": 13,
+  "id": "xinhsk1-l09-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Анни үдээс хойш гэртээ хятад хэл сурна» — аль нь зөв бэ?",
+  "options": [
+   "安妮学中文在家里下午。",
+   "下午安妮学中文在家里。",
+   "安妮下午在家里学中文。",
+   "安妮在家里下午学中文。"
+  ],
+  "correct_answer": "安妮下午在家里学中文。",
+  "explanation": "Цагийн үг (下午) газрын үгийн (在家里) өмнө.",
+  "order_index": 14,
+  "id": "xinhsk1-l09-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Миний хоёр дахь хятад ном» — аль нь зөв бэ?",
+  "options": [
+   "我的第二个中文书",
+   "我的第二本中文书",
+   "我的二第本中文书",
+   "我的第本二中文书"
+  ],
+  "correct_answer": "我的第二本中文书",
+  "explanation": "第 + тоо + хэмжих үг (本) + нэр.",
+  "order_index": 15,
+  "id": "xinhsk1-l09-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Гурав дахь оюутан» — аль нь зөв бэ?",
+  "options": [
+   "第三个学生",
+   "三第个学生",
+   "第个三学生",
+   "第三学生个"
+  ],
+  "correct_answer": "第三个学生",
+  "explanation": "第 + тоо + 个 + нэр.",
+  "order_index": 16,
+  "id": "xinhsk1-l09-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Кино театрын урд талд супермаркет байна» — аль нь зөв бэ?",
+  "options": [
+   "电影院前边在一家超市。",
+   "前边电影院是一家超市。",
+   "电影院前边和一家超市。",
+   "电影院前边是一家超市。"
+  ],
+  "correct_answer": "电影院前边是一家超市。",
+  "explanation": "Байршил + 是 + юм: «тэнд яг …»",
+  "order_index": 17,
+  "id": "xinhsk1-l09-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би найзуудтайгаа дуулна» — аль нь зөв бэ?",
+  "options": [
+   "和我朋友们唱歌。",
+   "我唱歌朋友们和。",
+   "我和朋友们唱歌。",
+   "我朋友们和唱歌。"
+  ],
+  "correct_answer": "我和朋友们唱歌。",
+  "explanation": "和 + хэн + үйл үг: «…-тай хамт».",
+  "order_index": 18,
+  "id": "xinhsk1-l09-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：学校前边有什么？",
+  "options": [
+   "公园",
+   "电影院",
+   "超市",
+   "书店"
+  ],
+  "correct_answer": "电影院",
+  "explanation": "«学校前边有一家电影院».",
+  "order_index": 19,
+  "id": "xinhsk1-l09-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：他们晚上几点见？",
+  "options": [
+   "七点",
+   "八点",
+   "六点",
+   "九点"
+  ],
+  "correct_answer": "七点",
+  "explanation": "«我们七点在电影院外边见».",
+  "order_index": 20,
+  "id": "xinhsk1-l09-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：椅子上有什么？",
+  "options": [
+   "一只猫",
+   "一个手机",
+   "一个电视",
+   "一本中文书"
+  ],
+  "correct_answer": "一本中文书",
+  "explanation": "«椅子上有一本中文书».",
+  "order_index": 21,
+  "id": "xinhsk1-l09-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：这是陈天中的第几本中文书？",
+  "options": [
+   "第三本",
+   "第四本",
+   "第二本",
+   "第一本"
+  ],
+  "correct_answer": "第二本",
+  "explanation": "«这是我的第二本中文书».",
+  "order_index": 22,
+  "id": "xinhsk1-l09-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：陈天中明天上午在哪儿？",
+  "options": [
+   "在超市",
+   "在学校",
+   "在家里",
+   "在电影院"
+  ],
+  "correct_answer": "在学校",
+  "explanation": "«我明天上午在学校学习».",
+  "order_index": 23,
+  "id": "xinhsk1-l09-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：杨同乐晚上做什么？",
+  "options": [
+   "和朋友们去外边唱歌",
+   "在家做饭",
+   "在家读书",
+   "看电视"
+  ],
+  "correct_answer": "和朋友们去外边唱歌",
+  "explanation": "«晚上和朋友们去外边唱歌».",
+  "order_index": 24,
+  "id": "xinhsk1-l09-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪星期六做什么？",
+  "options": [
+   "去外边唱歌",
+   "在学校学习",
+   "去看电影",
+   "做饭、看电视、和孩子们、小狗玩"
+  ],
+  "correct_answer": "做饭、看电视、和孩子们、小狗玩",
+  "explanation": "«在家里做饭、看电视，和孩子们、小狗玩».",
+  "order_index": 25,
+  "id": "xinhsk1-l09-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

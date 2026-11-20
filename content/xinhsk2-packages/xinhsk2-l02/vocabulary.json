@@ -1,0 +1,172 @@
+[
+ {
+  "chinese": "公交车",
+  "pinyin": "gōngjiāochē",
+  "mongolian": "автобус",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他每天坐公交车上班。",
+  "exampleMongolian": "Тэр өдөр бүр автобусаар ажилдаа явдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "坐公交车 / 等公交车"
+ },
+ {
+  "chinese": "但",
+  "pinyin": "dàn",
+  "mongolian": "гэхдээ, харин",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我会说中文，但我的中文不太好。",
+  "exampleMongolian": "Би хятадаар ярьж чадна, гэхдээ хятад хэл минь тийм сайн биш.",
+  "pos": "холбоос",
+  "collocations_zh": "但是 / 但不…"
+ },
+ {
+  "chinese": "车站",
+  "pinyin": "chēzhàn",
+  "mongolian": "буудал (автобус, галт тэрэгний)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我走路到车站坐公交车。",
+  "exampleMongolian": "Би алхаж буудал дээр очоод автобусанд сууна.",
+  "pos": "нэр үг",
+  "collocations_zh": "公交车站 / 火车站"
+ },
+ {
+  "chinese": "远",
+  "pinyin": "yuǎn",
+  "mongolian": "хол",
+  "hskLevel": "HSK2",
+  "exampleChinese": "车站不远，走五分钟就到。",
+  "exampleMongolian": "Буудал хол биш, таван минут алхвал хүрнэ.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "很远 / 不远 / 有点儿远"
+ },
+ {
+  "chinese": "打车",
+  "pinyin": "dǎchē",
+  "mongolian": "такси барих",
+  "hskLevel": "HSK2",
+  "exampleChinese": "车站太远了，我们打车去吧。",
+  "exampleMongolian": "Буудал хэтэрхий хол байна, такси барьж явъя.",
+  "pos": "үйл үг",
+  "collocations_zh": "打车去 / 好打车"
+ },
+ {
+  "chinese": "还是",
+  "pinyin": "háishi",
+  "mongolian": "…сан нь дээр (илүү зохистой сонголт)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "太晚了，还是别喝咖啡了。",
+  "exampleMongolian": "Оройтлоо, кофе уухгүй байсан нь дээр.",
+  "pos": "дайвар үг",
+  "collocations_zh": "还是…吧"
+ },
+ {
+  "chinese": "北京大学",
+  "pinyin": "Běijīng Dàxué",
+  "mongolian": "Бээжингийн их сургууль (Бэйда)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "到北京大学的车站有点儿远。",
+  "exampleMongolian": "Бээжингийн их сургууль хүрэх буудал жаахан хол.",
+  "pos": "оноосон нэр",
+  "collocations_zh": "去北京大学"
+ },
+ {
+  "chinese": "啊",
+  "pinyin": "a",
+  "mongolian": "шүү, аа (сэтгэл хөдлөл, зөвшөөрлийг илтгэх сул үг)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "今天真冷啊！",
+  "exampleMongolian": "Өнөөдөр үнэхээр хүйтэн байна шүү!",
+  "pos": "сул үг",
+  "collocations_zh": "真…啊"
+ },
+ {
+  "chinese": "万",
+  "pinyin": "wàn",
+  "mongolian": "түм, арван мянга",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我们学校有一万人。",
+  "exampleMongolian": "Манай сургуульд арван мянган хүн байдаг.",
+  "pos": "тоо",
+  "collocations_zh": "一万 / 几万"
+ },
+ {
+  "chinese": "名",
+  "pinyin": "míng",
+  "mongolian": "хүн (хүнийг тоолох үг); нэр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "她现在还是一名学生。",
+  "exampleMongolian": "Тэр одоо ч нэг оюутан хэвээр.",
+  "pos": "хэмжих үг / нэр үг",
+  "collocations_zh": "一名 / 人名 / 书名"
+ },
+ {
+  "chinese": "网上",
+  "pinyin": "wǎngshang",
+  "mongolian": "интернет дээр",
+  "hskLevel": "HSK2",
+  "exampleChinese": "我在网上学习。",
+  "exampleMongolian": "Би интернетээр суралцдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "在网上 / 网上买"
+ },
+ {
+  "chinese": "外国",
+  "pinyin": "wàiguó",
+  "mongolian": "гадаад улс",
+  "hskLevel": "HSK2",
+  "exampleChinese": "学校里有很多外国学生。",
+  "exampleMongolian": "Сургуульд гадаад оюутан их байдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "外国人 / 外国学生"
+ },
+ {
+  "chinese": "间",
+  "pinyin": "jiān",
+  "mongolian": "өрөө, байрны нэгжийг тоолох үг",
+  "hskLevel": "HSK2",
+  "exampleChinese": "这间教室里有三个人。",
+  "exampleMongolian": "Энэ ангид гурван хүн байна.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一间教室 / 一间房间"
+ },
+ {
+  "chinese": "教室",
+  "pinyin": "jiàoshì",
+  "mongolian": "анги танхим",
+  "hskLevel": "HSK2",
+  "exampleChinese": "他在教室里看书。",
+  "exampleMongolian": "Тэр ангид ном уншиж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "教室里 / 一间教室"
+ },
+ {
+  "chinese": "票",
+  "pinyin": "piào",
+  "mongolian": "тасалбар",
+  "hskLevel": "HSK2",
+  "exampleChinese": "电影票多少钱？",
+  "exampleMongolian": "Кино үзэх тасалбар хэд вэ?",
+  "pos": "нэр үг",
+  "collocations_zh": "车票 / 机票 / 电影票"
+ },
+ {
+  "chinese": "别",
+  "pinyin": "bié",
+  "mongolian": "битгий; …хиймээргүй байна (зөвлөх)",
+  "hskLevel": "HSK2",
+  "exampleChinese": "别走，等等我！",
+  "exampleMongolian": "Битгий яв, намайг хүлээ!",
+  "pos": "дайвар үг",
+  "collocations_zh": "别…了 / 别去"
+ },
+ {
+  "chinese": "过来",
+  "pinyin": "guòlái",
+  "mongolian": "энд ирэх, ойртож ирэх",
+  "hskLevel": "HSK2",
+  "exampleChinese": "朋友过来找我。",
+  "exampleMongolian": "Найз надтай уулзахаар ирсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "过来接 / 再过来"
+ }
+]

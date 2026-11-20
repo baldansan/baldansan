@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "洗",
+   "pinyin": [
+    "xǐ"
+   ],
+   "strokeCount": 9,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "угаах",
+   "etymology_mn": "氵 (ус) + 先: усаар угаах",
+   "exampleWords": [
+    "洗手",
+    "洗水果"
+   ]
+  },
+  {
+   "hanzi": "送",
+   "pinyin": [
+    "sòng"
+   ],
+   "strokeCount": 9,
+   "radical": "辶",
+   "practice": "write",
+   "meaningMn": "хүргэх, бэлэглэх",
+   "etymology_mn": "辶 (алхах) + 关: хүнтэй хамт алхаж хүргэх",
+   "exampleWords": [
+    "送人",
+    "送东西"
+   ]
+  },
+  {
+   "hanzi": "完",
+   "pinyin": [
+    "wán"
+   ],
+   "strokeCount": 7,
+   "radical": "宀",
+   "practice": "write",
+   "meaningMn": "дуусах",
+   "etymology_mn": "宀 (дээвэр) + 元: дээвэр доор бүхэл дуусгах",
+   "exampleWords": [
+    "做完",
+    "学完"
+   ]
+  },
+  {
+   "hanzi": "拿",
+   "pinyin": [
+    "ná"
+   ],
+   "strokeCount": 10,
+   "radical": "手",
+   "practice": "write",
+   "meaningMn": "барих, авах",
+   "etymology_mn": "合 + 手: гараар барих",
+   "exampleWords": [
+    "拿来",
+    "拿出来"
+   ]
+  },
+  {
+   "hanzi": "累",
+   "pinyin": [
+    "lèi"
+   ],
+   "strokeCount": 11,
+   "radical": "糸",
+   "practice": "write",
+   "meaningMn": "ядрах",
+   "etymology_mn": "田 + 糸: талбайн ажилд утас шиг эвхэгдэх ядаргаа",
+   "exampleWords": [
+    "很累",
+    "太累了"
+   ]
+  },
+  {
+   "hanzi": "错",
+   "pinyin": [
+    "cuò"
+   ],
+   "strokeCount": 13,
+   "radical": "钅",
+   "practice": "write",
+   "meaningMn": "буруу, алдаа",
+   "etymology_mn": "钅 (металл) + 昔: металл дээр алдаа гарах",
+   "exampleWords": [
+    "不错",
+    "对错"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "洗",
+   "b": "先",
+   "word_a": "洗手",
+   "word_b": "先走",
+   "mn": "洗 — угаах; 先 — эхлээд",
+   "tip_mn": "洗 дээр 氵 (ус) нэмэгдсэн тул усаар угаах утга. 先 нь «эхлээд» гэсэн цагийн үг."
+  },
+  {
+   "a": "完",
+   "b": "元",
+   "word_a": "做完",
+   "word_b": "一元",
+   "mn": "完 — дуусах; 元 — юань",
+   "tip_mn": "完 дээр 宀 (дээвэр) нэмэгдсэн тул утга нь «дуусах». 元 нь мөнгөний нэгж."
+  },
+  {
+   "a": "送",
+   "b": "关",
+   "word_a": "送人",
+   "word_b": "关门",
+   "mn": "送 — хүргэх; 关 — хаах",
+   "tip_mn": "送 дээр 辶 (алхах) нэмэгдсэн: хүргэж явах. 关 нь хаалга хаах."
+  },
+  {
+   "a": "每",
+   "b": "母",
+   "word_a": "每天",
+   "word_b": "母亲",
+   "mn": "每 — бүр; 母 — эх",
+   "tip_mn": "每 дээр 𠂉 нэмэгдсэн, 母 нь эх. Хоёр ханз төстэй боловч утга нь огт өөр."
+  }
+ ]
+}

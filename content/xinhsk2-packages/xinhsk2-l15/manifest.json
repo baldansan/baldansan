@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "xinhsk2",
+ "lessonId": "xinhsk2-l15",
+ "hskLevel": 2,
+ "lessonNumber": 15,
+ "lessonProfile": "hsk3-dialogue-reading-writing-review",
+ "lessonType": "hsk3-dialogue-reading-writing-review",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我想再去一次中国",
+ "mongolianTitle": "Би Хятад руу дахин нэг очмоор байна",
+ "source": "新HSK教程2 (外研社, HSK 3.0) — 15-р хичээл: үг, 课文, дүрэм, дасгал сурах бичиг + 学练手册 + PPT-ээс; монгол орчуулга, тайлбар «Бөөндөө Сурцгаая»",
+ "hasAudio": true,
+ "hasImages": true,
+ "verification": {
+  "answerStatus": "textbook+ppt (OCR; хүн шалгаагүй)",
+  "textStatus": "textbook (新HSK教程2 课文, OCR)"
+ }
+}

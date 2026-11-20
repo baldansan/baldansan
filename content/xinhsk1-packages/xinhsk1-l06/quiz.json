@@ -1,0 +1,458 @@
+[
+ {
+  "type": "cloze",
+  "question": "你的手机号是________？",
+  "options": [
+   "几个",
+   "什么",
+   "哪儿",
+   "多少"
+  ],
+  "correct_answer": "多少",
+  "explanation": "«手机号是多少» — дугаарыг 多少-оор асууна.",
+  "order_index": 1,
+  "id": "xinhsk1-l06-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "明天你去________？",
+  "options": [
+   "多少",
+   "怎么",
+   "哪儿",
+   "什么"
+  ],
+  "correct_answer": "哪儿",
+  "explanation": "«去哪儿» — хаашаа явах вэ.",
+  "order_index": 2,
+  "id": "xinhsk1-l06-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想去超市________东西。",
+  "options": [
+   "想",
+   "买",
+   "吃",
+   "坐"
+  ],
+  "correct_answer": "买",
+  "explanation": "«买东西» — юм авах.",
+  "order_index": 3,
+  "id": "xinhsk1-l06-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想买些________。",
+  "options": [
+   "牛奶",
+   "出租车",
+   "手机号",
+   "晚饭"
+  ],
+  "correct_answer": "牛奶",
+  "explanation": "«买些牛奶» — жаахан сүү авах.",
+  "order_index": 4,
+  "id": "xinhsk1-l06-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们________出租车去西安饭店。",
+  "options": [
+   "吃",
+   "想",
+   "买",
+   "坐"
+  ],
+  "correct_answer": "坐",
+  "explanation": "«坐出租车» — таксигаар явах.",
+  "order_index": 5,
+  "id": "xinhsk1-l06-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "那边的包子________好吃。",
+  "options": [
+   "怎么",
+   "明天",
+   "非常",
+   "哪儿"
+  ],
+  "correct_answer": "非常",
+  "explanation": "«非常好吃» — маш амттай.",
+  "order_index": 6,
+  "id": "xinhsk1-l06-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈，我想吃________，不想吃包子。",
+  "options": [
+   "明天",
+   "米饭",
+   "手机",
+   "超市"
+  ],
+  "correct_answer": "米饭",
+  "explanation": "«想吃米饭» — будаа идмээр байна.",
+  "order_index": 7,
+  "id": "xinhsk1-l06-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们________去？— 坐出租车去。",
+  "options": [
+   "怎么",
+   "哪儿",
+   "多少",
+   "什么"
+  ],
+  "correct_answer": "怎么",
+  "explanation": "«怎么去» — яаж явах вэ.",
+  "order_index": 8,
+  "id": "xinhsk1-l06-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "星期天我们去哪儿吃________？",
+  "options": [
+   "手机",
+   "牛奶",
+   "出租车",
+   "晚饭"
+  ],
+  "correct_answer": "晚饭",
+  "explanation": "«吃晚饭» — оройн хоол идэх.",
+  "order_index": 9,
+  "id": "xinhsk1-l06-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我的________是+86 13552721160。",
+  "options": [
+   "包子",
+   "明天",
+   "手机号",
+   "超市"
+  ],
+  "correct_answer": "手机号",
+  "explanation": "«手机号» — гар утасны дугаар.",
+  "order_index": 10,
+  "id": "xinhsk1-l06-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk1-l06-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Гар утасны дугаарт «1»-ийг яаж уншдаг вэ?",
+  "options": [
+   "èr",
+   "yāo",
+   "yī",
+   "yào"
+  ],
+  "correct_answer": "yāo",
+  "explanation": "Дугаарт «1»-ийг yāo гэж уншина.",
+  "order_index": 11,
+  "id": "xinhsk1-l06-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l06-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我想去超市买东西。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би супермаркетад очиж юм авмаар байна.",
+   "Би супермаркетад ажилладаг.",
+   "Би супермаркетаас юм авсан.",
+   "Би супермаркет яваагүй."
+  ],
+  "correct_answer": "Би супермаркетад очиж юм авмаар байна.",
+  "explanation": "想 + 去超市买东西.",
+  "order_index": 12,
+  "id": "xinhsk1-l06-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l06-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Би баоцзы идмээр биш байна» — аль нь зөв бэ?",
+  "options": [
+   "我没想吃包子。",
+   "我想不吃包子。",
+   "我不吃想包子。",
+   "我不想吃包子。"
+  ],
+  "correct_answer": "我不想吃包子。",
+  "explanation": "想-ийг 不想 гэж үгүйсгэнэ.",
+  "order_index": 13,
+  "id": "xinhsk1-l06-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l06-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бид таксигаар явна» — аль нь зөв бэ?",
+  "options": [
+   "我们去坐出租车。",
+   "我们去出租车。",
+   "我们坐出租车去。",
+   "我们出租车坐去。"
+  ],
+  "correct_answer": "我们坐出租车去。",
+  "explanation": "Арга (坐出租车) нь 去-ийн өмнө.",
+  "order_index": 14,
+  "id": "xinhsk1-l06-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Бид яаж явах вэ?» — аль нь зөв бэ?",
+  "options": [
+   "我们什么去？",
+   "我们怎么去？",
+   "我们去怎么？",
+   "我们怎么吗去？"
+  ],
+  "correct_answer": "我们怎么去？",
+  "explanation": "怎么 + үйл үг.",
+  "order_index": 15,
+  "id": "xinhsk1-l06-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l06-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Чи юу идмээр байна?» — аль нь зөв бэ?",
+  "options": [
+   "你想吃什么？",
+   "你想什么吃？",
+   "你怎么吃想？",
+   "你想吃怎么？"
+  ],
+  "correct_answer": "你想吃什么？",
+  "explanation": "想 + үйл үг + 什么.",
+  "order_index": 16,
+  "id": "xinhsk1-l06-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我们去西安饭店吃晚饭。» дахь хоёр үйл үг:",
+  "options": [
+   "去, 坐",
+   "吃, 买",
+   "想, 去",
+   "去, 吃"
+  ],
+  "correct_answer": "去, 吃",
+  "explanation": "去 + газар + 吃 — явж идэх (зорилго).",
+  "order_index": 17,
+  "id": "xinhsk1-l06-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«+86» — хэрхэн уншдаг вэ?",
+  "options": [
+   "jiā liù bā",
+   "yāo bā liù",
+   "jiā bā liù",
+   "jiā bā yāo"
+  ],
+  "correct_answer": "jiā bā liù",
+  "explanation": "+ нь 加 jiā, 86 нь bā liù.",
+  "order_index": 18,
+  "id": "xinhsk1-l06-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk1-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月的手机号是多少？",
+  "options": [
+   "+86 601493190",
+   "+33 601493190",
+   "+86 13552721160",
+   "+33 601493910"
+  ],
+  "correct_answer": "+33 601493190",
+  "explanation": "«我的手机号是+33 601493190».",
+  "order_index": 19,
+  "id": "xinhsk1-l06-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月明天想去哪儿？",
+  "options": [
+   "超市",
+   "西安饭店",
+   "学校",
+   "医院"
+  ],
+  "correct_answer": "超市",
+  "explanation": "«我想去超市买东西».",
+  "order_index": 20,
+  "id": "xinhsk1-l06-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月想买什么？",
+  "options": [
+   "菜",
+   "面条儿",
+   "包子",
+   "牛奶"
+  ],
+  "correct_answer": "牛奶",
+  "explanation": "«我想买些牛奶».",
+  "order_index": 21,
+  "id": "xinhsk1-l06-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪一家人想去西安饭店做什么？",
+  "options": [
+   "吃午饭",
+   "买东西",
+   "吃晚饭",
+   "吃早饭"
+  ],
+  "correct_answer": "吃晚饭",
+  "explanation": "«我们去哪儿吃晚饭？»",
+  "order_index": 22,
+  "id": "xinhsk1-l06-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：刘小明想吃什么？",
+  "options": [
+   "饺子",
+   "米饭",
+   "包子",
+   "面条儿"
+  ],
+  "correct_answer": "米饭",
+  "explanation": "«我想吃米饭，不想吃包子».",
+  "order_index": 23,
+  "id": "xinhsk1-l06-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：他们怎么去西安饭店？",
+  "options": [
+   "坐出租车去",
+   "走路去",
+   "坐火车去",
+   "开车去"
+  ],
+  "correct_answer": "坐出租车去",
+  "explanation": "«坐出租车去».",
+  "order_index": 24,
+  "id": "xinhsk1-l06-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

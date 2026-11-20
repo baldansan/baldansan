@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "写",
+   "pinyin": [
+    "xiě"
+   ],
+   "strokeCount": 5,
+   "radical": "冖",
+   "practice": "write",
+   "meaningMn": "бичих",
+   "etymology_mn": "冖 (дээвэр) дор 与: гараараа цаасан дээр бичнэ гэж санаарай",
+   "exampleWords": [
+    "写字",
+    "写汉字"
+   ]
+  },
+  {
+   "hanzi": "汉",
+   "pinyin": [
+    "hàn"
+   ],
+   "strokeCount": 5,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "хан (хятад)",
+   "etymology_mn": "氵 (ус) + 又: Хан гол (汉水)-оос гарсан нэр",
+   "exampleWords": [
+    "汉语",
+    "汉字"
+   ]
+  },
+  {
+   "hanzi": "字",
+   "pinyin": [
+    "zì"
+   ],
+   "strokeCount": 6,
+   "radical": "宀",
+   "practice": "write",
+   "meaningMn": "үсэг, ханз",
+   "etymology_mn": "宀 (дээвэр) дор 子 (хүүхэд): гэр бүлд хүүхэд төрвөл нэр өгнө, үсэг бичнэ",
+   "exampleWords": [
+    "汉字",
+    "写字"
+   ]
+  },
+  {
+   "hanzi": "听",
+   "pinyin": [
+    "tīng"
+   ],
+   "strokeCount": 7,
+   "radical": "口",
+   "practice": "write",
+   "meaningMn": "сонсох",
+   "etymology_mn": "口 (ам) + 斤: хэн нэгний ярьсныг чагнана",
+   "exampleWords": [
+    "听见",
+    "听歌"
+   ]
+  },
+  {
+   "hanzi": "说",
+   "pinyin": [
+    "shuō"
+   ],
+   "strokeCount": 9,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "ярих",
+   "etymology_mn": "讠 (үг) + 兑: үгээр ярина",
+   "exampleWords": [
+    "说话",
+    "说汉语"
+   ]
+  },
+  {
+   "hanzi": "明",
+   "pinyin": [
+    "míng"
+   ],
+   "strokeCount": 8,
+   "radical": "日",
+   "practice": "write",
+   "meaningMn": "гэгээтэй; маргааш",
+   "etymology_mn": "日 (нар) + 月 (сар): нар сар хоёр гэрэлтэж, гэгээтэй болгоно",
+   "exampleWords": [
+    "明年",
+    "明天"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "午",
+   "b": "牛",
+   "word_a": "中午",
+   "word_b": "牛肉",
+   "mn": "午 — үд; 牛 — үхэр",
+   "tip_mn": "午 нь дээшээ гарсан босоо зураастай, 牛 нь дээр нь богино хөндлөн зураастай. 中午 — үд дунд."
+  },
+  {
+   "a": "学",
+   "b": "字",
+   "word_a": "上学",
+   "word_b": "汉字",
+   "mn": "学 — сурах; 字 — үсэг",
+   "tip_mn": "学 нь дээд талдаа нэмэлттэй (⺍). 字 нь дээрээ 宀-тэй."
+  },
+  {
+   "a": "明",
+   "b": "朋",
+   "word_a": "明年",
+   "word_b": "朋友",
+   "mn": "明 — гэгээтэй, маргааш; 朋 — найз",
+   "tip_mn": "明 нь 日 + 月. 朋 нь хоёр 月."
+  },
+  {
+   "a": "他",
+   "b": "它",
+   "word_a": "他们",
+   "word_b": "它们",
+   "mn": "他 — тэр (хүн); 它 — тэр (амьтан, эд)",
+   "tip_mn": "他 нь 亻(хүн)-тэй, 它 нь 宀-тэй, амьтан, эд зүйлийг заана. Хоёулаа tā."
+  }
+ ]
+}
