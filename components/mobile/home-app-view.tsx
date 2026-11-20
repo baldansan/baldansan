@@ -1,5 +1,6 @@
 "use client";
 
+import { ClassHomeCard } from "@/components/home/class-home-card";
 import Image from "next/image";
 import Link from "next/link";
 import { PrefetchLink } from "@/components/navigation/prefetch-link";
@@ -546,6 +547,8 @@ export function HomeAppView({
       desktopWidth="wide"
       rightRail={rightRail}
     >
+      {/* Ангид элссэн сурагчид: ангийнх нь түвшинд түгжигдсэн даалгаврууд. Ангигүй бол харагдахгүй. */}
+      <ClassHomeCard loggedIn={loggedIn} catalog={catalog} fazhanCatalog={fazhanCatalog} />
       {/* Том танилцуулга — зөвхөн шинэ / нэвтрээгүй хүнд. Явцтай хүнд богино мэндчилгээ. */}
       {!loggedIn || !(totals.completed > 0 || streak > 0) ? (
         <section className="bs-page-in relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#7C4DDB] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(124,77,219,0.28)]">

@@ -1917,3 +1917,8 @@ html[data-theme="dark"] .bs-poll-opt{background:rgba(0,0,0,.25);color:#EDE9F6;bo
 .bs-tm-card-ic--3d{background:transparent!important;padding:0}
 .bs-tm-card-ic--3d img{width:100%;height:100%;object-fit:contain;display:block}
 .bs-lvw-play-btn--tone{background:var(--bs-green-50);color:var(--bs-green-700);padding:0 12px}
+
+/* Шалгалтын дасгал: дарж утгыг нь хардаг үг */
+.bs-tap-zh{cursor:pointer;border-bottom:1.5px dotted color-mix(in srgb,var(--app-primary) 55%,transparent);-webkit-tap-highlight-color:transparent}
+.bs-tap-zh:active{background:var(--app-primary-light);border-radius:4px}
+.bs-tap-zh-hint{margin:6px 0 0;font-size:11.5px;font-weight:600;color:var(--app-muted)}

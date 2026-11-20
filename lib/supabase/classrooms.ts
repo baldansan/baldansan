@@ -1443,3 +1443,50 @@ export function getPendingClassCode(): string | null {
     return null;
   }
 }
+
+// --- Сурагчийн өөрийн анги (Нүүрийн «Миний анги» хэсэгт) ---
+
+export type MyClassroomSummary = {
+  id: string;
+  name: string;
+  /** Ангийн HSK түвшин (1–6); тодорхойгүй бол null. */
+  hskLevel: number | null;
+};
+
+function parseHskLevel(...values: (string | null | undefined)[]): number | null {
+  for (const value of values) {
+    const match = value?.match(/hsk\s*-?\s*([1-6])/i);
+    if (match) return Number(match[1]);
+  }
+  return null;
+}
+
+/** Нэвтэрсэн сурагчийн элссэн анги (олон бол хамгийн сүүлд элссэн нь). Ангигүй бол null. */
+export async function getMyClassroomSummary(): Promise<MyClassroomSummary | null> {
+  if (!supabase) return null;
+  const { userId } = await getAuthenticatedUserId();
+  if (!userId) return null;
+  const { data, error } = await supabase
+    .from("classroom_students")
+    .select("status, created_at, classrooms(id, name, level, course_id)")
+    .eq("student_user_id", userId)
+    .order("created_at", { ascending: false });
+  if (error || !data) return null;
+  for (const row of data as Record<string, unknown>[]) {
+    if (row.status === "removed") continue;
+    const raw = row.classrooms as Record<string, unknown> | Record<string, unknown>[] | null;
+    const classroom = Array.isArray(raw) ? raw[0] : raw;
+    if (!classroom?.id) continue;
+    const name = String(classroom.name ?? "");
+    return {
+      id: String(classroom.id),
+      name,
+      hskLevel: parseHskLevel(
+        classroom.level ? String(classroom.level) : null,
+        classroom.course_id ? String(classroom.course_id) : null,
+        name
+      ),
+    };
+  }
+  return null;
+}

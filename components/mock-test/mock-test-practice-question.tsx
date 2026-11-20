@@ -21,6 +21,7 @@ import {
   sentenceOrderInstruction,
 } from "@/lib/mock-test/sentence-order";
 import type { MockOption, MockTestQuestionRow } from "@/lib/mock-test/types";
+import { TapZh } from "@/components/mock-test/tap-zh";
 import { TutorNoteCard } from "@/components/mock-test/tutor-note-card";
 import { WritingScoreGuide } from "@/components/mock-test/writing-score-guide";
 
@@ -259,7 +260,7 @@ function Stem({ question }: { question: MockTestQuestionRow }) {
         <img src={question.image_url} alt="" className="bs-mtp-image" />
       ) : null}
       {question.stem ? (
-        <p className={`bs-mtp-stem hanzi${question.stem.length > 120 ? " bs-mt-q-text--long" : ""}`} translate="no">{question.stem}</p>
+        <p className={`bs-mtp-stem hanzi${question.stem.length > 120 ? " bs-mt-q-text--long" : ""}`} translate="no"><TapZh text={question.stem} /></p>
       ) : null}
     </>
   );
@@ -586,6 +587,9 @@ export function MockTestPracticeQuestion({
         />
       ) : null}
       <Stem question={question} />
+      {question.stem ? (
+        <p className="bs-tap-zh-hint">Мэдэхгүй үг дээрээ дарвал утга нь гарч, цээжлэх үгэнд нэмж болно.</p>
+      ) : null}
       <WritingScoreGuide question={question} />
       {body}
       {/* Багшийн тайлбар өөрийн бичвэртэй бол автомат бичвэрийг давхардуулахгүй. */}
@@ -595,7 +599,7 @@ export function MockTestPracticeQuestion({
         <section className="bs-mtp-transcript">
           <p className="bs-mtp-transcript-label">Сонссон бичвэр</p>
           <p className="bs-mtp-transcript-text hanzi" translate="no">
-            {question.audio_transcript.trim()}
+            <TapZh text={question.audio_transcript.trim()} />
           </p>
           <p className="bs-mtp-transcript-note">
             Энэ бичвэрийг яриа таних програмаар автоматаар буулгасан тул

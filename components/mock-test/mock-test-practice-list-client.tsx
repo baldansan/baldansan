@@ -9,18 +9,20 @@ type Props = {
   tests: MockTestRow[];
   /** test_id → багшийн тайлбартай асуултын тоо («🎓 N/M тайлбартай»). */
   tutorCounts?: Record<string, number>;
+  /** Ангийн нүүрээс ирэхэд тухайн түвшнийг шууд сонгоно (?level=N). */
+  initialLevel?: number | null;
 };
 
 function levelLabel(level: number): string {
   return level >= 7 ? "HSK 7–9" : `HSK ${level}`;
 }
 
-export function MockTestPracticeListClient({ tests, tutorCounts = {} }: Props) {
+export function MockTestPracticeListClient({ tests, tutorCounts = {}, initialLevel }: Props) {
   const levels = useMemo(
     () => [...new Set(tests.map((test) => test.hsk_level))].sort((a, b) => a - b),
     [tests]
   );
-  const [level, setLevel] = useState<number | null>(null);
+  const [level, setLevel] = useState<number | null>(initialLevel ?? null);
 
   const shown = level == null ? tests : tests.filter((t) => t.hsk_level === level);
 
