@@ -1974,3 +1974,4 @@ html[data-theme="dark"] .bs-hz-role--pho{background:#232a52;color:#a9b6ff;border
 .bs-hz-src a:active{transform:scale(.985)}
 .bs-hz-src b{display:block;margin-top:4px;font-size:15px;font-weight:900;color:var(--app-text)}
 .bs-hz-src small{display:block;font-size:12px;line-height:1.35;color:var(--app-muted)}
+.bs-hz-book-img{flex:none;width:58px;height:58px;object-fit:contain}

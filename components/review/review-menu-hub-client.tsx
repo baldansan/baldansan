@@ -192,9 +192,7 @@ export function ReviewMenuHubClient({
   // Дуу · Бичлэг — доод цэснээс «Давтах» руу нүүсэн тул үргэлж харагдана.
   const bichlegCard = (
     <PrefetchLink href={bichlegContinue?.href ?? "/bichleg"} className="bs-tm-card">
-      <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>
-        📺
-      </span>
+      <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/tv.webp" alt="" width={44} height={44} /></span>
       <span className="bs-tm-card-body">
         <span className="bs-tm-card-title">
           {bichlegContinue ? tr(locale, "Бичлэг үргэлжлүүлэх") : tr(locale, "Дуу · Бичлэг")}
@@ -235,7 +233,7 @@ export function ReviewMenuHubClient({
         <span className="bs-tm-card-chev" aria-hidden>›</span>
       </PrefetchLink>
       <PrefetchLink href="/library" className="bs-tm-card">
-        <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>📚</span>
+        <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/shelf.webp" alt="" width={44} height={44} /></span>
         <span className="bs-tm-card-body">
           <span className="bs-tm-card-title">{tr(locale, "Уншлагын сан")}</span>
           <span className="bs-tm-card-sub">{tr(locale, "Зурагт ном, хэлц·зүйр цэцэн үг")}</span>
@@ -267,7 +265,7 @@ export function ReviewMenuHubClient({
 
         {/* Ханзны дэвтэр — өдрийн давталтын дараах хоёр дахь гол хаалга */}
         <PrefetchLink href="/writing" className="bs-hz-book">
-          <span className="bs-hz-book-grid" aria-hidden translate="no">字</span>
+          <img className="bs-hz-book-img" src="/icons3d/notebook.webp" alt="" width={58} height={58} aria-hidden />
           <span className="min-w-0 flex-1">
             <span className="bs-hz-book-title">✍️ {tr(locale, "Ханзны дэвтэр")}</span>
             <span className="bs-hz-book-sub">
@@ -337,21 +335,21 @@ export function ReviewMenuHubClient({
           </summary>
           <div className="mt-3">
         <PrefetchLink href="/review/sentences" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--blue" aria-hidden>🔖</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/sentence.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Өгүүлбэрийн карт")}{sentenceCards.due > 0 ? ` · ${sentenceCards.due}` : ""}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
         <PrefetchLink href="/kanji" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>🈴</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/hanzi.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Ханз, дуудлага")}</span>
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
         <PrefetchLink href="/review/grammar/structure" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>🧩</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/puzzle.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Өгүүлбэрийн бүтэц")}</span>
             <span className="bs-tm-card-sub">{helzuiModuleCount} {tr(locale, "модуль")}</span>
@@ -359,7 +357,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
         <PrefetchLink href="/review/grammar/hsk30" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--red" aria-hidden>📚</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/books.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "HSK дүрэм")}</span>
             <span className="bs-tm-card-sub">{hsk30LevelCount} {tr(locale, "түвшин")} · {hsk30PointCount} {tr(locale, "цэг")}</span>
@@ -367,7 +365,7 @@ export function ReviewMenuHubClient({
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
         <PrefetchLink href="/library" className="bs-tm-card">
-          <span className="bs-tm-card-ic bs-tm-card-ic--green" aria-hidden>📖</span>
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/shelf.webp" alt="" width={44} height={44} /></span>
           <span className="bs-tm-card-body">
             <span className="bs-tm-card-title">{tr(locale, "Уншлагын сан")}</span>
             <span className="bs-tm-card-sub">{tr(locale, "Зурагт ном, хэлц·зүйр цэцэн үг")}</span>
