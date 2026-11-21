@@ -21,7 +21,7 @@ import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
-import { markTodayStepDone } from "@/lib/today/today-path";
+import { markTodayLessonFull, markTodayStepDone } from "@/lib/today/today-path";
 import { LessonPathHub } from "./lesson-path-hub";
 import { LessonPathWarmupStage } from "./lesson-path-warmup-stage";
 import { LessonPathQuizStage } from "./lesson-path-quiz-stage";
@@ -166,6 +166,7 @@ export default function LessonPathPlayer({
       const allDone = allLessonPathStagesCompleted(next, allStageIds);
       if (allDone) {
         await markLessonCompletedSmart(lessonId);
+        if (!adminPreview) markTodayLessonFull(lessonId);
         setShowCelebration(true);
         window.setTimeout(() => setShowCelebration(false), 1000);
       }
@@ -190,7 +191,7 @@ export default function LessonPathPlayer({
         }
       }, allDone ? 1000 : 700);
     },
-    [lessonId, allStageIds, plan.stages, openStage, goToHub]
+    [lessonId, allStageIds, plan.stages, openStage, goToHub, adminPreview]
   );
 
   // «Дүгнэлт» бол үр дүнгийн дэлгэц — нээгдмэгц дууссанд тооцно. Өмнө нь энэ үеийг дуусгах
@@ -205,9 +206,10 @@ export default function LessonPathPlayer({
       setProgress(next);
       if (allLessonPathStagesCompleted(next, allStageIds)) {
         await markLessonCompletedSmart(lessonId);
+        if (!adminPreview) markTodayLessonFull(lessonId);
       }
     })();
-  }, [view, activeStage?.id, progress.completedStageIds, lessonId, allStageIds]);
+  }, [view, activeStage?.id, progress.completedStageIds, lessonId, allStageIds, adminPreview]);
 
   const handleFinishStage = useCallback(() => {
     if (!activeStage) return;

@@ -1794,6 +1794,11 @@ html[data-theme="dark"] .bs-tm-bdg--on {
 .bs-today-step-meta { display: block; font-size: 12px; font-weight: 600; color: var(--app-muted, #7b897f); }
 .bs-today-go { flex-shrink: 0; padding: 8px 14px; border-radius: 999px; background: #7C4DDB; color: #fff; font-size: 13px; font-weight: 900; }
 .bs-today-chev { flex-shrink: 0; font-size: 20px; color: var(--app-muted, #b9c4bd); }
+.bs-today-skip {
+  display: block; width: 100%; margin: 0; padding: 7px 14px 9px 68px; text-align: left;
+  background: var(--bs-card); border: 0; border-radius: 0 0 10px 10px; margin-top: -6px;
+  font-size: 12px; font-weight: 700; color: var(--app-muted, #7b897f); text-decoration: underline; cursor: pointer;
+}
 
 /* ── Миний ахиц (нэг дэлгэц) ─────────────────────────────── */
 .bs-mp-card { background: var(--app-surface, #fff); border: 1px solid var(--app-border, #E8E0F5); border-radius: 22px; padding: 16px; margin-bottom: 12px; }
@@ -1885,3 +1890,8 @@ html[data-theme="dark"] .bs-tm-bdg--on {
 .bs-ll-pct--done { color: #6537C2; }
 .bs-srs-fewnote { display: block; margin-bottom: 10px; padding: 11px 14px; border-radius: 16px; font-size: 14px; font-weight: 600; color: var(--app-text); background: color-mix(in srgb, #f59e0b 14%, transparent); border: 1px solid color-mix(in srgb, #f59e0b 40%, transparent); }
 .bs-srs-fewnote b { color: #b45309; }
+
+/* —— Шинэ хэрэглэгчийн эхлэл (түвшин → ном → хичээл → төлөвлөгөө) —— */
+.bs-start { position: fixed; inset: 0; z-index: 200; overflow-y: auto; background: var(--app-bg, #F6F1FF); }
+.bs-start-inner { width: 100%; max-width: 480px; margin: 0 auto; padding: 20px 16px 40px; padding-top: max(20px, env(safe-area-inset-top)); }
+.bs-today-reset { display: block; margin: -6px auto 14px; padding: 4px 10px; border: 0; background: transparent; font-size: 12px; font-weight: 700; color: var(--app-muted, #7b897f); text-decoration: underline; cursor: pointer; }

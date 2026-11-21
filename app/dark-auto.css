@@ -1,7 +1,7 @@
 /* АВТОМАТААР ҮҮСГЭСЭН (scripts/gen-dark-auto.py) — гараар бүү зас.
    Харанхуй горимд тогтмол цайвар дэвсгэр / бараан бичвэртэй бүх дүрмийг харанхуй өнгө рүү хөрвүүлнэ. */
 
-/* app/buunduu-theme.css (156) */
+/* app/buunduu-theme.css (157) */
 html[data-theme="dark"] .bs-pnum.bs-lock{background-color:#241F33}
 html[data-theme="dark"] .bs-pbody.bs-dim{background-color:#241F33}
 html[data-theme="dark"] .bs-srs-progress-track{background-color:#241F33}
@@ -158,6 +158,7 @@ html[data-theme="dark"] .bs-mtp-hero-btn{background-color:var(--bs-card)}
 html[data-theme="dark"] .bs-mtp-row-badge--violet{background-color:var(--bs-green-50)}
 html[data-theme="dark"] .bs-mtp-row-badge--blue{background-color:#172a3d}
 html[data-theme="dark"] .bs-mtp-row-badge--amber{background-color:var(--bs-amber-50);color:#f5c877}
+html[data-theme="dark"] .bs-mt-std-btn--on{background-color:var(--bs-card)}
 
 /* app/globals.css (7) */
 html[data-theme="dark"] .admin-layout{color:#8fc7ff}

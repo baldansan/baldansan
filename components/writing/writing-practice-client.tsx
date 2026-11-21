@@ -2,6 +2,9 @@
 
 /**
  * Бичих дасгал: ханз бүрд 👀 хар → ✍️ дагаж ×N → 🧠 санаж ×M.
+ * Ханзыг багцаар (анхдагч 2) явуулна: багцын ханз бүрийг харж, дагаж бичээд, дараа нь
+ * санаж бичихийг ээлжлүүлнэ (A, B, A, B…) — гар хуулахгүй, толгой санана. Хоёр багц
+ * тутамд өмнөх ханзуудыг загваргүйгээр нэг удаа холиж асууна.
  * Ахиц дэвтэрт (локал/сервер) хадгалагдана; санаж бичих дууссан ханз бичих
  * SRS-д үнэлэгдэж, алдсан бол давталтад буцаж ирнэ.
  */
@@ -18,6 +21,7 @@ import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { KID_MODE_STORAGE_KEY } from "@/lib/kids/types";
 import { recordWritingResult } from "@/lib/srs/writing-srs-sync";
+import { markTodayHanzi } from "@/lib/today/today-path";
 import { getList, getProgress, saveProgress } from "@/lib/writing/store";
 import {
   isCharDone,
@@ -49,7 +53,23 @@ type Props = {
 
 type Step = { phase: WritingPadPhase; index: number; total: number; base: number };
 
+/** Дарааллын нэг даалгавар: аль ханз, аль алхам. extra = хоёр багц тутмын холимог давталт. */
+type Task = Step & { ch: string; extra?: boolean };
+
 type CharResult = { ch: string; mistakes: number; done: boolean };
+
+const GROUP_KEY = "bs:writingGroupSize";
+const GROUP_DEFAULT = 2;
+const GROUP_OPTIONS = [1, 2, 3, 4, 5];
+
+function readGroupSize(): number {
+  try {
+    const n = Number(window.localStorage.getItem(GROUP_KEY));
+    return GROUP_OPTIONS.includes(n) ? n : GROUP_DEFAULT;
+  } catch {
+    return GROUP_DEFAULT;
+  }
+}
 
 function readKidMode(): boolean {
   try {
@@ -83,6 +103,40 @@ function buildSteps(
   return steps;
 }
 
+/** Бүх ханзны даалгаврыг багцаар нь нэг дараалал болгоно. */
+function buildTasks(
+  list: WritingList,
+  progress: WritingProgressMap,
+  chars: string[],
+  fromScratch: boolean,
+  group: number
+): Task[] {
+  const per = (c: string): Task[] =>
+    buildSteps(list, progress[c], fromScratch).map((st) => ({ ...st, ch: c }));
+  if (group <= 1) return chars.flatMap(per);
+  const groups: string[][] = [];
+  for (let i = 0; i < chars.length; i += group) groups.push(chars.slice(i, i + group));
+  const tasks: Task[] = [];
+  groups.forEach((g, gi) => {
+    const stepsBy = g.map(per);
+    // 1) Ханз бүрийг харж, дагаж бичнэ.
+    stepsBy.forEach((st) => tasks.push(...st.filter((x) => x.phase !== "memory")));
+    // 2) Санаж бичихийг ээлжлүүлнэ.
+    const mem = stepsBy.map((st) => st.filter((x) => x.phase === "memory"));
+    const rounds = Math.max(0, ...mem.map((m) => m.length));
+    for (let r = 0; r < rounds; r += 1) {
+      for (const m of mem) if (m[r]) tasks.push(m[r]!);
+    }
+    // 3) Хоёр багц тутамд өмнөх ханзуудыг загваргүй нэг удаа.
+    if (gi % 2 === 1) {
+      for (const c of [...groups[gi - 1]!, ...g]) {
+        tasks.push({ ch: c, phase: "memory", index: 0, total: 1, base: 0, extra: true });
+      }
+    }
+  });
+  return tasks;
+}
+
 export function WritingPracticeClient({ listId, startChar = null, again = false }: Props) {
   const locale = useUiLocale();
   const [list, setList] = useState<WritingList | null>(null);
@@ -96,15 +150,15 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
 
   const [queue, setQueue] = useState<string[]>([]);
   const [remaining, setRemaining] = useState<string[]>([]);
-  const [qi, setQi] = useState(0);
-  const [steps, setSteps] = useState<Step[]>([]);
-  const [si, setSi] = useState(0);
+  const [tasks, setTasks] = useState<Task[]>([]);
+  const [ti, setTi] = useState(0);
+  const [group, setGroup] = useState(GROUP_DEFAULT);
   const [fromScratch, setFromScratch] = useState(again);
   const [padKey, setPadKey] = useState(0);
   const [feedback, setFeedback] = useState<string | null>(null);
   const [completed, setCompleted] = useState<string[]>([]);
   const [results, setResults] = useState<CharResult[]>([]);
-  const sessionRef = useRef<{ mistakes: number; usedHint: boolean }>({ mistakes: 0, usedHint: false });
+  const sessionRef = useRef<Map<string, { mistakes: number; usedHint: boolean }>>(new Map());
   const advanceTimerRef = useRef<number | null>(null);
 
   const itemByCh = useMemo(() => {
@@ -138,21 +192,23 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
 
   /** Дараалал үүсгэж дасгалыг эхлүүлнэ. */
   const startSession = useCallback(
-    (l: WritingList, chars: string[], scratch: boolean, isKids: boolean) => {
+    (l: WritingList, chars: string[], scratch: boolean, isKids: boolean, groupSize?: number) => {
       if (chars.length === 0) {
         setScreen("empty");
         return;
       }
       const chunk = isKids ? chars.slice(0, KIDS_CHUNK) : chars;
+      // Хүүхдийн горим: нэг нэгээр (5-аар хэсэглэнэ). Бусад нь сонгосон багцаар.
+      const g = isKids ? 1 : (groupSize ?? readGroupSize());
+      setGroup(g);
       setQueue(chunk);
       setRemaining(isKids ? chars.slice(KIDS_CHUNK) : []);
-      setQi(0);
       setFromScratch(scratch);
-      setSteps(buildSteps(l, progressRef.current[chunk[0]!], scratch));
-      setSi(0);
+      setTasks(buildTasks(l, progressRef.current, chunk, scratch, g));
+      setTi(0);
       setCompleted([]);
       setResults([]);
-      sessionRef.current = { mistakes: 0, usedHint: false };
+      sessionRef.current = new Map();
       setPadKey((k) => k + 1);
       setScreen("run");
     },
@@ -190,9 +246,14 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
     };
   }, [listId, startChar, again, startSession, kids]);
 
-  const ch = queue[qi] ?? null;
+  const step = tasks[ti] ?? null;
+  const ch = step?.ch ?? null;
   const item = ch ? itemByCh.get(ch) ?? null : null;
-  const step = steps[si] ?? null;
+  /** Одоогийн ханзны өөрийн алхмууд (холимог давталтыг оруулахгүй) — дээрх чипүүдэд. */
+  const steps = useMemo(
+    () => (ch ? tasks.filter((t) => t.ch === ch && !t.extra) : []),
+    [tasks, ch]
+  );
 
   function bumpProgress(c: string, patch: (p: WritingCharProgress) => WritingCharProgress) {
     const prev: WritingCharProgress = progressRef.current[c] ?? {
@@ -211,44 +272,44 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
   }
 
   function goNext() {
-    if (!list || !ch) return;
-    if (si < steps.length - 1) {
-      setSi(si + 1);
-      setPadKey((k) => k + 1);
-      return;
-    }
-    // Ханз дууслаа.
-    const hadMemory = steps.some((s) => s.phase === "memory");
-    const p = progressRef.current[ch];
-    const doneNow = isCharDone(list, p);
-    if (hadMemory) {
-      recordWritingResult(
-        { key: ch, pinyin: item?.pinyin ?? null, meaning: item?.meaning_mn ?? null },
-        { mistakes: sessionRef.current.mistakes, usedHint: sessionRef.current.usedHint }
-      );
-    }
-    if (doneNow && !p?.completedAt) {
-      bumpProgress(ch, (prev) => ({ ...prev, completedAt: new Date().toISOString() }));
-    }
-    const nextResults = [...results, { ch, mistakes: sessionRef.current.mistakes, done: doneNow }];
-    setResults(nextResults);
-    setCompleted((prev) => [...prev, ch]);
-    sessionRef.current = { mistakes: 0, usedHint: false };
+    if (!list || !ch || !step) return;
+    const hasMore = tasks.slice(ti + 1).some((t) => t.ch === ch);
+    let nextResults = results;
+    if (!hasMore) {
+      // Энэ ханзны бүх даалгавар дууслаа.
+      const sess = sessionRef.current.get(ch) ?? { mistakes: 0, usedHint: false };
+      const hadMemory = tasks.some((t) => t.ch === ch && t.phase === "memory");
+      const p = progressRef.current[ch];
+      const doneNow = isCharDone(list, p);
+      if (hadMemory) {
+        recordWritingResult(
+          { key: ch, pinyin: item?.pinyin ?? null, meaning: item?.meaning_mn ?? null },
+          { mistakes: sess.mistakes, usedHint: sess.usedHint }
+        );
+      }
+      if (doneNow && !p?.completedAt) {
+        bumpProgress(ch, (prev) => ({ ...prev, completedAt: new Date().toISOString() }));
+      }
+      nextResults = [...results, { ch, mistakes: sess.mistakes, done: doneNow }];
+      setResults(nextResults);
+      setCompleted((prev) => [...prev, ch]);
 
-    const summary = summarizeProgress(list, progressRef.current);
-    if (list.assignmentId && summary.cellsTotal > 0 && summary.cellsDone >= summary.cellsTotal) {
-      const totalMistakes = Object.values(progressRef.current).reduce((n, r) => n + r.mistakes, 0);
-      void completeWritingAssignment(list.assignmentId, {
-        charsTotal: summary.charsTotal,
-        mistakes: totalMistakes,
-      });
+      const summary = summarizeProgress(list, progressRef.current);
+      if (summary.cellsTotal > 0 && summary.cellsDone >= summary.cellsTotal) {
+        if (list.assignmentId) {
+          const totalMistakes = Object.values(progressRef.current).reduce((n, r) => n + r.mistakes, 0);
+          void completeWritingAssignment(list.assignmentId, {
+            charsTotal: summary.charsTotal,
+            mistakes: totalMistakes,
+          });
+        }
+        // Хичээлийн дэвтэр бүтэн бичигдлээ → өнөөдрийн төлөвлөгөөний «ханз» алхам.
+        if (list.kind === "lesson") markTodayHanzi("done");
+      }
     }
 
-    if (qi < queue.length - 1) {
-      const nextCh = queue[qi + 1]!;
-      setQi(qi + 1);
-      setSteps(buildSteps(list, progressRef.current[nextCh], fromScratch));
-      setSi(0);
+    if (ti < tasks.length - 1) {
+      setTi(ti + 1);
       setPadKey((k) => k + 1);
     } else {
       flushSave();
@@ -262,11 +323,15 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
     if (step.phase === "trace") {
       bumpProgress(ch, (prev) => ({ ...prev, traceDone: prev.traceDone + 1 }));
     } else {
-      sessionRef.current.mistakes += result.mistakes;
-      sessionRef.current.usedHint = sessionRef.current.usedHint || result.usedHint;
+      const sess = sessionRef.current.get(ch) ?? { mistakes: 0, usedHint: false };
+      sessionRef.current.set(ch, {
+        mistakes: sess.mistakes + result.mistakes,
+        usedHint: sess.usedHint || result.usedHint,
+      });
+      // Холимог давталт нь нэмэлт — дэвтрийн нүдийг тоолохгүй, зөвхөн алдааг тэмдэглэнэ.
       bumpProgress(ch, (prev) => ({
         ...prev,
-        memoryDone: prev.memoryDone + 1,
+        memoryDone: step.extra ? prev.memoryDone : prev.memoryDone + 1,
         mistakes: prev.mistakes + result.mistakes,
       }));
     }
@@ -287,6 +352,21 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
   function nextChunk() {
     if (!list) return;
     startSession(list, remaining, fromScratch, kids);
+  }
+
+  /** Нэг дор хэдэн ханз явахыг солино — бичиж дуусаагүй ханзуудаар шинээр дараална. */
+  function changeGroup(next: number) {
+    if (!list || next === group) return;
+    try {
+      window.localStorage.setItem(GROUP_KEY, String(next));
+    } catch {
+      // ignore
+    }
+    const finished = new Set(results.map((r) => r.ch));
+    const left = queue.filter((c) => !finished.has(c));
+    const keep = results;
+    startSession(list, left, false, kids, next);
+    setResults(keep);
   }
 
   function restart() {
@@ -393,7 +473,12 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
               ▶ {tr(locale, "Дараагийн 5")} ({Math.min(KIDS_CHUNK, remaining.length)})
             </button>
           ) : null}
-          <Link href={`/writing/${listId}`} className={`${kids && remaining.length > 0 ? "" : "app-btn-primary"} w-full rounded-full bg-white px-4 py-2 text-center text-sm font-semibold text-slate-700 ring-1 ring-slate-200`}>
+          {list.kind === "lesson" && !(kids && remaining.length > 0) ? (
+            <Link href="/home" className="app-btn-primary w-full text-center">
+              {tr(locale, "Нүүр рүү — өнөөдрийн төлөвлөгөө")} →
+            </Link>
+          ) : null}
+          <Link href={`/writing/${listId}`} className={`${(kids && remaining.length > 0) || list.kind === "lesson" ? "" : "app-btn-primary"} w-full rounded-full bg-white px-4 py-2 text-center text-sm font-semibold text-slate-700 ring-1 ring-slate-200`}>
             📓 {tr(locale, "Дэвтэр рүү")}
           </Link>
           <button
@@ -422,7 +507,7 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
           {tr(locale, "← Дэвтэр рүү")}
         </Link>
         <p className="text-xs font-bold text-[var(--app-muted)]">
-          {qi + 1}/{queue.length} {tr(locale, "ханз")}
+          {Math.min(results.length + 1, queue.length)}/{queue.length} {tr(locale, "ханз")}
           {remaining.length > 0 ? ` · +${remaining.length}` : ""}
         </p>
       </div>
@@ -464,32 +549,38 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
       </MobileCard>
 
       <div className="mb-3 flex flex-wrap items-center justify-center gap-1 text-[11px] font-bold">
-        {(["watch", "trace", "memory"] as WritingPadPhase[]).map((phase, i) => {
-          // Үе шат бүрийг нэг чипээр: идэвхтэй бол одоогийн тоотой, үгүй бол эхнийх.
-          const firstIdx = steps.findIndex((x) => x.phase === phase);
-          if (firstIdx < 0) return null;
-          const active = phase === step.phase;
-          const passed = !active && firstIdx < si;
-          const shown = active ? step : steps[firstIdx]!;
-          return (
-            <span key={phase} className="flex items-center gap-1">
-              {i > 0 ? <span className="text-slate-300">→</span> : null}
-              <span
-                className={`rounded-full px-2.5 py-1 ${
-                  active
-                    ? phase === "memory"
-                      ? "bg-amber-100 text-amber-800"
-                      : "bg-emerald-100 text-emerald-800"
-                    : passed
-                      ? "text-emerald-600"
-                      : "text-slate-400"
-                }`}
-              >
-                {stepLabel(shown)}
+        {step.extra ? (
+          <span className="rounded-full bg-amber-100 px-2.5 py-1 text-amber-800">
+            🔀 {tr(locale, "Холимог давталт — загваргүй")}
+          </span>
+        ) : (
+          (["watch", "trace", "memory"] as WritingPadPhase[]).map((phase, i) => {
+            // Үе шат бүрийг нэг чипээр: идэвхтэй бол одоогийн тоотой, үгүй бол эхнийх.
+            const first = steps.find((x) => x.phase === phase);
+            if (!first) return null;
+            const active = phase === step.phase;
+            const passed = !active && tasks.indexOf(first) < ti;
+            const shown = active ? step : first;
+            return (
+              <span key={phase} className="flex items-center gap-1">
+                {i > 0 ? <span className="text-slate-300">→</span> : null}
+                <span
+                  className={`rounded-full px-2.5 py-1 ${
+                    active
+                      ? phase === "memory"
+                        ? "bg-amber-100 text-amber-800"
+                        : "bg-emerald-100 text-emerald-800"
+                      : passed
+                        ? "text-emerald-600"
+                        : "text-slate-400"
+                  }`}
+                >
+                  {stepLabel(shown)}
+                </span>
               </span>
-            </span>
-          );
-        })}
+            );
+          })
+        )}
       </div>
 
       <div className="relative mx-auto w-full max-w-[340px]">
@@ -518,6 +609,27 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
             : tr(locale, "Саарал зураасыг дагаж бич.")}
         </p>
       )}
+
+      {!kids && queue.length > 1 ? (
+        <div className="mt-4 flex items-center justify-center gap-1.5 text-xs font-semibold text-[var(--app-muted)]">
+          <span>{tr(locale, "Нэг дор хэдэн ханз:")}</span>
+          {GROUP_OPTIONS.map((n) => (
+            <button
+              key={n}
+              type="button"
+              aria-pressed={n === group}
+              onClick={() => changeGroup(n)}
+              className={`h-7 w-7 rounded-full text-xs font-bold ${
+                n === group
+                  ? "bg-emerald-600 text-white"
+                  : "bg-white text-slate-600 ring-1 ring-slate-200"
+              }`}
+            >
+              {n}
+            </button>
+          ))}
+        </div>
+      ) : null}
 
       {kids && completed.length > 0 ? (
         <div className="mt-4 flex flex-wrap justify-center gap-1.5" translate="no">

@@ -10,7 +10,7 @@ import {
   writeLocalSnapshot,
 } from "@/lib/cache/local-snapshot";
 import { useEffect, useMemo, useState } from "react";
-import { getSelectedLanguage } from "@/lib/learner-onboarding";
+import { getSelectedLanguage, setLearnerLanguagePreference } from "@/lib/learner-onboarding";
 import {
   catalogEntryMatchesLanguage,
   languageTrackLabel,
@@ -46,6 +46,9 @@ import {
   type MyRank,
 } from "@/lib/points/rank";
 import { HomeTodayPath } from "@/components/home/home-today-path";
+import { StartWizard, type StartWizardResult } from "@/components/start/start-wizard";
+import { readBookStart, writeBookStart } from "@/lib/today/today-path";
+import { KID_MODE_STORAGE_KEY } from "@/lib/kids/types";
 import { TeacherAssignmentBanner } from "@/components/home/teacher-assignment-banner";
 import { ExamGoalCard } from "@/components/engagement/exam-goal-card";
 import { MyStudySystem } from "@/components/engagement/my-study-system";
@@ -130,6 +133,12 @@ export function HomeAppView({
   const [classRank, setClassRank] = useState<MyRank | null>(null);
   const [freshContinueHref, setContinueHref] = useState("/lessons/1");
   const [freshContinueTitle, setContinueTitle] = useState("Хичээл 1");
+  /** Үргэлжлүүлэх хичээлийн id — өдрийн төлөвлөгөөний ханзны дэвтэр энэ хичээлээр нээгдэнэ. */
+  const [continueLessonId, setContinueLessonId] = useState<string | null>(null);
+  /** Шинэ хэрэглэгчийн эхлэл (түвшин → ном → хичээл). "new" = анх удаа, "redo" = дахин тохируулах. */
+  const [startMode, setStartMode] = useState<"new" | "redo" | null>(null);
+  /** «N-р хичээл дээр явна» сонголт өөрчлөгдөхөд үргэлжлүүлэх хичээлийг дахин тооцно. */
+  const [bookStartVersion, setBookStartVersion] = useState(0);
   /** Үргэлжлүүлэх холбоос бодит утгаа авсны дараа л бүтэн prefetch (eager) хийнэ. */
   const [continueResolved, setContinueResolved] = useState(false);
   const [freshStatusByLesson, setStatusByLesson] = useState<
@@ -433,9 +442,13 @@ export function HomeAppView({
   useEffect(() => {
     let alive = true;
     async function load() {
+      // «Энэ номыг үзэж байсан, N-р хичээл дээр явна» гэж сонгосон бол тэндээс нь үргэлжлүүлнэ.
+      const startId = readBookStart(`${activeSeries}:${activeChip}`);
+      const startIdx = startId ? lessonIds.indexOf(startId) : -1;
+      const continueIds = startIdx > 0 ? lessonIds.slice(startIdx) : lessonIds;
       const [cont, progress] = await Promise.all([
-        lessonIds.length > 0
-          ? resolveContinueLearning(lessonIds).catch(() => null)
+        continueIds.length > 0
+          ? resolveContinueLearning(continueIds).catch(() => null)
           : Promise.resolve(null),
         allLessonIds.length > 0
           ? getLessonProgressMapSmart(allLessonIds).catch(() => null)
@@ -454,6 +467,7 @@ export function HomeAppView({
           : `Хичээл ${cont.lessonId}`;
         setContinueHref(nextHref);
         setContinueTitle(nextTitle);
+        setContinueLessonId(cont.lessonId);
       }
       if (progress) setStatusByLesson(progress.byLesson);
       setContinueResolved(true);
@@ -473,7 +487,45 @@ export function HomeAppView({
     return () => {
       alive = false;
     };
-  }, [lessonIds, lessons, allLessonIds]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lessonIds, lessons, allLessonIds, bookStartVersion]);
+
+  // Шинэ хүн (энэ төхөөрөмж дээр ном сонгоогүй, дууссан хичээлгүй) → эхлэлийн тохиргоо.
+  useEffect(() => {
+    if (!continueResolved || startMode) return;
+    try {
+      if (window.localStorage.getItem("bs:start.v1")) return;
+      if (window.localStorage.getItem("bs:homeChip")) return;
+      if (window.localStorage.getItem(KID_MODE_STORAGE_KEY)) return;
+    } catch {
+      return;
+    }
+    if (Object.values(freshStatusByLesson).some((st) => st !== "not_started")) return;
+    setStartMode("new");
+  }, [continueResolved, startMode, freshStatusByLesson]);
+
+  const finishStart = (result: StartWizardResult) => {
+    const level = result.level >= 7 ? ("7-9" as const) : (Math.max(1, result.level) as 1 | 2 | 3 | 4 | 5 | 6);
+    writeBookStart(`${result.series}:${result.chipId}`, result.startLessonId);
+    try {
+      window.localStorage.setItem("bs:start.v1", JSON.stringify({ ...result, at: new Date().toISOString() }));
+      window.localStorage.setItem("bs:homeSeries", result.series);
+      window.localStorage.setItem("bs:homeChip", result.chipId);
+    } catch {
+      // ignore
+    }
+    if (!getSelectedLanguage()) {
+      setLearnerLanguagePreference("zh");
+      setSelectedLang("zh");
+    }
+    setLevelPicked(true);
+    setActiveSeries(result.series);
+    setActiveChip(result.chipId);
+    setActiveHskLevel(level);
+    setBookStartVersion((v) => v + 1);
+    setStartMode(null);
+    window.scrollTo({ top: 0 });
+  };
 
   // Ангийн заавал хөтөлбөр (066) — байвал нэг жижиг карт. Алдаа гарвал чимээгүй нууна.
   useEffect(() => {
@@ -711,8 +763,20 @@ export function HomeAppView({
       <HomeTodayPath
         lessonHref={activeCourse?.available && lessonIds.length > 0 ? continueHref : null}
         lessonTitle={continueTitle}
+        lessonId={continueResolved ? continueLessonId : null}
         bookLevel={activeCourse ? resolveCatalogChipLevel(activeCourse) : null}
       />
+      <button type="button" className="bs-today-reset" onClick={() => setStartMode("redo")}>
+        {tr(locale, "Түвшин, номоо дахин тохируулах")}
+      </button>
+      {startMode ? (
+        <StartWizard
+          catalog={catalog}
+          fazhanCatalog={fazhanCatalog}
+          onDone={finishStart}
+          onClose={startMode === "redo" ? () => setStartMode(null) : undefined}
+        />
+      ) : null}
 
       {/* Хүүхдийн горим эсвэл зам эхэлсэн бол — хамгийн эхний карт */}
       <KidPathHomeCard />

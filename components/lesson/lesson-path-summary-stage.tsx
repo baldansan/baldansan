@@ -14,6 +14,7 @@ import { coursePath } from "@/lib/content";
 import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { saveLessonWordsBatch } from "@/lib/supabase/saved-words";
 import { SavedWordsHint } from "@/components/review/saved-words-hint";
+import { markTodayHanzi } from "@/lib/today/today-path";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 
 type Props = {
@@ -76,6 +77,36 @@ export function LessonPathSummaryStage({
 
   const [savedToReview, setSavedToReview] = useState(false);
 
+  // Хичээл дуусмагц «Ханзны дэвтэр» өөрөө гарч ирнэ (хичээл бүрд нэг удаа; мэддэг хүн алгасна).
+  const hanziPromptKey = `bs:hanziPrompt:${lessonId}`;
+  const [hanziPrompt, setHanziPrompt] = useState(false);
+  const hanziPreview = useMemo(() => {
+    const seen = new Set<string>();
+    for (const item of summary.vocabulary) {
+      for (const ch of item.zh ?? "") {
+        if (/[\u4e00-\u9fff]/.test(ch)) seen.add(ch);
+      }
+    }
+    return [...seen];
+  }, [summary.vocabulary]);
+  useEffect(() => {
+    if (adminPreview || hanziPreview.length === 0) return;
+    try {
+      if (!window.localStorage.getItem(hanziPromptKey)) setHanziPrompt(true);
+    } catch {
+      // ignore
+    }
+  }, [adminPreview, hanziPreview.length, hanziPromptKey]);
+  function closeHanziPrompt(skipped: boolean) {
+    try {
+      window.localStorage.setItem(hanziPromptKey, skipped ? "skipped" : "started");
+    } catch {
+      // ignore
+    }
+    if (skipped) markTodayHanzi("skipped");
+    setHanziPrompt(false);
+  }
+
   async function handleSaveAllWords() {
     if (summary.vocabulary.length === 0) return;
     setSavingWords(true);
@@ -110,6 +141,34 @@ export function LessonPathSummaryStage({
 
   return (
     <div className="bs-path-summary">
+      {hanziPrompt ? (
+        <div className="bs-hanzi-prompt" role="dialog" aria-modal="true" aria-label="Ханзны дэвтэр">
+          <div className="bs-hanzi-prompt-card">
+            <p className="bs-stage-done-kicker">Хичээл дууслаа 🎉</p>
+            <h2 className="bs-stage-done-title">Одоо ханзаа дэвтэртээ бичье</h2>
+            <div className="bs-hanzi-prompt-chars" translate="no">
+              {hanziPreview.slice(0, 8).map((ch) => (
+                <span key={ch}>{ch}</span>
+              ))}
+              {hanziPreview.length > 8 ? <em>+{hanziPreview.length - 8}</em> : null}
+            </div>
+            <p className="bs-stage-done-meta">
+              <b>{hanziPreview.length} ханз</b> · 2, 2-оор нь: 👀 харна → ✍️ дагаж зурна → 🧠 санаж бичнэ
+            </p>
+            <a
+              href={`/writing/lesson/${encodeURIComponent(lessonId)}`}
+              className="bs-stage-done-next bs-path-visible-cta"
+              style={{ display: "block", textAlign: "center", textDecoration: "none" }}
+              onClick={() => closeHanziPrompt(false)}
+            >
+              ✍️ Бичиж эхлэх
+            </a>
+            <button type="button" className="bs-hanzi-prompt-skip" onClick={() => closeHanziPrompt(true)}>
+              Эдгээр ханзыг мэднэ — алгасъя
+            </button>
+          </div>
+        </div>
+      ) : null}
       {toast ? (
         <p className="bs-path-summary-toast" role="status">
           {toast}
