@@ -2059,7 +2059,7 @@
     },
     {
      "zh": "根据李文的建议，她先在租房网站和APP上查看有关信息，查找合适的房子，接着又去看了看房子，同时了解房子周围的环境。",
-     "pinyin": "Gēnjù Lǐ Wén de jiànyì, tā xiān zài zūfáng wǎngzhàn hé APP shang chákàn yǒuguān xìnxī, cházhǎo héshì de fángzi, jiēzhe yòu qù kàn le kan fángzi, tóngshí liǎojiě fángzi zhōuwéi de huánjìng.",
+     "pinyin": "Gēnjù Lǐ Wén de jiànyì, tā xiān zài zūfáng wǎngzhàn hé APP shang chákàn yǒuguān xìnxī, cházhǎo héshì de fángzi, jiēzhe yòu qù kàn le kàn fángzi, tóngshí liǎojiě fángzi zhōuwéi de huánjìng.",
      "mn": "Ли Вэнийн зөвлөснөөр тэр эхлээд байр түрээслүүлэх вэб сайт, апп дээр холбогдох мэдээллийг үзэж, тохиромжтой байр хайсан, дараа нь байр үзэхээр очиж, зэрэгцээд байрны эргэн тойрны орчныг судалсан.",
      "tokens": [
       {
@@ -2172,7 +2172,7 @@
       },
       {
        "zh": "看",
-       "py": "kan"
+       "py": "kàn"
       },
       {
        "zh": "房子",
