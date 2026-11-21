@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "xinhsk4a",
+ "lessonId": "xinhsk4a-l08",
+ "hskLevel": 4,
+ "lessonNumber": 8,
+ "lessonProfile": "hsk3-dialogue-reading-writing-review",
+ "lessonType": "hsk3-dialogue-reading-writing-review",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "该放松时就放松",
+ "mongolianTitle": "Амрах цагтаа амар",
+ "source": "新HSK教程4上 (外研社, HSK 3.0) — 8-р хичээл: үг, 课文, дүрэм, дасгал сурах бичиг + 学练手册 + PPT-ээс; монгол орчуулга, тайлбар «Бөөндөө Сурцгаая»",
+ "hasAudio": true,
+ "hasImages": true,
+ "verification": {
+  "answerStatus": "ppt + 练习题答案 (хүн шалгаагүй)",
+  "textStatus": "新HSK教程4上 课文 — аудионоос бичсэн (whisper medium), хүн шалгаагүй"
+ }
+}

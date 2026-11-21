@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-hero.webp",
+   "title": "10-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l10-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w1.webp",
+   "title": "寒假 hánjià — өвлийн амралт",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w2.webp",
+   "title": "温度 wēndù — температур",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w3.webp",
+   "title": "误会 wùhuì — буруу ойлгох",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w4.webp",
+   "title": "植物 zhíwù — ургамал",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w5.webp",
+   "title": "拒绝 jùjué — татгалзах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l10-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l10/l10-w6.webp",
+   "title": "垃圾 lājī — хог",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

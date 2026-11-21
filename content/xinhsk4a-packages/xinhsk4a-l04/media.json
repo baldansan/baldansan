@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-hero.webp",
+   "title": "4-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l04-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w1.webp",
+   "title": "袋子 dàizi — уут",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w2.webp",
+   "title": "感谢 gǎnxiè — баярлах, талархах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w3.webp",
+   "title": "早餐 zǎocān — өглөөний цай",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w4.webp",
+   "title": "乘客 chéngkè — зорчигч",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w5.webp",
+   "title": "鲜花 xiānhuā — шинэ цэцэг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l04-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l04/l04-w6.webp",
+   "title": "电动车 diàndòngchē — цахилгаан мотоцикл",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

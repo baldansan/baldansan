@@ -68,6 +68,12 @@ const FAZHAN_SERIES: Record<string, CourseSeriesMeta> = {
     subtitle: "Шинэ HSK 3.0 стандартын 3-р түвшний сурах бичиг (外研社) — 18 хичээл, 490 үг",
     hskLevel: 3,
   },
+  xinhsk4a: {
+    label: "HSK 3.0 · HSK4上",
+    title: "HSK 3.0 · HSK4上 (新HSK教程 4上)",
+    subtitle: "Шинэ HSK 3.0 стандартын 4-р түвшний сурах бичиг, дээд дэвтэр (外研社) — 10 хичээл",
+    hskLevel: 4,
+  },
 };
 
 const YCT_SERIES: Record<string, CourseSeriesMeta> = {

@@ -1,0 +1,402 @@
+[
+ {
+  "chinese": "紧张",
+  "pinyin": "jǐnzhāng",
+  "mongolian": "сандарсан, түгшсэн; ачаалалтай; (тийз, суудал) хомс",
+  "hskLevel": "HSK4",
+  "exampleChinese": "最近我工作很紧张，有很多任务要完成。",
+  "exampleMongolian": "Сүүлийн үед миний ажил ачаалалтай, хийх даалгавар олон байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "学习紧张 / 有些紧张 / 座位紧张"
+ },
+ {
+  "chinese": "放松",
+  "pinyin": "fàngsōng",
+  "mongolian": "тайвширах, амрах, сулрах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "听音乐可以让人放松。",
+  "exampleMongolian": "Хөгжим сонсох нь хүнийг тайвшруулдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "放松心情 / 放松下来"
+ },
+ {
+  "chinese": "呀",
+  "pinyin": "yā",
+  "mongolian": "өө, аа (гайхсан дуу)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "呀，下雪了！",
+  "exampleMongolian": "Өө, цас орчихлоо!",
+  "pos": "аялга үг",
+  "collocations_zh": "呀，真漂亮！"
+ },
+ {
+  "chinese": "不管",
+  "pinyin": "bùguǎn",
+  "mongolian": "… ч гэсэн, ямар ч байсан",
+  "hskLevel": "HSK4",
+  "exampleChinese": "不管明天下不下雨，我们都要去看电影。",
+  "exampleMongolian": "Маргааш бороо орно, орохгүй ч бид кино үзэхээр явна.",
+  "pos": "холбоос үг",
+  "collocations_zh": "不管……，都/也……"
+ },
+ {
+  "chinese": "郊区",
+  "pinyin": "jiāoqū",
+  "mongolian": "хотын захын газар, хавийн нутаг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "周末我们坐公交车去郊区玩。",
+  "exampleMongolian": "Амралтын өдөр бид автобусаар хотын зах руу зугаалахаар явна.",
+  "pos": "нэр үг",
+  "collocations_zh": "去郊区 / 郊区的公园"
+ },
+ {
+  "chinese": "游玩",
+  "pinyin": "yóuwán",
+  "mongolian": "зугаалах, аялж үзэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个假期，我们打算去郊区游玩。",
+  "exampleMongolian": "Энэ амралтаар бид хотын захаар зугаалахаар төлөвлөж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "外出游玩 / 游玩一天"
+ },
+ {
+  "chinese": "主意",
+  "pinyin": "zhǔyi",
+  "mongolian": "санаа, санал, арга",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我有个好主意：我们周末一起去世界公园游玩吧。",
+  "exampleMongolian": "Надад нэг сайн санаа байна: амралтын өдөр хамтдаа Дэлхийн паркаар зугаалъя.",
+  "pos": "нэр үг",
+  "collocations_zh": "好主意 / 出主意"
+ },
+ {
+  "chinese": "外出",
+  "pinyin": "wàichū",
+  "mongolian": "гадуур гарах, гадагш явах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "外出的时候，记得带好手机。",
+  "exampleMongolian": "Гадуур явахдаа утсаа авч явахаа мартуузай.",
+  "pos": "үйл үг",
+  "collocations_zh": "外出游玩 / 外出学习"
+ },
+ {
+  "chinese": "戴",
+  "pinyin": "dài",
+  "mongolian": "(малгай, цаг, чихэвч) өмсөх, зүүх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天很冷，出门的时候别忘了戴帽子。",
+  "exampleMongolian": "Өнөөдөр хүйтэн, гарахдаа малгай өмсөхөө битгий март.",
+  "pos": "үйл үг",
+  "collocations_zh": "戴帽子 / 戴手表 / 戴耳机"
+ },
+ {
+  "chinese": "帽子",
+  "pinyin": "màozi",
+  "mongolian": "малгай",
+  "hskLevel": "HSK4",
+  "exampleChinese": "妈妈去商场给我买了新帽子。",
+  "exampleMongolian": "Ээж дэлгүүрт орж надад шинэ малгай авч өгсөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "戴帽子 / 漂亮的帽子"
+ },
+ {
+  "chinese": "长城",
+  "pinyin": "Chángchéng",
+  "mongolian": "Их хэрэм",
+  "hskLevel": "HSK4",
+  "exampleChinese": "来到中国以后，我很想去长城看看。",
+  "exampleMongolian": "Хятадад ирснээс хойш би Их хэрмийг очиж үзэхийг маш их хүсч байна.",
+  "pos": "тусгай нэр",
+  "collocations_zh": "参观长城 / 爬长城"
+ },
+ {
+  "chinese": "项目",
+  "pinyin": "xiàngmù",
+  "mongolian": "төсөл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个项目需要三个人一起完成。",
+  "exampleMongolian": "Энэ төслийг гурван хүн хамтдаа хийх хэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "工作项目 / 参加项目"
+ },
+ {
+  "chinese": "加班",
+  "pinyin": "jiābān",
+  "mongolian": "илүү цагаар ажиллах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他昨天加班到很晚才回家。",
+  "exampleMongolian": "Тэр өчигдөр илүү цагаар ажиллаад орой болтол гэртээ харьсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "经常加班 / 加了三天班"
+ },
+ {
+  "chinese": "熬夜",
+  "pinyin": "áoyè",
+  "mongolian": "шөнөжин нойргүй өнгөрөөх, шөнө дөл болтол сэрүүн байх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "经常熬夜对身体不好。",
+  "exampleMongolian": "Байнга шөнө дөл болтол сэрүүн байх нь биед муу.",
+  "pos": "үйл үг",
+  "collocations_zh": "喜欢熬夜 / 熬夜学习"
+ },
+ {
+  "chinese": "否则",
+  "pinyin": "fǒuzé",
+  "mongolian": "тэгэхгүй бол",
+  "hskLevel": "HSK4",
+  "exampleChinese": "快点儿走，否则我们会迟到的。",
+  "exampleMongolian": "Хурдан яв, тэгэхгүй бол бид хоцорно.",
+  "pos": "холбоос үг",
+  "collocations_zh": "……，否则……"
+ },
+ {
+  "chinese": "失去",
+  "pinyin": "shīqù",
+  "mongolian": "алдах, гээх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他失去了这次出国交流的机会。",
+  "exampleMongolian": "Тэр энэ удаагийн гадаадад солилцоонд явах боломжоо алдсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "失去朋友 / 失去工作"
+ },
+ {
+  "chinese": "值得",
+  "pinyin": "zhídé",
+  "mongolian": "… хийх үнэ цэнэтэй, … хийх хэрэгтэй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这本书很有意思，值得一看。",
+  "exampleMongolian": "Энэ ном их сонирхолтой, нэг үзэх л хэрэгтэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "值得去 / 很值得"
+ },
+ {
+  "chinese": "暂停",
+  "pinyin": "zàntíng",
+  "mongolian": "түр зогсоох, түр завсарлах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "比赛因为下雨暂停了十分钟。",
+  "exampleMongolian": "Тэмцээн бороо орсны улмаас арван минут түр зогссон.",
+  "pos": "үйл үг",
+  "collocations_zh": "暂停工作 / 暂停一小时"
+ },
+ {
+  "chinese": "之后",
+  "pinyin": "zhīhòu",
+  "mongolian": "дараа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "下课之后，我常常去图书馆看书。",
+  "exampleMongolian": "Хичээл тарсны дараа би номын санд ном уншихаар ордог.",
+  "pos": "нэр үг",
+  "collocations_zh": "三天之后 / 回国之后"
+ },
+ {
+  "chinese": "风景",
+  "pinyin": "fēngjǐng",
+  "mongolian": "байгалийн үзэмж, үзэсгэлэнт дүр зураг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "坐火车旅游的时候，我喜欢看外面的风景。",
+  "exampleMongolian": "Галт тэргээр аялахдаа би цонхоор гаднах үзэмжийг харах дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "看风景 / 郊区的风景"
+ },
+ {
+  "chinese": "效率",
+  "pinyin": "xiàolǜ",
+  "mongolian": "үр ашиг, бүтээмж",
+  "hskLevel": "HSK4",
+  "exampleChinese": "好好休息，工作的效率才会更高。",
+  "exampleMongolian": "Сайн амарсан л бол ажлын бүтээмж өндөр болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "效率很高 / 学习效率"
+ },
+ {
+  "chinese": "下降",
+  "pinyin": "xiàjiàng",
+  "mongolian": "буурах, унах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "如果休息不好，学习成绩就会下降。",
+  "exampleMongolian": "Сайн амраагүй бол сурлагын дүн буурна.",
+  "pos": "үйл үг",
+  "collocations_zh": "效率下降 / 开始下降"
+ },
+ {
+  "chinese": "相比",
+  "pinyin": "xiāngbǐ",
+  "mongolian": "харьцуулах, харьцуулбал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "和去年相比，我的中文水平提高了很多。",
+  "exampleMongolian": "Өнгөрсөн жилтэй харьцуулахад миний хятад хэлний түвшин их дээшилсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "跟/和……相比"
+ },
+ {
+  "chinese": "因此",
+  "pinyin": "yīncǐ",
+  "mongolian": "тиймээс, иймд",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他学习很努力，因此每次考试成绩都很好。",
+  "exampleMongolian": "Тэр маш хичээнгүй сурдаг, тиймээс шалгалт болгонд дүн нь сайн.",
+  "pos": "холбоос үг",
+  "collocations_zh": "因此决定 / 因此可以"
+ },
+ {
+  "chinese": "提醒",
+  "pinyin": "tíxǐng",
+  "mongolian": "сануулах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "朋友提醒我不要熬夜，否则工作效率会下降。",
+  "exampleMongolian": "Найз надад шөнөжин сэрүүн байж болохгүй, тэгэхгүй бол ажлын бүтээмж буурна гэж сануулсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "提醒一下 / 提醒自己"
+ },
+ {
+  "chinese": "与",
+  "pinyin": "yǔ",
+  "mongolian": "-тай, -ийн хамт; ба (бичгийн хэлний үг)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这本书介绍了中国的历史与文化。",
+  "exampleMongolian": "Энэ ном Хятадын түүх, соёлыг танилцуулсан.",
+  "pos": "угтвар үг / холбоос үг",
+  "collocations_zh": "与……相比 / 老师与学生"
+ },
+ {
+  "chinese": "大自然",
+  "pinyin": "dàzìrán",
+  "mongolian": "байгаль (хүрээлэн буй байгаль)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "在大自然里走走，心情会变得很好。",
+  "exampleMongolian": "Байгальд жаахан алхвал сэтгэл их сайхан болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "走进大自然 / 保护大自然"
+ },
+ {
+  "chinese": "美丽",
+  "pinyin": "měilì",
+  "mongolian": "үзэсгэлэнтэй, гоё",
+  "hskLevel": "HSK4",
+  "exampleChinese": "春天来了，公园里到处都是美丽的花。",
+  "exampleMongolian": "Хавар болж, цэцэрлэгт хүрээлэнд хаа сайгүй гоё цэцэг байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "美丽的大自然 / 非常美丽"
+ },
+ {
+  "chinese": "景色",
+  "pinyin": "jǐngsè",
+  "mongolian": "байгалийн дүр зураг, үзэмж",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这里的景色真好，我想拍几张照片。",
+  "exampleMongolian": "Энд байгалийн дүр зураг үнэхээр сайхан байна, би хэдэн зураг авмаар байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "大自然的景色 / 美丽的景色"
+ },
+ {
+  "chinese": "首都",
+  "pinyin": "shǒudū",
+  "mongolian": "нийслэл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "中国的首都是北京。",
+  "exampleMongolian": "Хятадын нийслэл бол Бээжин.",
+  "pos": "нэр үг",
+  "collocations_zh": "我国的首都 / 首都经济"
+ },
+ {
+  "chinese": "市区",
+  "pinyin": "shìqū",
+  "mongolian": "хотын төв хэсэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "跟郊区相比，市区人更多。",
+  "exampleMongolian": "Хотын захтай харьцуулахад хотын төвд хүн илүү олон.",
+  "pos": "нэр үг",
+  "collocations_zh": "市区交通 / 市区的景色"
+ },
+ {
+  "chinese": "眼前",
+  "pinyin": "yǎnqián",
+  "mongolian": "нүдний өмнө",
+  "hskLevel": "HSK4",
+  "exampleChinese": "站在长城上，眼前的景色非常美丽。",
+  "exampleMongolian": "Их хэрэм дээр зогсоход нүдний өмнөх байгалийн дүр зураг маш үзэсгэлэнтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "眼前的风景 / 眼前一亮"
+ },
+ {
+  "chinese": "美景",
+  "pinyin": "měijǐng",
+  "mongolian": "үзэсгэлэнт байгаль, сайхан дүр зураг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "和城市相比，大自然里有很多不一样的美景。",
+  "exampleMongolian": "Хотоос ялгаатай нь байгальд өөр өөр олон сайхан үзэмж бий.",
+  "pos": "нэр үг",
+  "collocations_zh": "大自然的美景 / 看到美景"
+ },
+ {
+  "chinese": "参观",
+  "pinyin": "cānguān",
+  "mongolian": "үзэж сонирхох, зочилж үзэх (музей, барилга, газар)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "游客在门口买了票，然后进去参观。",
+  "exampleMongolian": "Жуулчид үүдэнд тийз аваад дотогш орж үзнэ.",
+  "pos": "үйл үг",
+  "collocations_zh": "参观景点 / 免费参观"
+ },
+ {
+  "chinese": "景点",
+  "pinyin": "jǐngdiǎn",
+  "mongolian": "үзвэр үйлчилгээний газар, жуулчны газар",
+  "hskLevel": "HSK4",
+  "exampleChinese": "因为天气不好，我们只去了一个景点，就回酒店休息了。",
+  "exampleMongolian": "Цаг агаар муу байсан тул бид ганц л жуулчны газар очоод зочид буудалдаа буцаж амарсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "旅游景点 / 参观景点"
+ },
+ {
+  "chinese": "交通",
+  "pinyin": "jiāotōng",
+  "mongolian": "тээвэр, замын хөдөлгөөн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个十字路口的交通总是很乱。",
+  "exampleMongolian": "Энэ уулзварт замын хөдөлгөөн үргэлж эмх замбараагүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "城市交通 / 交通方式"
+ },
+ {
+  "chinese": "乘坐",
+  "pinyin": "chéngzuò",
+  "mongolian": "(тээврийн хэрэгслээр) зорчих, суух",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我每天乘坐地铁上下班。",
+  "exampleMongolian": "Би өдөр бүр метроор ажилдаа явдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "乘坐飞机 / 安全乘坐"
+ },
+ {
+  "chinese": "十分",
+  "pinyin": "shífēn",
+  "mongolian": "маш, туйлын",
+  "hskLevel": "HSK4",
+  "exampleChinese": "考试前，她十分紧张，晚上也睡不好觉。",
+  "exampleMongolian": "Шалгалтын өмнө тэр маш их түгшиж, шөнө ч сайн унтаж чадаагүй.",
+  "pos": "дайвар үг",
+  "collocations_zh": "十分美丽 / 十分值得"
+ },
+ {
+  "chinese": "实际上",
+  "pinyin": "shíjìshang",
+  "mongolian": "үнэндээ, бодит байдал дээр",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这道题看起来很难，实际上很简单。",
+  "exampleMongolian": "Энэ бодлого хэцүү харагдаж байгаа ч үнэндээ их амархан.",
+  "pos": "дайвар үг",
+  "collocations_zh": "看起来……，实际上……"
+ },
+ {
+  "chinese": "故宫",
+  "pinyin": "Gùgōng",
+  "mongolian": "Гугун (Бээжингийн Ордон музей)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "周末我打算与朋友一起去参观故宫。",
+  "exampleMongolian": "Амралтын өдөр би найзуудтайгаа Гугуныг үзэхээр төлөвлөж байна.",
+  "pos": "тусгай нэр",
+  "collocations_zh": "参观故宫 / 去故宫"
+ }
+]

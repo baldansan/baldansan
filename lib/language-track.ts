@@ -42,6 +42,7 @@ export const ADMIN_COURSE_IDS = [
   "xinhsk1",
   "xinhsk2",
   "xinhsk3",
+  "xinhsk4a",
 ] as const;
 
 export function inferLanguageFromCourseId(

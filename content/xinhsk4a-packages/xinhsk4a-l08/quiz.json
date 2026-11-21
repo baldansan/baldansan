@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "今天很冷，出门的时候别忘了________帽子。",
+  "options": [
+   "提",
+   "停",
+   "剩",
+   "戴"
+  ],
+  "correct_answer": "戴",
+  "explanation": "«Малгай өмсөх» — 戴帽子.",
+  "order_index": 1,
+  "id": "xinhsk4a-l08-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "最近我工作很________，有很多任务要完成。",
+  "options": [
+   "美丽",
+   "值得",
+   "紧张",
+   "放松"
+  ],
+  "correct_answer": "紧张",
+  "explanation": "«Ажил ачаалалтай» — 工作紧张.",
+  "order_index": 2,
+  "id": "xinhsk4a-l08-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "听音乐可以让人________。",
+  "options": [
+   "失去",
+   "放松",
+   "熬夜",
+   "暂停"
+  ],
+  "correct_answer": "放松",
+  "explanation": "«Хүнийг тайвшруулна» — 让人放松.",
+  "order_index": 3,
+  "id": "xinhsk4a-l08-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我有个好________：我们周末一起去郊区玩吧。",
+  "options": [
+   "主意",
+   "项目",
+   "效率",
+   "景点"
+  ],
+  "correct_answer": "主意",
+  "explanation": "«Сайн санаа» — 好主意.",
+  "order_index": 4,
+  "id": "xinhsk4a-l08-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他昨天________到很晚才回家。",
+  "options": [
+   "参观",
+   "提醒",
+   "乘坐",
+   "加班"
+  ],
+  "correct_answer": "加班",
+  "explanation": "«Илүү цагаар ажиллах» — 加班.",
+  "order_index": 5,
+  "id": "xinhsk4a-l08-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "快点儿走，________我们会迟到的。",
+  "options": [
+   "不管",
+   "实际上",
+   "否则",
+   "因此"
+  ],
+  "correct_answer": "否则",
+  "explanation": "«Тэгэхгүй бол» — 否则.",
+  "order_index": 6,
+  "id": "xinhsk4a-l08-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这本书很有意思，很________一看。",
+  "options": [
+   "之后",
+   "值得",
+   "十分",
+   "相比"
+  ],
+  "correct_answer": "值得",
+  "explanation": "«Үзэх үнэ цэнэтэй» — 值得一看.",
+  "order_index": 7,
+  "id": "xinhsk4a-l08-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "好好休息，工作________才会更高。",
+  "options": [
+   "效率",
+   "交通",
+   "风景",
+   "首都"
+  ],
+  "correct_answer": "效率",
+  "explanation": "«Ажлын бүтээмж» — 工作效率.",
+  "order_index": 8,
+  "id": "xinhsk4a-l08-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "中国的________是北京。",
+  "options": [
+   "市区",
+   "郊区",
+   "景点",
+   "首都"
+  ],
+  "correct_answer": "首都",
+  "explanation": "«Нийслэл» — 首都.",
+  "order_index": 9,
+  "id": "xinhsk4a-l08-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我每天________地铁上下班。",
+  "options": [
+   "失去",
+   "游玩",
+   "乘坐",
+   "参观"
+  ],
+  "correct_answer": "乘坐",
+  "explanation": "«Метроор зорчих» — 乘坐地铁.",
+  "order_index": 10,
+  "id": "xinhsk4a-l08-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l08-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«不管明天下不下雨，我们都去。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Бид маргааш бороо орно гэж бодож байна.",
+   "Маргааш бороо орох, орохгүй ч бид явна.",
+   "Маргааш бороо орвол бид явахгүй.",
+   "Маргааш бороо орохгүй бол бид явна."
+  ],
+  "correct_answer": "Маргааш бороо орох, орохгүй ч бид явна.",
+  "explanation": "不管 — нөхцөл ямар ч байсан үр дүн өөрчлөгдөхгүй.",
+  "order_index": 11,
+  "id": "xinhsk4a-l08-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 不管天气怎么样，我们________去爬长城。",
+  "options": [
+   "都",
+   "才",
+   "又",
+   "再"
+  ],
+  "correct_answer": "都",
+  "explanation": "不管-ийн ард 都/也 орно.",
+  "order_index": 12,
+  "id": "xinhsk4a-l08-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 今晚早点儿睡吧，________明天早上起不来。",
+  "options": [
+   "因此",
+   "不管",
+   "与",
+   "否则"
+  ],
+  "correct_answer": "否则",
+  "explanation": "Санал + 否则 + үр дагавар.",
+  "order_index": 13,
+  "id": "xinhsk4a-l08-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "否则你要多喝水，容易生病。",
+   "你要多喝水容易生病否则。",
+   "你要多喝水，否则容易生病。",
+   "你要多喝水，否则容易不生病。"
+  ],
+  "correct_answer": "你要多喝水，否则容易生病。",
+  "explanation": "否则-ийн ард нөхцөл биелээгүй үеийн муу үр дагавар орно.",
+  "order_index": 14,
+  "id": "xinhsk4a-l08-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: ________坐公交车相比，我更喜欢骑自行车。",
+  "options": [
+   "让",
+   "跟",
+   "把",
+   "被"
+  ],
+  "correct_answer": "跟",
+  "explanation": "跟……相比 — «… -тай харьцуулбал».",
+  "order_index": 15,
+  "id": "xinhsk4a-l08-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "跟读研究生相比，我更想直接工作。",
+   "相比跟读研究生，我更想直接工作。",
+   "跟读研究生，我更想相比直接工作。",
+   "读研究生跟相比，我更想直接工作。"
+  ],
+  "correct_answer": "跟读研究生相比，我更想直接工作。",
+  "explanation": "跟 + A + 相比，B 更….",
+  "order_index": 16,
+  "id": "xinhsk4a-l08-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 郊区有山________水，还有很多农家乐。",
+  "options": [
+   "是",
+   "在",
+   "和",
+   "有"
+  ],
+  "correct_answer": "有",
+  "explanation": "有A有B — «A ч бий, B ч бий».",
+  "order_index": 17,
+  "id": "xinhsk4a-l08-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l08-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Том ч, жижиг ч бий» — аль нь зөв вэ?",
+  "options": [
+   "大有小有",
+   "有大有的小",
+   "有大有小",
+   "有大小有"
+  ],
+  "correct_answer": "有大有小",
+  "explanation": "有-г A, B тус бүрийн өмнө тавина.",
+  "order_index": 18,
+  "id": "xinhsk4a-l08-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l08-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：安妮为什么给白家月打电话？",
+  "options": [
+   "想请她吃饭",
+   "想出去放松",
+   "想借书",
+   "想问作业"
+  ],
+  "correct_answer": "想出去放松",
+  "explanation": "«最近学习太紧张了，咱们明天出去放松放松吧».",
+  "order_index": 19,
+  "id": "xinhsk4a-l08-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：他们最后决定去哪儿？",
+  "options": [
+   "长城",
+   "故宫",
+   "公园",
+   "机场"
+  ],
+  "correct_answer": "长城",
+  "explanation": "«咱们明天去爬长城吧» — Их хэрэм авирна.",
+  "order_index": 20,
+  "id": "xinhsk4a-l08-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐为什么身体亮起了红灯？",
+  "options": [
+   "不爱运动",
+   "吃得太多",
+   "没有朋友",
+   "经常加班、熬夜"
+  ],
+  "correct_answer": "经常加班、熬夜",
+  "explanation": "«经常加班、熬夜，身体也亮起了红灯».",
+  "order_index": 21,
+  "id": "xinhsk4a-l08-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐现在周末常去哪儿放松？",
+  "options": [
+   "学校",
+   "市区",
+   "郊区",
+   "公司"
+  ],
+  "correct_answer": "郊区",
+  "explanation": "«现在我周末常来郊区».",
+  "order_index": 22,
+  "id": "xinhsk4a-l08-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：休息好了再上班，杨同乐有什么变化？",
+  "options": [
+   "心情更差",
+   "心情愉快，工作效率更高",
+   "工作变少了",
+   "朋友变多了"
+  ],
+  "correct_answer": "心情愉快，工作效率更高",
+  "explanation": "«心情愉快，工作效率也更高».",
+  "order_index": 23,
+  "id": "xinhsk4a-l08-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：在北京，有人周末会去哪儿？",
+  "options": [
+   "市区公园和长城、故宫等景点",
+   "学校和公司",
+   "国外",
+   "商场和饭馆"
+  ],
+  "correct_answer": "市区公园和长城、故宫等景点",
+  "explanation": "«在市区公园走走», «参观长城、故宫等有名的景点».",
+  "order_index": 24,
+  "id": "xinhsk4a-l08-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：郊区有什么？",
+  "options": [
+   "有很多高楼",
+   "有很多商场",
+   "没有饭馆",
+   "有山有水，还有农家乐"
+  ],
+  "correct_answer": "有山有水，还有农家乐",
+  "explanation": "«郊区有山有水，还有很多农家乐».",
+  "order_index": 25,
+  "id": "xinhsk4a-l08-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "我每天________学习两个小时中文。",
+  "options": [
+   "专门",
+   "各",
+   "够",
+   "至少"
+  ],
+  "correct_answer": "至少",
+  "explanation": "«Дор хаяад хоёр цаг» — 至少.",
+  "order_index": 1,
+  "id": "xinhsk4a-l05-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "前几天，他________来北京看我。",
+  "options": [
+   "正式",
+   "随意",
+   "专门",
+   "至少"
+  ],
+  "correct_answer": "专门",
+  "explanation": "«Зориуд ирсэн» — 专门.",
+  "order_index": 2,
+  "id": "xinhsk4a-l05-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "饺子已经________了，可以吃了。",
+  "options": [
+   "油",
+   "熟",
+   "煮",
+   "倒"
+  ],
+  "correct_answer": "熟",
+  "explanation": "«Болчихсон» — 熟.",
+  "order_index": 3,
+  "id": "xinhsk4a-l05-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "妈妈正在厨房里________鸡蛋。",
+  "options": [
+   "煮",
+   "倒",
+   "熟",
+   "付"
+  ],
+  "correct_answer": "煮",
+  "explanation": "«Өндөг чанах» — 煮.",
+  "order_index": 4,
+  "id": "xinhsk4a-l05-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个汤有点儿________，得再加一些水。",
+  "options": [
+   "酸",
+   "凉",
+   "辣",
+   "咸"
+  ],
+  "correct_answer": "咸",
+  "explanation": "«Давстай» шөлөнд ус нэмнэ — 咸.",
+  "order_index": 5,
+  "id": "xinhsk4a-l05-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这个苹果太________了，我不太喜欢吃。",
+  "options": [
+   "辣",
+   "汤",
+   "酸",
+   "咸"
+  ],
+  "correct_answer": "酸",
+  "explanation": "«Исгэлэн алим» — 酸.",
+  "order_index": 6,
+  "id": "xinhsk4a-l05-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "太晚了，我不________一个人出门。",
+  "options": [
+   "付",
+   "敢",
+   "够",
+   "等"
+  ],
+  "correct_answer": "敢",
+  "explanation": "«Зүрхлэхгүй» — 不敢.",
+  "order_index": 7,
+  "id": "xinhsk4a-l05-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "结账的时候，大家觉得还是各________各的更合适。",
+  "options": [
+   "付",
+   "聚",
+   "煮",
+   "倒"
+  ],
+  "correct_answer": "付",
+  "explanation": "«Тус тусдаа төлөх» — 各付各的.",
+  "order_index": 8,
+  "id": "xinhsk4a-l05-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "开会的时候，我们应该穿________一点儿的衣服。",
+  "options": [
+   "普通",
+   "相同",
+   "随意",
+   "正式"
+  ],
+  "correct_answer": "正式",
+  "explanation": "«Албан ёсны хувцас» — 正式.",
+  "order_index": 9,
+  "id": "xinhsk4a-l05-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "孩子们很________家里的老人。",
+  "options": [
+   "按照",
+   "聚",
+   "尊重",
+   "面对"
+  ],
+  "correct_answer": "尊重",
+  "explanation": "«Ахмадыг хүндлэх» — 尊重.",
+  "order_index": 10,
+  "id": "xinhsk4a-l05-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l05-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«每年至少有两百名留学生来我校学习。» — 至少 юу гэсэн үг вэ?",
+  "options": [
+   "Огт",
+   "Дор хаяад",
+   "Хамгийн ихдээ",
+   "Яг"
+  ],
+  "correct_answer": "Дор хаяад",
+  "explanation": "至少 — доод хэмжээ: «дор хаяад».",
+  "order_index": 11,
+  "id": "xinhsk4a-l05-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l05-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 从学校到我家________要走二十分钟。",
+  "options": [
+   "至少",
+   "各",
+   "等",
+   "够"
+  ],
+  "correct_answer": "至少",
+  "explanation": "«Дор хаяад хорин минут» — 至少 + 要 + хугацаа.",
+  "order_index": 12,
+  "id": "xinhsk4a-l05-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 这个箱子________，放不下这么多东西。",
+  "options": [
+   "够大的",
+   "大不够",
+   "各大",
+   "不够大"
+  ],
+  "correct_answer": "不够大",
+  "explanation": "«Хангалттай том биш» — 不够 + тэмдэг нэр.",
+  "order_index": 13,
+  "id": "xinhsk4a-l05-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«今天的天气够冷的！» — юу гэсэн үг вэ?",
+  "options": [
+   "Өнөөдөр хүйтэн хүрэхгүй.",
+   "Өнөөдөр хүйтэн байсан.",
+   "Өнөөдөр нэлээн хүйтэн байна!",
+   "Өнөөдөр хүйтэнгүй."
+  ],
+  "correct_answer": "Өнөөдөр нэлээн хүйтэн байна!",
+  "explanation": "够…的 — «нэлээд, үнэхээр».",
+  "order_index": 14,
+  "id": "xinhsk4a-l05-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 他们口味不同，所以就________。",
+  "options": [
+   "各的吃各",
+   "各吃各的",
+   "各各吃的",
+   "吃各各的"
+  ],
+  "correct_answer": "各吃各的",
+  "explanation": "各 + үйл үг + 各的.",
+  "order_index": 15,
+  "id": "xinhsk4a-l05-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l05-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 到了办公室，大家就开始________了。",
+  "options": [
+   "各忙各的",
+   "忙各各的",
+   "各忙的各",
+   "忙忙各的"
+  ],
+  "correct_answer": "各忙各的",
+  "explanation": "各×各的 — тус тусдаа.",
+  "order_index": 16,
+  "id": "xinhsk4a-l05-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: ________我忙完了，就去找你。",
+  "options": [
+   "够",
+   "各",
+   "至少",
+   "等"
+  ],
+  "correct_answer": "等",
+  "explanation": "等 + өгүүлбэр, 就 + үйл үг.",
+  "order_index": 17,
+  "id": "xinhsk4a-l05-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l05-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Аав ирмэгц бид хоол идье» — аль нь зөв вэ?",
+  "options": [
+   "等回来爸爸，我们吃饭。",
+   "我们吃饭，等爸爸回来就。",
+   "等爸爸回来，我们就吃饭。",
+   "爸爸等回来，我们就吃饭。"
+  ],
+  "correct_answer": "等爸爸回来，我们就吃饭。",
+  "explanation": "等 нь эхэнд, ард нь 就.",
+  "order_index": 18,
+  "id": "xinhsk4a-l05-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l05-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月来中国多久了？",
+  "options": [
+   "一个月",
+   "两个多月",
+   "两年多",
+   "不到两个月"
+  ],
+  "correct_answer": "两个多月",
+  "explanation": "«你来中国至少两个月了» — хоёр гаруй сар.",
+  "order_index": 19,
+  "id": "xinhsk4a-l05-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一雪为什么做水煮鱼？",
+  "options": [
+   "专门为白家月做的",
+   "她自己想吃",
+   "李文想吃",
+   "饭馆没有别的菜"
+  ],
+  "correct_answer": "专门为白家月做的",
+  "explanation": "«这是我专门为你做的» — Цзяюэд зориулсан.",
+  "order_index": 20,
+  "id": "xinhsk4a-l05-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：水煮鱼最上面那一层是什么？",
+  "options": [
+   "水",
+   "鱼",
+   "辣椒",
+   "油"
+  ],
+  "correct_answer": "油",
+  "explanation": "«只有最上面那一层是油» — дээд давхарга нь тос.",
+  "order_index": 21,
+  "id": "xinhsk4a-l05-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：王一雪一家以前怎么样？",
+  "options": [
+   "不吃中餐",
+   "吃辣肚子很舒服",
+   "不太敢吃辣",
+   "很爱吃辣"
+  ],
+  "correct_answer": "不太敢吃辣",
+  "explanation": "«我们以前不太敢吃辣» — өмнө нь айдаг байсан.",
+  "order_index": 22,
+  "id": "xinhsk4a-l05-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月现在怎么样？",
+  "options": [
+   "很怕辣",
+   "越来越喜欢吃辣",
+   "不吃辣",
+   "怕不辣"
+  ],
+  "correct_answer": "越来越喜欢吃辣",
+  "explanation": "«我越来越喜欢吃辣了» — улам дуртай болсон.",
+  "order_index": 23,
+  "id": "xinhsk4a-l05-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：安妮点了什么？",
+  "options": [
+   "酸汤米线",
+   "辣子鸡",
+   "松鼠鳜鱼",
+   "红烧羊肉"
+  ],
+  "correct_answer": "酸汤米线",
+  "explanation": "«安妮…点了酸汤米线» — Анни гоймон захиалсан.",
+  "order_index": 24,
+  "id": "xinhsk4a-l05-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：年轻人什么时候坐下？",
+  "options": [
+   "先坐",
+   "主人说话前",
+   "菜上来后",
+   "等老人坐下后"
+  ],
+  "correct_answer": "等老人坐下后",
+  "explanation": "«年轻人要等老人坐下后再坐» — ахмадыг суусны дараа.",
+  "order_index": 25,
+  "id": "xinhsk4a-l05-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-hero.webp",
+   "title": "3-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l03-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w1.webp",
+   "title": "法律 fǎlǜ — хууль",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w2.webp",
+   "title": "扫码支付 sǎomǎ zhīfù — QR код уншуулж төлөх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w3.webp",
+   "title": "网购 wǎnggòu — онлайнаар худалдан авах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w4.webp",
+   "title": "快递员 kuàidìyuán — хүргэлтийн ажилтан",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w5.webp",
+   "title": "管 guǎn — хариуцах, удирдах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l03-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l03/l03-w6.webp",
+   "title": "保护 bǎohù — хамгаалах",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

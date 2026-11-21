@@ -1,0 +1,22 @@
+{
+ "packageVersion": "BUUNDUU_CHINESE_HSK_PACKAGE_V1",
+ "courseType": "chinese-hsk",
+ "courseId": "xinhsk4a",
+ "lessonId": "xinhsk4a-l01",
+ "hskLevel": 4,
+ "lessonNumber": 1,
+ "lessonProfile": "hsk3-dialogue-reading-writing-review",
+ "lessonType": "hsk3-dialogue-reading-writing-review",
+ "language": "zh-MN",
+ "targetLanguage": "zh",
+ "uiLanguage": "mn",
+ "title": "我们来中国学习了",
+ "mongolianTitle": "Бид Хятадад сурахаар ирлээ",
+ "source": "新HSK教程4上 (外研社, HSK 3.0) — 1-р хичээл: үг, 课文, дүрэм, дасгал сурах бичиг + 学练手册 + PPT-ээс; монгол орчуулга, тайлбар «Бөөндөө Сурцгаая»",
+ "hasAudio": true,
+ "hasImages": true,
+ "verification": {
+  "answerStatus": "ppt + 练习题答案 (хүн шалгаагүй)",
+  "textStatus": "新HSK教程4上 课文 — аудионоос бичсэн (whisper medium), хүн шалгаагүй"
+ }
+}

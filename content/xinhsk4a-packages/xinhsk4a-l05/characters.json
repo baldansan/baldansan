@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "辣",
+   "pinyin": [
+    "là"
+   ],
+   "strokeCount": 14,
+   "radical": "辛",
+   "practice": "write",
+   "meaningMn": "чинжүүтэй, халуун ногоотой",
+   "etymology_mn": "辛 (хурц, ширүүн) + 束: хурц амт — чинжүү",
+   "exampleWords": [
+    "辣椒",
+    "辣子鸡"
+   ]
+  },
+  {
+   "hanzi": "煮",
+   "pinyin": [
+    "zhǔ"
+   ],
+   "strokeCount": 12,
+   "radical": "灬",
+   "practice": "write",
+   "meaningMn": "чанах",
+   "etymology_mn": "者 + 灬 (гал): гал дээр чанана",
+   "exampleWords": [
+    "煮饭",
+    "水煮鱼"
+   ]
+  },
+  {
+   "hanzi": "酸",
+   "pinyin": [
+    "suān"
+   ],
+   "strokeCount": 14,
+   "radical": "酉",
+   "practice": "write",
+   "meaningMn": "исгэлэн",
+   "etymology_mn": "酉 (дарс, исгэлэн ундаа) + 夋: исгэсэн амт — исгэлэн",
+   "exampleWords": [
+    "酸汤",
+    "酸苹果"
+   ]
+  },
+  {
+   "hanzi": "汤",
+   "pinyin": [
+    "tāng"
+   ],
+   "strokeCount": 6,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "шөл",
+   "etymology_mn": "氵 (ус) + 昜-ийн хялбаршуулсан хэлбэр: усан шөл",
+   "exampleWords": [
+    "喝汤",
+    "鸡汤"
+   ]
+  },
+  {
+   "hanzi": "熟",
+   "pinyin": [
+    "shú"
+   ],
+   "strokeCount": 15,
+   "radical": "灬",
+   "practice": "write",
+   "meaningMn": "болох; танил",
+   "etymology_mn": "孰 + 灬 (гал): гал дээр болтол нь чанах",
+   "exampleWords": [
+    "煮熟",
+    "很熟"
+   ]
+  },
+  {
+   "hanzi": "油",
+   "pinyin": [
+    "yóu"
+   ],
+   "strokeCount": 8,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "тос",
+   "etymology_mn": "氵 (шингэн) + 由: шингэн тос",
+   "exampleWords": [
+    "辣椒油",
+    "倒油"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "汤",
+   "b": "场",
+   "word_a": "喝汤",
+   "word_b": "停车场",
+   "mn": "汤 — шөл; 场 — талбай",
+   "tip_mn": "汤-д 氵 (ус) байна, шөл усаар хийгддэг. 场-д 土 (шороо) байна, талбай бол газар."
+  },
+  {
+   "a": "熟",
+   "b": "热",
+   "word_a": "煮熟",
+   "word_b": "天气热",
+   "mn": "熟 — болох; 热 — халуун",
+   "tip_mn": "熟-ийн доор 灬 (гал) байна, 热-ийн доор бас 灬 байна. Дээд хэсгийг нь ялга: 孰 болох, 执 халуун."
+  },
+  {
+   "a": "倒",
+   "b": "到",
+   "word_a": "倒茶",
+   "word_b": "到了",
+   "mn": "倒 — хийх; 到 — хүрэх",
+   "tip_mn": "Хоёулаа dào. 倒-д 亻 (хүн) байна, хүн ус цутгана. 到-д байхгүй, хүрэх үйлдэл."
+  },
+  {
+   "a": "咸",
+   "b": "感",
+   "word_a": "很咸",
+   "word_b": "感谢",
+   "mn": "咸 — давстай; 感 — мэдрэх, талархах",
+   "tip_mn": "感-д 心 (зүрх) байна, мэдрэмж. 咸-д байхгүй, амтны тухай."
+  }
+ ]
+}

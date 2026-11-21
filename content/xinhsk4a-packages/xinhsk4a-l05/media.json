@@ -1,0 +1,76 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-hero.webp",
+   "title": "5-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l05-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w1.webp",
+   "title": "辣子鸡 làzǐjī — чинжүүтэй тахиа",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w2.webp",
+   "title": "红烧羊肉 hóngshāo yángròu — улаан шөлтэй хонины мах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w3.webp",
+   "title": "松鼠鳜鱼 sōngshǔ guìyú — «хэрэм» загас (чихэрлэг исгэлэн)",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w4.webp",
+   "title": "酸汤米线 suāntāng mǐxiàn — исгэлэн шөлтэй будааны гоймон",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w5.webp",
+   "title": "酸 suān — исгэлэн",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w6.webp",
+   "title": "甜 tián — амттай, чихэрлэг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w7",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w7.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w7.webp",
+   "title": "咸 xián — давслаг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l05-w8",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w8.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l05/l05-w8.webp",
+   "title": "辣 là — халуун ногоотой",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

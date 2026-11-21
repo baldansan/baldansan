@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "停",
+   "pinyin": [
+    "tíng"
+   ],
+   "strokeCount": 11,
+   "radical": "亻",
+   "practice": "write",
+   "meaningMn": "зогсох",
+   "etymology_mn": "亻 (хүн) + 亭: хүн ордонд зогсож амарч буй дүр",
+   "exampleWords": [
+    "停车",
+    "停机"
+   ]
+  },
+  {
+   "hanzi": "费",
+   "pinyin": [
+    "fèi"
+   ],
+   "strokeCount": 9,
+   "radical": "贝",
+   "practice": "write",
+   "meaningMn": "төлбөр",
+   "etymology_mn": "贝 (эрт үеийн мөнгө) дээр 弗: мөнгө гарах — төлбөр",
+   "exampleWords": [
+    "水费",
+    "交费"
+   ]
+  },
+  {
+   "hanzi": "感",
+   "pinyin": [
+    "gǎn"
+   ],
+   "strokeCount": 13,
+   "radical": "心",
+   "practice": "write",
+   "meaningMn": "мэдрэх; талархах",
+   "etymology_mn": "咸 + 心: зүрх сэтгэлээр мэдэрнэ",
+   "exampleWords": [
+    "感谢",
+    "感动"
+   ]
+  },
+  {
+   "hanzi": "提",
+   "pinyin": [
+    "tí"
+   ],
+   "strokeCount": 12,
+   "radical": "扌",
+   "practice": "write",
+   "meaningMn": "барих, дээш өргөх",
+   "etymology_mn": "扌 (гар) + 是: гараар барьж өргөх",
+   "exampleWords": [
+    "提包",
+    "提上去"
+   ]
+  },
+  {
+   "hanzi": "购",
+   "pinyin": [
+    "gòu"
+   ],
+   "strokeCount": 8,
+   "radical": "贝",
+   "practice": "write",
+   "meaningMn": "худалдан авах",
+   "etymology_mn": "贝 (мөнгө) + 勾: мөнгө төлж авах",
+   "exampleWords": [
+    "购买",
+    "购物"
+   ]
+  },
+  {
+   "hanzi": "愉",
+   "pinyin": [
+    "yú"
+   ],
+   "strokeCount": 12,
+   "radical": "忄",
+   "practice": "write",
+   "meaningMn": "баярлах",
+   "etymology_mn": "忄 (сэтгэл) + 俞: сэтгэл хөнгөрөх",
+   "exampleWords": [
+    "愉快",
+    "心情愉快"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "提",
+   "b": "题",
+   "word_a": "提包",
+   "word_b": "问题",
+   "mn": "提 — барих; 题 — сэдэв, асуулт",
+   "tip_mn": "提 нь 扌 (гар)-тай тул гараараа хийх үйлдэл, 题 нь 页 (хуудас)-тай тул асуулт, сэдэв."
+  },
+  {
+   "a": "购",
+   "b": "够",
+   "word_a": "购买",
+   "word_b": "够了",
+   "mn": "购 — худалдан авах; 够 — хангалттай",
+   "tip_mn": "购 нь 贝 (мөнгө)-тэй тул худалдан авалт, 够 нь 多 (олон)-той тул хангалттай."
+  },
+  {
+   "a": "费",
+   "b": "贵",
+   "word_a": "水费",
+   "word_b": "很贵",
+   "mn": "费 — төлбөр; 贵 — үнэтэй",
+   "tip_mn": "费 дээр 弗, 贵 дээр 中 — дуудлага ижил биш: fèi ба guì."
+  },
+  {
+   "a": "既",
+   "b": "即",
+   "word_a": "既然",
+   "word_b": "即使",
+   "mn": "既 — … ч … ч; 即 — тэр даруй",
+   "tip_mn": "既 хэлбэр нь хаалттай 旡 хэсэгтэй, 即 нь 卩 хэсэгтэй. Утгаар нь ялга."
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-hero.webp",
+   "title": "7-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l07-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w1.webp",
+   "title": "市场 shìchǎng — зах зээл",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l07-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w2.webp",
+   "title": "想法 xiǎngfǎ — санаа, бодол",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l07-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w3.webp",
+   "title": "打扰 dǎrǎo — саад болох",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l07-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w4.webp",
+   "title": "谈 tán — ярилцах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l07-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w5.webp",
+   "title": "计划 jìhuà — төлөвлөгөө",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l07-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l07/l07-w6.webp",
+   "title": "出差 chūchāi — албан томилолтоор явах",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

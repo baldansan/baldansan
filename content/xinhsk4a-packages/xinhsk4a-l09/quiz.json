@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "________你生日快乐，希望你每天都开心！",
+  "options": [
+   "吸引",
+   "错过",
+   "产生",
+   "祝"
+  ],
+  "correct_answer": "祝",
+  "explanation": "«Мэнд хүргэе» — 祝你生日快乐.",
+  "order_index": 1,
+  "id": "xinhsk4a-l09-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我最喜欢吃________，每天都要吃一块。",
+  "options": [
+   "浪漫",
+   "日子",
+   "巧克力",
+   "幽默"
+  ],
+  "correct_answer": "巧克力",
+  "explanation": "«Шоколад» — 吃巧克力.",
+  "order_index": 2,
+  "id": "xinhsk4a-l09-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "学习一门外语要有________，不能太着急。",
+  "options": [
+   "印象",
+   "耐心",
+   "幸运",
+   "经营"
+  ],
+  "correct_answer": "耐心",
+  "explanation": "«Тэвчээр» — 有耐心.",
+  "order_index": 3,
+  "id": "xinhsk4a-l09-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这家饭馆的菜很好吃，________了很多客人。",
+  "options": [
+   "吸引",
+   "感动",
+   "产生",
+   "支持"
+  ],
+  "correct_answer": "吸引",
+  "explanation": "«Зочин татсан» — 吸引客人.",
+  "order_index": 4,
+  "id": "xinhsk4a-l09-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "她起晚了，________了早上的飞机。",
+  "options": [
+   "负责",
+   "理解",
+   "感受",
+   "错过"
+  ],
+  "correct_answer": "错过",
+  "explanation": "«Онгоцноос хоцорсон» — 错过飞机.",
+  "order_index": 5,
+  "id": "xinhsk4a-l09-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他们有很多________的爱好。",
+  "options": [
+   "积极",
+   "美好",
+   "共同",
+   "相互"
+  ],
+  "correct_answer": "共同",
+  "explanation": "«Нийтлэг хобби» — 共同爱好.",
+  "order_index": 6,
+  "id": "xinhsk4a-l09-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "夫妻之间________理解很重要。",
+  "options": [
+   "从来",
+   "相互",
+   "此",
+   "尤其"
+  ],
+  "correct_answer": "相互",
+  "explanation": "«Бие биеэ ойлгох» — 相互理解.",
+  "order_index": 7,
+  "id": "xinhsk4a-l09-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "保护环境是每个人的________。",
+  "options": [
+   "责任",
+   "性格",
+   "印象",
+   "感情"
+  ],
+  "correct_answer": "责任",
+  "explanation": "«Хүн бүрийн хариуцлага» — 责任.",
+  "order_index": 8,
+  "id": "xinhsk4a-l09-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他是一个很________的人，说话做事都很可靠。",
+  "options": [
+   "浪漫",
+   "幽默",
+   "幸运",
+   "实在"
+  ],
+  "correct_answer": "实在",
+  "explanation": "«Шулуун шударга» — 很实在.",
+  "order_index": 9,
+  "id": "xinhsk4a-l09-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他对________的看法很积极。",
+  "options": [
+   "当时",
+   "日子",
+   "人生",
+   "对方"
+  ],
+  "correct_answer": "人生",
+  "explanation": "«Амьдралд хандах хандлага» — 对人生的看法.",
+  "order_index": 10,
+  "id": "xinhsk4a-l09-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l09-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我不说你也懂。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би хэлэхгүй тул чи ойлгохгүй.",
+   "Би хэлэхгүй ч чи ойлгоно.",
+   "Би хэлвэл чи ойлгоно.",
+   "Би хэлсэн ч чи ойлгохгүй."
+  ],
+  "correct_answer": "Би хэлэхгүй ч чи ойлгоно.",
+  "explanation": "不……也…… — «… гэхгүй ч …».",
+  "order_index": 11,
+  "id": "xinhsk4a-l09-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 他不复习________能考出好成绩。",
+  "options": [
+   "也",
+   "就",
+   "才",
+   "但"
+  ],
+  "correct_answer": "也",
+  "explanation": "不……也…… хэлбэр.",
+  "order_index": 12,
+  "id": "xinhsk4a-l09-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 尽管今天下雨，________我们还是去公园玩了。",
+  "options": [
+   "因为",
+   "所以",
+   "如果",
+   "但是"
+  ],
+  "correct_answer": "但是",
+  "explanation": "尽管……但是……",
+  "order_index": 13,
+  "id": "xinhsk4a-l09-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l09-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "她但是尽管很累，很耐心。",
+   "尽管她很累，因为她很耐心。",
+   "尽管她很累，但是她还是很耐心。",
+   "尽管她很累，所以她很耐心。"
+  ],
+  "correct_answer": "尽管她很累，但是她还是很耐心。",
+  "explanation": "尽管 + A，但是 + B.",
+  "order_index": 14,
+  "id": "xinhsk4a-l09-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: ________次出差，让两人熟悉了起来。",
+  "options": [
+   "各",
+   "此",
+   "哪",
+   "谁"
+  ],
+  "correct_answer": "此",
+  "explanation": "此次 — «энэ удаа».",
+  "order_index": 15,
+  "id": "xinhsk4a-l09-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«此人聪明、有能力。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Энэ хүн ухаалаг, чадвартай.",
+   "Тэр хүн хуучин хүн.",
+   "Олон хүн ухаалаг.",
+   "Би чадвартай."
+  ],
+  "correct_answer": "Энэ хүн ухаалаг, чадвартай.",
+  "explanation": "此 + нэр үг — «энэ …».",
+  "order_index": 16,
+  "id": "xinhsk4a-l09-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 我________吃辣的，所以点菜时都选不辣的。",
+  "options": [
+   "从来才",
+   "还不",
+   "又从来",
+   "从来不"
+  ],
+  "correct_answer": "从来不",
+  "explanation": "从来不 — «хэзээ ч … үгүй».",
+  "order_index": 17,
+  "id": "xinhsk4a-l09-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我从来没见过这个颜色的花。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Би энэ өнгийн цэцгийг үзэхийг хүсэхгүй.",
+   "Энэ өнгийн цэцэг олон байдаг.",
+   "Би энэ өнгийн цэцгийг хэзээ ч үзэж байгаагүй.",
+   "Би энэ өнгийн цэцгийг өчигдөр үзсэн."
+  ],
+  "correct_answer": "Би энэ өнгийн цэцгийг хэзээ ч үзэж байгаагүй.",
+  "explanation": "从来没 + V + 过 — «хэзээ ч … байгаагүй».",
+  "order_index": 18,
+  "id": "xinhsk4a-l09-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l09-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文送了白家月什么？",
+  "options": [
+   "什么都没送",
+   "花和巧克力",
+   "生日蛋糕",
+   "水果"
+  ],
+  "correct_answer": "花和巧克力",
+  "explanation": "«好漂亮的花，还有巧克力».",
+  "order_index": 19,
+  "id": "xinhsk4a-l09-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文是怎么知道白家月喜欢那个巧克力的？",
+  "options": [
+   "看见她在超市拿起来看了看又放下",
+   "白家月告诉他的",
+   "朋友告诉他的",
+   "他自己很喜欢"
+  ],
+  "correct_answer": "看见她在超市拿起来看了看又放下",
+  "explanation": "«看你拿起来看了看又放下了，我就记住了».",
+  "order_index": 20,
+  "id": "xinhsk4a-l09-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：刘明希望王一飞和杨同乐怎么样？",
+  "options": [
+   "有更多共同爱好",
+   "把爱情放在第一位",
+   "互相学习",
+   "相互理解与支持"
+  ],
+  "correct_answer": "相互理解与支持",
+  "explanation": "«希望他们能一直相互理解，相互支持».",
+  "order_index": 21,
+  "id": "xinhsk4a-l09-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪对杨同乐的印象怎么样？",
+  "options": [
+   "一般",
+   "没有印象",
+   "非常好",
+   "不太好"
+  ],
+  "correct_answer": "非常好",
+  "explanation": "«王一雪对他印象就非常好».",
+  "order_index": 22,
+  "id": "xinhsk4a-l09-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：王一雪和杨同乐是怎么熟悉起来的？",
+  "options": [
+   "一起吃午饭",
+   "一起出差",
+   "一起开会",
+   "一起做项目"
+  ],
+  "correct_answer": "一起出差",
+  "explanation": "«他们一起出了次差，此次出差让两人熟悉了起来».",
+  "order_index": 23,
+  "id": "xinhsk4a-l09-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：李文是在哪儿遇见白家月的？",
+  "options": [
+   "校园里",
+   "饭馆里",
+   "超市里",
+   "书店外"
+  ],
+  "correct_answer": "校园里",
+  "explanation": "«李文在校园里遇见白家月».",
+  "order_index": 24,
+  "id": "xinhsk4a-l09-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：“遇见你，刚刚好”是什么意思？",
+  "options": [
+   "刚刚才认识你",
+   "遇到你时天气刚刚好",
+   "在合适的地点遇见你",
+   "在合适的时间遇到合适的人"
+  ],
+  "correct_answer": "在合适的时间遇到合适的人",
+  "explanation": "«在合适的时间遇到了合适的人，遇见你，刚刚好».",
+  "order_index": 25,
+  "id": "xinhsk4a-l09-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

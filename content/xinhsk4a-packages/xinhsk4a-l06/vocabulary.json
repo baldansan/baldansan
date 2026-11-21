@@ -1,0 +1,392 @@
+[
+ {
+  "chinese": "咳嗽",
+  "pinyin": "késou",
+  "mongolian": "ханиах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你咳嗽得这么厉害，最好去医院看看。",
+  "exampleMongolian": "Чи ингэтлээ хүчтэй ханиалгаж байна, эмнэлэгт очиж үзүүлсэн нь дээр.",
+  "pos": "үйл үг",
+  "collocations_zh": "一直咳嗽 / 咳嗽了好几天"
+ },
+ {
+  "chinese": "咳",
+  "pinyin": "ké",
+  "mongolian": "ханиах, ханиалгах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "医生问我咳了几天了。",
+  "exampleMongolian": "Эмч намайг хэд хоног ханиалгасан гэж асуусан.",
+  "pos": "үйл үг",
+  "collocations_zh": "咳得厉害 / 咳了一会儿"
+ },
+ {
+  "chinese": "厉害",
+  "pinyin": "lìhai",
+  "mongolian": "хүчтэй, хүнд (зэрэг нь өндөр)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "儿子烧得挺厉害的，咱们带他去医院看看吧。",
+  "exampleMongolian": "Хүү маань нилээд хүчтэй халуураад байна, эмнэлэгт аваачиж үзүүлье.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "疼得厉害 / 非常厉害"
+ },
+ {
+  "chinese": "严重",
+  "pinyin": "yánzhòng",
+  "mongolian": "хүнд, ноцтой",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他的病很严重，需要马上住院。",
+  "exampleMongolian": "Түүний өвчин маш хүнд, шууд хэвтэх хэрэгтэй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "情况严重 / 严重的问题"
+ },
+ {
+  "chinese": "赶快",
+  "pinyin": "gǎnkuài",
+  "mongolian": "түргэн, яаралтай, тэр даруй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "时间不早了，你赶快回家吧。",
+  "exampleMongolian": "Оройтлоо, чи түргэн гэртээ харь.",
+  "pos": "дайвар үг",
+  "collocations_zh": "赶快去医院 / 赶快起床"
+ },
+ {
+  "chinese": "陪",
+  "pinyin": "péi",
+  "mongolian": "хамт байх, хамт яваад дагалдах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "别担心，我会陪你一起去的。",
+  "exampleMongolian": "Санаа зов хэрэггүй, би чамтай хамт явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "陪客人 / 陪父母聊天儿"
+ },
+ {
+  "chinese": "翻译",
+  "pinyin": "fānyì",
+  "mongolian": "орчуулах; орчуулагч",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她是一位很有名的中文翻译。",
+  "exampleMongolian": "Тэр маш алдартай хятад хэлний орчуулагч.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "把……翻译成…… / 一位翻译"
+ },
+ {
+  "chinese": "护士",
+  "pinyin": "hùshi",
+  "mongolian": "сувилагч",
+  "hskLevel": "HSK4",
+  "exampleChinese": "护士每天都很忙，要照顾很多病人。",
+  "exampleMongolian": "Сувилагч өдөр бүр маш завгүй, олон өвчтөнийг халамжилдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "那位护士 / 请护士过来"
+ },
+ {
+  "chinese": "表",
+  "pinyin": "biǎo",
+  "mongolian": "хүснэгт, маягт",
+  "hskLevel": "HSK4",
+  "exampleChinese": "护士让我在这张表里写上我的信息。",
+  "exampleMongolian": "Сувилагч намайг энэ маягтанд мэдээллээ бичихийг хэлсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "申请表 / 交表"
+ },
+ {
+  "chinese": "性别",
+  "pinyin": "xìngbié",
+  "mongolian": "хүйс",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请在这张表里写上你的姓名和性别。",
+  "exampleMongolian": "Энэ маягтанд нэр, хүйсээ бичнэ үү.",
+  "pos": "нэр үг",
+  "collocations_zh": "性别相同 / 从性别来看"
+ },
+ {
+  "chinese": "国籍",
+  "pinyin": "guójí",
+  "mongolian": "харьяалал, иргэншил",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请告诉我你的国籍和出生年月。",
+  "exampleMongolian": "Харьяалал, төрсөн он сар өдрөө хэлнэ үү.",
+  "pos": "нэр үг",
+  "collocations_zh": "中国国籍 / 不同国籍"
+ },
+ {
+  "chinese": "家庭",
+  "pinyin": "jiātíng",
+  "mongolian": "гэр бүл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "家庭医生可以来家里看病。",
+  "exampleMongolian": "Гэр бүлийн эмч гэрт ирж үзэж болдог.",
+  "pos": "нэр үг",
+  "collocations_zh": "家庭地址 / 家庭医生"
+ },
+ {
+  "chinese": "地址",
+  "pinyin": "dìzhǐ",
+  "mongolian": "хаяг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请把你的地址写清楚。",
+  "exampleMongolian": "Хаягаа тодорхой бичээрэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "学校地址 / 查地址"
+ },
+ {
+  "chinese": "挂号",
+  "pinyin": "guàhào",
+  "mongolian": "(эмнэлэгт) бүртгүүлэх, дугаар авах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这家医院可以在网上挂号，很方便。",
+  "exampleMongolian": "Энэ эмнэлэгт онлайнаар бүртгүүлж болдог, их амар.",
+  "pos": "үйл үг",
+  "collocations_zh": "挂个号 / 排队挂号"
+ },
+ {
+  "chinese": "排队",
+  "pinyin": "páiduì",
+  "mongolian": "дараалалд зогсох",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你站到后面去，大家都在排队呢。",
+  "exampleMongolian": "Чи хойшоо зогс, бүгдээрээ дараалалд зогсож байна шүү дээ.",
+  "pos": "үйл үг",
+  "collocations_zh": "排长队 / 排成一队"
+ },
+ {
+  "chinese": "大厅",
+  "pinyin": "dàtīng",
+  "mongolian": "том танхим, холл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们两点在一楼大厅见面吧。",
+  "exampleMongolian": "Бид хоёр цагт нэгдүгээр давхрын танхимд уулзъя.",
+  "pos": "нэр үг",
+  "collocations_zh": "医院大厅 / 在大厅里"
+ },
+ {
+  "chinese": "偶尔",
+  "pinyin": "ǒu'ěr",
+  "mongolian": "хааяа, заримдаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我平时不喝咖啡，偶尔喝一杯茶。",
+  "exampleMongolian": "Би ердийн үед кофе уудаггүй, хааяа цай ууна.",
+  "pos": "дайвар үг / тэмдэг нэр",
+  "collocations_zh": "偶尔想起 / 偶尔迟到"
+ },
+ {
+  "chinese": "身",
+  "pinyin": "shēn",
+  "mongolian": "бие; (хувцасны) нэг иж",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你今天这身衣服可真正式，是要参加什么活动吗？",
+  "exampleMongolian": "Чиний өнөөдрийн энэ хувцас үнэхээр албан ёсных байна, ямар нэг арга хэмжээнд оролцох юм уу?",
+  "pos": "нэр үг / хэмжих үг",
+  "collocations_zh": "身上 / 几身衣服"
+ },
+ {
+  "chinese": "结果",
+  "pinyin": "jiéguǒ",
+  "mongolian": "үр дүн; эцэст нь",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你的检查结果应该出来了吧？",
+  "exampleMongolian": "Таны шинжилгээний хариу гарсан байх аа?",
+  "pos": "нэр үг / холбоос үг",
+  "collocations_zh": "调查结果 / 结果发现……"
+ },
+ {
+  "chinese": "性",
+  "pinyin": "xìng",
+  "mongolian": "-лаг, -тай шинж чанар (дагавар)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这辆电动车的安全性很好。",
+  "exampleMongolian": "Энэ цахилгаан дугуйн аюулгүй байдал сайн.",
+  "pos": "дагавар",
+  "collocations_zh": "重要性 / 慢性"
+ },
+ {
+  "chinese": "体温",
+  "pinyin": "tǐwēn",
+  "mongolian": "биеийн температур",
+  "hskLevel": "HSK4",
+  "exampleChinese": "护士检查了一下孩子的体温，说她没有发烧。",
+  "exampleMongolian": "Сувилагч хүүхдийн биеийн температурыг шалгаад халуураагүй гэж хэлсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "检查体温 / 体温很高"
+ },
+ {
+  "chinese": "降",
+  "pinyin": "jiàng",
+  "mongolian": "буух, буурах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "吃了药，孩子的体温终于降下来了。",
+  "exampleMongolian": "Эм ууснаар хүүхдийн биеийн температур эцэст нь буулаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "降下来 / 从……降到……"
+ },
+ {
+  "chinese": "光",
+  "pinyin": "guāng",
+  "mongolian": "зөвхөн, дан",
+  "hskLevel": "HSK4",
+  "exampleChinese": "光想还不够，还要去做。",
+  "exampleMongolian": "Дан бодох хүрэлцэхгүй, бас хийх хэрэгтэй.",
+  "pos": "дайвар үг",
+  "collocations_zh": "光想 / 光着急"
+ },
+ {
+  "chinese": "打针",
+  "pinyin": "dǎzhēn",
+  "mongolian": "тариа хийх, тариа хийлгэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "护士给我打针的时候，我都不敢看。",
+  "exampleMongolian": "Сувилагч надад тариа хийхэд би харж зүрхлэхгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "害怕打针 / 打了一针"
+ },
+ {
+  "chinese": "有效",
+  "pinyin": "yǒuxiào",
+  "mongolian": "үр дүнтэй байх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这种药对大多数病人是有效的。",
+  "exampleMongolian": "Энэ эм ихэнх өвчтөнд үр дүнтэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "有效学习 / 有效的办法"
+ },
+ {
+  "chinese": "按时",
+  "pinyin": "ànshí",
+  "mongolian": "цагтаа, цаг тухайд нь",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你一定要按时吃药，这样身体才会好得快。",
+  "exampleMongolian": "Чи заавал цагтаа эм уу, тэгвэл бие хурдан сайжирна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "按时吃饭 / 按时交作业"
+ },
+ {
+  "chinese": "汗",
+  "pinyin": "hàn",
+  "mongolian": "хөлс",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我跑完步以后出了一身汗。",
+  "exampleMongolian": "Би гүйсний дараа бүх биеэрээ хөлсөө гаргалаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "出了一身汗 / 大汗"
+ },
+ {
+  "chinese": "醒",
+  "pinyin": "xǐng",
+  "mongolian": "сэрэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他醒了以后，先喝了一杯水。",
+  "exampleMongolian": "Тэр сэрсний дараа эхлээд нэг аяга ус уусан.",
+  "pos": "үйл үг",
+  "collocations_zh": "刚睡醒 / 醒了以后"
+ },
+ {
+  "chinese": "感觉",
+  "pinyin": "gǎnjué",
+  "mongolian": "мэдрэх; мэдрэмж",
+  "hskLevel": "HSK4",
+  "exampleChinese": "听完他的话，我心里感觉不太舒服。",
+  "exampleMongolian": "Түүний үгийг сонсоод би сэтгэл дундаа жаахан тавгүй санагдлаа.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "感觉很难受 / 没感觉"
+ },
+ {
+  "chinese": "低",
+  "pinyin": "dī",
+  "mongolian": "намхан, доогуур",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他说话的声音很低，我听不清楚。",
+  "exampleMongolian": "Тэр маш намуухан ярьж байна, би сайн сонсохгүй байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "比……低 / 水平低"
+ },
+ {
+  "chinese": "难受",
+  "pinyin": "nánshòu",
+  "mongolian": "тавгүй, зовиуртай, хэцүү санагдах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "听到这个消息，他心里很难受。",
+  "exampleMongolian": "Энэ мэдээг сонсоод тэр сэтгэл их хүнд болсон.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "热得难受 / 太难受了"
+ },
+ {
+  "chinese": "通",
+  "pinyin": "tōng",
+  "mongolian": "мэдэх, эзэмшсэн (хэл)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "那位医生通英语和法语，你找他没问题。",
+  "exampleMongolian": "Тэр эмч англи, франц хэл мэддэг, чи түүнтэй уулзвал асуудалгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "通……种语言 / 通×语"
+ },
+ {
+  "chinese": "过程",
+  "pinyin": "guòchéng",
+  "mongolian": "явц, процесс",
+  "hskLevel": "HSK4",
+  "exampleChinese": "学习中文的过程很有意思。",
+  "exampleMongolian": "Хятад хэл сурах явц их сонирхолтой.",
+  "pos": "нэр үг",
+  "collocations_zh": "这个过程 / 必经的过程"
+ },
+ {
+  "chinese": "部",
+  "pinyin": "bù",
+  "mongolian": "хэлтэс, нэгж",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我去年来公司的国际部工作了。",
+  "exampleMongolian": "Би өнгөрсөн жил компанийн олон улсын хэлтэст ажилд орсон.",
+  "pos": "нэр үг",
+  "collocations_zh": "住院部 / 教育部"
+ },
+ {
+  "chinese": "收费",
+  "pinyin": "shōufèi",
+  "mongolian": "төлбөр авах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个软件可以免费用，不收费。",
+  "exampleMongolian": "Энэ программыг үнэгүй ашиглаж болно, төлбөр авахгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "收费站 / 收费很高"
+ },
+ {
+  "chinese": "情况",
+  "pinyin": "qíngkuàng",
+  "mongolian": "байдал, нөхцөл байдал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "医生问了问我的情况，然后让我做了一些检查。",
+  "exampleMongolian": "Эмч миний байдлыг асууж, дараа нь надад хэд хэдэн шинжилгээ хийлгэсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "了解情况 / 病人的情况"
+ },
+ {
+  "chinese": "好",
+  "pinyin": "hǎo",
+  "mongolian": "… гэж, … тулд (зорилго заана)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请把地址发给我，我好去接你。",
+  "exampleMongolian": "Хаягаа надад явуулаарай, тэгвэл би чамайг очиж авна.",
+  "pos": "үйл үг",
+  "collocations_zh": "你要早点儿告诉我，我好准备"
+ },
+ {
+  "chinese": "治疗",
+  "pinyin": "zhìliáo",
+  "mongolian": "эмчлэх; эмчилгээ",
+  "hskLevel": "HSK4",
+  "exampleChinese": "医生说他需要住院治疗一个星期。",
+  "exampleMongolian": "Эмч түүнд нэг долоо хоног хэвтэж эмчлүүлэх хэрэгтэй гэсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "得到治疗 / 有效治疗"
+ },
+ {
+  "chinese": "步",
+  "pinyin": "bù",
+  "mongolian": "алхам",
+  "hskLevel": "HSK4",
+  "exampleChinese": "别着急，咱们一步一步慢慢来。",
+  "exampleMongolian": "Битгий яар, бид алхам алхмаар аажуухан хийцгээе.",
+  "pos": "нэр үг",
+  "collocations_zh": "一步一步 / 走了几步"
+ }
+]

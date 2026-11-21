@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "调",
+   "pinyin": [
+    "diào"
+   ],
+   "strokeCount": 10,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "судлах; тохируулах",
+   "etymology_mn": "讠 (үг) + 周: үгээр бүх талыг нь тойруулан асуух — судлах",
+   "exampleWords": [
+    "调查",
+    "市场调查"
+   ]
+  },
+  {
+   "hanzi": "访",
+   "pinyin": [
+    "fǎng"
+   ],
+   "strokeCount": 6,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "уулзах, асуух",
+   "etymology_mn": "讠 (үг) + 方: хүн рүү очиж ярилцах",
+   "exampleWords": [
+    "采访",
+    "访问"
+   ]
+  },
+  {
+   "hanzi": "验",
+   "pinyin": [
+    "yàn"
+   ],
+   "strokeCount": 10,
+   "radical": "马",
+   "practice": "write",
+   "meaningMn": "туршиж шалгах",
+   "etymology_mn": "马 (морь) + 佥: морийг туршиж шалгах — туршлага",
+   "exampleWords": [
+    "经验",
+    "实验"
+   ]
+  },
+  {
+   "hanzi": "积",
+   "pinyin": [
+    "jī"
+   ],
+   "strokeCount": 10,
+   "radical": "禾",
+   "practice": "write",
+   "meaningMn": "хуримтлуулах",
+   "etymology_mn": "禾 (тариа) + 只: тариагаа овоолон хураах",
+   "exampleWords": [
+    "积累",
+    "积极"
+   ]
+  },
+  {
+   "hanzi": "础",
+   "pinyin": [
+    "chǔ"
+   ],
+   "strokeCount": 10,
+   "radical": "石",
+   "practice": "write",
+   "meaningMn": "суурь чулуу",
+   "etymology_mn": "石 (чулуу) + 出: чулуугаар тавьсан суурь",
+   "exampleWords": [
+    "基础",
+    "础石"
+   ]
+  },
+  {
+   "hanzi": "社",
+   "pinyin": [
+    "shè"
+   ],
+   "strokeCount": 7,
+   "radical": "礻",
+   "practice": "write",
+   "meaningMn": "нийгэм",
+   "etymology_mn": "礻 (тахил) + 土: нутгийн хүмүүс цугларч тахидаг газар — нийгэм",
+   "exampleWords": [
+    "社会",
+    "公社"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "计",
+   "b": "记",
+   "word_a": "计划",
+   "word_b": "记得",
+   "mn": "计 — төлөвлөх; 记 — санах, тэмдэглэх",
+   "tip_mn": "Хоёул jì гэж уншигдана. 计 нь 十-тэй — тоо бодох, төлөвлөх; 记 нь 己-тэй — оюун санаанд хадгалах."
+  },
+  {
+   "a": "调",
+   "b": "周",
+   "word_a": "调查",
+   "word_b": "周末",
+   "mn": "调 — судлах; 周 — долоо хоног",
+   "tip_mn": "调 нь 讠-тэй, diào; 周 нь 讠-гүй, zhōu."
+  },
+  {
+   "a": "份",
+   "b": "分",
+   "word_a": "一份",
+   "word_b": "分钟",
+   "mn": "份 — хувь (тоолох үг); 分 — минут, хуваах",
+   "tip_mn": "份 нь 分 дээр 亻 (хүн) нэмсэн — «хүнд оногдох хувь». fèn / fēn."
+  },
+  {
+   "a": "使",
+   "b": "便",
+   "word_a": "使",
+   "word_b": "便于",
+   "mn": "使 — болгох; 便 — дөхөм",
+   "tip_mn": "Хоёул 亻-тэй тул андуурагддаг: 使 shǐ, 便 biàn. 便于 — «дөхөм» гэж утгаар нь ялга."
+  }
+ ]
+}

@@ -214,6 +214,12 @@ export const FAZHAN_HOME_LEVELS = [
     courseId: "xinhsk3",
     hskEquivalent: "HSK 3.0 · 3-р түвшин",
   },
+  {
+    chipId: "xinhsk4a",
+    chipLabel: "HSK 3.0 · HSK4上",
+    courseId: "xinhsk4a",
+    hskEquivalent: "HSK 3.0 · 4-р түвшин (дээд дэвтэр)",
+  },
 ] as const;
 
 function placeholderFazhanEntry(

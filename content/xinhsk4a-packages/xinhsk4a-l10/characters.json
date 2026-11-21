@@ -1,0 +1,128 @@
+{
+ "characters": [
+  {
+   "hanzi": "冻",
+   "pinyin": [
+    "dòng"
+   ],
+   "strokeCount": 7,
+   "radical": "冫",
+   "practice": "write",
+   "meaningMn": "даарах, хөлдөх",
+   "etymology_mn": "冫 (мөс) + 东: мөсөн хүйтэнд хөлдөх",
+   "exampleWords": [
+    "冻坏",
+    "冻红"
+   ]
+  },
+  {
+   "hanzi": "暖",
+   "pinyin": [
+    "nuǎn"
+   ],
+   "strokeCount": 13,
+   "radical": "日",
+   "practice": "write",
+   "meaningMn": "дулаахан",
+   "etymology_mn": "日 (нар) + 爰: нарны дулаан",
+   "exampleWords": [
+    "暖和",
+    "暖气"
+   ]
+  },
+  {
+   "hanzi": "植",
+   "pinyin": [
+    "zhí"
+   ],
+   "strokeCount": 12,
+   "radical": "木",
+   "practice": "write",
+   "meaningMn": "тарих; ургамал",
+   "etymology_mn": "木 (мод) + 直: мод шулуун тарих",
+   "exampleWords": [
+    "植物",
+    "种植"
+   ]
+  },
+  {
+   "hanzi": "误",
+   "pinyin": [
+    "wù"
+   ],
+   "strokeCount": 9,
+   "radical": "讠",
+   "practice": "write",
+   "meaningMn": "алдах, буруу ойлгох",
+   "etymology_mn": "讠 (үг) + 吴: үг буруу ойлгогдох",
+   "exampleWords": [
+    "误会",
+    "错误"
+   ]
+  },
+  {
+   "hanzi": "绿",
+   "pinyin": [
+    "lǜ"
+   ],
+   "strokeCount": 11,
+   "radical": "纟",
+   "practice": "write",
+   "meaningMn": "ногоон",
+   "etymology_mn": "纟 (утас) + 录: ногоон утас",
+   "exampleWords": [
+    "绿色",
+    "绿灯"
+   ]
+  },
+  {
+   "hanzi": "浪",
+   "pinyin": [
+    "làng"
+   ],
+   "strokeCount": 10,
+   "radical": "氵",
+   "practice": "write",
+   "meaningMn": "давалгаа; үрэх",
+   "etymology_mn": "氵 (ус) + 良: усны давалгаа, урсан үрэгдэх",
+   "exampleWords": [
+    "浪费",
+    "海浪"
+   ]
+  }
+ ],
+ "confusables": [
+  {
+   "a": "植",
+   "b": "值",
+   "word_a": "植物",
+   "word_b": "价值",
+   "mn": "植 — ургамал; 值 — үнэ цэнэтэй",
+   "tip_mn": "植 нь 木 (мод)-той тул ургамал, 值 нь 亻 (хүн)-тэй тул хүний үнэлэмжтэй холбоотой."
+  },
+  {
+   "a": "绿",
+   "b": "录",
+   "word_a": "绿色",
+   "word_b": "录音",
+   "mn": "绿 — ногоон; 录 — бичих, бичлэг",
+   "tip_mn": "绿 нь 纟 (утас, өнгө)-тэй тул өнгө, 录 нь 纟 байхгүй — бичлэг."
+  },
+  {
+   "a": "暖",
+   "b": "缓",
+   "word_a": "暖和",
+   "word_b": "缓慢",
+   "mn": "暖 — дулаахан; 缓 — удаан",
+   "tip_mn": "暖 нь 日 (нар)-тай тул дулаан, 缓 нь 纟-тэй тул удаан, зөөлөн."
+  },
+  {
+   "a": "浪",
+   "b": "狼",
+   "word_a": "浪费",
+   "word_b": "大灰狼",
+   "mn": "浪 — давалгаа, үрэх; 狼 — чоно",
+   "tip_mn": "浪 нь 氵 (ус)-тай тул давалгаа, 狼 нь 犭 (амьтан)-тай тул чоно."
+  }
+ ]
+}

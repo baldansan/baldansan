@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-hero.webp",
+   "title": "2-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l02-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w1.webp",
+   "title": "客厅 kètīng — зочны өрөө",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w2.webp",
+   "title": "种 zhòng — тарих",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w3.webp",
+   "title": "收拾 shōushi — цэгцлэх, эмхлэх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w4.webp",
+   "title": "毕业 bìyè — төгсөх",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w5.webp",
+   "title": "厨房 chúfáng — гал тогооны өрөө",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l02-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l02/l02-w6.webp",
+   "title": "价格 jiàgé — үнэ",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

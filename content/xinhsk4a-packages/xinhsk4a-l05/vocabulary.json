@@ -1,0 +1,442 @@
+[
+ {
+  "chinese": "至少",
+  "pinyin": "zhìshǎo",
+  "mongolian": "дор хаяад, наад зах нь",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我每天至少学习两个小时中文。",
+  "exampleMongolian": "Би өдөр бүр дор хаяад хоёр цаг хятад хэл сурдаг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "至少两个月 / 至少一次"
+ },
+ {
+  "chinese": "中餐",
+  "pinyin": "zhōngcān",
+  "mongolian": "хятад хоол",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他更习惯吃中餐。",
+  "exampleMongolian": "Тэр хятад хоол идэхэд илүү дассан.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃中餐 / 中餐馆"
+ },
+ {
+  "chinese": "专门",
+  "pinyin": "zhuānmén",
+  "mongolian": "зориуд, тусгайлан; тусгай, мэргэжлийн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "前几天，他专门来北京看我。",
+  "exampleMongolian": "Хэд хоногийн өмнө тэр намайг үзэхийн тулд зориуд Бээжинд ирсэн.",
+  "pos": "дайвар үг / тэмдэг нэр",
+  "collocations_zh": "专门研究 / 专门的学校"
+ },
+ {
+  "chinese": "煮",
+  "pinyin": "zhǔ",
+  "mongolian": "чанах (усанд буцалгах)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "妈妈正在厨房里煮鸡蛋。",
+  "exampleMongolian": "Ээж гал тогоонд өндөг чанаж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "煮饭 / 水煮肉"
+ },
+ {
+  "chinese": "油",
+  "pinyin": "yóu",
+  "mongolian": "тос",
+  "hskLevel": "HSK4",
+  "exampleChinese": "家里没油了，你去超市买一瓶吧。",
+  "exampleMongolian": "Гэрт тос дууссан, чи дэлгүүрээс нэг шил аваад ирээч.",
+  "pos": "нэр үг",
+  "collocations_zh": "倒油 / 买油"
+ },
+ {
+  "chinese": "道",
+  "pinyin": "dào",
+  "mongolian": "хоолны, асуултын хэмжих үг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这道菜真好吃！",
+  "exampleMongolian": "Энэ хоол үнэхээр амттай!",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一道菜 / 几道题"
+ },
+ {
+  "chinese": "熟",
+  "pinyin": "shú / shóu",
+  "mongolian": "болох, чанагдах; танил",
+  "hskLevel": "HSK4",
+  "exampleChinese": "饺子已经熟了，可以吃了。",
+  "exampleMongolian": "Хятад бууз болчихлоо, идэж болно.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "菜熟了 / 对……很/不熟"
+ },
+ {
+  "chinese": "倒",
+  "pinyin": "dào",
+  "mongolian": "хийх, цутгах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "服务员给我们倒了一杯果汁。",
+  "exampleMongolian": "Зөөгч бидэнд нэг аяга жүүс хийж өглөө.",
+  "pos": "үйл үг",
+  "collocations_zh": "倒茶 / 倒进杯子里"
+ },
+ {
+  "chinese": "辣椒",
+  "pinyin": "làjiāo",
+  "mongolian": "чинжүү",
+  "hskLevel": "HSK4",
+  "exampleChinese": "奶奶在菜地里种了很多辣椒。",
+  "exampleMongolian": "Эмээ хүнсний ногооны талбайд маш их чинжүү тарьсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "辣椒油 / 一把辣椒"
+ },
+ {
+  "chinese": "辣",
+  "pinyin": "là",
+  "mongolian": "халуун ногоотой, чинжүүтэй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个汤有点儿辣，但是很好喝。",
+  "exampleMongolian": "Энэ шөл жаахан халуун ногоотой ч их амттай.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "非常辣 / 香辣"
+ },
+ {
+  "chinese": "敢",
+  "pinyin": "gǎn",
+  "mongolian": "зүрхлэх, зориглох",
+  "hskLevel": "HSK4",
+  "exampleChinese": "太晚了，我不敢一个人出门。",
+  "exampleMongolian": "Орой болсон, би ганцаараа гарч зүрхлэхгүй байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "敢想敢做 / 不敢去"
+ },
+ {
+  "chinese": "肚子",
+  "pinyin": "dùzi",
+  "mongolian": "гэдэс",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我早上吃得太多了，现在肚子有点儿不舒服。",
+  "exampleMongolian": "Би өглөө хэт их идсэн тул одоо гэдэс жаахан эвгүй байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "肚子疼 / 大肚子"
+ },
+ {
+  "chinese": "相同",
+  "pinyin": "xiāngtóng",
+  "mongolian": "адил, ижил",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我和他的书包颜色相同。",
+  "exampleMongolian": "Миний болон түүний үүргэвчийн өнгө адилхан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "相同的习惯 / 爱好相同"
+ },
+ {
+  "chinese": "顺序",
+  "pinyin": "shùnxù",
+  "mongolian": "дараалал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这些书的顺序放错了。",
+  "exampleMongolian": "Эдгээр номыг буруу дараалалд тавьчихсан байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "先后顺序 / 按照顺序"
+ },
+ {
+  "chinese": "够",
+  "pinyin": "gòu",
+  "mongolian": "хүрэлцэх; нэлээд, үнэхээр",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天的天气够冷的！",
+  "exampleMongolian": "Өнөөдөр цаг агаар нэлээн хүйтэн байна шүү!",
+  "pos": "дайвар үг / үйл үг",
+  "collocations_zh": "够……的 / 听不够"
+ },
+ {
+  "chinese": "不够",
+  "pinyin": "búgòu",
+  "mongolian": "хүрэлцэхгүй, хангалттай биш",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这件衣服有点儿小，对我来说不够大。",
+  "exampleMongolian": "Энэ хувцас жаахан жижиг, надад хангалттай том биш.",
+  "pos": "дайвар үг / үйл үг",
+  "collocations_zh": "不够大 / 不够高"
+ },
+ {
+  "chinese": "达到",
+  "pinyin": "dádào",
+  "mongolian": "хүрэх, биелүүлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他每天练习中文，终于达到了很高的水平。",
+  "exampleMongolian": "Тэр өдөр бүр хятад хэл дадлагажиж эцэст нь маш өндөр түвшинд хүрсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "达到要求 / 很难达到"
+ },
+ {
+  "chinese": "聚",
+  "pinyin": "jù",
+  "mongolian": "цуглах, хуран цугларах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "周末我们班的同学经常聚在一起吃饭。",
+  "exampleMongolian": "Амралтын өдөр манай ангийнхан ихэвчлэн цуглаж хоол иддэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "聚在一起 / 聚一聚"
+ },
+ {
+  "chinese": "午餐",
+  "pinyin": "wǔcān",
+  "mongolian": "өдрийн хоол",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我每天中午一下课就去吃午餐。",
+  "exampleMongolian": "Би өдөр бүр үд хичээл тарангуут өдрийн хоолондоо явдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "订午餐 / 午餐地点"
+ },
+ {
+  "chinese": "咸",
+  "pinyin": "xián",
+  "mongolian": "давстай",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个汤有点儿咸，得再加一些水。",
+  "exampleMongolian": "Энэ шөл жаахан давстай, дахиад ус нэмэх хэрэгтэй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "不够咸 / 咸鱼"
+ },
+ {
+  "chinese": "凉",
+  "pinyin": "liáng",
+  "mongolian": "сэрүүн, хүйтэн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "菜已经放凉了，我帮你热一下吧。",
+  "exampleMongolian": "Хоол хөрчихсөн байна, би чамд халаагаад өгье.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "凉水 / 放凉"
+ },
+ {
+  "chinese": "酸",
+  "pinyin": "suān",
+  "mongolian": "исгэлэн; (булчин) өвдөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个苹果太酸了，我不太喜欢吃。",
+  "exampleMongolian": "Энэ алим хэтэрхий исгэлэн, надад таалагдахгүй байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "酸苹果 / 酸酸的"
+ },
+ {
+  "chinese": "汤",
+  "pinyin": "tāng",
+  "mongolian": "шөл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "吃饭的时候，我习惯先喝点儿汤。",
+  "exampleMongolian": "Хоол идэхдээ би эхлээд жаахан шөл уудаг зуршилтай.",
+  "pos": "нэр үг",
+  "collocations_zh": "一碗汤 / 热汤"
+ },
+ {
+  "chinese": "各",
+  "pinyin": "gè",
+  "mongolian": "тус бүр, тус тусдаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们班同学各拿到了一本新书。",
+  "exampleMongolian": "Манай ангийнхан тус бүр нэг шинэ ном авсан.",
+  "pos": "дайвар үг / төлөөний үг",
+  "collocations_zh": "各有各的"
+ },
+ {
+  "chinese": "付",
+  "pinyin": "fù",
+  "mongolian": "төлөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我去超市买水果，一共付了30块钱。",
+  "exampleMongolian": "Би дэлгүүрт жимс авахад нийт 30 юань төлсөн.",
+  "pos": "үйл үг",
+  "collocations_zh": "付钱 / 付水电费"
+ },
+ {
+  "chinese": "聚餐",
+  "pinyin": "jùcān",
+  "mongolian": "хамт хоол идэх, хоолны цуглаан",
+  "hskLevel": "HSK4",
+  "exampleChinese": "每次聚餐大家都非常开心。",
+  "exampleMongolian": "Хоолны цуглаан болгонд бүгд маш хөгжилтэй байдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "聚餐通知 / 在食堂聚餐"
+ },
+ {
+  "chinese": "随意",
+  "pinyin": "suíyì",
+  "mongolian": "чөлөөтэй, дураар",
+  "hskLevel": "HSK4",
+  "exampleChinese": "明天的会议，你随意说就好。",
+  "exampleMongolian": "Маргааш хурал дээр чи чөлөөтэй хэлээрэй.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "随意的决定 / 穿得很随意"
+ },
+ {
+  "chinese": "正式",
+  "pinyin": "zhèngshì",
+  "mongolian": "албан ёсны",
+  "hskLevel": "HSK4",
+  "exampleChinese": "明天我要参加一个很正式的晚会。",
+  "exampleMongolian": "Маргааш би маш албан ёсны үдшийн арга хэмжээнд оролцоно.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "正式活动 / 正式开始"
+ },
+ {
+  "chinese": "普通",
+  "pinyin": "pǔtōng",
+  "mongolian": "энгийн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们坐普通火车去北京，比高铁便宜。",
+  "exampleMongolian": "Бид энгийн галт тэргээр Бээжин явна, өндөр хурдны галт тэргээс хямд.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "普通朋友 / 普通人"
+ },
+ {
+  "chinese": "重视",
+  "pinyin": "zhòngshì",
+  "mongolian": "чухалчлах, анхаарал тавих",
+  "hskLevel": "HSK4",
+  "exampleChinese": "爸爸非常重视我的学习，经常检查我的作业。",
+  "exampleMongolian": "Аав миний сурлагад маш их анхаардаг, даалгаврыг минь байнга шалгадаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "重视学习 / 不够重视"
+ },
+ {
+  "chinese": "座位",
+  "pinyin": "zuòwèi",
+  "mongolian": "суудал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请回到自己的座位上坐好。",
+  "exampleMongolian": "Өөрийн суудалдаа буцаж сууна уу.",
+  "pos": "нэр үг",
+  "collocations_zh": "几个座位 / 有座位"
+ },
+ {
+  "chinese": "安排",
+  "pinyin": "ānpái",
+  "mongolian": "зохион байгуулах, хуваарилах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "周末我们安排了一次同学聚餐。",
+  "exampleMongolian": "Амралтын өдөр бид ангийнхантайгаа хоолны цуглаан зохион байгууллаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "做出安排 / 安排工作"
+ },
+ {
+  "chinese": "按照",
+  "pinyin": "ànzhào",
+  "mongolian": "… -ын дагуу, … -аар",
+  "hskLevel": "HSK4",
+  "exampleChinese": "按照医生说的，我每天吃三次药。",
+  "exampleMongolian": "Эмчийн хэлснээр би өдөрт гурван удаа эм уудаг.",
+  "pos": "угтвар үг",
+  "collocations_zh": "按照要求 / 按照建议"
+ },
+ {
+  "chinese": "年龄",
+  "pinyin": "niánlíng",
+  "mongolian": "нас",
+  "hskLevel": "HSK4",
+  "exampleChinese": "不同年龄的人喜欢做的事情不一样。",
+  "exampleMongolian": "Өөр өөр насны хүмүүс дуртай зүйл нь өөр өөр байдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "年龄相同 / 年龄很大"
+ },
+ {
+  "chinese": "面对",
+  "pinyin": "miànduì",
+  "mongolian": "нүүр тулах, чиглэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他坐在那里，面对着门口，很久没有说话。",
+  "exampleMongolian": "Тэр тэнд хаалга руу харж суугаад удаан юм хэлсэнгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "面对压力 / 很难面对"
+ },
+ {
+  "chinese": "主人",
+  "pinyin": "zhǔrén",
+  "mongolian": "гэрийн эзэн, урьсан эзэн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "客人来了，主人热情地给他们倒茶。",
+  "exampleMongolian": "Зочин ирэхэд гэрийн эзэн халуун дотноор цай аягалж өглөө.",
+  "pos": "нэр үг",
+  "collocations_zh": "男主人 / 女主人"
+ },
+ {
+  "chinese": "等",
+  "pinyin": "děng",
+  "mongolian": "… -хад, … болтол",
+  "hskLevel": "HSK4",
+  "exampleChinese": "等爸爸回来，我们就吃饭。",
+  "exampleMongolian": "Аав ирмэгц бид хоол идье.",
+  "pos": "угтвар үг",
+  "collocations_zh": "等……再……"
+ },
+ {
+  "chinese": "尊重",
+  "pinyin": "zūnzhòng",
+  "mongolian": "хүндлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "孩子们很尊重家里的老人。",
+  "exampleMongolian": "Хүүхдүүд гэрийнхээ ахмадыг их хүндэлдэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "互相尊重 / 尊重主人的安排"
+ },
+ {
+  "chinese": "水煮鱼",
+  "pinyin": "Shuǐzhǔyú",
+  "mongolian": "шуйчжүюй (чинжүүтэй тосонд чанасан Сычуаны загас)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这是我专门为你做的水煮鱼。",
+  "exampleMongolian": "Энэ бол би чамд зориулж тусгайлан хийсэн шуйчжүюй.",
+  "pos": "нэр үг (хоол)",
+  "collocations_zh": "一道水煮鱼"
+ },
+ {
+  "chinese": "辣子鸡",
+  "pinyin": "Làzijī",
+  "mongolian": "ляцзыжи (чинжүүтэй шарсан тахиа)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们点了一道辣子鸡。",
+  "exampleMongolian": "Бид нэг ляцзыжи захиалсан.",
+  "pos": "нэр үг (хоол)",
+  "collocations_zh": "一道辣子鸡"
+ },
+ {
+  "chinese": "松鼠鳜鱼",
+  "pinyin": "Sōngshǔ Guìyú",
+  "mongolian": "суншуй гүйюй (хэрэм хэлбэртэй чихэр-исгэлэн загас)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "松鼠鳜鱼是一道有名的甜菜。",
+  "exampleMongolian": "Суншуй гүйюй бол алдартай амтат хоол.",
+  "pos": "нэр үг (хоол)",
+  "collocations_zh": "一道松鼠鳜鱼"
+ },
+ {
+  "chinese": "红烧羊肉",
+  "pinyin": "Hóngshāo Yángròu",
+  "mongolian": "хунсяо хонины мах (соустай бүдүүн чанасан хонины мах)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "李文喜欢吃红烧羊肉。",
+  "exampleMongolian": "Ли Вэнь хунсяо хонины мах идэх дуртай.",
+  "pos": "нэр үг (хоол)",
+  "collocations_zh": "一道红烧羊肉"
+ },
+ {
+  "chinese": "贵州",
+  "pinyin": "Guìzhōu",
+  "mongolian": "Гүйжоу (мужийн нэр)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "贵州的酸汤很有名。",
+  "exampleMongolian": "Гүйжоугийн исгэлэн шөл алдартай.",
+  "pos": "тусгай нэр",
+  "collocations_zh": "去贵州 / 贵州菜"
+ },
+ {
+  "chinese": "酸汤米线",
+  "pinyin": "Suāntāng Mǐxiàn",
+  "mongolian": "исгэлэн шөлтэй будааны гоймон",
+  "hskLevel": "HSK4",
+  "exampleChinese": "安妮点了一碗酸汤米线。",
+  "exampleMongolian": "Анни нэг аяга исгэлэн шөлтэй будааны гоймон захиалсан.",
+  "pos": "нэр үг (хоол)",
+  "collocations_zh": "一碗酸汤米线"
+ }
+]

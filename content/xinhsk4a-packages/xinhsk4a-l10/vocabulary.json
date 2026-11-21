@@ -1,0 +1,432 @@
+[
+ {
+  "chinese": "小伙子",
+  "pinyin": "xiǎohuǒzi",
+  "mongolian": "залуу эр, залуу хүү",
+  "hskLevel": "HSK4",
+  "exampleChinese": "那个小伙子每天骑自行车去上班。",
+  "exampleMongolian": "Тэр залуу өдөр бүр дугуйгаар ажилдаа явдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "好小伙子 / 年轻的小伙子"
+ },
+ {
+  "chinese": "气温",
+  "pinyin": "qìwēn",
+  "mongolian": "агаарын температур",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天气温很低，出门要多穿点儿衣服。",
+  "exampleMongolian": "Өнөөдөр агаарын температур маш бага, гадуур гарахдаа арай зузаан өмсөөрэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "气温很高/低 / 气温变化"
+ },
+ {
+  "chinese": "零下",
+  "pinyin": "língxià",
+  "mongolian": "хасах (тэглэхээс доош)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "冬天这里常常是零下十几度，非常冷。",
+  "exampleMongolian": "Өвөл энд ихэвчлэн хасах арав гаруй градус байдаг, маш хүйтэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "零下……度"
+ },
+ {
+  "chinese": "度",
+  "pinyin": "dù",
+  "mongolian": "градус",
+  "hskLevel": "HSK4",
+  "exampleChinese": "西安现在大概18度。",
+  "exampleMongolian": "Сианьд одоо ойролцоогоор 18 градус байна.",
+  "pos": "тооны нэгж",
+  "collocations_zh": "零下20度 / 十几度"
+ },
+ {
+  "chinese": "冻",
+  "pinyin": "dòng",
+  "mongolian": "даарах, хөлдөх; хөлдөөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天太冷了，我的手都冻红了。",
+  "exampleMongolian": "Өнөөдөр хэт хүйтэн, гар маань даараад улайчихлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "冻坏了 / 冻红了"
+ },
+ {
+  "chinese": "后悔",
+  "pinyin": "hòuhuǐ",
+  "mongolian": "харамсах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他很后悔昨天没有好好复习。",
+  "exampleMongolian": "Тэр өчигдөр сайн давтаагүйдээ их харамсаж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "不要后悔 / 后悔极了"
+ },
+ {
+  "chinese": "就是",
+  "pinyin": "jiùshì",
+  "mongolian": "тийм ээ, яг тийм (хариулах үг)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "A：参观故宫最好早点儿去。B：就是，我上次去晚了，人特别多。",
+  "exampleMongolian": "А: Гүнхэн ордныг үзэх бол эрт явсан нь дээр. Б: Яг тийм, би өнгөрсөн удаа орой очоод хүн үнэхээр олон байсан.",
+  "pos": "дайвар үг",
+  "collocations_zh": "就是，就是"
+ },
+ {
+  "chinese": "温度",
+  "pinyin": "wēndù",
+  "mongolian": "температур, дулааны зэрэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "洗澡的时候，水的温度要合适，不能太热。",
+  "exampleMongolian": "Усанд ороход усны температур тохиромжтой байх ёстой, хэт халуун байж болохгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "水的温度 / 温度很高/低"
+ },
+ {
+  "chinese": "差别",
+  "pinyin": "chābié",
+  "mongolian": "ялгаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "南方和北方的天气有很大差别。",
+  "exampleMongolian": "Өмнөд, хойд хоёрын цаг агаар их ялгаатай.",
+  "pos": "нэр үг",
+  "collocations_zh": "有/没有差别 / 差别很大/小"
+ },
+ {
+  "chinese": "厚",
+  "pinyin": "hòu",
+  "mongolian": "зузаан",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天外面很冷，你要穿上厚衣服。",
+  "exampleMongolian": "Өнөөдөр гадаа маш хүйтэн, зузаан хувцас өмс.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "非常厚 / 厚衣服"
+ },
+ {
+  "chinese": "广州",
+  "pinyin": "Guǎngzhōu",
+  "mongolian": "Гуанжоу (өмнөд Хятадын хот)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "广州的冬天很暖和，一年四季都有鲜花。",
+  "exampleMongolian": "Гуанжоугийн өвөл дулаахан, жилийн дөрвөн улиралд цэцэг байдаг.",
+  "pos": "тусгай нэр",
+  "collocations_zh": "去广州 / 广州人"
+ },
+ {
+  "chinese": "哈尔滨",
+  "pinyin": "Hā'ěrbīn",
+  "mongolian": "Харбин (зүүн хойд Хятадын хот)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "哈尔滨的冬天有很多冰雪。",
+  "exampleMongolian": "Харбины өвөл мөс цас их байдаг.",
+  "pos": "тусгай нэр",
+  "collocations_zh": "去哈尔滨 / 哈尔滨的雪"
+ },
+ {
+  "chinese": "寒假",
+  "pinyin": "hánjià",
+  "mongolian": "өвлийн амралт",
+  "hskLevel": "HSK4",
+  "exampleChinese": "寒假我打算去哈尔滨游玩。",
+  "exampleMongolian": "Өвлийн амралтаар би Харбинд аялахаар төлөвлөж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "快乐的寒假 / 放寒假"
+ },
+ {
+  "chinese": "暖和",
+  "pinyin": "nuǎnhuo",
+  "mongolian": "дулаахан; дулаацах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天外面很暖和，我们去公园跑步吧。",
+  "exampleMongolian": "Өнөөдөр гадаа дулаахан байна, цэцэрлэгт хүрээлэнд гүйе.",
+  "pos": "тэмдэг нэр / үйл үг",
+  "collocations_zh": "暖和的衣服 / 暖和暖和"
+ },
+ {
+  "chinese": "低于",
+  "pinyin": "dīyú",
+  "mongolian": "-аас доош байх, -аас бага байх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个城市冬天的气温常常低于零下10度。",
+  "exampleMongolian": "Энэ хотын өвлийн температур ихэвчлэн хасах 10 градусаас доош байдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "气温/温度低于……度"
+ },
+ {
+  "chinese": "摄氏度",
+  "pinyin": "shèshìdù",
+  "mongolian": "Цельсийн градус",
+  "hskLevel": "HSK4",
+  "exampleChinese": "房间里的温度是28摄氏度，很暖和。",
+  "exampleMongolian": "Өрөөний температур 28 градус Цельси, дулаахан байна.",
+  "pos": "тооны нэгж",
+  "collocations_zh": "零下二十摄氏度"
+ },
+ {
+  "chinese": "受不了",
+  "pinyin": "shòubuliǎo",
+  "mongolian": "тэвчиж чадахгүй, дийлэхгүй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "外面的声音太大了，我实在受不了。",
+  "exampleMongolian": "Гаднах дуу хэт чанга, би үнэхээр тэвчиж чадахгүй байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "热/冷得受不了 / 实在受不了"
+ },
+ {
+  "chinese": "举办",
+  "pinyin": "jǔbàn",
+  "mongolian": "зохион байгуулах, явуулах (арга хэмжээ)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们学校这周正在举办足球比赛。",
+  "exampleMongolian": "Манай сургууль энэ долоо хоногт хөл бөмбөгийн тэмцээн зохион байгуулж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "举办比赛 / 举办活动"
+ },
+ {
+  "chinese": "各种",
+  "pinyin": "gèzhǒng",
+  "mongolian": "янз бүрийн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这家商店里有各种面包，看起来都很好吃。",
+  "exampleMongolian": "Энэ дэлгүүрт янз бүрийн талх байна, бүгд амттай харагдаж байна.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "各种景色 / 各种东西"
+ },
+ {
+  "chinese": "植物",
+  "pinyin": "zhíwù",
+  "mongolian": "ургамал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "咱们下午去植物园吧，那里有各种植物。",
+  "exampleMongolian": "Үдээс хойш ургамлын цэцэрлэгт явъя, тэнд янз бүрийн ургамал байдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "种植物 / 植物的花"
+ },
+ {
+  "chinese": "公里",
+  "pinyin": "gōnglǐ",
+  "mongolian": "километр",
+  "hskLevel": "HSK4",
+  "exampleChinese": "从我家到学校只有一公里，所以我每天走路上学。",
+  "exampleMongolian": "Манай гэрээс сургууль хүртэл ердөө нэг километр тул би өдөр бүр алхаж сургуульдаа явдаг.",
+  "pos": "тооны нэгж",
+  "collocations_zh": "多少公里 / 一百公里"
+ },
+ {
+  "chinese": "气候",
+  "pinyin": "qìhòu",
+  "mongolian": "уур амьсгал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这里的气候很舒服，冬天不太冷，夏天也不太热。",
+  "exampleMongolian": "Энд уур амьсгал сайхан, өвөл тийм ч хүйтэн биш, зун ч тийм халуун биш.",
+  "pos": "нэр үг",
+  "collocations_zh": "气候变化 / 一年四季的气候"
+ },
+ {
+  "chinese": "而",
+  "pinyin": "ér",
+  "mongolian": "харин; бөгөөд (эсрэгцүүлэх, холбох холбоос)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "广州冬天很暖和，而哈尔滨的冬天很冷。",
+  "exampleMongolian": "Гуанжоугийн өвөл дулаахан, харин Харбины өвөл маш хүйтэн.",
+  "pos": "холбоос үг",
+  "collocations_zh": "美丽而安静"
+ },
+ {
+  "chinese": "此外",
+  "pinyin": "cǐwài",
+  "mongolian": "үүнээс гадна",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我喜欢打篮球。此外，我还喜欢游泳。",
+  "exampleMongolian": "Би сагсан бөмбөг тоглох дуртай. Үүнээс гадна усанд сэлэх ч дуртай.",
+  "pos": "холбоос үг",
+  "collocations_zh": "此外，还……"
+ },
+ {
+  "chinese": "方言",
+  "pinyin": "fāngyán",
+  "mongolian": "аялгуу, нутгийн хэл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我爷爷习惯讲方言。",
+  "exampleMongolian": "Өвөө маань аялгуугаар ярьдаг заншилтай.",
+  "pos": "нэр үг",
+  "collocations_zh": "说/讲方言 / 南方方言"
+ },
+ {
+  "chinese": "普通话",
+  "pinyin": "pǔtōnghuà",
+  "mongolian": "нийтийн хэл (стандарт хятад хэл, путунхуа)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我的普通话说得不太好，还要多练习。",
+  "exampleMongolian": "Миний нийтийн хэл сайн биш, илүү дадлага хийх хэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "学习普通话 / 说普通话"
+ },
+ {
+  "chinese": "较",
+  "pinyin": "jiào",
+  "mongolian": "харьцангуй, арай",
+  "hskLevel": "HSK4",
+  "exampleChinese": "北京冬天的气温较低。",
+  "exampleMongolian": "Бээжингийн өвлийн температур харьцангуй бага.",
+  "pos": "дайвар үг",
+  "collocations_zh": "较大 / 较远"
+ },
+ {
+  "chinese": "使用",
+  "pinyin": "shǐyòng",
+  "mongolian": "хэрэглэх, ашиглах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "不好意思，我可以使用您的手机打个电话吗？",
+  "exampleMongolian": "Уучлаарай, таны утсыг ашиглаж нэг залгаж болох уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "使用手机 / 使用方法"
+ },
+ {
+  "chinese": "引起",
+  "pinyin": "yǐnqǐ",
+  "mongolian": "үүсгэх, татах (анхаарал, сонирхол, ойлгомжгүй байдал)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这件事很快引起了同学们的兴趣。",
+  "exampleMongolian": "Энэ хэрэг ангийнхны сонирхлыг түргэн татсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "引起注意 / 很快引起"
+ },
+ {
+  "chinese": "误会",
+  "pinyin": "wùhuì",
+  "mongolian": "буруу ойлгох; буруу ойлголт",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你误会我了，我不是那个意思。",
+  "exampleMongolian": "Чи намайг буруу ойлголоо, би тийм утгаар хэлээгүй.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "引起误会 / 误会别人"
+ },
+ {
+  "chinese": "亲爱",
+  "pinyin": "qīn'ài",
+  "mongolian": "хайрт, эрхэм",
+  "hskLevel": "HSK4",
+  "exampleChinese": "亲爱的妈妈，祝您生日快乐！",
+  "exampleMongolian": "Хайрт ээж ээ, төрсөн өдрийн мэнд хүргэе!",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "亲爱的朋友 / 亲爱的老师"
+ },
+ {
+  "chinese": "再次",
+  "pinyin": "zàicì",
+  "mongolian": "дахин, дахиад",
+  "hskLevel": "HSK4",
+  "exampleChinese": "欢迎你再次来广州参观游玩！",
+  "exampleMongolian": "Гуанжоугаар дахин зочлохыг тавтай морилно уу!",
+  "pos": "дайвар үг",
+  "collocations_zh": "再次提醒 / 再次来到"
+ },
+ {
+  "chinese": "开展",
+  "pinyin": "kāizhǎn",
+  "mongolian": "өрнүүлэх, эхлүүлэх (ажил, арга хэмжээ)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这学期我们和中国学生一起开展汉语交流活动。",
+  "exampleMongolian": "Энэ улиралд бид хятад оюутнуудтай хамт хятад хэлний солилцооны арга хэмжээ өрнүүлнэ.",
+  "pos": "үйл үг",
+  "collocations_zh": "开展工作 / 开展得很顺利"
+ },
+ {
+  "chinese": "绿色",
+  "pinyin": "lǜsè",
+  "mongolian": "ногоон; байгальд ээлтэй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "选择绿色出行，就是保护我们的环境。",
+  "exampleMongolian": "Байгальд ээлтэй зорчих сонголт хийх нь бидний орчныг хамгаалж байгаа хэрэг.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "绿色出行 / 绿色生活方式"
+ },
+ {
+  "chinese": "环保",
+  "pinyin": "huánbǎo",
+  "mongolian": "байгаль орчныг хамгаалах; байгальд ээлтэй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "坐公交车比开车更环保。",
+  "exampleMongolian": "Автобусаар явах нь машин жолоодохоос илүү байгальд ээлтэй.",
+  "pos": "нэр үг / тэмдэг нэр",
+  "collocations_zh": "环保知识 / 比较环保"
+ },
+ {
+  "chinese": "拒绝",
+  "pinyin": "jùjué",
+  "mongolian": "татгалзах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他不知道怎样拒绝别人。",
+  "exampleMongolian": "Тэр хүнээс яаж татгалзахаа мэдэхгүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "拒绝帮助 / 学会拒绝"
+ },
+ {
+  "chinese": "浪费",
+  "pinyin": "làngfèi",
+  "mongolian": "үрэх, дэмий үрэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "不要浪费时间了，快点儿开始做作业吧。",
+  "exampleMongolian": "Цагаа дэмий үрэхээ боль, даалгавраа хурдан хийж эхэл.",
+  "pos": "үйл үг",
+  "collocations_zh": "浪费时间 / 不要浪费"
+ },
+ {
+  "chinese": "节约",
+  "pinyin": "jiéyuē",
+  "mongolian": "хэмнэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "为了节约时间，我每天坐地铁去学校。",
+  "exampleMongolian": "Цаг хэмнэхийн тулд би өдөр бүр метроор сургуульдаа явдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "节约用电/水 / 注意节约"
+ },
+ {
+  "chinese": "资源",
+  "pinyin": "zīyuán",
+  "mongolian": "нөөц, баялаг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们要节约资源，拒绝浪费。",
+  "exampleMongolian": "Бид нөөцөө хэмнэж, үрэлгэн байдлаас татгалзах ёстой.",
+  "pos": "нэр үг",
+  "collocations_zh": "自然资源 / 节约资源"
+ },
+ {
+  "chinese": "光",
+  "pinyin": "guāng",
+  "mongolian": "дуусах, үлдэхгүй болох (үр дүнгийн үг)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他花光了妈妈这个月给他的钱。",
+  "exampleMongolian": "Тэр ээжийнхээ энэ сард өгсөн мөнгийг бүгдийг нь зарчихсан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "吃光 / 花光"
+ },
+ {
+  "chinese": "垃圾",
+  "pinyin": "lājī",
+  "mongolian": "хог",
+  "hskLevel": "HSK4",
+  "exampleChinese": "房间里的垃圾太多了，我们打扫一下吧。",
+  "exampleMongolian": "Өрөөнд хог хэт их байна, цэвэрлэчихье.",
+  "pos": "нэр үг",
+  "collocations_zh": "倒垃圾 / 厨房垃圾"
+ },
+ {
+  "chinese": "分类",
+  "pinyin": "fēnlèi",
+  "mongolian": "ангилах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请把这些垃圾分好类，放进不同的垃圾箱里。",
+  "exampleMongolian": "Эдгээр хогийг ангилж, өөр өөр хогийн савнд хийнэ үү.",
+  "pos": "үйл үг",
+  "collocations_zh": "垃圾分类 / 分成两类"
+ },
+ {
+  "chinese": "日常",
+  "pinyin": "rìcháng",
+  "mongolian": "өдөр тутмын",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我的日常生活很简单。",
+  "exampleMongolian": "Миний өдөр тутмын амьдрал энгийн.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "日常生活 / 日常工作"
+ }
+]

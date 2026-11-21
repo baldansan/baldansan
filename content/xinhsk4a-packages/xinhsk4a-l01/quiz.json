@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "出国以前，要先办好________。",
+  "options": [
+   "食堂",
+   "压力",
+   "经济",
+   "签证"
+  ],
+  "correct_answer": "签证",
+  "explanation": "«Виз хийлгэх» — 办签证.",
+  "order_index": 1,
+  "id": "xinhsk4a-l01-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "你看到老师发的________了吗？明天不上课。",
+  "options": [
+   "知识",
+   "方面",
+   "通知",
+   "专业"
+  ],
+  "correct_answer": "通知",
+  "explanation": "«Багшийн явуулсан мэдэгдэл» — 通知.",
+  "order_index": 2,
+  "id": "xinhsk4a-l01-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想________奖学金，减轻家里的压力。",
+  "options": [
+   "通过",
+   "申请",
+   "适应",
+   "当"
+  ],
+  "correct_answer": "申请",
+  "explanation": "«Тэтгэлэгт өргөдөл гаргах» — 申请奖学金.",
+  "order_index": 3,
+  "id": "xinhsk4a-l01-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "她学习很努力，今年________了奖学金。",
+  "options": [
+   "获得",
+   "表现",
+   "交流",
+   "研究"
+  ],
+  "correct_answer": "获得",
+  "explanation": "«Тэтгэлэг авсан» — 获得奖学金.",
+  "order_index": 4,
+  "id": "xinhsk4a-l01-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "学校的________饭很好吃，也很便宜。",
+  "options": [
+   "课程",
+   "证件",
+   "贸易",
+   "食堂"
+  ],
+  "correct_answer": "食堂",
+  "explanation": "«Хоолны газар» — 食堂.",
+  "order_index": 5,
+  "id": "xinhsk4a-l01-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我姐姐在大学里学习中文________。",
+  "options": [
+   "方面",
+   "将来",
+   "专业",
+   "活动"
+  ],
+  "correct_answer": "专业",
+  "explanation": "«Хятад хэлний мэргэжил» — 中文专业.",
+  "order_index": 6,
+  "id": "xinhsk4a-l01-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "别给自己太大________，慢慢来。",
+  "options": [
+   "签证",
+   "压力",
+   "知识",
+   "贸易"
+  ],
+  "correct_answer": "压力",
+  "explanation": "«Дарамт» — 压力.",
+  "order_index": 7,
+  "id": "xinhsk4a-l01-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "________我想成为一名医生。",
+  "options": [
+   "将来",
+   "国际",
+   "材料",
+   "通知"
+  ],
+  "correct_answer": "将来",
+  "explanation": "«Ирээдүйд» — 将来.",
+  "order_index": 8,
+  "id": "xinhsk4a-l01-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "我刚来的时候不习惯，现在已经________了。",
+  "options": [
+   "申请",
+   "获得",
+   "减轻",
+   "适应"
+  ],
+  "correct_answer": "适应",
+  "explanation": "«Дасчихлаа» — 适应.",
+  "order_index": 9,
+  "id": "xinhsk4a-l01-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "多和别人________，可以提高你的口语水平。",
+  "options": [
+   "通过",
+   "当",
+   "交流",
+   "研究"
+  ],
+  "correct_answer": "交流",
+  "explanation": "«Харилцах» — 交流.",
+  "order_index": 10,
+  "id": "xinhsk4a-l01-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l01-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你们以后有任何问题都可以来找我。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Та нар надтай уулзах шаардлагагүй.",
+   "Та нар цаашид ямар ч асуудал гарвал надтай уулзаж болно.",
+   "Та нар цаашид асуудалгүй.",
+   "Та нарт асуулт байхгүй."
+  ],
+  "correct_answer": "Та нар цаашид ямар ч асуудал гарвал надтай уулзаж болно.",
+  "explanation": "任何 + нэр үг + 都 — «ямар ч … бүгд».",
+  "order_index": 11,
+  "id": "xinhsk4a-l01-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l01-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "这个问题很简单，任何人________能回答。",
+  "options": [
+   "都",
+   "才",
+   "再",
+   "就是"
+  ],
+  "correct_answer": "都",
+  "explanation": "任何人都 — «ямар ч хүн бүгд». 任何-ийн ард 都 заавал орно.",
+  "order_index": 12,
+  "id": "xinhsk4a-l01-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "要是明天不下雨，我们________去公园玩。",
+  "options": [
+   "但是",
+   "因为",
+   "却",
+   "就"
+  ],
+  "correct_answer": "就",
+  "explanation": "要是…，就… — «хэрэв … бол тэгвэл …».",
+  "order_index": 13,
+  "id": "xinhsk4a-l01-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l01-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Хэрэв чи ядарсан бол эхлээд амарч болно» — аль нь зөв вэ?",
+  "options": [
+   "要是你累了，但是休息一下。",
+   "因为你累了，要是休息一下。",
+   "要是你累了，可以先休息一下。",
+   "你累了要是，先可以休息一下。"
+  ],
+  "correct_answer": "要是你累了，可以先休息一下。",
+  "explanation": "要是 нь нөхцөлийн эхэнд орно.",
+  "order_index": 14,
+  "id": "xinhsk4a-l01-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "________天气变冷，出门的人越来越少。",
+  "options": [
+   "跟",
+   "随着",
+   "通过",
+   "除了"
+  ],
+  "correct_answer": "随着",
+  "explanation": "随着 + өөрчлөлт — «цаг агаар хүйтрэх тусам».",
+  "order_index": 15,
+  "id": "xinhsk4a-l01-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«随着中文水平的提高，我现在能看懂中文报纸了» — юу гэсэн үг вэ?",
+  "options": [
+   "Хятад хэлний түвшин дээшлэх тусам би одоо хятад сонин ойлгож чаддаг боллоо.",
+   "Би хятад сонин уншаагүй.",
+   "Хятад хэл хэцүү тул би сонин уншдаггүй.",
+   "Би сонин унших гэж байна."
+  ],
+  "correct_answer": "Хятад хэлний түвшин дээшлэх тусам би одоо хятад сонин ойлгож чаддаг боллоо.",
+  "explanation": "随着 + нэр үг + 的提高 — «…дээшлэх тусам».",
+  "order_index": 16,
+  "id": "xinhsk4a-l01-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l01-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "要想学好中文，我们一方面要多听，________还应该多说。",
+  "options": [
+   "一方面",
+   "另外方面",
+   "第二方面",
+   "另一方面"
+  ],
+  "correct_answer": "另一方面",
+  "explanation": "一方面……，另一方面…… — хоёр талыг зэрэгцүүлнэ.",
+  "order_index": 17,
+  "id": "xinhsk4a-l01-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l01-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "多做运动另一方面能让身体更健康，一方面也能减轻压力。",
+   "多做运动一方面另一方面能让身体更健康。",
+   "多做运动一方面能让身体更健康，另一方面也能减轻压力。",
+   "多做运动一方面能让身体更健康，一方面也能减轻压力。"
+  ],
+  "correct_answer": "多做运动一方面能让身体更健康，另一方面也能减轻压力。",
+  "explanation": "Эхлээд 一方面, дараа нь 另一方面.",
+  "order_index": 18,
+  "id": "xinhsk4a-l01-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l01-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：老师给白家月什么了？",
+  "options": [
+   "入学通知书",
+   "学生证",
+   "护照",
+   "签证"
+  ],
+  "correct_answer": "学生证",
+  "explanation": "«这是你们的学生证» — оюутны үнэмлэх.",
+  "order_index": 19,
+  "id": "xinhsk4a-l01-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：他们什么时候开始上课？",
+  "options": [
+   "下周一",
+   "今天",
+   "明天",
+   "两周后"
+  ],
+  "correct_answer": "下周一",
+  "explanation": "«下周一开始上课» — ирэх даваагаас.",
+  "order_index": 20,
+  "id": "xinhsk4a-l01-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：白家月觉得学校怎么样？",
+  "options": [
+   "不太大",
+   "很安静",
+   "非常不方便",
+   "像一座小城市"
+  ],
+  "correct_answer": "像一座小城市",
+  "explanation": "«学校就像一座小城市，什么都有» гэсэн.",
+  "order_index": 21,
+  "id": "xinhsk4a-l01-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：陈天中为什么想申请奖学金？",
+  "options": [
+   "想让家人高兴",
+   "为了认识朋友",
+   "为了减轻经济压力",
+   "想提高成绩"
+  ],
+  "correct_answer": "为了减轻经济压力",
+  "explanation": "«要是申请到奖学金，就能减轻不少经济压力».",
+  "order_index": 22,
+  "id": "xinhsk4a-l01-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：外国学生可以根据什么选择专业？",
+  "options": [
+   "家人的需要",
+   "自己的兴趣和需要",
+   "中文水平",
+   "学校的要求"
+  ],
+  "correct_answer": "自己的兴趣和需要",
+  "explanation": "«根据自己的兴趣和需要选择专业».",
+  "order_index": 23,
+  "id": "xinhsk4a-l01-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：外国学生怎么能更快地适应中国的大学生活？",
+  "options": [
+   "多跟中国学生交流",
+   "多去图书馆学习",
+   "多上中文课程",
+   "多研究中国文化"
+  ],
+  "correct_answer": "多跟中国学生交流",
+  "explanation": "«通过这些交流，外国学生能更快地适应».",
+  "order_index": 24,
+  "id": "xinhsk4a-l01-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：安妮以后想做什么？",
+  "options": [
+   "当医生",
+   "自己开公司",
+   "做国际贸易",
+   "成为老师"
+  ],
+  "correct_answer": "成为老师",
+  "explanation": "«安妮以后想做一名中文老师».",
+  "order_index": 25,
+  "id": "xinhsk4a-l01-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

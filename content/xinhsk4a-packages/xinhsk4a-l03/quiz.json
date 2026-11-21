@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "你到了以后________给我打电话。",
+  "options": [
+   "正好",
+   "熟悉",
+   "一直",
+   "直接"
+  ],
+  "correct_answer": "直接",
+  "explanation": "«Шууд залгаарай» — 直接.",
+  "order_index": 1,
+  "id": "xinhsk4a-l03-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "前面的十字路口往右________，就能看到银行。",
+  "options": [
+   "寄",
+   "管",
+   "转",
+   "订"
+  ],
+  "correct_answer": "转",
+  "explanation": "«Баруун тийш эргэх» — 往右转.",
+  "order_index": 2,
+  "id": "xinhsk4a-l03-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我刚来北京，对这里的路还不________。",
+  "options": [
+   "随便",
+   "熟悉",
+   "保证",
+   "提供"
+  ],
+  "correct_answer": "熟悉",
+  "explanation": "«Замыг сайн мэдэхгүй» — 不熟悉.",
+  "order_index": 3,
+  "id": "xinhsk4a-l03-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我可以用信用卡________吗？",
+  "options": [
+   "支付",
+   "购物",
+   "快递",
+   "软件"
+  ],
+  "correct_answer": "支付",
+  "explanation": "«Картаар төлж болох уу» — 支付.",
+  "order_index": 4,
+  "id": "xinhsk4a-l03-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我在网上________了一张去北京的火车票。",
+  "options": [
+   "寄",
+   "转",
+   "管",
+   "订"
+  ],
+  "correct_answer": "订",
+  "explanation": "«Тийз захиалсан» — 订票.",
+  "order_index": 5,
+  "id": "xinhsk4a-l03-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这家商店只收________，不能扫码。",
+  "options": [
+   "货",
+   "手指",
+   "现金",
+   "密码"
+  ],
+  "correct_answer": "现金",
+  "explanation": "«Зөвхөн бэлэн мөнгө» — 现金.",
+  "order_index": 6,
+  "id": "xinhsk4a-l03-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他从北京________来一本书。",
+  "options": [
+   "乱",
+   "寄",
+   "管",
+   "订"
+  ],
+  "correct_answer": "寄",
+  "explanation": "«Бээжингээс ном илгээсэн» — 寄来.",
+  "order_index": 7,
+  "id": "xinhsk4a-l03-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "不要________买东西，你要管住自己。",
+  "options": [
+   "乱",
+   "等",
+   "正",
+   "转"
+  ],
+  "correct_answer": "乱",
+  "explanation": "«Дураараа битгий ав» — 乱买.",
+  "order_index": 8,
+  "id": "xinhsk4a-l03-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "为了保护个人信息，你要记住自己的________。",
+  "options": [
+   "货",
+   "法律",
+   "网络",
+   "密码"
+  ],
+  "correct_answer": "密码",
+  "explanation": "«Нууц үгээ санах» — 密码.",
+  "order_index": 9,
+  "id": "xinhsk4a-l03-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我们可以通过法律________保护个人信息安全。",
+  "options": [
+   "现金",
+   "购物",
+   "手段",
+   "手指"
+  ],
+  "correct_answer": "手段",
+  "explanation": "«Хуулийн аргаар» — 法律手段.",
+  "order_index": 10,
+  "id": "xinhsk4a-l03-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l03-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "北京大是大，________路很好找。",
+  "options": [
+   "而且",
+   "不过",
+   "所以",
+   "因为"
+  ],
+  "correct_answer": "不过",
+  "explanation": "X是X，不过/就是… — «гэхдээ» утгатай.",
+  "order_index": 11,
+  "id": "xinhsk4a-l03-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«Энэ байр хямд л хямд, гэхдээ хол» — аль нь зөв вэ?",
+  "options": [
+   "这个房子便宜是便宜，就是太远。",
+   "这个房子便宜便宜，就是太远。",
+   "这个房子是便宜，所以太远。",
+   "这个房子便宜是便宜，所以很远。"
+  ],
+  "correct_answer": "这个房子便宜是便宜，就是太远。",
+  "explanation": "X是X + 就是 + хязгаар.",
+  "order_index": 12,
+  "id": "xinhsk4a-l03-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "他不仅会说中文，________会写汉字。",
+  "options": [
+   "但是",
+   "所以",
+   "因为",
+   "还"
+  ],
+  "correct_answer": "还",
+  "explanation": "不仅…还… — «зөвхөн … ч биш, бас …».",
+  "order_index": 13,
+  "id": "xinhsk4a-l03-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "他会说中文不仅，还写汉字会。",
+   "他不仅会说中文，所以会写汉字。",
+   "他不仅会说中文，还会写汉字。",
+   "不仅他会说中文，但是会写汉字。"
+  ],
+  "correct_answer": "他不仅会说中文，还会写汉字。",
+  "explanation": "Өгүүлэгдэхүүн 不仅-ийн өмнө, ард нь 还/而且.",
+  "order_index": 14,
+  "id": "xinhsk4a-l03-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "他学习很努力，________周末也不休息。",
+  "options": [
+   "不仅",
+   "甚至",
+   "于是",
+   "不过"
+  ],
+  "correct_answer": "甚至",
+  "explanation": "甚至 — «бүр», онцгой жишээг онцлоно.",
+  "order_index": 15,
+  "id": "xinhsk4a-l03-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l03-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "这个小区有小花园、球场，甚至还有一个超市。 — «甚至» гэж юу гэсэн үг вэ?",
+  "options": [
+   "бүр",
+   "тиймээс",
+   "гэхдээ",
+   "зөвхөн"
+  ],
+  "correct_answer": "бүр",
+  "explanation": "甚至 — «бүр, бүр гэхэд».",
+  "order_index": 16,
+  "id": "xinhsk4a-l03-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "下雨了，________我们决定在家看电影。",
+  "options": [
+   "不过",
+   "甚至",
+   "不仅",
+   "于是"
+  ],
+  "correct_answer": "于是",
+  "explanation": "于是 — шалтгаанаас гарсан үйлдэл.",
+  "order_index": 17,
+  "id": "xinhsk4a-l03-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l03-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«于是»-г зөв хэрэглэсэн аль нь вэ?",
+  "options": [
+   "她想当医生，于是想当医生。",
+   "她选择了学医，因为于是想当医生。",
+   "她想当医生，于是选择了学医。",
+   "于是她想当医生，选择学医了。"
+  ],
+  "correct_answer": "她想当医生，于是选择了学医。",
+  "explanation": "于是 нь үр дүн, шийдвэрийн өмнө орно.",
+  "order_index": 18,
+  "id": "xinhsk4a-l03-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l03-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：陈天中到十字路口后应该怎么走？",
+  "options": [
+   "过马路",
+   "直接右转",
+   "向前走",
+   "向左转"
+  ],
+  "correct_answer": "直接右转",
+  "explanation": "«到十字路口不要过马路，直接右转» — шууд баруун тийш эргэнэ.",
+  "order_index": 19,
+  "id": "xinhsk4a-l03-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：陈天中为什么没用手机地图？",
+  "options": [
+   "很多中文地名还不认识",
+   "没有手机",
+   "不想用",
+   "手机坏了"
+  ],
+  "correct_answer": "很多中文地名还不认识",
+  "explanation": "«很多中文地名我还不认识» гэсэн.",
+  "order_index": 20,
+  "id": "xinhsk4a-l03-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文帮陈天中下载了什么？",
+  "options": [
+   "快递软件",
+   "地图软件",
+   "银行软件",
+   "微信和支付宝"
+  ],
+  "correct_answer": "微信和支付宝",
+  "explanation": "«他帮我下载了微信和支付宝».",
+  "order_index": 21,
+  "id": "xinhsk4a-l03-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：陈天中为什么着急回去？",
+  "options": [
+   "李文找他",
+   "手机坏了",
+   "快递员要到了",
+   "要上课了"
+  ],
+  "correct_answer": "快递员要到了",
+  "explanation": "«快递员要到了，我得马上回去».",
+  "order_index": 22,
+  "id": "xinhsk4a-l03-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：中国人在饭馆结账时几乎都怎么付？",
+  "options": [
+   "用信用卡",
+   "用手机支付",
+   "用现金",
+   "用银行卡"
+  ],
+  "correct_answer": "用手机支付",
+  "explanation": "«几乎都用手机支付» — бараг бүгд гар утсаар.",
+  "order_index": 23,
+  "id": "xinhsk4a-l03-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：留学生网购时担心什么？",
+  "options": [
+   "乱花钱",
+   "价格高",
+   "送货慢",
+   "没有选择"
+  ],
+  "correct_answer": "乱花钱",
+  "explanation": "«担心自己在网购时会乱花钱».",
+  "order_index": 24,
+  "id": "xinhsk4a-l03-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：下列哪项是课文中的建议？",
+  "options": [
+   "不在咖啡馆收邮件",
+   "把密码发给朋友",
+   "常常换手机",
+   "别把密码随便告诉别人"
+  ],
+  "correct_answer": "别把密码随便告诉别人",
+  "explanation": "«别把密码随便告诉别人» — нууц үгээ дураар бусдад битгий хэл.",
+  "order_index": 25,
+  "id": "xinhsk4a-l03-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

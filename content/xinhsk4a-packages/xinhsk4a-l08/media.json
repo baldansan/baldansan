@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-hero.webp",
+   "title": "8-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l08-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w1.webp",
+   "title": "参观 cānguān — үзэж сонирхох",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w2.webp",
+   "title": "加班 jiābān — илүү цагаар ажиллах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w3.webp",
+   "title": "下降 xiàjiàng — буурах",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w4.webp",
+   "title": "风景 fēngjǐng — байгалийн үзэмж",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w5.webp",
+   "title": "乘坐 chéngzuò — суух (тээврийн хэрэгсэлд)",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l08-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l08/l08-w6.webp",
+   "title": "帽子 màozi — малгай",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

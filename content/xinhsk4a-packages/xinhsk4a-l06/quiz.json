@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "你咳嗽得这么厉害，最好________去医院看看。",
+  "options": [
+   "偶尔",
+   "按时",
+   "光",
+   "赶快"
+  ],
+  "correct_answer": "赶快",
+  "explanation": "«Түргэн очиж үз» — 赶快去医院.",
+  "order_index": 1,
+  "id": "xinhsk4a-l06-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他的病很________，需要马上住院。",
+  "options": [
+   "难受",
+   "低",
+   "严重",
+   "有效"
+  ],
+  "correct_answer": "严重",
+  "explanation": "«Өвчин хүнд» — 病很严重.",
+  "order_index": 2,
+  "id": "xinhsk4a-l06-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "谢谢你今天________我去买药。",
+  "options": [
+   "醒",
+   "陪",
+   "翻",
+   "降"
+  ],
+  "correct_answer": "陪",
+  "explanation": "«Хамт явах» — 陪我去.",
+  "order_index": 3,
+  "id": "xinhsk4a-l06-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这家医院可以在网上________，很方便。",
+  "options": [
+   "挂号",
+   "排队",
+   "打针",
+   "收费"
+  ],
+  "correct_answer": "挂号",
+  "explanation": "«Онлайнаар бүртгүүлэх» — 网上挂号.",
+  "order_index": 4,
+  "id": "xinhsk4a-l06-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "请在这张________里写上你的姓名和性别。",
+  "options": [
+   "汗",
+   "部",
+   "步",
+   "表"
+  ],
+  "correct_answer": "表",
+  "explanation": "«Маягт» — 这张表.",
+  "order_index": 5,
+  "id": "xinhsk4a-l06-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "护士检查了一下孩子的________，说她没有发烧。",
+  "options": [
+   "国籍",
+   "情况",
+   "体温",
+   "地址"
+  ],
+  "correct_answer": "体温",
+  "explanation": "«Биеийн температур» — 检查体温.",
+  "order_index": 6,
+  "id": "xinhsk4a-l06-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "你一定要________吃药，这样身体才会好得快。",
+  "options": [
+   "通",
+   "按时",
+   "偶尔",
+   "光"
+  ],
+  "correct_answer": "按时",
+  "explanation": "«Цагтаа эм уу» — 按时吃药.",
+  "order_index": 7,
+  "id": "xinhsk4a-l06-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "吃了药，孩子的体温终于________下来了。",
+  "options": [
+   "降",
+   "醒",
+   "咳",
+   "排"
+  ],
+  "correct_answer": "降",
+  "explanation": "«Буурах» — 降下来.",
+  "order_index": 8,
+  "id": "xinhsk4a-l06-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这种药对大多数病人是________的。",
+  "options": [
+   "严重",
+   "难受",
+   "收费",
+   "有效"
+  ],
+  "correct_answer": "有效",
+  "explanation": "«Үр дүнтэй» — 有效的.",
+  "order_index": 9,
+  "id": "xinhsk4a-l06-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他每天早上七点________来。",
+  "options": [
+   "咳",
+   "陪",
+   "醒",
+   "降"
+  ],
+  "correct_answer": "醒",
+  "explanation": "«Сэрэх» — 醒来.",
+  "order_index": 10,
+  "id": "xinhsk4a-l06-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l06-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«他咳得很厉害。» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Тэр ханиахгүй байна.",
+   "Тэр хүчтэй ханиалгаж байна.",
+   "Тэр ханиах дуртай.",
+   "Тэр ханиалгаад дууссан."
+  ],
+  "correct_answer": "Тэр хүчтэй ханиалгаж байна.",
+  "explanation": "V+得+很+厉害 — «хүчтэй …».",
+  "order_index": 11,
+  "id": "xinhsk4a-l06-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l06-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 我今天跑步跑多了，腿疼得________。",
+  "options": [
+   "厉害",
+   "非常得",
+   "偶尔",
+   "严重得"
+  ],
+  "correct_answer": "厉害",
+  "explanation": "V+得+厉害 — «маш их …».",
+  "order_index": 12,
+  "id": "xinhsk4a-l06-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«你跟我有什么好客气的？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Чи надаас юу хүсч байна?",
+   "Чи яагаад надад эелдэг биш байна?",
+   "Чи надтай хэзээ ярих вэ?",
+   "Чи надтай хэлцэх хэрэггүй."
+  ],
+  "correct_answer": "Чи надтай хэлцэх хэрэггүй.",
+  "explanation": "有什么好…的 — «… хэрэггүй».",
+  "order_index": 13,
+  "id": "xinhsk4a-l06-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 这家商场里的东西很一般，没有什么________买的。",
+  "options": [
+   "太",
+   "都",
+   "好",
+   "很"
+  ],
+  "correct_answer": "好",
+  "explanation": "没有什么好 + V + 的 — «… юм алга».",
+  "order_index": 14,
+  "id": "xinhsk4a-l06-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 我平时不喝咖啡，________喝一杯茶。",
+  "options": [
+   "每天",
+   "偶尔",
+   "一直",
+   "常常"
+  ],
+  "correct_answer": "偶尔",
+  "explanation": "偶尔 — «хааяа».",
+  "order_index": 15,
+  "id": "xinhsk4a-l06-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l06-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "他偶尔才去电影院看电影。",
+   "他偶尔每天去电影院。",
+   "他才偶尔常常去电影院。",
+   "偶尔他电影院去才。"
+  ],
+  "correct_answer": "他偶尔才去电影院看电影。",
+  "explanation": "偶尔才 + V — «хааяа л …».",
+  "order_index": 16,
+  "id": "xinhsk4a-l06-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l06-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 你早点儿告诉我，我________准备。",
+  "options": [
+   "很",
+   "让",
+   "把",
+   "好"
+  ],
+  "correct_answer": "好",
+  "explanation": "A，好 B — зорилгыг заана.",
+  "order_index": 17,
+  "id": "xinhsk4a-l06-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l06-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«我每天给家人打电话，好让他们放心。» дахь 好 нь юу гэсэн утгатай вэ?",
+  "options": [
+   "«маш»",
+   "«дуртай»",
+   "«… тулд, тэгснээр» (зорилго)",
+   "«сайн»"
+  ],
+  "correct_answer": "«… тулд, тэгснээр» (зорилго)",
+  "explanation": "好 — хоёр дахь хэсгийн эхэнд орж зорилгыг заана.",
+  "order_index": 18,
+  "id": "xinhsk4a-l06-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l06-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：白家月怎么了？",
+  "options": [
+   "要去机场",
+   "感冒，发烧，一直咳嗽",
+   "丢了手机",
+   "没去学校"
+  ],
+  "correct_answer": "感冒，发烧，一直咳嗽",
+  "explanation": "«我还发烧，一直咳嗽，咳得很厉害».",
+  "order_index": 19,
+  "id": "xinhsk4a-l06-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：李文怎么帮白家月？",
+  "options": [
+   "陪她去医院，还帮她翻译",
+   "给她买药",
+   "给她打针",
+   "请医生来家里"
+  ],
+  "correct_answer": "陪她去医院，还帮她翻译",
+  "explanation": "«我陪你一起去，还能帮你翻译».",
+  "order_index": 20,
+  "id": "xinhsk4a-l06-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文要在表上写什么？",
+  "options": [
+   "自己的信息",
+   "医生的信息",
+   "药的名字",
+   "病人的信息"
+  ],
+  "correct_answer": "病人的信息",
+  "explanation": "«写上病人的姓名、性别、国籍……».",
+  "order_index": 21,
+  "id": "xinhsk4a-l06-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：李文去做什么？",
+  "options": [
+   "找护照",
+   "打针",
+   "排队挂号",
+   "买药"
+  ],
+  "correct_answer": "排队挂号",
+  "explanation": "«我去排队挂号».",
+  "order_index": 22,
+  "id": "xinhsk4a-l06-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：医生为什么建议打针？",
+  "options": [
+   "不想排队",
+   "打针更有效",
+   "吃药太贵",
+   "不用来医院"
+  ],
+  "correct_answer": "打针更有效",
+  "explanation": "«光吃药恐怕不够，打针会更有效».",
+  "order_index": 23,
+  "id": "xinhsk4a-l06-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：第二天白家月怎么样？",
+  "options": [
+   "不那么难受了",
+   "更不舒服了",
+   "体温更高了",
+   "头更疼了"
+  ],
+  "correct_answer": "不那么难受了",
+  "explanation": "«身体不那么难受了».",
+  "order_index": 24,
+  "id": "xinhsk4a-l06-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：国际部的收费怎么样？",
+  "options": [
+   "比较低",
+   "免费",
+   "不收费",
+   "比较高"
+  ],
+  "correct_answer": "比较高",
+  "explanation": "«国际部的收费比较高».",
+  "order_index": 25,
+  "id": "xinhsk4a-l06-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ }
+]

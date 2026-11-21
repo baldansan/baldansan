@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-hero.webp",
+   "title": "1-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l01-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w1.webp",
+   "title": "证件 zhèngjiàn — бичиг баримт",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w2.webp",
+   "title": "博士 bóshì — доктор (эрдмийн зэрэг)",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w3.webp",
+   "title": "食堂 shítáng — цайны газар (оюутны)",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w4.webp",
+   "title": "材料 cáiliào — материал, баримт бичиг",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w5.webp",
+   "title": "教师 jiàoshī — багш",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l01-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l01/l01-w6.webp",
+   "title": "加油 jiāyóu — зүтгэ, тэвчээртэй бай",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

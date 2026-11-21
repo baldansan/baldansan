@@ -1,0 +1,422 @@
+[
+ {
+  "chinese": "十字路口",
+  "pinyin": "shízì lùkǒu",
+  "mongolian": "уулзвар, дөрвөн замын уулзвар",
+  "hskLevel": "HSK4",
+  "exampleChinese": "汽车开到十字路口，要注意看红绿灯。",
+  "exampleMongolian": "Машин уулзвар дээр очихдоо гэрлийн дохиог анхаарч харах хэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "经过十字路口 / 左转十字路口"
+ },
+ {
+  "chinese": "直接",
+  "pinyin": "zhíjiē",
+  "mongolian": "шууд",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你到了以后直接给我打电话。",
+  "exampleMongolian": "Очсныхоо дараа надад шууд залгаарай.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "直接关系 / 直接解决"
+ },
+ {
+  "chinese": "转",
+  "pinyin": "zhuǎn",
+  "mongolian": "эргэх; өөрчлөгдөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "前面那个十字路口往左转，就能看到银行。",
+  "exampleMongolian": "Урд байгаа уулзвар дээрээс зүүн тийш эргэвэл банк харагдана.",
+  "pos": "үйл үг",
+  "collocations_zh": "往右转 / 向后转"
+ },
+ {
+  "chinese": "正好",
+  "pinyin": "zhènghǎo",
+  "mongolian": "яг таараад; яг тохиолдож; яг тохирсон",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我到车站时，车正好来了。",
+  "exampleMongolian": "Би буудал дээр очиход автобус яг ирлээ.",
+  "pos": "дайвар үг / тэмдэг нэр",
+  "collocations_zh": "来得正好 / 时间正好"
+ },
+ {
+  "chinese": "熟悉",
+  "pinyin": "shúxi",
+  "mongolian": "сайн мэдэх, дөлгөөн танил",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这条路我很熟悉，我带你过去。",
+  "exampleMongolian": "Энэ замыг би сайн мэднэ, би чамайг хүргэж өгье.",
+  "pos": "үйл үг",
+  "collocations_zh": "对……很熟悉 / 熟悉的声音"
+ },
+ {
+  "chinese": "正",
+  "pinyin": "zhèng",
+  "mongolian": "шулуун; яг (чиглэл)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我家在学校的正西边。",
+  "exampleMongolian": "Манай гэр сургуулийн яг баруун талд.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "正前面 / 坐得很正"
+ },
+ {
+  "chinese": "目的地",
+  "pinyin": "mùdìdì",
+  "mongolian": "очих газар, зорьсон газар",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们坐了两个小时的火车，终于到了目的地。",
+  "exampleMongolian": "Бид хоёр цаг галт тэргээр явж, эцэст нь очих газраа хүрлээ.",
+  "pos": "нэр үг",
+  "collocations_zh": "旅游目的地 / 走到目的地"
+ },
+ {
+  "chinese": "下载",
+  "pinyin": "xiàzài",
+  "mongolian": "татах, татаж авах (апп)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我想把课文下载到我的电脑上。",
+  "exampleMongolian": "Би хичээлийн бичвэрийг компьютердээ татаж авмаар байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "下载软件 / 开始下载"
+ },
+ {
+  "chinese": "进行",
+  "pinyin": "jìnxíng",
+  "mongolian": "явуулах, хийх, үргэлжлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们下周要进行一次中文考试。",
+  "exampleMongolian": "Бид дараа долоо хоногт хятад хэлний шалгалт авна.",
+  "pos": "үйл үг",
+  "collocations_zh": "进行比赛 / 顺利进行"
+ },
+ {
+  "chinese": "支付",
+  "pinyin": "zhīfù",
+  "mongolian": "төлөх, төлбөр хийх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他教我怎么用手机进行支付。",
+  "exampleMongolian": "Тэр надад утсаараа хэрхэн төлбөр хийхийг зааж өгсөн.",
+  "pos": "үйл үг",
+  "collocations_zh": "刷卡支付 / 支付房租"
+ },
+ {
+  "chinese": "软件",
+  "pinyin": "ruǎnjiàn",
+  "mongolian": "програм, аппликейшн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我下载了一个学习中文的软件。",
+  "exampleMongolian": "Би хятад хэл сурах апп татаж авлаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "常用的软件 / 下载软件"
+ },
+ {
+  "chinese": "不仅",
+  "pinyin": "bùjǐn",
+  "mongolian": "зөвхөн ... ч биш",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他不仅会说中文，还会唱中文歌呢。",
+  "exampleMongolian": "Тэр хятадаар ярьдаг төдийгүй хятад дуу ч дуулдаг шүү.",
+  "pos": "холбоо үг",
+  "collocations_zh": "不仅……，还/而且……"
+ },
+ {
+  "chinese": "扫码",
+  "pinyin": "sǎomǎ",
+  "mongolian": "QR код уншуулах, скан хийх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你可以扫码下载这个学习软件。",
+  "exampleMongolian": "Та QR кодыг уншуулаад энэ сурах аппыг татаж авч болно.",
+  "pos": "үйл үг",
+  "collocations_zh": "扫码支付 / 扫一下码"
+ },
+ {
+  "chinese": "结账",
+  "pinyin": "jiézhàng",
+  "mongolian": "тооцоо хийх, төлбөрөө төлөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们学校食堂可以扫码结账。",
+  "exampleMongolian": "Манай сургуулийн хоолны газарт QR кодоор төлж болно.",
+  "pos": "үйл үг",
+  "collocations_zh": "结完账 / 分开结账"
+ },
+ {
+  "chinese": "购物",
+  "pinyin": "gòuwù",
+  "mongolian": "дэлгүүр хэсэх, худалдан авалт хийх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "很多人喜欢在网上购物。",
+  "exampleMongolian": "Олон хүн онлайнаар худалдан авалт хийх дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "购物节 / 购物车"
+ },
+ {
+  "chinese": "订",
+  "pinyin": "dìng",
+  "mongolian": "захиалах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我想订一张明天去北京的火车票。",
+  "exampleMongolian": "Би маргааш Бээжин явах галт тэрэгний тийз захиалмаар байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "订票 / 订酒店"
+ },
+ {
+  "chinese": "快递",
+  "pinyin": "kuàidì",
+  "mongolian": "шуурхай хүргэлт, шуудан",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我的快递到了，现在去拿。",
+  "exampleMongolian": "Миний илгээмж ирчихлээ, одоо авахаар явлаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "寄快递 / 快递公司"
+ },
+ {
+  "chinese": "微信",
+  "pinyin": "Wēixìn",
+  "mongolian": "WeChat (Вэйшин)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我每天都用微信和朋友聊天儿。",
+  "exampleMongolian": "Би өдөр бүр WeChat-аар найзуудтайгаа чатлаж байна.",
+  "pos": "өөрийн нэр",
+  "collocations_zh": "微信支付 / 发微信"
+ },
+ {
+  "chinese": "支付宝",
+  "pinyin": "Zhīfùbǎo",
+  "mongolian": "Alipay (Алипэй)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我经常用支付宝，很方便。",
+  "exampleMongolian": "Би Alipay-г байнга ашигладаг, их тохиромжтой.",
+  "pos": "өөрийн нэр",
+  "collocations_zh": "支付宝支付 / 下载支付宝"
+ },
+ {
+  "chinese": "现金",
+  "pinyin": "xiànjīn",
+  "mongolian": "бэлэн мөнгө",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这家商店只收现金，不能扫码结账。",
+  "exampleMongolian": "Энэ дэлгүүр зөвхөн бэлэн мөнгө авдаг, QR кодоор төлж болдоггүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "用现金 / 现金支付"
+ },
+ {
+  "chinese": "网购",
+  "pinyin": "wǎnggòu",
+  "mongolian": "онлайнаар худалдаж авах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "网购不仅方便，而且便宜。",
+  "exampleMongolian": "Онлайнаар авбал амар, бас хямд.",
+  "pos": "үйл үг",
+  "collocations_zh": "经常网购 / 喜欢网购"
+ },
+ {
+  "chinese": "寄",
+  "pinyin": "jì",
+  "mongolian": "илгээх, шуудангаар явуулах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他每个月都给朋友寄一封信。",
+  "exampleMongolian": "Тэр сар бүр найздаа захиа илгээдэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "寄快递 / 寄礼物"
+ },
+ {
+  "chinese": "等",
+  "pinyin": "děng",
+  "mongolian": "гэх мэт, зэрэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "商店里有苹果、香蕉等水果。",
+  "exampleMongolian": "Дэлгүүрт алим, гадил гэх мэт жимс бий.",
+  "pos": "туслах үг",
+  "collocations_zh": "苹果、香蕉等 / 等等"
+ },
+ {
+  "chinese": "货",
+  "pinyin": "huò",
+  "mongolian": "бараа, ачаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个货三天以后就能送到。",
+  "exampleMongolian": "Энэ барааг гурван өдрийн дараа хүргэж өгнө.",
+  "pos": "нэр үг",
+  "collocations_zh": "送货 / 卖货"
+ },
+ {
+  "chinese": "甚至",
+  "pinyin": "shènzhì",
+  "mongolian": "бүр ч, бүр гэхэд",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他学习很努力，甚至周末也不休息。",
+  "exampleMongolian": "Тэр маш шаргуу сурдаг, бүр амралтын өдөр ч амардаггүй.",
+  "pos": "холбоо үг",
+  "collocations_zh": "甚至还 / 甚至连……也……"
+ },
+ {
+  "chinese": "改变",
+  "pinyin": "gǎibiàn",
+  "mongolian": "өөрчлөх, өөрчлөгдөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "手机改变了我们的生活。",
+  "exampleMongolian": "Гар утас бидний амьдралыг өөрчилсөн.",
+  "pos": "үйл үг",
+  "collocations_zh": "改变习惯 / 慢慢改变"
+ },
+ {
+  "chinese": "手指",
+  "pinyin": "shǒuzhǐ",
+  "mongolian": "хуруу",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他用手指点了一下这里。",
+  "exampleMongolian": "Тэр хуруугаараа энд нэг товшлоо.",
+  "pos": "нэр үг",
+  "collocations_zh": "动手指 / 一根手指"
+ },
+ {
+  "chinese": "乱",
+  "pinyin": "luàn",
+  "mongolian": "дураар нь, хайхрамжгүй; замбараагүй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "房间太乱了，请收拾一下。",
+  "exampleMongolian": "Өрөө хэтэрхий замбараагүй байна, жаахан цэвэрлээрэй.",
+  "pos": "дайвар үг / тэмдэг нэр",
+  "collocations_zh": "乱买 / 乱得很"
+ },
+ {
+  "chinese": "管",
+  "pinyin": "guǎn",
+  "mongolian": "хянах, хамаарах, хориглох",
+  "hskLevel": "HSK4",
+  "exampleChinese": "妈妈总是管他，不让他玩游戏。",
+  "exampleMongolian": "Ээж нь түүнийг байнга хянаж, тоглоом тоглуулдаггүй.",
+  "pos": "үйл үг",
+  "collocations_zh": "管孩子 / 不要管"
+ },
+ {
+  "chinese": "提供",
+  "pinyin": "tígōng",
+  "mongolian": "өгөх, бэлтгэж өгөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "老师给我们提供了很多学习材料。",
+  "exampleMongolian": "Багш бидэнд олон сурах материал өгсөн.",
+  "pos": "үйл үг",
+  "collocations_zh": "提供帮助 / 提供建议"
+ },
+ {
+  "chinese": "身份证",
+  "pinyin": "shēnfènzhèng",
+  "mongolian": "иргэний үнэмлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "出门旅游一定要带好身份证。",
+  "exampleMongolian": "Аялахдаа иргэний үнэмлэхээ заавал авч яв.",
+  "pos": "нэр үг",
+  "collocations_zh": "一张身份证 / 丢身份证"
+ },
+ {
+  "chinese": "个人",
+  "pinyin": "gèrén",
+  "mongolian": "хувь хүн; хувийн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "不要告诉不认识的人你的个人信息。",
+  "exampleMongolian": "Танихгүй хүнд хувийн мэдээллээ битгий хэл.",
+  "pos": "нэр үг",
+  "collocations_zh": "个人信息 / 个人的事情"
+ },
+ {
+  "chinese": "能否",
+  "pinyin": "néngfǒu",
+  "mongolian": "чадах уу үгүй юу",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你能否帮我一个忙？",
+  "exampleMongolian": "Чи надад нэг тусалж чадах уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "能否……"
+ },
+ {
+  "chinese": "保护",
+  "pinyin": "bǎohù",
+  "mongolian": "хамгаалах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们要好好保护环境。",
+  "exampleMongolian": "Бид байгаль орчноо сайн хамгаалах ёстой.",
+  "pos": "үйл үг",
+  "collocations_zh": "保护自己 / 保护小动物"
+ },
+ {
+  "chinese": "于是",
+  "pinyin": "yúshì",
+  "mongolian": "тэгээд, ингээд",
+  "hskLevel": "HSK4",
+  "exampleChinese": "下雨了，于是我们决定在家看电影。",
+  "exampleMongolian": "Бороо орсон тул бид гэртээ кино үзэхээр шийдлээ.",
+  "pos": "холбоо үг",
+  "collocations_zh": "……，于是……"
+ },
+ {
+  "chinese": "密码",
+  "pinyin": "mìmǎ",
+  "mongolian": "нууц үг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个密码不要告诉别人。",
+  "exampleMongolian": "Энэ нууц үгийг хэнд ч битгий хэл.",
+  "pos": "нэр үг",
+  "collocations_zh": "忘记密码 / 找回密码"
+ },
+ {
+  "chinese": "随便",
+  "pinyin": "suíbiàn",
+  "mongolian": "дураараа, хамаагүй; болгоомжгүй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "去不去随便，你自己决定吧。",
+  "exampleMongolian": "Явах эсэх нь чиний дур, өөрөө шийд.",
+  "pos": "тэмдэг нэр / үйл үг / холбоо үг",
+  "collocations_zh": "随便什么 / 说话很随便"
+ },
+ {
+  "chinese": "技术",
+  "pinyin": "jìshù",
+  "mongolian": "техник, технологи, ур чадвар",
+  "hskLevel": "HSK4",
+  "exampleChinese": "新技术改变了我们的生活。",
+  "exampleMongolian": "Шинэ технологи бидний амьдралыг өөрчилсөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "信息技术 / 技术水平"
+ },
+ {
+  "chinese": "法律",
+  "pinyin": "fǎlǜ",
+  "mongolian": "хууль",
+  "hskLevel": "HSK4",
+  "exampleChinese": "学习法律可以更好地保护我们自己。",
+  "exampleMongolian": "Хууль сурвал өөрсдийгөө илүү сайн хамгаалж чадна.",
+  "pos": "нэр үг",
+  "collocations_zh": "研究法律 / 法律问题"
+ },
+ {
+  "chinese": "手段",
+  "pinyin": "shǒuduàn",
+  "mongolian": "арга хэрэгсэл, арга зам",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们可以通过法律手段保护个人信息安全。",
+  "exampleMongolian": "Бид хуулийн аргаар хувийн мэдээллийн аюулгүй байдлыг хамгаалж болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "一种手段 / 法律手段"
+ },
+ {
+  "chinese": "保证",
+  "pinyin": "bǎozhèng",
+  "mongolian": "баталгаа гаргах; баталгаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我保证明天早上八点以前到学校。",
+  "exampleMongolian": "Би маргааш өглөө найман цагаас өмнө сургуульд очно гэдгээ амлаж байна.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "保证安全 / 做出保证"
+ },
+ {
+  "chinese": "网络",
+  "pinyin": "wǎngluò",
+  "mongolian": "сүлжээ, интернэт",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这里的网络不太好，我们换个地方吧。",
+  "exampleMongolian": "Энд сүлжээ муу байна, өөр газар очъё.",
+  "pos": "нэр үг",
+  "collocations_zh": "网络技术 / 网络安全"
+ }
+]

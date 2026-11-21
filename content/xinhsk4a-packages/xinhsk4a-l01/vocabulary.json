@@ -1,0 +1,402 @@
+[
+ {
+  "chinese": "签证",
+  "pinyin": "qiānzhèng",
+  "mongolian": "виз",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这是我的签证。",
+  "exampleMongolian": "Энэ миний виз.",
+  "pos": "нэр үг",
+  "collocations_zh": "办签证 / 学生签证"
+ },
+ {
+  "chinese": "入学",
+  "pinyin": "rùxué",
+  "mongolian": "сургуульд орох, элсэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "九月，弟弟就要入学了。",
+  "exampleMongolian": "Есдүгээр сард дүү маань сургуульд орно.",
+  "pos": "үйл үг",
+  "collocations_zh": "入学通知 / 入学材料"
+ },
+ {
+  "chinese": "通知",
+  "pinyin": "tōngzhī",
+  "mongolian": "мэдэгдэх; мэдэгдэл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "老师通知我们，明天不上课。",
+  "exampleMongolian": "Багш маргааш хичээл байхгүй гэж бидэнд мэдэгдсэн.",
+  "pos": "үйл үг / нэр үг",
+  "collocations_zh": "入学通知 / 收到通知"
+ },
+ {
+  "chinese": "证件",
+  "pinyin": "zhèngjiàn",
+  "mongolian": "бичиг баримт, үнэмлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我的证件在包里。",
+  "exampleMongolian": "Миний бичиг баримт цүнхэнд байгаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "带证件 / 证件和材料"
+ },
+ {
+  "chinese": "材料",
+  "pinyin": "cáiliào",
+  "mongolian": "материал, бичиг баримт",
+  "hskLevel": "HSK4",
+  "exampleChinese": "老师让我们上网找一些关于中国文化的学习材料。",
+  "exampleMongolian": "Багш бидэнд Хятадын соёлын тухай сургалтын материал интернетээс хайхыг даалгасан.",
+  "pos": "нэр үг",
+  "collocations_zh": "中文材料 / 入学材料"
+ },
+ {
+  "chinese": "证",
+  "pinyin": "zhèng",
+  "mongolian": "гэрчилгээ, үнэмлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这是我的学生证，请您看一下。",
+  "exampleMongolian": "Энэ миний оюутны үнэмлэх, та нэг харна уу.",
+  "pos": "нэр үг",
+  "collocations_zh": "学生证 / 证件"
+ },
+ {
+  "chinese": "任何",
+  "pinyin": "rènhé",
+  "mongolian": "ямар ч, дурын",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个问题很简单，任何人都能回答。",
+  "exampleMongolian": "Энэ асуулт маш хялбар, ямар ч хүн хариулж чадна.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "任何人 / 任何时候"
+ },
+ {
+  "chinese": "食堂",
+  "pinyin": "shítáng",
+  "mongolian": "хоолны газар (сургууль, байгууллагын)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们中午在食堂吃午饭。",
+  "exampleMongolian": "Бид үдэд хоолны газарт өдрийн хоол иддэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "大学食堂 / 学生食堂"
+ },
+ {
+  "chinese": "座",
+  "pinyin": "zuò",
+  "mongolian": "(уул, барилга зэрэг хөдөлгөөнгүй зүйлийн хэмжих үг)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这座山很高，我们爬了两个小时。",
+  "exampleMongolian": "Энэ уул маш өндөр, бид хоёр цаг авирсан.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "一座山 / 一座楼"
+ },
+ {
+  "chinese": "申请",
+  "pinyin": "shēnqǐng",
+  "mongolian": "өргөдөл гаргах, хүсэлт тавих",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我想申请去中国学习中文。",
+  "exampleMongolian": "Би Хятадад хятад хэл сурахаар өргөдөл гаргамаар байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "申请入学 / 申请签证"
+ },
+ {
+  "chinese": "奖学金",
+  "pinyin": "jiǎngxuéjīn",
+  "mongolian": "тэтгэлэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她学习很努力，今年获得了奖学金。",
+  "exampleMongolian": "Тэр маш хичээнгүй сурсан тул энэ жил тэтгэлэг авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "国家奖学金 / 获得奖学金"
+ },
+ {
+  "chinese": "表现",
+  "pinyin": "biǎoxiàn",
+  "mongolian": "биеэ авч явах, гүйцэтгэл үзүүлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你这次表现得很不错。",
+  "exampleMongolian": "Чи энэ удаад сайн үзүүллээ.",
+  "pos": "үйл үг",
+  "collocations_zh": "表现很好 / 工作表现"
+ },
+ {
+  "chinese": "获得",
+  "pinyin": "huòdé",
+  "mongolian": "олж авах, хүртэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "通过努力学习，他获得了很好的成绩。",
+  "exampleMongolian": "Хичээнгүй суралцсанаар тэр сайн дүн авсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "获得奖学金 / 获得成绩"
+ },
+ {
+  "chinese": "要是",
+  "pinyin": "yàoshi",
+  "mongolian": "хэрэв",
+  "hskLevel": "HSK4",
+  "exampleChinese": "要是明天不下雨，我们就去公园玩。",
+  "exampleMongolian": "Хэрэв маргааш бороо ороогүй бол бид цэцэрлэгт хүрээлэнд зугаална.",
+  "pos": "холбоос",
+  "collocations_zh": "要是……，就……"
+ },
+ {
+  "chinese": "减轻",
+  "pinyin": "jiǎnqīng",
+  "mongolian": "хөнгөрүүлэх, багасгах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "运动可以帮助人们减轻压力。",
+  "exampleMongolian": "Дасгал хөдөлгөөн хүмүүсийн дарамтыг багасгахад тусалдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "减轻压力 / 减轻经济压力"
+ },
+ {
+  "chinese": "经济",
+  "pinyin": "jīngjì",
+  "mongolian": "эдийн засаг; санхүүгийн байдал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这几年我们家经济压力比较大。",
+  "exampleMongolian": "Сүүлийн жилүүдэд манай гэрийн санхүүгийн дарамт нэлээд их.",
+  "pos": "нэр үг",
+  "collocations_zh": "经济压力 / 发展经济"
+ },
+ {
+  "chinese": "压力",
+  "pinyin": "yālì",
+  "mongolian": "дарамт, сэтгэлийн ачаалал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "压力大的时候，我喜欢听音乐。",
+  "exampleMongolian": "Дарамт ихтэй үед би хөгжим сонсох дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "有压力 / 学习压力"
+ },
+ {
+  "chinese": "加油",
+  "pinyin": "jiāyóu",
+  "mongolian": "хичээх, тууштай байх; «тэмц!» гэж дэмжих",
+  "hskLevel": "HSK4",
+  "exampleChinese": "明天要考试了，加油！",
+  "exampleMongolian": "Маргааш шалгалттай, хичээгээрэй!",
+  "pos": "үйл үг",
+  "collocations_zh": "加油！ / 为运动员加油"
+ },
+ {
+  "chinese": "随着",
+  "pinyin": "suízhe",
+  "mongolian": "…-ийн хэрээр, …-тай хамт",
+  "hskLevel": "HSK4",
+  "exampleChinese": "随着经济的发展，人们的生活越来越好了。",
+  "exampleMongolian": "Эдийн засаг хөгжихийн хэрээр хүмүүсийн амьдрал улам сайжирч байна.",
+  "pos": "угтвар үг",
+  "collocations_zh": "随着……，越来越……"
+ },
+ {
+  "chinese": "课程",
+  "pinyin": "kèchéng",
+  "mongolian": "хичээл, сургалтын хөтөлбөр",
+  "hskLevel": "HSK4",
+  "exampleChinese": "在大学里，你可以选择自己喜欢的课程。",
+  "exampleMongolian": "Их сургуульд өөрт таалагдсан хичээлээ сонгож болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "外语课程 / 大学课程"
+ },
+ {
+  "chinese": "专业",
+  "pinyin": "zhuānyè",
+  "mongolian": "мэргэжил (их сургуулийн); мэргэжлийн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我姐姐在大学里学习中文专业。",
+  "exampleMongolian": "Эгч маань их сургуульд хятад хэлний мэргэжлээр сурдаг.",
+  "pos": "нэр үг / тэмдэг нэр",
+  "collocations_zh": "中文专业 / 专业水平"
+ },
+ {
+  "chinese": "本科",
+  "pinyin": "běnkē",
+  "mongolian": "бакалаврын сургалт",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她在中国读的本科。",
+  "exampleMongolian": "Тэр Хятадад бакалаврын сургалтад суралцсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "本科课程 / 大学本科"
+ },
+ {
+  "chinese": "硕士",
+  "pinyin": "shuòshì",
+  "mongolian": "магистр",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我哥哥是一名经济学硕士。",
+  "exampleMongolian": "Ах маань эдийн засгийн магистр.",
+  "pos": "нэр үг",
+  "collocations_zh": "硕士课程 / 读硕士"
+ },
+ {
+  "chinese": "研究生",
+  "pinyin": "yánjiūshēng",
+  "mongolian": "магистрант, аспирант (бакалаврын дараах сургалт)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她打算明年考研究生，现在开始复习了。",
+  "exampleMongolian": "Тэр ирэх жил магистрын шалгалт өгөхөөр төлөвлөж, одоо давтаж эхэлсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "硕士研究生 / 考研究生"
+ },
+ {
+  "chinese": "博士",
+  "pinyin": "bóshì",
+  "mongolian": "докторын зэрэг; доктор",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他是北京大学的博士。",
+  "exampleMongolian": "Тэр Бээжингийн их сургуулийн докторын зэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "博士研究生 / 读博士"
+ },
+ {
+  "chinese": "研究",
+  "pinyin": "yánjiū",
+  "mongolian": "судлах, судалгаа хийх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我喜欢研究中国文化，我认为这很有意思。",
+  "exampleMongolian": "Би Хятадын соёл судлах дуртай, энэ их сонирхолтой гэж боддог.",
+  "pos": "үйл үг",
+  "collocations_zh": "研究方法 / 研究员"
+ },
+ {
+  "chinese": "活动",
+  "pinyin": "huódòng",
+  "mongolian": "үйл ажиллагаа; хөдөлгөөн хийх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她在学校参加了很多活动。",
+  "exampleMongolian": "Тэр сургууль дээрээ олон үйл ажиллагаанд оролцсон.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "校园活动 / 活动身体"
+ },
+ {
+  "chinese": "通过",
+  "pinyin": "tōngguò",
+  "mongolian": "…-аар дамжуулан; тэнцэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我通过听中文歌学习中文。",
+  "exampleMongolian": "Би хятад дуу сонсож хятад хэл сурдаг.",
+  "pos": "угтвар үг / үйл үг",
+  "collocations_zh": "通过努力 / 通过申请"
+ },
+ {
+  "chinese": "交流",
+  "pinyin": "jiāoliú",
+  "mongolian": "харилцах, солилцох",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我和中国朋友经常用中文交流。",
+  "exampleMongolian": "Би хятад найзуудтайгаа хятадаар байнга харилцдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "文化交流 / 交流活动"
+ },
+ {
+  "chinese": "适应",
+  "pinyin": "shìyìng",
+  "mongolian": "дасан зохицох, дасах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我刚来中国的时候不太习惯，现在已经适应了。",
+  "exampleMongolian": "Би Хятадад дөнгөж ирэхдээ сайн дасаагүй байсан, одоо дасчихлаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "适应环境 / 不适应"
+ },
+ {
+  "chinese": "将来",
+  "pinyin": "jiānglái",
+  "mongolian": "ирээдүй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "将来我们会有自己的房子的。",
+  "exampleMongolian": "Ирээдүйд бид өөрсдийн гэртэй болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "将来的工作 / 为将来"
+ },
+ {
+  "chinese": "国际",
+  "pinyin": "guójì",
+  "mongolian": "олон улсын",
+  "hskLevel": "HSK4",
+  "exampleChinese": "下个星期的国际会议，你去参加吗？",
+  "exampleMongolian": "Ирэх долоо хоногийн олон улсын чуулганд чи оролцох уу?",
+  "pos": "тэмдэг нэр / нэр үг",
+  "collocations_zh": "国际公司 / 国际关系"
+ },
+ {
+  "chinese": "当",
+  "pinyin": "dāng",
+  "mongolian": "болох, ажиллах (ямар нэг албан тушаал, мэргэжлээр)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我希望能当一名老师。",
+  "exampleMongolian": "Би багш болохыг хүсдэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "当老师 / 当医生"
+ },
+ {
+  "chinese": "教育",
+  "pinyin": "jiàoyù",
+  "mongolian": "боловсрол; сурган хүмүүжүүлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "教育对孩子来说非常重要。",
+  "exampleMongolian": "Боловсрол хүүхдэд маш чухал.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "受教育 / 教育孩子"
+ },
+ {
+  "chinese": "成为",
+  "pinyin": "chéngwéi",
+  "mongolian": "болох",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他每天努力学习，希望以后能成为一名医生。",
+  "exampleMongolian": "Тэр өдөр бүр хичээнгүй суралцаж, ирээдүйд эмч болохыг хүсдэг.",
+  "pos": "үйл үг",
+  "collocations_zh": "成为老师 / 成为朋友"
+ },
+ {
+  "chinese": "教师",
+  "pinyin": "jiàoshī",
+  "mongolian": "багш (мэргэжил)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "教师应该多关心学生。",
+  "exampleMongolian": "Багш нар оюутнуудад илүү анхаарал тавих хэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "中小学教师 / 专业教师"
+ },
+ {
+  "chinese": "贸易",
+  "pinyin": "màoyì",
+  "mongolian": "худалдаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我爸爸在一家贸易公司工作。",
+  "exampleMongolian": "Аав маань нэг худалдааны компанид ажилладаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "对外贸易 / 贸易关系"
+ },
+ {
+  "chinese": "方面",
+  "pinyin": "fāngmiàn",
+  "mongolian": "тал, чиглэл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "在历史方面，他很专业。",
+  "exampleMongolian": "Түүхийн талаар тэр маш мэргэжлийн.",
+  "pos": "нэр үг",
+  "collocations_zh": "一方面……，另一方面……"
+ },
+ {
+  "chinese": "知识",
+  "pinyin": "zhīshi",
+  "mongolian": "мэдлэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这次我们学到了很多关于动物的知识。",
+  "exampleMongolian": "Энэ удаа бид амьтны тухай олон мэдлэг олж авлаа.",
+  "pos": "нэр үг",
+  "collocations_zh": "专业知识 / 学习知识"
+ },
+ {
+  "chinese": "另",
+  "pinyin": "lìng",
+  "mongolian": "өөр, нөгөө",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这条路不好走，我们走另一条吧。",
+  "exampleMongolian": "Энэ зам муу, нөгөө замаар явъя.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "另一本书 / 另一个人"
+ }
+]

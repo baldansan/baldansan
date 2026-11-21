@@ -1,0 +1,392 @@
+[
+ {
+  "chinese": "打扰",
+  "pinyin": "dǎrǎo",
+  "mongolian": "саад болох, түгшээх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他正在认真复习，我们别去打扰他。",
+  "exampleMongolian": "Тэр сайн давтаж байна, бид түүнд битгий саад болъё.",
+  "pos": "үйл үг",
+  "collocations_zh": "打扰别人 / 总是打扰"
+ },
+ {
+  "chinese": "市场",
+  "pinyin": "shìchǎng",
+  "mongolian": "зах зээл; зах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个市场很大，东西很多。",
+  "exampleMongolian": "Энэ зах том, юм их байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "市场环境 / 菜市场"
+ },
+ {
+  "chinese": "调查",
+  "pinyin": "diàochá",
+  "mongolian": "судлах, судалгаа хийх; судалгаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "关于出行方式，我们做了一个简单的调查。",
+  "exampleMongolian": "Зорчих аргын талаар бид энгийн судалгаа хийсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "市场调查 / 调查情况"
+ },
+ {
+  "chinese": "计划",
+  "pinyin": "jìhuà",
+  "mongolian": "төлөвлөгөө; төлөвлөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我计划下个月去北京旅游。",
+  "exampleMongolian": "Би дараа сар Бээжин рүү аялахаар төлөвлөж байна.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "改变计划 / 工作计划"
+ },
+ {
+  "chinese": "内容",
+  "pinyin": "nèiróng",
+  "mongolian": "агуулга",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这本书的内容很有意思，我看了两遍。",
+  "exampleMongolian": "Энэ номын агуулга их сонирхолтой, би хоёр удаа уншсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "课本内容 / 简单的内容"
+ },
+ {
+  "chinese": "改",
+  "pinyin": "gǎi",
+  "mongolian": "өөрчлөх, засах, солих",
+  "hskLevel": "HSK4",
+  "exampleChinese": "为了保护个人信息，他把密码改了。",
+  "exampleMongolian": "Хувийн мэдээллээ хамгаалахын тулд тэр нууц үгээ солилоо.",
+  "pos": "үйл үг",
+  "collocations_zh": "改内容 / 改成"
+ },
+ {
+  "chinese": "细心",
+  "pinyin": "xìxīn",
+  "mongolian": "нямбай, болгоомжтой",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她学习很细心，每次做完题都会认真检查一遍。",
+  "exampleMongolian": "Тэр сурахдаа нямбай, даалгавраа хийчихээд бүр нэг сайн шалгадаг.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "细心照顾 / 不够细心"
+ },
+ {
+  "chinese": "客户",
+  "pinyin": "kèhù",
+  "mongolian": "үйлчлүүлэгч, харилцагч",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这家公司服务很好，所以有很多客户。",
+  "exampleMongolian": "Энэ компани үйлчилгээ сайтай болохоор үйлчлүүлэгч их.",
+  "pos": "нэр үг",
+  "collocations_zh": "联系客户 / 新客户"
+ },
+ {
+  "chinese": "真正",
+  "pinyin": "zhēnzhèng",
+  "mongolian": "жинхэнэ; үнэхээр",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他想了解客户真正的需要。",
+  "exampleMongolian": "Тэр үйлчлүүлэгчийн жинхэнэ хэрэгцээг мэдэхийг хүсэж байна.",
+  "pos": "тэмдэг нэр / дайвар үг",
+  "collocations_zh": "真正的朋友 / 真正了解"
+ },
+ {
+  "chinese": "想法",
+  "pinyin": "xiǎngfǎ",
+  "mongolian": "бодол, санаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我有一个想法，可能可以解决这个问题。",
+  "exampleMongolian": "Надад нэг санаа байна, энэ асуудлыг шийдэж магадгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "改变想法 / 奇怪的想法"
+ },
+ {
+  "chinese": "任务",
+  "pinyin": "rènwù",
+  "mongolian": "даалгавар, үүрэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个任务需要两个人一起做。",
+  "exampleMongolian": "Энэ даалгаврыг хоёр хүн хамтарч хийх хэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "完成任务 / 重要任务"
+ },
+ {
+  "chinese": "及时",
+  "pinyin": "jíshí",
+  "mongolian": "цаг тухайд нь, шуурхай; цаг үеэ олсон",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天要下雨，你记得及时把衣服收进来。",
+  "exampleMongolian": "Өнөөдөр бороо орно, цагт нь хувцсаа оруулж ирэхээ мартуузай.",
+  "pos": "дайвар үг / тэмдэг нэр",
+  "collocations_zh": "及时解决 / 及时的建议"
+ },
+ {
+  "chinese": "出差",
+  "pinyin": "chūchāi",
+  "mongolian": "томилолтоор явах, ажлаар явах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他经常出差，很少在家。",
+  "exampleMongolian": "Тэр байнга томилолтоор явдаг, гэртээ ховор байдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "出差安排 / 出了一个月的差"
+ },
+ {
+  "chinese": "经验",
+  "pinyin": "jīngyàn",
+  "mongolian": "туршлага",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我没有这方面的经验。",
+  "exampleMongolian": "Надад энэ чиглэлийн туршлага алга.",
+  "pos": "нэр үг",
+  "collocations_zh": "工作经验 / 交流经验"
+ },
+ {
+  "chinese": "采访",
+  "pinyin": "cǎifǎng",
+  "mongolian": "ярилцлага авах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "明天我要去采访一个客户。",
+  "exampleMongolian": "Маргааш би нэг үйлчлүүлэгчээс ярилцлага авахаар явна.",
+  "pos": "үйл үг",
+  "collocations_zh": "采访学生 / 采访内容"
+ },
+ {
+  "chinese": "产品",
+  "pinyin": "chǎnpǐn",
+  "mongolian": "бүтээгдэхүүн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这家公司的新产品很受年轻人欢迎。",
+  "exampleMongolian": "Энэ компанийн шинэ бүтээгдэхүүн залуучуудад их таалагддаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "购买产品 / 产品介绍"
+ },
+ {
+  "chinese": "看法",
+  "pinyin": "kànfǎ",
+  "mongolian": "үзэл бодол, байр суурь",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我想听听你对这个电影的看法。",
+  "exampleMongolian": "Би чиний энэ киноны тухай үзэл бодлыг сонсмоор байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "对……的看法 / 看法不同"
+ },
+ {
+  "chinese": "提前",
+  "pinyin": "tíqián",
+  "mongolian": "урьдчилан, эртлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "为了不迟到，我明天要提前半个小时起床。",
+  "exampleMongolian": "Хоцрохгүйн тулд би маргааш хагас цагийн өмнө босно.",
+  "pos": "үйл үг",
+  "collocations_zh": "提前通知 / 提前一周"
+ },
+ {
+  "chinese": "便于",
+  "pinyin": "biànyú",
+  "mongolian": "… -д дөхөм, … -д ээлтэй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请把信息写清楚，便于我们及时把快递寄给您。",
+  "exampleMongolian": "Мэдээллээ тод бичиж өгнө үү, бид илгээмжийг цагт нь явуулахад дөхөм болно.",
+  "pos": "үйл үг",
+  "collocations_zh": "……，便于……"
+ },
+ {
+  "chinese": "既然",
+  "pinyin": "jìrán",
+  "mongolian": "… юм бол, … болохоор",
+  "hskLevel": "HSK4",
+  "exampleChinese": "既然你累了，就早点儿休息吧。",
+  "exampleMongolian": "Чи ядарсан юм бол эрт амраарай.",
+  "pos": "холбоос үг",
+  "collocations_zh": "既然……，就……"
+ },
+ {
+  "chinese": "谈",
+  "pinyin": "tán",
+  "mongolian": "ярих, хэлэлцэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他们正在办公室里谈工作的事情。",
+  "exampleMongolian": "Тэд оффис дотор ажлын асуудлаар ярилцаж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "谈想法 / 谈清楚"
+ },
+ {
+  "chinese": "笔",
+  "pinyin": "bǐ",
+  "mongolian": "(мөнгө, гүйлгээ, наймааны) тоон нэгж",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他获得了一大笔钱。",
+  "exampleMongolian": "Тэр нэлээд их мөнгө олсон.",
+  "pos": "хэмжигдэхүүн үг",
+  "collocations_zh": "一笔生意 / 一笔钱"
+ },
+ {
+  "chinese": "生意",
+  "pinyin": "shēngyi",
+  "mongolian": "бизнес, наймаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这家公司的生意最近越来越好了。",
+  "exampleMongolian": "Энэ компанийн бизнес сүүлийн үед улам сайжирч байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "做生意 / 一笔生意"
+ },
+ {
+  "chinese": "困难",
+  "pinyin": "kùnnan",
+  "mongolian": "бэрхшээл; хэцүү",
+  "hskLevel": "HSK4",
+  "exampleChinese": "遇到困难的时候，我会请朋友帮忙。",
+  "exampleMongolian": "Бэрхшээл тулгарахад би найзаасаа тусламж гуйдаг.",
+  "pos": "нэр үг / тэмдэг нэр",
+  "collocations_zh": "解决困难 / 经济困难"
+ },
+ {
+  "chinese": "优点",
+  "pinyin": "yōudiǎn",
+  "mongolian": "давуу тал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他最大的优点是做事特别认真。",
+  "exampleMongolian": "Түүний хамгийн том давуу тал нь ажилдаа маш нямбай байдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "产品的优点 / 优点很多"
+ },
+ {
+  "chinese": "缺点",
+  "pinyin": "quēdiǎn",
+  "mongolian": "дутагдал, сул тал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "每个人都有自己的优点和缺点。",
+  "exampleMongolian": "Хүн бүр өөрийн давуу, сул талтай.",
+  "pos": "нэр үг",
+  "collocations_zh": "发现缺点 / 主要的缺点"
+ },
+ {
+  "chinese": "实际",
+  "pinyin": "shíjì",
+  "mongolian": "бодит; бодит байдал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "做计划的时候，我们应该从实际出发。",
+  "exampleMongolian": "Төлөвлөгөө гаргахдаа бид бодит байдлаас эхлэх ёстой.",
+  "pos": "тэмдэг нэр / нэр үг",
+  "collocations_zh": "实际情况 / 联系实际"
+ },
+ {
+  "chinese": "效果",
+  "pinyin": "xiàoguǒ",
+  "mongolian": "үр дүн, үр нөлөө",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个读书计划的实际效果很好。",
+  "exampleMongolian": "Энэ уншлагын төлөвлөгөөний бодит үр дүн сайн байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "达到效果 / 理想的效果"
+ },
+ {
+  "chinese": "点",
+  "pinyin": "diǎn",
+  "mongolian": "гол зүйл, цэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们要记住这几个点，再和客户谈生意。",
+  "exampleMongolian": "Бид эдгээр гол зүйлийг санаж байж үйлчлүүлэгчтэй наймаа хэлэлцье.",
+  "pos": "нэр үг",
+  "collocations_zh": "知识点 / 考点"
+ },
+ {
+  "chinese": "一下",
+  "pinyin": "yíxià",
+  "mongolian": "гэнэт, нэг дор",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他这么一说，我一下就想起来了。",
+  "exampleMongolian": "Тэр ингэж хэлэхэд би гэнэт санаж орлоо.",
+  "pos": "дайвар үг",
+  "collocations_zh": "一下就…… / 一下子"
+ },
+ {
+  "chinese": "份",
+  "pinyin": "fèn",
+  "mongolian": "(хувь, багц, хэсгийг тоолох үг)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请再给我一份菜单，谢谢。",
+  "exampleMongolian": "Надад дахиад нэг цэс өгнө үү, баярлалаа.",
+  "pos": "хэмжигдэхүүн үг",
+  "collocations_zh": "一份早餐 / 一份材料"
+ },
+ {
+  "chinese": "积累",
+  "pinyin": "jīlěi",
+  "mongolian": "хуримтлуулах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他从工作中积累了很多经验。",
+  "exampleMongolian": "Тэр ажлаасаа маш их туршлага хуримтлуулсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "积累知识 / 慢慢积累"
+ },
+ {
+  "chinese": "使",
+  "pinyin": "shǐ",
+  "mongolian": "болгох, хүргэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个好消息使大家都很高兴。",
+  "exampleMongolian": "Энэ сайн мэдээ бүгдийг баярлуулсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "使人高兴 / 使……变得……"
+ },
+ {
+  "chinese": "进入",
+  "pinyin": "jìnrù",
+  "mongolian": "орох, нэвтрэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他打开电脑，进入一个中文学习网站。",
+  "exampleMongolian": "Тэр компьютерээ нээгээд хятад хэл сурах вэбсайт руу орлоо.",
+  "pos": "үйл үг",
+  "collocations_zh": "进入大学 / 顺利进入"
+ },
+ {
+  "chinese": "社会",
+  "pinyin": "shèhuì",
+  "mongolian": "нийгэм",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他刚毕业，社会经验还很少。",
+  "exampleMongolian": "Тэр дөнгөж төгссөн, нийгмийн туршлага бага.",
+  "pos": "нэр үг",
+  "collocations_zh": "了解社会 / 社会生活"
+ },
+ {
+  "chinese": "管理",
+  "pinyin": "guǎnlǐ",
+  "mongolian": "удирдах, зохион байгуулах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "班长帮助老师管理班级。",
+  "exampleMongolian": "Ангийн дарга багшид ангиа удирдахад тусалдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "管理时间 / 管理公司"
+ },
+ {
+  "chinese": "基础",
+  "pinyin": "jīchǔ",
+  "mongolian": "суурь",
+  "hskLevel": "HSK4",
+  "exampleChinese": "要想学好中文，一定要打好基础。",
+  "exampleMongolian": "Хятад хэлийг сайн сурахыг хүсвэл заавал суурийг сайн тавих хэрэгтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "学习基础 / 基础教育"
+ },
+ {
+  "chinese": "能力",
+  "pinyin": "nénglì",
+  "mongolian": "чадвар",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我相信你有能力完成这个任务。",
+  "exampleMongolian": "Чамайг энэ даалгаврыг гүйцэтгэх чадвартай гэдэгт би итгэж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "专业能力 / 解决问题的能力"
+ },
+ {
+  "chinese": "今后",
+  "pinyin": "jīnhòu",
+  "mongolian": "цаашид, одооноос хойш",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今后，我要更认真地学习中文。",
+  "exampleMongolian": "Цаашид би хятад хэлийг илүү шимтэн сурна.",
+  "pos": "нэр үг",
+  "collocations_zh": "今后的发展 / 今后的工作"
+ }
+]

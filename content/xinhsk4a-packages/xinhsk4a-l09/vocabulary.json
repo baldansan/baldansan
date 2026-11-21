@@ -1,0 +1,402 @@
+[
+ {
+  "chinese": "祝",
+  "pinyin": "zhù",
+  "mongolian": "ерөөх, хүсэх (сайн сайхныг)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "祝你生日快乐，希望你每天都开心。",
+  "exampleMongolian": "Төрсөн өдрийн мэнд хүргэе, өдөр бүр баяртай байгаарай.",
+  "pos": "үйл үг",
+  "collocations_zh": "祝大家假期愉快 / 祝你幸运"
+ },
+ {
+  "chinese": "巧克力",
+  "pinyin": "qiǎokèlì",
+  "mongolian": "шоколад",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我最喜欢吃巧克力，每天都要吃一块。",
+  "exampleMongolian": "Би шоколад хамгийн их иддэг, өдөр бүр нэг ширхэг иддэг.",
+  "pos": "нэр үг",
+  "collocations_zh": "一块巧克力 / 巧克力蛋糕"
+ },
+ {
+  "chinese": "感动",
+  "pinyin": "gǎndòng",
+  "mongolian": "сэтгэл хөдлөх; сэтгэл хөдөлгөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他生病的时候，朋友们都来看他，他觉得很感动。",
+  "exampleMongolian": "Тэр өвдөхөд найзууд нь бүгд очиж үзсэн, тэр маш их сэтгэл хөдөллөө.",
+  "pos": "тэмдэг нэр / үйл үг",
+  "collocations_zh": "深受感动 / 非常感动"
+ },
+ {
+  "chinese": "浪漫",
+  "pinyin": "làngmàn",
+  "mongolian": "романтик, уянгалаг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他们在海边听音乐，觉得非常浪漫。",
+  "exampleMongolian": "Тэд далайн эрэг дээр хөгжим сонсоод, их романтик санагдсан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "非常浪漫 / 浪漫的爱情"
+ },
+ {
+  "chinese": "幽默",
+  "pinyin": "yōumò",
+  "mongolian": "хошин, хөгжилтэй",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我喜欢和幽默的人做朋友。",
+  "exampleMongolian": "Би хошин хүнтэй найзлах дуртай.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "幽默的故事 / 幽默的方式"
+ },
+ {
+  "chinese": "耐心",
+  "pinyin": "nàixīn",
+  "mongolian": "тэвчээртэй; тэвчээр",
+  "hskLevel": "HSK4",
+  "exampleChinese": "学习一门外语要有耐心，不能太着急。",
+  "exampleMongolian": "Гадаад хэл сурахад тэвчээртэй байх хэрэгтэй, хэт яарч болохгүй.",
+  "pos": "тэмдэг нэр / нэр үг",
+  "collocations_zh": "耐心帮助 / 耐心的医生"
+ },
+ {
+  "chinese": "吸引",
+  "pinyin": "xīyǐn",
+  "mongolian": "татах, сонирхол татах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这家饭馆的菜很好吃，吸引了很多客人。",
+  "exampleMongolian": "Энэ ресторантын хоол амттай тул олон зочин татсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "吸引别人的注意 / 深深吸引"
+ },
+ {
+  "chinese": "当时",
+  "pinyin": "dāngshí",
+  "mongolian": "тэр үед, тухайн цагт",
+  "hskLevel": "HSK4",
+  "exampleChinese": "当时我正在图书馆看书，没有听到你的电话。",
+  "exampleMongolian": "Тэр үед би номын санд ном уншиж байсан, чиний дуудлагыг сонсоогүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "当时的情况 / 当时我在上课"
+ },
+ {
+  "chinese": "错过",
+  "pinyin": "cuòguò",
+  "mongolian": "алдах, хоцрох (боломж, тээвэр)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她起晚了，错过了早上的飞机。",
+  "exampleMongolian": "Тэр хожуу босоод өглөөний онгоцонд хоцорсон.",
+  "pos": "үйл үг",
+  "collocations_zh": "错过机会 / 不小心错过"
+ },
+ {
+  "chinese": "幸运",
+  "pinyin": "xìngyùn",
+  "mongolian": "аз талтай; аз",
+  "hskLevel": "HSK4",
+  "exampleChinese": "能认识你这样的好朋友，真是我的幸运。",
+  "exampleMongolian": "Чам шиг сайн найзтай танилцаж чадсан нь миний аз юм.",
+  "pos": "тэмдэг нэр / нэр үг",
+  "collocations_zh": "非常幸运 / 带来幸运"
+ },
+ {
+  "chinese": "幸福",
+  "pinyin": "xìngfú",
+  "mongolian": "аз жаргалтай; аз жаргал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们一家人在一起吃饭，我觉得很幸福。",
+  "exampleMongolian": "Бид бүх гэр бүлээрээ хамт хоол идэхэд би маш аз жаргалтай санагддаг.",
+  "pos": "тэмдэг нэр / нэр үг",
+  "collocations_zh": "幸福的生活 / 获得幸福"
+ },
+ {
+  "chinese": "尽管",
+  "pinyin": "jǐnguǎn",
+  "mongolian": "хэдий … ч, … байсан ч",
+  "hskLevel": "HSK4",
+  "exampleChinese": "尽管他很忙，他还是会每天给妈妈打电话。",
+  "exampleMongolian": "Тэр хэдий завгүй ч өдөр бүр ээждээ утсаар ярьдаг.",
+  "pos": "холбоос үг",
+  "collocations_zh": "尽管……，但是/可是……"
+ },
+ {
+  "chinese": "性格",
+  "pinyin": "xìnggé",
+  "mongolian": "зан чанар, зан араншин",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我妹妹的性格特别好，大家都喜欢她。",
+  "exampleMongolian": "Миний дүүгийн зан чанар их сайн, бүгд түүнд дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "改变性格 / 性格缺点"
+ },
+ {
+  "chinese": "共同",
+  "pinyin": "gòngtóng",
+  "mongolian": "нийтлэг, хамтын",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他们有很多共同的爱好。",
+  "exampleMongolian": "Тэдэнд олон нийтлэг хобби бий.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "共同语言 / 共同点"
+ },
+ {
+  "chinese": "责任",
+  "pinyin": "zérèn",
+  "mongolian": "хариуцлага",
+  "hskLevel": "HSK4",
+  "exampleChinese": "保护环境是每个人的责任。",
+  "exampleMongolian": "Байгаль орчноо хамгаалах нь хүн бүрийн үүрэг хариуцлага.",
+  "pos": "нэр үг",
+  "collocations_zh": "负责任 / 一份责任"
+ },
+ {
+  "chinese": "相互",
+  "pinyin": "xiānghù",
+  "mongolian": "бие биедээ, харилцан",
+  "hskLevel": "HSK4",
+  "exampleChinese": "同学之间要相互帮助。",
+  "exampleMongolian": "Ангийнхан бие биедээ туслалцах хэрэгтэй.",
+  "pos": "дайвар үг",
+  "collocations_zh": "相互影响 / 相互关系"
+ },
+ {
+  "chinese": "理解",
+  "pinyin": "lǐjiě",
+  "mongolian": "ойлгох, ойлголцох",
+  "hskLevel": "HSK4",
+  "exampleChinese": "虽然我们想法不同，但我理解你的选择。",
+  "exampleMongolian": "Бидний бодол өөр ч би чиний сонголтыг ойлгож байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "阅读理解 / 相互理解"
+ },
+ {
+  "chinese": "支持",
+  "pinyin": "zhīchí",
+  "mongolian": "дэмжих",
+  "hskLevel": "HSK4",
+  "exampleChinese": "谢谢你支持我的决定，我真的很高兴。",
+  "exampleMongolian": "Миний шийдвэрийг дэмжсэнд баярлалаа, би үнэхээр баяртай байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "感谢支持 / 在……的支持下"
+ },
+ {
+  "chinese": "印象",
+  "pinyin": "yìnxiàng",
+  "mongolian": "сэтгэгдэл, төсөөлөл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我第一次来北京，对这个城市印象很好。",
+  "exampleMongolian": "Би Бээжинд анх удаа ирсэн, энэ хотод сэтгэгдэл маш сайн.",
+  "pos": "нэр үг",
+  "collocations_zh": "第一印象 / 好印象"
+ },
+ {
+  "chinese": "实在",
+  "pinyin": "shízài",
+  "mongolian": "шударга, үнэнч; үнэхээр",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他这个人很实在。",
+  "exampleMongolian": "Тэр хүн их шулуун шударга.",
+  "pos": "тэмдэг нэр / дайвар үг",
+  "collocations_zh": "做事实在 / 实在漂亮"
+ },
+ {
+  "chinese": "阳光",
+  "pinyin": "yángguāng",
+  "mongolian": "нарлаг, хөгжилтэй; нарны гэрэл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她是个很阳光的女孩儿，性格特别好。",
+  "exampleMongolian": "Тэр их нарлаг, цээж нээлттэй охин, зан чанар нь маш сайн.",
+  "pos": "тэмдэг нэр / нэр үг",
+  "collocations_zh": "性格阳光 / 在阳光下"
+ },
+ {
+  "chinese": "负责",
+  "pinyin": "fùzé",
+  "mongolian": "хариуцлагатай; хариуцах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她是一位很负责的老师。",
+  "exampleMongolian": "Тэр бол их хариуцлагатай багш.",
+  "pos": "тэмдэг нэр / үйл үг",
+  "collocations_zh": "负责的医生 / 对……负责"
+ },
+ {
+  "chinese": "积极",
+  "pinyin": "jījí",
+  "mongolian": "идэвхтэй, санаачлагатай",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他学习很积极，每天都认真完成作业。",
+  "exampleMongolian": "Тэр хичээлдээ их идэвхтэй, өдөр бүр даалгавраа сайн хийдэг.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "积极报名 / 非常积极"
+ },
+ {
+  "chinese": "此",
+  "pinyin": "cǐ",
+  "mongolian": "энэ (бичгийн хэлэнд)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "此处的风景非常美丽。",
+  "exampleMongolian": "Энэ газрын байгаль үзэсгэлэнтэй.",
+  "pos": "төлөөний үг",
+  "collocations_zh": "此人 / 在此"
+ },
+ {
+  "chinese": "从此",
+  "pinyin": "cóngcǐ",
+  "mongolian": "түүнээс хойш, тэр цагаас",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我去年开始学中文，从此就喜欢上了这门语言。",
+  "exampleMongolian": "Би өнгөрсөн жил хятад хэл сурч эхэлсэн, тэр цагаас энэ хэлэнд дурласан.",
+  "pos": "дайвар үг",
+  "collocations_zh": "从此以后"
+ },
+ {
+  "chinese": "产生",
+  "pinyin": "chǎnshēng",
+  "mongolian": "үүсэх, төрөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "学习中文让我对中国文化产生了很大的兴趣。",
+  "exampleMongolian": "Хятад хэл сурснаар би Хятадын соёлд маш их сонирхолтой болсон.",
+  "pos": "үйл үг",
+  "collocations_zh": "产生友情 / 产生影响"
+ },
+ {
+  "chinese": "爱情",
+  "pinyin": "àiqíng",
+  "mongolian": "хайр дурлал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他们的爱情故事感动了很多人。",
+  "exampleMongolian": "Тэдний хайрын түүх олон хүний сэтгэлийг хөдөлгөсөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "产生爱情 / 浪漫的爱情"
+ },
+ {
+  "chinese": "间",
+  "pinyin": "jiān",
+  "mongolian": "хоорондох; дунд",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他们夫妻间的感情很好。",
+  "exampleMongolian": "Тэдний эхнэр нөхрийн харилцаа маш сайн.",
+  "pos": "нэр үг",
+  "collocations_zh": "同学间 / 同事间"
+ },
+ {
+  "chinese": "友情",
+  "pinyin": "yǒuqíng",
+  "mongolian": "нөхөрлөл, найзын харилцаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们从小一起长大，有很深的友情。",
+  "exampleMongolian": "Бид багаасаа хамт өссөн, маш гүн нөхөрлөлтэй.",
+  "pos": "нэр үг",
+  "collocations_zh": "真正的友情 / 一段友情"
+ },
+ {
+  "chinese": "美好",
+  "pinyin": "měihǎo",
+  "mongolian": "сайхан, гайхалтай",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天天气很好，真是个美好的日子。",
+  "exampleMongolian": "Өнөөдөр цаг агаар сайхан, үнэхээр сайхан өдөр байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "美好的生活 / 美好的日子"
+ },
+ {
+  "chinese": "人生",
+  "pinyin": "rénshēng",
+  "mongolian": "амьдрал, хүний амьдрал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "读书和学习让我的人生更精彩。",
+  "exampleMongolian": "Ном унших, сурах нь миний амьдралыг илүү өнгөлөг болгодог.",
+  "pos": "нэр үг",
+  "collocations_zh": "幸福的人生 / 人生选择"
+ },
+ {
+  "chinese": "精彩",
+  "pinyin": "jīngcǎi",
+  "mongolian": "гайхалтай, содон сайхан",
+  "hskLevel": "HSK4",
+  "exampleChinese": "晚会上同学们的表演很精彩，大家都很喜欢。",
+  "exampleMongolian": "Үдэшлэг дээр ангийнхны үзүүлбэр гайхалтай байсан, бүгдэд таалагдсан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "精彩的表演 / 十分精彩"
+ },
+ {
+  "chinese": "感情",
+  "pinyin": "gǎnqíng",
+  "mongolian": "сэтгэл, үйл сэтгэл, харилцаа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他们在一起很多年了，感情非常好。",
+  "exampleMongolian": "Тэд хамт олон жил болсон, харилцаа нь маш сайн.",
+  "pos": "нэр үг",
+  "collocations_zh": "感情很好 / 一段感情"
+ },
+ {
+  "chinese": "深",
+  "pinyin": "shēn",
+  "mongolian": "гүн; (харилцаа) ойр, гүн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我和他从小关系就很好，感情很深。",
+  "exampleMongolian": "Би түүнтэй багаасаа сайн харилцаатай, сэтгэл нь гүн.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "感情很深 / 很深的水"
+ },
+ {
+  "chinese": "经营",
+  "pinyin": "jīngyíng",
+  "mongolian": "удирдах, бүтээн байгуулах, арчлах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这家店她已经经营多年了。",
+  "exampleMongolian": "Энэ дэлгүүрийг тэр олон жил ажиллуулж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "经营饭店 / 经营得很好"
+ },
+ {
+  "chinese": "对方",
+  "pinyin": "duìfāng",
+  "mongolian": "нөгөө тал, нөгөө хүн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "如果不同意对方的想法，可以好好说出来。",
+  "exampleMongolian": "Нөгөө хүний санааг дэмжихгүй бол чөлөөтэй ярьж болно.",
+  "pos": "нэр үг",
+  "collocations_zh": "支持对方 / 对方的地址"
+ },
+ {
+  "chinese": "感受",
+  "pinyin": "gǎnshòu",
+  "mongolian": "мэдрэмж; мэдрэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "读完这本书，你有什么感受？",
+  "exampleMongolian": "Энэ номыг уншаад чи ямар мэдрэмж төрсөн бэ?",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "美好的感受 / 感受生活"
+ },
+ {
+  "chinese": "尤其",
+  "pinyin": "yóuqí",
+  "mongolian": "ялангуяа",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我喜欢运动，尤其喜欢打篮球。",
+  "exampleMongolian": "Би спортод дуртай, ялангуяа сагсан бөмбөг тоглох дуртай.",
+  "pos": "дайвар үг",
+  "collocations_zh": "尤其是 / 尤其喜欢"
+ },
+ {
+  "chinese": "日子",
+  "pinyin": "rìzi",
+  "mongolian": "өдөр; амьдрал, өдөр хоног",
+  "hskLevel": "HSK4",
+  "exampleChinese": "周末和家人一起吃饭，这样的日子很幸福。",
+  "exampleMongolian": "Амралтын өдөр гэр бүлтэйгээ хамт хоол идэх ийм өдрүүд маш аз жаргалтай.",
+  "pos": "нэр үг",
+  "collocations_zh": "日子越过越好 / 美好的日子"
+ },
+ {
+  "chinese": "从来",
+  "pinyin": "cónglái",
+  "mongolian": "хэзээ ч, урьд өмнөөс хойш",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我从来不吃辣的，所以点菜时都选不辣的。",
+  "exampleMongolian": "Би хэзээ ч халуун ногоотой юм иддэггүй тул хоол захиалахдаа халуун ногоогүйг сонгодог.",
+  "pos": "дайвар үг",
+  "collocations_zh": "从来没 / 从来不"
+ }
+]

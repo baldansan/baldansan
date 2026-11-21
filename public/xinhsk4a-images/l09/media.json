@@ -1,0 +1,60 @@
+{
+ "images": [
+  {
+   "id": "hero",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-hero.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-hero.webp",
+   "title": "9-р хичээл",
+   "role": "hero",
+   "section": "teacher-intro"
+  },
+  {
+   "id": "l09-w1",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w1.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w1.webp",
+   "title": "浪漫 làngmàn — романтик",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l09-w2",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w2.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w2.webp",
+   "title": "人生 rénshēng — хүний амьдрал",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l09-w3",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w3.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w3.webp",
+   "title": "巧克力 qiǎokèlì — шоколад",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l09-w4",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w4.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w4.webp",
+   "title": "支持 zhīchí — дэмжих",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l09-w5",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w5.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w5.webp",
+   "title": "耐心 nàixīn — тэвчээр",
+   "role": "illustration",
+   "section": "warmup"
+  },
+  {
+   "id": "l09-w6",
+   "file": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w6.webp",
+   "url": "https://surtsgaay.buunduu.mn/xinhsk4a-images/l09/l09-w6.webp",
+   "title": "祝 zhù — ерөөх",
+   "role": "illustration",
+   "section": "warmup"
+  }
+ ]
+}

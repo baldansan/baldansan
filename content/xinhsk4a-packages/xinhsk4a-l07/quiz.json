@@ -1,0 +1,477 @@
+[
+ {
+  "type": "cloze",
+  "question": "不好意思，________一下，请问去地铁站怎么走？",
+  "options": [
+   "调查",
+   "改",
+   "谈",
+   "打扰"
+  ],
+  "correct_answer": "打扰",
+  "explanation": "«Түр саад болъё» — 打扰一下.",
+  "order_index": 1,
+  "id": "xinhsk4a-l07-q01",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这个________很大，菜、水果、衣服都有。",
+  "options": [
+   "任务",
+   "想法",
+   "市场",
+   "内容"
+  ],
+  "correct_answer": "市场",
+  "explanation": "«Зах» — 市场.",
+  "order_index": 2,
+  "id": "xinhsk4a-l07-q02",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "老师在班里做了一个关于学习方法的________。",
+  "options": [
+   "经验",
+   "调查",
+   "计划",
+   "产品"
+  ],
+  "correct_answer": "调查",
+  "explanation": "«Судалгаа хийх» — 做调查.",
+  "order_index": 3,
+  "id": "xinhsk4a-l07-q03",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "这本书的________很有意思，我看了两遍。",
+  "options": [
+   "内容",
+   "客户",
+   "优点",
+   "效果"
+  ],
+  "correct_answer": "内容",
+  "explanation": "«Номын агуулга» — 书的内容.",
+  "order_index": 4,
+  "id": "xinhsk4a-l07-q04",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "他做事很________，从来不会出错。",
+  "options": [
+   "真正",
+   "及时",
+   "困难",
+   "细心"
+  ],
+  "correct_answer": "细心",
+  "explanation": "«Нямбай» — 做事细心.",
+  "order_index": 5,
+  "id": "xinhsk4a-l07-q05",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "cloze",
+  "question": "我想听听你对这件事的________。",
+  "options": [
+   "缺点",
+   "基础",
+   "看法",
+   "生意"
+  ],
+  "correct_answer": "看法",
+  "explanation": "«… -ийн талаарх үзэл бодол» — 对……的看法.",
+  "order_index": 6,
+  "id": "xinhsk4a-l07-q06",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "明天要早起，我今晚得________准备好行李。",
+  "options": [
+   "既然",
+   "提前",
+   "一下",
+   "今后"
+  ],
+  "correct_answer": "提前",
+  "explanation": "«Урьдчилан бэлдэх» — 提前准备.",
+  "order_index": 7,
+  "id": "xinhsk4a-l07-q07",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "他在这方面很有________，你可以问问他。",
+  "options": [
+   "经验",
+   "份",
+   "点",
+   "笔"
+  ],
+  "correct_answer": "经验",
+  "explanation": "«Туршлагатай» — 很有经验.",
+  "order_index": 8,
+  "id": "xinhsk4a-l07-q08",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "这家公司的________越来越好了，每年都有新客户。",
+  "options": [
+   "社会",
+   "管理",
+   "能力",
+   "生意"
+  ],
+  "correct_answer": "生意",
+  "explanation": "«Бизнес сайжрах» — 生意越来越好.",
+  "order_index": 9,
+  "id": "xinhsk4a-l07-q09",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "cloze",
+  "question": "读书可以帮我们________更多生词。",
+  "options": [
+   "使",
+   "谈",
+   "积累",
+   "进入"
+  ],
+  "correct_answer": "积累",
+  "explanation": "«Хуримтлуулах» — 积累生词.",
+  "order_index": 10,
+  "id": "xinhsk4a-l07-q10",
+  "skillTags": [
+   "vocabulary",
+   "xinhsk4a-l07-words"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«在内容方面，您觉得有需要改的吗？» гэдэг юу гэсэн үг вэ?",
+  "options": [
+   "Агуулга сайн байна.",
+   "Агуулгын талаар, танд засах хэрэгтэй зүйл байна уу?",
+   "Агуулга хаана байна вэ?",
+   "Та агуулгыг засчихсан уу?"
+  ],
+  "correct_answer": "Агуулгын талаар, танд засах хэрэгтэй зүйл байна уу?",
+  "explanation": "在……方面 — «… талаар».",
+  "order_index": 11,
+  "id": "xinhsk4a-l07-q11",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l07-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 在学习________，他的表现很好。",
+  "options": [
+   "方面",
+   "方法",
+   "面前",
+   "地方"
+  ],
+  "correct_answer": "方面",
+  "explanation": "在……方面 — «… талаар».",
+  "order_index": 12,
+  "id": "xinhsk4a-l07-q12",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l07-grammar"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: ________大家都同意，我们就这么做吧。",
+  "options": [
+   "如果",
+   "虽然",
+   "因为",
+   "既然"
+  ],
+  "correct_answer": "既然",
+  "explanation": "既然……，就…… — «… юм бол, тэгвэл …».",
+  "order_index": 13,
+  "id": "xinhsk4a-l07-q13",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "你累了既然，就早点儿休息吧。",
+   "既然你累了，也早点儿休息吧吗。",
+   "既然你累了，就早点儿休息吧。",
+   "既然你累了，但是早点儿休息吧。"
+  ],
+  "correct_answer": "既然你累了，就早点儿休息吧。",
+  "explanation": "既然 + нөхцөл，就 + дүгнэлт.",
+  "order_index": 14,
+  "id": "xinhsk4a-l07-q14",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 拿购物________，人们不出门就能买到想要的东西。",
+  "options": [
+   "一说",
+   "来说",
+   "说来",
+   "来了"
+  ],
+  "correct_answer": "来说",
+  "explanation": "拿……来说 — «… -ийг жишээ болговол».",
+  "order_index": 15,
+  "id": "xinhsk4a-l07-q15",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Нөх: 这个新方法________工作变得更加简单了。",
+  "options": [
+   "使",
+   "对",
+   "在",
+   "跟"
+  ],
+  "correct_answer": "使",
+  "explanation": "S + 使 + O + үр дүн: 使工作变得简单.",
+  "order_index": 16,
+  "id": "xinhsk4a-l07-q16",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "Аль өгүүлбэр зөв вэ?",
+  "options": [
+   "这个消息使很高兴我。",
+   "这个消息我使很高兴。",
+   "使这个消息我很高兴。",
+   "这个消息使我很高兴。"
+  ],
+  "correct_answer": "这个消息使我很高兴。",
+  "explanation": "шалтгаан + 使 + хүн + үр дүн.",
+  "order_index": 17,
+  "id": "xinhsk4a-l07-q17",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l07-grammar"
+  ],
+  "difficulty": "hard"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "«拿……来说» хэлбэр юуны тулд хэрэглэгддэг вэ?",
+  "options": [
+   "Шалтгаан хэлэхийн тулд",
+   "Хэн нэгнээс юм авахын тулд",
+   "Тодорхой жишээ дурдахын тулд",
+   "Асуулт асуухын тулд"
+  ],
+  "correct_answer": "Тодорхой жишээ дурдахын тулд",
+  "explanation": "拿……来说 нь ерөнхий зүйлийн нэг жишээг тодруулдаг.",
+  "order_index": 18,
+  "id": "xinhsk4a-l07-q18",
+  "skillTags": [
+   "grammar",
+   "xinhsk4a-l07-grammar"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：同事把什么发到王一雪的邮箱了？",
+  "options": [
+   "要买的东西",
+   "调查的计划书",
+   "网店的名字",
+   "客户的信息"
+  ],
+  "correct_answer": "调查的计划书",
+  "explanation": "«市场调查的计划书我昨天发到您邮箱了».",
+  "order_index": 19,
+  "id": "xinhsk4a-l07-q19",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文1：王一雪觉得计划书有什么问题？",
+  "options": [
+   "调查的地点只有超市，不太够",
+   "内容太长",
+   "时间太短",
+   "没有名字"
+  ],
+  "correct_answer": "调查的地点只有超市，不太够",
+  "explanation": "«就是调查的地点只有超市，不太够».",
+  "order_index": 20,
+  "id": "xinhsk4a-l07-q20",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：同事要去上海做什么？",
+  "options": [
+   "旅游",
+   "看朋友",
+   "购物",
+   "出差，做市场调查"
+  ],
+  "correct_answer": "出差，做市场调查",
+  "explanation": "«经理让我下周去上海出差，做市场调查».",
+  "order_index": 21,
+  "id": "xinhsk4a-l07-q21",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文2：杨同乐建议同事做什么？",
+  "options": [
+   "坐飞机去",
+   "不要采访客户",
+   "提前准备好问题",
+   "带很多礼物"
+  ],
+  "correct_answer": "提前准备好问题",
+  "explanation": "«你要提前准备好问题，便于和客户交流».",
+  "order_index": 22,
+  "id": "xinhsk4a-l07-q22",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文3：这位同事刚开始为什么效果不理想？",
+  "options": [
+   "客户太少",
+   "介绍产品的方式都一样",
+   "不会说中文",
+   "产品太贵"
+  ],
+  "correct_answer": "介绍产品的方式都一样",
+  "explanation": "«这是因为她介绍的方式都一样».",
+  "order_index": 23,
+  "id": "xinhsk4a-l07-q23",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：为什么不建议年轻人总换工作？",
+  "options": [
+   "很难积累经验，还可能影响发展",
+   "工资会变低",
+   "不能学习",
+   "工作太累"
+  ],
+  "correct_answer": "很难积累经验，还可能影响发展",
+  "explanation": "«不但很难积累经验，还可能会使自己的发展受到影响».",
+  "order_index": 24,
+  "id": "xinhsk4a-l07-q24",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "medium"
+ },
+ {
+  "type": "multiple_choice",
+  "question": "课文4：年轻人刚进入社会，应该更重视什么？",
+  "options": [
+   "工资",
+   "休息",
+   "心情",
+   "学习"
+  ],
+  "correct_answer": "学习",
+  "explanation": "«更要重视学习».",
+  "order_index": 25,
+  "id": "xinhsk4a-l07-q25",
+  "skillTags": [
+   "reading",
+   "text-comprehension"
+  ],
+  "difficulty": "easy"
+ }
+]

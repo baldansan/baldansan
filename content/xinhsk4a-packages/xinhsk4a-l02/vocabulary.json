@@ -1,0 +1,372 @@
+[
+ {
+  "chinese": "房东",
+  "pinyin": "fángdōng",
+  "mongolian": "байрын эзэн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我的房东人很好，经常帮我解决问题。",
+  "exampleMongolian": "Миний байрын эзэн сайн хүн, надад асуудлаа шийдэхэд байнга тусалдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "找房东 / 房东家"
+ },
+ {
+  "chinese": "出租",
+  "pinyin": "chūzū",
+  "mongolian": "түрээслүүлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "房东打算出租这个房子。",
+  "exampleMongolian": "Байрын эзэн энэ байраа түрээслүүлэхээр төлөвлөж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "出租房子 / 正在出租"
+ },
+ {
+  "chinese": "房租",
+  "pinyin": "fángzū",
+  "mongolian": "байрны түрээс",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我每个月要交两千块钱的房租。",
+  "exampleMongolian": "Би сар бүр хоёр мянган юанийн түрээс төлдөг.",
+  "pos": "нэр үг",
+  "collocations_zh": "收房租 / 房租很高"
+ },
+ {
+  "chinese": "收拾",
+  "pinyin": "shōushi",
+  "mongolian": "цэгцлэх, эмхлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我花了半个小时才把房间收拾好。",
+  "exampleMongolian": "Би өрөөгөө цэгцлэхэд хагас цаг зарсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "收拾行李 / 收拾干净"
+ },
+ {
+  "chinese": "租",
+  "pinyin": "zū",
+  "mongolian": "түрээслэх, түрээсэлж авах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他在公司附近租了一个房子。",
+  "exampleMongolian": "Тэр компанийнхаа ойролцоо нэг байр түрээсэлсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "租车 / 短租"
+ },
+ {
+  "chinese": "嗯",
+  "pinyin": "ǹg",
+  "mongolian": "аа, за, тиймээ",
+  "hskLevel": "HSK4",
+  "exampleChinese": "嗯，我马上就收拾好了。",
+  "exampleMongolian": "За, би одоохон цэгцэлчихнэ.",
+  "pos": "аялга үг",
+  "collocations_zh": "嗯，好的"
+ },
+ {
+  "chinese": "亮",
+  "pinyin": "liàng",
+  "mongolian": "гэгээтэй; гэрэлтэх, гийх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "教室里的灯很亮。",
+  "exampleMongolian": "Ангийн гэрэл гэгээтэй байна.",
+  "pos": "тэмдэг нэр / үйл үг",
+  "collocations_zh": "很亮 / 天亮"
+ },
+ {
+  "chinese": "就是",
+  "pinyin": "jiùshì",
+  "mongolian": "«…л болно» (өгүүлбэрийн эцэст батлах өнгө)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "不懂的话，问一下老师就是了。",
+  "exampleMongolian": "Ойлгохгүй бол багшаасаа асуучихад л болно.",
+  "pos": "туслах үг",
+  "collocations_zh": "……就是了"
+ },
+ {
+  "chinese": "种",
+  "pinyin": "zhòng",
+  "mongolian": "тарих",
+  "hskLevel": "HSK4",
+  "exampleChinese": "奶奶喜欢种菜。",
+  "exampleMongolian": "Эмээ хүнсний ногоо тарих дуртай.",
+  "pos": "үйл үг",
+  "collocations_zh": "种地 / 种花"
+ },
+ {
+  "chinese": "周围",
+  "pinyin": "zhōuwéi",
+  "mongolian": "ойр орчим, эргэн тойрон",
+  "hskLevel": "HSK4",
+  "exampleChinese": "小区周围有很多商店，买东西很方便。",
+  "exampleMongolian": "Хотхоны эргэн тойронд олон дэлгүүр байгаа тул юм авахад тохиромжтой.",
+  "pos": "нэр үг",
+  "collocations_zh": "学校周围 / 周围环境"
+ },
+ {
+  "chinese": "不过",
+  "pinyin": "búguò",
+  "mongolian": "гэхдээ, харин",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这件衣服很好看，不过没有我能穿的号。",
+  "exampleMongolian": "Энэ хувцас гоё ч миний өмсөх размер алга.",
+  "pos": "холбоос үг",
+  "collocations_zh": "……，不过……"
+ },
+ {
+  "chinese": "毕业",
+  "pinyin": "bìyè",
+  "mongolian": "төгсөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他毕业后找到了一个好工作。",
+  "exampleMongolian": "Тэр төгссөний дараа сайн ажил олсон.",
+  "pos": "үйл үг",
+  "collocations_zh": "本科毕业 / 毕业生"
+ },
+ {
+  "chinese": "恐怕",
+  "pinyin": "kǒngpà",
+  "mongolian": "магадгүй, … байх даа (болгоомжилсон таамаг)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "现在已经很晚了，他恐怕不会来了。",
+  "exampleMongolian": "Одоо аль хэдийн орой болсон, тэр ирэхгүй байх даа.",
+  "pos": "дайвар үг",
+  "collocations_zh": "恐怕不能 / 恐怕会"
+ },
+ {
+  "chinese": "热闹",
+  "pinyin": "rènao",
+  "mongolian": "дуу цуутай, цэнгэлтэй; цэнгэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "过年咱们要一起热闹热闹啊。",
+  "exampleMongolian": "Шинэ жилээр бид хамт цэнгэж хөөрцгөөе шүү.",
+  "pos": "үйл үг / тэмдэг нэр / нэр үг",
+  "collocations_zh": "热闹一下 / 热闹的大街 / 看热闹"
+ },
+ {
+  "chinese": "入住",
+  "pinyin": "rùzhù",
+  "mongolian": "нүүж орох, байрлах (зочид буудалд бүртгүүлэх)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "交完房租后我们就可以入住新家了。",
+  "exampleMongolian": "Түрээсээ төлсний дараа бид шинэ гэртээ нүүж орж болно.",
+  "pos": "үйл үг",
+  "collocations_zh": "入住新房 / 入住时间"
+ },
+ {
+  "chinese": "日记",
+  "pinyin": "rìjì",
+  "mongolian": "өдрийн тэмдэглэл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他有每天写日记的习惯。",
+  "exampleMongolian": "Тэр өдөр бүр өдрийн тэмдэглэл бичдэг заншилтай.",
+  "pos": "нэр үг",
+  "collocations_zh": "写日记 / 一本日记"
+ },
+ {
+  "chinese": "顺利",
+  "pinyin": "shùnlì",
+  "mongolian": "саадгүй, жигдэрч",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天我们搬家很顺利。",
+  "exampleMongolian": "Өнөөдөр бид нүүх ажлаа саадгүй хийлээ.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "顺利通过 / 考试顺利"
+ },
+ {
+  "chinese": "并",
+  "pinyin": "bìng",
+  "mongolian": "бас, мөн; (үгүйсгэлийн өмнө) огт, ер нь",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这件事情并不简单。",
+  "exampleMongolian": "Энэ хэрэг огт энгийн биш.",
+  "pos": "холбоос үг / дайвар үг",
+  "collocations_zh": "并不 / 并没有"
+ },
+ {
+  "chinese": "客厅",
+  "pinyin": "kètīng",
+  "mongolian": "зочны өрөө",
+  "hskLevel": "HSK4",
+  "exampleChinese": "妈妈在客厅看电视呢。",
+  "exampleMongolian": "Ээж зочны өрөөнд зурагт үзэж байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "漂亮的客厅 / 打扫客厅"
+ },
+ {
+  "chinese": "台",
+  "pinyin": "tái",
+  "mongolian": "ширхэг (машин, төхөөрөмжийн хэмжих үг)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我买了一台新电脑。",
+  "exampleMongolian": "Би нэг шинэ компьютер авсан.",
+  "pos": "хэмжих үг",
+  "collocations_zh": "两台 / 三台空调"
+ },
+ {
+  "chinese": "厨房",
+  "pinyin": "chúfáng",
+  "mongolian": "гал тогоо",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们家的厨房又大又干净。",
+  "exampleMongolian": "Манай гэрийн гал тогоо том бас цэвэрхэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "打扫厨房 / 在厨房做饭"
+ },
+ {
+  "chinese": "平常",
+  "pinyin": "píngcháng",
+  "mongolian": "ердийн үед; энгийн, хүүхэн",
+  "hskLevel": "HSK4",
+  "exampleChinese": "平常我很少做饭，几乎不用厨房。",
+  "exampleMongolian": "Ердийн үедээ би бараг хоол хийдэггүй, гал тогоо хэрэглэхгүй.",
+  "pos": "нэр үг / тэмдэг нэр",
+  "collocations_zh": "平常的一天 / 很平常"
+ },
+ {
+  "chinese": "基本上",
+  "pinyin": "jīběnshàng",
+  "mongolian": "ерөнхийдөө, голдуу",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我们班的同学基本上都来了。",
+  "exampleMongolian": "Манай ангийнхан ерөнхийдөө бүгд ирсэн.",
+  "pos": "дайвар үг",
+  "collocations_zh": "基本上都 / 基本上没有"
+ },
+ {
+  "chinese": "整个",
+  "pinyin": "zhěnggè",
+  "mongolian": "бүхэл, нийт",
+  "hskLevel": "HSK4",
+  "exampleChinese": "整个房间都很亮。",
+  "exampleMongolian": "Бүх өрөө гэгээтэй байна.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "整个上午 / 整个周末"
+ },
+ {
+  "chinese": "毛巾",
+  "pinyin": "máojīn",
+  "mongolian": "алчуур",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我去超市买了两条毛巾。",
+  "exampleMongolian": "Би супермаркетад очиж хоёр алчуур авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "洗毛巾 / 一条毛巾"
+ },
+ {
+  "chinese": "建议",
+  "pinyin": "jiànyì",
+  "mongolian": "санал, зөвлөгөө; зөвлөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "老师建议我每天写日记。",
+  "exampleMongolian": "Багш намайг өдөр бүр өдрийн тэмдэглэл бичихийг зөвлөсөн.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "医生的建议 / 建议买这本书"
+ },
+ {
+  "chinese": "查看",
+  "pinyin": "chákàn",
+  "mongolian": "харж шалгах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请用手机查看你的考试成绩。",
+  "exampleMongolian": "Шалгалтынхаа дүнг утсаараа харна уу.",
+  "pos": "үйл үг",
+  "collocations_zh": "查看地图 / 认真查看"
+ },
+ {
+  "chinese": "信息",
+  "pinyin": "xìnxī",
+  "mongolian": "мэдээлэл, мессеж",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我刚才给老师发了一条信息。",
+  "exampleMongolian": "Би дөнгөж сая багшид мессеж явуулсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "获得信息 / 发信息"
+ },
+ {
+  "chinese": "查找",
+  "pinyin": "cházhǎo",
+  "mongolian": "хайж олох",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我想先在网上查找租房信息。",
+  "exampleMongolian": "Би эхлээд интернетээс байр түрээслэх мэдээлэл хайх гэж байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "查找材料 / 方便查找"
+ },
+ {
+  "chinese": "接着",
+  "pinyin": "jiēzhe",
+  "mongolian": "дараа нь; үргэлжлүүлэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这本书你看完了，我接着看。",
+  "exampleMongolian": "Чи энэ номыг уншиж дууссан бол би үргэлжлүүлж уншъя.",
+  "pos": "дайвар үг / үйл үг",
+  "collocations_zh": "接着说 / 接着做"
+ },
+ {
+  "chinese": "同时",
+  "pinyin": "tóngshí",
+  "mongolian": "мөн тэр үед, зэрэгцээд; нэгэн зэрэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "工作的同时也要注意休息。",
+  "exampleMongolian": "Ажиллахын зэрэгцээ амрахдаа ч анхаарах хэрэгтэй.",
+  "pos": "холбоос үг / нэр үг",
+  "collocations_zh": "与此同时 / 同时进行"
+ },
+ {
+  "chinese": "位置",
+  "pinyin": "wèizhì",
+  "mongolian": "байршил",
+  "hskLevel": "HSK4",
+  "exampleChinese": "在这个位置可以看到整个公园。",
+  "exampleMongolian": "Энэ байрнаас бүх цэцэрлэгт хүрээлэн харагдана.",
+  "pos": "нэр үг",
+  "collocations_zh": "重要位置 / 学校的位置"
+ },
+ {
+  "chinese": "价格",
+  "pinyin": "jiàgé",
+  "mongolian": "үнэ",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这家超市的水果价格很便宜。",
+  "exampleMongolian": "Энэ супермаркетын жимсний үнэ их хямд.",
+  "pos": "нэр үг",
+  "collocations_zh": "毛巾的价格 / 价格便宜"
+ },
+ {
+  "chinese": "理想",
+  "pinyin": "lǐxiǎng",
+  "mongolian": "хүссэн шигээ, төгс сайн; мөрөөдөл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这次考试我的成绩很理想。",
+  "exampleMongolian": "Энэ удаагийн шалгалтын дүн маань хүссэнээр гарсан.",
+  "pos": "тэмдэг нэр / нэр үг",
+  "collocations_zh": "非常理想 / 坚持理想"
+ },
+ {
+  "chinese": "由于",
+  "pinyin": "yóuyú",
+  "mongolian": "… тул, … -ийн улмаас",
+  "hskLevel": "HSK4",
+  "exampleChinese": "由于生病，他今天没来上课。",
+  "exampleMongolian": "Өвчтэй байсан тул тэр өнөөдөр хичээлдээ ирсэнгүй.",
+  "pos": "холбоос үг / угтвар үг",
+  "collocations_zh": "由于……所以…… / 由于天气"
+ },
+ {
+  "chinese": "工资",
+  "pinyin": "gōngzī",
+  "mongolian": "цалин",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他每个月的工资有八千块钱。",
+  "exampleMongolian": "Түүний сарын цалин найман мянган юань.",
+  "pos": "нэр үг",
+  "collocations_zh": "工资不高 / 理想的工资"
+ },
+ {
+  "chinese": "感",
+  "pinyin": "gǎn",
+  "mongolian": "мэдрэмж (дагавар)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我的方向感不太好，总是找不到路。",
+  "exampleMongolian": "Миний чиг мэдрэмж муу, байнга зам төөрдөг.",
+  "pos": "дагавар",
+  "collocations_zh": "安全感 / 方向感"
+ }
+]

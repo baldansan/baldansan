@@ -1,0 +1,392 @@
+[
+ {
+  "chinese": "啊",
+  "pinyin": "ā",
+  "mongolian": "аа, өө (гайхах, санаа зовох дуу)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "啊，我考试没通过……",
+  "exampleMongolian": "Аа, би шалгалтаасаа унчихлаа...",
+  "pos": "аялга үг",
+  "collocations_zh": "啊，真漂亮啊"
+ },
+ {
+  "chinese": "停",
+  "pinyin": "tíng",
+  "mongolian": "зогсох; зогсоох, зогсоол хийх (машин)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "请把车停在学校门口。",
+  "exampleMongolian": "Машинаа сургуулийн үүдэнд тавиарай.",
+  "pos": "үйл үг",
+  "collocations_zh": "停下来 / 停车"
+ },
+ {
+  "chinese": "交",
+  "pinyin": "jiāo",
+  "mongolian": "өгөх, гардуулах; төлөх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我现在要去交作业，你跟我一起去吗？",
+  "exampleMongolian": "Би одоо даалгавраа өгөхөөр явна, чи надтай хамт явах уу?",
+  "pos": "үйл үг",
+  "collocations_zh": "交作业 / 交钱"
+ },
+ {
+  "chinese": "费",
+  "pinyin": "fèi",
+  "mongolian": "төлбөр, хураамж; зарцуулах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你是不是忘记交水费了？停水了。",
+  "exampleMongolian": "Чи усны төлбөрөө төлөхөө мартсан юм биш үү? Ус тасарчихлаа.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "水费 / 费时间"
+ },
+ {
+  "chinese": "信号",
+  "pinyin": "xìnhào",
+  "mongolian": "дохио; (утасны) сүлжээ, сигнал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这里手机信号不太好，我换个地方打电话。",
+  "exampleMongolian": "Энд утасны сүлжээ муу байна, би өөр газар очиж залгая.",
+  "pos": "нэр үг",
+  "collocations_zh": "信号灯 / 手机信号"
+ },
+ {
+  "chinese": "感谢",
+  "pinyin": "gǎnxiè",
+  "mongolian": "талархах, баярлалаа гэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "感谢你这几天对我的照顾。",
+  "exampleMongolian": "Эдгээр өдрүүдэд намайг анхаарч халамжилсанд баярлалаа.",
+  "pos": "үйл үг",
+  "collocations_zh": "感谢大家 / 非常感谢"
+ },
+ {
+  "chinese": "联系",
+  "pinyin": "liánxì",
+  "mongolian": "холбоо барих; холбоо",
+  "hskLevel": "HSK4",
+  "exampleChinese": "毕业以后，我们还经常联系。",
+  "exampleMongolian": "Төгссөний дараа ч бид байнга холбоотой байдаг.",
+  "pos": "үйл үг",
+  "collocations_zh": "有联系 / 不再联系"
+ },
+ {
+  "chinese": "方式",
+  "pinyin": "fāngshì",
+  "mongolian": "арга, хэлбэр, байдал",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我喜欢用看电影的方式学习中文。",
+  "exampleMongolian": "Би кино үзэх замаар хятад хэл сурах дуртай.",
+  "pos": "нэр үг",
+  "collocations_zh": "简单的方式 / 学习方式"
+ },
+ {
+  "chinese": "客气",
+  "pinyin": "kèqi",
+  "mongolian": "эелдэг байх, хэлцэх; эелдэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "你别客气，随便坐。",
+  "exampleMongolian": "Битгий хэлцээд, чөлөөтэй суугаарай.",
+  "pos": "үйл үг / тэмдэг нэр",
+  "collocations_zh": "别客气 / 太客气了"
+ },
+ {
+  "chinese": "剩",
+  "pinyin": "shèng",
+  "mongolian": "үлдэх, үлдсэн байх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "冰箱里只剩一个苹果了。",
+  "exampleMongolian": "Хөргөгчинд ганцхан алим үлдсэн байна.",
+  "pos": "үйл үг",
+  "collocations_zh": "剩下 / 剩了不少"
+ },
+ {
+  "chinese": "提",
+  "pinyin": "tí",
+  "mongolian": "(гараараа доош унжуулан) барих, авч явах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她早上提着包去上班了。",
+  "exampleMongolian": "Тэр өглөө цүнхээ барьчихаад ажилдаа явсан.",
+  "pos": "үйл үг",
+  "collocations_zh": "提包 / 提上去"
+ },
+ {
+  "chinese": "袋子",
+  "pinyin": "dàizi",
+  "mongolian": "уут, богц",
+  "hskLevel": "HSK4",
+  "exampleChinese": "她把面包装进袋子里。",
+  "exampleMongolian": "Тэр талхыг уутанд хийсэн.",
+  "pos": "нэр үг",
+  "collocations_zh": "纸袋子 / 空袋子"
+ },
+ {
+  "chinese": "重",
+  "pinyin": "zhòng",
+  "mongolian": "хүнд; жин",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这个箱子重15公斤，我搬不动。",
+  "exampleMongolian": "Энэ хайрцаг 15 кг жинтэй, би зөөж чадахгүй.",
+  "pos": "тэмдэг нэр / нэр үг",
+  "collocations_zh": "非常重 / 太重了"
+ },
+ {
+  "chinese": "算",
+  "pinyin": "suàn",
+  "mongolian": "тооцох, … гэж үзэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他算得上是我们班最努力的学生。",
+  "exampleMongolian": "Тэр манай ангийн хамгийн хичээнгүй сурагч гэж хэлж болно.",
+  "pos": "үйл үг",
+  "collocations_zh": "算得上 / 算不上"
+ },
+ {
+  "chinese": "再说",
+  "pinyin": "zàishuō",
+  "mongolian": "дээр нь, тэгээд ч",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我不想吃外卖，再说自己做饭更健康。",
+  "exampleMongolian": "Би хүргэлтийн хоол идмээргүй байна, дээр нь өөрөө хоол хийх нь эрүүл.",
+  "pos": "холбоос үг",
+  "collocations_zh": "今天太晚了，再说外面在下雨"
+ },
+ {
+  "chinese": "之间",
+  "pinyin": "zhījiān",
+  "mongolian": "хоорондох, хооронд",
+  "hskLevel": "HSK4",
+  "exampleChinese": "同学之间应该互相帮助。",
+  "exampleMongolian": "Ангийнхан хоорондоо туслалцах ёстой.",
+  "pos": "нэр үг",
+  "collocations_zh": "邻居之间 / 朋友之间"
+ },
+ {
+  "chinese": "互相",
+  "pinyin": "hùxiāng",
+  "mongolian": "бие биедээ, харилцан",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我和邻居常常互相送一些自己做的食物。",
+  "exampleMongolian": "Би хөршүүдтэйгээ өөрсдийн хийсэн хоолоо байнга бие биедээ өгдөг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "互相照顾 / 互相关心"
+ },
+ {
+  "chinese": "辛苦",
+  "pinyin": "xīnkǔ",
+  "mongolian": "зүтгэх, ядрах; зовлонтой, ядаргаатай",
+  "hskLevel": "HSK4",
+  "exampleChinese": "妈妈每天上班很辛苦，我要多帮帮她。",
+  "exampleMongolian": "Ээж өдөр бүр ажилдаа ядардаг, би түүнд илүү тусалмаар байна.",
+  "pos": "үйл үг / тэмдэг нэр",
+  "collocations_zh": "辛苦大家 / 辛苦地工作"
+ },
+ {
+  "chinese": "出行",
+  "pinyin": "chūxíng",
+  "mongolian": "аялах, зорчих, гадуур явах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "现在很多人选择坐地铁出行，既方便又便宜。",
+  "exampleMongolian": "Одоо олон хүн метроор зорчих сонголт хийж байна, амар бас хямд.",
+  "pos": "үйл үг",
+  "collocations_zh": "出行方式 / 安全出行"
+ },
+ {
+  "chinese": "距离",
+  "pinyin": "jùlí",
+  "mongolian": "зай; зайтай байх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "学校和我家的距离很近，走路只要十分钟。",
+  "exampleMongolian": "Сургууль манай гэрээс их ойрхон, алхаад арван минут л болно.",
+  "pos": "нэр үг / үйл үг",
+  "collocations_zh": "安全距离 / 距离很远"
+ },
+ {
+  "chinese": "往往",
+  "pinyin": "wǎngwǎng",
+  "mongolian": "ихэвчлэн, ер нь",
+  "hskLevel": "HSK4",
+  "exampleChinese": "认真准备的人，往往更容易通过考试。",
+  "exampleMongolian": "Сайн бэлтгэсэн хүн шалгалтад ихэвчлэн илүү амархан тэнцдэг.",
+  "pos": "дайвар үг",
+  "collocations_zh": "往往都是 / 往往会"
+ },
+ {
+  "chinese": "既",
+  "pinyin": "jì",
+  "mongolian": "… ч … ч, … бас … (хос хэллэгт)",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他既会唱歌，又会跳舞。",
+  "exampleMongolian": "Тэр дуулж ч чадна, бүжиглэж ч чадна.",
+  "pos": "дайвар үг",
+  "collocations_zh": "既……，又/也……"
+ },
+ {
+  "chinese": "电动车",
+  "pinyin": "diàndòngchē",
+  "mongolian": "цахилгаан дугуй, мотоцикл",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我每天骑电动车去上班。",
+  "exampleMongolian": "Би өдөр бүр цахилгаан дугуйгаар ажилдаа явдаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "骑电动车 / 一辆电动车"
+ },
+ {
+  "chinese": "速度",
+  "pinyin": "sùdù",
+  "mongolian": "хурд",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他跑步的速度很快，我追不上他。",
+  "exampleMongolian": "Тэр маш хурдан гүйдэг, би гүйцэж чадахгүй.",
+  "pos": "нэр үг",
+  "collocations_zh": "速度很快 / 速度变化"
+ },
+ {
+  "chinese": "充电",
+  "pinyin": "chōngdiàn",
+  "mongolian": "цэнэглэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我的手机没电了，需要充电。",
+  "exampleMongolian": "Миний утасны цэнэг дууссан, цэнэглэх хэрэгтэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "给手机充电 / 充电很快"
+ },
+ {
+  "chinese": "流行",
+  "pinyin": "liúxíng",
+  "mongolian": "моодонд орох, дэлгэрэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这些年，在网上购物变得很流行。",
+  "exampleMongolian": "Сүүлийн жилүүдэд онлайнаар дэлгүүр хийх нь моод болсон.",
+  "pos": "үйл үг",
+  "collocations_zh": "流行语 / 开始流行"
+ },
+ {
+  "chinese": "省",
+  "pinyin": "shěng",
+  "mongolian": "хэмнэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "坐地铁比坐出租车省钱多了。",
+  "exampleMongolian": "Метроор явах нь таксигаар явахаас хамаагүй хэмнэлттэй.",
+  "pos": "үйл үг",
+  "collocations_zh": "省钱 / 省力气 / 省下来"
+ },
+ {
+  "chinese": "力气",
+  "pinyin": "lìqi",
+  "mongolian": "хүч, тэнхээ",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我今天太累了，没有力气再跑步了。",
+  "exampleMongolian": "Би өнөөдөр хэт ядарсан, дахиад гүйх хүч алга.",
+  "pos": "нэр үг",
+  "collocations_zh": "有力气 / 省力气"
+ },
+ {
+  "chinese": "乘客",
+  "pinyin": "chéngkè",
+  "mongolian": "зорчигч",
+  "hskLevel": "HSK4",
+  "exampleChinese": "这位乘客，请给我看一下您的车票。",
+  "exampleMongolian": "Эрхэм зорчигч, тийзээ үзүүлнэ үү.",
+  "pos": "нэр үг",
+  "collocations_zh": "一位乘客 / 乘客们"
+ },
+ {
+  "chinese": "购买",
+  "pinyin": "gòumǎi",
+  "mongolian": "худалдан авах",
+  "hskLevel": "HSK4",
+  "exampleChinese": "在网上购买水果很方便，而且价格也比较便宜。",
+  "exampleMongolian": "Онлайнаар жимс худалдан авах амар, бас үнэ нь харьцангуй хямд.",
+  "pos": "үйл үг",
+  "collocations_zh": "购买门票 / 购买方式"
+ },
+ {
+  "chinese": "食物",
+  "pinyin": "shíwù",
+  "mongolian": "хоол хүнс",
+  "hskLevel": "HSK4",
+  "exampleChinese": "妈妈在超市买了很多食物。",
+  "exampleMongolian": "Ээж дэлгүүрээс маш их хоол хүнс авсан.",
+  "pos": "нэр үг",
+  "collocations_zh": "新鲜的食物 / 购买食物"
+ },
+ {
+  "chinese": "免费",
+  "pinyin": "miǎnfèi",
+  "mongolian": "үнэгүй байх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "公司为我们准备了免费的早餐。",
+  "exampleMongolian": "Компани бидэнд үнэгүй өглөөний цай бэлдсэн.",
+  "pos": "үйл үг",
+  "collocations_zh": "免费提供 / 免费课程"
+ },
+ {
+  "chinese": "早餐",
+  "pinyin": "zǎocān",
+  "mongolian": "өглөөний цай, өглөөний хоол",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我每天早上七点吃早餐。",
+  "exampleMongolian": "Би өдөр бүр өглөө долоон цагт өглөөний цайгаа уудаг.",
+  "pos": "нэр үг",
+  "collocations_zh": "吃早餐 / 早餐车"
+ },
+ {
+  "chinese": "来得及",
+  "pinyin": "láidejí",
+  "mongolian": "амжих, цаг хүрэх",
+  "hskLevel": "HSK4",
+  "exampleChinese": "别着急，时间还早，咱们来得及。",
+  "exampleMongolian": "Битгий сандар, цаг хараахан эрт байна, бид амжина.",
+  "pos": "үйл үг",
+  "collocations_zh": "来得及 / 来不及"
+ },
+ {
+  "chinese": "鲜花",
+  "pinyin": "xiānhuā",
+  "mongolian": "цэвэр цэцэг",
+  "hskLevel": "HSK4",
+  "exampleChinese": "妈妈过生日的时候，我给她买了鲜花和礼物。",
+  "exampleMongolian": "Ээжийн төрсөн өдрөөр би түүнд цэцэг, бэлэг авч өгсөн.",
+  "pos": "нэр үг",
+  "collocations_zh": "漂亮的鲜花 / 买鲜花"
+ },
+ {
+  "chinese": "顺便",
+  "pinyin": "shùnbiàn",
+  "mongolian": "замын завсар, гарсан үедээ",
+  "hskLevel": "HSK4",
+  "exampleChinese": "我下午去图书馆看书，顺便帮你借书。",
+  "exampleMongolian": "Би үдээс хойш номын санд ном уншихаар явахдаа чиний өмнөөс ном авчирч өгье.",
+  "pos": "дайвар үг",
+  "collocations_zh": "顺便说一句 / 顺便去超市"
+ },
+ {
+  "chinese": "心情",
+  "pinyin": "xīnqíng",
+  "mongolian": "сэтгэл санаа, төлөв",
+  "hskLevel": "HSK4",
+  "exampleChinese": "快考试了，我心情有点儿差。",
+  "exampleMongolian": "Удахгүй шалгалт болох гэж байна, сэтгэл жаахан тавгүй байна.",
+  "pos": "нэр үг",
+  "collocations_zh": "心情愉快 / 心情很好/差"
+ },
+ {
+  "chinese": "更加",
+  "pinyin": "gèngjiā",
+  "mongolian": "улам, илүү",
+  "hskLevel": "HSK4",
+  "exampleChinese": "他每天早上跑步，所以身体更加健康了。",
+  "exampleMongolian": "Тэр өдөр бүр өглөө гүйдэг тул бие нь улам эрүүл болсон.",
+  "pos": "дайвар үг",
+  "collocations_zh": "更加喜欢 / 更加认真"
+ },
+ {
+  "chinese": "愉快",
+  "pinyin": "yúkuài",
+  "mongolian": "баяртай, тааламжтай",
+  "hskLevel": "HSK4",
+  "exampleChinese": "今天我们在公园里玩得很愉快。",
+  "exampleMongolian": "Өнөөдөр бид цэцэрлэгт хүрээлэнд сайхан зугаалсан.",
+  "pos": "тэмдэг нэр",
+  "collocations_zh": "非常愉快 / 愉快的一天"
+ }
+]
