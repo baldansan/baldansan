@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { ConfusableChars } from "@/components/hanzi/confusable-chars";
 import { SpeakerButton } from "@/components/tts/speaker-button";
+import { WordSenses } from "@/components/dictionary/word-senses";
 
 /** hanzi-writer зурлагын самбар — ханз дээр дарахад л татна. */
 const HanziWriterPractice = dynamic(
@@ -42,10 +43,12 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
   const chars = word ? Array.from(word.simplified).filter((c) => HAN_RE.test(c)) : [];
   const [charIdx, setCharIdx] = useState(0);
   const [saved, setSaved] = useState<string | null>(null);
+  const [richSenses, setRichSenses] = useState(false);
 
   useEffect(() => {
     setCharIdx(0);
     setSaved(null);
+    setRichSenses(false);
   }, [word?.id]);
 
   if (!word) {
@@ -110,10 +113,15 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
           </span>
         ) : null}
       </div>
-      <p className="mt-3 text-base font-semibold text-[var(--app-text)]">{meaning}</p>
-      {word.meaning_mn && word.meaning_en ? (
-        <p className="mt-0.5 text-xs text-[var(--app-muted)]">{word.meaning_en}</p>
+      {!richSenses ? (
+        <>
+          <p className="mt-3 text-base font-semibold text-[var(--app-text)]">{meaning}</p>
+          {word.meaning_mn && word.meaning_en ? (
+            <p className="mt-0.5 text-xs text-[var(--app-muted)]">{word.meaning_en}</p>
+          ) : null}
+        </>
       ) : null}
+      <WordSenses wordId={word.id} onLoaded={setRichSenses} />
 
       <div className="mt-3 flex flex-wrap gap-2">
         <button type="button" className="app-btn-primary !min-h-[40px] !py-0 px-4 text-sm" onClick={() => void handleSave()}>
@@ -125,7 +133,7 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
       </div>
       {saved ? <SavedWordsHint message={saved} refreshKey={saved + word.simplified} /> : null}
 
-      {word.example_zh ? (
+      {word.example_zh && !richSenses ? (
         <div className="mt-4 rounded-2xl bg-emerald-50 p-3 ring-1 ring-emerald-100">
           <div className="flex items-start gap-2">
             <div className="min-w-0 flex-1">

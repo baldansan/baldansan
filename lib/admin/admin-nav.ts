@@ -244,6 +244,13 @@ export const ADMIN_NAV_TEACHER: AdminNavItem[] = [
 /** Хичээлийн сан — багш сонгож ангидаа өгнө, админ засна. */
 export const ADMIN_NAV_LIBRARY: AdminNavItem[] = [
   {
+    href: "/admin/dictionary",
+    label: "Толь бичиг",
+    icon: "📖",
+    hint: "Үг бүрийн утга, синоним, жишээг хянаж батлах — ерөнхий редакторын самбар.",
+    match: (p) => p.startsWith("/admin/dictionary"),
+  },
+  {
     href: "/teacher/library",
     label: "Хичээлүүд",
     icon: "📚",

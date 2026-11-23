@@ -23,7 +23,8 @@
     "export:lessons": "node --env-file=.env.local scripts/export_lessons.mjs",
     "patch:lesson-texts": "node scripts/patch-lesson-texts-sentences.mjs",
     "test:workbook-listening": "tsx scripts/test-workbook-listening-resolve.ts",
-    "diag:courses": "node --env-file=.env.local scripts/diagnostics/diag-courses.mjs"
+    "diag:courses": "node --env-file=.env.local scripts/diagnostics/diag-courses.mjs",
+    "dict:load": "node --env-file=.env.local scripts/dictionary/load_drafts.mjs"
   },
   "dependencies": {
     "@capacitor/app": "^8.1.2",
