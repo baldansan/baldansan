@@ -120,11 +120,6 @@ function ResultRow({
                 {word.pos}
               </span>
             ) : null}
-            {word.ai ? (
-              <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[10px] font-semibold text-amber-700 ring-1 ring-amber-200">
-                {tr(locale, "AI орчуулга")}
-              </span>
-            ) : null}
             {hasExample && !onSelect ? (
               <span className="text-[10px] text-slate-400">
                 {tr(locale, open ? "жишээ хаах ▴" : "жишээ ▾")}
@@ -413,7 +408,7 @@ export function DictionaryClient() {
         </div>
       ) : null}
       <p className="pb-6 pt-2 text-center text-[11px] leading-4 text-[var(--app-muted)]" translate="no">
-        {tr(locale, "Нэмэлт үгсийн эх сурвалж: CC-CEDICT (MDBG), CC BY-SA 4.0. «AI орчуулга» тэмдэгтэй монгол утга нь багш хараахан хянаагүй ноорог.")}
+        {tr(locale, "Нэмэлт үгсийн эх сурвалж: CC-CEDICT (MDBG), CC BY-SA 4.0.")}
       </p>
       </div>
       <aside className="bs-dict-detail bs-desk-only">

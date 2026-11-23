@@ -123,11 +123,6 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
           ) : null}
         </>
       ) : null}
-      {word.ai ? (
-        <p className="mt-1 text-xs text-amber-700">
-          {tr(locale, "AI орчуулга — багш хараахан хянаагүй ноорог. Эх сурвалж: CC-CEDICT (CC BY-SA 4.0).")}
-        </p>
-      ) : null}
       {word.id > 0 ? <WordSenses wordId={word.id} onLoaded={setRichSenses} /> : null}
 
       <div className="mt-3 flex flex-wrap gap-2">
