@@ -73,3 +73,7 @@ xcuserdata/
 *.jks
 *.aab
 *.apk
+
+# CC-CEDICT lexicon (script-аар үүсгэнэ)
+/data/dictionary/lexicon.json
+/data/dictionary/lexicon_mn.jsonl
