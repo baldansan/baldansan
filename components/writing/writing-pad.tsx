@@ -94,9 +94,10 @@ export function WritingPad({ char, phase, onDone, maxSize = 340, onStroke }: Pro
       setStrokeDone(0);
       setState("quiz");
       void w.quiz({
-        leniency: memory ? 1.4 : 1.3,
+        // Сурагчид зураас «оногдсонгүй» гэж стресслэдэг тул илүү уян хатан болгов.
+        leniency: memory ? 1.8 : 1.7,
         showHintAfterMisses: memory ? 3 : 2,
-        markStrokeCorrectAfterMisses: memory ? 6 : 5,
+        markStrokeCorrectAfterMisses: memory ? 4 : 3,
         highlightOnComplete: true,
         onMistake: () => {
           if (typeof navigator !== "undefined") navigator.vibrate?.(40);

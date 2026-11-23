@@ -145,7 +145,7 @@ export function CharacterWriter({ character, mode, onComplete, onResult }: Props
       setStrokeDone(0);
       setPracticeMode("quiz");
       void w.quiz({
-        leniency: memory ? 1.4 : 1.3,
+        leniency: memory ? 1.7 : 1.6,
         showHintAfterMisses: memory ? 3 : 2,
         markStrokeCorrectAfterMisses: memory ? 6 : 5,
         highlightOnComplete: true,
