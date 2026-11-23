@@ -53,6 +53,11 @@ export default async function AdminDictionaryPage({
       <AdminPageHeader
         title="Толь бичиг — хянах самбар"
         description="Нэг үг = нэг дэлгэц. AI ноорог → редактор хянана → ерөнхий редактор батална. Сурагчид зөвхөн батлагдсан утгыг хардаг."
+      actions={
+          <Link href="/admin/dictionary/reports" className="rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">
+            ⚑ Буруу орчуулгын мэдэгдэл
+          </Link>
+        }
       />
 
       {/* Түвшний ахиц */}

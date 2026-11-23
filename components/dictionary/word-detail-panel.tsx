@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { ConfusableChars } from "@/components/hanzi/confusable-chars";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { WordSenses } from "@/components/dictionary/word-senses";
+import { ReportWrongButton } from "@/components/dictionary/report-wrong-button";
 
 /** hanzi-writer зурлагын самбар — ханз дээр дарахад л татна. */
 const HanziWriterPractice = dynamic(
@@ -133,6 +134,7 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
           {tr(locale, "Хэлц үгэнд хайх")}
         </Link>
       </div>
+      <ReportWrongButton wordId={word.id} simplified={word.simplified} currentMn={word.meaning_mn} />
       {saved ? <SavedWordsHint message={saved} refreshKey={saved + word.simplified} /> : null}
 
       {word.example_zh && !richSenses ? (

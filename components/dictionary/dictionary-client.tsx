@@ -9,6 +9,7 @@ import { DrawInputSheet } from "@/components/dictionary/draw-input-sheet";
 import { ConfusableChars } from "@/components/hanzi/confusable-chars";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { WordDetailPanel } from "@/components/dictionary/word-detail-panel";
+import { ReportWrongButton } from "@/components/dictionary/report-wrong-button";
 import { useIsDesktop } from "@/lib/use-is-desktop";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
@@ -90,7 +91,7 @@ function ResultRow({
     <div className={`rounded-2xl border bg-white bs-dict-row${selected ? " bs-dict-row--on border-emerald-400 ring-2 ring-emerald-200" : " border-[var(--app-border)]"}`}>
       <button
         type="button"
-        onClick={() => (onSelect ? onSelect() : hasExample && setOpen((v) => !v))}
+        onClick={() => (onSelect ? onSelect() : setOpen((v) => !v))}
         className="flex w-full items-center gap-3 px-4 py-3 text-left"
         aria-current={selected ? "true" : undefined}
       >
@@ -120,9 +121,9 @@ function ResultRow({
                 {word.pos}
               </span>
             ) : null}
-            {hasExample && !onSelect ? (
+            {!onSelect ? (
               <span className="text-[10px] text-slate-400">
-                {tr(locale, open ? "жишээ хаах ▴" : "жишээ ▾")}
+                {hasExample ? tr(locale, open ? "жишээ хаах ▴" : "жишээ ▾") : open ? "▴" : "▾"}
               </span>
             ) : null}
           </span>
@@ -137,8 +138,9 @@ function ResultRow({
         />
       </button>
 
-      {open && hasExample && !onSelect ? (
+      {open && !onSelect ? (
         <div className="border-t border-[var(--app-border)] px-4 py-3">
+          {hasExample ? (
           <div className="flex items-start gap-2">
             <div className="min-w-0 flex-1" translate="no">
               <p className="text-base font-semibold text-[var(--app-text)]">
@@ -165,7 +167,9 @@ function ResultRow({
               />
             ) : null}
           </div>
-          <ConfusableChars text={word.simplified} />
+          ) : null}
+          {hasExample ? <ConfusableChars text={word.simplified} /> : null}
+          <ReportWrongButton wordId={word.id} simplified={word.simplified} currentMn={word.meaning_mn} />
         </div>
       ) : null}
     </div>
