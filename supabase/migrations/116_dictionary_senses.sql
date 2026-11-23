@@ -140,14 +140,14 @@ create policy dictionary_feedback_admin_update on public.dictionary_feedback
 
 -- 6. Төлөвийн тоо — admin самбарын толгой (түвшин бүрээр)
 create or replace function public.dictionary_status_counts()
-returns table (hsk_level text, total bigint, draft bigint, reviewed bigint, approved bigint, none bigint)
+returns table (hsk_level text, total bigint, draft bigint, reviewed bigint, approved bigint, "none" bigint)
 language sql stable security definer set search_path = public as $$
   select w.hsk_level,
          count(*)                                         as total,
          count(*) filter (where e.status = 'draft')       as draft,
          count(*) filter (where e.status = 'reviewed')    as reviewed,
          count(*) filter (where e.status = 'approved')    as approved,
-         count(*) filter (where e.word_id is null)        as none
+         count(*) filter (where e.word_id is null)        as "none"
   from public.hsk_words w
   left join public.dictionary_entries e on e.word_id = w.id
   group by w.hsk_level
