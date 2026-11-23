@@ -152,6 +152,19 @@ export function WritingHomeClient() {
         </Link>
       </div>
 
+      <Link href="/writing/sheet" className="mb-5 block">
+        <MobileCard className="flex items-center gap-3">
+          <span className="text-2xl" aria-hidden>🖨</span>
+          <span className="min-w-0 flex-1">
+            <b className="block text-sm text-[var(--app-text)]">{tr(locale, "Хэвлэх дэвтэр")}</b>
+            <small className="block text-xs text-[var(--app-muted)]">
+              {tr(locale, "Үндсэн зурлага, өөрийн ханзаа цаасан дээр дуурайж бичих хуудас")}
+            </small>
+          </span>
+          <span aria-hidden>›</span>
+        </MobileCard>
+      </Link>
+
       {error ? (
         <p className="mb-4 rounded-xl bg-amber-50 px-3 py-2 text-xs text-amber-900 ring-1 ring-amber-200">
           {error}

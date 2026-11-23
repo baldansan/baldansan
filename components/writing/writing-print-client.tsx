@@ -97,6 +97,12 @@ export function WritingPrintClient({ listId }: { listId: string }) {
         >
           🖨 {tr(locale, "Хэвлэх")}
         </button>
+        <Link
+          href={`/writing/sheet?list=${encodeURIComponent(listId)}`}
+          className="text-sm font-semibold text-violet-700 underline"
+        >
+          {tr(locale, "Нүд, өнгөө сонгож дуурайх хуудас хэвлэх")}
+        </Link>
       </div>
 
       <div className="wn-print-sheet">
