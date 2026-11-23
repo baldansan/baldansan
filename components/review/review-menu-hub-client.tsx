@@ -294,6 +294,14 @@ export function ReviewMenuHubClient({
           </span>
           <span className="bs-tm-card-chev" aria-hidden>›</span>
         </PrefetchLink>
+        <PrefetchLink href="/dictionary" className="bs-tm-card">
+          <span className="bs-tm-card-ic bs-tm-card-ic--3d" aria-hidden><img src="/icons3d/books.webp" alt="" width={44} height={44} /></span>
+          <span className="bs-tm-card-body">
+            <span className="bs-tm-card-title">{tr(locale, "Толь бичиг")}</span>
+            <span className="bs-tm-card-sub">{tr(locale, "Ханз, пиньинь, монгол утгаар хайх · 120 мянга гаруй үг")}</span>
+          </span>
+          <span className="bs-tm-card-chev" aria-hidden>›</span>
+        </PrefetchLink>
 
 
         <p className="bs-tm-sec" style={{ marginTop: 18 }}>{tr(locale, "Сонсох · Ярих")}</p>
