@@ -109,7 +109,7 @@ export async function GET(request: Request) {
 
     const top = results.slice(0, limit);
 
-    // HSK-д байхгүй үгийг CC-CEDICT лексиконоос нөхнө (id < 0 = лексикон; meaning_mn нь AI ноорог).
+    // HSK-д байхгүй үгийг CC-CEDICT лексиконоос нөхнө (id < 0 = лексикон).
     if (top.length < limit) {
       const lex = await searchLexicon(supabase, q, limit - top.length, new Set(top.map((w) => w.simplified)));
       top.push(...lex);
@@ -129,6 +129,20 @@ type LexRow = {
 
 const LEX_SELECT = "id, simplified, traditional, pinyin, english, kind, meaning_mn, mn_status";
 
+/** «a; b / c» маягийн утгыг хэсэг болгож, хайлттай яг таарч буйг эхэнд гаргана. */
+function matchRank(text: string | null, q: string, plainEn: boolean): number {
+  if (!text) return 3;
+  const t = text.toLowerCase();
+  const segs = t.split(/\s*[;/]\s*/);
+  for (const sg of segs) {
+    const x = plainEn ? sg.replace(/^(to|a|an|the)\s+/, "").replace(/\s*\(.*?\)\s*/g, "") : sg;
+    if (x === q || sg === q) return 0;
+  }
+  if (segs.some((sg) => sg.startsWith(q))) return 1;
+  if (new RegExp(`(^|[^\\p{L}])${q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`, "u").test(t)) return 2;
+  return 3;
+}
+
 async function searchLexicon(
   supabase: NonNullable<ReturnType<typeof searchClient>>,
   q: string,
@@ -136,24 +150,66 @@ async function searchLexicon(
   skip: Set<string>
 ) {
   try {
+    const lq = q.toLowerCase();
+    const col = () => supabase.from("dictionary_lexicon").select(LEX_SELECT);
     const tasks: PromiseLike<{ data: LexRow[] | null }>[] = [];
+    let rankOf: (r: LexRow) => number;
+
     if (HAS_CJK.test(q)) {
-      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).eq("simplified", q).limit(10));
-      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).ilike("simplified", `${q}%`).limit(40));
+      tasks.push(col().eq("simplified", q).limit(10));
+      tasks.push(col().ilike("simplified", `${q}%`).limit(60));
+      tasks.push(col().ilike("simplified", `%${q}%`).limit(60));
+      rankOf = (r) => (r.simplified === q ? 0 : r.simplified.startsWith(q) ? 1 : 2);
     } else if (HAS_CYRILLIC.test(q)) {
-      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).ilike("meaning_mn", `%${q}%`).limit(40));
+      tasks.push(col().ilike("meaning_mn", q).limit(30));
+      tasks.push(col().ilike("meaning_mn", `${q}; %`).limit(30));
+      tasks.push(col().ilike("meaning_mn", `%; ${q}`).limit(30));
+      tasks.push(col().ilike("meaning_mn", `%; ${q}; %`).limit(30));
+      tasks.push(col().ilike("meaning_mn", `${q}%`).limit(40));
+      tasks.push(col().ilike("meaning_mn", `%${q}%`).limit(60));
+      rankOf = (r) => matchRank(r.meaning_mn, lq, false);
     } else {
-      const plain = q.toLowerCase().replace(/\s+/g, "");
-      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).eq("pinyin_plain", plain).limit(20));
-      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).ilike("english", `%${q}%`).limit(40));
+      // Латин: англи утга ЭСВЭЛ пиньинь (тон тэмдэгтэй / тоотой / тоногүй)
+      const plain = lq
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9üv]/g, "");
+      const hasTone = /[1-5]/.test(plain);
+      const pq = plain.replace(/v/g, "ü");
+      if (plain) {
+        if (hasTone) {
+          const spaced = lq.replace(/(\d)(?=[a-z])/g, "$1 ").trim();
+          tasks.push(col().ilike("pinyin_num", `${spaced}%`).limit(40));
+        } else {
+          tasks.push(col().eq("pinyin_plain", plain).limit(30));
+          if (pq !== plain) tasks.push(col().eq("pinyin_plain", pq).limit(30));
+          tasks.push(col().ilike("pinyin_plain", `${plain}%`).limit(40));
+        }
+      }
+      tasks.push(col().ilike("pinyin", `${lq}%`).limit(30));
+      tasks.push(col().ilike("english", q).limit(30));
+      tasks.push(col().ilike("english", `to ${q}`).limit(30));
+      tasks.push(col().ilike("english", `${q} / %`).limit(30));
+      tasks.push(col().ilike("english", `to ${q} / %`).limit(30));
+      tasks.push(col().ilike("english", `% / ${q}`).limit(30));
+      tasks.push(col().ilike("english", `% / ${q} / %`).limit(30));
+      tasks.push(col().ilike("english", `%${q}%`).limit(60));
+      rankOf = (r) => {
+        const py = (r.pinyin ?? "").toLowerCase();
+        const pp = py.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zü]/g, "");
+        if (plain && !hasTone && (pp === plain || pp === pq)) return 0;
+        if (py === lq) return 0;
+        return matchRank(r.english, lq, true);
+      };
     }
+
     const parts = await Promise.all(tasks);
     const seen = new Set<number>();
     const rows: LexRow[] = [];
     for (const part of parts) for (const r of part.data ?? []) if (!seen.has(r.id)) { seen.add(r.id); rows.push(r); }
-    const rank = (r: LexRow) =>
-      (r.simplified === q ? 0 : 10) + (r.kind === "word" ? 0 : 5) + Math.min(r.simplified.length, 9) / 10;
-    rows.sort((a, b) => rank(a) - rank(b));
+    const score = (r: LexRow) =>
+      rankOf(r) * 10 + (r.kind === "word" ? 0 : 5) + Math.min(r.simplified.length, 9) / 10;
+    rows.sort((a, b) => score(a) - score(b));
     return rows
       .filter((r) => !skip.has(r.simplified))
       .slice(0, room)
@@ -172,7 +228,6 @@ async function searchLexicon(
         example_zh: null,
         example_pinyin: null,
         example_mn: null,
-        ai: r.mn_status === "draft" || r.mn_status === "none",
         lexicon: true,
       }));
   } catch {
