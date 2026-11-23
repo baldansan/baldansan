@@ -24,9 +24,9 @@ export function stopPronunciation(): void {
  * Богино клип (үгийн дуудлага) — глобал тоглуулагчийн clip сувгаар. Хичээлийн
  * урт аудио (track) тоглож байвал түр зогсооно, давхцахгүй.
  */
-export async function playAudioUrl(url: string): Promise<{ ok: boolean; error?: string }> {
+export async function playAudioUrl(url: string, rate = 1): Promise<{ ok: boolean; error?: string }> {
   if (typeof window === "undefined") {
     return { ok: false, error: "Audio unavailable" };
   }
-  return globalAudio.playClip(url);
+  return globalAudio.playClip(url, rate);
 }

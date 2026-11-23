@@ -216,6 +216,7 @@ export default function ExercisesModule({
 
   const [qi, setQi] = useState(0);
   const [speed, setSpeed] = useState<Speed>(1);
+  const [ttsError, setTtsError] = useState<string | null>(null);
   const [playing, setPlaying] = useState(false);
   const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
@@ -996,13 +997,18 @@ export default function ExercisesModule({
             className="bs-txt-play"
             onClick={() => {
               stopPronunciation();
-              void speakWithSavedSettings(q.script!, "zh-CN");
+              setTtsError(null);
+              void speakWithSavedSettings(q.script!, "zh-CN").then((r) => {
+                if (!r.ok && r.error) setTtsError(r.error);
+              });
             }}
             aria-label="Сонсох"
           >
             <span aria-hidden>🔊</span> Сонсох
           </button>
-          <span className="bs-ex-script-hint">Сонсоод хариул (бичвэр хариулсны дараа гарна)</span>
+          <span className="bs-ex-script-hint">
+            {ttsError ?? "Сонсоод хариул (бичвэр хариулсны дараа гарна)"}
+          </span>
         </div>
       ) : null}
 

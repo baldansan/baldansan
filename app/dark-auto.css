@@ -483,3 +483,26 @@ html[data-theme="dark"] .wn-pad-badge{color:var(--bs-green-700)}
 
 /* components/zahialga/zahialga.css (1) */
 html[data-theme="dark"] .zah-home-banner-badge{background-color:var(--bs-amber-50);color:#ff8a8a}
+
+/* Гүнзгий заах блок — dark: «Ханзны бүтэц», «язгуур» тэмдэг ялгарч харагдана */
+html[data-theme="dark"] .bs-deep{border-color:#3A3256}
+html[data-theme="dark"] .bs-deep-toggle{color:#F4F0FF}
+html[data-theme="dark"] .bs-deep-toggle-icon{background-color:#2A2045;border-color:#4A3F6B;color:#D9CCFF}
+html[data-theme="dark"] .bs-deep-block-title{color:#D9CCFF}
+html[data-theme="dark"] .bs-deep-part{background-color:#2A2540;border-color:#4A3F6B}
+html[data-theme="dark"] .bs-deep-part-c{color:#FFFFFF}
+html[data-theme="dark"] .bs-deep-part-meaning{color:#EDE9F6}
+html[data-theme="dark"] .bs-deep-part-role{color:#C9C0E0}
+html[data-theme="dark"] .bs-deep-part-badge{background-color:#5B3FB0;color:#FFFFFF}
+html[data-theme="dark"] .bs-deep-words li,
+html[data-theme="dark"] .bs-deep-ex,
+html[data-theme="dark"] .bs-deep-pair,
+html[data-theme="dark"] .bs-deep-drill,
+html[data-theme="dark"] .bs-deep-mistake{background-color:#2A2540;border-color:#4A3F6B}
+html[data-theme="dark"] .bs-deep-teach,
+html[data-theme="dark"] .bs-deep-bullets,
+html[data-theme="dark"] .bs-deep-step-body,
+html[data-theme="dark"] .bs-deep-ex-mn,
+html[data-theme="dark"] .bs-deep-why{color:#E4DEF3}
+html[data-theme="dark"] .bs-deep-ex-py,
+html[data-theme="dark"] .bs-deep-pair-side>span{color:#C9B6FF}

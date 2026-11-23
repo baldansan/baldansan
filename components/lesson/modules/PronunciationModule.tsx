@@ -5,8 +5,11 @@
 // Бүтцийг (teacher_mn, items[{zh,pinyin,tip_mn}]) ЭНД тодорхойлсон тул
 // types/lesson.ts-г өөрчлөх ШААРДЛАГАГҮЙ. Модулийн гэрээ: { lesson, onDone }.
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
+import { globalAudio } from "@/lib/audio/global-audio-store";
+import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
+import { stopSpeaking } from "@/lib/tts/speech";
 import "./pronunciation-module.css";
 
 type Speed = 0.5 | 0.75 | 1;
@@ -37,33 +40,29 @@ export default function PronunciationModule({
   const [pi, setPi] = useState(0); // аль үг
   const [speed, setSpeed] = useState<Speed>(1);
   const [playing, setPlaying] = useState(false);
+  const playToken = useRef(0);
 
   const item = items[pi];
   const total = items.length;
 
-  // === Тоглуулагч (зөвхөн TTS) ===
+  // === Тоглуулагч: эхлээд хүний бичлэг (audio-cmn / HSK 3.0), байхгүй бол zh-CN TTS ===
+  // Өмнө нь зөвхөн төхөөрөмжийн TTS ашигладаг, хятад дуу ачаалагдаагүй үед
+  // англи дуугаар уншдаг байсан. Одоо дуу ачаалагдахыг хүлээж, хурд бичлэгт ч үйлчилнэ.
   const stopAll = useCallback(() => {
-    if (typeof window !== "undefined" && "speechSynthesis" in window) {
-      window.speechSynthesis.cancel();
-    }
+    playToken.current += 1;
+    stopSpeaking();
+    globalAudio.stopClip();
     setPlaying(false);
   }, []);
 
   const playTTS = useCallback(
     (str: string, rate: number) => {
       stopAll();
-      if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
-      const u = new SpeechSynthesisUtterance(str);
-      u.lang = "zh-CN";
-      u.rate = rate;
-      const zh = window.speechSynthesis
-        .getVoices()
-        .find((v) => v.lang?.toLowerCase().startsWith("zh"));
-      if (zh) u.voice = zh;
-      u.onend = () => setPlaying(false);
-      u.onerror = () => setPlaying(false);
+      const token = playToken.current;
       setPlaying(true);
-      window.speechSynthesis.speak(u);
+      void playChineseWordAudio(str, rate).finally(() => {
+        if (playToken.current === token) setPlaying(false);
+      });
     },
     [stopAll]
   );

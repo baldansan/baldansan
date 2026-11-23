@@ -207,7 +207,7 @@ export const globalAudio = {
    * Богино клип (үгийн дуудлага). Track тоглож байвал түр зогсооно.
    * Дууссан/алдаа гарсан эсэхээр resolve хийнэ — tts fallback-д хэрэгтэй.
    */
-  playClip(src: string): Promise<{ ok: boolean; error?: string }> {
+  playClip(src: string, rate = 1): Promise<{ ok: boolean; error?: string }> {
     const a = ensureClipEl();
     if (!a) return Promise.resolve({ ok: false, error: "Audio unavailable" });
     if (trackEl && !trackEl.paused) trackEl.pause();
@@ -235,6 +235,8 @@ export const globalAudio = {
         a.pause();
         a.src = src;
         a.currentTime = 0;
+        a.playbackRate = rate;
+        a.defaultPlaybackRate = rate;
       } catch {
         cleanup();
         resolve({ ok: false, error: "Audio playback failed" });

@@ -16,6 +16,9 @@ export type SpeakResult = {
 export const TTS_UNAVAILABLE_MESSAGE =
   "Энэ төхөөрөмж дээр уншуулах боломжгүй байна.";
 
+export const NO_ZH_VOICE_MESSAGE =
+  "Энэ төхөөрөмжид хятад дуу (中文 voice) суугаагүй байна. Тохиргоо → Хэл/Дуу хоолойгоос хятад дуу нэмнэ үү, эсвэл Chrome/Safari ашиглана уу.";
+
 let voicesCache: SpeechSynthesisVoice[] = [];
 /** Shared in-flight voice load — all TTS callers reuse one promise (not per SpeakerButton). */
 let voicesLoadPromise: Promise<SpeechSynthesisVoice[]> | null = null;
@@ -167,6 +170,11 @@ export async function speakText(
       }
       if (voice) {
         utterance.voice = voice;
+      } else if (/^(zh|cmn)/i.test(options.lang) && voices.length > 0) {
+        // Хятад дуу суулгаагүй төхөөрөмж ханзыг англи дуугаар «уншдаг» байсан —
+        // ойлгомжгүй чимээ гаргахын оронд ойлгомжтой мэдээлэл өгнө.
+        resolve({ ok: false, error: NO_ZH_VOICE_MESSAGE });
+        return;
       }
 
       utterance.onend = () => resolve({ ok: true });

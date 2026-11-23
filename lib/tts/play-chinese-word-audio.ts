@@ -11,7 +11,10 @@ function isSentence(text: string): boolean {
 }
 
 /** Recorded cmn-{hanzi}.mp3 first; on 404/error fall back to zh-CN TTS (slower). */
-export async function playChineseWordAudio(text: string): Promise<{ ok: boolean }> {
+export async function playChineseWordAudio(
+  text: string,
+  rate = 1
+): Promise<{ ok: boolean }> {
   const trimmed = text.trim();
   if (!trimmed) return { ok: false };
 
@@ -20,7 +23,7 @@ export async function playChineseWordAudio(text: string): Promise<{ ok: boolean 
   if (isSentence(trimmed)) {
     const direct = await speakText(trimmed, {
       lang: "zh-CN",
-      rate: CHINESE_TTS_FALLBACK_RATE,
+      rate: CHINESE_TTS_FALLBACK_RATE * rate,
     });
     return { ok: direct.ok };
   }
@@ -29,15 +32,15 @@ export async function playChineseWordAudio(text: string): Promise<{ ok: boolean 
   primeSpeech();
 
   // 1) Human recording (audio-cmn), 2) HSK 3.0 recording, 3) device TTS.
-  const audioResult = await playAudioUrl(buildAudioCmnUrl(trimmed));
+  const audioResult = await playAudioUrl(buildAudioCmnUrl(trimmed), rate);
   if (audioResult.ok) return { ok: true };
 
-  const hsk30Result = await playAudioUrl(buildHsk30AudioUrl(trimmed));
+  const hsk30Result = await playAudioUrl(buildHsk30AudioUrl(trimmed), rate);
   if (hsk30Result.ok) return { ok: true };
 
   const tts = await speakText(trimmed, {
     lang: "zh-CN",
-    rate: CHINESE_TTS_FALLBACK_RATE,
+    rate: CHINESE_TTS_FALLBACK_RATE * rate,
   });
   return { ok: tts.ok };
 }
