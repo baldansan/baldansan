@@ -33,6 +33,8 @@ export type DictionaryWordLike = {
   example_zh: string | null;
   example_pinyin: string | null;
   example_mn: string | null;
+  ai?: boolean;
+  lexicon?: boolean;
 };
 
 const HAN_RE = /\p{Script=Han}/u;
@@ -121,7 +123,12 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
           ) : null}
         </>
       ) : null}
-      <WordSenses wordId={word.id} onLoaded={setRichSenses} />
+      {word.ai ? (
+        <p className="mt-1 text-xs text-amber-700">
+          {tr(locale, "AI орчуулга — багш хараахан хянаагүй ноорог. Эх сурвалж: CC-CEDICT (CC BY-SA 4.0).")}
+        </p>
+      ) : null}
+      {word.id > 0 ? <WordSenses wordId={word.id} onLoaded={setRichSenses} /> : null}
 
       <div className="mt-3 flex flex-wrap gap-2">
         <button type="button" className="app-btn-primary !min-h-[40px] !py-0 px-4 text-sm" onClick={() => void handleSave()}>

@@ -107,9 +107,75 @@ export async function GET(request: Request) {
       return (a.frequency ?? 999999) - (b.frequency ?? 999999);
     });
 
-    return Response.json({ query: q, results: results.slice(0, limit) });
+    const top = results.slice(0, limit);
+
+    // HSK-д байхгүй үгийг CC-CEDICT лексиконоос нөхнө (id < 0 = лексикон; meaning_mn нь AI ноорог).
+    if (top.length < limit) {
+      const lex = await searchLexicon(supabase, q, limit - top.length, new Set(top.map((w) => w.simplified)));
+      top.push(...lex);
+    }
+
+    return Response.json({ query: q, results: top });
   } catch (err) {
     const message = err instanceof Error ? err.message : "Хайлтад алдаа гарлаа";
     return Response.json({ error: message }, { status: 500 });
+  }
+}
+
+type LexRow = {
+  id: number; simplified: string; traditional: string | null; pinyin: string;
+  english: string; kind: string; meaning_mn: string | null; mn_status: string;
+};
+
+const LEX_SELECT = "id, simplified, traditional, pinyin, english, kind, meaning_mn, mn_status";
+
+async function searchLexicon(
+  supabase: NonNullable<ReturnType<typeof searchClient>>,
+  q: string,
+  room: number,
+  skip: Set<string>
+) {
+  try {
+    const tasks: PromiseLike<{ data: LexRow[] | null }>[] = [];
+    if (HAS_CJK.test(q)) {
+      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).eq("simplified", q).limit(10));
+      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).ilike("simplified", `${q}%`).limit(40));
+    } else if (HAS_CYRILLIC.test(q)) {
+      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).ilike("meaning_mn", `%${q}%`).limit(40));
+    } else {
+      const plain = q.toLowerCase().replace(/\s+/g, "");
+      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).eq("pinyin_plain", plain).limit(20));
+      tasks.push(supabase.from("dictionary_lexicon").select(LEX_SELECT).ilike("english", `%${q}%`).limit(40));
+    }
+    const parts = await Promise.all(tasks);
+    const seen = new Set<number>();
+    const rows: LexRow[] = [];
+    for (const part of parts) for (const r of part.data ?? []) if (!seen.has(r.id)) { seen.add(r.id); rows.push(r); }
+    const rank = (r: LexRow) =>
+      (r.simplified === q ? 0 : 10) + (r.kind === "word" ? 0 : 5) + Math.min(r.simplified.length, 9) / 10;
+    rows.sort((a, b) => rank(a) - rank(b));
+    return rows
+      .filter((r) => !skip.has(r.simplified))
+      .slice(0, room)
+      .map((r) => ({
+        id: -r.id,
+        simplified: r.simplified,
+        traditional: r.traditional,
+        pinyin: r.pinyin,
+        pos: null,
+        radical: null,
+        frequency: null,
+        hsk_level: null,
+        hsk_old: null,
+        meaning_en: r.english,
+        meaning_mn: r.meaning_mn,
+        example_zh: null,
+        example_pinyin: null,
+        example_mn: null,
+        ai: r.mn_status === "draft" || r.mn_status === "none",
+        lexicon: true,
+      }));
+  } catch {
+    return [];
   }
 }
