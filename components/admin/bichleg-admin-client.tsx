@@ -1,5 +1,6 @@
 "use client";
 
+import { BichlegResegmentCard } from "@/components/admin/bichleg-resegment-card";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useState } from "react";
@@ -306,6 +307,8 @@ export function BichlegAdminClient({ initialSeries }: Props) {
       </div>
 
       {error ? <AdminAlert error={error} /> : null}
+
+      {!selectedId ? <BichlegResegmentCard /> : null}
 
       {!selectedId ? (
         <AdminEditorSection
