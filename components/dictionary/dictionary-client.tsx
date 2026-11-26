@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { DrawInputSheet } from "@/components/dictionary/draw-input-sheet";
@@ -15,6 +15,14 @@ import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
+import { SaveWordButton, type SaveState } from "@/components/dictionary/save-word-button";
+import { WordSenses } from "@/components/dictionary/word-senses";
+import { SavedWordsHint } from "@/components/review/saved-words-hint";
+import {
+  getSavedStatusForWords,
+  removeWordFromStudy,
+  saveWordFromLesson,
+} from "@/lib/supabase/saved-words";
 
 type DictionaryWord = {
   id: number;
@@ -36,7 +44,27 @@ type DictionaryWord = {
   lexicon?: boolean;
 };
 
-const SEARCH_DEBOUNCE_MS = 350;
+const SEARCH_DEBOUNCE_MS = 220;
+const RECENT_KEY = "bs-dict-recent";
+const RECENT_MAX = 8;
+
+function readRecent(): string[] {
+  try {
+    const raw = window.localStorage.getItem(RECENT_KEY);
+    const arr = raw ? (JSON.parse(raw) as unknown) : [];
+    return Array.isArray(arr) ? arr.filter((x): x is string => typeof x === "string").slice(0, RECENT_MAX) : [];
+  } catch {
+    return [];
+  }
+}
+
+function writeRecent(list: string[]) {
+  try {
+    window.localStorage.setItem(RECENT_KEY, JSON.stringify(list.slice(0, RECENT_MAX)));
+  } catch {
+    /* хувийн горимд localStorage хаалттай байж болно */
+  }
+}
 
 const EXAMPLES = ["爱情", "xuéxí", "сурах", "уух", "谢谢"];
 
@@ -74,13 +102,20 @@ function ResultRow({
   word,
   selected = false,
   onSelect,
+  onOpen,
+  save,
+  onToggleSave,
 }: {
   word: DictionaryWord;
   selected?: boolean;
   onSelect?: () => void;
+  onOpen?: () => void;
+  save: SaveState;
+  onToggleSave: () => void;
 }) {
   const locale = useUiLocale();
   const [open, setOpen] = useState(false);
+  const [richSenses, setRichSenses] = useState(false);
   const badge = levelBadge(word);
   const meaning = word.meaning_mn || word.meaning_en || "";
   const hasExample = Boolean(word.example_zh);
@@ -89,25 +124,35 @@ function ResultRow({
 
   return (
     <div className={`rounded-2xl border bg-white bs-dict-row${selected ? " bs-dict-row--on border-emerald-400 ring-2 ring-emerald-200" : " border-[var(--app-border)]"}`}>
-      <button
-        type="button"
-        onClick={() => (onSelect ? onSelect() : setOpen((v) => !v))}
-        className="flex w-full items-center gap-3 px-4 py-3 text-left"
-        aria-current={selected ? "true" : undefined}
-      >
-        <span className="min-w-0 flex-1">
+      <div className="flex items-start gap-1 pr-2">
+        <button
+          type="button"
+          onClick={() => {
+            if (onSelect) onSelect();
+            else {
+              if (!open) onOpen?.();
+              setOpen((v) => !v);
+            }
+          }}
+          className="min-w-0 flex-1 px-4 py-3 text-left"
+          aria-current={selected ? "true" : undefined}
+          aria-expanded={onSelect ? undefined : open}
+        >
           <span className="flex flex-wrap items-baseline gap-x-2">
-            <span className="text-2xl font-bold text-[var(--app-text)]">
+            <span className="hanzi text-2xl font-bold text-[var(--app-text)]">
               {word.simplified}
             </span>
             {showTraditional ? (
-              <span className="text-sm text-slate-400">{word.traditional}</span>
+              <span className="hanzi text-sm text-slate-400">{word.traditional}</span>
             ) : null}
             <span className="text-sm font-semibold text-emerald-700">
               {word.pinyin}
             </span>
           </span>
-          <span className="mt-0.5 block text-sm text-[var(--app-muted)]" translate="no">
+          <span
+            className={`mt-0.5 block text-sm text-[var(--app-muted)]${open ? "" : " bs-dict-clamp"}`}
+            translate="no"
+          >
             {meaning}
           </span>
           <span className="mt-1 flex flex-wrap items-center gap-1.5">
@@ -123,27 +168,36 @@ function ResultRow({
             ) : null}
             {!onSelect ? (
               <span className="text-[10px] text-slate-400">
-                {hasExample ? tr(locale, open ? "жишээ хаах ▴" : "жишээ ▾") : open ? "▴" : "▾"}
+                {tr(locale, open ? "хаах ▴" : "дэлгэрэнгүй ▾")}
               </span>
             ) : null}
           </span>
-        </span>
-        <SpeakerButton
-          text={word.simplified}
-          lang="zh-CN"
-          hskLevel={word.hsk_level != null ? String(word.hsk_level) : undefined}
-          size="sm"
-          showInlineError={false}
-          stopPropagation
-        />
-      </button>
+        </button>
+        <div className="flex shrink-0 items-center gap-1.5 pt-3">
+          <SpeakerButton
+            text={word.simplified}
+            lang="zh-CN"
+            hskLevel={word.hsk_level != null ? String(word.hsk_level) : undefined}
+            size="sm"
+            showInlineError={false}
+            stopPropagation
+          />
+          <SaveWordButton variant="icon" state={save} onToggle={onToggleSave} />
+        </div>
+      </div>
 
       {open && !onSelect ? (
         <div className="border-t border-[var(--app-border)] px-4 py-3">
-          {hasExample ? (
+          {word.meaning_mn && word.meaning_en && !richSenses ? (
+            <p className="mb-2 text-xs text-[var(--app-muted)]" translate="no">
+              {word.meaning_en}
+            </p>
+          ) : null}
+          {word.id > 0 ? <WordSenses wordId={word.id} onLoaded={setRichSenses} /> : null}
+          {hasExample && !richSenses ? (
           <div className="flex items-start gap-2">
             <div className="min-w-0 flex-1" translate="no">
-              <p className="text-base font-semibold text-[var(--app-text)]">
+              <p className="hanzi text-base font-semibold text-[var(--app-text)]">
                 {word.example_zh}
               </p>
               {word.example_pinyin ? (
@@ -168,6 +222,9 @@ function ResultRow({
             ) : null}
           </div>
           ) : null}
+          <div className="mt-3">
+            <SaveWordButton variant="full" state={save} onToggle={onToggleSave} />
+          </div>
           {hasExample ? <ConfusableChars text={word.simplified} /> : null}
           <ReportWrongButton wordId={word.id} simplified={word.simplified} currentMn={word.meaning_mn} />
         </div>
@@ -189,6 +246,89 @@ export function DictionaryClient() {
   const [selectedId, setSelectedId] = useState<number | null>(null);
   const desktop = useIsDesktop();
   const requestIdRef = useRef(0);
+  const inputRef = useRef<HTMLInputElement | null>(null);
+  const [recent, setRecent] = useState<string[]>([]);
+  const [loggedIn, setLoggedIn] = useState<boolean | null>(null);
+  const [savedSet, setSavedSet] = useState<Set<string>>(new Set());
+  const [busyZh, setBusyZh] = useState<string | null>(null);
+  const [toast, setToast] = useState<{ text: string; ok: boolean } | null>(null);
+
+  useEffect(() => {
+    setRecent(readRecent());
+  }, []);
+
+  const rememberQuery = useCallback((raw: string) => {
+    const q = raw.trim();
+    if (!q) return;
+    setRecent((prev) => {
+      const next = [q, ...prev.filter((x) => x !== q)].slice(0, RECENT_MAX);
+      writeRecent(next);
+      return next;
+    });
+  }, []);
+
+  // Үр дүн ирэх бүрд аль үг аль хэдийн хадгалагдсаныг нэг дор шалгана.
+  useEffect(() => {
+    let alive = true;
+    getSavedStatusForWords(
+      results.map((w) => ({ zh: w.simplified, hskWordId: w.id > 0 ? w.id : null }))
+    )
+      .then((r) => {
+        if (!alive) return;
+        setLoggedIn(r.loggedIn);
+        setSavedSet(r.saved);
+      })
+      .catch(() => alive && setLoggedIn(false));
+    return () => {
+      alive = false;
+    };
+  }, [results]);
+
+  useEffect(() => {
+    if (!toast) return;
+    const t = window.setTimeout(() => setToast(null), 6000);
+    return () => window.clearTimeout(t);
+  }, [toast]);
+
+  async function toggleSave(word: DictionaryWord) {
+    const zh = word.simplified;
+    if (busyZh) return;
+    setBusyZh(zh);
+    if (savedSet.has(zh)) {
+      const r = await removeWordFromStudy(zh);
+      if (r.ok) {
+        setSavedSet((prev) => {
+          const next = new Set(prev);
+          next.delete(zh);
+          return next;
+        });
+        setToast({ text: "Цээжлэх үгсээс хаслаа", ok: false });
+      } else if (r.error) setToast({ text: r.error, ok: false });
+    } else {
+      const r = await saveWordFromLesson({
+        zh,
+        pinyin: word.pinyin ?? undefined,
+        mn: word.meaning_mn ?? word.meaning_en ?? undefined,
+      });
+      if (r.ok) {
+        setSavedSet((prev) => new Set(prev).add(zh));
+        rememberQuery(query);
+        setToast({
+          text: r.isFunctionWord
+            ? "Дүрмийн үг тул зөвхөн жагсаалтад хадгаллаа ✓"
+            : "Цээжлэх үгсэд нэмлээ ✓",
+          ok: true,
+        });
+      } else if (r.error) setToast({ text: r.error, ok: false });
+    }
+    setBusyZh(null);
+  }
+
+  const saveStateOf = (word: DictionaryWord): SaveState => ({
+    loggedIn,
+    saved: savedSet.has(word.simplified),
+    busy: busyZh === word.simplified,
+  });
   const selectedWord = results.find((w) => w.id === selectedId) ?? null;
 
   // PC: хайлтын үр дүн ирэхэд эхний үгийг автоматаар сонгоно
@@ -271,42 +411,93 @@ export function DictionaryClient() {
     return () => window.clearTimeout(timer);
   }, [query, radical]);
 
+  const trimmed = query.trim();
+  const hskResults = results.filter((w) => w.id > 0);
+  const lexResults = results.filter((w) => w.id < 0);
+
+  const renderRow = (word: DictionaryWord) => (
+    <div key={word.id} data-word-id={word.id}>
+      <ResultRow
+        word={word}
+        selected={desktop && word.id === selectedId}
+        onSelect={
+          desktop
+            ? () => {
+                setSelectedId(word.id);
+                rememberQuery(query);
+              }
+            : undefined
+        }
+        onOpen={() => rememberQuery(query)}
+        save={saveStateOf(word)}
+        onToggleSave={() => void toggleSave(word)}
+      />
+    </div>
+  );
+
   return (
     <MobileAppShell activeTab="kanji" mainClassName={SHELL_MAIN_NARROW} desktopWidth="wide">
       <div className="bs-dict-two">
       <div className="bs-dict-list">
       <MobilePageHeader
         title={`${tr(locale, "Толь бичиг")} 📖`}
-        subtitle={tr(locale, "Ханз · пиньинь · монгол утгаар хайх")}
+        subtitle={tr(locale, "Ханз · пиньинь · монгол · англиар хайх")}
       />
 
-      <div className="mb-3 flex gap-2">
-        <input
-          type="search"
-          autoFocus
-          lang="zh-Hans"
-          placeholder="爱 / ai / хайр …"
-          value={query}
-          onChange={(e) => {
-            setQuery(e.target.value);
-            if (e.target.value.trim()) setRadical(null);
-          }}
-          className="min-w-0 flex-1 rounded-2xl border border-[var(--app-border)] bg-white px-4 py-3 text-base outline-none ring-emerald-500 placeholder:text-slate-400 focus:border-emerald-300 focus:ring-2"
-        />
+      <div className="bs-dict-searchbar">
+        <div className="bs-dict-inputwrap">
+          <span className="bs-dict-inputicon" aria-hidden>🔍</span>
+          <input
+            ref={inputRef}
+            type="text"
+            inputMode="search"
+            enterKeyHint="search"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="none"
+            spellCheck={false}
+            autoFocus
+            lang="zh-Hans"
+            aria-label={tr(locale, "Толь бичгээс хайх")}
+            placeholder={tr(locale, "爱 · ai · хайр · love")}
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              if (e.target.value.trim()) setRadical(null);
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                rememberQuery(query);
+                (e.target as HTMLInputElement).blur();
+              }
+            }}
+            className="bs-dict-input"
+          />
+          {loading ? <span className="bs-dict-spin" aria-label={tr(locale, "Хайж байна…")} /> : null}
+          {query && !loading ? (
+            <button
+              type="button"
+              className="bs-dict-clear"
+              aria-label={tr(locale, "Арилгах")}
+              onClick={() => {
+                setQuery("");
+                inputRef.current?.focus();
+              }}
+            >
+              ✕
+            </button>
+          ) : null}
+        </div>
         <button
           type="button"
           onClick={() => setDrawOpen(true)}
           aria-label={tr(locale, "Зурж хайх")}
-          className="flex h-[50px] w-[50px] shrink-0 items-center justify-center rounded-2xl bg-emerald-500 text-xl text-white shadow-sm"
+          className="bs-dict-drawbtn"
         >
-          ✍️
+          <span aria-hidden>✍️</span>
+          <span className="bs-dict-drawbtn-label">{tr(locale, "Зурах")}</span>
         </button>
       </div>
-
-      <Link href="/dictionary/levels" className="bs-lvw-entry">
-        <span>📚 HSK 1–6 түвшний бүх үг</span>
-        <span className="bs-lvw-entry-sub">♥ дарж цээжлэх жагсаалтаа үүсгэ →</span>
-      </Link>
 
       <DrawInputSheet
         open={drawOpen}
@@ -318,6 +509,31 @@ export function DictionaryClient() {
       />
 
       {!searched && !loading ? (
+        <>
+        {recent.length > 0 ? (
+          <div className="mb-3">
+            <div className="flex items-center justify-between">
+              <p className="text-xs font-bold text-[var(--app-muted)]">🕘 {tr(locale, "Сүүлд хайсан")}</p>
+              <button
+                type="button"
+                className="text-xs font-semibold text-[var(--app-muted)] underline"
+                onClick={() => {
+                  setRecent([]);
+                  writeRecent([]);
+                }}
+              >
+                {tr(locale, "Арилгах")}
+              </button>
+            </div>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {recent.map((r) => (
+                <button key={r} type="button" onClick={() => setQuery(r)} className="app-chip" translate="no">
+                  {r}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : null}
         <MobileCard>
           <p className="text-sm font-semibold text-[var(--app-text)]">
             {tr(locale, "Юугаар ч хайж болно:")}
@@ -326,6 +542,7 @@ export function DictionaryClient() {
             <li>• {tr(locale, "Ханзаар — 爱情")}</li>
             <li>• {tr(locale, "Пиньиньгээр — ai, xuexi (аялгагүй ч болно)")}</li>
             <li>• {tr(locale, "Монголоор — хайр, сурах")}</li>
+            <li>• {tr(locale, "Англиар — love, study")}</li>
           </ul>
           <div className="mt-3 flex flex-wrap gap-2">
             {EXAMPLES.map((ex) => (
@@ -340,6 +557,9 @@ export function DictionaryClient() {
               </button>
             ))}
           </div>
+          <p className="mt-3 text-xs font-semibold text-[var(--bs-green-700)]">
+            ＋ {tr(locale, "Олсон үгийнхээ хажуугийн ＋ товчийг дарвал цээжлэх үгсэд чинь нэмэгдэнэ.")}
+          </p>
           <p className="mt-4 text-sm font-semibold text-[var(--app-text)]">
             🧩 {tr(locale, "Язгуураар үзэх")}:
           </p>
@@ -352,17 +572,28 @@ export function DictionaryClient() {
                   setQuery("");
                   setRadical(item.r);
                 }}
-                className="inline-flex items-baseline gap-1 rounded-xl bg-white px-2.5 py-1.5 text-sm ring-1 ring-slate-200"
+                className="bs-dict-radical"
               >
                 <span className="font-bold">{item.r}</span>
-                <span className="text-[10px] text-slate-500" translate="no">{item.mn}</span>
+                <span className="text-[10px] text-[var(--app-muted)]" translate="no">{item.mn}</span>
               </button>
             ))}
           </div>
         </MobileCard>
+        <div className="mt-3 grid grid-cols-2 gap-2">
+          <Link href="/review/words" className="bs-lvw-entry !mb-0">
+            <span>⭐ {tr(locale, "Миний үгс")}</span>
+            <span className="bs-lvw-entry-sub">{tr(locale, "Хадгалсан үгээ давтах →")}</span>
+          </Link>
+          <Link href="/dictionary/levels" className="bs-lvw-entry !mb-0">
+            <span>📚 {tr(locale, "HSK 1–6 бүх үг")}</span>
+            <span className="bs-lvw-entry-sub">{tr(locale, "Түвшнээр үзэх →")}</span>
+          </Link>
+        </div>
+        </>
       ) : null}
 
-      {radical && !loading && !query.trim() ? (
+      {radical && !loading && !trimmed ? (
         <div className="mb-2 flex items-center gap-2">
           <p className="text-sm font-bold text-[var(--app-text)]">
             {radical} <span translate="no">{COMMON_RADICALS.find((x) => x.r === radical)?.mn ?? ""}</span> ·{" "}
@@ -378,7 +609,7 @@ export function DictionaryClient() {
         </div>
       ) : null}
 
-      {loading ? (
+      {loading && results.length === 0 ? (
         <p className="py-4 text-center text-sm text-[var(--app-muted)]">
           {tr(locale, "Хайж байна…")}
         </p>
@@ -391,24 +622,31 @@ export function DictionaryClient() {
       ) : null}
 
       {!loading && searched && !error && results.length === 0 ? (
-        <MobileCard className="text-center">
-          <p className="text-sm text-[var(--app-muted)]">
-            &laquo;<span translate="no">{query.trim()}</span>&raquo; {tr(locale, "олдсонгүй. Өөр үгээр хайгаад үзээрэй.")}
+        <MobileCard>
+          <p className="text-sm font-semibold text-[var(--app-text)]">
+            &laquo;<span translate="no">{trimmed}</span>&raquo; {tr(locale, "олдсонгүй.")}
           </p>
+          <ul className="mt-2 space-y-1 text-sm text-[var(--app-muted)]">
+            <li>• {tr(locale, "Үгээ богиносгоод үз — жишээ нь зөвхөн үндсийг нь бич.")}</li>
+            <li>• {tr(locale, "Монгол үгийг кирилл үсгээр бич (surah биш — сурах).")}</li>
+            <li>• {tr(locale, "Ханзыг нь мэдэхгүй бол гараараа зурж хай.")}</li>
+          </ul>
+          <button type="button" className="bs-dict-save-full mt-3" onClick={() => setDrawOpen(true)}>
+            ✍️ {tr(locale, "Зурж хайх")}
+          </button>
         </MobileCard>
       ) : null}
 
       {results.length > 0 ? (
-        <div className="space-y-2 pb-6">
-          {results.map((word) => (
-            <div key={word.id} data-word-id={word.id}>
-              <ResultRow
-                word={word}
-                selected={desktop && word.id === selectedId}
-                onSelect={desktop ? () => setSelectedId(word.id) : undefined}
-              />
-            </div>
-          ))}
+        <div className={`space-y-2 pb-6${loading ? " opacity-60" : ""}`}>
+          {trimmed && hskResults.length > 0 ? (
+            <p className="bs-dict-group">{tr(locale, "HSK үгс")} · {hskResults.length}</p>
+          ) : null}
+          {hskResults.map(renderRow)}
+          {lexResults.length > 0 ? (
+            <p className="bs-dict-group">{tr(locale, "Нэмэлт үгс")} · {lexResults.length}</p>
+          ) : null}
+          {lexResults.map(renderRow)}
         </div>
       ) : null}
       <p className="pb-6 pt-2 text-center text-[11px] leading-4 text-[var(--app-muted)]" translate="no">
@@ -416,9 +654,22 @@ export function DictionaryClient() {
       </p>
       </div>
       <aside className="bs-dict-detail bs-desk-only">
-        <WordDetailPanel word={selectedWord} />
+        <WordDetailPanel
+          word={selectedWord}
+          save={selectedWord ? saveStateOf(selectedWord) : undefined}
+          onToggleSave={selectedWord ? () => void toggleSave(selectedWord) : undefined}
+        />
       </aside>
       </div>
+      {toast ? (
+        <div className="bs-dict-toast" role="status">
+          {toast.ok ? (
+            <SavedWordsHint message={tr(locale, toast.text)} refreshKey={toast.text + savedSet.size} />
+          ) : (
+            <p className="text-xs font-semibold">{tr(locale, toast.text)}</p>
+          )}
+        </div>
+      ) : null}
     </MobileAppShell>
   );
 }

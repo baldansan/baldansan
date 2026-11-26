@@ -1993,3 +1993,43 @@ html[data-theme="dark"] .bs-hz-role--pho{background:#232a52;color:#a9b6ff;border
 .bs-pushask-yes{flex:1;min-height:46px;border:0;border-radius:14px;background:var(--bs-green);color:#fff;font-size:15px;font-weight:800;cursor:pointer}
 .bs-pushask-yes:disabled{opacity:.6}
 .bs-pushask-no{min-height:46px;padding:0 16px;border:1px solid var(--bs-line);border-radius:14px;background:var(--bs-card);color:var(--bs-muted);font-size:14px;font-weight:700;cursor:pointer}
+
+/* --- Толь бичиг: хайлтын мөр, хадгалах товч (2026-11-26) --- */
+.bs-dict-searchbar{position:sticky;top:0;z-index:5;display:flex;gap:8px;margin:0 -4px 12px;padding:6px 4px;background:var(--app-bg,var(--bs-bg,#fff))}
+.bs-dict-inputwrap{position:relative;flex:1;min-width:0}
+.bs-dict-inputicon{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:15px;opacity:.6;pointer-events:none}
+.bs-dict-input{width:100%;height:52px;padding:0 44px 0 40px;border:1.5px solid var(--bs-line);border-radius:16px;background:var(--bs-card);color:var(--bs-ink);font-size:17px;outline:none}
+.bs-dict-input::placeholder{color:var(--bs-muted);font-size:14px}
+.bs-dict-input:focus{border-color:var(--app-primary);box-shadow:0 0 0 3px color-mix(in srgb,var(--app-primary) 18%,transparent)}
+.bs-dict-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:999px;background:var(--bs-green-50);color:var(--bs-green-700);font-size:13px;font-weight:800}
+.bs-dict-spin{position:absolute;right:14px;top:50%;width:18px;height:18px;margin-top:-9px;border:2px solid var(--bs-line);border-top-color:var(--app-primary);border-radius:999px;animation:bs-dict-spin .7s linear infinite}
+@keyframes bs-dict-spin{to{transform:rotate(360deg)}}
+.bs-dict-drawbtn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;width:56px;height:52px;flex-shrink:0;border-radius:16px;background:var(--app-primary);color:#fff;font-size:18px;line-height:1}
+.bs-dict-drawbtn-label{font-size:10px;font-weight:800}
+.bs-dict-radical{display:inline-flex;align-items:baseline;gap:4px;padding:6px 10px;border-radius:12px;background:var(--bs-card);border:1px solid var(--bs-line);color:var(--bs-ink);font-size:14px}
+.bs-dict-group{margin:10px 2px 2px;font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--bs-muted)}
+.bs-dict-clamp{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bs-dict-save{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;flex-shrink:0;border-radius:999px;border:1.5px solid var(--app-primary);background:var(--bs-card);color:var(--app-primary);font-size:18px;font-weight:800;line-height:1;text-decoration:none}
+.bs-dict-save--on{background:var(--app-primary);color:#fff}
+.bs-dict-save:disabled{opacity:.5}
+.bs-dict-save-full{display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;padding:0 16px;border-radius:14px;background:var(--app-primary);color:#fff;font-size:14px;font-weight:800;text-decoration:none}
+.bs-dict-save-full--on{background:var(--bs-green-50);color:var(--bs-green-700);border:1.5px solid var(--app-primary)}
+.bs-dict-save-full:disabled{opacity:.6}
+.bs-dict-toast{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 88px);transform:translateX(-50%);z-index:60;width:max-content;max-width:calc(100vw - 32px);padding:10px 14px;border-radius:14px;background:var(--bs-card);color:var(--bs-ink);border:1px solid var(--bs-line);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.bs-dict-toast p{margin:0}
+
+/* --- Миний үгс: толиос хадгалсан нэмэлт үгсийн карт --- */
+.bs-extra-start{display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;margin:0 0 12px;border-radius:14px;background:var(--app-primary);color:#fff;font-size:14px;font-weight:800}
+.bs-extra-cards{margin:0 0 14px;padding:12px;border:1px solid var(--bs-line);border-radius:18px;background:var(--bs-card)}
+.bs-extra-cards-top{display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:800;color:var(--bs-muted)}
+.bs-extra-cards-close{font-size:12px;font-weight:800;color:var(--bs-muted)}
+.bs-extra-card{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;min-height:190px;margin-top:10px;padding:18px 14px;border-radius:16px;background:var(--bs-green-50);color:var(--bs-ink);text-align:center}
+.bs-extra-card-zh{font-size:44px;font-weight:800;line-height:1.15}
+.bs-extra-card-py{font-size:16px;font-weight:700;color:var(--bs-green-700)}
+.bs-extra-card-mn{font-size:15px;font-weight:600;line-height:1.4}
+.bs-extra-card-hint{font-size:12px;font-weight:600;color:var(--bs-muted)}
+.bs-extra-cards-speak{display:flex;justify-content:center;margin-top:8px}
+.bs-extra-cards-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.bs-extra-btn{min-height:46px;padding:0 14px;border-radius:14px;font-size:14px;font-weight:800}
+.bs-extra-btn--again{background:var(--bs-card);border:1.5px solid var(--bs-line);color:var(--bs-ink)}
+.bs-extra-btn--know{background:var(--app-primary);color:#fff}

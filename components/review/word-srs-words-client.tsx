@@ -16,6 +16,7 @@ import {
   unmarkWordMastered,
   type SrsWordListItem,
 } from "@/lib/supabase/user-word-srs";
+import { SavedExtraFlashcards } from "@/components/review/saved-extra-flashcards";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 type Filter = "all" | "bichleg";
@@ -40,6 +41,7 @@ export function WordSrsWordsClient() {
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>("active");
   const [busyWordId, setBusyWordId] = useState<number | null>(null);
+  const [cardsOpen, setCardsOpen] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -152,8 +154,13 @@ export function WordSrsWordsClient() {
         >
           ✓ Цээжилсэн {masteredItems.length}
         </button>
+      </div>
+      <div className="bs-srs-words-filters">
         <Link href="/dictionary/levels" className="bs-srs-words-filter bs-srs-words-add">
           + HSK үгсээс нэмэх
+        </Link>
+        <Link href="/dictionary" className="bs-srs-words-filter bs-srs-words-add">
+          + Толиос хайж нэмэх
         </Link>
       </div>
       <div className="bs-srs-words-filters">
@@ -192,7 +199,7 @@ export function WordSrsWordsClient() {
             ? "Цээжилсэн үг хараахан алга. Сайн мэддэг үгэн дээрээ «Цээжилсэн ✓» дараарай."
             : filter === "bichleg"
               ? "Бичлэгээс нэмсэн үг алга."
-              : "Цээжилж буй үг алга. «+ HSK үгсээс нэмэх» дээр дарж үгээ сонгоорой."}
+              : "Цээжилж буй үг алга. «+ HSK үгсээс нэмэх» эсвэл «+ Толиос хайж нэмэх» дээр дарж үгээ сонгоорой."}
         </p>
       ) : (
         <ul className="bs-srs-words-list">
@@ -248,10 +255,17 @@ export function WordSrsWordsClient() {
 
       {orphans.length > 0 ? (
         <section className="bs-srs-words-orphan">
-          <h2 className="bs-srs-words-orphan-title">Толь бичигт байхгүй үгс</h2>
+          <h2 className="bs-srs-words-orphan-title">Толиос хадгалсан нэмэлт үгс · {orphans.length}</h2>
           <p className="bs-srs-words-orphan-sub">
-            Эдгээр үг зөвхөн таны хадгалсан жагсаалтад байна — SRS-д орохгүй.
+            HSK-ийн жагсаалтад байхгүй үгс. Өдрийн давталтад орохгүй тул эндээс картаар эргүүлж давтаарай.
           </p>
+          {cardsOpen ? (
+            <SavedExtraFlashcards words={orphans} onClose={() => setCardsOpen(false)} />
+          ) : (
+            <button type="button" className="bs-extra-start" onClick={() => setCardsOpen(true)}>
+              🃏 Картаар давтах
+            </button>
+          )}
           <ul className="bs-srs-words-orphan-list">
             {orphans.map((row) => (
               <li key={row.id} className="bs-srs-words-orphan-item">

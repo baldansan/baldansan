@@ -431,3 +431,40 @@ export async function fetchOrphanSavedWords(
   if (error || !data) return [];
   return data as UserSavedWordRow[];
 }
+
+/**
+ * Толь бичгийн үр дүнгийн жагсаалтад: аль үгийг хэрэглэгч аль хэдийн
+ * «Цээжлэх үгсэд» нэмсэн бэ? (user_saved_words мөр эсвэл SRS бичлэг.)
+ * Хоёрхон query — мөр бүрээр асуухгүй.
+ */
+export async function getSavedStatusForWords(
+  words: { zh: string; hskWordId: number | null }[]
+): Promise<{ loggedIn: boolean; saved: Set<string> }> {
+  const saved = new Set<string>();
+  if (!supabase || !hasSupabaseConfig) return { loggedIn: false, saved };
+  const { userId } = await getAuthenticatedUserId();
+  if (!userId) return { loggedIn: false, saved };
+  if (words.length === 0) return { loggedIn: true, saved };
+
+  const zhList = [...new Set(words.map((w) => w.zh.trim()).filter(Boolean))];
+  const idToZh = new Map<number, string>();
+  for (const w of words) if (w.hskWordId != null) idToZh.set(w.hskWordId, w.zh.trim());
+
+  const [savedRes, srsRes] = await Promise.all([
+    supabase.from("user_saved_words").select("zh").eq("user_id", userId).in("zh", zhList),
+    idToZh.size > 0
+      ? supabase
+          .from("user_word_srs")
+          .select("word_id")
+          .eq("user_id", userId)
+          .in("word_id", [...idToZh.keys()])
+      : Promise.resolve({ data: [] as { word_id: number }[] }),
+  ]);
+
+  for (const row of (savedRes.data ?? []) as { zh: string }[]) saved.add(row.zh);
+  for (const row of (srsRes.data ?? []) as { word_id: number }[]) {
+    const zh = idToZh.get(row.word_id);
+    if (zh) saved.add(zh);
+  }
+  return { loggedIn: true, saved };
+}

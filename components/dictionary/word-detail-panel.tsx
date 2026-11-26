@@ -16,8 +16,7 @@ const HanziWriterPractice = dynamic(
     import("@/components/hanzi/hanzi-writer-practice").then((m) => m.HanziWriterPractice),
   { ssr: false, loading: () => <p className="text-xs text-[var(--app-muted)]">Ачааллаж байна…</p> }
 );
-import { saveWordFromLesson } from "@/lib/supabase/saved-words";
-import { SavedWordsHint } from "@/components/review/saved-words-hint";
+import { SaveWordButton, type SaveState } from "@/components/dictionary/save-word-button";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 
@@ -41,16 +40,22 @@ export type DictionaryWordLike = {
 const HAN_RE = /\p{Script=Han}/u;
 
 /** PC: толь бичгийн баруун самбар — сонгосон үгийн дэлгэрэнгүй + зураасны дараалал. */
-export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
+export function WordDetailPanel({
+  word,
+  save,
+  onToggleSave,
+}: {
+  word: DictionaryWordLike | null;
+  save?: SaveState;
+  onToggleSave?: () => void;
+}) {
   const locale = useUiLocale();
   const chars = word ? Array.from(word.simplified).filter((c) => HAN_RE.test(c)) : [];
   const [charIdx, setCharIdx] = useState(0);
-  const [saved, setSaved] = useState<string | null>(null);
   const [richSenses, setRichSenses] = useState(false);
 
   useEffect(() => {
     setCharIdx(0);
-    setSaved(null);
     setRichSenses(false);
   }, [word?.id]);
 
@@ -69,19 +74,6 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
   const meaning = word.meaning_mn || word.meaning_en || "";
   const showTraditional = word.traditional && word.traditional !== word.simplified;
   const activeChar = chars[charIdx] ?? null;
-
-  async function handleSave() {
-    const r = await saveWordFromLesson({
-      zh: word!.simplified,
-      pinyin: word!.pinyin ?? undefined,
-      mn: word!.meaning_mn ?? undefined,
-    });
-    if (r.ok) {
-      setSaved(r.alreadyInSrs || r.duplicate ? tr(locale, "Аль хэдийн хадгалсан") : tr(locale, "Давталтад нэмлээ ✓"));
-    } else if (r.error) {
-      setSaved(r.error);
-    }
-  }
 
   return (
     <div className="bs-dict-panel" translate="no">
@@ -127,15 +119,16 @@ export function WordDetailPanel({ word }: { word: DictionaryWordLike | null }) {
       {word.id > 0 ? <WordSenses wordId={word.id} onLoaded={setRichSenses} /> : null}
 
       <div className="mt-3 flex flex-wrap gap-2">
-        <button type="button" className="app-btn-primary !min-h-[40px] !py-0 px-4 text-sm" onClick={() => void handleSave()}>
-          ＋ {tr(locale, "Үгсэд нэмэх")}
-        </button>
+        {save && onToggleSave ? (
+          <div className="min-w-[200px]">
+            <SaveWordButton variant="full" state={save} onToggle={onToggleSave} />
+          </div>
+        ) : null}
         <Link href={`/library/idioms?q=${encodeURIComponent(word.simplified)}`} className="app-btn-secondary !min-h-[40px] !py-0 px-4 text-sm">
           {tr(locale, "Хэлц үгэнд хайх")}
         </Link>
       </div>
       <ReportWrongButton wordId={word.id} simplified={word.simplified} currentMn={word.meaning_mn} />
-      {saved ? <SavedWordsHint message={saved} refreshKey={saved + word.simplified} /> : null}
 
       {word.example_zh && !richSenses ? (
         <div className="mt-4 rounded-2xl bg-emerald-50 p-3 ring-1 ring-emerald-100">
