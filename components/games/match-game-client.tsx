@@ -8,7 +8,7 @@ import { GameHeader } from "@/components/games/game-header";
 import { GameResultCard } from "@/components/games/game-result-card";
 import { GameShell } from "@/components/games/game-shell";
 import { LevelResultCard } from "@/components/games/level-result-card";
-import { buildMatchGameItems, shuffleArray } from "@/lib/games/game-data";
+import { buildMatchGameItems, seededShuffle } from "@/lib/games/game-data";
 import { resolveGameLabels, type GameLabels } from "@/lib/games/game-lesson-meta";
 import { getBestScore, saveGameResult } from "@/lib/games/game-progress";
 import { JuiceBar, useGameJuice } from "@/components/games/game-juice";
@@ -74,14 +74,24 @@ export function MatchGameClient({
   // Хичээлийн дасгалд ЭНЭ хичээлийн БҮХ үгийг ROUND_SIZE-аар үе үе дамжина —
   // өмнө нь үргэлж зөвхөн эхний 6 үгийг л ашигладаг байсан тул нэг товч
   // үедээ дуусаад «дараагийн үе» гэж байдаггүй байсныг засав.
+  // Холих seed-ийг ЗӨВХӨН client дээр, mount болсны дараа сонгоно. Өмнө нь
+  // Math.random-оор render дотор холидог байсан тул server-ийн HTML ба утсан
+  // дээрх эхний render-ийн дараалал зөрж hydration алдаа (React #418) гардаг
+  // байв. seed === null үед дараалал тогтмол, самбар нуугдмал байна.
+  const [seed, setSeed] = useState<number | null>(null);
+  useEffect(() => {
+    setSeed(Math.floor(Math.random() * 0xffffffff) + 1);
+  }, []);
+
   const allPairs = useMemo(
     () =>
       buildMatchGameItems(
         vocabulary,
         levelMode ? levelMode.total : vocabulary.length,
-        gameContext
+        gameContext,
+        seed
       ),
-    [vocabulary, isPrelesson, levelMode?.total]
+    [vocabulary, isPrelesson, levelMode?.total, seed]
   );
   const rounds = useMemo(
     () => (levelMode ? [allPairs] : chunkPairs(allPairs, ROUND_SIZE)),
@@ -91,21 +101,23 @@ export function MatchGameClient({
   const [roundIndex, setRoundIndex] = useState(0);
   const pairs = rounds[roundIndex] ?? [];
 
-  const leftItems = useMemo(
-    () => shuffleArray(pairs.map((p) => ({ id: p.id, label: p.mongolian }))),
-    [pairs]
-  );
-  const rightItems = useMemo(
-    () =>
-      shuffleArray(
-        pairs.map((p) => ({
-          id: p.id,
-          label: p.chinese,
-          sub: p.pinyin,
-        }))
-      ),
-    [pairs]
-  );
+  const pairsRef = useRef(pairs);
+  useEffect(() => {
+    pairsRef.current = pairs;
+  }, [pairs]);
+
+  const leftItems = useMemo(() => {
+    const items = pairs.map((p) => ({ id: p.id, label: p.mongolian }));
+    return seed === null ? items : seededShuffle(items, seed + roundIndex * 2 + 1);
+  }, [pairs, seed, roundIndex]);
+  const rightItems = useMemo(() => {
+    const items = pairs.map((p) => ({
+      id: p.id,
+      label: p.chinese,
+      sub: p.pinyin,
+    }));
+    return seed === null ? items : seededShuffle(items, seed + roundIndex * 2 + 2);
+  }, [pairs, seed, roundIndex]);
 
   const [matched, setMatched] = useState<Set<string>>(new Set());
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
@@ -177,13 +189,13 @@ export function MatchGameClient({
     (leftId: string, rightId: string) => {
       if (leftId === rightId) {
         const res = juice.answer(true);
-        rateGameWordByHanzi(pairs.find((p) => p.id === leftId)?.chinese, true);
+        rateGameWordByHanzi(pairsRef.current.find((p) => p.id === leftId)?.chinese, true);
         // Хос бүр 10 оноо (үеийн төгсгөлд нэмэгдэнэ); combo/хурдны урамшуулал энд шууд
         if (res.points > 10) setScore((s) => s + (res.points - 10));
         setMatched((prev) => new Set(prev).add(leftId));
       } else {
         juice.answer(false);
-        rateGameWordByHanzi(pairs.find((p) => p.id === leftId)?.chinese, false);
+        rateGameWordByHanzi(pairsRef.current.find((p) => p.id === leftId)?.chinese, false);
         wrongRef.current += 1;
         setWrongFlash(`${leftId}-${rightId}`);
         setTimeout(() => setWrongFlash(null), 600);
@@ -232,6 +244,7 @@ export function MatchGameClient({
     setRoundIndex(0);
     wrongRef.current = 0;
     setLevelCorrect(0);
+    setSeed(Math.floor(Math.random() * 0xffffffff) + 1);
     juice.reset();
   }
 
@@ -375,7 +388,10 @@ export function MatchGameClient({
         score={score}
       />
       <JuiceBar lives={juice.lives} combo={juice.combo} multiplier={juice.multiplier} showLives={false} />
-      <div className="grid grid-cols-2 gap-3">
+      <div
+        className={`grid grid-cols-2 gap-3 ${seed === null ? "invisible" : ""}`}
+        aria-busy={seed === null}
+      >
         <GameCard className="flex min-h-[340px] flex-col gap-2 !p-2">
           {leftItems.map((item, li) => {
             const isMatched = matched.has(item.id);

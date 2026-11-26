@@ -1841,13 +1841,22 @@ html[data-theme="dark"] .bs-home-level--more{color:#A47FE3}
 .bs-inst-panel{padding:0 14px 14px}
 .bs-inst-btn{width:100%;min-height:46px;margin-bottom:10px;border:0;border-radius:14px;background:var(--bs-green);color:#fff;font-size:15px;font-weight:800;cursor:pointer}
 .bs-inst-os{font-size:12px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;color:var(--bs-green-700)}
-.bs-inst-steps{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
-.bs-inst-steps li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.4;color:var(--bs-ink)}
-.bs-inst-steps li span{flex:none;width:24px;height:24px;border-radius:50%;background:var(--bs-green);color:#fff;font-size:13px;font-weight:800;display:grid;place-items:center}
-.bs-inst-done{margin:10px 0 0;font-size:13px;font-weight:700;color:var(--bs-ink)}
-.bs-inst-more{margin-top:10px;font-size:13px;font-weight:700;color:var(--bs-green-700)}
-.bs-inst-more img{display:block;width:100%;height:auto;margin-top:8px;border-radius:12px}
-.bs-inst-hide{display:block;margin:12px auto 0;border:0;background:none;font-size:12px;font-weight:700;color:var(--bs-muted);text-decoration:underline;cursor:pointer}
+.bs-inst-or{margin:0 0 10px;font-size:12px;font-weight:600;color:var(--bs-muted);text-align:center}
+.bs-inst-steps{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:14px}
+.bs-inst-steps li{display:flex;flex-direction:column;gap:8px}
+.bs-inst-step-text{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:var(--bs-ink)}
+.bs-inst-step-text p{margin:0}
+.bs-inst-num{flex:none;width:24px;height:24px;border-radius:50%;background:var(--bs-green);color:#fff;font-size:13px;font-weight:800;display:grid;place-items:center}
+.bs-inst-hint{margin:4px 0 0;font-size:12px;font-weight:600;line-height:1.4;color:var(--bs-muted)}
+.bs-inst-art{display:block;width:100%;height:auto;max-width:340px;margin:0 auto}
+.bs-inst-pulse{transform-box:fill-box;transform-origin:center;animation:bs-inst-pulse 1.6s ease-out infinite}
+@keyframes bs-inst-pulse{0%{transform:scale(.8);opacity:1}100%{transform:scale(1.35);opacity:0}}
+@media (prefers-reduced-motion:reduce){.bs-inst-pulse{animation:none}}
+.bs-inst-warn{margin:8px 0 2px;padding:10px 12px;border-radius:12px;background:#FFF4D6;border:1px solid #F2D58A;color:#5A4300;font-size:13px;line-height:1.45}
+.bs-inst-warn p{margin:0}
+.bs-inst-copy{margin-top:8px;min-height:40px;padding:0 16px;border:0;border-radius:12px;background:#5A4300;color:#fff;font-size:13px;font-weight:800;cursor:pointer}
+.bs-inst-done{margin:14px 0 0;font-size:13px;font-weight:700;line-height:1.45;color:var(--bs-ink)}
+.bs-inst-hide{display:block;min-height:40px;margin:8px auto 0;border:0;background:none;font-size:12px;font-weight:700;color:var(--bs-muted);text-decoration:underline;cursor:pointer}
 
 /* Чатын санал асуулга */
 .bs-poll-opt{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:38px;padding:6px 10px;border-radius:10px;border:1.5px solid rgba(15,115,56,.25);background:rgba(255,255,255,.75);color:#191225;font-size:13px;font-weight:700;text-align:left;overflow:hidden;cursor:pointer}
@@ -1975,3 +1984,12 @@ html[data-theme="dark"] .bs-hz-role--pho{background:#232a52;color:#a9b6ff;border
 .bs-hz-src b{display:block;margin-top:4px;font-size:15px;font-weight:900;color:var(--app-text)}
 .bs-hz-src small{display:block;font-size:12px;line-height:1.35;color:var(--app-muted)}
 .bs-hz-book-img{flex:none;width:58px;height:58px;object-fit:contain}
+
+/* Суулгасны дараах «сануулга асаах уу» карт */
+.bs-pushask{margin-bottom:16px;padding:14px;border-radius:18px;border:1px solid color-mix(in srgb,var(--bs-green) 30%,transparent);background:color-mix(in srgb,var(--bs-green) 9%,var(--bs-card))}
+.bs-pushask-title{margin:0;font-size:15px;font-weight:800;color:var(--bs-ink)}
+.bs-pushask-text{margin:4px 0 0;font-size:13px;font-weight:600;line-height:1.45;color:var(--bs-muted)}
+.bs-pushask-row{display:flex;gap:8px;margin-top:12px}
+.bs-pushask-yes{flex:1;min-height:46px;border:0;border-radius:14px;background:var(--bs-green);color:#fff;font-size:15px;font-weight:800;cursor:pointer}
+.bs-pushask-yes:disabled{opacity:.6}
+.bs-pushask-no{min-height:46px;padding:0 16px;border:1px solid var(--bs-line);border-radius:14px;background:var(--bs-card);color:var(--bs-muted);font-size:14px;font-weight:700;cursor:pointer}

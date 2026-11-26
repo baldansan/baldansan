@@ -53,6 +53,7 @@ import { TeacherAssignmentBanner } from "@/components/home/teacher-assignment-ba
 import { ExamGoalCard } from "@/components/engagement/exam-goal-card";
 import { MyStudySystem } from "@/components/engagement/my-study-system";
 import { InstallAppGuide } from "@/components/intro/install-app-guide";
+import { PushAfterInstallPrompt } from "@/components/pwa/push-after-install-prompt";
 import { HomeChatBadge } from "@/components/social/home-chat-badge";
 import { HomeQuickSearch } from "@/components/home/home-quick-search";
 import { QuickStartCard } from "@/components/home/quick-start-card";
@@ -857,6 +858,9 @@ export function HomeAppView({
       {/* 60 секундын онбординг — шинэ хэрэглэгчид. Гүйлгэлгүйгээр харагдахаар хамгийн дээр
           (явцтай эсвэл дуусгасан хүнд өөрөө нуугдана). */}
       <QuickStartCard loggedIn={loggedIn} hasProgress={totals.completed > 0 || streak > 0} />
+
+      {/* Апп болгож суулгасан хүнээс өдөр бүрийн сануулгын зөвшөөрөл асууна */}
+      <PushAfterInstallPrompt loggedIn={loggedIn} />
 
       {/* Шалгалтын зорилго тавьсан бол — хэдэн өдөр үлдсэн, хурд */}
       <ExamGoalCard variant="compact" />

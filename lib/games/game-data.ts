@@ -1,6 +1,7 @@
 import { getPublicLessonById } from "@/lib/content";
 import {
   prioritizePrelessonVocab,
+  seededShuffle,
   shuffleArray,
   toGameVocabItem,
 } from "@/lib/games/game-data-core";
@@ -26,7 +27,7 @@ import type {
   TranslateQuestion,
 } from "@/lib/games/game-types";
 
-export { shuffleArray, toGameVocabItem } from "@/lib/games/game-data-core";
+export { seededShuffle, shuffleArray, toGameVocabItem } from "@/lib/games/game-data-core";
 export type { GameLessonContext, GameLabels } from "@/lib/games/game-lesson-meta";
 export { resolveGameLabels } from "@/lib/games/game-lesson-meta";
 
@@ -98,14 +99,26 @@ export function getGameFallbackItems(): GameVocabItem[] {
 export function buildMatchGameItems(
   vocabulary: GameVocabItem[],
   maxPairs = 6,
-  context?: Pick<GameLessonContext, "isPrelesson">
+  context?: Pick<GameLessonContext, "isPrelesson">,
+  /**
+   * Холих seed. `null` бол огт холихгүй (server render + hydration-д тогтмол
+   * дараалал), тоо бол seed-тэй, орхивол санамсаргүй.
+   */
+  seed?: number | null
 ): MatchPair[] {
   const ordered = context
     ? prioritizePrelessonVocab(vocabulary, context.isPrelesson)
     : vocabulary;
   const usable = ordered.filter((w) => w.chinese && w.mongolian);
   if (usable.length < 4) return [];
-  return shuffleArray(usable.slice(0, maxPairs)).map((w) => ({
+  const picked = usable.slice(0, maxPairs);
+  const mixed =
+    seed === undefined
+      ? shuffleArray(picked)
+      : seed === null
+        ? picked
+        : seededShuffle(picked, seed);
+  return mixed.map((w) => ({
     id: w.id,
     mongolian: w.mongolian,
     chinese: w.chinese,
