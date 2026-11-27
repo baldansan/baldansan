@@ -1341,10 +1341,15 @@
       "id": "e6",
       "title": "吧-аар гуйх",
       "visual": {
-       "kind": "hanzi",
-       "zh": "你去店里买些菜吧。",
-       "py": "Nǐ qù diàn li mǎi xiē cài ba.",
-       "mn": "Дэлгүүр ороод ногоо аваад ирээч."
+       "kind": "dialog",
+       "lines": [
+        {
+         "who": "Жишээ",
+         "zh": "你去店里买些菜吧。",
+         "py": "Nǐ qù diàn li mǎi xiē cài ba.",
+         "mn": "Дэлгүүр ороод ногоо аваад ирээч."
+        }
+       ]
       },
       "pose": "encourage",
       "say": [

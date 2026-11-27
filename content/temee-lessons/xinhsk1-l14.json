@@ -1153,10 +1153,15 @@
       "id": "d5",
       "title": "晚: «орой болсон, хоцорсон»",
       "visual": {
-       "kind": "hanzi",
-       "zh": "太晚了，睡觉吧。",
-       "py": "Tài wǎn le, shuìjiào ba.",
-       "mn": "Орой боллоо. Унтъя."
+       "kind": "dialog",
+       "lines": [
+        {
+         "who": "Жишээ",
+         "zh": "太晚了，睡觉吧。",
+         "py": "Tài wǎn le, shuìjiào ba.",
+         "mn": "Орой боллоо. Унтъя."
+        }
+       ]
       },
       "pose": "sleep",
       "say": [
