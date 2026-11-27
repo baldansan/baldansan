@@ -30,6 +30,8 @@ import { QuestionFeedbackButtons } from "@/components/feedback/question-feedback
 import { resurfaceWrongQuizWord } from "@/lib/srs/seed-weak-words";
 import { resolveKoreanTtsLang } from "@/lib/lesson/teaching-media";
 import type { LessonContent } from "@/types/lesson-content";
+import { BaldanReaction, StreakBadge, useAnswerStreak } from "@/components/lesson/answer-streak";
+import { BaldanSay } from "@/components/lesson/baldan-say";
 import type { QuizQuestion } from "@/types/lesson";
 
 type Props = {
@@ -68,6 +70,7 @@ export function LessonPathQuizStage({
   const ttsLang = resolveKoreanTtsLang(lesson);
 
   const [phase, setPhase] = useState<Phase>("overview");
+  const { streak, register: registerStreak } = useAnswerStreak(lessonId);
   const savedProgressRef = useRef<BsQuizStepProgress | null>(null);
   const [hydrated, setHydrated] = useState(false);
 
@@ -92,6 +95,9 @@ export function LessonPathQuizStage({
     if (savedProgressRef.current?.resultsByIndex) {
       setResultsByIndex(resultsFromSaved(savedProgressRef.current.resultsByIndex));
     }
+    // Анх удаа орж буй хүнд тооны сүлжээ («тойм») хэрэггүй — шууд 1-р асуулт.
+    // Өмнө нь хариулсан зүйлтэй хүнд л тойм (үргэлжлүүлэх / эхнээс) гарна.
+    if (!hasBsQuizSavedProgress(lessonId)) setPhase("active");
     setHydrated(true);
   }, [lessonId]);
 
@@ -187,6 +193,7 @@ export function LessonPathQuizStage({
 
   function logQuizAttempt(answer: string, ok: boolean) {
     if (!current) return;
+    registerStreak(ok);
     const sentenceOrder = isQuizSentenceOrderQuestion(current);
     recordQuestionAttempt({
       lessonId,
@@ -393,9 +400,7 @@ export function LessonPathQuizStage({
         <p className="bs-path-quiz-score">
           {correctCount}/{total} зөв · {percent}%
         </p>
-        <p className="text-sm text-[var(--bs-ink-2)]">
-          Сорил дууслаа. Дараагийн үе рүү шилжинэ.
-        </p>
+        <BaldanSay pose="thumbsup" text="Сорил дууслаа. Дүнгээ харъя." center />
       </div>
     );
   }
@@ -404,6 +409,9 @@ export function LessonPathQuizStage({
 
   return (
     <div className="bs-path-quiz">
+      <div className="bs-streak-row">
+        <StreakBadge n={streak.cur} />
+      </div>
       {currentIsSentenceOrder ? (
         <LessonQuizSentenceOrder
           question={current}
@@ -429,6 +437,11 @@ export function LessonPathQuizStage({
       )}
       {revealed ? (
         <>
+          <BaldanReaction
+            ok={isAnswerCorrect(current, selected)}
+            streak={streak.cur}
+            seed={currentIndex}
+          />
           <QuestionFeedbackButtons
             lessonId={lessonId}
             questionId={

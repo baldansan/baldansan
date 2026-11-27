@@ -345,6 +345,10 @@ export default function LessonPathPlayer({
             nextLessonId={nextLessonId}
             adminPreview={adminPreview}
             quizTotal={quizQuestions.length}
+            onReviewQuiz={() => {
+              const quizStage = pathPlan.stages.find((st) => st.id === "quiz");
+              if (quizStage) openStage(quizStage, false);
+            }}
           />
         );
       default:

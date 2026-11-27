@@ -125,3 +125,30 @@
 html[data-theme="dark"] .bs-home-path-dot{background:#3a2f55;color:#b9aee0}
 html[data-theme="dark"] .bs-home-path li:not(:last-child)::after{background:#3a2f55}
 html[data-theme="dark"] .bs-home-chips a{box-shadow:0 0 0 1.5px #4a3d6b inset}
+
+/* ---- Дараалсан зөв (🔥) ---- */
+.bs-streak{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;background:#fff4e6;color:#e8590c;
+  font-size:13px;font-weight:900;animation:bs-streak-pop .35s ease both}
+@keyframes bs-streak-pop{0%{transform:scale(.6)}60%{transform:scale(1.18)}100%{transform:scale(1)}}
+html[data-theme="dark"] .bs-streak{background:#4a2c12;color:#ffb37a}
+.bs-streak-row{display:flex;justify-content:flex-end;min-height:26px;margin:0 0 6px}
+.bs-path-quiz .bs-baldan-row,.bs-ex .bs-baldan-row{margin:10px 0 6px}
+.bs-path-quiz .bs-baldan-row-img,.bs-ex .bs-baldan-row-img{width:48px;height:48px}
+@media (prefers-reduced-motion:reduce){.bs-streak{animation:none}}
+
+/* ---- Дүрэм: нэг дэлгэц — нэг зүйл ---- */
+.bs-gr2-steps{margin:10px 0 12px}
+.bs-gr2-steps button{padding:5px 11px;border:0;border-radius:999px;font-family:var(--bs-ui);font-size:12px;font-weight:800;
+  color:var(--bs-muted);background:var(--bs-line);cursor:pointer}
+.bs-gr2-steps button.is-done{color:var(--bs-green);background:transparent}
+.bs-gr2-steps button.is-on{color:#fff;background:var(--bs-green)}
+/* ---- Үгийн карт: ханз сонгох таб ---- */
+.bs-vwhy-tabs{display:flex;gap:6px;margin:8px 0 0}
+.bs-vwhy-tabs button{width:40px;height:40px;border-radius:12px;border:1.5px solid var(--bs-line);background:var(--bs-card);
+  color:var(--bs-ink);font-family:var(--bs-zh);font-size:20px;font-weight:800;cursor:pointer}
+.bs-vwhy-tabs button[aria-pressed="true"]{border-color:var(--bs-green);background:var(--bs-green);color:#fff}
+/* ---- Дүгнэлт: алдсан асуулт руу ---- */
+.bs-review-card{display:block;width:100%;margin:0 0 6px;padding:12px 14px;border-radius:18px;border:0;text-align:left;
+  background:var(--bs-card);box-shadow:0 2px 10px rgba(80,40,160,.06);cursor:pointer;font-family:var(--bs-ui)}
+.bs-review-card-head{display:block;font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#e8590c}
+.bs-review-card-sub{display:block;margin-top:4px;font-size:14px;font-weight:700;color:var(--bs-ink-2)}

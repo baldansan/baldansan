@@ -2,6 +2,8 @@
 
 import { BaldanSay } from "@/components/lesson/baldan-say";
 import { baldanLine } from "@/lib/temee/baldan-lines";
+import { readAnswerStreak } from "@/components/lesson/answer-streak";
+import { fireConfetti } from "@/lib/games/game-fx";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { LessonDifficultyFeedback } from "@/components/feedback/lesson-difficulty-feedback";
@@ -25,6 +27,8 @@ type Props = {
   nextLessonId?: string | null;
   adminPreview?: boolean;
   quizTotal?: number;
+  /** Сорилын үе рүү буцаж алдсан асуултаа дахин харах. */
+  onReviewQuiz?: () => void;
 };
 
 export function LessonPathSummaryStage({
@@ -34,6 +38,7 @@ export function LessonPathSummaryStage({
   nextLessonId = null,
   adminPreview = false,
   quizTotal = 0,
+  onReviewQuiz,
 }: Props) {
   const summary = useMemo(() => extractLessonPathSummaryData(lesson), [lesson]);
   const [answers, setAnswers] = useState<string[]>([]);
@@ -134,6 +139,22 @@ export function LessonPathSummaryStage({
 
   const grammarCount = Array.isArray(lesson.grammar) ? lesson.grammar.length : 0;
 
+  // Хамгийн урт «дараалсан зөв» ба хичээл дууссаны цаасан шүршүүр (нэг удаа).
+  const [bestStreak, setBestStreak] = useState(0);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- sessionStorage-оос нэг удаа уншина
+    setBestStreak(readAnswerStreak(lessonId).best);
+    if (adminPreview) return;
+    try {
+      const k = `bs:lessonConfetti:${lessonId}`;
+      if (window.sessionStorage.getItem(k)) return;
+      window.sessionStorage.setItem(k, "1");
+    } catch {
+      // ignore
+    }
+    fireConfetti();
+  }, [lessonId, adminPreview]);
+
   async function handleShare() {
     const title = `${lesson.title.zh} · ${lesson.title.mn}`;
     const text = `${lesson.level} ${lesson.lesson_number}-р хичээлээ дуусгалаа: ${title}. ${summary.vocabCount} шинэ үг.`;
@@ -209,6 +230,9 @@ export function LessonPathSummaryStage({
           {quizScore ? (
             <div><b>{quizScore.correct}/{quizScore.total}</b><span>сорил</span></div>
           ) : null}
+          {bestStreak >= 3 ? (
+            <div><b>🔥 {bestStreak}</b><span>дараалсан зөв</span></div>
+          ) : null}
         </div>
         {summary.vocabulary.length > 0 ? (
           <div className="bs-share-words" translate="no">
@@ -232,6 +256,14 @@ export function LessonPathSummaryStage({
       <button type="button" className="bs-share-btn" onClick={() => void handleShare()}>
         Хуваалцах
       </button>
+      {quizScore && quizScore.correct < quizScore.total && onReviewQuiz ? (
+        <button type="button" className="bs-review-card" onClick={onReviewQuiz}>
+          <span className="bs-review-card-head">
+            Дахин харах · {quizScore.total - quizScore.correct} асуулт алдсан
+          </span>
+          <span className="bs-review-card-sub">Сорилын тоймоос улаан дугаарыг дарж дахин хариулна →</span>
+        </button>
+      ) : null}
 
       <div className="bs-card">
         <div className="bs-label">

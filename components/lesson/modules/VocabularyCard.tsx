@@ -85,6 +85,8 @@ export default function VocabularyCard({
   const [step, setStep] = useState(0);
   /** Хоёрдогч хэрэгсэл: бичих / дуудлага шалгах / дэлгэрэнгүй — дарж байж нээгдэнэ. */
   const [tool, setTool] = useState<"write" | "speak" | "more" | null>(null);
+  /** «Яагаад» шатанд олон ханзтай үгийг нэг нэг ханзаар задална. */
+  const [whyIdx, setWhyIdx] = useState(0);
   const flipped = step >= 1;
   /** 8 үг тутамд завсарлага: «үргэлжлүүлэх» эсвэл «дараагийн үе рүү» сонгоно (үгс олон үед хүн дундаас нь хаядаг байсан). */
   const [checkpoint, setCheckpoint] = useState(false);
@@ -193,10 +195,13 @@ export default function VocabularyCard({
   ];
   const lastStep = steps.length - 1;
   const cur = steps[Math.min(step, lastStep)]!;
+  const whyChar = Math.min(whyIdx, Math.max(0, decompositionCharacters.length - 1));
+  const moreWhy = cur === "why" && whyChar < decompositionCharacters.length - 1;
   const reached = (name: RevealStep) => steps.indexOf(name) !== -1 && steps.indexOf(name) <= step;
   const resetCard = () => {
     setStep(0);
     setTool(null);
+    setWhyIdx(0);
   };
 
   if (!w) return null;
@@ -410,14 +415,26 @@ export default function VocabularyCard({
         {reached("why") ? (
           <div className="bs-vreveal" key={`why-${w.zh}`}>
             <p className="bs-vwhy-head">Яагаад ийм ханз вэ</p>
+            {decompositionCharacters.length > 1 ? (
+              <div className="bs-vwhy-tabs" translate="no">
+                {decompositionCharacters.map((view, idx) => (
+                  <button
+                    key={view.char}
+                    type="button"
+                    aria-pressed={idx === whyChar}
+                    onClick={() => setWhyIdx(idx)}
+                  >
+                    {view.char}
+                  </button>
+                ))}
+              </div>
+            ) : null}
             <div className="bs-decomp-hint-stack">
-              {decompositionCharacters.map((view) => (
-                <CharacterDecompositionHint
-                  key={view.char}
-                  char={view.char}
-                  showCharLabel={decompositionCharacters.length > 1}
-                />
-              ))}
+              <CharacterDecompositionHint
+                key={decompositionCharacters[whyChar]!.char}
+                char={decompositionCharacters[whyChar]!.char}
+                showCharLabel={decompositionCharacters.length > 1}
+              />
             </div>
             {cur === "why" ? (
               <BaldanSay pose="point" text={baldanLine("vocabWhy", i)} />
@@ -458,7 +475,11 @@ export default function VocabularyCard({
         </div>
       </div>
 
-      {step < lastStep ? (
+      {moreWhy ? (
+        <button type="button" className="bs-vbtn bs-know bs-vnext" onClick={() => setWhyIdx(whyChar + 1)}>
+          <span translate="no">{decompositionCharacters[whyChar + 1]!.char}</span> — дараагийн ханз →
+        </button>
+      ) : step < lastStep ? (
         <button type="button" className="bs-vbtn bs-know bs-vnext" onClick={() => setStep(step + 1)}>
           {NEXT_LABEL[steps[step + 1]!]} →
         </button>

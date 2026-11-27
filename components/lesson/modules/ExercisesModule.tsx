@@ -40,6 +40,7 @@ import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import { speakWithSavedSettings, stopPronunciation } from "@/lib/tts/play-pronunciation";
 import { SentenceStructureGate } from "./SentenceStructureGate";
 import "./exercises-module.css";
+import { BaldanReaction, StreakBadge, useAnswerStreak } from "@/components/lesson/answer-streak";
 
 type Speed = 0.5 | 0.75 | 1;
 const SPEEDS: Speed[] = [0.5, 0.75, 1];
@@ -212,6 +213,7 @@ export default function ExercisesModule({
   );
 
   const [phase, setPhase] = useState<"overview" | "active">("overview");
+  const { streak, register: registerStreak } = useAnswerStreak(lessonId);
   const savedProgressRef = useRef<BsExercisesStepProgress | null>(null);
 
   const [qi, setQi] = useState(0);
@@ -411,6 +413,7 @@ export default function ExercisesModule({
     setChecked(true);
     setCorrect(ok);
     recordResult(q.n, ok);
+    registerStreak(ok);
     logExerciseAttempt(qi, q.n, q.kind, ok, opt, String(q.answer));
   }
 
@@ -421,6 +424,7 @@ export default function ExercisesModule({
     setChecked(true);
     setCorrect(ok);
     recordResult(q.n, ok);
+    registerStreak(ok);
     logExerciseAttempt(
       qi,
       q.n,
@@ -439,6 +443,7 @@ export default function ExercisesModule({
     if (!row || row.checked) return;
     const ok = opt === item.answer;
     if (item.n != null) recordResult(item.n, ok);
+    registerStreak(ok);
     logExerciseAttempt(
       qi,
       item.n,
@@ -467,6 +472,7 @@ export default function ExercisesModule({
     if (!row || row.checked) return;
     const ok = val === item.answer;
     if (item.n != null) recordResult(item.n, ok);
+    registerStreak(ok);
     logExerciseAttempt(
       qi,
       item.n,
@@ -503,6 +509,7 @@ export default function ExercisesModule({
       setChecked(true);
       setCorrect(ok);
       recordResult(q.n, ok);
+      registerStreak(ok);
       logExerciseAttempt(
         qi,
         q.n,
@@ -517,6 +524,7 @@ export default function ExercisesModule({
       setChecked(true);
       setCorrect(ok);
       recordResult(q.n, ok);
+      registerStreak(ok);
       logExerciseAttempt(qi, q.n, q.kind, ok, built, q.answer);
     }
   }
@@ -551,6 +559,12 @@ export default function ExercisesModule({
     if (totalSteps === 0 || hydrateDoneRef.current) return;
     hydrateDoneRef.current = true;
     savedProgressRef.current = getBsExercisesProgress(lessonId, source);
+    // Анх удаа орж буй хүнд тооны сүлжээ («тойм») хэрэггүй — шууд 1-р дасгал.
+    if (!hasBsExercisesSavedProgress(lessonId, source)) {
+      persistReadyRef.current = true;
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- хадгалсан ахицаас хамаарч нэг удаа
+      setPhase("active");
+    }
   }, [lessonId, source, totalSteps]);
 
   useEffect(() => {
@@ -839,8 +853,11 @@ export default function ExercisesModule({
           <span className="bs-dot" />
           {sourceLabel}
         </div>
-        <span className="bs-counter">
-          {counterLabel} / {totalItems} · ✓ {score}
+        <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
+          <StreakBadge n={streak.cur} />
+          <span className="bs-counter">
+            {counterLabel} / {totalItems} · ✓ {score}
+          </span>
         </span>
       </div>
 
@@ -1138,6 +1155,7 @@ export default function ExercisesModule({
 
       {q.kind !== "listening_group" && checked && (
         <>
+          <BaldanReaction ok={correct} streak={streak.cur} seed={qi} />
           <div className={`bs-ex-fb ${correct ? "bs-ok" : "bs-no"}`}>
             {correct ? (
               <span>✓ Зөв!</span>
