@@ -24,7 +24,7 @@
  * «Хичээл татах» товч /api/lessons/{id}/offline-manifest-оос жагсаалт аваад
  * файл бүрийг fetch хийхэд энэ SW тэднийг кэшэнд хийнэ.
  */
-const VERSION = "v8";
+const VERSION = "v9";
 const OFFLINE_CACHE = `buunduu-surtsgaay-offline-${VERSION}`;
 const PAGES_CACHE = `buunduu-pages-${VERSION}`;
 const STATIC_CACHE = `buunduu-static-${VERSION}`;
@@ -105,7 +105,7 @@ function isStaticAsset(url) {
   if (url.pathname.startsWith("/covers/")) return true;
   if (url.pathname.startsWith("/temee/")) return true;
   if (url.pathname.startsWith("/vendor/")) return true;
-  if (url.pathname === "/manifest.webmanifest") return true;
+  if (url.pathname === "/app.webmanifest") return true;
   if (/\.(png|jpg|jpeg|webp|svg|gif|ico|woff2?|ttf|mp3|m4a|ogg|css|js)$/.test(url.pathname)) {
     return true;
   }

@@ -99,7 +99,7 @@ export function PushAfterInstallPrompt({ loggedIn }: { loggedIn: boolean }) {
         </p>
         <p className="bs-pushask-text">
           {phase === "denied"
-            ? "Утасны Тохиргоо → Мэдэгдэл → «Сурцгаая» хэсгээс зөвшөөрч болно."
+            ? "Утасны Тохиргоо → Мэдэгдэл → «Тэмээ багш» хэсгээс зөвшөөрч болно."
             : "Интернэтээ шалгаад «Профайл» → «Сануулга» хэсгээс дахин оролдоорой."}
         </p>
         <div className="bs-pushask-row">

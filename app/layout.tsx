@@ -68,11 +68,11 @@ export const metadata: Metadata = {
     "Бөөндөө Сурцгаая",
   ],
   authors: [{ name: "Buunduu Surtsgaay" }],
-  manifest: "/manifest.webmanifest",
+  manifest: "/app.webmanifest",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Сурцгаая",
+    title: "Тэмээ багш",
   },
   openGraph: {
     title: "Бөөндөө Сурцгаая — Хятад хэл сурах апп",
