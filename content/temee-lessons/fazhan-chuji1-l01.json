@@ -412,7 +412,7 @@
                 "audio": {
                   "label": "Сонсох",
                   "src": [
-                    "syl:ma2"
+                    "syl:ni2"
                   ]
                 },
                 "options": [
@@ -1442,17 +1442,17 @@
             "visual": {
               "kind": "pair",
               "a": {
-                "label": "bā",
+                "label": "bà",
                 "hint": "монгол «б» · хий гарахгүй",
                 "src": [
-                  "syl:ba1"
+                  "syl:ba4"
                 ]
               },
               "b": {
-                "label": "pā",
+                "label": "pà",
                 "hint": "монгол «п» · хий гарна",
                 "src": [
-                  "syl:pa1"
+                  "syl:pa4"
                 ]
               }
             },
@@ -1466,15 +1466,15 @@
               "audio": {
                 "label": "Сонсох",
                 "src": [
-                  "syl:pa1"
+                  "syl:pa4"
                 ]
               },
               "options": [
-                "bā",
-                "pā"
+                "bà",
+                "pà"
               ],
               "answer": 1,
-              "wrong": "Хий гарсан. Энэ бол pā."
+              "wrong": "Хий гарсан. Энэ бол pà."
             }
           },
           {
@@ -1918,15 +1918,15 @@
                 "audio": {
                   "label": "Сонсох",
                   "src": [
-                    "syl:pao1"
+                    "syl:pao4"
                   ]
                 },
                 "options": [
-                  "bāo",
-                  "pāo"
+                  "bào",
+                  "pào"
                 ],
                 "answer": 1,
-                "wrong": "Хий гарсан. pāo."
+                "wrong": "Хий гарсан. pào."
               },
               {
                 "q": "Аль нь сонсогдов?",
@@ -2181,7 +2181,7 @@
     {
       "id": "q04",
       "question": "Сонсоод хэддүгээр хөг болохыг сонго.",
-      "audio": "syl:ma2",
+      "audio": "syl:ni2",
       "options": [
         "1-р хөг",
         "2-р хөг",
@@ -2365,12 +2365,12 @@
     {
       "id": "q16",
       "question": "Сонсоод аль нь болохыг сонго.",
-      "audio": "syl:pa1",
+      "audio": "syl:pa4",
       "options": [
-        "bā",
-        "pā"
+        "bà",
+        "pà"
       ],
-      "answer": "pā",
+      "answer": "pà",
       "explanation": "Хий гарсан авиа бол p.",
       "taught": [
         "s2"

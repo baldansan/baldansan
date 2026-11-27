@@ -9,6 +9,7 @@ import {
 import {
   allLessonPathStagesCompleted,
   hydrateLessonPathProgressSmart,
+  markLessonPathStageCompleted,
   markLessonPathStageCompletedSmart,
   setLessonPathLastStage,
   type LessonPathProgress,
@@ -23,6 +24,7 @@ import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
 import type { TemeeLesson } from "@/types/temee-lesson";
 import { temeeMetaFromLesson } from "@/lib/temee-lesson/meta";
+import { preloadTemeeAudio } from "@/lib/temee-lesson/audio";
 import { TemeePracticePlayer, TemeeScreenPlayer } from "./temee/temee-screen-player";
 import { markTodayLessonFull, markTodayStepDone } from "@/lib/today/today-path";
 import { LessonPathHub } from "./lesson-path-hub";
@@ -162,18 +164,17 @@ export default function LessonPathPlayer({
 
   const completeStage = useCallback(
     async (stage: LessonPathStage) => {
-      const next = await markLessonPathStageCompletedSmart(
-        lessonId,
-        stage.id,
-        allStageIds
-      );
+      // Эхлээд энэ төхөөрөмж дээр тэмдэглээд дэлгэцээ шууд сольно; сервер рүү ард нь илгээнэ.
+      // (Өмнө нь серверийн хариуг хүлээдэг байсан тул «Дуусгах» дарахад 1–3 секунд гацдаг байв.)
+      const next = markLessonPathStageCompleted(lessonId, stage.id, allStageIds);
+      void markLessonPathStageCompletedSmart(lessonId, stage.id, allStageIds).catch(() => undefined);
       setProgress(next);
       setJustCompleted(true);
       markTodayStepDone("lesson");
 
       const allDone = allLessonPathStagesCompleted(next, allStageIds);
       if (allDone) {
-        await markLessonCompletedSmart(lessonId);
+        void markLessonCompletedSmart(lessonId);
         if (!adminPreview) markTodayLessonFull(lessonId);
         setShowCelebration(true);
         window.setTimeout(() => setShowCelebration(false), 1000);
@@ -218,6 +219,12 @@ export default function LessonPathPlayer({
       }
     })();
   }, [view, activeStage?.id, progress.completedStageIds, lessonId, allStageIds, adminPreview]);
+
+  // Сорилын сонсох асуултын дууг үе нээгдмэгц урьдчилан татна — «Сонсох» дарахад хүлээлгэхгүй.
+  useEffect(() => {
+    if (view !== "stage" || activeStage?.id !== "quiz") return;
+    preloadTemeeAudio(quizQuestions.flatMap((q) => (q.audioUrl ? [q.audioUrl] : [])));
+  }, [view, activeStage?.id, quizQuestions]);
 
   const handleFinishStage = useCallback(() => {
     if (!activeStage) return;

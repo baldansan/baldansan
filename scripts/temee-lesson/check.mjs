@@ -20,6 +20,9 @@ const errors = [];
 const warn = [];
 const metaSrc = readFileSync(join(ROOT, "lib/temee-lesson/meta.ts"), "utf8");
 const loadSrc = readFileSync(join(ROOT, "lib/temee-lesson/load.ts"), "utf8");
+// audio_qc.py-ээр илэрсэн, нэртэйгээ таардаггүй бичлэгүүд (жнь «pa1» хийгүй сонсогддог).
+const badAudioPath = join(DIR, "_audio-bad.json");
+const badAudio = existsSync(badAudioPath) ? JSON.parse(readFileSync(badAudioPath, "utf8")).bad : {};
 
 function audioPath(ref, lessonId) {
   if (ref.startsWith("syl:")) return join(ROOT, "public/open/audio-cmn/syllables", `cmn-${ref.slice(4)}.mp3`);
@@ -27,7 +30,7 @@ function audioPath(ref, lessonId) {
   return null; // word: → CDN, энд шалгахгүй
 }
 
-for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json"))) {
+for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json") && !f.startsWith("_"))) {
   const L = JSON.parse(readFileSync(join(DIR, file), "utf8"));
   const id = L.lessonId;
   const err = (m) => errors.push(`${file}: ${m}`);
@@ -67,6 +70,9 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json"))) {
   for (const ref of refs) {
     const p = audioPath(ref, id);
     if (p && !existsSync(p)) err(`дууны файл алга: ${ref}`);
+    if (ref.startsWith("syl:") && badAudio[ref.slice(4)]) {
+      err(`чанаргүй бичлэг: ${ref} — ${badAudio[ref.slice(4)].join("; ")}`);
+    }
   }
   JSON.stringify(L, (k, v) => {
     if ((k === "image" || (k === "src" && typeof v === "string")) && typeof v === "string" && v.startsWith("/")) {

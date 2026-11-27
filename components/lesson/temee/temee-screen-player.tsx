@@ -2,7 +2,12 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { temeePoseSrc } from "@/lib/temee/poses";
-import { playTemeeSequence, stopTemeeAudio, temeeAudioUrl } from "@/lib/temee-lesson/audio";
+import {
+  playTemeeSequence,
+  preloadTemeeAudio,
+  stopTemeeAudio,
+  temeeAudioUrl,
+} from "@/lib/temee-lesson/audio";
 import type {
   TemeeAudio,
   TemeeAudioRef,
@@ -15,6 +20,26 @@ import { TemeeVisualView } from "./temee-visual";
 import "./temee.css";
 
 const RIGHT_LINES = ["Болж байна.", "Тийм.", "Зөв.", "Мэдээж."];
+
+/** Объект доторх бүх дууны заалтыг (syl:/word:/file:) цуглуулна — урьдчилан татахад. */
+function collectAudioRefs(value: unknown, out: Set<string> = new Set()): Set<string> {
+  if (typeof value === "string") {
+    if (/^(syl|word|file):/.test(value)) out.add(value);
+  } else if (Array.isArray(value)) {
+    for (const v of value) collectAudioRefs(v, out);
+  } else if (value && typeof value === "object") {
+    for (const v of Object.values(value)) collectAudioRefs(v, out);
+  }
+  return out;
+}
+
+/** Одоогийн ба дараагийн хэсгийн дууг урьдчилан татна — дарахад хүлээлгэхгүй. */
+function usePreloadAudio(lessonId: string, current: unknown, next: unknown) {
+  useEffect(() => {
+    const refs = collectAudioRefs([current, next]);
+    preloadTemeeAudio([...refs].map((r) => temeeAudioUrl(r, lessonId)));
+  }, [lessonId, current, next]);
+}
 
 function useTemeePlay(lessonId: string) {
   const [failed, setFailed] = useState(false);
@@ -151,6 +176,7 @@ export function TemeeScreenPlayer({ lessonId, sectionKey, section, onDone }: Pla
   );
 
   const entry = flat[index];
+  usePreloadAudio(lessonId, entry?.screen, flat[index + 1]?.screen);
   if (!entry) return null;
   const { part, screen } = entry;
   const checks: TemeeCheck[] = screen.checks ?? (screen.check ? [screen.check] : []);
@@ -189,7 +215,7 @@ export function TemeeScreenPlayer({ lessonId, sectionKey, section, onDone }: Pla
           onSolved={() => {
             setSolvedCount((n) => Math.max(n, safeCheckIdx + 1));
             if (safeCheckIdx < checks.length - 1) {
-              window.setTimeout(() => setCheckIdx((n) => Math.min(n + 1, checks.length - 1)), 900);
+              window.setTimeout(() => setCheckIdx((n) => Math.min(n + 1, checks.length - 1)), 450);
             }
           }}
         />
@@ -271,6 +297,7 @@ export function TemeePracticePlayer({
   const [correct, setCorrect] = useState(0);
   const { play, failed } = useTemeePlay(lessonId);
   const item = items[index];
+  usePreloadAudio(lessonId, item, items[index + 1]);
   if (!item) return null;
   const answered = picked != null;
   const isRight = picked === item.answer;
