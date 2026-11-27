@@ -137,6 +137,7 @@
      {
       "id": "a4",
       "title": "Тооцоо хийе: 结账",
+      "image": "/temee-lesson/fazhan-chuji1-l21/img/bill.webp",
       "visual": {
        "kind": "dialog",
        "lines": [
@@ -427,19 +428,19 @@
       "id": "b4",
       "title": "Нэг үгийг хоёр хэлэхгүй",
       "visual": {
-       "kind": "columns",
-       "cols": [
+       "kind": "dialog",
+       "lines": [
         {
-         "head": "Урт",
-         "items": [
-          "我的帽子跟你的帽子一样。"
-         ]
+         "who": "Урт",
+         "zh": "我的帽子跟你的帽子一样。",
+         "py": "Wǒ de màozi gēn nǐ de màozi yíyàng.",
+         "mn": "Миний малгай чиний малгайтай адил."
         },
         {
-         "head": "Богино",
-         "items": [
-          "我的帽子跟你的一样。"
-         ]
+         "who": "Богино",
+         "zh": "我的帽子跟你的一样。",
+         "py": "Wǒ de màozi gēn nǐ de yíyàng.",
+         "mn": "Миний малгай чинийхтэй адил."
         }
        ]
       },
@@ -683,6 +684,7 @@
      {
       "id": "d1",
       "title": "Уутыг ширээн дээр тавьсан",
+      "image": "/temee-lesson/fazhan-chuji1-l21/img/bag-table.webp",
       "visual": {
        "kind": "dialog",
        "lines": [
@@ -954,6 +956,7 @@
      {
       "id": "d7",
       "title": "Хаана тавьсан бэ гэж асуух",
+      "image": "/temee-lesson/fazhan-chuji1-l21/img/bag-table.webp",
       "visual": {
        "kind": "dialog",
        "lines": [
@@ -1682,6 +1685,7 @@
   },
   {
    "id": "p4",
+   "image": "/temee-lesson/fazhan-chuji1-l21/img/bag-table.webp",
    "q": "«Утсаа үүргэвчиндээ хийчих» гэж аль нь вэ?",
    "options": [
     "你放手机在背包里吧。",
@@ -1772,6 +1776,7 @@
   {
    "id": "p10",
    "scene": "Хоолны газар. Чи үйлчлэгчид цайны мөнгө өгөх гэв.",
+   "image": "/temee-lesson/fazhan-chuji1-l21/img/bill.webp",
    "q": "A：这是小费。  B：谢谢，我们不＿＿小费。",
    "options": [
     "付",
