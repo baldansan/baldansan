@@ -230,6 +230,13 @@ export const ADMIN_NAV_TEACHER: AdminNavItem[] = [
     match: (p) => p.startsWith("/teacher/assignments"),
   },
   {
+    href: "/admin/messages",
+    label: "Мэдэгдэл явуулах",
+    icon: "🔔",
+    hint: "Сурагчдын утас руу мэдэгдэл явуулах, нэг хүнтэй чатлах.",
+    match: (p) => p.startsWith("/admin/messages"),
+  },
+  {
     href: "/teacher/reports",
     label: "Тайлан",
     icon: "📈",

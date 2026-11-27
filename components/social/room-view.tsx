@@ -330,6 +330,15 @@ function RoomViewInner({ roomId, userId }: { roomId: string; userId: string }) {
       setError(res.error);
       return;
     }
+    // Хувийн мессеж бол нөгөө хүний утсанд мэдэгдэл очуулна (алдаа гарсан ч чатад нөлөөлөхгүй).
+    if (room?.kind === "dm") {
+      void fetch("/api/chat/notify", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ roomId }),
+        keepalive: true,
+      }).catch(() => {});
+    }
     const sent = res.data;
     setDraft("");
     stickRef.current = true;
