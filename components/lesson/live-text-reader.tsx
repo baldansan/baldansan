@@ -44,7 +44,8 @@ function buildVocabMap(words: HskPackageVocabItem[]): Map<string, VocabHint> {
 }
 
 /** «王静：…» хэлбэрийн мөрөөс ярьж буй хүний нэрийг ялгана (яриаг чат хэлбэрээр зурахад). */
-const SPEAKER_RE = /^\s*([^：:，,。！？?!\s]{1,8})[：:]/;
+// Нэр дотор тоо, хаалт байвал хүн биш («声母(1)：» гэх мэт гарчиг) — чат болгохгүй.
+const SPEAKER_RE = /^\s*([^：:，,。！？?!\s（）()\d]{1,8})[：:]/;
 function speakerOf(zh: string | undefined): string | null {
   return zh ? (SPEAKER_RE.exec(zh)?.[1] ?? null) : null;
 }
