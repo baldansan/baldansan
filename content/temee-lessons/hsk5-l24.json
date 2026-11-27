@@ -346,6 +346,7 @@
      {
       "id": "c2",
       "title": "Тодотгол: цалингүй, сайн дурын",
+      "image": "/temee-lesson/hsk5-l24/img/show.webp",
       "visual": {
        "kind": "dialog",
        "lines": [
@@ -1501,6 +1502,7 @@
      {
       "id": "g1",
       "title": "支教 ба сайн дурынхан",
+      "image": "/temee-lesson/hsk5-l24/img/village.webp",
       "visual": {
        "kind": "hanzi",
        "zh": "支教",
