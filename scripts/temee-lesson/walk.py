@@ -68,6 +68,12 @@ async def main():
                 await shot(f"p-{it['id']}")
                 await click_text(pg, "Дараагийн дасгал") or await click_text(pg, "Дуусгах")
                 await pg.wait_for_timeout(300)
+            # Номын (хуучин) дасгалтай хичээлд «нэмж хийх үү» гэсэн дэлгэц гарна — зургийг аваад алгасна.
+            await pg.wait_for_timeout(400)
+            if await pg.get_by_text("Номын дасгал хийх", exact=True).count():
+                await shot("p-extra-offer")
+                await click_text(pg, "Сорил руу")
+                await pg.wait_for_timeout(300)
 
         await shot("intro")
         if not await click_text(pg, "Эхлэх"): problems.append("Эхлэх товч олдсонгүй")

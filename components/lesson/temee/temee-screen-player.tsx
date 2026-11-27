@@ -392,3 +392,36 @@ export function TemeePracticePlayer({
     </div>
   );
 }
+
+/** Тэмээ багшийн дасгал дууссаны дараа: номын дасгалыг нэмж хийх үү, сорил руу явах уу. */
+export function TemeeExtraPracticeOffer({
+  onExtra,
+  onSkip,
+}: {
+  onExtra: () => void;
+  onSkip: () => void;
+}) {
+  return (
+    <div className="tm-root">
+      <p className="tm-kicker">Дасгал</p>
+      <h2 className="tm-title">Өөр дасгал хийх үү</h2>
+      <div className="tm-say">
+        {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
+        <img src={temeePoseSrc("thumbsup", "sm")} alt="" className="tm-say-img" />
+        <div className="tm-say-bubble">
+          <p>Миний дасгал дууслаа.</p>
+          <p>Номын дасгал бас бий. Тэнд үг олон, арай хэцүү.</p>
+          <p>Хийвэл гар чинь сайн ирнэ. Алгасаж ч болно.</p>
+        </div>
+      </div>
+      <div className="tm-nav">
+        <button type="button" className="tm-nav-back" onClick={onSkip}>
+          Сорил руу →
+        </button>
+        <button type="button" className="tm-nav-next" onClick={onExtra}>
+          Номын дасгал хийх
+        </button>
+      </div>
+    </div>
+  );
+}

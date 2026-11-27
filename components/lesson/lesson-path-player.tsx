@@ -25,7 +25,11 @@ import type { QuizQuestion } from "@/types/lesson";
 import type { TemeeLesson } from "@/types/temee-lesson";
 import { temeeMetaFromLesson } from "@/lib/temee-lesson/meta";
 import { preloadTemeeAudio } from "@/lib/temee-lesson/audio";
-import { TemeePracticePlayer, TemeeScreenPlayer } from "./temee/temee-screen-player";
+import {
+  TemeeExtraPracticeOffer,
+  TemeePracticePlayer,
+  TemeeScreenPlayer,
+} from "./temee/temee-screen-player";
 import { markTodayLessonFull, markTodayStepDone } from "@/lib/today/today-path";
 import { LessonPathHub } from "./lesson-path-hub";
 import { LessonPathWarmupStage } from "./lesson-path-warmup-stage";
@@ -101,6 +105,11 @@ export default function LessonPathPlayer({
     null
   );
   const practiceFooterActionRef = useRef<(() => void) | null>(null);
+  /**
+   * Тэмээ багшийн дасгалын дараа номын (хуучин) дасгалыг «нэмэлт» болгож санал болгоно:
+   * "temee" → Тэмээ багшийн дасгал, "offer" → нэмж хийх үү гэж асуух, "extra" → номын дасгал.
+   */
+  const [practicePhase, setPracticePhase] = useState<"temee" | "offer" | "extra">("temee");
 
   const allStageIds = useMemo(() => plan.stages.map((s) => s.id), [plan.stages]);
   const activeIndex = activeStage
@@ -155,6 +164,7 @@ export default function LessonPathPlayer({
         setPracticeFooter(null);
         practiceFooterActionRef.current = null;
       }
+      setPracticePhase("temee");
       setActiveStage(stage);
       setView("stage");
       setLessonPathLastStage(lessonId, stage.id);
@@ -343,12 +353,20 @@ export default function LessonPathPlayer({
           />
         );
       case "practice":
-        if (temee?.practice?.length) {
+        if (temee?.practice?.length && practicePhase === "temee") {
           return (
             <TemeePracticePlayer
               lessonId={lessonId}
               items={temee.practice}
-              onDone={finishModuleStage}
+              onDone={pathPlan.practiceSource ? () => setPracticePhase("offer") : finishModuleStage}
+            />
+          );
+        }
+        if (temee?.practice?.length && practicePhase === "offer") {
+          return (
+            <TemeeExtraPracticeOffer
+              onExtra={() => setPracticePhase("extra")}
+              onSkip={finishModuleStage}
             />
           );
         }
