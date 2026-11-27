@@ -674,15 +674,6 @@
               "Дараа нь үндсэн үйлдэл орно."
             ],
             "pose": "teach",
-            "audio": [
-              {
-                "label": "按照 ànzhào",
-                "src": [
-                  "word:按照"
-                ],
-                "repeat": true
-              }
-            ],
             "check": {
               "q": "＿＿公司的要求，我们八点上班。",
               "options": [
