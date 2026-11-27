@@ -14,8 +14,10 @@ export type UserLessonProgressRow = {
 
 const LESSON_PATH_STAGE_IDS = new Set<LessonPathStageId>([
   "goal_warmup",
+  "temee",
   "vocabulary",
   "text",
+  "sounds",
   "grammar",
   "practice",
   "quiz",

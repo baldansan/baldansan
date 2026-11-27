@@ -9,6 +9,7 @@ import {
 import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
 import { buildLessonLoadDebugInfo } from "@/lib/lesson/lesson-load-diagnostics";
 import { resolveLessonPageAccess, resolvePreviewFromPageSearchParams } from "@/lib/lesson-public-access";
+import { loadTemeeLesson, temeeQuizQuestions } from "@/lib/temee-lesson/load";
 import { loadLessonQuizQuestionsForPage } from "@/lib/lesson/quiz-page-loader";
 import { LessonQuizClient } from "./quiz-client";
 
@@ -57,8 +58,11 @@ export default async function LessonQuizPage({
   }
 
   const { lesson, adminPreview } = access;
-  const { questions: quizQuestions, fromDatabase } =
-    await loadLessonQuizQuestionsForPage(lessonId, lesson);
+  const quizData = await loadLessonQuizQuestionsForPage(lessonId, lesson);
+  // Тэмээ багшийн хичээлтэй бол сорил нь зөвхөн заасан зүйлээр бичсэн шинэ асуултууд.
+  const temee = await loadTemeeLesson(lesson.id);
+  const quizQuestions = temee?.quiz?.length ? temeeQuizQuestions(temee) : quizData.questions;
+  const fromDatabase = temee?.quiz?.length ? true : quizData.fromDatabase;
   // Зөвхөн "дараагийн хичээл" id хэрэгтэй — кэштэй хураангуй жагсаалт (watch/training-тэй ижил).
   const courseLessons = adminPreview
     ? (await getLessonsByCourseId(lesson.courseId)).map(toLessonListSummary)

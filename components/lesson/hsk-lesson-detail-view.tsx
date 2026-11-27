@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { GamePracticeLinks } from "@/components/games/game-practice-links";
 import { HskOptionalVideoCard } from "@/components/lesson/hsk-optional-video-card";
 import { LessonProgressCard } from "@/components/lesson-progress-card";
@@ -21,9 +21,9 @@ import type { LessonContent } from "@/types/lesson-content";
 import { courseSeriesLabel } from "@/lib/lesson/course-series-label";
 import { standardLessonPathStages } from "@/lib/lesson/build-lesson-path";
 import { loadLessonPathProgress } from "@/lib/lesson/lesson-path-progress";
+import { temeeLessonMeta } from "@/lib/temee-lesson/meta";
 import "./lesson-fresh.css";
 
-const PATH_STAGES = standardLessonPathStages();
 
 type Props = {
   lesson: LessonContent;
@@ -31,11 +31,18 @@ type Props = {
 };
 
 export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
+  // «Тэмээ багшийн хичээл»-тэй бол үе, үг, сорилын тоо шинэ бүтцээр харагдана.
+  const temeeMeta = temeeLessonMeta(lesson.id);
+  const PATH_STAGES = useMemo(() => standardLessonPathStages(temeeMeta), [temeeMeta]);
+  const vocabularyCount = temeeMeta?.vocabCount ?? lesson.vocabularyCount;
+  const quizCount = temeeMeta?.quizCount ?? lesson.quizCount;
   const content = lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
   const hskBadge =
     courseSeriesLabel(lesson.courseId) ??
     (content.hskLevel ? `HSK${content.hskLevel}` : "HSK");
-  const duration = lesson.duration?.trim() || "5–10 мин";
+  const duration = temeeMeta
+    ? "~40 мин"
+    : lesson.duration?.trim() || "5–10 мин";
   const isPrelesson = isPrelessonPackage(lesson);
   const isKorean = inferLessonLanguage(lesson) === "ko";
 
@@ -60,7 +67,7 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
   useEffect(() => {
     function load() {
       setStudiedCount(getStudiedWordsCount(lesson.id));
-      const quizSummary = quizStepSummary(lesson.id, lesson.quizCount);
+      const quizSummary = quizStepSummary(lesson.id, quizCount);
       setQuizStepLabel(
         quizSummary.status === "not_started" ? null : quizSummary.detail
       );
@@ -69,7 +76,7 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
     load();
     window.addEventListener("focus", load);
     return () => window.removeEventListener("focus", load);
-  }, [lesson.id, lesson.quizCount]);
+  }, [lesson.id, quizCount]);
 
   const lastDoneIndex = PATH_STAGES.reduce(
     (max, st, idx) => (doneStageIds.includes(st.id) ? idx : max),
@@ -99,8 +106,8 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
       </div>
 
       <div className="bs-fresh-stats bs-home-stats">
-        <div><b>{lesson.vocabularyCount}</b><span>шинэ үг</span></div>
-        <div><b>{lesson.quizCount}</b><span>сорилын асуулт</span></div>
+        <div><b>{vocabularyCount}</b><span>шинэ үг</span></div>
+        <div><b>{quizCount}</b><span>сорилын асуулт</span></div>
         <div><b>{PATH_STAGES.length}</b><span>үе</span></div>
       </div>
 
@@ -131,17 +138,17 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
           🃏 Үгийн карт
           <small>
             {studiedCount > 0
-              ? `${studiedCount} / ${lesson.vocabularyCount}`
-              : `${lesson.vocabularyCount} үг`}
+              ? `${Math.min(studiedCount, vocabularyCount)} / ${vocabularyCount}`
+              : `${vocabularyCount} үг`}
           </small>
         </Link>
         <Link href={quizHref}>
           📝 Сорил
-          <small>{quizStepLabel ?? `${lesson.quizCount} асуулт`}</small>
+          <small>{quizStepLabel ?? `${quizCount} асуулт`}</small>
         </Link>
       </div>
 
-      <LessonProgressCard lessonId={lesson.id} quizCount={lesson.quizCount} />
+      <LessonProgressCard lessonId={lesson.id} quizCount={quizCount} />
 
       <HskOptionalVideoCard lesson={lesson} adminPreview={adminPreview} />
 

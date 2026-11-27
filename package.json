@@ -14,6 +14,7 @@
     "cap:ios": "cap open ios",
     "mobile:assets": "capacitor-assets generate --iconBackgroundColor '#ffffff' --splashBackgroundColor '#7C4DDB' --splashBackgroundColorDark '#14111D'",
     "lint": "eslint",
+    "temee:check": "node scripts/temee-lesson/check.mjs",
     "hsk1:audit:generate": "tsx scripts/hsk1-generate-source-audit.ts",
     "hsk1:audit:validate": "tsx scripts/hsk1-validate-source-audit.ts",
     "build:hsk-json": "node scripts/build-hsk-words-json.mjs",

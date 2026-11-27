@@ -12,6 +12,11 @@ import { resolveHskLessonPackageFromLesson } from "@/lib/lesson/resolve-hsk-less
 import { loadLessonQuizQuestionsForPage } from "@/lib/lesson/quiz-page-loader";
 import { fetchLessonDeepTeaching } from "@/lib/supabase/lesson-deep-teaching";
 import { toLessonListSummary } from "@/lib/lesson/lesson-summary";
+import {
+  applyTemeeLessonToPackage,
+  loadTemeeLesson,
+  temeeQuizQuestions,
+} from "@/lib/temee-lesson/load";
 import { LessonWatchClient } from "./watch-client";
 
 type PageProps = {
@@ -55,9 +60,14 @@ export default async function LessonWatchPage({
   }
 
   const { lesson, adminPreview } = result;
-  const lessonPackage = isHskStructuredLesson(lesson)
+  let lessonPackage = isHskStructuredLesson(lesson)
     ? resolveHskLessonPackageFromLesson(lesson)
     : null;
+  // «Тэмээ багшийн хичээл» — repo доторх файл; байхгүй хичээлд null, юу ч өөрчлөгдөхгүй.
+  const temee = lessonPackage ? await loadTemeeLesson(lesson.id) : null;
+  if (lessonPackage && temee) {
+    lessonPackage = applyTemeeLessonToPackage(lessonPackage, temee);
+  }
 
   const courseLessons = adminPreview
     ? (await getLessonsByCourseId(lesson.courseId)).map(toLessonListSummary)
@@ -73,6 +83,11 @@ export default async function LessonWatchPage({
     const quizData = await loadLessonQuizQuestionsForPage(lessonId, lesson);
     quizQuestions = quizData.questions;
     useDatabaseQuizOptions = quizData.fromDatabase;
+    // Тэмээ багшийн сорил: зөвхөн заасан зүйлээр бичсэн асуултууд хуучныг орлоно.
+    if (temee?.quiz?.length) {
+      quizQuestions = temeeQuizQuestions(temee);
+      useDatabaseQuizOptions = true;
+    }
     // Нэмэлт агуулга — байхгүй бол null, хичээл урьдын адил ажиллана.
     deep = await fetchLessonDeepTeaching(lessonId);
   }
@@ -86,6 +101,7 @@ export default async function LessonWatchPage({
       adminPreview={adminPreview}
       nextLessonId={nextLessonId}
       deep={deep}
+      temee={temee}
     />
   );
 }

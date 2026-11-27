@@ -17,6 +17,9 @@ function charPinyinAt(
   length: number,
   sourceTokens: HskPackageTextToken[]
 ): string {
+  // Эх токенд цэг таслал («、», «，») тусдаа токен болж орсон байж болно —
+  // тэднийг тоолбол ханз бүрийн пиньинь нэг нэгээр хойшилно (二 дээр «yī» гарах алдаа).
+  sourceTokens = sourceTokens.filter((t) => isHanziChar(t.zh[0] ?? ""));
   const hanziPys: string[] = [];
   let tokIdx = 0;
 

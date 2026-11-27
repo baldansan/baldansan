@@ -128,7 +128,9 @@ export function LessonPathWarmupStage({
         {vocabN > 0 ? (
           <div><b>{vocabN}</b><span>шинэ үг</span></div>
         ) : null}
-        {grammarN > 0 ? (
+        {plan.stages.some((st) => st.id === "temee") ? (
+          <div><b>{plan.stages.length}</b><span>үе</span></div>
+        ) : grammarN > 0 ? (
           <div><b>{grammarN}</b><span>дүрэм</span></div>
         ) : null}
         <div><b>~{plan.totalMinutes}</b><span>минут</span></div>

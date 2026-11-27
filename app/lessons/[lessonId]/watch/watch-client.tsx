@@ -10,6 +10,7 @@ import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
+import type { TemeeLesson } from "@/types/temee-lesson";
 import { useActivityTracker } from "@/lib/analytics/activity-tracker";
 
 function WatchLoading() {
@@ -70,6 +71,7 @@ type Props = {
   nextLessonId?: string | null;
   /** Нэмэлт, гүнзгий заах агуулга (HSK1/HSK2). Байхгүй бол хуучнаараа. */
   deep?: LessonDeepTeaching | null;
+  temee?: TemeeLesson | null;
 };
 
 function SchemaLessonWatchPlayer({
@@ -81,6 +83,7 @@ function SchemaLessonWatchPlayer({
   nextLessonId = null,
   adminPreview = false,
   deep = null,
+  temee = null,
 }: {
   lessonId: string;
   lesson: LessonContent;
@@ -90,6 +93,7 @@ function SchemaLessonWatchPlayer({
   nextLessonId?: string | null;
   adminPreview?: boolean;
   deep?: LessonDeepTeaching | null;
+  temee?: TemeeLesson | null;
 }) {
   const router = useRouter();
 
@@ -106,6 +110,7 @@ function SchemaLessonWatchPlayer({
           nextLessonId={nextLessonId}
           adminPreview={adminPreview}
           deep={deep}
+          temee={temee}
           onExit={() => router.back()}
         />
       </div>
@@ -121,6 +126,7 @@ export function LessonWatchClient({
   adminPreview = false,
   nextLessonId = null,
   deep = null,
+  temee = null,
 }: Props) {
   // Time-on-lesson (Оюу оноо): one tracker for every lesson-watch variant.
   useActivityTracker("lesson", lesson.id, !adminPreview);
@@ -136,6 +142,7 @@ export function LessonWatchClient({
         nextLessonId={nextLessonId}
         adminPreview={adminPreview}
         deep={deep}
+        temee={temee}
       />
     );
   }

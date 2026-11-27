@@ -21,6 +21,9 @@ import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
+import type { TemeeLesson } from "@/types/temee-lesson";
+import { temeeMetaFromLesson } from "@/lib/temee-lesson/meta";
+import { TemeePracticePlayer, TemeeScreenPlayer } from "./temee/temee-screen-player";
 import { markTodayLessonFull, markTodayStepDone } from "@/lib/today/today-path";
 import { LessonPathHub } from "./lesson-path-hub";
 import { LessonPathWarmupStage } from "./lesson-path-warmup-stage";
@@ -53,6 +56,8 @@ type Props = {
   adminPreview?: boolean;
   /** Нэмэлт, гүнзгий заах агуулга — байхгүй бол хичээл урьдын адил. */
   deep?: LessonDeepTeaching | null;
+  /** «Тэмээ багшийн хичээл» — байхгүй бол хичээл урьдын адил. */
+  temee?: TemeeLesson | null;
   onExit?: () => void;
 };
 
@@ -65,11 +70,12 @@ export default function LessonPathPlayer({
   nextLessonId = null,
   adminPreview = false,
   deep = null,
+  temee = null,
   onExit,
 }: Props) {
   const plan = useMemo(
-    () => buildLessonPathPlan(lesson, quizQuestions),
-    [lesson, quizQuestions]
+    () => buildLessonPathPlan(lesson, quizQuestions, temee ? temeeMetaFromLesson(temee) : null),
+    [lesson, quizQuestions, temee]
   );
   const pathImages = useMemo(
     () => resolveLessonPathImages(lessonContent),
@@ -270,6 +276,24 @@ export default function LessonPathPlayer({
             images={pathImages}
           />
         );
+      case "temee":
+        return temee ? (
+          <TemeeScreenPlayer
+            lessonId={lessonId}
+            sectionKey="teach"
+            section={temee.teach}
+            onDone={finishModuleStage}
+          />
+        ) : null;
+      case "sounds":
+        return temee?.sounds ? (
+          <TemeeScreenPlayer
+            lessonId={lessonId}
+            sectionKey="sounds"
+            section={temee.sounds}
+            onDone={finishModuleStage}
+          />
+        ) : null;
       case "vocabulary":
         return (
           <>
@@ -312,6 +336,15 @@ export default function LessonPathPlayer({
           />
         );
       case "practice":
+        if (temee?.practice?.length) {
+          return (
+            <TemeePracticePlayer
+              lessonId={lessonId}
+              items={temee.practice}
+              onDone={finishModuleStage}
+            />
+          );
+        }
         return pathPlan.practiceSource ? (
           <ExercisesModule
             key={`practice-${pathPlan.practiceSource}`}

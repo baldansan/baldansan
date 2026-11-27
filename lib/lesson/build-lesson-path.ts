@@ -5,11 +5,14 @@ import {
 } from "@/lib/lesson/build-exercise-questions";
 import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { QuizQuestion } from "@/types/lesson";
+import type { TemeeLessonMeta } from "@/types/temee-lesson";
 
 export type LessonPathStageId =
   | "goal_warmup"
+  | "temee"
   | "vocabulary"
   | "text"
+  | "sounds"
   | "grammar"
   | "practice"
   | "quiz"
@@ -34,6 +37,18 @@ const STAGE_DEFS: Record<
     icon: "🎯",
     label: "Зорилго ба халаалт",
     hint: "Энэ хичээл юу өгөх вэ",
+  },
+  temee: {
+    id: "temee",
+    icon: "🐫",
+    label: "Тэмээ багшийн хичээл",
+    hint: "Алхам алхмаар тайлбар",
+  },
+  sounds: {
+    id: "sounds",
+    icon: "👂",
+    label: "Авианы дасгал",
+    hint: "Сонсож, дагаж хэлэх",
   },
   vocabulary: {
     id: "vocabulary",
@@ -75,8 +90,10 @@ const STAGE_DEFS: Record<
 
 const STAGE_ORDER: LessonPathStageId[] = [
   "goal_warmup",
+  "temee",
   "vocabulary",
   "text",
+  "sounds",
   "grammar",
   "practice",
   "quiz",
@@ -85,6 +102,8 @@ const STAGE_ORDER: LessonPathStageId[] = [
 
 const MINUTES_BY_STAGE: Record<LessonPathStageId, number> = {
   goal_warmup: 3,
+  temee: 12,
+  sounds: 10,
   vocabulary: 5,
   text: 5,
   grammar: 4,
@@ -96,9 +115,14 @@ const MINUTES_BY_STAGE: Record<LessonPathStageId, number> = {
 function stageHasContent(
   id: LessonPathStageId,
   pkg: HskLessonPackage,
-  quizQuestions: QuizQuestion[]
+  quizQuestions: QuizQuestion[],
+  temee: TemeeLessonMeta | null
 ): boolean {
   switch (id) {
+    case "temee":
+      return temee != null;
+    case "sounds":
+      return temee?.hasSounds === true;
     case "goal_warmup":
       return moduleHasContent(pkg, "hook");
     case "vocabulary":
@@ -109,8 +133,11 @@ function stageHasContent(
     case "text":
       return moduleHasContent(pkg, "texts");
     case "grammar":
+      // Тэмээ багшийн хичээл хуучин «Дүрэм» үеийг орлож байвал давхар гаргахгүй.
+      if (temee?.replacesGrammar) return false;
       return moduleHasContent(pkg, "grammar");
     case "practice":
+      if (temee?.hasPractice) return true;
       return resolveExercisePracticeSource(pkg) != null;
     case "quiz":
       return quizQuestions.length > 0;
@@ -121,9 +148,28 @@ function stageHasContent(
   }
 }
 
-/** 7 үеийн стандарт дараалал (нэр, дүрс) — хичээлийн нүүрэнд замыг багцгүйгээр харуулахад. */
-export function standardLessonPathStages(): { id: LessonPathStageId; label: string; hint: string }[] {
-  return STAGE_ORDER.map((id) => ({ id, label: STAGE_DEFS[id].label, hint: STAGE_DEFS[id].hint }));
+/**
+ * Стандарт дараалал (нэр, дүрс) — хичээлийн нүүрэнд замыг багцгүйгээр харуулахад.
+ * Тэмээ багшийн хичээлтэй бол түүний үеүүд орж, орлогдсон «Дүрэм» хасагдана.
+ */
+export function standardLessonPathStages(
+  temee: TemeeLessonMeta | null = null
+): { id: LessonPathStageId; label: string; hint: string }[] {
+  return STAGE_ORDER.filter((id) => {
+    if (id === "temee") return temee != null;
+    if (id === "sounds") return temee?.hasSounds === true;
+    if (id === "grammar") return !temee?.replacesGrammar;
+    return true;
+  }).map((id) => ({
+    id,
+    label:
+      id === "temee" && temee
+        ? temee.teachLabel
+        : id === "sounds" && temee?.soundsLabel
+          ? temee.soundsLabel
+          : STAGE_DEFS[id].label,
+    hint: STAGE_DEFS[id].hint,
+  }));
 }
 
 export type LessonPathPlan = {
@@ -137,7 +183,8 @@ export type LessonPathPlan = {
 
 export function buildLessonPathPlan(
   pkg: HskLessonPackage,
-  quizQuestions: QuizQuestion[] = []
+  quizQuestions: QuizQuestion[] = [],
+  temee: TemeeLessonMeta | null = null
 ): LessonPathPlan {
   const warmupExtras: LessonPathPlan["warmupExtras"] = [];
   if (moduleHasContent(pkg, "dialogues")) warmupExtras.push("dialogues");
@@ -147,15 +194,28 @@ export function buildLessonPathPlan(
     resolveExercisePracticeSource(pkg);
 
   const activeIds = STAGE_ORDER.filter((id) =>
-    stageHasContent(id, pkg, quizQuestions)
+    stageHasContent(id, pkg, quizQuestions, temee)
   );
 
   const stages: LessonPathStage[] = activeIds.map((id, index) => {
     const def = STAGE_DEFS[id];
+    const label =
+      id === "temee" && temee
+        ? temee.teachLabel
+        : id === "sounds" && temee?.soundsLabel
+          ? temee.soundsLabel
+          : def.label;
+    const minutes =
+      id === "temee" && temee?.teachMinutes
+        ? temee.teachMinutes
+        : id === "sounds" && temee?.soundsMinutes
+          ? temee.soundsMinutes
+          : MINUTES_BY_STAGE[id];
     return {
       ...def,
+      label,
       number: index + 1,
-      minutes: MINUTES_BY_STAGE[id],
+      minutes,
     };
   });
 
