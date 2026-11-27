@@ -2,9 +2,13 @@
 
 /**
  * Бичих дасгал: ханз бүрд 👀 хар → ✍️ дагаж ×N → 🧠 санаж ×M.
- * Ханзыг багцаар (анхдагч 2) явуулна: багцын ханз бүрийг харж, дагаж бичээд, дараа нь
- * санаж бичихийг ээлжлүүлнэ (A, B, A, B…) — гар хуулахгүй, толгой санана. Хоёр багц
- * тутамд өмнөх ханзуудыг загваргүйгээр нэг удаа холиж асууна.
+ * Ханз бүр гурван шатаа ТАСРАЛТГҮЙ дуусгана: харж, дагаж бичээд тэр даруй нэг удаа санаж
+ * бичнэ. Үлдсэн санаж бичилтийг багцын бусад ханзтай ээлжлүүлнэ (A, B, A, B…) — зай авч
+ * давтахад толгой санана.
+ * Санаж бичихдээ чадаагүй (сануулга авсан / олон алдсан) ханз алга болохгүй: загварыг нь
+ * дахин дагаж бичүүлээд, хэдэн ханзны дараа дахин санаж бичүүлнэ.
+ * Нэг удаад 10 ханз. Төгсгөлд нь тэр 10-ыг загваргүй, холимог дарааллаар шалгана —
+ * шалгалтад чадаагүй ханзыг төгсгөлийн дэлгэц тусад нь харуулж, дахин бичүүлнэ.
  * Ахиц дэвтэрт (локал/сервер) хадгалагдана; санаж бичих дууссан ханз бичих
  * SRS-д үнэлэгдэж, алдсан бол давталтад буцаж ирнэ.
  */
@@ -40,6 +44,12 @@ const WritingPad = dynamic(
 );
 
 const KIDS_CHUNK = 5;
+/** Нэг удаагийн дасгалын ханзны тоо — 67 ханзыг нэг амьсгаагаар биш, 10-аар. */
+const CHUNK = 10;
+/** Санаж бичихэд чадаагүй ханзыг хэдэн даалгаврын дараа дахин асуух вэ. */
+const RETRY_GAP = 3;
+/** Нэг ханзыг нэг дасгалд хэдэн удаа буцааж асуух вэ (эцэс төгсгөлгүй эргэлдэхгүй). */
+const MAX_RETRY = 2;
 const SAVE_DEBOUNCE_MS = 600;
 const FEEDBACK_MS = 850;
 
@@ -53,10 +63,28 @@ type Props = {
 
 type Step = { phase: WritingPadPhase; index: number; total: number; base: number };
 
-/** Дарааллын нэг даалгавар: аль ханз, аль алхам. extra = хоёр багц тутмын холимог давталт. */
-type Task = Step & { ch: string; extra?: boolean };
+/**
+ * Дарааллын нэг даалгавар: аль ханз, аль алхам.
+ * extra = дэвтрийн нүдэнд тоологдохгүй нэмэлт: "check" төгсгөлийн шалгалт, "retry" чадаагүй ханзыг буцаасан.
+ */
+type Task = Step & { ch: string; extra?: "check" | "retry" };
 
-type CharResult = { ch: string; mistakes: number; done: boolean };
+/** weak = хамгийн сүүлд санаж бичихдээ чадаагүй (дахин бичих хэрэгтэй). */
+type CharResult = { ch: string; mistakes: number; done: boolean; weak: boolean };
+
+/** Санаж бичилт «чадаагүй» гэж тооцогдох уу: сануулга авсан эсвэл 3+ удаа алдсан. */
+function recallFailed(r: WritingPadResult): boolean {
+  return r.usedHint || r.mistakes >= 3;
+}
+
+function shuffled<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j]!, a[i]!];
+  }
+  return a;
+}
 
 const GROUP_KEY = "bs:writingGroupSize";
 const GROUP_DEFAULT = 2;
@@ -103,7 +131,12 @@ function buildSteps(
   return steps;
 }
 
-/** Бүх ханзны даалгаврыг багцаар нь нэг дараалал болгоно. */
+/**
+ * Бүх ханзны даалгаврыг нэг дараалал болгоно.
+ * Багц бүрд: ханз бүр хар → дагаж → тэр даруй 1 удаа санаж; дараа нь үлдсэн санаж бичилтийг
+ * ээлжлүүлнэ. Төгсгөлд (2+ ханзтай бол) бүгдийг загваргүй, холимог дарааллаар шалгана.
+ * Зөвхөн client талд (effect / товч дарахад) дуудагдана — санамсаргүй дараалал render-т орохгүй.
+ */
 function buildTasks(
   list: WritingList,
   progress: WritingProgressMap,
@@ -113,27 +146,30 @@ function buildTasks(
 ): Task[] {
   const per = (c: string): Task[] =>
     buildSteps(list, progress[c], fromScratch).map((st) => ({ ...st, ch: c }));
-  if (group <= 1) return chars.flatMap(per);
-  const groups: string[][] = [];
-  for (let i = 0; i < chars.length; i += group) groups.push(chars.slice(i, i + group));
+  const size = Math.max(1, group);
   const tasks: Task[] = [];
-  groups.forEach((g, gi) => {
-    const stepsBy = g.map(per);
-    // 1) Ханз бүрийг харж, дагаж бичнэ.
-    stepsBy.forEach((st) => tasks.push(...st.filter((x) => x.phase !== "memory")));
-    // 2) Санаж бичихийг ээлжлүүлнэ.
-    const mem = stepsBy.map((st) => st.filter((x) => x.phase === "memory"));
-    const rounds = Math.max(0, ...mem.map((m) => m.length));
+  for (let i = 0; i < chars.length; i += size) {
+    const stepsBy = chars.slice(i, i + size).map(per);
+    const later: Task[][] = [];
+    // 1) Ханз бүр гурван шатаа дараалан: хар → дагаж → эхний санаж бичилт.
+    for (const st of stepsBy) {
+      const mem = st.filter((x) => x.phase === "memory");
+      tasks.push(...st.filter((x) => x.phase !== "memory"));
+      if (mem[0]) tasks.push(mem[0]);
+      later.push(mem.slice(1));
+    }
+    // 2) Үлдсэн санаж бичилтийг ээлжлүүлнэ.
+    const rounds = Math.max(0, ...later.map((m) => m.length));
     for (let r = 0; r < rounds; r += 1) {
-      for (const m of mem) if (m[r]) tasks.push(m[r]!);
+      for (const m of later) if (m[r]) tasks.push(m[r]!);
     }
-    // 3) Хоёр багц тутамд өмнөх ханзуудыг загваргүй нэг удаа.
-    if (gi % 2 === 1) {
-      for (const c of [...groups[gi - 1]!, ...g]) {
-        tasks.push({ ch: c, phase: "memory", index: 0, total: 1, base: 0, extra: true });
-      }
+  }
+  // 3) Төгсгөлийн шалгалт — загваргүй, холимог.
+  if (chars.length > 1) {
+    for (const c of shuffled(chars)) {
+      tasks.push({ ch: c, phase: "memory", index: 0, total: 1, base: 0, extra: "check" });
     }
-  });
+  }
   return tasks;
 }
 
@@ -159,6 +195,12 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
   const [completed, setCompleted] = useState<string[]>([]);
   const [results, setResults] = useState<CharResult[]>([]);
   const sessionRef = useRef<Map<string, { mistakes: number; usedHint: boolean }>>(new Map());
+  /** Хугацаатай шилжилт (feedback-ийн дараа) хуучин state барихгүйн тулд дарааллыг ref-д давхар хадгална. */
+  const tasksRef = useRef<Task[]>([]);
+  const tiRef = useRef(0);
+  /** Ханз бүрийн хамгийн сүүлийн санаж бичилт чадсан уу. */
+  const lastRecallOkRef = useRef<Map<string, boolean>>(new Map());
+  const retryCountRef = useRef<Map<string, number>>(new Map());
   const advanceTimerRef = useRef<number | null>(null);
 
   const itemByCh = useMemo(() => {
@@ -197,14 +239,20 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
         setScreen("empty");
         return;
       }
-      const chunk = isKids ? chars.slice(0, KIDS_CHUNK) : chars;
+      const chunkSize = isKids ? KIDS_CHUNK : CHUNK;
+      const chunk = chars.slice(0, chunkSize);
       // Хүүхдийн горим: нэг нэгээр (5-аар хэсэглэнэ). Бусад нь сонгосон багцаар.
       const g = isKids ? 1 : (groupSize ?? readGroupSize());
       setGroup(g);
       setQueue(chunk);
-      setRemaining(isKids ? chars.slice(KIDS_CHUNK) : []);
+      setRemaining(chars.slice(chunkSize));
       setFromScratch(scratch);
-      setTasks(buildTasks(l, progressRef.current, chunk, scratch, g));
+      const built = buildTasks(l, progressRef.current, chunk, scratch, g);
+      tasksRef.current = built;
+      tiRef.current = 0;
+      lastRecallOkRef.current = new Map();
+      retryCountRef.current = new Map();
+      setTasks(built);
       setTi(0);
       setCompleted([]);
       setResults([]);
@@ -273,6 +321,8 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
 
   function goNext() {
     if (!list || !ch || !step) return;
+    const tasks = tasksRef.current;
+    const ti = tiRef.current;
     const hasMore = tasks.slice(ti + 1).some((t) => t.ch === ch);
     let nextResults = results;
     if (!hasMore) {
@@ -290,7 +340,8 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
       if (doneNow && !p?.completedAt) {
         bumpProgress(ch, (prev) => ({ ...prev, completedAt: new Date().toISOString() }));
       }
-      nextResults = [...results, { ch, mistakes: sess.mistakes, done: doneNow }];
+      const weak = hadMemory && lastRecallOkRef.current.get(ch) === false;
+      nextResults = [...results, { ch, mistakes: sess.mistakes, done: doneNow, weak }];
       setResults(nextResults);
       setCompleted((prev) => [...prev, ch]);
 
@@ -309,6 +360,7 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
     }
 
     if (ti < tasks.length - 1) {
+      tiRef.current = ti + 1;
       setTi(ti + 1);
       setPadKey((k) => k + 1);
     } else {
@@ -320,8 +372,10 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
   function handlePadDone(result: WritingPadResult) {
     if (!step || !ch || !list) return;
     if (step.phase === "watch") return;
+    let requeued = false;
     if (step.phase === "trace") {
-      bumpProgress(ch, (prev) => ({ ...prev, traceDone: prev.traceDone + 1 }));
+      // Буцааж асуухын өмнөх дагаж бичилт нь нэмэлт — дэвтрийн нүдийг тоолохгүй.
+      if (!step.extra) bumpProgress(ch, (prev) => ({ ...prev, traceDone: prev.traceDone + 1 }));
     } else {
       const sess = sessionRef.current.get(ch) ?? { mistakes: 0, usedHint: false };
       sessionRef.current.set(ch, {
@@ -334,13 +388,39 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
         memoryDone: step.extra ? prev.memoryDone : prev.memoryDone + 1,
         mistakes: prev.mistakes + result.mistakes,
       }));
+      // Чадаагүй ханзыг орхихгүй: загварыг нь дахин дагаж бичүүлээд, хэдэн ханзны дараа дахин асууна.
+      const failed = recallFailed(result);
+      lastRecallOkRef.current.set(ch, !failed);
+      const tries = retryCountRef.current.get(ch) ?? 0;
+      if (failed && tries < MAX_RETRY) {
+        retryCountRef.current.set(ch, tries + 1);
+        const cur = tasksRef.current;
+        const at = tiRef.current;
+        const next = [...cur];
+        next.splice(at + 1, 0, { ch, phase: "trace", index: 0, total: 1, base: 0, extra: "retry" });
+        // Дахин асуух байрлал: хэдэн даалгаврын дараа, гэхдээ өөр ханзны хар → дагаж → санаж
+        // гинжийг дундуур нь таслахгүй (зөвхөн санаж бичилтийн ард, дагаж бичилтийн өмнө биш).
+        let again = Math.min(at + 2 + RETRY_GAP, next.length);
+        while (
+          again < next.length &&
+          !(next[again - 1]!.phase === "memory" && next[again]!.phase !== "trace")
+        ) {
+          again += 1;
+        }
+        next.splice(again, 0, { ch, phase: "memory", index: 0, total: 1, base: 0, extra: "retry" });
+        tasksRef.current = next;
+        setTasks(next);
+        requeued = true;
+      }
     }
     setFeedback(
-      result.mistakes === 0
-        ? kids
-          ? `🌟 ${tr(locale, "Гоё!")}`
-          : `✓ ${tr(locale, "Зөв бичлээ")}`
-        : `👍 ${tr(locale, "Болсон")} · ${result.mistakes} ${tr(locale, "алдаа")}`
+      requeued
+        ? `🔁 ${tr(locale, "Дахиад нэг харъя")}`
+        : result.mistakes === 0
+          ? kids
+            ? `🌟 ${tr(locale, "Гоё!")}`
+            : `✓ ${tr(locale, "Зөв бичлээ")}`
+          : `👍 ${tr(locale, "Болсон")} · ${result.mistakes} ${tr(locale, "алдаа")}`
     );
     if (advanceTimerRef.current != null) window.clearTimeout(advanceTimerRef.current);
     advanceTimerRef.current = window.setTimeout(() => {
@@ -365,13 +445,20 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
     const finished = new Set(results.map((r) => r.ch));
     const left = queue.filter((c) => !finished.has(c));
     const keep = results;
-    startSession(list, left, false, kids, next);
+    startSession(list, [...left, ...remaining], false, kids, next);
     setResults(keep);
   }
 
   function restart() {
     if (!list) return;
-    startSession(list, results.map((r) => r.ch), true, kids);
+    startSession(list, [...results.map((r) => r.ch), ...remaining], true, kids);
+  }
+
+  /** Шалгалтад чадаагүй ханзуудаа л дахин бичнэ; үлдсэн ханз дараа нь үргэлжилнэ. */
+  function redoWeak() {
+    if (!list) return;
+    const weak = results.filter((r) => r.weak).map((r) => r.ch);
+    startSession(list, [...weak, ...remaining], true, kids);
   }
 
   const stepLabel = (s: Step) => {
@@ -419,6 +506,9 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
 
   if (screen === "end") {
     const totalMistakes = results.reduce((n, r) => n + r.mistakes, 0);
+    const weakCount = results.filter((r) => r.weak).length;
+    const hasNext = remaining.length > 0;
+    const nextSize = Math.min(kids ? KIDS_CHUNK : CHUNK, remaining.length);
     return shell(
       <div className="pb-8">
         <MobileCard padding="lg" className="mb-4 text-center">
@@ -427,10 +517,17 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
             {results.length} {tr(locale, "ханз бичлээ")}
           </p>
           <p className="text-sm text-[var(--app-muted)]">
-            {totalMistakes === 0
-              ? tr(locale, "Алдаагүй! Маш сайн.")
-              : `${totalMistakes} ${tr(locale, "алдаа")} · ${tr(locale, "алдсан ханз давталтад буцаж ирнэ")}`}
+            {weakCount > 0
+              ? `${weakCount} ${tr(locale, "ханз хараахан тогтоогүй — доор тэмдэглэв")}`
+              : totalMistakes === 0
+                ? tr(locale, "Алдаагүй! Маш сайн.")
+                : `${totalMistakes} ${tr(locale, "алдаа")} · ${tr(locale, "алдсан ханз давталтад буцаж ирнэ")}`}
           </p>
+          {hasNext ? (
+            <p className="mt-1 text-xs text-[var(--app-muted)]">
+              {tr(locale, "Үлдсэн")}: {remaining.length} {tr(locale, "ханз")}
+            </p>
+          ) : null}
         </MobileCard>
 
         <MobileCard padding="sm" className="mb-4 !p-0">
@@ -455,7 +552,11 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
                     {r.mistakes === 0 ? "—" : r.mistakes}
                   </td>
                   <td className="px-3 py-2 text-right">
-                    {r.done ? (
+                    {r.weak ? (
+                      <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-bold text-amber-800">
+                        {tr(locale, "дахин")}
+                      </span>
+                    ) : r.done ? (
                       <span className="text-emerald-600">✓</span>
                     ) : (
                       <span className="text-slate-400">…</span>
@@ -468,17 +569,33 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
         </MobileCard>
 
         <div className="flex flex-col gap-2">
-          {kids && remaining.length > 0 ? (
-            <button type="button" onClick={nextChunk} className="app-btn-primary w-full">
-              ▶ {tr(locale, "Дараагийн 5")} ({Math.min(KIDS_CHUNK, remaining.length)})
+          {weakCount > 0 ? (
+            <button type="button" onClick={redoWeak} className="app-btn-primary w-full">
+              🔁 {tr(locale, "Тогтоогүй ханзаа дахин бичих")} ({weakCount})
             </button>
           ) : null}
-          {list.kind === "lesson" && !(kids && remaining.length > 0) ? (
+          {hasNext ? (
+            <button
+              type="button"
+              onClick={nextChunk}
+              className={
+                weakCount > 0
+                  ? "w-full rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-700 ring-1 ring-slate-200"
+                  : "app-btn-primary w-full"
+              }
+            >
+              ▶ {tr(locale, "Дараагийн ханзууд")} ({nextSize})
+            </button>
+          ) : null}
+          {list.kind === "lesson" && !hasNext && weakCount === 0 ? (
             <Link href="/home" className="app-btn-primary w-full text-center">
               {tr(locale, "Нүүр рүү — өнөөдрийн төлөвлөгөө")} →
             </Link>
           ) : null}
-          <Link href={`/writing/${listId}`} className={`${(kids && remaining.length > 0) || list.kind === "lesson" ? "" : "app-btn-primary"} w-full rounded-full bg-white px-4 py-2 text-center text-sm font-semibold text-slate-700 ring-1 ring-slate-200`}>
+          <Link
+            href={`/writing/${listId}`}
+            className="w-full rounded-full bg-white px-4 py-2 text-center text-sm font-semibold text-slate-700 ring-1 ring-slate-200"
+          >
             📓 {tr(locale, "Дэвтэр рүү")}
           </Link>
           <button
@@ -551,7 +668,11 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
       <div className="mb-3 flex flex-wrap items-center justify-center gap-1 text-[11px] font-bold">
         {step.extra ? (
           <span className="rounded-full bg-amber-100 px-2.5 py-1 text-amber-800">
-            🔀 {tr(locale, "Холимог давталт — загваргүй")}
+            {step.extra === "check"
+              ? `🔀 ${tr(locale, "Шалгалт — загваргүй санаж бич")}`
+              : step.phase === "trace"
+                ? `🔁 ${tr(locale, "Чадаагүй ханз — дахин дагаж бич")}`
+                : `🔁 ${tr(locale, "Одоо дахин санаж бич")}`}
           </span>
         ) : (
           (["watch", "trace", "memory"] as WritingPadPhase[]).map((phase, i) => {
