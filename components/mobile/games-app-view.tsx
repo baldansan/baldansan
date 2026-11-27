@@ -253,7 +253,7 @@ export function GamesAppView({ lessonIds, lessonTitles }: Props) {
           <section className="bs-page-in overflow-hidden rounded-3xl bg-[linear-gradient(135deg,#7C4DDB,#511CAD_55%,#A383F0)] p-5 text-white shadow-[0_10px_28px_rgba(124,77,219,0.35)]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/temee/v2/play.webp"
+              src="/temee/v3/play.webp"
               alt=""
               width={112}
               height={112}

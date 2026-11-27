@@ -105,7 +105,7 @@ function avatarsFor(d: KidsDialogue): Avatar[] {
     const hit = bySpeaker.get(key);
     if (hit) return hit;
     let av: Avatar;
-    if (/老师/.test(key)) av = { img: "/kids/temee.jpg" };
+    if (/老师/.test(key)) av = { img: "/kids/baldan.jpg" };
     else if (SPEAKER_EMOJI[key]) av = { emoji: SPEAKER_EMOJI[key] };
     else av = { img: free(BOYS.has(key) ? "/kids/botgo-huu.jpg" : GIRLS.has(key) ? "/kids/botgo-ohin.jpg" : undefined) };
     if (av.img) used.add(av.img);
@@ -378,7 +378,7 @@ function StartStep({ data, onNext }: { data: KidsLessonData; onNext: () => void 
       <div className="text-2xl font-bold text-[#6b3f1d]">{data.title.replace(/^.*—\s*/, "")}</div>
       {visible.length ? (
         <div className="flex w-full items-start gap-3 text-left">
-          <img src="/kids/temee.jpg" alt="Тэмээ багш" className="h-16 w-16 shrink-0 rounded-full object-cover ring-4 ring-white shadow" />
+          <img src="/kids/baldan.jpg" alt="Тэмээ багш" className="h-16 w-16 shrink-0 rounded-full object-cover ring-4 ring-white shadow" />
           <div className="flex flex-1 flex-col gap-2">
             {visible.map((b, i) => (
               <div key={i} className="rounded-[22px] rounded-tl-md bg-white px-4 py-3 text-lg font-semibold leading-7 text-[#3b2410] shadow-sm ring-1 ring-amber-100" style={{ animation: "kids-in .35s ease-out" }}>

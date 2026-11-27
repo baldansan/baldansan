@@ -105,7 +105,7 @@ export function LoginForm() {
     <MobileAppShell activeTab="profile" showBottomNav={false}>
       <section className="py-4 text-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/temee/v2/welcome.webp" alt="" width={168} height={168} className="mx-auto h-[168px] w-[168px] object-contain" />
+        <img src="/temee/v3/welcome.webp" alt="" width={168} height={168} className="mx-auto h-[168px] w-[168px] object-contain" />
         <h1 className="mt-2 text-2xl font-bold tracking-tight text-[var(--app-text)]">
           {tr(locale, "Нэвтрэх")}
         </h1>

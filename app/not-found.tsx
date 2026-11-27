@@ -6,7 +6,7 @@ export default function NotFound() {
     <PublicPageShell active="home">
       <section className="rounded-3xl bg-white p-8 text-center shadow-sm ring-1 ring-slate-200 sm:p-12">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/temee/v2/lost.webp" alt="" width={176} height={176} className="mx-auto h-44 w-44 object-contain" />
+        <img src="/temee/v3/lost.webp" alt="" width={176} height={176} className="mx-auto h-44 w-44 object-contain" />
         <p className="mt-2 text-sm font-semibold text-emerald-600">404</p>
         <h1 className="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">
           Хуудас олдсонгүй

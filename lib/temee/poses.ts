@@ -25,5 +25,5 @@ export type TemeePose =
   | "trophy";
 
 export function temeePoseSrc(pose: TemeePose, size: "sm" | "lg" = "sm"): string {
-  return `/temee/v2/${pose}${size === "sm" ? "-sm" : ""}.webp`;
+  return `/temee/v3/${pose}${size === "sm" ? "-sm" : ""}.webp`;
 }

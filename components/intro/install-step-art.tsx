@@ -59,7 +59,7 @@ function AppIcon({ x, y, size = 30 }: { x: number; y: number; size?: number }) {
         <rect x={x} y={y} width={size} height={size} rx={size * 0.24} />
       </clipPath>
       <rect x={x} y={y} width={size} height={size} rx={size * 0.24} fill={HOT} />
-      <image href="/icons/icon-192.png" x={x} y={y} width={size} height={size} clipPath={`url(#${id})`} />
+      <image href="/icons/baldan-192.png" x={x} y={y} width={size} height={size} clipPath={`url(#${id})`} />
     </g>
   );
 }

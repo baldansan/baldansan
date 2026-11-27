@@ -95,7 +95,7 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
         ) : null}
         <p className="bs-home-hero-sub">{hskTextbookSubtitle(lesson)}</p>
         {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
-        <img src="/temee/v2/teach.webp" alt="" className="bs-home-hero-img" />
+        <img src="/temee/v3/teach.webp" alt="" className="bs-home-hero-img" />
       </div>
 
       <div className="bs-fresh-stats bs-home-stats">

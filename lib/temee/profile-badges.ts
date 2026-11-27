@@ -3,7 +3,7 @@ import type { ActiveHskLevel } from "@/lib/hsk/active-hsk-level";
 export type ProfileBadgeDef = {
   id: string;
   emoji: string;
-  /** Тэмдгийн зураг (public/temee/v2/badges). */
+  /** Тэмдгийн зураг (public/temee/v3/badges). */
   image: string;
   label: string;
   bgOn?: string;
@@ -23,7 +23,7 @@ export type ProfileBadgeContext = {
 export const PROFILE_BADGE_DEFS: ProfileBadgeDef[] = [
   {
     id: "streak_7",
-    image: "/temee/v2/badges/streak_7.webp",
+    image: "/temee/v3/badges/streak_7.webp",
     emoji: "🔥",
     label: "7 хоног",
     bgOn: "#fff6df",
@@ -32,7 +32,7 @@ export const PROFILE_BADGE_DEFS: ProfileBadgeDef[] = [
   },
   {
     id: "words_100",
-    image: "/temee/v2/badges/words_100.webp",
+    image: "/temee/v3/badges/words_100.webp",
     emoji: "💯",
     label: "100 үг",
     bgOn: "#e3f7eb",
@@ -40,7 +40,7 @@ export const PROFILE_BADGE_DEFS: ProfileBadgeDef[] = [
   },
   {
     id: "first_lesson",
-    image: "/temee/v2/badges/first_lesson.webp",
+    image: "/temee/v3/badges/first_lesson.webp",
     emoji: "🎓",
     label: "1-р хичээл",
     bgOn: "#e4f0ff",
@@ -52,7 +52,7 @@ export const PROFILE_BADGE_DEFS: ProfileBadgeDef[] = [
   },
   {
     id: "hsk5",
-    image: "/temee/v2/badges/hsk5.webp",
+    image: "/temee/v3/badges/hsk5.webp",
     emoji: "🏅",
     label: "HSK 5",
     isEarned: (ctx) =>
@@ -62,28 +62,28 @@ export const PROFILE_BADGE_DEFS: ProfileBadgeDef[] = [
   },
   {
     id: "words_500",
-    image: "/temee/v2/badges/words_500.webp",
+    image: "/temee/v3/badges/words_500.webp",
     emoji: "⭐",
     label: "500 үг",
     isEarned: (ctx) => ctx.studiedCount >= 500,
   },
   {
     id: "streak_30",
-    image: "/temee/v2/badges/streak_30.webp",
+    image: "/temee/v3/badges/streak_30.webp",
     emoji: "🌟",
     label: "30 хоног",
     isEarned: (ctx) => ctx.streak >= 30,
   },
   {
     id: "master",
-    image: "/temee/v2/badges/master.webp",
+    image: "/temee/v3/badges/master.webp",
     emoji: "👑",
     label: "Мастер",
     isEarned: (ctx) => ctx.studiedCount >= 1000 && ctx.completedLessons >= 10,
   },
   {
     id: "accuracy_100",
-    image: "/temee/v2/badges/accuracy_100.webp",
+    image: "/temee/v3/badges/accuracy_100.webp",
     emoji: "🎯",
     label: "100%",
     isEarned: (ctx) =>

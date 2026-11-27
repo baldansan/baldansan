@@ -82,7 +82,7 @@ export function KidsReviewClient({ courseId, title, words, backHref }: Props) {
       <div className="mx-auto max-w-xl px-4 pt-5">
         {!seed ? (
           <div className="flex flex-col items-center gap-5 text-center">
-            <img src="/kids/temee.jpg" alt="" className="h-28 w-28 rounded-full object-cover shadow ring-4 ring-white" />
+            <img src="/kids/baldan.jpg" alt="" className="h-28 w-28 rounded-full object-cover shadow ring-4 ring-white" />
             <div className="text-2xl font-extrabold text-[#2b1a05]">{title}</div>
             <div className={`${C.card} w-full p-5 text-lg font-semibold leading-8 text-[#3b2410]`}>
               Энэ номоор <b>{words.length} үг</b> сурсан шүү! Одоо 4 тоглоомоор хэр сайн санаж байгаагаа шалгая. Бүгдийг давбал <b>🏆 цом</b> авна.

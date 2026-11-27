@@ -249,7 +249,7 @@ export function LessonPathSummaryStage({
             surtsgaay.buunduu.mn
           </p>
           {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
-          <img src="/temee/v2/thumbsup.webp" alt="" />
+          <img src="/temee/v3/thumbsup.webp" alt="" />
         </div>
       </div>
       <BaldanSay pose="relax" text={baldanLine("lessonDone", lesson.lesson_number)} />

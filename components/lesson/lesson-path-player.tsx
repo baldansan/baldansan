@@ -487,7 +487,7 @@ export default function LessonPathPlayer({
       <div className="bs-root">
         <div className="bs-stage-done">
           {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
-          <img src="/temee/v2/celebrate.webp" alt="" className="bs-stage-done-img" />
+          <img src="/temee/v3/celebrate.webp" alt="" className="bs-stage-done-img" />
           <p className="bs-stage-done-kicker">{doneStage.number}-р үе дууслаа</p>
           <h2 className="bs-stage-done-title">«{doneStage.label}» дууслаа</h2>
           <p className="bs-baldan-say bs-baldan-say--center">{baldanLine("stageDone", doneStage.number)}</p>

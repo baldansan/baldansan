@@ -420,7 +420,7 @@ export function MyStudySystem({ variant = "full" }: Props) {
     return (
       <section className="bs-study-plan-goal-card bs-mss">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/temee/v2/goal-sm.webp" alt="" width={96} height={96} className="bs-mss-img" />
+        <img src="/temee/v3/goal-sm.webp" alt="" width={96} height={96} className="bs-mss-img" />
         <h2 className="bs-study-plan-goal-title">Миний сурах систем</h2>
         <p className="bs-study-plan-goal-msg">
           Аль түвшинд, хэзээ гэхэд хүрэх, өдөрт хэдэн үг цээжлэх, хэдэн цагт сануулуулахаа өөрөө тохируул. 1 минут л

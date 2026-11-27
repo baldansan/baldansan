@@ -147,7 +147,7 @@ export function StartWizard({ catalog, fazhanCatalog, onDone, onClose }: Props) 
         {phase === "know" ? (
           <>
             <div className="mb-4 flex items-center gap-3">
-              <Image src="/temee/v2/wave.webp" alt="" width={84} height={84} className="h-[84px] w-[84px] object-contain" />
+              <Image src="/temee/v3/wave.webp" alt="" width={84} height={84} className="h-[84px] w-[84px] object-contain" />
               <div>
                 <h1 className="text-[22px] font-black leading-tight text-[var(--app-text)]">
                   {tr(locale, "Сайн уу! Хятад хэлний мэдлэг чинь хэр вэ?")}

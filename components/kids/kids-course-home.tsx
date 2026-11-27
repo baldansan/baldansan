@@ -69,7 +69,7 @@ export function KidsCourseHome({ courseId, title, subtitle, lessons }: Props) {
         </div>
 
         <div className="flex items-center gap-4 print:hidden">
-          <img src="/kids/temee.jpg" alt="" className="h-20 w-20 shrink-0 rounded-full object-cover shadow ring-4 ring-white" />
+          <img src="/kids/baldan.jpg" alt="" className="h-20 w-20 shrink-0 rounded-full object-cover shadow ring-4 ring-white" />
           <div>
             <div className="text-2xl font-extrabold text-[#2b1a05]">{title}</div>
             <div className="text-sm font-bold text-[#6b3f1d]">{subtitle}</div>
@@ -182,7 +182,7 @@ export function KidsCourseHome({ courseId, title, subtitle, lessons }: Props) {
                 ))}
               </div>
               <div className="mt-4 flex items-center justify-center gap-3">
-                <img src="/kids/temee.jpg" alt="" className="h-12 w-12 rounded-full object-cover" />
+                <img src="/kids/baldan.jpg" alt="" className="h-12 w-12 rounded-full object-cover" />
                 <div className="text-left text-xs font-bold text-amber-800">
                   Тэмээ багш
                   <br />

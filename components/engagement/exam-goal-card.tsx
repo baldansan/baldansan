@@ -155,7 +155,7 @@ export function ExamGoalCard({ variant = "full", hideWhenUnset = false }: Props)
       return (
         <section className="bs-study-plan-goal-card">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/temee/v2/goal-sm.webp" alt="" width={96} height={96} className="float-right -mr-1 -mt-1 ml-2 h-24 w-24 object-contain" />
+          <img src="/temee/v3/goal-sm.webp" alt="" width={96} height={96} className="float-right -mr-1 -mt-1 ml-2 h-24 w-24 object-contain" />
           <h2 className="bs-study-plan-goal-title">Шалгалтын зорилго</h2>
           <p className="bs-study-plan-goal-msg">
             HSK шалгалтаа хэзээ өгөхөө оруулбал долоо хоногт хэдэн хичээл үзэхийг тооцоолж, хоцорч байгаа эсэхийг чинь

@@ -679,7 +679,7 @@ export function HomeAppView({
               </div>
             </div>
             <Image
-              src="/temee/v2/wave.webp"
+              src="/temee/v3/wave.webp"
               alt=""
               width={104}
               height={104}
@@ -827,7 +827,7 @@ export function HomeAppView({
       {activeCourse && !activeCourse.available ? (
         <div className="mt-2 flex flex-col items-center gap-3 rounded-[24px] bg-white px-6 py-8 text-center shadow-sm ring-1 ring-slate-100">
           <Image
-            src="/temee/v2/think.webp"
+            src="/temee/v3/think.webp"
             alt=""
             width={112}
             height={112}

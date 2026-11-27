@@ -215,7 +215,7 @@ export function HomeTodayPath({ lessonHref, lessonTitle, lessonId = null, bookLe
           </p>
         </div>
         {allDone ? (
-          <Image src="/temee/v2/celebrate-sm.webp" alt="" width={56} height={56} className="bs-today-mascot" />
+          <Image src="/temee/v3/celebrate-sm.webp" alt="" width={56} height={56} className="bs-today-mascot" />
         ) : null}
       </div>
 

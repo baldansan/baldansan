@@ -175,9 +175,9 @@ export function PointsPop({ outcome }: { outcome: AnswerOutcome | null }) {
 }
 
 const TEMEE_SRC: Record<Exclude<ReactionKind, null>, string> = {
-  correct: "/temee/v2/thumbsup-sm.webp",
-  combo: "/temee/v2/celebrate-sm.webp",
-  wrong: "/temee/v2/encourage-sm.webp",
+  correct: "/temee/v3/thumbsup-sm.webp",
+  combo: "/temee/v3/celebrate-sm.webp",
+  wrong: "/temee/v3/encourage-sm.webp",
 };
 
 /** Тэмээ багшийн хариу үйлдэл — картын дэргэд гарч ирээд алга болно. */

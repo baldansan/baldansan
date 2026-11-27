@@ -16,7 +16,6 @@ import type {
 import { CharacterDecompositionHint } from "@/components/hanzi/CharacterDecompositionHint";
 import { ToneHanzi, ToneLegend } from "@/components/hanzi/ToneHanzi";
 import { WordWriterPanel } from "@/components/hanzi/WordWriterPanel";
-import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import { resolveDecompositionCharacters } from "@/lib/hanzi/character-decomposition";
 import SpeakButton from "../SpeakButton";
 import { DeepWordPanel } from "@/components/lesson/deep/deep-teaching-blocks";
@@ -84,7 +83,7 @@ export default function VocabularyCard({
   /** Шатлан нээх: ханз → утга → яагаад ийм ханз вэ → жишээ. Үг солигдоход эхнээсээ. */
   const [step, setStep] = useState(0);
   /** Хоёрдогч хэрэгсэл: бичих / дуудлага шалгах / дэлгэрэнгүй — дарж байж нээгдэнэ. */
-  const [tool, setTool] = useState<"write" | "speak" | "more" | null>(null);
+  const [tool, setTool] = useState<"write" | "more" | null>(null);
   /** «Яагаад» шатанд олон ханзтай үгийг нэг нэг ханзаар задална. */
   const [whyIdx, setWhyIdx] = useState(0);
   const flipped = step >= 1;
@@ -343,9 +342,6 @@ export default function VocabularyCard({
           <button type="button" className="bs-vicon" aria-pressed={tool === "write"} onClick={() => setTool(tool === "write" ? null : "write")}>
             ✍️ Бичих
           </button>
-          <button type="button" className="bs-vicon" aria-pressed={tool === "speak"} onClick={() => setTool(tool === "speak" ? null : "speak")}>
-            🎤 Дуудах
-          </button>
           {hasEnrichmentMeta || w.pos || w.beyond_syllabus ? (
             <button type="button" className="bs-vicon" aria-pressed={tool === "more"} aria-label="Дэлгэрэнгүй" onClick={() => setTool(tool === "more" ? null : "more")}>
               ⋯
@@ -356,11 +352,6 @@ export default function VocabularyCard({
         {tool === "write" ? (
           <div className="bs-vreveal">
             <WordWriterPanel word={w.zh} />
-          </div>
-        ) : null}
-        {tool === "speak" ? (
-          <div className="bs-vreveal">
-            <PronunciationCheck key={w.zh} text={w.zh} pinyin={w.pinyin} />
           </div>
         ) : null}
         {tool === "more" ? (
