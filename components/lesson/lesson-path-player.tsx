@@ -26,6 +26,8 @@ import { LessonPathHub } from "./lesson-path-hub";
 import { LessonPathWarmupStage } from "./lesson-path-warmup-stage";
 import { LessonPathQuizStage } from "./lesson-path-quiz-stage";
 import { LessonPathSummaryStage } from "./lesson-path-summary-stage";
+import { baldanLine } from "@/lib/temee/baldan-lines";
+import "./lesson-fresh.css";
 import VocabularyCard from "./modules/VocabularyCard";
 import SpeakButton from "./SpeakButton";
 import CharactersModule from "./modules/CharactersModule";
@@ -483,7 +485,8 @@ export default function LessonPathPlayer({
           {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
           <img src="/temee/v2/celebrate.webp" alt="" className="bs-stage-done-img" />
           <p className="bs-stage-done-kicker">{doneStage.number}-р үе дууслаа</p>
-          <h2 className="bs-stage-done-title">«{doneStage.label}» хийчихлээ! 🎉</h2>
+          <h2 className="bs-stage-done-title">«{doneStage.label}» дууслаа</h2>
+          <p className="bs-baldan-say bs-baldan-say--center">{baldanLine("stageDone", doneStage.number)}</p>
           <div className="bs-stage-done-card">
             <div className="bs-stage-done-bar" aria-hidden>
               {plan.stages.map((st) => (
@@ -551,43 +554,40 @@ export default function LessonPathPlayer({
         >
           ←
         </button>
-        <div className="bs-path-stage-title">
-          <span className="bs-path-stage-name">
-            {activeStage.number}-р үе · {activeStage.label}
-          </span>
-          <div className="bs-path-dots" aria-label="Үеийн явц">
-            {plan.stages.map((s, i) => (
-              <span
-                key={s.id}
-                className={
-                  i < activeIndex
-                    ? "bs-path-dot bs-path-dot--done"
-                    : i === activeIndex
-                      ? "bs-path-dot bs-path-dot--active"
-                      : "bs-path-dot"
-                }
-                aria-hidden
-              />
-            ))}
-          </div>
+        <div className="bs-path-seg" aria-label="Үеийн явц">
+          {plan.stages.map((s, i) => (
+            <span
+              key={s.id}
+              className={
+                i < activeIndex || progress.completedStageIds.includes(s.id)
+                  ? "bs-path-seg-on"
+                  : i === activeIndex
+                    ? "bs-path-seg-now"
+                    : undefined
+              }
+              aria-hidden
+            />
+          ))}
         </div>
-        {showStageFinishChip ? (
-          <button
-            type="button"
-            className="bs-path-finish-chip"
-            onClick={handleFinishStage}
-            aria-label="Үе дуусгах"
-          >
-            Үе дуусгах
-          </button>
-        ) : null}
+        <div className="bs-path-stage-row2">
+          <span className="bs-path-stage-name">
+            <b>
+              {activeStage.number} / {plan.stages.length}
+            </b>{" "}
+            · {activeStage.label}
+          </span>
+          {showStageFinishChip ? (
+            <button
+              type="button"
+              className="bs-path-finish-chip"
+              onClick={handleFinishStage}
+              aria-label="Үе дуусгах"
+            >
+              Үе дуусгах ✓
+            </button>
+          ) : null}
+        </div>
       </div>
-
-      {skipWarning ? (
-        <p className="bs-path-skip-hint" role="status">
-          {skipWarning}
-        </p>
-      ) : null}
 
       {justCompleted ? (
         <div className="bs-path-complete-toast" aria-live="polite">
