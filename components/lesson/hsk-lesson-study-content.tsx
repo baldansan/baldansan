@@ -16,6 +16,7 @@ import {
   type HskStudyContent,
 } from "@/lib/lesson/hsk-lesson-content";
 import {
+  isBeginnerPinyinLevel,
   resolveHskIntroSpeech,
   resolveHskPinyinExplainer,
   resolveHskTeacherAdvice,
@@ -166,6 +167,9 @@ function DialogueBlock({
   const lang = resolveTtsLang({ courseId: lesson.courseId });
   const romLabel = romanizationLabel(lesson.courseId);
 
+  const isNihaoLesson = lesson.id.includes("nihao") || lesson.chineseTitle.includes("你好");
+  // «你好» нөөц яриа зөвхөн тэр хичээлд; бусад хичээлд яриа байхгүй бол юу ч харуулахгүй.
+  if (content.dialogues.length === 0 && !isNihaoLesson) return null;
   if (content.dialogues.length === 0) {
     const fallback = [
       { speaker: "A", chinese: "你好！", pinyin: "nǐ hǎo!", mongolian: "Сайн байна уу!" },
@@ -286,6 +290,13 @@ export function HskLessonStudyContent({
   const pinyinExplainer = resolveHskPinyinExplainer(content);
   const teacherAdvice = resolveHskTeacherAdvice(content);
   const toneNote = resolveHskLessonToneNote(lesson, content);
+  // HSK1-ийн «пиньинь гэж юу вэ», «4 хөг», мэндчилгээний хэсгүүд зөвхөн анхан шатны хичээлд эсвэл
+  // хичээл өөрөө тийм агуулгатай үед гарна. Өмнө нь бүх түвшний хичээлд нөөц болж гардаг байсан.
+  const beginner = isBeginnerPinyinLevel(content);
+  const isNihao = lesson.id.includes("nihao") || lesson.chineseTitle.includes("你好");
+  const showPinyinSection = beginner || pinyinExplainer.length > 0;
+  const showToneSection = beginner || content.tones.length > 0;
+  const showDialogueSection = content.dialogues.length > 0 || isNihao;
   const pinyinImage = findHskMediaBySection(content.media, "pinyin");
   const pinyinUrl = resolveHskMediaUrl(pinyinImage);
   const lang = resolveTtsLang({ courseId: lesson.courseId });
@@ -311,6 +322,7 @@ export function HskLessonStudyContent({
         </div>
       </SectionCard>
 
+      {whyImportant.length > 0 ? (
       <SectionCard className="ring-emerald-100">
         <h2 className="text-base font-semibold text-emerald-800">
           Яагаад энэ үг чухал вэ?
@@ -330,7 +342,9 @@ export function HskLessonStudyContent({
           ))}
         </ul>
       </SectionCard>
+      ) : null}
 
+      {showPinyinSection ? (
       <SectionCard className="ring-emerald-100">
         <h2 className="text-base font-semibold text-emerald-800">Pinyin гэж юу вэ?</h2>
         <ul className="mt-3 space-y-2.5">
@@ -349,7 +363,7 @@ export function HskLessonStudyContent({
             <div>
               <p className="text-2xl font-bold text-slate-900">{lesson.chineseTitle}</p>
               <p className="text-sm text-emerald-700">
-                {lesson.vocabulary[0]?.pinyin || "nǐ hǎo"}
+                {lesson.vocabulary[0]?.pinyin || (isNihao ? "nǐ hǎo" : "")}
               </p>
             </div>
             {containsTargetScript(lesson.chineseTitle) ? (
@@ -368,7 +382,9 @@ export function HskLessonStudyContent({
           </div>
         ) : null}
       </SectionCard>
+      ) : null}
 
+      {showToneSection ? (
       <SectionCard className="ring-emerald-100">
         <h2 className="text-base font-semibold text-emerald-800">
           {HSK_TONE_LEARNER_LABELS.sectionTitle}
@@ -380,6 +396,7 @@ export function HskLessonStudyContent({
           <ToneSection content={content} lessonToneNote={toneNote} />
         </div>
       </SectionCard>
+      ) : null}
 
       <SectionCard className="ring-emerald-100">
         <h2 className="text-base font-semibold text-emerald-800">Үгсийн тайлбар</h2>
@@ -391,19 +408,23 @@ export function HskLessonStudyContent({
         </div>
       </SectionCard>
 
+      {showDialogueSection ? (
       <SectionCard className="ring-emerald-100">
         <h2 className="text-base font-semibold text-emerald-800">Богино яриа</h2>
         <div className="mt-3">
           <DialogueBlock lesson={lesson} content={content} />
         </div>
       </SectionCard>
+      ) : null}
 
+      {teacherAdvice ? (
       <SectionCard className="border-amber-100 bg-amber-50/30 ring-amber-100">
         <h2 className="text-base font-semibold text-amber-900">Багшийн зөвлөгөө</h2>
         <div className="mt-3">
           <TeacherSpeechBubble>{teacherAdvice}</TeacherSpeechBubble>
         </div>
       </SectionCard>
+      ) : null}
 
       {showBottomCtas ? (
         <SectionCard className="ring-emerald-200 bg-gradient-to-br from-emerald-50/80 to-white">

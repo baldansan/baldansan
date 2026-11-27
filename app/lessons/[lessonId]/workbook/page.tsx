@@ -3,6 +3,7 @@ import { LessonUnavailable } from "@/components/lesson-unavailable";
 import { resolveLessonPageAccess } from "@/lib/lesson-public-access";
 import { parsePreviewParam } from "@/lib/preview-params";
 import { HSK1_L01_V13_WORKBOOK_SECTIONS } from "@/lib/lesson/hsk1-l01-v13/workbook";
+import { isHsk1L01Nihao } from "@/lib/lesson/hsk1-l01-v13/is-lesson";
 import { LessonWorkbookClient } from "./workbook-client";
 
 type PageProps = {
@@ -37,10 +38,13 @@ export default async function LessonWorkbookPage({
     );
   }
 
-  const sections =
-    access.lesson.hskStudy?.workbook?.length
-      ? access.lesson.hskStudy.workbook
-      : HSK1_L01_V13_WORKBOOK_SECTIONS;
+  // HSK1 1-р хичээлийн («你好») бэлэн дэвтрийг зөвхөн тэр хичээлд нөөц болгоно.
+  // Өмнө нь дэвтэргүй БҮХ хичээлд гардаг байсан.
+  const sections = access.lesson.hskStudy?.workbook?.length
+    ? access.lesson.hskStudy.workbook
+    : isHsk1L01Nihao(access.lesson)
+      ? HSK1_L01_V13_WORKBOOK_SECTIONS
+      : [];
 
   return (
     <LessonWorkbookClient

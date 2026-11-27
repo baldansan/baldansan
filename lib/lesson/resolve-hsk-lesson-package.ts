@@ -1220,6 +1220,27 @@ function enrichPackageWorkbookExercises(
   return withOrderedModules({ ...pkg, exercises_workbook });
 }
 
+/**
+ * Өөр номын ажлын дэвтэр андуурч орсон бол (жнь HSK4-ийн 1-р хичээлд 发展汉语 初级综合 I-ийн
+ * 第1课-ийн пиньиний дасгал) сурагчид харуулахгүй. Дэвтрийн `source` / `answerSource` тэмдэглэлд
+ * бичсэн номын нэр хичээлийн курстэй зөрвөл дэвтрийг хасна — зөв дэвтэр импортлогдтол дасгалын үе
+ * сурах бичгийн дасгалаар (байвал) явна.
+ */
+function dropForeignWorkbook(pkg: HskLessonPackage, lesson: LessonContent): HskLessonPackage {
+  const wb = pkg.exercises_workbook;
+  if (!isRecord(wb)) return pkg;
+  const note = [wb.source, wb.answerSource].filter((v): v is string => typeof v === "string").join(" ");
+  if (!note) return pkg;
+  const isFazhanCourse = lesson.courseId.startsWith("fazhan");
+  const foreign =
+    (!isFazhanCourse && note.includes("发展汉语")) ||
+    (isFazhanCourse && /HSK\s*标准教程/.test(note));
+  if (!foreign) return pkg;
+  const { exercises_workbook: _dropped, ...rest } = pkg;
+  void _dropped;
+  return withOrderedModules(rest as HskLessonPackage);
+}
+
 /** Resolve Gold Standard package for schema-driven LessonPlayer. */
 export function resolveHskLessonPackageFromLesson(
   lesson: LessonContent
@@ -1228,7 +1249,7 @@ export function resolveHskLessonPackageFromLesson(
   const raw = fromSource ?? buildHskLessonPackageFromLessonContent(lesson);
   if (!raw) return null;
   const withStudy = enrichPackageFromStudyTeaching(raw, lesson);
-  const withWorkbook = enrichPackageWorkbookExercises(withStudy, lesson);
+  const withWorkbook = dropForeignWorkbook(enrichPackageWorkbookExercises(withStudy, lesson), lesson);
   const ordered = withOrderedModules(withWorkbook);
   const normalized = normalizeLessonPackageMedia(ordered);
   const withBase: HskLessonPackage = {

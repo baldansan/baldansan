@@ -5,6 +5,7 @@ import {
   type HskToneExample,
 } from "@/lib/lesson/hsk-lesson-content";
 import {
+  isBeginnerPinyinLevel,
   resolveHskIntroSpeech,
   resolveHskLessonToneNote,
   resolveHskPinyinExplainer,
@@ -67,12 +68,13 @@ function resolveIntroBullets(
 }
 
 function resolveKeyPhrase(lesson: LessonContent, content: HskStudyContent) {
-  const chinese = lesson.chineseTitle.trim() || "你好";
+  const isNihao = lesson.id.includes("nihao") || lesson.chineseTitle.includes("你好");
+  const chinese = lesson.chineseTitle.trim() || lesson.vocabulary[0]?.chinese || "";
   const mainWord =
     lesson.vocabulary.find((w) => w.chinese === chinese) ??
     lesson.vocabulary[0];
-  const pinyin = mainWord?.pinyin || "nǐ hǎo";
-  const mongolian = mainWord?.mongolian || lesson.title || "Сайн байна уу";
+  const pinyin = mainWord?.pinyin || (isNihao ? "nǐ hǎo" : "");
+  const mongolian = mainWord?.mongolian || lesson.title || "";
 
   let breakdown = "";
   if (chinese === "你好" || chinese.includes("你好")) {
@@ -89,21 +91,25 @@ function resolveKeyPhrase(lesson: LessonContent, content: HskStudyContent) {
     pinyin,
     mongolian,
     breakdown,
-    usage: "Хүнтэй уулзах, утсаар ярих, дэлгүүрт ороход хэлнэ.",
+    // Мэндчилгээний тайлбар зөвхөн «你好» хичээлд — бусад хичээлд хоосон.
+    usage: isNihao ? "Хүнтэй уулзах, утсаар ярих, дэлгүүрт ороход хэлнэ." : "",
   };
 }
 
 function resolvePinyinRows(lesson: LessonContent): HskPlayerContent["pinyinRows"] {
-  const phrase = lesson.chineseTitle.trim() || "你好";
+  const isNihao = lesson.id.includes("nihao") || lesson.chineseTitle.includes("你好");
+  const phrase = lesson.chineseTitle.trim() || lesson.vocabulary[0]?.chinese || "";
   const words = resolveKeyVocabularyWords(lesson.vocabulary, 3);
   const rows: HskPlayerContent["pinyinRows"] = [];
 
   const phraseWord = lesson.vocabulary.find((w) => w.chinese === phrase);
-  rows.push({
-    chinese: phrase,
-    pinyin: phraseWord?.pinyin || "nǐ hǎo",
-    hint: "Бүтэн мэндчилгээ",
-  });
+  if (phrase && (phraseWord?.pinyin || isNihao)) {
+    rows.push({
+      chinese: phrase,
+      pinyin: phraseWord?.pinyin || "nǐ hǎo",
+      hint: isNihao ? "Бүтэн мэндчилгээ" : phraseWord?.mongolian || "",
+    });
+  }
 
   for (const word of words) {
     if (word.chinese === phrase) continue;
@@ -115,7 +121,7 @@ function resolvePinyinRows(lesson: LessonContent): HskPlayerContent["pinyinRows"
     if (rows.length >= 3) break;
   }
 
-  if (rows.length < 2) {
+  if (rows.length < 2 && isNihao) {
     rows.push({ chinese: "你", pinyin: "nǐ", hint: "чи, та" });
     rows.push({ chinese: "好", pinyin: "hǎo", hint: "сайн" });
   }
@@ -123,16 +129,20 @@ function resolvePinyinRows(lesson: LessonContent): HskPlayerContent["pinyinRows"
   return rows.slice(0, 4);
 }
 
-function resolveDialogueLines(content: HskStudyContent): HskDialogueLine[] {
+function resolveDialogueLines(lesson: LessonContent, content: HskStudyContent): HskDialogueLine[] {
   const lines = content.dialogues.flatMap((d) => d.lines);
   if (lines.length >= 2) return lines.slice(0, 6);
-  return DEFAULT_DIALOGUE;
+  // «你好 / 你好» нөөц яриа зөвхөн тэр хичээлд — бусад хичээлд өөр хичээлийн яриа гаргахгүй.
+  const isNihao = lesson.id.includes("nihao") || lesson.chineseTitle.includes("你好");
+  return isNihao ? DEFAULT_DIALOGUE : lines;
 }
 
 export function buildHskPlayerContent(lesson: LessonContent): HskPlayerContent {
   const study = lesson.hskStudy ?? parseHskStudyContentFromLesson(lesson);
   const keyPhrase = resolveKeyPhrase(lesson, study);
-  const tones = study.tones.length > 0 ? study.tones.slice(0, 4) : DEFAULT_TONES;
+  const beginner = isBeginnerPinyinLevel(study);
+  const tones =
+    study.tones.length > 0 ? study.tones.slice(0, 4) : beginner ? DEFAULT_TONES : [];
 
   return {
     study,
@@ -142,14 +152,17 @@ export function buildHskPlayerContent(lesson: LessonContent): HskPlayerContent {
     pinyinExplainer: resolveHskPinyinExplainer(study).slice(0, 4),
     tones,
     toneNote: resolveHskLessonToneNote(lesson, study),
-    toneWarning:
-      "Монгол сурагчдад хөг хамгийн эхэнд хэцүү санагддаг — эхлээд сонсоод дуурай.",
+    toneWarning: beginner
+      ? "Монгол сурагчдад хөг хамгийн эхэнд хэцүү санагддаг — эхлээд сонсоод дуурай."
+      : "",
     featuredWord:
       lesson.vocabulary.find((w) => w.chinese === "你") ??
       lesson.vocabulary[0] ??
       null,
-    dialogueLines: resolveDialogueLines(study),
-    completeMessage: `Чи ${keyPhrase.chinese}, pinyin, tone, үндсэн үгсээ сурлаа.`,
+    dialogueLines: resolveDialogueLines(lesson, study),
+    completeMessage: beginner
+      ? `Чи ${keyPhrase.chinese}, pinyin, tone, үндсэн үгсээ сурлаа.`
+      : `Чи ${keyPhrase.chinese} хичээлийн үндсэн үгсээ сурлаа.`,
     teacherTip: resolveHskTeacherAdvice(study),
   };
 }

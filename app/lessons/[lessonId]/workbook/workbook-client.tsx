@@ -63,7 +63,9 @@ export function LessonWorkbookClient({ lesson, sections, adminPreview = false }:
           </p>
           <h1 className="mt-1 text-xl font-bold text-slate-900">Workbook дасгал</h1>
           <p className="mt-1 text-sm text-slate-600">
-            Номын дасгал — {sections.length} хэсэг
+            {sections.length > 0
+              ? `Номын дасгал — ${sections.length} хэсэг`
+              : "Энэ хичээлийн ажлын дэвтрийн дасгал хараахан ороогүй байна. Хичээлийн доторх дасгал, сорилоор давтаарай."}
           </p>
         </header>
 

@@ -189,8 +189,29 @@ export function parseGuidedStepsFromSourceNote(sourceNote?: string | null): HskG
   }
 }
 
+/** Алхамд сурагчид харуулах жинхэнэ агуулга байгаа эсэх (гарчгаас өөр зүйл). */
+function stepHasBody(step: HskGuidedStep): boolean {
+  return (
+    Boolean(step.teacherSpeechMn?.trim()) ||
+    // Задлагч хоосон алхмын bullets-д гарчгийг нь хуулж тавьдаг — түүнийг агуулга гэж тооцохгүй.
+    step.bulletsMn.some((b) => b.trim() && b.trim() !== step.titleMn.trim()) ||
+    Boolean(step.chinese?.trim()) ||
+    step.examples.length > 0 ||
+    step.items.length > 0
+  );
+}
+
+/**
+ * Импортын үед хичээл бүрд ижил ХООСОН загвар 8 алхам (Багшийн тайлбар, Гол хэллэг, Pinyin,
+ * Хөг / Дууны өнгө, …) хадгалагдсан байдаг (360 гаруй хичээлд яг адил). Бүх алхам хоосон бол
+ * энэ нь жинхэнэ алхам биш — хичээлийн өөрийн агуулгаас алхмыг үүсгэнэ.
+ */
+function usableSteps(steps: HskGuidedStep[]): HskGuidedStep[] {
+  return steps.some(stepHasBody) ? steps : [];
+}
+
 export function buildHskPlayerStepPlanFromLesson(lesson: LessonContent): HskPlayerStepPlan {
-  const fromStudy = lesson.hskStudy?.guidedSteps ?? [];
+  const fromStudy = usableSteps(lesson.hskStudy?.guidedSteps ?? []);
   if (fromStudy.length > 0) {
     return {
       steps: fromStudy,
@@ -199,7 +220,7 @@ export function buildHskPlayerStepPlanFromLesson(lesson: LessonContent): HskPlay
     };
   }
 
-  const fromNote = parseGuidedStepsFromSourceNote(lesson.sourceNote);
+  const fromNote = usableSteps(parseGuidedStepsFromSourceNote(lesson.sourceNote));
   if (fromNote.length > 0) {
     return {
       steps: fromNote,
@@ -209,7 +230,20 @@ export function buildHskPlayerStepPlanFromLesson(lesson: LessonContent): HskPlay
   }
 
   const content = buildHskPlayerContent(lesson);
-  const fallback = buildFallbackStepsFromPlayerContent(lesson, content);
+  // HSK1-ээс дээш түвшинд «Pinyin», «Хөг / Дууны өнгө» алхам зөвхөн жинхэнэ агуулгатай үед гарна;
+  // хоосон яриа, хоосон «гол хэллэг» алхмыг ч алгасна (өмнө нь бүх түвшинд HSK1-ийн загвар алхам гардаг байв).
+  const beginner = content.study.hskLevel === 1;
+  const fallback = buildFallbackStepsFromPlayerContent(lesson, content).filter((step) => {
+    if (beginner) return true;
+    const hasBody =
+      Boolean(step.teacherSpeechMn?.trim()) ||
+      step.bulletsMn.some((b) => b.trim()) ||
+      step.examples.length > 0 ||
+      Boolean(step.chinese?.trim());
+    if (step.type === "pinyin" || step.type === "tones") return false;
+    if (step.type === "dialogue" || step.type === "key-phrase" || step.type === "teacher-intro") return hasBody;
+    return true;
+  });
   return {
     steps: fallback,
     totalSteps: fallback.length || FALLBACK_STEP_TYPES.length,
