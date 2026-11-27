@@ -24,7 +24,7 @@
  * «Хичээл татах» товч /api/lessons/{id}/offline-manifest-оос жагсаалт аваад
  * файл бүрийг fetch хийхэд энэ SW тэднийг кэшэнд хийнэ.
  */
-const VERSION = "v6";
+const VERSION = "v7";
 const OFFLINE_CACHE = `buunduu-surtsgaay-offline-${VERSION}`;
 const PAGES_CACHE = `buunduu-pages-${VERSION}`;
 const STATIC_CACHE = `buunduu-static-${VERSION}`;
