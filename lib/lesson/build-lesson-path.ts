@@ -121,6 +121,11 @@ function stageHasContent(
   }
 }
 
+/** 7 үеийн стандарт дараалал (нэр, дүрс) — хичээлийн нүүрэнд замыг багцгүйгээр харуулахад. */
+export function standardLessonPathStages(): { id: LessonPathStageId; label: string; hint: string }[] {
+  return STAGE_ORDER.map((id) => ({ id, label: STAGE_DEFS[id].label, hint: STAGE_DEFS[id].hint }));
+}
+
 export type LessonPathPlan = {
   stages: LessonPathStage[];
   totalMinutes: number;

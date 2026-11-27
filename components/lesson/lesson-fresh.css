@@ -58,3 +58,70 @@
 .bs-vcard .bs-baldan-row-img{width:52px;height:52px}
 .bs-vcard .bs-baldan-say{font-size:14px;background:var(--bs-green-50,#F3ECFF)}
 @media (prefers-reduced-motion:reduce){.bs-vreveal{animation:none}}
+
+/* ---- Эх бичвэр: мөр мөрөөр нээгдэнэ; яриа бол чат хэлбэртэй ---- */
+.bs-txt-sentences--chat{display:flex;flex-direction:column;gap:10px}
+.bs-txt-sentences--chat .bs-txt-sentence.bs-txt-bub{margin:0;max-width:92%;padding:10px 12px;border-radius:18px;
+  background:var(--bs-card);border:1px solid var(--bs-line)}
+.bs-txt-sentences--chat .bs-txt-bub--l{align-self:flex-start;border-bottom-left-radius:5px}
+.bs-txt-sentences--chat .bs-txt-bub--r{align-self:flex-end;border-bottom-right-radius:5px;
+  background:color-mix(in srgb,var(--bs-green,#7C4DDB) 9%,var(--bs-card));border-color:color-mix(in srgb,var(--bs-green,#7C4DDB) 22%,transparent)}
+.bs-txt-sentences--chat .bs-txt-bub--mid{align-self:stretch;max-width:100%}
+.bs-txt-spk{font-size:12px;font-weight:800;color:var(--bs-green);font-family:var(--bs-zh)}
+.bs-txt-more{margin:14px 0 4px}
+.bs-txt-more-btn{width:100%;padding:13px 12px;border-radius:18px;border:2px dashed color-mix(in srgb,var(--bs-green,#7C4DDB) 35%,transparent);
+  background:transparent;color:var(--bs-green);font-family:var(--bs-ui);font-size:14px;font-weight:800;cursor:pointer}
+.bs-txt-more-btn:active{transform:scale(.99)}
+.bs-txt-more-row{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:12px;font-weight:700;color:var(--bs-muted)}
+.bs-txt-more-row button{border:0;background:none;padding:4px 0;font:inherit;color:var(--bs-muted);text-decoration:underline;cursor:pointer}
+
+/* ---- Төгсгөл: хуваалцах карт ---- */
+.bs-share-card{position:relative;overflow:hidden;margin:6px 0 0;padding:20px 20px 16px;border-radius:26px;color:#fff;
+  background:linear-gradient(160deg,#7C4DDB,#a866ee 62%,#ee8fc2)}
+.bs-share-kicker{margin:0;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.88}
+.bs-share-zh{margin:8px 0 0;font-family:var(--bs-zh);font-size:32px;font-weight:900;line-height:1.15;color:#fff}
+.bs-share-mn{margin:2px 0 0;font-size:17px;font-weight:800;opacity:.95}
+.bs-share-stats{display:flex;gap:8px;margin-top:16px}
+.bs-share-stats>div{flex:1;padding:10px 4px;border-radius:14px;text-align:center;background:rgba(255,255,255,.18)}
+.bs-share-stats b{display:block;font-size:24px;line-height:1.2}
+.bs-share-stats span{font-size:11px;font-weight:700;opacity:.9}
+.bs-share-words{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;font-family:var(--bs-zh)}
+.bs-share-words span{padding:4px 9px;border-radius:10px;background:rgba(255,255,255,.92);color:#4b2aa0;font-size:15px;font-weight:700}
+.bs-share-words em{padding:4px 9px;border-radius:10px;background:rgba(255,255,255,.25);font-style:normal;font-size:14px;font-weight:800}
+.bs-share-foot{display:flex;align-items:flex-end;justify-content:space-between;margin-top:10px}
+.bs-share-foot p{margin:0;font-size:12px;font-weight:800;line-height:1.4;opacity:.92}
+.bs-share-foot img{width:92px;height:92px;object-fit:contain;margin:0 -8px -18px 0}
+.bs-share-btn{width:100%;margin:0 0 6px;padding:12px;border-radius:16px;border:1.5px solid var(--bs-line);background:var(--bs-card);
+  color:var(--bs-green);font-family:var(--bs-ui);font-size:15px;font-weight:800;cursor:pointer}
+
+/* ---- Хичээлийн нүүр ---- */
+.bs-home-hero{position:relative;overflow:hidden;padding:20px 20px 22px;border-radius:26px;color:#fff;min-height:190px;
+  background:linear-gradient(165deg,#7C4DDB,#a866ee 62%,#ee8fc2)}
+.bs-home-hero-kicker{margin:0;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+.bs-home-hero-zh{margin:14px 0 0;max-width:72%;font-family:var(--font-noto-sc),"Noto Sans SC",sans-serif;font-size:36px;font-weight:900;line-height:1.15;color:#fff}
+.bs-home-hero-mn{margin:4px 0 0;max-width:68%;font-size:18px;font-weight:800}
+.bs-home-hero-sub{margin:12px 0 0;max-width:66%;font-size:13px;line-height:1.45;opacity:.92}
+.bs-home-hero-img{position:absolute;right:-4px;bottom:-8px;width:124px;height:124px;object-fit:contain;pointer-events:none}
+.bs-home-stats{margin:0}
+.bs-home-stats>div{background:var(--app-card,#fff);box-shadow:0 1px 0 rgba(80,40,160,.06)}
+.bs-home-stats b{color:var(--app-text)}
+.bs-home-stats span{color:var(--app-muted)}
+.bs-home-cta{width:100%;font-size:17px;padding-top:15px;padding-bottom:15px}
+.bs-home-path{list-style:none;margin:0;padding:0}
+.bs-home-path li{position:relative;display:flex;align-items:center;gap:12px;padding:5px 0}
+.bs-home-path li:not(:last-child)::after{content:"";position:absolute;left:16px;top:38px;width:4px;height:10px;border-radius:4px;background:#e4dbf7}
+.bs-home-path li.is-done:not(:last-child)::after{background:var(--app-primary,#7C4DDB)}
+.bs-home-path-dot{flex:none;display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;
+  background:#e9e2f8;color:#9a8fc0;font-size:14px;font-weight:900}
+.bs-home-path li.is-done .bs-home-path-dot{background:var(--app-primary,#7C4DDB);color:#fff}
+.bs-home-path li.is-cur .bs-home-path-dot{background:var(--app-card,#fff);color:var(--app-primary,#7C4DDB);box-shadow:0 0 0 3px var(--app-primary,#7C4DDB)}
+.bs-home-path-label{font-size:15px;font-weight:800;color:var(--app-muted)}
+.bs-home-path li.is-done .bs-home-path-label,.bs-home-path li.is-cur .bs-home-path-label{color:var(--app-text)}
+.bs-home-path-label small{display:block;font-size:12px;font-weight:600;color:var(--app-muted)}
+.bs-home-chips{display:flex;gap:10px}
+.bs-home-chips a{flex:1;padding:12px 14px;border-radius:18px;background:var(--app-card,#fff);box-shadow:0 0 0 1.5px #e3d8fb inset;
+  font-size:14px;font-weight:800;color:var(--app-primary-dark,#6537C2);text-decoration:none}
+.bs-home-chips small{display:block;margin-top:2px;font-size:12px;font-weight:600;color:var(--app-muted)}
+html[data-theme="dark"] .bs-home-path-dot{background:#3a2f55;color:#b9aee0}
+html[data-theme="dark"] .bs-home-path li:not(:last-child)::after{background:#3a2f55}
+html[data-theme="dark"] .bs-home-chips a{box-shadow:0 0 0 1.5px #4a3d6b inset}

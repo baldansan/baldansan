@@ -19,6 +19,11 @@ import { lessonPreviewPath } from "@/lib/lesson-publish";
 import { quizStepSummary, getStudiedWordsCount } from "@/lib/lesson/bs-step-progress";
 import type { LessonContent } from "@/types/lesson-content";
 import { courseSeriesLabel } from "@/lib/lesson/course-series-label";
+import { standardLessonPathStages } from "@/lib/lesson/build-lesson-path";
+import { loadLessonPathProgress } from "@/lib/lesson/lesson-path-progress";
+import "./lesson-fresh.css";
+
+const PATH_STAGES = standardLessonPathStages();
 
 type Props = {
   lesson: LessonContent;
@@ -49,6 +54,8 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
 
   const [studiedCount, setStudiedCount] = useState(0);
   const [quizStepLabel, setQuizStepLabel] = useState<string | null>(null);
+  /** 7 үеийн ахиц (энэ төхөөрөмж дээрх). Хичээлд байхгүй үеийг алгассанд тооцно: хойд үе нь дууссан бол өмнөх нь дууссан. */
+  const [doneStageIds, setDoneStageIds] = useState<string[]>([]);
 
   useEffect(() => {
     function load() {
@@ -57,97 +64,82 @@ export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
       setQuizStepLabel(
         quizSummary.status === "not_started" ? null : quizSummary.detail
       );
+      setDoneStageIds(loadLessonPathProgress(lesson.id).completedStageIds);
     }
     load();
     window.addEventListener("focus", load);
     return () => window.removeEventListener("focus", load);
   }, [lesson.id, lesson.quizCount]);
 
-  const steps = [
-    {
-      step: "1",
-      href: watchHref,
-      icon: "📖",
-      title: "Хичээл судлах",
-      desc: "Багшийн тайлбар, пиньинь, аялга",
-    },
-    {
-      step: "2",
-      href: vocabHref,
-      icon: "🃏",
-      title: "Картаар сурах",
-      desc:
-        studiedCount > 0
-          ? `${studiedCount} / ${lesson.vocabularyCount} үг сурсан`
-          : `${lesson.vocabularyCount} үг · үгийн карт`,
-    },
-    {
-      step: "3",
-      href: quizHref,
-      icon: "📝",
-      title: "Сорил",
-      desc: quizStepLabel ?? `${lesson.quizCount} асуулт`,
-    },
-    {
-      step: "4",
-      href: `/games/match?lessonId=${lesson.id}`,
-      icon: "🎮",
-      title: "Дасгал / тоглоом",
-      desc: "Холбох, орчуулах",
-    },
-  ];
+  const lastDoneIndex = PATH_STAGES.reduce(
+    (max, st, idx) => (doneStageIds.includes(st.id) ? idx : max),
+    -1
+  );
+  const allDone = lastDoneIndex >= PATH_STAGES.length - 1;
+  const currentIndex = allDone ? -1 : lastDoneIndex + 1;
+  const ctaLabel = allDone
+    ? "Дахин үзэх"
+    : lastDoneIndex < 0
+      ? LEARNER_LESSON.startLesson
+      : `Үргэлжлүүлэх · ${PATH_STAGES[currentIndex]!.label}`;
 
   return (
     <div className="flex flex-col gap-4 pb-2">
-      <MobileCard padding="lg" className="!bg-gradient-to-br !from-emerald-50 !to-teal-50/80 !ring-emerald-100">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="rounded-full bg-emerald-500 px-2.5 py-0.5 text-xs font-semibold text-white">
-            {hskBadge}
-          </span>
-          <span className="text-xs text-slate-600">{duration}</span>
-        </div>
-        <h1 className="mt-2 text-xl font-bold text-slate-900" translate="no">{lesson.title}</h1>
+      <div className="bs-home-hero">
+        <p className="bs-home-hero-kicker">
+          {hskBadge} · {duration}
+        </p>
+        <h1 className="bs-home-hero-zh" translate="no">{lesson.chineseTitle || lesson.title}</h1>
         {lesson.chineseTitle ? (
-          <p className="mt-0.5 text-lg text-emerald-800">{lesson.chineseTitle}</p>
+          <p className="bs-home-hero-mn" translate="no">{lesson.title}</p>
         ) : null}
-      </MobileCard>
+        <p className="bs-home-hero-sub">{hskTextbookSubtitle(lesson)}</p>
+        {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
+        <img src="/temee/v2/teach.webp" alt="" className="bs-home-hero-img" />
+      </div>
 
-      <MobileCard padding="lg" className="!ring-emerald-200">
-        <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
-          Номын хичээл
-        </p>
-        <p className="mt-2 text-sm leading-6 text-[var(--app-muted)]">
-          {hskTextbookSubtitle(lesson)}
-        </p>
-        <Link href={watchHref} className="app-btn-primary mt-4 w-full">
-          📖 {LEARNER_LESSON.startLesson}
-        </Link>
-      </MobileCard>
+      <div className="bs-fresh-stats bs-home-stats">
+        <div><b>{lesson.vocabularyCount}</b><span>шинэ үг</span></div>
+        <div><b>{lesson.quizCount}</b><span>сорилын асуулт</span></div>
+        <div><b>{PATH_STAGES.length}</b><span>үе</span></div>
+      </div>
+
+      <Link href={watchHref} className="app-btn-primary bs-home-cta">
+        {ctaLabel} →
+      </Link>
 
       <MobileCard padding="lg">
-        <h2 className="text-sm font-bold text-[var(--app-text)]">Хичээлийн алхам</h2>
-        <ol className="app-lesson-step-grid mt-3">
-          {steps.map((item) => (
-            <li key={item.step}>
-              <Link href={item.href} className="app-lesson-step-card">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-sm">
-                    {item.icon}
-                  </span>
-                  <div className="min-w-0 flex-1">
-                    <p className="text-[10px] font-bold uppercase tracking-wide text-emerald-600">
-                      Алхам {item.step}
-                    </p>
-                    <p className="font-semibold text-[var(--app-text)]">{item.title}</p>
-                    <p className="text-xs text-[var(--app-muted)]">{item.desc}</p>
-                  </div>
-                  <span className="text-[var(--app-muted)]">›</span>
-                </div>
-              </Link>
-            </li>
-          ))}
+        <ol className="bs-home-path">
+          {PATH_STAGES.map((st, idx) => {
+            const done = allDone || idx <= lastDoneIndex;
+            const cur = idx === currentIndex;
+            return (
+              <li key={st.id} className={done ? "is-done" : cur ? "is-cur" : undefined}>
+                <span className="bs-home-path-dot">{done ? "✓" : idx + 1}</span>
+                <span className="bs-home-path-label">
+                  {st.label}
+                  {cur ? <small>{st.hint}</small> : null}
+                </span>
+              </li>
+            );
+          })}
         </ol>
       </MobileCard>
+
+      <div className="bs-home-chips">
+        <Link href={vocabHref}>
+          🃏 Үгийн карт
+          <small>
+            {studiedCount > 0
+              ? `${studiedCount} / ${lesson.vocabularyCount}`
+              : `${lesson.vocabularyCount} үг`}
+          </small>
+        </Link>
+        <Link href={quizHref}>
+          📝 Сорил
+          <small>{quizStepLabel ?? `${lesson.quizCount} асуулт`}</small>
+        </Link>
+      </div>
 
       <LessonProgressCard lessonId={lesson.id} quizCount={lesson.quizCount} />
 

@@ -1,9 +1,10 @@
 "use client";
 
+import { BaldanSay } from "@/components/lesson/baldan-say";
+import { baldanLine } from "@/lib/temee/baldan-lines";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { LessonDifficultyFeedback } from "@/components/feedback/lesson-difficulty-feedback";
-import { TemeeMascot } from "@/components/temee/temee-mascot";
 import { getBsQuizProgress } from "@/lib/lesson/bs-step-progress";
 import { extractLessonPathSummaryData } from "@/lib/lesson/lesson-path-summary-data";
 import {
@@ -131,6 +132,24 @@ export function LessonPathSummaryStage({
     }
   }
 
+  const grammarCount = Array.isArray(lesson.grammar) ? lesson.grammar.length : 0;
+
+  async function handleShare() {
+    const title = `${lesson.title.zh} · ${lesson.title.mn}`;
+    const text = `${lesson.level} ${lesson.lesson_number}-р хичээлээ дуусгалаа: ${title}. ${summary.vocabCount} шинэ үг.`;
+    const url = "https://surtsgaay.buunduu.mn";
+    try {
+      if (typeof navigator.share === "function") {
+        await navigator.share({ title, text, url });
+        return;
+      }
+      await navigator.clipboard.writeText(`${text} ${url}`);
+      showToast("Хуулагдлаа — хүссэн газраа буулгаарай.");
+    } catch {
+      // хэрэглэгч хуваалцахыг цуцалсан — юу ч хийхгүй
+    }
+  }
+
   const nextHref = nextLessonId
     ? lessonPreviewPath(nextLessonId, { adminPreview, subpath: "watch" })
     : coursePath(courseId);
@@ -175,8 +194,44 @@ export function LessonPathSummaryStage({
         </p>
       ) : null}
 
-      {/* Тэмээ багш баярлаж байна — хичээл дууслаа */}
-      <TemeeMascot celebrate size="md" className="bs-path-summary-mascot" />
+      {/* Өнөөдрийн олз — дэлгэцийн зураг авч хуваалцахад зориулсан карт */}
+      <div className="bs-share-card">
+        <p className="bs-share-kicker">
+          {lesson.level} · {lesson.lesson_number}-р хичээл · дууслаа
+        </p>
+        <h2 className="bs-share-zh" translate="no">{lesson.title.zh}</h2>
+        <p className="bs-share-mn" translate="no">{lesson.title.mn}</p>
+        <div className="bs-share-stats">
+          <div><b>{summary.vocabCount}</b><span>үг</span></div>
+          {grammarCount > 0 ? (
+            <div><b>{grammarCount}</b><span>дүрэм</span></div>
+          ) : null}
+          {quizScore ? (
+            <div><b>{quizScore.correct}/{quizScore.total}</b><span>сорил</span></div>
+          ) : null}
+        </div>
+        {summary.vocabulary.length > 0 ? (
+          <div className="bs-share-words" translate="no">
+            {summary.vocabulary.slice(0, 7).map((item) => (
+              <span key={item.zh}>{item.zh}</span>
+            ))}
+            {summary.vocabulary.length > 7 ? <em>+{summary.vocabulary.length - 7}</em> : null}
+          </div>
+        ) : null}
+        <div className="bs-share-foot">
+          <p>
+            Бөөндөө Сурцгаая
+            <br />
+            surtsgaay.buunduu.mn
+          </p>
+          {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
+          <img src="/temee/v2/thumbsup.webp" alt="" />
+        </div>
+      </div>
+      <BaldanSay pose="relax" text={baldanLine("lessonDone", lesson.lesson_number)} />
+      <button type="button" className="bs-share-btn" onClick={() => void handleShare()}>
+        Хуваалцах
+      </button>
 
       <div className="bs-card">
         <div className="bs-label">

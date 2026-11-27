@@ -17,6 +17,7 @@ import { GrammarPointExercises } from "@/components/lesson/modules/GrammarPointE
 import { MnGrammarTermText } from "@/components/lesson/mn-grammar-term-text";
 import { PronunciationCheck } from "@/components/pronunciation/pronunciation-check";
 import { coalesceSentenceTokens } from "@/lib/lesson/coalesce-text-tokens";
+import "@/components/lesson/lesson-fresh.css";
 import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import { speakWithSavedSettings, stopPronunciation } from "@/lib/tts/play-pronunciation";
 import {
@@ -41,6 +42,14 @@ function buildVocabMap(words: HskPackageVocabItem[]): Map<string, VocabHint> {
   }
   return map;
 }
+
+/** «王静：…» хэлбэрийн мөрөөс ярьж буй хүний нэрийг ялгана (яриаг чат хэлбэрээр зурахад). */
+const SPEAKER_RE = /^\s*([^：:，,。！？?!\s]{1,8})[：:]/;
+function speakerOf(zh: string | undefined): string | null {
+  return zh ? (SPEAKER_RE.exec(zh)?.[1] ?? null) : null;
+}
+/** Эхлээд хэдэн мөр нээлттэй байх вэ — үлдсэнийг сурагч өөрөө нэг нэгээр нээнэ. */
+const FIRST_SHOWN = 2;
 
 type Props = {
   text: HskPackageShortText;
@@ -100,6 +109,53 @@ export function LiveTextReader({
   );
 
   const sentenceRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  // Яриа уу, богино эх үү: мөрүүдийн ихэнх нь «нэр：» гэж эхэлбэл чат хэлбэрээр зурна.
+  const speakers = useMemo(() => sentences.map((sn) => speakerOf(sn.zh)), [sentences]);
+  const chat = useMemo(() => {
+    const named = speakers.filter(Boolean).length;
+    return sentences.length >= 2 && named >= Math.ceil(sentences.length * 0.6);
+  }, [speakers, sentences.length]);
+  const sideBySpeaker = useMemo(() => {
+    const map = new Map<string, "l" | "r">();
+    for (const sp of speakers) {
+      if (sp && !map.has(sp)) map.set(sp, map.size % 2 === 0 ? "l" : "r");
+    }
+    return map;
+  }, [speakers]);
+
+  // Мөр мөрөөр нээх. Эх солигдоход эхнээс; бүтэн аудио тоглож байвал тоглож буй мөр хүртэл нээнэ.
+  const [shown, setShown] = useState(FIRST_SHOWN);
+  const [shownFor, setShownFor] = useState(text.id);
+  if (shownFor !== text.id) {
+    setShownFor(text.id);
+    setShown(FIRST_SHOWN);
+  }
+  const visibleCount = Math.min(
+    sentences.length,
+    Math.max(shown, activeSentenceIndex != null ? activeSentenceIndex + 1 : 0)
+  );
+  const allShown = visibleCount >= sentences.length;
+  const revealedRef = useRef<number | null>(null);
+  useEffect(() => {
+    const idx = revealedRef.current;
+    if (idx == null) return;
+    revealedRef.current = null;
+    sentenceRefs.current[idx]?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [shown]);
+
+  function revealNext() {
+    const idx = visibleCount;
+    if (idx >= sentences.length) return;
+    revealedRef.current = idx;
+    setShown(idx + 1);
+    // Бүтэн аудио тоглоогүй үед шинэ мөрийг уншиж өгнө.
+    const zh = sentences[idx]?.zh;
+    if (zh && activeSentenceIndex == null) {
+      stopPronunciation();
+      void speakWithSavedSettings(chat ? zh.replace(SPEAKER_RE, "") : zh, "zh-CN");
+    }
+  }
 
   useEffect(() => {
     setShowPinyin(loadTextReaderShowPinyin());
@@ -194,7 +250,22 @@ export function LiveTextReader({
       Boolean(sentence.note?.trim()) ||
       (sentence.key_structures?.length ?? 0) > 0;
     const noteOpen = openNotes.has(si);
-    const tokens = coalesceSentenceTokens(sentence, vocabWords);
+    let tokens = coalesceSentenceTokens(sentence, vocabWords);
+    const speaker = chat ? speakers[si] : null;
+    const side = speaker ? (sideBySpeaker.get(speaker) ?? "l") : null;
+    let mnLine = sentence.mn;
+    if (speaker) {
+      // Нэр нь хөөрөгний дээр гарах тул мөрийн эхний «нэр：»-ийг давхар харуулахгүй.
+      let acc = "";
+      let cut = 0;
+      while (cut < tokens.length && !/[：:]/.test(acc)) {
+        acc += tokens[cut]!.zh;
+        cut += 1;
+      }
+      if (/[：:]\s*$/.test(acc) && acc.length <= 10) tokens = tokens.slice(cut);
+      mnLine = mnLine?.replace(/^[^:：]{1,24}[:：]\s*/, "");
+    }
+    const showName = Boolean(speaker) && (si === 0 || speakers[si - 1] !== speaker);
     const allowNonVocabTap = Boolean(sentence.word_tap);
 
     const isActive = activeSentenceIndex === si;
@@ -205,18 +276,21 @@ export function LiveTextReader({
         ref={(el) => {
           sentenceRefs.current[si] = el;
         }}
-        className={`bs-txt-sentence${hasNote ? " bs-txt-sentence--noted" : ""}${
+        className={`bs-txt-sentence bs-vreveal${hasNote ? " bs-txt-sentence--noted" : ""}${
           isActive ? " bs-txt-sentence--active" : ""
-        }`}
+        }${chat ? ` bs-txt-bub bs-txt-bub--${side ?? "mid"}` : ""}`}
       >
+        {showName ? (
+          <div className="bs-txt-spk" translate="no">{speaker}</div>
+        ) : null}
         <div className="bs-txt-ruby-line">
           {tokens.map((tok, ti2) =>
             renderToken(tok, ti2, allowNonVocabTap)
           )}
         </div>
-        {showMn && sentence.mn ? (
+        {showMn && mnLine ? (
           <div className="bs-txt-mn-line">
-            <MnGrammarTermText text={sentence.mn} />
+            <MnGrammarTermText text={mnLine} />
           </div>
         ) : null}
         {sentence.zh ? (
@@ -336,15 +410,33 @@ export function LiveTextReader({
       <p className="bs-txt-hint">Үг дээр дарж утга, задаргааг хараарай.</p>
 
       <div className="bs-txt-body">
-        <div className="bs-txt-sentences">
-          {sentences.map((sentence, si) => renderSentence(sentence, si))}
+        <div className={`bs-txt-sentences${chat ? " bs-txt-sentences--chat" : ""}`}>
+          {sentences.slice(0, visibleCount).map((sentence, si) => renderSentence(sentence, si))}
         </div>
 
-        {(text.paragraph_summaries?.length ?? 0) > 0
+        {!allShown ? (
+          <div className="bs-txt-more">
+            <button type="button" className="bs-txt-more-btn" onClick={revealNext}>
+              {chat && speakers[visibleCount]
+                ? `${speakers[visibleCount]} юу гэж хэлэх бол · дарж үргэлжлүүл ▾`
+                : "Дараагийн мөр ▾"}
+            </button>
+            <div className="bs-txt-more-row">
+              <span>
+                {visibleCount} / {sentences.length} мөр
+              </span>
+              <button type="button" onClick={() => setShown(sentences.length)}>
+                Бүгдийг нээх
+              </button>
+            </div>
+          </div>
+        ) : null}
+
+        {allShown && (text.paragraph_summaries?.length ?? 0) > 0
           ? renderFooterSummaries(text.paragraph_summaries!)
           : null}
 
-        {(text.reflection?.questions_mn?.length ?? 0) > 0 ? (
+        {allShown && (text.reflection?.questions_mn?.length ?? 0) > 0 ? (
           <div className="bs-txt-footer-section">
             <p className="bs-txt-footer-title">Эргэцүүлье</p>
             <ul className="bs-txt-reflect-list">
@@ -357,7 +449,7 @@ export function LiveTextReader({
           </div>
         ) : null}
 
-        {lessonId && (text.exercises?.length ?? 0) > 0 ? (
+        {allShown && lessonId && (text.exercises?.length ?? 0) > 0 ? (
           <TextComprehension key={text.id} lessonId={lessonId} text={text} />
         ) : null}
       </div>
