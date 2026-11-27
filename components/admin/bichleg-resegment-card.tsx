@@ -27,8 +27,8 @@ export function BichlegResegmentCard() {
       if (!list.ok || !list.videos) throw new Error(list.error ?? "Бичлэгийн жагсаалт авч чадсангүй.");
 
       let changedRows = 0;
-      let before = 0;
-      let after = 0;
+      let merged = 0;
+      let split = 0;
       const errors: string[] = [];
       for (let i = 0; i < list.videos.length; i += 1) {
         if (stopRef.current) break;
@@ -44,14 +44,14 @@ export function BichlegResegmentCard() {
           const data = (await res.json()) as {
             ok: boolean;
             changedRows?: number;
-            wordsBefore?: number;
-            wordsAfter?: number;
+            mergedWords?: number;
+            splitWords?: number;
             error?: string;
           };
           if (!data.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
           changedRows += data.changedRows ?? 0;
-          before += data.wordsBefore ?? 0;
-          after += data.wordsAfter ?? 0;
+          merged += data.mergedWords ?? 0;
+          split += data.splitWords ?? 0;
         } catch (e) {
           errors.push(`${label}: ${e instanceof Error ? e.message : "алдаа"}`);
         }
@@ -59,7 +59,7 @@ export function BichlegResegmentCard() {
       }
       setFailed(errors);
       setSummary(
-        `${stopRef.current ? "Зогсоолоо. " : "Дууслаа ✓ "}${changedRows} мөр шинэчлэгдэж, ${Math.max(0, before - after)} тасархай хэсэг бүтэн үг болж нийллээ.`
+        `${stopRef.current ? "Зогсоолоо. " : "Дууслаа ✓ "}${changedRows} мөр шинэчлэгдлээ. Одоо хадмалд ${merged} үг толийн бүтэн үгээр нийлсэн, ${split} наалдмал хэсэг салгагдсан байна.`
       );
     } catch (e) {
       setSummary(e instanceof Error ? e.message : "Алдаа гарлаа.");

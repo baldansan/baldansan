@@ -63,6 +63,9 @@ async function loadKnownWords(client: SupabaseClient, words: string[]): Promise<
             .eq("kind", "word")
             .in("simplified", chunk),
         ]);
+        // Хайлт алдаатай бол зогсоно — эс бөгөөс бүх үг «толинд байхгүй» болж ханзаар салчихна.
+        if (hskRes.error) throw new Error(`hsk_words: ${hskRes.error.message}`);
+        if (lexRes.error) throw new Error(`dictionary_lexicon: ${lexRes.error.message}`);
         for (const row of (lexRes.data ?? []) as { simplified: string; meaning_mn: string | null }[]) {
           const prev = known.get(row.simplified);
           if (!prev || (!prev.mn && row.meaning_mn)) {
@@ -102,7 +105,7 @@ export async function buildRows(
   client: SupabaseClient,
   linesZh: string[],
   options: BuildOptions = {}
-): Promise<{ rows: BuiltRow[]; glossedByAi: number; mergedWords: number }> {
+): Promise<{ rows: BuiltRow[]; glossedByAi: number; mergedWords: number; splitWords: number }> {
   const existing = options.existingGloss ?? new Map<string, string>();
   const useAi = options.useAi ?? true;
   const cleaned = linesZh.map(sanitizeZh);
@@ -115,7 +118,12 @@ export async function buildRows(
   const isWord = (w: string) => Boolean(GLOSS[w]) || known.has(w);
 
   // 2) Толинд байхгүй наалдмал хэсгийг ханзаар салгаад, нийлж болзошгүй хослолыг шалгана
-  const units = base.map((tokens) => splitUnknown(tokens, isWord));
+  let splitWords = 0;
+  const units = base.map((tokens) => {
+    const split = splitUnknown(tokens, isWord);
+    splitWords += tokens.filter((t) => CJK.test(t) && [...t].length >= 2 && !isWord(t)).length;
+    return split;
+  });
   const second = new Set<string>();
   for (const tokens of units) {
     for (const w of tokens) if (CJK.test(w) && !known.has(w)) second.add(w);
@@ -131,7 +139,7 @@ export async function buildRows(
   let mergedWords = 0;
   const segmented = units.map((tokens) => {
     const merged = mergeTokens(tokens, kinds);
-    mergedWords += tokens.length - merged.length;
+    mergedWords += merged.filter((m) => !tokens.includes(m)).length;
     return merged;
   });
 
@@ -199,5 +207,5 @@ export async function buildRows(
     return { zh, pinyin: words.map((w) => w.pinyin).join(" "), words };
   });
 
-  return { rows, glossedByAi: ai.size, mergedWords };
+  return { rows, glossedByAi: ai.size, mergedWords, splitWords };
 }

@@ -18,6 +18,10 @@ export type ResegmentResult = {
   changedRows: number;
   wordsBefore: number;
   wordsAfter: number;
+  /** Толийн бүтэн үг болж нийлсэн үгийн тоо */
+  mergedWords: number;
+  /** Толинд байхгүй тул салгасан наалдмал хэсгийн тоо */
+  splitWords: number;
 };
 
 /**
@@ -41,7 +45,7 @@ export async function resegmentVideo(client: SupabaseClient, videoId: string): P
 
   const withText = stored.filter((r) => (r.zh ?? "").trim().length > 0);
   if (!withText.length) {
-    return { videoId, rows: stored.length, changedRows: 0, wordsBefore: 0, wordsAfter: 0 };
+    return { videoId, rows: stored.length, changedRows: 0, wordsBefore: 0, wordsAfter: 0, mergedWords: 0, splitWords: 0 };
   }
 
   // Өмнөх үгийн утгыг хадгална (гараар зассан / AI-аар гаргасан байж болно).
@@ -80,5 +84,13 @@ export async function resegmentVideo(client: SupabaseClient, videoId: string): P
     if (error) throw new Error(error.message);
   }
 
-  return { videoId, rows: stored.length, changedRows: updates.length, wordsBefore, wordsAfter };
+  return {
+    videoId,
+    rows: stored.length,
+    changedRows: updates.length,
+    wordsBefore,
+    wordsAfter,
+    mergedWords: built.mergedWords,
+    splitWords: built.splitWords,
+  };
 }
