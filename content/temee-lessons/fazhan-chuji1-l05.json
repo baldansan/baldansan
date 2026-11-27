@@ -578,7 +578,7 @@
     "screens": [
      {
       "id": "d1",
-      "title": "Зургаан мэргэжил",
+      "title": "Есөн мэргэжил",
       "visual": {
        "kind": "grid",
        "items": [
@@ -622,6 +622,27 @@
          "sub": "dàxuéshēng · оюутан",
          "src": [
           "file:w_5927_5b66_751f.mp3"
+         ]
+        },
+        {
+         "label": "护士",
+         "sub": "hùshi · сувилагч",
+         "src": [
+          "word:护士"
+         ]
+        },
+        {
+         "label": "警察",
+         "sub": "jǐngchá · цагдаа",
+         "src": [
+          "word:警察"
+         ]
+        },
+        {
+         "label": "农民",
+         "sub": "nóngmín · тариачин",
+         "src": [
+          "word:农民"
          ]
         }
        ]
