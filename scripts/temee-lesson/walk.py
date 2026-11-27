@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Тэмээ багшийн хичээлийг утасны хэмжээгээр эхнээс нь дуустал туулж, дэлгэц бүрийн зургийг авна.
-  python3 scripts/temee-lesson/walk.py <lessonId> <гаралтын хавтас> [--base URL] [--dark] [--draft]
+  python3 scripts/temee-lesson/walk.py <lessonId> <гаралтын хавтас> [--base URL] [--dark] [--draft] [--quiz]
 Жишээ (ноорог хичээлийг live дээр):
   python3 scripts/temee-lesson/walk.py fazhan-chuji1-l02 /tmp/shots --draft
 Дуусаад: гарчиг таарахгүй (MISMATCH), товч олдоогүй (NOCLICK/NONEXT), консолын алдаа (ERRS)-г хэвлэнэ —
@@ -15,6 +15,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("lesson_id"); ap.add_argument("out")
 ap.add_argument("--base", default="https://surtsgaay.buunduu.mn")
 ap.add_argument("--dark", action="store_true"); ap.add_argument("--draft", action="store_true")
+ap.add_argument("--quiz", action="store_true", help="сорилыг дуустал хариулж, номын сорилын саналыг шалгана")
 A = ap.parse_args()
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")
 L = json.load(open(os.path.join(ROOT, "content/temee-lessons", A.lesson_id + ".json"), encoding="utf8"))
@@ -95,6 +96,27 @@ async def main():
                 q = re.search(r"Асуулт 1 / (\d+)", txt)
                 if L.get("quiz") and (not q or int(q.group(1)) != len(L["quiz"])):
                     problems.append(f"Сорилын тоо таарахгүй: дэлгэц дээр {q.group(1) if q else '?'}, файлд {len(L['quiz'])}")
+                if A.quiz and L.get("quiz"):
+                    # Сорилыг дуустал хариулж, «номын сорил өгөх үү» дэлгэц ба номын сорилын эхний асуултыг шалгана.
+                    for i, it in enumerate(L["quiz"]):
+                        if not await click_text(pg, it["answer"]): problems.append(f"NOCLICK сорил {it['id']}")
+                        await pg.wait_for_timeout(500)
+                        if not (await click_text(pg, "Сорил дуусгах") or await click_text(pg, "Зөв ✓") or await click_text(pg, "Дараагийн асуулт")):
+                            await pg.wait_for_timeout(1500)
+                        await pg.wait_for_timeout(700)
+                    await pg.wait_for_timeout(800)
+                    async def close_award():
+                        # «Шинэ цол» цонх гарвал хаана.
+                        for _ in range(3):
+                            if not await click_text(pg, "Баярлалаа, Тэмээ", "body"): break
+                            await pg.wait_for_timeout(700)
+                    await pg.wait_for_timeout(1200); await close_award()
+                    if await pg.get_by_text("Номын сорил өгөх", exact=True).count():
+                        await shot("q-extra-offer")
+                        await click_text(pg, "Номын сорил өгөх"); await pg.wait_for_timeout(2000); await close_award()
+                        await shot("q-extra-1")
+                    else:
+                        await shot("q-after"); problems.append("«Номын сорил өгөх» санал гарсангүй (номын сорилгүй хичээл бол хэвийн)")
                 break
             else:
                 await shot("stage-" + re.sub(r"\W+", "-", label))
