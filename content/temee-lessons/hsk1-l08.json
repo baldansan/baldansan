@@ -1192,29 +1192,29 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "lǎoshī",
-                  "sub": "3 + 1 · багш",
+                  "label": "老师",
+                  "sub": "lǎoshī · 3 + 1 · багш",
                   "src": [
                     "word:老师"
                   ]
                 },
                 {
-                  "label": "Měiguó",
-                  "sub": "3 + 2 · Америк",
+                  "label": "美国",
+                  "sub": "Měiguó · 3 + 2 · Америк",
                   "src": [
                     "word:美国"
                   ]
                 },
                 {
-                  "label": "shǒubiǎo",
-                  "sub": "3 + 3 · бугуйн цаг",
+                  "label": "手表",
+                  "sub": "shǒubiǎo · 3 + 3 · бугуйн цаг",
                   "src": [
                     "word:手表"
                   ]
                 },
                 {
-                  "label": "mǐfàn",
-                  "sub": "3 + 4 · будаа",
+                  "label": "米饭",
+                  "sub": "mǐfàn · 3 + 4 · будаа",
                   "src": [
                     "word:米饭"
                   ]
@@ -1235,43 +1235,43 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "lǎoshī",
-                  "sub": "багш",
+                  "label": "老师",
+                  "sub": "lǎoshī · багш",
                   "src": [
                     "word:老师"
                   ]
                 },
                 {
-                  "label": "Měiguó",
-                  "sub": "Америк",
+                  "label": "美国",
+                  "sub": "Měiguó · Америк",
                   "src": [
                     "word:美国"
                   ]
                 },
                 {
-                  "label": "mǐfàn",
-                  "sub": "будаа",
+                  "label": "米饭",
+                  "sub": "mǐfàn · будаа",
                   "src": [
                     "word:米饭"
                   ]
                 },
                 {
-                  "label": "qǐngwèn",
-                  "sub": "асууя",
+                  "label": "请问",
+                  "sub": "qǐngwèn · асууя",
                   "src": [
                     "word:请问"
                   ]
                 },
                 {
-                  "label": "yǐqián",
-                  "sub": "өмнө нь",
+                  "label": "以前",
+                  "sub": "yǐqián · өмнө нь",
                   "src": [
                     "word:以前"
                   ]
                 },
                 {
-                  "label": "yǐjīng",
-                  "sub": "аль хэдийн",
+                  "label": "已经",
+                  "sub": "yǐjīng · аль хэдийн",
                   "src": [
                     "word:已经"
                   ]
@@ -1324,8 +1324,8 @@
                   ]
                 },
                 {
-                  "label": "shǒubiǎo",
-                  "sub": "→ shóubiǎo",
+                  "label": "手表",
+                  "sub": "shǒubiǎo · → shóubiǎo",
                   "src": [
                     "word:手表"
                   ]

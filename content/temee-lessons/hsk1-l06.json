@@ -1016,29 +1016,29 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "kāfēi",
-                  "sub": "1 + 1 · кофе",
+                  "label": "咖啡",
+                  "sub": "kāfēi · 1 + 1 · кофе",
                   "src": [
                     "word:咖啡"
                   ]
                 },
                 {
-                  "label": "gōngyuán",
-                  "sub": "1 + 2 · цэцэрлэгт хүрээлэн",
+                  "label": "公园",
+                  "sub": "gōngyuán · 1 + 2 · цэцэрлэгт хүрээлэн",
                   "src": [
                     "word:公园"
                   ]
                 },
                 {
-                  "label": "jīchǎng",
-                  "sub": "1 + 3 · нисэх буудал",
+                  "label": "机场",
+                  "sub": "jīchǎng · 1 + 3 · нисэх буудал",
                   "src": [
                     "word:机场"
                   ]
                 },
                 {
-                  "label": "chēzhàn",
-                  "sub": "1 + 4 · буудал",
+                  "label": "车站",
+                  "sub": "chēzhàn · 1 + 4 · буудал",
                   "src": [
                     "word:车站"
                   ]
@@ -1059,29 +1059,29 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "kāfēi",
-                  "sub": "кофе",
+                  "label": "咖啡",
+                  "sub": "kāfēi · кофе",
                   "src": [
                     "word:咖啡"
                   ]
                 },
                 {
-                  "label": "jīntiān",
-                  "sub": "өнөөдөр",
+                  "label": "今天",
+                  "sub": "jīntiān · өнөөдөр",
                   "src": [
                     "word:今天"
                   ]
                 },
                 {
-                  "label": "gōngyuán",
-                  "sub": "цэцэрлэгт хүрээлэн",
+                  "label": "公园",
+                  "sub": "gōngyuán · цэцэрлэгт хүрээлэн",
                   "src": [
                     "word:公园"
                   ]
                 },
                 {
-                  "label": "jīnnián",
-                  "sub": "энэ жил",
+                  "label": "今年",
+                  "sub": "jīnnián · энэ жил",
                   "src": [
                     "word:今年"
                   ]
@@ -1101,15 +1101,15 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "jīchǎng",
-                  "sub": "нисэх буудал",
+                  "label": "机场",
+                  "sub": "jīchǎng · нисэх буудал",
                   "src": [
                     "word:机场"
                   ]
                 },
                 {
-                  "label": "kāishǐ",
-                  "sub": "эхлэх",
+                  "label": "开始",
+                  "sub": "kāishǐ · эхлэх",
                   "src": [
                     "word:开始"
                   ]
@@ -1140,15 +1140,15 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "chēzhàn",
-                  "sub": "буудал",
+                  "label": "车站",
+                  "sub": "chēzhàn · буудал",
                   "src": [
                     "word:车站"
                   ]
                 },
                 {
-                  "label": "gāoxìng",
-                  "sub": "баяртай байх",
+                  "label": "高兴",
+                  "sub": "gāoxìng · баяртай байх",
                   "src": [
                     "word:高兴"
                   ]

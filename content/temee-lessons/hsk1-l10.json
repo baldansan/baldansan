@@ -1099,29 +1099,29 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "zhuōzi",
-                  "sub": "1 + сул · ширээ",
+                  "label": "桌子",
+                  "sub": "zhuōzi · 1 + сул · ширээ",
                   "src": [
                     "word:桌子"
                   ]
                 },
                 {
-                  "label": "pánzi",
-                  "sub": "2 + сул · таваг",
+                  "label": "盘子",
+                  "sub": "pánzi · 2 + сул · таваг",
                   "src": [
                     "word:盘子"
                   ]
                 },
                 {
-                  "label": "yǐzi",
-                  "sub": "3 + сул · сандал",
+                  "label": "椅子",
+                  "sub": "yǐzi · 3 + сул · сандал",
                   "src": [
                     "word:椅子"
                   ]
                 },
                 {
-                  "label": "kùzi",
-                  "sub": "4 + сул · өмд",
+                  "label": "裤子",
+                  "sub": "kùzi · 4 + сул · өмд",
                   "src": [
                     "word:裤子"
                   ]
@@ -1152,43 +1152,43 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "bàba",
-                  "sub": "аав",
+                  "label": "爸爸",
+                  "sub": "bàba · аав",
                   "src": [
                     "word:爸爸"
                   ]
                 },
                 {
-                  "label": "māma",
-                  "sub": "ээж",
+                  "label": "妈妈",
+                  "sub": "māma · ээж",
                   "src": [
                     "word:妈妈"
                   ]
                 },
                 {
-                  "label": "gēge",
-                  "sub": "ах",
+                  "label": "哥哥",
+                  "sub": "gēge · ах",
                   "src": [
                     "word:哥哥"
                   ]
                 },
                 {
-                  "label": "jiějie",
-                  "sub": "эгч",
+                  "label": "姐姐",
+                  "sub": "jiějie · эгч",
                   "src": [
                     "word:姐姐"
                   ]
                 },
                 {
-                  "label": "dìdi",
-                  "sub": "эрэгтэй дүү",
+                  "label": "弟弟",
+                  "sub": "dìdi · эрэгтэй дүү",
                   "src": [
                     "word:弟弟"
                   ]
                 },
                 {
-                  "label": "mèimei",
-                  "sub": "эмэгтэй дүү",
+                  "label": "妹妹",
+                  "sub": "mèimei · эмэгтэй дүү",
                   "src": [
                     "word:妹妹"
                   ]
@@ -1209,36 +1209,36 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "wǒmen",
-                  "sub": "бид",
+                  "label": "我们",
+                  "sub": "wǒmen · бид",
                   "src": [
                     "word:我们"
                   ]
                 },
                 {
-                  "label": "tāmen",
-                  "sub": "тэд",
+                  "label": "他们",
+                  "sub": "tāmen · тэд",
                   "src": [
                     "word:他们"
                   ]
                 },
                 {
-                  "label": "bēizi",
-                  "sub": "аяга",
+                  "label": "杯子",
+                  "sub": "bēizi · аяга",
                   "src": [
                     "word:杯子"
                   ]
                 },
                 {
-                  "label": "mùtou",
-                  "sub": "мод",
+                  "label": "木头",
+                  "sub": "mùtou · мод",
                   "src": [
                     "word:木头"
                   ]
                 },
                 {
-                  "label": "shítou",
-                  "sub": "чулуу",
+                  "label": "石头",
+                  "sub": "shítou · чулуу",
                   "src": [
                     "word:石头"
                   ]

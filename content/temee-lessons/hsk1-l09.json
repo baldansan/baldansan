@@ -1027,29 +1027,29 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "miànbāo",
-                  "sub": "4 + 1 · талх",
+                  "label": "面包",
+                  "sub": "miànbāo · 4 + 1 · талх",
                   "src": [
                     "word:面包"
                   ]
                 },
                 {
-                  "label": "qùnián",
-                  "sub": "4 + 2 · өнгөрсөн жил",
+                  "label": "去年",
+                  "sub": "qùnián · 4 + 2 · өнгөрсөн жил",
                   "src": [
                     "word:去年"
                   ]
                 },
                 {
-                  "label": "diànnǎo",
-                  "sub": "4 + 3 · компьютер",
+                  "label": "电脑",
+                  "sub": "diànnǎo · 4 + 3 · компьютер",
                   "src": [
                     "word:电脑"
                   ]
                 },
                 {
-                  "label": "diànhuà",
-                  "sub": "4 + 4 · утас",
+                  "label": "电话",
+                  "sub": "diànhuà · 4 + 4 · утас",
                   "src": [
                     "word:电话"
                   ]
@@ -1069,29 +1069,29 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "miànbāo",
-                  "sub": "талх",
+                  "label": "面包",
+                  "sub": "miànbāo · талх",
                   "src": [
                     "word:面包"
                   ]
                 },
                 {
-                  "label": "shàng kè",
-                  "sub": "хичээл эхлэх",
+                  "label": "上课",
+                  "sub": "shàng kè · хичээл эхлэх",
                   "src": [
                     "word:上课"
                   ]
                 },
                 {
-                  "label": "qùnián",
-                  "sub": "өнгөрсөн жил",
+                  "label": "去年",
+                  "sub": "qùnián · өнгөрсөн жил",
                   "src": [
                     "word:去年"
                   ]
                 },
                 {
-                  "label": "dìtú",
-                  "sub": "газрын зураг",
+                  "label": "地图",
+                  "sub": "dìtú · газрын зураг",
                   "src": [
                     "word:地图"
                   ]
@@ -1111,22 +1111,22 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "Hànyǔ",
-                  "sub": "хятад хэл",
+                  "label": "汉语",
+                  "sub": "Hànyǔ · хятад хэл",
                   "src": [
                     "word:汉语"
                   ]
                 },
                 {
-                  "label": "diànnǎo",
-                  "sub": "компьютер",
+                  "label": "电脑",
+                  "sub": "diànnǎo · компьютер",
                   "src": [
                     "word:电脑"
                   ]
                 },
                 {
-                  "label": "diànyǐng",
-                  "sub": "кино",
+                  "label": "电影",
+                  "sub": "diànyǐng · кино",
                   "src": [
                     "word:电影"
                   ]
@@ -1146,29 +1146,29 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "zàijiàn",
-                  "sub": "баяртай",
+                  "label": "再见",
+                  "sub": "zàijiàn · баяртай",
                   "src": [
                     "word:再见"
                   ]
                 },
                 {
-                  "label": "diànhuà",
-                  "sub": "утас",
+                  "label": "电话",
+                  "sub": "diànhuà · утас",
                   "src": [
                     "word:电话"
                   ]
                 },
                 {
-                  "label": "diànshì",
-                  "sub": "зурагт",
+                  "label": "电视",
+                  "sub": "diànshì · зурагт",
                   "src": [
                     "word:电视"
                   ]
                 },
                 {
-                  "label": "shuì jiào",
-                  "sub": "унтах",
+                  "label": "睡觉",
+                  "sub": "shuì jiào · унтах",
                   "src": [
                     "word:睡觉"
                   ]

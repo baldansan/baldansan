@@ -1055,29 +1055,29 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "shíjiān",
-                  "sub": "2 + 1 · цаг хугацаа",
+                  "label": "时间",
+                  "sub": "shíjiān · 2 + 1 · цаг хугацаа",
                   "src": [
                     "word:时间"
                   ]
                 },
                 {
-                  "label": "yínháng",
-                  "sub": "2 + 2 · банк",
+                  "label": "银行",
+                  "sub": "yínháng · 2 + 2 · банк",
                   "src": [
                     "word:银行"
                   ]
                 },
                 {
-                  "label": "cídiǎn",
-                  "sub": "2 + 3 · толь бичиг",
+                  "label": "词典",
+                  "sub": "cídiǎn · 2 + 3 · толь бичиг",
                   "src": [
                     "word:词典"
                   ]
                 },
                 {
-                  "label": "xuéxiào",
-                  "sub": "2 + 4 · сургууль",
+                  "label": "学校",
+                  "sub": "xuéxiào · 2 + 4 · сургууль",
                   "src": [
                     "word:学校"
                   ]
@@ -1097,29 +1097,29 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "zuótiān",
-                  "sub": "өчигдөр",
+                  "label": "昨天",
+                  "sub": "zuótiān · өчигдөр",
                   "src": [
                     "word:昨天"
                   ]
                 },
                 {
-                  "label": "míngtiān",
-                  "sub": "маргааш",
+                  "label": "明天",
+                  "sub": "míngtiān · маргааш",
                   "src": [
                     "word:明天"
                   ]
                 },
                 {
-                  "label": "yínháng",
-                  "sub": "банк",
+                  "label": "银行",
+                  "sub": "yínháng · банк",
                   "src": [
                     "word:银行"
                   ]
                 },
                 {
-                  "label": "míngnián",
-                  "sub": "ирэх жил",
+                  "label": "明年",
+                  "sub": "míngnián · ирэх жил",
                   "src": [
                     "word:明年"
                   ]
@@ -1139,22 +1139,22 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "cídiǎn",
-                  "sub": "толь бичиг",
+                  "label": "词典",
+                  "sub": "cídiǎn · толь бичиг",
                   "src": [
                     "word:词典"
                   ]
                 },
                 {
-                  "label": "píngguǒ",
-                  "sub": "алим",
+                  "label": "苹果",
+                  "sub": "píngguǒ · алим",
                   "src": [
                     "word:苹果"
                   ]
                 },
                 {
-                  "label": "niúnǎi",
-                  "sub": "сүү",
+                  "label": "牛奶",
+                  "sub": "niúnǎi · сүү",
                   "src": [
                     "word:牛奶"
                   ]
@@ -1174,8 +1174,8 @@
               "kind": "grid",
               "items": [
                 {
-                  "label": "xuéxiào",
-                  "sub": "сургууль",
+                  "label": "学校",
+                  "sub": "xuéxiào · сургууль",
                   "src": [
                     "word:学校"
                   ]
