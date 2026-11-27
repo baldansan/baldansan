@@ -61,6 +61,16 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json") && !f.star
 
   const taughtText = JSON.stringify(sections);
   const taughtHanzi = new Set(taughtText.match(HANZI) ?? []);
+  // Нэг номын өмнөх хичээлүүдэд заасан ханзыг мөн «заагдсан» гэж тооцно (fazhan-chuji1-l02 < l03).
+  const idm = id.match(/^(.*-l)(\d+)$/);
+  if (idm) {
+    for (const other of readdirSync(DIR)) {
+      const om = other.match(/^(.*-l)(\d+)\.json$/);
+      if (!om || om[1] !== idm[1] || Number(om[2]) >= Number(idm[2])) continue;
+      const O = JSON.parse(readFileSync(join(DIR, other), "utf8"));
+      for (const ch of JSON.stringify([O.teach, O.sounds]).match(HANZI) ?? []) taughtHanzi.add(ch);
+    }
+  }
   const refs = new Set();
   JSON.stringify(L, (k, v) => {
     if (typeof v === "string" && /^(syl|file|word):/.test(v)) refs.add(v);
