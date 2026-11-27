@@ -49,7 +49,7 @@ export function WritingLessonStartClient({ lessonId }: { lessonId: string }) {
       if (existingId) {
         const existing = await getList(existingId);
         if (existing.data) {
-          router.replace(`/writing/${existingId}/practice`);
+          router.replace(`/writing/${existingId}/practice?lesson=${encodeURIComponent(lessonId)}`);
           return;
         }
       }
@@ -74,7 +74,7 @@ export function WritingLessonStartClient({ lessonId }: { lessonId: string }) {
           return;
         }
         writeMap({ ...map, [lessonId]: created.data.id });
-        router.replace(`/writing/${created.data.id}/practice`);
+        router.replace(`/writing/${created.data.id}/practice?lesson=${encodeURIComponent(lessonId)}`);
       } catch {
         setError(tr(locale, "Сүлжээний алдаа. Дахин оролдоно уу."));
       }

@@ -59,6 +59,8 @@ type Props = {
   startChar?: string | null;
   /** Дууссан ханзыг ч дахин бичнэ. */
   again?: boolean;
+  /** Хичээлийн төгсгөлөөс орж ирсэн бол тэр хичээлийн id — буцах товч хичээл рүү аваачна. */
+  fromLessonId?: string | null;
 };
 
 type Step = { phase: WritingPadPhase; index: number; total: number; base: number };
@@ -173,7 +175,8 @@ function buildTasks(
   return tasks;
 }
 
-export function WritingPracticeClient({ listId, startChar = null, again = false }: Props) {
+export function WritingPracticeClient({ listId, startChar = null, again = false, fromLessonId = null }: Props) {
+  const lessonHref = fromLessonId ? `/lessons/${encodeURIComponent(fromLessonId)}` : null;
   const locale = useUiLocale();
   const [list, setList] = useState<WritingList | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -587,9 +590,21 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
               ▶ {tr(locale, "Дараагийн ханзууд")} ({nextSize})
             </button>
           ) : null}
-          {list.kind === "lesson" && !hasNext && weakCount === 0 ? (
+          {lessonHref && !hasNext && weakCount === 0 ? (
+            <Link href={lessonHref} className="app-btn-primary w-full text-center">
+              {tr(locale, "Хичээл рүү буцах")} →
+            </Link>
+          ) : list.kind === "lesson" && !hasNext && weakCount === 0 ? (
             <Link href="/home" className="app-btn-primary w-full text-center">
               {tr(locale, "Нүүр рүү — өнөөдрийн төлөвлөгөө")} →
+            </Link>
+          ) : null}
+          {lessonHref && (hasNext || weakCount > 0) ? (
+            <Link
+              href={lessonHref}
+              className="w-full rounded-full bg-white px-4 py-2 text-center text-sm font-semibold text-slate-700 ring-1 ring-slate-200"
+            >
+              ← {tr(locale, "Хичээл рүү буцах")}
             </Link>
           ) : null}
           <Link
@@ -618,10 +633,10 @@ export function WritingPracticeClient({ listId, startChar = null, again = false 
     <div className="pb-6">
       <div className="mb-2 flex items-center gap-3 pr-28">
         <Link
-          href={`/writing/${listId}`}
+          href={lessonHref ?? `/writing/${listId}`}
           className="inline-flex items-center text-sm font-medium text-[var(--app-muted)] transition-colors hover:text-emerald-600"
         >
-          {tr(locale, "← Дэвтэр рүү")}
+          {lessonHref ? tr(locale, "← Хичээл рүү") : tr(locale, "← Дэвтэр рүү")}
         </Link>
         <p className="text-xs font-bold text-[var(--app-muted)]">
           {Math.min(results.length + 1, queue.length)}/{queue.length} {tr(locale, "ханз")}
