@@ -425,3 +425,38 @@ export function TemeeExtraPracticeOffer({
     </div>
   );
 }
+
+/** Тэмээ багшийн сорилын дараа: номын сорилыг нэмэлт болгож санал болгоно. */
+export function TemeeExtraQuizOffer({
+  total,
+  onExtra,
+  onSkip,
+}: {
+  total: number;
+  onExtra: () => void;
+  onSkip: () => void;
+}) {
+  return (
+    <div className="tm-root">
+      <p className="tm-kicker">Сорил</p>
+      <h2 className="tm-title">Өөр сорил өгөх үү</h2>
+      <div className="tm-say">
+        {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
+        <img src={temeePoseSrc("thumbsup", "sm")} alt="" className="tm-say-img" />
+        <div className="tm-say-bubble">
+          <p>Миний сорил дууслаа. Оноо чинь хадгалагдсан.</p>
+          <p>Номын сорил бас бий. {total} асуулт, арай хэцүү.</p>
+          <p>Энэ нь оноонд нөлөөлөхгүй. Алгасаж ч болно.</p>
+        </div>
+      </div>
+      <div className="tm-nav">
+        <button type="button" className="tm-nav-back" onClick={onSkip}>
+          Дүгнэлт рүү →
+        </button>
+        <button type="button" className="tm-nav-next" onClick={onExtra}>
+          Номын сорил өгөх
+        </button>
+      </div>
+    </div>
+  );
+}

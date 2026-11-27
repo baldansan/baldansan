@@ -67,6 +67,8 @@ type Props = {
   lessonPackage?: HskLessonPackage | null;
   quizQuestions?: QuizQuestion[];
   useDatabaseQuizOptions?: boolean;
+  bookQuizQuestions?: QuizQuestion[];
+  bookQuizFromDatabase?: boolean;
   adminPreview?: boolean;
   nextLessonId?: string | null;
   /** Нэмэлт, гүнзгий заах агуулга (HSK1/HSK2). Байхгүй бол хуучнаараа. */
@@ -80,6 +82,8 @@ function SchemaLessonWatchPlayer({
   lessonPackage,
   quizQuestions = [],
   useDatabaseQuizOptions = false,
+  bookQuizQuestions = [],
+  bookQuizFromDatabase = false,
   nextLessonId = null,
   adminPreview = false,
   deep = null,
@@ -90,6 +94,8 @@ function SchemaLessonWatchPlayer({
   lessonPackage: HskLessonPackage;
   quizQuestions?: QuizQuestion[];
   useDatabaseQuizOptions?: boolean;
+  bookQuizQuestions?: QuizQuestion[];
+  bookQuizFromDatabase?: boolean;
   nextLessonId?: string | null;
   adminPreview?: boolean;
   deep?: LessonDeepTeaching | null;
@@ -107,6 +113,8 @@ function SchemaLessonWatchPlayer({
           lessonContent={lesson}
           quizQuestions={quizQuestions}
           useDatabaseQuizOptions={useDatabaseQuizOptions}
+          bookQuizQuestions={bookQuizQuestions}
+          bookQuizFromDatabase={bookQuizFromDatabase}
           nextLessonId={nextLessonId}
           adminPreview={adminPreview}
           deep={deep}
@@ -123,6 +131,8 @@ export function LessonWatchClient({
   lessonPackage = null,
   quizQuestions = [],
   useDatabaseQuizOptions = false,
+  bookQuizQuestions = [],
+  bookQuizFromDatabase = false,
   adminPreview = false,
   nextLessonId = null,
   deep = null,
@@ -139,6 +149,8 @@ export function LessonWatchClient({
         lessonPackage={lessonPackage}
         quizQuestions={quizQuestions}
         useDatabaseQuizOptions={useDatabaseQuizOptions}
+        bookQuizQuestions={bookQuizQuestions}
+        bookQuizFromDatabase={bookQuizFromDatabase}
         nextLessonId={nextLessonId}
         adminPreview={adminPreview}
         deep={deep}

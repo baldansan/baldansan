@@ -80,6 +80,8 @@ export default async function LessonWatchPage({
     ReturnType<typeof loadLessonQuizQuestionsForPage>
   >["questions"] = [];
   let useDatabaseQuizOptions = false;
+  let bookQuizQuestions: typeof quizQuestions = [];
+  let bookQuizFromDatabase = false;
   let deep: Awaited<ReturnType<typeof fetchLessonDeepTeaching>> = null;
   if (lessonPackage) {
     const quizData = await loadLessonQuizQuestionsForPage(lessonId, lesson);
@@ -87,6 +89,9 @@ export default async function LessonWatchPage({
     useDatabaseQuizOptions = quizData.fromDatabase;
     // Тэмээ багшийн сорил: зөвхөн заасан зүйлээр бичсэн асуултууд хуучныг орлоно.
     if (temee?.quiz?.length) {
+      // Номын сорил устахгүй: Тэмээ багшийн сорилын дараа нэмэлт болж санал болгогдоно.
+      bookQuizQuestions = quizData.questions;
+      bookQuizFromDatabase = quizData.fromDatabase;
       quizQuestions = temeeQuizQuestions(temee);
       useDatabaseQuizOptions = true;
     }
@@ -100,6 +105,8 @@ export default async function LessonWatchPage({
       lessonPackage={lessonPackage}
       quizQuestions={quizQuestions}
       useDatabaseQuizOptions={useDatabaseQuizOptions}
+      bookQuizQuestions={bookQuizQuestions}
+      bookQuizFromDatabase={bookQuizFromDatabase}
       adminPreview={adminPreview}
       nextLessonId={nextLessonId}
       deep={deep}

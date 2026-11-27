@@ -27,6 +27,7 @@ import { temeeMetaFromLesson } from "@/lib/temee-lesson/meta";
 import { preloadTemeeAudio } from "@/lib/temee-lesson/audio";
 import {
   TemeeExtraPracticeOffer,
+  TemeeExtraQuizOffer,
   TemeePracticePlayer,
   TemeeScreenPlayer,
 } from "./temee/temee-screen-player";
@@ -58,6 +59,9 @@ type Props = {
   lessonContent: LessonContent;
   quizQuestions?: QuizQuestion[];
   useDatabaseQuizOptions?: boolean;
+  /** Тэмээ багшийн сорил орлосон үед номын сорил — нэмэлт болж санал болгогдоно. */
+  bookQuizQuestions?: QuizQuestion[];
+  bookQuizFromDatabase?: boolean;
   nextLessonId?: string | null;
   adminPreview?: boolean;
   /** Нэмэлт, гүнзгий заах агуулга — байхгүй бол хичээл урьдын адил. */
@@ -73,6 +77,8 @@ export default function LessonPathPlayer({
   lessonContent,
   quizQuestions = [],
   useDatabaseQuizOptions = false,
+  bookQuizQuestions = [],
+  bookQuizFromDatabase = false,
   nextLessonId = null,
   adminPreview = false,
   deep = null,
@@ -110,6 +116,8 @@ export default function LessonPathPlayer({
    * "temee" → Тэмээ багшийн дасгал, "offer" → нэмж хийх үү гэж асуух, "extra" → номын дасгал.
    */
   const [practicePhase, setPracticePhase] = useState<"temee" | "offer" | "extra">("temee");
+  /** Сорилын үе: "main" → үндсэн сорил, "offer" → номын сорил өгөх үү, "extra" → номын сорил. */
+  const [quizPhase, setQuizPhase] = useState<"main" | "offer" | "extra">("main");
 
   const allStageIds = useMemo(() => plan.stages.map((s) => s.id), [plan.stages]);
   const activeIndex = activeStage
@@ -165,6 +173,7 @@ export default function LessonPathPlayer({
         practiceFooterActionRef.current = null;
       }
       setPracticePhase("temee");
+      setQuizPhase("main");
       setActiveStage(stage);
       setView("stage");
       setLessonPathLastStage(lessonId, stage.id);
@@ -384,6 +393,28 @@ export default function LessonPathPlayer({
           />
         ) : null;
       case "quiz":
+        if (quizPhase === "offer") {
+          return (
+            <TemeeExtraQuizOffer
+              total={bookQuizQuestions.length}
+              onExtra={() => setQuizPhase("extra")}
+              onSkip={handleQuizFinished}
+            />
+          );
+        }
+        if (quizPhase === "extra") {
+          return (
+            <LessonPathQuizStage
+              key="lesson-path-quiz-book"
+              lessonId={lessonId}
+              lesson={lessonContent}
+              quizQuestions={bookQuizQuestions}
+              useDatabaseQuizOptions={bookQuizFromDatabase}
+              extra
+              onFinished={handleQuizFinished}
+            />
+          );
+        }
         return (
           <LessonPathQuizStage
             key="lesson-path-quiz"
@@ -391,7 +422,11 @@ export default function LessonPathPlayer({
             lesson={lessonContent}
             quizQuestions={quizQuestions}
             useDatabaseQuizOptions={useDatabaseQuizOptions}
-            onFinished={handleQuizFinished}
+            onFinished={
+              temee?.quiz?.length && bookQuizQuestions.length > 0
+                ? () => setQuizPhase("offer")
+                : handleQuizFinished
+            }
           />
         );
       case "summary":

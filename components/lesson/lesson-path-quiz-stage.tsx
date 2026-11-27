@@ -39,6 +39,10 @@ type Props = {
   lesson: LessonContent;
   quizQuestions: QuizQuestion[];
   useDatabaseQuizOptions?: boolean;
+  /**
+   * Нэмэлт (номын) сорил: явц тусдаа хадгалагдана, хичээлийн оноог дарж бичихгүй.
+   */
+  extra?: boolean;
   onFinished: () => void;
 };
 
@@ -56,8 +60,11 @@ export function LessonPathQuizStage({
   lesson,
   quizQuestions: quizQuestionsProp,
   useDatabaseQuizOptions = false,
+  extra = false,
   onFinished,
 }: Props) {
+  // Нэмэлт сорилын явцыг Тэмээ багшийн сорилынхтой холихгүй.
+  const progressId = extra ? `${lessonId}::book` : lessonId;
   const quizQuestions = useMemo(
     () =>
       prepareLessonQuizQuestions(quizQuestionsProp, lesson.vocabulary, {
@@ -87,19 +94,19 @@ export function LessonPathQuizStage({
     () => Object.keys(resultsByIndex).length,
     [resultsByIndex]
   );
-  const canContinueFromOverview = hasBsQuizSavedProgress(lessonId);
+  const canContinueFromOverview = hasBsQuizSavedProgress(progressId);
   const overviewSaved = savedProgressRef.current;
 
   useEffect(() => {
-    savedProgressRef.current = getBsQuizProgress(lessonId);
+    savedProgressRef.current = getBsQuizProgress(progressId);
     if (savedProgressRef.current?.resultsByIndex) {
       setResultsByIndex(resultsFromSaved(savedProgressRef.current.resultsByIndex));
     }
     // Анх удаа орж буй хүнд тооны сүлжээ («тойм») хэрэггүй — шууд 1-р асуулт.
     // Өмнө нь хариулсан зүйлтэй хүнд л тойм (үргэлжлүүлэх / эхнээс) гарна.
-    if (!hasBsQuizSavedProgress(lessonId)) setPhase("active");
+    if (!hasBsQuizSavedProgress(progressId)) setPhase("active");
     setHydrated(true);
-  }, [lessonId]);
+  }, [progressId]);
 
   const persist = useCallback(
     (
@@ -111,7 +118,7 @@ export function LessonPathQuizStage({
       results?: Record<string, "ok" | "no">
     ) => {
       const nextResults = results ?? resultsByIndex;
-      saveBsQuizProgress(lessonId, {
+      saveBsQuizProgress(progressId, {
         currentIndex: patch.currentIndex,
         correctCount: patch.correctCount,
         answeredCount: Object.keys(nextResults).length,
@@ -119,9 +126,9 @@ export function LessonPathQuizStage({
         completed: patch.finished,
         resultsByIndex: nextResults,
       });
-      savedProgressRef.current = getBsQuizProgress(lessonId);
+      savedProgressRef.current = getBsQuizProgress(progressId);
     },
-    [lessonId, resultsByIndex]
+    [progressId, resultsByIndex]
   );
 
   function applySavedProgress(saved: BsQuizStepProgress) {
@@ -135,7 +142,7 @@ export function LessonPathQuizStage({
   }
 
   function startFresh() {
-    clearBsQuizProgress(lessonId);
+    clearBsQuizProgress(progressId);
     savedProgressRef.current = null;
     setCurrentIndex(0);
     setSelected(null);
@@ -267,7 +274,7 @@ export function LessonPathQuizStage({
         nextResults
       );
 
-      if (total > 0) {
+      if (total > 0 && !extra) {
         // Fire-and-forget: a failed save must never block the learner.
         void saveQuizResultSmart(
           lessonId,
