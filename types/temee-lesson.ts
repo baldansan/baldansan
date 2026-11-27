@@ -125,6 +125,11 @@ export type TemeeQuizItem = {
 export type TemeeLesson = {
   lessonId: string;
   version: number;
+  /**
+   * "draft" — сурагчид харагдахгүй, зөвхөн `?temee=1` холбоосоор (эзэн шалгаж батлах хүртэл).
+   * "live" — бүгдэд. Шинэ хичээлийг ЗААВАЛ "draft"-аар эхлүүлнэ.
+   */
+  status: "draft" | "live";
   /** 1-р үеийн богино оршил (хуучин урт оршлыг орлоно). */
   intro_mn: string;
   warmup_mn?: string;

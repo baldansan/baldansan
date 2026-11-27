@@ -8,7 +8,7 @@
  *     энд зөвхөн файл байгаа эсэхийг шалгана.
  *  4. Зөв хариулт сонголтод байгаа; индекс хүрээндээ.
  *  5. Дуу, зургийн файл бүр байгаа.
- *  6. lib/temee-lesson/meta.ts, load.ts-д бүртгэгдсэн.
+ *  6. status талбар ("draft" | "live") байгаа.
  */
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
@@ -18,10 +18,8 @@ const DIR = join(ROOT, "content/temee-lessons");
 const HANZI = /[一-鿿]/g;
 const errors = [];
 const warn = [];
-const metaSrc = readFileSync(join(ROOT, "lib/temee-lesson/meta.ts"), "utf8");
-const loadSrc = readFileSync(join(ROOT, "lib/temee-lesson/load.ts"), "utf8");
 // audio_qc.py-ээр илэрсэн, нэртэйгээ таардаггүй бичлэгүүд (жнь «pa1» хийгүй сонсогддог).
-const badAudioPath = join(DIR, "_audio-bad.json");
+const badAudioPath = join(ROOT, "scripts/temee-lesson/audio-bad.json");
 const badAudio = existsSync(badAudioPath) ? JSON.parse(readFileSync(badAudioPath, "utf8")).bad : {};
 
 function audioPath(ref, lessonId) {
@@ -35,8 +33,9 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json") && !f.star
   const id = L.lessonId;
   const err = (m) => errors.push(`${file}: ${m}`);
   if (`${id}.json` !== file) err(`lessonId (${id}) файлын нэртэй таарахгүй`);
-  if (!metaSrc.includes(`"${id}"`)) err("lib/temee-lesson/meta.ts-д бүртгэгдээгүй");
-  if (!loadSrc.includes(`"${id}"`)) err("lib/temee-lesson/load.ts-д бүртгэгдээгүй");
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) err("lessonId зөвхөн жижиг латин үсэг, тоо, зураас байна");
+  if (L.status !== "draft" && L.status !== "live") err('status нь "draft" эсвэл "live" байх ёстой');
+  if (!L.intro_mn || L.intro_mn.length > 260) err("intro_mn байхгүй эсвэл хэт урт (2–3 өгүүлбэр)");
 
   const screens = new Map();
   const sections = [L.teach, L.sounds].filter(Boolean);
@@ -101,13 +100,7 @@ for (const file of readdirSync(DIR).filter((f) => f.endsWith(".json") && !f.star
   for (const ch of vocabHanzi) if (!taughtHanzi.has(ch)) warn.push(`${file}: үгийн картын «${ch}» Тэмээ багшийн хичээлд гараагүй`);
 
   const n = [...screens.keys()].length;
-  console.log(`✓ ${id}: ${n} дэлгэц, ${L.practice?.length ?? 0} дасгал, ${L.quiz?.length ?? 0} сорил, ${refs.size} дуу`);
-  const m = metaSrc.match(new RegExp(`"${id}":\\s*\\{([^}]*)\\}`));
-  if (m) {
-    const num = (key) => Number((m[1].match(new RegExp(`${key}:\\s*(\\d+)`)) ?? [])[1]);
-    if (L.vocabKeep && num("vocabCount") !== L.vocabKeep.length) err(`meta.ts vocabCount ≠ ${L.vocabKeep.length}`);
-    if (L.quiz && num("quizCount") !== L.quiz.length) err(`meta.ts quizCount ≠ ${L.quiz.length}`);
-  }
+  console.log(`✓ ${id} [${L.status}]: ${n} дэлгэц, ${L.practice?.length ?? 0} дасгал, ${L.quiz?.length ?? 0} сорил, ${refs.size} дуу`);
 }
 for (const w of warn) console.log(`  ⚠ ${w}`);
 if (errors.length) {

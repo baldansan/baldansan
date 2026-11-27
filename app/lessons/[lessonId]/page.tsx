@@ -28,6 +28,8 @@ import {
   koreanVocabularyStudyCtaLabel,
 } from "@/lib/lesson/korean-vocabulary-ui";
 import { HskLessonDetailView } from "@/components/lesson/hsk-lesson-detail-view";
+import { loadTemeeLesson } from "@/lib/temee-lesson/load";
+import { temeeMetaFromLesson } from "@/lib/temee-lesson/meta";
 import { DownloadLessonButton } from "@/components/lesson/download-lesson-button";
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
@@ -39,7 +41,7 @@ import { lessonPreviewPath } from "@/lib/lesson-publish";
 
 type PageProps = {
   params: Promise<{ lessonId: string }>;
-  searchParams: Promise<{ preview?: string }>;
+  searchParams: Promise<{ preview?: string; temee?: string }>;
 };
 
 export const dynamic = "force-dynamic";
@@ -74,6 +76,11 @@ export default async function LessonDetailPage({
   }
 
   const { lesson, adminPreview } = access;
+  // «Тэмээ багшийн хичээл»-тэй бол нүүрний үе, тоонууд шинэ бүтцээр. Ноорог нь зөвхөн ?temee=1-ээр.
+  const temeeLesson = await loadTemeeLesson(lesson.id, {
+    includeDraft: (await searchParams).temee === "1",
+  });
+  const temeeMeta = temeeLesson ? temeeMetaFromLesson(temeeLesson) : null;
   const isLesson0 = isKoreanLesson0BeginnerFlow(lesson);
   const isHskLesson = isHskStructuredLesson(lesson);
 
@@ -129,7 +136,7 @@ export default async function LessonDetailPage({
             </Link>
           ) : null}
           <DownloadLessonButton lessonId={lesson.id} />
-          <HskLessonDetailView lesson={lesson} adminPreview={adminPreview} />
+          <HskLessonDetailView lesson={lesson} adminPreview={adminPreview} temeeMeta={temeeMeta} />
         </div>
       </MobileAppShell>
     );

@@ -6,22 +6,28 @@ import type { QuizQuestion } from "@/types/lesson";
 import type { TemeeLesson } from "@/types/temee-lesson";
 
 /**
- * Хичээл бүрийн файлыг тусад нь (lazy) ачаална — нэг хичээл нээхэд бусдынх нь татагдахгүй.
- * Шинэ хичээл нэмэхдээ энд нэг мөр + lib/temee-lesson/meta.ts-д нэг мөр нэмнэ.
- * (path.join(process.cwd(), хувьсагч) ХОРИОТОЙ — Vercel бүх repo-г багцалдаг.)
+ * Хичээл бүрийн файл `content/temee-lessons/<lessonId>.json` — нэрээр нь автоматаар олдоно.
+ * БҮРТГЭЛ ШААРДЛАГАГҮЙ: шинэ хичээл нэмэхэд зөвхөн JSON файлаа тавина (зэрэг ажиллаж буй чатууд
+ * нэг файлыг зэрэг засаж зөрчилдөхгүй). Bundler энэ хавтасны файл бүрийг тусдаа хэсэг болгодог тул
+ * нэг хичээл нээхэд бусдынх нь татагдахгүй. (path.join(process.cwd(), хувьсагч) ХОРИОТОЙ.)
+ *
+ * `status: "draft"` хичээл сурагчид харагдахгүй — зөвхөн `?temee=1` холбоосоор (эзэн шалгахад).
  */
-const LOADERS: Record<string, () => Promise<{ default: unknown }>> = {
-  "fazhan-chuji1-l01": () => import("@/content/temee-lessons/fazhan-chuji1-l01.json"),
-};
+const LESSON_ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-export async function loadTemeeLesson(lessonId: string): Promise<TemeeLesson | null> {
-  const loader = LOADERS[lessonId];
-  if (!loader) return null;
+export async function loadTemeeLesson(
+  lessonId: string,
+  options: { includeDraft?: boolean } = {}
+): Promise<TemeeLesson | null> {
+  if (!LESSON_ID.test(lessonId)) return null;
   try {
-    const mod = await loader();
-    return mod.default as TemeeLesson;
+    const mod = (await import(`@/content/temee-lessons/${lessonId}.json`)) as { default: unknown };
+    const lesson = mod.default as TemeeLesson;
+    if (lesson?.lessonId !== lessonId) return null;
+    if (lesson.status === "draft" && !options.includeDraft) return null;
+    return lesson;
   } catch {
-    return null;
+    return null; // энэ хичээлд Тэмээ багшийн хичээл хараахан байхгүй
   }
 }
 

@@ -21,18 +21,19 @@ import type { LessonContent } from "@/types/lesson-content";
 import { courseSeriesLabel } from "@/lib/lesson/course-series-label";
 import { standardLessonPathStages } from "@/lib/lesson/build-lesson-path";
 import { loadLessonPathProgress } from "@/lib/lesson/lesson-path-progress";
-import { temeeLessonMeta } from "@/lib/temee-lesson/meta";
+import type { TemeeLessonMeta } from "@/types/temee-lesson";
 import "./lesson-fresh.css";
 
 
 type Props = {
   lesson: LessonContent;
   adminPreview?: boolean;
+  /** «Тэмээ багшийн хичээл»-тэй бол сервер талаас ирнэ. */
+  temeeMeta?: TemeeLessonMeta | null;
 };
 
-export function HskLessonDetailView({ lesson, adminPreview = false }: Props) {
+export function HskLessonDetailView({ lesson, adminPreview = false, temeeMeta = null }: Props) {
   // «Тэмээ багшийн хичээл»-тэй бол үе, үг, сорилын тоо шинэ бүтцээр харагдана.
-  const temeeMeta = temeeLessonMeta(lesson.id);
   const PATH_STAGES = useMemo(() => standardLessonPathStages(temeeMeta), [temeeMeta]);
   const vocabularyCount = temeeMeta?.vocabCount ?? lesson.vocabularyCount;
   const quizCount = temeeMeta?.quizCount ?? lesson.quizCount;

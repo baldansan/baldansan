@@ -21,7 +21,7 @@ import { LessonWatchClient } from "./watch-client";
 
 type PageProps = {
   params: Promise<{ lessonId: string }>;
-  searchParams: Promise<{ preview?: string }>;
+  searchParams: Promise<{ preview?: string; temee?: string }>;
 };
 
 export const dynamic = "force-dynamic";
@@ -64,7 +64,9 @@ export default async function LessonWatchPage({
     ? resolveHskLessonPackageFromLesson(lesson)
     : null;
   // «Тэмээ багшийн хичээл» — repo доторх файл; байхгүй хичээлд null, юу ч өөрчлөгдөхгүй.
-  const temee = lessonPackage ? await loadTemeeLesson(lesson.id) : null;
+  // Ноорог хичээл зөвхөн `?temee=1` холбоосоор харагдана.
+  const includeDraft = (await searchParams).temee === "1";
+  const temee = lessonPackage ? await loadTemeeLesson(lesson.id, { includeDraft }) : null;
   if (lessonPackage && temee) {
     lessonPackage = applyTemeeLessonToPackage(lessonPackage, temee);
   }

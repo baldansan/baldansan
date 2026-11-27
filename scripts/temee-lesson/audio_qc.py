@@ -3,7 +3,7 @@
 Үеийн бичлэгүүдийн чанарын шалгалт (public/open/audio-cmn/syllables).
 Зарим файл нэртэйгээ таардаггүй (жнь «pa1» хийгүй, «ba» шиг сонсогддог) — сурагчид буруу заана.
 Энэ скрипт файл бүрийн (1) хий гарсан хугацаа (эхлэлээс дуу хоолой эхлэх хүртэл), (2) хөгийн хэлбэрийг хэмжиж,
-нэртэйгээ зөрсөн файлуудыг content/temee-lessons/_audio-bad.json-д бичнэ. `npm run temee:check` тэр жагсаалтын
+нэртэйгээ зөрсөн файлуудыг scripts/temee-lesson/audio-bad.json-д бичнэ. `npm run temee:check` тэр жагсаалтын
 файл хэрэглэсэн хичээлийг зогсооно.
 Ажиллуулах: python3 scripts/temee-lesson/audio_qc.py   (ffmpeg, numpy хэрэгтэй)
 """
@@ -12,7 +12,7 @@ import numpy as np
 
 ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
 DIR = os.path.join(ROOT, "public/open/audio-cmn/syllables")
-OUT = os.path.join(ROOT, "content/temee-lessons/_audio-bad.json")
+OUT = os.path.join(ROOT, "scripts/temee-lesson/audio-bad.json")
 SR = 16000
 ASPIRATED = ("p", "t", "k", "c", "ch", "q")
 PLAIN = ("b", "d", "g")
