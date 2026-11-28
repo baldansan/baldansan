@@ -30,7 +30,6 @@ import {
 import { HskLessonDetailView } from "@/components/lesson/hsk-lesson-detail-view";
 import { loadTemeeLesson } from "@/lib/temee-lesson/load";
 import { temeeMetaFromLesson } from "@/lib/temee-lesson/meta";
-import { DownloadLessonButton } from "@/components/lesson/download-lesson-button";
 import { isHskStructuredLesson } from "@/lib/lesson/hsk-lesson-content";
 import { TeacherAssignmentCta } from "@/components/teacher/teacher-assignment-cta";
 import { MobileCard } from "@/components/mobile/mobile-card";
@@ -135,7 +134,6 @@ export default async function LessonDetailPage({
               </span>
             </Link>
           ) : null}
-          <DownloadLessonButton lessonId={lesson.id} />
           <HskLessonDetailView lesson={lesson} adminPreview={adminPreview} temeeMeta={temeeMeta} />
         </div>
       </MobileAppShell>
@@ -280,7 +278,6 @@ export default async function LessonDetailPage({
           />
         </MobileCard>
 
-        <DownloadLessonButton lessonId={lesson.id} />
         <LessonProgressCard lessonId={lesson.id} quizCount={lesson.quizCount} />
         <TeacherAssignmentCta lessonId={lesson.id} />
       </div>
