@@ -11,8 +11,6 @@ import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { MobilePageHeader } from "@/components/mobile/mobile-page-header";
 import {
-  CURRICULUM_COURSE_IDS,
-  curriculumCourseLabel,
   type CurriculumLessonOption,
 } from "@/lib/classroom/types";
 import { tr } from "@/lib/i18n/translate";
@@ -33,6 +31,14 @@ import {
 import "@/components/writing/writing.css";
 
 type Source = "own" | "lesson" | "hsk";
+
+type WritingBook = {
+  courseId: string;
+  group: string;
+  title: string;
+  coverUrl: string | null;
+  lessonCount: number;
+};
 
 const HSK_LEVELS = ["1-2", "3", "4", "5", "6", "7-9"] as const;
 
@@ -146,6 +152,7 @@ export function WritingListForm(props: Props) {
   const [lessons, setLessons] = useState<CurriculumLessonOption[]>([]);
   const [lessonsLoading, setLessonsLoading] = useState(false);
   const [checkedLessons, setCheckedLessons] = useState<Set<string>>(new Set());
+  const [books, setBooks] = useState<WritingBook[] | null>(null);
   // «HSK жагсаалт»
   const [hskData, setHskData] = useState<Record<string, string[]> | null>(null);
   const [hskLevel, setHskLevel] = useState<(typeof HSK_LEVELS)[number]>("1-2");
@@ -212,12 +219,40 @@ export function WritingListForm(props: Props) {
     }
   }
 
+  // «Хичээлээс» нээгдэхэд номын жагсаалтыг нэг удаа татна.
+  useEffect(() => {
+    if (source !== "lesson" || books != null) return;
+    let alive = true;
+    fetch("/api/writing/books")
+      .then((res) => res.json())
+      .then((json: { books?: WritingBook[] }) => {
+        if (alive) setBooks(json.books ?? []);
+      })
+      .catch(() => {
+        if (alive) setBooks([]);
+      });
+    return () => {
+      alive = false;
+    };
+  }, [source, books]);
+
+  const bookGroups = useMemo(() => {
+    const map = new Map<string, WritingBook[]>();
+    for (const b of books ?? []) {
+      const list = map.get(b.group) ?? [];
+      list.push(b);
+      map.set(b.group, list);
+    }
+    return [...map.entries()];
+  }, [books]);
+  const pickedBook = (books ?? []).find((b) => b.courseId === courseId) ?? null;
+
   async function pickLevel(id: string) {
     setCourseId(id);
     setLessonsLoading(true);
     setCheckedLessons(new Set());
     try {
-      const res = await fetch(`/api/curriculum/lessons?courseId=${encodeURIComponent(id)}`);
+      const res = await fetch(`/api/writing/books?courseId=${encodeURIComponent(id)}`);
       const json = (await res.json()) as { lessons?: CurriculumLessonOption[] };
       setLessons(json.lessons ?? []);
     } catch {
@@ -365,29 +400,78 @@ export function WritingListForm(props: Props) {
 
           {source === "lesson" ? (
             <MobileCard>
-              <p className="text-xs font-bold text-[var(--app-muted)]">{tr(locale, "Түвшин сонгох")}</p>
-              <div className="mt-2 flex flex-wrap gap-2">
-                {CURRICULUM_COURSE_IDS.map((id) => (
+              {courseId ? (
+                <div className="flex items-center gap-3">
+                  {pickedBook?.coverUrl ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={pickedBook.coverUrl} alt="" className="wn-book-cover is-sm" loading="lazy" />
+                  ) : null}
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-bold text-[var(--app-text)]" translate="no">
+                      {pickedBook?.title ?? courseId}
+                    </p>
+                    <p className="text-xs text-[var(--app-muted)]">{tr(locale, "Хичээлээ сонго")}</p>
+                  </div>
                   <button
-                    key={id}
                     type="button"
-                    onClick={() => void pickLevel(id)}
-                    className={tabClass(courseId === id)}
+                    className="shrink-0 text-xs font-bold text-[var(--app-primary)]"
+                    onClick={() => {
+                      setCourseId(null);
+                      setLessons([]);
+                      setCheckedLessons(new Set());
+                    }}
                   >
-                    {curriculumCourseLabel(id)}
+                    ← {tr(locale, "Ном солих")}
                   </button>
-                ))}
-              </div>
+                </div>
+              ) : (
+                <>
+                  <p className="text-xs font-bold text-[var(--app-muted)]">{tr(locale, "Номоо сонго")}</p>
+                  {books == null ? (
+                    <p className="mt-3 text-sm text-[var(--app-muted)]">{tr(locale, "Ачааллаж байна…")}</p>
+                  ) : books.length === 0 ? (
+                    <p className="mt-3 text-sm text-[var(--app-muted)]">
+                      {tr(locale, "Ном ачаалсангүй. Интернэтээ шалгаад дахин оролдоорой.")}
+                    </p>
+                  ) : (
+                    bookGroups.map(([group, list]) => (
+                      <div key={group} className="mt-3">
+                        <p className="mb-1.5 text-[11px] font-bold uppercase tracking-wide text-[var(--app-muted)]">
+                          {tr(locale, group)}
+                        </p>
+                        <div className="wn-book-grid">
+                          {list.map((b) => (
+                            <button key={b.courseId} type="button" onClick={() => void pickLevel(b.courseId)}>
+                              {b.coverUrl ? (
+                                // eslint-disable-next-line @next/next/no-img-element
+                                <img src={b.coverUrl} alt="" className="wn-book-cover" loading="lazy" />
+                              ) : (
+                                <span className="wn-book-cover is-blank" aria-hidden>
+                                  📖
+                                </span>
+                              )}
+                              <b translate="no">{b.title}</b>
+                              <small>
+                                {b.lessonCount} {tr(locale, "хичээл")}
+                              </small>
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    ))
+                  )}
+                </>
+              )}
               {courseId ? (
                 lessonsLoading ? (
                   <p className="mt-3 text-sm text-[var(--app-muted)]">{tr(locale, "Ачааллаж байна…")}</p>
                 ) : lessons.length === 0 ? (
                   <p className="mt-3 text-sm text-[var(--app-muted)]">
-                    {tr(locale, "Энэ түвшинд нийтлэгдсэн хичээл алга.")}
+                    {tr(locale, "Энэ номд нийтлэгдсэн хичээл алга.")}
                   </p>
                 ) : (
                   <>
-                    <ul className="mt-3 max-h-64 divide-y divide-slate-100 overflow-y-auto rounded-xl ring-1 ring-slate-200">
+                    <ul className="mt-3 max-h-80 divide-y divide-slate-100 overflow-y-auto rounded-xl ring-1 ring-slate-200">
                       {lessons.map((lesson, i) => (
                         <li key={lesson.id}>
                           <label className="flex cursor-pointer items-center gap-2 px-3 py-2 text-sm">

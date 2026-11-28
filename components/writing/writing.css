@@ -675,3 +675,48 @@ html[data-theme="dark"] .wn-hd-go {
 .wn-stroke-top {
   z-index: 2;
 }
+
+/* --- Шинэ дэвтэр → «Хичээлээс»: номоо сонгох --- */
+.wn-book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.wn-book-grid button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 4px;
+  border-radius: 14px;
+  border: 1.5px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-text, #2a1f45);
+  text-align: center;
+}
+.wn-book-grid b {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+.wn-book-grid small {
+  font-size: 11px;
+  color: var(--app-muted, #6f6787);
+}
+.wn-book-cover {
+  width: 62px;
+  height: 84px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(42, 31, 69, 0.18);
+}
+.wn-book-cover.is-sm {
+  width: 34px;
+  height: 46px;
+  flex: none;
+}
+.wn-book-cover.is-blank {
+  display: grid;
+  place-items: center;
+  background: var(--app-primary-light, #f3ecff);
+  font-size: 26px;
+}
