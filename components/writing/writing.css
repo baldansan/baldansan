@@ -238,8 +238,9 @@
   border: 2px solid var(--app-border, #e8e0f5);
   background: var(--app-card, #fff);
   color: var(--app-text, #2a1f45);
-  font-size: 28px;
+  font-size: 26px;
   line-height: 1;
+  white-space: nowrap;
 }
 .wn-offer-chip.is-on {
   border-color: var(--app-primary, #7c4ddb);
@@ -719,4 +720,60 @@ html[data-theme="dark"] .wn-hd-go {
   place-items: center;
   background: var(--app-primary-light, #f3ecff);
   font-size: 26px;
+}
+
+/* --- Үгийг хамтад нь бичих: аль ханз дээр явааг харуулна --- */
+.wn-word-steps {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.wn-word-steps > * {
+  display: grid;
+  place-items: center;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 6px;
+  border-radius: 10px;
+  border: 1.5px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-muted, #6f6787);
+  font-size: 22px;
+  line-height: 1;
+}
+.wn-word-steps > .is-on {
+  border-color: var(--app-primary, #7c4ddb);
+  color: var(--app-text, #2a1f45);
+}
+.wn-word-steps > .is-done {
+  background: var(--app-primary-light, #f3ecff);
+  color: #6537c2;
+}
+.wn-unit-word {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 1px;
+}
+
+.wn-hd-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 4px 4px 12px;
+  border-radius: 999px;
+  border: 1.5px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-text, #2a1f45);
+  font-size: 20px;
+  line-height: 1.2;
+}
+.wn-hd-pill button {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  color: var(--app-muted, #6f6787);
+  font-size: 18px;
+  line-height: 1;
 }

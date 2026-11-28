@@ -42,6 +42,10 @@ export type HanziHistory = {
   bySource: Record<HanziSource, number>;
   /** Сурагч өөрөө «Давталтад нэмэх» гэж зөвшөөрсөн. */
   inReview: boolean;
+  /** Энэ ханзыг ямар холбоо үгэн дотор бичсэн (утсан дээр л хадгална) — дахин бичихэд хамтад нь бичүүлнэ. */
+  word?: string | null;
+  wordPinyin?: string | null;
+  wordMeaning?: string | null;
   firstAt: string;
   lastAt: string;
   updatedAt: string;
@@ -232,7 +236,10 @@ export const TODAY_LIMIT = 12;
 
 export function buildHanziDashboard(map: HanziHistoryMap = getHanziHistoryMap()): HanziDashboard {
   const today = dayKey();
-  const all = Object.values(map).sort((a, b) => (a.lastAt < b.lastAt ? 1 : -1));
+  // Давталтад нэмсэн холбоо үг мөн энд хадгалагддаг (inReview) — тоолол нь зөвхөн ганц ханзаар.
+  const all = Object.values(map)
+    .filter((h) => [...h.ch].length === 1 && h.writes > 0)
+    .sort((a, b) => (a.lastAt < b.lastAt ? 1 : -1));
   const weak = all
     .filter((h) => hanziStage(h) === "weak")
     .sort((a, b) => b.mistakes - a.mistakes);
@@ -264,6 +271,10 @@ export type HanziWriteInput = {
   recalled: boolean | null;
   pinyin?: string | null;
   meaning?: string | null;
+  /** Холбоо үгэн дотор бичсэн бол тэр үг, түүний пиньинь, утга. */
+  word?: string | null;
+  wordPinyin?: string | null;
+  wordMeaning?: string | null;
 };
 
 /** Сануулга авсан эсвэл 3+ алдсан бол санаж чадаагүйд тооцно (дэвтрийн дүрэмтэй ижил). */
@@ -288,6 +299,11 @@ export function recordHanziWrite(input: HanziWriteInput): void {
     lastAt: now,
     updatedAt: now,
   };
+  if (input.word && [...input.word].length > 1) {
+    next.word = input.word;
+    next.wordPinyin = input.wordPinyin ?? null;
+    next.wordMeaning = input.wordMeaning ?? null;
+  }
   if (input.recalled === true) {
     next.recallOk += 1;
     next.lastRecallOk = true;
@@ -490,7 +506,9 @@ export async function syncHanziHistory(): Promise<void> {
       seen.add(server.ch);
       const local = store.items[server.ch];
       if (!local || (local.updatedAt ?? "") < server.updatedAt) {
-        store.items[server.ch] = server;
+        store.items[server.ch] = local
+          ? { ...server, word: local.word, wordPinyin: local.wordPinyin, wordMeaning: local.wordMeaning }
+          : server;
         store.dirty = store.dirty.filter((c) => c !== server.ch);
         changed = true;
       } else if ((local.updatedAt ?? "") > server.updatedAt && !store.dirty.includes(server.ch)) {

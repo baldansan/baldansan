@@ -14,8 +14,10 @@ import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { deleteList, getList, getProgress } from "@/lib/writing/store";
 import {
+  groupWritingItems,
   isCharDone,
   summarizeProgress,
+  unitProgress,
   type WritingList,
   type WritingProgressMap,
 } from "@/lib/writing/types";
@@ -90,7 +92,7 @@ export function WritingNotebookClient({ listId }: Props) {
         <>
           <MobilePageHeader
             title={list.title}
-            subtitle={`${summary.charsTotal} ${tr(locale, "ханз")} · ${list.repsTrace} ${tr(locale, "дагаж")} + ${list.repsMemory} ${tr(locale, "санаж")}${
+            subtitle={`${groupWritingItems(list.items).length} ${tr(locale, "үг")} · ${summary.charsTotal} ${tr(locale, "ханз")} · ${list.repsTrace} ${tr(locale, "дагаж")} + ${list.repsMemory} ${tr(locale, "санаж")}${
               list.dueDate ? ` · ${tr(locale, "Хугацаа")}: ${list.dueDate}` : ""
             }`}
             badge={allDone ? "✓ 100%" : `${summary.percent}%`}
@@ -149,34 +151,34 @@ export function WritingNotebookClient({ listId }: Props) {
           </MobileCard>
 
           <ul className="space-y-2 pb-8">
-            {list.items.map((item) => {
-              const p = progress[item.ch];
+            {groupWritingItems(list.items).map((unit) => {
+              const p = unitProgress(unit, progress);
               const done = isCharDone(list, p);
+              const long = [...unit.text].length > 1;
               return (
-                <li key={item.ch}>
+                <li key={unit.text}>
                   <Link
-                    href={`/writing/${list.id}/practice?start=${encodeURIComponent(item.ch)}`}
+                    href={`/writing/${list.id}/practice?start=${encodeURIComponent(unit.text)}`}
                     className="block"
                   >
                     <MobileCard padding="sm" className="flex items-center gap-3">
                       <span
-                        className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl text-3xl font-semibold ${
+                        className={`flex h-14 shrink-0 items-center justify-center rounded-xl font-semibold ${
+                          long ? "min-w-14 px-2.5 text-2xl" : "w-14 text-3xl"
+                        } ${
                           done ? "bg-emerald-500 text-white" : "bg-slate-50 text-[var(--app-text)] ring-1 ring-slate-200"
                         }`}
                         translate="no"
                       >
-                        {item.ch}
+                        {unit.text}
                       </span>
                       <div className="min-w-0 flex-1">
                         <p className="text-sm text-[var(--app-text)]" translate="no">
-                          <b>{item.pinyin ?? ""}</b>
-                          {item.meaning_mn ? ` · ${item.meaning_mn}` : ""}
-                          {item.word && item.word !== item.ch ? (
-                            <span className="text-[var(--app-muted)]"> · {item.word}</span>
-                          ) : null}
+                          <b>{unit.pinyin ?? ""}</b>
+                          {unit.meaning ? ` · ${unit.meaning}` : ""}
                         </p>
                         <div className="mt-1.5">
-                          <CellStrip ch={item.ch} list={list} progress={p} />
+                          <CellStrip ch={long ? "" : unit.text} list={list} progress={p} />
                         </div>
                       </div>
                       {p && p.mistakes > 0 ? (

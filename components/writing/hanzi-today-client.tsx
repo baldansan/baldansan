@@ -11,7 +11,8 @@ import { useEffect, useRef, useState } from "react";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { MobileCard } from "@/components/mobile/mobile-card";
 import { ReviewOfferCard } from "@/components/writing/review-offer-card";
-import { WritingPad, type WritingPadPhase, type WritingPadResult } from "@/components/writing/writing-pad";
+import type { WritingPadPhase, WritingPadResult } from "@/components/writing/writing-pad";
+import { WritingWordPad, type WritingWordResult } from "@/components/writing/writing-word-pad";
 import { SpeakerButton } from "@/components/tts/speaker-button";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
@@ -33,9 +34,20 @@ type Result = { ch: string; mistakes: number; ok: boolean };
 const HAN_RE = /\p{Script=Han}/u;
 const FEEDBACK_MS = 800;
 
-function tasksFor(h: HanziHistory | null, ch: string): Task[] {
-  const stage = h ? hanziStage(h) : "new";
-  if (stage === "weak" || stage === "new") {
+type UnitInfo = { text: string; pinyin: string | null; meaning: string | null };
+
+/** Ханзыг сүүлд бичсэн холбоо үгтэй нь хамтад нь бичүүлнэ (салгаж бичихгүй). */
+function unitFor(h: HanziHistory | null, ch: string): UnitInfo {
+  if (h?.word && [...h.word].length > 1 && h.word.includes(ch)) {
+    return { text: h.word, pinyin: h.wordPinyin ?? null, meaning: h.wordMeaning ?? null };
+  }
+  return { text: ch, pinyin: h?.pinyin ?? null, meaning: h?.meaning ?? null };
+}
+
+function tasksFor(map: Record<string, HanziHistory>, ch: string): Task[] {
+  // Үгийн аль нэг ханз сул/шинэ бол бүтнээр нь: хар → дагаж → санаж.
+  const stages = [...ch].map((c) => (map[c] ? hanziStage(map[c]!) : "new"));
+  if (stages.some((st) => st === "weak" || st === "new")) {
     return [
       { ch, phase: "watch" },
       { ch, phase: "trace" },
@@ -54,6 +66,7 @@ export function HanziTodayClient({ only }: { only: string | null }) {
   const [feedback, setFeedback] = useState<string | null>(null);
   const [results, setResults] = useState<Result[]>([]);
   const [meta, setMeta] = useState<Record<string, HanziHistory>>({});
+  const [units, setUnits] = useState<Record<string, UnitInfo>>({});
   const [offer, setOffer] = useState<string[]>([]);
   const tasksRef = useRef<Task[]>([]);
   const tiRef = useRef(0);
@@ -66,14 +79,21 @@ export function HanziTodayClient({ only }: { only: string | null }) {
       await syncHanziHistory();
       if (!alive) return;
       const map = getHanziHistoryMap();
-      const chars = only
+      const picked = only
         ? [...new Set([...only].filter((c) => HAN_RE.test(c)))]
         : buildHanziDashboard(map).today.map((h) => h.ch);
-      if (chars.length === 0) {
+      if (picked.length === 0) {
         setScreen("empty");
         return;
       }
-      const list = chars.flatMap((c) => tasksFor(map[c] ?? null, c));
+      const infos: Record<string, UnitInfo> = {};
+      for (const c of picked) {
+        const u = unitFor(map[c] ?? null, c);
+        if (!infos[u.text]) infos[u.text] = u;
+      }
+      const chars = Object.keys(infos);
+      setUnits(infos);
+      const list = chars.flatMap((c) => tasksFor(map, c));
       tasksRef.current = list;
       tiRef.current = 0;
       setMeta(map);
@@ -88,7 +108,7 @@ export function HanziTodayClient({ only }: { only: string | null }) {
   }, [only]);
 
   const step = tasks[ti] ?? null;
-  const info = step ? meta[step.ch] ?? null : null;
+  const info = step ? units[step.ch] ?? null : null;
 
   function finish() {
     const list: Result[] = [];
@@ -111,7 +131,7 @@ export function HanziTodayClient({ only }: { only: string | null }) {
       const h = getHanziHistoryMap()[ch];
       if (s && h?.inReview) {
         recordWritingResult(
-          { key: ch, pinyin: h.pinyin, meaning: h.meaning },
+          { key: ch, pinyin: h.pinyin ?? units[ch]?.pinyin ?? null, meaning: h.meaning ?? units[ch]?.meaning ?? null },
           { mistakes: s.mistakes, usedHint: s.usedHint }
         );
       }
@@ -123,19 +143,27 @@ export function HanziTodayClient({ only }: { only: string | null }) {
     } else finish();
   }
 
-  function handleDone(result: WritingPadResult) {
+  function handleCharDone(c: string, result: WritingPadResult, phase: WritingPadPhase) {
+    if (!step) return;
+    const multi = [...step.ch].length > 1;
+    recordHanziWrite({
+      ch: c,
+      source: "book",
+      mistakes: result.mistakes,
+      recalled: phase === "memory" ? recallSucceeded(result) : null,
+      pinyin: multi ? null : info?.pinyin ?? null,
+      meaning: multi ? null : info?.meaning ?? null,
+      word: multi ? step.ch : null,
+      wordPinyin: multi ? info?.pinyin ?? null : null,
+      wordMeaning: multi ? info?.meaning ?? null : null,
+    });
+  }
+
+  function handleDone(result: WritingWordResult) {
     if (!step || step.phase === "watch") return;
     const ch = step.ch;
     const isMemory = step.phase === "memory";
-    const ok = isMemory ? recallSucceeded(result) : true;
-    recordHanziWrite({
-      ch,
-      source: "book",
-      mistakes: result.mistakes,
-      recalled: isMemory ? ok : null,
-      pinyin: info?.pinyin ?? null,
-      meaning: info?.meaning ?? null,
-    });
+    const ok = isMemory ? !result.usedHint && result.worstChar < 3 : true;
     const prev = sessRef.current.get(ch) ?? { mistakes: 0, usedHint: false, ok: true };
     let requeued = false;
     if (isMemory) {
@@ -208,7 +236,7 @@ export function HanziTodayClient({ only }: { only: string | null }) {
   if (screen === "end") {
     const okCount = results.filter((r) => r.ok).length;
     const metaByCh: Record<string, { pinyin?: string | null; meaning?: string | null }> = {};
-    for (const c of offer) metaByCh[c] = { pinyin: meta[c]?.pinyin ?? null, meaning: meta[c]?.meaning ?? null };
+    for (const c of offer) metaByCh[c] = { pinyin: units[c]?.pinyin ?? null, meaning: units[c]?.meaning ?? null };
     return (
       <MobileAppShell activeTab="study">
         {back}
@@ -217,12 +245,12 @@ export function HanziTodayClient({ only }: { only: string | null }) {
             {okCount === results.length ? "🏆" : "🎉"}
           </p>
           <p className="mt-2 text-lg font-bold text-[var(--app-text)]">
-            {results.length} {tr(locale, "ханз бичлээ")}
+            {results.length} {tr(locale, "үг, ханз бичлээ")}
           </p>
           <p className="text-sm text-[var(--app-muted)]">
-            {okCount} {tr(locale, "ханзыг санаж зөв бичлээ")}
+            {okCount} {tr(locale, "нь санаж зөв")}
             {results.length - okCount > 0
-              ? ` · ${results.length - okCount} ${tr(locale, "ханз хараахан тогтоогүй")}`
+              ? ` · ${results.length - okCount} ${tr(locale, "нь хараахан тогтоогүй")}`
               : ""}
           </p>
         </MobileCard>
@@ -259,7 +287,7 @@ export function HanziTodayClient({ only }: { only: string | null }) {
           {tr(locale, "← Дэвтэр рүү")}
         </Link>
         <span className="text-sm font-bold text-[var(--app-text)]">
-          {charNo}/{chars.length} {tr(locale, "ханз")}
+          {charNo}/{chars.length}
         </span>
       </div>
       <div className="mb-3 h-1.5 overflow-hidden rounded-full bg-[var(--app-border)]">
@@ -285,7 +313,14 @@ export function HanziTodayClient({ only }: { only: string | null }) {
         <SpeakerButton text={step.ch} />
       </div>
 
-      <WritingPad key={padKey} char={step.ch} phase={step.phase} onDone={handleDone} maxSize={340} />
+      <WritingWordPad
+        key={padKey}
+        text={step.ch}
+        phase={step.phase}
+        onDone={handleDone}
+        onCharDone={handleCharDone}
+        maxSize={340}
+      />
 
       <div className="mt-3 min-h-[48px] text-center">
         {feedback ? (

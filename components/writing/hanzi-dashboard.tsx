@@ -13,6 +13,7 @@ import { useUiLocale } from "@/lib/i18n/ui-locale";
 import type { UiLocale } from "@/lib/i18n/locale-types";
 import {
   buildHanziDashboard,
+  getReviewHanzi,
   dayKey,
   daysBetween,
   HANZI_HISTORY_EVENT,
@@ -152,7 +153,11 @@ export function HanziDashboard() {
   const [showAll, setShowAll] = useState(false);
   const [strokesDone, setStrokesDone] = useState(true);
 
-  const refresh = useCallback(() => setDash(buildHanziDashboard()), []);
+  const [inReview, setInReview] = useState<HanziHistory[]>([]);
+  const refresh = useCallback(() => {
+    setDash(buildHanziDashboard());
+    setInReview(getReviewHanzi());
+  }, []);
 
   useEffect(() => {
     refresh();
@@ -301,6 +306,33 @@ export function HanziDashboard() {
           {sel && selected?.from === "weak" ? (
             <HistoryCard h={sel} locale={locale} onClose={() => setSelected(null)} />
           ) : null}
+        </section>
+      ) : null}
+
+      {inReview.length > 0 ? (
+        <section className="mb-4">
+          <div className="mb-2 flex items-center justify-between">
+            <h2 className="text-sm font-bold text-[var(--app-text)]">
+              {tr(locale, "Давталтад нэмсэн")} · {inReview.length}
+            </h2>
+            <Link href="/review/writing" className="text-xs font-semibold text-[var(--app-primary)]">
+              {tr(locale, "Давтах → Бичих")} ›
+            </Link>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {inReview.map((h) => (
+              <span key={h.ch} className="wn-hd-pill" translate="no">
+                {h.ch}
+                <button
+                  type="button"
+                  aria-label={tr(locale, "Давталтаас хасах")}
+                  onClick={() => setHanziInReview([h.ch], false)}
+                >
+                  ×
+                </button>
+              </span>
+            ))}
+          </div>
         </section>
       ) : null}
 

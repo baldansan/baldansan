@@ -25,7 +25,9 @@ import {
   REPS_TRACE_DEFAULT,
   REPS_TRACE_MAX,
   REPS_TRACE_MIN,
+  groupWritingItems,
   type WritingItem,
+  type WritingUnit,
   type WritingListKind,
 } from "@/lib/writing/types";
 import "@/components/writing/writing.css";
@@ -67,53 +69,66 @@ export function WritingItemsTable({
 }) {
   const locale = useUiLocale();
   if (items.length === 0) return null;
-  function patch(idx: number, p: Partial<WritingItem>) {
-    onChange(items.map((it, i) => (i === idx ? { ...it, ...p } : it)));
+  const units = groupWritingItems(items);
+  /** Нэгжийн (үгийн) бүх ханзад утгыг нь хамтад нь тавина. */
+  function patchUnit(unit: WritingUnit, p: Partial<WritingItem>) {
+    const owned = new Set(unit.items.map((it) => it.ch));
+    onChange(items.map((it) => (owned.has(it.ch) ? { ...it, ...p } : it)));
+  }
+  /** Пиньинь: үе нь ханзны тоотой таарвал ханз бүрд нэг үе, үгүй бол эхний ханзад бүтнээр. */
+  function patchPinyin(unit: WritingUnit, value: string) {
+    const parts = value.trim().split(/\s+/).filter(Boolean);
+    const even = parts.length === unit.items.length;
+    const byCh = new Map(
+      unit.items.map((it, i) => [it.ch, even ? parts[i]! : i === 0 ? value : ""] as const)
+    );
+    onChange(items.map((it) => (byCh.has(it.ch) ? { ...it, pinyin: byCh.get(it.ch) ?? "" } : it)));
   }
   return (
     <ul className="divide-y divide-slate-100 rounded-xl bg-white ring-1 ring-slate-200">
-      {items.map((item, idx) => (
-        <li key={item.ch} className="flex items-center gap-2 px-2 py-1.5">
-          <span className="w-6 shrink-0 text-right text-[10px] text-slate-400">{idx + 1}</span>
-          <span
-            className={`shrink-0 text-center font-semibold text-[var(--app-text)] ${
-              compact ? "w-8 text-2xl" : "w-10 text-3xl"
-            }`}
-            translate="no"
-          >
-            {item.ch}
-          </span>
-          <div className="min-w-0 flex-1 space-y-1">
-            <input
-              value={item.pinyin ?? ""}
-              onChange={(e) => patch(idx, { pinyin: e.target.value })}
-              placeholder="pīnyīn"
+      {units.map((unit, idx) => {
+        const long = [...unit.text].length > 1;
+        return (
+          <li key={unit.text} className="flex items-center gap-2 px-2 py-1.5">
+            <span className="w-6 shrink-0 text-right text-[10px] text-slate-400">{idx + 1}</span>
+            <span
+              className={`shrink-0 text-center font-semibold text-[var(--app-text)] ${
+                long ? "wn-unit-word min-w-[4.2rem]" : compact ? "w-8 text-2xl" : "w-10 text-3xl"
+              }`}
               translate="no"
-              className="w-full rounded-lg border border-slate-200 px-2 py-1 text-xs text-slate-800"
-            />
-            <input
-              value={item.meaning_mn ?? ""}
-              onChange={(e) => patch(idx, { meaning_mn: e.target.value })}
-              placeholder={tr(locale, "утга")}
-              translate="no"
-              className="w-full rounded-lg border border-slate-200 px-2 py-1 text-xs text-slate-800"
-            />
-            {item.word && item.word !== item.ch ? (
-              <p className="text-[10px] text-slate-400" translate="no">
-                ← {item.word}
-              </p>
-            ) : null}
-          </div>
-          <button
-            type="button"
-            aria-label={tr(locale, "Хасах")}
-            onClick={() => onChange(items.filter((_, i) => i !== idx))}
-            className="shrink-0 rounded-full px-2 py-1 text-sm text-slate-400 hover:bg-slate-100 hover:text-red-600"
-          >
-            ✕
-          </button>
-        </li>
-      ))}
+            >
+              {unit.text}
+            </span>
+            <div className="min-w-0 flex-1 space-y-1">
+              <input
+                value={unit.items.map((it) => it.pinyin ?? "").join(" ").trim()}
+                onChange={(e) => patchPinyin(unit, e.target.value)}
+                placeholder="pīnyīn"
+                translate="no"
+                className="w-full rounded-lg border border-slate-200 px-2 py-1 text-xs text-slate-800"
+              />
+              <input
+                value={unit.meaning ?? ""}
+                onChange={(e) => patchUnit(unit, { meaning_mn: e.target.value })}
+                placeholder={tr(locale, "утга")}
+                translate="no"
+                className="w-full rounded-lg border border-slate-200 px-2 py-1 text-xs text-slate-800"
+              />
+            </div>
+            <button
+              type="button"
+              aria-label={tr(locale, "Хасах")}
+              onClick={() => {
+                const owned = new Set(unit.items.map((it) => it.ch));
+                onChange(items.filter((it) => !owned.has(it.ch)));
+              }}
+              className="shrink-0 rounded-full px-2 py-1 text-sm text-slate-400 hover:bg-slate-100 hover:text-red-600"
+            >
+              ✕
+            </button>
+          </li>
+        );
+      })}
     </ul>
   );
 }
@@ -385,7 +400,7 @@ export function WritingListForm(props: Props) {
                 className="w-full rounded-xl border border-slate-200 px-3 py-2 text-lg leading-8"
               />
               <p className="mt-1 text-xs text-[var(--app-muted)]">
-                {tr(locale, "Ханз, үг, өгүүлбэр — аль нь ч болно. Зай, таслалаар тусгаарлана.")}
+                {tr(locale, "Ханз, үг, өгүүлбэр — аль нь ч болно. Зай, таслалаар тусгаарлана. Холбоо үгийг салгахгүй, хамтад нь бичүүлнэ.")}
               </p>
               <button
                 type="button"
@@ -587,7 +602,7 @@ export function WritingListForm(props: Props) {
             <section>
               <div className="mb-2 flex items-center justify-between">
                 <h2 className="text-sm font-bold text-[var(--app-text)]">
-                  {items.length} {tr(locale, "ханз")}
+                  {groupWritingItems(items).length} {tr(locale, "үг")} · {items.length} {tr(locale, "ханз")}
                 </h2>
                 <button
                   type="button"

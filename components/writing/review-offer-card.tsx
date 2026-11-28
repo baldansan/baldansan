@@ -29,7 +29,7 @@ export function ReviewOfferCard({ chars, metaByCh }: Props) {
     return (
       <MobileCard className="mb-4">
         <p className="text-sm font-bold text-[var(--app-text)]">
-          ✓ {added} {tr(locale, "ханз давталтад нэмэгдлээ")}
+          ✓ {added} {tr(locale, "үг, ханз давталтад нэмэгдлээ")}
         </p>
         <p className="mt-0.5 text-xs text-[var(--app-muted)]">
           {tr(locale, "Давтах → Бичих хэсэгт хуваариараа гарч ирнэ. Ханзны дэвтрээс хэзээ ч хасаж болно.")}
@@ -43,7 +43,7 @@ export function ReviewOfferCard({ chars, metaByCh }: Props) {
   return (
     <MobileCard className="mb-4 ring-1 ring-amber-200">
       <p className="text-sm font-bold text-[var(--app-text)]">
-        {tr(locale, "Тогтоогүй ханзаа давталтад нэмэх үү?")}
+        {tr(locale, "Тогтоогүйгээ давталтад нэмэх үү?")}
       </p>
       <p className="mt-0.5 text-xs text-[var(--app-muted)]">
         {tr(locale, "Нэмбэл Давтах → Бичих хэсэгт хэд хоногийн завсартай дахин гарч ирнэ. Нэмэхгүй бол юу ч өөрчлөгдөхгүй.")}
@@ -85,7 +85,7 @@ export function ReviewOfferCard({ chars, metaByCh }: Props) {
           }}
           className="app-btn-primary flex-1 disabled:opacity-50"
         >
-          ＋ {count} {tr(locale, "ханз нэмэх")}
+          ＋ {count}-{tr(locale, "ийг нэмэх")}
         </button>
         <button
           type="button"

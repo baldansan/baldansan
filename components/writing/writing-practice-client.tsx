@@ -30,8 +30,11 @@ import { getList, getProgress, saveProgress } from "@/lib/writing/store";
 import { getHanziHistoryMap, recordHanziWrite } from "@/lib/writing/hanzi-history";
 import { ReviewOfferCard } from "@/components/writing/review-offer-card";
 import {
+  groupWritingItems,
   isCharDone,
   summarizeProgress,
+  unitProgress,
+  type WritingUnit,
   type WritingCharProgress,
   type WritingItem,
   type WritingList,
@@ -40,8 +43,8 @@ import {
 import "@/components/lesson/lesson-player.css";
 import "@/components/writing/writing.css";
 
-const WritingPad = dynamic(
-  () => import("@/components/writing/writing-pad").then((m) => m.WritingPad),
+const WritingWordPad = dynamic(
+  () => import("@/components/writing/writing-word-pad").then((m) => m.WritingWordPad),
   { ssr: false, loading: () => <p className="bs-srs-stroke-loading">Ачааллаж байна…</p> }
 );
 
@@ -65,6 +68,16 @@ type Props = {
   fromLessonId?: string | null;
 };
 
+/** Нэгж (үг) бүрийн ахиц — дарааллыг үүсгэх, дууссан эсэхийг шалгахад. */
+function unitProgressMap(list: WritingList, progress: WritingProgressMap): WritingProgressMap {
+  const out: WritingProgressMap = {};
+  for (const u of groupWritingItems(list.items)) {
+    const p = unitProgress(u, progress);
+    if (p) out[u.text] = p;
+  }
+  return out;
+}
+
 type Step = { phase: WritingPadPhase; index: number; total: number; base: number };
 
 /**
@@ -77,8 +90,9 @@ type Task = Step & { ch: string; extra?: "check" | "retry" };
 type CharResult = { ch: string; mistakes: number; done: boolean; weak: boolean };
 
 /** Санаж бичилт «чадаагүй» гэж тооцогдох уу: сануулга авсан эсвэл 3+ удаа алдсан. */
-function recallFailed(r: WritingPadResult): boolean {
-  return r.usedHint || r.mistakes >= 3;
+function recallFailed(r: WritingPadResult & { worstChar?: number }): boolean {
+  // Үг бол ханз тус бүрээр нь: аль нэг ханзан дээр 3+ алдсан бол чадаагүй.
+  return r.usedHint || (r.worstChar ?? r.mistakes) >= 3;
 }
 
 function shuffled<T>(arr: T[]): T[] {
@@ -211,11 +225,22 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
   const retryCountRef = useRef<Map<string, number>>(new Map());
   const advanceTimerRef = useRef<number | null>(null);
 
-  const itemByCh = useMemo(() => {
-    const map = new Map<string, WritingItem>();
-    for (const it of list?.items ?? []) map.set(it.ch, it);
+  /** Бичих нэгжүүд: холбоо үгийг салгалгүй хамтад нь (lib/writing/types groupWritingItems). */
+  const unitByText = useMemo(() => {
+    const map = new Map<string, WritingUnit>();
+    for (const u of groupWritingItems(list?.items ?? [])) map.set(u.text, u);
     return map;
   }, [list]);
+  const unitByTextRef = useRef(unitByText);
+  unitByTextRef.current = unitByText;
+  /** Дэлгэцэд харуулах: нэгж бүрийг нэг «ханз» мэт (ch = бүтэн үг). */
+  const itemByCh = useMemo(() => {
+    const map = new Map<string, WritingItem>();
+    for (const u of unitByText.values()) {
+      map.set(u.text, { ch: u.text, word: null, pinyin: u.pinyin, meaning_mn: u.meaning });
+    }
+    return map;
+  }, [unitByText]);
 
   const flushSave = useCallback(() => {
     if (saveTimerRef.current != null) {
@@ -255,7 +280,7 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
       setQueue(chunk);
       setRemaining(chars.slice(chunkSize));
       setFromScratch(scratch);
-      const built = buildTasks(l, progressRef.current, chunk, scratch, g);
+      const built = buildTasks(l, unitProgressMap(l, progressRef.current), chunk, scratch, g);
       tasksRef.current = built;
       tiRef.current = 0;
       lastRecallOkRef.current = new Map();
@@ -288,13 +313,19 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
       if (!alive) return;
       progressRef.current = progress;
       setList(l);
-      const all = l.items.map((i) => i.ch);
+      const units = groupWritingItems(l.items);
+      const all = units.map((u) => u.text);
+      const uprog = unitProgressMap(l, progress);
+      // Дэвтрийн мөр дээр дарсан ханз/үг → түүнийг агуулсан нэгжээс эхэлнэ.
+      const startUnit = startChar
+        ? units.find((u) => u.text === startChar || u.items.some((it) => it.ch === startChar))?.text ?? null
+        : null;
       let base: string[];
-      if (startChar && all.includes(startChar)) {
-        const idx = all.indexOf(startChar);
-        base = all.slice(idx).filter((ch) => ch === startChar || again || !isCharDone(l, progress[ch]));
+      if (startUnit) {
+        const idx = all.indexOf(startUnit);
+        base = all.slice(idx).filter((ch) => ch === startUnit || again || !isCharDone(l, uprog[ch]));
       } else {
-        base = again ? all : all.filter((ch) => !isCharDone(l, progress[ch]));
+        base = again ? all : all.filter((ch) => !isCharDone(l, uprog[ch]));
       }
       startSession(l, base, again, isKids);
     })();
@@ -312,20 +343,25 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
     [tasks, ch]
   );
 
+  /** Нэгжийн ахицыг түүнд хамаарах ханз бүрд тэмдэглэнэ (хадгалалт ханзаар хэвээр). */
   function bumpProgress(c: string, patch: (p: WritingCharProgress) => WritingCharProgress) {
-    const prev: WritingCharProgress = progressRef.current[c] ?? {
-      ch: c,
-      traceDone: 0,
-      memoryDone: 0,
-      mistakes: 0,
-      completedAt: null,
-      updatedAt: new Date().toISOString(),
-    };
-    const next = { ...patch(prev), updatedAt: new Date().toISOString() };
-    progressRef.current = { ...progressRef.current, [c]: next };
-    pendingRef.current.set(c, next);
+    const owned = unitByTextRef.current.get(c)?.items.map((it) => it.ch) ?? [c];
+    const nextMap = { ...progressRef.current };
+    for (const key of owned) {
+      const prev: WritingCharProgress = nextMap[key] ?? {
+        ch: key,
+        traceDone: 0,
+        memoryDone: 0,
+        mistakes: 0,
+        completedAt: null,
+        updatedAt: new Date().toISOString(),
+      };
+      const next = { ...patch(prev), ch: key, updatedAt: new Date().toISOString() };
+      nextMap[key] = next;
+      pendingRef.current.set(key, next);
+    }
+    progressRef.current = nextMap;
     scheduleSave();
-    return next;
   }
 
   function goNext() {
@@ -338,9 +374,10 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
       // Энэ ханзны бүх даалгавар дууслаа.
       const sess = sessionRef.current.get(ch) ?? { mistakes: 0, usedHint: false };
       const hadMemory = tasks.some((t) => t.ch === ch && t.phase === "memory");
-      const p = progressRef.current[ch];
+      const p = unitProgressMap(list, progressRef.current)[ch];
       const doneNow = isCharDone(list, p);
-      if (hadMemory) {
+      // Давталтын хуваарийг зөвхөн сурагч өөрөө давталтад нэмсэн үг/ханзад шинэчилнэ (автоматаар нэмэхгүй).
+      if (hadMemory && getHanziHistoryMap()[ch]?.inReview) {
         recordWritingResult(
           { key: ch, pinyin: item?.pinyin ?? null, meaning: item?.meaning_mn ?? null },
           { mistakes: sess.mistakes, usedHint: sess.usedHint }
@@ -382,19 +419,27 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
     }
   }
 
-  function handlePadDone(result: WritingPadResult) {
+  /** Нэгдсэн ханзны түүх: үгийн ханз бүрийг тус тусад нь бүртгэнэ. */
+  function handleCharDone(c: string, result: WritingPadResult, phase: WritingPadPhase) {
+    if (!ch) return;
+    const multi = [...ch].length > 1;
+    recordHanziWrite({
+      ch: c,
+      source: "book",
+      mistakes: result.mistakes,
+      recalled: phase === "memory" ? !recallFailed(result) : null,
+      pinyin: multi ? null : item?.pinyin ?? null,
+      meaning: multi ? null : item?.meaning_mn ?? null,
+      word: multi ? ch : null,
+      wordPinyin: multi ? item?.pinyin ?? null : null,
+      wordMeaning: multi ? item?.meaning_mn ?? null : null,
+    });
+  }
+
+  function handlePadDone(result: WritingPadResult & { worstChar?: number }) {
     if (!step || !ch || !list) return;
     if (step.phase === "watch") return;
     let requeued = false;
-    // Нэгдсэн ханзны түүх: дагаж зурсан бол recalled=null, санаж бичсэн бол чадсан эсэх.
-    recordHanziWrite({
-      ch,
-      source: "book",
-      mistakes: result.mistakes,
-      recalled: step.phase === "memory" ? !recallFailed(result) : null,
-      pinyin: item?.pinyin ?? null,
-      meaning: item?.meaning_mn ?? null,
-    });
     if (step.phase === "trace") {
       // Буцааж асуухын өмнөх дагаж бичилт нь нэмэлт — дэвтрийн нүдийг тоолохгүй.
       if (!step.extra) bumpProgress(ch, (prev) => ({ ...prev, traceDone: prev.traceDone + 1 }));
@@ -667,7 +712,7 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
           {lessonHref ? tr(locale, "← Хичээл рүү") : tr(locale, "← Дэвтэр рүү")}
         </Link>
         <p className="text-xs font-bold text-[var(--app-muted)]">
-          {Math.min(results.length + 1, queue.length)}/{queue.length} {tr(locale, "ханз")}
+          {Math.min(results.length + 1, queue.length)}/{queue.length}
           {remaining.length > 0 ? ` · +${remaining.length}` : ""}
         </p>
       </div>
@@ -676,7 +721,11 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
         <div className="flex items-center gap-3">
           <span
             className={`flex shrink-0 items-center justify-center rounded-2xl font-semibold ${
-              kids ? "h-20 w-20 text-5xl" : "h-16 w-16 text-4xl"
+              [...ch].length > 1
+                ? "h-16 min-w-16 px-3 text-3xl"
+                : kids
+                  ? "h-20 w-20 text-5xl"
+                  : "h-16 w-16 text-4xl"
             } ${memoryPhase ? "bg-amber-50 text-amber-600 ring-1 ring-amber-200" : "bg-slate-50 text-[var(--app-text)] ring-1 ring-slate-200"}`}
             translate="no"
           >
@@ -748,7 +797,14 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
       </div>
 
       <div className="relative mx-auto w-full max-w-[340px]">
-        <WritingPad key={padKey} char={ch} phase={step.phase} onDone={handlePadDone} maxSize={340} />
+        <WritingWordPad
+          key={padKey}
+          text={ch}
+          phase={step.phase}
+          onDone={handlePadDone}
+          onCharDone={handleCharDone}
+          maxSize={340}
+        />
         {feedback ? (
           <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 text-center">
             <span

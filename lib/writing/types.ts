@@ -134,3 +134,67 @@ const HAN_RE = /\p{Script=Han}/u;
 export function isHanChar(ch: string): boolean {
   return HAN_RE.test(ch);
 }
+
+/* ------------------------------------------------------------------ */
+/* Үгээр нь хамтад нь бичих                                            */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Бичих НЭГЖ: холбоо үгийг ханз ханзаар нь салгалгүй хамтад нь бичүүлнэ.
+ * Хадгалалт нь ханз тус бүрээр хэвээр (items), харин дасгал ба жагсаалт нь нэгжээр.
+ */
+export type WritingUnit = {
+  /** Бичих бүтэн текст: холбоо үг (жнь «法律») эсвэл ганц ханз. */
+  text: string;
+  /** Энэ нэгжид хамаарах хадгалагдсан ханзууд (ахицыг эдгээрт тэмдэглэнэ). */
+  items: WritingItem[];
+  pinyin: string | null;
+  meaning: string | null;
+};
+
+/** Дараалсан, нэг үгэнд хамаарах ханзуудыг нэг нэгж болгоно. */
+export function groupWritingItems(items: WritingItem[]): WritingUnit[] {
+  const units: WritingUnit[] = [];
+  let i = 0;
+  while (i < items.length) {
+    const first = items[i]!;
+    const word = first.word && [...first.word].length > 1 ? first.word : null;
+    const group = [first];
+    if (word) {
+      while (i + group.length < items.length && items[i + group.length]!.word === word) {
+        group.push(items[i + group.length]!);
+      }
+    }
+    const complete = word != null && group.map((g) => g.ch).join("") === word;
+    const pinyin = group
+      .map((g) => g.pinyin?.trim() ?? "")
+      .filter(Boolean)
+      .join(" ");
+    units.push({
+      text: word ?? first.ch,
+      items: group,
+      pinyin: word && !complete ? null : pinyin || null,
+      meaning: first.meaning_mn ?? null,
+    });
+    i += group.length;
+  }
+  return units;
+}
+
+/** Нэгжийн ахиц: хамаарах ханзуудын хамгийн бага нь (бүгд дуусаж байж нэгж дуусна). */
+export function unitProgress(
+  unit: WritingUnit,
+  progress: WritingProgressMap
+): WritingCharProgress | undefined {
+  const rows = unit.items.map((it) => progress[it.ch]);
+  if (rows.every((r) => !r)) return undefined;
+  const now = new Date().toISOString();
+  return {
+    ch: unit.text,
+    traceDone: Math.min(...rows.map((r) => r?.traceDone ?? 0)),
+    memoryDone: Math.min(...rows.map((r) => r?.memoryDone ?? 0)),
+    mistakes: Math.max(...rows.map((r) => r?.mistakes ?? 0)),
+    completedAt: rows.every((r) => r?.completedAt) ? rows[0]!.completedAt : null,
+    updatedAt: rows.find((r) => r)?.updatedAt ?? now,
+  };
+}
