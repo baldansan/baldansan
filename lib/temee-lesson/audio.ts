@@ -60,6 +60,26 @@ function element(): HTMLAudioElement {
   return el;
 }
 
+/**
+ * iPhone: дууг зөвхөн даралтын дотроос эхлүүлж болдог. Өөр зүйл (TTS г.м.) тоглож дууссаны
+ * ДАРАА энэ элементээр дуу гаргах бол даралтын дотор нэг удаа чимээгүй «нээж» өгнө.
+ */
+export function unlockTemeeAudio(url: string): void {
+  const a = element();
+  token += 1;
+  a.onended = null;
+  a.onerror = null;
+  a.muted = true;
+  a.src = url;
+  const done = () => {
+    a.pause();
+    a.muted = false;
+  };
+  void a.play().then(done).catch(() => {
+    a.muted = false;
+  });
+}
+
 export function stopTemeeAudio(): void {
   token += 1;
   if (el) {

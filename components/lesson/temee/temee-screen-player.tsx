@@ -21,16 +21,28 @@ import { TemeeVisualView } from "./temee-visual";
 import "./temee.css";
 
 /**
- * «Өөрөө хэлж үз» (дуугаа бичээд зэрэгцүүлж сонсох) — туршилтын дэлгэц.
- * Эзэн зөвшөөрсний дараа бүх авианы дэлгэцэд тараана (claude/DUUDLAGA-SUURI-2026-11-28.md).
+ * «Өөрөө хэлж үз» (дуугаа бичээд багшийнхтай зэрэгцүүлж сонсох) — «Авианы дасгал» үеийн
+ * дуутай дэлгэц бүрд. Энэ дэлгэц дээр дарж сонсож болох зүйл бүр хэлж үзэх зорилт болно.
  */
-const VOICE_PILOT = new Set(["xinhsk1-l01:sounds:s2"]);
-
-/** Энэ дэлгэц дээр хэлж үзэх авианууд (одоогоор зөвхөн хос авиа). */
 function voiceTargets(screen: TemeeScreen): { label: string; src: TemeeAudioRef[] }[] {
+  const out: { label: string; src: TemeeAudioRef[] }[] = [];
   const v = screen.visual;
-  if (v?.kind === "pair") return [v.a, v.b].map((x) => ({ label: x.label, src: x.src }));
-  return [];
+  if (v?.kind === "pair") out.push(v.a, v.b);
+  else if (v?.kind === "grid") {
+    for (const it of v.items) if (it.src?.length) out.push({ label: it.label, src: it.src });
+  } else if (v?.kind === "blend") {
+    for (const it of v.items) out.push({ label: it.result, src: it.src });
+  }
+  for (const a of screen.audio ?? []) out.push({ label: a.label, src: a.src });
+  const seen = new Set<string>();
+  return out
+    .map((t) => ({ label: t.label, src: t.src }))
+    .filter((t) => {
+      const key = t.src.join("|");
+      if (t.src.length === 0 || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
 }
 
 const RIGHT_LINES = ["Болж байна.", "Тийм.", "Зөв.", "Мэдээж."];
@@ -200,7 +212,7 @@ export function TemeeScreenPlayer({ lessonId, sectionKey, section, onDone }: Pla
   const safeCheckIdx = Math.min(checkIdx, Math.max(checks.length - 1, 0));
   const isLast = index === flat.length - 1;
   const partIndex = section.parts.findIndex((p) => p.id === part.id);
-  const voice = VOICE_PILOT.has(`${lessonId}:${sectionKey}:${screen.id}`) ? voiceTargets(screen) : [];
+  const voice = sectionKey === "sounds" ? voiceTargets(screen) : [];
   const voiceList: VoiceTarget[] = voice.map((t) => ({
     label: t.label,
     urls: t.src.map((r) => temeeAudioUrl(r, lessonId)),

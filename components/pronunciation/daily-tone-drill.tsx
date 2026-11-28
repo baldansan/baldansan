@@ -506,10 +506,8 @@ function PartD({ q, onResult, onNext, onSkip }: { q: QD; onResult: (ok: boolean)
         pinyin={q.word.pinyin}
         sectionLink={false}
         className="mt-3"
-        onDone={({ verdict, result }) => {
-          const ok = verdict === "perfect" || verdict === "close" || (!!result && !result.empty && result.total > 0 && result.correct * 2 >= result.total);
-          onResult(ok);
-        }}
+        // Автомат оноо байхгүй (2026-11-28): дуугаа бичээд сонссон бол хийсэнд тооцно.
+        onDone={() => onResult(true)}
       />
       <div className="mt-3 flex gap-2">
         <button type="button" onClick={onSkip} className="rounded-2xl bg-slate-100 px-4 py-3 text-sm font-bold text-slate-600">

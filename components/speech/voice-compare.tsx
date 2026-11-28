@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { playTemeeSequence, stopTemeeAudio } from "@/lib/temee-lesson/audio";
+import { playTemeeSequence, stopTemeeAudio, unlockTemeeAudio } from "@/lib/temee-lesson/audio";
 import {
   startVoiceRecording,
   VoiceError,
@@ -16,7 +16,12 @@ export type VoiceTarget = {
   label: string;
   /** Багшийн бичлэгийн URL-ууд (дараалан тоглоно). */
   urls: string[];
+  /** URL байхгүй (бичлэг → TTS гинж) бол багшийн дууг өөрөө тоглуулна. */
+  teacher?: () => Promise<unknown>;
 };
+
+/** Ийм олон авиатай дэлгэцэд сонгох товч харуулахгүй — сүүлд сонссон авиа л зорилт болно. */
+const MAX_CHIPS = 4;
 
 /** Хамгийн уртдаа ийм удаан бичнэ — мартаж орхисон ч микрофон асаалттай үлдэхгүй. */
 const MAX_MS = 6000;
@@ -30,13 +35,18 @@ type Phase = "idle" | "asking" | "recording" | "done";
  */
 export function VoiceCompare({
   targets,
-  active,
+  active = 0,
   onPick,
+  onRecorded,
+  className,
 }: {
   targets: VoiceTarget[];
   /** Сонгогдсон зорилтын индекс (сүүлд сонссон авиа). */
-  active: number;
+  active?: number;
   onPick?: (index: number) => void;
+  /** Бичлэг амжилттай болоход (өдрийн дасгалд «хийсэн» гэж тэмдэглэхэд). */
+  onRecorded?: () => void;
+  className?: string;
 }) {
   const [phase, setPhase] = useState<Phase>("idle");
   const [problem, setProblem] = useState<VoiceProblem | null>(null);
@@ -79,11 +89,12 @@ export function VoiceCompare({
       mineUrlRef.current = url;
       setMine({ url, target: active });
       setPhase("done");
+      onRecorded?.();
     } catch (err) {
       setProblem(err instanceof VoiceError ? err.problem : "empty");
       setPhase("idle");
     }
-  }, [active]);
+  }, [active, onRecorded]);
 
   const start = useCallback(async () => {
     stopTemeeAudio();
@@ -105,6 +116,19 @@ export function VoiceCompare({
   const play = useCallback(
     (what: "teacher" | "mine" | "both") => {
       if (!target) return;
+      if (target.teacher && what !== "mine") {
+        // Багшийн дуу өөр сувгаар (бичлэг эсвэл утасны хоолой) гарна.
+        stopTemeeAudio();
+        const teacher = target.teacher;
+        const mineUrl = what === "both" ? mine?.url : undefined;
+        if (mineUrl) unlockTemeeAudio(mineUrl);
+        setPlaying(what);
+        void teacher()
+          .catch(() => undefined)
+          .then(() => (mineUrl ? playTemeeSequence([mineUrl]) : undefined))
+          .then(() => setPlaying((p) => (p === what ? null : p)));
+        return;
+      }
       const urls =
         what === "teacher"
           ? target.urls
@@ -127,10 +151,15 @@ export function VoiceCompare({
   const hasMine = phase === "done" && mine != null && mine.target === active;
 
   return (
-    <div className="vc">
+    <div className={className ? `vc ${className}` : "vc"}>
       <p className="vc-kicker">Өөрөө хэлж үз</p>
 
-      {targets.length > 1 ? (
+      {targets.length > MAX_CHIPS ? (
+        <p className="vc-hint">
+          Дээрээс нэг авиа дараад сонс. Сүүлд сонссоноо энд хэлнэ. Одоо: <b translate="no">{target.label}</b>
+        </p>
+      ) : null}
+      {targets.length > 1 && targets.length <= MAX_CHIPS ? (
         <div className="vc-targets" role="group" aria-label="Аль авиаг хэлэх вэ">
           {targets.map((t, i) => (
             <button

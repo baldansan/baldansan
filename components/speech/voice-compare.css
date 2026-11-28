@@ -1,5 +1,5 @@
 /* «Өөрөө хэлж үз» — дуугаа бичээд багшийнхтай зэрэгцүүлж сонсох блок. */
-.vc{margin:0 0 14px;padding:14px;border-radius:18px;border:2px dashed var(--bs-line,#e5e0f2);background:var(--bs-card,#fff);font-family:var(--bs-ui,inherit)}
+.vc{margin:0 0 14px;padding:14px;border-radius:18px;border:2px dashed var(--bs-line,#e5e0f2);background:var(--bs-card,#fff);font-family:var(--bs-ui,inherit);text-align:left}
 .vc-kicker{margin:0 0 10px;font-size:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--bs-muted,#8a84a0)}
 .vc-targets{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
 .vc-target{min-width:64px;min-height:44px;padding:6px 16px;border-radius:99px;border:2px solid var(--bs-line,#e5e0f2);background:transparent;cursor:pointer;
@@ -19,8 +19,10 @@
   border:2px solid var(--bs-green,#7c4ddb);background:var(--bs-green-50,#f3edff);color:var(--bs-green,#7c4ddb);font-family:inherit;font-size:17px;font-weight:900}
 .vc-both small{flex-basis:100%;font-size:12px;font-weight:700;opacity:.8}
 .vc-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.vc-sm{padding-left:6px!important;padding-right:6px!important}
+.vc-hint b{font-size:17px;color:var(--bs-green,#7c4ddb)}
 .vc-sm{min-height:46px;padding:8px 10px;border-radius:14px;border:2px solid var(--bs-line,#e5e0f2);background:transparent;cursor:pointer;
-  font-family:inherit;font-size:15px;font-weight:800;color:var(--bs-ink,#222)}
+  font-family:inherit;font-size:14px;font-weight:800;white-space:nowrap;color:var(--bs-ink,#222)}
 .vc-both.is-on,.vc-sm.is-on{outline:3px solid var(--bs-green,#7c4ddb);outline-offset:1px}
 .vc-tip{margin:10px 2px 0;font-size:14px;font-weight:700;line-height:1.4;color:var(--bs-ink-2,#555)}
 .vc-problem{margin-top:10px;padding:10px 12px;border-radius:14px;background:#fff7ed;border:1px solid #fed7aa}
@@ -28,3 +30,4 @@
 .vc-problem p:first-child{font-weight:900}
 .vc-problem p+p{margin-top:4px}
 .vc-private{margin:10px 2px 0;font-size:12px;font-weight:600;line-height:1.4;color:var(--bs-muted,#8a84a0)}
+.vc-hint{margin:0 2px 10px;font-size:14px;font-weight:700;line-height:1.4;color:var(--bs-ink-2,#555)}

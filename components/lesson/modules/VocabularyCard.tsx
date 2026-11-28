@@ -18,6 +18,8 @@ import { ToneHanzi, ToneLegend } from "@/components/hanzi/ToneHanzi";
 import { WordWriterPanel } from "@/components/hanzi/WordWriterPanel";
 import { resolveDecompositionCharacters } from "@/lib/hanzi/character-decomposition";
 import SpeakButton from "../SpeakButton";
+import { VoiceCompare } from "@/components/speech/voice-compare";
+import { playChineseWordAudio } from "@/lib/tts/play-chinese-word-audio";
 import { DeepWordPanel } from "@/components/lesson/deep/deep-teaching-blocks";
 import { findDeepWord, type LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 import { findImageForWord, type LessonPathImage } from "@/lib/lesson/lesson-path-images";
@@ -83,7 +85,7 @@ export default function VocabularyCard({
   /** Шатлан нээх: ханз → утга → яагаад ийм ханз вэ → жишээ. Үг солигдоход эхнээсээ. */
   const [step, setStep] = useState(0);
   /** Хоёрдогч хэрэгсэл: бичих / дуудлага шалгах / дэлгэрэнгүй — дарж байж нээгдэнэ. */
-  const [tool, setTool] = useState<"write" | "more" | null>(null);
+  const [tool, setTool] = useState<"say" | "write" | "more" | null>(null);
   /** «Яагаад» шатанд олон ханзтай үгийг нэг нэг ханзаар задална. */
   const [whyIdx, setWhyIdx] = useState(0);
   const flipped = step >= 1;
@@ -339,6 +341,9 @@ export default function VocabularyCard({
 
         <div className="bs-vicons">
           <SpeakButton text={w.zh} src={w.audio} title={`${w.zh} дуудлага`} />
+          <button type="button" className="bs-vicon" aria-pressed={tool === "say"} onClick={() => setTool(tool === "say" ? null : "say")}>
+            🎤 Хэлэх
+          </button>
           <button type="button" className="bs-vicon" aria-pressed={tool === "write"} onClick={() => setTool(tool === "write" ? null : "write")}>
             ✍️ Бичих
           </button>
@@ -349,6 +354,14 @@ export default function VocabularyCard({
           ) : null}
         </div>
 
+        {tool === "say" ? (
+          <div className="bs-vreveal">
+            <VoiceCompare
+              key={w.zh}
+              targets={[{ label: w.zh, urls: [], teacher: () => playChineseWordAudio(w.zh) }]}
+            />
+          </div>
+        ) : null}
         {tool === "write" ? (
           <div className="bs-vreveal">
             <WordWriterPanel word={w.zh} />
