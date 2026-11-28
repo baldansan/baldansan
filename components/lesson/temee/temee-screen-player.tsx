@@ -416,7 +416,7 @@ export function TemeeExtraPracticeOffer({
       </div>
       <div className="tm-nav">
         <button type="button" className="tm-nav-back" onClick={onSkip}>
-          Дараа, сорил руу →
+          Сорил руу →
         </button>
         <button type="button" className="tm-nav-next" onClick={onExtra}>
           Номын дасгал хийх
