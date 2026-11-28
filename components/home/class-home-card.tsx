@@ -23,8 +23,8 @@ type Props = {
   loggedIn: boolean;
   catalog: MobileCourseCatalogEntry[];
   fazhanCatalog: MobileCourseCatalogEntry[];
-  /** Анги олдмогц дуудна — Нүүрийн «Миний ном»-ыг ангийн түвшинд тааруулахад. */
-  onClassroom?: (classroom: MyClassroomSummary) => void;
+  /** Сурагчийн анги (Нүүрийн HomeFocus дамжуулна). */
+  classroom: MyClassroomSummary | null;
 };
 
 type BookState = {
@@ -39,33 +39,11 @@ type BookState = {
 
 /**
  * Ангид элссэн сурагчийн Нүүрийн дээд хэсэг: бүх зүйл ангийнх нь HSK түвшинд түгжигдэнэ.
- * Ангигүй хүнд юу ч харагдахгүй.
+ * Зорилгогүй (багшийн) ангид харагдана; ангигүй хүнд юу ч харагдахгүй.
  */
-export function ClassHomeCard({ loggedIn, catalog, fazhanCatalog, onClassroom }: Props) {
+export function ClassHomeCard({ loggedIn, catalog, fazhanCatalog, classroom }: Props) {
   const locale = useUiLocale();
-  const [classroom, setClassroom] = useState<MyClassroomSummary | null>(null);
   const [status, setStatus] = useState<Record<string, LessonStatus>>({});
-
-  useEffect(() => {
-    if (!loggedIn) return;
-    let alive = true;
-    void (async () => {
-      try {
-        const { getMyClassroomSummary } = await import("@/lib/supabase/classrooms");
-        const mine = await getMyClassroomSummary();
-        if (alive) {
-          setClassroom(mine);
-          if (mine) onClassroom?.(mine);
-        }
-      } catch {
-        // Алдаа гарвал хэсгийг чимээгүй нууна.
-      }
-    })();
-    return () => {
-      alive = false;
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [loggedIn]);
 
   const level = classroom?.hskLevel ?? null;
 
@@ -99,7 +77,7 @@ export function ClassHomeCard({ loggedIn, catalog, fazhanCatalog, onClassroom }:
     };
   }, [bookEntries]);
 
-  if (!classroom || level == null) return null;
+  if (!loggedIn || !classroom || level == null) return null;
 
   const books: BookState[] = bookEntries.map(({ entry, label }) => {
     const lessons = entry.lessons;

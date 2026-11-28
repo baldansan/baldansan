@@ -1374,28 +1374,56 @@ export type JoinByCodeResult = {
   alreadyMember: boolean;
 };
 
-/** Сурагч: 6 оронтой кодоор ангид нэгдэнэ (нэвтэрсэн байх). */
+/** RPC байхгүй (migration 120 ажиллуулаагүй) үеийн алдаа мөн эсэх. */
+function isMissingRpc(error: { code?: string; message?: string } | null): boolean {
+  if (!error) return false;
+  return (
+    error.code === "PGRST202" ||
+    error.code === "42883" ||
+    /could not find the function|does not exist/i.test(error.message ?? "")
+  );
+}
+
+/** Өөр бүлэгт байгаа тул «солих уу» гэж асуух шаардлагатайг илтгэх алдааны түлхүүр. */
+export const JOIN_NEEDS_SWITCH = "in-other-group";
+
+/**
+ * Сурагч: 6 оронтой кодоор бүлэг/ангид нэгдэнэ (нэвтэрсэн байх).
+ * Нэг л бүлэгт байна: өөр бүлэгт идэвхтэй бол `switchGroup: true` үед л шилжүүлнэ,
+ * үгүй бол error = JOIN_NEEDS_SWITCH буцаана.
+ */
 export async function joinClassroomByCode(
   code: string,
-  displayName?: string | null
+  displayName?: string | null,
+  options?: { switchGroup?: boolean }
 ): Promise<ClassroomResult<JoinByCodeResult>> {
   if (!supabase) return notConfigured();
   const clean = code.replace(/\D/g, "");
   if (clean.length !== 6) return { data: null, error: "Код 6 оронтой байх ёстой." };
-  const { data, error } = await supabase.rpc("join_classroom_by_code", {
+  let { data, error } = await supabase.rpc("join_classroom_by_code", {
     p_code: clean,
     p_display_name: displayName?.trim() || null,
+    p_switch: Boolean(options?.switchGroup),
   });
+  if (error && isMissingRpc(error)) {
+    // Migration 120-оос өмнөх хувилбар (p_switch байхгүй).
+    ({ data, error } = await supabase.rpc("join_classroom_by_code", {
+      p_code: clean,
+      p_display_name: displayName?.trim() || null,
+    }));
+  }
   if (error) {
-    const msg = error.message.includes("invalid code")
-      ? "Ийм кодтой анги олдсонгүй."
-      : error.message.includes("not signed in")
-        ? "Эхлээд нэвтэрнэ үү."
-        : error.message;
+    const msg = error.message.includes("in other group")
+      ? JOIN_NEEDS_SWITCH
+      : error.message.includes("invalid code")
+        ? "Ийм кодтой бүлэг олдсонгүй."
+        : error.message.includes("not signed in")
+          ? "Эхлээд нэвтэрнэ үү."
+          : error.message;
     return { data: null, error: msg };
   }
   const row = (Array.isArray(data) ? data[0] : data) as Record<string, unknown> | undefined;
-  if (!row) return { data: null, error: "Ийм кодтой анги олдсонгүй." };
+  if (!row) return { data: null, error: "Ийм кодтой бүлэг олдсонгүй." };
   return {
     data: {
       classroomId: String(row.out_classroom_id),
@@ -1468,9 +1496,9 @@ export async function getMyClassroomSummary(): Promise<MyClassroomSummary | null
   if (!userId) return null;
   const { data, error } = await supabase
     .from("classroom_students")
-    .select("status, created_at, classrooms(id, name, level, course_id)")
+    .select("status, joined_at, classrooms(id, name, level, course_id)")
     .eq("student_user_id", userId)
-    .order("created_at", { ascending: false });
+    .order("joined_at", { ascending: false, nullsFirst: false });
   if (error || !data) return null;
   for (const row of data as Record<string, unknown>[]) {
     if (row.status === "removed") continue;
@@ -1489,4 +1517,210 @@ export async function getMyClassroomSummary(): Promise<MyClassroomSummary | null
     };
   }
   return null;
+}
+
+// --- Хамт сурах бүлэг (migration 120) ---
+
+export type StudyGroupMember = {
+  name: string;
+  isMe: boolean;
+  wordsToday: number;
+  lessonsWeek: number;
+  testsWeek: number;
+  streak: number;
+};
+
+export type StudyGroup = {
+  id: string;
+  name: string;
+  /** "group" = найзуудын бүлэг, "class" = багшийн анги. */
+  kind: "group" | "class";
+  hskLevel: number | null;
+  isOpen: boolean;
+  isOwner: boolean;
+  joinCode: string | null;
+  goalWordsPerDay: number | null;
+  goalLessonsPerWeek: number | null;
+  goalTestsPerWeek: number | null;
+  /** Сурах өдрүүд (1 = Даваа … 7 = Ням). null бол өдөр бүр. */
+  goalDays: number[] | null;
+  /** Өнөөдөр сурах өдөр мөн эсэх. */
+  isStudyDay: boolean;
+  memberCount: number;
+  members: StudyGroupMember[];
+  /** false бол сервер талын бүлгийн функц хараахан идэвхжээгүй (зорилго, самбаргүй). */
+  ready: boolean;
+};
+
+function positiveInt(value: unknown): number | null {
+  const n = Number(value);
+  return Number.isFinite(n) && n > 0 ? Math.round(n) : null;
+}
+
+/** Нэвтэрсэн хүний одоогийн бүлэг/анги: зорилго, гишүүдийн самбартай. Бүлэггүй бол null. */
+export async function getMyStudyGroup(): Promise<StudyGroup | null> {
+  if (!supabase) return null;
+  const { userId } = await getAuthenticatedUserId();
+  if (!userId) return null;
+  const { data, error } = await supabase.rpc("my_study_group");
+  if (error) {
+    // Migration 120 ажиллуулаагүй үед: хуучин аргаар зөвхөн нэр, түвшин.
+    const summary = await getMyClassroomSummary();
+    if (!summary) return null;
+    return {
+      id: summary.id,
+      name: summary.name,
+      kind: "class",
+      hskLevel: summary.hskLevel,
+      isOpen: false,
+      isOwner: false,
+      joinCode: null,
+      goalWordsPerDay: null,
+      goalLessonsPerWeek: null,
+      goalTestsPerWeek: null,
+      goalDays: null,
+      isStudyDay: true,
+      memberCount: 0,
+      members: [],
+      ready: false,
+    };
+  }
+  const row = data as Record<string, unknown> | null;
+  if (!row?.id) return null;
+  const name = String(row.name ?? "");
+  const days = Array.isArray(row.goal_days)
+    ? (row.goal_days as unknown[]).map(Number).filter((d) => d >= 1 && d <= 7)
+    : null;
+  const todayDow = Number(row.today_dow) || 0;
+  const members = Array.isArray(row.members) ? (row.members as Record<string, unknown>[]) : [];
+  return {
+    id: String(row.id),
+    name,
+    kind: row.kind === "group" ? "group" : "class",
+    hskLevel: parseHskLevel(
+      row.level ? String(row.level) : null,
+      row.course_id ? String(row.course_id) : null,
+      name
+    ),
+    isOpen: Boolean(row.is_open),
+    isOwner: Boolean(row.is_owner),
+    joinCode: row.join_code ? String(row.join_code) : null,
+    goalWordsPerDay: positiveInt(row.goal_words_per_day),
+    goalLessonsPerWeek: positiveInt(row.goal_lessons_per_week),
+    goalTestsPerWeek: positiveInt(row.goal_tests_per_week),
+    goalDays: days && days.length > 0 ? days : null,
+    isStudyDay: !days || days.length === 0 || days.includes(todayDow),
+    memberCount: Number(row.member_count) || members.length,
+    members: members.map((m) => ({
+      name: String(m.name ?? "Сурагч"),
+      isMe: Boolean(m.is_me),
+      wordsToday: Number(m.words_today) || 0,
+      lessonsWeek: Number(m.lessons_week) || 0,
+      testsWeek: Number(m.tests_week) || 0,
+      streak: Number(m.streak) || 0,
+    })),
+    ready: true,
+  };
+}
+
+export type StudyGroupGoals = {
+  wordsPerDay: number | null;
+  lessonsPerWeek: number | null;
+  testsPerWeek: number | null;
+  days: number[] | null;
+};
+
+const GROUP_NOT_READY = "Бүлгийн хэсэг удахгүй нээгдэнэ. Түр хүлээгээд дахин оролдоорой.";
+
+function groupErrorMessage(error: { code?: string; message?: string }): string {
+  if (isMissingRpc(error)) return GROUP_NOT_READY;
+  const msg = error.message ?? "";
+  if (msg.includes("not signed in")) return "Эхлээд нэвтэрнэ үү.";
+  if (msg.includes("invalid name")) return "Бүлгийн нэрээ 1–40 тэмдэгтээр бичээрэй.";
+  if (msg.includes("no goal")) return "Дор хаяж нэг зорилго сонгоорой.";
+  if (msg.includes("too many groups")) return "Өнөөдөр хэт олон бүлэг үүсгэлээ. Маргааш дахин оролдоорой.";
+  if (msg.includes("not allowed")) return "Зорилгыг зөвхөн бүлгийг үүсгэсэн хүн өөрчилнө.";
+  return msg || "Алдаа гарлаа. Дахин оролдоорой.";
+}
+
+/** Шинэ бүлэг үүсгэнэ; үүсгэсэн хүн шууд гишүүн болно (өмнөх бүлгээсээ гарна). */
+export async function createStudyGroup(
+  name: string,
+  goals: StudyGroupGoals
+): Promise<ClassroomResult<{ id: string; name: string; joinCode: string }>> {
+  if (!supabase) return notConfigured();
+  const { data, error } = await supabase.rpc("create_study_group", {
+    p_name: name.trim(),
+    p_words_per_day: goals.wordsPerDay,
+    p_lessons_per_week: goals.lessonsPerWeek,
+    p_tests_per_week: goals.testsPerWeek,
+    p_days: goals.days,
+    p_display_name: null,
+  });
+  if (error) return { data: null, error: groupErrorMessage(error) };
+  const row = (Array.isArray(data) ? data[0] : data) as Record<string, unknown> | undefined;
+  if (!row?.out_classroom_id) return { data: null, error: "Бүлэг үүсгэж чадсангүй." };
+  return {
+    data: {
+      id: String(row.out_classroom_id),
+      name: String(row.out_classroom_name),
+      joinCode: String(row.out_join_code ?? ""),
+    },
+    error: null,
+  };
+}
+
+/** Бүлгийн зорилгыг өөрчилнө (үүсгэсэн хүн). */
+export async function updateStudyGroupGoals(
+  classroomId: string,
+  goals: StudyGroupGoals
+): Promise<ClassroomResult<true>> {
+  if (!supabase) return notConfigured();
+  const { error } = await supabase.rpc("update_study_group_goals", {
+    p_classroom_id: classroomId,
+    p_words_per_day: goals.wordsPerDay,
+    p_lessons_per_week: goals.lessonsPerWeek,
+    p_tests_per_week: goals.testsPerWeek,
+    p_days: goals.days,
+  });
+  if (error) return { data: null, error: groupErrorMessage(error) };
+  return { data: true, error: null };
+}
+
+/** Бүлэг/ангиас гарна. Мөр устахгүй — оноо, эрэмбэ хадгалагдаж, буцаж орвол үргэлжилнэ. */
+export async function leaveMyClassroom(classroomId?: string | null): Promise<ClassroomResult<true>> {
+  if (!supabase) return notConfigured();
+  const { error } = await supabase.rpc("leave_my_classroom", {
+    p_classroom_id: classroomId ?? null,
+  });
+  if (error) return { data: null, error: groupErrorMessage(error) };
+  return { data: true, error: null };
+}
+
+export type OpenGroup = {
+  id: string;
+  name: string;
+  joinCode: string;
+  members: number;
+  wordsPerDay: number | null;
+  lessonsPerWeek: number | null;
+  testsPerWeek: number | null;
+};
+
+/** Хэн ч орж болох нээлттэй бүлгүүд. */
+export async function listOpenGroups(): Promise<OpenGroup[]> {
+  if (!supabase) return [];
+  const { data, error } = await supabase.rpc("list_open_groups");
+  if (error || !Array.isArray(data)) return [];
+  return (data as Record<string, unknown>[])
+    .filter((row) => row.out_join_code)
+    .map((row) => ({
+      id: String(row.out_classroom_id),
+      name: String(row.out_name ?? ""),
+      joinCode: String(row.out_join_code),
+      members: Number(row.out_members) || 0,
+      wordsPerDay: positiveInt(row.out_words_per_day),
+      lessonsPerWeek: positiveInt(row.out_lessons_per_week),
+      testsPerWeek: positiveInt(row.out_tests_per_week),
+    }));
 }

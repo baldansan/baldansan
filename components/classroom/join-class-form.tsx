@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
-import { joinClassroomByCode, peekClassroomByCode } from "@/lib/supabase/classrooms";
+import { JOIN_NEEDS_SWITCH, joinClassroomByCode, peekClassroomByCode } from "@/lib/supabase/classrooms";
 
 type Props = {
   initialCode?: string;
@@ -11,10 +11,12 @@ type Props = {
   mode?: "join" | "peek";
   onCodeChange?: (code: string, className: string | null) => void;
   onJoined?: (classroomName: string) => void;
+  /** Одоо байгаа бүлгийн нэр — «солих уу» асуултад харуулна. */
+  currentGroupName?: string | null;
 };
 
 /** 6 оронтой ангийн код оруулах талбар: ангийн нэрийг шууд харуулна. */
-export function JoinClassForm({ initialCode = "", mode = "join", onCodeChange, onJoined }: Props) {
+export function JoinClassForm({ initialCode = "", mode = "join", onCodeChange, onJoined, currentGroupName = null }: Props) {
   const locale = useUiLocale();
   const [code, setCode] = useState(initialCode.replace(/\D/g, "").slice(0, 6));
   const [className, setClassName] = useState<string | null>(null);
@@ -23,12 +25,14 @@ export function JoinClassForm({ initialCode = "", mode = "join", onCodeChange, o
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState<string | null>(null);
+  const [askSwitch, setAskSwitch] = useState(false);
 
   useEffect(() => {
     let alive = true;
     setClassName(null);
     setOrgName(null);
     setError(null);
+    setAskSwitch(false);
     if (code.length !== 6) {
       onCodeChange?.(code, null);
       return;
@@ -42,7 +46,7 @@ export function JoinClassForm({ initialCode = "", mode = "join", onCodeChange, o
         setOrgName(res.organizationName);
         onCodeChange?.(code, res.classroomName);
       } else {
-        setError(tr(locale, "Ийм кодтой анги олдсонгүй."));
+        setError(tr(locale, "Ийм кодтой бүлэг олдсонгүй."));
         onCodeChange?.(code, null);
       }
     });
@@ -52,12 +56,17 @@ export function JoinClassForm({ initialCode = "", mode = "join", onCodeChange, o
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [code]);
 
-  async function join() {
+  async function join(switchGroup = false) {
     if (code.length !== 6 || busy) return;
     setBusy(true);
     setError(null);
-    const { data, error: err } = await joinClassroomByCode(code);
+    const { data, error: err } = await joinClassroomByCode(code, null, { switchGroup });
     setBusy(false);
+    if (err === JOIN_NEEDS_SWITCH) {
+      setAskSwitch(true);
+      return;
+    }
+    setAskSwitch(false);
     if (err || !data) {
       setError(err ?? tr(locale, "Нэгдэж чадсангүй."));
       return;
@@ -69,7 +78,7 @@ export function JoinClassForm({ initialCode = "", mode = "join", onCodeChange, o
   if (done) {
     return (
       <div className="rounded-2xl bg-emerald-50 p-4 text-sm text-emerald-900 ring-1 ring-emerald-200">
-        ✓ {tr(locale, "Та ангид нэгдлээ:")} <strong translate="no">{done}</strong>
+        ✓ {tr(locale, "Та бүлэгт нэгдлээ:")} <strong translate="no">{done}</strong>
       </div>
     );
   }
@@ -77,9 +86,9 @@ export function JoinClassForm({ initialCode = "", mode = "join", onCodeChange, o
   return (
     <div className="space-y-2">
       <label className="block text-sm font-medium text-[var(--app-text)]">
-        {tr(locale, "Ангийн код")}{" "}
+        {tr(locale, "Бүлгийн код")}{" "}
         <span className="text-xs font-normal text-[var(--app-muted)]">
-          ({tr(locale, "багшаас авсан 6 оронтой тоо")})
+          ({tr(locale, "найз эсвэл багшаас авсан 6 оронтой тоо")})
         </span>
         <input
           inputMode="numeric"
@@ -88,7 +97,7 @@ export function JoinClassForm({ initialCode = "", mode = "join", onCodeChange, o
           value={code}
           onChange={(e) => setCode(e.target.value.replace(/\D/g, "").slice(0, 6))}
           placeholder="482917"
-          className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 font-mono text-lg tracking-[0.25em]"
+          className="mt-1 w-full rounded-xl border border-[var(--app-border)] bg-[var(--app-card)] px-3 py-2 font-mono text-lg tracking-[0.25em] text-[var(--app-text)]"
         />
       </label>
       {checking ? <p className="text-xs text-[var(--app-muted)]">{tr(locale, "Шалгаж байна…")}</p> : null}
@@ -99,14 +108,41 @@ export function JoinClassForm({ initialCode = "", mode = "join", onCodeChange, o
         </p>
       ) : null}
       {error ? <p className="text-sm text-red-700">{error}</p> : null}
-      {mode === "join" ? (
+      {mode === "join" && askSwitch ? (
+        <div className="space-y-2 rounded-2xl border border-amber-300 bg-amber-50 p-3 text-sm text-amber-950">
+          <p className="font-semibold">
+            {currentGroupName ? (
+              <>
+                {tr(locale, "Та одоо")} «<span translate="no">{currentGroupName}</span>»{" "}
+                {tr(locale, "бүлэгт байна.")}
+              </>
+            ) : (
+              tr(locale, "Та одоо өөр бүлэгт байна.")
+            )}{" "}
+            {tr(locale, "Нэг л бүлэгт байж болно. Шинэ бүлэг рүү шилжих үү?")}
+          </p>
+          <p className="text-xs">{tr(locale, "Хуучин бүлгийн оноо, эрэмбэ хадгалагдана. Буцаж орвол үргэлжилнэ.")}</p>
+          <div className="flex gap-2">
+            <button type="button" onClick={() => join(true)} disabled={busy} className="app-btn-primary flex-1 disabled:opacity-50">
+              {busy ? tr(locale, "Шилжиж байна…") : tr(locale, "Шилжих")}
+            </button>
+            <button
+              type="button"
+              onClick={() => setAskSwitch(false)}
+              className="min-h-[44px] flex-1 rounded-full border border-[var(--app-border)] bg-[var(--app-card)] px-4 text-sm font-semibold text-[var(--app-text)]"
+            >
+              {tr(locale, "Болих")}
+            </button>
+          </div>
+        </div>
+      ) : mode === "join" ? (
         <button
           type="button"
-          onClick={join}
+          onClick={() => join()}
           disabled={busy || code.length !== 6 || !className}
           className="app-btn-primary w-full disabled:opacity-50"
         >
-          {busy ? tr(locale, "Нэгдэж байна…") : tr(locale, "Ангид орох")}
+          {busy ? tr(locale, "Нэгдэж байна…") : tr(locale, "Бүлэгт орох")}
         </button>
       ) : null}
     </div>

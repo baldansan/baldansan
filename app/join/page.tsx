@@ -1,6 +1,6 @@
 import { JoinClassClient } from "@/app/join/join-class-client";
 
-export const metadata = { title: "Ангид орох — Бөөндөө Сурцгаая" };
+export const metadata = { title: "Хамт сурах бүлэг — Бөөндөө Сурцгаая" };
 
 type Props = { searchParams: Promise<{ code?: string }> };
 

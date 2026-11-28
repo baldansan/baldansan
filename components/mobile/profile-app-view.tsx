@@ -455,7 +455,12 @@ export function ProfileAppView() {
 
       <p className="bs-tm-sec mt-5">{tr(locale, "Тохиргоо")}</p>
       <ReminderQuickRow />
-      <LinkRow href="/join" icon="🏫" title={tr(locale, "Ангид орох")} />
+      <LinkRow
+        href="/join"
+        icon="🏫"
+        title={tr(locale, "Хамт сурах бүлэг")}
+        sub={tr(locale, "Орох, гарах, шинэ бүлэг үүсгэх")}
+      />
       {features.kidsYct ? (
         <LinkRow href="/family" icon="👨‍👩‍👧" title={tr(locale, "Хүүхдийн бүртгэл")} />
       ) : null}

@@ -1,6 +1,5 @@
 "use client";
 
-import { ClassHomeCard } from "@/components/home/class-home-card";
 import Image from "next/image";
 import Link from "next/link";
 import { PrefetchLink } from "@/components/navigation/prefetch-link";
@@ -20,16 +19,13 @@ import {
   useActiveHskLevel,
   useRegisterLessonHskLevels,
 } from "@/components/providers/active-hsk-level-provider";
-import { HomeLessonList } from "@/components/temee/home-lesson-list";
-import { TemeeMascot } from "@/components/temee/temee-mascot";
-import { BookPickerGrid, type BookPickerEntry } from "@/components/mobile/book-picker-grid";
+import type { BookPickerEntry } from "@/components/mobile/book-picker-grid";
 import {
   LibraryPreviewRow,
   type LibraryPreviewItem,
 } from "@/components/mobile/library-preview-row";
 import { MobileAppShell } from "@/components/mobile/mobile-app-shell";
 import { SHELL_MAIN_NARROW } from "@/lib/app-shell-classes";
-import { formatHomeCourseListHeading } from "@/lib/temee/home-course-display";
 import { resolveContinueLearning } from "@/lib/learner-progress";
 import type { BichlegContinueTarget } from "@/lib/bichleg/types";
 import type { MobileCourseCatalogEntry } from "@/lib/mobile-course-options";
@@ -45,17 +41,15 @@ import {
   fetchMyPointsToday,
   type MyRank,
 } from "@/lib/points/rank";
+import { HomeFocus } from "@/components/home/home-focus";
 import { HomeTodayPath } from "@/components/home/home-today-path";
 import { StartWizard, type StartWizardResult } from "@/components/start/start-wizard";
 import { readBookStart, writeBookStart } from "@/lib/today/today-path";
 import { KID_MODE_STORAGE_KEY } from "@/lib/kids/types";
 import { TeacherAssignmentBanner } from "@/components/home/teacher-assignment-banner";
-import { ExamGoalCard } from "@/components/engagement/exam-goal-card";
-import { MyStudySystem } from "@/components/engagement/my-study-system";
 import { InstallAppGuide } from "@/components/intro/install-app-guide";
 import { PushAfterInstallPrompt } from "@/components/pwa/push-after-install-prompt";
 import { HomeChatBadge } from "@/components/social/home-chat-badge";
-import { HomeQuickSearch } from "@/components/home/home-quick-search";
 import { QuickStartCard } from "@/components/home/quick-start-card";
 import type { BichlegSuggestion } from "@/lib/mobile-home-data";
 import { getStreakUnified } from "@/lib/retention/retention-service";
@@ -240,52 +234,6 @@ export function HomeAppView({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  /**
-   * Unified "pick a book" from the Home grid — sets series + chip, and
-   * moves the global HSK level to the book's level so the lesson list
-   * underneath (which is filtered by that level) actually shows the book.
-   */
-  const pickBook = (entry: BookPickerEntry) => {
-    setLevelPicked(true);
-    setActiveSeries(entry.series);
-    setActiveChip(entry.chipId);
-    if (entry.reviewLevel != null) {
-      setActiveHskLevel(entry.reviewLevel as 1 | 2 | 3 | 4 | 5 | 6);
-    }
-    try {
-      window.localStorage.setItem("bs:homeSeries", entry.series);
-      window.localStorage.setItem("bs:homeChip", entry.chipId);
-    } catch {
-      // ignore
-    }
-  };
-
-  /**
-   * Ангид элссэн сурагч: «Миний ном»-ыг ангийн түвшний HSK ном руу НЭГ удаа шилжүүлнэ
-   * (өмнө нь сонгосон өөр түвшний ном үлдээд ангитайгаа зөрдөг байсан).
-   * Дараа нь сурагч өөрөө сольж болно — анги бүрд нэг л удаа тааруулна.
-   */
-  const syncBookToClassroom = (classroom: { id: string; hskLevel: number | null }) => {
-    const level = classroom.hskLevel;
-    if (level == null) return;
-    try {
-      if (window.localStorage.getItem("bs:homeClassSynced") === classroom.id) return;
-      const entry = catalog.find(
-        (item) => item.courseId === `hsk${level}` && item.available
-      );
-      if (!entry) return;
-      window.localStorage.setItem("bs:homeClassSynced", classroom.id);
-      setLevelPicked(true);
-      setActiveSeries("standard");
-      setActiveChip(entry.chipId);
-      setActiveHskLevel(level as 1 | 2 | 3 | 4 | 5 | 6);
-      window.localStorage.setItem("bs:homeSeries", "standard");
-      window.localStorage.setItem("bs:homeChip", entry.chipId);
-    } catch {
-      // ignore
-    }
-  };
-
   // The grid always shows both series, whichever one the selected book is in.
   const countCompleted = (entry: MobileCourseCatalogEntry) =>
     entry.lessons.filter(
@@ -339,8 +287,6 @@ export function HomeAppView({
 
   /** Түвшнээ нэг сонгосон хүнд «Түвшнээ сонго» мөр дахин гарахгүй (солих бол «Ном» таб). */
   const [levelPicked, setLevelPicked] = useState(true);
-  const activePickerKey = `${activeSeries}:${activeChip}`;
-  const levelChips = pickerEntries.filter((e) => e.series === "standard" && e.available);
 
   /** Every published lesson on the page — progress is loaded once for all books. */
   const allLessonIds = useMemo(
@@ -571,10 +517,6 @@ export function HomeAppView({
       ? Math.round((completedCount / lessonIds.length) * 100)
       : 0;
 
-  const courseListHeading = activeCourse
-    ? formatHomeCourseListHeading(activeCourse)
-    : "";
-
   /* PC (≥920px) баруун самбар — утсан дээр нуугдана (AppShell). */
   const rightRail = (
     <div className="bs-home-rail">
@@ -626,13 +568,6 @@ export function HomeAppView({
       desktopWidth="wide"
       rightRail={rightRail}
     >
-      {/* Ангид элссэн сурагчид: ангийнх нь түвшинд түгжигдсэн даалгаврууд. Ангигүй бол харагдахгүй. */}
-      <ClassHomeCard
-        loggedIn={loggedIn}
-        catalog={catalog}
-        fazhanCatalog={fazhanCatalog}
-        onClassroom={syncBookToClassroom}
-      />
       {/* Том танилцуулга — зөвхөн шинэ / нэвтрээгүй хүнд. Явцтай хүнд богино мэндчилгээ. */}
       {!loggedIn || !(totals.completed > 0 || streak > 0) ? (
         <section className="bs-page-in relative mb-4 overflow-hidden rounded-[24px] bg-gradient-to-br from-[#7C4DDB] via-emerald-500 to-emerald-700 p-5 text-white shadow-[0_10px_30px_rgba(124,77,219,0.28)]">
@@ -728,48 +663,32 @@ export function HomeAppView({
         ) : null}
       </ul>
 
-      {/* Түвшин хурдан солих — шинэ хүн «Ном солих»-ыг олохгүй байсан тул хамгийн дээр */}
-      {levelChips.length > 1 && !levelPicked ? (
-        <div className="bs-home-levels">
-          <p className="bs-home-levels-label">{tr(locale, "Түвшнээ сонго")}</p>
-          <div className="bs-home-levels-row">
-            {levelChips.map((entry) => (
-              <button
-                key={entry.key}
-                type="button"
-                aria-pressed={entry.key === activePickerKey}
-                className={`bs-home-level${entry.key === activePickerKey ? " bs-home-level--on" : ""}`}
-                onClick={() => pickBook(entry)}
-              >
-                {entry.chipLabel}
-              </button>
-            ))}
-            <button
-              type="button"
-              className="bs-home-level bs-home-level--more"
-              onClick={() =>
-                document.getElementById("home-book-picker")?.scrollIntoView({ behavior: "smooth", block: "center" })
-              }
-            >
-              {tr(locale, "Бусад ном")} ›
-            </button>
-          </div>
-        </div>
-      ) : null}
-
       {/* Багшийн даалгавар — ЗААВАЛ; хийж дуустал хамгийн дээр байна */}
       <TeacherAssignmentBanner loggedIn={loggedIn} />
 
-      {/* Өнөөдрийн 3 алхам: үг → хичээлийн дараагийн үе → сонсгол (нүүрний гол хэсэг). */}
-      <HomeTodayPath
-        lessonHref={activeCourse?.available && lessonIds.length > 0 ? continueHref : null}
-        lessonTitle={continueTitle}
-        lessonId={continueResolved ? continueLessonId : null}
-        bookLevel={activeCourse ? resolveCatalogChipLevel(activeCourse) : null}
+      {/* Нүүрийн төвлөрөл: «Бүлэг / Өөрийн ном» — сонгосон нь л том, нөгөө нь нэг мөр. */}
+      <HomeFocus
+        loggedIn={loggedIn}
+        catalog={catalog}
+        fazhanCatalog={fazhanCatalog}
+        onChangeBook={() => setStartMode("redo")}
+        own={{
+          label: activeCourse?.chipLabel ?? "",
+          nextHref: activeCourse?.available && lessonIds.length > 0 ? continueHref : null,
+          nextTitle: continueTitle,
+          completed: completedCount,
+          total: lessonIds.length,
+          resolved: continueResolved,
+        }}
+        todayPlan={
+          <HomeTodayPath
+            lessonHref={activeCourse?.available && lessonIds.length > 0 ? continueHref : null}
+            lessonTitle={continueTitle}
+            lessonId={continueResolved ? continueLessonId : null}
+            bookLevel={activeCourse ? resolveCatalogChipLevel(activeCourse) : null}
+          />
+        }
       />
-      <button type="button" className="bs-today-reset" onClick={() => setStartMode("redo")}>
-        {tr(locale, "Түвшин, номоо дахин тохируулах")}
-      </button>
       {startMode ? (
         <StartWizard
           catalog={catalog}
@@ -814,62 +733,12 @@ export function HomeAppView({
       <OpenClassQuizBanner />
 
 
-      {pickerEntries.length > 1 ? (
-        <div id="home-book-picker">
-          <BookPickerGrid
-            entries={pickerEntries}
-            activeKey={activePickerKey}
-            onSelect={pickBook}
-          />
-        </div>
-      ) : null}
-
-      {activeCourse && !activeCourse.available ? (
-        <div className="mt-2 flex flex-col items-center gap-3 rounded-[24px] bg-white px-6 py-8 text-center shadow-sm ring-1 ring-slate-100">
-          <Image
-            src="/temee/v3/think.webp"
-            alt=""
-            width={112}
-            height={112}
-            className="h-28 w-28 rounded-[22px] object-cover"
-          />
-          <p className="text-sm font-bold text-[var(--app-text)]">
-            {tr(locale, "Энэ курс удахгүй нээгдэнэ")}
-          </p>
-          <p className="text-xs leading-5 text-[var(--app-muted)]">
-            {tr(
-              locale,
-              "Бид контентыг нь бэлдэж байна. Одоохондоо нээлттэй байгаа хичээлүүдээс үргэлжлүүлээрэй."
-            )}
-          </p>
-        </div>
-      ) : activeCourse && lessons.length > 0 ? (
-        <HomeLessonList
-          heading={courseListHeading}
-          lessons={lessons}
-          statusByLesson={statusByLesson}
-          completedCount={completedCount}
-          totalCount={lessonIds.length}
-          progressPercent={progressPercent}
-          allLessonsHref={activeCourse.allLessonsHref}
-        />
-      ) : null}
-
       {/* 60 секундын онбординг — шинэ хэрэглэгчид. Гүйлгэлгүйгээр харагдахаар хамгийн дээр
           (явцтай эсвэл дуусгасан хүнд өөрөө нуугдана). */}
       <QuickStartCard loggedIn={loggedIn} hasProgress={totals.completed > 0 || streak > 0} />
 
       {/* Апп болгож суулгасан хүнээс өдөр бүрийн сануулгын зөвшөөрөл асууна */}
       <PushAfterInstallPrompt loggedIn={loggedIn} />
-
-      {/* Шалгалтын зорилго тавьсан бол — хэдэн өдөр үлдсэн, хурд */}
-      <ExamGoalCard variant="compact" />
-      <MyStudySystem variant="prompt" />
-      {/* Тэмээ багш — баяртай / ердийн / гунигтай / унтаж буй (components/temee/temee-mascot) */}
-      <TemeeMascot streak={streak} size="sm" className="mb-3" />
-
-      {/* Хурдан хайлт (Pleco маяг) */}
-      <HomeQuickSearch />
 
       <InstallAppGuide />
 
