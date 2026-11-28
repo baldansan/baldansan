@@ -73,7 +73,7 @@ async def main():
             await pg.wait_for_timeout(400)
             if await pg.get_by_text("Номын дасгал хийх", exact=True).count():
                 await shot("p-extra-offer")
-                await click_text(pg, "Сорил руу")
+                await click_text(pg, "Дараа, сорил руу") or await click_text(pg, "Сорил руу")
                 await pg.wait_for_timeout(300)
 
         await shot("intro")

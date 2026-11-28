@@ -292,3 +292,19 @@
   padding-left: 12px;
   border-left: 2px solid var(--bs-green-100, #d1fae5);
 }
+
+/* Эх бичвэр дээрх Тэмээ багшийн тайлбар */
+.bs-txt-note-panel--temee {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.bs-txt-note-temee-img {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  object-fit: contain;
+}
+.bs-txt-note-panel--temee p {
+  margin: 0 0 4px;
+}

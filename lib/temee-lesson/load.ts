@@ -25,10 +25,21 @@ export async function loadTemeeLesson(
     const lesson = mod.default as TemeeLesson;
     if (lesson?.lessonId !== lessonId) return null;
     if (lesson.status === "draft" && !options.includeDraft) return null;
+    // Эх бичвэрийн давхарга тусдаа ноорог байж болно.
+    if (lesson.text?.status === "draft" && !options.includeDraft) {
+      return { ...lesson, text: undefined };
+    }
     return lesson;
   } catch {
     return null; // энэ хичээлд Тэмээ багшийн хичээл хараахан байхгүй
   }
+}
+
+/** «马丁：你去哪儿？» ба «你去哪儿» хоёрыг ижил гэж үзнэ. */
+function normalizeSentenceKey(zh: string): string {
+  return zh
+    .replace(/^[^：:]{1,8}[：:]/, "")
+    .replace(/[\s，。！？、；：,.!?;:（）()“”"'《》…—-]/g, "");
 }
 
 /** Оршил, үгийн жагсаалтыг Тэмээ багшийн хичээлд тааруулна (эх багцыг өөрчлөхгүй, хуулбар буцаана). */
@@ -37,6 +48,10 @@ export function applyTemeeLessonToPackage(
   temee: TemeeLesson
 ): HskLessonPackage {
   const keep = temee.vocabKeep ? new Set(temee.vocabKeep) : null;
+  // Эх бичвэрийн мөрийг ярьж буй хүний нэр, цэг таслалаас үл хамааран таниулна.
+  const textNotes = temee.text
+    ? new Map(Object.entries(temee.text.notes).map(([zh, note]) => [normalizeSentenceKey(zh), note]))
+    : null;
   return {
     ...pkg,
     hook: {
@@ -49,6 +64,12 @@ export function applyTemeeLessonToPackage(
     // бие даан сурах хүнд Тэмээ багшийн дасгал үүнийг орлоно.
     texts: (pkg.texts ?? []).map((t) => ({
       ...t,
+      sentences: textNotes
+        ? (t.sentences ?? []).map((s) => {
+            const note = textNotes.get(normalizeSentenceKey(s.zh));
+            return note ? { ...s, temee_note: note } : s;
+          })
+        : t.sentences,
       reflection: undefined,
       writingSample: undefined,
       writingPrompt_mn: undefined,

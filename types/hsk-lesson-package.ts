@@ -114,6 +114,8 @@ export interface HskPackageTextSentence {
   tokens: HskPackageTextToken[];
   mn: string;
   note?: string;
+  /** Тэмээ багшийн тайлбар (байвал хуучин `note`-ийн оронд Балдангийн үгээр гарна). */
+  temee_note?: string[];
   key_structures?: string[];
   /** true when JSON provided tokens[] — enables per-word tap in reader */
   word_tap?: boolean;

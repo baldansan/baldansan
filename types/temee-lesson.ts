@@ -122,6 +122,18 @@ export type TemeeQuizItem = {
   taught: string[];
 };
 
+/** «Эх бичвэр» үе дээрх Тэмээ багшийн давхарга. */
+export type TemeeTextLayer = {
+  /** "draft" бол зөвхөн `?temee=1` холбоосоор харагдана. */
+  status?: "draft" | "live";
+  /** Уншихын өмнө: юуг анхаарч унших вэ (2–4 богино мөр). */
+  before: string[];
+  /** Мөр бүрийн тайлбар. Түлхүүр нь эх бичвэрийн өгүүлбэрийн хятад бичвэр (яг адил). */
+  notes: Record<string, string[]>;
+  /** Уншсаны дараа ойлгосноо шалгах 3–4 асуулт. */
+  after: TemeeCheck[];
+};
+
 export type TemeeLesson = {
   lessonId: string;
   version: number;
@@ -130,6 +142,8 @@ export type TemeeLesson = {
    * "live" — бүгдэд. Шинэ хичээлийг ЗААВАЛ "draft"-аар эхлүүлнэ.
    */
   status: "draft" | "live";
+  /** «Эх бичвэр» үе дээр Балдан чиглүүлж, мөр тайлбарлаж, ойлголт шалгана. */
+  text?: TemeeTextLayer;
   /** 1-р үеийн богино оршил (хуучин урт оршлыг орлоно). */
   intro_mn: string;
   warmup_mn?: string;

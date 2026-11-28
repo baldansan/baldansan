@@ -22,7 +22,7 @@ import type { HskLessonPackage } from "@/types/hsk-lesson-package";
 import type { LessonDeepTeaching } from "@/types/lesson-deep-teaching";
 import type { LessonContent } from "@/types/lesson-content";
 import type { QuizQuestion } from "@/types/lesson";
-import type { TemeeLesson } from "@/types/temee-lesson";
+import type { TemeeLesson, TemeeSection } from "@/types/temee-lesson";
 import { temeeMetaFromLesson } from "@/lib/temee-lesson/meta";
 import { preloadTemeeAudio } from "@/lib/temee-lesson/audio";
 import {
@@ -118,6 +118,53 @@ export default function LessonPathPlayer({
   const [practicePhase, setPracticePhase] = useState<"temee" | "offer" | "extra">("temee");
   /** Сорилын үе: "main" → үндсэн сорил, "offer" → номын сорил өгөх үү, "extra" → номын сорил. */
   const [quizPhase, setQuizPhase] = useState<"main" | "offer" | "extra">("main");
+  /** Эх бичвэрийн үе: "before" → Балдан чиглүүлнэ, "read" → унших, "after" → ойлголт шалгах. */
+  const [textPhase, setTextPhase] = useState<"before" | "read" | "after">("before");
+  const temeeText = temee?.text ?? null;
+  const textBeforeSection = useMemo<TemeeSection | null>(
+    () =>
+      temeeText?.before?.length
+        ? {
+            label: "Эх бичвэр",
+            hint: "",
+            minutes: 1,
+            parts: [
+              {
+                id: "tb",
+                title: "Уншихын өмнө",
+                screens: [{ id: "tb1", title: "Юуг анхаарч унших вэ", say: temeeText.before, pose: "point" }],
+              },
+            ],
+          }
+        : null,
+    [temeeText]
+  );
+  const textAfterSection = useMemo<TemeeSection | null>(
+    () =>
+      temeeText?.after?.length
+        ? {
+            label: "Эх бичвэр",
+            hint: "",
+            minutes: 2,
+            parts: [
+              {
+                id: "ta",
+                title: "Уншсаны дараа",
+                screens: [
+                  {
+                    id: "ta1",
+                    title: "Ойлгосноо шалгая",
+                    say: ["Эхээ уншлаа. Одоо хэдэн асуулт.", "Хариултаа мэдэхгүй бол буцаад харж болно."],
+                    pose: "think",
+                    checks: temeeText.after,
+                  },
+                ],
+              },
+            ],
+          }
+        : null,
+    [temeeText]
+  );
 
   const allStageIds = useMemo(() => plan.stages.map((s) => s.id), [plan.stages]);
   const activeIndex = activeStage
@@ -174,6 +221,7 @@ export default function LessonPathPlayer({
       }
       setPracticePhase("temee");
       setQuizPhase("main");
+      setTextPhase("before");
       setActiveStage(stage);
       setView("stage");
       setLessonPathLastStage(lessonId, stage.id);
@@ -343,12 +391,34 @@ export default function LessonPathPlayer({
           </>
         );
       case "text":
+        if (textBeforeSection && textPhase === "before") {
+          return (
+            <TemeeScreenPlayer
+              key="temee-text-before"
+              lessonId={lessonId}
+              sectionKey="text-before"
+              section={textBeforeSection}
+              onDone={() => setTextPhase("read")}
+            />
+          );
+        }
+        if (textAfterSection && textPhase === "after") {
+          return (
+            <TemeeScreenPlayer
+              key="temee-text-after"
+              lessonId={lessonId}
+              sectionKey="text-after"
+              section={textAfterSection}
+              onDone={finishModuleStage}
+            />
+          );
+        }
         return (
           <TextsModule
             lessonId={lessonId}
             lesson={lesson}
             timedSubtitles={lessonContent.timedSubtitles}
-            onDone={finishModuleStage}
+            onDone={textAfterSection ? () => setTextPhase("after") : finishModuleStage}
             trackHref={`/lessons/${lessonId}/watch`}
           />
         );

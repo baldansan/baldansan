@@ -242,6 +242,7 @@ export function LiveTextReader({
 
   function renderSentence(sentence: HskPackageTextSentence, si: number) {
     const hasNote =
+      (sentence.temee_note?.length ?? 0) > 0 ||
       Boolean(sentence.note?.trim()) ||
       (sentence.key_structures?.length ?? 0) > 0;
     const noteOpen = openNotes.has(si);
@@ -319,7 +320,19 @@ export function LiveTextReader({
           <span aria-hidden>💡</span>
           {noteOpen ? "Нуух" : "Тайлбар"}
         </button>
-        {noteOpen ? (
+        {noteOpen && sentence.temee_note?.length ? (
+          <div className="bs-txt-note-panel bs-txt-note-panel--temee">
+            {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
+            <img src="/temee/v3/teach-sm.webp" alt="" className="bs-txt-note-temee-img" />
+            <div>
+              {sentence.temee_note.map((line) => (
+                <p key={line} translate="no">
+                  {line}
+                </p>
+              ))}
+            </div>
+          </div>
+        ) : noteOpen ? (
           <div className="bs-txt-note-panel">
             {sentence.note ? (
               <p>

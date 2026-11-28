@@ -404,19 +404,19 @@ export function TemeeExtraPracticeOffer({
   return (
     <div className="tm-root">
       <p className="tm-kicker">Дасгал</p>
-      <h2 className="tm-title">Өөр дасгал хийх үү</h2>
+      <h2 className="tm-title">Номын дасгалаа хийх үү</h2>
       <div className="tm-say">
         {/* eslint-disable-next-line @next/next/no-img-element -- жижиг статик зураг */}
         <img src={temeePoseSrc("thumbsup", "sm")} alt="" className="tm-say-img" />
         <div className="tm-say-bubble">
-          <p>Миний дасгал дууслаа.</p>
-          <p>Номын дасгал бас бий. Тэнд үг олон, арай хэцүү.</p>
-          <p>Хийвэл гар чинь сайн ирнэ. Алгасаж ч болно.</p>
+          <p>Миний дасгал дууслаа. Болж байна.</p>
+          <p>Одоо номын дасгал. Унших, эгнүүлэх, нөхөх гээд төрөл олон.</p>
+          <p>Үзсэнээ бататгах хамгийн дөт зам энэ. Одоо завгүй бол дараа хийж болно.</p>
         </div>
       </div>
       <div className="tm-nav">
         <button type="button" className="tm-nav-back" onClick={onSkip}>
-          Сорил руу →
+          Дараа, сорил руу →
         </button>
         <button type="button" className="tm-nav-next" onClick={onExtra}>
           Номын дасгал хийх
