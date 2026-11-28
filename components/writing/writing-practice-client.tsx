@@ -27,6 +27,8 @@ import { KID_MODE_STORAGE_KEY } from "@/lib/kids/types";
 import { recordWritingResult } from "@/lib/srs/writing-srs-sync";
 import { markTodayHanzi } from "@/lib/today/today-path";
 import { getList, getProgress, saveProgress } from "@/lib/writing/store";
+import { getHanziHistoryMap, recordHanziWrite } from "@/lib/writing/hanzi-history";
+import { ReviewOfferCard } from "@/components/writing/review-offer-card";
 import {
   isCharDone,
   summarizeProgress,
@@ -198,6 +200,9 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
   const [completed, setCompleted] = useState<string[]>([]);
   const [results, setResults] = useState<CharResult[]>([]);
   const sessionRef = useRef<Map<string, { mistakes: number; usedHint: boolean }>>(new Map());
+  /** Дуусах дэлгэц: тогтоогүй ханзаас давталтад нэмэхээр сонгосон нь (сурагч өөрөө шийднэ). */
+  const [offerList, setOfferList] = useState<string[]>([]);
+  const [offerKey, setOfferKey] = useState(0);
   /** Хугацаатай шилжилт (feedback-ийн дараа) хуучин state барихгүйн тулд дарааллыг ref-д давхар хадгална. */
   const tasksRef = useRef<Task[]>([]);
   const tiRef = useRef(0);
@@ -259,6 +264,7 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
       setTi(0);
       setCompleted([]);
       setResults([]);
+      setOfferList([]);
       sessionRef.current = new Map();
       setPadKey((k) => k + 1);
       setScreen("run");
@@ -368,6 +374,10 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
       setPadKey((k) => k + 1);
     } else {
       flushSave();
+      // Давталтад САНАЛ БОЛГОХ ханз: тогтоогүй, хараахан давталтад нэмээгүй. Нэмэхийг сурагч шийднэ.
+      const history = getHanziHistoryMap();
+      setOfferList(nextResults.filter((r) => r.weak && !history[r.ch]?.inReview).map((r) => r.ch));
+      setOfferKey((k) => k + 1);
       setScreen("end");
     }
   }
@@ -376,6 +386,15 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
     if (!step || !ch || !list) return;
     if (step.phase === "watch") return;
     let requeued = false;
+    // Нэгдсэн ханзны түүх: дагаж зурсан бол recalled=null, санаж бичсэн бол чадсан эсэх.
+    recordHanziWrite({
+      ch,
+      source: "book",
+      mistakes: result.mistakes,
+      recalled: step.phase === "memory" ? !recallFailed(result) : null,
+      pinyin: item?.pinyin ?? null,
+      meaning: item?.meaning_mn ?? null,
+    });
     if (step.phase === "trace") {
       // Буцааж асуухын өмнөх дагаж бичилт нь нэмэлт — дэвтрийн нүдийг тоолохгүй.
       if (!step.extra) bumpProgress(ch, (prev) => ({ ...prev, traceDone: prev.traceDone + 1 }));
@@ -511,6 +530,13 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
     const totalMistakes = results.reduce((n, r) => n + r.mistakes, 0);
     const weakCount = results.filter((r) => r.weak).length;
     const hasNext = remaining.length > 0;
+    // Давталтад санал болгох: тогтоогүй, хараахан давталтад нэмээгүй ханзууд.
+    const offerChars = offerList;
+    const offerMeta: Record<string, { pinyin?: string | null; meaning?: string | null }> = {};
+    for (const c of offerChars) {
+      const it = itemByCh.get(c);
+      offerMeta[c] = { pinyin: it?.pinyin ?? null, meaning: it?.meaning_mn ?? null };
+    }
     const nextSize = Math.min(kids ? KIDS_CHUNK : CHUNK, remaining.length);
     return shell(
       <div className="pb-8">
@@ -524,7 +550,7 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
               ? `${weakCount} ${tr(locale, "ханз хараахан тогтоогүй — доор тэмдэглэв")}`
               : totalMistakes === 0
                 ? tr(locale, "Алдаагүй! Маш сайн.")
-                : `${totalMistakes} ${tr(locale, "алдаа")} · ${tr(locale, "алдсан ханз давталтад буцаж ирнэ")}`}
+                : `${totalMistakes} ${tr(locale, "алдаа")}`}
           </p>
           {hasNext ? (
             <p className="mt-1 text-xs text-[var(--app-muted)]">
@@ -570,6 +596,8 @@ export function WritingPracticeClient({ listId, startChar = null, again = false,
             </tbody>
           </table>
         </MobileCard>
+
+        <ReviewOfferCard key={offerKey} chars={offerChars} metaByCh={offerMeta} />
 
         <div className="flex flex-col gap-2">
           {weakCount > 0 ? (

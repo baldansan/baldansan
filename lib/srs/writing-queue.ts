@@ -17,6 +17,7 @@ import {
   mergeServerWritingEntries,
   type WritingSrsEntry,
 } from "@/lib/srs/writing-srs";
+import { getReviewHanzi, syncHanziHistory } from "@/lib/writing/hanzi-history";
 import { getAuthenticatedUserId } from "@/lib/supabase/auth";
 import { hasSupabaseConfig, supabase } from "@/lib/supabase/client";
 import { fetchServerWritingEntries } from "@/lib/supabase/user-writing-srs";
@@ -102,6 +103,7 @@ export async function loadWritingQueue(limit = 15): Promise<WritingQueue> {
         const [words, server] = await Promise.all([
           fetchLearningWords(userId),
           fetchServerWritingEntries(userId),
+          syncHanziHistory(),
         ]);
         mergeServerWritingEntries(server);
         candidates = words;
@@ -114,15 +116,26 @@ export async function loadWritingQueue(limit = 15): Promise<WritingQueue> {
   const store = new Map(getAllLocalWritingEntries().map((e) => [e.key, e]));
 
   if (!candidates) {
-    // Нэвтрээгүй / офлайн: өөрийн бичиж үзсэн үгсээс.
+    // Нэвтрээгүй / офлайн: өөрийн бичиж үзсэн ҮГСЭЭС. Ганц ханзыг энд автоматаар
+    // оруулахгүй — ханз зөвхөн сурагч зөвшөөрсөн үед (доор) нэмэгдэнэ.
     candidates = [...store.values()]
-      .filter((e) => e.meaning && hasWritten(e))
+      .filter((e) => e.meaning && hasWritten(e) && [...e.key].length > 1)
       .map((e) => ({
         key: e.key,
         wordId: e.wordId,
         pinyin: e.pinyin,
         meaning: e.meaning,
       }));
+  }
+
+  // Сурагч өөрөө «Давталтад нэмэх» гэж зөвшөөрсөн ханзууд (lib/writing/hanzi-history).
+  for (const h of getReviewHanzi()) {
+    candidates.push({
+      key: h.ch,
+      wordId: null,
+      pinyin: h.pinyin,
+      meaning: h.meaning ?? store.get(h.ch)?.meaning ?? h.pinyin ?? "ханз",
+    });
   }
 
   const seen = new Set<string>();

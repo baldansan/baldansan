@@ -25,3 +25,19 @@ export const localHanziCharDataLoader: CharDataLoaderFn = (char, onLoad, onError
       onError(err instanceof Error ? err : new Error(`Missing stroke data for ${char}`));
     });
 };
+
+export type HanziCharData = { strokes: string[]; medians: number[][][] };
+
+const dataCache = new Map<string, Promise<HanziCharData>>();
+
+/** Ханзны түүхий зурлагын өгөгдөл (CDN → /api/hanzi). Нэг ханзыг нэг л удаа татна. */
+export function loadHanziCharData(char: string): Promise<HanziCharData> {
+  const hit = dataCache.get(char);
+  if (hit) return hit;
+  const p = fetchJson(hanziCdnUrl(char))
+    .catch(() => fetchJson(`/api/hanzi/${encodeURIComponent(char)}`))
+    .then((data) => data as HanziCharData);
+  dataCache.set(char, p);
+  p.catch(() => dataCache.delete(char));
+  return p;
+}

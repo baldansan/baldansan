@@ -9,6 +9,7 @@ import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { listAssignmentLists, listLists } from "@/lib/writing/store";
 import type { WritingListSummary } from "@/lib/writing/types";
+import { HanziDashboard } from "@/components/writing/hanzi-dashboard";
 import "@/components/writing/writing.css";
 
 function ListRow({
@@ -84,6 +85,8 @@ export function WritingHomeClient() {
         title={`✍️ ${tr(locale, "Ханзны дэвтэр")}`}
         subtitle={tr(locale, "Ханзаа харж, дагаж, санаж бичээд цээжил")}
       />
+
+      <HanziDashboard />
 
       {/* Үргэлжлүүлэх: дуусаагүй хамгийн сүүлийн дэвтэр */}
       {(() => {
@@ -208,7 +211,7 @@ export function WritingHomeClient() {
               </li>
               <li>2. 👀 {tr(locale, "Зураасны дарааллыг үзээд")} ✍️ {tr(locale, "дагаж бичнэ")}.</li>
               <li>
-                3. 🧠 {tr(locale, "Санаж бичнэ — алдсан ханз давталтад буцаж ирнэ.")}
+                3. 🧠 {tr(locale, "Санаж бичнэ — чадаагүй ханзыг тэр дор нь дахин асууна.")}
               </li>
             </ol>
             <Link href="/writing/new" className="app-btn-primary mt-4 inline-flex">

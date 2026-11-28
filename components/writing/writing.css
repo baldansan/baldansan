@@ -195,3 +195,483 @@
     padding: 2.5mm 0;
   }
 }
+
+/* --- Дагаж зурахад: дараагийн зурлагын нэр, чиглэл --- */
+.wn-stroke-guide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 8px auto 0;
+  padding: 7px 12px;
+  border-radius: 12px;
+  background: var(--app-primary-light, #f3ecff);
+  color: var(--app-text, #2a1f45);
+  font-size: 14px;
+  line-height: 1.2;
+}
+.wn-stroke-guide b {
+  font-weight: 800;
+}
+.wn-stroke-guide b::first-letter {
+  text-transform: uppercase;
+}
+.wn-stroke-guide-n {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--app-muted, #6f6787);
+}
+.wn-stroke-guide-arrow {
+  font-size: 18px;
+  font-weight: 800;
+  color: #d97706;
+  letter-spacing: 2px;
+}
+
+/* --- Дуусах дэлгэц: давталтад нэмэх ханз сонгох --- */
+.wn-offer-chip {
+  position: relative;
+  min-width: 56px;
+  height: 56px;
+  padding: 0 10px;
+  border-radius: 14px;
+  border: 2px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-text, #2a1f45);
+  font-size: 28px;
+  line-height: 1;
+}
+.wn-offer-chip.is-on {
+  border-color: var(--app-primary, #7c4ddb);
+  background: var(--app-primary-light, #f3ecff);
+}
+.wn-offer-check {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--app-primary, #7c4ddb);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+.wn-offer-chip:not(.is-on) .wn-offer-check {
+  display: none;
+}
+
+/* --- Нийтлэг: саарал товч, ханзны SVG --- */
+.wn-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 46px;
+  padding: 8px 14px;
+  border-radius: 16px;
+  border: 1px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-text, #2a1f45);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.wn-glyph-on {
+  fill: var(--app-primary, #7c4ddb);
+}
+.wn-glyph-dim {
+  fill: #cfc4e8;
+}
+.wn-glyph-ghost {
+  fill: #e6dff5;
+}
+.wn-stroke-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.wn-stroke-start {
+  fill: #f59e0b;
+}
+
+/* --- Нэгдсэн самбар --- */
+.wn-hd-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.wn-hd-stats > div {
+  padding: 10px 4px 9px;
+  border-radius: 16px;
+  border: 1px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  text-align: center;
+}
+.wn-hd-stats b {
+  display: block;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--app-primary, #7c4ddb);
+}
+.wn-hd-stats b.is-weak {
+  color: #d97706;
+}
+.wn-hd-stats small {
+  font-size: 11.5px;
+  color: var(--app-muted, #6f6787);
+}
+.wn-hd-how {
+  display: block;
+  margin: 0 0 10px auto;
+  padding: 4px 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--app-muted, #6f6787);
+}
+.wn-hd-go {
+  display: inline-flex;
+  margin-top: 12px;
+  padding: 9px 20px;
+  border-radius: 999px;
+  background: #fff;
+  color: #6537c2;
+  font-size: 14px;
+  font-weight: 800;
+}
+.wn-hd-chip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 58px;
+  padding: 6px 8px 5px;
+  border-radius: 14px;
+  border: 1.5px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-text, #2a1f45);
+}
+.wn-hd-chip i {
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.15;
+}
+.wn-hd-chip small {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--app-muted, #6f6787);
+}
+.wn-hd-chip.is-weak {
+  border-color: #f3d9a6;
+}
+.wn-hd-chip.is-weak small {
+  color: #b45309;
+}
+.wn-hd-chip.is-learned small {
+  color: var(--app-primary, #7c4ddb);
+}
+.wn-hd-chip.is-sel {
+  border-color: var(--app-primary, #7c4ddb);
+  background: var(--app-primary-light, #f3ecff);
+}
+.wn-hd-history {
+  position: relative;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 18px;
+  border: 1.5px solid var(--app-primary, #7c4ddb);
+  background: var(--app-card, #fff);
+  text-align: left;
+}
+.wn-hd-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--app-muted, #6f6787);
+}
+.wn-hd-big {
+  font-size: 46px;
+  line-height: 1;
+  color: var(--app-text, #2a1f45);
+}
+.wn-hd-stage {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  background: var(--app-primary-light, #f3ecff);
+  color: #6537c2;
+}
+.wn-hd-stage.is-weak {
+  background: #fef3c7;
+  color: #92400e;
+}
+.wn-hd-stage.is-new {
+  background: #f1f5f9;
+  color: #475569;
+}
+.wn-hd-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px 12px;
+  margin-top: 10px;
+}
+.wn-hd-facts dt {
+  font-size: 11px;
+  color: var(--app-muted, #6f6787);
+}
+.wn-hd-facts dd {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--app-text, #2a1f45);
+}
+.wn-hd-strokes-ico {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: var(--app-primary-light, #f3ecff);
+  flex: none;
+}
+.wn-hd-new {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 11px;
+  font-weight: 800;
+}
+.wn-hd-all {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+  gap: 6px;
+}
+.wn-hd-all button {
+  height: 42px;
+  border-radius: 10px;
+  border: 1.5px solid transparent;
+  background: #f1f5f9;
+  color: var(--app-text, #2a1f45);
+  font-size: 23px;
+  line-height: 1;
+}
+.wn-hd-all button.is-learned,
+.wn-hd-all button.is-solid {
+  background: var(--app-primary-light, #f3ecff);
+  color: #6537c2;
+}
+.wn-hd-all button.is-weak {
+  background: #fef3c7;
+  color: #92400e;
+}
+.wn-hd-all button.is-sel {
+  border-color: var(--app-primary, #7c4ddb);
+}
+.wn-hd-legend {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 11.5px;
+  color: var(--app-muted, #6f6787);
+}
+.wn-hd-legend span {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  border-radius: 4px;
+  background: #f1f5f9;
+}
+.wn-hd-legend span:first-child {
+  margin-left: 0;
+}
+.wn-hd-legend span.is-learned {
+  background: #d9c8fa;
+}
+.wn-hd-legend span.is-weak {
+  background: #fde68a;
+}
+
+/* --- Давталтын тооны зөвлөгөө --- */
+.wn-reps-preset {
+  flex: 1;
+  min-width: 88px;
+  padding: 8px 6px;
+  border-radius: 12px;
+  border: 1.5px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-text, #2a1f45);
+  text-align: center;
+}
+.wn-reps-preset b {
+  display: block;
+  font-size: 13px;
+}
+.wn-reps-preset small {
+  font-size: 11.5px;
+  color: var(--app-muted, #6f6787);
+}
+.wn-reps-preset.is-on {
+  border-color: var(--app-primary, #7c4ddb);
+  background: var(--app-primary-light, #f3ecff);
+}
+.wn-reps-why {
+  margin-top: 10px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--app-text, #2a1f45);
+}
+.wn-reps-why summary {
+  font-weight: 700;
+  color: var(--app-primary, #7c4ddb);
+  cursor: pointer;
+}
+.wn-reps-why ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  list-style: disc;
+}
+.wn-reps-why li {
+  margin-bottom: 6px;
+}
+.wn-reps-why p {
+  margin-top: 4px;
+  font-weight: 600;
+  color: var(--app-muted, #6f6787);
+}
+
+/* --- «Зурлагын үндэс» хичээл --- */
+.wn-sl-tabs {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0 12px;
+}
+.wn-sl-tabs button {
+  flex: 1;
+  padding: 7px 4px;
+  border-radius: 12px;
+  border: 1px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-muted, #6f6787);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.wn-sl-tabs button span {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
+  border-radius: 999px;
+  background: var(--app-primary-light, #f3ecff);
+  color: #6537c2;
+  font-size: 11px;
+}
+.wn-sl-tabs button.is-on {
+  border-color: var(--app-primary, #7c4ddb);
+  background: var(--app-primary, #7c4ddb);
+  color: #fff;
+}
+.wn-sl-tabs button.is-on span {
+  background: #fff;
+}
+.wn-sl-legend {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #f59e0b;
+}
+.wn-sl-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.wn-sl-grid button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 2px 7px;
+  border-radius: 14px;
+  border: 1.5px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-text, #2a1f45);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.wn-sl-grid button.is-on {
+  border-color: var(--app-primary, #7c4ddb);
+  background: var(--app-primary-light, #f3ecff);
+}
+.wn-sl-grid button.is-done {
+  color: var(--app-muted, #6f6787);
+}
+.wn-sl-rule {
+  border-top: 1px solid var(--app-border, #e8e0f5);
+}
+.wn-sl-rule:first-child {
+  border-top: 0;
+}
+.wn-sl-rule-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 2px;
+}
+.wn-sl-num {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--app-primary-light, #f3ecff);
+  color: #6537c2;
+  font-size: 12px;
+  font-weight: 800;
+  flex: none;
+}
+.wn-sl-try {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1.5px solid var(--app-border, #e8e0f5);
+  background: var(--app-card, #fff);
+  color: var(--app-muted, #6f6787);
+  font-size: 24px;
+}
+.wn-sl-try.is-on {
+  border-color: var(--app-primary, #7c4ddb);
+  color: var(--app-text, #2a1f45);
+}
+.wn-sl-try.is-done {
+  background: var(--app-primary-light, #f3ecff);
+  color: #6537c2;
+}
+
+html[data-theme="dark"] .wn-glyph-dim {
+  fill: #5b4d80;
+}
+html[data-theme="dark"] .wn-hd-all button {
+  background: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .wn-hd-go {
+  color: #6537c2;
+}
+
+.wn-stroke-top {
+  z-index: 2;
+}

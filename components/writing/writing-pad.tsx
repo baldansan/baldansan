@@ -15,6 +15,7 @@ import HanziWriter from "hanzi-writer";
 import { tr } from "@/lib/i18n/translate";
 import { useUiLocale } from "@/lib/i18n/ui-locale";
 import { localHanziCharDataLoader } from "@/lib/hanzi/character-data-loader";
+import { classifyStrokes, type StrokeKind } from "@/lib/writing/stroke-kind";
 
 export type WritingPadPhase = "watch" | "trace" | "memory";
 
@@ -28,6 +29,8 @@ type Props = {
   maxSize?: number;
   /** Зураас бүрд дуудна — гадна талд тоолуур харуулахад. */
   onStroke?: (done: number, total: number) => void;
+  /** Дагаж зурахад дараагийн зурлагын нэр, чиглэлийг самбарын доор харуулна (default: true). */
+  guide?: boolean;
 };
 
 type PadState = "loading" | "animating" | "quiz" | "success" | "unavailable";
@@ -44,7 +47,7 @@ function MizigeGrid() {
   );
 }
 
-export function WritingPad({ char, phase, onDone, maxSize = 340, onStroke }: Props) {
+export function WritingPad({ char, phase, onDone, maxSize = 340, onStroke, guide = true }: Props) {
   const locale = useUiLocale();
   const boxRef = useRef<HTMLDivElement | null>(null);
   const mountRef = useRef<HTMLDivElement | null>(null);
@@ -55,6 +58,7 @@ export function WritingPad({ char, phase, onDone, maxSize = 340, onStroke }: Pro
   const [strokeDone, setStrokeDone] = useState(0);
   const [strokeTotal, setStrokeTotal] = useState(0);
   const [size, setSize] = useState(maxSize);
+  const [kinds, setKinds] = useState<(StrokeKind | null)[]>([]);
   const onDoneRef = useRef(onDone);
   const onStrokeRef = useRef(onStroke);
   useEffect(() => {
@@ -78,6 +82,7 @@ export function WritingPad({ char, phase, onDone, maxSize = 340, onStroke }: Pro
     setState("loading");
     setStrokeDone(0);
     setStrokeTotal(0);
+    setKinds([]);
 
     const mistakes = { count: 0 };
     const usedHint = { value: false };
@@ -151,6 +156,7 @@ export function WritingPad({ char, phase, onDone, maxSize = 340, onStroke }: Pro
           ? (data as { strokes: unknown[] }).strokes.length
           : 0;
         setStrokeTotal(total);
+        setKinds(classifyStrokes((data as { medians?: unknown })?.medians));
         if (phase === "watch") startAnimation();
         else startQuiz();
       },
@@ -212,6 +218,18 @@ export function WritingPad({ char, phase, onDone, maxSize = 340, onStroke }: Pro
           style={state === "loading" || state === "unavailable" ? { visibility: "hidden" } : undefined}
         />
       </div>
+
+      {guide && phase === "trace" && state === "quiz" && kinds[strokeDone] ? (
+        <p className="wn-stroke-guide" style={{ maxWidth: size }}>
+          <span className="wn-stroke-guide-n">
+            {strokeDone + 1}-{tr(locale, "р зурлага")}
+          </span>
+          <b>{tr(locale, kinds[strokeDone]!.mn)}</b>
+          <span className="wn-stroke-guide-arrow" aria-hidden>
+            {kinds[strokeDone]!.arrows}
+          </span>
+        </p>
+      ) : null}
 
       <div className="mt-2 flex flex-wrap items-center justify-center gap-2">
         {phase === "watch" && (state === "success" || state === "animating") ? (

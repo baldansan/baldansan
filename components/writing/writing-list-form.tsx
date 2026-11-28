@@ -519,6 +519,49 @@ export function WritingListForm(props: Props) {
 
           <MobileCard>
             <p className="text-xs font-bold text-[var(--app-muted)]">{tr(locale, "Давталтын тоо")}</p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {(
+                [
+                  ["Хөнгөн", 1, 2],
+                  ["Зөвлөмж", 2, 3],
+                  ["Нягт", 3, 5],
+                ] as [string, number, number][]
+              ).map(([label, t, m]) => {
+                const on = repsTrace === t && repsMemory === m;
+                return (
+                  <button
+                    key={label}
+                    type="button"
+                    aria-pressed={on}
+                    onClick={() => {
+                      setRepsTrace(t);
+                      setRepsMemory(m);
+                    }}
+                    className={`wn-reps-preset ${on ? "is-on" : ""}`}
+                  >
+                    <b>{tr(locale, label)}</b>
+                    <small>
+                      ✍️ {t} · 🧠 {m}
+                    </small>
+                  </button>
+                );
+              })}
+            </div>
+            <details className="wn-reps-why">
+              <summary>💡 {tr(locale, "Хэдэн удаа бичвэл зөв бэ?")}</summary>
+              <ul>
+                <li>
+                  {tr(locale, "Нэг суултаар олон удаа бичих нь тэр үедээ сайн санагдавч удаан тогтдоггүй. Цөөн бичээд дараагийн өдөр дахин санаж бичих нь илүү үр дүнтэй.")}
+                </li>
+                <li>
+                  {tr(locale, "Загвар дагаж зурахаас харахгүйгээр санаж бичих нь ой тогтоолтод илүү нөлөөтэй. Тиймээс санаж бичихийг дагаж бичихээс олон болгоорой.")}
+                </li>
+                <li>
+                  {tr(locale, "Шинэ зүйл эхний хоногтоо хамгийн хурдан мартагддаг. Сэргээх завсар: маргааш → 3 хоног → 7 хоног → 21 хоног. Хэзээ сэргээхийг Ханзны дэвтрийн нүүр сануулна.")}
+                </li>
+              </ul>
+              <p>{tr(locale, "Эцсийн тоог өөрөө сонгоно:")}</p>
+            </details>
             <div className="mt-2 grid grid-cols-2 gap-3">
               <label className="block">
                 <span className="text-xs text-slate-600">✍️ {tr(locale, "Дагаж бичих")}</span>

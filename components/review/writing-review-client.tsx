@@ -12,6 +12,7 @@ import {
   type WritingQueueItem,
 } from "@/lib/srs/writing-queue";
 import { recordWritingResult } from "@/lib/srs/writing-srs-sync";
+import { recordWordWrite } from "@/lib/writing/hanzi-history";
 import type { WordSrsRating } from "@/lib/srs/word-srs-types";
 
 const CharacterWriter = dynamic(
@@ -80,6 +81,10 @@ export function WritingReviewClient() {
       },
       result
     );
+    recordWordWrite(current.key, "review", result, {
+      pinyin: current.pinyin,
+      meaning: current.meaning,
+    });
     setLastRating(rating);
     setTally((prev) => ({ ...prev, [rating]: prev[rating] + 1 }));
     // Алдсан үгийг энэ удаадаа дахин нэг бичүүлнэ: дагаж зураад, санаж бичнэ.
