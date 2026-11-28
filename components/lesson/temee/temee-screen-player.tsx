@@ -16,8 +16,22 @@ import type {
   TemeeScreen,
   TemeeSection,
 } from "@/types/temee-lesson";
+import { VoiceCompare, type VoiceTarget } from "@/components/speech/voice-compare";
 import { TemeeVisualView } from "./temee-visual";
 import "./temee.css";
+
+/**
+ * «Өөрөө хэлж үз» (дуугаа бичээд зэрэгцүүлж сонсох) — туршилтын дэлгэц.
+ * Эзэн зөвшөөрсний дараа бүх авианы дэлгэцэд тараана (claude/DUUDLAGA-SUURI-2026-11-28.md).
+ */
+const VOICE_PILOT = new Set(["xinhsk1-l01:sounds:s2"]);
+
+/** Энэ дэлгэц дээр хэлж үзэх авианууд (одоогоор зөвхөн хос авиа). */
+function voiceTargets(screen: TemeeScreen): { label: string; src: TemeeAudioRef[] }[] {
+  const v = screen.visual;
+  if (v?.kind === "pair") return [v.a, v.b].map((x) => ({ label: x.label, src: x.src }));
+  return [];
+}
 
 const RIGHT_LINES = ["Болж байна.", "Тийм.", "Зөв.", "Мэдээж."];
 
@@ -157,6 +171,7 @@ export function TemeeScreenPlayer({ lessonId, sectionKey, section, onDone }: Pla
   });
   const [solvedCount, setSolvedCount] = useState(0);
   const [checkIdx, setCheckIdx] = useState(0);
+  const [voiceIdx, setVoiceIdx] = useState(0);
   const { play, failed } = useTemeePlay(lessonId);
 
   const go = useCallback(
@@ -164,6 +179,7 @@ export function TemeeScreenPlayer({ lessonId, sectionKey, section, onDone }: Pla
       stopTemeeAudio();
       setSolvedCount(0);
       setCheckIdx(0);
+      setVoiceIdx(0);
       setIndex(next);
       try {
         window.localStorage.setItem(storageKey, String(next));
@@ -184,6 +200,17 @@ export function TemeeScreenPlayer({ lessonId, sectionKey, section, onDone }: Pla
   const safeCheckIdx = Math.min(checkIdx, Math.max(checks.length - 1, 0));
   const isLast = index === flat.length - 1;
   const partIndex = section.parts.findIndex((p) => p.id === part.id);
+  const voice = VOICE_PILOT.has(`${lessonId}:${sectionKey}:${screen.id}`) ? voiceTargets(screen) : [];
+  const voiceList: VoiceTarget[] = voice.map((t) => ({
+    label: t.label,
+    urls: t.src.map((r) => temeeAudioUrl(r, lessonId)),
+  }));
+  // Сүүлд сонссон авиа нь «хэлж үзэх» авиа болно.
+  const playAndTrack = (src: TemeeAudioRef[]) => {
+    const hit = voice.findIndex((t) => t.src.join("|") === src.join("|"));
+    if (hit >= 0) setVoiceIdx(hit);
+    play(src);
+  };
 
   return (
     <div className="tm-root">
@@ -198,7 +225,11 @@ export function TemeeScreenPlayer({ lessonId, sectionKey, section, onDone }: Pla
         </span>
       </p>
 
-      <ScreenBody key={screen.id} screen={screen} onPlay={play} />
+      <ScreenBody key={screen.id} screen={screen} onPlay={voice.length ? playAndTrack : play} />
+
+      {voiceList.length > 0 ? (
+        <VoiceCompare key={`voice-${screen.id}`} targets={voiceList} active={voiceIdx} onPick={setVoiceIdx} />
+      ) : null}
 
       {failed ? (
         <p className="tm-audio-fail">Дуу гарсангүй. Сүлжээгээ шалгаад дахин дарна уу.</p>

@@ -1,0 +1,30 @@
+/* «Өөрөө хэлж үз» — дуугаа бичээд багшийнхтай зэрэгцүүлж сонсох блок. */
+.vc{margin:0 0 14px;padding:14px;border-radius:18px;border:2px dashed var(--bs-line,#e5e0f2);background:var(--bs-card,#fff);font-family:var(--bs-ui,inherit)}
+.vc-kicker{margin:0 0 10px;font-size:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--bs-muted,#8a84a0)}
+.vc-targets{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.vc-target{min-width:64px;min-height:44px;padding:6px 16px;border-radius:99px;border:2px solid var(--bs-line,#e5e0f2);background:transparent;cursor:pointer;
+  font-size:19px;font-weight:900;color:var(--bs-ink-2,#555)}
+.vc-target.is-on{border-color:var(--bs-green,#7c4ddb);background:var(--bs-green-50,#f3edff);color:var(--bs-green,#7c4ddb)}
+.vc-target:disabled{opacity:.55}
+.vc-main{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:56px;padding:10px 16px;border:0;border-radius:16px;cursor:pointer;
+  background:var(--bs-green,#7c4ddb);color:#fff;font-family:inherit;font-size:17px;font-weight:800;line-height:1.25;text-align:center}
+.vc-main:active{transform:scale(.98)}
+.vc-main:disabled{opacity:.7}
+.vc-main.is-rec{background:#e11d48;justify-content:space-between;text-align:left}
+.vc-main.is-rec b{flex:none;padding:6px 12px;border-radius:99px;background:rgba(255,255,255,.22);font-size:14px;font-weight:900;white-space:nowrap}
+.vc-dot{flex:none;width:12px;height:12px;border-radius:50%;background:#fff;animation:vc-pulse 1s ease-in-out infinite}
+@keyframes vc-pulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.vc-dot{animation:none}}
+.vc-both{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 8px;width:100%;min-height:56px;margin-top:10px;padding:8px 14px;border-radius:16px;cursor:pointer;
+  border:2px solid var(--bs-green,#7c4ddb);background:var(--bs-green-50,#f3edff);color:var(--bs-green,#7c4ddb);font-family:inherit;font-size:17px;font-weight:900}
+.vc-both small{flex-basis:100%;font-size:12px;font-weight:700;opacity:.8}
+.vc-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.vc-sm{min-height:46px;padding:8px 10px;border-radius:14px;border:2px solid var(--bs-line,#e5e0f2);background:transparent;cursor:pointer;
+  font-family:inherit;font-size:15px;font-weight:800;color:var(--bs-ink,#222)}
+.vc-both.is-on,.vc-sm.is-on{outline:3px solid var(--bs-green,#7c4ddb);outline-offset:1px}
+.vc-tip{margin:10px 2px 0;font-size:14px;font-weight:700;line-height:1.4;color:var(--bs-ink-2,#555)}
+.vc-problem{margin-top:10px;padding:10px 12px;border-radius:14px;background:#fff7ed;border:1px solid #fed7aa}
+.vc-problem p{margin:0;font-size:14px;font-weight:700;line-height:1.45;color:#9a3412}
+.vc-problem p:first-child{font-weight:900}
+.vc-problem p+p{margin-top:4px}
+.vc-private{margin:10px 2px 0;font-size:12px;font-weight:600;line-height:1.4;color:var(--bs-muted,#8a84a0)}
